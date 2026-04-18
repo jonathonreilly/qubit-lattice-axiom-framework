@@ -4,127 +4,176 @@
 
 Current verdict: **do not merge as-is**.
 
-The branch is cleaner than the earlier G1 submissions. The stale theorem-note
-cross-reference is fixed, and the unrelated plaquette contamination appears to
-be gone from the current delta. But the load-bearing flagship-closure blockers
-are still open on the current tip `87ec25fb`.
+The branch has improved since the earlier G1 pass. It is more explicit about
+the `q_H = 0` conditionality, it no longer sells the weak norm cutoff as the
+primary uniqueness story, and it now tries to separate the Schur lane from the
+live-sheet closure lane.
 
-## Current Re-Review (`87ec25fb`)
+But the current tip `1f6f95df` still does **not** clear the retained-bar
+blockers, and the branch is now badly mixed relative to current `origin/main`.
 
-Result: **still no material review change on the claim-bearing science**.
+## Current Re-Review (`1f6f95df`)
 
-The current branch still overstates what has been proved in three places:
+Result: **still not retained flagship closure**.
 
-1. the omnibus closure note still headlines the DM flagship gate as
-   `CLOSED` and presents a unique perturbative-regime chamber solution, even
-   though the retained route still depends on the conditional `q_H = 0`
-   branch, the observational hierarchy pairing `sigma_hier = (2, 1, 0)`, and
-   the weaker scale-cutoff selector rather than a theorem-native microscopic
-   basin discriminator;
-2. the Schur baseline note still proves only
-   `commuting baseline => scalar baseline`, then upgrades that conditional
-   statement into the stronger physical claim that the live zero-source
-   baseline itself must be scalar;
-3. the perturbative-uniqueness note still explicitly admits that the strong
-   retained convergence condition `rho(H_base^{-1} J) < 1` fails at all three
-   in-chamber basins, and then selects Basin 1 by the weaker norm statement
-   `||J|| <= ||H_base||`.
+Three issues remain load-bearing:
 
-So the current tip is improved presentation, not a closed flagship selector.
+1. the Schur runner still proves only a conditional commutant statement and
+   then reuses it as if it forced the live-sheet baseline;
+2. the new inertia/source-branch uniqueness story is cleaner than the old norm
+   cutoff, but it still imposes a branch-choice rule rather than deriving it
+   from retained framework structure;
+3. the omnibus closure headline still says the DM flagship gate is `CLOSED`,
+   which is stronger than the present proof boundary.
 
-## What Is Resolved Since Earlier Reviews
+## Branch Hygiene
 
-- the old stale path to the perturbative-uniqueness note is fixed;
-- the branch now looks like a G1-focused delta rather than a mixed G1 +
-  plaquette rewrite branch.
+This branch is also **not clean against current `origin/main`**.
 
-Those are real cleanups. They just do not close the flagship claim.
+At review time it is substantially diverged from `origin/main` and still
+reverts unrelated current-main package work. The current delta touches CKM,
+charged-lepton, evanescent-barrier, Higgs/YT, publication-surface, and other
+non-G1 files. In particular, relative to `origin/main`, the branch:
 
-## Live Blockers
+- downgrades the live CKM neutron-EDM split back to a plain bounded lane;
+- deletes the current evanescent-barrier theorem surface;
+- deletes the charged-lepton review package that is already live on `main`.
 
-### 1. Omnibus closure note is still too strong
+So even if the science blockers were gone, the branch would still be
+non-landable as-is.
 
-The omnibus note currently says the flagship gate is `CLOSED` on the live
-sheet and that the observational PMNS route yields a unique perturbative-regime
-chamber solution.
+**Required hygiene step before any resubmission:** rebase or cherry-pick the G1
+work onto the latest `origin/main`, and keep only the G1-related files in the
+delta.
 
-That is stronger than the retained proof surface currently supports. The live
-route still depends on:
+## Live Science Blockers
 
-- `q_H = 0` via the Z_3 trichotomy branch;
-- the observational hierarchy pairing `sigma_hier = (2, 1, 0)`;
-- the upper-octant chamber condition;
-- Basin 1 being preferred by the weaker scale cutoff rather than by a retained
-  microscopic selector theorem.
+### 1. Schur lane is still only a commutant-class lemma
 
-If those conditions remain unproved, then the flagship headline must carry them
-explicitly or be demoted from `CLOSED`.
+The note header now honestly says the live `H_base` does **not** commute with
+the retained three-generation algebra, so the scalar-baseline result is only a
+commutant-class structural lemma.
 
-### 2. Schur lane still imports the missing physical premise
+That demotion is correct.
 
-The Schur theorem itself is mathematically fine:
+But the runner still states the load-bearing premise that the axiom-native
+baseline "must commute" with the retained generation algebra, then uses that
+premise to promote
 
-- if a baseline commutes with the retained three-generation algebra, then it is
-  scalar.
+`D = m I_3` and `Q(delta, q_+) = 6(delta^2 + q_+^2)/m^2`
 
-What is still not proved is the physical upgrade:
+into theorem-native live-sheet curvature.
 
-- the live zero-source baseline on the actual source sheet must commute with
-  that full retained algebra.
+That is still the same unresolved gap in executable form:
 
-Until that premise is derived on the live sheet, the note must stop concluding
-that the physical zero-source baseline is axiom-natively scalar.
+- proved: `if D commutes with the retained generation algebra, then D = m I_3`
+- not proved: the live DM-neutrino source-sheet baseline actually satisfies
+  that commutation premise
 
-### 3. Basin uniqueness is still only the weaker scale-cutoff route
+Until the live-sheet commutation premise is derived, the Schur lane must remain
+strictly a **conditional commutant-class lemma**, not a promoted live-sheet
+curvature theorem.
 
-The perturbative-uniqueness note is honest that true Taylor/log-det convergence
-fails at all three in-chamber basins. Basin 1 is then selected by the weaker
-criterion `||J|| <= ||H_base||`.
+### 2. Inertia/source-branch uniqueness is still an added admissibility rule
 
-That may be a reasonable admissibility rule, but it is not yet a theorem-native
-closure of the basin-selector problem.
+Replacing the old norm cutoff with Sylvester inertia is mathematically cleaner.
+It is a real improvement over the previous `||J|| <= ||H_base||` packaging.
 
-If you want a merge-ready uniqueness claim, you still need one of:
+But the load-bearing step is still not derived from retained framework
+structure.
 
-- a retained theorem deriving that admissibility rule from accepted framework
-  structure;
-- a different retained discriminator that uniquely selects Basin 1;
-- a stronger retained convergence/result criterion that Basin 1 satisfies while
-  the competitors do not.
+The current note defines the "retained source branch" to be the connected
+component of
 
-Otherwise the note should be framed as a conditional PMNS route under the added
-scale rule, not final flagship closure.
+`det(H_base + J) != 0`
+
+that contains `J = 0`, equivalently the component with preserved signature
+`signature(H_base + J) = signature(H_base) = (2, 0, 1)`.
+
+Then it excludes the competing exact basins because they lie on a different
+signature component.
+
+What is still missing is the physical bridge:
+
+- why the physical PMNS closure must remain on the baseline-connected
+  non-caustic component rather than another admissible component on which
+  `W[J] = log|det(H_base + J)|` is also well-defined
+
+So the new uniqueness story is still:
+
+- algebraically nicer than the old norm rule
+- but still an added branch-choice principle, not a retainedly forced selector
+
+### 3. Flagship closure header is still too strong
+
+Because the Schur lane is still conditional and the source-branch selector is
+still imposed rather than derived, the omnibus note still overstates the branch
+by calling the DM flagship gate `CLOSED`.
+
+The branch now supports a stronger and cleaner **conditional/support closure
+story** than before:
+
+- `sigma_hier = (2, 1, 0)` is surfaced explicitly
+- `q_H = 0` is surfaced explicitly
+- the upper-octant conditionality is surfaced explicitly
+- Basin 1 is isolated by the branch-choice rule more cleanly than before
+
+But that is not yet the same thing as a fully retained closure of the selector
+gate.
 
 ## Acceptable Resubmission Shapes
 
-### Option A: Conservative mergeable shape
+### Option A: Clean support / conditional package
 
-Land the clean pieces only:
+If the worker wants a mergeable near-term resubmission, the safe shape is:
 
-- the obstruction stack;
-- the PMNS-as-`f(H)` chamber map;
-- the citation-chain cleanup around the charged-lepton route;
-- no flagship-closure headline.
+- keep the obstruction stack;
+- keep the PMNS-as-`f(H)` construction;
+- keep the explicit `q_H = 0`, `sigma_hier`, and upper-octant conditions;
+- demote the flagship headline from `CLOSED` to conditional/support status;
+- keep the Schur lane explicitly as a commutant-class lemma only;
+- keep the source-branch selector explicitly as a branch-choice rule /
+  conditional admissibility principle, not a retained theorem.
 
-### Option B: Strong closure resubmission
+### Option B: Strong retained-closure resubmission
 
-Keep the flagship-closure claim only if all three live blockers are genuinely
-closed:
+If the worker wants to retain the flagship-closure headline, they still need to
+close both load-bearing gaps:
 
-- derive the commuting-baseline premise on the live source sheet or demote the
-  Schur lane to conditional/support status;
-- derive a retained basin selector rather than relying only on the weaker norm
-  cutoff;
-- surface or derive the charged-lepton / hierarchy / octant conditions at the
-  same strength as the headline claim.
+1. **Close the live-sheet Schur premise.**
+   Derive, on the actual source-oriented sheet, why the relevant zero-source
+   baseline must commute with the retained three-generation algebra; or else
+   stop using Schur to promote live-sheet curvature.
+
+2. **Close the branch-choice principle.**
+   Derive why the physical closure must lie on the baseline-connected
+   `det != 0` component rather than another non-caustic component; or else
+   demote the inertia/source-branch selector to conditional support status.
+
+Without both of those, the gate is not fully retainedly closed.
+
+## Required Rebase Discipline
+
+Before any next reviewer pass:
+
+1. start from the latest `origin/main`;
+2. cherry-pick or re-implement only the G1 files;
+3. confirm that CKM, charged-lepton, evanescent, Higgs/YT, and unrelated
+   publication-surface files are not regressed;
+4. resubmit the clean G1-only batch.
 
 ## Bottom Line
 
-This branch has real value and is much cleaner than the earlier G1 attempts.
-But at the present claim level it is still not merge-ready. The fastest path is
-either:
+This branch is scientifically sharper than the earlier G1 attempts.
 
-1. demote the current branch to a clean conditional PMNS route plus obstruction
-   stack; or
-2. actually close the Schur physical premise and the basin-selector theorem,
-   then resubmit the flagship-closure headline.
+But the present tip still does **not** clear the retained-bar blockers, and it
+is also operationally non-landable because it regresses unrelated current-main
+package work.
+
+The fastest honest path is:
+
+1. rebase/cherry-pick onto latest `origin/main` as a clean G1-only delta; and
+2. either
+   - demote the package to a conditional/support PMNS closure story, or
+   - actually derive the live-sheet Schur premise and the source-branch
+     admissibility rule, then resubmit the flagship-closure headline.

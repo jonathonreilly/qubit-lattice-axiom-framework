@@ -1086,6 +1086,38 @@ class RouteMapRow:
 
 
 @dataclass
+class AtomicLaneEnsembleSummaryRow:
+    ensemble_name: str
+    graph_count: int
+    total_nodes: int
+    compact_ge6_share6_match_fraction: float
+    compact_ge7_subset_fraction: float
+    compact_ge6_only_fraction: float
+    low_parity_size: int | None
+    low_feature_subset: str
+    low_support_fraction: float
+    pocket_parity_size: int | None
+    pocket_feature_subset: str
+    pocket_support_fraction: float
+    deep_parity_size: int | None
+    deep_feature_subset: str
+    deep_support_fraction: float
+    pocket_implies_low: float
+    deep_implies_pocket: float
+    deep_implies_low: float
+    fallback_parity_size: int | None
+    fallback_feature_subset: str
+    fallback_proxy_family: str
+    fallback_route_role: str
+    max_atomic_parity_size: int | None
+    atomic_chain_present: bool
+    nesting_floor: float
+    fallback_is_distinct: bool
+    retained_passes: bool
+    failed_criteria: str
+
+
+@dataclass
 class ExtendedProxyRouteRow:
     route_name: str
     feature_count: int
@@ -22460,6 +22492,195 @@ def route_map_summary(
     return compact_rows, extended_rows
 
 
+def atomic_lane_ensemble_summary(
+    retained_weight: float = 1.0,
+    mode_retained_weight: float | None = None,
+    ensemble_names: tuple[str, ...] | None = None,
+) -> list[AtomicLaneEnsembleSummaryRow]:
+    if ensemble_names is None:
+        ensemble_names = tuple(name for name, *_rest in canonical_generated_ensemble_specs())
+
+    summary_rows: list[AtomicLaneEnsembleSummaryRow] = []
+    for ensemble_name in ensemble_names:
+        _name, geometry_variant_limit, procedural_variant_limit, procedural_styles = (
+            generated_ensemble_spec(ensemble_name)
+        )
+        active_ensemble = (
+            (ensemble_name, geometry_variant_limit, procedural_variant_limit, procedural_styles),
+        )
+        threshold_rows, _threshold_model_rows = threshold_core_overlap_analysis(
+            retained_weight=retained_weight,
+            mode_retained_weight=mode_retained_weight,
+            ensembles=active_ensemble,
+            include_models=False,
+        )
+        threshold_row = threshold_rows[0]
+
+        proxy_rows, _proxy_aggregate_rows = extended_proxy_route_benchmark(
+            retained_weight=retained_weight,
+            mode_retained_weight=mode_retained_weight,
+            geometry_variant_limit=geometry_variant_limit,
+            procedural_variant_limit=procedural_variant_limit,
+            procedural_styles=procedural_styles,
+        )
+        low_row = _best_extended_proxy_route_row(proxy_rows, "low-degree", "atomic-standalone")
+        pocket_row = _best_extended_proxy_route_row(proxy_rows, "pocket", "atomic-standalone")
+        deep_row = _best_extended_proxy_route_row(proxy_rows, "deep-pocket", "atomic-standalone")
+
+        _score_rows, overlap_rows = extended_atomic_route_overlap_benchmark(
+            retained_weight=retained_weight,
+            mode_retained_weight=mode_retained_weight,
+            ensembles=(ensemble_name,),
+            include_scores=False,
+        )
+        pocket_low_row = _named_overlap_row(overlap_rows, ensemble_name, "pocket", "low-degree")
+        deep_pocket_row = _named_overlap_row(
+            overlap_rows, ensemble_name, "deep-pocket", "pocket"
+        )
+        deep_low_row = _named_overlap_row(overlap_rows, ensemble_name, "deep-pocket", "low-degree")
+
+        fallback_row = degree_profile_fallback_benchmark(
+            retained_weight=retained_weight,
+            mode_retained_weight=mode_retained_weight,
+            geometry_variant_limit=geometry_variant_limit,
+            procedural_variant_limit=procedural_variant_limit,
+            procedural_styles=procedural_styles,
+            route_sets=(degree_profile_fallback_sets()[0],),
+        )[0]
+
+        summary_rows.append(
+            atomic_lane_summary_row_from_components(
+                ensemble_name=ensemble_name,
+                threshold_row=threshold_row,
+                low_row=low_row,
+                pocket_row=pocket_row,
+                deep_row=deep_row,
+                pocket_low_row=pocket_low_row,
+                deep_pocket_row=deep_pocket_row,
+                deep_low_row=deep_low_row,
+                fallback_row=fallback_row,
+            )
+        )
+
+    summary_rows.sort(
+        key=lambda row: next(
+            index
+            for index, (name, *_rest) in enumerate(canonical_generated_ensemble_specs())
+            if name == row.ensemble_name
+        )
+    )
+    return summary_rows
+
+
+def atomic_lane_summary_row_from_components(
+    *,
+    ensemble_name: str,
+    threshold_row: ThresholdCoreOverlapRow,
+    low_row: ExtendedProxyRouteRow | None,
+    pocket_row: ExtendedProxyRouteRow | None,
+    deep_row: ExtendedProxyRouteRow | None,
+    pocket_low_row: ExtendedAtomicRouteOverlapRow,
+    deep_pocket_row: ExtendedAtomicRouteOverlapRow,
+    deep_low_row: ExtendedAtomicRouteOverlapRow,
+    fallback_row: DegreeProfileFallbackRow,
+    compact_match_threshold: float = 0.98,
+    compact_subset_threshold: float = 0.99,
+    max_atomic_parity_size: int = 3,
+    nesting_threshold: float = 0.98,
+) -> AtomicLaneEnsembleSummaryRow:
+    atomic_parity_sizes = tuple(
+        parity_size
+        for parity_size in (
+            low_row.extended_parity_size if low_row is not None else None,
+            pocket_row.extended_parity_size if pocket_row is not None else None,
+            deep_row.extended_parity_size if deep_row is not None else None,
+        )
+        if parity_size is not None
+    )
+    fallback_route_role = classify_extended_route_role(
+        fallback_row.extended_parity_feature_subset,
+    )
+    atomic_like_families = {
+        "low-degree",
+        "pocket",
+        "deep-pocket",
+        "low-degree+pocket",
+        "low-degree+sparse",
+        "pocket+sparse",
+        "pocket+hub",
+        "deep-pocket+hub",
+    }
+    fallback_is_distinct = (
+        fallback_route_role != "atomic-standalone"
+        and fallback_row.extended_proxy_family not in atomic_like_families
+    )
+    failed_criteria: list[str] = []
+    if threshold_row.ge6_share6_support_match_fraction < compact_match_threshold:
+        failed_criteria.append("compact-ge6-share6")
+    if threshold_row.ge7_subset_of_ge6_fraction < compact_subset_threshold:
+        failed_criteria.append("compact-ge7-subset")
+    route_rows = (
+        ("low", low_row),
+        ("pocket", pocket_row),
+        ("deep", deep_row),
+    )
+    for route_label, route_row in route_rows:
+        parity_size = route_row.extended_parity_size if route_row is not None else None
+        if parity_size is None:
+            failed_criteria.append(f"{route_label}-missing")
+        elif parity_size > max_atomic_parity_size:
+            failed_criteria.append(f"{route_label}-slow")
+    if pocket_low_row.left_implies_right < nesting_threshold:
+        failed_criteria.append("pocket=>low")
+    if deep_pocket_row.left_implies_right < nesting_threshold:
+        failed_criteria.append("deep=>pocket")
+    if deep_low_row.left_implies_right < nesting_threshold:
+        failed_criteria.append("deep=>low")
+    if not fallback_is_distinct:
+        failed_criteria.append("fallback-leakage")
+    chain_present = len(atomic_parity_sizes) == 3
+    return AtomicLaneEnsembleSummaryRow(
+        ensemble_name=ensemble_name,
+        graph_count=threshold_row.graph_count,
+        total_nodes=threshold_row.total_nodes,
+        compact_ge6_share6_match_fraction=threshold_row.ge6_share6_support_match_fraction,
+        compact_ge7_subset_fraction=threshold_row.ge7_subset_of_ge6_fraction,
+        compact_ge6_only_fraction=threshold_row.ge6_without_ge7_fraction,
+        low_parity_size=low_row.extended_parity_size if low_row is not None else None,
+        low_feature_subset=low_row.extended_parity_feature_subset if low_row is not None else "-",
+        low_support_fraction=pocket_low_row.right_support_fraction,
+        pocket_parity_size=(
+            pocket_row.extended_parity_size if pocket_row is not None else None
+        ),
+        pocket_feature_subset=(
+            pocket_row.extended_parity_feature_subset if pocket_row is not None else "-"
+        ),
+        pocket_support_fraction=pocket_low_row.left_support_fraction,
+        deep_parity_size=deep_row.extended_parity_size if deep_row is not None else None,
+        deep_feature_subset=(
+            deep_row.extended_parity_feature_subset if deep_row is not None else "-"
+        ),
+        deep_support_fraction=deep_pocket_row.left_support_fraction,
+        pocket_implies_low=pocket_low_row.left_implies_right,
+        deep_implies_pocket=deep_pocket_row.left_implies_right,
+        deep_implies_low=deep_low_row.left_implies_right,
+        fallback_parity_size=fallback_row.extended_parity_size,
+        fallback_feature_subset=fallback_row.extended_parity_feature_subset,
+        fallback_proxy_family=fallback_row.extended_proxy_family,
+        fallback_route_role=fallback_route_role,
+        max_atomic_parity_size=max(atomic_parity_sizes) if atomic_parity_sizes else None,
+        atomic_chain_present=chain_present,
+        nesting_floor=min(
+            pocket_low_row.left_implies_right,
+            deep_pocket_row.left_implies_right,
+            deep_low_row.left_implies_right,
+        ),
+        fallback_is_distinct=fallback_is_distinct,
+        retained_passes=not failed_criteria,
+        failed_criteria=", ".join(failed_criteria) if failed_criteria else "-",
+    )
+
+
 def random_rediscovery_limit_sweep_summary(
     retained_weight: float = 1.0,
     variant_limit: int = 3,
@@ -24834,6 +25055,43 @@ def render_route_map_table(rows: list[RouteMapRow]) -> str:
             f"{row.family_scope:<16} | "
             f"{row.canonical_feature_expression:<36.36} | "
             f"{row.evidence_benchmarks}"
+        )
+    return "\n".join(lines)
+
+
+def render_atomic_lane_ensemble_summary_table(
+    rows: list[AtomicLaneEnsembleSummaryRow],
+) -> str:
+    lines = [
+        "ensemble | graphs | nodes  | ge6==s6 | ge7<=ge6 | ge6-only | low-degree         | pocket             | deep-pocket        | p=>l d=>p d=>l | fallback             | gate | fails",
+        "---------+-------+--------+---------+----------+----------+--------------------+--------------------+--------------------+----------------+----------------------+------|--------------------",
+    ]
+    for row in rows:
+        low_label = format_parity_window_label(row.low_parity_size, row.low_feature_subset)
+        pocket_label = format_parity_window_label(
+            row.pocket_parity_size,
+            row.pocket_feature_subset,
+        )
+        deep_label = format_parity_window_label(row.deep_parity_size, row.deep_feature_subset)
+        fallback_label = format_parity_window_label(
+            row.fallback_parity_size,
+            row.fallback_feature_subset,
+        )
+        gate_label = "PASS" if row.retained_passes else "FAIL"
+        lines.append(
+            f"{row.ensemble_name:<8} | "
+            f"{row.graph_count:>5} | "
+            f"{row.total_nodes:>6} | "
+            f"{row.compact_ge6_share6_match_fraction:>7.2f} | "
+            f"{row.compact_ge7_subset_fraction:>8.2f} | "
+            f"{row.compact_ge6_only_fraction:>8.2f} | "
+            f"{low_label:<18.18}:{row.low_support_fraction:>4.2f} | "
+            f"{pocket_label:<18.18}:{row.pocket_support_fraction:>4.2f} | "
+            f"{deep_label:<18.18}:{row.deep_support_fraction:>4.2f} | "
+            f"{row.pocket_implies_low:>4.2f} {row.deep_implies_pocket:>4.2f} {row.deep_implies_low:>4.2f} | "
+            f"{fallback_label:<18.18}:{row.fallback_route_role:<3.3} | "
+            f"{gate_label:<4} | "
+            f"{row.failed_criteria:<20.20}"
         )
     return "\n".join(lines)
 

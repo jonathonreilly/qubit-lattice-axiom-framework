@@ -44,15 +44,15 @@ from toy_event_physics import (  # noqa: E402
     canonical_generated_ensemble_specs,
     classify_extended_proxy_family,
     classify_extended_route_role,
-    decision_feature_value,
     degree_basis_feature_names,
     degree_profile_fallback_benchmark,
     degree_profile_fallback_sets,
     extended_atomic_route_overlap_benchmark,
     extended_proxy_route_benchmark,
     generated_ensemble_spec,
-    generated_extended_prediction_rows,
+    generated_prediction_node_sets,
     high_degree_threshold_feature_names,
+    local_shape_feature_bundle,
     local_neighborhood_motif_feature_names,
     neighbor_leverage_threshold_feature_names,
     neighbor_reach_threshold_feature_names,
@@ -103,6 +103,30 @@ BOUND_STATE_CONFIGS = (
     (4, (10, 10, 10, 10), 3.0),
     (5, (5, 5, 5, 5, 5), 4.0),
 )
+MOTIF_FEATURE_INDEX = {
+    feature_name: index
+    for index, feature_name in enumerate(local_neighborhood_motif_feature_names())
+}
+HIGH_DEGREE_THRESHOLD_FEATURE_INDEX = {
+    feature_name: index
+    for index, feature_name in enumerate(high_degree_threshold_feature_names())
+}
+SOFT_HUB_EXPOSURE_FEATURE_INDEX = {
+    feature_name: index
+    for index, feature_name in enumerate(soft_hub_exposure_feature_names())
+}
+NEIGHBOR_REACH_FEATURE_INDEX = {
+    feature_name: index
+    for index, feature_name in enumerate(neighbor_reach_threshold_feature_names())
+}
+NEIGHBOR_LEVERAGE_FEATURE_INDEX = {
+    feature_name: index
+    for index, feature_name in enumerate(neighbor_leverage_threshold_feature_names())
+}
+THRESHOLD_EXPOSURE_FEATURE_INDEX = {
+    feature_name: index
+    for index, feature_name in enumerate(threshold_exposure_decomposition_feature_names())
+}
 
 
 @dataclass(frozen=True)
@@ -574,6 +598,37 @@ def load_shell_mechanism_stages(
     return shell_row, case_rows, aggregate_rows, offender_rows, records
 
 
+def load_shell_summary_stage(
+    *,
+    ensemble_name: str,
+    cache_dir: Path,
+    retained_weight: float = 1.0,
+    search_stage: str = "mechanism",
+    use_cache: bool = True,
+) -> tuple[ThresholdCoreShellRow, list[CacheStageRecord]]:
+    helper_hash = helper_version_hash()
+    spec = generated_ensemble_spec(ensemble_name)
+    active_ensemble = (spec,)
+    shell_stage, record = _load_or_compute_stage(
+        cache_dir=cache_dir,
+        ensemble_name=ensemble_name,
+        stage_name="threshold-core-shell",
+        search_stage=search_stage,
+        retained_weight=retained_weight,
+        candidate_features=(),
+        helper_hash=helper_hash,
+        use_cache=use_cache,
+        compute_fn=lambda: {
+            "rows": [
+                asdict(row)
+                for row in threshold_core_shell_mechanism_analysis(ensembles=active_ensemble)
+            ],
+        },
+    )
+    shell_row = _deserialize_row(ThresholdCoreShellRow, shell_stage["payload"]["rows"][0])
+    return shell_row, [record]
+
+
 def atomic_route_feature_vocabulary() -> tuple[str, ...]:
     return tuple(
         dict.fromkeys(
@@ -744,23 +799,84 @@ def _compute_feature_support_payload(
     retained_weight: float,
     candidate_features: tuple[str, ...],
 ) -> dict[str, Any]:
-    rows = generated_extended_prediction_rows(
-        retained_weight=retained_weight,
+    graph_rows = generated_prediction_node_sets(
         geometry_variant_limit=geometry_variant_limit,
         procedural_variant_limit=procedural_variant_limit,
         procedural_styles=procedural_styles,
     )
     support_map: dict[str, list[int]] = {}
     for feature_name in candidate_features:
-        support_map[feature_name] = [
-            index
-            for index, row in enumerate(rows)
-            if decision_feature_value(row, feature_name) > 0.0
-        ]
+        support_map[feature_name] = []
+    for index, source_name in enumerate(sorted(graph_rows)):
+        _dataset_name, nodes, wrap_y = graph_rows[source_name]
+        (
+            _boundary_fraction,
+            _pocket_fraction,
+            _boundary_roughness,
+            _deep_pocket_fraction,
+            degree_fractions,
+            motif_fractions,
+            _high_degree_decomposition,
+            high_degree_threshold_fractions,
+            soft_hub_exposure,
+            neighbor_reach_threshold_fractions,
+            neighbor_leverage_threshold_fractions,
+            threshold_exposure_decomposition,
+        ) = local_shape_feature_bundle(nodes, wrap_y=wrap_y)
+        for feature_name in candidate_features:
+            if (
+                _local_shape_feature_value(
+                    feature_name,
+                    degree_fractions=degree_fractions,
+                    motif_fractions=motif_fractions,
+                    high_degree_threshold_fractions=high_degree_threshold_fractions,
+                    soft_hub_exposure=soft_hub_exposure,
+                    neighbor_reach_threshold_fractions=neighbor_reach_threshold_fractions,
+                    neighbor_leverage_threshold_fractions=neighbor_leverage_threshold_fractions,
+                    threshold_exposure_decomposition=threshold_exposure_decomposition,
+                )
+                > 0.0
+            ):
+                support_map[feature_name].append(index)
     return {
-        "row_count": len(rows),
+        "row_count": len(graph_rows),
         "feature_supports": support_map,
     }
+
+
+def _local_shape_feature_value(
+    feature_name: str,
+    *,
+    degree_fractions: tuple[float, ...],
+    motif_fractions: tuple[float, ...],
+    high_degree_threshold_fractions: tuple[float, ...],
+    soft_hub_exposure: tuple[float, ...],
+    neighbor_reach_threshold_fractions: tuple[float, ...],
+    neighbor_leverage_threshold_fractions: tuple[float, ...],
+    threshold_exposure_decomposition: tuple[float, ...],
+) -> float:
+    if feature_name.startswith("degree_") and feature_name.endswith("_fraction"):
+        degree = int(feature_name[len("degree_") : -len("_fraction")])
+        return degree_fractions[degree]
+    motif_index = MOTIF_FEATURE_INDEX.get(feature_name)
+    if motif_index is not None:
+        return motif_fractions[motif_index]
+    high_degree_index = HIGH_DEGREE_THRESHOLD_FEATURE_INDEX.get(feature_name)
+    if high_degree_index is not None:
+        return high_degree_threshold_fractions[high_degree_index]
+    soft_hub_index = SOFT_HUB_EXPOSURE_FEATURE_INDEX.get(feature_name)
+    if soft_hub_index is not None:
+        return soft_hub_exposure[soft_hub_index]
+    neighbor_reach_index = NEIGHBOR_REACH_FEATURE_INDEX.get(feature_name)
+    if neighbor_reach_index is not None:
+        return neighbor_reach_threshold_fractions[neighbor_reach_index]
+    neighbor_leverage_index = NEIGHBOR_LEVERAGE_FEATURE_INDEX.get(feature_name)
+    if neighbor_leverage_index is not None:
+        return neighbor_leverage_threshold_fractions[neighbor_leverage_index]
+    threshold_exposure_index = THRESHOLD_EXPOSURE_FEATURE_INDEX.get(feature_name)
+    if threshold_exposure_index is not None:
+        return threshold_exposure_decomposition[threshold_exposure_index]
+    raise ValueError(f"unsupported support feature {feature_name!r}")
 
 
 def candidate_support_details(

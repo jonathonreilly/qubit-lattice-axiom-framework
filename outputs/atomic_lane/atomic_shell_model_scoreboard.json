@@ -1,0 +1,189 @@
+{
+  "accepted_entries": [
+    {
+      "accepted": true,
+      "label": "shell_projector_baseline",
+      "relative_errors": {
+        "helium_ground": 0.06262141224678863,
+        "helium_ion_ground": 0.09204471548609516,
+        "helium_ionization": 0.0024942446659286244,
+        "helium_ionization_energy": 0.0024942446659286244,
+        "helium_triplet": 0.08190216620881685,
+        "hydrogen_ground": 0.0762979801184176,
+        "singlet_triplet_gap": 0.005050581256874076
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06449127479490457,
+        "helium_rms_relative_error": 0.0516263879449374,
+        "max_relative_error": 0.09204471548609516,
+        "one_body_rms_relative_error": 0.08453878228087584
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_correlated_readout_shell_projector.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_one_body_screen",
+      "relative_errors": {
+        "helium_ground": 0.06306857631755347,
+        "helium_ion_ground": 0.09201407833392528,
+        "helium_ionization": 0.0009896758485909984,
+        "helium_ionization_energy": 0.0009896758485909984,
+        "helium_triplet": 0.08412055165707766,
+        "hydrogen_ground": 0.06823229268318332,
+        "singlet_triplet_gap": 0.0002090161228388565
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06347856863052857,
+        "helium_rms_relative_error": 0.05257122710152158,
+        "max_relative_error": 0.09201407833392528,
+        "one_body_rms_relative_error": 0.08100072955364454
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_shell_one_body_screen.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_one_body_retune",
+      "relative_errors": {
+        "helium_ground": 0.05844092272126289,
+        "helium_ion_ground": 0.08515059112196088,
+        "helium_ionization": 0.0006692862748798323,
+        "helium_ionization_energy": 0.0006692862748798323,
+        "helium_triplet": 0.07739752914524167,
+        "hydrogen_ground": 0.07324623377609618,
+        "singlet_triplet_gap": 0.001837971056274923
+      },
+      "scores": {
+        "full_rms_relative_error": 0.060587648602148415,
+        "helium_rms_relative_error": 0.048501404742601534,
+        "max_relative_error": 0.08515059112196088,
+        "one_body_rms_relative_error": 0.07942176632007719
+      },
+      "source_json": "outputs/atomic_lane/atomic_shell_one_body_retune_aggressive.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_one_body_validation",
+      "relative_errors": {
+        "helium_ground": 0.05719111755522632,
+        "helium_ion_ground": 0.08515059112196499,
+        "helium_ionization": 0.004684990420298574,
+        "helium_ionization_energy": 0.004684990420298574,
+        "helium_triplet": 0.07707839090464341,
+        "hydrogen_ground": 0.07324623377610529,
+        "singlet_triplet_gap": 0.0021907331288471
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06035213977061181,
+        "helium_rms_relative_error": 0.048058950047168245,
+        "max_relative_error": 0.08515059112196499,
+        "one_body_rms_relative_error": 0.07942176632008359
+      },
+      "source_json": "outputs/atomic_lane/atomic_shell_one_body_full_validation.json"
+    }
+  ],
+  "best_entry": {
+    "accepted": true,
+    "label": "shell_one_body_validation",
+    "relative_errors": {
+      "helium_ground": 0.05719111755522632,
+      "helium_ion_ground": 0.08515059112196499,
+      "helium_ionization": 0.004684990420298574,
+      "helium_ionization_energy": 0.004684990420298574,
+      "helium_triplet": 0.07707839090464341,
+      "hydrogen_ground": 0.07324623377610529,
+      "singlet_triplet_gap": 0.0021907331288471
+    },
+    "scores": {
+      "full_rms_relative_error": 0.06035213977061181,
+      "helium_rms_relative_error": 0.048058950047168245,
+      "max_relative_error": 0.08515059112196499,
+      "one_body_rms_relative_error": 0.07942176632008359
+    },
+    "source_json": "outputs/atomic_lane/atomic_shell_one_body_full_validation.json"
+  },
+  "completed_at": "2026-04-19T20:37:36",
+  "entries": [
+    {
+      "accepted": true,
+      "label": "shell_projector_baseline",
+      "relative_errors": {
+        "helium_ground": 0.06262141224678863,
+        "helium_ion_ground": 0.09204471548609516,
+        "helium_ionization": 0.0024942446659286244,
+        "helium_ionization_energy": 0.0024942446659286244,
+        "helium_triplet": 0.08190216620881685,
+        "hydrogen_ground": 0.0762979801184176,
+        "singlet_triplet_gap": 0.005050581256874076
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06449127479490457,
+        "helium_rms_relative_error": 0.0516263879449374,
+        "max_relative_error": 0.09204471548609516,
+        "one_body_rms_relative_error": 0.08453878228087584
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_correlated_readout_shell_projector.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_one_body_screen",
+      "relative_errors": {
+        "helium_ground": 0.06306857631755347,
+        "helium_ion_ground": 0.09201407833392528,
+        "helium_ionization": 0.0009896758485909984,
+        "helium_ionization_energy": 0.0009896758485909984,
+        "helium_triplet": 0.08412055165707766,
+        "hydrogen_ground": 0.06823229268318332,
+        "singlet_triplet_gap": 0.0002090161228388565
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06347856863052857,
+        "helium_rms_relative_error": 0.05257122710152158,
+        "max_relative_error": 0.09201407833392528,
+        "one_body_rms_relative_error": 0.08100072955364454
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_shell_one_body_screen.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_one_body_retune",
+      "relative_errors": {
+        "helium_ground": 0.05844092272126289,
+        "helium_ion_ground": 0.08515059112196088,
+        "helium_ionization": 0.0006692862748798323,
+        "helium_ionization_energy": 0.0006692862748798323,
+        "helium_triplet": 0.07739752914524167,
+        "hydrogen_ground": 0.07324623377609618,
+        "singlet_triplet_gap": 0.001837971056274923
+      },
+      "scores": {
+        "full_rms_relative_error": 0.060587648602148415,
+        "helium_rms_relative_error": 0.048501404742601534,
+        "max_relative_error": 0.08515059112196088,
+        "one_body_rms_relative_error": 0.07942176632007719
+      },
+      "source_json": "outputs/atomic_lane/atomic_shell_one_body_retune_aggressive.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_one_body_validation",
+      "relative_errors": {
+        "helium_ground": 0.05719111755522632,
+        "helium_ion_ground": 0.08515059112196499,
+        "helium_ionization": 0.004684990420298574,
+        "helium_ionization_energy": 0.004684990420298574,
+        "helium_triplet": 0.07707839090464341,
+        "hydrogen_ground": 0.07324623377610529,
+        "singlet_triplet_gap": 0.0021907331288471
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06035213977061181,
+        "helium_rms_relative_error": 0.048058950047168245,
+        "max_relative_error": 0.08515059112196499,
+        "one_body_rms_relative_error": 0.07942176632008359
+      },
+      "source_json": "outputs/atomic_lane/atomic_shell_one_body_full_validation.json"
+    }
+  ],
+  "started_at": "2026-04-19T20:37:36",
+  "total_elapsed_seconds": 0.037995
+}

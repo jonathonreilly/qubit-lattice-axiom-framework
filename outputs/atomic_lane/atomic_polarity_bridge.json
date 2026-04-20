@@ -1,0 +1,269 @@
+{
+  "bridge_performed": true,
+  "comparison": {
+    "atomic_summary": {
+      "ensemble_count": 9,
+      "fallback_all_distinct": true,
+      "mean_deep_gap": 0.04944551328134819,
+      "mean_ge6_only_fraction": 0.02158509817967296,
+      "mean_low_gap": 0.23770155594699224,
+      "mean_pocket_gap": 0.17722358220366632,
+      "min_compact_match": 1.0,
+      "min_compact_subset": 1.0,
+      "min_nesting_floor": 1.0,
+      "retained_all_ensembles": true
+    },
+    "bound_state_baseline": {
+      "rows": [
+        {
+          "coupling": 1.0,
+          "coupling_scan": [
+            {
+              "E0": -1.2040563372522186,
+              "coupling": 0.5,
+              "fall_to_center": false,
+              "ipr": 0.0033621531462320977,
+              "n_bound": 10
+            },
+            {
+              "E0": -2.5622546103211397,
+              "coupling": 1.0,
+              "fall_to_center": false,
+              "ipr": 0.005407561495418937,
+              "n_bound": 10
+            },
+            {
+              "E0": -5.361869156684668,
+              "coupling": 2.0,
+              "fall_to_center": false,
+              "ipr": 0.008367653537839649,
+              "n_bound": 10
+            },
+            {
+              "E0": -8.210947802139794,
+              "coupling": 3.0,
+              "fall_to_center": false,
+              "ipr": 0.01082145780905679,
+              "n_bound": 10
+            },
+            {
+              "E0": -11.087370080910054,
+              "coupling": 4.0,
+              "fall_to_center": false,
+              "ipr": 0.013017810163158203,
+              "n_bound": 10
+            }
+          ],
+          "d": 2,
+          "localization": {
+            "center_weight": 2.035348875909361e-11,
+            "decay_rate": -0.9841248055275073,
+            "fall_to_center": false,
+            "fraction": 0.20547359693503295,
+            "genuinely_localized": true,
+            "ipr": 0.005407561495418919,
+            "n_eff": 184.92623724152966,
+            "physical_bound": true
+          },
+          "lowest_eigenvalue": -2.5622546103211494,
+          "n_bound": 40,
+          "sizes": [
+            30,
+            30
+          ]
+        },
+        {
+          "coupling": 2.0,
+          "coupling_scan": [
+            {
+              "E0": -0.034807195477651695,
+              "coupling": 0.5,
+              "fall_to_center": false,
+              "ipr": 0.0013891525219119102,
+              "n_bound": 1
+            },
+            {
+              "E0": -0.2164543313960509,
+              "coupling": 1.0,
+              "fall_to_center": false,
+              "ipr": 0.0036832530553567405,
+              "n_bound": 1
+            },
+            {
+              "E0": -0.7410018648366499,
+              "coupling": 2.0,
+              "fall_to_center": false,
+              "ipr": 0.015183771429573797,
+              "n_bound": 8
+            },
+            {
+              "E0": -1.4234202086508352,
+              "coupling": 3.0,
+              "fall_to_center": false,
+              "ipr": 0.031064843192135927,
+              "n_bound": 10
+            },
+            {
+              "E0": -2.200217788142564,
+              "coupling": 4.0,
+              "fall_to_center": false,
+              "ipr": 0.04666930220494542,
+              "n_bound": 10
+            }
+          ],
+          "d": 3,
+          "localization": {
+            "center_weight": 0.28976667330280126,
+            "decay_rate": 1.7737043988357815,
+            "fall_to_center": false,
+            "fraction": 0.016079050328990183,
+            "genuinely_localized": "True",
+            "ipr": 0.015183771429573778,
+            "n_eff": 65.85979014754379,
+            "physical_bound": true
+          },
+          "lowest_eigenvalue": -0.7410018648366484,
+          "n_bound": 8,
+          "sizes": [
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "coupling": 3.0,
+          "coupling_scan": [
+            {
+              "E0": 0.2646053011303503,
+              "coupling": 0.5,
+              "fall_to_center": false,
+              "ipr": 0.00045376261194051033,
+              "n_bound": 0
+            },
+            {
+              "E0": 0.19044264636360664,
+              "coupling": 1.0,
+              "fall_to_center": false,
+              "ipr": 0.0007176173835155037,
+              "n_bound": 0
+            },
+            {
+              "E0": -0.05309385393360649,
+              "coupling": 2.0,
+              "fall_to_center": false,
+              "ipr": 0.00367264171589359,
+              "n_bound": 1
+            },
+            {
+              "E0": -0.5248847091646635,
+              "coupling": 3.0,
+              "fall_to_center": false,
+              "ipr": 0.01467952200936281,
+              "n_bound": 1
+            },
+            {
+              "E0": -1.2013573377605795,
+              "coupling": 4.0,
+              "fall_to_center": false,
+              "ipr": 0.02715857273087832,
+              "n_bound": 1
+            }
+          ],
+          "d": 4,
+          "localization": {
+            "center_weight": 0.4628270373045963,
+            "decay_rate": 2.280362680184604,
+            "fall_to_center": false,
+            "fraction": 0.006812210910969616,
+            "genuinely_localized": "True",
+            "ipr": 0.014679522009362816,
+            "n_eff": 68.12210910969615,
+            "physical_bound": true
+          },
+          "lowest_eigenvalue": -0.5248847091646649,
+          "n_bound": 1,
+          "sizes": [
+            10,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "coupling": 4.0,
+          "coupling_scan": [
+            {
+              "E0": 1.2648327355823865,
+              "coupling": 0.5,
+              "fall_to_center": false,
+              "ipr": 0.001134021476109082,
+              "n_bound": 0
+            },
+            {
+              "E0": 1.1810647870512858,
+              "coupling": 1.0,
+              "fall_to_center": false,
+              "ipr": 0.0013779579109705414,
+              "n_bound": 0
+            },
+            {
+              "E0": 0.9755054980942381,
+              "coupling": 2.0,
+              "fall_to_center": false,
+              "ipr": 0.0024707590900284603,
+              "n_bound": 0
+            },
+            {
+              "E0": 0.6906235479053374,
+              "coupling": 3.0,
+              "fall_to_center": false,
+              "ipr": 0.005884919788239824,
+              "n_bound": 0
+            },
+            {
+              "E0": 0.2844732659400182,
+              "coupling": 4.0,
+              "fall_to_center": false,
+              "ipr": 0.015269399315758407,
+              "n_bound": 0
+            }
+          ],
+          "d": 5,
+          "localization": {
+            "center_weight": 0.5758997529234248,
+            "decay_rate": 2.6577416849104587,
+            "fall_to_center": false,
+            "fraction": 0.020956947511992292,
+            "genuinely_localized": "True",
+            "ipr": 0.015269399315758407,
+            "n_eff": 65.49046097497592,
+            "physical_bound": false
+          },
+          "lowest_eigenvalue": 0.28447326594001826,
+          "n_bound": 0,
+          "sizes": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "stable_dims": [
+        2,
+        3,
+        4
+      ],
+      "unstable_dims": [
+        5
+      ]
+    },
+    "bounded_companion_evidence": true,
+    "dimension_selection_claim_supported": false
+  },
+  "completed_at": "2026-04-19T14:05:09",
+  "mechanism_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_polarity_mechanism.json",
+  "started_at": "2026-04-19T14:05:08",
+  "total_elapsed_seconds": 1.140114
+}

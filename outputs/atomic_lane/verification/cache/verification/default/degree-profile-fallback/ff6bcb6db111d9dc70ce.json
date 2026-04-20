@@ -1,0 +1,23 @@
+{
+  "cache_key": "ff6bcb6db111d9dc70ce",
+  "payload": {
+    "rows": [
+      {
+        "compact_best_prethreshold_gap": -0.03418803418803418,
+        "compact_best_prethreshold_worst_gap": -0.00512820512820511,
+        "compact_parity_feature_subset": "-",
+        "compact_parity_size": null,
+        "extended_best_prethreshold_gap": 0.38888888888888884,
+        "extended_best_prethreshold_worst_gap": 0.38461538461538464,
+        "extended_parity_feature_subset": "degree_8_fraction, motif_mean_neighbor_degree, motif_two_hop_open_fraction",
+        "extended_parity_size": 3,
+        "extended_proxy_family": "sparse-structure",
+        "extended_proxy_signature": "degree_8_fraction, motif_mean_neighbor_degree, motif_two_hop_open_fraction",
+        "feature_count": 13,
+        "removed_features": "motif_high_degree_neighbor_fraction, motif_pocket_adjacent_fraction, motif_deep_pocket_adjacent_fraction, motif_low_degree_neighbor_fraction",
+        "route_name": "fallback-base"
+      }
+    ]
+  },
+  "stage_name": "degree-profile-fallback"
+}

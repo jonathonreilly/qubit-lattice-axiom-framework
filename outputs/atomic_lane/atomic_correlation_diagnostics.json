@@ -1,0 +1,31 @@
+{
+  "comparison": {
+    "entropy_gap_triplet_minus_singlet": 0.24232457238717794,
+    "residual_correlation_gain_triplet_minus_singlet": 0.24638705913685832,
+    "virtual_occupancy_gain_triplet_minus_singlet": -0.0006897395883901447
+  },
+  "completed_at": "2026-04-19T16:49:40",
+  "negative_orbital_count": 16,
+  "singlet": {
+    "dominant_configuration_weight": 0.9555538743936155,
+    "effective_orbital_count": 1.0527629300891403,
+    "excited_bound_occupancy": 0.048613769335323576,
+    "ground_orbital_occupancy": 1.9489569408433938,
+    "normalized_occupancy_entropy": 0.037397360586633316,
+    "residual_correlation_weight": 0.0444461256063845,
+    "virtual_occupancy": 0.002429289821282312
+  },
+  "source_readout_json": "outputs/atomic_lane/atomic_helium_readout_virtual_basis_tail.json",
+  "started_at": "2026-04-19T16:49:40",
+  "total_elapsed_seconds": 0.001099,
+  "triplet": {
+    "dominant_configuration_weight": 0.7091668152567572,
+    "effective_orbital_count": 2.6107690092705624,
+    "excited_bound_occupancy": 1.0041902433428438,
+    "ground_orbital_occupancy": 0.9940702064242676,
+    "normalized_occupancy_entropy": 0.27972193297381126,
+    "residual_correlation_weight": 0.2908331847432428,
+    "virtual_occupancy": 0.0017395502328921672
+  },
+  "virtual_orbital_count": 48
+}

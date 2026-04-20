@@ -1,0 +1,154 @@
+{
+  "baseline_scoreboard_entry": {
+    "improvement_vs_baseline": {
+      "full_rms_relative_error_delta": 0.0,
+      "helium_ground_delta": 0.0,
+      "helium_ion_ground_delta": 0.0,
+      "helium_ionization_energy_delta": 0.0,
+      "helium_rms_relative_error_delta": 0.0,
+      "helium_triplet_delta": 0.0,
+      "hydrogen_ground_delta": 0.0,
+      "max_relative_error_delta": 0.0,
+      "one_body_rms_relative_error_delta": 0.0,
+      "singlet_triplet_gap_delta": 0.0
+    },
+    "label": "uv_core",
+    "model_observables": {
+      "helium_ground_magnitude": 2.750736920090061,
+      "helium_ion_ground_magnitude": 1.8349993375241687,
+      "helium_ionization_energy": 0.9157375825658922,
+      "helium_triplet_magnitude": 2.0199199161877472,
+      "hydrogen_ground_magnitude": 0.564532066933804,
+      "singlet_triplet_gap": 0.7308170039023136
+    },
+    "relative_errors": {
+      "helium_ground": 0.05268663174578603,
+      "helium_ion_ground": 0.08250033123791567,
+      "helium_ionization_energy": 0.013292997109581206,
+      "helium_triplet": 0.07139911937698074,
+      "hydrogen_ground": 0.12906413386760796,
+      "singlet_triplet_gap": 0.003187400200164614
+    },
+    "scores": {
+      "full_rms_relative_error": 0.07248498006492723,
+      "helium_rms_relative_error": 0.044890362843030565,
+      "max_relative_error": 0.12906413386760796,
+      "one_body_rms_relative_error": 0.1083140233426901
+    },
+    "source_readout_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_helium_readout_uv_core.json",
+    "spatial_orbital_count": 16,
+    "virtual_orbital_count": 0
+  },
+  "basis_convergence": {
+    "basis_is_still_moving": true,
+    "full_rms_improvement_vs_baseline": -0.0001351379690468918,
+    "helium_ground_limit_relative_error": 0.049731341515771965,
+    "helium_ionization_limit_relative_error": 0.022788534134107863
+  },
+  "best_scoreboard_entry": {
+    "improvement_vs_baseline": {
+      "full_rms_relative_error_delta": -0.0001351379690468918,
+      "helium_ground_delta": -0.0016407333514285583,
+      "helium_ion_ground_delta": -4.218847493575595e-15,
+      "helium_ionization_energy_delta": 0.005271781474328607,
+      "helium_rms_relative_error_delta": -0.000328207928712361,
+      "helium_triplet_delta": -0.0010480311131360054,
+      "hydrogen_ground_delta": 4.6629367034256575e-15,
+      "max_relative_error_delta": 4.6629367034256575e-15,
+      "one_body_rms_relative_error_delta": 1.1657341758564144e-15,
+      "singlet_triplet_gap_delta": 0.003410496113573691
+    },
+    "label": "virtual_64",
+    "model_observables": {
+      "helium_ground_magnitude": 2.755501157518817,
+      "helium_ion_ground_magnitude": 1.834999337524177,
+      "helium_ionization_energy": 0.9205018199946398,
+      "helium_triplet_magnitude": 2.022199624254347,
+      "hydrogen_ground_magnitude": 0.5645320669338063,
+      "singlet_triplet_gap": 0.7333015332644699
+    },
+    "relative_errors": {
+      "helium_ground": 0.05104589839435747,
+      "helium_ion_ground": 0.08250033123791145,
+      "helium_ionization_energy": 0.018564778583909813,
+      "helium_triplet": 0.07035108826384473,
+      "hydrogen_ground": 0.12906413386761262,
+      "singlet_triplet_gap": 0.006597896313738305
+    },
+    "scores": {
+      "full_rms_relative_error": 0.07234984209588034,
+      "helium_rms_relative_error": 0.044562154914318204,
+      "max_relative_error": 0.12906413386761262,
+      "one_body_rms_relative_error": 0.10831402334269126
+    },
+    "source_readout_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_helium_readout_virtual_basis_tail.json",
+    "spatial_orbital_count": 64,
+    "virtual_orbital_count": 48
+  },
+  "completed_at": "2026-04-19T16:50:42",
+  "correlation_summary": {
+    "comparison": {
+      "entropy_gap_triplet_minus_singlet": 0.24232457238717794,
+      "residual_correlation_gain_triplet_minus_singlet": 0.24638705913685832,
+      "virtual_occupancy_gain_triplet_minus_singlet": -0.0006897395883901447
+    },
+    "completed_at": "2026-04-19T16:49:40",
+    "negative_orbital_count": 16,
+    "singlet": {
+      "dominant_configuration_weight": 0.9555538743936155,
+      "effective_orbital_count": 1.0527629300891403,
+      "excited_bound_occupancy": 0.048613769335323576,
+      "ground_orbital_occupancy": 1.9489569408433938,
+      "normalized_occupancy_entropy": 0.037397360586633316,
+      "residual_correlation_weight": 0.0444461256063845,
+      "virtual_occupancy": 0.002429289821282312
+    },
+    "source_readout_json": "outputs/atomic_lane/atomic_helium_readout_virtual_basis_tail.json",
+    "started_at": "2026-04-19T16:49:40",
+    "total_elapsed_seconds": 0.001099,
+    "triplet": {
+      "dominant_configuration_weight": 0.7091668152567572,
+      "effective_orbital_count": 2.6107690092705624,
+      "excited_bound_occupancy": 1.0041902433428438,
+      "ground_orbital_occupancy": 0.9940702064242676,
+      "normalized_occupancy_entropy": 0.27972193297381126,
+      "residual_correlation_weight": 0.2908331847432428,
+      "virtual_occupancy": 0.0017395502328921672
+    },
+    "virtual_orbital_count": 48
+  },
+  "recommended_next_move": "Shift effort away from larger virtual-basis scans and toward a one-body/continuum upgrade that reduces the hydrogen and He+ errors without losing the retained two-electron sector. The many-body basis is still improving, but only at the fourth-decimal level.",
+  "spin_summary": {
+    "completed_at": "2026-04-19T16:49:40",
+    "contact": {
+      "singlet_probability": 0.029303338031167043,
+      "suppression_factor_singlet_over_triplet": 2.6074271035536376e+16,
+      "triplet_contact_log10": -17.94929508063668,
+      "triplet_probability": 1.1238411225851645e-18
+    },
+    "occupancy_comparison": {
+      "cosine_similarity": 0.804257977513355
+    },
+    "repulsion": {
+      "singlet_energy": 0.8462483127493855,
+      "triplet_energy": 0.43454355149538265,
+      "triplet_over_singlet_ratio": 0.5134941422613764
+    },
+    "singlet_ionization_energy": 0.9205018199946398,
+    "singlet_triplet_gap": 0.7333015332644699,
+    "source_readout_json": "outputs/atomic_lane/atomic_helium_readout_virtual_basis_tail.json",
+    "spin_ground_sector": "singlet",
+    "started_at": "2026-04-19T16:49:40",
+    "total_elapsed_seconds": 0.000414,
+    "triplet_ionization_energy": 0.18720028673016986
+  },
+  "started_at": "2026-04-19T16:50:42",
+  "total_elapsed_seconds": 0.000572,
+  "worst_gap_observable": {
+    "absolute_delta": 0.06453206693380631,
+    "actual_value": 0.5,
+    "model_value": 0.5645320669338063,
+    "observable": "hydrogen_ground_magnitude",
+    "relative_error": 0.12906413386761262
+  }
+}

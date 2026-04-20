@@ -1,0 +1,5332 @@
+{
+  "baseline_surfaces": {
+    "broader": {
+      "atomic_union_count": 246,
+      "atomic_union_fraction": 0.9959514170040485,
+      "excluded_count": 0,
+      "excluded_fraction": 0.0,
+      "nonvacuous_fallback_candidate": {
+        "abbreviated_label": "deg2",
+        "atomic_target": null,
+        "contains_sparse": true,
+        "feature_subset": [
+          "degree_2_fraction"
+        ],
+        "feature_subset_label": "degree_2_fraction",
+        "proxy_family": "degree-profile",
+        "route_role": "atomic-standalone",
+        "tier": 1
+      },
+      "nonvacuous_fallback_support_fraction": 0.6437246963562753,
+      "nonvacuous_overlap": {
+        "atomic_union_count": 246,
+        "atomic_union_implies_fallback": 0.6463414634146342,
+        "atomic_union_only_fraction": 0.3522267206477733,
+        "fallback_count": 159,
+        "fallback_implies_atomic_union": 1.0,
+        "fallback_only_fraction": 0.0,
+        "intersection_count": 159
+      },
+      "raw_fallback_candidate": {
+        "abbreviated_label": "hop2open",
+        "atomic_target": null,
+        "contains_sparse": true,
+        "feature_subset": [
+          "motif_two_hop_open_fraction"
+        ],
+        "feature_subset_label": "motif_two_hop_open_fraction",
+        "proxy_family": "sparse-structure",
+        "route_role": "atomic-standalone",
+        "tier": 1
+      },
+      "raw_fallback_support_fraction": 1.0,
+      "raw_overlap": {
+        "atomic_union_count": 246,
+        "atomic_union_implies_fallback": 1.0,
+        "atomic_union_only_fraction": 0.0,
+        "fallback_count": 247,
+        "fallback_implies_atomic_union": 0.9959514170040485,
+        "fallback_only_fraction": 0.004048582995951417,
+        "intersection_count": 246
+      },
+      "residual_row_count": 247
+    },
+    "default": {
+      "atomic_union_count": 181,
+      "atomic_union_fraction": 0.9945054945054945,
+      "excluded_count": 0,
+      "excluded_fraction": 0.0,
+      "nonvacuous_fallback_candidate": {
+        "abbreviated_label": "deg2",
+        "atomic_target": null,
+        "contains_sparse": true,
+        "feature_subset": [
+          "degree_2_fraction"
+        ],
+        "feature_subset_label": "degree_2_fraction",
+        "proxy_family": "degree-profile",
+        "route_role": "atomic-standalone",
+        "tier": 1
+      },
+      "nonvacuous_fallback_support_fraction": 0.5989010989010989,
+      "nonvacuous_overlap": {
+        "atomic_union_count": 181,
+        "atomic_union_implies_fallback": 0.6022099447513812,
+        "atomic_union_only_fraction": 0.3956043956043956,
+        "fallback_count": 109,
+        "fallback_implies_atomic_union": 1.0,
+        "fallback_only_fraction": 0.0,
+        "intersection_count": 109
+      },
+      "raw_fallback_candidate": {
+        "abbreviated_label": "hop2open",
+        "atomic_target": null,
+        "contains_sparse": true,
+        "feature_subset": [
+          "motif_two_hop_open_fraction"
+        ],
+        "feature_subset_label": "motif_two_hop_open_fraction",
+        "proxy_family": "sparse-structure",
+        "route_role": "atomic-standalone",
+        "tier": 1
+      },
+      "raw_fallback_support_fraction": 1.0,
+      "raw_overlap": {
+        "atomic_union_count": 181,
+        "atomic_union_implies_fallback": 1.0,
+        "atomic_union_only_fraction": 0.0,
+        "fallback_count": 182,
+        "fallback_implies_atomic_union": 0.9945054945054945,
+        "fallback_only_fraction": 0.005494505494505495,
+        "intersection_count": 181
+      },
+      "residual_row_count": 182
+    }
+  },
+  "completed_at": "2026-04-19T12:53:49",
+  "completed_tier": 3,
+  "ensemble_names": [
+    "default",
+    "broader"
+  ],
+  "feature_scope": "full",
+  "ladder_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_route_ladder_scan.json",
+  "promoted_discriminator": null,
+  "search_succeeded": false,
+  "started_at": "2026-04-19T12:51:54",
+  "summary_stage_records": {
+    "broader": [
+      {
+        "cache_hit": true,
+        "cache_key": "4cd3044a75ebd5c3dab8",
+        "elapsed_seconds": 0.00020575011149048805,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/threshold-core-overlap/6bf01c92fb2ef0b875b1.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": true,
+        "cache_key": "c2e4523519d66452f502",
+        "elapsed_seconds": 0.0009110830724239349,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/candidate-feature-supports/fec0ba3054acf756bc77.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "default": [
+      {
+        "cache_hit": true,
+        "cache_key": "be21045872297a99361d",
+        "elapsed_seconds": 0.0004031672142446041,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/threshold-core-overlap/1b3193726c0655251a56.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": true,
+        "cache_key": "fdde9bf2deb9a8492c88",
+        "elapsed_seconds": 0.0011964170262217522,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/candidate-feature-supports/dd57f9f75499351ff60c.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ]
+  },
+  "support_stage_records": {
+    "broader": [
+      {
+        "cache_hit": true,
+        "cache_key": "c2e4523519d66452f502",
+        "elapsed_seconds": 0.0008696247823536396,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/candidate-feature-supports/fec0ba3054acf756bc77.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "default": [
+      {
+        "cache_hit": true,
+        "cache_key": "fdde9bf2deb9a8492c88",
+        "elapsed_seconds": 0.0003277501091361046,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/candidate-feature-supports/dd57f9f75499351ff60c.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ]
+  },
+  "tier_counts": {
+    "tier_1": {
+      "passed": 0,
+      "tested": 37
+    },
+    "tier_2": {
+      "passed": 0,
+      "tested": 666
+    },
+    "tier_3": {
+      "passed": 0,
+      "tested": 7770
+    }
+  },
+  "top_results": [
+    {
+      "discriminator": {
+        "abbreviated_label": "deg0",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_0_fraction"
+        ],
+        "feature_subset_label": "degree_0_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 0.9777777777777777,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.24725274725274726,
+        "discriminator": {
+          "abbreviated_label": "deg0",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_0_fraction"
+          ],
+          "feature_subset_label": "degree_0_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 0,
+        "excluded_fraction": 0.0,
+        "failed_criteria": [
+          "deep=>low",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 0.989010989010989,
+        "passes": false,
+        "pocket_implies_low": 0.9923076923076923,
+        "pocket_support_fraction": 0.7142857142857143,
+        "residual_row_count": 182,
+        "score": {
+          "excluded_fraction": 0.0,
+          "min_nesting_floor": 0.9777777777777777,
+          "residual_fallback_fraction": 0.5989010989010989,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 181,
+          "atomic_union_fraction": 0.9945054945054945,
+          "excluded_count": 0,
+          "excluded_fraction": 0.0,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg2",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "proxy_family": "degree-profile",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.5989010989010989,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 181,
+            "atomic_union_implies_fallback": 0.6022099447513812,
+            "atomic_union_only_fraction": 0.3956043956043956,
+            "fallback_count": 109,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 109
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 181,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 182,
+            "fallback_implies_atomic_union": 0.9945054945054945,
+            "fallback_only_fraction": 0.005494505494505495,
+            "intersection_count": 181
+          },
+          "residual_row_count": 182
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.0,
+        "max_residual_fallback_fraction": 0.6437246963562753,
+        "min_nesting_floor": 0.9777777777777777,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 0.9777777777777777,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.24725274725274726,
+          "discriminator": {
+            "abbreviated_label": "deg0",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_0_fraction"
+            ],
+            "feature_subset_label": "degree_0_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 0,
+          "excluded_fraction": 0.0,
+          "failed_criteria": [
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.989010989010989,
+          "passes": false,
+          "pocket_implies_low": 0.9923076923076923,
+          "pocket_support_fraction": 0.7142857142857143,
+          "residual_row_count": 182,
+          "score": {
+            "excluded_fraction": 0.0,
+            "min_nesting_floor": 0.9777777777777777,
+            "residual_fallback_fraction": 0.5989010989010989,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 181,
+            "atomic_union_fraction": 0.9945054945054945,
+            "excluded_count": 0,
+            "excluded_fraction": 0.0,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.5989010989010989,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 181,
+              "atomic_union_implies_fallback": 0.6022099447513812,
+              "atomic_union_only_fraction": 0.3956043956043956,
+              "fallback_count": 109,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 109
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 181,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 182,
+              "fallback_implies_atomic_union": 0.9945054945054945,
+              "fallback_only_fraction": 0.005494505494505495,
+              "intersection_count": 181
+            },
+            "residual_row_count": 182
+          }
+        },
+        {
+          "deep_implies_low": 0.9852941176470589,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.27530364372469635,
+          "discriminator": {
+            "abbreviated_label": "deg0",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_0_fraction"
+            ],
+            "feature_subset_label": "degree_0_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 0,
+          "excluded_fraction": 0.0,
+          "failed_criteria": [
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9919028340080972,
+          "passes": false,
+          "pocket_implies_low": 0.9943502824858758,
+          "pocket_support_fraction": 0.7165991902834008,
+          "residual_row_count": 247,
+          "score": {
+            "excluded_fraction": 0.0,
+            "min_nesting_floor": 0.9852941176470589,
+            "residual_fallback_fraction": 0.6437246963562753,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 246,
+            "atomic_union_fraction": 0.9959514170040485,
+            "excluded_count": 0,
+            "excluded_fraction": 0.0,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.6437246963562753,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 246,
+              "atomic_union_implies_fallback": 0.6463414634146342,
+              "atomic_union_only_fraction": 0.3522267206477733,
+              "fallback_count": 159,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 159
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 246,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 247,
+              "fallback_implies_atomic_union": 0.9959514170040485,
+              "fallback_only_fraction": 0.004048582995951417,
+              "intersection_count": 246
+            },
+            "residual_row_count": 247
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg1",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_1_fraction"
+        ],
+        "feature_subset_label": "degree_1_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 0.9761904761904762,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.24561403508771928,
+        "discriminator": {
+          "abbreviated_label": "deg1",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_1_fraction"
+          ],
+          "feature_subset_label": "degree_1_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 11,
+        "excluded_fraction": 0.06043956043956044,
+        "failed_criteria": [
+          "deep=>low",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 0.9883040935672515,
+        "passes": false,
+        "pocket_implies_low": 0.9916666666666667,
+        "pocket_support_fraction": 0.7017543859649122,
+        "residual_row_count": 171,
+        "score": {
+          "excluded_fraction": 0.06043956043956044,
+          "min_nesting_floor": 0.9761904761904762,
+          "residual_fallback_fraction": 0.6023391812865497,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 170,
+          "atomic_union_fraction": 0.9941520467836257,
+          "excluded_count": 11,
+          "excluded_fraction": 0.06043956043956044,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg2",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "proxy_family": "degree-profile",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.6023391812865497,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 170,
+            "atomic_union_implies_fallback": 0.6058823529411764,
+            "atomic_union_only_fraction": 0.391812865497076,
+            "fallback_count": 103,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 103
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 170,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 171,
+            "fallback_implies_atomic_union": 0.9941520467836257,
+            "fallback_only_fraction": 0.005847953216374269,
+            "intersection_count": 170
+          },
+          "residual_row_count": 171
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.0931174089068826,
+        "max_residual_fallback_fraction": 0.6428571428571429,
+        "min_nesting_floor": 0.9761904761904762,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 0.9761904761904762,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.24561403508771928,
+          "discriminator": {
+            "abbreviated_label": "deg1",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_1_fraction"
+            ],
+            "feature_subset_label": "degree_1_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 11,
+          "excluded_fraction": 0.06043956043956044,
+          "failed_criteria": [
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9883040935672515,
+          "passes": false,
+          "pocket_implies_low": 0.9916666666666667,
+          "pocket_support_fraction": 0.7017543859649122,
+          "residual_row_count": 171,
+          "score": {
+            "excluded_fraction": 0.06043956043956044,
+            "min_nesting_floor": 0.9761904761904762,
+            "residual_fallback_fraction": 0.6023391812865497,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 170,
+            "atomic_union_fraction": 0.9941520467836257,
+            "excluded_count": 11,
+            "excluded_fraction": 0.06043956043956044,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.6023391812865497,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 170,
+              "atomic_union_implies_fallback": 0.6058823529411764,
+              "atomic_union_only_fraction": 0.391812865497076,
+              "fallback_count": 103,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 103
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 170,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 171,
+              "fallback_implies_atomic_union": 0.9941520467836257,
+              "fallback_only_fraction": 0.005847953216374269,
+              "intersection_count": 170
+            },
+            "residual_row_count": 171
+          }
+        },
+        {
+          "deep_implies_low": 0.9818181818181818,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.24553571428571427,
+          "discriminator": {
+            "abbreviated_label": "deg1",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_1_fraction"
+            ],
+            "feature_subset_label": "degree_1_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 23,
+          "excluded_fraction": 0.0931174089068826,
+          "failed_criteria": [
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9910714285714286,
+          "passes": false,
+          "pocket_implies_low": 0.9935483870967742,
+          "pocket_support_fraction": 0.6919642857142857,
+          "residual_row_count": 224,
+          "score": {
+            "excluded_fraction": 0.0931174089068826,
+            "min_nesting_floor": 0.9818181818181818,
+            "residual_fallback_fraction": 0.6428571428571429,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 223,
+            "atomic_union_fraction": 0.9955357142857143,
+            "excluded_count": 23,
+            "excluded_fraction": 0.0931174089068826,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.6428571428571429,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 223,
+              "atomic_union_implies_fallback": 0.6457399103139013,
+              "atomic_union_only_fraction": 0.35267857142857145,
+              "fallback_count": 144,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 144
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 223,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 224,
+              "fallback_implies_atomic_union": 0.9955357142857143,
+              "fallback_only_fraction": 0.004464285714285714,
+              "intersection_count": 223
+            },
+            "residual_row_count": 224
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "dpadj",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_deep_pocket_adjacent_fraction"
+        ],
+        "feature_subset_label": "motif_deep_pocket_adjacent_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "dpadj",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_deep_pocket_adjacent_fraction"
+          ],
+          "feature_subset_label": "motif_deep_pocket_adjacent_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 45,
+        "excluded_fraction": 0.24725274725274726,
+        "failed_criteria": [
+          "deep-residual-missing",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 0.9927007299270073,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.6204379562043796,
+        "residual_row_count": 137,
+        "score": {
+          "excluded_fraction": 0.24725274725274726,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.6423357664233577,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 136,
+          "atomic_union_fraction": 0.9927007299270073,
+          "excluded_count": 45,
+          "excluded_fraction": 0.24725274725274726,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg2",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "proxy_family": "degree-profile",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.6423357664233577,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 136,
+            "atomic_union_implies_fallback": 0.6470588235294118,
+            "atomic_union_only_fraction": 0.35036496350364965,
+            "fallback_count": 88,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 88
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 136,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 137,
+            "fallback_implies_atomic_union": 0.9927007299270073,
+            "fallback_only_fraction": 0.0072992700729927005,
+            "intersection_count": 136
+          },
+          "residual_row_count": 137
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.27530364372469635,
+        "max_residual_fallback_fraction": 0.6927374301675978,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "dpadj",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_deep_pocket_adjacent_fraction"
+            ],
+            "feature_subset_label": "motif_deep_pocket_adjacent_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 45,
+          "excluded_fraction": 0.24725274725274726,
+          "failed_criteria": [
+            "deep-residual-missing",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9927007299270073,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.6204379562043796,
+          "residual_row_count": 137,
+          "score": {
+            "excluded_fraction": 0.24725274725274726,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.6423357664233577,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 136,
+            "atomic_union_fraction": 0.9927007299270073,
+            "excluded_count": 45,
+            "excluded_fraction": 0.24725274725274726,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.6423357664233577,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 136,
+              "atomic_union_implies_fallback": 0.6470588235294118,
+              "atomic_union_only_fraction": 0.35036496350364965,
+              "fallback_count": 88,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 88
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 136,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 137,
+              "fallback_implies_atomic_union": 0.9927007299270073,
+              "fallback_only_fraction": 0.0072992700729927005,
+              "intersection_count": 136
+            },
+            "residual_row_count": 137
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "dpadj",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_deep_pocket_adjacent_fraction"
+            ],
+            "feature_subset_label": "motif_deep_pocket_adjacent_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 68,
+          "excluded_fraction": 0.27530364372469635,
+          "failed_criteria": [
+            "deep-residual-missing",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.994413407821229,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.6089385474860335,
+          "residual_row_count": 179,
+          "score": {
+            "excluded_fraction": 0.27530364372469635,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.6927374301675978,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 178,
+            "atomic_union_fraction": 0.994413407821229,
+            "excluded_count": 68,
+            "excluded_fraction": 0.27530364372469635,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.6927374301675978,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 178,
+              "atomic_union_implies_fallback": 0.6966292134831461,
+              "atomic_union_only_fraction": 0.3016759776536313,
+              "fallback_count": 124,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 124
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 178,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 179,
+              "fallback_implies_atomic_union": 0.994413407821229,
+              "fallback_only_fraction": 0.00558659217877095,
+              "intersection_count": 178
+            },
+            "residual_row_count": 179
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg2",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_2_fraction"
+        ],
+        "feature_subset_label": "degree_2_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 0.9583333333333334,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.3287671232876712,
+        "discriminator": {
+          "abbreviated_label": "deg2",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_2_fraction"
+          ],
+          "feature_subset_label": "degree_2_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 109,
+        "excluded_fraction": 0.5989010989010989,
+        "failed_criteria": [
+          "pocket=>low",
+          "deep=>low",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 0.9726027397260274,
+        "passes": false,
+        "pocket_implies_low": 0.9787234042553191,
+        "pocket_support_fraction": 0.6438356164383562,
+        "residual_row_count": 73,
+        "score": {
+          "excluded_fraction": 0.5989010989010989,
+          "min_nesting_floor": 0.9583333333333334,
+          "residual_fallback_fraction": 0.0684931506849315,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 72,
+          "atomic_union_fraction": 0.9863013698630136,
+          "excluded_count": 109,
+          "excluded_fraction": 0.5989010989010989,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg1",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_1_fraction"
+            ],
+            "feature_subset_label": "degree_1_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.0684931506849315,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 72,
+            "atomic_union_implies_fallback": 0.06944444444444445,
+            "atomic_union_only_fraction": 0.9178082191780822,
+            "fallback_count": 5,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 5
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 72,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 73,
+            "fallback_implies_atomic_union": 0.9863013698630136,
+            "fallback_only_fraction": 0.0136986301369863,
+            "intersection_count": 72
+          },
+          "residual_row_count": 73
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.6437246963562753,
+        "max_residual_fallback_fraction": 0.09090909090909091,
+        "min_nesting_floor": 0.9583333333333334,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 0.9583333333333334,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.3287671232876712,
+          "discriminator": {
+            "abbreviated_label": "deg2",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 109,
+          "excluded_fraction": 0.5989010989010989,
+          "failed_criteria": [
+            "pocket=>low",
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9726027397260274,
+          "passes": false,
+          "pocket_implies_low": 0.9787234042553191,
+          "pocket_support_fraction": 0.6438356164383562,
+          "residual_row_count": 73,
+          "score": {
+            "excluded_fraction": 0.5989010989010989,
+            "min_nesting_floor": 0.9583333333333334,
+            "residual_fallback_fraction": 0.0684931506849315,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 72,
+            "atomic_union_fraction": 0.9863013698630136,
+            "excluded_count": 109,
+            "excluded_fraction": 0.5989010989010989,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg1",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_1_fraction"
+              ],
+              "feature_subset_label": "degree_1_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.0684931506849315,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 72,
+              "atomic_union_implies_fallback": 0.06944444444444445,
+              "atomic_union_only_fraction": 0.9178082191780822,
+              "fallback_count": 5,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 5
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 72,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 73,
+              "fallback_implies_atomic_union": 0.9863013698630136,
+              "fallback_only_fraction": 0.0136986301369863,
+              "intersection_count": 72
+            },
+            "residual_row_count": 73
+          }
+        },
+        {
+          "deep_implies_low": 0.9696969696969697,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.375,
+          "discriminator": {
+            "abbreviated_label": "deg2",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 159,
+          "excluded_fraction": 0.6437246963562753,
+          "failed_criteria": [
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9772727272727273,
+          "passes": false,
+          "pocket_implies_low": 0.9830508474576272,
+          "pocket_support_fraction": 0.6704545454545454,
+          "residual_row_count": 88,
+          "score": {
+            "excluded_fraction": 0.6437246963562753,
+            "min_nesting_floor": 0.9696969696969697,
+            "residual_fallback_fraction": 0.09090909090909091,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 87,
+            "atomic_union_fraction": 0.9886363636363636,
+            "excluded_count": 159,
+            "excluded_fraction": 0.6437246963562753,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg1",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_1_fraction"
+              ],
+              "feature_subset_label": "degree_1_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.09090909090909091,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 87,
+              "atomic_union_implies_fallback": 0.09195402298850575,
+              "atomic_union_only_fraction": 0.8977272727272727,
+              "fallback_count": 8,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 8
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 87,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 88,
+              "fallback_implies_atomic_union": 0.9886363636363636,
+              "fallback_only_fraction": 0.011363636363636364,
+              "intersection_count": 87
+            },
+            "residual_row_count": 88
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "padj",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_pocket_adjacent_fraction"
+        ],
+        "feature_subset_label": "motif_pocket_adjacent_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "padj",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_pocket_adjacent_fraction"
+          ],
+          "feature_subset_label": "motif_pocket_adjacent_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 130,
+        "excluded_fraction": 0.7142857142857143,
+        "failed_criteria": [
+          "pocket-residual-missing",
+          "deep-residual-missing",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 0.9807692307692307,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 52,
+        "score": {
+          "excluded_fraction": 0.7142857142857143,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.5,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 51,
+          "atomic_union_fraction": 0.9807692307692307,
+          "excluded_count": 130,
+          "excluded_fraction": 0.7142857142857143,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg2",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "proxy_family": "degree-profile",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.5,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 51,
+            "atomic_union_implies_fallback": 0.5098039215686274,
+            "atomic_union_only_fraction": 0.4807692307692308,
+            "fallback_count": 26,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 26
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 51,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 52,
+            "fallback_implies_atomic_union": 0.9807692307692307,
+            "fallback_only_fraction": 0.019230769230769232,
+            "intersection_count": 51
+          },
+          "residual_row_count": 52
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.7165991902834008,
+        "max_residual_fallback_fraction": 0.5857142857142857,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "padj",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_pocket_adjacent_fraction"
+            ],
+            "feature_subset_label": "motif_pocket_adjacent_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 130,
+          "excluded_fraction": 0.7142857142857143,
+          "failed_criteria": [
+            "pocket-residual-missing",
+            "deep-residual-missing",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9807692307692307,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 52,
+          "score": {
+            "excluded_fraction": 0.7142857142857143,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.5,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 51,
+            "atomic_union_fraction": 0.9807692307692307,
+            "excluded_count": 130,
+            "excluded_fraction": 0.7142857142857143,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.5,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 51,
+              "atomic_union_implies_fallback": 0.5098039215686274,
+              "atomic_union_only_fraction": 0.4807692307692308,
+              "fallback_count": 26,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 26
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 51,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 52,
+              "fallback_implies_atomic_union": 0.9807692307692307,
+              "fallback_only_fraction": 0.019230769230769232,
+              "intersection_count": 51
+            },
+            "residual_row_count": 52
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "padj",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_pocket_adjacent_fraction"
+            ],
+            "feature_subset_label": "motif_pocket_adjacent_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 177,
+          "excluded_fraction": 0.7165991902834008,
+          "failed_criteria": [
+            "pocket-residual-missing",
+            "deep-residual-missing",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9857142857142858,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 70,
+          "score": {
+            "excluded_fraction": 0.7165991902834008,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.5857142857142857,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 69,
+            "atomic_union_fraction": 0.9857142857142858,
+            "excluded_count": 177,
+            "excluded_fraction": 0.7165991902834008,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.5857142857142857,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 69,
+              "atomic_union_implies_fallback": 0.5942028985507246,
+              "atomic_union_only_fraction": 0.4,
+              "fallback_count": 41,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 41
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 69,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 70,
+              "fallback_implies_atomic_union": 0.9857142857142858,
+              "fallback_only_fraction": 0.014285714285714285,
+              "intersection_count": 69
+            },
+            "residual_row_count": 70
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "reach24",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_neighbor_reach_ge_24_fraction"
+        ],
+        "feature_subset_label": "motif_neighbor_reach_ge_24_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 0.95,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.46511627906976744,
+        "discriminator": {
+          "abbreviated_label": "reach24",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_neighbor_reach_ge_24_fraction"
+          ],
+          "feature_subset_label": "motif_neighbor_reach_ge_24_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 139,
+        "excluded_fraction": 0.7637362637362637,
+        "failed_criteria": [
+          "pocket=>low",
+          "deep=>low",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 0.9767441860465116,
+        "passes": false,
+        "pocket_implies_low": 0.9736842105263158,
+        "pocket_support_fraction": 0.8837209302325582,
+        "residual_row_count": 43,
+        "score": {
+          "excluded_fraction": 0.7637362637362637,
+          "min_nesting_floor": 0.95,
+          "residual_fallback_fraction": 0.5116279069767442,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 43,
+          "atomic_union_fraction": 1.0,
+          "excluded_count": 139,
+          "excluded_fraction": 0.7637362637362637,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg2",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "proxy_family": "degree-profile",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.5116279069767442,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 43,
+            "atomic_union_implies_fallback": 0.5116279069767442,
+            "atomic_union_only_fraction": 0.4883720930232558,
+            "fallback_count": 22,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 22
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 43,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 43,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 43
+          },
+          "residual_row_count": 43
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.7637362637362637,
+        "max_residual_fallback_fraction": 0.5806451612903226,
+        "min_nesting_floor": 0.95,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 0.95,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.46511627906976744,
+          "discriminator": {
+            "abbreviated_label": "reach24",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_neighbor_reach_ge_24_fraction"
+            ],
+            "feature_subset_label": "motif_neighbor_reach_ge_24_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 139,
+          "excluded_fraction": 0.7637362637362637,
+          "failed_criteria": [
+            "pocket=>low",
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9767441860465116,
+          "passes": false,
+          "pocket_implies_low": 0.9736842105263158,
+          "pocket_support_fraction": 0.8837209302325582,
+          "residual_row_count": 43,
+          "score": {
+            "excluded_fraction": 0.7637362637362637,
+            "min_nesting_floor": 0.95,
+            "residual_fallback_fraction": 0.5116279069767442,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 43,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 139,
+            "excluded_fraction": 0.7637362637362637,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.5116279069767442,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 43,
+              "atomic_union_implies_fallback": 0.5116279069767442,
+              "atomic_union_only_fraction": 0.4883720930232558,
+              "fallback_count": 22,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 22
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 43,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 43,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 43
+            },
+            "residual_row_count": 43
+          }
+        },
+        {
+          "deep_implies_low": 0.9666666666666667,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.4838709677419355,
+          "discriminator": {
+            "abbreviated_label": "reach24",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_neighbor_reach_ge_24_fraction"
+            ],
+            "feature_subset_label": "motif_neighbor_reach_ge_24_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 185,
+          "excluded_fraction": 0.7489878542510121,
+          "failed_criteria": [
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.9838709677419355,
+          "passes": false,
+          "pocket_implies_low": 0.9824561403508771,
+          "pocket_support_fraction": 0.9193548387096774,
+          "residual_row_count": 62,
+          "score": {
+            "excluded_fraction": 0.7489878542510121,
+            "min_nesting_floor": 0.9666666666666667,
+            "residual_fallback_fraction": 0.5806451612903226,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 62,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 185,
+            "excluded_fraction": 0.7489878542510121,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.5806451612903226,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 62,
+              "atomic_union_implies_fallback": 0.5806451612903226,
+              "atomic_union_only_fraction": 0.41935483870967744,
+              "fallback_count": 36,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 36
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 62,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 62,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 62
+            },
+            "residual_row_count": 62
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg3",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_3_fraction"
+        ],
+        "feature_subset_label": "degree_3_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 0.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.1111111111111111,
+        "discriminator": {
+          "abbreviated_label": "deg3",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_3_fraction"
+          ],
+          "feature_subset_label": "degree_3_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 173,
+        "excluded_fraction": 0.9505494505494505,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "pocket=>low",
+          "deep=>low",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 0.7777777777777778,
+        "passes": false,
+        "pocket_implies_low": 0.75,
+        "pocket_support_fraction": 0.4444444444444444,
+        "residual_row_count": 9,
+        "score": {
+          "excluded_fraction": 0.9505494505494505,
+          "min_nesting_floor": 0.0,
+          "residual_fallback_fraction": 0.7777777777777778,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 8,
+          "atomic_union_fraction": 0.8888888888888888,
+          "excluded_count": 173,
+          "excluded_fraction": 0.9505494505494505,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg2",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "proxy_family": "degree-profile",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.7777777777777778,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 8,
+            "atomic_union_implies_fallback": 0.875,
+            "atomic_union_only_fraction": 0.1111111111111111,
+            "fallback_count": 7,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 7
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 8,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 9,
+            "fallback_implies_atomic_union": 0.8888888888888888,
+            "fallback_only_fraction": 0.1111111111111111,
+            "intersection_count": 8
+          },
+          "residual_row_count": 9
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.9595141700404858,
+        "max_residual_fallback_fraction": 0.8,
+        "min_nesting_floor": 0.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 0.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.1111111111111111,
+          "discriminator": {
+            "abbreviated_label": "deg3",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_3_fraction"
+            ],
+            "feature_subset_label": "degree_3_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 173,
+          "excluded_fraction": 0.9505494505494505,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "pocket=>low",
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.7777777777777778,
+          "passes": false,
+          "pocket_implies_low": 0.75,
+          "pocket_support_fraction": 0.4444444444444444,
+          "residual_row_count": 9,
+          "score": {
+            "excluded_fraction": 0.9505494505494505,
+            "min_nesting_floor": 0.0,
+            "residual_fallback_fraction": 0.7777777777777778,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 8,
+            "atomic_union_fraction": 0.8888888888888888,
+            "excluded_count": 173,
+            "excluded_fraction": 0.9505494505494505,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.7777777777777778,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 8,
+              "atomic_union_implies_fallback": 0.875,
+              "atomic_union_only_fraction": 0.1111111111111111,
+              "fallback_count": 7,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 7
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 8,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 9,
+              "fallback_implies_atomic_union": 0.8888888888888888,
+              "fallback_only_fraction": 0.1111111111111111,
+              "intersection_count": 8
+            },
+            "residual_row_count": 9
+          }
+        },
+        {
+          "deep_implies_low": 0.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.1,
+          "discriminator": {
+            "abbreviated_label": "deg3",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_3_fraction"
+            ],
+            "feature_subset_label": "degree_3_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 237,
+          "excluded_fraction": 0.9595141700404858,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "pocket=>low",
+            "deep=>low",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 0.8,
+          "passes": false,
+          "pocket_implies_low": 0.75,
+          "pocket_support_fraction": 0.4,
+          "residual_row_count": 10,
+          "score": {
+            "excluded_fraction": 0.9595141700404858,
+            "min_nesting_floor": 0.0,
+            "residual_fallback_fraction": 0.8,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 9,
+            "atomic_union_fraction": 0.9,
+            "excluded_count": 237,
+            "excluded_fraction": 0.9595141700404858,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.8,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 9,
+              "atomic_union_implies_fallback": 0.8888888888888888,
+              "atomic_union_only_fraction": 0.1,
+              "fallback_count": 8,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 8
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 9,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 10,
+              "fallback_implies_atomic_union": 0.9,
+              "fallback_only_fraction": 0.1,
+              "intersection_count": 9
+            },
+            "residual_row_count": 10
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg4",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_4_fraction"
+        ],
+        "feature_subset_label": "degree_4_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.3333333333333333,
+        "discriminator": {
+          "abbreviated_label": "deg4",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_4_fraction"
+          ],
+          "feature_subset_label": "degree_4_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 179,
+        "excluded_fraction": 0.9835164835164835,
+        "failed_criteria": [
+          "exclusion-too-large"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 1.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.6666666666666666,
+        "residual_row_count": 3,
+        "score": {
+          "excluded_fraction": 0.9835164835164835,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 3,
+          "atomic_union_fraction": 1.0,
+          "excluded_count": 179,
+          "excluded_fraction": 0.9835164835164835,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 3,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 3,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 3
+          },
+          "residual_row_count": 3
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.9838056680161943,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.3333333333333333,
+          "discriminator": {
+            "abbreviated_label": "deg4",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_4_fraction"
+            ],
+            "feature_subset_label": "degree_4_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 179,
+          "excluded_fraction": 0.9835164835164835,
+          "failed_criteria": [
+            "exclusion-too-large"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.6666666666666666,
+          "residual_row_count": 3,
+          "score": {
+            "excluded_fraction": 0.9835164835164835,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 3,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 179,
+            "excluded_fraction": 0.9835164835164835,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 3,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 3,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 3
+            },
+            "residual_row_count": 3
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.5,
+          "discriminator": {
+            "abbreviated_label": "deg4",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_4_fraction"
+            ],
+            "feature_subset_label": "degree_4_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 243,
+          "excluded_fraction": 0.9838056680161943,
+          "failed_criteria": [
+            "exclusion-too-large"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.75,
+          "residual_row_count": 4,
+          "score": {
+            "excluded_fraction": 0.9838056680161943,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 4,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 243,
+            "excluded_fraction": 0.9838056680161943,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 4,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 4,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 4
+            },
+            "residual_row_count": 4
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg6",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_6_fraction"
+        ],
+        "feature_subset_label": "degree_6_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "deg6",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_6_fraction"
+          ],
+          "feature_subset_label": "degree_6_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 179,
+        "excluded_fraction": 0.9835164835164835,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "pocket-residual-missing",
+          "deep-residual-missing",
+          "fallback-embedded"
+        ],
+        "fallback_is_distinct": false,
+        "low_support_fraction": 1.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 3,
+        "score": {
+          "excluded_fraction": 0.9835164835164835,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.3333333333333333,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 3,
+          "atomic_union_fraction": 1.0,
+          "excluded_count": 179,
+          "excluded_fraction": 0.9835164835164835,
+          "nonvacuous_fallback_candidate": {
+            "abbreviated_label": "deg2",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "degree_2_fraction"
+            ],
+            "feature_subset_label": "degree_2_fraction",
+            "proxy_family": "degree-profile",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "nonvacuous_fallback_support_fraction": 0.3333333333333333,
+          "nonvacuous_overlap": {
+            "atomic_union_count": 3,
+            "atomic_union_implies_fallback": 0.3333333333333333,
+            "atomic_union_only_fraction": 0.6666666666666666,
+            "fallback_count": 1,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 1
+          },
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 3,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 3,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 3
+          },
+          "residual_row_count": 3
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.9838056680161943,
+        "max_residual_fallback_fraction": 0.5,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "deg6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_6_fraction"
+            ],
+            "feature_subset_label": "degree_6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 179,
+          "excluded_fraction": 0.9835164835164835,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "pocket-residual-missing",
+            "deep-residual-missing",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 3,
+          "score": {
+            "excluded_fraction": 0.9835164835164835,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.3333333333333333,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 3,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 179,
+            "excluded_fraction": 0.9835164835164835,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.3333333333333333,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 3,
+              "atomic_union_implies_fallback": 0.3333333333333333,
+              "atomic_union_only_fraction": 0.6666666666666666,
+              "fallback_count": 1,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 1
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 3,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 3,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 3
+            },
+            "residual_row_count": 3
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.25,
+          "discriminator": {
+            "abbreviated_label": "deg6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_6_fraction"
+            ],
+            "feature_subset_label": "degree_6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 243,
+          "excluded_fraction": 0.9838056680161943,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.25,
+          "residual_row_count": 4,
+          "score": {
+            "excluded_fraction": 0.9838056680161943,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.5,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 4,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 243,
+            "excluded_fraction": 0.9838056680161943,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg2",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_2_fraction"
+              ],
+              "feature_subset_label": "degree_2_fraction",
+              "proxy_family": "degree-profile",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.5,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 4,
+              "atomic_union_implies_fallback": 0.5,
+              "atomic_union_only_fraction": 0.5,
+              "fallback_count": 2,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 2
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 4,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 4,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 4
+            },
+            "residual_row_count": 4
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "linear90",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_neighbor_leverage_linear90_fraction"
+        ],
+        "feature_subset_label": "motif_neighbor_leverage_linear90_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 1.0,
+        "discriminator": {
+          "abbreviated_label": "linear90",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_neighbor_leverage_linear90_fraction"
+          ],
+          "feature_subset_label": "motif_neighbor_leverage_linear90_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 180,
+        "excluded_fraction": 0.989010989010989,
+        "failed_criteria": [
+          "exclusion-too-large"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 1.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 1.0,
+        "residual_row_count": 2,
+        "score": {
+          "excluded_fraction": 0.989010989010989,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 2,
+          "atomic_union_fraction": 1.0,
+          "excluded_count": 180,
+          "excluded_fraction": 0.989010989010989,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 2,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 2,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 2
+          },
+          "residual_row_count": 2
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.989010989010989,
+        "max_residual_fallback_fraction": 0.3333333333333333,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 1.0,
+          "discriminator": {
+            "abbreviated_label": "linear90",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_neighbor_leverage_linear90_fraction"
+            ],
+            "feature_subset_label": "motif_neighbor_leverage_linear90_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 180,
+          "excluded_fraction": 0.989010989010989,
+          "failed_criteria": [
+            "exclusion-too-large"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 1.0,
+          "residual_row_count": 2,
+          "score": {
+            "excluded_fraction": 0.989010989010989,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 2,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 180,
+            "excluded_fraction": 0.989010989010989,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 2,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 2,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 2
+            },
+            "residual_row_count": 2
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 1.0,
+          "discriminator": {
+            "abbreviated_label": "linear90",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_neighbor_leverage_linear90_fraction"
+            ],
+            "feature_subset_label": "motif_neighbor_leverage_linear90_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 244,
+          "excluded_fraction": 0.9878542510121457,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 1.0,
+          "residual_row_count": 3,
+          "score": {
+            "excluded_fraction": 0.9878542510121457,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.3333333333333333,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 3,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 244,
+            "excluded_fraction": 0.9878542510121457,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg1",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_1_fraction"
+              ],
+              "feature_subset_label": "degree_1_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.3333333333333333,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 3,
+              "atomic_union_implies_fallback": 0.3333333333333333,
+              "atomic_union_only_fraction": 0.6666666666666666,
+              "fallback_count": 1,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 1
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 3,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 3,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 3
+            },
+            "residual_row_count": 3
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "lowdegN",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_low_degree_neighbor_fraction"
+        ],
+        "feature_subset_label": "motif_low_degree_neighbor_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 0.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.5,
+        "discriminator": {
+          "abbreviated_label": "lowdegN",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_low_degree_neighbor_fraction"
+          ],
+          "feature_subset_label": "motif_low_degree_neighbor_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 180,
+        "excluded_fraction": 0.989010989010989,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket=>low",
+          "deep=>low"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 0.0,
+        "pocket_support_fraction": 0.5,
+        "residual_row_count": 2,
+        "score": {
+          "excluded_fraction": 0.989010989010989,
+          "min_nesting_floor": 0.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 1,
+          "atomic_union_fraction": 0.5,
+          "excluded_count": 180,
+          "excluded_fraction": 0.989010989010989,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 1,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 2,
+            "fallback_implies_atomic_union": 0.5,
+            "fallback_only_fraction": 0.5,
+            "intersection_count": 1
+          },
+          "residual_row_count": 2
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.9919028340080972,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 0.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 0.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.5,
+          "discriminator": {
+            "abbreviated_label": "lowdegN",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_low_degree_neighbor_fraction"
+            ],
+            "feature_subset_label": "motif_low_degree_neighbor_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 180,
+          "excluded_fraction": 0.989010989010989,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket=>low",
+            "deep=>low"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 0.0,
+          "pocket_support_fraction": 0.5,
+          "residual_row_count": 2,
+          "score": {
+            "excluded_fraction": 0.989010989010989,
+            "min_nesting_floor": 0.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 1,
+            "atomic_union_fraction": 0.5,
+            "excluded_count": 180,
+            "excluded_fraction": 0.989010989010989,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 1,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 2,
+              "fallback_implies_atomic_union": 0.5,
+              "fallback_only_fraction": 0.5,
+              "intersection_count": 1
+            },
+            "residual_row_count": 2
+          }
+        },
+        {
+          "deep_implies_low": 0.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.5,
+          "discriminator": {
+            "abbreviated_label": "lowdegN",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_low_degree_neighbor_fraction"
+            ],
+            "feature_subset_label": "motif_low_degree_neighbor_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 245,
+          "excluded_fraction": 0.9919028340080972,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket=>low",
+            "deep=>low"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 0.0,
+          "pocket_support_fraction": 0.5,
+          "residual_row_count": 2,
+          "score": {
+            "excluded_fraction": 0.9919028340080972,
+            "min_nesting_floor": 0.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 1,
+            "atomic_union_fraction": 0.5,
+            "excluded_count": 245,
+            "excluded_fraction": 0.9919028340080972,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 1,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 2,
+              "fallback_implies_atomic_union": 0.5,
+              "fallback_only_fraction": 0.5,
+              "intersection_count": 1
+            },
+            "residual_row_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "product80",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_neighbor_leverage_product80_fraction"
+        ],
+        "feature_subset_label": "motif_neighbor_leverage_product80_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 1.0,
+        "discriminator": {
+          "abbreviated_label": "product80",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_neighbor_leverage_product80_fraction"
+          ],
+          "feature_subset_label": "motif_neighbor_leverage_product80_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 181,
+        "excluded_fraction": 0.9945054945054945,
+        "failed_criteria": [
+          "exclusion-too-large"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 1.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 1.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 0.9945054945054945,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 1,
+          "atomic_union_fraction": 1.0,
+          "excluded_count": 181,
+          "excluded_fraction": 0.9945054945054945,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": {
+            "abbreviated_label": "hop2open",
+            "atomic_target": null,
+            "contains_sparse": true,
+            "feature_subset": [
+              "motif_two_hop_open_fraction"
+            ],
+            "feature_subset_label": "motif_two_hop_open_fraction",
+            "proxy_family": "sparse-structure",
+            "route_role": "atomic-standalone",
+            "tier": 1
+          },
+          "raw_fallback_support_fraction": 1.0,
+          "raw_overlap": {
+            "atomic_union_count": 1,
+            "atomic_union_implies_fallback": 1.0,
+            "atomic_union_only_fraction": 0.0,
+            "fallback_count": 1,
+            "fallback_implies_atomic_union": 1.0,
+            "fallback_only_fraction": 0.0,
+            "intersection_count": 1
+          },
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 0.9945054945054945,
+        "max_residual_fallback_fraction": 0.5,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 1.0,
+          "discriminator": {
+            "abbreviated_label": "product80",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_neighbor_leverage_product80_fraction"
+            ],
+            "feature_subset_label": "motif_neighbor_leverage_product80_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 181,
+          "excluded_fraction": 0.9945054945054945,
+          "failed_criteria": [
+            "exclusion-too-large"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 1.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 0.9945054945054945,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 1,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 181,
+            "excluded_fraction": 0.9945054945054945,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 1,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 1,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 1
+            },
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 1.0,
+          "discriminator": {
+            "abbreviated_label": "product80",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_neighbor_leverage_product80_fraction"
+            ],
+            "feature_subset_label": "motif_neighbor_leverage_product80_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 245,
+          "excluded_fraction": 0.9919028340080972,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "fallback-embedded"
+          ],
+          "fallback_is_distinct": false,
+          "low_support_fraction": 1.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 1.0,
+          "residual_row_count": 2,
+          "score": {
+            "excluded_fraction": 0.9919028340080972,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.5,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 2,
+            "atomic_union_fraction": 1.0,
+            "excluded_count": 245,
+            "excluded_fraction": 0.9919028340080972,
+            "nonvacuous_fallback_candidate": {
+              "abbreviated_label": "deg1",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "degree_1_fraction"
+              ],
+              "feature_subset_label": "degree_1_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "nonvacuous_fallback_support_fraction": 0.5,
+            "nonvacuous_overlap": {
+              "atomic_union_count": 2,
+              "atomic_union_implies_fallback": 0.5,
+              "atomic_union_only_fraction": 0.5,
+              "fallback_count": 1,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 1
+            },
+            "raw_fallback_candidate": {
+              "abbreviated_label": "hop2open",
+              "atomic_target": null,
+              "contains_sparse": true,
+              "feature_subset": [
+                "motif_two_hop_open_fraction"
+              ],
+              "feature_subset_label": "motif_two_hop_open_fraction",
+              "proxy_family": "sparse-structure",
+              "route_role": "atomic-standalone",
+              "tier": 1
+            },
+            "raw_fallback_support_fraction": 1.0,
+            "raw_overlap": {
+              "atomic_union_count": 2,
+              "atomic_union_implies_fallback": 1.0,
+              "atomic_union_only_fraction": 0.0,
+              "fallback_count": 2,
+              "fallback_implies_atomic_union": 1.0,
+              "fallback_only_fraction": 0.0,
+              "intersection_count": 2
+            },
+            "residual_row_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg5",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_5_fraction"
+        ],
+        "feature_subset_label": "degree_5_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "deg5",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_5_fraction"
+          ],
+          "feature_subset_label": "degree_5_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "deg5",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_5_fraction"
+            ],
+            "feature_subset_label": "degree_5_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "deg5",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_5_fraction"
+            ],
+            "feature_subset_label": "degree_5_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg7",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_7_fraction"
+        ],
+        "feature_subset_label": "degree_7_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "deg7",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_7_fraction"
+          ],
+          "feature_subset_label": "degree_7_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "deg7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_7_fraction"
+            ],
+            "feature_subset_label": "degree_7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "deg7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_7_fraction"
+            ],
+            "feature_subset_label": "degree_7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "deg8",
+        "feature_scope": "full",
+        "feature_subset": [
+          "degree_8_fraction"
+        ],
+        "feature_subset_label": "degree_8_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "deg8",
+          "feature_scope": "full",
+          "feature_subset": [
+            "degree_8_fraction"
+          ],
+          "feature_subset_label": "degree_8_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "deg8",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_8_fraction"
+            ],
+            "feature_subset_label": "degree_8_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "deg8",
+            "feature_scope": "full",
+            "feature_subset": [
+              "degree_8_fraction"
+            ],
+            "feature_subset_label": "degree_8_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "count6",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_count6_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_count6_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "count6",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_count6_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_count6_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "count6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_count6_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_count6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "count6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_count6_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_count6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "count7",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_count7_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_count7_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "count7",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_count7_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_count7_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "count7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_count7_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_count7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "count7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_count7_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_count7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "highdegN",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "highdegN",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highdegN",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highdegN",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "highge5",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_ge_5_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_ge_5_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "highge5",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_ge_5_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_ge_5_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge5",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_5_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_5_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge5",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_5_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_5_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "highge6",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_ge_6_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_ge_6_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "highge6",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_ge_6_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_ge_6_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_6_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_6_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "highge7",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_ge_7_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_ge_7_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "highge7",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_ge_7_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_ge_7_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_7_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_7_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "highge8",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_ge_8_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_ge_8_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "highge8",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_ge_8_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_ge_8_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge8",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_8_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_8_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "highge8",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_ge_8_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_ge_8_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "share6",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_share6_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_share6_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "share6",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_share6_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_share6_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "share6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_share6_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_share6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "share6",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_share6_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_share6_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "share7",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_high_degree_neighbor_share7_fraction"
+        ],
+        "feature_subset_label": "motif_high_degree_neighbor_share7_fraction",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "share7",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_high_degree_neighbor_share7_fraction"
+          ],
+          "feature_subset_label": "motif_high_degree_neighbor_share7_fraction",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "share7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_share7_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_share7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "share7",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_high_degree_neighbor_share7_fraction"
+            ],
+            "feature_subset_label": "motif_high_degree_neighbor_share7_fraction",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "discriminator": {
+        "abbreviated_label": "motif_hub_exposure_linear_5_8",
+        "feature_scope": "full",
+        "feature_subset": [
+          "motif_hub_exposure_linear_5_8"
+        ],
+        "feature_subset_label": "motif_hub_exposure_linear_5_8",
+        "tier": 1
+      },
+      "first_failed": {
+        "deep_implies_low": 1.0,
+        "deep_implies_pocket": 1.0,
+        "deep_support_fraction": 0.0,
+        "discriminator": {
+          "abbreviated_label": "motif_hub_exposure_linear_5_8",
+          "feature_scope": "full",
+          "feature_subset": [
+            "motif_hub_exposure_linear_5_8"
+          ],
+          "feature_subset_label": "motif_hub_exposure_linear_5_8",
+          "tier": 1
+        },
+        "ensemble_name": "default",
+        "excluded_count": 182,
+        "excluded_fraction": 1.0,
+        "failed_criteria": [
+          "exclusion-too-large",
+          "low-residual-missing",
+          "pocket-residual-missing",
+          "deep-residual-missing"
+        ],
+        "fallback_is_distinct": true,
+        "low_support_fraction": 0.0,
+        "passes": false,
+        "pocket_implies_low": 1.0,
+        "pocket_support_fraction": 0.0,
+        "residual_row_count": 1,
+        "score": {
+          "excluded_fraction": 1.0,
+          "min_nesting_floor": 1.0,
+          "residual_fallback_fraction": 0.0,
+          "tier": 1
+        },
+        "sparse_surface": {
+          "atomic_union_count": 0,
+          "atomic_union_fraction": 0.0,
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "nonvacuous_fallback_candidate": null,
+          "nonvacuous_fallback_support_fraction": 0.0,
+          "raw_fallback_candidate": null,
+          "raw_fallback_support_fraction": 0.0,
+          "residual_row_count": 1
+        }
+      },
+      "passes": false,
+      "score": {
+        "max_excluded_fraction": 1.0,
+        "max_residual_fallback_fraction": 0.0,
+        "min_nesting_floor": 1.0,
+        "tier": 1
+      },
+      "tested_ensembles": [
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "motif_hub_exposure_linear_5_8",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_hub_exposure_linear_5_8"
+            ],
+            "feature_subset_label": "motif_hub_exposure_linear_5_8",
+            "tier": 1
+          },
+          "ensemble_name": "default",
+          "excluded_count": 182,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 182,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        },
+        {
+          "deep_implies_low": 1.0,
+          "deep_implies_pocket": 1.0,
+          "deep_support_fraction": 0.0,
+          "discriminator": {
+            "abbreviated_label": "motif_hub_exposure_linear_5_8",
+            "feature_scope": "full",
+            "feature_subset": [
+              "motif_hub_exposure_linear_5_8"
+            ],
+            "feature_subset_label": "motif_hub_exposure_linear_5_8",
+            "tier": 1
+          },
+          "ensemble_name": "broader",
+          "excluded_count": 247,
+          "excluded_fraction": 1.0,
+          "failed_criteria": [
+            "exclusion-too-large",
+            "low-residual-missing",
+            "pocket-residual-missing",
+            "deep-residual-missing"
+          ],
+          "fallback_is_distinct": true,
+          "low_support_fraction": 0.0,
+          "passes": false,
+          "pocket_implies_low": 1.0,
+          "pocket_support_fraction": 0.0,
+          "residual_row_count": 1,
+          "score": {
+            "excluded_fraction": 1.0,
+            "min_nesting_floor": 1.0,
+            "residual_fallback_fraction": 0.0,
+            "tier": 1
+          },
+          "sparse_surface": {
+            "atomic_union_count": 0,
+            "atomic_union_fraction": 0.0,
+            "excluded_count": 247,
+            "excluded_fraction": 1.0,
+            "nonvacuous_fallback_candidate": null,
+            "nonvacuous_fallback_support_fraction": 0.0,
+            "raw_fallback_candidate": null,
+            "raw_fallback_support_fraction": 0.0,
+            "residual_row_count": 1
+          }
+        }
+      ]
+    }
+  ],
+  "total_elapsed_seconds": 114.122666
+}

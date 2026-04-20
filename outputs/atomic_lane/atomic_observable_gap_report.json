@@ -1,0 +1,94 @@
+{
+  "completed_at": "2026-04-19T16:49:40",
+  "gap_rows": [
+    {
+      "absolute_delta": 0.06453206693380631,
+      "actual_value": 0.5,
+      "model_value": 0.5645320669338063,
+      "observable": "hydrogen_ground_magnitude",
+      "relative_error": 0.12906413386761262
+    },
+    {
+      "absolute_delta": -0.1650006624758229,
+      "actual_value": 2.0,
+      "model_value": 1.834999337524177,
+      "observable": "helium_ion_ground_magnitude",
+      "relative_error": 0.08250033123791145
+    },
+    {
+      "absolute_delta": -0.1482232195153026,
+      "actual_value": 2.9037243770341195,
+      "model_value": 2.755501157518817,
+      "observable": "helium_ground_magnitude",
+      "relative_error": 0.05104589839435747
+    },
+    {
+      "absolute_delta": 0.016777442960520195,
+      "actual_value": 0.9037243770341196,
+      "model_value": 0.9205018199946398,
+      "observable": "helium_ionization_energy",
+      "relative_error": 0.018564778583909813
+    },
+    {
+      "absolute_delta": -0.15302975398244456,
+      "actual_value": 2.1752293782367915,
+      "model_value": 2.022199624254347,
+      "observable": "helium_triplet_magnitude",
+      "relative_error": 0.07035108826384473
+    },
+    {
+      "absolute_delta": 0.004806534467141743,
+      "actual_value": 0.7284949987973282,
+      "model_value": 0.7333015332644699,
+      "observable": "singlet_triplet_gap",
+      "relative_error": 0.006597896313738305
+    }
+  ],
+  "model_observables": {
+    "helium_ground_magnitude": 2.755501157518817,
+    "helium_ion_ground_magnitude": 1.834999337524177,
+    "helium_ionization_energy": 0.9205018199946398,
+    "helium_triplet_magnitude": 2.022199624254347,
+    "hydrogen_ground_magnitude": 0.5645320669338063,
+    "singlet_triplet_gap": 0.7333015332644699
+  },
+  "scores": {
+    "full_rms_relative_error": 0.07234984209588034,
+    "helium_rms_relative_error": 0.044562154914318204,
+    "max_relative_error": 0.12906413386761262,
+    "one_body_rms_relative_error": 0.10831402334269126
+  },
+  "selector_summary": {
+    "canonical_passes": true,
+    "mechanism_labels": [
+      "shell-localization retained"
+    ],
+    "retained_discriminator": {
+      "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+      "atoms": [
+        {
+          "feature_name": "degree_1_fraction",
+          "label": "degree_1_fraction>0",
+          "polarity": "positive"
+        },
+        {
+          "feature_name": "degree_2_fraction",
+          "label": "degree_2_fraction=0",
+          "polarity": "zero"
+        }
+      ],
+      "feature_scope": "sparse",
+      "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+      "tier": 2
+    },
+    "retained_manifold_label": "degree_1_fraction=0 and degree_2_fraction>0",
+    "retained_manifold_terms": [
+      "degree_1_fraction=0",
+      "degree_2_fraction>0"
+    ],
+    "shell_localization_retained_all": true
+  },
+  "source_readout_json": "outputs/atomic_lane/atomic_helium_readout_virtual_basis_tail.json",
+  "started_at": "2026-04-19T16:49:40",
+  "total_elapsed_seconds": 0.001277
+}

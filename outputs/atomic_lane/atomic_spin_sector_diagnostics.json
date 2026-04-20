@@ -1,0 +1,24 @@
+{
+  "completed_at": "2026-04-19T16:49:40",
+  "contact": {
+    "singlet_probability": 0.029303338031167043,
+    "suppression_factor_singlet_over_triplet": 2.6074271035536376e+16,
+    "triplet_contact_log10": -17.94929508063668,
+    "triplet_probability": 1.1238411225851645e-18
+  },
+  "occupancy_comparison": {
+    "cosine_similarity": 0.804257977513355
+  },
+  "repulsion": {
+    "singlet_energy": 0.8462483127493855,
+    "triplet_energy": 0.43454355149538265,
+    "triplet_over_singlet_ratio": 0.5134941422613764
+  },
+  "singlet_ionization_energy": 0.9205018199946398,
+  "singlet_triplet_gap": 0.7333015332644699,
+  "source_readout_json": "outputs/atomic_lane/atomic_helium_readout_virtual_basis_tail.json",
+  "spin_ground_sector": "singlet",
+  "started_at": "2026-04-19T16:49:40",
+  "total_elapsed_seconds": 0.000414,
+  "triplet_ionization_energy": 0.18720028673016986
+}

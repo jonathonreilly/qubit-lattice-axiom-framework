@@ -1,0 +1,43 @@
+{
+  "basis_accept_count": 2,
+  "best_full_lane_entry": {
+    "entry_type": "correlated_candidate",
+    "label": "shell_radial_candidate",
+    "model_observables": {
+      "helium_ground_magnitude": 2.750109039468652,
+      "helium_ion_ground_magnitude": 1.8405344036843432,
+      "helium_ionization_energy": 0.9095746357843089,
+      "helium_triplet_magnitude": 2.0225675227057653,
+      "hydrogen_ground_magnitude": 0.5350630317413847,
+      "singlet_triplet_gap": 0.7275415167628867
+    },
+    "relative_errors": {
+      "helium_ground": 0.05290286460396454,
+      "helium_ion_ground": 0.07973279815782841,
+      "helium_ionization": 0.006473498888443174,
+      "helium_ionization_energy": 0.006473498888443174,
+      "helium_triplet": 0.07018195738730393,
+      "hydrogen_ground": 0.0701260634827694,
+      "singlet_triplet_gap": 0.0013088381334334098
+    },
+    "scores": {
+      "full_rms_relative_error": 0.056336523607104956,
+      "helium_rms_relative_error": 0.04406767372784997,
+      "max_relative_error": 0.07973279815782841,
+      "one_body_rms_relative_error": 0.07508323342020644
+    },
+    "source_json": "outputs/atomic_lane/atomic_correlated_readout_shell_radial.json",
+    "spatial_orbital_count": 55
+  },
+  "completed_at": "2026-04-19T22:40:41",
+  "continuum_limit_full_rms_relative_error": 0.061679744856635875,
+  "hydrogen_continuum_limit_relative_error": 0.08372913111679314,
+  "hydrogen_target_relative_error": 0.0701260634827694,
+  "reason": "The shell-projector continuum phase improved aggregate RMS but did not improve the hydrogen error, so the current shell_radial_candidate point remains the live leader and the next move is model improvement, not a wider raw continuum sweep.",
+  "recommendation": "stay_on_model_improvement",
+  "retuned_contact_present": false,
+  "shell_continuum_helpful": false,
+  "softening_has_accepted_refit": false,
+  "started_at": "2026-04-19T22:40:41",
+  "total_elapsed_seconds": 1.4e-05
+}

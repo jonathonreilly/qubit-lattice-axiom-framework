@@ -1,0 +1,281 @@
+{
+  "candidate_family_comparison": null,
+  "case_aggregate_rows": [
+    {
+      "cases": 5,
+      "ensemble_name": "default",
+      "mean_core_boundary_deficit": 0.24516268147847095,
+      "mean_core_deep_fraction": 0.15174603174603174,
+      "mean_core_low_degree_fraction": 0.14837228205649258,
+      "mean_core_pocket_fraction": 0.21851294903926483,
+      "mean_ge6_only_fraction": 0.04736094891728671,
+      "mean_ge7_core_fraction": 0.9189294651496447,
+      "mean_shell_boundary_deficit": 0.4541666666666667,
+      "mean_shell_deep_fraction": 0.1,
+      "mean_shell_low_degree_fraction": 0.7,
+      "mean_shell_pocket_fraction": 0.4333333333333333,
+      "outcome": "dpadj-only"
+    },
+    {
+      "cases": 11,
+      "ensemble_name": "default",
+      "mean_core_boundary_deficit": 0.2091760517512782,
+      "mean_core_deep_fraction": 0.01484230055658627,
+      "mean_core_low_degree_fraction": 0.19072104406837467,
+      "mean_core_pocket_fraction": 0.08627331368204426,
+      "mean_ge6_only_fraction": 0.03525686711576698,
+      "mean_ge7_core_fraction": 0.96185712999823,
+      "mean_shell_boundary_deficit": 0.625,
+      "mean_shell_deep_fraction": 0.0,
+      "mean_shell_low_degree_fraction": 0.28787878787878785,
+      "mean_shell_pocket_fraction": 0.1212121212121212,
+      "outcome": "both"
+    },
+    {
+      "cases": 8,
+      "ensemble_name": "default",
+      "mean_core_boundary_deficit": 0.2152582047832232,
+      "mean_core_deep_fraction": 0.05346650998824912,
+      "mean_core_low_degree_fraction": 0.198525348917634,
+      "mean_core_pocket_fraction": 0.17806019546375873,
+      "mean_ge6_only_fraction": 0.041228838258347736,
+      "mean_ge7_core_fraction": 0.9114335988095027,
+      "mean_shell_boundary_deficit": 0.4205729166666667,
+      "mean_shell_deep_fraction": 0.0625,
+      "mean_shell_low_degree_fraction": 0.3854166666666667,
+      "mean_shell_pocket_fraction": 0.3541666666666667,
+      "outcome": "ge6-only"
+    },
+    {
+      "cases": 158,
+      "ensemble_name": "default",
+      "mean_core_boundary_deficit": 0.195432755280634,
+      "mean_core_deep_fraction": 0.050373331738863505,
+      "mean_core_low_degree_fraction": 0.1794611228327705,
+      "mean_core_pocket_fraction": 0.12093772794874859,
+      "mean_ge6_only_fraction": 0.022710892274928333,
+      "mean_ge7_core_fraction": 0.9689367613046825,
+      "mean_shell_boundary_deficit": 0.4002618294153104,
+      "mean_shell_deep_fraction": 0.0459915611814346,
+      "mean_shell_low_degree_fraction": 0.21549125979505723,
+      "mean_shell_pocket_fraction": 0.15675105485232066,
+      "outcome": "neither"
+    }
+  ],
+  "completed_at": "2026-04-19T12:31:02",
+  "first_failure_mechanism": {
+    "boundary_gap": 0.39571097056955895,
+    "deep_gap": 0.05692603205208677,
+    "ensemble_name": "default",
+    "failed_criteria": "deep=>low, fallback-leakage",
+    "ge6_only_shell_fraction": 0.020918527838943064,
+    "low_gap": 0.2736962766780787,
+    "mechanism_label": "fallback leakage",
+    "pocket_gap": 0.1804608782452159
+  },
+  "ladder_json": "outputs/atomic_lane/atomic_route_ladder_scan.json",
+  "mechanism_rows": [
+    {
+      "boundary_gap": 0.39571097056955895,
+      "deep_gap": 0.05692603205208677,
+      "ensemble_name": "default",
+      "failed_criteria": "deep=>low, fallback-leakage",
+      "ge6_only_shell_fraction": 0.020918527838943064,
+      "low_gap": 0.2736962766780787,
+      "mechanism_label": "fallback leakage",
+      "pocket_gap": 0.1804608782452159
+    }
+  ],
+  "offender_rows": [
+    {
+      "cases": 3,
+      "ensembles": "default",
+      "example_sources": "base:taper-wrap:geometry-c, base:taper-wrap:geometry-e, base:taper-wrap:local-morph-a",
+      "mean_boundary_gap": 0.2557717491928018,
+      "mean_deep_gap": -0.12698412698412698,
+      "mean_ge6_only_fraction": 0.024215352618642466,
+      "mean_ge7_core_fraction": 0.9428578181130649,
+      "mean_low_degree_gap": 0.5299058456953194,
+      "mean_pocket_gap": 0.17460317460317462,
+      "outcome": "dpadj-only",
+      "scenario_key": "base:taper-wrap",
+      "styles": "geometry, local-morph"
+    },
+    {
+      "cases": 1,
+      "ensembles": "default",
+      "example_sources": "base:taper-hard:mode-mix-b",
+      "mean_boundary_gap": 0.1513157894736842,
+      "mean_deep_gap": 0.0,
+      "mean_ge6_only_fraction": 0.046511627906976744,
+      "mean_ge7_core_fraction": 0.8837209302325582,
+      "mean_low_degree_gap": 0.868421052631579,
+      "mean_pocket_gap": 0.39473684210526316,
+      "outcome": "dpadj-only",
+      "scenario_key": "base:taper-hard",
+      "styles": "mode-mix"
+    },
+    {
+      "cases": 1,
+      "ensembles": "default",
+      "example_sources": "base:skew-wrap:local-morph-c",
+      "mean_boundary_gap": 0.12638888888888888,
+      "mean_deep_gap": 0.12222222222222223,
+      "mean_ge6_only_fraction": 0.11764705882352941,
+      "mean_ge7_core_fraction": 0.8823529411764706,
+      "mean_low_degree_gap": 0.3,
+      "mean_pocket_gap": 0.15555555555555556,
+      "outcome": "dpadj-only",
+      "scenario_key": "base:skew-wrap",
+      "styles": "local-morph"
+    },
+    {
+      "cases": 2,
+      "ensembles": "default",
+      "example_sources": "base:taper-hard:geometry-e, base:taper-hard:local-morph-a",
+      "mean_boundary_gap": 0.302052732079906,
+      "mean_deep_gap": 0.10135135135135134,
+      "mean_ge6_only_fraction": 0.0567157095396298,
+      "mean_ge7_core_fraction": 0.8996203132415757,
+      "mean_low_degree_gap": 0.01968272620446533,
+      "mean_pocket_gap": 0.17229729729729729,
+      "outcome": "ge6-only",
+      "scenario_key": "base:taper-hard",
+      "styles": "geometry, local-morph"
+    },
+    {
+      "cases": 2,
+      "ensembles": "default",
+      "example_sources": "base:skew-wrap:local-morph-b, base:skew-wrap:procedural-a",
+      "mean_boundary_gap": 0.08079594017094019,
+      "mean_deep_gap": 0.0,
+      "mean_ge6_only_fraction": 0.029411764705882353,
+      "mean_ge7_core_fraction": 0.9139037433155079,
+      "mean_low_degree_gap": -0.0547008547008547,
+      "mean_pocket_gap": 0.022222222222222227,
+      "outcome": "ge6-only",
+      "scenario_key": "base:skew-wrap",
+      "styles": "local-morph, walk"
+    },
+    {
+      "cases": 1,
+      "ensembles": "default",
+      "example_sources": "large:taper-hard-large:geometry-c",
+      "mean_boundary_gap": 0.322463768115942,
+      "mean_deep_gap": 0.0,
+      "mean_ge6_only_fraction": 0.02666666666666667,
+      "mean_ge7_core_fraction": 0.92,
+      "mean_low_degree_gap": 0.9420289855072463,
+      "mean_pocket_gap": 0.3695652173913043,
+      "outcome": "ge6-only",
+      "scenario_key": "large:taper-hard-large",
+      "styles": "geometry"
+    },
+    {
+      "cases": 1,
+      "ensembles": "default",
+      "example_sources": "base:taper-wrap:geometry-b",
+      "mean_boundary_gap": 0.34539473684210525,
+      "mean_deep_gap": 0.0,
+      "mean_ge6_only_fraction": 0.09090909090909091,
+      "mean_ge7_core_fraction": 0.8636363636363636,
+      "mean_low_degree_gap": 0.6710526315789473,
+      "mean_pocket_gap": 0.013157894736842118,
+      "outcome": "ge6-only",
+      "scenario_key": "base:taper-wrap",
+      "styles": "geometry"
+    },
+    {
+      "cases": 1,
+      "ensembles": "default",
+      "example_sources": "base:rect-wrap:procedural-a",
+      "mean_boundary_gap": 0.41304347826086957,
+      "mean_deep_gap": -0.13043478260869565,
+      "mean_ge6_only_fraction": 0.04,
+      "mean_ge7_core_fraction": 0.92,
+      "mean_low_degree_gap": 0.2173913043478261,
+      "mean_pocket_gap": 0.7391304347826086,
+      "outcome": "ge6-only",
+      "scenario_key": "base:rect-wrap",
+      "styles": "walk"
+    },
+    {
+      "cases": 1,
+      "ensembles": "default",
+      "example_sources": "mirror:skew-hard-mirror:geometry-d",
+      "mean_boundary_gap": -0.20408163265306123,
+      "mean_deep_gap": 0.0,
+      "mean_ge6_only_fraction": 0.0,
+      "mean_ge7_core_fraction": 0.9607843137254902,
+      "mean_low_degree_gap": -0.2653061224489796,
+      "mean_pocket_gap": -0.10204081632653061,
+      "outcome": "ge6-only",
+      "scenario_key": "mirror:skew-hard-mirror",
+      "styles": "geometry"
+    }
+  ],
+  "search_json": "outputs/atomic_lane/atomic_route_search.json",
+  "shell_rows": [
+    {
+      "core_boundary_deficit_mean": 0.18793564597179446,
+      "core_deep_fraction": 0.04457772734640947,
+      "core_low_degree_fraction": 0.16615334738207166,
+      "core_mean_neighbor_degree": 0.8442670702784274,
+      "core_pocket_fraction": 0.10901280596531042,
+      "deep_in_shell_fraction": 0.04591836734693878,
+      "ensemble_name": "default",
+      "ge6_only_fraction": 0.020918527838943064,
+      "ge7_core_fraction": 0.9702736709657125,
+      "graph_count": 195,
+      "other_boundary_deficit_mean": 0.7232142857142857,
+      "other_deep_fraction": 0.09821428571428571,
+      "other_fraction": 0.008807801195344448,
+      "other_low_degree_fraction": 0.2857142857142857,
+      "other_mean_neighbor_degree": 0.5242798681972789,
+      "other_pocket_fraction": 0.38392857142857145,
+      "shell_boundary_deficit_mean": 0.5836466165413534,
+      "shell_deep_fraction": 0.10150375939849623,
+      "shell_deep_implies_fraction": 0.10150375939849623,
+      "shell_low_degree_fraction": 0.4398496240601504,
+      "shell_mean_neighbor_degree": 0.6136121553884712,
+      "shell_pocket_fraction": 0.2894736842105263,
+      "total_nodes": 12716
+    }
+  ],
+  "stage_records_by_ensemble": {
+    "default": [
+      {
+        "cache_hit": false,
+        "cache_key": "e71475eb8991398b7bf7",
+        "elapsed_seconds": 0.6585714160464704,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/mechanism/default/threshold-core-shell/e71475eb8991398b7bf7.json",
+        "search_stage": "mechanism",
+        "stage_name": "threshold-core-shell"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "414e4c3123a11aa57a46",
+        "elapsed_seconds": 242.86768758296967,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/mechanism/default/threshold-core-case-flips/414e4c3123a11aa57a46.json",
+        "search_stage": "mechanism",
+        "stage_name": "threshold-core-case-flips"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "78b6cc7a95afc9f47aaa",
+        "elapsed_seconds": 0.00043879076838493347,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/mechanism/default/threshold-core-offenders/78b6cc7a95afc9f47aaa.json",
+        "search_stage": "mechanism",
+        "stage_name": "threshold-core-offenders"
+      }
+    ]
+  },
+  "started_at": "2026-04-19T12:26:59",
+  "target_ensembles": [
+    "default"
+  ],
+  "total_elapsed_seconds": 243.528593
+}

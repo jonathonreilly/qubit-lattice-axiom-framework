@@ -1,0 +1,212 @@
+{
+  "baseline_label": "baseline",
+  "best_by_one_body_rms": {
+    "improvement_vs_baseline": {
+      "helium_ion_ground_delta": 0.009544384248188154,
+      "hydrogen_ground_delta": -0.05276615374918192,
+      "max_relative_error_delta": -0.03701941838150391,
+      "one_body_rms_relative_error_delta": -0.0237752410618058
+    },
+    "label": "calibrated",
+    "model_observables": {
+      "helium_ion_ground_magnitude": 1.8159105690278017,
+      "hydrogen_ground_magnitude": 0.5381489900592106
+    },
+    "parameters": {
+      "active_sizes": [
+        20,
+        20,
+        20
+      ],
+      "custom_sizes": null,
+      "dimension": 3,
+      "fixed_physical_box": true,
+      "kinetic_stencil": "five_point",
+      "lattice_spacing": 0.8,
+      "max_orbitals": 16,
+      "n_eig": 40,
+      "nuclear_charge": 2.0,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "nuclear_quadrature_order": 1,
+      "physical_box_lengths": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "reference_coupling": 1.55,
+      "reference_sizes": null,
+      "reference_spacing": 1.0,
+      "softening_multiplier": 0.75,
+      "softening_radius": 0.6000000000000001
+    },
+    "relative_errors": {
+      "helium_ion_ground": 0.09204471548609916,
+      "hydrogen_ground": 0.07629798011842115
+    },
+    "scores": {
+      "max_relative_error": 0.09204471548609916,
+      "one_body_rms_relative_error": 0.08453878228087962
+    },
+    "source_json": "outputs/atomic_lane/atomic_one_body_benchmark_calibrated.json"
+  },
+  "completed_at": "2026-04-19T17:16:36",
+  "entries": [
+    {
+      "improvement_vs_baseline": {
+        "helium_ion_ground_delta": 0.0,
+        "hydrogen_ground_delta": 0.0,
+        "max_relative_error_delta": 0.0,
+        "one_body_rms_relative_error_delta": 0.0
+      },
+      "label": "baseline",
+      "model_observables": {
+        "helium_ion_ground_magnitude": 1.834999337524178,
+        "hydrogen_ground_magnitude": 0.5645320669338015
+      },
+      "parameters": {
+        "active_sizes": [
+          16,
+          16,
+          16
+        ],
+        "custom_sizes": null,
+        "dimension": 3,
+        "fixed_physical_box": true,
+        "kinetic_stencil": "three_point",
+        "lattice_spacing": 1.0,
+        "max_orbitals": 16,
+        "n_eig": 40,
+        "nuclear_charge": 2.0,
+        "nuclear_counterterm_radius": null,
+        "nuclear_counterterm_strength": 0.0,
+        "nuclear_profile": "hard_floor",
+        "nuclear_quadrature_order": 1,
+        "physical_box_lengths": [
+          16.0,
+          16.0,
+          16.0
+        ],
+        "reference_coupling": 1.595,
+        "reference_sizes": null,
+        "reference_spacing": 1.0,
+        "softening_multiplier": 0.75,
+        "softening_radius": 0.75
+      },
+      "relative_errors": {
+        "helium_ion_ground": 0.082500331237911,
+        "hydrogen_ground": 0.12906413386760307
+      },
+      "scores": {
+        "max_relative_error": 0.12906413386760307,
+        "one_body_rms_relative_error": 0.10831402334268542
+      },
+      "source_json": "outputs/atomic_lane/atomic_one_body_benchmark_baseline.json"
+    },
+    {
+      "improvement_vs_baseline": {
+        "helium_ion_ground_delta": -0.03448261212040293,
+        "hydrogen_ground_delta": 0.005367915572506821,
+        "max_relative_error_delta": 0.005367915572506821,
+        "one_body_rms_relative_error_delta": -0.007374246084371497
+      },
+      "label": "search_best",
+      "model_observables": {
+        "helium_ion_ground_magnitude": 1.9039645617649839,
+        "hydrogen_ground_magnitude": 0.567216024720055
+      },
+      "parameters": {
+        "active_sizes": [
+          20,
+          20,
+          20
+        ],
+        "custom_sizes": null,
+        "dimension": 3,
+        "fixed_physical_box": true,
+        "kinetic_stencil": "five_point",
+        "lattice_spacing": 0.8,
+        "max_orbitals": 16,
+        "n_eig": 40,
+        "nuclear_charge": 2.0,
+        "nuclear_counterterm_radius": null,
+        "nuclear_counterterm_strength": 0.0,
+        "nuclear_profile": "hard_floor",
+        "nuclear_quadrature_order": 1,
+        "physical_box_lengths": [
+          16.0,
+          16.0,
+          16.0
+        ],
+        "reference_coupling": 1.595,
+        "reference_sizes": null,
+        "reference_spacing": 1.0,
+        "softening_multiplier": 0.75,
+        "softening_radius": 0.6000000000000001
+      },
+      "relative_errors": {
+        "helium_ion_ground": 0.04801771911750807,
+        "hydrogen_ground": 0.1344320494401099
+      },
+      "scores": {
+        "max_relative_error": 0.1344320494401099,
+        "one_body_rms_relative_error": 0.10093977725831392
+      },
+      "source_json": "outputs/atomic_lane/atomic_one_body_benchmark_search_best.json"
+    },
+    {
+      "improvement_vs_baseline": {
+        "helium_ion_ground_delta": 0.009544384248188154,
+        "hydrogen_ground_delta": -0.05276615374918192,
+        "max_relative_error_delta": -0.03701941838150391,
+        "one_body_rms_relative_error_delta": -0.0237752410618058
+      },
+      "label": "calibrated",
+      "model_observables": {
+        "helium_ion_ground_magnitude": 1.8159105690278017,
+        "hydrogen_ground_magnitude": 0.5381489900592106
+      },
+      "parameters": {
+        "active_sizes": [
+          20,
+          20,
+          20
+        ],
+        "custom_sizes": null,
+        "dimension": 3,
+        "fixed_physical_box": true,
+        "kinetic_stencil": "five_point",
+        "lattice_spacing": 0.8,
+        "max_orbitals": 16,
+        "n_eig": 40,
+        "nuclear_charge": 2.0,
+        "nuclear_counterterm_radius": null,
+        "nuclear_counterterm_strength": 0.0,
+        "nuclear_profile": "hard_floor",
+        "nuclear_quadrature_order": 1,
+        "physical_box_lengths": [
+          16.0,
+          16.0,
+          16.0
+        ],
+        "reference_coupling": 1.55,
+        "reference_sizes": null,
+        "reference_spacing": 1.0,
+        "softening_multiplier": 0.75,
+        "softening_radius": 0.6000000000000001
+      },
+      "relative_errors": {
+        "helium_ion_ground": 0.09204471548609916,
+        "hydrogen_ground": 0.07629798011842115
+      },
+      "scores": {
+        "max_relative_error": 0.09204471548609916,
+        "one_body_rms_relative_error": 0.08453878228087962
+      },
+      "source_json": "outputs/atomic_lane/atomic_one_body_benchmark_calibrated.json"
+    }
+  ],
+  "started_at": "2026-04-19T17:16:36",
+  "total_elapsed_seconds": 0.00105
+}

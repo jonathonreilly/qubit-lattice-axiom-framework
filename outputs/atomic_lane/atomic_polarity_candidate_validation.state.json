@@ -1,0 +1,940 @@
+{
+  "completed_at": "2026-04-19T14:00:16",
+  "discriminator": {
+    "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+    "atoms": [
+      {
+        "feature_name": "degree_1_fraction",
+        "label": "degree_1_fraction>0",
+        "polarity": "positive"
+      },
+      {
+        "feature_name": "degree_2_fraction",
+        "label": "degree_2_fraction=0",
+        "polarity": "zero"
+      }
+    ],
+    "feature_scope": "sparse",
+    "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+    "tier": 2
+  },
+  "first_failed": null,
+  "passes": true,
+  "started_at": "2026-04-19T13:59:54",
+  "summary_stage_records": {
+    "broader": [
+      {
+        "cache_hit": true,
+        "cache_key": "7caf948886c8a7e2404a",
+        "elapsed_seconds": 0.00021250033751130104,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/threshold-core-overlap/6bf01c92fb2ef0b875b1.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": true,
+        "cache_key": "67fadce0dfa92eac1b2b",
+        "elapsed_seconds": 0.0005582920275628567,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/candidate-feature-supports/fec0ba3054acf756bc77.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "default": [
+      {
+        "cache_hit": true,
+        "cache_key": "79880140a8a932bb2a73",
+        "elapsed_seconds": 0.0003676670603454113,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/threshold-core-overlap/1b3193726c0655251a56.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": true,
+        "cache_key": "99d1f67f025d0553b1bc",
+        "elapsed_seconds": 0.000554374884814024,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/candidate-feature-supports/dd57f9f75499351ff60c.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "exa": [
+      {
+        "cache_hit": false,
+        "cache_key": "3f007a0ab60329caf374",
+        "elapsed_seconds": 1.3580614998936653,
+        "ensemble_name": "exa",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/exa/threshold-core-overlap/3f007a0ab60329caf374.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "e6a92be28ed6c4a3f37d",
+        "elapsed_seconds": 3.6926316246390343,
+        "ensemble_name": "exa",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/exa/candidate-feature-supports/e6a92be28ed6c4a3f37d.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "giga": [
+      {
+        "cache_hit": false,
+        "cache_key": "40531ef4a2c409d6db28",
+        "elapsed_seconds": 0.9887901660986245,
+        "ensemble_name": "giga",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/giga/threshold-core-overlap/40531ef4a2c409d6db28.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "d6f2cc7270d5064e27a7",
+        "elapsed_seconds": 2.5984904589131474,
+        "ensemble_name": "giga",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/giga/candidate-feature-supports/d6f2cc7270d5064e27a7.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "mega": [
+      {
+        "cache_hit": true,
+        "cache_key": "a4c12f07b8aaa8240b9f",
+        "elapsed_seconds": 0.0001643327996134758,
+        "ensemble_name": "mega",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/mega/threshold-core-overlap/4c85454db11ccf730fe6.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "a6443f786f5ae91489d0",
+        "elapsed_seconds": 2.3228880832903087,
+        "ensemble_name": "mega",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/mega/candidate-feature-supports/a6443f786f5ae91489d0.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "peta": [
+      {
+        "cache_hit": false,
+        "cache_key": "373ef1a244c164ca90c6",
+        "elapsed_seconds": 1.2141031250357628,
+        "ensemble_name": "peta",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/peta/threshold-core-overlap/373ef1a244c164ca90c6.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "66896c117c77ef9eec7f",
+        "elapsed_seconds": 3.280981625430286,
+        "ensemble_name": "peta",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/peta/candidate-feature-supports/66896c117c77ef9eec7f.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "tera": [
+      {
+        "cache_hit": false,
+        "cache_key": "0608ab41a4556443e932",
+        "elapsed_seconds": 1.101734708994627,
+        "ensemble_name": "tera",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/tera/threshold-core-overlap/0608ab41a4556443e932.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "0f3f5116fcd509fc5d92",
+        "elapsed_seconds": 3.0172449168749154,
+        "ensemble_name": "tera",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/tera/candidate-feature-supports/0f3f5116fcd509fc5d92.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "ultra": [
+      {
+        "cache_hit": true,
+        "cache_key": "f94bf166721c019325e8",
+        "elapsed_seconds": 0.0003138338215649128,
+        "ensemble_name": "ultra",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/ultra/threshold-core-overlap/f99d01de715847574835.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": false,
+        "cache_key": "48156168134a2b99d5a8",
+        "elapsed_seconds": 1.9437733748927712,
+        "ensemble_name": "ultra",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/ultra/candidate-feature-supports/48156168134a2b99d5a8.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "wider": [
+      {
+        "cache_hit": true,
+        "cache_key": "937c689ad85af09fcfe9",
+        "elapsed_seconds": 0.0002016671933233738,
+        "ensemble_name": "wider",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/wider/threshold-core-overlap/c8c72bd5a11a699d3a92.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": true,
+        "cache_key": "c25e093f9bcda81f0e3f",
+        "elapsed_seconds": 0.00017508305609226227,
+        "ensemble_name": "wider",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/wider/candidate-feature-supports/a5f50fc89a416fa50533.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ]
+  },
+  "support_stage_records": {
+    "broader": [
+      {
+        "cache_hit": true,
+        "cache_key": "405d06a24916f763089f",
+        "elapsed_seconds": 0.0003188340924680233,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/candidate-feature-supports/fec0ba3054acf756bc77.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "default": [
+      {
+        "cache_hit": true,
+        "cache_key": "dffc40eb92e31bf66e2d",
+        "elapsed_seconds": 0.00027466658502817154,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/candidate-feature-supports/dd57f9f75499351ff60c.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "exa": [
+      {
+        "cache_hit": true,
+        "cache_key": "204c4ff9d2bf05f66c96",
+        "elapsed_seconds": 0.0009151250123977661,
+        "ensemble_name": "exa",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/exa/candidate-feature-supports/e6a92be28ed6c4a3f37d.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "giga": [
+      {
+        "cache_hit": true,
+        "cache_key": "433800ae754c24d910d1",
+        "elapsed_seconds": 0.0006282078102231026,
+        "ensemble_name": "giga",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/giga/candidate-feature-supports/d6f2cc7270d5064e27a7.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "mega": [
+      {
+        "cache_hit": true,
+        "cache_key": "83060779fd8def779520",
+        "elapsed_seconds": 0.0005699582397937775,
+        "ensemble_name": "mega",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/mega/candidate-feature-supports/a6443f786f5ae91489d0.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "peta": [
+      {
+        "cache_hit": true,
+        "cache_key": "bf9e3df59826df10ba3b",
+        "elapsed_seconds": 0.0007805828936398029,
+        "ensemble_name": "peta",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/peta/candidate-feature-supports/66896c117c77ef9eec7f.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "tera": [
+      {
+        "cache_hit": true,
+        "cache_key": "8d55ed396c44442836c6",
+        "elapsed_seconds": 0.000712249893695116,
+        "ensemble_name": "tera",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/tera/candidate-feature-supports/0f3f5116fcd509fc5d92.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "ultra": [
+      {
+        "cache_hit": true,
+        "cache_key": "ee6ff8b34577000d2b64",
+        "elapsed_seconds": 0.0004899580962955952,
+        "ensemble_name": "ultra",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/ultra/candidate-feature-supports/48156168134a2b99d5a8.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "wider": [
+      {
+        "cache_hit": true,
+        "cache_key": "a5f50fc89a416fa50533",
+        "elapsed_seconds": 0.00011945795267820358,
+        "ensemble_name": "wider",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/wider/candidate-feature-supports/a5f50fc89a416fa50533.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ]
+  },
+  "tested_ensembles": [
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.18446601941747573,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "default",
+      "excluded_count": 79,
+      "excluded_fraction": 0.4340659340659341,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.7475728155339806,
+      "residual_row_count": 103,
+      "score": {
+        "excluded_fraction": 0.4340659340659341,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 103,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 79,
+        "excluded_fraction": 0.4340659340659341,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 103,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 103,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 103
+        },
+        "residual_row_count": 103
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.1736111111111111,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "broader",
+      "excluded_count": 103,
+      "excluded_fraction": 0.41700404858299595,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.7152777777777778,
+      "residual_row_count": 144,
+      "score": {
+        "excluded_fraction": 0.41700404858299595,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 144,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 103,
+        "excluded_fraction": 0.41700404858299595,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 144,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 144,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 144
+        },
+        "residual_row_count": 144
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.1783783783783784,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "wider",
+      "excluded_count": 127,
+      "excluded_fraction": 0.40705128205128205,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.6972972972972973,
+      "residual_row_count": 185,
+      "score": {
+        "excluded_fraction": 0.40705128205128205,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 185,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 127,
+        "excluded_fraction": 0.40705128205128205,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 185,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 185,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 185
+        },
+        "residual_row_count": 185
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.18468468468468469,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "ultra",
+      "excluded_count": 155,
+      "excluded_fraction": 0.41114058355437666,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.6981981981981982,
+      "residual_row_count": 222,
+      "score": {
+        "excluded_fraction": 0.41114058355437666,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 222,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 155,
+        "excluded_fraction": 0.41114058355437666,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 222,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 222,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 222
+        },
+        "residual_row_count": 222
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.18461538461538463,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "mega",
+      "excluded_count": 182,
+      "excluded_fraction": 0.4117647058823529,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.6923076923076923,
+      "residual_row_count": 260,
+      "score": {
+        "excluded_fraction": 0.4117647058823529,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 260,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 182,
+        "excluded_fraction": 0.4117647058823529,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 260,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 260,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 260
+        },
+        "residual_row_count": 260
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.1945392491467577,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "giga",
+      "excluded_count": 214,
+      "excluded_fraction": 0.42209072978303747,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.689419795221843,
+      "residual_row_count": 293,
+      "score": {
+        "excluded_fraction": 0.42209072978303747,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 293,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 214,
+        "excluded_fraction": 0.42209072978303747,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 293,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 293,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 293
+        },
+        "residual_row_count": 293
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.1927710843373494,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "tera",
+      "excluded_count": 240,
+      "excluded_fraction": 0.4195804195804196,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.6837349397590361,
+      "residual_row_count": 332,
+      "score": {
+        "excluded_fraction": 0.4195804195804196,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 332,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 240,
+        "excluded_fraction": 0.4195804195804196,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 332,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 332,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 332
+        },
+        "residual_row_count": 332
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.215633423180593,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "peta",
+      "excluded_count": 266,
+      "excluded_fraction": 0.4175824175824176,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.6900269541778976,
+      "residual_row_count": 371,
+      "score": {
+        "excluded_fraction": 0.4175824175824176,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 371,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 266,
+        "excluded_fraction": 0.4175824175824176,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 371,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 371,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 371
+        },
+        "residual_row_count": 371
+      }
+    },
+    {
+      "deep_implies_low": 1.0,
+      "deep_implies_pocket": 1.0,
+      "deep_support_fraction": 0.20884520884520885,
+      "discriminator": {
+        "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "atoms": [
+          {
+            "feature_name": "degree_1_fraction",
+            "label": "degree_1_fraction>0",
+            "polarity": "positive"
+          },
+          {
+            "feature_name": "degree_2_fraction",
+            "label": "degree_2_fraction=0",
+            "polarity": "zero"
+          }
+        ],
+        "feature_scope": "sparse",
+        "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+        "tier": 2
+      },
+      "ensemble_name": "exa",
+      "excluded_count": 295,
+      "excluded_fraction": 0.4202279202279202,
+      "failed_criteria": [],
+      "fallback_is_distinct": true,
+      "low_support_fraction": 1.0,
+      "passes": true,
+      "pocket_implies_low": 1.0,
+      "pocket_support_fraction": 0.6977886977886978,
+      "residual_row_count": 407,
+      "score": {
+        "excluded_fraction": 0.4202279202279202,
+        "min_nesting_floor": 1.0,
+        "residual_fallback_fraction": 0.0,
+        "tier": 2
+      },
+      "sparse_surface": {
+        "atomic_union_count": 407,
+        "atomic_union_fraction": 1.0,
+        "excluded_count": 295,
+        "excluded_fraction": 0.4202279202279202,
+        "nonvacuous_fallback_candidate": null,
+        "nonvacuous_fallback_support_fraction": 0.0,
+        "raw_fallback_candidate": {
+          "abbreviated_label": "hop2open",
+          "atomic_target": null,
+          "contains_sparse": true,
+          "feature_subset": [
+            "motif_two_hop_open_fraction"
+          ],
+          "feature_subset_label": "motif_two_hop_open_fraction",
+          "proxy_family": "sparse-structure",
+          "route_role": "atomic-standalone",
+          "tier": 1
+        },
+        "raw_fallback_support_fraction": 1.0,
+        "raw_overlap": {
+          "atomic_union_count": 407,
+          "atomic_union_implies_fallback": 1.0,
+          "atomic_union_only_fraction": 0.0,
+          "fallback_count": 407,
+          "fallback_implies_atomic_union": 1.0,
+          "fallback_only_fraction": 0.0,
+          "intersection_count": 407
+        },
+        "residual_row_count": 407
+      }
+    }
+  ],
+  "total_elapsed_seconds": 21.62677
+}

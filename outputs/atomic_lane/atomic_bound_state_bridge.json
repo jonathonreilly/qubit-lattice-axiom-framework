@@ -1,0 +1,9 @@
+{
+  "bridge_performed": false,
+  "completed_at": "2026-04-19T12:31:09",
+  "ladder_json": "outputs/atomic_lane/atomic_route_ladder_scan.json",
+  "mechanism_json": "outputs/atomic_lane/atomic_route_mechanism.json",
+  "reason": "no-retained-family-available",
+  "search_json": "outputs/atomic_lane/atomic_route_search.json",
+  "started_at": "2026-04-19T12:31:09"
+}

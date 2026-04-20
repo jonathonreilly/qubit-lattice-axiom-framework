@@ -1,0 +1,152 @@
+{
+  "best_live_entry": {
+    "entry_type": "live_correlated",
+    "label": "shell_projector_continuum_live",
+    "model_observables": {
+      "helium_ground_magnitude": 2.721889110913839,
+      "helium_ion_ground_magnitude": 1.8159105690278103,
+      "helium_ionization_energy": 0.9059785418860287,
+      "helium_triplet_magnitude": 1.9970750834970084,
+      "hydrogen_ground_magnitude": 0.5381489900592001,
+      "singlet_triplet_gap": 0.7248140274168307
+    },
+    "relative_errors": {
+      "helium_ground": 0.0626213932556533,
+      "helium_ion_ground": 0.09204471548609483,
+      "helium_ionization": 0.002494305685663667,
+      "helium_ionization_energy": 0.002494305685663667,
+      "helium_triplet": 0.0819013831470925,
+      "hydrogen_ground": 0.07629798011840028,
+      "singlet_triplet_gap": 0.005052843721061073
+    },
+    "scores": {
+      "full_rms_relative_error": 0.06449113590806231,
+      "helium_rms_relative_error": 0.05162612770005375,
+      "max_relative_error": 0.09204471548609483,
+      "one_body_rms_relative_error": 0.08453878228086785
+    },
+    "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_correlated_readout_shell_projector_continuum_live.json",
+    "spatial_orbital_count": 63
+  },
+  "best_projection_entry": {
+    "entry_type": "continuum_projection",
+    "label": "shell_projector_continuum_limit",
+    "model_observables": {
+      "helium_ground_magnitude": 2.798800879882233,
+      "helium_ion_ground_magnitude": 1.8540009480820843,
+      "helium_ionization_energy": 0.9447999318001489,
+      "helium_triplet_magnitude": 2.031927804190469,
+      "hydrogen_ground_magnitude": 0.5418645655583966,
+      "singlet_triplet_gap": 0.766873075691764
+    },
+    "relative_errors": {
+      "helium_ground": 0.03613411037966907,
+      "helium_ion_ground": 0.07299952595895787,
+      "helium_ionization": 0.045451418385805686,
+      "helium_ionization_energy": 0.045451418385805686,
+      "helium_triplet": 0.06587883350604651,
+      "hydrogen_ground": 0.08372913111679314,
+      "singlet_triplet_gap": 0.05268131827643874
+    },
+    "scores": {
+      "full_rms_relative_error": 0.061679744856635875,
+      "helium_rms_relative_error": 0.05120265463252979,
+      "max_relative_error": 0.08372913111679314,
+      "one_body_rms_relative_error": 0.07854775040637925
+    },
+    "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_shell_projector_continuum_readout.json",
+    "spatial_orbital_count": 63
+  },
+  "completed_at": "2026-04-19T20:03:27",
+  "entries": [
+    {
+      "entry_type": "live_correlated",
+      "label": "shell_projector_local",
+      "model_observables": {
+        "helium_ground_magnitude": 2.7218890557688162,
+        "helium_ion_ground_magnitude": 1.8159105690278097,
+        "helium_ionization_energy": 0.9059784867410066,
+        "helium_triplet_magnitude": 1.9970733801581404,
+        "hydrogen_ground_magnitude": 0.5381489900592088,
+        "singlet_triplet_gap": 0.7248156756106758
+      },
+      "relative_errors": {
+        "helium_ground": 0.06262141224678863,
+        "helium_ion_ground": 0.09204471548609516,
+        "helium_ionization": 0.0024942446659286244,
+        "helium_ionization_energy": 0.0024942446659286244,
+        "helium_triplet": 0.08190216620881685,
+        "hydrogen_ground": 0.0762979801184176,
+        "singlet_triplet_gap": 0.005050581256874076
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06449127479490457,
+        "helium_rms_relative_error": 0.0516263879449374,
+        "max_relative_error": 0.09204471548609516,
+        "one_body_rms_relative_error": 0.08453878228087584
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_correlated_readout_shell_projector.json",
+      "spatial_orbital_count": 63
+    },
+    {
+      "entry_type": "live_correlated",
+      "label": "shell_projector_continuum_live",
+      "model_observables": {
+        "helium_ground_magnitude": 2.721889110913839,
+        "helium_ion_ground_magnitude": 1.8159105690278103,
+        "helium_ionization_energy": 0.9059785418860287,
+        "helium_triplet_magnitude": 1.9970750834970084,
+        "hydrogen_ground_magnitude": 0.5381489900592001,
+        "singlet_triplet_gap": 0.7248140274168307
+      },
+      "relative_errors": {
+        "helium_ground": 0.0626213932556533,
+        "helium_ion_ground": 0.09204471548609483,
+        "helium_ionization": 0.002494305685663667,
+        "helium_ionization_energy": 0.002494305685663667,
+        "helium_triplet": 0.0819013831470925,
+        "hydrogen_ground": 0.07629798011840028,
+        "singlet_triplet_gap": 0.005052843721061073
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06449113590806231,
+        "helium_rms_relative_error": 0.05162612770005375,
+        "max_relative_error": 0.09204471548609483,
+        "one_body_rms_relative_error": 0.08453878228086785
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_correlated_readout_shell_projector_continuum_live.json",
+      "spatial_orbital_count": 63
+    },
+    {
+      "entry_type": "continuum_projection",
+      "label": "shell_projector_continuum_limit",
+      "model_observables": {
+        "helium_ground_magnitude": 2.798800879882233,
+        "helium_ion_ground_magnitude": 1.8540009480820843,
+        "helium_ionization_energy": 0.9447999318001489,
+        "helium_triplet_magnitude": 2.031927804190469,
+        "hydrogen_ground_magnitude": 0.5418645655583966,
+        "singlet_triplet_gap": 0.766873075691764
+      },
+      "relative_errors": {
+        "helium_ground": 0.03613411037966907,
+        "helium_ion_ground": 0.07299952595895787,
+        "helium_ionization": 0.045451418385805686,
+        "helium_ionization_energy": 0.045451418385805686,
+        "helium_triplet": 0.06587883350604651,
+        "hydrogen_ground": 0.08372913111679314,
+        "singlet_triplet_gap": 0.05268131827643874
+      },
+      "scores": {
+        "full_rms_relative_error": 0.061679744856635875,
+        "helium_rms_relative_error": 0.05120265463252979,
+        "max_relative_error": 0.08372913111679314,
+        "one_body_rms_relative_error": 0.07854775040637925
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_shell_projector_continuum_readout.json",
+      "spatial_orbital_count": 63
+    }
+  ],
+  "started_at": "2026-04-19T20:03:27",
+  "total_elapsed_seconds": 0.002273
+}

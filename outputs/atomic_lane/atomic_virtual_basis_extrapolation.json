@@ -1,0 +1,143 @@
+{
+  "completed_at": "2026-04-19T16:49:40",
+  "negative_orbital_count": 16,
+  "observables": {
+    "helium_ground_magnitude": {
+      "actual_value": 2.9037243770341195,
+      "basis_sizes": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "current_magnitude": 2.755501157518817,
+      "current_relative_error": 0.05104589839435747,
+      "current_value": -2.755501157518817,
+      "fitted_limit": -2.7593182683721635,
+      "last_value": -2.755501157518817,
+      "limit_magnitude": 2.7593182683721635,
+      "limit_relative_error": 0.049731341515771965,
+      "observable_key": "singlet_ground_energy",
+      "projected_improvement_vs_current": 0.0013145568785855044,
+      "remaining_to_limit": -0.0038171108533466835,
+      "tail_fit_rmse": 0.00030546395580238056,
+      "tail_is_monotone": true,
+      "tail_point_count": 4,
+      "tail_step_deltas": [
+        -0.0016282482573233281,
+        -0.00040852263668433864,
+        -2.981259615797427e-05
+      ],
+      "tail_values": [
+        -2.753434574028651,
+        -2.7550628222859745,
+        -2.755471344922659,
+        -2.755501157518817
+      ]
+    },
+    "helium_ionization_energy": {
+      "actual_value": 0.9037243770341196,
+      "basis_sizes": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "current_magnitude": 0.9205018199946398,
+      "current_relative_error": 0.018564778583909813,
+      "current_value": 0.9205018199946398,
+      "fitted_limit": 0.924318930847987,
+      "last_value": 0.9205018199946398,
+      "limit_magnitude": 0.924318930847987,
+      "limit_relative_error": 0.022788534134107863,
+      "observable_key": "ionization_energy",
+      "projected_improvement_vs_current": -0.0042237555501980495,
+      "remaining_to_limit": 0.0038171108533472387,
+      "tail_fit_rmse": 0.00030546395580237714,
+      "tail_is_monotone": true,
+      "tail_point_count": 4,
+      "tail_step_deltas": [
+        0.0016282482573233281,
+        0.00040852263668433864,
+        2.981259615797427e-05
+      ],
+      "tail_values": [
+        0.9184352365044741,
+        0.9200634847617974,
+        0.9204720073984818,
+        0.9205018199946398
+      ]
+    },
+    "helium_triplet_magnitude": {
+      "actual_value": 2.1752293782367915,
+      "basis_sizes": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "current_magnitude": 2.022199624254347,
+      "current_relative_error": 0.07035108826384473,
+      "current_value": -2.022199624254347,
+      "fitted_limit": -2.023189115684101,
+      "last_value": -2.022199624254347,
+      "limit_magnitude": 2.023189115684101,
+      "limit_relative_error": 0.06989619764878874,
+      "observable_key": "triplet_ground_energy",
+      "projected_improvement_vs_current": 0.0004548906150559917,
+      "remaining_to_limit": -0.0009894914297539081,
+      "tail_fit_rmse": 6.178087324757518e-05,
+      "tail_is_monotone": true,
+      "tail_point_count": 4,
+      "tail_step_deltas": [
+        -0.0004101289419327081,
+        -7.44571515061132e-05,
+        -9.728888832682969e-05
+      ],
+      "tail_values": [
+        -2.0216177492725813,
+        -2.022027878214514,
+        -2.02210233536602,
+        -2.022199624254347
+      ]
+    },
+    "singlet_triplet_gap": {
+      "actual_value": 0.7284949987973282,
+      "basis_sizes": [
+        40,
+        48,
+        56,
+        64
+      ],
+      "current_magnitude": 0.7333015332644699,
+      "current_relative_error": 0.006597896313738305,
+      "current_value": 0.7333015332644699,
+      "fitted_limit": 0.7361291526880634,
+      "last_value": 0.7333015332644699,
+      "limit_magnitude": 0.7361291526880634,
+      "limit_relative_error": 0.01047934975990028,
+      "observable_key": "singlet_triplet_gap",
+      "projected_improvement_vs_current": -0.0038814534461619754,
+      "remaining_to_limit": 0.0028276194235935526,
+      "tail_fit_rmse": 0.0002488333667064301,
+      "tail_is_monotone": false,
+      "tail_point_count": 4,
+      "tail_step_deltas": [
+        0.00121811931539062,
+        0.00033406548517822543,
+        -6.747629216885542e-05
+      ],
+      "tail_values": [
+        0.7318168247560699,
+        0.7330349440714605,
+        0.7333690095566388,
+        0.7333015332644699
+      ]
+    }
+  },
+  "source_readout_json": "outputs/atomic_lane/atomic_helium_readout_virtual_basis_tail.json",
+  "spatial_orbital_count": 64,
+  "started_at": "2026-04-19T16:49:40",
+  "total_elapsed_seconds": 0.001202,
+  "virtual_orbital_count": 48
+}

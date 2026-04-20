@@ -1,0 +1,19 @@
+{
+  "cache_key": "0608ab41a4556443e932",
+  "payload": {
+    "row": {
+      "ensemble_name": "tera",
+      "ge6_active_fraction": 0.9865841881345757,
+      "ge6_share6_support_match_fraction": 1.0,
+      "ge6_without_ge7_fraction": 0.02145485866416099,
+      "ge7_active_fraction": 0.9651293294704147,
+      "ge7_subset_of_ge6_fraction": 1.0,
+      "graph_count": 585,
+      "mean_positive_share6": 0.7040690796808683,
+      "min_positive_share6": 0.125,
+      "share6_positive_fraction": 0.9865841881345757,
+      "total_nodes": 38313
+    }
+  },
+  "stage_name": "threshold-core-overlap"
+}

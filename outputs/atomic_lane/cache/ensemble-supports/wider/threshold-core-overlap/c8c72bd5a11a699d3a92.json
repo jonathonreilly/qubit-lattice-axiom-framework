@@ -1,0 +1,19 @@
+{
+  "cache_key": "c8c72bd5a11a699d3a92",
+  "payload": {
+    "row": {
+      "ensemble_name": "wider",
+      "ge6_active_fraction": 0.9879836011498044,
+      "ge6_share6_support_match_fraction": 1.0,
+      "ge6_without_ge7_fraction": 0.02125253286838509,
+      "ge7_active_fraction": 0.9667310682814193,
+      "ge7_subset_of_ge6_fraction": 1.0,
+      "graph_count": 325,
+      "mean_positive_share6": 0.7036755086466524,
+      "min_positive_share6": 0.125,
+      "share6_positive_fraction": 0.9879836011498044,
+      "total_nodes": 21221
+    }
+  },
+  "stage_name": "threshold-core-overlap"
+}

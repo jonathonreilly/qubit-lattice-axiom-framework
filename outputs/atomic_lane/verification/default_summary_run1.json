@@ -1,0 +1,32 @@
+{
+  "row": {
+    "atomic_chain_present": false,
+    "compact_ge6_only_fraction": 0.020918527838943064,
+    "compact_ge6_share6_match_fraction": 1.0,
+    "compact_ge7_subset_fraction": 1.0,
+    "deep_feature_subset": "motif_deep_pocket_adjacent_fraction",
+    "deep_implies_low": 0.9777777777777777,
+    "deep_implies_pocket": 1.0,
+    "deep_parity_size": 3,
+    "deep_support_fraction": 0.24725274725274726,
+    "ensemble_name": "default",
+    "failed_criteria": "pocket-missing, deep=>low",
+    "fallback_feature_subset": "degree_8_fraction, motif_mean_neighbor_degree, motif_two_hop_open_fraction",
+    "fallback_is_distinct": true,
+    "fallback_parity_size": 3,
+    "fallback_proxy_family": "sparse-structure",
+    "fallback_route_role": "family-composite",
+    "graph_count": 195,
+    "low_feature_subset": "motif_low_degree_neighbor_fraction",
+    "low_parity_size": 3,
+    "low_support_fraction": 0.989010989010989,
+    "max_atomic_parity_size": 3,
+    "nesting_floor": 0.9777777777777777,
+    "pocket_feature_subset": "-",
+    "pocket_implies_low": 0.9923076923076923,
+    "pocket_parity_size": null,
+    "pocket_support_fraction": 0.7142857142857143,
+    "retained_passes": false,
+    "total_nodes": 12716
+  }
+}

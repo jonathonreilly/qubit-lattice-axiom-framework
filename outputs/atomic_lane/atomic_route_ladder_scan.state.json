@@ -1,0 +1,157 @@
+{
+  "completed_at": "2026-04-19T12:22:07",
+  "first_failure": {
+    "atomic_chain_present": true,
+    "compact_ge6_only_fraction": 0.020918527838943064,
+    "compact_ge6_share6_match_fraction": 1.0,
+    "compact_ge7_subset_fraction": 1.0,
+    "deep_feature_subset": "motif_deep_pocket_adjacent_fraction",
+    "deep_implies_low": 0.9777777777777777,
+    "deep_implies_pocket": 1.0,
+    "deep_parity_size": 1,
+    "deep_support_fraction": 0.24725274725274726,
+    "ensemble_name": "default",
+    "failed_criteria": "deep=>low, fallback-leakage",
+    "fallback_feature_subset": "motif_two_hop_open_fraction",
+    "fallback_is_distinct": false,
+    "fallback_parity_size": 1,
+    "fallback_proxy_family": "sparse-structure",
+    "fallback_route_role": "atomic-standalone",
+    "graph_count": 195,
+    "low_feature_subset": "motif_low_degree_neighbor_fraction",
+    "low_parity_size": 1,
+    "low_support_fraction": 0.989010989010989,
+    "max_atomic_parity_size": 1,
+    "nesting_floor": 0.9777777777777777,
+    "pocket_feature_subset": "motif_pocket_adjacent_fraction",
+    "pocket_implies_low": 0.9923076923076923,
+    "pocket_parity_size": 1,
+    "pocket_support_fraction": 0.7142857142857143,
+    "retained_passes": false,
+    "total_nodes": 12716
+  },
+  "neighboring_ensemble_beyond_failure": "broader",
+  "profile_snapshot": {
+    "cache_hits": {
+      "candidate-feature-supports": true,
+      "threshold-core-overlap": true
+    },
+    "stage_elapsed_seconds": {
+      "candidate-feature-supports": 0.000586,
+      "threshold-core-overlap": 0.00051
+    },
+    "total_elapsed_seconds": 0.0010958765633404255
+  },
+  "requested_ensembles": [
+    "default",
+    "broader"
+  ],
+  "retained_all_ensembles": false,
+  "rows": [
+    {
+      "atomic_chain_present": true,
+      "compact_ge6_only_fraction": 0.020918527838943064,
+      "compact_ge6_share6_match_fraction": 1.0,
+      "compact_ge7_subset_fraction": 1.0,
+      "deep_feature_subset": "motif_deep_pocket_adjacent_fraction",
+      "deep_implies_low": 0.9777777777777777,
+      "deep_implies_pocket": 1.0,
+      "deep_parity_size": 1,
+      "deep_support_fraction": 0.24725274725274726,
+      "ensemble_name": "default",
+      "failed_criteria": "deep=>low, fallback-leakage",
+      "fallback_feature_subset": "motif_two_hop_open_fraction",
+      "fallback_is_distinct": false,
+      "fallback_parity_size": 1,
+      "fallback_proxy_family": "sparse-structure",
+      "fallback_route_role": "atomic-standalone",
+      "graph_count": 195,
+      "low_feature_subset": "motif_low_degree_neighbor_fraction",
+      "low_parity_size": 1,
+      "low_support_fraction": 0.989010989010989,
+      "max_atomic_parity_size": 1,
+      "nesting_floor": 0.9777777777777777,
+      "pocket_feature_subset": "motif_pocket_adjacent_fraction",
+      "pocket_implies_low": 0.9923076923076923,
+      "pocket_parity_size": 1,
+      "pocket_support_fraction": 0.7142857142857143,
+      "retained_passes": false,
+      "total_nodes": 12716
+    },
+    {
+      "atomic_chain_present": true,
+      "compact_ge6_only_fraction": 0.021279104037724726,
+      "compact_ge6_share6_match_fraction": 1.0,
+      "compact_ge7_subset_fraction": 1.0,
+      "deep_feature_subset": "motif_deep_pocket_adjacent_fraction",
+      "deep_implies_low": 0.9852941176470589,
+      "deep_implies_pocket": 1.0,
+      "deep_parity_size": 1,
+      "deep_support_fraction": 0.27530364372469635,
+      "ensemble_name": "broader",
+      "failed_criteria": "fallback-leakage",
+      "fallback_feature_subset": "motif_two_hop_open_fraction",
+      "fallback_is_distinct": false,
+      "fallback_parity_size": 1,
+      "fallback_proxy_family": "sparse-structure",
+      "fallback_route_role": "atomic-standalone",
+      "graph_count": 260,
+      "low_feature_subset": "motif_low_degree_neighbor_fraction",
+      "low_parity_size": 1,
+      "low_support_fraction": 0.9919028340080972,
+      "max_atomic_parity_size": 1,
+      "nesting_floor": 0.9852941176470589,
+      "pocket_feature_subset": "motif_pocket_adjacent_fraction",
+      "pocket_implies_low": 0.9943502824858758,
+      "pocket_parity_size": 1,
+      "pocket_support_fraction": 0.7165991902834008,
+      "retained_passes": false,
+      "total_nodes": 16965
+    }
+  ],
+  "stage_records_by_ensemble": {
+    "broader": [
+      {
+        "cache_hit": true,
+        "cache_key": "6bf01c92fb2ef0b875b1",
+        "elapsed_seconds": 0.00026133283972740173,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/threshold-core-overlap/6bf01c92fb2ef0b875b1.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": true,
+        "cache_key": "fec0ba3054acf756bc77",
+        "elapsed_seconds": 0.0005070837214589119,
+        "ensemble_name": "broader",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/broader/candidate-feature-supports/fec0ba3054acf756bc77.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ],
+    "default": [
+      {
+        "cache_hit": true,
+        "cache_key": "b70f7f6c1d7d3af9dd29",
+        "elapsed_seconds": 0.0005096672102808952,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/threshold-core-overlap/b70f7f6c1d7d3af9dd29.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "threshold-core-overlap"
+      },
+      {
+        "cache_hit": true,
+        "cache_key": "dd57f9f75499351ff60c",
+        "elapsed_seconds": 0.0005862093530595303,
+        "ensemble_name": "default",
+        "path": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/cache/ensemble-supports/default/candidate-feature-supports/dd57f9f75499351ff60c.json",
+        "search_stage": "ensemble-supports",
+        "stage_name": "candidate-feature-supports"
+      }
+    ]
+  },
+  "started_at": "2026-04-19T12:22:07",
+  "tested_ensemble_count": 2,
+  "total_elapsed_seconds": 0.013313
+}

@@ -1,0 +1,19 @@
+{
+  "cache_key": "373ef1a244c164ca90c6",
+  "payload": {
+    "row": {
+      "ensemble_name": "peta",
+      "ge6_active_fraction": 0.9864515826054288,
+      "ge6_share6_support_match_fraction": 1.0,
+      "ge6_without_ge7_fraction": 0.021954541185310417,
+      "ge7_active_fraction": 0.9644970414201184,
+      "ge7_subset_of_ge6_fraction": 1.0,
+      "graph_count": 650,
+      "mean_positive_share6": 0.7044539355338908,
+      "min_positive_share6": 0.125,
+      "share6_positive_fraction": 0.9864515826054288,
+      "total_nodes": 42588
+    }
+  },
+  "stage_name": "threshold-core-overlap"
+}

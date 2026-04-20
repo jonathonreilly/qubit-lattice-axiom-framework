@@ -1,0 +1,61 @@
+{
+  "canonical_validation": null,
+  "completed_at": "2026-04-19T12:26:41",
+  "completed_tier": 0,
+  "first_failure": {
+    "atomic_chain_present": true,
+    "compact_ge6_only_fraction": 0.020918527838943064,
+    "compact_ge6_share6_match_fraction": 1.0,
+    "compact_ge7_subset_fraction": 1.0,
+    "deep_feature_subset": "motif_deep_pocket_adjacent_fraction",
+    "deep_implies_low": 0.9777777777777777,
+    "deep_implies_pocket": 1.0,
+    "deep_parity_size": 1,
+    "deep_support_fraction": 0.24725274725274726,
+    "ensemble_name": "default",
+    "failed_criteria": "deep=>low, fallback-leakage",
+    "fallback_feature_subset": "motif_two_hop_open_fraction",
+    "fallback_is_distinct": false,
+    "fallback_parity_size": 1,
+    "fallback_proxy_family": "sparse-structure",
+    "fallback_route_role": "atomic-standalone",
+    "graph_count": 195,
+    "low_feature_subset": "motif_low_degree_neighbor_fraction",
+    "low_parity_size": 1,
+    "low_support_fraction": 0.989010989010989,
+    "max_atomic_parity_size": 1,
+    "nesting_floor": 0.9777777777777777,
+    "pocket_feature_subset": "motif_pocket_adjacent_fraction",
+    "pocket_implies_low": 0.9923076923076923,
+    "pocket_parity_size": 1,
+    "pocket_support_fraction": 0.7142857142857143,
+    "retained_passes": false,
+    "total_nodes": 12716
+  },
+  "invariant_blockers": [
+    {
+      "blocked_by": [
+        "fallback-leakage"
+      ],
+      "ensemble_name": "default"
+    },
+    {
+      "blocked_by": [
+        "fallback-leakage"
+      ],
+      "ensemble_name": "broader"
+    }
+  ],
+  "ladder_json": "outputs/atomic_lane/atomic_route_ladder_scan.json",
+  "passing_ensembles": [],
+  "promoted_family": null,
+  "reason": "candidate-invariant-failure",
+  "search_aborted": true,
+  "search_performed": true,
+  "started_at": "2026-04-19T12:26:41",
+  "stricter_ensemble": "broader",
+  "support_stage_records": {},
+  "tier_counts": {},
+  "top_results": [],
+  "total_elapsed_seconds": 1.8e-05
+}

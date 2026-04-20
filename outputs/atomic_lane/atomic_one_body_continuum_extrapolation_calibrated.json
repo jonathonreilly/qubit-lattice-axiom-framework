@@ -1,0 +1,80 @@
+{
+  "completed_at": "2026-04-19T17:16:36",
+  "fit_power": 4,
+  "kinetic_stencil": "five_point",
+  "observables": {
+    "helium_ion_ground_magnitude": {
+      "actual_value": 2.0,
+      "current_relative_error": 0.0017651340478894717,
+      "current_value": 2.003530268095779,
+      "fit_power": 4,
+      "fit_rmse": 0.030619850389581656,
+      "fitted_limit": 2.002273101109516,
+      "limit_relative_error": 0.0011365505547580312,
+      "observable_key": "helium_ion_ground_magnitude",
+      "projected_improvement_vs_current": 0.0006285834931314405,
+      "spacing_step_deltas": [
+        0.14595461032398171,
+        0.10701780918361403,
+        0.08060188988436279
+      ],
+      "spacings": [
+        1.0,
+        0.8,
+        0.6666666667,
+        0.5714285714
+      ],
+      "trend_is_monotone": true,
+      "x_values": [
+        1.0,
+        0.4096000000000001,
+        0.197530864237037,
+        0.10662224071170348
+      ],
+      "y_values": [
+        1.6699559587038204,
+        1.8159105690278021,
+        1.9229283782114162,
+        2.003530268095779
+      ]
+    },
+    "hydrogen_ground_magnitude": {
+      "actual_value": 0.5,
+      "current_relative_error": 0.12519997089824075,
+      "current_value": 0.5625999854491204,
+      "fit_power": 4,
+      "fit_rmse": 0.0035585610540961993,
+      "fitted_limit": 0.5634353440325327,
+      "limit_relative_error": 0.1268706880650654,
+      "observable_key": "hydrogen_ground_magnitude",
+      "projected_improvement_vs_current": -0.0016707171668246534,
+      "spacing_step_deltas": [
+        0.02201095472405401,
+        0.01446106553424198,
+        0.00998992985567182
+      ],
+      "spacings": [
+        1.0,
+        0.8,
+        0.6666666667,
+        0.5714285714
+      ],
+      "trend_is_monotone": true,
+      "x_values": [
+        1.0,
+        0.4096000000000001,
+        0.197530864237037,
+        0.10662224071170348
+      ],
+      "y_values": [
+        0.5161380353351526,
+        0.5381489900592066,
+        0.5526100555934486,
+        0.5625999854491204
+      ]
+    }
+  },
+  "source_scan_json": "outputs/atomic_lane/atomic_one_body_spacing_scan_calibrated.json",
+  "started_at": "2026-04-19T17:16:36",
+  "total_elapsed_seconds": 0.001217
+}

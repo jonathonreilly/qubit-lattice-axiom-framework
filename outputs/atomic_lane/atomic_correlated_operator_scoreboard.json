@@ -1,0 +1,208 @@
+{
+  "accepted_entries": [
+    {
+      "accepted": true,
+      "label": "contact",
+      "operator_parameters": {
+        "contact_correction_strength": 1.8
+      },
+      "relative_errors": {
+        "helium_ground": 0.06971822227816349,
+        "helium_ion_ground": 0.09204471548609428,
+        "helium_ionization": 0.02030826106586836,
+        "helium_ionization_energy": 0.02030826106586836,
+        "helium_triplet": 0.09565423202549372,
+        "hydrogen_ground": 0.07629798011840294,
+        "singlet_triplet_gap": 0.007724684604885512
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06925324331856604,
+        "helium_rms_relative_error": 0.06017154402576608,
+        "max_relative_error": 0.09565423202549372,
+        "one_body_rms_relative_error": 0.08453878228086874
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_correlated_contact_scan_refined.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_projector",
+      "operator_parameters": {},
+      "relative_errors": {
+        "helium_ground": 0.06262141224678863,
+        "helium_ion_ground": 0.09204471548609516,
+        "helium_ionization": 0.0024942446659286244,
+        "helium_ionization_energy": 0.0024942446659286244,
+        "helium_triplet": 0.08190216620881685,
+        "hydrogen_ground": 0.0762979801184176,
+        "singlet_triplet_gap": 0.005050581256874076
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06449127479490457,
+        "helium_rms_relative_error": 0.0516263879449374,
+        "max_relative_error": 0.09204471548609516,
+        "one_body_rms_relative_error": 0.08453878228087584
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_bound_shell_projector_refine.json"
+    }
+  ],
+  "best_by_full_rms": {
+    "accepted": false,
+    "label": "shell_pair_addon",
+    "operator_parameters": {},
+    "relative_errors": {
+      "helium_ground": 0.058886483694460034,
+      "helium_ion_ground": 0.0920447154860985,
+      "helium_ionization": 0.01449480961635774,
+      "helium_ionization_energy": 0.01449480961635774,
+      "helium_triplet": 0.08144592416133156,
+      "hydrogen_ground": 0.07629798011841205,
+      "singlet_triplet_gap": 0.008474250066424549
+    },
+    "scores": {
+      "full_rms_relative_error": 0.06413083029175652,
+      "helium_rms_relative_error": 0.05094842721908605,
+      "max_relative_error": 0.0920447154860985,
+      "one_body_rms_relative_error": 0.08453878228087515
+    },
+    "source_json": "outputs/atomic_lane/atomic_shell_pair_full_validation.json"
+  },
+  "completed_at": "2026-04-19T20:20:40",
+  "entries": [
+    {
+      "accepted": false,
+      "label": "no_correction",
+      "operator_parameters": {},
+      "relative_errors": {
+        "helium_ground": 0.058850927796034735,
+        "helium_ion_ground": 0.09204471548609994,
+        "helium_ionization": 0.01460905299811377,
+        "helium_ionization_energy": 0.01460905299811377,
+        "helium_triplet": 0.09565195102780444,
+        "hydrogen_ground": 0.07629798011841027,
+        "singlet_triplet_gap": 0.05103406388554932
+      },
+      "scores": {
+        "full_rms_relative_error": 0.07038494034370567,
+        "helium_rms_relative_error": 0.06211003852851731,
+        "max_relative_error": 0.09565195102780444,
+        "one_body_rms_relative_error": 0.08453878228087514
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_fixed_basis_validation.json"
+    },
+    {
+      "accepted": true,
+      "label": "contact",
+      "operator_parameters": {
+        "contact_correction_strength": 1.8
+      },
+      "relative_errors": {
+        "helium_ground": 0.06971822227816349,
+        "helium_ion_ground": 0.09204471548609428,
+        "helium_ionization": 0.02030826106586836,
+        "helium_ionization_energy": 0.02030826106586836,
+        "helium_triplet": 0.09565423202549372,
+        "hydrogen_ground": 0.07629798011840294,
+        "singlet_triplet_gap": 0.007724684604885512
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06925324331856604,
+        "helium_rms_relative_error": 0.06017154402576608,
+        "max_relative_error": 0.09565423202549372,
+        "one_body_rms_relative_error": 0.08453878228086874
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_correlated_contact_scan_refined.json"
+    },
+    {
+      "accepted": false,
+      "label": "finite_range",
+      "operator_parameters": {
+        "pair_profile": "gaussian",
+        "pair_radius": 0.8,
+        "pair_strength": 0.75
+      },
+      "relative_errors": {
+        "helium_ground": 0.0945622282248888,
+        "helium_ion_ground": 0.09204471548609727,
+        "helium_ionization": 0.10013364535773983,
+        "helium_ionization_energy": 0.10013364535773983,
+        "helium_triplet": 0.0974493780579816,
+        "hydrogen_ground": 0.0762979801184096,
+        "singlet_triplet_gap": 0.0859414234881607
+      },
+      "scores": {
+        "full_rms_relative_error": 0.0914190743350006,
+        "helium_rms_relative_error": 0.09467189590177273,
+        "max_relative_error": 0.10013364535773983,
+        "one_body_rms_relative_error": 0.08453878228087337
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_finite_range_pair_scan.json"
+    },
+    {
+      "accepted": true,
+      "label": "shell_projector",
+      "operator_parameters": {},
+      "relative_errors": {
+        "helium_ground": 0.06262141224678863,
+        "helium_ion_ground": 0.09204471548609516,
+        "helium_ionization": 0.0024942446659286244,
+        "helium_ionization_energy": 0.0024942446659286244,
+        "helium_triplet": 0.08190216620881685,
+        "hydrogen_ground": 0.0762979801184176,
+        "singlet_triplet_gap": 0.005050581256874076
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06449127479490457,
+        "helium_rms_relative_error": 0.0516263879449374,
+        "max_relative_error": 0.09204471548609516,
+        "one_body_rms_relative_error": 0.08453878228087584
+      },
+      "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_bound_shell_projector_refine.json"
+    },
+    {
+      "accepted": false,
+      "label": "shell_contact_joint",
+      "operator_parameters": {
+        "contact_correction_strength": 1.7
+      },
+      "relative_errors": {
+        "helium_ground": 0.06322176210237085,
+        "helium_ion_ground": 0.09204471548609805,
+        "helium_ionization": 0.000565282080988494,
+        "helium_ionization_energy": 0.000565282080988494,
+        "helium_triplet": 0.08105618528946057,
+        "hydrogen_ground": 0.07629798011841049,
+        "singlet_triplet_gap": 0.00996956225953105
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06449860400498603,
+        "helium_rms_relative_error": 0.051640120285699115,
+        "max_relative_error": 0.09204471548609805,
+        "one_body_rms_relative_error": 0.0845387822808742
+      },
+      "source_json": "outputs/atomic_lane/atomic_shell_contact_joint_scan.json"
+    },
+    {
+      "accepted": false,
+      "label": "shell_pair_addon",
+      "operator_parameters": {},
+      "relative_errors": {
+        "helium_ground": 0.058886483694460034,
+        "helium_ion_ground": 0.0920447154860985,
+        "helium_ionization": 0.01449480961635774,
+        "helium_ionization_energy": 0.01449480961635774,
+        "helium_triplet": 0.08144592416133156,
+        "hydrogen_ground": 0.07629798011841205,
+        "singlet_triplet_gap": 0.008474250066424549
+      },
+      "scores": {
+        "full_rms_relative_error": 0.06413083029175652,
+        "helium_rms_relative_error": 0.05094842721908605,
+        "max_relative_error": 0.0920447154860985,
+        "one_body_rms_relative_error": 0.08453878228087515
+      },
+      "source_json": "outputs/atomic_lane/atomic_shell_pair_full_validation.json"
+    }
+  ],
+  "started_at": "2026-04-19T20:20:40",
+  "total_elapsed_seconds": 0.049395
+}

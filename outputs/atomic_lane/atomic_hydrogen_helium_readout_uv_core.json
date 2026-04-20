@@ -1,0 +1,184 @@
+{
+  "bridge_json": "/Users/jonBridger/CI3Z2 Main-atomic-lane/outputs/atomic_lane/atomic_polarity_bridge.json",
+  "bridge_json_present": true,
+  "calibration": {
+    "lattice_spacing": 1.0,
+    "nuclear_counterterm_radius": null,
+    "nuclear_counterterm_strength": 0.0,
+    "nuclear_profile": "hard_floor",
+    "reference_coupling": 1.595,
+    "softening_radius": 0.75
+  },
+  "completed_at": "2026-04-19T15:32:36",
+  "helium_like_proxy": {
+    "available_bound_levels": 5,
+    "bounded_claim": "This is only a double-occupancy one-body proxy. It is not a physical helium binding or spectral prediction.",
+    "bounded_proxy_available": true,
+    "missing_terms": [
+      "electron-electron repulsion",
+      "true two-body Hamiltonian",
+      "antisymmetrization/spin structure",
+      "correlation and screening corrections"
+    ],
+    "noninteracting_double_occupancy_total_energy": -1.1290641338676042,
+    "physical_helium_supported": false,
+    "shell_localization_retained": true,
+    "source_one_body_ground_energy": -0.5645320669338021
+  },
+  "hydrogen_like": {
+    "bound_state_baseline_row": {
+      "coupling": 2.0,
+      "coupling_scan": [
+        {
+          "E0": -0.034807195477652646,
+          "coupling": 0.5,
+          "fall_to_center": false,
+          "ipr": 0.0013891525219119124,
+          "n_bound": 1
+        },
+        {
+          "E0": -0.21645433139605086,
+          "coupling": 1.0,
+          "fall_to_center": false,
+          "ipr": 0.003683253055356736,
+          "n_bound": 1
+        },
+        {
+          "E0": -0.7410018648366521,
+          "coupling": 2.0,
+          "fall_to_center": false,
+          "ipr": 0.015183771429573781,
+          "n_bound": 8
+        },
+        {
+          "E0": -1.4234202086508378,
+          "coupling": 3.0,
+          "fall_to_center": false,
+          "ipr": 0.031064843192135948,
+          "n_bound": 10
+        },
+        {
+          "E0": -2.200217788142573,
+          "coupling": 4.0,
+          "fall_to_center": false,
+          "ipr": 0.04666930220494539,
+          "n_bound": 10
+        }
+      ],
+      "d": 3,
+      "localization": {
+        "center_weight": 0.28976667330280126,
+        "decay_rate": 1.7737043988358083,
+        "fall_to_center": false,
+        "fraction": 0.016079050328990176,
+        "genuinely_localized": true,
+        "ipr": 0.015183771429573785,
+        "n_eff": 65.85979014754376,
+        "physical_bound": true
+      },
+      "lowest_eigenvalue": -0.741001864836653,
+      "n_bound": 8,
+      "sizes": [
+        16,
+        16,
+        16
+      ]
+    },
+    "bounded_claim": "Hydrogen-like one-body numbers are supported only on the retained polarity manifold and only as a d=3 bound-state readout.",
+    "coupling": 1.595,
+    "dimension": 3,
+    "energy_gaps": [
+      0.4293886958224159,
+      4.996003610813204e-16,
+      9.992007221626409e-16,
+      0.046417447616925095
+    ],
+    "ground_energy": -0.5645320669338021,
+    "highest_robust_dimension": 3,
+    "lattice_sizes": [
+      16,
+      16,
+      16
+    ],
+    "localization": {
+      "center_weight": 0.2752722110631973,
+      "decay_rate": 1.6270213237904172,
+      "genuinely_localized": true,
+      "ipr": 0.013682708791481268,
+      "physical_bound": true
+    },
+    "n_bound": 5,
+    "negative_bound_energies": [
+      -0.5645320669338021,
+      -0.1351433711113862,
+      -0.1351433711113857,
+      -0.1351433711113847,
+      -0.0887259234944596
+    ],
+    "numerically_supported": true,
+    "robust_dimensions": [
+      2,
+      3
+    ]
+  },
+  "selector_summary": {
+    "canonical_passes": true,
+    "deep_support_fraction": {
+      "max": 0.215633423180593,
+      "mean": 0.19083828263521593,
+      "min": 0.1736111111111111
+    },
+    "ensemble_count": 9,
+    "excluded_fraction": {
+      "max": 0.4340659340659341,
+      "mean": 0.41783422681230403,
+      "min": 0.40705128205128205
+    },
+    "fallback_residual_all_zero": true,
+    "fallback_residual_fraction": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0
+    },
+    "low_support_fraction": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "mechanism_labels": [
+      "shell-localization retained"
+    ],
+    "nesting_floor_min": 1.0,
+    "pocket_support_fraction": {
+      "max": 0.7475728155339806,
+      "mean": 0.7012915742291579,
+      "min": 0.6837349397590361
+    },
+    "retained_discriminator": {
+      "abbreviated_label": "degree_1_fraction>0, degree_2_fraction=0",
+      "atoms": [
+        {
+          "feature_name": "degree_1_fraction",
+          "label": "degree_1_fraction>0",
+          "polarity": "positive"
+        },
+        {
+          "feature_name": "degree_2_fraction",
+          "label": "degree_2_fraction=0",
+          "polarity": "zero"
+        }
+      ],
+      "feature_scope": "sparse",
+      "feature_subset_label": "degree_1_fraction>0, degree_2_fraction=0",
+      "tier": 2
+    },
+    "retained_manifold_label": "degree_1_fraction=0 and degree_2_fraction>0",
+    "retained_manifold_terms": [
+      "degree_1_fraction=0",
+      "degree_2_fraction>0"
+    ],
+    "shell_localization_retained_all": true
+  },
+  "started_at": "2026-04-19T15:32:35",
+  "total_elapsed_seconds": 0.999749
+}

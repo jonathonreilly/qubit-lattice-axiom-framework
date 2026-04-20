@@ -1,0 +1,1694 @@
+{
+  "actuals_hartree": {
+    "helium_ground_magnitude": 2.9037243770341195,
+    "helium_ion_ground_magnitude": 2.0,
+    "helium_ionization_energy": 0.9037243770341196,
+    "helium_triplet_magnitude": 2.1752293782367915,
+    "hydrogen_ground_magnitude": 0.5,
+    "singlet_triplet_gap": 0.7284949987973282
+  },
+  "baseline_candidate": {
+    "helium_like_bound": true,
+    "metrics": {
+      "model_observables": {
+        "helium_ground_magnitude": 2.8026132486858604,
+        "helium_ion_ground_magnitude": 1.8897579502201576,
+        "helium_ionization_energy": 0.9128552984657028,
+        "helium_triplet_magnitude": 2.0836622981416193,
+        "hydrogen_ground_magnitude": 0.5838712474979783,
+        "singlet_triplet_gap": 0.7189509505442411
+      },
+      "relative_errors": {
+        "helium_ground": 0.0348211865933139,
+        "helium_ion_ground": 0.05512102488992121,
+        "helium_ionization": 0.010103657335823524,
+        "helium_triplet": 0.042095367509883075,
+        "hydrogen_ground": 0.1677424949959565,
+        "singlet_triplet_gap": 0.013101048420158468
+      },
+      "scores": {
+        "full_rms_relative_error": 0.07575632908126047,
+        "helium_rms_relative_error": 0.02854056920782056,
+        "max_relative_error": 0.1677424949959565,
+        "one_body_rms_relative_error": 0.12485165600099946
+      }
+    },
+    "parameters": {
+      "lattice_spacing": 1.0,
+      "max_orbitals": 16,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "nuclear_softening_radius": 0.85,
+      "reference_coupling": 1.625,
+      "repulsion_softening_radius": 0.85
+    },
+    "spin_ground_sector": "singlet"
+  },
+  "best_balanced_candidate": {
+    "guardrails": {
+      "baseline_full_rms_relative_error": 0.07575632908126047,
+      "baseline_helium_rms_relative_error": 0.02854056920782056,
+      "eligible_for_balanced_selection": true,
+      "full_rms_slack": 0.08,
+      "helium_rms_slack": 0.08
+    },
+    "helium_like_bound": true,
+    "metrics": {
+      "model_observables": {
+        "helium_ground_magnitude": 2.8026132486858604,
+        "helium_ion_ground_magnitude": 1.8897579502201576,
+        "helium_ionization_energy": 0.9128552984657028,
+        "helium_triplet_magnitude": 2.0836622981416193,
+        "hydrogen_ground_magnitude": 0.5838712474979783,
+        "singlet_triplet_gap": 0.7189509505442411
+      },
+      "relative_errors": {
+        "helium_ground": 0.0348211865933139,
+        "helium_ion_ground": 0.05512102488992121,
+        "helium_ionization": 0.010103657335823524,
+        "helium_triplet": 0.042095367509883075,
+        "hydrogen_ground": 0.1677424949959565,
+        "singlet_triplet_gap": 0.013101048420158468
+      },
+      "scores": {
+        "full_rms_relative_error": 0.07575632908126047,
+        "helium_rms_relative_error": 0.02854056920782056,
+        "max_relative_error": 0.1677424949959565,
+        "one_body_rms_relative_error": 0.12485165600099946
+      }
+    },
+    "parameters": {
+      "lattice_spacing": 1.0,
+      "max_orbitals": 16,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "nuclear_softening_radius": 0.85,
+      "reference_coupling": 1.625,
+      "repulsion_softening_radius": 0.85
+    },
+    "spin_ground_sector": "singlet"
+  },
+  "best_by_full_rms": {
+    "elapsed_seconds": 0.382661,
+    "guardrails": {
+      "baseline_full_rms_relative_error": 0.07575632908126047,
+      "baseline_helium_rms_relative_error": 0.02854056920782056,
+      "eligible_for_balanced_selection": false,
+      "full_rms_slack": 0.08,
+      "helium_rms_slack": 0.08
+    },
+    "helium_like_bound": true,
+    "metrics": {
+      "model_observables": {
+        "helium_ground_magnitude": 2.7507369200892713,
+        "helium_ion_ground_magnitude": 1.8349993375241733,
+        "helium_ionization_energy": 0.915737582565098,
+        "helium_triplet_magnitude": 2.0199199106769297,
+        "hydrogen_ground_magnitude": 0.5645320669338016,
+        "singlet_triplet_gap": 0.7308170094123416
+      },
+      "relative_errors": {
+        "helium_ground": 0.05268663174605792,
+        "helium_ion_ground": 0.08250033123791334,
+        "helium_ionization": 0.013292997108702354,
+        "helium_triplet": 0.07139912191042275,
+        "hydrogen_ground": 0.1290641338676033,
+        "singlet_triplet_gap": 0.00318740776374149
+      },
+      "scores": {
+        "full_rms_relative_error": 0.07248498053627903,
+        "helium_rms_relative_error": 0.04489036398468065,
+        "max_relative_error": 0.1290641338676033,
+        "one_body_rms_relative_error": 0.10831402334268643
+      }
+    },
+    "parameters": {
+      "lattice_spacing": 1.0,
+      "max_orbitals": 16,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "nuclear_softening_radius": 0.75,
+      "reference_coupling": 1.595,
+      "repulsion_softening_radius": 1.1
+    },
+    "spin_ground_sector": "singlet"
+  },
+  "best_by_hydrogen_error": {
+    "elapsed_seconds": 0.388194,
+    "guardrails": {
+      "baseline_full_rms_relative_error": 0.07575632908126047,
+      "baseline_helium_rms_relative_error": 0.02854056920782056,
+      "eligible_for_balanced_selection": false,
+      "full_rms_slack": 0.08,
+      "helium_rms_slack": 0.08
+    },
+    "helium_like_bound": true,
+    "metrics": {
+      "model_observables": {
+        "helium_ground_magnitude": 2.7366579715250894,
+        "helium_ion_ground_magnitude": 1.8259077800696497,
+        "helium_ionization_energy": 0.9107501914554397,
+        "helium_triplet_magnitude": 2.0091256148619645,
+        "hydrogen_ground_magnitude": 0.5613316330206135,
+        "singlet_triplet_gap": 0.7275323566631249
+      },
+      "relative_errors": {
+        "helium_ground": 0.05753521471609946,
+        "helium_ion_ground": 0.08704610996517514,
+        "helium_ionization": 0.007774288931297502,
+        "helium_triplet": 0.07636149320007268,
+        "hydrogen_ground": 0.12266326604122701,
+        "singlet_triplet_gap": 0.001321412138439504
+      },
+      "scores": {
+        "full_rms_relative_error": 0.07283184556516643,
+        "helium_rms_relative_error": 0.047967604366382845,
+        "max_relative_error": 0.12266326604122701,
+        "one_body_rms_relative_error": 0.10635624592841315
+      }
+    },
+    "parameters": {
+      "lattice_spacing": 1.0,
+      "max_orbitals": 16,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "nuclear_softening_radius": 0.75,
+      "reference_coupling": 1.59,
+      "repulsion_softening_radius": 1.1
+    },
+    "spin_ground_sector": "singlet"
+  },
+  "coarse_stage": {
+    "candidate_count": 12,
+    "top_candidates": [
+      {
+        "elapsed_seconds": 0.382661,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7507369200892713,
+            "helium_ion_ground_magnitude": 1.8349993375241733,
+            "helium_ionization_energy": 0.915737582565098,
+            "helium_triplet_magnitude": 2.0199199106769297,
+            "hydrogen_ground_magnitude": 0.5645320669338016,
+            "singlet_triplet_gap": 0.7308170094123416
+          },
+          "relative_errors": {
+            "helium_ground": 0.05268663174605792,
+            "helium_ion_ground": 0.08250033123791334,
+            "helium_ionization": 0.013292997108702354,
+            "helium_triplet": 0.07139912191042275,
+            "hydrogen_ground": 0.1290641338676033,
+            "singlet_triplet_gap": 0.00318740776374149
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07248498053627903,
+            "helium_rms_relative_error": 0.04489036398468065,
+            "max_relative_error": 0.1290641338676033,
+            "one_body_rms_relative_error": 0.10831402334268643
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.595,
+          "repulsion_softening_radius": 1.1
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.360219,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7648350104762867,
+            "helium_ion_ground_magnitude": 1.8441009554917598,
+            "helium_ionization_energy": 0.9207340549845269,
+            "helium_triplet_magnitude": 2.030731629557039,
+            "hydrogen_ground_magnitude": 0.567739033759688,
+            "singlet_triplet_gap": 0.7341033809192479
+          },
+          "relative_errors": {
+            "helium_ground": 0.047831456613556145,
+            "helium_ion_ground": 0.07794952225412011,
+            "helium_ionization": 0.0188217540465494,
+            "helium_triplet": 0.0664287408608284,
+            "hydrogen_ground": 0.13547806751937608,
+            "singlet_triplet_gap": 0.00769858699260606
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07250814588677985,
+            "helium_rms_relative_error": 0.04217271784341483,
+            "max_relative_error": 0.13547806751937608,
+            "one_body_rms_relative_error": 0.11052247463396346
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.6,
+          "repulsion_softening_radius": 1.1
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.372962,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7535431609923937,
+            "helium_ion_ground_magnitude": 1.8441009554917545,
+            "helium_ionization_energy": 0.9094422055006393,
+            "helium_triplet_magnitude": 2.030116402174972,
+            "hydrogen_ground_magnitude": 0.5677390337596887,
+            "singlet_triplet_gap": 0.7234267588174217
+          },
+          "relative_errors": {
+            "helium_ground": 0.051720203621778205,
+            "helium_ion_ground": 0.07794952225412277,
+            "helium_ionization": 0.006326960533348247,
+            "helium_triplet": 0.06671157419703755,
+            "hydrogen_ground": 0.1354780675193774,
+            "singlet_triplet_gap": 0.0069571376444225175
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07262263259107544,
+            "helium_rms_relative_error": 0.04246718082331059,
+            "max_relative_error": 0.1354780675193774,
+            "one_body_rms_relative_error": 0.11052247463396521
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.6,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.339331,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7675817893252406,
+            "helium_ion_ground_magnitude": 1.853212576355912,
+            "helium_ionization_energy": 0.9143692129693286,
+            "helium_triplet_magnitude": 2.040935801748557,
+            "hydrogen_ground_magnitude": 0.570952515964805,
+            "singlet_triplet_gap": 0.7266459875766835
+          },
+          "relative_errors": {
+            "helium_ground": 0.0468855063468302,
+            "helium_ion_ground": 0.07339371182204402,
+            "helium_ionization": 0.011778852275893703,
+            "helium_triplet": 0.06173766216650256,
+            "hydrogen_ground": 0.14190503192961001,
+            "singlet_triplet_gap": 0.0025381247965973186
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07266205806742743,
+            "helium_rms_relative_error": 0.03922681822938321,
+            "max_relative_error": 0.14190503192961001,
+            "one_body_rms_relative_error": 0.11296830312517066
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.605,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.388194,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7366579715250894,
+            "helium_ion_ground_magnitude": 1.8259077800696497,
+            "helium_ionization_energy": 0.9107501914554397,
+            "helium_triplet_magnitude": 2.0091256148619645,
+            "hydrogen_ground_magnitude": 0.5613316330206135,
+            "singlet_triplet_gap": 0.7275323566631249
+          },
+          "relative_errors": {
+            "helium_ground": 0.05753521471609946,
+            "helium_ion_ground": 0.08704610996517514,
+            "helium_ionization": 0.007774288931297502,
+            "helium_triplet": 0.07636149320007268,
+            "hydrogen_ground": 0.12266326604122701,
+            "singlet_triplet_gap": 0.001321412138439504
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07283184556516643,
+            "helium_rms_relative_error": 0.047967604366382845,
+            "max_relative_error": 0.12266326604122701,
+            "one_body_rms_relative_error": 0.10635624592841315
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.59,
+          "repulsion_softening_radius": 1.1
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.373462,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.761180286297189,
+            "helium_ion_ground_magnitude": 1.8349993375241758,
+            "helium_ionization_energy": 0.9261809487730133,
+            "helium_triplet_magnitude": 2.0204791164543465,
+            "hydrogen_ground_magnitude": 0.5645320669338025,
+            "singlet_triplet_gap": 0.7407011698428425
+          },
+          "relative_errors": {
+            "helium_ground": 0.04909008990809438,
+            "helium_ion_ground": 0.08250033123791212,
+            "helium_ionization": 0.024848916671466492,
+            "helium_triplet": 0.0711420429177374,
+            "hydrogen_ground": 0.12906413386760507,
+            "singlet_triplet_gap": 0.016755325795874354
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07283896862866476,
+            "helium_rms_relative_error": 0.04574176647213506,
+            "max_relative_error": 0.12906413386760507,
+            "one_body_rms_relative_error": 0.10831402334268703
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.595,
+          "repulsion_softening_radius": 1.15
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.33863,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7470279503938477,
+            "helium_ion_ground_magnitude": 1.8259077800696433,
+            "helium_ionization_energy": 0.9211201703242045,
+            "helium_triplet_magnitude": 2.0096762402899406,
+            "hydrogen_ground_magnitude": 0.5613316330206154,
+            "singlet_triplet_gap": 0.7373517101039071
+          },
+          "relative_errors": {
+            "helium_ground": 0.05396394639918345,
+            "helium_ion_ground": 0.08704610996517836,
+            "helium_ionization": 0.019249003050216595,
+            "helium_triplet": 0.07610835877963629,
+            "hydrogen_ground": 0.12266326604123079,
+            "singlet_triplet_gap": 0.012157545791255275
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07285398859038672,
+            "helium_rms_relative_error": 0.04801801699674171,
+            "max_relative_error": 0.12266326604123079,
+            "one_body_rms_relative_error": 0.10635624592841665
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.59,
+          "repulsion_softening_radius": 1.15
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.338471,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.778952146723232,
+            "helium_ion_ground_magnitude": 1.853212576355916,
+            "helium_ionization_energy": 0.9257395703673161,
+            "helium_triplet_magnitude": 2.0415603119927535,
+            "hydrogen_ground_magnitude": 0.5709525159648072,
+            "singlet_triplet_gap": 0.7373918347304786
+          },
+          "relative_errors": {
+            "helium_ground": 0.04296972236680752,
+            "helium_ion_ground": 0.07339371182204202,
+            "helium_ionization": 0.02436051731330635,
+            "helium_triplet": 0.061450561297764494,
+            "hydrogen_ground": 0.14190503192961446,
+            "singlet_triplet_gap": 0.012212624586082743
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07290270519569807,
+            "helium_rms_relative_error": 0.03989094987319593,
+            "max_relative_error": 0.14190503192961446,
+            "one_body_rms_relative_error": 0.1129683031251728
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.605,
+          "repulsion_softening_radius": 1.1
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.333202,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7395234838792613,
+            "helium_ion_ground_magnitude": 1.834999337524171,
+            "helium_ionization_energy": 0.9045241463550902,
+            "helium_triplet_magnitude": 2.019314186355972,
+            "hydrogen_ground_magnitude": 0.5645320669337991,
+            "singlet_triplet_gap": 0.7202092975232892
+          },
+          "relative_errors": {
+            "helium_ground": 0.05654837437517879,
+            "helium_ion_ground": 0.08250033123791445,
+            "helium_ionization": 0.0008849703972746426,
+            "helium_triplet": 0.07167758648386868,
+            "hydrogen_ground": 0.12906413386759819,
+            "singlet_triplet_gap": 0.01137372430520156
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07294906342917358,
+            "helium_rms_relative_error": 0.04600418411895443,
+            "max_relative_error": 0.12906413386759819,
+            "one_body_rms_relative_error": 0.10831402334268381
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.595,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.355713,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.775351862120728,
+            "helium_ion_ground_magnitude": 1.8441009554917558,
+            "helium_ionization_energy": 0.931250906628972,
+            "helium_triplet_magnitude": 2.0312993913678117,
+            "hydrogen_ground_magnitude": 0.56773903375969,
+            "singlet_triplet_gap": 0.7440524707529161
+          },
+          "relative_errors": {
+            "helium_ground": 0.044209607471254575,
+            "helium_ion_ground": 0.0779495222541221,
+            "helium_ionization": 0.030458987601053922,
+            "helium_triplet": 0.06616772847452412,
+            "hydrogen_ground": 0.13547806751938007,
+            "singlet_triplet_gap": 0.021355633163263832
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07319711455624167,
+            "helium_rms_relative_error": 0.043921722068145874,
+            "max_relative_error": 0.13547806751938007,
+            "one_body_rms_relative_error": 0.11052247463396661
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.6,
+          "repulsion_softening_radius": 1.15
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.340669,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7255228520999357,
+            "helium_ion_ground_magnitude": 1.825907780069639,
+            "helium_ionization_energy": 0.8996150720302967,
+            "helium_triplet_magnitude": 2.0085290772083515,
+            "hydrogen_ground_magnitude": 0.5613316330206144,
+            "singlet_triplet_gap": 0.7169937748915842
+          },
+          "relative_errors": {
+            "helium_ground": 0.0613699861955217,
+            "helium_ion_ground": 0.08704610996518047,
+            "helium_ionization": 0.004547077746545947,
+            "helium_triplet": 0.07663573446381311,
+            "hydrogen_ground": 0.12266326604122879,
+            "singlet_triplet_gap": 0.015787649777598056
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07363484105135669,
+            "helium_rms_relative_error": 0.049772574787677555,
+            "max_relative_error": 0.12266326604122879,
+            "one_body_rms_relative_error": 0.10635624592841636
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.59,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.339984,
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7895425802684195,
+            "helium_ion_ground_magnitude": 1.8532125763559126,
+            "helium_ionization_energy": 0.9363300039125069,
+            "helium_triplet_magnitude": 2.042137080487614,
+            "hydrogen_ground_magnitude": 0.5709525159648074,
+            "singlet_triplet_gap": 0.7474054997808053
+          },
+          "relative_errors": {
+            "helium_ground": 0.0393225326993073,
+            "helium_ion_ground": 0.07339371182204368,
+            "helium_ionization": 0.036079171600299054,
+            "helium_triplet": 0.06118540834395125,
+            "hydrogen_ground": 0.1419050319296149,
+            "singlet_triplet_gap": 0.025958312705916198
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07392465918754527,
+            "helium_rms_relative_error": 0.042618823288560266,
+            "max_relative_error": 0.1419050319296149,
+            "one_body_rms_relative_error": 0.11296830312517361
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.605,
+          "repulsion_softening_radius": 1.15
+        },
+        "spin_ground_sector": "singlet"
+      }
+    ]
+  },
+  "completed_at": "2026-04-19T15:31:54",
+  "counterterm_stage": {
+    "candidate_count": 0,
+    "promoted_base_candidates": [
+      {
+        "elapsed_seconds": 0.382661,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7507369200892713,
+            "helium_ion_ground_magnitude": 1.8349993375241733,
+            "helium_ionization_energy": 0.915737582565098,
+            "helium_triplet_magnitude": 2.0199199106769297,
+            "hydrogen_ground_magnitude": 0.5645320669338016,
+            "singlet_triplet_gap": 0.7308170094123416
+          },
+          "relative_errors": {
+            "helium_ground": 0.05268663174605792,
+            "helium_ion_ground": 0.08250033123791334,
+            "helium_ionization": 0.013292997108702354,
+            "helium_triplet": 0.07139912191042275,
+            "hydrogen_ground": 0.1290641338676033,
+            "singlet_triplet_gap": 0.00318740776374149
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07248498053627903,
+            "helium_rms_relative_error": 0.04489036398468065,
+            "max_relative_error": 0.1290641338676033,
+            "one_body_rms_relative_error": 0.10831402334268643
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.595,
+          "repulsion_softening_radius": 1.1
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.360219,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7648350104762867,
+            "helium_ion_ground_magnitude": 1.8441009554917598,
+            "helium_ionization_energy": 0.9207340549845269,
+            "helium_triplet_magnitude": 2.030731629557039,
+            "hydrogen_ground_magnitude": 0.567739033759688,
+            "singlet_triplet_gap": 0.7341033809192479
+          },
+          "relative_errors": {
+            "helium_ground": 0.047831456613556145,
+            "helium_ion_ground": 0.07794952225412011,
+            "helium_ionization": 0.0188217540465494,
+            "helium_triplet": 0.0664287408608284,
+            "hydrogen_ground": 0.13547806751937608,
+            "singlet_triplet_gap": 0.00769858699260606
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07250814588677985,
+            "helium_rms_relative_error": 0.04217271784341483,
+            "max_relative_error": 0.13547806751937608,
+            "one_body_rms_relative_error": 0.11052247463396346
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.6,
+          "repulsion_softening_radius": 1.1
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.372962,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7535431609923937,
+            "helium_ion_ground_magnitude": 1.8441009554917545,
+            "helium_ionization_energy": 0.9094422055006393,
+            "helium_triplet_magnitude": 2.030116402174972,
+            "hydrogen_ground_magnitude": 0.5677390337596887,
+            "singlet_triplet_gap": 0.7234267588174217
+          },
+          "relative_errors": {
+            "helium_ground": 0.051720203621778205,
+            "helium_ion_ground": 0.07794952225412277,
+            "helium_ionization": 0.006326960533348247,
+            "helium_triplet": 0.06671157419703755,
+            "hydrogen_ground": 0.1354780675193774,
+            "singlet_triplet_gap": 0.0069571376444225175
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07262263259107544,
+            "helium_rms_relative_error": 0.04246718082331059,
+            "max_relative_error": 0.1354780675193774,
+            "one_body_rms_relative_error": 0.11052247463396521
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.6,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.339331,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7675817893252406,
+            "helium_ion_ground_magnitude": 1.853212576355912,
+            "helium_ionization_energy": 0.9143692129693286,
+            "helium_triplet_magnitude": 2.040935801748557,
+            "hydrogen_ground_magnitude": 0.570952515964805,
+            "singlet_triplet_gap": 0.7266459875766835
+          },
+          "relative_errors": {
+            "helium_ground": 0.0468855063468302,
+            "helium_ion_ground": 0.07339371182204402,
+            "helium_ionization": 0.011778852275893703,
+            "helium_triplet": 0.06173766216650256,
+            "hydrogen_ground": 0.14190503192961001,
+            "singlet_triplet_gap": 0.0025381247965973186
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07266205806742743,
+            "helium_rms_relative_error": 0.03922681822938321,
+            "max_relative_error": 0.14190503192961001,
+            "one_body_rms_relative_error": 0.11296830312517066
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.605,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.388194,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7366579715250894,
+            "helium_ion_ground_magnitude": 1.8259077800696497,
+            "helium_ionization_energy": 0.9107501914554397,
+            "helium_triplet_magnitude": 2.0091256148619645,
+            "hydrogen_ground_magnitude": 0.5613316330206135,
+            "singlet_triplet_gap": 0.7275323566631249
+          },
+          "relative_errors": {
+            "helium_ground": 0.05753521471609946,
+            "helium_ion_ground": 0.08704610996517514,
+            "helium_ionization": 0.007774288931297502,
+            "helium_triplet": 0.07636149320007268,
+            "hydrogen_ground": 0.12266326604122701,
+            "singlet_triplet_gap": 0.001321412138439504
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07283184556516643,
+            "helium_rms_relative_error": 0.047967604366382845,
+            "max_relative_error": 0.12266326604122701,
+            "one_body_rms_relative_error": 0.10635624592841315
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.59,
+          "repulsion_softening_radius": 1.1
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.373462,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.761180286297189,
+            "helium_ion_ground_magnitude": 1.8349993375241758,
+            "helium_ionization_energy": 0.9261809487730133,
+            "helium_triplet_magnitude": 2.0204791164543465,
+            "hydrogen_ground_magnitude": 0.5645320669338025,
+            "singlet_triplet_gap": 0.7407011698428425
+          },
+          "relative_errors": {
+            "helium_ground": 0.04909008990809438,
+            "helium_ion_ground": 0.08250033123791212,
+            "helium_ionization": 0.024848916671466492,
+            "helium_triplet": 0.0711420429177374,
+            "hydrogen_ground": 0.12906413386760507,
+            "singlet_triplet_gap": 0.016755325795874354
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07283896862866476,
+            "helium_rms_relative_error": 0.04574176647213506,
+            "max_relative_error": 0.12906413386760507,
+            "one_body_rms_relative_error": 0.10831402334268703
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.595,
+          "repulsion_softening_radius": 1.15
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.340669,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7255228520999357,
+            "helium_ion_ground_magnitude": 1.825907780069639,
+            "helium_ionization_energy": 0.8996150720302967,
+            "helium_triplet_magnitude": 2.0085290772083515,
+            "hydrogen_ground_magnitude": 0.5613316330206144,
+            "singlet_triplet_gap": 0.7169937748915842
+          },
+          "relative_errors": {
+            "helium_ground": 0.0613699861955217,
+            "helium_ion_ground": 0.08704610996518047,
+            "helium_ionization": 0.004547077746545947,
+            "helium_triplet": 0.07663573446381311,
+            "hydrogen_ground": 0.12266326604122879,
+            "singlet_triplet_gap": 0.015787649777598056
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07363484105135669,
+            "helium_rms_relative_error": 0.049772574787677555,
+            "max_relative_error": 0.12266326604122879,
+            "one_body_rms_relative_error": 0.10635624592841636
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.59,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.33863,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7470279503938477,
+            "helium_ion_ground_magnitude": 1.8259077800696433,
+            "helium_ionization_energy": 0.9211201703242045,
+            "helium_triplet_magnitude": 2.0096762402899406,
+            "hydrogen_ground_magnitude": 0.5613316330206154,
+            "singlet_triplet_gap": 0.7373517101039071
+          },
+          "relative_errors": {
+            "helium_ground": 0.05396394639918345,
+            "helium_ion_ground": 0.08704610996517836,
+            "helium_ionization": 0.019249003050216595,
+            "helium_triplet": 0.07610835877963629,
+            "hydrogen_ground": 0.12266326604123079,
+            "singlet_triplet_gap": 0.012157545791255275
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07285398859038672,
+            "helium_rms_relative_error": 0.04801801699674171,
+            "max_relative_error": 0.12266326604123079,
+            "one_body_rms_relative_error": 0.10635624592841665
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.59,
+          "repulsion_softening_radius": 1.15
+        },
+        "spin_ground_sector": "singlet"
+      },
+      {
+        "elapsed_seconds": 0.333202,
+        "guardrails": {
+          "baseline_full_rms_relative_error": 0.07575632908126047,
+          "baseline_helium_rms_relative_error": 0.02854056920782056,
+          "eligible_for_balanced_selection": false,
+          "full_rms_slack": 0.08,
+          "helium_rms_slack": 0.08
+        },
+        "helium_like_bound": true,
+        "metrics": {
+          "model_observables": {
+            "helium_ground_magnitude": 2.7395234838792613,
+            "helium_ion_ground_magnitude": 1.834999337524171,
+            "helium_ionization_energy": 0.9045241463550902,
+            "helium_triplet_magnitude": 2.019314186355972,
+            "hydrogen_ground_magnitude": 0.5645320669337991,
+            "singlet_triplet_gap": 0.7202092975232892
+          },
+          "relative_errors": {
+            "helium_ground": 0.05654837437517879,
+            "helium_ion_ground": 0.08250033123791445,
+            "helium_ionization": 0.0008849703972746426,
+            "helium_triplet": 0.07167758648386868,
+            "hydrogen_ground": 0.12906413386759819,
+            "singlet_triplet_gap": 0.01137372430520156
+          },
+          "scores": {
+            "full_rms_relative_error": 0.07294906342917358,
+            "helium_rms_relative_error": 0.04600418411895443,
+            "max_relative_error": 0.12906413386759819,
+            "one_body_rms_relative_error": 0.10831402334268381
+          }
+        },
+        "parameters": {
+          "lattice_spacing": 1.0,
+          "max_orbitals": 16,
+          "nuclear_counterterm_radius": null,
+          "nuclear_counterterm_strength": 0.0,
+          "nuclear_profile": "hard_floor",
+          "nuclear_softening_radius": 0.75,
+          "reference_coupling": 1.595,
+          "repulsion_softening_radius": 1.05
+        },
+        "spin_ground_sector": "singlet"
+      }
+    ],
+    "top_candidates": []
+  },
+  "scan_configuration": {
+    "coarse_max_orbitals": 16,
+    "counterterm_radius_scales": [
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "counterterm_strengths": [],
+    "final_max_orbitals": 16,
+    "full_rms_slack": 0.08,
+    "helium_rms_slack": 0.08,
+    "lattice_spacing": 1.0,
+    "nuclear_profiles": [
+      "hard_floor"
+    ],
+    "nuclear_softening_radii": [
+      0.75
+    ],
+    "reference_couplings": [
+      1.59,
+      1.595,
+      1.6,
+      1.605
+    ],
+    "refine_max_orbitals": 16,
+    "repulsion_softening_radii": [
+      1.05,
+      1.1,
+      1.15
+    ],
+    "stage2_base_candidates": 6
+  },
+  "selected_final_candidate": {
+    "guardrails": {
+      "baseline_full_rms_relative_error": 0.07575632908126047,
+      "baseline_helium_rms_relative_error": 0.02854056920782056,
+      "eligible_for_balanced_selection": true,
+      "full_rms_slack": 0.08,
+      "helium_rms_slack": 0.08
+    },
+    "helium_like_bound": true,
+    "improvement_vs_baseline": {
+      "full_rms_relative_error_delta": 1.236690055916867e-10,
+      "helium_ion_ground_error_delta": -5.551115123125783e-16,
+      "helium_rms_relative_error_delta": 4.923987884097869e-10,
+      "hydrogen_ground_error_delta": -6.439293542825908e-15
+    },
+    "metrics": {
+      "model_observables": {
+        "helium_ground_magnitude": 2.8026132486868676,
+        "helium_ion_ground_magnitude": 1.8897579502201587,
+        "helium_ionization_energy": 0.9128552984667089,
+        "helium_triplet_magnitude": 2.083662257050437,
+        "hydrogen_ground_magnitude": 0.583871247497975,
+        "singlet_triplet_gap": 0.7189509916364307
+      },
+      "relative_errors": {
+        "helium_ground": 0.03482118659296696,
+        "helium_ion_ground": 0.055121024889920656,
+        "helium_ionization": 0.010103657336936633,
+        "helium_triplet": 0.04209538640038857,
+        "hydrogen_ground": 0.16774249499595006,
+        "singlet_triplet_gap": 0.013100992013196588
+      },
+      "scores": {
+        "full_rms_relative_error": 0.07575632920492947,
+        "helium_rms_relative_error": 0.02854056970021935,
+        "max_relative_error": 0.16774249499595006,
+        "one_body_rms_relative_error": 0.12485165600099501
+      }
+    },
+    "parameters": {
+      "lattice_spacing": 1.0,
+      "max_orbitals": 16,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "nuclear_softening_radius": 0.85,
+      "reference_coupling": 1.625,
+      "repulsion_softening_radius": 0.85
+    },
+    "spin_ground_sector": "singlet"
+  },
+  "selected_solution": {
+    "helium_ion_reference": {
+      "coupling": 3.25,
+      "dimension": 3,
+      "ground_energy": -1.8897579502201587,
+      "lattice_spacing": 1.0,
+      "n_bound_total": 21,
+      "n_selected_orbitals": 16,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "orbital_rows": [
+        {
+          "center_weight": 0.6114965134112214,
+          "decay_rate": 2.679383276535228,
+          "eigen_index": 0,
+          "energy": -1.8897579502201587,
+          "genuinely_localized": true,
+          "ipr": 0.04983968315758109,
+          "mean_radius": 1.2845865745123646,
+          "orbital_index": 0,
+          "physical_bound": true,
+          "radius_std": 0.6102581953235849
+        },
+        {
+          "center_weight": 0.14234035493082142,
+          "decay_rate": 1.5675118779865373,
+          "eigen_index": 1,
+          "energy": -0.7373804825144394,
+          "genuinely_localized": true,
+          "ipr": 0.011914378603540662,
+          "mean_radius": 2.547821857786032,
+          "orbital_index": 1,
+          "physical_bound": true,
+          "radius_std": 1.2523311107295743
+        },
+        {
+          "center_weight": 0.1423403549308216,
+          "decay_rate": 1.5675118779865407,
+          "eigen_index": 2,
+          "energy": -0.7373804825144343,
+          "genuinely_localized": true,
+          "ipr": 0.01174973144403417,
+          "mean_radius": 2.5478218577860305,
+          "orbital_index": 2,
+          "physical_bound": true,
+          "radius_std": 1.252331110729573
+        },
+        {
+          "center_weight": 0.14234035493082153,
+          "decay_rate": 1.567511877986539,
+          "eigen_index": 3,
+          "energy": -0.7373804825144322,
+          "genuinely_localized": true,
+          "ipr": 0.009468160378138274,
+          "mean_radius": 2.5478218577860314,
+          "orbital_index": 3,
+          "physical_bound": true,
+          "radius_std": 1.2523311107295743
+        },
+        {
+          "center_weight": 0.08030159855868282,
+          "decay_rate": 0.9869489394642644,
+          "eigen_index": 4,
+          "energy": -0.5720077969713114,
+          "genuinely_localized": true,
+          "ipr": 0.0019016425254700868,
+          "mean_radius": 4.030617114016824,
+          "orbital_index": 4,
+          "physical_bound": true,
+          "radius_std": 1.569080516294889
+        },
+        {
+          "center_weight": 0.08521639069081557,
+          "decay_rate": 0.6992803832785869,
+          "eigen_index": 5,
+          "energy": -0.28018604278852616,
+          "genuinely_localized": true,
+          "ipr": 0.003285814560660322,
+          "mean_radius": 5.20675004662669,
+          "orbital_index": 5,
+          "physical_bound": true,
+          "radius_std": 2.2084394656785498
+        },
+        {
+          "center_weight": 0.08521639069081563,
+          "decay_rate": 0.699280383278588,
+          "eigen_index": 6,
+          "energy": -0.2801860427885247,
+          "genuinely_localized": true,
+          "ipr": 0.0029317425234178566,
+          "mean_radius": 5.20675004662669,
+          "orbital_index": 6,
+          "physical_bound": true,
+          "radius_std": 2.20843946567855
+        },
+        {
+          "center_weight": 0.08521639069081588,
+          "decay_rate": 0.6992803832785872,
+          "eigen_index": 7,
+          "energy": -0.2801860427885244,
+          "genuinely_localized": true,
+          "ipr": 0.002843543753130606,
+          "mean_radius": 5.206750046626686,
+          "orbital_index": 7,
+          "physical_bound": true,
+          "radius_std": 2.208439465678552
+        },
+        {
+          "center_weight": 0.0024566443393806373,
+          "decay_rate": 0.731033054317548,
+          "eigen_index": 8,
+          "energy": -0.27764422998571126,
+          "genuinely_localized": true,
+          "ipr": 0.0013702006043276268,
+          "mean_radius": 5.150245973007142,
+          "orbital_index": 8,
+          "physical_bound": true,
+          "radius_std": 1.6794025288682013
+        },
+        {
+          "center_weight": 0.002456644339380638,
+          "decay_rate": 0.7310330543175488,
+          "eigen_index": 9,
+          "energy": -0.27764422998571026,
+          "genuinely_localized": true,
+          "ipr": 0.0013775465777292268,
+          "mean_radius": 5.150245973007142,
+          "orbital_index": 9,
+          "physical_bound": true,
+          "radius_std": 1.6794025288682002
+        },
+        {
+          "center_weight": 0.0024566443393806373,
+          "decay_rate": 0.7310330543175494,
+          "eigen_index": 10,
+          "energy": -0.27764422998571014,
+          "genuinely_localized": true,
+          "ipr": 0.0013777982333136782,
+          "mean_radius": 5.150245973007143,
+          "orbital_index": 10,
+          "physical_bound": true,
+          "radius_std": 1.6794025288682004
+        },
+        {
+          "center_weight": 2.4041905056088905e-29,
+          "decay_rate": 1.115281101394386,
+          "eigen_index": 11,
+          "energy": -0.2656226593707464,
+          "genuinely_localized": true,
+          "ipr": 0.0016721692704711319,
+          "mean_radius": 4.814184067617728,
+          "orbital_index": 11,
+          "physical_bound": true,
+          "radius_std": 1.5166128555002534
+        },
+        {
+          "center_weight": 2.800897004167839e-28,
+          "decay_rate": 1.1152811013943826,
+          "eigen_index": 12,
+          "energy": -0.26562265937074503,
+          "genuinely_localized": true,
+          "ipr": 0.0016721692704711288,
+          "mean_radius": 4.814184067617727,
+          "orbital_index": 12,
+          "physical_bound": true,
+          "radius_std": 1.5166128555002534
+        },
+        {
+          "center_weight": 0.0531339685355213,
+          "decay_rate": 0.43653101503508185,
+          "eigen_index": 13,
+          "energy": -0.14252003353316534,
+          "genuinely_localized": true,
+          "ipr": 0.0008431960781243882,
+          "mean_radius": 6.005244579228198,
+          "orbital_index": 13,
+          "physical_bound": true,
+          "radius_std": 2.4042741571740693
+        },
+        {
+          "center_weight": 3.403965684335358e-05,
+          "decay_rate": 0.1809113629977502,
+          "eigen_index": 14,
+          "energy": -0.0703325066365303,
+          "genuinely_localized": true,
+          "ipr": 0.0007750146481427473,
+          "mean_radius": 6.6890615272003675,
+          "orbital_index": 14,
+          "physical_bound": true,
+          "radius_std": 1.63131804198896
+        },
+        {
+          "center_weight": 7.703503110430184e-30,
+          "decay_rate": 0.5340330288507191,
+          "eigen_index": 15,
+          "energy": -0.04281790719087743,
+          "genuinely_localized": true,
+          "ipr": 0.0010302559974252324,
+          "mean_radius": 6.250328751547716,
+          "orbital_index": 15,
+          "physical_bound": true,
+          "radius_std": 1.4995408695835581
+        }
+      ],
+      "reference_coupling": 2.0,
+      "sizes": [
+        16,
+        16,
+        16
+      ],
+      "softening_radius": 0.85
+    },
+    "hydrogen_reference": {
+      "coupling": 1.625,
+      "dimension": 3,
+      "ground_energy": -0.583871247497975,
+      "lattice_spacing": 1.0,
+      "n_bound_total": 5,
+      "n_selected_orbitals": 5,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_profile": "hard_floor",
+      "orbital_rows": [
+        {
+          "center_weight": 0.2830772011131626,
+          "decay_rate": 1.6473889513110789,
+          "eigen_index": 0,
+          "energy": -0.583871247497975,
+          "genuinely_localized": true,
+          "ipr": 0.014269336326871388,
+          "mean_radius": 2.0503622653153046,
+          "orbital_index": 0,
+          "physical_bound": true,
+          "radius_std": 1.1264719614848513
+        },
+        {
+          "center_weight": 0.008769877794000177,
+          "decay_rate": 0.885709918713749,
+          "eigen_index": 1,
+          "energy": -0.14287644920013962,
+          "genuinely_localized": true,
+          "ipr": 0.0015754747917064468,
+          "mean_radius": 4.610971722675503,
+          "orbital_index": 1,
+          "physical_bound": true,
+          "radius_std": 1.7156715495044295
+        },
+        {
+          "center_weight": 0.008769877794000156,
+          "decay_rate": 0.8857099187137483,
+          "eigen_index": 2,
+          "energy": -0.14287644920013914,
+          "genuinely_localized": true,
+          "ipr": 0.001600155395055142,
+          "mean_radius": 4.610971722675503,
+          "orbital_index": 2,
+          "physical_bound": true,
+          "radius_std": 1.7156715495044297
+        },
+        {
+          "center_weight": 0.008769877794000208,
+          "decay_rate": 0.8857099187137465,
+          "eigen_index": 3,
+          "energy": -0.14287644920013903,
+          "genuinely_localized": true,
+          "ipr": 0.0015975363918121004,
+          "mean_radius": 4.610971722675501,
+          "orbital_index": 3,
+          "physical_bound": true,
+          "radius_std": 1.7156715495044312
+        },
+        {
+          "center_weight": 0.07884429751665242,
+          "decay_rate": 0.6330087499449726,
+          "eigen_index": 4,
+          "energy": -0.09690425535508723,
+          "genuinely_localized": true,
+          "ipr": 0.001245869373570233,
+          "mean_radius": 5.3768550382345435,
+          "orbital_index": 4,
+          "physical_bound": true,
+          "radius_std": 2.0558841460273496
+        }
+      ],
+      "reference_coupling": 2.0,
+      "sizes": [
+        16,
+        16,
+        16
+      ],
+      "softening_radius": 0.85
+    },
+    "model": {
+      "basis_sweep": [
+        16
+      ],
+      "custom_sizes": [
+        16,
+        16,
+        16
+      ],
+      "dimension": 3,
+      "electron_repulsion_coupling": 1.625,
+      "lattice_spacing": 1.0,
+      "max_orbitals": 16,
+      "n_eig": 40,
+      "nuclear_charge": 2.0,
+      "nuclear_counterterm_radius": null,
+      "nuclear_counterterm_strength": 0.0,
+      "nuclear_coupling": 3.25,
+      "nuclear_profile": "hard_floor",
+      "nuclear_softening_radius": 0.85,
+      "reference_coupling": 1.625,
+      "repulsion_softening_radius": 0.85
+    },
+    "two_electron": {
+      "antisymmetry_present": true,
+      "basis_sweep": [
+        {
+          "ionization_energy": 0.9128552984667089,
+          "singlet_ground_energy": -2.8026132486868676,
+          "singlet_triplet_gap": 0.7189509916364307,
+          "spatial_orbital_count": 16,
+          "triplet_ground_energy": -2.083662257050437
+        }
+      ],
+      "electron_repulsion_present": true,
+      "helium_like_bound": true,
+      "interaction_shift_from_double_occupancy": 0.9769026517534498,
+      "ionization_energy": 0.9128552984667089,
+      "noninteracting_double_occupancy_energy": -3.7795159004403174,
+      "singlet": {
+        "basis_size": 136,
+        "contact_probability": 0.030108235420287927,
+        "dominant_configurations": [
+          {
+            "amplitude": -0.9704876852215064,
+            "configuration": "00",
+            "orbitals": [
+              0,
+              0
+            ],
+            "weight": 0.9418463471665978
+          },
+          {
+            "amplitude": -0.20828941544359264,
+            "configuration": "04",
+            "orbitals": [
+              0,
+              4
+            ],
+            "weight": 0.04338448058583353
+          },
+          {
+            "amplitude": 0.08076270831631664,
+            "configuration": "013",
+            "orbitals": [
+              0,
+              13
+            ],
+            "weight": 0.006522615054586441
+          },
+          {
+            "amplitude": 0.04478535863634597,
+            "configuration": "22",
+            "orbitals": [
+              2,
+              2
+            ],
+            "weight": 0.002005728348186129
+          },
+          {
+            "amplitude": 0.044785341397802964,
+            "configuration": "33",
+            "orbitals": [
+              3,
+              3
+            ],
+            "weight": 0.002005726804117764
+          },
+          {
+            "amplitude": 0.04478531706426668,
+            "configuration": "11",
+            "orbitals": [
+              1,
+              1
+            ],
+            "weight": 0.0020057246245468964
+          }
+        ],
+        "ground_energy": -2.8026132486868676,
+        "interaction_energy_expectation": 0.8882004575114695,
+        "lowest_energies": [
+          -2.8026132486868676,
+          -2.0304141928846855,
+          -2.030412332605629,
+          -2.030409688699365,
+          -2.0166384459236264,
+          -1.8141026535490479,
+          -1.8141025079198243,
+          -1.8138746552915739
+        ],
+        "one_body_energy_expectation": -3.6908137061983384,
+        "orbital_occupancies": [
+          1.9335997899736157,
+          0.004619327835362359,
+          0.004619330703397476,
+          0.004619329531832474,
+          0.04369874919284589,
+          0.0007304875344666184,
+          0.0007304873191156117,
+          0.0007304874306229861,
+          1.7442903184071374e-06,
+          1.7450225831716155e-06,
+          1.744193293232443e-06,
+          2.9501811616089264e-06,
+          2.9507841447537787e-06,
+          0.006640874640368424,
+          7.659702221659303e-11,
+          1.2902756203434606e-09
+        ],
+        "sector": "singlet",
+        "spin_multiplicity": 1
+      },
+      "singlet_triplet_gap": 0.7189509916364307,
+      "spatial_orbital_count": 16,
+      "spin_ground_sector": "singlet",
+      "spin_sectors_present": [
+        "singlet",
+        "triplet"
+      ],
+      "triplet": {
+        "basis_size": 120,
+        "contact_probability": -1.6755894932447274e-18,
+        "dominant_configurations": [
+          {
+            "amplitude": -0.8928654221520422,
+            "configuration": "01",
+            "orbitals": [
+              0,
+              1
+            ],
+            "weight": 0.7972086620747446
+          },
+          {
+            "amplitude": -0.41324423737652993,
+            "configuration": "05",
+            "orbitals": [
+              0,
+              5
+            ],
+            "weight": 0.17077079972490983
+          },
+          {
+            "amplitude": -0.15265392786074017,
+            "configuration": "07",
+            "orbitals": [
+              0,
+              7
+            ],
+            "weight": 0.023303221691312062
+          },
+          {
+            "amplitude": 0.059517315771937696,
+            "configuration": "14",
+            "orbitals": [
+              1,
+              4
+            ],
+            "weight": 0.0035423108766965434
+          },
+          {
+            "amplitude": 0.04649932335700471,
+            "configuration": "03",
+            "orbitals": [
+              0,
+              3
+            ],
+            "weight": 0.002162187072659284
+          },
+          {
+            "amplitude": 0.03088371490680876,
+            "configuration": "06",
+            "orbitals": [
+              0,
+              6
+            ],
+            "weight": 0.0009538038464450416
+          }
+        ],
+        "ground_energy": -2.083662257050437,
+        "interaction_energy_expectation": 0.44613362391578587,
+        "lowest_energies": [
+          -2.083662257050437,
+          -2.0836617110463047,
+          -2.08366099957456,
+          -2.0641736554411194,
+          -1.8155482884997394,
+          -1.8155480746199408,
+          -1.815332929273566,
+          -1.78271821272461
+        ],
+        "one_body_energy_expectation": -2.529795880966222,
+        "orbital_occupancies": [
+          0.9944046075529837,
+          0.8015756002787728,
+          0.000362756664791878,
+          0.002535467219231848,
+          0.003845688685377769,
+          0.17113374703996417,
+          0.0010002541420908232,
+          0.023391067500081613,
+          0.0002911665983116155,
+          9.818202359734198e-05,
+          0.00042631321831378545,
+          0.0002151708951700366,
+          0.00031911265563268836,
+          0.00039975837061268963,
+          3.525264848982364e-07,
+          7.546285816197306e-07
+        ],
+        "sector": "triplet",
+        "spin_multiplicity": 3
+      },
+      "triplet_ionization_energy": 0.19390430683027815
+    }
+  },
+  "selected_strategy": "balanced_guardrailed",
+  "started_at": "2026-04-19T15:31:49",
+  "total_elapsed_seconds": 4.926984
+}

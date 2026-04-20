@@ -1,0 +1,560 @@
+{
+  "completed_at": "2026-04-19T14:37:36",
+  "solution": {
+    "helium_ion_reference": {
+      "coupling": 4.0,
+      "dimension": 3,
+      "ground_energy": -2.2002177881425595,
+      "n_bound_total": 29,
+      "n_selected_orbitals": 14,
+      "orbital_rows": [
+        {
+          "center_weight": 0.5873410326807929,
+          "decay_rate": 2.814563330769491,
+          "eigen_index": 0,
+          "energy": -2.2002177881425595,
+          "genuinely_localized": true,
+          "ipr": 0.04666930220494543,
+          "mean_radius": 1.3061521869150952,
+          "orbital_index": 0,
+          "physical_bound": true,
+          "radius_std": 0.609566789392708
+        },
+        {
+          "center_weight": 0.16318627784685774,
+          "decay_rate": 1.8134347268069642,
+          "eigen_index": 1,
+          "energy": -1.0436180391976941,
+          "genuinely_localized": true,
+          "ipr": 0.01656493164129158,
+          "mean_radius": 2.286921440231586,
+          "orbital_index": 1,
+          "physical_bound": true,
+          "radius_std": 1.076112349344962
+        },
+        {
+          "center_weight": 0.16318627784685774,
+          "decay_rate": 1.8134347268069433,
+          "eigen_index": 2,
+          "energy": -1.0436180391976928,
+          "genuinely_localized": true,
+          "ipr": 0.016744457601022156,
+          "mean_radius": 2.286921440231586,
+          "orbital_index": 2,
+          "physical_bound": true,
+          "radius_std": 1.0761123493449622
+        },
+        {
+          "center_weight": 0.16318627784685774,
+          "decay_rate": 1.8134347268068889,
+          "eigen_index": 3,
+          "energy": -1.0436180391976855,
+          "genuinely_localized": true,
+          "ipr": 0.01570590925092713,
+          "mean_radius": 2.286921440231586,
+          "orbital_index": 3,
+          "physical_bound": true,
+          "radius_std": 1.0761123493449622
+        },
+        {
+          "center_weight": 0.10344720116246012,
+          "decay_rate": 1.1548252574665627,
+          "eigen_index": 4,
+          "energy": -0.7735880260370337,
+          "genuinely_localized": true,
+          "ipr": 0.0026461013335090638,
+          "mean_radius": 3.7034687773761803,
+          "orbital_index": 4,
+          "physical_bound": true,
+          "radius_std": 1.500501382744031
+        },
+        {
+          "center_weight": 0.005672435920615574,
+          "decay_rate": 0.9153274499438976,
+          "eigen_index": 5,
+          "energy": -0.45373207996866394,
+          "genuinely_localized": true,
+          "ipr": 0.002022894364064191,
+          "mean_radius": 4.5432359261515565,
+          "orbital_index": 5,
+          "physical_bound": true,
+          "radius_std": 1.6171948727089676
+        },
+        {
+          "center_weight": 0.005672435920615539,
+          "decay_rate": 0.9153274499438954,
+          "eigen_index": 6,
+          "energy": -0.4537320799686618,
+          "genuinely_localized": true,
+          "ipr": 0.0019955814366264214,
+          "mean_radius": 4.543235926151558,
+          "orbital_index": 6,
+          "physical_bound": true,
+          "radius_std": 1.6171948727089676
+        },
+        {
+          "center_weight": 0.0056724359206155464,
+          "decay_rate": 0.9153274499439001,
+          "eigen_index": 7,
+          "energy": -0.4537320799686614,
+          "genuinely_localized": true,
+          "ipr": 0.002027176852222253,
+          "mean_radius": 4.5432359261515565,
+          "orbital_index": 7,
+          "physical_bound": true,
+          "radius_std": 1.6171948727089671
+        },
+        {
+          "center_weight": 8.080658934404496e-28,
+          "decay_rate": 1.2929794964324761,
+          "eigen_index": 8,
+          "energy": -0.4525393995612008,
+          "genuinely_localized": true,
+          "ipr": 0.002360791908986048,
+          "mean_radius": 4.30497408257251,
+          "orbital_index": 8,
+          "physical_bound": true,
+          "radius_std": 1.484620989116786
+        },
+        {
+          "center_weight": 1.456201137305281e-26,
+          "decay_rate": 1.2929794964324703,
+          "eigen_index": 9,
+          "energy": -0.4525393995611963,
+          "genuinely_localized": true,
+          "ipr": 0.0023607919089860515,
+          "mean_radius": 4.304974082572505,
+          "orbital_index": 9,
+          "physical_bound": true,
+          "radius_std": 1.4846209891167825
+        },
+        {
+          "center_weight": 0.0855527227108051,
+          "decay_rate": 0.8050642798347682,
+          "eigen_index": 10,
+          "energy": -0.451113419285319,
+          "genuinely_localized": true,
+          "ipr": 0.0031912712021754594,
+          "mean_radius": 4.928975636556952,
+          "orbital_index": 10,
+          "physical_bound": true,
+          "radius_std": 2.0296847754133536
+        },
+        {
+          "center_weight": 0.0855527227108051,
+          "decay_rate": 0.8050642798347675,
+          "eigen_index": 11,
+          "energy": -0.4511134192853188,
+          "genuinely_localized": true,
+          "ipr": 0.0031316436214231715,
+          "mean_radius": 4.928975636556952,
+          "orbital_index": 11,
+          "physical_bound": true,
+          "radius_std": 2.0296847754133536
+        },
+        {
+          "center_weight": 0.08555272271080536,
+          "decay_rate": 0.8050642798347725,
+          "eigen_index": 12,
+          "energy": -0.4511134192853181,
+          "genuinely_localized": true,
+          "ipr": 0.0028108223475386473,
+          "mean_radius": 4.928975636556951,
+          "orbital_index": 12,
+          "physical_bound": true,
+          "radius_std": 2.029684775413355
+        },
+        {
+          "center_weight": 0.0583519924828457,
+          "decay_rate": 0.51923034485226,
+          "eigen_index": 13,
+          "energy": -0.29264490371731344,
+          "genuinely_localized": true,
+          "ipr": 0.0009228892712328026,
+          "mean_radius": 5.818467244139004,
+          "orbital_index": 13,
+          "physical_bound": true,
+          "radius_std": 2.31059333960499
+        }
+      ],
+      "reference_coupling": 2.0,
+      "sizes": [
+        16,
+        16,
+        16
+      ]
+    },
+    "hydrogen_reference": {
+      "coupling": 2.0,
+      "dimension": 3,
+      "ground_energy": -0.7410018648366515,
+      "n_bound_total": 8,
+      "n_selected_orbitals": 8,
+      "orbital_rows": [
+        {
+          "center_weight": 0.28976667330280126,
+          "decay_rate": 1.7737043988358454,
+          "eigen_index": 0,
+          "energy": -0.7410018648366515,
+          "genuinely_localized": true,
+          "ipr": 0.015183771429573783,
+          "mean_radius": 1.9705415742002574,
+          "orbital_index": 0,
+          "physical_bound": true,
+          "radius_std": 1.0440638213440152
+        },
+        {
+          "center_weight": 0.013349774606205067,
+          "decay_rate": 0.9981046066818199,
+          "eigen_index": 1,
+          "energy": -0.2418071390385485,
+          "genuinely_localized": true,
+          "ipr": 0.002137108543218467,
+          "mean_radius": 4.219232531604538,
+          "orbital_index": 1,
+          "physical_bound": true,
+          "radius_std": 1.660344154723935
+        },
+        {
+          "center_weight": 0.013349774606205025,
+          "decay_rate": 0.99810460668182,
+          "eigen_index": 2,
+          "energy": -0.24180713903854828,
+          "genuinely_localized": true,
+          "ipr": 0.002161584284048153,
+          "mean_radius": 4.219232531604538,
+          "orbital_index": 2,
+          "physical_bound": true,
+          "radius_std": 1.6603441547239348
+        },
+        {
+          "center_weight": 0.013349774606205065,
+          "decay_rate": 0.9981046066818193,
+          "eigen_index": 3,
+          "energy": -0.24180713903854792,
+          "genuinely_localized": true,
+          "ipr": 0.0021470700819396235,
+          "mean_radius": 4.219232531604538,
+          "orbital_index": 3,
+          "physical_bound": true,
+          "radius_std": 1.660344154723935
+        },
+        {
+          "center_weight": 0.07750751556589687,
+          "decay_rate": 0.6917564712324028,
+          "eigen_index": 4,
+          "energy": -0.1753830359938926,
+          "genuinely_localized": true,
+          "ipr": 0.0012512217118523104,
+          "mean_radius": 5.227311757916918,
+          "orbital_index": 4,
+          "physical_bound": true,
+          "radius_std": 1.9849964425805064
+        },
+        {
+          "center_weight": 0.00024706232420043455,
+          "decay_rate": 0.46123982398263397,
+          "eigen_index": 5,
+          "energy": -0.028087452047316618,
+          "genuinely_localized": true,
+          "ipr": 0.0009374719869169969,
+          "mean_radius": 6.016483573384882,
+          "orbital_index": 5,
+          "physical_bound": true,
+          "radius_std": 1.6640072521997264
+        },
+        {
+          "center_weight": 0.0002470623242004356,
+          "decay_rate": 0.46123982398263236,
+          "eigen_index": 6,
+          "energy": -0.028087452047315303,
+          "genuinely_localized": true,
+          "ipr": 0.0009568435559074585,
+          "mean_radius": 6.016483573384885,
+          "orbital_index": 6,
+          "physical_bound": true,
+          "radius_std": 1.6640072521997267
+        },
+        {
+          "center_weight": 0.00024706232420043726,
+          "decay_rate": 0.4612398239826335,
+          "eigen_index": 7,
+          "energy": -0.02808745204731453,
+          "genuinely_localized": true,
+          "ipr": 0.0009435971089420334,
+          "mean_radius": 6.016483573384881,
+          "orbital_index": 7,
+          "physical_bound": true,
+          "radius_std": 1.6640072521997267
+        }
+      ],
+      "reference_coupling": 2.0,
+      "sizes": [
+        16,
+        16,
+        16
+      ]
+    },
+    "model": {
+      "basis_sweep": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "dimension": 3,
+      "electron_repulsion_coupling": 2.0,
+      "max_orbitals": 14,
+      "n_eig": 40,
+      "nuclear_charge": 2.0,
+      "nuclear_coupling": 4.0,
+      "reference_coupling": 2.0
+    },
+    "two_electron": {
+      "antisymmetry_present": true,
+      "basis_sweep": [
+        {
+          "ionization_energy": 0.9684432547006394,
+          "singlet_ground_energy": -3.168661042843199,
+          "singlet_triplet_gap": 0.7371630375673854,
+          "spatial_orbital_count": 4,
+          "triplet_ground_energy": -2.4314980052758135
+        },
+        {
+          "ionization_energy": 1.0356721292012612,
+          "singlet_ground_energy": -3.2358899173438207,
+          "singlet_triplet_gap": 0.7902176131673588,
+          "spatial_orbital_count": 6,
+          "triplet_ground_energy": -2.445672304176462
+        },
+        {
+          "ionization_energy": 1.035679913979492,
+          "singlet_ground_energy": -3.2358977021220516,
+          "singlet_triplet_gap": 0.7891267243711053,
+          "spatial_orbital_count": 8,
+          "triplet_ground_energy": -2.4467709777509463
+        },
+        {
+          "ionization_energy": 1.0356946731365788,
+          "singlet_ground_energy": -3.2359124612791383,
+          "singlet_triplet_gap": 0.7877013607701158,
+          "spatial_orbital_count": 10,
+          "triplet_ground_energy": -2.4482111005090226
+        },
+        {
+          "ionization_energy": 1.0384226073044225,
+          "singlet_ground_energy": -3.238640395446982,
+          "singlet_triplet_gap": 0.7125754105810245,
+          "spatial_orbital_count": 12,
+          "triplet_ground_energy": -2.5260649848659575
+        },
+        {
+          "ionization_energy": 1.046808173612514,
+          "singlet_ground_energy": -3.2470259617550736,
+          "singlet_triplet_gap": 0.7198266819961203,
+          "spatial_orbital_count": 14,
+          "triplet_ground_energy": -2.5271992797589533
+        }
+      ],
+      "electron_repulsion_present": true,
+      "helium_like_bound": true,
+      "interaction_shift_from_double_occupancy": 1.1534096145300454,
+      "ionization_energy": 1.046808173612514,
+      "noninteracting_double_occupancy_energy": -4.400435576285119,
+      "singlet": {
+        "basis_size": 105,
+        "contact_probability": 0.023987692497849062,
+        "dominant_configurations": [
+          {
+            "amplitude": -0.9624419412301858,
+            "configuration": "00",
+            "orbitals": [
+              0,
+              0
+            ],
+            "weight": 0.9262944902389284
+          },
+          {
+            "amplitude": 0.2344604938448019,
+            "configuration": "04",
+            "orbitals": [
+              0,
+              4
+            ],
+            "weight": 0.054971723173948384
+          },
+          {
+            "amplitude": 0.07590067778938182,
+            "configuration": "013",
+            "orbitals": [
+              0,
+              13
+            ],
+            "weight": 0.005760912888887559
+          },
+          {
+            "amplitude": 0.06014446105113563,
+            "configuration": "22",
+            "orbitals": [
+              2,
+              2
+            ],
+            "weight": 0.0036173561951315706
+          },
+          {
+            "amplitude": 0.06014446105113554,
+            "configuration": "11",
+            "orbitals": [
+              1,
+              1
+            ],
+            "weight": 0.0036173561951315597
+          },
+          {
+            "amplitude": 0.060144461051135197,
+            "configuration": "33",
+            "orbitals": [
+              3,
+              3
+            ],
+            "weight": 0.0036173561951315185
+          }
+        ],
+        "ground_energy": -3.2470259617550736,
+        "interaction_energy_expectation": 1.0326098872095215,
+        "lowest_energies": [
+          -3.2470259617550736,
+          -2.438609714204835,
+          -2.4386097142048313,
+          -2.4386097142048286,
+          -2.399183912285999,
+          -2.1592717927233576,
+          -2.159271792723357,
+          -2.159271792723356
+        ],
+        "one_body_energy_expectation": -4.279635848964595,
+        "orbital_occupancies": [
+          1.9133216165406928,
+          0.00781382163853917,
+          0.007813821638539189,
+          0.007813821638539085,
+          0.055360087204263546,
+          5.886856698520307e-06,
+          5.886856698520236e-06,
+          5.886856698520305e-06,
+          9.710622387953641e-06,
+          9.710622387953397e-06,
+          0.0006535321118199752,
+          0.0006535321118199761,
+          0.0006535321118199754,
+          0.005879153189095554
+        ],
+        "sector": "singlet",
+        "spin_multiplicity": 1
+      },
+      "singlet_triplet_gap": 0.7198266819961203,
+      "spatial_orbital_count": 14,
+      "spin_ground_sector": "singlet",
+      "spin_sectors_present": [
+        "singlet",
+        "triplet"
+      ],
+      "triplet": {
+        "basis_size": 91,
+        "contact_probability": 6.024615166443732e-20,
+        "dominant_configurations": [
+          {
+            "amplitude": -0.9050278366126463,
+            "configuration": "01",
+            "orbitals": [
+              0,
+              1
+            ],
+            "weight": 0.8190753850437668
+          },
+          {
+            "amplitude": -0.3275016768899434,
+            "configuration": "012",
+            "orbitals": [
+              0,
+              12
+            ],
+            "weight": 0.1072573483657249
+          },
+          {
+            "amplitude": -0.19139898083537085,
+            "configuration": "011",
+            "orbitals": [
+              0,
+              11
+            ],
+            "weight": 0.03663356986481866
+          },
+          {
+            "amplitude": 0.16250250520174422,
+            "configuration": "010",
+            "orbitals": [
+              0,
+              10
+            ],
+            "weight": 0.026407064196842907
+          },
+          {
+            "amplitude": -0.08315531523137279,
+            "configuration": "14",
+            "orbitals": [
+              1,
+              4
+            ],
+            "weight": 0.006914806451228979
+          },
+          {
+            "amplitude": -0.023826259898982908,
+            "configuration": "113",
+            "orbitals": [
+              1,
+              13
+            ],
+            "weight": 0.000567690660773881
+          }
+        ],
+        "ground_energy": -2.5271992797589533,
+        "interaction_energy_expectation": 0.5990442328978848,
+        "lowest_energies": [
+          -2.5271992797589533,
+          -2.527199279758947,
+          -2.527199279758943,
+          -2.4573926957589354,
+          -2.1594141710996095,
+          -2.1594141710996033,
+          -2.1594141710996024,
+          -2.1368135287476386
+        ],
+        "one_body_energy_expectation": -3.1262435126568358,
+        "orbital_occupancies": [
+          0.9893733674711532,
+          0.8275873231789207,
+          0.0007649267870017558,
+          0.0007679747322728288,
+          0.007242341240727072,
+          0.0007811205589266166,
+          0.0006064036339604151,
+          0.00027222393531480904,
+          0.0005949191366696919,
+          0.000501424723473767,
+          0.026528500628667635,
+          0.03677918257544914,
+          0.10757209209768717,
+          0.0006281992997735276
+        ],
+        "sector": "triplet",
+        "spin_multiplicity": 3
+      },
+      "triplet_ionization_energy": 0.3269814916163938
+    }
+  },
+  "started_at": "2026-04-19T14:37:36",
+  "total_elapsed_seconds": 0.510052
+}

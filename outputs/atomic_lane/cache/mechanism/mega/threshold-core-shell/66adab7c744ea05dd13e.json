@@ -1,0 +1,33 @@
+{
+  "cache_key": "66adab7c744ea05dd13e",
+  "payload": {
+    "rows": [
+      {
+        "core_boundary_deficit_mean": 0.18843797989669134,
+        "core_deep_fraction": 0.05392293731676672,
+        "core_low_degree_fraction": 0.1647005444646098,
+        "core_mean_neighbor_degree": 0.8431327822208037,
+        "core_pocket_fraction": 0.11629205640094932,
+        "deep_in_shell_fraction": 0.04079254079254079,
+        "ensemble_name": "mega",
+        "ge6_only_fraction": 0.022156374166610548,
+        "ge7_core_fraction": 0.9647787729813455,
+        "graph_count": 455,
+        "other_boundary_deficit_mean": 0.7348582474226805,
+        "other_deep_fraction": 0.2603092783505155,
+        "other_fraction": 0.01306485285204391,
+        "other_low_degree_fraction": 0.4252577319587629,
+        "other_mean_neighbor_degree": 0.4895311732940597,
+        "other_pocket_fraction": 0.520618556701031,
+        "shell_boundary_deficit_mean": 0.5854863221884499,
+        "shell_deep_fraction": 0.10638297872340426,
+        "shell_deep_implies_fraction": 0.10638297872340426,
+        "shell_low_degree_fraction": 0.4027355623100304,
+        "shell_mean_neighbor_degree": 0.6140052829642497,
+        "shell_pocket_fraction": 0.2978723404255319,
+        "total_nodes": 29698
+      }
+    ]
+  },
+  "stage_name": "threshold-core-shell"
+}

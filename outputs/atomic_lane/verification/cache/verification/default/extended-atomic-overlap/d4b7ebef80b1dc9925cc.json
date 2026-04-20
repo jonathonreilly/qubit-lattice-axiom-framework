@@ -1,0 +1,38 @@
+{
+  "cache_key": "d4b7ebef80b1dc9925cc",
+  "payload": {
+    "rows": [
+      {
+        "ensemble_name": "default",
+        "jaccard": 0.2430939226519337,
+        "left_implies_right": 0.9777777777777777,
+        "left_label": "deep-pocket",
+        "left_support_fraction": 0.24725274725274726,
+        "right_implies_left": 0.24444444444444444,
+        "right_label": "low-degree",
+        "right_support_fraction": 0.989010989010989
+      },
+      {
+        "ensemble_name": "default",
+        "jaccard": 0.34615384615384615,
+        "left_implies_right": 1.0,
+        "left_label": "deep-pocket",
+        "left_support_fraction": 0.24725274725274726,
+        "right_implies_left": 0.34615384615384615,
+        "right_label": "pocket",
+        "right_support_fraction": 0.7142857142857143
+      },
+      {
+        "ensemble_name": "default",
+        "jaccard": 0.712707182320442,
+        "left_implies_right": 0.9923076923076923,
+        "left_label": "pocket",
+        "left_support_fraction": 0.7142857142857143,
+        "right_implies_left": 0.7166666666666667,
+        "right_label": "low-degree",
+        "right_support_fraction": 0.989010989010989
+      }
+    ]
+  },
+  "stage_name": "extended-atomic-overlap"
+}

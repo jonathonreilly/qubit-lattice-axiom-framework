@@ -1,0 +1,8 @@
+[1/3] virt=48 full=0.043192 accepted=YES
+[2/3] virt=56 full=0.043203 accepted=YES
+[3/3] virt=64 full=0.043204 accepted=YES
+
+Atomic Correlated Basis Robustness
+==================================
+- Best basis row: virt=48 full=0.043192.
+- Wrote basis robustness output to outputs/atomic_lane/autoresearch/loop_0004_tmp/correlated_basis_robustness.json.

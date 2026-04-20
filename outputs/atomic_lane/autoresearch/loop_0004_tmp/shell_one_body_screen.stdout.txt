@@ -1,0 +1,14 @@
+[1/8] stencil=five_point profile=hard_floor g=1.5500 full=0.042827 reject
+[2/8] stencil=five_point profile=hard_floor g=1.5500 full=0.043388 ACCEPT
+[3/8] stencil=five_point profile=hard_floor g=1.5500 full=0.042815 reject
+[4/8] stencil=five_point profile=hard_floor g=1.5500 full=0.043203 ACCEPT
+[5/8] stencil=five_point profile=hard_floor g=1.5500 full=0.043781 ACCEPT
+[6/8] stencil=five_point profile=hard_floor g=1.5500 full=0.043954 ACCEPT
+[7/8] stencil=five_point profile=hard_floor g=1.5500 full=0.043123 reject
+[8/8] stencil=five_point profile=hard_floor g=1.5500 full=0.043616 reject
+
+Atomic Shell One-Body Screen
+============================
+- Accepted rows: 4.
+- Best row: five_point hard_floor g=1.5500 full=0.043203.
+- Wrote screen to outputs/atomic_lane/autoresearch/loop_0004_tmp/shell_one_body_screen.json.

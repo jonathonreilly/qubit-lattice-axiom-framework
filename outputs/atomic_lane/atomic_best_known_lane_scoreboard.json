@@ -3,30 +3,30 @@
     "entry_type": "correlated_candidate",
     "label": "shell_radial_candidate",
     "model_observables": {
-      "helium_ground_magnitude": 2.8571115349530394,
-      "helium_ion_ground_magnitude": 1.9484132488943071,
-      "helium_ionization_energy": 0.9086982860587323,
-      "helium_triplet_magnitude": 2.131907748235373,
-      "hydrogen_ground_magnitude": 0.5122277099231538,
-      "singlet_triplet_gap": 0.7252037867176662
+      "helium_ground_magnitude": 2.865719378823219,
+      "helium_ion_ground_magnitude": 1.956832290597341,
+      "helium_ionization_energy": 0.9088870882258779,
+      "helium_triplet_magnitude": 2.137594176230513,
+      "hydrogen_ground_magnitude": 0.5124778405068048,
+      "singlet_triplet_gap": 0.7281252025927061
     },
     "relative_errors": {
-      "helium_ground": 0.016052777753200798,
-      "helium_ion_ground": 0.025793375552846443,
-      "helium_ionization": 0.00550378981801547,
-      "helium_ionization_energy": 0.00550378981801547,
-      "helium_triplet": 0.01991589045038289,
-      "hydrogen_ground": 0.024455419846307613,
-      "singlet_triplet_gap": 0.0045178238492995515
+      "helium_ground": 0.01308836283205328,
+      "helium_ion_ground": 0.021583854701329508,
+      "helium_ionization": 0.0057127054696715085,
+      "helium_ionization_energy": 0.0057127054696715085,
+      "helium_triplet": 0.017301716491520125,
+      "hydrogen_ground": 0.024955681013609565,
+      "singlet_triplet_gap": 0.0005076166689305106
     },
     "scores": {
-      "full_rms_relative_error": 0.018112622592126437,
-      "helium_rms_relative_error": 0.013276264541650085,
-      "max_relative_error": 0.025793375552846443,
-      "one_body_rms_relative_error": 0.02513330243192638
+      "full_rms_relative_error": 0.01629005889217583,
+      "helium_rms_relative_error": 0.011219929964600982,
+      "max_relative_error": 0.024955681013609565,
+      "one_body_rms_relative_error": 0.023330760795794218
     },
     "source_json": "outputs/atomic_lane/autoresearch_current_readout.json",
-    "spatial_orbital_count": 63
+    "spatial_orbital_count": 39
   },
   "best_one_body_entry": {
     "entry_type": "one_body_benchmark",
@@ -46,7 +46,7 @@
     "source_json": "/Users/jonBridger/CI3Z2 Main-atomic-autoresearch-2026-04-19/outputs/atomic_lane/atomic_multi_family_coupling_calibration.json",
     "spatial_orbital_count": null
   },
-  "completed_at": "2026-04-24T16:47:21",
+  "completed_at": "2026-04-24T17:06:29",
   "entries": [
     {
       "entry_type": "helium_readout",
@@ -273,32 +273,32 @@
       "entry_type": "correlated_candidate",
       "label": "shell_radial_candidate",
       "model_observables": {
-        "helium_ground_magnitude": 2.8571115349530394,
-        "helium_ion_ground_magnitude": 1.9484132488943071,
-        "helium_ionization_energy": 0.9086982860587323,
-        "helium_triplet_magnitude": 2.131907748235373,
-        "hydrogen_ground_magnitude": 0.5122277099231538,
-        "singlet_triplet_gap": 0.7252037867176662
+        "helium_ground_magnitude": 2.865719378823219,
+        "helium_ion_ground_magnitude": 1.956832290597341,
+        "helium_ionization_energy": 0.9088870882258779,
+        "helium_triplet_magnitude": 2.137594176230513,
+        "hydrogen_ground_magnitude": 0.5124778405068048,
+        "singlet_triplet_gap": 0.7281252025927061
       },
       "relative_errors": {
-        "helium_ground": 0.016052777753200798,
-        "helium_ion_ground": 0.025793375552846443,
-        "helium_ionization": 0.00550378981801547,
-        "helium_ionization_energy": 0.00550378981801547,
-        "helium_triplet": 0.01991589045038289,
-        "hydrogen_ground": 0.024455419846307613,
-        "singlet_triplet_gap": 0.0045178238492995515
+        "helium_ground": 0.01308836283205328,
+        "helium_ion_ground": 0.021583854701329508,
+        "helium_ionization": 0.0057127054696715085,
+        "helium_ionization_energy": 0.0057127054696715085,
+        "helium_triplet": 0.017301716491520125,
+        "hydrogen_ground": 0.024955681013609565,
+        "singlet_triplet_gap": 0.0005076166689305106
       },
       "scores": {
-        "full_rms_relative_error": 0.018112622592126437,
-        "helium_rms_relative_error": 0.013276264541650085,
-        "max_relative_error": 0.025793375552846443,
-        "one_body_rms_relative_error": 0.02513330243192638
+        "full_rms_relative_error": 0.01629005889217583,
+        "helium_rms_relative_error": 0.011219929964600982,
+        "max_relative_error": 0.024955681013609565,
+        "one_body_rms_relative_error": 0.023330760795794218
       },
       "source_json": "outputs/atomic_lane/autoresearch_current_readout.json",
-      "spatial_orbital_count": 63
+      "spatial_orbital_count": 39
     }
   ],
-  "started_at": "2026-04-24T16:47:21",
-  "total_elapsed_seconds": 0.013997
+  "started_at": "2026-04-24T17:06:29",
+  "total_elapsed_seconds": 0.013834
 }

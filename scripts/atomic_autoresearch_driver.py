@@ -11,6 +11,7 @@ from pathlib import Path
 import shutil
 import signal
 import subprocess
+import re
 
 
 RESULTS_HEADER = (
@@ -183,6 +184,63 @@ def append_result(
         handle.write(row + "\n")
 
 
+def logged_loop_indices(run_repo: Path) -> set[int]:
+    results = run_repo / "outputs" / "atomic_lane" / "autoresearch" / "results.tsv"
+    if not results.exists():
+        return set()
+    indices: set[int] = set()
+    for line in results.read_text().splitlines()[1:]:
+        if not line.strip():
+            continue
+        first_field = line.split("\t", 1)[0]
+        try:
+            indices.add(int(first_field))
+        except ValueError:
+            continue
+    return indices
+
+
+def commit_loop_entries(args: argparse.Namespace) -> list[tuple[int, str, str]]:
+    result = git(
+        args,
+        "log",
+        "--format=%H%x09%s",
+        "--grep=loop [0-9]",
+        check=True,
+    )
+    entries: list[tuple[int, str, str]] = []
+    pattern = re.compile(
+        r"^(?:atomic autoresearch\s+)?loop\s+0*(\d+)(?::\s+keep\b|:\s+full RMS\b)"
+    )
+    for line in result.stdout.splitlines():
+        if not line.strip():
+            continue
+        commit_hash, subject = line.split("\t", 1)
+        match = pattern.match(subject)
+        if match:
+            entries.append((int(match.group(1)), commit_hash, subject))
+    return sorted(entries)
+
+
+def reconcile_committed_results(args: argparse.Namespace) -> None:
+    logged = logged_loop_indices(args.run_repo)
+    current_full, current_one_body, current_max, current_source = current_scores(args.run_repo)
+    for loop_index, commit_hash, _subject in commit_loop_entries(args):
+        if loop_index in logged:
+            continue
+        append_result(
+            args.run_repo,
+            loop_index=loop_index,
+            status="kept",
+            full_rms=current_full,
+            one_body_rms=current_one_body,
+            max_relative_error=current_max,
+            source_json=current_source,
+            commit=commit_hash,
+        )
+        logged.add(loop_index)
+
+
 def write_status(run_repo: Path, payload: dict) -> None:
     status_path = run_repo / "outputs" / "atomic_lane" / "autoresearch" / "status.json"
     status_path.write_text(json.dumps(payload, indent=2) + "\n")
@@ -216,6 +274,8 @@ def launch_loop(args: argparse.Namespace, loop_index: int) -> tuple[str, str]:
         f"Operate only inside the current run repo at `{args.run_repo}`. "
         f"Do not inspect or modify the source repo at `{args.source_repo}`. "
         "Ignore any absolute paths that point back to the source repo and stay on relative paths under the run repo. "
+        "Do not inspect AUTOPILOT files, broad docs, broad scripts, old non-atomic lanes, or repo-wide file lists. "
+        "Read only `ATOMIC_AUTORESEARCH_PROGRAM.md`, the atomic alias JSON files, and the specific atomic scripts needed for this one loop. "
         "Do not edit `outputs/atomic_lane/autoresearch/results.tsv`; the Python driver logs loop outcomes. "
         "Stop after one loop."
     )
@@ -275,6 +335,7 @@ def main() -> None:
     ensure_branch_and_identity(args)
     copy_alias_files(args)
     seed_baseline_commit(args)
+    reconcile_committed_results(args)
 
     status_payload = {
         "started_at": datetime.now().isoformat(timespec="seconds"),

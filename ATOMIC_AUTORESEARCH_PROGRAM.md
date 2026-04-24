@@ -56,6 +56,8 @@ Use these as the canonical autoresearch aliases:
 - Use relative paths unless an absolute path is required by a tool.
 - Do not inspect or modify the source repo that seeded this run.
 - If you see absolute paths pointing at another checkout, ignore them and stay in the current run repo.
+- Do not inspect `AUTOPILOT*` files, broad docs, broad script lists, old non-atomic lanes, or repo-wide search output.
+- Start from the stable atomic alias JSON files and the listed atomic scripts only.
 
 ## Per-Loop Procedure
 1. Read this file plus:

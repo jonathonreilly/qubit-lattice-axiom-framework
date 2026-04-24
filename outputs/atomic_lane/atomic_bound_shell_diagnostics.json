@@ -2,132 +2,6 @@
   "baseline": {
     "negative_orbital_count": 15,
     "singlet": {
-      "excited_bound_occupancy": 0.04657220956149218,
-      "ground_occupancy": 1.9490026315028606,
-      "virtual_occupancy": 0.004425158935644639
-    },
-    "singlet_dominant_configurations": [
-      {
-        "amplitude": 0.9761722060852105,
-        "configuration": "00",
-        "orbitals": [
-          0,
-          0
-        ],
-        "weight": 0.9529121759332667
-      },
-      {
-        "amplitude": -0.18349028854457994,
-        "configuration": "04",
-        "orbitals": [
-          0,
-          4
-        ],
-        "weight": 0.033668685990173204
-      },
-      {
-        "amplitude": -0.08143344652012852,
-        "configuration": "013",
-        "orbitals": [
-          0,
-          13
-        ],
-        "weight": 0.006631406212146631
-      },
-      {
-        "amplitude": 0.037855001063208917,
-        "configuration": "029",
-        "orbitals": [
-          0,
-          29
-        ],
-        "weight": 0.0014330011054955482
-      },
-      {
-        "amplitude": 0.02760434906607584,
-        "configuration": "057",
-        "orbitals": [
-          0,
-          57
-        ],
-        "weight": 0.0007620000873617621
-      },
-      {
-        "amplitude": -0.02613783160765145,
-        "configuration": "047",
-        "orbitals": [
-          0,
-          47
-        ],
-        "weight": 0.0006831862411499432
-      }
-    ],
-    "triplet": {
-      "excited_bound_occupancy": 0.9983282623449173,
-      "ground_occupancy": 0.9992589677243243,
-      "virtual_occupancy": 0.0024127699307428733
-    },
-    "triplet_dominant_configurations": [
-      {
-        "amplitude": 0.9666435129677925,
-        "configuration": "04",
-        "orbitals": [
-          0,
-          4
-        ],
-        "weight": 0.9343996811627148
-      },
-      {
-        "amplitude": -0.25048382419094134,
-        "configuration": "013",
-        "orbitals": [
-          0,
-          13
-        ],
-        "weight": 0.0627421461813184
-      },
-      {
-        "amplitude": 0.04067385021718042,
-        "configuration": "029",
-        "orbitals": [
-          0,
-          29
-        ],
-        "weight": 0.0016543620914896274
-      },
-      {
-        "amplitude": 0.01586639840327686,
-        "configuration": "057",
-        "orbitals": [
-          0,
-          57
-        ],
-        "weight": 0.0002517425982915065
-      },
-      {
-        "amplitude": -0.01452706751240651,
-        "configuration": "047",
-        "orbitals": [
-          0,
-          47
-        ],
-        "weight": 0.0002110356905100167
-      },
-      {
-        "amplitude": -0.00943539137533789,
-        "configuration": "312",
-        "orbitals": [
-          3,
-          12
-        ],
-        "weight": 8.902661040580065e-05
-      }
-    ]
-  },
-  "baseline_source_json": "outputs/atomic_lane/autoresearch/loop_0041_tmp/selected_candidate.json",
-  "candidate": {
-    "negative_orbital_count": 15,
-    "singlet": {
       "excited_bound_occupancy": 0.04650290708258886,
       "ground_occupancy": 1.9490662075459366,
       "virtual_occupancy": 0.0044308853714736625
@@ -250,14 +124,140 @@
       }
     ]
   },
-  "candidate_source_json": "outputs/atomic_lane/autoresearch/loop_0042_tmp/selected_candidate.json",
-  "completed_at": "2026-04-23T22:32:19",
-  "delta": {
-    "singlet_excited_bound_shift": -6.930247890332003e-05,
-    "singlet_ground_shift": 6.357604307605236e-05,
-    "triplet_excited_bound_shift": -1.5134367455926778e-06,
-    "triplet_ground_shift": 1.8431986915645737e-06
+  "baseline_source_json": "outputs/atomic_lane/autoresearch_current_candidate.json",
+  "candidate": {
+    "negative_orbital_count": 15,
+    "singlet": {
+      "excited_bound_occupancy": 0.04647272790853123,
+      "ground_occupancy": 1.9490957239833575,
+      "virtual_occupancy": 0.004431548108111156
+    },
+    "singlet_dominant_configurations": [
+      {
+        "amplitude": -0.976215838860571,
+        "configuration": "00",
+        "orbitals": [
+          0,
+          0
+        ],
+        "weight": 0.9529973640422482
+      },
+      {
+        "amplitude": 0.18325940231433302,
+        "configuration": "04",
+        "orbitals": [
+          0,
+          4
+        ],
+        "weight": 0.03358400853660656
+      },
+      {
+        "amplitude": -0.08144533732631178,
+        "configuration": "013",
+        "orbitals": [
+          0,
+          13
+        ],
+        "weight": 0.006633342972196714
+      },
+      {
+        "amplitude": -0.037885421861287884,
+        "configuration": "029",
+        "orbitals": [
+          0,
+          29
+        ],
+        "weight": 0.0014353051896077499
+      },
+      {
+        "amplitude": 0.027642577479491025,
+        "configuration": "057",
+        "orbitals": [
+          0,
+          57
+        ],
+        "weight": 0.0007641120897096643
+      },
+      {
+        "amplitude": 0.02615773519898769,
+        "configuration": "047",
+        "orbitals": [
+          0,
+          47
+        ],
+        "weight": 0.0006842271107403595
+      }
+    ],
+    "triplet": {
+      "excited_bound_occupancy": 0.9983268663966824,
+      "ground_occupancy": 0.9992609366615341,
+      "virtual_occupancy": 0.002412196941788831
+    },
+    "triplet_dominant_configurations": [
+      {
+        "amplitude": -0.966657433495634,
+        "configuration": "04",
+        "orbitals": [
+          0,
+          4
+        ],
+        "weight": 0.9344265937323661
+      },
+      {
+        "amplitude": -0.2504339595829615,
+        "configuration": "013",
+        "orbitals": [
+          0,
+          13
+        ],
+        "weight": 0.0627171681124004
+      },
+      {
+        "amplitude": -0.04067887281841195,
+        "configuration": "029",
+        "orbitals": [
+          0,
+          29
+        ],
+        "weight": 0.0016547706937765343
+      },
+      {
+        "amplitude": 0.015864272789406053,
+        "configuration": "057",
+        "orbitals": [
+          0,
+          57
+        ],
+        "weight": 0.0002516751511366893
+      },
+      {
+        "amplitude": 0.014516506875087312,
+        "configuration": "047",
+        "orbitals": [
+          0,
+          47
+        ],
+        "weight": 0.00021072897185445719
+      },
+      {
+        "amplitude": -0.011523480579825808,
+        "configuration": "212",
+        "orbitals": [
+          2,
+          12
+        ],
+        "weight": 0.00013279060467362254
+      }
+    ]
   },
-  "started_at": "2026-04-23T22:32:19",
-  "total_elapsed_seconds": 0.000811
+  "candidate_source_json": "outputs/atomic_lane/autoresearch/loop_0043_tmp/selected_candidate.json",
+  "completed_at": "2026-04-23T22:55:06",
+  "delta": {
+    "singlet_excited_bound_shift": -3.0179174057634595e-05,
+    "singlet_ground_shift": 2.95164374208845e-05,
+    "triplet_excited_bound_shift": 1.1748851069803834e-07,
+    "triplet_ground_shift": 1.2573851826402915e-07
+  },
+  "started_at": "2026-04-23T22:55:06",
+  "total_elapsed_seconds": 0.000793
 }

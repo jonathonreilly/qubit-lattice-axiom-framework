@@ -121,6 +121,93 @@ def logged_loop_indices(run_repo: Path) -> set[int]:
     return indices
 
 
+def git_head(run_repo: Path) -> str:
+    result = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=str(run_repo),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        check=False,
+    )
+    return result.stdout.strip() if result.returncode == 0 else ""
+
+
+def current_scores(run_repo: Path) -> tuple[float | None, float | None, float | None, str | None]:
+    readout = run_repo / "outputs" / "atomic_lane" / "autoresearch_current_readout.json"
+    if not readout.exists():
+        return None, None, None, None
+    payload = json.loads(readout.read_text())
+    scores = payload["accuracy_metrics"]["scores"]
+    return (
+        float(scores["full_rms_relative_error"]),
+        float(scores["one_body_rms_relative_error"]),
+        float(scores["max_relative_error"]),
+        str(readout),
+    )
+
+
+def append_result(
+    run_repo: Path,
+    *,
+    loop_index: int,
+    status: str,
+    full_rms: float | None,
+    one_body_rms: float | None,
+    max_relative_error: float | None,
+    source_json: str | None,
+    commit: str,
+) -> None:
+    path = results_path(run_repo)
+    if not path.exists():
+        path.write_text(RESULTS_HEADER)
+    ts = datetime.now().isoformat(timespec="seconds")
+    row = "\t".join(
+        [
+            str(loop_index),
+            ts,
+            status,
+            "" if full_rms is None else f"{full_rms:.12f}",
+            "" if one_body_rms is None else f"{one_body_rms:.12f}",
+            "" if max_relative_error is None else f"{max_relative_error:.12f}",
+            "" if source_json is None else source_json,
+            commit,
+        ]
+    )
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(row + "\n")
+
+
+def mark_adopted_loop_if_unlogged(args: argparse.Namespace, loop_index: int) -> set[int]:
+    logged = logged_loop_indices(args.run_repo)
+    if loop_index in logged:
+        return logged
+    full_rms, one_body_rms, max_relative_error, source_json = current_scores(args.run_repo)
+    append_result(
+        args.run_repo,
+        loop_index=loop_index,
+        status="rejected",
+        full_rms=full_rms,
+        one_body_rms=one_body_rms,
+        max_relative_error=max_relative_error,
+        source_json=source_json,
+        commit=git_head(args.run_repo),
+    )
+    logged.add(loop_index)
+    write_supervisor_status(
+        args,
+        {
+            "updated_at": datetime.now().isoformat(timespec="seconds"),
+            "state": "recorded_adopted_unlogged_loop",
+            "loop": loop_index,
+            "status": "rejected",
+            "run_repo": str(args.run_repo),
+            "results_tsv": str(results_path(args.run_repo)),
+        },
+    )
+    return logged
+
+
 def write_supervisor_status(args: argparse.Namespace, payload: dict[str, object]) -> None:
     path = args.run_repo / "outputs" / "atomic_lane" / "autoresearch" / "supervisor_status.json"
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -309,14 +396,25 @@ def main() -> None:
     args.supervisor_log.parent.mkdir(parents=True, exist_ok=True)
     current_loop = int(args.start_loop)
     while current_loop <= int(args.iterations):
-        wait_for_active_loop(args, current_loop)
+        adopted = wait_for_active_loop(args, current_loop)
         setup_only(args, current_loop)
-        logged_before = logged_loop_indices(args.run_repo)
+        logged_before = (
+            mark_adopted_loop_if_unlogged(args, current_loop)
+            if adopted
+            else logged_loop_indices(args.run_repo)
+        )
         if logged_before:
             current_loop = max(current_loop, max(logged_before) + 1)
         if current_loop > int(args.iterations):
             break
-        wait_for_active_loop(args, current_loop)
+        adopted = wait_for_active_loop(args, current_loop)
+        if adopted:
+            setup_only(args, current_loop)
+            logged_before = mark_adopted_loop_if_unlogged(args, current_loop)
+            if logged_before:
+                current_loop = max(current_loop, max(logged_before) + 1)
+            if current_loop > int(args.iterations):
+                break
         write_supervisor_status(
             args,
             {

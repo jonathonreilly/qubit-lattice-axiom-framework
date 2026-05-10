@@ -1,0 +1,253 @@
+# Lane 5 — Hubble Constant H_0 Derivation
+
+**Date:** 2026-04-26
+**Status:** ACCEPTED CRITICAL OPEN SCIENCE LANE on `main`; no theorem or claim
+promotion
+**Science priority:** HIGH. Hubble tension is the most active cosmology
+debate. Currently external input.
+**Approachability:** Tier B (1–4 months — substantial recent structural-identity
+landings have made this materially closer)
+**Primary closure targets:** retained `H_0` and internal matter-density bridge.
+The late-time Hubble-tension stance is now landed as a proposed-retained /
+admitted-surface structural support theorem.
+**First parallel-worker target:** isolate which existing Λ, H_inf, Ω_Λ, N_eff,
+and matter-radiation-equality identities can load-bear an internal `H_0`
+derivation.
+**Non-claim boundary:** current `H_0` usage remains external-input until a
+retained derivation lands.
+
+## 2026-04-27 Dependency Firewall
+
+The [Hubble Lane 5 two-gate dependency firewall](../../HUBBLE_LANE5_TWO_GATE_DEPENDENCY_FIREWALL_NOTE_2026-04-27.md)
+records the current no-go boundary for this lane. The late-time structural
+lock reduces the numerical surface to `H_0 = H_inf / sqrt(L)`, but it does
+not supply both the absolute scale and dimensionless cosmic-history input.
+
+The firewall blocks any numerical `H_0` closure unless a branch supplies both
+`(C1)` absolute-scale information and one of `{(C2), (C3)}` for the
+dimensionless cosmic-history or cosmic-`L` gate. Either side alone leaves a
+one-parameter family.
+
+## 2026-04-29 `(C1)` Carrier/Metrology Boundary Packet
+
+The current Lane 5 `(C1)` stretch sequence is now explicitly narrowed by a
+support boundary packet:
+
+- [HUBBLE_LANE5_C1_A1_GRASSMANN_BOUNDARY_CAR_OBSTRUCTION_NOTE_2026-04-29.md](../../HUBBLE_LANE5_C1_A1_GRASSMANN_BOUNDARY_CAR_OBSTRUCTION_NOTE_2026-04-29.md)
+- [HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md](../../HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md)
+- [HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md](../../HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md)
+- [HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md](../../HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md)
+- [HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md](../../HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md)
+- [HUBBLE_LANE5_C1_CARRIER_METROLOGY_AXIOM_AUDIT_NOTE_2026-04-29.md](../../HUBBLE_LANE5_C1_CARRIER_METROLOGY_AXIOM_AUDIT_NOTE_2026-04-29.md)
+
+Taken together, these notes do not derive `(C1)`. They close the current
+shortcut routes negatively and leave one explicit conditional boundary:
+Lane 5 still needs both an active-block selector that picks the intrinsic
+coframe/CAR response on `P_A H_cell` and a non-rescaling-invariant
+carrier-to-metrology map that fixes the dimensional action unit.
+
+## 1. Missing-science framing
+
+The framework currently records
+[INPUTS_AND_QUALIFIERS_NOTE.md](../../publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md)
+§2:
+
+> "H_0 = 67.4 km/s/Mpc is taken as external input. The framework structurally
+> distinguishes H_0 from H_inf via Ω_Λ = (H_inf/H_0)², so the framework cares
+> about the value of H_0. So why not derive it?"
+
+Plus the now-landed structural question:
+- "What does the framework predict about the Hubble tension (67.4 vs 73)?"
+- "Where does the matter content Ω_m come from internally?"
+- "Why is Ω_Λ ≈ 0.69 today specifically?"
+
+**The current package commits exactly to ΛCDM at late times** (w = -1 retained,
+Λ structural identity, no modified gravity at cosmological scales). This is a
+genuine prediction — it rules out late-time tension-resolution proposals. But
+it's not the same as predicting H_0 from first principles.
+
+The Hubble-tension structural-lock theorem now makes the late-time stance
+explicit: on the retained `w_Lambda = -1` plus admitted flat-FRW surface,
+late-time `H_0(z)` running is forbidden. A genuine Hubble tension must be
+early-time physics or measurement/systematics, not a late-time dark-energy or
+modified-gravity fix inside the current surface.
+
+The framework also has substantial recent structural-identity landings:
+R_base = 31/9, FRW kinematic reduction, matter-radiation equality, N_eff
+support, neutrino observable bounds, single-ratio inverse reconstruction
+(2026-04-25), Hubble structural lock, and late-time open-number reduction.
+**These sharpen the bridge but do not close the numerical H_0 derivation.**
+
+## 2. Current state of repo content
+
+### Retained
+
+- Λ = 3/R_Λ² spectral-gap structural identity
+- w = -1 dark-energy EOS exactly
+- m_g² = 6ℏ²/(c²R²) graviton mass structural identity
+- DM relic ratio R = Ω_DM/Ω_b = 5.48 (exact group theory, 0.2% match)
+- DM exact-target PMNS package CLOSED
+- Λ spectral tower bridge (recent landing 2026-04-25)
+
+### Bounded / structural identities (recent landings)
+
+- R_base = 31/9 group-theory derivation (2026-04-24)
+- FRW kinematic reduction theorem (2026-04-24)
+- Matter-radiation equality structural identity (2026-04-24)
+- N_eff support from three generations (2026-04-24)
+- Neutrino retained observable bounds (2026-04-24)
+- Cosmology single-ratio inverse reconstruction theorem (2026-04-25)
+
+### External inputs
+
+- T_CMB = 2.7255 K
+- H_0 = 67.4 km/s/Mpc
+
+### Still open
+
+- H_0 derivation from framework
+- Omega_m internal closure (the matter bridge)
+- unconditional Planck-scale absolute normalization
+- eta / alpha_GUT retirement in the bounded matter cascade
+
+## 3. Derivation targets
+
+### 5A. Ω_m internal closure (the matter bridge)
+
+**Target:** derive the present-day matter fraction Ω_m from framework
+structure, without taking it as observational input.
+
+**What the framework needs:**
+- The retained DM relic ratio R = Ω_DM/Ω_b (already retained)
+- An internal derivation of Ω_b (baryon density today)
+- A structural identity connecting Ω_b to retained quantities (cosmological
+  constant scale, FRW reduction, matter-radiation equality)
+
+**Existing scaffolding:** the recent structural identities (R_base, FRW,
+m-r equality, N_eff, single-ratio inverse reconstruction, open-number
+reduction) provide the bridge grammar. The missing objects are still the
+closure premises: eta and alpha_GUT retirement, or an independent direct
+cosmic-`L` route.
+
+**Approachability:** Tier B. The bridge is materially shorter than 2 weeks
+ago.
+
+### 5B. H_0 derivation from internal Ω_m closure
+
+**Target:** with Ω_m retained internally, derive H_0 via:
+
+```
+H_0² = (8πG/3) × (ρ_Λ + ρ_m + ρ_r) = H_inf² / Ω_Λ = H_inf² / (1 - Ω_m - Ω_r)
+```
+
+where Λ = 3·H_inf²/c² is retained, ρ_r is determined by T_CMB (still external)
+or by retained N_eff + photon-temperature relation, and Ω_m comes from 5A.
+
+**Approachability:** Tier A-B. Automatic chain once 5A lands.
+
+### 5C. Hubble tension explicit stance
+
+**Target:** retain a paper-grade statement on the framework's commitment to
+LambdaCDM at late times, with the implication that any genuine H_0 tension
+must arise from pre-recombination physics (early dark energy, modified
+recombination, extra relativistic species before CMB release) or
+measurement/systematics — not from late-time modifications.
+
+**Current disposition:** landed as
+[HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md](../../HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md),
+pending audit ratification. The theorem is structural; it does not derive a
+numerical `H_0`.
+
+**Status:** Phase 1 complete as a proposed-retained/admitted-surface
+structural support result.
+
+### 5D. Cosmological neutrino constraint Σm_ν integration
+
+**Target:** integrate Σm_ν derivation from Lane 4 with the cosmology bridge
+to verify H_0 prediction is consistent with retained neutrino content.
+
+**Approachability:** Tier A-B once Lane 4 partial lands.
+
+### 5E. Inflation mechanism (deferred to follow-on)
+
+**Target:** retain an inflation mechanism that sources the observed CMB
+anisotropy spectrum.
+
+**Existing scaffolding:** [PRIMORDIAL_SPECTRUM_NOTE.md](../../PRIMORDIAL_SPECTRUM_NOTE.md)
+bounded.
+
+**Approachability:** Tier C. Substantial; deferred from initial closure of
+this lane.
+
+## 4. Existing scaffolding to build on
+
+- [COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md](../../COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
+- [COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md](../../COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md)
+- [R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md](../../R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
+- [MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md](../../MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md)
+- [N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md](../../N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md)
+- [COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md](../../COSMOLOGY_SINGLE_RATIO_INVERSE_RECONSTRUCTION_THEOREM_NOTE_2026-04-25.md)
+- [HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md](../../HUBBLE_TENSION_STRUCTURAL_LOCK_THEOREM_NOTE_2026-04-26.md)
+- [COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md](../../COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md)
+- [HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md](../../HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md)
+- [HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md](../../HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md)
+- [HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md](../../HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md)
+- [HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md](../../HUBBLE_LANE5_C3_VACUUM_TOPOLOGY_NO_ACTIVE_ROUTE_NOTE_2026-04-27.md)
+- [HUBBLE_LANE5_WORKSTREAM_STATUS_NOTE_2026-04-27.md](../../HUBBLE_LANE5_WORKSTREAM_STATUS_NOTE_2026-04-27.md)
+- [GRAVITY_COSMOLOGY_TOWER_LAMBDA_SPECTRAL_BRIDGE_THEOREM_NOTE_2026-04-25.md](../../GRAVITY_COSMOLOGY_TOWER_LAMBDA_SPECTRAL_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+- [COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md](../../COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md)
+- DM closed package (R = Ω_DM/Ω_b retained)
+
+## 5. Recommended attack approach
+
+**Phase 1 (fast):**
+
+1. **5C: Hubble tension explicit stance.** Landed pending audit. Keep it
+   visible as a structural falsifier, not as numerical `H_0` closure.
+
+**Phase 2:**
+
+2. **5A: Omega_m / L internal closure.** Practical route is `(C2)`: retire
+   eta and alpha_GUT in the bounded matter cascade. Hypothetical alternative
+   is `(C3)`: direct cosmic-`L` derivation; no active route currently exists.
+3. **5B: H_0 derivation from Omega_m / L plus absolute scale.** Requires
+   `(C1)` Planck-scale absolute normalization in addition to `(C2)` or `(C3)`.
+   The current 2026-04-29 packet closes the easy `(C1)` carrier/metrology
+   shortcuts negatively; no single gate is sufficient.
+
+**Phase 3:**
+
+4. **5D: Σm_ν integration.** After Lane 4 partial.
+
+**Phase 4 (deferred):**
+
+5. **5E: Inflation mechanism.** Tier C. Separate lane.
+
+## 6. Out of scope / will not claim
+
+- This lane does NOT propose to derive T_CMB from first principles in
+  initial scope (it remains an external input for cosmology rows).
+- This lane does NOT address inflation in initial scope (deferred to 5E).
+- This lane does NOT propose to resolve the Hubble tension by fitting either
+  end (67.4 vs 73). It commits to LambdaCDM at late times structurally and
+  leaves any genuine tension to early-time physics or measurement/systematics.
+- This lane does NOT address dark-energy detection or modified-gravity
+  alternatives.
+
+## 7. Cross-references
+
+- Depends on: 5 recent cosmology structural identities (already retained)
+- Connects to: Lane 4 (Σm_ν cosmological constraint)
+- Independent of: Lanes 1, 2, 3 in primary closure path
+- Predicts: an early-time-only resolution of any genuine Hubble tension
+
+## 8. Reviewer questions
+
+1. Is Ω_m internal closure (5A) the right entry point, or should we attempt
+   H_0 derivation directly via a different route?
+2. Should the Hubble tension stance (5C) be on the manuscript surface as
+   a public prediction, or kept internal until 5A and 5B land?
+3. Should inflation (5E) be folded into this lane or remain as a separate
+   future lane?
+4. What precision target should "H_0 retained" mean — sub-percent? 10%?
+   Within current observational uncertainty?

@@ -1,0 +1,136 @@
+# Repo Organization
+
+**Date:** 2026-04-11  
+**Purpose:** stable navigation layer over a large, active research repo
+
+## Why This Exists
+
+The repo has accumulated:
+
+- many historical architecture lanes
+- many similarly named runner scripts
+- notes that mix retained, bounded, and exploratory claims
+- repeated semantic bugs in observables and runner assumptions
+
+The correct fix is a stable control plane:
+
+- one lane board
+- one canonical harness index
+- one retest playbook
+- one machine-readable lane registry
+- one active review queue
+
+## Actual Layout
+
+- `scripts/`
+  - all runners and probes
+  - `frontier_*` is the current frontier namespace
+  - older non-`frontier_` scripts are often historical or lane-specific
+- `docs/`
+  - retained notes, synthesis notes, and current control-plane docs
+- `docs/repo/`
+  - navigation/control-plane docs added specifically to keep the repo usable
+- `docs/lanes/`
+  - lane-level manifests for the whole repo
+- `docs/work_history/`
+  - explicit historical bucket for archived review packets, backlogs, and
+    older lane material
+- `outputs/`, `logs/`
+  - run artifacts and transient output
+
+## Status Meanings
+
+Repo-wide status language now lives in
+[`CONTROLLED_VOCABULARY.md`](./CONTROLLED_VOCABULARY.md).
+The labels below are the historical lane-board subset of that vocabulary.
+
+- `primary-retained`
+  - current best-supported lane
+  - this is where new readers should start
+- `retained-companion`
+  - real, replayable, and worth citing
+  - but not the single top-level entrypoint
+- `open-blocker`
+  - a real missing piece that currently limits the main claim boundary
+- `exploratory-reopen`
+  - partially positive but not yet promoted
+- `historical-control`
+  - useful for comparison, methodology, or negative controls
+- `historical-retained`
+  - older retained major program still worth navigating directly
+- `historical-bounded`
+  - scientifically useful but no longer a current main lane
+- `historical-blocked`
+  - a lane with a diagnosed mechanism-level blocker
+
+## Navigation Files
+
+- [`docs/work_history/repo/LANE_STATUS_BOARD.md`](../work_history/repo/LANE_STATUS_BOARD.md)
+  - where each lane across the whole repo sits now
+- [`docs/repo/CONTROLLED_VOCABULARY.md`](./CONTROLLED_VOCABULARY.md)
+  - repo-wide status taxonomy and wording rules
+- [`docs/repo/ACTIVE_REVIEW_QUEUE.md`](./ACTIVE_REVIEW_QUEUE.md)
+  - single live queue for current-main review feedback
+- [`docs/repo/REVIEW_FEEDBACK_WORKFLOW.md`](./REVIEW_FEEDBACK_WORKFLOW.md)
+  - process for landing, reviewing, triaging, and closing feedback
+- [`docs/CANONICAL_HARNESS_INDEX.md`](../CANONICAL_HARNESS_INDEX.md)
+  - which scripts to rerun first
+- [`docs/lanes/README.md`](../lanes/README.md)
+  - lane-by-lane manifests for the full repo
+- [`docs/POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`](../work_history/POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md)
+  - cumulative paper-seed / discovery ledger
+- [`docs/work_history/repo/review_feedback/PUBLICATION_DISCOVERY_AUDIT_2026-04-11.md`](../work_history/repo/review_feedback/PUBLICATION_DISCOVERY_AUDIT_2026-04-11.md)
+  - historical lane-by-lane publication-candidate audit
+- [`docs/repo/RETEST_PLAYBOOK.md`](RETEST_PLAYBOOK.md)
+  - how to handle runner bugs or claim changes
+- [`docs/repo/LANE_REGISTRY.yaml`](LANE_REGISTRY.yaml)
+  - machine-readable registry for automation and future tooling
+- [`docs/repo/ROOT_FILE_GUIDE.md`](ROOT_FILE_GUIDE.md)
+  - what the remaining top-level files are
+
+## File-Naming Rules Going Forward
+
+- New current-program runners should stay in `scripts/` and use a clear,
+  lane-specific prefix:
+  - `frontier_staggered_*`
+  - `frontier_two_field_*`
+  - `frontier_emergent_geometry_*`
+- Historical lanes should not be renamed just to fit the current taxonomy.
+  They should be indexed in the lane board and registry instead.
+- New retained notes should be explicit about the runner they interpret.
+- New strategy or synthesis notes should not silently replace retained notes.
+- If a lane is historical, mark that in the lane board and registry instead of
+  renaming dozens of files.
+
+## How To Add New Work
+
+When a new runner lands:
+
+1. Decide which lane it belongs to.
+2. Add or update its retained note if the result is promotable.
+3. Update the relevant lane entry in:
+   - [`docs/work_history/repo/LANE_STATUS_BOARD.md`](../work_history/repo/LANE_STATUS_BOARD.md)
+   - [`docs/repo/LANE_REGISTRY.yaml`](LANE_REGISTRY.yaml)
+4. If the result changes the retained program surface, also update:
+   - [`docs/SESSION_SYNTHESIS_2026-04-10_FINAL.md`](../SESSION_SYNTHESIS_2026-04-10_FINAL.md)
+
+Operational review packets and planning backlogs were intentionally moved out of
+the front-door `docs/` surface. Use the active review queue for current work
+and the work-history archive for older detailed packets.
+
+- [`docs/work_history/repo/evaluation_tools/README.md`](../work_history/repo/evaluation_tools/README.md)
+- [`docs/work_history/repo/review_feedback/README.md`](../work_history/repo/review_feedback/README.md)
+- [`docs/work_history/repo/backlog/README.md`](../work_history/repo/backlog/README.md)
+
+Do not treat those scorecards, old audit packets, or backlog notes as part of
+the live control plane.
+
+## What This Organization Deliberately Does Not Do
+
+- It does **not** pretend every note in `docs/` is equally current.
+- It does **not** merge exact-lattice force claims with irregular-graph proxy
+  claims.
+- It does **not** let a runner become “canonical” just because it exists.
+
+This is a navigation and governance layer first. Physical file moves can come
+later, after the active frontier stabilizes.

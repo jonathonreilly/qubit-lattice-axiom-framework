@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_generation_axiom_boundary.py
+runner_sha256: 1a3666496c5078b8663515182957f4f81950c4a49b58d4a139cdc4944a4e561a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+========================================================================
+GENERATION AXIOM BOUNDARY -- LOCAL M_3(C) RECONSTRUCTION
+Local observable-algebra reconstruction on H_hw=1 (in-scope claim)
+========================================================================
+
+========================================================================
+LOCAL M_3(C) OBSERVABLE-ALGEBRA RECONSTRUCTION ON H_hw=1
+========================================================================
+
+  Generators: three translation-character projectors + C3 cycle.
+  Target: full M_3(C) algebra (dim 9) with scalar commutant (dim 1).
+
+  [PASS] hw1_translation_characters_pairwise_distinct  (characters=[(-1, 1, 1), (1, -1, 1), (1, 1, -1)])
+  [PASS] hw1_translation_projectors_are_rank_one  (three exact rank-one observable projectors on H_hw=1)
+  [PASS] hw1_retained_observable_algebra_is_full_M3  (generated algebra dimension=9)
+  [PASS] hw1_retained_observable_commutant_is_scalar  (commutant dimension=1; no proper exact quotient kernel can be invariant)
+
+========================================================================
+FINAL SUMMARY
+========================================================================
+
+  PASS=4  FAIL=0
+
+  EXACT computational checks (in-scope):
+    - three pairwise-distinct hw=1 translation characters
+    - three rank-one observable projectors on H_hw=1
+    - generated algebra is full M_3(C) (dim 9)
+    - commutant on H_hw=1 is scalar (dim 1)
+
+  THEOREM STATUS: bounded_theorem
+    Local M_3(C) observable-algebra reconstruction on H_hw=1.
+    Physical-species bridge, substrate-fundamentality, and the
+    historical reduced-stack/five-item-memo witness are out of
+    scope here and live in separate authority notes.
+
+  ALL CHECKS PASSED.
+
+
+----- stderr -----
+

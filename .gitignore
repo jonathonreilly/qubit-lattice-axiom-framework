@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+logs/*
+!logs/README.md
+!logs/retained/
+!logs/retained/README.md
+# Audit-lane runner cache: SHA-pinned, version-controlled. See
+# docs/audit/RUNNER_CACHE_POLICY.md.
+!logs/runner-cache/
+!logs/runner-cache/**
+# In-progress live logs are transient (replaced by canonical cache on
+# completion); do NOT commit them.
+logs/runner-cache/.in-progress/
+.claude/worktrees/
+
+# Python virtual environments (per-developer, per-worktree).
+# See docs/repo/PYTHON_VENV_SETUP.md for setup instructions.
+.venv/
+venv/
+env/
+
+.claude/science/physics-loops/**/last_codex_message.md
+.claude/science/physics-loops/**/supervisor.lock
+.claude/science/physics-loops/**/supervisor.log
+.claude/science/physics-loops/**/supervisor_status.json
+.claude/scheduled_tasks.lock

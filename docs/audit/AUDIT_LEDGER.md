@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 107 |
-| **retained_no_go** | 136 |
+| **retained_no_go** | 137 |
 | **retained_bounded** | 317 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1191 |
+| unaudited | 1190 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,22 +43,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 531 |
+| `audited_clean` | 532 |
 | `audited_conditional` | 195 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1306 |
+| `unaudited` | 1305 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 927 |
 | `decoration` | 18 |
 | `meta` | 118 |
-| `no_go` | 233 |
+| `no_go` | 234 |
 | `open_gate` | 108 |
-| `positive_theorem` | 727 |
+| `positive_theorem` | 726 |
 
 | criticality | count |
 |---|---:|
@@ -373,6 +373,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_l2_numpy_h0125_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_tapered_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_complementarity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6892,6 +6893,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The canonical sweep shows a continuous tradeoff between decoherence/which-slit structure and distance-law quality, with only gap = 2 clearing the declared bounded-balance guard.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the ordered lattice, slit cards, propagations, observables, distance fits, Born companion audit, and guard directly rather than printing constants. Within the restricted packet, the note's bounded conclusion follows from that computation and explicitly excludes same-card attractive gravity or full unification.
 - **rationale:** The load-bearing step is a first-principles computation over the stated ordered-lattice setup, producing the MI, d_TV, decoherence, distance-fit, gravity-sign, Born, and k=0 sweep values. The source code does not import cited authorities or hard-code expected table values; it computes the rows from lattice generation, propagation, field evaluation, and fitting helpers. The promoted claim is carefully bounded to a tradeoff curve with a sweet spot and does not claim same-card attractive gravity or one-family unification.
+- **auditor confidence:** high
+
+### `lattice_fanout_continuum_note`
+
+- **Note:** [`LATTICE_FANOUT_CONTINUUM_NOTE.md`](../../docs/LATTICE_FANOUT_CONTINUUM_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The audited note rules out the specific fan-out normalized kernel exp(i·k·act)·w/(L·sqrt(fan_out)) as a continuum-limit recipe for the provided lattice runner family over the tested refinements h = 2, 1, 0.5, 0.25.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-215007-20260516T215007Z-bd6a9ff1-lattice_fanout_continuum-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The fan-out normalized kernel has per-edge scaling approximately 1/(L·sqrt(fan_out)) ≈ 1/(h·sqrt(1/h)) = 1/sqrt(h), so it diverges under refinement and the completed runner shows non-conserved detector probability and h=0.25 amplitude blowup.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely constructs the lattice, applies the stated fan-out normalized propagation rule, and computes the reported observables rather than printing constants. The numerical failures support the narrower no-go claim for this kernel; the accompanying h-scaling argument explains why the normalization has the wrong power.
+- **rationale:** The chain closes for the negative claim actually made: the runner implements the stated kernel and returns the reported probability collapse/blowup behavior, including h=0.25 max amplitude about 2.4e11 and P_total about 4.6e23. The algebraic scaling argument is consistent with the implementation: fan_out grows like 1/h, so sqrt(fan_out) only cancels half of the 1/L ~ 1/h factor. The note over-describes the h=0.5 failure mechanism as likely zero division or overflow, while the runner only establishes a failed measurement row, but that is not load-bearing for the broader no-go because the h=0.25 blowup and probability nonconservation already close it. The cited NN note is retained and is only background for the remaining candidate pool, not a necessary premise for the fan-out falsification.
 - **auditor confidence:** high
 
 ### `lattice_field_strength_unification_note`

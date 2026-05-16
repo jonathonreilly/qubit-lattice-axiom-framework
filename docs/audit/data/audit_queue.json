@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 744,
     "high": 35,
-    "leaf": 269,
+    "leaf": 268,
     "medium": 150
   },
   "cycle_break_target_count": 242,
@@ -31007,29 +31007,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_fanout_continuum_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_nn_high_precision_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LATTICE_FANOUT_CONTINUUM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_fanout_continuum.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_nn_rg_reconciliation_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38365,6 +38342,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1198
+  "ready_count": 5,
+  "total_pending": 1197
 }

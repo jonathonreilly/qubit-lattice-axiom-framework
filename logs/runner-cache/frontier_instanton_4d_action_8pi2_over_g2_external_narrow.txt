@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py
+runner_sha256: 1cc98f061f812b032eb469aad8a52ef47c9b40cf16902d864b9495d304c292cd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+# 4D instanton 8 pi^2 / g^2 external theorem runner
+# Source note: docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+
+==============================================================================
+T1: symbolic S_inst = 8 pi^2 / g^2 at |Q| = 1 from Bogomolny saturation
+==============================================================================
+  [PASS] S_inst at |Q|=1 simplifies to 8 pi^2 / g^2 symbolically
+         S_inst = 8*pi**2/g**2, expected 8*pi**2/g**2
+
+==============================================================================
+T2: Atiyah-Singer integrality Q in Z stated as external theorem
+==============================================================================
+  [PASS] note states canonical Q = (1/32 pi^2) integral Tr(F *F) formula
+         topological charge formula present in claim section
+  [PASS] note states Atiyah-Singer integer integrality Q in Z
+         Q in Z + Atiyah-Singer named explicitly
+
+==============================================================================
+T3: numerical S_inst at g^2 in {1/2, 1, 2}
+==============================================================================
+  [PASS] S_inst at g^2 in {1/2, 1, 2} evaluates to {16,8,4} pi^2 numerically
+         g^2=1/2: S_inst=157.913670 (expected 157.913670); g^2=1: S_inst=78.956835 (expected 78.956835); g^2=2: S_inst=39.478418 (expected 39.478418)
+
+==============================================================================
+T4: numerical exp(-S_inst) at g^2 in {1/2, 1, 2}
+==============================================================================
+  [PASS] exp(-S_inst) at g^2 in {1/2, 1, 2} matches expected suppression orders
+         g^2=1/2: exp(-S_inst)=2.624e-69 (log10≈-68.58); g^2=1: exp(-S_inst)=5.123e-35 (log10≈-34.29); g^2=2: exp(-S_inst)=7.157e-18 (log10≈-17.15)
+
+==============================================================================
+T5: at g^2 = 1, S_inst = 8 pi^2 ≈ 78.96 and exp(-S_inst) ≈ 5e-35
+==============================================================================
+  [PASS] S_inst(g^2=1) = 8 pi^2 ≈ 78.9568...
+         S_inst = 78.9568352087
+  [PASS] exp(-S_inst)(g^2=1) ≈ 5.05e-35
+         exp(-S_inst) = 5.123e-35
+
+==============================================================================
+T6: self-duality F = *F ⟹ S = (1/(2 g^2)) ∫ Tr(F^2) = (8 pi^2/g^2)|Q|
+==============================================================================
+  [PASS] F = *F ⟹ S = (8 pi^2 / g^2) Q from canonical normalizations
+         S = 8*pi**2*Q/g**2, expected 8*pi**2*Q/g**2
+
+==============================================================================
+T7: lattice O(a^2) correction structure recorded (no numerical claim)
+==============================================================================
+  [PASS] note records Lüscher admissibility condition
+         admissibility + Lüscher cited
+  [PASS] note records O(a^2) lattice correction structure (no numerical claim)
+         structural form recorded
+  [PASS] note records modern Wilson flow / gradient flow topology extraction
+         Lüscher arXiv:1006.4518 cited
+
+==============================================================================
+T8: boundary — note declares positive_theorem
+==============================================================================
+  [PASS] note declares Claim type: positive_theorem
+         Claim type line present
+
+==============================================================================
+T9: boundary — note does NOT claim substrate identification
+==============================================================================
+  [PASS] note does NOT assert substrate identification
+         no substrate-identification overclaim string present
+  [PASS] note explicitly disclaims framework substrate identification
+         boundary section names framework substrate explicitly under 'does not claim'
+
+==============================================================================
+T10: boundary — note does NOT claim alpha_LM^16 closure or hierarchy
+==============================================================================
+  [PASS] note avoids any alpha_LM^16-closure / hierarchy-closure overclaim
+         boundary disclaimers intact
+  [PASS] boundary explicitly names alpha_LM^16 as out-of-scope
+         alpha_LM^16 explicitly listed in boundary
+  [PASS] boundary explicitly names v/M_Pl scale ratio as out-of-scope
+         v/M_Pl explicitly listed in boundary
+
+=== TOTAL: PASS=17, FAIL=0 ===
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 745,
+    "critical": 744,
     "high": 34,
     "leaf": 269,
     "medium": 154
@@ -5978,29 +5978,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dark_energy_eos.py",
-      "transitive_descendants": 788
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "nonlinear_born_gravity_note",
-      "claim_scope": "Audited only the bounded exhibited-example claim: two specified nonlinear propagators on the stated 2D finite lattice produce nonzero Sorkin I_3 and repulsive centroid-shift sign relative to the linear baseline, while the linear I_3=0 direction is supplied by the cited retained theorem.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "i3_zero_exact_theorem_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "load_bearing_score": 10.124,
-      "note_path": "docs/NONLINEAR_BORN_GRAVITY_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_nonlinear_born_gravity.py",
       "transitive_descendants": 788
     },
     {
@@ -38463,6 +38440,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1202
+  "ready_count": 5,
+  "total_pending": 1201
 }

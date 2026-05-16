@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 106 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 312 |
+| **retained_bounded** | 313 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1194 |
-| audit_in_progress | 1 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,8 +42,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 526 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 527 |
 | `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
@@ -115,7 +114,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `nonlinear_born_gravity_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_canonical_projector_connection_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -421,6 +419,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7757,6 +7756,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** All checked rows across drifts 0.15, 0.20, 0.25 and seeds 0, 1, 2 pass the zero-source, neutral-cancellation, sign-orientation, and charge-linearity controls at fixed restore = 0.7.  _(class `C`)_
 - **chain closes:** True — The one listed dependency, nonlabel_grown_basin_note, is retained-bounded, and the completed frozen log reports 9/9 passing drift/seed rows with exact zero baseline, exact neutral cancellation, opposite single-source signs, and charge exponent near 1. The clean verdict is limited to this local drift-basin replay.
 - **rationale:** The claim is explicitly scoped to a tiny drift neighborhood around the retained grown row at fixed restore = 0.7. The frozen log named by the note reproduces every reported row and shows all 9 drift/seed cases passing the bounded controls, while the upstream grown-basin anchor is already retained-bounded. Residual risk is the note's own boundary: this does not establish a family-wide transfer theorem or robustness outside the tested drift/seed grid.
+- **auditor confidence:** high
+
+### `nonlinear_born_gravity_note`
+
+- **Note:** [`NONLINEAR_BORN_GRAVITY_NOTE.md`](../../docs/NONLINEAR_BORN_GRAVITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded exhibited claim that quadratic and cubic pointwise nonlinear propagators on the specified finite 2D setup produce nonzero Sorkin I_3 and flip the centroid-shift sign relative to the linear baseline.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214215-20260516T214215Z-946808e2-nonlinear_born_gravity_n-targeted`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For the two specific pointwise nonlinearities tested on this chosen 2D lattice/kernel/coupling, |I_3|/P is far from zero and the deflection centroid-shift sign is opposite to the linear baseline.  _(class `C`)_
+- **chain closes:** True — The demoted note's non-load-bearing nonlinear claim is exactly bounded to the runner's finite menu, and the supplied source code computes those I_3 and centroid-shift quantities rather than merely printing constants. The algebraic linear I_3 statement is separately supported by the retained cited theorem.
+- **rationale:** The current note no longer claims a universal nonlinear implication, mass-law failure, or model-independent experimental certification. Its bounded nonlinear statement is supported by a concrete runner that instantiates the specified lattice, kernels, nonlinearities, normalization choices, and field coupling, then computes nonzero I_3 values and opposite centroid signs. The cited upstream I_3 theorem is retained and algebraic, so the linear half also closes within the restricted packet.
 - **auditor confidence:** high
 
 ### `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16`

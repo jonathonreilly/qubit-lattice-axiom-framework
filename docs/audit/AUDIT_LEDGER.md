@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 317 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1190 |
+| unaudited | 1189 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 195 |
-| ~~audited_failed~~ | 18 |
+| ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -46,10 +46,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 532 |
 | `audited_conditional` | 195 |
 | `audited_decoration` | 17 |
-| `audited_failed` | 62 |
+| `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1305 |
+| `unaudited` | 1304 |
 
 | claim_type | count |
 |---|---:|
@@ -897,6 +897,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -7049,6 +7050,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The runner-computed finite rows show Born errors below 1e-10 through h = 0.25 for all three schedules, while all schedules fail at h = 0.125 and the fitted exponents are only descriptive across sign-changing gravity rows.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the nearest-neighbor lattice, propagates amplitudes, computes gravity, MI, purity, d_TV, Born residuals, and descriptive power fits directly from the stated harness rather than printing hard-coded target values. The note's conclusion is bounded to the finite retained window and explicitly does not promote the continuum/RG claim.
 - **rationale:** The load-bearing evidence is a direct computation in the included runner, and the stdout matches the source note tables and caveats. No cited upstream dependency is required for the narrowed claim, and the runner does not hard-code the contested finite-row outcomes. The claim boundary is appropriately limited to a finite-resolution Born-clean refinement window plus a negative/inconclusive statement about simple RG-style scaling, not a finished continuum theorem.
+- **auditor confidence:** high
+
+### `lattice_nn_rg_reconciliation_note`
+
+- **Note:** [`LATTICE_NN_RG_RECONCILIATION_NOTE.md`](../../docs/LATTICE_NN_RG_RECONCILIATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the reconciliation note's bounded NN/RG wording follows from the provided upstream notes and the primary continuum runner output.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-215043-20260516T215043Z-d57bc2b6-lattice_nn_rg_reconcilia-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current evidence supports a finite-resolution refinement trend through h = 0.25, while the raw kernel does not yet retain a successful h = 0.125 continuation and the RG-style evidence remains suggestive.  _(class `B`)_
+- **chain closes:** False — The note's RG caution and alpha = 1.5 limitation are supported by the provided RG gravity and alpha-sweep authorities. However, the h = 0.125 raw-kernel gate is contradicted by the provided retained high-precision authority, which reports a direct arbitrary-precision raw-kernel certificate at h = 0.125.
+- **rationale:** The reconciliation note is primarily a cross-note synthesis, so its load-bearing step is class B rather than a new first-principles computation. Its central bounded conclusion no longer closes against the restricted packet because one cited retained authority, docs/LATTICE_NN_HIGH_PRECISION_NOTE.md, explicitly promotes the raw NN finite window through h = 0.125. The old continuum runner cache still shows float64 failure at h = 0.125, but the high-precision certificate in the provided authority directly resolves that as a numerical-format limit, so the source note's h = 0.25 boundary is stale on its own cited inputs.
 - **auditor confidence:** high
 
 ### `lattice_symmetry_unification_decision_note`

@@ -127750,8 +127750,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "The supplied runner computes the finite alpha-by-h grid for the deterministic nearest-neighbor lattice path, derives g(0.25)/g(0.5) and pair exponent for each alpha, and the live completed stdout matches the source-note gravity values, ratios, exponents, k=0 zeros, and machine-clean Born conclusion; alpha=1.5 is the least h-sensitive measured point on the scanned grid with ratio 0.858.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "audited_failed",
+      "max_descendant_status_rank": 0,
       "note_hash": "21e6572370e9261fbe6f916caabdc371d823f8d037c629395195c53f580d6a3c",
       "note_path": "docs/LATTICE_NN_RG_ALPHA_SWEEP_NOTE.md",
       "notes_for_re_audit_if_any": "If future wording promotes the result to optimized alpha, continuum renormalization, or established fixed point, re-audit as unsupported. If exact Born residual triplets become load-bearing rather than illustrative machine-clean diagnostics, reconcile the cache/live discrepancy explicitly.",
@@ -128121,22 +128121,53 @@
       "verdict_rationale": "The load-bearing evidence is a direct computation in the included runner, and the stdout matches the source note tables and caveats. No cited upstream dependency is required for the narrowed claim, and the runner does not hard-code the contested finite-row outcomes. The claim boundary is appropriately limited to a finite-resolution Born-clean refinement window plus a negative/inconclusive statement about simple RG-style scaling, not a finished continuum theorem."
     },
     "lattice_nn_rg_reconciliation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-16T21:51:03.122057+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "lattice_nn_continuum_note": "Bounded finite-spacing computational claim for the raw nearest-neighbor harness on H_finite = {2.0, 1.0, 0.5, 0.25}: finite gravity, k=0, MI, classical purity, total-variation, and Born rows, with Born residual < 1e-10 and h = 0.125/continuum explicitly outside the claimed window.",
+          "lattice_nn_high_precision_note": "Audited only the narrow claim that the specified raw nearest-neighbor lattice kernel is numerically evaluable at h = 0.125 in arbitrary precision and yields a Born-clean row consistent with the cached deterministic-rescale observables.",
+          "lattice_nn_rg_alpha_sweep_note": "Finite computational scan only: exact supplied deterministic NN lattice/rescale runner, h values 1.0, 0.5, 0.25, alpha values 0.0, 0.5, 1.0, 1.5, with the comparison focused on gravity at h=0.5 versus h=0.25 and Born-safe behavior inherited only on the audited finite deterministic path. No optimized exponent, continuum renormalization, physical fixed point, or extension beyond the scanned grid is established.",
+          "lattice_nn_rg_gravity_note": "Audited the bounded computational claim that the raw nearest-neighbor lattice has a Born-clean finite refinement window through h = 0.25 and that fixed, 1/h, and 1/sqrt(h) strength schedules do not establish a clean RG/continuum continuation past the shared h = 0.125 failure."
+        },
+        "dep_claim_type": {
+          "lattice_nn_continuum_note": "bounded_theorem",
+          "lattice_nn_high_precision_note": "positive_theorem",
+          "lattice_nn_rg_alpha_sweep_note": "bounded_theorem",
+          "lattice_nn_rg_gravity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_nn_continuum_note": "retained_bounded",
+          "lattice_nn_high_precision_note": "retained",
+          "lattice_nn_rg_alpha_sweep_note": "retained_bounded",
+          "lattice_nn_rg_gravity_note": "retained_bounded"
+        },
+        "deps": [
+          "lattice_nn_continuum_note",
+          "lattice_nn_high_precision_note",
+          "lattice_nn_rg_alpha_sweep_note",
+          "lattice_nn_rg_gravity_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8bb1945e3644e7d45b1f110ffc7e7cd233035d8b7dddababb2c36d134c1586c7",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260516-215043-20260516T215043Z-d57bc2b6-lattice_nn_rg_reconcilia-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note's RG caution and alpha = 1.5 limitation are supported by the provided RG gravity and alpha-sweep authorities. However, the h = 0.125 raw-kernel gate is contradicted by the provided retained high-precision authority, which reports a direct arbitrary-precision raw-kernel certificate at h = 0.125.",
       "claim_id": "lattice_nn_rg_reconciliation_note",
-      "claim_scope": null,
+      "claim_scope": "Audited whether the reconciliation note's bounded NN/RG wording follows from the provided upstream notes and the primary continuum runner output.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-16T21:51:03.122057+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -128147,18 +128178,18 @@
         "lattice_nn_high_precision_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The current evidence supports a finite-resolution refinement trend through h = 0.25, while the raw kernel does not yet retain a successful h = 0.125 continuation and the RG-style evidence remains suggestive.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "19c9aa2330e154f271668b17b732f4d9e87b5efd40656e47acf4d4f2d513f650",
       "note_path": "docs/LATTICE_NN_RG_RECONCILIATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Update the reconciliation note to incorporate the 2026-05-16 high-precision raw-kernel certificate while preserving the separate RG/alpha caution.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -128228,15 +128259,15 @@
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 3,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/lattice_nn_continuum.py",
       "title": "Lattice NN RG Reconciliation Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The reconciliation note is primarily a cross-note synthesis, so its load-bearing step is class B rather than a new first-principles computation. Its central bounded conclusion no longer closes against the restricted packet because one cited retained authority, docs/LATTICE_NN_HIGH_PRECISION_NOTE.md, explicitly promotes the raw NN finite window through h = 0.125. The old continuum runner cache still shows float64 failure at h = 0.125, but the high-precision certificate in the provided authority directly resolves that as a numerical-format limit, so the source note's h = 0.25 boundary is stale on its own cited inputs."
     },
     "lattice_physical_matching_cluster_obstruction_note_2026-05-02": {
       "audit_date": null,

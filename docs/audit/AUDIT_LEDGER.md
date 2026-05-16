@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1206 |
+| unaudited | 1205 |
 | meta | 115 |
-| ~~audited_numerical_match~~ | 5 |
+| ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 189 |
 | ~~audited_failed~~ | 19 |
@@ -47,9 +47,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 189 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
-| `audited_numerical_match` | 5 |
+| `audited_numerical_match` | 6 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1321 |
+| `unaudited` | 1320 |
 
 | claim_type | count |
 |---|---:|
@@ -914,6 +914,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
@@ -8415,6 +8416,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Given imported comparator targets, two complex carrier coefficients xi_u and xi_d are solved numerically to reproduce the target surface to about 1% or better while keeping arg det(M_u M_d)=0 mod 2pi.  _(class `G`)_
 - **chain closes:** True — The runner performs a real numerical optimization, builds Hermitian mass matrices, diagonalizes them, computes CKM observables, and checks the determinant phase. The chain closes only as a tuned bounded numerical match, not as a first-principles derivation of xi_u, xi_d, the carrier slot, or the comparator targets.
 - **rationale:** The note honestly frames the result as a numerical existence-of-fit using imported observation/atlas comparator targets and solved carrier coefficients. The runner is not a trivial printout: it computes matrices, diagonalizes them, evaluates CKM quantities, and verifies the reported tolerances. However, the load-bearing parameters xi_u and xi_d are tuned degrees of freedom, and the targets are external comparators rather than derived framework outputs. This is therefore class G and supports audited_numerical_match, not audited_clean.
+- **auditor confidence:** high
+
+### `quark_e_channel_endpoint_quotient_law_note_2026-04-19`
+
+- **Note:** [`QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md`](../../docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the imported live endpoint quotient and the specified low-rational scan bounds, the packet audits the bounded rationalization q_E=15/8 and its algebraic consequences r_E=21/4 and, conditionally on a_T/a_E=-2, D_E=21/8.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213044-20260516T213044Z-bb05298a-quark_e_channel_endpoint-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Inside the controlled low-rational endpoint class, the nearest E-channel shell/center quotient to the live value gamma_E(center)/gamma_E(shell)=1.876246... is 15/8.  _(class `G`)_
+- **chain closes:** False — The algebra from q_E=15/8 to r_E=21/4 and D_E=21/8 closes, but the load-bearing identification q_E=15/8 is a nearest-rational match to an imported live endpoint value. The missing step is a retained derivation of the E-center endpoint ratio, and separately the a_T/a_E=-2 bridge for the denominator law.
+- **rationale:** The runner performs real arithmetic checks, but its central step is a low-rational nearest-neighbor selection around the live endpoint quotient supplied by endpoint_readout(), not a first-principles derivation. The cited retained no-go explicitly says rho_E remains free in the restricted Route-2 carrier/readout class unless an additional E-center primitive is supplied. Therefore the bounded candidate is traceable and internally consistent, but the theorem chain does not close.
 - **auditor confidence:** high
 
 ### `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28`

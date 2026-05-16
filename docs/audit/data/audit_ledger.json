@@ -172991,22 +172991,41 @@
       "verdict_rationale": null
     },
     "quark_e_channel_endpoint_quotient_law_note_2026-04-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-16T21:31:05.390047+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 12.628,
+        "runner_hash": "a0c4b66b259e63092402fcdc18e0c7c11d456d7508dbd0ecfd9ca880a4219e5b",
+        "transitive_descendants": 790
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260516-213044-20260516T213044Z-bb05298a-quark_e_channel_endpoint-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from q_E=15/8 to r_E=21/4 and D_E=21/8 closes, but the load-bearing identification q_E=15/8 is a nearest-rational match to an imported live endpoint value. The missing step is a retained derivation of the E-center endpoint ratio, and separately the a_T/a_E=-2 bridge for the denominator law.",
       "claim_id": "quark_e_channel_endpoint_quotient_law_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Given the imported live endpoint quotient and the specified low-rational scan bounds, the packet audits the bounded rationalization q_E=15/8 and its algebraic consequences r_E=21/4 and, conditionally on a_T/a_E=-2, D_E=21/8.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-16T21:31:05.390047+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -173014,18 +173033,18 @@
         "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "effective_status": "audited_numerical_match",
+      "effective_status_reason": "terminal_audit",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_numerical_match",
       "load_bearing_score": 12.628,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Inside the controlled low-rational endpoint class, the nearest E-channel shell/center quotient to the live value gamma_E(center)/gamma_E(shell)=1.876246... is 15/8.",
+      "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "31b250635a725af41c104084f433fcab0eb8e394d89006996f8934d4f0323d2a",
       "note_path": "docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained first-principles derivation of gamma_E(center)/gamma_E(shell)=15/8, then separately close the a_T/a_E=-2 shell-multiplicity bridge before promoting D_E=21/8.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -173111,16 +173130,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 10,
+        "B": 6,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 6,
+        "total_pass": 22
       },
       "runner_path": "scripts/frontier_quark_e_channel_endpoint_quotient_law.py",
       "title": "Quark E-Channel Endpoint Quotient Law",
       "transitive_descendants": 790,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs real arithmetic checks, but its central step is a low-rational nearest-neighbor selection around the live endpoint quotient supplied by endpoint_readout(), not a first-principles derivation. The cited retained no-go explicitly says rho_E remains free in the restricted Route-2 carrier/readout class unless an additional E-center primitive is supplied. Therefore the bounded candidate is traceable and internally consistent, but the theorem chain does not close."
     },
     "quark_endpoint_denominator_admissibility_note_2026-04-19": {
       "audit_date": null,

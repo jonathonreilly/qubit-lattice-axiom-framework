@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 315 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1191 |
+| unaudited | 1190 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 197 |
+| ~~audited_conditional~~ | 198 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 532 |
-| `audited_conditional` | 197 |
+| `audited_conditional` | 198 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1306 |
+| `unaudited` | 1305 |
 
 | claim_type | count |
 |---|---:|
@@ -764,6 +764,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_head_to_head_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -6033,6 +6034,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The in-sample classifier rule (avg_deg >= 10.415 and reach_frac >= 0.859) is applied without refit to nine scripted independent generator families, yielding only 2/9 full-battery passes, 4/9 hard-coded prediction accuracy, and 6/9 no-refit rule accuracy.  _(class `C`)_
 - **chain closes:** True — The live runner rebuilds the nine named generator families, applies the same five-condition battery and frozen rule, and reproduces the negative table: only E1_er_p005 and E2_er_p020 pass, hard-coded predictions score 4/9, and the no-refit classifier rule scores 6/9.
 - **rationale:** The finite negative result closes on its own terms: the checked-in runner contains the nine generator constructors, the hard-coded prediction dictionary, the five-condition battery, and the frozen avg_deg/reach_frac rule, and live replay matches the source note's pass/fail and accuracy claims. The decisive rule failures R1, R3, and X1 all satisfy the frozen structural thresholds but fail the actual battery, while only the two Erdős-Rényi families pass the full package. This clean verdict is narrow: it certifies this deterministic nine-family held-out replay and the checked-in prediction table, not an exhaustive statistical theorem over all independent generator laws or independent timestamp proof beyond the artifact chain.
+- **auditor confidence:** high
+
+### `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the restricted packet's claim that the canonical external 4D Euclidean SU(N) Yang-Mills instanton has minimal |Q|=1 action 8 pi^2/g^2, with stated lattice-topology context and explicit framework-boundary disclaimers.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-215235-20260516T215235Z-485b0149-instanton_4d_action_8pi2-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Bogomolny self-duality bound S[A] >= (8 pi^2/g^2)|Q| is saturated by a |Q|=1 BPST self-dual solution, giving S_inst = 8 pi^2/g^2.  _(class `A`)_
+- **chain closes:** False — The runner algebraically checks the consequence of the Bogomolny bound and note text, but the restricted packet provides no upstream authority or derivation for the bound, topological integrality, BPST existence, or Luescher lattice preservation. The missing step is the actual external-theorem support for those premises within the restricted audit packet.
+- **rationale:** The runner performs real symbolic and numerical checks of S_inst = 8 pi^2/g^2 once the self-duality bound and |Q|=1 saturation are assumed, and it verifies boundary disclaimers in the note. It does not independently derive the external physics theorem, and the prompt supplies no cited authorities in full despite the source note relying on BPST, Atiyah-Singer, and Luescher. Therefore the audited conclusion is conditional on external theorem inputs not closed by the restricted packet.
 - **auditor confidence:** high
 
 ### `inverse_problem_note`

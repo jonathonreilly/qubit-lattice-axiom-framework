@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 315 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1190 |
+| unaudited | 1189 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 198 |
+| ~~audited_conditional~~ | 199 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 532 |
-| `audited_conditional` | 198 |
+| `audited_conditional` | 199 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1305 |
+| `unaudited` | 1304 |
 
 | claim_type | count |
 |---|---:|
@@ -784,6 +784,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `left_handed_charge_matching_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_second_order_kubo_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `matter_radiation_equality_structural_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7410,6 +7411,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The memory failure is not primarily a Yukawa-range artifact: mu^2 matters, but geometry scaling matters more, and the old screening-alone diagnosis is too strong.  _(class `C`)_
 - **chain closes:** True — The registered runner exits 0 and reproduces the scaled-geometry decay and fixed-geometry survival/strengthening tables exactly, including the mu^2=0 and mu^2=0.22 anchor values quoted in the note.
 - **rationale:** The bounded diagnosis closes against scripts/frontier_memory_mu2_size_sweep.py. The current output matches the note's scaled-geometry rows, including N=61 mu2=0 memory +0.020854 vs mu2=0.22 +0.016780 and N=121 mu2=0 +0.001767 vs mu2=0.22 +0.000865, and it matches the fixed-geometry rows, including N=81 mu2=0 +0.231199 vs mu2=0.22 +0.244260 and N=121 mu2=0 +2.580905 vs mu2=0.22 +2.599619. The note does not promote a publication-grade memory claim; it only narrows the failure mode.
+- **auditor confidence:** high
+
+### `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only the narrow open-gate recording of the half-instanton action scale 4π²/g² as an algebraic half of the BPST 8π²/g² action, with regulator/twist/patching assumptions explicitly left load-bearing.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-215313-20260516T215313Z-66970ce6-meron_half_instanton_4pi-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under regularized meron-pair, capped-core, half-volume, or fractional-instanton boundary conditions, the candidate half-instanton scale is S_half = 4π²/g² = (1/2) S_inst.  _(class `A`)_
+- **chain closes:** False — The algebraic half-action identity closes internally, but the physical meron/fractional-instanton boundary construction and external authority for finite half-action sectors are not supplied in the restricted packet. The missing step is a retained derivation or provided authority establishing the regulator/twist/patching hypotheses for the cited sector.
+- **rationale:** The runner correctly verifies the symbolic identity S_half = (1/2)S_inst and checks that the note disclaims unregularized single-meron finite-action status, substrate identification, and hierarchy closure. However, the runner does not derive the regulated meron or fractional-instanton sector from first principles; it assumes the BPST scale and checks text boundaries. Because the note explicitly depends on regulator, twist, pair, cap, or patching data not closed by the restricted packet, the audit remains conditional despite the narrow open-gate framing.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_alternate_family_scout_note`

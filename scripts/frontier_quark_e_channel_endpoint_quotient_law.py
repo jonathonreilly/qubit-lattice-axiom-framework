@@ -40,10 +40,17 @@ AUDIT_TIMEOUT_SEC = 1800
 
 import math
 from dataclasses import dataclass
+from pathlib import Path
 
 from frontier_quark_endpoint_readout_constraints import endpoint_readout
 from frontier_quark_projector_parameter_audit import solve_anchored_surface
 from frontier_quark_up_amplitude_candidate_scan import evaluate_candidate
+
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / "docs"
+PARENT_NOTE = DOCS / "QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md"
+SCOPE_NARROW_NOTE = DOCS / "QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md"
+NATURALITY_NO_GO_NOTE = DOCS / "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md"
 
 
 PASS_COUNT = 0
@@ -328,6 +335,56 @@ def part4_quark_anchored_candidate(d_candidate: float) -> None:
     )
 
 
+def part5_audit_traceability() -> None:
+    print("\n" + "=" * 72)
+    print("PART 5: Audit Traceability Cross-References")
+    print("=" * 72)
+
+    parent_text = PARENT_NOTE.read_text()
+    scope_narrow_text = SCOPE_NARROW_NOTE.read_text()
+    no_go_text = NATURALITY_NO_GO_NOTE.read_text()
+
+    print(f"\n  parent note:        {PARENT_NOTE.name}")
+    print(f"  scope-narrow note:  {SCOPE_NARROW_NOTE.name}")
+    print(f"  naturality no-go:   {NATURALITY_NO_GO_NOTE.name}")
+
+    check(
+        "the parent note exposes its 2026-05-05 audit verdict as audited_numerical_match (class G)",
+        "audited_numerical_match" in parent_text and "class G" in parent_text,
+        "verdict and class are surfaced in the parent note's audit-traceability section",
+    )
+    check(
+        "the parent note names both missing bridge theorems flagged by the audit re-audit guidance",
+        "gamma_E(center)/gamma_E(shell) = 15/8" in parent_text
+        and "a_T/a_E = -2" in parent_text
+        and "missing_bridge_theorem" in parent_text,
+        "both 15/8 and a_T/a_E=-2 missing-bridge-theorem entries appear in the parent note",
+    )
+    check(
+        "the parent note cross-references the 2026-05-10 audited-scope-narrowing companion",
+        "QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md" in parent_text,
+        "scope-narrow companion is reachable from the parent note",
+    )
+    check(
+        "the parent note cross-references the retained Route-2 E-channel naturality no-go",
+        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md" in parent_text,
+        "the retained_no_go authority is named explicitly",
+    )
+    check(
+        "the retained naturality no-go states the conditional non-uniqueness it bounds",
+        "rho_E" in no_go_text
+        and "remains a free parameter" in no_go_text
+        and ("21/4" in no_go_text or "rho_E = 21/4" in no_go_text),
+        "the no-go names rho_E as a free parameter under the granted T-side conditions",
+    )
+    check(
+        "the scope-narrowing companion is internally consistent with the parent note's two missing-bridge names",
+        "gamma_E(center) / gamma_E(shell) = 15/8" in scope_narrow_text
+        and "a_T / a_E = -2" in scope_narrow_text,
+        "both missing bridges appear in the companion as well",
+    )
+
+
 def main() -> int:
     print("Quark E-channel endpoint quotient law")
     print("=" * 72)
@@ -336,6 +393,7 @@ def main() -> int:
     q_e_candidate = part2_small_rational_e_candidate(q_e)
     _r_e_candidate, d_candidate = part3_implied_e_ratio_law(q_e_candidate, r_e, r_t)
     part4_quark_anchored_candidate(d_candidate)
+    part5_audit_traceability()
 
     print("\nVerdict:")
     print(
@@ -348,7 +406,12 @@ def main() -> int:
         "a_T/a_E = -2 together with the exact-support T law r_T = -1, the "
         "anchored denominator candidate D_E = 21/8. This lands on the same "
         "anchored quark branch as the live bounded endpoint solve. It is a "
-        "new bounded derivation candidate, not yet a theorem."
+        "new bounded derivation candidate, not yet a theorem. The bounded "
+        "status is anchored to the retained Route-2 E-channel readout "
+        "naturality no-go (2026-04-28, audited_clean), which proves that the "
+        "exact restricted carrier class plus the granted T-side conditions "
+        "do not force rho_E = 21/4: an additional E-center primitive is "
+        "required before the 15/8 identification can become a derivation."
     )
 
     print("\n" + "=" * 72)

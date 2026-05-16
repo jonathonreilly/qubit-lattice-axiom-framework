@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1208 |
+| unaudited | 1207 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 7 |
-| ~~audited_conditional~~ | 188 |
+| ~~audited_conditional~~ | 189 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 521 |
-| `audited_conditional` | 188 |
+| `audited_conditional` | 189 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 7 |
-| `unaudited` | 1323 |
+| `unaudited` | 1322 |
 
 | claim_type | count |
 |---|---:|
@@ -789,6 +789,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `pmns_corner_transport_active_block_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8096,6 +8097,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** None  _(class `C`)_
 - **chain closes:** True — The C3 Fourier formulas themselves are algebraic, but the scoped claim also requires the projected Cl(3) basis profiles to have zero odd modes and a projected non-Cl(3) commutant generator with nonzero odd mode. Those are established by constructing the Cl(3) gamma matrices, eigenspace projectors, commutant basis, projected span, and literal trace profiles from the stated finite-dimensional axiom data, so the load-bearing closure materially depends on first-principles finite computation rather than only an abstract identity over already-provided inputs.
 - **rationale:** The C3 Fourier formulas themselves are algebraic, but the scoped claim also requires the projected Cl(3) basis profiles to have zero odd modes and a projected non-Cl(3) commutant generator with nonzero odd mode. Those are established by constructing the Cl(3) gamma matrices, eigenspace projectors, commutant basis, projected span, and literal trace profiles from the stated finite-dimensional axiom data, so the load-bearing closure materially depends on first-principles finite computation rather than only an abstract identity over already-provided inputs.
+- **auditor confidence:** high
+
+### `pmns_corner_transport_active_block_note`
+
+- **Note:** [`PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md`](../../docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic readout for 3x3 active hw=1 transport operators in the declared support class S_act: orbit moments recover the seed pair on the aligned patch and the branch bit, while not determining the five-real breaking source.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-212640-20260516T212640Z-e4d7d373-pmns_corner_transport_ac-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given an active transport matrix in the normal form T_act = diag(x_0,x_1,x_2) + diag(y_0,y_1,|y_2|e^{iδ}) C, the trace and forward-cycle orbit averages recover xbar and ybar on the aligned patch, the imaginary forward/backward asymmetry gives the branch bit, and the five-real breaking source is in the orbit-average kernel.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional orbit-moment algebra closes once T_act in S_act is assumed. The restricted packet does not derive from the cited retained authorities that the actual direct corner-to-corner transport operator must satisfy the diagonal-plus-forward-cycle support, diagonal reality, phase-reduction hypotheses, or the seven value-law inputs.
+- **rationale:** Issue: the runner defines active_corner_transport in the claimed S_act form and verifies algebraic consequences of that form. Why this blocks: the cited retained authorities supply the hw=1 sector basis and a broad corner/taste bridge, but not a closed derivation that direct corner transport has this support class or values. Repair target: add or cite a retained bridge theorem deriving the direct transport support/reality/phase-reduction conditions, and separately the seven value-law inputs if full closure is claimed. Claim boundary until fixed: the conditional S_act orbit-moment theorem is valid algebra, but not a first-principles native closure theorem.
+- **open / conditional deps cited:**
+  - `NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`
+  - `PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md`
+  - `PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md`
 - **auditor confidence:** high
 
 ### `pmns_graph_axis_to_active_lane_bridge_note`

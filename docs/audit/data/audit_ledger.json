@@ -157798,22 +157798,45 @@
       "verdict_rationale": "The C3 Fourier formulas themselves are algebraic, but the scoped claim also requires the projected Cl(3) basis profiles to have zero odd modes and a projected non-Cl(3) commutant generator with nonzero odd mode. Those are established by constructing the Cl(3) gamma matrices, eigenspace projectors, commutant basis, projected span, and literal trace profiles from the stated finite-dimensional axiom data, so the load-bearing closure materially depends on first-principles finite computation rather than only an abstract identity over already-provided inputs."
     },
     "pmns_corner_transport_active_block_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-16T21:28:05.992843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra verification that the three specified diagonal involutions on C^3 have three distinct joint sign characters and yield the stated rank-1 sector projectors."
+        },
+        "dep_claim_type": {
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "site_phase_cube_shift_intertwiner_note",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 11.638,
+        "runner_hash": "fae2bb85913dda3d6deffc3abe20274bd5168258189b5352eeea60ac5bc47edd",
+        "transitive_descendants": 796
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-212640-20260516T212640Z-e4d7d373-pmns_corner_transport_ac-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional orbit-moment algebra closes once T_act in S_act is assumed. The restricted packet does not derive from the cited retained authorities that the actual direct corner-to-corner transport operator must satisfy the diagonal-plus-forward-cycle support, diagonal reality, phase-reduction hypotheses, or the seven value-law inputs.",
       "claim_id": "pmns_corner_transport_active_block_note",
-      "claim_scope": null,
+      "claim_scope": "Conditional algebraic readout for 3x3 active hw=1 transport operators in the declared support class S_act: orbit moments recover the seed pair on the aligned patch and the branch bit, while not determining the five-real breaking source.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-16T21:28:05.992843+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -157822,19 +157845,23 @@
         "site_phase_cube_shift_intertwiner_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.638,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given an active transport matrix in the normal form T_act = diag(x_0,x_1,x_2) + diag(y_0,y_1,|y_2|e^{i\u03b4}) C, the trace and forward-cycle orbit averages recover xbar and ybar on the aligned patch, the imaginary forward/backward asymmetry gives the branch bit, and the five-real breaking source is in the orbit-average kernel.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "36b62ff2c5af4522a12cb439e8d6632b4b35d0fe756c085b1219c66ad36694d4",
       "note_path": "docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained narrow theorem deriving the diagonal-plus-forward-cycle support and phase-reduced S_act normal form for the actual direct hw=1 corner transport operator from the retained carrier/cycle inputs.",
+      "open_dependency_paths": [
+        "docs/NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md",
+        "docs/PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md",
+        "docs/PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -157969,16 +157996,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 13,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 13
       },
       "runner_path": "scripts/frontier_pmns_corner_transport_active_block.py",
       "title": "PMNS Corner Transport Active Block",
       "transitive_descendants": 796,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the runner defines active_corner_transport in the claimed S_act form and verifies algebraic consequences of that form. Why this blocks: the cited retained authorities supply the hw=1 sector basis and a broad corner/taste bridge, but not a closed derivation that direct corner transport has this support class or values. Repair target: add or cite a retained bridge theorem deriving the direct transport support/reality/phase-reduction conditions, and separately the seven value-law inputs if full closure is claimed. Claim boundary until fixed: the conditional S_act orbit-moment theorem is valid algebra, but not a first-principles native closure theorem."
     },
     "pmns_current_bank_value_selection_nogo_note": {
       "audit_date": null,

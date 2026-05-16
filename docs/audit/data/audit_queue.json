@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 761,
+    "critical": 760,
     "high": 34,
     "leaf": 269,
     "medium": 154
@@ -5959,30 +5959,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "pmns_corner_transport_active_block_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
-        "site_phase_cube_shift_intertwiner_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "load_bearing_score": 11.638,
-      "note_path": "docs/PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_corner_transport_active_block.py",
-      "transitive_descendants": 796
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -38810,6 +38786,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
-  "total_pending": 1218
+  "ready_count": 20,
+  "total_pending": 1217
 }

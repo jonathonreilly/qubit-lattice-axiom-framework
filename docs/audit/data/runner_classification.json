@@ -12418,7 +12418,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/lattice_nn_high_precision_closure.py"
+      "runner": "scripts/lattice_nn_high_precision_raw_certificate.py"
     },
     "lattice_nn_light_cone_note": {
       "assert_count": 3,
@@ -19811,6 +19811,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_teleportation_native_record_apparatus.py"
+    },
+    "teleportation_native_record_apparatus_scope_split_source_theorem_note_2026-05-16": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_teleportation_native_record_apparatus_scope_split_2026-05-16.py"
     },
     "teleportation_native_transport_theory_note": {
       "assert_count": 0,
@@ -41778,6 +41790,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_teleportation_native_record_apparatus_scope_split_2026-05-16.py": {
+      "assert_count": 1,
+      "claims": [
+        "teleportation_native_record_apparatus_scope_split_source_theorem_note_2026-05-16"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_teleportation_nature_grade_push.py": {
       "assert_count": 0,
       "claims": [
@@ -45188,7 +45215,7 @@
       "dominant_class": null,
       "exists": true
     },
-    "scripts/lattice_nn_high_precision_closure.py": {
+    "scripts/lattice_nn_high_precision_raw_certificate.py": {
       "assert_count": 0,
       "claims": [
         "lattice_nn_high_precision_note"
@@ -48719,12 +48746,12 @@
     "dominant_class_distribution": {
       "A": 165,
       "B": 179,
-      "C": 697,
+      "C": 698,
       "D": 281,
       "none": 419
     },
-    "runners_classified": 1741,
-    "runners_with_C": 891,
+    "runners_classified": 1742,
+    "runners_with_C": 892,
     "runners_with_D": 514
   }
 }

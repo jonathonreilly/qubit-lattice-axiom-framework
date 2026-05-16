@@ -22289,6 +22289,10 @@
       "to": "minimal_axioms_2026-05-03"
     },
     {
+      "from": "teleportation_native_record_apparatus_scope_split_source_theorem_note_2026-05-16",
+      "to": "teleportation_native_record_apparatus_note"
+    },
+    {
       "from": "teleportation_native_transport_theory_note",
       "to": "teleportation_retained_axis_operator_algebra_closure_note"
     },
@@ -47947,7 +47951,7 @@
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [],
-      "note_hash": "a12178aeada2133fda14ef8d39f07a21dc8f6e3001e85b3feee11d5e77ad3ba3",
+      "note_hash": "37f0173985b35e74101450950ac47e63b5e0cdaddf4054b2457d9d39cbddcb83",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md",
       "runner_path": "scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py",
       "title": "Gauge-Vacuum Plaquette First-Sector Completed Triple Current Transfer-Family Boundary"
@@ -54228,13 +54232,13 @@
     },
     "lattice_nn_high_precision_note": {
       "claim_id": "lattice_nn_high_precision_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "bounded support theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
       "deps": [],
-      "note_hash": "f88be214d19d7829f9b886a610e7638a8c3a28acf31c102c577c17c54bb0a6fc",
+      "note_hash": "3a1dc8d5af2cb21c86ce29ee4da7866724b3b894f95fe307efa6a4395ad0eecb",
       "path": "docs/LATTICE_NN_HIGH_PRECISION_NOTE.md",
-      "runner_path": "scripts/lattice_nn_high_precision_closure.py",
+      "runner_path": "scripts/lattice_nn_high_precision_raw_certificate.py",
       "title": "Lattice NN High-Precision Note"
     },
     "lattice_nn_light_cone_note": {
@@ -66697,6 +66701,19 @@
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "title": "Native Teleportation Record Apparatus Note"
     },
+    "teleportation_native_record_apparatus_scope_split_source_theorem_note_2026-05-16": {
+      "claim_id": "teleportation_native_record_apparatus_scope_split_source_theorem_note_2026-05-16",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "teleportation_native_record_apparatus_note"
+      ],
+      "note_hash": "160643fafff762c6e536eab16f090f9be600c806b1e45770c8fecdd16878291c",
+      "path": "docs/TELEPORTATION_NATIVE_RECORD_APPARATUS_SCOPE_SPLIT_SOURCE_THEOREM_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_teleportation_native_record_apparatus_scope_split_2026-05-16.py",
+      "title": "Teleportation Native Record Apparatus Scope Split \u2014 Source Theorem Note"
+    },
     "teleportation_native_transport_theory_note": {
       "claim_id": "teleportation_native_transport_theory_note",
       "claim_type_author_hint": null,
@@ -71984,23 +72001,23 @@
       "decoration": 1,
       "meta": 75,
       "no_go": 52,
-      "none": 1528,
-      "open_gate": 40,
-      "positive_theorem": 151
+      "none": 1527,
+      "open_gate": 41,
+      "positive_theorem": 152
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 837,
+      "bounded_theorem": 836,
       "decoration": 1,
       "meta": 75,
       "no_go": 157,
       "none": 445,
-      "open_gate": 119,
-      "positive_theorem": 607
+      "open_gate": 120,
+      "positive_theorem": 608
     },
-    "edge_count": 9016,
-    "leaf_count": 627,
-    "node_count": 2241,
+    "edge_count": 9017,
+    "leaf_count": 628,
+    "node_count": 2242,
     "root_count": 764,
-    "runners_with_path": 1859
+    "runners_with_path": 1860
   }
 }

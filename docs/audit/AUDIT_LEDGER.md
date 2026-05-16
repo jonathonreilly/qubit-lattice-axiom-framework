@@ -19,16 +19,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 106 |
-| **retained_no_go** | 137 |
-| **retained_bounded** | 313 |
+| **retained_no_go** | 136 |
+| **retained_bounded** | 314 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1194 |
+| unaudited | 1196 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 194 |
-| ~~audited_failed~~ | 19 |
+| ~~audited_failed~~ | 18 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -46,34 +46,34 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 527 |
 | `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
-| `audited_failed` | 63 |
+| `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1309 |
+| `unaudited` | 1311 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 928 |
+| `bounded_theorem` | 927 |
 | `decoration` | 18 |
 | `meta` | 118 |
 | `no_go` | 233 |
-| `open_gate` | 107 |
-| `positive_theorem` | 726 |
+| `open_gate` | 108 |
+| `positive_theorem` | 727 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 1066 |
-| `high` | 56 |
-| `medium` | 260 |
-| `leaf` | 748 |
+| `high` | 57 |
+| `medium` | 259 |
+| `leaf` | 749 |
 
 - **Retained pending chain closure:** 5
 - **Citation cycles detected:** 241
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1741
-- runners with (C) first-principles compute hits: 891
+- runners classified: 1742
+- runners with (C) first-principles compute hits: 892
 - runners with (D) external comparator hits: 514
 - decoration candidates (no C, no D): 207
 
@@ -83,7 +83,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms_2026-05-03` | meta | critical | 857 | 48.24 | `unaudited` | meta |
+| 1 | `minimal_axioms_2026-05-03` | meta | critical | 858 | 48.25 | `unaudited` | meta |
 | 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 837 | 46.21 | `audited_conditional` | ~~audited_conditional~~ |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 822 | 46.19 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 987 | 40.45 | `audited_clean` | **retained_bounded** |
@@ -216,6 +216,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `edge_deletion_boundary_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -272,7 +273,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
@@ -891,7 +891,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `lattice_nn_high_precision_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -3716,6 +3715,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the note asserts the source-span constraints and representative completeness without a cited or inlined bridge, while the runner imports T_M, T_DELTA, and T_Q from an unlisted module and checks rank only after accepting the asserted constraints. Why this blocks: full rank for the checked matrices does not by itself rule out every asymptotic direction in the actual affine source family. Repair target: add or inline a retained derivation tying T_m, T_delta, T_q to the three constraints and proving exhaustive PMNS branch coverage, with runner checks against that bridge. Claim boundary until fixed: the packet supports an algebraic no-go for the stated constraints and enumerated representatives only.
 - **auditor confidence:** high
 
+### `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16`
+
+- **Note:** [`DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md`](../../docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded existence/local-uniqueness certificate for the eight listed reduced-system roots and the chamber-side sign classification on those same eight Krawczyk boxes; no global completeness or exclusion of additional roots was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214349-20260516T214349Z-3cb209cb-dm_pmns_chamber_spectral-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each listed candidate box, the runner verifies axis-by-axis that the Krawczyk operator satisfies K(X) ⊂ int(X), and separately interval-evaluates q + δ - sqrt(8/3) with strict sign on each box.  _(class `A`)_
+- **chain closes:** True — Within the note's bounded scope, the supplied runner source does compute interval Krawczyk inclusions, pairwise box disjointness, and chamber-margin interval signs from the explicit residual formulas and hard-coded box centers. The chain does not close for any stronger 'exactly four roots' or all-permutation chamber-completeness claim, but the note explicitly excludes those claims.
+- **rationale:** The terminal claim is carefully scoped to existence and local uniqueness inside explicit boxes plus strict chamber-margin signs on those boxes. The runner is not a print-only artifact: it implements interval arithmetic, forward-mode interval Jacobians, Krawczyk inclusion checks, disjointness checks, and direct interval chamber-margin checks, producing PASS=18 FAIL=0. The certificate is not first-principles physics closure and relies on hard-coded candidate centers and accepted residual formulas, but for the bounded theorem stated here it is a genuine algebraic/interval verification rather than a renaming or numerical comparator match.
+- **auditor confidence:** medium
+
 ### `dm_pmns_upper_octant_source_cubic_selector_theorem_note_2026-04-20`
 
 - **Note:** [`DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md`](../../docs/DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md)
@@ -4810,19 +4822,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the explicit NMAX=4, MODE_MAX=80, beta=6 matrix tensor_word = diag_c*(N_f+N_fbar)*diag_c*(N_f+N_fbar)^T*diag_c, the runner verifies nonnegative entries, conjugation-swap symmetry, and nonnegative boundary amplitude from the (0,0) unit-vector readout.  _(class `A`)_
 - **chain closes:** True — The one load-bearing dependency is retained_bounded for the finite rho_(p,q)(6) coefficients, and the runner directly constructs the finite fusion matrices, diagonal coefficient matrix, tensor_word, swap matrix, and boundary vector on the stated box. The measured P1-P3 inequalities/symmetry bounds all pass at double precision, while the note explicitly excludes the parent untruncated and physical-readout claims.
 - **rationale:** The scoped finite-packet claim closes because the constructed matrix is exactly the object being audited, the rho coefficient dependency is retained_bounded on the same truncation box, and the runner reports PASS=76, FAIL=0 including P1 min(tensor_word)>=0, P2 ||S*tensor_word - tensor_word*S||_inf < 1e-12, and P3 min(tensor_word*boundary0)>=0. The SU(3) fusion recurrences are used only to define the finite packet's matrices on the box, and the note does not claim the parent spatial-environment matrix-element identity or any untruncated transfer theorem. Residual risk is scope drift into the parent theorem or convergence/Perron claims, which are outside this audit.
-- **auditor confidence:** high
-
-### `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Sampled-grid no-go only: for the explicit beta=6 spatial_pair witness family, explicit listed Z^min triple, optimal scalar fit routine, and 6x6x5x8 grid over tau_transfer, tau_boundary, asym_decay, and linear_decay, every sampled point has strictly positive gap and the sampled argmin is at the stated boundary corner. No continuous-parameter no-go, interval/global lower bound, symbolic monotonicity theorem, or exact framework-point realization claim is audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** On the explicit 1440-point dense grid in the stated parameter box for the beta=6 spatial_pair witness, the minimum sampled scaled-fit gap to the listed completed triple Z^min is 7.791551e-03, so no sampled grid point realizes Z^min exactly.  _(class `C`)_
-- **chain closes:** True — The primary runner exhaustively evaluates the stated finite grid, reports the sampled minimum gap 7.791551e-03, confirms the sampled argmin lies at the stated boundary corner, and explicitly disclaims a continuous/global certificate. The scoped claim is only absence of exact realization on the sampled finite grid, so it closes from the runner output and the listed Z^min target.
-- **rationale:** The no-go is retained only at finite-grid scope: the dense certificate evaluates all 1440 specified grid points and finds a strictly positive minimum gap with zero fraction below the stated corner gap. The source note no longer claims that this proves the full continuous parameter box, and it names interval arithmetic, a global lower-bound optimizer, or an analytic monotonicity theorem as future work for that stronger no-go. Residual risk is only if downstream prose cites this as a continuous-family obstruction rather than a sampled-grid obstruction.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19`
@@ -6953,19 +6952,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the raw NN barrier refinement path, refined h=0.5 and h=0.25 retain a positive far-field distance signal with fixed-strength decay slopes near -1, while alpha=1.5 preserves but flattens the decay.  _(class `C`)_
 - **chain closes:** True — The current runner completed and reproduces the source note's distance rows, signs, slopes, and R^2 values. The cited one-hop dependency is now retained_bounded/audited_clean for the same raw NN finite window including h=1.0,0.5,0.25, so the prior upstream Born/k=0 bridge is closed within the restricted packet.
 - **rationale:** The claim is bounded to the barrier harness and finite h,b grid actually executed by the runner. The live output supports the far-field sign statements, fixed-strength near-1/b decay through h=0.25, and alpha=1.5 flattening comparison, while the audited-clean continuum note supplies the raw NN finite-window Born/k=0 controls. No continuum, universal attraction, or no-barrier branch claim is needed for closure.
-- **auditor confidence:** high
-
-### `lattice_nn_high_precision_note`
-
-- **Note:** [`LATTICE_NN_HIGH_PRECISION_NOTE.md`](../../docs/LATTICE_NN_HIGH_PRECISION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded audit of the h = 0.125 raw-NN float64 overflow claim and the small-lattice step-scale invariance check for normalized detector probabilities and centroid.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e12ea-6c38-7a10-9fac-3f563f86205a`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** For the raw NN kernel at h = 0.125, nl = 321 and the per-edge factor is bounded by 3/h = 24, so the cumulative amplitude scale upper bound 24^321 exceeds float64 max by about 10^135, implying the raw row cannot be evaluated in float64.  _(class `A`)_
-- **chain closes:** False — The small-lattice normalized-probability and centroid invariance check closes for exactly those observables. The overflow conclusion does not close because the runner proves only an upper bound exceeding float64 range; that is not a lower-bound proof or completed raw-run certificate that the actual propagation must overflow.
-- **rationale:** Issue: the load-bearing overflow certificate turns an upper bound on possible amplitude scale into a claim of necessary float64 overflow. Why this blocks: an upper bound above float64 max does not by itself prove the actual amplitudes or intermediate accumulations exceed float64 range. Repair target: provide a completed raw h = 0.125 overflow trace, an interval/lower-bound theorem for the actual kernel, or a runner that certifies unavoidable overflow rather than bounding from above. Claim boundary until fixed: retain only the small-lattice invariance check and the fact that a crude upper bound exceeds float64, not closure of the h = 0.125 raw-kernel gate.
 - **auditor confidence:** high
 
 ### `lattice_nn_light_cone_note`

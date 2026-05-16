@@ -173279,22 +173279,41 @@
       "verdict_rationale": null
     },
     "quark_endpoint_ratio_chain_law_note_2026-04-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-16T21:31:39.542660+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 12.628,
+        "runner_hash": "022077b2a9b9a3f28c1f30cb1480f5334012c6f53fe7edf8cb6bca42f102c795",
+        "transitive_descendants": 790
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260516-213118-20260516T213118Z-38351ce2-quark_endpoint_ratio_cha-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes once the three rational legs are granted. The derivation does not close because the load-bearing identification of those legs, especially gamma_T(center)/gamma_E(center)=-8/9, is a nearest-rational match to live endpoint data rather than a first-principles Route-2 derivation.",
       "claim_id": "quark_endpoint_ratio_chain_law_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Audited the conditional endpoint-ratio chain algebra from the nearest-rational triple {5/6, -2, -8/9} to gamma_E(center)/gamma_E(shell)=15/8, r_E=21/4, and D_E=21/8, plus its traceability to the retained Route-2 E-channel naturality no-go.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-16T21:31:39.542660+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -173302,18 +173321,18 @@
         "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "effective_status": "audited_numerical_match",
+      "effective_status_reason": "terminal_audit",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_numerical_match",
       "load_bearing_score": 12.628,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The three live endpoint ratios are nearest to the small rational candidates {5/6, -2, -8/9}, which then multiply to gamma_E(center)/gamma_E(shell)=15/8.",
+      "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "e1ec0130481ee7deb85221bd8514cbb61c27b426c7929c9810bc828a9f901720",
       "note_path": "docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that any future promotion supplies an independent first-principles derivation of endpoint_readout() or specifically the E-center lift gamma_T(center)/gamma_E(center)=-8/9, rather than another nearest-rational scan.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -173395,16 +173414,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 9,
+        "B": 7,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 5,
+        "total_pass": 21
       },
       "runner_path": "scripts/frontier_quark_endpoint_ratio_chain_law.py",
       "title": "Quark Endpoint Ratio-Chain Law",
       "transitive_descendants": 790,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner computes live endpoint ratios, scans a bounded low-rational grammar, and verifies that the nearest candidates are {5/6, -2, -8/9}; that is class G numerical matching, not a derivation from retained tensor machinery. The downstream multiplication to 15/8, r_E=21/4, and D_E=21/8 is exact conditional algebra. The cited retained no-go explicitly says the third leg -8/9 is equivalent to the missing E-center readout primitive and is not forced by the restricted Route-2 carrier class."
     },
     "quark_endpoint_readout_constraints_note_2026-04-19": {
       "audit_date": null,

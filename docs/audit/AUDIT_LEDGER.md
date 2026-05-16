@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1205 |
+| unaudited | 1204 |
 | meta | 115 |
-| ~~audited_numerical_match~~ | 6 |
+| ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 189 |
 | ~~audited_failed~~ | 19 |
@@ -47,9 +47,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 189 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
-| `audited_numerical_match` | 6 |
+| `audited_numerical_match` | 7 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1320 |
+| `unaudited` | 1319 |
 
 | claim_type | count |
 |---|---:|
@@ -915,6 +915,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
@@ -8429,6 +8430,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Inside the controlled low-rational endpoint class, the nearest E-channel shell/center quotient to the live value gamma_E(center)/gamma_E(shell)=1.876246... is 15/8.  _(class `G`)_
 - **chain closes:** False — The algebra from q_E=15/8 to r_E=21/4 and D_E=21/8 closes, but the load-bearing identification q_E=15/8 is a nearest-rational match to an imported live endpoint value. The missing step is a retained derivation of the E-center endpoint ratio, and separately the a_T/a_E=-2 bridge for the denominator law.
 - **rationale:** The runner performs real arithmetic checks, but its central step is a low-rational nearest-neighbor selection around the live endpoint quotient supplied by endpoint_readout(), not a first-principles derivation. The cited retained no-go explicitly says rho_E remains free in the restricted Route-2 carrier/readout class unless an additional E-center primitive is supplied. Therefore the bounded candidate is traceable and internally consistent, but the theorem chain does not close.
+- **auditor confidence:** high
+
+### `quark_endpoint_ratio_chain_law_note_2026-04-19`
+
+- **Note:** [`QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md`](../../docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the conditional endpoint-ratio chain algebra from the nearest-rational triple {5/6, -2, -8/9} to gamma_E(center)/gamma_E(shell)=15/8, r_E=21/4, and D_E=21/8, plus its traceability to the retained Route-2 E-channel naturality no-go.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213118-20260516T213118Z-38351ce2-quark_endpoint_ratio_cha-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The three live endpoint ratios are nearest to the small rational candidates {5/6, -2, -8/9}, which then multiply to gamma_E(center)/gamma_E(shell)=15/8.  _(class `G`)_
+- **chain closes:** False — The algebra closes once the three rational legs are granted. The derivation does not close because the load-bearing identification of those legs, especially gamma_T(center)/gamma_E(center)=-8/9, is a nearest-rational match to live endpoint data rather than a first-principles Route-2 derivation.
+- **rationale:** The runner computes live endpoint ratios, scans a bounded low-rational grammar, and verifies that the nearest candidates are {5/6, -2, -8/9}; that is class G numerical matching, not a derivation from retained tensor machinery. The downstream multiplication to 15/8, r_E=21/4, and D_E=21/8 is exact conditional algebra. The cited retained no-go explicitly says the third leg -8/9 is equivalent to the missing E-center readout primitive and is not forced by the restricted Route-2 carrier class.
 - **auditor confidence:** high
 
 ### `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 316 |
+| **retained_bounded** | 317 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1193 |
+| unaudited | 1192 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 530 |
+| `audited_clean` | 531 |
 | `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1308 |
+| `unaudited` | 1307 |
 
 | claim_type | count |
 |---|---:|
@@ -418,6 +418,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
+| `nn_lattice_rescaled_continuum_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -7719,6 +7720,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The safe wording is that the widened W = 12, h = 0.25 replay gives a far-tail fit of b^(-1.17) on the tested z >= 5 window, is a strong finite-lattice replay, and is not a universal theorem.  _(class `B`)_
 - **chain closes:** True — The source note explicitly narrows the historical headline to the retained bounded wide-tail replay note. The completed replay log matches the dependency note's frozen values; the live short-budget run timed out just before completion and is not used as negative evidence.
 - **rationale:** The audited claim is the bounded finite-window replay statement, not the broader historical headline. The one-hop dependency is retained_bounded, and the completed runner log reports Born=4.82e-15, k=0=+0.000000, 9/9 TOWARD rows, peak-tail b^(-1.07) with R^2=0.990, and far-tail b^(-1.17) with R^2=0.997, matching the source and dependency notes. Residual risk is only asymptotic/generalization risk, which the source note explicitly excludes.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_continuum_identification_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_CONTINUUM_IDENTIFICATION_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_CONTINUUM_IDENTIFICATION_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-window numerical diagnostic for the field-free slit-detector decoherence subblock of the deterministic-rescale NN harness with BETA = 0.8, K_PHYS = 5.0, SLIT_Y = 3, PHYS_L = 40, through h = 0.03125.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214725-20260516T214725Z-0f9f5ce6-nn_lattice_rescaled_cont-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner directly computes the field-free one-arm detector distributions across h values, fits sigma_arm(h) = C_arm * h^alpha on h <= 0.25 with alpha = 0.5256 and R^2 = 0.9996, then uses that fitted Gaussian-arm model to predict MI and d_TV within 0.0005 for h <= 0.125.  _(class `C`)_
+- **chain closes:** True — The provided runner source actually constructs the lattice, propagates the field-free arms, measures centroids, widths, MI, d_TV, and Born residuals, then performs the fitted scaling and Gaussian-bin prediction checks. The conclusion is bounded to that finite fitted window and does not require a full continuum-operator identification.
+- **rationale:** The load-bearing evidence is a direct numerical computation from the stated NN harness rather than a definition, renaming, external comparator, or imported numerical match. The cited authorities are retained or retained_bounded, and the source note keeps the conclusion within the bounded finite-window diagnostic scope. The runner's guards pass for Born cleanliness, centroid drift, sqrt-h width scaling, and Gaussian-arm MI/d_TV prediction. The audit does not certify a full continuum operator, which the note explicitly excludes.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_kernel_identification_note_2026-05-10`

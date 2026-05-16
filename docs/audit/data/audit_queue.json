@@ -3,7 +3,7 @@
     "critical": 744,
     "high": 35,
     "leaf": 270,
-    "medium": 153
+    "medium": 152
   },
   "cycle_break_target_count": 242,
   "cycle_break_targets": [
@@ -26963,7 +26963,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10",
+      "claim_id": "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -26973,17 +26973,17 @@
       "deps": [
         "lattice_nn_high_precision_note",
         "lattice_nn_deterministic_rescale_note",
-        "lattice_nn_rg_gravity_note",
-        "lattice_nn_continuum_note"
+        "lattice_nn_continuum_note",
+        "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10"
       ],
       "direct_in_degree": 2,
       "effective_status": "unaudited",
-      "load_bearing_score": 4.459,
-      "note_path": "docs/NN_LATTICE_RESCALED_RG_GRAVITY_SATURATION_NOTE_2026-05-10.md",
+      "load_bearing_score": 4.322,
+      "note_path": "docs/NN_LATTICE_RESCALED_OPERATOR_CAUCHY_CONVERGENCE_NOTE_2026-05-10.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/lattice_nn_rescaled_response_exponents.py",
-      "transitive_descendants": 10
+      "runner_path": "scripts/lattice_nn_rescaled_operator_cauchy.py",
+      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -29160,32 +29160,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/lattice_family_validation.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_nn_high_precision_note",
-        "lattice_nn_deterministic_rescale_note",
-        "lattice_nn_continuum_note",
-        "nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "load_bearing_score": 4.322,
-      "note_path": "docs/NN_LATTICE_RESCALED_OPERATOR_CAUCHY_CONVERGENCE_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/lattice_nn_rescaled_operator_cauchy.py",
       "transitive_descendants": 9
     },
     {
@@ -38464,5 +38438,5 @@
     }
   ],
   "ready_count": 8,
-  "total_pending": 1202
+  "total_pending": 1201
 }

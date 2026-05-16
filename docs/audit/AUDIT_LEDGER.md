@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 314 |
+| **retained_bounded** | 315 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1195 |
+| unaudited | 1194 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 528 |
+| `audited_clean` | 529 |
 | `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1310 |
+| `unaudited` | 1309 |
 
 | claim_type | count |
 |---|---:|
@@ -418,6 +418,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
+| `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7730,6 +7731,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** If the scoped kernel were the Schrödinger free-particle propagator, the phase-derived mass m_eff_phase = 2L c2 and the Gaussian-width mass m_eff_width = L/sigma would have to agree, but the runner finds a large and growing disagreement.  _(class `C`)_
 - **chain closes:** False — The runner source appears to compute the lattice amplitudes, fits, and finite-h mismatch rather than hard-code the reported numbers. The chain does not close because the packet does not derive the Gaussian width readout sigma ≈ L/m_eff from the displayed Schrödinger propagator, nor prove that this width mass must equal the phase mass for the fitted detector observable.
 - **rationale:** Issue: the runner supports the finite-h Gaussian magnitude, quadratic phase, and numerical mismatch, but the load-bearing conversion of fitted Gaussian detector width into m_eff_width = L/sigma is an unsupported physical bridge. Why this blocks: the displayed free-particle kernel fixes the phase coefficient, but the packet does not derive a Gaussian magnitude-width law for the same point-source propagator observable. Repair target: add a retained derivation or analytic comparator proving the width-to-mass readout for this exact central-window amplitude pattern. Claim boundary until fixed: the finite-run diagnostic mismatch is supported, but the Schrödinger no-go is conditional on that missing bridge.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_RG_GRAVITY_SATURATION_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_RG_GRAVITY_SATURATION_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-window audit of the canonical 3-edge NN lattice on the deterministic-rescale lane for h in {0.5, 0.25, 0.125, 0.0625} and strengths {1.25e-4, 2.5e-4, 5e-4, 1e-3, 2e-3}, including the fine-h response fit and critical-schedule threshold check.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214510-20260516T214510Z-9f5d869c-nn_lattice_rescaled_rg_g-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The computed fine-h joint fit gives q=1.1923 and p=0.4468, so the h-stable critical schedule scales as h^(-2.6684) and reaches s_critical(0.0625)=1.2847e-01, above the stated small-field threshold 0.01.  _(class `C`)_
+- **chain closes:** True — The runner source actually constructs the lattice, propagates amplitudes, computes gravity/Born/k=0 rows, fits the joint log response, and performs the critical-strength comparison. The cited deterministic-rescale and high-precision notes are retained-grade support for using the Born-clean rescaled lane through the checked spacings.
+- **rationale:** Within the stated finite-window scope, the conclusion follows from a first-principles framework computation rather than from a copied or renamed upstream number. The runner output matches the note's quoted exponents, guards, R^2, and critical-strength value, and the source code shows those values are computed from the lattice propagation and ordinary least-squares fit. The small-field cutoff is a stated harness guard, so the audited conclusion is only that the fitted critical schedule fails that stated guard, not a universal no-go theorem.
 - **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`

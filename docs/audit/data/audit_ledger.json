@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -98487,6 +98486,59 @@
       "runner_path": "scripts/frontier_hierarchy_matsubara_quartic_coefficient_ratio_narrow.py",
       "title": "Hierarchy Matsubara Quartic Coefficient Ratio \u2014 Narrow Algebraic Theorem",
       "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
+    "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow_no_go_note_2026-05-15",
+        "hierarchy_bbs_staggered_taste_blocking_bridge_narrow_no_go_note_2026-05-10",
+        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
+        "plaquette_self_consistency_note",
+        "cl3_sm_embedding_theorem",
+        "hierarchy_formula_honest_status_note_2026-05-10",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "hierarchy_bosonic_bilinear_selector_note",
+        "higgs_mass_from_axiom_note",
+        "minimal_axioms_2026-05-03"
+      ],
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "note_hash": "986b433c329c4d70f4d694c4de0e7b1b7c0684bea6404cd8afcfd1c9437a1d20",
+      "note_path": "docs/HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py",
+      "title": "Hierarchy Meron Substrate Bridge `v = M_Pl * exp(-4 pi^2)` \u2014 SU(2)/SU(3) Substrate Mismatch Narrow No-Go",
       "verdict_rationale": null
     },
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
@@ -240545,7 +240597,7 @@
     "preserved_archived_failed": 44,
     "preserved_existing": 2086,
     "re_audit_required": 0,
-    "row_count": 2130,
-    "seeded_new": 0
+    "row_count": 2131,
+    "seeded_new": 1
   }
 }

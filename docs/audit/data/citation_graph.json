@@ -10673,6 +10673,46 @@
       "to": "minimal_axioms_2026-05-03"
     },
     {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow_no_go_note_2026-05-15"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "hierarchy_bbs_staggered_taste_blocking_bridge_narrow_no_go_note_2026-05-10"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "cl3_sm_embedding_theorem"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "hierarchy_bosonic_bilinear_selector_note"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "higgs_mass_from_axiom_note"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "minimal_axioms_2026-05-03"
+    },
+    {
       "from": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
       "to": "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
     },
@@ -49701,6 +49741,28 @@
       "runner_path": "scripts/frontier_hierarchy_matsubara_quartic_coefficient_ratio_narrow.py",
       "title": "Hierarchy Matsubara Quartic Coefficient Ratio \u2014 Narrow Algebraic Theorem"
     },
+    "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16": {
+      "claim_id": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow_no_go_note_2026-05-15",
+        "hierarchy_bbs_staggered_taste_blocking_bridge_narrow_no_go_note_2026-05-10",
+        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
+        "plaquette_self_consistency_note",
+        "cl3_sm_embedding_theorem",
+        "hierarchy_formula_honest_status_note_2026-05-10",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "hierarchy_bosonic_bilinear_selector_note",
+        "higgs_mass_from_axiom_note",
+        "minimal_axioms_2026-05-03"
+      ],
+      "note_hash": "986b433c329c4d70f4d694c4de0e7b1b7c0684bea6404cd8afcfd1c9437a1d20",
+      "path": "docs/HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py",
+      "title": "Hierarchy Meron Substrate Bridge `v = M_Pl * exp(-4 pi^2)` \u2014 SU(2)/SU(3) Substrate Mismatch Narrow No-Go"
+    },
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
       "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -71983,7 +72045,7 @@
       "bounded_theorem": 394,
       "decoration": 1,
       "meta": 75,
-      "no_go": 52,
+      "no_go": 53,
       "none": 1528,
       "open_gate": 40,
       "positive_theorem": 151
@@ -71992,15 +72054,15 @@
       "bounded_theorem": 837,
       "decoration": 1,
       "meta": 75,
-      "no_go": 157,
+      "no_go": 158,
       "none": 445,
       "open_gate": 119,
       "positive_theorem": 607
     },
-    "edge_count": 9016,
+    "edge_count": 9026,
     "leaf_count": 627,
-    "node_count": 2241,
+    "node_count": 2242,
     "root_count": 764,
-    "runners_with_path": 1859
+    "runners_with_path": 1860
   }
 }

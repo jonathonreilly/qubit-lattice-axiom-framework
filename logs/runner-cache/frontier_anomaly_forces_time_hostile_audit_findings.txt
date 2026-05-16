@@ -1,0 +1,68 @@
+==============================================================================
+ANOMALY-FORCES-TIME HOSTILE AUDIT FINDINGS — VERIFICATION RUNNER
+==============================================================================
+Verifies docs/ANOMALY_FORCES_TIME_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-16.md
+
+Programmatically checks F-C (admission iii routing broken) and
+F-E (cycle-0002 contains cite-only edges marked non-load-bearing).
+F-A (admission i no-go) and F-B (mis-framing) are interpretive findings
+documented in the note's prose but not programmatically checkable.
+
+==============================================================================
+PART 1: F-C — CPT_EXACT_NOTE.md has zero γ_5 occurrences
+==============================================================================
+  [PASS] [A] docs/CPT_EXACT_NOTE.md exists  (path = /Users/jonreilly/Projects/Physics/.claude/worktrees/jolly-maxwell-c50482/docs/CPT_EXACT_NOTE.md)
+  [PASS] [A] CPT_EXACT_NOTE has 0 occurrences of 'gamma_5'  (actual count = 0)
+  [PASS] [A] CPT_EXACT_NOTE has 0 occurrences of 'gamma5'  (actual count = 0)
+  [PASS] [A] CPT_EXACT_NOTE has 0 occurrences of 'γ_5'  (actual count = 0)
+  [PASS] [A] CPT_EXACT_NOTE has 0 occurrences of 'γ5'  (actual count = 0)
+  [PASS] [A] CPT_EXACT_NOTE has 0 occurrences of '\\gamma_5'  (actual count = 0)
+  [PASS] [A] CPT_EXACT_NOTE has 0 occurrences of '\\gamma_\{5\}'  (actual count = 0)
+  [PASS] [A] CPT_EXACT_NOTE references ε(x) (epsilon(x))
+  [PASS] [A] CPT_EXACT_NOTE references C operator / charge conjugation
+
+==============================================================================
+PART 2: F-E — EMERGENT_LORENTZ_INVARIANCE_NOTE.md has back-edge annotation
+==============================================================================
+  [PASS] [A] docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md exists  (path = /Users/jonreilly/Projects/Physics/.claude/worktrees/jolly-maxwell-c50482/docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
+  [PASS] [A] Annotation contains 'cite-only, not promoted'
+  [PASS] [A] Annotation contains 'graph edge deferred'
+  [PASS] [A] Annotation contains 'Planck/Lorentz back-edge'
+  [PASS] [A] Reference to PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23 present (back-edge source)
+
+==============================================================================
+PART 3: F-C support — NO_PER_SITE_CHIRALITY no-go is internal
+==============================================================================
+  [PASS] [A] docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md exists  (path = /Users/jonreilly/Projects/Physics/.claude/worktrees/jolly-maxwell-c50482/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
+  [PASS] [A] Note references Cl(3) algebra
+  [PASS] [A] Note articulates the no-go (no per-site γ_5 / no anti-commuting element)
+
+==============================================================================
+PART 4: F-C support — sister theorem disclaims the identification
+==============================================================================
+  [PASS] [A] Sister theorem note exists  (path = /Users/jonreilly/Projects/Physics/.claude/worktrees/jolly-maxwell-c50482/docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
+  [PASS] [A] Sister theorem references CPT_EXACT_NOTE
+  [PASS] [A] Sister theorem articulates downstream-realization disclaimer
+
+==============================================================================
+PART 5: Verify parent theorem claims we attribute to it
+==============================================================================
+  [PASS] [A] Parent theorem note exists  (path = /Users/jonreilly/Projects/Physics/.claude/worktrees/jolly-maxwell-c50482/docs/ANOMALY_FORCES_TIME_THEOREM.md)
+  [PASS] [A] Parent references ABJ / admission (i)
+  [PASS] [A] Parent references admission (iii)
+  [PASS] [A] Parent claims routing to CPT_EXACT_NOTE for admission (iii)
+  [PASS] [A] Parent claims ε(x) = staggered γ_5 identification
+
+==============================================================================
+SUMMARY: 25 PASS / 0 FAIL
+Class-A pattern hits: 25
+==============================================================================
+
+VERDICT:
+  HOSTILE AUDIT FINDINGS VERIFIED
+  F-C: CPT_EXACT_NOTE has zero γ_5 occurrences (routing claim unsupported)
+  F-E: cycle-0002 back-edge marked 'graph edge deferred' by source author
+  F-C support: NO_PER_SITE_CHIRALITY no-go is internal repo theorem
+  F-C support: sister theorem CLIFFORD_VOLUME_CHIRALITY explicitly disclaims
+  Parent claims correctly attributed (no straw-man critique)
+  dominant_class: A (25 class-A pattern hits)

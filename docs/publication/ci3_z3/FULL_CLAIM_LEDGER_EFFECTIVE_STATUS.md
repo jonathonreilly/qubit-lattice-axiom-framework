@@ -241,7 +241,7 @@ external reviewer will ask about them whether or not they are retained.
 | gravitational decoherence | bounded companion | concrete BMV-class benchmark prediction, but still companion-only and unmeasured | [GRAV_DECOHERENCE_DERIVED_NOTE.md](../../GRAV_DECOHERENCE_DERIVED_NOTE.md)&nbsp;[audit:unaudited] | matrix row `gravitational decoherence` |
 | Proton lifetime | bounded companion | later companion or appendix material, not flagship core | [PROTON_LIFETIME_DERIVED_NOTE.md](../../PROTON_LIFETIME_DERIVED_NOTE.md)&nbsp;[audit:unaudited] | matrix row `Proton lifetime` |
 | Vacuum critical stability | bounded secondary lane | extracted from the current Higgs / vacuum package and useful as a discriminator, but still inherits the current Yukawa / Higgs precision caveat | [VACUUM_CRITICAL_STABILITY_NOTE.md](../../VACUUM_CRITICAL_STABILITY_NOTE.md)&nbsp;[audit:unaudited] | matrix row `Vacuum critical stability` |
-| Magnetic monopole mass | bounded companion | imported phenomenology layer still present | [MONOPOLE_DERIVED_NOTE.md](../../MONOPOLE_DERIVED_NOTE.md)&nbsp;[audit:unaudited] | matrix row `Magnetic monopole mass` |
+| Magnetic monopole mass | bounded companion | imported phenomenology layer still present | [MONOPOLE_DERIVED_NOTE.md](../../MONOPOLE_DERIVED_NOTE.md)&nbsp;[audit:audited_conditional] | matrix row `Magnetic monopole mass` |
 | GW echo null result | bounded companion | later work resolved the compact-object echo question to observational silence rather than a positive timing prediction; this remains companion-only material | [GW_ECHO_NULL_RESULT_NOTE.md](../../GW_ECHO_NULL_RESULT_NOTE.md)&nbsp;[audit:unaudited] | matrix row `GW echo null result` |
 
 ## 4. Live flagship lanes aligned to the matrix

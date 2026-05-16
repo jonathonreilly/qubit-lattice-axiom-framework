@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1198 |
+| unaudited | 1197 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 192 |
+| ~~audited_conditional~~ | 193 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 523 |
-| `audited_conditional` | 192 |
+| `audited_conditional` | 193 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1313 |
+| `unaudited` | 1312 |
 
 | claim_type | count |
 |---|---:|
@@ -783,6 +783,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_grown_combined_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_mutual_information_chokepoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `monopole_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `neutrino_mass_reduction_to_dirac_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7472,6 +7473,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the comparison depends on hard-coded cross-lane row values, but the audit graph only supplies mirror_chokepoint_note and does not supply the dense central-band authority or the mirror boundary-card authority for the cited N=40/NPL_HALF=50 row. Why this blocks: a ranking between lanes cannot be retained from a script that prints constants when one side's registered source and part of the other side's cited surface are absent from the one-hop packet. Repair target: add explicit one-hop dependencies for the dense central-band row and the correct mirror boundary-card row, or replace the runner with one that reads and verifies both frozen outputs directly. Claim boundary until fixed: the note is an intended structural comparison, not an audited ranking.
 - **open / conditional deps cited:**
   - `MIRROR_CHOKEPOINT_NOTE.md`
+- **auditor confidence:** high
+
+### `monopole_derived_note`
+
+- **Note:** [`MONOPOLE_DERIVED_NOTE.md`](../../docs/MONOPOLE_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded lattice mass-shape claim for compact-U(1) monopoles on Z^3, including the conditional Planck-scale numerical prefactor and the stated overclosure consequence.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213602-20260516T213602Z-1d4e6b1a-monopole_derived_note-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The monopole mass is asserted to take the lattice form M_mono = c_lat * beta * (1/a), with c_lat = G_lat(0) = 0.2527, while beta = 1/(4*pi*alpha_EM(a^{-1})) and a^{-1}=M_Pl are imported.  _(class `C`)_
+- **chain closes:** False — The lattice Green-function coefficient is supported as an internal computation, but the full numerical mass claim does not close from the restricted packet because it imports the Wilson action choice, the Planck-scale lattice-spacing pin, and alpha_EM(M_Pl). Step 5 also imports FRW cosmology and the Kibble mechanism.
+- **rationale:** The revised note correctly labels the load-bearing external inputs instead of presenting the 1.43 M_Pl value as closed first-principles output. The runner performs real lattice checks for compact charge quantization and a finite-volume lattice Green-function computation, and it no longer treats the singular bare-action configuration as a self-energy measurement. However, the audited conclusion depends on explicit non-derivation imports, especially alpha_EM(M_Pl) and a^{-1}=M_Pl, so the chain is bounded/conditional rather than clean.
 - **auditor confidence:** high
 
 ### `moonshot_other_testables_note`

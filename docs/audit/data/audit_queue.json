@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 744,
+    "critical": 743,
     "high": 35,
     "leaf": 265,
     "medium": 150
@@ -5959,27 +5959,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dark_energy_eos_note",
-      "claim_scope": null,
-      "claim_type": "decoration",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "load_bearing_score": 11.124,
-      "note_path": "docs/DARK_ENERGY_EOS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dark_energy_eos.py",
-      "transitive_descendants": 788
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -38274,6 +38253,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 2,
-  "total_pending": 1194
+  "ready_count": 1,
+  "total_pending": 1193
 }

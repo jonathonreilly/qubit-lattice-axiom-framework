@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 315 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1189 |
+| unaudited | 1188 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 199 |
+| ~~audited_conditional~~ | 200 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 532 |
-| `audited_conditional` | 199 |
+| `audited_conditional` | 200 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1304 |
+| `unaudited` | 1303 |
 
 | claim_type | count |
 |---|---:|
@@ -690,6 +690,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_family_universality_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dark_energy_eos_note` | decoration | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -2847,6 +2848,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Exact cyclic-group averaging over the explicitly defined 3-cycle C is self-adjoint and idempotent under the Frobenius inner product, so it projects Herm(3) onto the C-fixed subspace; direct exact basis enumeration identifies that subspace as span_R{I, C+C^2, i(C-C^2)} and gives the stated coefficient formula.  _(class `A`)_
 - **chain closes:** True — The theorem closes from the explicit definition of C and P_cyc plus exact finite-dimensional algebra. The parent-row context line is not load-bearing: the row has no dependencies, defines C directly, and the asserted conclusions are independently checkable symbolic identities.
 - **rationale:** The source note is narrowly scoped and the exact runner output reports 26 algebraic checks with no failures, covering the group facts, Hermiticity, idempotence and fixed basis, basis action, and generic compression formula. The generated classifier's decoration-candidate signal arises from the parent-row context check rather than from the theorem's proof obligations, so it does not convert this independent helper theorem into decoration. Residual risk is downstream misuse: later rows must not treat B0/B1/B2 as physical response channels without a separate audited bridge.
+- **auditor confidence:** high
+
+### `dark_energy_eos_note`
+
+- **Note:** [`DARK_ENERGY_EOS_NOTE.md`](../../docs/DARK_ENERGY_EOS_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Narrowed companion claim that the note restates the upstream dark-energy EOS corollary and records lattice-correction, R(t)-model, CPL, and level-spacing diagnostics without independently deriving the spectral-gap-to-Lambda bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-215346-20260516T215346Z-2459efd2-dark_energy_eos_note-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact statement w = -1 is imported as the conclusion of the retained corollary, while this note only restates it and hosts numerical/algebraic companion bookkeeping.  _(class `B`)_
+- **chain closes:** False — The restricted packet provides no cited authorities, while the note depends on an upstream retained corollary, spectral-gap identity, and fixed-R stationary-vacuum closure. The runner hard-codes those premises and still emits stale framework-level falsifiability/DESI claims, so the decoration closure cannot be certified from this packet alone.
+- **rationale:** Issue: the narrowed decoration imports the upstream w = -1 corollary and Lambda_vac = lambda_1(S^3_R) = 3/R^2 bridge, but no upstream authority is provided in the restricted packet. Why this blocks: a decoration verdict requires a supplied parent claim plus standard algebra; here the parent and bridge are only named, while the runner hard-codes them and includes external comparator/falsifiability material. Repair target: provide the retained corollary as the one-hop decoration parent, with its dependency closure visible, and update or slice the runner to the companion-only scope. Claim boundary until fixed: the packet supports only conditional algebraic bookkeeping assuming the upstream identity and fixed-R corollary.
+- **open / conditional deps cited:**
+  - `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`
+  - `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`
+  - `UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md`
+  - `UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md`
 - **auditor confidence:** high
 
 ### `decoherence_action_independence_note`

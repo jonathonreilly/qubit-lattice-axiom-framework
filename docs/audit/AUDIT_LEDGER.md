@@ -42,8 +42,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 525 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 526 |
 | `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
@@ -114,7 +114,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5 | D | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_canonical_projector_connection_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -310,6 +309,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `h0125_wider_replay_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | B | - |
 | `half_plane_chart_equivalence_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
@@ -5631,6 +5631,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The primary audit runner cache completes the reduced h ladder through h=0.125 and matches the source note's negative table. The direct bridge dependency is retained-bounded and supports the larger-family boundary that h=0.125 completion still does not produce Newtonian mass scaling.
 - **rationale:** The source note makes a narrow bounded negative claim, and the current runner cache supports it: Born is machine-clean where readable, k=0 is zero, but the reduced family never produces TOWARD points and the bridge-family dependency remains F~M about 0.50. The claim does not promote a continuum theorem or Newtonian h=0.125 bridge. Residual risk is limited to the finite two-family diagnostic and the exact h=0.125 harnesses.
 - **auditor confidence:** high
+
+### `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29`
+
+- **Note:** [`HADRON_LANE1_B2_DYNAMICAL_SCREENING_BOUNDARY_NOTE_2026-04-29.md`](../../docs/HADRON_LANE1_B2_DYNAMICAL_SCREENING_BOUNDARY_NOTE_2026-04-29.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The narrow no-go that the current beta=6.0 pure-gauge string-tension payload plus a rough 0.96 factor does not determine or close the N_f=2+1 dynamical screening budget for sqrt(sigma).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214129-20260516T214108Z-1c7871c2-hadron_lane1_b2_dynamica-judicial`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The determinant-weighted dynamical measure contains sea-fermion determinant and sea-mass inputs absent from the pure-gauge payload, so the same pure-gauge data are compatible with multiple screening factors and cannot select the B2 factor.  _(class `A`)_
+- **chain closes:** True — The source note is not deriving the physical value of the dynamical screening factor; it is proving an underdetermination/no-go claim. The load-bearing move is an algebraic/logical comparison between the pure-gauge payload and an added determinant-weighted measure, plus the explicit factor-family degeneracy showing non-uniqueness. The runner's PDG-like 440 MeV comparator is incidental to one supporting check and is not needed for the no-go conclusion, so class D is not the right class for the load-bearing step.
+- **rationale:** The source note is not deriving the physical value of the dynamical screening factor; it is proving an underdetermination/no-go claim. The load-bearing move is an algebraic/logical comparison between the pure-gauge payload and an added determinant-weighted measure, plus the explicit factor-family degeneracy showing non-uniqueness. The runner's PDG-like 440 MeV comparator is incidental to one supporting check and is not needed for the no-go conclusion, so class D is not the right class for the load-bearing step.
+- **auditor confidence:** judicial
 
 ### `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30`
 

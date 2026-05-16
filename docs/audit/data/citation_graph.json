@@ -50672,6 +50672,17 @@
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "title": "Industrial SDP Bootstrap \u2014 Lattice \u27e8P\u27e9(\u03b2=6) Bracket Attempt"
     },
+    "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
+      "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "note_hash": "33045b380f0c8393d757e492910e37c1bcab00db989bed694946752d9ad8e05e",
+      "path": "docs/INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py",
+      "title": "4D Instanton Minimal Action `8\u03c0\u00b2/g\u00b2` \u2014 External Narrow Theorem"
+    },
     "interest_map": {
       "claim_id": "interest_map",
       "claim_type_author_hint": null,
@@ -55120,6 +55131,17 @@
       "path": "docs/MEMORY_MU2_GEOMETRY_SWEEP_NOTE_2026-04-11.md",
       "runner_path": "scripts/frontier_memory_mu2_size_sweep.py",
       "title": "Memory `mu^2` / Geometry Sweep Note"
+    },
+    "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
+      "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [],
+      "note_hash": "dab137c70bd776942c237616b5a99fba7b7a9b0cb06d2ebe5a0a6950d52ff625",
+      "path": "docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py",
+      "title": "Meron / Fractional-Instanton Half-Action `4\u03c0\u00b2/g\u00b2` \u2014 External Narrow Gate"
     },
     "meson_charges_from_quark_y_note_2026-05-02": {
       "claim_id": "meson_charges_from_quark_y_note_2026-05-02",
@@ -71609,6 +71631,7 @@
     "hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29",
     "i3_zero_exact_theorem_note",
     "independent_generators_heldout_note",
+    "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
     "interest_map",
     "inverse_problem_note",
     "k_dependence_review_safe_note",
@@ -71689,6 +71712,7 @@
     "matter_inertial_closure_note",
     "memory_decay_diagnosis_2026-04-11",
     "memory_mu2_geometry_sweep_note_2026-04-11",
+    "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
     "mesoscopic_surrogate_alternate_family_scout_note",
     "mesoscopic_surrogate_threshold_2d_note",
     "minimal_axioms_2026-04-11",
@@ -72002,8 +72026,8 @@
       "meta": 75,
       "no_go": 52,
       "none": 1527,
-      "open_gate": 41,
-      "positive_theorem": 152
+      "open_gate": 42,
+      "positive_theorem": 153
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 836,
@@ -72011,13 +72035,13 @@
       "meta": 75,
       "no_go": 157,
       "none": 445,
-      "open_gate": 120,
-      "positive_theorem": 608
+      "open_gate": 121,
+      "positive_theorem": 609
     },
     "edge_count": 9017,
-    "leaf_count": 628,
-    "node_count": 2242,
-    "root_count": 764,
-    "runners_with_path": 1860
+    "leaf_count": 630,
+    "node_count": 2244,
+    "root_count": 766,
+    "runners_with_path": 1862
   }
 }

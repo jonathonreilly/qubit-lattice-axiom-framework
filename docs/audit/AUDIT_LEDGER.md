@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 106 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 312 |
+| **retained_bounded** | 313 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1195 |
-| audit_in_progress | 1 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,8 +42,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 524 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 525 |
 | `audited_conditional` | 193 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
@@ -117,7 +116,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5 | D | - |
-| `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_canonical_projector_connection_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -357,6 +355,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_dimensionless_review_packet_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -6488,6 +6487,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The claim is a finite internal algebraic check: enumerate the 48 signed permutation matrices and test span preservation of the chart generators. The cached runner completes and identifies only +I and -I as covariant, which is sufficient to rule out full O_h covariance of this chart.
 - **rationale:** The no-go does not import an external observable, tuned comparator, or unratified physical bridge; it only tests covariance of explicitly encoded matrices under a finite group action. The runner enumerates all 48 O_h elements, computes individual and joint stabilizers, and verifies the covariance group is exactly {+I, -I}. The final interpretive scope is appropriately negative: sub-route (a), full O_h covariance of the retained chart, is ruled out while other spin-1 routes are left open. Residual risk is runner-artifact level only: the note describes exact verification, while the runner uses floating-point linear algebra, but the finite check is direct and the conclusion is not dependent on an external or calibrated input.
 - **auditor confidence:** high
+
+### `koide_q_bridge_single_primitive_note_2026-04-22`
+
+- **Note:** [`KOIDE_Q_BRIDGE_SINGLE_PRIMITIVE_NOTE_2026-04-22.md`](../../docs/KOIDE_Q_BRIDGE_SINGLE_PRIMITIVE_NOTE_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The restricted packet cleanly supports only the bounded algebraic claim that, assuming the stated cyclic carrier coordinates and named representation/Yukawa face values, the surviving Koide Q bridge faces collapse to the single primitive P_Q = |b|^2/a^2 = 1/2, with physical/source-law identification expressly outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213859-20260516T213837Z-c9cf285b-koide_q_bridge_single_pr-judicial`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Under a = r0/3 and |b|^2 = (r1^2 + r2^2)/36, equal cyclic block power 2r0^2 = r1^2 + r2^2 is equivalent to a^2 = 2|b|^2, hence |b|^2/a^2 = 1/2 and the downstream kappa, Brannen c, and Q identities follow algebraically.  _(class `A`)_
+- **chain closes:** True — The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
+- **rationale:** The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
+- **auditor confidence:** judicial
 
 ### `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`
 

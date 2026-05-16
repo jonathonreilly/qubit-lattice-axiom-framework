@@ -70,7 +70,7 @@
     "audited_conditional": 189,
     "audited_failed": 19,
     "audited_numerical_match": 5,
-    "audited_renaming": 7,
+    "audited_renaming": 8,
     "decoration_under_cl3_color_automorphism_theorem": 5,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
@@ -87,7 +87,7 @@
     "retained_bounded": 312,
     "retained_no_go": 136,
     "retained_pending_chain": 5,
-    "unaudited": 1207
+    "unaudited": 1206
   },
   "retained_pending_chain_count": 5,
   "retained_pending_chain_examples": [

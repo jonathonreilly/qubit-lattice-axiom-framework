@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1207 |
+| unaudited | 1206 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 5 |
-| ~~audited_renaming~~ | 7 |
+| ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 189 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 5 |
-| `audited_renaming` | 7 |
-| `unaudited` | 1322 |
+| `audited_renaming` | 8 |
+| `unaudited` | 1321 |
 
 | claim_type | count |
 |---|---:|
@@ -918,6 +918,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_theta_hierarchy_open_scalar_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -6337,6 +6338,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the internal algebra of the unreduced (1,2) determinant obstruction and the claimed reduced SO(2)-quotient two-slot carrier resolution to kappa = 2.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213011-20260516T213011Z-26a1ba37-koide_mru_weight_class_o-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The scalar charged-lepton lane quotients the ordered doublet coordinates (r_1, r_2) to the single SO(2)-invariant radius rho_perp, so the exact scalar reduction is (r_0,r_1,r_2) -> (rho_+,rho_perp).  _(class `E`)_
+- **chain closes:** False — The algebra closes conditional on the reduced carrier, but the restricted packet provides no independent axiom or retained authority deriving that the physical scalar charged-lepton lane must quotient the ordered real doublet to one radius. The missing step is the scalar-lane SO(2)-quotient bridge.
+- **rationale:** The runner verifies the symbolic algebra for the weighted stationary leaf, unreduced determinant multiplicities, SO(2)-invariance of r_1^2+r_2^2, and the reduced determinant extremum. It does not derive the physical carrier-identification premise; its contested line checks only the rotational invariant and then labels that as the scalar-lane quotient. With no cited authorities, the load-bearing reduction is introduced as a definition/carrier choice rather than derived from independent retained inputs.
 - **auditor confidence:** high
 
 ### `koide_native_dimensionless_review_packet_2026-04-24`

@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 317 |
+| **retained_bounded** | 316 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1189 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 195 |
+| ~~audited_conditional~~ | 196 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -42,9 +42,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 532 |
-| `audited_conditional` | 195 |
+| `audited_conditional` | 196 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
@@ -115,7 +115,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `universal_gr_canonical_projector_connection_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -829,6 +828,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `universal_gr_canonical_projector_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_isotropic_glue_operator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -11291,6 +11291,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Block normalization canonically fixes the invariant A1 core and scalar shift/shear block ratios, but it does not canonically section the E \oplus T1 complement; the residual ambiguity is the connected SO(3) complement orbit.  _(class `A`)_
 - **chain closes:** True — The note's limited support claim is a no-go about normalization data: invariant block norms, ratios, and sign choices do not select a canonical complement section. The runner corroborates this by showing A1 invariance, nontrivial complement SO(3) action, invariant shift/shear ratios, and nonzero normalized-orbit spread.
 - **rationale:** The claim is not that direct universal localization is finished, but that block normalization alone leaves a connected SO(3) complement ambiguity. That conclusion follows as exact algebra over the block decomposition and is supported by the current runner output: PASS=12, FAIL=0. No hidden physical comparator, numerical tuning, or symbol renaming is needed for this limited support/no-go statement.
+- **auditor confidence:** high
+
+### `universal_gr_canonical_projector_connection_note`
+
+- **Note:** [`UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md`](../../docs/UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that the strongest axiom-native completion is the exact Pi_A1 section plus an SO(3) orbit bundle with a natural orbit/Maurer-Cartan connection, rather than a canonical Pi_curv.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-215117-20260516T215117Z-3a7567df-universal_gr_canonical_p-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Covariance forces the complementary data to live in an SO(3)-equivariant bundle, but does not collapse the orbit to a canonical section.  _(class `E`)_
+- **chain closes:** False — The restricted packet provides no cited authorities, runner output, or derivation establishing Pi_A1 invariance, quotient-kernel uniqueness, the Xi_TB carrier, or the valid-frame SO(3) covariance action. The candidate bundle and connection are introduced as the proposed completion rather than derived from closed inputs.
+- **rationale:** The note is appropriately caveated as not supplying a finished canonical Pi_curv, but its bounded conclusion still imports several unclosed premises from the universal stack and Route 2 bridge. With no authorities or runner, the audit cannot verify the asserted exact A1 projector, quotient-kernel uniqueness, or that the residual valid-frame freedom is exactly SO(3). The bundle statement functions partly as a definition of the candidate structure and remains conditional on those missing bridge and covariance facts.
 - **auditor confidence:** high
 
 ### `universal_gr_invariant_frame_obstruction_note`

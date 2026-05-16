@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `dark_energy_eos_note` | decoration | unaudited | critical | 788 | 11.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dark_energy_eos.py` |
-| 2 | `nonlinear_born_gravity_note` | bounded_theorem | unaudited | critical | 788 | 10.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_nonlinear_born_gravity.py` |
+| 2 | `nonlinear_born_gravity_note` | bounded_theorem | audit_in_progress | critical | 788 | 10.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_nonlinear_born_gravity.py` |
 | 3 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | positive_theorem | unaudited | critical | 928 | 14.86 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py` |
 | 4 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | positive_theorem | unaudited | critical | 927 | 13.36 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py` |
 | 5 | `gauge_vacuum_plaquette_bridge_support_note` | positive_theorem | unaudited | critical | 922 | 13.85 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_bridge_support.py` |

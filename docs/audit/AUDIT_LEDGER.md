@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1201 |
+| unaudited | 1200 |
 | meta | 115 |
-| ~~audited_numerical_match~~ | 8 |
+| ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 190 |
 | ~~audited_failed~~ | 19 |
@@ -47,9 +47,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 190 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
-| `audited_numerical_match` | 8 |
+| `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1316 |
+| `unaudited` | 1315 |
 
 | claim_type | count |
 |---|---:|
@@ -913,6 +913,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
+| `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -2304,6 +2305,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting w_A1=1/n_quark, w_perp=(n_quark-1)/n_quark, r^2=1/n_quark, lambda^2=alpha_s/n_pair, and A^2=n_pair/n_color forces rho=1/n_quark, eta=sqrt(n_quark-1)/n_quark, the stated phase identities, and J_0=alpha_s^3 sqrt(n_quark-1)/(n_pair^2 n_color n_quark).  _(class `A`)_
 - **chain closes:** True — Within the note's explicitly bounded scope, every claimed expression follows by direct substitution and simplification from the listed hypotheses. No excluded physical bridge, numerical alpha_s value, or external comparator is needed for this scoped theorem.
 - **rationale:** The audited claim is deliberately narrow: it asserts only algebraic consequences of stated symbolic hypotheses. The runner checks the same algebra at exact symbolic precision and reports 26 class-A passes with no failures. Because the note explicitly excludes derivation of the projector weights, CP radius, Wolfenstein inputs, physical CKM identification, and PDG comparison, those missing bridges do not block the scoped claim.
+- **auditor confidence:** high
+
+### `ckm_down_type_scale_convention_support_note_2026-04-22`
+
+- **Note:** [`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`](../../docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the patched support note's central-value scale-convention numerical match for the down-type CKM mass-ratio lane, including the runner's claim that D1 and D2 are fixed while D3 remains open.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213408-20260516T213408Z-5dce25ea-ckm_down_type_scale_conv-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The framework prediction R_pred = [alpha_s(v)/sqrt(6)]^(6/5) matches the threshold-local PDG ratio R_thresh at +0.20% while missing the common-scale ratio by about +15%.  _(class `G`)_
+- **chain closes:** False — The central-value arithmetic closes as a numerical match, but the theorem chain does not close because the 5/6 bridge and the choice of threshold-local comparator are explicitly not derived from retained inputs.
+- **rationale:** The runner source computes the advertised ratios from embedded retained anchors plus embedded PDG/FLAG comparator values, and it no longer constructs R_common by dividing R_thresh by a hard-coded transport literal. However, the load-bearing claim remains the +0.20% central-value agreement at the threshold-local scale, with the comparator scale and 5/6 exponent imported as open/bounded premises. Under the rubric this is class G numerical match, not a clean theorem-grade closure.
+- **open / conditional deps cited:**
+  - `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`
+  - `QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`
 - **auditor confidence:** high
 
 ### `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10`

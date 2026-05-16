@@ -53996,13 +53996,13 @@
     },
     "lattice_nn_high_precision_note": {
       "claim_id": "lattice_nn_high_precision_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "bounded support theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
       "deps": [],
-      "note_hash": "f88be214d19d7829f9b886a610e7638a8c3a28acf31c102c577c17c54bb0a6fc",
+      "note_hash": "5c9b8c2785d7fc1a93bdbe6485032a0fe4dbfcab3a7cc8cc58ca919e488803fe",
       "path": "docs/LATTICE_NN_HIGH_PRECISION_NOTE.md",
-      "runner_path": "scripts/lattice_nn_high_precision_closure.py",
+      "runner_path": "scripts/lattice_nn_high_precision_raw_certificate.py",
       "title": "Lattice NN High-Precision Note"
     },
     "lattice_nn_light_cone_note": {
@@ -71748,18 +71748,18 @@
       "decoration": 1,
       "meta": 74,
       "no_go": 51,
-      "none": 1533,
+      "none": 1532,
       "open_gate": 40,
-      "positive_theorem": 150
+      "positive_theorem": 151
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 834,
+      "bounded_theorem": 833,
       "decoration": 1,
       "meta": 74,
       "no_go": 156,
       "none": 444,
       "open_gate": 119,
-      "positive_theorem": 610
+      "positive_theorem": 611
     },
     "edge_count": 8976,
     "leaf_count": 629,

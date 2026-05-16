@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `dark_energy_eos_note` | decoration | unaudited | critical | 788 | 11.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dark_energy_eos.py` |
-| 2 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | unaudited | critical | 788 | 11.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_delta_marked_relative_cobordism_no_go.py` |
+| 2 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | audit_in_progress | critical | 788 | 11.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_delta_marked_relative_cobordism_no_go.py` |
 | 3 | `koide_q_bridge_single_primitive_note_2026-04-22` | positive_theorem | unaudited | critical | 788 | 10.62 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_bridge_single_primitive.py` |
 | 4 | `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | critical | 788 | 10.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py` |
 | 5 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | audit_in_progress | critical | 788 | 10.12 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hadron_lane1_b2_dynamical_screening_boundary.py` |

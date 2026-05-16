@@ -28,7 +28,7 @@ Two identities are at issue:
    (`(7/2)^16 / 4^16 = (7/8)^16`).
 2. The **(1/4)** power index is currently asserted via "dimension-4
    effective-potential density" reasoning in
-   [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md),
+   `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`,
    which the audit lane has flagged as `audited_numerical_match` because
    the (1/4) is asserted, not derived from primitives.
 
@@ -284,7 +284,7 @@ Vassilevich heat-kernel + framework Stefan-Boltzmann source lineage.
   (b) `1/D = 4/2^D = 4/N_taste` algebraic identity that ties the (1/4)
       to the staggered taste count in D=4 spacetime.
 - **The "dim-4 V_eff density" hand-wave** in
-  [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+  `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
   is narrowed to a heat-kernel + zeta-regularized dimensional-analysis
   support claim that the audit lane can re-check independently.
 - **Future audit input:** this source note gives the audit lane a
@@ -394,7 +394,7 @@ audit_required_before_effective_status_change: true
 - [`HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md`](HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md)
   — parent narrow source note; provides exact `|det|` closed form at
   `L_s = 2`.
-- [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+- `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
   — source note whose (1/4) compression reading this note narrows to a
   bounded D=4 dimensional-analysis support claim.
 - [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)

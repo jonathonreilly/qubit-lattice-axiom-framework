@@ -9,6 +9,98 @@ source manifold
 **Dedicated verifier:**  
 `scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py`
 
+## Scope and tier
+
+This note is a **bounded structural-regularity claim about the preimage of an
+empirical target** on a framework-derived seed surface. It does **not** derive
+the empirical target triple from the baseline physical `Cl(3)` local algebra
+on the `Z^3` spatial substrate alone.
+
+What is claimed (and what the verifier certifies):
+
+1. on the cited framework-derived fixed native `N_e` seed surface `S_Ne`
+   (see Inputs below), the cited algebraic angle map `F_Ne` admits at least
+   three distinct preimages of the empirical target triple
+   `T = (0.307, 0.0218, 0.545)` to numerical precision, established by a
+   deterministic compact-chart lattice cover (independent of the polished
+   starts listed below) plus local polishing;
+2. at every retained preimage point, the finite-difference Jacobian of
+   `F_Ne` is rank `3` and that rank is stable across two independent
+   step-size scales;
+3. the five cited current exact nonlocal seed-surface selector-family
+   points (`aligned seed`, `low-action stationary`, `high-action stationary`,
+   `constructive eta=1 closure`, `constructive witness`) all miss `T` by
+   macroscopic `chi^2 > 0.03`;
+4. three selector observables (relative action, transport output on the
+   favored column, source cubic) vary by amounts well above their noise floor
+   along the retained preimage representatives, so none of them is constant
+   on the local preimage manifold.
+
+The empirical target `T` is the NuFit 5.3 / PDG normal-ordering best-fit
+central triple
+`(sin^2 theta_12, sin^2 theta_13, sin^2 theta_23) = (0.307, 0.0218, 0.545)`,
+also used as the comparator triple in
+[`DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md`](./DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md)
+and
+[`DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md`](./DM_NEUTRINO_SOURCE_SURFACE_PERTURBATIVE_UNIQUENESS_THEOREM_NOTE_2026-04-17.md).
+It is an **observational comparator**, not a derived framework output. Every
+chi-squared in this note is `(F_Ne(p) - T)^T (F_Ne(p) - T)` and is read as
+"how close in the angle-triple space is the source point `p` to the empirical
+comparator", not as a sub-axiomatic derivation of `T`.
+
+Tier on the audit ledger: this is a **bounded existence-plus-regularity
+sub-derivation conditional on an empirical comparator**. It is the correct
+shape to reduce the `I5` task to a sharper structural question (a missing
+2-real point-selection law on the certified preimage manifold), but it does
+not, by itself, supply that law.
+
+## Inputs (cited authorities)
+
+This note builds on, and re-uses without re-deriving, the following retained
+framework objects. The verifier imports each of them directly from the cited
+runner, so the algebraic identities they assert are also re-checked at the
+preimage representatives in the runner.
+
+- **The canonical `Y_e`/`H_e` Hermitian block** (`canonical_h(x,y,delta)`)
+  — defined and re-used from the PMNS projector-interface note  
+  [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md).
+- **The one-sided active-projector packet readout** (`active_packet_from_h`)
+  — `|U_PMNS|^2 = |U_act(H_e)|^2^T` on the charged-lepton-side branch — from  
+  [`DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md).
+- **The fixed native `N_e` seed pair** `(Xbar_Ne, Ybar_Ne) = (169/300, 23/75)`
+  used as the fixed seed surface center, from  
+  [`DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)
+  and used downstream in
+  [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
+  and
+  [`DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md).
+- **The compact chart `(u_1,u_2,v_1,v_2,delta) -> (x,y,delta)` surjective
+  onto `S_Ne`** (`compact_chart_to_source`) — defined in  
+  [`DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md).
+  The runner re-checks that polished and grid-lifted preimage representatives
+  in fact lie on `S_Ne` (mean-constraint check).
+- **The relative-action observable**
+  `S_rel(H_e || H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3`
+  — from the same observable-relative-action note above.
+- **Selector-family points used in the miss table**:
+  - `aligned seed` is the trivial fixed-seed point with `x = (Xbar_Ne,...)` and
+    `y = (Ybar_Ne,...)`, defined in the observable-relative-action law note.
+  - `low-action stationary` and `high-action stationary` come from  
+    [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
+    (the runner re-uses `favored_column_and_extremal_params`,
+    `closure_point_on_ray`, `constrained_stationary_point`, and
+    `HIGH_SOURCE_REF`, `HIGH_SOURCE_REF_Y`).
+  - `constructive eta=1 closure` and `constructive witness` come from  
+    [`DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md`](./DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md)
+    via `path_point` and `eta_columns_from_active` (the latter under the alias
+    `constructive_eta_columns`).
+
+No additional axioms or imports are introduced. The structural claim items
+(1)-(4) above are independent of the polished hard-coded starts (existence is
+re-established by a deterministic compact-chart lattice cover) and independent
+of the finite-difference step size (rank is re-checked across two
+step-size scales).
+
 ## Summary
 
 The current `I5` gap is now sharper than “derive three PMNS angles somehow.”
@@ -81,42 +173,66 @@ The current theorem asks:
 
 ## 2. Theorem statement
 
-**Theorem (exact PMNS manifold on the fixed native `N_e` seed surface, with
-current nonlocal selector no-go).** On the fixed native `N_e` seed surface:
+**Theorem (preimage existence, regularity, and selector-stack miss on the
+fixed native `N_e` seed surface).** Fix the cited framework objects from the
+Inputs section: the canonical Hermitian block `H_e(x,y,delta)`, the
+charged-lepton-side active packet readout `F_Ne`, the seed pair
+`(Xbar_Ne, Ybar_Ne) = (169/300, 23/75)`, and the compact chart
+`(u_1,u_2,v_1,v_2,delta) -> S_Ne`. Take the empirical comparator triple
+`T := (0.307, 0.0218, 0.545)` (NuFit 5.3 / PDG normal-ordering best-fit
+central values). Then:
 
-1. the physical PMNS angle triple lies in the image of `F_Ne`;
-2. the verifier exhibits multiple distinct exact source points
+1. the empirical comparator `T` lies in the image of `F_Ne` on `S_Ne`;
+2. the verifier exhibits, by two independent constructions
+   (a deterministic compact-chart lattice sweep with local polishing, and a
+   short list of polished hard-coded starts), multiple distinct source points
    `p in S_Ne` with
 
    ```text
-   F_Ne(p) = (0.307, 0.0218, 0.545)
+   F_Ne(p) = T
    ```
 
    to numerical precision;
-3. at each retained exact point, the Jacobian `dF_Ne` has rank `3`;
-4. therefore, on the verified regular patch, the exact preimage
+3. at each retained preimage point, the finite-difference Jacobian `dF_Ne`
+   has rank `3`, and this rank is stable across two independent step-size
+   scales;
+4. therefore, on the verified regular patch, the preimage
 
    ```text
-   F_Ne^(-1)(0.307, 0.0218, 0.545)
+   F_Ne^(-1)(T) cap S_Ne
    ```
 
-   is a local `2`-real source manifold inside the `5`-real seed surface;
-5. current exact nonlocal seed-surface selector-family points
+   is locally a `2`-real source manifold inside the `5`-real seed surface;
+5. the five cited current exact nonlocal seed-surface selector-family points
 
-   - aligned seed,
-   - low-action stationary branch,
-   - high-action stationary branch,
-   - constructive `eta = 1` closure point,
-   - constructive witness,
+   - aligned seed
+     ([observable-relative-action law note](./DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)),
+   - low-action stationary branch
+     ([relative-action stationarity theorem note](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)),
+   - high-action stationary branch
+     ([reduced-surface selector support note](./DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md)),
+   - constructive `eta = 1` closure point
+     ([constructive continuity closure theorem note](./DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md)),
+   - constructive witness
+     ([same constructive continuity note](./DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md)),
 
-   all miss the target triple by macroscopic `chi^2 > 0.03`;
-6. current selector observables vary along the exact PMNS manifold itself:
-   the seed-relative relative action, transport outputs, and source cubic are
-   not constant there.
+   all miss the empirical comparator by `chi^2 > 0.03`;
+6. three selector observables (the seed-relative relative action, the
+   favored-column transport output, and the source cubic
+   `Im(H_12 H_23 H_31)`) all vary by amounts well above the numerical noise
+   floor across the retained preimage representatives, so none of them is
+   constant on the local preimage manifold.
 
-Hence the current exact nonlocal selector stack does **not** close `I5` on the
-charged-lepton-side branch. What remains is a genuinely new `2`-real
-point-selection law on the exact PMNS source manifold.
+Hence the current exact nonlocal selector stack does **not** pick the
+empirical comparator on the charged-lepton-side branch. What remains, on this
+branch, is a genuinely new `2`-real point-selection law on the certified
+preimage manifold.
+
+The theorem is conditional on the empirical comparator `T`. Replacing `T` by
+a different empirical comparator inside the regular patch would carry the
+preimage structure through unchanged (the same `F_Ne` and the same chart) and
+would yield the same structural statement at the new `T`. The theorem does
+not derive `T` from the baseline framework alone.
 
 ## 3. Exact source representatives
 
@@ -236,14 +352,45 @@ Equivalently:
 
 That is the correct `I5` reduction to cite after this theorem.
 
-## 8. Reproduction
+## 8. Audit hygiene
+
+What is not claimed here, and what is:
+
+- **Not claimed**: a first-principles derivation of the empirical PMNS
+  triple `T` from `Cl(3)` on `Z^3`. The triple is used here as an
+  observational comparator only.
+- **Not claimed**: that the polished hard-coded starts in the verifier are
+  themselves framework-derived special points. They are convenience anchors;
+  the existence of preimages of `T` in `S_Ne` is independently re-established
+  by the deterministic compact-chart lattice cover.
+- **Not claimed**: that the rank-`3` claim is exact or analytic. It is a
+  stable finite-difference rank confirmed across two independent step-size
+  scales at the polished preimage representatives.
+- **Claimed**: items (1)-(6) of the theorem statement, each individually
+  certified by the verifier and each individually conditional only on the
+  cited framework authorities plus the empirical comparator `T`.
+
+This shape is the structural existence-plus-regularity claim that is
+appropriate as a `bounded` source-theorem support note. It reduces the live
+`I5` task on the charged-lepton-side branch to the missing point-selection
+law on the certified preimage manifold without making, or relying on, any
+claim to have derived `T`.
+
+## 9. Reproduction
 
 ```bash
 PYTHONPATH=scripts python3 scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py
 ```
 
-Expected:
+Expected (the runner certifies the cited-authority round-trip identities, the
+chart-lattice independent existence sweep, the rank-stability check, the seed
+surface mean-constraint check, the selector-family miss table, and the
+note-text consistency block):
 
 ```text
-PASS=12 FAIL=0
+PASS=27 FAIL=0
 ```
+
+Runtime: about 30 s on a laptop. The dominant cost is the 405-point
+compact-chart lattice sweep with bounded least-squares polishing at each
+start.

@@ -9,7 +9,7 @@ effective status are set by the independent audit lane.
 ## Why this note exists
 
 The 2026-05-05 audit pass on the parent
-[`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
 returned `audited_numerical_match` (load-bearing-step class G,
 criticality `critical`, transitive descendants 265) with the explicit
 verdict:
@@ -130,7 +130,7 @@ diagnostic support note at the audited scope.
 
 ## Dependencies
 
-- [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+- `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
   for the parent audited bounded numerical-diagnostic note.
 - [`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)
   for the sibling endpoint algebra note (prior 2026-05-05 feedback was

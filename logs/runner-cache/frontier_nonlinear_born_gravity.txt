@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_nonlinear_born_gravity.py
-runner_sha256: 69cf00c7af2c6cd8cf806c2978699a664393be9d638b6cd0fb56a40f3171af9f
+runner_sha256: d21ed55a30b5846a3ad5c3fbdf53a1218d817f07e850bfe843a8fd27e238c7ea
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.73
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 ========================================================================
@@ -38,7 +38,7 @@ PART 2: GRAVITATIONAL PHYSICS (mass law + distance law + sign)
     alpha = 1.272   (distance exponent, Newtonian ~ 1.0)
     sign  = attractive   (raw delta = +0.685913)
     mass sweep: M=0.00->delta=+0.266995  M=0.00->delta=+0.544582  M=0.01->delta=+1.113188  M=0.02->delta=+2.189208  
-    (0.2s)
+    (0.1s)
 
   QUADRATIC  psi_out = sum K * |psi_in| * psi_in
     beta  = 0.997   (mass exponent, Newtonian = 1.0)
@@ -72,25 +72,34 @@ CORRELATION ANALYSIS
   Quadratic   Born broken = True   Attractive = False   alpha = 1.63
   Cubic       Born broken = True   Attractive = False   alpha = 1.32
 
-  [PASS] Perfect correlation:
-    - Linear propagator: I_3 = 0, attractive gravity, beta = 1
-    - Nonlinear propagators: I_3 != 0, REPULSIVE gravity
+  Observed on the chosen 2D setup:
+    - Linear:    |I_3|/P = 1.62e-16    attractive = True    beta = 1.014
+    - Quadratic |I_3|/P = 1.94e-01    centroid shift = away (sign flipped)    beta = 0.997
+    - Cubic     |I_3|/P = 2.35e-01    centroid shift = away (sign flipped)    beta = 0.992
 
-  CONCLUSION:
-  The Born rule and attractive Newtonian gravity are both
-  consequences of linear amplitude superposition. Nonlinear
-  modifications that violate I_3 = 0 simultaneously flip the
-  gravitational force sign (attractive -> repulsive) and distort
-  the distance law. Conversely, measuring I_3 = 0 in a
-  gravitational field confirms both the quantum and gravitational
-  sectors of the framework.
+  WHAT THIS DOES AND DOES NOT SHOW
 
-  EXPERIMENTAL IMPLICATION:
-  The diamond NV Born-rule experiment (Sorkin test near a mass)
-  is framework-specific: it tests BOTH the Born rule AND gravity
-  at once. A single measurement constrains both sectors.
+  Shown:
+    (A) Linear amplitude composition with the Born surface gives
+        I_3 = 0 to machine precision (algebraic theorem; see
+        I3_ZERO_EXACT_THEOREM_NOTE.md).
+    (B) For the two specific pointwise nonlinearities tested on
+        this 2D lattice / kernel / coupling, |I_3|/P is far from
+        zero AND the deflection centroid-shift sign is opposite
+        to the linear baseline.
 
-Total runtime: 0.5s
+  NOT shown (do not rely on these wider claims):
+    (C) A universal 'every amplitude nonlinearity breaks both'
+        theorem. Only two nonlinearities are tested.
+    (D) Mass-law failure. beta remains within ~1% of 1.0 for the
+        nonlinear cases; the visible failure is the centroid sign,
+        not the mass scaling.
+    (E) A model-independent simultaneous Born/gravity test. The
+        Sorkin / mass coupling are tied to the framework's chosen
+        propagator and gravity-coupling conventions used elsewhere
+        in the repository.
+
+Total runtime: 0.3s
 
 ----- stderr -----
 

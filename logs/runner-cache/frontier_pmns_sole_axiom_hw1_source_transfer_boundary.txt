@@ -1,19 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py
-runner_sha256: ca419fb94226bd0deb48db03bc381833833cd25d61d3be9004a203aea7457214
+runner_sha256: 88427fc40716fec12b2cd5c051062cf28c483752de26f6344226a0041db0c5d4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
-PMNS SOLE-AXIOM HW=1 SOURCE/TRANSFER BOUNDARY
+PMNS BASELINE HW=1 SOURCE/TRANSFER BOUNDARY
 ========================================================================================
 
 Question:
-  If we derive the canonical hw=1 source/transfer pack itself from the
-  sole axiom Cl(3) on Z^3, do the native source insertions and
-  graph-first transfer frame produce a nontrivial PMNS pack?
+  For the canonical hw=1 sector operator admitted from the upstream
+  PMNS authority chain, does the algebraic projector resolution on the
+  Cl(3) / Z^3 joint character triplet, followed by native source
+  insertion and graph-first forward transport, generate a pack
+  accepted by the retained PMNS closure stack?
 
 ========================================================================================
 PART 1: CLIFFORD/LATTICE AXIOM, NATIVE SOURCES, AND CYCLE FRAME
@@ -26,55 +28,80 @@ PART 1: CLIFFORD/LATTICE AXIOM, NATIVE SOURCES, AND CYCLE FRAME
   [PASS] The graph-first frame is exactly E12,E23,E31
 
 ========================================================================================
-PART 2: SOLE-AXIOM SOURCE INSERTIONS GIVE ONLY TRIVIAL RESPONSE COLUMNS
+PART 2: LOAD-BEARING ALGEBRAIC IDENTITY ON THE JOINT CHARACTER PROJECTORS
 ========================================================================================
-  [PASS] The sole-axiom active/passive blocks are projector-derived, not inserted targets
+  [PASS] P_1 is idempotent: P_1^2 = P_1
+  [PASS] P_2 is idempotent: P_2^2 = P_2
+  [PASS] P_3 is idempotent: P_3^2 = P_3
+  [PASS] P_1 P_2 = 0 (mutual orthogonality)
+  [PASS] P_2 P_3 = 0 (mutual orthogonality)
+  [PASS] P_1 P_3 = 0 (mutual orthogonality)
+  [PASS] I_3 P_1 = P_1
+  [PASS] I_3 P_2 = P_2
+  [PASS] I_3 P_3 = P_3
+  [PASS] P_1 I_3 P_1 = P_1
+  [PASS] P_2 I_3 P_2 = P_2
+  [PASS] P_3 I_3 P_3 = P_3
+  [PASS] sum_i P_i I_3 P_i = sum_i P_i  (stepwise expansion equality)
+  [PASS] sum_i P_i = I_3  (projector resolution of identity)
+  [PASS] sum_i P_i I_3 P_i = I_3  (load-bearing algebraic identity)
+
+========================================================================================
+PART 3: BASELINE SOURCE INSERTIONS GIVE ONLY TRIVIAL RESPONSE COLUMNS
+========================================================================================
+  [PASS] The baseline active/passive blocks are projector-derived, not inserted targets
   [PASS] The active identity resolvent is computed from I - lambda(D-I)
   [PASS] The passive identity-sector resolvent is the scalar identity
-  [PASS] The sole-axiom active source columns are exactly the basis columns e1,e2,e3
-  [PASS] The sole-axiom passive source columns are exactly a scalar multiple of the basis columns
+  [PASS] The baseline active source columns are exactly the basis columns e1,e2,e3
+  [PASS] The baseline passive source columns are exactly a scalar multiple of the basis columns
   [PASS] The active source-derived block is exactly I3
   [PASS] The passive source-derived block is exactly I3
   [PASS] The active/passive kernels are exactly the free scalar kernels
 
 ========================================================================================
-PART 3: GRAPH-FIRST TRANSFER ADDS ONLY FRAME SUPPORT, NOT VALUE DATA
+PART 4: GRAPH-FIRST TRANSFER ADDS ONLY FRAME SUPPORT, NOT VALUE DATA
 ========================================================================================
-  [PASS] Forward transport of the sole-axiom source columns is exactly the cycle matrix
+  [PASS] Forward transport of the baseline source columns is exactly the cycle matrix
   [PASS] The transported source frame matches the graph-first ordered cycle support
   [PASS] No nontrivial cycle values appear: the transferred columns are fixed entirely by the frame  (transported=[[0.+0.j 1.+0.j 0.+0.j]
  [0.+0.j 0.+0.j 1.+0.j]
  [1.+0.j 0.+0.j 0.+0.j]])
 
 ========================================================================================
-PART 4: THE CANONICAL SOLE-AXIOM PACK IS REJECTED BY THE PMNS STACK
+PART 5: THE CANONICAL BASELINE PACK IS REJECTED BY THE PMNS STACK
 ========================================================================================
   [PASS] Local one-sided-minimal PMNS criterion rejects the projector-derived free pack  (active_support=False, passive_support=False, active_monomial=True, passive_monomial=True)
-  [PASS] The PMNS closure stack rejects the canonical sole-axiom hw=1 source/transfer pack  (pair is not on a one-sided minimal PMNS class)
+  [PASS] The PMNS closure stack rejects the canonical baseline hw=1 source/transfer pack  (pair is not on a one-sided minimal PMNS class)
   [PASS] Reason: the derived pair is not on a one-sided minimal PMNS class  (pair is not on a one-sided minimal PMNS class)
-  [PASS] So native source insertion and graph-first transfer do not evade the sole-axiom free boundary
+  [PASS] So native source insertion and graph-first transfer do not evade the baseline free boundary
 
 ========================================================================================
-PART 5: CIRCULARITY GUARD
+PART 6: CIRCULARITY GUARD
 ========================================================================================
-  [PASS] The canonical sole-axiom source/transfer derivation takes no PMNS-side value targets as inputs  (bad=[])
+  [PASS] The canonical baseline source/transfer derivation takes no PMNS-side value targets as inputs  (bad=[])
 
 ========================================================================================
 RESULT
 ========================================================================================
-  Exact sole-axiom source/transfer boundary:
+  Load-bearing algebraic identity (Class A) on Cl(3)/Z^3 hw=1 projectors:
+    sum_i P_i I_3 P_i = sum_i P_i = I_3
+
+  Under the carrier-construction admission (see Admitted-context
+  inputs in the source note), this gives D_act = D_pass = I_3 on the
+  hw=1 triplet, hence:
     - native source insertions give only the basis columns e1,e2,e3
       up to the passive scalar resolvent weight
     - graph-first forward transport fixes only the cycle frame
       E12,E23,E31
-    - the resulting canonical hw=1 source/transfer pack is still the
+    - the resulting canonical hw=1 source/transfer pack is the
       trivial free pack
-    - the PMNS closure stack rejects that pack exactly
+    - the local one-sided-minimal PMNS rejection check and the
+      lower-level PMNS closure stack reject that pack exactly
 
-  So even source insertion plus graph-first transfer do not derive a
-  nontrivial PMNS lane from Cl(3) on Z^3 alone.
+  Scope: the carrier-construction identification is admitted from
+  the upstream PMNS authority chain, not derived inside this packet.
 
-PASS=22 FAIL=0
+PASS=37 FAIL=0
 
 ----- stderr -----
 

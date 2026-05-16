@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_monopole_derived.py
-runner_sha256: 273ca259c0f86e7e85a19c01d3b3df3e10b659527d37fe399f6248aef93933cb
+runner_sha256: acf73fb439f4425b172d0906235a70d2e1869e3170645a2c430619cd4743a64d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.87
+elapsed_sec: 0.64
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -131,7 +131,8 @@ STEP 3: MONOPOLE MASS FROM LATTICE SELF-ENERGY
   Lattice Green's function G(0) [L=64]: 0.249203
   Literature value (infinite volume):    0.2527
 
-  RG running of alpha_EM to Planck scale:
+  RG running of alpha_EM to Planck scale (NAMED NON-DERIVATION IMPORT):
+    [This is a bridge import, not derived from the lattice axioms.]
     alpha_EM^{-1}(M_Z) = 127.9
     b_EM (one-loop) = -8.89
     ln(M_Pl/M_Z) = 39.44
@@ -142,14 +143,19 @@ STEP 3: MONOPOLE MASS FROM LATTICE SELF-ENERGY
   alpha_EM(M_Pl) used: 1/72
   beta = 1/(4*pi*alpha) = 5.738
 
-  3c. MONOPOLE MASS RESULT
+  3c. MONOPOLE MASS -- CONDITIONAL PREFACTOR
   --------------------------------------------------
-    M_mono = c * beta * M_Planck
-           = 0.2492 * 5.738 * 1.221e+19 GeV
+    M_mono = c_lat * beta * M_Planck
+           = 0.2492 (derived) * 5.738 (imported) * 1.221e+19 GeV (pinned)
            = 1.746e+19 GeV
            = 1.43 M_Planck
 
-    Current runner-consistent value: 1.43 M_Planck
+    THIS NUMERICAL PREFACTOR IS CONDITIONAL on the imported
+    alpha_EM^{-1}(M_Pl) = 72.1.
+    The IMPORT-INDEPENDENT statement is M_mono ~ M_Planck across
+    the perturbative-alpha band; see 3e.
+
+    Current runner-consistent conditional prefactor: 1.43 M_Planck
 
   3d. COMPARISON WITH GUT MONOPOLES
     GUT: M_mono ~ M_GUT/alpha_GUT = 2e+16/0.025 = 8.0e+17 GeV
@@ -170,37 +176,52 @@ STEP 3: MONOPOLE MASS FROM LATTICE SELF-ENERGY
     The order-of-magnitude prediction M ~ M_Planck is ROBUST.
 
 ==============================================================================
-STEP 4: NUMERICAL SELF-ENERGY ON L=10 LATTICE
+STEP 4: CONFIGURATION TOPOLOGY CHECK ON L=10 LATTICE
+(NOT a quantitative self-energy measurement; see docstring.)
 ==============================================================================
 
-  Configuration check:
-    Monopoles detected: 20
-    Total charge (must be 0): 0 PASS
+  Topology check (the LOAD-BEARING part of Step 4):
+    Monopole-charged cubes detected: 20
+    (The Wu-Yang discretization spreads the monopole charge
+     over several adjacent cubes along the string; the topology
+     facts we check are 'every charge is integer' and
+     'total charge = 0', which both hold.)
+    Sum of charges (must be 0): 0 PASS
+    Charges are integers to numerical precision: PASS
 
-  Action measurement:
+  Bare Wilson action diagnostic (NOT a self-energy):
     S_vacuum   = -3000.0000
-    S_monopole = -2556.2440
+    S_mono+anti = -2556.2440
     Delta S    = 443.7560
-    E per monopole ~ Delta S / 2 = 221.8780
-    (Finite-volume and Coulomb interaction corrections needed)
+    [Note: Delta S = O(100) here is the string action of the
+     Wu-Yang Dirac string, not the monopole Coulomb self-energy.
+     The Coulomb self-energy contribution per monopole is
+     c_lat = 0.2527 in these units; the rest of Delta S is
+     string artifact. Correct numerical measurement of c_lat
+     requires Monte Carlo free-energy sampling or DeGrand-
+     Toussaint dual-lattice string subtraction, neither of
+     which is implemented in this runner.]
 
-  Physical mass (beta = 3.183):
-    M_mono = 221.8780 * 3.183 * M_Pl
-           = 706.260 M_Pl
-           = 8.623e+21 GeV
+  Topology check across L (charges integer + sum zero):
+     L    n_mono cubes    sum charge   PASS?
+  --------------------------------------------
+     6              20             0    PASS
+     8              20             0    PASS
+    10              20             0    PASS
+    12              20             0    PASS
 
-  Finite-volume corrected:
-    Coulomb correction: 0.628
-    E_corrected = 222.5063
-    M_corrected = 708.260 M_Pl = 8.648e+21 GeV
+  Bare-action diagnostic across L (NOT a self-energy):
+     L    bare Delta S                                   comment
+  ------------------------------------------------------------
+     6        246.0890          dominated by Dirac-string action
+     8        346.7325          dominated by Dirac-string action
+    10        443.7560          dominated by Dirac-string action
+    12        533.5069          dominated by Dirac-string action
 
-  Size dependence (checking convergence):
-     L     Delta S      E/mono      M/M_Pl
-  ----------------------------------------
-     6    246.0890    123.0445     391.663
-     8    346.7325    173.3663     551.842
-    10    443.7560    221.8780     706.260
-    12    533.5069    266.7535     849.103
+  TOPOLOGY CHECK: PASS
+  (Step 4's load-bearing claim is integer-charge + Gauss-law,
+   which holds at every L tested. The bare action is a diagnostic
+   only; it is NOT used to derive c_lat or M_mono.)
 
 ==============================================================================
 STEP 5: OVERCLOSURE -- THE FRAMEWORK REQUIRES INFLATION
@@ -274,21 +295,24 @@ STEP 5: OVERCLOSURE -- THE FRAMEWORK REQUIRES INFLATION
 
 
 ==============================================================================
-SYNTHESIS: MONOPOLE DERIVATION SCORECARD
+SYNTHESIS: MONOPOLE DERIVATION SCORECARD (BOUNDED)
 ==============================================================================
 
   +-------------------------------------------------------------------+
-  |  MAGNETIC MONOPOLE PROPERTIES (derived from lattice axioms)       |
+  |  MAGNETIC MONOPOLE PROPERTIES                                     |
   +-------------------------------------------------------------------+
-  | Property                | Value           | Source                 |
-  |-------------------------+-----------------+------------------------|
-  | Existence               | YES             | compact U(1) on Z^3   |
-  | Charge quantization     | g = 2*pi*n/e    | lattice periodicity    |
-  | Dirac condition         | AUTOMATIC       | compactness theorem    |
-  | Mass                    | 1.43 M_Planck    | lattice self-energy    |
-  | Mass (GeV)              | 1.75e+19    | a = l_Planck           |
-  | Core size               | ~ l_Planck      | lattice regulator      |
-  | Stability               | topological     | pi_1(U(1)) = Z         |
+  | Property                | Value             | Class                |
+  |-------------------------+-------------------+----------------------|
+  | Existence               | YES               | DERIVED (compact U(1))|
+  | Charge quantization     | g = 2*pi*n / e    | DERIVED (periodicity)|
+  | Dirac condition         | AUTOMATIC         | DERIVED (compactness)|
+  | c_lat (BKM coefficient) | 0.2527            | DERIVED (lattice GF) |
+  | Mass shape              | M = c * beta * Mpl| DERIVED              |
+  | Numerical prefactor     | 1.43 M_Planck     | BOUNDED (alpha imp.) |
+  | Mass (GeV) [conditional]| 1.75e+19      | conditional          |
+  | M_mono ~ M_Planck (OOM) | YES               | ROBUST (import-band) |
+  | Core size               | ~ l_Planck        | DERIVED (UV cutoff)  |
+  | Stability               | topological       | DERIVED (pi_1 = Z)   |
   +-------------------------------------------------------------------+
 
   +-------------------------------------------------------------------+
@@ -296,30 +320,43 @@ SYNTHESIS: MONOPOLE DERIVATION SCORECARD
   +-------------------------------------------------------------------+
   | Claim                        | Status    | Comment                |
   |------------------------------+-----------+------------------------|
-  | M ~ 1.43 M_Pl              | DERIVED   | c*beta*M_Pl, c from   |
-  |                              |           | lattice Green's fn     |
-  | Dirac quantization auto     | PROVED    | From compactness of    |
-  |                              |           | U(1) on Z^3 edges     |
+  | M_mono ~ M_Planck (OOM)     | ROBUST    | across alpha^-1 in     |
+  |                              |           | [30, 60] gives M in    |
+  |                              |           | [0.60, 1.21] M_Pl     |
+  | M_mono = 1.43 M_Pl (exact) | BOUNDED   | conditional on imported|
+  |                              |           | alpha_EM(M_Pl)         |
+  | c_lat = 0.2527               | DERIVED   | lattice Coulomb GF     |
+  | Dirac quantization auto     | DERIVED   | compactness of U(1)    |
+  | Step 4 topology check        | PASS      | integer charges + zero |
+  |                              |           | sum at every L tested  |
+  | Step 4 self-energy (numerc)  | NOT DONE  | bare action dominated  |
+  |                              |           | by Dirac-string action |
+  |                              |           | (requires MC / DT sub) |
   | Overclosure w/o inflation   | DERIVED   | Omega ~ 6e+27          |
-  | Inflation required          | DERIVED   | Consistency condition  |
-  | Bounds satisfied             | VERIFIED  | All null results match |
+  | Inflation required          | BOUNDED   | given M ~ M_Pl + FRW   |
+  | Bounds satisfied             | VERIFIED  | flux = 0 with inflation|
   +-------------------------------------------------------------------+
 
-  ASSUMPTIONS (explicit):
-  1. Planck-scale package pin a^(-1) = M_Pl on the accepted physical-lattice reading
-  2. Wilson action (simplest compact U(1) action)
-  3. alpha_EM(M_Pl) one-loop SM RG running from M_Z (gives alpha_inv_Pl ~ 72)
-  4. Standard FRW cosmology for abundance calculation
-  5. Kibble mechanism applies at graph-growth epoch
+  NAMED NON-DERIVATION IMPORTS (load-bearing for the numerical prefactor):
+  1. Wilson action S = -beta * sum cos(Phi_P) -- compact U(1) action choice.
+  2. Planck-scale package pin a^(-1) = M_Pl on the physical-lattice reading.
+  3. alpha_EM(M_Pl) one-loop SM RG running -> alpha_inv ~ 72 (LOAD-BEARING).
+  4. Standard FRW cosmology + Kibble mechanism (Step 5 only).
 
-  WHAT IS NOT DERIVED:
-  - alpha_EM(M_Pl) is computed by one-loop RG running from alpha_EM(M_Z)
-    inputs; full two-loop SM RG and threshold matching are not implemented
-  - Whether inflation actually happened (required, not derived)
-  - Monopole-monopole interaction at short range (lattice artifacts)
+  WHAT IS NOT DERIVED IN THIS NOTE:
+  - The exact value of alpha_EM(M_Pl): one-loop SM RG only; full two-loop
+    plus threshold matching not implemented.
+  - A quantitative independent numerical measurement of c_lat: Step 4 is a
+    topology check, not a self-energy measurement.  MC free-energy or
+    DT string subtraction would be needed and is not implemented here.
+  - Whether inflation actually happened (required, not derived).
+  - Short-range monopole-monopole interactions (lattice artifacts).
+
+  CLAIM TYPE: bounded_theorem
+  CURRENT PUBLICATION DISPOSITION: bounded companion only
 
 
-Total runtime: 0.8s
+Total runtime: 0.5s
 ==============================================================================
 
 ----- stderr -----

@@ -23,7 +23,7 @@ between the L_t = 2 UV Matsubara endpoint and the L_t = 4 IR endpoint
 selected by Klein-four bosonic-bilinear orbit closure. The (1/4) power
 index is currently asserted via "dimension-4 effective-potential
 density" reasoning, and the audit lane has flagged the parent row
-[`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
 as `audited_numerical_match` because the (1/4) is asserted, not derived
 from primitives.
 
@@ -32,7 +32,7 @@ factor as an exact rational identity on the staggered Dirac determinant,
 and reduces the open piece to a single named readout admission (the
 **dim-4 effective-potential-density reading** — `v ∝ A(L_t)^(-1/4)`
 where `A` is the m² coefficient of `Δf` at the symmetric point, per
-[`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
 and [`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)).
 It does NOT close the readout admission itself.
 
@@ -83,7 +83,7 @@ narrow theorem
 This note adds zero new admissions for the algebraic identity itself.
 The cross-endpoint reading in Section 4 lists one named admission
 (**dim-4 effective-potential-density readout** — see
-[`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
 for the dimensional-analysis primitive and
 [`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)
 for the exact `A(L_t)` endpoint formulas).
@@ -254,7 +254,7 @@ readout (R)** as the framework's identification of `v`. This
 admission is structurally clean (D = 4 spacetime dimensions; v has
 mass dim 1; V_eff has mass dim 4; standard Stefan-Boltzmann scaling)
 and directly inherits from
-[`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md).
+`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`.
 However, the framework does **not** independently derive (R) from
 the retained primitive stack. Specifically:
 
@@ -285,7 +285,7 @@ is a fermion-eigenvalue scale, not the EWSB VEV. The current
 dim-4-density reading is structurally cleaner: it gives the same
 `(7/8)^(1/4)` compression but via D = 4 Stefan-Boltzmann-style
 dimensional scaling — the same primitive that
-[`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
 established as the appropriate mapping between the L_t residual and
 the EWSB scale.
 
@@ -369,7 +369,7 @@ will evaluate the load-bearing class and any later status.
   readout.
 - **The (1/4) power index** is organized by the dim-4
   effective-potential-density readout admission
-  ([`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md))
+  (`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`)
   and the exact endpoint values
   ([`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)).
   The 1/4 is the `D = 4` dimensional bookkeeping inside that admission:
@@ -416,7 +416,7 @@ will evaluate the load-bearing class and any later status.
 ### v compression chain
 - [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)
   — Klein-four orbit selection of L_t = 4 (inherited).
-- [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+- `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
   — auditor flagged `audited_numerical_match`; this note supplies exact
   source-note support for the (7/8) factor.
 - [`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)

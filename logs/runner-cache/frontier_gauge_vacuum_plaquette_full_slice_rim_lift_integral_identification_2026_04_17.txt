@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py
+runner_sha256: 951d31aaa6f71d63507e6c1fa803af91e11db12b81f72c50afff4f569230e82a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.27
+status: ok
+----- stdout -----
+================================================================================================================
+GAUGE-VACUUM PLAQUETTE FULL-SLICE RIM-LIFT INTEGRAL IDENTIFICATION (SU(2) toy)
+================================================================================================================
+
+Wilson coupling beta                = 6.0
+Haar samples per integral           = 600000
+Slice-boundary samples              = 3
+Paired-MC Fubini tolerance          = 1.0e-02
+
+Toy geometry: two rim plaquettes both touching slice link U,
+plus one disjoint beyond-rim plaquette. The single-link slice U is absorbed
+by Haar substitution inside the rim chain, while the far factor is
+disjoint from U, so the
+toy verifies the STRUCTURAL Fubini factorisation but B(U) and F(U)
+are U-independent at MC precision in this toy (separate from the
+physical multi-link slice setting).
+
+sample        Re Tr U           B(U)           F(U)            B*F         psi(U)    |psi-B*F|/psi
+  0         -0.970725   2.401193e+01   4.886941e+00   1.173449e+02   1.176798e+02        2.846e-03
+  1         +0.691420   2.388375e+01   4.868277e+00   1.162727e+02   1.170498e+02        6.639e-03
+  2         -0.046920   2.376884e+01   4.867750e+00   1.157008e+02   1.148116e+02        7.744e-03
+
+  [PASS] [SUPPORT] Upstream transfer theorem defines eta_beta(W) as the rim-induced boundary state on the edge slice
+  [PASS] [SUPPORT] Rim-lift note records the load-bearing rim integral identification
+  [PASS] [SUPPORT] Rim-lift note records the compressed descendant eta = P_cls B
+  [PASS] [SUPPORT] Compressed-rim-uniqueness note records that the full slice lift B_beta(W) is the remaining open object
+  [PASS] [THEOREM] Joint slice marginal factorises as rim integral times beyond-rim slice factor on all U samples (Fubini)
+         max |psi(U) - B(U)*F(U)| / psi(U) = 7.744e-03  (tol = 1.0e-02)
+  [PASS] [SUPPORT] Toy single-link slice: B(U) and F(U) variances are at MC precision (slice-link absorbed by Haar)
+         std(B)/mean(B) = 0.004156, std(F)/mean(F) = 0.001831  (MC 5 sigma = 0.006455)
+  [PASS] [THEOREM] Rim integrand uses local Wilson action coupling beta/3 on the rim plaquette holonomies
+         rim weight constructed as exp[(beta/3) (Re Tr V_r1 + Re Tr V_r2)] per the note's A^rim
+
+THEOREM PASS=2 SUPPORT=5 FAIL=0
+
+----- stderr -----
+

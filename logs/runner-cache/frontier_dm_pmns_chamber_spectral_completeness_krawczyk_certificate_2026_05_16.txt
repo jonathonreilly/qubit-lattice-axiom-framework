@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_pmns_chamber_spectral_completeness_krawczyk_certificate_2026_05_16.py
+runner_sha256: 8ec7c8af71251b5deaa77ee76925bd6dabdc6ab59d1f56366227e014afb72b84
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================================
+DM PMNS chamber spectral completeness — Krawczyk-interval certificate
+========================================================================================
+
+Part 1: refine candidate triples to Krawczyk-precision (Newton-step under interval).
+        (Each candidate triple was already refined to residual ~1e-13 in the parent runner.)
+
+Part 2: Krawczyk certification on sigma=(2,1,0) (radius = 1e-06).
+    [Basin 1] Jmid det = 9.948e+00; margins (lower, upper) per axis = (+9.99e-07, +9.99e-07)  (+9.99e-07, +9.99e-07)  (+9.99e-07, +9.99e-07)
+  [PASS] sigma=(2,1,0) Basin 1: Krawczyk K(X) ⊂ int(X)
+    [Basin 2] Jmid det = 2.987e+02; margins (lower, upper) per axis = (+9.81e-07, +9.81e-07)  (+9.88e-07, +9.88e-07)  (+9.87e-07, +9.87e-07)
+  [PASS] sigma=(2,1,0) Basin 2: Krawczyk K(X) ⊂ int(X)
+    [Basin N] Jmid det = -7.495e+00; margins (lower, upper) per axis = (+1.00e-06, +1.00e-06)  (+9.99e-07, +9.99e-07)  (+9.99e-07, +9.99e-07)
+  [PASS] sigma=(2,1,0) Basin N: Krawczyk K(X) ⊂ int(X)
+    [Basin P] Jmid det = 1.013e+02; margins (lower, upper) per axis = (+9.48e-07, +9.48e-07)  (+9.49e-07, +9.49e-07)  (+8.51e-07, +8.51e-07)
+  [PASS] sigma=(2,1,0) Basin P: Krawczyk K(X) ⊂ int(X)
+
+Part 3: Krawczyk certification on sigma=(2,0,1) (radius = 1e-06).
+    [Basin X] Jmid det = -1.340e+02; margins (lower, upper) per axis = (+9.95e-07, +9.95e-07)  (+9.97e-07, +9.97e-07)  (+9.96e-07, +9.96e-07)
+  [PASS] sigma=(2,0,1) Basin X: Krawczyk K(X) ⊂ int(X)
+    [X_a] Jmid det = 1.908e+02; margins (lower, upper) per axis = (+8.15e-07, +8.15e-07)  (+8.23e-07, +8.23e-07)  (+3.93e-07, +3.93e-07)
+  [PASS] sigma=(2,0,1) X_a: Krawczyk K(X) ⊂ int(X)
+    [X_b] Jmid det = -2.503e+01; margins (lower, upper) per axis = (+9.94e-07, +9.94e-07)  (+9.92e-07, +9.92e-07)  (+9.93e-07, +9.93e-07)
+  [PASS] sigma=(2,0,1) X_b: Krawczyk K(X) ⊂ int(X)
+    [X_c] Jmid det = 1.259e+01; margins (lower, upper) per axis = (+9.99e-07, +9.99e-07)  (+9.99e-07, +9.99e-07)  (+9.97e-07, +9.97e-07)
+  [PASS] sigma=(2,0,1) X_c: Krawczyk K(X) ⊂ int(X)
+
+Part 4: pairwise disjointness of Krawczyk boxes.
+  [PASS] sigma=(2,1,0) Krawczyk boxes are pairwise disjoint  (4 boxes)
+  [PASS] sigma=(2,0,1) Krawczyk boxes are pairwise disjoint  (4 boxes)
+
+Part 5: certified chamber-side sign on (Basin 1, Basin 2, Basin X).
+  [PASS] chamber margin (q + delta - sqrt(8/3)) > 0 over Basin 1 Krawczyk box  (interval = [+1.584917e-02, +1.586185e-02])
+  [PASS] chamber margin (q + delta - sqrt(8/3)) > 0 over Basin 2 Krawczyk box  (interval = [+2.410043e+01, +2.410044e+01])
+  [PASS] chamber margin (q + delta - sqrt(8/3)) > 0 over Basin X Krawczyk box  (interval = [+1.313626e+01, +1.313627e+01])
+
+Part 6: certified off-chamber sign on (Basin N, Basin P, X_a, X_b, X_c).
+  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over Basin N Krawczyk box  (interval = [-3.535383e-01, -3.535284e-01])
+  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over Basin P Krawczyk box  (interval = [-1.529559e+00, -1.529486e+00])
+  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over X_a Krawczyk box  (interval = [-1.637325e+00, -1.637181e+00])
+  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over X_b Krawczyk box  (interval = [-2.786845e-01, -2.786497e-01])
+  [PASS] chamber margin (q + delta - sqrt(8/3)) < 0 over X_c Krawczyk box  (interval = [-4.968046e-01, -4.967833e-01])
+
+Part 7: scope statement.
+        This certificate proves EXISTENCE and LOCAL UNIQUENESS of
+        the listed 4+4 ordered-eigenvalue roots (Krawczyk on disjoint boxes)
+        and CHAMBER-SIDE SIGN on Basin 1, Basin 2, Basin X (in-chamber) and
+        Basin N, Basin P, X_a, X_b, X_c (off-chamber).
+        It does NOT certify an upper bound on the number of additional real
+        ordered roots outside the listed 8 boxes; that upper bound is still
+        only supported by the parent runner's all-permutation chamber multistart
+        search and is therefore not part of this certificate.
+        See docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md.
+
+========================================================================================
+PASS=18  FAIL=0
+
+----- stderr -----
+

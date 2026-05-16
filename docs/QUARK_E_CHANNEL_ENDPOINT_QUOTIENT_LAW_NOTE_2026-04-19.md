@@ -190,6 +190,60 @@ It can now ask more sharply:
 If either of those lands, the `E`-channel law stops being a floating bounded
 number.
 
+## 7. Audit traceability
+
+This note was audited 2026-05-05 with verdict
+`audited_numerical_match` (class G, `chain_closes = false`). The audit
+verdict is precise: the closed-form algebra from `q_E = 15/8` to
+`r_E = 21/4` and `D_E = 21/8` is exact, but the load-bearing
+identification `q_E = 15/8` is a nearest-rational match to an imported
+live endpoint value `gamma_E(center)/gamma_E(shell) = 1.876246...`
+rather than a derivation from retained tensor machinery. The re-audit
+guidance names two missing bridge theorems explicitly:
+
+```text
+missing_bridge_theorem: provide a retained first-principles derivation
+of gamma_E(center)/gamma_E(shell) = 15/8, and separately close the
+a_T/a_E = -2 bridge before promoting the denominator law.
+```
+
+The scope-narrowing companion
+`QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`
+isolates the within-scope content that the audit accepts as conditional
+closed-form algebra, versus the two named missing bridge theorems that
+would be required to promote the row.
+
+A retained, audited no-go bounds the first of those two missing bridges:
+
+> [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+> (`retained_no_go`, `audited_clean`, 28 PASS / 0 FAIL).
+
+That no-go proves that in the exact restricted Route-2 carrier/readout
+class, after granting the two T-side candidates
+`beta_T/alpha_T = -1` and `alpha_T/alpha_E = -2`, the E-channel readout
+entry `rho_E = beta_E/alpha_E` remains a free parameter unless an
+additional E-center endpoint ratio, source-domain, or readout-map
+primitive is supplied. Under that no-go, `rho_E = 21/4` is equivalent
+to the endpoint ratio `gamma_T(center)/gamma_E(center) = -8/9`, but it
+is not derived by carrier linearity, shell normalization, T-side
+transfer, or low-rational naturality alone.
+
+So the bounded status of this note is not merely an unresolved gap; it
+is anchored to a retained no-go boundary. Any future promotion of this
+row must either:
+
+1. supply the additional E-center primitive named by the
+   `naturality_no_go` (a source-domain rule, a tensor readout-map
+   theorem beyond the restricted carrier columns, or an equivalent
+   E-center lift), and only then can a derivation of `15/8` from
+   tensor machinery proceed; or
+2. supply a separate retained shell-multiplicity theorem deriving
+   `a_T/a_E = -2` from shell-counting algebra, narrowing the open
+   derivation problem to the first identification only.
+
+Neither bridge is supplied by the current packet. The 2026-05-10
+companion records that the audit explicitly accepts this scope.
+
 ## Honest endpoint
 
 The current best theory-first bounded candidate is:
@@ -203,7 +257,12 @@ gamma_E(center)/gamma_E(shell) = 15/8
 This is useful new science because it rationalizes the remaining `E`-channel
 primitive into one controlled endpoint law candidate. But it is still bounded,
 not retained, because the current theorem stack does not yet derive `15/8`
-from exact tensor machinery.
+from exact tensor machinery. The retained no-go in
+`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`
+makes the obstruction explicit: in the exact restricted Route-2
+carrier/readout class with the granted T-side candidates, `rho_E`
+remains a free parameter, so a `15/8` derivation requires an
+additional E-center primitive beyond the retained carrier surface.
 
 ## Validation
 
@@ -215,4 +274,13 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_e_channel_endpoint_quotient_la
 
 Current expected result on this branch:
 
-- `frontier_quark_e_channel_endpoint_quotient_law.py`: `PASS=16 FAIL=0`
+- `frontier_quark_e_channel_endpoint_quotient_law.py`: `PASS=22 FAIL=0`
+
+The runner now exercises an explicit `PART 5: Audit Traceability
+Cross-References` block in addition to the original four parts. The
+extra checks assert that the parent note exposes its 2026-05-05 audit
+verdict, names both missing bridge theorems, and cross-references both
+the 2026-05-10 scope-narrowing companion and the retained
+`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`.
+This keeps the bounded status formally traceable from the runner
+output without altering the bounded scope of the law candidate itself.

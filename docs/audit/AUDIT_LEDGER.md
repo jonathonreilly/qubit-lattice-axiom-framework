@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 106 |
+| **retained** | 107 |
 | **retained_no_go** | 136 |
 | **retained_bounded** | 314 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1196 |
+| unaudited | 1195 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 527 |
+| `audited_clean` | 528 |
 | `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1311 |
+| `unaudited` | 1310 |
 
 | claim_type | count |
 |---|---:|
@@ -378,6 +378,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_nn_high_precision_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_nn_light_cone_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_nn_rg_alpha_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -6953,6 +6954,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The current runner completed and reproduces the source note's distance rows, signs, slopes, and R^2 values. The cited one-hop dependency is now retained_bounded/audited_clean for the same raw NN finite window including h=1.0,0.5,0.25, so the prior upstream Born/k=0 bridge is closed within the restricted packet.
 - **rationale:** The claim is bounded to the barrier harness and finite h,b grid actually executed by the runner. The live output supports the far-field sign statements, fixed-strength near-1/b decay through h=0.25, and alpha=1.5 flattening comparison, while the audited-clean continuum note supplies the raw NN finite-window Born/k=0 controls. No continuum, universal attraction, or no-barrier branch claim is needed for closure.
 - **auditor confidence:** high
+
+### `lattice_nn_high_precision_note`
+
+- **Note:** [`LATTICE_NN_HIGH_PRECISION_NOTE.md`](../../docs/LATTICE_NN_HIGH_PRECISION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the narrow claim that the specified raw nearest-neighbor lattice kernel is numerically evaluable at h = 0.125 in arbitrary precision and yields a Born-clean row consistent with the cached deterministic-rescale observables.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214435-20260516T214435Z-dbef18a3-lattice_nn_high_precisio-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary runner directly evaluates the raw NN kernel at h = 0.125 in mpmath and returns a Born-clean observable row matching the deterministic-rescale row to displayed precision.  _(class `C`)_
+- **chain closes:** True — The included runner source genuinely constructs the NN lattice, propagates the raw kernel in mpmath, computes the listed observables, and exits successfully. The conclusion closes for the narrow h = 0.125 numerical certificate, not for any continuum h -> 0 theorem.
+- **rationale:** The load-bearing step is an actual first-principles numerical computation of the raw kernel row from the supplied lattice algorithm, not merely a printed constant or a definition substitution. The runner does hard-code deterministic-rescale comparison values, but the audited positive core is the raw mpmath h = 0.125 row and Born-clean result, which is computed directly. The deterministic-rescale match is checked only to rounded/displayed precision for the main observables, with Born differing at about float64 roundoff scale, so the clean verdict is limited to the note's narrow numerical gate and not a broader exact-invariance theorem.
+- **auditor confidence:** medium
 
 ### `lattice_nn_light_cone_note`
 

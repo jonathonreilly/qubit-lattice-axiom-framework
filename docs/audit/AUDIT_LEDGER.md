@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 317 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1192 |
+| unaudited | 1191 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 194 |
+| ~~audited_conditional~~ | 195 |
 | ~~audited_failed~~ | 18 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 531 |
-| `audited_conditional` | 194 |
+| `audited_conditional` | 195 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1307 |
+| `unaudited` | 1306 |
 
 | claim_type | count |
 |---|---:|
@@ -744,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_propagating_field_radical_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | F | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -4826,6 +4827,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the explicit NMAX=4, MODE_MAX=80, beta=6 matrix tensor_word = diag_c*(N_f+N_fbar)*diag_c*(N_f+N_fbar)^T*diag_c, the runner verifies nonnegative entries, conjugation-swap symmetry, and nonnegative boundary amplitude from the (0,0) unit-vector readout.  _(class `A`)_
 - **chain closes:** True — The one load-bearing dependency is retained_bounded for the finite rho_(p,q)(6) coefficients, and the runner directly constructs the finite fusion matrices, diagonal coefficient matrix, tensor_word, swap matrix, and boundary vector on the stated box. The measured P1-P3 inequalities/symmetry bounds all pass at double precision, while the note explicitly excludes the parent untruncated and physical-readout claims.
 - **rationale:** The scoped finite-packet claim closes because the constructed matrix is exactly the object being audited, the rho coefficient dependency is retained_bounded on the same truncation box, and the runner reports PASS=76, FAIL=0 including P1 min(tensor_word)>=0, P2 ||S*tensor_word - tensor_word*S||_inf < 1e-12, and P3 min(tensor_word*boundary0)>=0. The SU(3) fusion recurrences are used only to define the finite packet's matrices on the box, and the note does not claim the parent spatial-environment matrix-element identity or any untruncated transfer theorem. Residual risk is scope drift into the parent theorem or convergence/Perron claims, which are outside this audit.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_COMPLETED_TRIPLE_CURRENT_TRANSFER_FAMILY_BOUNDARY_NOTE_2026-04-19.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the beta=6 spatial_pair completed-triple gap claim: the provided dense runner supports the finite 1440-point sampled-grid no-go, while the continuous-box statement remains conditional on empirical Lipschitz constants.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214801-20260516T214801Z-5a1654c4-gauge_vacuum_plaquette_f-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note extends the sampled-grid gap by asserting that adaptive boxes satisfy min_B g >= g(center_B) - sum_i L_i * (w_i(B)/2) > 5e-3 under the recorded empirical 2.5x sampled-gradient Lipschitz constants.  _(class `C`)_
+- **chain closes:** False — The finite sampled-grid statement closes against the provided runner output. The continuous-family no-go does not close because the global Lipschitz constants are empirical finite-difference bounds rather than analytic or interval-certified upper bounds over the whole box.
+- **rationale:** Issue: the continuous-box lower bound relies on empirical 2.5x sampled-gradient Lipschitz constants. Why this blocks: a finite gradient sweep does not certify the global Lipschitz bound needed to turn the adaptive subdivision into a formal continuous no-go. Repair target: provide analytic operator-norm/subspace Lipschitz bounds or an interval-arithmetic certificate for gap_at over the full box. Claim boundary until fixed: retain the 1440-point sampled-grid no-go and treat the continuous-box positivity as conditional support only.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19`

@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.py
+runner_sha256: c5fa4dfcdba0f6928d883b6944c8d3777dd340f04efc9e395b1826f41b647ea3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 51.17
+status: ok
+----- stdout -----
+================================================================================
+ gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.py
+ Conditional continuous-box positivity support via adaptive Lipschitz subdivision
+================================================================================
+
+ Continuous parameter box:
+   tau_transfer in [1.0e-04, 5.0e-02]
+   tau_boundary in [0.5, 4.0]
+   asym_decay   in [1.0e-08, 1.0e-04]
+   linear_decay in [0.05, 1.0]
+
+ Recorded Lipschitz bounds (2.5x safety on sampled sup grads):
+   L_tt = 2.452250
+   L_tb = 0.380250
+   L_ad = 5.963250
+   L_ld = 2.119750
+
+ Target continuous-box gap threshold: DELTA = 5.0e-03
+
+--- Build evaluator infrastructure ---
+
+--- Stage 1: validate sampled Lipschitz bounds (20000 samples, seed=2031) ---
+  sup-grad sweep finished in 17.3 s
+  sampled sup |dg/d(tau_t)| = 0.980935  (bound = 2.452250)
+  sampled sup |dg/d(tau_b)| = 0.152093  (bound = 0.380250)
+  sampled sup |dg/d(asym)|  = 2.385346  (bound = 5.963250)
+  sampled sup |dg/d(ld)|    = 0.847908  (bound = 2.119750)
+  [PASS] sampled sup |dg/d(tau_t)| <= recorded bound  (0.980935 vs 2.452250)
+  [PASS] sampled sup |dg/d(tau_b)| <= recorded bound  (0.152093 vs 0.380250)
+  [PASS] sampled sup |dg/d(asym)| <= recorded bound  (2.385346 vs 5.963250)
+  [PASS] sampled sup |dg/d(ld)| <= recorded bound  (0.847908 vs 2.119750)
+
+--- Stage 2: adaptive 4D subdivision under empirical Lipschitz constants (DELTA = 5.0e-03) ---
+  accepted leaf cells:    71418
+  evaluations:            142835
+  elapsed:                24.1 s
+  hit termination limit:  False
+  queue remaining:        0
+  [PASS] continuous parameter box completely tiled by accepted leaf cells (no queue remainder, no MAX_CELLS / MAX_SECONDS hit)  (hit_limit=False, queue=0)
+  [PASS] every accepted leaf cell witnesses g(p) > DELTA = 5.0e-03 under the recorded empirical Lipschitz constants  (71418 cells accepted by g(center) - sum L_i (w_i / 2) > DELTA)
+
+--- Stage 3: cross-check g value at original audit corner ---
+  [PASS] gap value at the audited boundary corner is consistent with the parent note's report (>= DELTA)  (g(corner) = 1.072635e-01 (DELTA = 5.0e-03))
+
+ Honest scope of this support check:
+   - The adaptive subdivision produces a finite list of axis-aligned
+     boxes whose union is exactly the audited parameter box and whose
+     interiors are pairwise disjoint. On each leaf box B,
+           min_{p in B} g(p) >= g(center_B) - sum_i L_i * w_i(B) / 2 > DELTA,
+     using the empirical Lipschitz upper bounds L_i validated above.
+   - Therefore the empirical-Lipschitz model gives g(p) > DELTA = 5.0e-03
+     on the whole continuous box.
+   - The Lipschitz bounds are sampled sup gradients * 2.5 safety. They
+     are reproducible from RNG seed 2031 and verified each run.
+   - A formal continuous-family no-go still needs an analytic or interval
+     Lipschitz bound.
+   - A strict analytic Lipschitz bound from operator-norm derivatives
+     (without the safety cushion) would be ~10^6x larger because the
+     sample operator e_three has spectral norm ~1033; tightening that
+     to match the empirical Lipschitz is a follow-up derivation gap.
+
+================================================================================
+ SUMMARY: PASS=7, FAIL=0
+================================================================================
+
+----- stderr -----
+

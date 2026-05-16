@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_teleportation_native_record_apparatus_scope_split_2026-05-16.py
+runner_sha256: c045ca8323c0c5afeb96591747d8bcc85a6ff2bc938e723405321615b489876a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS  parent_note_planning_status: Parent note is labeled planning / first native apparatus-carrier candidate and scope-restricts to ordinary quantum state teleportation.
+PASS  parent_audit_perimeter_names_three_gaps: Parent note carries the audit-conditional perimeter paragraph naming all three ideal-vs-derived gaps verbatim from the audit.
+PASS  parent_blocker_present::N1_bell_stabilizer_transducer_derivation: Parent Nature-Grade Blockers section names: N1_bell_stabilizer_transducer_derivation.
+PASS  parent_blocker_present::N2_durable_pointer_irreversibility: Parent Nature-Grade Blockers section names: N2_durable_pointer_irreversibility.
+PASS  parent_blocker_present::N3_local_record_field_carrier_derivation: Parent Nature-Grade Blockers section names: N3_local_record_field_carrier_derivation.
+PASS  parent_strongest_statement_b_surface_only: Parent note's strongest current statement remains planning-level (B-surface only).
+PASS  parent_runner_references_parent_note: Parent runner exists and parent note explicitly cites it.
+PASS  harness_index_parked_hold_language: Canonical harness index already files the lane as parked planning with nature-grade HOLD; no index update is asserted.
+PASS  split_note_planning_scope: Scope-split source theorem note exists and self-labels as planning bridge with nature-grade HOLD.
+PASS  bell_projectors_complete: Sum of four Bell projectors equals identity (defect = 0.000e+00).
+PASS  bell_projectors_orthogonal: Bell projectors pairwise orthogonal (max off-product magnitude = 0.000e+00).
+PASS  bell_projectors_idempotent: Each Bell projector satisfies P^2 = P (max defect = 0.000e+00).
+PASS  codeword_min_hamming_distance_5: Length-8 pointer codewords have minimum Hamming distance 5 (cited 5).
+PASS  codeword_corrects_all_one_bit_flips: Nearest-codeword decoding recovers the original outcome from every one-bit flip.
+PASS  codeword_corrects_all_two_bit_flips: Nearest-codeword decoding recovers the original outcome from every two-bit flip.
+PASS  pauli_correction_unitary: Retained-axis Pauli correction operator Z^z X^x is unitary (max U^dagger U - I defect = 0.000e+00).
+PASS  manhattan_distance_identity: Manhattan distance from (1, 1, 1) to (5, 3, 2) = 7 (cited 7).
+PASS  manhattan_delivery_tick_identity: Delivery tick = alice_tick + L1 = 4 + 7 = 11 (cited 11).
+PASS  parent_runner_cache_exists: Parent runner cache file exists.
+PASS  parent_runner_cache_exit_zero: Parent runner cache records exit_code: 0.
+PASS  parent_runner_cache_header: Parent runner cache carries the canonical 64-trial / seed 20260426 header.
+PASS  cache_magnitude::max_Bell-transducer_norm_error: Cached 'max Bell-transducer norm error' = 4.441e-16 below 1e-12.
+PASS  cache_magnitude::max_record_probability_error_from_1_4: Cached 'max record probability error from 1/4' = 1.11e-16 below 1e-12.
+PASS  cache_magnitude::max_pairwise_record-distribution_distance_across_inputs: Cached 'max pairwise record-distribution distance across inputs' = 1.11e-16 below 1e-12.
+PASS  cache_magnitude::max_Bob_trace_distance_to_I_2_before_carrier_delivery: Cached 'max Bob trace distance to I/2 before carrier delivery' = 3.053e-16 below 1e-12.
+PASS  cache_magnitude::max_pairwise_pre-delivery_Bob-state_distance_across_inputs: Cached 'max pairwise pre-delivery Bob-state distance across inputs' = 2.22e-16 below 1e-12.
+PASS  cache_magnitude::maximum_delivered-record_infidelity: Cached 'maximum delivered-record infidelity' = 2.22e-16 below 1e-12.
+PASS  cache_magnitude::max_corrected-state_trace_distance_to_input: Cached 'max corrected-state trace distance to input' = 1.943e-16 below 1e-11.
+PASS  cache_min_corrected_fidelity_at_one: Cached minimum corrected fidelity = 0.9999999999999998 is within 1e-12 of unity.
+PASS  cache_wrong_record_mean_at_pauli_value: Cached wrong-record mean fidelity = 0.333333 is near the Pauli-error value 1/3 (= 0.333333).
+PASS  cache_all_bounded_gates_pass: Parent runner cache reports PASS on all eight bounded acceptance gates.
+PASS  split_names_surface_b_and_n: Scope-split note explicitly names surfaces B and N.
+PASS  split_enumerates_three_gaps: Scope-split note enumerates the three N1-N3 native-derivation gaps.
+PASS  split_does_not_claim_n_closure: Scope-split note does not claim any native-derivation closure.
+PASS  split_does_not_promote_lane: Scope-split note explicitly declines lane promotion and adds no new physics axiom.
+
+SUMMARY: PASS=35 FAIL=0 TOTAL=35
+
+SCOPE: This runner verifies the structural scope split between
+  B = bounded apparatus/carrier consistency on the parent runner
+      certificate (Bell projectors, length-8 codeword, Manhattan
+      worldline, Pauli correction), and
+  N = native-derivation closure (Bell-stabilizer transducer N1,
+      durable pointer irreversibility N2, derived local
+      record-field carrier N3); HOLD.
+It does NOT promote the teleportation lane, does NOT close any of
+the three N1-N3 nature-grade bridges, and does NOT modify the
+canonical harness index. The parent note remains at planning /
+first native apparatus-carrier candidate status.
+
+----- stderr -----
+

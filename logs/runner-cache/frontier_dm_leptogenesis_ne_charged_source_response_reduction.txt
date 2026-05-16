@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_ne_charged_source_response_reduction.py
+runner_sha256: 1e0b985ea845172b30e43cdf6330a4dec829ff62f56545eb286f2b12a40bca71
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.70
+status: ok
+----- stdout -----
+========================================================================================
+DM LEPTOGENESIS N_e CHARGED SOURCE-RESPONSE REDUCTION
+========================================================================================
+
+========================================================================================
+PART 1: THE CHARGED HERMITIAN SOURCE LAW IS EXACT SCHUR PUSHFORWARD
+========================================================================================
+  Algebraic identity (retained-grade). Inputs (target H_e) are
+  stipulated; this part does not derive H_e from the baseline framework alone.
+
+  [PASS] The full microscopic operator preserves charge exactly  (commutator=0.00e+00)
+  [PASS] A charged-lepton-supported microscopic source pushes forward exactly through the charge -1 sector  (|Δ|=6.66e-16)
+  [PASS] The charged projected source law then factors exactly through L_e = Schur_{E_e}(D_-)  (|Δ|=9.55e-15)
+  [PASS] The canonical charged-lepton Hermitian block is therefore an exact charged-sector Schur target  (err=2.57e-16)
+
+  So dW_e^H is not an ad hoc PMNS object.
+  It is the exact charged-sector Schur pushforward of the microscopic
+  charge -1 source-response law.
+
+========================================================================================
+PART 2: dW_e^H RECONSTRUCTS H_e AND THE N_e PACKET
+========================================================================================
+  Algebraic identity (retained-grade). Assumes dW_e^H is supplied;
+  this part does not derive it from the baseline framework alone.
+
+  [PASS] Nine charged Hermitian responses reconstruct H_e exactly  (err=1.96e-17)
+  [PASS] On N_e, H_e alone determines the PMNS transport packet  (col sums=[1. 1. 1.])
+
+  recovered N_e packet from dW_e^H:
+[[0.915868 0.071267 0.012865]
+ [0.074689 0.900307 0.025004]
+ [0.009443 0.028427 0.962131]]
+
+========================================================================================
+PART 3: CONSISTENCY CHECK AT STIPULATED CANONICAL N_e SAMPLE
+========================================================================================
+  NOT a derivation. The canonical (x, y, delta) input used in Part 1
+  is the same off-seed benchmark as the LAST_MILE sibling note. This
+  part checks the two routines agree on the same stipulated input.
+
+  [PASS] Selected column on this stipulated sample is the middle column (matches the sibling LAST_MILE benchmark; column choice is not baseline-framework-fixed, see the ACTIVE_COLUMN_AXIOM_BOUNDARY note)  (eta_vals=[0.82075559 0.9895127  0.92061708])
+  [PASS] Computed eta/eta_obs on this stipulated sample agrees with the sibling LAST_MILE benchmark ETA_NE_CANONICAL to numerical tolerance (two-runner consistency check on the same stipulated input, NOT a derivation of either number)  (this=0.989512704600, sibling=0.989512597197, |delta|=1.07e-07)
+
+  Numbers at this stipulated sample (informational):
+    one-flavor authority eta ratio    = 0.188785929502
+    one-flavor authority miss factor  = 5.297004933778
+    PMNS-conditioned eta ratio        = 0.989512704600
+    PMNS-conditioned miss factor      = 1.010598444417
+    sample improvement factor         = 5.241453678303
+  None of these are derived from Cl(3) on Z^3.
+
+========================================================================================
+PART 4: BOTTOM LINE
+========================================================================================
+  Structural content (load-bearing, retained-grade):
+    - Part 1: dW_e^H is the exact charged-sector Schur pushforward
+      of the microscopic charge -1 source-response law.
+    - Part 2: dW_e^H reconstructs H_e exactly and H_e determines
+      the N_e transport packet.
+
+  Conditional / informational content (NOT load-bearing):
+    - Part 3: at a stipulated canonical (x, y, delta) benchmark,
+      the chain reproduces the sibling LAST_MILE value
+      eta/eta_obs ~= 0.989512597197.
+      This is consistency between two runners on the same stipulated
+      input, not a baseline-framework derivation. The selected N_e column
+      is not baseline-framework-fixed; see the ACTIVE_COLUMN_AXIOM_BOUNDARY
+      note.
+
+  Frontier object (unchanged):
+    - evaluate dW_e^H (equivalently D_-) from Cl(3) on Z^3.
+
+========================================================================================
+SUMMARY: PASS=8 FAIL=0
+========================================================================================
+
+----- stderr -----
+

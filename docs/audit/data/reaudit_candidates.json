@@ -1,0 +1,38 @@
+{
+  "by_criticality": {
+    "critical": 0,
+    "high": 0,
+    "leaf": 0,
+    "medium": 0
+  },
+  "by_criticality_runner_drift": {
+    "critical": 0,
+    "high": 0,
+    "leaf": 0,
+    "medium": 0
+  },
+  "candidates": [],
+  "eligible_audit_statuses": [
+    "audited_conditional",
+    "audited_decoration",
+    "audited_failed",
+    "audited_numerical_match",
+    "audited_renaming"
+  ],
+  "eligible_claim_types": [
+    "bounded_theorem",
+    "no_go",
+    "open_gate",
+    "positive_theorem"
+  ],
+  "policy": "reaudit_unblocked_v2_dep_or_runner_drift",
+  "policy_summary": "Non-clean audited theorem/no-go/open-gate claims surfaced under either of two policies: (a) all current one-hop deps are retained-grade and at least one was non-retained at audit time; (b) the audit cited runner_artifact_issue and the runner file hash has changed since the audit_state_snapshot was taken.",
+  "ratified_dependency_statuses": [
+    "retained",
+    "retained_bounded",
+    "retained_no_go"
+  ],
+  "runner_drift_candidates": [],
+  "total_candidates": 0,
+  "total_runner_drift_candidates": 0
+}

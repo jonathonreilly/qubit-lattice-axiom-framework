@@ -1,0 +1,217 @@
+# Fresh Look Requirements
+
+**Status:** binding rule for the audit lane.
+
+The CKM audit revealed that self-declared `retained` tiers can hide
+definition-as-derivation patterns when the audit is performed by the same
+context that produced the claim. This file specifies the minimum
+independence conditions an audit must satisfy before `audit_status =
+audited_clean` is permitted.
+
+## 1. Auditor identity must differ from author identity
+
+For each claim, the audit ledger records:
+
+- `author` — the agent / human / session that produced the source note
+  (extracted from git blame on the note's load-bearing section, or from the
+  note's own `Date` / `Branch` metadata when blame is ambiguous).
+- `auditor` — the agent / human / session that performed the audit.
+- `auditor_family` — the model family of the auditor (e.g.,
+  `codex-gpt-5.5`, `codex-gpt-5.6`, `claude-opus-4.x`, `human`). Used to
+  enforce cross-family independence.
+
+`auditor` must not equal `author`. Strength tiers:
+
+- `independence: weak` — same model family, or a session whose context
+  restrictions cannot be established. Permitted for diagnostic review, but
+  not eligible to land `audited_clean`.
+- `independence: fresh_context` — same model family, different
+  auditor/session identity, and the auditor received only the restricted
+  audit inputs in Section 2. This is the same-family clean-room tier for
+  detecting context poisoning without claiming cross-family review.
+- `independence: cross_family` — different model family from the author.
+  This remains a stronger audit tier when a different model family is
+  available.
+- `independence: strong` — human auditor with no prior involvement in the
+  note.
+- `independence: external` — off-repo reviewer with no project context.
+  This is the only form that satisfies external-impact requirements; the
+  audit lane does not produce these on its own.
+
+### Designated auditor for this repo
+
+The bulk of existing notes were produced by Claude via the autopilot
+lane (see `docs/ai_methodology/`). To satisfy `independence: cross_family`
+by construction, the audit lane uses the **best available full Codex GPT
+model at maximum reasoning** as the designated independent auditor. Codex is
+a different model family from Claude, runs in a separate session with no
+autopilot context, and is invoked via the prompt template in
+`AUDIT_AGENT_PROMPT_TEMPLATE.md`.
+
+`scripts/codex_audit_runner.py` auto-selects the first full GPT model with
+`xhigh` reasoning from Codex's local model cache. When Codex refreshes that
+cache with a newer frontier GPT, the runner adopts it automatically and
+records the exact selected family, for example `codex-gpt-5.6`, in the audit
+row. A stale `CODEX_AUDIT_MODEL` environment value is reported and ignored
+when the cache exposes a newer best model. If `CODEX_AUDIT_MODEL` names a
+newer GPT than the local cache knows about, the runner uses it and records
+that exact family. `CODEX_AUDIT_FORCE_MODEL` is a break-glass override and
+must be treated as an explicit policy exception.
+
+This does not preclude human auditors or other independent agents — those
+strengthen the audit when available and are recorded with their own
+`auditor_family` value. It establishes the current best Codex GPT model as
+the baseline independent auditor that the mechanical pipeline routes work to.
+
+A claim audited only by Claude (any session, any version) records
+`independence: weak` and is not eligible to land `effective_status =
+retained` unless cross-confirmed by Codex or a human auditor.
+
+When the first clean audit was already performed by Codex, the internal
+anti-context-poisoning objective is satisfied by a second Codex audit only
+if it is recorded as `independence: fresh_context` with a distinct
+`auditor` identity/session and the Section 2 context restriction. This does
+not assert non-Codex review; it asserts clean-room same-family review.
+
+## 2. Context restriction at audit time
+
+The audit agent must not be primed with the publication-facing framing of
+the claim. The auditor receives:
+
+- the source note in full;
+- the source note's directly cited authorities (one hop upstream);
+- the runner script and its current output;
+- the audit rubric (`AUDIT_AGENT_PROMPT_TEMPLATE.md`);
+- the runner classification breakdown for this claim, if computed.
+
+The auditor must not receive:
+
+- `CLAIMS_TABLE.md`, `PUBLICATION_MATRIX.md`, `ARXIV_DRAFT.md`, or any
+  other publication-facing summary that has already labeled this claim as
+  `retained`;
+- the broader status taxonomy explanation framed as advocacy;
+- prior audit results for the same claim. Cross-confirmation compares the
+  second response against the first only after the second auditor has
+  returned its verdict.
+
+The intent is to remove the social pressure of "this is already retained,
+find a way to confirm it" and replace it with "given only the cited
+inputs, does the derivation close?"
+
+### Long-running runner rule
+
+Runner noncompletion is a context limitation, not a claim defect. A timeout,
+missing stdout, or wall-time budget exhaustion must not be used by itself to
+land `audited_conditional`, `audited_failed`, or any other terminal
+non-clean status. If the runner is load-bearing and no completed output,
+cached certificate, sliced runner, or independent derivation is available,
+the audit remains pending with a compute-required blocker and the loop moves
+on. A terminal verdict may still rest on concrete completed evidence: for
+example a reproducible output mismatch, stale number, import/API error, or a
+runner that hard-codes the contested premise.
+
+The rule also governs legacy timeout-based verdicts. If a prior non-clean
+audit primarily says "the runner did not finish," the row is not citeable as
+settled scientific non-closure until a current fresh audit identifies a
+substantive blocker or a completed compute artifact confirms the issue. Rows
+with independent blockers should be repaired by re-auditing those blockers,
+not by blanket status rewrites.
+
+## 3. The audit question
+
+The auditor answers exactly five questions per claim:
+
+1. **What is the load-bearing step?** Quote the one sentence (or
+   equation) that does the actual work. If you cannot find one, the claim
+   is `audited_failed`.
+2. **What kind of step is it?** Pick from:
+   - `(A)` algebraic identity check on existing inputs
+   - `(B)` cross-note input verification (reads value from another note)
+   - `(C)` first-principles compute from the axiom (`Cl(3)` on `Z^3` plus
+     accepted normalizations) producing a number not present in any input
+   - `(D)` external comparator check against PDG / lattice QCD / observation
+   - `(E)` definition (introduces a new symbol)
+   - `(F)` renaming (asserts symbol identity between two existing concepts)
+   - `(G)` numerical match at a tuned input scale
+3. **Does the chain close?** Given the source note plus its one-hop deps,
+   does the conclusion follow without appeal to anything else?
+4. **What does the runner actually check?** Classify each runner PASS as
+   A/B/C/D using the same rubric.
+5. **Claim type and scope.** Choose one `claim_type` from
+   `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`,
+   `decoration`, `meta`, and write a short `claim_scope` describing what
+   was actually audited.
+6. **Verdict.** One of the `audit_status` values from
+   `README.md`.
+
+Each answer is a short field in the audit ledger row. No long prose.
+
+## 4. Cross-confirmation for critical claims
+
+A claim is `criticality = critical` if it crosses either topology
+threshold in `compute_load_bearing.py` (currently direct in-degree >= 15
+or transitive descendants >= 250). The audit lane intentionally does NOT
+use author-declared "flagship" status to drive criticality — doing so
+would let unratified author framing set the audit cost on upstream
+support, which is the bootstrap problem this lane exists to break.
+Criticality is graph topology only.
+
+For critical claims:
+
+- The first `audited_clean` audit lands `audit_status = audit_in_progress`
+  with `blocker = awaiting_cross_confirmation`.
+- A second independent auditor must either come from a different
+  `auditor_family` than the first, or record `independence: fresh_context`
+  from a distinct same-family auditor/session using only the Section 2
+  restricted inputs.
+- Both must return matching `verdict`, matching `claim_type`, and matching
+  `load_bearing_step_class` before the row may move to `audited_clean`.
+- Disagreement on `claim_type` or `load_bearing_step_class` promotes the
+  claim to a third-auditor review and logs the disagreement in
+  `cross_confirmation.status = disagreement`.
+- The third-auditor review is judicial, not a blind retry. The third
+  auditor receives the restricted source packet plus the two prior audit
+  arguments, decides whether the first, second, or neither audit is
+  correct, and records `sided_with` plus a ratified verdict/class/scope.
+  The ledger status must match that decision
+  (`third_confirmed_first` or `third_confirmed_second`); a third auditor
+  that cannot ratify either side leaves the row blocked for human review.
+
+Claims at `criticality = high` (`transitive_descendants >= 30`)
+require `independence != weak` but do not require cross-confirmation by
+default. Claims at `medium` and `leaf` follow the standard rules.
+
+## 5. Author self-audit prohibition
+
+If the only available auditor for a claim shares author identity, the
+audit is recorded as `audit_status = unaudited` with `blocker:
+self_audit_only_available`. It is not permitted to land any other status
+in this case. The claim then waits for an independent auditor.
+
+This rule exists because the AI methodology lane's existing self-review
+loops, while well-intentioned, do not satisfy the independence condition;
+the same model context that generated the renaming has a measurable bias
+toward confirming it.
+
+In practice this means: a Claude-produced note (the dominant case in this
+repo) can be audited by the current best Codex GPT model (or a human, or any
+non-Claude agent) to satisfy the standard cross-family rule. A Codex-produced
+note requires a distinct clean-room Codex session at `fresh_context` or a
+different-family/human auditor. A human-produced note requires any independent
+agent or another human.
+
+## 6. Audit re-runs
+
+An audit row has a `note_hash` field — the SHA of the source note at the
+time of audit. If the note changes, the row is automatically reset to
+`audit_status = unaudited` (with the prior verdict preserved in
+`previous_audits`) and must be re-audited. This prevents drift where a
+note is edited after audit and silently inherits the prior clean tag.
+
+## 7. What this does not require
+
+The audit lane does not require a reproduction of the underlying
+mathematics from scratch. The auditor checks whether the derivation as
+presented closes from its cited inputs, not whether an alternative
+derivation exists. Independent re-derivation is a separate, stronger
+check that belongs to external peer review.

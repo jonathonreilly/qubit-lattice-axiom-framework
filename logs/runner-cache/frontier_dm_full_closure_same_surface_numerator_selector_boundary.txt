@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
+runner_sha256: 36136c7d46fe9eed27c62ab5427c38252e61f9ff952f3187d5f479f22686e4df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 38.98
+status: ok
+----- stdout -----
+========================================================================================
+DM FULL CLOSURE SAME-SURFACE NUMERATOR SELECTOR BOUNDARY
+========================================================================================
+
+========================================================================================
+PART 1: EXACT CURRENT-BANK DM ENDPOINTS
+========================================================================================
+  [PASS] The lower DM endpoint alpha_lo = alpha_LM is exact on the current same-surface bank  (alpha_lo=0.090667836017286)
+  [PASS] The upper DM endpoint alpha_hi is an exact same-surface plaquette-supported short-distance observable  (alpha_hi=0.092264992618360)
+
+  alpha_lo = 0.090667836017286
+  alpha_hi = 0.092264992618360
+
+========================================================================================
+PART 2: DISTINCT CERTIFIED DM OUTPUTS
+========================================================================================
+  [PASS] The exact current-bank endpoints induce disjoint certified DM ratio intervals  (R_lo=[5.442019867867, 5.442019867931], R_hi=[5.482855571890, 5.482855571936])
+  [PASS] They therefore induce disjoint certified DM density intervals even after eta is fixed  (Omega_DM_lo=[0.267709052538, 0.267709052541], Omega_DM_hi=[0.269717881594, 0.269717881596])
+
+  R_lo       = [5.442019867867, 5.442019867931]
+  R_hi       = [5.482855571890, 5.482855571936]
+  Omega_b    = 0.049192957585
+  Omega_DM_lo= [0.267709052538, 0.267709052541]
+  Omega_DM_hi= [0.269717881594, 0.269717881596]
+  trunc_lo   = (N_att=60, N_rep=600)
+  trunc_hi   = (N_att=60, N_rep=600)
+
+========================================================================================
+PART 3: PACKET-SCOPE ENDPOINT DISTINCTNESS
+========================================================================================
+  [PASS] The two same-surface endpoints are distinct exact reals (alpha_lo != alpha_hi)  (alpha_hi - alpha_lo = 1.597156601073887e-03)
+  [PASS] Neither endpoint coincides with the common ingredient alpha_bare = 1/(4 pi)  (alpha_bare=0.079577471545948, alpha_lo - alpha_bare=1.109036447133864e-02, alpha_hi - alpha_bare=1.268752107241253e-02)
+  [PASS] Both endpoints sit strictly above the common ingredient (so they are not just a relabeling of alpha_bare)  (alpha_lo and alpha_hi are both strict positive perturbations of alpha_bare on the same surface)
+  [PASS] The certified DM ratio intervals at the two endpoints do not overlap  (R_lo_hi=5.442019867931, R_hi_lo=5.482855571890)
+
+  CURRENT-PACKET ENDPOINT STRUCTURE:
+    - two distinct exact same-surface endpoint observables: alpha_lo, alpha_hi
+        alpha_lo  = alpha_bare / u_0                  = 0.090667836017286
+        alpha_hi  = -log(1 - c_1 * alpha_bare) / c_1  = 0.092264992618360
+    - common ingredient alpha_bare = 1/(4 pi)       = 0.079577471545948
+    - certified DM ratio intervals at the two endpoints do not overlap
+
+  PACKET-SCOPE COMPLETENESS DECLARATION (not a runner-checked existence claim):
+    Within the supplied retained packet (Cl(3) on Z^3 plus the cited
+    same-surface thermal authorities), no additional exact same-surface
+    DM scale-selection datum is supplied. Any selector that lands one
+    of the two endpoints therefore requires a retained authority
+    outside the current packet. This is a packet-scope declaration,
+    not a metatheoretical proof of non-existence.
+
+========================================================================================
+SUMMARY: PASS=8 FAIL=0
+========================================================================================
+
+----- stderr -----
+

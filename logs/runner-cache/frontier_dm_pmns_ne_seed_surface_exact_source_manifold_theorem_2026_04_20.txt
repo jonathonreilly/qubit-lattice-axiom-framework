@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py
+runner_sha256: 2c36679d58caa88295d48d0a22facf77d660d5d38f97f2bf00f8480b99cb2872
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 49.84
+status: ok
+----- stdout -----
+========================================================================================
+DM PMNS FIXED-N_e-SEED-SURFACE EXACT SOURCE-MANIFOLD THEOREM
+========================================================================================
+
+Question:
+  Does the empirical PMNS angle comparator already lie on the cited
+  fixed native N_e seed surface as a regular preimage, and do the
+  current cited nonlocal selector families on that surface pick it?
+
+========================================================================================
+PART 0: CITED-AUTHORITY ROUND-TRIP IDENTITIES
+========================================================================================
+  [PASS] Cited fixed native N_e seed pair matches the rational form (169/300, 23/75)  ((XBAR_NE, YBAR_NE) = (0.5633333333333334, 0.30666666666666664))
+  [PASS] Imported canonical_h matches the direct (Y Y^dagger) algebraic definition  (max|diff| = 0.00e+00)
+  [PASS] Active-packet readout is column-stochastic (cited active-projector reduction)  (column sums = [1. 1. 1.])
+  [PASS] Active-packet readout reproduces the |U|^2 columns of the left diagonalizer (up to row permutation)  (sorted columns match)
+  [PASS] Compact-chart image satisfies the seed-surface mean constraint mean(x)=Xbar_Ne  (mean(x) - Xbar_Ne = -1.11e-16)
+  [PASS] Compact-chart image satisfies the seed-surface mean constraint mean(y)=Ybar_Ne  (mean(y) - Ybar_Ne = 0.00e+00)
+
+========================================================================================
+PART 1: EXACT PHYSICAL PMNS POINTS EXIST ON THE FIXED NATIVE N_e SEED SURFACE
+========================================================================================
+  [PASS] The verifier finds at least three distinct exact PMNS points on the fixed native N_e seed surface  (distinct exact points=6)
+  [PASS] Every retained representative reproduces the physical PMNS angle triple to high precision  (chi2 values=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+
+  rep 1: x=[0.060924 0.750231 0.878844], y=[0.498485 0.245185 0.17633 ], delta=-1.533856, obs=[0.307  0.0218 0.545 ]
+
+  rep 2: x=[0.1728   0.702018 0.815182], y=[0.453875 0.263502 0.202623], delta=0.790197, obs=[0.307  0.0218 0.545 ]
+
+  rep 3: x=[0.227683 0.680418 0.781899], y=[0.427562 0.268514 0.223924], delta=0.759340, obs=[0.307  0.0218 0.545 ]
+
+========================================================================================
+PART 1b: INDEPENDENT COMPACT-CHART LATTICE SWEEP EXISTENCE
+========================================================================================
+  sweeping 405 deterministic chart starts ...
+  [PASS] Lattice sweep recovers at least three distinct preimages of the empirical target  (distinct lattice preimages = 294)
+  [PASS] Every lattice-sweep representative reproduces the empirical target to high precision  (max chi^2 = 8.55e-09)
+  [PASS] At least one lattice-sweep representative is distinct from every polished hard-coded representative  (lattice cover size = 294, hard-coded reps = 6)
+
+========================================================================================
+PART 1c: POLISHED REPRESENTATIVES LIE ON THE FIXED NATIVE N_e SEED SURFACE
+========================================================================================
+  [PASS] Every polished representative has mean(x) = Xbar_Ne to chart tolerance  (max |mean(x) - Xbar_Ne| = 0.00e+00)
+  [PASS] Every polished representative has mean(y) = Ybar_Ne to chart tolerance  (max |mean(y) - Ybar_Ne| = 5.55e-17)
+
+========================================================================================
+PART 2: THE EXACT PREIMAGE IS A REGULAR 2-REAL SOURCE MANIFOLD
+========================================================================================
+  [PASS] At every retained exact PMNS point the angle-map Jacobian has full rank 3  (ranks=[3, 3, 3, 3, 3, 3])
+  [PASS] Therefore each retained exact point lies on a local 2-real regular preimage inside the 5-real seed surface  (dim(seed surface)=5 and rank(dF)=3)
+
+========================================================================================
+PART 2b: JACOBIAN RANK IS STABLE ACROSS INDEPENDENT FINITE-DIFFERENCE STEP SIZES
+========================================================================================
+  [PASS] Finite-difference Jacobian rank is 3 at every retained point for eps=1.0e-06  (ranks_a = [3, 3, 3, 3, 3, 3])
+  [PASS] Finite-difference Jacobian rank is 3 at every retained point for eps=1.0e-05  (ranks_b = [3, 3, 3, 3, 3, 3])
+
+========================================================================================
+PART 3: CURRENT NONLOCAL SEED-SURFACE SELECTOR FAMILIES MISS THE MANIFOLD
+========================================================================================
+  aligned seed             chi^2 = 0.035460351111, obs = [0.2        0.16666667 0.6       ]
+  low-action stationary    chi^2 = 0.945939295876, obs = [0.92138192 0.54642277 0.0034789 ]
+  high-action stationary   chi^2 = 0.593781844616, obs = [0.95075647 0.09476769 0.96217522]
+  constructive eta=1       chi^2 = 1.050753906211, obs = [0.7016142  0.91199492 0.86529135]
+  constructive witness     chi^2 = 1.160744130651, obs = [0.73704809 0.95163911 0.87846964]
+  [PASS] Every current exact nonlocal selector-family point misses the physical PMNS triple by chi^2 > 0.03  (misses=[0.03546, 0.945939, 0.593782, 1.050754, 1.160744])
+
+========================================================================================
+PART 4: CURRENT SELECTOR OBSERVABLES VARY ALONG THE EXACT MANIFOLD
+========================================================================================
+  [PASS] The exact PMNS manifold carries a macroscopic relative-action spread  (S_rel range=(0.905377,6.783804))
+  [PASS] The exact PMNS manifold carries distinct transport outputs on the favored column  (eta_0 range=(0.769933,0.778188))
+  [PASS] The exact PMNS manifold carries both source-cubic orientations  (cubic range=(-2.243511e-03,2.143836e-03))
+
+========================================================================================
+PART 5: THE NOTE RECORDS THE CORRECT I5 REDUCTION
+========================================================================================
+  [PASS] The note records exact PMNS realizability on the fixed native N_e seed surface
+  [PASS] The note records the regular 2-real source-manifold consequence
+  [PASS] The note records the current nonlocal selector-family miss
+  [PASS] The note records the sharpened I5 target as a new 2-real point-selection law
+  [PASS] The note explicitly cites the empirical-comparator role of the target triple
+  [PASS] The note lists explicit framework-authority citations for every imported routine
+
+========================================================================================
+RESULT
+========================================================================================
+  Exact reduction answer:
+    - the fixed native N_e seed surface already contains exact physical
+      PMNS points
+    - on the verified regular patch those points form a local 2-real
+      source manifold
+    - current exact nonlocal seed-surface selector families do not pick
+      that manifold
+    - so the remaining I5 object is a new 2-real point-selection law on
+      the exact N_e PMNS source manifold
+
+PASS=27 FAIL=0
+
+----- stderr -----
+

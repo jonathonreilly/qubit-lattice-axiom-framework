@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/complex_action_harness.py
+runner_sha256: 4467478f347fc6d0090aaf8253f976c8a8498b893822ed2f406f2971ba5ee5ee
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 81.25
+status: ok
+----- stdout -----
+========================================================================================
+COMPLEX ACTION HARNESS
+  S = L(1-f) + i*gamma*L*f on exact 3D lattice
+  Born test uses actual gravitational field (NOT zero field)
+========================================================================================
+h=0.5, W=6, L=30, s=0.1, z_src=3.0
+
+   gamma   deflection  direction     escape
+------------------------------------------------
+   -0.50 +5.378225e-01     TOWARD    43.5943
+   -0.20 +2.896250e-01     TOWARD     7.9427
+    0.00 +9.339748e-02     TOWARD     2.7311
+    0.05 +3.863016e-02     TOWARD     2.0970
+    0.10 -1.791678e-02       AWAY     1.6119
+    0.15 -7.598557e-02       AWAY     1.2405
+    0.20 -1.353356e-01       AWAY     0.9558
+    0.50 -5.075192e-01       AWAY     0.2056
+    1.00 -1.133647e+00       AWAY     0.0177
+    2.00 -2.188520e+00       AWAY     0.0002
+
+BORN TEST (|I3|/P with gravitational field)
+  running gamma=0.0...
+  gamma=0.0: |I3|/P = 2.38e-15
+  running gamma=0.5...
+  gamma=0.5: |I3|/P = 1.13e-15
+  running gamma=1.0...
+  gamma=1.0: |I3|/P = 1.03e-16
+
+REDUCTION CHECK
+  standard propagator delta: +9.339748e-02
+  complex(gamma=0) delta:    +9.339748e-02
+  match: True
+
+MASS SCALING at gamma=0.5 (horizon regime)
+  s=0.025: delta=-9.578864e-02
+  s=0.050: delta=-2.141553e-01
+  s=0.100: delta=-5.075192e-01
+  s=0.200: delta=-1.441601e+00
+
+SAFE READ
+  gamma=0 must recover standard valley-linear (check reduction above)
+  Born |I3|/P should be ~0 for ALL gamma (propagator is linear in psi)
+  complex action is non-unitary but still linear: Born holds structurally
+  TOWARD->AWAY transition marks the exceptional point
+  escape < 1 means net absorption (horizon-like)
+  escape > 1 means net amplification (superradiance-like)
+  if Born holds AND gravity+horizons coexist, this is a genuine unification
+
+----- stderr -----
+

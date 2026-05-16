@@ -68760,7 +68760,7 @@
         "wave_direct_dm_h025_high_band_boundary_note",
         "wave_direct_dm_h025_fam2_seed0_boundary_note"
       ],
-      "note_hash": "6ec9e494348387b55a0dae684e6ca490cd8e147f666bd3dd82db624a0f3b676a",
+      "note_hash": "515084182caedf032961fa063d7dccdaf1e441cf7adb7d03f7d9fbb004930112",
       "path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
       "runner_path": "scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py",
       "title": "Wave Direct-dM H=0.25 Seed0 Cross-Family Compression Note"

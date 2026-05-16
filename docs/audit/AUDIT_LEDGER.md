@@ -53,12 +53,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 927 |
+| `bounded_theorem` | 926 |
 | `decoration` | 18 |
 | `meta` | 118 |
 | `no_go` | 233 |
 | `open_gate` | 107 |
-| `positive_theorem` | 727 |
+| `positive_theorem` | 728 |
 
 | criticality | count |
 |---|---:|

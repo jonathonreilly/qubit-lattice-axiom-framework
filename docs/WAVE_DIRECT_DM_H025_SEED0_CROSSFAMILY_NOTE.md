@@ -1,9 +1,19 @@
 # Wave Direct-dM H=0.25 Seed0 Cross-Family Compression Note
 
-**Date:** 2026-04-08  
-**Status:** bounded support theorem on the controlled seed-`0` fine-`H` surface
+**Date:** 2026-04-08
+**Status:** bounded numerical compression on the controlled seed-`0` fine-`H` surface
 **Type:** bounded_theorem
+**Audit ceiling:** class-G numerical-match compression; not a structural theorem on this surface
 **Runner:** [`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
+
+**Audit class:** The load-bearing step is a numerical compression of two
+preselected control rows at the tuned input scale `H = 0.25` with the
+preselected seed `0`. Review classifies that step as derivation class
+`(G)` (numerical match at a tuned input scale). This source note does
+not set or predict an audit verdict. It only records that promotion to
+a structural theorem would require a class `(C)` first-principles
+derivation of the row magnitudes from `Cl(3)` on `Z^3`, which is not
+attempted here and is explicitly excluded from this note's scope.
 
 This note compresses the controlled `H = 0.25` seed-`0` evidence across the
 two families that currently have it:
@@ -85,6 +95,7 @@ Primary runner:
 Transcript:
 
 - [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt)
+- [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt)
 
 The runner prints:
 
@@ -102,9 +113,63 @@ The runner prints:
 - Source log: [`logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt)
 - Primary assertion runner: [`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
 - Assertion transcript: [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-06.txt)
+- Assertion transcript: [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-05-16.txt)
 - Context note: [`docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md`](WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md)
 - Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
 - Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md)
 - Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)
 - Context note: [`docs/WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md`](WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md)
 - Context note: [`docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`](WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md)
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records the explicit upstream-source
+dependency edges the prior auditor flagged as missing
+("the source rows and runner/log artifacts are not registered as audit
+dependencies"). It does not change the audited claim scope or promote
+this note above its class-`(G)` ceiling. Each link names the upstream
+note plus the source log that backs the corresponding row in the
+compression table.
+
+- Fam1 seed-0 control row (table row 1): upstream note
+  [wave_direct_dm_h025_fam1_seed0_control_note](WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md);
+  source log
+  [`logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt);
+  control-batch runner
+  [`scripts/wave_direct_dm_h025_control_batch.py`](../scripts/wave_direct_dm_h025_control_batch.py).
+- Fam2 seed-0 control row (table row 2): upstream note
+  [wave_direct_dm_h025_fam2_seed0_control_note](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md);
+  source log
+  [`logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt);
+  control-batch runner
+  [`scripts/wave_direct_dm_h025_control_batch.py`](../scripts/wave_direct_dm_h025_control_batch.py).
+
+The assertion runner
+[`scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py`](../scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py)
+ingests both source logs directly (`parse_log` reads them by path) and
+fails fast if either log is missing or its parsed rows disagree with the
+compression table above. The audit can therefore trace each row in the
+table back to a specific line in a specific frozen log via the listed
+dependency edges.
+
+## Why this note cannot promote to a structural theorem
+
+For audit-graph transparency, the structural reason promotion is blocked
+on the registered scope:
+
+- The conclusion ("Fam2 sits deeper than Fam1 at the selected weak-field
+  strength on the seed-0 fine-`H` surface") is a comparison of two
+  simulation outputs taken at the tuned input scale `H = 0.25`.
+- Structural-theorem treatment would require class `(C)`
+  first-principles compute (or genuine class `(A)` algebraic closure
+  over independent retained inputs).
+- Deriving the magnitudes of `R_hist` from `Cl(3)` on `Z^3` would be a
+  separate structural theorem in a different note; that theorem is not
+  attempted here and is explicitly out of scope.
+- The same exclusion applies to any "family-wide portability law" that
+  would extend the compression to `Fam3` or to a continuous family of
+  `H` values.
+
+This revision therefore registers the dependency edges and keeps the
+scope bounded to the two-row numerical compression. The independent
+audit lane remains responsible for the audit verdict.

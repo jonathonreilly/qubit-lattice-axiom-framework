@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 106 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 313 |
+| **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1195 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 193 |
+| ~~audited_conditional~~ | 194 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -42,9 +42,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 525 |
-| `audited_conditional` | 193 |
+| `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
@@ -114,7 +114,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5 | D | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_canonical_projector_connection_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -714,6 +713,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3448,6 +3448,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The conclusion relies on upstream reduction, active projector, transport functional, selector, stationarity, and projector-interface modules that are imported by the runner but not supplied as cited authorities. The restricted packet therefore does not close the claimed exhaustion theorem from the axiom alone.
 - **rationale:** The runner does perform some local algebraic checks, including fixed-sum soft3 inversion on sampled points. However, the load-bearing exhaustion claim is not derived inside the restricted packet: it depends on imported modules and prior theorems for the PMNS packet reduction, transport functional, closure branches, native seed constants, and stationarity map. With no cited authorities provided, those dependencies are uncited premises rather than retained-grade inputs.
 - **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the restricted claim that S_rel is algebraically the Legendre dual of W_rel=log det(I+K) and that the sampled current PMNS-assisted closure patch has a unique lowest-action branch as implemented by the provided runner.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214033-20260516T213935Z-575d95ee-dm_leptogenesis_pmns_rel-judicial`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** S_rel(Y) = sup_K [W_rel(K) - Tr(KY)] with unique maximizer K_* = Y^(-1) - I.  _(class `A`)_
+- **chain closes:** False — The displayed Legendre-dual identity is a genuine algebraic calculation on the positive cone, so the load-bearing derivation class is A rather than C. The restricted packet does not derive W_rel from Cl(3) on Z^3 and does not provide retained upstream support for the fixed seed surface, favored closure column, or imported rel module used by the numerical runner. The runner verifies the algebraic identity and performs sampled branch/local-minimum checks, but it does not instantiate the sole axiom from scratch in the provided source. Therefore the theorem is bounded but conditional on unclosed imported framework ingredients.
+- **rationale:** The displayed Legendre-dual identity is a genuine algebraic calculation on the positive cone, so the load-bearing derivation class is A rather than C. The restricted packet does not derive W_rel from Cl(3) on Z^3 and does not provide retained upstream support for the fixed seed surface, favored closure column, or imported rel module used by the numerical runner. The runner verifies the algebraic identity and performs sampled branch/local-minimum checks, but it does not instantiate the sole axiom from scratch in the provided source. Therefore the theorem is bounded but conditional on unclosed imported framework ingredients.
+- **open / conditional deps cited:**
+  - `scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`
+- **auditor confidence:** judicial
 
 ### `dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16`
 

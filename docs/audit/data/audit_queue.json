@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 747,
+    "critical": 746,
     "high": 34,
     "leaf": 269,
     "medium": 154
@@ -5978,27 +5978,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dark_energy_eos.py",
-      "transitive_descendants": 788
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "load_bearing_score": 10.124,
-      "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "transitive_descendants": 788
     },
     {
@@ -38505,6 +38484,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 8,
-  "total_pending": 1204
+  "ready_count": 7,
+  "total_pending": 1203
 }

@@ -48920,28 +48920,33 @@
       "verdict_rationale": "The runner does perform some local algebraic checks, including fixed-sum soft3 inversion on sampled points. However, the load-bearing exhaustion claim is not derived inside the restricted packet: it depends on imported modules and prior theorems for the PMNS packet reduction, transport functional, closure branches, native seed constants, and stationarity map. With no cited authorities provided, those dependencies are uncited premises rather than retained-grade inputs."
     },
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16": {
-      "audit_date": "2026-04-30T19:19:37.158279+00:00",
+      "audit_date": "2026-05-16T21:40:33.668825+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 0.0,
-        "transitive_descendants": 0
+        "load_bearing_score": 10.124,
+        "runner_hash": "9bad170fd837c93ca06bd2c58dac4b238d01f20bbdd74b7d6601ac17d1000a2a",
+        "transitive_descendants": 788
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": true,
-      "chain_closure_explanation": "Yes. The registered runner exits cleanly and exposes 13 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-214033-20260516T213935Z-575d95ee-dm_leptogenesis_pmns_rel-judicial",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed Legendre-dual identity is a genuine algebraic calculation on the positive cone, so the load-bearing derivation class is A rather than C. The restricted packet does not derive W_rel from Cl(3) on Z^3 and does not provide retained upstream support for the fixed seed surface, favored closure column, or imported rel module used by the numerical runner. The runner verifies the algebraic identity and performs sampled branch/local-minimum checks, but it does not instantiate the sole axiom from scratch in the provided source. Therefore the theorem is bounded but conditional on unclosed imported framework ingredients.",
       "claim_id": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_scope": "Audited the restricted claim that S_rel is algebraically the Legendre dual of W_rel=log det(I+K) and that the sampled current PMNS-assisted closure patch has a unique lowest-action branch as implemented by the provided runner.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-16T18:54:48.507402+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-16T21:40:33.668825+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -48956,25 +48961,62 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-16T21:39:34.152997+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260516-213912-20260516T213912Z-dfdcbee1-dm_leptogenesis_pmns_rel-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the restricted claim that S_rel is algebraically the Legendre dual of W_rel=log det(I+K) and that the sampled current PMNS-assisted closure patch has a unique lowest-action branch as implemented by the provided runner.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-16T21:40:33.668825+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260516-214033-20260516T213935Z-575d95ee-dm_leptogenesis_pmns_rel-judicial",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the restricted claim that S_rel is algebraically the Legendre dual of W_rel=log det(I+K) and that the sampled current PMNS-assisted closure patch has a unique lowest-action branch as implemented by the provided runner.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "Classified the runner/note as first-principles C and clean despite the load-bearing Legendre step being algebraic and the branch machinery depending on unprovided imported premises.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The displayed Legendre-dual identity is a genuine algebraic calculation on the positive cone, so the load-bearing derivation class is A rather than C. The restricted packet does not derive W_rel from Cl(3) on Z^3 and does not provide retained upstream support for the fixed seed surface, favored closure column, or imported rel module used by the numerical runner. The runner verifies the algebraic identity and performs sampled branch/local-minimum checks, but it does not instantiate the sole axiom from scratch in the provided source. Therefore the theorem is bounded but conditional on unclosed imported framework ingredients.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 7,
+            "C": 0,
+            "D": 0,
+            "total_pass": 13
+          },
+          "second_auditor_error": "none; materially correct under the restricted packet",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
+      "independence": "judicial_review",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.124,
-      "load_bearing_step": "**Script:** `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py`",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": "S_rel(Y) = sup_K [W_rel(K) - Tr(KY)] with unique maximizer K_* = Y^(-1) - I.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b0400bd741453dd04c53913ec2a998488147cdd6e5665ddde7c03816cf1d2604",
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-audit-loop:leaf-resweep-2026-04-30, family=codex-gpt-5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "other: Repair by providing the upstream derivation of W_rel, H_seed, the closure map, and the favored column from Cl(3) on Z^3, or include the imported module and retained authorities in the restricted packet.",
+      "open_dependency_paths": [
+        "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -49004,16 +49046,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 1,
-        "C": 12,
+        "A": 3,
+        "B": 7,
+        "C": 0,
         "D": 0,
         "total_pass": 13
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem",
       "transitive_descendants": 788,
-      "verdict_rationale": "The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
+      "verdict_rationale": "The displayed Legendre-dual identity is a genuine algebraic calculation on the positive cone, so the load-bearing derivation class is A rather than C. The restricted packet does not derive W_rel from Cl(3) on Z^3 and does not provide retained upstream support for the fixed seed surface, favored closure column, or imported rel module used by the numerical runner. The runner verifies the algebraic identity and performs sampled branch/local-minimum checks, but it does not instantiate the sole axiom from scratch in the provided source. Therefore the theorem is bounded but conditional on unclosed imported framework ingredients."
     },
     "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16": {
       "audit_date": "2026-05-05T04:50:13.190775+00:00",

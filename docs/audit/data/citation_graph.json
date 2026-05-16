@@ -55117,6 +55117,17 @@
       "runner_path": "scripts/frontier_memory_mu2_size_sweep.py",
       "title": "Memory `mu^2` / Geometry Sweep Note"
     },
+    "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
+      "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "note_hash": "2d096514eebbf4b73f4c448cb19dde6fc94d0fb8c20e57a6173c3d4cb8f45b80",
+      "path": "docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py",
+      "title": "Meron / Half-Instanton Action `4\u03c0\u00b2/g\u00b2` \u2014 External Narrow Theorem"
+    },
     "meson_charges_from_quark_y_note_2026-05-02": {
       "claim_id": "meson_charges_from_quark_y_note_2026-05-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -71672,6 +71683,7 @@
     "matter_inertial_closure_note",
     "memory_decay_diagnosis_2026-04-11",
     "memory_mu2_geometry_sweep_note_2026-04-11",
+    "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
     "mesoscopic_surrogate_alternate_family_scout_note",
     "mesoscopic_surrogate_threshold_2d_note",
     "minimal_axioms_2026-04-11",
@@ -71986,7 +71998,7 @@
       "no_go": 52,
       "none": 1528,
       "open_gate": 40,
-      "positive_theorem": 151
+      "positive_theorem": 152
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 837,
@@ -71995,12 +72007,12 @@
       "no_go": 157,
       "none": 445,
       "open_gate": 119,
-      "positive_theorem": 607
+      "positive_theorem": 608
     },
     "edge_count": 9016,
-    "leaf_count": 627,
-    "node_count": 2241,
-    "root_count": 764,
-    "runners_with_path": 1859
+    "leaf_count": 628,
+    "node_count": 2242,
+    "root_count": 765,
+    "runners_with_path": 1860
   }
 }

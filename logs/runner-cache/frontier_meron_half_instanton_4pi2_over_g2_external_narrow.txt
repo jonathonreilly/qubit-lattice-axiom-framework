@@ -1,0 +1,90 @@
+# Meron / half-instanton 4 pi^2 / g^2 external theorem runner
+# Source note: docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+
+==============================================================================
+T1: symbolic S_meron = 4 pi^2 / g^2 (half of BPST 8 pi^2 / g^2)
+==============================================================================
+  [PASS] S_meron simplifies to 4 pi^2 / g^2 symbolically
+         S_meron = 4*pi**2/g**2, (1/2) S_inst = 4*pi**2/g**2
+
+==============================================================================
+T2: half-action identity S_meron = (1/2) S_inst
+==============================================================================
+  [PASS] S_meron / S_inst = 1/2 symbolically
+         ratio = 1/2, expected 1/2
+  [PASS] note states the half-action identity S_meron = (1/2) S_inst in text
+         (1/2), S_inst, and 'half' all present
+
+==============================================================================
+T3: numerical S_meron at g^2 in {1/2, 1, 2}
+==============================================================================
+  [PASS] S_meron at g^2 in {1/2, 1, 2} evaluates to {8, 4, 2} pi^2 numerically
+         g^2=1/2: S_meron=78.956835 (expected 78.956835); g^2=1: S_meron=39.478418 (expected 39.478418); g^2=2: S_meron=19.739209 (expected 19.739209)
+
+==============================================================================
+T4: numerical exp(-S_meron) at g^2 in {1/2, 1, 2}
+==============================================================================
+  [PASS] exp(-S_meron) at g^2 in {1/2, 1, 2} matches expected suppression orders
+         g^2=1/2: S_meron=78.9568, exp(-S_meron)=5.123e-35 (log10≈-34.29); g^2=1: S_meron=39.4784, exp(-S_meron)=7.157e-18 (log10≈-17.15); g^2=2: S_meron=19.7392, exp(-S_meron)=2.675e-09 (log10≈-8.57)
+  [PASS] canonical g^2=1: S_meron = 4 pi^2 ≈ 39.4784, exp(-S_meron) ≈ 7.58e-18
+         S_meron = 39.4784176044, exp(-S_meron) = 7.157e-18
+
+==============================================================================
+T5: fractional topological charge Q_meron = 1/2 structure (stated)
+==============================================================================
+  [PASS] note states fractional topological charge Q_meron = 1/2
+         Q = 1/2 stated explicitly
+  [PASS] note specifies the half-volume integration convention
+         hemisphere / half-space convention recorded
+  [PASS] note records that two merons (a pair) sum to integer Q = 1
+         meron pair / sum to integer convention recorded
+
+==============================================================================
+T6: meron has finite classical action despite Q = 1/2 (log asymptotic)
+==============================================================================
+  [PASS] note states meron has finite classical action
+         finite classical action stated
+  [PASS] note records logarithmic large-distance asymptotic
+         logarithmic falloff / asymptotic recorded
+  [PASS] note records short-distance regulator / singular core treatment
+         short-distance regulator structure recorded
+
+==============================================================================
+T7: lattice realization references (Itou-Iritani, Gonzalez-Arroyo)
+==============================================================================
+  [PASS] note cites Itou-Iritani lattice meron paper
+         Itou-Iritani named explicitly
+  [PASS] note pins Itou-Iritani arXiv:1402.5984
+         arXiv:1402.5984 cited
+  [PASS] note cites Gonzalez-Arroyo lineage on lattice fractional instantons
+         Gonzalez-Arroyo lineage cited
+  [PASS] note records 4D lattice realization context
+         Z^4 / Wilson lattice context recorded
+
+==============================================================================
+T8: boundary — note declares positive_theorem
+==============================================================================
+  [PASS] note declares Claim type: positive_theorem
+         Claim type line present
+
+==============================================================================
+T9: boundary — note does NOT claim substrate identification
+==============================================================================
+  [PASS] note does NOT assert substrate identification
+         no substrate-identification overclaim string present
+  [PASS] note explicitly disclaims framework substrate identification
+         boundary section names framework substrate explicitly under 'does not claim'
+
+==============================================================================
+T10: boundary — no alpha_LM^16 closure, no v/M_Pl, no 4pi^2 vs lnMPlv identification
+==============================================================================
+  [PASS] note avoids any alpha_LM^16-closure / hierarchy-closure overclaim
+         boundary disclaimers intact
+  [PASS] boundary explicitly names alpha_LM^16 as out-of-scope
+         alpha_LM^16 explicitly listed in boundary
+  [PASS] boundary explicitly names v/M_Pl scale ratio as out-of-scope
+         v/M_Pl explicitly listed in boundary
+  [PASS] boundary explicitly disclaims 4π² ↔ ln(M_Pl/v) identification
+         ln(M_Pl/v) referenced only in 'does not claim' disclaimer
+
+=== TOTAL: PASS=23, FAIL=0 ===

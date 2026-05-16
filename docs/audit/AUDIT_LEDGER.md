@@ -42,8 +42,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 521 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 522 |
 | `audited_conditional` | 189 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
@@ -117,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5 | D | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_canonical_projector_connection_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -460,6 +459,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -8414,6 +8414,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For arbitrary positive diagonal Yukawa singular-value matrices D_u and D_d and fixed CKM unitary V, the construction Y_u = D_u and Y_d = V D_d gives U_u^dag U_d = V while leaving the singular values equal to the freely chosen diagonal entries, so CKM mixing does not determine quark Yukawa eigenvalues.  _(class `A`)_
 - **chain closes:** True — The negative boundary closes as an exact linear-algebra obstruction: the allowed one-Higgs gauge skeleton admits arbitrary 3x3 Yukawa matrices, the top Ward normalization supplies no generation projector, and a fixed CKM matrix is compatible with independently varied Yukawa singular values. Therefore the listed support surface leaves the target non-top ratios unconstrained.
 - **rationale:** The proof is a clean no-go: it does not attempt to derive numerical masses, does not reuse the top Ward identity as a hidden species-uniform physical identification, and the runner checks the load-bearing CKM/singular-value witness plus the gauge-selection freedom and scope firewall.
+- **auditor confidence:** high
+
+### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-212820-20260516T212820Z-e2b726b9-quark_route2_e_channel_r-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For P(rho_E) with E-shell=(1,0,0,0) and E-center=(1,0,1/6,0), shell normalization gives (1,0) for every rho_E while the center lift is 1+rho_E/6, so rho_E remains free unless an extra E-center endpoint/readout primitive is supplied.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by direct matrix multiplication and rational algebra inside the stated reduced family. The result is a negative boundary: 21/4 is equivalent to adding the missing center ratio -8/9 or q_E=15/8, not derived by the listed minimal constraints.
+- **rationale:** The load-bearing step is class A algebra over the explicitly stated reduced map and endpoint columns, and it establishes non-uniqueness rather than deriving a positive fitted value. The runner source does real matrix and Fraction checks for the reduced family, the equivalence to -8/9, and multiple admissible non-target choices. Its live endpoint use is quarantined as comparator/firewall evidence and is not needed for the no-go conclusion. The clean scope does not certify a first-principles derivation of the restricted carrier class or the granted T-side candidates; it certifies the no-go once those scoped premises are in place.
 - **auditor confidence:** high
 
 ### `quark_route2_exact_readout_map_note_2026-04-19`

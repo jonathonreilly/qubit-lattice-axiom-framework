@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 760,
+    "critical": 759,
     "high": 34,
     "leaf": 269,
     "medium": 154
@@ -5959,27 +5959,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "retained_no_go",
-      "load_bearing_score": 10.631,
-      "note_path": "docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py",
-      "transitive_descendants": 792
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -38786,6 +38765,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 20,
-  "total_pending": 1217
+  "ready_count": 19,
+  "total_pending": 1216
 }

@@ -175227,28 +175227,33 @@
       "verdict_rationale": null
     },
     "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": {
-      "audit_date": "2026-05-01T23:17:04.619459+00:00",
+      "audit_date": "2026-05-16T21:29:57.685721+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 0.0,
-        "transitive_descendants": 0
+        "load_bearing_score": 10.631,
+        "runner_hash": "19c184260f71acb7fed8ad4e6b57cee92f5efddf77b020177e3120ebb901132f",
+        "transitive_descendants": 792
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-fresh-agent-019de5d4",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260516-212820-20260516T212820Z-e2b726b9-quark_route2_e_channel_r-targeted",
       "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
-      "blocker": "awaiting_cross_confirmation",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "Within the supplied restricted Route-2 carrier/readout premises, the no-go is an exact algebraic freedom argument: the allowed map contains rho_E as an unconstrained parameter, all rho_E preserve the shell condition, and the target value is shown to be equivalent to adding a missing center-ratio primitive rather than deriving from the granted inputs.",
+      "chain_closure_explanation": "The conclusion follows by direct matrix multiplication and rational algebra inside the stated reduced family. The result is a negative boundary: 21/4 is equivalent to adding the missing center ratio -8/9 or q_E=15/8, not derived by the listed minimal constraints.",
       "claim_id": "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_scope": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4.",
       "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-16T18:54:48.518497+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-16T21:29:57.685721+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -175263,24 +175268,35 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-16T21:29:57.685721+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260516-212820-20260516T212820Z-e2b726b9-quark_route2_e_channel_r-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
       "effective_status": "retained_no_go",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
-      "independence": "fresh_context",
+      "effective_status_reason": "self",
+      "independence": "cross_family",
       "intrinsic_status": "retained_no_go",
       "load_bearing_score": 10.631,
-      "load_bearing_step": "With granted beta_T/alpha_T=-1 and alpha_T/alpha_E=-2, the reduced readout family P(rho_E)=[[1,0,rho_E,0],[0,-2,0,2]] maps E-shell to (1,0) and E-center to (1+rho_E/6,0), so shell normalization and channelwise linearity impose no equation selecting rho_E; rho_E=21/4 only follows if an additional E-center endpoint ratio such as gamma_T(center)/gamma_E(center)=-8/9 is supplied.",
+      "load_bearing_step": "For P(rho_E) with E-shell=(1,0,0,0) and E-center=(1,0,1/6,0), shell normalization gives (1,0) for every rho_E while the center lift is 1+rho_E/6, so rho_E remains free unless an extra E-center endpoint/readout primitive is supplied.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b489c4245c4b5099e4a35c757f0f8bf0da7c166df41809feaf84ace1b25c618c",
       "note_path": "docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-fresh-agent-019de5d4, family=codex-gpt-5, independence=fresh_context) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the scoped premise boundary and do not cite this note as deriving the restricted readout family, the T-side candidates, or rho_E=21/4.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -175312,16 +175328,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 24,
-        "B": 0,
+        "A": 14,
+        "B": 12,
         "C": 0,
-        "D": 4,
+        "D": 2,
         "total_pass": 28
       },
       "runner_path": "scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py",
       "title": "Quark Route-2 E-Channel Readout Naturality No-Go",
       "transitive_descendants": 792,
-      "verdict_rationale": "The negative boundary closes on the stated premises. The runner checks the reduced family, shell/center images, target q_E=15/8 equivalence, non-uniqueness under naturality frames, and comparator firewall. No hidden observed-mass or endpoint selector is needed for the no-go; the result is that 21/4 is not forced without adding a new primitive."
+      "verdict_rationale": "The load-bearing step is class A algebra over the explicitly stated reduced map and endpoint columns, and it establishes non-uniqueness rather than deriving a positive fitted value. The runner source does real matrix and Fraction checks for the reduced family, the equivalence to -8/9, and multiple admissible non-target choices. Its live endpoint use is quarantined as comparator/firewall evidence and is not needed for the no-go conclusion. The clean scope does not certify a first-principles derivation of the restricted carrier class or the granted T-side candidates; it certifies the no-go once those scoped premises are in place."
     },
     "quark_route2_exact_readout_map_note_2026-04-19": {
       "audit_date": "2026-05-05T09:32:42.931493+00:00",

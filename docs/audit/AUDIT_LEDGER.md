@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 315 |
+| **retained_bounded** | 316 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1194 |
+| unaudited | 1193 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 529 |
+| `audited_clean` | 530 |
 | `audited_conditional` | 194 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1309 |
+| `unaudited` | 1308 |
 
 | claim_type | count |
 |---|---:|
@@ -418,6 +418,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
+| `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7731,6 +7732,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** If the scoped kernel were the Schrödinger free-particle propagator, the phase-derived mass m_eff_phase = 2L c2 and the Gaussian-width mass m_eff_width = L/sigma would have to agree, but the runner finds a large and growing disagreement.  _(class `C`)_
 - **chain closes:** False — The runner source appears to compute the lattice amplitudes, fits, and finite-h mismatch rather than hard-code the reported numbers. The chain does not close because the packet does not derive the Gaussian width readout sigma ≈ L/m_eff from the displayed Schrödinger propagator, nor prove that this width mass must equal the phase mass for the fitted detector observable.
 - **rationale:** Issue: the runner supports the finite-h Gaussian magnitude, quadratic phase, and numerical mismatch, but the load-bearing conversion of fitted Gaussian detector width into m_eff_width = L/sigma is an unsupported physical bridge. Why this blocks: the displayed free-particle kernel fixes the phase coefficient, but the packet does not derive a Gaussian magnitude-width law for the same point-source propagator observable. Repair target: add a retained derivation or analytic comparator proving the width-to-mass readout for this exact central-window amplitude pattern. Claim boundary until fixed: the finite-run diagnostic mismatch is supported, but the Schrödinger no-go is conditional on that missing bridge.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_OPERATOR_CAUCHY_CONVERGENCE_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_OPERATOR_CAUCHY_CONVERGENCE_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical audit of the specified 15-component response vector on the deterministic-rescale 3-edge NN lattice at fixed strength 5e-4 through h = 0.03125, including the stated fitted geometric decay and fitted tail estimate; no operator-norm or PDE continuum theorem was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-214545-20260516T214545Z-45c850ee-nn_lattice_rescaled_oper-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes the fixed 15-component response vector over h = 1.0 through 0.03125 and fits the fine-grid increments to ||vec(h)-vec(h/2)||_2 ~ C h_geom^r with r = 1.5130 and R^2 = 0.9939, giving a fitted tail estimate of 7.7e-3.  _(class `C`)_
+- **chain closes:** True — The supplied runner source genuinely constructs the lattice, propagates amplitudes, computes the observables, checks Born and k=0 guards, and derives the Cauchy increments and fit rather than printing imported constants. Within the explicitly fitted finite-window scope, the note's numerical conclusion matches the runner output.
+- **rationale:** The load-bearing evidence is a repo-local first-principles numerical computation over the stated lattice harness plus algebraic post-processing of the computed increments. The dependencies cited for the deterministic-rescale lane are retained or retained_bounded, and the note does not promote the result to an operator-norm continuum theorem or PDE identification. Residual risk is only the stated model scope: the 7.7e-3 value is a fitted geometric tail estimate, not an unconditional analytic bound.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10`

@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py
+runner_sha256: c71357305e2e76ef597f34f43b6141ac432b18bcc30f441a8c8475872528f260
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+# Meron / fractional-instanton 4 pi^2 / g^2 external gate runner
+# Source note: docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+
+==============================================================================
+T1: symbolic S_half = 4 pi^2 / g^2 (half of BPST 8 pi^2 / g^2)
+==============================================================================
+  [PASS] S_half simplifies to 4 pi^2 / g^2 symbolically
+         S_half = 4*pi**2/g**2, (1/2) S_inst = 4*pi**2/g**2
+
+==============================================================================
+T2: half-action identity S_half = (1/2) S_inst
+==============================================================================
+  [PASS] S_meron / S_inst = 1/2 symbolically
+         ratio = 1/2, expected 1/2
+  [PASS] note states the half-action identity S_half = (1/2) S_inst in text
+         (1/2), S_inst, and 'half' all present
+
+==============================================================================
+T3: numerical S_half at g^2 in {1/2, 1, 2}
+==============================================================================
+  [PASS] S_half at g^2 in {1/2, 1, 2} evaluates to {8, 4, 2} pi^2 numerically
+         g^2=1/2: S_meron=78.956835 (expected 78.956835); g^2=1: S_meron=39.478418 (expected 39.478418); g^2=2: S_meron=19.739209 (expected 19.739209)
+
+==============================================================================
+T4: numerical exp(-S_half) at g^2 in {1/2, 1, 2}
+==============================================================================
+  [PASS] exp(-S_half) at g^2 in {1/2, 1, 2} matches expected suppression orders
+         g^2=1/2: S_meron=78.9568, exp(-S_meron)=5.123e-35 (log10≈-34.29); g^2=1: S_meron=39.4784, exp(-S_meron)=7.157e-18 (log10≈-17.15); g^2=2: S_meron=19.7392, exp(-S_meron)=2.675e-09 (log10≈-8.57)
+  [PASS] canonical g^2=1 half-action scale: 4 pi^2 ≈ 39.4784
+         S_half = 39.4784176044, exp(-S_half) = 7.157e-18
+
+==============================================================================
+T5: fractional topological charge Q = 1/2 structure is boundary-conditioned
+==============================================================================
+  [PASS] note states fractional topological charge Q = 1/2
+         Q = 1/2 stated explicitly
+  [PASS] note conditions Q = 1/2 on boundary/twist/half-volume data
+         boundary, twist, hemisphere, or half-volume convention recorded
+  [PASS] note records that two merons (a pair) sum to integer Q = 1
+         meron pair / sum to integer convention recorded
+
+==============================================================================
+T6: singular-meron boundary refuses standalone finite-action theorem
+==============================================================================
+  [PASS] note refuses standalone finite-action status for the singular unregularized meron
+         singular unregularized finite-action theorem explicitly denied
+  [PASS] note records regulator/twist/patching dependency as load-bearing
+         regulator plus pair/twist/patching boundary recorded
+  [PASS] note records singular core / boundary subtleties
+         singular core and boundary subtleties recorded
+
+==============================================================================
+T7: lattice realization references (Itou-Iritani, Gonzalez-Arroyo)
+==============================================================================
+  [PASS] note cites Itou-Iritani lattice meron paper
+         Itou-Iritani named explicitly
+  [PASS] note pins Itou-Iritani arXiv:1402.5984
+         arXiv:1402.5984 cited
+  [PASS] note cites Gonzalez-Arroyo lineage on lattice fractional instantons
+         Gonzalez-Arroyo lineage cited
+  [PASS] note records 4D lattice realization context
+         Z^4 / Wilson lattice context recorded
+
+==============================================================================
+T8: boundary — note declares open_gate
+==============================================================================
+  [PASS] note declares Claim type: open_gate
+         Claim type line present
+
+==============================================================================
+T9: boundary — note does NOT claim substrate identification
+==============================================================================
+  [PASS] note does NOT assert substrate identification
+         no substrate-identification overclaim string present
+  [PASS] note explicitly disclaims framework substrate identification
+         boundary section names framework substrate explicitly under 'does not claim'
+
+==============================================================================
+T10: boundary — no alpha_LM^16 closure, no v/M_Pl, no 4pi^2 vs lnMPlv identification
+==============================================================================
+  [PASS] note avoids any alpha_LM^16-closure / hierarchy-closure overclaim
+         boundary disclaimers intact
+  [PASS] boundary explicitly names alpha_LM^16 as out-of-scope
+         alpha_LM^16 explicitly listed in boundary
+  [PASS] boundary explicitly names v/M_Pl scale ratio as out-of-scope
+         v/M_Pl explicitly listed in boundary
+  [PASS] boundary explicitly disclaims 4π² ↔ ln(M_Pl/v) identification
+         ln(M_Pl/v) referenced only in 'does not claim' disclaimer
+
+=== TOTAL: PASS=23, FAIL=0 ===
+
+----- stderr -----
+

@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py
+runner_sha256: b059ba311b882473e2c5a5bb5085a172bc76c0fdee9aace59cfa6d8d0bd9db64
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+# 't Hooft 1981 dual-superconductor / center-vortex confinement external theorem runner
+# Source note: docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md
+
+==============================================================================
+T1: abelian projection — residual gauge group U(1)^(N-1) ⊂ SU(N)
+==============================================================================
+  [PASS] note states abelian-projection mechanism (gauge condition + residual symmetry)
+         abelian projection cited explicitly
+  [PASS] note states residual U(1)^(N-1) abelian subgroup
+         U(1)^(N-1) named in the note
+  [PASS] note states diagonalization of an adjoint composite as gauge condition
+         diagonalization mechanism present
+  [PASS] symbolic residual abelian rank N-1 evaluates to {1, 2} for N in {2, 3}
+         rank(SU(2))-residual = 1, rank(SU(3))-residual = 2
+
+==============================================================================
+T2: vortex action S_vortex = (1 / g²) × (σ a²) symbolic form
+==============================================================================
+  [PASS] S_vortex = (1/g^2) × (σ a^2) symbolic identity
+         S_vortex = a**2*sigma/g**2, expected a**2*sigma/g**2
+  [PASS] note names S_vortex symbolically
+         S_vortex symbol present
+  [PASS] note names string-tension factor σ a^2 in vortex action
+         σ a² / string-tension factor present
+
+==============================================================================
+T3: at SU(3), g²=1, σ a²=1, symbolic vortex action S_vortex = 1
+==============================================================================
+  [PASS] S_vortex(g²=1, σ a²=1) = 1 symbolically
+         S_vortex at pin = 1, expected 1
+  [PASS] S_vortex(g²=1, σ a²=1) = 1 via exact Fraction arithmetic
+         Fraction S_vortex = 1
+
+==============================================================================
+T4: monopole action S_mono ~ (8 π / g) × O(1) structural shape
+==============================================================================
+  [PASS] note names S_mono symbolically
+         S_mono symbol present
+  [PASS] note states monopole action structural form (8 π / g) × O(1)
+         8 π / g structural form present
+  [PASS] note qualifies the monopole action as a structural shape, not a precise prefactor
+         profile-factor / structural-shape qualifier present
+
+==============================================================================
+T5: condensate condition exp(-S_vortex) ~ O(1) at confinement
+==============================================================================
+  [PASS] note states condensate condition exp(-S_vortex) ~ O(1)
+         exp(-S_vortex) ~ O(1) named symbolically
+  [PASS] note frames condensate condition at confinement
+         condensate + confinement language present
+
+==============================================================================
+T6: Z_N center symmetry breaking signature (vortex VEV)
+==============================================================================
+  [PASS] note states Z_N center symmetry of pure SU(N) Yang-Mills
+         Z_N center symmetry named
+  [PASS] note states vortex condensation as center-symmetry-breaking signature
+         vortex condensation / vortex VEV present
+  [PASS] note states order/disorder duality (Kramers-Wannier-style)
+         disorder + Kramers-Wannier duality present
+
+==============================================================================
+T7: area law as physical observable for Wilson loop
+==============================================================================
+  [PASS] note states Wilson-loop area law as confinement diagnostic
+         Wilson loop + area law present
+  [PASS] note states string tension σ as confinement order parameter
+         string tension σ named symbolically
+  [PASS] note states rectangular R × T Wilson-loop limit definition of σ
+         rectangular R × T form present
+  [PASS] symbolic Wilson-loop area-law form ⟨W(C)⟩ ~ exp(-σ × Area(C)) reproduced
+         log⟨W⟩ + σ Area = 0
+
+==============================================================================
+T8: boundary — note declares positive_theorem
+==============================================================================
+  [PASS] note declares Claim type: positive_theorem
+         Claim type line present
+
+==============================================================================
+T9: boundary — note does NOT claim substrate identification
+==============================================================================
+  [PASS] note does NOT assert substrate identification
+         no substrate-identification overclaim string present
+  [PASS] note explicitly disclaims framework substrate identification
+         boundary section names framework substrate explicitly under 'does not claim'
+
+==============================================================================
+T10: boundary — note does NOT claim alpha_LM^16 / hierarchy closure
+==============================================================================
+  [PASS] note avoids any alpha_LM^16 / hierarchy / scale-ratio closure overclaim
+         boundary disclaimers intact
+  [PASS] boundary explicitly names alpha_LM^16 as out-of-scope
+         alpha_LM^16 explicitly listed in boundary
+  [PASS] boundary explicitly names v/M_Pl scale ratio as out-of-scope
+         v/M_Pl explicitly listed in boundary
+  [PASS] boundary explicitly excludes deriving the string tension σ from framework primitives
+         string-tension exclusion present
+
+=== TOTAL: PASS=28, FAIL=0 ===
+
+----- stderr -----
+

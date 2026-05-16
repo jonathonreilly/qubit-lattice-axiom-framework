@@ -67138,6 +67138,17 @@
       "runner_path": "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py",
       "title": "Third Grown Family Sign Note"
     },
+    "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16": {
+      "claim_id": "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "note_hash": "4db06c7267dde8761efb895b30b312a6d5f5969b1b47378cd38df0b7cecc42d4",
+      "path": "docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py",
+      "title": "'t Hooft 1981 Dual-Superconductor / Center-Vortex Confinement \u2014 External Narrow Theorem"
+    },
     "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03": {
       "claim_id": "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03",
       "claim_type_author_hint": "positive_theorem",
@@ -71898,6 +71909,7 @@
     "tensor_support_center_excess_law_note",
     "thales_right_angle_narrow_theorem_note_2026-05-02",
     "third_grown_family_boundary_note",
+    "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
     "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
     "three_generation_observable_count_corollary_note_2026-05-03",
     "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
@@ -71986,7 +71998,7 @@
       "no_go": 52,
       "none": 1528,
       "open_gate": 40,
-      "positive_theorem": 151
+      "positive_theorem": 152
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 837,
@@ -71995,12 +72007,12 @@
       "no_go": 157,
       "none": 445,
       "open_gate": 119,
-      "positive_theorem": 607
+      "positive_theorem": 608
     },
     "edge_count": 9016,
-    "leaf_count": 627,
-    "node_count": 2241,
-    "root_count": 764,
-    "runners_with_path": 1859
+    "leaf_count": 628,
+    "node_count": 2242,
+    "root_count": 765,
+    "runners_with_path": 1860
   }
 }

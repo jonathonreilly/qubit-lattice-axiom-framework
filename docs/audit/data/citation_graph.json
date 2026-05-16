@@ -46847,6 +46847,17 @@
       "runner_path": "scripts/frontier_fractional_charge_denominator_from_n_c.py",
       "title": "Fractional Charge Denominator From N_c Theorem"
     },
+    "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16": {
+      "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "note_hash": "02a4f209b5637794f2922cfff3ffdd0248cdbbaa57ce66a12208f131e325b7e9",
+      "path": "docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py",
+      "title": "Fractional Instanton Condensate / Dilute-Gas Hierarchy Mechanism \u2014 External Narrow Theorem"
+    },
     "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": {
       "claim_id": "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
       "claim_type_author_hint": null,
@@ -71499,6 +71510,7 @@
     "fm_transfer_note",
     "fourth_family_complex_boundary_note",
     "fourth_family_quadrant_note",
+    "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
     "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
     "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
     "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
@@ -71986,7 +71998,7 @@
       "no_go": 52,
       "none": 1528,
       "open_gate": 40,
-      "positive_theorem": 151
+      "positive_theorem": 152
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 837,
@@ -71995,12 +72007,12 @@
       "no_go": 157,
       "none": 445,
       "open_gate": 119,
-      "positive_theorem": 607
+      "positive_theorem": 608
     },
     "edge_count": 9016,
-    "leaf_count": 627,
-    "node_count": 2241,
-    "root_count": 764,
-    "runners_with_path": 1859
+    "leaf_count": 628,
+    "node_count": 2242,
+    "root_count": 765,
+    "runners_with_path": 1860
   }
 }

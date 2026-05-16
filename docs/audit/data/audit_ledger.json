@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -74399,6 +74398,54 @@
       "runner_path": "scripts/frontier_fractional_charge_denominator_from_n_c.py",
       "title": "Fractional Charge Denominator From N_c Theorem",
       "transitive_descendants": 787,
+      "verdict_rationale": null
+    },
+    "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "02a4f209b5637794f2922cfff3ffdd0248cdbbaa57ce66a12208f131e325b7e9",
+      "note_path": "docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py",
+      "title": "Fractional Instanton Condensate / Dilute-Gas Hierarchy Mechanism \u2014 External Narrow Theorem",
+      "transitive_descendants": 0,
       "verdict_rationale": null
     },
     "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25": {
@@ -240545,7 +240592,7 @@
     "preserved_archived_failed": 44,
     "preserved_existing": 2086,
     "re_audit_required": 0,
-    "row_count": 2130,
-    "seeded_new": 0
+    "row_count": 2131,
+    "seeded_new": 1
   }
 }

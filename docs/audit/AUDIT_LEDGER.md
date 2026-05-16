@@ -42,8 +42,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 7 |
-| `audited_clean` | 520 |
+| `audit_in_progress` | 6 |
+| `audited_clean` | 521 |
 | `audited_conditional` | 188 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
@@ -118,7 +118,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5 | D | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
-| `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_canonical_projector_connection_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -594,6 +593,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `third_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_count_corollary_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10766,6 +10766,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Three independent grown families produce quantitatively identical physics on all 9 measurable properties to within 5%.  _(class `B`)_
 - **chain closes:** False — The source table itself leaves Family 3 Distance alpha as '(not yet)', and no runner is provided to recompute the 9-property comparison, so the headline 9/9 three-family match does not close.
 - **rationale:** Issue: The note claims three families match on all 9 measurable properties, but the table explicitly has Family 3 Distance alpha marked '(not yet)' and the note provides no runner or log artifact to verify the cross-family card. Why this blocks: the load-bearing 9/9 statement is false on the face of the supplied table, and the broader inference that observables are geometry-independent cannot follow from a partial, hand-entered comparison. Repair target: add a runner that recomputes every listed property for all three families, including Family 3 Distance alpha, with explicit <5% assertions and at least one holdout check. Claim boundary until fixed: safe to cite this as a partial comparison of three selected drift/restore rows with eight populated properties and distance-alpha data only for Families 1 and 2; not safe to claim 9/9 three-family equality or geometry-independence.
+- **auditor confidence:** high
+
+### `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact linear-algebra verification that the three specified diagonal involutions on C^3 have three distinct joint sign characters and yield the stated rank-1 sector projectors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-212606-20260516T212606Z-21a6ce5b-three_generation_hw1_dis-targeted`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The product P(s)=((I+s_x T_x)/2)((I+s_y T_y)/2)((I+s_z T_z)/2) is the joint eigenspace projector, giving e_i e_i^T for the three listed characters and zero for the other five sign triples.  _(class `A`)_
+- **chain closes:** True — Given H=C^3 and the three specified diagonal generators, the involution, commutation, distinct-character, projector, and direct-sum claims follow by direct 3x3 matrix algebra. The cited retained authority is only needed as provenance for the imported carrier, not for the audited algebraic implication itself.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the explicitly supplied diagonal matrices, and the conclusion follows without numerical comparators, fitted inputs, or physical-species identification. The runner source actually constructs the matrices and projectors with exact sympy arithmetic rather than merely printing expected results, and its 62 passing checks match the note's scoped claims. The upstream authority is marked retained, and no non-retained dependency is load-bearing for the narrow algebraic implication.
 - **auditor confidence:** high
 
 ### `three_generation_local_algebra_narrow_theorem_note_2026-05-10`

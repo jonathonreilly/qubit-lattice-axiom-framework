@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1203 |
+| unaudited | 1202 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 189 |
+| ~~audited_conditional~~ | 190 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 522 |
-| `audited_conditional` | 189 |
+| `audited_conditional` | 190 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1318 |
+| `unaudited` | 1317 |
 
 | claim_type | count |
 |---|---:|
@@ -762,6 +762,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_closure_review_packet_2026-04-24` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reviewer_stress_test_note_2026-04-21` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -6341,6 +6342,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the conditional algebra from the admitted SO(2)-quotient carrier to MRU and kappa = 2, plus the runner's checks that the quotient itself is admitted rather than derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213225-20260516T213225Z-adfc5a2b-koide_moment_ratio_unifo-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the SO(2) frame-quotient on the charged-lepton scalar lane, the reduced two-slot carrier (rho_+, rho_perp) is exact and the reduced log-volume law forces E_+ = E_perp, hence kappa = 2.  _(class `G`)_
+- **chain closes:** False — The algebra after the SO(2)-quotient closes, but the full claim does not close from the restricted packet because the physical SO(2)-quotient/readout is explicitly admitted and not derived. The missing step is a retained theorem forcing scalar charged-lepton observables to factor through the doublet radius alone.
+- **rationale:** The note is careful to state that the SO(2)-quotient is a load-bearing admitted input, and the runner source reinforces this by logging one admission and by computing counter-evidence that generic Herm_circ(3) scalar observables carry arg(b) dependence. The downstream algebraic checks are valid conditional identities, but they do not derive the carrier reduction. Because the conclusion depends on an explicit open physical premise not closed by the restricted packet, the correct verdict is conditional.
+- **open / conditional deps cited:**
+  - `KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
 - **auditor confidence:** high
 
 ### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`

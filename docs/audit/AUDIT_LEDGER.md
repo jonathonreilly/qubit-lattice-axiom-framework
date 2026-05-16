@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1200 |
+| unaudited | 1199 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 190 |
+| ~~audited_conditional~~ | 191 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 5 |
 | `audited_clean` | 523 |
-| `audited_conditional` | 190 |
+| `audited_conditional` | 191 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1315 |
+| `unaudited` | 1314 |
 
 | claim_type | count |
 |---|---:|
@@ -706,6 +706,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_microscopic_d_last_mile_note_2026-04-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -3347,6 +3348,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Once the seed pair and the 5-real breaking source (xi_1, xi_2, eta_1, eta_2, delta) are supplied, D_act, H_e, the flavored packet, selected column, and eta are fixed algorithmically.  _(class `A`)_
 - **chain closes:** False — The coordinate reconstruction of x, y, and D_act closes algebraically, but the packet does not include the imported projector/transport machinery or its retained-grade derivation. The missing step is an independent closure of active_packet_from_h, flavored_eta_columns, canonical_h/canonical_y, and the selected-column transport law from the axiom rather than imported runner modules and hard-coded comparator values.
 - **rationale:** The runner does perform nontrivial algebraic reconstruction of x and y from seed plus zero-sum breaking coordinates and checks that the downstream values are reproduced through imported functions. However, the load-bearing downstream machinery is not present in the restricted packet, and the runner hard-codes the key eta target values it then checks against. With no cited retained authority and no visible first-principles implementation of the imported PMNS/projector/transport functions, the conclusion is conditional rather than clean.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the conditional consequence of adopting the minimum-information selector law on the fixed native N_e seed surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213442-20260516T213442Z-951f1eeb-dm_leptogenesis_pmns_min-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Among all positive off-seed sources on the fixed seed surface satisfying eta_{i_*}/eta_obs = 1, choose the one minimizing I_seed.  _(class `E`)_
+- **chain closes:** False — The runner checks the stated constrained optimization consequence, but the selector I_seed is explicitly adopted rather than derived from Cl(3) on Z^3. The missing step is a framework-internal derivation or retained bridge justifying I_seed as the correct selector.
+- **rationale:** The source note honestly frames the result as conditional on importing a minimum-information selector from information geometry. The runner performs nontrivial numerical constrained optimization and verifies exact closure on the favored column, but it does not derive the selector from the stated axiom. Therefore the audited result is bounded support for the conditional law, not a closed first-principles theorem.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`

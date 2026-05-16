@@ -1,0 +1,70 @@
+slug: monopole-derived-note-2026-05-16
+goal_summary: |
+  Close the missing derivation in docs/MONOPOLE_DERIVED_NOTE.md so a re-audit
+  can land a coherent status. The auditor flagged two issues:
+  (1) the headline M_mono = c * beta * M_Pl with c = G_lat(0) = 0.2527 and
+      beta = 1/(4*pi*alpha_EM(M_Pl)) uses an externally imported
+      alpha_EM^{-1}(M_Pl) ~ 72.1 from one-loop SM RG running. That makes the
+      headline a chosen-scale numerical result, not a closed first-principles
+      computation.
+  (2) Step 4 (direct numerical self-energy on L = 6..12 lattices) returns
+      Delta S of order hundreds and a derived M of order 400-700 M_Pl, which
+      disagrees with the analytic 1.43 M_Pl by orders of magnitude.
+
+target_status: bounded-support (with explicit alpha import label and a
+  corrected, honestly framed Step 4 that does not pretend to be a quantitative
+  self-energy measurement)
+target_claim_type: bounded_theorem
+
+runtime_budget_minutes: 60
+cycles_planned: 1
+mode: run
+
+active_route: |
+  Rewrite docs/MONOPOLE_DERIVED_NOTE.md and the runner so that:
+    - the alpha import is named explicitly, with its role (bridge import)
+      and its impact on the headline (the prefactor c * beta scales linearly
+      with beta = 1/(4*pi*alpha), so the c-coefficient is the closed lattice
+      derivation and the beta-coefficient is bridge-imported)
+    - Step 4 is reframed as a configuration check (verifying the constructed
+      field carries the intended integer monopole charges with zero net
+      charge, and that the BARE Wilson action of a Dirac-string-singular
+      field is dominated by string artifacts rather than monopole self-energy)
+      — NOT as a quantitative independent measurement of c
+    - the headline statement is the lattice-derived shape
+        M_mono = c_lat * beta * M_Pl, c_lat = G_lat(0) = 0.2527 (derived)
+      with the numerical 1.43 M_Pl explicitly conditioned on the imported
+      alpha_EM(M_Pl) value
+    - a coupling-independent statement (M_mono ~ M_Planck in the
+      perturbative-alpha band [30, 60] in alpha^{-1}) is kept as the
+      bounded-support headline
+  Constraint: no audit-data, no verdicts, single PR, no --no-verify.
+
+files_touched:
+  - docs/MONOPOLE_DERIVED_NOTE.md
+  - scripts/frontier_monopole_derived.py
+  - .claude/science/physics-loops/monopole-derived-note-2026-05-16/
+
+open_imports:
+  - alpha_EM(M_Pl): one-loop SM RG running from alpha_EM(M_Z) = 1/127.9; not
+    derived from lattice axioms. The note now labels this as a non-derivation
+    bridge import.
+  - Wilson action: simplest compact U(1) action; alternative actions (Villain,
+    improved, etc.) would shift c_lat slightly but stay in the same Planckian
+    band. Labeled as a non-derivation choice.
+  - Planck-scale package pin a^(-1) = M_Pl: labeled as a non-derivation
+    package pin.
+
+no_go_routes:
+  - First-principles derivation of alpha_EM(M_Pl) from lattice axioms alone:
+    not closed in the wider repo; out of scope for this iteration.
+
+review_findings: |
+  Pending: this iteration is a single 60-min self-review pass.
+
+next_exact_action: |
+  Commit the rewritten note + runner + loop pack. Push branch and open PR.
+
+stop_condition: |
+  60-min timebox reached or honest closure of (i) alpha-import labeling and
+  (ii) Step 4 reframing achieved.

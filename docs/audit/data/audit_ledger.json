@@ -229484,22 +229484,41 @@
       "verdict_rationale": null
     },
     "work_history.ckm.cabibbo_bound_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-16T21:32:12.914805+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "work_history.ckm.ckm_mass_basis_nni_note": null
+        },
+        "dep_claim_type": {
+          "work_history.ckm.ckm_mass_basis_nni_note": "meta"
+        },
+        "dep_effective_status": {
+          "work_history.ckm.ckm_mass_basis_nni_note": "meta"
+        },
+        "deps": [
+          "work_history.ckm.ckm_mass_basis_nni_note"
+        ],
+        "load_bearing_score": 11.628,
+        "runner_hash": "545453b4272f2665125efb9b5dd41036759d638f9d8d1c9ebcf8e602443fa7bd",
+        "transitive_descendants": 790
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260516-213152-20260516T213152Z-25496fe8-work_history.ckm.cabibbo-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical value is produced only after importing PDG quark masses and fitted O(1) NNI coefficients calibrated from CKM data. The missing step is an internal derivation of those masses and coefficients from retained framework axioms.",
       "claim_id": "work_history.ckm.cabibbo_bound_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded Cabibbo claim that the mass-basis NNI flavor package reports |V_us| \u2248 0.2251 versus PDG 0.2243.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-16T21:32:12.914805+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -229507,31 +229526,33 @@
         "work_history.ckm.ckm_mass_basis_nni_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "effective_status": "audited_numerical_match",
+      "effective_status_reason": "terminal_audit",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_numerical_match",
       "load_bearing_score": 11.628,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "From the mass-basis NNI route, |V_us| = 0.2251 compared with PDG 0.2243, ratio 1.004.",
+      "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "66b180ef72e33494a257197b85ef6c51334a56fdece9b411073b7d19c70fa7a4",
       "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "Re-check whether the live non-work-history CKM_MASS_BASIS_NNI_NOTE.md has a retained-grade replacement; in this restricted packet the provided one-hop authority is explicitly historical/meta and imports-dependent.",
+      "open_dependency_paths": [
+        "docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md"
+      ],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 11,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 5,
+        "total_pass": 16
       },
       "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
       "title": "Historical Cabibbo Bound Note",
       "transitive_descendants": 790,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner does compute a CKM matrix and reports |V_us| = 0.22512, consistent with the source note. However, the computation uses hard-coded PDG masses, PDG comparators, and fitted geometric coefficients imported from another calibrated CKM route. The cited authority explicitly says the CKM comparison table is an imports-dependent numerical consistency check, not a first-principles derivation."
     },
     "work_history.ckm.ckm_mass_basis_nni_note": {
       "audit_date": null,

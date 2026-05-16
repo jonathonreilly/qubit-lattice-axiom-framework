@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 312 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1204 |
+| unaudited | 1203 |
 | meta | 115 |
-| ~~audited_numerical_match~~ | 7 |
+| ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 189 |
 | ~~audited_failed~~ | 19 |
@@ -47,9 +47,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 189 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
-| `audited_numerical_match` | 7 |
+| `audited_numerical_match` | 8 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1319 |
+| `unaudited` | 1318 |
 
 | claim_type | count |
 |---|---:|
@@ -917,6 +917,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
+| `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
@@ -11647,6 +11648,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note asserts that preserved hydrogen, helium Hartree, and helium Jastrow/VMC scripts instantiate the lattice kinetic-plus-Coulomb Hamiltonians and produce the quoted bounded atomic readouts.  _(class `C`)_
 - **chain closes:** False — The chain does not close because the restricted packet provides no one-hop lattice-kinetic or Coulomb-kernel authority and no runner source/stdout certificate tying the quoted numbers to the stated Hamiltonians. The note itself acknowledges this pinning and dependency-edge gap.
 - **rationale:** Issue: the load-bearing numerical computation is only asserted, not certified by supplied runner source/stdout or one-hop retained operator authorities. Why this blocks: a bounded theorem over a lattice Hamiltonian requires the Hamiltonian definitions and completed computation artifacts inside the restricted chain. Repair target: wire the canonical lattice-kinetic and Coulomb-kernel authority notes as direct dependencies and provide cached stdout/source certificates for all three companion scripts. Claim boundary until fixed: diagnostic work-history numerics only, not retained bounded authority.
+- **auditor confidence:** high
+
+### `work_history.ckm.cabibbo_bound_note`
+
+- **Note:** [`work_history/ckm/CABIBBO_BOUND_NOTE.md`](../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded Cabibbo claim that the mass-basis NNI flavor package reports |V_us| ≈ 0.2251 versus PDG 0.2243.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260516-213152-20260516T213152Z-25496fe8-work_history.ckm.cabibbo-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the mass-basis NNI route, |V_us| = 0.2251 compared with PDG 0.2243, ratio 1.004.  _(class `G`)_
+- **chain closes:** False — The numerical value is produced only after importing PDG quark masses and fitted O(1) NNI coefficients calibrated from CKM data. The missing step is an internal derivation of those masses and coefficients from retained framework axioms.
+- **rationale:** The runner does compute a CKM matrix and reports |V_us| = 0.22512, consistent with the source note. However, the computation uses hard-coded PDG masses, PDG comparators, and fitted geometric coefficients imported from another calibrated CKM route. The cited authority explicitly says the CKM comparison table is an imports-dependent numerical consistency check, not a first-principles derivation.
+- **open / conditional deps cited:**
+  - `work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md`
 - **auditor confidence:** high
 
 ### `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11`

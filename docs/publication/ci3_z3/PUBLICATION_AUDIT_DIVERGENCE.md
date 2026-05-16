@@ -17,9 +17,9 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 448 |
+| critical | `unaudited` | 447 |
 | critical | `audited_conditional` | 58 |
-| critical | `audited_numerical_match` | 4 |
+| critical | `audited_numerical_match` | 5 |
 | critical | `audited_renaming` | 2 |
 | medium | `unaudited` | 2 |
 | critical | `open_gate` | 1 |
@@ -506,7 +506,7 @@ publication tables phrase it.
 | critical | `wave_retarded_gravity_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
-| critical | `work_history.ckm.cabibbo_bound_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `work_history.ckm.cabibbo_bound_note` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md |
 | critical | `work_history.ckm.jarlskog_phase_bound_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_axiom_first_microscopic_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_boundary_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

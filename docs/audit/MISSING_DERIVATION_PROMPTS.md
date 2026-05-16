@@ -2418,7 +2418,7 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_8 rows in this category._
+_7 rows in this category._
 
 
 ### `dimensional_gravity_table`
@@ -2529,35 +2529,6 @@ The note claims Z2 x Z2 is Born-clean, k=0-clean, gravity-positive, and decohere
 
 Auditor's repair target (canonical class + action):
 runner_artifact_issue: provide the missing dense N=80/100/120 joint-validation log or registered runner cache, and register the joint validator as this row's runner before re-auditing the N=120 claim.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `lattice_family_validation_note`
-
-**Note:** [docs/LATTICE_FAMILY_VALIDATION_NOTE.md](docs/LATTICE_FAMILY_VALIDATION_NOTE.md)  |  **Descendants:** 9  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/LATTICE_FAMILY_VALIDATION_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Finite ordered-2D-lattice two-harness synthesis at N=40, half_width=20, k=5.0: barrier card MI/purity/d_TV/gravity/k=0/Born companion plus no-barrier b in {3,5,7,10,13,16,19} magnitude fit; no one-card unification, signed attractive standard-strength gravity card, mass law, large-N scaling, or blanket lattice theorem is audited.
-
-Auditor's verdict_rationale:
-Issue: the note reports Born |I3|/P = 2.98e-16 for the barrier card, while the current SHA-pinned runner cache reports Born = 5.573785e-16. Why this blocks: both values are machine-clean, but a clean retained numerical synthesis must match the current runner artifact it cites, and this row also needs to be typed as a bounded finite harness result rather than a broad positive theorem. Repair target: refresh the note table to the current primary cache or explicitly pin the frozen log as the audited artifact, then re-audit under the bounded two-harness scope. Claim boundary until fixed: the ordered lattice artifacts support a finite same-family two-harness bridge with no gravity-law or one-card unification promotion, but the exact retained table is stale.
-
-Auditor-quoted load-bearing step:
-On the standard-strength slice, the ordered lattice family supports a real same-family two-harness bridge: Born-clean barrier coexistence, nontrivial MI/slit separation, real CL-bath decoherence, strong phase-mediated redistribution/lensing, and clean 1/b-like distance-law magnitude on the no-barrier branch.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue — refresh/pin the Born table cell against the current SHA-pinned lattice_family_validation cache and keep the row scoped as a bounded two-harness synthesis.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

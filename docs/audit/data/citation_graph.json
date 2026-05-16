@@ -54109,7 +54109,7 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "af0730b8bf455927f474a4a9a21ef089e88d76e92810930435a0fd5962691899",
+      "note_hash": "2a9e54d8bad6415298914947df4998e7dfbf3c8581dd6c9a7add7807fc2398cc",
       "path": "docs/LATTICE_DISTANCE_LAW_NOTE.md",
       "runner_path": null,
       "title": "Lattice Distance-Law Note"

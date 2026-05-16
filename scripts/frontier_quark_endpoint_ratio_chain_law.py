@@ -38,6 +38,7 @@ AUDIT_TIMEOUT_SEC = 1800
 
 import math
 from dataclasses import dataclass
+from pathlib import Path
 
 from frontier_quark_e_channel_endpoint_quotient_law import (
     anchored_a_u_from_denominator,
@@ -47,6 +48,12 @@ from frontier_quark_e_channel_endpoint_quotient_law import (
 from frontier_quark_endpoint_readout_constraints import endpoint_readout
 from frontier_quark_projector_parameter_audit import solve_anchored_surface
 from frontier_quark_up_amplitude_candidate_scan import evaluate_candidate
+
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / "docs"
+PARENT_NOTE = DOCS / "QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md"
+SCOPE_NARROW_NOTE = DOCS / "QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md"
+NATURALITY_NO_GO_NOTE = DOCS / "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md"
 
 
 PASS_COUNT = 0
@@ -276,6 +283,66 @@ def part4_anchored_quark_branch(d_chain: float) -> None:
     )
 
 
+def part5_audit_traceability() -> None:
+    print("\n" + "=" * 72)
+    print("PART 5: Audit Traceability Cross-References")
+    print("=" * 72)
+
+    parent_text = PARENT_NOTE.read_text()
+    scope_narrow_text = SCOPE_NARROW_NOTE.read_text()
+    no_go_text = NATURALITY_NO_GO_NOTE.read_text()
+
+    print(f"\n  parent note:        {PARENT_NOTE.name}")
+    print(f"  scope-narrow note:  {SCOPE_NARROW_NOTE.name}")
+    print(f"  naturality no-go:   {NATURALITY_NO_GO_NOTE.name}")
+
+    local_check(
+        "the parent note exposes its 2026-05-05 audit verdict as audited_numerical_match (class G)",
+        "audited_numerical_match" in parent_text and "class G" in parent_text,
+        "verdict and class are surfaced in the parent note's audit-traceability section",
+    )
+    local_check(
+        "the parent note names the missing first-principles derivation flagged by the audit re-audit guidance",
+        "endpoint_readout()" in parent_text
+        and "first-principles derivation" in parent_text
+        and "exact ratio chain" in parent_text,
+        "re-audit target naming endpoint_readout() and the exact ratio chain is surfaced",
+    )
+    local_check(
+        "the parent note enumerates all three nearest-rational legs {5/6, -2, -8/9} as the audited load-bearing identifications",
+        "5/6" in parent_text
+        and "-2" in parent_text
+        and "-8/9" in parent_text
+        and "nearest" in parent_text,
+        "the three small-rational chain legs are surfaced as nearest-rational matches",
+    )
+    local_check(
+        "the parent note cross-references the 2026-05-10 audited-scope-narrowing companion",
+        "QUARK_ENDPOINT_RATIO_CHAIN_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md" in parent_text,
+        "scope-narrow companion is reachable from the parent note",
+    )
+    local_check(
+        "the parent note cross-references the retained Route-2 E-channel naturality no-go",
+        "QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md" in parent_text,
+        "the retained_no_go authority is named explicitly",
+    )
+    local_check(
+        "the retained naturality no-go states the conditional non-uniqueness it bounds",
+        "rho_E" in no_go_text
+        and "remains a free parameter" in no_go_text
+        and "21/4" in no_go_text,
+        "the no-go names rho_E as a free parameter under the granted T-side conditions",
+    )
+    local_check(
+        "the scope-narrowing companion enumerates the three input small-rational legs as nearest-rational matches",
+        "5/6" in scope_narrow_text
+        and "-2" in scope_narrow_text
+        and "-8/9" in scope_narrow_text
+        and "nearest-rational" in scope_narrow_text,
+        "the companion records all three chain legs as the audited within-scope nearest-rational identifications",
+    )
+
+
 def main() -> int:
     print("Quark endpoint ratio-chain law")
     print("=" * 72)
@@ -284,6 +351,7 @@ def main() -> int:
     t_cand, shell_cand, center_cand = part2_small_rational_chain_candidates(q_t, s_te, c_te)
     _q_e_chain, d_chain = part3_implied_e_law(t_cand, shell_cand, center_cand)
     part4_anchored_quark_branch(d_chain)
+    part5_audit_traceability()
 
     print("\nVerdict:")
     print(
@@ -294,7 +362,12 @@ def main() -> int:
         "reproduces the bounded E-channel law r_E = 21/4 and denominator "
         "candidate D_E = 21/8. So the theorem-grade target narrows again: the "
         "right next derivation problem is no longer an isolated E quotient, "
-        "but the exact endpoint ratio chain itself."
+        "but the exact endpoint ratio chain itself. The bounded status is "
+        "anchored to the retained Route-2 E-channel readout naturality no-go "
+        "(2026-04-28, audited_clean), which proves the third chain leg -8/9 "
+        "is exactly equivalent to the missing E-center readout primitive: an "
+        "additional E-center primitive is required before the chain "
+        "identification can become a derivation."
     )
 
     print("\n" + "=" * 72)

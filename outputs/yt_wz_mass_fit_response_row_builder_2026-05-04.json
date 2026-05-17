@@ -1,7 +1,7 @@
 {
-  "actual_current_surface_status": "open / WZ mass-fit response-row builder inputs absent",
+  "actual_current_surface_status": "open / WZ mass-fit response-row builder has Block126 top-side packet; W/Z/g2/action inputs absent",
   "bare_retained_allowed": false,
-  "exact_next_action": "Supply outputs/yt_wz_correlator_mass_fit_rows_2026-05-04.json, outputs/yt_same_source_top_response_certificate_2026-05-04.json, and outputs/yt_electroweak_g2_certificate_2026-05-04.json, rerun this builder in strict mode to write outputs/yt_fh_gauge_mass_response_measurement_rows_2026-05-03.json, then rerun the W/Z response certificate builder and same-source W/Z gate.",
+  "exact_next_action": "Supply outputs/yt_wz_correlator_mass_fit_rows_2026-05-04.json, genuine same-source W/Z rows with matched covariance against the Block126 top-side packet, and outputs/yt_electroweak_g2_certificate_2026-05-04.json, rerun this builder in strict mode to write outputs/yt_fh_gauge_mass_response_measurement_rows_2026-05-03.json, then rerun the W/Z response certificate builder and same-source W/Z gate.",
   "fail_count": 0,
   "g2_input": "outputs/yt_electroweak_g2_certificate_2026-05-04.json",
   "g2_validation": {
@@ -31,7 +31,7 @@
     "wz_correlator_mass_fit_path": "exact negative boundary / WZ correlator mass-fit path absent on PR230 surface",
     "wz_response_measurement_row_contract": "bounded-support / WZ response measurement-row contract gate"
   },
-  "pass_count": 9,
+  "pass_count": 10,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The builder only adapts future W/Z mass fits into the row schema for the existing W/Z certificate builder.  Closure still requires strict rows, W/Z gate pass, W-response rows, correction authority, matching/running, and audit.",
   "strict_non_claims": [
@@ -42,12 +42,45 @@
     "does not use H_unit, yt_ward_identity, alpha_LM, plaquette/u0, c2=1, Z_match=1, or kappa_s=1"
   ],
   "strict_wz_mass_fit_response_row_builder_passed": false,
-  "top_response_input": "outputs/yt_same_source_top_response_certificate_2026-05-04.json",
+  "top_response_input": "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json",
   "top_response_validation": {
+    "checks": {
+      "accepted_action_absent": true,
+      "complete_tau_slices_present": true,
+      "current_closure_not_satisfied": true,
+      "matched_tau1_rows_present": true,
+      "matched_top_wz_covariance_absent": true,
+      "phase_is_bounded_support": true,
+      "proposal_not_allowed": true,
+      "seed_control_preserved": true,
+      "selected_mass_is_middle_0p75": true,
+      "strict_g2_absent": true,
+      "top_side_covariance_computed": true,
+      "wz_rows_absent": true
+    },
     "failed_checks": [
-      "same-source top response certificate absent"
+      "same-source W/Z rows absent",
+      "matched top-W/Z covariance absent",
+      "strict non-observed g2 absent",
+      "accepted same-source EW/Higgs action absent",
+      "canonical-Higgs/source-overlap authority absent"
     ],
-    "present": false,
+    "present": true,
+    "strict_limit": "Block126 supplies same-configuration top-side production support only. It is not a strict W/Z response input until genuine W/Z rows, matched top-W/Z covariance, strict g2, and accepted action authority are supplied.",
+    "top_side_packet_schema": "yt_pr230_block126_matched_top_additive_subtraction_packet",
+    "top_side_packet_valid": true,
+    "top_side_summary": {
+      "matched_tau1_row_count": 1008,
+      "selected_mass_parameters": [
+        0.75
+      ],
+      "tau1_means": {
+        "A_top_dE_dm_bare_tau1": 1.2732143441892123,
+        "T_minus_A_tau1": -0.02752056790476608,
+        "T_total_dE_ds_tau1": 1.245693776284446
+      },
+      "tau_slice_count": 23
+    },
     "valid": false
   },
   "wz_mass_fit_input": "outputs/yt_wz_correlator_mass_fit_rows_2026-05-04.json",

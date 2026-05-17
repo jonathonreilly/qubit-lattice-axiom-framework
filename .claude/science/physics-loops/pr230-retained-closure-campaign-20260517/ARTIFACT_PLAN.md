@@ -279,3 +279,44 @@ Verified at `2026-05-17T16:53:54Z`:
 - Block126 runner: `PASS=10 FAIL=0`
 - campaign status certificate: `PASS=444 FAIL=0`
 - assumption/import stress: `PASS=127 FAIL=0`
+
+## Block127
+
+Working title: PR230 Block127 W/Z builder Block126 top-packet adapter.
+
+Purpose:
+
+- wire the Block126 matched top-side additive-subtraction packet into the W/Z
+  mass-fit response-row builder as the current top-side support input;
+- preserve the strict W/Z boundary by refusing measurement rows until genuine
+  W/Z mass-fit rows, matched top-W/Z covariance, strict non-observed `g2`, and
+  accepted same-source EW/Higgs action authority exist;
+- keep the route checkpoint focused on the now-real missing W/Z side instead
+  of the retired missing top-response certificate.
+
+Files:
+
+- `docs/YT_PR230_BLOCK127_WZ_BUILDER_BLOCK126_TOP_PACKET_ADAPTER_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_wz_mass_fit_response_row_builder.py`
+- `scripts/frontier_yt_pr230_block127_wz_builder_block126_top_packet_adapter.py`
+- `outputs/yt_wz_mass_fit_response_row_builder_2026-05-04.json`
+- `outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json`
+
+Result: bounded support.  The W/Z builder recognizes the 1008-row Block126
+top-side packet and records that it is not strict W/Z input.  No strict rows
+are written, and W/Z rows, matched top-W/Z covariance, strict `g2`, and
+accepted action remain absent.
+
+Verified at `2026-05-17T17:07:23Z`:
+
+- W/Z builder current mode: `PASS=10 FAIL=0`
+- W/Z builder scout mode: `PASS=9 FAIL=0`
+- Block127 py_compile: passed
+- Block127 runner: `PASS=10 FAIL=0`
+- retained-route certificate: `PASS=325 FAIL=0`
+- full positive closure assembly: `PASS=200 FAIL=0`
+- positive-closure completion audit: `PASS=79 FAIL=0`
+- target-timeseries full-set checkpoint: `PASS=9 FAIL=0`
+- chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`
+- campaign status certificate: `PASS=445 FAIL=0`
+- assumption/import stress: `PASS=128 FAIL=0`

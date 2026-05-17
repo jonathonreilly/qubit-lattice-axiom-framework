@@ -26,7 +26,12 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_WZ_MASS_FIT_INPUT = ROOT / "outputs" / "yt_wz_correlator_mass_fit_rows_2026-05-04.json"
-DEFAULT_TOP_RESPONSE_INPUT = ROOT / "outputs" / "yt_same_source_top_response_certificate_2026-05-04.json"
+DEFAULT_TOP_RESPONSE_INPUT = (
+    ROOT
+    / "outputs"
+    / "yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json"
+)
+LEGACY_TOP_RESPONSE_INPUT = ROOT / "outputs" / "yt_same_source_top_response_certificate_2026-05-04.json"
 DEFAULT_G2_INPUT = ROOT / "outputs" / "yt_electroweak_g2_certificate_2026-05-04.json"
 DEFAULT_ROWS_OUTPUT = ROOT / "outputs" / "yt_fh_gauge_mass_response_measurement_rows_2026-05-03.json"
 DEFAULT_STATUS_OUTPUT = ROOT / "outputs" / "yt_wz_mass_fit_response_row_builder_2026-05-04.json"
@@ -176,7 +181,67 @@ def validate_wz_mass_fits(candidate: dict[str, Any], *, require_production: bool
 
 def validate_top_response(candidate: dict[str, Any], *, require_production: bool) -> dict[str, Any]:
     if not candidate:
-        return {"present": False, "valid": False, "failed_checks": ["same-source top response certificate absent"]}
+        return {
+            "present": False,
+            "valid": False,
+            "failed_checks": ["same-source top response certificate absent"],
+            "legacy_top_response_input": display(LEGACY_TOP_RESPONSE_INPUT),
+        }
+
+    block126_packet = candidate.get("matched_top_side_packet", {})
+    strict_state = candidate.get("strict_subtraction_contract_state", {})
+    if candidate.get("block126_matched_top_additive_subtraction_packet_passed") is True:
+        checks = {
+            "phase_is_bounded_support": "bounded-support" in str(
+                candidate.get("actual_current_surface_status", "")
+            ),
+            "proposal_not_allowed": candidate.get("proposal_allowed") is False,
+            "current_closure_not_satisfied": candidate.get("current_closure_satisfied") is False,
+            "matched_tau1_rows_present": block126_packet.get("matched_tau1_row_count") == 1008,
+            "complete_tau_slices_present": len(block126_packet.get("per_tau_summary", {})) == 23,
+            "selected_mass_is_middle_0p75": block126_packet.get("selected_mass_parameters") == [0.75],
+            "seed_control_preserved": block126_packet.get("seed_control_versions") == [
+                "numba_gauge_seed_v1"
+            ],
+            "top_side_covariance_computed": strict_state.get("top_side_covariance_computed") is True,
+            "wz_rows_absent": strict_state.get("wz_rows_present") is False,
+            "matched_top_wz_covariance_absent": strict_state.get(
+                "matched_top_wz_covariance_present"
+            )
+            is False,
+            "strict_g2_absent": strict_state.get("strict_non_observed_g2_present") is False,
+            "accepted_action_absent": strict_state.get("accepted_same_source_ew_action_present")
+            is False,
+        }
+        top_side_packet_valid = all(checks.values())
+        return {
+            "present": True,
+            "valid": False,
+            "top_side_packet_valid": top_side_packet_valid,
+            "top_side_packet_schema": "yt_pr230_block126_matched_top_additive_subtraction_packet",
+            "checks": checks,
+            "failed_checks": [
+                "same-source W/Z rows absent",
+                "matched top-W/Z covariance absent",
+                "strict non-observed g2 absent",
+                "accepted same-source EW/Higgs action absent",
+                "canonical-Higgs/source-overlap authority absent",
+            ],
+            "top_side_summary": {
+                "matched_tau1_row_count": block126_packet.get("matched_tau1_row_count"),
+                "tau_slice_count": len(block126_packet.get("per_tau_summary", {})),
+                "selected_mass_parameters": block126_packet.get("selected_mass_parameters"),
+                "tau1_means": block126_packet.get("tau1_summary", {}).get(
+                    "matched_covariance", {}
+                ).get("means", {}),
+            },
+            "strict_limit": (
+                "Block126 supplies same-configuration top-side production support "
+                "only. It is not a strict W/Z response input until genuine W/Z "
+                "rows, matched top-W/Z covariance, strict g2, and accepted action "
+                "authority are supplied."
+            ),
+        }
 
     top = candidate.get("top_response", candidate)
     identity = candidate.get("identity_certificates", {})
@@ -454,6 +519,7 @@ def main() -> int:
     strict_gate_passed = args.strict and inputs_valid
     scout_gate_passed = args.scout and inputs_valid
     current_inputs_valid = (not args.strict) and (not args.scout) and inputs_valid
+    block126_top_side_support = bool(top_validation.get("top_side_packet_valid"))
 
     rows_written = False
     measurement_rows: dict[str, Any] = {}
@@ -484,7 +550,24 @@ def main() -> int:
         report("strict-measurement-rows-written", rows_written, display(rows_output))
     else:
         report("future-wz-mass-fit-rows-absent", not wz_validation["present"], display(args.wz_mass_fit_input))
-        report("future-top-response-certificate-absent", not top_validation["present"], display(args.top_response_input))
+        if top_validation.get("top_side_packet_valid") is True:
+            report(
+                "block126-top-side-packet-present",
+                True,
+                f"{display(args.top_response_input)} rows="
+                f"{top_validation.get('top_side_summary', {}).get('matched_tau1_row_count')}",
+            )
+            report(
+                "block126-top-side-packet-not-strict-wz-input",
+                top_validation["valid"] is False,
+                str(top_validation.get("failed_checks", [])),
+            )
+        else:
+            report(
+                "future-top-response-certificate-absent",
+                not top_validation["present"],
+                display(args.top_response_input),
+            )
         report("future-g2-certificate-absent", not g2_validation["present"], display(args.g2_input))
         report("current-mode-does-not-write-production-rows", not rows_written, display(DEFAULT_ROWS_OUTPUT))
     report("strict-production-response-row-builder-not-claimed" if not args.strict else "strict-production-response-row-builder-passed", not strict_gate_passed if not args.strict else strict_gate_passed, f"strict_gate_passed={strict_gate_passed}")
@@ -497,6 +580,8 @@ def main() -> int:
             if strict_gate_passed
             else "support / WZ response measurement rows built"
             if current_inputs_valid
+            else "open / WZ mass-fit response-row builder has Block126 top-side packet; W/Z/g2/action inputs absent"
+            if block126_top_side_support
             else "open / WZ mass-fit response-row builder inputs absent"
         ),
         "mode": mode,
@@ -532,7 +617,8 @@ def main() -> int:
         ],
         "exact_next_action": (
             f"Supply {display(DEFAULT_WZ_MASS_FIT_INPUT)}, "
-            f"{display(DEFAULT_TOP_RESPONSE_INPUT)}, and {display(DEFAULT_G2_INPUT)}, "
+            "genuine same-source W/Z rows with matched covariance against the "
+            f"Block126 top-side packet, and {display(DEFAULT_G2_INPUT)}, "
             f"rerun this builder in strict mode to write {display(DEFAULT_ROWS_OUTPUT)}, "
             "then rerun the W/Z response certificate builder and same-source W/Z gate."
         ),

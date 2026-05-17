@@ -392,6 +392,9 @@ def main() -> int:
         "block126_matched_top_additive_subtraction_packet": load(
             "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json"
         ),
+        "block127_wz_builder_block126_top_packet_adapter": load(
+            "outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2790,6 +2793,61 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean = (
+        "Block127 wires the Block126 matched top-side packet"
+        in str(
+            certificates["block127_wz_builder_block126_top_packet_adapter"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block127_wz_builder_block126_top_packet_adapter"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block127_wz_builder_block126_top_packet_adapter"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block127_wz_builder_block126_top_packet_adapter"].get(
+            "block127_wz_builder_block126_top_packet_adapter_passed"
+        )
+        is True
+        and certificates["block127_wz_builder_block126_top_packet_adapter"]
+        .get("strict_contract_state", {})
+        .get("top_side_packet_recognized_by_wz_builder")
+        is True
+        and certificates["block127_wz_builder_block126_top_packet_adapter"]
+        .get("strict_contract_state", {})
+        .get("wz_rows_present")
+        is False
+        and certificates["block127_wz_builder_block126_top_packet_adapter"]
+        .get("strict_contract_state", {})
+        .get("strict_non_observed_g2_present")
+        is False
+        and certificates["block127_wz_builder_block126_top_packet_adapter"]
+        .get("strict_contract_state", {})
+        .get("contract_satisfied_now")
+        is False
+        and certificates["block127_wz_builder_block126_top_packet_adapter"]
+        .get("strict_non_claims", {})
+        .get("does_not_supply_wz_response_rows")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block127_wz_builder_block126_top_packet_adapter"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block127-wz-builder-block126-top-packet-adapter-keeps-imports-clean",
+        block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean,
+        certificates["block127_wz_builder_block126_top_packet_adapter"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3133,6 +3191,7 @@ def main() -> int:
         "block124_completed_source_higgs_row_intake_keeps_imports_clean": block124_completed_source_higgs_row_intake_keeps_imports_clean,
         "block125_post_chunk_strict_contract_resolver_keeps_imports_clean": block125_post_chunk_strict_contract_resolver_keeps_imports_clean,
         "block126_matched_top_additive_subtraction_packet_keeps_imports_clean": block126_matched_top_additive_subtraction_packet_keeps_imports_clean,
+        "block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean": block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

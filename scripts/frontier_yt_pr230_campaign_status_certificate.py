@@ -552,6 +552,9 @@ def main() -> int:
         "pr230_block126_matched_top_additive_subtraction_packet": load(
             "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json"
         ),
+        "pr230_block127_wz_builder_block126_top_packet_adapter": load(
+            "outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3381,6 +3384,73 @@ def main() -> int:
         "pr230-block126-matched-top-additive-subtraction-packet-supports-only",
         block126_matched_top_additive_subtraction_packet_supports_only,
         statuses["pr230_block126_matched_top_additive_subtraction_packet"],
+    )
+    block127_wz_builder_block126_top_packet_adapter_supports_only = (
+        "Block127 wires the Block126 matched top-side packet"
+        in str(statuses["pr230_block127_wz_builder_block126_top_packet_adapter"])
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ].get("block127_wz_builder_block126_top_packet_adapter_passed")
+        is True
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ]
+        .get("strict_contract_state", {})
+        .get("top_side_packet_recognized_by_wz_builder")
+        is True
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ]
+        .get("strict_contract_state", {})
+        .get("wz_rows_present")
+        is False
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ]
+        .get("strict_contract_state", {})
+        .get("matched_top_wz_covariance_present")
+        is False
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ]
+        .get("strict_contract_state", {})
+        .get("strict_non_observed_g2_present")
+        is False
+        and certificates[
+            "pr230_block127_wz_builder_block126_top_packet_adapter"
+        ]
+        .get("strict_contract_state", {})
+        .get("accepted_same_source_ew_action_present")
+        is False
+        and certificates["wz_mass_fit_response_row_builder"].get(
+            "strict_wz_mass_fit_response_row_builder_passed"
+        )
+        is False
+        and certificates["wz_mass_fit_response_row_builder"].get(
+            "measurement_rows_written"
+        )
+        is False
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block127_wz_builder_block126_top_packet_adapter"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block127-wz-builder-block126-top-packet-adapter-supports-only",
+        block127_wz_builder_block126_top_packet_adapter_supports_only,
+        statuses["pr230_block127_wz_builder_block126_top_packet_adapter"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9178,6 +9248,9 @@ def main() -> int:
     )
     result["block126_matched_top_additive_subtraction_packet_supports_only"] = (
         block126_matched_top_additive_subtraction_packet_supports_only
+    )
+    result["block127_wz_builder_block126_top_packet_adapter_supports_only"] = (
+        block127_wz_builder_block126_top_packet_adapter_supports_only
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

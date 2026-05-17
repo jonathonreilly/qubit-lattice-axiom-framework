@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block126.
+Status: exact negative boundary plus bounded support through Block127.
 
 `proposed_retained`: not allowed.
 
@@ -31,7 +31,12 @@ raw rows: 1008 matched `dE_top/ds`, `dE_top/dm_bare`, and `T-A` tau1 rows with
 23 complete tau slices and preserved seed/policy metadata.  It is bounded
 support only because the W/Z response rows, matched top-W/Z covariance, strict
 non-observed `g2`, accepted same-source EW/Higgs action, and canonical
-Higgs/source-overlap authority remain absent.
+Higgs/source-overlap authority remain absent. Block127 wires that Block126
+top-side packet into the W/Z mass-fit response-row builder and verifies the
+builder recognizes the packet as top-side production support, but still refuses
+strict W/Z output.  The strict W/Z roots remain absent: same-source W/Z rows,
+matched top-W/Z covariance, strict non-observed `g2`, accepted same-source
+EW/Higgs action, and canonical-Higgs/source-overlap authority.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -42,7 +47,8 @@ Higgs/source-overlap authority remain absent.
   taste-radial packet is not strict pole-residue evidence;
 - no post-chunk raw artifact satisfying any strict positive route contract;
 - no W/Z rows, matched top-W/Z covariance, strict non-observed `g2`, or
-  accepted same-source EW/Higgs action for the Block126 top-side packet;
+  accepted same-source EW/Higgs action for the Block126 top-side packet, even
+  after Block127 wires that packet into the W/Z builder;
 - no strict W/Z physical-response packet with accepted action, production rows,
   matched covariance, strict non-observed `g2` or allowed absolute pin,
   `delta_perp`, and final W-response rows;

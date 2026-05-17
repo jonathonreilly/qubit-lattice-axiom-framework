@@ -1,0 +1,120 @@
+{
+  "actual_current_surface_status": "bounded-support / Block127 wires the Block126 matched top-side packet into the W/Z row builder; W/Z rows, matched top-W/Z covariance, strict g2, and accepted action remain absent",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block126_top_side_summary": {
+    "matched_tau1_row_count": 1008,
+    "selected_mass_parameters": [
+      0.75
+    ],
+    "tau1_means": {
+      "A_top_dE_dm_bare_tau1": 1.2732143441892123,
+      "T_minus_A_tau1": -0.02752056790476608,
+      "T_total_dE_ds_tau1": 1.245693776284446
+    },
+    "tau_slice_count": 23
+  },
+  "block127_wz_builder_block126_top_packet_adapter_passed": true,
+  "builder_g2_validation": {
+    "failed_checks": [
+      "electroweak g2 certificate absent"
+    ],
+    "present": false,
+    "valid": false
+  },
+  "builder_status": "open / WZ mass-fit response-row builder has Block126 top-side packet; W/Z/g2/action inputs absent",
+  "builder_top_response_validation": {
+    "checks": {
+      "accepted_action_absent": true,
+      "complete_tau_slices_present": true,
+      "current_closure_not_satisfied": true,
+      "matched_tau1_rows_present": true,
+      "matched_top_wz_covariance_absent": true,
+      "phase_is_bounded_support": true,
+      "proposal_not_allowed": true,
+      "seed_control_preserved": true,
+      "selected_mass_is_middle_0p75": true,
+      "strict_g2_absent": true,
+      "top_side_covariance_computed": true,
+      "wz_rows_absent": true
+    },
+    "failed_checks": [
+      "same-source W/Z rows absent",
+      "matched top-W/Z covariance absent",
+      "strict non-observed g2 absent",
+      "accepted same-source EW/Higgs action absent",
+      "canonical-Higgs/source-overlap authority absent"
+    ],
+    "present": true,
+    "strict_limit": "Block126 supplies same-configuration top-side production support only. It is not a strict W/Z response input until genuine W/Z rows, matched top-W/Z covariance, strict g2, and accepted action authority are supplied.",
+    "top_side_packet_schema": "yt_pr230_block126_matched_top_additive_subtraction_packet",
+    "top_side_packet_valid": true,
+    "top_side_summary": {
+      "matched_tau1_row_count": 1008,
+      "selected_mass_parameters": [
+        0.75
+      ],
+      "tau1_means": {
+        "A_top_dE_dm_bare_tau1": 1.2732143441892123,
+        "T_minus_A_tau1": -0.02752056790476608,
+        "T_total_dE_ds_tau1": 1.245693776284446
+      },
+      "tau_slice_count": 23
+    },
+    "valid": false
+  },
+  "builder_wz_validation": {
+    "failed_checks": [
+      "W/Z mass-fit rows absent"
+    ],
+    "present": false,
+    "valid": false
+  },
+  "conditional_surface_status": null,
+  "current_closure_satisfied": false,
+  "exact_next_action": "Supply genuine same-source W/Z mass-fit rows with configuration keys that can be matched to Block126, strict non-observed g2, and accepted same-source EW/Higgs action authority; then rerun the W/Z builder and same-source W/Z gate.",
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "assumed_top_wz_covariance_or_factorization": false,
+    "claimed_retained_or_proposed_retained": false,
+    "promoted_dE_dm_bare_to_dE_dh": false,
+    "promoted_top_side_packet_to_wz_closure": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_yt_ward_identity": false
+  },
+  "hypothetical_axiom_status": null,
+  "parent_certificates": {
+    "block126_matched_top_additive_subtraction_packet": "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json",
+    "wz_correlator_mass_fit_path": "outputs/yt_wz_correlator_mass_fit_path_gate_2026-05-04.json",
+    "wz_g2_authority_firewall": "outputs/yt_wz_g2_authority_firewall_2026-05-05.json",
+    "wz_mass_fit_response_row_builder": "outputs/yt_wz_mass_fit_response_row_builder_2026-05-04.json",
+    "wz_response_measurement_row_contract": "outputs/yt_wz_response_measurement_row_contract_gate_2026-05-03.json"
+  },
+  "pass_count": 10,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The W/Z builder now recognizes Block126 top-side production support, but it still lacks genuine W/Z mass-fit rows, matched top-W/Z covariance, strict non-observed g2, and accepted same-source EW/Higgs action authority.",
+  "strict_contract_state": {
+    "accepted_same_source_ew_action_present": false,
+    "contract_satisfied_now": false,
+    "matched_top_wz_covariance_present": false,
+    "strict_measurement_rows_written": false,
+    "strict_non_observed_g2_present": false,
+    "top_side_packet_recognized_by_wz_builder": true,
+    "wz_rows_present": false
+  },
+  "strict_non_claims": {
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_supply_matched_top_wz_covariance": true,
+    "does_not_supply_wz_response_rows": true,
+    "does_not_treat_dE_dm_bare_as_dE_dh": true,
+    "does_not_use_observed_wz_or_g2": true
+  }
+}

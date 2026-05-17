@@ -175,7 +175,7 @@
     "two_source_taste_radial_row_production_manifest": "bounded-support / two-source taste-radial C_sx/C_xx production manifest; rows absent",
     "wz_accepted_action_response_root_checkpoint": "exact negative boundary / WZ accepted-action response root not closed by current sector-overlap, radial-action, or mass-fit candidates",
     "wz_mass_fit_path": "exact negative boundary / WZ correlator mass-fit path absent on PR230 surface",
-    "wz_mass_fit_response_row_builder": "open / WZ mass-fit response-row builder inputs absent",
+    "wz_mass_fit_response_row_builder": "open / WZ mass-fit response-row builder has Block126 top-side packet; W/Z/g2/action inputs absent",
     "wz_response_ratio_identifiability_contract": "exact-support / WZ response-ratio identifiability contract; current response rows, matched covariance, strict g2, and accepted same-source action are absent",
     "wz_same_source_action": "exact negative boundary / same-source EW action not defined on PR230 surface",
     "wz_same_source_action_minimal_certificate_cut": "exact negative boundary / WZ accepted same-source action minimal certificate cut remains open",

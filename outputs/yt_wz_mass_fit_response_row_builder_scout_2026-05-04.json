@@ -1,7 +1,7 @@
 {
   "actual_current_surface_status": "scout-pass / WZ mass-fit response-row builder",
   "bare_retained_allowed": false,
-  "exact_next_action": "Supply outputs/yt_wz_correlator_mass_fit_rows_2026-05-04.json, outputs/yt_same_source_top_response_certificate_2026-05-04.json, and outputs/yt_electroweak_g2_certificate_2026-05-04.json, rerun this builder in strict mode to write outputs/yt_fh_gauge_mass_response_measurement_rows_2026-05-03.json, then rerun the W/Z response certificate builder and same-source W/Z gate.",
+  "exact_next_action": "Supply outputs/yt_wz_correlator_mass_fit_rows_2026-05-04.json, genuine same-source W/Z rows with matched covariance against the Block126 top-side packet, and outputs/yt_electroweak_g2_certificate_2026-05-04.json, rerun this builder in strict mode to write outputs/yt_fh_gauge_mass_response_measurement_rows_2026-05-03.json, then rerun the W/Z response certificate builder and same-source W/Z gate.",
   "fail_count": 0,
   "g2_input": "outputs/yt_electroweak_g2_certificate_2026-05-04.json",
   "g2_validation": {
@@ -170,7 +170,7 @@
     "does not use H_unit, yt_ward_identity, alpha_LM, plaquette/u0, c2=1, Z_match=1, or kappa_s=1"
   ],
   "strict_wz_mass_fit_response_row_builder_passed": false,
-  "top_response_input": "outputs/yt_same_source_top_response_certificate_2026-05-04.json",
+  "top_response_input": "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json",
   "top_response_validation": {
     "checks": {
       "canonical_higgs_identity_passed": true,

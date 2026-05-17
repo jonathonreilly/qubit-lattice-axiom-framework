@@ -540,7 +540,7 @@
     "wz_goldstone_equivalence_no_go": "exact negative boundary / WZ Goldstone equivalence does not identify PR230 source coordinate",
     "wz_harness_smoke_schema": "bounded-support / WZ harness smoke schema path",
     "wz_mass_fit_path": "exact negative boundary / WZ correlator mass-fit path absent on PR230 surface",
-    "wz_mass_fit_response_row_builder": "open / WZ mass-fit response-row builder inputs absent",
+    "wz_mass_fit_response_row_builder": "open / WZ mass-fit response-row builder has Block126 top-side packet; W/Z/g2/action inputs absent",
     "wz_same_source_action": "exact negative boundary / same-source EW action not defined on PR230 surface",
     "wz_same_source_action_semantic_firewall": "bounded-support / same-source EW action semantic firewall passed",
     "wz_smoke_to_production_no_go": "exact negative boundary / WZ smoke rows cannot be promoted to production WZ response",

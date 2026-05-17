@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block125-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block127-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -14,6 +14,7 @@ Stacked review PR for Block125:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1458
 Stacked review PR for Block126:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1461
+Stacked review PR for Block127: pending.
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -80,11 +81,20 @@ strict non-observed `g2`, and no accepted same-source EW/Higgs action are
 present.  Reruns: Block126 `PASS=10`, campaign `PASS=444`,
 assumption/import stress `PASS=127`.
 
-Active next work: produce accepted canonical `O_H`/action authority with
-nonempty numeric `C_ss/C_sH/C_HH` pole-residue rows.  If that cannot be
-supplied, implement genuine same-source W/Z production response rows and join
-them with the Block126 top-side packet into matched top-W/Z covariance with
-strict non-observed `g2`.
+Block127 wires the Block126 top-side packet into the W/Z mass-fit response-row
+builder.  The builder now recognizes the 1008-row top-side packet, but marks it
+non-strict and writes no measurement rows because genuine W/Z rows, matched
+top-W/Z covariance, strict non-observed `g2`, accepted same-source EW/Higgs
+action, and canonical-Higgs/source-overlap authority remain absent.  Reruns:
+W/Z builder current mode `PASS=10`, scout mode `PASS=9`, Block127 `PASS=10`,
+campaign `PASS=445`, assumption/import stress `PASS=128`, retained route
+`PASS=325`, full positive assembly `PASS=200`, completion audit `PASS=79`,
+target-timeseries full set `PASS=9`, and chunk063 checkpoint `PASS=15`.
+
+Active next work: implement genuine same-source W/Z production response rows
+and join them with the Block126 top-side packet into matched top-W/Z covariance
+with strict non-observed `g2`, or produce accepted canonical `O_H`/action
+authority with nonempty numeric `C_ss/C_sH/C_HH` pole-residue rows.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

@@ -20,7 +20,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 322 |
+| **retained_bounded** | 321 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
 | unaudited | 1229 |
@@ -28,7 +28,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 166 |
-| ~~audited_failed~~ | 18 |
+| ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -43,11 +43,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
 | `audited_clean` | 538 |
 | `audited_conditional` | 166 |
 | `audited_decoration` | 19 |
-| `audited_failed` | 62 |
+| `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
 | `unaudited` | 1426 |
@@ -115,7 +114,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -877,6 +875,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `second_grown_family_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7608,6 +7607,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner supports the finite algebra for the chosen candidate generator, but the physical selection of that generator still rests on an admitted scalar-additivity premise and an unproved normalization/source bridge. No one-hop authority is supplied to close those premises, and the claimed runner-local retirement of P2/P4 does not derive the physical phase-blind generator or multiplicative scale choice from retained inputs.
 - **rationale:** Issue: the exact log-det algebra is verified only after selecting the physical scalar generator by admitted additivity/CPT-even/regularity/normalization premises, with P1 still explicitly open and the multiplicative normalization c=1 conventional. Why this blocks: the restricted packet has no retained one-hop theorem deriving that physical observable bridge, and the runner mainly checks consistency of the chosen W rather than forcing the observable class from the axiom alone. Repair target: add a bridge theorem deriving scalar additivity and the normalization/source scale from retained primitives, or keep all downstream citations explicitly conditional on those premises. Claim boundary until fixed: the finite algebra for the selected log|det| generator on the runner block is supported; unconditional axiom-to-observable closure is not.
 - **auditor confidence:** high
+
+### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional invertible real anti-Hermitian block with real-symmetric sources; claimed uniqueness up to scale of determinant-ratio scalar generators under the written admissibility criteria (X2).
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-125722-20260517T125000Z-576affc4-observable_principle_rea-judicial`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Step 6, where block additivity is used to infer f(r_A r_B)=f(r_A)+f(r_B) for all positive determinant ratios and then Cauchy-Erdos is applied to force f(r)=c log r.  _(class `A`)_
+- **chain closes:** False — The determinant algebra and the log candidate checks are valid, but the universal uniqueness conclusion does not follow from the written admissibility class. Criteria (A) and (C) constrain actual no-bond decompositions of the given block; for an indecomposable block, such as a single 2x2 invertible real skew block, (A) is vacuous, so continuous normalized determinant-ratio functions like F=(log r)^2 satisfy the written criteria but are not cW. Step 6 also incorrectly promotes a local/image-level direct-sum equation to a global equation on all of R_+ by continuity alone. The runner verifies W and some non-log counterexamples against the functional equation, but it does not establish that every admissible F must satisfy that equation.
+- **rationale:** The determinant algebra and the log candidate checks are valid, but the universal uniqueness conclusion does not follow from the written admissibility class. Criteria (A) and (C) constrain actual no-bond decompositions of the given block; for an indecomposable block, such as a single 2x2 invertible real skew block, (A) is vacuous, so continuous normalized determinant-ratio functions like F=(log r)^2 satisfy the written criteria but are not cW. Step 6 also incorrectly promotes a local/image-level direct-sum equation to a global equation on all of R_+ by continuity alone. The runner verifies W and some non-log counterexamples against the functional equation, but it does not establish that every admissible F must satisfy that equation.
+- **auditor confidence:** judicial
 
 ### `oh_schur_boundary_action_note`
 

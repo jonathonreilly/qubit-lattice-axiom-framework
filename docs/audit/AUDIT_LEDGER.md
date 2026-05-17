@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 330 |
+| **retained_bounded** | 331 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1222 |
+| unaudited | 1221 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,22 +44,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 550 |
+| `audited_clean` | 551 |
 | `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1419 |
+| `unaudited` | 1418 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 944 |
+| `bounded_theorem` | 945 |
 | `decoration` | 21 |
 | `meta` | 200 |
 | `no_go` | 238 |
 | `open_gate` | 110 |
-| `positive_theorem` | 735 |
+| `positive_theorem` | 734 |
 
 | criticality | count |
 |---|---:|
@@ -199,6 +199,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -2909,6 +2910,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The integrated DIR-3D core-card runner reports a bounded 12/16 result, with twelve retained positives and four named failures that remain the gravity/isotropy/k-achromaticity blockers.  _(class `C`)_
 - **chain closes:** True — The note's bounded scorecard matches the registered runner: C1-C8, C12, and C14-C16 pass, while C9-C11 and C13 fail. The note explicitly carries forward those failures instead of promoting the lane to full 3+1D closure.
 - **rationale:** The prior infrastructure blocker is resolved because the runner emits classified C-class PASS lines. The bounded inventory closes on its own terms: the runner reproduces the stated 12/16 integrated core-card score and the same four failures named by the note. This clean audit is limited to the scorecard/inventory claim and does not promote the Dirac lane beyond the note's bounded status because monotone gravity growth, distance law, strict isotropy, and fixed-theta k-achromaticity remain unresolved.
+- **auditor confidence:** high
+
+### `dirac_decoherence_probe_note`
+
+- **Note:** [`DIRAC_DECOHERENCE_PROBE_NOTE.md`](../../docs/DIRAC_DECOHERENCE_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite numerical record produced by scripts/frontier_dirac_walk_3plus1d_decoherence_probe.py for the declared 4-component Dirac double-slit geometry at n=17 and n=21.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-152336-a5e2dcef-dirac_decoherence_probe_-013`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The registered runner computes, for the declared n=17 and n=21 Dirac double-slit cases, detector proxies near 0.06-0.07, record-mixture purity near 0.500, and clean-vs-record L1 residuals near 0.91-0.94.  _(class `C`)_
+- **chain closes:** True — The runner source is self-contained, instantiates the Dirac algebra, walk, slit masks, propagation channels, and metrics directly, and its stdout matches the note's recorded numbers. No cited upstream authority or missing helper is needed for the narrowed finite-runner fact.
+- **rationale:** For the narrowed scope, the note is a bounded numerical runner fact and the provided runner genuinely computes the reported observables rather than printing hard-coded target values. The reported n=17 and n=21 values in the note match the supplied runner output to the shown precision. This clean verdict does not ratify the broader harness-mismatch-versus-architecture diagnosis, which the note explicitly removes from binding scope.
 - **auditor confidence:** high
 
 ### `dirac_observable_panel_note`

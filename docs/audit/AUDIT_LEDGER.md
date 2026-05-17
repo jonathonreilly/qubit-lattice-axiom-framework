@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 337 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1211 |
+| unaudited | 1210 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 178 |
+| ~~audited_conditional~~ | 179 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 558 |
-| `audited_conditional` | 178 |
+| `audited_conditional` | 179 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1408 |
+| `unaudited` | 1407 |
 
 | claim_type | count |
 |---|---:|
@@ -793,6 +793,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_l2_tail_stats_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_distance_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `matter_radiation_equality_structural_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -7308,6 +7309,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** From the trace equation 2 n_color * a + 2 * b = 0, one gets b = -n_color * a, hence a : b = 1 : (-n_color); with b = -1 this gives a = 1/n_color and the stated Q(u_L), Q(d_L) denominators by gcd parity reduction.  _(class `A`)_
 - **chain closes:** True — The scoped claim closes as elementary algebra and integer gcd reduction under the assumptions stated in the note. No physical bridge to SM hypercharge, no derivation of n_color = 3, and no derivation of the LH state count is needed because those are explicitly excluded from this narrow theorem.
 - **rationale:** The theorem is narrow but correctly bounded: it assumes the trace equation, positive integer n_color, and the named conventions before deriving only algebraic consequences. The proof and runner agree, and the parity denominator rule follows from gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2), with the same result for Q(d_L). This is not an audit of the broader physical identification or of why n_color = 3; those are outside the stated claim boundary.
+- **auditor confidence:** high
+
+### `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10`
+
+- **Note:** [`LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md`](../../docs/LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded proof-walk that the Sym²/Anti² LH-doublet block identification uses only the retained graph-first 3⊕1 split, standard SU(3) representation theory, and tensor distributivity, not lattice-action or staggered-Dirac realization machinery.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-154437-a5e2dcef-lhcm_matter_assignment_b-024`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The graph-first τ eigendecomposition gives Sym²(C²) as the 3-dimensional SU(3)-fundamental block and Anti²(C²) as the 1-dimensional SU(3)-trivial block, so C² ⊗ (Sym² ⊕ Anti²) = (2,3) ⊕ (2,1) without staggered-Dirac realization input.  _(class `A`)_
+- **chain closes:** True — Within the stated scope, the algebraic chain from the retained graph-first SU(3) integration note to the (2,3) ⊕ (2,1) block split closes. It does not close retention of the parent matter-assignment note or the SM naming and hypercharge-normalization issues.
+- **rationale:** The mathematical proof-walk is an algebraic closure over the graph-first 3⊕1 split plus standard representation theory, and the runner performs exact symbolic checks rather than numerical tuning or external comparison. However, the packet lists the LHCM matter-assignment note as a cited dependency, and that authority is not retained-grade in the restricted packet. The safe reduced result is the scoped no-staggered-input block-identification proof-walk, not a retained promotion of the parent matter-assignment claim.
+- **open / conditional deps cited:**
+  - `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`
 - **auditor confidence:** high
 
 ### `lhcm_matter_assignment_from_su3_representation_note_2026-05-02`

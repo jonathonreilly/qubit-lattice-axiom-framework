@@ -139174,22 +139174,49 @@
       "verdict_rationale": "The theorem is narrow but correctly bounded: it assumes the trace equation, positive integer n_color, and the named conventions before deriving only algebraic consequences. The proof and runner agree, and the parity denominator rule follows from gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2), with the same result for Q(d_L). This is not an audit of the broader physical identification or of why n_color = 3; those are outside the stated claim boundary."
     },
     "lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:46:44.144236+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "68e8bf469dbdb613748b0b721b0d67388ba642ffe9ed26af2944dbb6c9fbf66a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-154437-a5e2dcef-lhcm_matter_assignment_b-024",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated scope, the algebraic chain from the retained graph-first SU(3) integration note to the (2,3) \u2295 (2,1) block split closes. It does not close retention of the parent matter-assignment note or the SM naming and hypercharge-normalization issues.",
       "claim_id": "lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded proof-walk that the Sym\u00b2/Anti\u00b2 LH-doublet block identification uses only the retained graph-first 3\u22951 split, standard SU(3) representation theory, and tensor distributivity, not lattice-action or staggered-Dirac realization machinery.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:46:44.144236+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -139199,32 +139226,34 @@
         "graph_first_selector_derivation_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The graph-first \u03c4 eigendecomposition gives Sym\u00b2(C\u00b2) as the 3-dimensional SU(3)-fundamental block and Anti\u00b2(C\u00b2) as the 1-dimensional SU(3)-trivial block, so C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1) without staggered-Dirac realization input.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0f94eda1e148b0f9e815eda04475dd7ee86b62e3420b4acef6ee1678a4f96351",
       "note_path": "docs/LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit the parent LHCM matter-assignment note to a terminal status or restate this proof-walk with that note explicitly non-load-bearing and graph_first_su3_integration_note as the sole retained parent.",
+      "open_dependency_paths": [
+        "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md"
+      ],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 32,
+        "B": 54,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 86
       },
       "runner_path": "scripts/frontier_lhcm_matter_assignment_block_proof_walk_lattice_independence.py",
       "title": "LHCM Matter Assignment Block Proof-Walk Lattice-Independence Bounded Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The mathematical proof-walk is an algebraic closure over the graph-first 3\u22951 split plus standard representation theory, and the runner performs exact symbolic checks rather than numerical tuning or external comparison. However, the packet lists the LHCM matter-assignment note as a cited dependency, and that authority is not retained-grade in the restricted packet. The safe reduced result is the scoped no-staggered-input block-identification proof-walk, not a retained promotion of the parent matter-assignment claim."
     },
     "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": {
       "audit_date": "2026-05-17T12:42:24.067210+00:00",

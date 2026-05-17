@@ -1,0 +1,138 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block134 fresh Hamiltonian-CPT-ISS reopen audit finds no PR230 strict closure root in the newly fetched staggered Hamiltonian direction-decomposition, CPT D-level algebra, or ISS audit-requeue branches",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": false,
+  "bare_retained_allowed": false,
+  "block134_fresh_hamiltonian_cpt_iss_reopen_audit_passed": true,
+  "conditional_surface_status": null,
+  "current_closure_satisfied": false,
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "set_c2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_cpt_algebra_as_pr230_physical_response_authority": false,
+    "used_hamiltonian_direction_decomposition_as_ew_higgs_action": false,
+    "used_hamiltonian_direction_decomposition_as_yukawa_or_source_higgs_authority": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_iss_audit_requeue_as_pr230_evidence": false,
+    "used_observed_top_or_yukawa": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "fresh_artifacts": {
+    "cpt_d_level_finite_lattice_algebraic": {
+      "log": null,
+      "log_pass_marker": null,
+      "log_present": null,
+      "note": "docs/CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/cpt-d-level-finite-lattice-algebraic-narrow-2026-05-17",
+      "ref_present": true,
+      "script": "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py",
+      "script_pass_marker": true,
+      "script_present": true
+    },
+    "iss_asymmetry_mass_scaling_requeue": {
+      "log": null,
+      "log_pass_marker": null,
+      "log_present": null,
+      "note": "docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/physics-loop/iss1-requeue-asymmetry-mass-scaling-20260517b",
+      "ref_present": true,
+      "script": null,
+      "script_pass_marker": null,
+      "script_present": null
+    },
+    "iss_dense_prune_guard_requeue": {
+      "log": null,
+      "log_pass_marker": null,
+      "log_present": null,
+      "note": "docs/DENSE_PRUNE_GUARD_SEED_NOTE.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/physics-loop/iss1-requeue-dense-prune-guard-seed-20260517b",
+      "ref_present": true,
+      "script": null,
+      "script_pass_marker": null,
+      "script_present": null
+    },
+    "iss_lattice_distance_law_requeue": {
+      "log": null,
+      "log_pass_marker": null,
+      "log_present": null,
+      "note": "docs/LATTICE_DISTANCE_LAW_NOTE.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/physics-loop/iss1-requeue-lattice-distance-law-20260517b",
+      "ref_present": true,
+      "script": null,
+      "script_pass_marker": null,
+      "script_present": null
+    },
+    "staggered_hamiltonian_direction_decomposition": {
+      "log": "logs/runner-cache/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.txt",
+      "log_pass_marker": true,
+      "log_present": true,
+      "note": "docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/physics-loop/physical-hermitian-hamiltonian-sme-bridge-block29-2026-05-17",
+      "ref_present": true,
+      "script": "scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py",
+      "script_pass_marker": true,
+      "script_present": true
+    }
+  },
+  "hypothetical_axiom_status": null,
+  "pass_count": 11,
+  "pr230_missing_roots_after_intake": {
+    "accepted_canonical_O_H_action_LSZ": true,
+    "neutral_H3_H4_transfer_or_coupling_authority": true,
+    "source_overlap_kappa": true,
+    "strict_C_ss_C_sH_C_HH_pole_rows": true,
+    "strict_Schur_Feshbach_pole_authority": true,
+    "strict_WZ_response_packet": true
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Fresh Hamiltonian/CPT/ISS branches are outside the PR230 physical readout contracts.",
+  "strict_non_claims": {
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_treat_cpt_algebra_as_physical_response_authority": true,
+    "does_not_treat_hamiltonian_direction_decomposition_as_ew_higgs_action": true,
+    "does_not_treat_hamiltonian_direction_decomposition_as_source_higgs_or_wz_authority": true,
+    "does_not_treat_iss_requeue_as_pr230_evidence": true
+  },
+  "strict_root_candidate_hits": {
+    "cpt_d_level_finite_lattice_algebraic": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "abstract CPT substitution identity, not PR230 physical response or source-overlap authority"
+    },
+    "iss_asymmetry_mass_scaling_requeue": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "audit requeue/bookkeeping note outside PR230 physics surface"
+    },
+    "iss_dense_prune_guard_requeue": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "audit requeue/bookkeeping note outside PR230 physics surface"
+    },
+    "iss_lattice_distance_law_requeue": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "audit requeue/bookkeeping note outside PR230 physics surface"
+    },
+    "staggered_hamiltonian_direction_decomposition": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "lattice operator-completeness of H=iD, not accepted EW/Higgs action, canonical O_H, source-Higgs rows, or W/Z response"
+    }
+  }
+}

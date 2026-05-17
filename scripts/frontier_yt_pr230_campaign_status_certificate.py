@@ -582,6 +582,9 @@ def main() -> int:
         "pr230_block133_fresh_math_artifact_reopen_audit": load(
             "outputs/yt_pr230_block133_fresh_math_artifact_reopen_audit_2026-05-17.json"
         ),
+        "pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit": load(
+            "outputs/yt_pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3963,6 +3966,45 @@ def main() -> int:
         "pr230-block133-fresh-math-artifact-reopen-audit-blocks",
         block133_fresh_math_artifact_reopen_audit_blocks,
         statuses["pr230_block133_fresh_math_artifact_reopen_audit"],
+    )
+    block134_fresh_hamiltonian_cpt_iss_reopen_audit_blocks = (
+        "Block134 fresh Hamiltonian-CPT-ISS reopen audit finds no PR230 strict closure root"
+        in str(statuses["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"])
+        and certificates["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+            "block134_fresh_hamiltonian_cpt_iss_reopen_audit_passed"
+        )
+        is True
+        and all(
+            not entry.get("is_pr230_reopen_candidate", True)
+            for entry in certificates["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"]
+            .get("strict_root_candidate_hits", {})
+            .values()
+        )
+        and all(
+            value is True
+            for value in certificates["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"]
+            .get("pr230_missing_roots_after_intake", {})
+            .values()
+        )
+        and all(
+            value is False
+            for value in certificates["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block134-fresh-hamiltonian-cpt-iss-reopen-audit-blocks",
+        block134_fresh_hamiltonian_cpt_iss_reopen_audit_blocks,
+        statuses["pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9516,6 +9558,7 @@ def main() -> int:
             "does not treat action-first source-Higgs packet support as closure before accepted action/O_H/LSZ, kappa_s, time-kernel rows, and strict pole residues exist",
             "does not treat carrier-independent lattice-Noether support as PR230 canonical O_H, source-Higgs pole-row, W/Z, Schur, or neutral-transfer authority",
             "does not treat fresh Cl(3) Schur-separator, cluster-decomposition, or lattice-Green arithmetic branches as PR230 strict closure roots",
+            "does not treat fresh Hamiltonian direction-decomposition, CPT algebra, or ISS audit-requeue branches as PR230 strict closure roots",
             "does not treat block39 post-block38 queue-admission status as production evidence",
             "does not treat block53 residual-minimality status as positive closure",
             "does not treat block54 response-readout reduction as scalar/FVIR authority, canonical-Higgs identity, or positive closure",
@@ -9793,6 +9836,9 @@ def main() -> int:
     )
     result["block133_fresh_math_artifact_reopen_audit_blocks"] = (
         block133_fresh_math_artifact_reopen_audit_blocks
+    )
+    result["block134_fresh_hamiltonian_cpt_iss_reopen_audit_blocks"] = (
+        block134_fresh_hamiltonian_cpt_iss_reopen_audit_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

@@ -566,3 +566,48 @@ Verified at `2026-05-17T18:37:20Z`:
 - Block133 fresh math-artifact reopen audit runner: `PASS=11 FAIL=0`
 - campaign status certificate: `PASS=454 FAIL=0`
 - assumption/import stress: `PASS=137 FAIL=0`
+
+## Block134
+
+Working title: PR230 Block134 fresh Hamiltonian/CPT/ISS reopen audit.
+
+Purpose:
+
+- ingest the fresh fetched branches
+  `origin/physics-loop/physical-hermitian-hamiltonian-sme-bridge-block29-2026-05-17`,
+  `origin/cpt-d-level-finite-lattice-algebraic-narrow-2026-05-17`,
+  and the three ISS requeue branches;
+- test whether any supplies a strict PR230 route root rather than narrow
+  support or audit bookkeeping in another lane;
+- reject name-adjacent shortcuts: bounded lattice operator-completeness for
+  `H=iD` is not accepted EW/Higgs action or source-Higgs/WZ authority, CPT
+  algebra is not physical response authority, and ISS requeues are not science
+  evidence;
+- preserve the no-closure firewall while recording the fresh-artifact intake.
+
+Files:
+
+- `docs/YT_PR230_BLOCK134_FRESH_HAMILTONIAN_CPT_ISS_REOPEN_AUDIT_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit.py`
+- `outputs/yt_pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit_2026-05-17.json`
+
+Result: exact negative boundary.  The Hamiltonian direction-decomposition
+theorem, CPT D-level theorem, and ISS requeue notes are real artifacts in
+their own scopes, but none supplies accepted canonical `O_H`/action/LSZ,
+source-overlap `kappa_s`, strict `C_ss/C_sH/C_HH` pole rows, W/Z response,
+Schur/Feshbach pole authority, or neutral H3/H4 authority.
+
+Verified at `2026-05-17T18:51:33Z`:
+
+- Block134 py_compile: passed
+- Block134 fresh Hamiltonian/CPT/ISS reopen audit runner: `PASS=11 FAIL=0`
+- campaign status certificate: `PASS=455 FAIL=0`
+- assumption/import stress: `PASS=138 FAIL=0`
+- retained-route certificate: `PASS=325 FAIL=0`
+- full positive closure assembly: `PASS=200 FAIL=0`
+- positive-closure completion audit: `PASS=79 FAIL=0`
+- target-timeseries full-set checkpoint: `PASS=9 FAIL=0`, `replacement_queue=[]`
+- chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`
+- `git diff --check`: passed
+- audit pipeline: completed; generated docs/audit diffs restored
+- strict audit lint: OK, no errors; five known warnings

@@ -422,6 +422,9 @@ def main() -> int:
         "block133_fresh_math_artifact_reopen_audit": load(
             "outputs/yt_pr230_block133_fresh_math_artifact_reopen_audit_2026-05-17.json"
         ),
+        "block134_fresh_hamiltonian_cpt_iss_reopen_audit": load(
+            "outputs/yt_pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -3342,6 +3345,51 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean = (
+        "Block134 fresh Hamiltonian-CPT-ISS reopen audit finds no PR230 strict closure root"
+        in str(
+            certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+            "block134_fresh_hamiltonian_cpt_iss_reopen_audit_passed"
+        )
+        is True
+        and certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_hamiltonian_direction_decomposition_as_ew_higgs_action")
+        is True
+        and certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_cpt_algebra_as_physical_response_authority")
+        is True
+        and certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_iss_requeue_as_pr230_evidence")
+        is True
+        and all(
+            value is False
+            for value in certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block134-fresh-hamiltonian-cpt-iss-reopen-audit-keeps-imports-clean",
+        block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean,
+        certificates["block134_fresh_hamiltonian_cpt_iss_reopen_audit"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3661,6 +3709,7 @@ def main() -> int:
             "does not treat action-first source-Higgs packet support as closure before accepted action/O_H/LSZ, source-overlap kappa, time-kernel rows, and strict C_ss/C_sH/C_HH pole residues exist",
             "does not treat carrier-independent lattice-Noether support as PR230 canonical O_H, source-Higgs pole-row, W/Z, Schur, or neutral-transfer authority",
             "does not treat fresh Cl(3) Schur-separator, cluster-decomposition, or lattice-Green arithmetic branches as PR230 strict closure roots",
+            "does not treat fresh Hamiltonian direction-decomposition, CPT algebra, or ISS audit-requeue branches as PR230 strict closure roots",
             "does not treat package hierarchy v as a PR230 W/Z absolute-normalization pin",
             "does not treat post-Block100 completion/reopen audit status, completed chunks, or fetched remote path names as positive closure",
             "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
@@ -3700,6 +3749,7 @@ def main() -> int:
         "block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean": block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean,
         "block132_noether_fresh_artifact_intake_keeps_imports_clean": block132_noether_fresh_artifact_intake_keeps_imports_clean,
         "block133_fresh_math_artifact_reopen_audit_keeps_imports_clean": block133_fresh_math_artifact_reopen_audit_keeps_imports_clean,
+        "block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean": block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

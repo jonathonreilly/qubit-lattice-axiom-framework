@@ -1,9 +1,9 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block133-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block134-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
-`a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
+`ddd4b8f08e819147d4e74e2d530936061168486b`.
 
 Stacked review PR for Blocks120-121: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439
 Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445
@@ -28,6 +28,7 @@ Stacked review PR for Block132:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1487
 Stacked review PR for Block133:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1494
+Stacked review PR for Block134: pending.
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -223,6 +224,25 @@ scale or Yukawa authority.  Reruns: Block133 `PASS=11`, campaign status
 `PASS=454`, assumption/import stress `PASS=137`.
 
 Active next work after Block133: the cleanest route remains action-first
+source-Higgs closure with accepted same-surface canonical `O_H`/action/LSZ
+authority plus strict numeric `C_ss/C_sH/C_HH` pole-residue rows sharing
+source/action/`O_H` surface IDs.  W/Z, Schur/Feshbach, or neutral routes reopen
+only with their strict physical-response, pole, or transfer authority packets.
+
+Block134 audits the next fresh fetched branch set after Block133:
+`origin/physics-loop/physical-hermitian-hamiltonian-sme-bridge-block29-2026-05-17`,
+`origin/cpt-d-level-finite-lattice-algebraic-narrow-2026-05-17`,
+and the three ISS requeue branches.  Result: exact negative boundary.  The
+staggered Hamiltonian direction-decomposition theorem is bounded narrow
+lattice operator-completeness for `H=iD`, not accepted EW/Higgs action,
+canonical `O_H`, source-Higgs pole rows, W/Z response, Schur/Feshbach pole
+authority, or neutral H3/H4 authority.  The CPT D-level theorem is an abstract
+finite-lattice substitution identity, not PR230 physical response or
+source-overlap authority.  The ISS branches are audit requeue/bookkeeping notes
+with no science-content change.  Reruns: Block134 `PASS=11`, campaign status
+`PASS=455`, assumption/import stress `PASS=138`.
+
+Active next work after Block134: the cleanest route remains action-first
 source-Higgs closure with accepted same-surface canonical `O_H`/action/LSZ
 authority plus strict numeric `C_ss/C_sH/C_HH` pole-residue rows sharing
 source/action/`O_H` surface IDs.  W/Z, Schur/Feshbach, or neutral routes reopen

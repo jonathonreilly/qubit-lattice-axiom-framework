@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block133.
+Status: exact negative boundary plus bounded support through Block134.
 
 `proposed_retained`: not allowed.
 
@@ -87,6 +87,14 @@ bridge is conditional gap support, and the Green readout is finite arithmetic.
 They supply no accepted canonical `O_H`/action/LSZ authority,
 source-overlap `kappa_s`, strict `C_ss/C_sH/C_HH` pole rows, W/Z response
 packet, Schur/Feshbach pole authority, or neutral H3/H4 authority.
+Block134 then intakes the fresh staggered Hamiltonian direction-decomposition,
+CPT D-level finite-lattice algebra, and ISS requeue branches.  These also do
+not reopen PR230: the Hamiltonian theorem is bounded narrow lattice
+operator-completeness for `H=iD`, not accepted EW/Higgs action or canonical
+source-Higgs/WZ authority; the CPT theorem is an abstract substitution
+identity under premises, not Standard-Model physical response or source-overlap
+authority; and the ISS branches are audit requeue bookkeeping with no
+science-content change.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -129,6 +137,10 @@ packet, Schur/Feshbach pole authority, or neutral H3/H4 authority.
   spatial slab cluster-decomposition bridge, and lattice Green-function
   arithmetic readout are not PR230 strict source-Higgs, W/Z, Schur/Feshbach, or
   neutral authority packets.
+- no Hamiltonian/CPT/ISS shortcut after Block134: bounded lattice
+  operator-completeness for `H=iD`, abstract CPT algebra, and audit requeue
+  notes are not accepted `O_H`/action/LSZ, source-Higgs pole-row, W/Z,
+  Schur/Feshbach, or neutral H3/H4 authority packets.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an
   allowed W/Z absolute pin is supplied.

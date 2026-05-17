@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 112 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 341 |
+| **retained_bounded** | 342 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 565 |
+| `audited_clean` | 566 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
@@ -501,6 +501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -9205,6 +9206,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The compact and refined families have mean inst-ret splits of -1.669200e-02 and -4.352319e-02, with retarded below instantaneous on 0/5 and 3/5 b-rows respectively, so the split survives but is not uniformly directional.  _(class `C`)_
 - **chain closes:** True — The registered runner cache is complete and matches the source note's two-family table and safe-read boundary. The audited result is only the finite smoke-probe noncollapse/partial-survival statement, not a universal retarded-gravity law or refinement-stability theorem.
 - **rationale:** The current cache supports the note's bounded table exactly: the retarded field differs from the instantaneous field on both compact and refined families, but the sign/direction is row-dependent. The source already confines the claim to a causality/scheduling smoke probe and disclaims a full wave theory or universal law. Residual risk is limited to the small two-family sample and lack of assertion gates, which does not block the audited finite readout.
+- **auditor confidence:** high
+
+### `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic SU(3) trace identity that the complex-conjugate unitary representation has cubic anomaly index A(Rbar)=-A(R), with A(3bar)=-1 and two copies contributing -2, using the retained Gell-Mann carrier and retained d^{abc} normalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-184918-41cdea85-rh_completion_color_anti-017`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting T^a_{Rbar}=-(T^a_R)^* into Tr[T^a{T^b,T^c}] gives Tr_{Rbar}[T^a_{Rbar}{T^b_{Rbar},T^c_{Rbar}}]=-(Tr_R[T^a_R{T^b_R,T^c_R}])^*=-(1/2)A(R)d^{abc}, hence A(Rbar)=-A(R).  _(class `A`)_
+- **chain closes:** True — The sign flip follows directly from the conjugate-representation generator convention, trace linearity, reality of d^{abc}, and the cubic anomaly definition. The cited retained-bounded inputs supply only the algebraic Gell-Mann carrier and d tensor needed for this scoped claim; no physical color or matter-existence bridge is used.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the supplied SU(3) generator and d-symbol inputs, not a definition, renaming, or numerical comparator. The runner source actually constructs the Gell-Mann matrices and computes the relevant traces symbolically; the few hard-coded expected values are checks against the scoped algebraic normalization and non-load-bearing consistency probes, not imports of the contested sign flip. The note explicitly avoids claiming matter-content existence or the physical-color bridge, so the scoped representation-theoretic conclusion closes on the restricted packet.
 - **auditor confidence:** high
 
 ### `s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10`

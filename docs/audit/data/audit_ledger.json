@@ -191150,22 +191150,45 @@
       "verdict_rationale": null
     },
     "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T18:50:45.505700+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure.",
+          "su3_dabc_symmetric_theorem_note_2026-05-02": "Algebraic D1-D6 theorem only on the Gell-Mann SU(3) carrier supplied by cl3_color_automorphism_theorem: defining d^{abc}=2 Tr[{T^a,T^b}T^c], the anticommutator decomposition {T^a,T^b}=(1/3)delta_ab I_3+d^{abc}T^c holds, d^{abc} is real and totally symmetric, the listed standard nonzero components match the direct Gell-Mann computation, T^aT^b=(1/6)delta_ab I_3+(1/2)(d^{abc}+i f^{abc})T^c, and the d/f symmetric-antisymmetric split is verified. This excludes physical SM color-gauge identification, continuum gluon-sector claims, QCD amplitude/vertex-factor claims, cubic-Casimir numerical corollaries, and any downstream physical-color toolkit reading."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "su3_dabc_symmetric_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "su3_dabc_symmetric_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "su3_dabc_symmetric_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b4b669e6797df842a986eefe2c8713942c7fcf5d8e03efd10a118d56182aada1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-184918-41cdea85-rh_completion_color_anti-017",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The sign flip follows directly from the conjugate-representation generator convention, trace linearity, reality of d^{abc}, and the cubic anomaly definition. The cited retained-bounded inputs supply only the algebraic Gell-Mann carrier and d tensor needed for this scoped claim; no physical color or matter-existence bridge is used.",
       "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Algebraic SU(3) trace identity that the complex-conjugate unitary representation has cubic anomaly index A(Rbar)=-A(R), with A(3bar)=-1 and two copies contributing -2, using the retained Gell-Mann carrier and retained d^{abc} normalization.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T18:50:45.505700+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -191174,32 +191197,32 @@
         "su3_dabc_symmetric_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Substituting T^a_{Rbar}=-(T^a_R)^* into Tr[T^a{T^b,T^c}] gives Tr_{Rbar}[T^a_{Rbar}{T^b_{Rbar},T^c_{Rbar}}]=-(Tr_R[T^a_R{T^b_R,T^c_R}])^*=-(1/2)A(R)d^{abc}, hence A(Rbar)=-A(R).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "524b1c74be105e6db18a158d69676206ced2c6a4dc92f3c18376207d70571cb3",
       "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the scoped claim remains purely algebraic and does not get reused downstream as closing the separate matter-existence or physical-color bridge.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 26,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 26
       },
       "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
       "title": "RH-Completion-to-3\u0304 Cubic Anomaly Index Mapping Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the supplied SU(3) generator and d-symbol inputs, not a definition, renaming, or numerical comparator. The runner source actually constructs the Gell-Mann matrices and computes the relevant traces symbolically; the few hard-coded expected values are checks against the scoped algebraic normalization and non-load-bearing consistency probes, not imports of the contested sign flip. The note explicitly avoids claiming matter-content existence or the physical-color bridge, so the scoped representation-theoretic conclusion closes on the restricted packet."
     },
     "rh_sector_anomaly_cancellation_identities_note_2026-05-02": {
       "audit_date": null,

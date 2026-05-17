@@ -5900,25 +5900,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "left_handed_charge_matching_note",
-      "claim_scope": null,
+      "claim_scope": "Scale-free eigenvalue ratio \u03b1:\u03b2 = 1:(-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 37,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "load_bearing_score": 28.307,
       "note_path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "transitive_descendants": 895

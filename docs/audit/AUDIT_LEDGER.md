@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 316 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1235 |
+| unaudited | 1234 |
+| audit_in_progress | 1 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -42,14 +43,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 533 |
 | `audited_conditional` | 166 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1432 |
+| `unaudited` | 1431 |
 
 | claim_type | count |
 |---|---:|
@@ -102,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 17 | `three_generation_structure_note` | bounded_theorem | critical | 834 | 30.21 | `unaudited` | unaudited |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 810 | 30.16 | `unaudited` | unaudited |
 | 19 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 959 | 29.41 | `audited_clean` | **retained_bounded** |
-| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 895 | 28.31 | `unaudited` | unaudited |
+| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 895 | 28.31 | `audit_in_progress` | audit_in_progress |
 | 21 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 804 | 28.15 | `unaudited` | unaudited |
 | 22 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 804 | 28.15 | `unaudited` | unaudited |
 | 23 | `cl3_sm_embedding_theorem` | positive_theorem | critical | 811 | 27.66 | `unaudited` | unaudited |
@@ -114,6 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `left_handed_charge_matching_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |

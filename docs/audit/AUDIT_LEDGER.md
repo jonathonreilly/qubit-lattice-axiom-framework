@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 114 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 346 |
+| **retained_bounded** | 347 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 572 |
+| `audited_clean` | 573 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1442 |
+| `unaudited` | 1441 |
 
 | claim_type | count |
 |---|---:|
@@ -204,6 +204,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cycle_break_frontier_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_break_slice_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2940,6 +2941,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the frozen 3D 1/L^2 lattice replay, the decoherence observables are exactly identical for the valley-linear and spent-delay actions at h in {1.0, 0.5, 0.25}.  _(class `C`)_
 - **chain closes:** False — The primary runner has completed stdout and computes observables by calling the imported lattice propagation harness, but the restricted packet does not include the imported Lattice3D.propagate implementation or the action-law definitions needed to verify that the two requested action modes are genuinely implemented and differ only by phase at zero field.
 - **rationale:** The runner output supports exact numerical identity across the tested h values, and the visible source performs a substantive replay rather than merely printing constants. However, the load-bearing computation depends on scripts.valley_linear_same_harness_compare for the lattice, propagation routine, constants, slit setup, and action-mode semantics. Because that helper source is not included in the restricted packet, the audit cannot verify the zero-field action reduction or that the compared modes are independently implemented.
+- **auditor confidence:** high
+
+### `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DECOHERENCE_ACTION_ZERO_FIELD_PER_LINK_PHASE_EQUALITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DECOHERENCE_ACTION_ZERO_FIELD_PER_LINK_PHASE_EQUALITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic per-link zero-field equality of the spent-delay and valley-linear action values and phase factors under the two stated action-law definitions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-211943-78dc5814-decoherence_action_zero_-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting f_bar = 0 into the explicit definitions gives spent_delay(L,0)=L and valley_linear(L,0)=L, so exp(i k spent_delay(L,0)) = exp(i k valley_linear(L,0)) = exp(i k L).  _(class `A`)_
+- **chain closes:** True — The proof needs only direct substitution into the stated definitions: dl(L,0)=L, ret(L,0)=0, and L(1-0)=L. The claimed phase equality then follows from equality of the phase arguments, without invoking propagation, detector readout, or decoherence observables.
+- **rationale:** The load-bearing step is a genuine algebraic identity within the bounded scope of the note. The runner source performs symbolic substitution and simplification rather than merely printing constants, and its zero-field use of the Max-protected expression is harmless because the argument is exactly zero at f_bar=0. The note explicitly does not claim the broader propagated-amplitude or observable equality, so no missing physical bridge is needed for the audited scope.
 - **auditor confidence:** high
 
 ### `dense_prune_guard_seed_note`

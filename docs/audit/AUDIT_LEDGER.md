@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 329 |
+| **retained_bounded** | 330 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 549 |
+| `audited_clean` | 550 |
 | `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1420 |
+| `unaudited` | 1419 |
 
 | claim_type | count |
 |---|---:|
@@ -189,6 +189,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cycle_battery_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -2649,6 +2650,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within that finite scoped sweep, the runner source computes the instantaneous and source-driven fields, zero-source reduction, sign counts, mean shifts, and log-log exponents, and the stdout matches the source note. The result does not establish any broader no-go for other coupled-field architectures, families, gain rules, or source laws.
 - **rationale:** The note is clean only as a bounded computational no-go. The runner does not hard-code the reported table; it constructs the fields over the generated families and computes the reduction check, sign survival, and fitted exponents, with no cited upstream dependency needed for the stated finite result. The source note accurately reports the runner output and keeps the safe conclusion to exact zero-source reduction, sign survival on sampled rows, and failure of clean linear scaling for this minimal architecture. Residual risk is scope control: it must not be cited as excluding unsampled architectures, parameters, DAG families, or a separately derived physical mass observable.
 - **auditor confidence:** medium
+
+### `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the explicitly specified finite-lattice operators C_lat, P_lat and Pauli internal operators G_C, G_P on V_lat ⊗ C^2 with even L, (CP)^2 is the scalar ε I_V, with ε determined by the lattice inversion convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-152220-a5e2dcef-cpt_c3_cp_squared_scalar-012`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tensor product computation reduces (CP)^2 to (C_lat P_lat)^2 ⊗ (G_C G_P)^2 = ε_lat I_lat ⊗ I_int = ε_lat I_V.  _(class `A`)_
+- **chain closes:** True — The source note gives direct sitewise algebra for the orbital factor and direct Pauli-matrix algebra for the internal factor; tensoring them proves the stated scalar identity. The cited retained-grade Cl(3) authorities support the Pauli irrep context, while the actual scalar-square step is explicit matrix algebra.
+- **rationale:** The load-bearing step is a genuine algebraic closure over explicitly defined finite-dimensional matrices, not a definition, numerical match, or imported comparator. The runner source constructs the Pauli matrices, lattice parity/permutation matrices, tensor products, and exact products in sympy rather than merely printing the target result. The proof also supplies the general even-L sign argument, so the finite runner checks are corroborative rather than the sole basis for closure.
+- **auditor confidence:** high
 
 ### `cpt_exact_note`
 

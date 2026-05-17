@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block104_z3_heat_kernel_source_coupling_no_go`.
+Current block: `block106_neutral_multiplicity_gate_refresh`.
 
 ```yaml
-actual_current_surface_status: exact negative boundary / Z3 heat-kernel source-coupling data do not supply PR230 H4 source/canonical-Higgs coupling
+actual_current_surface_status: bounded-support / neutral multiplicity intake runner refresh; current PR230 surface still rejected
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block104 shows the source-plus-triplet heat-kernel extension is reducible unless an independent source-triplet eta is supplied. Current PR230 artifacts do not derive or measure eta, do not identify the source or triplet as canonical O_H, and do not supply physical C_sH/C_HH pole rows, W/Z response, scalar-LSZ authority, or retained/proposed-retained closure."
+proposal_allowed_reason: "Block106 changes no physics premise. The neutral multiplicity candidate remains rejected, canonical O_H is absent, source-Higgs C_ss/C_sH/C_HH pole rows are absent, and aggregate closure gates still reject closure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,14 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block106 refreshes the same-surface neutral multiplicity-one intake gate
+   after the clean source-Higgs route selector moved to the action-first/FMS
+   path.  The runner now checks that the selector still keeps the
+   canonical-`O_H` / source-Higgs root open instead of requiring the obsolete
+   invariant-ring-only route id.  Candidate acceptance criteria are unchanged:
+   the existing neutral multiplicity-one candidate is rejected, canonical
+   `O_H` is absent, strict `C_ss/C_sH/C_HH` pole rows are absent, and no
+   retained or `proposed_retained` closure is authorized.
 0. Block104 records the Z3 heat-kernel source-coupling/H4 no-go as an exact
    negative boundary. The block-diagonal source-plus-triplet extension
    `diag(1,K_tau)` keeps the triplet heat-kernel facts but is reducible and

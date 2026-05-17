@@ -986,6 +986,27 @@ Queue remains:
 3. neutral H3/H4 physical-transfer/irreducibility authority plus
    source/canonical-Higgs coupling.
 
+## Block106 Neutral Multiplicity Gate Refresh
+
+Block106 does not change the queue ranking.  It repairs a stale intake-runner
+dependency on the old invariant-ring route id after the clean source-Higgs
+route selector moved to the action-first/FMS source-Higgs route.  The neutral
+multiplicity-one gate now accepts the current selector only if proposal remains
+disallowed and the selected route still keeps the canonical `O_H` /
+source-Higgs root open.
+
+The current candidate remains rejected and the refreshed source-Higgs pole-row
+assembly still finds no strict `C_ss/C_sH/C_HH` packet.  The queue remains:
+
+1. accepted same-surface canonical `O_H` plus strict `C_ss/C_sH/C_HH` rows
+   with pole-residue, Gram, threshold, and FV/IR authority;
+2. strict W/Z physical-response packet with accepted action, production W/Z
+   rows, same-source top rows, matched covariance, strict non-observed `g2`,
+   `delta_perp`, and final W-response authority;
+3. strict Schur/scalar-LSZ pole authority or neutral H3/H4
+   physical-transfer/irreducibility authority plus source/canonical-Higgs
+   coupling.
+
 ## Block33 Complete-Packet OS Transfer/Alias Firewall
 
 Block33 refreshes the OS transfer-kernel gate after the complete packet and

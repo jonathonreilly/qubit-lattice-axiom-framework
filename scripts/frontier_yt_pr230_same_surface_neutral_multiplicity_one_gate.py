@@ -238,10 +238,21 @@ def main() -> int:
     counterfamily = current_two_singlet_counterfamily()
     schema = candidate_schema()
 
-    selector_points_here = (
-        parents["clean_source_higgs_route_selector"].get("selected_clean_route", {}).get("id")
-        == "source_higgs_invariant_ring_then_gns_pole_rows"
-        and parents["clean_source_higgs_route_selector"].get("proposal_allowed") is False
+    selected_clean_route = parents["clean_source_higgs_route_selector"].get(
+        "selected_clean_route", {}
+    )
+    route_blob = json.dumps(selected_clean_route, sort_keys=True)
+    selector_keeps_source_higgs_root_open = (
+        parents["clean_source_higgs_route_selector"].get("proposal_allowed") is False
+        and any(
+            marker in route_blob
+            for marker in (
+                "canonical O_H",
+                "canonical_higgs_operator_certificate",
+                "source_higgs_cross_correlator",
+                "source-Higgs",
+            )
+        )
     )
     invariant_ring_blocker_loaded = (
         "invariant-ring O_H certificate attempt blocked" in statuses["invariant_ring_oh_attempt"]
@@ -336,7 +347,11 @@ def main() -> int:
 
     report("parent-certificates-present", not missing, f"missing={missing}")
     report("no-parent-authorizes-proposal", not proposal_allowed_parents, f"proposal_allowed={proposal_allowed_parents}")
-    report("selector-points-to-source-higgs-invariant-route", selector_points_here, statuses["clean_source_higgs_route_selector"])
+    report(
+        "route-selector-keeps-source-higgs-root-open",
+        selector_keeps_source_higgs_root_open,
+        statuses["clean_source_higgs_route_selector"],
+    )
     report("invariant-ring-blocker-loaded", invariant_ring_blocker_loaded, statuses["invariant_ring_oh_attempt"])
     report("candidate-portfolio-keeps-route-open", portfolio_keeps_route_open, statuses["oh_bridge_candidate_portfolio"])
     report("canonical-oh-certificate-absent", canonical_oh_absent, statuses["canonical_higgs_operator_gate"])
@@ -390,6 +405,19 @@ def main() -> int:
         else None,
         "parent_certificates": PARENTS,
         "parent_statuses": statuses,
+        "selected_clean_route_id": selected_clean_route.get("id"),
+        "route_selector_check": {
+            "proposal_allowed": parents["clean_source_higgs_route_selector"].get(
+                "proposal_allowed"
+            ),
+            "accepted_markers": [
+                "canonical O_H",
+                "canonical_higgs_operator_certificate",
+                "source_higgs_cross_correlator",
+                "source-Higgs",
+            ],
+            "keeps_source_higgs_root_open": selector_keeps_source_higgs_root_open,
+        },
         "future_file_presence": future_present,
         "required_artifact_contract": contract,
         "candidate_schema": schema,

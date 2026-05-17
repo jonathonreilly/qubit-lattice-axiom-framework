@@ -244,6 +244,17 @@
       ]
     }
   ],
+  "route_selector_check": {
+    "accepted_markers": [
+      "canonical O_H",
+      "canonical_higgs_operator_certificate",
+      "source_higgs_cross_correlator",
+      "source-Higgs"
+    ],
+    "keeps_source_higgs_root_open": true,
+    "proposal_allowed": false
+  },
+  "selected_clean_route_id": "source_higgs_fms_action_then_gram_pole_rows",
   "strict_non_claims": [
     "does not claim retained or proposed_retained PR230 closure",
     "does not write or accept a canonical O_H certificate",

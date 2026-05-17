@@ -5373,3 +5373,42 @@ route remains open: no same-source EW/Higgs action certificate, no W/Z
 correlator mass-fit rows, no same-source top/W covariance rows, no strict
 non-observed `g2`, and no canonical-Higgs identity are present.  No retained or
 `proposed_retained` closure is authorized.
+
+## Block106 Neutral Multiplicity Gate Refresh
+
+Block106 refreshes the same-surface neutral multiplicity-one intake gate after
+the source-Higgs route selector moved from the obsolete invariant-ring/GNS
+route id to the action-first/FMS source-Higgs route.  The updated runner checks
+that proposal remains disallowed and the selected route still keeps the
+canonical `O_H` / source-Higgs pole-row root open.  It does not relax the
+candidate acceptance contract.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_same_surface_neutral_multiplicity_one_gate.py`
+- `outputs/yt_pr230_same_surface_neutral_multiplicity_one_gate_2026-05-07.json`
+- `outputs/yt_source_higgs_pole_row_assembly_2026-05-12.json`
+- `outputs/yt_source_higgs_pole_row_ingestion_contract_2026-05-12.json`
+- `docs/YT_PR230_BLOCK106_NEUTRAL_MULTIPLICITY_GATE_REFRESH_NOTE_2026-05-17.md`
+
+Verification:
+
+```text
+neutral multiplicity gate PASS=17 FAIL=0
+canonical O_H certificate gate PASS=11 FAIL=0
+source-Higgs cross-correlator builder PASS=5 FAIL=0
+source-Higgs pole-row assembly PASS=12 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+campaign status PASS=427 FAIL=0
+assumption/import stress PASS=111 FAIL=0
+audit pipeline PASS with 5 existing warnings
+strict audit lint PASS with 5 existing warnings
+git diff --check PASS
+```
+
+Honest status: bounded-support / runner maintenance and source-Higgs rescan
+only.  The existing same-surface neutral multiplicity-one candidate remains
+rejected, strict `C_ss/C_sH/C_HH` pole rows remain absent, and no retained or
+`proposed_retained` closure is authorized.

@@ -1,25 +1,26 @@
 loop_slug: pr230-neutral-transfer-eigenoperator-oh
 mode: campaign
 runtime_budget: "12h total, outer-supervisor managed"
-checkpoint_time: "2026-05-15T05:52:05Z"
+checkpoint_time: "2026-05-17T00:25:00Z"
 branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_head_at_start: 76c5d93e7
-lock_status: "branch-local science block; post-Block100 completion/reopen audit packaged after final higher-shell chunk packet and W/Z explicit-v firewall; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
-cycle_count: 104
-active_science_block: block104_z3_heat_kernel_source_coupling_no_go
-active_route: "Block104 closes the remaining Z3 heat-kernel H4/source-coupling shortcut. The block-diagonal source-plus-triplet extension diag(1,K_tau) keeps the triplet heat-kernel facts but is reducible and leaves the PR230 source singlet isolated. Adding a positive source-triplet eta can make a symmetric stochastic Z3-covariant four-state matrix primitive, but eta is independent same-surface action/transfer data and is not derived by current PR230 artifacts. No canonical O_H, physical C_sH/C_HH pole rows, W/Z response, or scalar-LSZ authority is supplied, so this is an exact negative boundary, not retained/proposed_retained closure."
+lock_status: "branch-local science block; Block106 neutral multiplicity intake gate refreshed in a clean worktree after the final higher-shell chunk packet; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
+cycle_count: 106
+active_science_block: block106_neutral_multiplicity_gate_refresh
+active_route: "Block106 is runner-maintenance and source-Higgs rescan only. It removes a stale exact-route-id dependency from the same-surface neutral multiplicity-one intake gate after the clean source-Higgs route selector moved to the action-first/FMS source-Higgs path. Candidate acceptance remains strict and the existing same-surface neutral multiplicity-one candidate remains rejected. The source-Higgs pole-row assembly was rerun over the expanded output set and still finds no strict C_ss/C_sH/C_HH pole-row packet."
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Z3 heat-kernel source-coupling data do not supply PR230 H4 source/canonical-Higgs coupling"
+actual_current_surface_status: "bounded-support / neutral multiplicity intake runner refresh; current PR230 surface still rejected"
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block104 shows the source-plus-triplet heat-kernel extension is reducible unless an independent source-triplet eta is supplied. Current PR230 artifacts do not derive or measure eta, identify the source or triplet as canonical O_H, or supply physical C_sH/C_HH pole rows, and retained-route, campaign, full-assembly, and completion-audit gates still reject closure."
+proposal_allowed_reason: "Block106 changes no physics premise. The neutral multiplicity candidate remains unaccepted, canonical O_H is absent, source-Higgs C_ss/C_sH/C_HH pole rows are absent, and retained-route, campaign, full-assembly, and completion-audit gates still reject closure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness and FV/IR authority; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block104 shows the Z3 heat-kernel source-plus-triplet primitive shortcut additionally lacks a derived eta source-coupling and H4 source/canonical-Higgs authority."
+hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness and FV/IR authority; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block106 confirms the final chunk packet and refreshed neutral multiplicity gate do not supply that strict artifact."
 minimal_allowed_premises:
+  - "block106 neutral multiplicity intake refresh as bounded support only; the runner now follows the current action-first/FMS source-Higgs route selector while preserving strict candidate obligations, and the same-surface neutral multiplicity-one candidate remains rejected with no canonical O_H, no C_ss/C_sH/C_HH pole rows, no W/Z response, and no retained/proposed_retained closure"
   - "Cl(3)/Z^3 substrate and current PR230 same-surface source primitives"
   - "same-surface W/Z action-root support contracts at their stated support-only status"
   - "additive-source radial-spurion incompatibility at exact support/boundary status"

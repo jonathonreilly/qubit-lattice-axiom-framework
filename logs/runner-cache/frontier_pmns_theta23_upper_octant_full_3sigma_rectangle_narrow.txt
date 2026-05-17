@@ -1,0 +1,151 @@
+================================================================================
+PMNS theta_23 upper-octant chamber-closure FULL-3SIGMA-RECTANGLE narrow rescope
+                            (Cycle 7, 2026-05-17)
+================================================================================
+  cite: docs/PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md
+  primary new content (X5): 80 x 80 box-Krawczyk cover of B = 
+      [0.625, 0.75] x [0.902, 0.956] with q = sqrt(8/3) - delta
+
+================================================================================
+Part 1 (S1): sympy: chamber-boundary constant identity.
+================================================================================
+  [PASS] (S1) sympy.simplify(sqrt(8/3) - 2 sqrt(6)/3) == 0  (diff = 0)
+  [PASS] (S1a) (sqrt(8/3))^2 = 8/3  (value = 8/3)
+  [PASS] (S1b) (2 sqrt(6)/3)^2 = 8/3  (value = 8/3)
+
+================================================================================
+Part 2: interval Newton brackets eigenvalues of H at PDG-central anchor.
+================================================================================
+  numpy seed eigenvalues (NOT load-bearing): ['-1.309094', '-0.320434', '2.286589']
+  [PASS] (P2.1) interval Newton converges for eigenvalue lambda_1  (seed = -1.309094)
+  [PASS] (P2.1w) lambda_1 interval width <= 1e-13 at 200-bit precision  (width = 4.441e-15, bracket = [-1.309094366245034, -1.309094366245029])
+  [PASS] (P2.2) interval Newton converges for eigenvalue lambda_2  (seed = -0.320434)
+  [PASS] (P2.2w) lambda_2 interval width <= 1e-13 at 200-bit precision  (width = 2.831e-15, bracket = [-0.320433692691655, -0.320433692691652])
+  [PASS] (P2.3) interval Newton converges for eigenvalue lambda_3  (seed = 2.286589)
+  [PASS] (P2.3w) lambda_3 interval width <= 1e-13 at 200-bit precision  (width = 3.109e-15, bracket = [2.286589401146684, 2.286589401146687])
+  [PASS] (P2.sep1) lambda_1 < lambda_2 strictly (intervals disjoint)  (separation = 0.9887)
+  [PASS] (P2.sep2) lambda_2 < lambda_3 strictly (intervals disjoint)  (separation = 2.6070)
+
+================================================================================
+Part 3: adjugate-based projectors reproduce PDG-central (0.307, 0.0218, 0.545).
+================================================================================
+  s_12^2 = [0.3070000000, 0.3070000000]  width = 9.992e-15
+  s_13^2 = [0.0218000000, 0.0218000000]  width = 5.725e-16
+  s_23^2 = [0.5450000000, 0.5450000000]  width = 5.107e-15
+  [PASS] (P3.1) s_12^2 interval matches PDG-central 0.307 within 1e-9 (parent 12-digit truncation)  (interval = [0.3069999999999, 0.3069999999999])
+  [PASS] (P3.2) s_13^2 interval matches PDG-central 0.0218 within 1e-9  (interval = [0.0218000000000, 0.0218000000000])
+  [PASS] (P3.3) s_23^2 interval matches PDG-central 0.545 within 1e-9  (interval = [0.5450000000000, 0.5450000000000])
+  [PASS] (P3.4) observable intervals tight (width < 1e-10)  (max width = 9.992e-15)
+
+================================================================================
+Part 4: at parent's threshold point on chamber boundary, s_23^2 ~ 0.541.
+================================================================================
+  s_12^2 = [0.307000, 0.307000]
+  s_13^2 = [0.0218000, 0.0218000]
+  s_23^2 = [0.540970, 0.540970]
+  [PASS] (P4.1) threshold-point s_23^2 matches parent's 0.540970 within 1e-3  (|s_23^2 - 0.540970| = 3.3392e-08)
+  [PASS] (P4.2) threshold-point s_23^2 strictly > 0.5 (upper-octant)  (s_23^2 lower = 0.540970)
+  [PASS] (P4.3) parent threshold point lies on chamber boundary within 1e-5  (|q_t + delta_t - sqrt(8/3)| = 8.38e-07)
+
+================================================================================
+Part 5 (X5, NEW CONTENT): 80x80 box-Krawczyk cover of B with q = sqrt(8/3) - delta.
+================================================================================
+  bounding box B = [0.625, 0.75] x [0.902, 0.956]
+  grid: 80 x 80 = 6400 sub-boxes  (dm = 1.5625e-03, dd = 6.7500e-04)
+  NuFit 5.3 NO 3-sigma rectangle: s_12^2 in [0.27, 0.341], s_13^2 in [0.02029, 0.02391]
+  embedding: q = sqrt(8/3) - delta  (chamber boundary)
+  precision: 200-bit mpmath; seed radius 0.1
+
+  total sub-boxes:                                   6400
+  sub-boxes with interval-Newton failure:            0
+  sub-boxes with image disjoint from NuFit rect:     996
+  sub-boxes with image overlapping NuFit rect:       5404
+      ... of which s_23^2 > 0.5 strictly:            5404
+      ... of which s_23^2 <= 0.5 (FAIL):             0
+  tightest s_23^2 lower bound over image-overlap:    0.527718
+      at sub-box (i=59, j=0, m_lo=0.7172, d_lo=0.9020): s_23^2 = [0.527718, 0.535796]
+  gap (tightest lower - 0.5):                        0.027718
+  elapsed:                                           6.05s
+
+  [PASS] (P5.1) no sub-box interval-Newton failure across all 6400 boxes  (failures = 0)
+  [PASS] (P5.2) every image-overlap sub-box has s_23^2 > 0.5 strictly  (sub-boxes that failed strict > 0.5: 0)
+  [PASS] (P5.3) tightest s_23^2 lower bound over image-overlap is > 0.5  (tightest lower bound = 0.527718)
+  [PASS] (P5.4) tightest s_23^2 gap above 0.5 exceeds 1e-2 (strict upper-octant margin)  (gap = 0.027718)
+  [PASS] (P5.5) number of image-overlap sub-boxes is at least the threshold-rectangle width fraction  (n_overlap = 5404, full rectangle coverage requires several thousand sub-boxes)
+
+================================================================================
+Part 6 (X6): named external admission: parent Table 2 preimages lie inside B.
+================================================================================
+  Recording parent prediction note's Table 2 multistart-fsolve preimages
+  for the NuFit rectangle corners + midpoints (9 grid points).
+
+    s_12^2     s_13^2          m      delta          q     s_23^2
+    0.2700    0.02029     0.6675     0.9547     0.6783   0.547601
+    0.2700    0.02210     0.7087     0.9512     0.6818   0.541450
+    0.2700    0.02391     0.7484     0.9483     0.6847   0.535812
+    0.3055    0.02029     0.6461     0.9330     0.7000   0.546099
+    0.3055    0.02210     0.6868     0.9287     0.7043   0.540063
+    0.3055    0.02391     0.7259     0.9250     0.7080   0.534540
+    0.3410    0.02029     0.6267     0.9133     0.7197   0.544815
+    0.3410    0.02210     0.6668     0.9083     0.7247   0.538879
+    0.3410    0.02391     0.7054     0.9038     0.7292   0.533458
+
+  preimage m range: [0.6267, 0.7484]   (B m-range: [0.625, 0.75])
+  preimage delta range: [0.9038, 0.9547]   (B delta-range: [0.902, 0.956])
+  threshold s_23^2 range: [0.533458, 0.547601]
+  [PASS] (P6.1) every parent-Table-2 preimage (m, delta) lies in B = [0.625, 0.750] x [0.902, 0.956]  (named external admission (X6) -- all 9 grid points contained in B)
+  [PASS] (P6.2) parent Table 2 threshold s_23^2 values strictly > 0.5  (min Table 2 s_23^2 = 0.533458)
+  [PASS] (P6.3) parent Table 2 threshold values match note quoted range [0.5335, 0.5476]  (Table 2 range: [0.5335, 0.5476] vs. note [0.5335, 0.5476])
+
+================================================================================
+Part 7: NUMERICAL EVIDENCE (not rigorously certified):
+        forward check that each parent Table 2 preimage gives
+        the recorded threshold s_23^2 within 1e-3.
+================================================================================
+  ** WARNING: this section is FORWARD INDICATOR ONLY (numpy.linalg.eigh
+              + adjugate); not load-bearing on the box-Krawczyk
+              certification (Part 5).
+
+    s_12^2     s_13^2          m      delta    s_23^2_meas    s_23^2_quot     |diff|
+    0.2700    0.02029     0.6675     0.9547       0.547604       0.547601 3.4821e-06
+    0.2700    0.02210     0.7087     0.9512       0.541441       0.541450 9.0006e-06
+    0.2700    0.02391     0.7484     0.9483       0.535807       0.535812 5.1809e-06
+    0.3055    0.02029     0.6461     0.9330       0.546105       0.546099 5.8525e-06
+    0.3055    0.02210     0.6868     0.9287       0.540053       0.540063 1.0028e-05
+    0.3055    0.02391     0.7259     0.9250       0.534540       0.534540 2.6425e-07
+    0.3410    0.02029     0.6267     0.9133       0.544817       0.544815 2.0342e-06
+    0.3410    0.02210     0.6668     0.9083       0.538886       0.538879 6.7398e-06
+    0.3410    0.02391     0.7054     0.9038       0.533460       0.533458 1.7737e-06
+  [PASS] (P7) forward reproduction of parent Table 2 preimage->s_23^2 within 1e-3 (numerical only)  (max |diff| = 1.003e-05)
+
+================================================================================
+Part 8: residual scope (what this note does NOT certify).
+================================================================================
+  [PASS] (P8) residual scope declared: Rigorous proof that the Basin-1 chamber-boundary preimage of the rectangle is contained in B (X6 is named external admission only)
+  [PASS] (P8) residual scope declared: Exact threshold values s_23^2_min(s_12^2, s_13^2) at off-anchor points; only strict inequality > 0.5 certified
+  [PASS] (P8) residual scope declared: Other-permutation chamber-boundary patches (Component-1 noted auxiliary; not load-bearing)
+  [PASS] (P8) residual scope declared: Outer-frame Krawczyk certification of preimage-localization (tightening route (a))
+  [PASS] (P8) residual scope declared: Symbolic re-derivation of reduced-system polynomial coefficients (route (b))
+
+================================================================================
+Part 9: claim-discipline summary (no new axiom, no new vocabulary).
+================================================================================
+  [PASS] (P9) discipline: no new axiom introduced
+  [PASS] (P9) discipline: no new repo vocabulary
+  [PASS] (P9) discipline: named external admission for NuFit 5.3 NO 3-sigma rectangle (X3)
+  [PASS] (P9) discipline: named external admission for parent Table 2 preimage-localization (X6)
+  [PASS] (P9) discipline: citation form: markdown link for retained authorities
+  [PASS] (P9) discipline: status authority: independent audit lane only
+  [PASS] (P9) discipline: no audit_status promotion language
+  [PASS] (P9) discipline: box-Krawczyk over B is new computational content (X5)
+  [PASS] (P9) discipline: inherits Krawczyk apparatus from (X1)
+  [PASS] (P9) discipline: inherits chart from forward-cycle channel value law (X2)
+  [PASS] (P9) discipline: inherits hw=1 three-character algebra (X4)
+  [PASS] (P9) discipline: parent prediction note cited as Table 2 source only (not promotion)
+  [PASS] (P9) discipline: Cycle 5a and Cycle 6a narrow notes cited as cascade partners
+  [PASS] (P9) discipline: interval arithmetic at 200-bit mpmath precision
+  [PASS] (P9) discipline: forward chart H(m, delta, q) Hermitian; eigenvalues real
+  [PASS] (P9) discipline: adjugate projector formula is standard linear algebra
+
+================================================================================
+PASS=48  FAIL=0

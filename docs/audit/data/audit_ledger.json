@@ -75526,13 +75526,13 @@
         "native_gauge_closure_note",
         "graph_first_su3_integration_note"
       ],
-      "direct_in_degree": 13,
+      "direct_in_degree": 14,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 20.467,
+      "load_bearing_score": 20.969,
       "load_bearing_step": "The q-qbar color space decomposes as N_c tensor N_c-bar = 1 + adjoint, so the adjoint channel-count fraction is (N_c^2 - 1)/N_c^2, giving 8/9 at N_c=3 and reciprocal 9/8.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -75598,7 +75598,7 @@
       },
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "EW Current Fierz-Channel Decomposition: Exact Group-Theory Derivation of `(N_c^2 - 1)/N_c^2`",
-      "transitive_descendants": 1000,
+      "transitive_descendants": 1001,
       "verdict_rationale": "Within the stated boundary, the derivation closes: the Fierz identity supplies the singlet/adjoint decomposition and the Hilbert-space dimension count gives the exact ratio without numerical tuning or an asymptotic correction. The note correctly separates this bounded theorem from the unproved matching rule M and does not claim to derive the full EW coupling correction. The retained upstream dependencies are sufficient for the scoped color/gauge context and no forbidden cycle dependency is load-bearing."
     },
     "ew_current_matching_ozi_suppression_theorem_note_2026-04-27": {
@@ -96554,7 +96554,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 20.999,
+      "load_bearing_score": 21.0,
       "load_bearing_step": "For canonical cube shifts S_i, V_sel(phi)=Tr H(phi)^4-(Tr H(phi)^2)^2/8 equals 32 sum_{i<j} phi_i^2 phi_j^2, whose normalized simplex minima are exactly the three axis vertices.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -96698,7 +96698,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
       "title": "Graph-First Weak-Axis Selector Derivation",
-      "transitive_descendants": 1022,
+      "transitive_descendants": 1023,
       "verdict_rationale": "Issue checked: whether the graph-shift triplet derives a selector rather than inserting one. The selector formula is an exact trace calculation for the canonical graph-shift operators, and the minimizer statement follows directly on the normalized simplex. The claim boundary excludes anomaly-complete hypercharge and downstream phenomenology, so the bounded theorem closes without tuned matching or renaming."
     },
     "graph_first_su3_integration_note": {
@@ -96765,7 +96765,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 42.004,
+      "load_bearing_score": 42.006,
       "load_bearing_step": "Imposing the residual complementary-axis swap restricts the weak-su(2) commutant from gl(4) to gl(3) plus gl(1), whose compact semisimple part is su(3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -96836,7 +96836,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Graph-First `SU(3)` Integration Theorem",
-      "transitive_descendants": 1026,
+      "transitive_descendants": 1027,
       "verdict_rationale": "Issue checked: whether the selected graph axis gives a canonical route to su(3), not a full physical Standard Model identification. The finite graph construction closes: the selected-axis fiber operators generate weak su(2), the residual swap splits the base as 3+1, and the joint commutant has compact semisimple part su(3). The abelian factor remains explicitly bounded as hypercharge-like, so no anomaly-complete physical bridge is imported."
     },
     "graph_laplacian_core_card_note": {
@@ -149956,7 +149956,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 32.979,
+      "load_bearing_score": 32.98,
       "load_bearing_step": "Exact native Cl(3)/SU(2) closure is established algebraically, while SU(3) and the bounded hypercharge-like abelian surface are inherited only through retained graph-first dependencies and explicitly not promoted to anomaly-complete U(1)_Y or phenomenology.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -150199,7 +150199,7 @@
       },
       "runner_path": "scripts/frontier_non_abelian_gauge.py",
       "title": "Native Gauge Closure Note: Graph-First Gauge Closure on Z^3",
-      "transitive_descendants": 1008,
+      "transitive_descendants": 1009,
       "verdict_rationale": "Issue checked: whether the native gauge aggregator closes without importing a full Standard Model identification. Within the restricted scope, the claim closes as exact algebra plus retained dependency composition: the runner checks Clifford/SU(2), parity/hopping, dependency retained-grade status, and the selected-axis abelian eigenvalue surface. No hidden anomaly-complete U(1)_Y or phenomenology claim is asserted."
     },
     "neutrino_axiom3_reading_stuck_fanout_note_2026-04-28": {
@@ -190048,6 +190048,57 @@
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate",
       "transitive_descendants": 892,
       "verdict_rationale": "Issue: the load-bearing observable identification is an admitted open bridge, not derived from the supplied source and one-hop authorities. Why this blocks: the retained Fierz note proves only the adjoint Hilbert-space dimension fraction, not that the lattice connected color trace or its dynamics inherits that fraction with the stated O(1/N_c^4) correction. Repair target: prove matching rule (M) and the channel-population/correction estimate from retained lattice primitives, with a runner that does not set 8/9 as its target. Claim boundary until fixed: exact imported Fierz channel-count fraction plus conditional MC consistency framing only."
+    },
+    "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "0508aae4f84831284fbde507f768c94ba1f3d0145e50fa193d38aff0cbcf2fbd",
+      "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
+      "title": "R_conn Vertex-Color Singlet Projection Bounded Narrow Theorem",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
     },
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T01:58:27.232382+00:00",
@@ -256143,9 +256194,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2250,
+    "preserved_existing": 2251,
     "re_audit_required": 0,
-    "row_count": 2294,
+    "row_count": 2295,
     "seeded_new": 0
   }
 }

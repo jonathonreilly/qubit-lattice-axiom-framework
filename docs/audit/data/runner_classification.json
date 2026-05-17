@@ -18216,6 +18216,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_color_projection_mc.py"
     },
+    "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py"
+    },
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -25797,6 +25809,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py": {
@@ -52778,15 +52805,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 296,
+    "decoration_candidates": 297,
     "dominant_class_distribution": {
       "A": 190,
-      "B": 257,
+      "B": 258,
       "C": 721,
       "D": 293,
       "none": 430
     },
-    "runners_classified": 1891,
+    "runners_classified": 1892,
     "runners_with_C": 931,
     "runners_with_D": 540
   }

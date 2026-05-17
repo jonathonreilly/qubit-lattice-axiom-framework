@@ -20905,6 +20905,10 @@
       "to": "yukawa_color_projection_theorem"
     },
     {
+      "from": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
+      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
+    },
+    {
       "from": "reproduction_audit_note",
       "to": "canonical_harness_index"
     },
@@ -67853,6 +67857,20 @@
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate"
     },
+    "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
+      "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0508aae4f84831284fbde507f768c94ba1f3d0145e50fa193d38aff0cbcf2fbd",
+      "path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
+      "title": "R_conn Vertex-Color Singlet Projection Bounded Narrow Theorem"
+    },
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
       "claim_id": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -78419,7 +78437,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 443,
+      "bounded_theorem": 444,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78428,7 +78446,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 890,
+      "bounded_theorem": 891,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78436,10 +78454,10 @@
       "open_gate": 123,
       "positive_theorem": 619
     },
-    "edge_count": 9290,
-    "leaf_count": 748,
-    "node_count": 2406,
+    "edge_count": 9291,
+    "leaf_count": 749,
+    "node_count": 2407,
     "root_count": 863,
-    "runners_with_path": 2010
+    "runners_with_path": 2011
   }
 }

@@ -15753,6 +15753,10 @@
       "to": "gravity_observable_hierarchy_note"
     },
     {
+      "from": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",
+      "to": "monopole_derived_note"
+    },
+    {
       "from": "lattice_keff_continuum_note",
       "to": "continuum_limit_note"
     },
@@ -57898,6 +57902,20 @@
       "runner_path": "scripts/lattice_3d_dense_10prop.py",
       "title": "Lattice Gravity Resolution: Ultra-Weak Field Gives Both Attraction AND 1/b"
     },
+    "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17": {
+      "claim_id": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "monopole_derived_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "887dcf39bc786804c190ec6b0eb378d198b4629f9ed8e3cacce456f7f006d091",
+      "path": "docs/LATTICE_GREEN_FUNCTION_ZERO_ARGUMENT_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py",
+      "title": "Lattice Green Function Zero-Argument Narrow Theorem"
+    },
     "lattice_keff_continuum_note": {
       "claim_id": "lattice_keff_continuum_note",
       "claim_type_author_hint": null,
@@ -78370,7 +78388,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 440,
+      "bounded_theorem": 441,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78379,7 +78397,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 887,
+      "bounded_theorem": 888,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78387,10 +78405,10 @@
       "open_gate": 123,
       "positive_theorem": 619
     },
-    "edge_count": 9288,
-    "leaf_count": 745,
-    "node_count": 2403,
+    "edge_count": 9289,
+    "leaf_count": 746,
+    "node_count": 2404,
     "root_count": 862,
-    "runners_with_path": 2007
+    "runners_with_path": 2008
   }
 }

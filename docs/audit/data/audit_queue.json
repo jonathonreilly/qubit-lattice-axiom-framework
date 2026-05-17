@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 430,
     "high": 161,
-    "leaf": 322,
+    "leaf": 323,
     "medium": 315
   },
   "cycle_break_target_count": 53,
@@ -32820,6 +32820,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "monopole_derived_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/LATTICE_GREEN_FUNCTION_ZERO_ARGUMENT_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lattice_keff_continuum_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35864,5 +35888,5 @@
     }
   ],
   "ready_count": 7,
-  "total_pending": 1228
+  "total_pending": 1229
 }

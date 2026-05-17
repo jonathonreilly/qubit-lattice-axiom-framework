@@ -1082,10 +1082,6 @@
     },
     {
       "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
-      "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
       "to": "minimal_axioms_2026-04-11"
     },
     {
@@ -21549,6 +21545,18 @@
       "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
       "to": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
     },
@@ -38471,10 +38479,9 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms_2026-05-03",
-        "staggered_dirac_realization_gate_note_2026-05-03",
         "minimal_axioms_2026-04-11"
       ],
-      "note_hash": "2dfb674c9f8755cede1bd7c4411c5fd1c2ddbb35cbbde683da5306e1b719fbd0",
+      "note_hash": "822f34fff4dcac095ecf78c3d8219bad412ecf08e5d5ce930fef4bdaaf5c7251",
       "path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module"
@@ -38645,16 +38652,16 @@
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
       ],
-      "note_hash": "cd2a98ed52c64e1262e4d1dd90e1bd47376d6ae9a06f183384eab1e6e9efb558",
+      "note_hash": "87800cb78f1db509f92c91e164c63fe029b23de119ce7348df83059d0f735f67",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
-      "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"
+      "title": "Axiom-First Reflection Positivity on the Staggered-Only and Symmetric-Canonical Wilson Subsurfaces of A_min"
     },
     "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
       "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
@@ -54539,10 +54546,10 @@
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
-      "note_hash": "6e819179b3a3647c9ab7df566af8548e23453ed30d4d602efd772cd742ee7ca0",
+      "note_hash": "93b1fd8702db324dbb02b7691b294442d57954f243e1f4b7d661d7f0b6cf1481",
       "path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
-      "title": "Left-Handed Charge Matching on the Selected-Axis Surface"
+      "title": "Left-Handed Charge Matching on the Selected-Axis Surface \u2014 Scale-Free Ratio Theorem"
     },
     "legacy_exploratory_drivers_note": {
       "claim_id": "legacy_exploratory_drivers_note",
@@ -58615,10 +58622,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "f57516d2bd0b67d05e29e7a1b22938897ec70e6a92dc5c1ce4208d49fd53085e",
+      "note_hash": "5ba7055117c13f4e88c0062a5646846b38da2e8499a1c1f11e261835cbaa35b3",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py",
-      "title": "Plaquette V=1 Picard-Fuchs ODE Note"
+      "title": "Plaquette V=1 Picard-Fuchs ODE \u2014 Finite-Runner Certificate Note"
     },
     "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06": {
       "claim_id": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
@@ -65450,6 +65457,21 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem"
     },
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
+      "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+      ],
+      "note_hash": "9e3d964e2f0679a3900c20cf552966b2c2f8bd62eaaaf443d54236c910a00362",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem"
+    },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
       "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
       "claim_type_author_hint": "bounded_theorem",
@@ -66083,16 +66105,16 @@
     },
     "su3_casimir_fundamental_theorem_note_2026-05-02": {
       "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
-      "note_hash": "085c892d5bdf3549c81dca984c39bcc6c5b6376e91c61ceed2c5483a8fe50cf3",
+      "note_hash": "d6e2848fd14e60b6bbbcb142227a43c1d10dd084190c9c8866dac72b3d8534d5",
       "path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "title": "SU(3) Quadratic Casimir on Color Fundamental Equals 4/3"
+      "title": "SU(3) Quadratic Casimir on the V_3 Fundamental Equals 4/3 \u2014 Algebraic K1\u2013K3 Theorem"
     },
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": {
       "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
@@ -72135,27 +72157,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 394,
+      "bounded_theorem": 397,
       "decoration": 1,
       "meta": 75,
       "no_go": 52,
       "none": 1527,
       "open_gate": 44,
-      "positive_theorem": 153
+      "positive_theorem": 151
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 836,
+      "bounded_theorem": 839,
       "decoration": 1,
       "meta": 75,
       "no_go": 157,
       "none": 445,
       "open_gate": 123,
-      "positive_theorem": 609
+      "positive_theorem": 607
     },
-    "edge_count": 9035,
-    "leaf_count": 630,
-    "node_count": 2246,
+    "edge_count": 9037,
+    "leaf_count": 629,
+    "node_count": 2247,
     "root_count": 761,
-    "runners_with_path": 1864
+    "runners_with_path": 1865
   }
 }

@@ -1,12 +1,23 @@
-# Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action
+# Axiom-First Reflection Positivity on the Staggered-Only and Symmetric-Canonical Wilson Subsurfaces of A_min
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair)
-**Status:** support — branch-local theorem note on A_min; runner passing; queued for independent audit after review repair.
-**Claim type:** positive_theorem
+**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair); 2026-05-17 (scope narrowing per audited_conditional repair)
+**Status:** support — branch-local bounded theorem on two named subsurfaces of A_min (staggered-only; symmetric-canonical M_W = r·d·I Wilson); the broader staggered+Wilson surface remains an open frontier.
+**Claim type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Cycle:** 2 (Route R2)
 **Runner:** `scripts/axiom_first_reflection_positivity_check.py`
 **Log:** `outputs/axiom_first_reflection_positivity_check_2026-04-29.txt`
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with repair class `scope_too_broad`, stating: *"narrow the retained claim to the staggered-only theorem plus the symmetric-canonical M_W = r·d·I Wilson subsurface, or supply a retained bridge proving det(M) ≥ 0 for the full canonical Wilson term."*
+
+This revision implements the first option. The note's load-bearing claim is now explicitly bounded to two named subsurfaces:
+
+- **Subsurface S₁ — staggered-only canonical action:** M = M_KS + m·I on `A_min` with the canonical Wilson plaquette gauge sector. (R1)–(R4) are closed-form derived from {ε, M_KS} = 0 plus the ±λ paired-eigenvalue argument.
+- **Subsurface S₂ — symmetric-canonical Wilson subsurface:** M = M_KS + M_W + m·I with the additional structural specification M_W = r·d·I (the sublattice-uniform diagonal projection of the canonical Wilson Laplacian at r = 1). (R1)–(R4) are closed-form derived via the dedicated bridge note `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`, which proves det(M) ≥ 0 configuration-by-configuration on every SU(3) background.
+
+Claims about reflection positivity on the general staggered+Wilson canonical surface (non-symmetric ε-commuting M_W) are *not* part of this note's retained scope. They are recorded as an open frontier in the Honest Status section below.
 
 ## Review-loop repair (2026-05-03)
 
@@ -58,17 +69,21 @@ The runner adds two new exhibits:
 ## Scope
 
 This note records, on the current `A_min`
-(`docs/MINIMAL_AXIOMS_2026-04-11.md`), an axiom-first proof that the
-canonical staggered-Dirac fermion action plus Wilson plaquette gauge
-action at `g_bare = 1` is reflection-positive (RP) on temporal-link
-reflection. RP is the lattice-level positivity that lets one
-reconstruct a positive Hermitian transfer matrix `T` on a finite
-physical Hilbert space `H_phys`, with reconstructed Hamiltonian
-`H = -log(T)/a_τ` bounded below.
+(`docs/MINIMAL_AXIOMS_2026-04-11.md`), an axiom-first bounded theorem
+that the canonical staggered-Dirac fermion action plus Wilson plaquette
+gauge action at `g_bare = 1` is reflection-positive (RP) on temporal-link
+reflection **on the two named subsurfaces S₁ (staggered-only) and
+S₂ (symmetric-canonical Wilson M_W = r·d·I)** of A_min. RP is the
+lattice-level positivity that lets one reconstruct a positive Hermitian
+transfer matrix `T` on a finite physical Hilbert space `H_phys`, with
+reconstructed Hamiltonian `H = -log(T)/a_τ` bounded below.
 
 After this note, the package's transfer-matrix and
-Hilbert-reconstruction language can quote a branch-local RP theorem
-on `A_min` instead of treating RP as a background assumption.
+Hilbert-reconstruction language can quote a branch-local bounded RP
+theorem on the named subsurfaces of A_min instead of treating RP as
+a background assumption. Reuse on the broader staggered+Wilson surface
+(non-symmetric ε-commuting M_W) is **not** in this note's retained scope
+and requires a separate retained bridge.
 
 ## A_min objects in use
 
@@ -158,7 +173,9 @@ so that `S = S_+ + S_- + S_∂` with `S_-` being the `Θ`-image of `S_+`.
 ## Statement
 
 Let `F` be a polynomial in the lattice fields restricted to
-`Λ_+` (i.e. all field arguments lie in `Λ_+`). Then on `A_min`:
+`Λ_+` (i.e. all field arguments lie in `Λ_+`). Then on each of the two
+named subsurfaces (S₁: staggered-only `M = M_KS + m·I`; S₂:
+symmetric-canonical Wilson `M = M_KS + r·d·I + m·I`) of `A_min`:
 
 **(R1) Reflection positivity.** The reflected expectation
 
@@ -206,7 +223,9 @@ spectrum is bounded below by `-log(λ_max(T))/a_τ`, and (R4) is the
 vacuum-subtracted version of the lattice spectrum condition.
 
 Statements (R1)–(R4) constitute reflection positivity for the
-canonical CL3-on-Z3 action on `A_min`.
+canonical CL3-on-Z3 action on `A_min` **restricted to subsurfaces
+S₁ and S₂**. They are not claimed on the broader staggered+Wilson
+surface where M_W is a general ε-commuting (non-symmetric) operator.
 
 ## Proof
 
@@ -520,42 +539,50 @@ mutually consistent on `A_min`.
 
 ## Honest status
 
-**Branch-local theorem with sector-dependent support level.**
+**Bounded theorem on two named subsurfaces.**
 
-- (R1)–(R4) on the **staggered-only** sector (M = M_KS + mI) are
-  proved on `A_min` by Steps 1–3 with closed-form derivation of
-  det(M_KS + mI) ≥ 0 from the {ε, M_KS} = 0 anticommutation
-  (verified by E5) and the ±λ paired-eigenvalue argument (14a–b).
-- (R1)–(R4) on the **staggered + Wilson** sector (M = M_KS + M_W + mI)
-  are supported by the same factorisation identities (7) and (10),
-  but the additional input det(M) ≥ 0 is **runner-verified by E6
-  across the audited parameter range**, not derived in closed form.
-  Adding the Wilson term breaks the {ε, M} anticommutation (14c),
-  so the staggered ±λ pairing argument does not extend.
+- (R1)–(R4) on subsurface **S₁ — staggered-only** (M = M_KS + mI) are
+  closed-form derived on `A_min` by Steps 1–3 using det(M_KS + mI) ≥ 0
+  from the {ε, M_KS} = 0 anticommutation (verified by E5) and the ±λ
+  paired-eigenvalue argument (14a–b).
+- (R1)–(R4) on subsurface **S₂ — symmetric-canonical Wilson**
+  (M = M_KS + r·d·I + mI with the M_W = r·d·I diagonal-projection
+  specification at r = 1) are closed-form derived via the dedicated
+  bridge note
+  `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`,
+  which proves det(M) = ∏(α² + σᵢ²) > 0 configuration-by-configuration
+  on every SU(3) background (α = r·d + m; σᵢ the singular values of
+  the off-diagonal staggered-hop block).
 
-**What this rules out.**
+Exhibits E5 and E6 remain in force as additional numerical evidence
+beyond the closed-form derivations, at a smaller lattice size and under
+a different M_W discretisation choice in the runner.
 
-- The note no longer claims a single closed-form derivation of
-  det(M) ≥ 0 for the full canonical staggered+Wilson operator on
-  `A_min`. That gap is honest and recorded.
-- Downstream notes that quote "RP holds on `A_min`" can cite this
-  note for the staggered-only sector with full theorem support;
-  the staggered+Wilson extension carries the runner-supported (not
-  derived) qualifier.
+**Open frontier (out of retained scope).**
+
+- (R1)–(R4) on the **broader staggered+Wilson surface** where M_W is a
+  general ε-commuting (non-symmetric) operator: the closed-form bridge
+  argument of subsurface S₂ does not extend (the two sublattice diagonal
+  blocks are unitarily equivalent but not equal), and the staggered
+  ±λ pairing argument of subsurface S₁ does not extend (adding M_W
+  breaks the {ε, M} anticommutation). RP on this broader surface
+  remains an open repair target and is not claimed by this note.
+- Closed-form derivation of det(M_KS + M_W + mI) ≥ 0 on the broader
+  Wilson surface. The standard literature (Sharatchandra–Thun–Weisz,
+  Menotti–Pelissetto) provides RP for staggered fermions on `A_min`-
+  compatible surfaces; extending the closed-form argument to the
+  general staggered+Wilson surface with axiom-first input only remains
+  the named open repair target of the bridge note.
 
 **Not in scope.**
 
 - Continuum reflection positivity / OS reconstruction in the
   Wightman sense. We prove the lattice analogue, which is what
   `A_min` allows.
-- A closed-form derivation of det(M_KS + M_W + mI) ≥ 0 on `A_min`.
-  The standard literature (Sharatchandra–Thun–Weisz, Menotti–
-  Pelissetto) provides RP for staggered fermions; extending the
-  same argument to staggered+Wilson with axiom-first input only
-  remains an open repair target.
 - Publication retention or effective-status elevation in the canonical
   paper package. The independent audit lane owns that decision after
-  review-loop prepares the source surface.
+  the scope-narrowing repair documented in §"Scope narrowing
+  (2026-05-17 audited_conditional repair)".
 
 ## Citations
 

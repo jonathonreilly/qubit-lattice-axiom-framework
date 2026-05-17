@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 1073,
     "high": 58,
-    "leaf": 821,
+    "leaf": 822,
     "medium": 294
   },
   "flagship_signal_used": false,
-  "node_count": 2246,
+  "node_count": 2247,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -155,16 +155,16 @@
       "transitive_descendants": 799
     },
     {
-      "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
-      "criticality": "critical",
-      "load_bearing_score": 27.255,
-      "transitive_descendants": 863
-    },
-    {
       "claim_id": "cl3_sm_embedding_theorem",
       "criticality": "critical",
       "load_bearing_score": 27.156,
       "transitive_descendants": 806
+    },
+    {
+      "claim_id": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
+      "criticality": "critical",
+      "load_bearing_score": 27.144,
+      "transitive_descendants": 799
     }
   ]
 }

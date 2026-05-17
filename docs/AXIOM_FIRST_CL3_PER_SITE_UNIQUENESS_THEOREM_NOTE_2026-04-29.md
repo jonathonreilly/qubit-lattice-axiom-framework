@@ -81,7 +81,18 @@ dim = 2 (notably the spin-statistics chain) are unaffected; consumers
 that assume "the unique 2-dim Cl(3) irrep" need to be aware of the
 chirality choice.
 
-## Review-loop repair (2026-05-03 second pass - A3 bridge gate)
+## Historical context (2026-05-03 second pass — A3 bridge gate; superseded by 2026-05-08 narrowing)
+
+> **Status note (2026-05-17 audited_conditional repair):** This subsection
+> is retained for historical context only. It describes a U4 closure path
+> via the staggered-Dirac realization gate that was *moved out of this
+> note's scope* by the 2026-05-08 narrowing to U1–U3 (A1-only). The
+> staggered-Dirac gate is therefore **not** a one-hop cited authority of
+> the present A1-only audit packet. All references to
+> `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` and
+> `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` below
+> appear backticked-only as non-load-bearing metadata; see the explicit
+> citation-graph statement in §"Audit dependency scoping (2026-05-17)".
 
 The 2026-05-03 review follow-up identified a remaining scope gate:
 U4's "one-Grassmann-pair staggered-fermion normalization" used to
@@ -92,39 +103,27 @@ minimal-input surface
 places the staggered/Grassmann realization outside the A1+A2 primitive
 kernel.
 
-The repair: cite the **open-gate** authority for the staggered-Dirac
-realization rather than treat A3 as a primitive input.
+The historical repair (now superseded): cite the open-gate authority
+for the staggered-Dirac realization rather than treat A3 as a primitive
+input. The historical citation target was
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (backticked here
+as non-load-bearing metadata under the 2026-05-08 narrowed scope).
 
-**Cited authority:**
-[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-is the open-gate authority for the staggered-Dirac/Grassmann
-realization on A1+A2. It explicitly enumerates the closure routes
-that, when one lands as a positive theorem and clears the independent
-audit lane, will provide the Grassmann/Fock per-site bridge from the
-minimal-input surface.
-
-**Status of U4 under this scoping:**
+**Status of U4 under the 2026-05-08 narrowing:**
 - **U2, U3** (the abstract Cl(3) representation classification with
   chirality split) load-bear on A1 only and remain unconditional.
-- **U4** (per-site Hilbert dim = 2 on the **physical** lattice) is
-  now explicitly **conditional on the staggered-Dirac realization
-  gate**. Until the gate closes (a positive theorem deriving the
-  one-Grassmann-pair Fock structure from A1+A2 alone), U4 is a
-  bounded/conditional statement that "**if** A3 (one Grassmann pair
-  per site) is admitted as the physical-lattice realization, **then**
-  per-site Hilbert dim = 2 follows from U2's chirality-summand
-  dim = 2."
+- **U4** (per-site Hilbert dim = 2 on the **physical** lattice) has been
+  moved out of this note's audited scope as of the 2026-05-08 narrowing;
+  the A3-bridge content is now carried by substep 1 of the staggered-Dirac
+  realization gate
+  (`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`)
+  rather than by this note. That citation appears backticked-only here as
+  non-load-bearing metadata.
 
-This conditional-on-open-gate status is the honest scope:
-- The chirality-aware U2/U3 algebraic content is solid (A1-only).
-- The physical bridge U4 awaits open-gate closure.
-- Downstream consumers (spin-statistics chain, Pauli exclusion, etc.)
-  inherit this conditional dependency until the gate closes positively
-  and the independent audit lane validates the dependency chain.
-
-The runner still PASS=6/6 on the algebraic content; the open-gate
-dependency does not affect runner-level verification, only the
-publication-facing retention status.
+The runner still PASS=6/6 on the A1-only U1–U3 algebraic content; the
+out-of-scope U4 references do not affect runner-level verification of
+the audited claim or the publication-facing retention status of this
+A1-only packet.
 
 ## Scope
 
@@ -397,6 +396,29 @@ carried by substep 1 of the staggered-Dirac realization gate.
 ## Load-bearing Dependencies
 
 - A_min: [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md)
+
+## Audit dependency scoping (2026-05-17)
+
+Per the 2026-05-08 narrowing of this note to A1-only U1–U3 content, and
+the 2026-05-10 `audited_conditional` repair instruction
+(*"remove the out-of-scope staggered-Dirac gate citation from this
+A1-only audit packet or mark it as non-load-bearing metadata outside
+the one-hop cited-authority set"*), the following notes appear in
+this file as **non-load-bearing metadata only**, backticked rather
+than markdown-linked so the citation graph parser does not register
+them as one-hop dependencies of the A1-only U1–U3 audit packet:
+
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — historical
+  context for the now-out-of-scope U4 closure path.
+- `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` —
+  carrier of the out-of-scope U4 / A3-bridge content; consumed by
+  downstream notes (spin-statistics, RP, cluster decomposition, CPT)
+  directly, not via this note.
+
+The single load-bearing one-hop dependency of the U1–U3 A1-only packet
+is `MINIMAL_AXIOMS_2026-04-11.md` (and its successor surface
+`MINIMAL_AXIOMS_2026-05-03.md` cited above in the historical-context
+section).
 
 ## Citations
 

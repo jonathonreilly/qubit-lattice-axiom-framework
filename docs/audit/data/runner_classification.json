@@ -18720,6 +18720,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py"
     },
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py"
+    },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
@@ -23730,6 +23742,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py": {
@@ -48855,11 +48882,11 @@
       "A": 165,
       "B": 183,
       "C": 698,
-      "D": 281,
+      "D": 282,
       "none": 419
     },
-    "runners_classified": 1746,
+    "runners_classified": 1747,
     "runners_with_C": 893,
-    "runners_with_D": 514
+    "runners_with_D": 515
   }
 }

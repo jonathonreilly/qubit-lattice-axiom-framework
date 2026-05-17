@@ -8953,73 +8953,45 @@
       "verdict_rationale": null
     },
     "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-16T03:06:59.553008+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-04-11": null,
-          "minimal_axioms_2026-05-03": null,
-          "staggered_dirac_realization_gate_note_2026-05-03": "Canonical open-gate parent identity for the unresolved staggered-Dirac realization derivation from A1 (Cl(3)) plus A2 (Z^3), including Grassmann realization, staggered kinetic structure, BZ-corner doublers, and the three-generation physical-species bridge."
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-04-11": "meta",
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-04-11": "meta",
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
-        },
-        "deps": [
-          "minimal_axioms_2026-04-11",
-          "minimal_axioms_2026-05-03",
-          "staggered_dirac_realization_gate_note_2026-05-03"
-        ],
-        "load_bearing_score": 19.118,
-        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
-        "transitive_descendants": 785
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260516-030634-3e88c9ef-axiom_first_cl3_per_site-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The in-scope algebraic U1-U3 argument closes on A1 and standard finite-dimensional representation theory. The restricted packet nevertheless includes an open-gate cited authority for the out-of-scope U4 physical Hilbert-space bridge, so the full cited-authority chain is not retained-grade under the rubric.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "claim_scope": "A1-only classification of complex finite-dimensional representations of real Cl(3,0): two non-isomorphic faithful 2-dimensional chirality irreps and direct-sum decomposition into them.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-16T03:06:59.553008+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_axioms_2026-05-03",
-        "staggered_dirac_realization_gate_note_2026-05-03",
         "minimal_axioms_2026-04-11"
       ],
       "direct_in_degree": 19,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 19.195,
-      "load_bearing_step": "The central pseudoscalar splits the complexification as Cl(3) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands indexed by \u03c9 = \u00b1i, so finite-dimensional complex representations decompose into copies of the two 2-dimensional chirality irreps.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "2dfb674c9f8755cede1bd7c4411c5fd1c2ddbb35cbbde683da5306e1b719fbd0",
+      "note_hash": "822f34fff4dcac095ecf78c3d8219bad412ecf08e5d5ce930fef4bdaaf5c7251",
       "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: remove the out-of-scope staggered-Dirac gate citation from this A1-only audit packet or mark it as non-load-bearing metadata outside the one-hop cited-authority set, then re-audit U1-U3 alone.",
-      "open_dependency_paths": [
-        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T20:44:09.876323+00:00",
@@ -9212,19 +9184,78 @@
             "total_pass": 6
           },
           "verdict_rationale": "The algebraic chirality-aware repair is coherent: Cl(3,0) as a real algebra, the central pseudoscalar split, and the two 2-dimensional complex irreps support U1-U3. The runner checks are algebraic exhibits and sanity checks, not first-principles physical closure, and they do not establish the staggered/Grassmann realization. Because U4 imports the open staggered-Dirac realization gate and cites an open_gate authority, the full per-site physical Hilbert-dimension conclusion is conditional rather than clean."
+        },
+        {
+          "archived_at": "2026-05-17T11:49:51.430374+00:00",
+          "archived_for_note_hash": "2dfb674c9f8755cede1bd7c4411c5fd1c2ddbb35cbbde683da5306e1b719fbd0",
+          "audit_date": "2026-05-16T03:06:59.553008+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-04-11": null,
+              "minimal_axioms_2026-05-03": null,
+              "staggered_dirac_realization_gate_note_2026-05-03": "Canonical open-gate parent identity for the unresolved staggered-Dirac realization derivation from A1 (Cl(3)) plus A2 (Z^3), including Grassmann realization, staggered kinetic structure, BZ-corner doublers, and the three-generation physical-species bridge."
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-04-11": "meta",
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-04-11": "meta",
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+            },
+            "deps": [
+              "minimal_axioms_2026-04-11",
+              "minimal_axioms_2026-05-03",
+              "staggered_dirac_realization_gate_note_2026-05-03"
+            ],
+            "load_bearing_score": 19.118,
+            "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+            "transitive_descendants": 785
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260516-030634-3e88c9ef-axiom_first_cl3_per_site-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The in-scope algebraic U1-U3 argument closes on A1 and standard finite-dimensional representation theory. The restricted packet nevertheless includes an open-gate cited authority for the out-of-scope U4 physical Hilbert-space bridge, so the full cited-authority chain is not retained-grade under the rubric.",
+          "claim_scope": "A1-only classification of complex finite-dimensional representations of real Cl(3,0): two non-isomorphic faithful 2-dimensional chirality irreps and direct-sum decomposition into them.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-16T03:06:59.553008+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The central pseudoscalar splits the complexification as Cl(3) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands indexed by \u03c9 = \u00b1i, so finite-dimensional complex representations decompose into copies of the two 2-dimensional chirality irreps.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: remove the out-of-scope staggered-Dirac gate citation from this A1-only audit packet or mark it as non-load-bearing metadata outside the one-hop cited-authority set, then re-audit U1-U3 alone.",
+          "open_dependency_paths": [
+            "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 6
+          },
+          "verdict_rationale": "The load-bearing mathematics is a genuine algebraic closure: Cl(3,0) is identified as M_2(C) over R, its complexification splits by the central pseudoscalar, and Wedderburn/Schur give exactly the two 2-dimensional chirality irreps and semisimple decomposition. The runner source performs algebraic matrix checks and illustrative sanity checks consistent with the note, though it does not itself prove the full classification. Under the audit rubric, however, the packet cites the staggered-Dirac realization gate, which is explicitly open, so retained-grade closure cannot propagate through the full cited packet even though U4 is declared out of scope."
         }
       ],
       "runner_check_breakdown": {
-        "A": 6,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 6
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
       "transitive_descendants": 828,
-      "verdict_rationale": "The load-bearing mathematics is a genuine algebraic closure: Cl(3,0) is identified as M_2(C) over R, its complexification splits by the central pseudoscalar, and Wedderburn/Schur give exactly the two 2-dimensional chirality irreps and semisimple decomposition. The runner source performs algebraic matrix checks and illustrative sanity checks consistent with the note, though it does not itself prove the full classification. Under the audit rubric, however, the packet cites the staggered-Dirac realization gate, which is explicitly open, so retained-grade closure cannot propagate through the full cited packet even though U4 is declared out of scope."
+      "verdict_rationale": null
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
       "audit_date": "2026-05-10T12:18:49.394028+00:00",
@@ -10808,41 +10839,24 @@
       "verdict_rationale": null
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-16T03:13:59.472009+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": null
-        },
-        "dep_claim_type": {
-          "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": "unaudited"
-        },
-        "deps": [
-          "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-        ],
-        "load_bearing_score": 25.096,
-        "runner_hash": "e8558397746eb15359e68835c186f5f2d7af9a7bcb406fe5aa94a2597bc29aa2",
-        "transitive_descendants": 773
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260516-031243-bd424a2b-axiom_first_reflection_p-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The staggered-only determinant argument closes algebraically, but the full staggered+Wilson claim imports determinant positivity from an unaudited bridge that is explicitly limited to a symmetric-canonical subsurface. The OS/STW/MP factorisation identities and the full Wilson-sector positivity are not closed by the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "claim_scope": "Reflection positivity R1-R4 for the canonical staggered action plus Wilson plaquette, with the staggered+Wilson sector relying on determinant positivity only closed on the symmetric-canonical M_W = r*d*I subsurface.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-16T03:13:59.472009+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -10850,21 +10864,19 @@
         "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
       ],
       "direct_in_degree": 31,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 25.165,
-      "load_bearing_step": "For positivity of the combined measure, the fermion determinant must also be non-negative configuration-by-configuration, with Step 3a/bridge supplying det(M_KS + M_W + mI) >= 0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "cd2a98ed52c64e1262e4d1dd90e1bd47376d6ae9a06f183384eab1e6e9efb558",
+      "note_hash": "87800cb78f1db509f92c91e164c63fe029b23de119ce7348df83059d0f735f67",
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: narrow the retained claim to the staggered-only theorem plus the symmetric-canonical M_W = r*d*I Wilson subsurface, or supply a retained bridge proving det(M) >= 0 for the full canonical Wilson term.",
-      "open_dependency_paths": [
-        "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T16:08:20.768716+00:00",
@@ -11151,19 +11163,70 @@
             "total_pass": 6
           },
           "verdict_rationale": "Issue: the full canonical staggered+Wilson RP claim depends on external factorisation theorems and on det(M) >= 0 for the Wilson-augmented operator, but the audit packet supplies no direct dependencies and the runner only gives finite structural exhibits. Why this blocks: CL3 retained-grade closure requires proof-level bridge inputs, not numerical spot checks or uncited theorem imports, for configuration-by-configuration positivity. Repair target: add and audit direct dependency edges for the OS/STW/Menotti factorisation hypotheses and the staggered+Wilson determinant-positivity bridge, or split the claim so only the staggered-only sector is theorem-grade. Claim boundary until fixed: clean at most as a staggered-only theorem with standard RP factorisation dependencies supplied; the staggered+Wilson action remains conditional."
+        },
+        {
+          "archived_at": "2026-05-17T11:49:51.430584+00:00",
+          "archived_for_note_hash": "cd2a98ed52c64e1262e4d1dd90e1bd47376d6ae9a06f183384eab1e6e9efb558",
+          "audit_date": "2026-05-16T03:13:59.472009+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": null
+            },
+            "dep_claim_type": {
+              "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05": "unaudited"
+            },
+            "deps": [
+              "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+            ],
+            "load_bearing_score": 25.096,
+            "runner_hash": "e8558397746eb15359e68835c186f5f2d7af9a7bcb406fe5aa94a2597bc29aa2",
+            "transitive_descendants": 773
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260516-031243-bd424a2b-axiom_first_reflection_p-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The staggered-only determinant argument closes algebraically, but the full staggered+Wilson claim imports determinant positivity from an unaudited bridge that is explicitly limited to a symmetric-canonical subsurface. The OS/STW/MP factorisation identities and the full Wilson-sector positivity are not closed by the restricted packet.",
+          "claim_scope": "Reflection positivity R1-R4 for the canonical staggered action plus Wilson plaquette, with the staggered+Wilson sector relying on determinant positivity only closed on the symmetric-canonical M_W = r*d*I subsurface.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-16T03:13:59.472009+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "For positivity of the combined measure, the fermion determinant must also be non-negative configuration-by-configuration, with Step 3a/bridge supplying det(M_KS + M_W + mI) >= 0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad: narrow the retained claim to the staggered-only theorem plus the symmetric-canonical M_W = r*d*I Wilson subsurface, or supply a retained bridge proving det(M) >= 0 for the full canonical Wilson term.",
+          "open_dependency_paths": [
+            "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 1,
+            "B": 0,
+            "C": 5,
+            "D": 0,
+            "total_pass": 6
+          },
+          "verdict_rationale": "The cited bridge authority is marked unaudited and itself states that it proves only the symmetric-canonical M_W = r*d*I case, leaving broader Wilson-term cases open. The parent note\u2019s own honest-status section also concedes that the full staggered+Wilson extension is runner-supported rather than closed-form. The runner performs finite structural/toy checks and selected determinant tests, but it does not establish configuration-by-configuration SU(3) determinant positivity for the broader claimed surface."
         }
       ],
       "runner_check_breakdown": {
-        "A": 1,
+        "A": 0,
         "B": 0,
-        "C": 5,
+        "C": 0,
         "D": 0,
-        "total_pass": 6
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
-      "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action",
+      "title": "Axiom-First Reflection Positivity on the Staggered-Only and Symmetric-Canonical Wilson Subsurfaces of A_min",
       "transitive_descendants": 811,
-      "verdict_rationale": "The cited bridge authority is marked unaudited and itself states that it proves only the symmetric-canonical M_W = r*d*I case, leaving broader Wilson-term cases open. The parent note\u2019s own honest-status section also concedes that the full staggered+Wilson extension is runner-supported rather than closed-form. The runner performs finite structural/toy checks and selected determinant tests, but it does not establish configuration-by-configuration SU(3) determinant positivity for the broader claimed surface."
+      "verdict_rationale": null
     },
     "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03": {
       "audit_date": null,
@@ -12656,8 +12719,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "2c5a1d9cc721c80e1829ba38f42deb7f3ce4f1aa3214e9a33f2262cf8add0461",
       "note_path": "docs/BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md",
       "notes_for_re_audit_if_any": null,
@@ -28992,12 +29055,12 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "retained",
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 8.085,
+      "load_bearing_score": 8.807,
       "load_bearing_step": "In Cl(3,0) tensor_R C, e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 are complete central orthogonal idempotents, giving Cl(3,0) tensor_R C isomorphic to M_2(C) direct-sum M_2(C).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -29016,7 +29079,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
-      "transitive_descendants": 5,
+      "transitive_descendants": 6,
       "verdict_rationale": "The note remains inside abstract Clifford algebra and standard finite-dimensional representation theory. K1-K4 are algebraic consequences of the defining relations, the Pauli realisation, the central idempotent split, and the standard module theory of M_2(C). The runner provides exact symbolic A-class checks and does not import a physical bridge, comparator, tuned scale, or sector chosen to match an observation."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -29066,7 +29129,7 @@
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 6.585,
+      "load_bearing_score": 7.0,
       "load_bearing_step": "By the sibling narrow theorem (K3), Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), so Artin-Wedderburn gives exactly two irreducible complex modules, each of dimension 2.",
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_no_go",
@@ -29085,7 +29148,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
       "title": "Cl(3) Faithful Irrep Complex Dimension Two Narrow Theorem",
-      "transitive_descendants": 2,
+      "transitive_descendants": 3,
       "verdict_rationale": "The scoped theorem closes as an abstract algebra statement from the retained split Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C) plus Artin-Wedderburn and complete reducibility. The runner is only corroborative and partly hard-codes representative Pauli blocks, but the proof does not rely on the runner to derive the classification. No physical observable, lattice Hilbert-space identification, or sector-selection bridge is claimed inside this note."
     },
     "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10": {
@@ -114077,8 +114140,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "For H=aI+bC+bbar C^2, the canonical projectors give E_+(H)=3a^2 and E_perp(H)=6|b|^2; the stated equal-weight functional log E_+ + log E_perp at fixed total has E_+=E_perp, equivalently a^2=2|b|^2 and kappa=2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "855be045ef15718e89dc5a079ed8aaa82c14b8ca893f30add6af8735941d282f",
       "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Re-audit if cited as selecting the canonical Koide weighting, closing F1-vs-F3, or deriving physical charged-lepton kappa=2; those are outside this clean algebraic scope.",
@@ -129351,49 +129414,24 @@
       "verdict_rationale": "The claim is bounded to the tested weak-field lattice pocket and does not assert an asymptotic or universal lattice theorem. The runner does not hard-code the exponent or fit; it computes the observables, applies the stated retention criteria, and fits the retained rows, reproducing 1.0467 * N^(-0.222) with R^2 = 0.9683. Residual risk is model-level and finite-window only, which is already part of the scoped bounded claim."
     },
     "left_handed_charge_matching_note": {
-      "audit_date": "2026-05-12T00:26:35.698034+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 28.002,
-        "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
-        "transitive_descendants": 724
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-left_handed_charge_match-002",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The structural ratio closes from the cited retained graph-first and narrow-ratio authorities. The absolute normalization (+1/3, -1) does not close as a derived result because \u03b2 = -1 is an explicit convention imported by the source note.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "left_handed_charge_matching_note",
-      "claim_scope": "Convention-normalized eigenvalue pattern (+1/3, -1) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with SM hypercharge identification out of scope.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (audit-pipeline retag from author-hint",
-      "claim_type_last_reviewed": "2026-05-12T00:26:35.698034+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -129403,18 +129441,18 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 37,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 28.298,
-      "load_bearing_step": "The eigenvalue ratio 1:(-3) follows from 6\u03b1 + 2\u03b2 = 0, and the absolute pattern (+1/3, -1) is obtained by the explicit convention \u03b2 = -1.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "6e819179b3a3647c9ab7df566af8548e23453ed30d4d602efd772cd742ee7ca0",
+      "note_hash": "93b1fd8702db324dbb02b7691b294442d57954f243e1f4b7d661d7f0b6cf1481",
       "note_path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained-grade authority deriving the absolute normalization \u03b2 = -1 from nonconventional premises, or narrow this row to the scale-free 1:(-3) ratio only.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -129637,19 +129675,76 @@
             "total_pass": 111
           },
           "verdict_rationale": "The runner genuinely constructs the graph operators, verifies the selected-axis weak su(2), residual swap, 6+2 split, commutant dimensions, su(3) closure, and the traceless (+1/3, -1) operator. However, the exact scale is fixed by a convention rather than derived, and one cited authority, LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md, is marked unaudited and explicitly excludes specific eigenvalues from its closed scope. The safe algebraic ratio 1:(-3) is supported, but the full stated exact-pattern claim remains conditional on normalization governance."
+        },
+        {
+          "archived_at": "2026-05-17T11:49:51.433244+00:00",
+          "archived_for_note_hash": "6e819179b3a3647c9ab7df566af8548e23453ed30d4d602efd772cd742ee7ca0",
+          "audit_date": "2026-05-12T00:26:35.698034+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 28.002,
+            "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+            "transitive_descendants": 724
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-left_handed_charge_match-002",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The structural ratio closes from the cited retained graph-first and narrow-ratio authorities. The absolute normalization (+1/3, -1) does not close as a derived result because \u03b2 = -1 is an explicit convention imported by the source note.",
+          "claim_scope": "Convention-normalized eigenvalue pattern (+1/3, -1) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with SM hypercharge identification out of scope.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-12T00:26:35.698034+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The eigenvalue ratio 1:(-3) follows from 6\u03b1 + 2\u03b2 = 0, and the absolute pattern (+1/3, -1) is obtained by the explicit convention \u03b2 = -1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained-grade authority deriving the absolute normalization \u03b2 = -1 from nonconventional premises, or narrow this row to the scale-free 1:(-3) ratio only.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 111,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 111
+          },
+          "verdict_rationale": "The runner genuinely checks the graph-first selected-axis construction, the 6+2 split, tracelessness, and the displayed convention-normalized eigenvalues. However, the exact eigenvalue pattern depends on the explicit \u03b2 = -1 normalization convention, which the note itself says is not derived within the restricted authority chain. Thus the ratio result is clean algebra over retained inputs, but the exact-pattern claim remains conditional on accepting that convention or supplying a separate retained normalization theorem."
         }
       ],
       "runner_check_breakdown": {
-        "A": 111,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 111
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
-      "title": "Left-Handed Charge Matching on the Selected-Axis Surface",
+      "title": "Left-Handed Charge Matching on the Selected-Axis Surface \u2014 Scale-Free Ratio Theorem",
       "transitive_descendants": 889,
-      "verdict_rationale": "The runner genuinely checks the graph-first selected-axis construction, the 6+2 split, tracelessness, and the displayed convention-normalized eigenvalues. However, the exact eigenvalue pattern depends on the explicit \u03b2 = -1 normalization convention, which the note itself says is not derived within the restricted authority chain. Thus the ratio result is clean algebra over retained inputs, but the exact-pattern claim remains conditional on accepting that convention or supplying a separate retained normalization theorem."
+      "verdict_rationale": null
     },
     "legacy_exploratory_drivers_note": {
       "audit_date": null,
@@ -141402,7 +141497,7 @@
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 8.085,
+      "load_bearing_score": 8.307,
       "load_bearing_step": "Using {gamma_mu, gamma_nu}=2 delta_mu_nu, (-i a D_naive(k))^2 = (sum_mu sin^2(k_mu a)) I, so D_naive(k)=0 iff sin(k_mu a)=0 for every mu.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -141421,7 +141516,7 @@
       },
       "runner_path": "scripts/frontier_naive_lattice_fermion_two_power_d_species_count_narrow.py",
       "title": "Naive Lattice Fermion 2^d Species Count \u2014 Narrow Theorem",
-      "transitive_descendants": 5,
+      "transitive_descendants": 6,
       "verdict_rationale": "The note cleanly proves the narrow naive-operator zero-locus theorem and the d=4 count 16. Its boundary section explicitly excludes regulator-independence, Nielsen-Ninomiya-as-universal-2^d, CL3 hierarchy use, and physical-framework bridge claims. The Wilson/staggered runner checks are non-load-bearing context and do not broaden the audited claim."
     },
     "native_gauge_closure_note": {
@@ -157379,100 +157474,41 @@
       "verdict_rationale": null
     },
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05": {
-      "audit_date": "2026-05-11T11:54:53.275321+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 12.2,
-        "runner_hash": "fe578cf636503fc3f3dd37ce8eb5bb11e17ca2edf3cf3deacdc5bf2f3a787ab6",
-        "transitive_descendants": 415
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-judicial-20260511-plaquette-v1-pf",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The second audit is the correct reading of the current source row. The finite runner closes a bounded symbolic/numerical certificate, but the source claim still asserts the exact Picard-Fuchs equation and Frobenius-branch identification for the physical SU(3) integral. That stronger statement requires a retained all-order proof companion or a narrowed row boundary before it can be clean. The load-bearing step remains class A because the disputed closure is an algebraic/symbolic ODE identity and branch-identification proof, not a first-principles numerical compute claim.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
-      "claim_scope": "The stated V=1 single-plaquette Picard-Fuchs ODE and beta=6 plaquette value for the physical SU(3) integral, excluding thermodynamic-limit or downstream plaquette-status claims.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T11:54:53.275321+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-11T11:34:55.250339+00:00",
-          "auditor": "codex-audit-loop-019e16d1-3622-7a50-909d-37a9dd0a3139",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded verification that the displayed third-order ODE annihilates the Bessel-determinant Taylor expansion through the stated truncation window and numerically matches direct Weyl integration at beta in {2,4,6,8,10}, including <P>_1(6)=0.422531739650.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-11T11:54:52.443732+00:00",
-          "auditor": "codex-audit-loop-019e16d1-d127-77a2-8135-51e4997b447b",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "The stated V=1 single-plaquette Picard-Fuchs ODE and beta=6 plaquette value for the physical SU(3) integral, excluding thermodynamic-limit or downstream plaquette-status claims.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-11T11:54:53.275321+00:00",
-          "auditor": "codex-audit-loop-judicial-20260511-plaquette-v1-pf",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "The stated V=1 single-plaquette Picard-Fuchs ODE and beta=6 plaquette value for the physical SU(3) integral, excluding thermodynamic-limit or downstream plaquette-status claims.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "The first audit narrowed the row to the finite runner certificate and therefore granted clean status to a scope smaller than the source row's physical-integral ODE claim.",
-          "independence": "judicial_review",
-          "judgment_rationale": "The second audit is the correct reading of the current source row. The finite runner closes a bounded symbolic/numerical certificate, but the source claim still asserts the exact Picard-Fuchs equation and Frobenius-branch identification for the physical SU(3) integral. That stronger statement requires a retained all-order proof companion or a narrowed row boundary before it can be clean. The load-bearing step remains class A because the disputed closure is an algebraic/symbolic ODE identity and branch-identification proof, not a first-principles numerical compute claim.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": {
-            "A": 2,
-            "B": 0,
-            "C": 2,
-            "D": 0,
-            "total_pass": 4
-          },
-          "second_auditor_error": "No material error; the second audit correctly marks the row conditional while preserving bounded_theorem and class A.",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 7,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 13.169,
-      "load_bearing_step": "For the single-plaquette SU(3) Wilson integral J(beta), the displayed third-order Picard-Fuchs equation holds and its analytic Frobenius solution gives the physical integral.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "f57516d2bd0b67d05e29e7a1b22938897ec70e6a92dc5c1ce4208d49fd53085e",
+      "note_hash": "5ba7055117c13f4e88c0062a5646846b38da2e8499a1c1f11e261835cbaa35b3",
       "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: re-audit as clean only after narrowing this row to the finite runner certificate or after retaining an all-order proof/dependency that closes the exact physical-integral Picard-Fuchs and Frobenius-branch claim.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -157596,19 +157632,110 @@
             "total_pass": 4
           },
           "verdict_rationale": "Issue: the exact Picard-Fuchs ODE and Frobenius-branch identification are promoted from truncated series substitution plus finite numerical agreement. Why this blocks: a hostile specialist could accept the beta=6 quadrature and spot checks while rejecting the all-order ODE theorem from the provided packet. Repair target: add an all-order derivation or certificate, such as creative telescoping from the Weyl integral or a proved Bessel-determinant-to-ODE certificate with initial-condition uniqueness. Claim boundary until fixed: the note may safely report the runner's finite residual check, ODE/Weyl numerical agreement at the listed beta values, and the V=1 beta=6 numerical plaquette value."
+        },
+        {
+          "archived_at": "2026-05-17T11:49:51.433985+00:00",
+          "archived_for_note_hash": "f57516d2bd0b67d05e29e7a1b22938897ec70e6a92dc5c1ce4208d49fd53085e",
+          "audit_date": "2026-05-11T11:54:53.275321+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 12.2,
+            "runner_hash": "fe578cf636503fc3f3dd37ce8eb5bb11e17ca2edf3cf3deacdc5bf2f3a787ab6",
+            "transitive_descendants": 415
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-judicial-20260511-plaquette-v1-pf",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The second audit is the correct reading of the current source row. The finite runner closes a bounded symbolic/numerical certificate, but the source claim still asserts the exact Picard-Fuchs equation and Frobenius-branch identification for the physical SU(3) integral. That stronger statement requires a retained all-order proof companion or a narrowed row boundary before it can be clean. The load-bearing step remains class A because the disputed closure is an algebraic/symbolic ODE identity and branch-identification proof, not a first-principles numerical compute claim.",
+          "claim_scope": "The stated V=1 single-plaquette Picard-Fuchs ODE and beta=6 plaquette value for the physical SU(3) integral, excluding thermodynamic-limit or downstream plaquette-status claims.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T11:54:53.275321+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-11T11:34:55.250339+00:00",
+              "auditor": "codex-audit-loop-019e16d1-3622-7a50-909d-37a9dd0a3139",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Bounded verification that the displayed third-order ODE annihilates the Bessel-determinant Taylor expansion through the stated truncation window and numerically matches direct Weyl integration at beta in {2,4,6,8,10}, including <P>_1(6)=0.422531739650.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-11T11:54:52.443732+00:00",
+              "auditor": "codex-audit-loop-019e16d1-d127-77a2-8135-51e4997b447b",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "The stated V=1 single-plaquette Picard-Fuchs ODE and beta=6 plaquette value for the physical SU(3) integral, excluding thermodynamic-limit or downstream plaquette-status claims.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-11T11:54:53.275321+00:00",
+              "auditor": "codex-audit-loop-judicial-20260511-plaquette-v1-pf",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "The stated V=1 single-plaquette Picard-Fuchs ODE and beta=6 plaquette value for the physical SU(3) integral, excluding thermodynamic-limit or downstream plaquette-status claims.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "The first audit narrowed the row to the finite runner certificate and therefore granted clean status to a scope smaller than the source row's physical-integral ODE claim.",
+              "independence": "judicial_review",
+              "judgment_rationale": "The second audit is the correct reading of the current source row. The finite runner closes a bounded symbolic/numerical certificate, but the source claim still asserts the exact Picard-Fuchs equation and Frobenius-branch identification for the physical SU(3) integral. That stronger statement requires a retained all-order proof companion or a narrowed row boundary before it can be clean. The load-bearing step remains class A because the disputed closure is an algebraic/symbolic ODE identity and branch-identification proof, not a first-principles numerical compute claim.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": {
+                "A": 2,
+                "B": 0,
+                "C": 2,
+                "D": 0,
+                "total_pass": 4
+              },
+              "second_auditor_error": "No material error; the second audit correctly marks the row conditional while preserving bounded_theorem and class A.",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "For the single-plaquette SU(3) Wilson integral J(beta), the displayed third-order Picard-Fuchs equation holds and its analytic Frobenius solution gives the physical integral.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad: re-audit as clean only after narrowing this row to the finite runner certificate or after retaining an all-order proof/dependency that closes the exact physical-integral Picard-Fuchs and Frobenius-branch claim.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 2,
+            "B": 0,
+            "C": 2,
+            "D": 0,
+            "total_pass": 4
+          },
+          "verdict_rationale": "The second audit is the correct reading of the current source row. The finite runner closes a bounded symbolic/numerical certificate, but the source claim still asserts the exact Picard-Fuchs equation and Frobenius-branch identification for the physical SU(3) integral. That stronger statement requires a retained all-order proof companion or a narrowed row boundary before it can be clean. The load-bearing step remains class A because the disputed closure is an algebraic/symbolic ODE identity and branch-identification proof, not a first-principles numerical compute claim."
         }
       ],
       "runner_check_breakdown": {
-        "A": 2,
+        "A": 0,
         "B": 0,
-        "C": 2,
+        "C": 0,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py",
-      "title": "Plaquette V=1 Picard-Fuchs ODE Note",
+      "title": "Plaquette V=1 Picard-Fuchs ODE \u2014 Finite-Runner Certificate Note",
       "transitive_descendants": 813,
-      "verdict_rationale": "The second audit is the correct reading of the current source row. The finite runner closes a bounded symbolic/numerical certificate, but the source claim still asserts the exact Picard-Fuchs equation and Frobenius-branch identification for the physical SU(3) integral. That stronger statement requires a retained all-order proof companion or a narrowed row boundary before it can be clean. The load-bearing step remains class A because the disputed closure is an algebraic/symbolic ODE identity and branch-identification proof, not a first-principles numerical compute claim."
+      "verdict_rationale": null
     },
     "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06": {
       "audit_date": null,
@@ -165548,8 +165675,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "In the finite C3-circulant model, tau_M(H)=Tr(pi_plus(H))+Tr(pi_perp(H)) degenerates to Tr(H)=3a, while the equal block-log saddle under E_plus+E_perp=N occurs uniquely at E_plus=E_perp and translates to |b|^2/a^2=1/2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "b4933a5384c2920efc81d66cbbd184a7741f264710ce3df149fda7b105ae53f8",
       "note_path": "docs/PRIMITIVE_P_BAE_M1_M2_DUALITY_NOTE_2026-05-10_pPbae_duality.md",
       "notes_for_re_audit_if_any": "Re-check only if a later note uses this finite saddle equivalence as a framework-level primitive election or full measure-equivalence theorem.",
@@ -196606,7 +196733,7 @@
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 4.5,
+      "load_bearing_score": 5.085,
       "load_bearing_step": "Given finite Grassmann generators satisfying (G1)-(G3) and Berezin rules (B1)-(B2), the quadratic Berezin partition Z_F = int prod_x dchi-bar_x dchi_x exp(-sum_{x,y} chi-bar_x M_xy chi_y) equals det(M), and odd-graded insertions anticommute under exchange.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -196625,7 +196752,7 @@
       },
       "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
       "title": "Spin-Statistics \u2014 Berezin Determinant Narrow Theorem",
-      "transitive_descendants": 1,
+      "transitive_descendants": 2,
       "verdict_rationale": "Within the narrow algebraic scope, the claim closes as a standard finite Berezin-calculus identity. The runner evidence is entirely class-A algebraic checking and is consistent with the proof; the note explicitly excludes the physical spin-statistics bridge and downstream positivity surfaces from the audited load."
     },
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {
@@ -198247,12 +198374,12 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 35,
+      "direct_in_degree": 34,
       "effective_status": "open_gate",
       "effective_status_reason": "audited_open_gate",
       "independence": "fresh_context",
       "intrinsic_status": "open_gate",
-      "load_bearing_score": 27.255,
+      "load_bearing_score": 26.738,
       "load_bearing_step": "This note's load-bearing content is identity assignment only.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "audit_in_progress",
@@ -198274,7 +198401,7 @@
       },
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note",
-      "transitive_descendants": 863,
+      "transitive_descendants": 853,
       "verdict_rationale": "The note is clean only under the open_gate scope: it defines a canonical parent object for an unresolved derivation target and repeatedly states that the substantive A1+A2-to-staggered-Dirac chain is not closed. There is no hidden theorem promotion, no runner-bearing numerical match, and no decoration claim. Residual risk is governance-only: a future theorem audit must not cite this clean open-gate verdict as proof of the staggered-Dirac realization itself."
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
@@ -198324,12 +198451,12 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": "Within the explicitly two-candidate framing, if a candidate must match dim_C V = 2, then the bosonic Fock candidate is ruled out by infinite per-site dimension while the Grassmann candidate remains and has the Berezin det(M) readout.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -198348,8 +198475,60 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": "The load-bearing step is a genuine algebraic closure over independent retained-grade inputs: Cl(3) faithful complex irreps have dimension 2, Grassmann nilpotency gives a two-state per-site module, and bosonic canonical Fock space is infinite-dimensional. The Berezin determinant part is directly supplied by the retained_bounded Berezin authority and rechecked by the runner via exact symbolic determinant computations. The runner source performs finite symbolic checks rather than merely printing pass constants, though it correctly treats the two-candidate framing as a scoped premise rather than a universal classification."
+    },
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "9e3d964e2f0679a3900c20cf552966b2c2f8bd62eaaaf443d54236c910a00362",
+      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
     },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
       "audit_date": "2026-05-16T14:02:00.324084+00:00",
@@ -198398,12 +198577,12 @@
         "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": "At d = 4, the upstream naive-lattice count gives 2^4 = 16, and integer arithmetic factors this as 16 = 4 \u00b7 4, with the spinor factor matching the cited Cl(3,0) complexification chirality-pair dimension dim_C V_+ + dim_C V_- = 2 + 2 = 4.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -198422,7 +198601,7 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 3 \u2014 Species Reduction Bridge Narrow Theorem",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": "The load-bearing work is a genuine class-A algebraic closure over independent retained-grade inputs: the retained naive theorem supplies the 16-corner count, and the retained Cl(3,0) split supplies the 2 + 2 chirality-pair dimension. The note does not assert the open staggered-realization bridge; it explicitly records that the taste reduction and regulator/substrate selection are not closed here. The runner source performs exact symbolic/enumerative checks consistent with the note rather than merely printing constants."
     },
     "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac": {
@@ -203617,41 +203796,24 @@
       "verdict_rationale": "Within the narrowed algebraic scope, the proof is standard finite-dimensional SU(3) representation algebra: centrality follows from antisymmetry of f^{abc}, Schur scalar follows from irreducibility of the cited carrier, and the value follows from the trace normalization. The runner verifies the concrete Gell-Mann realization, including trace normalization, closure, scalar Casimir, and 4/3 value. The note explicitly defers the physical-color bridge and downstream color-factor physics, so no unsupported phenomenological content is ratified."
     },
     "su3_casimir_fundamental_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-11T01:09:33.978504+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure."
-        },
-        "dep_claim_type": {
-          "cl3_color_automorphism_theorem": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_color_automorphism_theorem": "retained_bounded"
-        },
-        "deps": [
-          "cl3_color_automorphism_theorem"
-        ],
-        "load_bearing_score": 15.762,
-        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
-        "transitive_descendants": 433
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1494-8cc4-7901-93c6-50a4c4384af7",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The K1-K3 algebraic theorem closes from the cited SU(3) embedding, trace normalization, Schur lemma, and the trace computation. K4 and C1-C5 do not close because the only direct dependency explicitly excludes the bridge identifying the 3D symmetric base carrier with physical SM quark color and no perturbative QCD readout theorem is included.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "claim_scope": "Algebraic SU(3) quadratic Casimir on the cited 3D symmetric base subspace equals 4/3; the source note also asserts physical color-triplet quark color-factor readouts.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-11T01:09:33.978504+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -203659,21 +203821,19 @@
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 17,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 18.199,
-      "load_bearing_step": "Equating Tr[C_2] = \u03a3_a Tr[T^a T^a] = 4 with Tr[c_2(3) I_3] = 3 c_2(3) gives c_2(3) = 4/3; the later quark readout identifies this algebraic C_2 with universal color-triplet quark color factors.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "085c892d5bdf3549c81dca984c39bcc6c5b6376e91c61ceed2c5483a8fe50cf3",
+      "note_hash": "d6e2848fd14e60b6bbbcb142227a43c1d10dd084190c9c8866dac72b3d8534d5",
       "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - cheapest repair is to split or narrow the note to the clean K1-K3 algebraic V_3 Casimir theorem, with a separate downstream physical-quark color-factor note requiring a retained color-identification/readout bridge.",
-      "open_dependency_paths": [
-        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-06T17:18:24.975522+00:00",
@@ -203821,19 +203981,70 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the runner and proof verify the standard algebraic SU(3) fundamental Casimir C_2=4/3, but the note also promotes that number to universal quark color charge and perturbative QCD factors. Why this blocks: the only cited authority is retained_bounded and explicitly excludes the physical SM color identification, so the V_3-to-quark-color bridge and one-gluon/self-energy readout are not supplied in the packet. Repair target: add a retained bridge theorem deriving the physical color carrier/readout, or narrow this note to K1-K3 only. Claim boundary until fixed: exact algebraic Casimir on the framework V_3 fundamental, not a closed physical quark-color theorem."
+        },
+        {
+          "archived_at": "2026-05-17T11:49:51.435370+00:00",
+          "archived_for_note_hash": "085c892d5bdf3549c81dca984c39bcc6c5b6376e91c61ceed2c5483a8fe50cf3",
+          "audit_date": "2026-05-11T01:09:33.978504+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure."
+            },
+            "dep_claim_type": {
+              "cl3_color_automorphism_theorem": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_color_automorphism_theorem": "retained_bounded"
+            },
+            "deps": [
+              "cl3_color_automorphism_theorem"
+            ],
+            "load_bearing_score": 15.762,
+            "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+            "transitive_descendants": 433
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1494-8cc4-7901-93c6-50a4c4384af7",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The K1-K3 algebraic theorem closes from the cited SU(3) embedding, trace normalization, Schur lemma, and the trace computation. K4 and C1-C5 do not close because the only direct dependency explicitly excludes the bridge identifying the 3D symmetric base carrier with physical SM quark color and no perturbative QCD readout theorem is included.",
+          "claim_scope": "Algebraic SU(3) quadratic Casimir on the cited 3D symmetric base subspace equals 4/3; the source note also asserts physical color-triplet quark color-factor readouts.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-11T01:09:33.978504+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Equating Tr[C_2] = \u03a3_a Tr[T^a T^a] = 4 with Tr[c_2(3) I_3] = 3 c_2(3) gives c_2(3) = 4/3; the later quark readout identifies this algebraic C_2 with universal color-triplet quark color factors.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad - cheapest repair is to split or narrow the note to the clean K1-K3 algebraic V_3 Casimir theorem, with a separate downstream physical-quark color-factor note requiring a retained color-identification/readout bridge.",
+          "open_dependency_paths": [
+            "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Issue: the algebraic Casimir value is proved, but the note's broader physical-quark claims rely on a carrier/readout bridge absent from the direct dependencies. Why this blocks: the upstream color automorphism theorem is retained only as a bounded algebraic SU(3) embedding and explicitly excludes physical SM color identification. Repair target: add a retained bridge theorem deriving the physical quark-color carrier and perturbative color-factor readout, or narrow this note to K1-K3 and move K4/C1-C5 downstream. Claim boundary until fixed: C_2 = 4/3 only on the cited algebraic V_3 fundamental carrier."
         }
       ],
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "title": "SU(3) Quadratic Casimir on Color Fundamental Equals 4/3",
+      "title": "SU(3) Quadratic Casimir on the V_3 Fundamental Equals 4/3 \u2014 Algebraic K1\u2013K3 Theorem",
       "transitive_descendants": 830,
-      "verdict_rationale": "Issue: the algebraic Casimir value is proved, but the note's broader physical-quark claims rely on a carrier/readout bridge absent from the direct dependencies. Why this blocks: the upstream color automorphism theorem is retained only as a bounded algebraic SU(3) embedding and explicitly excludes physical SM color identification. Repair target: add a retained bridge theorem deriving the physical quark-color carrier and perturbative color-factor readout, or narrow this note to K1-K3 and move K4/C1-C5 downstream. Claim boundary until fixed: C_2 = 4/3 only on the cited algebraic V_3 fundamental carrier."
+      "verdict_rationale": null
     },
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T18:12:27.011598+00:00",
@@ -241691,9 +241902,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2079,
-    "re_audit_required": 10,
-    "row_count": 2135,
-    "seeded_new": 2
+    "preserved_existing": 2086,
+    "re_audit_required": 5,
+    "row_count": 2136,
+    "seeded_new": 1
   }
 }

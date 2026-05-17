@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 169 |
+| ~~audited_conditional~~ | 170 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 169 |
+| `audited_conditional` | 170 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1420 |
+| `unaudited` | 1419 |
 
 | claim_type | count |
 |---|---:|
@@ -807,6 +807,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -10239,6 +10240,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At NMAX=4 and n_grid=80, the runner computes the finite SU(3) fusion table on 0<=p,q<=4 by Cartan-torus character orthogonality, rounds to non-negative integers with residual <3.6e-15, and passes V1-V9.  _(class `C`)_
 - **chain closes:** True — The runner source constructs Schur characters, normalized Weyl-Vandermonde Cartan weights, and all 25^3 numerical fusion integrals directly from standard SU(3) representation-theory formulas. No cross-note, Wilson-plaquette, bridge-parent, or external comparator input is used, and the note confines the claim to this bounded finite run.
 - **rationale:** The bounded theorem closes on the restricted surface actually claimed: NMAX=4, n_grid=80, 25 weights, and 25^3 rounded fusion multiplicities computed by the runner. The nine validation passes are algebraic SU(3) identity checks over the computed table, and the tenth pass checks the computed integer residual at machine precision. This does not establish arbitrary SU(3) fusion, Wilson plaquette closure, rho_(p,q)(6), or any bridge parent chain; it cleanly supports only the finite-box engine check.
+- **auditor confidence:** high
+
+### `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`
+
+- **Note:** [`SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md`](../../docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Seven selected SU(3) low-rank irrep character-coefficient ODEs, as displayed in the note, backed by the supplied finite runner output and source-code computation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-130714-20260517T130714Z-30e84e95-su3_low_rank_irrep_picar-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner constructs Bessel-determinant Taylor series for each selected irrep, solves a rational creative-telescoping ansatz for an order-3 polynomial ODE, and verifies the result by extra finite Taylor coefficients plus Bessel-determinant numerical samples.  _(class `C`)_
+- **chain closes:** False — The supplied runner is substantive and reproduces the displayed catalog, but it only checks a finite Taylor window and finite numerical samples. The packet does not close the stronger exact Picard-Fuchs/all-order holonomic claim for the SU(3) integrals or the asserted minimal order beyond the finite ansatz search.
+- **rationale:** The runner source is not a trivial printout: it builds Bessel-series data, solves nullspaces over rationals, normalizes integer polynomial coefficients, and runs numerical comparisons for all seven representatives. However, the source note phrases the catalog as closed-form Picard-Fuchs ODEs for the actual character integrals, while the supplied evidence is a finite truncated-series and finite-sample certificate. The cited V=1 authority is explicitly retained only as a finite-runner certificate and does not provide the missing all-order bridge.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
 - **auditor confidence:** high
 
 ### `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10`

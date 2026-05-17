@@ -212287,22 +212287,41 @@
       "verdict_rationale": "The bounded theorem closes on the restricted surface actually claimed: NMAX=4, n_grid=80, 25 weights, and 25^3 rounded fusion multiplicities computed by the runner. The nine validation passes are algebraic SU(3) identity checks over the computed table, and the tenth pass checks the computed integer residual at machine precision. This does not establish arbitrary SU(3) fusion, Wilson plaquette closure, rho_(p,q)(6), or any bridge parent chain; it cleanly supports only the finite-box engine check."
     },
     "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T13:09:07.932880+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 4.7,
+        "runner_hash": "1dc670652a4b043906452c56fcce6fbf3d9e27fbb76805026fa3acce85fff905",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-130714-20260517T130714Z-30e84e95-su3_low_rank_irrep_picar-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied runner is substantive and reproduces the displayed catalog, but it only checks a finite Taylor window and finite numerical samples. The packet does not close the stronger exact Picard-Fuchs/all-order holonomic claim for the SU(3) integrals or the asserted minimal order beyond the finite ansatz search.",
       "claim_id": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
-      "claim_scope": null,
+      "claim_scope": "Seven selected SU(3) low-rank irrep character-coefficient ODEs, as displayed in the note, backed by the supplied finite runner output and source-code computation.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T13:09:07.932880+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -212310,32 +212329,34 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 4.7,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner constructs Bessel-determinant Taylor series for each selected irrep, solves a rational creative-telescoping ansatz for an order-3 polynomial ODE, and verifies the result by extra finite Taylor coefficients plus Bessel-determinant numerical samples.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "06cbf385c20e763cfd476e7205de98c9ba7320d88775734f9b8402963bde174c",
       "note_path": "docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow this row to the finite runner certificate, or add a retained all-order proof that the displayed ODEs annihilate the Bessel-determinant/integral series and that order 3 is genuinely minimal for the claimed class.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md"
+      ],
       "previous_audits": [],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 7,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py",
       "title": "SU(3) Low-Rank Irrep Character Coefficients: Picard-Fuchs ODE Catalog",
       "transitive_descendants": 12,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source is not a trivial printout: it builds Bessel-series data, solves nullspaces over rationals, normalizes integer polynomial coefficients, and runs numerical comparisons for all seven representatives. However, the source note phrases the catalog as closed-form Picard-Fuchs ODEs for the actual character integrals, while the supplied evidence is a finite truncated-series and finite-sample certificate. The cited V=1 authority is explicitly retained only as a finite-runner certificate and does not provide the missing all-order bridge."
     },
     "su3_tensor_network_engine_roadmap_note_2026-05-03": {
       "audit_date": null,

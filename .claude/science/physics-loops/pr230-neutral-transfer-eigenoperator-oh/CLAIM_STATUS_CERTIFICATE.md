@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block107_time_kernel_manifest_idle_refresh`.
+Current block: `block108_all_ref_closure_artifact_rescan`.
 
 ```yaml
-actual_current_surface_status: bounded-support / source-Higgs time-kernel manifest idle-state refresh; current PR230 surface still rejected
+actual_current_surface_status: open / Block108 all-ref closure-artifact rescan; positive closure not achieved and no current/fetched strict same-surface artifact is admitted
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block107 changes no physics premise. It removes stale active-worker state from the source-Higgs time-kernel production manifest; canonical O_H or an equivalent physical neutral identity remains absent, no time-kernel rows are launched, and aggregate closure gates still reject closure."
+proposal_allowed_reason: "Block108 changes no physics premise. It scans all fetched origin refs and current PR head for strict same-surface closure artifacts and finds none; canonical O_H/action, physical C_ss/C_sH/C_HH pole rows, W/Z response/covariance rows with an allowed absolute pin, Schur/scalar-LSZ authority, and neutral H3/H4 authority remain absent."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,15 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block108 runs a clean-clone all-ref closure-artifact rescan after the final
+   chunks and Block107.  It scanned 799 fetched origin refs plus the current
+   PR head and found no strict same-surface closure artifact: no canonical
+   `O_H` / accepted EW-Higgs action certificate, no physical
+   `C_ss/C_sH/C_HH` pole rows, no W/Z response packet with identity/covariance
+   and an allowed absolute pin, no Schur/scalar-LSZ strict authority, and no
+   neutral H3/H4 physical-transfer/source-coupling authority.  FMS and
+   lattice-Higgs literature remain route context only and are not imported as
+   PR230 `O_H` or `kappa_s` authority.
 0. Block107 refreshes the source-Higgs time-kernel production manifest after
    the chunk workers completed.  The manifest now records
    `active_process_rows=[]` and no stale static-worker collision.  Launch

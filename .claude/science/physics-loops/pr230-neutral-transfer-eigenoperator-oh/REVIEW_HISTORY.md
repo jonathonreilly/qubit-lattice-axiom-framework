@@ -1,5 +1,39 @@
 # Review History
 
+## Block108
+
+Local review run on 2026-05-17 01:03 UTC.
+
+Scope:
+
+- `scripts/frontier_yt_pr230_block108_all_ref_closure_artifact_rescan.py`
+- `outputs/yt_pr230_block108_all_ref_closure_artifact_rescan_2026-05-17.json`
+- `docs/YT_PR230_BLOCK108_ALL_REF_CLOSURE_ARTIFACT_RESCAN_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `outputs/yt_pr230_campaign_status_certificate_2026-05-01.json`
+- `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/`
+
+Review results:
+
+| Reviewer | Disposition | Notes |
+|---|---|---|
+| Code / Runner | PASS | Block108 compiles and passes with `PASS=15 FAIL=0`; campaign status consumes it and passes with `PASS=428 FAIL=0`. |
+| Physics Claim Boundary | OPEN / NO CLOSURE | The rescan admits no strict same-surface artifact and does not supply `O_H`, pole rows, W/Z rows, Schur/LSZ authority, or neutral H3/H4 authority. |
+| Literature / Imports | CLEAN / DISCLOSED | FMS/lattice-Higgs references are route context only and are not treated as PR230 `O_H` or `kappa_s` authority. |
+| Nature Retention | OPEN | No retained or `proposed_retained` wording is authorized. |
+| Repo Governance | PASS | No Planck, alpha_s, manuscript, or `CLAIMS_TABLE` surfaces touched. |
+
+Checks:
+
+```bash
+python3 -m py_compile scripts/frontier_yt_pr230_block108_all_ref_closure_artifact_rescan.py scripts/frontier_yt_pr230_campaign_status_certificate.py
+# OK
+python3 scripts/frontier_yt_pr230_block108_all_ref_closure_artifact_rescan.py
+# SUMMARY: PASS=15 FAIL=0
+python3 scripts/frontier_yt_pr230_campaign_status_certificate.py
+# SUMMARY: PASS=428 FAIL=0
+```
+
 ## Block107
 
 Local review run on 2026-05-17 00:55 UTC.

@@ -57,3 +57,17 @@ support, theorem tooling, or analogy.  None is loaded as PR230 proof authority.
 Conclusion: the literature/math search supports the route ranking but does not
 change closure status.  The irreducible missing object remains a same-surface
 physical map from PR230 source coordinate to canonical scalar/Higgs response.
+
+## Block108 All-Ref Rescan Literature Boundary
+
+Block108 refreshed the FMS/lattice-Higgs literature context while scanning all
+fetched origin refs for strict same-surface PR230 artifacts.  The literature is
+route context only and does not supply canonical `O_H`, `kappa_s`, source-Higgs
+rows, W/Z authority, Schur/LSZ authority, or neutral H3/H4 authority.
+
+| Source | PR230 relevance | Boundary |
+|---|---|---|
+| arXiv:2603.12882, "Weak and Higgs physics from the lattice" | Current FMS/lattice weak-Higgs context | No PR230 same-source EW/Higgs action or source-overlap certificate |
+| arXiv:1610.04188, "Testing gauge-invariant perturbation theory" | Gauge-invariant perturbation/FMS method context | Does not identify the Cl(3)/Z3 source pole with canonical `O_H` |
+| Froehlich-Morchio-Strocchi 1981 | Gauge-invariant composite-Higgs context | Not a same-surface PR230 action or normalization proof |
+| Fradkin-Shenker 1979 | Lattice gauge-Higgs phase/context boundary | Not an `O_sp -> O_H` selector or W/Z absolute pin |

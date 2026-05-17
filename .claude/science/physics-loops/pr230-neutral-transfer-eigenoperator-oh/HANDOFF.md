@@ -7,6 +7,38 @@ Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
 
+## Block108 All-Ref Closure-Artifact Rescan
+
+Block108 ran from a fresh clean clone after the previous worktree reported
+unrelated ref/object corruption during `git fetch`.  The fresh clone fetched
+all origin heads and scanned 799 refs for named strict PR230 closure artifacts.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block108_all_ref_closure_artifact_rescan.py`
+- `outputs/yt_pr230_block108_all_ref_closure_artifact_rescan_2026-05-17.json`
+- `docs/YT_PR230_BLOCK108_ALL_REF_CLOSURE_ARTIFACT_RESCAN_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `outputs/yt_pr230_campaign_status_certificate_2026-05-01.json`
+
+Validation:
+
+```text
+block108 all-ref rescan PASS=15 FAIL=0
+campaign status PASS=428 FAIL=0
+```
+
+Honest status: open / completion-audit checkpoint only.  No strict current or
+outside-PR remote same-surface closure artifact is admitted.  FMS/lattice-Higgs
+literature remains route context only; it does not supply PR230 canonical
+`O_H`, source-Higgs rows, W/Z authority, or `kappa_s`.
+
+Exact next action: produce one genuine same-surface artifact in the listed
+families: accepted `O_H`/action plus physical `C_ss/C_sH/C_HH` pole rows,
+strict W/Z physical response with an allowed absolute pin, strict
+Schur/scalar-LSZ authority, or neutral H3/H4 physical-transfer/source-coupling
+authority.
+
 ## Block107 Time-Kernel Manifest Idle Refresh
 
 Block107 refreshes the source-Higgs time-kernel production manifest after the

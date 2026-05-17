@@ -46,6 +46,24 @@ source/canonical-Higgs coupling. The W/Z physical-response intake still has
 only scout/smoke rows and support contracts, not the accepted-action production
 packet or an allowed absolute pin.
 
+Block108 refreshes route intake from a clean clone after the final chunk packet
+and Block107. It fetched/scanned 799 origin refs and found no strict current or
+remote same-surface artifact in the `O_H`/source-Higgs, W/Z, Schur/scalar-LSZ,
+or neutral H3/H4 families. It does not change the queue ranking:
+
+1. accepted same-surface canonical `O_H` plus strict physical Euclidean
+   `C_ss/C_sH/C_HH(tau)` pole rows with pole-residue, Gram, threshold, and
+   FV/IR authority;
+2. strict W/Z physical-response packet with accepted action, production W/Z
+   rows, same-source top rows, matched covariance, strict non-observed `g2` or
+   another allowed absolute pin, `delta_perp`, and final W-response authority;
+3. strict Schur/scalar-LSZ pole authority or neutral H3/H4
+   physical-transfer/source-coupling authority.
+
+Do not reopen on path names, branch names, literature names, or finite-row
+promotion. Reopen only when one listed same-surface artifact exists and the
+aggregate gates rerun cleanly.
+
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but
 it does not change the queue ranking: the rows are still same-source `C_ss`

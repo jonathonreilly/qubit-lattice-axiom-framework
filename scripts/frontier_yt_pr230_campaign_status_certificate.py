@@ -501,6 +501,9 @@ def main() -> int:
         "pr230_post_block100_completion_reopen_audit": load(
             "outputs/yt_pr230_post_block100_completion_reopen_audit_2026-05-15.json"
         ),
+        "pr230_block108_all_ref_closure_artifact_rescan": load(
+            "outputs/yt_pr230_block108_all_ref_closure_artifact_rescan_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2677,6 +2680,36 @@ def main() -> int:
         "pr230-post-block100-completion-reopen-audit-blocks",
         post_block100_completion_reopen_blocks,
         statuses["pr230_post_block100_completion_reopen_audit"],
+    )
+    block108_all_ref_closure_artifact_rescan_blocks = (
+        "Block108 all-ref closure-artifact rescan" in str(
+            statuses["pr230_block108_all_ref_closure_artifact_rescan"]
+        )
+        and certificates["pr230_block108_all_ref_closure_artifact_rescan"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block108_all_ref_closure_artifact_rescan"].get(
+            "block108_all_ref_closure_artifact_rescan_passed"
+        )
+        is True
+        and certificates["pr230_block108_all_ref_closure_artifact_rescan"].get(
+            "closure_achieved"
+        )
+        is False
+        and certificates["pr230_block108_all_ref_closure_artifact_rescan"].get(
+            "fresh_artifact_admitted"
+        )
+        is False
+        and certificates["pr230_block108_all_ref_closure_artifact_rescan"].get(
+            "remote_ref_count", 0
+        )
+        > 1
+    )
+    report(
+        "pr230-block108-all-ref-closure-artifact-rescan-blocks",
+        block108_all_ref_closure_artifact_rescan_blocks,
+        statuses["pr230_block108_all_ref_closure_artifact_rescan"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8423,6 +8456,9 @@ def main() -> int:
     )
     result["schur_higher_shell_complete_packet_monotonicity_blocks_shortcut"] = (
         schur_higher_shell_complete_packet_monotonicity_blocks
+    )
+    result["block108_all_ref_closure_artifact_rescan_blocks"] = (
+        block108_all_ref_closure_artifact_rescan_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

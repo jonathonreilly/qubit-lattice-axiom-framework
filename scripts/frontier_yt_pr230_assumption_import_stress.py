@@ -374,6 +374,9 @@ def main() -> int:
         "block118_hamming_dirichlet_oh_axis_selector": load(
             "outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json"
         ),
+        "block119_native_dirichlet_action_lsz_probe": load(
+            "outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2498,6 +2501,55 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block119_native_dirichlet_keeps_imports_clean = (
+        "Block119 native spatial Dirichlet tensor-product probe gives a mathematical kinetic candidate"
+        in str(
+            certificates["block119_native_dirichlet_action_lsz_probe"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "block119_native_dirichlet_action_lsz_probe_passed"
+        )
+        is True
+        and certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "native_dirichlet_candidate_constructed"
+        )
+        is True
+        and certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "accepted_same_surface_action_absent"
+        )
+        is True
+        and certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "scalar_lsz_canonical_metric_absent"
+        )
+        is True
+        and certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "source_overlap_not_fixed"
+        )
+        is True
+        and certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "physical_source_higgs_pole_rows_absent"
+        )
+        is True
+        and all(
+            value is False
+            for value in certificates["block119_native_dirichlet_action_lsz_probe"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block119-native-dirichlet-keeps-imports-clean",
+        block119_native_dirichlet_keeps_imports_clean,
+        certificates["block119_native_dirichlet_action_lsz_probe"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2835,6 +2887,7 @@ def main() -> int:
         "block116_neutral_h3h4_keeps_imports_clean": block116_neutral_h3h4_keeps_imports_clean,
         "block117_schur_scalar_lsz_keeps_imports_clean": block117_schur_scalar_lsz_keeps_imports_clean,
         "block118_hamming_dirichlet_keeps_imports_clean": block118_hamming_dirichlet_keeps_imports_clean,
+        "block119_native_dirichlet_keeps_imports_clean": block119_native_dirichlet_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

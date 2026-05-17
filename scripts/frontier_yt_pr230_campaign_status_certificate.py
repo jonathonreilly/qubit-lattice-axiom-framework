@@ -534,6 +534,9 @@ def main() -> int:
         "pr230_block118_hamming_dirichlet_oh_axis_selector": load(
             "outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json"
         ),
+        "pr230_block119_native_dirichlet_action_lsz_probe": load(
+            "outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3071,6 +3074,51 @@ def main() -> int:
         "pr230-block118-hamming-dirichlet-oh-axis-selector-supports-only",
         block118_hamming_dirichlet_oh_axis_selector_supports,
         statuses["pr230_block118_hamming_dirichlet_oh_axis_selector"],
+    )
+    block119_native_dirichlet_action_lsz_probe_supports_only = (
+        "Block119 native spatial Dirichlet tensor-product probe gives a mathematical kinetic candidate"
+        in str(statuses["pr230_block119_native_dirichlet_action_lsz_probe"])
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "block119_native_dirichlet_action_lsz_probe_passed"
+        )
+        is True
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "native_dirichlet_candidate_constructed"
+        )
+        is True
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "finite_kinetic_normalization_mathematically_available"
+        )
+        is True
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "accepted_same_surface_action_absent"
+        )
+        is True
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "scalar_lsz_canonical_metric_absent"
+        )
+        is True
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "source_overlap_not_fixed"
+        )
+        is True
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "physical_source_higgs_pole_rows_absent"
+        )
+        is True
+        and certificates["pr230_block119_native_dirichlet_action_lsz_probe"].get(
+            "aggregate_gates_still_deny_closure"
+        )
+        is True
+    )
+    report(
+        "pr230-block119-native-dirichlet-action-lsz-probe-supports-only",
+        block119_native_dirichlet_action_lsz_probe_supports_only,
+        statuses["pr230_block119_native_dirichlet_action_lsz_probe"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8850,6 +8898,9 @@ def main() -> int:
     )
     result["block118_hamming_dirichlet_oh_axis_selector_supports_only"] = (
         block118_hamming_dirichlet_oh_axis_selector_supports
+    )
+    result["block119_native_dirichlet_action_lsz_probe_supports_only"] = (
+        block119_native_dirichlet_action_lsz_probe_supports_only
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

@@ -1,11 +1,49 @@
 # Handoff
 
-Checkpoint: 2026-05-17 Block118
+Checkpoint: 2026-05-17 Block119
 
 Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
+
+## Block119 Native Dirichlet Action/LSZ Probe
+
+Block119 tests the cleanest immediate lift after the Block118 axis selector:
+tensor the selected taste-radial axis with a native finite spatial Dirichlet
+quadratic form and ask whether this can serve as accepted action/LSZ
+authority.  The executable probe constructs a symmetric strictly positive
+Dirichlet path quadratic candidate with a unit-normalized lowest mode, then
+checks it against the current PR230 action/LSZ/source-overlap/pole-row
+certificates.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block119_native_dirichlet_action_lsz_probe.py`
+- `outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json`
+- `docs/YT_PR230_BLOCK119_NATIVE_DIRICHLET_ACTION_LSZ_PROBE_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block119 native Dirichlet action/LSZ probe PASS=13 FAIL=0
+campaign status PASS=439 FAIL=0
+assumption/import stress PASS=122 FAIL=0
+```
+
+Honest status: exact support plus boundary.  The finite graph Dirichlet
+candidate is real mathematical support, but it is not accepted EW/Higgs
+action, scalar LSZ/canonical normalization, source-overlap authority, or
+strict physical `C_ss/C_sH/C_HH(tau)` pole-row evidence.  No retained or
+`proposed_retained` closure is authorized.
+
+Exact next action: source-Higgs can reopen only with accepted same-surface
+EW/Higgs action and scalar LSZ/canonical normalization for the Block118 axis,
+plus production physical `C_ss/C_sH/C_HH(tau)` rows with Gram, threshold,
+FV/IR, contact, and covariance authority; otherwise pivot to strict W/Z,
+neutral H3/H4, or Schur/scalar-LSZ physical bridge artifacts.
 
 ## Block118 Hamming-Dirichlet `O_H` Axis Selector
 

@@ -1,25 +1,26 @@
 loop_slug: pr230-neutral-transfer-eigenoperator-oh
 mode: campaign
 runtime_budget: "12h total, outer-supervisor managed"
-checkpoint_time: "2026-05-17T15:06:32Z"
+checkpoint_time: "2026-05-17T16:10:00Z"
 branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_head_at_start: 76c5d93e7
-lock_status: "branch-local science block; Block118 constructs an exact native Hamming-Dirichlet axis selector for the PR230 source-Higgs route while preserving the no-closure firewall; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
-cycle_count: 118
-active_science_block: block118_hamming_dirichlet_oh_axis_selector
-active_route: "Block118 uses the Boolean-cube primitive-idempotent realization of the current Cl(3)/Z3 source/taste algebra and its native Hamming-Dirichlet form to select the unique lowest cyclic trace-zero finite Dirichlet mode E1 = eps0 + eps1 + eps2, matching the implemented taste-radial O_H axis. It retires the degree-one filter only as an axis selector; accepted EW/Higgs action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows remain absent."
+lock_status: "branch-local science block; Block119 probes whether the Block118 finite axis can be lifted by a native spatial Dirichlet quadratic form into accepted action/LSZ authority while preserving the no-closure firewall; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
+cycle_count: 119
+active_science_block: block119_native_dirichlet_action_lsz_probe
+active_route: "Block119 tensors the Block118 selected taste-radial axis with a finite native spatial Dirichlet quadratic form. The candidate is mathematically positive and normalizable, but it does not derive/adopt the PR230 same-surface EW/Higgs action, canonical scalar LSZ metric, source derivative, source-overlap kappa_sH, or strict physical C_ss/C_sH/C_HH pole rows."
 target_status: best-honest-status
-actual_current_surface_status: "exact support / Block118 native Hamming-Dirichlet selector fixes the PR230 taste-radial O_H axis as the unique lowest cyclic trace-zero finite Dirichlet mode; accepted EW/Higgs action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows remain absent"
+actual_current_surface_status: "exact support plus boundary / Block119 native spatial Dirichlet tensor-product probe gives a mathematical kinetic candidate for the Block118 selected O_H axis, but it is not an accepted EW/Higgs action, scalar LSZ/canonical normalization, source-overlap theorem, or strict C_ss/C_sH/C_HH pole-row authority"
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action and scalar LSZ/canonical normalization adopt the Block118 selected axis as canonical O_H and production physical Euclidean C_ss/C_sH/C_HH(tau) pole rows pass Gram, threshold, FV/IR, contact, and covariance gates; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows; neutral support if a future same-surface artifact supplies H3 physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility authority plus H4 source/canonical-Higgs coupling authority
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block118 is an exact support axis selector only. It fixes the finite taste-radial axis from the native Hamming-Dirichlet form but does not provide a dynamic EW/Higgs action, scalar LSZ metric, source-overlap theorem, W/Z response, neutral H3/H4 bridge, or strict C_ss/C_sH/C_HH pole rows."
+proposal_allowed_reason: "Block119 is a support/boundary artifact only. A finite Dirichlet quadratic form can be normalized mathematically on the Block118 selected axis, but this does not provide accepted EW/Higgs action, scalar LSZ/canonical normalization, source-overlap authority, W/Z response, neutral H3/H4 bridge, Schur/Feshbach pole authority, or strict C_ss/C_sH/C_HH pole rows."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: accepted/derived same-surface EW/Higgs action plus scalar LSZ/canonical normalization for the Block118 selected O_H axis and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness, FV/IR authority, and Helmholtz-symmetric mixed-response rows; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR/contact authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block118 removes the degree-one axis-selection ambiguity but does not close action/LSZ/source-overlap or row authority."
+hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: accepted/derived same-surface EW/Higgs action plus scalar LSZ/canonical normalization for the Block118 selected O_H axis and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness, FV/IR authority, and Helmholtz-symmetric mixed-response rows; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR/contact authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block118 removes the finite axis-selection ambiguity, and Block119 shows that merely adding a native graph Dirichlet normalization still does not close action/LSZ/source-overlap or row authority."
 minimal_allowed_premises:
+  - "block119 native Dirichlet action/LSZ probe as exact support plus boundary only; it constructs a positive finite spatial Dirichlet tensor-product quadratic candidate on the Block118 selected O_H axis and verifies that this mathematical normalization is not accepted EW/Higgs action, scalar LSZ/canonical normalization, source-overlap authority, or strict C_ss/C_sH/C_HH pole-row evidence"
   - "block118 native Hamming-Dirichlet O_H axis selector as exact support only; it proves the current Cl(3)/Z3 source/taste algebra's Boolean-cube Hamming-Dirichlet form has a unique lowest cyclic trace-zero mode E1 = eps0 + eps1 + eps2, matching (S0+S1+S2)/sqrt(24), while leaving accepted action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows absent"
   - "block117 Schur/scalar-LSZ strict artifact resolver as exact negative boundary only; it proves the current PR230 head has finite Schur A/B/C support only and no strict K-prime pole rows, no strict scalar-LSZ moment/threshold/FV authority, no finite-packet promotion, no finite-moment residue authority, no physical bridge root, and zero strict Schur/scalar-LSZ certificate hits"
   - "block116 neutral H3/H4 strict artifact resolver as exact negative boundary only; it proves the current PR230 head has H1/H2 support only and no H3 physical neutral transfer/off-diagonal primitive authority, no primitive-cone/irreducibility/rank-one purity certificate, no H4 source/canonical-Higgs coupling authority, and zero strict neutral certificate hits"
@@ -154,6 +155,10 @@ forbidden_imports:
   - "static EW algebra, support contracts, formal GEVP smoke, or response-ratio algebra as accepted physical action/response"
   - "assuming k_top=k_gauge or top/W covariance without a same-surface theorem or matched rows"
 files_touched:
+  - docs/YT_PR230_BLOCK119_NATIVE_DIRICHLET_ACTION_LSZ_PROBE_NOTE_2026-05-17.md
+  - scripts/frontier_yt_pr230_block119_native_dirichlet_action_lsz_probe.py
+  - outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json
+  - .claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/PR_BODY_BLOCK119.md
   - docs/YT_PR230_BLOCK118_HAMMING_DIRICHLET_OH_AXIS_SELECTOR_NOTE_2026-05-17.md
   - scripts/frontier_yt_pr230_block118_hamming_dirichlet_oh_axis_selector.py
   - outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json

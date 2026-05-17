@@ -1,0 +1,228 @@
+{
+  "accepted_same_surface_action_absent": true,
+  "actual_current_surface_status": "exact support plus boundary / Block119 native spatial Dirichlet tensor-product probe gives a mathematical kinetic candidate for the Block118 selected O_H axis, but it is not an accepted EW/Higgs action, scalar LSZ/canonical normalization, source-overlap theorem, or strict C_ss/C_sH/C_HH pole-row authority",
+  "admitted_observation_status": null,
+  "aggregate_gates_still_deny_closure": true,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block118_axis_loaded": true,
+  "block119_native_dirichlet_action_lsz_probe_passed": true,
+  "certificate_kind": "pr230_block119_native_dirichlet_action_lsz_probe",
+  "claim_boundary": "Block119 may be used only as a finite mathematical support and firewall artifact. It must not be used to set kappa_s, c2, Z_match, or g2 to one; to treat a graph normalization as scalar LSZ; or to relabel finite C_sx/C_xx rows as physical C_sH/C_HH.",
+  "conditional_surface_status": "source-Higgs support if a future accepted same-surface EW/Higgs action adopts the Block118 axis, derives the canonical scalar LSZ metric and source derivative, and production physical Euclidean C_ss/C_sH/C_HH(tau) pole rows pass Gram, threshold, FV/IR, contact, and covariance gates",
+  "fail_count": 0,
+  "finite_dirichlet_candidate": {
+    "mathematical_candidate_summary": "A finite graph Dirichlet quadratic form can be normalized on the Block118 selected internal axis. This is only a dimensionless quadratic candidate, not an adopted PR230 EW/Higgs action.",
+    "quadratic_examples": [
+      {
+        "canonical_coordinate_norm": 0.4999999999999999,
+        "field_scale": 0.5,
+        "quadratic_action": 0.04774575140626312
+      },
+      {
+        "canonical_coordinate_norm": 0.9999999999999998,
+        "field_scale": 1.0,
+        "quadratic_action": 0.1909830056250525
+      },
+      {
+        "canonical_coordinate_norm": 1.9999999999999996,
+        "field_scale": 2.0,
+        "quadratic_action": 0.76393202250021
+      }
+    ],
+    "row_sums_show_dirichlet_boundary_not_periodic_zero_mode": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "selected_axis_dimension": 1,
+    "spatial_dirichlet_spectrum": {
+      "eigen_residual_max_abs": 2.7755575615628914e-16,
+      "eigenvalues": [
+        0.3819660112501053,
+        1.3819660112501055,
+        2.618033988749895,
+        3.6180339887498945
+      ],
+      "lowest_eigenvalue": 0.3819660112501053,
+      "lowest_mode": [
+        0.3717480344601845,
+        0.6015009550075455,
+        0.6015009550075455,
+        0.3717480344601844
+      ],
+      "lowest_mode_norm": 0.9999999999999998,
+      "rayleigh_quotient": 0.381966011250105,
+      "strictly_positive_spectrum": true
+    },
+    "spatial_laplacian": [
+      [
+        2.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        2.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        2.0,
+        -1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        2.0
+      ]
+    ],
+    "tensor_laplacian": [
+      [
+        2.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        2.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        2.0,
+        -1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        2.0
+      ]
+    ],
+    "tensor_laplacian_strictly_positive": true,
+    "tensor_laplacian_symmetric": true,
+    "tensor_spectrum": {
+      "eigen_residual_max_abs": 2.7755575615628914e-16,
+      "eigenvalues": [
+        0.3819660112501053,
+        1.3819660112501055,
+        2.618033988749895,
+        3.6180339887498945
+      ],
+      "lowest_eigenvalue": 0.3819660112501053,
+      "lowest_mode": [
+        0.3717480344601845,
+        0.6015009550075455,
+        0.6015009550075455,
+        0.3717480344601844
+      ],
+      "lowest_mode_norm": 0.9999999999999998,
+      "rayleigh_quotient": 0.381966011250105,
+      "strictly_positive_spectrum": true
+    }
+  },
+  "finite_kinetic_normalization_mathematically_available": true,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "renamed_C_sx_C_xx_as_C_sH_C_HH": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "treated_dirichlet_quadratic_as_accepted_ew_higgs_action": false,
+    "treated_graph_normalization_as_scalar_lsz_metric": false,
+    "treated_selected_axis_as_source_overlap": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_higgs_or_g2": false,
+    "used_planck_or_alpha_s_surface": false,
+    "used_reduced_cold_pilots_as_production_evidence": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "hypothetical_axiom_status": null,
+  "minimal_allowed_premises": [
+    "Block118 native Hamming-Dirichlet selected taste-radial axis as exact support only",
+    "finite graph Dirichlet quadratic forms as mathematical candidates",
+    "current PR230 action/LSZ/source-overlap/pole-row absence certificates",
+    "source-functional identifiability and Helmholtz counterfamily firewalls"
+  ],
+  "native_dirichlet_action_lsz_probe_support_only": true,
+  "native_dirichlet_candidate_constructed": true,
+  "open_imports_after_block119": [
+    "accepted same-surface EW/Higgs action on the PR230 substrate",
+    "canonical scalar LSZ/kinetic normalization tied to that action",
+    "source derivative and source-to-canonical-Higgs overlap kappa_sH",
+    "production physical Euclidean C_ss/C_sH/C_HH(tau) pole rows",
+    "Gram flatness, threshold, FV/IR, contact, and covariance authority",
+    "or a strict W/Z, Schur/scalar-LSZ, or neutral H3/H4 physical bridge"
+  ],
+  "parent_statuses": {
+    "block110_action_descent_obstruction": "exact negative boundary / Block110 Cl(3)/Z3 source-taste algebra does not derive accepted EW/Higgs action, canonical O_H, or scalar LSZ metric on the current PR230 surface",
+    "block112_helmholtz_obstruction": "exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action",
+    "block114_source_higgs_resolver": "exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact",
+    "block118_hamming_dirichlet_axis": "exact support / Block118 native Hamming-Dirichlet selector fixes the PR230 taste-radial O_H axis as the unique lowest cyclic trace-zero finite Dirichlet mode; accepted EW/Higgs action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows remain absent",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "canonical_oh_action_lsz_closure": "exact negative boundary / canonical O_H action-LSZ closure primitive absent",
+    "canonical_scalar_import_audit": "exact negative boundary / canonical scalar normalization import audit",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "fms_source_overlap_readout_gate": "exact-support / FMS source-overlap readout gate; action, canonical O_H, and strict C_ss/C_sH/C_HH pole rows absent on current PR230 surface",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached",
+    "same_source_ew_higgs_action_ansatz": "conditional support / same-source EW/Higgs action-extension ansatz specified; actual current-surface adoption absent",
+    "source_functional_lsz_identifiability": "exact negative boundary / source-functional LSZ identifiability theorem",
+    "source_higgs_direct_pole_contract": "exact-support / direct source-Higgs pole-row contract; O_H and production C_sH/C_HH rows are absent"
+  },
+  "pass_count": 13,
+  "physical_source_higgs_pole_rows_absent": true,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The native Dirichlet quadratic form is only a finite mathematical candidate. It does not adopt or derive the same-surface EW/Higgs action, kappa_sH/source overlap, canonical Higgs radial field, physical pole rows, W/Z response, Schur/Feshbach pole authority, or neutral H3/H4 bridge.",
+  "scalar_lsz_canonical_metric_absent": true,
+  "source_functional_identifiability_blocks_source_only_lift": true,
+  "source_overlap_not_fixed": true,
+  "source_overlap_scaling_orbit": [
+    {
+      "dE_top_ds": 0.38,
+      "dGamma_ss_dp2_at_pole": 1.75,
+      "forbidden_kappa_s_equals_one_readout": 0.38,
+      "same_source_lsz_product": 0.5026927491022722,
+      "source_coordinate_scale": 0.5
+    },
+    {
+      "dE_top_ds": 0.19,
+      "dGamma_ss_dp2_at_pole": 7.0,
+      "forbidden_kappa_s_equals_one_readout": 0.19,
+      "same_source_lsz_product": 0.5026927491022722,
+      "source_coordinate_scale": 1.0
+    },
+    {
+      "dE_top_ds": 0.095,
+      "dGamma_ss_dp2_at_pole": 28.0,
+      "forbidden_kappa_s_equals_one_readout": 0.095,
+      "same_source_lsz_product": 0.5026927491022722,
+      "source_coordinate_scale": 2.0
+    }
+  ],
+  "strict_authority_path_presence": {
+    "accepted_canonical_oh": false,
+    "accepted_same_source_ew_higgs_action": false,
+    "accepted_same_surface_ew_higgs_action": false,
+    "canonical_higgs_operator_certificate": false,
+    "neutral_h3h4_certificate": false,
+    "same_source_w_response_rows": false,
+    "source_higgs_pole_residue_packet": false,
+    "source_higgs_pole_rows": false,
+    "source_higgs_production_certificate": false,
+    "strict_schur_feshbach_rows": false
+  }
+}

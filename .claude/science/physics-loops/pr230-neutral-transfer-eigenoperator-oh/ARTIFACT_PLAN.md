@@ -1,5 +1,26 @@
 # Artifact Plan
 
+Block119 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block119_native_dirichlet_action_lsz_probe.py` | Created; PASS=13 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json` | Created |
+| Support/boundary note | `docs/YT_PR230_BLOCK119_NATIVE_DIRICHLET_ACTION_LSZ_PROBE_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block119:
+
+```text
+outputs/yt_pr230_same_source_ew_higgs_action_certificate_2026-05-17.json
+```
+
+or an equivalent accepted same-surface action/LSZ certificate that derives the
+canonical scalar metric and source derivative for the Block118 selected axis,
+followed by strict physical `C_ss/C_sH/C_HH(tau)` pole rows with Gram,
+threshold, FV/IR, contact, and covariance authority.  The Block119 finite
+Dirichlet candidate is support/boundary only and does not set `kappa_s`.
+
 Block118 artifacts:
 
 | Artifact | Path | Status |

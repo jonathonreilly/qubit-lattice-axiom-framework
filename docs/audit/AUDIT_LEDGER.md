@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 327 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 175 |
+| ~~audited_conditional~~ | 176 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 546 |
-| `audited_conditional` | 175 |
+| `audited_conditional` | 176 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1425 |
+| `unaudited` | 1424 |
 
 | claim_type | count |
 |---|---:|
@@ -677,6 +677,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `central_band_born_dense_sweep_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_review_packet_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1836,6 +1837,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `runner_output_empty`
   - `archived_session_log_or_named_numeric_output_missing`
   - `seed_strength_and_geometry_independence_sweeps_not_reproducible`
+- **auditor confidence:** high
+
+### `central_band_born_dense_sweep_note`
+
+- **Note:** [`CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md`](../../docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite central-band hard-geometry chokepoint sweep at npl = 60, N = 25/40/60, y_cut = 2.0, p_collapse = 0.2, using valid generated graphs and corrected I3/P with the -P(empty) term.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-151426-a5e2dcef-central_band_born_dense_-007`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cleanest retained dense setting is npl = 60, where the Born metric stays at machine precision across N = 25, 40, 60 for both LN + |y| and LN + |y| + collapse.  _(class `C`)_
+- **chain closes:** False — The runner/helper chain genuinely computes the corrected Sorkin metric and supports the reduced machine-precision dense-pocket claim. The note as written does not close cleanly because its quoted mean/max table is stale relative to the included stdout and its broader hard-geometry-enabling interpretation is not tested by a comparator in the restricted packet.
+- **rationale:** The primary runner is not a print-only or hard-coded expected-value check: it builds the graph, propagates amplitudes, applies shared collapse phases, and evaluates I3 including -P(empty). For the six retained npl = 60 LN+|y| and LN+|y|+collapse rows, current stdout still gives max |I3|/P below 1e-15 and PASS. However, multiple exact mean/max values in the source note do not match the cached runner output, and the note does not expose ok-count attrition or independently establish the broader hard-geometry-enabling interpretation.
 - **auditor confidence:** high
 
 ### `central_band_collapse_note`

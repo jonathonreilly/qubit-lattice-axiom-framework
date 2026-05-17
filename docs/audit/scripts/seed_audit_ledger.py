@@ -295,6 +295,7 @@ def seed() -> dict:
                 "claim_type_author_hint_raw": node.get("claim_type_author_hint_raw"),
                 "claim_type_author_hint": node.get("claim_type_author_hint"),
                 "runner_path": node["runner_path"],
+                "helper_runner_paths": node.get("helper_runner_paths", []),
                 "deps": deps,
                 "note_hash": node["note_hash"],
                 "previous_audits": [],
@@ -311,6 +312,7 @@ def seed() -> dict:
             row["claim_type_author_hint_raw"] = node.get("claim_type_author_hint_raw")
             row["claim_type_author_hint"] = node.get("claim_type_author_hint")
             row["runner_path"] = node["runner_path"]
+            row["helper_runner_paths"] = node.get("helper_runner_paths", [])
             row["deps"] = deps
             if prior.get("note_hash") != node["note_hash"] and prior.get("audit_status") in {None, "unaudited"}:
                 row["note_hash"] = node["note_hash"]

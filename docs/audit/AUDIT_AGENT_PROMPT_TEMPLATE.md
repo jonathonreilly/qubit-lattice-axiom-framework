@@ -106,6 +106,43 @@ in any input is consistent with class `(C)`.
 {{RUNNER_SOURCE}}
 ```
 
+### 3b. Helper runner sources (transitive imports from the primary runner)
+
+Primary runners often `import` from helper modules in `scripts/*.py`.
+Without their source, you cannot verify what the imported functions
+actually compute, and the chain reduces to opaque calls — which forces
+class `(C)` on packet-incompleteness grounds even when the chain is
+sound. The audit ledger row exposes a `helper_runner_paths` field
+listing the transitive set of `scripts/X.py` paths the audit packet
+builder is required to include alongside the primary runner.
+
+The full source of each helper script is included below, one per
+section, in the same order as `helper_runner_paths` in the ledger row.
+
+```python
+{{HELPER_RUNNER_SOURCES}}
+```
+
+When forming the load-bearing-step class judgment:
+
+- Treat each helper as part of the chain. A helper that hard-codes a
+  contested constant turns the parent into class `(G)` numerical-match
+  or class `(B)` cross-note input verification.
+- A helper that genuinely instantiates framework primitives and is
+  called from the primary runner's load-bearing path is consistent
+  with class `(C)` for the parent.
+- A helper used only for plotting / logging / non-load-bearing
+  bookkeeping does not change the class judgment.
+
+If `helper_runner_paths` is non-empty but a named helper is missing
+from this packet, that is a packet-completeness defect on the
+orchestrator's side, not a chain failure on the parent's side. In
+that case, return `audit_status=audited_conditional` with
+`repair_class=missing_helper_runner` and name the missing path in
+`verdict_rationale`.
+
+### 3c. If primary runner source is unavailable
+
 If the source is unavailable (`[runner missing on disk]` or similar),
 fall back to judging the load-bearing step from the note text alone, and
 include that limitation in `verdict_rationale`.

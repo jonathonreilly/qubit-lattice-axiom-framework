@@ -123,7 +123,14 @@ One-hop authority candidates cited:
   `frontier_pmns_twisted_flux_transfer_holonomy_boundary`. This is
   listed as a candidate dependency for the one-angle holonomy law named
   in the prior feedback notes as the missing dependency edge.
-- [`PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md`](PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md)
+- `PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0011 in the citation
+  graph. The "Consequence" section above already records the c3-character
+  strengthening reference in backticked form ("downstream consumer;
+  backticked to avoid length-2 cycle — citation graph direction is
+  *downstream → upstream*"). The load-bearing citation direction is
+  *c3_character_holonomy_closure → this_three_flux_holonomy_closure*,
+  not vice versa.)
   — audit row:
   `pmns_c3_character_holonomy_closure_note`. Sibling candidate
   authority strengthening the present three-angle closure to a native

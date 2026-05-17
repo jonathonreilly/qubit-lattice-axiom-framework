@@ -214,4 +214,11 @@ the final explanation.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - `LENSING_LONG_PATH_TEST_NOTE.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)
-- [lensing_long_path_test_note](LENSING_LONG_PATH_TEST_NOTE.md)
+- `lensing_long_path_test_note`
+  (see-also cross-reference; backticked to break cycle-0009 in the citation
+  graph. The long-path test note explicitly "Falsifies:" the present finite-
+  path explanation as its own title-line scope ("Lensing Long-Path Test —
+  Falsifies the Finite-Path Explanation"); the load-bearing citation
+  direction is *lensing_long_path_test → this_finite_path_explanation*,
+  not vice versa. This bookkeeping bullet duplicated the already-backticked
+  entry above; left in see-also form for textual parity.)

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 114 |
+| **retained** | 115 |
 | **retained_no_go** | 139 |
 | **retained_bounded** | 351 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1224 |
+| unaudited | 1223 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 577 |
+| `audited_clean` | 578 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1437 |
+| `unaudited` | 1436 |
 
 | claim_type | count |
 |---|---:|
@@ -494,6 +494,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
+| `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -8964,6 +8965,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.
 - **rationale:** The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.
 - **auditor confidence:** judicial
+
+### `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`POISSON_SELF_GRAVITY_ZERO_COUPLING_EXACT_REDUCTION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/POISSON_SELF_GRAVITY_ZERO_COUPLING_EXACT_REDUCTION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** A narrow code-level identity for `scripts/poisson_self_gravity_loop.py`: finite valid zero-coupling inputs force zero field, convergence within two iterations, and zero-field propagation equal to the bare lattice propagator.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-213757-78dc5814-poisson_self_gravity_zer-009`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At coupling = epsilon * source_strength = 0, `_poisson_like_field` returns an identically zero field because every finite contribution `w * coupling * exp(-FIELD_MU * r) / r` is exactly 0.0.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the runner's own arithmetic and loop structure: zero coupling forces the kernel output to zero, the outer loop reaches a deterministic zero-field fixed point, and the propagator with zero field evaluates the same phase factors as the bare lattice propagator. No external physics bridge or retained upstream authority is needed for this narrow equality claim.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the provided code and finite IEEE-754 float semantics, not a definition, renaming, tuned numerical match, or external comparator. The companion runner exercises the kernel identity, outer-loop zero-coupling convergence, and bare-propagator reduction with exact equality checks rather than tolerance-only numerical agreement. The theorem is correctly scoped as a narrow code-level result and explicitly avoids promoting the broader parent physics note.
+- **auditor confidence:** high
 
 ### `portable_card_extension_note`
 

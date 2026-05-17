@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 739,
     "high": 35,
-    "leaf": 292,
+    "leaf": 291,
     "medium": 155
   },
   "cycle_break_target_count": 214,
@@ -31609,34 +31609,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
-        "native_gauge_closure_note",
-        "yt_ew_color_projection_theorem",
-        "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gate_b_grown_propagating_field_radical_note",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -39904,6 +39876,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 18,
-  "total_pending": 1221
+  "ready_count": 17,
+  "total_pending": 1220
 }

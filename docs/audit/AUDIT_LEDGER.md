@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 335 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1217 |
+| unaudited | 1216 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 177 |
+| ~~audited_conditional~~ | 178 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 555 |
-| `audited_conditional` | 177 |
+| `audited_conditional` | 178 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1414 |
+| `unaudited` | 1413 |
 
 | claim_type | count |
 |---|---:|
@@ -747,6 +747,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `family_companion_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4405,6 +4406,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** if `g_3^2 = 1`, `g_2^2 = 1/(d + 1)`, and `g_Y^2 = 1/(d + 2)`, then `1/g_em^2 = 2d + 3`  _(class `A`)_
 - **chain closes:** True — The note explicitly limits itself to algebra after the coupling inputs are assumed, and the stated identities follow by direct substitution. It does not claim to derive the inputs or a physical low-energy readout.
 - **rationale:** Within the bounded scope, the load-bearing step is ordinary algebra over explicitly assumed inputs, not a claimed first-principles derivation. The runner verifies the same substitutions and also checks boundary language in extra files, but those extra files are not needed for the scoped conditional identity. No external comparator, renaming, or tuned numerical match is present in the source note's actual claim boundary.
+- **auditor confidence:** high
+
+### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic bounded interval for g_2(v=246 GeV) from u_0(SU(2))∈[0.96,0.98], b_2=19/6, g_2²|_lattice=1/4, α^tadpole=α^bare/u_0², and L=38.44 under the stated 1-loop running bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-153105-a5e2dcef-g_2_v_bounded_interval_n-018`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute 1/α_2^tadpole|_lattice = 16πu_0² into the 1-loop running equation 1/α_2(v)=1/α_2(M_Pl)-(b_2/(2π))L and invert to g_2(v)=sqrt(4π/(16πu_0²-(b_2/(2π))L)), with monotonicity reversing the u_0 endpoints.  _(class `A`)_
+- **chain closes:** False — The substitution, monotonicity, and numerical endpoints close once the six named inputs are granted. The retained-grade chain does not close because the SU(2) u_0 interval, the scale log L=38.44, and the 1-loop running bridge are admitted external inputs rather than derived in the restricted packet.
+- **rationale:** Issue: the downstream algebra is correct, but the numerical bounded interval relies on X1 u_0(SU(2))∈[0.96,0.98], X6 L=38.44, and the imported 1-loop running bridge rather than retained derivations in the packet. Why this blocks: under the rubric, explicit admitted bridge/scale/numerical premises keep the result conditional even when the substitution itself is exact. Repair target: add retained theorem support deriving or ratifying the SU(2) u_0 interval, the scale-log normalization, and the RGE bridge as applicable. Claim boundary until fixed: valid algebraic bounded interval conditional on X1-X6, not a fully retained framework derivation of g_2(v).
 - **auditor confidence:** high
 
 ### `g_bare_canonical_convention_narrow_theorem_note_2026-05-02`

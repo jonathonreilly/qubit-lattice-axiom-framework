@@ -1585,6 +1585,38 @@
       "to": "koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29"
     },
     {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_u_bae_ncg_spectral_triple_note_2026-05-08_probeu_bae_ncg"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+    },
+    {
       "from": "baryon_charge_integrality_note_2026-05-02",
       "to": "ewsb_pattern_from_higgs_y_note_2026-05-02"
     },
@@ -39116,6 +39148,26 @@
       "runner_path": "scripts/cl3_bae_max_entropy_retained_2026_05_10_baemaxent.py",
       "title": "BAE Max-Entropy Retained Bounded Obstruction"
     },
+    "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17": {
+      "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_u_bae_ncg_spectral_triple_note_2026-05-08_probeu_bae_ncg",
+        "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13",
+        "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
+        "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+      ],
+      "note_hash": "40706cae8c3026f1839a11924143ea2948e72b0759f845020b234b979a03190c",
+      "path": "docs/BAE_NCG_KODIM_REAL_STRUCTURE_PARTIAL_NARROWING_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py",
+      "title": "BAE NCG / KO-Dim Real-Structure Partial Narrowing Note"
+    },
     "baryon_charge_integrality_note_2026-05-02": {
       "claim_id": "baryon_charge_integrality_note_2026-05-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -73381,7 +73433,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 404,
+      "bounded_theorem": 405,
       "decoration": 1,
       "meta": 157,
       "no_go": 53,
@@ -73390,7 +73442,7 @@
       "positive_theorem": 153
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 850,
+      "bounded_theorem": 851,
       "decoration": 1,
       "meta": 157,
       "no_go": 158,
@@ -73398,10 +73450,10 @@
       "open_gate": 123,
       "positive_theorem": 606
     },
-    "edge_count": 9061,
-    "leaf_count": 720,
-    "node_count": 2339,
+    "edge_count": 9069,
+    "leaf_count": 719,
+    "node_count": 2340,
     "root_count": 842,
-    "runners_with_path": 1949
+    "runners_with_path": 1950
   }
 }

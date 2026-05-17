@@ -320,3 +320,49 @@ Verified at `2026-05-17T17:07:23Z`:
 - chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`
 - campaign status certificate: `PASS=445 FAIL=0`
 - assumption/import stress: `PASS=128 FAIL=0`
+
+## Block128
+
+Working title: PR230 Block128 strict W/Z/source-row construction attempt.
+
+Purpose:
+
+- attempt to construct strict same-source W/Z production rows from existing raw
+  rows now that Block126 supplies the top-side configuration-key packet;
+- require W/Z rows to be production, not scout/smoke/schema, and matchable to
+  the 1008 Block126 top-side keys;
+- require strict non-observed `g2`, accepted same-source EW/Higgs action, and
+  matched top-W/Z covariance rather than package or observed shortcuts;
+- if W/Z construction is impossible, test the accepted `O_H`/action plus
+  nonempty `C_ss/C_sH/C_HH` pole-row source-Higgs fallback before pivoting.
+
+Files:
+
+- `docs/YT_PR230_BLOCK128_POST_BLOCK127_WZ_LAUNCH_PREFLIGHT_NOTE_2026-05-17.md`
+- `docs/YT_PR230_BLOCK128_STRICT_WZ_SOURCE_ROW_CONSTRUCTION_ATTEMPT_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block128_post_block127_wz_launch_preflight.py`
+- `scripts/frontier_yt_pr230_block128_strict_wz_source_row_construction_attempt.py`
+- `outputs/yt_pr230_block128_post_block127_wz_launch_preflight_2026-05-17.json`
+- `outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json`
+
+Result: exact negative boundary.  The 63 Block126 raw production files contain
+1008 scalar/top configuration rows but only disabled W/Z stubs and zero
+nonempty W/Z mass-fit rows.  The W/Z smoke schema is scout/synthetic,
+aggregate-only, not matchable to Block126 keys, and lacks matched covariance,
+strict `g2`, and identity certificates.  The source-Higgs pivot also remains
+blocked: raw finite `C_ss/C_sx/C_xx` support and the Block124 693-row finite
+packet are not pole residues, `source_higgs_pole_residue_rows=0`, and accepted
+canonical `O_H`/action authority is absent.
+
+Verified at `2026-05-17T17:22:53Z`:
+
+- Block128 py_compile: passed
+- Block128 post-Block127 W/Z launch preflight: `PASS=14 FAIL=0`
+- Block128 strict W/Z/source-row construction attempt: `PASS=12 FAIL=0`
+- campaign status certificate: `PASS=447 FAIL=0`
+- assumption/import stress: `PASS=130 FAIL=0`
+- retained-route certificate: `PASS=325 FAIL=0`
+- full positive closure assembly: `PASS=200 FAIL=0`
+- positive-closure completion audit: `PASS=79 FAIL=0`
+- target-timeseries full-set checkpoint: `PASS=9 FAIL=0`
+- chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`

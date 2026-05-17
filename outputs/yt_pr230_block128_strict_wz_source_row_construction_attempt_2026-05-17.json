@@ -1,0 +1,222 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block128 cannot construct a strict W/Z packet from existing raw rows and the source-Higgs pole-row pivot also lacks accepted O_H/action authority plus nonempty pole residues",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block126_raw_wz_scan": {
+    "disabled_wz_stub_file_count": 63,
+    "glob": "outputs/yt_direct_lattice_correlator_production_schur_higher_shell_rows/L12_T24_chunk*/L12xT24/ensemble_measurement.json",
+    "raw_file_count": 63,
+    "scalar_configuration_slope_rows": 1008,
+    "top_configuration_slope_rows": 1008,
+    "wz_like_files_sample": [],
+    "wz_like_raw_file_count": 0
+  },
+  "block128_strict_wz_source_row_construction_attempt_passed": true,
+  "canonical_action_summary": {
+    "accepted_current_surface": false,
+    "exact_missing_primitive": "A same-surface accepted EW/Higgs action and LSZ pinning theorem that proves the PR230 source-pole direction is the canonical Higgs radial direction, or equivalently supplies the accepted O_H certificate consumed by C_ss/C_sH/C_HH production rows.",
+    "same_surface_cl3_z3_derived": false
+  },
+  "conditional_surface_status": null,
+  "constructive_status": {
+    "recommended_pivot": "strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority",
+    "strict_source_higgs_constructible_from_current_raw_rows": false,
+    "strict_wz_constructible_from_current_raw_rows": false
+  },
+  "current_closure_satisfied": false,
+  "exact_next_action": "Do not spend another block on W/Z row inventory unless a new production W/Z mass-fit artifact appears.  Pivot to strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority; reopen source-Higgs only with accepted canonical O_H/action plus nonempty numeric C_ss/C_sH/C_HH pole-residue rows.",
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "assumed_top_wz_covariance_or_factorization": false,
+    "claimed_retained_or_proposed_retained": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_finite_chunks_as_pole_rows": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_package_hierarchy_v": false,
+    "used_scout_or_smoke_rows_as_closure": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "hypothetical_axiom_status": null,
+  "parent_certificates": {
+    "block124_completed_source_higgs_row_intake": "outputs/yt_pr230_block124_completed_source_higgs_row_intake_2026-05-17.json",
+    "block125_post_chunk_strict_contract_resolver": "outputs/yt_pr230_block125_post_chunk_strict_contract_resolver_2026-05-17.json",
+    "block126_matched_top_additive_subtraction_packet": "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json",
+    "block127_wz_builder_block126_top_packet_adapter": "outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "canonical_oh_action_lsz_closure": "outputs/yt_canonical_oh_action_lsz_closure_2026-05-12.json",
+    "completion_audit": "outputs/yt_pr230_positive_closure_completion_audit_2026-05-05.json",
+    "electroweak_g2_certificate_builder": "outputs/yt_electroweak_g2_certificate_builder_2026-05-05.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "same_source_ew_action_builder": "outputs/yt_wz_same_source_ew_action_certificate_builder_2026-05-04.json",
+    "source_higgs_pole_row_assembly": "outputs/yt_source_higgs_pole_row_assembly_2026-05-12.json",
+    "wz_g2_authority_firewall": "outputs/yt_wz_g2_authority_firewall_2026-05-05.json",
+    "wz_mass_fit_response_row_builder": "outputs/yt_wz_mass_fit_response_row_builder_2026-05-04.json",
+    "wz_physical_response_packet_intake": "outputs/yt_pr230_wz_physical_response_packet_intake_checkpoint_2026-05-07.json",
+    "wz_smoke_to_production_no_go": "outputs/yt_pr230_wz_smoke_to_production_promotion_no_go_2026-05-05.json"
+  },
+  "parent_statuses": {
+    "block124_completed_source_higgs_row_intake": "bounded-support / Block124 completed 63/63 finite source-Higgs row intake; strict Block123 pole packet absent",
+    "block125_post_chunk_strict_contract_resolver": "exact negative boundary / Block125 post-chunk strict contract resolver finds no source-Higgs, W/Z, Schur, or neutral positive closure packet on the completed PR230 surface",
+    "block126_matched_top_additive_subtraction_packet": "bounded-support / Block126 constructs matched top-side additive-subtraction rows from completed PR230 chunks; W/Z response, matched top-W/Z covariance, strict g2, and accepted action remain absent",
+    "block127_wz_builder_block126_top_packet_adapter": "bounded-support / Block127 wires the Block126 matched top-side packet into the W/Z row builder; W/Z rows, matched top-W/Z covariance, strict g2, and accepted action remain absent",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "canonical_oh_action_lsz_closure": "exact negative boundary / canonical O_H action-LSZ closure primitive absent",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "electroweak_g2_certificate_builder": "open / electroweak g2 certificate builder inputs absent",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached",
+    "same_source_ew_action_builder": "open / same-source EW action certificate absent",
+    "source_higgs_pole_row_assembly": "open / strict source-Higgs pole-row assembly blocked by canonical O_H authority and missing pole rows",
+    "wz_g2_authority_firewall": "exact negative boundary / WZ response g2 authority absent for PR230",
+    "wz_mass_fit_response_row_builder": "open / WZ mass-fit response-row builder has Block126 top-side packet; W/Z/g2/action inputs absent",
+    "wz_physical_response_packet_intake": "exact negative boundary / WZ physical-response packet not present on current PR230 surface; only scout/schema and support-contract artifacts exist",
+    "wz_smoke_to_production_no_go": "exact negative boundary / WZ smoke rows cannot be promoted to production WZ response"
+  },
+  "pass_count": 12,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The Block126 production raw files have no W/Z mass-fit rows matchable to the 1008 top-side configuration keys, the only W/Z-shaped rows are the known scout smoke schema, strict g2/action certificates are absent, and the source-Higgs fallback has zero C_ss/C_sH/C_HH pole-residue rows with no accepted canonical O_H/action authority.",
+  "source_higgs_assembly_summary": {
+    "block124_assembled_finite_row_count": 693,
+    "blocked_by_canonical_o_h_authority": true,
+    "blocked_by_missing_production_pole_rows": true,
+    "exact_missing_production_fields": [
+      "phase=production source-Higgs pole-row artifact",
+      "same_surface_cl3_z3=true",
+      "same_ensemble=true",
+      "same_source_coordinate=true",
+      "source_coordinate",
+      "surface_id shared by action/source/O_H/rows",
+      "canonical_higgs_operator.operator_id",
+      "canonical_higgs_operator.operator_definition",
+      "canonical_higgs_operator.surface_id matching measurement surface_id",
+      "canonical_higgs_operator.operator_authority_scope=same_surface_canonical_action_lsz",
+      "canonical_higgs_operator.canonical_higgs_operator_identity_passed=true",
+      "canonical_higgs_operator.identity_certificate",
+      "canonical_higgs_operator.lsz_normalization_certificate",
+      "canonical_higgs_operator.same_surface_canonical_action_certificate",
+      "canonical_higgs_operator.surface_matches_measurement=true",
+      "canonical_higgs_operator.hunit_used_as_operator=false",
+      "canonical_higgs_operator.static_ew_algebra_used_as_operator=false",
+      "pole_control.isolated_scalar_pole_passed=true",
+      "pole_control.pole_location_x or pole_residue_rows[].pole_mass_sq_lat",
+      "pole_control.model_class_or_pole_saturation_certificate_passed=true",
+      "pole_control.fv_ir_zero_mode_control_passed=true",
+      "pole_control.contact_term_scheme_certificate_passed=true",
+      "residue_matrix.Res_C_ss",
+      "residue_matrix.Res_C_sH",
+      "residue_matrix.Res_C_HH",
+      "residue_matrix errors or 3x3 covariance for C_ss/C_sH/C_HH",
+      "gram_purity computed from residues: Res(C_sH)^2 = Res(C_ss) Res(C_HH)",
+      "firewall.used_observed_targets_as_selectors=false",
+      "firewall.used_yt_ward_identity=false",
+      "firewall.used_y_t_bare=false",
+      "firewall.used_alpha_lm_or_plaquette=false",
+      "firewall.used_plaquette_u0=false",
+      "firewall.used_hunit_matrix_element_readout=false",
+      "firewall.used_alias_imports_as_load_bearing=false",
+      "used_as_physical_yukawa_readout=false or claims_physical_yukawa_closure=false"
+    ],
+    "strict_c_ss_c_sh_c_hh_rows_exist": false
+  },
+  "source_higgs_raw_scan": {
+    "alias_firewall_file_count": 63,
+    "canonical_identity_pass_file_count": 0,
+    "pole_residue_row_count": 0,
+    "polefit_C_sH_or_C_HH_mode_rows": 0,
+    "polefit_C_ss_mode_rows": 144,
+    "polefit_glob": "outputs/yt_direct_lattice_correlator_production_fh_lsz_polefit8x8/L12_T24_chunk*/L12xT24/ensemble_measurement.json",
+    "polefit_raw_file_count": 18,
+    "raw_finite_C_ss_C_sx_C_xx_row_count": 252,
+    "source_higgs_glob": "outputs/yt_direct_lattice_correlator_production_two_source_taste_radial_rows/L12_T24_chunk*/L12xT24/ensemble_measurement.json",
+    "source_higgs_raw_file_count": 63
+  },
+  "strict_non_claims": {
+    "does_not_assume_block126_top_rows_are_wz_rows": true,
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_treat_finite_C_sx_C_xx_as_pole_residues": true,
+    "does_not_use_observed_targets_or_package_v": true,
+    "does_not_use_smoke_rows_as_closure": true
+  },
+  "strict_wz_expected_path_presence": {
+    "fh_gauge_mass_response_measurement_rows": false,
+    "same_source_ew_action_certificate": false,
+    "strict_g2_certificate": false,
+    "top_wz_matched_covariance_certificate": false,
+    "wz_correlator_mass_fit_rows": false,
+    "wz_mass_fit_response_rows": false
+  },
+  "top_key_summary": {
+    "matched_tau1_row_count": 1008,
+    "sample_configuration_keys": [
+      {
+        "chunk_index": 1,
+        "configuration_index": 0,
+        "selected_mass_parameter": 0.75
+      },
+      {
+        "chunk_index": 1,
+        "configuration_index": 1,
+        "selected_mass_parameter": 0.75
+      },
+      {
+        "chunk_index": 1,
+        "configuration_index": 2,
+        "selected_mass_parameter": 0.75
+      },
+      {
+        "chunk_index": 1,
+        "configuration_index": 3,
+        "selected_mass_parameter": 0.75
+      },
+      {
+        "chunk_index": 1,
+        "configuration_index": 4,
+        "selected_mass_parameter": 0.75
+      }
+    ],
+    "selected_mass_parameters": [
+      0.75
+    ],
+    "tau_slice_count": 23
+  },
+  "wz_smoke_candidate_validation": {
+    "checks": {
+      "candidate_present": true,
+      "has_block126_scale_row_count": false,
+      "has_configuration_keys_matchable_to_block126": false,
+      "identity_certificates_passed": false,
+      "matched_top_wz_covariance_present": false,
+      "not_synthetic_contract": false,
+      "phase_is_production": false,
+      "rows_are_correlator_mass_fits": true,
+      "rows_cover_source_shifts": true,
+      "same_source_coordinate": true,
+      "source_shifts_neg_zero_pos": true,
+      "strict_g2_present": false
+    },
+    "configuration_count_values": [
+      2
+    ],
+    "correlator_sources": [
+      "synthetic_scout_contract_not_EW_field"
+    ],
+    "failed_checks": [
+      "phase_is_production",
+      "not_synthetic_contract",
+      "has_configuration_keys_matchable_to_block126",
+      "has_block126_scale_row_count",
+      "matched_top_wz_covariance_present",
+      "strict_g2_present",
+      "identity_certificates_passed"
+    ],
+    "path": "outputs/yt_pr230_wz_harness_smoke_schema_tmp/L2xT4/ensemble_measurement.json",
+    "phase": "scout",
+    "row_count": 3,
+    "valid_for_block126_strict_join": false
+  }
+}

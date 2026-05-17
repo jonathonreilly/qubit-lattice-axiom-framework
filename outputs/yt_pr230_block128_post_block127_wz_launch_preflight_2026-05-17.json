@@ -1,0 +1,91 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block128 post-Block127 W/Z production launch preflight: top-side root satisfied, W/Z rows/action/g2/covariance/production harness roots absent",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block128_post_block127_wz_launch_preflight_passed": true,
+  "conditional_surface_status": null,
+  "current_closure_satisfied": false,
+  "exact_next_action": "Implement a genuine same-source EW/Higgs W/Z correlator mass-fit production path with accepted action and strict g2/covariance, or pivot back to accepted canonical O_H/action plus numeric C_ss/C_sH/C_HH pole-residue rows.",
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "assumed_top_wz_covariance_or_factorization": false,
+    "claimed_retained_or_proposed_retained": false,
+    "promoted_top_side_packet_to_wz_closure": false,
+    "promoted_wz_smoke_to_production": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_yt_ward_identity": false
+  },
+  "harness_diagnosis": {
+    "has_genuine_wz_production_path": false,
+    "path": "scripts/yt_direct_lattice_correlator_production.py",
+    "strict_rows_path": "outputs/yt_fh_gauge_mass_response_measurement_rows_2026-05-03.json",
+    "strict_rows_present": false,
+    "wz_smoke_only": true
+  },
+  "hypothetical_axiom_status": null,
+  "minimal_unlock_packet": [
+    "accepted same-source EW/Higgs action certificate",
+    "genuine W/Z correlator mass-fit rows by source shift",
+    "configuration keys matchable to the Block126 top-side rows",
+    "matched top-W/Z covariance rows",
+    "strict non-observed g2 or an allowed same-source cancellation theorem"
+  ],
+  "parent_certificates": {
+    "block126_matched_top_additive_subtraction_packet": "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json",
+    "block127_wz_builder_block126_top_packet_adapter": "outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json",
+    "top_wz_matched_covariance_builder": "outputs/yt_top_wz_matched_covariance_certificate_builder_2026-05-04.json",
+    "wz_correlator_mass_fit_path_gate": "outputs/yt_wz_correlator_mass_fit_path_gate_2026-05-04.json",
+    "wz_g2_authority_firewall": "outputs/yt_wz_g2_authority_firewall_2026-05-05.json",
+    "wz_mass_fit_response_row_builder": "outputs/yt_wz_mass_fit_response_row_builder_2026-05-04.json",
+    "wz_response_manifest": "outputs/yt_fh_gauge_mass_response_manifest_2026-05-02.json",
+    "wz_response_row_production_attempt": "outputs/yt_wz_response_row_production_attempt_2026-05-03.json",
+    "wz_same_source_ew_action_certificate_builder": "outputs/yt_wz_same_source_ew_action_certificate_builder_2026-05-04.json",
+    "wz_same_source_ew_action_gate": "outputs/yt_wz_same_source_ew_action_gate_2026-05-04.json",
+    "wz_smoke_to_production_promotion_no_go": "outputs/yt_pr230_wz_smoke_to_production_promotion_no_go_2026-05-05.json"
+  },
+  "pass_count": 14,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "After Block127, the top-side packet is no longer the W/Z launch blocker. The current surface still lacks genuine W/Z mass-fit rows, accepted same-source EW/Higgs action, strict non-observed g2, matched top-W/Z covariance, and a production W/Z harness.",
+  "root_matrix": {
+    "accepted_same_source_ew_action": {
+      "blocked_by": "outputs/yt_wz_same_source_ew_action_gate_2026-05-04.json",
+      "satisfied": false
+    },
+    "matched_top_wz_covariance": {
+      "blocked_by": "outputs/yt_top_wz_matched_covariance_certificate_builder_2026-05-04.json",
+      "satisfied": false
+    },
+    "production_harness_path": {
+      "blocked_by": "scripts/yt_direct_lattice_correlator_production.py",
+      "satisfied": false,
+      "smoke_only": true
+    },
+    "production_wz_mass_fit_rows": {
+      "blocked_by": "outputs/yt_wz_correlator_mass_fit_path_gate_2026-05-04.json",
+      "satisfied": false
+    },
+    "strict_non_observed_g2": {
+      "blocked_by": "outputs/yt_wz_g2_authority_firewall_2026-05-05.json",
+      "satisfied": false
+    },
+    "top_side_packet": {
+      "evidence": "outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json",
+      "satisfied": true
+    }
+  },
+  "strict_non_claims": {
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_promote_smoke_rows": true,
+    "does_not_treat_top_side_packet_as_wz_closure": true,
+    "does_not_use_observed_wz_or_g2": true,
+    "does_not_write_or_synthesize_wz_rows": true
+  }
+}

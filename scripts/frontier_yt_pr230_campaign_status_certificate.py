@@ -555,6 +555,12 @@ def main() -> int:
         "pr230_block127_wz_builder_block126_top_packet_adapter": load(
             "outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json"
         ),
+        "pr230_block128_post_block127_wz_launch_preflight": load(
+            "outputs/yt_pr230_block128_post_block127_wz_launch_preflight_2026-05-17.json"
+        ),
+        "pr230_block128_strict_wz_source_row_construction_attempt": load(
+            "outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3451,6 +3457,121 @@ def main() -> int:
         "pr230-block127-wz-builder-block126-top-packet-adapter-supports-only",
         block127_wz_builder_block126_top_packet_adapter_supports_only,
         statuses["pr230_block127_wz_builder_block126_top_packet_adapter"],
+    )
+    block128_post_block127_wz_launch_preflight_blocks = (
+        "Block128 post-Block127 W/Z production launch preflight"
+        in str(statuses["pr230_block128_post_block127_wz_launch_preflight"])
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"].get(
+            "block128_post_block127_wz_launch_preflight_passed"
+        )
+        is True
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"]
+        .get("root_matrix", {})
+        .get("top_side_packet", {})
+        .get("satisfied")
+        is True
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"]
+        .get("root_matrix", {})
+        .get("production_wz_mass_fit_rows", {})
+        .get("satisfied")
+        is False
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"]
+        .get("root_matrix", {})
+        .get("accepted_same_source_ew_action", {})
+        .get("satisfied")
+        is False
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"]
+        .get("root_matrix", {})
+        .get("strict_non_observed_g2", {})
+        .get("satisfied")
+        is False
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"]
+        .get("root_matrix", {})
+        .get("matched_top_wz_covariance", {})
+        .get("satisfied")
+        is False
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"]
+        .get("harness_diagnosis", {})
+        .get("wz_smoke_only")
+        is True
+        and certificates["pr230_block128_post_block127_wz_launch_preflight"]
+        .get("harness_diagnosis", {})
+        .get("has_genuine_wz_production_path")
+        is False
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block128_post_block127_wz_launch_preflight"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block128-post-block127-wz-launch-preflight-blocks",
+        block128_post_block127_wz_launch_preflight_blocks,
+        statuses["pr230_block128_post_block127_wz_launch_preflight"],
+    )
+    block128_strict_wz_source_row_construction_attempt_blocks = (
+        "Block128 cannot construct a strict W/Z packet"
+        in str(statuses["pr230_block128_strict_wz_source_row_construction_attempt"])
+        and certificates[
+            "pr230_block128_strict_wz_source_row_construction_attempt"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "pr230_block128_strict_wz_source_row_construction_attempt"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "pr230_block128_strict_wz_source_row_construction_attempt"
+        ].get("block128_strict_wz_source_row_construction_attempt_passed")
+        is True
+        and certificates[
+            "pr230_block128_strict_wz_source_row_construction_attempt"
+        ]
+        .get("constructive_status", {})
+        .get("strict_wz_constructible_from_current_raw_rows")
+        is False
+        and certificates[
+            "pr230_block128_strict_wz_source_row_construction_attempt"
+        ]
+        .get("constructive_status", {})
+        .get("strict_source_higgs_constructible_from_current_raw_rows")
+        is False
+        and certificates[
+            "pr230_block128_strict_wz_source_row_construction_attempt"
+        ]
+        .get("block126_raw_wz_scan", {})
+        .get("wz_like_raw_file_count")
+        == 0
+        and certificates[
+            "pr230_block128_strict_wz_source_row_construction_attempt"
+        ]
+        .get("source_higgs_raw_scan", {})
+        .get("pole_residue_row_count")
+        == 0
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block128_strict_wz_source_row_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block128-strict-wz-source-row-construction-attempt-blocks",
+        block128_strict_wz_source_row_construction_attempt_blocks,
+        statuses["pr230_block128_strict_wz_source_row_construction_attempt"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9251,6 +9372,12 @@ def main() -> int:
     )
     result["block127_wz_builder_block126_top_packet_adapter_supports_only"] = (
         block127_wz_builder_block126_top_packet_adapter_supports_only
+    )
+    result["block128_post_block127_wz_launch_preflight_blocks"] = (
+        block128_post_block127_wz_launch_preflight_blocks
+    )
+    result["block128_strict_wz_source_row_construction_attempt_blocks"] = (
+        block128_strict_wz_source_row_construction_attempt_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

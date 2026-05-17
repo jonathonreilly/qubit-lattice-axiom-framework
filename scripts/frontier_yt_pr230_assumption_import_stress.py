@@ -395,6 +395,12 @@ def main() -> int:
         "block127_wz_builder_block126_top_packet_adapter": load(
             "outputs/yt_pr230_block127_wz_builder_block126_top_packet_adapter_2026-05-17.json"
         ),
+        "block128_post_block127_wz_launch_preflight": load(
+            "outputs/yt_pr230_block128_post_block127_wz_launch_preflight_2026-05-17.json"
+        ),
+        "block128_strict_wz_source_row_construction_attempt": load(
+            "outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2848,6 +2854,114 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block128_post_block127_wz_launch_preflight_keeps_imports_clean = (
+        "Block128 post-Block127 W/Z production launch preflight"
+        in str(
+            certificates["block128_post_block127_wz_launch_preflight"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block128_post_block127_wz_launch_preflight"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block128_post_block127_wz_launch_preflight"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block128_post_block127_wz_launch_preflight"].get(
+            "block128_post_block127_wz_launch_preflight_passed"
+        )
+        is True
+        and certificates["block128_post_block127_wz_launch_preflight"]
+        .get("root_matrix", {})
+        .get("top_side_packet", {})
+        .get("satisfied")
+        is True
+        and certificates["block128_post_block127_wz_launch_preflight"]
+        .get("root_matrix", {})
+        .get("production_wz_mass_fit_rows", {})
+        .get("satisfied")
+        is False
+        and certificates["block128_post_block127_wz_launch_preflight"]
+        .get("harness_diagnosis", {})
+        .get("wz_smoke_only")
+        is True
+        and certificates["block128_post_block127_wz_launch_preflight"]
+        .get("strict_non_claims", {})
+        .get("does_not_promote_smoke_rows")
+        is True
+        and certificates["block128_post_block127_wz_launch_preflight"]
+        .get("strict_non_claims", {})
+        .get("does_not_claim_retained_or_proposed_retained")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block128_post_block127_wz_launch_preflight"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block128-post-block127-wz-launch-preflight-keeps-imports-clean",
+        block128_post_block127_wz_launch_preflight_keeps_imports_clean,
+        certificates["block128_post_block127_wz_launch_preflight"].get(
+            "actual_current_surface_status"
+        ),
+    )
+    block128_strict_wz_source_row_construction_attempt_keeps_imports_clean = (
+        "Block128 cannot construct a strict W/Z packet"
+        in str(
+            certificates["block128_strict_wz_source_row_construction_attempt"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block128_strict_wz_source_row_construction_attempt"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block128_strict_wz_source_row_construction_attempt"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block128_strict_wz_source_row_construction_attempt"].get(
+            "block128_strict_wz_source_row_construction_attempt_passed"
+        )
+        is True
+        and certificates["block128_strict_wz_source_row_construction_attempt"]
+        .get("constructive_status", {})
+        .get("strict_wz_constructible_from_current_raw_rows")
+        is False
+        and certificates["block128_strict_wz_source_row_construction_attempt"]
+        .get("constructive_status", {})
+        .get("strict_source_higgs_constructible_from_current_raw_rows")
+        is False
+        and certificates["block128_strict_wz_source_row_construction_attempt"]
+        .get("strict_non_claims", {})
+        .get("does_not_use_smoke_rows_as_closure")
+        is True
+        and certificates["block128_strict_wz_source_row_construction_attempt"]
+        .get("strict_non_claims", {})
+        .get("does_not_claim_retained_or_proposed_retained")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block128_strict_wz_source_row_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block128-strict-wz-source-row-construction-attempt-keeps-imports-clean",
+        block128_strict_wz_source_row_construction_attempt_keeps_imports_clean,
+        certificates["block128_strict_wz_source_row_construction_attempt"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3192,6 +3306,8 @@ def main() -> int:
         "block125_post_chunk_strict_contract_resolver_keeps_imports_clean": block125_post_chunk_strict_contract_resolver_keeps_imports_clean,
         "block126_matched_top_additive_subtraction_packet_keeps_imports_clean": block126_matched_top_additive_subtraction_packet_keeps_imports_clean,
         "block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean": block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean,
+        "block128_post_block127_wz_launch_preflight_keeps_imports_clean": block128_post_block127_wz_launch_preflight_keeps_imports_clean,
+        "block128_strict_wz_source_row_construction_attempt_keeps_imports_clean": block128_strict_wz_source_row_construction_attempt_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

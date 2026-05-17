@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block127.
+Status: exact negative boundary plus bounded support through Block128.
 
 `proposed_retained`: not allowed.
 
@@ -36,7 +36,13 @@ top-side packet into the W/Z mass-fit response-row builder and verifies the
 builder recognizes the packet as top-side production support, but still refuses
 strict W/Z output.  The strict W/Z roots remain absent: same-source W/Z rows,
 matched top-W/Z covariance, strict non-observed `g2`, accepted same-source
-EW/Higgs action, and canonical-Higgs/source-overlap authority.
+EW/Higgs action, and canonical-Higgs/source-overlap authority. Block128 then
+checks the constructive join and fallback directly: all 63 Block126 raw files
+carry only disabled W/Z stubs with zero nonempty production W/Z rows, the only
+W/Z-shaped rows are the scout smoke schema and are not key-matchable to
+Block126, strict `g2`/action paths remain absent, and the source-Higgs fallback
+still has zero strict `C_ss/C_sH/C_HH` pole-residue rows plus no accepted
+canonical `O_H`/action authority.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -49,6 +55,11 @@ EW/Higgs action, and canonical-Higgs/source-overlap authority.
 - no W/Z rows, matched top-W/Z covariance, strict non-observed `g2`, or
   accepted same-source EW/Higgs action for the Block126 top-side packet, even
   after Block127 wires that packet into the W/Z builder;
+- no construction from current raw rows to strict W/Z production rows matchable
+  to Block126: Block128 finds only disabled W/Z stubs in the 63 Block126 raw
+  files and a non-production scout smoke schema;
+- no accepted canonical `O_H`/action plus nonempty numeric `C_ss/C_sH/C_HH`
+  pole-residue source-Higgs fallback after Block128;
 - no strict W/Z physical-response packet with accepted action, production rows,
   matched covariance, strict non-observed `g2` or allowed absolute pin,
   `delta_perp`, and final W-response rows;

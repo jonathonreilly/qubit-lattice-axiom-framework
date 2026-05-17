@@ -2,22 +2,22 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T17:07:23Z"
+last_checkpoint_utc: "2026-05-17T17:22:53Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
-branch: physics-loop/pr230-retained-closure-campaign-block127-20260517
+branch: physics-loop/pr230-retained-closure-campaign-block128-20260517
 base_surface: origin/claude/yt-direct-lattice-correlator-2026-04-30
 latest_pr230_head: "683365f67a009e8249cf92630da32144a129c0ca"
 latest_pr230_head_note: "PR #230 is draft/open; local origin/claude may lag PR metadata, stacked science work remains on Block123/Block124 branches"
 pr230_state: open
 pr230_draft: true
-active_science_block: block127_wz_builder_block126_top_packet_adapter
-active_route: "W/Z builder adapter for the Block126 matched top-side packet"
+active_science_block: block128_post_block127_wz_launch_preflight_and_strict_construction_attempt
+active_route: "post-Block127 W/Z launch preflight plus strict W/Z/source-Higgs construction attempt"
 target_status: best-honest-status
-actual_current_surface_status: "bounded-support / Block127 wires the Block126 matched top-side packet into the W/Z row builder; W/Z rows, matched top-W/Z covariance, strict g2, and accepted action remain absent"
+actual_current_surface_status: "exact negative boundary / Block128 top-side W/Z root is satisfied after Block127, but W/Z rows/action/g2/covariance/production harness roots remain absent and no strict W/Z or source-Higgs pole-row packet is constructible from current rows"
 proposal_allowed: false
-proposal_allowed_reason: "The W/Z builder now recognizes Block126 top-side production support, but genuine W/Z mass-fit rows, matched top-W/Z covariance, strict non-observed g2, accepted same-source EW/Higgs action, and canonical-Higgs/source-overlap authority remain absent."
+proposal_allowed_reason: "Block127 satisfies the top-side recognition root, but the current surface lacks production W/Z mass-fit rows, matched top-W/Z covariance, strict non-observed g2, accepted same-source EW/Higgs action, and a production W/Z harness. The Block126 production raw files have no W/Z mass-fit rows matchable to the 1008 top-side configuration keys, the only W/Z-shaped rows are the known scout smoke schema, and the source-Higgs fallback has zero C_ss/C_sH/C_HH pole-residue rows with no accepted canonical O_H/action authority."
 first_route_decision: "Block115 does not change W/Z from blocked to executable; Block116 also records a neutral H3/H4 strict-artifact absence. The first campaign artifact therefore targets the invariant source/action obstruction that all remaining positive routes must satisfy."
 lock_status: "branch-local lock acquired with scripts/automation_lock.py using loop-local lock paths"
 forbidden_imports:
@@ -138,6 +138,31 @@ block127_result:
   strict_non_observed_g2_present: false
   accepted_same_source_action_present: false
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1463"
+block128_result:
+  preflight_output: outputs/yt_pr230_block128_post_block127_wz_launch_preflight_2026-05-17.json
+  strict_construction_output: outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json
+  status: "exact negative boundary"
+  preflight_pass_count: 14
+  strict_construction_pass_count: 12
+  fail_count: 0
+  proposal_allowed: false
+  top_side_root_satisfied: true
+  production_wz_mass_fit_rows_present: false
+  accepted_same_source_ew_action_present: false
+  strict_non_observed_g2_present: false
+  matched_top_wz_covariance_present: false
+  genuine_wz_production_harness_present: false
+  block126_raw_files_checked: 63
+  block126_disabled_wz_stub_files: 63
+  block126_wz_like_raw_file_count: 0
+  wz_smoke_candidate_valid_for_block126_strict_join: false
+  strict_wz_expected_paths_present: false
+  raw_source_higgs_finite_rows_checked: 252
+  block124_assembled_source_higgs_finite_rows: 693
+  source_higgs_pole_residue_rows: 0
+  canonical_oh_action_authority_present: false
+  recommended_pivot: "strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority"
+  stacked_review_pr: pending
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"
@@ -155,17 +180,20 @@ verification:
   block126_runner: "PASS=10 FAIL=0"
   block127_py_compile: passed
   block127_runner: "PASS=10 FAIL=0"
+  block128_py_compile: passed
+  block128_preflight_runner: "PASS=14 FAIL=0"
+  block128_strict_construction_runner: "PASS=12 FAIL=0"
   wz_mass_fit_response_row_builder_current: "PASS=10 FAIL=0; Block126 top-side packet recognized, strict rows not written"
   wz_mass_fit_response_row_builder_scout: "PASS=9 FAIL=0"
   full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
   retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
   positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
-  campaign_status: "PASS=445 FAIL=0; proposal_allowed=false"
-  assumption_import_stress: "PASS=128 FAIL=0; proposal_allowed=false"
+  campaign_status: "PASS=447 FAIL=0; proposal_allowed=false"
+  assumption_import_stress: "PASS=130 FAIL=0; proposal_allowed=false"
   target_timeseries_full_set: "PASS=9 FAIL=0; replacement_queue=[]"
   chunk063_higher_shell_checkpoint: "PASS=15 FAIL=0"
   git_diff_check: passed
   audit_pipeline: "completed; generated docs/audit diffs restored"
   strict_audit_lint: "OK; no errors; 5 known warnings"
-next_exact_action: "Supply genuine same-source W/Z mass-fit rows with configuration keys matchable to Block126 plus strict non-observed g2 and accepted same-source EW/Higgs action, or supply accepted canonical O_H/action authority with nonempty numeric C_ss/C_sH/C_HH pole-residue rows."
-next_checkpoint_due_utc: "2026-05-17T17:37:23Z"
+next_exact_action: "Pivot to strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority. Reopen W/Z only if a new production W/Z mass-fit artifact appears; reopen source-Higgs only with accepted canonical O_H/action plus nonempty numeric C_ss/C_sH/C_HH pole-residue rows."
+next_checkpoint_due_utc: "2026-05-17T17:45:33Z"

@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block127-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block128-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -16,6 +16,7 @@ Stacked review PR for Block126:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1461
 Stacked review PR for Block127:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1463
+Stacked review PR for Block128: pending.
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -92,10 +93,34 @@ campaign `PASS=445`, assumption/import stress `PASS=128`, retained route
 `PASS=325`, full positive assembly `PASS=200`, completion audit `PASS=79`,
 target-timeseries full set `PASS=9`, and chunk063 checkpoint `PASS=15`.
 
-Active next work: implement genuine same-source W/Z production response rows
-and join them with the Block126 top-side packet into matched top-W/Z covariance
-with strict non-observed `g2`, or produce accepted canonical `O_H`/action
-authority with nonempty numeric `C_ss/C_sH/C_HH` pole-residue rows.
+Block128 attempts the constructive next step after Block127.  The post-Block127
+W/Z launch preflight records that the top-side root is satisfied, but
+production W/Z mass-fit rows, accepted same-source EW/Higgs action, strict
+non-observed `g2`, matched top-W/Z covariance, and a genuine production W/Z
+harness remain absent.  The strict construction attempt then checks whether the
+existing raw rows can supply strict same-source W/Z production rows matchable to
+the 1008 Block126 top-side configuration keys, and then checks the accepted
+`O_H`/action plus source-Higgs pole-row fallback.  The result is an exact
+negative boundary: all 63 Block126 raw production files are present and carry
+the scalar/top rows, but W/Z is only a disabled stub
+(`wz_like_raw_file_count=0`, `disabled_wz_stub_file_count=63`).  The only
+W/Z-shaped rows remain the scout smoke schema, which is not production,
+synthetic, aggregate-only, not key-matchable to Block126, and lacks matched
+covariance, strict `g2`, and identity certificates.  The source-Higgs fallback
+also remains blocked: 252 lower-level raw finite `C_ss/C_sx/C_xx` rows and the
+Block124 693-row assembled finite support packet are not pole residues;
+`source_higgs_pole_residue_rows=0`; accepted canonical `O_H`/action authority
+is still absent.  Reruns: Block128 py_compile passed, preflight `PASS=14`,
+strict construction `PASS=12`, campaign status `PASS=447`, assumption/import
+stress `PASS=130`, retained route `PASS=325`, full assembly `PASS=200`,
+completion audit `PASS=79`, target-timeseries `PASS=9`, and chunk063
+checkpoint `PASS=15`.
+
+Active next work: pivot to strict Schur/Feshbach pole authority or neutral
+H3/H4 physical-transfer/source-coupling authority.  Reopen W/Z only if a new
+production W/Z mass-fit artifact appears; reopen source-Higgs only with
+accepted canonical `O_H`/action plus nonempty numeric `C_ss/C_sH/C_HH`
+pole-residue rows.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.
@@ -106,5 +131,6 @@ Refresh the loop-local lock before expiry with:
 python3 scripts/automation_lock.py \
   --lock-path .claude/science/physics-loops/pr230-retained-closure-campaign-20260517/campaign.lock.json \
   --meta-lock-path .claude/science/physics-loops/pr230-retained-closure-campaign-20260517/.campaign.lock.guard \
-  refresh --owner physics-loop --purpose pr230-retained-closure-campaign-20260517 --ttl-hours 1
+  refresh --owner physics-loop --holder-id 019de508-8c55-7850-b9a3-ef99e5ebf741 \
+  --purpose pr230-retained-closure-campaign-20260517 --ttl-hours 1
 ```

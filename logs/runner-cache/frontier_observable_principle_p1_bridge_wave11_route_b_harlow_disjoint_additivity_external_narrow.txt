@@ -1,0 +1,135 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_wave11_route_b_harlow_disjoint_additivity_external_narrow.py
+runner_sha256: a9457096173f4a270dc97566358da6ec2061885db465998d9d2cdcd83db6b2cb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge Wave 11 Route B HSSS disjoint additivity
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_WAVE11_ROUTE_B_HARLOW_DISJOINT_ADDITIVITY_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md
+
+==============================================================================
+T1: HSSS disjoint additivity premise statement (region algebras)
+==============================================================================
+  [PASS] note contains HSSS premise string: 'D. Harlow, S.-H. Shao, J. Sorce, M. Srivastava'
+         present=True
+  [PASS] note contains HSSS premise string: 'arXiv:2509.03589'
+         present=True
+  [PASS] note contains HSSS premise string: 'A(R_1 ∪ R_2) = A(R_1) ∨ A(R_2)'
+         present=True
+  [PASS] note contains HSSS premise string: 'A(R) = ∨_α A(R_α)'
+         present=True
+  [PASS] note contains HSSS premise string: 'Haag duality'
+         present=True
+  [PASS] note contains HSSS premise string: 'lattice systems with local symmetry constraints'
+         present=True
+
+==============================================================================
+T2: HSSS four counter-examples enumeration
+==============================================================================
+  [PASS] note contains HSSS counter-example: 'timelike hyperplane'
+         present=True
+  [PASS] note contains HSSS counter-example: 'generalized free field'
+         present=True
+  [PASS] note contains HSSS counter-example: 'global-symmetry-invariant sector'
+         present=True
+  [PASS] note contains HSSS counter-example: 'Virasoro identity multiplet'
+         present=True
+
+==============================================================================
+T3: Framework substrate Cl(3) per-site Fock + Z^3 + Wilson + SU(3)
+==============================================================================
+  [PASS] Per-site Cl(3) Fock dim(H_A) * dim(H_B) = dim(H_{A cup B})
+         cases=[(1, 1, 4, 4), (1, 2, 8, 8), (2, 2, 16, 16), (1, 3, 16, 16), (2, 3, 32, 32), (3, 3, 64, 64)]
+  [PASS] Grassmann det block factorization det(D+J) = det(D_A+J_A) det(D_B+J_B)
+         sympy.simplify(lhs - rhs) = 0
+
+==============================================================================
+T4: Disjoint algebra additivity vN(A_A (x) I  u  I (x) A_B) = A_A (x) A_B
+==============================================================================
+  [PASS] dim(vN-join) = dim(A_A) * dim(A_B) on 2 (x) 2
+         dim(A_A) * dim(A_B) = 16, expected 16 = dim M_4(C)
+  [PASS] Generators (e_ij (x) I), (I (x) e_kl) produce full M_4(C) basis
+         cases=[((0, 0, 0, 0), True), ((0, 1, 0, 1), True), ((1, 0, 1, 1), True), ((1, 1, 0, 1), True)]
+
+==============================================================================
+T5: Framework structural non-match to HSSS counter-examples
+==============================================================================
+  [PASS] note contains non-match string: 'framework\n  is not restricted to a timelike hyperp'...
+         present=True
+  [PASS] note contains non-match string: 'framework is\n  Grassmann, not bosonic generalized '...
+         present=True
+  [PASS] note contains non-match string: 'framework is the full Grassmann algebra, not the r'...
+         present=True
+  [PASS] note contains non-match string: 'framework is\n  not 1+1d CFT'...
+         present=True
+
+==============================================================================
+T6: Per-class structural disjointness verification
+==============================================================================
+  [PASS] framework feature has_timelike_hyperplane_restriction = False (not in this HSSS counter-example class)
+         value=False
+  [PASS] framework feature is_generalized_free_field = False (not in this HSSS counter-example class)
+         value=False
+  [PASS] framework feature is_global_invariant_sector_only = False (not in this HSSS counter-example class)
+         value=False
+  [PASS] framework feature is_1plus1d_cft = False (not in this HSSS counter-example class)
+         value=False
+
+==============================================================================
+T7: P1 connection — F_p family orthogonality witness
+==============================================================================
+  [PASS] F_p multiplicative factorization holds on disjoint blocks (compatible with HSSS)
+         cases (p, mult_diff, add_diff): [(-2.0, '0', '-1/3'), (-1.0, '0', '-2/3'), (0.5, '0', '-sqrt(3) - sqrt(2) + sqrt(6)'), (1.0, '0', '1'), (2.0, '0', '23'), (3.0, '0', '181')]
+  [PASS] F_p scalar additivity FAILS for all tested p != 0 (P1 not closed by HSSS)
+         F_p[J_A (+) J_B] != F_p[J_A] + F_p[J_B] for r_A=2, r_B=3, p in test set
+
+==============================================================================
+T8: Orthogonality finding strings present
+==============================================================================
+  [PASS] note contains orthogonality string: 'structurally orthogonal'
+         present=True
+  [PASS] note contains orthogonality string: 'different additivity than P1'
+         present=True
+  [PASS] note contains orthogonality string: 'region-algebra additivity'
+         present=True
+  [PASS] note contains orthogonality string: 'scalar generator additivity'
+         present=True
+  [PASS] note contains orthogonality string: 'does **not** close P1'
+         present=True
+  [PASS] note contains orthogonality string: 'Pattern L'
+         present=True
+
+==============================================================================
+T9: 2x2 + 2x2 disjoint Grassmann block toy — F_p family
+==============================================================================
+  [PASS] Direct det product matches r product on disjoint 2x2 blocks
+         r_A * r_B = 1921/1800, det_ratio = 1921/1800
+  [PASS] Multiplicative F_p[A+B] = F_p[A] F_p[B] for all tested p on disjoint block toy
+         (p, mult_diff): [(-2.0, '0'), (-1.0, '0'), (0.5, '0'), (1.0, '0'), (2.0, '0'), (3.0, '0')]
+  [PASS] Additivity FAILS F_p[A+B] != F_p[A] + F_p[B] for all p != 0 on toy
+         (p, add_diff): [(-2.0, '-14746081/14760964'), (-1.0, '-3841/3842'), (0.5, '-sqrt(17)/4 - sqrt(226)/15 + sqrt(3842)/60'), (1.0, '-3599/3600'), (2.0, '-4315039/4320000'), (3.0, '-46531365833/46656000000')]
+  [PASS] log r is additive on disjoint blocks (Cauchy classifier reproduces P1)
+         log(r_A r_B) - log r_A - log r_B = 0
+  [PASS] Parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE is audited_conditional (unaffected by this note)
+         observable_principle_from_axiom_note.effective_status = audited_conditional
+  [PASS] Route A operator-algebraic note is unaudited (this Route B does not depend on its audit)
+         route A.effective_status = unaudited
+
+==============================================================================
+T10: Source-note boundary
+==============================================================================
+  [PASS] note declares: '**Claim type:** bounded_theorem'
+         present=True
+  [PASS] note declares: 'Status authority:** independent audit lane only'
+         present=True
+  [PASS] note declares: 'Source-note proposal disclaimer'
+         present=True
+  [PASS] no forbidden overclaim strings
+         hits=[]
+
+=== TOTAL: PASS=40, FAIL=0 ===
+
+----- stderr -----
+

@@ -356,6 +356,9 @@ def main() -> int:
         "block112_helmholtz_action_integrability_obstruction": load(
             "outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json"
         ),
+        "block113_schur_abc_complete_packet_refresh": load(
+            "outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2186,6 +2189,51 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block113_schur_abc_keeps_imports_clean = (
+        "Block113 complete 63/63 finite Schur A/B/C row artifact confirmed"
+        in str(
+            certificates["block113_schur_abc_complete_packet_refresh"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block113_schur_abc_complete_packet_refresh"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block113_schur_abc_complete_packet_refresh"].get(
+            "block113_schur_abc_complete_packet_refresh_passed"
+        )
+        is True
+        and certificates["block113_schur_abc_complete_packet_refresh"].get(
+            "complete_finite_schur_abc_rows_confirmed"
+        )
+        is True
+        and certificates["block113_schur_abc_complete_packet_refresh"].get(
+            "strict_schur_abc_kernel_rows_present"
+        )
+        is False
+        and certificates["block113_schur_abc_complete_packet_refresh"].get(
+            "pole_location_or_derivative_rows_present"
+        )
+        is False
+        and certificates["block113_schur_abc_complete_packet_refresh"].get(
+            "canonical_source_higgs_overlap_fixed"
+        )
+        is False
+        and all(
+            value is False
+            for value in certificates["block113_schur_abc_complete_packet_refresh"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block113-schur-abc-keeps-imports-clean",
+        block113_schur_abc_keeps_imports_clean,
+        certificates["block113_schur_abc_complete_packet_refresh"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2517,6 +2565,7 @@ def main() -> int:
         "block110_action_descent_keeps_imports_clean": block110_action_descent_keeps_imports_clean,
         "block111_schur_kprime_gap_keeps_imports_clean": block111_schur_kprime_gap_keeps_imports_clean,
         "block112_helmholtz_keeps_imports_clean": block112_helmholtz_keeps_imports_clean,
+        "block113_schur_abc_keeps_imports_clean": block113_schur_abc_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

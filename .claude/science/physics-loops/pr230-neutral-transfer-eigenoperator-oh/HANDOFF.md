@@ -1,11 +1,54 @@
 # Handoff
 
-Checkpoint: 2026-05-15 01:52 EDT
+Checkpoint: 2026-05-17 Block113
 
 Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
+
+## Block113 Schur A/B/C Complete-Packet Refresh
+
+Block113 refreshes the finite Schur A/B/C support status after the packet
+completed.  It verifies that the existing finite A/B/C artifact is now complete
+at `63/63` with `252` finite inverse mode rows, `63` finite shell difference
+rows, and maximum inverse-identity residual
+`3.3306690738754696e-16`.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block113_schur_abc_complete_packet_refresh.py`
+- `outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json`
+- `docs/YT_PR230_BLOCK113_SCHUR_ABC_COMPLETE_PACKET_REFRESH_NOTE_2026-05-17.md`
+- `docs/YT_PR230_TWO_SOURCE_TASTE_RADIAL_SCHUR_ABC_FINITE_ROWS_NOTE_2026-05-06.md`
+- `docs/audit/data/audit_ledger.json`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block113 Schur A/B/C complete-packet refresh PASS=14 FAIL=0
+campaign status PASS=433 FAIL=0
+assumption/import stress PASS=116 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors; 5 known warnings
+audit pipeline complete; broad generated docs/audit churn restored, with the intentional audit_ledger note_hash refresh kept for the edited finite A/B/C note
+git diff --check OK
+```
+
+Honest status: bounded support.  The complete finite `C_ss/C_sx/C_xx`
+inverse-block rows are genuine support, but they are not strict pole
+Schur/Feshbach rows, not `K'(pole)`, not canonical `O_H`, and not
+source-Higgs overlap authority.  No retained or `proposed_retained` closure is
+authorized.
+
+Exact next action: produce strict same-surface Schur/Feshbach pole rows with a
+pole coordinate, `K'` derivative or exact Feshbach equivalent, source
+projection numerator, FV/IR/contact authority, and canonical `O_H` /
+source-overlap or W/Z physical-response authority.
 
 ## Block112 Helmholtz Action-Integrability Obstruction
 

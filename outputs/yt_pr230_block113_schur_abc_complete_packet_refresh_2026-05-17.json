@@ -1,0 +1,212 @@
+{
+  "actual_current_surface_status": "bounded-support / Block113 complete 63/63 finite Schur A/B/C row artifact confirmed; strict Schur/Feshbach pole authority absent",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "audit_summary": {
+    "finite_difference_chunk_rows": 63,
+    "finite_inverse_mode_rows": 252,
+    "issues": [],
+    "max_inverse_identity_residual": 3.3306690738754696e-16,
+    "row_count": 63,
+    "summary_counts": {
+      "A_finite_K_ss_shell_mean": 63,
+      "A_finite_K_ss_shell_minus_zero_over_dp": 63,
+      "A_finite_K_ss_zero": 63,
+      "B_finite_K_sx_shell_mean": 63,
+      "B_finite_K_sx_shell_minus_zero_over_dp": 63,
+      "B_finite_K_sx_zero": 63,
+      "C_finite_K_xx_shell_mean": 63,
+      "C_finite_K_xx_shell_minus_zero_over_dp": 63,
+      "C_finite_K_xx_zero": 63,
+      "det_K_shell_mean": 63,
+      "det_K_shell_minus_zero_over_dp": 63,
+      "det_K_zero": 63,
+      "rho_sx_shell_mean": 63,
+      "rho_sx_shell_minus_zero_over_dp": 63,
+      "rho_sx_zero": 63
+    }
+  },
+  "bare_retained_allowed": false,
+  "block113_schur_abc_complete_packet_refresh_passed": true,
+  "canonical_higgs_operator_identity_passed": false,
+  "canonical_source_higgs_overlap_fixed": false,
+  "complete_finite_schur_abc_rows_confirmed": true,
+  "conditional_surface_status": "Schur-route support only if a future strict same-surface artifact adds pole coordinate, K-prime derivative or exact Feshbach equivalent, source projection numerator, FV/IR/contact authority, and canonical O_H/source-overlap or W/Z physical-response authority",
+  "exact_next_action": "Use the 63/63 finite A/B/C artifact only as staging support.  For closure, add strict pole Schur/Feshbach K-prime rows with FV/IR/contact authority and a canonical O_H/source-overlap or W/Z physical-response bridge.",
+  "expected_chunks": 63,
+  "fail_count": 0,
+  "finite_rows_support_only": true,
+  "finite_schur_abc_artifact": "outputs/yt_pr230_two_source_taste_radial_schur_abc_finite_rows_2026-05-06.json",
+  "finite_shell_summary": {
+    "A_finite_K_ss_shell_mean": {
+      "count": 63,
+      "max": 7.993203758879837,
+      "mean": 7.977676019425312,
+      "min": 7.963859666383793,
+      "stdev": 0.005568345596682561
+    },
+    "A_finite_K_ss_shell_minus_zero_over_dp": {
+      "count": 63,
+      "max": -0.7065425194782079,
+      "mean": -0.7176822421730163,
+      "min": -0.7326105914422173,
+      "stdev": 0.005394390014555909
+    },
+    "A_finite_K_ss_zero": {
+      "count": 63,
+      "max": 8.18568539891083,
+      "mean": 8.16997839663773,
+      "min": 8.153689710056454,
+      "stdev": 0.0062132130806222576
+    },
+    "B_finite_K_sx_shell_mean": {
+      "count": 63,
+      "max": 0.006234188880192706,
+      "mean": 7.868723769442187e-05,
+      "min": -0.006164008625774987,
+      "stdev": 0.003056430581164662
+    },
+    "B_finite_K_sx_shell_minus_zero_over_dp": {
+      "count": 63,
+      "max": 0.008321691657133638,
+      "mean": -0.00031832529304632776,
+      "min": -0.008246182178955104,
+      "stdev": 0.0025434860158420904
+    },
+    "B_finite_K_sx_zero": {
+      "count": 63,
+      "max": 0.007277505118140749,
+      "mean": 0.00016398224289658586,
+      "min": -0.007683480850523885,
+      "stdev": 0.0032655490767972153
+    },
+    "C_finite_K_xx_shell_mean": {
+      "count": 63,
+      "max": 3.7144220532179753,
+      "mean": 3.710012078387106,
+      "min": 3.707198208134374,
+      "stdev": 0.00133274277448177
+    },
+    "C_finite_K_xx_shell_minus_zero_over_dp": {
+      "count": 63,
+      "max": 0.5601281845689904,
+      "mean": 0.5570190531585479,
+      "min": 0.5547527865672252,
+      "stdev": 0.0012262156493721337
+    },
+    "C_finite_K_xx_zero": {
+      "count": 63,
+      "max": 3.564682352162802,
+      "mean": 3.5607592729245243,
+      "min": 3.558428557343765,
+      "stdev": 0.0012147658576912143
+    },
+    "det_K_shell_mean": {
+      "count": 63,
+      "max": 29.690125932462355,
+      "mean": 29.59726528835002,
+      "min": 29.54431047701155,
+      "stdev": 0.025693169293888807
+    },
+    "det_K_shell_minus_zero_over_dp": {
+      "count": 63,
+      "max": 1.9316743508153924,
+      "mean": 1.88822446129256,
+      "min": 1.8379602640344057,
+      "stdev": 0.02065421870169387
+    },
+    "det_K_zero": {
+      "count": 63,
+      "max": 29.179354639938165,
+      "mean": 29.091317068817986,
+      "min": 29.03446564740864,
+      "stdev": 0.025733311743871102
+    },
+    "rho_sx_shell_mean": {
+      "count": 63,
+      "max": 0.001132854845998081,
+      "mean": -1.4422275510173183e-05,
+      "min": -0.00114599215132661,
+      "stdev": 0.0005617235901187136
+    },
+    "rho_sx_shell_minus_zero_over_dp": {
+      "count": 63,
+      "max": 0.001551882553583349,
+      "mean": 5.9554399661987776e-05,
+      "min": -0.0015767331936057895,
+      "stdev": 0.0004757218218485612
+    },
+    "rho_sx_zero": {
+      "count": 63,
+      "max": 0.0014249496639839245,
+      "mean": -3.0379828805323127e-05,
+      "min": -0.0013493802325833528,
+      "stdev": 0.0006053788781538478
+    }
+  },
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "treated_finite_abc_rows_as_strict_pole_rows": false,
+    "treated_finite_shell_derivatives_as_kprime_pole": false,
+    "treated_taste_radial_x_as_canonical_O_H": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_reduced_pilots_as_production_evidence": false,
+    "used_yt_ward_identity": false
+  },
+  "fv_ir_zero_mode_authority_present": false,
+  "hypothetical_axiom_status": null,
+  "parent_certificates": {
+    "block111_schur_kprime_packet_gap": "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json",
+    "block112_helmholtz_obstruction": "outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json",
+    "block69_strict_kprime_contract": "outputs/yt_pr230_strict_kprime_pole_residue_certificate_2026-05-12.json",
+    "block70_schur_feshbach_theorem": "outputs/yt_pr230_block70_schur_feshbach_kprime_residue_theorem_2026-05-12.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "complete_packet_monotonicity": "outputs/yt_pr230_schur_higher_shell_complete_packet_monotonicity_gate_2026-05-15.json",
+    "finite_schur_abc_rows": "outputs/yt_pr230_two_source_taste_radial_schur_abc_finite_rows_2026-05-06.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "schur_kernel_contract": "outputs/yt_schur_kernel_row_contract_gate_2026-05-03.json"
+  },
+  "parent_statuses": {
+    "block111_schur_kprime_packet_gap": "exact negative boundary / Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime pole-row emissions",
+    "block112_helmholtz_obstruction": "exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action",
+    "block69_strict_kprime_contract": "open / strict K-prime pole-residue certificate rows missing",
+    "block70_schur_feshbach_theorem": "exact-support / Block70 Schur-Feshbach K-prime residue theorem; physical rows absent",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "complete_packet_monotonicity": "exact negative boundary / complete 63/63 higher-shell finite rows fail necessary Stieltjes complete-monotonicity sign tests for strict scalar-LSZ/Schur pole authority",
+    "finite_schur_abc_rows": "bounded-support / finite Schur A/B/C inverse-block rows from two-source taste-radial correlator subblocks; strict pole rows absent",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached",
+    "schur_kernel_contract": "open / Schur kernel row contract gate not passed; current rows absent"
+  },
+  "pass_count": 14,
+  "pole_location_or_derivative_rows_present": false,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Block113 confirms a genuine complete finite Schur A/B/C support artifact, but finite inverse C_ss/C_sx/C_xx rows are not strict pole Schur/Feshbach rows and do not fix canonical O_H or source overlap.",
+  "ready_chunks": 63,
+  "strict_artifact_presence": {
+    "canonical_oh_certificate": false,
+    "source_higgs_pole_rows": false,
+    "strict_scalar_lsz_moment_threshold_fv": false,
+    "strict_schur_abc_kernel_rows": false,
+    "strict_schur_feshbach_kprime_rows": false,
+    "wz_response_rows": false
+  },
+  "strict_non_claims": [
+    "does not claim retained or proposed_retained top-Yukawa closure",
+    "does not treat finite Schur A/B/C inverse rows as strict pole rows",
+    "does not use finite shell differences as K'(pole)",
+    "does not identify taste-radial x with canonical O_H",
+    "does not relabel finite C_sx/C_xx as physical C_sH/C_HH",
+    "does not set kappa_s, c2, Z_match, or g2 to one"
+  ],
+  "strict_schur_abc_kernel_rows_present": false,
+  "strict_schur_kprime_rows_present": false
+}

@@ -5,7 +5,7 @@ two-source taste-radial correlator subblocks; strict pole rows absent
 **Runner:** `scripts/frontier_yt_pr230_two_source_taste_radial_schur_abc_finite_rows.py`
 **Certificate:** `outputs/yt_pr230_two_source_taste_radial_schur_abc_finite_rows_2026-05-06.json`
 
-The completed chunks001-030 provide finite same-ensemble source/complement
+The completed chunks001-063 provide finite same-ensemble source/complement
 correlator blocks for the certified `s/x` chart:
 
 ```text
@@ -24,14 +24,17 @@ C_f = C_ss / Delta_sx
 
 It also computes zero-to-first-shell finite differences for `A_f`, `B_f`, and
 `C_f`, and checks the inverse identity `G K = I` chunk by chunk.  On
-chunks001-030 the row audit is clean, all finite inverse rows are finite with
+chunks001-063 the row audit is clean, all finite inverse rows are finite with
 positive `Delta_sx`, and the maximum inverse-identity residual is below
-`1e-10`.
+`1e-10`.  Block113 refreshes this note against the completed packet and records
+`63` chunk rows, `252` finite inverse mode rows, `63` finite shell difference
+rows, and maximum inverse-identity residual
+`3.3306690738754696e-16`.
 
 This is real Schur-route progress because it is built from measured
 `C_ss/C_sx/C_xx` rows rather than from source-only data.  It is still not
-closure.  These are finite inverse-correlator-block rows on a partial
-`ready=30/63` packet, not strict neutral-kernel `A/B/C` pole rows, not
+closure.  These are finite inverse-correlator-block rows on a complete
+`ready=63/63` support packet, not strict neutral-kernel `A/B/C` pole rows, not
 isolated-pole `K'(pole)` derivatives, not FV/IR authority, not canonical
 `O_H`, and not `kappa_s`.
 

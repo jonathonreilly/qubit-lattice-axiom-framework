@@ -1,5 +1,28 @@
 # Artifact Plan
 
+Block113 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block113_schur_abc_complete_packet_refresh.py` | Created; PASS=14 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json` | Created |
+| Support note | `docs/YT_PR230_BLOCK113_SCHUR_ABC_COMPLETE_PACKET_REFRESH_NOTE_2026-05-17.md` | Created |
+| Refreshed finite A/B/C note | `docs/YT_PR230_TWO_SOURCE_TASTE_RADIAL_SCHUR_ABC_FINITE_ROWS_NOTE_2026-05-06.md` | Updated to complete `63/63` packet |
+| Audit ledger hash | `docs/audit/data/audit_ledger.json` | Updated only for the intentional finite A/B/C note edit |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block113:
+
+```text
+outputs/yt_pr230_strict_schur_feshbach_kprime_rows_2026-05-17.json
+```
+
+with pole coordinate, pole-fit or analytic-continuation window,
+Schur/Feshbach `A/B/C` rows, `K'` derivative or `l K' r` equivalent, source
+projection numerator, FV/IR/contact authority, and canonical `O_H` or a
+physical-response bypass. The complete finite A/B/C packet is staging support
+only and is not a closure artifact.
+
 Block112 artifacts:
 
 | Artifact | Path | Status |

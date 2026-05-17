@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block112_helmholtz_action_integrability_obstruction`.
+Current block: `block113_schur_abc_complete_packet_refresh`.
 
 ```yaml
-actual_current_surface_status: exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action
+actual_current_surface_status: bounded-support / Block113 complete 63/63 finite Schur A/B/C row artifact confirmed; strict Schur/Feshbach pole authority absent
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block112 supplies a current-surface exact boundary, not closure. It rejects integrating an accepted same-source EW/Higgs action or fixing source-Higgs overlap from source-only response rows and finite taste-radial aliases: the required canonical mixed derivatives, C_sH/C_HH pole rows, W/Z covariance rows, and action Hessian rows are absent."
+proposal_allowed_reason: "Block113 supplies a complete finite Schur A/B/C support artifact, not closure. It confirms 63/63 finite inverse C_ss/C_sx/C_xx rows with a clean inverse identity, but strict pole Schur/Feshbach rows, K-prime derivative authority, FV/IR/contact authority, canonical O_H, source-Higgs overlap, and W/Z physical-response bypass rows remain absent."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,16 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block113 refreshes the finite Schur A/B/C support status after the
+   higher-shell packet completed.  It confirms `63/63` finite inverse-block
+   row records, `252` finite inverse mode rows, `63` finite shell difference
+   rows, and maximum inverse-identity residual
+   `3.3306690738754696e-16`.  This is a genuine complete support artifact
+   built from measured `C_ss/C_sx/C_xx` subblocks, but it is not strict
+   Schur/Feshbach pole authority: no strict A/B/C kernel rows, no `K'(pole)`
+   row family, no pole coordinate or derivative rows, no FV/IR/contact
+   authority, no canonical `O_H`, no source-Higgs overlap, and no W/Z
+   physical-response bypass rows are present.
 0. Block112 audits the current response/correlator surface against the
    inverse-variational requirement for an accepted same-source EW/Higgs action.
    It verifies that all `63` higher-shell chunks contain finite taste-radial

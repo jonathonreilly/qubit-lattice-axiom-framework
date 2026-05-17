@@ -516,6 +516,9 @@ def main() -> int:
         "pr230_block112_helmholtz_action_integrability_obstruction": load(
             "outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json"
         ),
+        "pr230_block113_schur_abc_complete_packet_refresh": load(
+            "outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2827,6 +2830,43 @@ def main() -> int:
         "pr230-block112-helmholtz-action-integrability-obstruction-blocks",
         block112_helmholtz_action_integrability_obstruction_blocks,
         statuses["pr230_block112_helmholtz_action_integrability_obstruction"],
+    )
+    block113_schur_abc_complete_packet_refresh_support_only = (
+        "Block113 complete 63/63 finite Schur A/B/C row artifact confirmed"
+        in str(statuses["pr230_block113_schur_abc_complete_packet_refresh"])
+        and certificates["pr230_block113_schur_abc_complete_packet_refresh"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block113_schur_abc_complete_packet_refresh"].get(
+            "block113_schur_abc_complete_packet_refresh_passed"
+        )
+        is True
+        and certificates["pr230_block113_schur_abc_complete_packet_refresh"].get(
+            "complete_finite_schur_abc_rows_confirmed"
+        )
+        is True
+        and certificates["pr230_block113_schur_abc_complete_packet_refresh"].get(
+            "ready_chunks"
+        )
+        == 63
+        and certificates["pr230_block113_schur_abc_complete_packet_refresh"].get(
+            "strict_schur_abc_kernel_rows_present"
+        )
+        is False
+        and certificates["pr230_block113_schur_abc_complete_packet_refresh"].get(
+            "strict_schur_kprime_rows_present"
+        )
+        is False
+        and certificates["pr230_block113_schur_abc_complete_packet_refresh"].get(
+            "canonical_source_higgs_overlap_fixed"
+        )
+        is False
+    )
+    report(
+        "pr230-block113-schur-abc-complete-packet-refresh-support-only",
+        block113_schur_abc_complete_packet_refresh_support_only,
+        statuses["pr230_block113_schur_abc_complete_packet_refresh"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8588,6 +8628,9 @@ def main() -> int:
     )
     result["block112_helmholtz_action_integrability_obstruction_blocks"] = (
         block112_helmholtz_action_integrability_obstruction_blocks
+    )
+    result["block113_schur_abc_complete_packet_refresh_support_only"] = (
+        block113_schur_abc_complete_packet_refresh_support_only
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

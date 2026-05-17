@@ -1,10 +1,11 @@
 # Opportunity Queue
 
-Campaign mode queue after block112 Helmholtz action-integrability obstruction,
-block111 Schur K-prime packet gap audit, block110 Cl(3)/Z3 action-descent
-obstruction, block109 closure-root selector, block108 all-ref rescan, block104
-Z3 heat-kernel source-coupling/H4 no-go, block100 W/Z explicit-`v` authority
-firewall, and block99 complete higher-shell finite-packet monotonicity boundary.
+Campaign mode queue after block113 Schur A/B/C complete-packet refresh,
+block112 Helmholtz action-integrability obstruction, block111 Schur K-prime
+packet gap audit, block110 Cl(3)/Z3 action-descent obstruction, block109
+closure-root selector, block108 all-ref rescan, block104 Z3 heat-kernel
+source-coupling/H4 no-go, block100 W/Z explicit-`v` authority firewall, and
+block99 complete higher-shell finite-packet monotonicity boundary.
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Review landability | Blast radius | Independence | Decision |
 |---:|---|---:|---:|---|---|---|---|---|
@@ -14,7 +15,7 @@ firewall, and block99 complete higher-shell finite-packet monotonicity boundary.
 | 4 | Replace finite taste-radial packet with source-Higgs production rows | Medium-low | 3 | Block31 now audits the complete 63/63 finite `C_sx/C_xx` packet | Medium | Medium | Production continuation | The finite packet is complete. The next production move is real canonical `C_ss/C_sH/C_HH` pole rows only after `O_H` is certified; no more finite chunk production is a closure path. |
 | 5 | Replacement radial-spurion action certificate | Medium-low | 2 | Block04 plus block08 W/Z checkpoint | High | Medium | Direct W/Z action repair | Build only if a real same-surface clean radial action artifact exists. |
 | 6 | Same-surface source-radial off-diagonal generator/action row | Medium-low | 2 | Block01 runner gives exact target | High | Small | Direct continuation | Reopen only if a genuine off-diagonal neutral transfer/action artifact appears. |
-| 7 | Strict Schur/Feshbach K-prime row artifact | Low until a new row source exists | 4 | Complete 63/63 packet plus Block99 monotonicity gate and Block111 K-prime packet gap audit | Medium | Medium | Support-only / shortcut closed | Block111 confirms the complete finite packet emits no strict K-prime rows. Do not replay finite-row promotion or rerun higher-shell chunks for closure; reopen only with explicit same-surface pole coordinate, Schur/Feshbach `A/B/C`, `K'` derivative or `lK'r` equivalent, source projection numerator, and FV/IR/contact authority. |
+| 7 | Strict Schur/Feshbach K-prime row artifact | Low until a new row source exists | 4 | Complete 63/63 packet plus Block99 monotonicity gate, Block111 K-prime packet gap audit, and Block113 complete finite A/B/C support refresh | Medium | Medium | Support-only / shortcut closed | Block113 confirms the finite A/B/C inverse-block artifact is complete and genuine support, while Block111 confirms the complete packet emits no strict K-prime rows. Do not replay finite-row promotion or rerun higher-shell chunks for closure; reopen only with explicit same-surface pole coordinate, strict Schur/Feshbach `A/B/C`, `K'` derivative or `lK'r` equivalent, source projection numerator, and FV/IR/contact authority. |
 
 No global stop is justified, but the refreshed queue does not authorize another
 current-surface finite-row shortcut gate, package-`v` W/Z shortcut, path-only
@@ -99,6 +100,15 @@ independent data. The top source-Higgs route remains viable only with an
 accepted same-surface action/canonical `O_H` artifact plus physical pole rows,
 or with a strict W/Z packet carrying matched covariance and an allowed absolute
 pin.
+
+Block113 refreshes the Schur A/B/C contract family. The finite inverse-block
+artifact is complete at `63/63`, with `252` finite inverse mode rows, `63`
+finite shell difference rows, and clean `G K = I` residuals. This is a genuine
+support artifact, but it does not change the queue ranking: finite
+`C_ss/C_sx/C_xx` inverse rows are not strict pole Schur/Feshbach rows, not
+`K'(pole)`, not FV/IR/contact authority, and not canonical `O_H` or
+source-Higgs overlap. The next Schur move must be a new strict pole-row
+artifact, not another finite-row promotion.
 
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but

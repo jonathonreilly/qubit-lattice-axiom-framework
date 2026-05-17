@@ -1,0 +1,17 @@
+==============================================================================
+AUDIT-PREP VERIFIER — nn_lattice_rescaled_c_arm_alpha_constrained_refit_note_2026-05-10
+==============================================================================
+  [PASS] [A] Parent note exists  (NN_LATTICE_RESCALED_C_ARM_ALPHA_CONSTRAINED_REFIT_NOTE_2026-05-10.md, 9169 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   nn_lattice_rescaled_c_arm_derivation_note_2026-05-10 IS cited (>=1 hit)  (hits = 4)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   nn_lattice_rescaled_c_arm_nnlo_saddle_note_2026-05-10 NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 3 PASS / 0 FAIL
+Class-A pattern hits: 3
+==============================================================================
+
+VERIFIED

@@ -146,3 +146,7 @@ that asymmetry-persistence + collapse closes the broader collapse
 lane. It records the cited audit-snapshot repair path, cites the registered primary
 runner and its frozen audit-window cache, and names the
 admitted-context imports the row depends on.
+
+---
+
+**Re-queued for re-audit 2026-05-17:** previous `audited_failed` verdict cited packet incompleteness (missing helper-script imports from the restricted packet). The audit pipeline now populates `helper_runner_paths` per [PR #1371](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1371) so the next audit pass receives the complete packet. Helpers now declared: ``. The current re-queue is mechanical — no science content changes — and is documented here so the hash drift is explicit.

@@ -510,6 +510,9 @@ def main() -> int:
         "pr230_block110_cl3_z3_action_descent_obstruction": load(
             "outputs/yt_pr230_block110_cl3_z3_action_descent_obstruction_2026-05-17.json"
         ),
+        "pr230_block111_schur_kprime_packet_gap_audit": load(
+            "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2763,6 +2766,35 @@ def main() -> int:
         "pr230-block110-cl3-z3-action-descent-obstruction-blocks",
         block110_cl3_z3_action_descent_obstruction_blocks,
         statuses["pr230_block110_cl3_z3_action_descent_obstruction"],
+    )
+    block111_schur_kprime_packet_gap_audit_blocks = (
+        "Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime"
+        in str(statuses["pr230_block111_schur_kprime_packet_gap_audit"])
+        and certificates["pr230_block111_schur_kprime_packet_gap_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block111_schur_kprime_packet_gap_audit"].get(
+            "block111_schur_kprime_packet_gap_audit_passed"
+        )
+        is True
+        and certificates["pr230_block111_schur_kprime_packet_gap_audit"].get(
+            "completed_packet_checked_chunks"
+        )
+        == 63
+        and certificates["pr230_block111_schur_kprime_packet_gap_audit"].get(
+            "strict_kprime_row_emissions_present"
+        )
+        is False
+        and certificates["pr230_block111_schur_kprime_packet_gap_audit"].get(
+            "metadata_absent_guard_count"
+        )
+        == 63
+    )
+    report(
+        "pr230-block111-schur-kprime-packet-gap-audit-blocks",
+        block111_schur_kprime_packet_gap_audit_blocks,
+        statuses["pr230_block111_schur_kprime_packet_gap_audit"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8518,6 +8550,9 @@ def main() -> int:
     )
     result["block110_cl3_z3_action_descent_obstruction_blocks"] = (
         block110_cl3_z3_action_descent_obstruction_blocks
+    )
+    result["block111_schur_kprime_packet_gap_audit_blocks"] = (
+        block111_schur_kprime_packet_gap_audit_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

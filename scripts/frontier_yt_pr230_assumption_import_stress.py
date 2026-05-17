@@ -350,6 +350,9 @@ def main() -> int:
         "block110_cl3_z3_action_descent_obstruction": load(
             "outputs/yt_pr230_block110_cl3_z3_action_descent_obstruction_2026-05-17.json"
         ),
+        "block111_schur_kprime_packet_gap_audit": load(
+            "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2106,6 +2109,43 @@ def main() -> int:
         block110_action_descent_keeps_imports_clean,
         block110_action_descent.get("actual_current_surface_status"),
     )
+    block111_schur_kprime_gap_keeps_imports_clean = (
+        "Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime"
+        in str(
+            certificates["block111_schur_kprime_packet_gap_audit"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block111_schur_kprime_packet_gap_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block111_schur_kprime_packet_gap_audit"].get(
+            "block111_schur_kprime_packet_gap_audit_passed"
+        )
+        is True
+        and certificates["block111_schur_kprime_packet_gap_audit"].get(
+            "strict_kprime_row_emissions_present"
+        )
+        is False
+        and certificates["block111_schur_kprime_packet_gap_audit"].get(
+            "completed_packet_checked_chunks"
+        )
+        == 63
+        and all(
+            value is False
+            for value in certificates["block111_schur_kprime_packet_gap_audit"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block111-schur-kprime-gap-keeps-imports-clean",
+        block111_schur_kprime_gap_keeps_imports_clean,
+        certificates["block111_schur_kprime_packet_gap_audit"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2424,6 +2464,7 @@ def main() -> int:
             "does not treat post-Block100 completion/reopen audit status, completed chunks, or fetched remote path names as positive closure",
             "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
             "does not treat the Block110 finite source/taste algebra obstruction as an accepted EW/Higgs action or canonical O_H certificate",
+            "does not treat completed higher-shell packet metadata or finite C_ss/C_sx/C_xx aliases as Schur K-prime pole-row emissions",
             "does not close future source-Higgs, W/Z, Schur, rank-one, scalar-LSZ, or production routes",
         ],
         "z3_heat_kernel_neutral_transfer_support_not_h3h4": z3_heat_kernel_support_not_h3h4,
@@ -2433,6 +2474,7 @@ def main() -> int:
         "post_block100_completion_reopen_audit_blocks_path_only_reopen": post_block100_completion_reopen_blocks,
         "block109_frontier_selector_keeps_imports_clean": block109_frontier_keeps_imports_clean,
         "block110_action_descent_keeps_imports_clean": block110_action_descent_keeps_imports_clean,
+        "block111_schur_kprime_gap_keeps_imports_clean": block111_schur_kprime_gap_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

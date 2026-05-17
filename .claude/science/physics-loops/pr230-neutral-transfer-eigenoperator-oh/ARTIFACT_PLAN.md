@@ -1,5 +1,27 @@
 # Artifact Plan
 
+Block111 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block111_schur_kprime_packet_gap_audit.py` | Created; PASS=16 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json` | Created |
+| Boundary note | `docs/YT_PR230_BLOCK111_SCHUR_KPRIME_PACKET_GAP_AUDIT_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block111:
+
+```text
+outputs/yt_pr230_strict_schur_feshbach_kprime_rows_2026-05-17.json
+```
+
+with pole coordinate, pole-fit or analytic-continuation window,
+Schur/Feshbach `A/B/C` rows, `K'` derivative or `l K' r` equivalent, source
+projection numerator, FV/IR/contact authority, and canonical `O_H` or a
+physical-response bypass. Otherwise pivot to accepted `O_H`/action plus strict
+`C_ss/C_sH/C_HH` pole rows, strict W/Z response with an allowed absolute pin,
+or neutral H3/H4 authority.
+
 Block104 artifacts:
 
 | Artifact | Path | Status |

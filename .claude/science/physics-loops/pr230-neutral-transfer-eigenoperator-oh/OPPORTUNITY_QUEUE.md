@@ -1,10 +1,9 @@
 # Opportunity Queue
 
-Campaign mode queue after block104 Z3 heat-kernel source-coupling/H4 no-go,
-block103 Z3 heat-kernel scale-selector no-go,
-block102 Z3 heat-kernel neutral-transfer attempt,
-block101 post-Block100 completion/reopen audit,
-block100 W/Z explicit-`v` authority firewall, and block99 complete higher-shell
+Campaign mode queue after block111 Schur K-prime packet gap audit, block110
+Cl(3)/Z3 action-descent obstruction, block109 closure-root selector, block108
+all-ref rescan, block104 Z3 heat-kernel source-coupling/H4 no-go, block100 W/Z
+explicit-`v` authority firewall, and block99 complete higher-shell
 finite-packet monotonicity boundary.
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Review landability | Blast radius | Independence | Decision |
@@ -15,7 +14,7 @@ finite-packet monotonicity boundary.
 | 4 | Replace finite taste-radial packet with source-Higgs production rows | Medium-low | 3 | Block31 now audits the complete 63/63 finite `C_sx/C_xx` packet | Medium | Medium | Production continuation | The finite packet is complete. The next production move is real canonical `C_ss/C_sH/C_HH` pole rows only after `O_H` is certified; no more finite chunk production is a closure path. |
 | 5 | Replacement radial-spurion action certificate | Medium-low | 2 | Block04 plus block08 W/Z checkpoint | High | Medium | Direct W/Z action repair | Build only if a real same-surface clean radial action artifact exists. |
 | 6 | Same-surface source-radial off-diagonal generator/action row | Medium-low | 2 | Block01 runner gives exact target | High | Small | Direct continuation | Reopen only if a genuine off-diagonal neutral transfer/action artifact appears. |
-| 7 | Schur `C_x|s` higher-shell / scalar-LSZ support | Low | 4 | Complete 63/63 packet plus Block99 monotonicity gate | Medium | Medium | Support-only / shortcut closed | Block99 consumes the complete 63/63 packet and all tested finite scalar/Schur proxies fail the necessary Stieltjes divided-difference signs. Do not replay finite-row promotion; reopen only with strict Schur pole derivative rows and FV/IR authority or a physical bridge artifact. |
+| 7 | Strict Schur/Feshbach K-prime row artifact | Low until a new row source exists | 4 | Complete 63/63 packet plus Block99 monotonicity gate and Block111 K-prime packet gap audit | Medium | Medium | Support-only / shortcut closed | Block111 confirms the complete finite packet emits no strict K-prime rows. Do not replay finite-row promotion or rerun higher-shell chunks for closure; reopen only with explicit same-surface pole coordinate, Schur/Feshbach `A/B/C`, `K'` derivative or `lK'r` equivalent, source projection numerator, and FV/IR/contact authority. |
 
 No global stop is justified, but the refreshed queue does not authorize another
 current-surface finite-row shortcut gate, package-`v` W/Z shortcut, path-only
@@ -83,6 +82,14 @@ same-surface action extension/theorem plus strict `C_ss/C_sH/C_HH` rows. If
 that artifact is unavailable, the next clean pivot is strict W/Z physical
 response with accepted action and allowed absolute pin; do not replay
 finite-algebra or finite-row promotion.
+
+Block111 closes the completed-packet to Schur K-prime shortcut. The finite
+higher-shell queue is still complete at `63/63`, but all chunks mark K-prime
+kernel rows `absent_guarded`, `pole_residue_rows` are empty, and finite
+`C_ss/C_sx/C_xx` aliases remain nonphysical. The Schur route remains viable
+only after a new strict same-surface row artifact emits the Block69 pole,
+K-prime/source-projection/FV-IR-contact rows; finite chunk reruns are not a
+closure path.
 
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but

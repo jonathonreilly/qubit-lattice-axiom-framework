@@ -101,7 +101,13 @@ A complementary single-quotient companion is recorded in
 that note records the same `15/8` candidate as a single nearest-rational
 match (without the chain refinement), and is also independently
 classified `audited_numerical_match`. Its scope-narrowing companion is
-[`QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`](QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md).
+`QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`
+(see-also cross-reference; backticked to break cycle-0213 in the
+citation graph. The single-quotient narrow companion's own body cites
+this chain-form narrow note as the complementary scope-narrowing
+companion in the other direction; both directions are descriptive
+cross-references and this back-edge is demoted as graph navigation
+only, not a derivation input.).
 
 ## What would close the open dependency (Path A future work)
 

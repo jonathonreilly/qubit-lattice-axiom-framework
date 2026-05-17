@@ -84,4 +84,10 @@ So the exact retained claim is:
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [wave_direct_dm_h025_high_band_boundary_note](WAVE_DIRECT_DM_H025_HIGH_BAND_BOUNDARY_NOTE.md)
-- [wave_direct_dm_h025_seed0_crossfamily_note](WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md)
+- `WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0193 in the
+  citation graph; matches the existing convention recorded in the
+  paragraph above — citation graph direction is *downstream →
+  upstream*, with the crossfamily note's own §"Audit dependency
+  repair links" citing this fam1-seed0-control note as the load-bearing
+  upstream source for table row 1.)

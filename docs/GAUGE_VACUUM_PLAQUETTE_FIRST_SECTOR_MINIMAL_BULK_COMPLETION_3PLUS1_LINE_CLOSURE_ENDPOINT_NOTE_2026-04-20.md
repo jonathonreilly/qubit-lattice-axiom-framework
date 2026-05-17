@@ -37,4 +37,10 @@ It does **not** prove:
 - Full-packet boundary:
   [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_FULL_PACKET_NO_GO_THEOREM_NOTE_2026-04-20.md](./GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_FULL_PACKET_NO_GO_THEOREM_NOTE_2026-04-20.md)
 - Scope / reviewer limits:
-  [SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md](./SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md)
+  `SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md`
+  (see-also cross-reference; backticked to break cycle-0212 in the
+  citation graph. The known-limits note's own §"Authority chain"
+  cites this endpoint theorem as the load-bearing Wilson/Perron
+  canonical-branch-fix authority for step 1; that direction is the
+  load-bearing one. The pointer here is a scope/reviewer-limits
+  forward reference, not a derivation input.)

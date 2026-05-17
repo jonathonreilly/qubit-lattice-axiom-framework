@@ -301,5 +301,17 @@ in commit `614b929b5`).
 python3 scripts/frontier_pmns_corner_transport_active_block.py
 ```
 - [neutrino_dirac_two_higgs_canonical_reduction_note](NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
-- [pmns_active_four_real_source_from_transport_note](PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md)
-- [pmns_transfer_operator_dominant_mode_note](PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md)
+- `pmns_active_four_real_source_from_transport_note`
+  (see-also cross-reference; backticked to break cycle-0012 in the citation
+  graph. As recorded in this note's class-B citation paragraph above, the
+  present note does not consume the sibling's claim — the cross-reference
+  is graph-visible only. The PMNS_ACTIVE_FOUR_REAL note's own body cites
+  the present corner-transport note as an adjacent transport candidate
+  authority. Both directions are descriptive cross-references; this
+  back-edge is demoted to break the cycle.)
+- `PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0061 in the
+  citation graph. The dominant-mode note's own §"Dynamical primitive"
+  cites the present corner-transport note as the load-bearing source
+  for the transport operator `T_act`; that direction is the load-bearing
+  one. The back-edge here is graph-bookkeeping navigation only.)

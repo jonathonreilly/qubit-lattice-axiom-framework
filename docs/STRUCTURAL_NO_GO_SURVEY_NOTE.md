@@ -270,7 +270,13 @@ weight triple (Theorem 7 in
   is possible. They prove that the six enumerated mechanism classes
   individually fail. Higher-order mechanisms and variational
   principles are examined in
-  [HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md](./HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md).
+  `HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0002 in the
+  citation graph. The higher-order note imports the Candidate-B
+  `α = β` no-go from the present note as a load-bearing input to its
+  H-5 row classification. The load-bearing citation direction is
+  *higher_order_structural_theorems_note → this_structural_no_go_survey*,
+  not vice versa.).
 - The `Q_d / Q_ℓ ≈ √(6/5)` Casimir near-match is an observation
   about the retained algebra, not a retained theorem. It is
   currently unretained due to the missing species-dependent

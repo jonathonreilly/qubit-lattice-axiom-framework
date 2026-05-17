@@ -5,7 +5,8 @@
 on the current package surface.
 
 **Last retained-claim coverage audit:** 2026-04-16 against
-[CLAIMS_TABLE.md](./CLAIMS_TABLE.md)
+`CLAIMS_TABLE.md` (sibling artifact; cross-reference only — backticked to
+break cycle-0044)
 **Last import-discipline audit:** 2026-04-16, inline in this file
 
 This file is **not** the manuscript claim surface.
@@ -25,7 +26,9 @@ For paper claims and release evidence, use:
 - `DERIVATION_VALIDATION_MAP.md` (sibling artifact; cross-reference only —
   not a one-hop dep of this note)
 - [PUBLICATION_MATRIX.md](./PUBLICATION_MATRIX.md)
-- [CLAIMS_TABLE.md](./CLAIMS_TABLE.md)
+- `CLAIMS_TABLE.md` (sibling artifact; cross-reference only — backticked
+  to break cycle-0044 through claims_table -> gravity_publication_package_summary
+  -> derivation_validation_map -> derivation_atlas -> claims_table)
 
 ## Canonicalization rule
 

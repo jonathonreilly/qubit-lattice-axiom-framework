@@ -119,7 +119,10 @@ therefore sharply named:
 >      identity `m_DM = N_sites * v = 16 * v ~ 3940 GeV`, which on the
 >      canonical surface gives `eta = C * m_DM^2` and a bounded `eta_pred`
 >      band that brackets `eta_obs`; see
->      [`DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md`](DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md).
+>      `DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md`
+>      (see-also cross-reference; backticked to break cycle-0021 — the
+>      bypass note is a quoted "see" reference inside the historical-quote
+>      block, not a load-bearing dep of this cosmology survey).
 >      The structural mass identity remains open (G1), and the route keeps
 >      bounded `x_F`, `alpha_X`, and Sommerfeld inputs even if G1 is solved.
 

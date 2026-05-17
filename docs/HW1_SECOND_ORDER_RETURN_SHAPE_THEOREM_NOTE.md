@@ -174,7 +174,14 @@ The question of whether retained operators on the intermediate
 subspace `O_0 ⊕ T_2` can fix these three weights to match observed
 charged-lepton masses is addressed by the three framework-derives
 routes (Theorems 4, 5, 6 in
-[HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md](./HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md)),
+`HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md`
+(see-also cross-reference; backticked to break cycle-0003 in the
+citation graph. The higher-order note imports this hw=1 shape
+theorem's hopping table and signed Clifford ordering structure as
+load-bearing inputs to its Theorem 2 and Theorem 6 rows. The
+load-bearing citation direction is
+*higher_order_structural_theorems_note → this_hw1_shape_theorem*,
+not vice versa.)),
 all of which close negatively on the current retained surface.
 
 ## What this does not claim

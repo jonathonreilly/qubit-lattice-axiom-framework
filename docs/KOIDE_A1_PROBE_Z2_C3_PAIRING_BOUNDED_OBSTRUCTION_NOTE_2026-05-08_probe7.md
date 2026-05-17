@@ -465,7 +465,11 @@ is to avoid one-step relabelings of already-landed cycles. This note:
   obstructions are distinct closure-class arguments.
 - Identifies a NEW STRUCTURAL OBSERVATION (the C_3-multiplicity 3:6
   reframing of 1/2) that wasn't present in
-  [`KOIDE_A1_DERIVATION_STATUS_NOTE.md`](KOIDE_A1_DERIVATION_STATUS_NOTE.md)
+  `KOIDE_A1_DERIVATION_STATUS_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0005 in the
+  citation graph; load-bearing citation direction is
+  *koide_a1_derivation_status_note → this_probe_z2_c3_pairing_obstruction*,
+  not vice versa)
   or in Route F.
 - Provides explicit numerical counterexamples for each Z_2 candidate
   (multiple A1-violating ratios passing each candidate's putative
@@ -475,7 +479,11 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 
 ## Cross-references
 
-- A1 derivation status (parent): [`KOIDE_A1_DERIVATION_STATUS_NOTE.md`](KOIDE_A1_DERIVATION_STATUS_NOTE.md)
+- A1 derivation status (parent): `KOIDE_A1_DERIVATION_STATUS_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0005 in the
+  citation graph; load-bearing citation direction is
+  *koide_a1_derivation_status_note → this_probe_z2_c3_pairing_obstruction*,
+  not vice versa)
 - Route F bounded obstruction (sister): [`KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md`](KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md)
 - Circulant character derivation (R1, R2 source): [`KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md)
 - Charged-lepton Koide-cone algebraic equivalence: [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md)

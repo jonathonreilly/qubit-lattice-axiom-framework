@@ -32,7 +32,15 @@ H3/readout package.
 
 A candidate retained-derivation surface for the three pins exists as an
 `audited_conditional` support route in
-[`PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md`](PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md),
+`PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md`
+(see-also cross-reference; backticked to break cycle-0007 in the citation
+graph. As the very next sentence below records, the cited note's last two
+equations are explicitly **proposed**, not retained, so it does not yet
+discharge the observational dependency in this theorem — the present
+theorem's load-bearing pins remain the imported observational triple, and
+PMNS_SELECTOR is named here only as a forward-looking promotion route, not
+as a load-bearing input. The PMNS_SELECTOR note's own body records the
+reverse direction as load-bearing-on-promotion of the present theorem.),
 which numerically recovers `(m, delta, q_+) ~= (0.667, 0.933, 0.715)` from the
 proposed three-equation system `Tr(H) = Q_Koide`, `delta * q_+ = Q_Koide`,
 `det(H) = E2`. That note's last two equations are explicitly **proposed**, not
@@ -241,7 +249,14 @@ audit dependency transparent.
 - [KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md](KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md)
   -- Issue 4 explicitly flags `(M_STAR, DELTA_STAR, Q_PLUS_STAR)` as
   observational PMNS pins, not framework-derived constants.
-- [PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md](PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md)
+- `PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md`
+  (see-also cross-reference; backticked to break cycle-0007 in the
+  citation graph; load-bearing citation direction is
+  *pmns_selector_three_identity_support_note_2026-04-21 →
+  this_koide_higgs_dressed_resolvent_root_theorem_note*, not vice versa,
+  per the PMNS_SELECTOR note's own "Related authorities" record naming
+  the present theorem as the load-bearing downstream pin chain whose
+  retention depends on the support note's promotion)
   -- candidate retained-derivation surface for `(m_*, delta_*, q_+*)` via
   the proposed three-equation system; **`audited_conditional` support, not
   retained**. Promotion would discharge the observational dependency.
@@ -250,7 +265,12 @@ audit dependency transparent.
   `koide_berry_phase_theorem_note_2026-04-19`) -- companion note that
   explicitly lists these chamber pins as separately-pinned observational
   inputs (section 5.3).
-- [SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md](SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md)
+- `SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md`
+  (see-also cross-reference; backticked to break cycle-0017 in the
+  citation graph. The scalar-selector register's own one-hop authority
+  list cites this theorem as a Priority 1 candidate route; that
+  direction is the load-bearing one. The back-edge here is navigation
+  to the open-imports register, not a derivation input.)
   -- the open-imports register listing this theorem as one of four candidate
   routes to the Koide cone, all currently conditional on the chamber pins
   (Priority 1 entry 3).

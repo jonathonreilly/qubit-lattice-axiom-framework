@@ -710,7 +710,13 @@ Cached: [`logs/runner-cache/cl3_koide_a1_route_e_kostant_weyl_2026_05_08_routee.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them.
 
-- [koide_a1_derivation_status_note](KOIDE_A1_DERIVATION_STATUS_NOTE.md)
+- `KOIDE_A1_DERIVATION_STATUS_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0029 in the
+  citation graph. The derivation-status parent's own §"Review-loop
+  result" body cites the present bounded-obstruction note as the
+  load-bearing companion in that direction; this back-edge to the
+  parent is graph-bookkeeping navigation only, not a load-bearing
+  derivation input.)
 - [koide_a1_route_f_casimir_difference_bounded_obstruction_note_2026-05-08_routef](KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md)
 - [koide_circulant_character_derivation_note_2026-04-18](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md)
 - [charged_lepton_koide_cone_algebraic_equivalence_note](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md)

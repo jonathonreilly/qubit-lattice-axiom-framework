@@ -48,7 +48,14 @@ prediction `K (2−√2) / (4 c L) = 0.029985` to within `−0.33%`.
   closed form: `c2_∞ = K (2 − √2) / (4 c L_total) ≈ 0.029985` with
   `L_total = 40` (no-slit anchoring is the right one for the phase saddle).
 - **Slit-arm saddle context**:
-  [`NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md`](NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md)
+  `NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md`
+  (see-also cross-reference; backticked to break cycle-0206 in the
+  citation graph. The c_arm_derivation parent's own §"Upstream bridge
+  diagnostics" cites this full-kernel-identification note as the
+  load-bearing upstream bridge for the field-free no-slit kernel;
+  that direction is the load-bearing one. The reference here is
+  declared "support/context, not retained authority" and is therefore
+  navigation, not derivation input.)
   and [`scripts/lattice_nn_rescaled_C_arm_derivation.py`](../scripts/lattice_nn_rescaled_C_arm_derivation.py)
   provide the existing bounded coherent-saddle support surface for the
   slit-detector arm-width constant; this note uses it as support/context, not
@@ -176,7 +183,10 @@ recorded in PR #997, observed here for every source position
 The scoped bridge step is connecting the slit-anchored per-arm
 width `σ_arm(h) = C_arm · √h` (PR #968) to the no-slit kernel width
 `σ_amp(h) = C_amp · √h` (this runner). The existing
-[`C_arm` coherent-saddle support note](NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md)
+`C_arm` coherent-saddle support note `NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md`
+(backticked above to break cycle-0206; the load-bearing direction is
+*c_arm_derivation → this_full_kernel_note* per the parent's §"Upstream
+bridge diagnostics")
 provides the bounded saddle context. This runner's measured no-slit kernel
 then supports the sharper length-scaling cross-check: the field-free Gaussian
 kernel variance scales as `σ²(L; h) = K_amp · L · h` with

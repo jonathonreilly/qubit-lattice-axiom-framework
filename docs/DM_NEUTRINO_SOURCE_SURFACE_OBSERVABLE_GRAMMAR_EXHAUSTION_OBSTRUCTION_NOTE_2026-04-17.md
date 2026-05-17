@@ -115,7 +115,8 @@ still open because of family-choice ambiguity.
 
 ## Canonical validation
 
-- [DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POSITIVE_PROBE_REPRESENTATION_THEOREM_NOTE_2026-04-17.md](./DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POSITIVE_PROBE_REPRESENTATION_THEOREM_NOTE_2026-04-17.md)
+- `DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POSITIVE_PROBE_REPRESENTATION_THEOREM_NOTE_2026-04-17.md`
+  (see-also cross-reference; backticked to break cycle-0023 — the microscopic_positive_probe note's "## Inputs" section names the selector-branch host as the load-bearing upstream)
 - [DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md](./DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md)
 - [frontier_dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem.py](../scripts/frontier_dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem.py)
 - [frontier_dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization.py](../scripts/frontier_dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization.py)

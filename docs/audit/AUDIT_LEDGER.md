@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 345 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 184 |
+| ~~audited_conditional~~ | 185 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,21 +48,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 571 |
-| `audited_conditional` | 184 |
+| `audited_conditional` | 185 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1446 |
+| `unaudited` | 1445 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 974 |
+| `bounded_theorem` | 975 |
 | `decoration` | 25 |
 | `meta` | 217 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
-| `positive_theorem` | 745 |
+| `positive_theorem` | 744 |
 
 | criticality | count |
 |---|---:|
@@ -724,6 +724,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2896,6 +2897,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The primary runner has completed stdout and computes observables by calling the imported lattice propagation harness, but the restricted packet does not include the imported Lattice3D.propagate implementation or the action-law definitions needed to verify that the two requested action modes are genuinely implemented and differ only by phase at zero field.
 - **rationale:** The runner output supports exact numerical identity across the tested h values, and the visible source performs a substantive replay rather than merely printing constants. However, the load-bearing computation depends on scripts.valley_linear_same_harness_compare for the lattice, propagation routine, constants, slit setup, and action-mode semantics. Because that helper source is not included in the restricted packet, the audit cannot verify the zero-field action reduction or that the compared modes are independently implemented.
 - **auditor confidence:** high
+
+### `dense_prune_guard_seed_note`
+
+- **Note:** [`DENSE_PRUNE_GUARD_SEED_NOTE.md`](../../docs/DENSE_PRUNE_GUARD_SEED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded audit of the q=0.10 channel-count guarded prune path on the listed historical flip seeds and the provided aggregate runner output.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-210617-0eef0b89-dense_prune_guard_seed_n-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The guard fixes specific seeds when it preserves the effective detector-channel count and leaves other seeds vulnerable when eff_ch still drops.  _(class `C`)_
+- **chain closes:** False — The primary runner and helpers genuinely compute graph, pruning, gravity, purity, and eff_ch quantities, but the cached stdout only reports aggregate rows. It does not certify the source note's exact per-seed table or log guard trigger/removed-count decisions needed to support the seed-selective mechanism claim.
+- **rationale:** The runner source is not a hard-coded printout and the helper sources close the prior packet-completeness issue. However, the load-bearing claim is per-seed and mechanistic, while the completed runner artifact is aggregate-only and cannot verify the listed seed rows or distinguish guard action from other guarded-prune path differences. The safe retained claim is only that the aggregate guarded path computes fewer or altered flips with eff_ch closer to baseline in some configurations.
+- **auditor confidence:** medium
 
 ### `diamond_signal_budget_hardening_note`
 

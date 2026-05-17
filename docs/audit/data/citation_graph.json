@@ -36754,7 +36754,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "no_go",
       "deps": [],
-      "note_hash": "86d7a637924ee8d9026a4bab9af4bea7acdeefadc4d0ef137c0bafe87e2e1c93",
+      "note_hash": "d195e9cfcbfe512264bee8285d4a4001a2855d654bad0c5f8dd76a834c27850f",
       "path": "docs/ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md",
       "runner_path": "scripts/node_placement_emergence.py",
       "title": "Adaptive / Coevolving Geometry Scout No-Go"
@@ -38107,7 +38107,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "1ddb215c156cd1732a1525e62d25843088854804494e754e29b130fe2f492f67",
+      "note_hash": "97678c7552bc701dd51a93277d0d91c8f97dd532c560c8b75261b565c8c73fdd",
       "path": "docs/ALTERNATIVE_COUPLED_FIELD_PROBE_NOTE.md",
       "runner_path": "scripts/alternative_coupled_field_probe.py",
       "title": "Alternative Coupled-Field Probe"
@@ -38423,7 +38423,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "191d59ffbbd5eda849aeaf523b3bf424da4a606e2d6139d8204f40a926c8d9b6",
+      "note_hash": "6643f6b915f7bc46f647d8b313da949401a70fda4b6dfc4ad957d3adca8ab544",
       "path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
       "title": "Asymmetry Persistence Born Calibration Note"
@@ -38456,7 +38456,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "70b50b74202ac894d7eda221692465e186d3bb4a949f2efa8194ab2adffdaf4c",
+      "note_hash": "0bcfb1f62bedaf2f9582983815df0db05b49faef2719c828f349b3641345b767",
       "path": "docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_mass_scaling.py",
       "title": "Asymmetry Persistence Mass Scaling Note"
@@ -38612,7 +38612,7 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [],
-      "note_hash": "9f226bdb28e4a49bc6e97f60781711c7295f33f2396f690434dc3e2afc57e337",
+      "note_hash": "718b50dea325baa9a977763541bc9d087800178a46e54b6919bfc2e6d8ec67bd",
       "path": "docs/AUDIT_PACKET_SCRIPT_DEPS_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Audit Packet Script-Dependency Resolution"
@@ -58319,6 +58319,17 @@
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
     },
+    "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "note_hash": "2c2108fedb9cb5744d792d68f9acc59fd2686afd86b01abcb2bf39d9cb36503b",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
+      "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic External Narrow Bounded Note"
+    },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -73087,6 +73098,7 @@
     "nonlabel_grown_basin_note",
     "nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16",
     "observable_principle_from_axiom_note",
+    "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
     "oh_schur_boundary_action_note",
     "ollivier_einstein_proxy_note_2026-04-11",
     "one_parameter_reduced_shell_law_note",
@@ -73381,7 +73393,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 404,
+      "bounded_theorem": 405,
       "decoration": 1,
       "meta": 157,
       "no_go": 53,
@@ -73390,7 +73402,7 @@
       "positive_theorem": 153
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 850,
+      "bounded_theorem": 851,
       "decoration": 1,
       "meta": 157,
       "no_go": 158,
@@ -73399,9 +73411,9 @@
       "positive_theorem": 606
     },
     "edge_count": 9061,
-    "leaf_count": 720,
-    "node_count": 2339,
-    "root_count": 842,
-    "runners_with_path": 1949
+    "leaf_count": 721,
+    "node_count": 2340,
+    "root_count": 843,
+    "runners_with_path": 1950
   }
 }

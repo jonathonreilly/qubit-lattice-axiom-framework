@@ -15252,6 +15252,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_hierarchy_observable_principle_from_axiom.py"
     },
+    "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 17,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py"
+    },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "assert_count": 1,
       "counts": {
@@ -39991,6 +40003,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py": {
+      "assert_count": 1,
+      "claims": [
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 17,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -51131,15 +51158,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 282,
+    "decoration_candidates": 283,
     "dominant_class_distribution": {
-      "A": 172,
+      "A": 173,
       "B": 253,
       "C": 702,
       "D": 282,
       "none": 421
     },
-    "runners_classified": 1830,
+    "runners_classified": 1831,
     "runners_with_C": 902,
     "runners_with_D": 516
   }

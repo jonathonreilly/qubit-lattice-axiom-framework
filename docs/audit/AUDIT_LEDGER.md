@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 322 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1224 |
+| unaudited | 1229 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 170 |
+| ~~audited_conditional~~ | 166 |
 | ~~audited_failed~~ | 18 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -45,38 +45,38 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 538 |
-| `audited_conditional` | 170 |
+| `audited_conditional` | 166 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1421 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 932 |
+| `bounded_theorem` | 931 |
 | `decoration` | 20 |
 | `meta` | 199 |
 | `no_go` | 234 |
 | `open_gate` | 111 |
-| `positive_theorem` | 732 |
+| `positive_theorem` | 734 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 1067 |
 | `high` | 58 |
 | `medium` | 260 |
-| `leaf` | 843 |
+| `leaf` | 844 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 246
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1830
+- runners classified: 1831
 - runners with (C) first-principles compute hits: 902
 - runners with (D) external comparator hits: 516
-- decoration candidates (no C, no D): 282
+- decoration candidates (no C, no D): 283
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -655,10 +655,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
-| `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `alternative_coupled_field_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `asymmetry_persistence_born_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
-| `asymmetry_persistence_mass_scaling_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1043,19 +1039,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing result is a bounded computational theorem: the runner constructs the lattice, field, action values, propagation, detector readout, Born check, TOWARD counts, and F∝M fits rather than importing the target exponents. The current output reproduces the note's load-bearing mass-scaling classes: sqrt gives 0.50, linear/exp/reciprocal give 1.00, quadratic gives 2.00, while no-coupling and hill/negative-linear actions do not give the desired TOWARD response. The one-hop dependency is already audited_clean with effective_status retained_bounded, so dependency closure is retained-grade for this bounded scope. Residual risk is confined to broader universality or exact tail laws, which the note explicitly leaves unpromoted.
 - **auditor confidence:** high
 
-### `adaptive_coevolving_geometry_no_go`
-
-- **Note:** [`ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md`](../../docs/ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Bounded no-go for the finite adaptive/coevolving node-placement scout: whether the supplied runner artifacts close the claim that distinguishability-weighted placement fails to yield a robust weak-field gravity signal.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1321-418b-7b73-b55b-8a9d354d394b`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The sign is seed-sensitive and changes with placement strength, so this lane is not yet a clear positive.  _(class `C`)_
-- **chain closes:** False — The supplied stdout supports a weaker negative read, but it does not reproduce the note's load-bearing per-alpha TOWARD counts or mean shifts. The runner uses 16 seeds and prints N-sweep means, while the note cites 13/18-style sign counts and different alpha-level means from an unavailable artifact.
-- **rationale:** Issue: the note's stated seed-sensitive sign-count evidence is not emitted by the supplied runner stdout and its numerical means are stale or from a different run. Why this blocks: the bounded no-go as written relies on those sign-count statistics, so the restricted packet cannot verify the load-bearing statistical claim. Repair target: update the note to the current runner output or supply a deterministic runner/log that emits the stated alpha-level TOWARD counts and means. Claim boundary until fixed: the current stdout supports only the narrower observation that this completed N-sweep has no clean emergent retained-positive row under the printed criterion.
-- **auditor confidence:** high
-
 ### `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`
 
 - **Note:** [`AFFINE_IMAGINARY_SLOT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/AFFINE_IMAGINARY_SLOT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-02.md)
@@ -1204,19 +1187,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing step is a direct bounded computational sweep, and the runner source performs a nontrivial calculation of geometry, connectivity, source fields, propagation, centroids, and pass/fail gates. The note's quantitative claims match the cached stdout: 10/15 rows pass, passing rows cover all listed drifts, and the mean exponent among passes is 1.000035. The safe read does not overclaim all seeds, generic geometry closure, or family-wide validity.
 - **auditor confidence:** medium
 
-### `alternative_coupled_field_probe_note`
-
-- **Note:** [`ALTERNATIVE_COUPLED_FIELD_PROBE_NOTE.md`](../../docs/ALTERNATIVE_COUPLED_FIELD_PROBE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite numerical check of the specified edge-carried field rule on the exact 3D lattice with h=0.5, W=6, L=30, decay=0.72, gamma=0.85, and max-field calibration, reporting zero-source recovery, positive centroid shifts, and near-linear source-strength scaling.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1324-345e-7df1-88b3-9f1e023ceda6`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The strongest bounded statement is that the alternative edge-carried architecture preserves exact zero-source recovery, keeps the weak-field TOWARD sign, and stays essentially linear in source strength.  _(class `C`)_
-- **chain closes:** False — The supplied stdout matches the note, but the runner imports H, K, Lattice3D, and _centroid_z from scripts.minimal_source_driven_field_probe, whose implementation is not in the restricted packet. With no cited authorities, the exact lattice propagation and TOWARD centroid readout cannot be independently audited from the supplied materials.
-- **rationale:** Issue: the bounded positive is carried by finite diagnostics from a runner whose load-bearing lattice, propagator, and centroid implementation is imported from an unprovided script, and the runner prints safe-read diagnostics rather than explicit pass/fail assertions. Why this blocks: the audit cannot verify that the claimed exact 3D lattice computation and TOWARD readout close from the restricted packet. Repair target: include or audit the imported lattice implementation, or provide a self-contained sliced runner with explicit thresholds for zero-source recovery, sign rows, and exponent bounds. Claim boundary until fixed: the supplied stdout reports the stated numbers for a completed run, but retained closure is conditional on the missing runner artifact.
-- **auditor confidence:** high
-
 ### `anderson_phase_mu2_0001_note_2026-04-11`
 
 - **Note:** [`ANDERSON_PHASE_MU2_0001_NOTE_2026-04-11.md`](../../docs/ANDERSON_PHASE_MU2_0001_NOTE_2026-04-11.md)
@@ -1295,19 +1265,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The no-go is scoped to exact finite-cell entropy constructions and a gapped two-level edge example, not to all possible entropy-carrier theorems. The note explicitly distinguishes the primitive trace Tr((I_16/16)P_A)=1/4 from von Neumann and binary entropy values, and the runner reproduces those finite arithmetic checks with current PASS=26 FAIL=0. No hidden physical identification is used to claim a positive entropy coefficient; the conclusion is negative and leaves positive routes open only if they add a selector or operational entropy theorem.
 - **auditor confidence:** high
 
-### `asymmetry_persistence_born_note`
-
-- **Note:** [`ASYMMETRY_PERSISTENCE_BORN_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite bounded audit of the claimed Born-clean Sorkin |I3|/P calibration for the stated dense N=100 asymmetry-persistence probe, not an asymptotic Born theorem.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e12fb-3fb6-7373-81b1-946f0fb92f51`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The corrected Sorkin |I3|/P magnitudes in the table are reproducible from the registered runner at the narrow N=100, npl=60, 2 seeds, 4 realizations configuration.  _(class `B`)_
-- **chain closes:** False — The restricted packet has no one-hop cited authorities, while the runner relies on unprovided infrastructure for graph construction, persistence pruning, layernorm propagation, and collapse. The live stdout also times out before the load-bearing N=100 threshold rows, so the supplied packet does not certify the table.
-- **rationale:** Issue: the claimed finite Born-clean table depends on unlisted runner imports and a completed or cached narrow-run artifact that is not supplied in the restricted packet. Why this blocks: the source note's own table and prose cannot substitute for an audited dependency or completed reproducible runner output. Repair target: wire the needed infrastructure as direct audited dependencies or inline/supply their source, and provide a completed sliced N=100, npl=60, 2-seed, 4-realization runner log or certificate. Claim boundary until fixed: the note may be treated only as a density-limited attempted calibration, not a closed Born-clean result.
-- **auditor confidence:** high
-
 ### `asymmetry_persistence_collapse_note`
 
 - **Note:** [`ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md)
@@ -1319,19 +1276,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note's load-bearing step is that the Strongest retained rows tables are deterministic stdout of the registered runner and that the narrow conclusion is supported directly by those rows.  _(class `C`)_
 - **chain closes:** False — The supplied runner source/stdout do not match the note's stated configuration or tables: the runner defaults/stdout use 12 realizations while the note states 10, and completed N=80 collapse entries already differ numerically. The asserted N=100 threshold 0.10 pocket is not present in the supplied stdout because the run timed out, and the imported generator/propagator infrastructure is not supplied as a one-hop authority.
 - **rationale:** Issue: the note's bounded tables are stale relative to the supplied runner source/stdout, and the runner depends on unlisted imported infrastructure for graph generation, propagation, layernorm, and pruning. Why this blocks: the conclusion depends on exact finite rows, especially the N=100 layernorm collapse pocket, but the current packet neither reproduces those rows nor supplies the imported closure authority. Repair target: align the runner/note configuration, provide a completed cached log or sliced deterministic runner for the stated sweep, and cite/audit the imported infrastructure. Claim boundary until fixed: the packet only supports partial qualitative observations from the completed N=80 stdout, not the full bounded claim.
-- **auditor confidence:** high
-
-### `asymmetry_persistence_mass_scaling_note`
-
-- **Note:** [`ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite N=100, npl=60, eight-seed generated-graph mass-scaling sweep with unweighted power-law fits over M={2,3,5,8}.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1309-e652-7fc2-9a0b-641d1b0980c0`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Generated hard geometry helps the mass window, but it does not solve the mass law.  _(class `C`)_
-- **chain closes:** False — The reported coefficients and R^2 values match the supplied stdout, but the packet supplies no one-hop authority or source for the imported graph construction, field, propagation, and gravity readout primitives. The qualitative improvement claim also lacks an explicit pass/fail or uncertainty criterion despite large SEs relative to the means.
-- **rationale:** Issue: the note promotes a descriptive runner sweep into a closed mass-window result while relying on unprovided imported primitives and no listed authorities. Why this blocks: a hostile reviewer cannot verify that the generated hard geometry or gravity_delta readout is the claimed framework object, and the runner prints fits without testing that the threshold improvement is statistically or procedurally significant. Repair target: add the missing dependency edges/source packet for the graph/readout/propagation definitions and encode an explicit improvement criterion with uncertainty. Claim boundary until fixed: the packet supports only that this runner stdout reports the listed positive mean fits.
 - **auditor confidence:** high
 
 ### `asymmetry_persistence_mass_window_note`

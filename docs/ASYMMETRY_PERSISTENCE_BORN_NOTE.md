@@ -118,3 +118,17 @@ not register the layernorm-combo companion runner against this row. It
 records the cited audit-snapshot repair path, cites the registered primary runner
 and its frozen partial cache, and names the admitted-context imports
 the broader sweep depends on.
+
+---
+
+**Audit requeue note, 2026-05-17:** the previous
+`audited_conditional` verdict cited an incomplete restricted packet with
+missing helper-script imports. The audit ledger now records
+`helper_runner_paths` for this row, so the next audit packet should
+include `scripts/asymmetry_persistence_collapse_pilot.py`,
+`scripts/asymmetry_persistence_joint_card.py`,
+`scripts/asymmetry_persistence_pilot.py`,
+`scripts/gap_topological_asymmetry.py`, and
+`scripts/gap_topological_asymmetry_layernorm_combo.py` alongside the
+primary runner and cache. This note changes no science content; it makes
+the re-audit hash drift explicit.

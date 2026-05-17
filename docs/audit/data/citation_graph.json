@@ -68931,6 +68931,18 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
       "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem"
     },
+    "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": {
+      "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "8da434c32d26f92e400381c8b4e349687f3ae34c733bd76f3163bb8bfc82d266",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 3 \u2014 BZ-Corner Hamming-Orbit Narrow Theorem"
+    },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
       "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
       "claim_type_author_hint": "bounded_theorem",
@@ -76207,6 +76219,7 @@
     "staggered_backreaction_shell_spectral_note",
     "staggered_dag_note_2026-04-10",
     "staggered_dirac_realization_gate_note_2026-05-03",
+    "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
     "staggered_fermion_card_2026-04-10",
     "staggered_geometry_superposition_note_2026-04-11",
@@ -76367,7 +76380,7 @@
       "no_go": 53,
       "none": 1527,
       "open_gate": 44,
-      "positive_theorem": 153
+      "positive_theorem": 154
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 851,
@@ -76376,12 +76389,12 @@
       "no_go": 158,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 606
+      "positive_theorem": 607
     },
     "edge_count": 9050,
-    "leaf_count": 722,
-    "node_count": 2340,
-    "root_count": 844,
-    "runners_with_path": 1951
+    "leaf_count": 723,
+    "node_count": 2341,
+    "root_count": 845,
+    "runners_with_path": 1952
   }
 }

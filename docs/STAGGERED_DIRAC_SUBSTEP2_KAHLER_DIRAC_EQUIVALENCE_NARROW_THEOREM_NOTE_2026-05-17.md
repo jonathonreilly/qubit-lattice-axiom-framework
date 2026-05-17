@@ -87,7 +87,47 @@ identities hold:
   the Cl(3) algebra). At `d = 4`, the decomposition is
   `16 = 4 · 4` with `N_spinor = N_taste = 4`.
 
-Facts (E1)-(E5) are abstract finite-dim complex linear-algebra and
+- **(E6) Hermiticity of `i · D_KD`.** With the standard Hodge inner
+  product on `Λ^*(C^d)` (orthonormal form basis), the adjointness
+  `δ = d†` (verified by the runner as `δ = d^T` on the real ±1
+  matrix representation) yields `D_KD† = (d - δ)† = δ - d = -D_KD`.
+  Hence the operator `i · D_KD` satisfies `(i · D_KD)† = i · D_KD`,
+  i.e., it is Hermitian on `Λ^*(C^d)`. This matches the standard
+  physics-convention Dirac kinetic operator (the antihermitian `D`
+  generates first-order equations of motion; the Hermitian `iD`
+  appears in the action as the kinetic bilinear).
+
+- **(E7) Wilson r-term breaks form-parity reversal (narrow no-go).**
+  The Wilson lattice Dirac operator `D_W = D_KD + r · M` with mass-
+  like term `M` acting on `Λ^*(C^d)` as the identity (or as any
+  Λ^p → Λ^p block-diagonal operator) does NOT reverse form-degree
+  parity: it has nonzero `Λ^p → Λ^p` diagonal blocks for any
+  `r ≠ 0`. Consequently, the Wilson operator on `Λ^*(C^d)` is not
+  algebraically of the `d - δ` Kähler-Dirac shape; it sits outside
+  the narrow uniqueness frame "Hermitian, Z₂-graded-parity-
+  reversing, range-1 in Hamming-weight" set by (E4) + (E6). This is
+  a narrow algebraic statement about operators on the abstract form
+  complex `Λ^*(C^d)`; it makes no statement about chiral-symmetry
+  breaking or Wilson fine-tuning on the framework's physical
+  lattice (those are downstream substrate-level issues, out of
+  scope).
+
+- **(E8) substep-1 JW input boundary.** The companion substep-1
+  narrow theorem (`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`,
+  PR #1411, currently unaudited) supplies cross-site CAR algebra
+  `{c_x, c_y†} = δ_{xy} · I` on the tensor-product per-hypercube
+  Fock space `H_Λ = V^{⊗|Λ|}` with `dim_C H_Λ = 2^{|Λ|}`. The
+  substep-2 narrow theorem's form-complex content (E1)-(E5)
+  treats `V_{H_n} := C^{2^d}` (the per-hypercube Z₂^d-indexed
+  component space of dim `2^d`) as the abstract algebraic carrier;
+  this is **not identified** with the JW Fock space (which at
+  `|Λ| = 2^d` sites in a single hypercube would have dim
+  `2^{2^d}`, not `2^d`). The substep-2 narrow theorem does not
+  consume any dimensional readout from substep-1 JW beyond the
+  per-site Grassmann nilpotency `χ_x² = 0` already taken from the
+  substep-1 dimensional-matching bridge.
+
+Facts (E1)-(E8) are abstract finite-dim complex linear-algebra and
 finite Grassmann calculus statements, conditional on the three cited
 retained substrate primitives and standard exterior-algebra
 infrastructure. They make **no** claim that the framework's physical
@@ -305,7 +345,7 @@ Properties (a)-(c) are standard finite-dim exterior-algebra
 identities. They define `D_KD` as a linear operator on `Λ^*(C^d)`
 with the expected Z₂-graded / Hodge-Laplacian structure. ∎
 
-### 5.5 (E5) Spinor-count factor match at even d
+### 5.5 (E5) Spinor-count factor match at even d (cont.)
 
 By the cited substep-3 narrow theorem (R2)-(R3), the integer `2^d`
 admits at even `d` the arithmetic factorization
@@ -328,6 +368,91 @@ At `d = 4`, the form-complex graded dim count
 The match `2^d = N_spinor · N_taste = 4 · 4 = 16` at `d = 4` is an
 exact arithmetic identity, conditional on the cited upstream narrow
 theorems. ∎
+
+### 5.6 (E6) Hermiticity of i · D_KD on Λ^*(C^d)
+
+On the orthonormal form basis of `Λ^*(C^d)` (basis subsets ordered
+within each grade by lex, normalized to unit norm under the standard
+Hodge inner product), the runner verifies `δ = d^T` exactly at
+`d ∈ {2, 3, 4}` (Part 6). Since the matrix representations of `d`
+and `δ` have integer ±1 entries (Koszul sign convention), the
+adjoint coincides with the transpose: `δ = d†`. Therefore
+
+```text
+D_KD†  =  (d - δ)†  =  d† - δ†  =  δ - d  =  -D_KD.
+```
+
+The operator `i · D_KD` satisfies `(i · D_KD)† = -i · D_KD† =
+-i · (-D_KD) = i · D_KD`, i.e., `i · D_KD` is Hermitian on
+`Λ^*(C^d)`. This matches the standard physics-convention "kinetic
+Dirac operator" (the antihermitian `D` appearing in first-order
+equations of motion; the Hermitian `iD` appearing as the kinetic
+bilinear in the action). ∎
+
+### 5.7 (E7) Wilson r-term breaks form-parity reversal
+
+Define the Wilson lattice Dirac operator on `Λ^*(C^d)` as
+`D_W := D_KD + r · M`, where the Wilson mass-like term `M` is any
+operator preserving each `Λ^p → Λ^p` subspace (the simplest case is
+`M = I` the identity, used in the runner). The exterior derivative
+`d` and co-derivative `δ` strictly shift form-degree by `±1`
+(`d : Λ^p → Λ^{p+1}`, `δ : Λ^p → Λ^{p-1}`), so `D_KD = d - δ` has
+exactly zero diagonal blocks on each `Λ^p → Λ^p` subspace (E4 part
+(a), Part 7 of the runner).
+
+The Wilson r-term `r · M` adds nonzero diagonal contributions on
+each `Λ^p → Λ^p` block (for `r ≠ 0`). The runner verifies at
+`d ∈ {2, 3, 4}` that the `Λ^0 → Λ^0` block of `D_W = D_KD + r · I`
+is `r · I_{1×1}`, a nonzero `1 × 1` block. Hence `D_W` does NOT
+reverse form-degree parity: it has a nontrivial parity-preserving
+component.
+
+Consequently, the Wilson operator on the abstract form complex
+`Λ^*(C^d)` is **not** of the `d - δ` Kähler-Dirac shape; it sits
+outside the narrow uniqueness frame "Hermitian, Z₂-graded-parity-
+reversing, range-1 in Hamming-weight" set by (E4) + (E6). This is
+a narrow algebraic statement about operators on `Λ^*(C^d)`; it
+makes no statement about chiral-symmetry breaking, Wilson
+fine-tuning, or doubler-removal cost on the framework's physical
+lattice substrate (those are downstream substrate-level issues,
+out of scope here). ∎
+
+### 5.8 (E8) substep-1 JW input boundary
+
+The companion substep-1 narrow theorem on PR #1411
+(`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`,
+currently unaudited) constructs Jordan-Wigner cross-site operators
+`(c_x, c_x†)_{x ∈ Λ}` on the tensor-product Fock space
+`H_Λ := V^{⊗|Λ|}` with `dim_C V = 2` (per the cited Cl(3)
+faithful-irrep dim-2 narrow), so
+
+```text
+dim_C H_Λ  =  2^{|Λ|}.
+```
+
+For a single hypercube `H_n` of `Z^d` with `|H_n| = 2^d` sites, the
+JW per-hypercube Fock dim is `dim_C H_{H_n} = 2^{2^d}`. At
+`d = 4`, this gives `dim_C H_{H_n} = 2^{16} = 65536`.
+
+The substep-2 narrow theorem's per-hypercube algebraic carrier
+`V_{H_n} := C^{2^d}` (with `dim_C V_{H_n} = 2^d = 16` at `d = 4`) is
+**not** identified with `H_{H_n}`. The form-complex bijection
+(E3) maps `V_{H_n} ≅ Λ^*(C^d)` as graded complex vector spaces of
+dim `2^d`. The boundary between the JW per-site Fock tensor
+product (substep-1) and the Z₂^d-indexed per-hypercube component
+space (substep-2) is preserved: the substep-2 narrow theorem
+consumes only the per-site Grassmann nilpotency `χ_x² = 0` from
+substep-1 (the algebraic ingredient that makes the per-site
+Grassmann generator pattern compatible with the exterior-algebra
+generator pattern, per Section 5.1), and does not consume any
+JW dimensional readout.
+
+This boundary is the operational scope-separation that lets the
+substep-2 narrow theorem run as a class-(A) algebraic identity on
+the abstract per-hypercube component space, decoupled from the
+open U4 physical-lattice realization bridge of substep-1 and from
+the substep-1 JW cross-site CAR content (which carries its own
+admissions). ∎
 
 ## 6. What this note does NOT claim
 
@@ -371,6 +496,23 @@ theorems. ∎
   correspond to a specific subset of the `2^d` form-complex
   components. That identification is in substep 4 and remains out
   of scope here.
+- Does **not** assert a Class-A "Kähler-Dirac is THE unique
+  Hermitian local nearest-neighbor lattice Dirac operator preserving
+  Cl(3) and Z^d substrate". The narrow theorem proves only:
+  (i) `i · D_KD` is Hermitian on `Λ^*(C^d)` (E6); (ii) Wilson
+  `D_W = D_KD + r · I` falls outside the Z₂-graded-parity-reversing
+  shape (E7), narrowly excluding one specific non-Kähler-Dirac
+  candidate; (iii) the overlap operator's
+  `(D_W† D_W)^{-1/2}` expansion is not range-1 in Hamming-weight,
+  so it sits outside the "local nearest-neighbor" frame as a
+  structural counter-example. A full Class-A uniqueness theorem
+  ("the ONLY Hermitian, Z₂-graded-parity-reversing, range-1,
+  Cl(3)-respecting operator on `Λ^*(C^d)` is `D_KD` up to a real
+  scalar") would require enumerating ALL operators in that class
+  and is not in scope here. The narrow theorem closes only the
+  algebraic equivalence half (E1)-(E5), Hermiticity (E6), and
+  narrow Wilson exclusion + plain-text overlap counter-example
+  (E7).
 
 ## 7. Forbidden imports check
 
@@ -388,10 +530,16 @@ theorems. ∎
   identification) load-bearing.
 - No new axioms beyond the repo baseline physical `Cl(3)` local algebra on
   the `Z^3` spatial substrate.
-- No external Becher-Joos 1982 identity is load-bearing on the
-  narrow theorem's algebraic content; Becher-Joos is named in plain
-  text only as the standard external reference for the form-complex
-  framing.
+- No external Becher-Joos 1982 / Kawamoto-Smit 1981 / Susskind 1977
+  / Kogut-Susskind 1975 / Sharpe (LAT2006 + arXiv:0711.0699) /
+  Neuberger 1998 identity is load-bearing on the narrow theorem's
+  algebraic content; these are named in plain text only as standard
+  external references for the form-complex / staggered-fermion /
+  overlap framings.
+- The Wilson r-term (E7) and overlap (E15 plain-text counter-
+  example) are introduced as narrow operator-shape counter-examples
+  on `Λ^*(C^d)` only; no Wilson / overlap simulation output or
+  fitted constant is consumed.
 
 ## 8. Open derivation gap
 
@@ -473,8 +621,32 @@ verifies via sympy exact symbolic arithmetic:
     spinor-count factor match (E5) is specifically an even-`d`
     statement, with `d = 4` being the framework's space-time
     default.
+12. **(E6) Hermiticity of `i · D_KD`.** At `d ∈ {2, 3, 4}`, verify
+    `D_KD† = -D_KD` (antihermitian on the orthonormal form basis,
+    using `δ = d^T = d†` from Part 6) and `(i · D_KD)† = i · D_KD`
+    (Hermitian Dirac kinetic operator).
+13. **(E7) Wilson r-term breaks parity reversal.** At
+    `d ∈ {2, 3, 4}`, exhibit `D_W = D_KD + r · I` and verify the
+    `Λ^0 → Λ^0` block is `r · I_{1×1}` (nonzero for `r ≠ 0`),
+    confirming `D_W` does NOT reverse form-degree parity (in
+    contrast to `D_KD`).
+14. **(E8) substep-1 JW Fock dim ≠ form-complex dim.** At
+    `d = 4`, exhibit `dim_C Λ^*(C^4) = 16` (per-hypercube
+    Z₂^d-indexed component space) versus the substep-1 JW
+    per-hypercube Fock dim `2^{2^d} = 2^{16} = 65536` (the JW
+    construction's tensor-product per-site Fock at `|H_n| = 2^d`
+    sites). Confirms the form-complex bijection runs on the
+    component space, not on the JW Fock space (input boundary
+    preserved).
+15. **Counter-example: overlap (Neuberger) non-locality.** Record
+    the structural fact that the overlap Dirac operator
+    `D_ov = (1/a)(1 - V)` with `V = D_W / sqrt(D_W† D_W)` involves
+    an inverse square root that expands to infinite-range hopping
+    in position space; hence it sits outside the "local
+    nearest-neighbor" (range-1) frame within which `D_KD = d - δ`
+    is constructed. No numerical overlap construction.
 
-Expected output: `PASS=N FAIL=0` with `N ≥ 25`.
+Expected output: `PASS=N FAIL=0` with `N ≥ 60`.
 
 ## 10. Cross-references
 
@@ -510,6 +682,11 @@ edges:
 - `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`
   — substep-4 in-flight note carrying the SM-matter-generation
   reading; out of scope here.
+- `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
+  — companion substep-1 narrow theorem on PR #1411 supplying
+  cross-site CAR algebra on the JW per-hypercube Fock space; the
+  substep-2 narrow theorem does NOT consume its dimensional readout
+  (per (E8) boundary).
 - `MINIMAL_AXIOMS_2026-05-03.md`
   — framework baseline memo naming the physical `Cl(3)` local algebra plus
   `Z^3` spatial substrate baseline; the
@@ -518,15 +695,35 @@ edges:
   the lattice", Z. Phys. C 15, 343 — standard external reference for
   the form-complex framing; not load-bearing on the narrow theorem's
   algebraic content.
+- Kawamoto and Smit (1981), "Effective Lagrangian and dynamical
+  symmetry breaking in strongly coupled lattice QCD", Nucl. Phys. B
+  192, 100 — standard external reference for the spin-diagonalization
+  bridge from Kähler-Dirac to staggered (downstream of (E1)-(E5);
+  not load-bearing on this narrow theorem's algebraic content).
+- Sharpe (2007), "Rooted staggered fermions: good, bad or ugly?",
+  PoS LAT2006:022 (arXiv:hep-lat/0610094); see also Sharpe
+  (2007) arXiv:0711.0699 review notes — standard external review of
+  staggered/Kähler-Dirac structure; not load-bearing on this
+  narrow theorem's algebraic content.
+- Susskind (1977), "Lattice fermions", Phys. Rev. D 16, 3031 —
+  original staggered-fermion reference; not load-bearing here.
+- Kogut and Susskind (1975), "Hamiltonian formulation of Wilson's
+  lattice gauge theories", Phys. Rev. D 11, 395 — early
+  Hamiltonian-lattice fermion reference; not load-bearing here.
+- Neuberger (1998), "Exactly massless quarks on the lattice", Phys.
+  Lett. B 417, 141 — overlap construction referenced in (E7)'s
+  plain-text overlap counter-example; not load-bearing.
 
 ## 11. Citation-graph note
 
 Load-bearing markdown-link upstream consists of exactly the three
 narrow sibling theorems listed in Section 3. Cross-references to the
 open gate, the pre-existing substep-2 Kawamoto-Smit forcing note,
-the substep-1 broader Grassmann-forcing note, the naive lattice
+the substep-1 broader Grassmann-forcing note and the in-flight
+substep-1 JW-bridge narrow theorem (PR #1411), the naive lattice
 fermion `2^d` count narrow, the Cl(3) faithful-irrep dim-two narrow,
 the Berezin determinant narrow, the substep-4 in-flight note, the
-minimal-axioms memo, and the external Becher-Joos reference are
+minimal-axioms memo, and the external Becher-Joos / Kawamoto-Smit /
+Susskind / Kogut-Susskind / Sharpe / Neuberger references are
 plain-text reader pointers (not markdown links); the theorem does
 not consume their effective statuses.

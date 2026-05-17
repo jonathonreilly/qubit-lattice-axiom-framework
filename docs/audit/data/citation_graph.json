@@ -68926,7 +68926,7 @@
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf7231bd73089d38ebc913f3c6fe75693423ca27739061a2db08eb27c474ef68",
+      "note_hash": "0afbc5de13fad9862fea1650b3114cd8c59540d920da741e92984124c281b719",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
       "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem"

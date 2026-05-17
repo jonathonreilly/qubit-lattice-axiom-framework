@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -206652,7 +206651,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "cf7231bd73089d38ebc913f3c6fe75693423ca27739061a2db08eb27c474ef68",
+      "note_hash": "0afbc5de13fad9862fea1650b3114cd8c59540d920da741e92984124c281b719",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

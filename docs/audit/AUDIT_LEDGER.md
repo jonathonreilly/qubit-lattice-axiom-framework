@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 327 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -34,6 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 1 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
+| `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
@@ -45,20 +46,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 546 |
 | `audited_conditional` | 174 |
-| `audited_decoration` | 19 |
+| `audited_decoration` | 20 |
 | `audited_failed` | 64 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1428 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 943 |
-| `decoration` | 20 |
+| `decoration` | 21 |
 | `meta` | 199 |
 | `no_go` | 238 |
 | `open_gate` | 110 |
-| `positive_theorem` | 738 |
+| `positive_theorem` | 737 |
 
 | criticality | count |
 |---|---:|
@@ -849,6 +850,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
@@ -9945,6 +9947,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For each off-diagonal pair alpha != beta, pairwise distinct joint eigenvalues give a T_mu with tau_mu^(alpha) != tau_mu^(beta), and [K,T_mu]=0 implies (tau_mu^(beta)-tau_mu^(alpha)) <e_alpha|K|e_beta> = 0, forcing the matrix entry to vanish.  _(class `A`)_
 - **chain closes:** True — The conclusion follows directly from the explicit diagonal eigenvalue data and the commutator identity. No physical lattice, carrier-identification, Kawamoto-Smit, or external numerical input is needed for the scoped abstract theorem.
 - **rationale:** Within its stated narrow scope, the note proves a standard simultaneous-eigenspace separation fact from explicit finite-dimensional data. The runner source genuinely constructs the stated matrices and verifies the algebraic identities, boundary counterexample, and diagonal commuting class by exact symbolic arithmetic; it does not import external comparators or a hidden physics bridge. The runner's generic K check is Hermitian-restricted, but the written proof covers arbitrary linear K, so this is not a closure blocker for the theorem as stated.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Abstract 3-dimensional Z/3Z-equivariant Hermitian operators with standard cyclic permutation C have equal basis diagonal entries Tr(H)/3 while their circulant eigenvalues are generically distinct.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-150948-a5e2dcef-staggered_dirac_substep4-004`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the circulant Hermitian form H = aI + bC + bbar C^2, the zero diagonals of C and C^2 imply every diagonal entry of H equals a = Tr(H)/3.  _(class `A`)_
+- **chain closes:** True — The abstract algebra closes once the circulant form is admitted: C and C^2 have zero diagonal, so diag(H) = (a,a,a), Tr(H)=3a, and the retained cited parent supplies the eigenvalue formula. The physical hw=1 carrier and observable identification is explicitly outside this claim scope.
+- **rationale:** The runner performs exact symbolic matrix algebra and reports 19 passing class-A checks with no external comparator or fitted input. The result is a true algebraic corollary of the single retained circulant/eigenvalue parent plus standard finite-dimensional matrix facts. Under the decoration policy, zero-D algebra that reduces to one upstream parent claim is audited_decoration rather than audited_clean. The runner's reverse-direction uniqueness evidence is only a counterexample, so a second audit should keep P1 tied to admitted standard commutant theory rather than to that runner check alone.
+- **decoration parent:** `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
 - **auditor confidence:** high
 
 ### `staggered_fermion_card_2026-04-10`

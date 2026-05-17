@@ -4857,6 +4857,10 @@
       "to": "minimal_axioms_2026-05-03"
     },
     {
+      "from": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+      "to": "minimal_axioms_2026-05-03"
+    },
+    {
       "from": "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02",
       "to": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
     },
@@ -43498,6 +43502,20 @@
       "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
       "title": "Mass-Gap Bridge for Cluster Decomposition on Cl(3) \u2297 Z^3"
     },
+    "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
+      "claim_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "fa0582483cd13222dba2bdcf86b0d28f16067f64cf8243b3729029535f44be35",
+      "path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
+      "title": "Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3"
+    },
     "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02": {
       "claim_id": "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02",
       "claim_type_author_hint": "positive_theorem",
@@ -78352,7 +78370,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 439,
+      "bounded_theorem": 440,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78361,7 +78379,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 886,
+      "bounded_theorem": 887,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78369,10 +78387,10 @@
       "open_gate": 123,
       "positive_theorem": 619
     },
-    "edge_count": 9287,
-    "leaf_count": 744,
-    "node_count": 2402,
+    "edge_count": 9288,
+    "leaf_count": 745,
+    "node_count": 2403,
     "root_count": 862,
-    "runners_with_path": 2006
+    "runners_with_path": 2007
   }
 }

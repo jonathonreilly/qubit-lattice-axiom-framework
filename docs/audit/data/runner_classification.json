@@ -3204,6 +3204,18 @@
       "dominant_class": "C",
       "runner": "scripts/cluster_decomposition_mass_gap_bridge_check.py"
     },
+    "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 15,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/cluster_decomposition_spatial_slab_bridge_check.py"
+    },
     "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02": {
       "assert_count": 0,
       "counts": {
@@ -28649,6 +28661,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/cluster_decomposition_spatial_slab_bridge_check.py": {
+      "assert_count": 1,
+      "claims": [
+        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 1,
+        "B": 0,
+        "C": 15,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/cmw_2d_sublattice_no_ssb_check.py": {
       "assert_count": 0,
       "claims": [
@@ -52674,12 +52701,12 @@
     "dominant_class_distribution": {
       "A": 188,
       "B": 257,
-      "C": 720,
+      "C": 721,
       "D": 293,
       "none": 429
     },
-    "runners_classified": 1887,
-    "runners_with_C": 930,
-    "runners_with_D": 538
+    "runners_classified": 1888,
+    "runners_with_C": 931,
+    "runners_with_D": 539
   }
 }

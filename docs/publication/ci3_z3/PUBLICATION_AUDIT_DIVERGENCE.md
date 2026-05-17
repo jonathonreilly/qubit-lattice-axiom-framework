@@ -22,10 +22,9 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 6 |
 | critical | `audited_renaming` | 2 |
 | medium | `unaudited` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 510
+**Total non-retained-grade rows in publication tables:** 509
 
 ## Per-row breakdown
 
@@ -118,7 +117,6 @@ publication tables phrase it.
 | critical | `dm_abcc_exact_target_surface_source_cubic_closure_theorem_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `dm_abcc_five_basin_chamber_dple_support_theorem_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `dm_abcc_retained_measurement_closure_theorem_note_2026-04-21` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |
-| critical | `dm_abcc_signature_forcing_theorem_note_2026-04-19` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `dm_candidate_mass_window_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

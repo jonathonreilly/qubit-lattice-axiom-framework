@@ -44585,11 +44585,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.656,
+      "load_bearing_score": 14.656,
       "load_bearing_step": "Under PMNS Non-Singularity, f(t) = det(H_base + t J_phys) is nowhere zero on [0,1], so IVT sign preservation from det(H_base) > 0 gives det(H_base + J_phys) > 0.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "7eeebddfadd4a66a060885ac5ba71ececaf80f25bf82c59ce864082c7fe073bd",
       "note_path": "docs/DM_ABCC_PMNS_NONSINGULARITY_THEOREM_NOTE_2026-04-19.md",
       "notes_for_re_audit_if_any": "Second auditor should re-check the scope boundary: downstream citations must not use this row as an unconditional derivation of PNS, A-BCC equivalence, or exhaustive physical-basin uniqueness.",
@@ -44922,24 +44922,41 @@
       "verdict_rationale": null
     },
     "dm_abcc_signature_forcing_theorem_note_2026-04-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T13:04:19.178931+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "Conditional IVT sign-preservation theorem for the stated linear Hermitian DM source path: PNS plus det(H_base)>0 implies endpoint determinant positivity; PNS itself and exhaustive physical-basin uniqueness are not derived."
+        },
+        "dep_claim_type": {
+          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 10.655,
+        "runner_hash": "eb0bb7ba0ec048a6fb3b63499b3e64cb46a39ed0f3fa37d9b6e78006b075e5ae",
+        "transitive_descendants": 805
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-130358-20260517T130358Z-2de67d00-dm_abcc_signature_forcin-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted listed-endpoint theorem follows from computed endpoint signatures plus the standard connected-component structure of invertible Hermitian matrices by inertia. It does not close the broader global C_neg chamber theorem or derive PNS, but those are outside the narrowed audited scope.",
       "claim_id": "dm_abcc_signature_forcing_theorem_note_2026-04-19",
-      "claim_scope": "Listed-endpoint Sylvester signature-forcing only: Basin 2 and Basin X are in a different invertible Hermitian signature component from H_base, forcing det=0 on any continuous path from H_base to those endpoints.",
+      "claim_scope": "For the explicitly listed endpoints Basin 2 and Basin X, Sylvester/signature-component separation forces any continuous path from H_base to cross det=0.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-17T13:03:36.246092+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-17T13:04:19.178931+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -44954,27 +44971,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-17T13:04:19.178931+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-130358-20260517T130358Z-2de67d00-dm_abcc_signature_forcin-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly listed endpoints Basin 2 and Basin X, Sylvester/signature-component separation forces any continuous path from H_base to cross det=0.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.655,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "H_base has signature (1,0,2) while the listed Basin 2 and Basin X endpoints have signature (2,0,1), so any continuous Hermitian path between them must leave GL(Herm_3), i.e. cross det=0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1ec97a0380088b1c27a28b73d87633514cf513985cbc53505c13a1bc645928b7",
       "note_path": "docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream citation uses only the listed-endpoint theorem and does not re-expand it to all C_neg endpoints without a global chamber proof.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -45125,16 +45153,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 43,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 43
       },
       "runner_path": "scripts/frontier_dm_abcc_signature_forcing_theorem.py",
       "title": "DM A-BCC: Sylvester Signature-Forcing Theorem (Listed-Endpoint Scope)",
       "transitive_descendants": 805,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner actually computes the Hermitian matrices, endpoint signatures, determinant signs, sampled path crossings, chamber samples, and spectral-flow checks rather than merely printing constants. The load-bearing theorem for Basin 2 and Basin X is a genuine algebraic/topological closure over the listed endpoint data and Sylvester inertia. The note still contains residual PNS and global-chamber caveats, but the audited scope is explicitly narrowed to the listed endpoints and the current PASS=43 runner output is synchronized in the repaired sections."
     },
     "dm_candidate_mass_window_theorem_note_2026-04-19": {
       "audit_date": null,

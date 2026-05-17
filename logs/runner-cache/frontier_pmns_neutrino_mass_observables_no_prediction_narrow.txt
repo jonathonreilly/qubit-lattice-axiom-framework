@@ -1,0 +1,153 @@
+================================================================================
+PMNS neutrino-mass-observables no-prediction narrow rescope (Cycle 9)
+================================================================================
+  note: docs/PMNS_NEUTRINO_MASS_OBSERVABLES_NO_PREDICTION_NARROW_THEOREM_NOTE_2026-05-17.md
+  new content (X7, X7*): box-Krawczyk eigenvalue sign-signature + Delta m^2 disjoint from NuFit.
+
+================================================================================
+Part 1: sympy chamber-boundary constant identity.
+================================================================================
+  [PASS] (S1) sympy.simplify(sqrt(8/3) - 2 sqrt(6)/3) == 0
+  [PASS] (S1a) (sqrt(8/3))^2 = 8/3
+
+================================================================================
+Part 2: interval Newton brackets eigenvalues of H at PDG anchor.
+================================================================================
+  lambda_1 = [-1.3090943662450, -1.3090943662450]  (width 4.441e-15)
+  [PASS] (P2.1w) lambda_1 width <= 1e-13  (width = 4.441e-15)
+  lambda_2 = [-0.3204336926917, -0.3204336926917]  (width 2.831e-15)
+  [PASS] (P2.2w) lambda_2 width <= 1e-13  (width = 2.831e-15)
+  lambda_3 = [+2.2865894011467, +2.2865894011467]  (width 3.109e-15)
+  [PASS] (P2.3w) lambda_3 width <= 1e-13  (width = 3.109e-15)
+  [PASS] (P2.sep1) lambda_1 < lambda_2 strictly  (sep = 0.9887)
+  [PASS] (P2.sep2) lambda_2 < lambda_3 strictly  (sep = 2.6070)
+
+================================================================================
+Part 3: anchor sign signature (-,-,+) and |lambda|-ordering.
+================================================================================
+  [PASS] (P3.1) lambda_1 < 0  (l1.b = -1.309094)
+  [PASS] (P3.2) lambda_2 < 0  (l2.b = -0.320434)
+  [PASS] (P3.3) lambda_3 > 0  (l3.a = 2.286589)
+  |lambda_1| ~ [1.309094, 1.309094]
+  |lambda_2| ~ [0.320434, 0.320434]
+  |lambda_3| ~ [2.286589, 2.286589]
+  [PASS] (P3.4) |lambda_2| < |lambda_1| (middle eig has smallest |lambda|)  (0.320434 vs 1.309094)
+  [PASS] (P3.5) |lambda_3| > |lambda_1| (largest |lambda| is positive eig)  (2.286589 vs 1.309094)
+
+================================================================================
+Part 4 (X7, NEW): box-Krawczyk eigenvalue sign-signature over B.
+================================================================================
+  B = [0.625, 0.75] x [0.902, 0.956]; 80x80 sub-boxes
+  embedding: q = sqrt(8/3) - delta; precision: 200-bit mpmath
+  total sub-boxes:                       6400
+  interval-Newton failures:              0
+  image-disjoint sub-boxes (skipped):    2685
+  image-overlap sub-boxes:               3715
+    sign (-,-,+) strict:                 3715
+    |lambda_2| < |lambda_1| strict:      3715
+    |lambda_3| > |lambda_1| strict:      3715
+    all three strict simultaneously:     3715
+  chamber-side (m_2^2 - m_1^2)/(m_3^2 - m_1^2):  [0.307982, 0.328506]
+  empirical NuFit Delta m^2_21 / |Delta m^2_31|: [0.026843, 0.032844]
+  chamber-empirical disjoint? True
+  elapsed:                                          2.42s
+  [PASS] (P4.1) no interval-Newton failure  (0)
+  [PASS] (P4.2) image-overlap sub-boxes >= 1  (3715)
+  [PASS] (P4.3) every image-overlap sub-box has sign (-,-,+)  (non-sig: 0)
+  [PASS] (P4.4) every image-overlap sub-box has |lambda_2| < |lambda_1|  (non-order: 0)
+  [PASS] (P4.5) every image-overlap sub-box has |lambda_3| > |lambda_1|  (non-order: 0)
+  [PASS] (P4.6) all three strict simultaneously on every image-overlap sub-box  (fail: 0)
+
+================================================================================
+Part 5 (X7*, NEW): chamber-side Delta m^2 ratio band over B.
+================================================================================
+  chamber-side interval:   [0.307982, 0.328506]
+  empirical 3-sigma band:  [0.026843, 0.032844]
+  [PASS] (P5.1) chamber-side band strictly above empirical 3-sigma band  (chamber lo = 0.307982, emp hi = 0.032844)
+  [PASS] (P5.2) chamber-side band inside [0.25, 0.35] (conservative envelope)  ([0.307982, 0.328506])
+  [PASS] (P5.3) chamber-side band positive  (lo = 0.307982)
+  [PASS] (P5.gap) disjointness gap > 0.20 (large separation)  (gap = 0.275138)
+  floating-point image (40x40 sweep): [0.311495, 0.325176]
+  [PASS] (P5.4) floating-point image confirms band > empirical  (fp lo 0.311495, emp hi 0.032844)
+
+================================================================================
+Part 6 (NEW): permutation-equivariant disjointness.
+================================================================================
+  perm (0, 1, 2): band [-0.4819, -0.4524]  intersects empirical? False
+  perm (0, 2, 1): band [-2.2103, -2.0753]  intersects empirical? False
+  perm (1, 0, 2): band [+0.3115, +0.3252]  intersects empirical? False
+  perm (1, 2, 0): band [+3.0753, +3.2103]  intersects empirical? False
+  perm (2, 0, 1): band [+0.6748, +0.6885]  intersects empirical? False
+  perm (2, 1, 0): band [+1.4524, +1.4819]  intersects empirical? False
+  [PASS] (P6.1) at least 6 permutations enumerated
+  [PASS] (P6.2) NONE of 6 permutations places chamber-side band into empirical  (intersecting = 0)
+
+================================================================================
+Part 7 (X8): preimage-localization (inherited from Cycles 7 / 8 Table 2).
+================================================================================
+  [PASS] (P7.1) parent Table 2 9 grid points lie in B = [0.625,0.750]x[0.902,0.956]  (Cycles 7 / 8 (X8) named external admission)
+  [PASS] (P7.2) Cycle 9's box B identical to Cycles 7 / 8's B  (same chart, same NuFit (X3), same preimage admission (X8))
+
+================================================================================
+Part 8 (structural): Sigma m_nu depends on cosmological inputs (X6).
+================================================================================
+  Retained (X6): Sigma m_nu = (1 - L - R - Omega_b - Omega_DM) * C_nu * h^2
+  Chamber chart vars: (m, delta, q_+); cosmological: (L, Omega_b, Omega_DM, h, R, C_nu).
+  Sigma m_nu band: ~[0.058, 0.12] eV (X3**)
+  [PASS] (P8.1) chamber chart vars disjoint from Sigma m_nu cosmological inputs
+  [PASS] (P8.2) Sigma m_nu unconstrained by chamber chart (structural)
+  [PASS] (P8.3) cosmological Sigma m_nu bound (X3**) cited as NAMED EXTERNAL ADMISSION
+
+================================================================================
+Part 9 (structural): m_betabeta depends on Majorana phases atlas-open (X5).
+================================================================================
+  PMNS-as-f(H) (X5): 'Dirac PMNS map is INDEPENDENT of Majorana phases;
+    (alpha_21, alpha_31) not fixed by this theorem; Majorana mass sector.'
+  KamLAND-Zen m_betabeta band: [0.036, 0.156] eV (X3***)
+  [PASS] (P9.1) Majorana phases (alpha_21, alpha_31) atlas-open per X5
+  [PASS] (P9.2) absolute neutrino masses not in chamber chart (X5(i))
+  [PASS] (P9.3) m_betabeta unconstrained by chamber chart (structural)
+  [PASS] (P9.4) KamLAND-Zen m_betabeta bound (X3***) cited as NAMED EXTERNAL ADMISSION
+
+================================================================================
+Part 10: residual scope.
+================================================================================
+  [PASS] (P10) residual scope: Rigorous proof of preimage-localization (X8 is named external admission)
+  [PASS] (P10) residual scope: A mass-scale-import theorem (chamber chart does not supply one)
+  [PASS] (P10) residual scope: A no-go against framework predicting mass observables via OTHER carriers
+  [PASS] (P10) residual scope: Unaudited NEUTRINO_MASS_DERIVED_NOTE atmospheric-scale chain (different carrier)
+  [PASS] (P10) residual scope: Unaudited Majorana-placement / residual-sharing chain (different carrier)
+  [PASS] (P10) residual scope: Promotion of (X5) structural declarations to retained status (cited structurally)
+  [PASS] (P10) residual scope: Tighter chamber-side Delta m^2 ratio band (interval conservative)
+
+================================================================================
+Part 11: claim-discipline summary.
+================================================================================
+  [PASS] (P11) discipline: no new axiom (only Cl(3) on Z^3)
+  [PASS] (P11) discipline: no new repo vocabulary
+  [PASS] (P11) discipline: named external admission for NuFit (s_12^2, s_13^2) rectangle (X3)
+  [PASS] (P11) discipline: named external admission for NuFit Delta m^2 intervals (X3*)
+  [PASS] (P11) discipline: named external admission for cosmological Sigma m_nu bound (X3**)
+  [PASS] (P11) discipline: named external admission for KamLAND-Zen m_betabeta bound (X3***)
+  [PASS] (P11) discipline: named external admission for parent Table 2 preimage-localization (X8)
+  [PASS] (P11) discipline: citation form: markdown links for retained authorities
+  [PASS] (P11) discipline: status authority: independent audit lane only
+  [PASS] (P11) discipline: no audit_status promotion language
+  [PASS] (P11) discipline: eigenvalue sign signature (-,-,+) certified over image-overlap preimage
+  [PASS] (P11) discipline: |lambda|-ordering |lambda_(mid)| < |lambda_(small)| < |lambda_(large)|
+  [PASS] (P11) discipline: chamber-side Delta m^2 ratio band [0.308, 0.329]
+  [PASS] (P11) discipline: permutation-equivariant disjointness from empirical NuFit band
+  [PASS] (P11) discipline: honest no-prediction for r_21 = m_2/m_1
+  [PASS] (P11) discipline: honest no-prediction for r_31 = m_3/m_1
+  [PASS] (P11) discipline: honest no-prediction for Sigma m_nu (chamber side)
+  [PASS] (P11) discipline: honest no-prediction for m_betabeta (chamber side)
+  [PASS] (P11) discipline: structural reliance on (X5) only via two declarations
+  [PASS] (P11) discipline: interval arithmetic at 200-bit mpmath precision
+  [PASS] (P11) discipline: inherits Krawczyk apparatus from (X1)
+  [PASS] (P11) discipline: inherits chart from (X2) forward-cycle value law
+  [PASS] (P11) discipline: inherits hw=1 three-character algebra (X4)
+  [PASS] (P11) discipline: inherits retained Sigma m_nu functional form (X6) structurally
+  [PASS] (P11) discipline: Cycles 5a, 6a, 7, 8 cited as cascade partners
+
+================================================================================
+PASS=66  FAIL=0

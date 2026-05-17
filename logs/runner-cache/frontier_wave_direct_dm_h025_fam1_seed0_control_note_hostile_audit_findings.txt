@@ -1,0 +1,20 @@
+==============================================================================
+AUDIT-PREP VERIFIER — wave_direct_dm_h025_fam1_seed0_control_note
+==============================================================================
+  [PASS] [A] Parent note exists  (WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md, 3766 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   wave_direct_dm_h025_high_band_boundary_note IS cited (>=1 hit)  (hits = 3)
+  [PASS] [A]   wave_direct_dm_h025_seed0_crossfamily_note IS cited (>=1 hit)  (hits = 3)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   wave_direct_dm_h025_fam1_seed1_control_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   wave_direct_dm_h025_low_band_retention_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   wave_direct_dm_h025_two_point_synthesis_note NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 6 PASS / 0 FAIL
+Class-A pattern hits: 6
+==============================================================================
+
+VERIFIED

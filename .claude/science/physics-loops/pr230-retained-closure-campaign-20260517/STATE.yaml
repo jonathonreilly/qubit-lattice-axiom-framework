@@ -87,7 +87,7 @@ block124_result:
   finite_gram_determinant_min: 0.031674465976530355
   strict_pole_rows_present: false
   canonical_oh_action_authority_present: false
-  stacked_review_pr: "pending"
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1456"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"

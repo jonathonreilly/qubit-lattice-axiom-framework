@@ -8,7 +8,8 @@ Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 Stacked review PR for Blocks120-121: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439
 Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445
 Stacked review PR for Block123: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1450
-Stacked review PR for Block124: pending push/PR creation
+Stacked review PR for Block124:
+https://github.com/jonathonreilly/cl3-lattice-framework/pull/1456
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base

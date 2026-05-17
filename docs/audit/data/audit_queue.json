@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 739,
     "high": 35,
-    "leaf": 291,
+    "leaf": 290,
     "medium": 155
   },
   "cycle_break_target_count": 214,
@@ -31609,28 +31609,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_grown_propagating_field_radical_note",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GATE_B_GROWN_PROPAGATING_FIELD_RADICAL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_grown_propagating_field_radical.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "geometry_lane_head_to_head_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39876,6 +39854,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 17,
-  "total_pending": 1220
+  "ready_count": 16,
+  "total_pending": 1219
 }

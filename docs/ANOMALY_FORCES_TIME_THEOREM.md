@@ -31,11 +31,22 @@ remains a bare external admission on current `main`:
   carries the proposed_retained (audit-pending) graph-first
   SU(2)/SU(3)/U(1) closure to which the singlet completion is matched.
   Citation status on `main`: present (proposed_retained, audit-pending);
-  (iii) the Clifford-volume-element chirality (the only chirality grading
-  available in this lattice formulation) is internalized by the staggered
-  sublattice parity `epsilon(x) = staggered gamma_5` carried by
-  [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md). Citation status on `main`:
-  present (proposed_retained, audit-pending);
+  (iii) the chirality grading needed for ABJ anomaly evaluation is
+  internalized by the staggered sublattice parity
+  `epsilon(x) := (-1)^{x_1+x_2+x_3}` deriving its anticommutation with the
+  staggered Dirac operator `{epsilon, D_staggered} = 0` from
+  [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+  Step 4 (chirality anticommutation forced by site-chirality assignment +
+  retained no-rooting irreducibility). The companion `CPT_EXACT_NOTE.md`
+  uses the same `epsilon(x)` function in the orthogonal role of charge
+  conjugation (`C H C = -H` spectral flip) and does NOT establish the
+  chirality grading — that role lives in the Kawamoto-Smit substep 2
+  derivation. Per-site `gamma_5` is ruled out by
+  [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md);
+  the chirality grading here lives on the staggered lattice (taste-
+  reconstructed Dirac), not on the per-site Cl(3) algebra. Citation
+  status on `main`: STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE
+  present as an audit-pending source note;
   (iv) the ultrahyperbolic / multi-time Cauchy-problem obstruction is no
   longer load-bearing for this row: the single-clock codimension-1
   evolution theorem in
@@ -70,9 +81,16 @@ Audit-prep on 2026-05-07 corrected stale citations:
   was **closed without merge**; the cited file does not exist on `main`.
   Admission (i) is therefore reverted to a bare external admission to
   the standard ABJ result for chiral gauge theories.
-- Admissions (ii) and (iii) remain routed to `NATIVE_GAUGE_CLOSURE_NOTE.md`
-  and `CPT_EXACT_NOTE.md`, both present on `main` as proposed_retained
-  (audit-pending).
+- Admission (ii) remains routed to `NATIVE_GAUGE_CLOSURE_NOTE.md`,
+  present on `main` as proposed_retained (audit-pending).
+- Admission (iii) was previously routed to `CPT_EXACT_NOTE.md`, but
+  that note establishes `epsilon(x)` only in its charge-conjugation
+  role. The chirality grading role (the role admission (iii) is
+  actually about) is established by
+  `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
+  Step 4 (`{epsilon, D_staggered} = 0`). Routing corrected 2026-05-17
+  per hostile audit F-C finding (PR #1262). The new routing target is
+  present on `main` as an audit-pending source note.
 
 This row remains a conditional bridge (bounded_theorem) on `main`. The
 "positive_theorem" promotion previously conditioned on two pending PRs
@@ -100,8 +118,18 @@ microcausality, Lieb-Robinson velocity, and cluster decomposition. The
 ABJ anomaly-to-inconsistency implication is **assumed as a bare external
 admission** to the standard ABJ result [1,2] for chiral gauge theories
 (no internal companion note on `main`; PR 402 was closed without merge).
-The Clifford volume-element chirality is the staggered sublattice parity
-`epsilon(x)` of [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md).
+The chirality grading is the staggered sublattice parity
+`epsilon(x) := (-1)^{x_1+x_2+x_3}` whose anticommutation with the staggered
+Dirac operator `{epsilon, D_staggered} = 0` is established by
+[`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+Step 4. The same `epsilon(x)` plays the orthogonal charge-conjugation
+role in `CPT_EXACT_NOTE.md`; the two roles do
+not collide because they act on different operator structures (chirality
+anticommutes with `D_staggered`; charge conjugation flips its sign).
+Per-site `gamma_5` is excluded by
+[`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) —
+the chirality grading lives on the staggered taste-reconstructed Dirac, not on the
+per-site Cl(3) algebra.
 
 Then consistency of the quantum gauge theory forces exactly one temporal
 dimension, giving spacetime signature `(3,1)`.
@@ -134,9 +162,20 @@ admission_routing_status:
     routed_to: docs/NATIVE_GAUGE_CLOSURE_NOTE.md
     landing_state: present on main (proposed_retained, audit-pending aggregator)
   - admission_id: iii
-    description: Clifford-volume-element chirality is the only chirality grading
-    routed_to: docs/CPT_EXACT_NOTE.md
-    landing_state: present on main (proposed_retained, audit-pending; sublattice parity epsilon(x) = staggered gamma_5)
+    description: chirality grading for ABJ anomaly evaluation
+    routed_to: docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md
+    landing_state: present on main (audit-pending source note; Step 4 derives {epsilon, D_staggered} = 0 — the chirality anticommutation role)
+    routing_history:
+      prior_routed_to: docs/CPT_EXACT_NOTE.md
+      prior_routed_to_role: charge conjugation (C H C = -H), NOT chirality
+      corrected_2026-05-17: per hostile audit F-C finding (PR #1262);
+        CPT_EXACT_NOTE has zero gamma_5 occurrences and does not
+        establish chirality. The chirality role lives in the staggered
+        Kawamoto-Smit substep 2 derivation.
+    per_site_no_go: docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md
+      (rules out per-site gamma_5 in Cl(3); not contradicted here because
+      the chirality grading lives on the staggered lattice / taste-reconstructed
+      Dirac, not on the per-site algebra)
   - admission_id: iv
     description: ultrahyperbolic / multi-time codimension-1 obstruction
     routed_to: docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md
@@ -233,14 +272,20 @@ hypercharge anomaly traces, the `SU(3)^3` cubic anomaly, and the Witten
 the existence of an SU(2)-singlet opposite-chirality completion; it does not
 rely on uniqueness from anomaly arithmetic alone.
 
-*Remark (alternative chirality mechanisms).* In a local quantum field
-theory on a lattice, the only algebraic source of a chirality grading
-is the Clifford volume element. No alternative mechanism exists within
-this framework. In the Cl(3)/Z^3 staggered formulation, this Clifford
-volume-element chirality is realized concretely as the sublattice parity
-`epsilon(x) = staggered gamma_5` of
-[`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md), so the chirality grading used
-below is an internal framework primitive, not a bare admission.
+*Remark (where chirality comes from in this framework).* Per
+[`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md),
+no per-site `gamma_5` exists in Cl(3) (odd-dim Clifford has a central
+volume element, not an anti-commuting chirality). The chirality grading
+used below lives on the staggered lattice — the sublattice parity
+`epsilon(x) := (-1)^{x_1+x_2+x_3}` anticommutes with the staggered Dirac
+operator `{epsilon, D_staggered} = 0` per Step 4 of
+[`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md).
+This is the framework's internal realization of the `gamma_5` chirality
+grading needed for the ABJ trace evaluation, not a bare admission. The
+charge-conjugation role of the same `epsilon(x)` function is established
+separately in `CPT_EXACT_NOTE.md` (`C H C = -H`
+spectral flip); the two roles act on different operator structures and
+do not collide.
 
 ### Step 3. Chirality requires even total spacetime dimension
 
@@ -321,8 +366,9 @@ ABJ admission:
       => [bare external admission to ABJ result [1,2]; PR 402 closed without merge]
       => anomaly cancellation required
       => [opposite-chirality SU(2)-singlet completion via NATIVE_GAUGE_CLOSURE_NOTE]
-      => chirality operator gamma_5 required
-      => [CPT_EXACT_NOTE: Clifford-volume / sublattice parity epsilon(x) = staggered gamma_5]
+      => chirality operator (gamma_5 role) required
+      => [STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07: sublattice parity epsilon(x) := (-1)^{x_1+x_2+x_3} with {epsilon, D_staggered} = 0]
+      => [NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02: per-site gamma_5 ruled out; chirality lives on staggered lattice instead]
       => d_total = d_s + d_t must be even
       => d_t odd, with d_s = 3
       => [AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03 (on main; PR 418 merged 2026-05-03)]
@@ -332,11 +378,22 @@ ABJ admission:
 
 On current `main`, three of the four bridge premises above are citations
 to companion notes (NATIVE_GAUGE_CLOSURE_NOTE [proposed_retained],
-CPT_EXACT_NOTE [proposed_retained], single-clock codimension-1 evolution
-[proposed_retained]); the fourth (ABJ anomaly-to-inconsistency on the
-lattice) is a bare external admission to references [1,2]. The chain has
-one remaining bare external admission, so the row submits as a
+STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07
+[audit-pending source note] for the chirality grading, single-clock codimension-1
+evolution [proposed_retained]); the fourth (ABJ anomaly-to-inconsistency
+on the lattice) is a bare external admission to references [1,2]. The
+chain has one remaining bare external admission, so the row submits as a
 bounded_theorem (B-class conditional bridge), not as a positive theorem.
+
+**Citation correction 2026-05-17 (per hostile audit F-C finding in PR #1262):**
+The chirality grading premise was previously routed to CPT_EXACT_NOTE.md,
+which only establishes `epsilon(x)` in its charge-conjugation role
+(`C H C = -H`), not as a chirality grading. The correct routing is to
+STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07 Step 4,
+which derives `{epsilon, D_staggered} = 0` from site-chirality assignment
+plus retained no-rooting irreducibility. This correction does not change
+the proof structure or the bounded-theorem submission status; it only
+fixes the citation target for premise (iii).
 
 ## Numerical verification
 

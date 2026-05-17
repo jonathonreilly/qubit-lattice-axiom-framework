@@ -1,8 +1,31 @@
-# NN Lattice Mass-Response Note
+# NN Lattice Mass-Response Note — h ∈ {0.5, 0.25, 0.125, 0.0625} Positivity (Binding)
 
-**Date:** 2026-04-03  
-**Status:** proposed_retained positive mass response under the Born-safe refinement path;
-narrow alpha-scaled law is promising but still bounded
+**Date:** 2026-04-03 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is positivity on `h ∈ {0.5, 0.25, 0.125, 0.0625}` only; the alpha = 1.5 sub-claim is split out without a direct audited alpha-sweep authority)
+**Status:** bounded positive mass response on the four named `h`
+values (0.5, 0.25, 0.125, 0.0625) under the Born-safe refinement
+path; the alpha = 1.5 sub-claim is out-of-binding-scope without a
+separately registered alpha-sweep authority / source cache.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"Narrow the retained claim
+to `h in {0.5, 0.25, 0.125, 0.0625}` for positivity, and either add
+a direct audited alpha-sweep authority/source cache for `alpha = 1.5`
+or remove that subclaim."*
+
+This revision takes the narrowing path. The binding evidence of this
+note is exactly the **positivity statement on the four named `h`
+values** under the Born-safe refinement path, anchored on the
+registered runner's cached output at those `h` values.
+
+The **`alpha = 1.5` sub-claim** is **demoted to out-of-binding-scope**:
+no separately registered audited alpha-sweep authority / source
+cache is provided for it, and the repair option that would close it
+(adding such an authority) is not implemented in this revision.
+Either a future revision adds the alpha-sweep authority, or the
+alpha = 1.5 sub-claim should be removed entirely in a subsequent
+narrowing step.
 
 This note freezes the nearest-neighbor lattice mass-response follow-up.
 

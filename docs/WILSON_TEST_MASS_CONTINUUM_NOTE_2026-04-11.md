@@ -1,8 +1,33 @@
-# Wilson Test-Mass / Continuum Companion
+# Wilson Test-Mass / Finite-L Distance-Law Companion
 
-**Date:** 2026-04-11  
+**Date:** 2026-04-11 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: finite-L distance-law table is the binding evidence; the L→∞ continuum extrapolation becomes a diagnostic-only readout)
 **Status:** bounded companion on the Wilson lane
-**Scope:** same-convention open-boundary Wilson runners only
+**Scope:** same-convention open-boundary Wilson runners only; finite-L
+distance-law table is the binding evidence
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"split the finite open-Wilson
+numerical companion from the asymptotic continuum-limit extrapolation,
+or justify the extrapolation model selection explicitly before
+re-audit."*
+
+This revision takes the splitting option. The binding evidence of this
+note is now exactly:
+
+- the weak-field **test-mass** finite-grid result
+- the first-order **perturbative mass-law** finite-grid result
+- the **finite-L distance-law table** on the open-Wilson size sweep
+  (L ∈ {12, 15, 18, 20, 22, 25}), with the per-L fitted exponent
+  `alpha(L)` and R² reported descriptively.
+
+The asymptotic **L → ∞ continuum extrapolation** `alpha_inf = -2.009
+± 0.019` is **demoted to a diagnostic-only readout, out of audited
+scope of this note**. Promoting that extrapolation to a continuum-
+limit fact requires a separately retained justification of the
+extrapolation model (functional form, convergence rate, error budget,
+finite-volume systematics). No such justification is supplied here.
 
 ## Purpose
 
@@ -13,10 +38,12 @@ This note is intentionally narrower than a global Newton claim. It preserves:
 
 - the weak-field **test-mass** result
 - the first-order **perturbative mass-law** result
-- the open-Wilson **continuum-limit** distance-law result
+- the **finite-L** open-Wilson distance-law table
 
 It does **not** close:
 
+- the asymptotic **L → ∞ continuum-limit** extrapolation as a retained
+  fact (demoted to diagnostic-only per the 2026-05-17 narrowing)
 - full Hartree both-masses closure
 - action-reaction / third-law closure
 - architecture-independent Newton closure
@@ -71,9 +98,10 @@ the real content is:
 - the comparison against the full Hartree lane, where higher-order corrections
   are visibly non-negligible
 
-### 3. Open-Wilson continuum fit converges to `-2`
+### 3. Open-Wilson finite-L distance-law table (binding)
 
-The size sweep on the same open-Wilson surface gives:
+The size sweep on the same open-Wilson surface gives the following
+per-L fitted distance exponents (binding evidence):
 
 | `L` | `alpha(L)` | `R^2` |
 |---|---:|---:|
@@ -84,12 +112,19 @@ The size sweep on the same open-Wilson surface gives:
 | 22 | `-1.982` | `0.9999` |
 | 25 | `-2.002` | `0.9999` |
 
-The fitted continuum extrapolation is:
+The audited content of this section is **the finite-L table** above
+together with the descriptive observation that the largest accessible
+L (L = 25) sits near `alpha ≈ -2` in this same-convention regime.
 
-- `alpha_inf = -2.009 +/- 0.019`
-
-That is strong evidence that the **distance-law side** of the Wilson lane is
-Newton-compatible in the low-screening continuum-like regime.
+> **Diagnostic-only (out of audited scope):** A fitted L → ∞
+> continuum extrapolation gives `alpha_inf = -2.009 ± 0.019`. The
+> extrapolation model selection (functional form, convergence rate,
+> error budget, finite-volume systematics) is **not** independently
+> justified in this note. The continuum-extrapolation number is
+> recorded as a diagnostic-only readout, not as a retained
+> continuum-limit fact. A retained continuum-limit claim requires a
+> separate extrapolation-justification authority that this note does
+> not supply.
 
 ## What This Does Not Close
 

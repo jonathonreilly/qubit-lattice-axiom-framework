@@ -1,8 +1,41 @@
-# Second-Order Kubo Extension — NEGATIVE (Boundary of Taylor-Expansion Approach)
+# Second-Order Kubo Extension — Finite Second-Order Null Replay (Binding)
 
-**Date:** 2026-04-07
-**Status:** proposed_retained negative — adding the second-order term `½·kubo₂·s²` to the first-order Kubo prediction does NOT explain the failing-family pathology. The linearity-regime subset stays at 15/44 families, residual sums actually grow slightly, and the documented failing families (`G2_asym_z`, `H1_ring`, `L1_longrange`, `OF9_stretched`, `K3_NL5`) either get worse, stay the same, or improve only marginally. This delineates the boundary of the Taylor-expansion line of attack: the first-order Kubo derivation is the dominant term in the linear regime but cannot be extended to the failing families by adding higher Taylor orders.
-**Claim type:** positive_theorem
+**Date:** 2026-04-07 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the finite second-order null replay on the named runner; the boundary-of-Taylor-expansion no-go is split out for separate audit)
+**Status:** bounded negative on the finite second-order null replay
+— adding the second-order term `½·kubo₂·s²` to the first-order Kubo
+prediction does not improve the failing-family residuals on the
+declared 44-family runner panel at the cached truncation order. The
+broader Taylor-expansion-boundary / no-higher-order-rescue
+interpretation is **not** in this note's binding scope without a
+separately retained remainder / convergence / non-analyticity theorem.
+**Claim type:** bounded_theorem
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"narrow the source to the
+finite second-order null replay, or provide a remainder / convergence
+/ non-analyticity theorem or higher-order computation covering the
+failing families."*
+
+This revision takes the narrowing option. The binding evidence of
+this note is exactly the **finite second-order null replay** on the
+44-family panel: at the cached truncation order, adding `½·kubo₂·s²`
+to the first-order Kubo prediction does not change the linearity-
+regime subset count (15/44), residual sums grow slightly rather than
+shrink, and the named failing families (`G2_asym_z`, `H1_ring`,
+`L1_longrange`, `OF9_stretched`, `K3_NL5`) either degrade, stay the
+same, or improve only marginally.
+
+The broader claim — that **no higher Taylor order can rescue the
+failing families** (a no-go statement about all higher orders, not
+just the second) — is **demoted to out-of-binding-scope**. Promoting
+that no-go requires either a remainder / convergence / non-analyticity
+theorem covering the failing families, or an explicit higher-order
+computation. Neither is supplied here.
+
+`claim_type` is demoted from `positive_theorem` to `bounded_theorem`
+to reflect the narrowed binding scope.
 
 **Audit-conditional perimeter (2026-04-27):**
 The current generated audit ledger records this row `audited_conditional` with

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cosmological_constant_result_2026-04-12_hostile_audit_findings.py
+runner_sha256: f2f67605c97c66d540a8b594e1c08b7fddaa600df9de6623c07821790188df84
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — cosmological_constant_result_2026-04-12
+==============================================================================
+  [PASS] [A] Parent note exists  (COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md, 4510 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   cosmology_scale_identification_and_reduction_note IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   dark_energy_eos_note IS cited (>=1 hit)  (hits = 4)
+  [PASS] [A]   graviton_mass_derived_note IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   cosmological_constant_spectral_gap_identity_theorem_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dark_energy_eos_retained_corollary_theorem_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   graviton_mass_spectral_gap_identity_theorem_note NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 7 PASS / 0 FAIL
+Class-A pattern hits: 7
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

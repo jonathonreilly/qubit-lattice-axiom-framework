@@ -1,7 +1,32 @@
-# Asymmetry Persistence Joint Card Note
+# Asymmetry Persistence Joint Card Note — Narrowed to N=80/100 Cached Card
 
-**Date:** 2026-04-02  
-**Status:** dense same-graph joint card complete
+**Date:** 2026-04-02 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the cached N=80 and N=100 card only; the `N=120` probe row and the central-band benchmark comparison are diagnostic-only without separately registered artifacts)
+**Status:** bounded dense same-graph joint card on `N ∈ {80, 100}`;
+the `N=120` probe and central-band benchmark comparisons are
+diagnostic-only without separately registered cached artifacts
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"narrow the claim to the
+completed N=80/100 card or supply direct N=120 and central-band
+benchmark artifacts before re-audit."*
+
+This revision takes the narrowing option. The binding evidence of
+this note is exactly the **N=80 (`npl=50`) and N=100 (`npl=60`) joint
+card rows** from the registered cached log
+`logs/2026-04-02-asymmetry-persistence-joint-card.txt`, including
+`pur_cl`, `pur_min`, gravity, and corrected Born `|I3|/P` on the
+matched-seed dense 3D generated graphs.
+
+The §"Boundary check" `N=120` probe row (`npl=70`, 4 seeds) and the
+comparison to the central-band benchmark are **demoted to
+diagnostic-only**, out of the binding audited scope, because the
+`N=120` probe and the central-band benchmark do not have separately
+registered primary-runner cached artifacts in the current ledger.
+Promoting either requires registering the corresponding primary
+runner with a SHA-pinned cache. The bottom-line "not yet review-safe
+beyond `N=120`" honest qualifier already in the note is retained.
 
 ## Question
 

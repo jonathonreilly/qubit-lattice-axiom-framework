@@ -2418,362 +2418,14 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_7 rows in this category._
-
-
-### `dimensional_gravity_table`
-
-**Note:** [docs/DIMENSIONAL_GRAVITY_TABLE.md](docs/DIMENSIONAL_GRAVITY_TABLE.md)  |  **Descendants:** 807  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DIMENSIONAL_GRAVITY_TABLE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Audited the bounded d=3 and d=4 cache-backed table entries for kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), and measure h^(d-1); the d=2 row is diagnostic-only and the 4D distance law is explicitly width-limited.
-
-Auditor's verdict_rationale:
-The decisive evidence is not a first-principles recomputation of the lattice rows; the runner verifies structural identities and parses registered cache/log artifacts for matching table values. That is cross-artifact input verification, not class C derivation, and the 4D distance-law entry is explicitly width-limited/open rather than closed asymptotically. Under the rubric, class B support plus an imported cache/log readout and open width limitation makes the bounded table conditional rather than clean.
-
-Auditor-quoted load-bearing step:
-The d=3 and d=4 rows are backed by registered cached artifacts and asserted by the certificate runner, while the d=2 row is diagnostic-only and the 4D distance law remains width-limited.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: include the full registered 3D/4D cache artifacts or a completed sliced first-principles lattice runner in the restricted packet if promoting beyond conditional is desired.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `poisson_self_gravity_loop_v3_note`
-
-**Note:** [docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md](docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md)  |  **Descendants:** 804  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Bounded audit of the supplied Poisson-like lattice runner claiming exact zero-coupling control, small nonzero-coupling shifts, failed nonzero convergence, step-local Born closure, and no retained self-gravity lane.
-
-Auditor's verdict_rationale:
-Issue: the key identity-control claim says the epsilon=0 reduction survives on the same loop machinery, while _run_loop bypasses the nonlinear update for epsilon == 0.0. Why this blocks: the exact null and convergence result are therefore a coded limit branch, not evidence that the matched-null update pipeline closes under the stated strict control. Repair target: run zero coupling through the same iterative machinery, or explicitly split the trivial zero-field branch from the claimed loop-control theorem. Claim boundary until fixed: the supplied packet only supports a raw nonconverged finite-harness no-promotion observation, not the stronger same-loop bounded theorem.
-
-Auditor-quoted load-bearing step:
-The strongest retained statement is that exact null identity is solid and a small centroid/phase-ramp shift appears under backreaction, but the shift and nonconverged nonlinear loop do not promote a new exact-lattice self-gravity mechanism.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue - remove or separately justify the epsilon==0 short-circuit, rerun the zero-coupling case through the same update pipeline, and include the shared lattice implementation or a self-contained runner for re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `wave_static_fixed_beam_boundary_sensitivity_note`
-
-**Note:** [docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md](docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md)  |  **Descendants:** 801  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Finite-grid fixed-beam boundary-sensitivity comparison for the direct static comparator under field-box enlargement at H=0.5 and claimed H=0.35.
-
-Auditor's verdict_rationale:
-The source note's claim is not limited to the supplied default H=0.5 run; it explicitly relies on H=0.35 persistence, but no completed H=0.35 stdout is provided. The runner source also delegates the wave, beam, propagation, readout, and constants to an unprovided module, so the restricted packet cannot verify the computation end to end. The second audit correctly keeps the bounded theorem conditional pending the missing runner dependency and completed medium-H artifact.
-
-Auditor-quoted load-bearing step:
-The fixed-beam probe still shows material boundary sensitivity, and the effect persists at medium H.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: supply the full wave_retardation_continuum_limit dependency or retained direct authority plus completed stdout/cache for all claimed rows, especially the H=0.35 medium-H run.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `higher_symmetry_joint_validation_note`
-
-**Note:** [docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md](docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md)  |  **Descendants:** 12  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Bounded higher-symmetry joint-validation claim for Z2 x Z2 versus random/ring families, including the stated dense N=80/100/120 extension, excluding asymptotic gravity-law or distance-law closure.
-
-Auditor's verdict_rationale:
-Issue: the load-bearing N=120 dense-extension claim is not backed by a present runner artifact or registered cache in the audit packet. Why this blocks: the N=25..80 table can be checked from the available log, but the stronger retained-through-N=120 statement depends on missing stdout. Repair target: check in/register the dense-extension log or runner-cache artifact, and wire the joint validator as the row runner. Claim boundary until fixed: available N=25..80 joint-validation observations only; no retained N=120 extension.
-
-Auditor-quoted load-bearing step:
-The note claims Z2 x Z2 is Born-clean, k=0-clean, gravity-positive, and decoherence-leading through N=120 on a dense extension, while the ring family fails to survive the joint test as cleanly.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: provide the missing dense N=80/100/120 joint-validation log or registered runner cache, and register the joint validator as this row's runner before re-auditing the N=120 claim.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `mirror_2d_gravity_law_note`
-
-**Note:** [docs/MIRROR_2D_GRAVITY_LAW_NOTE.md](docs/MIRROR_2D_GRAVITY_LAW_NOTE.md)  |  **Descendants:** 9  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/MIRROR_2D_GRAVITY_LAW_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Audited the bounded null-result that the provided primary runner output supports weak gravity-side mass-window and distance-tail fits for the exact 2D mirror family on the searched windows, not a promoted mass or distance law.
-
-Auditor's verdict_rationale:
-The cached primary runner output matches the note's retained weak-fit rows closely enough for the bounded null-result: the current cache reports mass-window R^2=0.167 and distance-tail R^2=0.075, with no clean promoted gravity law. The runner source is not a trivial printout; it performs propagation, Born checks, gravity deltas, and power-law fits from generated graph data. However, the runner imports gen_2d_mirror and propagate_LINEAR from scripts/mirror_born_audit.py, and that load-bearing dependency is not present in the restricted packet despite being explicitly required by the note header. The cited synthesis note is meta/support only and does not close that dependency.
-
-Auditor-quoted load-bearing step:
-The primary-runner weak fit qualities, especially fixed-anchor mass-window R^2 = 0.167 and distance-tail R^2 = 0.075, are the evidence that no clean promoted 2D mirror mass or distance law is supported on the searched windows.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: provide scripts/mirror_born_audit.py and logs/runner-cache/mirror_born_audit.txt in the restricted packet, then re-audit whether the imported exact generator and linear propagator close the primary-runner premise.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01`
-
-**Note:** [docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md](docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: meta
-- load_bearing_step_class: A
-- claim_scope: Audit-hygiene metadata claim that Block Two fixed stale runner read paths for eight named DM/gauge-vacuum runners and preserved passing verification, without promoting any physics claim.
-
-Auditor's verdict_rationale:
-Issue: the load-bearing PASS=89 FAIL=0 and stale-path cleanup assertions are artifact claims with no supplied runner source, diff, stdout, or cache in the restricted packet. Why this blocks: the auditor cannot verify that stale reads were actually removed/redirected, that no load-bearing checks were dropped, or that the reported pass totals came from executable runners. Repair target: provide the eight current runner sources plus completed stdout or SHA-pinned runner-cache logs for the exact revision under audit. Claim boundary until fixed: this may be treated only as an unaudited audit-hygiene note describing intended cleanup, not as verified runner repair.
-
-Auditor-quoted load-bearing step:
-The note's closure rests on the reported verification that the eight edited runners now give 'Total: 89 PASS / 0 FAIL across the cluster' after stale read paths were removed or redirected.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue — attach the current sources and completed stdout or SHA-pinned caches for the eight named Block Two runners, then re-audit the cleanup and PASS accounting.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `wide_family_h0125_bridge_reopen_audit`
-
-**Note:** [docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md](docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md)  |  **Descendants:** 0  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Bounded reopen decision for the h=0.125 3D 1/L^2+h^2 bridge family: retained dependencies support the fixed/reduced-family negative through h=0.125 with clean Born/k=0 but F~M about 0.50 or no recovered TOWARD/F~M bridge; the wider phys_w=4 continuation and no-live-reopen conclusion remain conditional pending a retained direct artifact/dependency.
-
-Auditor's verdict_rationale:
-Issue: the fixed/reduced-family h=0.125 negatives are supported by retained-bounded dependencies, but the note's wider-family reopen conclusion imports a phys_w=4 replay and no-live-reopen decision that are not supplied as a primary runner output or retained one-hop dependency. Why this blocks: the audit packet can verify the fixed-family F~M about 0.50 and reduced-family no-bridge results, but cannot independently verify the wider-family alpha=0.499 row or the exhaustive reopen conclusion. Repair target: add a retained direct note/log/runner artifact for the phys_w=4 continuation, or narrow this row to the already-retained fixed/reduced-family negative. Claim boundary until fixed: cite this as a conditional reopen assessment whose fixed-family h=0.125 negative core is retained by its dependencies.
-
-Auditor-quoted load-bearing step:
-The current fixed bridge family now resolves as a bounded negative for weak-field closure and the first wider phys_w=4 continuation also resolves as a bounded negative on the tested retained row.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: Re-audit after adding a retained note/log/runner for the wider phys_w=4 continuation, or after narrowing this row to the fixed/reduced h=0.125 negatives already carried by its retained dependencies.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
+_0 rows in this category._
 
 
 ## audited_conditional_scope_too_broad
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_5 rows in this category._
-
-
-### `dm_abcc_signature_forcing_theorem_note_2026-04-19`
-
-**Note:** [docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md](docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 801  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Audited the bounded Sylvester path-obstruction claim for the stated H_base/Basin 2/Basin X endpoints and the note's extension to a global C_base/C_neg chamber and spectral-flow statement.
-
-Auditor's verdict_rationale:
-Issue: the proof promotes checked endpoint signatures and finite region scans into a universal chamber theorem, and it states total spectral-flow uniqueness for arbitrary paths where only net spectral flow/at least one crossing follows. Why this blocks: the advertised path-independent C_neg/C_base and exactly-one crossing conclusions are broader than the theorem and runner establish; the runner also disagrees with the note's PASS=54 by reporting PASS=43. Repair target: add an algebraic proof of the full parameter-domain chamber classification and correct the spectral-flow wording and runner count, or split out the clean Basin 2/X endpoint theorem. Claim boundary until fixed: H_base and the listed Basin 2/X endpoints have different inertias, so any continuous Hermitian path to those listed endpoints must hit det=0.
-
-Auditor-quoted load-bearing step:
-By Lemma 3, gamma(0) has signature (1,0,2) and gamma(1) has signature (2,0,1); these are distinct connected components of GL(Herm_3), so gamma must exit GL(Herm_3) at det=0.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad - restrict the note to the listed endpoint signature-forcing theorem or supply a global chamber proof for the whole DM parameter domain; also update PASS=54 to the current PASS=43 and change 'exactly one crossing' to net spectral flow/at least one crossing for arbitrary paths.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `gravity_law_cleanup_note`
-
-**Note:** [docs/GRAVITY_LAW_CLEANUP_NOTE.md](docs/GRAVITY_LAW_CLEANUP_NOTE.md)  |  **Descendants:** 801  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/GRAVITY_LAW_CLEANUP_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Audited whether the supplied fixed-geometry runner/stdout supports a positive generated-DAG distance response on b={2,4,6,8,10,12} and no promoted distance or mass force-law.
-
-Auditor's verdict_rationale:
-Issue: the runner supports raw positive means at b=10 and b=12 plus no review-safe falling-tail fit, but not a Nature-grade claim of a real peak or statistically real signal after searching the b window. Why this blocks: the source note's safe null-result is mixed with an overstrong significance/peak inference. Repair target: either narrow the wording to the raw cached rows and absence of a tail fit, or add a prespecified significance procedure and extended sweep demonstrating a true peak/falling tail. Claim boundary until fixed: exact force-law scaling remains unresolved and only the cached nominal response curve is supported.
-
-Auditor-quoted load-bearing step:
-The bounded null-result holds from the primary-runner cache alone: a peaked positive distance response with no review-safe falling-tail fit on the cached b window.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad — narrow to raw runner rows plus no review-safe falling-tail fit, or supply a prespecified multiplicity-aware significance test and extended distance sweep.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `wilson_test_mass_continuum_note_2026-04-11`
-
-**Note:** [docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md](docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md)  |  **Descendants:** 11  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Low-screening open-Wilson same-convention numerical companion: completed test-mass and perturbative runners show source-mass/G scaling, and the continuum runner reports finite-size exponents through L=25 plus a p-free extrapolation near -2; no full two-body, action-reaction, or architecture-independent Newton closure is audited.
-
-Auditor's verdict_rationale:
-Issue: the source note promotes the p-free continuum extrapolation alpha_inf = -2.009 +/- 0.019 as the continuum-limit reading while the completed runner also reports fixed p=1 and p=2 extrapolations that are several sigma away from -2. Why this blocks: without a retained model-selection/asymptotic-correction argument, a hostile reviewer can reject the continuum-limit claim as depending on the favorable extrapolation ansatz even though the finite L table is real. Repair target: either split the finite-run Wilson companion from the continuum-limit extrapolation, or add a theorem/runner criterion that justifies the free-p correction model over the fixed-p alternatives. Claim boundary until fixed: the completed low-screening open-Wilson runners support same-convention finite-size Newton-compatible scaling and source-mass linearity, but not a model-independent continuum-limit theorem or full Newton closure.
-
-Auditor-quoted load-bearing step:
-On the low-screening open-Wilson surface, the test-mass and continuum-limit companions support a Newton-compatible distance law and exact source-mass scaling within the shared Wilson convention, while full both-masses closure remains open.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad — split the finite open-Wilson numerical companion from the asymptotic continuum-limit extrapolation, or justify the extrapolation model selection explicitly before re-audit.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `lattice_nn_mass_response_note`
-
-**Note:** [docs/LATTICE_NN_MASS_RESPONSE_NOTE.md](docs/LATTICE_NN_MASS_RESPONSE_NOTE.md)  |  **Descendants:** 0  |  **Class:** B
-
-```
-Use the physics-loop skill to close the conditional audit on docs/LATTICE_NN_MASS_RESPONSE_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: B
-- claim_scope: Finite NN lattice mass-response report with mass encoded as a fixed-node field-strength multiplier: deterministic rows h={1,0.5,0.25,0.125,0.0625} and alpha-ratio probe at h={0.5,0.25}, with no F proportional to M or continuum promotion.
-
-Auditor's verdict_rationale:
-Issue: the headline positive-path wording overclaims the table because one retained deterministic row is negative. Why this blocks: positivity is established only on the refined rows after the h=0.5 sign flip, and the alpha=1.5 claim relies on an unsupplied imported runner module rather than a supplied one-hop authority. Repair target: narrow the theorem to the positive refined window and add a direct audited alpha-sweep authority/source cache for alpha=1.5. Claim boundary until fixed: Born-clean bounded finite-row response, positive only after the sign flip, not an F proportional to M law.
-
-Auditor-quoted load-bearing step:
-"the nearest-neighbor lattice has a retained positive mass response under the Born-safe refinement path"
-
-Auditor's repair target (canonical class + action):
-scope_too_broad - Narrow the retained claim to h in {0.5,0.25,0.125,0.0625} for positivity, and either add a direct audited alpha-sweep authority/source cache for alpha=1.5 or remove that subclaim.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `universality_classifier_note`
-
-**Note:** [docs/UNIVERSALITY_CLASSIFIER_NOTE.md](docs/UNIVERSALITY_CLASSIFIER_NOTE.md)  |  **Descendants:** 0  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/UNIVERSALITY_CLASSIFIER_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Finite empirical within-grown-DAG classifier readout for the registered 26-family sweep plus 8 in-family held-out families, with explicit cross-generator and local_z_asym negative caveats; not a derived universality theorem or exhaustive simple-classifier no-go.
-
-Auditor's verdict_rationale:
-Issue: the completed runner supports the finite 26-family grown-DAG sweep, LOO statistic, and 8-family in-family held-out table, but the note's broader exhaustion/universality framing is not derived from the restricted inputs. Why this blocks: the cited negative lanes show failures for one frozen cross-generator rule, one free_coh off-scaffold rule, and one local_z_asym extension; they do not enumerate all simple/node-level/global scalar classifiers or prove a no-go. Repair target: a retained theorem or registered exhaustive search specifying the classifier universe and excluding it, or a split note that keeps only the finite within-family classifier readout. Claim boundary until fixed: cite the finite within-family empirical classifier and the explicit negative generalization caveats, not a universal predictor or exhaustive simple-classifier closure theorem.
-
-Auditor-quoted load-bearing step:
-Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator tests show the rule does not generalize.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: Re-audit after narrowing this row to the finite within-family classifier readout plus explicit negative generalization caveats, or after adding a retained theorem/register that enumerates and excludes the relevant simple-classifier universe.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
+_0 rows in this category._
 
 
 ## audited_conditional_missing_bridge_theorem
@@ -2785,7 +2437,7 @@ _30 rows in this category._
 
 ### `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)  |  **Descendants:** 942  |  **Class:** F
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)  |  **Descendants:** 947  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md.
@@ -2814,7 +2466,7 @@ drive.
 
 ### `rconn_derived_note`
 
-**Note:** [docs/RCONN_DERIVED_NOTE.md](docs/RCONN_DERIVED_NOTE.md)  |  **Descendants:** 876  |  **Class:** F
+**Note:** [docs/RCONN_DERIVED_NOTE.md](docs/RCONN_DERIVED_NOTE.md)  |  **Descendants:** 881  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/RCONN_DERIVED_NOTE.md.
@@ -2843,7 +2495,7 @@ drive.
 
 ### `observable_principle_from_axiom_note`
 
-**Note:** [docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)  |  **Descendants:** 850  |  **Class:** A
+**Note:** [docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)  |  **Descendants:** 854  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md.
@@ -2872,7 +2524,7 @@ drive.
 
 ### `minimal_source_driven_field_probe_note`
 
-**Note:** [docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md](docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)  |  **Descendants:** 839  |  **Class:** C
+**Note:** [docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md](docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)  |  **Descendants:** 843  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md.
@@ -2901,7 +2553,7 @@ drive.
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
 
-**Note:** [docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 820  |  **Class:** A
+**Note:** [docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 824  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md.
@@ -2930,7 +2582,7 @@ drive.
 
 ### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`
 
-**Note:** [docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md](docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)  |  **Descendants:** 809  |  **Class:** A
+**Note:** [docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md](docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)  |  **Descendants:** 813  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md.
@@ -2959,7 +2611,7 @@ drive.
 
 ### `staggered_fermion_card_2026-04-11`
 
-**Note:** [docs/STAGGERED_FERMION_CARD_2026-04-11.md](docs/STAGGERED_FERMION_CARD_2026-04-11.md)  |  **Descendants:** 804  |  **Class:** C
+**Note:** [docs/STAGGERED_FERMION_CARD_2026-04-11.md](docs/STAGGERED_FERMION_CARD_2026-04-11.md)  |  **Descendants:** 808  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/STAGGERED_FERMION_CARD_2026-04-11.md.
@@ -2988,7 +2640,7 @@ drive.
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
 
-**Note:** [docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 803  |  **Class:** B
+**Note:** [docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 807  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md.
@@ -3017,7 +2669,7 @@ drive.
 
 ### `charged_lepton_koide_review_packet_2026-04-18`
 
-**Note:** [docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md](docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md)  |  **Descendants:** 803  |  **Class:** B
+**Note:** [docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md](docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md)  |  **Descendants:** 807  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md.
@@ -3046,7 +2698,7 @@ drive.
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md](docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 803  |  **Class:** C
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md](docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 807  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md.
@@ -3075,7 +2727,7 @@ drive.
 
 ### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`
 
-**Note:** [docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md](docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 803  |  **Class:** G
+**Note:** [docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md](docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 807  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md.
@@ -3104,7 +2756,7 @@ drive.
 
 ### `strong_cp_theta_zero_note`
 
-**Note:** [docs/STRONG_CP_THETA_ZERO_NOTE.md](docs/STRONG_CP_THETA_ZERO_NOTE.md)  |  **Descendants:** 803  |  **Class:** E
+**Note:** [docs/STRONG_CP_THETA_ZERO_NOTE.md](docs/STRONG_CP_THETA_ZERO_NOTE.md)  |  **Descendants:** 807  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/STRONG_CP_THETA_ZERO_NOTE.md.
@@ -3133,7 +2785,7 @@ drive.
 
 ### `bh_entropy_rt_ratio_widom_no_go_note`
 
-**Note:** [docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md](docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)  |  **Descendants:** 802  |  **Class:** C
+**Note:** [docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md](docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)  |  **Descendants:** 806  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md.
@@ -3162,7 +2814,7 @@ drive.
 
 ### `complex_action_note`
 
-**Note:** [docs/COMPLEX_ACTION_NOTE.md](docs/COMPLEX_ACTION_NOTE.md)  |  **Descendants:** 802  |  **Class:** E
+**Note:** [docs/COMPLEX_ACTION_NOTE.md](docs/COMPLEX_ACTION_NOTE.md)  |  **Descendants:** 806  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/COMPLEX_ACTION_NOTE.md.
@@ -3191,7 +2843,7 @@ drive.
 
 ### `newton_law_derived_note`
 
-**Note:** [docs/NEWTON_LAW_DERIVED_NOTE.md](docs/NEWTON_LAW_DERIVED_NOTE.md)  |  **Descendants:** 802  |  **Class:** A
+**Note:** [docs/NEWTON_LAW_DERIVED_NOTE.md](docs/NEWTON_LAW_DERIVED_NOTE.md)  |  **Descendants:** 806  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/NEWTON_LAW_DERIVED_NOTE.md.
@@ -3220,7 +2872,7 @@ drive.
 
 ### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 801  |  **Class:** E
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 805  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md.
@@ -3249,7 +2901,7 @@ drive.
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)  |  **Descendants:** 805  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md.
@@ -3278,7 +2930,7 @@ drive.
 
 ### `dm_pmns_asymptotic_source_no_go_note_2026-04-20`
 
-**Note:** [docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md](docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md](docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md)  |  **Descendants:** 805  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md.
@@ -3307,7 +2959,7 @@ drive.
 
 ### `koide_dimensionless_objection_closure_review_packet_2026-04-24`
 
-**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md)  |  **Descendants:** 805  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md.
@@ -3336,7 +2988,7 @@ drive.
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
 
-**Note:** [docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)  |  **Descendants:** 805  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md.
@@ -3365,7 +3017,7 @@ drive.
 
 ### `koide_native_zero_section_closure_route_note_2026-04-24`
 
-**Note:** [docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md](docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md](docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)  |  **Descendants:** 805  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md.
@@ -3394,7 +3046,7 @@ drive.
 
 ### `pmns_oriented_cycle_selection_structure_note`
 
-**Note:** [docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md](docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md](docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)  |  **Descendants:** 805  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md.
@@ -3423,7 +3075,7 @@ drive.
 
 ### `teleportation_native_axioms_theory_note`
 
-**Note:** [docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md](docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md](docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md)  |  **Descendants:** 805  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md.
@@ -3452,7 +3104,7 @@ drive.
 
 ### `wave_retarded_gravity_note`
 
-**Note:** [docs/WAVE_RETARDED_GRAVITY_NOTE.md](docs/WAVE_RETARDED_GRAVITY_NOTE.md)  |  **Descendants:** 801  |  **Class:** C
+**Note:** [docs/WAVE_RETARDED_GRAVITY_NOTE.md](docs/WAVE_RETARDED_GRAVITY_NOTE.md)  |  **Descendants:** 805  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/WAVE_RETARDED_GRAVITY_NOTE.md.

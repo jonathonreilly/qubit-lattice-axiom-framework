@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_wilson_direct_descendant_canonical_path_derivation_no_go_note_2026-04-19_hostile_audit_findings.py
+runner_sha256: e22d03e3f1a39f933de10f9d59b9750deb2852d8a1b22087891e9b149e840e35
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — dm_wilson_direct_descendant_canonical_path_derivation_no_go_note_2026-04-19
+==============================================================================
+  [PASS] [A] Parent note exists  (DM_WILSON_DIRECT_DESCENDANT_CANONICAL_PATH_DERIVATION_NO_GO_NOTE_2026-04-19.md, 11432 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   dm_wilson_direct_descendant_canonical_path_selector_theorem_note_2026-04-19 IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   dm_wilson_direct_descendant_local_observable_coordinate_theorem_note_2026-04-19 IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_direct_descendant_constructive_transport_plateau_theorem_note_2026-04-19 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_note_2026-04-19 NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 7 PASS / 0 FAIL
+Class-A pattern hits: 7
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_graviton_mass_derived_note_hostile_audit_findings.py
+runner_sha256: e6fbffad543dc4babf5d90daecd86dfe57b47c8444d3dfa5fa3cf5c07eb4c0d0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — graviton_mass_derived_note
+==============================================================================
+  [PASS] [A] Parent note exists  (GRAVITON_MASS_DERIVED_NOTE.md, 13885 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   graviton_mass_spectral_gap_identity_theorem_note IS cited (>=1 hit)  (hits = 6)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

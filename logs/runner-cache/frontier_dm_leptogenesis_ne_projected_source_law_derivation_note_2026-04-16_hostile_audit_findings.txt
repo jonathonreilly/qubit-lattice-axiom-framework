@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16_hostile_audit_findings.py
+runner_sha256: 23d7200410821a9dea23862792e246732a6444263019820102f5bbacede379b4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16
+==============================================================================
+  [PASS] [A] Parent note exists  (DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md, 7100 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16 IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

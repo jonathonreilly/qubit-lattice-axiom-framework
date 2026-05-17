@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17_hostile_audit_findings.py
+runner_sha256: 34092ccd2223a620768deaee4c3bb61e63946f4eff2cdd774aa7e8b87547d8bf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17
+==============================================================================
+  [PASS] [A] Parent note exists  (GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md, 8021 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17 IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   gauge_vacuum_plaquette_first_symmetric_three_sample_current_stack_constraint_boundary_note_2026-04-17 IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17 IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17 IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17 IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   gauge_vacuum_plaquette_retained_class_sampling_inversion_note_2026-04-17 NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 11 PASS / 0 FAIL
+Class-A pattern hits: 11
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

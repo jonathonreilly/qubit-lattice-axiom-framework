@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_newton_derivation_note_hostile_audit_findings.py
+runner_sha256: 29a98513374314f05554fcf222d0d6716667025facbd6b4b98506d9ec0a73832
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — newton_derivation_note
+==============================================================================
+  [PASS] [A] Parent note exists  (NEWTON_DERIVATION_NOTE.md, 15372 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   newton_derivation_top4_bridge_note IS cited (>=1 hit)  (hits = 4)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

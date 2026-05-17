@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""Audit-prep verifier for a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4.
+
+Verifies docs/A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_R4_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+
+Programmatic checks:
+  - The parent note exists at the expected path.
+  - CITED deps (>=1 hit, classification deferred to audit-lane judgment based on context).
+  - NOT-CITED deps (0 hits, programmatically certain).
+"""
+
+from __future__ import annotations
+
+import re
+import sys
+from pathlib import Path
+
+PASS_COUNT = 0
+FAIL_COUNT = 0
+CLASS_A_HITS = 0
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+PARENT_PATH = REPO_ROOT / "docs/A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_R4.md"
+
+CITED_DEPS = [
+    "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+]
+
+NOT_CITED_DEPS = [
+    "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+    "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
+    "c3_symmetry_preserved_interpretation_note_2026-05-08",
+    "emergent_lorentz_invariance_note",
+    "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
+    "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09",
+    "lorentz_kernel_positive_closure_note",
+    "planck_from_structure_path_opening_meta_note_2026-05-10",
+    "planck_scale_conditional_completion_note_2026-04-24",
+    "planck_scale_lane_status_note_2026-04-23",
+]
+
+
+def check(label: str, condition: bool, detail: str = "", class_a: bool = True) -> bool:
+    global PASS_COUNT, FAIL_COUNT, CLASS_A_HITS
+    status = "PASS" if condition else "FAIL"
+    if condition:
+        PASS_COUNT += 1
+        if class_a:
+            CLASS_A_HITS += 1
+    else:
+        FAIL_COUNT += 1
+    tag = " [A]" if class_a else ""
+    msg = f"  [{status}]{tag} {label}"
+    if detail:
+        msg += f"  ({detail})"
+    print(msg)
+    return condition
+
+
+def grep_count(content: str, needle: str) -> int:
+    return len(re.findall(re.escape(needle), content, re.IGNORECASE))
+
+
+def main() -> int:
+    print("=" * 78)
+    print("AUDIT-PREP VERIFIER — a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4")
+    print("=" * 78)
+
+    if not PARENT_PATH.exists():
+        check("Parent note exists", False, f"missing: {PARENT_PATH}")
+        return 1
+
+    content = PARENT_PATH.read_text(encoding="utf-8")
+    check("Parent note exists", True, f"{PARENT_PATH.name}, {len(content)} bytes")
+    print()
+
+    print(f"PART 1 — CITED deps (expect: >=1 hit each):")
+    for dep in CITED_DEPS:
+        n = grep_count(content, dep)
+        check(
+            f"  {dep} IS cited (>=1 hit)",
+            n >= 1,
+            f"hits = {n}",
+        )
+
+    print()
+    print(f"PART 2 — NOT-CITED deps (expect: 0 hits each):")
+    for dep in NOT_CITED_DEPS:
+        n = grep_count(content, dep)
+        check(
+            f"  {dep} NOT cited (0 hits)",
+            n == 0,
+            f"hits = {n}",
+        )
+
+    print()
+    print("=" * 78)
+    print(f"SUMMARY: {PASS_COUNT} PASS / {FAIL_COUNT} FAIL")
+    print(f"Class-A pattern hits: {CLASS_A_HITS}")
+    print("=" * 78)
+
+    if FAIL_COUNT == 0:
+        print()
+        print("VERIFIED")
+        return 0
+    return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

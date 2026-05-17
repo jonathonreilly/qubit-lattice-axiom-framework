@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_bridge_moment_closure_note_hostile_audit_findings.py
+runner_sha256: b79d5e411bb819ef3e77026ec8a3889cf13845bb72021b8c2a6094239b29feb2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — yt_bridge_moment_closure_note
+==============================================================================
+  [PASS] [A] Parent note exists  (YT_BRIDGE_MOMENT_CLOSURE_NOTE.md, 11464 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   yt_bridge_rearrangement_principle_note IS cited (>=1 hit)  (hits = 3)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   yt_exact_interacting_bridge_transport_note NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 3 PASS / 0 FAIL
+Class-A pattern hits: 3
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

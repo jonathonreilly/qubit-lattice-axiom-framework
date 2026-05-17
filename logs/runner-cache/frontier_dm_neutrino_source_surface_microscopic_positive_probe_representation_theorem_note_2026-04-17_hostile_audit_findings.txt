@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem_note_2026-04-17_hostile_audit_findings.py
+runner_sha256: 3dcd92351b68b58d29bd9326f01197c6a97ddc3be38b2f907e2224a14ca14147
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem_note_2026-04-17
+==============================================================================
+  [PASS] [A] Parent note exists  (DM_NEUTRINO_SOURCE_SURFACE_MICROSCOPIC_POSITIVE_PROBE_REPRESENTATION_THEOREM_NOTE_2026-04-17.md, 6791 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   dm_neutrino_source_surface_observable_grammar_exhaustion_obstruction_note_2026-04-17 IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   dm_selector_branch_conclusion_note_2026-04-17 IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 3 PASS / 0 FAIL
+Class-A pattern hits: 3
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

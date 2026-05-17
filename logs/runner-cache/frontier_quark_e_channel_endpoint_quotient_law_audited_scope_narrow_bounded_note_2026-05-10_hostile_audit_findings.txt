@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10_hostile_audit_findings.py
+runner_sha256: b4e336ba433b8539b94ec573ac6c3e63f9f1ded4a16930791f92af7ee1b13b13
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10
+==============================================================================
+  [PASS] [A] Parent note exists  (QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md, 9706 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   quark_endpoint_ratio_chain_law_audited_scope_narrow_bounded_note_2026-05-10 IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

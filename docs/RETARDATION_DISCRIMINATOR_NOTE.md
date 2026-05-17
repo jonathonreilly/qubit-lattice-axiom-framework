@@ -1,8 +1,36 @@
-# Retardation Discriminator: Oscillating Source
+# Retardation Discriminator: Oscillating Source — Finite Toy-Harness Result
 
-**Date:** 2026-04-06
-**Status:** bounded implemented-harness positive result — retardation changes the frequency response of an oscillating source across the frozen three-family harness; a general no-instantaneous-emulator theorem remains open.
+**Date:** 2026-04-06 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the finite toy-harness assertion-gated result only; any no-instantaneous-emulator theorem is split out for separate audit)
+**Status:** bounded finite toy-harness positive result with explicit
+assertion gates — retardation changes the frequency response of an
+oscillating source across the frozen three-family harness. The general
+no-instantaneous-emulator theorem is **not** part of this note's
+binding scope; it remains open as a separately auditable theorem row.
 **Claim type:** bounded_theorem
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"split/retain the finite
+toy-harness result with assertion gates, and audit any
+no-instantaneous-emulator theorem separately."*
+
+This revision implements the splitting. The binding evidence of this
+note is exactly the **finite toy-harness result with explicit
+assertion gates** from
+`scripts/retardation_discriminator.py` and its frozen log
+`logs/2026-04-06-retardation-discriminator.txt`: the exact nulls,
+the difference-curve table at `delay = 5`, and the family/seed
+robustness rows that the runner reports.
+
+The general "no instantaneous-response model can reproduce the
+first-harmonic delayed-response observable" theorem is **demoted to
+out-of-binding-scope** of this note; it remains a separately
+auditable claim that requires its own retained theorem row
+specifying the model class in which the discrimination holds. The
+existing "What this discriminates" toy-harness perimeter and "does
+NOT claim" list inside the note already restated this boundary; the
+present revision makes the split binding rather than aspirational.
 
 **Review repair perimeter (2026-04-27 generated-audit context):**
 Generated-audit context before this narrowing identified this chain-closure

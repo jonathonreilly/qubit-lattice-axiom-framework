@@ -1,7 +1,32 @@
 # Gravity Law Cleanup Note
 
-**Date:** 2026-04-02 (claim narrowed 2026-05-09 to primary-runner-backed evidence per audit `runner_artifact_issue` repair target).
-**Status:** bounded null-result note — the registered primary runner shows a peaked positive distance response on its searched window, but does not support a clean promoted distance or mass force-law on currently-cached evidence.
+**Date:** 2026-04-02 (claim narrowed 2026-05-09 to primary-runner-backed evidence per audit `runner_artifact_issue` repair target; further narrowed 2026-05-17 to raw cached t-values + absence-of-fit, removing the unqualified "statistically real" framing per audited_conditional `scope_too_broad` repair).
+**Status:** bounded null-result note — the registered primary runner reports raw per-b t-values on its searched window and explicitly does not support a review-safe falling-tail power-law fit. No multiplicity-aware significance claim is asserted; the raw rows and the no-tail-fit finding are the binding evidence.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"narrow to raw runner rows
+plus no review-safe falling-tail fit, or supply a prespecified
+multiplicity-aware significance test and extended distance sweep."*
+
+This revision takes the narrowing option. The binding content of this
+note is now exactly two facts from the SHA-pinned primary-runner cache
+(`logs/runner-cache/gravity_distance_fixed_geometry.txt`):
+
+1. the **raw per-b t-values** on the cached sweep
+   `b ∈ {2.0, 4.0, 6.0, 8.0, 10.0, 12.0}` (reproduced verbatim below), and
+2. the **runner's own report** that "Not enough falling-tail points for
+   a review-safe power-law fit."
+
+No claim of "statistically real" / "statistically significant" /
+"peak signal" is made — those framings required a prespecified
+multiplicity correction (Bonferroni or equivalent) over the searched
+`b` window plus an extended distance sweep that the cached evidence
+does not provide. The raw per-b t-values are reported descriptively
+only; significance interpretation is deferred to a future runner
+revision that supplies the prespecified multiplicity-aware test and
+the extended sweep.
 **Primary runner:** [`scripts/gravity_distance_fixed_geometry.py`](../scripts/gravity_distance_fixed_geometry.py) (fixed-geometry generated-DAG distance sweep; load-bearing).
 **Primary runner cached log:** [`logs/runner-cache/gravity_distance_fixed_geometry.txt`](../logs/runner-cache/gravity_distance_fixed_geometry.txt) — SHA-pinned cache that backs every load-bearing row in the "Runner-backed result (primary runner)" section below.
 **Companion follow-up scripts (diagnostic-only, not load-bearing, no registered primary-runner cache):**
@@ -47,13 +72,17 @@ From [`logs/runner-cache/gravity_distance_fixed_geometry.txt`](../logs/runner-ca
 - the runner explicitly reports: "Not enough falling-tail points for a
   review-safe power-law fit."
 
-These primary-runner rows are themselves the load-bearing evidence:
+These primary-runner rows are themselves the load-bearing evidence,
+**reported descriptively only**:
 
-- a positive, statistically significant deflection signal exists at the peak
-  (`b ∈ {10.0, 12.0}`)
-- the cached sweep does not extend far enough past the peak to support a
-  review-safe falling-tail power-law fit, so no clean `1/b^α` law can be
-  promoted from the registered runner
+- raw per-b t-values are listed above as the cached output. No
+  multiplicity-corrected significance claim is made: with 6 b-values
+  searched, a single-bin raw `t ≈ 2.0–2.5` does not survive a
+  prespecified search-window correction, and the runner does not
+  supply that correction.
+- the cached sweep does not extend far enough past the cached endpoint
+  to support a review-safe falling-tail power-law fit, so **no
+  `1/b^α` law is promoted** from the registered runner.
 
 ## Out-of-scope diagnostic context (not load-bearing)
 
@@ -95,22 +124,28 @@ does not depend on either of them.
 
 ## Current gravity-law status (primary-runner-backed)
 
-What is supported by the registered primary runner:
+What is supported by the registered primary runner (descriptive only):
 
-- a statistically real positive deflection signal at the searched `b` peak
-- a peaked distance response on the cached `b ∈ {2, 4, 6, 8, 10, 12}` sweep,
-  with peak at `b = 12.0`
+- raw per-b t-values as listed above on the cached
+  `b ∈ {2, 4, 6, 8, 10, 12}` sweep, with the largest raw t-values at
+  `b = 10.0` and `b = 12.0`
+- the runner's own "no review-safe falling-tail fit" report
 
-What is not supported by the registered primary runner:
+What is **not** supported by the registered primary runner:
 
+- **any "statistically significant" or "statistically real" peak claim**
+  (no prespecified multiplicity-aware significance test was registered;
+  search-window correction would push the cached single-bin `t ≈ 2.0–2.5`
+  below review-safe significance)
 - exact `1/b^2` as a locked distance law (no falling tail in the cached
   sweep, no review-safe power-law fit)
-- exact `F ∝ M` as a locked mass law (no registered primary-runner cache for
-  the mass-scaling follow-up)
+- exact `F ∝ M` as a locked mass law (no registered primary-runner cache
+  for the mass-scaling follow-up)
 
 Current safe wording (primary-runner-backed):
 
-- **gravity signal is real on the registered primary-runner sweep**
+- **raw cached t-values are reported descriptively, no significance
+  claim is asserted**
 - **exact force-law scaling is unresolved on currently-cached evidence**
 
 ## What this note does NOT claim

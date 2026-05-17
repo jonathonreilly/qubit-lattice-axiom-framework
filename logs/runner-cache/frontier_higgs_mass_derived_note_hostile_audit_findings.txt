@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/frontier_higgs_mass_derived_note_hostile_audit_findings.py
+runner_sha256: 535a2ac779dc3a9cbb5bddaa2669e9c6127cacc3aa6da8a4155b47d4a277e879
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — higgs_mass_derived_note
+==============================================================================
+  [PASS] [A] Parent note exists  (HIGGS_MASS_DERIVED_NOTE.md, 14049 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   higgs_mechanism_note IS cited (>=1 hit)  (hits = 4)
+  [PASS] [A]   higgs_vacuum_explicit_systematic_note IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   vacuum_critical_stability_note IS cited (>=1 hit)  (hits = 4)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 4 PASS / 0 FAIL
+Class-A pattern hits: 4
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

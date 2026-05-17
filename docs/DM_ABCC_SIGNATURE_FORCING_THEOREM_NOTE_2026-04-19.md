@@ -1,16 +1,48 @@
-# DM A-BCC: Sylvester Signature-Forcing Theorem
+# DM A-BCC: Sylvester Signature-Forcing Theorem (Listed-Endpoint Scope)
 
-**Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-19
+**Status:** bounded — listed-endpoint signature-forcing result; not a global chamber proof over the whole DM parameter domain
+**Date:** 2026-04-19 (scope narrowed 2026-05-17 per audited_conditional repair)
 **Lane:** Dark-matter A-BCC basin-selector (source-side physical-sheet
-identification)**Status:** RETAINED THEOREM. Sylvester's law of inertia proves that any
-continuous path from H_base to a C_neg endpoint MUST cross det=0,
-regardless of path shape. This is an algebraic, path-independent
-mechanism that upgrades the A-BCC conditional theorem from an IVT
-statement on the linear path to a topological statement on all paths.
-PNS remains the single remaining physical input.
+identification)
+**Audited scope:** Sylvester's law of inertia proves that any continuous
+path from H_base to **the listed C_neg endpoints (Basin 2 and Basin X)**
+must cross det = 0, regardless of path shape. This is the listed-endpoint
+signature-forcing theorem. The broader claim that *every* C_neg endpoint
+in the full DM parameter domain inherits the same path-independent
+forcing requires a global chamber proof over the whole parameter domain
+that is **not** supplied by this note.
 **Primary runner:**
-`scripts/frontier_dm_abcc_signature_forcing_theorem.py`
+`scripts/frontier_dm_abcc_signature_forcing_theorem.py` (current
+output: **PASS = 43 FAIL = 0**, with explicit `[note]` caveat lines
+recording the listed-endpoint scope, the PNS residual physical input,
+and the 3000+3000 chamber sample sizes).
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"restrict the note to the
+listed endpoint signature-forcing theorem or supply a global chamber
+proof for the whole DM parameter domain; also update PASS=54 to the
+current PASS=43 and 8 explicit warning lines."*
+
+This revision implements the first option. The audited claim of this
+note is now **only** the listed-endpoint signature-forcing theorem:
+for the explicitly enumerated C_neg endpoints (Basin 2 and Basin X
+in the runner-verified table), any continuous path from H_base must
+cross det = 0 by Sylvester's law of inertia. The broader
+"chamber structure forces the same property across all C_neg endpoints
+in the whole DM parameter domain" reading is **not** part of this
+note's binding scope; it would require a separately retained global
+chamber proof over the parameter domain.
+
+The runner PASS count is updated from the stale 54 to the current 43.
+The runner's `[note]` lines (six of which appear in the current
+stdout, recording crossing-eigenvalue indices for Basin 2 and Basin X,
+the path-independence on six path shapes, the chamber-sample
+verification, and the PNS residual physical input) are kept as
+explicit caveats; if a future revision restores the additional
+warning lines named by the audit verdict, the PASS count and caveat
+list here must be re-synced.
 
 ---
 
@@ -61,7 +93,14 @@ remaining physical input. Sylvester provides the algebraic mechanism
 — why C_neg endpoints require a det=0 crossing — but does not derive
 why the physical coupling path avoids det=0.
 
-Runner: PASS=54 FAIL=0.
+Runner: PASS = 43 FAIL = 0 (current). The runner additionally
+emits six `[note]` caveat lines recording: Basin 2 crossing-eigenvalue
+index 1 at t ≈ 0.0276; Basin X crossing-eigenvalue index 1 at
+t ≈ 0.0383; the chamber-membership verification on 3000+3000 sample
+points; path-independence on six path shapes for Basin 2 and Basin X
+(*the listed endpoints, not the whole DM parameter domain*); and PNS
+as the residual physical input observationally grounded by measured
+non-zero neutrino-mass-squared splittings.
 
 ---
 

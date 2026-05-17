@@ -1,11 +1,34 @@
-# Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two)
+# Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two) — Cleanup-Action Record (Binding)
 
-**Date:** 2026-05-01
+**Date:** 2026-05-01 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is the cleanup-action record for the 8 named runners; PASS-accounting / runner-correctness verification is split out)
 **Status:** support / audit-hygiene cleanup. Companion to
 [`docs/AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md`](AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md)
 (Block One). This block extends the same audit-hygiene cleanup to a second
 cluster of runners with stale `read("docs/X.md")` calls.
 **Lane:** audit-hygiene. No physics claim is added or removed.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"attach the current
+sources and completed stdout or SHA-pinned caches for the eight named
+Block Two runners, then re-audit the cleanup and PASS accounting."*
+
+This revision implements the splitting alternative rather than the
+full-attachment option. The binding evidence of this note is **only**
+the cleanup-action record: the 8 named runners had stale
+`read("docs/X.md")` calls referring to notes deleted by commit
+`d2e754fdc`, and this note documents the per-runner cleanup applied
+to remove those stale path references.
+
+The **broader PASS-accounting / runner-correctness verification** —
+i.e. confirming that each cleaned-up runner produces a passing
+post-cleanup output across its full audit-lane evaluation — is
+**demoted to out-of-binding-scope** until SHA-pinned caches for each
+of the 8 runners are attached and re-audited as a separate
+runner-correctness row. Each runner's own audit row carries that
+verification on its own ledger entry; this Block Two note is not the
+authority for that.
 
 ---
 
@@ -77,8 +100,8 @@ author-declared `support` / `bounded` / `unknown` status. This block does
 NOT promote any claim to `retained`. It only removes the noise floor.
 
 Two notable rows in this cluster carry `current_status: proposed_retained`:
-- `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` — already at `effective_status: retained_no_go` (archived).
-- `dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15` — at `effective_status: retained_no_go` (archived).
+- `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` — already archived as retained_no_go in the ledger.
+- `dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15` — already archived as retained_no_go in the ledger.
 
 For these archived rows, the redirected reads keep the runners self-contained
 verification harnesses for the historical claim content; they do not
@@ -107,7 +130,7 @@ no new admitted observations. It is structural cleanup of runner code only.
 
 - Block 1: PR #246 (open / review-only) — first half of the runner
   stale-path cleanup.
-- This block: Block 2 of the audit-hygiene campaign.
+- This block: second block of the audit-hygiene campaign.
 - Original trim commit: `d2e754fdc` (2026-04-16, "Trim DM package to
   science-only surface").
 - Original archive commits: 2026-04-30 stale-runners + missing-runners

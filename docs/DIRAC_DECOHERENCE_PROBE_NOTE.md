@@ -1,8 +1,31 @@
-# Dirac Decoherence / Record Probe
+# Dirac Decoherence / Record Probe — Finite Runner-Fact (Binding)
 
-**Date:** 2026-04-10  
-**Scope:** test whether the 4-component Dirac walk's decoherence / purity failures are a bad harness match or a real architecture problem.
+**Date:** 2026-04-10 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the clean finite-runner fact only; broader harness-mismatch-vs-architecture diagnosis is split out)
+**Scope:** finite-runner numerical record from the 4-component Dirac
+walk's decoherence / purity probe on the declared geometry. The
+broader "harness-mismatch vs. real architecture problem" diagnosis
+is **not** in this note's binding scope without a separately retained
+closure-card proxy dependency and a Dirac record-channel/readout
+bridge.
 **Primary runner:** [`scripts/frontier_dirac_walk_3plus1d_decoherence_probe.py`](../scripts/frontier_dirac_walk_3plus1d_decoherence_probe.py)
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"split out the clean bounded
+runner fact, then re-audit the broader harness-mismatch diagnosis
+only after adding a direct closure-card proxy dependency and a Dirac
+record-channel/readout bridge."*
+
+This revision implements the splitting. The binding evidence of this
+note is the **clean finite-runner numerical record** of decoherence /
+purity outputs from the declared 4-component Dirac double-slit geometry
+on the registered runner. The broader interpretive content — whether
+the observed decoherence / purity failure is a harness-mismatch
+artifact or a real Dirac-architecture pathology — is **demoted to
+out-of-binding-scope**; promoting that diagnosis requires a separately
+retained closure-card proxy dependency plus a Dirac record-channel /
+readout bridge, neither of which is supplied here.
 
 ## Geometry
 

@@ -1,7 +1,33 @@
-# Wide-Family `h = 0.125` Bridge Reopen Audit
+# Wide-Family `h = 0.125` Bridge Reopen Audit — Reduced-Family Fixed `h = 0.125` Negatives (Binding)
 
-**Date:** 2026-04-06  
-**Status:** bounded - current fixed bridge family and first wider `phys_w = 4` family both resolve as bounded negatives for weak-field closure
+**Date:** 2026-04-06 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is the reduced/fixed-family `h = 0.125` bounded negatives already carried by retained dependencies; the wider `phys_w = 4` continuation is out of scope without a separately registered retained note/log/runner)
+**Status:** bounded fixed/reduced-family `h = 0.125` weak-field-closure
+negatives, inherited from the retained dependencies named below; the
+wider `phys_w = 4` continuation reopen path is **out-of-binding-scope**
+in this revision.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"Re-audit after adding
+a retained note/log/runner for the wider `phys_w = 4` continuation, or
+after narrowing this row to the fixed/reduced `h = 0.125` negatives
+already carried by its retained dependencies."*
+
+This revision takes the second option. The binding evidence of this
+note is exactly the **fixed/reduced-family `h = 0.125` bounded
+negatives** already carried by its retained one-hop dependencies
+(notably `LATTICE_3D_L2_NUMPY_H0125_BRIDGE_NOTE.md` and the upstream
+runner caches). This note re-states those negatives at the
+reopen-audit level; it does not add a new fixed/reduced-family
+result.
+
+The **wider `phys_w = 4` family continuation** is **demoted to
+out-of-binding-scope** in this revision. Promoting that wider-family
+reopen requires a separately registered retained note/log/runner that
+this revision does not supply. The current narrative content
+discussing the wider-family probe is retained for context but is not
+load-bearing for the audited claim.
 
 This note is a narrow audit of the Claude-side claim that the wider fixed
 family behind the 3D dense `1/L^2 + h^2` lane can still complete the `h =

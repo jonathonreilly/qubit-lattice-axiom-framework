@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 324 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 165 |
+| ~~audited_conditional~~ | 166 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 542 |
-| `audited_conditional` | 165 |
+| `audited_conditional` | 166 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1423 |
+| `unaudited` | 1422 |
 
 | claim_type | count |
 |---|---:|
@@ -657,6 +657,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_born_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `asymmetry_persistence_mass_scaling_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1039,6 +1040,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On this fixed family, the mass-scaling exponent tracks the weak-field power of f in the action.  _(class `C`)_
 - **chain closes:** True — The source note's bounded claim is directly supported by the current runner output for the W=8 fixed family, and its one-hop dependency is retained_bounded for the matching S=L(1-f^p) power sweep on the W=10 fixed family. The note explicitly does not promote a universal architecture theorem or unique action derivation.
 - **rationale:** The load-bearing result is a bounded computational theorem: the runner constructs the lattice, field, action values, propagation, detector readout, Born check, TOWARD counts, and F∝M fits rather than importing the target exponents. The current output reproduces the note's load-bearing mass-scaling classes: sqrt gives 0.50, linear/exp/reciprocal give 1.00, quadratic gives 2.00, while no-coupling and hill/negative-linear actions do not give the desired TOWARD response. The one-hop dependency is already audited_clean with effective_status retained_bounded, so dependency closure is retained-grade for this bounded scope. Residual risk is confined to broader universality or exact tail laws, which the note explicitly leaves unpromoted.
+- **auditor confidence:** high
+
+### `adaptive_coevolving_geometry_no_go`
+
+- **Note:** [`ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md`](../../docs/ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the bounded no-go that distinguishability-weighted adaptive node placement, in the provided weak-field scout, does not yield a robust retained gravity signal across the tested alpha values and seeds.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-132534-20260517T132534Z-408b05f0-adaptive_coevolving_geom-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The smallest weak-field scout did not produce a clean adaptive-geometry positive because the gravity-shift sign is mixed and changes with placement strength.  _(class `C`)_
+- **chain closes:** False — The primary runner performs a substantive numerical scout, but its load-bearing baseline path imports scripts/generative_causal_dag_interference.py and that helper source is missing from the restricted packet. Without that helper, the baseline/control generator cannot be verified from the provided materials.
+- **rationale:** The note's no-go conclusion is broadly consistent with the supplied runner stdout: the adaptive-placement rows are noisy and do not show a stable improvement over the control. However, the primary runner imports generate_causal_dag from scripts/generative_causal_dag_interference.py for the uniform baseline/control, and the helper source section contains only an unsubstituted placeholder rather than the helper code. Under the packet-completeness rule, this is an orchestrator artifact issue rather than a scientific chain failure, so the audit cannot be clean.
 - **auditor confidence:** high
 
 ### `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`

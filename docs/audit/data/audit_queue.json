@@ -3,7 +3,7 @@
     "critical": 430,
     "high": 161,
     "leaf": 329,
-    "medium": 319
+    "medium": 318
   },
   "cycle_break_target_count": 53,
   "cycle_break_targets": [
@@ -17821,28 +17821,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "persistent_inertial_response_readiness_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.748,
-      "note_path": "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 37
     },
     {
       "audit_independence_required": "any_non_self",
@@ -36127,6 +36105,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
-  "total_pending": 1239
+  "ready_count": 20,
+  "total_pending": 1238
 }

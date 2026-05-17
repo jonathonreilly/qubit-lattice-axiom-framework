@@ -162,7 +162,7 @@ block128_result:
   source_higgs_pole_residue_rows: 0
   canonical_oh_action_authority_present: false
   recommended_pivot: "strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority"
-  stacked_review_pr: pending
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1468"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"

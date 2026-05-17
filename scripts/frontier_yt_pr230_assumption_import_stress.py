@@ -407,6 +407,12 @@ def main() -> int:
         "block129_schur_pole_authority_construction_attempt": load(
             "outputs/yt_pr230_block129_schur_pole_authority_construction_attempt_2026-05-17.json"
         ),
+        "block130_neutral_h3h4_transfer_coupling_construction_attempt": load(
+            "outputs/yt_pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt_2026-05-17.json"
+        ),
+        "block130_neutral_h3h4_eta_nonidentifiability": load(
+            "outputs/yt_pr230_block130_neutral_h3h4_eta_nonidentifiability_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -3074,6 +3080,112 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean = (
+        "Block130 cannot construct neutral H3/H4 authority"
+        in str(
+            certificates[
+                "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+            ].get("actual_current_surface_status")
+        )
+        and certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get(
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt_passed"
+        )
+        is True
+        and certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("witness_preserves_rows_but_changes_h3_h4")
+        is True
+        and certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ]
+        .get("strict_non_claims", {})
+        .get("does_not_promote_finite_equal_time_rows_to_physical_transfer")
+        is True
+        and certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_hidden_completion_witness_as_authority")
+        is True
+        and certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ]
+        .get("strict_non_claims", {})
+        .get("does_not_claim_retained_or_proposed_retained")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block130-neutral-h3h4-transfer-coupling-construction-attempt-keeps-imports-clean",
+        block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean,
+        certificates[
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("actual_current_surface_status"),
+    )
+    block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean = (
+        "Block130 neutral H3/H4 route remains open"
+        in str(
+            certificates["block130_neutral_h3h4_eta_nonidentifiability"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block130_neutral_h3h4_eta_nonidentifiability"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block130_neutral_h3h4_eta_nonidentifiability"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block130_neutral_h3h4_eta_nonidentifiability"].get(
+            "block130_neutral_h3h4_eta_nonidentifiability_passed"
+        )
+        is True
+        and certificates["block130_neutral_h3h4_eta_nonidentifiability"]
+        .get("strict_non_claims", {})
+        .get("does_not_claim_retained_or_proposed_retained")
+        is True
+        and certificates["block130_neutral_h3h4_eta_nonidentifiability"]
+        .get("strict_non_claims", {})
+        .get("does_not_promote_h1_h2_support_to_h3_h4")
+        is True
+        and certificates["block130_neutral_h3h4_eta_nonidentifiability"]
+        .get("strict_non_claims", {})
+        .get("does_not_promote_finite_c_sx_rows_to_transfer_or_coupling")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block130_neutral_h3h4_eta_nonidentifiability"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block130-neutral-h3h4-eta-nonidentifiability-keeps-imports-clean",
+        block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean,
+        certificates["block130_neutral_h3h4_eta_nonidentifiability"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3424,6 +3536,8 @@ def main() -> int:
         "block128_strict_wz_source_row_construction_attempt_keeps_imports_clean": block128_strict_wz_source_row_construction_attempt_keeps_imports_clean,
         "block129_schur_one_pole_loewner_falsification_keeps_imports_clean": block129_schur_one_pole_loewner_falsification_keeps_imports_clean,
         "block129_schur_pole_authority_construction_attempt_keeps_imports_clean": block129_schur_pole_authority_construction_attempt_keeps_imports_clean,
+        "block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean": block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean,
+        "block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean": block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

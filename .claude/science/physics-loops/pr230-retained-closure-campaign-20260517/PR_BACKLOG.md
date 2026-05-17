@@ -24,6 +24,8 @@ https://github.com/jonathonreilly/cl3-lattice-framework/pull/1468
 Stacked review PR for Block129:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1476
 
+Stacked review PR for Block130: pending.
+
 Branch/PR blocks:
 
 - Block120 source-reparametrization invariant minimal-data boundary into PR230
@@ -55,7 +57,11 @@ Branch/PR blocks:
   attempt on branch
   `physics-loop/pr230-retained-closure-campaign-block129-20260517`, to be
   stacked above Block128.
+- Block130 neutral H3/H4 transfer/coupling construction attempt on branch
+  `physics-loop/pr230-retained-closure-campaign-block130-20260517`, to be
+  stacked above Block129.
 
 Updated PR bodies prepared in `PR_BODY_BLOCK121.md`, `PR_BODY_BLOCK122.md`,
 `PR_BODY_BLOCK124.md`, `PR_BODY_BLOCK125.md`, `PR_BODY_BLOCK126.md`, and
-`PR_BODY_BLOCK127.md`, `PR_BODY_BLOCK128.md`, and `PR_BODY_BLOCK129.md`.
+`PR_BODY_BLOCK127.md`, `PR_BODY_BLOCK128.md`, `PR_BODY_BLOCK129.md`, and
+`PR_BODY_BLOCK130.md`.

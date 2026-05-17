@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block129-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block130-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -20,6 +20,7 @@ Stacked review PR for Block128:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1468
 Stacked review PR for Block129:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1476
+Stacked review PR for Block130: pending.
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -139,11 +140,33 @@ model/FV/IR/threshold or bridge authority.  Reruns: one-pole/Loewner
 `PASS=13`, strict pole-authority construction `PASS=14`, campaign status
 `PASS=449`, assumption/import stress `PASS=132`.
 
-Active next work after Block129: pivot to neutral H3/H4 physical
-transfer/source-coupling authority.  Reopen Schur only with a true strict
-Schur/Feshbach pole-row artifact with pole coordinate, `K'(pole)` or
-`l K' r`, source projection numerator, FV/IR/contact/model-class authority,
-and a physical bridge.
+Block130 pivots to neutral H3/H4 physical-transfer/source-coupling authority.
+It attempts to build H3/H4 from the completed 693-row finite
+`C_ss/C_sx/C_xx` source/taste-radial packet, strict neutral sidecars, raw
+higher-shell files, H1/H2 heat-kernel support, and the source-Higgs/Schur
+fallbacks.  Result: exact negative boundary.  The runner finds no strict
+neutral artifact paths, no strict raw neutral/primitive/source-coupling keys in
+63/63 raw higher-shell files, and preserves the prior H1/H2-support-only,
+finite-rows-not-transfer, Block128 source-Higgs, and Block129 Schur blockers.
+It also constructs an explicit hidden-neutral two-completion witness: the
+chunk001 `(0,0,0)` finite row is preserved while
+`H(theta)=cos(theta)x+sin(theta)n` changes the normalized source coupling from
+`-0.00022372749929547354` at `theta=0` to
+`-0.0001118637496477368` at `theta=pi/3`, and positive transfer witnesses
+`[[1,0],[0,1]]` versus `[[1,0.25],[0.25,1]]` change off-diagonal generator
+content without changing current equal-time row data.  A complementary eta
+counterfamily fixes the source self block and H1/H2 triplet block while
+varying the source-triplet coupling from `0` to `0.12124355652982143`; the
+eta scan checks 214 raw `ensemble_measurement.json` files and finds zero
+strict neutral keys.  Reruns: Block130 transfer/coupling `PASS=12`, Block130
+eta nonidentifiability `PASS=11`, campaign status `PASS=451`,
+assumption/import stress `PASS=134`.
+
+Active next work after Block130: neutral route reopens only with a new accepted
+same-surface physical transfer/offdiagonal generator or
+primitive/irreducibility certificate plus source/canonical-Higgs coupling
+authority.  Without that artifact, pivot back to action-first source-Higgs pole
+rows or strict W/Z production rows only if a new strict artifact appears.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

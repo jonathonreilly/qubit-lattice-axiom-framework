@@ -567,6 +567,12 @@ def main() -> int:
         "pr230_block129_schur_pole_authority_construction_attempt": load(
             "outputs/yt_pr230_block129_schur_pole_authority_construction_attempt_2026-05-17.json"
         ),
+        "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt": load(
+            "outputs/yt_pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt_2026-05-17.json"
+        ),
+        "pr230_block130_neutral_h3h4_eta_nonidentifiability": load(
+            "outputs/yt_pr230_block130_neutral_h3h4_eta_nonidentifiability_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3690,6 +3696,117 @@ def main() -> int:
         "pr230-block129-schur-pole-authority-construction-attempt-blocks",
         block129_schur_pole_authority_construction_attempt_blocks,
         statuses["pr230_block129_schur_pole_authority_construction_attempt"],
+    )
+    block130_neutral_h3h4_transfer_coupling_construction_attempt_blocks = (
+        "Block130 cannot construct neutral H3/H4 authority"
+        in str(
+            statuses[
+                "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+            ]
+        )
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get(
+            "block130_neutral_h3h4_transfer_coupling_construction_attempt_passed"
+        )
+        is True
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ]
+        .get("completed_row_scan", {})
+        .get("row_count")
+        == 693
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("strict_neutral_artifact_present")
+        is False
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("strict_row_or_raw_hits_present")
+        is False
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("witness_preserves_rows_but_changes_h3_h4")
+        is True
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("h1_h2_support_not_h3_h4")
+        is True
+        and certificates[
+            "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+        ].get("finite_rows_not_accepted_transfer")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block130-neutral-h3h4-transfer-coupling-construction-attempt-blocks",
+        block130_neutral_h3h4_transfer_coupling_construction_attempt_blocks,
+        statuses["pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt"],
+    )
+    block130_neutral_h3h4_eta_nonidentifiability_blocks = (
+        "Block130 neutral H3/H4 route remains open"
+        in str(statuses["pr230_block130_neutral_h3h4_eta_nonidentifiability"])
+        and certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"].get(
+            "block130_neutral_h3h4_eta_nonidentifiability_passed"
+        )
+        is True
+        and certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"]
+        .get("eta_counterfamily", {})
+        .get("same_source_self_and_triplet_block")
+        is True
+        and certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"]
+        .get("eta_counterfamily", {})
+        .get("eta1_entrywise_positive_primitive_proxy")
+        is True
+        and certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"]
+        .get("eta_counterfamily", {})
+        .get("eta1_source_triplet_coupling", 0.0)
+        > 0.0
+        and certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"]
+        .get("raw_neutral_scan", {})
+        .get("strict_neutral_key_hit_count")
+        == 0
+        and not any(
+            certificates["pr230_block130_neutral_h3h4_eta_nonidentifiability"]
+            .get("strict_artifact_presence", {})
+            .values()
+        )
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block130_neutral_h3h4_eta_nonidentifiability"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block130-neutral-h3h4-eta-nonidentifiability-blocks",
+        block130_neutral_h3h4_eta_nonidentifiability_blocks,
+        statuses["pr230_block130_neutral_h3h4_eta_nonidentifiability"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9502,6 +9619,12 @@ def main() -> int:
     )
     result["block129_schur_pole_authority_construction_attempt_blocks"] = (
         block129_schur_pole_authority_construction_attempt_blocks
+    )
+    result["block130_neutral_h3h4_transfer_coupling_construction_attempt_blocks"] = (
+        block130_neutral_h3h4_transfer_coupling_construction_attempt_blocks
+    )
+    result["block130_neutral_h3h4_eta_nonidentifiability_blocks"] = (
+        block130_neutral_h3h4_eta_nonidentifiability_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

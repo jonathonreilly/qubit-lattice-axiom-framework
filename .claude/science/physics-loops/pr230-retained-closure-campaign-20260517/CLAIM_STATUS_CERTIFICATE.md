@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block129.
+Status: exact negative boundary plus bounded support through Block130.
 
 `proposed_retained`: not allowed.
 
@@ -52,7 +52,16 @@ Block128 keeps W/Z/source-Higgs bridge roots absent.  Its stricter
 pole-authority construction attempt also finds no explicit strict row
 sidecars, no strict pole keys in 63/63 raw higher-shell files, no way past the
 Block121 finite-packet nonidentifiability witness, and no model/FV/IR/threshold
-or canonical bridge authority.
+or canonical bridge authority.  Block130 then pivots to the neutral H3/H4
+route and attempts construction from the completed 693-row finite
+source/taste-radial packet.  It finds no strict neutral artifact sidecars, no
+strict neutral/primitive/source-coupling raw keys in 63/63 raw higher-shell
+files, and an explicit hidden-neutral two-completion witness preserves all
+observed finite rows while changing both the H4 normalized source coupling and
+the H3 off-diagonal transfer content.  Its eta counterfamily also fixes the
+admitted source self block and H1/H2 triplet block while varying the
+source-triplet coupling from zero to nonzero, with zero strict neutral keys in
+214 raw `ensemble_measurement.json` files.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -80,7 +89,10 @@ or canonical bridge authority.
 - no construction from current explicit row sidecars, raw higher-shell rows, or
   complete finite A/B/C support to strict Schur/Feshbach pole authority after
   Block129;
-- no strict neutral H3/H4 physical transfer/source-coupling artifact.
+- no strict neutral H3/H4 physical transfer/source-coupling artifact;
+- no finite-row neutral shortcut after Block130: the current equal-time
+  `C_ss/C_sx/C_xx` packet admits hidden-neutral completions that preserve the
+  observed rows while changing H3/H4.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an
   allowed W/Z absolute pin is supplied.

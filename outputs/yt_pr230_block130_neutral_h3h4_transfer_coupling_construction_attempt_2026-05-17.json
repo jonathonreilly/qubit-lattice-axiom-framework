@@ -1,0 +1,202 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block130 cannot construct neutral H3/H4 authority from the completed finite source/taste-radial packet; an explicit hidden-neutral completion preserves all observed finite rows while changing H3 transfer/offdiagonal dynamics and H4 source coupling",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block130_neutral_h3h4_transfer_coupling_construction_attempt_passed": true,
+  "completed_row_scan": {
+    "C_ss_summary": {
+      "count": 693,
+      "max": 0.1342362609740224,
+      "mean": 0.12877834798495297,
+      "min": 0.122122892936674,
+      "stdev": 0.00385621194560687
+    },
+    "C_sx_summary": {
+      "count": 693,
+      "max": 0.0002353183855880693,
+      "mean": -1.823423367278785e-05,
+      "min": -0.0002702795909693118,
+      "stdev": 9.451353647541378e-05
+    },
+    "C_xx_summary": {
+      "count": 693,
+      "max": 0.28102220619992213,
+      "mean": 0.2573632284741692,
+      "min": 0.23686277768203576,
+      "stdev": 0.013589967136497533
+    },
+    "expected_chunks": 63,
+    "missing_chunks": [],
+    "mode_sets": [
+      [
+        "0,0,0",
+        "0,0,1",
+        "0,0,2",
+        "0,1,0",
+        "0,1,1",
+        "0,2,0",
+        "1,0,0",
+        "1,0,1",
+        "1,1,0",
+        "1,1,1",
+        "2,0,0"
+      ]
+    ],
+    "raw_files_checked": 63,
+    "raw_strict_token_hit_count": 0,
+    "raw_strict_token_hits": [],
+    "row_count": 693,
+    "source_alias_rows": 693,
+    "strict_key_hits": []
+  },
+  "conditional_surface_status": "neutral route reopens only with an accepted same-surface physical neutral transfer/offdiagonal generator or primitive/irreducibility certificate plus source/canonical-Higgs coupling authority",
+  "current_closure_satisfied": false,
+  "exact_next_action": "Neutral route requires a new accepted same-surface physical transfer/offdiagonal generator or primitive/irreducibility certificate plus source/canonical-Higgs coupling.  Without that, pivot back to the action-first source-Higgs row contract or strict W/Z production rows only if a new artifact appears.",
+  "fail_count": 0,
+  "finite_rows_not_accepted_transfer": true,
+  "forbidden_firewall": {
+    "aliased_c_sx_to_c_sh_before_canonical_oh": false,
+    "claimed_retained_or_proposed_retained": false,
+    "identified_taste_radial_x_as_canonical_oh": false,
+    "set_c2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_finite_equal_time_rows_as_pole_residues": false,
+    "used_heat_kernel_as_physical_transfer_without_action_selector": false,
+    "used_heat_kernel_eta_as_derived_source_coupling": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_source_only_or_c_sx_rows_as_neutral_transfer": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "h1_h2_support_not_h3_h4": true,
+  "hypothetical_axiom_status": null,
+  "parent_certificates": {
+    "block116_neutral_h3h4_strict_artifact_resolver": "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json",
+    "block124_completed_source_higgs_row_intake": "outputs/yt_pr230_block124_completed_source_higgs_row_intake_2026-05-17.json",
+    "block128_strict_wz_source_row_construction_attempt": "outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json",
+    "block129_schur_pole_authority_construction_attempt": "outputs/yt_pr230_block129_schur_pole_authority_construction_attempt_2026-05-17.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "completion_audit": "outputs/yt_pr230_positive_closure_completion_audit_2026-05-05.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "neutral_h3h4_aperture": "outputs/yt_pr230_neutral_primitive_h3h4_aperture_checkpoint_2026-05-07.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "same_surface_neutral_multiplicity_gate": "outputs/yt_pr230_same_surface_neutral_multiplicity_one_gate_2026-05-07.json",
+    "two_source_primitive_transfer_candidate": "outputs/yt_pr230_two_source_taste_radial_primitive_transfer_candidate_gate_2026-05-07.json",
+    "z3_heat_kernel_source_coupling_no_go": "outputs/yt_pr230_z3_heat_kernel_source_coupling_no_go_2026-05-15.json",
+    "z3_heat_kernel_transfer_attempt": "outputs/yt_pr230_z3_heat_kernel_neutral_transfer_attempt_2026-05-15.json"
+  },
+  "parent_statuses": {
+    "block116_neutral_h3h4_strict_artifact_resolver": "exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent",
+    "block124_completed_source_higgs_row_intake": "bounded-support / Block124 completed 63/63 finite source-Higgs row intake; strict Block123 pole packet absent",
+    "block128_strict_wz_source_row_construction_attempt": "exact negative boundary / Block128 cannot construct a strict W/Z packet from existing raw rows and the source-Higgs pole-row pivot also lacks accepted O_H/action authority plus nonempty pole residues",
+    "block129_schur_pole_authority_construction_attempt": "exact negative boundary / Block129 cannot construct strict Schur/Feshbach pole authority from the current explicit-row sidecars, raw higher-shell rows, or complete finite A/B/C packet",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "neutral_h3h4_aperture": "bounded-support / neutral primitive H3/H4 aperture checkpoint; H1/H2 support and 63 C_sx/C_xx chunks do not supply physical neutral transfer or source-canonical-Higgs coupling",
+    "retained_route": "open / retained closure not yet reached",
+    "same_surface_neutral_multiplicity_gate": "exact support / same-surface neutral multiplicity-one artifact intake gate; current PR230 surface rejected",
+    "two_source_primitive_transfer_candidate": "bounded support plus exact boundary / two-source taste-radial finite C_sx rows do not certify a physical primitive neutral transfer",
+    "z3_heat_kernel_source_coupling_no_go": "exact negative boundary / Z3 heat-kernel source-coupling data do not supply PR230 H4 source/canonical-Higgs coupling",
+    "z3_heat_kernel_transfer_attempt": "exact-support / Z3 heat-kernel primitive transfer is mathematical support only; PR230 physical H3/H4 closure remains absent"
+  },
+  "pass_count": 12,
+  "prior_neutral_absence_preserved": true,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The completed C_ss/C_sx/C_xx rows are genuine finite support, but no strict neutral artifact or row sidecar is present, H1/H2 heat-kernel support lacks a physical selector/H4 coupling, and the two-completion witness proves the finite rows do not identify H3 or H4.",
+  "source_higgs_and_schur_fallbacks_still_blocked": true,
+  "strict_artifact_presence": {
+    "canonical_higgs_operator_certificate": false,
+    "neutral_offdiagonal_generator_certificate": false,
+    "neutral_primitive_cone_certificate": false,
+    "neutral_scalar_irreducibility_certificate": false,
+    "neutral_scalar_rank_one_purity_certificate": false,
+    "pr230_neutral_h3h4_certificate": false,
+    "pr230_physical_neutral_transfer_certificate": false,
+    "pr230_source_triplet_coupling_certificate": false,
+    "source_higgs_pole_rows": false
+  },
+  "strict_neutral_artifact_present": false,
+  "strict_non_claims": {
+    "does_not_alias_c_sx_to_c_sh_before_canonical_oh": true,
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_identify_taste_radial_x_as_canonical_oh": true,
+    "does_not_promote_finite_equal_time_rows_to_physical_transfer": true,
+    "does_not_set_kappa_s_c2_or_z_match": true,
+    "does_not_treat_heat_kernel_support_as_pr230_physical_transfer": true,
+    "does_not_treat_hidden_completion_witness_as_authority": true,
+    "does_not_use_forbidden_observed_or_unit_inputs": true
+  },
+  "strict_row_or_raw_hits_present": false,
+  "two_completion_witness": {
+    "available": true,
+    "h3_transfer_family": {
+      "both_transfer_candidates_positive": true,
+      "offdiagonal_difference": 0.25,
+      "offdiagonal_generator_changes_while_equal_time_rows_fixed": true,
+      "strict_limit": "These matrices are a nonidentifiability witness, not accepted PR230 physical transfer authority.  They show the current equal-time rows do not determine H3 without a same-surface action/transfer theorem.",
+      "transfer_a": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "transfer_b": [
+        [
+          1.0,
+          0.25
+        ],
+        [
+          0.25,
+          1.0
+        ]
+      ],
+      "transfer_b_eigenvalues": [
+        0.75,
+        1.25
+      ]
+    },
+    "h4_coupling_family": {
+      "C_HH_theta_a": 0.2809106039893544,
+      "C_HH_theta_b": 0.2809106039893544,
+      "C_sH_theta_a": -0.0001185778127224799,
+      "C_sH_theta_b": -5.9288906361239966e-05,
+      "H_theta": "cos(theta) x + sin(theta) n",
+      "coupling_changes_while_observed_rows_fixed": true,
+      "normalized_source_coupling_delta": 0.00011186374964773675,
+      "normalized_source_coupling_theta_a": -0.00022372749929547354,
+      "normalized_source_coupling_theta_b": -0.0001118637496477368,
+      "theta_a": 0.0,
+      "theta_b": 1.0471975511965976
+    },
+    "hidden_neutral_completion": {
+      "C_nn_real": 0.2809106039893544,
+      "C_sn_real": 0.0,
+      "C_xn_real": 0.0,
+      "basis": [
+        "x_observed_taste_radial",
+        "n_hidden_orthogonal_neutral"
+      ],
+      "observed_equal_time_rows_preserved": true
+    },
+    "sample_row": {
+      "C_ss_real": 0.12246420767668034,
+      "C_sx_real": -0.0001185778127224799,
+      "C_xx_real": 0.2809106039893544,
+      "chunk": 1,
+      "mode": "0,0,0",
+      "p_hat_sq": 0.0,
+      "path": "outputs/yt_pr230_schur_higher_shell_rows/yt_pr230_schur_higher_shell_rows_L12_T24_chunk001_2026-05-07.json"
+    }
+  },
+  "witness_preserves_rows_but_changes_h3_h4": true
+}

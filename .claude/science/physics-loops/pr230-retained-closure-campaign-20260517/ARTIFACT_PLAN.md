@@ -411,3 +411,49 @@ Verified at `2026-05-17T17:33:46Z`:
 - Block129 strict pole-authority construction runner: `PASS=14 FAIL=0`
 - campaign status certificate: `PASS=449 FAIL=0`
 - assumption/import stress: `PASS=132 FAIL=0`
+
+## Block130
+
+Working title: PR230 Block130 neutral H3/H4 transfer/coupling construction
+attempt.
+
+Purpose:
+
+- pivot to the neutral H3/H4 route after Block129 closes the finite Schur
+  proxy shortcut;
+- test whether the completed 693-row finite `C_ss/C_sx/C_xx`
+  source/taste-radial packet can construct H3 physical transfer/offdiagonal
+  authority or H4 source/canonical-Higgs coupling;
+- scan expected strict neutral sidecars and raw higher-shell files for
+  transfer, primitive, irreducibility, rank-one, or source-coupling authority;
+- if strict authority is absent, construct a same-observed-row
+  hidden-neutral witness that shows finite equal-time rows do not identify H3
+  or H4.
+
+Files:
+
+- `docs/YT_PR230_BLOCK130_NEUTRAL_H3H4_TRANSFER_COUPLING_CONSTRUCTION_ATTEMPT_NOTE_2026-05-17.md`
+- `docs/YT_PR230_BLOCK130_NEUTRAL_H3H4_ETA_NONIDENTIFIABILITY_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt.py`
+- `scripts/frontier_yt_pr230_block130_neutral_h3h4_eta_nonidentifiability.py`
+- `outputs/yt_pr230_block130_neutral_h3h4_transfer_coupling_construction_attempt_2026-05-17.json`
+- `outputs/yt_pr230_block130_neutral_h3h4_eta_nonidentifiability_2026-05-17.json`
+
+Result: exact negative boundary.  The runner finds all 693 finite rows, zero
+strict neutral artifact sidecars, zero strict neutral/primitive/source-coupling
+raw keys in 63/63 raw higher-shell files, and preserved Block128/Block129
+fallback blockers.  The hidden-neutral witness preserves the chunk001
+`(0,0,0)` observed finite row while changing the normalized source coupling
+from `-0.00022372749929547354` to `-0.0001118637496477368` and changing the
+off-diagonal transfer content by `0.25`.  The eta counterfamily fixes the
+source self block and H1/H2 triplet block while varying source-triplet coupling
+from `0` to `0.12124355652982143`, and finds zero strict neutral keys in 214
+raw `ensemble_measurement.json` files.
+
+Verified at `2026-05-17T17:49:08Z`:
+
+- Block130 py_compile: passed
+- Block130 transfer/coupling runner: `PASS=12 FAIL=0`
+- Block130 eta nonidentifiability runner: `PASS=11 FAIL=0`
+- campaign status certificate: `PASS=451 FAIL=0`
+- assumption/import stress: `PASS=134 FAIL=0`

@@ -21,6 +21,7 @@
 | The W/Z builder recognizing the Block126 packet satisfies the W/Z contract. | Block127 verifies the builder consumes and recognizes the 1008-row top-side packet, but it still marks the packet non-strict and writes no measurement rows because W/Z rows, matched top-W/Z covariance, strict non-observed `g2`, accepted action, and canonical-Higgs/source-overlap authority are absent. | W/Z remains open only through genuine same-source W/Z mass-fit rows with matchable configuration keys, strict `g2`, and accepted same-source EW/Higgs action authority. |
 | Existing raw rows can be rearranged into strict W/Z production rows or strict source-Higgs pole rows. | Block128 checks the constructive path: the 63 Block126 raw files carry only disabled W/Z stubs and zero nonempty W/Z mass-fit rows; the W/Z smoke schema is scout/synthetic/aggregate-only and not key-matchable to Block126; the source-Higgs side still has zero pole-residue rows and no accepted canonical `O_H`/action authority. | Pivot to strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority unless a new production W/Z artifact or accepted `O_H`/action plus nonempty pole-row artifact appears. |
 | The finite `C_x|s` one-pole scout, finite Loewner/Stieltjes proxy, or complete finite A/B/C support can replace strict Schur pole rows. | Block129 uses the completed five-level higher-shell packet to falsify the two-point one-pole scout on unused shells, finds zero finite candidate fields surviving necessary Stieltjes signs, and cannot construct strict pole authority from explicit sidecars, 63/63 raw higher-shell files, or finite A/B/C support. | Schur survives only with actual same-surface pole rows or a theorem-grade analytic/model-class certificate fixing `K'(pole)`, plus FV/IR/contact authority and a physical bridge; the next current-surface pivot is neutral H3/H4. |
+| The completed finite `C_ss/C_sx/C_xx` packet plus H1/H2 support determines neutral H3/H4. | Block130 constructs two witnesses: all observed finite rows are preserved while the normalized source coupling and off-diagonal transfer content change, and the source self block plus H1/H2 triplet block are preserved while the eta source-triplet coupling changes from zero to nonzero.  It also finds no strict neutral sidecars, no raw strict keys in 63/63 raw higher-shell files, and no strict neutral keys in 214 raw `ensemble_measurement.json` files. | Neutral survives only with accepted same-surface physical transfer/offdiagonal generator or primitive/irreducibility certificate plus source/canonical-Higgs coupling authority. |
 
 ## Exercise 2: First-Principles Reduction
 
@@ -83,9 +84,12 @@ Literature is route context only:
 Candidate mathematics not admitted as proof input yet:
 
 - operator-algebra/GNS/OS reconstruction: useful for specifying transfer
-  authority, but current rows do not satisfy a physical OS transfer certificate;
+  authority, but current rows do not satisfy a physical OS transfer certificate,
+  and Block130 shows equal-time finite rows do not determine the missing
+  transfer generator;
 - total positivity/Perron-Frobenius: useful for neutral primitive tests, but
-  Block116 finds no physical neutral transfer or H4 coupling;
+  Block116 finds no physical neutral transfer or H4 coupling and Block130
+  blocks finite-row H3/H4 identification;
 - Schur complement/Feshbach: useful for a pole-row contract, but current rows
   are finite inverse-block support, and Block129 rejects finite one-pole or
   Loewner/Stieltjes proxy promotion;

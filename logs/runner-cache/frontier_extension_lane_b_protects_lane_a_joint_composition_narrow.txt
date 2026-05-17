@@ -1,0 +1,425 @@
+===== runner cache v1 =====
+runner: scripts/frontier_extension_lane_b_protects_lane_a_joint_composition_narrow.py
+runner_sha256: 487aa608c5128fe86b4218f4beb0a5ac98bec7ec757572a6c7a757a87d6f3f9a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+========================================================================================
+Joint Protection Theorem audit (Lane A teleportation + Lane B chronology)
+See docs/FRONTIER_EXTENSION_LANE_B_PROTECTS_LANE_A_JOINT_COMPOSITION_NARROW_NOTE_2026-05-17.md
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Authority and scope surface
+----------------------------------------------------------------------------------------
+  [PASS] authority/reference exists: docs/FRONTIER_EXTENSION_LANE_OPENING_NOTE_2026-04-25.md
+  [PASS] authority/reference exists: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md
+  [PASS] authority/reference exists: docs/TELEPORTATION_NO_SIGNALING_AUDIT.md
+  [PASS] authority/reference exists: docs/SINGLE_AXIOM_HILBERT_NOTE.md
+  [PASS] authority/reference exists: docs/BELL_INEQUALITY_DERIVED_NOTE.md
+  [PASS] note states boundary: does not close the lane
+  [PASS] note states boundary: does not promote
+  [PASS] note states boundary: single-clock
+  [PASS] note states boundary: pre-message
+  [PASS] note states boundary: postselection
+  [PASS] note states boundary: no operational past-signaling channel from t_C to t_A
+  [PASS] note states boundary: no main-surface promotion
+  [PASS] note avoids overclaim: closes the lane-opening note
+  [PASS] note avoids overclaim: promotes Lane C
+  [PASS] note avoids overclaim: ftl
+  [PASS] note avoids overclaim: FTL signaling is possible
+  [PASS] note avoids overclaim: antigravity is established
+
+----------------------------------------------------------------------------------------
+(J1) Bob pre-message reduced state is input-independent
+----------------------------------------------------------------------------------------
+  [PASS] input #0 normalized
+  [PASS] input #0 Bob pre-message trace = 1
+  [PASS] input #0 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #1 normalized
+  [PASS] input #1 Bob pre-message trace = 1
+  [PASS] input #1 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #2 normalized
+  [PASS] input #2 Bob pre-message trace = 1
+  [PASS] input #2 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #3 normalized
+  [PASS] input #3 Bob pre-message trace = 1
+  [PASS] input #3 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #4 normalized
+  [PASS] input #4 Bob pre-message trace = 1
+  [PASS] input #4 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #5 normalized
+  [PASS] input #5 Bob pre-message trace = 1
+  [PASS] input #5 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #6 normalized
+  [PASS] input #6 Bob pre-message trace = 1
+  [PASS] input #6 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #7 normalized
+  [PASS] input #7 Bob pre-message trace = 1
+  [PASS] input #7 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #8 normalized
+  [PASS] input #8 Bob pre-message trace = 1
+  [PASS] input #8 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #9 normalized
+  [PASS] input #9 Bob pre-message trace = 1
+  [PASS] input #9 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #10 normalized
+  [PASS] input #10 Bob pre-message trace = 1
+  [PASS] input #10 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #11 normalized
+  [PASS] input #11 Bob pre-message trace = 1
+  [PASS] input #11 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #12 normalized
+  [PASS] input #12 Bob pre-message trace = 1
+  [PASS] input #12 Bob pre-message = I/2 (no-signaling)
+  [PASS] input #13 normalized
+  [PASS] input #13 Bob pre-message trace = 1
+  [PASS] input #13 Bob pre-message = I/2 (no-signaling)
+
+----------------------------------------------------------------------------------------
+(J1b) Teleportation channel deterministically delivers input
+----------------------------------------------------------------------------------------
+  [PASS] teleported #0 trace = 1
+  [PASS] teleported #0 equals input (fidelity 1)
+  [PASS] teleported #1 trace = 1
+  [PASS] teleported #1 equals input (fidelity 1)
+  [PASS] teleported #2 trace = 1
+  [PASS] teleported #2 equals input (fidelity 1)
+  [PASS] teleported #3 trace = 1
+  [PASS] teleported #3 equals input (fidelity 1)
+  [PASS] teleported #4 trace = 1
+  [PASS] teleported #4 equals input (fidelity 1)
+  [PASS] teleported #5 trace = 1
+  [PASS] teleported #5 equals input (fidelity 1)
+  [PASS] teleported #6 trace = 1
+  [PASS] teleported #6 equals input (fidelity 1)
+  [PASS] teleported #7 trace = 1
+  [PASS] teleported #7 equals input (fidelity 1)
+  [PASS] teleported #8 trace = 1
+  [PASS] teleported #8 equals input (fidelity 1)
+  [PASS] teleported #9 trace = 1
+  [PASS] teleported #9 equals input (fidelity 1)
+  [PASS] teleported #10 trace = 1
+  [PASS] teleported #10 equals input (fidelity 1)
+  [PASS] teleported #11 trace = 1
+  [PASS] teleported #11 equals input (fidelity 1)
+  [PASS] teleported #12 trace = 1
+  [PASS] teleported #12 equals input (fidelity 1)
+  [PASS] teleported #13 trace = 1
+  [PASS] teleported #13 equals input (fidelity 1)
+
+----------------------------------------------------------------------------------------
+(J2) Earlier record marginal invariant under any later setting at t_C
+----------------------------------------------------------------------------------------
+  [PASS] identity_at_C is trace preserving
+  [PASS] identity_at_C has unital Heisenberg dual
+  [PASS] hadamard_at_C is trace preserving
+  [PASS] hadamard_at_C has unital Heisenberg dual
+  [PASS] dephasing_at_C is trace preserving
+  [PASS] dephasing_at_C has unital Heisenberg dual
+  [PASS] memory_reset_to_|0>_at_C is trace preserving
+  [PASS] memory_reset_to_|0>_at_C has unital Heisenberg dual
+  [PASS] loschmidt_echo_at_C is trace preserving
+  [PASS] loschmidt_echo_at_C has unital Heisenberg dual
+  [PASS] depolarizing_at_C is trace preserving
+  [PASS] depolarizing_at_C has unital Heisenberg dual
+  [PASS] input #0: record probabilities sum to one
+  [PASS] input #0: P(a) is uniform 1/4 on Bell outcomes
+  [PASS] input #0, identity_at_C: record P(a=00) unchanged
+  [PASS] input #0, identity_at_C: record P(a=10) unchanged
+  [PASS] input #0, identity_at_C: record P(a=01) unchanged
+  [PASS] input #0, identity_at_C: record P(a=11) unchanged
+  [PASS] input #0, hadamard_at_C: record P(a=00) unchanged
+  [PASS] input #0, hadamard_at_C: record P(a=10) unchanged
+  [PASS] input #0, hadamard_at_C: record P(a=01) unchanged
+  [PASS] input #0, hadamard_at_C: record P(a=11) unchanged
+  [PASS] input #0, dephasing_at_C: record P(a=00) unchanged
+  [PASS] input #0, dephasing_at_C: record P(a=10) unchanged
+  [PASS] input #0, dephasing_at_C: record P(a=01) unchanged
+  [PASS] input #0, dephasing_at_C: record P(a=11) unchanged
+  [PASS] input #0, memory_reset_to_|0>_at_C: record P(a=00) unchanged
+  [PASS] input #0, memory_reset_to_|0>_at_C: record P(a=10) unchanged
+  [PASS] input #0, memory_reset_to_|0>_at_C: record P(a=01) unchanged
+  [PASS] input #0, memory_reset_to_|0>_at_C: record P(a=11) unchanged
+  [PASS] input #0, loschmidt_echo_at_C: record P(a=00) unchanged
+  [PASS] input #0, loschmidt_echo_at_C: record P(a=10) unchanged
+  [PASS] input #0, loschmidt_echo_at_C: record P(a=01) unchanged
+  [PASS] input #0, loschmidt_echo_at_C: record P(a=11) unchanged
+  [PASS] input #0, depolarizing_at_C: record P(a=00) unchanged
+  [PASS] input #0, depolarizing_at_C: record P(a=10) unchanged
+  [PASS] input #0, depolarizing_at_C: record P(a=01) unchanged
+  [PASS] input #0, depolarizing_at_C: record P(a=11) unchanged
+  [PASS] input #1: record probabilities sum to one
+  [PASS] input #1: P(a) is uniform 1/4 on Bell outcomes
+  [PASS] input #1, identity_at_C: record P(a=00) unchanged
+  [PASS] input #1, identity_at_C: record P(a=10) unchanged
+  [PASS] input #1, identity_at_C: record P(a=01) unchanged
+  [PASS] input #1, identity_at_C: record P(a=11) unchanged
+  [PASS] input #1, hadamard_at_C: record P(a=00) unchanged
+  [PASS] input #1, hadamard_at_C: record P(a=10) unchanged
+  [PASS] input #1, hadamard_at_C: record P(a=01) unchanged
+  [PASS] input #1, hadamard_at_C: record P(a=11) unchanged
+  [PASS] input #1, dephasing_at_C: record P(a=00) unchanged
+  [PASS] input #1, dephasing_at_C: record P(a=10) unchanged
+  [PASS] input #1, dephasing_at_C: record P(a=01) unchanged
+  [PASS] input #1, dephasing_at_C: record P(a=11) unchanged
+  [PASS] input #1, memory_reset_to_|0>_at_C: record P(a=00) unchanged
+  [PASS] input #1, memory_reset_to_|0>_at_C: record P(a=10) unchanged
+  [PASS] input #1, memory_reset_to_|0>_at_C: record P(a=01) unchanged
+  [PASS] input #1, memory_reset_to_|0>_at_C: record P(a=11) unchanged
+  [PASS] input #1, loschmidt_echo_at_C: record P(a=00) unchanged
+  [PASS] input #1, loschmidt_echo_at_C: record P(a=10) unchanged
+  [PASS] input #1, loschmidt_echo_at_C: record P(a=01) unchanged
+  [PASS] input #1, loschmidt_echo_at_C: record P(a=11) unchanged
+  [PASS] input #1, depolarizing_at_C: record P(a=00) unchanged
+  [PASS] input #1, depolarizing_at_C: record P(a=10) unchanged
+  [PASS] input #1, depolarizing_at_C: record P(a=01) unchanged
+  [PASS] input #1, depolarizing_at_C: record P(a=11) unchanged
+  [PASS] input #2: record probabilities sum to one
+  [PASS] input #2: P(a) is uniform 1/4 on Bell outcomes
+  [PASS] input #2, identity_at_C: record P(a=00) unchanged
+  [PASS] input #2, identity_at_C: record P(a=10) unchanged
+  [PASS] input #2, identity_at_C: record P(a=01) unchanged
+  [PASS] input #2, identity_at_C: record P(a=11) unchanged
+  [PASS] input #2, hadamard_at_C: record P(a=00) unchanged
+  [PASS] input #2, hadamard_at_C: record P(a=10) unchanged
+  [PASS] input #2, hadamard_at_C: record P(a=01) unchanged
+  [PASS] input #2, hadamard_at_C: record P(a=11) unchanged
+  [PASS] input #2, dephasing_at_C: record P(a=00) unchanged
+  [PASS] input #2, dephasing_at_C: record P(a=10) unchanged
+  [PASS] input #2, dephasing_at_C: record P(a=01) unchanged
+  [PASS] input #2, dephasing_at_C: record P(a=11) unchanged
+  [PASS] input #2, memory_reset_to_|0>_at_C: record P(a=00) unchanged
+  [PASS] input #2, memory_reset_to_|0>_at_C: record P(a=10) unchanged
+  [PASS] input #2, memory_reset_to_|0>_at_C: record P(a=01) unchanged
+  [PASS] input #2, memory_reset_to_|0>_at_C: record P(a=11) unchanged
+  [PASS] input #2, loschmidt_echo_at_C: record P(a=00) unchanged
+  [PASS] input #2, loschmidt_echo_at_C: record P(a=10) unchanged
+  [PASS] input #2, loschmidt_echo_at_C: record P(a=01) unchanged
+  [PASS] input #2, loschmidt_echo_at_C: record P(a=11) unchanged
+  [PASS] input #2, depolarizing_at_C: record P(a=00) unchanged
+  [PASS] input #2, depolarizing_at_C: record P(a=10) unchanged
+  [PASS] input #2, depolarizing_at_C: record P(a=01) unchanged
+  [PASS] input #2, depolarizing_at_C: record P(a=11) unchanged
+  [PASS] input #3: record probabilities sum to one
+  [PASS] input #3: P(a) is uniform 1/4 on Bell outcomes
+  [PASS] input #3, identity_at_C: record P(a=00) unchanged
+  [PASS] input #3, identity_at_C: record P(a=10) unchanged
+  [PASS] input #3, identity_at_C: record P(a=01) unchanged
+  [PASS] input #3, identity_at_C: record P(a=11) unchanged
+  [PASS] input #3, hadamard_at_C: record P(a=00) unchanged
+  [PASS] input #3, hadamard_at_C: record P(a=10) unchanged
+  [PASS] input #3, hadamard_at_C: record P(a=01) unchanged
+  [PASS] input #3, hadamard_at_C: record P(a=11) unchanged
+  [PASS] input #3, dephasing_at_C: record P(a=00) unchanged
+  [PASS] input #3, dephasing_at_C: record P(a=10) unchanged
+  [PASS] input #3, dephasing_at_C: record P(a=01) unchanged
+  [PASS] input #3, dephasing_at_C: record P(a=11) unchanged
+  [PASS] input #3, memory_reset_to_|0>_at_C: record P(a=00) unchanged
+  [PASS] input #3, memory_reset_to_|0>_at_C: record P(a=10) unchanged
+  [PASS] input #3, memory_reset_to_|0>_at_C: record P(a=01) unchanged
+  [PASS] input #3, memory_reset_to_|0>_at_C: record P(a=11) unchanged
+  [PASS] input #3, loschmidt_echo_at_C: record P(a=00) unchanged
+  [PASS] input #3, loschmidt_echo_at_C: record P(a=10) unchanged
+  [PASS] input #3, loschmidt_echo_at_C: record P(a=01) unchanged
+  [PASS] input #3, loschmidt_echo_at_C: record P(a=11) unchanged
+  [PASS] input #3, depolarizing_at_C: record P(a=00) unchanged
+  [PASS] input #3, depolarizing_at_C: record P(a=10) unchanged
+  [PASS] input #3, depolarizing_at_C: record P(a=01) unchanged
+  [PASS] input #3, depolarizing_at_C: record P(a=11) unchanged
+  [PASS] input #4: record probabilities sum to one
+  [PASS] input #4: P(a) is uniform 1/4 on Bell outcomes
+  [PASS] input #4, identity_at_C: record P(a=00) unchanged
+  [PASS] input #4, identity_at_C: record P(a=10) unchanged
+  [PASS] input #4, identity_at_C: record P(a=01) unchanged
+  [PASS] input #4, identity_at_C: record P(a=11) unchanged
+  [PASS] input #4, hadamard_at_C: record P(a=00) unchanged
+  [PASS] input #4, hadamard_at_C: record P(a=10) unchanged
+  [PASS] input #4, hadamard_at_C: record P(a=01) unchanged
+  [PASS] input #4, hadamard_at_C: record P(a=11) unchanged
+  [PASS] input #4, dephasing_at_C: record P(a=00) unchanged
+  [PASS] input #4, dephasing_at_C: record P(a=10) unchanged
+  [PASS] input #4, dephasing_at_C: record P(a=01) unchanged
+  [PASS] input #4, dephasing_at_C: record P(a=11) unchanged
+  [PASS] input #4, memory_reset_to_|0>_at_C: record P(a=00) unchanged
+  [PASS] input #4, memory_reset_to_|0>_at_C: record P(a=10) unchanged
+  [PASS] input #4, memory_reset_to_|0>_at_C: record P(a=01) unchanged
+  [PASS] input #4, memory_reset_to_|0>_at_C: record P(a=11) unchanged
+  [PASS] input #4, loschmidt_echo_at_C: record P(a=00) unchanged
+  [PASS] input #4, loschmidt_echo_at_C: record P(a=10) unchanged
+  [PASS] input #4, loschmidt_echo_at_C: record P(a=01) unchanged
+  [PASS] input #4, loschmidt_echo_at_C: record P(a=11) unchanged
+  [PASS] input #4, depolarizing_at_C: record P(a=00) unchanged
+  [PASS] input #4, depolarizing_at_C: record P(a=10) unchanged
+  [PASS] input #4, depolarizing_at_C: record P(a=01) unchanged
+  [PASS] input #4, depolarizing_at_C: record P(a=11) unchanged
+  [PASS] input #5: record probabilities sum to one
+  [PASS] input #5: P(a) is uniform 1/4 on Bell outcomes
+  [PASS] input #5, identity_at_C: record P(a=00) unchanged
+  [PASS] input #5, identity_at_C: record P(a=10) unchanged
+  [PASS] input #5, identity_at_C: record P(a=01) unchanged
+  [PASS] input #5, identity_at_C: record P(a=11) unchanged
+  [PASS] input #5, hadamard_at_C: record P(a=00) unchanged
+  [PASS] input #5, hadamard_at_C: record P(a=10) unchanged
+  [PASS] input #5, hadamard_at_C: record P(a=01) unchanged
+  [PASS] input #5, hadamard_at_C: record P(a=11) unchanged
+  [PASS] input #5, dephasing_at_C: record P(a=00) unchanged
+  [PASS] input #5, dephasing_at_C: record P(a=10) unchanged
+  [PASS] input #5, dephasing_at_C: record P(a=01) unchanged
+  [PASS] input #5, dephasing_at_C: record P(a=11) unchanged
+  [PASS] input #5, memory_reset_to_|0>_at_C: record P(a=00) unchanged
+  [PASS] input #5, memory_reset_to_|0>_at_C: record P(a=10) unchanged
+  [PASS] input #5, memory_reset_to_|0>_at_C: record P(a=01) unchanged
+  [PASS] input #5, memory_reset_to_|0>_at_C: record P(a=11) unchanged
+  [PASS] input #5, loschmidt_echo_at_C: record P(a=00) unchanged
+  [PASS] input #5, loschmidt_echo_at_C: record P(a=10) unchanged
+  [PASS] input #5, loschmidt_echo_at_C: record P(a=01) unchanged
+  [PASS] input #5, loschmidt_echo_at_C: record P(a=11) unchanged
+  [PASS] input #5, depolarizing_at_C: record P(a=00) unchanged
+  [PASS] input #5, depolarizing_at_C: record P(a=10) unchanged
+  [PASS] input #5, depolarizing_at_C: record P(a=01) unchanged
+  [PASS] input #5, depolarizing_at_C: record P(a=11) unchanged
+
+----------------------------------------------------------------------------------------
+(J3) Bob's local state at t_C depends on x (nontriviality witness)
+----------------------------------------------------------------------------------------
+  [PASS] some input + setting pair gives distinguishable Bob-at-t_C states
+  trace distance (Bob H vs Bob I on |+>) = 0.707106781187
+  [PASS] Bob H vs Bob I trace distance > 0.5
+
+----------------------------------------------------------------------------------------
+(J4) Joint composition forbids past-signaling from t_C to t_A
+----------------------------------------------------------------------------------------
+  [PASS] (J4a) input #0, identity_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #0, identity_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #0, identity_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #0, identity_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #0, hadamard_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #0, hadamard_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #0, hadamard_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #0, hadamard_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #0, dephasing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #0, dephasing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #0, dephasing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #0, dephasing_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #0, memory_reset_to_|0>_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #0, memory_reset_to_|0>_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #0, memory_reset_to_|0>_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #0, memory_reset_to_|0>_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #0, loschmidt_echo_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #0, loschmidt_echo_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #0, loschmidt_echo_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #0, loschmidt_echo_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #0, depolarizing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #0, depolarizing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #0, depolarizing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #0, depolarizing_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #1, identity_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #1, identity_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #1, identity_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #1, identity_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #1, hadamard_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #1, hadamard_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #1, hadamard_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #1, hadamard_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #1, dephasing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #1, dephasing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #1, dephasing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #1, dephasing_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #1, memory_reset_to_|0>_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #1, memory_reset_to_|0>_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #1, memory_reset_to_|0>_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #1, memory_reset_to_|0>_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #1, loschmidt_echo_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #1, loschmidt_echo_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #1, loschmidt_echo_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #1, loschmidt_echo_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #1, depolarizing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #1, depolarizing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #1, depolarizing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #1, depolarizing_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #2, identity_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #2, identity_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #2, identity_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #2, identity_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #2, hadamard_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #2, hadamard_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #2, hadamard_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #2, hadamard_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #2, dephasing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #2, dephasing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #2, dephasing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #2, dephasing_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #2, memory_reset_to_|0>_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #2, memory_reset_to_|0>_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #2, memory_reset_to_|0>_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #2, memory_reset_to_|0>_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #2, loschmidt_echo_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #2, loschmidt_echo_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #2, loschmidt_echo_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #2, loschmidt_echo_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #2, depolarizing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #2, depolarizing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #2, depolarizing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #2, depolarizing_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #3, identity_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #3, identity_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #3, identity_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #3, identity_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #3, hadamard_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #3, hadamard_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #3, hadamard_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #3, hadamard_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #3, dephasing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #3, dephasing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #3, dephasing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #3, dephasing_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #3, memory_reset_to_|0>_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #3, memory_reset_to_|0>_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #3, memory_reset_to_|0>_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #3, memory_reset_to_|0>_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #3, loschmidt_echo_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #3, loschmidt_echo_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #3, loschmidt_echo_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #3, loschmidt_echo_at_C: P(a=11|x) = P(a=11)
+  [PASS] (J4a) input #3, depolarizing_at_C: P(a=00|x) = P(a=00)
+  [PASS] (J4a) input #3, depolarizing_at_C: P(a=10|x) = P(a=10)
+  [PASS] (J4a) input #3, depolarizing_at_C: P(a=01|x) = P(a=01)
+  [PASS] (J4a) input #3, depolarizing_at_C: P(a=11|x) = P(a=11)
+
+----------------------------------------------------------------------------------------
+(J4b) Positive control: postselected past-conditioning DOES bias
+----------------------------------------------------------------------------------------
+  [PASS] postselected branch has nonzero probability cost
+  base P(a=00) = 0.250000
+  P(a=00 | future Bob postselected on |0>) = 0.400000
+  bias from postselection = 0.150000
+  [PASS] postselection biases the retrodicted ensemble (control)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Certified:
+    (J1) Bob pre-message reduced state is I/2 for every input.
+    (J1b) Teleportation channel delivers the input deterministically.
+    (J2) P(a at t_A) is invariant under any later CPTP setting at t_C.
+    (J3) Bob's local state at t_C does respond to x (nontriviality).
+    (J4a) Conditional P(a|x) equals marginal P(a) for every x.
+    (J4b) Postselected past-conditioning DOES bias (positive control).
+
+  Not certified:
+    no closure of the lane-opening note;
+    no promotion of Lane C (signed gravity);
+    no manuscript-surface or retained-row change;
+    no derivation of the retained single-clock surface itself;
+    no claim about postselected, final-boundary, or directed-cycle
+    theories — those remain explicitly outside scope.
+
+========================================================================================
+TOTAL: PASS=355, FAIL=0
+========================================================================================
+
+----- stderr -----
+

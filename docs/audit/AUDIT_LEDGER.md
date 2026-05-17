@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 343 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1221 |
+| unaudited | 1220 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 186 |
+| ~~audited_conditional~~ | 187 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 568 |
-| `audited_conditional` | 186 |
+| `audited_conditional` | 187 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1423 |
+| `unaudited` | 1422 |
 
 | claim_type | count |
 |---|---:|
@@ -870,6 +870,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -12532,6 +12533,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note is a historical status compendium that cross-references existing closed bounded theorems (Schur class uniqueness, stability gap, microscopic admissibility, bridge bound notes) and explicitly enumerates the unbounded target as not closed. As a bounded-status synthesis with no novel claim of its own, its chain reduces to citation of existing rows; the bounded character matches the explicit y_t bounded status on main.
 - **rationale:** Within the bounded-status compendium scope (no novel theorem; citation-level synthesis of existing closed pieces and the residual to unbounded), the chain closes by reference to live authorities. The note's stated honesty 'historical planning/program note; not live authority' matches the bounded-status reading; no upgrade to unbounded y_t is implied.
 - **auditor confidence:** medium
+
+### `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the narrow numerical claim that the SM 2-loop backward-RGE map Phi from y_t(v) to y_t(M_Pl) is well-defined, monotone, finite-Lipschitz, below a Yukawa blow-up threshold on [0.5,1.2], and has a unique Ward-target root near X*=0.972672.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-185711-41cdea85-yt_boundary_bc_transfer_-021`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner verifies Phi on a 33-point X-grid, finds all forward differences positive, and uses that sampled monotonicity plus endpoint sign change to conclude a unique root X* in [0.5, 1.2].  _(class `D`)_
+- **chain closes:** False — The packet supports a sampled numerical check, but it does not prove strict monotonicity, Lipschitz control, or globalness for every X in the continuum interval. It also imports canonical-surface constants and the Ward boundary target without providing retained upstream authorities in the restricted packet.
+- **rationale:** The runner performs real ODE integrations and root finding, so it is not merely printing constants, but all recorded PASS checks are numerical comparator/grid checks rather than a first-principles derivation from the stated axiom. The decisive uniqueness step depends on sampled finite differences being upgraded to continuum strict monotonicity, which is not established by the code or note. In addition, the runner imports canonical plaquette/coupling inputs and uses a Ward target that are not supplied as cited retained authorities in this restricted packet. The safe reduced result is a successful sampled numerical certificate for the specified implementation and grid, conditional on the imported constants and an additional theorem bounding behavior between sampled points.
+- **open / conditional deps cited:**
+  - `canonical_plaquette_surface`
+  - `YT_BOUNDARY_THEOREM.md`
+  - `YT_ZERO_IMPORT_AUTHORITY_NOTE.md`
+  - `scripts/frontier_yt_boundary_consistency.py`
+- **auditor confidence:** high
 
 ### `yt_ew_color_projection_theorem`
 

@@ -504,6 +504,9 @@ def main() -> int:
         "pr230_block108_all_ref_closure_artifact_rescan": load(
             "outputs/yt_pr230_block108_all_ref_closure_artifact_rescan_2026-05-17.json"
         ),
+        "pr230_block109_closure_root_frontier_selector": load(
+            "outputs/yt_pr230_block109_closure_root_frontier_selector_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2710,6 +2713,32 @@ def main() -> int:
         "pr230-block108-all-ref-closure-artifact-rescan-blocks",
         block108_all_ref_closure_artifact_rescan_blocks,
         statuses["pr230_block108_all_ref_closure_artifact_rescan"],
+    )
+    block109_closure_root_frontier_selector_blocks = (
+        "Block109 closure-root frontier selector" in str(
+            statuses["pr230_block109_closure_root_frontier_selector"]
+        )
+        and certificates["pr230_block109_closure_root_frontier_selector"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block109_closure_root_frontier_selector"].get(
+            "block109_closure_root_frontier_selector_passed"
+        )
+        is True
+        and certificates["pr230_block109_closure_root_frontier_selector"].get(
+            "goal_complete"
+        )
+        is False
+        and certificates["pr230_block109_closure_root_frontier_selector"].get(
+            "selected_next_artifact_family"
+        )
+        == "O_H_action_plus_source_higgs_pole_rows"
+    )
+    report(
+        "pr230-block109-closure-root-frontier-selector-blocks",
+        block109_closure_root_frontier_selector_blocks,
+        statuses["pr230_block109_closure_root_frontier_selector"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8459,6 +8488,9 @@ def main() -> int:
     )
     result["block108_all_ref_closure_artifact_rescan_blocks"] = (
         block108_all_ref_closure_artifact_rescan_blocks
+    )
+    result["block109_closure_root_frontier_selector_blocks"] = (
+        block109_closure_root_frontier_selector_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

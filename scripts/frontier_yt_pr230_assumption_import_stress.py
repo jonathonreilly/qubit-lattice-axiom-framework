@@ -344,6 +344,9 @@ def main() -> int:
         "post_block100_completion_reopen_audit": load(
             "outputs/yt_pr230_post_block100_completion_reopen_audit_2026-05-15.json"
         ),
+        "block109_closure_root_frontier_selector": load(
+            "outputs/yt_pr230_block109_closure_root_frontier_selector_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2056,6 +2059,27 @@ def main() -> int:
         post_block100_completion_reopen_blocks,
         post_block100_completion.get("actual_current_surface_status"),
     )
+    block109_frontier = certificates["block109_closure_root_frontier_selector"]
+    block109_frontier_keeps_imports_clean = (
+        "closure-root frontier selector" in str(
+            block109_frontier.get("actual_current_surface_status")
+        )
+        and block109_frontier.get("proposal_allowed") is False
+        and block109_frontier.get("block109_closure_root_frontier_selector_passed")
+        is True
+        and block109_frontier.get("goal_complete") is False
+        and block109_frontier.get("selected_next_artifact_family")
+        == "O_H_action_plus_source_higgs_pole_rows"
+        and all(
+            value is False
+            for value in block109_frontier.get("forbidden_firewall", {}).values()
+        )
+    )
+    report(
+        "block109-frontier-selector-keeps-imports-clean",
+        block109_frontier_keeps_imports_clean,
+        block109_frontier.get("actual_current_surface_status"),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2372,6 +2396,7 @@ def main() -> int:
             "does not treat complete 63/63 higher-shell finite-row monotonicity diagnostics as strict scalar-LSZ, Schur pole-row, FV/IR, canonical O_H, or y_t authority",
             "does not treat package hierarchy v as a PR230 W/Z absolute-normalization pin",
             "does not treat post-Block100 completion/reopen audit status, completed chunks, or fetched remote path names as positive closure",
+            "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
             "does not close future source-Higgs, W/Z, Schur, rank-one, scalar-LSZ, or production routes",
         ],
         "z3_heat_kernel_neutral_transfer_support_not_h3h4": z3_heat_kernel_support_not_h3h4,
@@ -2379,6 +2404,7 @@ def main() -> int:
         "z3_heat_kernel_source_coupling_blocks_h4": z3_heat_kernel_source_coupling_blocks_h4,
         "wz_v_authority_firewall_blocks_package_v_import": wz_v_authority_firewall_blocks,
         "post_block100_completion_reopen_audit_blocks_path_only_reopen": post_block100_completion_reopen_blocks,
+        "block109_frontier_selector_keeps_imports_clean": block109_frontier_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

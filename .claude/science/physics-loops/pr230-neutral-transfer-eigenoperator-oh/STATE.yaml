@@ -1,25 +1,26 @@
 loop_slug: pr230-neutral-transfer-eigenoperator-oh
 mode: campaign
 runtime_budget: "12h total, outer-supervisor managed"
-checkpoint_time: "2026-05-17T01:03:00Z"
+checkpoint_time: "2026-05-17T02:05:00Z"
 branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_head_at_start: 76c5d93e7
-lock_status: "branch-local science block; Block108 ran from a fresh clean clone after the prior worktree showed unrelated ref object corruption; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
-cycle_count: 108
-active_science_block: block108_all_ref_closure_artifact_rescan
-active_route: "Block108 is a completion-audit and route-intake checkpoint after final chunk completion and Block107. It fetches/scans all origin refs from a clean clone, records 799 fetched refs, finds no strict current or remote same-surface closure artifact, refreshes the FMS/lattice-Higgs literature boundary as non-authoritative context only, and keeps proposal wording forbidden."
+lock_status: "branch-local science block; Block109 follows the clean Block108 state and converts the active objective into a prompt-to-artifact completion audit plus closure-root frontier selector; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
+cycle_count: 109
+active_science_block: block109_closure_root_frontier_selector
+active_route: "Block109 audits the active objective after Block108, rejects chunks/manifests/all-ref scans/literature/path names as proxy completion, and selects the next genuine same-surface artifact family: accepted EW/Higgs action or canonical O_H certificate followed by strict physical C_ss/C_sH/C_HH pole rows with Gram/covariance/threshold/FVIR authority."
 target_status: best-honest-status
-actual_current_surface_status: "open / Block108 all-ref closure-artifact rescan; positive closure not achieved and no current/fetched strict same-surface artifact is admitted"
+actual_current_surface_status: "open / Block109 closure-root frontier selector; positive closure not achieved and next admissible work is a genuine same-surface O_H/action plus source-Higgs pole-row artifact"
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block108 changes no physics premise. It scans all fetched origin refs and current PR head for strict same-surface closure artifacts and finds none; canonical O_H/action, physical C_ss/C_sH/C_HH pole rows, W/Z response/covariance rows with an allowed absolute pin, Schur/scalar-LSZ authority, and neutral H3/H4 authority remain absent."
+proposal_allowed_reason: "Block109 changes no physics premise. It audits the active objective after Block108, rejects chunks/manifests/all-ref scans/literature/path names as proxy completion, and selects the next admissible artifact family: accepted same-surface EW/Higgs action or canonical O_H certificate followed by strict physical C_ss/C_sH/C_HH pole rows."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness and FV/IR authority; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block108 confirms the current and fetched origin surfaces contain no strict same-surface artifact in those families."
+hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness and FV/IR authority; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block109 selects the O_H/action plus source-Higgs pole-row family as the next highest-value genuine artifact target; no current artifact exists."
 minimal_allowed_premises:
+  - "block109 closure-root frontier selector as open/checkpoint status only; it records a prompt-to-artifact completion audit, rejects proxy completion, selects accepted same-surface O_H/action plus strict C_ss/C_sH/C_HH pole rows as the next artifact family, and preserves all claim firewalls"
   - "block108 all-ref closure-artifact rescan as open/checkpoint status only; it records a clean-clone scan over 799 fetched origin refs, admits no strict same-surface artifact, treats FMS/lattice-Higgs literature as non-authoritative route context only, and preserves all claim firewalls"
   - "block107 source-Higgs time-kernel manifest idle refresh as bounded support only; it removes stale active-worker state, records active_process_rows=[], preserves distinct no-resume future row commands, and still forbids launch/closure without canonical O_H or an equivalent physical neutral identity"
   - "block106 neutral multiplicity intake refresh as bounded support only; the runner now follows the current action-first/FMS source-Higgs route selector while preserving strict candidate obligations, and the same-surface neutral multiplicity-one candidate remains rejected with no canonical O_H, no C_ss/C_sH/C_HH pole rows, no W/Z response, and no retained/proposed_retained closure"

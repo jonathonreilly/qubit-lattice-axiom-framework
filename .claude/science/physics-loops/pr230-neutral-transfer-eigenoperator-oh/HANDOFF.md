@@ -7,6 +7,45 @@ Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
 
+## Block109 Closure-Root Frontier Selector
+
+Block109 runs a prompt-to-artifact completion audit for the active PR230
+objective after Block108.  It verifies that support production is complete and
+idle, but rejects chunk completion, manifests, all-ref scans, path names, and
+literature as proxy physics closure.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block109_closure_root_frontier_selector.py`
+- `outputs/yt_pr230_block109_closure_root_frontier_selector_2026-05-17.json`
+- `docs/YT_PR230_BLOCK109_CLOSURE_ROOT_FRONTIER_SELECTOR_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block109 closure-root frontier selector PASS=10 FAIL=0
+campaign status PASS=429 FAIL=0
+assumption/import stress PASS=112 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors
+audit pipeline complete; generated docs/audit churn restored
+git diff --check OK
+```
+
+Honest status: open / route-frontier selector only.  The selected next
+artifact family is accepted same-surface EW/Higgs action or canonical `O_H`
+certificate, followed by production physical Euclidean `C_ss/C_sH/C_HH(tau)`
+pole rows with Gram, covariance, threshold, and FV/IR authority.
+
+Exact next action: do not launch noncanonical time-kernel rows or replay
+finite-row promotion.  Produce the accepted `O_H`/action artifact, then strict
+source-Higgs pole rows, or pivot only to a strict W/Z, Schur/LSZ, or neutral
+H3/H4 artifact with its listed roots.
+
 ## Block108 All-Ref Closure-Artifact Rescan
 
 Block108 ran from a fresh clean clone after the previous worktree reported

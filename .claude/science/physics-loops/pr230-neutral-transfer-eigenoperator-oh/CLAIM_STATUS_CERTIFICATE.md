@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block108_all_ref_closure_artifact_rescan`.
+Current block: `block109_closure_root_frontier_selector`.
 
 ```yaml
-actual_current_surface_status: open / Block108 all-ref closure-artifact rescan; positive closure not achieved and no current/fetched strict same-surface artifact is admitted
+actual_current_surface_status: open / Block109 closure-root frontier selector; positive closure not achieved and next admissible work is a genuine same-surface O_H/action plus source-Higgs pole-row artifact
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block108 changes no physics premise. It scans all fetched origin refs and current PR head for strict same-surface closure artifacts and finds none; canonical O_H/action, physical C_ss/C_sH/C_HH pole rows, W/Z response/covariance rows with an allowed absolute pin, Schur/scalar-LSZ authority, and neutral H3/H4 authority remain absent."
+proposal_allowed_reason: "Block109 changes no physics premise. It audits the active objective after Block108, rejects chunks/manifests/all-ref scans/literature/path names as proxy completion, and selects the next admissible artifact family: accepted same-surface EW/Higgs action or canonical O_H certificate followed by strict physical C_ss/C_sH/C_HH pole rows."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,14 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block109 runs a prompt-to-artifact completion audit for the active PR230
+   objective after Block108.  It confirms that support production is complete
+   and idle, but that no strict current artifact is present and aggregate
+   gates still deny proposal wording.  The selected next artifact family is an
+   accepted same-surface EW/Higgs action or canonical `O_H` certificate, then
+   production physical Euclidean `C_ss/C_sH/C_HH(tau)` pole rows with Gram,
+   covariance, threshold, and FV/IR authority.  This is route selection, not
+   physics evidence.
 0. Block108 runs a clean-clone all-ref closure-artifact rescan after the final
    chunks and Block107.  It scanned 799 fetched origin refs plus the current
    PR head and found no strict same-surface closure artifact: no canonical

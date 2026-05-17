@@ -64,6 +64,16 @@ Do not reopen on path names, branch names, literature names, or finite-row
 promotion. Reopen only when one listed same-surface artifact exists and the
 aggregate gates rerun cleanly.
 
+Block109 turns the post-Block108 state into a prompt-to-artifact completion
+audit and route-frontier selector. It keeps the ranking unchanged and selects
+accepted same-surface EW/Higgs action or canonical `O_H`, followed by strict
+physical Euclidean `C_ss/C_sH/C_HH(tau)` pole rows, as the next clean artifact
+family. This is a selector/checkpoint only: no time-kernel launch, chunk
+completion, all-ref scan, path name, literature bridge, or finite-row replay is
+closure evidence. Fallbacks remain strict W/Z response rows with accepted
+action and allowed absolute pin, strict Schur/scalar-LSZ authority, or neutral
+H3/H4 physical-transfer/source-coupling authority.
+
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but
 it does not change the queue ranking: the rows are still same-source `C_ss`

@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py
-runner_sha256: c16fe3d4ea43b2c2218afb1862169795f929ea72d64ae0ff1185e7940bdd7f63
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 139.11
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:18:58.463253+00:00
+# ---
 ======================================================================================================================
 GAUGE-VACUUM PLAQUETTE FIRST-SECTOR MINIMAL-BULK COMPLETION 3D+1 REDUCED-PACKET COMPLEX-GIVENS SELECTOR
 ======================================================================================================================
@@ -43,5 +40,8 @@ RESULT
 
 PASS=5 FAIL=0
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 209.6
+# timed_out: False
+# finished: 2026-05-17T17:22:28.089488+00:00

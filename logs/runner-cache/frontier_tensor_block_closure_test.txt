@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_tensor_block_closure_test.py
-runner_sha256: e55ca5b008537f95d376e34ed3edc892f71f0d05e1037b1badc4b28eed84fb1a
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 10.14
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_tensor_block_closure_test.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.828111+00:00
+# ---
 Minimal rank-two tensor block closure test
 ==============================================================================
 exact local O_h:
@@ -35,5 +32,8 @@ Classified checks:
   [BOUNDED] PASS: cross-family a_star mismatch confirms non-universality (a_rel=8.970e-01 >= 0.05)
   [BOUNDED] PASS: non-universality across audited restricted class (at least one of kernel/eta/a_star differs by >=5%)
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 18.1
+# timed_out: False
+# finished: 2026-05-17T17:19:55.912628+00:00

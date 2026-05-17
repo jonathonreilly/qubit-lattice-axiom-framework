@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -253237,8 +253236,8 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2203,
-    "re_audit_required": 1,
+    "preserved_existing": 2204,
+    "re_audit_required": 0,
     "row_count": 2248,
     "seeded_new": 0
   }

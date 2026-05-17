@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py
-runner_sha256: 5979aec9861b257203962d08052739fc1cafdf0c2d3d05c629dfef97fa4899a3
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 68.13
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.823560+00:00
+# ---
 ========================================================================================
 DM LEPTOGENESIS PMNS STATIONARY CP INCOMPATIBILITY THEOREM
 ========================================================================================
@@ -60,5 +57,8 @@ RESULT
 
 PASS=14 FAIL=0
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 109.6
+# timed_out: False
+# finished: 2026-05-17T17:21:27.454998+00:00

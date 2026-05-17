@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_quark_up_amplitude_native_affine_no_go.py
-runner_sha256: 5ebc7df2190c370c4d115978f493144f68d20a62eb2ec4dceda6da02903d4d22
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 53.08
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_quark_up_amplitude_native_affine_no_go.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.837693+00:00
+# ---
 ========================================================================
   FRONTIER: Quark Up-Amplitude Native Affine No-Go
 ========================================================================
@@ -93,5 +90,8 @@ PART 3: Summary
   TOTAL: PASS=7, FAIL=0
 ========================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 96.1
+# timed_out: False
+# finished: 2026-05-17T17:21:13.951523+00:00

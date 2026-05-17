@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
-runner_sha256: 36136c7d46fe9eed27c62ab5427c38252e61f9ff952f3187d5f479f22686e4df
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 38.98
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.678763+00:00
+# ---
 ========================================================================================
 DM FULL CLOSURE SAME-SURFACE NUMERATOR SELECTOR BOUNDARY
 ========================================================================================
@@ -60,5 +57,8 @@ PART 3: PACKET-SCOPE ENDPOINT DISTINCTNESS
 SUMMARY: PASS=8 FAIL=0
 ========================================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 104.7
+# timed_out: False
+# finished: 2026-05-17T17:21:13.400052+00:00

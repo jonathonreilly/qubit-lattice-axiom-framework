@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_higgs_mass_derived.py
-runner_sha256: 4d1f4f0eeeb3d6e9ec00c0ca6809e2f60d01bb75eabd92134c893e8ce9d1980d
-timeout_sec: 1800
-exit_code: 1
-elapsed_sec: 408.06
-status: nonzero_exit
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_higgs_mass_derived.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:18:40.526138+00:00
+# ---
 Higgs Mass: What Is Derived vs What Is Imported
 ==============================================================================
 A brutally honest assessment of the framework's Higgs mass prediction.
@@ -279,9 +276,12 @@ SYNTHESIS: DERIVATION STATUS OF THE HIGGS MASS
 
   Global PASS/FAIL: 7 passed, 2 failed
 
-  Runtime: 406.9s
+  Runtime: 407.9s
   Script: scripts/frontier_higgs_mass_derived.py
   Self-contained: numpy + scipy only
 
------ stderr -----
-
+# ---
+# exit_code: 1
+# elapsed_seconds: 408.4
+# timed_out: False
+# finished: 2026-05-17T17:25:28.963744+00:00

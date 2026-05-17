@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
-runner_sha256: a8381ebd8cd71fc329464620bbb4f0c057ac056c8d4d3813c7cfc152b7f2717d
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 99.40
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.686986+00:00
+# ---
 ========================================================================================
 DM FULL CLOSURE SAME-SURFACE THERMAL BOUNDING THEOREM
 ========================================================================================
@@ -64,5 +61,8 @@ BOTTOM LINE
 SUMMARY: PASS=9 FAIL=0
 ========================================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 192.7
+# timed_out: False
+# finished: 2026-05-17T17:22:41.346564+00:00

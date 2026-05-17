@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_yt_bridge_uv_class_uniqueness.py
-runner_sha256: 6a68629fdbd29b6997b2f2c65344d55a008f555267c4227ae5a4e1ac4a9f23e5
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 116.92
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_yt_bridge_uv_class_uniqueness.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:18:44.299280+00:00
+# ---
 ==============================================================================
 y_t BRIDGE UV CLASS UNIQUENESS
 ==============================================================================
@@ -64,8 +61,11 @@ This remains a scanned proxy-family certificate, not a proof over the
 full microscopic bridge space.
 ==============================================================================
 FINAL TALLY: 9 PASS / 0 FAIL
-Elapsed: 116.47 s
+Elapsed: 160.18 s
 ==============================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 160.9
+# timed_out: False
+# finished: 2026-05-17T17:21:25.209837+00:00

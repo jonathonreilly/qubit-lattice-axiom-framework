@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.py
-runner_sha256: ef506db367a632f7fd721dc10cfa80a07a7e7132899f7613dce04c374f591683
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 129.05
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.829073+00:00
+# ---
 ======================================================================================================================
 GAUGE-VACUUM PLAQUETTE FIRST-SECTOR MINIMAL-BULK COMPLETION 3D+1 LINE CLOSURE ENDPOINT
 ======================================================================================================================
@@ -37,5 +34,8 @@ RESULT
 
 PASS=6 FAIL=0
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 209.8
+# timed_out: False
+# finished: 2026-05-17T17:23:07.620136+00:00

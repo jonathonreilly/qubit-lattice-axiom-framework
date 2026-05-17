@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
-runner_sha256: 77b1d5788a7ea55cb0d6aa053878e817bea6fb313fdb4dcc3a8af87b2fc24741
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 64.65
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.695097+00:00
+# ---
 ========================================================================================
 DM LEPTOGENESIS PMNS MULTISTART SELECTOR SUPPORT
 ========================================================================================
@@ -64,5 +61,8 @@ RESULT
 
 PASS=5  FAIL=0
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 104.3
+# timed_out: False
+# finished: 2026-05-17T17:21:12.995073+00:00

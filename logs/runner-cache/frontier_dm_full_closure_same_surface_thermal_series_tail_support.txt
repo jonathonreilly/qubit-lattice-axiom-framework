@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py
-runner_sha256: 841ece80f8f33d54276bf4e170d62c9fe97f55360ded1777c338b77ac161c13c
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 116.87
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.689107+00:00
+# ---
 ========================================================================================
 DM FULL CLOSURE SAME-SURFACE THERMAL SERIES/TAIL SUPPORT
 ========================================================================================
@@ -55,5 +52,8 @@ BOTTOM LINE
 SUMMARY: PASS=13 FAIL=0
 ========================================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 164.1
+# timed_out: False
+# finished: 2026-05-17T17:22:12.769603+00:00

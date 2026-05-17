@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_tensor_support_center_excess_law.py
-runner_sha256: c5cbe0a90df79c0207e9882d63e6c7081d667d47a6158f84ce85622aab3c5e7d
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 148.60
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_tensor_support_center_excess_law.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:17:55.081135+00:00
+# ---
 Support-side A1 center-excess law for the tensor frontier
 ==============================================================================
 Unit-charge A1 endpoint support potentials:
@@ -59,5 +56,8 @@ SUMMARY
 PASS=5 FAIL=0 TOTAL=5
 All checks passed.
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 149.2
+# timed_out: False
+# finished: 2026-05-17T17:20:24.266882+00:00

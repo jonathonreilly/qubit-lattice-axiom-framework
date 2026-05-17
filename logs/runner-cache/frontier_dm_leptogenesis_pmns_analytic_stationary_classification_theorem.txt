@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py
-runner_sha256: ce1b63f344290b1a90aa9367cbefa3d7e71cb4dfb62ee1708ed45b914f245756
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 64.69
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.693205+00:00
+# ---
 ========================================================================================
 DM LEPTOGENESIS PMNS ANALYTIC STATIONARY CLASSIFICATION THEOREM
 ========================================================================================
@@ -132,5 +129,8 @@ PART 4: BOTTOM LINE
 SUMMARY: PASS=14 FAIL=0
 ========================================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 104.4
+# timed_out: False
+# finished: 2026-05-17T17:21:13.091528+00:00

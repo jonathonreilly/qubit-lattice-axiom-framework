@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py
-runner_sha256: 980b05ccd3991d3228a46970ae3050d52aaa48890a9fa619813c70abd6c4584d
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 66.20
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.695520+00:00
+# ---
 ========================================================================================
 DM LEPTOGENESIS PMNS REDUCTION-EXHAUSTION THEOREM
 ========================================================================================
@@ -113,5 +110,8 @@ RESULT
 
 PASS=9  FAIL=0
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 105.6
+# timed_out: False
+# finished: 2026-05-17T17:21:14.339754+00:00

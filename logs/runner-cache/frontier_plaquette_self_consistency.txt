@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_plaquette_self_consistency.py
-runner_sha256: de9d49c8c4b2691a696fda2d137679840e7724dcf3d4ff033ba5684cf0afb4fc
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 102.68
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_plaquette_self_consistency.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:17:42.357622+00:00
+# ---
 ========================================================================
 Plaquette Self-Consistency: <P> as a Derived Same-Surface Constant
 ========================================================================
@@ -23,10 +20,10 @@ THEOREM: <P>(beta=6, SU(3), 4D) ~= 0.5934 is a uniquely determined
 === Part 2: multi-volume MC at beta = 6 ===
 
   Running L = 4 (4^4 sites)...
-    <P> = 0.621085 +/- 0.001231  (acc = 0.38, 11.5s)
+    <P> = 0.621085 +/- 0.001231  (acc = 0.38, 3.6s)
   [PASS] [BOUNDED] L=4 plaquette consistent with canonical reference  (<P> = 0.6211, ref = 0.5934, rel = +4.67%)
   Running L = 6 (6^4 sites)...
-    <P> = 0.611159 +/- 0.000875  (acc = 0.38, 48.5s)
+    <P> = 0.611159 +/- 0.000875  (acc = 0.38, 23.0s)
   [PASS] [BOUNDED] L=6 plaquette consistent with canonical reference  (<P> = 0.6112, ref = 0.5934, rel = +2.99%)
   [PASS] [BOUNDED] larger symmetric volume moves toward the canonical plaquette value  (|Delta|_L4 = 0.0277, |Delta|_L6 = 0.0178)
 
@@ -66,5 +63,8 @@ THEOREM: <P>(beta=6, SU(3), 4D) ~= 0.5934 is a uniquely determined
 SUMMARY: PASS=16  FAIL=0
 ========================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 49.6
+# timed_out: False
+# finished: 2026-05-17T17:18:31.974723+00:00

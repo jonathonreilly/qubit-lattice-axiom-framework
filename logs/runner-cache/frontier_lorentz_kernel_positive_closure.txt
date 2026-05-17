@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_lorentz_kernel_positive_closure.py
-runner_sha256: 87d3b110b489689654e346ae99257ea23f794d6ce3da3dd1d948ada88586552f
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 63.17
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_lorentz_kernel_positive_closure.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:17:47.576885+00:00
+# ---
 ==============================================================================
 Positive Kernel Closure as Derived Corollary of Retained H_lat
 ==============================================================================
@@ -141,5 +138,8 @@ derived corollary of retained H_lat + standard QM (Stone's theorem).
 No new primitives introduced. Directional measure excluded by real
 numerical verifier (best-fit residual bounded away from zero).
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 31.9
+# timed_out: False
+# finished: 2026-05-17T17:18:19.442114+00:00

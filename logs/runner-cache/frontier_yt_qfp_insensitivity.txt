@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_yt_qfp_insensitivity.py
-runner_sha256: 4079845bdd84897ae063aed1b4af7a4ef6f8e26bb017b141a8d1fbb8f5972f96
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 498.26
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_yt_qfp_insensitivity.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:17:46.020322+00:00
+# ---
 ==============================================================================
 QFP INSENSITIVITY THEOREM: VERIFICATION
 ==============================================================================
@@ -351,9 +348,12 @@ FINAL SUMMARY
 
   Tests: 14 PASS, 0 FAIL
 
-  Elapsed: 497.6s
+  Elapsed: 496.9s
 
   All tests passed.
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 497.6
+# timed_out: False
+# finished: 2026-05-17T17:26:03.647684+00:00

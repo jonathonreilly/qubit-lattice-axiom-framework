@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_pns_attack_cascade.py
-runner_sha256: 0c43014ba990349a314df52217703bd756e2348ebc52ef52cb9d84472e000eb8
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 105.01
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_pns_attack_cascade.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.816521+00:00
+# ---
 
 T1: Attack vector 1 — eigenvalue monotonicity (INCONCLUSIVE)
   PASS: Eigenvalue 0 NOT monotone (rules out vector 1)  [min=-1.9846, max=-1.2872]
@@ -79,5 +76,8 @@ TOTAL: PASS=34 FAIL=0
 STATUS: ALL PASS — PNS attack cascade complete
 ============================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 156.0
+# timed_out: False
+# finished: 2026-05-17T17:22:13.797660+00:00

@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py
-runner_sha256: e4c3b6f25c5a9494e0362269a93014e51a6857ab7908d9108d18863882aa5d3e
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 68.14
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:18:58.451273+00:00
+# ---
 ========================================================================================
 DM WILSON DIRECT-DESCENDANT CANONICAL PATH STATUS AUDIT
 ========================================================================================
@@ -77,5 +74,8 @@ SUMMARY: PASS=25 FAIL=0
 VERDICT: PATH STILL CHOSEN
 ========================================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 77.4
+# timed_out: False
+# finished: 2026-05-17T17:20:15.881493+00:00

@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_atomic_hydrogen_helium_probe.py
-runner_sha256: a00f965a332955609acf9032545bcdaf2aff3e9cbd6cfc35d05e274beb3ce0b7
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 95.00
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_atomic_hydrogen_helium_probe.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.676596+00:00
+# ---
 ==============================================================================
 HYDROGEN  (Z = 1)
   grid: n_grid = 8000, r_max = 200.0 Bohr
@@ -45,5 +42,8 @@ It does NOT use any Cl(3)-on-Z^3 framework input.
 See docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md for scope and gap map.
 ==============================================================================
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 183.3
+# timed_out: False
+# finished: 2026-05-17T17:22:31.956407+00:00

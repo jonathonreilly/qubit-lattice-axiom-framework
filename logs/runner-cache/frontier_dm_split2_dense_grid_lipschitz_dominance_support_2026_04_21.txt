@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21.py
-runner_sha256: 33e1388ae18ab8d17ab2d63f9b4ca04759384d0de94c00f3d3f084dbfec15f6d
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 540.45
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.819038+00:00
+# ---
 
 ========================================================================================
 Split-2 upper-face dense-grid dominance support
@@ -21,7 +18,7 @@ Box analysis: CAP_BOX
   delta: [1.1835, 1.1935]
   slack: [0.0145, 0.0245]
   grid:  51 × 51 × 51 = 132,651 samples
-  grid scan time: 272.5s
+  grid scan time: 274.9s
   n_feasible (Λ_+ ≤ Λ_+*): 40,193 (30.3%)
   max η on lower-repair grid: 0.884524150717
   max η point: (-0.14, 1.1885, 0.019700000000000002)
@@ -31,7 +28,7 @@ Box analysis: CAP_BOX
   certified upper bound on η_best: 0.884553160564
   margin to transport closure (η=1): 0.115446839436
   running 40-seed optimization to search for hidden rivals...
-  seed-optimization time: 13.2s
+  seed-optimization time: 7.9s
   best η found by seeded optimization: 0.884530446113
   best point: (-0.1400000013639935, 1.1884204555828939, 0.021331681869516707)
 
@@ -42,7 +39,7 @@ Box analysis: ENDPOINT_BOX
   delta: [1.1839, 1.1890]
   slack: [0.0000, 0.0050]
   grid:  51 × 51 × 51 = 132,651 samples
-  grid scan time: 239.0s
+  grid scan time: 124.6s
   n_feasible (Λ_+ ≤ Λ_+*): 80,855 (61.0%)
   max η on lower-repair grid: 0.883985022069
   max η point: (-0.14, 1.188898, 0.005)
@@ -52,7 +49,7 @@ Box analysis: ENDPOINT_BOX
   certified upper bound on η_best: 0.884005432319
   margin to transport closure (η=1): 0.115994567681
   running 40-seed optimization to search for hidden rivals...
-  seed-optimization time: 13.9s
+  seed-optimization time: 4.9s
   best η found by seeded optimization: 0.883987000125
   best point: (-0.14000776137314835, 1.1889292107690035, 0.004999999192287916)
 
@@ -108,5 +105,8 @@ VERDICT:
   theorem target. Full rigorous enclosure of the transport pipeline
   remains open.
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 414.0
+# timed_out: False
+# finished: 2026-05-17T17:26:31.849116+00:00

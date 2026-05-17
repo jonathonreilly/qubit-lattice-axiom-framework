@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py
-runner_sha256: 13848c50c3416b9ed87a03a17969639601620c3560ed228214a21af69e80a647
-timeout_sec: 600
-exit_code: 0
-elapsed_sec: 301.70
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_neutrino_source_surface_split2_lower_repair_upper_face_extremals_candidate.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.817738+00:00
+# ---
 ========================================================================================
 DM NEUTRINO SOURCE-SURFACE SPLIT-2 LOWER-REPAIR UPPER-FACE EXTREMALS CANDIDATE
 ========================================================================================
@@ -57,5 +54,8 @@ RESULT
 
 SUMMARY: PASS=13 FAIL=0
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 276.5
+# timed_out: False
+# finished: 2026-05-17T17:24:14.325887+00:00

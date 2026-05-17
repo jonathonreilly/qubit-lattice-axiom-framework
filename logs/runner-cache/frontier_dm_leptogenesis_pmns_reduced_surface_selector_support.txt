@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py
-runner_sha256: de2e333ffacbbaea08c0719e38729fbf4063eb10a1ebe2a14e9ae4b0bcc051ad
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 94.68
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:28.690886+00:00
+# ---
 ========================================================================================
 DM LEPTOGENESIS PMNS REDUCED-SURFACE SELECTOR SUPPORT
 ========================================================================================
@@ -73,5 +70,8 @@ RESULT
 
 PASS=7  FAIL=0
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 187.2
+# timed_out: False
+# finished: 2026-05-17T17:22:35.854471+00:00

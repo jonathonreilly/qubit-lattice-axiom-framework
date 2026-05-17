@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_wilson_mu2_distance_sweep.py
-runner_sha256: cac50444e3d13a6e5e0a34bfc890f5f8288b20eb57dff8228a37327d6548d85b
-timeout_sec: 1800
-exit_code: 0
-elapsed_sec: 190.53
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_wilson_mu2_distance_sweep.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:19:37.834896+00:00
+# ---
 ============================================================================================
 WILSON OPEN-LATTICE DISTANCE-LAW SWEEP VS MU^2
 ============================================================================================
@@ -26,7 +23,7 @@ mu^2 sweep=(0.22, 0.05, 0.01, 0.005, 0.001)
   side=15 d=4: a_mut=-0.245780 SNR=8.48 [ATTRACT] [CLEAN] dsep SH=-0.3381 SELF=+0.0043 FREE=-0.0002
   side=15 d=5: a_mut=-0.113977 SNR=8.16 [ATTRACT] [CLEAN] dsep SH=-0.1478 SELF=+0.0106 FREE=-0.0025
   side=15 d=6: a_mut=-0.056342 SNR=8.12 [ATTRACT] [CLEAN] dsep SH=-0.0655 SELF=+0.0127 FREE=-0.0026
-  fit: |a_mut| ~ d^-3.315  (R^2=0.9960, clean=12/12, 46.8s)
+  fit: |a_mut| ~ d^-3.315  (R^2=0.9960, clean=12/12, 84.1s)
 
 --- mu^2=0.05 ---
   side=11 d=3: a_mut=-0.760193 SNR=8.21 [ATTRACT] [CLEAN] dsep SH=-0.9288 SELF=+0.0992 FREE=-0.0283
@@ -41,7 +38,7 @@ mu^2 sweep=(0.22, 0.05, 0.01, 0.005, 0.001)
   side=15 d=4: a_mut=-0.398873 SNR=6.68 [ATTRACT] [CLEAN] dsep SH=-0.5297 SELF=+0.0310 FREE=-0.0002
   side=15 d=5: a_mut=-0.227491 SNR=6.20 [ATTRACT] [CLEAN] dsep SH=-0.2672 SELF=+0.0519 FREE=-0.0025
   side=15 d=6: a_mut=-0.140855 SNR=6.14 [ATTRACT] [CLEAN] dsep SH=-0.1349 SELF=+0.0632 FREE=-0.0026
-  fit: |a_mut| ~ d^-2.392  (R^2=0.9978, clean=12/12, 35.2s)
+  fit: |a_mut| ~ d^-2.392  (R^2=0.9978, clean=12/12, 63.6s)
 
 --- mu^2=0.01 ---
   side=11 d=3: a_mut=-0.839942 SNR=7.89 [ATTRACT] [CLEAN] dsep SH=-0.9693 SELF=+0.1555 FREE=-0.0283
@@ -56,7 +53,7 @@ mu^2 sweep=(0.22, 0.05, 0.01, 0.005, 0.001)
   side=15 d=4: a_mut=-0.480072 SNR=6.32 [ATTRACT] [CLEAN] dsep SH=-0.6033 SELF=+0.0707 FREE=-0.0002
   side=15 d=5: a_mut=-0.300215 SNR=5.74 [ATTRACT] [CLEAN] dsep SH=-0.3188 SELF=+0.1011 FREE=-0.0025
   side=15 d=6: a_mut=-0.206494 SNR=5.70 [ATTRACT] [CLEAN] dsep SH=-0.1679 SELF=+0.1232 FREE=-0.0026
-  fit: |a_mut| ~ d^-1.992  (R^2=0.9984, clean=12/12, 35.7s)
+  fit: |a_mut| ~ d^-1.992  (R^2=0.9984, clean=12/12, 44.1s)
 
 --- mu^2=0.005 ---
   side=11 d=3: a_mut=-0.852256 SNR=7.85 [ATTRACT] [CLEAN] dsep SH=-0.9735 SELF=+0.1660 FREE=-0.0283
@@ -71,7 +68,7 @@ mu^2 sweep=(0.22, 0.05, 0.01, 0.005, 0.001)
   side=15 d=4: a_mut=-0.494767 SNR=6.27 [ATTRACT] [CLEAN] dsep SH=-0.6136 SELF=+0.0807 FREE=-0.0002
   side=15 d=5: a_mut=-0.314301 SNR=5.68 [ATTRACT] [CLEAN] dsep SH=-0.3264 SELF=+0.1128 FREE=-0.0025
   side=15 d=6: a_mut=-0.220136 SNR=5.65 [ATTRACT] [CLEAN] dsep SH=-0.1729 SELF=+0.1374 FREE=-0.0026
-  fit: |a_mut| ~ d^-1.927  (R^2=0.9985, clean=12/12, 35.7s)
+  fit: |a_mut| ~ d^-1.927  (R^2=0.9985, clean=12/12, 31.2s)
 
 --- mu^2=0.001 ---
   side=11 d=3: a_mut=-0.862648 SNR=7.81 [ATTRACT] [CLEAN] dsep SH=-0.9765 SELF=+0.1752 FREE=-0.0283
@@ -86,7 +83,7 @@ mu^2 sweep=(0.22, 0.05, 0.01, 0.005, 0.001)
   side=15 d=4: a_mut=-0.507894 SNR=6.24 [ATTRACT] [CLEAN] dsep SH=-0.6220 SELF=+0.0904 FREE=-0.0002
   side=15 d=5: a_mut=-0.327099 SNR=5.63 [ATTRACT] [CLEAN] dsep SH=-0.3326 SELF=+0.1239 FREE=-0.0025
   side=15 d=6: a_mut=-0.232758 SNR=5.61 [ATTRACT] [CLEAN] dsep SH=-0.1771 SELF=+0.1510 FREE=-0.0026
-  fit: |a_mut| ~ d^-1.871  (R^2=0.9986, clean=12/12, 36.4s)
+  fit: |a_mut| ~ d^-1.871  (R^2=0.9986, clean=12/12, 29.2s)
 
 ============================================================================================
 SUMMARY
@@ -97,5 +94,8 @@ mu^2=   0.01: alpha=-1.992  R^2=0.9984  clean=12/12
 mu^2=  0.005: alpha=-1.927  R^2=0.9985  clean=12/12
 mu^2=  0.001: alpha=-1.871  R^2=0.9986  clean=12/12
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 252.8
+# timed_out: False
+# finished: 2026-05-17T17:23:50.634795+00:00

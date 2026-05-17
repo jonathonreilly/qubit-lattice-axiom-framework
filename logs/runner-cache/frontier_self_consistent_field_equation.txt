@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_self_consistent_field_equation.py
-runner_sha256: 9714bfc547816059745b009ddba47db626444270e34e00aae08319cd2b5d1da2
-timeout_sec: 600
-exit_code: 0
-elapsed_sec: 27.08
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_self_consistent_field_equation.py
+# timeout_seconds: 60
+# started: 2026-05-17T17:17:16.016217+00:00
+# ---
 ================================================================================
 SELF-CONSISTENCY FORCES POISSON FIELD EQUATION
 ================================================================================
@@ -173,7 +170,7 @@ ASSESSMENT:
   Self-consistency PREFERS unscreened Poisson on this surface but does not
   uniquely force it at this lattice size.
 
-Total runtime: 27s (0.4 min)
+Total runtime: 9s (0.2 min)
 
 ================================================================================
 SAFE CLAIMS
@@ -206,5 +203,8 @@ PASS (C): Poisson self-consistent iteration converged on N=20 and N=24 with attr
 PASS (C): Tested non-screened alternatives completed; Poisson is the only tested case with convergent attractive near-Newtonian output.
 PASS (C): Screened-Poisson sweep completed; positive mu^2 cases drift away from the beta=1 target on the tested grid.
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 9.7
+# timed_out: False
+# finished: 2026-05-17T17:17:25.757243+00:00

@@ -1,11 +1,264 @@
-===== runner cache v1 =====
-runner: scripts/frontier_action_normalization.py
-runner_sha256: 328523dde25966195f644b4ef62fc980774a48d06578f84377605680a03295f5
-timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.02
-status: timeout
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_action_normalization.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:17:59.787228+00:00
+# ---
+================================================================================
+ACTION NORMALIZATION: CONVENTION-LOCKED COUPLING COEFFICIENT
+================================================================================
 
------ stderr -----
+Question: Is the coefficient c in S = L(1 - c*f) arbitrary?
+Answer: It is not convention-free; once the f/Phi identification
+and Poisson source normalization are named, c is convention-locked.
 
+The reviewer's objection: 'You chose S = L(1-f). If you chose S = L(1-2f),
+you would get a different metric. The coefficient is arbitrary.'
+
+Our narrowed response: the earlier convention-free light-bending
+argument was wrong. PPN gamma=1 holds for any positive c under
+Phi=c*f/2, so the coefficient is fixed only after choosing the
+field-identification and Poisson-normalization convention.
+
+================================================================================
+TEST 1: VARY COUPLING CONSTANT c IN S = L(1 - c*f)
+================================================================================
+Grid: 20^3, k=5.0, G=1.0, sigma=2.0
+
+Purpose: show self-consistency converges for a RANGE of c values.
+This means convergence alone does NOT fix c. We need an explicit
+field-identification / source-normalization convention.
+
+     c  Conv  Iters     phi_max   c*phi_max      beta      R2
+--------------------------------------------------------------
+   0.1     Y     12  1.2095e-02  1.2095e-03    1.2798  0.9240
+   0.2     Y     12  1.2096e-02  2.4192e-03    1.2798  0.9240
+   0.5     Y     12  1.2098e-02  6.0490e-03    1.2799  0.9240
+   1.0     Y     12  1.2102e-02  1.2102e-02    1.2802  0.9241
+   2.0     Y     19  1.1719e-02  2.3437e-02    1.2806  0.9242
+   5.0     Y     34  1.0797e-02  5.3985e-02    1.2816  0.9243
+  10.0     Y     45  9.1909e-03  9.1909e-02    1.2828  0.9245
+
+Observation: ALL values of c converge. Self-consistency alone does NOT
+select a unique c. Larger c requires more iterations (weaker mixing)
+but still converges. The product c*phi_max varies, showing c changes
+the effective coupling strength.
+
+================================================================================
+TEST 2: RESCALING DEGENERACY IN (c, G)
+================================================================================
+
+The self-consistent loop depends on c*G*rho (the effective coupling).
+Rescaling (c, G) -> (c/a, a*G) leaves the product c*G fixed.
+So there is a one-parameter family of equivalent solutions.
+A convention must fix one parameter before c has a definite value.
+
+Checking rescaling degeneracy: (c, G) -> (c/a, a*G)...
+
+     a       c       G     c*G     phi_max   c*phi_max      beta
+-----------------------------------------------------------------
+  0.25    4.00    0.25    1.00  2.9321e-03  1.1728e-02    1.2801
+  0.50    2.00    0.50    1.00  6.0809e-03  1.2162e-02    1.2802
+  1.00    1.00    1.00    1.00  1.2252e-02  1.2252e-02    1.2802
+  2.00    0.50    2.00    1.00  2.4525e-02  1.2262e-02    1.2802
+  4.00    0.25    4.00    1.00  4.9070e-02  1.2267e-02    1.2802
+
+Key observation: c*phi_max is approximately CONSTANT across rescalings.
+The physical quantity is c*f, not f alone. This confirms the degeneracy.
+Convention: after fixing the f/Phi map and source normalization, c has
+a definite value; the rescaling freedom itself does not select it.
+
+================================================================================
+TEST 3: METRIC STRUCTURE (NARROWED -- ANALYTICAL READ)
+================================================================================
+
+The action S = L(1 - c*f) defines an effective metric:
+  ds^2 = -(1 - c*f) dt^2 + (1 - c*f)^{-1} dr^2 + r^2 d Omega^2
+
+In the weak-field limit f << 1:
+  g_tt = -(1 - c*f)    g_rr = 1 + c*f
+
+Identifying Phi = c*f/2 (PPN convention), gamma = 1 holds for any c.
+Light bending in PHI units is therefore (1 + gamma) = 2 for any c.
+
+The 'light factor = 1 + c' formula previously printed here was a
+statement in F-units (that is, with c absorbed into f instead of Phi).
+It does NOT pick out c = 1 as a convention-free observable.
+The earlier 'verification' table that read 'YES' only at c = 1 was
+circular: it just printed 1 + c and tested whether 1 + c = 2.
+
+The honest read: c is fixed by the convention identifying f with the
+standard Newtonian potential Phi and by the chosen Poisson source
+normalization. See TEST 5 / SYNTHESIS for the convention-locked
+statement.
+
+================================================================================
+TEST 4: CONVERGENCE BASIN IN (c, G) PLANE
+================================================================================
+
+Scanning (c, G) pairs. The convergence depends on the product c*G,
+not on c and G independently.
+
+        G=0.1    G=0.2    G=0.5    G=1.0    G=2.0    G=5.0  
+------------------------------------------------------------
+c=0.2   b=1.28   b=1.28   b=1.28   b=1.28   b=1.28   b=1.28 
+c=0.5   b=1.28   b=1.28   b=1.28   b=1.28   b=1.28   b=1.28 
+c=1.0   b=1.28   b=1.28   b=1.28   b=1.28   b=1.28   ~1.28 
+c=2.0   b=1.28   b=1.28   b=1.28   b=1.28   b=1.28   ~1.28 
+c=5.0   b=1.28   b=1.28   b=1.28   b=1.28   ~1.28   ~1.28 
+
+Convergence speed vs c*G (iteration count):
+     c*G       c       G   Iters  Conv
+--------------------------------------
+    0.02     0.2     0.1       5     Y
+    0.04     0.2     0.2       7     Y
+    0.05     0.5     0.1       5     Y
+    0.10     0.2     0.5      10     Y
+    0.10     0.5     0.2       7     Y
+    0.10     1.0     0.1       5     Y
+    0.20     0.2     1.0      12     Y
+    0.20     1.0     0.2       7     Y
+    0.20     2.0     0.1       5     Y
+    0.25     0.5     0.5      10     Y
+    0.40     0.2     2.0      14     Y
+    0.40     2.0     0.2       7     Y
+    0.50     0.5     1.0      12     Y
+    0.50     1.0     0.5      10     Y
+    0.50     5.0     0.1       5     Y
+    1.00     0.2     5.0      16     Y
+    1.00     0.5     2.0      14     Y
+    1.00     1.0     1.0      12     Y
+    1.00     2.0     0.5      10     Y
+    1.00     5.0     0.2       7     Y
+    2.00     1.0     2.0      24     Y
+    2.00     2.0     1.0      19     Y
+    2.50     0.5     5.0      35     Y
+    2.50     5.0     0.5      17     Y
+    4.00     2.0     2.0      39     Y
+    5.00     1.0     5.0      40     N
+    5.00     5.0     1.0      34     Y
+   10.00     2.0     5.0      40     N
+   10.00     5.0     2.0      40     N
+   25.00     5.0     5.0      40     N
+
+================================================================================
+TEST 5: PPN GAMMA AND THE CONVENTION THAT FIXES c
+================================================================================
+
+In the PPN formalism, the metric is:
+  g_tt = -(1 - 2*Phi)   g_rr = (1 + 2*gamma*Phi)
+where gamma = 1 in GR, gamma != 1 in alternative theories.
+
+Our action S = L(1 - c*f). Identifying the lattice scalar f with
+the physical Newtonian potential Phi at convention level:
+  Phi := c*f/2  (i.e., absorb the factor c/2 into the identification)
+Then for any positive c:
+  g_tt = -(1 - c*f) = -(1 - 2*Phi)
+  g_rr = (1/(1-c*f)) ~ 1 + c*f = 1 + 2*Phi
+=> gamma = 1 for any c on this identification.
+
+HONEST READ: PPN gamma=1 holds for any c > 0 once we accept the
+identification Phi = c*f/2. This means gamma alone does NOT fix c.
+The deflection ratio is (1+gamma) = 2 in PHI units, independent of c.
+
+WHAT FIXES c IS THE CONVENTION FOR f ITSELF:
+  Convention A (f = Phi):    requires c = 2 to match Schwarzschild
+                              under the standard Newtonian Poisson source
+  Convention B (S = L(1-f)): the framework's choice (c = 1) absorbs the
+                              factor of 2 into the lattice Poisson source
+                              normalization
+  Convention C (raw lattice f, no Phi identification): c is undetermined
+
+This means the action coefficient c in S = L(1 - c*f) is convention-
+locked, NOT convention-free.
+
+NUMERICAL CHECK: deflection scales with c (sanity check only).
+Note the absolute deflection magnitudes; the analytical (1+c) ratio
+of null-vs-massive cannot be measured by the present propagator,
+which is a single (massive) quantum probe and does not separate
+null and massive deflection.
+
+Massive-probe deflection magnitude vs c (sanity check, NOT a c-fixing test):
+     c      |defl|
+------------------------
+   0.5    0.000290
+   1.0    0.000695
+   2.0    0.001752
+
+Confirms: deflection scales with c (consistent with c entering the physics).
+This sanity check does NOT verify the (1+c) null-vs-massive ratio;
+that is an analytical statement that requires a separate null-ray
+propagator the present runner does not implement.
+
+================================================================================
+SYNTHESIS: c IS CONVENTION-LOCKED, NOT CONVENTION-FREE
+================================================================================
+
+ARGUMENT STRUCTURE:
+
+1. SELF-CONSISTENCY converges for the c values tested.
+   The propagator-Poisson loop converges across the c values in
+   Test 1. This is a numerical observation, NOT a c-fixing argument.
+
+2. RESCALING DEGENERACY: (c, G) -> (c/a, a*G) leaves the dynamics
+   invariant; only the product c*G enters the iteration.
+
+3. PPN gamma = 1 FOR ANY c on the identification Phi = c*f/2.
+   The metric g_tt = -(1 - c*f), g_rr = 1 + c*f gives gamma = 1
+   for any positive c. Thus PPN gamma alone does NOT fix c.
+
+4. WHAT FIXES c IS THE FRAMEWORK CONVENTION ON f:
+   The framework's natural convention is Phi = f (the lattice scalar
+   f IS the Newtonian potential). Under that convention with the
+   standard Newtonian Poisson source nabla^2 f = -4*pi*G*rho, matching
+   g_tt = -(1 - 2*Phi) to -(1 - c*f) forces c = 2.
+   Alternatively, the framework's S = L(1-f) corresponds to c = 1
+   together with a Poisson source rescaled by a factor of 2.
+
+5. NARROW HONEST CLAIM:
+   * The action coefficient c is NOT a free parameter once we fix the
+     identification between the lattice scalar f and the Newtonian
+     potential Phi.
+   * The choice c = 1 corresponds to the convention f = Phi WITH a
+     Poisson source rescaled by a factor of 2 relative to textbook
+     Newtonian, so that S = L(1-f) reproduces Schwarzschild.
+   * The choice c = 2 corresponds to the convention f = Phi WITH the
+     textbook Newtonian Poisson source nabla^2 f = -4*pi*G*rho.
+   * Both choices reproduce Schwarzschild and PPN gamma = 1; the
+     difference is an overall convention choice, not new physics.
+
+This is a NARROWED claim: c is fixed by convention (not by light
+bending). The framework's natural convention does pick out a specific
+c value once we name what f is in terms of Phi and what source
+normalization the Poisson equation uses.
+
+================================================================================
+VERDICT
+================================================================================
+
+NARROWED: The coefficient c in S = L(1 - c*f) is determined by the
+convention used to identify the lattice scalar f with the physical
+Newtonian potential Phi and by the chosen Poisson source normalization.
+
+The reviewer's objection is partially correct: the coefficient is
+convention-dependent, not convention-free. There is a one-parameter
+rescaling family (c, G) -> (c/a, a*G) of equivalent theories.
+
+Once a convention is named, c is determined. With f = Phi and the
+textbook Newtonian source, c = 2. With S = L(1 - f) (i.e., c = 1),
+the Poisson normalization absorbs the missing factor of 2.
+
+EARLIER INTERPRETATION RETRACTED:
+The earlier 'convention-free light bending' argument was incorrect.
+PPN gamma = 1 holds for any c > 0 under the identification Phi = c*f/2,
+so light bending alone does not fix c. The numerical 'deflection ratio'
+table previously printed in this runner (defl(k)/defl(5k)) compared two
+massive probe momenta and had no analytical relation to the (1+c)
+null-vs-massive ratio. That table has been removed.
+
+Total runtime: 77.8s
+
+# ---
+# exit_code: 0
+# elapsed_seconds: 78.2
+# timed_out: False
+# finished: 2026-05-17T17:19:17.941665+00:00

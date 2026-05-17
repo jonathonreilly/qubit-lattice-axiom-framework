@@ -1,11 +1,8 @@
-===== runner cache v1 =====
-runner: scripts/frontier_confinement_string_tension.py
-runner_sha256: db7c178dfd194026d61d06c5f29644b3ad9ac3ba033b89ea11caf74412b8add8
-timeout_sec: 900
-exit_code: 0
-elapsed_sec: 143.14
-status: ok
------ stdout -----
+# AUDIT COMPUTE EXTENDED RUN
+# runner: scripts/frontier_confinement_string_tension.py
+# timeout_seconds: 600
+# started: 2026-05-17T17:17:43.920112+00:00
+# ---
 ========================================================================
 Confinement and String Tension in the Cl(3) / Z³ Framework
 ========================================================================
@@ -80,5 +77,8 @@ SUMMARY: PASS=30  FAIL=0
 All checks passed. SU(3) confinement with √σ ≈ 440 MeV
 is a structural + bounded prediction of the Cl(3)/Z³ framework.
 
------ stderr -----
-
+# ---
+# exit_code: 0
+# elapsed_seconds: 69.2
+# timed_out: False
+# finished: 2026-05-17T17:18:53.136544+00:00

@@ -1,0 +1,179 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_wave11_route_c_doplicher_roberts_reconstruction_external_narrow.py
+runner_sha256: 83ca42d4b36263b77f7f3801d834c84934fbdcc2e941b93a1ad096c4f6dd2d5c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge Wave 11 Route C Doplicher-Roberts reconstruction
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_WAVE11_ROUTE_C_DOPLICHER_ROBERTS_RECONSTRUCTION_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md
+
+==============================================================================
+T1: DR reconstruction theorem statement + 7 premises
+==============================================================================
+  [PASS] note contains DR author/citation: 'S. Doplicher, J. E. Roberts'
+         present=True
+  [PASS] note contains DR author/citation: 'Inventiones Math. 98 (1989), 157-218'
+         present=True
+  [PASS] note contains DR author/citation: 'Commun. Math. Phys. 131 (1990), 51-107'
+         present=True
+  [PASS] note contains DR premise: '(DR-P1) Conjugates'
+         present=True
+  [PASS] note contains DR premise: '(DR-P2) Direct sums'
+         present=True
+  [PASS] note contains DR premise: '(DR-P3) Subobjects'
+         present=True
+  [PASS] note contains DR premise: '(DR-P4) Simple tensor unit'
+         present=True
+  [PASS] note contains DR premise: '(DR-P5) Symmetric braiding'
+         present=True
+  [PASS] note contains DR premise: '(DR-P6) C*-structure'
+         present=True
+  [PASS] note contains DR premise: '(DR-P7) Finite-dimensional Hom'
+         present=True
+  [PASS] note contains DR core content: 'symmetric tensor C*-category'
+         present=True
+  [PASS] note contains DR core content: 'Tannaka-Krein'
+         present=True
+  [PASS] note contains DR core content: 'fiber functor'
+         present=True
+  [PASS] note contains DR core content: 'unique up to isomorphism'
+         present=True
+  [PASS] note contains DR core content: 'Rep_f(G)'
+         present=True
+
+==============================================================================
+T2: Framework staggered superselection components (S0)-(S3)
+==============================================================================
+  [PASS] note contains superselection component: 'G_full  =  Z_2^F  x  U(1)_Q  x  SU(3)_color'
+         present=True
+  [PASS] note contains superselection component: 'Fermion-parity superselection (`Z_2^F`)'
+         present=True
+  [PASS] note contains superselection component: 'FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02'
+         present=True
+  [PASS] note contains superselection component: 'SU(3) color (compact Lie) gauge symmetry'
+         present=True
+  [PASS] note contains superselection component: 'U(1) fermion-number / charge superselection'
+         present=True
+  [PASS] note contains superselection component: 'AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29'
+         present=True
+
+==============================================================================
+T3: DR-symmetric premises symbolic verification on finite-dim Rep
+==============================================================================
+  [PASS] (DR-P1) Conjugates: U(1) charge dual q -> -q, q + q_dual = 0
+         cases (q, q_dual, sum) = [(-2, 2, 0), (-1, 1, 0), (0, 0, 0), (1, -1, 0), (2, -2, 0)]
+  [PASS] (DR-P2) Direct sums: dim(V_a (+) V_b) = dim V_a + dim V_b
+         cases (d_a, d_b, d_sum) = [(1, 1, 2), (1, 2, 3), (2, 2, 4), (1, 3, 4), (2, 3, 5), (3, 4, 7)]
+  [PASS] (DR-P3) Subobjects: idempotents e^2 = e split V = im(e) (+) ker(e)
+         cases (label, idem, dim_im, dim_ker) = [('diag(1,0)', True, 1, 1), ('diag(1,1,0)', True, 2, 1), ('diag(1,0,1,0)', True, 2, 2)]
+  [PASS] (DR-P4) Simple tensor unit: dim End(1_triv) = 1 (= C)
+         dim End(1_triv) = 1
+  [PASS] (DR-P5) Symmetric braiding on even subcat: c^2 = id on dim 2 (x) dim 2
+         c^2 - id = 0
+  [PASS] (DR-P6) C*-structure: A* A is self-adjoint (C*-property prerequisite)
+         A* A - (A* A)^* = 0 on 2x2 sample (norm^2 = max eig = sqrt(5)/2 + 3/2)
+  [PASS] (DR-P7) Finite-dim Hom: U(1) Schur dim Hom(q_a, q_b) in {0, 1}
+         cases (q_a, q_b, dim_Hom) = [(0, 0, 1), (1, 0, 0), (1, 1, 1), (-1, 1, 0), (-1, -1, 1), (2, 2, 1)]
+
+==============================================================================
+T4: Reconstructed group identifications (R1), (R2)
+==============================================================================
+  [PASS] note contains reconstruction identification: 'G_DR  =  U(1)_Q  x  SU(3)_color'
+         present=True
+  [PASS] note contains reconstruction identification: 'G_super  =  Z_2^F  x  U(1)_Q  x  SU(3)_color  =  G_full'
+         present=True
+  [PASS] note contains reconstruction identification: 'Rep(G_full)^{even}'
+         present=True
+  [PASS] note contains reconstruction identification: 'DR super-extension'
+         present=True
+
+==============================================================================
+T5: G-equivariant scalar functionals psi(r) for r G-invariant
+==============================================================================
+  [PASS] det(U (D+J) U^-1) = det(D+J): r(J) G-invariant under unitary G-action
+         det(D + J) - det(U (D + J) U^-1) = 0
+  [PASS] psi(r) G-invariant for psi in {log, sqrt, square, reciprocal} (because r is)
+         cases = [('log', True), ('sqrt', True), ('square', True), ('reciprocal', True)]
+
+==============================================================================
+T6: F_p family — G-equivariant multiplicative, not additive
+==============================================================================
+  [PASS] F_p multiplicative factorization on disjoint blocks (G-equivariant)
+         cases (p, mult_diff, add_diff): [(-2.0, '0', '-1/3'), (-1.0, '0', '-2/3'), (0.5, '0', '-sqrt(3) - sqrt(2) + sqrt(6)'), (1.0, '0', '1'), (2.0, '0', '23'), (3.0, '0', '181')]
+  [PASS] F_p scalar additivity FAILS for all tested p != 0 (DR does not close P1)
+         F_p[J_A (+) J_B] != F_p[J_A] + F_p[J_B] for r_A=2, r_B=3, p in test set
+
+==============================================================================
+T7: F_p is G_DR-equivariant — no_go sharpening
+==============================================================================
+  [PASS] F_p is G_DR-equivariant for all tested p (trivial character)
+         cases (p, action_diff): [(-2.0, '0'), (-1.0, '0'), (0.5, '0'), (1.0, '0'), (2.0, '0'), (3.0, '0')]
+  [PASS] DR reconstruction is compatible with every F_p member (no_go sharpening)
+         every F_p is G-equivariant; DR does not exclude any F_p
+
+==============================================================================
+T8: Four scalar functionals all invoke log; Pattern L (D5) circularity
+==============================================================================
+  [PASS] note invokes log/Pattern L: 'Free energy'
+         present=True
+  [PASS] note invokes log/Pattern L: 'W = log Z'
+         present=True
+  [PASS] note invokes log/Pattern L: 'Negative log trace'
+         present=True
+  [PASS] note invokes log/Pattern L: 'W = -log τ'
+         present=True
+  [PASS] note invokes log/Pattern L: 'Entropy'
+         present=True
+  [PASS] note invokes log/Pattern L: 'Connes-Stormer index'
+         present=True
+  [PASS] note invokes log/Pattern L: 'log'
+         present=True
+  [PASS] note invokes log/Pattern L: 'Pattern L'
+         present=True
+  [PASS] note invokes log/Pattern L: 'Cauchy classifier'
+         present=True
+  [PASS] log r IS additive on disjoint blocks (Cauchy log representative)
+         log(r_A r_B) - log r_A - log r_B = 0
+  [PASS] r^p (p=2) is NOT additive on disjoint blocks
+         r_total^2 - (r_A^2 + r_B^2) = 23
+
+==============================================================================
+T9: Structural analysis — DR Route C is (b) + (c-partial)
+==============================================================================
+  [PASS] note contains structural-analysis string: '(c) plus partial (a-orthogonal)'
+         present=True
+  [PASS] note contains structural-analysis string: '(b) DR reconstructs G but admits `F_p` — sharpens no_go'
+         present=True
+  [PASS] note contains structural-analysis string: '**YES,\n  this is the answer.**'
+         present=True
+  [PASS] note contains structural-analysis string: '**NO.**'
+         present=True
+  [PASS] note contains structural-analysis string: 'does NOT close P1'
+         present=True
+  [PASS] note contains structural-analysis string: 'Pattern L (D5)'
+         present=True
+  [PASS] note contains structural-analysis string: '7th convergent obstruction'
+         present=True
+  [PASS] Parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE is audited_conditional (unaffected)
+         observable_principle_from_axiom_note.effective_status = audited_conditional
+  [PASS] FERMION_PARITY_Z2_GRADING is unaudited (context only, not load-bearing)
+         fermion_parity_z2_grading.effective_status = unaudited
+
+==============================================================================
+T10: Source-note boundary
+==============================================================================
+  [PASS] note declares: '**Claim type:** bounded_theorem'
+         present=True
+  [PASS] note declares: 'Status authority:** independent audit lane only'
+         present=True
+  [PASS] note declares: 'Source-note proposal disclaimer'
+         present=True
+  [PASS] no forbidden overclaim strings
+         hits=[]
+
+=== TOTAL: PASS=62, FAIL=0 ===
+
+----- stderr -----
+

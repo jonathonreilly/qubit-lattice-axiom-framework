@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py
+runner_sha256: bbdd63ad642fc0205744f00f48f710b9826a7bffcc8f4de00bde21ae252291df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+=== Substep-4 AC_phi trace-equipartition bridge ===
+
+[P1] cyclic and circulant structure
+  PASS  C^3 = I
+  PASS  [H, C] = 0 for circulant Hermitian ansatz :: [H,C] = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+  PASS  H = H^dagger (Hermiticity of ansatz) :: H - H^dagger = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+  PASS  non-circulant Hermitian counter-example: [H_bad, C] != 0 :: [diag(0,1,2), C] = [[0, -1, 0], [0, 0, -1], [2, 0, 0]]
+
+[P2] diagonal-entry equality
+  PASS  <e_1 | H | e_1> = a :: diag entry = a
+  PASS  <e_2 | H | e_2> = a :: diag entry = a
+  PASS  <e_3 | H | e_3> = a :: diag entry = a
+  PASS  <e_1|H|e_1> - <e_2|H|e_2> = 0 :: diff = 0
+  PASS  <e_1|H|e_1> - <e_3|H|e_3> = 0 :: diff = 0
+  PASS  <e_2|H|e_2> - <e_3|H|e_3> = 0 :: diff = 0
+
+[P3] trace identity
+  PASS  Tr(H) = 3 a :: Tr(H) = 3*a
+  PASS  <e_1|H|e_1> = Tr(H) / 3
+  PASS  <e_2|H|e_2> = Tr(H) / 3
+  PASS  <e_3|H|e_3> = Tr(H) / 3
+
+[P4] eigenvalue formula and spectrum vs diagonal separation
+  PASS  char poly of H = prod_k (x - (a + b*omega^k + bbar*omega^(-k))) :: diff = 0
+  PASS  three eigenvalues pairwise distinct at a = 3/7, b = 1 + I/2 :: eigvals = [17/7, -sqrt(3)/2 - 4/7, -4/7 + sqrt(3)/2]
+  PASS  diagonal set {a,a,a} != eigenvalue set for generic b != 0 :: diag = [3/7, 3/7, 3/7]; eigs = [-sqrt(3)/2 - 4/7, -4/7 + sqrt(3)/2, 17/7]
+
+[counter-examples]
+  PASS  non-Hermitian commuter: [H_nh, C] = 0 but H_nh != H_nh^dagger :: [H_nh, C] = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]; Hermitian? False
+  PASS  at b = 0: H has single eigenvalue a with multiplicity 3 :: eigvals(b=0) = {a: 3}
+
+=== Summary ===
+PASS=19 FAIL=0
+
+----- stderr -----
+

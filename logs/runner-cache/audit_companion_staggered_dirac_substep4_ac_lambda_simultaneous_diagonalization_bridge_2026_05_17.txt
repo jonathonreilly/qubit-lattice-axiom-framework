@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py
+runner_sha256: b59ec10482b86719df4bd17508a2982bb27557a189586b10798252f370829733
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+=== Substep-4 AC_lambda simultaneous-diagonalization bridge ===
+
+[setup] commuting unitaries
+  PASS  T_1 unitary: T_1^dagger T_1 = I
+  PASS  T_2 unitary: T_2^dagger T_2 = I
+  PASS  T_3 unitary: T_3^dagger T_3 = I
+  PASS  [T_1, T_1] = 0
+  PASS  [T_1, T_2] = 0
+  PASS  [T_1, T_3] = 0
+  PASS  [T_2, T_1] = 0
+  PASS  [T_2, T_2] = 0
+  PASS  [T_2, T_3] = 0
+  PASS  [T_3, T_1] = 0
+  PASS  [T_3, T_2] = 0
+  PASS  [T_3, T_3] = 0
+
+[L1] pairwise distinctness of joint eigenvalue triples
+  PASS  pair (alpha,beta) = (1,2) distinguished by some T_mu :: distinguishing mus = [1, 2]
+  PASS  pair (alpha,beta) = (1,3) distinguished by some T_mu :: distinguishing mus = [1, 3]
+  PASS  pair (alpha,beta) = (2,1) distinguished by some T_mu :: distinguishing mus = [1, 2]
+  PASS  pair (alpha,beta) = (2,3) distinguished by some T_mu :: distinguishing mus = [2, 3]
+  PASS  pair (alpha,beta) = (3,1) distinguished by some T_mu :: distinguishing mus = [1, 3]
+  PASS  pair (alpha,beta) = (3,2) distinguished by some T_mu :: distinguishing mus = [2, 3]
+
+[L3] commutator identity <e_alpha|[K,T_mu]|e_beta> = (tau_mu^(beta) - tau_mu^(alpha)) <e_alpha|K|e_beta>
+  PASS  generic K Hermitian
+  PASS  L3 identity at (alpha,beta,mu) = (1,2,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
+  PASS  L3 identity at (alpha,beta,mu) = (1,3,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
+  PASS  L3 identity at (alpha,beta,mu) = (2,1,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
+  PASS  L3 identity at (alpha,beta,mu) = (2,3,2): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
+  PASS  L3 identity at (alpha,beta,mu) = (3,1,1): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
+  PASS  L3 identity at (alpha,beta,mu) = (3,2,2): <e_a|[K,T_mu]|e_b> = (tau_mu^b - tau_mu^a) <e_a|K|e_b> :: lhs - rhs = 0
+
+[L2] simultaneous diagonalization: [K, T_mu] = 0 for mu = 1,2,3 -> K diagonal
+  PASS  system [K, T_mu] = 0 has unique solution :: #solutions = 1
+  PASS  L2 solution forces u12 = 0 :: u12 -> 0
+  PASS  L2 solution forces v12 = 0 :: v12 -> 0
+  PASS  L2 solution forces u13 = 0 :: u13 -> 0
+  PASS  L2 solution forces v13 = 0 :: v13 -> 0
+  PASS  L2 solution forces u23 = 0 :: u23 -> 0
+  PASS  L2 solution forces v23 = 0 :: v23 -> 0
+
+[L4] diagonal class commutes
+  PASS  diag(k1,k2,k3) commutes with T_1
+  PASS  diag(k1,k2,k3) commutes with T_2
+  PASS  diag(k1,k2,k3) commutes with T_3
+  PASS  commuting algebra complex dim = 3 :: three independent complex diagonal parameters
+
+[worked numerical instance]
+  PASS  [diag(1,2,5), T_1] = 0
+  PASS  [diag(1,2,5), T_2] = 0
+  PASS  [diag(1,2,5), T_3] = 0
+
+[counter-examples]
+  PASS  off-diagonal K (entries (1,2)/(2,1)) breaks [K, T_1] = 0 :: [K_offdiag, T_1] = [[0, 2, 0], [-2, 0, 0], [0, 0, 0]]
+  PASS  T_mu = I trivial: any K commutes (off-diagonal K still commutes) :: [K_offdiag, I] = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+=== Summary ===
+PASS=41 FAIL=0
+
+----- stderr -----
+

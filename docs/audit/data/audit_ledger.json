@@ -39755,24 +39755,33 @@
       "verdict_rationale": "Issue: the note imports the d<=3 upper bound and the phase-to-force/readout bridge without retained cited support. Why this blocks: without those inputs, the supplied evidence only shows that the selected runner criteria pass for d=3,4,5 and fail for d<=2 under chosen parameters. Repair target: add retained one-hop stability authorities and a bridge theorem tying the runner readout to the claimed gravitational observable, or split the note to the finite numerical lower-bound claim. Claim boundary until fixed: runner-specific evidence for excluding d<=2 under the stated setup, not a retained dimension-selection theorem."
     },
     "dimensional_gravity_table": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T12:41:43.286700+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.665,
+        "runner_hash": "218df4943f40517c268bed9823e8388718f1dc604890563876bb547b9f7b7c21",
+        "transitive_descendants": 811
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-124123-20260517T124123Z-6877bb67-dimensional_gravity_tabl-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed scope, the source note only claims that the displayed d=3/d=4 finite-entry numerics match registered cached artifacts, and the provided runner source verifies SHA-fresh caches/logs and asserts those quoted values. The chain does not establish first-principles lattice convergence or the open asymptotic 4D distance law, but those are explicitly outside the binding claim.",
       "claim_id": "dimensional_gravity_table",
-      "claim_scope": "Audited only the narrowed finite inventory for cache-backed d=3 and d=4 rows: kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), measure h^(d-1), with d=2 and the asymptotic 4D distance law out of binding scope.",
+      "claim_scope": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T12:41:08.152539+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-17T12:41:43.286700+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -39787,24 +39796,35 @@
           "load_bearing_step_class": "B",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-17T12:41:43.286700+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-124123-20260517T124123Z-6877bb67-dimensional_gravity_tabl-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 12.665,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The binding d=3 and d=4 table entries are exactly the cache-backed rows asserted by the certificate runner against registered cached artifacts.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5f9c9c13ee2d03c8fa8fb359d83317cf084d80625247575580e55287565763ef",
       "note_path": "docs/DIMENSIONAL_GRAVITY_TABLE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that the restricted packet continues to include the registered cache artifacts/logs or an equivalent cache certificate; promoting the d=2 row or asymptotic 4D distance law would require a separate convergence or first-principles lattice runner.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
@@ -40189,16 +40209,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 5,
+        "B": 2,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/dimensional_gravity_table_certificate_runner_2026_05_03.py",
       "title": "Dimensional Gravity Table \u2014 Cache-Backed d=3 / d=4 Rows Only (Binding)",
       "transitive_descendants": 811,
-      "verdict_rationale": null
+      "verdict_rationale": "The repaired note has narrowed the claim to a bounded cache-backed inventory rather than a universal dimensional-gravity theorem. The runner source is not a first-principles compute runner; it performs structural algebraic checks plus cache/log verification, so the load-bearing step is class B. Because the binding claim is only that the cache-backed d=3/d=4 entries are registered and internally matched, and the d=2 plus asymptotic 4D distance-law claims are demoted out of scope, the narrowed chain closes on its own terms."
     },
     "dirac_core_card_note": {
       "audit_date": "2026-04-30T20:26:06.956529+00:00",

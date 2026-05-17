@@ -12888,6 +12888,18 @@
       "dominant_class": null,
       "runner": "scripts/lattice_complementarity_sweep.py"
     },
+    "lattice_distance_law_note": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/lattice_no_barrier_distance.py"
+    },
     "lattice_family_validation_note": {
       "assert_count": 0,
       "counts": {
@@ -47871,6 +47883,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/lattice_no_barrier_distance.py": {
+      "assert_count": 0,
+      "claims": [
+        "lattice_distance_law_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/lattice_symmetry_unification_decision.py": {
       "assert_count": 0,
       "claims": [
@@ -51164,9 +51191,9 @@
       "B": 253,
       "C": 702,
       "D": 282,
-      "none": 421
+      "none": 422
     },
-    "runners_classified": 1831,
+    "runners_classified": 1832,
     "runners_with_C": 902,
     "runners_with_D": 516
   }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 324 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1228 |
+| unaudited | 1229 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 163 |
+| ~~audited_conditional~~ | 162 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 542 |
-| `audited_conditional` | 163 |
+| `audited_conditional` | 162 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1425 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
@@ -72,7 +72,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1831
+- runners classified: 1832
 - runners with (C) first-principles compute hits: 902
 - runners with (D) external comparator hits: 516
 - decoration candidates (no C, no D): 283
@@ -762,7 +762,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `lanes.ordered-lattice.readme` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `lattice_3d_l2_tail_stats_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `lattice_distance_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `matter_radiation_equality_structural_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -6595,21 +6594,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The canonical sweep shows a continuous tradeoff between decoherence/which-slit structure and distance-law quality, with only gap = 2 clearing the declared bounded-balance guard.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the ordered lattice, slit cards, propagations, observables, distance fits, Born companion audit, and guard directly rather than printing constants. Within the restricted packet, the note's bounded conclusion follows from that computation and explicitly excludes same-card attractive gravity or full unification.
 - **rationale:** The load-bearing step is a first-principles computation over the stated ordered-lattice setup, producing the MI, d_TV, decoherence, distance-fit, gravity-sign, Born, and k=0 sweep values. The source code does not import cited authorities or hard-code expected table values; it computes the rows from lattice generation, propagation, field evaluation, and fitting helpers. The promoted claim is carefully bounded to a tradeoff curve with a sweet spot and does not claim same-card attractive gravity or one-family unification.
-- **auditor confidence:** high
-
-### `lattice_distance_law_note`
-
-- **Note:** [`LATTICE_DISTANCE_LAW_NOTE.md`](../../docs/LATTICE_DISTANCE_LAW_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded N=40 ordered-lattice no-barrier numerical fit, its k=0 control, the strength-scaling scope probe, and the N-dependence scope probe as represented by the two provided runner sources and SHA-pinned cached stdout blocks.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-120248-20260517T120248Z-659aba9f-lattice_distance_law_not-targeted`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** On the ordered no-barrier N=40 lattice harness, the far-field window b >= 7 fits |delta| ~= 23.5071 * b^(-1.052) with R^2 = 0.9850, with strength scaling consistent with sqrt(strength) and an N-dependent b-tail exponent.  _(class `C`)_
-- **chain closes:** False — The provided runners compute the cited tables and fits rather than merely printing constants, and the cached stdout matches the source note. However, both runners import the actual lattice generation, field construction, and propagation operators from scripts/lattice_mirror_distance.py, whose source is not included in the restricted packet, so the stated lattice update rules and action law cannot be independently verified here.
-- **rationale:** The runner packet supports the bounded numerical result on its own printed outputs: the N=40 distance-law fit, k=0 control, strength-scaling check, and N-dependence check are all present and internally consistent. The source code also performs live fits from generated rows, so this is not a renaming or hard-coded numerical printout. The chain nevertheless depends on imported helper functions for the lattice, field, and propagation semantics, and those load-bearing operators are not present in the restricted packet. Therefore the bounded claim remains conditional on the missing helper-source verification.
-- **open / conditional deps cited:**
-  - `scripts/lattice_mirror_distance.py`
 - **auditor confidence:** high
 
 ### `lattice_fanout_continuum_note`

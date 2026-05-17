@@ -2,7 +2,7 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T18:24:45Z"
+last_checkpoint_utc: "2026-05-17T18:32:07Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
@@ -296,4 +296,4 @@ verification:
   audit_pipeline: "completed; no docs/audit diffs left in worktree"
   strict_audit_lint: "OK; no errors; 5 known warnings"
 next_exact_action: "Noether route reopens only if a future same-surface theorem maps a certified Noether current to canonical O_H/source-Higgs pole rows or W/Z physical response with covariance and strict g2. Absent that, PR230 still needs one of the strict source-Higgs, W/Z, Schur, or neutral artifacts named in the route queue."
-next_checkpoint_due_utc: "2026-05-17T18:54:45Z"
+next_checkpoint_due_utc: "2026-05-17T19:02:07Z"

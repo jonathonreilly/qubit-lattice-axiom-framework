@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 336 |
+| **retained_bounded** | 337 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1214 |
+| unaudited | 1213 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 557 |
+| `audited_clean` | 558 |
 | `audited_conditional` | 178 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1411 |
+| `unaudited` | 1410 |
 
 | claim_type | count |
 |---|---:|
@@ -322,6 +322,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `h0125_scalable_scout_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `h0125_wider_replay_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `h0125_wider_w4_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | B | - |
@@ -5661,6 +5662,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The completed W4 runner cache shows the phys_l=6, phys_w=4, h=0.125 full-window z=3.0 row has Born=8.01e-15, clean k=0, TOWARD gravity +0.010955, and alpha=0.499, so the genuinely wider row does not move toward alpha=1.0.  _(class `C`)_
 - **chain closes:** True — The current SHA-pinned W4 runner cache exits 0 under the declared 1800 s budget and reports the load-bearing full-window z=3.0 row at alpha=0.499. The scope is limited to the completed W4 replay rows, not every possible wider lattice family.
 - **rationale:** The row is no longer an open compute gate: the runner cache is complete at the declared long-run budget and reproduces the W4 diagnostics. Within the observed-row scope, the full-window z=3.0 exponent remains alpha=0.499 with clean null and TOWARD sign, so the W4 widening does not rescue the mass-law bridge. Residual risk is limited to future untested windows or lattice families outside this note's row set.
+- **auditor confidence:** high
+
+### `h0125_wider_w4_probe_note`
+
+- **Note:** [`H0125_WIDER_W4_PROBE_NOTE.md`](../../docs/H0125_WIDER_W4_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the auxiliary phys_l=2, phys_w=4, h=0.125 probe result produced by scripts/lattice_3d_l2_wide_h0125_w4_probe.py, including its transitive helper sources; not the separate retained phys_l=6 closeout replay/logs named in the note.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-153824-a5e2dcef-h0125_wider_w4_probe_not-021`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The width-4 probe runner computes alpha = 0.500 on the full window and alpha = 0.499 on r<=1.5 for phys_l=2, phys_w=4, h=0.125, so the cheap wider-box scout still shows the weak-field exponent near 0.5.  _(class `C`)_
+- **chain closes:** True — For the auxiliary scout result, the chain closes: the primary runner builds the dense lattice family, propagates free and field amplitudes, computes centroids, and fits alpha from the generated deltas. The broader retained phys_l=6 closeout statement is outside the audited scope because its runner/logs are not included in the restricted packet.
+- **rationale:** The provided runner and helper sources do not hard-code the reported alpha values; they instantiate the dense h=0.125 lattice geometry, perform propagation, compute detector probabilities and centroids, and fit the power law from computed deltas. The cached stdout matches that load-bearing auxiliary probe result, with alpha near 0.5 in both reported windows. This clean verdict is limited to the cheap phys_l=2 width-4 scout; the note's separate statement about the retained phys_l=6 replay is not ratified by this packet.
 - **auditor confidence:** high
 
 ### `h2t_h0125_narrow_bridge_note`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 114 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 345 |
+| **retained_bounded** | 346 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 571 |
+| `audited_clean` | 572 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1443 |
+| `unaudited` | 1442 |
 
 | claim_type | count |
 |---|---:|
@@ -196,6 +196,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cycle_battery_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -2745,6 +2746,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The tensor product computation reduces (CP)^2 to (C_lat P_lat)^2 ⊗ (G_C G_P)^2 = ε_lat I_lat ⊗ I_int = ε_lat I_V.  _(class `A`)_
 - **chain closes:** True — The source note gives direct sitewise algebra for the orbital factor and direct Pauli-matrix algebra for the internal factor; tensoring them proves the stated scalar identity. The cited retained-grade Cl(3) authorities support the Pauli irrep context, while the actual scalar-square step is explicit matrix algebra.
 - **rationale:** The load-bearing step is a genuine algebraic closure over explicitly defined finite-dimensional matrices, not a definition, numerical match, or imported comparator. The runner source constructs the Pauli matrices, lattice parity/permutation matrices, tensor products, and exact products in sympy rather than merely printing the target result. The proof also supplies the general even-L sign argument, so the finite runner checks are corroborative rather than the sole basis for closure.
+- **auditor confidence:** high
+
+### `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic identity CPT · H · (CPT)^{-1} = H on V=C^N for real Hermitian H and C,P,T satisfying the stated type axioms and premises (1)-(3).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-211809-78dc5814-cpt_d_level_finite_latti-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using THT^{-1}=H, PHP=-H, and CHC=-H, the chain CPT · H · (CPT)^{-1} = C P H P C = C(-H)C = -(-H) = H closes.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the conclusion follows by exact substitution from the three premise identities and involutory inverse relations. The derivation of premises (1)-(3) in any specific lattice framework is explicitly out of scope and is not needed for this conditional theorem.
+- **rationale:** The load-bearing step is a genuine class-A algebraic identity over explicitly assumed premises, not a numerical match, definition, or physical bridge. The runner source performs exact SymPy matrix equality checks on concrete instances plus counterfactual probes, rather than merely printing constants, although the universal closure comes from the note's symbolic substitution. No cited upstream authority, SME extraction, Hermitian-Hamiltonian bridge, continuum CPT input, or interacting-theory premise is imported into the scoped claim.
 - **auditor confidence:** high
 
 ### `cpt_exact_note`

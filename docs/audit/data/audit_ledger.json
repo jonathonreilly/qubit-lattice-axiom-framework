@@ -9500,24 +9500,45 @@
       "verdict_rationale": null
     },
     "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T12:36:24.166093+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 19.204,
+        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+        "transitive_descendants": 833
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-123603-20260517T123603Z-a9187f18-axiom_first_cl3_per_site-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The in-scope representation-theoretic claim follows from the provided A1 local-algebra input plus standard finite-dimensional Clifford/semisimple algebra facts. The out-of-scope U4 Hilbert-space bridge is explicitly excluded and is not needed for U1-U3.",
       "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Physical-Cl(3)-only classification: U1-U3 for the real algebra Cl(3,0), its two 2-dimensional complex chirality irreps, and finite-dimensional decomposition into their direct sums.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T12:36:24.166093+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -9526,19 +9547,22 @@
         "minimal_axioms_2026-04-11"
       ],
       "direct_in_degree": 19,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 19.204,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The complexification splits as Cl(3) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands indexed by the central character \u03c9 = \u00b1i.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "bd11d1c5fb9cc6900b811ffdd7e94b22de3768fc7f2c0ec45ba0cdf15e9c3e6d",
       "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: mark the current minimal-axiom authority as retained-grade or exempt framework meta authorities from the retained-grade dependency rule, then re-audit the same narrowed U1-U3 packet.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T20:44:09.876323+00:00",
@@ -9793,16 +9817,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
       "transitive_descendants": 833,
-      "verdict_rationale": null
+      "verdict_rationale": "The mathematical load-bearing step is a genuine algebraic closure: the note correctly repairs the odd-complex-Clifford split and derives the two chirality irreps distinguished by \u03c9 = \u00b1i. The runner source mostly provides algebraic/numerical exhibits for those facts and does not import an external comparator or tuned numerical premise. However, the restricted packet's cited framework authorities are marked meta rather than retained-grade under the supplied rubric, so the verdict cannot be audited_clean despite the U1-U3 algebra closing on its own terms."
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
       "audit_date": "2026-05-10T12:18:49.394028+00:00",

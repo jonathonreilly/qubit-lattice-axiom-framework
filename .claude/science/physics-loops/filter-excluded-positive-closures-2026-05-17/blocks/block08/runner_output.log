@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_vertex_power_operator_counting_lemma.py
+runner_sha256: a52620c3b1512158319c18b20badb9816d6c5c2c395b66c7f1d882dcecd8dab6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+==============================================================================
+y_t Vertex-Power Operator-Counting Lemma: Numerical Verification
+==============================================================================
+
+  Lattice: L=4, N_C=3, N_dim=192
+
+------------------------------------------------------------------------------
+PART 1: S1 — vertex D' is single-link (degree-1 in U)
+------------------------------------------------------------------------------
+
+    lambda = 0.500: max |D'[lambda U] - lambda * D'[U]| = 0.00e+00
+    lambda = 0.700: max |D'[lambda U] - lambda * D'[U]| = 0.00e+00
+    lambda = 1.000: max |D'[lambda U] - lambda * D'[U]| = 0.00e+00
+    lambda = 1.300: max |D'[lambda U] - lambda * D'[U]| = 0.00e+00
+    lambda = 2.000: max |D'[lambda U] - lambda * D'[U]| = 0.00e+00
+
+  [PASS] S1_single_link_vertex
+         D' is exactly degree-1 in U; max deviation 0.00e+00 across lambdas
+
+------------------------------------------------------------------------------
+PART 2: S2 — bubble Pi has exactly two D' insertions (degree-2)
+------------------------------------------------------------------------------
+
+  Pi base = -4.769932e+03 + -0.000000e+00j
+
+    lambda=0.500: Pi[lam D']=-1.1925e+03  expected lambda^2 * Pi_base = -1.1925e+03  rel.dev = 0.00e+00
+    lambda=0.700: Pi[lam D']=-2.3373e+03  expected lambda^2 * Pi_base = -2.3373e+03  rel.dev = 0.00e+00
+    lambda=1.000: Pi[lam D']=-4.7699e+03  expected lambda^2 * Pi_base = -4.7699e+03  rel.dev = 0.00e+00
+    lambda=1.300: Pi[lam D']=-8.0612e+03  expected lambda^2 * Pi_base = -8.0612e+03  rel.dev = 3.38e-16
+    lambda=2.000: Pi[lam D']=-1.9080e+04  expected lambda^2 * Pi_base = -1.9080e+04  rel.dev = 0.00e+00
+
+  log-log slope (Pi vs lambda) = 2.000000  (expected exactly 2)
+
+  [PASS] S2_bubble_degree2
+         Pi[lambda D'] = lambda^2 Pi[D'] to 3.38e-16; slope = 2.0000
+  [PASS] S2_bubble_not_degree1
+         slope = 2.0000 excludes degree-1 (would be n_link=1)
+  [PASS] S2_bubble_not_degree4
+         slope = 2.0000 excludes degree-4 (would be plaquette)
+
+------------------------------------------------------------------------------
+PART 3: Tadpole companion — Tr[D^{-1} D''] is degree-1 in D''
+------------------------------------------------------------------------------
+
+  Tadpole base = -2.804843e+01 + +0.000000e+00j
+
+    mu=0.500: Tadpole[mu D''] rel.dev from mu^1 = 0.00e+00
+    mu=0.700: Tadpole[mu D''] rel.dev from mu^1 = 1.81e-16
+    mu=1.000: Tadpole[mu D''] rel.dev from mu^1 = 0.00e+00
+    mu=1.300: Tadpole[mu D''] rel.dev from mu^1 = 0.00e+00
+    mu=2.000: Tadpole[mu D''] rel.dev from mu^1 = 0.00e+00
+
+  log-log slope (Tadpole vs mu) = 1.000000  (expected 1)
+
+  [PASS] S2_tadpole_degree1
+         Tr[D^{-1} mu D''] = mu * Tr[D^{-1} D''] to 1.81e-16
+
+------------------------------------------------------------------------------
+PART 4: S3 — n_link(VP) = 2 = 2 * n_link(hopping)
+------------------------------------------------------------------------------
+
+    lambda=0.500: max rel |D[lam U] - lam D[U]| = 0.00e+00
+    lambda=0.700: max rel |D[lam U] - lam D[U]| = 0.00e+00
+    lambda=1.300: max rel |D[lam U] - lam D[U]| = 0.00e+00
+    lambda=2.000: max rel |D[lam U] - lam D[U]| = 0.00e+00
+
+  [PASS] S3_hopping_n_link_eq_1
+         D[U] is degree-1 in U (n_link_hopping = 1) to 0.00e+00
+
+  Relative count: slope(Pi) / slope(hop) = 2.0000  (expected exactly 2)
+  [PASS] S3_relative_count_2_to_1
+         slope(Pi)/slope(hopping) = 2.000000 = 2 (to 2.22e-15)
+
+------------------------------------------------------------------------------
+PART 5: Sanity — bubble is non-trivial (not identically zero)
+------------------------------------------------------------------------------
+
+  [PASS] S2_bubble_nontrivial
+         |Pi_base| = 4.7699e+03 > 1e-8 (the count statement is non-vacuous)
+
+==============================================================================
+SUMMARY
+==============================================================================
+
+  PASS: 8  FAIL: 0
+  Time: 0.1s
+
+  KEY RESULTS:
+
+  S1: D' = dD/dA |_{A=0} is exactly degree-1 in U
+      (single-link vertex; lambda^1 scaling verified to machine precision).
+
+  S2: Pi = -Tr[D^{-1} D' D^{-1} D'] is exactly degree-2 in D'
+      (slope = 2.0000, indistinguishable from 2; not 1, not 4).
+
+  S2 companion: Tr[D^{-1} D''] is exactly degree-1 in D''.
+
+  S3: n_link(vacuum polarization) = 2 = 2 * n_link(hopping)
+      (relative count is the structural input to the coupling map).
+
+  The conditional-bounded operator-counting lemma is verified.
+  Named admissions (staggered-Dirac realization, link-exponential
+  convention, bare-coupling-map identity) remain external.
+
+
+----- stderr -----
+

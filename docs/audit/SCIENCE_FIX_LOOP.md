@@ -137,7 +137,9 @@ python3 scripts/science_fix_loop.py --n 5 --codex-timeout-sec 600
   but reads-only. Reads cached runner output and renders verdicts.
 - **`compute_reaudit_candidates.py`**: when a science-fix PR merges
   and the upstream's audit changes, downstream rows show up here for
-  re-audit via `codex_audit_runner.py --from-reaudit-candidates`.
+  re-audit via `codex_audit_runner.py --from-reaudit-candidates`, or
+  equivalently through the `audit-loop` skill's cascade re-audit source
+  before regular queue fall-through.
 
 The full loop:
 
@@ -147,3 +149,26 @@ The full loop:
    the prior verdict, resets to `unaudited`)
 4. `codex_audit_runner.py --n 1` re-audits this specific row (via
    normal queue or `--from-reaudit-candidates` for downstream cascade)
+
+### `audited_conditional` From `dependency_not_retained` Is Normal
+
+When a science-fix PR ships a derivation that depends on an upstream
+authority that is itself still `unaudited` or `audited_conditional`, the
+downstream's first verdict can correctly be `audited_conditional` with
+`notes_for_re_audit_if_any: dependency_not_retained`. This records that the
+load-bearing input has not yet retained; it is not by itself a defect in the
+downstream proof.
+
+The cascade-resolution mechanism resolves these rows naturally:
+
+1. the upstream authority eventually reaches retained-grade through its own
+   audit;
+2. `apply_audit.py` runs `compute_reaudit_candidates.py` after applying that
+   verdict, which flags downstream rows in `reaudit_candidates.json`;
+3. the next `audit-loop` invocation, or
+   `codex_audit_runner.py --from-reaudit-candidates`, re-audits the
+   downstream row against the now-retained upstream.
+
+The science-fix loop should not over-engineer to avoid
+`audited_conditional` verdicts when the only reason is
+`dependency_not_retained`; the cascade stream is the canonical repair path.

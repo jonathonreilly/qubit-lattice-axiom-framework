@@ -20304,6 +20304,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_staggered_17card.py"
     },
+    "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 14,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py"
+    },
     "staggered_geometry_superposition_note_2026-04-11": {
       "assert_count": 0,
       "counts": {
@@ -26145,6 +26157,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 14,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py": {
@@ -52890,12 +52917,12 @@
     "dominant_class_distribution": {
       "A": 190,
       "B": 259,
-      "C": 721,
+      "C": 722,
       "D": 294,
       "none": 431
     },
-    "runners_classified": 1895,
-    "runners_with_C": 931,
-    "runners_with_D": 541
+    "runners_classified": 1896,
+    "runners_with_C": 932,
+    "runners_with_D": 542
   }
 }

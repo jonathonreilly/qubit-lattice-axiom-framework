@@ -71050,6 +71050,18 @@
       "runner_path": "scripts/frontier_staggered_17card.py",
       "title": "Staggered Fermion + Parity-Coupled Gravity \u2014 Complete Card"
     },
+    "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17": {
+      "claim_id": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "4fb4fbd532aebf04ecc133b3bbb3571c8c13dcc8dd9e365c32e53508ee093469",
+      "path": "docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py",
+      "title": "Staggered Fermion Card H2 \u2014 Positive Source \u21d2 Positive \u03a6 \u2014 Narrow Theorem (Stieltjes / non-singular M-matrix)"
+    },
     "staggered_geometry_superposition_note_2026-04-11": {
       "claim_id": "staggered_geometry_superposition_note_2026-04-11",
       "claim_type_author_hint": null,
@@ -78383,6 +78395,7 @@
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
     "staggered_fermion_card_2026-04-10",
+    "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
     "staggered_geometry_superposition_note_2026-04-11",
     "staggered_graph_portability_note",
     "staggered_layered_backreaction_note",
@@ -78546,7 +78559,7 @@
       "no_go": 56,
       "none": 1534,
       "open_gate": 44,
-      "positive_theorem": 167
+      "positive_theorem": 168
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 893,
@@ -78555,12 +78568,12 @@
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
-      "positive_theorem": 620
+      "positive_theorem": 621
     },
     "edge_count": 9298,
-    "leaf_count": 753,
-    "node_count": 2412,
-    "root_count": 867,
-    "runners_with_path": 2014
+    "leaf_count": 754,
+    "node_count": 2413,
+    "root_count": 868,
+    "runners_with_path": 2015
   }
 }

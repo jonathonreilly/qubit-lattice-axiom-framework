@@ -1,0 +1,125 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py
+runner_sha256: e3a28d07bd8c076d81413148cc467c26d1830e1f1acb94fed40cae62cd798f91
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of (P1) rho_+ = rho_perp at the
+reduced-carrier Lagrange extremum, (P2) E_+ = E_perp, (P3) kappa = 2,
+and the reparametrization equivalence S_rho = (1/2) S_E under
+the cited admitted SO(2)-quotient carrier and the cited retained
+Frobenius identities (T2)/(T3) of
+koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  symbolic rho_p, rho_perp  (positive real) = rho_p, rho_perp
+  symbolic E_tot            (positive real) = E_tot
+  symbolic a, |b|            (positive real) = a, b_abs
+  symbolic E_+, E_perp       (positive real) = e_plus, e_perp
+
+----------------------------------------------------------------------------------------
+Part 1: cited retained Frobenius identities (I2) - numerical
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+  cross-check against explicit H = a I + b C + bbar C^2 matrix
+----------------------------------------------------------------------------------------
+  [PASS (A)] (I2) cited E_+ = 3 a^2 matches direct sympy computation on Herm_circ(3)  (diff = 0)
+  [PASS (A)] (I2) cited E_perp = 6 |b|^2 matches direct sympy computation on Herm_circ(3)  (diff = 0)
+  [PASS (A)] (I2) FP sanity at sample (a=17/50, b=-27/50+i4/25): E_+ matches  (|E_+ - 3 a^2| = 0.000e+00)
+  [PASS (A)] (I2) FP sanity at sample: E_perp matches  (|E_perp - 6 |b|^2| = 0.000e+00)
+
+----------------------------------------------------------------------------------------
+Part 2: (P1) Lagrange extremum of S_rho on reduced carrier
+----------------------------------------------------------------------------------------
+  [PASS (A)] Lagrange system has a unique positive-orthant critical point  (#positive_sols = 1 / 1 total; sols = [{lam: 1/E_tot, rho_p: sqrt(2)*sqrt(E_tot)/2, rho_perp: sqrt(2)*sqrt(E_tot)/2}])
+  [PASS (A)] (P1) rho_+^* = sqrt(E_tot / 2)  (got rho_p* = sqrt(2)*sqrt(E_tot)/2)
+  [PASS (A)] (P1) rho_perp^* = sqrt(E_tot / 2)  (got rho_perp* = sqrt(2)*sqrt(E_tot)/2)
+  [PASS (A)] (P1) rho_+^* = rho_perp^* at the critical point  (rho_+* - rho_perp* = 0)
+
+----------------------------------------------------------------------------------------
+Part 3: Hessian of S_rho is strictly negative diagonal (concavity)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Hess(S_rho)_11 = -1/rho_+^2 (strictly negative on rho_+ > 0)  (got H11 = -1/rho_p**2)
+  [PASS (A)] Hess(S_rho)_22 = -1/rho_perp^2 (strictly negative on rho_perp > 0)  (got H22 = -1/rho_perp**2)
+  [PASS (A)] Hess(S_rho)_12 = 0 (diagonal Hessian)  (got H12 = 0)
+  [PASS (A)] off-critical sample lies on the constraint slice
+  [PASS (A)] S_rho at critical point exceeds off-critical sample (strict-max consistency)  (diff vs closed form = 0)
+
+----------------------------------------------------------------------------------------
+Part 4: (P2) E_+ = E_perp at the critical point
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P2) E_+ at critical point = E_tot / 2  (got E_+* = E_tot/2)
+  [PASS (A)] (P2) E_perp at critical point = E_tot / 2  (got E_perp* = E_tot/2)
+  [PASS (A)] (P2) E_+ = E_perp at the critical point
+
+----------------------------------------------------------------------------------------
+Part 5: (P3) a^2 = 2 |b|^2, kappa = 2 via cited (I2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Solving 3 a^2 - 6 |b|^2 = 0 yields a^2 = 2 |b|^2  (sol = [2*b_abs**2])
+  [PASS (A)] (P3) kappa := a^2 / |b|^2 evaluates to 2 at the critical point  (got kappa = 2)
+
+----------------------------------------------------------------------------------------
+Part 6: reparametrization equivalence S_rho = (1/2) S_E
+----------------------------------------------------------------------------------------
+  [PASS (A)] S_E (in rho coordinates via E_i = rho_i^2) = 2 S_rho on positive reals  (diff = 0)
+
+----------------------------------------------------------------------------------------
+Part 7: Frobenius-carrier (E_+, E_perp) Lagrange (T3 cross-check)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Frobenius-carrier Lagrange has a unique positive critical point (T3 cross-check)  (#sols = 1 / 1)
+  [PASS (A)] (T3) E_+* = E_tot / 2  (got E_+* = E_tot/2)
+  [PASS (A)] (T3) E_perp* = E_tot / 2  (got E_perp* = E_tot/2)
+  [PASS (A)] Reparam. correspondence: E_i* = (rho_i*)^2 matches between problems
+
+----------------------------------------------------------------------------------------
+Part 8: derivable corollaries (C1)-(C5)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1a) S_rho at critical point = log(E_tot/2)  (got log(E_tot/2))
+  [PASS (A)] (C1b) S_E at critical point = 2 log(E_tot/2) = 2 S_rho*  (got S_E* = log(E_tot**2/4))
+  [PASS (A)] (C2) Hess(S_rho)_11 at critical point = -2/E_tot  (got -2/E_tot)
+  [PASS (A)] (C2) Hess(S_rho)_22 at critical point = -2/E_tot  (got -2/E_tot)
+  [PASS (A)] (C3) S_rho is symmetric under (rho_+, rho_perp) swap
+  [PASS (A)] (C3) constraint is symmetric under (rho_+, rho_perp) swap
+  [PASS (A)] (C4) E_+ = E_perp in (a, b) coordinates: 3 a^2 = 6 |b|^2 ⇔ a^2 = 2 |b|^2
+  [PASS (A)] (C5) Lagrange critical-point set on the positive orthant is a single isolated point
+
+----------------------------------------------------------------------------------------
+Part 9: counterfactual probes (load-bearing on (mu, nu) = (1, 1) and symmetric carrier)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Counterfactual (mu, nu): tilted critical ratio (rho_+^2 / rho_perp^2) = mu / nu  (got ratio = mu/nu)
+  [PASS (A)] Counterfactual: at (mu, nu) = (2, 1), critical ratio = 2 ≠ 1, breaking E_+ = E_perp  (ratio = 2)
+  [PASS (A)] Counterfactual carrier-tilt: critical ratio (rho_+^2 / rho_perp^2) = 1 / p  (got ratio = 1/p_pow)
+  [PASS (A)] Counterfactual: at p = 2, critical ratio = 1/2 ≠ 1, breaking E_+ = E_perp  (ratio = 1/2)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (I2) cited E_+ = 3 a^2, E_perp = 6 |b|^2 on Herm_circ(3)
+         (cross-check against explicit H = a I + b C + bbar C^2)
+    (P1) unique positive Lagrange critical point at rho_+ = rho_perp = sqrt(E_tot/2)
+    Hessian of S_rho strictly negative diagonal on positive orthant
+    Off-critical sample on the constraint slice lies strictly below the critical point
+    (P2) E_+ = E_perp = E_tot/2 at the critical point
+    (P3) a^2 = 2 |b|^2, kappa = 2 via cited (I2)
+    Reparametrization equivalence S_E = 2 S_rho on positive reals
+    Frobenius-carrier Lagrange (T3) reproduces matching E_i* = (rho_i*)^2
+    Corollaries (C1)-(C5) all verified
+    Counterfactual weight-tilt (mu, nu) != (1, 1) breaks E_+ = E_perp
+    Counterfactual carrier-tilt p != 1 breaks E_+ = E_perp
+
+========================================================================================
+TOTAL: PASS=35, FAIL=0
+========================================================================================
+
+----- stderr -----
+

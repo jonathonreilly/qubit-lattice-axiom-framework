@@ -38,6 +38,9 @@ Block128 keeps W/Z and source-Higgs bridge roots absent.
 - `python3 scripts/frontier_yt_pr230_positive_closure_completion_audit.py` -> `PASS=79 FAIL=0`
 - `python3 scripts/frontier_yt_fh_lsz_target_timeseries_full_set_checkpoint.py` -> `PASS=9 FAIL=0`
 - `python3 scripts/frontier_yt_pr230_schur_higher_shell_chunk_checkpoint.py --chunk 63` -> `PASS=15 FAIL=0`
+- `bash docs/audit/scripts/run_pipeline.sh` -> complete; generated docs/audit diffs restored
+- `python3 docs/audit/scripts/audit_lint.py --strict` -> OK, no errors; 5 known warnings
+- `git diff --check`
 
 ## Claim Boundary
 

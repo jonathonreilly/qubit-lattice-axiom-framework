@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 342 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1224 |
+| unaudited | 1223 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
 | ~~audited_conditional~~ | 186 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
+| `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 2 |
@@ -47,16 +48,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 566 |
 | `audited_conditional` | 186 |
-| `audited_decoration` | 22 |
+| `audited_decoration` | 23 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1426 |
+| `unaudited` | 1425 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 965 |
-| `decoration` | 23 |
+| `bounded_theorem` | 964 |
+| `decoration` | 24 |
 | `meta` | 206 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
@@ -885,6 +886,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -10410,6 +10412,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For pi(x) < pi(y), the JW string factor S_y = S_x sigma_3^(x) T_xy makes c_x c_y acquire the opposite sign from c_y c_x by the on-site anticommutation sigma_+^(x) sigma_3^(x) = -sigma_3^(x) sigma_+^(x).  _(class `A`)_
 - **chain closes:** True — The claimed CAR relations follow from Pauli identities, disjoint tensor-factor commutativity, and the explicit JW string sign flip. The note explicitly excludes the physical U4 identification, so that open bridge is not part of the audited scope.
 - **rationale:** Within its stated abstract tensor-product scope, the derivation is a genuine algebraic closure over the retained Cl(3) dim-two input and admitted finite tensor-product construction. The runner source actually constructs Pauli tensor operators and JW strings with exact sympy arithmetic, rather than merely printing constants, and its PASS=44 FAIL=0 output supports the stated identities. No external comparator, tuned value, or physical-lattice identification is imported; the open U4 bridge is clearly scoped out.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Decorative algebraic corollary of the retained Cl(3) decomposition: under the single-module condition k = 1, dim_C H_x = 2, while k >= 2 remains algebraically admissible.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-185148-41cdea85-staggered_dirac_substep1-018`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the retained D2 decomposition, H_x is isomorphic to rho_+^{n_+} direct-sum rho_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so k = 1 gives dim_C H_x = 2 while k >= 2 gives higher-multiplicity faithful modules.  _(class `A`)_
+- **chain closes:** True — The scoped conditional/enumeration follows from the retained one-hop Cl(3) decomposition plus standard direct-sum algebra. It does not close unconditional U4; the missing step is a retained theorem selecting k = 1 from the physical Cl(3)/Z^3 substrate.
+- **rationale:** Issue: the note's load-bearing content is an algebraic corollary of the retained CL3 faithful-irrep decomposition, with k introduced as n_+ + n_- and no independent physical bridge or comparator. Why this blocks clean independent status: the conditional statement closes, but it adds no independent theorem beyond the parent decomposition and does not close U4. Repair target: keep it boxed as a corollary under the parent or add a retained theorem deriving the physical single-module selection k = 1. Claim boundary until fixed: given k = 1, dim_C H_x = 2; k >= 2 remains admissible on the abstract algebraic surface.
+- **decoration parent:** `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`

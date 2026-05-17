@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -29855,7 +29854,7 @@
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 10.322,
+      "load_bearing_score": 10.459,
       "load_bearing_step": "In Cl(3,0) tensor_R C, e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 are complete central orthogonal idempotents, giving Cl(3,0) tensor_R C isomorphic to M_2(C) direct-sum M_2(C).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -29874,7 +29873,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
-      "transitive_descendants": 9,
+      "transitive_descendants": 10,
       "verdict_rationale": "The note remains inside abstract Clifford algebra and standard finite-dimensional representation theory. K1-K4 are algebraic consequences of the defining relations, the Pauli realisation, the central idempotent split, and the standard module theory of M_2(C). The runner provides exact symbolic A-class checks and does not import a physical bridge, comparator, tuned scale, or sector chosen to match an observation."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -29924,7 +29923,7 @@
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained",
-      "load_bearing_score": 8.807,
+      "load_bearing_score": 9.0,
       "load_bearing_step": "By the sibling narrow theorem (K3), Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), so Artin-Wedderburn gives exactly two irreducible complex modules, each of dimension 2.",
       "load_bearing_step_class": "B",
       "max_descendant_status": "retained_no_go",
@@ -29943,7 +29942,7 @@
       },
       "runner_path": "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
       "title": "Cl(3) Faithful Irrep Complex Dimension Two Narrow Theorem",
-      "transitive_descendants": 6,
+      "transitive_descendants": 7,
       "verdict_rationale": "The scoped theorem closes as an abstract algebra statement from the retained split Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C) plus Artin-Wedderburn and complete reducibility. The runner is only corroborative and partly hard-codes representative Pauli blocks, but the proof does not rely on the runner to derive the classification. No physical observable, lattice Hilbert-space identification, or sector-selection bridge is claimed inside this note."
     },
     "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10": {
@@ -36250,12 +36249,12 @@
       "deps": [
         "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
       ],
-      "direct_in_degree": 27,
+      "direct_in_degree": 28,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 23.169,
+      "load_bearing_score": 23.671,
       "load_bearing_step": "Using C H C = -H, P H P = -H, and T acting by complex conjugation, CPT H (CPT)^{-1} = C P H P C = C(-H)C = H.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -36482,7 +36481,7 @@
       },
       "runner_path": "scripts/frontier_cpt_exact.py",
       "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
-      "transitive_descendants": 813,
+      "transitive_descendants": 814,
       "verdict_rationale": "The runner genuinely constructs the staggered lattice operators and verifies the algebraic identities C H C = -H, P H P = -H, and C P H P C = H on L=4,6,8; these are class A algebraic checks, not hard-coded stdout. However, the source note\u2019s broader physical Hermitian Hamiltonian and SME-zero claim explicitly depends on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md. That cited bridge is labeled audited_conditional, and the rubric requires audited_conditional when a load-bearing cited authority is not retained-grade."
     },
     "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": {
@@ -36548,7 +36547,7 @@
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.162,
+      "load_bearing_score": 14.164,
       "load_bearing_step": "Substituting the premises gives Theta D Theta^{-1}=C P (TDT) P C=C(PDP)C=C(-D)C=D, and on H=iD gives P K(iD)K P=-iPDP=iD.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -36659,7 +36658,7 @@
       },
       "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
       "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)",
-      "transitive_descendants": 809,
+      "transitive_descendants": 810,
       "verdict_rationale": "The load-bearing content is a genuine class-A algebraic identity check over explicitly stated premises, not a renaming or numerical match. The runner source performs exact SymPy matrix equality checks rather than merely printing constants, and its C1/C2 checks match the proof. The former C3 scalar-square issue has been demoted to a conditional, non-load-bearing corollary, so it does not block the narrowed theorem."
     },
     "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02": {
@@ -153232,12 +153231,12 @@
       "deps": [
         "observable_principle_from_axiom_note"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -153287,7 +153286,7 @@
       },
       "runner_path": "scripts/frontier_observable_principle_audit.py",
       "title": "Observable-Principle From-Axiom Note \u2014 Status Correction Audit",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": null
     },
     "observable_principle_from_axiom_note": {
@@ -153322,12 +153321,12 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 73,
+      "direct_in_degree": 74,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 46.24,
+      "load_bearing_score": 46.741,
       "load_bearing_step": "Given scalar additivity, CPT-even phase blindness, continuity/minimal regularity, and normalization, W must solve W(r1 r2)=W(r1)+W(r2), so W=log|det(D+J)| up to the stated convention.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -153507,8 +153506,63 @@
       },
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note",
-      "transitive_descendants": 854,
+      "transitive_descendants": 855,
       "verdict_rationale": "Issue: the exact log-det algebra is verified only after selecting the physical scalar generator by admitted additivity/CPT-even/regularity/normalization premises, with P1 still explicitly open and the multiplicative normalization c=1 conventional. Why this blocks: the restricted packet has no retained one-hop theorem deriving that physical observable bridge, and the runner mainly checks consistency of the chosen W rather than forcing the observable class from the axiom alone. Repair target: add a bridge theorem deriving scalar additivity and the normalization/source scale from retained primitives, or keep all downstream citations explicitly conditional on those premises. Claim boundary until fixed: the finite algebra for the selected log|det| generator on the runner block is supported; unconditional axiom-to-observable closure is not."
+    },
+    "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "cpt_exact_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "f8168cd7f9d1686bb7301680ed4bf0edeba20b08e66fa9f3438eac9d947d140f",
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_d_sharpened_no_go_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Route D Sharpened No-Go Note",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
     },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "audit_date": null,
@@ -153533,12 +153587,12 @@
       "deps": [
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -153557,7 +153611,7 @@
       },
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1,
       "verdict_rationale": null
     },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
@@ -153617,12 +153671,12 @@
       "deps": [
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "retained_bounded",
       "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 11.66,
+      "load_bearing_score": 12.162,
       "load_bearing_step": "Under (X1), (X2), and (X3), any admissible scalar generator F equals c times W[J]=log|det(D+J)|-log|det D| on the real-D block, so its local source-derivative content matches W up to scale.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -153641,7 +153695,7 @@
       },
       "runner_path": "scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py",
       "title": "Observable Principle \u2014 Real-D-Block Generator Uniqueness Narrow Theorem",
-      "transitive_descendants": 808,
+      "transitive_descendants": 809,
       "verdict_rationale": "The proof closes as a conditional algebraic uniqueness result because every non-algebraic selection premise is inside the audited scope rather than hidden. The result does not promote the broad observable-principle parent, since admissibility class (X2), invertibility, and real-D locality remain explicit bounds. Residual risk is only future overcitation outside those bounds, which the note excludes."
     },
     "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16": {
@@ -158059,7 +158113,7 @@
       "effective_status_reason": "terminal_audit",
       "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 11.171,
+      "load_bearing_score": 11.172,
       "load_bearing_step": "The algebraic Hermitian lift Theta_H=P K preserves H=iD using K(i)=-i and P D P=-D; the additional SME conclusion depends on identifying the vanishing Theta_H-odd lattice hopping sector and direction-resolved traces with all CPT-odd SME bilinear coefficients sourced by this substrate.",
       "load_bearing_step_class": "D",
       "max_descendant_status": "audit_in_progress",
@@ -158119,7 +158173,7 @@
       },
       "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
       "title": "Physical Hermitian Hamiltonian And SME Bridge",
-      "transitive_descendants": 814,
+      "transitive_descendants": 815,
       "verdict_rationale": "Issue: The Hermitian-lift algebra is supported, but the final SME-zero statement relies on an asserted physical bridge from vanishing Theta_H-odd lattice Hamiltonian sectors and direction-resolved trace coefficients to all CPT-odd SME bilinear coefficients sourced by the substrate. Why this blocks: a Nature-grade audit cannot treat a lattice symmetry-odd matrix projection as a complete SME coefficient derivation unless the note proves the operator dictionary, basis completeness, normalization, and exclusion of other CPT-odd bilinear structures. The runner can verify zero odd matrices for L=4 and L=6, but it cannot by itself establish the physical SME mapping. Repair target: add a first-principles or cited-but-contained derivation of the SME bilinear operator basis represented on the staggered Hamiltonian substrate, prove that the checked full and direction-resolved sectors span every CPT-odd bilinear source in the stated boundary, and separate finite-runner checks from all-even-lattice symbolic closure. Claim boundary until fixed: retain only the conditional lattice theorem that the free staggered H=iD has a valid antiunitary Theta_H=P K symmetry and zero Theta_H-odd Hamiltonian-sector proxy; phrase SME coefficients as zero only under the explicitly proven proxy/dictionary assumptions."
     },
     "physical_lattice_foundational_interpretation_note_2026-05-08": {
@@ -201367,7 +201421,7 @@
       "effective_status_reason": "self",
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 5.5,
+      "load_bearing_score": 5.822,
       "load_bearing_step": "Given finite Grassmann generators satisfying (G1)-(G3) and Berezin rules (B1)-(B2), the quadratic Berezin partition Z_F = int prod_x dchi-bar_x dchi_x exp(-sum_{x,y} chi-bar_x M_xy chi_y) equals det(M), and odd-graded insertions anticommute under exchange.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -201386,7 +201440,7 @@
       },
       "runner_path": "scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
       "title": "Spin-Statistics \u2014 Berezin Determinant Narrow Theorem",
-      "transitive_descendants": 3,
+      "transitive_descendants": 4,
       "verdict_rationale": "Within the narrow algebraic scope, the claim closes as a standard finite Berezin-calculus identity. The runner evidence is entirely class-A algebraic checking and is consistent with the proof; the note explicitly excludes the physical spin-statistics bridge and downstream positivity surfaces from the audited load."
     },
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {
@@ -203085,12 +203139,12 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 3.5,
       "load_bearing_step": "Within the explicitly two-candidate framing, if a candidate must match dim_C V = 2, then the bosonic Fock candidate is ruled out by infinite per-site dimension while the Grassmann candidate remains and has the Berezin det(M) readout.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -203109,7 +203163,7 @@
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
-      "transitive_descendants": 2,
+      "transitive_descendants": 3,
       "verdict_rationale": "The load-bearing step is a genuine algebraic closure over independent retained-grade inputs: Cl(3) faithful complex irreps have dimension 2, Grassmann nilpotency gives a two-state per-site module, and bosonic canonical Fock space is infinite-dimensional. The Berezin determinant part is directly supplied by the retained_bounded Berezin authority and rechecked by the runner via exact symbolic determinant computations. The runner source performs finite symbolic checks rather than merely printing pass constants, though it correctly treats the two-candidate framing as a scoped premise rather than a universal classification."
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
@@ -247533,7 +247587,7 @@
     "preserved_archived_failed": 44,
     "preserved_existing": 2184,
     "re_audit_required": 0,
-    "row_count": 2228,
-    "seeded_new": 0
+    "row_count": 2229,
+    "seeded_new": 1
   }
 }

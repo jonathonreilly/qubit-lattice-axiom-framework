@@ -17841,6 +17841,30 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "cpt_exact_note"
+    },
+    {
       "from": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
@@ -58319,6 +58343,24 @@
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
     },
+    "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "cpt_exact_note"
+      ],
+      "note_hash": "f8168cd7f9d1686bb7301680ed4bf0edeba20b08e66fa9f3438eac9d947d140f",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_d_sharpened_no_go_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Route D Sharpened No-Go Note"
+    },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -73384,7 +73426,7 @@
       "bounded_theorem": 404,
       "decoration": 1,
       "meta": 157,
-      "no_go": 53,
+      "no_go": 54,
       "none": 1527,
       "open_gate": 44,
       "positive_theorem": 153
@@ -73393,15 +73435,15 @@
       "bounded_theorem": 850,
       "decoration": 1,
       "meta": 157,
-      "no_go": 158,
+      "no_go": 159,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 606
     },
-    "edge_count": 9061,
-    "leaf_count": 720,
-    "node_count": 2339,
+    "edge_count": 9067,
+    "leaf_count": 719,
+    "node_count": 2340,
     "root_count": 842,
-    "runners_with_path": 1949
+    "runners_with_path": 1950
   }
 }

@@ -1,0 +1,65 @@
+==============================================================================
+AUDIT-PREP VERIFIER — axiom_first_microcausality_lieb_robinson
+==============================================================================
+  [PASS] [A] Parent note exists  (AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md, 17678 bytes)
+
+  Total deps verified: 42
+
+PART 1 — load-bearing deps (expect: cited in parent):
+  [PASS] [A]   emergent_lorentz_invariance_note IS cited in parent (≥1 hit)  (hits = 4)
+  [PASS] [A]   lorentz_kernel_positive_closure_note IS cited in parent (≥1 hit)  (hits = 6)
+
+PART 2 — not-cited deps (expect: zero hits):
+  [PASS] [A]   axiom_first_reeh_schlieder_theorem_note_2026-05-01 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   c3_symmetry_preserved_interpretation_note_2026-05-08 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   conventions_unification_companion_note_2026-05-08 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_ne_active_column_axiom_boundary_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_parent_correctness_audit_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_to_dweh_hermitian_source_family_target_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_to_dweh_structured_model_realization_theorem_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_derivation_status_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_flavor_anomaly_bounded_obstruction_note_2026-05-08_probe2 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_gravity_phase_bounded_obstruction_note_2026-05-08_probe3 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_operator_class_bounded_note_2026-05-08_probe6 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_rp_frobenius_bounded_obstruction_note_2026-05-08_probe1 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_spectral_action_bounded_obstruction_note_2026-05-08_probe4 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_z2_c3_pairing_bounded_obstruction_note_2026-05-08_probe7 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_route_a_koide_nishiura_bounded_obstruction_note_2026-05-08_routea NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_route_e_kostant_weyl_bounded_obstruction_note_2026-05-08_routee NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_route_f_casimir_difference_bounded_obstruction_note_2026-05-08_routef NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_circulant_character_derivation_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_gamma_orbit_positive_one_clock_semigroup_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_positive_paths_first_principles_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   lepton_single_higgs_pmns_triviality_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   neutrino_dirac_two_higgs_canonical_reduction_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   neutrino_mass_reduction_to_dirac_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   planck_from_structure_path_opening_meta_note_2026-05-10 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   planck_orientation_principle_bounded_note_2026-05-10_planckp3 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   planck_scale_conditional_completion_note_2026-04-24 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   planck_scale_lane_status_note_2026-04-23 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_active_four_real_source_from_transport_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_corner_transport_active_block_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.publication_matrix NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 43 PASS / 0 FAIL
+Class-A pattern hits: 43
+==============================================================================
+
+VERDICT:
+  AUDIT-PREP FINDINGS VERIFIED
+  2 of 42 deps are LOAD-BEARING (Lorentz notes cited in §Proof Step 3 for M3)
+  40 of 42 deps are NOT-CITED (zero text hits)
+  Recommended auditor verdict: audited_conditional with the 2 load-bearing
+    edges named (or audited_clean if scope is restricted to M1+M2)
+  dominant_class: A (43 class-A pattern hits)

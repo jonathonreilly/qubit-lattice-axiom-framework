@@ -159,4 +159,11 @@ python3 scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theor
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)
+- `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`
+  (see-also cross-reference; backticked to break cycle-0010 in the citation
+  graph. The observable-relative-action-law note's own Status line
+  ("support - structural / confirmatory support note attached to the
+  already-landed DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16")
+  records the present theorem as its load-bearing upstream; the citation
+  direction is *observable_relative_action_law → this_stationarity_theorem*,
+  not vice versa.)

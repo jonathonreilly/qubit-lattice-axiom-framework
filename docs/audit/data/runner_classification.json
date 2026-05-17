@@ -1248,6 +1248,18 @@
       "dominant_class": "D",
       "runner": "scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py"
     },
+    "bae_u1b_six_ray_dirac_measure_stretch_attempt_note_2026-05-17": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_bae_u1b_six_ray_dirac_measure_2026_05_17.py"
+    },
     "baryon_charge_integrality_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -16380,6 +16392,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_pmns_c3_nontrivial_current_boundary.py"
     },
+    "pmns_chart_constant_q_koide_brannen_lift_narrow_theorem_note_2026-05-17": {
+      "assert_count": 0,
+      "counts": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_pmns_chart_constant_q_koide_brannen_lift_narrow.py"
+    },
     "pmns_chart_constants_retention_stretch_attempt_note_2026-05-03": {
       "assert_count": 1,
       "counts": {
@@ -16787,6 +16811,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py"
+    },
+    "pmns_theta23_upper_octant_chamber_closure_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 1,
+        "D": 10
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_pmns_theta23_upper_octant_chamber_closure_narrow.py"
     },
     "pmns_theta23_upper_octant_chamber_closure_prediction_note_2026-04-17": {
       "assert_count": 0,
@@ -19740,6 +19776,18 @@
       "dominant_class": "D",
       "runner": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py"
     },
+    "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py"
+    },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
@@ -21731,6 +21779,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_universal_gr_supermetric_normal_form.py"
+    },
+    "universal_gr_tensor_action_casimir_equivariant_class_nogo_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 19,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_universal_gr_tensor_action_casimir_equivariant_class_nogo.py"
     },
     "universal_gr_tensor_quotient_uniqueness_note": {
       "assert_count": 1,
@@ -24659,6 +24719,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/audit_companion_bae_u1b_six_ray_dirac_measure_2026_05_17.py": {
+      "assert_count": 0,
+      "claims": [
+        "bae_u1b_six_ray_dirac_measure_stretch_attempt_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/audit_companion_charged_lepton_koide_cone_algebraic.py": {
       "assert_count": 1,
       "claims": [
@@ -25164,6 +25239,21 @@
         "B": 0,
         "C": 0,
         "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 7
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -40978,6 +41068,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_pmns_chart_constant_q_koide_brannen_lift_narrow.py": {
+      "assert_count": 0,
+      "claims": [
+        "pmns_chart_constant_q_koide_brannen_lift_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_pmns_chart_constants_retention.py": {
       "assert_count": 1,
       "claims": [
@@ -41473,6 +41578,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_pmns_theta23_upper_octant_chamber_closure_narrow.py": {
+      "assert_count": 1,
+      "claims": [
+        "pmns_theta23_upper_octant_chamber_closure_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 1,
+        "D": 10
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_pmns_theta23_upper_octant_chamber_closure_prediction.py": {
@@ -45138,6 +45258,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/frontier_universal_gr_tensor_action_casimir_equivariant_class_nogo.py": {
+      "assert_count": 1,
+      "claims": [
+        "universal_gr_tensor_action_casimir_equivariant_class_nogo_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 19,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/frontier_universal_gr_tensor_quotient_uniqueness.py": {
@@ -51563,16 +51698,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 288,
+    "decoration_candidates": 289,
     "dominant_class_distribution": {
-      "A": 178,
+      "A": 180,
       "B": 256,
       "C": 703,
-      "D": 286,
+      "D": 289,
       "none": 423
     },
-    "runners_classified": 1846,
-    "runners_with_C": 906,
-    "runners_with_D": 523
+    "runners_classified": 1851,
+    "runners_with_C": 907,
+    "runners_with_D": 527
   }
 }

@@ -304,4 +304,11 @@ PASS=15  FAIL=0
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [graviton_mass_spectral_gap_identity_theorem_note](GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
+- `graviton_mass_spectral_gap_identity_theorem_note`
+  (see-also cross-reference; backticked to break cycle-0015 in the citation
+  graph. The spectral-gap identity theorem note records its own role as
+  "package[ing] that already-exact relation [m_g^2 = 2 hbar^2 Lambda_vac / c^2]
+  into a standalone retained theorem" — its identity is sourced from the
+  present derived note's "Exact (given S^3 with R = c/H_0)" section. The
+  load-bearing citation direction is *spectral_gap_identity_theorem →
+  this_graviton_mass_derived*, not vice versa.)

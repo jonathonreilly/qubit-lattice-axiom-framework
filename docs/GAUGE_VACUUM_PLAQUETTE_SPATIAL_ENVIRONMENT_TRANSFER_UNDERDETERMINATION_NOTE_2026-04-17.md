@@ -177,7 +177,37 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   reduction of the spatial-environment transfer underdetermination surface);
   the load-bearing citation direction is beta6 -> underdetermination, not
   vice versa.)
-- [gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md)
-- [gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_EXACT_RADICAL_RECONSTRUCTION_MAP_NOTE_2026-04-17.md)
-- [gauge_vacuum_plaquette_first_symmetric_three_sample_current_stack_constraint_boundary_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_CURRENT_STACK_CONSTRAINT_BOUNDARY_NOTE_2026-04-17.md)
-- [gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md)
+- `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17`
+  (see-also cross-reference; backticked to break plaquette-cluster cycles
+  0001-0007 in the citation graph. The compressed-rim-functional uniqueness
+  theorem is a downstream class-sector retained theorem in the plaquette PF
+  stack; the present underdetermination obstruction note's body cites the
+  upstream "exact spatial-environment transfer theorem" rather than this
+  downstream uniqueness theorem, and the compressed-rim note carries its
+  own backticked downstream-consumer pointer back here. The load-bearing
+  citation direction is *compressed_rim_functional_uniqueness →
+  underdetermination* via the spatial-environment transfer chain, not vice
+  versa.)
+- `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17`
+  (see-also cross-reference; backticked to break plaquette-cluster cycles
+  in the citation graph. The exact-radical-reconstruction-map note is a
+  downstream sampling-reconstruction theorem; the present underdetermination
+  obstruction note does not consume the reconstruction map for its no_go
+  surface, which is closed by the spatial-environment transfer / Wilson
+  parent stack cited in the body. The load-bearing citation direction is
+  *exact_radical_reconstruction_map → underdetermination*, not vice versa.)
+- `gauge_vacuum_plaquette_first_symmetric_three_sample_current_stack_constraint_boundary_note_2026-04-17`
+  (see-also cross-reference; backticked to break plaquette-cluster cycles
+  in the citation graph. The current-stack constraint-boundary note is a
+  downstream three-sample sampling-burden theorem that itself cites the
+  present underdetermination note via the spatial-environment-transfer
+  measure theorem chain. The load-bearing citation direction is
+  *current_stack_constraint_boundary → underdetermination*, not vice versa.)
+- `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17`
+  (see-also cross-reference; backticked to break plaquette-cluster cycles
+  in the citation graph. The local-Wilson positive-cone-obstruction note is
+  a downstream three-sample positive-cone reduction; the present
+  underdetermination obstruction is upstream in the plaquette PF gap
+  argument and does not consume the positive-cone reduction for its no_go
+  surface. The load-bearing citation direction is
+  *positive_cone_obstruction → underdetermination*, not vice versa.)

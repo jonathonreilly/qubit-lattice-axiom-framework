@@ -284,7 +284,14 @@ restate it.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [dark_energy_eos_retained_corollary_theorem_note](DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md)
+- `dark_energy_eos_retained_corollary_theorem_note`
+  (see-also cross-reference; backticked to break cycle-0012 in the citation
+  graph. The present companion's reclassification block above explicitly
+  records "this note is a numerical / algebraic / evolution-model companion
+  to the retained corollary" and "the load-bearing chain lives upstream and
+  is unchanged by this file's presence or absence"; the load-bearing
+  citation direction is *this_eos_companion → eos_retained_corollary*, so
+  this bookkeeping back-link is informational rather than load-bearing.)
 - [cosmological_constant_spectral_gap_identity_theorem_note](COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
 - [universal_qg_smooth_gravitational_global_solution_class_note](UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md)
 - [universal_gr_discrete_global_closure_note](UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md)

@@ -211,4 +211,12 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   *current_stack_constraint_boundary → first_symmetric_reconstruction_map
   → this_seam*)
 - [gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md)
-- [gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17](GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md)
+- `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17`
+  (see-also cross-reference; backticked to break residual plaquette-cluster
+  cycles through the local-Wilson positive-cone-obstruction surfaced after
+  the underdetermination see-also edges were demoted in this PR. The
+  positive-cone-obstruction note is a downstream three-sample positive-cone
+  reduction; the present beta6 evaluation-seam reduction note closes the
+  explicit beta=6 seam upstream and does not consume the positive-cone
+  reduction for its own scope. The load-bearing citation direction is
+  *positive_cone_obstruction → this_seam*, not vice versa.)

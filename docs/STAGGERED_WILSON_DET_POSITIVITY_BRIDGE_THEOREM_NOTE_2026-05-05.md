@@ -361,4 +361,10 @@ proven theorem**, not the load-bearing input.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [axiom_first_reflection_positivity_theorem_note_2026-04-29](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- `axiom_first_reflection_positivity_theorem_note_2026-04-29`
+  (see-also cross-reference; backticked to break cycle-0008 in the citation
+  graph. The "## Citations" section of the present bridge note explicitly
+  records "Parent integration target: ... (not a load-bearing dependency of
+  this bridge note; the dependency edge is parent-to-bridge)"; the
+  load-bearing citation direction is therefore
+  *axiom_first_reflection_positivity → this_bridge*, not vice versa.)

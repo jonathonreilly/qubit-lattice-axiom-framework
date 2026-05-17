@@ -1,17 +1,13 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 940,
+    "bounded_theorem": 943,
     "decoration": 20,
     "meta": 199,
-    "no_go": 237,
+    "no_go": 238,
     "open_gate": 110,
-    "positive_theorem": 737
+    "positive_theorem": 738
   },
   "cycle_examples": [
-    [
-      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-    ],
     [
       "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
       "lorentz_kernel_positive_closure_note",
@@ -57,9 +53,19 @@
     [
       "planck_scale_conditional_completion_note_2026-04-24",
       "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2"
+    ],
+    [
+      "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+      "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
+      "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+      "lorentz_kernel_positive_closure_note",
+      "emergent_lorentz_invariance_note",
+      "planck_scale_lane_status_note_2026-04-23",
+      "planck_scale_conditional_completion_note_2026-04-24",
+      "planck_orientation_principle_bounded_note_2026-05-10_planckp3"
     ]
   ],
-  "cycles_detected": 231,
+  "cycles_detected": 213,
   "effective_status_counts": {
     "audited_conditional": 167,
     "audited_failed": 19,
@@ -82,7 +88,7 @@
     "retained_bounded": 324,
     "retained_no_go": 138,
     "retained_pending_chain": 4,
-    "unaudited": 1238
+    "unaudited": 1243
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

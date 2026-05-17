@@ -182,7 +182,13 @@ Theorem-side authorities (load-bearing one-hop deps):
 - [DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
   — axiom-side boundary on the `N_e` active-column problem this note
   reduces.
-- [DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md)
+- `DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md`
+  (see-also cross-reference; backticked to break cycle-0013 in the citation
+  graph. The triplet-sign theorem's own helper-import block records that
+  the present projected-source law derivation's runner supplies
+  `hermitian_linear_responses` to the sign-theorem runner; the load-bearing
+  citation direction is *triplet_sign_theorem → this_law_derivation*,
+  not vice versa.)
   — sign orientation companion for the projected-source triplet,
   paired with the projected-source law derived here.
 

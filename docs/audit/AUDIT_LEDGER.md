@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 317 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 166 |
 | ~~audited_failed~~ | 18 |
-| `decoration_under_cl3_color_automorphism_theorem` | 5 |
+| `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
@@ -45,16 +45,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 1 |
 | `audited_clean` | 534 |
 | `audited_conditional` | 166 |
-| `audited_decoration` | 17 |
+| `audited_decoration` | 18 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 933 |
-| `decoration` | 18 |
+| `bounded_theorem` | 932 |
+| `decoration` | 19 |
 | `meta` | 199 |
 | `no_go` | 234 |
 | `open_gate` | 111 |
@@ -830,6 +830,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -10030,6 +10031,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Finite-dimensional SU(3) generator algebra on the cited V_3 carrier: trace normalization, Lie closure, C_2 proportionality to identity, and value 4/3 checked against the Gell-Mann realization and the source trace proof.  _(class `C`)_
 - **chain closes:** True — The one-hop dependency is retained_bounded for the algebraic SU(3) embedding only, and the source note confines this row to the exact algebraic K1-K3 Casimir result. The live runner reproduced the cached PASS result for all seven finite-matrix checks.
 - **rationale:** Within the narrowed algebraic scope, the proof is standard finite-dimensional SU(3) representation algebra: centrality follows from antisymmetry of f^{abc}, Schur scalar follows from irreducibility of the cited carrier, and the value follows from the trace normalization. The runner verifies the concrete Gell-Mann realization, including trace normalization, closure, scalar Casimir, and 4/3 value. The note explicitly defers the physical-color bridge and downstream color-factor physics, so no unsupported phenomenological content is ratified.
+- **auditor confidence:** high
+
+### `su3_casimir_fundamental_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic K1-K3 only: the quadratic Casimir Σ_a T^aT^a on the cited SU(3) fundamental V_3 with Gell-Mann normalization equals (4/3)I_3; physical quark color-factor readouts are excluded.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-123450-20260517T123450Z-4146bd4b-su3_casimir_fundamental_-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Tr[C_2] = Σ_a Tr[T^a T^a] = 8·(1/2) = 4, while Tr[c_2(3) I_3] = 3c_2(3), hence c_2(3)=4/3.  _(class `A`)_
+- **chain closes:** True — Within the narrowed algebraic scope, the result follows from the cited SU(3) fundamental action with Tr[T^aT^b]=(1/2)δ^{ab} plus Schur's lemma and the trace computation. The missing physical color-identification bridge is explicitly outside the audited claim scope.
+- **rationale:** The load-bearing step is a genuine algebraic identity check on the already-cited SU(3) fundamental representation and admitted standard mathematics. The runner instantiates standard Gell-Mann matrices and verifies Hermiticity, normalization, closure, scalar Casimir behavior, and the value 4/3, but it does not derive a new framework object beyond the upstream algebraic SU(3) carrier. With zero external comparator checks and a chain reducing to one upstream parent claim plus standard Lie-algebra facts, the decoration tie-break applies rather than audited_clean.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`

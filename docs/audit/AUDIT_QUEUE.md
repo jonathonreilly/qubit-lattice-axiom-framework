@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1239
+**Total pending:** 1238
 **Ready (all deps already at retained-grade or metadata tiers):** 38
 
 By criticality:
-- `critical`: 762
+- `critical`: 761
 - `high`: 35
 - `medium`: 153
 - `leaf`: 289
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 835 | 18.21 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
+| 1 | `g_bare_rigidity_theorem_note` | positive_theorem | unaudited | critical | 834 | 13.21 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rigidity_theorem.py` |
 | 2 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 833 | 19.20 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cl3_per_site_uniqueness_check.py` |
 | 3 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | unaudited | critical | 818 | 13.18 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py` |
 | 4 | `dimensional_gravity_table` | bounded_theorem | unaudited | critical | 811 | 12.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/dimensional_gravity_table_certificate_runner_2026_05_03.py` |
@@ -62,9 +62,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 45 | `three_generation_observable_theorem_note` | bounded_theorem | unaudited | critical | 839 | 46.21 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_three_generation_observable_theorem.py` |
 | 46 | `gate_b_weak_connectivity_note` | bounded_theorem | unaudited | critical | 837 | 12.71 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/gate_b_weak_connectivity_harness.py` |
 | 47 | `three_generation_structure_note` | bounded_theorem | unaudited | critical | 834 | 30.21 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_generation_fermi_point.py` |
-| 48 | `g_bare_rigidity_theorem_note` | positive_theorem | unaudited | critical | 834 | 13.21 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_rigidity_theorem.py` |
-| 49 | `g_bare_structural_normalization_theorem_note_2026-04-18` | positive_theorem | unaudited | critical | 833 | 18.20 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_structural_normalization.py` |
-| 50 | `gate_b_nonlabel_connectivity_v1_note` | bounded_theorem | unaudited | critical | 833 | 13.20 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/gate_b_nonlabel_connectivity_v1.py` |
+| 48 | `g_bare_structural_normalization_theorem_note_2026-04-18` | positive_theorem | unaudited | critical | 833 | 18.20 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_structural_normalization.py` |
+| 49 | `gate_b_nonlabel_connectivity_v1_note` | bounded_theorem | unaudited | critical | 833 | 13.20 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/gate_b_nonlabel_connectivity_v1.py` |
+| 50 | `source_resolved_exact_green_pocket_note` | bounded_theorem | unaudited | critical | 830 | 12.70 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/source_resolved_exact_green_pocket.py` |
 
 ## Citation cycle break targets
 

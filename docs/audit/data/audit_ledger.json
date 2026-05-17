@@ -157013,22 +157013,41 @@
       "verdict_rationale": null
     },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:03:22.956138+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M)."
+        },
+        "dep_claim_type": {
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "0f412a8805bc8953952c1dc1a90198adfe259de6388682bcdea7a1dae445cc1c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-150053-bc2044d8-observable_principle_p1_-012",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded scope, the chain closes: determinant factorization and log/entropy additivity are exact checks, and the note explicitly keeps additivity as an input rather than a derived conclusion. No framework-level P1 closure is claimed.",
       "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded external-classification scaffold: additive-functional uniqueness gives W=c log|Z| only conditional on P1, and the scaffold does not retire the admitted P1 additivity premise.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:03:22.956138+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -157036,32 +157055,32 @@
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given an admitted continuous additive scalar functional W(r1 r2)=W(r1)+W(r2), Cauchy/Shannon-Khinchin-Aczel-Daroczy classify the additive class as logarithmic/Shannon form, but those theorems assume additivity and therefore do not derive P1.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "bf9e928a19b5ed0ac4ffdb95b1d048f0a92d92e8a52a6482f67589e0ea1d3bb2",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the exact Khinchin/Aczel-Daroczy bibliographic scope, since the runner samples the axioms and cites uniqueness rather than reproving the published classification theorem.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 19,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 19
       },
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic/logical classification over an explicitly assumed additive functional class, not a first-principles derivation of physical additivity. The runner source performs real symbolic/numeric checks plus source-boundary checks and does not hard-code a contested numerical target or import an external comparator. The note's conclusion is honestly bounded: it records the external uniqueness scaffold and states that P1 remains unretired."
     },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-17T12:57:36.996149+00:00",

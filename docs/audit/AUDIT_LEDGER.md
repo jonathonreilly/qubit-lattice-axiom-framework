@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 325 |
+| **retained_bounded** | 326 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 543 |
+| `audited_clean` | 544 |
 | `audited_conditional` | 174 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 64 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
@@ -428,6 +428,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7752,6 +7753,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The existential obstruction is plausible, but the stated universal P3 condition is false: r_A^p r_B^p = r_A^p + r_B^p can hold accidentally, e.g. r_A^p=r_B^p=2. The runner checks selected witnesses only and does not establish the note's 'whenever' claim.
 - **rationale:** The algebraic determinant and multiplicative F_p checks are real computations, and there are no external comparator or tuned numerical inputs. However the load-bearing non-additivity statement is over-quantified: the equation xy=x+y has positive nontrivial solutions, so the claimed inequality for every r_A,r_B != 1 is not true. A reduced claim saying F_p is not globally additive because explicit witness pairs have nonzero defect would likely close, but the source note as written does not.
 - **auditor confidence:** high
+
+### `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded external-classification scaffold: additive-functional uniqueness gives W=c log|Z| only conditional on P1, and the scaffold does not retire the admitted P1 additivity premise.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-150053-bc2044d8-observable_principle_p1_-012`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given an admitted continuous additive scalar functional W(r1 r2)=W(r1)+W(r2), Cauchy/Shannon-Khinchin-Aczel-Daroczy classify the additive class as logarithmic/Shannon form, but those theorems assume additivity and therefore do not derive P1.  _(class `A`)_
+- **chain closes:** True — For the bounded scope, the chain closes: determinant factorization and log/entropy additivity are exact checks, and the note explicitly keeps additivity as an input rather than a derived conclusion. No framework-level P1 closure is claimed.
+- **rationale:** The load-bearing step is an algebraic/logical classification over an explicitly assumed additive functional class, not a first-principles derivation of physical additivity. The runner source performs real symbolic/numeric checks plus source-boundary checks and does not hard-code a contested numerical target or import an external comparator. The note's conclusion is honestly bounded: it records the external uniqueness scaffold and states that P1 remains unretired.
+- **auditor confidence:** medium
 
 ### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`
 

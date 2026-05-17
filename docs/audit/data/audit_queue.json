@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 739,
     "high": 35,
-    "leaf": 309,
+    "leaf": 308,
     "medium": 155
   },
   "cycle_break_target_count": 214,
@@ -31543,30 +31543,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "retardation_discriminator_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40317,6 +40293,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 35,
-  "total_pending": 1238
+  "ready_count": 34,
+  "total_pending": 1237
 }

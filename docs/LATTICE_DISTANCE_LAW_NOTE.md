@@ -264,3 +264,12 @@ matched to the predicted `0.5` within `0.051`. This is the framework
 content the source note's bounded fit has to satisfy and does
 satisfy. It is the strongest derivable property of the harness; the
 `b`-exponent itself is not promoted from the bounded numerical fit.
+
+---
+
+**Audit re-queue note 2026-05-17:** an earlier re-audit ran before
+`scripts/codex_audit_runner.py` substituted `{{HELPER_RUNNER_SOURCES}}`,
+so the packet could still omit helper runner sources. This source-only
+bookkeeping note intentionally changes the note hash to queue a fresh
+independent audit with helper sources bundled from the ledger row's
+`helper_runner_paths`. No science content changes.

@@ -39590,7 +39590,7 @@
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "note_hash": "0bcfb1f62bedaf2f9582983815df0db05b49faef2719c828f349b3641345b767",
+      "note_hash": "beacdbc528d0ae735e49eaeb19cc5a35f3b7040fcd63f061c89981b5510fc1e6",
       "path": "docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_mass_scaling.py",
       "title": "Asymmetry Persistence Mass Scaling Note"
@@ -44425,7 +44425,7 @@
         "scripts/three_d_joint_test.py",
         "scripts/three_d_modular_gravity_mass_scaling.py"
       ],
-      "note_hash": "11c6d6115e6ddbc4b165e5fd6d0ca4ec656ba09ff75cafdf167c06fe95066bdc",
+      "note_hash": "5365495c62c398ef92742d8ebadb6a525a16e8b043baa176043e4b2bfc4f0b2e",
       "path": "docs/DENSE_PRUNE_GUARD_SEED_NOTE.md",
       "runner_path": "scripts/channel_count_guarded_prune.py",
       "title": "Dense Prune Guard Seed Note"
@@ -57849,7 +57849,7 @@
       "helper_runner_paths": [
         "scripts/lattice_mirror_distance.py"
       ],
-      "note_hash": "6191606402439a954fb615db38b78f160d5a07a65e4be6b7a351cebfdbba71ed",
+      "note_hash": "1943997b7b88f100281eb2ded11427f4cc216aa1ca8afe9d744341232727ba39",
       "path": "docs/LATTICE_DISTANCE_LAW_NOTE.md",
       "runner_path": "scripts/lattice_no_barrier_distance.py",
       "title": "Lattice Distance-Law Note"

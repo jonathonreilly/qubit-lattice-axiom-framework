@@ -86,11 +86,12 @@ Interpretation:
 Generated hard geometry helps the **mass window**, but it does not solve
 the mass law.
 
-What is retained:
+What is generated retained-grade:
 
 - on dense `N=100` generated graphs, persistence sharpens the mass
   response relative to the baseline generated geometry
-- the cleanest retained row is the `thr = 0.10` layernorm lane
+- the cleanest generated retained-grade row is the `thr = 0.10`
+  layernorm lane
 - the mass response is positive and sublinear, with strong fit quality
 
 What is not retained:
@@ -114,9 +115,9 @@ So this lane now looks like:
 
 ---
 
-**Audit requeue note, 2026-05-17:** the previous
-`audited_conditional` verdict cited an incomplete restricted packet with
-missing helper-script imports. The audit ledger now records
+**Audit requeue note, 2026-05-17:** the previous generated audit record
+used an incomplete restricted packet with missing helper-script imports.
+The audit ledger now records
 `helper_runner_paths` for this row, so the next audit packet should
 include `scripts/asymmetry_persistence_joint_card.py`,
 `scripts/asymmetry_persistence_pilot.py`,
@@ -124,3 +125,12 @@ include `scripts/asymmetry_persistence_joint_card.py`,
 `scripts/gap_topological_asymmetry_layernorm_combo.py` alongside the
 primary runner and cache. This note changes no science content; it makes
 the re-audit hash drift explicit.
+
+---
+
+**Audit re-queue note 2026-05-17:** an earlier re-audit ran before
+`scripts/codex_audit_runner.py` substituted `{{HELPER_RUNNER_SOURCES}}`,
+so the packet could still omit helper runner sources. This source-only
+bookkeeping note intentionally changes the note hash to queue a fresh
+independent audit with helper sources bundled from the ledger row's
+`helper_runner_paths`. No science content changes.

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 343 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1227 |
+| unaudited | 1230 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 187 |
+| ~~audited_conditional~~ | 184 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,21 +48,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 568 |
-| `audited_conditional` | 187 |
+| `audited_conditional` | 184 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1429 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 970 |
+| `bounded_theorem` | 969 |
 | `decoration` | 25 |
 | `meta` | 206 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
-| `positive_theorem` | 743 |
+| `positive_theorem` | 744 |
 
 | criticality | count |
 |---|---:|
@@ -690,7 +690,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `alternative_coupled_field_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_born_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `asymmetry_persistence_mass_scaling_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -722,7 +721,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `dense_prune_guard_seed_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -805,7 +803,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lanes.ordered-lattice.readme` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `lattice_3d_l2_tail_stats_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `lattice_distance_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `matter_radiation_equality_structural_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -1398,19 +1395,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cached runner output matches the note's retained N=80/100 tables and the provided runner source performs graph generation, propagation, purity, gravity, and corrected Sorkin/Born calculations rather than printing fixed constants. The note explicitly demotes the N=120 probe and central-band comparison outside the binding audited scope.
 - **rationale:** Within the narrowed N=80/100 scope, the claim is supported by a completed cached runner with matching parameters, exit_code 0, and table values matching the note. The runner source computes the listed metrics on generated same-graph instances and includes the corrected -P(empty) Born term, so the load-bearing step is a bounded first-principles compute rather than a definition, renaming, or tuned external comparison. The gravity language is appropriately limited: the retained result is primarily a decoherence and Born-clean coexistence claim, not a robust gravity win across the broader lane.
 - **auditor confidence:** medium
-
-### `asymmetry_persistence_mass_scaling_note`
-
-- **Note:** [`ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite N=100, npl=60, 8-seed mass-scaling sweep over thresholds 0.00, 0.10, and 0.20 and M in {1,2,3,5,8,12}, with fits on M in {2,3,5,8}.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-132110-20260517T132110Z-a642a7f9-asymmetry_persistence_ma-targeted`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** On dense N=100 generated graphs, persistence sharpens the mass response relative to baseline generated geometry, with the cleanest retained row the thr = 0.10 layernorm lane showing a positive sublinear fit.  _(class `C`)_
-- **chain closes:** False — The cached stdout matches the note's reported coefficients and the primary runner is not just printing constants, but the runner's load-bearing graph construction, field computation, propagation rules, and K_BAND normalization are imported from helper scripts not included in the restricted packet. Without those helper sources, the first-principles computation cannot be verified from the provided inputs.
-- **rationale:** Issue: the claimed mass-window improvement rests on a runner whose primary file delegates the hard geometry and propagation implementation to unprovided helper modules. Why this blocks: the restricted packet cannot verify that build_graph, compute_field_3d, propagate_3d_linear, propagate_3d_layernorm, K_BAND, and graph metadata implement the stated axiom-level computation rather than importing an unsupported premise. Repair target: include and audit the helper runner paths cited in the requeue note, or provide an independent derivation/certificate for the graph and propagation operators. Claim boundary until fixed: the packet supports that the cached primary runner output reports positive sublinear fits, not that the framework-internal first-principles chain is closed.
-- **auditor confidence:** high
 
 ### `asymmetry_persistence_mass_window_note`
 
@@ -2895,19 +2879,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the frozen 3D 1/L^2 lattice replay, the decoherence observables are exactly identical for the valley-linear and spent-delay actions at h in {1.0, 0.5, 0.25}.  _(class `C`)_
 - **chain closes:** False — The primary runner has completed stdout and computes observables by calling the imported lattice propagation harness, but the restricted packet does not include the imported Lattice3D.propagate implementation or the action-law definitions needed to verify that the two requested action modes are genuinely implemented and differ only by phase at zero field.
 - **rationale:** The runner output supports exact numerical identity across the tested h values, and the visible source performs a substantive replay rather than merely printing constants. However, the load-bearing computation depends on scripts.valley_linear_same_harness_compare for the lattice, propagation routine, constants, slit setup, and action-mode semantics. Because that helper source is not included in the restricted packet, the audit cannot verify the zero-field action reduction or that the compared modes are independently implemented.
-- **auditor confidence:** high
-
-### `dense_prune_guard_seed_note`
-
-- **Note:** [`DENSE_PRUNE_GUARD_SEED_NOTE.md`](../../docs/DENSE_PRUNE_GUARD_SEED_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audited the restricted-packet support for the claim that channel-count guarded pruning is a seed-selective channel-preservation mechanism for the listed dense-prune flip seeds.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-132426-20260517T132426Z-8567c6a8-dense_prune_guard_seed_n-targeted`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The guard fixes specific seeds when it preserves the effective detector-channel count and leaves other seeds vulnerable when eff_ch still drops.  _(class `C`)_
-- **chain closes:** False — The primary runner appears to compute the relevant channel-count, gravity-shift, decoherence, and flip metrics, but its load-bearing imports are opaque because the named helper runner sources were not actually included. The provided stdout also reports aggregate sweep rows rather than the note's exact per-seed table.
-- **rationale:** The primary runner source contains a real computational path rather than a trivial printout or hard-coded expected table, so the intended load-bearing step is class C. However, the restricted packet is incomplete: the helper runner source block contains only the literal placeholder {{HELPER_RUNNER_SOURCES}} while the note names required helper paths including scripts/causal_field_mass_scaling.py, scripts/dense_prune_q003_joint_strict.py, scripts/three_d_joint_test.py, and scripts/three_d_modular_gravity_mass_scaling.py. Without those helper sources, the imported graph generation, pruning, propagation, field, and purity routines cannot be audited, and the exact per-seed table is not reproduced in the provided stdout.
 - **auditor confidence:** high
 
 ### `diamond_signal_budget_hardening_note`
@@ -7056,21 +7027,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The canonical sweep shows a continuous tradeoff between decoherence/which-slit structure and distance-law quality, with only gap = 2 clearing the declared bounded-balance guard.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the ordered lattice, slit cards, propagations, observables, distance fits, Born companion audit, and guard directly rather than printing constants. Within the restricted packet, the note's bounded conclusion follows from that computation and explicitly excludes same-card attractive gravity or full unification.
 - **rationale:** The load-bearing step is a first-principles computation over the stated ordered-lattice setup, producing the MI, d_TV, decoherence, distance-fit, gravity-sign, Born, and k=0 sweep values. The source code does not import cited authorities or hard-code expected table values; it computes the rows from lattice generation, propagation, field evaluation, and fitting helpers. The promoted claim is carefully bounded to a tradeoff curve with a sweet spot and does not claim same-card attractive gravity or one-family unification.
-- **auditor confidence:** high
-
-### `lattice_distance_law_note`
-
-- **Note:** [`LATTICE_DISTANCE_LAW_NOTE.md`](../../docs/LATTICE_DISTANCE_LAW_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded N=40 no-barrier ordered-lattice numerical distance-law fit and k=0 control as reported by scripts/lattice_no_barrier_distance.py and its cached stdout.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-132341-20260517T132341Z-bd2e7b0c-lattice_distance_law_not-targeted`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The ordered lattice gives |delta| ~= 23.5071 * b^(-1.052) with R^2 = 0.9850 on the far-field window b >= 7 for the N = 40 no-barrier harness.  _(class `C`)_
-- **chain closes:** False — The primary runner recomputes the displayed rows and fit rather than printing hard-coded constants, but its load-bearing transport functions are imported from scripts/lattice_mirror_distance.py. That helper source is missing from the restricted packet, so the lattice update rules and field computation cannot be verified one hop upstream.
-- **rationale:** The cached primary runner output matches the source note's seven centroid rows, k=0 control, and far-field fit, and the primary runner source shows an actual fit over computed rows. However, the primary runner imports generate_lattice_mirror, propagate, and compute_field_at_b from scripts/lattice_mirror_distance.py, while the helper source section contains only the unsubstituted {{HELPER_RUNNER_SOURCES}} placeholder. Because the load-bearing lattice dynamics are opaque without that helper, this is a runner artifact completeness defect rather than a closed audit.
-- **open / conditional deps cited:**
-  - `scripts/lattice_mirror_distance.py`
 - **auditor confidence:** high
 
 ### `lattice_fanout_continuum_note`

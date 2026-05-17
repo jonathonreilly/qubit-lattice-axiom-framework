@@ -84,3 +84,7 @@ statement remains occupancy-first, and the next bounded continuous-law step, if
 one is still needed, should start from the 3-NN stencil's residual anatomy or
 another equally local occupancy-aware correction, not from a broader
 denominator search.
+
+---
+
+**Re-queued for re-audit 2026-05-17:** previous `audited_conditional` verdict cited packet incompleteness (missing helper-script imports from the restricted packet). The audit pipeline now populates `helper_runner_paths` per [PR #1371](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1371) so the next audit pass receives the complete packet. Helpers now declared: ``. The current re-queue is mechanical — no science content changes — and is documented here so the hash drift is explicit.

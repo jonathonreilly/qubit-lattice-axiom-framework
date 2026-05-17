@@ -311,10 +311,95 @@ proposed_claim_type: positive_theorem
 status_authority: independent audit lane only
 audit_required_before_effective_retained: true
 actual_current_surface_status: synthesis-aggregator anomaly-cancellation theorem assembling four exact gauge-anomaly trace identities plus the SU(2) Witten Z_2 parity into a single closure statement on the retained Cl(3)/Z³ LH-frame matter content
-conditional_surface_status: full SM gauge-anomaly closure (A1)-(A5) holds simultaneously on one retained matter-content surface; conditional on retained-grade upstreams (NATIVE_GAUGE_CLOSURE, GRAPH_FIRST_SU3_INTEGRATION, three-generation structure, LEFT_HANDED_CHARGE_MATCHING, HYPERCHARGE_IDENTIFICATION, ONE_GENERATION_MATTER_CLOSURE, SM hypercharge uniqueness) and on the three component anomaly theorems (SU(3)^3, LH trace catalog, SU(2) Witten Z_2)
+conditional_surface_status: full SM gauge-anomaly closure (A1)-(A5) holds simultaneously on one tier-mixed matter-content surface; conditional on the actual mix of upstream audit tiers (see Upstream-tier accounting (2026-05-17) below) and on the three component anomaly theorems whose own audit statuses are likewise tier-mixed.
 hypothetical_axiom_status: null
 admitted_observation_status: "Standard ABJ anomaly-trace formulae, Dynkin-index normalization T(3) = T(2) = 1/2, standard SU(3) cubic anomaly indices A(3) = +1, A(3bar) = -1, Witten (1982) homotopy fact pi_4(SU(2)) = Z_2 admitted as universal QFT/topology input."
 proposal_allowed: false
-proposal_allowed_reason: "Source note records the synthesis closure theorem. Effective retained tier is set by the independent audit lane based on retained-grade upstream availability of the three component anomaly theorems (already audit-pending under their own status fields) plus the listed retained-grade gauge-structure and matter-content notes; not asserted by author."
+proposal_allowed_reason: "Source note records the synthesis closure theorem. Effective retained tier is set by the independent audit lane based on the actual mix of upstream audit tiers (per the Upstream-tier accounting section below); not asserted by author. The earlier blanket 'retained-grade upstreams' wording overstated the upstream tier mix and has been corrected."
 bare_retained_allowed: false
 ```
+
+## 7. Upstream-tier accounting (2026-05-17)
+
+The conditional_surface_status above previously asserted that this
+synthesis was "conditional on retained-grade upstreams" plus the three
+component anomaly theorems (treated as a single "audit-pending" set). The
+2026-05-17 ledger snapshot shows the upstreams actually sit at a **mix**
+of audit tiers, not a uniform retained-grade set:
+
+### Retained inputs (table-1 row order)
+
+| Upstream | `claim_type` | `audit_status` | `effective_status` |
+|---|---|---|---|
+| `NATIVE_GAUGE_CLOSURE_NOTE` | `bounded_theorem` | `audited_clean` | `retained_bounded` |
+| `GRAPH_FIRST_SU3_INTEGRATION_NOTE` | `bounded_theorem` | `audited_clean` | `retained_bounded` |
+| `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `THREE_GENERATION_STRUCTURE_NOTE` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `LEFT_HANDED_CHARGE_MATCHING_NOTE` | `bounded_theorem` | `audited_clean` | `retained_bounded` |
+| `HYPERCHARGE_IDENTIFICATION_NOTE` | `bounded_theorem` | `audited_conditional` | `audited_conditional` |
+| `ONE_GENERATION_MATTER_CLOSURE_NOTE` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24` | `positive_theorem` | `unaudited` | `unaudited` |
+
+### Component anomaly theorems
+
+| Component | `claim_type` | `audit_status` | `effective_status` |
+|---|---|---|---|
+| `SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24` | `positive_theorem` | `audited_conditional` | `audited_conditional` |
+| `LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25` | `positive_theorem` | `unaudited` | `unaudited` |
+| `SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24` | `positive_theorem` | `unaudited` | `unaudited` |
+| `RH_SECTOR_ANOMALY_CANCELLATION_IDENTITIES_NOTE_2026-05-02` | `positive_theorem` | `unaudited` | `unaudited` |
+
+### Implication for this synthesis
+
+The synthesis closure `(A1)-(A5)` holds on the retained Cl(3)/Z³
+LH-frame surface modulo the **weakest** tier in its upstream composite.
+With several upstreams currently `unaudited` (three-generation structure,
+ONE_GENERATION_MATTER_CLOSURE, SM hypercharge uniqueness) and one
+`audited_conditional` (HYPERCHARGE_IDENTIFICATION), the synthesis is
+**not** uniformly conditioned on retained-grade upstreams as previously
+stated. The effective tier of this synthesis row, as judged by the audit
+lane, is bounded above by the weakest of these.
+
+The synthesis's own arithmetic (exact `Fraction` and integer-parity
+equalities for `(A1)-(A5)`) is unaffected; what was over-stated was the
+**input-tier qualifier** in the conditional_surface_status field.
+
+### Cross-reference dep clarification (citation-graph note)
+
+The `ANOMALY_FORCES_TIME_THEOREM.md` link in §5 (Cross-references) is an
+**informational / parent-framework** pointer, not a load-bearing input.
+This synthesis does **not** import `d_t = 1`, the `(3, 1)` signature
+conclusion, or any other content of `ANOMALY_FORCES_TIME_THEOREM` as a
+proof step in `(A0)-(A5)`. The citation-graph parser nonetheless records
+it as a `dep`, which produces an apparent (rather than load-bearing)
+edge in the audit graph. Recording it here so downstream audit tooling
+can disambiguate.
+
+## 8. Fix record (2026-05-17, downstream surgical-fix wave)
+
+Two hostile-audit-grade fixes applied to this note:
+
+- **F-A (stale "retained-grade upstreams" tier descriptor):** the
+  conditional_surface_status field previously labelled the upstream
+  composite as "retained-grade", but 4 of the 7 named upstreams
+  (three-generation structure, HYPERCHARGE_IDENTIFICATION,
+  ONE_GENERATION_MATTER_CLOSURE, SM hypercharge uniqueness) are not at
+  `retained_bounded` per the 2026-05-17 ledger. Replaced with
+  "tier-mixed matter-content surface" and added the §7 tier-accounting
+  tables. Inline retraction in the proposal_allowed_reason field.
+- **Cross-reference dep clarification:** disclosed that the
+  `ANOMALY_FORCES_TIME_THEOREM` link in §5 is an informational pointer
+  in the cross-reference list, not a load-bearing input to the
+  `(A0)-(A5)` proofs; the citation-graph edge from this synthesis to
+  `anomaly_forces_time_theorem` is therefore an apparent dep (graph
+  artifact), not a content-citation flow.
+
+See companion fix-record:
+[`AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+
+Paired verifier:
+`scripts/frontier_axiom_first_sm_anomaly_cancellation_complete_downstream_fix.py`.
+
+None of these edits change the `(A0)-(A5)` proofs, the synthesis
+statement, the arithmetic equalities, the runner expectation
+(`PASS=N FAIL=0`), or the list of "What This Synthesis Does Not Claim".

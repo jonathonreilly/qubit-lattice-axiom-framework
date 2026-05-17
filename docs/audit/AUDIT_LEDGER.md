@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 114 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 349 |
+| **retained_bounded** | 350 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 575 |
+| `audited_clean` | 576 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1439 |
+| `unaudited` | 1438 |
 
 | claim_type | count |
 |---|---:|
@@ -242,6 +242,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `eigenvalue_anderson_phase_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `electric_sign_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `electrostatics_card_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
+| `electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `electrostatics_superposition_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `em_gravity_coexistence_2x2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4038,6 +4039,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The provided runner output matches the note, and the runner source performs an actual propagation computation over generated geometries with neutral-cancellation and charge-linearity checks. However, the load-bearing geometry is imported through an unavailable helper, so the restricted packet does not fully close the computation from the allowed inputs. The claim remains narrow and bounded, not geometry-generic, but its reproducibility depends on a missing dependency edge.
 - **open / conditional deps cited:**
   - `scripts/gate_b_grown_joint_package.py`
+- **auditor confidence:** high
+
+### `electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact source-field linearity, signed parity, same-point cancellation, and stated corollaries under the explicit linear signed source-field rule and admitted Phi(0,q_test)=centroid_z(free) baseline.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-213206-78dc5814-electrostatics_grown_sig-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the explicit rule F({(z_k,q_k)})[i]=sum_k q_k*g(z_k,i) gives n*g(z_0,i)=n*F({(z_0,+1)})[i], -g(z_0,i)=-F({(z_0,+1)})[i], and g(z_0,i)-g(z_0,i)=0 pointwise.  _(class `A`)_
+- **chain closes:** True — The identities close by componentwise algebra in the real-vector ring, with g treated as a charge-independent kernel. The zero-delta_z corollary closes only within the stated bounded scope because the zero-field free-baseline identity is admitted as a definition.
+- **rationale:** The theorem is deliberately narrow and conditional on the source-field construction rule; within that scope, the load-bearing identities are exact algebraic consequences. The runner source performs genuine symbolic simplifications for P1, P2, P3, C1, and C2-C5 rather than hard-coding a numerical target, though its parent-runner correspondence line is an inspection note rather than an independent computation. No external comparator, tuned input value, unprovided helper import, or downstream propagator sign-law claim is needed for the audited conclusion.
 - **auditor confidence:** high
 
 ### `electrostatics_superposition_proxy_note`

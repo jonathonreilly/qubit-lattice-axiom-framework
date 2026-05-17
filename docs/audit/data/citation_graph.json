@@ -14429,6 +14429,14 @@
       "to": "koide_selected_slice_frozen_bank_decomposition_note_2026-04-18"
     },
     {
+      "from": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+      "to": "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+    },
+    {
       "from": "koide_mru_demotion_note_2026-04-20",
       "to": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
     },
@@ -55834,6 +55842,21 @@
       "runner_path": "scripts/frontier_koide_microscopic_scalar_selector_target.py",
       "title": "Koide Microscopic Scalar Selector Target"
     },
+    "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17": {
+      "claim_id": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "70bf9250de2f909244303355c45ce25c7c7da47167ea009d72c5226334c6e20d",
+      "path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py",
+      "title": "Koide MRU Reduced-Carrier Narrow Theorem (Post-Quotient Algebra Reparametrization Equivalence)"
+    },
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19": {
       "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
       "claim_type_author_hint": null,
@@ -78283,7 +78306,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 437,
+      "bounded_theorem": 438,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78292,7 +78315,7 @@
       "positive_theorem": 165
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 884,
+      "bounded_theorem": 885,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78300,10 +78323,10 @@
       "open_gate": 123,
       "positive_theorem": 618
     },
-    "edge_count": 9281,
-    "leaf_count": 742,
-    "node_count": 2399,
+    "edge_count": 9283,
+    "leaf_count": 743,
+    "node_count": 2400,
     "root_count": 862,
-    "runners_with_path": 2003
+    "runners_with_path": 2004
   }
 }

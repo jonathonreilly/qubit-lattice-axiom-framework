@@ -11964,6 +11964,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_microscopic_scalar_selector_target.py"
     },
+    "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py"
+    },
     "koide_moment_ratio_uniformity_theorem_note_2026-04-19": {
       "assert_count": 0,
       "counts": {
@@ -25494,6 +25506,21 @@
       "assert_count": 1,
       "claims": [
         "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py": {
+      "assert_count": 1,
+      "claims": [
+        "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17"
       ],
       "counts": {
         "A": 0,
@@ -52595,9 +52622,9 @@
       "B": 257,
       "C": 720,
       "D": 293,
-      "none": 426
+      "none": 427
     },
-    "runners_classified": 1884,
+    "runners_classified": 1885,
     "runners_with_C": 930,
     "runners_with_D": 538
   }

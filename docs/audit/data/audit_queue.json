@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 430,
     "high": 161,
-    "leaf": 318,
+    "leaf": 319,
     "medium": 315
   },
   "cycle_break_target_count": 53,
@@ -32144,6 +32144,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_p_one_clock_3plus1_transport_reduction_note_2026-04-20",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35765,5 +35790,5 @@
     }
   ],
   "ready_count": 5,
-  "total_pending": 1224
+  "total_pending": 1225
 }

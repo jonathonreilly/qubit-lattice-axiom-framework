@@ -42140,10 +42140,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "0b9ebb06f4771092b67f30d7ab8f9765c47336041fd79b2f4af6b65567cb7a0e",
+      "note_hash": "7f04a2c646c496184afe6b6857ccfca7e8a2994d2c3713bc56073c81984d185c",
       "path": "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
-      "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem"
+      "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)"
     },
     "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02": {
       "claim_id": "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02",

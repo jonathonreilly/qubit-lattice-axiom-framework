@@ -27274,6 +27274,10 @@
     },
     {
       "from": "ai_methodology.skills.physics-loop.skill",
+      "to": "ai_methodology.skills.audit-loop.skill"
+    },
+    {
+      "from": "ai_methodology.skills.physics-loop.skill",
       "to": "ai_methodology.skills.physics-loop.references.assumption-import-audit"
     },
     {
@@ -38771,7 +38775,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "21d11efedf9932e714ab55512bbed0bc1e8fe1ad0246ae92107175edd14c9dad",
+      "note_hash": "b3c977b731b03e961f46db76205a9382a2c01f96c9d0a8fedf027763a3bd75a1",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -38892,6 +38896,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "ai_methodology.skills.audit-loop.skill",
         "ai_methodology.skills.physics-loop.references.assumption-import-audit",
         "ai_methodology.skills.physics-loop.references.route-patterns",
         "ai_methodology.skills.physics-loop.references.abstract-algebraic-core-extraction",
@@ -38900,7 +38905,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fd6568a0c9173f1d6e7c25a7e02aa0cccb9ac4dbc064cc9c4113fd3002971441",
+      "note_hash": "735801b2bc3992d4497a44d3e4e24961eb9403d02bce1d7bdb006b95c8b1f45c",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -44392,6 +44397,18 @@
       "path": "docs/DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md",
       "runner_path": "scripts/decoherence_action_independence.py",
       "title": "Decoherence is Action-Independent"
+    },
+    "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17": {
+      "claim_id": "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "00c5ec44ff78da8357b8965d1aa146f4ca6c649ffc822ea0bc5f14f7fce5024a",
+      "path": "docs/DECOHERENCE_ACTION_ZERO_FIELD_PER_LINK_PHASE_EQUALITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_decoherence_action_zero_field_per_link_phase_equality.py",
+      "title": "Decoherence Action Zero-Field Per-Link Phase Equality Narrow Theorem"
     },
     "decoherence_decision_note": {
       "claim_id": "decoherence_decision_note",
@@ -77776,6 +77793,7 @@
     "cycle_break_slice_note_2026-04-10",
     "cyclic_projector_compression_narrow_theorem_note_2026-05-02",
     "dark_energy_eos_note_hostile_audit_findings_note_2026-05-17",
+    "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17",
     "decoherence_decision_note",
     "decoherence_failure_analysis",
     "dense_prune_guard_seed_note",
@@ -78437,7 +78455,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 444,
+      "bounded_theorem": 445,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78446,7 +78464,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 891,
+      "bounded_theorem": 892,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78454,10 +78472,10 @@
       "open_gate": 123,
       "positive_theorem": 619
     },
-    "edge_count": 9291,
-    "leaf_count": 749,
-    "node_count": 2407,
-    "root_count": 863,
-    "runners_with_path": 2011
+    "edge_count": 9292,
+    "leaf_count": 750,
+    "node_count": 2408,
+    "root_count": 864,
+    "runners_with_path": 2012
   }
 }

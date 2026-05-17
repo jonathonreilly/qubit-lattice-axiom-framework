@@ -3864,6 +3864,18 @@
       "dominant_class": "D",
       "runner": "scripts/decoherence_action_independence.py"
     },
+    "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/audit_companion_decoherence_action_zero_field_per_link_phase_equality.py"
+    },
     "dense_prune_guard_seed_note": {
       "assert_count": 0,
       "counts": {
@@ -25419,6 +25431,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_decoherence_action_zero_field_per_link_phase_equality.py": {
+      "assert_count": 1,
+      "claims": [
+        "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py": {
@@ -52805,15 +52832,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 297,
+    "decoration_candidates": 298,
     "dominant_class_distribution": {
       "A": 190,
-      "B": 258,
+      "B": 259,
       "C": 721,
       "D": 293,
       "none": 430
     },
-    "runners_classified": 1892,
+    "runners_classified": 1893,
     "runners_with_C": 931,
     "runners_with_D": 540
   }

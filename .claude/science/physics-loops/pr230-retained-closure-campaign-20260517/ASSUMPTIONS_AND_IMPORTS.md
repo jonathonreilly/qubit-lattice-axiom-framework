@@ -13,6 +13,7 @@
 | Z3 heat-kernel primitive support is the physical neutral transfer. | It is mathematical support only; heat time/scale and source/canonical-Higgs coupling are not derived. | Neutral route survives only with H3 physical transfer/off-diagonal authority plus H4 coupling. |
 | Literature FMS/GEVP/moment/Feshbach results can supply missing PR230 rows. | They provide theorem context only, not same-surface proof inputs. | Literature may shape artifact contracts but cannot close a route alone. |
 | Matching/running can proceed before source-Higgs or W/Z physical input. | Matching would be anchored to an uncertified quantity. | Matching/running remains downstream only. |
+| Base Block118 Hamming-Dirichlet axis support also fixes action/LSZ/source-overlap normalization. | Block122 gives a same-axis counterfamily: action normalization, contact term, `C_sH`, `C_HH`, and normalized source overlap can vary while the finite axis and a source-source proxy stay fixed. | Action-first route survives only with an accepted same-surface action/LSZ/source-overlap certificate plus strict physical pole rows. |
 
 ## Exercise 2: First-Principles Reduction
 
@@ -38,9 +39,12 @@ Acceptable positive data would be one of:
 Invariant under source reparametrization: zero/nonzero qualitative support,
 rank statements, and dimensionless ratios whose numerator and denominator are
 measured on the same certified source with matched covariance and absolute
-normalization.  Not invariant: raw source slopes, finite source coordinates,
-renamed taste-radial aliases, or a number called `y_t` before the canonical
-source and physical normalization are fixed.
+normalization.  Base Block118's selected finite axis is invariant support for
+the candidate direction, but Block122 verifies that it is not invariant
+action/LSZ/source-overlap normalization.  Not invariant: raw source slopes,
+finite source coordinates, renamed taste-radial aliases, contact-shifted
+source-source rows, or a number called `y_t` before the canonical source and
+physical normalization are fixed.
 
 Measured/proved without imports: current PR230 can prove support and exact
 boundaries.  It cannot import `v`, observed targets, `H_unit`, `alpha_LM`, or
@@ -77,4 +81,6 @@ Candidate mathematics not admitted as proof input yet:
 - flat extension/moment problem: useful for excluding finite-proxy promotion;
 - holonomic/source-response routes: only admissible after a current-surface
   `O_H`/h-source exists.
-
+- invariant finite-axis selectors: useful for selecting a candidate direction,
+  but insufficient for action/LSZ/source-overlap authority without additional
+  physical rows or an accepted action theorem.

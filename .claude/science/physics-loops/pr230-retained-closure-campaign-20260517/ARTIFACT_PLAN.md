@@ -30,11 +30,13 @@ as exact support only.
 
 ## Gates
 
-Run after Block120 and Block121:
+Run after Block120, Block121, and Block122:
 
 - `python3 scripts/frontier_yt_pr230_block120_source_reparam_invariant_minimal_data.py`
 - `python3 -m py_compile scripts/frontier_yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability.py`
 - `python3 scripts/frontier_yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability.py`
+- `python3 -m py_compile scripts/frontier_yt_pr230_block122_hamming_axis_action_lsz_normalization_gap.py`
+- `python3 scripts/frontier_yt_pr230_block122_hamming_axis_action_lsz_normalization_gap.py`
 - `python3 scripts/frontier_yt_pr230_full_positive_closure_assembly_gate.py`
 - `python3 scripts/frontier_yt_retained_closure_route_certificate.py`
 - `python3 scripts/frontier_yt_pr230_positive_closure_completion_audit.py`
@@ -112,3 +114,40 @@ Verified at `2026-05-17T15:41:23Z` after rebasing onto PR230 head
 - campaign status certificate: `PASS=439 FAIL=0`
 - assumption/import stress: `PASS=122 FAIL=0`
 - `git diff --check`: passed
+
+## Block122
+
+Working title: PR230 Block122 Hamming-axis action/LSZ normalization gap.
+
+Purpose:
+
+- test whether the Block118 finite Hamming-Dirichlet `O_H` axis plus Block119
+  native finite Dirichlet support fixes accepted action, scalar LSZ metric,
+  source-overlap normalization, contact subtraction, or source-Higgs pole rows;
+- construct a same-axis counterfamily that keeps the finite axis and a
+  source-source proxy fixed while changing action normalization, `C_sH`,
+  `C_HH`, and normalized source overlap;
+- close the finite-axis/native-Dirichlet promotion shortcut without weakening
+  the future action-first route.
+
+Files:
+
+- `docs/YT_PR230_BLOCK122_HAMMING_AXIS_ACTION_LSZ_NORMALIZATION_GAP_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block122_hamming_axis_action_lsz_normalization_gap.py`
+- `outputs/yt_pr230_block122_hamming_axis_action_lsz_normalization_gap_2026-05-17.json`
+
+Result: exact negative boundary.  The finite axis and native Dirichlet support
+remain useful support, but they do not supply accepted action/LSZ/source-overlap
+or strict physical `C_ss/C_sH/C_HH` pole rows.
+
+Verified at `2026-05-17T15:48:22Z`:
+
+- Block122 py_compile: passed
+- Block122 runner: `PASS=11 FAIL=0`
+- full positive closure assembly: `PASS=200 FAIL=0`
+- retained-route certificate: `PASS=325 FAIL=0`
+- positive-closure completion audit: `PASS=79 FAIL=0`
+- campaign status certificate: `PASS=440 FAIL=0`
+- assumption/import stress: `PASS=123 FAIL=0`
+- target-timeseries full-set checkpoint: `PASS=9 FAIL=0`
+- chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`

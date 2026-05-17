@@ -537,6 +537,9 @@ def main() -> int:
         "pr230_block119_native_dirichlet_action_lsz_probe": load(
             "outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json"
         ),
+        "pr230_block122_hamming_axis_action_lsz_normalization_gap": load(
+            "outputs/yt_pr230_block122_hamming_axis_action_lsz_normalization_gap_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3119,6 +3122,51 @@ def main() -> int:
         "pr230-block119-native-dirichlet-action-lsz-probe-supports-only",
         block119_native_dirichlet_action_lsz_probe_supports_only,
         statuses["pr230_block119_native_dirichlet_action_lsz_probe"],
+    )
+    block122_hamming_axis_action_lsz_normalization_gap_blocks = (
+        "Block122 Hamming-Dirichlet O_H axis support does not determine"
+        in str(statuses["pr230_block122_hamming_axis_action_lsz_normalization_gap"])
+        and certificates["pr230_block122_hamming_axis_action_lsz_normalization_gap"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block122_hamming_axis_action_lsz_normalization_gap"].get(
+            "block122_hamming_axis_action_lsz_normalization_gap_passed"
+        )
+        is True
+        and certificates["pr230_block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("axis_unchanged")
+        is True
+        and certificates["pr230_block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("css_proxy_fixed")
+        is True
+        and certificates["pr230_block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("c_hh_varies")
+        is True
+        and certificates["pr230_block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("c_sh_varies")
+        is True
+        and certificates["pr230_block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("normalized_overlap_varies")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block122_hamming_axis_action_lsz_normalization_gap"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block122-hamming-axis-action-lsz-normalization-gap-blocks",
+        block122_hamming_axis_action_lsz_normalization_gap_blocks,
+        statuses["pr230_block122_hamming_axis_action_lsz_normalization_gap"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8901,6 +8949,9 @@ def main() -> int:
     )
     result["block119_native_dirichlet_action_lsz_probe_supports_only"] = (
         block119_native_dirichlet_action_lsz_probe_supports_only
+    )
+    result["block122_hamming_axis_action_lsz_normalization_gap_blocks"] = (
+        block122_hamming_axis_action_lsz_normalization_gap_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

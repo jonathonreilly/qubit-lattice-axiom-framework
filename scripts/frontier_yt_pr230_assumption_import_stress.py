@@ -377,6 +377,9 @@ def main() -> int:
         "block119_native_dirichlet_action_lsz_probe": load(
             "outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json"
         ),
+        "block122_hamming_axis_action_lsz_normalization_gap": load(
+            "outputs/yt_pr230_block122_hamming_axis_action_lsz_normalization_gap_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2550,6 +2553,57 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block122_hamming_axis_action_lsz_gap_keeps_imports_clean = (
+        "Block122 Hamming-Dirichlet O_H axis support does not determine"
+        in str(
+            certificates["block122_hamming_axis_action_lsz_normalization_gap"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block122_hamming_axis_action_lsz_normalization_gap"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block122_hamming_axis_action_lsz_normalization_gap"].get(
+            "block122_hamming_axis_action_lsz_normalization_gap_passed"
+        )
+        is True
+        and certificates["block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("axis_unchanged")
+        is True
+        and certificates["block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("css_proxy_fixed")
+        is True
+        and certificates["block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("c_hh_varies")
+        is True
+        and certificates["block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("c_sh_varies")
+        is True
+        and certificates["block122_hamming_axis_action_lsz_normalization_gap"]
+        .get("axis_action_lsz_counterfamily", {})
+        .get("normalized_overlap_varies")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block122_hamming_axis_action_lsz_normalization_gap"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block122-hamming-axis-action-lsz-gap-keeps-imports-clean",
+        block122_hamming_axis_action_lsz_gap_keeps_imports_clean,
+        certificates["block122_hamming_axis_action_lsz_normalization_gap"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2888,6 +2942,7 @@ def main() -> int:
         "block117_schur_scalar_lsz_keeps_imports_clean": block117_schur_scalar_lsz_keeps_imports_clean,
         "block118_hamming_dirichlet_keeps_imports_clean": block118_hamming_dirichlet_keeps_imports_clean,
         "block119_native_dirichlet_keeps_imports_clean": block119_native_dirichlet_keeps_imports_clean,
+        "block122_hamming_axis_action_lsz_gap_keeps_imports_clean": block122_hamming_axis_action_lsz_gap_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

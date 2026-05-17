@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/frontier_axiom_first_sm_anomaly_cancellation_complete_downstream_fix.py
+runner_sha256: b34bf60c1a088a4930602f973d279e56e1ec815ecac5f2620dd015ecd02caf8a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — axiom_first_sm_anomaly_cancellation_complete_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_THEOREM_NOTE_2026-05-03.md)
+  [PASS] [A] Fix record exists  (path = docs/AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+
+PART F-A — tier descriptor correction:
+  [PASS] [A] Stale wording 'conditional on retained-grade upstreams' retired in conditional_surface_status (single yaml line)  (line head = 'conditional_surface_status: full SM gauge-anomaly closure (A1)-(A5) holds simult')
+  [PASS] [A] Replacement wording 'tier-mixed matter-content surface' appears
+  [PASS] [A] proposal_allowed_reason includes the retraction reference
+
+PART F-A — Upstream-tier accounting (§7):
+  [PASS] [A] §7 header present
+  [PASS] [A] §7 labels NATIVE_GAUGE_CLOSURE_NOTE as retained_bounded
+  [PASS] [A] §7 labels GRAPH_FIRST_SU3_INTEGRATION_NOTE as retained_bounded
+  [PASS] [A] §7 labels LEFT_HANDED_CHARGE_MATCHING_NOTE as retained_bounded
+  [PASS] [A] §7 labels THREE_GENERATION_OBSERVABLE_THEOREM_NOTE as unaudited
+  [PASS] [A] §7 labels THREE_GENERATION_STRUCTURE_NOTE as unaudited
+  [PASS] [A] §7 labels HYPERCHARGE_IDENTIFICATION_NOTE as audited_conditional
+  [PASS] [A] §7 labels ONE_GENERATION_MATTER_CLOSURE_NOTE as unaudited
+  [PASS] [A] §7 labels STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24 as unaudited
+  [PASS] [A] §7 component anomaly theorems table present
+  [PASS] [A] §7 states 'effective tier bounded above by weakest upstream'
+
+PART F-aux — cross-reference dep clarification:
+  [PASS] [A] Cross-reference dep clarification subsection present
+  [PASS] [A] ANOMALY_FORCES_TIME_THEOREM identified as informational pointer
+  [PASS] [A] Note states the synthesis does NOT import d_t = 1 (in §7 clarification)
+  [PASS] [A] Apparent-dep / graph-artifact framing present
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] §0 Synthesis Statement header preserved
+  [PASS] [A] Matter-content table row for Q_L preserved
+  [PASS] [A] (A1) SU(3)^3 anomaly cancellation arithmetic preserved
+  [PASS] [A] (A4) Y^3 anomaly cancellation arithmetic preserved
+  [PASS] [A] (A5) Witten Z_2 N_D = 12 preserved
+  [PASS] [A] Runner expectation 'TOTAL: PASS=N FAIL=0' preserved
+  [PASS] [A] §3 'What This Synthesis Does Not Claim' header preserved
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired verifier referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-A — Stale "retained-grade upstreams" tier descriptor'
+  [PASS] [A] Fix record mentions: 'F-aux — Spurious citation-graph dep clarification'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'synthesis aggregator retained'
+
+==============================================================================
+SUMMARY: 35 PASS / 0 FAIL  (Class-A: 35)
+==============================================================================
+
+----- stderr -----
+

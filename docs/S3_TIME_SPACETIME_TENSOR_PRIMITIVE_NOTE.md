@@ -16,7 +16,8 @@ But the current route-2 stack is now clean enough to build a concrete **bounded
 spacetime tensor primitive candidate** that uses exactly the inputs the route
 has already earned:
 
-- exact background `PL S^3 x R`
+- bounded composite background `PL S^3 x R` (inherited tier; see
+  "Upstream-tier accounting" below)
 - exact slice generator `Lambda_R`
 - bounded source-side tensor pair `Theta_R^(0)(q) = (gamma_E(q), gamma_T(q))`
 
@@ -38,14 +39,25 @@ slice semigroup without inventing a new tensor structure.
 
 ### Background
 
-The route-2 background remains exact:
+The route-2 background `PL S^3 x R` is a **bounded composite** that
+inherits the weakest of the upstream tiers (see "Upstream-tier
+accounting" below), not an unconditional exact result:
 
 - `PL S^3 x R`
 
 from:
 
 - [`S3_GENERAL_R_DERIVATION_NOTE.md`](S3_GENERAL_R_DERIVATION_NOTE.md)
+  (with cited PL boundary-link / cap-uniqueness companions at
+  `audited_clean` / `audited_conditional` respectively per the 2026-05-17
+  ledger snapshot);
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
+  (`bounded_theorem` with named admissions (i)-(iv); `unaudited` on
+  the 2026-05-17 ledger).
+
+(Tier wording corrected 2026-05-17: prior text said "remains exact",
+which over-stated both upstream authorities. See fix-record note linked
+at the bottom.)
 
 ### Slice generator
 
@@ -146,7 +158,8 @@ candidate rather than a theorem-grade Einstein/Regge dynamics law.
 Route 2 now has the smallest plausible spacetime tensor carrier we can build
 from the existing stack:
 
-- exact background: `PL S^3 x R`
+- bounded composite background: `PL S^3 x R` (inherited tier; see
+  "Upstream-tier accounting" below)
 - exact slice generator: `Lambda_R`
 - bounded support tensor pair: `Theta_R^(0)(q)`
 - bounded spacetime tensor candidate: `Xi_R^(0)(t; q)`
@@ -154,8 +167,77 @@ from the existing stack:
 That is the correct next tool to carry forward while the exact tensor
 observable remains missing.
 
+## Upstream-tier accounting (2026-05-17)
+
+The route-2 background `PL S^3 x R` is the composition of two cited
+upstream authorities, neither of which is unconditionally exact on
+current `main`:
+
+| Upstream | `claim_type` | `audit_status` | `effective_status` |
+|---|---|---|---|
+| `S3_BOUNDARY_LINK_THEOREM_NOTE` | `bounded_theorem` | `audited_clean` | `retained_bounded` |
+| `S3_CAP_UNIQUENESS_NOTE` | `bounded_theorem` | `audited_conditional` | `audited_conditional` |
+| `ANOMALY_FORCES_TIME_THEOREM` | `bounded_theorem` | `unaudited` | `unaudited` |
+
+Composite `PL S^3 x R` therefore inherits at best the **weakest** tier
+in the composition. With `ANOMALY_FORCES_TIME_THEOREM` currently
+`unaudited`, the composite tier is also `unaudited` (and will rise no
+higher than the worst of the audited components once that audit lands).
+
+**Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM` (downstream
+admission propagation, per the upstream
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)):**
+
+- Admissions (ii), (iii), (iv) of the upstream parent are routed to
+  internal companion notes on `main`; their final closure is conditional
+  on the audit pipeline's independent re-evaluation of those companions.
+- Admission (i) (ABJ anomaly-to-inconsistency on the lattice) remains a
+  bare external admission to the standard ABJ result.
+- The parent's `d_t = 1` conclusion (a kinematic input to `PL S^3 x R`
+  here) decomposes as: derived part `d_t ∈ {1, 3, 5, ...}` from Step 3
+  of the parent; inherited part `d_t > 1` excluded by admission (iv).
+
+This note treats `PL S^3 x R` as a black-box bounded composite input;
+it does **not** insulate the candidate `Xi_R^(0)` from any future
+revision of those upstream admissions or tiers.
+
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [s3_time_theta_to_slice_coupling_note](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+
+## Fix record (2026-05-17, downstream surgical-fix wave)
+
+Two hostile-audit-grade issues were patched on this note:
+
+- **F-A (over-claim of "exact background"):** the original wording said
+  the route-2 background `PL S^3 x R` was "exact" (Verdict, "Background"
+  block, "Bottom line"). The composite is built from two bounded `S^3`
+  companions (one `audited_clean` / `retained_bounded`, one
+  `audited_conditional`) and `ANOMALY_FORCES_TIME_THEOREM` (a
+  `bounded_theorem` with admissions (i)-(iv), currently `unaudited`).
+  Replaced with "bounded composite background" / "bounded composite"
+  with explicit tier accounting in the new "Upstream-tier accounting"
+  section. The candidate `Xi_R^(0)` is already correctly described as
+  bounded; only the background's tier label was over-stated.
+- **F-B (missing admission-inheritance from upstream):** the note
+  imported `PL S^3 x R` without acknowledging the upstream parent's
+  admission structure or the parent's recent
+  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)
+  (which decomposes the parent's `d_t = 1` conclusion into a derived
+  part — `d_t ∈ {1, 3, 5, ...}` from Step 3 — and an inherited part —
+  admission (iv) excludes `d_t > 1`). The new "Upstream-tier accounting"
+  section makes both the tier inheritance and the admission inheritance
+  explicit.
+
+See companion fix-record:
+[`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+
+Paired verifier:
+`scripts/frontier_s3_time_spacetime_tensor_primitive_downstream_fix.py`.
+
+None of these edits change the candidate `Xi_R^(0)` definition, the
+sharp blocker (no exact tensor-valued support observable), the
+runnable-sanity-conditions list, or the bounded-not-exact character
+of the candidate itself.

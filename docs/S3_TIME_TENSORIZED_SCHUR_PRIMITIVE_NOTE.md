@@ -24,23 +24,37 @@ The smallest tensor extension that survives the current evidence is therefore
 not a new bulk metric ansatz. It is a **source-centered two-channel boundary
 completion** attached to the exact scalar Schur action.
 
-## Exact scalar backbone
+## Cited scalar backbone (tier inherited; see §Upstream-tier accounting below)
 
-The route-2 scalar backbone stays exact:
+The route-2 scalar backbone, with **cited** upstream tiers (per the
+2026-05-17 ledger snapshot, the composite is at most
+`audited_conditional` via the cap-uniqueness companion and `unaudited`
+via the anomaly-forced-time companion):
 
-- exact `S^3` spatial closure
-- exact anomaly-forced time with `d_t = 1`
-- exact background `PL S^3 x R`
-- exact slice generator `Lambda_R`
-- exact microscopic Schur boundary action
+- cited `S^3` spatial composite (`audited_clean` via boundary-link
+  companion; `audited_conditional` via cap-uniqueness companion)
+- cited anomaly-forced time with `d_t = 1` (companion `unaudited`;
+  admissions (i)-(iv) per the upstream
+  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md))
+- bounded composite background `PL S^3 x R` (inherits the weakest
+  upstream tier)
+- bounded slice generator `Lambda_R` (from
+  [`OH_SCHUR_BOUNDARY_ACTION_NOTE.md`](OH_SCHUR_BOUNDARY_ACTION_NOTE.md),
+  `retained_bounded` on the strong-field bridge surface only)
+- bounded microscopic Schur boundary action (same source; same tier
+  qualifier)
 
-The scalar boundary action is the exact Dirichlet/Schur quadratic
+The scalar boundary action is the Dirichlet/Schur quadratic
 
 - `I_R(f ; j) = 1/2 f^T Lambda_R f - j^T f`
 
 with `Lambda_R` symmetric positive definite on the current restricted class.
 
-This exact scalar backbone is unchanged by the tensor extension below.
+This scalar backbone wording was corrected 2026-05-17: prior text said
+"exact" for each bullet, but per the 2026-05-17 ledger, the composite
+sits at the weakest upstream tier. The tensor-extension content below
+(§Tensorized Schur/Dirichlet primitive candidate and below) is
+unaffected by this tier-qualifier correction.
 
 ## Exact scalar support reduction
 
@@ -158,7 +172,9 @@ evidence.
 
 This object is the right future atlas tool candidate for Route 2:
 
-- exact scalar Schur boundary action: retained tool
+- bounded scalar Schur boundary action: `retained_bounded` tool (on
+  the strong-field bridge surface only; not on the full retained-grade
+  dynamical sector)
 - tensorized Schur/Dirichlet primitive: bounded candidate
 - exact tensor carrier: still missing
 
@@ -171,12 +187,77 @@ claim.
 The smallest tensorized Schur/Dirichlet primitive currently supported by the
 Route-2 frontier is:
 
-- exact scalar boundary action `I_R`
+- bounded scalar boundary action `I_R` (`retained_bounded` on the
+  strong-field bridge surface only)
 - plus a two-channel boundary completion centered on
   `Theta_R^(0)(q) = (gamma_E(q), gamma_T(q))`
 
 It is bounded, not exact, but it is the cleanest new tensor extension of the
 Schur/Dirichlet machinery that the current atlas supports.
+
+## Upstream-tier accounting (2026-05-17)
+
+Per the 2026-05-17 ledger snapshot, the cited upstreams sit at:
+
+| Upstream | `claim_type` | `audit_status` | `effective_status` |
+|---|---|---|---|
+| `s3_general_r_derivation_note` | `positive_theorem` | (per ledger) | (per ledger) |
+| `s3_boundary_link_theorem_note` | `bounded_theorem` | `audited_clean` | `retained_bounded` |
+| `s3_cap_uniqueness_note` | `bounded_theorem` | `audited_conditional` | `audited_conditional` |
+| `anomaly_forces_time_theorem` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `oh_schur_boundary_action_note` | `bounded_theorem` | (per ledger) | `retained_bounded` |
+
+**Tier accounting:** the composite `PL S^3` background inherits the
+weakest of the two cited PL companions' tiers, currently
+`audited_conditional` (via cap-uniqueness). Combined with the
+currently-`unaudited` `ANOMALY_FORCES_TIME_THEOREM`, the composite
+`PL S^3 x R` background is `unaudited`. The Schur action and
+`Lambda_R` are `retained_bounded` only on the strong-field bridge
+surface, not on the full retained-grade dynamical sector. Earlier body
+wording that called all of these "exact" was tier-loose and has been
+corrected inline.
+
+**Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** the
+tensorized primitive imports `d_t = 1` from the upstream parent. Per
+the parent's recent
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+`d_t = 1` decomposes into a derived part (Step 3:
+`d_t ∈ {1, 3, 5, ...}`) and an inherited part (admission (iv)
+excludes `d_t > 1`). Any future revision of admission (iv) propagates
+into this note's clock-step input. The tensor-extension content
+itself (`I_TS^(0)`, two-channel completion, `K_TS = I_2`) is unaffected.
+
+## Fix record (2026-05-17, downstream surgical-fix wave)
+
+Two hostile-audit-grade fixes applied:
+
+- **F-A (over-claim "exact" for scalar backbone):** §Exact scalar
+  backbone block had 5 "exact" bullets ("exact `S^3` spatial closure",
+  "exact anomaly-forced time", "exact background `PL S^3 x R`", "exact
+  slice generator `Lambda_R`", "exact microscopic Schur boundary
+  action") plus an "exact scalar Schur boundary action: retained tool"
+  bullet in §Atlas-facing interpretation and an "exact scalar boundary
+  action `I_R`" bullet in §Bottom line. Per the 2026-05-17 ledger,
+  none of the upstreams is at `retained_clean` and the composite is
+  at most `audited_conditional` (via cap-uniqueness) / `unaudited`
+  (via anomaly-forced time). Section heading renamed "Exact scalar
+  backbone" → "Cited scalar backbone"; bullets corrected to tier-honest
+  wording. The `retained_bounded` qualifier is preserved for the Schur
+  action on the strong-field bridge surface only.
+- **F-B (admission-inheritance disclosure):** new
+  "Upstream-tier accounting (2026-05-17)" section now records the
+  full tier table and the parent's admission-(iv) inheritance route.
+
+See companion fix-record:
+[`S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+
+Paired verifier:
+`scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py`.
+
+None of these edits change the tensorized Schur/Dirichlet primitive
+candidate `I_TS^(0)(f, a; j)`, the source-side comparison-surface
+numerics, the `K_TS = I_2` kernel, the rank-one obstruction argument,
+or the "What it does not do" claim list.
 
 ## Audit dependency repair links
 

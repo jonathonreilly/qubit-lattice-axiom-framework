@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-01
 **Type:** positive_theorem
-**Claim scope:** for blackbody photon radiation in thermal equilibrium at temperature T on the framework retained EW + emergent Lorentz + Block 01 KMS surface, the energy density is u(T) = (π²/15) (k_B T)⁴ / (ℏc)³ (SB1)-(SB4); equivalently the Planck distribution n(ω, T) = 1/(e^(βω) - 1) and the Stefan-Boltzmann constant σ_SB = (π²/60) k_B⁴/(ℏ³c²) follow.
+**Claim scope:** for blackbody photon radiation in thermal equilibrium at temperature T on the framework's cited EW + emergent Lorentz + Block 01 KMS surface (per 2026-05-17 ledger, all cited upstreams are currently `unaudited` rather than retained-grade; see §Upstream-tier accounting (2026-05-17) and fix record below), the energy density is u(T) = (π²/15) (k_B T)⁴ / (ℏc)³ (SB1)-(SB4); equivalently the Planck distribution n(ω, T) = 1/(e^(βω) - 1) and the Stefan-Boltzmann constant σ_SB = (π²/60) k_B⁴/(ℏ³c²) follow.
 **Status:** awaiting independent audit. Under the scope-aware classification framework (audit-lane proposal #291), `effective_status` is computed by the audit pipeline.
 **Loop:** `24h-axiom-first-derivations-20260501`
 **Cycle:** 6 (Block 06; stacked on Block 01 (KMS))
@@ -14,7 +14,9 @@
 ## Scope
 
 This note proves the **Stefan-Boltzmann law** for blackbody photon
-radiation on the framework's retained emergent-spacetime surface:
+radiation on the framework's cited emergent-spacetime surface (tier
+inherited from the cited companions; see §Upstream-tier accounting
+(2026-05-17) below):
 
 ```text
     u(T)  =  (π² / 15) · (k_B T)⁴ / (ℏ c)³                                   (1)
@@ -31,39 +33,61 @@ The proof composes:
 
 - **Block 01 KMS support theorem** (Gibbs state on harmonic oscillator
   reconstructed Hamiltonian gives Planck distribution);
-- the framework's retained U(1) photon (from SM hypercharge uniqueness
-  + EW package, which admit a massless photon mode);
-- the framework's retained emergent Lorentz invariance (which gives
+- the framework's cited U(1) photon (from SM hypercharge uniqueness
+  + EW package, which admit a massless photon mode; companion currently
+  `unaudited`);
+- the framework's cited emergent Lorentz invariance (which gives
   the standard 3D density of states and dispersion relation
-  `ω = c k` in the smooth-limit regime);
+  `ω = c k` in the smooth-limit regime; companion currently `unaudited`);
 - standard counting of Bose-Einstein modes (admitted-context).
+
+**Tier accounting note:** the "retained" descriptor used elsewhere in
+this note (prior wording) was tier-loose; per the 2026-05-17 ledger
+the cited companions are not at `retained_bounded`. The proof
+arithmetic itself (`(SB1)-(SB4)`) is unaffected; only the
+upstream-tier qualifier is corrected. See §Upstream-tier accounting
+(2026-05-17) and the fix-record section near the end of the note.
 
 This is the framework's **first numerical thermodynamic prediction**
 that goes beyond structural identity: given temperature `T`, the
 photon energy density is fixed at value (1) on the framework retained
 surface (modulo the upstream support classification).
 
-## Retained inputs
+## Cited inputs (tier inherited; see §Upstream-tier accounting (2026-05-17))
+
+(Section heading changed 2026-05-17 from "Retained inputs"; per the
+2026-05-17 ledger snapshot, all named companions are currently
+`unaudited` rather than `retained_bounded`. The proof structure below
+is unchanged; only the tier descriptors are corrected.)
 
 - **Block 01 KMS support theorem.** Gibbs state on `H_phys` at
   inverse temperature `β_th = 1 / T` is Planck-distributed for any
-  harmonic-oscillator subsector.
-- **Retained emergent Lorentz invariance.** From
+  harmonic-oscillator subsector. (Companion
+  `axiom_first_kms_condition_theorem_note_2026-05-01` currently
+  `unaudited`.)
+- **Cited emergent Lorentz invariance.** From
   [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md) and
   [`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md), the framework's
   long-wavelength photon modes have dispersion `ω = c k` to leading
   order, with `c` the emergent speed of light. The leading
   anisotropic correction is at dimension 6 with cubic-harmonic
-  `ell = 4` fingerprint, irrelevant for the `T^4` law.
-- **Retained anomaly-forced 3+1 dimensions** (from the retained
+  `ell = 4` fingerprint, irrelevant for the `T^4` law. (Both
+  companions currently `unaudited`.)
+- **Cited anomaly-forced 3+1 dimensions** (from the cited
   [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)): the spatial substrate is
   `Z^3`, so the photon density of states is the standard 3D form.
-- **Retained U(1) photon.** From the retained
+  (Parent companion currently `unaudited`; admissions (i)-(iv) and
+  upstream [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)
+  apply via tier inheritance, not as load-bearing proof steps in
+  `(SB1)-(SB4)`.)
+- **Cited U(1) photon.** From the cited
   [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
-  + EW retained package, the framework has a massless U(1)
-  electromagnetic photon with two transverse polarizations.
-- **Spectrum condition** (from retained AXIOM_FIRST_SPECTRUM_CONDITION):
-  photon Hamiltonian is bounded below.
+  + EW package, the framework has a massless U(1)
+  electromagnetic photon with two transverse polarizations. (Companion
+  currently `unaudited`.)
+- **Spectrum condition** (from cited
+  [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md);
+  companion currently `unaudited`): photon Hamiltonian is bounded below.
 
 ## Admitted-context inputs
 
@@ -289,13 +313,79 @@ bare_retained_allowed: false
 - A_min: [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md)
 - retained EW package: [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md),
   [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
-- retained anomaly-forced 3+1: [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
-- retained emergent Lorentz: [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
-  [`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md)
-- retained spin-statistics: [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)
-- retained spectrum condition: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
-- Block 01 KMS support: [`AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md)
+- cited anomaly-forced 3+1: [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) (currently `unaudited`)
+- cited emergent Lorentz: [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md),
+  [`LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md`](LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md) (both `unaudited`)
+- cited spin-statistics: [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) (currently `unaudited`)
+- cited spectrum condition: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md) (currently `unaudited`)
+- Block 01 KMS support: [`AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) (currently `unaudited`)
 - standard external references (theorem-grade, no numerical input):
   Stefan (1879) *Sitzungsberichte der Akademie* 79, 391;
   Boltzmann (1884) *Annalen der Physik* 22, 291;
   Planck (1900) *Verh. Deut. Phys. Ges.* 2, 237.
+
+## Upstream-tier accounting (2026-05-17)
+
+Per the 2026-05-17 ledger snapshot, the load-bearing upstreams of this
+note sit at:
+
+| Upstream | `claim_type` | `audit_status` | `effective_status` |
+|---|---|---|---|
+| `axiom_first_kms_condition_theorem_note_2026-05-01` (Block 01 KMS) | (varies; see ledger) | `unaudited` | `unaudited` |
+| `emergent_lorentz_invariance_note` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `lorentz_kernel_positive_closure_note` | `positive_theorem` | `unaudited` | `unaudited` |
+| `anomaly_forces_time_theorem` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | `positive_theorem` | `unaudited` | `unaudited` |
+| `axiom_first_spin_statistics_theorem_note_2026-04-29` | `positive_theorem` | `unaudited` | `unaudited` |
+| `axiom_first_spectrum_condition_theorem_note_2026-04-29` | `positive_theorem` | `unaudited` | `unaudited` |
+| `rconn_derived_note` (EW package) | `bounded_theorem` | `audited_conditional` | `audited_conditional` |
+
+**All but one of the cited upstreams are currently `unaudited`** (the
+RCONN derived note is `audited_conditional`). Earlier wording
+throughout this note used "retained" as the tier qualifier for the
+upstream composite ("retained framework EW + Lorentz package + Block 01
+KMS support", "retained surface", "retained emergent-spacetime
+surface", "retained U(1) photon", etc.). Per the ledger, this is an
+over-statement. The proof structure `(SB1)-(SB4)` is unaffected — it
+remains a direct composition of the cited companions plus standard
+math identities (`Γ(4) ζ(4) = π⁴/15`).
+
+**Effective tier:** the Stefan-Boltzmann derivation here inherits at
+best the **weakest** tier in the upstream composite, which is currently
+`unaudited` for the photon / Lorentz / time-dimension / KMS /
+spin-statistics / spectrum-condition stack. Once those upstreams audit
+through, this row's effective tier rises automatically toward the
+weakest *audited* upstream.
+
+**Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** this note
+uses only the `d_t = 3+1` substrate conclusion (specifically `d_s = 3`
+for the 3D density of states) from the parent. Per the upstream
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+the `d_t = 1` conclusion decomposes into derived (Step 3) and inherited
+(admission (iv)) branches; the `d_s = 3` piece comes from axiom A2
+directly (per `MINIMAL_AXIOMS_2026-05-03.md`), independent of admissions
+(i)-(iv). Recorded for downstream-audit disambiguation.
+
+## Fix record (2026-05-17, downstream surgical-fix wave)
+
+One hostile-audit-grade fix applied to this note:
+
+- **F-A (tier over-claim "retained"):** ~18 sites in the note used
+  "retained" as the tier qualifier for the upstream composite. Per the
+  2026-05-17 ledger, 7 of the 8 named upstreams are currently
+  `unaudited` (only the EW package's RCONN_DERIVED_NOTE is
+  `audited_conditional`). The most prominent wordings (Claim scope,
+  Scope, "Retained inputs" section heading and bullets, Citations) have
+  been corrected to "cited"; the remaining "retained" mentions in
+  body/proof text are now understood through the §Upstream-tier
+  accounting (2026-05-17) section. The proof structure `(SB1)-(SB4)`,
+  the runner expectation, and the corollaries (C1-C4) are unaffected.
+
+See companion fix-record:
+[`AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+
+Paired verifier:
+`scripts/frontier_axiom_first_stefan_boltzmann_downstream_fix.py`.
+
+None of these edits change `(SB1)-(SB4)`, the proof steps, the runner
+expectation, the corollary list, or the falsifiability framing.

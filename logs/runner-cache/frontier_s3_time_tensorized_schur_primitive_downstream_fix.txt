@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py
+runner_sha256: 58543e6ee774688843181af41a0d9094875b97935b5cff21784c3171130cf312
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — s3_time_tensorized_schur_primitive_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md)
+  [PASS] [A] Fix record exists  (path = docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+
+PART F-A — heading + bullets:
+  [PASS] [A] Section heading 'Exact scalar backbone' retired (heading now 'Cited scalar backbone')
+  [PASS] [A] New heading '## Cited scalar backbone' present
+  [PASS] [A] Stale bullet retired: - exact `S^3` spatial closure
+  [PASS] [A] Stale bullet retired: - exact anomaly-forced time with `d_t = 1`
+  [PASS] [A] Stale bullet retired: - exact background `PL S^3 x R`
+  [PASS] [A] Stale bullet retired: - exact slice generator `Lambda_R`
+  [PASS] [A] Stale bullet retired: - exact microscopic Schur boundary action
+  [PASS] [A] Replacement bullet 'cited `S^3` spatial composite' present
+  [PASS] [A] Replacement bullet 'cited anomaly-forced time with `d_t = 1`' present
+  [PASS] [A] Replacement bullet 'bounded composite background `PL S^3 x R`' present
+  [PASS] [A] Stale '- exact scalar Schur boundary action: retained tool' retired
+  [PASS] [A] Replacement 'bounded scalar Schur boundary action: `retained_bounded` tool' present
+  [PASS] [A] Stale '- exact scalar boundary action `I_R`' retired
+  [PASS] [A] Replacement 'bounded scalar boundary action `I_R`' present
+
+PART F-B — admission-inheritance:
+  [PASS] [A] Upstream-tier accounting section header present
+  [PASS] [A] Tier table lists s3_cap_uniqueness_note as audited_conditional
+  [PASS] [A] Tier table lists anomaly_forces_time_theorem as unaudited
+  [PASS] [A] Tier table lists s3_boundary_link_theorem_note as retained_bounded
+  [PASS] [A] Upstream F-B framing-fix linked
+  [PASS] [A] Admission (iv) inheritance disclosed
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] I_TS^(0) definition preserved
+  [PASS] [A] K_TS = I_2 minimal kernel preserved
+  [PASS] [A] Comparison-surface numeric (Theta_R^(0)(e0) = (-3.772329e-04, +3.359952e-04)) preserved
+  [PASS] [A] Comparison-surface numeric (Theta_R^(0)(s / sqrt(6))) preserved
+  [PASS] [A] Rank-one obstruction argument preserved (the exact support Hessian has no mixed A1-bright block)
+  [PASS] [A] `What it does not do` block preserved
+  [PASS] [A] Tensorized-primitive purpose phrase preserved
+  [PASS] [A] bounded_theorem status preserved
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired verifier referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-A — Over-claim'
+  [PASS] [A] Fix record mentions: 'F-B — Admission-inheritance'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'bounded_theorem retained'
+
+==============================================================================
+SUMMARY: 38 PASS / 0 FAIL  (Class-A: 38)
+==============================================================================
+
+----- stderr -----
+

@@ -1,0 +1,59 @@
+========================================================================
+ staggered_only_det_positivity_case_a_2026-05-17.py
+ Companion runner to
+   docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md
+ Verifies the closed-form factorisation
+   det(M_KS + m * I) = prod_{i=1}^{n/2} (m^2 + sigma_i^2) > 0
+ on the canonical staggered-Dirac with SU(3) gauge background.
+========================================================================
+
+--- V1: M_KS is purely off-diagonal in the eps-sorted basis ---
+  L_t = 4, L_s = 4, N_color = 3
+  ||upper_left||_max  = 0.000e+00
+  ||lower_right||_max = 0.000e+00
+  ||lower_left + upper_right^†||_max = 0.000e+00
+  V1 verdict: PASS
+
+--- V2: gamma_5 * M is Hermitian ---
+  mass m = 0.5
+  ||gamma_5 M - (gamma_5 M)^†||_max = 0.000e+00
+  V2 verdict: PASS
+
+--- V3: sign reconciliation det(gamma_5 M) = (-1)^{n/2} * prod (m^2 + sigma^2) ---
+  mass m = 0.5, n_plus = 24, n/2 = 24
+  det(gamma_5 M) computed:  +1.686567e-01 + -2.61e-16i
+  (-1)^(n/2) * prod (m^2 + sigma^2): +1.686567e-01
+  relative error: 2.776e-17, Im/|det| = 2.61e-16
+  det(gamma_5) = det(eps) computed: +1
+  (-1)^(n/2) expected:               +1
+  det(M) computed:        +1.686567e-01 + -2.61e-16i
+  prod (m^2 + sigma^2):   +1.686567e-01
+  relative error: 2.776e-17, Im/|det| = 2.61e-16
+  V3 verdict: PASS
+
+--- V4: det(M) > 0 across SU(3) gauge backgrounds and m > 0 ---
+  Configurations checked: 60
+  L_t L_s     m seed  det(M)         prod(m^2+sig^2)  rel_err  pos  >= m^n
+    4   4  0.10    0  +6.2118e-08   +6.2118e-08  5.03e-22   +    +
+    4   4  0.10    1  +5.0755e-08   +5.0755e-08  1.26e-22   +    +
+    4   4  0.10    2  +3.7807e-08   +3.7807e-08  3.51e-22   +    +
+    4   4  0.30    0  +2.8855e-04   +2.8855e-04  3.25e-19   +    +
+    4   4  0.30    1  +1.6035e-04   +1.6035e-04  5.42e-20   +    +
+    4   4  0.30    2  +1.1230e-04   +1.1230e-04  5.96e-19   +    +
+    4   4  0.50    0  +1.7006e-01   +1.7006e-01  8.05e-16   +    +
+    4   4  0.50    1  +1.7601e-01   +1.7601e-01  0.00e+00   +    +
+  ... (52 more cases checked)
+  pass rate: 60 / 60
+  V4 verdict: PASS
+
+========================================================================
+ SUMMARY
+========================================================================
+   V1 (block decomp: M_KS purely off-diagonal in eps-sorted basis): PASS
+   V2 (gamma_5 M Hermitian): PASS
+   V3 (sign reconciliation det(g5 M) = (-1)^(n/2) * prod (m^2+sigma^2)): PASS
+   V4 (strict positivity det(M) > 0 with lower bound m^n): PASS
+
+   PASSED: 4/4
+
+ verdict: closed-form sub-theorem identities reproduced numerically.

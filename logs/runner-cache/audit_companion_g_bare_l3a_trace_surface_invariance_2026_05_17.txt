@@ -1,0 +1,73 @@
+================================================================================
+Audit companion: G_BARE_L3A_TRACE_SURFACE_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17
+================================================================================
+
+================================================================================
+SECTION A — (T1) Trace inflation Tr_V(F^2) = 2 * Tr_{V_3}(F^2)
+================================================================================
+  [PASS (A)] Tr_{V_3}(T_a T_b) = (1/2) delta_ab (canonical Gell-Mann)  (max |Gram3 - 1/2 I| = 1.11e-16)
+  [PASS (A)] Tr_V(T_a^{(V)} T_b^{(V)}) = 1 * delta_ab (V-embedded)  (max |GramV - I| = 2.22e-16)
+  [PASS (A)] N_F^{(V)} / N_F^{(3)} = 2 = dim(V_fiber)  (ratio = 2.0)
+  [PASS (A)] trial 1: Tr_V(F^2) = 2 * Tr_{V_3}(F^2)  (Tr_V(F^2) = 9.752168e+01, 2*Tr_{V_3}(F^2) = 9.752168e+01)
+  [PASS (A)] trial 2: Tr_V(F^2) = 2 * Tr_{V_3}(F^2)  (Tr_V(F^2) = 6.453940e+00, 2*Tr_{V_3}(F^2) = 6.453940e+00)
+  [PASS (A)] trial 3: Tr_V(F^2) = 2 * Tr_{V_3}(F^2)  (Tr_V(F^2) = 5.066009e+00, 2*Tr_{V_3}(F^2) = 5.066009e+00)
+  [PASS (A)] trial 4: Tr_V(F^2) = 2 * Tr_{V_3}(F^2)  (Tr_V(F^2) = 4.955441e+01, 2*Tr_{V_3}(F^2) = 4.955441e+01)
+  [PASS (A)] trial 5: Tr_V(F^2) = 2 * Tr_{V_3}(F^2)  (Tr_V(F^2) = 8.246820e+00, 2*Tr_{V_3}(F^2) = 8.246820e+00)
+
+================================================================================
+SECTION B — (T2) Lattice plaquette small-a expansion + ratio 3/4
+================================================================================
+  [PASS (A)] F^{(V_3)} a^4 coefficient = Tr_{V_3}(F^2) / (2 * dim(V_3))  (fit = 2.359221e-01, predicted = 2.359221e-01, rel_err = 6.32e-09)
+  [PASS (A)] F^{(V)} a^4 coefficient = Tr_V(F^2) / (2 * dim(V))  (fit = 1.769416e-01, predicted = 1.769416e-01, rel_err = 1.71e-09)
+  [PASS (A)] Lattice-side a^4 coefficient ratio F^{(V)} / F^{(V_3)} = 3/4 (exact)  (ratio = 0.750000, expected = 0.750000)
+  [PASS (A)] Symbolic ratio (c_V * dim(V_3)) / (c_{V_3} * dim(V)) = 3/4  (ratio = 3/4 (sympy exact))
+
+================================================================================
+SECTION C — (T3) Continuum-side invariance
+================================================================================
+  [PASS (A)] Continuum W=V_3: (1/(2g^2)) * (1/N_F^{(V_3)}) * Tr_{V_3}(F^2) = (1/(2g^2)) * Fsq  (expression = Fsq/(2*g**2))
+  [PASS (A)] Continuum W=V: (1/(2g^2)) * (1/N_F^{(V)}) * Tr_V(F^2) = (1/(2g^2)) * Fsq  (expression = Fsq/(2*g**2))
+  [PASS (A)] Continuum kinetic invariant across V_3 vs V trace surfaces  (both reduce to convention-independent (1/(2g^2)) * Fsq)
+  [PASS (A)] Equivalent form (1/(4g^2)) * F_{mn} F^{mn} matches (T3)  ((1/(4g^2)) * 2*Fsq = Fsq/(2*g**2))
+
+================================================================================
+SECTION D — (T4) Wilson matching beta^{(W)} = dim(W) / (N_F^{(W)} g_bare^2)
+================================================================================
+  [PASS (A)] beta^{(V_3)} = dim(V_3) / (N_F^{(V_3)} * g_bare^2) = 6 / g_bare^2  (beta_V3 = 6/g_bare**2)
+  [PASS (A)] beta^{(V)} = dim(V) / (N_F^{(V)} * g_bare^2) = 8 / g_bare^2  (beta_V = 8/g_bare**2)
+  [PASS (A)] At g_bare = 1: beta^{(V_3)} = 6  (beta^{(V_3)}(g_bare=1) = 6)
+  [PASS (A)] At g_bare = 1: beta^{(V)} = 8  (beta^{(V)}(g_bare=1) = 8)
+  [PASS (A)] beta^{(V_3)} = 2 N_c / g_bare^2 (recovers canonical Wilson formula)  (beta^{(V_3)} = 6/g_bare^2 = 2*3/g_bare^2 = 6 at g_bare=1)
+  [PASS (A)] beta^{(V)} / beta^{(V_3)} = 4/3 (structural ratio)  (ratio = 4/3)
+
+================================================================================
+SECTION E — (T5) g_bare invariance under L3a binary swap
+================================================================================
+  [PASS (A)] From W=V_3 matching: g_bare^2 = 3 / (1/2 * 6) = 1  (g_bare^2 = 1)
+  [PASS (A)] From W=V matching: g_bare^2 = 8 / (1 * 8) = 1  (g_bare^2 = 1)
+  [PASS (A)] L3a binary inert for g_bare: both trace surfaces yield g_bare = 1  (V_3: g_bare^2 = 1; V: g_bare^2 = 1)
+  [PASS (A)] L3a-consistent counterfactual g_bare^2 = 1/2: both surfaces recover the same g_bare^2  (V_3: 1/2; V: 1/2)
+  [PASS (A)] L3a-consistent counterfactual g_bare^2 = 2: both surfaces recover the same g_bare^2  (V_3: 2; V: 2)
+  [PASS (A)] L3a-consistent counterfactual g_bare^2 = 4: both surfaces recover the same g_bare^2  (V_3: 4; V: 4)
+  [PASS (A)] At g_bare^2 = 1/4: beta_V / beta_V3 = 4/3 (L3a-invariant)  (ratio = 4/3)
+  [PASS (A)] At g_bare^2 = 1: beta_V / beta_V3 = 4/3 (L3a-invariant)  (ratio = 4/3)
+  [PASS (A)] At g_bare^2 = 7/11: beta_V / beta_V3 = 4/3 (L3a-invariant)  (ratio = 4/3)
+
+================================================================================
+SECTION F — Parent-row consistency checks
+================================================================================
+  [PASS (A)] W=V_3 specialization reproduces canonical beta = 2 N_c = 6 (parent runner)  (beta_canonical = 2 * 3 = 6)
+  [PASS (A)] Trace-surface routing factor on beta: V_3 -> V gives 4/3 (parallel to c^2 from rescaling)  (factor = 4/3; rescaling parallel: T_a -> c T_a gives c^2 factor on beta)
+
+================================================================================
+SCORECARD
+================================================================================
+PASS = 33
+FAIL = 0
+TOTAL = 33
+
+VERDICT: all class (A) algebraic + numerical checks PASS.
+  The L3a binary admission N_F in {1/2, 1} is physically inert
+  for g_bare: both trace surfaces yield g_bare = 1 at the
+  Wilson canonical matching surface, differing only in the
+  conventional beta value (6 for V_3, 8 for V).

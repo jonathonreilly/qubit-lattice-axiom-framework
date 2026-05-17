@@ -1,0 +1,75 @@
+block_id: block03
+block_class: deep
+date: 2026-05-17
+target_claim_id: g_bare_derivation_note
+target_lane: g_bare
+target_audited_status: audited_conditional
+target_intrinsic_status: open_gate
+
+worktree: /private/tmp/physics-loop-2026-05-17/block03-g-bare-derivation
+branch: physics-loop/g-bare-derivation-block03-2026-05-17
+
+route_chosen: positive_narrow_theorem_l3a_trace_surface_invariance
+outcome: positive_closure_on_l3a_binary_g_bare_inertness
+
+source_note:
+  path: docs/G_BARE_L3A_TRACE_SURFACE_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md
+  claim_type: positive_theorem
+  load_bearing_step_class: A
+  declared_one_hop_deps:
+    - n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2
+    - l3a_v3_trace_surface_bounded_obstruction_note_2026-05-07_l3a
+    - cl3_color_automorphism_theorem
+
+runner:
+  path: scripts/audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17.py
+  cache: logs/runner-cache/audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17.txt
+  pass_count: 33
+  fail_count: 0
+  total_count: 33
+
+theorem_summary:
+  T1: trace inflation Tr_V(F²) = 2 * Tr_{V_3}(F²) from V-embedding T_a^V = T_a^(3) ⊗ I_2
+  T2: lattice-side small-a ratio F^(V) / F^(V_3) = 3/4 (exact structural)
+  T3: continuum-side invariance via 1/N_F^(W) cancellation
+  T4: Wilson matching β^(W) = dim(W) / (N_F^(W) * g_bare²)
+  T5: L3a binary inert for g_bare; both surfaces yield g_bare = 1
+
+v1_outcome: PASS_obstruction_identified
+v2_outcome: PASS_new_content
+v3_outcome: PASS_audit_lane_cannot_author
+v4_outcome: PASS_nontrivial_marginal_content
+v5_outcome: PASS_not_one_step_variant
+overall_v1_v5: PASS
+
+honest_scope_limits:
+  does_not_close_l3a_admission: true
+  does_not_derive_NF_one_half_from_A1_A2: true
+  does_not_lift_parent_audited_conditional: true
+  does_not_modify_four_layer_l3_admission_count: true
+
+honest_scope_positives:
+  establishes_new_positive_arrow_l3a_binary_to_g_bare_invariance: true
+  computes_exact_structural_ratios_3_4_lattice_4_3_beta: true
+  identifies_algebraic_parallel_to_2026_05_03_rescaling_routing: true
+  demonstrates_parent_L4_conclusion_l3a_binary_inert: true
+
+forbidden_imports_check:
+  pdg_observed_values: false
+  literature_numerical_comparators: false
+  fitted_selectors: false
+  admitted_unit_conventions_load_bearing: false
+  same_surface_family_arguments: false
+
+block_complete: true
+pr_opened: pending
+pr_url: pending
+next_block_recommendation: |
+  Block 04 should consider one of:
+  (a) Audit-companion narrow for the same-1PI pinning row, which is the
+      remaining unaudited gate in the Ward-substitution route;
+  (b) A G_BARE_FORCED_BY_WARD route consolidation note packaging the
+      Ward-route + abstract-narrow + L3a-inertness arrows into a single
+      cite-friendly parent reference (without status promotion);
+  (c) A separate cluster entirely: the prompt should re-prioritize from
+      the audit ledger's audited_conditional desc-rank list.

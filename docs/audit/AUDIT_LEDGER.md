@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 325 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1240 |
+| unaudited | 1239 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 169 |
+| ~~audited_conditional~~ | 170 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 543 |
-| `audited_conditional` | 169 |
+| `audited_conditional` | 170 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1437 |
+| `unaudited` | 1436 |
 
 | claim_type | count |
 |---|---:|
@@ -711,6 +711,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3285,6 +3286,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** the exact reduction chain already proves that the fixed native N_e seed surface is the whole admissible PMNS-assisted closure domain on this route  _(class `B`)_
 - **chain closes:** False — The conclusion relies on upstream reduction, active projector, transport functional, selector, stationarity, and projector-interface modules that are imported by the runner but not supplied as cited authorities. The restricted packet therefore does not close the claimed exhaustion theorem from the axiom alone.
 - **rationale:** The runner does perform some local algebraic checks, including fixed-sum soft3 inversion on sampled points. However, the load-bearing exhaustion claim is not derived inside the restricted packet: it depends on imported modules and prior theorems for the PMNS packet reduction, transport functional, closure branches, native seed constants, and stationarity map. With no cited authorities provided, those dependencies are uncited premises rather than retained-grade inputs.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that, on the current PMNS-assisted N_e closure patch, the seed-relative action is the native Legendre-dual effective action and its lowest-action constrained branch is the selector.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-144619-bc2044d8-dm_leptogenesis_pmns_rel-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The seed-relative action satisfies S_rel(Y)=sup_K[log det(I+K)-Tr(KY)] with K_*=Y^(-1)-I, so S_rel is the exact Legendre-dual effective action of the sole-axiom observable generator.  _(class `A`)_
+- **chain closes:** False — The Legendre identity itself is an algebraic closure once W_rel and S_rel are accepted. The restricted packet does not derive W_rel, H_seed, the eta closure map, the favored column, or the minimization-to-physical-selector bridge from Cl(3), and the runner relies on an unprovided helper for those objects.
+- **rationale:** Issue: the packet proves only the algebraic Legendre transform identity over already-chosen W_rel and S_rel, while the axiom-to-observable generator, seed surface, eta readout, favored column, and physical selector bridge are imported rather than closed. Why this blocks: without those retained inputs, the conclusion that minimization is not an extra postulate does not follow from the restricted materials. Repair target: provide a retained theorem and runner source deriving the missing map from Cl(3), including scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py, rather than calling it opaquely. Claim boundary until fixed: the safe result is the positive-cone logdet Legendre identity and a sampled local numerical branch check conditional on the missing helper machinery.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 110 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 338 |
+| **retained_bounded** | 339 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1207 |
+| unaudited | 1206 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -45,22 +45,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 560 |
+| `audited_clean` | 561 |
 | `audited_conditional` | 180 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1404 |
+| `unaudited` | 1403 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 945 |
+| `bounded_theorem` | 946 |
 | `decoration` | 22 |
 | `meta` | 200 |
 | `no_go` | 239 |
 | `open_gate` | 110 |
-| `positive_theorem` | 732 |
+| `positive_theorem` | 731 |
 
 | criticality | count |
 |---|---:|
@@ -643,6 +643,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | A | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `valley_linear_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_asymptotic_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `valley_linear_mirror_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -11753,6 +11754,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** "The direct universal GR route is recorded here as blocked because no retained-grade object on the current branch identifies the scalar-generator Hessian with full Einstein/Regge metric dynamics."  _(class `E`)_
 - **chain closes:** False — The note openly names a missing primitive, but the inventory claim that no retained-grade branch object closes the Einstein/Regge identification is not verifiable from the restricted packet because no one-hop authorities are supplied. The route-level blocker therefore functions as an open gate, not a closed bounded theorem.
 - **rationale:** Issue: the load-bearing step is an inventory assertion plus a newly introduced blocker label, not a derivation from cited retained inputs. Why this blocks: with no cited authorities, the auditor cannot verify the imported scalar generator, lift, Hessian kernel, projector, or absence of a retained Einstein/Regge localization theorem. Repair target: add explicit dependency edges to the retained-grade inputs and, if the claim is to remain a blocker, an auditable branch-inventory artifact or scoped survey proving the missing localization primitive is absent from the supplied retained set. Claim boundary until fixed: this is only an open-gate blocker label naming the missing primitive.
+- **auditor confidence:** high
+
+### `universality_classifier_note`
+
+- **Note:** [`UNIVERSALITY_CLASSIFIER_NOTE.md`](../../docs/UNIVERSALITY_CLASSIFIER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite empirical within-family classifier readout for the 26-family grown-DAG sweep plus 8 in-family held-out families, with retained negative caveats from the independent-generator, local_z_asym, and off-scaffold lanes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-155238-a5e2dcef-universality_classifier_-029`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator results are explicitly negative.  _(class `C`)_
+- **chain closes:** True — The primary runner actually constructs the declared grown-DAG families, computes the five battery conditions, fits the two-property rule, runs LOO, and evaluates the hard-coded held-out predictions; its stdout matches the note's load-bearing in-family numbers. The broader universal/simple-classifier-exhaustion theorem is not audited as part of this narrowed scope and is explicitly disclaimed or bounded by the cited authorities.
+- **rationale:** The narrowed binding claim is a finite empirical computation, not a derived universality theorem, and the provided runner source supports the reported 21/26 pass count, 92.3% in-sample classifier accuracy, 84.6% LOO, and 7/8 rule plus 8/8 pre-committed held-out results. The negative cross-generator and off-scaffold caveats are supplied by retained or retained_bounded cited authorities and are incorporated as limitations rather than used to prove a no-go theorem. The remaining broad language about the classifier line being exhausted should be treated as interpretation only, but the source note's explicit scope narrowing prevents it from becoming the audited claim.
 - **auditor confidence:** high
 
 ### `valley_linear_action_note`

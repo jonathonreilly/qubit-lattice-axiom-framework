@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 334 |
+| **retained_bounded** | 335 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1218 |
+| unaudited | 1217 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 554 |
+| `audited_clean` | 555 |
 | `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1415 |
+| `unaudited` | 1414 |
 
 | claim_type | count |
 |---|---:|
@@ -254,6 +254,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `four_d_distance_width_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4319,6 +4320,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Mass-law transfer agrees within uncertainty on the retained grown-row neighborhood (drift=0.2, restore=0.7).  _(class `C`)_
 - **chain closes:** True — The live runner recomputes the fixed-lattice F~M exponent, six grown-seed F~M exponents at drift=0.2 and restore=0.7, their mean/spread, and the fixed-grown sigma comparison. The note explicitly excludes geometry-generic transfer, other drift/restore values, and other observables.
 - **rationale:** The claim is a bounded numerical computation, not a broad universality theorem: the current runner reproduces the frozen fixed exponent, all six grown-seed exponents, the grown aggregate, and the 0.3 sigma fixed-grown comparison. The source note keeps the conclusion on the specified grown row and explicitly does not claim other geometries, drift/restore values, or observables. Residual boundary: the quoted uncertainty is the finite six-seed grown spread used by the runner, so the retained content is only this finite transfer check.
+- **auditor confidence:** high
+
+### `four_d_distance_width_probe_note`
+
+- **Note:** [`FOUR_D_DISTANCE_WIDTH_PROBE_NOTE.md`](../../docs/FOUR_D_DISTANCE_WIDTH_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 4D valley-linear distance-width probe at h=0.5, L=15, strength=5e-5 for W=5..7, with only the qualified W=8 frozen-companion read and no asymptotic distance-law closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-152734-a5e2dcef-four_d_distance_width_pr-017`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** TOWARD survives across the tested W=5..7 width ladder, the W=8 row is only a frozen supportive companion, and the moving tail fits keep the 4D distance law width-limited rather than asymptotically closed.  _(class `C`)_
+- **chain closes:** True — The primary runner genuinely constructs the 4D lattice propagator through Lattice4D and computes the W=5..7 deltas and tail fits, and the cached stdout matches the note. The W=8 contribution is used only in the qualified frozen-companion sense stated by the note, so no live W=8 or asymptotic closure is needed for this bounded claim.
+- **rationale:** The source is narrow enough that the completed W=5..7 computation is the load-bearing evidence, and the runner source is not a hard-coded PASS harness: it builds fields, propagates amplitudes, computes detector centroids, and fits the post-peak tails. The cited dimensional table is retained_bounded and supports the same bounded/open read; the note does not promote the 4D row to a Newtonian 1/b^2 closure or to a live W=8 theorem. The residual W=8 evidence remains a frozen companion log, but that limitation is explicitly inside the audited claim boundary rather than hidden.
 - **auditor confidence:** high
 
 ### `fourth_family_complex_boundary_note`

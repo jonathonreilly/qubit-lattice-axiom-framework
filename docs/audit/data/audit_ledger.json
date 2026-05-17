@@ -78151,24 +78151,41 @@
       "verdict_rationale": "The claim is a bounded numerical computation, not a broad universality theorem: the current runner reproduces the frozen fixed exponent, all six grown-seed exponents, the grown aggregate, and the 0.3 sigma fixed-grown comparison. The source note keeps the conclusion on the specified grown row and explicitly does not claim other geometries, drift/restore values, or observables. Residual boundary: the quoted uncertainty is the finite six-seed grown spread used by the runner, so the retained content is only this finite transfer check."
     },
     "four_d_distance_width_probe_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:30:11.196808+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3fe3047271cbf22d3f66b50b72f891af036e00ba9a374cd4d30f3fbd5d0d2789",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-152734-a5e2dcef-four_d_distance_width_pr-017",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner genuinely constructs the 4D lattice propagator through Lattice4D and computes the W=5..7 deltas and tail fits, and the cached stdout matches the note. The W=8 contribution is used only in the qualified frozen-companion sense stated by the note, so no live W=8 or asymptotic closure is needed for this bounded claim.",
       "claim_id": "four_d_distance_width_probe_note",
-      "claim_scope": null,
+      "claim_scope": "Finite 4D valley-linear distance-width probe at h=0.5, L=15, strength=5e-5 for W=5..7, with only the qualified W=8 frozen-companion read and no asymptotic distance-law closure.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:30:11.196808+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -78176,21 +78193,21 @@
         "dimensional_gravity_table"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/dimensional_gravity_card.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "TOWARD survives across the tested W=5..7 width ladder, the W=8 row is only a frozen supportive companion, and the moving tail fits keep the 4D distance law width-limited rather than asymptotically closed.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b64c071c5d9cdb010a6366acfc247b13cd4beb78779ad3be0fe0df70305410d6",
       "note_path": "docs/FOUR_D_DISTANCE_WIDTH_PROBE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if a later claim promotes W=8 from frozen companion evidence to registered live-runner evidence or asserts an asymptotic 4D distance law.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -78338,15 +78355,15 @@
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
-        "C": 0,
+        "B": 1,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/four_d_distance_width_probe.py",
       "title": "4D Distance Width Probe Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source is narrow enough that the completed W=5..7 computation is the load-bearing evidence, and the runner source is not a hard-coded PASS harness: it builds fields, propagates amplitudes, computes detector centroids, and fits the post-peak tails. The cited dimensional table is retained_bounded and supports the same bounded/open read; the note does not promote the 4D row to a Newtonian 1/b^2 closure or to a live W=8 theorem. The residual W=8 evidence remains a frozen companion log, but that limitation is explicitly inside the audited claim boundary rather than hidden."
     },
     "fourth_family_complex_boundary_note": {
       "audit_date": "2026-05-07T00:28:51.419693+00:00",

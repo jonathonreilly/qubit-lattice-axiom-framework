@@ -77,7 +77,14 @@ framing in prose:
 3. **Labeling vs physics check.** Is the no-go on a labeling / convention
    question (dissolvable by convention parallel to u/c/t naming) or on a
    physics question (genuinely foreclosing)? If labeling, the right outcome
-   is a `meta` convention note, not a `no_go` theorem note.
+   is a `meta` convention note, not a `no_go` theorem note. The same
+   labeling-vs-meta rule applies on the positive-claim side: a labeling
+   convention shipped as `bounded_theorem` is overclassified, since
+   `retained_bounded` grade is for algebraic claims with explicit named
+   premises, not for stipulations about names. See the
+   `LabelingConventionReviewer` in
+   [`docs/ai_methodology/skills/review-loop/SKILL.md`](../review-loop/SKILL.md)
+   for the symmetric check on bounded-theorem candidates.
 4. **Premise-retention check.** No-go theorems depend on premise lists
    just like positive theorems. Verify each premise via live ledger
    `effective_status`. An "unaudited no-go" with an unaudited premise can

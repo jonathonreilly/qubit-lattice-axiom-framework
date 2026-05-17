@@ -211,6 +211,43 @@ locally and report that limitation.
   as overclaimed positive ones because they foreclose investigation paths
   permanently.
 
+- `LabelingConventionReviewer`
+  Detect labeling/naming/convention content masquerading as a bounded
+  theorem. Trigger whenever changed content includes a `bounded_theorem`
+  candidate whose load-bearing claim is a labeling/naming/convention
+  statement (parallel to the u/c/t mass-ordering convention or the
+  e/μ/τ charged-lepton naming) rather than an algebraic claim with
+  explicit named admissions. A labeling convention has no propositional
+  content to admit, so `retained_bounded` grade does not apply — the
+  grade is for algebraic claims with explicit named premises, not for
+  stipulations about names.
+
+  The right outcome is to split:
+  (i) the algebraic core (if any) ships as a narrow `positive_theorem`
+      or `bounded_theorem` with the algebraic premises explicit;
+  (ii) the labeling content ships as a separate `meta` convention note,
+       parallel to the No-Go Discipline Battery's labeling-vs-physics
+       check in
+       [`docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md`](../physics-claim-reviewer/SKILL.md)
+       ("If labeling, the right outcome is a `meta` convention note").
+
+  Output `PASS` if the candidate is genuinely algebraic with named
+  admissions, `SPLIT-REQUIRED` if labeling content is bundled with
+  algebraic content (ship the algebraic theorem narrow + the convention
+  as a separate `meta` note), or `DEMOTE-TO-META` if the candidate is
+  purely convention with no derivation. The reviewer must not approve a
+  `bounded_theorem` whose load-bearing content is a labeling stipulation
+  — conflating conventions with bounded theorems hides which premises
+  are actually load-bearing and prevents downstream rows from cleanly
+  identifying their dependency status. Downstream costs of the
+  conflation: the bundled convention becomes an undischargeable
+  "premise" that blocks the row from reaching retained-unbounded;
+  downstream rows that cite the bundled bounded_theorem inherit an
+  unstated convention dependency; the audit lane cannot cleanly verify
+  "all premises retained" because the convention is not propositional
+  content; and future agents may waste cycles trying to "prove" the
+  convention as if it were derivable.
+
 - `RepoGovernanceReviewer`
   Check placement and authority surfaces. Ensure live findings route through
   `docs/repo/ACTIVE_REVIEW_QUEUE.md`, long packets go under

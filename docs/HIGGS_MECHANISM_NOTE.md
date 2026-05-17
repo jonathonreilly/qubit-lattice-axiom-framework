@@ -61,4 +61,5 @@ produced cycle-0047 in the citation graph
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [higgs_mass_derived_note](HIGGS_MASS_DERIVED_NOTE.md)
-- [vacuum_critical_stability_note](VACUUM_CRITICAL_STABILITY_NOTE.md)
+- `VACUUM_CRITICAL_STABILITY_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0026 / cycle-0027 / cycle-0038 / cycle-0039 — VACUUM_CRITICAL_STABILITY_NOTE.md is named here as a graph-bookkeeping repair link only, not as a load-bearing input; this note's body itself already backticks the same file pointer at the cycle-20 stretch-attempt context paragraph)

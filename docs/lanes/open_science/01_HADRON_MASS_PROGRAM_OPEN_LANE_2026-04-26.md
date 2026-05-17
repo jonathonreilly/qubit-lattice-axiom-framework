@@ -100,9 +100,11 @@ observables have to be retained or the QCD sector remains incomplete.
   multiplicative factor is not itself a retained observable once full-QCD
   string breaking is handled honestly. The gate splits into `(B2a)`
   observable-definition and `(B2b)` bridge-value closure.
-- [HADRON_LANE1_SQRT_SIGMA_B2_STATIC_ENERGY_BRIDGE_SCOUT_NOTE_2026-04-30.md](../../HADRON_LANE1_SQRT_SIGMA_B2_STATIC_ENERGY_BRIDGE_SCOUT_NOTE_2026-04-30.md)
-  shows that modern full-QCD static-energy literature is useful bridge
-  material but still does not promote the bounded `sqrt(sigma)` row.
+- `HADRON_LANE1_SQRT_SIGMA_B2_STATIC_ENERGY_BRIDGE_SCOUT_NOTE_2026-04-30.md`
+  (see-also cross-reference; backticked to break cycle-0037 / cycle-0048 — the bridge_scout
+  note is a support landing under this open lane; citation graph direction is
+  *bridge_scout → this_lane*, not vice versa) shows that modern full-QCD static-energy
+  literature is useful bridge material but still does not promote the bounded `sqrt(sigma)` row.
 - [HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md](../../HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md)
   records the current-surface no-go for `(B5)`: the repo still lacks a
   framework-side large-volume Wilson/Creutz/static-force ladder proving

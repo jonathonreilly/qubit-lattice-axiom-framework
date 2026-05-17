@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 107 |
+| **retained** | 108 |
 | **retained_no_go** | 138 |
 | **retained_bounded** | 327 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 545 |
+| `audited_clean` | 546 |
 | `audited_conditional` | 174 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 64 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -541,6 +541,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_geometry_superposition_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_graph_failure_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -9931,6 +9932,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At d = 4, the upstream naive-lattice count gives 2^4 = 16, and integer arithmetic factors this as 16 = 4 · 4, with the spinor factor matching the cited Cl(3,0) complexification chirality-pair dimension dim_C V_+ + dim_C V_- = 2 + 2 = 4.  _(class `A`)_
 - **chain closes:** True — The narrow claim follows from the two retained cited authorities plus standard integer arithmetic and finite-dimensional linear algebra. The framework-specific 4-taste staggered realization remains open, but the note explicitly excludes that stronger claim from scope.
 - **rationale:** The load-bearing work is a genuine class-A algebraic closure over independent retained-grade inputs: the retained naive theorem supplies the 16-corner count, and the retained Cl(3,0) split supplies the 2 + 2 chirality-pair dimension. The note does not assert the open staggered-realization bridge; it explicitly records that the taste reduction and regulator/substrate selection are not closed here. The runner source performs exact symbolic/enumerative checks consistent with the note rather than merely printing constants.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the abstract 3-dimensional complex linear-algebra claim: any operator commuting with the explicit diagonal unitary triple with joint eigenvalue triples (-1,+1,+1), (+1,-1,+1), (+1,+1,-1) is diagonal in the stated basis.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-150851-a5e2dcef-staggered_dirac_substep4-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each off-diagonal pair alpha != beta, pairwise distinct joint eigenvalues give a T_mu with tau_mu^(alpha) != tau_mu^(beta), and [K,T_mu]=0 implies (tau_mu^(beta)-tau_mu^(alpha)) <e_alpha|K|e_beta> = 0, forcing the matrix entry to vanish.  _(class `A`)_
+- **chain closes:** True — The conclusion follows directly from the explicit diagonal eigenvalue data and the commutator identity. No physical lattice, carrier-identification, Kawamoto-Smit, or external numerical input is needed for the scoped abstract theorem.
+- **rationale:** Within its stated narrow scope, the note proves a standard simultaneous-eigenspace separation fact from explicit finite-dimensional data. The runner source genuinely constructs the stated matrices and verifies the algebraic identities, boundary counterexample, and diagonal commuting class by exact symbolic arithmetic; it does not import external comparators or a hidden physics bridge. The runner's generic K check is Hermitian-restricted, but the written proof covers arbitrary linear K, so this is not a closure blocker for the theorem as stated.
 - **auditor confidence:** high
 
 ### `staggered_fermion_card_2026-04-10`

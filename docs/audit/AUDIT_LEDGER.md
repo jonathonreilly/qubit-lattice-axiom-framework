@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 327 |
+| **retained_bounded** | 328 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 547 |
+| `audited_clean` | 548 |
 | `audited_conditional` | 176 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1423 |
+| `unaudited` | 1422 |
 
 | claim_type | count |
 |---|---:|
@@ -158,6 +158,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `carrier_orbit_invariance_stretch_attempt_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `central_band_dense_joint_highn_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -1903,6 +1904,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** "The boundary is sharp rather than smoothly extendable" based on the tabulated finite sweep over N = 80, 100 and connect_radius = 2.8..3.4.  _(class `C`)_
 - **chain closes:** False — The current completed runner stdout does not match the source note's stated sample sizes or several load-bearing numerical rows. The missing step is a synchronized or pinned run artifact plus explicit boundary criteria for the claimed sharp rollover.
 - **rationale:** Issue: the note is stale relative to the supplied runner stdout, including seeds/realizations and key gravity/purity values at N=80 r=3.0,3.2,3.4 and N=100 r=3.2,3.4. Why this blocks: the claimed sharp boundary and Born-stability conclusions rest on those numerical rows, so the source note does not close from the current artifact. Repair target: update the note from the completed runner or attach the exact cached old run, and add quantitative pass/fail criteria for boundary sharpness. Claim boundary until fixed: the packet supports only that the current runner produced a small finite exploratory sweep with mixed and noisy behavior, not the stated numerical claim.
+- **auditor confidence:** high
+
+### `central_band_dense_joint_highn_note`
+
+- **Note:** [`CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md`](../../docs/CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded high-N dense central-band scan for N=80,100 over npl=60,70,80 using the provided same-graph Born, purity, and gravity runner chain.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-151813-a5e2dcef-central_band_dense_joint-009`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Born-safe dense central-band coexistence survives at N=80 and N=100 only inside a narrow density window, with strongest retained N=80 at npl=80 and N=100 at npl=70.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers construct the graph family, propagate amplitudes, compute corrected Born I3/P, purity, and gravity deltas directly from the restricted code path. The note's retained rows match the completed runner output and the exclusions are consistent with Born violation or weak/noisy gravity within the stated bounded scope.
+- **rationale:** The load-bearing result is a bounded computational theorem over a specified graph family and parameter grid, not a definition, renaming, external comparator, or tuned match to an outside number. The primary runner imports only helper functions included in the packet, and those helpers instantiate the graph generation, propagation, Born metric, purity, collapse, and gravity calculations rather than hard-coding the reported rows. The runner output supports the note's narrowed claim: N=80 npl=80 remains Born-clean with positive noisy gravity, N=100 npl=70 is the strongest retained Born-clean positive row, and N=100 npl=80 is not retained because Born |I3|/P is 0.250.
 - **auditor confidence:** high
 
 ### `central_band_dense_joint_note`

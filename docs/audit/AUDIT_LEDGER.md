@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 324 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 162 |
+| ~~audited_conditional~~ | 163 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,21 +44,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 542 |
-| `audited_conditional` | 162 |
+| `audited_conditional` | 163 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1426 |
+| `unaudited` | 1425 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 929 |
+| `bounded_theorem` | 930 |
 | `decoration` | 20 |
 | `meta` | 199 |
 | `no_go` | 235 |
 | `open_gate` | 110 |
-| `positive_theorem` | 736 |
+| `positive_theorem` | 735 |
 
 | criticality | count |
 |---|---:|
@@ -658,6 +658,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `asymmetry_persistence_born_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `asymmetry_persistence_mass_scaling_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1306,6 +1307,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cached runner output matches the note's retained N=80/100 tables and the provided runner source performs graph generation, propagation, purity, gravity, and corrected Sorkin/Born calculations rather than printing fixed constants. The note explicitly demotes the N=120 probe and central-band comparison outside the binding audited scope.
 - **rationale:** Within the narrowed N=80/100 scope, the claim is supported by a completed cached runner with matching parameters, exit_code 0, and table values matching the note. The runner source computes the listed metrics on generated same-graph instances and includes the corrected -P(empty) Born term, so the load-bearing step is a bounded first-principles compute rather than a definition, renaming, or tuned external comparison. The gravity language is appropriately limited: the retained result is primarily a decoherence and Born-clean coexistence claim, not a robust gravity win across the broader lane.
 - **auditor confidence:** medium
+
+### `asymmetry_persistence_mass_scaling_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite N=100, npl=60, 8-seed mass-scaling sweep over thresholds 0.00, 0.10, and 0.20 and M in {1,2,3,5,8,12}, with fits on M in {2,3,5,8}.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-132110-20260517T132110Z-a642a7f9-asymmetry_persistence_ma-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On dense N=100 generated graphs, persistence sharpens the mass response relative to baseline generated geometry, with the cleanest retained row the thr = 0.10 layernorm lane showing a positive sublinear fit.  _(class `C`)_
+- **chain closes:** False — The cached stdout matches the note's reported coefficients and the primary runner is not just printing constants, but the runner's load-bearing graph construction, field computation, propagation rules, and K_BAND normalization are imported from helper scripts not included in the restricted packet. Without those helper sources, the first-principles computation cannot be verified from the provided inputs.
+- **rationale:** Issue: the claimed mass-window improvement rests on a runner whose primary file delegates the hard geometry and propagation implementation to unprovided helper modules. Why this blocks: the restricted packet cannot verify that build_graph, compute_field_3d, propagate_3d_linear, propagate_3d_layernorm, K_BAND, and graph metadata implement the stated axiom-level computation rather than importing an unsupported premise. Repair target: include and audit the helper runner paths cited in the requeue note, or provide an independent derivation/certificate for the graph and propagation operators. Claim boundary until fixed: the packet supports that the cached primary runner output reports positive sublinear fits, not that the framework-internal first-principles chain is closed.
+- **auditor confidence:** high
 
 ### `asymmetry_persistence_mass_window_note`
 

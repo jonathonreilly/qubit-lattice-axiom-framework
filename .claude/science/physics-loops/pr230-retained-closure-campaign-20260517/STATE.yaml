@@ -2,13 +2,13 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T18:55:50Z"
+last_checkpoint_utc: "2026-05-17T18:57:18Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
 branch: physics-loop/pr230-retained-closure-campaign-block134-20260517
 base_surface: origin/claude/yt-direct-lattice-correlator-2026-04-30
-latest_pr230_head: "ddd4b8f08e819147d4e74e2d530936061168486b"
+latest_pr230_head: "9711e159c8e7a58403d2a940439e2a11f0135f48"
 latest_pr230_head_note: "PR #230 is draft/open; origin/claude verified at the current PR head; stacked science work remains on Block120-Block134 branches"
 pr230_state: open
 pr230_draft: true
@@ -348,4 +348,4 @@ verification:
   audit_pipeline: "completed; no docs/audit diffs left in worktree"
   strict_audit_lint: "OK; no errors; 5 known warnings"
 next_exact_action: "Block134 leaves the cleanest current target unchanged: supply an accepted same-surface canonical O_H/action/LSZ certificate plus nonempty numeric C_ss/C_sH/C_HH pole-residue rows sharing source/action/O_H surface IDs, or bring a strict W/Z, Schur/Feshbach, or neutral H3/H4 authority packet."
-next_checkpoint_due_utc: "2026-05-17T19:25:50Z"
+next_checkpoint_due_utc: "2026-05-17T19:27:18Z"

@@ -3,7 +3,7 @@
 Current branch: `physics-loop/pr230-retained-closure-campaign-block134-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
-`ddd4b8f08e819147d4e74e2d530936061168486b`.
+`9711e159c8e7a58403d2a940439e2a11f0135f48`.
 
 Stacked review PR for Blocks120-121: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439
 Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445

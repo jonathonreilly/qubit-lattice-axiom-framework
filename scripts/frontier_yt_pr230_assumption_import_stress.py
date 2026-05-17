@@ -368,6 +368,9 @@ def main() -> int:
         "block116_neutral_h3h4_strict_artifact_resolver": load(
             "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json"
         ),
+        "block117_schur_scalar_lsz_strict_artifact_resolver": load(
+            "outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2386,6 +2389,63 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block117_schur_scalar_lsz_keeps_imports_clean = (
+        "Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact"
+        in str(
+            certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "block117_schur_scalar_lsz_strict_artifact_resolver_passed"
+        )
+        is True
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "finite_schur_abc_support_only"
+        )
+        is True
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "strict_kprime_rows_absent"
+        )
+        is True
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "scalar_lsz_authority_absent"
+        )
+        is True
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "finite_packet_promotion_blocked"
+        )
+        is True
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "moment_threshold_fv_authority_absent"
+        )
+        is True
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "bridge_roots_absent"
+        )
+        is True
+        and certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "scan_finds_no_strict_schur_scalar_lsz_artifact"
+        )
+        is True
+        and all(
+            value is False
+            for value in certificates["block117_schur_scalar_lsz_strict_artifact_resolver"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block117-schur-scalar-lsz-keeps-imports-clean",
+        block117_schur_scalar_lsz_keeps_imports_clean,
+        certificates["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2721,6 +2781,7 @@ def main() -> int:
         "block114_source_higgs_keeps_imports_clean": block114_source_higgs_keeps_imports_clean,
         "block115_wz_keeps_imports_clean": block115_wz_keeps_imports_clean,
         "block116_neutral_h3h4_keeps_imports_clean": block116_neutral_h3h4_keeps_imports_clean,
+        "block117_schur_scalar_lsz_keeps_imports_clean": block117_schur_scalar_lsz_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

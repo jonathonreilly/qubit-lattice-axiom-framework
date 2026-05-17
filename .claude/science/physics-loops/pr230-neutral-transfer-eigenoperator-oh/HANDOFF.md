@@ -1,11 +1,53 @@
 # Handoff
 
-Checkpoint: 2026-05-17 Block116
+Checkpoint: 2026-05-17 Block117
 
 Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
+
+## Block117 Schur/Scalar-LSZ Strict Artifact Resolver
+
+Block117 resolves the strict Schur/scalar-LSZ pole-authority contract against
+the current PR230 head. It checks for strict Schur/Feshbach K-prime pole rows,
+source projection numerator, FV/IR/contact authority, scalar-LSZ
+moment/threshold/FV authority, and the required source-Higgs/W/Z/neutral
+bridge root. The resolver finds finite Schur A/B/C support only, strict
+K-prime pole rows absent, scalar-LSZ authority absent, finite-packet promotion
+blocked, finite-moment residue authority absent, bridge roots absent, and zero
+strict Schur/scalar-LSZ certificate hits.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver.py`
+- `outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json`
+- `docs/YT_PR230_BLOCK117_SCHUR_SCALAR_LSZ_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block117 Schur/scalar-LSZ strict artifact resolver PASS=12 FAIL=0
+campaign status PASS=437 FAIL=0
+assumption/import stress PASS=120 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors; 5 known warnings
+audit pipeline complete; generated docs/audit churn restored
+git diff --check OK
+```
+
+Honest status: exact negative boundary. No retained or `proposed_retained`
+closure is authorized.
+
+Exact next action: create a strict Schur/scalar-LSZ artifact with pole
+coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source
+projection numerator, threshold/FV/IR/contact authority, and canonical
+`O_H`/source-overlap or a physical W/Z/neutral bridge; or pivot to a fresh
+source-Higgs, W/Z, or neutral strict packet.
 
 ## Block116 Neutral H3/H4 Strict Artifact Resolver
 

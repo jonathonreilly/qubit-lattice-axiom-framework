@@ -1,5 +1,27 @@
 # Artifact Plan
 
+Block117 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver.py` | Created; PASS=12 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json` | Created |
+| Boundary note | `docs/YT_PR230_BLOCK117_SCHUR_SCALAR_LSZ_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block117:
+
+```text
+outputs/yt_pr230_strict_schur_feshbach_kprime_rows_2026-05-17.json
+```
+
+or `outputs/yt_pr230_strict_scalar_lsz_moment_threshold_fv_certificate_2026-05-17.json`
+with pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent,
+source projection numerator, threshold/FV/IR/contact authority, and canonical
+`O_H`/source-overlap or physical W/Z/neutral bridge authority. Finite A/B/C
+rows, Stieltjes diagnostics, finite fits, and support theorems are not closure
+artifacts.
+
 Block116 artifacts:
 
 | Artifact | Path | Status |

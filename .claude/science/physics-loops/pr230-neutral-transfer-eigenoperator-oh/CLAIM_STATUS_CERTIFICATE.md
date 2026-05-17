@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block116_neutral_h3h4_strict_artifact_resolver`.
+Current block: `block117_schur_scalar_lsz_strict_artifact_resolver`.
 
 ```yaml
-actual_current_surface_status: exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent
-conditional_surface_status: neutral support if a future same-surface artifact supplies H3 physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility authority plus H4 source/canonical-Higgs coupling authority; source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
+actual_current_surface_status: exact negative boundary / Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact: K-prime pole rows, strict moment/threshold/FV authority, and required source-Higgs/WZ/neutral bridge roots remain absent
+conditional_surface_status: Schur/scalar-LSZ support if a future same-surface artifact supplies strict pole coordinate, K-prime derivative or Schur/Feshbach equivalent, source projection numerator, threshold/FV/IR/contact authority, and a canonical O_H/source-overlap or physical W/Z/neutral bridge; neutral support if a future same-surface artifact supplies H3 physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility authority plus H4 source/canonical-Higgs coupling authority; source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block116 finds H1/H2 support only and no H3 physical transfer/off-diagonal primitive authority, primitive-cone or irreducibility certificate, rank-one purity certificate, or H4 source/canonical-Higgs coupling authority on the current PR230 head."
+proposal_allowed_reason: "Block117 confirms finite Schur A/B/C rows and finite C_ss/C_sx/C_xx packets are support only; no strict K-prime pole-row artifact, scalar-LSZ moment/threshold/FV authority, or physical bridge root is present on the current PR230 head."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,14 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block117 resolves the strict Schur/scalar-LSZ artifact family against the
+   current PR230 head. It finds the complete finite Schur A/B/C packet is
+   genuine support only, strict K-prime pole rows absent, scalar-LSZ
+   moment/threshold/FV authority absent, finite-packet promotion blocked by
+   the prior complete-monotonicity gate, finite moment prefixes unable to fix
+   pole atom mass or residue, source-Higgs/W/Z/neutral bridge roots absent,
+   and zero strict Schur/scalar-LSZ certificate hits across the candidate
+   output scan. Aggregate gates deny proposal wording.
 0. Block116 resolves the neutral H3/H4 artifact family against the current
    PR230 head.  It finds H1/H2 Z3 support present but support-only, H3 physical
    neutral transfer/off-diagonal generator absent, primitive-cone,

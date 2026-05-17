@@ -1,25 +1,26 @@
 loop_slug: pr230-neutral-transfer-eigenoperator-oh
 mode: campaign
 runtime_budget: "12h total, outer-supervisor managed"
-checkpoint_time: "2026-05-17T14:43:19Z"
+checkpoint_time: "2026-05-17T14:54:23Z"
 branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_head_at_start: 76c5d93e7
-lock_status: "branch-local science block; Block116 resolves the current PR230 head against the strict neutral H3/H4 artifact contract and preserves the no-closure firewall; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
-cycle_count: 116
-active_science_block: block116_neutral_h3h4_strict_artifact_resolver
-active_route: "Block116 checks whether the current PR230 head contains a real strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling; it finds H1/H2 support only, absent H3 physical transfer, absent H4 coupling, blocked shortcuts, and zero strict neutral certificate hits."
+lock_status: "branch-local science block; Block117 resolves the current PR230 head against the strict Schur/scalar-LSZ pole authority artifact contract and preserves the no-closure firewall; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
+cycle_count: 117
+active_science_block: block117_schur_scalar_lsz_strict_artifact_resolver
+active_route: "Block117 checks whether the current PR230 head contains a real strict Schur/scalar-LSZ pole authority artifact: K-prime pole rows, strict moment/threshold/FV authority, and required source-Higgs/WZ/neutral bridge roots; it finds finite Schur A/B/C support only, absent K-prime rows, absent scalar-LSZ authority, blocked finite-packet promotion, absent moment/threshold/FV authority, and zero strict hits."
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent"
+actual_current_surface_status: "exact negative boundary / Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact: K-prime pole rows, strict moment/threshold/FV authority, and required source-Higgs/WZ/neutral bridge roots remain absent"
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows; neutral support if a future same-surface artifact supplies H3 physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility authority plus H4 source/canonical-Higgs coupling authority
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block116 is a strict artifact resolver and exact boundary. It finds H1/H2 support and finite-row staging only; H3 physical transfer/off-diagonal primitive authority and H4 source/canonical-Higgs coupling authority are absent."
+proposal_allowed_reason: "Block117 is a strict artifact resolver and exact boundary. It confirms finite A/B/C rows and finite C_ss/C_sx/C_xx packets are support only; no strict K-prime pole-row artifact, scalar-LSZ moment/threshold/FV authority, or physical bridge root is present."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness, FV/IR authority, and Helmholtz-symmetric mixed-response rows; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR/contact authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block116 confirms the current PR230 head contains no strict neutral H3/H4 artifact under that contract."
+hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness, FV/IR authority, and Helmholtz-symmetric mixed-response rows; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR/contact authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block117 confirms the current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact under that contract."
 minimal_allowed_premises:
+  - "block117 Schur/scalar-LSZ strict artifact resolver as exact negative boundary only; it proves the current PR230 head has finite Schur A/B/C support only and no strict K-prime pole rows, no strict scalar-LSZ moment/threshold/FV authority, no finite-packet promotion, no finite-moment residue authority, no physical bridge root, and zero strict Schur/scalar-LSZ certificate hits"
   - "block116 neutral H3/H4 strict artifact resolver as exact negative boundary only; it proves the current PR230 head has H1/H2 support only and no H3 physical neutral transfer/off-diagonal primitive authority, no primitive-cone/irreducibility/rank-one purity certificate, no H4 source/canonical-Higgs coupling authority, and zero strict neutral certificate hits"
   - "block115 W/Z strict artifact resolver as exact negative boundary only; it proves the current PR230 head has no accepted same-source action, production W/Z rows, same-source top rows, matched top-W covariance, strict g2/absolute authority, delta_perp certificate, or final W-response rows, while keeping scout/smoke/schema rows and support contracts non-authoritative"
   - "block114 source-Higgs strict artifact resolver as exact negative boundary only; it proves the current PR230 head has no accepted canonical O_H/action certificate and no strict numeric production C_ss/C_sH/C_HH pole-row artifact, while keeping schema/contract examples and finite C_ss/C_sx/C_xx aliases non-authoritative"
@@ -152,6 +153,10 @@ forbidden_imports:
   - "static EW algebra, support contracts, formal GEVP smoke, or response-ratio algebra as accepted physical action/response"
   - "assuming k_top=k_gauge or top/W covariance without a same-surface theorem or matched rows"
 files_touched:
+  - docs/YT_PR230_BLOCK117_SCHUR_SCALAR_LSZ_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md
+  - scripts/frontier_yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver.py
+  - outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json
+  - .claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/PR_BODY_BLOCK117.md
   - docs/YT_PR230_BLOCK116_NEUTRAL_H3H4_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md
   - scripts/frontier_yt_pr230_block116_neutral_h3h4_strict_artifact_resolver.py
   - outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json
@@ -1126,8 +1131,8 @@ commands_run:
   - "2026-05-13 block71: audit pipeline OK; strict audit lint OK with 5 known warnings; generated docs/audit diffs reverted; git diff --check OK"
 review_disposition: pass_exact_negative_boundary_block99_higher_shell_complete_packet_monotonicity_no_closure
 pr_status: "direct integration into open draft PR #230 landing path; standalone block99 PR not opened because PR #230 remains the landing path"
-next_exact_action: "Create a strict neutral H3/H4 artifact with same-surface physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility certificate plus source/canonical-Higgs coupling. Otherwise pivot to strict Schur/scalar-LSZ pole authority or a fresh source-Higgs/W/Z strict packet. Do not replay finite-row promotion gates, heat-kernel selector shortcuts, or scout/schema W/Z rows."
-stop_condition: "Coherent block116 neutral H3/H4 strict artifact resolver boundary; no retained/proposed_retained closure is authorized. Current PR230 head contains H1/H2 support only and no H3 physical transfer/off-diagonal primitive authority or H4 source/canonical-Higgs coupling authority."
+next_exact_action: "Create a strict Schur/scalar-LSZ artifact with pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, threshold/FV/IR/contact authority, and canonical O_H/source-overlap or a physical W/Z/neutral bridge. Otherwise pivot to a fresh source-Higgs, W/Z, or neutral strict packet. Do not replay finite-row promotion gates, heat-kernel selector shortcuts, or scout/schema W/Z rows."
+stop_condition: "Coherent block117 Schur/scalar-LSZ strict artifact resolver boundary; no retained/proposed_retained closure is authorized. Current PR230 head contains finite Schur A/B/C support only and no strict K-prime rows, scalar-LSZ moment/threshold/FV authority, finite-packet promotion, finite-moment residue authority, or physical bridge root."
 block16_open_surface_bridge_intake:
   runner: scripts/frontier_yt_pr230_open_surface_bridge_intake.py
   note: docs/YT_PR230_OPEN_SURFACE_BRIDGE_INTAKE_NOTE_2026-05-07.md

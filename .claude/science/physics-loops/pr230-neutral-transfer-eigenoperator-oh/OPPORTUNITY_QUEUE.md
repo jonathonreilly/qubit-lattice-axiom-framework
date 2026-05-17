@@ -1,13 +1,14 @@
 # Opportunity Queue
 
-Campaign mode queue after block116 neutral H3/H4 strict artifact resolver,
-block115 W/Z strict artifact resolver, block114 source-Higgs strict artifact
-resolver, block113 Schur A/B/C complete-packet refresh, block112 Helmholtz
-action-integrability obstruction, block111 Schur K-prime packet gap audit,
-block110 Cl(3)/Z3 action-descent obstruction, block109
-closure-root selector, block108 all-ref rescan, block104 Z3 heat-kernel
-source-coupling/H4 no-go, block100 W/Z explicit-`v` authority firewall, and
-block99 complete higher-shell finite-packet monotonicity boundary.
+Campaign mode queue after block117 Schur/scalar-LSZ strict artifact resolver,
+block116 neutral H3/H4 strict artifact resolver, block115 W/Z strict artifact
+resolver, block114 source-Higgs strict artifact resolver, block113 Schur A/B/C
+complete-packet refresh, block112 Helmholtz action-integrability obstruction,
+block111 Schur K-prime packet gap audit, block110 Cl(3)/Z3 action-descent
+obstruction, block109 closure-root selector, block108 all-ref rescan, block104
+Z3 heat-kernel source-coupling/H4 no-go, block100 W/Z explicit-`v` authority
+firewall, and block99 complete higher-shell finite-packet monotonicity
+boundary.
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Review landability | Blast radius | Independence | Decision |
 |---:|---|---:|---:|---|---|---|---|---|
@@ -140,6 +141,15 @@ source/canonical-Higgs coupling authority, and strict neutral certificate hits
 are absent. The neutral route remains viable only after a fresh same-surface
 H3/H4 artifact appears; otherwise the next admissible pivots are strict
 Schur/scalar-LSZ pole authority or a fresh source-Higgs/W/Z strict packet.
+
+Block117 resolves the strict Schur/scalar-LSZ pole-authority contract against
+the current PR230 head. The complete finite Schur A/B/C packet remains genuine
+support only; strict K-prime pole rows, scalar-LSZ moment/threshold/FV
+authority, finite-packet promotion, finite-moment residue authority, physical
+bridge roots, and strict Schur/scalar-LSZ certificate hits are absent. The
+Schur/scalar-LSZ route remains viable only after a new strict same-surface
+pole/FVIR artifact appears; otherwise the next admissible pivots are a fresh
+source-Higgs, W/Z, or neutral strict packet.
 
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but

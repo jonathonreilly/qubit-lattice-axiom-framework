@@ -528,6 +528,9 @@ def main() -> int:
         "pr230_block116_neutral_h3h4_strict_artifact_resolver": load(
             "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json"
         ),
+        "pr230_block117_schur_scalar_lsz_strict_artifact_resolver": load(
+            "outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2983,6 +2986,51 @@ def main() -> int:
         "pr230-block116-neutral-h3h4-strict-artifact-resolver-blocks",
         block116_neutral_h3h4_strict_artifact_resolver_blocks,
         statuses["pr230_block116_neutral_h3h4_strict_artifact_resolver"],
+    )
+    block117_schur_scalar_lsz_strict_artifact_resolver_blocks = (
+        "Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact"
+        in str(statuses["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"])
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "block117_schur_scalar_lsz_strict_artifact_resolver_passed"
+        )
+        is True
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "finite_schur_abc_support_only"
+        )
+        is True
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "strict_kprime_rows_absent"
+        )
+        is True
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "scalar_lsz_authority_absent"
+        )
+        is True
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "finite_packet_promotion_blocked"
+        )
+        is True
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "moment_threshold_fv_authority_absent"
+        )
+        is True
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "bridge_roots_absent"
+        )
+        is True
+        and certificates["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "scan_finds_no_strict_schur_scalar_lsz_artifact"
+        )
+        is True
+    )
+    report(
+        "pr230-block117-schur-scalar-lsz-strict-artifact-resolver-blocks",
+        block117_schur_scalar_lsz_strict_artifact_resolver_blocks,
+        statuses["pr230_block117_schur_scalar_lsz_strict_artifact_resolver"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8756,6 +8804,9 @@ def main() -> int:
     )
     result["block116_neutral_h3h4_strict_artifact_resolver_blocks"] = (
         block116_neutral_h3h4_strict_artifact_resolver_blocks
+    )
+    result["block117_schur_scalar_lsz_strict_artifact_resolver_blocks"] = (
+        block117_schur_scalar_lsz_strict_artifact_resolver_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

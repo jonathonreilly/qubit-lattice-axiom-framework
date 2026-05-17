@@ -1,0 +1,186 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_rconn_vertex_color_structure_to_kappa_ew_narrow_2026_05_17.py
+runner_sha256: 7b08b12fdaeb34bbd8ca955aa268d0e61c4c239840cbbd656375d7b51d5c036f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-rational) for
+RCONN_VERTEX_COLOR_STRUCTURE_TO_KAPPA_EW_NARROW_THEOREM_NOTE_2026-05-17
+Goal: derive vertex-color-structure -> kappa_EW closed-form map
+Retained inputs (cited):
+  (R1) Fierz completeness identity ... retained_bounded (audited_clean)
+  (R2) Gate-note K_EW(kappa_EW) ... source-note
+  (R3) N_c = 3 from Cl(3) ... retained
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Source-note + cited-authority anchors exist
+----------------------------------------------------------------------------------------
+  [PASS (A)] source note exists  (docs/RCONN_VERTEX_COLOR_STRUCTURE_TO_KAPPA_EW_NARROW_THEOREM_NOTE_2026-05-17.md)
+  [PASS (A)] Fierz authority exists  (docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
+  [PASS (A)] matching-rule gate authority exists  (docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+  [PASS (A)] traceless-selector no-go companion exists  (docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md)
+  [PASS (A)] RCONN_DERIVED sister note exists  (docs/RCONN_DERIVED_NOTE.md)
+  [PASS (A)] source note declares positive_theorem
+  [PASS (A)] source note declares Class A
+  [PASS (A)] source note cites Fierz authority
+  [PASS (A)] source note cites matching-rule gate
+  [PASS (A)] source note names theorem (V)
+  [PASS (A)] source note keeps matching rule open
+
+----------------------------------------------------------------------------------------
+Part 1: Fierz channel decomposition identity (eq. (4*))
+----------------------------------------------------------------------------------------
+  [PASS (A)] Witness M=I: Tr M = N_c  (Tr M = 3, N_c = 3)
+  [PASS (A)] Witness M=I: Tr[M^2] = N_c  (Tr[M^2] = 3)
+  [PASS (A)] Witness M=I: P_singlet = N_c  (P_singlet = (N_c^2)/N_c = 3)
+  [PASS (A)] Witness M=I: P_adjoint = 0  (P_adjoint = 0)
+  [PASS (A)] Witness M=I: P_s + P_a = Tr[M^2] (Fierz completeness)  (3 + 0 = 3)
+  [PASS (A)] Witness M=lambda_3: traceless
+  [PASS (A)] Witness M=lambda_3: Tr[M^2] = 2  (Tr[M^2] = 2)
+  [PASS (A)] Witness M=lambda_3: P_singlet = 0
+  [PASS (A)] Witness M=lambda_3: P_adjoint = Tr[M^2]
+  [PASS (A)] Witness M=lambda_3: Fierz completeness
+  [PASS (A)] Witness M=t^1: traceless
+  [PASS (A)] Witness M=t^1: Tr[(t^A)^2] = 1/2  (Tr[M^2] = 1/2)
+  [PASS (A)] Witness M=t^1: P_singlet = 0
+  [PASS (A)] Witness M=t^1: P_adjoint = 1/2
+  [PASS (A)] Witness M=t^1: Fierz completeness
+  [PASS (A)] Witness M=t^4: traceless
+  [PASS (A)] Witness M=t^4: Tr[(t^A)^2] = 1/2  (Tr[M^2] = 1/2)
+  [PASS (A)] Witness M=t^4: P_singlet = 0
+  [PASS (A)] Witness M=t^4: P_adjoint = 1/2
+  [PASS (A)] Witness M=t^4: Fierz completeness
+  [PASS (A)] Witness M=t^6: traceless
+  [PASS (A)] Witness M=t^6: Tr[(t^A)^2] = 1/2  (Tr[M^2] = 1/2)
+  [PASS (A)] Witness M=t^6: P_singlet = 0
+  [PASS (A)] Witness M=t^6: P_adjoint = 1/2
+  [PASS (A)] Witness M=t^6: Fierz completeness
+  [PASS (A)] Random witness #1 symmetric
+  [PASS (A)] Random witness #1: P_s + P_a = Tr[M^2]  (49/48 + 163/24 = 125/16)
+  [PASS (A)] Random witness #2 symmetric
+  [PASS (A)] Random witness #2: P_s + P_a = Tr[M^2]  (25/27 + 14786714/4002075 = 6164113/1334025)
+  [PASS (A)] Random witness #3 symmetric
+  [PASS (A)] Random witness #3: P_s + P_a = Tr[M^2]  (27/4 + 1/8 = 55/8)
+  [PASS (A)] Random 4x4 witness symmetric
+  [PASS (A)] Random 4x4 witness: P_s + P_a = Tr[M^2]  (1 + 128839/22050 = 150889/22050)
+
+----------------------------------------------------------------------------------------
+Part 2: Corollary 1 — color-blind vertex kappa_EW(I) = 1
+----------------------------------------------------------------------------------------
+  [PASS (A)] N_c = 2: kappa_EW(I_color) = 1  (kappa_EW = 1)
+  [PASS (A)] N_c = 2: K_EW(kappa=1) = 1  (K_EW = 1)
+  [PASS (A)] N_c = 3: kappa_EW(I_color) = 1  (kappa_EW = 1)
+  [PASS (A)] N_c = 3: K_EW(kappa=1) = 1  (K_EW = 1)
+  [PASS (A)] N_c = 4: kappa_EW(I_color) = 1  (kappa_EW = 1)
+  [PASS (A)] N_c = 4: K_EW(kappa=1) = 1  (K_EW = 1)
+  [PASS (A)] N_c = 5: kappa_EW(I_color) = 1  (kappa_EW = 1)
+  [PASS (A)] N_c = 5: K_EW(kappa=1) = 1  (K_EW = 1)
+
+----------------------------------------------------------------------------------------
+Part 3: Corollary 2 — adjoint-projector vertex kappa_EW = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] N_c=3 vertex M = t^1 = lambda_1/2: kappa_EW = 0  (kappa_EW = 0)
+  [PASS (A)] N_c=3 vertex M = t^4 = lambda_4/2: kappa_EW = 0  (kappa_EW = 0)
+  [PASS (A)] N_c=3 vertex M = t^6 = lambda_6/2: kappa_EW = 0  (kappa_EW = 0)
+  [PASS (A)] N_c=3 vertex M = t^3 = lambda_3/2: kappa_EW = 0  (kappa_EW = 0)
+  [PASS (A)] N_c = 2: K_EW(kappa=0) = N_c^2/(N_c^2-1) = 4/3  (K_EW = 4/3)
+  [PASS (A)] N_c = 3: K_EW(kappa=0) = N_c^2/(N_c^2-1) = 9/8  (K_EW = 9/8)
+  [PASS (A)] N_c = 4: K_EW(kappa=0) = N_c^2/(N_c^2-1) = 16/15  (K_EW = 16/15)
+  [PASS (A)] N_c = 5: K_EW(kappa=0) = N_c^2/(N_c^2-1) = 25/24  (K_EW = 25/24)
+  [PASS (A)] N_c = 3 headline: K_EW(kappa=0) = 9/8 exactly
+
+----------------------------------------------------------------------------------------
+Part 4: Corollary 3 — Uniqueness of kappa_EW = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] Family M = (-2/3)*I + (-2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=-2)
+  [PASS (A)] Family M = (-2/3)*I + (-1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=50/53, Tr M=-2)
+  [PASS (A)] Family M = (-2/3)*I + (0)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=1, Tr M=-2)
+  [PASS (A)] Family M = (-2/3)*I + (1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=50/53, Tr M=-2)
+  [PASS (A)] Family M = (-2/3)*I + (2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=-2)
+  [PASS (A)] Family M = (-1/3)*I + (-2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/49, Tr M=-1)
+  [PASS (A)] Family M = (-1/3)*I + (-1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=-1)
+  [PASS (A)] Family M = (-1/3)*I + (0)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=1, Tr M=-1)
+  [PASS (A)] Family M = (-1/3)*I + (1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=-1)
+  [PASS (A)] Family M = (-1/3)*I + (2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/49, Tr M=-1)
+  [PASS (A)] Family M = (0)*I + (-2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=0, Tr M=0)
+  [PASS (A)] Family M = (0)*I + (-1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=0, Tr M=0)
+  [PASS (A)] Family M = (0)*I + (1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=0, Tr M=0)
+  [PASS (A)] Family M = (0)*I + (2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=0, Tr M=0)
+  [PASS (A)] Family M = (1/3)*I + (-2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/49, Tr M=1)
+  [PASS (A)] Family M = (1/3)*I + (-1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=1)
+  [PASS (A)] Family M = (1/3)*I + (0)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=1, Tr M=1)
+  [PASS (A)] Family M = (1/3)*I + (1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=1)
+  [PASS (A)] Family M = (1/3)*I + (2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/49, Tr M=1)
+  [PASS (A)] Family M = (2/3)*I + (-2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=2)
+  [PASS (A)] Family M = (2/3)*I + (-1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=50/53, Tr M=2)
+  [PASS (A)] Family M = (2/3)*I + (0)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=1, Tr M=2)
+  [PASS (A)] Family M = (2/3)*I + (1/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=50/53, Tr M=2)
+  [PASS (A)] Family M = (2/3)*I + (2/5)*lambda_3: kappa_EW=0 iff Tr M=0  (kappa_EW=25/31, Tr M=2)
+  [PASS (A)] I_color: Tr M != 0, kappa_EW != 0
+  [PASS (A)] lambda_3: Tr M = 0, kappa_EW = 0
+
+----------------------------------------------------------------------------------------
+Part 5: Round-trip via gate-note K_EW(kappa_EW) formula
+----------------------------------------------------------------------------------------
+  [PASS (A)] N_c=3: F_adj = 8/9  (F_adj = 8/9)
+  [PASS (A)] N_c=3: 1 - F_adj = 1/9  (1 - F_adj = 1/9)
+  [PASS (A)] N_c=3: F_adj + (1 - F_adj) = 1
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -3)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -3/2)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -1)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -3/7)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -3/11)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -1)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -1/2)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -1/3)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -1/7)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = -1/11)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 0)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 0)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 0)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 0)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 0)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 1)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 1/2)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 1/3)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 1/7)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 1/11)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 2)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 1)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 2/3)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 2/7)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 2/11)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 3)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 3/2)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 1)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 3/7)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 3/11)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 5)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 5/2)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 5/3)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 5/7)
+  [PASS (A)] N_c=3 round-trip: K_EW * (F_adj + kappa*(1-F_adj)) = 1 (kappa = 5/11)
+
+----------------------------------------------------------------------------------------
+Part 6: Cited cross-checks (boundary statements)
+----------------------------------------------------------------------------------------
+  [PASS (A)] gate note keeps kappa_EW explicit
+  [PASS (A)] gate note records K_EW(0) = 9/8 specialization
+  [PASS (A)] gate note records K_EW(1) = 1 specialization
+  [PASS (A)] Fierz authority records exact (N_c^2-1)/N_c^2 fraction
+  [PASS (A)] Fierz authority states matching rule (M) is open
+  [PASS (A)] traceless no-go records Tr_internal vs Tr_internal^2 distinction
+  [PASS (A)] source note explicitly does not contradict traceless no-go
+  [PASS (A)] source note records matching-rule freedom is captured by vertex choice
+  [PASS (A)] source note records two completions (kappa=0 and kappa=1)
+
+========================================================================================
+RESULT: PASS=134 FAIL=0
+========================================================================================
+
+----- stderr -----
+

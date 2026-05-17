@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 112 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 340 |
+| **retained_bounded** | 341 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 564 |
+| `audited_clean` | 565 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
@@ -409,6 +409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
@@ -7365,6 +7366,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing step is genuine class A algebra over retained graph-first inputs, and there are no external comparator or tuned numerical checks. However, the note repeats the parent narrow theorem's ratio derivation and adds only a proof-walk/boundary clarification that the listed staggered or lattice quantities are not load-bearing. Under the decoration tie-breaker, this is an algebraic decoration of the parent narrow-ratio claim rather than a new bounded theorem.
 - **decoration parent:** `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
 - **auditor confidence:** medium
+
+### `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic inverse uniqueness for ordered positive-integer two-block partitions under m+n=N and target ratio beta/alpha=-k, including the specialization (N,k)=(8,3)->(m,n)=(6,2); derivations of N=8, k=3, and any SM identification are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-184321-41cdea85-lh_doublet_partition_rat-014`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From m*alpha + n*beta = 0 and beta/alpha = -k, infer m = k*n; with m+n=N this gives n=N/(k+1), m=k*N/(k+1), hence uniqueness when the pair is integral and positive.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the trace equation, the stated integer-ratio hypothesis, and elementary divisibility. No physical identification, normalization convention, PDG comparator, or open upstream bridge is load-bearing for the scoped algebraic claim.
+- **rationale:** The load-bearing step is a genuine class-A algebraic closure: beta/alpha=-m/n plus beta/alpha=-k forces m=kn, and m+n=N then determines the only possible pair. The runner source performs symbolic and exact Fraction checks, enumerates P(8), and reports PASS=58, FAIL=0; the hard-coded spot checks are corollary checks rather than substitutes for the derivation. The retained-bounded cited authority is contextual for the forward counterpart, while this inverse theorem does not import its open SM-identification exclusions as load-bearing premises.
+- **auditor confidence:** high
 
 ### `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
 

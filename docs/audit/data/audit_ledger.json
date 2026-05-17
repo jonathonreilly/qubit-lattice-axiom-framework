@@ -139450,22 +139450,41 @@
       "verdict_rationale": "The load-bearing step is genuine class A algebra over retained graph-first inputs, and there are no external comparator or tuned numerical checks. However, the note repeats the parent narrow theorem's ratio derivation and adds only a proof-walk/boundary clarification that the listed staggered or lattice quantities are not load-bearing. Under the decoration tie-breaker, this is an algebraic decoration of the parent narrow-ratio claim rather than a new bounded theorem."
     },
     "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T18:44:45.097309+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+        },
+        "dep_claim_type": {
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5a82b417b13b4841a9331a6d471b2184546239c7b8c2b9d05693cce5a913b764",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-184321-41cdea85-lh_doublet_partition_rat-014",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from the trace equation, the stated integer-ratio hypothesis, and elementary divisibility. No physical identification, normalization convention, PDG comparator, or open upstream bridge is load-bearing for the scoped algebraic claim.",
       "claim_id": "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Algebraic inverse uniqueness for ordered positive-integer two-block partitions under m+n=N and target ratio beta/alpha=-k, including the specialization (N,k)=(8,3)->(m,n)=(6,2); derivations of N=8, k=3, and any SM identification are out of scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T18:44:45.097309+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -139473,32 +139492,32 @@
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "From m*alpha + n*beta = 0 and beta/alpha = -k, infer m = k*n; with m+n=N this gives n=N/(k+1), m=k*N/(k+1), hence uniqueness when the pair is integral and positive.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "62974b374440dd13839e39a7c26756afdc697bef24cf2b27d36143b5bfed989c",
       "note_path": "docs/LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that alpha != 0 remains explicit wherever beta/alpha is used; keep N=8 and k=3 derivations outside this claim boundary.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 58,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 58
       },
       "runner_path": "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py",
       "title": "LH-Doublet Trace-Surface Partition / Ratio Inverse Uniqueness (Narrow Theorem)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure: beta/alpha=-m/n plus beta/alpha=-k forces m=kn, and m+n=N then determines the only possible pair. The runner source performs symbolic and exact Fraction checks, enumerates P(8), and reports PASS=58, FAIL=0; the hard-coded spot checks are corollary checks rather than substitutes for the derivation. The retained-bounded cited authority is contextual for the forward counterpart, while this inverse theorem does not import its open SM-identification exclusions as load-bearing premises."
     },
     "lh_doublet_su2_squared_hypercharge_anomaly_cancellation_note_2026-05-01": {
       "audit_date": null,

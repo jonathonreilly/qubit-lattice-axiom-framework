@@ -252,7 +252,7 @@ block132_result:
     strict_WZ_response_packet: true
     strict_Schur_pole_authority: true
     neutral_H3_H4_transfer_or_coupling_authority: true
-  stacked_review_pr: "pending"
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1487"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"

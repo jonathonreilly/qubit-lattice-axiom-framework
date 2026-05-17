@@ -1585,6 +1585,38 @@
       "to": "koide_bae_probe_kappa_prediction_test_partial_falsification_note_2026-05-09_probe29"
     },
     {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_u_bae_ncg_spectral_triple_note_2026-05-08_probeu_bae_ncg"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality"
+    },
+    {
+      "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "to": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+    },
+    {
       "from": "baryon_charge_integrality_note_2026-05-02",
       "to": "ewsb_pattern_from_higgs_y_note_2026-05-02"
     },
@@ -9929,6 +9961,26 @@
       "to": "evanescent_barrier_amplitude_suppression_theorem_note"
     },
     {
+      "from": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+      "to": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+      "to": "native_gauge_closure_note"
+    },
+    {
+      "from": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+      "to": "yt_ew_color_projection_theorem"
+    },
+    {
+      "from": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_canonical_convention_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+      "to": "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
       "to": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
     },
@@ -10007,6 +10059,34 @@
     {
       "from": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
       "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
+    },
+    {
+      "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2"
+    },
+    {
+      "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "l3a_v3_trace_surface_bounded_obstruction_note_2026-05-07_l3a"
+    },
+    {
+      "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
+      "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
+    },
+    {
+      "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_constraint_vs_convention_restatement_note_2026-05-07"
+    },
+    {
+      "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_derivation_note"
     },
     {
       "from": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
@@ -13047,6 +13127,50 @@
     {
       "from": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09",
       "to": "brannen_amplitude_equipartition_bae_rename_meta_note_2026-05-09"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12"
+    },
+    {
+      "from": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "to": "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
     },
     {
       "from": "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18",
@@ -17837,6 +17961,46 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
       "from": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
@@ -21497,6 +21661,102 @@
       "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
     },
     {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "minimal_axioms_2026-05-03"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "fermion_parity_z2_grading_theorem_note_2026-05-02"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_reeh_schlieder_theorem_note_2026-05-01"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "three_generation_structure_note"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "three_generation_observable_theorem_note"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "s3_taste_cube_decomposition_note"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "site_phase_cube_shift_intertwiner_note"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep4_positive_ratchet_stretch_attempt_note_2026-05-10"
+    },
+    {
       "from": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
       "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
     },
@@ -21605,6 +21865,10 @@
       "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
@@ -21687,6 +21951,70 @@
     {
       "from": "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
       "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "c3_symmetry_preserved_interpretation_note_2026-05-08"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "a3_route3_anomaly_inflow_bounded_obstruction_note_2026-05-08_r3"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "to": "three_generation_observable_theorem_note"
     },
     {
       "from": "staggered_dirac_substep4_positive_ratchet_stretch_attempt_note_2026-05-10",
@@ -39313,6 +39641,27 @@
       "runner_path": "scripts/cl3_bae_max_entropy_retained_2026_05_10_baemaxent.py",
       "title": "BAE Max-Entropy Retained Bounded Obstruction"
     },
+    "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17": {
+      "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_u_bae_ncg_spectral_triple_note_2026-05-08_probeu_bae_ncg",
+        "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13",
+        "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
+        "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "40706cae8c3026f1839a11924143ea2948e72b0759f845020b234b979a03190c",
+      "path": "docs/BAE_NCG_KODIM_REAL_STRUCTURE_PARTIAL_NARROWING_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py",
+      "title": "BAE NCG / KO-Dim Real-Structure Partial Narrowing Note"
+    },
     "baryon_charge_integrality_note_2026-05-02": {
       "claim_id": "baryon_charge_integrality_note_2026-05-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -48486,6 +48835,24 @@
       "runner_path": "scripts/frontier_full_y_squared_trace_su5_gut.py",
       "title": "Full One-Generation Tr[Y\u00b2] = 40/3 and SU(5) GUT Normalization Check"
     },
+    "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17": {
+      "claim_id": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+        "native_gauge_closure_note",
+        "yt_ew_color_projection_theorem",
+        "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "39ac325e9242abbb4dd344d96114ccb0aa886cbee2304b953e071f53db800a4f",
+      "path": "docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
+      "title": "g_2(v) Bounded Interval Narrow Theorem (Given u_0 Literature Import)"
+    },
     "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": {
       "claim_id": "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -48646,6 +49013,26 @@
       "path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
       "runner_path": "scripts/frontier_g_bare_audit_residual_closure.py",
       "title": "g_bare Hilbert\u2013Schmidt Rigidity Theorem (Independent Rescaling-Freedom Closure)"
+    },
+    "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17": {
+      "claim_id": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2",
+        "l3a_v3_trace_surface_bounded_obstruction_note_2026-05-07_l3a",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+        "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
+        "cl3_color_automorphism_theorem",
+        "g_bare_derivation_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e7cd63f2686ac8e245468f96b5ba49ae90ba315ef75c4a50a6786c99d753b25b",
+      "path": "docs/G_BARE_L3A_TRACE_SURFACE_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17.py",
+      "title": "g_bare L3a Trace-Surface Invariance Narrow Theorem"
     },
     "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": {
       "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
@@ -53524,6 +53911,30 @@
       "path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
       "runner_path": "scripts/frontier_bae_30_probe_terminal_synthesis.py",
       "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note"
+    },
+    "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector": {
+      "claim_id": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (sharpened obstruction; no positive closure)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09",
+        "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
+        "koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16",
+        "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16",
+        "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12",
+        "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "00ee6ccbf5f479f5e2e5a79f98d36f9bc6491310650f094523b0d5a70fdaa564",
+      "path": "docs/KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md",
+      "runner_path": "scripts/audit_companion_bae_probe_cl3_bivector_block01_2026_05_17.py",
+      "title": "Koide BAE Probe \u2014 Cl(3) Bivector Route Bounded Obstruction"
     },
     "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18": {
       "claim_id": "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18",
@@ -60142,6 +60553,20 @@
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
     },
+    "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cd37bd9edd01c30363ddb1dd3423512136caa308d434895ea9b6b5e9c5578d3a",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FRAMEWORK_INTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Framework-Internal Narrow Bounded Note"
+    },
     "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -60153,6 +60578,41 @@
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
       "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic External Narrow Bounded Note"
+    },
+    "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+        "cpt_exact_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "3c9ae4b760924dfd09e77fda2a9265999c42d0f745cc6c996ee76cc69cce79fd",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_d_sharpened_no_go_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Route D Sharpened No-Go Note"
+    },
+    "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "412c4d0508f9ff97a5c48fa7e035668aaed097dfad843186fb59e92b6bd4f0bd",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Route E Tao-style Cross-Disciplinary Narrow Bounded Note"
     },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
@@ -68811,6 +69271,43 @@
       "runner_path": "scripts/probe_bz_corner_decomposition.py",
       "title": "Staggered-Dirac Substep 3 \u2014 BZ-Corner Three-Generation Forcing (Block 04)"
     },
+    "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17": {
+      "claim_id": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "bounded support theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "minimal_axioms_2026-05-03",
+        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "three_generation_structure_note",
+        "three_generation_observable_theorem_note",
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "s3_taste_cube_decomposition_note",
+        "site_phase_cube_shift_intertwiner_note",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
+        "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+        "staggered_dirac_substep4_positive_ratchet_stretch_attempt_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6a12d6082854bcef66d805e97d572d682d138504d4892005cda42efc1c79af7d",
+      "path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py",
+      "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)"
+    },
     "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": {
       "claim_id": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
       "claim_type_author_hint": null,
@@ -68915,6 +69412,20 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem"
     },
+    "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
+      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9e456244814528d0c54eba96760370c61d54dba362970fc1833e784182dace79",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem"
+    },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -68999,6 +69510,35 @@
       "path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6 Trace-Equipartition Bridge Narrow Theorem"
+    },
+    "staggered_dirac_substep4_labeling_no_go_note_2026-05-17": {
+      "claim_id": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
+        "c3_symmetry_preserved_interpretation_note_2026-05-08",
+        "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1",
+        "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2",
+        "a3_route3_anomaly_inflow_bounded_obstruction_note_2026-05-08_r3",
+        "a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4",
+        "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5",
+        "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "three_generation_observable_theorem_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c768ec38091201e2d2eee9f07f877f49bd4b6438914e19c449216b2908ec9ac8",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6\u03bb Species-Labeling No-Go Theorem"
     },
     "staggered_dirac_substep4_positive_ratchet_stretch_attempt_note_2026-05-10": {
       "claim_id": "staggered_dirac_substep4_positive_ratchet_stretch_attempt_note_2026-05-10",
@@ -76361,27 +76901,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 405,
+      "bounded_theorem": 411,
       "decoration": 1,
       "meta": 157,
-      "no_go": 53,
-      "none": 1527,
+      "no_go": 55,
+      "none": 1528,
       "open_gate": 44,
-      "positive_theorem": 153
+      "positive_theorem": 154
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 851,
+      "bounded_theorem": 858,
       "decoration": 1,
       "meta": 157,
-      "no_go": 158,
+      "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 606
+      "positive_theorem": 607
     },
-    "edge_count": 9050,
-    "leaf_count": 722,
-    "node_count": 2340,
+    "edge_count": 9132,
+    "leaf_count": 718,
+    "node_count": 2350,
     "root_count": 844,
-    "runners_with_path": 1951
+    "runners_with_path": 1961
   }
 }

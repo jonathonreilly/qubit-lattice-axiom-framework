@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py
+runner_sha256: a86355edf9f3e390ac601343c1325fedb7a08872cf00dd28fef39fe638dab1ae
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.01
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+BAE_NCG_KODIM_REAL_STRUCTURE_PARTIAL_NARROWING_NOTE_2026-05-17
+Goal: sympy-symbolic verification that
+  (a) J = U_swap*K satisfies J^2 = +I, [D, J] = 0 for circulant D,
+  (b) D-restricted-to-H_R has same eigenvalues as D on C^3,
+  (c) the NCG/KO-dim route does NOT collapse doublet to F1.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  [PASS (A)] C^3 = I (cyclic identity)  (C generates the cyclic group of order 3)
+  [PASS (A)] H is Hermitian (H^dagger = H)  (circulant Hermitian on (a real, b complex) pair)
+
+----------------------------------------------------------------------------------------
+Part 1: J = U_swap * K well-defined antiunitary involution (T1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] U_swap is real (entries in R)  (U_swap has 0/1 entries)
+  [PASS (A)] U_swap is symmetric (U_swap = U_swap^T)  (symmetric permutation matrix)
+  [PASS (A)] U_swap is unitary (U_swap * U_swap^T = I)  (real orthogonal involution)
+  [PASS (A)] U_swap^2 = I (involution)  (period 2)
+  [PASS (A)] J^2(v) = v for generic v in C^3 (J^2 = +I)  (KO-dim 0 mod 8 family)
+
+----------------------------------------------------------------------------------------
+Part 2: J C J^{-1} = C^{-1} = C^2 (T2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] J C J^{-1} = C^2 (= C^{-1})  (J inverts orbit orientation)
+  [PASS (A)] J C^2 J^{-1} = C  (cycle inverse on the other generator)
+  [PASS (A)] J I J^{-1} = I (J fixes the identity)  (trivial isotype is J-fixed)
+
+----------------------------------------------------------------------------------------
+Part 3: [D, J] = 0 for all circulant Hermitian D (T3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] J D J^{-1} = D for D = aI + bC + bbar C^2 (any complex b)  (explicit verification at the matrix-element level)
+  [PASS (A)] Operator equation: D U_swap = U_swap conj(D)  (this is the [D, J] = 0 condition for J = U_swap * K)
+
+----------------------------------------------------------------------------------------
+Part 4: H_R = +1 eigenspace of J is real-3-dim with explicit basis (T4)
+----------------------------------------------------------------------------------------
+  [PASS (A)] J(x_0, u + iv, u - iv) = (x_0, u + iv, u - iv) (H_R is J-fixed)  (3-real-parameter family of J-fixed vectors)
+  [PASS (A)] ||e_1||^2 = 1 (orthonormal)  (||e_1||^2 = 1)
+  [PASS (A)] J(e_1) = e_1 (basis vector in H_R)  (explicit J-invariance check)
+  [PASS (A)] ||e_2||^2 = 1 (orthonormal)  (||e_2||^2 = 1)
+  [PASS (A)] J(e_2) = e_2 (basis vector in H_R)  (explicit J-invariance check)
+  [PASS (A)] ||e_3||^2 = 1 (orthonormal)  (||e_3||^2 = 1)
+  [PASS (A)] J(e_3) = e_3 (basis vector in H_R)  (explicit J-invariance check)
+  [PASS (A)] <e_1, e_2> = 0  (<e_1, e_2> = 0)
+  [PASS (A)] <e_1, e_3> = 0  (<e_1, e_3> = 0)
+  [PASS (A)] <e_2, e_3> = 0  (<e_2, e_3> = 0)
+  [PASS (A)] D restricted to H_R has only real matrix elements in (e_1, e_2, e_3) basis  (real symmetric realization on the J-real form)
+  [PASS (A)] D_R = D_R^T (real symmetric)  (standard real-symmetric structure)
+  [PASS (A)] lambda_0 = a + 2 b_re is an eigenvalue of D_R  (lambda_0 = a + 2*b_re)
+  [PASS (A)] lambda_om = a - b_re - sqrt(3) b_im is an eigenvalue of D_R  (lambda_om = a - sqrt(3)*b_im - b_re)
+  [PASS (A)] lambda_omb = a - b_re + sqrt(3) b_im is an eigenvalue of D_R  (lambda_omb = a + sqrt(3)*b_im - b_re)
+  [PASS (A)] Tr(D_R) = lambda_0 + lambda_om + lambda_omb = 3a  (trace identity)
+  [PASS (A)] Tr(D_R^2) = 3a^2 + 6|b|^2 (matches block-total Frobenius E_+ + E_perp)  (J-real Frobenius norm = full Frobenius norm)
+
+----------------------------------------------------------------------------------------
+Part 5: spectral action on H_R = spectral action on C^3 (T5 — negative core)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Tr_{H_R}(D^2) = 3a^2 + 6|b|^2 (matches Probe U a_2 coefficient)  (block-total Frobenius E_+ + E_perp)
+  [PASS (A)] Tr_{H_R}(D^4) leading a^4 coefficient = 3 (sum of three eigenvalues squared)  (symmetric in 3 eigenvalues)
+  [PASS (A)] d/db_im Tr(D^2) = 12 b_im, vanishes only at b_im = 0 (not at BAE)  (symmetric power-sum critical point is degenerate not BAE)
+  [PASS (A)] d/db_re Tr(D^2) = 12 b_re, vanishes only at b_re = 0 (not at BAE)  (symmetric power-sum critical point is degenerate not BAE)
+
+----------------------------------------------------------------------------------------
+Part 6: counterfactual — K alone does NOT commute with complex-b D (T6)
+----------------------------------------------------------------------------------------
+  [PASS (A)] K H K^{-1} - H = -2i b_im (C - C^2) (not zero for complex b)  (K alone forces b_im = 0 to commute with circulant D)
+  [PASS (A)] K H K^{-1} = H for b real (1-real-dim slice of doublet)  (b real is the K-fixed slice, only 1-dim of the 2-real-dim doublet)
+
+----------------------------------------------------------------------------------------
+Part 7: F1 vs F3 selection NOT supplied by J (the negative claim)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Tr_{H_R}(D^2/Lambda^2) = lam_0^2/Lambda^2 + lam_om^2/Lambda^2 + lam_omb^2/Lambda^2 = F3-style eigenvalue weighting  (each eigenvalue counted once = doublet weight 2 = F3)
+  [PASS (A)] F1-eigenvalue-collapse spectral action != Tr_{H_R}(D^2/Lambda^2) for b complex  (confirms F1 weighting is NOT supplied by J-projection)
+
+----------------------------------------------------------------------------------------
+Part 8: claim-scope review hygiene
+----------------------------------------------------------------------------------------
+  [PASS (A)] note exists  (BAE_NCG_KODIM_REAL_STRUCTURE_PARTIAL_NARROWING_NOTE_2026-05-17.md)
+  [PASS (A)] note declares Status authority = independent audit lane only  (audit-pipeline language compliance)
+  [PASS (A)] note uses bounded_theorem claim type framing  (partial-narrowing = bounded, not no-go)
+  [PASS (A)] note explicitly does NOT discharge F1 hypothesis  (preserves F1 vs F3 Open derivation gap)
+  [PASS (A)] note cites Probe U as prior NCG-cutoff attempt  (cross-references prior NCG-route synthesis)
+  [PASS (A)] note cites cl3_complexification_split as authority  (markdown-link to retained authority)
+  [PASS (A)] note does not promote any audit_status (author-side)  (status authority deferred to audit lane)
+  [PASS (A)] note uses repo-canonical NCG vocabulary (KO-dim, anti-unitary involution)  (standard NCG vocabulary, no new repo tags)
+
+----------------------------------------------------------------------------------------
+Final tally
+----------------------------------------------------------------------------------------
+
+=== TOTAL: PASS=45, FAIL=0 ===
+
+----- stderr -----
+

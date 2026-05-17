@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 432,
+    "critical": 431,
     "high": 161,
     "leaf": 333,
     "medium": 315
@@ -1261,28 +1261,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Pure finite-rank complexified Clifford-algebra theorem: chirality as an involutive algebra element anticommuting with every generator exists exactly for even total dimension n, implying d_t odd when d_s = 3.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.19,
-      "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
-      "transitive_descendants": 825
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36317,6 +36295,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 18,
-  "total_pending": 1241
+  "ready_count": 17,
+  "total_pending": 1240
 }

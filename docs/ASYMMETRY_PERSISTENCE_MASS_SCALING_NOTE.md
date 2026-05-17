@@ -124,3 +124,7 @@ include `scripts/asymmetry_persistence_joint_card.py`,
 `scripts/gap_topological_asymmetry_layernorm_combo.py` alongside the
 primary runner and cache. This note changes no science content; it makes
 the re-audit hash drift explicit.
+
+---
+
+**Second re-queue 2026-05-17 (post-orchestrator-fix):** the first re-queue earlier today triggered a re-audit at ~13:22-13:24 UTC, but the orchestrator code in `scripts/codex_audit_runner.py` had not yet been patched to substitute `{{HELPER_RUNNER_SOURCES}}` (PR #1467 landed later). That re-audit therefore got the same incomplete packet as before and returned the same `audited_conditional` verdict citing missing helpers. This second hash-change re-queues the note for a fresh audit pass where the orchestrator will now correctly bundle the helper sources (per `helper_runner_paths` in the ledger row) into the packet. Pure audit-bookkeeping annotation — no science content changes.

@@ -211740,22 +211740,45 @@
       "verdict_rationale": null
     },
     "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T13:01:26.053514+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "left_handed_charge_matching_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "left_handed_charge_matching_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "left_handed_charge_matching_note"
+        ],
+        "load_bearing_score": 16.656,
+        "runner_hash": null,
+        "transitive_descendants": 806
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-130105-20260517T130105Z-837beea0-su3_cubic_anomaly_cancel-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic cancellation closes algebraically if the stated color representations and multiplicities are accepted. The restricted packet does not provide the cited right-handed completion authority establishing retained u_R^c and d_R^c as color anti-fundamentals.",
       "claim_id": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
-      "claim_scope": null,
+      "claim_scope": "Pure SU(3)^3 cubic gauge anomaly cancellation for one generation of retained color-charged Weyl fermions Q_L:3 with weak multiplicity 2 and u_R^c,d_R^c:3bar.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T13:01:26.053514+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -211764,20 +211787,23 @@
         "left_handed_charge_matching_note"
       ],
       "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 16.656,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the retained left-handed conjugate content, the SU(3)^3 anomaly index is sum_i m_i A(R_i) = +2 - 1 - 1 = 0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "89085dde243dd69e8cd4adb9ce663291652c1283152e79d3a4e9450c34286478",
       "note_path": "docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the right-handed completion authority establishing retained u_R^c and d_R^c as SU(3) anti-fundamentals, or narrow the claim to a conditional anomaly calculation on explicitly assumed color content.",
+      "open_dependency_paths": [
+        "docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md",
+        "docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.369907+00:00",
@@ -211914,16 +211940,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": null,
       "title": "SU(3)^3 Cubic Gauge Anomaly Cancellation Theorem",
       "transitive_descendants": 806,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a straightforward algebraic anomaly-index sum using standard SU(3) cubic indices. The provided GRAPH_FIRST_SU3_INTEGRATION_NOTE and LEFT_HANDED_CHARGE_MATCHING_NOTE are retained_bounded, but they do not by themselves establish the retained one-generation right-handed colored completion. Because the note imports u_R^c and d_R^c in 3bar from an unprovided upstream authority, the chain does not close from the restricted packet alone. Runner source and stdout are absent, but the algebraic load-bearing step is judgeable from the note text."
     },
     "su3_dabc_symmetric_theorem_note_2026-05-02": {
       "audit_date": "2026-05-11T18:14:01.013807+00:00",

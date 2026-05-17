@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 321 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 166 |
+| ~~audited_conditional~~ | 167 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 539 |
-| `audited_conditional` | 166 |
+| `audited_conditional` | 167 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1425 |
+| `unaudited` | 1424 |
 
 | claim_type | count |
 |---|---:|
@@ -803,6 +803,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -10153,6 +10154,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Peter-Weyl/Schur character orthogonality plus finite-dimensional diagonal-operator algebra on the SU(3) character truncation, reducing convolution by Z to eigenvalue multiplication by rho_(p,q).  _(class `A`)_
 - **chain closes:** True — The source has zero ledger dependencies and is scoped to textbook compact-Lie-group character algebra on an abstract finite truncation. The live runner reproduced PASS=13, FAIL=0, including Schur orthogonality checks, algebraic reduction, uniqueness, positivity, self-adjointness, swap symmetry, and abstract numerical sanity cases.
 - **rationale:** The theorem's conclusions are exactly the standard finite-dimensional character-convolution consequences of Schur orthogonality and diagonal linear algebra. The note explicitly forbids importing Wilson action, beta=6 data, or the parent plaquette environment identification, and the runner treats companion Wilson coefficients only as abstract positive symmetric input data. Within that boundary, no gap remains.
+- **auditor confidence:** high
+
+### `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24`
+
+- **Note:** [`SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md`](../../docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure SU(3)^3 cubic gauge anomaly cancellation for one generation of retained color-charged Weyl fermions Q_L:3 with weak multiplicity 2 and u_R^c,d_R^c:3bar.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-130105-20260517T130105Z-837beea0-su3_cubic_anomaly_cancel-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the retained left-handed conjugate content, the SU(3)^3 anomaly index is sum_i m_i A(R_i) = +2 - 1 - 1 = 0.  _(class `A`)_
+- **chain closes:** False — The arithmetic cancellation closes algebraically if the stated color representations and multiplicities are accepted. The restricted packet does not provide the cited right-handed completion authority establishing retained u_R^c and d_R^c as color anti-fundamentals.
+- **rationale:** The load-bearing step is a straightforward algebraic anomaly-index sum using standard SU(3) cubic indices. The provided GRAPH_FIRST_SU3_INTEGRATION_NOTE and LEFT_HANDED_CHARGE_MATCHING_NOTE are retained_bounded, but they do not by themselves establish the retained one-generation right-handed colored completion. Because the note imports u_R^c and d_R^c in 3bar from an unprovided upstream authority, the chain does not close from the restricted packet alone. Runner source and stdout are absent, but the algebraic load-bearing step is judgeable from the note text.
+- **open / conditional deps cited:**
+  - `ONE_GENERATION_MATTER_CLOSURE_NOTE.md`
+  - `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`
 - **auditor confidence:** high
 
 ### `su3_dabc_symmetric_theorem_note_2026-05-02`

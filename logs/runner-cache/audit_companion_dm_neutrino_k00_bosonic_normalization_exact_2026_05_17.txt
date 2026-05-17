@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py
+runner_sha256: c2d02b7ed35f77269d39d4715849cfb8c0652bbdacbcf6a27a67ce65f27a493e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of the finite-dimensional algebraic identities
+      (S1)-(S2), (E1)-(E2), (DG3)-(DG2), (W), (R1)-(R2) at exact precision
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: explicit F00 = J3/3 and F_row = J2/2
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part 1: (E1), (E2) idempotency; (Trace) traces
+----------------------------------------------------------------------------------------
+  [PASS (A)] (E1) F00^2 = F00 on C^3
+  [PASS (A)] (E2) F_row^2 = F_row on C^2
+  [PASS (A)] (Trace) Tr F00 = 1  (Tr F00 = 1)
+  [PASS (A)] (Trace) Tr F_row = 1  (Tr F_row = 1)
+  [PASS (A)] (aux) J3^2 = 3 J3 on C^3
+  [PASS (A)] (aux) J2^2 = 2 J2 on C^2
+
+----------------------------------------------------------------------------------------
+Part 2: (S1), (S2) spectra of F00, F_row
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1) spec(F00) = {1, 0, 0} (multiplicities (1, 2))  (eigs F00 = {1: 1, 0: 2})
+  [PASS (A)] (S2) spec(F_row) = {1, 0} (multiplicities (1, 1))  (eigs F_row = {1: 1, 0: 1})
+
+----------------------------------------------------------------------------------------
+Part 3: (DG3), (DG2) determinant identities at exact symbolic (m, j)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (DG3) det(m I_3 + j F00) = m^2 (m + j) = m^3 (1 + j/m)  (det = m**2*(j + m))
+  [PASS (A)] (DG2) det(m I_2 + j F_row) = m (m + j) = m^2 (1 + j/m)  (det = m*(j + m))
+
+----------------------------------------------------------------------------------------
+Part 4: (W) equal-baseline-subtracted response identity
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W.symb) det(m I_3 + j F00)/m^3 = 1 + j/m at exact symbolic (m, j)  (ratio_F00 = (j + m)/m)
+  [PASS (A)] (W.symb) det(m I_2 + j F_row)/m^2 = 1 + j/m at exact symbolic (m, j)  (ratio_F_row = (j + m)/m)
+  [PASS (A)] (W.symb) baselines match: det(m I_3 + j F00)/m^3 = det(m I_2 + j F_row)/m^2  (both ratios = 1 + j/m)
+  [PASS (A)] (W) F00 and F_row have identical response at (m,j) = (1, 1/5)  (W_F00 = log(6/5), W_F_row = log(6/5), target = log(6/5))
+  [PASS (A)] (W) F00 and F_row have identical response at (m,j) = (2, 3/10)  (W_F00 = log(23/20), W_F_row = log(23/20), target = log(23/20))
+  [PASS (A)] (W) F00 and F_row have identical response at (m,j) = (3, 7/10)  (W_F00 = log(37/30), W_F_row = log(37/30), target = log(37/30))
+
+----------------------------------------------------------------------------------------
+Part 5: (R1) Tr(H_core · F00) = (A + 4 b + 2 c + 2 d)/3 on generic symbols
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R1) Tr(H_core · F00) = (A + 4 b + 2 c + 2 d)/3 on generic real symbols  (Tr(H_core · F00) = A/3 + 4*b/3 + 2*c/3 + 2*d/3)
+
+----------------------------------------------------------------------------------------
+Part 6: (R2) (δ, ρ, γ)-independence — Tr(B · F00) = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R2) Tr(B · F00) = 0 identically in (δ, ρ, γ) (breaking-triplet independence)  (Tr(B · F00) = 0)
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactual — non-scalar baseline D = diag(m_1, m_2, m_3) breaks (W)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (cf) non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks the (W) match for F00 vs F_row  (W_F00 = log(391/360), W_F_row = log(53/48), difference = log(782/795))
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision on C^3 and C^2:
+    (E1) F00^2 = F00 (idempotency)
+    (E2) F_row^2 = F_row (idempotency)
+    (Tr) Tr F00 = Tr F_row = 1
+    (S1) spec(F00) = {1, 0, 0}
+    (S2) spec(F_row) = {1, 0}
+    (DG3) det(m I_3 + j F00) = m^2 (m + j) = m^3 (1 + j/m)
+    (DG2) det(m I_2 + j F_row) = m (m + j) = m^2 (1 + j/m)
+    (W)  Equal-baseline-subtracted response identity: both = log|1 + j/m|
+    (R1) Tr(H_core · F00) = (A + 4 b + 2 c + 2 d)/3 on generic real (A, b, c, d)
+    (R2) Tr(B(δ, ρ, γ) · F00) = 0 identically
+    Counterfactual: non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks (W)
+
+========================================================================================
+TOTAL: PASS=19, FAIL=0
+========================================================================================
+
+----- stderr -----
+

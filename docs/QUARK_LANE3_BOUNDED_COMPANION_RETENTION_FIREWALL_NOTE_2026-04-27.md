@@ -178,7 +178,13 @@ Therefore `claim_type: bounded_theorem` until that gate closes. When that gate c
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [lanes.open_science.03_quark_mass_retention_open_lane_2026-04-26](lanes/open_science/03_QUARK_MASS_RETENTION_OPEN_LANE_2026-04-26.md)
+- `lanes.open_science.03_quark_mass_retention_open_lane_2026-04-26`
+  (see-also cross-reference; backticked to break cycle-0009 in the citation
+  graph. The lane note cites the present firewall as load-bearing content
+  ("the firewall blocks any five-mass closure unless..."), so the
+  load-bearing citation direction is
+  *lanes.open_science.03_quark_mass_retention_open_lane_2026-04-26 →
+  this_quark_lane3_bounded_companion_retention_firewall_note*, not vice versa.)
 - [quark_mass_ratio_review_packet_2026-04-18](QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md)
 - [down_type_mass_ratio_ckm_dual_note](DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md)
 - [quark_up_amplitude_candidate_scan_note_2026-04-19](QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md)

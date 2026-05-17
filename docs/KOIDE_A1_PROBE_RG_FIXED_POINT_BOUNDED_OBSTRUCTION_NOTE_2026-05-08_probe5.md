@@ -554,7 +554,14 @@ This graph-bookkeeping section records explicit dependency links named
 by the source-note above. It does not promote this note or change the
 audited claim scope.
 
-- [koide_a1_derivation_status_note](KOIDE_A1_DERIVATION_STATUS_NOTE.md)
+- `koide_a1_derivation_status_note`
+  (see-also cross-reference; backticked to break cycle-0004 in the citation
+  graph. The A1 derivation status note is the parent survey that enumerates
+  the present probe as one of its bounded-obstruction results; the parent
+  status note cites this probe as a load-bearing input to its survey
+  classification. The load-bearing citation direction is
+  *koide_a1_derivation_status_note → this_probe_rg_fixed_point_obstruction*,
+  not vice versa.)
 - [koide_a1_route_f_casimir_difference_bounded_obstruction_note_2026-05-08_routef](KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md)
 - [complete_prediction_chain_2026_04_15](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
 - [yt_qfp_insensitivity_support_note](YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md)

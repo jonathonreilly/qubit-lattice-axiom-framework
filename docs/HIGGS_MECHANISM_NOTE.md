@@ -60,5 +60,11 @@ produced cycle-0047 in the citation graph
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [higgs_mass_derived_note](HIGGS_MASS_DERIVED_NOTE.md)
+- `higgs_mass_derived_note`
+  (see-also cross-reference; backticked to break cycle-0001 in the citation
+  graph. This note is the upstream mechanism-level support surface for the
+  derived-mass authority, and `HIGGS_MASS_DERIVED_NOTE.md` cites it as a
+  "Supporting Higgs surface" in its own body. The load-bearing citation
+  direction is *higgs_mass_derived_note → this_mechanism_note*, not vice
+  versa.)
 - [vacuum_critical_stability_note](VACUUM_CRITICAL_STABILITY_NOTE.md)

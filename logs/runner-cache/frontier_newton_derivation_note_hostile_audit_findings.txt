@@ -1,0 +1,16 @@
+==============================================================================
+AUDIT-PREP VERIFIER — newton_derivation_note
+==============================================================================
+  [PASS] [A] Parent note exists  (NEWTON_DERIVATION_NOTE.md, 15372 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   newton_derivation_top4_bridge_note IS cited (>=1 hit)  (hits = 4)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED

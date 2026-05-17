@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 333 |
+| **retained_bounded** | 334 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1219 |
+| unaudited | 1218 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 553 |
+| `audited_clean` | 554 |
 | `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1416 |
+| `unaudited` | 1415 |
 
 | claim_type | count |
 |---|---:|
@@ -238,6 +238,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `evolving_network_prototype_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `evolving_network_prototype_v4_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v5_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -3994,6 +3995,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source note states a bounded decomposition rather than a full structural derivation of every factor. The runner completed with PASS=38 FAIL=0 and verifies the ABC rational cancellation, exact product reconstruction, candidate near-fit mismatch, and explicit isolation of Y0^2 as phenomenological.
 - **rationale:** The audited bounded claim closes as an algebraic decomposition of the existing transport chain: ABC reduces exactly to 516/53009, the reconstructed product matches the runner's eta/eta_obs value, and the four named near-fit candidates are not exact framework forms. The clean verdict is limited to this bounded scope and does not promote Y0^2, PMNS-chart constants, or the ODE transport functional to first-principles retained derivations beyond the note's admitted residual boundary.
 - **auditor confidence:** high
+
+### `evolving_network_prototype_note`
+
+- **Note:** [`EVOLVING_NETWORK_PROTOTYPE_NOTE.md`](../../docs/EVOLVING_NETWORK_PROTOTYPE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded computational claim that `scripts/evolving_network_prototype_v2.py`, with its included helper, runs a generated hard-gap pruning rule and a same-budget imposed control on the same 3D DAG family and supports only the note's cautious prototype interpretation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-152638-a5e2dcef-evolving_network_prototy-016`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The generated hard-gap rule produces measurable gap growth, while the imposed same-budget control often makes the purity comparison undefined, so the result is only a bounded prototype signal rather than a clean Gate B win.  _(class `C`)_
+- **chain closes:** True — The restricted packet includes the primary runner and its transitive helper, and the runner genuinely constructs random 3D DAGs, applies the pruning/control rules, and computes purity and gap metrics rather than printing fixed target constants. The note's cautious conclusion follows from the provided cached run, though the control is explicitly not a fair final discriminator.
+- **rationale:** The note does not promote a decisive physics theorem; it retains only the bounded claim that this prototype shows generated gap growth while the comparator leaves purity undefined or unusable. The runner source and helper source are complete in the restricted packet and compute the relevant graph, pruning, purity, and gap quantities without hard-coded contested values. There is a text/code inconsistency around whether the imposed control is random removal or a center-band control, but that weakens only any stronger baseline-fairness claim, which the note explicitly withholds.
+- **auditor confidence:** medium
 
 ### `evolving_network_prototype_v2_note`
 

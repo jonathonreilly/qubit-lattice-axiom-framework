@@ -11355,13 +11355,13 @@
       "deps": [
         "minimal_axioms_2026-05-03"
       ],
-      "direct_in_degree": 16,
+      "direct_in_degree": 17,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 17.706,
+      "load_bearing_score": 18.207,
       "load_bearing_step": "Promoting the symmetry parameter to a site-dependent lattice field yields a current-divergence Ward identity whose on-shell arbitrariness forces \u2202^L_\u03bc J^\u03bc_x = 0, with the discrete translation case handled by the analogous finite-difference Ward identity and direct E6 check for P^\u03bc_x.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -11706,7 +11706,7 @@
       },
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 834,
+      "transitive_descendants": 835,
       "verdict_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier."
     },
     "axiom_first_microcausality_lieb_robinson_hostile_audit_findings_note_2026-05-17": {
@@ -135821,6 +135821,58 @@
       "transitive_descendants": 0,
       "verdict_rationale": "The reconciliation note is primarily a cross-note synthesis, so its load-bearing step is class B rather than a new first-principles computation. Its central bounded conclusion no longer closes against the restricted packet because one cited retained authority, docs/LATTICE_NN_HIGH_PRECISION_NOTE.md, explicitly promotes the raw NN finite window through h = 0.125. The old continuum runner cache still shows float64 failure at h = 0.125, but the high-precision certificate in the provided authority directly resolves that as a numerical-format limit, so the source note's h = 0.25 boundary is stale on its own cited inputs."
     },
+    "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem (narrow sub-theorem)",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "minimal_axioms_2026-05-03",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "5689a146be5a79e590b53d09af0288750bb1162d5006d1bd2fdd13b9863cae99",
+      "note_path": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
+      "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem (Block 27)",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
     "lattice_physical_matching_cluster_obstruction_note_2026-05-02": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -145317,13 +145369,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 83,
+      "direct_in_degree": 84,
       "effective_status": "meta",
       "effective_status_reason": "metadata",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 51.311,
+      "load_bearing_score": 51.812,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -145342,7 +145394,7 @@
       },
       "runner_path": "scripts/frontier_generation_rooting_undefined.py",
       "title": "Minimal Framework Axioms (Restored)",
-      "transitive_descendants": 897,
+      "transitive_descendants": 898,
       "verdict_rationale": null
     },
     "minimal_bidirectional_trapping_probe_note": {
@@ -255639,7 +255691,7 @@
     "preserved_archived_failed": 44,
     "preserved_existing": 2242,
     "re_audit_required": 0,
-    "row_count": 2286,
-    "seeded_new": 0
+    "row_count": 2287,
+    "seeded_new": 1
   }
 }

@@ -15765,6 +15765,14 @@
       "to": "lattice_nn_high_precision_note"
     },
     {
+      "from": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
+      "to": "minimal_axioms_2026-05-03"
+    },
+    {
+      "from": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+    },
+    {
       "from": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
       "to": "yt_ew_matching_rule_m_stretch_attempt_note_2026-05-02"
     },
@@ -57950,6 +57958,21 @@
       "runner_path": "scripts/lattice_nn_continuum.py",
       "title": "Lattice NN RG Reconciliation Note"
     },
+    "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17": {
+      "claim_id": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem (narrow sub-theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-03",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5689a146be5a79e590b53d09af0288750bb1162d5006d1bd2fdd13b9863cae99",
+      "path": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
+      "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem (Block 27)"
+    },
     "lattice_physical_matching_cluster_obstruction_note_2026-05-02": {
       "claim_id": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
       "claim_type_author_hint": null,
@@ -78266,7 +78289,7 @@
       "no_go": 56,
       "none": 1534,
       "open_gate": 44,
-      "positive_theorem": 164
+      "positive_theorem": 165
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 884,
@@ -78275,12 +78298,12 @@
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
-      "positive_theorem": 617
+      "positive_theorem": 618
     },
-    "edge_count": 9279,
-    "leaf_count": 741,
-    "node_count": 2398,
+    "edge_count": 9281,
+    "leaf_count": 742,
+    "node_count": 2399,
     "root_count": 862,
-    "runners_with_path": 2002
+    "runners_with_path": 2003
   }
 }

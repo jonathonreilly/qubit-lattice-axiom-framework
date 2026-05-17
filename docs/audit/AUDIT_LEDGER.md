@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 324 |
+| **retained_bounded** | 325 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
 | unaudited | 1242 |
-| audit_in_progress | 1 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,8 +43,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 542 |
+| `audited_clean` | 543 |
 | `audited_conditional` | 167 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
@@ -116,7 +114,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `source_resolved_exact_green_scaling_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -514,6 +511,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `source_driven_field_recovery_h025_pocket_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `source_resolved_generated_architecture_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_generated_bridge_failure_audit` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `source_resolved_generated_discriminator_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -9271,6 +9269,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the declared exact 3D lattice family, the self-contained runner verifies the broad sweep and conservative pocket replay with explicit threshold gates, yielding RUNNER PASS=5 FAIL=0.  _(class `C`)_
 - **chain closes:** True — The restricted packet contains both completed stdout and source code showing the runner constructs the finite lattice, source-driven field evolution, propagation, centroid readout, exponent fits, and threshold gates inline rather than hard-coding the reported results. The claim is explicitly bounded to this declared runner family and excludes derivation of the telegraph rule, parameters, and calibration ladder from retained framework dynamics. Within that bounded scope, the target-max ladder is a fixed modeling input being swept, not an external tuned comparator or missing dependency, so the first tuple is the correct one under the hostile-review standard.
 - **rationale:** The restricted packet contains both completed stdout and source code showing the runner constructs the finite lattice, source-driven field evolution, propagation, centroid readout, exponent fits, and threshold gates inline rather than hard-coding the reported results. The claim is explicitly bounded to this declared runner family and excludes derivation of the telegraph rule, parameters, and calibration ladder from retained framework dynamics. Within that bounded scope, the target-max ladder is a fixed modeling input being swept, not an external tuned comparator or missing dependency, so the first tuple is the correct one under the hostile-review standard.
+- **auditor confidence:** high
+
+### `source_resolved_exact_green_scaling_note`
+
+- **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-parameter finite-lattice replay of the stated source-resolved Green kernel on the h=0.5, W=3, L=24 exact lattice, including zero-source reduction, TOWARD rows, linear source-strength scaling, and reported Green/instantaneous ratios.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-144003-bc2044d8-source_resolved_exact_gr-002`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For the fixed h=0.5, W=3, L=24 source-resolved Green-kernel configuration, the runner computes zero-source shift +0.000000e+00, four positive Green deflections, F~M exponent 1.01, and mean |green/inst| = 1.111.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helper build the lattice, fields, propagation, centroid readout, ratios, and power fits from the stated constants; the reported values are computed rather than hard-coded. The closure is limited to the stated finite lattice, kernel, calibration target, source cluster, and readout.
+- **rationale:** The runner source is substantive: it constructs the finite lattice, computes the source-resolved Green-like field, propagates amplitudes, and derives the centroid shifts and fitted exponents without importing prior note outputs or asserting the table constants. The cached stdout matches the note's frozen readout, including exact zero-source reduction and all four TOWARD rows. This clean verdict applies only to the bounded fixed-configuration computation, not to a full self-consistent field theory or generated-geometry transfer.
 - **auditor confidence:** high
 
 ### `source_resolved_exact_green_self_consistent_note`

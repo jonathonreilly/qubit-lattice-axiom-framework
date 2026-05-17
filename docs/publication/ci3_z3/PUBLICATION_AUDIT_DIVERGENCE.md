@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 236 |
 | high | `unaudited` | 107 |
-| medium | `unaudited` | 101 |
+| medium | `unaudited` | 100 |
 | critical | `audited_conditional` | 29 |
 | medium | `audited_conditional` | 18 |
 | high | `audited_conditional` | 10 |
@@ -29,7 +29,7 @@ publication tables phrase it.
 | critical | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 510
+**Total non-retained-grade rows in publication tables:** 509
 
 ## Per-row breakdown
 
@@ -464,7 +464,6 @@ publication tables phrase it.
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_note_2026-04-20` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | medium | `gr_class_expansion_finite_rank_target_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_lane1_chiral_condensate_banks_casher_scoping_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_mass_lane1_theorem_plan_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

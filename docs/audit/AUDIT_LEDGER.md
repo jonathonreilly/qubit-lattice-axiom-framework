@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 110 |
+| **retained** | 111 |
 | **retained_no_go** | 139 |
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 562 |
+| `audited_clean` | 563 |
 | `audited_conditional` | 181 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1438 |
+| `unaudited` | 1437 |
 
 | claim_type | count |
 |---|---:|
@@ -297,6 +297,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5234,6 +5235,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note gives the finite transfer-kernel factorization and the SU(3) tensor-product recurrence needed to identify the local plaquette source with J. The open beta=6 transfer-state/Perron data are explicitly outside scope.
 - **rationale:** The scoped theorem is exact operator algebra on a finite Wilson source surface, not a numerical beta=6 plaquette prediction. The runner supports the character identity, recurrence, self-adjointness, slice counting, and scoped operator realization with THEOREM PASS=7 SUPPORT=2 FAIL=0. No support-class promotion is needed because the audited object is a bounded exact theorem with the remaining state-identification gap excluded.
 - **auditor confidence:** medium
+
+### `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For K_1(t)=log I_0(t), all odd Taylor coefficients vanish and every even Taylor coefficient c_{2k} is nonzero with sign (-1)^(k+1).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-182604-41cdea85-gauge_vacuum_plaquette_u-004`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting r(t)=Σ a_n t^(2n+1) into t r'(t)+r(t)+t r(t)^2=t gives a_n=-(1/(2(n+1)))Σ_{j+k=n-1}a_j a_k, whose summands have a common sign under induction.  _(class `A`)_
+- **chain closes:** True — The Riccati recurrence follows algebraically from the stated Bessel identities, and the sign/nonzero induction is valid because every convolution summand has the same nonzero sign. Termwise integration then transfers the result from a_n to c_{2k}.
+- **rationale:** The presented theorem is a narrow algebraic/special-function statement about log I_0, not a calibrated numerical match or a physical observable bridge. The runner source actually computes exact Taylor coefficients and the recurrence in rational arithmetic rather than only printing constants; its one numerical high-order support line is non-load-bearing. Although the note cites the parent no-go for motivation, the audited conclusion closes from the stated U(1) one-plaquette definition plus standard Bessel calculus.
+- **auditor confidence:** high
 
 ### `gauge_wilson_isotropy_boundary_note_2026-05-04`
 

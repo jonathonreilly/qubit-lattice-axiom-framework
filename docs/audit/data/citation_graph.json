@@ -50324,6 +50324,18 @@
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
       "title": "Gate B: Evolving Network Dynamics \u2014 Current Status"
     },
+    "gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17": {
+      "claim_id": "gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "23e0730fd69f2c141fbcd05c70ce376364cbd0dba2b328df7d24c9abc369a5aa",
+      "path": "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_gate_b_farfield_bounded_conditional_separator.py",
+      "title": "Gate B Far-Field Bounded-Conditional Separator Narrow Theorem"
+    },
     "gate_b_farfield_note": {
       "claim_id": "gate_b_farfield_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -78013,6 +78025,7 @@
     "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
     "gap_physics_note",
     "gate_b_connectivity_tolerance_note",
+    "gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17",
     "gate_b_farfield_note",
     "gate_b_grown_distance_law_note",
     "gate_b_grown_propagating_field_note",
@@ -78553,7 +78566,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 446,
+      "bounded_theorem": 447,
       "decoration": 1,
       "meta": 164,
       "no_go": 56,
@@ -78562,7 +78575,7 @@
       "positive_theorem": 168
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 893,
+      "bounded_theorem": 894,
       "decoration": 1,
       "meta": 164,
       "no_go": 161,
@@ -78571,9 +78584,9 @@
       "positive_theorem": 621
     },
     "edge_count": 9298,
-    "leaf_count": 754,
-    "node_count": 2413,
-    "root_count": 868,
-    "runners_with_path": 2015
+    "leaf_count": 755,
+    "node_count": 2414,
+    "root_count": 869,
+    "runners_with_path": 2016
   }
 }

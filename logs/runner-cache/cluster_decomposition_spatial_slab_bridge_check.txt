@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/cluster_decomposition_spatial_slab_bridge_check.py
+runner_sha256: cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.23
+status: ok
+----- stdout -----
+========================================================================
+ cluster_decomposition_spatial_slab_bridge_check.py
+ Closed-form spatial bridge: slab gap input → spatial transfer-matrix decay
+ Loop: axiom-first-foundations  Block-28 follow-up to the 2026-05-09 temporal bridge
+========================================================================
+
+--- S1: spatial spectral identity (S.6) ---
+  Verify: <0_x|A_p T̃_x^d B_q|0_x> = <0_x|A_p|0_x><0_x|B_q|0_x>
+           + Σ_{k≥1} (λ_k/M_x)^d <0_x|A_p|k><k|B_q|0_x>
+  Setup: random T_x (d=8) with Δ_x=1.5, separation in [1,5]
+  identity verified across 10/10 trials, max err < 1e-9
+
+--- S2: ground-state spatial clustering (S.7) ---
+  Verify: |<A_p T̃_x^d B_q>_0 - <A_p>_0<B_q>_0| ≤ ‖A_p‖‖B_q‖ · exp(-d Δ_x)
+  Setup: random T_x (d=8), various Δ_x in [0.3, 2.0], sep in [1, 10]
+  bound (S.7) holds in 200/200 (frac = 1.000)
+
+--- S3: thermal trace-distance bound (S.8 two-term form) ---
+  Verify: |<A_p T̃_x^d B_q>_β - <A_p>_β<B_q>_β| ≤ ‖A_p‖‖B_q‖ · (exp(-d Δ_x) + 6 q_β,x)
+  q_β,x is the actual slab excited-state population, computed from
+  the tested finite spectrum; no dimension-independent Boltzmann
+  replacement is used.
+  Setup: random T_x (d=8), β·a_x in {0.5, 1, 2, 4}, sep in [1, 8]
+  bound (S.8) holds in 640/640 (frac = 1.000)
+
+--- S4: no-gap counter-example ---
+  Setup: T_x with DEGENERATE top eigenvalue (Δ_x = 0).
+  Expect: spatial connected correlator does NOT decay — stays O(1).
+  This demonstrates the spatial gap is GENUINELY required.
+    trial 0: |connc| at sep=20 = 1.000  (no decay, as expected)
+    trial 1: |connc| at sep=20 = 1.000  (no decay, as expected)
+    trial 2: |connc| at sep=20 = 1.000  (no decay, as expected)
+    trial 3: |connc| at sep=20 = 1.000  (no decay, as expected)
+    trial 4: |connc| at sep=20 = 1.000  (no decay, as expected)
+  no-decay observed in 5/5 trials
+
+--- S5: temporal/spatial parallelism (structural mirror) ---
+  Verify: for the same input transfer matrix, the spatial bound (S.7)
+  and the temporal bound (B.7) of the 2026-05-09 bridge note coincide.
+  Setup: random transfer matrix (d=8), Δ in [0.5, 2.0], sep in [1, 8]
+  parallelism check: 80/80 (bounds identical at 1e-12)
+
+========================================================================
+ SUMMARY
+========================================================================
+   S1 (spatial spectral identity S.6): PASS
+   S2 (ground-state spatial bound S.7): PASS
+   S3 (thermal spatial bound S.8): PASS
+   S4 (no-gap spatial counter-example): PASS
+   S5 (temporal/spatial parallelism): PASS
+
+   PASSED: 5/5
+
+ verdict: spatial bridge (S.1)–(S.2) verified as closed-form finite-block
+          identity; no-gap counter-example confirms spatial gap is required;
+          temporal/spatial parallelism confirms structural mirror of the
+          2026-05-09 temporal bridge.

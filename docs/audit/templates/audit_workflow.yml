@@ -6,15 +6,16 @@ name: audit-lane
 # (hundreds of pushes/day) and noisy workflow history is its own cost.
 #
 # Drift-catching coverage:
-#   - PRs: caught before merge (PASS gate, warning surface, no auto-commit)
+#   - PRs: advisory warning surface only (no auto-commit, no red failure)
 #   - main: caught within 24 hours by the nightly cron (auto-commits refresh)
 #   - manual: workflow_dispatch for urgent ad-hoc runs
 #
 # We deliberately do NOT trigger on every push to main, because:
 #   (a) the auto-commit-back-to-main creates a feedback loop concern, and
 #   (b) at hundreds of pushes/day the run count would be UI-noise excessive.
-# The nightly cron + the PR-pre-merge gate together still guarantee main
-# never drifts more than 24 hours and never merges drift through a PR.
+# The nightly cron keeps main refreshed. Review-loop is the pre-merge gate:
+# it must inspect the PR, rebase/salvage against moving main, regenerate the
+# pipeline, and verify caches before landing.
 #
 # This workflow does NOT perform audits. Audit verdicts are minted only by
 # Current best Codex GPT model at maximum reasoning (or another independent
@@ -65,37 +66,60 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      - name: Check runner cache freshness (PR only)
+      - name: Report runner cache freshness (PR only, advisory)
         if: github.event_name == 'pull_request'
         run: |
           # Every runner under scripts/ must have a SHA-pinned cache at
           # logs/runner-cache/<stem>.txt whose header sha matches the
           # current runner. The audit lane consumes this cache; stale
           # caches mean the auditor sees outdated evidence.
-          if ! python3 scripts/precompute_audit_runners.py --all --check-only; then
+          base="origin/${{ github.base_ref }}"
+          git fetch --no-tags origin "+${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
+          if ! python3 scripts/precompute_audit_runners.py --pr-diff "$base" --check-only; then
             echo
-            echo "::error::Runner cache is stale for one or more runners."
-            echo "::error::Refresh locally with:"
-            echo "::error::  python3 scripts/precompute_audit_runners.py --all"
-            echo "::error::then commit logs/runner-cache/."
-            exit 1
+            echo "::warning::Runner cache is stale for one or more runners changed in this PR."
+            echo "::warning::This is advisory because main moves continuously; review-loop must regenerate caches before landing."
+            echo "::warning::Local repair command:"
+            echo "::warning::  python3 scripts/precompute_audit_runners.py --pr-diff $base"
+            {
+              echo "### Runner Cache Advisory"
+              echo
+              echo "One or more runner caches changed in this PR are stale."
+              echo
+              echo "This PR check is advisory only because audit/review work keeps \`main\` moving. The landing reviewer must regenerate caches from current \`main\` before pushing."
+              echo
+              echo "\`\`\`bash"
+              echo "python3 scripts/precompute_audit_runners.py --pr-diff $base"
+              echo "\`\`\`"
+            } >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Run audit pipeline
         run: bash docs/audit/scripts/run_pipeline.sh
 
-      - name: Check pipeline diff (PR runs only)
+      - name: Report pipeline diff (PR only, advisory)
         if: github.event_name == 'pull_request'
         run: |
           git status --short docs/audit docs/publication/ci3_z3
           if [[ -n "$(git status --porcelain docs/audit docs/publication/ci3_z3)" ]]; then
             echo
             echo "::warning::Audit-data files changed during pipeline run on this PR."
-            echo "::warning::This usually means notes were edited without re-running"
-            echo "::warning::bash docs/audit/scripts/run_pipeline.sh and committing the result."
-            echo "::warning::Run the pipeline locally and commit the regenerated files."
+            echo "::warning::This can be a real missing-regeneration issue, or normal drift"
+            echo "::warning::from main moving while the PR stays open."
+            echo "::warning::Review-loop must rerun the pipeline from current main before landing."
             git diff --stat docs/audit docs/publication/ci3_z3 || true
-            exit 1
+            {
+              echo "### Audit Pipeline Diff Advisory"
+              echo
+              echo "The audit pipeline produced generated-file diffs on this PR."
+              echo
+              echo "This PR check is advisory only. Open PRs may sit while \`main\` moves; review-loop is responsible for applying source-only deltas to current \`main\`, rerunning the pipeline, and landing only if the regenerated audit data is clean."
+              echo
+              echo "\`\`\`bash"
+              echo "bash docs/audit/scripts/run_pipeline.sh"
+              echo "python3 docs/audit/scripts/generate_conditional_prompts.py"
+              echo "\`\`\`"
+            } >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Commit refreshed ledger / queue (cron only)

@@ -80,7 +80,7 @@ SHA-256 of the runner file on disk. Anything else is **stale**:
 
 ## Policy
 
-Three gates enforce that no runner change lands without a fresh cache:
+Three surfaces keep runner caches fresh without making open PRs noisy:
 
 1. **Pre-commit hook** (`docs/audit/scripts/pre_commit_audit_check.sh`)
    When a developer stages a Python file under `scripts/`, the hook
@@ -89,10 +89,13 @@ Three gates enforce that no runner change lands without a fresh cache:
    developer's fix is to run `precompute_audit_runners.py --staged-only`
    and stage the resulting `logs/runner-cache/` files.
 
-2. **CI gate** (`.github/workflows/audit.yml`)
-   Every PR runs `precompute_audit_runners.py --all --check-only` on
-   the head commit and fails if any cache (across the full ledger,
-   not just staged files) is stale.
+2. **PR CI advisory** (`.github/workflows/audit.yml`)
+   Every PR runs a diff-scoped
+   `precompute_audit_runners.py --pr-diff <base> --check-only` and
+   reports stale caches as warnings/job-summary advisories. It does not
+   red-fail the PR because `main` moves continuously and PRs may stay
+   open while review catches up. Review-loop remains responsible for
+   regenerating caches from current `main` before landing.
 
 3. **Audit-runner consumption** (`scripts/codex_audit_runner.py`)
    The audit runner reads cache files only when their SHA matches.

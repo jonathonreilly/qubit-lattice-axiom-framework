@@ -66089,10 +66089,10 @@
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
-      "note_hash": "085c892d5bdf3549c81dca984c39bcc6c5b6376e91c61ceed2c5483a8fe50cf3",
+      "note_hash": "419009a0ce93eceb6b0b7a5d66c0e409e73df2fed528fe0048c6cf86f2e008e9",
       "path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "title": "SU(3) Quadratic Casimir on Color Fundamental Equals 4/3"
+      "title": "SU(3) Quadratic Casimir on Color Fundamental Equals 4/3 (K1-K3 narrowed claim, 2026-05-17)"
     },
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": {
       "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",

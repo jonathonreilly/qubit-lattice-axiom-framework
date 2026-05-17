@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -12656,8 +12655,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "2c5a1d9cc721c80e1829ba38f42deb7f3ce4f1aa3214e9a33f2262cf8add0461",
       "note_path": "docs/BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md",
       "notes_for_re_audit_if_any": null,
@@ -114077,8 +114076,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "For H=aI+bC+bbar C^2, the canonical projectors give E_+(H)=3a^2 and E_perp(H)=6|b|^2; the stated equal-weight functional log E_+ + log E_perp at fixed total has E_+=E_perp, equivalently a^2=2|b|^2 and kappa=2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "855be045ef15718e89dc5a079ed8aaa82c14b8ca893f30add6af8735941d282f",
       "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Re-audit if cited as selecting the canonical Koide weighting, closing F1-vs-F3, or deriving physical charged-lepton kappa=2; those are outside this clean algebraic scope.",
@@ -165548,8 +165547,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "In the finite C3-circulant model, tau_M(H)=Tr(pi_plus(H))+Tr(pi_perp(H)) degenerates to Tr(H)=3a, while the equal block-log saddle under E_plus+E_perp=N occurs uniquely at E_plus=E_perp and translates to |b|^2/a^2=1/2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "b4933a5384c2920efc81d66cbbd184a7741f264710ce3df149fda7b105ae53f8",
       "note_path": "docs/PRIMITIVE_P_BAE_M1_M2_DUALITY_NOTE_2026-05-10_pPbae_duality.md",
       "notes_for_re_audit_if_any": "Re-check only if a later note uses this finite saddle equivalence as a framework-level primitive election or full measure-equivalence theorem.",
@@ -203617,41 +203616,24 @@
       "verdict_rationale": "Within the narrowed algebraic scope, the proof is standard finite-dimensional SU(3) representation algebra: centrality follows from antisymmetry of f^{abc}, Schur scalar follows from irreducibility of the cited carrier, and the value follows from the trace normalization. The runner verifies the concrete Gell-Mann realization, including trace normalization, closure, scalar Casimir, and 4/3 value. The note explicitly defers the physical-color bridge and downstream color-factor physics, so no unsupported phenomenological content is ratified."
     },
     "su3_casimir_fundamental_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-11T01:09:33.978504+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure."
-        },
-        "dep_claim_type": {
-          "cl3_color_automorphism_theorem": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_color_automorphism_theorem": "retained_bounded"
-        },
-        "deps": [
-          "cl3_color_automorphism_theorem"
-        ],
-        "load_bearing_score": 15.762,
-        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
-        "transitive_descendants": 433
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1494-8cc4-7901-93c6-50a4c4384af7",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The K1-K3 algebraic theorem closes from the cited SU(3) embedding, trace normalization, Schur lemma, and the trace computation. K4 and C1-C5 do not close because the only direct dependency explicitly excludes the bridge identifying the 3D symmetric base carrier with physical SM quark color and no perturbative QCD readout theorem is included.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "claim_scope": "Algebraic SU(3) quadratic Casimir on the cited 3D symmetric base subspace equals 4/3; the source note also asserts physical color-triplet quark color-factor readouts.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-11T01:09:33.978504+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -203659,21 +203641,19 @@
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 17,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 18.199,
-      "load_bearing_step": "Equating Tr[C_2] = \u03a3_a Tr[T^a T^a] = 4 with Tr[c_2(3) I_3] = 3 c_2(3) gives c_2(3) = 4/3; the later quark readout identifies this algebraic C_2 with universal color-triplet quark color factors.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "085c892d5bdf3549c81dca984c39bcc6c5b6376e91c61ceed2c5483a8fe50cf3",
+      "note_hash": "419009a0ce93eceb6b0b7a5d66c0e409e73df2fed528fe0048c6cf86f2e008e9",
       "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - cheapest repair is to split or narrow the note to the clean K1-K3 algebraic V_3 Casimir theorem, with a separate downstream physical-quark color-factor note requiring a retained color-identification/readout bridge.",
-      "open_dependency_paths": [
-        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-06T17:18:24.975522+00:00",
@@ -203821,19 +203801,70 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the runner and proof verify the standard algebraic SU(3) fundamental Casimir C_2=4/3, but the note also promotes that number to universal quark color charge and perturbative QCD factors. Why this blocks: the only cited authority is retained_bounded and explicitly excludes the physical SM color identification, so the V_3-to-quark-color bridge and one-gluon/self-energy readout are not supplied in the packet. Repair target: add a retained bridge theorem deriving the physical color carrier/readout, or narrow this note to K1-K3 only. Claim boundary until fixed: exact algebraic Casimir on the framework V_3 fundamental, not a closed physical quark-color theorem."
+        },
+        {
+          "archived_at": "2026-05-17T11:46:21.921974+00:00",
+          "archived_for_note_hash": "085c892d5bdf3549c81dca984c39bcc6c5b6376e91c61ceed2c5483a8fe50cf3",
+          "audit_date": "2026-05-11T01:09:33.978504+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure."
+            },
+            "dep_claim_type": {
+              "cl3_color_automorphism_theorem": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_color_automorphism_theorem": "retained_bounded"
+            },
+            "deps": [
+              "cl3_color_automorphism_theorem"
+            ],
+            "load_bearing_score": 15.762,
+            "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+            "transitive_descendants": 433
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1494-8cc4-7901-93c6-50a4c4384af7",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The K1-K3 algebraic theorem closes from the cited SU(3) embedding, trace normalization, Schur lemma, and the trace computation. K4 and C1-C5 do not close because the only direct dependency explicitly excludes the bridge identifying the 3D symmetric base carrier with physical SM quark color and no perturbative QCD readout theorem is included.",
+          "claim_scope": "Algebraic SU(3) quadratic Casimir on the cited 3D symmetric base subspace equals 4/3; the source note also asserts physical color-triplet quark color-factor readouts.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-11T01:09:33.978504+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Equating Tr[C_2] = \u03a3_a Tr[T^a T^a] = 4 with Tr[c_2(3) I_3] = 3 c_2(3) gives c_2(3) = 4/3; the later quark readout identifies this algebraic C_2 with universal color-triplet quark color factors.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad - cheapest repair is to split or narrow the note to the clean K1-K3 algebraic V_3 Casimir theorem, with a separate downstream physical-quark color-factor note requiring a retained color-identification/readout bridge.",
+          "open_dependency_paths": [
+            "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Issue: the algebraic Casimir value is proved, but the note's broader physical-quark claims rely on a carrier/readout bridge absent from the direct dependencies. Why this blocks: the upstream color automorphism theorem is retained only as a bounded algebraic SU(3) embedding and explicitly excludes physical SM color identification. Repair target: add a retained bridge theorem deriving the physical quark-color carrier and perturbative color-factor readout, or narrow this note to K1-K3 and move K4/C1-C5 downstream. Claim boundary until fixed: C_2 = 4/3 only on the cited algebraic V_3 fundamental carrier."
         }
       ],
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "title": "SU(3) Quadratic Casimir on Color Fundamental Equals 4/3",
+      "title": "SU(3) Quadratic Casimir on Color Fundamental Equals 4/3 (K1-K3 narrowed claim, 2026-05-17)",
       "transitive_descendants": 830,
-      "verdict_rationale": "Issue: the algebraic Casimir value is proved, but the note's broader physical-quark claims rely on a carrier/readout bridge absent from the direct dependencies. Why this blocks: the upstream color automorphism theorem is retained only as a bounded algebraic SU(3) embedding and explicitly excludes physical SM color identification. Repair target: add a retained bridge theorem deriving the physical quark-color carrier and perturbative color-factor readout, or narrow this note to K1-K3 and move K4/C1-C5 downstream. Claim boundary until fixed: C_2 = 4/3 only on the cited algebraic V_3 fundamental carrier."
+      "verdict_rationale": null
     },
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T18:12:27.011598+00:00",
@@ -241691,9 +241722,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2079,
-    "re_audit_required": 10,
+    "preserved_existing": 2091,
+    "re_audit_required": 0,
     "row_count": 2135,
-    "seeded_new": 2
+    "seeded_new": 0
   }
 }

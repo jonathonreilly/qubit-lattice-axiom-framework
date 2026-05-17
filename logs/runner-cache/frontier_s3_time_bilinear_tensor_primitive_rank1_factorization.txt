@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_bilinear_tensor_primitive_rank1_factorization.py
+runner_sha256: faf8750e47ffb0872a3cd59775688f417511522884588f96a554a976bdcbb884
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+Bilinear carrier K_R rank-1 outer-product factorization
+==============================================================================
+Test grid size: 138 samples (A1 family x bright/dark perturbations)
+
+Factorization identity K_R(q) = w(q) v(q)^T: max err = 0.000e+00
+
+(R1) Rank-1 universality:
+  max sigma_2 across 138 samples = 1.823e-18
+  rank-exactly-1 samples (||v(q)|| > 0): 60
+  rank-0 samples (v(q) == 0): 78
+
+(R2) det K_R(q) = 0: max |det| = 5.782e-19
+
+(R3) Column proportionality (u_T col_1 - u_E col_2): max err = 5.421e-20
+(R3) Row proportionality (row_2 - delta_A1 row_1): max err = 0.000e+00
+
+(R4) Channel separation (under admitted decoupling fact):
+  partial_E_x K_R - w (1,0): max err = 5.551e-17
+  partial_T1x K_R - w (0,1): max err = 5.551e-17
+  partial_delta K_R - e_2 v^T: max err = 1.926e-34
+
+(R5) Singular-value factorization:
+  sigma_1 - ||w|| ||v||: max err = 2.220e-16
+  sigma_2: max = 1.823e-18
+  sigma_1 - sqrt(1+delta^2) sqrt(u_E^2+u_T^2): max err = 1.110e-16
+[EXACT] PASS: [class A, polynomial-identity] rank-1 factorization identity K_R(q) = w(q) v(q)^T holds at machine precision across A1 + bright/dark perturbations
+    max factorization err = 0.000e+00 (tol = 1e-12)
+[EXACT] PASS: [class A, polynomial-identity] R1: K_R(q) has rank <= 1 universally (sigma_2 ~ 0) and rank exactly 1 when ||v(q)|| > 0
+    max sigma_2 = 1.823e-18; rank-1 samples = 60; rank-0 samples = 78
+[EXACT] PASS: [class A, polynomial-identity] R2: det K_R(q) = 0 universally
+    max |det| = 5.782e-19
+[EXACT] PASS: [class A, polynomial-identity] R3 column form: u_T col_1 = u_E col_2 universally
+    max err = 5.421e-20
+[EXACT] PASS: [class A, polynomial-identity] R3 row form: row_2 = delta_A1 row_1 universally
+    max err = 0.000e+00
+[EXACT] PASS: [class A, polynomial-identity under admitted decoupling] R4 bright-channel: partial_E_x K_R = w(q) (1,0)
+    max err = 5.551e-17 (uses admitted decoupling fact; same status as parent runner's class-D grid shadow)
+[EXACT] PASS: [class A, polynomial-identity under admitted decoupling] R4 bright-channel: partial_T1x K_R = w(q) (0,1)
+    max err = 5.551e-17 (uses admitted decoupling fact; same status as parent runner's class-D grid shadow)
+[EXACT] PASS: [class A, polynomial-identity] R4 scaling-channel: partial_delta K_R = e_2 v^T (formal symbolic derivative)
+    max err = 1.926e-34
+[EXACT] PASS: [class A, polynomial-identity] R5 singular value: sigma_1 = ||w|| * ||v|| (numerical SVD)
+    max err = 2.220e-16
+[EXACT] PASS: [class A, polynomial-identity] R5 collapse: sigma_2 = 0 (numerical SVD)
+    max sigma_2 = 1.823e-18
+[EXACT] PASS: [class A, polynomial-identity] R5 factor separation: sigma_1 = sqrt(1+delta_A1^2) * sqrt(u_E^2 + u_T^2)
+    max err = 1.110e-16
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=11 FAIL=0 TOTAL=11
+
+Verdict (class-A scope, positive narrow theorem):
+  Under the named admitted inputs of the parent definition note, the
+  symbolic carrier K_R(q) factors algebraically as the rank-1 outer
+  product w(q) v(q)^T with w = (1, delta_A1)^T and v = (u_E, u_T)^T.
+  The five structural properties (R1)-(R5) hold by polynomial identity
+  at machine precision on the seven-site star support. The three named
+  open theorem targets in the parent note (decoupling, aligned-bright
+  identification, physical-primitive bridge) remain upstream and are
+  not closed by this runner.
+----- stderr -----
+

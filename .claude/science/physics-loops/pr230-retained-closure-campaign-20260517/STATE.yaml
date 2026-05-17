@@ -103,6 +103,25 @@ block125_result:
   satisfied_route_contracts: []
   ranked_next_path: "accepted canonical O_H/action authority with nonempty numeric C_ss/C_sH/C_HH pole-residue rows"
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1458"
+block126_result:
+  output: outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json
+  status: "bounded support"
+  pass_count: 10
+  fail_count: 0
+  proposal_allowed: false
+  raw_files_checked: 63
+  matched_tau1_rows: 1008
+  complete_tau_slices: 23
+  selected_mass_parameter: 0.75
+  tau1_mean_T_total: 1.245693776284446
+  tau1_mean_A_top: 1.2732143441892123
+  tau1_mean_T_minus_A: -0.02752056790476608
+  tau1_corr_T_A: 0.9905564447030847
+  wz_rows_present: false
+  matched_top_wz_covariance_present: false
+  strict_non_observed_g2_present: false
+  accepted_same_source_action_present: false
+  stacked_review_pr: pending
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"
@@ -116,13 +135,17 @@ verification:
   block124_runner: "PASS=10 FAIL=0"
   block125_py_compile: passed
   block125_runner: "PASS=10 FAIL=0"
+  block126_py_compile: passed
+  block126_runner: "PASS=10 FAIL=0"
   full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
   retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
   positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
-  campaign_status: "PASS=443 FAIL=0; proposal_allowed=false"
-  assumption_import_stress: "PASS=126 FAIL=0; proposal_allowed=false"
+  campaign_status: "PASS=444 FAIL=0; proposal_allowed=false"
+  assumption_import_stress: "PASS=127 FAIL=0; proposal_allowed=false"
   target_timeseries_full_set: "PASS=9 FAIL=0; replacement_queue=[]"
   chunk063_higher_shell_checkpoint: "PASS=15 FAIL=0"
   git_diff_check: passed
-next_exact_action: "Produce accepted canonical O_H/action authority with nonempty numeric C_ss/C_sH/C_HH pole-residue rows. If that cannot be supplied, implement genuine same-source W/Z production response rows with matched top covariance and strict non-observed g2."
+  audit_pipeline: "completed; generated docs/audit diffs restored"
+  strict_audit_lint: "OK; no errors; 5 known warnings"
+next_exact_action: "Produce accepted canonical O_H/action authority with nonempty numeric C_ss/C_sH/C_HH pole-residue rows. If pivoting to W/Z, run genuine same-source W/Z response production rows and join them with the Block126 top-side packet into matched top-W/Z covariance with strict non-observed g2 and accepted action."
 next_checkpoint_due_utc: "2026-05-17T17:07:59Z"

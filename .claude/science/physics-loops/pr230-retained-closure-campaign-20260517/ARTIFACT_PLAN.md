@@ -246,3 +246,36 @@ Verified at `2026-05-17T16:37:59Z`:
 - Block125 runner: `PASS=10 FAIL=0`
 - campaign status certificate: `PASS=443 FAIL=0`
 - assumption/import stress: `PASS=126 FAIL=0`
+
+## Block126
+
+Working title: PR230 Block126 matched top additive-subtraction packet.
+
+Purpose:
+
+- consume the completed raw production files for same-configuration top-side
+  matching;
+- join `dE_top/ds` and `dE_top/dm_bare` into `T_total`, `A_top`, and `T-A`
+  rows;
+- compute the top-side covariance packet that a future genuine W/Z route can
+  join against;
+- preserve the boundary that top-side rows alone are not W/Z response, strict
+  `g2`, accepted action, or retained closure.
+
+Files:
+
+- `docs/YT_PR230_BLOCK126_MATCHED_TOP_ADDITIVE_SUBTRACTION_PACKET_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block126_matched_top_additive_subtraction_packet.py`
+- `outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json`
+
+Result: bounded support.  The runner checks 63/63 raw files, 1008 matched tau1
+rows, and 23 complete tau slices.  It computes the top-side covariance packet
+but leaves W/Z rows, matched top-W/Z covariance, strict `g2`, and accepted
+action absent.
+
+Verified at `2026-05-17T16:53:54Z`:
+
+- Block126 py_compile: passed
+- Block126 runner: `PASS=10 FAIL=0`
+- campaign status certificate: `PASS=444 FAIL=0`
+- assumption/import stress: `PASS=127 FAIL=0`

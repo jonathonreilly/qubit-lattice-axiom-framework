@@ -389,6 +389,9 @@ def main() -> int:
         "block125_post_chunk_strict_contract_resolver": load(
             "outputs/yt_pr230_block125_post_chunk_strict_contract_resolver_2026-05-17.json"
         ),
+        "block126_matched_top_additive_subtraction_packet": load(
+            "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2736,6 +2739,57 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block126_matched_top_additive_subtraction_packet_keeps_imports_clean = (
+        "Block126 constructs matched top-side additive-subtraction rows"
+        in str(
+            certificates["block126_matched_top_additive_subtraction_packet"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block126_matched_top_additive_subtraction_packet"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block126_matched_top_additive_subtraction_packet"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block126_matched_top_additive_subtraction_packet"].get(
+            "block126_matched_top_additive_subtraction_packet_passed"
+        )
+        is True
+        and certificates["block126_matched_top_additive_subtraction_packet"]
+        .get("matched_top_side_packet", {})
+        .get("matched_tau1_row_count")
+        == 1008
+        and certificates["block126_matched_top_additive_subtraction_packet"]
+        .get("strict_subtraction_contract_state", {})
+        .get("wz_rows_present")
+        is False
+        and certificates["block126_matched_top_additive_subtraction_packet"]
+        .get("strict_subtraction_contract_state", {})
+        .get("strict_non_observed_g2_present")
+        is False
+        and certificates["block126_matched_top_additive_subtraction_packet"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_dE_dm_bare_as_dE_dh")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block126_matched_top_additive_subtraction_packet"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block126-matched-top-additive-subtraction-packet-keeps-imports-clean",
+        block126_matched_top_additive_subtraction_packet_keeps_imports_clean,
+        certificates["block126_matched_top_additive_subtraction_packet"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3078,6 +3132,7 @@ def main() -> int:
         "block123_source_higgs_lsz_formula_keeps_imports_clean": block123_source_higgs_lsz_formula_keeps_imports_clean,
         "block124_completed_source_higgs_row_intake_keeps_imports_clean": block124_completed_source_higgs_row_intake_keeps_imports_clean,
         "block125_post_chunk_strict_contract_resolver_keeps_imports_clean": block125_post_chunk_strict_contract_resolver_keeps_imports_clean,
+        "block126_matched_top_additive_subtraction_packet_keeps_imports_clean": block126_matched_top_additive_subtraction_packet_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

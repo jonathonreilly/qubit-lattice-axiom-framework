@@ -549,6 +549,9 @@ def main() -> int:
         "pr230_block125_post_chunk_strict_contract_resolver": load(
             "outputs/yt_pr230_block125_post_chunk_strict_contract_resolver_2026-05-17.json"
         ),
+        "pr230_block126_matched_top_additive_subtraction_packet": load(
+            "outputs/yt_pr230_block126_matched_top_additive_subtraction_packet_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3307,6 +3310,77 @@ def main() -> int:
         "pr230-block125-post-chunk-strict-contract-resolver-blocks",
         block125_post_chunk_strict_contract_resolver_blocks,
         statuses["pr230_block125_post_chunk_strict_contract_resolver"],
+    )
+    block126_matched_top_additive_subtraction_packet_supports_only = (
+        "Block126 constructs matched top-side additive-subtraction rows"
+        in str(statuses["pr230_block126_matched_top_additive_subtraction_packet"])
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ].get("block126_matched_top_additive_subtraction_packet_passed")
+        is True
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ]
+        .get("matched_top_side_packet", {})
+        .get("matched_tau1_row_count")
+        == 1008
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ]
+        .get("strict_subtraction_contract_state", {})
+        .get("top_side_same_configuration_rows_present")
+        is True
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ]
+        .get("strict_subtraction_contract_state", {})
+        .get("wz_rows_present")
+        is False
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ]
+        .get("strict_subtraction_contract_state", {})
+        .get("matched_top_wz_covariance_present")
+        is False
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ]
+        .get("strict_subtraction_contract_state", {})
+        .get("strict_non_observed_g2_present")
+        is False
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ]
+        .get("strict_subtraction_contract_state", {})
+        .get("accepted_same_source_ew_action_present")
+        is False
+        and certificates[
+            "pr230_block126_matched_top_additive_subtraction_packet"
+        ]
+        .get("strict_subtraction_contract_state", {})
+        .get("contract_satisfied_now")
+        is False
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block126_matched_top_additive_subtraction_packet"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block126-matched-top-additive-subtraction-packet-supports-only",
+        block126_matched_top_additive_subtraction_packet_supports_only,
+        statuses["pr230_block126_matched_top_additive_subtraction_packet"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9101,6 +9175,9 @@ def main() -> int:
     )
     result["block125_post_chunk_strict_contract_resolver_blocks"] = (
         block125_post_chunk_strict_contract_resolver_blocks
+    )
+    result["block126_matched_top_additive_subtraction_packet_supports_only"] = (
+        block126_matched_top_additive_subtraction_packet_supports_only
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

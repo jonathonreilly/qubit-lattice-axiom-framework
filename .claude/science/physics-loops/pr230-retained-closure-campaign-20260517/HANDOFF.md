@@ -67,10 +67,22 @@ identity passes, zero W/Z response rows, zero Schur `K'`/pole hits, and zero
 neutral transfer/primitive hits.  Reruns: Block125 `PASS=10`, campaign
 `PASS=443`, assumption/import stress `PASS=126`.
 
+Block126 constructs the matched top-side additive-subtraction packet from the
+completed raw rows.  It checks 63/63 files and builds 1008 same-configuration
+tau1 rows plus 23 complete tau slices for `T_total=dE_top/ds`,
+`A_top=dE_top/dm_bare`, and `T-A`.  The tau1 means are
+`T_total=1.245693776284446`, `A_top=1.2732143441892123`, and
+`T-A=-0.02752056790476608`, with `corr(T,A)=0.9905564447030847`.  This is
+bounded support only: no W/Z response rows, no matched top-W/Z covariance, no
+strict non-observed `g2`, and no accepted same-source EW/Higgs action are
+present.  Reruns: Block126 `PASS=10`, campaign `PASS=444`,
+assumption/import stress `PASS=127`.
+
 Active next work: produce accepted canonical `O_H`/action authority with
 nonempty numeric `C_ss/C_sH/C_HH` pole-residue rows.  If that cannot be
-supplied, implement genuine same-source W/Z production response rows with
-matched top covariance and strict non-observed `g2`.
+supplied, implement genuine same-source W/Z production response rows and join
+them with the Block126 top-side packet into matched top-W/Z covariance with
+strict non-observed `g2`.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

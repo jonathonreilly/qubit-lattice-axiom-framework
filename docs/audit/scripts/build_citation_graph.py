@@ -8,6 +8,10 @@ Walks every .md file under docs/ (excluding docs/audit/), extracts:
   - optional legacy Status-line migration hint for claim_type backfill
   - cited authorities (markdown links to other .md files in docs/)
   - primary runner script path
+  - helper runner script paths (transitive `from scripts.X import` imports
+    of the primary runner; needed by the audit packet builder so the
+    auditor sees the full source chain and doesn't fall back to class C
+    on missing-helper grounds)
   - note hash (sha256 of body)
 
 Writes docs/audit/data/citation_graph.json.
@@ -16,6 +20,7 @@ This script is deterministic, offline, and read-only against the docs.
 """
 from __future__ import annotations
 
+import ast
 import hashlib
 import json
 import re
@@ -170,6 +175,75 @@ def extract_section(body: str, start: int) -> str:
     return body[start:end]
 
 
+def _parse_script_imports(script_path: Path) -> set[str]:
+    """Return basenames of scripts/*.py that this script imports.
+
+    Handles `from scripts.X import ...`, `import scripts.X`, and relative
+    imports inside `scripts/` (`from .X import ...`, `from . import X`).
+    Filters to imports that exist as scripts/<name>.py.
+
+    Used to compute helper_runner_paths so the audit packet builder can
+    include the full source chain. Without this, primary runners that
+    import from helpers (e.g. lattice_no_barrier_distance.py importing
+    from lattice_mirror_distance) cause the auditor to see opaque
+    function references → spurious class-C verdicts on packet
+    incompleteness grounds alone.
+    """
+    if not script_path.exists():
+        return set()
+    try:
+        tree = ast.parse(script_path.read_text(encoding="utf-8"))
+    except (SyntaxError, UnicodeDecodeError):
+        return set()
+    scripts_dir = REPO_ROOT / "scripts"
+    helpers: set[str] = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ImportFrom):
+            module = node.module or ""
+            if module.startswith("scripts."):
+                helpers.add(module.removeprefix("scripts."))
+            elif node.level >= 1 and module:
+                helpers.add(module)
+            elif node.level >= 1 and not module:
+                for alias in node.names:
+                    helpers.add(alias.name)
+        elif isinstance(node, ast.Import):
+            for alias in node.names:
+                if alias.name.startswith("scripts."):
+                    helpers.add(alias.name.removeprefix("scripts."))
+    return {h for h in helpers if (scripts_dir / f"{h}.py").exists()}
+
+
+def resolve_helper_runner_paths(primary_runner_path: str | None) -> list[str]:
+    """Walk transitive imports from the primary runner; return the full
+    set of helper script paths the audit packet must include.
+
+    Returns `scripts/X.py` paths (sorted), excluding the primary itself.
+    Empty list if no primary or no helpers. Cycles are handled via a
+    seen-set; result is fixed-point of the transitive-closure walk.
+    """
+    if not primary_runner_path:
+        return []
+    primary = REPO_ROOT / primary_runner_path
+    if not primary.exists():
+        return []
+    primary_basename = primary.stem
+    seen: set[str] = set()
+    frontier = _parse_script_imports(primary)
+    while frontier:
+        new = frontier - seen - {primary_basename}
+        if not new:
+            break
+        seen.update(new)
+        next_frontier: set[str] = set()
+        for h in new:
+            next_frontier.update(
+                _parse_script_imports(REPO_ROOT / "scripts" / f"{h}.py")
+            )
+        frontier = next_frontier - seen - {primary_basename}
+    return sorted(f"scripts/{h}.py" for h in seen)
+
+
 def extract_runner(body: str, rel_path: str | None = None) -> str | None:
     if rel_path and rel_path.startswith("ai_methodology/raw/"):
         return None
@@ -284,6 +358,7 @@ def build_graph() -> dict:
         raw_type, claim_type_hint = extract_claim_type_hint(body)
         legacy_status_hint = extract_legacy_status_claim_type(body)
         claim_type_seed_hint = claim_type_hint or legacy_status_hint
+        primary_runner = extract_runner(body, rel.as_posix())
         nodes[cid] = {
             "claim_id": cid,
             "path": note_path.relative_to(REPO_ROOT).as_posix(),
@@ -291,7 +366,8 @@ def build_graph() -> dict:
             "claim_type_author_hint_raw": raw_type,
             "claim_type_author_hint": claim_type_hint,
             "claim_type_seed_hint": claim_type_seed_hint,
-            "runner_path": extract_runner(body, rel.as_posix()),
+            "runner_path": primary_runner,
+            "helper_runner_paths": resolve_helper_runner_paths(primary_runner),
             "note_hash": hashlib.sha256(body.encode("utf-8")).hexdigest(),
             "deps": [],
         }

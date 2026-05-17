@@ -2418,7 +2418,7 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_1 rows in this category._
+_4 rows in this category._
 
 
 ### `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`
@@ -2450,11 +2450,127 @@ drive.
 ```
 
 
+### `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16`
+
+**Note:** [docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md](docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md)  |  **Descendants:** 806  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Audited the bounded claim that top3 + blend=0.25 transfers on 4/5 specified second-ring exact-lattice cases and has a claimed inward-source boundary between source_z=1.25 and 1.50.
+
+Auditor's verdict_rationale:
+The load-bearing step is an intended class-C computational sweep over fixed exact-lattice cases. The provided stdout and outer wrapper are consistent with the note's second-ring table, but stdout alone is not authoritative and the wrapper imports the actual computation from a helper whose source is not present. The note also relies on boundary-probe results to claim a mapped inward boundary, but that artifact is not provided here. The result is therefore conditional on runner-artifact completeness, not cleanly closed from the restricted packet.
+
+Auditor-quoted load-bearing step:
+Outer second-ring totals are top3 4/5 and top2 1/5, with the inward-source boundary probe closing source_z 0.75, 1.00, and 1.25 and reopening at 1.50.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: provide the transitive _run_mode helper source and the completed inner-source boundary runner source/stdout, then re-audit the bounded boundary claim.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `higher_symmetry_joint_validation_note`
+
+**Note:** [docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md](docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md)  |  **Descendants:** 12  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Attempted bounded audit of the existing registered-cache Z2 x Z2 joint-validation rows, nominally the cached non-dense range; the dense N=80/100/120 and N=120 promotion are out of binding scope.
+
+Auditor's verdict_rationale:
+The only cited upstream note is retained_bounded, so it is not the blocker. The blocker is that this note makes cached joint-validation logs and a joint-validator runner load-bearing, but the restricted packet contains neither the cache/stdout nor the runner source for this claim. The note also explicitly demotes the dense N=80/100/120 and N=120 promotion out of binding scope, so any retained-through-N=120 read remains unaudited here. The claim is therefore conditional on runner/cache registration rather than clean.
+
+Auditor-quoted load-bearing step:
+The bounded conclusion rests on the assertion that the registered cached log rows show Z2 x Z2 is Born-clean, k=0-zero, gravity-band positive, and slow-decoherence on the cached N range.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: attach the registered cache or certificate stdout and runner source for scripts/higher_symmetry_joint_validation.py, register it as the primary runner, and re-audit the narrowed cached range; include the dense N=80/100/120 cache only if N=120 is to be binding.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `mirror_2d_gravity_law_note`
+
+**Note:** [docs/MIRROR_2D_GRAVITY_LAW_NOTE.md](docs/MIRROR_2D_GRAVITY_LAW_NOTE.md)  |  **Descendants:** 9  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/MIRROR_2D_GRAVITY_LAW_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Bounded null result that the provided primary runner finds weak fixed-anchor mass-window and distance-tail fits for the exact 2D mirror lane on the searched windows.
+
+Auditor's verdict_rationale:
+Issue: the provided runner source imports the exact mirror generator and linear propagator from `scripts/mirror_born_audit.py`, but that imported authority source and cache are absent from the restricted packet; the only cited note supplied is a meta/support synthesis. Why this blocks: the weak mass and distance fits are computed, but the premise that they are produced by the audited exact-2D-mirror linear propagator remains an imported premise rather than closed evidence in this packet. Repair target: provide `scripts/mirror_born_audit.py` and `logs/runner-cache/mirror_born_audit.txt` in the restricted packet or vendor those functions into the primary runner. Claim boundary until fixed: the packet supports that the supplied primary run found weak mass/distance fits for its imported functions, not a fully closed bounded theorem about the exact 2D mirror family.
+
+Auditor-quoted load-bearing step:
+The primary-runner weak-fit rows report fixed-anchor mass fit `delta ~= 0.8720 * M^0.132, R^2=0.167` and distance-tail fit `delta ~= 0.3418 * b^0.320, R^2=0.075`, so no clean promoted 2D mirror mass or distance law is supported on the searched windows.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: include `scripts/mirror_born_audit.py` and `logs/runner-cache/mirror_born_audit.txt` in the restricted packet, then re-audit the same primary-runner weak-fit rows; also synchronize the stale gravity-scaling/Born display numbers with the registered cache.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ## audited_conditional_scope_too_broad
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_0 rows in this category._
+_1 rows in this category._
+
+
+### `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`
+
+**Note:** [docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md](docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md)  |  **Descendants:** 12  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Seven selected SU(3) low-rank irrep character-coefficient ODEs, as displayed in the note, backed by the supplied finite runner output and source-code computation.
+
+Auditor's verdict_rationale:
+The runner source is not a trivial printout: it builds Bessel-series data, solves nullspaces over rationals, normalizes integer polynomial coefficients, and runs numerical comparisons for all seven representatives. However, the source note phrases the catalog as closed-form Picard-Fuchs ODEs for the actual character integrals, while the supplied evidence is a finite truncated-series and finite-sample certificate. The cited V=1 authority is explicitly retained only as a finite-runner certificate and does not provide the missing all-order bridge.
+
+Auditor-quoted load-bearing step:
+The runner constructs Bessel-determinant Taylor series for each selected irrep, solves a rational creative-telescoping ansatz for an order-3 polynomial ODE, and verifies the result by extra finite Taylor coefficients plus Bessel-determinant numerical samples.
+
+Auditor's repair target (canonical class + action):
+scope_too_broad: narrow this row to the finite runner certificate, or add a retained all-order proof that the displayed ODEs annihilate the Bessel-determinant/integral series and that order 3 is genuinely minimal for the claimed class.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
 
 
 ## audited_conditional_missing_bridge_theorem

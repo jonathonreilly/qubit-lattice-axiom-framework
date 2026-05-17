@@ -15,7 +15,6 @@ Writes docs/audit/data/audit_ledger.json.
 """
 from __future__ import annotations
 
-import ast
 import hashlib
 import json
 from datetime import datetime, timezone
@@ -29,7 +28,6 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 EXCLUDED_PATTERNS_FILE = DATA_DIR / "excluded_source_patterns.txt"
 NEVER_GATE_PATHS_FILE = DATA_DIR / "never_gate_source_paths.txt"
 META_PATTERNS_FILE = DATA_DIR / "meta_source_patterns.txt"
-SCRIPTS_DIR = REPO_ROOT / "scripts"
 
 
 def _load_pattern_file(path: Path) -> tuple[str, ...]:
@@ -159,65 +157,6 @@ def hash_existing_note_path(note_path: str | None) -> str | None:
         return None
     body = path.read_text(encoding="utf-8", errors="replace")
     return hashlib.sha256(body.encode("utf-8")).hexdigest()
-
-
-def parse_script_imports(script_path: Path) -> set[str]:
-    """Return helper script basenames imported from scripts/*.py."""
-    if not script_path.exists():
-        return set()
-    try:
-        tree = ast.parse(script_path.read_text(encoding="utf-8"))
-    except (SyntaxError, UnicodeDecodeError):
-        return set()
-
-    helpers: set[str] = set()
-    for node in ast.walk(tree):
-        if isinstance(node, ast.ImportFrom):
-            module = node.module or ""
-            if module.startswith("scripts."):
-                helpers.add(module.removeprefix("scripts."))
-            elif node.level >= 1 and module:
-                helpers.add(module)
-            elif node.level >= 1 and not module:
-                helpers.update(alias.name for alias in node.names)
-        elif isinstance(node, ast.Import):
-            for alias in node.names:
-                if alias.name.startswith("scripts."):
-                    helpers.add(alias.name.removeprefix("scripts."))
-
-    return {h for h in helpers if (SCRIPTS_DIR / f"{h}.py").exists()}
-
-
-def transitive_helper_basenames(primary_script: str, seen: set[str] | None = None) -> set[str]:
-    """Walk transitive scripts/*.py imports from a primary script basename."""
-    if seen is None:
-        seen = set()
-    primary_path = SCRIPTS_DIR / f"{primary_script}.py"
-    if not primary_path.exists():
-        return set()
-
-    direct = parse_script_imports(primary_path)
-    new_helpers = direct - seen - {primary_script}
-    seen.update(new_helpers)
-    for helper in sorted(new_helpers):
-        seen.update(transitive_helper_basenames(helper, seen) - {primary_script})
-    return seen - {primary_script}
-
-
-def helper_runner_paths(runner_path: str | None) -> list[str]:
-    """Return transitive helper paths needed in an audit packet."""
-    if not runner_path:
-        return []
-    rp = Path(runner_path)
-    if rp.is_absolute():
-        try:
-            rp = rp.relative_to(REPO_ROOT)
-        except ValueError:
-            return []
-    if rp.parent != Path("scripts"):
-        return []
-    helpers = transitive_helper_basenames(rp.stem)
-    return [f"scripts/{helper}.py" for helper in sorted(helpers)]
 
 
 def default_claim_type_for(node: dict) -> tuple[str, str]:
@@ -356,7 +295,7 @@ def seed() -> dict:
                 "claim_type_author_hint_raw": node.get("claim_type_author_hint_raw"),
                 "claim_type_author_hint": node.get("claim_type_author_hint"),
                 "runner_path": node["runner_path"],
-                "helper_runner_paths": helper_runner_paths(node["runner_path"]),
+                "helper_runner_paths": node.get("helper_runner_paths", []),
                 "deps": deps,
                 "note_hash": node["note_hash"],
                 "previous_audits": [],
@@ -373,7 +312,7 @@ def seed() -> dict:
             row["claim_type_author_hint_raw"] = node.get("claim_type_author_hint_raw")
             row["claim_type_author_hint"] = node.get("claim_type_author_hint")
             row["runner_path"] = node["runner_path"]
-            row["helper_runner_paths"] = helper_runner_paths(node["runner_path"])
+            row["helper_runner_paths"] = node.get("helper_runner_paths", [])
             row["deps"] = deps
             if prior.get("note_hash") != node["note_hash"] and prior.get("audit_status") in {None, "unaudited"}:
                 row["note_hash"] = node["note_hash"]

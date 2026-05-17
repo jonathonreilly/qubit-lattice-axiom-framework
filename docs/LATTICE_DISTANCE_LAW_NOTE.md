@@ -1,8 +1,11 @@
 # Lattice Distance-Law Note
 
-**Date:** 2026-04-03 (scope-probe sharpening 2026-05-16)
+**Date:** 2026-04-03 (scope-probe sharpening 2026-05-16; runner-discovery declaration 2026-05-17)
 **Status:** bounded numerical distance-law fit on the ordered-lattice no-barrier harness at `N = 40`; the framework-derivable companion is the `sqrt(strength)` scaling, which is verified by the scope-probe runner; the `b`-exponent itself is NOT universal across `N` and is therefore explicitly bounded to the `N = 40` harness. Not a retained asymptotic distance-law theorem.
 **Claim type:** bounded_theorem
+**Primary runner:** [`scripts/lattice_no_barrier_distance.py`](../scripts/lattice_no_barrier_distance.py)
+**Helper runners (audit packet must include):** [`scripts/lattice_mirror_distance.py`](../scripts/lattice_mirror_distance.py)
+**Scope-probe runner:** [`scripts/lattice_no_barrier_distance_scope_probe.py`](../scripts/lattice_no_barrier_distance_scope_probe.py)
 
 **Review repair perimeter (2026-05-05 generated-audit context):**
 Generated-audit context identified this chain-closure blocker: "The

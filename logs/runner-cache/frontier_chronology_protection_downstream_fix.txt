@@ -1,0 +1,46 @@
+==============================================================================
+AUDIT-PREP VERIFIER — chronology_protection_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md)
+  [PASS] [A] Fix record exists  (path = docs/CHRONOLOGY_PROTECTION_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+
+PART F-A — retire `retained single-clock` wordings:
+  [PASS] [A] Stale phrase retired from live narrative: 'retained single-clock framework surface'
+  [PASS] [A] Stale phrase retired from live narrative: 'the retained single-clock/codimension-1 surface'
+  [PASS] [A] Stale phrase retired from live narrative: 'retained single-clock Hilbert/local-data\n  surface'
+  [PASS] [A] Stale phrase retired from live narrative: 'retained single-clock Hilbert/local-data surface'
+  [PASS] [A] Stale phrase retired from live narrative: 'no derivation of the retained single-clock surface'
+  [PASS] [A] Replacement 'cited single-clock framework surface' or 'cited single-clock surface' present
+  [PASS] [A] Acknowledgment of `unaudited` upstream tier present in claim block
+
+PART F-B — admission-inheritance subsection:
+  [PASS] [A] Upstream-tier and admission inheritance subsection header present
+  [PASS] [A] Tier table mentions single-clock companion as `unaudited`
+  [PASS] [A] Tier table mentions cpt_exact_note as `audited_conditional`
+  [PASS] [A] Upstream F-B framing-fix linked
+  [PASS] [A] Admission (iv) inheritance disclosed
+  [PASS] [A] Subsection explicitly states this proof does NOT import d_t = 1
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] Trace-preservation core preserved (`Tr[ E_x(sigma_a) ] = Tr[ sigma_a ]`)
+  [PASS] [A] Full trace chain preserved (`Tr[ sigma_a ] = Tr[ U_10( M_a(rho_0) ) ] = Tr[ M_a(rho_0) ]`)
+  [PASS] [A] Formal model header preserved
+  [PASS] [A] Reviewer-pressure checks preserved (delayed choice + quantum eraser)
+  [PASS] [A] Reviewer-pressure checks preserved (closed timelike curves)
+  [PASS] [A] Claim-boundary 'What is proved' list preserved
+  [PASS] [A] Claim-boundary 'What is not proved' list preserved
+  [PASS] [A] Three-line proof structure preserved (sigma_a = U_10( M_a(rho_0) ))
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired verifier referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-A — Tier over-claim'
+  [PASS] [A] Fix record mentions: 'F-B — Missing admission-inheritance'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'positive_theorem retained'
+
+==============================================================================
+SUMMARY: 31 PASS / 0 FAIL  (Class-A: 31)
+==============================================================================

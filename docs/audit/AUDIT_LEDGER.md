@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1235 |
+| unaudited | 1234 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 157 |
+| ~~audited_conditional~~ | 158 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 157 |
+| `audited_conditional` | 158 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1432 |
+| `unaudited` | 1431 |
 
 | claim_type | count |
 |---|---:|
@@ -774,6 +774,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `one_parameter_reduced_shell_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7647,6 +7648,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The frontier-shell v2 readout localizes harder but fails the weak-field sign and near-linear mass-scaling checks, so it is not a viable readout-localization route on the retained family.  _(class `C`)_
 - **chain closes:** True — The registered runner reproduces the zero-source reduction and the frozen no-go table: frontier-shell TOWARD=2/12, F~M=0.74,1.78,1.78, capture=0.003, support fraction=0.241, and mean delta=-8.877e-04. Those current outputs support the bounded negative claim.
 - **rationale:** The note is a bounded no-go, and the current runner verifies exactly why v2 fails: localization improves, but the sign, mass-scaling class, and capture collapse. The note does not claim inertial-mass closure or a successful field equation; it preserves v1 as the better detector-side bridge and freezes v2 as too selective. Residual risk is limited to future readout architectures, which the source explicitly leaves open.
+- **auditor confidence:** high
+
+### `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16`
+
+- **Note:** [`PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md`](../../docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that top3 + blend=0.25 transfers on 4/5 specified second-ring exact-lattice cases and has a claimed inward-source boundary between source_z=1.25 and 1.50.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131344-20260517T131344Z-e573a747-persistent_object_blende-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Outer second-ring totals are top3 4/5 and top2 1/5, with the inward-source boundary probe closing source_z 0.75, 1.00, and 1.25 and reopening at 1.50.  _(class `C`)_
+- **chain closes:** False — The cached primary runner stdout supports the outer 4/5 and 1/5 counts, but the supplied source delegates the actual physics computation to an unprovided _run_mode helper. The inward-source boundary results are asserted in the note but no completed boundary runner stdout/source is supplied in the restricted packet.
+- **rationale:** The load-bearing step is an intended class-C computational sweep over fixed exact-lattice cases. The provided stdout and outer wrapper are consistent with the note's second-ring table, but stdout alone is not authoritative and the wrapper imports the actual computation from a helper whose source is not present. The note also relies on boundary-probe results to claim a mapped inward boundary, but that artifact is not provided here. The result is therefore conditional on runner-artifact completeness, not cleanly closed from the restricted packet.
+- **open / conditional deps cited:**
+  - `scripts/persistent_object_blended_readout_transfer_sweep.py`
+  - `scripts/persistent_object_blended_readout_inner_source_boundary_probe.py`
+  - `logs/2026-04-16-persistent-object-blended-readout-inner-source-boundary-probe.txt`
 - **auditor confidence:** high
 
 ### `persistent_object_blended_readout_transfer_sweep_note_2026-04-16`

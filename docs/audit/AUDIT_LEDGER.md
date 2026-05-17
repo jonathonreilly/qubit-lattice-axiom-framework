@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 325 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1237 |
+| unaudited | 1236 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 172 |
+| ~~audited_conditional~~ | 173 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 543 |
-| `audited_conditional` | 172 |
+| `audited_conditional` | 173 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -733,6 +733,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
@@ -4283,6 +4284,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Equating the two abstract constraints F^2 = c0 and F^2 = g^2/(2N) gives g^2 = 2 N c0, so on the positive branch g = sqrt(2 N c0) when c0 > 0.  _(class `A`)_
 - **chain closes:** True — The theorem follows by direct substitution and multiplication by 2N over the stated positive-real domain, with the c0=0 boundary explicitly excluded by g>0. The runner verifies the symbolic identity, positive branch, rational instances, non-unit counterexamples, and scope disclaimers with PASS=39, FAIL=0.
 - **rationale:** The scoped claim closes as pure algebra: the two hypotheses give c0 = g^2/(2N), hence g^2 = 2Nc0, and the positive branch is unique for c0>0. The specific g=1 result is correctly limited to pairs satisfying 2Nc0=1, with the note and runner showing that other pairs such as (N,c0)=(1,1) force different values. This audit does not ratify the physical Ward-route premises or any claim that those abstract variables are fixed by Cl(3), Wilson, or SU(N_c) structure.
+- **auditor confidence:** high
+
+### `g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`G_BARE_FORCED_VIA_WARD_SUBSTITUTION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/G_BARE_FORCED_VIA_WARD_SUBSTITUTION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional class-A substitution closure: W1 and hypothesis W2 with retained N_c = 3 force g_bare^2 = 1 and positive-branch g_bare = 1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-145444-bc2044d8-g_bare_forced_via_ward_s-009`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute W1^2 = 1/6 into W2, F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c), and then set N_c = 3 to obtain g_bare^2 = 2 N_c(1/6) = 1, hence g_bare = 1 on the positive branch.  _(class `A`)_
+- **chain closes:** False — The local algebra closes exactly if W2 is admitted. The retained-grade chain is missing a retained audit of docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md establishing F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).
+- **rationale:** Issue: The load-bearing step is valid class-A substitution, but it depends on W2, explicitly declared unaudited and not supplied as a retained-grade authority. Why this blocks: retained W1, AN, and N_c = 3 do not by themselves force g_bare; the quadratic same-1PI identity is necessary. Repair target: audit and retain the same-1PI pinning theorem or replace it with an equivalent retained theorem. Claim boundary until fixed: the note may state the conditional algebraic consequence of W1 + W2 + N_c = 3, not an effective retained forcing of g_bare = 1.
+- **open / conditional deps cited:**
+  - `G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`
 - **auditor confidence:** high
 
 ### `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`

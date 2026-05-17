@@ -80306,22 +80306,49 @@
       "verdict_rationale": null
     },
     "g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T14:56:09.946571+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10": "Standalone polynomial-algebra forcing identity over abstract variables (F, g, N, c0): simultaneous constraints F^2=c0 and F^2=g^2/(2N) imply g^2=2Nc0, with unique positive branch g=sqrt(2Nc0) for c0>0; the (N,c0)=(3,1/6) case yields g=1 and alternative pairs yield different values. No Ward identity, lattice gauge theory, Wilson action, Cl(3), Z^3 substrate, SU(N_c), physical bare-coupling identification, comparator, or framework-specific premise is audited.",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "38e2aefeaa20c6af42c2fdafd56e936d523540d0620d4ef027ecbde47bad6d18",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-145444-bc2044d8-g_bare_forced_via_ward_s-009",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local algebra closes exactly if W2 is admitted. The retained-grade chain is missing a retained audit of docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md establishing F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).",
       "claim_id": "g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Conditional class-A substitution closure: W1 and hypothesis W2 with retained N_c = 3 force g_bare^2 = 1 and positive-branch g_bare = 1.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T14:56:09.946571+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -80331,32 +80358,34 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Substitute W1^2 = 1/6 into W2, F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c), and then set N_c = 3 to obtain g_bare^2 = 2 N_c(1/6) = 1, hence g_bare = 1 on the positive branch.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7acb46b2e4564b2ed829dfd0e8b52aeaee0005ba5fbd3169ddedf9eb961f1fac",
       "note_path": "docs/G_BARE_FORCED_VIA_WARD_SUBSTITUTION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: obtain retained-grade audit status for docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md, then re-audit this substitution closure.",
+      "open_dependency_paths": [
+        "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md"
+      ],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 27,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 27
       },
       "runner_path": "scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py",
       "title": "g_bare Forced via Ward Substitution Narrow Theorem",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: The load-bearing step is valid class-A substitution, but it depends on W2, explicitly declared unaudited and not supplied as a retained-grade authority. Why this blocks: retained W1, AN, and N_c = 3 do not by themselves force g_bare; the quadratic same-1PI identity is necessary. Repair target: audit and retain the same-1PI pinning theorem or replace it with an equivalent retained theorem. Claim boundary until fixed: the note may state the conditional algebraic consequence of W1 + W2 + N_c = 3, not an effective retained forcing of g_bare = 1."
     },
     "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": {
       "audit_date": null,

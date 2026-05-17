@@ -106,6 +106,32 @@ in any input is consistent with class `(C)`.
 {{RUNNER_SOURCE}}
 ```
 
+### 3b. Helper runner source code (audit packet must include)
+
+The primary runner often imports from helper scripts in `scripts/*.py`.
+The audit ledger row exposes these as `helper_runner_paths` (computed by
+`docs/audit/scripts/build_citation_graph.py` via Python AST walking of
+the primary runner's imports). The audit packet builder must include
+ALL of them in the restricted packet — otherwise the auditor sees
+opaque function imports and correctly falls back to class `(C)` on
+missing-helper grounds, even when the chain is sound.
+
+```python
+{{HELPER_RUNNER_SOURCES}}
+```
+
+When evaluating the chain, treat helper runner sources as part of the
+class judgment: a helper that hard-codes constants is class `(G)` for
+the parent; a helper that genuinely computes from primitives extends
+the parent's class `(C)` claim.
+
+If `helper_runner_paths` is non-empty but a helper is missing from the
+packet, that is a packet-completeness defect, NOT a chain failure.
+Return `audit_status=audited_conditional` with
+`repair_class=missing_helper_runner` and name the missing helper.
+
+### 3c. If primary runner source unavailable
+
 If the source is unavailable (`[runner missing on disk]` or similar),
 fall back to judging the load-bearing step from the note text alone, and
 include that limitation in `verdict_rationale`.

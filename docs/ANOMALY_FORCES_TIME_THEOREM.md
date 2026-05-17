@@ -296,6 +296,40 @@ more than one independent time direction. So `d_t > 1` is excluded
 *directly* by the single-clock codimension-1 evolution theorem, without
 needing the external classical-PDE ultrahyperbolic obstruction.
 
+*Remark (what is derived vs. what is inherited — F-B framing, 2026-05-17).*
+Per the hostile audit F-B finding (PR #1262), this proof should make
+explicit which dimensional content comes from ABJ + chirality vs. which
+is inherited from admission (iv). The honest decomposition is:
+
+- **Derived from Step 3 (ABJ + chirality):** `d_s + d_t` is even.
+  Combined with `d_s = 3` and the chirality requirement that
+  `gamma_5` exists (`{gamma_5, gamma_mu} = 0`), this forces `d_t` to
+  be a **positive odd integer**: `d_t in {1, 3, 5, ...}`. Step 3 alone
+  does **not** select `d_t = 1` over `d_t = 3, 5, ...`.
+
+- **Inherited from admission (iv) (the single-clock evolution theorem):**
+  a one-parameter unitary group `U(t) = exp(-itH)` with real parameter
+  `t` and a single codimension-1 initial-data surface. This structure
+  already presupposes a Lorentzian-style real-time evolution (not a
+  Euclidean contraction semigroup, not a multi-time ultrahyperbolic
+  flow). Within that presupposed structure, `d_t > 1` is genuinely
+  excluded by uniqueness of the generator.
+
+- **Net effect:** `d_t = 1` follows by combining the two — Step 3
+  forces `d_t in {odd positives}` and admission (iv) excludes `d_t > 1`.
+  Neither step alone forces `d_t = 1`. The title "Anomaly forces 3+1
+  spacetime" is shorthand for the compound derivation; the literal
+  forcing is "ABJ + chirality + single-clock real-time evolution
+  force `d_t = 1` and hence signature (3,1)".
+
+Why this matters for promotion: admission (iv)'s real-time Lorentzian
+presupposition is itself derived in the single-clock theorem from
+retained primitives (reflection positivity, microcausality,
+Lieb-Robinson, cluster decomposition, Cl(3)/Z^3). The chain is
+therefore not circular — but the Lorentzian-signature inheritance
+must be acknowledged at this step rather than hidden inside the
+chain. This Remark surfaces it.
+
 The classical-PDE ultrahyperbolic / multi-time results
 (Craig--Weinstein 2009 [4], Tegmark 1997 [5]) corroborate the same
 exclusion from a complementary continuum-PDE angle: codimension-1

@@ -18173,6 +18173,42 @@
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+    },
+    {
       "from": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -60890,6 +60926,28 @@
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note"
     },
+    "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "cpt_exact_note",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "194b5d3fa01b44ecee1d17845db2f3a7e9ea1f86afa7657b6785fa0566276993",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_TEMPESTA_COMPOSABILITY_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_tempesta_composability_external_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Tempesta Composability External Narrow Bounded Note"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -77163,7 +77221,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 414,
+      "bounded_theorem": 415,
       "decoration": 1,
       "meta": 157,
       "no_go": 55,
@@ -77172,7 +77230,7 @@
       "positive_theorem": 155
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 861,
+      "bounded_theorem": 862,
       "decoration": 1,
       "meta": 157,
       "no_go": 160,
@@ -77180,10 +77238,10 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9174,
+    "edge_count": 9183,
     "leaf_count": 713,
-    "node_count": 2354,
+    "node_count": 2355,
     "root_count": 844,
-    "runners_with_path": 1965
+    "runners_with_path": 1966
   }
 }

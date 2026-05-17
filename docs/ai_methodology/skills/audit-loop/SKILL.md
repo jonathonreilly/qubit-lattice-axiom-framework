@@ -55,6 +55,29 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
 - If a prior audit row appears to have used timeout/noncompletion as the primary reason for a terminal verdict, do not treat that prior verdict as settled science. Queue it for policy repair or re-audit under this guard.
 - Do not blanket-reset older rows just because the rationale mentions a timeout. If the same rationale contains an independent blocker, re-audit the blocker under restricted inputs; if timeout/noncompletion is the primary or only reason, leave the row pending for compute or policy repair instead of citing it as non-clean science.
 
+## Compute-Limited Backlog Repair
+
+`runner_breakage_inventory.json` lists runners that the audit triage timed out or that exited nonzero. The default pipeline timeout is 60-120s; some load-bearing runners (lattice MC, large eigenvalue, dense sweeps) legitimately need 300-1800s. Treat these as compute-limited, not science-failed (per the Long-Running Runner / Timeout Guard above), and repair them with the canonical batch helper:
+
+```bash
+# Refresh a curated list of broken runners with extended timeouts:
+python3 scripts/precompute_audit_runners.py \
+  --runners scripts/frontier_plaquette_self_consistency.py,scripts/frontier_color_projection_mc.py,...
+
+# Or, for one runner with an ad-hoc longer budget:
+python3 scripts/cached_runner_output.py scripts/<runner>.py
+```
+
+Per-runner declared timeout (preferred for runners that are persistently slow): add a `# timeout_sec: <N>` header comment to the runner file. `scripts/runner_cache.runner_timeout_for()` reads this and overrides the default.
+
+After bulk cache refresh, commit `logs/runner-cache/*.txt` and the mechanical `audit_ledger.json` delta together. The full audit pipeline (`docs/audit/scripts/run_pipeline.sh`) will then regenerate `runner_classification.json`, `audit_queue.json`, `effective_status_summary.json`, and `AUDIT_QUEUE.md` against the new cache.
+
+**Refresh propagation**: refreshed cache files land on `main` via PR. After merge:
+
+- The `.github/workflows/audit.yml` nightly cron at `0 6 * * *` UTC automatically runs the pipeline against `main` and auto-commits any refresh deltas as `audit: nightly repair and pipeline refresh (automated) [skip ci]`. **No manual action required.**
+- For immediate refresh (skipping the wait for the nightly run), trigger `workflow_dispatch`: `gh workflow run audit.yml` (or via Actions UI). The same auto-commit pattern runs.
+- Audit verdicts are **never** auto-minted; the cron only updates classification + queue + load-bearing. Auditors still pick from the refreshed `AUDIT_QUEUE.md` and apply verdicts via `apply_audit.py`.
+
 ## Legacy Claim-Type Re-Audits
 
 - `claim_type_backfill_reaudit` rows are migration cleanup under the PR291 regime. Audit the current scoped claim, not the old source-note status prose.
@@ -72,6 +95,21 @@ Default selection is the highest-priority ready scoped claim:
 3. If the user explicitly says strict queue order, take the top queue row even if `claim_type` is unset.
 4. Exclude any claim id recorded in the current session's blocked/skip set by the Blocked-Row Loop Guard.
 5. If only `meta` or `decoration` rows remain, process them only when the user explicitly asks for those classes.
+
+### Empty-Queue Refresh
+
+If step (2) finds no eligible row in the current `audit_queue.json` (queue exhausted, or every remaining row excluded by `ready=false` / session-blocked / wrong `claim_type` filters), **refresh the pipeline locally before stopping**. Newly landed runner caches or upstream audit results may have made fresh rows ready since the queue was last regenerated.
+
+Refresh exactly once per session per empty-queue event, in this order:
+
+```bash
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+```
+
+Then re-attempt selection (steps 1-5). If the refreshed queue is still empty by the same filters, the audit lane is genuinely caught up — report the empty queue, the refresh attempt, and stop the loop. Do not refresh repeatedly in one session and do not invoke `gh workflow run audit.yml` from inside the audit loop (the CI workflow runs its own pipeline and could race the local one).
+
+The empty-queue refresh exists because runner caches and audit verdicts land continuously; the queue snapshot can lag behind by several commits when the session started. A single local refresh covers the common case where a recent PR (e.g. a compute-limited backlog repair) made dozens of rows newly auditable but the local queue hasn't yet caught up.
 
 Use this snippet when useful:
 

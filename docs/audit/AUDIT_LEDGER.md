@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 115 |
+| **retained** | 116 |
 | **retained_no_go** | 139 |
 | **retained_bounded** | 352 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1222 |
+| unaudited | 1221 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 579 |
+| `audited_clean` | 580 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1435 |
+| `unaudited` | 1434 |
 
 | claim_type | count |
 |---|---:|
@@ -577,6 +577,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_geometry_superposition_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_graph_failure_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_graph_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10679,6 +10680,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the note's closure depends on admitted screened-Poisson, positive-source, sign-convention, static-lattice, graph-family, parameter, and staggered-Dirac premises, while the cited A_min authority is explicitly superseded/meta. Why this blocks: the finite PASS surface is a harness result under selected inputs, not a bounded theorem from retained one-hop authorities. Repair target: supply retained bridge theorems or retained dependency edges for H1-H9, and align runner artifacts with the claimed source law and full tabulated score surface. Claim boundary until fixed: canonical finite-runner outputs may be cited only as conditional numerical evidence under the listed harness assumptions.
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-04-11.md`
+- **auditor confidence:** high
+
+### `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite simple undirected graphs with mu^2 > 0, G > 0, rho >= 0, and the screened-Poisson equation M Phi = G rho, the theorem proves Phi >= 0 entrywise, with strict positivity on connected graphs when rho is nonzero.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-214156-78dc5814-staggered_fermion_card_h-011`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** M = L + mu^2 I is a non-singular symmetric M-matrix / Stieltjes matrix, hence M^{-1} is entrywise non-negative.  _(class `A`)_
+- **chain closes:** True — The linear-algebra chain closes: L is PSD, M is SPD and a strictly diagonally dominant Z-matrix, so the Neumann/M-matrix argument gives M^{-1} >= 0 entrywise. Multiplication by G > 0 and rho >= 0 then gives Phi >= 0 under the explicitly scoped screened-Poisson premise.
+- **rationale:** The proof is a genuine Class-A algebraic closure over standard finite-graph Laplacian and matrix-analysis primitives, not a definition or numerical match. The runner source performs symbolic and numerical checks of the Z-matrix, diagonal dominance, inverse positivity, and Phi positivity rather than merely printing hard-coded passes. H1, G > 0, and mu^2 > 0 remain explicit hypotheses outside this row; downstream use must preserve that scope.
 - **auditor confidence:** high
 
 ### `staggered_geometry_superposition_note_2026-04-11`

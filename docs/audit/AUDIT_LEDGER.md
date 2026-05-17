@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 319 |
-| _retained_pending_chain_ | 5 |
+| **retained_bounded** | 321 |
+| _retained_pending_chain_ | 4 |
 | open_gate | 16 |
 | unaudited | 1226 |
-| audit_in_progress | 1 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 536 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 537 |
 | `audited_conditional` | 169 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 62 |
@@ -69,7 +68,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 260 |
 | `leaf` | 843 |
 
-- **Retained pending chain closure:** 5
+- **Retained pending chain closure:** 4
 - **Citation cycles detected:** 246
 
 ### Runner classification (static heuristic)
@@ -116,8 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -188,6 +186,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cycle_battery_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_battery_scaled_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -2588,6 +2587,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner genuinely constructs the staggered lattice operators and verifies the algebraic identities C H C = -H, P H P = -H, and C P H P C = H on L=4,6,8; these are class A algebraic checks, not hard-coded stdout. However, the source note’s broader physical Hermitian Hamiltonian and SME-zero claim explicitly depends on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md. That cited bridge is labeled audited_conditional, and the rubric requires audited_conditional when a load-bearing cited authority is not retained-grade.
 - **open / conditional deps cited:**
   - `PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md`
+- **auditor confidence:** high
+
+### `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=±I claim is excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-124421-20260517T124421Z-f7442fbe-cpt_exact_real_anti_herm-targeted`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substituting the premises gives Theta D Theta^{-1}=C P (TDT) P C=C(PDP)C=C(-D)C=D, and on H=iD gives P K(iD)K P=-iPDP=iD.  _(class `A`)_
+- **chain closes:** True — The narrowed C1 and C2 conclusions follow by direct algebraic substitution from premises stated as hypotheses. No upstream authority is required for this bounded theorem because the premises themselves are not being derived here.
+- **rationale:** The load-bearing content is a genuine class-A algebraic identity check over explicitly stated premises, not a renaming or numerical match. The runner source performs exact SymPy matrix equality checks rather than merely printing constants, and its C1/C2 checks match the proof. The former C3 scalar-square issue has been demoted to a conditional, non-load-bearing corollary, so it does not block the narrowed theorem.
 - **auditor confidence:** high
 
 ### `critical_exponents_topology_note_2026-04-10`

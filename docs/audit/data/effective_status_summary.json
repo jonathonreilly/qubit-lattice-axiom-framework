@@ -67,7 +67,6 @@
   ],
   "cycles_detected": 246,
   "effective_status_counts": {
-    "audit_in_progress": 1,
     "audited_conditional": 169,
     "audited_failed": 18,
     "audited_numerical_match": 9,
@@ -86,17 +85,16 @@
     "meta": 197,
     "open_gate": 16,
     "retained": 107,
-    "retained_bounded": 319,
+    "retained_bounded": 321,
     "retained_no_go": 137,
-    "retained_pending_chain": 5,
+    "retained_pending_chain": 4,
     "unaudited": 1226
   },
-  "retained_pending_chain_count": 5,
+  "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [
     "alpha_s_derived_narrow_theorem_note_2026-05-10",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-    "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
-    "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16"
   ]
 }

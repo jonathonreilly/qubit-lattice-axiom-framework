@@ -36486,24 +36486,33 @@
       "verdict_rationale": "The runner genuinely constructs the staggered lattice operators and verifies the algebraic identities C H C = -H, P H P = -H, and C P H P C = H on L=4,6,8; these are class A algebraic checks, not hard-coded stdout. However, the source note\u2019s broader physical Hermitian Hamiltonian and SME-zero claim explicitly depends on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md. That cited bridge is labeled audited_conditional, and the rubric requires audited_conditional when a load-bearing cited authority is not retained-grade."
     },
     "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T12:45:08.950817+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.162,
+        "runner_hash": "745f3d99379ebfbed01866228bd3b167e5631368750acdc5864b251519cc01c1",
+        "transitive_descendants": 809
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-124421-20260517T124421Z-f7442fbe-cpt_exact_real_anti_herm-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed C1 and C2 conclusions follow by direct algebraic substitution from premises stated as hypotheses. No upstream authority is required for this bounded theorem because the premises themselves are not being derived here.",
       "claim_id": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-      "claim_scope": "The audited scope is the conditional algebraic theorem that, assuming real anti-Hermitian D and real involutory C,P,K with C D C = -D, P D P = -D, and K D K = D, the identities Theta D Theta^{-1}=D for Theta=C P K and [P K, iD]=0 hold.",
+      "claim_scope": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T12:44:05.824814+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-17T12:45:08.950817+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -36518,24 +36527,35 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-17T12:45:08.950817+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-124421-20260517T124421Z-f7442fbe-cpt_exact_real_anti_herm-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
-      "load_bearing_score": 11.162,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
+      "load_bearing_score": 14.162,
+      "load_bearing_step": "Substituting the premises gives Theta D Theta^{-1}=C P (TDT) P C=C(PDP)C=C(-D)C=D, and on H=iD gives P K(iD)K P=-iPDP=iD.",
+      "load_bearing_step_class": "A",
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "7f04a2c646c496184afe6b6857ccfca7e8a2994d2c3713bc56073c81984d185c",
       "note_path": "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only the non-load-bearing validation text: the runner's framework-shaped C3 sign/special-case description appears inconsistent with the note's +I wording, but C1/C2 do not depend on it.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -36631,16 +36651,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 33,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 33
       },
       "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
       "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)",
       "transitive_descendants": 809,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing content is a genuine class-A algebraic identity check over explicitly stated premises, not a renaming or numerical match. The runner source performs exact SymPy matrix equality checks rather than merely printing constants, and its C1/C2 checks match the proof. The former C3 scalar-square issue has been demoted to a conditional, non-load-bearing corollary, so it does not block the narrowed theorem."
     },
     "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02": {
       "audit_date": null,
@@ -153568,10 +153588,10 @@
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 4,
-      "effective_status": "retained_pending_chain",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:chain_waiting_on:cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
       "independence": "cross_family",
-      "intrinsic_status": "retained_pending_chain",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.66,
       "load_bearing_step": "Under (X1), (X2), and (X3), any admissible scalar generator F equals c times W[J]=log|det(D+J)|-log|det D| on the real-D block, so its local source-derivative content matches W up to scale.",
       "load_bearing_step_class": "A",

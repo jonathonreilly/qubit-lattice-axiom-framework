@@ -22609,6 +22609,10 @@
       "to": "staggered_graph_portability_note"
     },
     {
+      "from": "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17",
+      "to": "cpt_exact_note"
+    },
+    {
       "from": "staggered_layered_gauge_engineering_note",
       "to": "staggered_graph_portability_note"
     },
@@ -71027,6 +71031,20 @@
       "runner_path": "scripts/frontier_staggered_graph_portability_stress.py",
       "title": "Staggered Graph Portability Stress Note"
     },
+    "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17": {
+      "claim_id": "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cpt_exact_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "36b4ee4456224d04310aef9c79be3a37028841d153b377f509e09b45078f4019",
+      "path": "docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py",
+      "title": "Staggered Hamiltonian Direction-Decomposition Bounded Narrow Theorem"
+    },
     "staggered_layered_backreaction_note": {
       "claim_id": "staggered_layered_backreaction_note",
       "claim_type_author_hint": null,
@@ -78401,7 +78419,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 442,
+      "bounded_theorem": 443,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78410,7 +78428,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 889,
+      "bounded_theorem": 890,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78418,10 +78436,10 @@
       "open_gate": 123,
       "positive_theorem": 619
     },
-    "edge_count": 9289,
-    "leaf_count": 747,
-    "node_count": 2405,
+    "edge_count": 9290,
+    "leaf_count": 748,
+    "node_count": 2406,
     "root_count": 863,
-    "runners_with_path": 2009
+    "runners_with_path": 2010
   }
 }

@@ -20340,6 +20340,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_staggered_graph_portability_stress.py"
     },
+    "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py"
+    },
     "staggered_layered_backreaction_note": {
       "assert_count": 0,
       "counts": {
@@ -26022,6 +26034,21 @@
         "B": 0,
         "C": 0,
         "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -52753,14 +52780,14 @@
   "stats": {
     "decoration_candidates": 296,
     "dominant_class_distribution": {
-      "A": 189,
+      "A": 190,
       "B": 257,
       "C": 721,
       "D": 293,
       "none": 430
     },
-    "runners_classified": 1890,
+    "runners_classified": 1891,
     "runners_with_C": 931,
-    "runners_with_D": 539
+    "runners_with_D": 540
   }
 }

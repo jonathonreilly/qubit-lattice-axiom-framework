@@ -37827,13 +37827,13 @@
       "deps": [
         "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
       ],
-      "direct_in_degree": 30,
+      "direct_in_degree": 31,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 24.695,
+      "load_bearing_score": 25.197,
       "load_bearing_step": "Using C H C = -H, P H P = -H, and T acting by complex conjugation, CPT H (CPT)^{-1} = C P H P C = C(-H)C = H.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -38060,7 +38060,7 @@
       },
       "runner_path": "scripts/frontier_cpt_exact.py",
       "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
-      "transitive_descendants": 828,
+      "transitive_descendants": 829,
       "verdict_rationale": "The runner genuinely constructs the staggered lattice operators and verifies the algebraic identities C H C = -H, P H P = -H, and C P H P C = H on L=4,6,8; these are class A algebraic checks, not hard-coded stdout. However, the source note\u2019s broader physical Hermitian Hamiltonian and SME-zero claim explicitly depends on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md. That cited bridge is labeled audited_conditional, and the rubric requires audited_conditional when a load-bearing cited authority is not retained-grade."
     },
     "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": {
@@ -163598,7 +163598,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 11.697,
+      "load_bearing_score": 11.699,
       "load_bearing_step": "The algebraic Hermitian lift Theta_H=P K preserves H=iD using K(i)=-i and P D P=-D; the additional SME conclusion depends on identifying the vanishing Theta_H-odd lattice hopping sector and direction-resolved traces with all CPT-odd SME bilinear coefficients sourced by this substrate.",
       "load_bearing_step_class": "D",
       "max_descendant_status": "audit_in_progress",
@@ -163658,7 +163658,7 @@
       },
       "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
       "title": "Physical Hermitian Hamiltonian And SME Bridge",
-      "transitive_descendants": 829,
+      "transitive_descendants": 830,
       "verdict_rationale": "Issue: The Hermitian-lift algebra is supported, but the final SME-zero statement relies on an asserted physical bridge from vanishing Theta_H-odd lattice Hamiltonian sectors and direction-resolved trace coefficients to all CPT-odd SME bilinear coefficients sourced by the substrate. Why this blocks: a Nature-grade audit cannot treat a lattice symmetry-odd matrix projection as a complete SME coefficient derivation unless the note proves the operator dictionary, basis completeness, normalization, and exclusion of other CPT-odd bilinear structures. The runner can verify zero odd matrices for L=4 and L=6, but it cannot by itself establish the physical SME mapping. Repair target: add a first-principles or cited-but-contained derivation of the SME bilinear operator basis represented on the staggered Hamiltonian substrate, prove that the checked full and direction-resolved sectors span every CPT-odd bilinear source in the stated boundary, and separate finite-runner checks from all-even-lattice symbolic closure. Claim boundary until fixed: retain only the conditional lattice theorem that the free staggered H=iD has a valid antiunitary Theta_H=P K symmetry and zero Theta_H-odd Hamiltonian-sector proxy; phrase SME coefficients as zero only under the explicitly proven proxy/dictionary assumptions."
     },
     "physical_lattice_foundational_interpretation_note_2026-05-08": {
@@ -211987,6 +211987,57 @@
       "transitive_descendants": 0,
       "verdict_rationale": "The runner constructs the four stress graph families, checks their graph statistics and cycle status, and delegates measurement to the retained portability battery rather than merely printing constants. All retained rows pass or are correctly N/A for the acyclic gauge case, with no external comparator or tuned calibrated input used. The source note's gauge magnitudes differ slightly in low-order digits from cached stdout, so cache/table synchronization should be rechecked, but the audited pass/fail conclusion is unchanged."
     },
+    "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "cpt_exact_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "36b4ee4456224d04310aef9c79be3a37028841d153b377f509e09b45078f4019",
+      "note_path": "docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py",
+      "title": "Staggered Hamiltonian Direction-Decomposition Bounded Narrow Theorem",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
     "staggered_layered_backreaction_note": {
       "audit_date": "2026-05-03T00:14:02.815150+00:00",
       "audit_state_snapshot": {
@@ -255996,9 +256047,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2248,
+    "preserved_existing": 2249,
     "re_audit_required": 0,
-    "row_count": 2293,
+    "row_count": 2294,
     "seeded_new": 1
   }
 }

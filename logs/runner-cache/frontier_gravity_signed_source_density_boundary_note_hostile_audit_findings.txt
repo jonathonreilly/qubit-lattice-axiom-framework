@@ -1,0 +1,29 @@
+==============================================================================
+AUDIT-PREP VERIFIER — gravity_signed_source_density_boundary_note
+==============================================================================
+  [PASS] [A] Parent note exists  (GRAVITY_SIGNED_SOURCE_DENSITY_BOUNDARY_NOTE.md, 7638 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   signed_gravity_chi_selector_theorem_or_nogo_note IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   signed_gravity_aps_action_origin_superselection_stability_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_aps_boundary_index_chi_probe_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_aps_locked_axiom_extension_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_aps_locked_source_action_proposal_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_aps_wald_gauss_bridge_audit_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_boundary_coframe_chi_probe_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_mechanism_separation_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_non_claim_gate_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_nonlocal_boundary_chi_target_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_response_backlog_2026-04-25 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_retained_boundary_source_principle_no_go_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_source_action_escape_hatch_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_source_line_origin_tensor_lift_note NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 15 PASS / 0 FAIL
+Class-A pattern hits: 15
+==============================================================================
+
+VERIFIED

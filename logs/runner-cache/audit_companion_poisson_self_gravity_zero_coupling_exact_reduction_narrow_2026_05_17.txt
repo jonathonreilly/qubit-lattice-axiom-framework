@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_poisson_self_gravity_zero_coupling_exact_reduction_narrow_2026_05_17.py
+runner_sha256: 399de3b1bc9f91098c1edff47855c711feb17da5ce675e14b4c2eee961b55c95
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 50.67
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact bit-equality + structural reduction) for
+POISSON_SELF_GRAVITY_ZERO_COUPLING_EXACT_REDUCTION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: prove the runner's zero-coupling reduction is a bit-exact code identity
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: kernel identity _poisson_like_field(..., coupling=0.0) == 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 1.A — empty source: shape is (nl, npl)  (shape=(4, 9))
+  [PASS (A)] Part 1.A — empty source: every entry is bit-exactly 0.0  (all entries `v == 0.0` (not `abs(v) < tol`))
+  [PASS (A)] Part 1.B — non-empty: coupling=0.0 -> field == 0.0 bit-exactly (uniform 3-src)  (FIELD_EPS=0.5 FIELD_MU=0.08 nsrc=3)
+  [PASS (A)] Part 1.B — non-empty: coupling=0.0 -> field == 0.0 bit-exactly (weighted 2-src tight kernel)  (FIELD_EPS=0.1 FIELD_MU=1.5 nsrc=2)
+  [PASS (A)] Part 1.B — non-empty: coupling=0.0 -> field == 0.0 bit-exactly (single src wide screen)  (FIELD_EPS=2.0 FIELD_MU=0.01 nsrc=1)
+  [PASS (A)] Part 1.B — non-empty: coupling=0.0 -> field == 0.0 bit-exactly (6-src strong screen)  (FIELD_EPS=0.5 FIELD_MU=0.5 nsrc=6)
+  [PASS (A)] Part 1.B — non-empty: coupling=0.0 -> field == 0.0 bit-exactly (weight-spike)  (FIELD_EPS=0.5 FIELD_MU=0.08 nsrc=5)
+  [PASS (A)] Part 1.B — non-empty: coupling=0.0 -> field == 0.0 bit-exactly (uniform 9-src)  (FIELD_EPS=0.5 FIELD_MU=0.08 nsrc=9)
+  [PASS (A)] Part 1.C — IEEE-754 stress: 0.0 * y == 0.0 bit-exactly for 10000 random finite y  (max |0.0 * y| over stress sweep = 0.0)
+
+----------------------------------------------------------------------------------------
+Part 2: outer-loop convergence in <= 2 iter at eps*s = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 2.A — eps=0, s>0: converged
+  [PASS (A)] Part 2.A — eps=0, s>0: n_iter <= 2  (n_iter = 2)
+  [PASS (A)] Part 2.A — eps=0, s>0: final field_delta == 0.0 bit-exactly  (field_delta = 0.0)
+  [PASS (A)] Part 2.A — eps=0, s>0: returned field is identically zero
+  [PASS (A)] Part 2.B — s=0, eps>0: converged
+  [PASS (A)] Part 2.B — s=0, eps>0: n_iter <= 2  (n_iter = 2)
+  [PASS (A)] Part 2.B — s=0, eps>0: final field_delta == 0.0 bit-exactly  (field_delta = 0.0)
+  [PASS (A)] Part 2.B — s=0, eps>0: returned field is identically zero
+  [PASS (A)] Part 2.C — s=0, eps=0: converged
+  [PASS (A)] Part 2.C — s=0, eps=0: n_iter <= 2  (n_iter = 2)
+  [PASS (A)] Part 2.C — s=0, eps=0: final field_delta == 0.0 bit-exactly  (field_delta = 0.0)
+  [PASS (A)] Part 2.D — eps=0 gain=1e-06: still converges in <= 2 iter, delta=0.0  (conv=True n_iter=2 delta=0.0)
+  [PASS (A)] Part 2.D — eps=0 gain=1e-03: still converges in <= 2 iter, delta=0.0  (conv=True n_iter=2 delta=0.0)
+  [PASS (A)] Part 2.D — eps=0 gain=1e+00: still converges in <= 2 iter, delta=0.0  (conv=True n_iter=2 delta=0.0)
+  [PASS (A)] Part 2.D — eps=0 gain=1e+03: still converges in <= 2 iter, delta=0.0  (conv=True n_iter=2 delta=0.0)
+  [PASS (A)] Part 2.D — eps=0 gain=1e+06: still converges in <= 2 iter, delta=0.0  (conv=True n_iter=2 delta=0.0)
+  [PASS (A)] Part 2.D — eps=0 gain=1e+09: still converges in <= 2 iter, delta=0.0  (conv=True n_iter=2 delta=0.0)
+
+----------------------------------------------------------------------------------------
+Part 3: bare-lattice propagator reduction (centroid, escape)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 3.A — centroid_z(loop, eps=0) == centroid_z(free) bit-exactly  (z_loop=6.632166014799160772e-17 z_free=6.632166014799160772e-17)
+  [PASS (A)] Part 3.B — detector_prob(loop, eps=0) == detector_prob(free) bit-exactly  (p_loop=5.678779802598267166e+75 p_free=5.678779802598267166e+75)
+  [PASS (A)] Part 3.C — detector amplitudes bit-identical to bare lattice propagator  (checked 625 detector cells)
+  [PASS (A)] Part 3.D — local field update lf == 0.0 bit-exactly on zero field  (checked all 390625 (si, di) pairs in layer 0)
+
+----------------------------------------------------------------------------------------
+Part 4: cross-check vs cached run
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 4 — cached run: zero-epsilon shift = +0.000000e+00 (matches theorem)  (zero-epsilon centroid shift: +0.000000e+00)
+  [PASS (A)] Part 4 — cached run: zero-epsilon escape = 1.000000 (matches theorem)  (zero-epsilon escape ratio:   1.000000)
+  [PASS (A)] Part 4 — cached run: iter count <= 2 (matches Part 2)  (zero-epsilon iters/residual:  2 / 0.000e+00)
+
+----------------------------------------------------------------------------------------
+SCORECARD
+----------------------------------------------------------------------------------------
+
+  PASS = 33
+  FAIL = 0
+
+  [BOUNDARY] explicit boundary guards (printed only):
+    - Does NOT promote poisson_self_gravity_loop_note from audited_conditional.
+    - Does NOT claim nonzero-coupling convergence, weak-field saturation, or backreaction.
+    - Does NOT ratify the upstream minimal_source_driven_field_probe_note.
+    - Does NOT depend on V3 sibling's _run_loop (different runner, different short-circuit).
+    - Holds on standards-compliant IEEE-754 float64 implementations (CPython on x86_64/arm64).
+
+  STATUS: ALL EXACT-IDENTITY CHECKS PASS
+  CLOSURE: Zero-coupling reduction of the Poisson self-gravity loop
+           runner is a bit-exact code identity, not a numerical
+           coincidence. Class A narrow theorem.
+----- stderr -----

@@ -154,3 +154,9 @@ The current theorem is:
 ```bash
 python3 scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)

@@ -315,3 +315,9 @@ companion.
 Expected summary for the companion runner:
 
 - `THEOREM PASS=7 SUPPORT=3 FAIL=0`
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [gauge_vacuum_plaquette_residual_environment_identification_theorem_note](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)

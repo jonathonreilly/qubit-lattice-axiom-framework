@@ -121,3 +121,9 @@ patch.
 ```bash
 python3 scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)

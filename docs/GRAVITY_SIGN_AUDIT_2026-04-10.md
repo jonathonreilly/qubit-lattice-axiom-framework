@@ -390,3 +390,10 @@ What is still open:
 
 **Scripts:** `frontier_correct_coupling.py`, `frontier_two_sign_comparison.py`,
 `frontier_two_sign_parity.py`
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16](STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md)

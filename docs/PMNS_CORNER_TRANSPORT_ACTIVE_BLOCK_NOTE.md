@@ -300,3 +300,6 @@ in commit `614b929b5`).
 ```bash
 python3 scripts/frontier_pmns_corner_transport_active_block.py
 ```
+- [neutrino_dirac_two_higgs_canonical_reduction_note](NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- [pmns_active_four_real_source_from_transport_note](PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md)
+- [pmns_transfer_operator_dominant_mode_note](PMNS_TRANSFER_OPERATOR_DOMINANT_MODE_NOTE.md)

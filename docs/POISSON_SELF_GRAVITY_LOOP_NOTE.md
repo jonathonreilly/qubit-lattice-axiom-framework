@@ -225,3 +225,9 @@ If a future version of this harness shows either:
   fixed point
 
 then the present loop should remain only a control, not a new physics lane.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [minimal_source_driven_field_probe_note](MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)

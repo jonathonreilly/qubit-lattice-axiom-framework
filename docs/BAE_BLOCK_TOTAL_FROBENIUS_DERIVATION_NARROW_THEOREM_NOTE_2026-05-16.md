@@ -314,3 +314,11 @@ verifies symbolically (PASS=N/0):
   — campaign-context citation: F2 ruled out, F1-vs-F3 remains.
 - `BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md`
   — campaign-context citation: Born-rule max-ent does not select F1.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- [koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md)
+- [bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent](BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md)

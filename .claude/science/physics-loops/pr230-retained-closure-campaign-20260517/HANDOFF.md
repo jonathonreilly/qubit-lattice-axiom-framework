@@ -10,7 +10,8 @@ Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-fr
 Stacked review PR for Block123: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1450
 Stacked review PR for Block124:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1456
-Stacked review PR for Block125: pending push/PR creation
+Stacked review PR for Block125:
+https://github.com/jonathonreilly/cl3-lattice-framework/pull/1458
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base

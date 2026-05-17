@@ -102,7 +102,7 @@ block125_result:
   wz_per_source_shift_rows: 0
   satisfied_route_contracts: []
   ranked_next_path: "accepted canonical O_H/action authority with nonempty numeric C_ss/C_sH/C_HH pole-residue rows"
-  stacked_review_pr: "pending"
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1458"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"

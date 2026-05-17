@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py
 runner_sha256: 77b1d5788a7ea55cb0d6aa053878e817bea6fb313fdb4dcc3a8af87b2fc24741
-timeout_sec: 120
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 64.65
+elapsed_sec: 104.30
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -63,6 +63,5 @@ RESULT
   theorem-grade closure statement by itself.
 
 PASS=5  FAIL=0
-
 ----- stderr -----
 

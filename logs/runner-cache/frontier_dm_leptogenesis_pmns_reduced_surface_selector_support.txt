@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py
 runner_sha256: de2e333ffacbbaea08c0719e38729fbf4063eb10a1ebe2a14e9ae4b0bcc051ad
-timeout_sec: 1800
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 94.68
+elapsed_sec: 187.20
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -72,6 +72,5 @@ RESULT
   search uses known branch anchors and local polishing.
 
 PASS=7  FAIL=0
-
 ----- stderr -----
 

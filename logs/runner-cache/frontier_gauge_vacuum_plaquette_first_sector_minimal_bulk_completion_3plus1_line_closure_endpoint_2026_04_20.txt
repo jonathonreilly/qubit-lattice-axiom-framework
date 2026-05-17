@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.py
 runner_sha256: ef506db367a632f7fd721dc10cfa80a07a7e7132899f7613dce04c374f591683
-timeout_sec: 1800
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 129.05
+elapsed_sec: 209.80
 status: ok
 ----- stdout -----
 ======================================================================================================================
@@ -36,6 +36,5 @@ RESULT
       closure above is the strongest attainable closure here
 
 PASS=6 FAIL=0
-
 ----- stderr -----
 

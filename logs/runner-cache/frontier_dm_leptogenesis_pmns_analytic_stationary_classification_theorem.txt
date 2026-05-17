@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py
 runner_sha256: ce1b63f344290b1a90aa9367cbefa3d7e71cb4dfb62ee1708ed45b914f245756
-timeout_sec: 120
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 64.69
+elapsed_sec: 104.40
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -131,6 +131,5 @@ PART 4: BOTTOM LINE
 ========================================================================================
 SUMMARY: PASS=14 FAIL=0
 ========================================================================================
-
 ----- stderr -----
 

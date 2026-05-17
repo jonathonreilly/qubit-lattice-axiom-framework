@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py
 runner_sha256: e4c3b6f25c5a9494e0362269a93014e51a6857ab7908d9108d18863882aa5d3e
-timeout_sec: 120
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 68.14
+elapsed_sec: 77.40
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -76,6 +76,5 @@ PART 7: BOTTOM LINE
 SUMMARY: PASS=25 FAIL=0
 VERDICT: PATH STILL CHOSEN
 ========================================================================================
-
 ----- stderr -----
 

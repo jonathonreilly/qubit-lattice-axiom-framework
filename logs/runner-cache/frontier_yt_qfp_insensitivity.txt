@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qfp_insensitivity.py
 runner_sha256: 4079845bdd84897ae063aed1b4af7a4ef6f8e26bb017b141a8d1fbb8f5972f96
-timeout_sec: 1800
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 498.26
+elapsed_sec: 497.60
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -351,9 +351,8 @@ FINAL SUMMARY
 
   Tests: 14 PASS, 0 FAIL
 
-  Elapsed: 497.6s
+  Elapsed: 496.9s
 
   All tests passed.
-
 ----- stderr -----
 

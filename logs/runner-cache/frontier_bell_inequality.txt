@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bell_inequality.py
 runner_sha256: 1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689
-timeout_sec: 1800
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 541.50
+elapsed_sec: 480.30
 status: ok
 ----- stdout -----
 CHSH BELL VIOLATION FROM Cl(3) ON Z^d
@@ -135,10 +135,10 @@ Poisson gravitational coupling, periodic boundary conditions
   m=0.1, lattice=4x4x4 periodic
          G        |S|  time(s)   Bell
   --------------------------------------
-       0.0   2.000000     95.0        <-- NULL CONTROL
-    1000.0   2.000712    104.0       
-    2000.0   2.077240    145.7    YES
-    5000.0   2.494765    155.4    YES
+       0.0   2.000000    148.0        <-- NULL CONTROL
+    1000.0   2.000712    137.3       
+    2000.0   2.077240     87.6    YES
+    5000.0   2.494765     76.7    YES
 
 ========================================================================
   SUMMARY: CHSH Bell Inequality on Z^d
@@ -171,7 +171,6 @@ Poisson gravitational coupling, periodic boundary conditions
   distinguishable fermion species carrying explicit Cl(3) taste operators.
   No post-selection, no sector restriction, full C^N x C^N space.
 
-  Total runtime: 541.1s
-
+  Total runtime: 480.1s
 ----- stderr -----
 

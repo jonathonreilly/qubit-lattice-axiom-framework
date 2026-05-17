@@ -3,7 +3,7 @@
     "critical": 749,
     "high": 35,
     "leaf": 304,
-    "medium": 154
+    "medium": 153
   },
   "cycle_break_target_count": 247,
   "cycle_break_targets": [
@@ -27894,32 +27894,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mirror_2d_gravity_law_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mirror_program_synthesis"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/mirror_born_audit.py"
-      ],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mirror_2d_validation.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "asymmetry_persistence_mass_window_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -40877,6 +40851,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 49,
-  "total_pending": 1242
+  "ready_count": 48,
+  "total_pending": 1241
 }

@@ -134310,24 +134310,45 @@
       "verdict_rationale": "The runner stdout matches the note's table, k=0 control, coefficient, exponent, and R^2, and the provided source shows these are computed from the declared ordered-lattice harness. No cited upstream authority is required for this bounded finite computation, and no helper hard-codes the contested fit. The clean verdict is limited to the stated N=40 no-barrier numerical fit, not to a universal asymptotic distance law or signed attractive deflection theorem."
     },
     "lattice_family_validation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T21:02:28.048976+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "lattice_distance_law_note": "Finite N=40, half_width=20, k=5.0, strength=0.1 no-barrier ordered-lattice centroid-shift computation over B_VALUES = [3,5,7,10,13,16,19], including the declared b >= 7 |delta| fit and k=0 control.",
+          "lattice_field_strength_unification_note": "Finite runner-backed sweep showing four retained weak-field rows in the specified ordered-lattice Z2 family: max_dy=5, narrow_center/wide_center, strengths 0.0005 to 0.001, under the note's criteria."
+        },
+        "dep_claim_type": {
+          "lattice_distance_law_note": "bounded_theorem",
+          "lattice_field_strength_unification_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_distance_law_note": "retained_bounded",
+          "lattice_field_strength_unification_note": "retained_bounded"
+        },
+        "deps": [
+          "lattice_distance_law_note",
+          "lattice_field_strength_unification_note"
+        ],
+        "load_bearing_score": 4.322,
+        "runner_hash": "4d48c4078c58995752fd0a2a949b0ceb8b84917d513def6e7275024180dc95b0",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-210112-0eef0b89-lattice_family_validatio-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner and included helpers directly instantiate the regular lattice, field, propagator, apertures, centroid reads, Sorkin test, MI/purity reads, and power-law fit; the completed stdout matches the note's quoted values. The cited upstream notes are retained_bounded, and the source conclusion stays within the bounded two-harness scope.",
       "claim_id": "lattice_family_validation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Bounded audit of the standard-strength N=40 ordered-lattice same-family two-harness bridge: barrier coexistence metrics plus no-barrier |delta| distance-tail fit; no all-10-properties, same-card attractive-gravity, mass-law, large-N, or asymptotic theorem was audited.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T21:02:28.048976+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -134336,23 +134357,23 @@
         "lattice_field_strength_unification_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/lattice_mirror_distance.py",
         "scripts/mirror_2d_validation.py",
         "scripts/mirror_born_audit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 4.322,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The ordered 2D lattice at N=40, half_width=20, k=5.0 supports a barrier coexistence card with Born-clean nonzero MI/d_TV/CL/gravity/k=0 metrics and, on the no-barrier harness, a far-field |delta| fit |delta| ~= 23.5071 * b^(-1.052), R^2=0.9850.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "04b7e9280dd5c0a8735976616d97db11470f88ea4f2fd774b843b3b28d11af88",
       "note_path": "docs/LATTICE_FAMILY_VALIDATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream citations preserve the bounded N=40 two-harness scope and do not promote this result to a universal one-family unification theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -134476,14 +134497,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 2
       },
       "runner_path": "scripts/lattice_family_validation.py",
       "title": "Lattice Family Validation Note",
       "transitive_descendants": 9,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the bounded scope, the load-bearing result is a first-principles numerical computation from the stated lattice harness rather than a definition, renaming, external comparator, or hard-coded printout. The helper sources are present and the imported functions construct the lattice, field, and propagation path used by the primary runner. The note accurately limits the result to a same-family two-harness bridge and does not promote the unresolved same-card gravity sign, mass-law, large-N, or asymptotic distance-law claims."
     },
     "lattice_fanout_continuum_note": {
       "audit_date": "2026-05-16T21:50:29.527070+00:00",

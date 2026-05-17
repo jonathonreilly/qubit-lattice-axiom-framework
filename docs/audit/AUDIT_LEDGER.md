@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 113 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 344 |
+| **retained_bounded** | 345 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1235 |
+| unaudited | 1234 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -47,22 +47,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 569 |
+| `audited_clean` | 570 |
 | `audited_conditional` | 184 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1448 |
+| `unaudited` | 1447 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 973 |
+| `bounded_theorem` | 974 |
 | `decoration` | 25 |
 | `meta` | 217 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
-| `positive_theorem` | 746 |
+| `positive_theorem` | 745 |
 
 | criticality | count |
 |---|---:|
@@ -394,6 +394,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_tapered_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_complementarity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_family_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -7041,6 +7042,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the N=40 no-barrier ordered lattice, the far-field window b >= 7 fits |delta| ~= 23.5071 * b^(-1.052) with R^2 = 0.9850.  _(class `C`)_
 - **chain closes:** True — The primary runner constructs the lattice, field, propagation, centroid readout, seven b rows, k=0 control, and b >= 7 power-law fit from code rather than printing hard-coded target values. The helper source is included and supplies the load-bearing lattice generation, field, and propagation routines, so the bounded N=40 numerical claim closes on its own stated harness.
 - **rationale:** The runner stdout matches the note's table, k=0 control, coefficient, exponent, and R^2, and the provided source shows these are computed from the declared ordered-lattice harness. No cited upstream authority is required for this bounded finite computation, and no helper hard-codes the contested fit. The clean verdict is limited to the stated N=40 no-barrier numerical fit, not to a universal asymptotic distance law or signed attractive deflection theorem.
+- **auditor confidence:** high
+
+### `lattice_family_validation_note`
+
+- **Note:** [`LATTICE_FAMILY_VALIDATION_NOTE.md`](../../docs/LATTICE_FAMILY_VALIDATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the standard-strength N=40 ordered-lattice same-family two-harness bridge: barrier coexistence metrics plus no-barrier |delta| distance-tail fit; no all-10-properties, same-card attractive-gravity, mass-law, large-N, or asymptotic theorem was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-210112-0eef0b89-lattice_family_validatio-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The ordered 2D lattice at N=40, half_width=20, k=5.0 supports a barrier coexistence card with Born-clean nonzero MI/d_TV/CL/gravity/k=0 metrics and, on the no-barrier harness, a far-field |delta| fit |delta| ~= 23.5071 * b^(-1.052), R^2=0.9850.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helpers directly instantiate the regular lattice, field, propagator, apertures, centroid reads, Sorkin test, MI/purity reads, and power-law fit; the completed stdout matches the note's quoted values. The cited upstream notes are retained_bounded, and the source conclusion stays within the bounded two-harness scope.
+- **rationale:** Within the bounded scope, the load-bearing result is a first-principles numerical computation from the stated lattice harness rather than a definition, renaming, external comparator, or hard-coded printout. The helper sources are present and the imported functions construct the lattice, field, and propagation path used by the primary runner. The note accurately limits the result to a same-family two-harness bridge and does not promote the unresolved same-card gravity sign, mass-law, large-N, or asymptotic distance-law claims.
 - **auditor confidence:** high
 
 ### `lattice_fanout_continuum_note`

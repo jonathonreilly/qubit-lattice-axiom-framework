@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 9 |
-| ~~audited_conditional~~ | 183 |
+| ~~audited_conditional~~ | 184 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 563 |
-| `audited_conditional` | 183 |
+| `audited_conditional` | 184 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 965 |
+| `bounded_theorem` | 966 |
 | `decoration` | 22 |
 | `meta` | 206 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
-| `positive_theorem` | 743 |
+| `positive_theorem` | 742 |
 
 | criticality | count |
 |---|---:|
@@ -795,6 +795,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_native_zero_section_closure_route_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reviewer_stress_test_note_2026-04-21` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lanes.ordered-lattice.readme` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `lattice_3d_l2_tail_stats_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lattice_distance_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -6852,6 +6853,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.  _(class `A`)_
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
+- **auditor confidence:** high
+
+### `kubo_continuum_limit_families_note`
+
+- **Note:** [`KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md`](../../docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The packet audits only the three-family refinement sweep at H={0.50,0.35,0.25} and its arithmetic: Fam1/Fam3 agree at finest H while Fam2 is an outlier; it does not audit a true H->0 theorem or the later Fam2 H=0.20 refinement.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-183140-41cdea85-kubo_continuum_limit_fam-009`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At H=0.25, Fam1=+5.9860 and Fam3=+5.9547 agree to 0.5%, while Fam2=+7.0883 is the non-converged outlier, so all-family portability fails with 11.7% max deviation.  _(class `C`)_
+- **chain closes:** False — The stdout-to-note arithmetic is internally consistent and the Fam1 values match the retained_bounded upstream note. The first-principles runner computation does not close from the packet because scripts/kubo_continuum_limit_families.py imports the load-bearing grow, true_kubo_at_H, and finite_diff_dM functions from scripts/kubo_continuum_limit.py, whose source is not provided.
+- **rationale:** The cached stdout supports the bounded numerical summary: the reported drifts, Fam1/Fam3 spread, and 11.7% max deviation are consistent with the table. However, stdout is not authoritative for a class (C) claim, and the primary runner's actual physics operators are opaque because the imported helper source is absent despite being on the load-bearing path. The later Fam2 H=0.20 narrowing is also not audited by this packet; the safe audited residue is only the H=0.25 three-family snapshot arithmetic.
 - **auditor confidence:** high
 
 ### `kubo_continuum_limit_note`

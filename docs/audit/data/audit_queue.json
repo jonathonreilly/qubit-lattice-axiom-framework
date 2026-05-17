@@ -3,7 +3,7 @@
     "critical": 430,
     "high": 161,
     "leaf": 329,
-    "medium": 316
+    "medium": 315
   },
   "cycle_break_target_count": 53,
   "cycle_break_targets": [
@@ -17842,30 +17842,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/lattice_h2_T_numpy_continuum.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kubo_continuum_limit_families_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kubo_continuum_limit_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/kubo_continuum_limit_families.py",
       "transitive_descendants": 2
     },
     {
@@ -36045,6 +36021,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 18,
-  "total_pending": 1236
+  "ready_count": 17,
+  "total_pending": 1235
 }

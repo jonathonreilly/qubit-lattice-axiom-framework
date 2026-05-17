@@ -44061,6 +44061,18 @@
       "runner_path": "scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py",
       "title": "CPT C3 \u2014 (CP)\u00b2 = \u03b5\u00b7I Narrow Theorem on Explicit Cl(3) \u00d7 Z\u00b3 C, P"
     },
+    "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17": {
+      "claim_id": "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "74d7f1bab84ed9ba4a5b95a3869dc1bf37386fe1bd4d4aa17c91e3f2b5e13e39",
+      "path": "docs/CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py",
+      "title": "CPT D-Level Finite-Lattice Algebraic Identity Narrow Theorem on Real Hermitian H"
+    },
     "cpt_exact_note": {
       "claim_id": "cpt_exact_note",
       "claim_type_author_hint": null,
@@ -77718,6 +77730,7 @@
     "continuum_limit_note",
     "cosmology_from_mass_spectrum_note_hostile_audit_findings_note_2026-05-17",
     "coupled_field_generated_family_probe_note",
+    "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17",
     "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
     "cross_family_universality_note",
     "cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25_hostile_audit_findings_note_2026-05-17",
@@ -78388,7 +78401,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 441,
+      "bounded_theorem": 442,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78397,7 +78410,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 888,
+      "bounded_theorem": 889,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78406,9 +78419,9 @@
       "positive_theorem": 619
     },
     "edge_count": 9289,
-    "leaf_count": 746,
-    "node_count": 2404,
-    "root_count": 862,
-    "runners_with_path": 2008
+    "leaf_count": 747,
+    "node_count": 2405,
+    "root_count": 863,
+    "runners_with_path": 2009
   }
 }

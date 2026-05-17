@@ -3588,6 +3588,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py"
     },
+    "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py"
+    },
     "cpt_exact_note": {
       "assert_count": 1,
       "counts": {
@@ -25347,6 +25359,21 @@
       ],
       "counts": {
         "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0
@@ -52724,15 +52751,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 295,
+    "decoration_candidates": 296,
     "dominant_class_distribution": {
-      "A": 188,
+      "A": 189,
       "B": 257,
       "C": 721,
       "D": 293,
       "none": 430
     },
-    "runners_classified": 1889,
+    "runners_classified": 1890,
     "runners_with_C": 931,
     "runners_with_D": 539
   }

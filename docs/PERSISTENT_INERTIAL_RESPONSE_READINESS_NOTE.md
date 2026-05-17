@@ -276,11 +276,24 @@ from a registered runner that asserts the summary criteria.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [mesoscopic_surrogate_compact_floor_sweep_note](MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE.md)
-- [localized_source_response_sweep_note](LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md)
-- [broad_surrogate_point_source_compare_note](BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)
-- [mesoscopic_surrogate_annular_tapered_sweep_note](MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md)
-- [mesoscopic_surrogate_h025_constrained_localization_note](MESOSCOPIC_SURROGATE_H025_CONSTRAINED_LOCALIZATION_NOTE.md)
-- [mesoscopic_surrogate_backreaction_note](MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md)
-- [mesoscopic_surrogate_multistage_note](MESOSCOPIC_SURROGATE_MULTISTAGE_NOTE.md)
-- [mesoscopic_surrogate_threshold_2d_note](MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md)
+- `MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE.md` (downstream sweep note;
+  backticked to break cycle-0187 through compact_floor -> localization_sweep
+  -> quasi_persistent_relaunch_probe -> ordered_lattice_packet_reidentification
+  -> this_note)
+- `LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md` (downstream sweep note;
+  backticked to break cycle-0186 through localized_source -> h025_constrained
+  -> annular_tapered -> this_note)
+- `BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md` (downstream surrogate note;
+  backticked to break newborn cycle through this_note -> broad_surrogate ->
+  ordered_lattice_packet_reidentification -> this_note)
+- `MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md` (downstream sweep note;
+  backticked to break newborn length-2 cycle through this_note <->
+  annular_tapered)
+- `MESOSCOPIC_SURROGATE_H025_CONSTRAINED_LOCALIZATION_NOTE.md` (downstream
+  sweep note; backticked alongside siblings for consistency)
+- `MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md` (downstream surrogate note;
+  backticked alongside siblings for consistency)
+- `MESOSCOPIC_SURROGATE_MULTISTAGE_NOTE.md` (downstream surrogate note;
+  backticked alongside siblings for consistency)
+- `MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md` (downstream surrogate note;
+  backticked alongside siblings for consistency)

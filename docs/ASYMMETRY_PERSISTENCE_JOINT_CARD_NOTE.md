@@ -131,3 +131,7 @@ current asymmetry-persistence verdict is:
 
 The honest range for that claim is now: **dense `N=80-100`, bounded
 before `N=120`**.
+
+---
+
+**Re-queued for re-audit 2026-05-17:** previous `unaudited` verdict cited packet incompleteness (missing helper-script imports from the restricted packet). The audit pipeline now populates `helper_runner_paths` per [PR #1371](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1371) so the next audit pass receives the complete packet. Helpers now declared: ``. The current re-queue is mechanical — no science content changes — and is documented here so the hash drift is explicit.

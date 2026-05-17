@@ -7401,50 +7401,41 @@
       "verdict_rationale": "Issue: the note's bounded tables are stale relative to the supplied runner source/stdout, and the runner depends on unlisted imported infrastructure for graph generation, propagation, layernorm, and pruning. Why this blocks: the conclusion depends on exact finite rows, especially the N=100 layernorm collapse pocket, but the current packet neither reproduces those rows nor supplies the imported closure authority. Repair target: align the runner/note configuration, provide a completed cached log or sliced deterministic runner for the stated sweep, and cite/audit the imported infrastructure. Claim boundary until fixed: the packet only supports partial qualitative observations from the completed N=80 stdout, not the full bounded claim."
     },
     "asymmetry_persistence_joint_card_note": {
-      "audit_date": "2026-05-10T17:54:00.001525+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 1.5,
-        "runner_hash": "f70e612a5e327d92010c28353aecaf073f512aacfed8bccb0c906da4347d3d5a",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1304-7b0a-7d21-b282-42fcaf69ba58",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The supplied runner stdout supports the N=80 and N=100 table values for decoherence and Born cleanliness. The note also invokes an N=120 boundary check and a central-band/best-lane comparison that are not present in the allowed runner output, runner source, or cited authorities.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "asymmetry_persistence_joint_card_note",
-      "claim_scope": "Finite same-graph numerical card for asymmetry-persistence generated 3D graphs at N=80 and N=100, with pur_cl, pur_min, gravity, and corrected Born metrics under linear and layer-normalized propagation.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T17:54:00.001525+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "At dense N=80/100, the generated lane stays Born-clean and improves decoherence, but gravity is not robust enough for a gravity+decoherence joint-lane claim.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "meta",
       "max_descendant_status_rank": 25,
-      "note_hash": "42ed727dae63d87219874bb2f4bb04a22dbd4c79f98b4f025d96be63a723f147",
+      "note_hash": "b54c840f59c519baaff975e5497221fedd12a1e02be6d765770671203542a6ce",
       "note_path": "docs/ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - narrow the claim to the completed N=80/100 card or supply direct N=120 and central-band benchmark artifacts before re-audit.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -7487,6 +7478,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-17T11:57:51.158495+00:00",
+          "archived_for_note_hash": "42ed727dae63d87219874bb2f4bb04a22dbd4c79f98b4f025d96be63a723f147",
+          "audit_date": "2026-05-10T17:54:00.001525+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 1.5,
+            "runner_hash": "f70e612a5e327d92010c28353aecaf073f512aacfed8bccb0c906da4347d3d5a",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1304-7b0a-7d21-b282-42fcaf69ba58",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The supplied runner stdout supports the N=80 and N=100 table values for decoherence and Born cleanliness. The note also invokes an N=120 boundary check and a central-band/best-lane comparison that are not present in the allowed runner output, runner source, or cited authorities.",
+          "claim_scope": "Finite same-graph numerical card for asymmetry-persistence generated 3D graphs at N=80 and N=100, with pur_cl, pur_min, gravity, and corrected Born metrics under linear and layer-normalized propagation.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T17:54:00.001525+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "At dense N=80/100, the generated lane stays Born-clean and improves decoherence, but gravity is not robust enough for a gravity+decoherence joint-lane claim.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad - narrow the claim to the completed N=80/100 card or supply direct N=120 and central-band benchmark artifacts before re-audit.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the clean finite N=80/100 card is mixed with an unsupported N=120 boundary statement and an unsupported comparison to a central-band/best gravity+decoherence benchmark. Why this blocks: the claimed bounded range and joint-lane ranking cannot be derived from the restricted packet. Repair target: add the completed N=120 artifact and the benchmark authority as direct dependencies, or split the note so the audited claim is only the N=80/100 same-graph decoherence/Born card. Claim boundary until fixed: the supplied packet supports only the reported N=80/100 numerical table and its local decoherence/Born-clean interpretation."
         }
       ],
       "runner_check_breakdown": {
@@ -7497,9 +7529,9 @@
         "total_pass": 0
       },
       "runner_path": "scripts/asymmetry_persistence_joint_card.py",
-      "title": "Asymmetry Persistence Joint Card Note",
+      "title": "Asymmetry Persistence Joint Card Note \u2014 Narrowed to N=80/100 Cached Card",
       "transitive_descendants": 1,
-      "verdict_rationale": "Issue: the clean finite N=80/100 card is mixed with an unsupported N=120 boundary statement and an unsupported comparison to a central-band/best gravity+decoherence benchmark. Why this blocks: the claimed bounded range and joint-lane ranking cannot be derived from the restricted packet. Repair target: add the completed N=120 artifact and the benchmark authority as direct dependencies, or split the note so the audited claim is only the N=80/100 same-graph decoherence/Born card. Claim boundary until fixed: the supplied packet supports only the reported N=80/100 numerical table and its local decoherence/Born-clean interpretation."
+      "verdict_rationale": null
     },
     "asymmetry_persistence_mass_scaling_note": {
       "audit_date": "2026-05-10T18:00:22.379773+00:00",
@@ -33855,50 +33887,41 @@
       "verdict_rationale": null
     },
     "continuum_limit_note": {
-      "audit_date": "2026-05-11T15:29:55.925553+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 2.585,
-        "runner_hash": "86679fca90482739888400a1c0ba1b6770db68310e265f7140fd40963ed38da4",
-        "transitive_descendants": 2
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-2026-05-11",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The frozen completed log supports the finite-h table and 2.7% last-step weak-field change, but the source note does not supply a convergence theorem, error model, or registered completed cache/extrapolation that establishes the h->0 limit.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "continuum_limit_note",
-      "claim_scope": "Finite h^2+T-normalized dense-lattice numerical trend for h in {1.0,0.5,0.25,0.125}, including transfer norms, gravity direction, weak-field F~M exponents, Born checks where computed, and weak-field deflection changes; no analytic h->0 convergence theorem or controlled extrapolation below h=0.125 is audited.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T15:29:55.925553+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.585,
-      "load_bearing_step": "The weak-field deflection converges: only 2.7% change between h=0.25 and h=0.125, approaching a limit of approximately +0.014; therefore the model has a well-defined continuum limit in the weak-field regime.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "61323d65c991faf0da2a68a91d06fdc6de7bc1212cd259f7047caeef188e3681",
+      "note_hash": "b642993ba043e7b7c5328db7ab5ed2a571f6fbc5f1f690551785858f20e5f09d",
       "note_path": "docs/CONTINUUM_LIMIT_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the finite-h trend from the h->0 continuum claim, or provide a convergence theorem/controlled extrapolation plus completed registered cache for the long runner.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -34012,19 +34035,60 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the conclusion that a continuum limit exists is carried by selected finite-h numerical agreement and a last-step 2.7% change, not by a proof or controlled asymptotic extrapolation. Why this blocks: behavior at h=0.125 alone cannot establish the h -> 0 limit, especially with acknowledged boundary leakage, logarithmic T growth, skipped Born checks at finer h, and nonmonotone strong-field gravity. Repair target: provide a completed runner certificate or sliced computation plus an error model/asymptotic theorem bounding the weak-field deflection and mass-scaling limit as h decreases. Claim boundary until fixed: the note supports only a bounded numerical observation that this h^2/T normalization looks stable over the tested grid range."
+        },
+        {
+          "archived_at": "2026-05-17T11:57:51.159316+00:00",
+          "archived_for_note_hash": "61323d65c991faf0da2a68a91d06fdc6de7bc1212cd259f7047caeef188e3681",
+          "audit_date": "2026-05-11T15:29:55.925553+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 2.585,
+            "runner_hash": "86679fca90482739888400a1c0ba1b6770db68310e265f7140fd40963ed38da4",
+            "transitive_descendants": 2
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-2026-05-11",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The frozen completed log supports the finite-h table and 2.7% last-step weak-field change, but the source note does not supply a convergence theorem, error model, or registered completed cache/extrapolation that establishes the h->0 limit.",
+          "claim_scope": "Finite h^2+T-normalized dense-lattice numerical trend for h in {1.0,0.5,0.25,0.125}, including transfer norms, gravity direction, weak-field F~M exponents, Born checks where computed, and weak-field deflection changes; no analytic h->0 convergence theorem or controlled extrapolation below h=0.125 is audited.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T15:29:55.925553+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The weak-field deflection converges: only 2.7% change between h=0.25 and h=0.125, approaching a limit of approximately +0.014; therefore the model has a well-defined continuum limit in the weak-field regime.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the finite-h trend from the h->0 continuum claim, or provide a convergence theorem/controlled extrapolation plus completed registered cache for the long runner.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 2,
+            "D": 0,
+            "total_pass": 3
+          },
+          "verdict_rationale": "Issue: the finite log reaches h=0.125 and shows a plausible settling trend, but the note promotes this to a continuum-limit statement without an asymptotic error model, proof, or completed registered cache/extrapolation beyond h=0.125. Why this blocks: a 2.7% change between the last two sampled resolutions is evidence for a bounded finite-resolution trend, not a closed h->0 theorem. Repair target: split the finite-h numerical observation from the continuum-limit claim, or add a retained convergence theorem / sliced h<=0.06 computation with controlled extrapolation and a completed SHA-pinned runner-cache artifact. Claim boundary until fixed: the h^2+T kernel has a supported finite-resolution weak-field trend and approximate F~M scaling on the displayed grid, but the continuum-limit theorem remains conditional."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 1,
-        "C": 2,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 3
+        "total_pass": 0
       },
       "runner_path": "scripts/lattice_h2_T_numpy_continuum.py",
-      "title": "Continuum Limit via h^2 Measure",
+      "title": "Continuum Limit via h^2 Measure \u2014 Finite-h Trend Table (Binding)",
       "transitive_descendants": 2,
-      "verdict_rationale": "Issue: the finite log reaches h=0.125 and shows a plausible settling trend, but the note promotes this to a continuum-limit statement without an asymptotic error model, proof, or completed registered cache/extrapolation beyond h=0.125. Why this blocks: a 2.7% change between the last two sampled resolutions is evidence for a bounded finite-resolution trend, not a closed h->0 theorem. Repair target: split the finite-h numerical observation from the continuum-limit claim, or add a retained convergence theorem / sliced h<=0.06 computation with controlled extrapolation and a completed SHA-pinned runner-cache artifact. Claim boundary until fixed: the h^2+T kernel has a supported finite-resolution weak-field trend and approximate F~M scaling on the displayed grid, but the continuum-limit theorem remains conditional."
+      "verdict_rationale": null
     },
     "conventions_unification_companion_note_2026-05-08": {
       "audit_date": null,
@@ -42865,41 +42929,24 @@
       "verdict_rationale": null
     },
     "dm_abcc_signature_forcing_theorem_note_2026-04-19": {
-      "audit_date": "2026-05-10T15:56:26.585240+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "Conditional IVT sign-preservation theorem for the stated linear Hermitian DM source path: PNS plus det(H_base)>0 implies endpoint determinant positivity; PNS itself and exhaustive physical-basin uniqueness are not derived."
-        },
-        "dep_claim_type": {
-          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "retained_bounded"
-        },
-        "deps": [
-          "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19"
-        ],
-        "load_bearing_score": 8.959,
-        "runner_hash": "eb0bb7ba0ec048a6fb3b63499b3e64cb46a39ed0f3fa37d9b6e78006b075e5ae",
-        "transitive_descendants": 351
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1298-3e18-7701-89cc-22234dbef680",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The distinct-component argument closes for endpoints whose signatures are independently established, including the listed Basin 2/X numerical endpoints. The note's broader claims that determinant-defined C_base/C_neg are single signature chambers and that arbitrary paths have exactly one zero crossing are supported only by finite scans/reparameterized line checks and are not proved by the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_abcc_signature_forcing_theorem_note_2026-04-19",
-      "claim_scope": "Audited the bounded Sylvester path-obstruction claim for the stated H_base/Basin 2/Basin X endpoints and the note's extension to a global C_base/C_neg chamber and spectral-flow statement.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T15:56:26.585240+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -42907,18 +42954,18 @@
         "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.646,
-      "load_bearing_step": "By Lemma 3, gamma(0) has signature (1,0,2) and gamma(1) has signature (2,0,1); these are distinct connected components of GL(Herm_3), so gamma must exit GL(Herm_3) at det=0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "72ad4dc0c06e0d2262f455db33a539d637fc503992db5e73dfebc0d8d1d432b2",
+      "note_hash": "1ec97a0380088b1c27a28b73d87633514cf513985cbc53505c13a1bc645928b7",
       "note_path": "docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - restrict the note to the listed endpoint signature-forcing theorem or supply a global chamber proof for the whole DM parameter domain; also update PASS=54 to the current PASS=43 and change 'exactly one crossing' to net spectral flow/at least one crossing for arbitrary paths.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -43017,19 +43064,68 @@
             "total_pass": 43
           },
           "verdict_rationale": "Issue: The proof's load-bearing endpoint step depends on Lemma 3 identifying C_neg = {det(H_base + J) < 0} with signature (2,0,1), but the note supports that global chamber claim by finite scans plus a one-axis formula, not a full theorem over the chi^2=0 source family. Why this blocks: Sylvester forces a det=0 crossing only between distinct inertia components; det<0 alone for a 3x3 Hermitian matrix does not by itself exclude other signatures, and PNS is explicitly left as an external physical input. Repair target: prove the full C_neg endpoint-signature theorem over the retained DM A-BCC parameter domain, and separately retain or state PNS as an explicit open gate; update the runner/note mismatch because the current runner reports PASS=43 FAIL=0 while the note says PASS=54 FAIL=0. Claim boundary until fixed: The note may safely claim the conditional Sylvester fact for any endpoint already proven to have signature (2,0,1), including the checked Basin 2 and Basin X instances, but not an unconditional retained A-BCC theorem for all det<0 physical endpoints."
+        },
+        {
+          "archived_at": "2026-05-17T11:57:51.159518+00:00",
+          "archived_for_note_hash": "72ad4dc0c06e0d2262f455db33a539d637fc503992db5e73dfebc0d8d1d432b2",
+          "audit_date": "2026-05-10T15:56:26.585240+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "Conditional IVT sign-preservation theorem for the stated linear Hermitian DM source path: PNS plus det(H_base)>0 implies endpoint determinant positivity; PNS itself and exhaustive physical-basin uniqueness are not derived."
+            },
+            "dep_claim_type": {
+              "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19": "retained_bounded"
+            },
+            "deps": [
+              "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19"
+            ],
+            "load_bearing_score": 8.959,
+            "runner_hash": "eb0bb7ba0ec048a6fb3b63499b3e64cb46a39ed0f3fa37d9b6e78006b075e5ae",
+            "transitive_descendants": 351
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1298-3e18-7701-89cc-22234dbef680",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The distinct-component argument closes for endpoints whose signatures are independently established, including the listed Basin 2/X numerical endpoints. The note's broader claims that determinant-defined C_base/C_neg are single signature chambers and that arbitrary paths have exactly one zero crossing are supported only by finite scans/reparameterized line checks and are not proved by the restricted packet.",
+          "claim_scope": "Audited the bounded Sylvester path-obstruction claim for the stated H_base/Basin 2/Basin X endpoints and the note's extension to a global C_base/C_neg chamber and spectral-flow statement.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T15:56:26.585240+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "By Lemma 3, gamma(0) has signature (1,0,2) and gamma(1) has signature (2,0,1); these are distinct connected components of GL(Herm_3), so gamma must exit GL(Herm_3) at det=0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "scope_too_broad - restrict the note to the listed endpoint signature-forcing theorem or supply a global chamber proof for the whole DM parameter domain; also update PASS=54 to the current PASS=43 and change 'exactly one crossing' to net spectral flow/at least one crossing for arbitrary paths.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 43,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 43
+          },
+          "verdict_rationale": "Issue: the proof promotes checked endpoint signatures and finite region scans into a universal chamber theorem, and it states total spectral-flow uniqueness for arbitrary paths where only net spectral flow/at least one crossing follows. Why this blocks: the advertised path-independent C_neg/C_base and exactly-one crossing conclusions are broader than the theorem and runner establish; the runner also disagrees with the note's PASS=54 by reporting PASS=43. Repair target: add an algebraic proof of the full parameter-domain chamber classification and correct the spectral-flow wording and runner count, or split out the clean Basin 2/X endpoint theorem. Claim boundary until fixed: H_base and the listed Basin 2/X endpoints have different inertias, so any continuous Hermitian path to those listed endpoints must hit det=0."
         }
       ],
       "runner_check_breakdown": {
-        "A": 43,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 43
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_abcc_signature_forcing_theorem.py",
-      "title": "DM A-BCC: Sylvester Signature-Forcing Theorem",
+      "title": "DM A-BCC: Sylvester Signature-Forcing Theorem (Listed-Endpoint Scope)",
       "transitive_descendants": 800,
-      "verdict_rationale": "Issue: the proof promotes checked endpoint signatures and finite region scans into a universal chamber theorem, and it states total spectral-flow uniqueness for arbitrary paths where only net spectral flow/at least one crossing follows. Why this blocks: the advertised path-independent C_neg/C_base and exactly-one crossing conclusions are broader than the theorem and runner establish; the runner also disagrees with the note's PASS=54 by reporting PASS=43. Repair target: add an algebraic proof of the full parameter-domain chamber classification and correct the spectral-flow wording and runner count, or split out the clean Basin 2/X endpoint theorem. Claim boundary until fixed: H_base and the listed Basin 2/X endpoints have different inertias, so any continuous Hermitian path to those listed endpoints must hit det=0."
+      "verdict_rationale": null
     },
     "dm_candidate_mass_window_theorem_note_2026-04-19": {
       "audit_date": null,
@@ -93104,50 +93200,41 @@
       "verdict_rationale": "The audited claim is explicitly bounded to the conditional implication under the stipulated closure identity. The load-bearing step is a genuine class-A algebraic inversion over the stated hypotheses, so the scoped conclusion closes. No runner stdout or runner source was supplied, so the numerical checks described inside the note are not credited; they are also not necessary for the scoped algebraic implication. The bridge theorem deriving A2 from A1 remains outside this row's clean scope."
     },
     "gravity_law_cleanup_note": {
-      "audit_date": "2026-05-10T15:15:27.467930+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 9.964,
-        "runner_hash": "caebed0844eda3827a918d70657dd54d2bf29f581412a2ea0335e15c56a90821",
-        "transitive_descendants": 352
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1273-7c33-7760-9aff-834c0157e93c",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The no-power-law/null part closes from the runner output: the observed maximum is at b=12 and there are no falling-tail points. The stronger wording that the signal is statistically real and peaked does not close, because the selected maximum is at the endpoint of a searched window and no predeclared or multiplicity-adjusted significance criterion is supplied.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gravity_law_cleanup_note",
-      "claim_scope": "Audited whether the supplied fixed-geometry runner/stdout supports a positive generated-DAG distance response on b={2,4,6,8,10,12} and no promoted distance or mass force-law.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T15:15:27.467930+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.146,
-      "load_bearing_step": "The bounded null-result holds from the primary-runner cache alone: a peaked positive distance response with no review-safe falling-tail fit on the cached b window.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "efa9de30c111f106b2932cbdd18ee5c8744d4b9d01b06bcda5b73f83f07a2058",
+      "note_hash": "d7814ad7bf67709f7aa7950db90bcb51ac14fb5f22a13c94834a27d77ecdd5d7",
       "note_path": "docs/GRAVITY_LAW_CLEANUP_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad \u2014 narrow to raw runner rows plus no review-safe falling-tail fit, or supply a prespecified multiplicity-aware significance test and extended distance sweep.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -93254,19 +93341,60 @@
             "total_pass": 1
           },
           "verdict_rationale": "Issue: the note's load-bearing cleanup rests on specific controlled distance, mass, and channel reruns, but the supplied primary runner stdout uses different distance parameters and does not reproduce the claimed tail fit, while mass and channel results are not supplied. Why this blocks: the bounded conclusion is computational, so the packet must contain the completed matching runs or certificates for each asserted replacement. Repair target: provide runner outputs or cached certificates matching the note's stated parameter sets for distance, fixed-anchor mass scaling, and channel observables. Claim boundary until fixed: only the narrower supplied runner result is supported, namely a fixed-geometry distance scan with positive deflection at larger tested b values but no review-safe falling-tail law."
+        },
+        {
+          "archived_at": "2026-05-17T11:57:51.160575+00:00",
+          "archived_for_note_hash": "efa9de30c111f106b2932cbdd18ee5c8744d4b9d01b06bcda5b73f83f07a2058",
+          "audit_date": "2026-05-10T15:15:27.467930+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 9.964,
+            "runner_hash": "caebed0844eda3827a918d70657dd54d2bf29f581412a2ea0335e15c56a90821",
+            "transitive_descendants": 352
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1273-7c33-7760-9aff-834c0157e93c",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The no-power-law/null part closes from the runner output: the observed maximum is at b=12 and there are no falling-tail points. The stronger wording that the signal is statistically real and peaked does not close, because the selected maximum is at the endpoint of a searched window and no predeclared or multiplicity-adjusted significance criterion is supplied.",
+          "claim_scope": "Audited whether the supplied fixed-geometry runner/stdout supports a positive generated-DAG distance response on b={2,4,6,8,10,12} and no promoted distance or mass force-law.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T15:15:27.467930+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The bounded null-result holds from the primary-runner cache alone: a peaked positive distance response with no review-safe falling-tail fit on the cached b window.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad \u2014 narrow to raw runner rows plus no review-safe falling-tail fit, or supply a prespecified multiplicity-aware significance test and extended distance sweep.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "Issue: the runner supports raw positive means at b=10 and b=12 plus no review-safe falling-tail fit, but not a Nature-grade claim of a real peak or statistically real signal after searching the b window. Why this blocks: the source note's safe null-result is mixed with an overstrong significance/peak inference. Repair target: either narrow the wording to the raw cached rows and absence of a tail fit, or add a prespecified significance procedure and extended sweep demonstrating a true peak/falling tail. Claim boundary until fixed: exact force-law scaling remains unresolved and only the cached nominal response curve is supported."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
       "runner_path": "scripts/gravity_distance_fixed_geometry.py",
       "title": "Gravity Law Cleanup Note",
       "transitive_descendants": 800,
-      "verdict_rationale": "Issue: the runner supports raw positive means at b=10 and b=12 plus no review-safe falling-tail fit, but not a Nature-grade claim of a real peak or statistically real signal after searching the b window. Why this blocks: the source note's safe null-result is mixed with an overstrong significance/peak inference. Repair target: either narrow the wording to the raw cached rows and absence of a tail fit, or add a prespecified significance procedure and extended sweep demonstrating a true peak/falling tail. Claim boundary until fixed: exact force-law scaling remains unresolved and only the cached nominal response curve is supported."
+      "verdict_rationale": null
     },
     "gravity_observable_hierarchy_note": {
       "audit_date": "2026-05-10T17:18:54.923403+00:00",
@@ -180139,50 +180267,41 @@
       "verdict_rationale": null
     },
     "retardation_discriminator_note": {
-      "audit_date": "2026-05-11T15:53:49.468440+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 1.5,
-        "runner_hash": "d273812c1b90e7919972bf4bea1b751560f221803ffe293db7ec295205c0a82c",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite archived harness supports a delay-dependent toy observable, but the registered live cache times out, the runner lacks assertion gates, and the note's broader discriminator/exclusion-class language is not backed by a theorem over instantaneous emulator models. The displayed delay law is also not strictly monotone at the largest delay.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "retardation_discriminator_note",
-      "claim_scope": "Finite oscillating-source toy-harness result: the archived run shows delayed and instantaneous response curves differ, with exact/null controls to floating precision, sign split near f=0.15 for d>=5, family/seed robustness, and a failed global-delay fit.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T15:53:49.468440+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "The archived harness shows retarded minus instantaneous phase differences across frequency and delay, including nulls at f=0/d=0 and sign-split behavior at f=0.15 for delays at least 5.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "ed5ad3ef1568c3ae38821196c5da1a90db10086e7eba5768b9aeac7b927b4650",
+      "note_hash": "53afa6304cb31ce0f9f7b13947380e8577f5bf22e9b2eb9fa238e5237c379863",
       "note_path": "docs/RETARDATION_DISCRIMINATOR_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: split/retain the finite toy-harness result with assertion gates, and audit any no-instantaneous-emulator theorem separately.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -180248,6 +180367,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: The source and frozen log show a delayed-source toy harness with nonzero frequency- and delay-dependent phase differences, but the canonical script has no PASS/FAIL assertion contract and the live audit run did not complete the full global-delay/family/seed sections before interruption after more than ten minutes. Why this blocks: a finite parameter sweep in one implemented propagation model does not by itself prove a retained, portable observable or rule out all instantaneous responses with memory, phase offsets, or fitted transfer functions. Repair target: add a fast deterministic runner with explicit assertions for the nulls, delay law, family/seed robustness, and global-delay fit residual, and add a theorem specifying the model class in which no instantaneous/static response can reproduce the first-harmonic delayed-response observable. Claim boundary until fixed: it is safe to claim that the frozen harness output and partial live run show a delayed-vs-instantaneous phase difference for the stated oscillating-source model and parameters; it is not safe to claim a retained general finite-propagation discriminator across physical response models."
+        },
+        {
+          "archived_at": "2026-05-17T11:57:51.162668+00:00",
+          "archived_for_note_hash": "ed5ad3ef1568c3ae38821196c5da1a90db10086e7eba5768b9aeac7b927b4650",
+          "audit_date": "2026-05-11T15:53:49.468440+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 1.5,
+            "runner_hash": "d273812c1b90e7919972bf4bea1b751560f221803ffe293db7ec295205c0a82c",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite archived harness supports a delay-dependent toy observable, but the registered live cache times out, the runner lacks assertion gates, and the note's broader discriminator/exclusion-class language is not backed by a theorem over instantaneous emulator models. The displayed delay law is also not strictly monotone at the largest delay.",
+          "claim_scope": "Finite oscillating-source toy-harness result: the archived run shows delayed and instantaneous response curves differ, with exact/null controls to floating precision, sign split near f=0.15 for d>=5, family/seed robustness, and a failed global-delay fit.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T15:53:49.468440+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The archived harness shows retarded minus instantaneous phase differences across frequency and delay, including nulls at f=0/d=0 and sign-split behavior at f=0.15 for delays at least 5.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad: split/retain the finite toy-harness result with assertion gates, and audit any no-instantaneous-emulator theorem separately.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the frozen log supports the finite delayed-vs-instantaneous toy-harness signal, but the note presents a portable discriminator and qualitative no-instantaneous/static exclusion beyond the asserted finite replay; the live audit cache has no completed stdout and the runner has no hard checks. Why this blocks: retained-bounded status for the broader discriminator would require either a completed assertion runner or a formal model-class theorem excluding instantaneous emulators, not just the printed finite curves. Repair target: add a fast deterministic assertion runner for nulls, delay/frequency tables, portability, seed robustness, and fit residuals, and separately prove the instantaneous/static model-class exclusion. Claim boundary until fixed: the archived finite harness shows a delay-dependent phase-response difference in this implemented toy model only."
         }
       ],
       "runner_check_breakdown": {
@@ -180258,9 +180418,9 @@
         "total_pass": 0
       },
       "runner_path": "scripts/retardation_discriminator.py",
-      "title": "Retardation Discriminator: Oscillating Source",
+      "title": "Retardation Discriminator: Oscillating Source \u2014 Finite Toy-Harness Result",
       "transitive_descendants": 1,
-      "verdict_rationale": "Issue: the frozen log supports the finite delayed-vs-instantaneous toy-harness signal, but the note presents a portable discriminator and qualitative no-instantaneous/static exclusion beyond the asserted finite replay; the live audit cache has no completed stdout and the runner has no hard checks. Why this blocks: retained-bounded status for the broader discriminator would require either a completed assertion runner or a formal model-class theorem excluding instantaneous emulators, not just the printed finite curves. Repair target: add a fast deterministic assertion runner for nulls, delay/frequency tables, portability, seed robustness, and fit residuals, and separately prove the instantaneous/static model-class exclusion. Claim boundary until fixed: the archived finite harness shows a delay-dependent phase-response difference in this implemented toy model only."
+      "verdict_rationale": null
     },
     "retarded_field_causality_probe_note": {
       "audit_date": "2026-05-04T23:31:09.124684+00:00",
@@ -229950,49 +230110,24 @@
       "verdict_rationale": null
     },
     "wilson_test_mass_continuum_note_2026-04-11": {
-      "audit_date": "2026-05-11T15:11:32.005786+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_claim_scope": {
-          "staggered_newton_blocking_sensitivity_note_2026-04-11": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-          "staggered_newton_reproduction_note_2026-04-11": "Open 3D staggered cubic lattices with sides 12, 14, and 16, imposed external V~-1/r source, mass 0.30, sigma 1.30, d=3..6, dt 0.10, 12 steps, and 2x2x2 blocked-centroid trajectory readout.",
-          "wilson_normalization_reconciliation_note_2026-04-11": null
-        },
-        "dep_claim_type": {
-          "staggered_newton_blocking_sensitivity_note_2026-04-11": "bounded_theorem",
-          "staggered_newton_reproduction_note_2026-04-11": "bounded_theorem",
-          "wilson_normalization_reconciliation_note_2026-04-11": "meta"
-        },
-        "dep_effective_status": {
-          "staggered_newton_blocking_sensitivity_note_2026-04-11": "retained_bounded",
-          "staggered_newton_reproduction_note_2026-04-11": "retained_bounded",
-          "wilson_normalization_reconciliation_note_2026-04-11": "meta"
-        },
-        "deps": [
-          "staggered_newton_blocking_sensitivity_note_2026-04-11",
-          "staggered_newton_reproduction_note_2026-04-11",
-          "wilson_normalization_reconciliation_note_2026-04-11"
-        ],
-        "load_bearing_score": 4.085,
-        "runner_hash": null,
-        "transitive_descendants": 11
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-2026-05-11",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite runner outputs support the bounded Wilson companion, but the continuum-limit reading does not close as a model-independent asymptotic result because the completed runner's fixed-p extrapolations disagree with the favorable p-free extrapolation summarized in the note.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "wilson_test_mass_continuum_note_2026-04-11",
-      "claim_scope": "Low-screening open-Wilson same-convention numerical companion: completed test-mass and perturbative runners show source-mass/G scaling, and the continuum runner reports finite-size exponents through L=25 plus a p-free extrapolation near -2; no full two-body, action-reaction, or architecture-independent Newton closure is audited.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-11T15:11:32.005786+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -230002,33 +230137,91 @@
         "staggered_newton_blocking_sensitivity_note_2026-04-11"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 4.085,
-      "load_bearing_step": "On the low-screening open-Wilson surface, the test-mass and continuum-limit companions support a Newton-compatible distance law and exact source-mass scaling within the shared Wilson convention, while full both-masses closure remains open.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "81613dbe5e030ba4120383ffd9c62efd6ab73abfbfd07b38a44fe21d628f76b3",
+      "note_hash": "5ff368956d47a84a8d920ce01f8f1ccaef1a6bca89e3763e00af65d46fdc0cb5",
       "note_path": "docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md",
-      "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the finite open-Wilson numerical companion from the asymptotic continuum-limit extrapolation, or justify the extrapolation model selection explicitly before re-audit.",
-      "open_dependency_paths": [
-        "docs/WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-17T11:57:51.166661+00:00",
+          "archived_for_note_hash": "81613dbe5e030ba4120383ffd9c62efd6ab73abfbfd07b38a44fe21d628f76b3",
+          "audit_date": "2026-05-11T15:11:32.005786+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_claim_scope": {
+              "staggered_newton_blocking_sensitivity_note_2026-04-11": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+              "staggered_newton_reproduction_note_2026-04-11": "Open 3D staggered cubic lattices with sides 12, 14, and 16, imposed external V~-1/r source, mass 0.30, sigma 1.30, d=3..6, dt 0.10, 12 steps, and 2x2x2 blocked-centroid trajectory readout.",
+              "wilson_normalization_reconciliation_note_2026-04-11": null
+            },
+            "dep_claim_type": {
+              "staggered_newton_blocking_sensitivity_note_2026-04-11": "bounded_theorem",
+              "staggered_newton_reproduction_note_2026-04-11": "bounded_theorem",
+              "wilson_normalization_reconciliation_note_2026-04-11": "meta"
+            },
+            "dep_effective_status": {
+              "staggered_newton_blocking_sensitivity_note_2026-04-11": "retained_bounded",
+              "staggered_newton_reproduction_note_2026-04-11": "retained_bounded",
+              "wilson_normalization_reconciliation_note_2026-04-11": "meta"
+            },
+            "deps": [
+              "staggered_newton_blocking_sensitivity_note_2026-04-11",
+              "staggered_newton_reproduction_note_2026-04-11",
+              "wilson_normalization_reconciliation_note_2026-04-11"
+            ],
+            "load_bearing_score": 4.085,
+            "runner_hash": null,
+            "transitive_descendants": 11
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-2026-05-11",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite runner outputs support the bounded Wilson companion, but the continuum-limit reading does not close as a model-independent asymptotic result because the completed runner's fixed-p extrapolations disagree with the favorable p-free extrapolation summarized in the note.",
+          "claim_scope": "Low-screening open-Wilson same-convention numerical companion: completed test-mass and perturbative runners show source-mass/G scaling, and the continuum runner reports finite-size exponents through L=25 plus a p-free extrapolation near -2; no full two-body, action-reaction, or architecture-independent Newton closure is audited.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T15:11:32.005786+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "On the low-screening open-Wilson surface, the test-mass and continuum-limit companions support a Newton-compatible distance law and exact source-mass scaling within the shared Wilson convention, while full both-masses closure remains open.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the finite open-Wilson numerical companion from the asymptotic continuum-limit extrapolation, or justify the extrapolation model selection explicitly before re-audit.",
+          "open_dependency_paths": [
+            "docs/WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 3,
+            "D": 0,
+            "total_pass": 3
+          },
+          "verdict_rationale": "Issue: the source note promotes the p-free continuum extrapolation alpha_inf = -2.009 +/- 0.019 as the continuum-limit reading while the completed runner also reports fixed p=1 and p=2 extrapolations that are several sigma away from -2. Why this blocks: without a retained model-selection/asymptotic-correction argument, a hostile reviewer can reject the continuum-limit claim as depending on the favorable extrapolation ansatz even though the finite L table is real. Repair target: either split the finite-run Wilson companion from the continuum-limit extrapolation, or add a theorem/runner criterion that justifies the free-p correction model over the fixed-p alternatives. Claim boundary until fixed: the completed low-screening open-Wilson runners support same-convention finite-size Newton-compatible scaling and source-mass linearity, but not a model-independent continuum-limit theorem or full Newton closure."
+        }
       ],
-      "previous_audits": [],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 3,
+        "C": 0,
         "D": 0,
-        "total_pass": 3
+        "total_pass": 0
       },
       "runner_path": null,
-      "title": "Wilson Test-Mass / Continuum Companion",
+      "title": "Wilson Test-Mass / Finite-L Distance-Law Companion",
       "transitive_descendants": 11,
-      "verdict_rationale": "Issue: the source note promotes the p-free continuum extrapolation alpha_inf = -2.009 +/- 0.019 as the continuum-limit reading while the completed runner also reports fixed p=1 and p=2 extrapolations that are several sigma away from -2. Why this blocks: without a retained model-selection/asymptotic-correction argument, a hostile reviewer can reject the continuum-limit claim as depending on the favorable extrapolation ansatz even though the finite L table is real. Repair target: either split the finite-run Wilson companion from the continuum-limit extrapolation, or add a theorem/runner criterion that justifies the free-p correction model over the fixed-p alternatives. Claim boundary until fixed: the completed low-screening open-Wilson runners support same-convention finite-size Newton-compatible scaling and source-mass linearity, but not a model-independent continuum-limit theorem or full Newton closure."
+      "verdict_rationale": null
     },
     "wilson_two_body_open_note_2026-04-11": {
       "audit_date": "2026-05-11T14:59:19.304725+00:00",
@@ -241903,8 +242096,8 @@
     "dropped_total": 0,
     "preserved_archived_failed": 44,
     "preserved_existing": 2086,
-    "re_audit_required": 5,
+    "re_audit_required": 6,
     "row_count": 2136,
-    "seeded_new": 1
+    "seeded_new": 0
   }
 }

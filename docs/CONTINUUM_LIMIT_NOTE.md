@@ -1,8 +1,37 @@
-# Continuum Limit via h^2 Measure
+# Continuum Limit via h^2 Measure — Finite-h Trend Table (Binding)
 
-**Date:** 2026-04-05
-**Status:** proposed_retained positive — weak-field deflection converges (3% change h=0.25 to h=0.125), F~M brackets 1.000
+**Date:** 2026-04-05 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: finite-h trend table is the binding evidence; the h → 0 continuum-limit claim is demoted to diagnostic-only without a separately retained convergence theorem or extended sliced extrapolation)
+**Status:** bounded finite-h trend note — weak-field deflection shows
+2.7% change between `h = 0.25` and `h = 0.125` in the cached size
+sweep; the h → 0 convergence statement is **not** part of the binding
+scope without a separately retained convergence theorem.
 **Claim type:** bounded_theorem
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"split the finite-h trend
+from the h → 0 continuum claim, or provide a convergence theorem /
+controlled extrapolation plus completed registered cache for the long
+runner."*
+
+This revision takes the splitting option. The binding evidence of
+this note is exactly the **finite-h trend table** on the cached size
+sweep `h ∈ {1.0, 0.5, 0.25, 0.125}` of the registered runner
+`scripts/lattice_h2_T_numpy_continuum.py`, with the descriptive
+observation that the weak-field deflection changes by 2.7% between
+`h = 0.25` and `h = 0.125`, and the `F~M` exponent table that
+brackets 1.000 within the same cached range.
+
+The §"What this means" continuum-limit interpretive language is
+**demoted to diagnostic-only**, out of the binding audited scope of
+this note. Any promotion of the **h → 0 continuum-limit** statement
+requires a separately retained convergence theorem (analytic error
+model, asymptotic bound) or an extended sliced computation with
+controlled extrapolation beyond `h = 0.125`. Neither is supplied
+here. The "Honest limitations" section's `h ≤ 0.06` boundary-leakage
+issue further underscores why the finite-h trend cannot be
+extrapolated to the strict continuum without separate work.
 
 **Audit-conditional perimeter (2026-05-09):**
 The current generated audit ledger records this row `audited_numerical_match` with
@@ -170,13 +199,25 @@ h=0.125, approaching a limit of approximately +0.014.
 4. **Only tested down to h=0.125.** The convergence is strong (2.7%
    change) but not yet at the < 1% level needed for a definitive claim.
 
-## What this means
+## Diagnostic-only interpretive readout (out of audited scope)
 
-The model has a well-defined continuum limit in the weak-field regime:
-- Newtonian mass scaling (F~M = 1.0)
-- Phase-mediated gravity (k=0 gives zero deflection)
-- Born rule (I3 = 0 at machine precision)
-- Finite, convergent gravitational deflection
+> **Status note:** This subsection is **out of the binding audited
+> scope** of the present revision per the 2026-05-17 narrowing. It
+> records the interpretive readout one would obtain if a separate
+> retained convergence theorem closed the h → 0 limit. No such
+> theorem is currently retained.
 
-The remaining issue is purely technical (boundary leakage), not physical.
-A per-node T normalization would solve it and enable h -> 0 cleanly.
+On the finite-h cached sweep, the trend is **consistent with** a
+continuum-limit interpretation in the weak-field regime:
+- finite-h `F~M` exponent table brackets 1.0
+- `k = 0` rows of the cached gravity table give zero deflection
+- I₃ = 0 at machine precision on the cached rows
+- finite-h gravitational deflection shows 2.7% change between
+  `h = 0.25` and `h = 0.125`
+
+These observations are not load-bearing for an h → 0 statement;
+boundary leakage worsens at finer h (cache hits machine zero around
+`h ~ 0.06`), and the cached sweep does not reach the < 1% per-step
+threshold a definitive claim would require. A retained continuum-
+limit claim requires the separately retained convergence theorem
+named above.

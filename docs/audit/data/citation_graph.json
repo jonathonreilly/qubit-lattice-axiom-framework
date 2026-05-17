@@ -38257,12 +38257,12 @@
       "claim_id": "asymmetry_persistence_joint_card_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "42ed727dae63d87219874bb2f4bb04a22dbd4c79f98b4f025d96be63a723f147",
+      "note_hash": "b54c840f59c519baaff975e5497221fedd12a1e02be6d765770671203542a6ce",
       "path": "docs/ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_joint_card.py",
-      "title": "Asymmetry Persistence Joint Card Note"
+      "title": "Asymmetry Persistence Joint Card Note \u2014 Narrowed to N=80/100 Cached Card"
     },
     "asymmetry_persistence_mass_scaling_note": {
       "claim_id": "asymmetry_persistence_mass_scaling_note",
@@ -41948,10 +41948,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "61323d65c991faf0da2a68a91d06fdc6de7bc1212cd259f7047caeef188e3681",
+      "note_hash": "b642993ba043e7b7c5328db7ab5ed2a571f6fbc5f1f690551785858f20e5f09d",
       "path": "docs/CONTINUUM_LIMIT_NOTE.md",
       "runner_path": "scripts/lattice_h2_T_numpy_continuum.py",
-      "title": "Continuum Limit via h^2 Measure"
+      "title": "Continuum Limit via h^2 Measure \u2014 Finite-h Trend Table (Binding)"
     },
     "conventions_unification_companion_note_2026-05-08": {
       "claim_id": "conventions_unification_companion_note_2026-05-08",
@@ -42943,10 +42943,10 @@
       "deps": [
         "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19"
       ],
-      "note_hash": "72ad4dc0c06e0d2262f455db33a539d637fc503992db5e73dfebc0d8d1d432b2",
+      "note_hash": "1ec97a0380088b1c27a28b73d87633514cf513985cbc53505c13a1bc645928b7",
       "path": "docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_dm_abcc_signature_forcing_theorem.py",
-      "title": "DM A-BCC: Sylvester Signature-Forcing Theorem"
+      "title": "DM A-BCC: Sylvester Signature-Forcing Theorem (Listed-Endpoint Scope)"
     },
     "dm_candidate_mass_window_theorem_note_2026-04-19": {
       "claim_id": "dm_candidate_mass_window_theorem_note_2026-04-19",
@@ -49021,7 +49021,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "efa9de30c111f106b2932cbdd18ee5c8744d4b9d01b06bcda5b73f83f07a2058",
+      "note_hash": "d7814ad7bf67709f7aa7950db90bcb51ac14fb5f22a13c94834a27d77ecdd5d7",
       "path": "docs/GRAVITY_LAW_CLEANUP_NOTE.md",
       "runner_path": "scripts/gravity_distance_fixed_geometry.py",
       "title": "Gravity Law Cleanup Note"
@@ -63262,10 +63262,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "ed5ad3ef1568c3ae38821196c5da1a90db10086e7eba5768b9aeac7b927b4650",
+      "note_hash": "53afa6304cb31ce0f9f7b13947380e8577f5bf22e9b2eb9fa238e5237c379863",
       "path": "docs/RETARDATION_DISCRIMINATOR_NOTE.md",
       "runner_path": "scripts/retardation_discriminator.py",
-      "title": "Retardation Discriminator: Oscillating Source"
+      "title": "Retardation Discriminator: Oscillating Source \u2014 Finite Toy-Harness Result"
     },
     "retarded_field_causality_probe_note": {
       "claim_id": "retarded_field_causality_probe_note",
@@ -69451,10 +69451,10 @@
         "staggered_newton_reproduction_note_2026-04-11",
         "staggered_newton_blocking_sensitivity_note_2026-04-11"
       ],
-      "note_hash": "81613dbe5e030ba4120383ffd9c62efd6ab73abfbfd07b38a44fe21d628f76b3",
+      "note_hash": "5ff368956d47a84a8d920ce01f8f1ccaef1a6bca89e3763e00af65d46fdc0cb5",
       "path": "docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md",
       "runner_path": null,
-      "title": "Wilson Test-Mass / Continuum Companion"
+      "title": "Wilson Test-Mass / Finite-L Distance-Law Companion"
     },
     "wilson_two_body_open_note_2026-04-11": {
       "claim_id": "wilson_two_body_open_note_2026-04-11",
@@ -72166,11 +72166,11 @@
       "positive_theorem": 151
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 839,
+      "bounded_theorem": 840,
       "decoration": 1,
       "meta": 75,
       "no_go": 157,
-      "none": 445,
+      "none": 444,
       "open_gate": 123,
       "positive_theorem": 607
     },

@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block130.
+Status: exact negative boundary plus bounded support through Block131.
 
 `proposed_retained`: not allowed.
 
@@ -61,7 +61,15 @@ observed finite rows while changing both the H4 normalized source coupling and
 the H3 off-diagonal transfer content.  Its eta counterfamily also fixes the
 admitted source self block and H1/H2 triplet block while varying the
 source-triplet coupling from zero to nonzero, with zero strict neutral keys in
-214 raw `ensemble_measurement.json` files.
+214 raw `ensemble_measurement.json` files.  Block131 then pivots back to the
+action-first source-Higgs route on the post-Block130 surface.  It finds no
+accepted same-surface canonical `O_H`/action authority, no nonempty numeric
+`C_ss/C_sH/C_HH` pole-residue rows, no nonempty strict action/pole keys in the
+completed raw higher-shell files, and no strict packet sidecar.  Holding the
+Block126 top response fixed at `dE_top/ds=1.245693776284446`, two Gram-pure
+non-authority residue packets give `y_H=1.245693776284446` and
+`y_H=2.491387552568892`, so current support does not identify a unique
+source-Higgs readout without the missing accepted action/`O_H` and pole rows.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -93,6 +101,10 @@ source-triplet coupling from zero to nonzero, with zero strict neutral keys in
 - no finite-row neutral shortcut after Block130: the current equal-time
   `C_ss/C_sx/C_xx` packet admits hidden-neutral completions that preserve the
   observed rows while changing H3/H4.
+- no action-first construction after Block131: the post-Block130 surface still
+  lacks accepted same-surface canonical `O_H`/action/LSZ authority and nonempty
+  numeric `C_ss/C_sH/C_HH` pole-residue rows, and the Block126 readout witness
+  changes `y_H` while current finite support is fixed.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an
   allowed W/Z absolute pin is supplied.

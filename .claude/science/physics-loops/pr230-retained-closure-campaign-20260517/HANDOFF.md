@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block130-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block131-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -22,6 +22,8 @@ Stacked review PR for Block129:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1476
 Stacked review PR for Block130:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1479
+Stacked review PR for Block131:
+pending
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -168,6 +170,25 @@ same-surface physical transfer/offdiagonal generator or
 primitive/irreducibility certificate plus source/canonical-Higgs coupling
 authority.  Without that artifact, pivot back to action-first source-Higgs pole
 rows or strict W/Z production rows only if a new strict artifact appears.
+
+Block131 pivots back to the action-first source-Higgs authority route and asks
+whether the post-Block130 surface can supply accepted same-surface canonical
+`O_H`/action authority plus nonempty numeric `C_ss/C_sH/C_HH` pole-residue
+rows.  Result: exact negative boundary.  The runner preserves the Block123
+formula and Block126 top-side response as support only, but finds no accepted
+canonical `O_H`/action authority, no strict numeric pole residues, no nonempty
+strict action/pole raw keys, and no strict packet sidecar.  The readout witness
+holds `dE_top/ds=1.245693776284446` fixed while two Gram-pure non-authority
+residue packets give `y_H=1.245693776284446` and
+`y_H=2.491387552568892`.  Reruns: Block131 `PASS=14`, campaign status
+`PASS=452`, assumption/import stress `PASS=135`.
+
+Active next work after Block131: supply an accepted same-surface canonical
+`O_H`/action/LSZ certificate plus nonempty numeric `C_ss/C_sH/C_HH`
+pole-residue rows sharing source/action/`O_H` surface IDs.  Otherwise reopen
+W/Z only with strict production W/Z rows plus non-observed `g2` and accepted
+same-source action, or reopen Schur/neutral only with strict
+pole/physical-transfer authorities.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

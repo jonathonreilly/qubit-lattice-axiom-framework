@@ -457,3 +457,40 @@ Verified at `2026-05-17T17:49:08Z`:
 - Block130 eta nonidentifiability runner: `PASS=11 FAIL=0`
 - campaign status certificate: `PASS=451 FAIL=0`
 - assumption/import stress: `PASS=134 FAIL=0`
+
+## Block131
+
+Working title: PR230 Block131 action-first source-Higgs authority construction
+attempt.
+
+Purpose:
+
+- pivot back to the action-first source-Higgs route after Blocks128-130 close
+  the current W/Z, Schur, and neutral shortcuts;
+- test whether the post-Block130 surface supplies accepted same-surface
+  canonical `O_H`/action/LSZ authority plus nonempty numeric
+  `C_ss/C_sH/C_HH` pole-residue rows;
+- scan the completed raw higher-shell files for nonempty strict action,
+  canonical-`O_H`, or source-Higgs pole-residue keys;
+- use the Block126 top-side response to build a non-authority readout witness
+  showing that current support does not identify a unique source-Higgs value.
+
+Files:
+
+- `docs/YT_PR230_BLOCK131_ACTION_FIRST_SOURCE_HIGGS_AUTHORITY_CONSTRUCTION_ATTEMPT_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block131_action_first_source_higgs_authority_construction_attempt.py`
+- `outputs/yt_pr230_block131_action_first_source_higgs_authority_construction_attempt_2026-05-17.json`
+
+Result: exact negative boundary.  The runner preserves the Block123 formula and
+Block126 top-side response as support only.  It finds no accepted same-surface
+canonical `O_H`/action authority, no strict numeric `C_ss/C_sH/C_HH` pole
+rows, no nonempty strict raw action/pole keys, and no strict packet sidecar.
+The witness holds `dE_top/ds=1.245693776284446` fixed while Gram-pure residue
+packets yield `y_H=1.245693776284446` and `y_H=2.491387552568892`.
+
+Verified at `2026-05-17T18:07:22Z`:
+
+- Block131 py_compile: passed
+- Block131 action-first source-Higgs authority runner: `PASS=14 FAIL=0`
+- campaign status certificate: `PASS=452 FAIL=0`
+- assumption/import stress: `PASS=135 FAIL=0`

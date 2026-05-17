@@ -413,6 +413,9 @@ def main() -> int:
         "block130_neutral_h3h4_eta_nonidentifiability": load(
             "outputs/yt_pr230_block130_neutral_h3h4_eta_nonidentifiability_2026-05-17.json"
         ),
+        "block131_action_first_source_higgs_authority_construction_attempt": load(
+            "outputs/yt_pr230_block131_action_first_source_higgs_authority_construction_attempt_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -3186,6 +3189,69 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean = (
+        "Block131 cannot construct action-first source-Higgs authority"
+        in str(
+            certificates[
+                "block131_action_first_source_higgs_authority_construction_attempt"
+            ].get("actual_current_surface_status")
+        )
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ].get(
+            "block131_action_first_source_higgs_authority_construction_attempt_passed"
+        )
+        is True
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ]
+        .get("strict_non_claims", {})
+        .get("does_not_promote_finite_c_sx_rows_to_c_sh_pole_residues")
+        is True
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ]
+        .get("strict_non_claims", {})
+        .get("does_not_set_kappa_s_c2_or_z_match")
+        is True
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ]
+        .get("strict_non_claims", {})
+        .get("does_not_claim_retained_or_proposed_retained")
+        is True
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("expected_strict_packet_absent")
+        is True
+        and certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("readout_witness_blocks_unique_value")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block131_action_first_source_higgs_authority_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block131-action-first-source-higgs-authority-construction-attempt-keeps-imports-clean",
+        block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean,
+        certificates[
+            "block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("actual_current_surface_status"),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3502,6 +3568,7 @@ def main() -> int:
             "does not treat complete 63/63 higher-shell finite-row monotonicity diagnostics as strict scalar-LSZ, Schur pole-row, FV/IR, canonical O_H, or y_t authority",
             "does not treat a finite one-pole endpoint fit or finite Loewner/Stieltjes proxy as strict Schur pole authority",
             "does not treat complete finite Schur A/B/C support as strict pole coordinate, derivative, source-projection, FV/IR, or canonical bridge authority",
+            "does not treat action-first source-Higgs packet support as closure before accepted action/O_H/LSZ, source-overlap kappa, time-kernel rows, and strict C_ss/C_sH/C_HH pole residues exist",
             "does not treat package hierarchy v as a PR230 W/Z absolute-normalization pin",
             "does not treat post-Block100 completion/reopen audit status, completed chunks, or fetched remote path names as positive closure",
             "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
@@ -3538,6 +3605,7 @@ def main() -> int:
         "block129_schur_pole_authority_construction_attempt_keeps_imports_clean": block129_schur_pole_authority_construction_attempt_keeps_imports_clean,
         "block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean": block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean,
         "block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean": block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean,
+        "block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean": block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

@@ -573,6 +573,9 @@ def main() -> int:
         "pr230_block130_neutral_h3h4_eta_nonidentifiability": load(
             "outputs/yt_pr230_block130_neutral_h3h4_eta_nonidentifiability_2026-05-17.json"
         ),
+        "pr230_block131_action_first_source_higgs_authority_construction_attempt": load(
+            "outputs/yt_pr230_block131_action_first_source_higgs_authority_construction_attempt_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3807,6 +3810,73 @@ def main() -> int:
         "pr230-block130-neutral-h3h4-eta-nonidentifiability-blocks",
         block130_neutral_h3h4_eta_nonidentifiability_blocks,
         statuses["pr230_block130_neutral_h3h4_eta_nonidentifiability"],
+    )
+    block131_action_first_source_higgs_authority_construction_attempt_blocks = (
+        "Block131 cannot construct action-first source-Higgs authority"
+        in str(
+            statuses[
+                "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+            ]
+        )
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get(
+            "block131_action_first_source_higgs_authority_construction_attempt_passed"
+        )
+        is True
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ]
+        .get("finite_source_higgs_summary", {})
+        .get("finite_row_count")
+        == 693
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("block123_formula_support_not_packet")
+        is True
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("block126_top_only_not_action")
+        is True
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("action_first_blockers_preserved")
+        is True
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("expected_strict_packet_absent")
+        is True
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("raw_strict_tokens_absent")
+        is True
+        and certificates[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ].get("readout_witness_blocks_unique_value")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block131-action-first-source-higgs-authority-construction-attempt-blocks",
+        block131_action_first_source_higgs_authority_construction_attempt_blocks,
+        statuses[
+            "pr230_block131_action_first_source_higgs_authority_construction_attempt"
+        ],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9357,6 +9427,7 @@ def main() -> int:
             "does not treat finite C_sx covariance, active worker intent, or post-Block45 support as a neutral off-diagonal generator",
             "does not treat top mass-scan dE/dm_bare rows as satisfying the additive-top subtraction contract",
             "does not treat higher-shell source-Higgs cross rows emitted under the taste-radial second-source certificate as strict C_sH/C_HH source-Higgs rows",
+            "does not treat action-first source-Higgs packet support as closure before accepted action/O_H/LSZ, kappa_s, time-kernel rows, and strict pole residues exist",
             "does not treat block39 post-block38 queue-admission status as production evidence",
             "does not treat block53 residual-minimality status as positive closure",
             "does not treat block54 response-readout reduction as scalar/FVIR authority, canonical-Higgs identity, or positive closure",
@@ -9625,6 +9696,9 @@ def main() -> int:
     )
     result["block130_neutral_h3h4_eta_nonidentifiability_blocks"] = (
         block130_neutral_h3h4_eta_nonidentifiability_blocks
+    )
+    result["block131_action_first_source_higgs_authority_construction_attempt_blocks"] = (
+        block131_action_first_source_higgs_authority_construction_attempt_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

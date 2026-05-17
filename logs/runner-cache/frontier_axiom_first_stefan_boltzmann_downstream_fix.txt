@@ -1,0 +1,58 @@
+==============================================================================
+AUDIT-PREP VERIFIER — axiom_first_stefan_boltzmann_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md)
+  [PASS] [A] Fix record exists  (path = docs/AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+
+PART F-A — retire prominent stale `retained` sites:
+  [PASS] [A] Claim scope no longer says 'framework retained EW + emergent Lorentz + Block 01 KMS surface'
+  [PASS] [A] Claim scope now says 'framework's cited EW + emergent Lorentz + Block 01 KMS surface'
+  [PASS] [A] Scope no longer says 'framework's retained emergent-spacetime surface'
+  [PASS] [A] Scope now says 'framework's cited emergent-spacetime surface'
+  [PASS] [A] Scope no longer says 'framework's retained U(1) photon'
+  [PASS] [A] Scope now says 'framework's cited U(1) photon'
+  [PASS] [A] ## Retained inputs section heading retired
+  [PASS] [A] ## Cited inputs section heading present
+  [PASS] [A] Citation list no longer has 'retained anomaly-forced 3+1'
+  [PASS] [A] Citation list now has 'cited anomaly-forced 3+1'
+  [PASS] [A] Citation list no longer has 'retained emergent Lorentz'
+  [PASS] [A] Citation list now has 'cited emergent Lorentz'
+
+PART F-A — Upstream-tier accounting section:
+  [PASS] [A] Upstream-tier accounting section header present
+  [PASS] [A] Tier table lists emergent_lorentz_invariance_note as `unaudited`
+  [PASS] [A] Tier table lists axiom_first_kms_condition_theorem_note as `unaudited`
+  [PASS] [A] Tier table lists rconn_derived_note as `audited_conditional`
+  [PASS] [A] Section states 'most or all upstreams unaudited' (7 of 8)
+  [PASS] [A] Section states effective-tier-inherits-from-weakest
+
+PART F-B / admission-inheritance (lower stringency):
+  [PASS] [A] Lower-stringency admission-inheritance section present
+  [PASS] [A] Notes that d_s = 3 comes from axiom A2 (admission-independent)
+  [PASS] [A] Links to upstream F-B framing-fix
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] (SB1) Planck distribution preserved
+  [PASS] [A] Stefan-Boltzmann formula u(T) = (π² / 15) … preserved
+  [PASS] [A] Γ(4) ζ(4) = π⁴/15 identity preserved
+  [PASS] [A] Numerical σ_SB = 5.670374419 × 10⁻⁸ value preserved
+  [PASS] [A] Step 1 — Planck distribution from KMS preserved
+  [PASS] [A] Step 4 — Stefan-Boltzmann constant preserved
+  [PASS] [A] C1 Wien displacement law corollary preserved
+  [PASS] [A] C2 CMB blackbody corollary preserved
+  [PASS] [A] C3 photon-gas EOS corollary preserved
+  [PASS] [A] C4 cosmological consistency corollary preserved
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired verifier referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-A — Tier over-claim'
+  [PASS] [A] Fix record mentions: 'Admission-inheritance from upstream parent (lower stringency)'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'positive_theorem retained'
+
+==============================================================================
+SUMMARY: 41 PASS / 0 FAIL  (Class-A: 41)
+==============================================================================

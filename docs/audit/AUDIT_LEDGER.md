@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 115 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 351 |
+| **retained_bounded** | 352 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 578 |
+| `audited_clean` | 579 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1436 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
@@ -509,6 +509,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9275,6 +9276,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the load-bearing observable identification is an admitted open bridge, not derived from the supplied source and one-hop authorities. Why this blocks: the retained Fierz note proves only the adjoint Hilbert-space dimension fraction, not that the lattice connected color trace or its dynamics inherits that fraction with the stated O(1/N_c^4) correction. Repair target: prove matching rule (M) and the channel-population/correction estimate from retained lattice primitives, with a runner that does not set 8/9 as its target. Claim boundary until fixed: exact imported Fierz channel-count fraction plus conditional MC consistency framing only.
 - **open / conditional deps cited:**
   - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+- **auditor confidence:** high
+
+### `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional Hilbert-Schmidt color-singlet and traceless/adjoin projection weights for nonzero Hermitian color insertions, including the identity and normalized traceless SU(N_c) generator cases, with no kappa_EW matching identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-213957-78dc5814-rconn_vertex_color_singl-010`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Hilbert-Schmidt projection onto the identity line is Proj_{C I}(M_color) = (Tr_color M_color / N_c) I_color, giving rho_singlet(M_color) = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
+- **chain closes:** True — The result follows from ordinary orthogonal projection onto the identity line under the Hilbert-Schmidt inner product. The generator case uses only tracelessness and the supplied normalization Tr_color(t^A t^B) = delta^{AB}/2, and no electroweak matching rule is imported.
+- **rationale:** This is an exact class-A finite-dimensional algebra claim, not a physical-observable bridge. The runner source implements exact rational matrix arithmetic for the projection fractions and boundary checks, rather than printing the contested conclusion or importing kappa_EW. The cited authority is retained_bounded for the generator normalization needed here; its open EW matching discussion is not used by this narrow projection lemma.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

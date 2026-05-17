@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 337 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1212 |
+| unaudited | 1211 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -36,6 +36,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
+| `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
@@ -46,16 +47,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 558 |
 | `audited_conditional` | 178 |
-| `audited_decoration` | 20 |
+| `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1409 |
+| `unaudited` | 1408 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 946 |
-| `decoration` | 21 |
+| `bounded_theorem` | 945 |
+| `decoration` | 22 |
 | `meta` | 200 |
 | `no_go` | 238 |
 | `open_gate` | 110 |
@@ -863,6 +864,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
+| `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
@@ -7095,6 +7097,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The induction proof closes directly from the recursive definition of C_t(S) and the locality definition of the update rule. The runner is consistent with this scoped graph-reachability theorem and does not import physical-spacetime or metric assumptions.
 - **rationale:** The live claim is only a finite graph/DAG forward-reachability bound, not an emergent-relativity or physical light-cone result. Within that boundary, the proof is a standard induction on ticks and uses no hidden bridge beyond the declared R-locality premise. The runner completed and checks representative dependency-support recurrences with explicit non-claim guards.
 - **auditor confidence:** high
+
+### `lattice_nn_mass_response_note`
+
+- **Note:** [`LATTICE_NN_MASS_RESPONSE_NOTE.md`](../../docs/LATTICE_NN_MASS_RESPONSE_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Positivity of the gravity/mass-response values for h in {0.5, 0.25, 0.125, 0.0625} under the deterministic Born-safe rescale path; no alpha=1.5 or continuum-law claim audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_lattice_nn_deterministic_rescale_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-154147-a5e2dcef-lattice_nn_mass_response-023`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The binding evidence is that the gravity/mass-response entries are positive at h in {0.5, 0.25, 0.125, 0.0625} on the Born-safe deterministic refinement path.  _(class `A`)_
+- **chain closes:** True — The four positive gravity entries and machine-sized Born residuals are already present in the retained deterministic-rescale authority and matching cache; the note only filters those rows and checks their sign. The alpha-scaled material is explicitly excluded from binding scope.
+- **rationale:** Issue: the audited positivity statement is a sign-check restatement of the deterministic-rescale rows, not an independent mass-response computation. Why this blocks: the note adds no new closure beyond the retained parent and no physical mass bridge or comparator. Repair target: provide a self-contained runner/helper packet deriving the mass-response observable from primitives, or box this as a corollary of the deterministic-rescale note. Claim boundary until fixed: positivity on the four named h values is retained only as a bounded corollary; alpha-scaled claims remain out of scope.
+- **decoration parent:** `lattice_nn_deterministic_rescale_note`
+- **auditor confidence:** medium
 
 ### `lattice_nn_rg_alpha_sweep_note`
 

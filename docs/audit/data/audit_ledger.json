@@ -134352,46 +134352,71 @@
       "verdict_rationale": "The live claim is only a finite graph/DAG forward-reachability bound, not an emergent-relativity or physical light-cone result. Within that boundary, the proof is a standard induction on ticks and uses no hidden bridge beyond the declared R-locality premise. The runner completed and checks representative dependency-support recurrences with explicit non-claim guards."
     },
     "lattice_nn_mass_response_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:44:02.230508+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "lattice_nn_continuum_note": "Bounded finite-spacing computational claim for the raw nearest-neighbor harness on H_finite = {2.0, 1.0, 0.5, 0.25}: finite gravity, k=0, MI, classical purity, total-variation, and Born rows, with Born residual < 1e-10 and h = 0.125/continuum explicitly outside the claimed window.",
+          "lattice_nn_deterministic_rescale_note": "Finite computational claim only: for the exact supplied runner, constants, lattice geometry, slit construction, propagation rule, and tested spacings down to h=0.0625, the deterministic geometry-only rescale schedule keeps the Born diagnostic machine-clean and yields the printed observable rows. It does not establish a continuum theory or physical interpretation beyond this finite tested surface.",
+          "lattice_nn_rg_gravity_note": "Audited the bounded computational claim that the raw nearest-neighbor lattice has a Born-clean finite refinement window through h = 0.25 and that fixed, 1/h, and 1/sqrt(h) strength schedules do not establish a clean RG/continuum continuation past the shared h = 0.125 failure."
+        },
+        "dep_claim_type": {
+          "lattice_nn_continuum_note": "bounded_theorem",
+          "lattice_nn_deterministic_rescale_note": "bounded_theorem",
+          "lattice_nn_rg_gravity_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lattice_nn_continuum_note": "retained_bounded",
+          "lattice_nn_deterministic_rescale_note": "retained_bounded",
+          "lattice_nn_rg_gravity_note": "retained_bounded"
+        },
+        "deps": [
+          "lattice_nn_continuum_note",
+          "lattice_nn_deterministic_rescale_note",
+          "lattice_nn_rg_gravity_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b96c68f5d9e00d87c92fef4b6a77a644ef77e53226277fb28bd9a57ffa912056",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-154147-a5e2dcef-lattice_nn_mass_response-023",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The four positive gravity entries and machine-sized Born residuals are already present in the retained deterministic-rescale authority and matching cache; the note only filters those rows and checks their sign. The alpha-scaled material is explicitly excluded from binding scope.",
       "claim_id": "lattice_nn_mass_response_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Positivity of the gravity/mass-response values for h in {0.5, 0.25, 0.125, 0.0625} under the deterministic Born-safe rescale path; no alpha=1.5 or continuum-law claim audited.",
+      "claim_type": "decoration",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:44:02.230508+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "lattice_nn_deterministic_rescale_note",
       "deps": [
         "lattice_nn_continuum_note",
         "lattice_nn_deterministic_rescale_note",
         "lattice_nn_rg_gravity_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_lattice_nn_deterministic_rescale_note",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_lattice_nn_deterministic_rescale_note",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The binding evidence is that the gravity/mass-response entries are positive at h in {0.5, 0.25, 0.125, 0.0625} on the Born-safe deterministic refinement path.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "fa98ca6a30697dd432e4610dc2efb542cf2c745bba7ba65e82af47c34246a299",
       "note_path": "docs/LATTICE_NN_MASS_RESPONSE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if a future revision promotes the primary runner as independent class C; helper sources were not included in this restricted packet.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -134517,16 +134542,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/lattice_nn_mass_response.py",
       "title": "NN Lattice Mass-Response Note \u2014 h \u2208 {0.5, 0.25, 0.125, 0.0625} Positivity (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the audited positivity statement is a sign-check restatement of the deterministic-rescale rows, not an independent mass-response computation. Why this blocks: the note adds no new closure beyond the retained parent and no physical mass bridge or comparator. Repair target: provide a self-contained runner/helper packet deriving the mass-response observable from primitives, or box this as a corollary of the deterministic-rescale note. Claim boundary until fixed: positivity on the four named h values is retained only as a bounded corollary; alpha-scaled claims remain out of scope."
     },
     "lattice_nn_rg_alpha_sweep_note": {
       "audit_date": "2026-05-07T02:17:45.375642+00:00",

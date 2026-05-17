@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 739,
     "high": 35,
-    "leaf": 287,
+    "leaf": 286,
     "medium": 155
   },
   "cycle_break_target_count": 214,
@@ -31609,32 +31609,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_nn_mass_response_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_nn_continuum_note",
-        "lattice_nn_deterministic_rescale_note",
-        "lattice_nn_rg_gravity_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LATTICE_NN_MASS_RESPONSE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_nn_mass_response.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39777,6 +39751,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 13,
-  "total_pending": 1216
+  "ready_count": 12,
+  "total_pending": 1215
 }

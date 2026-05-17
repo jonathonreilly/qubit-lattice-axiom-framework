@@ -1,0 +1,179 @@
+{
+  "actual_current_surface_status": "exact-support plus open premise / Block123 source-Higgs LSZ readout formula derived; current PR230 surface lacks strict C_ss/C_sH/C_HH pole rows and canonical O_H/action authority",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block123_source_higgs_lsz_readout_formula_passed": true,
+  "conditional_surface_status": "If a future same-surface certificate supplies canonical O_H/LSZ authority, same-pole C_ss/C_sH/C_HH residues with Gram/FV/IR/contact control, and excludes or measures orthogonal top coupling, the invariant readout is y_H=(dE_top/ds)*sqrt(Res C_HH)/Res C_sH.",
+  "current_closure_satisfied": false,
+  "current_missing_packet": {
+    "campaign_status_proposal_allowed": false,
+    "canonical_oh_absent": true,
+    "retained_route_proposal_allowed": false,
+    "source_higgs_gram_gate_open": true,
+    "strict_source_higgs_pole_rows_absent": true
+  },
+  "exact_next_action": "Use the Block123 formula as the readout contract.  The next positive artifact must either produce strict same-surface C_ss/C_sH/C_HH pole rows with canonical O_H/action/LSZ authority, or pivot to W/Z response rows with allowed absolute g2 authority and matched top-W covariance.",
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "renamed_c_sx_c_xx_as_c_sh_c_hh": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "treated_axis_selector_as_action": false,
+    "treated_contact_term_as_fixed": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_fitted_selector": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_package_hierarchy_v_as_pin": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "formula_support": {
+    "css_formula_matches_when_gram_pure": true,
+    "forbidden_kappa_one_varies": true,
+    "gram_determinants_zero": true,
+    "gram_pure_formula": "if Res C_sH^2 = Res C_ss Res C_HH, y_H = (dE_top/ds) / sqrt(Res C_ss)",
+    "orthogonal_counterexample_changes_readout": true,
+    "orthogonal_top_coupling_counterexample": [
+      {
+        "Res_C_HH": 3.0625,
+        "Res_C_sH": 0.5670648111106877,
+        "Res_C_ss_total": 0.7450000000000001,
+        "bias": -0.9875414397573887,
+        "dE_top_ds_total": 0.365,
+        "naive_readout_if_orthogonal_ignored": 1.1264144547232708,
+        "orthogonal_source_overlap": 0.8,
+        "orthogonal_top_coupling": -0.4,
+        "true_higgs_readout": 2.1139558944806596
+      },
+      {
+        "Res_C_HH": 3.0625,
+        "Res_C_sH": 0.5670648111106877,
+        "Res_C_ss_total": 0.7450000000000001,
+        "bias": -4.440892098500626e-16,
+        "dE_top_ds_total": 0.685,
+        "naive_readout_if_orthogonal_ignored": 2.113955894480659,
+        "orthogonal_source_overlap": 0.8,
+        "orthogonal_top_coupling": 0.0,
+        "true_higgs_readout": 2.1139558944806596
+      },
+      {
+        "Res_C_HH": 3.0625,
+        "Res_C_sH": 0.5670648111106877,
+        "Res_C_ss_total": 0.7450000000000001,
+        "bias": 1.3578694796664088,
+        "dE_top_ds_total": 1.125,
+        "naive_readout_if_orthogonal_ignored": 3.4718253741470684,
+        "orthogonal_source_overlap": 0.8,
+        "orthogonal_top_coupling": 0.55,
+        "true_higgs_readout": 2.1139558944806596
+      }
+    ],
+    "same_pole_formula": "y_H = (dE_top/ds) * sqrt(Res C_HH) / Res C_sH",
+    "source_rescaling_invariant": true,
+    "source_rescaling_rows": [
+      {
+        "Res_C_HH": 3.0625,
+        "Res_C_sH": 0.14176620277767193,
+        "Res_C_ss": 0.006562499999999999,
+        "dE_top_ds": 0.17125,
+        "forbidden_kappa_s_equals_one_readout": 0.17125,
+        "gram_determinant": 0.0,
+        "readout_from_C_sH_C_HH": 2.113955894480659,
+        "readout_from_C_ss_if_gram_pure": 2.1139558944806596,
+        "source_scale": 0.25
+      },
+      {
+        "Res_C_HH": 3.0625,
+        "Res_C_sH": 0.5670648111106877,
+        "Res_C_ss": 0.10499999999999998,
+        "dE_top_ds": 0.685,
+        "forbidden_kappa_s_equals_one_readout": 0.685,
+        "gram_determinant": 0.0,
+        "readout_from_C_sH_C_HH": 2.113955894480659,
+        "readout_from_C_ss_if_gram_pure": 2.1139558944806596,
+        "source_scale": 1.0
+      },
+      {
+        "Res_C_HH": 3.0625,
+        "Res_C_sH": 2.268259244442751,
+        "Res_C_ss": 1.6799999999999997,
+        "dE_top_ds": 2.74,
+        "forbidden_kappa_s_equals_one_readout": 2.74,
+        "gram_determinant": 0.0,
+        "readout_from_C_sH_C_HH": 2.113955894480659,
+        "readout_from_C_ss_if_gram_pure": 2.1139558944806596,
+        "source_scale": 4.0
+      },
+      {
+        "Res_C_HH": 3.0625,
+        "Res_C_sH": 5.103583299996189,
+        "Res_C_ss": 8.504999999999999,
+        "dE_top_ds": 6.165000000000001,
+        "forbidden_kappa_s_equals_one_readout": 6.165000000000001,
+        "gram_determinant": 3.552713678800501e-15,
+        "readout_from_C_sH_C_HH": 2.11395589448066,
+        "readout_from_C_ss_if_gram_pure": 2.1139558944806596,
+        "source_scale": 9.0
+      }
+    ]
+  },
+  "hypothetical_axiom_status": null,
+  "parent_certificates": {
+    "assumption_import_stress": "outputs/yt_pr230_assumption_import_stress_2026-05-01.json",
+    "block120_invariant_minimal_data": "outputs/yt_pr230_block120_source_reparam_invariant_minimal_data_2026-05-17.json",
+    "block122_axis_action_lsz_gap": "outputs/yt_pr230_block122_hamming_axis_action_lsz_normalization_gap_2026-05-17.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "canonical_higgs_gate": "outputs/yt_canonical_higgs_operator_certificate_gate_2026-05-03.json",
+    "completion_audit": "outputs/yt_pr230_positive_closure_completion_audit_2026-05-05.json",
+    "fh_lsz_invariant_readout": "outputs/yt_fh_lsz_invariant_readout_theorem_2026-05-01.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "isolated_pole_gram": "outputs/yt_isolated_pole_gram_factorization_theorem_2026-05-03.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "source_functional_lsz_identifiability": "outputs/yt_source_functional_lsz_identifiability_theorem_2026-05-03.json",
+    "source_higgs_gram_gate": "outputs/yt_source_higgs_gram_purity_gate_2026-05-02.json",
+    "source_higgs_overlap_kappa_contract": "outputs/yt_pr230_source_higgs_overlap_kappa_contract_2026-05-06.json",
+    "source_higgs_pole_contract": "outputs/yt_pr230_source_higgs_pole_row_acceptance_contract_2026-05-06.json",
+    "source_higgs_postprocess": "outputs/yt_source_higgs_gram_purity_postprocess_2026-05-03.json"
+  },
+  "parent_statuses": {
+    "assumption_import_stress": "open / assumption-import stress complete",
+    "block120_invariant_minimal_data": "exact negative boundary / Block120 source-reparametrization invariant minimal-data contract is unsatisfied on the current PR230 head",
+    "block122_axis_action_lsz_gap": "exact negative boundary / Block122 Hamming-Dirichlet O_H axis support does not determine accepted action, scalar LSZ metric, source-overlap normalization, or strict source-Higgs pole rows",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "canonical_higgs_gate": "open / canonical-Higgs operator certificate absent",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "fh_lsz_invariant_readout": "exact-support / Feynman-Hellmann scalar-LSZ invariant readout formula",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "isolated_pole_gram": "exact-support / isolated-pole Gram factorization theorem",
+    "retained_route": "open / retained closure not yet reached",
+    "source_functional_lsz_identifiability": "exact negative boundary / source-functional LSZ identifiability theorem",
+    "source_higgs_gram_gate": "open / source-Higgs Gram purity gate not passed",
+    "source_higgs_overlap_kappa_contract": "exact-support / source-Higgs overlap-kappa row contract; current row packet absent",
+    "source_higgs_pole_contract": "open / source-Higgs C_ss/C_sH/C_HH pole-row acceptance contract; strict rows absent on current surface",
+    "source_higgs_postprocess": "open / O_sp-Higgs Gram-purity postprocess awaiting production certificate"
+  },
+  "pass_count": 12,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Block123 supplies a formula/support theorem only.  It does not write strict source-Higgs pole rows, adopt a same-surface EW/Higgs action, certify canonical O_H/LSZ normalization, or pass retained-route gates.",
+  "required_future_packet": [
+    "same-surface canonical O_H/action/LSZ normalization certificate",
+    "same-ensemble dE_top/ds and covariance metadata",
+    "same-pole Res_C_ss, Res_C_sH, Res_C_HH rows with uncertainties",
+    "Gram-purity or controlled orthogonal-leakage certificate",
+    "contact subtraction, FV/IR, threshold/model-class authority",
+    "retained-route and campaign gates with proposal_allowed=true before proposal wording"
+  ],
+  "strict_non_claims": [
+    "does not claim retained or proposed_retained top-Yukawa closure",
+    "does not set kappa_s=1 or identify source coordinate with canonical Higgs by convention",
+    "does not treat Block118 axis selection or Block119 finite Dirichlet support as accepted action",
+    "does not relabel C_sx/C_xx rows as physical C_sH/C_HH pole rows",
+    "does not use H_unit, yt_ward_identity, observed targets, alpha_LM, plaquette, or u0"
+  ]
+}

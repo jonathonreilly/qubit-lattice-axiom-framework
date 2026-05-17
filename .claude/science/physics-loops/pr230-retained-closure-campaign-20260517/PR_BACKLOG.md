@@ -4,6 +4,8 @@ Stacked review PR created: https://github.com/jonathonreilly/cl3-lattice-framewo
 
 Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445
 
+Stacked review PR for Block123: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1450
+
 Branch/PR blocks:
 
 - Block120 source-reparametrization invariant minimal-data boundary into PR230
@@ -13,6 +15,9 @@ Branch/PR blocks:
 - Block122 Hamming-axis action/LSZ normalization gap on branch
   `physics-loop/pr230-retained-closure-campaign-block121-20260517`, stacked
   above Blocks120-121.
+- Block123 source-Higgs LSZ readout formula on branch
+  `physics-loop/pr230-retained-closure-campaign-block123-20260517`, to be
+  stacked above Block122.
 
 Updated PR bodies prepared in `PR_BODY_BLOCK121.md` and `PR_BODY_BLOCK122.md`
 after rebasing onto PR230 head `a7179acb5`.

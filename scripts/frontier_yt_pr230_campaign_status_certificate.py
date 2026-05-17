@@ -540,6 +540,9 @@ def main() -> int:
         "pr230_block122_hamming_axis_action_lsz_normalization_gap": load(
             "outputs/yt_pr230_block122_hamming_axis_action_lsz_normalization_gap_2026-05-17.json"
         ),
+        "pr230_block123_source_higgs_lsz_readout_formula": load(
+            "outputs/yt_pr230_block123_source_higgs_lsz_readout_formula_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3167,6 +3170,47 @@ def main() -> int:
         "pr230-block122-hamming-axis-action-lsz-normalization-gap-blocks",
         block122_hamming_axis_action_lsz_normalization_gap_blocks,
         statuses["pr230_block122_hamming_axis_action_lsz_normalization_gap"],
+    )
+    block123_source_higgs_lsz_readout_formula_supports_only = (
+        "Block123 source-Higgs LSZ readout formula derived"
+        in str(statuses["pr230_block123_source_higgs_lsz_readout_formula"])
+        and certificates["pr230_block123_source_higgs_lsz_readout_formula"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block123_source_higgs_lsz_readout_formula"].get(
+            "block123_source_higgs_lsz_readout_formula_passed"
+        )
+        is True
+        and certificates["pr230_block123_source_higgs_lsz_readout_formula"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block123_source_higgs_lsz_readout_formula"]
+        .get("formula_support", {})
+        .get("source_rescaling_invariant")
+        is True
+        and certificates["pr230_block123_source_higgs_lsz_readout_formula"]
+        .get("formula_support", {})
+        .get("orthogonal_counterexample_changes_readout")
+        is True
+        and certificates["pr230_block123_source_higgs_lsz_readout_formula"]
+        .get("current_missing_packet", {})
+        .get("strict_source_higgs_pole_rows_absent")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block123_source_higgs_lsz_readout_formula"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block123-source-higgs-lsz-readout-formula-supports-only",
+        block123_source_higgs_lsz_readout_formula_supports_only,
+        statuses["pr230_block123_source_higgs_lsz_readout_formula"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8952,6 +8996,9 @@ def main() -> int:
     )
     result["block122_hamming_axis_action_lsz_normalization_gap_blocks"] = (
         block122_hamming_axis_action_lsz_normalization_gap_blocks
+    )
+    result["block123_source_higgs_lsz_readout_formula_supports_only"] = (
+        block123_source_higgs_lsz_readout_formula_supports_only
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

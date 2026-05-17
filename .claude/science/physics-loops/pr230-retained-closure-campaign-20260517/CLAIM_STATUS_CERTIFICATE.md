@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary through Block122.
+Status: exact support plus open premise through Block123.
 
 `proposed_retained`: not allowed.
 
@@ -14,11 +14,16 @@ Block121 verifies that the strongest complete finite Schur A/B/C packet does
 not determine the strict pole derivative/residue. Block122 verifies that the
 finite Hamming axis plus native Dirichlet support
 does not determine accepted action, LSZ/source-overlap, contact subtraction, or
-physical pole rows.
+physical pole rows. Block123 derives the exact source-Higgs LSZ readout formula
+`y_H = (dE_top/ds) * sqrt(Res C_HH) / Res C_sH`, but records that current
+strict pole rows, canonical `O_H`/action authority, Gram/leakage control, and
+retained-route gates remain absent.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
 - no strict physical `C_ss/C_sH/C_HH(tau)` source-Higgs pole rows;
+- no current certificate satisfying the Block123 source-Higgs LSZ readout
+  packet;
 - no strict W/Z physical-response packet with accepted action, production rows,
   matched covariance, strict non-observed `g2` or allowed absolute pin,
   `delta_perp`, and final W-response rows;

@@ -37,6 +37,8 @@ Run after Block120, Block121, and Block122:
 - `python3 scripts/frontier_yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability.py`
 - `python3 -m py_compile scripts/frontier_yt_pr230_block122_hamming_axis_action_lsz_normalization_gap.py`
 - `python3 scripts/frontier_yt_pr230_block122_hamming_axis_action_lsz_normalization_gap.py`
+- `python3 -m py_compile scripts/frontier_yt_pr230_block123_source_higgs_lsz_readout_formula.py`
+- `python3 scripts/frontier_yt_pr230_block123_source_higgs_lsz_readout_formula.py`
 - `python3 scripts/frontier_yt_pr230_full_positive_closure_assembly_gate.py`
 - `python3 scripts/frontier_yt_retained_closure_route_certificate.py`
 - `python3 scripts/frontier_yt_pr230_positive_closure_completion_audit.py`
@@ -151,3 +153,34 @@ Verified at `2026-05-17T15:48:22Z`:
 - assumption/import stress: `PASS=123 FAIL=0`
 - target-timeseries full-set checkpoint: `PASS=9 FAIL=0`
 - chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`
+
+## Block123
+
+Working title: PR230 Block123 source-Higgs LSZ readout formula.
+
+Purpose:
+
+- derive the source-Higgs pole-row readout that would convert `dE_top/ds` into
+  canonical-Higgs response without setting `kappa_s = 1`;
+- prove source-coordinate rescaling invariance of
+  `y_H=(dE_top/ds)*sqrt(Res C_HH)/Res C_sH`;
+- record the orthogonal-top-coupling premise that source-Higgs residues alone
+  do not remove unless Gram/covariance/top-coupling leakage is certified;
+- preserve the claim firewall because the current strict pole rows and
+  canonical `O_H`/action authority are absent.
+
+Files:
+
+- `docs/YT_PR230_BLOCK123_SOURCE_HIGGS_LSZ_READOUT_FORMULA_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block123_source_higgs_lsz_readout_formula.py`
+- `outputs/yt_pr230_block123_source_higgs_lsz_readout_formula_2026-05-17.json`
+
+Result: exact support plus open premise.  The readout formula is derived and
+executable, but current PR230 does not satisfy the row/action premises.
+
+Verified at `2026-05-17T15:56:21Z`:
+
+- Block123 py_compile: passed
+- Block123 runner: `PASS=12 FAIL=0`
+- campaign status certificate: `PASS=441 FAIL=0`
+- assumption/import stress: `PASS=124 FAIL=0`

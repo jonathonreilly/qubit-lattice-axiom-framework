@@ -2,20 +2,20 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T15:48:22Z"
+last_checkpoint_utc: "2026-05-17T15:56:21Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
-branch: physics-loop/pr230-retained-closure-campaign-block121-20260517
+branch: physics-loop/pr230-retained-closure-campaign-block123-20260517
 base_surface: origin/claude/yt-direct-lattice-correlator-2026-04-30
 latest_pr230_head: "a7179acb5ce21f9fdf2e05af1139c8b6a6785699"
 latest_pr230_head_note: "Block119: Add PR230 Block119 native Dirichlet action LSZ probe"
 pr230_state: open
 pr230_draft: true
-active_science_block: block122_hamming_axis_action_lsz_normalization_gap
-active_route: "action-first Block118/119 finite axis and Dirichlet support to accepted action/LSZ/source-overlap"
+active_science_block: block123_source_higgs_lsz_readout_formula
+active_route: "action-first source-Higgs LSZ readout contract from strict pole rows"
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Block122 Hamming-Dirichlet O_H axis and native finite Dirichlet support do not determine accepted action, scalar LSZ metric, source-overlap normalization, contact subtraction, or strict source-Higgs pole rows; proposal remains disallowed"
+actual_current_surface_status: "exact-support plus open premise / Block123 source-Higgs LSZ readout formula derived; strict C_ss/C_sH/C_HH pole rows, canonical O_H/action authority, and retained-route gates remain absent"
 proposal_allowed: false
 proposal_allowed_reason: "Current PR230 head has exact support for a finite Hamming-Dirichlet taste-radial O_H axis and a native finite Dirichlet quadratic candidate, but no accepted same-surface EW/Higgs action, scalar LSZ/source-overlap authority, strict physical C_ss/C_sH/C_HH pole rows, strict W/Z physical-response packet, strict Schur/Feshbach pole rows, or strict neutral H3/H4 transfer/source-coupling artifact."
 first_route_decision: "Block115 does not change W/Z from blocked to executable; Block116 also records a neutral H3/H4 strict-artifact absence. The first campaign artifact therefore targets the invariant source/action obstruction that all remaining positive routes must satisfy."
@@ -67,6 +67,15 @@ block122_result:
   proposal_allowed: false
   witness: "same selected Hamming O_H axis and fixed source-source proxy while action normalization, contact term, C_sH, C_HH, and normalized source overlap vary"
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445"
+block123_result:
+  output: outputs/yt_pr230_block123_source_higgs_lsz_readout_formula_2026-05-17.json
+  status: "exact-support plus open premise"
+  pass_count: 12
+  fail_count: 0
+  proposal_allowed: false
+  formula: "y_H = (dE_top/ds) * sqrt(Res C_HH) / Res C_sH"
+  current_closure_satisfied: false
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1450"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"
@@ -74,13 +83,15 @@ verification:
   block121_runner: "PASS=10 FAIL=0"
   block122_py_compile: passed
   block122_runner: "PASS=11 FAIL=0"
+  block123_py_compile: passed
+  block123_runner: "PASS=12 FAIL=0"
   full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
   retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
   positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
-  campaign_status: "PASS=440 FAIL=0; proposal_allowed=false"
-  assumption_import_stress: "PASS=123 FAIL=0; proposal_allowed=false"
+  campaign_status: "PASS=441 FAIL=0; proposal_allowed=false"
+  assumption_import_stress: "PASS=124 FAIL=0; proposal_allowed=false"
   target_timeseries_full_set: "PASS=9 FAIL=0; replacement_queue=[]"
   chunk063_higher_shell_checkpoint: "PASS=15 FAIL=0"
-  git_diff_check: pending after rebase resolution
-next_exact_action: "Finish staging the Block122 rebase resolution, run diff/audit checks, push PR #1445, update the PR body, then pivot away from finite-axis/action-normalization shortcuts."
-next_checkpoint_due_utc: "2026-05-17T16:18:22Z"
+  git_diff_check: passed
+next_exact_action: "Either produce strict source-Higgs pole rows with canonical O_H/action authority under the Block123 readout contract, or pivot to W/Z response rows with allowed g2 authority and matched top-W covariance."
+next_checkpoint_due_utc: "2026-05-17T16:26:21Z"

@@ -380,6 +380,9 @@ def main() -> int:
         "block122_hamming_axis_action_lsz_normalization_gap": load(
             "outputs/yt_pr230_block122_hamming_axis_action_lsz_normalization_gap_2026-05-17.json"
         ),
+        "block123_source_higgs_lsz_readout_formula": load(
+            "outputs/yt_pr230_block123_source_higgs_lsz_readout_formula_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2604,6 +2607,51 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block123_source_higgs_lsz_formula_keeps_imports_clean = (
+        "Block123 source-Higgs LSZ readout formula derived"
+        in str(
+            certificates["block123_source_higgs_lsz_readout_formula"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block123_source_higgs_lsz_readout_formula"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block123_source_higgs_lsz_readout_formula"].get(
+            "block123_source_higgs_lsz_readout_formula_passed"
+        )
+        is True
+        and certificates["block123_source_higgs_lsz_readout_formula"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block123_source_higgs_lsz_readout_formula"]
+        .get("formula_support", {})
+        .get("source_rescaling_invariant")
+        is True
+        and certificates["block123_source_higgs_lsz_readout_formula"]
+        .get("formula_support", {})
+        .get("forbidden_kappa_one_varies")
+        is True
+        and certificates["block123_source_higgs_lsz_readout_formula"]
+        .get("formula_support", {})
+        .get("orthogonal_counterexample_changes_readout")
+        is True
+        and all(
+            value is False
+            for value in certificates["block123_source_higgs_lsz_readout_formula"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block123-source-higgs-lsz-formula-keeps-imports-clean",
+        block123_source_higgs_lsz_formula_keeps_imports_clean,
+        certificates["block123_source_higgs_lsz_readout_formula"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2943,6 +2991,7 @@ def main() -> int:
         "block118_hamming_dirichlet_keeps_imports_clean": block118_hamming_dirichlet_keeps_imports_clean,
         "block119_native_dirichlet_keeps_imports_clean": block119_native_dirichlet_keeps_imports_clean,
         "block122_hamming_axis_action_lsz_gap_keeps_imports_clean": block122_hamming_axis_action_lsz_gap_keeps_imports_clean,
+        "block123_source_higgs_lsz_formula_keeps_imports_clean": block123_source_higgs_lsz_formula_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

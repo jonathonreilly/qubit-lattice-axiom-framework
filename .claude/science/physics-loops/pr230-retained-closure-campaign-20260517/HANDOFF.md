@@ -7,6 +7,7 @@ Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 
 Stacked review PR for Blocks120-121: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439
 Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445
+Stacked review PR for Block123: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1450
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -37,10 +38,16 @@ completion audit `PASS=79`, campaign `PASS=440`, assumption/import stress
 `PASS=123`, target-timeseries full set `PASS=9`, and chunk063 higher-shell
 checkpoint `PASS=15`.
 
-Active next work: finish staging the Block122 rebase resolution, run diff/audit
-checks, push PR #1445, update the PR body, then pivot away from
-finite-axis/action-normalizing shortcuts unless a future artifact supplies
-accepted action/LSZ or physical pole rows.
+Block123 derives the exact source-Higgs LSZ readout formula
+`y_H = (dE_top/ds) * sqrt(Res C_HH) / Res C_sH`.  It is exact support only:
+current strict source-Higgs pole rows, canonical `O_H`/action authority,
+Gram/leakage control, and retained-route gates are still absent.  Initial
+reruns: Block123 `PASS=12`, campaign `PASS=441`, assumption/import stress
+`PASS=124`.
+
+Active next work: either produce strict source-Higgs pole rows with canonical
+`O_H`/action authority under the Block123 readout contract, or pivot to W/Z
+response rows with allowed `g2` authority and matched top-W covariance.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

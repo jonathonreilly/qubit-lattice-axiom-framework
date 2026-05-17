@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1236
-**Ready (all deps already at retained-grade or metadata tiers):** 36
+**Total pending:** 1235
+**Ready (all deps already at retained-grade or metadata tiers):** 37
 
 By criticality:
-- `critical`: 759
+- `critical`: 758
 - `high`: 35
 - `medium`: 153
 - `leaf`: 289
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | audit_in_progress | critical | 818 | 13.18 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py` |
+| 1 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | unaudited | critical | 815 | 12.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py` |
 | 2 | `dimensional_gravity_table` | bounded_theorem | unaudited | critical | 811 | 12.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/dimensional_gravity_table_certificate_runner_2026_05_03.py` |
 | 3 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | positive_theorem | unaudited | critical | 810 | 11.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_lhcm_matter_assignment.py` |
 | 4 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | unaudited | critical | 809 | 11.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py` |

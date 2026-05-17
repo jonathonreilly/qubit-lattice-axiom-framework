@@ -106222,24 +106222,41 @@
       "verdict_rationale": "The clean result is limited to the exact finite runner surface and the explicitly narrowed positive-row subfit/distance-sweep facts. Residual risk is that the fit window and positive-row filter are analysis choices and do not by themselves imply a physical gravity law, rowwise positivity, Born safety, or upstream coexistence closure; those broader readings are outside the audited scope."
     },
     "higher_symmetry_joint_validation_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T13:06:51.546759+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+        },
+        "dep_claim_type": {
+          "mirror_chokepoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mirror_chokepoint_note": "retained_bounded"
+        },
+        "deps": [
+          "mirror_chokepoint_note"
+        ],
+        "load_bearing_score": 5.7,
+        "runner_hash": null,
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-130526-20260517T130526Z-0602cf6f-higher_symmetry_joint_va-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet provides no runner stdout, no runner source, and no registered cache content for the higher-symmetry rows. The missing step is a registered joint-validator cache or certificate tying the table values to scripts/higher_symmetry_joint_validation.py.",
       "claim_id": "higher_symmetry_joint_validation_note",
-      "claim_scope": null,
+      "claim_scope": "Attempted bounded audit of the existing registered-cache Z2 x Z2 joint-validation rows, nominally the cached non-dense range; the dense N=80/100/120 and N=120 promotion are out of binding scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T13:06:51.546759+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -106247,19 +106264,19 @@
         "mirror_chokepoint_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 5.7,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The bounded conclusion rests on the assertion that the registered cached log rows show Z2 x Z2 is Born-clean, k=0-zero, gravity-band positive, and slow-decoherence on the cached N range.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "2ae54b9c842f64826393190c6419bfe1eeda5175bceb64ef2034b026b054c5d0",
       "note_path": "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: attach the registered cache or certificate stdout and runner source for scripts/higher_symmetry_joint_validation.py, register it as the primary runner, and re-audit the narrowed cached range; include the dense N=80/100/120 cache only if N=120 is to be binding.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -106391,7 +106408,7 @@
       "runner_path": null,
       "title": "Higher-Symmetry Joint Validation Note \u2014 Cached N Range (Binding)",
       "transitive_descendants": 12,
-      "verdict_rationale": null
+      "verdict_rationale": "The only cited upstream note is retained_bounded, so it is not the blocker. The blocker is that this note makes cached joint-validation logs and a joint-validator runner load-bearing, but the restricted packet contains neither the cache/stdout nor the runner source for this claim. The note also explicitly demotes the dense N=80/100/120 and N=120 promotion out of binding scope, so any retained-through-N=120 read remains unaudited here. The claim is therefore conditional on runner/cache registration rather than clean."
     },
     "holographic_probe_note_2026-04-11": {
       "audit_date": "2026-05-03T12:20:53.876502+00:00",

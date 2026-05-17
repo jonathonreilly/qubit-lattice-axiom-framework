@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_bae_u1b_six_ray_dirac_measure_2026_05_17.py
+runner_sha256: cb3391a0190e3dd8ac7e6301278cb594fb799183f46e1381e2b03029ac68f790
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.21
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+BAE_U1B_SIX_RAY_DIRAC_MEASURE_STRETCH_ATTEMPT_NOTE_2026-05-17
+Goal: sympy-symbolic verification of S1-S3 failure steps + (T2),(T3).
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Algebraic baseline (X1) on hw=1
+----------------------------------------------------------------------------------------
+  [PASS] C^3 = I (cyclic permutation baseline)
+  [PASS] C^{-1} = C^2
+  [PASS] B_1 Hermitian
+  [PASS] B_2 Hermitian
+  [PASS] [B_1, B_2] = 0 (commute)
+  [PASS] H Hermitian
+  [PASS] ||H||_F^2 = 3a^2 + 6|b|^2 (X1 (T2))
+
+----------------------------------------------------------------------------------------
+Part 1: Retained discrete-symmetry actions (D1)-(D3) on b-plane
+----------------------------------------------------------------------------------------
+  [PASS] (D1) C_3 on (Re b, Im b) is R(2π/3)
+  [PASS] (D1) R(2π/3)^3 = I_2
+  [PASS] (D2) K acts as diag(1,-1) on (Re b, Im b)
+  [PASS] (D2) K is order-2 involution
+  [PASS] (X3) gamma(sigma_1) = -sigma_1
+  [PASS] (X3) gamma(sigma_2) = -sigma_2
+  [PASS] (X3) gamma(sigma_3) = -sigma_3
+  [PASS] (D3) gamma acts as -I_2 (point inversion) on (Re b, Im b)
+  [PASS] (D3) gamma is order-2 involution
+
+----------------------------------------------------------------------------------------
+Part 2: S1 — D_3 trivial-irrep projection averages rays
+----------------------------------------------------------------------------------------
+  [PASS] (S1) |D_3| = 6 group elements
+  [PASS] (S1) e^2 = e
+  [PASS] (S1) c^3 = e
+  [PASS] (S1) k^2 = e
+  [PASS] (S1) (ck)^2 = e
+  [PASS] (S1) (c^2 k)^2 = e
+  [PASS] (S1) k c k = c^2 (dihedral relation)
+  [PASS] (S1) D_3-orbit of generic ray has 6 distinct points  (|orbit| = 6)
+  [PASS] (S1) Fix(K) is 1-dim
+  [PASS] (S1) K fixes real axis (1,0)
+  [PASS] (S1) Fix(ck) is 1-dim
+  [PASS] (S1) ck fixes ray α=π/3 i.e. (1/2, √3/2)
+  [PASS] (S1) Fix(c^2 k) is 1-dim
+  [PASS] (S1) c^2 k fixes ray α=2π/3 i.e. (-1/2, √3/2)
+  [PASS] (S1) Fix(c) trivial (no fixed ray)
+  [PASS] (S1) Fix(c^2) trivial (no fixed ray)
+  [PASS] (S1) Six-ray locus (R) = {kπ/3 : k=0,...,5}
+
+----------------------------------------------------------------------------------------
+Part 3: S2 — joint fix of (C_3, K, γ) has no single-ray solution
+----------------------------------------------------------------------------------------
+  [PASS] (S2) Fix(γ = -I_2) trivial (eigenvalue -1)
+  [PASS] (S2) Fix(K) ∩ Fix(γ) = origin
+  [PASS] (S2) Fix(K) ∩ Fix(ck) = origin
+  [PASS] (S2) Fix(K) ∩ Fix(c^2 k) = origin
+  [PASS] (S2) Fix(ck) ∩ Fix(c^2 k) = origin
+
+----------------------------------------------------------------------------------------
+Part 4: S3 — Frobenius reciprocity: no time-to-doublet intertwiner
+----------------------------------------------------------------------------------------
+  [PASS] (S3) Hom_{C_3}(R_triv_time, R_doublet) = 0  (sum = 0)
+
+----------------------------------------------------------------------------------------
+Part 5: (T2) — six-ray locus is maximal discrete fix locus
+----------------------------------------------------------------------------------------
+  [PASS] (T2) Six-ray locus (R) has six distinct rays
+  [PASS] (T2) Pairwise intersections of D_3-reflection fix loci = origin  (verified by joint_null in Part 3)
+
+----------------------------------------------------------------------------------------
+Part 6: (T3) — Cycle 3 vs Cycle 4 residue structural distinction
+----------------------------------------------------------------------------------------
+  [PASS] (T3) Cycle 3 = no-SO(2)-quotient (dim-1 measure)
+  [PASS] (T3) Cycle 4 = no-single-ray-Dirac-on-(R) (dim-0 measure)
+  [PASS] (T3) Cycle 3 ⊅ Cycle 4 (sharper, not implied)
+
+----------------------------------------------------------------------------------------
+Part 7: Review-hygiene checks
+----------------------------------------------------------------------------------------
+  [PASS] Zero PDG observed values consumed (review-hygiene)
+  [PASS] Zero literature numerical comparators consumed
+  [PASS] Zero fitted selectors consumed
+  [PASS] Zero new admissions; A_min fixed
+  [PASS] Sub-route labels S1-S3 are local stretch-attempt labels (no new vocabulary)
+  [PASS] Retained authorities (X1)-(X4) markdown-link-cited in note
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+
+  PASS = 50
+  FAIL = 0
+
+  Outcome: ALL SYMBOLIC CHECKS PASS (S1-S3 failure steps,
+  (T2) six-ray-locus enumeration, (T3) Cycle 3 / 4 distinction
+  verified by sympy.
+
+----- stderr -----
+

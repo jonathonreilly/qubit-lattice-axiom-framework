@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 323 |
+| **retained_bounded** | 324 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 541 |
+| `audited_clean` | 542 |
 | `audited_conditional` | 163 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1426 |
+| `unaudited` | 1425 |
 
 | claim_type | count |
 |---|---:|
@@ -137,6 +137,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | D | - |
@@ -1293,6 +1294,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The supplied runner source/stdout do not match the note's stated configuration or tables: the runner defaults/stdout use 12 realizations while the note states 10, and completed N=80 collapse entries already differ numerically. The asserted N=100 threshold 0.10 pocket is not present in the supplied stdout because the run timed out, and the imported generator/propagator infrastructure is not supplied as a one-hop authority.
 - **rationale:** Issue: the note's bounded tables are stale relative to the supplied runner source/stdout, and the runner depends on unlisted imported infrastructure for graph generation, propagation, layernorm, and pruning. Why this blocks: the conclusion depends on exact finite rows, especially the N=100 layernorm collapse pocket, but the current packet neither reproduces those rows nor supplies the imported closure authority. Repair target: align the runner/note configuration, provide a completed cached log or sliced deterministic runner for the stated sweep, and cite/audit the imported infrastructure. Claim boundary until fixed: the packet only supports partial qualitative observations from the completed N=80 stdout, not the full bounded claim.
 - **auditor confidence:** high
+
+### `asymmetry_persistence_joint_card_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Dense 3D generated same-graph joint card for N=80 with npl=50 and N=100 with npl=60, 8 matched seeds, thresholds 0.00/0.10/0.20, measuring pur_cl, pur_min, gravity delta, and corrected Born |I3|/P under linear and layer-normalized propagation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-132018-20260517T132018Z-063678e3-asymmetry_persistence_jo-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The binding evidence is exactly the N=80 and N=100 joint card rows from the cached runner log, showing same-graph pur_cl, pur_min, gravity, and corrected Born |I3|/P for matched-seed dense 3D generated graphs.  _(class `C`)_
+- **chain closes:** True — The cached runner output matches the note's retained N=80/100 tables and the provided runner source performs graph generation, propagation, purity, gravity, and corrected Sorkin/Born calculations rather than printing fixed constants. The note explicitly demotes the N=120 probe and central-band comparison outside the binding audited scope.
+- **rationale:** Within the narrowed N=80/100 scope, the claim is supported by a completed cached runner with matching parameters, exit_code 0, and table values matching the note. The runner source computes the listed metrics on generated same-graph instances and includes the corrected -P(empty) Born term, so the load-bearing step is a bounded first-principles compute rather than a definition, renaming, or tuned external comparison. The gravity language is appropriately limited: the retained result is primarily a decoherence and Born-clean coexistence claim, not a robust gravity win across the broader lane.
+- **auditor confidence:** medium
 
 ### `asymmetry_persistence_mass_window_note`
 

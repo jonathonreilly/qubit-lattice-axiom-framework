@@ -1,0 +1,194 @@
+
+==============================================================================
+AUDIT LANDSCAPE SNAPSHOT
+==============================================================================
+
+Read-only diagnostic. Date snapshot taken from audit data files.
+Repo root: /Users/jonreilly/Projects/Physics/.claude/worktrees/jolly-maxwell-c50482
+
+## 1. AUDIT LEDGER — STATUS COUNTS
+
+  Total claims in ledger: 2135
+
+  By audit_status:
+    unaudited                            1315
+    audited_clean                        532
+    audited_conditional                  190
+    audited_failed                       63
+    audited_decoration                   17
+    audited_numerical_match              9
+    audited_renaming                     8
+    audit_in_progress                    1
+
+  By claim_type:
+    bounded_theorem                      926
+    positive_theorem                     729
+    no_go                                233
+    meta                                 118
+    open_gate                            111
+    decoration                           18
+
+  Retained-grade fraction by claim_type:
+    meta                                    3 /  118  (  2.5%)
+    bounded_theorem                       439 /  926  ( 47.4%)
+    open_gate                              28 /  111  ( 25.2%)
+    no_go                                 111 /  233  ( 47.6%)
+    positive_theorem                      141 /  729  ( 19.3%)
+    decoration                              0 /   18  (  0.0%)
+
+## 2. AUDIT QUEUE — PENDING SNAPSHOT
+
+  Total pending: 1205
+  Ready (deps cleared): 4
+
+  By criticality:
+    critical    752
+    high        35
+    leaf        268
+    medium      150
+
+  Ready items detail (4):
+    - wave_static_direct_probe_fine_note  (positive_theorem, critical)
+    - lattice_distance_law_note  (bounded_theorem, medium)
+    - fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16  (open_gate, leaf)
+    - thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16  (open_gate, leaf)
+
+## 3. CITATION CYCLES — APPARENT vs GENUINE
+
+  Total cycles in queue: 247
+
+  Cycle length distribution (top 10):
+    length  2: 44 cycles
+    length  3: 23 cycles
+    length  4: 24 cycles
+    length  5: 13 cycles
+    length  6: 5 cycles
+    length  7: 6 cycles
+    length  8: 10 cycles
+    length  9: 5 cycles
+    length 10: 9 cycles
+    length 11: 4 cycles
+    ...
+    longest cycle: 31
+
+  Cycles with strippable-edge instruction: 247
+  Cycles WITHOUT strippable-edge instruction (genuinely circular): 0
+
+## 4. NAMED STRIPPABLE EDGES — LEVERAGE MAP
+
+  Total unique (source, target) edges named for strip: 619
+  Unique source notes with at least one strippable edge: 83
+  Unique target notes referenced: 236
+
+  Top 10 SOURCE notes (would need editing in repair pass):
+     42 edges to strip  (axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01)
+     41 edges to strip  (c3_symmetry_preserved_interpretation_note_2026-05-08)
+     34 edges to strip  (dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18)
+     33 edges to strip  (dm_leptogenesis_ne_active_column_axiom_boundary_note_2026-04-16)
+     31 edges to strip  (a3_r5_hostile_review_confirms_obstruction_note_2026-05-08_r5hr)
+     29 edges to strip  (a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1)
+     29 edges to strip  (a3_route3_anomaly_inflow_bounded_obstruction_note_2026-05-08_r3)
+     27 edges to strip  (dm_leptogenesis_exact_kernel_closure_note_2026-04-15)
+     23 edges to strip  (angular_kernel_underdetermination_no_go_note)
+     22 edges to strip  (cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25)
+
+  Top 10 TARGET notes (cite-only references to these):
+     18 sources reference  (publication.ci3_z3.publication_matrix)
+     16 sources reference  (neutrino_mass_reduction_to_dirac_note)
+     15 sources reference  (pmns_corner_transport_active_block_note)
+     14 sources reference  (neutrino_dirac_two_higgs_canonical_reduction_note)
+     14 sources reference  (pmns_active_four_real_source_from_transport_note)
+     14 sources reference  (lepton_single_higgs_pmns_triviality_note)
+     11 sources reference  (planck_scale_conditional_completion_note_2026-04-24)
+     11 sources reference  (dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16)
+     11 sources reference  (dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16)
+     10 sources reference  (emergent_lorentz_invariance_note)
+
+## 5. SIMULATION — IF ALL NAMED EDGES WERE STRIPPED
+
+  Cycles resolved by stripping named edges: 247
+  Cycles NOT resolved (genuine or unnamed): 0
+
+  Apparent-cycle fraction: 100.0%
+
+  If a single source-graph repair pass strips all named edges,
+  approximately 247 cycles vanish from the queue.
+
+  Remaining 0 cycles would need either:
+    - genuine audit of the break target (real dependency)
+    - additional non-load-bearing edges identified by re-audit
+
+  Repair-pass scope:
+    83 source notes need editing
+    619 markdown links total to strip-or-relocate
+    average 7.5 edits per note
+
+## 6. RECOMMENDATION — HIGHEST-LEVERAGE NEXT MOVE
+
+  Current state:
+    4 of 1205 items ready (0.33%)
+    247 citation cycles blocking the queue
+    247 cycles have explicit informational-co-cycle instructions
+    0 cycles WITHOUT such instructions
+    83 unique primary_break_target notes
+
+  How the cycle-resolution flow actually works:
+    1. Audit pipeline names each cycle's `primary_break_target` (the
+       node the auditor should audit) and its `co-cycle citations`
+       (other cycle members the auditor should treat as informational)
+    2. Codex auditor runs on the break target with the prompt instruction
+       that the named co-cycle nodes are non-load-bearing.
+    3. If the auditor returns `audited_clean` (chain closes without the
+       co-cycle deps), the node moves to a settled status.
+    4. A source-graph repair pass then strips the now-confirmed-cite-only
+       markdown links from the source note. effective_status leaves
+       retained_pending_chain.
+    5. Re-run the audit pipeline (build_citation_graph + downstream)
+       and the cycle disappears from cycle_inventory.
+
+  Path to 'finish the full audit':
+    A. Audit-prep contributions for high-leverage break targets
+       (one PR per target, like the F-C contribution for
+       ANOMALY_FORCES_TIME_THEOREM in PR #1262). Verifies the
+       co-cycle nodes really are non-load-bearing before the
+       Codex auditor runs.
+       Volume: ~83 target notes, one PR each.
+    B. Build a source-graph repair tool (--apply mode) that
+       mechanically strips markdown links after audited_clean
+       verdicts. Currently the audit_queue says "a separate
+       source-graph repair pass must strip the markdown links";
+       that tool doesn't yet exist as a one-command operation.
+    C. The audit lane's automated nightly pipeline cranks through
+       audits on its own (visible in git log: "audit: nightly
+       repair and pipeline refresh (automated)" commits).
+       New audit-prep contributions accelerate (A).
+
+  Highest-leverage NEW work the user can authorize:
+    Option 1: Build the strip tool (B) — mechanical, finishes the
+      cycle-3-of-5 step that currently has no tooling. After it
+      lands, each audited_clean verdict can be followed up with
+      a one-command strip.
+    Option 2: Author audit-prep contributions (A) for the top-N
+      highest-criticality break targets. Direct contributions
+      to clearing the queue.
+    Option 3: Let the automated pipeline (C) crank; just monitor
+      with this diagnostic and intervene when specific stuck items
+      need manual prep.
+
+==============================================================================
+END OF SNAPSHOT
+==============================================================================
+
+To re-run after audit state changes:
+  python3 scripts/audit_landscape_snapshot.py
+
+To inspect the cycle-clearing repair workflow (dry-run stub):
+  python3 scripts/source_graph_repair_pass.py --limit 5
+
+To author an audit-prep contribution for a specific break target
+(see PR #1262 for the template):
+  1. Pick a primary_break_target from sections 4/5 above
+  2. 5-agent special-forces fan-out on the target's claims
+  3. Write docs/<TARGET>_HOSTILE_AUDIT_FINDINGS_NOTE_<DATE>.md
+  4. Pair with verification runner + cache
+  5. Open PR with audit_support claim_type

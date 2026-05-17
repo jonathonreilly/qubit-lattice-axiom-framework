@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 9 |
+| ~~audited_renaming~~ | 10 |
 | ~~audited_conditional~~ | 186 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -50,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 9 |
-| `unaudited` | 1430 |
+| `audited_renaming` | 10 |
+| `unaudited` | 1429 |
 
 | claim_type | count |
 |---|---:|
@@ -965,6 +965,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_theta_hierarchy_open_scalar_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
@@ -5148,6 +5149,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Since P_1plaq is a bijection [0,infinity) -> [0,1) and P_L(beta) lies in [0,1), beta_eff,L(beta) := P_1plaq^{-1}(P_L(beta)) is well-defined and unique.  _(class `A`)_
 - **chain closes:** True — Under the bounded scope, the decisive existence and uniqueness claim is a direct analytic/algebraic consequence of compactness, nonconstant observables, strict positivity of the finite measures, and the inverse-function construction stated in the packet. The open g_bare and staggered-Dirac gates affect positive-theorem promotion and downstream quantitative interpretation, but they are explicitly not load-bearing for this finite-surface reduction-existence theorem. The canonical beta_eff number and old constant-lift comparison are support consequences outside the ratified clean scope.
 - **rationale:** Under the bounded scope, the decisive existence and uniqueness claim is a direct analytic/algebraic consequence of compactness, nonconstant observables, strict positivity of the finite measures, and the inverse-function construction stated in the packet. The open g_bare and staggered-Dirac gates affect positive-theorem promotion and downstream quantitative interpretation, but they are explicitly not load-bearing for this finite-surface reduction-existence theorem. The canonical beta_eff number and old constant-lift comparison are support consequences outside the ratified clean scope.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** An abstract per-weight diagonal-to-convolution representation of the stripped residual operator after assigning the class-function coefficients from that same residual operator.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-183857-41cdea85-gauge_vacuum_plaquette_r-013`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note defines Z_beta^env as the class function whose normalized convolution operator equals R_beta^env, with coefficients z_(p,q)^env = (kappa_(p,q)/a_(p,q)^4) z_(0,0)^env.  _(class `E`)_
+- **chain closes:** False — The equality closes only by definition of Z_beta^env, not by an independent derivation that the coefficients come from the unmarked spatial Wilson environment. Also, applying I3 requires rho_(0,0)=1, while the packet gives rho_(0,0)=kappa_(0,0) and I1 only supplies kappa_(0,0)>0.
+- **rationale:** The runner mirrors the definitional step: it sets z_env = rho_env * z_00_env and then verifies the resulting diagonal matrices agree. It does not construct Z_beta^env from the unmarked Wilson environment integral or derive the disputed bridge. Its claimed rho_(0,0)=1 check also does not prove the needed normalization; it only reduces rho_(0,0) to kappa_(0,0).
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10`

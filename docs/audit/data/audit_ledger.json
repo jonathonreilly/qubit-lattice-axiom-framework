@@ -92129,22 +92129,53 @@
       "verdict_rationale": "Under the bounded scope, the decisive existence and uniqueness claim is a direct analytic/algebraic consequence of compactness, nonconstant observables, strict positivity of the finite measures, and the inverse-function construction stated in the packet. The open g_bare and staggered-Dirac gates affect positive-theorem promotion and downstream quantitative interpretation, but they are explicitly not load-bearing for this finite-surface reduction-existence theorem. The canonical beta_eff number and old constant-lift comparison are support consequences outside the ratified clean scope."
     },
     "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T18:42:19.663959+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Standalone compact-group temporal-gauge Wilson mixed-kernel factorization over spatial links, per-link Peter-Weyl convolution diagonalization, trivial-channel normalization, and marked/non-marked compression on tensor-product Peter-Weyl marked-link basis functions, excluding SU(3), beta=6, source-sector, transfer-operator, and physical-framework claims.",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite Wilson L_s^3 x L_t operator-level realization: X=(chi_(1,0)+chi_(0,1))/6 acts as the SU(3) character-recurrence operator J and finite plaquette observables are spectral moments of J in the induced transfer state; beta=6 Perron/thermal identification and canonical P(6) are excluded.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Abstract finite-truncation SU(3) character-algebra theorem only: for B_N={(p,q):0<=p,q<=N} and an abstract real nonnegative conjugation-symmetric normalized coefficient sequence rho_(p,q), the central class-function convolution operator built from Z=sum d_(p,q) rho_(p,q) chi_(p,q) acts diagonally as C chi_(p,q)=rho_(p,q) chi_(p,q), the coefficients are unique, and the diagonal operator is positive, self-adjoint, and swap-symmetric. This excludes any identification with Wilson action data, beta=6 framework-point coefficients, unmarked spatial environment compression, physical plaquette transfer, or parent residual-environment closure."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "bounded_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained_bounded",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "32a77b30a1e69d6559b145427b551cd80089a2c94f2b7aabef102004cdfe104f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260517-183857-41cdea85-gauge_vacuum_plaquette_r-013",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The equality closes only by definition of Z_beta^env, not by an independent derivation that the coefficients come from the unmarked spatial Wilson environment. Also, applying I3 requires rho_(0,0)=1, while the packet gives rho_(0,0)=kappa_(0,0) and I1 only supplies kappa_(0,0)>0.",
       "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "An abstract per-weight diagonal-to-convolution representation of the stripped residual operator after assigning the class-function coefficients from that same residual operator.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T18:42:19.663959+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -92155,32 +92186,32 @@
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The note defines Z_beta^env as the class function whose normalized convolution operator equals R_beta^env, with coefficients z_(p,q)^env = (kappa_(p,q)/a_(p,q)^4) z_(0,0)^env.",
+      "load_bearing_step_class": "E",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "cead0aee658d64992b4ee464b214d95a585a9e9f5324023c3b1e991a0feddfa7",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only after a revised note constructs Z_beta^env from the unmarked spatial Wilson integral and supplies the missing kappa_(0,0)=1 normalization or an equivalent rescaled statement.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 20,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 20
       },
       "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner mirrors the definitional step: it sets z_env = rho_env * z_00_env and then verifies the resulting diagonal matrices agree. It does not construct Z_beta^env from the unmarked Wilson environment integral or derive the disputed bridge. Its claimed rho_(0,0)=1 check also does not prove the needed normalization; it only reduces rho_(0,0) to kappa_(0,0)."
     },
     "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10": {
       "audit_date": "2026-05-10T23:42:59.130843+00:00",

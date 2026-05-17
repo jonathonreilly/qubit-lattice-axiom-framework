@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py
+runner_sha256: ae6b1a684d08e06d640ec7f3c4b103eff991e1b811d445f12b6068f2f4b8b73e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of CPT * H * (CPT)^{-1} = H from premises
+      (1) C H C = -H, (2) P H P = -H, (3) T H T^{-1} = H
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: instance (I) -- abstract 2x2 real Hermitian H
+----------------------------------------------------------------------------------------
+  [PASS (A)] (I.0a) H real: H == conjugate(H)
+  [PASS (A)] (I.0b) H Hermitian: H == H.H
+  [PASS (A)] (I.0c) C real, diagonal, involutory: C^2 == I
+  [PASS (A)] (I.0d) P real, involutory: P^2 == I
+  [PASS (A)] (I.0e) T^2 = K^2 = I: conjugate(conjugate(H)) == H
+
+----------------------------------------------------------------------------------------
+Part 2: premise identities (1), (2), (3) on instance (I)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (1) premise on (I): C H C == -H  (C H C = [[0, -1], [-1, 0]], -H = [[0, -1], [-1, 0]])
+  [PASS (A)] (2) premise on (I): P H P == -H  (P H P = [[0, -1], [-1, 0]], -H = [[0, -1], [-1, 0]])
+  [PASS (A)] (3) premise on (I): T H T^{-1} == H  (H real => H^* = H)
+
+----------------------------------------------------------------------------------------
+Part 3: (P1) CPT * H * (CPT)^{-1} == H on instance (I)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) instance (I): CPT * H * (CPT)^{-1} == H  (CPT * H * (CPT)^{-1} = [[0, 1], [1, 0]])
+
+----------------------------------------------------------------------------------------
+Part 4: step-by-step substitution chain matches parent verbatim
+----------------------------------------------------------------------------------------
+  [PASS (A)] Substitution step A: CPT * H * (CPT)^{-1} == C P (H^*) P C
+  [PASS (A)] Substitution step A -> B: H^* == H (premise (3))
+  [PASS (A)] Substitution step B -> C: P H P == -H (premise (2))
+  [PASS (A)] Substitution step C -> D: C(-H)C == -(CHC) (linearity)
+  [PASS (A)] Substitution step D -> E: -(CHC) == -(-H) (premise (1))
+  [PASS (A)] Substitution step E -> F: -(-H) == H (sign)
+
+----------------------------------------------------------------------------------------
+Part 5: instance (II) -- bipartite 4x4 framework-shaped H_lat
+----------------------------------------------------------------------------------------
+  [PASS (A)] (II.0a) H_lat real: H_lat == conjugate(H_lat)
+  [PASS (A)] (II.0b) H_lat Hermitian: H_lat == H_lat.H
+  [PASS (A)] (II.0c) C_lat real, diagonal, involutory: C^2 == I
+  [PASS (A)] (II.0d) P_lat real, permutation, involutory: P^2 == I
+
+----------------------------------------------------------------------------------------
+Part 6: premise identities on framework-shaped instance (II)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (1) premise on (II): C H C == -H  (sublattice parity flips sign on every cross-sublattice entry of H_lat)
+  [PASS (A)] (2) premise on (II): P H P == -H  (mirror inversion plus sublattice-parity grading yields the negation)
+  [PASS (A)] (3) premise on (II): T H T^{-1} == H
+
+----------------------------------------------------------------------------------------
+Part 7: (P1) CPT * H * (CPT)^{-1} == H on framework instance (II)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) instance (II): CPT * H * (CPT)^{-1} == H
+  [PASS (A)] Chain step A (II): CPT * H * (CPT)^{-1} == C P (H^*) P C
+  [PASS (A)] Chain step A -> B (II): H^* == H
+  [PASS (A)] Chain step B -> C (II): P H P == -H
+  [PASS (A)] Chain step C -> D (II): C(-H)C == -(CHC)
+  [PASS (A)] Chain step D -> E (II): -(CHC) == -(-H)
+  [PASS (A)] Chain step E -> F (II): -(-H) == H
+
+----------------------------------------------------------------------------------------
+Part 8: counterfactual (premise (2) sign load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (cf.2a) counterfactual: premise (2) violated, P H P != -H  (counterfactual uses P_cf = I, gives P H P = +H)
+  [PASS (A)] (cf.2b) counterfactual: CPT * H * (CPT)^{-1} == -H (not H)  (confirms premise (2)'s -H sign is load-bearing for (P1))
+
+----------------------------------------------------------------------------------------
+Part 9: counterfactual (H non-real breaks premise (3))
+----------------------------------------------------------------------------------------
+  [PASS (A)] (cf.3a) counterfactual H' = sigma_y is Hermitian: H' == H'.H
+  [PASS (A)] (cf.3b) counterfactual: premise (3) violated, T H' T^{-1} != H'  (T H' T^{-1} = -H', not H'; H' is non-real)
+  [PASS (A)] (cf.3c) counterfactual: CPT * H' * (CPT)^{-1} != H' when premise (3) fails  (confirms premise (3) (H real) is load-bearing for (P1) identity)
+
+----------------------------------------------------------------------------------------
+Part 10: this note's CPT is distinct from sibling Theta_H = P K
+----------------------------------------------------------------------------------------
+  [PASS (A)] (sib.1) Theta_H = P K and CPT = C P T act differently on v=(1,1)^T  (two distinct antiunitary operators (length-2 vs length-3); not logically overlapping)
+  [PASS (A)] (sib.2a) sibling instance: C D C = -D  (sibling's premise 1)
+  [PASS (A)] (sib.2b) sibling instance: P D P = -D  (sibling's premise 2)
+  [PASS (A)] (sib.2c) sibling instance: T D T = D   (sibling's premise 3, D real)
+  [PASS (A)] (sib.2d) sibling: Theta_H * H * Theta_H^{-1} = H on H = i D
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    Premise identities (1), (2), (3) on 2x2 instance (I)
+    Premise identities (1), (2), (3) on bipartite L=4 instance (II)
+    (P1) CPT * H * (CPT)^{-1} == H on both instances
+    Step-by-step chain C P H P C -> C(-H)C -> -(-H) -> H on both
+    Counterfactual: violating premise (2)'s sign breaks (P1)
+    Counterfactual: non-real H violates premise (3), breaks (P1)
+    Distinct from sibling Theta_H = P K: different operator-length
+
+========================================================================================
+TOTAL: PASS=39 FAIL=0
+========================================================================================

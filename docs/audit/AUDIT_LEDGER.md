@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 325 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1235 |
+| unaudited | 1234 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 174 |
-| ~~audited_failed~~ | 19 |
+| ~~audited_failed~~ | 20 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -46,10 +46,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 543 |
 | `audited_conditional` | 174 |
 | `audited_decoration` | 19 |
-| `audited_failed` | 63 |
+| `audited_failed` | 64 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1432 |
+| `unaudited` | 1431 |
 
 | claim_type | count |
 |---|---:|
@@ -888,6 +888,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -7737,6 +7738,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   - `OBSERVABLE_GENERATOR_ADDITIVITY_FROM_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-05-10.md`
   - `OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md`
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the stated finite-block algebraic counterexample that F_p=r^p factorizes multiplicatively while failing block additivity for nontrivial independent subsystems.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-145747-bc2044d8-observable_principle_p1_-011`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note asserts that for p != 0 and nontrivial r_A,r_B, F_p[J_A ⊕ J_B]=r_A^p r_B^p is never equal to F_p[J_A]+F_p[J_B]=r_A^p+r_B^p, so F_p is a non-additive counterexample compatible with multiplicative factorization.  _(class `A`)_
+- **chain closes:** False — The existential obstruction is plausible, but the stated universal P3 condition is false: r_A^p r_B^p = r_A^p + r_B^p can hold accidentally, e.g. r_A^p=r_B^p=2. The runner checks selected witnesses only and does not establish the note's 'whenever' claim.
+- **rationale:** The algebraic determinant and multiplicative F_p checks are real computations, and there are no external comparator or tuned numerical inputs. However the load-bearing non-additivity statement is over-quantified: the equation xy=x+y has positive nontrivial solutions, so the claimed inequality for every r_A,r_B != 1 is not true. A reduced claim saying F_p is not globally additive because explicit witness pairs have nonzero defect would likely close, but the source note as written does not.
 - **auditor confidence:** high
 
 ### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`

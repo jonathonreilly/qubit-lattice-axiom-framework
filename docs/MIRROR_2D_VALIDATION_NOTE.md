@@ -130,3 +130,15 @@ propagator premise closes from the imported-authority cache.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [mirror_program_synthesis](MIRROR_PROGRAM_SYNTHESIS.md)
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/mirror_born_audit.py`

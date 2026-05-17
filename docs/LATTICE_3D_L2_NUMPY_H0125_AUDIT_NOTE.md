@@ -73,3 +73,16 @@ Treat this as a bounded negative for the current `h = 0.125` credibility lane:
 - the computation now reaches `h = 0.125`
 - the linear quantum bookkeeping survives
 - but the Newtonian weak-field lane does not reappear on the reduced family
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/lattice_3d_l2_numpy.py`
+- `scripts/numpy_replay_bootstrap.py`

@@ -9,7 +9,7 @@ Historical flip seeds from the replay set:
 - `N=100`: seeds `2, 3, 13`
 
 Current guard path:
-- `scripts/channel_count_guarded_prune.py`
+- **Primary runner:** `scripts/channel_count_guarded_prune.py`
 - guard mode: channel-count preserving, `q=0.10`
 
 ## Per-seed comparison
@@ -48,3 +48,18 @@ The clearest non-rescue case is:
 - `N=100`, seed `3`: flip remains and `eff_ch` still falls `3.02 -> 2.60`
 
 So the guard is a seed-selective channel-preservation mechanism, not a pure averaging fix.
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/causal_field_mass_scaling.py`
+- `scripts/dense_prune_q003_joint_strict.py`
+- `scripts/three_d_joint_test.py`
+- `scripts/three_d_modular_gravity_mass_scaling.py`

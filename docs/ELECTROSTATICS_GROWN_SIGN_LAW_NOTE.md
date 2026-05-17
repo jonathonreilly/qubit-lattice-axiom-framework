@@ -99,3 +99,15 @@ Promoting from bounded conditional to retained would require:
 3. Either keeping the note scoped to the single grown row (current
    stance) or extending the runner to a family of grown geometries
    with hard PASS gates.
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/gate_b_grown_joint_package.py`

@@ -38467,7 +38467,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "b172ccf6365fa16e4cba0a80adc87a15f3074e8d5ae8b09576165e3da76ce905",
+      "note_hash": "ce04ebde8c9648c79b23951e201be35934db474a7e862bf0edf244d714f3fddf",
       "path": "docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_mass_scaling.py",
       "title": "Asymmetry Persistence Mass Window Note"
@@ -38478,7 +38478,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "57b9a267a84c03e2a0c4dba2920ef2aac1924a0a8073d6752bc32054fde7adb3",
+      "note_hash": "0ac7d42094e178d21da9c2ef292073444c9e5781e72d46ddb25d9cec37abeae0",
       "path": "docs/ASYMMETRY_PERSISTENCE_PILOT_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_pilot.py",
       "title": "Asymmetry Persistence Pilot Note"
@@ -39306,7 +39306,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "063d57fda038eb7346731936475de4ac1fe6c0f9bba513f6f0cf2b3ae986d38f",
+      "note_hash": "36e8fd61bae9673405a917fdeb3a5cbc617320dff5fd502ab7a562cc9d1ad4aa",
       "path": "docs/BORN_LANE_COMPARISON_NOTE.md",
       "runner_path": "scripts/born_compare_modular_central_ln.py",
       "title": "Born Lane Comparison Note"
@@ -40215,7 +40215,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "26296f8e5f361e0e1ed23675f64fa94676da37c4c109cd2946897eebca68192e",
+      "note_hash": "09a07ea78b8f61d49e1cc7cb60ec45476cb6217f5e0400796e2872ef68571bc6",
       "path": "docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md",
       "runner_path": "scripts/central_band_born_dense_sweep.py",
       "title": "Central-Band Dense Corrected Born Sweep Note"
@@ -40226,7 +40226,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "7e10de1f8ccc6646e8dce3d407ae165a0ff2d17e7e558dd58b554a39ca79289b",
+      "note_hash": "72190815193e8906c8dfec13fe24f3b9ced32a3d23f6f248b369586a2b697c0a",
       "path": "docs/CENTRAL_BAND_BORN_LARGEN_NOTE.md",
       "runner_path": "scripts/central_band_born_largeN.py",
       "title": "Central-Band Large-N Corrected Born Note"
@@ -40270,7 +40270,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "a343d4b8ccc7b7cbd00788a04c816f03ab4bb8c1c4991ed1d88a8dd4736d4c07",
+      "note_hash": "d4c645c2394b881f4b553b0fd73ab93ddc8776d65e450528468418681d0c0543",
       "path": "docs/CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md",
       "runner_path": "scripts/central_band_dense_joint_highN.py",
       "title": "Central-Band Dense High-N Joint Card Note"
@@ -40303,7 +40303,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "cf42f800464067f24312d0f7e4e8fe121ea7427e63835348778472bdae78bad4",
+      "note_hash": "0711d98c89484b43ab22284bfd96e3289343966a5a47dc2d2cf99335aa5b9647",
       "path": "docs/CENTRAL_BAND_LAYERNORM_NOTE.md",
       "runner_path": "scripts/central_band_layernorm_combo.py",
       "title": "Central-Band Removal + Layernorm Note"
@@ -42718,7 +42718,7 @@
       "deps": [
         "valley_linear_action_note"
       ],
-      "note_hash": "963a965fc342582765a87584a302ea835a72bcb2d4902497b6f82ba7573cbeb8",
+      "note_hash": "a5628cf0bd61cceabcdfe00b8b36227aec3dfd795beea0cc7a383100b97c719b",
       "path": "docs/DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md",
       "runner_path": "scripts/decoherence_action_independence.py",
       "title": "Decoherence is Action-Independent"
@@ -42751,7 +42751,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "cf8423b5d175b2749bb2d532516cba5d4e7fb4af5430537c3c780ffce32bee99",
+      "note_hash": "11c6d6115e6ddbc4b165e5fd6d0ca4ec656ba09ff75cafdf167c06fe95066bdc",
       "path": "docs/DENSE_PRUNE_GUARD_SEED_NOTE.md",
       "runner_path": "scripts/channel_count_guarded_prune.py",
       "title": "Dense Prune Guard Seed Note"
@@ -42960,7 +42960,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "0d0514b3035ff8e8824fa547780234c8d6b2f02b007ca42a4664ecf706f019f3",
+      "note_hash": "dbf4752d08cb51f4ab5a1a21eac03b57b9aec946b3a97540ed18efcc06a7f503",
       "path": "docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md",
       "runner_path": "scripts/directional_b_density_stencil_transfer.py",
       "title": "Directional-B Density Stencil Note"
@@ -46832,7 +46832,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "84dc0c6cbb84a0236d1b49b47056039db5e56a976ed34e570012b944b624891a",
+      "note_hash": "681d4be08ee2be1209abc0bb84cba278c8464c4f12fda9cab3788f5f2d23a6d1",
       "path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md",
       "runner_path": "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py",
       "title": "Electrostatics Grown Sign-Law Note"
@@ -46996,7 +46996,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "f53983e13afb07392ae4cda096a24c077e64a97ac7a62ac1ddedc0f2f1fd239c",
+      "note_hash": "37931105836fcd6d9836da0a416fcc4ec842cd8a0339abeec830564a8c38185d",
       "path": "docs/EVOLVING_NETWORK_PROTOTYPE_NOTE.md",
       "runner_path": "scripts/evolving_network_prototype_v2.py",
       "title": "Evolving Network Prototype Note"
@@ -49870,7 +49870,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "ae006f7942965cf284e904ba4a2f476841ee10f77c3544d979d62a11d76a83be",
+      "note_hash": "48733cf0efad04db89b31d5c95f0b01669ebc0d3f8f949e1c462459dcc8bad92",
       "path": "docs/H0125_WIDER_W4_PROBE_NOTE.md",
       "runner_path": "scripts/lattice_3d_l2_wide_h0125_w4_probe.py",
       "title": "Wider `h = 0.125` `phys_w = 4` Probe Note"
@@ -54889,7 +54889,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "259ece7a4c2c353ec5c91d84cd30548ce08f266b620e777a1ecb46385ecc710f",
+      "note_hash": "6c5fd4b680a54ee39987228a5256848205c7626d09f2ee08bcf874c7d950aa06",
       "path": "docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md",
       "runner_path": "scripts/lattice_3d_l2_numpy_h0125_audit.py",
       "title": "3D 1/L^2 + h^2 Numpy h=0.125 Audit"
@@ -56316,7 +56316,7 @@
       "deps": [
         "mirror_program_synthesis"
       ],
-      "note_hash": "84bce91b5b7191a160e71a550ba2b72cd72fed2129fb8f68595e9c642accc5d7",
+      "note_hash": "0f49506b2e2bb16e2105adecbfd846a4c32e2f008e04405543fc27980e104cda",
       "path": "docs/MIRROR_2D_VALIDATION_NOTE.md",
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Validation Note"
@@ -58716,7 +58716,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "9f55a115af4c24e3a5b9a70760d507d978167bc97dde4248a29dd28193ea3f34",
+      "note_hash": "55466f27763d858e4267da4c4a649497828f653fc5c85847e9e98e418bbd4978",
       "path": "docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md",
       "runner_path": "scripts/persistent_object_blended_readout_outer_transfer_sweep.py",
       "title": "Persistent Object Blended Readout Outer Transfer Sweep"

@@ -37,9 +37,16 @@ dynamics closure.
   rests on the PL boundary-link and PL cap-uniqueness theorems cited
   immediately below; both are `audited_conditional`, not retained-grade.
 - [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md)
-  (`claim_type: positive_theorem`, `audit_status: audited_conditional`) —
+  (`claim_type: bounded_theorem`, `audit_status: audited_clean`,
+  `effective_status: retained_bounded`) —
   PL boundary-link disk theorem on `B_R`, one of the two cited PL
-  authorities behind the `PL S^3` compactification.
+  authorities behind the `PL S^3` compactification. (Tier corrected
+  2026-05-17: prior wording said `positive_theorem` /
+  `audited_conditional`; the 2026-05-17 ledger snapshot has it at
+  `bounded_theorem` / `audited_clean` / `retained_bounded`. The
+  composite `PL S^3` background still inherits the weakest of the two
+  cited PL companions' tiers, which is the cap-uniqueness companion's
+  `audited_conditional`.)
 - [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md)
   (`claim_type: bounded_theorem`, `audit_status: audited_conditional`) —
   PL cap-uniqueness companion authority for the `PL S^3` compactification.
@@ -119,20 +126,25 @@ explicitly records this as the open `BLOCKED` line.
 ### `S^3` compactification
 
 [`S3_GENERAL_R_DERIVATION_NOTE.md`](S3_GENERAL_R_DERIVATION_NOTE.md)
-already gives the retained spatial background candidate:
+already gives the bounded composite spatial background candidate
+(inherits the weakest of the two cited PL companions' tiers, currently
+`audited_conditional` via the cap-uniqueness companion):
 
 - the cone-capped cubical ball is PL homeomorphic to `S^3` for all `R >= 2`
 
 ### Anomaly-forced time
 
 [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
-already gives the retained temporal background candidate:
+gives the cited temporal-direction result (`bounded_theorem`,
+currently `unaudited`; conditional on admissions (i)-(iv) — see
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)):
 
 - anomaly cancellation plus chirality plus the one-clock Cauchy requirement force `d_t = 1`
 
-So the clean kinematic background remains:
+So the cited kinematic background is:
 
-- `PL S^3 x R`
+- `PL S^3 x R` (bounded composite; tier inherited from the upstream
+  composite — see "Upstream-tier accounting" remark added below).
 
 ### Exact boundary Hamiltonian
 
@@ -169,10 +181,17 @@ Why it is the right bounded candidate:
    size is fixed by the route-2 background rather than by an extra ad hoc
    time choice.
 
-So Route 2 does yield a well-defined discrete transfer-matrix bridge:
+So Route 2 yields a well-defined discrete transfer-matrix bridge,
+conditional on the cited upstream tiers (`audited_conditional` for the
+`PL S^3` composite, `unaudited` for `ANOMALY_FORCES_TIME_THEOREM`,
+`retained_bounded` for `OH_SCHUR_BOUNDARY_ACTION_NOTE`):
 
-> exact spatial slice + exact one-clock time + exact boundary Hamiltonian
+> cited spatial slice + cited one-clock time + bounded boundary Hamiltonian
 >  => bounded slice transfer operator on `PL S^3 x R`
+
+(Phrasing corrected 2026-05-17: prior wording "exact spatial slice +
+exact one-clock time + exact boundary Hamiltonian" overstated each of
+the three upstreams' tiers.)
 
 ## What this bridge does
 
@@ -214,12 +233,21 @@ Equivalently:
 
 The companion runner checks:
 
-- `S^3` topology is exact
-- anomaly-forced time is exact
+- `S^3` topology composite at the cited tier (`audited_conditional`
+  composite via the cap-uniqueness companion);
+- anomaly-forced time at the cited tier (`bounded_theorem`, currently
+  `unaudited` per the 2026-05-17 ledger; admissions (i)-(iv) per the
+  upstream [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md));
 - the Schur boundary generator is symmetric positive definite
+  (`OH_SCHUR_BOUNDARY_ACTION_NOTE` at `retained_bounded` on the
+  strong-field bridge surface only);
 - the induced transfer operator `T_R = exp(-Lambda_R)` is a positive
-  contraction on the current bridge surface
-- the atlas still does not contain an exact GR dynamics bridge
+  contraction on the current bridge surface;
+- the atlas still does not contain an exact GR dynamics bridge.
+
+(Tier-accuracy corrected 2026-05-17: prior wording "`S^3` topology is
+exact / anomaly-forced time is exact" did not match the cited
+upstreams' actual tiers.)
 
 ## Bottom line (scope-bounded)
 
@@ -238,3 +266,72 @@ That is a real discrete-action bridge construction on the cited
 strong-field bridge surface, conditional on the cited authorities. It
 is **not** an exact Einstein/Regge GR closure theorem and **not** a
 derivation of the upstream inputs themselves.
+
+## Upstream-tier accounting (2026-05-17)
+
+Per the 2026-05-17 ledger snapshot, the cited upstreams sit at:
+
+| Upstream | `claim_type` | `audit_status` | `effective_status` |
+|---|---|---|---|
+| `s3_boundary_link_theorem_note` | `bounded_theorem` | `audited_clean` | `retained_bounded` |
+| `s3_cap_uniqueness_note` | `bounded_theorem` | `audited_conditional` | `audited_conditional` |
+| `anomaly_forces_time_theorem` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `oh_schur_boundary_action_note` | `bounded_theorem` | (per ledger) | `retained_bounded` |
+| `s3_general_r_derivation_note` | `positive_theorem` | (per ledger) | (per ledger) |
+
+**Tier accounting:** the composite `PL S^3` background inherits the
+weakest of the two cited PL companions' tiers, currently
+`audited_conditional` (via cap-uniqueness). The combined `PL S^3 x R`
+background further inherits from `ANOMALY_FORCES_TIME_THEOREM` (currently
+`unaudited`). The slice generator `Lambda_R` from
+`OH_SCHUR_BOUNDARY_ACTION_NOTE` is `retained_bounded` on the
+strong-field bridge surface only — not on the full retained-grade
+dynamical sector. The composite bridge is therefore bounded at the
+weakest upstream tier; earlier body wording that called any of these
+"exact" or the composite "retained" was tier-loose and has been
+corrected inline.
+
+**Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** the bridge
+imports the `d_t = 1` conclusion as the one-clock Cauchy step. Per the
+upstream parent's recent
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+`d_t = 1` decomposes into a derived part (Step 3 of the parent:
+`d_t ∈ {1, 3, 5, ...}`) and an inherited part (admission (iv) excludes
+`d_t > 1`). Any future revision to admission (iv) propagates directly
+into this bridge's one-clock-step input. The `T_R = exp(-Lambda_R)`
+construction itself is unaffected by the parent's admission structure;
+only the kinematic time-direction input inherits.
+
+## Fix record (2026-05-17, downstream surgical-fix wave)
+
+Three hostile-audit-grade issues patched on this note:
+
+- **F-A (over-claim "exact"/"retained" in body):** §("Exact ingredients
+  already available"), §("Clean bounded bridge candidate" closing line),
+  §("Runnable summary"), and §("Sharp blocker") used "exact" / "retained"
+  for the upstream composite. Per the 2026-05-17 ledger, the composite
+  is at best `audited_conditional` (cap-uniqueness) / `unaudited`
+  (anomaly-forced time). Corrected inline to "cited / bounded
+  composite" wording with explicit tier qualifiers.
+- **F-B (admission-inheritance disclosure):** the new
+  "Upstream-tier accounting (2026-05-17)" section now records the
+  parent's admission structure and links to the upstream F-B
+  framing-fix. The bridge's `T_R = exp(-Lambda_R)` construction itself
+  is unaffected; only the `d_t = 1` kinematic input inherits.
+- **F-C-like (stale s3_boundary_link tier in cited-authorities
+  block):** the boundary-link companion was cited as `positive_theorem`
+  / `audited_conditional`; the 2026-05-17 ledger has it at
+  `bounded_theorem` / `audited_clean` / `retained_bounded`. Corrected
+  inline (mirrors the upstream fix landed in
+  [PR #1507](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1507)).
+
+See companion fix-record:
+[`S3_TIME_TRANSFER_MATRIX_BRIDGE_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+
+Paired verifier:
+`scripts/frontier_s3_time_transfer_matrix_bridge_downstream_fix.py`.
+
+None of these edits change the `T_R = exp(-Lambda_R)` definition, the
+runner-verified spectral-calculus properties (symmetry, positivity,
+contraction), the "Sharp blocker" wording about Einstein/Regge dynamics,
+or any other in-note claim about the bridge itself.

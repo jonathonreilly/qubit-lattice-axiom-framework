@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pns_attack_cascade.py
 runner_sha256: 0c43014ba990349a314df52217703bd756e2348ebc52ef52cb9d84472e000eb8
-timeout_sec: 1800
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 105.01
+elapsed_sec: 156.00
 status: ok
 ----- stdout -----
 
@@ -78,6 +78,5 @@ T9: Attack vector summary
 TOTAL: PASS=34 FAIL=0
 STATUS: ALL PASS — PNS attack cascade complete
 ============================================================
-
 ----- stderr -----
 

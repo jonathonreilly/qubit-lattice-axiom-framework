@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py
 runner_sha256: 980b05ccd3991d3228a46970ae3050d52aaa48890a9fa619813c70abd6c4584d
-timeout_sec: 120
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 66.20
+elapsed_sec: 105.60
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -112,6 +112,5 @@ RESULT
       separately required for the N_e closure claim
 
 PASS=9  FAIL=0
-
 ----- stderr -----
 

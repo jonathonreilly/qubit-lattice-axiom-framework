@@ -16141,6 +16141,10 @@
       "to": "graph_first_selector_derivation_note"
     },
     {
+      "from": "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17",
+      "to": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+    },
+    {
       "from": "lh_doublet_su2_squared_hypercharge_anomaly_cancellation_note_2026-05-01",
       "to": "graph_first_su3_integration_note"
     },
@@ -58378,6 +58382,20 @@
       "runner_path": "scripts/frontier_lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence.py",
       "title": "LH-Doublet Eigenvalue Ratio Proof-Walk Lattice-Independence Bounded Note"
     },
+    "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17": {
+      "claim_id": "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "62974b374440dd13839e39a7c26756afdc697bef24cf2b27d36143b5bfed989c",
+      "path": "docs/LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py",
+      "title": "LH-Doublet Trace-Surface Partition / Ratio Inverse Uniqueness (Narrow Theorem)"
+    },
     "lh_doublet_su2_squared_hypercharge_anomaly_cancellation_note_2026-05-01": {
       "claim_id": "lh_doublet_su2_squared_hypercharge_anomaly_cancellation_note_2026-05-01",
       "claim_type_author_hint": null,
@@ -78216,7 +78234,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 436,
+      "bounded_theorem": 437,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78225,7 +78243,7 @@
       "positive_theorem": 163
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 883,
+      "bounded_theorem": 884,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78233,10 +78251,10 @@
       "open_gate": 123,
       "positive_theorem": 616
     },
-    "edge_count": 9278,
-    "leaf_count": 738,
-    "node_count": 2395,
+    "edge_count": 9279,
+    "leaf_count": 739,
+    "node_count": 2396,
     "root_count": 860,
-    "runners_with_path": 2000
+    "runners_with_path": 2001
   }
 }

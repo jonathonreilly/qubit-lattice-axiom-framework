@@ -13620,6 +13620,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence.py"
     },
+    "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py"
+    },
     "lh_doublet_su2_squared_hypercharge_anomaly_cancellation_note_2026-05-01": {
       "assert_count": 3,
       "counts": {
@@ -25467,6 +25479,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py": {
@@ -52513,11 +52540,11 @@
       "A": 188,
       "B": 257,
       "C": 718,
-      "D": 292,
+      "D": 293,
       "none": 426
     },
-    "runners_classified": 1881,
+    "runners_classified": 1882,
     "runners_with_C": 928,
-    "runners_with_D": 537
+    "runners_with_D": 538
   }
 }

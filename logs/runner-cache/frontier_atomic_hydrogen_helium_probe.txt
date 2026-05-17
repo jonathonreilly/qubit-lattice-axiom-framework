@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_hydrogen_helium_probe.py
 runner_sha256: a00f965a332955609acf9032545bcdaf2aff3e9cbd6cfc35d05e274beb3ce0b7
-timeout_sec: 1800
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 95.00
+elapsed_sec: 183.30
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -44,6 +44,5 @@ This script uses STANDARD quantum mechanics with TEXTBOOK inputs.
 It does NOT use any Cl(3)-on-Z^3 framework input.
 See docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md for scope and gap map.
 ==============================================================================
-
 ----- stderr -----
 

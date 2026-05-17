@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py
 runner_sha256: 36136c7d46fe9eed27c62ab5427c38252e61f9ff952f3187d5f479f22686e4df
-timeout_sec: 120
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 38.98
+elapsed_sec: 104.70
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -59,6 +59,5 @@ PART 3: PACKET-SCOPE ENDPOINT DISTINCTNESS
 ========================================================================================
 SUMMARY: PASS=8 FAIL=0
 ========================================================================================
-
 ----- stderr -----
 

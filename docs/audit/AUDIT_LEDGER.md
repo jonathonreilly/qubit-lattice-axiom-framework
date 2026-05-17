@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 1067 |
+| `critical` | 1066 |
 | `high` | 58 |
 | `medium` | 260 |
-| `leaf` | 844 |
+| `leaf` | 845 |
 
 - **Retained pending chain closure:** 4
-- **Citation cycles detected:** 246
+- **Citation cycles detected:** 231
 
 ### Runner classification (static heuristic)
 
@@ -91,7 +91,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `minimal_axioms_2026-04-11` | meta | critical | 875 | 39.77 | `unaudited` | meta |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 891 | 37.80 | `unaudited` | unaudited |
 | 8 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 804 | 36.65 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 885 | 34.79 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 881 | 34.78 | `unaudited` | unaudited |
 | 10 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 804 | 32.65 | `unaudited` | unaudited |
 | 11 | `native_gauge_closure_note` | bounded_theorem | critical | 989 | 32.45 | `audited_clean` | **retained_bounded** |
 | 12 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 904 | 32.32 | `audited_clean` | **retained_bounded** |
@@ -102,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 17 | `three_generation_structure_note` | bounded_theorem | critical | 834 | 30.21 | `unaudited` | unaudited |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 810 | 30.16 | `unaudited` | unaudited |
 | 19 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 959 | 29.41 | `audited_clean` | **retained_bounded** |
-| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 895 | 28.31 | `audited_clean` | **retained_bounded** |
+| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 891 | 28.30 | `audited_clean` | **retained_bounded** |
 | 21 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 804 | 28.15 | `unaudited` | unaudited |
 | 22 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 804 | 28.15 | `unaudited` | unaudited |
 | 23 | `cl3_sm_embedding_theorem` | positive_theorem | critical | 811 | 27.66 | `unaudited` | unaudited |

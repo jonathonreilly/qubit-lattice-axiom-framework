@@ -1,8 +1,8 @@
 {
   "criticality_counts": {
-    "critical": 1073,
+    "critical": 1072,
     "high": 59,
-    "leaf": 913,
+    "leaf": 914,
     "medium": 295
   },
   "flagship_signal_used": false,
@@ -67,8 +67,8 @@
     {
       "claim_id": "yt_ward_identity_derivation_theorem",
       "criticality": "critical",
-      "load_bearing_score": 34.791,
-      "transitive_descendants": 885
+      "load_bearing_score": 34.785,
+      "transitive_descendants": 881
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
@@ -133,8 +133,8 @@
     {
       "claim_id": "left_handed_charge_matching_note",
       "criticality": "critical",
-      "load_bearing_score": 28.307,
-      "transitive_descendants": 895
+      "load_bearing_score": 28.301,
+      "transitive_descendants": 891
     },
     {
       "claim_id": "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",

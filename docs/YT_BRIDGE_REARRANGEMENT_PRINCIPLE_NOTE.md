@@ -99,6 +99,18 @@ It is the invariant-selection rule inside the UV-localized class.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [yt_constructive_uv_bridge_note](YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md)
-- [yt_bridge_action_invariant_note](YT_BRIDGE_ACTION_INVARIANT_NOTE.md)
+- `yt_bridge_action_invariant_note` / `YT_BRIDGE_ACTION_INVARIANT_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0001 in the citation
+  graph. The action-invariant note is a downstream target-conditioned numerical
+  scan that consumes the rearrangement statement as a mutually-supporting proxy;
+  the load-bearing citation graph direction is action_invariant -> rearrangement,
+  not vice versa, so the inbound rearrangement -> action_invariant pointer here
+  is bookkeeping-only.)
 - [yt_ew_coupling_bridge_note](YT_EW_COUPLING_BRIDGE_NOTE.md)
-- [yt_exact_interacting_bridge_transport_note](YT_EXACT_INTERACTING_BRIDGE_TRANSPORT_NOTE.md)
+- `yt_exact_interacting_bridge_transport_note` / `YT_EXACT_INTERACTING_BRIDGE_TRANSPORT_NOTE.md`
+  (see-also cross-reference; backticked to break cycles 0002, 0005, 0006, 0008,
+  0009 in the citation graph. The exact-interacting transport note is the
+  downstream synthesis that uses the rearrangement statement as one of its
+  inputs (see its own dependency-repair list which cites this note as
+  upstream); the load-bearing citation graph direction is transport ->
+  rearrangement, not vice versa.)

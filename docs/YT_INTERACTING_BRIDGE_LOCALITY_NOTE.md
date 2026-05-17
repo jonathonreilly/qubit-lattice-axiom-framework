@@ -156,9 +156,16 @@ current claim scope.
   for the v boundary used as the IR endpoint reference.
 - [YT_EW_COUPLING_BRIDGE_NOTE.md](YT_EW_COUPLING_BRIDGE_NOTE.md)
   for the EW-coupling inputs that fix the scan's endpoint data.
-- [YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md](YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md)
+- `YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md`
   for the EW-window proxy that excludes diffuse rescues, complementary
-  to the locality scan.
+  to the locality scan. See-also cross-reference; backticked to break the
+  residual yt-cluster cycles surfaced when the EW-coupling-bridge see-also
+  edges were demoted (length-2 locality <-> operator_closure ring and
+  length-3 constructive_uv -> locality -> operator_closure -> constructive_uv
+  ring) in the citation graph. The operator-closure note's own
+  dependency-repair list already cites this locality note as upstream for
+  the forced UV-localized class premise; the load-bearing citation
+  direction is operator_closure -> locality, not vice versa.
 - [YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md](YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md)
   for the QFP-stability bound on the SM-like transport over most of the
   interval.

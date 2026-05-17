@@ -2418,7 +2418,7 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_4 rows in this category._
+_5 rows in this category._
 
 
 ### `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`
@@ -2500,6 +2500,35 @@ The bounded conclusion rests on the assertion that the registered cached log row
 
 Auditor's repair target (canonical class + action):
 runner_artifact_issue: attach the registered cache or certificate stdout and runner source for scripts/higher_symmetry_joint_validation.py, register it as the primary runner, and re-audit the narrowed cached range; include the dense N=80/100/120 cache only if N=120 is to be binding.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `lattice_distance_law_note`
+
+**Note:** [docs/LATTICE_DISTANCE_LAW_NOTE.md](docs/LATTICE_DISTANCE_LAW_NOTE.md)  |  **Descendants:** 10  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/LATTICE_DISTANCE_LAW_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Audited the bounded N=40 no-barrier ordered-lattice numerical distance-law fit and k=0 control as reported by scripts/lattice_no_barrier_distance.py and its cached stdout.
+
+Auditor's verdict_rationale:
+The cached primary runner output matches the source note's seven centroid rows, k=0 control, and far-field fit, and the primary runner source shows an actual fit over computed rows. However, the primary runner imports generate_lattice_mirror, propagate, and compute_field_at_b from scripts/lattice_mirror_distance.py, while the helper source section contains only the unsubstituted {{HELPER_RUNNER_SOURCES}} placeholder. Because the load-bearing lattice dynamics are opaque without that helper, this is a runner artifact completeness defect rather than a closed audit.
+
+Auditor-quoted load-bearing step:
+The ordered lattice gives |delta| ~= 23.5071 * b^(-1.052) with R^2 = 0.9850 on the far-field window b >= 7 for the N = 40 no-barrier harness.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: include the full scripts/lattice_mirror_distance.py helper source in the restricted packet and re-audit whether the imported lattice generation, propagation, and field functions compute the stated ordered-lattice rules without hard-coded contested values.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -2669,7 +2698,7 @@ drive.
 
 ### `minimal_source_driven_field_probe_note`
 
-**Note:** [docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md](docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)  |  **Descendants:** 843  |  **Class:** C
+**Note:** [docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md](docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)  |  **Descendants:** 842  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md.

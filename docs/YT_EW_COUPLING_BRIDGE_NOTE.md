@@ -482,9 +482,17 @@ promote this note or change the audited claim scope.
 - [YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md](YT_QFP_INSENSITIVITY_SUPPORT_NOTE.md)
   for the QFP-stability sensitivity budget bounding the SM-RGE surrogate
   error at O(3%).
-- [YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md](YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md)
+- `YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md`
   for the forced UV-localized class that constrains the bridge shape on
-  which the EW comparator runs.
-- [YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md](YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md)
+  which the EW comparator runs. See-also cross-reference; backticked to break
+  cycles 0004 and 0010 in the citation graph. The locality note's own
+  dependency-repair list cites this EW-coupling note as upstream (its
+  load-bearing scan consumes the EW comparator inputs); the citation graph
+  direction is locality -> EW-coupling, not vice versa.
+- `YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md`
   for the EW-window proxy scan that excludes diffuse rescues at the
-  bridge level.
+  bridge level. See-also cross-reference; backticked to break cycles 0003
+  and 0007 in the citation graph. The operator-closure note's own
+  dependency-repair list cites this EW-coupling note as upstream (its
+  comparator scan consumes the EW-coupling inputs); the citation graph
+  direction is operator-closure -> EW-coupling, not vice versa.

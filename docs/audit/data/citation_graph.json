@@ -9498,10 +9498,6 @@
     },
     {
       "from": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
-      "to": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
-    },
-    {
-      "from": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
       "to": "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17"
     },
     {
@@ -21326,23 +21322,11 @@
     },
     {
       "from": "source_resolved_exact_green_pocket_note",
-      "to": "source_resolved_exact_green_h025_pocket_note"
-    },
-    {
-      "from": "source_resolved_exact_green_pocket_note",
       "to": "source_resolved_exact_green_scaling_note"
     },
     {
       "from": "source_resolved_exact_green_pocket_note",
       "to": "source_resolved_exact_green_self_consistent_note"
-    },
-    {
-      "from": "source_resolved_exact_green_pocket_note",
-      "to": "source_resolved_propagating_green_pocket_note"
-    },
-    {
-      "from": "source_resolved_exact_green_scaling_note",
-      "to": "source_resolved_exact_green_pocket_note"
     },
     {
       "from": "source_resolved_generated_bridge_failure_audit",
@@ -24598,10 +24582,6 @@
     },
     {
       "from": "yt_bridge_operator_closure_note",
-      "to": "yt_constructive_uv_bridge_note"
-    },
-    {
-      "from": "yt_bridge_operator_closure_note",
       "to": "yt_boundary_theorem"
     },
     {
@@ -24626,15 +24606,7 @@
     },
     {
       "from": "yt_bridge_rearrangement_principle_note",
-      "to": "yt_bridge_action_invariant_note"
-    },
-    {
-      "from": "yt_bridge_rearrangement_principle_note",
       "to": "yt_ew_coupling_bridge_note"
-    },
-    {
-      "from": "yt_bridge_rearrangement_principle_note",
-      "to": "yt_exact_interacting_bridge_transport_note"
     },
     {
       "from": "yt_bridge_uv_class_uniqueness_note",
@@ -24873,14 +24845,6 @@
       "to": "yt_qfp_insensitivity_support_note"
     },
     {
-      "from": "yt_ew_coupling_bridge_note",
-      "to": "yt_interacting_bridge_locality_note"
-    },
-    {
-      "from": "yt_ew_coupling_bridge_note",
-      "to": "yt_bridge_operator_closure_note"
-    },
-    {
       "from": "yt_ew_delta_r_retention_analysis_note_2026-04-18",
       "to": "yt_ew_color_projection_theorem"
     },
@@ -25115,10 +25079,6 @@
     {
       "from": "yt_interacting_bridge_locality_note",
       "to": "yt_ew_coupling_bridge_note"
-    },
-    {
-      "from": "yt_interacting_bridge_locality_note",
-      "to": "yt_bridge_operator_closure_note"
     },
     {
       "from": "yt_interacting_bridge_locality_note",
@@ -25795,10 +25755,6 @@
     {
       "from": "yt_zero_import_authority_note",
       "to": "yt_color_projection_correction_note"
-    },
-    {
-      "from": "yt_zero_import_authority_note",
-      "to": "yt_explicit_systematic_budget_note"
     },
     {
       "from": "yukawa_color_projection_theorem",
@@ -50192,14 +50148,13 @@
       "claim_type_seed_hint": "no_go",
       "deps": [
         "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-        "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
         "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_current_stack_constraint_boundary_note_2026-04-17",
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5c94aa9260afed7e9c46a25d0349df8f0ef5d6b01517e888538c366b0d4de1ad",
+      "note_hash": "a6efdea13c22b3d735d1a666d3beb76529478cdf7d38a9fa00c8cdfe538dca99",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
       "title": "Gauge-Vacuum Plaquette Spatial-Environment Transfer Underdetermination"
@@ -68280,15 +68235,13 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_source_driven_field_probe_note",
-        "source_resolved_exact_green_h025_pocket_note",
         "source_resolved_exact_green_scaling_note",
-        "source_resolved_exact_green_self_consistent_note",
-        "source_resolved_propagating_green_pocket_note"
+        "source_resolved_exact_green_self_consistent_note"
       ],
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "0f1a16e6c6ba8821b2fe2cde900c9c8ee7274c950341cda1bd3653a35449a029",
+      "note_hash": "84803a86863e50aeec623f19d92be8cd0d11581c45ebb6808cb17b3eba48a57b",
       "path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "title": "Source-Resolved Exact Green Pocket"
@@ -68310,13 +68263,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "source_resolved_exact_green_pocket_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "note_hash": "5602e1bbde2e223b03dfdb242dc60752d0d2ed29571502ccfe32ea173ae1c30a",
+      "note_hash": "97c1fc825fe2a49a6dd3a4571ffe0c237fe8124c94056461824588cadf37bcd6",
       "path": "docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md",
       "runner_path": "scripts/source_resolved_exact_green_scaling.py",
       "title": "Source-Resolved Exact Green Scaling"
@@ -74337,13 +74288,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "yt_interacting_bridge_locality_note",
-        "yt_constructive_uv_bridge_note",
         "yt_boundary_theorem",
         "yt_ew_coupling_bridge_note",
         "yt_qfp_insensitivity_support_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "db1da4e0730a7d52152dd5869df09c8fb68d2a71c0ebea21212d76fd93a385c0",
+      "note_hash": "2c60ff5653807807d55c6229c2a3ece4af8ac0a649a51a60621c9a234d45e6f8",
       "path": "docs/YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md",
       "runner_path": "scripts/frontier_yt_bridge_operator_closure.py",
       "title": "y_t Bridge Operator Closure Proxy Note"
@@ -74370,12 +74320,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "yt_constructive_uv_bridge_note",
-        "yt_bridge_action_invariant_note",
-        "yt_ew_coupling_bridge_note",
-        "yt_exact_interacting_bridge_transport_note"
+        "yt_ew_coupling_bridge_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fe8f063545de06482b4394b68e469d23ef39eff672f93c543f6acb4df29bf9cc",
+      "note_hash": "c7ff5d92cb1c58d6fa2f8708afe3b2ae958498eaefa8e2984524bb33ca63148b",
       "path": "docs/YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md",
       "runner_path": "scripts/frontier_yt_bridge_rearrangement_principle.py",
       "title": "`y_t` Bridge Rearrangement Principle Note"
@@ -74586,12 +74534,10 @@
       "deps": [
         "yt_boundary_theorem",
         "yt_eft_bridge_theorem",
-        "yt_qfp_insensitivity_support_note",
-        "yt_interacting_bridge_locality_note",
-        "yt_bridge_operator_closure_note"
+        "yt_qfp_insensitivity_support_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "90106b5c7735718a06b9c82105af9ed903218869b30e89f6441fef65ff0ddc3b",
+      "note_hash": "b12528582247a2531d47d82732f8154410b381fd889c5c29da7b68c1a0dfe6fd",
       "path": "docs/YT_EW_COUPLING_BRIDGE_NOTE.md",
       "runner_path": "scripts/frontier_yt_ew_coupling_derivation.py",
       "title": "y_t Bridge: EW Coupling Derivation and Sensitivity Analysis"
@@ -74842,11 +74788,10 @@
       "deps": [
         "yt_boundary_theorem",
         "yt_ew_coupling_bridge_note",
-        "yt_bridge_operator_closure_note",
         "yt_qfp_insensitivity_support_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3ebb8420201e6d05f24bc379d5c3da27d5996e540a85d281efc14e6fe94e1bad",
+      "note_hash": "75e663d30ffb40edeecdcc2f955854f2c805749e7f04fe2004b005347c9d65d0",
       "path": "docs/YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md",
       "runner_path": "scripts/frontier_yt_interacting_bridge_locality.py",
       "title": "y_t Interacting Bridge Locality Proxy Note"
@@ -75489,11 +75434,10 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "alpha_s_derived_note",
-        "yt_color_projection_correction_note",
-        "yt_explicit_systematic_budget_note"
+        "yt_color_projection_correction_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f3d396af839c334960850478f248f469a5cba1ae35a637982bd8a664e97fd6a2",
+      "note_hash": "83079a33d1e2afe1c28784de3ecfc652858215d65e2e1340f37be22951273cdc",
       "path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "y_t Lane: Zero-Import Authority"
@@ -76238,6 +76182,7 @@
     "source_driven_field_recovery_sweep_note",
     "source_resolved_exact_green_h025_pocket_note_hostile_audit_findings_note_2026-05-17",
     "source_resolved_exact_green_pocket_note_hostile_audit_findings_note_2026-05-17",
+    "source_resolved_exact_green_scaling_note",
     "source_resolved_exact_green_self_consistent_note",
     "source_resolved_generated_architecture_bridge_note",
     "source_resolved_generated_discriminator_probe_note",
@@ -76433,10 +76378,10 @@
       "open_gate": 123,
       "positive_theorem": 606
     },
-    "edge_count": 9061,
-    "leaf_count": 721,
+    "edge_count": 9050,
+    "leaf_count": 722,
     "node_count": 2340,
-    "root_count": 843,
+    "root_count": 844,
     "runners_with_path": 1951
   }
 }

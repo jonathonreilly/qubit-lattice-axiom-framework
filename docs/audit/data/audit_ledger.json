@@ -85889,13 +85889,13 @@
         "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
         "gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.685,
+      "load_bearing_score": 11.185,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -92273,7 +92273,6 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-        "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
         "gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
         "gauge_vacuum_plaquette_first_symmetric_three_sample_current_stack_constraint_boundary_note_2026-04-17",
@@ -92290,7 +92289,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "5c94aa9260afed7e9c46a25d0349df8f0ef5d6b01517e888538c366b0d4de1ad",
+      "note_hash": "a6efdea13c22b3d735d1a666d3beb76529478cdf7d38a9fa00c8cdfe538dca99",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -135148,7 +135147,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 28.307,
+      "load_bearing_score": 28.301,
       "load_bearing_step": "Tracelessness over the retained 6-state Sym\u00b2/(2,3) block and 2-state Anti\u00b2/(2,1) block gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "unknown",
@@ -135446,7 +135445,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Left-Handed Charge Matching on the Selected-Axis Surface",
-      "transitive_descendants": 895,
+      "transitive_descendants": 891,
       "verdict_rationale": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio."
     },
     "legacy_exploratory_drivers_note": {
@@ -138092,7 +138091,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.811,
+      "load_bearing_score": 14.804,
       "load_bearing_step": "Tracelessness over the 6-state Sym2 block and 2-state Anti2 block gives 6*alpha + 2*beta = 0, hence beta = -3*alpha and the Sym2:Anti2 eigenvalue ratio is 1:(-3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -138284,7 +138283,7 @@
       },
       "runner_path": "scripts/frontier_lh_doublet_traceless_abelian_ratio.py",
       "title": "LH-Doublet Traceless Abelian Eigenvalue Ratio (Narrow Theorem)",
-      "transitive_descendants": 897,
+      "transitive_descendants": 893,
       "verdict_rationale": "The load-bearing step is a genuine class A algebraic closure over retained-grade inputs: once the 6 and 2 multiplicities are admitted, beta/alpha = -3 follows uniquely. The runner source hard-codes the retained multiplicities but does perform the exact Fraction arithmetic and scope checks it reports. The open SM-Y identification language in the upstream material is not load-bearing because the audited claim explicitly excludes that bridge."
     },
     "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": {
@@ -143852,7 +143851,7 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 12.221,
+      "load_bearing_score": 12.219,
       "load_bearing_step": "At fixed stronger calibration target max |f_dyn| = 0.08, the source-driven runner keeps all four rows TOWARD and gives a dynamic F~M exponent of 0.64, while zero-source returns exactly to free propagation.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -144074,7 +144073,7 @@
       },
       "runner_path": "scripts/minimal_source_driven_field_probe.py",
       "title": "Minimal Source-Driven Field Probe",
-      "transitive_descendants": 843,
+      "transitive_descendants": 842,
       "verdict_rationale": "The source code builds the lattice, evolves the source-driven field, propagates amplitudes, computes centroid shifts, and fits the mass exponent inline, so the frozen table is substantive runner evidence. The zero-source reduction and TOWARD/sign checks are supported for the declared run. However, the claim depends on runner-selected field dynamics and calibration hierarchy, and the cited companion explicitly says deriving those choices from retained framework dynamics remains future theorem work."
     },
     "mirror_2d_gravity_law_note": {
@@ -200899,7 +200898,7 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 10.223,
+      "load_bearing_score": 10.221,
       "load_bearing_step": "On the declared exact 3D lattice family, the self-contained runner verifies the broad sweep and conservative pocket replay with explicit threshold gates, yielding RUNNER PASS=5 FAIL=0.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -201066,7 +201065,7 @@
       },
       "runner_path": "scripts/source_driven_field_recovery_sweep.py",
       "title": "Source-Driven Field Recovery Sweep",
-      "transitive_descendants": 844,
+      "transitive_descendants": 843,
       "verdict_rationale": "The restricted packet contains both completed stdout and source code showing the runner constructs the finite lattice, source-driven field evolution, propagation, centroid readout, exponent fits, and threshold gates inline rather than hard-coding the reported results. The claim is explicitly bounded to this declared runner family and excludes derivation of the telegraph rule, parameters, and calibration ladder from retained framework dynamics. Within that bounded scope, the target-max ladder is a fixed modeling input being swept, not an external tuned comparator or missing dependency, so the first tuple is the correct one under the hostile-review standard."
     },
     "source_resolved_exact_green_h025_pocket_note": {
@@ -201086,14 +201085,14 @@
       "claim_type_author_hint_raw": null,
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "source_resolved_exact_green_pocket_note",
         "source_resolved_exact_green_scaling_note"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 0,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -201101,7 +201100,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 10.199,
+      "load_bearing_score": 0.0,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -201286,7 +201285,7 @@
       },
       "runner_path": "scripts/source_resolved_exact_green_h025_pocket.py",
       "title": "Source-Resolved Exact Green h=0.25 Pocket",
-      "transitive_descendants": 830,
+      "transitive_descendants": 0,
       "verdict_rationale": null
     },
     "source_resolved_exact_green_h025_pocket_note_hostile_audit_findings_note_2026-05-17": {
@@ -201362,12 +201361,10 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_source_driven_field_probe_note",
-        "source_resolved_exact_green_h025_pocket_note",
         "source_resolved_exact_green_scaling_note",
-        "source_resolved_exact_green_self_consistent_note",
-        "source_resolved_propagating_green_pocket_note"
+        "source_resolved_exact_green_self_consistent_note"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -201375,12 +201372,12 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.699,
+      "load_bearing_score": 12.197,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "0f1a16e6c6ba8821b2fe2cde900c9c8ee7274c950341cda1bd3653a35449a029",
+      "note_hash": "84803a86863e50aeec623f19d92be8cd0d11581c45ebb6808cb17b3eba48a57b",
       "note_path": "docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -201553,7 +201550,7 @@
       },
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "title": "Source-Resolved Exact Green Pocket",
-      "transitive_descendants": 830,
+      "transitive_descendants": 829,
       "verdict_rationale": null
     },
     "source_resolved_exact_green_pocket_note_hostile_audit_findings_note_2026-05-17": {
@@ -201625,9 +201622,7 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "source_resolved_exact_green_pocket_note"
-      ],
+      "deps": [],
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -201641,7 +201636,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "5602e1bbde2e223b03dfdb242dc60752d0d2ed29571502ccfe32ea173ae1c30a",
+      "note_hash": "97c1fc825fe2a49a6dd3a4571ffe0c237fe8124c94056461824588cadf37bcd6",
       "note_path": "docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -201874,7 +201869,7 @@
       ],
       "independence": "judicial_review",
       "intrinsic_status": "audited_numerical_match",
-      "load_bearing_score": 10.2,
+      "load_bearing_score": 10.199,
       "load_bearing_step": "The frozen pocket uses an admitted calibrated gain input, chosen to set the base-field cap, and then reports the one-update Green self-consistent numerical table and mean ratio.",
       "load_bearing_step_class": "G",
       "max_descendant_status": "audit_in_progress",
@@ -201966,7 +201961,7 @@
       },
       "runner_path": "scripts/source_resolved_exact_green_self_consistent.py",
       "title": "Source-Resolved Exact Green Self-Consistent Pocket",
-      "transitive_descendants": 831,
+      "transitive_descendants": 830,
       "verdict_rationale": "The restricted packet explicitly makes the calibrated gain a frozen setup input, and the runner hard-codes that gain while asserting that it sets the target base-field cap before reproducing the frozen table. That is a bounded numerical pocket at a chosen calibration value, not first-principles closure from the axiom. Under the rubric, this is class G and the appropriate terminal verdict is audited_numerical_match."
     },
     "source_resolved_generated_architecture_bridge_note": {
@@ -203245,7 +203240,7 @@
         "minimal_source_driven_field_probe_note",
         "source_resolved_exact_green_pocket_note"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
@@ -203253,7 +203248,7 @@
       ],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.199,
+      "load_bearing_score": 10.692,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -203377,7 +203372,7 @@
       },
       "runner_path": "scripts/source_resolved_propagating_green_pocket.py",
       "title": "Source-Resolved Propagating Green Pocket",
-      "transitive_descendants": 830,
+      "transitive_descendants": 826,
       "verdict_rationale": null
     },
     "source_resolved_radical_geometry_probe_note": {
@@ -241409,7 +241404,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 16.253,
+      "load_bearing_score": 16.252,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -241454,7 +241449,7 @@
       },
       "runner_path": "scripts/frontier_yt_boundary_consistency.py",
       "title": "Boundary Selection Theorem: v is the Physical Crossover Endpoint",
-      "transitive_descendants": 862,
+      "transitive_descendants": 861,
       "verdict_rationale": null
     },
     "yt_boundary_theorem_hostile_audit_findings_note_2026-05-17": {
@@ -241533,13 +241528,13 @@
         "yt_bridge_operator_closure_note",
         "yt_boundary_theorem"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.753,
+      "load_bearing_score": 12.216,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -241636,7 +241631,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_action_invariant.py",
       "title": "`y_t` Bridge Action Invariant Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 840,
       "verdict_rationale": null
     },
     "yt_bridge_action_invariant_note_hostile_audit_findings_note_2026-05-17": {
@@ -241720,7 +241715,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.253,
+      "load_bearing_score": 11.202,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -241832,7 +241827,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_endpoint_shift_bound.py",
       "title": "`y_t` Bridge Endpoint Shift Bound Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 832,
       "verdict_rationale": null
     },
     "yt_bridge_hessian_selector_note": {
@@ -241867,7 +241862,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 14.753,
+      "load_bearing_score": 14.713,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -241963,7 +241958,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_hessian_selector.py",
       "title": "`y_t` Bridge Hessian Selector Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 838,
       "verdict_rationale": null
     },
     "yt_bridge_hessian_selector_note_hostile_audit_findings_note_2026-05-17": {
@@ -242046,7 +242041,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.253,
+      "load_bearing_score": 13.209,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -242142,7 +242137,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_higher_order_corrections.py",
       "title": "`y_t` Bridge Higher-Order Corrections Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 836,
       "verdict_rationale": null
     },
     "yt_bridge_moment_closure_note": {
@@ -242178,7 +242173,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.753,
+      "load_bearing_score": 12.714,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -242275,7 +242270,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_moment_closure.py",
       "title": "`y_t` Bridge Moment Closure Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 839,
       "verdict_rationale": null
     },
     "yt_bridge_moment_closure_note_hostile_audit_findings_note_2026-05-17": {
@@ -242359,7 +242354,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.253,
+      "load_bearing_score": 13.209,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -242456,7 +242451,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_nonlocal_corrections.py",
       "title": "`y_t` Bridge Nonlocal Corrections Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 836,
       "verdict_rationale": null
     },
     "yt_bridge_operator_closure_note": {
@@ -242481,23 +242476,22 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "yt_interacting_bridge_locality_note",
-        "yt_constructive_uv_bridge_note",
         "yt_boundary_theorem",
         "yt_ew_coupling_bridge_note",
         "yt_qfp_insensitivity_support_note"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.253,
+      "load_bearing_score": 11.223,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "db1da4e0730a7d52152dd5869df09c8fb68d2a71c0ebea21212d76fd93a385c0",
+      "note_hash": "2c60ff5653807807d55c6229c2a3ece4af8ac0a649a51a60621c9a234d45e6f8",
       "note_path": "docs/YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -242591,7 +242585,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_operator_closure.py",
       "title": "y_t Bridge Operator Closure Proxy Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 844,
       "verdict_rationale": null
     },
     "yt_bridge_operator_closure_note_hostile_audit_findings_note_2026-05-17": {
@@ -242668,9 +242662,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "yt_constructive_uv_bridge_note",
-        "yt_bridge_action_invariant_note",
-        "yt_ew_coupling_bridge_note",
-        "yt_exact_interacting_bridge_transport_note"
+        "yt_ew_coupling_bridge_note"
       ],
       "direct_in_degree": 8,
       "effective_status": "unaudited",
@@ -242678,12 +242670,12 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.753,
+      "load_bearing_score": 13.718,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "fe8f063545de06482b4394b68e469d23ef39eff672f93c543f6acb4df29bf9cc",
+      "note_hash": "c7ff5d92cb1c58d6fa2f8708afe3b2ae958498eaefa8e2984524bb33ca63148b",
       "note_path": "docs/YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -242736,7 +242728,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_rearrangement_principle.py",
       "title": "`y_t` Bridge Rearrangement Principle Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 841,
       "verdict_rationale": null
     },
     "yt_bridge_rearrangement_principle_note_hostile_audit_findings_note_2026-05-17": {
@@ -242822,7 +242814,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.253,
+      "load_bearing_score": 11.202,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -242921,7 +242913,7 @@
       },
       "runner_path": "scripts/frontier_yt_bridge_uv_class_uniqueness.py",
       "title": "`y_t` Bridge UV Class Uniqueness Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 832,
       "verdict_rationale": null
     },
     "yt_bridge_variational_selector_note": {
@@ -243583,13 +243575,13 @@
         "yt_interacting_bridge_locality_note",
         "yt_bridge_operator_closure_note"
       ],
-      "direct_in_degree": 14,
+      "direct_in_degree": 13,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 16.753,
+      "load_bearing_score": 16.221,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -243685,7 +243677,7 @@
       },
       "runner_path": "scripts/frontier_yt_constructive_uv_bridge.py",
       "title": "Constructive UV-Localized Bridge Class for `y_t`",
-      "transitive_descendants": 862,
+      "transitive_descendants": 843,
       "verdict_rationale": null
     },
     "yt_eft_bridge_theorem": {
@@ -243718,7 +243710,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 10.753,
+      "load_bearing_score": 10.728,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -243737,7 +243729,7 @@
       },
       "runner_path": "scripts/frontier_yt_eft_bridge.py",
       "title": "y_t EFT Bridge Theorem: Backward Ward Boundary Transfer at `v`",
-      "transitive_descendants": 862,
+      "transitive_descendants": 847,
       "verdict_rationale": null
     },
     "yt_ew_color_projection_theorem": {
@@ -244074,9 +244066,7 @@
       "deps": [
         "yt_boundary_theorem",
         "yt_eft_bridge_theorem",
-        "yt_qfp_insensitivity_support_note",
-        "yt_interacting_bridge_locality_note",
-        "yt_bridge_operator_closure_note"
+        "yt_qfp_insensitivity_support_note"
       ],
       "direct_in_degree": 4,
       "effective_status": "unaudited",
@@ -244084,12 +244074,12 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.753,
+      "load_bearing_score": 11.726,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "90106b5c7735718a06b9c82105af9ed903218869b30e89f6441fef65ff0ddc3b",
+      "note_hash": "b12528582247a2531d47d82732f8154410b381fd889c5c29da7b68c1a0dfe6fd",
       "note_path": "docs/YT_EW_COUPLING_BRIDGE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -244243,7 +244233,7 @@
       },
       "runner_path": "scripts/frontier_yt_ew_coupling_derivation.py",
       "title": "y_t Bridge: EW Coupling Derivation and Sensitivity Analysis",
-      "transitive_descendants": 862,
+      "transitive_descendants": 846,
       "verdict_rationale": null
     },
     "yt_ew_coupling_bridge_note_hostile_audit_findings_note_2026-05-17": {
@@ -244634,7 +244624,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.753,
+      "load_bearing_score": 11.7,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -244747,7 +244737,7 @@
       },
       "runner_path": "scripts/frontier_yt_exact_coarse_grained_bridge_operator.py",
       "title": "Exact Coarse-Grained Bridge Operator Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 831,
       "verdict_rationale": null
     },
     "yt_exact_hessian_selector_uniqueness_note": {
@@ -244940,13 +244930,13 @@
         "yt_bridge_action_invariant_note",
         "yt_bridge_moment_closure_note"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.753,
+      "load_bearing_score": 11.158,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -245045,7 +245035,7 @@
       },
       "runner_path": "scripts/frontier_yt_exact_interacting_bridge_transport.py",
       "title": "Exact Interacting Bridge Transport Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 807,
       "verdict_rationale": null
     },
     "yt_exact_schur_normal_form_uniqueness_note": {
@@ -245081,7 +245071,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 16.753,
+      "load_bearing_score": 16.697,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -245185,7 +245175,7 @@
       },
       "runner_path": "scripts/frontier_yt_exact_schur_normal_form_uniqueness.py",
       "title": "Exact Schur Normal-Form Class Uniqueness Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 829,
       "verdict_rationale": null
     },
     "yt_explicit_systematic_budget_note": {
@@ -245211,13 +245201,13 @@
       "deps": [
         "yt_exact_schur_normal_form_uniqueness_note"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 12.253,
+      "load_bearing_score": 11.669,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -245364,7 +245354,7 @@
       },
       "runner_path": "scripts/frontier_yt_explicit_systematic_budget.py",
       "title": "`y_t` Residual-Budget and Bridge Cross-Check Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 813,
       "verdict_rationale": null
     },
     "yt_fierz_projection_defense_narrow_theorem_note_2026-05-10": {
@@ -245788,21 +245778,20 @@
       "deps": [
         "yt_boundary_theorem",
         "yt_ew_coupling_bridge_note",
-        "yt_bridge_operator_closure_note",
         "yt_qfp_insensitivity_support_note"
       ],
-      "direct_in_degree": 11,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 15.253,
+      "load_bearing_score": 14.725,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "3ebb8420201e6d05f24bc379d5c3da27d5996e540a85d281efc14e6fe94e1bad",
+      "note_hash": "75e663d30ffb40edeecdcc2f955854f2c805749e7f04fe2004b005347c9d65d0",
       "note_path": "docs/YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -245894,7 +245883,7 @@
       },
       "runner_path": "scripts/frontier_yt_interacting_bridge_locality.py",
       "title": "y_t Interacting Bridge Locality Proxy Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 845,
       "verdict_rationale": null
     },
     "yt_microscopic_schur_class_admissibility_note": {
@@ -249793,7 +249782,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 17.753,
+      "load_bearing_score": 17.747,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -249887,7 +249876,7 @@
       },
       "runner_path": "scripts/frontier_yt_qfp_insensitivity.py",
       "title": "y_t Quasi-Fixed-Point Insensitivity Support Note",
-      "transitive_descendants": 862,
+      "transitive_descendants": 858,
       "verdict_rationale": null
     },
     "yt_right_handed_species_dependence_note_2026-04-18": {
@@ -250393,7 +250382,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.293,
+      "load_bearing_score": 11.286,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -250412,7 +250401,7 @@
       },
       "runner_path": "scripts/frontier_vertex_power.py",
       "title": "`y_t` Vertex-Power Theorem: Why `alpha_s(v) = alpha_bare / u_0^2`",
-      "transitive_descendants": 886,
+      "transitive_descendants": 882,
       "verdict_rationale": null
     },
     "yt_ward_identity_derivation_theorem": {
@@ -250448,7 +250437,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 34.791,
+      "load_bearing_score": 34.785,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -250557,7 +250546,7 @@
       },
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "Top-Yukawa Structural Identification: y_t(M_Pl) = g_s(M_Pl) / sqrt(6)",
-      "transitive_descendants": 885,
+      "transitive_descendants": 881,
       "verdict_rationale": null
     },
     "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10": {
@@ -250669,8 +250658,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "alpha_s_derived_note",
-        "yt_color_projection_correction_note",
-        "yt_explicit_systematic_budget_note"
+        "yt_color_projection_correction_note"
       ],
       "direct_in_degree": 8,
       "effective_status": "unaudited",
@@ -250683,7 +250671,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "f3d396af839c334960850478f248f469a5cba1ae35a637982bd8a664e97fd6a2",
+      "note_hash": "83079a33d1e2afe1c28784de3ecfc652858215d65e2e1340f37be22951273cdc",
       "note_path": "docs/YT_ZERO_IMPORT_AUTHORITY_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

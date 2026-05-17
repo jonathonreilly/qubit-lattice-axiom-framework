@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 113 |
+| **retained** | 114 |
 | **retained_no_go** | 139 |
 | **retained_bounded** | 345 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 570 |
+| `audited_clean` | 571 |
 | `audited_conditional` | 184 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1447 |
+| `unaudited` | 1446 |
 
 | claim_type | count |
 |---|---:|
@@ -142,6 +142,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `asymmetry_persistence_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | D | - |
@@ -1397,6 +1398,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cached runner output matches the note's retained N=80/100 tables and the provided runner source performs graph generation, propagation, purity, gravity, and corrected Sorkin/Born calculations rather than printing fixed constants. The note explicitly demotes the N=120 probe and central-band comparison outside the binding audited scope.
 - **rationale:** Within the narrowed N=80/100 scope, the claim is supported by a completed cached runner with matching parameters, exit_code 0, and table values matching the note. The runner source computes the listed metrics on generated same-graph instances and includes the corrected -P(empty) Born term, so the load-bearing step is a bounded first-principles compute rather than a definition, renaming, or tuned external comparison. The gravity language is appropriately limited: the retained result is primarily a decoherence and Born-clean coexistence claim, not a robust gravity win across the broader lane.
 - **auditor confidence:** medium
+
+### `asymmetry_persistence_mass_scaling_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite N=100, npl=60, eight-seed generated 3D graph sweep showing positive sublinear gravity-delta mass fits for M={2,3,5,8}, with persistence improving the mass-response window relative to the baseline generated lane.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-210412-0eef0b89-asymmetry_persistence_ma-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Generated persistence turns the flat baseline linear response into a clearer positive sublinear mass window, with the cleanest retained row at threshold 0.10 in the layernorm lane.  _(class `C`)_
+- **chain closes:** True — The SHA-pinned cached run completes and reproduces the note's fit coefficients, exponents, and R^2 values. The primary runner and bundled helpers compute these values from seeded graph generation, propagation, gravity-delta measurement, and log-log fitting without importing or hard-coding the contested fit results.
+- **rationale:** The runner constructs the generated 3D DAGs, applies the asymmetry-persistence threshold, varies fixed-prefix mass nodes, computes detector y-shift deltas under linear and layernorm propagation, and fits the declared mass window. The helper sources are present and expose the load-bearing graph, field, propagation, and fitting machinery; no helper hard-codes the claimed numerical outcomes. The clean result is limited to the finite generated-graph protocol and does not establish exact F proportional M or a Newtonian mass law.
+- **auditor confidence:** high
 
 ### `asymmetry_persistence_mass_window_note`
 

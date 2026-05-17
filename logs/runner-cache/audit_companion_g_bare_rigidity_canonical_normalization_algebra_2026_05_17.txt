@@ -1,0 +1,110 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_g_bare_rigidity_canonical_normalization_algebra_2026_05_17.py
+runner_sha256: 39378eebdb01b36094bebba4a0e42082310e76b1734f65d78effab4a5bc7e779
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of the algebraic-invariant rigidity core
+of the parent g_bare_rigidity_theorem_note row, under two retained authorities
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  generated 8 Gell-Mann T_a on V_3 at exact sympy precision
+  V_3 = C^3, T_a = lambda_a / 2 (standard normalization)
+  lambda = positive real symbol for uniform scalar dilation
+
+----------------------------------------------------------------------------------------
+Part 1: independent numerical cross-check of cited retained authorities
+----------------------------------------------------------------------------------------
+  [PASS (A)] cited (G): Tr(T_a T_b) = (1/2) delta_{ab} (cl3_color_automorphism_theorem)
+  [PASS (A)] cited (C): sum_a T_a T_a = (4/3) I_3 (k1-k3 narrow proof walk)  (C_2 - (4/3) I_3 zero across all 9 entries)
+
+----------------------------------------------------------------------------------------
+Part 2: (T1) Gram scaling under uniform scalar dilation
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1) Tr(T_a^{(lambda)} T_b^{(lambda)}) = (lambda^2 / 2) delta_{ab}  (all 64 (a,b) pairs match parametrically)
+  [PASS (A)] (T1) explicit diagonal: Tr(T_4^{(lambda)} T_4^{(lambda)}) = lambda^2/2  (got lambda**2/2)
+
+----------------------------------------------------------------------------------------
+Part 3: (T2) Casimir scaling under uniform scalar dilation
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T2) sum_a T_a^{(lambda)} T_a^{(lambda)} = (4 lambda^2 / 3) I_3  (all 9 entries match parametrically in lambda)
+  [PASS (A)] (T2) dilated Casimir remains scalar-on-identity (all diagonal entries equal)  (diagonal entries = ['4*lambda**2/3', '4*lambda**2/3', '4*lambda**2/3'])
+  [PASS (A)] (T2) dilated Casimir has zero off-diagonal entries  (all 6 off-diagonal entries simplify to 0)
+
+----------------------------------------------------------------------------------------
+Part 4: (T3) joint preservation locus Lambda_* = {1}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T3a) Gram preservation alone on positive ray: lambda = 1 (unique)  (positive solutions of lambda^2 - 1 = 0: [1])
+  [PASS (A)] (T3b) Casimir preservation alone on positive ray: lambda = 1 (unique)  (positive solutions of lambda^2 - 1 = 0: [1])
+  [PASS (A)] (T3) joint preservation locus Lambda_* = {1}  (Lambda_* = [1])
+
+----------------------------------------------------------------------------------------
+Part 5: (T4) parent load-bearing step — lambda != 1 fails both invariants
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T4 Gram at lambda=1/4) Tr(T_1^(lambda) T_1^(lambda)) != 1/2  (dilated = 1/32, original = 1/2)
+  [PASS (A)] (T4 Casimir at lambda=1/4) scalar(C_2) = 1/12 != 4/3  (scalar = 1/12, original = 4/3)
+  [PASS (A)] (T4 Gram at lambda=1/2) Tr(T_1^(lambda) T_1^(lambda)) != 1/2  (dilated = 1/8, original = 1/2)
+  [PASS (A)] (T4 Casimir at lambda=1/2) scalar(C_2) = 1/3 != 4/3  (scalar = 1/3, original = 4/3)
+  [PASS (A)] (T4 Gram at lambda=2) Tr(T_1^(lambda) T_1^(lambda)) != 1/2  (dilated = 2, original = 1/2)
+  [PASS (A)] (T4 Casimir at lambda=2) scalar(C_2) = 16/3 != 4/3  (scalar = 16/3, original = 4/3)
+  [PASS (A)] (T4 Gram at lambda=3) Tr(T_1^(lambda) T_1^(lambda)) != 1/2  (dilated = 9/2, original = 1/2)
+  [PASS (A)] (T4 Casimir at lambda=3) scalar(C_2) = 12 != 4/3  (scalar = 12, original = 4/3)
+  [PASS (A)] (T4 Gram at lambda=5) Tr(T_1^(lambda) T_1^(lambda)) != 1/2  (dilated = 25/2, original = 1/2)
+  [PASS (A)] (T4 Casimir at lambda=5) scalar(C_2) = 100/3 != 4/3  (scalar = 100/3, original = 4/3)
+  [PASS (A)] (T4 Gram at lambda=pi) Tr(T_1^(lambda) T_1^(lambda)) != 1/2  (dilated = pi**2/2, original = 1/2)
+  [PASS (A)] (T4 Casimir at lambda=pi) scalar(C_2) = 4*pi**2/3 != 4/3  (scalar = 4*pi**2/3, original = 4/3)
+  [PASS (A)] (T4 Gram at lambda=E) Tr(T_1^(lambda) T_1^(lambda)) != 1/2  (dilated = exp(2)/2, original = 1/2)
+  [PASS (A)] (T4 Casimir at lambda=E) scalar(C_2) = 4*exp(2)/3 != 4/3  (scalar = 4*exp(2)/3, original = 4/3)
+  [PASS (A)] (T4 sanity at lambda=1) Gram preserved  (Tr(T_1 T_1) at lambda=1 = 1/2)
+  [PASS (A)] (T4 sanity at lambda=1) Casimir preserved  (C_2(lambda=1) = (4/3) I_3)
+
+----------------------------------------------------------------------------------------
+Part 6: counterfactual probe — non-uniform dilation T_a -> mu_a T_a
+----------------------------------------------------------------------------------------
+  [PASS (A)] (counterfactual) Tr(T_3^{(mu)} T_3^{(mu)}) = (mu_3^2 / 2) under non-uniform mu  (got mu_3**2/2, want mu_3**2/2)
+  [PASS (A)] (counterfactual) Tr(T_1^{(mu)} T_2^{(mu)}) = 0 (off-diagonal preserved zero)  (got 0)
+
+----------------------------------------------------------------------------------------
+Part 7: independent-witness redundancy — each invariant alone suffices
+----------------------------------------------------------------------------------------
+  [PASS (A)] (independent witness) Gram alone witnesses rigidity on positive ray  (lambda^2 = 1 on positive ray => lambda = 1)
+  [PASS (A)] (independent witness) Casimir alone witnesses rigidity on positive ray  (lambda^2 = 1 on positive ray => lambda = 1)
+
+----------------------------------------------------------------------------------------
+Part 8: independence of the cited authorities from the parent's decoration row
+----------------------------------------------------------------------------------------
+  cited (G) authority: cl3_color_automorphism_theorem  (retained_bounded / audited_clean)
+  cited (C) authority: su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10
+                                                       (retained_bounded / audited_clean)
+  NOT cited:           su3_casimir_fundamental_theorem_note_2026-05-02 (decoration)
+  NOT cited:           parent's Step 5 holonomy identification import
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (cited G) Tr(T_a T_b) = (1/2) delta_{ab} on canonical Gell-Mann V_3
+    (cited C) sum_a T_a T_a = (4/3) I_3 on canonical Gell-Mann V_3
+    (T1) Tr(T_a^{(lambda)} T_b^{(lambda)}) = (lambda^2 / 2) delta_{ab} parametrically
+    (T2) sum_a T_a^{(lambda)} T_a^{(lambda)} = (4 lambda^2 / 3) I_3 parametrically
+    (T3) Lambda_* = {1} (joint preservation singleton on positive ray)
+    (T4) lambda != 1 changes both Gram and Casimir for representative sweep
+    (sanity) lambda = 1 preserves both invariants
+    (counterfactual) non-uniform mu_a admits 8-parameter family, confirming
+                     uniformity assumption is the load-bearing constraint
+    (independent witness) Gram alone and Casimir alone each force lambda = 1
+
+========================================================================================
+TOTAL: PASS=30, FAIL=0
+========================================================================================
+
+----- stderr -----
+

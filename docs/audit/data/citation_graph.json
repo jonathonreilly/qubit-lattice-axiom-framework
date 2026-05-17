@@ -3601,6 +3601,34 @@
       "to": "yt_ward_identity_derivation_theorem"
     },
     {
+      "from": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "to": "charged_lepton_y_tau_ward_combined_no_go_note_2026-05-10"
+    },
+    {
+      "from": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "to": "yt_ward_identity_derivation_theorem"
+    },
+    {
+      "from": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "to": "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26"
+    },
+    {
+      "from": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "to": "ckm_ew_lattice_a4_bridge_retained_identity_note_2026-04-25"
+    },
+    {
+      "from": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "to": "ckm_koide_cross_sector_z3_closure_theorem_note_2026-04-25"
+    },
+    {
+      "from": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "to": "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29"
+    },
+    {
+      "from": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "to": "lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10"
+    },
+    {
       "from": "chiral_walk_synthesis_2026-04-09",
       "to": "chiral_walk_synthesis_2026-04-10_addendum"
     },
@@ -9621,6 +9649,22 @@
       "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
     },
     {
+      "from": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
+      "to": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
+      "to": "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
+      "to": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
+      "to": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+    },
+    {
       "from": "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10",
       "to": "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
     },
@@ -10301,6 +10345,34 @@
       "to": "cl3_color_automorphism_theorem"
     },
     {
+      "from": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_rigidity_theorem_note"
+    },
+    {
+      "from": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+    },
+    {
+      "from": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
+    },
+    {
+      "from": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
       "from": "g_bare_rigidity_theorem_note",
       "to": "graph_first_su3_integration_note"
     },
@@ -10735,6 +10807,14 @@
     {
       "from": "hard_geometry_gravity_window_note",
       "to": "asymmetry_persistence_mass_window_note"
+    },
+    {
+      "from": "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17",
+      "to": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+    },
+    {
+      "from": "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17",
+      "to": "cpt_exact_note"
     },
     {
       "from": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
@@ -15941,6 +16021,18 @@
       "to": "left_handed_charge_matching_note"
     },
     {
+      "from": "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17",
+      "to": "graph_first_selector_derivation_note"
+    },
+    {
+      "from": "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17",
+      "to": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+    },
+    {
       "from": "lhcm_repair_atlas_consolidation_note_2026-05-02",
       "to": "left_handed_charge_matching_note"
     },
@@ -18073,6 +18165,46 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "hierarchy_bosonic_bilinear_selector_note"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -18989,6 +19121,10 @@
       "to": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
     },
     {
+      "from": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
+      "to": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+    },
+    {
       "from": "pl_s3_atlas_refinement_compatibility_theorem_note_2026-05-03",
       "to": "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03"
     },
@@ -19371,6 +19507,86 @@
     {
       "from": "pmns_oriented_cycle_selection_structure_note",
       "to": "pmns_oriented_cycle_channel_value_law_note"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_theta23_upper_octant_full_3sigma_rectangle_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_theta12_theta13_dcp_predictions_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_neutrino_mass_observables_no_prediction_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_theta23_upper_octant_chamber_closure_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_theta23_upper_octant_threshold_surface_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "neutrino_mass_derived_note"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "bae_u1b_six_ray_dirac_measure_stretch_attempt_note_2026-05-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "higgs_mass_derived_note"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "higgs_mass_from_axiom_note"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_oriented_cycle_channel_value_law_note"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "pmns_theta23_upper_octant_chamber_closure_prediction_note_2026-04-17"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "audit_backlog_campaign_progress_synthesis_2026-05-02"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+    },
+    {
+      "from": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "to": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
     },
     {
       "from": "pmns_right_conjugacy_invariant_no_go_note",
@@ -20727,6 +20943,14 @@
     {
       "from": "retarded_field_harness_note",
       "to": "retarded_field_compact_refinement_note"
+    },
+    {
+      "from": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
+      "to": "su3_dabc_symmetric_theorem_note_2026-05-02"
     },
     {
       "from": "rh_sector_anomaly_cancellation_identities_note_2026-05-02",
@@ -22138,6 +22362,10 @@
     },
     {
       "from": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
       "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
     },
     {
@@ -39483,6 +39711,18 @@
       "runner_path": null,
       "title": "Audit Packet Script-Dependency Resolution"
     },
+    "audit_structural_issues_snapshot_2026-05-17": {
+      "claim_id": "audit_structural_issues_snapshot_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "6933e61e89dc90aa92300e9fc5d268c0fd0fe908d72c0d4a5417ed5fb47ea254",
+      "path": "docs/AUDIT_STRUCTURAL_ISSUES_SNAPSHOT_2026-05-17.md",
+      "runner_path": null,
+      "title": "Audit-Process Structural Issues Snapshot \u2014 2026-05-17"
+    },
     "audited_symmetry_synthesis_note": {
       "claim_id": "audited_symmetry_synthesis_note",
       "claim_type_author_hint": null,
@@ -41707,6 +41947,26 @@
       "path": "docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md",
       "runner_path": null,
       "title": "`y_\u03c4` Ward Identity from `U(1)_Y` Anchor \u2014 Stretch Attempt (SA-B)"
+    },
+    "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17": {
+      "claim_id": "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "charged_lepton_y_tau_ward_combined_no_go_note_2026-05-10",
+        "yt_ward_identity_derivation_theorem",
+        "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
+        "ckm_ew_lattice_a4_bridge_retained_identity_note_2026-04-25",
+        "ckm_koide_cross_sector_z3_closure_theorem_note_2026-04-25",
+        "koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29",
+        "lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6d491d1da4424f0dac406f3c49ab70694388892c9679b194dc4c5994f88b387b",
+      "path": "docs/CHARGED_LEPTON_Y_TAU_WARD_STRUCTURAL_ANCHOR_REQUIREMENTS_POSITIVE_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_charged_lepton_y_tau_structural_anchor_partition.py",
+      "title": "Charged-Lepton `y_\u03c4` Ward Identity Structural Anchor Requirements Positive Theorem"
     },
     "chiral_3plus1d_boundary_phase_note": {
       "claim_id": "chiral_3plus1d_boundary_phase_note",
@@ -49556,6 +49816,26 @@
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Rescaling-Freedom Removal Theorem (Cl(3) Canonical Normalization)"
     },
+    "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17": {
+      "claim_id": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "g_bare_rigidity_theorem_note",
+        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
+        "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+        "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0bbde9cd4494dfe9645aad443b2b3a054a270f3ed82af3e3ec46baf4cc66f7cd",
+      "path": "docs/G_BARE_RIGIDITY_CANONICAL_NORMALIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_g_bare_rigidity_canonical_normalization_algebra_2026_05_17.py",
+      "title": "g_bare Rigidity Canonical-Normalization Algebraic Core \u2014 Narrow Theorem"
+    },
     "g_bare_rigidity_theorem_note": {
       "claim_id": "g_bare_rigidity_theorem_note",
       "claim_type_author_hint": null,
@@ -50911,6 +51191,23 @@
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
       "title": "Gauge-Vacuum Plaquette Reduction Existence and Uniqueness Theorem"
     },
+    "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17": {
+      "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+        "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cead0aee658d64992b4ee464b214d95a585a9e9f5324023c3b1e991a0feddfa7",
+      "path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
+      "title": "Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem"
+    },
     "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10": {
       "claim_id": "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -52214,6 +52511,21 @@
       "path": "docs/HARD_GEOMETRY_LOCAL_NOTE.md",
       "runner_path": "scripts/hard_geometry_local_support_pilot.py",
       "title": "Hard Geometry Local Support Note"
+    },
+    "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17": {
+      "claim_id": "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+        "cpt_exact_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "13795f52c4ee2381384c0d1d20c1726517baa62fa9eccbc7eb896d848ef909e2",
+      "path": "docs/HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py",
+      "title": "Hermitian-Lift `\u0398_H = P K` Bounded Narrow Theorem on Framework C, P"
     },
     "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16": {
       "claim_id": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
@@ -58143,6 +58455,22 @@
       "runner_path": "scripts/frontier_lhcm_matter_assignment.py",
       "title": "LHCM Matter Assignment from SU(3) Representation Content"
     },
+    "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17": {
+      "claim_id": "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "graph_first_su3_integration_note",
+        "graph_first_selector_derivation_note",
+        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "daac56dcbcc5d761e2777f62ad47f570fd28a42ed01021c319dc547cec3c2386",
+      "path": "docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py",
+      "title": "LHCM Matter-Assignment SU(3) Block-Representation Narrow Theorem (Retained-Only Substrate)"
+    },
     "lhcm_repair_atlas_consolidation_note_2026-05-02": {
       "claim_id": "lhcm_repair_atlas_consolidation_note_2026-05-02",
       "claim_type_author_hint": null,
@@ -61086,6 +61414,29 @@
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
     },
+    "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17": {
+      "claim_id": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "hierarchy_bosonic_bilinear_selector_note",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "7fe20004c410411adc13c9f87ab15575292780cf2c8fbd711d50cb3d5cfeb4b3",
+      "path": "docs/OBSERVABLE_PRINCIPLE_KLEIN_FOUR_APBC_ORBIT_PARTITION_CLOSED_FORM_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py",
+      "title": "Observable Principle \u2014 Klein-Four APBC Orbit Partition Closed-Form Narrow Theorem"
+    },
     "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -62543,6 +62894,20 @@
       "runner_path": null,
       "title": "Plaquette V=1 Picard-Fuchs ODE: Rank-Bound Citation Note"
     },
+    "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17": {
+      "claim_id": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8a6305ccd9c16575570e90fdda697b09668819b737da7d5ddcc65d2c6c1e9aec",
+      "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py",
+      "title": "Plaquette V=1 Picard-Fuchs ODE Rank-Exclusion (r=2, d=12) Narrow Theorem"
+    },
     "pmns_active_four_real_source_from_transport_note": {
       "claim_id": "pmns_active_four_real_source_from_transport_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -62968,6 +63333,39 @@
       "path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure"
+    },
+    "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17": {
+      "claim_id": "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (campaign-level synthesis)",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+        "dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16",
+        "pmns_theta23_upper_octant_full_3sigma_rectangle_narrow_theorem_note_2026-05-17",
+        "pmns_theta12_theta13_dcp_predictions_narrow_theorem_note_2026-05-17",
+        "pmns_neutrino_mass_observables_no_prediction_narrow_theorem_note_2026-05-17",
+        "neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28",
+        "pmns_theta23_upper_octant_chamber_closure_narrow_theorem_note_2026-05-17",
+        "pmns_theta23_upper_octant_threshold_surface_narrow_theorem_note_2026-05-17",
+        "neutrino_mass_derived_note",
+        "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+        "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+        "bae_u1b_six_ray_dirac_measure_stretch_attempt_note_2026-05-17",
+        "higgs_mass_derived_note",
+        "higgs_mass_from_axiom_note",
+        "pmns_oriented_cycle_channel_value_law_note",
+        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+        "pmns_theta23_upper_octant_chamber_closure_prediction_note_2026-04-17",
+        "audit_backlog_campaign_progress_synthesis_2026-05-02",
+        "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09",
+        "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "275af094294350a862ccae5f90fe8f3581cbc93f8716c369222a23ef87fd7c2e",
+      "path": "docs/PMNS_PREDICTIVE_SURFACE_CHARACTERIZATION_CAMPAIGN_SYNTHESIS_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "PMNS Predictive-Surface Characterization \u2014 Campaign Synthesis Note"
     },
     "pmns_right_conjugacy_invariant_no_go_note": {
       "claim_id": "pmns_right_conjugacy_invariant_no_go_note",
@@ -67590,6 +67988,21 @@
       "runner_path": "scripts/retarded_field_harness.py",
       "title": "Retarded Field Harness"
     },
+    "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
+      "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "su3_dabc_symmetric_theorem_note_2026-05-02"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "524b1c74be105e6db18a158d69676206ced2c6a4dc92f3c18376207d70571cb3",
+      "path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
+      "title": "RH-Completion-to-3\u0304 Cubic Anomaly Index Mapping Narrow Theorem"
+    },
     "rh_sector_anomaly_cancellation_identities_note_2026-05-02": {
       "claim_id": "rh_sector_anomaly_cancellation_identities_note_2026-05-02",
       "claim_type_author_hint": null,
@@ -70162,6 +70575,20 @@
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem"
+    },
+    "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
+      "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d147962b455e511fbcd3e9fd8638b0a56c1005f35a1002aab35bd96be6c54140",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem"
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
@@ -77043,6 +77470,7 @@
     "audit_landscape_snapshot_2026-05-17",
     "audit_lhf_leverage_map_for_retained_promotion_note_2026-05-01",
     "audit_packet_script_deps_note_2026-05-17",
+    "audit_structural_issues_snapshot_2026-05-17",
     "axiom_change_proposal_2026-04-10",
     "axiom_first_microcausality_lieb_robinson_hostile_audit_findings_note_2026-05-17",
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_hostile_audit_findings_note_2026-05-17",
@@ -77788,27 +78216,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 429,
+      "bounded_theorem": 436,
       "decoration": 1,
-      "meta": 160,
+      "meta": 162,
       "no_go": 56,
       "none": 1533,
       "open_gate": 44,
-      "positive_theorem": 161
+      "positive_theorem": 163
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 876,
+      "bounded_theorem": 883,
       "decoration": 1,
-      "meta": 160,
+      "meta": 162,
       "no_go": 161,
       "none": 449,
       "open_gate": 123,
-      "positive_theorem": 614
+      "positive_theorem": 616
     },
-    "edge_count": 9221,
-    "leaf_count": 736,
-    "node_count": 2384,
-    "root_count": 859,
-    "runners_with_path": 1991
+    "edge_count": 9278,
+    "leaf_count": 738,
+    "node_count": 2395,
+    "root_count": 860,
+    "runners_with_path": 2000
   }
 }

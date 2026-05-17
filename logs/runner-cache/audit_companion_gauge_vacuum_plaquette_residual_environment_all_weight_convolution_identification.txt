@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
+runner_sha256: 32a77b30a1e69d6559b145427b551cd80089a2c94f2b7aabef102004cdfe104f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.03
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_
+IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of (T1)-(T4) under cited retained (I1)-(I3)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  N_MAX = 3  (16 weights in finite truncation)
+  Distinct abstract symbol pairs: kappa = 10, a (incl. fixed a_00=1) = 10
+  rho_(0,0)^env = kappa_(0,0) / a_(0,0)^4 = kappa_(0,0) (since a_(0,0)=1)
+
+----------------------------------------------------------------------------------------
+Part 1: (T1) structural diagonality of R_beta^env
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1) R_beta^env is diagonal on the character basis (off-diagonal entries vanish symbolically)  (diag operator on orthonormal basis)
+  [PASS (A)] (T1) R_beta^env is self-adjoint (real diagonal entries)  (all eigenvalues kappa/(a^4) are real positive symbols)
+  [PASS (A)] (T1) R_beta^env eigenvalues are positive (kappa > 0, a > 0 from (I1)+(I2))  (every eigenvalue is product/ratio of positive symbols)
+  [PASS (A)] (T1) R_beta^env commutes with the swap involution S  (kappa_(p,q) = kappa_(q,p), a_(p,q) = a_(q,p) enforced by symbol-pair sharing)
+
+----------------------------------------------------------------------------------------
+Part 2: (T2) Peter-Weyl coefficients of Z_beta^env
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T2) Z_beta^env character coefficient (D2) matches rho^env on every basis weight  (z_(p,q)^env / z_(0,0)^env = kappa_(p,q) / a_(p,q)^4 at every weight)
+  [PASS (A)] (T2) rho_(0,0)^env(beta) = 1 (normalization)  (rho_(0,0)^env = kappa_(0,0)/1 = kappa_(0,0); normalization sets it to 1 conventionally)
+  [PASS (A)] (T2) rho_(p,q)^env = rho_(q,p)^env (conjugation symmetry)  (follows from kappa_(p,q) = kappa_(q,p) and a_(p,q) = a_(q,p))
+
+----------------------------------------------------------------------------------------
+Part 3: (T3) all-weight structural identification
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T3) eigenvalue equality kappa_(p,q)/a_(p,q)^4 = z_(p,q)^env/z_(0,0)^env on every basis weight  (symbolic reduction at exact sympy precision on N_MAX=3 truncation)
+  [PASS (A)] (T3) R_beta^env = C_(Z_beta^env / z_(0,0)^env) at the operator level  (matrix difference reduces to zero on every entry symbolically)
+
+----------------------------------------------------------------------------------------
+Part 4: (T4) uniqueness of the diagonal eigenvalue sequence
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T4) two distinct eigenvalue sequences yield distinct operators  (perturbation epsilon at weight (1, 0) (sympy: nonzero))
+  [PASS (A)] (T4) the perturbed operator differs from R_beta^env in at least one entry  (2 differing entries (expected 2 for symmetric perturbation))
+
+----------------------------------------------------------------------------------------
+Part 5: algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R_beta^env) * D_beta^loc = D_beta at exact sympy precision  (D^loc * R_env multiplies eigenvalues: a^4 * (kappa/a^4) = kappa)
+  [PASS (A)] R_beta^env = D_beta^loc^{-1} * D_beta at exact sympy precision  (quotient matches construction (D1))
+
+----------------------------------------------------------------------------------------
+Part 6: counterfactual probe (D^loc strip is load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: stripping only exp[(beta/2)J] gives kappa_(p,q) != kappa_(p,q)/a_(p,q)^4 for (p,q) != (0,0)  (confirms D^loc strip is load-bearing in (D1))
+  [PASS (A)] counterfactual: at (0,0), D_beta and R_beta^env have the same trivial-irrep eigenvalue  (a_(0,0) = 1 (I2 normalization) so a^4 = 1)
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactual probe (swap symmetry is load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: kappa_(1,0) != kappa_(0,1) breaks [S, R_beta^env] = 0  (commutator entry (0,1)<->(1,0) = delta/a_0_1**4)
+
+----------------------------------------------------------------------------------------
+Part 8: finite-truncation numerical sanity (Class A FP cross-check)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (numerical sanity) R_beta^env is positive definite at the abstract sample  (all diagonal entries > 0 in exact rationals)
+  [PASS (A)] (numerical sanity) R_beta^env is self-adjoint at the abstract sample  (exact rational entries; transpose equals self)
+  [PASS (A)] (numerical sanity) R_beta^env commutes with the swap involution at the abstract sample  ([S, R_env] = 0 exactly in rationals)
+  [PASS (A)] (numerical sanity) R_beta^env = C_Z/z_(0,0)^env at the abstract sample (exact)  (diagonal-operator match exact in rationals on every basis weight)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision under cited retained (I1)+(I2)+(I3):
+    (T1) Structural diagonality, self-adjointness, positivity, swap symmetry of R_beta^env
+    (T2) Peter-Weyl character expansion of Z_beta^env with (D2) coefficients
+    (T3) eigenvalue equality kappa/a^4 = z^env/z_(0,0)^env at every weight (operator-level)
+    (T4) uniqueness: distinct eigenvalue sequences yield distinct operators
+    Algebraic compatibility R_beta^env = D_beta^loc^{-1} * D_beta
+    Counterfactuals: D^loc strip + swap symmetry are both load-bearing
+    Finite-truncation numerical sanity at one independent abstract sample
+
+========================================================================================
+TOTAL: PASS=20, FAIL=0
+========================================================================================
+
+----- stderr -----
+

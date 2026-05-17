@@ -2112,6 +2112,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_charged_lepton_y_tau_ward_combined_no_go.py"
     },
+    "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_charged_lepton_y_tau_structural_anchor_partition.py"
+    },
     "chiral_3plus1d_boundary_phase_note": {
       "assert_count": 0,
       "counts": {
@@ -7932,6 +7944,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_g_bare_derivation.py"
     },
+    "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_g_bare_rigidity_canonical_normalization_algebra_2026_05_17.py"
+    },
     "g_bare_rigidity_theorem_note": {
       "assert_count": 1,
       "counts": {
@@ -8976,6 +9000,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py"
     },
+    "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py"
+    },
     "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10": {
       "assert_count": 2,
       "counts": {
@@ -9887,6 +9923,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/hard_geometry_local_support_pilot.py"
+    },
+    "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py"
     },
     "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16": {
       "assert_count": 2,
@@ -13632,6 +13680,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_lhcm_matter_assignment.py"
     },
+    "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 21,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py"
+    },
     "lhcm_repair_atlas_consolidation_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -15444,6 +15504,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_hierarchy_observable_principle_from_axiom.py"
     },
+    "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17": {
+      "assert_count": 4,
+      "counts": {
+        "A": 19,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py"
+    },
     "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17": {
       "assert_count": 2,
       "counts": {
@@ -16403,6 +16475,18 @@
       "decoration_candidate": false,
       "dominant_class": "A",
       "runner": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py"
+    },
+    "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py"
     },
     "pmns_active_four_real_source_from_transport_note": {
       "assert_count": 1,
@@ -18155,6 +18239,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/retarded_field_harness.py"
+    },
+    "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 56,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py"
     },
     "rh_sector_anomaly_cancellation_identities_note_2026-05-02": {
       "assert_count": 1,
@@ -19931,6 +20027,18 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py"
+    },
+    "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py"
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "assert_count": 1,
@@ -25001,6 +25109,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/audit_companion_charged_lepton_y_tau_structural_anchor_partition.py": {
+      "assert_count": 1,
+      "claims": [
+        "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_chsh_structural_bound_narrow_exact_2026_05_17.py": {
       "assert_count": 0,
       "claims": [
@@ -25286,6 +25409,51 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/audit_companion_g_bare_rigidity_canonical_normalization_algebra_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py": {
+      "assert_count": 1,
+      "claims": [
+        "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
     "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py": {
       "assert_count": 1,
       "claims": [
@@ -25316,6 +25484,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 21,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py": {
       "assert_count": 1,
       "claims": [
@@ -25329,6 +25512,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py": {
+      "assert_count": 4,
+      "claims": [
+        "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 19,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py": {
@@ -25376,6 +25574,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py": {
       "assert_count": 1,
       "claims": [
@@ -25389,6 +25602,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 56,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_s1_rep_dimension_readoff_exact_2026_05_10.py": {
@@ -25494,6 +25722,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py": {
@@ -52265,16 +52508,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 291,
+    "decoration_candidates": 295,
     "dominant_class_distribution": {
-      "A": 184,
+      "A": 188,
       "B": 257,
-      "C": 715,
+      "C": 718,
       "D": 292,
-      "none": 424
+      "none": 426
     },
-    "runners_classified": 1872,
-    "runners_with_C": 925,
+    "runners_classified": 1881,
+    "runners_with_C": 928,
     "runners_with_D": 537
   }
 }

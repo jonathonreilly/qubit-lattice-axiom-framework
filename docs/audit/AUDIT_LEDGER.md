@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 331 |
+| **retained_bounded** | 332 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1221 |
+| unaudited | 1220 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,22 +44,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 551 |
+| `audited_clean` | 552 |
 | `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1418 |
+| `unaudited` | 1417 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 945 |
+| `bounded_theorem` | 946 |
 | `decoration` | 21 |
 | `meta` | 200 |
 | `no_go` | 238 |
 | `open_gate` | 110 |
-| `positive_theorem` | 734 |
+| `positive_theorem` | 733 |
 
 | criticality | count |
 |---|---:|
@@ -200,6 +200,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -2923,6 +2924,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The registered runner computes, for the declared n=17 and n=21 Dirac double-slit cases, detector proxies near 0.06-0.07, record-mixture purity near 0.500, and clean-vs-record L1 residuals near 0.91-0.94.  _(class `C`)_
 - **chain closes:** True — The runner source is self-contained, instantiates the Dirac algebra, walk, slit masks, propagation channels, and metrics directly, and its stdout matches the note's recorded numbers. No cited upstream authority or missing helper is needed for the narrowed finite-runner fact.
 - **rationale:** For the narrowed scope, the note is a bounded numerical runner fact and the provided runner genuinely computes the reported observables rather than printing hard-coded target values. The reported n=17 and n=21 values in the note match the supplied runner output to the shown precision. This clean verdict does not ratify the broader harness-mismatch-versus-architecture diagnosis, which the note explicitly removes from binding scope.
+- **auditor confidence:** high
+
+### `dirac_field_smoothing_note`
+
+- **Note:** [`DIRAC_FIELD_SMOOTHING_NOTE.md`](../../docs/DIRAC_FIELD_SMOOTHING_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite m0 = 0.10 runner output for n = 29, N in {8,10,12,14,16,18,20,22,24}, offset sweep {2,3,4,5,6} at N = 16, comparing localized inverse, softened inverse, and Gaussian source kernels.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-152430-a5e2dcef-dirac_field_smoothing_no-014`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the finite m0 = 0.10 scan grid, the Gaussian profile has 5/5 TOWARD offset biases with an offset-law fit alpha = 3.053 and R^2 = 0.8098, while all profiles fail N-monotonicity.  _(class `C`)_
+- **chain closes:** True — The runner source explicitly constructs the 4-component Dirac walk, mass-field kernels, density readout, N sweep, offset sweep, and power-law fit rather than printing hard-coded contested constants. The note's in-scope numerical statements match the completed runner output.
+- **rationale:** The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim.
 - **auditor confidence:** high
 
 ### `dirac_observable_panel_note`

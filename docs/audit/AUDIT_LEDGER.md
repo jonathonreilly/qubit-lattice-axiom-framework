@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 337 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1213 |
+| unaudited | 1212 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 178 |
-| ~~audited_failed~~ | 21 |
+| ~~audited_failed~~ | 22 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -47,10 +47,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 558 |
 | `audited_conditional` | 178 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 65 |
+| `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1410 |
+| `unaudited` | 1409 |
 
 | claim_type | count |
 |---|---:|
@@ -906,6 +906,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
@@ -6896,6 +6897,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the ordered 3D dense spent-delay family, the live sweep shows z = 2 through 6 remain attractive, z = 7 is mixed/signal-free, detector-window widening preserves z = 6's sign, and wider slit thresholds do not extend the window further.  _(class `C`)_
 - **chain closes:** True — The live script reproduces the source table and decision on the same declared family, action, geometry, slit threshold, detector-window scan, and z range; the source keeps the conclusion bounded and does not promote an all-distance or new-action theorem.
 - **rationale:** The source claim is a bounded computational extension, and the live artifact reproduces the canonical z sweep, detector-window sensitivity rows, slit-threshold spot checks, Born companion value, MI/decoherence values, and final bounded-extension decision. The conclusion is limited to the ordered 3D dense spent-delay family with the declared geometry and explicitly excludes all-distance, 4D, NN, and action-law claims, so the runner checks the load-bearing step without hidden promotion. Residual risk is only ordinary finite-sweep scope: this clean audit does not say anything beyond the tested family and parameter grid.
+- **auditor confidence:** high
+
+### `lattice_3d_l2_numpy_h0125_audit_note`
+
+- **Note:** [`LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md`](../../docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Reduced fixed-family 3D dense numpy runner with phys_l=4, phys_w=1.5, max_d_phys=3, strength=5e-5, and h ladder 1.0, 0.5, 0.25, 0.125.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-153919-a5e2dcef-lattice_3d_l2_numpy_h012-022`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The weak-field gravity lane does not recover because the gravity sign at z=3 stays AWAY at every spacing and the F~M fit never gets any TOWARD rows.  _(class `C`)_
+- **chain closes:** False — The runner computes the table, but the gravity readout is not a valid weak-field probe: make_field returns a zero field when the z=3 mass node is outside the reduced transverse width. The missing step is a valid in-domain source/readout, or a theorem showing that this zero-field/off-lattice probe legitimately tests the retained gravity class.
+- **rationale:** The helper source shows that make_field only creates a mass field if (gl, 0, round(z_mass_phys/h)) exists in the lattice. With phys_w=1.5, z_mass_phys=3 is outside the lattice at every h, so field_m is identically zero and Gravity z=3 compares free propagation to free propagation. The reported +0.000000 AWAY and lack of TOWARD F~M rows are therefore artifacts of an absent source, not evidence that the weak-field gravity lane fails on an active reduced-family probe. The numerical completion and Born checks remain computed, but the bounded negative gravity conclusion does not follow.
 - **auditor confidence:** high
 
 ### `lattice_3d_l2_numpy_h0125_bridge_note`

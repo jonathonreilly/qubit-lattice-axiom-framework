@@ -833,12 +833,36 @@
       "to": "hypercharge_identification_note"
     },
     {
+      "from": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "anomaly_forces_time_theorem",
       "to": "native_gauge_closure_note"
     },
     {
       "from": "anomaly_forces_time_theorem",
-      "to": "cpt_exact_note"
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "anomaly_forces_time_theorem",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
     },
     {
       "from": "anomaly_forces_time_theorem",
@@ -39280,6 +39304,24 @@
       "runner_path": "scripts/frontier_anomaly_cancellation_proof_walk_lattice_independence.py",
       "title": "Anomaly Cancellation Proof-Walk Lattice-Independence Bounded Note"
     },
+    "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17": {
+      "claim_id": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "anomaly_forces_time_theorem",
+        "cpt_exact_note",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "dd49f2ed1076cdbeb5df377362e2ece140ec93b7951c580994ed003af447a9e4",
+      "path": "docs/ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "Anomaly-Forces-Time admission (iii) routing correction"
+    },
     "anomaly_forces_time_hostile_audit_findings_note_2026-05-16": {
       "claim_id": "anomaly_forces_time_hostile_audit_findings_note_2026-05-16",
       "claim_type_author_hint": "meta",
@@ -39299,11 +39341,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "native_gauge_closure_note",
-        "cpt_exact_note",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "no_per_site_chirality_theorem_note_2026-05-02",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ecb30b884ddad593b941e6c8f4d8664dc6587ad2bb86257d866dc8bc9558946d",
+      "note_hash": "33e271f28400f8f04c8c267c5a7fbedcfaa21c0377031489d51888bb4e82bc3e",
       "path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "title": "Anomaly Cancellation Forces 3+1 Spacetime"
@@ -78470,7 +78513,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 446,
       "decoration": 1,
-      "meta": 162,
+      "meta": 163,
       "no_go": 56,
       "none": 1534,
       "open_gate": 44,
@@ -78479,15 +78522,15 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 893,
       "decoration": 1,
-      "meta": 162,
+      "meta": 163,
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
       "positive_theorem": 619
     },
-    "edge_count": 9292,
+    "edge_count": 9298,
     "leaf_count": 751,
-    "node_count": 2409,
+    "node_count": 2410,
     "root_count": 865,
     "runners_with_path": 2013
   }

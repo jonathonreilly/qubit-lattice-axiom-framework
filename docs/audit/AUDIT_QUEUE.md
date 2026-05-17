@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | unaudited | critical | 808 | 20.16 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
+| 1 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | audit_in_progress | critical | 808 | 20.16 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 2 | `hypercharge_identification_note` | bounded_theorem | unaudited | critical | 808 | 18.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification.py` |
 | 3 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | critical | 808 | 11.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py` |
 | 4 | `poisson_self_gravity_loop_v3_note` | bounded_theorem | unaudited | critical | 808 | 11.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/poisson_self_gravity_loop_v3.py` |

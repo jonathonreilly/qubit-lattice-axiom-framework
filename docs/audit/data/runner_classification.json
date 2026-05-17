@@ -4776,6 +4776,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_dm_leptogenesis_pmns_breaking_triplet_source_law.py"
     },
+    "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py"
+    },
     "dm_leptogenesis_pmns_constructive_continuity_closure_theorem_note_2026-04-17": {
       "assert_count": 1,
       "counts": {
@@ -25332,6 +25344,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
       "exists": true
     },
     "scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py": {
@@ -52649,9 +52676,9 @@
       "B": 257,
       "C": 720,
       "D": 293,
-      "none": 428
+      "none": 429
     },
-    "runners_classified": 1886,
+    "runners_classified": 1887,
     "runners_with_C": 930,
     "runners_with_D": 538
   }

@@ -6181,6 +6181,18 @@
       "to": "pmns_sector_orientation_orbit_note"
     },
     {
+      "from": "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17",
+      "to": "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_pmns_constructive_continuity_closure_theorem_note_2026-04-17",
       "to": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
     },
@@ -45590,6 +45602,22 @@
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_breaking_triplet_source_law.py",
       "title": "DM Leptogenesis PMNS Breaking-Triplet Source Law"
     },
+    "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17": {
+      "claim_id": "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d7e7a414b235df293915c1bad4cb4d247249935213beb18bf78881b2b13a93f8",
+      "path": "docs/DM_LEPTOGENESIS_PMNS_CONSTRAINED_OPTIMIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py",
+      "title": "DM Leptogenesis PMNS Constrained-Optimization Algebra Narrow Theorem"
+    },
     "dm_leptogenesis_pmns_constructive_continuity_closure_theorem_note_2026-04-17": {
       "claim_id": "dm_leptogenesis_pmns_constructive_continuity_closure_theorem_note_2026-04-17",
       "claim_type_author_hint": null,
@@ -78324,7 +78352,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 438,
+      "bounded_theorem": 439,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78333,7 +78361,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 885,
+      "bounded_theorem": 886,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78341,10 +78369,10 @@
       "open_gate": 123,
       "positive_theorem": 619
     },
-    "edge_count": 9284,
+    "edge_count": 9287,
     "leaf_count": 744,
-    "node_count": 2401,
+    "node_count": 2402,
     "root_count": 862,
-    "runners_with_path": 2005
+    "runners_with_path": 2006
   }
 }

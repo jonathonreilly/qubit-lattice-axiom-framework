@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 430,
     "high": 161,
-    "leaf": 320,
+    "leaf": 321,
     "medium": 315
   },
   "cycle_break_target_count": 53,
@@ -30675,6 +30675,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/DM_LEPTOGENESIS_PMNS_CONSTRAINED_OPTIMIZATION_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_dm_leptogenesis_pmns_constrained_optimization_algebra_narrow.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "dm_m_dm_inverse_band_gauge_audit_bounded_note_2026-05-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35814,5 +35840,5 @@
     }
   ],
   "ready_count": 6,
-  "total_pending": 1226
+  "total_pending": 1227
 }

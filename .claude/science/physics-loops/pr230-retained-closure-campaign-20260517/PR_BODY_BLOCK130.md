@@ -41,8 +41,8 @@ the source-triplet coupling from `0` to `0.12124355652982143`.
 - `python3 scripts/frontier_yt_fh_lsz_target_timeseries_full_set_checkpoint.py` -> `PASS=9 FAIL=0`
 - `python3 scripts/frontier_yt_pr230_schur_higher_shell_chunk_checkpoint.py --chunk 63` -> `PASS=15 FAIL=0`
 - `git diff --check`
+- `bash docs/audit/scripts/run_pipeline.sh` -> complete; no docs/audit diffs left in worktree
 - `python3 docs/audit/scripts/audit_lint.py --strict` -> OK, no errors; 5 known warnings
-- `bash docs/audit/scripts/run_pipeline.sh` -> complete; generated docs/audit diffs restored
 
 ## Claim Boundary
 

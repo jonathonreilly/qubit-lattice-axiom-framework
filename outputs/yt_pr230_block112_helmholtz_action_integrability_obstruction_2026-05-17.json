@@ -1,0 +1,195 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block112_helmholtz_action_integrability_obstruction_passed": true,
+  "canonical_source_higgs_overlap_fixed": false,
+  "conditional_surface_status": "exact support only after a future accepted same-surface action or physical response packet supplies canonical O_H, source-Higgs or W/Z mixed response rows, covariance, absolute normalization authority, and FV/IR/contact limits",
+  "exact_next_action": "Supply one accepted mixed-response/action artifact: a same-surface EW/Higgs action certificate with Helmholtz-symmetric source/Higgs/WZ response Hessian rows, canonical O_H and C_ss/C_sH/C_HH pole rows, or a strict W/Z packet with matched top-W/Z covariance and an allowed absolute pin.  Do not promote source-only or finite taste-radial rows to an action-integrability certificate.",
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "treated_finite_c_sx_c_xx_as_canonical_c_sh_c_hh": false,
+    "treated_helmholtz_counterfamily_as_physical_model": false,
+    "treated_taste_radial_x_as_canonical_O_H": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_reduced_pilots_as_production_evidence": false,
+    "used_yt_ward_identity": false
+  },
+  "helmholtz_counterfamily": {
+    "counterfamily_passed": true,
+    "distinct_source_higgs_overlaps": [
+      0.0,
+      0.25,
+      0.6
+    ],
+    "integrable_same_source_signature_family": [
+      {
+        "eigenvalues": [
+          1.0,
+          1.0
+        ],
+        "helmholtz_symmetric": true,
+        "hessian": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "higgs_higgs_block": 1.0,
+        "lambda_source_higgs": 0.0,
+        "normalized_source_higgs_overlap": 0.0,
+        "positive_definite": true,
+        "source_source_block": 1.0
+      },
+      {
+        "eigenvalues": [
+          0.75,
+          1.25
+        ],
+        "helmholtz_symmetric": true,
+        "hessian": [
+          [
+            1.0,
+            0.25
+          ],
+          [
+            0.25,
+            1.0
+          ]
+        ],
+        "higgs_higgs_block": 1.0,
+        "lambda_source_higgs": 0.25,
+        "normalized_source_higgs_overlap": 0.25,
+        "positive_definite": true,
+        "source_source_block": 1.0
+      },
+      {
+        "eigenvalues": [
+          0.4,
+          1.6
+        ],
+        "helmholtz_symmetric": true,
+        "hessian": [
+          [
+            1.0,
+            0.6
+          ],
+          [
+            0.6,
+            1.0
+          ]
+        ],
+        "higgs_higgs_block": 1.0,
+        "lambda_source_higgs": 0.6,
+        "normalized_source_higgs_overlap": 0.6,
+        "positive_definite": true,
+        "source_source_block": 1.0
+      }
+    ],
+    "nonintegrable_same_source_signature_example": {
+      "helmholtz_condition_passed": false,
+      "helmholtz_curl_H_sh_minus_H_hs": -0.49999999999999994,
+      "jacobian": [
+        [
+          1.0,
+          0.2
+        ],
+        [
+          0.7,
+          1.0
+        ]
+      ],
+      "meaning": "Without both mixed rows H_sh and H_hs, the current data cannot test whether the response one-form is action-integrable."
+    },
+    "shared_source_only_signature": {
+      "canonical_higgs_identity": "not observed",
+      "mixed_source_higgs_derivative": "not observed",
+      "source_direction_linear_response": "held fixed in all rows",
+      "source_source_block": 1.0
+    },
+    "strict_limit": "This is a finite inverse-variational witness only.  It proves the missing-row non-identifiability of the current source surface; it does not model PR230 dynamics or supply physical y_t evidence."
+  },
+  "helmholtz_mixed_response_rows_present": false,
+  "higher_shell_row_audit": {
+    "canonical_higgs_identity_false_chunks": 63,
+    "checked_chunks": 63,
+    "finite_taste_radial_alias_chunks": 63,
+    "issues": {},
+    "scalar_source_response_chunks": 63,
+    "source_higgs_time_kernel_nonempty_chunks": 0,
+    "wz_response_nonempty_chunks": 0
+  },
+  "hypothetical_axiom_status": null,
+  "parent_certificates": {
+    "block109_frontier_selector": "outputs/yt_pr230_block109_closure_root_frontier_selector_2026-05-17.json",
+    "block110_action_descent_obstruction": "outputs/yt_pr230_block110_cl3_z3_action_descent_obstruction_2026-05-17.json",
+    "block111_schur_kprime_packet_gap_audit": "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "canonical_oh_hard_residual": "outputs/yt_pr230_canonical_oh_hard_residual_equivalence_gate_2026-05-07.json",
+    "canonical_oh_wz_common_action_cut": "outputs/yt_pr230_canonical_oh_wz_common_action_cut_2026-05-07.json",
+    "complete_packet_monotonicity": "outputs/yt_pr230_schur_higher_shell_complete_packet_monotonicity_gate_2026-05-15.json",
+    "fms_action_adoption_minimal_cut": "outputs/yt_pr230_fms_action_adoption_minimal_cut_2026-05-07.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "same_source_ew_action_adoption_attempt": "outputs/yt_pr230_same_source_ew_action_adoption_attempt_2026-05-06.json",
+    "same_source_ew_higgs_action_ansatz": "outputs/yt_pr230_same_source_ew_higgs_action_ansatz_gate_2026-05-06.json",
+    "source_higgs_direct_pole_row_contract": "outputs/yt_pr230_source_higgs_direct_pole_row_contract_2026-05-07.json",
+    "source_higgs_overlap_kappa_contract": "outputs/yt_pr230_source_higgs_overlap_kappa_contract_2026-05-06.json",
+    "top_wz_covariance_theorem_import_audit": "outputs/yt_top_wz_covariance_theorem_import_audit_2026-05-05.json",
+    "wz_physical_response_packet_intake": "outputs/yt_pr230_wz_physical_response_packet_intake_checkpoint_2026-05-07.json"
+  },
+  "parent_statuses": {
+    "block109_frontier_selector": "open / Block109 closure-root frontier selector: positive closure not achieved; next admissible work is a genuine same-surface O_H/action plus source-Higgs pole-row artifact",
+    "block110_action_descent_obstruction": "exact negative boundary / Block110 Cl(3)/Z3 source-taste algebra does not derive accepted EW/Higgs action, canonical O_H, or scalar LSZ metric on the current PR230 surface",
+    "block111_schur_kprime_packet_gap_audit": "exact negative boundary / Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime pole-row emissions",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "canonical_oh_hard_residual": "exact negative boundary / canonical O_H hard residual not closed on current PR230 surface",
+    "canonical_oh_wz_common_action_cut": "exact support/boundary / canonical O_H and WZ accepted-action common-cut certificate; current surface remains open",
+    "complete_packet_monotonicity": "exact negative boundary / complete 63/63 higher-shell finite rows fail necessary Stieltjes complete-monotonicity sign tests for strict scalar-LSZ/Schur pole authority",
+    "fms_action_adoption_minimal_cut": "exact-support / FMS action-adoption minimal cut; current PR230 surface has candidate support but no adopted same-surface action, canonical O_H, or strict pole rows",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached",
+    "same_source_ew_action_adoption_attempt": "exact negative boundary / ansatz-only same-source EW action adoption shortcut blocked",
+    "same_source_ew_higgs_action_ansatz": "conditional support / same-source EW/Higgs action-extension ansatz specified; actual current-surface adoption absent",
+    "source_higgs_direct_pole_row_contract": "exact-support / direct source-Higgs pole-row contract; O_H and production C_sH/C_HH rows are absent",
+    "source_higgs_overlap_kappa_contract": "exact-support / source-Higgs overlap-kappa row contract; current row packet absent",
+    "top_wz_covariance_theorem_import_audit": "exact negative boundary / no importable same-surface top-W covariance theorem on current PR230 surface",
+    "wz_physical_response_packet_intake": "exact negative boundary / WZ physical-response packet not present on current PR230 surface; only scout/schema and support-contract artifacts exist"
+  },
+  "pass_count": 15,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The current surface has source-only responses and finite taste-radial C_ss/C_sx/C_xx aliases, but lacks the canonical mixed derivatives needed to integrate a same-source EW/Higgs action or fix source-Higgs overlap.  The finite counterfamily shows identical source-only signatures with different integrable source-Higgs overlaps.",
+  "same_source_action_integrability_authority_present": false,
+  "strict_action_or_response_artifact_presence": {
+    "accepted_same_source_ew_action_certificate": false,
+    "canonical_oh_certificate": false,
+    "delta_perp_tomography_rows": false,
+    "same_surface_ew_higgs_action_certificate": false,
+    "source_higgs_measurement_rows": false,
+    "source_higgs_pole_rows": false,
+    "top_wz_matched_covariance_rows": false,
+    "wz_response_rows": false
+  },
+  "strict_non_claims": [
+    "does not claim retained or proposed_retained y_t closure",
+    "does not infer an accepted EW/Higgs action from source-only or taste-radial finite rows",
+    "does not identify taste-radial x with canonical O_H",
+    "does not relabel C_sx/C_xx as physical C_sH/C_HH pole rows",
+    "does not treat the finite Helmholtz counterfamily as a PR230 dynamics model",
+    "does not set kappa_s = 1, c2 = 1, Z_match = 1, or g2 = 1",
+    "does not use H_unit, yt_ward_identity, observed targets, alpha_LM, plaquette, or u0"
+  ]
+}

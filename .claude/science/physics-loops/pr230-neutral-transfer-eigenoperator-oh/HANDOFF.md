@@ -7,6 +7,45 @@ Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
 
+## Block112 Helmholtz Action-Integrability Obstruction
+
+Block112 attacks the action/O_H root with an inverse-variational check.  It
+verifies that current source-response rows and finite taste-radial
+`C_ss/C_sx/C_xx` aliases do not contain the Helmholtz-symmetric mixed
+derivatives needed to integrate an accepted same-source EW/Higgs action or fix
+source-Higgs overlap.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block112_helmholtz_action_integrability_obstruction.py`
+- `outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json`
+- `docs/YT_PR230_BLOCK112_HELMHOLTZ_ACTION_INTEGRABILITY_OBSTRUCTION_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block112 Helmholtz action-integrability obstruction PASS=15 FAIL=0
+campaign status PASS=432 FAIL=0
+assumption/import stress PASS=115 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors; 5 known warnings
+audit pipeline complete; generated docs/audit churn restored
+git diff --check OK
+```
+
+Honest status: exact negative boundary for the source-only / finite-alias
+action-integrability shortcut.  No retained or `proposed_retained` closure is
+authorized.
+
+Exact next action: supply a same-surface EW/Higgs action certificate with
+Helmholtz-symmetric source/Higgs/W/Z mixed-response rows, canonical `O_H` and
+physical `C_ss/C_sH/C_HH` pole rows, or a strict W/Z packet with matched
+top-W/Z covariance and an allowed absolute pin.
+
 ## Block111 Schur K-prime Packet Gap Audit
 
 Block111 audits the completed `63/63` higher-shell packet against the strict

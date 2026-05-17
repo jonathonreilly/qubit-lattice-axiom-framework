@@ -353,6 +353,9 @@ def main() -> int:
         "block111_schur_kprime_packet_gap_audit": load(
             "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json"
         ),
+        "block112_helmholtz_action_integrability_obstruction": load(
+            "outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2146,6 +2149,43 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block112_helmholtz_keeps_imports_clean = (
+        "Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows"
+        in str(
+            certificates["block112_helmholtz_action_integrability_obstruction"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block112_helmholtz_action_integrability_obstruction"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block112_helmholtz_action_integrability_obstruction"].get(
+            "block112_helmholtz_action_integrability_obstruction_passed"
+        )
+        is True
+        and certificates["block112_helmholtz_action_integrability_obstruction"].get(
+            "helmholtz_mixed_response_rows_present"
+        )
+        is False
+        and certificates["block112_helmholtz_action_integrability_obstruction"].get(
+            "canonical_source_higgs_overlap_fixed"
+        )
+        is False
+        and all(
+            value is False
+            for value in certificates["block112_helmholtz_action_integrability_obstruction"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block112-helmholtz-keeps-imports-clean",
+        block112_helmholtz_keeps_imports_clean,
+        certificates["block112_helmholtz_action_integrability_obstruction"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2465,6 +2505,7 @@ def main() -> int:
             "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
             "does not treat the Block110 finite source/taste algebra obstruction as an accepted EW/Higgs action or canonical O_H certificate",
             "does not treat completed higher-shell packet metadata or finite C_ss/C_sx/C_xx aliases as Schur K-prime pole-row emissions",
+            "does not treat source-only response rows or finite taste-radial aliases as Helmholtz action-integrability or source-Higgs overlap authority",
             "does not close future source-Higgs, W/Z, Schur, rank-one, scalar-LSZ, or production routes",
         ],
         "z3_heat_kernel_neutral_transfer_support_not_h3h4": z3_heat_kernel_support_not_h3h4,
@@ -2475,6 +2516,7 @@ def main() -> int:
         "block109_frontier_selector_keeps_imports_clean": block109_frontier_keeps_imports_clean,
         "block110_action_descent_keeps_imports_clean": block110_action_descent_keeps_imports_clean,
         "block111_schur_kprime_gap_keeps_imports_clean": block111_schur_kprime_gap_keeps_imports_clean,
+        "block112_helmholtz_keeps_imports_clean": block112_helmholtz_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

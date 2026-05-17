@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block111_schur_kprime_packet_gap_audit`.
+Current block: `block112_helmholtz_action_integrability_obstruction`.
 
 ```yaml
-actual_current_surface_status: exact negative boundary / Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime pole-row emissions
-conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
+actual_current_surface_status: exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action
+conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block111 supplies a current-surface exact boundary, not closure. It rejects treating the completed finite higher-shell packet as strict Schur/Feshbach K-prime pole-row evidence: every chunk marks K-prime rows absent_guarded, pole_residue_rows are empty, finite C_ss/C_sx/C_xx aliases remain nonphysical, and the packet supplies no pole coordinate, K-prime derivative row, null vectors, source projection numerator, FV/IR/contact authority, or canonical O_H identity."
+proposal_allowed_reason: "Block112 supplies a current-surface exact boundary, not closure. It rejects integrating an accepted same-source EW/Higgs action or fixing source-Higgs overlap from source-only response rows and finite taste-radial aliases: the required canonical mixed derivatives, C_sH/C_HH pole rows, W/Z covariance rows, and action Hessian rows are absent."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,16 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block112 audits the current response/correlator surface against the
+   inverse-variational requirement for an accepted same-source EW/Higgs action.
+   It verifies that all `63` higher-shell chunks contain finite taste-radial
+   alias rows and source-response slopes, but zero nonempty source-Higgs
+   time-kernel rows and zero W/Z response rows.  The Helmholtz counterfamily
+   shows that source-only signatures can fail mixed-derivative symmetry, and
+   even symmetric positive action Hessians can share the same source-source
+   block while giving distinct source-Higgs overlaps.  Therefore source-only
+   response and finite `C_ss/C_sx/C_xx` aliases cannot integrate the action or
+   fix `kappa_sH` on the current surface.
 0. Block111 audits the complete `63/63` higher-shell packet against the
    Block69/Block70 strict Schur/Feshbach K-prime contract.  It finds every
    chunk explicitly marks `schur_kprime_kernel_rows` as `absent_guarded`, all

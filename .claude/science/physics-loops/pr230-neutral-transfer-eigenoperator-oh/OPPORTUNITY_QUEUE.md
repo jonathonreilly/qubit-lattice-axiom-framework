@@ -1,10 +1,10 @@
 # Opportunity Queue
 
-Campaign mode queue after block111 Schur K-prime packet gap audit, block110
-Cl(3)/Z3 action-descent obstruction, block109 closure-root selector, block108
-all-ref rescan, block104 Z3 heat-kernel source-coupling/H4 no-go, block100 W/Z
-explicit-`v` authority firewall, and block99 complete higher-shell
-finite-packet monotonicity boundary.
+Campaign mode queue after block112 Helmholtz action-integrability obstruction,
+block111 Schur K-prime packet gap audit, block110 Cl(3)/Z3 action-descent
+obstruction, block109 closure-root selector, block108 all-ref rescan, block104
+Z3 heat-kernel source-coupling/H4 no-go, block100 W/Z explicit-`v` authority
+firewall, and block99 complete higher-shell finite-packet monotonicity boundary.
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Review landability | Blast radius | Independence | Decision |
 |---:|---|---:|---:|---|---|---|---|---|
@@ -90,6 +90,15 @@ kernel rows `absent_guarded`, `pole_residue_rows` are empty, and finite
 only after a new strict same-surface row artifact emits the Block69 pole,
 K-prime/source-projection/FV-IR-contact rows; finite chunk reruns are not a
 closure path.
+
+Block112 closes the source-only / finite-alias action-integrability shortcut.
+All `63` chunks have source-response slopes and finite taste-radial aliases,
+but zero nonempty source-Higgs time-kernel rows and zero W/Z response rows; the
+Helmholtz counterfamily shows the mixed source-Higgs/action derivatives remain
+independent data. The top source-Higgs route remains viable only with an
+accepted same-surface action/canonical `O_H` artifact plus physical pole rows,
+or with a strict W/Z packet carrying matched covariance and an allowed absolute
+pin.
 
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but

@@ -513,6 +513,9 @@ def main() -> int:
         "pr230_block111_schur_kprime_packet_gap_audit": load(
             "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json"
         ),
+        "pr230_block112_helmholtz_action_integrability_obstruction": load(
+            "outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2795,6 +2798,35 @@ def main() -> int:
         "pr230-block111-schur-kprime-packet-gap-audit-blocks",
         block111_schur_kprime_packet_gap_audit_blocks,
         statuses["pr230_block111_schur_kprime_packet_gap_audit"],
+    )
+    block112_helmholtz_action_integrability_obstruction_blocks = (
+        "Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows"
+        in str(statuses["pr230_block112_helmholtz_action_integrability_obstruction"])
+        and certificates["pr230_block112_helmholtz_action_integrability_obstruction"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block112_helmholtz_action_integrability_obstruction"].get(
+            "block112_helmholtz_action_integrability_obstruction_passed"
+        )
+        is True
+        and certificates["pr230_block112_helmholtz_action_integrability_obstruction"].get(
+            "helmholtz_mixed_response_rows_present"
+        )
+        is False
+        and certificates["pr230_block112_helmholtz_action_integrability_obstruction"].get(
+            "same_source_action_integrability_authority_present"
+        )
+        is False
+        and certificates["pr230_block112_helmholtz_action_integrability_obstruction"].get(
+            "canonical_source_higgs_overlap_fixed"
+        )
+        is False
+    )
+    report(
+        "pr230-block112-helmholtz-action-integrability-obstruction-blocks",
+        block112_helmholtz_action_integrability_obstruction_blocks,
+        statuses["pr230_block112_helmholtz_action_integrability_obstruction"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8553,6 +8585,9 @@ def main() -> int:
     )
     result["block111_schur_kprime_packet_gap_audit_blocks"] = (
         block111_schur_kprime_packet_gap_audit_blocks
+    )
+    result["block112_helmholtz_action_integrability_obstruction_blocks"] = (
+        block112_helmholtz_action_integrability_obstruction_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

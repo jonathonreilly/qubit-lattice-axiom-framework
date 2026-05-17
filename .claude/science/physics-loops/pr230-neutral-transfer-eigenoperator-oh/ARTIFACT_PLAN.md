@@ -1,5 +1,28 @@
 # Artifact Plan
 
+Block112 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block112_helmholtz_action_integrability_obstruction.py` | Created; PASS=15 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json` | Created |
+| Boundary note | `docs/YT_PR230_BLOCK112_HELMHOLTZ_ACTION_INTEGRABILITY_OBSTRUCTION_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block112:
+
+```text
+outputs/yt_pr230_same_source_ew_higgs_action_helmholtz_rows_2026-05-17.json
+```
+
+with accepted same-surface action authority, Helmholtz-symmetric source/Higgs/W/Z
+mixed-response Hessian rows, canonical `O_H`, physical `C_ss/C_sH/C_HH(tau)`
+pole rows, matched covariance, FV/IR/contact authority, and an allowed absolute
+normalization pin.  Otherwise pivot to a strict W/Z physical-response packet,
+strict Schur/Feshbach K-prime row family, scalar-LSZ moment/threshold/FV
+authority tied to canonical `O_H`, or neutral H3/H4 primitive-transfer
+authority.
+
 Block111 artifacts:
 
 | Artifact | Path | Status |

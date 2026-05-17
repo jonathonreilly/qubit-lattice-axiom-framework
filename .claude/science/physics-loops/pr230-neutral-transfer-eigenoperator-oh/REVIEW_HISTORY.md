@@ -1,5 +1,53 @@
 # Review History
 
+## Block112
+
+Local review run on 2026-05-17 10:55 UTC.
+
+Scope:
+
+- `scripts/frontier_yt_pr230_block112_helmholtz_action_integrability_obstruction.py`
+- `outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json`
+- `docs/YT_PR230_BLOCK112_HELMHOLTZ_ACTION_INTEGRABILITY_OBSTRUCTION_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+- `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/`
+
+Review results:
+
+| Reviewer | Disposition | Notes |
+|---|---|---|
+| Code / Runner | PASS | Block112 compiles and passes with `PASS=15 FAIL=0`; campaign and assumption/import runners consume it. |
+| Physics Claim Boundary | EXACT NEGATIVE BOUNDARY | Source-only response rows and finite taste-radial aliases do not provide Helmholtz-symmetric mixed action rows or fix source-Higgs overlap. |
+| Imports | CLEAN / DISCLOSED | The firewall rejects `H_unit`, Ward identity, observed targets, alpha/plaquette/u0, unit `kappa_s/c2/Z_match/g2`, and source-only action promotion. |
+| Nature Retention | OPEN | No retained or `proposed_retained` wording is authorized. |
+| Repo Governance | PASS | No Planck, alpha_s, manuscript, or `CLAIMS_TABLE` surfaces touched. |
+
+Checks:
+
+```bash
+python3 -m py_compile scripts/frontier_yt_pr230_block112_helmholtz_action_integrability_obstruction.py scripts/frontier_yt_pr230_campaign_status_certificate.py scripts/frontier_yt_pr230_assumption_import_stress.py scripts/frontier_yt_pr230_full_positive_closure_assembly_gate.py scripts/frontier_yt_retained_closure_route_certificate.py scripts/frontier_yt_pr230_positive_closure_completion_audit.py
+# OK
+python3 scripts/frontier_yt_pr230_block112_helmholtz_action_integrability_obstruction.py
+# SUMMARY: PASS=15 FAIL=0
+python3 scripts/frontier_yt_pr230_campaign_status_certificate.py
+# SUMMARY: PASS=432 FAIL=0
+python3 scripts/frontier_yt_pr230_assumption_import_stress.py
+# SUMMARY: PASS=115 FAIL=0
+python3 scripts/frontier_yt_pr230_full_positive_closure_assembly_gate.py
+# SUMMARY: PASS=200 FAIL=0
+python3 scripts/frontier_yt_retained_closure_route_certificate.py
+# SUMMARY: PASS=325 FAIL=0
+python3 scripts/frontier_yt_pr230_positive_closure_completion_audit.py
+# SUMMARY: PASS=79 FAIL=0
+python3 docs/audit/scripts/audit_lint.py --strict
+# OK: no errors; 5 known warnings
+bash docs/audit/scripts/run_pipeline.sh
+# Pipeline complete; generated docs/audit diffs restored
+git diff --check
+# OK
+```
+
 ## Block111
 
 Local review run on 2026-05-17 10:18 UTC.

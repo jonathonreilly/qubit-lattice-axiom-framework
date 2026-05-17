@@ -1,25 +1,26 @@
 loop_slug: pr230-neutral-transfer-eigenoperator-oh
 mode: campaign
 runtime_budget: "12h total, outer-supervisor managed"
-checkpoint_time: "2026-05-17T10:18:12Z"
+checkpoint_time: "2026-05-17T10:55:04Z"
 branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_branch: claude/yt-direct-lattice-correlator-2026-04-30
 base_head_at_start: 76c5d93e7
-lock_status: "branch-local science block; Block111 audits the complete 63/63 higher-shell packet against the Block69/Block70 strict Schur/Feshbach K-prime contract; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
-cycle_count: 111
-active_science_block: block111_schur_kprime_packet_gap_audit
-active_route: "Block111 proves a packet-level exact current-surface boundary for the Schur K-prime route: the completed higher-shell packet has 63/63 finite C_ss/C_sx/C_xx rows, but every chunk explicitly guards Schur K-prime kernel rows as absent and no pole coordinate, K-prime derivative row, left/right null vectors, source projection numerator, FV/IR/contact authority, or canonical O_H identity is emitted."
+lock_status: "branch-local science block; Block112 audits the current response/correlator surface against Helmholtz inverse-variational mixed-derivative requirements for an accepted same-source EW/Higgs action; scripts/automation_lock.py known to fail on hardcoded /Users/jonreilly path"
+cycle_count: 112
+active_science_block: block112_helmholtz_action_integrability_obstruction
+active_route: "Block112 proves a current-surface exact boundary for the action/O_H root: source-only responses and finite taste-radial C_ss/C_sx/C_xx aliases do not supply the Helmholtz-symmetric mixed derivatives needed to integrate a same-source EW/Higgs action or fix source-Higgs overlap."
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime pole-row emissions"
-conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
+actual_current_surface_status: "exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action"
+conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block111 supplies a current-surface exact boundary, not closure. It rejects treating the completed finite higher-shell packet as strict Schur/Feshbach K-prime pole-row evidence: every chunk marks K-prime rows absent_guarded, pole_residue_rows are empty, finite C_ss/C_sx/C_xx aliases remain nonphysical, and the packet supplies no pole coordinate, K-prime derivative row, null vectors, source projection numerator, FV/IR/contact authority, or canonical O_H identity."
+proposal_allowed_reason: "Block112 supplies a current-surface exact boundary, not closure. It rejects integrating an accepted same-source EW/Higgs action or fixing source-Higgs overlap from source-only response rows and finite taste-radial aliases: the required canonical mixed derivatives, C_sH/C_HH pole rows, W/Z covariance rows, and action Hessian rows are absent."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness and FV/IR authority; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR/contact authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block111 closes only the completed finite-packet-to-Schur-K-prime shortcut; a real strict row artifact or physical pole/response rows are still required."
+hard_residual: "Positive work still requires one of the explicit future disjunct artifacts: an accepted/derived same-surface EW/Higgs action plus canonical O_H and physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram flatness, FV/IR authority, and Helmholtz-symmetric mixed-response rows; same-surface neutral scalar H3/H4 primitive/off-diagonal transfer plus source/canonical-Higgs coupling authority and a physical transfer scale; strict Schur pole-derivative rows with pole/model-class/FV/IR/contact authority; or a strict W/Z physical-response packet with accepted action, sector-overlap/canonical O_H authority, production W/Z rows, same-source top rows, matched covariance, delta_perp authority, final W-response rows, and one allowed absolute pin. Block112 closes only the source-only/finite-alias action-integrability shortcut; a real action, mixed response, or physical pole row artifact is still required."
 minimal_allowed_premises:
+  - "block112 Helmholtz action-integrability obstruction as exact negative boundary only; it proves source-only responses and finite taste-radial aliases do not supply the mixed derivatives needed to integrate an accepted same-source EW/Higgs action or fix source-Higgs overlap"
   - "block111 Schur K-prime packet gap audit as exact negative boundary only; it proves the complete 63/63 higher-shell packet emits no strict Schur/Feshbach K-prime pole-row family, with all chunks marked absent_guarded and finite C_ss/C_sx/C_xx aliases kept nonphysical"
   - "block110 Cl(3)/Z3 action-descent obstruction as exact negative boundary only; it proves the finite source-taste algebra does not by itself supply dynamic Phi, accepted EW/Higgs action, canonical O_H, scalar LSZ metric, or physical source-Higgs pole rows"
   - "block109 closure-root frontier selector as open/checkpoint status only; it records a prompt-to-artifact completion audit, rejects proxy completion, selects accepted same-surface O_H/action plus strict C_ss/C_sH/C_HH pole rows as the next artifact family, and preserves all claim firewalls"
@@ -147,6 +148,10 @@ forbidden_imports:
   - "static EW algebra, support contracts, formal GEVP smoke, or response-ratio algebra as accepted physical action/response"
   - "assuming k_top=k_gauge or top/W covariance without a same-surface theorem or matched rows"
 files_touched:
+  - docs/YT_PR230_BLOCK112_HELMHOLTZ_ACTION_INTEGRABILITY_OBSTRUCTION_NOTE_2026-05-17.md
+  - scripts/frontier_yt_pr230_block112_helmholtz_action_integrability_obstruction.py
+  - outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json
+  - .claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/PR_BODY_BLOCK112.md
   - docs/YT_PR230_BLOCK111_SCHUR_KPRIME_PACKET_GAP_AUDIT_NOTE_2026-05-17.md
   - scripts/frontier_yt_pr230_block111_schur_kprime_packet_gap_audit.py
   - outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json

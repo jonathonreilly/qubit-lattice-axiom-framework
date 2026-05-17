@@ -2,7 +2,7 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T17:39:16Z"
+last_checkpoint_utc: "2026-05-17T17:42:40Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
@@ -187,7 +187,7 @@ block129_result:
   finite_packet_promotable_to_pole_authority: false
   model_fv_ir_threshold_authority_present: false
   bridge_roots_still_absent_after_block128: true
-  stacked_review_pr: pending
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1476"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"
@@ -224,4 +224,4 @@ verification:
   audit_pipeline: "completed; generated docs/audit diffs restored"
   strict_audit_lint: "OK; no errors; 5 known warnings"
 next_exact_action: "Pivot to neutral H3/H4 physical-transfer/source-coupling authority. Reopen Schur only with a new strict pole-row artifact containing pole coordinate, K'(pole) or lK'r, source projection numerator, FV/IR/contact/model-class authority, and a physical bridge."
-next_checkpoint_due_utc: "2026-05-17T18:09:16Z"
+next_checkpoint_due_utc: "2026-05-17T18:12:40Z"

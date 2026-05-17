@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 325 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 173 |
+| ~~audited_conditional~~ | 174 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 543 |
-| `audited_conditional` | 173 |
+| `audited_conditional` | 174 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1433 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
@@ -787,6 +787,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `one_parameter_reduced_shell_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7716,6 +7717,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Given scalar additivity, CPT-even phase blindness, continuity/minimal regularity, and normalization, W must solve W(r1 r2)=W(r1)+W(r2), so W=log|det(D+J)| up to the stated convention.  _(class `A`)_
 - **chain closes:** False — The runner supports the finite algebra for the chosen candidate generator, but the physical selection of that generator still rests on an admitted scalar-additivity premise and an unproved normalization/source bridge. No one-hop authority is supplied to close those premises, and the claimed runner-local retirement of P2/P4 does not derive the physical phase-blind generator or multiplicative scale choice from retained inputs.
 - **rationale:** Issue: the exact log-det algebra is verified only after selecting the physical scalar generator by admitted additivity/CPT-even/regularity/normalization premises, with P1 still explicitly open and the multiplicative normalization c=1 conventional. Why this blocks: the restricted packet has no retained one-hop theorem deriving that physical observable bridge, and the runner mainly checks consistency of the chosen W rather than forcing the observable class from the axiom alone. Repair target: add a bridge theorem deriving scalar additivity and the normalization/source scale from retained primitives, or keep all downstream citations explicitly conditional on those premises. Claim boundary until fixed: the finite algebra for the selected log|det| generator on the runner block is supported; unconditional axiom-to-observable closure is not.
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_FRAMEWORK_INTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FRAMEWORK_INTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the supplied Route C note establishes that the listed framework-internal candidates do not independently exclude the non-additive determinant-ratio family F_p[J]=r(J)^p without importing block-additivity/P1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-145647-bc2044d8-observable_principle_p1_-010`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Across the audited candidates, none independently excludes F_p[J] = r(J)^p for p != 1 without re-importing block-additivity (A) from the admissibility class (X2).  _(class `A`)_
+- **chain closes:** False — The determinant algebra and F_p counterexample checks close, but the catalog-wide negative depends on summaries and ledger/string checks for many context-only notes whose full contents are not provided as retained authorities in the restricted packet. The missing step is a retained-grade theorem or complete packet evidence showing the listed catalog is exhaustive and that each retained candidate is orthogonal to scalar-functional admissibility.
+- **rationale:** The runner performs real algebraic checks for multiplicativity, non-additivity samples, log additivity, and determinant factorization, and those support the local counterexample structure. However, the claimed Route C conclusion also relies on live ledger status checks and content assessments of multiple context-only candidate notes not included in full in the restricted packet. Because the negative catalog claim is only as strong as that missing catalog-exhaustiveness/content evidence, the chain does not close as audited_clean from the supplied one-hop authority alone.
+- **open / conditional deps cited:**
+  - `OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
+  - `ANOMALY_FORCES_TIME_THEOREM.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `OBSERVABLE_GENERATOR_ADDITIVITY_FROM_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-05-10.md`
+  - `OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md`
 - **auditor confidence:** high
 
 ### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`

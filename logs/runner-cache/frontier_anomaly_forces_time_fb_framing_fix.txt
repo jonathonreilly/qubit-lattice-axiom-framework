@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/frontier_anomaly_forces_time_fb_framing_fix.py
+runner_sha256: 25c5a8d0f31a39eec575cfe86cb445606b149b8cac2f615fb4089985e5386efa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+ANOMALY_FORCES_TIME F-B framing fix verifier
+==============================================================================
+  [PASS] [A] Parent note exists  (ANOMALY_FORCES_TIME_THEOREM.md, 25235 bytes)
+
+PART 1: F-B Remark is present
+  [PASS] [A] Remark mentions F-B finding identifier
+  [PASS] [A] Remark dated 2026-05-17
+  [PASS] [A] Remark uses 'derived vs inherited' framing
+  [PASS] [A] Remark says Step 3 alone does not select d_t = 1
+  [PASS] [A] Remark says admission (iv) presupposes real-time Lorentzian
+  [PASS] [A] Remark explicitly says neither step alone forces d_t = 1
+
+PART 2: proof structure unchanged (still 5 steps + conclusion d_t = 1)
+  [PASS] [A] Step 1 heading present
+  [PASS] [A] Step 2 heading present
+  [PASS] [A] Step 3 heading present
+  [PASS] [A] Step 4 heading present
+  [PASS] [A] Step 5 (Conclusion) heading present
+  [PASS] [A] Final conclusion: signature (3,1)
+  [PASS] [A] d_t in {1, 3, 5, ...} statement preserved
+
+PART 3: theorem status unchanged (still bounded_theorem submission)
+  [PASS] [A] Submission still bounded_theorem
+  [PASS] [A] Load-bearing class still B
+  [PASS] [A] Independent audit ratification still required
+
+==============================================================================
+SUMMARY: 17 PASS / 0 FAIL  (Class-A: 17)
+==============================================================================
+
+F-B FRAMING FIX VERIFIED
+  Step-4 Remark in place with derived-vs-inherited decomposition
+  Proof structure unchanged (5 steps, d_t = 1 conclusion)
+  Theorem status unchanged (bounded_theorem, class B)
+
+----- stderr -----
+

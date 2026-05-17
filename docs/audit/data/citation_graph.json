@@ -39322,6 +39322,18 @@
       "runner_path": null,
       "title": "Anomaly-Forces-Time admission (iii) routing correction"
     },
+    "anomaly_forces_time_fb_framing_fix_note_2026-05-17": {
+      "claim_id": "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a0c64a83bbd3eb8801002f1449881c19c25330c73e7e7a906c227318997c2080",
+      "path": "docs/ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "Anomaly-Forces-Time F-B framing fix"
+    },
     "anomaly_forces_time_hostile_audit_findings_note_2026-05-16": {
       "claim_id": "anomaly_forces_time_hostile_audit_findings_note_2026-05-16",
       "claim_type_author_hint": "meta",
@@ -39346,7 +39358,7 @@
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "33e271f28400f8f04c8c267c5a7fbedcfaa21c0377031489d51888bb4e82bc3e",
+      "note_hash": "6108e78fbbe7f1245bd79761183d316324919f4478d77eb15e3253777518148b",
       "path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "title": "Anomaly Cancellation Forces 3+1 Spacetime"
@@ -77741,6 +77753,7 @@
     "alternative_coupled_field_probe_note",
     "anderson_phase_mu2_0001_note_2026-04-11",
     "angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10",
+    "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
     "anomaly_forces_time_hostile_audit_findings_note_2026-05-16",
     "anomaly_forces_time_theorem_hostile_audit_findings_note_2026-05-17",
     "architecture_options",
@@ -78513,7 +78526,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 446,
       "decoration": 1,
-      "meta": 163,
+      "meta": 164,
       "no_go": 56,
       "none": 1534,
       "open_gate": 44,
@@ -78522,16 +78535,16 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 893,
       "decoration": 1,
-      "meta": 163,
+      "meta": 164,
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
       "positive_theorem": 619
     },
     "edge_count": 9298,
-    "leaf_count": 751,
-    "node_count": 2410,
-    "root_count": 865,
+    "leaf_count": 752,
+    "node_count": 2411,
+    "root_count": 866,
     "runners_with_path": 2013
   }
 }

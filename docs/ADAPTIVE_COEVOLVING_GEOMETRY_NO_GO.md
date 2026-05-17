@@ -48,3 +48,13 @@ improve the sign stability in a way that would justify a retained claim.
 If this lane comes back, it should not be a broader sweep. It should be a
 single new control law that directly regulates the geometry observable
 itself, rather than only biasing distinguishability.
+
+---
+
+**Audit requeue note, 2026-05-17:** the previous
+`audited_conditional` verdict cited an incomplete restricted packet with
+missing helper-script imports. The audit ledger now records
+`helper_runner_paths` for this row, so the next audit packet should
+include `scripts/generative_causal_dag_interference.py` alongside the
+primary runner and cache. This note changes no science content; it makes
+the re-audit hash drift explicit.

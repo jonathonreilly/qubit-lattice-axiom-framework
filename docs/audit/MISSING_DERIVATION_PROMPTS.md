@@ -2418,7 +2418,36 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_0 rows in this category._
+_1 rows in this category._
+
+
+### `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`
+
+**Note:** [docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md](docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)  |  **Descendants:** 815  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: Bounded V=1 SU(3) single-plaquette exact-arithmetic Picard-Fuchs certificate at Taylor depth 40 for the candidate order-3 operator, including finite annihilation, recurrence, lower-order exclusion, uniqueness, and higher-degree multiple checks.
+
+Auditor's verdict_rationale:
+The runner is substantive rather than a print-only certificate: it builds the Bessel-determinant series and performs exact rank/nullspace checks. However, one load-bearing finite exclusion claimed by the note is not actually computed: r=2,d=12 is marked skipped in the source logic and omitted from the detailed stdout. Therefore the bounded certificate is too broad as stated, even before promoting it to all-order minimality through the external D-module and creative-telescoping imports.
+
+Auditor-quoted load-bearing step:
+Runner output for ORDER=40 confirms that the rank of the matching matrix at every tested (r,d) in {1,2} x {0,...,12} equals the number of unknowns, hence no non-trivial annihilator of order <=2 with coefficient degree <=12 exists.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: increase Taylor depth enough to test r=2,d=12 with full column rank, or narrow the lower-order exclusion claim to the actually checked degree window, then re-audit the external minimality bridge separately.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
 
 
 ## audited_conditional_scope_too_broad
@@ -2432,7 +2461,7 @@ _0 rows in this category._
 
 Auditor judged that the chain needs a new theorem for a physical carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge. To close: derive the missing bridge from retained primitives so the audited claim no longer asserts it.
 
-_30 rows in this category._
+_31 rows in this category._
 
 
 ### `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
@@ -2543,6 +2572,35 @@ At fixed stronger calibration target max |f_dyn| = 0.08, the source-driven runne
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: derive the telegraph rule, c_field/damp values, and target-field calibration ladder from retained framework inputs, or narrow the claim text to a pure declared-run computation.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `g_bare_rigidity_theorem_note`
+
+**Note:** [docs/G_BARE_RIGIDITY_THEOREM_NOTE.md](docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)  |  **Descendants:** 834  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/G_BARE_RIGIDITY_THEOREM_NOTE.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: positive_theorem
+- load_bearing_step_class: A
+- claim_scope: Conditional algebraic rigidity of the canonical SU(3) generator normalization on the cited concrete triplet block, assuming the fixed Hilbert-space trace form and the physical holonomy identification A_op = sum_a A^a T_a.
+
+Auditor's verdict_rationale:
+The runner genuinely checks algebraic identities for the embedded Gell-Mann generators, trace normalization, Casimir preservation under orthogonal rotations, and change under scalar dilation. Those checks support the canonical-normalization rigidity claim as class A algebra over supplied inputs. However, the source note explicitly conditions the physical g_bare = 1 conclusion on a holonomy identification step, and that bridge is not provided as a closed cited authority in this restricted packet. In addition, one cited authority, docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md, is labeled decoration rather than retained-grade.
+
+Auditor-quoted load-bearing step:
+A uniform scalar dilation T_a -> lambda T_a with lambda != 1 is not an allowed ambiguity of the canonical normalization, because it changes the fixed trace form and fixed Casimir.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: add a retained-grade one-hop bridge proving the physical holonomy identification A_op = sum_a A^a T_a in the canonical normalized basis, and replace or ratify the decoration Casimir dependency as retained-grade authority.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

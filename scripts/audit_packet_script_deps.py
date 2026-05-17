@@ -18,7 +18,7 @@ OUTPUT:
   - stdout: summary report
   - logs/runner-cache/audit_packet_script_deps.txt: cached output
   - docs/audit/data/audit_packet_script_deps.json: machine-readable mapping
-    {claim_id -> {primary_runner, helper_runners[]}}
+    {claim_id -> {primary_runner, helper_runner_paths[]}}
 
 This output should be consumed by the audit packet builder (currently
 external to the repo's audit pipeline) to assemble complete packets and
@@ -128,7 +128,7 @@ def main() -> int:
     print(f"Pending audits in queue: {len(pending_ids)}")
     print()
 
-    # Map each claim_id -> {primary_runner, helper_runners}
+    # Map each claim_id -> {primary_runner, helper_runners/helper_runner_paths}
     deps_by_claim = {}
     claims_with_helpers = 0
     claims_no_runner = 0
@@ -156,6 +156,7 @@ def main() -> int:
             "primary_runner": str(rp.relative_to(REPO_ROOT)),
             "primary_basename": primary_basename,
             "helper_runners": sorted(helpers),
+            "helper_runner_paths": [f"scripts/{h}.py" for h in sorted(helpers)],
             "is_pending": claim_id in pending_ids,
         }
 
@@ -193,7 +194,7 @@ def main() -> int:
     for cid, d in samples:
         print(f"  - {cid}")
         print(f"      primary: {d['primary_runner']}")
-        print(f"      helpers: {d['helper_runners']}")
+        print(f"      helpers: {d['helper_runner_paths']}")
     print()
 
     # Save output
@@ -212,7 +213,7 @@ def main() -> int:
     print("  2. Include the primary runner (scripts/<primary>.py)")
     print("  3. Include the runner cache (logs/runner-cache/<primary>.txt)")
     print("  4. NEW: Include all transitive helper scripts named in")
-    print("     audit_packet_script_deps.json[X]['helper_runners']")
+    print("     audit_packet_script_deps.json[X]['helper_runner_paths']")
     print()
     print(f"This change would prevent {pending_with_helpers} pending audits from")
     print(f"hitting the class-C 'missing dependency' verdict due to packet")

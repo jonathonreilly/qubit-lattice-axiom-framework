@@ -75,3 +75,13 @@ Treat this as a real bounded positive:
 - it is not the full moonshot field theory
 - but it is a distinct coupled-field architecture that survives the strict
   reduction check and preserves the weak-field sign / mass-scaling readout
+
+---
+
+**Audit requeue note, 2026-05-17:** the previous
+`audited_conditional` verdict cited an incomplete restricted packet with
+missing helper-script imports. The audit ledger now records
+`helper_runner_paths` for this row, so the next audit packet should
+include `scripts/minimal_source_driven_field_probe.py` alongside the
+primary runner and cache. This note changes no science content; it makes
+the re-audit hash drift explicit.

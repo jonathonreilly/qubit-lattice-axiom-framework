@@ -36,7 +36,7 @@ If `scripts/lattice_mirror_distance.py` is not in the packet, the auditor has no
 2. For each claim with a declared `runner_path`, parses the runner's Python AST
 3. Extracts `from scripts.X import ...` / `import scripts.X` statements (including relative imports inside `scripts/`)
 4. Walks the transitive closure
-5. Writes `docs/audit/data/audit_packet_script_deps.json` mapping each `claim_id → {primary_runner, helper_runners[]}`
+5. Writes `docs/audit/data/audit_packet_script_deps.json` mapping each `claim_id → {primary_runner, helper_runner_paths[]}`
 
 The JSON is the actionable artifact for the audit orchestrator.
 
@@ -44,15 +44,15 @@ The JSON is the actionable artifact for the audit orchestrator.
 
 | metric | value |
 |---|---:|
-| Total claims in ledger | 2228 |
-| Claims with declared runner_path | 1957 |
+| Total claims in ledger | 2229 |
+| Claims with declared runner_path | 1958 |
 | Claims with no runner declared | 266 |
 | Claims whose runner file is missing | 5 |
-| Pending audits (queue) | 1240 |
-| **Pending claims with helper imports (would trigger class-C from packet incompleteness)** | **79 / 1105** |
-| Ledger claims overall with helper imports | 212 / 1957 |
+| Pending audits (queue) | 1234 |
+| **Pending claims with helper imports (would trigger class-C from packet incompleteness)** | **83 / 1100** |
+| Ledger claims overall with helper imports | 212 / 1958 |
 
-The 133 already-audited claims with helpers may have been mis-classified as class C in the past from the same bug — those could be candidates for re-audit once packets are complete.
+The 125 already-audited claims with helpers may have been mis-classified as class C in the past from the same bug — those could be candidates for re-audit once packets are complete.
 
 ## Top imported helper scripts
 
@@ -76,14 +76,14 @@ When assembling the audit packet for `claim_id X`:
 1. Include the source note (`docs/X.md`)
 2. Include the primary runner (`scripts/<primary>.py`)
 3. Include the runner cache (`logs/runner-cache/<primary>.txt`)
-4. **NEW: Include all transitive helper scripts named in `docs/audit/data/audit_packet_script_deps.json[X]["helper_runners"]`**
+4. **NEW: Include all transitive helper scripts named in `helper_runner_paths`, either from `audit_ledger.json` or from `docs/audit/data/audit_packet_script_deps.json[X]["helper_runner_paths"]`**
 
 Step 4 is the missing piece. The JSON output of this tool is the authoritative source for which helpers each packet needs.
 
 ## Expected impact
 
-- Immediate: 79 pending audits no longer subject to spurious class-C verdicts from packet incompleteness alone. They'll get whatever class their chain actually warrants.
-- Retrospective: 133 already-audited claims with helpers could be considered for re-audit if their current class-C verdict was driven by the same bug.
+- Immediate: 83 pending audits no longer subject to spurious class-C verdicts from packet incompleteness alone. They'll get whatever class their chain actually warrants.
+- Retrospective: 129 already-audited claims with helpers could be considered for re-audit if their current class-C verdict was driven by the same bug.
 
 The fix is **mechanical** (just include more files in the packet). No science changes needed.
 
@@ -91,7 +91,7 @@ The fix is **mechanical** (just include more files in the packet). No science ch
 
 - A new positive theorem or retirement of any claim
 - A change to the audit pipeline scripts (the fix lives in whatever external orchestrator assembles packets)
-- A claim about which of the 79 pending class-C-vulnerable audits are actually sound (each must still be re-audited with the complete packet)
+- A claim about which of the 83 pending class-C-vulnerable audits are actually sound (each must still be re-audited with the complete packet)
 
 ## Re-running
 

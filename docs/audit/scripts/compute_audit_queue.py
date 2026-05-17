@@ -157,6 +157,7 @@ def main() -> int:
             "direct_in_degree": row.get("direct_in_degree", 0),
             "load_bearing_score": row.get("load_bearing_score", 0.0),
             "runner_path": row.get("runner_path"),
+            "helper_runner_paths": list(row.get("helper_runner_paths") or []),
             "deps": list(row.get("deps", [])),
             "ready": ready,
             "blocker": row.get("blocker"),

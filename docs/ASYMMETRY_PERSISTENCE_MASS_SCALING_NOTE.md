@@ -111,3 +111,16 @@ So this lane now looks like:
 1. real bounded joint coexistence through dense `N=100`
 2. improved gravity mass response relative to the baseline generated lane
 3. still missing a review-safe exact force law
+
+---
+
+**Audit requeue note, 2026-05-17:** the previous
+`audited_conditional` verdict cited an incomplete restricted packet with
+missing helper-script imports. The audit ledger now records
+`helper_runner_paths` for this row, so the next audit packet should
+include `scripts/asymmetry_persistence_joint_card.py`,
+`scripts/asymmetry_persistence_pilot.py`,
+`scripts/gap_topological_asymmetry.py`, and
+`scripts/gap_topological_asymmetry_layernorm_combo.py` alongside the
+primary runner and cache. This note changes no science content; it makes
+the re-audit hash drift explicit.

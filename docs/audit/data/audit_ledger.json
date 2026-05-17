@@ -9156,24 +9156,41 @@
       "verdict_rationale": null
     },
     "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:11:45.295959+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "audit_dm_runner_stale_path_cleanup_note_2026-05-01": null
+        },
+        "dep_claim_type": {
+          "audit_dm_runner_stale_path_cleanup_note_2026-05-01": "meta"
+        },
+        "dep_effective_status": {
+          "audit_dm_runner_stale_path_cleanup_note_2026-05-01": "meta"
+        },
+        "deps": [
+          "audit_dm_runner_stale_path_cleanup_note_2026-05-01"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-151125-a5e2dcef-audit_dm_gv_runner_stale-005",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet contains the note's assertions but no runner sources, diffs, stdout, or SHA-pinned caches for the eight Block Two runners. The cited companion note is also a support/meta hygiene record rather than retained-grade authority for this block's specific code changes.",
       "claim_id": "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited only the narrowed hygiene claim that this note documents stale-path cleanup actions for the eight named Block Two runners, not the runners' post-cleanup PASS accounting or physics correctness.",
+      "claim_type": "meta",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:11:45.295959+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -9181,20 +9198,22 @@
         "audit_dm_runner_stale_path_cleanup_note_2026-05-01"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The binding evidence is only that the eight named runners had stale read(\"docs/X.md\") calls and that the cleanup removed or redirected those stale path references.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5ff032bc2b7bba01dc8225cb791ffabbbb53cb1268e31c62069bf1028c186505",
       "note_path": "docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: attach the current source or patch diff for the eight named Block Two runners, and keep PASS-accounting in a separate runner-correctness row as the note states.",
+      "open_dependency_paths": [
+        "docs/AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-17T12:16:39.137755+00:00",
@@ -9256,7 +9275,7 @@
       "runner_path": null,
       "title": "Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two) \u2014 Cleanup-Action Record (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The narrowed scope avoids treating the absent PASS outputs as a scientific failure, but the cleanup-action record itself is not independently verifiable from the restricted packet. The note asserts that specific read calls were removed or redirected, yet no current runner source, patch, or cache is attached for those eight runners. The one cited authority is a related Block One support/meta note and does not close the Block Two code-change evidence."
     },
     "audit_dm_runner_stale_path_cleanup_note_2026-05-01": {
       "audit_date": null,

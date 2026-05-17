@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 327 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 174 |
+| ~~audited_conditional~~ | 175 |
 | ~~audited_failed~~ | 20 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -45,21 +45,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 546 |
-| `audited_conditional` | 174 |
+| `audited_conditional` | 175 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 64 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 943 |
 | `decoration` | 21 |
-| `meta` | 199 |
+| `meta` | 200 |
 | `no_go` | 238 |
 | `open_gate` | 110 |
-| `positive_theorem` | 737 |
+| `positive_theorem` | 736 |
 
 | criticality | count |
 |---|---:|
@@ -668,6 +668,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `asymmetry_persistence_mass_scaling_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1436,6 +1437,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Under the current Lane 2 repo state, direct substitution of retained alpha_EM(M_Z) into the standard Rydberg formula misses the atomic scale by about 15%, while m_e and alpha(0) remain unretained; therefore a framework-derived Rydberg claim is blocked until those dependencies and the physical-unit atomic limit are retained.  _(class `D`)_
 - **chain closes:** True — The runner verifies the standard formula with textbook m_e and alpha(0), shows direct alpha_EM(M_Z) substitution shifts the ground-state energy by +15.21%, checks that Lane 2 marks framework m_e absent and scaffold-only, and confirms the usable derived values index has alpha_EM(M_Z) but no atomic alpha(0) closure.
 - **rationale:** Clean as an exact negative dependency firewall. The row does not claim hydrogen or the Rydberg constant is derived; it proves the opposite boundary under the current repo state. The registered runner exits 0 with 12/12 checks passing and shows that electron mass retention, low-energy alpha(0) or QED running from alpha_EM(M_Z), and the physical-unit nonrelativistic Schrodinger/Coulomb limit remain load-bearing. Residual risk is only downstream scope control: this retained firewall must not be cited as an atomic-scale prediction.
+- **auditor confidence:** high
+
+### `audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01`
+
+- **Note:** [`AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md`](../../docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the narrowed hygiene claim that this note documents stale-path cleanup actions for the eight named Block Two runners, not the runners' post-cleanup PASS accounting or physics correctness.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-151125-a5e2dcef-audit_dm_gv_runner_stale-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The binding evidence is only that the eight named runners had stale read("docs/X.md") calls and that the cleanup removed or redirected those stale path references.  _(class `B`)_
+- **chain closes:** False — The restricted packet contains the note's assertions but no runner sources, diffs, stdout, or SHA-pinned caches for the eight Block Two runners. The cited companion note is also a support/meta hygiene record rather than retained-grade authority for this block's specific code changes.
+- **rationale:** The narrowed scope avoids treating the absent PASS outputs as a scientific failure, but the cleanup-action record itself is not independently verifiable from the restricted packet. The note asserts that specific read calls were removed or redirected, yet no current runner source, patch, or cache is attached for those eight runners. The one cited authority is a related Block One support/meta note and does not close the Block Two code-change evidence.
+- **open / conditional deps cited:**
+  - `AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md`
 - **auditor confidence:** high
 
 ### `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`

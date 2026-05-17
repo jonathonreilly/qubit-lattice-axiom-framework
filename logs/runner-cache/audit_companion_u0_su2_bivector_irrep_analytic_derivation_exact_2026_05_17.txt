@@ -1,0 +1,129 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py
+runner_sha256: 483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of u_0(SU(2)) closed form via Cl(3) irrep dim = 2
+Inputs (cited):
+  (X1) cl3_complexification_split_narrow_theorem ... retained
+  (X2) cl3_faithful_irrep_dim_two_narrow_theorem ... retained
+  (X3) Lüscher-Mackenzie tadpole convention (external admission)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Pauli realization γ_i ↦ σ_i (positive-chirality e_+ summand)
+----------------------------------------------------------------------------------------
+  N_SU(2) (sympy matrix dim) = 2
+
+----------------------------------------------------------------------------------------
+Part 1: (X1)-grounded Cl(3,0) anticommutation on Pauli realization
+----------------------------------------------------------------------------------------
+  [PASS (A)] {σ_1, σ_1} = 2 I_2  (shape=(2, 2))
+  [PASS (A)] {σ_1, σ_2} = 0  (shape=(2, 2))
+  [PASS (A)] {σ_1, σ_3} = 0  (shape=(2, 2))
+  [PASS (A)] {σ_2, σ_1} = 0  (shape=(2, 2))
+  [PASS (A)] {σ_2, σ_2} = 2 I_2  (shape=(2, 2))
+  [PASS (A)] {σ_2, σ_3} = 0  (shape=(2, 2))
+  [PASS (A)] {σ_3, σ_1} = 0  (shape=(2, 2))
+  [PASS (A)] {σ_3, σ_2} = 0  (shape=(2, 2))
+  [PASS (A)] {σ_3, σ_3} = 2 I_2  (shape=(2, 2))
+
+----------------------------------------------------------------------------------------
+Part 2: bivector subalgebra Cl(3,0)^+ generates Spin(3) = SU(2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] γ_1 γ_2 = i σ_3 (bivector in even subalgebra)  (σ_1 σ_2 = [[I, 0], [0, -I]])
+  [PASS (A)] γ_1 γ_3 = -i σ_2 (bivector in even subalgebra)  (σ_1 σ_3 = [[0, -1], [1, 0]])
+  [PASS (A)] γ_2 γ_3 = i σ_1 (bivector in even subalgebra)  (σ_2 σ_3 = [[0, I], [I, 0]])
+  [PASS (A)] T_1 = σ_1/2: traceless (SU(2) generator)  (tr(σ_1/2) = 0)
+  [PASS (A)] T_1 = σ_1/2: Hermitian (SU(2) generator)  (shape=(2, 2))
+  [PASS (A)] T_2 = σ_2/2: traceless (SU(2) generator)  (tr(σ_2/2) = 0)
+  [PASS (A)] T_2 = σ_2/2: Hermitian (SU(2) generator)  (shape=(2, 2))
+  [PASS (A)] T_3 = σ_3/2: traceless (SU(2) generator)  (tr(σ_3/2) = 0)
+  [PASS (A)] T_3 = σ_3/2: Hermitian (SU(2) generator)  (shape=(2, 2))
+
+----------------------------------------------------------------------------------------
+Part 3: (S1) dimensional readout — N_SU(2) = 2 forced by (X2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1) N_SU(2) := dim_C(fundamental of SU(2)) = 2  (N_SU(2) = 2)
+  [PASS (A)] (S1') Pauli matrices act on C^2: matrix dim = N_SU(2) = 2  (σ_1.shape = (2, 2))
+
+----------------------------------------------------------------------------------------
+Part 4: (U1) Lüscher convention at G = SU(2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (U1) symbolic: substituting N_G = 2 and Tr-expectation form into (X3)  (u_0(SU(2)) = P_SU2**(1/4))
+  [PASS (A)] (U1') direct form: u_0(SU(2)) = ⟨(1/2) Re Tr U_p⟩^(1/4) = P_SU2^(1/4)  (diff = 0)
+
+----------------------------------------------------------------------------------------
+Part 5: (U2) fourth-root recovery matches (T6) of alpha_s tadpole narrow
+----------------------------------------------------------------------------------------
+  [PASS (A)] (U2) fourth-root recovery: u_0(SU(2)) matches (T6) at G = SU(2)  (u_0(SU(2)) = P_SU2**(1/4))
+
+----------------------------------------------------------------------------------------
+Part 6: (C1) counterfactual — no 1-dim faithful complex Cl(3) irrep
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) 1-dim faithful complex Cl(3) irrep impossible: {a,b}_scalar = 2ab ≠ 0 for nonzero a,b  (2 a b = 2*a*b; nonzero by hypothesis)
+  [PASS (A)] (C1') (X2) forbids 1-dim faithful Cl(3) irrep: dim_C V = 2, not 1  (N_SU(2) = 2 ≠ 1)
+
+----------------------------------------------------------------------------------------
+Part 7: (C2) squared tadpole identity
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) u_0(SU(2))^2 = P_SU2^(1/2)  (u_0(SU(2))^2 = sqrt(P_SU2))
+
+----------------------------------------------------------------------------------------
+Part 8: (C3) forward chain into vertex-power identity
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C3) alpha_2(v) = alpha_2_bare / P_SU2^(1/2) via vertex-power identity  (alpha_2(v) = alpha_2_bare/sqrt(P_SU2))
+
+----------------------------------------------------------------------------------------
+Part 9: (C4) SU(3) structural comparison
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C4) u_0(SU(3)) = P_SU3^(1/4) via Lüscher convention at N_G = 3  (u_0(SU(3)) = P_SU3**(1/4))
+  [PASS (A)] (C4') prefactor distinction: 1/N_SU(2) = 1/2 ≠ 1/3 = 1/N_SU(3)  (1/N_SU(2) = 1/2, 1/N_SU(3) = 1/3)
+
+----------------------------------------------------------------------------------------
+Part 10: Free-action (P_SU2 = 1) sanity boundary (matches (T4))
+----------------------------------------------------------------------------------------
+  [PASS (A)] Free-action (P_SU2 = 1) sanity: u_0(SU(2)) = 1  (u_0(SU(2)) |_{P_SU2 = 1} = 1)
+
+----------------------------------------------------------------------------------------
+Part 11: matrix-trace sanity on Pauli realization
+----------------------------------------------------------------------------------------
+  [PASS (A)] Re Tr σ_1 = 0 (traceless generator)  (tr(σ_1) = 0)
+  [PASS (A)] Re Tr σ_2 = 0 (traceless generator)  (tr(σ_2) = 0)
+  [PASS (A)] Re Tr σ_3 = 0 (traceless generator)  (tr(σ_3) = 0)
+  [PASS (A)] Re Tr I_2 = 2 = N_SU(2) (identity element)  (tr(I_2) = 2)
+
+----------------------------------------------------------------------------------------
+Part 12: roundtrip Lüscher form (X3) ↔ fourth-root (T6)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (roundtrip) (X3) at G=SU(2) and (T6) coincide as P_SU2^(1/4)  (diff = 0)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (X1)-grounded Cl(3,0) anticommutation on Pauli realization (9 identities)
+    (X2)-grounded bivector subalgebra Cl(3,0)^+ contains Spin(3) = SU(2)
+    (S1) N_SU(2) = dim_C(fundamental of SU(2)) = 2 forced by (X2)
+    (U1) Lüscher convention at G = SU(2): u_0(SU(2)) = ⟨(1/2) Re Tr U_p⟩^(1/4)
+    (U2) fourth-root recovery: u_0(SU(2)) = P_SU2^(1/4) matches (T6)
+    (C1) 1-dim faithful complex Cl(3) irrep impossible
+    (C2) squared tadpole u_0(SU(2))^2 = P_SU2^(1/2)
+    (C3) forward chain alpha_2(v) = alpha_2_bare / P_SU2^(1/2)
+    (C4) SU(3) structural comparison: 1/N_SU(2) = 1/2 ≠ 1/3 = 1/N_SU(3)
+    Free-action sanity (P_SU2 = 1) → u_0(SU(2)) = 1 matches (T4)
+    Matrix-trace sanity: Re Tr σ_i = 0, Re Tr I_2 = 2 = N_SU(2)
+    Roundtrip (X3) at G=SU(2) ↔ (T6) generic form
+
+========================================================================================
+TOTAL: PASS=35, FAIL=0
+========================================================================================
+
+----- stderr -----
+

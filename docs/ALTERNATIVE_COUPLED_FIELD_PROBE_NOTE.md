@@ -75,3 +75,7 @@ Treat this as a real bounded positive:
 - it is not the full moonshot field theory
 - but it is a distinct coupled-field architecture that survives the strict
   reduction check and preserves the weak-field sign / mass-scaling readout
+
+---
+
+**Re-queued for re-audit 2026-05-17:** previous `audited_conditional` verdict cited packet incompleteness (missing helper-script imports from the restricted packet). The audit pipeline now populates `helper_runner_paths` per [PR #1371](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1371) so the next audit pass receives the complete packet. Helpers now declared: ``. The current re-queue is mechanical — no science content changes — and is documented here so the hash drift is explicit.

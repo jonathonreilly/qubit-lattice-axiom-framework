@@ -1,0 +1,17 @@
+==============================================================================
+AUDIT-PREP VERIFIER — source_resolved_exact_green_h025_pocket_note
+==============================================================================
+  [PASS] [A] Parent note exists  (SOURCE_RESOLVED_EXACT_GREEN_H025_POCKET_NOTE.md, 3486 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   source_resolved_exact_green_pocket_note IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   source_resolved_exact_green_scaling_note IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 3 PASS / 0 FAIL
+Class-A pattern hits: 3
+==============================================================================
+
+VERIFIED

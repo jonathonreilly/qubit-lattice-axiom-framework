@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 352 |
+| **retained_bounded** | 353 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1221 |
+| unaudited | 1220 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 580 |
+| `audited_clean` | 581 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -655,6 +655,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -11950,6 +11951,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting L = 4 into the unit-mean condition gives <P>/u_0^4 = 1, hence u_0^4 = <P> and the unique positive solution is u_0 = <P>^{1/4}.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the conclusion follows algebraically from P1 and P2. The audit does not validate P2 itself; it is an explicit hypothesis/admission, not derived in this packet.
 - **rationale:** The load-bearing step is elementary algebra over positive reals: the four link rescalings produce the factor u_0^{-4}, and enforcing unit dressed plaquette expectation fixes the unique positive fourth root. The runner source materially checks this symbolic chain and does not import numerical plaquette values, PDG values, fitted u_0, or a specific gauge group. This is clean only as a bounded theorem conditional on P1 and the admitted P2 principle; it does not close the external physics origin of P2 or any numerical plaquette evaluation.
+- **auditor confidence:** high
+
+### `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the retained Cl(3) split/dim-2 irrep inputs and the admitted tadpole convention, the audit checks only the algebraic SU(2) specialization with N_SU(2)=2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-214422-78dc5814-u0_su2_bivector_irrep_an-012`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Apply the Lüscher-Mackenzie convention with G = SU(2) and N_G = N_SU(2) = 2 to obtain u_0(SU(2)) = <(1/2) Re Tr U_plaquette^SU(2)>^(1/4).  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the conclusion is a direct substitution into X3 after the retained X1/X2 dimensional readout supplies N_SU(2)=2. No numerical plaquette value or g_2(v) closure is used.
+- **rationale:** The load-bearing step is exact algebraic substitution over explicit inputs, not a numerical match or comparator check. Both cited one-hop authorities are retained, and the open SU(2) plaquette evaluation is explicitly outside the audited claim scope. The runner source is consistent with class A evidence: it checks the Clifford/Pauli representation, the N=2 readout, and the fourth-root identities symbolically rather than importing any observed value.
 - **auditor confidence:** high
 
 ### `unified_basin_freeze_note`

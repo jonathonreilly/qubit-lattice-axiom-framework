@@ -228170,22 +228170,45 @@
       "verdict_rationale": "The load-bearing step is elementary algebra over positive reals: the four link rescalings produce the factor u_0^{-4}, and enforcing unit dressed plaquette expectation fixes the unique positive fourth root. The runner source materially checks this symbolic chain and does not import numerical plaquette values, PDG values, fitted u_0, or a specific gauge group. This is clean only as a bounded theorem conditional on P1 and the admitted P2 principle; it does not close the external physics origin of P2 or any numerical plaquette evaluation."
     },
     "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T21:45:58.841179+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-214422-78dc5814-u0_su2_bivector_irrep_an-012",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the conclusion is a direct substitution into X3 after the retained X1/X2 dimensional readout supplies N_SU(2)=2. No numerical plaquette value or g_2(v) closure is used.",
       "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Given the retained Cl(3) split/dim-2 irrep inputs and the admitted tadpole convention, the audit checks only the algebraic SU(2) specialization with N_SU(2)=2.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T21:45:58.841179+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -228194,32 +228217,32 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Apply the L\u00fcscher-Mackenzie convention with G = SU(2) and N_G = N_SU(2) = 2 to obtain u_0(SU(2)) = <(1/2) Re Tr U_plaquette^SU(2)>^(1/4).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8f97fe32d188cb18945031491fa8e6f7ff2b94dcc4b29aa819f894fa7f33fa39",
       "note_path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that the restricted packet's X1/X2 wording is accepted as authorizing the bivector SU(2) fundamental representation used by X3.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 35,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 35
       },
       "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
       "title": "u_0(SU(2)) Bivector-Irrep Analytic Derivation Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is exact algebraic substitution over explicit inputs, not a numerical match or comparator check. Both cited one-hop authorities are retained, and the open SU(2) plaquette evaluation is explicitly outside the audited claim scope. The runner source is consistent with class A evidence: it checks the Clifford/Pauli representation, the N=2 readout, and the fourth-root identities symbolically rather than importing any observed value."
     },
     "u1_fermion_number_conservation_theorem_note_2026-05-02": {
       "audit_date": null,

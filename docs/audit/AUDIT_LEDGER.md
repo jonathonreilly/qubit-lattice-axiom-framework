@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 113 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 343 |
+| **retained_bounded** | 344 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 568 |
+| `audited_clean` | 569 |
 | `audited_conditional` | 184 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1449 |
+| `unaudited` | 1448 |
 
 | claim_type | count |
 |---|---:|
@@ -393,6 +393,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_l2_numpy_h0125_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_tapered_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_complementarity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -7027,6 +7028,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The canonical sweep shows a continuous tradeoff between decoherence/which-slit structure and distance-law quality, with only gap = 2 clearing the declared bounded-balance guard.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the ordered lattice, slit cards, propagations, observables, distance fits, Born companion audit, and guard directly rather than printing constants. Within the restricted packet, the note's bounded conclusion follows from that computation and explicitly excludes same-card attractive gravity or full unification.
 - **rationale:** The load-bearing step is a first-principles computation over the stated ordered-lattice setup, producing the MI, d_TV, decoherence, distance-fit, gravity-sign, Born, and k=0 sweep values. The source code does not import cited authorities or hard-code expected table values; it computes the rows from lattice generation, propagation, field evaluation, and fitting helpers. The promoted claim is carefully bounded to a tradeoff curve with a sweet spot and does not claim same-card attractive gravity or one-family unification.
+- **auditor confidence:** high
+
+### `lattice_distance_law_note`
+
+- **Note:** [`LATTICE_DISTANCE_LAW_NOTE.md`](../../docs/LATTICE_DISTANCE_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite N=40, half_width=20, k=5.0, strength=0.1 no-barrier ordered-lattice centroid-shift computation over B_VALUES = [3,5,7,10,13,16,19], including the declared b >= 7 |delta| fit and k=0 control.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-205918-0eef0b89-lattice_distance_law_not-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the N=40 no-barrier ordered lattice, the far-field window b >= 7 fits |delta| ~= 23.5071 * b^(-1.052) with R^2 = 0.9850.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the lattice, field, propagation, centroid readout, seven b rows, k=0 control, and b >= 7 power-law fit from code rather than printing hard-coded target values. The helper source is included and supplies the load-bearing lattice generation, field, and propagation routines, so the bounded N=40 numerical claim closes on its own stated harness.
+- **rationale:** The runner stdout matches the note's table, k=0 control, coefficient, exponent, and R^2, and the provided source shows these are computed from the declared ordered-lattice harness. No cited upstream authority is required for this bounded finite computation, and no helper hard-codes the contested fit. The clean verdict is limited to the stated N=40 no-barrier numerical fit, not to a universal asymptotic distance law or signed attractive deflection theorem.
 - **auditor confidence:** high
 
 ### `lattice_fanout_continuum_note`

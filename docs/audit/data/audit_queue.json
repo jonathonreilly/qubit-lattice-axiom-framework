@@ -3,7 +3,7 @@
     "critical": 431,
     "high": 161,
     "leaf": 333,
-    "medium": 315
+    "medium": 314
   },
   "cycle_break_target_count": 62,
   "cycle_break_targets": [
@@ -17989,25 +17989,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_distance_law_note",
+      "claim_id": "lattice_family_validation_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
+      "deps": [
+        "lattice_distance_law_note",
+        "lattice_field_strength_unification_note"
+      ],
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [
-        "scripts/lattice_mirror_distance.py"
+        "scripts/lattice_mirror_distance.py",
+        "scripts/mirror_2d_validation.py",
+        "scripts/mirror_born_audit.py"
       ],
-      "load_bearing_score": 4.959,
-      "note_path": "docs/LATTICE_DISTANCE_LAW_NOTE.md",
+      "load_bearing_score": 4.322,
+      "note_path": "docs/LATTICE_FAMILY_VALIDATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/lattice_no_barrier_distance.py",
-      "transitive_descendants": 10
+      "runner_path": "scripts/lattice_family_validation.py",
+      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -24330,35 +24335,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_koide_bae_probe_kappa_prediction_test_2026_05_09_probe29.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lattice_family_validation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_distance_law_note",
-        "lattice_field_strength_unification_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/lattice_mirror_distance.py",
-        "scripts/mirror_2d_validation.py",
-        "scripts/mirror_born_audit.py"
-      ],
-      "load_bearing_score": 4.322,
-      "note_path": "docs/LATTICE_FAMILY_VALIDATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/lattice_family_validation.py",
       "transitive_descendants": 9
     },
     {
@@ -36296,5 +36272,5 @@
     }
   ],
   "ready_count": 17,
-  "total_pending": 1240
+  "total_pending": 1239
 }

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 321 |
+| **retained_bounded** | 322 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
 | unaudited | 1226 |
-| audit_in_progress | 1 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,8 +43,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 539 |
+| `audited_clean` | 540 |
 | `audited_conditional` | 167 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
@@ -116,7 +114,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gravity_law_cleanup_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -300,6 +297,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravitational_entanglement_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `gravitomagnetic_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_full_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
@@ -5166,6 +5164,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** By class-A inversion of A2: `L = G_0^{-1} = H = -Delta_lat`.  _(class `A`)_
 - **chain closes:** True — Within the stated conditional scope, the conclusion follows by inversion of the stipulated identity together with the definition `G_0 = H^{-1}`. The note does not claim, and this audit does not validate, a derivation of `L^{-1} = G_0` from the Cl(3)-on-Z^3 axiom.
 - **rationale:** The audited claim is explicitly bounded to the conditional implication under the stipulated closure identity. The load-bearing step is a genuine class-A algebraic inversion over the stated hypotheses, so the scoped conclusion closes. No runner stdout or runner source was supplied, so the numerical checks described inside the note are not credited; they are also not necessary for the scoped algebraic implication. The bridge theorem deriving A2 from A1 remains outside this row's clean scope.
+- **auditor confidence:** high
+
+### `gravity_law_cleanup_note`
+
+- **Note:** [`GRAVITY_LAW_CLEANUP_NOTE.md`](../../docs/GRAVITY_LAW_CLEANUP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded null-result that the provided primary runner cache contains the listed descriptive t-values and no review-safe falling-tail fit on the cached b-window.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-130231-20260517T130231Z-cc2319cb-gravity_law_cleanup_note-targeted`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The primary-runner cache reports the raw per-b t-values on b ∈ {2,4,6,8,10,12} and the runner's own statement that there are not enough falling-tail points for a review-safe power-law fit.  _(class `C`)_
+- **chain closes:** True — The runner stdout matches the note's quoted rows and no-tail-fit statement, and the included source computes the rows from generated graphs rather than printing fixed expected constants. The narrowed claim does not promote significance or a force-law exponent.
+- **rationale:** Within the restricted packet, the load-bearing claim is only a descriptive cached-runner result: raw per-b t-values plus absence of enough falling-tail points for a review-safe fit. The runner source performs a seed sweep, propagation, field computation, per-seed aggregation, mean/SE/t calculation, and tail-count check; the contested numerical rows are not hard-coded. Because the note explicitly withdraws significance, peak-signal, and power-law claims, the presented bounded conclusion follows from the provided runner cache and source.
 - **auditor confidence:** high
 
 ### `gravity_observable_hierarchy_note`

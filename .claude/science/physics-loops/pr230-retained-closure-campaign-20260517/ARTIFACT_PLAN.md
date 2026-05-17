@@ -366,3 +366,48 @@ Verified at `2026-05-17T17:22:53Z`:
 - positive-closure completion audit: `PASS=79 FAIL=0`
 - target-timeseries full-set checkpoint: `PASS=9 FAIL=0`
 - chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`
+
+## Block129
+
+Working title: PR230 Block129 Schur one-pole/Loewner falsification plus
+strict pole-authority construction attempt.
+
+Purpose:
+
+- test whether the earlier two-point `C_x|s` one-pole scout survives the
+  completed five-level higher-shell Schur packet;
+- use finite Loewner/Stieltjes divided-difference signs as a necessary
+  positive-measure screen, not as proof authority;
+- attempt to construct strict Schur/Feshbach pole authority from explicit row
+  sidecars, raw higher-shell rows, or the complete finite A/B/C packet;
+- close the finite one-pole/Stieltjes-proxy and finite-A/B/C promotion
+  shortcuts while preserving only a future true strict Schur/Feshbach pole-row
+  route.
+
+Files:
+
+- `docs/YT_PR230_BLOCK129_SCHUR_ONE_POLE_LOEWNER_FALSIFICATION_NOTE_2026-05-17.md`
+- `docs/YT_PR230_BLOCK129_SCHUR_POLE_AUTHORITY_CONSTRUCTION_ATTEMPT_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block129_schur_one_pole_loewner_falsification.py`
+- `scripts/frontier_yt_pr230_block129_schur_pole_authority_construction_attempt.py`
+- `outputs/yt_pr230_block129_schur_one_pole_loewner_falsification_2026-05-17.json`
+- `outputs/yt_pr230_block129_schur_pole_authority_construction_attempt_2026-05-17.json`
+
+Result: exact negative boundary.  The two-point one-pole fit through the zero
+and first-shell `C_x|s` means misses unused higher-shell levels with maximum
+absolute residual z-score `243.36741086003715`.  All eight finite candidate
+Loewner/Stieltjes proxies fail necessary divided-difference signs, and no
+strict K-prime pole rows or physical bridge roots are present.  The stricter
+construction attempt also rejects the current surface as a strict
+Schur/Feshbach pole-authority packet: all expected strict row sidecars are
+absent, 63/63 raw higher-shell files contain 693 finite source-Higgs and 693
+finite scalar-LSZ rows but zero strict pole keys, Block121 blocks finite A/B/C
+promotion, and model/FV/IR/threshold authority remains absent.
+
+Verified at `2026-05-17T17:33:46Z`:
+
+- Block129 py_compile: passed
+- Block129 one-pole/Loewner runner: `PASS=13 FAIL=0`
+- Block129 strict pole-authority construction runner: `PASS=14 FAIL=0`
+- campaign status certificate: `PASS=449 FAIL=0`
+- assumption/import stress: `PASS=132 FAIL=0`

@@ -21,6 +21,8 @@ https://github.com/jonathonreilly/cl3-lattice-framework/pull/1463
 Stacked review PR for Block128:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1468
 
+Stacked review PR for Block129: pending.
+
 Branch/PR blocks:
 
 - Block120 source-reparametrization invariant minimal-data boundary into PR230
@@ -48,7 +50,11 @@ Branch/PR blocks:
 - Block128 post-Block127 W/Z launch preflight and strict construction attempt
   on branch `physics-loop/pr230-retained-closure-campaign-block128-20260517`,
   to be stacked above Block127.
+- Block129 Schur one-pole/Loewner falsification plus pole-authority construction
+  attempt on branch
+  `physics-loop/pr230-retained-closure-campaign-block129-20260517`, to be
+  stacked above Block128.
 
 Updated PR bodies prepared in `PR_BODY_BLOCK121.md`, `PR_BODY_BLOCK122.md`,
 `PR_BODY_BLOCK124.md`, `PR_BODY_BLOCK125.md`, `PR_BODY_BLOCK126.md`, and
-`PR_BODY_BLOCK127.md`, and `PR_BODY_BLOCK128.md`.
+`PR_BODY_BLOCK127.md`, `PR_BODY_BLOCK128.md`, and `PR_BODY_BLOCK129.md`.

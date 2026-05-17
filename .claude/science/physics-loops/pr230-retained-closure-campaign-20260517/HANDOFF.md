@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block128-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block129-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -18,6 +18,7 @@ Stacked review PR for Block127:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1463
 Stacked review PR for Block128:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1468
+Stacked review PR for Block129: pending.
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -122,6 +123,26 @@ H3/H4 physical-transfer/source-coupling authority.  Reopen W/Z only if a new
 production W/Z mass-fit artifact appears; reopen source-Higgs only with
 accepted canonical `O_H`/action plus nonempty numeric `C_ss/C_sH/C_HH`
 pole-residue rows.
+
+Block129 tests the Schur finite-proxy pivot and then the stricter row-authority
+construction.  It uses the completed five-level higher-shell Schur packet to
+check the prior two-point `C_x|s` one-pole scout and finite
+Loewner/Stieltjes proxies.  Result: exact negative boundary.  The one-pole fit
+through zero and first shell has `m^2=6.392091257441135` and
+`R=1.7950481867558439`, but misses unused higher shells with max absolute
+z-score `243.36741086003715`.  All eight finite candidate fields fail
+necessary Stieltjes signs.  The construction attempt also finds no explicit
+strict row sidecars, no strict pole keys in the 63 raw higher-shell files, no
+finite-packet promotion past the Block121 nonidentifiability witness, and no
+model/FV/IR/threshold or bridge authority.  Reruns: one-pole/Loewner
+`PASS=13`, strict pole-authority construction `PASS=14`, campaign status
+`PASS=449`, assumption/import stress `PASS=132`.
+
+Active next work after Block129: pivot to neutral H3/H4 physical
+transfer/source-coupling authority.  Reopen Schur only with a true strict
+Schur/Feshbach pole-row artifact with pole coordinate, `K'(pole)` or
+`l K' r`, source projection numerator, FV/IR/contact/model-class authority,
+and a physical bridge.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

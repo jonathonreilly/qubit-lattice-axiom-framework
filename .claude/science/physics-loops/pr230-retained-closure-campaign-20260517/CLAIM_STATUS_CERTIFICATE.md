@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block128.
+Status: exact negative boundary plus bounded support through Block129.
 
 `proposed_retained`: not allowed.
 
@@ -43,6 +43,16 @@ W/Z-shaped rows are the scout smoke schema and are not key-matchable to
 Block126, strict `g2`/action paths remain absent, and the source-Higgs fallback
 still has zero strict `C_ss/C_sH/C_HH` pole-residue rows plus no accepted
 canonical `O_H`/action authority.
+Block129 then tests the Schur/Feshbach finite-proxy route after the completed
+higher-shell packet: the prior two-point `C_x|s` one-pole scout is falsified by
+unused higher-shell rows with maximum absolute residual z-score
+`243.36741086003715`, all eight finite Loewner/Stieltjes candidate fields fail
+necessary divided-difference signs, strict K-prime pole rows remain absent, and
+Block128 keeps W/Z/source-Higgs bridge roots absent.  Its stricter
+pole-authority construction attempt also finds no explicit strict row
+sidecars, no strict pole keys in 63/63 raw higher-shell files, no way past the
+Block121 finite-packet nonidentifiability witness, and no model/FV/IR/threshold
+or canonical bridge authority.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -65,6 +75,11 @@ canonical `O_H`/action authority.
   `delta_perp`, and final W-response rows;
 - no strict Schur/Feshbach pole coordinate, derivative/residue rows, or
   FV/IR/contact authority;
+- no finite one-pole or finite Loewner/Stieltjes proxy that can substitute for
+  strict Schur/Feshbach pole authority after Block129;
+- no construction from current explicit row sidecars, raw higher-shell rows, or
+  complete finite A/B/C support to strict Schur/Feshbach pole authority after
+  Block129;
 - no strict neutral H3/H4 physical transfer/source-coupling artifact.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an

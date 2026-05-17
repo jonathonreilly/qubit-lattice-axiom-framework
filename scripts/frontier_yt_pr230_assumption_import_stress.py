@@ -401,6 +401,12 @@ def main() -> int:
         "block128_strict_wz_source_row_construction_attempt": load(
             "outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json"
         ),
+        "block129_schur_one_pole_loewner_falsification": load(
+            "outputs/yt_pr230_block129_schur_one_pole_loewner_falsification_2026-05-17.json"
+        ),
+        "block129_schur_pole_authority_construction_attempt": load(
+            "outputs/yt_pr230_block129_schur_pole_authority_construction_attempt_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2962,6 +2968,112 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block129_schur_one_pole_loewner_falsification_keeps_imports_clean = (
+        "Block129 completed higher-shell Schur packet falsifies"
+        in str(
+            certificates["block129_schur_one_pole_loewner_falsification"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block129_schur_one_pole_loewner_falsification"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block129_schur_one_pole_loewner_falsification"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block129_schur_one_pole_loewner_falsification"].get(
+            "block129_schur_one_pole_loewner_falsification_passed"
+        )
+        is True
+        and certificates["block129_schur_one_pole_loewner_falsification"]
+        .get("one_pole_test", {})
+        .get("unused_level_failure_count_at_5sigma", 0)
+        >= 1
+        and certificates["block129_schur_one_pole_loewner_falsification"]
+        .get("loewner_stieltjes_summary", {})
+        .get("all_candidate_fields_fail_necessary_stieltjes_signs")
+        is True
+        and certificates["block129_schur_one_pole_loewner_falsification"]
+        .get("strict_non_claims", {})
+        .get("does_not_claim_retained_or_proposed_retained")
+        is True
+        and certificates["block129_schur_one_pole_loewner_falsification"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_one_pole_fit_as_physical_pole")
+        is True
+        and certificates["block129_schur_one_pole_loewner_falsification"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_finite_loewner_stieltjes_proxy_as_lsz_authority")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block129_schur_one_pole_loewner_falsification"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block129-schur-one-pole-loewner-falsification-keeps-imports-clean",
+        block129_schur_one_pole_loewner_falsification_keeps_imports_clean,
+        certificates["block129_schur_one_pole_loewner_falsification"].get(
+            "actual_current_surface_status"
+        ),
+    )
+    block129_schur_pole_authority_construction_attempt_keeps_imports_clean = (
+        "Block129 cannot construct strict Schur/Feshbach pole authority"
+        in str(
+            certificates["block129_schur_pole_authority_construction_attempt"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block129_schur_pole_authority_construction_attempt"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block129_schur_pole_authority_construction_attempt"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block129_schur_pole_authority_construction_attempt"].get(
+            "block129_schur_pole_authority_construction_attempt_passed"
+        )
+        is True
+        and certificates["block129_schur_pole_authority_construction_attempt"]
+        .get("constructive_status", {})
+        .get("strict_schur_feshbach_pole_authority_constructible")
+        is False
+        and certificates["block129_schur_pole_authority_construction_attempt"]
+        .get("strict_non_claims", {})
+        .get("does_not_use_finite_abc_rows_as_pole_rows")
+        is True
+        and certificates["block129_schur_pole_authority_construction_attempt"]
+        .get("strict_non_claims", {})
+        .get("does_not_use_stieltjes_or_one_pole_scout_as_authority")
+        is True
+        and certificates["block129_schur_pole_authority_construction_attempt"]
+        .get("strict_non_claims", {})
+        .get("does_not_claim_retained_or_proposed_retained")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "block129_schur_pole_authority_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block129-schur-pole-authority-construction-attempt-keeps-imports-clean",
+        block129_schur_pole_authority_construction_attempt_keeps_imports_clean,
+        certificates["block129_schur_pole_authority_construction_attempt"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3276,6 +3388,8 @@ def main() -> int:
             "does not treat FMS or gauge-invariant-field literature as same-surface PR230 O_H/source-overlap/kappa_s proof",
             "does not treat a higher-shell Schur production contract as row evidence, complete monotonicity, pole authority, FV/IR authority, or y_t closure",
             "does not treat complete 63/63 higher-shell finite-row monotonicity diagnostics as strict scalar-LSZ, Schur pole-row, FV/IR, canonical O_H, or y_t authority",
+            "does not treat a finite one-pole endpoint fit or finite Loewner/Stieltjes proxy as strict Schur pole authority",
+            "does not treat complete finite Schur A/B/C support as strict pole coordinate, derivative, source-projection, FV/IR, or canonical bridge authority",
             "does not treat package hierarchy v as a PR230 W/Z absolute-normalization pin",
             "does not treat post-Block100 completion/reopen audit status, completed chunks, or fetched remote path names as positive closure",
             "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
@@ -3308,6 +3422,8 @@ def main() -> int:
         "block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean": block127_wz_builder_block126_top_packet_adapter_keeps_imports_clean,
         "block128_post_block127_wz_launch_preflight_keeps_imports_clean": block128_post_block127_wz_launch_preflight_keeps_imports_clean,
         "block128_strict_wz_source_row_construction_attempt_keeps_imports_clean": block128_strict_wz_source_row_construction_attempt_keeps_imports_clean,
+        "block129_schur_one_pole_loewner_falsification_keeps_imports_clean": block129_schur_one_pole_loewner_falsification_keeps_imports_clean,
+        "block129_schur_pole_authority_construction_attempt_keeps_imports_clean": block129_schur_pole_authority_construction_attempt_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

@@ -1,0 +1,181 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block129 completed higher-shell Schur packet falsifies the prior C_x|s one-pole scout as pole authority and no finite Loewner-Stieltjes proxy survives the necessary sign tests; strict Schur/Feshbach pole rows remain absent",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block129_schur_one_pole_loewner_falsification_passed": true,
+  "bridge_roots_still_absent_after_block128": true,
+  "complete_packet_available": true,
+  "conditional_surface_status": "Schur route can reopen only with same-surface strict pole rows or a theorem-grade analytic/model-class certificate fixing K'(pole), plus FV/IR/contact authority and a canonical O_H/source-overlap, W/Z, or neutral physical bridge",
+  "current_closure_satisfied": false,
+  "exact_next_action": "Stop treating finite Schur/Stieltjes proxies or one-pole endpoint fits as closure candidates.  Produce a strict Schur/Feshbach row artifact carrying pole coordinate, K'(pole) or lK'r, source projection numerator, FV/IR/contact/model-class authority, and a physical bridge; otherwise pivot to neutral H3/H4 physical transfer/source-coupling authority.",
+  "fail_count": 0,
+  "finite_node_nonidentifiability_still_load_bearing": true,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "promoted_finite_abc_rows_to_pole_rows": false,
+    "promoted_finite_stieltjes_proxy_to_lsz_authority": false,
+    "promoted_one_pole_scout_to_physical_pole": false,
+    "set_c2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "treated_taste_radial_x_as_canonical_oh": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_reduced_cold_pilots_as_production_evidence": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "hypothetical_axiom_status": null,
+  "loewner_stieltjes_summary": {
+    "all_candidate_fields_fail_necessary_stieltjes_signs": true,
+    "available": true,
+    "failing_fields": [
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "A_finite_K_ss",
+        "first_failed_order": 2
+      },
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "C_finite_K_xx",
+        "first_failed_order": 1
+      },
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "C_source_given_x",
+        "first_failed_order": 1
+      },
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "C_ss",
+        "first_failed_order": 1
+      },
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "C_x_given_source",
+        "first_failed_order": 2
+      },
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "C_xx",
+        "first_failed_order": 2
+      },
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "K_source_given_x",
+        "first_failed_order": 2
+      },
+      {
+        "complete_monotone_necessary_signs_passed": false,
+        "field": "K_x_given_source",
+        "first_failed_order": 1
+      }
+    ],
+    "field_count": 8,
+    "strict_limit": "The divided-difference sign test is a finite Loewner/Stieltjes necessary condition for a positive scalar spectral proxy.  Failure rejects the finite packet as strict authority; success would still need pole/FV/IR/contact and bridge authority.",
+    "surviving_fields": []
+  },
+  "one_pole_test": {
+    "fit_valid": true,
+    "implied_pole_location_qhat_sq": -6.392091257441135,
+    "m_sq": 6.392091257441135,
+    "max_abs_z_score": 243.36741086003715,
+    "model": "C(x)=R/(x+m^2) fit through the zero and first-shell means",
+    "residual_rows": [
+      {
+        "mean": 0.28082330405815153,
+        "one_pole_prediction": 0.28082330405815153,
+        "residual": 0.0,
+        "stderr": 1.1457648852093061e-05,
+        "used_in_fit": true,
+        "x": 0.0,
+        "z_score": 0.0
+      },
+      {
+        "mean": 0.2695251177926865,
+        "one_pole_prediction": 0.2695251177926865,
+        "residual": 0.0,
+        "stderr": 4.407208031652615e-05,
+        "used_in_fit": true,
+        "x": 0.267949192431,
+        "z_score": 0.0
+      },
+      {
+        "mean": 0.2582250203449301,
+        "one_pole_prediction": 0.25910087621884775,
+        "residual": -0.0008758558739176414,
+        "stderr": 4.326620512894203e-05,
+        "used_in_fit": false,
+        "x": 0.535898384862,
+        "z_score": -20.243417958829852
+      },
+      {
+        "mean": 0.246924020514715,
+        "one_pole_prediction": 0.24945295228071024,
+        "residual": -0.0025289317659952515,
+        "stderr": 1.0391415009340193e-05,
+        "used_in_fit": false,
+        "x": 0.803847577293,
+        "z_score": -243.36741086003715
+      },
+      {
+        "mean": 0.2399989937221185,
+        "one_pole_prediction": 0.24283360746512514,
+        "residual": -0.002834613743006642,
+        "stderr": 0.00018606933789875926,
+        "used_in_fit": false,
+        "x": 1.0,
+        "z_score": -15.234179768775023
+      }
+    ],
+    "residue": 1.7950481867558439,
+    "strict_limit": "This tests the prior two-point one-pole scout against higher-shell finite rows.  Passing would still be only model support; failing rejects one-pole promotion on the current packet.",
+    "unused_level_failure_count_at_5sigma": 3
+  },
+  "one_pole_test_field": "C_x_given_source",
+  "parent_certificates": {
+    "assumption_import_stress": "outputs/yt_pr230_assumption_import_stress_2026-05-01.json",
+    "block121_schur_finite_packet_pole_derivative_nonidentifiability": "outputs/yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability_2026-05-17.json",
+    "block128_strict_wz_source_row_construction_attempt": "outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "higher_shell_complete_packet_monotonicity": "outputs/yt_pr230_schur_higher_shell_complete_packet_monotonicity_gate_2026-05-15.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "schur_route_completion": "outputs/yt_pr230_schur_route_completion_2026-05-06.json",
+    "schur_x_given_source_one_pole_scout": "outputs/yt_pr230_schur_x_given_source_one_pole_scout_2026-05-07.json",
+    "strict_kprime_pole_residue_certificate": "outputs/yt_pr230_strict_kprime_pole_residue_certificate_2026-05-12.json"
+  },
+  "parent_statuses": {
+    "assumption_import_stress": "open / assumption-import stress complete",
+    "block121_schur_finite_packet_pole_derivative_nonidentifiability": "exact negative boundary / Block121 complete finite Schur A/B/C packet does not determine strict Schur/Feshbach K-prime pole derivative",
+    "block128_strict_wz_source_row_construction_attempt": "exact negative boundary / Block128 cannot construct a strict W/Z packet from existing raw rows and the source-Higgs pole-row pivot also lacks accepted O_H/action authority plus nonempty pole residues",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "higher_shell_complete_packet_monotonicity": "exact negative boundary / complete 63/63 higher-shell finite rows fail necessary Stieltjes complete-monotonicity sign tests for strict scalar-LSZ/Schur pole authority",
+    "retained_route": "open / retained closure not yet reached",
+    "schur_route_completion": "exact negative boundary / strict Schur A/B/C route not complete; bounded two-source correlator subblock, finite inverse A/B/C rows, finite-shell inverse-slope support, and finite-to-pole lift boundary present",
+    "schur_x_given_source_one_pole_scout": "bounded-support / C_x|s one-pole finite-residue scout; positive endpoint fits are model-class diagnostics only, not scalar-LSZ pole authority",
+    "strict_kprime_pole_residue_certificate": "open / strict K-prime pole-residue certificate rows missing"
+  },
+  "pass_count": 13,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The strongest finite Schur diagnostic is now overconstrained: the two-point one-pole scout misses unused higher-shell levels, all candidate finite Stieltjes proxies fail necessary signs, and the current surface has no strict K-prime pole rows or physical bridge.",
+  "qhat_sq_levels": [
+    0.0,
+    0.267949192431,
+    0.535898384862,
+    0.803847577293,
+    1.0
+  ],
+  "strict_kprime_rows_absent": true,
+  "strict_non_claims": {
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_promote_finite_abc_rows_to_pole_rows": true,
+    "does_not_treat_finite_loewner_stieltjes_proxy_as_lsz_authority": true,
+    "does_not_treat_one_pole_fit_as_physical_pole": true,
+    "does_not_use_forbidden_imports": true
+  }
+}

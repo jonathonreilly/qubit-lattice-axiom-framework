@@ -2,22 +2,22 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T17:22:53Z"
+last_checkpoint_utc: "2026-05-17T17:39:16Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
-branch: physics-loop/pr230-retained-closure-campaign-block128-20260517
+branch: physics-loop/pr230-retained-closure-campaign-block129-20260517
 base_surface: origin/claude/yt-direct-lattice-correlator-2026-04-30
 latest_pr230_head: "683365f67a009e8249cf92630da32144a129c0ca"
 latest_pr230_head_note: "PR #230 is draft/open; local origin/claude may lag PR metadata, stacked science work remains on Block123/Block124 branches"
 pr230_state: open
 pr230_draft: true
-active_science_block: block128_post_block127_wz_launch_preflight_and_strict_construction_attempt
-active_route: "post-Block127 W/Z launch preflight plus strict W/Z/source-Higgs construction attempt"
+active_science_block: block129_schur_one_pole_loewner_falsification_and_pole_authority_construction_attempt
+active_route: "strict Schur/Feshbach pole-authority attempt via completed higher-shell one-pole/Loewner diagnostics plus explicit row-authority construction"
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Block128 top-side W/Z root is satisfied after Block127, but W/Z rows/action/g2/covariance/production harness roots remain absent and no strict W/Z or source-Higgs pole-row packet is constructible from current rows"
+actual_current_surface_status: "exact negative boundary / Block129 completed higher-shell Schur packet falsifies the prior C_x|s one-pole scout as pole authority, no finite Loewner-Stieltjes proxy survives the necessary sign tests, and no strict Schur/Feshbach pole authority is constructible from explicit row sidecars, raw higher-shell rows, or finite A/B/C support"
 proposal_allowed: false
-proposal_allowed_reason: "Block127 satisfies the top-side recognition root, but the current surface lacks production W/Z mass-fit rows, matched top-W/Z covariance, strict non-observed g2, accepted same-source EW/Higgs action, and a production W/Z harness. The Block126 production raw files have no W/Z mass-fit rows matchable to the 1008 top-side configuration keys, the only W/Z-shaped rows are the known scout smoke schema, and the source-Higgs fallback has zero C_ss/C_sH/C_HH pole-residue rows with no accepted canonical O_H/action authority."
+proposal_allowed_reason: "Block129 eliminates the strongest finite Schur one-pole/Loewner shortcut and the stricter construction attempt: the two-point C_x|s one-pole scout is falsified by unused higher-shell rows, all candidate finite Stieltjes proxies fail necessary signs, strict K-prime row sidecars are absent, raw higher-shell rows contain no strict pole keys, finite A/B/C support is nonidentifiable by Block121, and Block128 leaves W/Z/source-Higgs bridge roots absent."
 first_route_decision: "Block115 does not change W/Z from blocked to executable; Block116 also records a neutral H3/H4 strict-artifact absence. The first campaign artifact therefore targets the invariant source/action obstruction that all remaining positive routes must satisfy."
 lock_status: "branch-local lock acquired with scripts/automation_lock.py using loop-local lock paths"
 forbidden_imports:
@@ -163,6 +163,31 @@ block128_result:
   canonical_oh_action_authority_present: false
   recommended_pivot: "strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority"
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1468"
+block129_result:
+  one_pole_loewner_output: outputs/yt_pr230_block129_schur_one_pole_loewner_falsification_2026-05-17.json
+  pole_authority_construction_output: outputs/yt_pr230_block129_schur_pole_authority_construction_attempt_2026-05-17.json
+  status: "exact negative boundary"
+  one_pole_pass_count: 13
+  pole_authority_pass_count: 14
+  fail_count: 0
+  proposal_allowed: false
+  complete_packet_available: true
+  qhat_sq_levels: [0.0, 0.267949192431, 0.535898384862, 0.803847577293, 1.0]
+  one_pole_test_field: C_x_given_source
+  one_pole_max_abs_z_score: 243.36741086003715
+  one_pole_unused_level_failure_count_at_5sigma: 3
+  loewner_stieltjes_surviving_fields: []
+  strict_kprime_rows_absent: true
+  explicit_strict_row_sidecars_present: false
+  raw_higher_shell_files_checked: 63
+  raw_finite_source_higgs_mode_rows: 693
+  raw_finite_scalar_lsz_mode_rows: 693
+  raw_strict_pole_key_hits: 0
+  finite_abc_packet_complete: true
+  finite_packet_promotable_to_pole_authority: false
+  model_fv_ir_threshold_authority_present: false
+  bridge_roots_still_absent_after_block128: true
+  stacked_review_pr: pending
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"
@@ -183,17 +208,20 @@ verification:
   block128_py_compile: passed
   block128_preflight_runner: "PASS=14 FAIL=0"
   block128_strict_construction_runner: "PASS=12 FAIL=0"
+  block129_py_compile: passed
+  block129_one_pole_loewner_runner: "PASS=13 FAIL=0"
+  block129_pole_authority_construction_runner: "PASS=14 FAIL=0"
   wz_mass_fit_response_row_builder_current: "PASS=10 FAIL=0; Block126 top-side packet recognized, strict rows not written"
   wz_mass_fit_response_row_builder_scout: "PASS=9 FAIL=0"
   full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
   retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
   positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
-  campaign_status: "PASS=447 FAIL=0; proposal_allowed=false"
-  assumption_import_stress: "PASS=130 FAIL=0; proposal_allowed=false"
+  campaign_status: "PASS=449 FAIL=0; proposal_allowed=false"
+  assumption_import_stress: "PASS=132 FAIL=0; proposal_allowed=false"
   target_timeseries_full_set: "PASS=9 FAIL=0; replacement_queue=[]"
   chunk063_higher_shell_checkpoint: "PASS=15 FAIL=0"
   git_diff_check: passed
   audit_pipeline: "completed; generated docs/audit diffs restored"
   strict_audit_lint: "OK; no errors; 5 known warnings"
-next_exact_action: "Pivot to strict Schur/Feshbach pole authority or neutral H3/H4 physical-transfer/source-coupling authority. Reopen W/Z only if a new production W/Z mass-fit artifact appears; reopen source-Higgs only with accepted canonical O_H/action plus nonempty numeric C_ss/C_sH/C_HH pole-residue rows."
-next_checkpoint_due_utc: "2026-05-17T17:45:33Z"
+next_exact_action: "Pivot to neutral H3/H4 physical-transfer/source-coupling authority. Reopen Schur only with a new strict pole-row artifact containing pole coordinate, K'(pole) or lK'r, source projection numerator, FV/IR/contact/model-class authority, and a physical bridge."
+next_checkpoint_due_utc: "2026-05-17T18:09:16Z"

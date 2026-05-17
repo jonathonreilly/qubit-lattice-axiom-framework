@@ -561,6 +561,12 @@ def main() -> int:
         "pr230_block128_strict_wz_source_row_construction_attempt": load(
             "outputs/yt_pr230_block128_strict_wz_source_row_construction_attempt_2026-05-17.json"
         ),
+        "pr230_block129_schur_one_pole_loewner_falsification": load(
+            "outputs/yt_pr230_block129_schur_one_pole_loewner_falsification_2026-05-17.json"
+        ),
+        "pr230_block129_schur_pole_authority_construction_attempt": load(
+            "outputs/yt_pr230_block129_schur_pole_authority_construction_attempt_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3572,6 +3578,118 @@ def main() -> int:
         "pr230-block128-strict-wz-source-row-construction-attempt-blocks",
         block128_strict_wz_source_row_construction_attempt_blocks,
         statuses["pr230_block128_strict_wz_source_row_construction_attempt"],
+    )
+    block129_schur_one_pole_loewner_falsification_blocks = (
+        "Block129 completed higher-shell Schur packet falsifies"
+        in str(statuses["pr230_block129_schur_one_pole_loewner_falsification"])
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ].get("block129_schur_one_pole_loewner_falsification_passed")
+        is True
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ].get("complete_packet_available")
+        is True
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ]
+        .get("one_pole_test", {})
+        .get("unused_level_failure_count_at_5sigma", 0)
+        >= 1
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ]
+        .get("loewner_stieltjes_summary", {})
+        .get("all_candidate_fields_fail_necessary_stieltjes_signs")
+        is True
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ].get("strict_kprime_rows_absent")
+        is True
+        and certificates[
+            "pr230_block129_schur_one_pole_loewner_falsification"
+        ].get("bridge_roots_still_absent_after_block128")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block129_schur_one_pole_loewner_falsification"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block129-schur-one-pole-loewner-falsification-blocks",
+        block129_schur_one_pole_loewner_falsification_blocks,
+        statuses["pr230_block129_schur_one_pole_loewner_falsification"],
+    )
+    block129_schur_pole_authority_construction_attempt_blocks = (
+        "Block129 cannot construct strict Schur/Feshbach pole authority"
+        in str(statuses["pr230_block129_schur_pole_authority_construction_attempt"])
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ].get("proposal_allowed")
+        is False
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ].get("current_closure_satisfied")
+        is False
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ].get("block129_schur_pole_authority_construction_attempt_passed")
+        is True
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ]
+        .get("constructive_status", {})
+        .get("strict_schur_feshbach_pole_authority_constructible")
+        is False
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ]
+        .get("constructive_status", {})
+        .get("finite_abc_packet_complete")
+        is True
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ]
+        .get("constructive_status", {})
+        .get("explicit_strict_row_sidecars_present")
+        is False
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ]
+        .get("constructive_status", {})
+        .get("raw_strict_pole_rows_present")
+        is False
+        and certificates[
+            "pr230_block129_schur_pole_authority_construction_attempt"
+        ]
+        .get("finite_packet_blockers", {})
+        .get("block121_finite_node_nonidentifiability")
+        is True
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block129_schur_pole_authority_construction_attempt"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block129-schur-pole-authority-construction-attempt-blocks",
+        block129_schur_pole_authority_construction_attempt_blocks,
+        statuses["pr230_block129_schur_pole_authority_construction_attempt"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9378,6 +9496,12 @@ def main() -> int:
     )
     result["block128_strict_wz_source_row_construction_attempt_blocks"] = (
         block128_strict_wz_source_row_construction_attempt_blocks
+    )
+    result["block129_schur_one_pole_loewner_falsification_blocks"] = (
+        block129_schur_one_pole_loewner_falsification_blocks
+    )
+    result["block129_schur_pole_authority_construction_attempt_blocks"] = (
+        block129_schur_pole_authority_construction_attempt_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

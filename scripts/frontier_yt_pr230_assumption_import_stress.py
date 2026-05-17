@@ -425,6 +425,9 @@ def main() -> int:
         "block134_fresh_hamiltonian_cpt_iss_reopen_audit": load(
             "outputs/yt_pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit_2026-05-17.json"
         ),
+        "block135_fresh_source_field_action_phase_reopen_audit": load(
+            "outputs/yt_pr230_block135_fresh_source_field_action_phase_reopen_audit_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -3390,6 +3393,55 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block135_fresh_source_field_action_phase_reopen_audit_keeps_imports_clean = (
+        "Block135 fresh source-field-action-phase reopen audit finds no PR230 strict closure root"
+        in str(
+            certificates["block135_fresh_source_field_action_phase_reopen_audit"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block135_fresh_source_field_action_phase_reopen_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block135_fresh_source_field_action_phase_reopen_audit"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block135_fresh_source_field_action_phase_reopen_audit"].get(
+            "block135_fresh_source_field_action_phase_reopen_audit_passed"
+        )
+        is True
+        and certificates["block135_fresh_source_field_action_phase_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_decoherence_action_phase_as_pr230_ew_higgs_action")
+        is True
+        and certificates["block135_fresh_source_field_action_phase_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_electrostatics_source_field_as_pr230_scalar_source")
+        is True
+        and certificates["block135_fresh_source_field_action_phase_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_methodology_feedback_as_pr230_evidence")
+        is True
+        and certificates["block135_fresh_source_field_action_phase_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_pr230_fold_commit_as_new_closure_artifact")
+        is True
+        and all(
+            value is False
+            for value in certificates["block135_fresh_source_field_action_phase_reopen_audit"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block135-fresh-source-field-action-phase-reopen-audit-keeps-imports-clean",
+        block135_fresh_source_field_action_phase_reopen_audit_keeps_imports_clean,
+        certificates["block135_fresh_source_field_action_phase_reopen_audit"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3750,6 +3802,7 @@ def main() -> int:
         "block132_noether_fresh_artifact_intake_keeps_imports_clean": block132_noether_fresh_artifact_intake_keeps_imports_clean,
         "block133_fresh_math_artifact_reopen_audit_keeps_imports_clean": block133_fresh_math_artifact_reopen_audit_keeps_imports_clean,
         "block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean": block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean,
+        "block135_fresh_source_field_action_phase_reopen_audit_keeps_imports_clean": block135_fresh_source_field_action_phase_reopen_audit_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

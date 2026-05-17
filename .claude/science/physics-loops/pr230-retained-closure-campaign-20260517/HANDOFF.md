@@ -1,9 +1,9 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block134-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block135-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
-`9711e159c8e7a58403d2a940439e2a11f0135f48`.
+`4133696670f14d814aa10fce3124e98e47ea750d`.
 
 Stacked review PR for Blocks120-121: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439
 Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445
@@ -30,6 +30,7 @@ Stacked review PR for Block133:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1494
 Stacked review PR for Block134:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1497
+Stacked review PR for Block135: pending.
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -244,6 +245,26 @@ with no science-content change.  Reruns: Block134 `PASS=11`, campaign status
 `PASS=455`, assumption/import stress `PASS=138`.
 
 Active next work after Block134: the cleanest route remains action-first
+source-Higgs closure with accepted same-surface canonical `O_H`/action/LSZ
+authority plus strict numeric `C_ss/C_sH/C_HH` pole-residue rows sharing
+source/action/`O_H` surface IDs.  W/Z, Schur/Feshbach, or neutral routes reopen
+only with their strict physical-response, pole, or transfer authority packets.
+
+Block135 audits the fresh source/action/methodology surfaces after Block134:
+`origin/decoherence-action-zero-field-algebraic-2026-05-17`,
+`origin/electrostatics-grown-sign-law-source-field-algebra-narrow`,
+`origin/feedback/audit-loop-cascade-reaudit-source-20260517`, `origin/main`
+audit-only drift, and the PR230 Block134 fold commit.  Result: exact negative
+boundary.  The decoherence theorem is per-link zero-field phase algebra, not
+PR230 EW/Higgs action or scalar LSZ/source-overlap authority.  The
+electrostatics theorem is pointwise source-field linearity/parity, not a
+Cl(3)/Z3 source-to-canonical-Higgs theorem.  The methodology branch is not
+science evidence, origin/main changed only generated audit surfaces, and the
+PR230 fold contains Block134 already audited as non-closure.  Reruns:
+Block135 `PASS=15`, campaign status `PASS=456`, assumption/import stress
+`PASS=139`.
+
+Active next work after Block135: the cleanest route remains action-first
 source-Higgs closure with accepted same-surface canonical `O_H`/action/LSZ
 authority plus strict numeric `C_ss/C_sH/C_HH` pole-residue rows sharing
 source/action/`O_H` surface IDs.  W/Z, Schur/Feshbach, or neutral routes reopen

@@ -1,0 +1,124 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block135 fresh source-field-action-phase reopen audit finds no PR230 strict closure root in the newly fetched decoherence action zero-field phase, electrostatics source-field linearity, methodology feedback, origin/main audit drift, or PR230 Block134 fold surfaces",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": false,
+  "bare_retained_allowed": false,
+  "block135_fresh_source_field_action_phase_reopen_audit_passed": true,
+  "conditional_surface_status": null,
+  "current_closure_satisfied": false,
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "set_c2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_decoherence_action_phase_as_pr230_ew_higgs_action": false,
+    "used_electrostatics_source_field_as_pr230_scalar_source": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_methodology_branch_as_pr230_evidence": false,
+    "used_observed_top_or_yukawa": false,
+    "used_pr230_fold_commit_as_new_closure_artifact": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "fresh_artifacts": {
+    "decoherence_action_zero_field_phase": {
+      "note": "docs/DECOHERENCE_ACTION_ZERO_FIELD_PER_LINK_PHASE_EQUALITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/decoherence-action-zero-field-algebraic-2026-05-17",
+      "ref_present": true,
+      "script": "scripts/audit_companion_decoherence_action_zero_field_per_link_phase_equality.py",
+      "script_present": true,
+      "script_total_pass_marker": true
+    },
+    "electrostatics_source_field_linearity": {
+      "note": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/electrostatics-grown-sign-law-source-field-algebra-narrow",
+      "ref_present": true,
+      "script": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+      "script_present": true,
+      "script_total_pass_marker": true
+    }
+  },
+  "hypothetical_axiom_status": null,
+  "methodology_branch": {
+    "changed_paths": [
+      "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "docs/audit/SCIENCE_FIX_LOOP.md"
+    ],
+    "methodology_only": true,
+    "ref": "origin/feedback/audit-loop-cascade-reaudit-source-20260517",
+    "ref_present": true
+  },
+  "origin_main_drift": {
+    "audit_only": true,
+    "base": "539df4b27",
+    "changed_paths": [
+      "docs/audit/AUDIT_LEDGER.md",
+      "docs/audit/AUDIT_QUEUE.md",
+      "docs/audit/data/audit_ledger.json",
+      "docs/audit/data/audit_queue.json",
+      "docs/audit/data/auditor_reliability.json",
+      "docs/audit/data/effective_status_summary.json"
+    ]
+  },
+  "pass_count": 15,
+  "pr230_fold": {
+    "base": "9711e159c8e7a58403d2a940439e2a11f0135f48",
+    "changed_paths": [
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/HANDOFF.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/PR_BACKLOG.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/PR_BODY_BLOCK134.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/pr230-retained-closure-campaign-20260517/STATE.yaml",
+      "docs/YT_PR230_BLOCK134_FRESH_HAMILTONIAN_CPT_ISS_REOPEN_AUDIT_NOTE_2026-05-17.md",
+      "outputs/yt_pr230_assumption_import_stress_2026-05-01.json",
+      "outputs/yt_pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit_2026-05-17.json",
+      "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+      "scripts/frontier_yt_pr230_assumption_import_stress.py",
+      "scripts/frontier_yt_pr230_block134_fresh_hamiltonian_cpt_iss_reopen_audit.py",
+      "scripts/frontier_yt_pr230_campaign_status_certificate.py"
+    ],
+    "folds_only_prior_block134": true,
+    "head": "4133696670f14d814aa10fce3124e98e47ea750d"
+  },
+  "pr230_missing_roots_after_intake": {
+    "accepted_canonical_O_H_action_LSZ": true,
+    "neutral_H3_H4_transfer_or_coupling_authority": true,
+    "source_overlap_kappa": true,
+    "strict_C_ss_C_sH_C_HH_pole_rows": true,
+    "strict_Schur_Feshbach_pole_authority": true,
+    "strict_WZ_response_packet": true
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Fresh source-field/action-phase/methodology/fold surfaces are outside the PR230 physical readout contracts.",
+  "strict_non_claims": {
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_treat_decoherence_action_phase_as_pr230_ew_higgs_action": true,
+    "does_not_treat_electrostatics_source_field_as_pr230_scalar_source": true,
+    "does_not_treat_methodology_feedback_as_pr230_evidence": true,
+    "does_not_treat_pr230_fold_commit_as_new_closure_artifact": true
+  },
+  "strict_root_candidate_hits": {
+    "decoherence_action_zero_field_phase": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "per-link zero-field phase equality for a decoherence action law, not PR230 EW/Higgs action or scalar LSZ/source-overlap authority"
+    },
+    "electrostatics_source_field_linearity": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "abstract electrostatics source-field linearity/parity, not a PR230 Cl(3)/Z3 scalar source-to-canonical-Higgs certificate"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block134.
+Status: exact negative boundary plus bounded support through Block135.
 
 `proposed_retained`: not allowed.
 
@@ -95,6 +95,14 @@ source-Higgs/WZ authority; the CPT theorem is an abstract substitution
 identity under premises, not Standard-Model physical response or source-overlap
 authority; and the ISS branches are audit requeue bookkeeping with no
 science-content change.
+Block135 then intakes the fresh decoherence zero-field action-phase theorem,
+electrostatics source-field linearity/parity theorem, methodology feedback
+branch, origin/main audit drift, and PR230 Block134 fold commit.  These also
+do not reopen PR230: the decoherence theorem is per-link phase algebra for a
+different action-law lane, the electrostatics theorem is abstract source-field
+linearity/parity rather than Cl(3)/Z3 source-to-canonical-Higgs authority,
+methodology and audit drift are process/generated surfaces, and the PR230 fold
+contains Block134's already-audited non-closure artifact.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -140,6 +148,11 @@ science-content change.
 - no Hamiltonian/CPT/ISS shortcut after Block134: bounded lattice
   operator-completeness for `H=iD`, abstract CPT algebra, and audit requeue
   notes are not accepted `O_H`/action/LSZ, source-Higgs pole-row, W/Z,
+  Schur/Feshbach, or neutral H3/H4 authority packets.
+- no source-field/action-phase/methodology shortcut after Block135:
+  decoherence zero-field phase algebra, electrostatics source-field
+  linearity/parity, methodology feedback, audit-generated drift, and the PR230
+  Block134 fold are not accepted `O_H`/action/LSZ, source-Higgs pole-row, W/Z,
   Schur/Feshbach, or neutral H3/H4 authority packets.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an

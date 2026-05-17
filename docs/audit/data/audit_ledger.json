@@ -195745,24 +195745,45 @@
       "verdict_rationale": null
     },
     "self_gravity_failure_diagnosis": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:49:25.556332+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "poisson_self_gravity_loop_v3_note": "Restricted finite-harness no-go: at nonzero coupling the runner shows small matched-null centroid and detector-line phase-ramp shifts, but all nonzero-coupling sweep rows fail the stated convergence tolerance and the result is not promoted to a self-gravity mechanism; the same-loop epsilon=0 reduction is out of binding scope.",
+          "self_gravity_backreaction_closure_note": "Bounded no-go for the registered h=0.25, W=3, L=6 exact-lattice Poisson-like amplitude-sourced backreaction loop: the finite sweep preserves the epsilon=0 reduction but does not produce a converged, end-to-end Born-clean nonzero-coupling self-gravity mechanism."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_loop_v3_note": "no_go",
+          "self_gravity_backreaction_closure_note": "no_go"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_v3_note": "retained_no_go",
+          "self_gravity_backreaction_closure_note": "retained_no_go"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_v3_note",
+          "self_gravity_backreaction_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-154750-a5e2dcef-self_gravity_failure_dia-026",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The nonzero-coupling no-go portion closes from the supplied runner output and source code. The full note as written also imports exact epsilon=0 identity as a retained survivor, but the cited authority explicitly scopes that out and the runner short-circuits epsilon==0 rather than testing the same nonlinear machinery.",
       "claim_id": "self_gravity_failure_diagnosis",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited the bounded no-go diagnosis for the supplied Poisson self-gravity loop v3: nonzero-coupling rows show small centroid/phase-ramp perturbations, fail strict convergence, and have non-machine-clean end-to-end Born; exact same-loop epsilon=0 identity was not closed.",
+      "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:49:25.556332+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -195771,22 +195792,24 @@
         "self_gravity_backreaction_closure_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The failure is a three-part limit: the backreaction signal is small, the nonlinear loop is not stable enough, and end-to-end Born is no longer machine-clean at the retained tolerance.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "fed55aed0d71338bdebd15b8b8ed8706a77f7bccb460c17eecd964f36a500772",
       "note_path": "docs/SELF_GRAVITY_FAILURE_DIAGNOSIS.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "scope_too_broad: revise docs/SELF_GRAVITY_FAILURE_DIAGNOSIS.md to remove the exact same-loop epsilon=0 survivor from the binding claim, or add a separate zero-epsilon theorem/runner without the short-circuit.",
+      "open_dependency_paths": [
+        "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md"
+      ],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
         {
@@ -195999,14 +196022,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
       "title": "Self-Gravity Failure Diagnosis",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely computes the finite-lattice nonzero-coupling observables: the reported small perturbations, 0/3 convergence at nonzero epsilon, and end-to-end Born drift are supported. However, the source note still presents exact epsilon=0 identity reduction as retained, while the provided upstream note narrows that claim out of binding scope because the runner uses a coded epsilon==0 branch. The safe reduced claim is the bounded nonzero-coupling no-go, not the stronger diagnosis including same-loop exact-null retention."
     },
     "self_gravity_scaling_note_2026-04-10": {
       "audit_date": "2026-05-01T23:33:38.266607+00:00",

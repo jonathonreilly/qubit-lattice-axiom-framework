@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 337 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1210 |
+| unaudited | 1209 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 179 |
+| ~~audited_conditional~~ | 180 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 558 |
-| `audited_conditional` | 179 |
+| `audited_conditional` | 180 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1407 |
+| `unaudited` | 1406 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 945 |
 | `decoration` | 22 |
 | `meta` | 200 |
-| `no_go` | 238 |
+| `no_go` | 239 |
 | `open_gate` | 110 |
-| `positive_theorem` | 733 |
+| `positive_theorem` | 732 |
 
 | criticality | count |
 |---|---:|
@@ -827,6 +827,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `scalar_selector_reviewer_package_2026-04-20` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | B | - |
 | `scalar_trace_tensor_no_go_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `self_gravity_failure_diagnosis` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `spectral_trajectory_theorem_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -9346,6 +9347,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The exact zero-coupling reduction is explicit, the snapshot Born check is explicit, and the end-to-end Born check is explicit, but together they still do not justify promoting the lane to a retained self-gravity/backreaction mechanism.  _(class `C`)_
 - **chain closes:** True — The note is a bounded no-go, not a positive retained mechanism claim. With no cited dependencies, the current runner directly reproduces the zero-epsilon identity, the nonzero-coupling non-convergence, and the non-machine-clean end-to-end Born audit that support that bounded conclusion.
 - **rationale:** The bounded claim surface is narrow: it asserts that the exact zero-coupling identity survives while the nonzero self-gravity/backreaction lane does not promote under strict reduction and Born controls. The current runner recomputes those controls from the stated lattice setup and matches the note's reported values, including zero-epsilon identity, failed nonlinear convergence for nonzero couplings, and nonzero end-to-end Born residual. No upstream dependency or hidden retained mechanism is needed for this bounded no-go read; residual risk is only that the runner is slow and has unclassified output lines, not that the stated bounded conclusion overreaches the computed evidence.
+- **auditor confidence:** high
+
+### `self_gravity_failure_diagnosis`
+
+- **Note:** [`SELF_GRAVITY_FAILURE_DIAGNOSIS.md`](../../docs/SELF_GRAVITY_FAILURE_DIAGNOSIS.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the bounded no-go diagnosis for the supplied Poisson self-gravity loop v3: nonzero-coupling rows show small centroid/phase-ramp perturbations, fail strict convergence, and have non-machine-clean end-to-end Born; exact same-loop epsilon=0 identity was not closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-154750-a5e2dcef-self_gravity_failure_dia-026`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The failure is a three-part limit: the backreaction signal is small, the nonlinear loop is not stable enough, and end-to-end Born is no longer machine-clean at the retained tolerance.  _(class `C`)_
+- **chain closes:** False — The nonzero-coupling no-go portion closes from the supplied runner output and source code. The full note as written also imports exact epsilon=0 identity as a retained survivor, but the cited authority explicitly scopes that out and the runner short-circuits epsilon==0 rather than testing the same nonlinear machinery.
+- **rationale:** The runner genuinely computes the finite-lattice nonzero-coupling observables: the reported small perturbations, 0/3 convergence at nonzero epsilon, and end-to-end Born drift are supported. However, the source note still presents exact epsilon=0 identity reduction as retained, while the provided upstream note narrows that claim out of binding scope because the runner uses a coded epsilon==0 branch. The safe reduced claim is the bounded nonzero-coupling no-go, not the stronger diagnosis including same-loop exact-null retention.
+- **open / conditional deps cited:**
+  - `POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md`
 - **auditor confidence:** high
 
 ### `self_gravity_scaling_note_2026-04-10`

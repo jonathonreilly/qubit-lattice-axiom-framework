@@ -1,0 +1,61 @@
+==============================================================================
+AUDIT COMPANION: STAGGERED HAMILTONIAN DIRECTION DECOMPOSITION
+Narrow theorem (S1)-(S6) on H = iD lattice operator algebra.
+Parent: PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30
+Sister: HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17
+==============================================================================
+
+Part 1: Numpy 3-d slice on L in {4, 6} (exact rational +/-1/2 entries).
+------------------------------------------------------------------------------
+  L = 4:
+  [PASS] L=4 step 1: D^T = -D (real anti-Hermitian)
+  [PASS] L=4 step 2: D = D_1 + D_2 + D_3 matrix-entrywise exact  (max|D - sum_mu D_mu| = 0.00e+00)
+  [PASS] L=4 step 3: H = iD Hermitian  (max|H - H^dag| = 0.00e+00)
+  [PASS] L=4 step 4: (S1) H = H_1 + H_2 + H_3 exact  (max|H - sum_mu H_mu| = 0.00e+00)
+  [PASS] L=4 step 5: each H_mu = i D_mu Hermitian
+  [PASS] L=4 step 6: (S2) on-site (diagonal) projection of H vanishes  (max_x |<x|H|x>| = 0.00e+00)
+  [PASS] L=4 step 7: (S3) longer-range (d_per > 1) projection of H vanishes  (violations = 0, max violator = 0.00e+00)
+  [PASS] L=4 step 8: (S4) every nonzero H entry has axis-aligned displacement  (non-axis-aligned violations = 0)
+  [PASS] L=4 step 9: (S5) <H_mu, H_nu>_HS = 0 for mu != nu  (violations = 0)
+  [PASS] L=4 step 10: (S6) HS projection of H onto (span{H_mu})^perp = 0  (max|H - sum_mu c_mu H_mu| = 0.00e+00, c = [(1+0j), (1+0j), (1+0j)])
+  L = 6:
+  [PASS] L=6 step 1: D^T = -D (real anti-Hermitian)
+  [PASS] L=6 step 2: D = D_1 + D_2 + D_3 matrix-entrywise exact  (max|D - sum_mu D_mu| = 0.00e+00)
+  [PASS] L=6 step 3: H = iD Hermitian  (max|H - H^dag| = 0.00e+00)
+  [PASS] L=6 step 4: (S1) H = H_1 + H_2 + H_3 exact  (max|H - sum_mu H_mu| = 0.00e+00)
+  [PASS] L=6 step 5: each H_mu = i D_mu Hermitian
+  [PASS] L=6 step 6: (S2) on-site (diagonal) projection of H vanishes  (max_x |<x|H|x>| = 0.00e+00)
+  [PASS] L=6 step 7: (S3) longer-range (d_per > 1) projection of H vanishes  (violations = 0, max violator = 0.00e+00)
+  [PASS] L=6 step 8: (S4) every nonzero H entry has axis-aligned displacement  (non-axis-aligned violations = 0)
+  [PASS] L=6 step 9: (S5) <H_mu, H_nu>_HS = 0 for mu != nu  (violations = 0)
+  [PASS] L=6 step 10: (S6) HS projection of H onto (span{H_mu})^perp = 0  (max|H - sum_mu c_mu H_mu| = 0.00e+00, c = [(1+0j), (1+0j), (1+0j)])
+
+Part 2: Sympy 1-d slice on L=4 (exact symbolic precision).
+------------------------------------------------------------------------------
+  [PASS] sympy 1-d L=4: (S1) H = H_0 (1-d slice) exact symbolic
+  [PASS] sympy 1-d L=4: (S2) on-site diagonal entries of H vanish
+  [PASS] sympy 1-d L=4: (S3) longer-range (d>1) entries of H vanish
+  [PASS] sympy 1-d L=4: (S4) axis-alignment automatic on 1-d slice (trivial)
+  [PASS] sympy 1-d L=4: (S5) pairwise HS orthogonality (vacuous in 1-d)
+  [PASS] sympy 1-d L=4: (S6) projection of H onto (span{H_0})^perp = 0 (trivial)
+
+Part 3: Sympy 3-d slice on L=4 (exact symbolic precision, full theorem).
+------------------------------------------------------------------------------
+  [PASS] sympy 3-d L=4: (S1) H = H_1 + H_2 + H_3 exact symbolic
+  [PASS] sympy 3-d L=4: (S2) all on-site H entries vanish
+  [PASS] sympy 3-d L=4: (S5) <H_mu, H_nu>_HS = 0 for mu != nu (exact symbolic)  (violations = 0)
+
+Part 4: Out-of-scope marker (algebraic completeness probe).
+------------------------------------------------------------------------------
+  Note: this runner does NOT verify the continuum SME bilinear operator dictionary
+  (parent bridge note's open conditional item (1)), nor the SME coefficient-level
+  vanishing (item (4)), nor the continuum CPT-theorem bridge. The operator-completeness
+  statement here is purely at the LATTICE OPERATOR LEVEL on End_C(V_lat).
+  The continuum-side mapping and SME-zero leap remain the bridge's open content.
+
+==============================================================================
+Summary: PASS=29  FAIL=0
+Verdict: PASS. (S1)-(S6) exact at numpy precision on L in {4, 6} and exact
+symbolic on sympy 1-d (L=4) and sympy 3-d (L=4) slices. The lattice operator
+algebra End_C(V_lat) has no Hermitian-bilinear content in H outside the three
+single-direction NN hopping summands {H_1, H_2, H_3}.

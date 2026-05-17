@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1237 |
+| unaudited | 1236 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 155 |
+| ~~audited_conditional~~ | 156 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 155 |
+| `audited_conditional` | 156 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1434 |
+| `unaudited` | 1433 |
 
 | claim_type | count |
 |---|---:|
@@ -681,6 +681,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_family_universality_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -2586,6 +2587,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Exact cyclic-group averaging over the explicitly defined 3-cycle C is self-adjoint and idempotent under the Frobenius inner product, so it projects Herm(3) onto the C-fixed subspace; direct exact basis enumeration identifies that subspace as span_R{I, C+C^2, i(C-C^2)} and gives the stated coefficient formula.  _(class `A`)_
 - **chain closes:** True — The theorem closes from the explicit definition of C and P_cyc plus exact finite-dimensional algebra. The parent-row context line is not load-bearing: the row has no dependencies, defines C directly, and the asserted conclusions are independently checkable symbolic identities.
 - **rationale:** The source note is narrowly scoped and the exact runner output reports 26 algebraic checks with no failures, covering the group facts, Hermiticity, idempotence and fixed basis, basis action, and generic compression formula. The generated classifier's decoration-candidate signal arises from the parent-row context check rather than from the theorem's proof obligations, so it does not convert this independent helper theorem into decoration. Residual risk is downstream misuse: later rows must not treat B0/B1/B2 as physical response channels without a separate audited bridge.
+- **auditor confidence:** high
+
+### `decoherence_action_independence_note`
+
+- **Note:** [`DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md`](../../docs/DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the completed primary runner replay showing equality of d_TV, MI, CL purity/decoherence, and S_norm for spent-delay versus valley-linear on the tested zero-field 3D ordered 1/L^2 lattice at h = 1.0, 0.5, and 0.25.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131217-20260517T131217Z-e45a3296-decoherence_action_indep-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the frozen 3D 1/L^2 lattice replay, the decoherence observables are exactly identical for the valley-linear and spent-delay actions at h in {1.0, 0.5, 0.25}.  _(class `C`)_
+- **chain closes:** False — The primary runner has completed stdout and computes observables by calling the imported lattice propagation harness, but the restricted packet does not include the imported Lattice3D.propagate implementation or the action-law definitions needed to verify that the two requested action modes are genuinely implemented and differ only by phase at zero field.
+- **rationale:** The runner output supports exact numerical identity across the tested h values, and the visible source performs a substantive replay rather than merely printing constants. However, the load-bearing computation depends on scripts.valley_linear_same_harness_compare for the lattice, propagation routine, constants, slit setup, and action-mode semantics. Because that helper source is not included in the restricted packet, the audit cannot verify the zero-field action reduction or that the compared modes are independently implemented.
 - **auditor confidence:** high
 
 ### `diamond_signal_budget_hardening_note`

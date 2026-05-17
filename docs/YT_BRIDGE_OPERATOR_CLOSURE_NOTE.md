@@ -98,8 +98,15 @@ or change the audited claim scope.
 
 - [YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md](YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md)
   for the forced UV-localized class premise the comparator uses.
-- [YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md](YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md)
+- `YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md`
   for the UV-localized bridge family used as the comparator's viable side.
+  See-also cross-reference; backticked to break the residual length-2
+  constructive_uv <-> operator_closure ring surfaced when the EW-coupling
+  and locality see-also edges were demoted in this PR. The constructive-UV
+  note's own dependency-repair list cites this operator-closure note as
+  upstream (its three-family endpoint-stability runner takes the EW-window
+  proxy result as one of its inputs); the load-bearing citation direction
+  is constructive_uv -> operator_closure, not vice versa.
 - [YT_BOUNDARY_THEOREM.md](YT_BOUNDARY_THEOREM.md)
   for the v boundary that anchors the accepted `y_t(v)` target.
 - [YT_EW_COUPLING_BRIDGE_NOTE.md](YT_EW_COUPLING_BRIDGE_NOTE.md)

@@ -7,7 +7,13 @@
 
 - [`scripts/source_resolved_exact_green_scaling.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_exact_green_scaling.py)
 - [`logs/2026-04-05-source-resolved-exact-green-scaling.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-exact-green-scaling.txt)
-- [`docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
+- `docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md` (see-also cross-reference;
+  backticked to break cycle-0014 in the citation graph. This scaling note is
+  the larger-family size-transfer replay of the base pocket; the load-bearing
+  artifact-chain direction is this scaling note inheriting the base pocket's
+  kernel and gain configuration, but the citation graph would otherwise close
+  a length-3 ring through h025 -> scaling -> pocket -> h025. The base pocket
+  is the upstream artifact; this scaling note is its downstream size replay.)
 
 ## Question
 

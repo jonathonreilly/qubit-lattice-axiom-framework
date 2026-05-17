@@ -45,16 +45,19 @@ After install (one-time), `.github/workflows/audit.yml` runs
 - manual `workflow_dispatch`.
 
 The trigger set is deliberately narrow because this repo has very high
-commit volume (hundreds of pushes per day). The nightly cron + the PR
-pre-merge gate together still guarantee that `main` never drifts more
-than 24 hours from the audit ledger, and never merges drift through a PR.
+commit volume (hundreds of pushes per day). The nightly cron keeps
+`main` refreshed. PR checks are advisory because science PRs may stay
+open while `main` moves; review-loop is the pre-merge gate that applies
+the source delta to current `main`, reruns the pipeline, regenerates
+runner caches, and verifies the result before landing.
 
 On `schedule` and `workflow_dispatch` runs the workflow auto-commits the
 regenerated audit-data and publication-facing effective-status views back
 to `main` (as `audit-bot`, with `[skip ci]` to prevent feedback loops).
-PR runs fail if the pipeline produces a diff (no auto-commit; PRs from forks
-would not have write permission anyway, and PR authors should commit the
-regenerated files themselves before requesting review).
+PR runs report stale runner caches and generated audit-data diffs as
+warnings and job-summary advisories rather than red failures. This keeps
+GitHub notification noise low while preserving the signal for the
+landing reviewer.
 
 The full pipeline adds:
 

@@ -27,7 +27,9 @@ Once installed, the workflow runs on:
 
 On scheduled and manual runs the workflow auto-commits regenerated audit-data
 and publication-effective-status views back to the checked-out branch as
-`audit-bot`. PR runs fail if the pipeline produces a diff (no auto-commit on
-PRs to avoid write-permission issues with fork PRs).
+`audit-bot`. PR runs are advisory: they report stale runner caches and
+pipeline-generated diffs as warnings/job-summary notes, but do not red-fail
+open PRs while `main` is moving. Review-loop regenerates and verifies before
+landing.
 
 See `docs/audit/CI_INTEGRATION.md` for the full integration spec.

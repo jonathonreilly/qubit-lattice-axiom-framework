@@ -1341,6 +1341,14 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
+      "from": "axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17",
+      "to": "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03"
+    },
+    {
+      "from": "axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
       "from": "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03",
       "to": "native_gauge_closure_note"
     },
@@ -1397,6 +1405,10 @@
       "to": "anomaly_forces_time_theorem"
     },
     {
+      "from": "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03",
+      "to": "axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17"
+    },
+    {
       "from": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
@@ -1429,6 +1441,18 @@
       "to": "assumption_derivation_ledger"
     },
     {
+      "from": "axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17",
+      "to": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01"
+    },
+    {
+      "from": "axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
       "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
       "to": "emergent_lorentz_invariance_note"
     },
@@ -1442,7 +1466,15 @@
     },
     {
       "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
       "to": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
+    },
+    {
+      "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
     },
     {
       "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
@@ -1462,11 +1494,11 @@
     },
     {
       "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
-      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+      "to": "axiom_first_kms_condition_theorem_note_2026-05-01"
     },
     {
       "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
-      "to": "axiom_first_kms_condition_theorem_note_2026-05-01"
+      "to": "axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17"
     },
     {
       "from": "axiom_first_unruh_temperature_theorem_note_2026-05-01",
@@ -1837,6 +1869,26 @@
       "to": "planck_source_unit_normalization_support_theorem_note_2026-04-25"
     },
     {
+      "from": "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17",
+      "to": "bminusl_anomaly_freedom_theorem_note_2026-04-24"
+    },
+    {
+      "from": "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17",
+      "to": "one_generation_matter_closure_note"
+    },
+    {
+      "from": "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17",
+      "to": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
+    },
+    {
       "from": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
       "to": "one_generation_matter_closure_note"
     },
@@ -1847,6 +1899,14 @@
     {
       "from": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
       "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
+      "to": "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17"
     },
     {
       "from": "born_scattering_comparison_note",
@@ -3673,6 +3733,22 @@
       "to": "chiral_3plus1d_mixing_period_note"
     },
     {
+      "from": "chronology_protection_downstream_fix_note_2026-05-17",
+      "to": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25"
+    },
+    {
+      "from": "chronology_protection_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "chronology_protection_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "chronology_protection_downstream_fix_note_2026-05-17",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
       "from": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
       "to": "anomaly_forces_time_theorem"
     },
@@ -3699,6 +3775,18 @@
     {
       "from": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
       "to": "frontier_extension_lane_opening_note_2026-04-25"
+    },
+    {
+      "from": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
+      "to": "chronology_protection_downstream_fix_note_2026-05-17"
     },
     {
       "from": "ckm_atlas_axiom_closure_note",
@@ -8705,8 +8793,40 @@
       "to": "ckm_from_mass_hierarchy_note"
     },
     {
+      "from": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "to": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
       "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
@@ -8718,11 +8838,23 @@
     },
     {
       "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "to": "native_gauge_closure_note"
     },
     {
       "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "to": "lh_anomaly_trace_catalog_theorem_note_2026-04-25"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
+      "to": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17"
+    },
+    {
+      "from": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
+      "to": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17"
     },
     {
       "from": "early_family_transfer_connectivity_diagnosis",
@@ -21057,6 +21189,30 @@
       "to": "native_gauge_closure_note"
     },
     {
+      "from": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17",
+      "to": "s3_anomaly_spacetime_lift_note"
+    },
+    {
+      "from": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17"
+    },
+    {
+      "from": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17",
+      "to": "s3_boundary_link_theorem_note"
+    },
+    {
+      "from": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17",
+      "to": "s3_cap_uniqueness_note"
+    },
+    {
       "from": "s3_anomaly_spacetime_lift_note",
       "to": "anomaly_forces_time_theorem"
     },
@@ -21067,6 +21223,14 @@
     {
       "from": "s3_anomaly_spacetime_lift_note",
       "to": "s3_cap_uniqueness_note"
+    },
+    {
+      "from": "s3_anomaly_spacetime_lift_note",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_anomaly_spacetime_lift_note",
+      "to": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17"
     },
     {
       "from": "s3_general_r_derivation_note",
@@ -21141,6 +21305,26 @@
       "to": "s3_anomaly_spacetime_lift_note"
     },
     {
+      "from": "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17",
+      "to": "s3_time_spacetime_tensor_primitive_note"
+    },
+    {
+      "from": "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17",
+      "to": "s3_boundary_link_theorem_note"
+    },
+    {
+      "from": "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17",
+      "to": "s3_cap_uniqueness_note"
+    },
+    {
       "from": "s3_time_spacetime_tensor_primitive_note",
       "to": "s3_general_r_derivation_note"
     },
@@ -21151,22 +21335,50 @@
     {
       "from": "s3_time_spacetime_tensor_primitive_note",
       "to": "oh_schur_boundary_action_note"
+    },
+    {
+      "from": "s3_time_spacetime_tensor_primitive_note",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
     },
     {
       "from": "s3_time_spacetime_tensor_primitive_note",
       "to": "s3_time_theta_to_slice_coupling_note"
     },
     {
+      "from": "s3_time_spacetime_tensor_primitive_note",
+      "to": "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_time_tensorized_schur_primitive_downstream_fix_note_2026-05-17",
+      "to": "s3_time_tensorized_schur_primitive_note"
+    },
+    {
+      "from": "s3_time_tensorized_schur_primitive_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_time_tensorized_schur_primitive_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "s3_time_tensorized_schur_primitive_note",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_time_tensorized_schur_primitive_note",
+      "to": "oh_schur_boundary_action_note"
+    },
+    {
+      "from": "s3_time_tensorized_schur_primitive_note",
+      "to": "s3_time_tensorized_schur_primitive_downstream_fix_note_2026-05-17"
+    },
+    {
       "from": "s3_time_tensorized_schur_primitive_note",
       "to": "s3_general_r_derivation_note"
     },
     {
       "from": "s3_time_tensorized_schur_primitive_note",
       "to": "anomaly_forces_time_theorem"
-    },
-    {
-      "from": "s3_time_tensorized_schur_primitive_note",
-      "to": "oh_schur_boundary_action_note"
     },
     {
       "from": "s3_time_tensor_primitive_prototype_note",
@@ -21205,6 +21417,18 @@
       "to": "quark_route2_source_domain_bridge_no_go_note_2026-04-28"
     },
     {
+      "from": "s3_time_transfer_matrix_bridge_downstream_fix_note_2026-05-17",
+      "to": "s3_time_transfer_matrix_bridge_note"
+    },
+    {
+      "from": "s3_time_transfer_matrix_bridge_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_time_transfer_matrix_bridge_downstream_fix_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
       "from": "s3_time_transfer_matrix_bridge_note",
       "to": "s3_general_r_derivation_note"
     },
@@ -21223,6 +21447,14 @@
     {
       "from": "s3_time_transfer_matrix_bridge_note",
       "to": "oh_schur_boundary_action_note"
+    },
+    {
+      "from": "s3_time_transfer_matrix_bridge_note",
+      "to": "anomaly_forces_time_fb_framing_fix_note_2026-05-17"
+    },
+    {
+      "from": "s3_time_transfer_matrix_bridge_note",
+      "to": "s3_time_transfer_matrix_bridge_downstream_fix_note_2026-05-17"
     },
     {
       "from": "scalar_harmonic_tower_theorem_note_2026-04-24",
@@ -38799,7 +39031,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b3c977b731b03e961f46db76205a9382a2c01f96c9d0a8fedf027763a3bd75a1",
+      "note_hash": "7681fc7276307fb98b3e921134a15edc543873f8074b9080b309c9a4c771bab4",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -40164,6 +40396,21 @@
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
       "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3"
     },
+    "axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17": {
+      "claim_id": "axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03",
+        "anomaly_forces_time_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5549bded45bd9b31bbb03af716b68bf7585bcdb262cfb90a3ddecaa66d25ffc8",
+      "path": "docs/AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_THEOREM_NOTE_2026-05-03` \u2014 Downstream Surgical-Fix Record"
+    },
     "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03": {
       "claim_id": "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03",
       "claim_type_author_hint": "positive_theorem",
@@ -40183,10 +40430,11 @@
         "su2_witten_z2_anomaly_theorem_note_2026-04-24",
         "rh_sector_anomaly_cancellation_identities_note_2026-05-02",
         "bminusl_anomaly_freedom_theorem_note_2026-04-24",
-        "anomaly_forces_time_theorem"
+        "anomaly_forces_time_theorem",
+        "axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d2d5373c60bc6a69086366c32e6dfd961164d7d3667419a7c2f50e4585d6a8e9",
+      "note_hash": "41c7ad29a7197993374678111deee7be1d6b311ad6a9a1c02adcf322de43abf2",
       "path": "docs/AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/axiom_first_sm_anomaly_cancellation_complete_check.py",
       "title": "Axiom-First SM Anomaly Cancellation Complete on Cl(3)/Z\u00b3 Left-Handed Surface"
@@ -40225,6 +40473,22 @@
       "runner_path": "scripts/axiom_first_spin_statistics_check.py",
       "title": "Axiom-First Spin-Statistics Theorem on Cl(3) \u2297 Z^3"
     },
+    "axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17": {
+      "claim_id": "axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "anomaly_forces_time_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4ad8a6282e5b2bff0ad5ab52b6a6478c068c9ce4903f8a6aa596fb5d314be1d9",
+      "path": "docs/AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01` \u2014 Downstream Surgical-Fix Record"
+    },
     "axiom_first_stefan_boltzmann_theorem_note_2026-05-01": {
       "claim_id": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
       "claim_type_author_hint": "positive_theorem",
@@ -40234,16 +40498,18 @@
         "emergent_lorentz_invariance_note",
         "lorentz_kernel_positive_closure_note",
         "anomaly_forces_time_theorem",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
         "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "n_eff_from_three_generations_theorem_note_2026-04-24",
         "minimal_axioms_2026-04-11",
         "rconn_derived_note",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "axiom_first_kms_condition_theorem_note_2026-05-01"
+        "axiom_first_kms_condition_theorem_note_2026-05-01",
+        "axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4b2608afc06d0ea780f864f9e3c22ec84965875802d09b7b335b2b49e1c0053a",
+      "note_hash": "fbc647d1a057092176ea378ba6cc9bb46551a942a6d5bcd5da7431eaef45162f",
       "path": "docs/AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md",
       "runner_path": "scripts/axiom_first_stefan_boltzmann_check.py",
       "title": "Axiom-First Stefan-Boltzmann Law from KMS + Framework Photon Spectrum"
@@ -40619,6 +40885,24 @@
       "runner_path": "scripts/frontier_block_gaussian_schur_narrow.py",
       "title": "Block-Gaussian Schur Marginalization Narrow Theorem"
     },
+    "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17": {
+      "claim_id": "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "bminusl_anomaly_freedom_theorem_note_2026-04-24",
+        "anomaly_forces_time_theorem",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "one_generation_matter_closure_note",
+        "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e140348906e7fb6d694e47e08df3ee256fd475019b76da7d130c1a214f53916c",
+      "path": "docs/BMINUSL_ANOMALY_FREEDOM_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24` \u2014 Downstream Surgical-Fix Record"
+    },
     "bminusl_anomaly_freedom_theorem_note_2026-04-24": {
       "claim_id": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
       "claim_type_author_hint": "positive_theorem",
@@ -40627,10 +40911,12 @@
       "deps": [
         "one_generation_matter_closure_note",
         "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
-        "anomaly_forces_time_theorem"
+        "anomaly_forces_time_theorem",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "bminusl_anomaly_freedom_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "83f89734a08d9ccc5765bdddcdc025a47b7967d93e514b1a1927785a9d315a2c",
+      "note_hash": "82ecb36c28e26cdf62f6aeec574186a0ac0a2cbe9a3ae7a8274ceee4e863abd2",
       "path": "docs/BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_bminusl_anomaly_freedom.py",
       "title": "B-L Anomaly-Freedom Theorem With Retained nu_R"
@@ -42207,6 +42493,23 @@
       "runner_path": "scripts/frontier_chiral_3plus1d_decoherence_sweep.py",
       "title": "Chiral Walk Synthesis Addendum"
     },
+    "chronology_protection_downstream_fix_note_2026-05-17": {
+      "claim_id": "chronology_protection_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "anomaly_forces_time_theorem",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2a38169add93d20dc405c924e957257369736ad5af0e89dba48f5c1d7cad61ef",
+      "path": "docs/CHRONOLOGY_PROTECTION_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25` \u2014 Downstream Surgical-Fix Record"
+    },
     "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25": {
       "claim_id": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
       "claim_type_author_hint": null,
@@ -42219,10 +42522,13 @@
         "light_cone_framing_note",
         "causal_field_canonical_chain_note",
         "cpt_exact_note",
-        "frontier_extension_lane_opening_note_2026-04-25"
+        "frontier_extension_lane_opening_note_2026-04-25",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "chronology_protection_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f8a1d7124e5bf447b16233f0756033ba40bf9c86c10a864072b1a5fbf583d7be",
+      "note_hash": "2d4e556262c612e42604b461088db0d11293f8464321237a31dc9c54908841bf",
       "path": "docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_chronology_operational_no_past_signaling.py",
       "title": "Chronology Protection: Operational No-Past-Signaling Support Theorem"
@@ -48804,6 +49110,26 @@
       "runner_path": "scripts/frontier_mass_ratio_ckm_dual.py",
       "title": "Down-Type Mass Ratios from the CKM Dual"
     },
+    "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17": {
+      "claim_id": "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
+        "cpt_exact_note",
+        "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "anomaly_forces_time_theorem",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b9ed691af769ff3be04f94801602383ced5e90ec61bd7760abc1d29d3021178b",
+      "path": "docs/DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE` \u2014 Downstream Surgical-Fix Record"
+    },
     "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08": {
       "claim_id": "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "claim_type_author_hint": "bounded_theorem",
@@ -48811,13 +49137,17 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "anomaly_forces_time_theorem",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "cpt_exact_note",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
         "native_gauge_closure_note",
-        "lh_anomaly_trace_catalog_theorem_note_2026-04-25"
+        "lh_anomaly_trace_catalog_theorem_note_2026-04-25",
+        "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+        "dt1_time_dimension_proof_walk_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6edf00832d9579b071e5d406d2719b8d186226ff5c10195f7b6fda3dab7051bf",
+      "note_hash": "7743ad90c448053fc18a0bc10777e984c60e1861f6deecf874c759d53512069a",
       "path": "docs/DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md",
       "runner_path": "scripts/frontier_dt1_time_dimension_proof_walk_lattice_independence.py",
       "title": "Time-Dimension d_t = 1 Proof-Walk Lattice-Independence Bounded Note"
@@ -68336,6 +68666,25 @@
       "runner_path": "scripts/audit_companion_s1_rep_dimension_readoff_exact_2026_05_10.py",
       "title": "Representation-Literal Dimension Read-off and A^2 = p/c Narrow Theorem"
     },
+    "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17": {
+      "claim_id": "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "s3_anomaly_spacetime_lift_note",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "anomaly_forces_time_theorem",
+        "anomaly_forces_time_admission_iii_routing_correction_note_2026-05-17",
+        "s3_boundary_link_theorem_note",
+        "s3_cap_uniqueness_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e36aba7da2bd881eecad3770721de7c3f5e8984a33488e79260f5cf9de6c21f5",
+      "path": "docs/S3_ANOMALY_SPACETIME_LIFT_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`S3_ANOMALY_SPACETIME_LIFT_NOTE` \u2014 Downstream Surgical-Fix Record"
+    },
     "s3_anomaly_spacetime_lift_note": {
       "claim_id": "s3_anomaly_spacetime_lift_note",
       "claim_type_author_hint": "open_gate",
@@ -68344,10 +68693,12 @@
       "deps": [
         "anomaly_forces_time_theorem",
         "s3_boundary_link_theorem_note",
-        "s3_cap_uniqueness_note"
+        "s3_cap_uniqueness_note",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6ce9758778cbcdbef024bdb1b716334f7f83bd46acc14661de64b4d5b7b7ef1a",
+      "note_hash": "c4daf730a1e83a2583466b528f21c981924b2effbd52285e1cd2a53152ed035f",
       "path": "docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md",
       "runner_path": null,
       "title": "`S^3` + Anomaly-Forced Time: Axiom-First Spacetime Lift"
@@ -68521,6 +68872,24 @@
       "runner_path": "scripts/frontier_universal_gr_tensor_action_blocker.py",
       "title": "Route 2 Observable Pass: `S^3` + Anomaly-Forced Time"
     },
+    "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17": {
+      "claim_id": "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "s3_time_spacetime_tensor_primitive_note",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "anomaly_forces_time_theorem",
+        "s3_boundary_link_theorem_note",
+        "s3_cap_uniqueness_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f57953159e437a75f6d20209f41d0918307a03b454b735c9ad96ba0badc81b68",
+      "path": "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE` \u2014 Downstream Surgical-Fix Record"
+    },
     "s3_time_spacetime_tensor_primitive_note": {
       "claim_id": "s3_time_spacetime_tensor_primitive_note",
       "claim_type_author_hint": null,
@@ -68530,10 +68899,12 @@
         "s3_general_r_derivation_note",
         "anomaly_forces_time_theorem",
         "oh_schur_boundary_action_note",
-        "s3_time_theta_to_slice_coupling_note"
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "s3_time_theta_to_slice_coupling_note",
+        "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f99742c3d0702aae5c3c496a60a5438104e9e03d6e515b6caa3b5ef9e92f5d77",
+      "note_hash": "fb80aa6bb0f9189251eebd5be46aec927f4b02d050367614b3311db165b4fa72",
       "path": "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md",
       "runner_path": "scripts/frontier_s3_time_spacetime_tensor_primitive.py",
       "title": "Route 2 Spacetime Tensor Primitive Candidate on `PL S^3 x R`"
@@ -68566,18 +68937,36 @@
       "runner_path": "scripts/frontier_s3_time_tensor_primitive_prototype.py",
       "title": "Route 2 Tensor Primitive Prototype on `A1 x {E_x, T1x}`"
     },
+    "s3_time_tensorized_schur_primitive_downstream_fix_note_2026-05-17": {
+      "claim_id": "s3_time_tensorized_schur_primitive_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "s3_time_tensorized_schur_primitive_note",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "anomaly_forces_time_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d83a15f239655f1f6cc1695a363515581867cc086c31c2dd0ad6c7a184c57d7f",
+      "path": "docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE` \u2014 Downstream Surgical-Fix Record"
+    },
     "s3_time_tensorized_schur_primitive_note": {
       "claim_id": "s3_time_tensorized_schur_primitive_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "oh_schur_boundary_action_note",
+        "s3_time_tensorized_schur_primitive_downstream_fix_note_2026-05-17",
         "s3_general_r_derivation_note",
-        "anomaly_forces_time_theorem",
-        "oh_schur_boundary_action_note"
+        "anomaly_forces_time_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "188e30a52d787d89c99e022667e2df1ba7abe2471b435f417f80b7b3cc09e009",
+      "note_hash": "fd1e5ff21e6f22e477fc63fa36ea20664eab70e5ab05f15d1760d70763eb8819",
       "path": "docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md",
       "runner_path": null,
       "title": "Route 2 Tensorized Schur/Dirichlet Primitive"
@@ -68614,6 +69003,22 @@
       "runner_path": null,
       "title": "Route 2 Readout to Slice Coupling"
     },
+    "s3_time_transfer_matrix_bridge_downstream_fix_note_2026-05-17": {
+      "claim_id": "s3_time_transfer_matrix_bridge_downstream_fix_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "s3_time_transfer_matrix_bridge_note",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "anomaly_forces_time_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "26152cc49cc321c06e8cf20ec58b7e82374e16748f2f5df6b1377a3343539af0",
+      "path": "docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_DOWNSTREAM_FIX_NOTE_2026-05-17.md",
+      "runner_path": null,
+      "title": "`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE` \u2014 Downstream Surgical-Fix Record"
+    },
     "s3_time_transfer_matrix_bridge_note": {
       "claim_id": "s3_time_transfer_matrix_bridge_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -68624,10 +69029,12 @@
         "s3_boundary_link_theorem_note",
         "s3_cap_uniqueness_note",
         "anomaly_forces_time_theorem",
-        "oh_schur_boundary_action_note"
+        "oh_schur_boundary_action_note",
+        "anomaly_forces_time_fb_framing_fix_note_2026-05-17",
+        "s3_time_transfer_matrix_bridge_downstream_fix_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "759f29e38b4d5ca90e4526f3588721140dc41a5ad4e83105cd018976c3ae3f90",
+      "note_hash": "f9d0fa7caacda3037e85cb5484944c8848537539e1eefc6d8d393e8060b95674",
       "path": "docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md",
       "runner_path": "scripts/frontier_s3_time_transfer_matrix_bridge.py",
       "title": "`S^3` + Anomaly-Forced Time: Transfer-Matrix Bridge Candidate"
@@ -78568,7 +78975,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 447,
       "decoration": 1,
-      "meta": 164,
+      "meta": 173,
       "no_go": 56,
       "none": 1534,
       "open_gate": 44,
@@ -78577,15 +78984,15 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 894,
       "decoration": 1,
-      "meta": 164,
+      "meta": 173,
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
       "positive_theorem": 621
     },
-    "edge_count": 9298,
-    "leaf_count": 755,
-    "node_count": 2414,
+    "edge_count": 9356,
+    "leaf_count": 752,
+    "node_count": 2423,
     "root_count": 869,
     "runners_with_path": 2016
   }

@@ -24,7 +24,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
 | unaudited | 1236 |
-| meta | 204 |
+| meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
 | ~~audited_conditional~~ | 184 |
@@ -47,32 +47,33 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 568 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 567 |
 | `audited_conditional` | 184 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1440 |
+| `unaudited` | 1449 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 973 |
 | `decoration` | 25 |
-| `meta` | 208 |
+| `meta` | 217 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
 | `positive_theorem` | 746 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 612 |
+| `critical` | 620 |
 | `high` | 241 |
-| `medium` | 530 |
-| `leaf` | 919 |
+| `medium` | 532 |
+| `leaf` | 918 |
 
 - **Retained pending chain closure:** 4
-- **Citation cycles detected:** 53
+- **Citation cycles detected:** 62
 
 ### Runner classification (static heuristic)
 
@@ -87,37 +88,38 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms_2026-05-03` | meta | critical | 900 | 52.31 | `unaudited` | meta |
-| 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 853 | 49.74 | `audited_conditional` | ~~audited_conditional~~ |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 854 | 47.24 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1028 | 42.01 | `audited_clean` | **retained_bounded** |
-| 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 815 | 41.17 | `unaudited` | unaudited |
-| 6 | `minimal_axioms_2026-04-11` | meta | critical | 889 | 39.80 | `unaudited` | meta |
-| 7 | `alpha_s_derived_note` | bounded_theorem | critical | 906 | 38.33 | `unaudited` | unaudited |
-| 8 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 894 | 36.81 | `unaudited` | unaudited |
-| 9 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 815 | 36.67 | `unaudited` | unaudited |
-| 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 920 | 34.85 | `audited_clean` | **retained_bounded** |
-| 11 | `native_gauge_closure_note` | bounded_theorem | critical | 1010 | 32.98 | `audited_clean` | **retained_bounded** |
-| 12 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 815 | 32.67 | `unaudited` | unaudited |
-| 13 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 815 | 32.17 | `unaudited` | unaudited |
-| 14 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 815 | 31.67 | `unaudited` | unaudited |
-| 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 815 | 31.67 | `unaudited` | unaudited |
-| 16 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 976 | 31.43 | `audited_clean` | **retained_bounded** |
-| 17 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 821 | 31.18 | `unaudited` | unaudited |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 848 | 30.73 | `unaudited` | unaudited |
-| 19 | `plaquette_self_consistency_note` | bounded_theorem | critical | 955 | 30.40 | `unaudited` | unaudited |
-| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 905 | 28.32 | `audited_clean` | **retained_bounded** |
-| 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 873 | 28.27 | `audited_clean` | open_gate |
-| 22 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 815 | 28.17 | `unaudited` | unaudited |
-| 23 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 815 | 28.17 | `unaudited` | unaudited |
-| 24 | `cl3_sm_embedding_theorem` | positive_theorem | critical | 822 | 27.68 | `unaudited` | unaudited |
-| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 815 | 27.67 | `unaudited` | unaudited |
+| 1 | `minimal_axioms_2026-05-03` | meta | critical | 909 | 52.33 | `unaudited` | meta |
+| 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 862 | 49.75 | `audited_conditional` | ~~audited_conditional~~ |
+| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 863 | 47.26 | `unaudited` | unaudited |
+| 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1037 | 42.02 | `audited_clean` | **retained_bounded** |
+| 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 824 | 41.19 | `unaudited` | unaudited |
+| 6 | `minimal_axioms_2026-04-11` | meta | critical | 898 | 39.81 | `unaudited` | meta |
+| 7 | `alpha_s_derived_note` | bounded_theorem | critical | 915 | 38.34 | `unaudited` | unaudited |
+| 8 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 903 | 36.82 | `unaudited` | unaudited |
+| 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 824 | 36.69 | `unaudited` | unaudited |
+| 10 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 824 | 36.69 | `unaudited` | unaudited |
+| 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 929 | 34.86 | `audited_clean` | **retained_bounded** |
+| 12 | `native_gauge_closure_note` | bounded_theorem | critical | 1019 | 32.99 | `audited_clean` | **retained_bounded** |
+| 13 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 824 | 32.69 | `unaudited` | unaudited |
+| 14 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 824 | 31.69 | `unaudited` | unaudited |
+| 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 824 | 31.69 | `unaudited` | unaudited |
+| 16 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 985 | 31.45 | `audited_clean` | **retained_bounded** |
+| 17 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 830 | 31.20 | `unaudited` | unaudited |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 857 | 30.75 | `unaudited` | unaudited |
+| 19 | `plaquette_self_consistency_note` | bounded_theorem | critical | 964 | 30.41 | `unaudited` | unaudited |
+| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 914 | 28.34 | `audited_clean` | **retained_bounded** |
+| 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 882 | 28.29 | `audited_clean` | open_gate |
+| 22 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 824 | 28.19 | `unaudited` | unaudited |
+| 23 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 824 | 28.19 | `unaudited` | unaudited |
+| 24 | `cl3_sm_embedding_theorem` | positive_theorem | critical | 831 | 27.70 | `unaudited` | unaudited |
+| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 824 | 27.69 | `unaudited` | unaudited |
 
 
 ## Applied audits
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -187,7 +189,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2563,19 +2564,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** A degree-r product gamma_S satisfies gamma_S gamma_mu = (-1)^(r - 1_{mu in S}) gamma_mu gamma_S, so a monomial can anticommute with every generator only when S is the full set and n is even; hence no nonzero Clifford-algebra element has the required anticommutation property for odd n.  _(class `A`)_
 - **chain closes:** True — The Clifford-basis parity argument proves the commutation and simultaneous-anticommutation dichotomy over the stated algebraic hypotheses. The only framework input is the meta axiom A2 value d_s=3, so the specialization to d_t odd follows by parity and remains conditional on the stated Cl(d_s,d_t) setup.
 - **rationale:** The load-bearing step is ordinary Clifford-basis algebra: the volume element sign follows from moving one generator through the other n-1 generators, and the monomial parity conditions rule out any odd-n internal element that anticommutes with every generator. The runner corroborates this with explicit finite Clifford representations for n=1 through n=6 and checks only algebraic class-A statements. Residual risk is only scope creep: the audited result forces d_t odd under the stated total-Clifford setup and A2, but it does not derive d_t=1 or any anomaly/gauge/fermion-content conclusion.
-- **auditor confidence:** high
-
-### `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Pure finite-rank complexified Clifford-algebra theorem: chirality as an involutive algebra element anticommuting with every generator exists exactly for even total dimension n, implying d_t odd when d_s = 3.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-019e14ba-6968-7ca2-b609-148b1311bb41`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** An element gamma_5 in Cl_C(p,q) satisfying gamma_5^2 = +I and {gamma_5, gamma_mu} = 0 for all mu exists if and only if n = p + q is even.  _(class `A`)_
-- **chain closes:** True — The even case closes by the volume element, whose parity commutation rule gives anticommutation with all generators and whose square is a nonzero scalar removable by complex rescaling. The odd case closes because the monomial parity rule leaves no nonzero simultaneous anticommuting component, so no algebra element can satisfy C2.
-- **rationale:** The scoped claim is a self-contained algebraic identity, not a physical bridge or comparator claim. The proof supplies the general Clifford parity argument, and the runner provides exact-symbolic spot checks for CAR, the volume-element rule, even-n construction, odd-n obstruction, and the d_s = 3 parity consequence. The note explicitly excludes the parent anomaly and d_t = 1 claims, so those open parent items do not block this narrow theorem.
 - **auditor confidence:** high
 
 ### `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2`

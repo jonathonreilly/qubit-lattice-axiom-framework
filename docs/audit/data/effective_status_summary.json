@@ -2,7 +2,7 @@
   "claim_type_counts": {
     "bounded_theorem": 973,
     "decoration": 25,
-    "meta": 208,
+    "meta": 217,
     "no_go": 239,
     "open_gate": 111,
     "positive_theorem": 746
@@ -51,30 +51,15 @@
       "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     ],
     [
-      "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
-      "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-      "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "lorentz_kernel_positive_closure_note",
-      "emergent_lorentz_invariance_note",
-      "planck_scale_lane_status_note_2026-04-23",
-      "planck_scale_conditional_completion_note_2026-04-24",
-      "planck_orientation_principle_bounded_note_2026-05-10_planckp3"
+      "s3_anomaly_spacetime_lift_note",
+      "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17"
     ],
     [
-      "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
-      "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-      "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "lorentz_kernel_positive_closure_note",
-      "emergent_lorentz_invariance_note",
-      "planck_scale_lane_status_note_2026-04-23",
-      "planck_scale_conditional_completion_note_2026-04-24",
-      "planck_from_structure_path_opening_meta_note_2026-05-10",
-      "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09",
-      "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
-      "c3_symmetry_preserved_interpretation_note_2026-05-08"
+      "s3_time_spacetime_tensor_primitive_note",
+      "s3_time_spacetime_tensor_primitive_downstream_fix_note_2026-05-17"
     ]
   ],
-  "cycles_detected": 53,
+  "cycles_detected": 62,
   "effective_status_counts": {
     "audited_conditional": 184,
     "audited_failed": 23,
@@ -95,7 +80,7 @@
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 204,
+    "meta": 213,
     "open_gate": 16,
     "retained": 113,
     "retained_bounded": 343,

@@ -23,13 +23,16 @@ data and the dependency chain; no author-side tier is asserted in source.
 
 ## 1. Statement
 
-On the retained one-generation matter surface including `nu_R`, write all
+On the cited one-generation matter surface including `nu_R` (companion
+`unaudited` per the 2026-05-17 ledger; see §10 below), write all
 fermions as left-handed Weyl fields. Right-handed species are represented by
 their charge-conjugate left-handed fields, so their abelian charges are
 sign-flipped.
 
-Using the doubled-hypercharge convention of the retained notes
-`Q = T3 + Y/2`, the left-handed-frame content is:
+Using the doubled-hypercharge convention of the cited notes
+`Q = T3 + Y/2` (hypercharge uniqueness companion `unaudited`;
+HYPERCHARGE_IDENTIFICATION `audited_conditional`), the left-handed-frame
+content is:
 
 | Field | `SU(3)` | `SU(2)` | multiplicity | `Y` | `B-L` |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -40,7 +43,7 @@ Using the doubled-hypercharge convention of the retained notes
 | `e_R^c` | `1` | `1` | `1` | `2` | `1` |
 | `nu_R^c` | `1` | `1` | `1` | `0` | `1` |
 
-Then the complete anomaly set for gauging `U(1)_{B-L}` on the retained
+Then the complete anomaly set for gauging `U(1)_{B-L}` on the cited
 `SU(3) x SU(2) x U(1)_Y` matter content vanishes exactly:
 
 ```text
@@ -140,11 +143,12 @@ Again `nu_R^c` is inert here because `Y(nu_R^c)=0`.
 
 ## 4. Consequences
 
-- `U(1)_{B-L}` is anomaly-consistent and gaugeable on the retained
-  one-generation content without adding fermions.
-- This does not mean the retained framework gauges `B-L`; it only says the
-  extension is quantum-consistent on the retained matter spectrum.
-- The retained `nu_R` slot has two independent structural witnesses:
+- `U(1)_{B-L}` is anomaly-consistent and gaugeable on the cited
+  one-generation content without adding fermions (tier inherited from
+  the cited companion; see §10 below).
+- This does not mean the framework gauges `B-L`; it only says the
+  extension is quantum-consistent on the cited matter spectrum.
+- The cited `nu_R` slot has two independent structural witnesses:
   the neutral-singlet slot in the hypercharge uniqueness theorem and the
   load-bearing `B-L` contribution to (G1) and (G2).
 - The proton-lifetime companion may cite B-L anomaly freedom through the new
@@ -155,12 +159,12 @@ Again `nu_R^c` is inert here because `Y(nu_R^c)=0`.
 This theorem claims:
 
 - exact cancellation of (G1)-(G6) using rational arithmetic;
-- gaugeability of `U(1)_{B-L}` on the retained content;
+- gaugeability of `U(1)_{B-L}` on the cited content;
 - `nu_R` load-bearing status for the linear and cubic B-L traces.
 
 This theorem does not claim:
 
-- that `U(1)_{B-L}` is part of the retained gauge group;
+- that `U(1)_{B-L}` is part of the cited gauge group;
 - a `Z'_{B-L}` mass, coupling, kinetic-mixing law, or breaking scale;
 - a Majorana mass or Majorana phase for `nu_R`;
 - a derivation of baryon number, lepton number, or `B-L` from the minimal
@@ -179,7 +183,7 @@ p -> e+ pi0:  initial B-L = 1, final B-L = 1, so Delta(B-L)=0.
 p -> e- pi+:  initial B-L = 1, final B-L = -1, so Delta(B-L)=-2.
 ```
 
-Thus B-L-preserving proton-decay channels are compatible with the retained
+Thus B-L-preserving proton-decay channels are compatible with the cited
 companion story, while B-L-violating channels would falsify any promoted
 gauged-B-L or exact-B-L-conservation extension. They would not falsify the
 mathematical anomaly-cancellation identity by themselves.
@@ -236,3 +240,69 @@ arithmetic plus the admitted quantum-consistency principle.
 - [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
 - `PROTON_LIFETIME_DERIVED_NOTE.md`
+
+## 10. Upstream-tier accounting (2026-05-17)
+
+Per the 2026-05-17 ledger snapshot, the three load-bearing upstreams
+named in §2 sit at the following tiers:
+
+| Upstream | `claim_type` | `audit_status` | `effective_status` |
+|---|---|---|---|
+| `one_generation_matter_closure_note` | `bounded_theorem` | `unaudited` | `unaudited` |
+| `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | `positive_theorem` | `unaudited` | `unaudited` |
+| `anomaly_forces_time_theorem` | `bounded_theorem` | `unaudited` | `unaudited` |
+
+(Standard SM `B`/`L` bookkeeping is admitted-context, not a tiered
+ledger row.)
+
+**Tier accounting:** the gaugeability conclusion is conditioned on
+**all three** cited upstreams. Earlier wording in §1-§5 ("retained
+one-generation matter surface", "retained one-generation content",
+"retained matter spectrum", "retained `nu_R` slot", "retained gauge
+group", "retained companion story") **overstated** the upstream tier and
+has been corrected inline to "cited …". The exact rational arithmetic of
+(G1)-(G6) is unchanged and does not require any retained-tier upstream
+to be valid; only the *gaugeability conclusion* sentence inherits its
+effective tier from the weakest upstream.
+
+**Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** this note
+imports only the **principle** "gauge-anomaly traces must vanish for
+the gauged group" from the upstream parent. It does **not** import the
+parent's `d_t = 1` conclusion, the `(3, 1)` signature conclusion, or
+admissions (i)-(iv) as load-bearing inputs to (G1)-(G6). The principle
+itself is standard QFT input (admitted-context per §8 item 3). The
+upstream parent's recent
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)
+therefore does not propagate into this note's arithmetic — only its
+overall effective tier (which is bounded above by the weakest upstream
+tier, currently `unaudited`).
+
+## 11. Fix record (2026-05-17, downstream surgical-fix wave)
+
+One hostile-audit-grade fix applied to this note:
+
+- **F-A (tier over-claim "retained"):** ~8 sites in §1-§5 described the
+  cited one-generation content / hypercharge convention / gauge group /
+  companion as "retained". Per the 2026-05-17 ledger, all three named
+  upstreams (ONE_GENERATION_MATTER_CLOSURE, SM HYPERCHARGE_UNIQUENESS,
+  ANOMALY_FORCES_TIME) are `unaudited`. Corrected inline to "cited …";
+  new §10 "Upstream-tier accounting (2026-05-17)" provides the full
+  tier table and explicitly states the effective tier inherits from the
+  weakest upstream. The exact rational arithmetic of (G1)-(G6) is
+  unchanged.
+
+The admission-inheritance from the upstream parent is **less stringent
+here than in sibling downstreams** because this note imports only the
+anomaly-cancellation-as-quantum-consistency *principle* from
+ANOMALY_FORCES_TIME, not the `d_t = 1` conclusion. Recorded in §10 for
+completeness.
+
+See companion fix-record:
+[`BMINUSL_ANOMALY_FREEDOM_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](BMINUSL_ANOMALY_FREEDOM_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+
+Paired verifier:
+`scripts/frontier_bminusl_anomaly_freedom_downstream_fix.py`.
+
+None of these edits change the (G1)-(G6) anomaly arithmetic, the
+matter-content table, the runner expectation (`PASS=36, FAIL=0`), or
+the §5/§8 scope boundary lists.

@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_anomaly_spacetime_lift_downstream_fix.py
+runner_sha256: 5aff31409f8bd3079f154a884cd0fd541c86df7f20b30f7ff13fd39786dbde64
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — s3_anomaly_spacetime_lift_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md)
+  [PASS] [A] Fix record exists  (path = docs/S3_ANOMALY_SPACETIME_LIFT_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+  [INFO] Upstream F-B note on disk: True (forward link; not a precondition)
+
+PART F-A — boundary-link tier-citation correction:
+  [PASS] [A] Corrected boundary-link tier (audited_clean) appears  (looking for `audit_status: audited_clean` in cited-authorities block)
+  [PASS] [A] Corrected boundary-link effective tier (retained_bounded) appears
+  [PASS] [A] Corrected boundary-link claim_type (bounded_theorem) appears  (looking for the parenthesized claim_type just after the link)
+  [PASS] [A] Stale boundary-link bigram retired (positive_theorem + audited_conditional adjacent)
+
+PART F-B — `exact and reusable` retraction:
+  [PASS] [A] Stale bullet '`S^3` is exact and reusable' is gone
+  [PASS] [A] Stale bullet 'anomaly-forced time is exact and reusable' is gone
+  [PASS] [A] Tier-accurate replacement bullet for S^3 present
+  [PASS] [A] Tier-accurate replacement bullet for anomaly-forced time present
+  [PASS] [A] Retraction sentence present in Route-2-in-context block
+
+PART F-C — admission-inheritance disclosure:
+  [PASS] [A] Admission-inheritance subsection header present
+  [PASS] [A] Admissions (ii), (iii), (iv) named as routed-to-companion-notes
+  [PASS] [A] Admission (i) named as bare external ABJ admission
+  [PASS] [A] Upstream F-B framing-fix note linked
+  [PASS] [A] Derived part of d_t=1 (odd positives) is explicit
+  [PASS] [A] Inherited part of d_t=1 (admission iv excludes > 1) is explicit
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] open_gate claim type still declared
+  [PASS] [A] Route-2 verdict 'Kinematically clean, dynamically unclosed' present
+  [PASS] [A] ANOMALY_FORCES_TIME_THEOREM still cited
+  [PASS] [A] S3_BOUNDARY_LINK_THEOREM_NOTE still cited
+  [PASS] [A] S3_CAP_UNIQUENESS_NOTE still cited
+  [PASS] [A] No retained-tier promotion implied (no 'retained_clean' claim in this note)
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired runner referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-A — Stale tier citation'
+  [PASS] [A] Fix record mentions: 'F-B — Over-claim'
+  [PASS] [A] Fix record mentions: 'F-C — Missing admission-inheritance'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'open_gate retained as route-survey'
+
+==============================================================================
+SUMMARY: 32 PASS / 0 FAIL  (Class-A: 32)
+==============================================================================
+
+----- stderr -----
+

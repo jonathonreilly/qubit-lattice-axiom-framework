@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 324 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 164 |
+| ~~audited_conditional~~ | 165 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 542 |
-| `audited_conditional` | 164 |
+| `audited_conditional` | 165 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1424 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -687,6 +687,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `dense_prune_guard_seed_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2686,6 +2687,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the frozen 3D 1/L^2 lattice replay, the decoherence observables are exactly identical for the valley-linear and spent-delay actions at h in {1.0, 0.5, 0.25}.  _(class `C`)_
 - **chain closes:** False — The primary runner has completed stdout and computes observables by calling the imported lattice propagation harness, but the restricted packet does not include the imported Lattice3D.propagate implementation or the action-law definitions needed to verify that the two requested action modes are genuinely implemented and differ only by phase at zero field.
 - **rationale:** The runner output supports exact numerical identity across the tested h values, and the visible source performs a substantive replay rather than merely printing constants. However, the load-bearing computation depends on scripts.valley_linear_same_harness_compare for the lattice, propagation routine, constants, slit setup, and action-mode semantics. Because that helper source is not included in the restricted packet, the audit cannot verify the zero-field action reduction or that the compared modes are independently implemented.
+- **auditor confidence:** high
+
+### `dense_prune_guard_seed_note`
+
+- **Note:** [`DENSE_PRUNE_GUARD_SEED_NOTE.md`](../../docs/DENSE_PRUNE_GUARD_SEED_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the restricted-packet support for the claim that channel-count guarded pruning is a seed-selective channel-preservation mechanism for the listed dense-prune flip seeds.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-132426-20260517T132426Z-8567c6a8-dense_prune_guard_seed_n-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The guard fixes specific seeds when it preserves the effective detector-channel count and leaves other seeds vulnerable when eff_ch still drops.  _(class `C`)_
+- **chain closes:** False — The primary runner appears to compute the relevant channel-count, gravity-shift, decoherence, and flip metrics, but its load-bearing imports are opaque because the named helper runner sources were not actually included. The provided stdout also reports aggregate sweep rows rather than the note's exact per-seed table.
+- **rationale:** The primary runner source contains a real computational path rather than a trivial printout or hard-coded expected table, so the intended load-bearing step is class C. However, the restricted packet is incomplete: the helper runner source block contains only the literal placeholder {{HELPER_RUNNER_SOURCES}} while the note names required helper paths including scripts/causal_field_mass_scaling.py, scripts/dense_prune_q003_joint_strict.py, scripts/three_d_joint_test.py, and scripts/three_d_modular_gravity_mass_scaling.py. Without those helper sources, the imported graph generation, pruning, propagation, field, and purity routines cannot be audited, and the exact per-seed table is not reproduced in the provided stdout.
 - **auditor confidence:** high
 
 ### `diamond_signal_budget_hardening_note`

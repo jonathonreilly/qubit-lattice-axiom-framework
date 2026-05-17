@@ -525,6 +525,9 @@ def main() -> int:
         "pr230_block115_wz_strict_artifact_resolver": load(
             "outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json"
         ),
+        "pr230_block116_neutral_h3h4_strict_artifact_resolver": load(
+            "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2943,6 +2946,43 @@ def main() -> int:
         "pr230-block115-wz-strict-artifact-resolver-blocks",
         block115_wz_strict_artifact_resolver_blocks,
         statuses["pr230_block115_wz_strict_artifact_resolver"],
+    )
+    block116_neutral_h3h4_strict_artifact_resolver_blocks = (
+        "Block116 current PR230 head contains no strict neutral H3/H4 artifact"
+        in str(statuses["pr230_block116_neutral_h3h4_strict_artifact_resolver"])
+        and certificates["pr230_block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "block116_neutral_h3h4_strict_artifact_resolver_passed"
+        )
+        is True
+        and certificates["pr230_block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "h1_h2_support_only"
+        )
+        is True
+        and certificates["pr230_block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "h3_physical_transfer_absent"
+        )
+        is True
+        and certificates["pr230_block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "h4_source_canonical_coupling_absent"
+        )
+        is True
+        and certificates["pr230_block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "neutral_shortcuts_blocked"
+        )
+        is True
+        and certificates["pr230_block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "scan_finds_no_strict_neutral_artifact"
+        )
+        is True
+    )
+    report(
+        "pr230-block116-neutral-h3h4-strict-artifact-resolver-blocks",
+        block116_neutral_h3h4_strict_artifact_resolver_blocks,
+        statuses["pr230_block116_neutral_h3h4_strict_artifact_resolver"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8713,6 +8753,9 @@ def main() -> int:
     )
     result["block115_wz_strict_artifact_resolver_blocks"] = (
         block115_wz_strict_artifact_resolver_blocks
+    )
+    result["block116_neutral_h3h4_strict_artifact_resolver_blocks"] = (
+        block116_neutral_h3h4_strict_artifact_resolver_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

@@ -1,11 +1,52 @@
 # Handoff
 
-Checkpoint: 2026-05-17 Block115
+Checkpoint: 2026-05-17 Block116
 
 Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
+
+## Block116 Neutral H3/H4 Strict Artifact Resolver
+
+Block116 resolves the neutral-sector H3/H4 artifact contract against the
+current PR230 head after the source-Higgs and W/Z strict artifact resolvers.
+It checks for same-surface physical neutral transfer, an off-diagonal
+generator, primitive-cone or irreducibility authority, rank-one purity
+authority, and H4 source/canonical-Higgs coupling authority.  The resolver
+finds H1/H2 support only, H3 physical transfer absent, H4 coupling absent,
+neutral shortcuts blocked, and zero strict neutral certificate hits.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block116_neutral_h3h4_strict_artifact_resolver.py`
+- `outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json`
+- `docs/YT_PR230_BLOCK116_NEUTRAL_H3H4_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block116 neutral H3/H4 strict artifact resolver PASS=11 FAIL=0
+campaign status PASS=436 FAIL=0
+assumption/import stress PASS=119 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors; 5 known warnings
+audit pipeline complete; generated docs/audit churn restored
+git diff --check OK
+```
+
+Honest status: exact negative boundary.  No retained or `proposed_retained`
+closure is authorized.
+
+Exact next action: create a strict neutral H3/H4 artifact with same-surface
+physical neutral transfer/off-diagonal generator or primitive-cone/
+irreducibility certificate plus source/canonical-Higgs coupling authority; or
+pivot to strict Schur/scalar-LSZ pole authority or a fresh source-Higgs/W/Z
+strict packet.
 
 ## Block115 W/Z Strict Physical-Response Artifact Resolver
 

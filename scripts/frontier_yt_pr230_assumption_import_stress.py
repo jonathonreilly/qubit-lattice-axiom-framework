@@ -365,6 +365,9 @@ def main() -> int:
         "block115_wz_strict_artifact_resolver": load(
             "outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json"
         ),
+        "block116_neutral_h3h4_strict_artifact_resolver": load(
+            "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2334,6 +2337,55 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block116_neutral_h3h4_keeps_imports_clean = (
+        "Block116 current PR230 head contains no strict neutral H3/H4 artifact"
+        in str(
+            certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "block116_neutral_h3h4_strict_artifact_resolver_passed"
+        )
+        is True
+        and certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "h1_h2_support_only"
+        )
+        is True
+        and certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "h3_physical_transfer_absent"
+        )
+        is True
+        and certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "h4_source_canonical_coupling_absent"
+        )
+        is True
+        and certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "neutral_shortcuts_blocked"
+        )
+        is True
+        and certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "scan_finds_no_strict_neutral_artifact"
+        )
+        is True
+        and all(
+            value is False
+            for value in certificates["block116_neutral_h3h4_strict_artifact_resolver"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block116-neutral-h3h4-keeps-imports-clean",
+        block116_neutral_h3h4_keeps_imports_clean,
+        certificates["block116_neutral_h3h4_strict_artifact_resolver"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2668,6 +2720,7 @@ def main() -> int:
         "block113_schur_abc_keeps_imports_clean": block113_schur_abc_keeps_imports_clean,
         "block114_source_higgs_keeps_imports_clean": block114_source_higgs_keeps_imports_clean,
         "block115_wz_keeps_imports_clean": block115_wz_keeps_imports_clean,
+        "block116_neutral_h3h4_keeps_imports_clean": block116_neutral_h3h4_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

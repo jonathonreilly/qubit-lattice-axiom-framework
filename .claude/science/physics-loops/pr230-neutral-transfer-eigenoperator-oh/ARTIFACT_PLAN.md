@@ -1,5 +1,26 @@
 # Artifact Plan
 
+Block116 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block116_neutral_h3h4_strict_artifact_resolver.py` | Created; PASS=11 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json` | Created |
+| Boundary note | `docs/YT_PR230_BLOCK116_NEUTRAL_H3H4_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block116:
+
+```text
+outputs/yt_pr230_neutral_h3h4_certificate_2026-05-17.json
+```
+
+or `outputs/yt_pr230_physical_neutral_transfer_certificate_2026-05-17.json`
+with same-surface H3 physical neutral transfer/off-diagonal generator or
+primitive-cone/irreducibility authority, plus H4 source/canonical-Higgs
+coupling authority. H1/H2 support, heat-kernel support, commutant rank,
+finite `C_sx/C_xx` rows, and source-only aliases are not closure artifacts.
+
 Block115 artifacts:
 
 | Artifact | Path | Status |

@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block115_wz_strict_artifact_resolver`.
+Current block: `block116_neutral_h3h4_strict_artifact_resolver`.
 
 ```yaml
-actual_current_surface_status: exact negative boundary / Block115 current PR230 head contains no strict W/Z physical-response packet with accepted action, production rows, matched top-W covariance, strict g2 authority, delta_perp, and final W-response rows
-conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
+actual_current_surface_status: exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent
+conditional_surface_status: neutral support if a future same-surface artifact supplies H3 physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility authority plus H4 source/canonical-Higgs coupling authority; source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block115 finds no accepted same-source action, production W/Z rows, same-source top rows, matched top-W covariance, strict g2/absolute authority, delta_perp certificate, or final W-response rows on the current PR230 head. Scout, smoke, schema, and support-contract rows are not closure evidence."
+proposal_allowed_reason: "Block116 finds H1/H2 support only and no H3 physical transfer/off-diagonal primitive authority, primitive-cone or irreducibility certificate, rank-one purity certificate, or H4 source/canonical-Higgs coupling authority on the current PR230 head."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,15 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block116 resolves the neutral H3/H4 artifact family against the current
+   PR230 head.  It finds H1/H2 Z3 support present but support-only, H3 physical
+   neutral transfer/off-diagonal generator absent, primitive-cone,
+   irreducibility, and rank-one purity certificates absent, H4
+   source/canonical-Higgs coupling authority absent, and zero strict neutral
+   certificate hits across the neutral-adjacent output scan.  Heat-kernel,
+   commutant-rank, dynamical-rank-one, orthogonal-decoupling, Burnside, and
+   finite `C_sx/C_xx` shortcuts remain blocked.  Aggregate gates deny proposal
+   wording.
 0. Block115 resolves the W/Z physical-response artifact family against the
    current PR230 head.  It finds all expected strict W/Z paths absent: accepted
    same-source action, W/Z production response rows, same-source top response,

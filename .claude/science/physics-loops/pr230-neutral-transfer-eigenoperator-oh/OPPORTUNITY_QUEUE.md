@@ -1,8 +1,8 @@
 # Opportunity Queue
 
-Campaign mode queue after block115 W/Z strict artifact resolver, block114
-source-Higgs strict artifact resolver, block113 Schur A/B/C complete-packet
-refresh, block112 Helmholtz
+Campaign mode queue after block116 neutral H3/H4 strict artifact resolver,
+block115 W/Z strict artifact resolver, block114 source-Higgs strict artifact
+resolver, block113 Schur A/B/C complete-packet refresh, block112 Helmholtz
 action-integrability obstruction, block111 Schur K-prime packet gap audit,
 block110 Cl(3)/Z3 action-descent obstruction, block109
 closure-root selector, block108 all-ref rescan, block104 Z3 heat-kernel
@@ -131,6 +131,15 @@ and support-contract rows are not production evidence. The W/Z route remains
 viable only after a new strict same-surface packet appears; otherwise the next
 admissible pivots are strict Schur/scalar-LSZ pole authority or neutral H3/H4
 physical-transfer/source-coupling authority.
+
+Block116 resolves the neutral H3/H4 strict artifact contract against the
+current PR230 head. H1/H2 support is present but support-only; H3 physical
+neutral transfer/off-diagonal primitive authority, primitive-cone or
+irreducibility certificate, rank-one purity authority, H4
+source/canonical-Higgs coupling authority, and strict neutral certificate hits
+are absent. The neutral route remains viable only after a fresh same-surface
+H3/H4 artifact appears; otherwise the next admissible pivots are strict
+Schur/scalar-LSZ pole authority or a fresh source-Higgs/W/Z strict packet.
 
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but

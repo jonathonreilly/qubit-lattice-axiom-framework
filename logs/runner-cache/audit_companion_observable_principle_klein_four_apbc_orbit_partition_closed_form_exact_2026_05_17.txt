@@ -1,0 +1,81 @@
+==============================================================================
+Klein-four APBC orbit partition closed-form narrow theorem — runner
+Source: docs/OBSERVABLE_PRINCIPLE_KLEIN_FOUR_APBC_ORBIT_PARTITION_CLOSED_FORM_NARROW_THEOREM_NOTE_2026-05-17.md
+==============================================================================
+
+==============================================================================
+T1: Klein-four group composition table on K_4 = {1, sigma_-, sigma_*, sigma_-*}
+==============================================================================
+  [PASS] all 16 Klein-four composition entries match on three test ratios  (mismatches = 0)
+
+==============================================================================
+T2: Lemma 1.4 — sin^2(arg z) is a complete Klein-four invariant on S^1
+==============================================================================
+  [PASS] sin^2(arg z) is invariant under all four Klein-four images of omega (symbolic)  (non-invariant cases = 0)
+  [PASS] K_4 orbit values of sin^2 are all equal at the non-degenerate test point omega = pi/7  (exact SymPy)
+  [PASS] off-orbit point omega = 2 pi/7 has DIFFERENT sin^2 from in-orbit pi/7  (diff = -sin(2*pi/7)**2 + sin(pi/7)**2)
+
+==============================================================================
+T3: K_4 preserves Phi(L_t) for even L_t in [2, 64]
+==============================================================================
+  [PASS] K_4 preserves Phi(L_t) for all 32 even L_t in [2, 64]  (all pass)
+
+==============================================================================
+T4: Closed-form orbit count ceil(L_t/4) vs direct enumeration, even L_t in [2, 64]
+==============================================================================
+  L_t= 2: orbits= 1, predicted ceil(L_t/4)= 1, orbit sizes=[2]
+  L_t= 4: orbits= 1, predicted ceil(L_t/4)= 1, orbit sizes=[4]
+  L_t= 6: orbits= 2, predicted ceil(L_t/4)= 2, orbit sizes=[2, 4]
+  L_t= 8: orbits= 2, predicted ceil(L_t/4)= 2, orbit sizes=[4, 4]
+  L_t=10: orbits= 3, predicted ceil(L_t/4)= 3, orbit sizes=[2, 4, 4]
+  L_t=12: orbits= 3, predicted ceil(L_t/4)= 3, orbit sizes=[4, 4, 4]
+  L_t=14: orbits= 4, predicted ceil(L_t/4)= 4, orbit sizes=[2, 4, 4, 4]
+  L_t=16: orbits= 4, predicted ceil(L_t/4)= 4, orbit sizes=[4, 4, 4, 4]
+  [PASS] closed-form ceil(L_t/4) matches direct enumeration for all 32 even L_t in [2, 64]  (all match)
+
+==============================================================================
+T5: Trigonometric collapse identities (symbolic SymPy)
+==============================================================================
+  [PASS] sin^2(theta + pi) - sin^2(theta) simplifies to 0 (period-pi collapse)  (residual = 0)
+  [PASS] sin^2(pi - theta) - sin^2(theta) simplifies to 0 (reflection collapse)  (residual = 0)
+
+==============================================================================
+T6: §3.3 no-further-collapse: sin^2 equality forces n = n' or n' = m-1-n
+==============================================================================
+  [PASS] every sin^2 level collapse is either trivial (fixed) or iota-paired; no extra  (all clean)
+
+==============================================================================
+T7: Corollary 2.1.1 — single-orbit L_t ∈ {2, 4} across even L_t in [2, 200]
+==============================================================================
+  [PASS] the only even L_t in [2, 200] with a single K_4 orbit are L_t = 2 and L_t = 4  (found single-orbit L_t = [2, 4])
+
+==============================================================================
+T8: Corollary 2.1.2 — orbit sizes at L_t ∈ {2, 4}
+==============================================================================
+  [PASS] L_t = 2 has a single orbit of size 2  (sizes = [2])
+  [PASS] L_t = 2 orbit has uniform sin^2 = 1 (exact SymPy)  (sin^2 values = {1})
+  [PASS] L_t = 4 has a single orbit of size 4  (sizes = [4])
+  [PASS] L_t = 4 orbit has uniform sin^2 = 1/2 (exact SymPy)  (sin^2 values = {1/2})
+
+==============================================================================
+T9: Corollary 2.1.3 — L_t = 4 is unique with single orbit of size > 2 in [2, 200]
+==============================================================================
+  [PASS] L_t = 4 is the unique even L_t in [2, 200] with a single resolved orbit (size > 2)  (resolved single-orbit L_t = [4])
+
+==============================================================================
+T10: Observation 4.1 — Phi_8(x) = x^4 + 1, sin^2(arg root) = 1/2 uniform
+==============================================================================
+  [PASS] x^4 + 1 has exactly 4 complex roots  (|roots| = 4)
+  [PASS] all four roots of x^4 + 1 lie on the unit circle  (|root| = 1 exact)
+  [PASS] all four roots of Phi_8 satisfy sin^2(arg) = 1/2 (exact SymPy)  (sin^2 values = {1/2})
+  [PASS] roots of x^4 + 1 coincide with Phi(4) APBC phase set (canonical (re, im) form)  (matched 4 of 4)
+
+==============================================================================
+T11: Source-note boundary check (claim type, status authority, no overclaim)
+==============================================================================
+  [PASS] all required source-note boundary strings are present  (all present)
+  [PASS] no forbidden declarative overclaim phrases present in the source note  (none)
+
+==============================================================================
+THEOREM PASS=21 FAIL=0
+==============================================================================

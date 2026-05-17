@@ -1509,6 +1509,58 @@
       "to": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
     },
     {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16"
+    },
+    {
+      "from": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "to": "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent",
       "to": "minimal_axioms_2026-05-03"
     },
@@ -1615,6 +1667,62 @@
     {
       "from": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "to": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "koide_berry_phase_theorem_note_2026-04-19"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16"
+    },
+    {
+      "from": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "to": "koide_q_so2_phase_erasure_support_note_2026-04-25"
     },
     {
       "from": "baryon_charge_integrality_note_2026-05-02",
@@ -10005,6 +10113,38 @@
       "to": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
     },
     {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
+    },
+    {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "exact_tier_path_integral_bounded_note_2026-05-07_exact"
+    },
+    {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "c_iso_derived_theorem_note_2026-05-07_w3"
+    },
+    {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "c_iso_su3_nlo_closure_bounded_note_2026-05-08_su3nlo"
+    },
+    {
+      "from": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
       "from": "g_bare_derivation_note",
       "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
@@ -10086,6 +10226,34 @@
     },
     {
       "from": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_derivation_note"
+    },
+    {
+      "from": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+    },
+    {
+      "from": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_constraint_vs_convention_restatement_note_2026-05-07"
+    },
+    {
+      "from": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
+    },
+    {
+      "from": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
       "to": "g_bare_derivation_note"
     },
     {
@@ -39609,6 +39777,32 @@
       "runner_path": "scripts/audit_companion_bae_block_total_frobenius_derivation_narrow.py",
       "title": "BAE Block-Total-Frobenius Derivation Narrow Theorem"
     },
+    "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17": {
+      "claim_id": "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (consolidated bounded obstruction; no positive",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18",
+        "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12",
+        "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent",
+        "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13",
+        "koide_bae_probe_cl3_bivector_bounded_obstruction_note_2026-05-17_probecl3bivector",
+        "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
+        "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09",
+        "koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16",
+        "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "1f5c71803c0a20343350499fd5c64b0f9477c1cac1055440e57e3a9f885853b4",
+      "path": "docs/BAE_F1_F3_CANONICAL_SELECTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py",
+      "title": "BAE F1-vs-F3 Canonical Selection Bounded Obstruction"
+    },
     "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent": {
       "claim_id": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent",
       "claim_type_author_hint": "bounded_theorem",
@@ -39661,6 +39855,33 @@
       "path": "docs/BAE_NCG_KODIM_REAL_STRUCTURE_PARTIAL_NARROWING_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py",
       "title": "BAE NCG / KO-Dim Real-Structure Partial Narrowing Note"
+    },
+    "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17": {
+      "claim_id": "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem (stretch attempt; partial narrowing of a named",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+        "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+        "ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "anomaly_forces_time_theorem",
+        "koide_berry_phase_theorem_note_2026-04-19",
+        "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
+        "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09",
+        "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13",
+        "koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16",
+        "koide_q_so2_phase_erasure_support_note_2026-04-25"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "856dfed3b13e434d8701cfe177226c55210da1c0d1b68be6db32bdf32ad39caa",
+      "path": "docs/BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py",
+      "title": "BAE U(1)_b Canonical Phase \u2014 Stretch Attempt with Named Load-Bearing Wall"
     },
     "baryon_charge_integrality_note_2026-05-02": {
       "claim_id": "baryon_charge_integrality_note_2026-05-02",
@@ -48853,6 +49074,27 @@
       "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
       "title": "g_2(v) Bounded Interval Narrow Theorem (Given u_0 Literature Import)"
     },
+    "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17": {
+      "claim_id": "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17",
+        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+        "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
+        "graph_first_su3_integration_note",
+        "exact_tier_path_integral_bounded_note_2026-05-07_exact",
+        "c_iso_derived_theorem_note_2026-05-07_w3",
+        "c_iso_su3_nlo_closure_bounded_note_2026-05-08_su3nlo",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9bc83af99ad54eb3651ba9f2ef169ce1f1873d3017998dda00b869e55accd1bb",
+      "path": "docs/G_BARE_C_ISO_CONVENTION_ORBIT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.py",
+      "title": "g_bare C-iso Convention-Orbit Invariance Narrow Theorem"
+    },
     "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": {
       "claim_id": "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
       "claim_type_author_hint": "bounded_theorem",
@@ -49033,6 +49275,26 @@
       "path": "docs/G_BARE_L3A_TRACE_SURFACE_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17.py",
       "title": "g_bare L3a Trace-Surface Invariance Narrow Theorem"
+    },
+    "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17": {
+      "claim_id": "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "g_bare_l3a_trace_surface_invariance_narrow_theorem_note_2026-05-17",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
+        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+        "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+        "cl3_color_automorphism_theorem",
+        "g_bare_derivation_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4f863a57e3ca41f68a10665281f1865667c411629714e00d591f514762c729ab",
+      "path": "docs/G_BARE_L3B_OVERALL_SCALAR_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17.py",
+      "title": "g_bare L3b Overall Scalar Invariance Narrow Theorem"
     },
     "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": {
       "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
@@ -69437,7 +69699,7 @@
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf7231bd73089d38ebc913f3c6fe75693423ca27739061a2db08eb27c474ef68",
+      "note_hash": "0085d52de5d27f2b776e6781c654c75797d451c35f766a925bf0ed9bf0d4c8e2",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
       "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem"
@@ -76901,27 +77163,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 411,
+      "bounded_theorem": 414,
       "decoration": 1,
       "meta": 157,
       "no_go": 55,
       "none": 1528,
       "open_gate": 44,
-      "positive_theorem": 154
+      "positive_theorem": 155
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 858,
+      "bounded_theorem": 861,
       "decoration": 1,
       "meta": 157,
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 607
+      "positive_theorem": 608
     },
-    "edge_count": 9132,
-    "leaf_count": 718,
-    "node_count": 2350,
+    "edge_count": 9174,
+    "leaf_count": 713,
+    "node_count": 2354,
     "root_count": 844,
-    "runners_with_path": 1961
+    "runners_with_path": 1965
   }
 }

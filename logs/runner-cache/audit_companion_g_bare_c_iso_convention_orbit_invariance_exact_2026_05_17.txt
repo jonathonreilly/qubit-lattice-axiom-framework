@@ -1,0 +1,262 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.py
+runner_sha256: 27cd9298a13929f18a66afbc5d197c15864b8b770d0281756d0d0fb670dfa7d0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+G_BARE_C_ISO_CONVENTION_ORBIT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification that the W-substitution closure for g_bare = 1
+      is invariant along the C-iso convention orbit a_tau != a_s,
+      parameterized by xi = a_s/a_tau via the canonical LO Trotter dictionary.
+Inputs (cited):
+  (W-sub) g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17  bounded
+  (T-AT)  exact_tier_path_integral_bounded_note_2026-05-07_exact             bounded
+  (W3)    c_iso_derived_theorem_note_2026-05-07_w3                            open_gate
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  [PASS (A)] symbolic g_bare > 0  (assumptions={'commutative': True, 'complex': True, 'extended_negative': False, 'extended_nonnegative': True, 'extended_nonpositive': False, 'extended_nonzero': True, 'extended_positive': True, 'extended_real': True, 'finite': True, 'hermitian': True, 'imaginary': False, 'infinite': False, 'negative': False, 'nonnegative': True, 'nonpositive': False, 'nonzero': True, 'positive': True, 'real': True, 'zero': False})
+  [PASS (A)] symbolic xi > 0  (assumptions={'commutative': True, 'complex': True, 'extended_negative': False, 'extended_nonnegative': True, 'extended_nonpositive': False, 'extended_nonzero': True, 'extended_positive': True, 'extended_real': True, 'finite': True, 'hermitian': True, 'imaginary': False, 'infinite': False, 'negative': False, 'nonnegative': True, 'nonpositive': False, 'nonzero': True, 'positive': True, 'real': True, 'zero': False})
+  [PASS (A)] symbolic N_c positive integer  (assumptions={'algebraic': True, 'commutative': True, 'complex': True, 'extended_negative': False, 'extended_nonnegative': True, 'extended_nonpositive': False, 'extended_nonzero': True, 'extended_positive': True, 'extended_real': True, 'finite': True, 'hermitian': True, 'imaginary': False, 'infinite': False, 'integer': True, 'irrational': False, 'negative': False, 'noninteger': False, 'nonnegative': True, 'nonpositive': False, 'nonzero': True, 'positive': True, 'rational': True, 'real': True, 'transcendental': False, 'zero': False})
+
+----------------------------------------------------------------------------------------
+Part 1: anisotropic LO Trotter dictionary (T-AT)
+----------------------------------------------------------------------------------------
+  beta_sigma(g, xi) = 2*N_c/(g_bare**2*xi)
+  beta_tau(g, xi)   = 2*N_c*xi/g_bare**2
+  beta_iso(g)       = 2*N_c/g_bare**2
+  [PASS (A)] (T2) beta_sigma * beta_tau = (2 N_c / g^2)^2 (geometric-mean invariant)  (prod = 4*N_c**2/g_bare**4)
+  [PASS (A)] (T2) sqrt(beta_sigma * beta_tau) = 2 N_c / g^2 (no xi dependence)  (gm = 2*N_c/g_bare**2)
+  [PASS (A)] (T2) geometric mean is xi-independent: d/dxi sqrt(beta_sigma beta_tau) = 0  (d/dxi = 0)
+  [PASS (A)] (T3) beta_tau / beta_sigma = xi^2 (ratio carries xi DOF)  (ratio = xi**2)
+  [PASS (A)] (T3) ratio is g-independent: d/dg sqrt(beta_tau/beta_sigma) = 0  (d/dg = 0)
+
+----------------------------------------------------------------------------------------
+Part 2: bijection (g_bare, xi) <-> (beta_sigma, beta_tau)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T3) round-trip g_bare^2 recovered: g^2 = 2 N_c / sqrt(b_s b_t) o (LO dict) = g^2  (g2_round = g_bare**2)
+  [PASS (A)] (T3) round-trip xi^2 recovered: xi^2 = b_t/b_s o (LO dict) = xi^2  (xi2_round = xi**2)
+  [PASS (A)] bijection round-trip @ (g=1/2, xi=1/16, N_c=3)  (g^2_back=1/4, xi^2_back=1/256)
+  [PASS (A)] bijection round-trip @ (g=1/2, xi=1/4, N_c=3)  (g^2_back=1/4, xi^2_back=1/16)
+  [PASS (A)] bijection round-trip @ (g=1/2, xi=1, N_c=3)  (g^2_back=1/4, xi^2_back=1)
+  [PASS (A)] bijection round-trip @ (g=1/2, xi=4, N_c=3)  (g^2_back=1/4, xi^2_back=16)
+  [PASS (A)] bijection round-trip @ (g=1/2, xi=16, N_c=3)  (g^2_back=1/4, xi^2_back=256)
+  [PASS (A)] bijection round-trip @ (g=1, xi=1/16, N_c=3)  (g^2_back=1, xi^2_back=1/256)
+  [PASS (A)] bijection round-trip @ (g=1, xi=1/4, N_c=3)  (g^2_back=1, xi^2_back=1/16)
+  [PASS (A)] bijection round-trip @ (g=1, xi=1, N_c=3)  (g^2_back=1, xi^2_back=1)
+  [PASS (A)] bijection round-trip @ (g=1, xi=4, N_c=3)  (g^2_back=1, xi^2_back=16)
+  [PASS (A)] bijection round-trip @ (g=1, xi=16, N_c=3)  (g^2_back=1, xi^2_back=256)
+  [PASS (A)] bijection round-trip @ (g=2, xi=1/16, N_c=3)  (g^2_back=4, xi^2_back=1/256)
+  [PASS (A)] bijection round-trip @ (g=2, xi=1/4, N_c=3)  (g^2_back=4, xi^2_back=1/16)
+  [PASS (A)] bijection round-trip @ (g=2, xi=1, N_c=3)  (g^2_back=4, xi^2_back=1)
+  [PASS (A)] bijection round-trip @ (g=2, xi=4, N_c=3)  (g^2_back=4, xi^2_back=16)
+  [PASS (A)] bijection round-trip @ (g=2, xi=16, N_c=3)  (g^2_back=4, xi^2_back=256)
+  [PASS (A)] bijection round-trip @ (g=7/3, xi=1/16, N_c=3)  (g^2_back=49/9, xi^2_back=1/256)
+  [PASS (A)] bijection round-trip @ (g=7/3, xi=1/4, N_c=3)  (g^2_back=49/9, xi^2_back=1/16)
+  [PASS (A)] bijection round-trip @ (g=7/3, xi=1, N_c=3)  (g^2_back=49/9, xi^2_back=1)
+  [PASS (A)] bijection round-trip @ (g=7/3, xi=4, N_c=3)  (g^2_back=49/9, xi^2_back=16)
+  [PASS (A)] bijection round-trip @ (g=7/3, xi=16, N_c=3)  (g^2_back=49/9, xi^2_back=256)
+
+----------------------------------------------------------------------------------------
+Part 3: (T1) xi-invariance of the W-substitution closure
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W-sub) abstract substitution: g_bare^2 = 2 N_c * (1/6) = N_c/3 (symbolic in N_c)  (g_bare_sq_symbolic = N_c/3)
+  [PASS (A)] (W-sub) at N_c = 3: g_bare^2 = 1  (g_bare_sq @ N_c=3 = 1)
+  [PASS (A)] (T1) d/dxi (g_bare^2 closure expression) = 0 (no xi-dependence)  (d/dxi g_bare_sq = 0)
+  [PASS (A)] (T1) closure g_bare^2 = 1 at xi = 1/16 (parametric)  (result = 1)
+  [PASS (A)]   geometric mean sqrt(b_s * b_t) = 6 at xi = 1/16  (sqrt(b_s b_t) = 6, b_s = 96, b_t = 3/8)
+  [PASS (A)]   ratio b_t / b_s = xi^2 = 1/256 at xi = 1/16  (b_t/b_s = 1/256)
+  [PASS (A)] (T1) closure g_bare^2 = 1 at xi = 1/4 (parametric)  (result = 1)
+  [PASS (A)]   geometric mean sqrt(b_s * b_t) = 6 at xi = 1/4  (sqrt(b_s b_t) = 6, b_s = 24, b_t = 3/2)
+  [PASS (A)]   ratio b_t / b_s = xi^2 = 1/16 at xi = 1/4  (b_t/b_s = 1/16)
+  [PASS (A)] (T1) closure g_bare^2 = 1 at xi = 1 (parametric)  (result = 1)
+  [PASS (A)]   geometric mean sqrt(b_s * b_t) = 6 at xi = 1  (sqrt(b_s b_t) = 6, b_s = 6, b_t = 6)
+  [PASS (A)]   ratio b_t / b_s = xi^2 = 1 at xi = 1  (b_t/b_s = 1)
+  [PASS (A)] (T1) closure g_bare^2 = 1 at xi = 4 (parametric)  (result = 1)
+  [PASS (A)]   geometric mean sqrt(b_s * b_t) = 6 at xi = 4  (sqrt(b_s b_t) = 6, b_s = 3/2, b_t = 24)
+  [PASS (A)]   ratio b_t / b_s = xi^2 = 16 at xi = 4  (b_t/b_s = 16)
+  [PASS (A)] (T1) closure g_bare^2 = 1 at xi = 16 (parametric)  (result = 1)
+  [PASS (A)]   geometric mean sqrt(b_s * b_t) = 6 at xi = 16  (sqrt(b_s b_t) = 6, b_s = 3/8, b_t = 96)
+  [PASS (A)]   ratio b_t / b_s = xi^2 = 256 at xi = 16  (b_t/b_s = 256)
+  [PASS (A)] (T1) closure g_bare^2 = 1 at xi = 64 (parametric)  (result = 1)
+  [PASS (A)]   geometric mean sqrt(b_s * b_t) = 6 at xi = 64  (sqrt(b_s b_t) = 6, b_s = 3/32, b_t = 384)
+  [PASS (A)]   ratio b_t / b_s = xi^2 = 4096 at xi = 64  (b_t/b_s = 4096)
+
+----------------------------------------------------------------------------------------
+Part 4: (T4) counterfactual color-rank stability of xi-invariance
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=2, xi=1/4) — xi-invariance is N_c-parametric  (g_sq = 2/3)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=2, xi=1) — xi-invariance is N_c-parametric  (g_sq = 2/3)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=2, xi=4) — xi-invariance is N_c-parametric  (g_sq = 2/3)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=2, xi=16) — xi-invariance is N_c-parametric  (g_sq = 2/3)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=3, xi=1/4) — xi-invariance is N_c-parametric  (g_sq = 1)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=3, xi=1) — xi-invariance is N_c-parametric  (g_sq = 1)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=3, xi=4) — xi-invariance is N_c-parametric  (g_sq = 1)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=3, xi=16) — xi-invariance is N_c-parametric  (g_sq = 1)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=4, xi=1/4) — xi-invariance is N_c-parametric  (g_sq = 4/3)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=4, xi=1) — xi-invariance is N_c-parametric  (g_sq = 4/3)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=4, xi=4) — xi-invariance is N_c-parametric  (g_sq = 4/3)
+  [PASS (A)] (T4) g_bare^2 = N_c/3 at (N_c=4, xi=16) — xi-invariance is N_c-parametric  (g_sq = 4/3)
+
+----------------------------------------------------------------------------------------
+Part 5: distinctness from L3a (trace-surface) and L3b (overall scalar)
+----------------------------------------------------------------------------------------
+  [PASS (A)] L3a rescaling T_a -> c T_a with c = 1/2 violates (CN) by factor c^2 = 1/4  (gram = c^2 * delta/2 (instead of delta/2))
+  [PASS (A)]   L3a shifts beta_iso by c^2 = 1/4, independent of xi (orthogonal DOF)  (ratio = 1/4)
+  [PASS (A)] L3a rescaling T_a -> c T_a with c = 2 violates (CN) by factor c^2 = 4  (gram = c^2 * delta/2 (instead of delta/2))
+  [PASS (A)]   L3a shifts beta_iso by c^2 = 4, independent of xi (orthogonal DOF)  (ratio = 4)
+  [PASS (A)] L3a rescaling T_a -> c T_a with c = 3 violates (CN) by factor c^2 = 9  (gram = c^2 * delta/2 (instead of delta/2))
+  [PASS (A)]   L3a shifts beta_iso by c^2 = 9, independent of xi (orthogonal DOF)  (ratio = 9)
+  [PASS (A)] L3b rescaling F -> lam F with lam = 1/2 scales c0 by lam^2, independent of xi (orthogonal DOF)  (g^2 after L3b = 1/4)
+  [PASS (A)] L3b rescaling F -> lam F with lam = 1 scales c0 by lam^2, independent of xi (orthogonal DOF)  (g^2 after L3b = 1)
+  [PASS (A)] L3b rescaling F -> lam F with lam = 2 scales c0 by lam^2, independent of xi (orthogonal DOF)  (g^2 after L3b = 4)
+  [PASS (A)] three-DOF orthogonality @ (xi=1/4, c=1, lam=1): g^2 = 1  (g^2 = 1)
+  [PASS (A)] three-DOF orthogonality @ (xi=4, c=1, lam=1): g^2 = 1  (g^2 = 1)
+
+----------------------------------------------------------------------------------------
+Part 6: no-lattice-spacing-symbol check on cited inputs
+----------------------------------------------------------------------------------------
+  [PASS (A)] closure expression g_bare^2 = N_c/3 contains no lattice-spacing symbols  (free symbols = ['N_c'])
+  [PASS (A)] (W1) Rep-B identity 'F_Htt^(0)(g_bare) = 1/sqrt(6)' contains no lattice-spacing symbols
+  [PASS (A)] (W2) same-1PI identity 'F_Htt^(0)(g_bare)^2 = g_bare^2 / (2 N_c)' contains no lattice-spacing symbols
+  [PASS (A)] (AN) abstract identity 'F^2 = c0 and F^2 = g^2/(2N) => g^2 = 2 N c0' contains no lattice-spacing symbols
+  [PASS (A)] (NC) color-rank identity 'N_c = 3' contains no lattice-spacing symbols
+
+----------------------------------------------------------------------------------------
+Part 7: C-iso boundary check (orbit invariance for g_bare, NOT for <P_sigma>)
+----------------------------------------------------------------------------------------
+  [PASS (A)] <P_sigma> NLO discrepancy at xi=1: (7/9)(1/4) = 7/36 (xi-DEPENDENT for observables)  (7/9 * (1/2)^2 = 7/36)
+  [PASS (A)] <P_sigma> NLO discrepancy at xi=4: (7/9)(1/8)^2 = 7/576 (smaller — xi-DEPENDENT)  (value = 7/576)
+  [PASS (A)] <P_sigma> NLO discrepancy at xi=16: shrinks as 1/xi^2 (xi-DEPENDENT)  (value = 7/9216)
+  [PASS (A)] boundary: <P_sigma> xi-dependence does NOT propagate to g_bare via LO Trotter  (the LO dictionary couples (g, xi) only via the doublet (b_s, b_t); no additional g*xi cross-term in g_bare expression)
+
+----------------------------------------------------------------------------------------
+Part 8: bare-coupling-orbit form (∂g_bare/∂ξ = 0)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1, bare-coupling form) on fixed-K orbit: d g_bare^2 / d xi = 0  (d/dxi (2 N_c / K) = 0)
+  [PASS (A)] C-iso orbit at retained closure: geometric mean K = 2 sqrt(3 N_c) = 6 at N_c=3  (K @ N_c=3 = 6)
+  [PASS (A)] C-iso orbit at retained closure: K = 2 N_c / g_bare^2 = 6 (independent of N_c)  (K = 6)
+
+----------------------------------------------------------------------------------------
+Part 9: file presence and citation check
+----------------------------------------------------------------------------------------
+  [PASS (A)] source theorem note exists at canonical path  (path = /private/tmp/cl3-review-loop-20260517-R53lSy/docs/G_BARE_C_ISO_CONVENTION_ORBIT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-17.md)
+  [PASS (A)] note contains required string: 'C-iso Convention-Orbit Invariance'
+  [PASS (A)] note contains required string: 'bounded_theorem'
+  [PASS (A)] note contains required string: 'g_bare'
+  [PASS (A)] note contains required string: 'xi'
+  [PASS (A)] note contains required string: 'β_σ'
+  [PASS (A)] note contains required string: 'β_τ'
+  [PASS (A)] note contains required string: 'geometric mean'
+  [PASS (A)] note contains required string: 'G_BARE_FORCED_VIA_WARD_SUBSTITUTION_NARROW_THEOREM_NOTE_2026'
+  [PASS (A)] note contains required string: 'EXACT_TIER_PATH_INTEGRAL_BOUNDED_NOTE_2026-05-07_exact'
+  [PASS (A)] note contains required string: 'C_ISO_DERIVED_THEOREM_NOTE_2026-05-07_w3'
+  [PASS (A)] note contains required string: 'Tr(T_a T_b) = δ_ab / 2'
+  [PASS (A)] note contains required string: 'load-bearing'
+  [PASS (A)] note contains required string: 'C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo'
+  [PASS (A)] note avoids over-claim string: 'C-iso is derived from the physical Cl(3) local algebra plus Z^3 spatial substrate baseline'
+  [PASS (A)] note avoids over-claim string: 'PDG comparison'
+  [PASS (A)] note avoids over-claim string: 'fitted to data'
+  [PASS (A)] parent W-substitution note exists  (path = /private/tmp/cl3-review-loop-20260517-R53lSy/docs/G_BARE_FORCED_VIA_WARD_SUBSTITUTION_NARROW_THEOREM_NOTE_2026-05-17.md)
+  [PASS (A)] parent note has NO lattice-spacing symbol 'a_tau' (textual independence)
+  [PASS (A)] parent note has NO lattice-spacing symbol 'a_τ' (textual independence)
+  [PASS (A)] parent note has NO lattice-spacing symbol 'a_s ' (textual independence)
+  [PASS (A)] parent note has NO lattice-spacing symbol 'a_s
+' (textual independence)
+  [PASS (A)] parent note has NO lattice-spacing symbol 'anisotropy' (textual independence)
+  [PASS (A)] C-iso source-of-convention note exists  (path = /private/tmp/cl3-review-loop-20260517-R53lSy/docs/C_ISO_DERIVED_THEOREM_NOTE_2026-05-07_w3.md)
+  [PASS (A)] C-iso note status carries 'open_gate' marker (convention, not derivation)
+
+----------------------------------------------------------------------------------------
+Part 10: numerical cross-check with mpmath (high precision)
+----------------------------------------------------------------------------------------
+  [PASS (A)] mpmath @ (g=0.5, xi=0.0625, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.0, xi=0.0625, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.7320508, xi=0.0625, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=3.14159, xi=0.0625, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=0.5, xi=0.25, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.0, xi=0.25, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.7320508, xi=0.25, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=3.14159, xi=0.25, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=0.5, xi=1.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.0, xi=1.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.7320508, xi=1.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=3.14159, xi=1.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=0.5, xi=4.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.0, xi=4.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.7320508, xi=4.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=3.14159, xi=4.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=0.5, xi=16.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.0, xi=16.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.7320508, xi=16.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=3.14159, xi=16.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=0.5, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.0, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=1.7320508, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+  [PASS (A)] mpmath @ (g=3.14159, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)
+  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)
+  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)
+
+----------------------------------------------------------------------------------------
+SCORECARD
+----------------------------------------------------------------------------------------
+  TOTAL  : PASS = 183, FAIL = 0
+
+PASS = 183, FAIL = 0 (expected PASS >= 65). Runner closes the
+C-iso convention-orbit invariance for g_bare on the canonical LO
+Trotter dictionary. Status authority: independent audit lane only.
+
+----- stderr -----
+

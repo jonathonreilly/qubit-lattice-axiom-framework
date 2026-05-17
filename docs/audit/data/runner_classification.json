@@ -1200,6 +1200,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_bae_block_total_frobenius_derivation_narrow.py"
     },
+    "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py"
+    },
     "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent": {
       "assert_count": 0,
       "counts": {
@@ -1223,6 +1235,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py"
+    },
+    "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py"
     },
     "baryon_charge_integrality_note_2026-05-02": {
       "assert_count": 1,
@@ -7680,6 +7704,18 @@
       "dominant_class": "D",
       "runner": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py"
     },
+    "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.py"
+    },
     "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -7823,6 +7859,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17.py"
+    },
+    "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17.py"
     },
     "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": {
       "assert_count": 0,
@@ -24551,6 +24599,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "bae_f1_f3_canonical_selection_bounded_obstruction_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py": {
       "assert_count": 1,
       "claims": [
@@ -24579,6 +24642,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "bae_u1b_canonical_phase_stretch_attempt_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/audit_companion_charged_lepton_koide_cone_algebraic.py": {
@@ -24806,6 +24884,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.py": {
+      "assert_count": 0,
+      "claims": [
+        "g_bare_c_iso_convention_orbit_invariance_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 1,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py": {
       "assert_count": 1,
       "claims": [
@@ -24834,6 +24927,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17.py": {
+      "assert_count": 0,
+      "claims": [
+        "g_bare_l3b_overall_scalar_invariance_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/audit_companion_koide_dimensionless_objection_toy_conditional_algebraic_checks.py": {
@@ -51455,16 +51563,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 287,
+    "decoration_candidates": 288,
     "dominant_class_distribution": {
       "A": 178,
-      "B": 254,
+      "B": 256,
       "C": 703,
-      "D": 284,
+      "D": 286,
       "none": 423
     },
-    "runners_classified": 1842,
-    "runners_with_C": 905,
-    "runners_with_D": 520
+    "runners_classified": 1846,
+    "runners_with_C": 906,
+    "runners_with_D": 523
   }
 }

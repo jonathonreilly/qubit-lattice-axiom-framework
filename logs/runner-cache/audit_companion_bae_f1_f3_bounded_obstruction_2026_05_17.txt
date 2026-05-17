@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py
+runner_sha256: 4bff2fd30246becefe9067015a62c22f65bb5855234a20b85cf1dad085c19524
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+BAE_F1_F3_CANONICAL_SELECTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-17
+Verify each tested AV (AV1-AV9) returns F3-shape, not F1
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Section 1: Retained baseline (X1) — H = aI + bC + b̄C^2, E_+, E_perp
+----------------------------------------------------------------------------------------
+  [PASS] C^3 = I_3
+  [PASS] H = aI + bC + b̄C^2 Hermitian
+  [PASS] E_+(H) = 3 a^2 (X1)
+  [PASS] E_perp(H) = 6 |b|^2 (X1)
+
+----------------------------------------------------------------------------------------
+Section 2: F1 critical point at kappa=2 (X1, X2)
+----------------------------------------------------------------------------------------
+  [PASS] F1 critical: E_+ = E_tot/2
+  [PASS] F1 critical: E_perp = E_tot/2
+  [PASS] F1 critical => kappa = 2 (= BAE)
+
+----------------------------------------------------------------------------------------
+Section 3: F3 critical point at kappa=1 (NOT BAE) — counterfactual
+----------------------------------------------------------------------------------------
+  [PASS] F3 critical: E_+ = E_tot/3
+  [PASS] F3 critical: E_perp = 2 E_tot/3
+  [PASS] F3 critical => kappa = 1 (NOT BAE)  (3 a^2 = E_tot/3, 6 |b|^2 = 2 E_tot/3 -> a^2 = |b|^2)
+  [PASS] F1 kappa(=2) != F3 kappa(=1): selection question is real
+
+----------------------------------------------------------------------------------------
+Section 4: AV1/AV2/AV3 — isotype weight pair (1, 2) reproduces F3
+----------------------------------------------------------------------------------------
+  [PASS] AV1/AV2/AV3 canonical (mu, nu) = (1, 2) on (trivial, doublet) -> F3  (Plancherel/HS-rigid/cond-expectation)
+  [PASS] AV3 HS-rigidity: (3, 6) proportional to real-dim (1, 2)
+
+----------------------------------------------------------------------------------------
+Section 5: AV4 — Jaynes max-entropy on 3-dim eigenvalue simplex
+----------------------------------------------------------------------------------------
+  [PASS] Eigenvalue sum = 3 a (Tr(H))
+  [PASS] Eigenvalue sum-of-squares = 3 a^2 + 6 |b|^2
+  [PASS] AV4 Jaynes uniform: doublet pair contributes 2 terms -> F3 isotype weighting
+
+----------------------------------------------------------------------------------------
+Section 6: AV5 — F2 outside multiplicative-log class
+----------------------------------------------------------------------------------------
+  [PASS] AV5: F2 = E_tot constant under constraint -> no interior critical
+  [PASS] AV5: F2 ruled out but F1-vs-F3 unresolved
+
+----------------------------------------------------------------------------------------
+Section 7: AV6 — (1, 1) and (1, 2) both admissible
+----------------------------------------------------------------------------------------
+  [PASS] AV6 F1 weighting (1, 1) admissible
+  [PASS] AV6 F3 weighting (1, 2) admissible
+  [PASS] AV6: distinct critical points (kappa=2 vs kappa=1)
+
+----------------------------------------------------------------------------------------
+Section 8: AV7 — GNS / RP pairing undetermined without state
+----------------------------------------------------------------------------------------
+  [PASS] AV7: GNS pairing requires admitted state on A^{C_3}
+
+----------------------------------------------------------------------------------------
+Section 9: AV8 — doublet commutes; Cl(3) bivectors anticommute
+----------------------------------------------------------------------------------------
+  [PASS] AV8 [B_1, B_2] = 0 (doublet commutes)
+  [PASS] AV8 {e_1 e_2, e_2 e_3} = 0
+  [PASS] AV8 {e_2 e_3, e_3 e_1} = 0
+  [PASS] AV8 {e_3 e_1, e_1 e_2} = 0
+  [PASS] AV8 STRUCTURAL MISMATCH: commutative pair not realizable as anticommutative Cl(3) 2-blade
+  [PASS] AV8 measure: 2-dim Lebesgue d(Re b) d(Im b) -> 2 log|b| -> F3 weighting
+
+----------------------------------------------------------------------------------------
+Section 10: AV9 — J = U_swap * K preserves 3 distinct eigenvalues
+----------------------------------------------------------------------------------------
+  [PASS] AV9 U_swap^2 = I_3
+  [PASS] AV9 U_swap C U_swap = C^2
+  [PASS] AV9 U_swap C^2 U_swap = C
+  [PASS] AV9 [D, J] = 0 for D = aI + bC + b̄C^2 (D U_swap = U_swap conj(D))  (follows from U_swap C U_swap = C^2 and reality of a)
+  [PASS] AV9 J^2 = +I (KO-dim 0 mod 8 family)
+  [PASS] AV9 H_R 3-real-dim, D_R preserves spectrum {lambda_0, lambda_om, lambda_omb}
+  [PASS] AV9 spectral action Tr_{H_R} f(D/Lambda) symmetric in 3 distinct eigenvalues -> F3 weighting
+
+----------------------------------------------------------------------------------------
+Section 11: Source-note hygiene
+----------------------------------------------------------------------------------------
+  [PASS] Note file exists at expected path
+  [PASS] Status authority line
+  [PASS] claim_type bounded_theorem
+  [PASS] Disclaims universal-impossibility
+  [PASS] Preserves U(1)_b Open derivation gap
+  [PASS] Cites X1 (Frobenius algebraic narrow)
+  [PASS] Cites X2 (BAE M1/M2 duality)
+  [PASS] Cites X3 (Cl(3) Pauli irrep uniqueness)
+  [PASS] Cites AV2 source (Probe 12)
+  [PASS] Cites AV4 source (BAE max-entropy)
+  [PASS] Cites Probe 13 (real structure)
+  [PASS] Cites Probe 18 (AV1-AV7 campaign)
+  [PASS] Cites AV8 source (Cl(3) bivector)
+  [PASS] Cites AV9 source (NCG / KO-dim)
+  [PASS] Labels Koide Q=2/3 as empirical coincidence under current axioms
+
+========================================================================================
+=== TOTAL: PASS=50, FAIL=0 ===
+========================================================================================
+
+----- stderr -----
+

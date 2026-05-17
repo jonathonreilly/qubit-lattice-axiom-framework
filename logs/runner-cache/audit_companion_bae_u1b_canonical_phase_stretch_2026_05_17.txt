@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py
+runner_sha256: 2423d09e1549b1170f747fd1efb6eac4d655c71eef840137ac5cd0b59fb73271
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17
+Goal: sympy-symbolic verification of R1-R5 failure steps + (T2),(T3).
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Algebraic baseline (X1) — H = aI + bC + b_bar C^2 on hw=1
+----------------------------------------------------------------------------------------
+  [PASS] C^3 = I (cyclic permutation, (X1) baseline)
+  [PASS] C^2 = C.T (since C is real orthogonal, C^{-1} = C^T)
+  [PASS] B_1 Hermitian: B_1^dagger = B_1
+  [PASS] B_2 Hermitian: B_2^dagger = B_2
+  [PASS] [B_1, B_2] = 0 (commute pairwise)
+  [PASS] H Hermitian (X1)
+  [PASS] ||H||_F^2 = 3 a^2 + 6 |b|^2 (X1)
+
+----------------------------------------------------------------------------------------
+Part 1: R1 — Time-orientation projection fails (no C_3-equivariant time map)
+----------------------------------------------------------------------------------------
+  [PASS] Hom_{C_3}(R_triv_time, R_doublet) = 0 by Frobenius reciprocity  (sum = 0)
+
+----------------------------------------------------------------------------------------
+Part 2: R2 — CKM CP-phase integer-k lattice misses 2/9 rad
+----------------------------------------------------------------------------------------
+  [PASS] delta_CKM(k=2) = arccos(1/sqrt(2)) != 2/9 rad  (numerical diff = +0.563176 rad)
+  [PASS] delta_CKM(k=3) = arccos(1/sqrt(3)) != 2/9 rad  (numerical diff = +0.733094 rad)
+  [PASS] delta_CKM(k=6) = arccos(1/sqrt(6)) != 2/9 rad  (numerical diff = +0.928040 rad)
+  [PASS] delta_CKM(k=12) = arccos(1/sqrt(12)) != 2/9 rad  (numerical diff = +1.055731 rad)
+  [PASS] delta_CKM(k=24) = arccos(1/sqrt(24)) != 2/9 rad  (numerical diff = +1.143005 rad)
+  [PASS] (X4) sum cos^2 + sin^2 = 1 under partition
+  [PASS] Brannen delta=2/9 requires non-integer k (no integer specialisation matches)  (1/cos^2(2/9) = 1.0511 (non-integer))
+
+----------------------------------------------------------------------------------------
+Part 3: R3 — Cl(3) gamma-involution acts as Z_2 on doublet plane
+----------------------------------------------------------------------------------------
+  [PASS] gamma(sigma_1) = -sigma_1 ((X3) vector-grade flip)
+  [PASS] gamma(sigma_2) = -sigma_2 ((X3) vector-grade flip)
+  [PASS] gamma(sigma_3) = -sigma_3 ((X3) vector-grade flip)
+  [PASS] gamma(I_2) = +I_2 ((X3) identity-grade preservation)
+  [PASS] omega = sigma_1 sigma_2 sigma_3 = i I_2 (Pauli pseudoscalar)
+  [PASS] gamma(omega) = +omega ((X3) pseudoscalar preserved)
+  [PASS] gamma(sigma_1 sigma_2) = -sigma_1 sigma_2 ((X3) bivector-grade flip)
+  [PASS] (gamma-induced Z_2)^2 = identity on (Re b, Im b)
+  [PASS] Z_2 orbit of generic b has cardinality 2 (NOT continuous-SO(2) orbit)
+
+----------------------------------------------------------------------------------------
+Part 4: R4 — Berry connection on doublet plane
+----------------------------------------------------------------------------------------
+  [PASS] Berry connection for real-amplitude doublet superposition = 0
+  [PASS] Berry connection for canonical complex superposition = -1/2  (A = -1/2)
+  [PASS] Berry holonomy = exp(i pi) = -1 (Z_2 phase, NOT continuous-U(1))  (holonomy = -1)
+
+----------------------------------------------------------------------------------------
+Part 5: R5 — Spin-statistics: 2 pi rotation on vector vs spinor
+----------------------------------------------------------------------------------------
+  [PASS] R(2 pi) = I_2 on vector irrep of SO(2) (no phase)
+  [PASS] R(2 pi) = -I_2 on spinor irrep of Spin(2) (Z_2 phase, not continuous)
+  [PASS] (R(2 pi))^2 = I on spinor irrep (Z_2 not U(1))
+  [PASS] Doublet (B_1, B_2) on Herm_circ(3) carries vector irrep -> 2pi acts trivially  (bosonic operator algebra, j=1 vector irrep of SO(2))
+
+----------------------------------------------------------------------------------------
+Part 6: (T2) — D_3 fundamental-domain wedge is 2-real-dim Lebesgue
+----------------------------------------------------------------------------------------
+  [PASS] Full-plane unit-disk volume = pi (sanity)
+  [PASS] D_3 wedge unit-disk volume = pi/6 (1/6 of full plane)
+  [PASS] D_3-wedge log-density coefficient on log|b| = 2 (F3-shape, not F1)
+  [PASS] F1-shape would require coefficient 1 (single radial mode); not realised
+
+----------------------------------------------------------------------------------------
+Part 7: (T3) — Cycle 3 residue distinct from Cycle 1/2 F3-reappearance
+----------------------------------------------------------------------------------------
+  [PASS] F3 doublet coefficient log|b| = 4 (rank-weighting expansion)
+  [PASS] F1 doublet coefficient log|b| = 2 (multiplicity-weighting expansion)
+  [PASS] Cycle 3 sharpening: SO(2) quotient required (not weight choice on isotypes)  (dimension reduction 2->1 vs weight 1 vs 2)
+
+----------------------------------------------------------------------------------------
+Part 8: Review-hygiene checks
+----------------------------------------------------------------------------------------
+  [PASS] Route labels (R1)-(R5) are local stretch-attempt labels (5 routes)
+  [PASS] Retained authority KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link
+  [PASS] Retained authority CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link
+  [PASS] Retained authority CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link
+  [PASS] Retained authority CKM_CP_PHASE_RHO_ETA_TO_DELTA_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link
+  [PASS] 'Status authority: independent audit lane only' framing present
+  [PASS] No PDG numerical comparators in load-bearing positions
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+PASS=45 FAIL=0
+
+Verdict (audit-companion summary):
+  All five stretch routes (R1)-(R5) fail to supply a canonical
+  direction in the U(1)_b doublet plane on Herm_circ(3) from
+  retained authorities (X1)-(X4) plus A_min. The structural-
+  character narrowing (T2) names the residue as continuous-SO(2)
+  quotient on a 2-real-dim plane; the Cycle 3 framing (T3) is
+  structurally distinct from the F3 reappearance pattern of
+  Cycles 1 / 2 (weight choice on 2-isotype decomposition).
+
+----- stderr -----
+

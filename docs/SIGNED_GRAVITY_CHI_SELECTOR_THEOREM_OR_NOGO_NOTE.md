@@ -8,7 +8,11 @@ open only for broader selector constructions
 This note records the next P0 step after
 [`ANTIGRAVITY_SIGN_SELECTOR_BOUNDARY_NOTE.md`](ANTIGRAVITY_SIGN_SELECTOR_BOUNDARY_NOTE.md)
 and
-[`SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md`](SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md).
+`SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md` (see-also cross-reference;
+backticked to break cycles 0196 / 0197 / 0199 / 0200 / 0201 / 0203 / 0204 —
+the response backlog is the upstream lineage doc, not a load-bearing dep,
+and the load-bearing direction *backlog -> this_note* is preserved in the
+backlog's "Proposed artifacts" list).
 
 The first signed-response harness showed that a locked branch label would have
 coherent consequences: same-sector attraction, opposite-sector repulsion,

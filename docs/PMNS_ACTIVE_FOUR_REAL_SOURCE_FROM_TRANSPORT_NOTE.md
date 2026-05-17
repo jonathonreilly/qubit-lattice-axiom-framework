@@ -165,8 +165,9 @@ decomposition.
 
 One-hop authority candidates cited:
 
-- [`PMNS_LOWER_LEVEL_END_TO_END_CLOSURE_NOTE.md`](PMNS_LOWER_LEVEL_END_TO_END_CLOSURE_NOTE.md)
-  — currently `audited_conditional` (audit row:
+- `PMNS_LOWER_LEVEL_END_TO_END_CLOSURE_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0013 in the citation
+  graph; currently `audited_conditional` audit row
   `pmns_lower_level_end_to_end_closure_note`). Sibling note in the
   same lower-level PMNS cluster whose runner
   (`frontier_pmns_lower_level_end_to_end_closure.py`) supplies the
@@ -176,7 +177,12 @@ One-hop authority candidates cited:
   the same fixed-input `BANNED_INPUT_NAMES` circularity guard. Because
   this sibling authority is itself `audited_conditional`, the present
   note's effective status is capped at `audited_conditional` under the
-  standard cite-chain rule.
+  standard cite-chain rule. The present note's class-A algebra
+  ("Active-block readout bridge theorem") explicitly does not consume
+  any PMNS target value or lower-level transport-profile derivation as
+  input (see "What the 2026-05-16 bridge addition covers" below); the
+  shared dependency is on the `pmns_lower_level_utils.py` helper module
+  rather than on this sibling note's claim content.
 - [`PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md`](PMNS_CORNER_TRANSPORT_ACTIVE_BLOCK_NOTE.md)
   — currently `audited_renaming` (audit row:
   `pmns_corner_transport_active_block_note`). Adjacent PMNS active-block

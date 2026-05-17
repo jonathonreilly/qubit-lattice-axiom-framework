@@ -397,4 +397,10 @@ becomes unconditional.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [koide_circulant_character_derivation_note_2026-04-18](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md)
-- [scalar_selector_remaining_open_imports_2026-04-20](SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md)
+- `scalar_selector_remaining_open_imports_2026-04-20`
+  (see-also cross-reference; backticked to break cycle-0008 in the citation
+  graph. The scalar-selector open-imports register cites the present
+  theorem as a load-bearing input ("sibling bounded-theorem note sharpening
+  the load-bearing residual statement"), so the load-bearing citation
+  direction is *scalar_selector_remaining_open_imports_2026-04-20 →
+  this_koide_q_delta_linking_relation_theorem_note*, not vice versa.)

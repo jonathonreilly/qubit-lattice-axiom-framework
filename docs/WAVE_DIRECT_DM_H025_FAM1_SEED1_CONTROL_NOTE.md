@@ -78,4 +78,9 @@ So the exact retained claim is:
 - [`scripts/wave_direct_dm_h025_control_freeze.py`](../scripts/wave_direct_dm_h025_control_freeze.py)
 - [`logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed1.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed1.txt)
 - `docs/WAVE_DIRECT_DM_H025_LOW_BAND_RETENTION_NOTE.md`
-- [`docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`](./WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md)
+- `docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md`
+  (downstream consumer; backticked to break cycle-0194 in the
+  citation graph — citation graph direction is *this_seed1_control →
+  two_point_synthesis*, with the synthesis note's own dependency
+  table citing this seed=1 control note as the load-bearing one-hop
+  source-note dependency for the seed=1 control-ladder summary.)

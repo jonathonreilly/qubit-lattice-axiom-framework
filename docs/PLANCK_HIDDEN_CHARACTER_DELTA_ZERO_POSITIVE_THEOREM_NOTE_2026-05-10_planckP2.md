@@ -358,7 +358,14 @@ This note proposes to close the **delta = 0 hidden-character residual** of the
 Planck-scale conditional completion. It does NOT close the larger
 Planck lane. Specifically, the **gravitational boundary/action density
 identification** premise of
-[`PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`](PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md)
+`PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`
+(see-also cross-reference; backticked to break cycle-0011 in the citation
+graph. The conditional-completion parent packet enumerates this P2 note
+as the positive-theorem candidate closing the parent-source
+hidden-character sub-question; the parent packet load-bears on the present
+sub-theorem's result, not vice versa. The load-bearing citation direction
+is *planck_scale_conditional_completion_note_2026-04-24 →
+this_planck_hidden_character_delta_zero_positive_theorem_note*.)
 remains an explicit named open premise:
 
 > derive_gravitational_boundary_action_density_as_first_order_coframe_carrier
@@ -484,7 +491,11 @@ The runner verifies:
 - **Parent no-go (positively closed by this note's mechanism):**
   [`PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md`](PLANCK_PARENT_SOURCE_HIDDEN_CHARACTER_NO_GO_NOTE_2026-04-24.md)
 - **Conditional completion packet:**
-  [`PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`](PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md)
+  `PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`
+  (see-also cross-reference; backticked to break cycle-0011 in the citation
+  graph; load-bearing citation direction is
+  *planck_scale_conditional_completion_note_2026-04-24 →
+  this_planck_hidden_character_delta_zero_positive_theorem_note*, not vice versa.)
 - **First-order coframe carrier theorem:**
   [`PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`](PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md)
 - **Physical lattice necessity (source-free state surface):**

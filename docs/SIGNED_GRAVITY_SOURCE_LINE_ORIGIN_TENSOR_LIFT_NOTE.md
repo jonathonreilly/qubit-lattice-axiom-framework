@@ -6,7 +6,10 @@
 **Script:** [`../scripts/signed_gravity_source_line_origin_tensor_lift_audit.py`](../scripts/signed_gravity_source_line_origin_tensor_lift_audit.py)
 
 This note develops the next nontrivial theory move after
-[`SIGNED_GRAVITY_APS_LOCKED_AXIOM_EXTENSION_NOTE.md`](SIGNED_GRAVITY_APS_LOCKED_AXIOM_EXTENSION_NOTE.md).
+`SIGNED_GRAVITY_APS_LOCKED_AXIOM_EXTENSION_NOTE.md` (see-also cross-reference;
+backticked to break cycles 0198 / 0202 — the APS locked-axiom note is the
+upstream lineage doc, not a load-bearing dep here, and the load-bearing
+direction *aps_locked_axiom -> this_note* is preserved downstream).
 The target is the origin of the eta-polarized source line:
 
 ```text

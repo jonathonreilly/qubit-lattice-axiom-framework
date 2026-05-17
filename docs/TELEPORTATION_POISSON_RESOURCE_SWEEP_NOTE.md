@@ -164,4 +164,10 @@ the bounded sweep as a non-uniform but real parameter window.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [teleportation_resource_from_poisson_note](TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+- `TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0211 in the
+  citation graph. The resource-from-poisson note's own cited-authority
+  dependency table cites this Poisson resource sweep as an "adjacent
+  retained Poisson resource sweep" diagnostic; that direction is the
+  load-bearing one. The back-edge here is graph-bookkeeping
+  navigation only.)

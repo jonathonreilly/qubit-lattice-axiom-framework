@@ -159,16 +159,22 @@ proposed selector laws.
 
 One-hop authority candidates cited:
 
-- [`PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_PROPOSAL_README_2026-04-21.md`](PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_PROPOSAL_README_2026-04-21.md)
-  — currently `unaudited` (audit row:
+- `PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_PROPOSAL_README_2026-04-21.md`
+  (see-also cross-reference; backticked to break cycle-0014 in the citation
+  graph; currently `unaudited` audit row
   `pmns_selector_three_identity_support_proposal_readme_2026-04-21`).
   Sibling proposal-package README that frames the same three-equation
   system, names the open scientific obligations, and points to the
   same runner artifact. Because this sibling is `unaudited`, it
   cannot lift the present note's effective status; it is cited as
-  graph-bookkeeping for the proposal scope.
-- [`PMNS_THREE_IDENTITY_Q_KOIDE_FROM_V8_SUPPORT_LIFT_THEOREM_NOTE_2026-04-29.md`](PMNS_THREE_IDENTITY_Q_KOIDE_FROM_V8_SUPPORT_LIFT_THEOREM_NOTE_2026-04-29.md)
-  — currently `unaudited` (audit row:
+  graph-bookkeeping for the proposal scope. The README's "Artifacts"
+  section cites the present note as the technical content artifact;
+  load-bearing citation direction is
+  *pmns_selector_three_identity_support_proposal_readme_2026-04-21 →
+  this_pmns_selector_three_identity_support_note*, not vice versa.
+- `PMNS_THREE_IDENTITY_Q_KOIDE_FROM_V8_SUPPORT_LIFT_THEOREM_NOTE_2026-04-29.md`
+  (see-also cross-reference; backticked to break cycle-0015 in the citation
+  graph; currently `unaudited` audit row
   `pmns_three_identity_q_koide_from_v8_support_lift_theorem_note_2026-04-29`).
   Downstream support lift composing the V8 chart-constant surface
   (`Q_Koide = 2/3` on the minimal-framework packet) with the present three-identity package
@@ -178,7 +184,12 @@ One-hop authority candidates cited:
   or basin uniqueness, but it removes one chart-constant import.
   Because this lift is itself `unaudited` and conditional on V8
   chart-constant ratification, it does not promote the present note's
-  effective status under the cite-chain rule.
+  effective status under the cite-chain rule. The Q-Koide-from-V8 lift
+  note's own "Cited authorities (one-hop deps)" header records the
+  present note as a load-bearing input it COMPOSES with V8, so the
+  load-bearing citation direction is
+  *pmns_three_identity_q_koide_from_v8_support_lift_theorem_note_2026-04-29 →
+  this_pmns_selector_three_identity_support_note*, not vice versa.
 - [`KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20.md`](KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20.md)
   — currently `unaudited` (audit row:
   `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20`).

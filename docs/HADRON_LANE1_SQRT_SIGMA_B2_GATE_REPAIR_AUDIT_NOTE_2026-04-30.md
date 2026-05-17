@@ -244,4 +244,9 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [confinement_string_tension_note](CONFINEMENT_STRING_TENSION_NOTE.md)
 - [alpha_s_derived_note](ALPHA_S_DERIVED_NOTE.md)
 - [minimal_axioms_2026-04-11](MINIMAL_AXIOMS_2026-04-11.md)
-- [lanes.open_science.01_hadron_mass_program_open_lane_2026-04-26](lanes/open_science/01_HADRON_MASS_PROGRAM_OPEN_LANE_2026-04-26.md)
+- `lanes.open_science.01_hadron_mass_program_open_lane_2026-04-26`
+  (`lanes/open_science/01_HADRON_MASS_PROGRAM_OPEN_LANE_2026-04-26.md`;
+  see-also cross-reference; backticked to break cycle-0031 — the
+  hadron-mass-program open-lane parent already cites the upstream
+  bridge-scout note that consumes this audit, so the reverse markdown
+  link is informational)

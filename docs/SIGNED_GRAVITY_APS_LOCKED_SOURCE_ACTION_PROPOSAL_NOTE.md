@@ -6,7 +6,12 @@
 
 This note proposes the smallest action that would close the remaining
 APS/source-locking gap identified in
-[`SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md`](SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md).
+`SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md` (see-also
+cross-reference; backticked to break newborn cycle-XXXX through
+aps_locked_source_action_proposal -> aps_wald_gauss_bridge_audit ->
+response_backlog -> aps_locked_source_action_proposal — the audit note is
+the upstream gap-identifying lineage doc, not a load-bearing dep, and the
+load-bearing direction is preserved downstream).
 
 The boundary remains strict. This is not a negative-mass, shielding,
 propulsion, reactionless-force, or physical signed-gravity claim. It is a

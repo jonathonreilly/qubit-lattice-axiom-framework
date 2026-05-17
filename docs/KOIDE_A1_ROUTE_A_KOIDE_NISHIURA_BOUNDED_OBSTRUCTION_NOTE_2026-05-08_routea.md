@@ -766,7 +766,14 @@ This graph-bookkeeping section records explicit dependency links for
 the audit citation graph. It does not promote this note or change
 the audited claim scope.
 
-- [koide_a1_derivation_status_note](KOIDE_A1_DERIVATION_STATUS_NOTE.md)
+- `koide_a1_derivation_status_note`
+  (see-also cross-reference; backticked to break cycle-0006 in the citation
+  graph. The A1 derivation status note is the parent survey that enumerates
+  the present probe as the Route-A bounded-obstruction result; the parent
+  status note cites this probe as a load-bearing input to its survey
+  classification. The load-bearing citation direction is
+  *koide_a1_derivation_status_note → this_route_a_koide_nishiura_obstruction*,
+  not vice versa.)
 - [koide_a1_route_f_casimir_difference_bounded_obstruction_note_2026-05-08_routef](KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md)
 - [koide_circulant_character_derivation_note_2026-04-18](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md)
 - [charged_lepton_koide_cone_algebraic_equivalence_note](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md)

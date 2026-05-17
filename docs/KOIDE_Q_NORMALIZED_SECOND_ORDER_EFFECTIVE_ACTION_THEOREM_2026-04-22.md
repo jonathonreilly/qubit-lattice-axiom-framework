@@ -429,5 +429,9 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [koide_q_reduced_observable_restriction_theorem_2026-04-22](KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md)
 - [koide_q_source_domain_canonical_descent_theorem_note_2026-04-25](KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md)
-- [koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25](KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md)
+- `koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25`
+  (`KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md`;
+  see-also cross-reference; backticked to break cycle-0030 — the
+  background-zero criterion already names this normalized note as its
+  upstream supplier, so the reverse markdown link is informational)
 - [koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29](KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md)

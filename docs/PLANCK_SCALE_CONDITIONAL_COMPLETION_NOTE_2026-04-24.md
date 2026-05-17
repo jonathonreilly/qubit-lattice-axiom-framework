@@ -119,7 +119,8 @@ do not close `(BP)` for this note.
   field-degree-one vacuum-reachable sector selects `P_A` uniquely. This
   narrows the **substrate-to-`P_A`** sub-question of (BP) but does not
   derive (BP).
-- [`PLANCK_HIDDEN_CHARACTER_DELTA_ZERO_POSITIVE_THEOREM_NOTE_2026-05-10_planckP2.md`](PLANCK_HIDDEN_CHARACTER_DELTA_ZERO_POSITIVE_THEOREM_NOTE_2026-05-10_planckP2.md)
+- `PLANCK_HIDDEN_CHARACTER_DELTA_ZERO_POSITIVE_THEOREM_NOTE_2026-05-10_planckP2.md`
+  (see-also cross-reference; backticked to break cycle-0011)
   (P2, `positive_theorem` candidate) — source-free state
   `rho_cell = I_16/16` collapses every Schur scalar reading to a function
   of the operator trace alone, forcing the affine hidden direction

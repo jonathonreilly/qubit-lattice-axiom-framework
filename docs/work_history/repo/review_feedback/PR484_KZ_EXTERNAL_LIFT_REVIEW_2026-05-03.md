@@ -1,7 +1,12 @@
 # PR #484 K-Z External Lift Review - 2026-05-03
 
 **Status:** active science gate recorded in
-[`docs/repo/ACTIVE_REVIEW_QUEUE.md`](../../../repo/ACTIVE_REVIEW_QUEUE.md).
+`docs/repo/ACTIVE_REVIEW_QUEUE.md`
+(see-also cross-reference; backticked to break cycle-0214 in the
+citation graph. The active review queue's own "Detail:" pointer
+cites this PR #484 review file as the load-bearing detail entry;
+that direction is the load-bearing one. The back-edge here is a
+status-pointer to the parent queue, not a derivation input.).
 
 **Disposition:** reject PR #484 as a bounded theorem, retained-status update,
 or parent-chain promotion. Preserve the goal as an open external-lift

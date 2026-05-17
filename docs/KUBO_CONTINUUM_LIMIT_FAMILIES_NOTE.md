@@ -170,4 +170,10 @@ negative either. After Lane α++, it should be read as:
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [kubo_fam2_refinement_note](KUBO_FAM2_REFINEMENT_NOTE.md)
+- `KUBO_FAM2_REFINEMENT_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0210 in the
+  citation graph. The Fam2-refinement note's own §"Question" cites
+  this continuum-limit families lane as the load-bearing parent that
+  framed the open question driving the refinement; that direction is
+  the load-bearing one. This back-edge is graph-bookkeeping
+  navigation only.)

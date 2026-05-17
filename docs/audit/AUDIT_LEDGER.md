@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1205 |
+| unaudited | 1206 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 180 |
+| ~~audited_conditional~~ | 179 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -46,31 +46,31 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 562 |
-| `audited_conditional` | 180 |
+| `audited_conditional` | 179 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1402 |
+| `unaudited` | 1403 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 946 |
+| `bounded_theorem` | 945 |
 | `decoration` | 22 |
 | `meta` | 200 |
 | `no_go` | 239 |
 | `open_gate` | 110 |
-| `positive_theorem` | 731 |
+| `positive_theorem` | 732 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 1065 |
-| `high` | 61 |
-| `medium` | 268 |
-| `leaf` | 854 |
+| `critical` | 610 |
+| `high` | 237 |
+| `medium` | 516 |
+| `leaf` | 885 |
 
 - **Retained pending chain closure:** 4
-- **Citation cycles detected:** 213
+- **Citation cycles detected:** 53
 
 ### Runner classification (static heuristic)
 
@@ -85,31 +85,31 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms_2026-05-03` | meta | critical | 893 | 49.80 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 851 | 47.23 | `unaudited` | unaudited |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 849 | 47.23 | `audited_conditional` | ~~audited_conditional~~ |
-| 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1016 | 41.49 | `audited_clean` | **retained_bounded** |
-| 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 814 | 41.17 | `unaudited` | unaudited |
-| 6 | `minimal_axioms_2026-04-11` | meta | critical | 887 | 39.79 | `unaudited` | meta |
-| 7 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 37.82 | `unaudited` | unaudited |
-| 8 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 814 | 36.67 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 891 | 34.80 | `unaudited` | unaudited |
-| 10 | `native_gauge_closure_note` | bounded_theorem | critical | 1000 | 32.97 | `audited_clean` | **retained_bounded** |
-| 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 915 | 32.84 | `audited_clean` | **retained_bounded** |
-| 12 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 814 | 32.67 | `unaudited` | unaudited |
-| 13 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 814 | 31.67 | `unaudited` | unaudited |
-| 14 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 814 | 31.67 | `unaudited` | unaudited |
-| 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 814 | 31.67 | `unaudited` | unaudited |
-| 16 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 820 | 31.18 | `unaudited` | unaudited |
-| 17 | `three_generation_structure_note` | bounded_theorem | critical | 846 | 30.73 | `unaudited` | unaudited |
-| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 969 | 30.42 | `audited_clean` | **retained_bounded** |
-| 19 | `plaquette_self_consistency_note` | bounded_theorem | critical | 949 | 30.39 | `unaudited` | unaudited |
-| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 901 | 28.32 | `audited_clean` | **retained_bounded** |
-| 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 870 | 28.27 | `audited_clean` | open_gate |
-| 22 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 814 | 28.17 | `unaudited` | unaudited |
-| 23 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 814 | 28.17 | `unaudited` | unaudited |
-| 24 | `cl3_sm_embedding_theorem` | positive_theorem | critical | 821 | 27.68 | `unaudited` | unaudited |
-| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 814 | 27.67 | `unaudited` | unaudited |
+| 1 | `minimal_axioms_2026-05-03` | meta | critical | 882 | 49.79 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 842 | 47.22 | `unaudited` | unaudited |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 839 | 47.21 | `audited_conditional` | ~~audited_conditional~~ |
+| 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1007 | 41.48 | `audited_clean` | **retained_bounded** |
+| 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 804 | 41.15 | `unaudited` | unaudited |
+| 6 | `minimal_axioms_2026-04-11` | meta | critical | 877 | 39.78 | `unaudited` | meta |
+| 7 | `alpha_s_derived_note` | bounded_theorem | critical | 891 | 37.80 | `unaudited` | unaudited |
+| 8 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 804 | 36.65 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 881 | 34.78 | `unaudited` | unaudited |
+| 10 | `native_gauge_closure_note` | bounded_theorem | critical | 991 | 32.95 | `audited_clean` | **retained_bounded** |
+| 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 905 | 32.82 | `audited_clean` | **retained_bounded** |
+| 12 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 804 | 32.65 | `unaudited` | unaudited |
+| 13 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 804 | 31.65 | `unaudited` | unaudited |
+| 14 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 804 | 31.65 | `unaudited` | unaudited |
+| 15 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 804 | 31.65 | `unaudited` | unaudited |
+| 16 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 810 | 31.16 | `unaudited` | unaudited |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 836 | 30.71 | `unaudited` | unaudited |
+| 18 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 959 | 30.41 | `audited_clean` | **retained_bounded** |
+| 19 | `plaquette_self_consistency_note` | bounded_theorem | critical | 939 | 30.38 | `unaudited` | unaudited |
+| 20 | `left_handed_charge_matching_note` | bounded_theorem | critical | 892 | 28.30 | `audited_clean` | **retained_bounded** |
+| 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 861 | 28.25 | `audited_clean` | open_gate |
+| 22 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 804 | 28.15 | `unaudited` | unaudited |
+| 23 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 804 | 28.15 | `unaudited` | unaudited |
+| 24 | `cl3_sm_embedding_theorem` | positive_theorem | critical | 811 | 27.66 | `unaudited` | unaudited |
+| 25 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 804 | 27.65 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -808,7 +808,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_mutual_information_chokepoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `monopole_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `neutrino_mass_reduction_to_dirac_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -7840,22 +7839,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The scalar two-point expressions have no mu input, so the same scalar two-point signature is compatible with both mu = 0 and mu != 0 while the Pfaffian sector differs.  _(class `C`)_
 - **chain closes:** True — The runner reproduces the same-current-data witness: scalar two-point and normal source-response signatures are mu-blind, Pfaffian signatures vary with mu, and charge-sector checks show normal sources are charge zero while the pairing seed carries charge -2. That directly blocks the implication that scalar two-point closure alone forces mu = 0.
 - **rationale:** The note claims a negative boundary, not a Dirac-global or numerical neutrino result: SR-2 cannot close C2-X from free-scalar two-point data alone. The runner checks the relevant current surface by verifying the cited authority text and constructing nonzero-mu witnesses with identical scalar and normal signatures but distinct Pfaffian sectors. Residual risk is limited to future typed scalar-to-Pfaffian coupling theorems, which the note explicitly leaves open.
-- **auditor confidence:** high
-
-### `neutrino_mass_reduction_to_dirac_note`
-
-- **Note:** [`NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md`](../../docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the conditional algebraic reduction from an admitted Higgs-assisted Dirac Yukawa channel plus M_R,current = 0 to the statement that general neutrino mass closure can proceed through Y_nu, with charge-2 input required only for Majorana/seesaw closure.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260515-145520-773586f3-neutrino_mass_reduction_-002`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given an admitted electroweak Higgs doublet and the retained law M_R,current = 0_(3 x 3), the neutral-fermion mass problem reduces to deriving the Dirac Yukawa matrix Y_nu, while a charge-2 primitive is needed only for Majorana/seesaw mass.  _(class `A`)_
-- **chain closes:** False — The algebraic reduction itself is coherent, but it imports the admitted Higgs/CW electroweak-scalar lane and the retained Majorana-zero/matter inputs through package-level authorities rather than fully retained one-hop theorem notes. The missing retained-grade closure is the Higgs scalar lane and explicit upstream Majorana-zero/matter authority packet in the restricted inputs.
-- **rationale:** The runner performs finite-dimensional algebra checks for SU(2) contraction uniqueness, 3x3 texture freedom, and the pure Dirac block spectrum, and these support the reduction on its own terms. However, the source note explicitly conditions the theorem on an admitted Higgs/CW lane, and the supplied publication matrix marks the neutrino boundary/support packet as bounded secondary and the Higgs/vacuum package as identification-conditioned. Under the rubric, that open/admitted dependency prevents a clean retained-grade verdict even though the internal algebraic reduction is sound.
-- **open / conditional deps cited:**
-  - `publication/ci3_z3/PUBLICATION_MATRIX.md`
-  - `NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md`
 - **auditor confidence:** high
 
 ### `newton_law_derived_note`

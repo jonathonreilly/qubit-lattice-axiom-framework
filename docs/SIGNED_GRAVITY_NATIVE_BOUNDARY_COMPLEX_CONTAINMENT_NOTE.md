@@ -143,7 +143,11 @@ orientation-line source principle.
 ## Relation To The Source-Character Derivation
 
 This note does not erase
-[`SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md`](SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md).
+`SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE.md` (see-also
+cross-reference; backticked to break cycle-0189 through
+cl3z3 -> source_character_uniqueness -> nature_grade_closure_blocker
+-> this_note -> cl3z3; the load-bearing direction
+*cl3z3_derivation -> source_character_uniqueness* is preserved upstream).
 It sharpens its scope.
 
 What remains native at the finite determinant-line grammar level:

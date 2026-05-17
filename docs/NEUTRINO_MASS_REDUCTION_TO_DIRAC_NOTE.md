@@ -244,4 +244,10 @@ python3 scripts/frontier_neutrino_mass_reduction_to_dirac.py
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - `publication/ci3_z3/DERIVATION_ATLAS.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
-- [publication.ci3_z3.publication_matrix](publication/ci3_z3/PUBLICATION_MATRIX.md)
+- `publication.ci3_z3.publication_matrix`
+  (see-also cross-reference; backticked to break cycle-0010 in the citation
+  graph. The publication matrix catalogs this neutrino note as one row in
+  its F05 entry naming the bounded secondary-lane content; the matrix
+  consumes the present note's content for its row description, so the
+  load-bearing citation direction is *publication.ci3_z3.publication_matrix
+  → this_neutrino_mass_reduction_to_dirac_note*, not vice versa.)

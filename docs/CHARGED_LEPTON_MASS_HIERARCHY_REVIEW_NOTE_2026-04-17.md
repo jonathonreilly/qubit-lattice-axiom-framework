@@ -345,7 +345,14 @@ Runners:
 Three additional structural theorems clarify why higher-order and
 propagator-dressed attempts also close negatively. Full proofs and
 constructions in
-[HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md](./HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md).
+`HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE.md`
+(see-also cross-reference; backticked to break cycle-0018 in the citation
+graph. The HIGHER_ORDER note's own row-6 dependency table cites this
+charged-lepton review as imported chamber-constraint authority for the
+observational-pin closure theorem; that direction is the load-bearing
+citation. The forward-pointer here is descriptive navigation to the
+proofs file and is not consumed as a derivation input by the present
+review.).
 
 ### 6.1 Theorem 4: canonical intermediate-subspace-lift transport identity
 

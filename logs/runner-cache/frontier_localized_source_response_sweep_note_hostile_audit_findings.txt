@@ -1,0 +1,18 @@
+==============================================================================
+AUDIT-PREP VERIFIER — localized_source_response_sweep_note
+==============================================================================
+  [PASS] [A] Parent note exists  (LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md, 3338 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   mesoscopic_surrogate_h025_constrained_localization_note IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   persistent_inertial_response_readiness_note IS cited (>=1 hit)  (hits = 1)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   mesoscopic_surrogate_annular_tapered_sweep_note NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 4 PASS / 0 FAIL
+Class-A pattern hits: 4
+==============================================================================
+
+VERIFIED

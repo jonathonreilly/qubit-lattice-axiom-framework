@@ -254449,55 +254449,74 @@
       "verdict_rationale": null
     },
     "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T18:58:38.444251+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "yt_ew_color_projection_theorem": "Audited only the bounded EW normalization family K_EW(kappa_EW)=1/(8/9+kappa_EW/9) at N_c=3, using retained F_adj=8/9 and an explicit free readout coefficient kappa_EW; kappa_EW=0 was not audited as derived."
+        },
+        "dep_claim_type": {
+          "yt_ew_color_projection_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "yt_ew_color_projection_theorem": "retained_bounded"
+        },
+        "deps": [
+          "yt_ew_color_projection_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6a4f423ed33c2db96ecab741c936b4c70c12ba9112558aace81859e8aae42b16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-185816-41cdea85-yt_ward_ratio_tadpole_ca-022",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic cancellation follows exactly from the two stipulated definitions D1 and D2. The audit does not rederive the upstream CMT identity, n_link count, or the square-root coupling-readout rule beyond their cited retained-input role.",
       "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited only the conditional algebraic identity y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare given the cited retained CMT input and equal n_link=1 single-vertex tadpole powers.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T18:58:38.444251+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "yt_ew_color_projection_theorem",
       "deps": [
         "yt_ew_color_projection_theorem"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_yt_ew_color_projection_theorem",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_yt_ew_color_projection_theorem",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "From D1 and D2, (y_t_bare/sqrt(u_0))/(g_bare/sqrt(u_0)) = y_t_bare/g_bare, so the common tadpole factor cancels.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "10438ee488107dc27e54485ec600ee0e0a600824b9d0adfe0a3ed72322ebfd8f",
       "note_path": "docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only whether the upstream audit ledger continues to treat yt_ew_color_projection_theorem D14-D15 as retained inputs for this exact single-vertex use.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 20,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 20
       },
       "runner_path": "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py",
       "title": "yt_ward Canonical-Surface Ratio Narrow Theorem (Tadpole Cancellation)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The stated ratio identity is correct as a class-A algebraic substitution over the cited equal-tadpole inputs, and the runner source genuinely verifies that symbolic cancellation rather than merely printing constants. However, the note adds only a standard-mathematics corollary of one upstream retained authority's CMT/n_link packet and contains no independent physical computation or comparator. Under the decoration tie-break rule, this should be retained as an algebraic decoration rather than promoted as an independent clean theorem."
     },
     "yt_ward_step3_contact_4fermion_vanishing_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

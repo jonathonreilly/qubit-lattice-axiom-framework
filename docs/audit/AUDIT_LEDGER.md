@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 343 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1220 |
+| unaudited | 1219 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -43,25 +43,26 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_wide_lattice_h2t_distance_law_note` | 1 |
+| `decoration_under_yt_ew_color_projection_theorem` | 1 |
 
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 568 |
 | `audited_conditional` | 187 |
-| `audited_decoration` | 23 |
+| `audited_decoration` | 24 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1422 |
+| `unaudited` | 1421 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 964 |
-| `decoration` | 24 |
+| `decoration` | 25 |
 | `meta` | 206 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
-| `positive_theorem` | 742 |
+| `positive_theorem` | 741 |
 
 | criticality | count |
 |---|---:|
@@ -894,6 +895,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
+| `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_yt_ew_color_projection_theorem` | cross_family | codex-gpt-5.5 | A | `yt_ew_color_projection_theorem` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -12589,6 +12591,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited only the conditional algebraic identity y_t(M_Pl)/g_s(M_Pl)=y_t_bare/g_bare given the cited retained CMT input and equal n_link=1 single-vertex tadpole powers.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_yt_ew_color_projection_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-185816-41cdea85-yt_ward_ratio_tadpole_ca-022`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From D1 and D2, (y_t_bare/sqrt(u_0))/(g_bare/sqrt(u_0)) = y_t_bare/g_bare, so the common tadpole factor cancels.  _(class `A`)_
+- **chain closes:** True — The algebraic cancellation follows exactly from the two stipulated definitions D1 and D2. The audit does not rederive the upstream CMT identity, n_link count, or the square-root coupling-readout rule beyond their cited retained-input role.
+- **rationale:** The stated ratio identity is correct as a class-A algebraic substitution over the cited equal-tadpole inputs, and the runner source genuinely verifies that symbolic cancellation rather than merely printing constants. However, the note adds only a standard-mathematics corollary of one upstream retained authority's CMT/n_link packet and contains no independent physical computation or comparator. Under the decoration tie-break rule, this should be retained as an algebraic decoration rather than promoted as an independent clean theorem.
+- **decoration parent:** `yt_ew_color_projection_theorem`
 - **auditor confidence:** high
 
 ### `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`

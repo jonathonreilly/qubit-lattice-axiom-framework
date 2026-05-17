@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 431,
     "high": 161,
-    "leaf": 319,
+    "leaf": 320,
     "medium": 313
   },
   "cycle_break_target_count": 62,
@@ -33932,6 +33932,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "pmns_hw1_source_transfer_boundary_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/PMNS_HW1_RESPONSE_COLUMN_SCHUR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "pmns_selector_three_identity_support_proposal_readme_2026-04-21",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -35913,5 +35937,5 @@
     }
   ],
   "ready_count": 2,
-  "total_pending": 1224
+  "total_pending": 1225
 }

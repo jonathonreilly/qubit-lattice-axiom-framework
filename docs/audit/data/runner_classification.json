@@ -16848,6 +16848,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py"
     },
+    "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py"
+    },
     "pmns_hw1_source_transfer_boundary_note": {
       "assert_count": 1,
       "counts": {
@@ -25905,6 +25917,21 @@
       "assert_count": 1,
       "claims": [
         "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17"
       ],
       "counts": {
         "A": 0,
@@ -52944,12 +52971,12 @@
     "dominant_class_distribution": {
       "A": 190,
       "B": 260,
-      "C": 722,
+      "C": 723,
       "D": 294,
       "none": 431
     },
-    "runners_classified": 1897,
-    "runners_with_C": 932,
+    "runners_classified": 1898,
+    "runners_with_C": 933,
     "runners_with_D": 542
   }
 }

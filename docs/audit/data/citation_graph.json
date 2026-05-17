@@ -54539,7 +54539,7 @@
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
-      "note_hash": "6e819179b3a3647c9ab7df566af8548e23453ed30d4d602efd772cd742ee7ca0",
+      "note_hash": "be3f98273aab1763d5ad4041740f27fe2b03dc1ff1801ff96f2d515e0f130921",
       "path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Left-Handed Charge Matching on the Selected-Axis Surface"

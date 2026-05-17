@@ -1,7 +1,8 @@
 # Left-Handed Charge Matching on the Selected-Axis Surface
 
 **Date:** 2026-04-14 (scope tightened 2026-05-02; audit-prep
-normalization-convention disclaimer 2026-05-07)
+normalization-convention disclaimer 2026-05-07; load-bearing claim
+narrowed 2026-05-17 per audit verdict)
 **Type:** bounded_theorem (audit-pipeline retag from author-hint
 `positive_theorem`; current ledger `claim_type: bounded_theorem`).
 
@@ -12,11 +13,25 @@ verdict for this row is `audited_conditional` (2026-05-05); the source
 author does not propose a retained / positive_theorem promotion at this
 time.
 
-**Claim scope:** the unique traceless abelian eigenvalue pattern
-`(+1/3, −1)` on the `(2,3)` and `(2,1)` blocks of the LH-doublet sector,
-on the graph-first selected-axis surface, **scale fixed by convention
-(`lepton-doublet eigenvalue = -1`), not derived from a non-conventional
-input within this row's load-bearing chain**. SM hypercharge
+**2026-05-17 narrowing:** the 2026-05-05 audit verdict explicitly
+suggested *"add a retained-grade authority deriving the absolute
+normalization β = -1 from nonconventional premises, or **narrow this row
+to the scale-free 1:(-3) ratio only**."* This revision takes the second
+explicit option: the **load-bearing claim is restricted to the structural
+ratio `1 : (-3)` only**. The absolute eigenvalue pattern `(+1/3, -1)` is
+**demoted to a convention-fixed corollary** explicitly recorded as
+**not** load-bearing for this row's chain. The structural ratio is the
+audit-clean class-A algebraic content; the absolute pattern is a
+labelling restatement under the conventional choice `β = -1` and remains
+appropriately flagged as such throughout.
+
+**Claim scope (narrowed):** the structural eigenvalue ratio
+`α : β = 1 : (-3)` on the `(2,3)` and `(2,1)` blocks of the LH-doublet
+sector, on the graph-first selected-axis surface, forced by tracelessness
+on the `(6+2)` state count via `6α + 2β = 0`. **No absolute normalization
+scale claimed; no scale-fix derivation imported.** The convention-fixed
+absolute pattern `(+1/3, -1)` is recorded as a downstream labelling
+corollary, not as a load-bearing theorem conclusion. SM hypercharge
 identification via `Q = T_3 + Y/2` is **explicitly out of scope**
 (separate downstream labelling step).
 
@@ -72,37 +87,41 @@ This is not a defect: it is the explicit convention-vs-derivation
 boundary. Downstream rows that need an absolute eigenvalue scale must
 either accept this convention or cite a separate retained-grade authority.
 
-## Safe statement
+## Safe statement (narrowed to scale-free ratio)
 
 On the graph-first selected-axis surface, the unique traceless abelian
-direction in the gl(3) ⊕ gl(1) commutant has eigenvalue pattern
-**`(+1/3, −1)`** on the `(2,3)` and `(2,1)` sub-decompositions of the
-LH-doublet sector, where:
+direction in the gl(3) ⊕ gl(1) commutant has eigenvalue ratio
+**`α : β = 1 : (-3)`** on the `(2,3)` and `(2,1)` sub-decompositions of
+the LH-doublet sector, where:
 
 - `(2,3)` denotes the SU(2)-doublet × Sym²(C²) (3-dim) block;
 - `(2,1)` denotes the SU(2)-doublet × Anti²(C²) (1-dim) block.
 
-In repo-canonical representation-literal form (matching the convention
-used in `ONE_GENERATION_MATTER_CLOSURE_NOTE.md` for the right-handed sector),
-the convention-normalized restatement of
-this pattern is:
+The ratio is forced structurally by tracelessness on the (6 + 2) state
+count of the LH-doublet sector (`6 · α + 2 · β = 0` ⇒ `β = −3α`). This
+is the load-bearing class-A algebraic content of the row, and is the
+scope-safe statement submitted for independent audit.
+
+### Convention-fixed corollary (NOT load-bearing)
+
+Under the explicit additional convention `β = -1` (the conventional
+SM-labelling assignment for the lepton doublet), the structural ratio
+above gives the absolute eigenvalue pattern
 
 - `Q_L : (2,3)_{+1/3}` — the LH quark-doublet block with the
   convention-fixed eigenvalue `+1/3` on the `(2,3)` sub-decomposition;
 - `L_L : (2,1)_{-1}` — the LH lepton-doublet block with the
   convention-fixed eigenvalue `-1` on the `(2,1)` sub-decomposition.
 
-These literals carry the same convention-normalized boundary as the
-narrative statement above (their absolute scale is set by the `β = -1`
-labelling convention, not by a derivation in this row's load-bearing
-chain). Audit status remains owned by the independent audit lane.
-
-The eigenvalue ratio `1 : (−3)` is forced structurally by tracelessness
-on the (6 + 2) state count of the LH-doublet sector
-(`6 · α + 2 · β = 0` ⇒ `β = −3α`); the overall scale `α = +1/3` is fixed
-by the convention that the lepton-doublet eigenvalue is `−1`.
-
-This is the scope-safe statement submitted for independent audit.
+This convention-fixed pattern is **not** the load-bearing claim of this
+note. It is recorded explicitly because previous versions of the note
+named it as the headline conclusion; per the 2026-05-05 audit verdict's
+explicit re-scoping guidance, the load-bearing claim is now the
+structural ratio above, and the absolute pattern is a downstream
+labelling restatement conditional on the `β = -1` convention. Any
+retained-grade reuse of the absolute pattern requires either accepting
+the convention or citing a separate retained-grade authority deriving
+an absolute normalization from nonconventional premises.
 
 ## Canonical derivation stack
 
@@ -112,10 +131,13 @@ This is the scope-safe statement submitted for independent audit.
    shows that the selected axis produces the canonical weak fiber,
    residual `3 ⊕ 1` base split, and structural `SU(3)` closure.
 3. On that same selected-axis surface, the unique traceless abelian
-   direction fixes the left-handed eigenvalue ratio `1:(-3)` on the
-   `(2,3)` (quark-doublet) block and `−1` on the `(2,1)` (lepton-doublet)
-   block after the explicit `β = -1` normalization convention. **This is
-   the bounded, convention-normalized load-bearing step.**
+   direction in the `gl(3) ⊕ gl(1)` commutant produces the scale-free
+   eigenvalue ratio `α : β = 1 : (-3)` on the `(2,3)` (quark-doublet)
+   block and `(2,1)` (lepton-doublet) block, forced structurally by
+   tracelessness on the `(6+2)` state count. **This scale-free ratio
+   is the load-bearing step.** The convention-fixed absolute pattern
+   `(+1/3, -1)` under `β = -1` is a downstream labelling restatement,
+   not a load-bearing theorem conclusion of this row.
 
 ## Out of scope: SM hypercharge identification
 
@@ -151,11 +173,14 @@ The safe authority boundary is:
 ```yaml
 proposed_claim_type: bounded_theorem
 proposed_claim_scope: |
-  Eigenvalue pattern (+1/3, -1) on (2,3) and (2,1) blocks of LH-doublet
-  sector under graph-first commutant decomposition, with overall scale
-  fixed by lepton-doublet = -1 convention. SM hypercharge identification
-  out of scope (separate downstream labelling step).
-proposed_load_bearing_step_class: B (bounded/convention-normalized algebraic)
+  Scale-free eigenvalue ratio α : β = 1 : (-3) on (2,3) and (2,1) blocks
+  of LH-doublet sector under graph-first commutant decomposition, forced
+  structurally by tracelessness on the (6+2) state count. No absolute
+  normalization claimed; convention-fixed absolute pattern (+1/3, -1) is
+  recorded as a NON-load-bearing downstream labelling corollary
+  conditional on β = -1. SM hypercharge identification out of scope
+  (separate downstream labelling step).
+proposed_load_bearing_step_class: A (class-A algebraic ratio from tracelessness)
 status_authority: independent audit lane only
 ```
 

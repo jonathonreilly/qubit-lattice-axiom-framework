@@ -15,7 +15,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -24,7 +24,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -33,7 +33,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md",
           "title": "Koide A1 Probe 12 \u2014 Plancherel / Peter-Weyl Bimodule Weighting Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -52,7 +52,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -61,7 +61,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -70,7 +70,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md",
           "title": "Koide A1 Probe 13 \u2014 Real-Structure / Antilinear-Involution Sharpened Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -113,7 +113,7 @@
         }
       ],
       "length": 8,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -122,7 +122,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -131,7 +131,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
           "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -140,7 +140,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
           "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -149,7 +149,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md",
           "title": "PMNS Selector Sign-To-Branch Reduction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -158,7 +158,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md",
           "title": "Neutrino Two-Amplitude Last-Mile Reduction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -167,7 +167,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md",
           "title": "PMNS `C3` Nontrivial-Character Current Boundary",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -176,7 +176,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md",
           "title": "DM PMNS Graph-First Ordered-Chain Nonzero-Current Activation Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -185,7 +185,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_WILSON_TO_DWEH_LOCAL_CHAIN_PATH_ALGEBRA_TARGET_NOTE_2026-04-18.md",
           "title": "DM Wilson-to-`dW_e^H` Local Chain Path-Algebra Target",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -228,7 +228,7 @@
         }
       ],
       "length": 8,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -237,7 +237,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
           "title": "Koide Q = 2/3 as a C_3[111] Character-Theoretic Derivation \u2014 Candidate Extension Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -246,7 +246,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md",
           "title": "Koide Positive Paths \u2014 First-Principles Attack Map",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -255,7 +255,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_GAMMA_ORBIT_POSITIVE_ONE_CLOCK_SEMIGROUP_NOTE_2026-04-18.md",
           "title": "Koide `Gamma`-Orbit Positive One-Clock Semigroup",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -264,7 +264,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_GAMMA_ORBIT_OBSERVABLE_SELECTOR_GENERATOR_LINE_NOTE_2026-04-18.md",
           "title": "Koide `Gamma`-Orbit Observable-Selector Generator Line",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -273,7 +273,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_GAMMA_ORBIT_SELECTED_LINE_CLOSURE_NOTE_2026-04-18.md",
           "title": "Koide `Gamma`-Orbit Selected-Line Closure",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -282,7 +282,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_SELECTED_LINE_CYCLIC_RESPONSE_BRIDGE_NOTE_2026-04-18.md",
           "title": "Koide Selected-Line Cyclic-Response Bridge",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -291,7 +291,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md",
           "title": "Koide Brannen-Phase Reduction Theorem: Conditional `\u03b4 = Q/d` Route",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -300,7 +300,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md",
           "title": "Koide Z_3-Qubit Radian-Bridge No-Go Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -343,7 +343,7 @@
         }
       ],
       "length": 8,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -352,7 +352,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -361,7 +361,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -370,7 +370,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -379,7 +379,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -388,7 +388,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -397,7 +397,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -406,7 +406,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -415,7 +415,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -458,7 +458,7 @@
         }
       ],
       "length": 8,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -467,7 +467,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -476,7 +476,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -485,7 +485,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -494,7 +494,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -503,7 +503,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -512,7 +512,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -521,7 +521,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -530,7 +530,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md",
           "title": "Planck Orientation Principle from Retained 3+1 Single-Clock Time-Asymmetry",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -577,7 +577,7 @@
         }
       ],
       "length": 9,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -586,7 +586,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_WILSON_TO_DWEH_HERMITIAN_SOURCE_FAMILY_TARGET_NOTE_2026-04-18.md",
           "title": "DM Wilson-to-`dW_e^H` Hermitian Source-Family Target",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -595,7 +595,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
           "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -604,7 +604,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
           "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -613,7 +613,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
           "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -622,7 +622,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_SELECTOR_SIGN_TO_BRANCH_REDUCTION_NOTE.md",
           "title": "PMNS Selector Sign-To-Branch Reduction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -631,7 +631,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md",
           "title": "Neutrino Two-Amplitude Last-Mile Reduction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -640,7 +640,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md",
           "title": "PMNS `C3` Nontrivial-Character Current Boundary",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -649,7 +649,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_PMNS_GRAPH_FIRST_ORDERED_CHAIN_NONZERO_CURRENT_ACTIVATION_THEOREM_NOTE_2026-04-21.md",
           "title": "DM PMNS Graph-First Ordered-Chain Nonzero-Current Activation Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -658,7 +658,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DM_WILSON_TO_DWEH_LOCAL_CHAIN_PATH_ALGEBRA_TARGET_NOTE_2026-04-18.md",
           "title": "DM Wilson-to-`dW_e^H` Local Chain Path-Algebra Target",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -705,7 +705,7 @@
         }
       ],
       "length": 9,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -714,7 +714,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
           "title": "Koide Q = 2/3 as a C_3[111] Character-Theoretic Derivation \u2014 Candidate Extension Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -723,7 +723,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md",
           "title": "Koide Positive Paths \u2014 First-Principles Attack Map",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -732,7 +732,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_GAMMA_ORBIT_POSITIVE_ONE_CLOCK_SEMIGROUP_NOTE_2026-04-18.md",
           "title": "Koide `Gamma`-Orbit Positive One-Clock Semigroup",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -741,7 +741,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_GAMMA_ORBIT_OBSERVABLE_SELECTOR_GENERATOR_LINE_NOTE_2026-04-18.md",
           "title": "Koide `Gamma`-Orbit Observable-Selector Generator Line",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -750,7 +750,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_GAMMA_ORBIT_SELECTED_LINE_CLOSURE_NOTE_2026-04-18.md",
           "title": "Koide `Gamma`-Orbit Selected-Line Closure",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -759,7 +759,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_SELECTED_LINE_CYCLIC_RESPONSE_BRIDGE_NOTE_2026-04-18.md",
           "title": "Koide Selected-Line Cyclic-Response Bridge",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -768,7 +768,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md",
           "title": "Koide Brannen-Phase Reduction Theorem: Conditional `\u03b4 = Q/d` Route",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -777,7 +777,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md",
           "title": "Koide Z_3-Qubit Radian-Bridge No-Go Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -786,7 +786,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
           "title": "Koide `Q` \u2194 `\u03b4` Linking Relation: Partial Closure and Named Residual Postulate",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -833,7 +833,7 @@
         }
       ],
       "length": 9,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -842,7 +842,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -851,7 +851,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -860,7 +860,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -869,7 +869,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -878,7 +878,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -887,7 +887,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -896,7 +896,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -905,7 +905,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -914,7 +914,7 @@
           "effective_status": "meta",
           "note_path": "docs/CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md",
           "title": "Conventions Unification Companion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -965,7 +965,7 @@
         }
       ],
       "length": 10,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -974,7 +974,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_optC.md",
           "title": "A3 Option C - Brannen-Rivero / Physical-Lattice Baseline Bounded Decomposition",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -983,7 +983,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -992,7 +992,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1001,7 +1001,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1010,7 +1010,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1019,7 +1019,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1028,7 +1028,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1037,7 +1037,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1046,7 +1046,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1055,7 +1055,7 @@
           "effective_status": "meta",
           "note_path": "docs/CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md",
           "title": "Conventions Unification Companion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -1106,7 +1106,7 @@
         }
       ],
       "length": 10,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1115,7 +1115,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1124,7 +1124,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1133,7 +1133,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1142,7 +1142,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1151,7 +1151,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1160,7 +1160,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1169,7 +1169,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1178,7 +1178,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1187,7 +1187,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1196,7 +1196,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md",
           "title": "Bridge-Gap Route 1 \u2014 Higgs/Yukawa C_3-Breaking Dynamics Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -1247,7 +1247,7 @@
         }
       ],
       "length": 10,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1256,7 +1256,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1265,7 +1265,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1274,7 +1274,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1283,7 +1283,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1292,7 +1292,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1301,7 +1301,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1310,7 +1310,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1319,7 +1319,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1328,7 +1328,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1337,7 +1337,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md",
           "title": "A3 Route 2 \u2014 Single-Clock / Lieb-Robinson C_3[111] Symmetry-Breaking Attack (Bounded Obstruction)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -1388,7 +1388,7 @@
         }
       ],
       "length": 10,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1397,7 +1397,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1406,7 +1406,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1415,7 +1415,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1424,7 +1424,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1433,7 +1433,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1442,7 +1442,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1451,7 +1451,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1460,7 +1460,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1469,7 +1469,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1478,7 +1478,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md",
           "title": "A3 / AC_phi Route 3 \u2014 Anomaly Inflow (Bounded Obstruction, 7-Vector Sweep)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -1529,7 +1529,7 @@
         }
       ],
       "length": 10,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1538,7 +1538,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1547,7 +1547,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1556,7 +1556,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1565,7 +1565,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1574,7 +1574,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1583,7 +1583,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1592,7 +1592,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1601,7 +1601,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1610,7 +1610,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1619,7 +1619,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md",
           "title": "A3 Route 5 \u2014 No-Proper-Quotient Species-Disclaimer (Sharpened Obstruction, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -1670,7 +1670,7 @@
         }
       ],
       "length": 10,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1679,7 +1679,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1688,7 +1688,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1697,7 +1697,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1706,7 +1706,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1715,7 +1715,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1724,7 +1724,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1733,7 +1733,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1742,7 +1742,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1751,7 +1751,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1760,7 +1760,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md",
           "title": "Koide A1 Probe \u2014 RP + GNS \u2192 Frobenius Pairing Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -1811,7 +1811,7 @@
         }
       ],
       "length": 10,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1820,7 +1820,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1829,7 +1829,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1838,7 +1838,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1847,7 +1847,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1856,7 +1856,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1865,7 +1865,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1874,7 +1874,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1883,7 +1883,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1892,7 +1892,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1901,7 +1901,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -1956,7 +1956,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -1965,7 +1965,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1974,7 +1974,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1983,7 +1983,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -1992,7 +1992,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2001,7 +2001,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2010,7 +2010,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2019,7 +2019,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2028,7 +2028,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2037,7 +2037,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2046,7 +2046,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md",
           "title": "A3 Route 5 \u2014 No-Proper-Quotient Species-Disclaimer (Sharpened Obstruction, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2055,7 +2055,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md",
           "title": "Staggered-Dirac Direct Three-State Algebraic Support",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -2110,7 +2110,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -2119,7 +2119,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2128,7 +2128,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2137,7 +2137,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2146,7 +2146,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2155,7 +2155,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2164,7 +2164,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2173,7 +2173,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2182,7 +2182,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2191,7 +2191,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2200,7 +2200,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2209,7 +2209,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md",
           "title": "A3 / AC_phi Route 3 \u2014 Anomaly Inflow (Bounded Obstruction, 7-Vector Sweep)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -2264,7 +2264,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -2273,7 +2273,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2282,7 +2282,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2291,7 +2291,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2300,7 +2300,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2309,7 +2309,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2318,7 +2318,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2327,7 +2327,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2336,7 +2336,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2345,7 +2345,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2354,7 +2354,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2363,7 +2363,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md",
           "title": "A3 Route 5 \u2014 No-Proper-Quotient Species-Disclaimer (Sharpened Obstruction, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -2418,7 +2418,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -2427,7 +2427,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2436,7 +2436,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2445,7 +2445,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2454,7 +2454,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2463,7 +2463,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2472,7 +2472,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2481,7 +2481,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2490,7 +2490,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2499,7 +2499,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2508,7 +2508,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md",
           "title": "Koide A1 Probe 5 \u2014 RG Fixed-Point Hypothesis: Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2517,7 +2517,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md",
           "title": "A3 R5 Hostile Review \u2014 Confirms Obstruction (with Sharpenings)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -2572,7 +2572,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -2581,7 +2581,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2590,7 +2590,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2599,7 +2599,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2608,7 +2608,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md",
           "title": "Planck Boundary-Density Extension Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2617,7 +2617,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md",
           "title": "Planck Source-Unit Normalization Support Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2626,7 +2626,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md",
           "title": "Area-Law Primitive CAR Edge Identification Theorem Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2635,7 +2635,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md",
           "title": "Area-Law Native CAR Semantics Tightening Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2644,7 +2644,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Primitive Clifford-Majorana Edge Derivation Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2653,7 +2653,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Link-Local First-Variation P_A Forcing Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2662,7 +2662,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
           "title": "Anomaly Cancellation Forces 3+1 Spacetime",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2671,7 +2671,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -2726,7 +2726,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -2735,7 +2735,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2744,7 +2744,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2753,7 +2753,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2762,7 +2762,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2771,7 +2771,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2780,7 +2780,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2789,7 +2789,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2798,7 +2798,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2807,7 +2807,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2816,7 +2816,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2825,7 +2825,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -2880,7 +2880,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -2889,7 +2889,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2898,7 +2898,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2907,7 +2907,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2916,7 +2916,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2925,7 +2925,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2934,7 +2934,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2943,7 +2943,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2952,7 +2952,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2961,7 +2961,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2970,7 +2970,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -2979,7 +2979,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_FLAVOR_ANOMALY_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe2.md",
           "title": "Koide A1 Probe \u2014 Flavor-Sector Anomaly Bounded Obstruction (Probe 2)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -3034,7 +3034,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -3043,7 +3043,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3052,7 +3052,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3061,7 +3061,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3070,7 +3070,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3079,7 +3079,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3088,7 +3088,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3097,7 +3097,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3106,7 +3106,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3115,7 +3115,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3124,7 +3124,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3133,7 +3133,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_GRAVITY_PHASE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe3.md",
           "title": "Koide A1 Probe \u2014 Gravity-as-Phase Matter-Sector Inner Product Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -3188,7 +3188,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -3197,7 +3197,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3206,7 +3206,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3215,7 +3215,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3224,7 +3224,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3233,7 +3233,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3242,7 +3242,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3251,7 +3251,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3260,7 +3260,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3269,7 +3269,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3278,7 +3278,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3287,7 +3287,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_OPERATOR_CLASS_BOUNDED_NOTE_2026-05-08_probe6.md",
           "title": "Koide A1 Probe 6 \u2014 Operator-Class Expansion Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -3342,7 +3342,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -3351,7 +3351,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3360,7 +3360,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3369,7 +3369,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3378,7 +3378,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3387,7 +3387,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3396,7 +3396,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3405,7 +3405,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3414,7 +3414,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3423,7 +3423,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3432,7 +3432,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3441,7 +3441,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md",
           "title": "Koide A1 Probe 12 \u2014 Plancherel / Peter-Weyl Bimodule Weighting Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -3496,7 +3496,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -3505,7 +3505,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3514,7 +3514,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3523,7 +3523,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3532,7 +3532,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3541,7 +3541,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3550,7 +3550,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3559,7 +3559,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3568,7 +3568,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3577,7 +3577,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3586,7 +3586,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3595,7 +3595,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md",
           "title": "Koide A1 Probe 13 \u2014 Real-Structure / Antilinear-Involution Sharpened Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -3650,7 +3650,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -3659,7 +3659,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3668,7 +3668,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3677,7 +3677,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3686,7 +3686,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3695,7 +3695,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3704,7 +3704,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3713,7 +3713,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3722,7 +3722,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3731,7 +3731,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3740,7 +3740,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3749,7 +3749,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md",
           "title": "Koide A1 Probe 5 \u2014 RG Fixed-Point Hypothesis: Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -3804,7 +3804,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -3813,7 +3813,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3822,7 +3822,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3831,7 +3831,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3840,7 +3840,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3849,7 +3849,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3858,7 +3858,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3867,7 +3867,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3876,7 +3876,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3885,7 +3885,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3894,7 +3894,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3903,7 +3903,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md",
           "title": "Koide A1 Probe \u2014 RP + GNS \u2192 Frobenius Pairing Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -3958,7 +3958,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -3967,7 +3967,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3976,7 +3976,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3985,7 +3985,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -3994,7 +3994,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4003,7 +4003,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4012,7 +4012,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4021,7 +4021,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4030,7 +4030,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4039,7 +4039,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4048,7 +4048,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4057,7 +4057,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_SPECTRAL_ACTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe4.md",
           "title": "Koide A1 Probe 4 \u2014 Spectral-Action Principle (Connes-style) Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -4112,7 +4112,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -4121,7 +4121,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4130,7 +4130,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4139,7 +4139,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4148,7 +4148,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4157,7 +4157,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4166,7 +4166,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4175,7 +4175,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4184,7 +4184,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4193,7 +4193,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4202,7 +4202,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4211,7 +4211,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe7.md",
           "title": "Koide A1 Probe 7 \u2014 Retained Z_2 \u00d7 C_3 Pairing Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -4266,7 +4266,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -4275,7 +4275,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4284,7 +4284,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4293,7 +4293,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4302,7 +4302,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4311,7 +4311,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4320,7 +4320,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4329,7 +4329,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4338,7 +4338,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4347,7 +4347,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4356,7 +4356,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4365,7 +4365,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routea.md",
           "title": "Koide A1 Route A \u2014 Koide-Nishiura U(3) Quartic Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -4420,7 +4420,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -4429,7 +4429,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4438,7 +4438,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4447,7 +4447,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4456,7 +4456,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4465,7 +4465,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4474,7 +4474,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4483,7 +4483,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4492,7 +4492,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4501,7 +4501,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4510,7 +4510,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4519,7 +4519,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md",
           "title": "Koide A1 Route D \u2014 Newton-Girard Polynomial Structure Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -4574,7 +4574,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -4583,7 +4583,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4592,7 +4592,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4601,7 +4601,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4610,7 +4610,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4619,7 +4619,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4628,7 +4628,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4637,7 +4637,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4646,7 +4646,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4655,7 +4655,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4664,7 +4664,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4673,7 +4673,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_ROUTE_E_KOSTANT_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routee.md",
           "title": "Koide A1 Route E \u2014 Kostant Weyl-Vector / A_1 Root System Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -4728,7 +4728,7 @@
         }
       ],
       "length": 11,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -4737,7 +4737,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4746,7 +4746,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4755,7 +4755,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4764,7 +4764,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4773,7 +4773,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4782,7 +4782,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4791,7 +4791,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4800,7 +4800,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4809,7 +4809,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4818,7 +4818,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4827,7 +4827,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_ROUTE_F_CASIMIR_DIFFERENCE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routef.md",
           "title": "Koide A1 Route F \u2014 Yukawa Casimir-Difference Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -4886,7 +4886,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -4895,7 +4895,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_optC.md",
           "title": "A3 Option C - Brannen-Rivero / Physical-Lattice Baseline Bounded Decomposition",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4904,7 +4904,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4913,7 +4913,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4922,7 +4922,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4931,7 +4931,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4940,7 +4940,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4949,7 +4949,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4958,7 +4958,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4967,7 +4967,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4976,7 +4976,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4985,7 +4985,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -4994,7 +4994,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -5053,7 +5053,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -5062,7 +5062,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5071,7 +5071,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5080,7 +5080,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5089,7 +5089,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5098,7 +5098,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5107,7 +5107,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5116,7 +5116,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5125,7 +5125,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5134,7 +5134,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5143,7 +5143,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5152,7 +5152,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md",
           "title": "A3 Route 5 \u2014 No-Proper-Quotient Species-Disclaimer (Sharpened Obstruction, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5161,7 +5161,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md",
           "title": "Staggered-Dirac Direct Three-State Algebraic Support",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -5220,7 +5220,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -5229,7 +5229,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5238,7 +5238,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5247,7 +5247,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5256,7 +5256,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5265,7 +5265,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md",
           "title": "Planck Boundary-Density Extension Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5274,7 +5274,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md",
           "title": "Planck Source-Unit Normalization Support Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5283,7 +5283,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md",
           "title": "Area-Law Primitive CAR Edge Identification Theorem Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5292,7 +5292,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md",
           "title": "Area-Law Native CAR Semantics Tightening Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5301,7 +5301,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Primitive Clifford-Majorana Edge Derivation Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5310,7 +5310,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Link-Local First-Variation P_A Forcing Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5319,7 +5319,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
           "title": "Anomaly Cancellation Forces 3+1 Spacetime",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5328,7 +5328,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -5387,7 +5387,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -5396,7 +5396,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5405,7 +5405,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5414,7 +5414,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5423,7 +5423,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5432,7 +5432,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5441,7 +5441,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5450,7 +5450,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5459,7 +5459,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5468,7 +5468,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5477,7 +5477,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5486,7 +5486,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5495,7 +5495,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md",
           "title": "Bridge-Gap Route 1 \u2014 Higgs/Yukawa C_3-Breaking Dynamics Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -5554,7 +5554,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -5563,7 +5563,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5572,7 +5572,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5581,7 +5581,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5590,7 +5590,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5599,7 +5599,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5608,7 +5608,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5617,7 +5617,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5626,7 +5626,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5635,7 +5635,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5644,7 +5644,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5653,7 +5653,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5662,7 +5662,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md",
           "title": "A3 Route 2 \u2014 Single-Clock / Lieb-Robinson C_3[111] Symmetry-Breaking Attack (Bounded Obstruction)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -5721,7 +5721,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -5730,7 +5730,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5739,7 +5739,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5748,7 +5748,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5757,7 +5757,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5766,7 +5766,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5775,7 +5775,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5784,7 +5784,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5793,7 +5793,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5802,7 +5802,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5811,7 +5811,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5820,7 +5820,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5829,7 +5829,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md",
           "title": "A3 / AC_phi Route 3 \u2014 Anomaly Inflow (Bounded Obstruction, 7-Vector Sweep)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -5888,7 +5888,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -5897,7 +5897,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5906,7 +5906,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5915,7 +5915,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5924,7 +5924,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5933,7 +5933,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5942,7 +5942,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5951,7 +5951,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5960,7 +5960,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5969,7 +5969,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5978,7 +5978,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5987,7 +5987,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -5996,7 +5996,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md",
           "title": "A3 Route 4 \u2014 Cl(3) tensor Cl(3) -> Spin(6) -> SU(3) x U(1) Chain \u2014 Sharpened Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -6055,7 +6055,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -6064,7 +6064,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6073,7 +6073,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6082,7 +6082,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6091,7 +6091,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6100,7 +6100,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6109,7 +6109,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6118,7 +6118,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6127,7 +6127,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6136,7 +6136,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6145,7 +6145,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6154,7 +6154,7 @@
           "effective_status": "meta",
           "note_path": "docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md",
           "title": "C_3 Symmetry Preserved Interpretation Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6163,7 +6163,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md",
           "title": "A3 Route 5 \u2014 No-Proper-Quotient Species-Disclaimer (Sharpened Obstruction, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -6222,7 +6222,7 @@
         }
       ],
       "length": 12,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -6231,7 +6231,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
           "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6240,7 +6240,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Reeh-Schlieder Cyclicity on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6249,7 +6249,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6258,7 +6258,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6267,7 +6267,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6276,7 +6276,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6285,7 +6285,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6294,7 +6294,7 @@
           "effective_status": "meta",
           "note_path": "docs/PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md",
           "title": "Planck-from-Structure Path-Opening Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6303,7 +6303,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
           "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6312,7 +6312,7 @@
           "effective_status": "meta",
           "note_path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
           "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6321,7 +6321,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md",
           "title": "Koide A1 Probe 5 \u2014 RG Fixed-Point Hypothesis: Bounded Obstruction",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6330,7 +6330,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md",
           "title": "A3 R5 Hostile Review \u2014 Confirms Obstruction (with Sharpenings)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -6393,7 +6393,7 @@
         }
       ],
       "length": 13,
-      "max_transitive_descendants": 811,
+      "max_transitive_descendants": 814,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -6402,7 +6402,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
           "title": "Axiom-First Microcausality / Lieb-Robinson Bound on A_min",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6411,7 +6411,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
           "title": "Lorentz Kernel Positive Closure Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6420,7 +6420,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
           "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6429,7 +6429,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md",
           "title": "Planck-Scale Lane Status Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6438,7 +6438,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md",
           "title": "Planck-Scale Conditional Completion Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6447,7 +6447,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md",
           "title": "Planck Boundary-Density Extension Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6456,7 +6456,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md",
           "title": "Planck Source-Unit Normalization Support Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6465,7 +6465,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md",
           "title": "Area-Law Primitive CAR Edge Identification Theorem Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6474,7 +6474,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md",
           "title": "Area-Law Native CAR Semantics Tightening Note",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6483,7 +6483,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Primitive Clifford-Majorana Edge Derivation Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6492,7 +6492,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
           "title": "Planck Link-Local First-Variation P_A Forcing Theorem",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6501,7 +6501,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
           "title": "Anomaly Cancellation Forces 3+1 Spacetime",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         },
         {
           "audit_status": "unaudited",
@@ -6510,7 +6510,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
           "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on Cl(3) \u2297 Z^3",
-          "transitive_descendants": 811
+          "transitive_descendants": 814
         }
       ],
       "requires_lemma_extraction": false
@@ -6637,7 +6637,7 @@
         }
       ],
       "length": 4,
-      "max_transitive_descendants": 69,
+      "max_transitive_descendants": 71,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -6646,7 +6646,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md",
           "title": "Koide Q Background-Zero / Z-Erasure Criterion Theorem",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         },
         {
           "audit_status": "unaudited",
@@ -6655,7 +6655,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_NO_HIDDEN_SOURCE_AUDIT_2026-04-22.md",
           "title": "Koide Q No-Hidden-Source Audit",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         },
         {
           "audit_status": "unaudited",
@@ -6664,7 +6664,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_NORMALIZED_SECOND_ORDER_EFFECTIVE_ACTION_THEOREM_2026-04-22.md",
           "title": "Koide Q From The Normalized Second-Order Effective Action",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         },
         {
           "audit_status": "unaudited",
@@ -6673,7 +6673,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md",
           "title": "Koide Q OP-Locality Source-Domain Structural Support Claim (V8)",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         }
       ],
       "requires_lemma_extraction": false
@@ -6704,7 +6704,7 @@
         }
       ],
       "length": 5,
-      "max_transitive_descendants": 69,
+      "max_transitive_descendants": 71,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -6713,7 +6713,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md",
           "title": "Koide Support Package \u2014 `Q = 2/3` and `\u03b4 = 2/9`",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         },
         {
           "audit_status": "unaudited",
@@ -6722,7 +6722,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md",
           "title": "Koide Q Background-Zero / Z-Erasure Criterion Theorem",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         },
         {
           "audit_status": "unaudited",
@@ -6731,7 +6731,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_NO_HIDDEN_SOURCE_AUDIT_2026-04-22.md",
           "title": "Koide Q No-Hidden-Source Audit",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         },
         {
           "audit_status": "unaudited",
@@ -6740,7 +6740,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_NORMALIZED_SECOND_ORDER_EFFECTIVE_ACTION_THEOREM_2026-04-22.md",
           "title": "Koide Q From The Normalized Second-Order Effective Action",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         },
         {
           "audit_status": "unaudited",
@@ -6749,7 +6749,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md",
           "title": "Koide Q Source-Domain Canonical Descent Theorem",
-          "transitive_descendants": 69
+          "transitive_descendants": 71
         }
       ],
       "requires_lemma_extraction": false

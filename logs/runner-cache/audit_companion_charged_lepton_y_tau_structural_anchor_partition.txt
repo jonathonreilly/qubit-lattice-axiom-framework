@@ -1,0 +1,129 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_charged_lepton_y_tau_structural_anchor_partition.py
+runner_sha256: 5ce868e8936982510cf923b8ab31ce97d075ddd4a8c681f00f78705974808a6e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+CHARGED_LEPTON_Y_TAU_WARD_STRUCTURAL_ANCHOR_REQUIREMENTS_POSITIVE_THEOREM_NOTE_2026-05-17
+Goal: A-class symbolic verification of the structural-anchor partition
+{A1, A2, A3, A4, A5, A6} on the framework surface catalogued by the parent no-go
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: anchor-class records and symbolic setup
+----------------------------------------------------------------------------------------
+  Anchor classes recorded: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6']
+  Parent no-go mechanisms (SA-A, SA-B, M3, M4, M5, M6 plus surviving M1): ['M1', 'M3', 'M4', 'M5', 'M6', 'SA-A', 'SA-B']
+    A1: gauge_kind=non_abelian_color, source_primitive_family=SU_Nc_Fierz_identity, parent_mechanism=SA-A
+    A2: gauge_kind=flavor_symmetry, source_primitive_family=alternating_group_A4_rep_theory, parent_mechanism=M3
+    A3: gauge_kind=yukawa_vertex_trace, source_primitive_family=yukawa_anomaly_identity_beyond_gauge, parent_mechanism=SA-B_M4
+    A4: gauge_kind=cross_sector_yukawa_ratio, source_primitive_family=Cl3_Z3_structural_yukawa_ratio_identity, parent_mechanism=M5
+    A5: gauge_kind=koide_flagship_brannen_direction, source_primitive_family=retained_koide_Q_two_thirds_plus_y_tau_direction_identity, parent_mechanism=M1
+    A6: gauge_kind=hw1_three_generation, source_primitive_family=hw1_to_yukawa_rep_theoretic_identity, parent_mechanism=M6
+  [PASS (A)] exactly six anchor classes (A1..A6) are catalogued  (|ANCHOR_CLASSES| = 6)
+  [PASS (A)] anchor classes are exactly {A1, A2, A3, A4, A5, A6} (no relabel, no extra)  (got ['A1', 'A2', 'A3', 'A4', 'A5', 'A6'])
+
+----------------------------------------------------------------------------------------
+Part 1: pairwise distinguishability on (framework surface)
+----------------------------------------------------------------------------------------
+  [PASS (A)] all six classes carry sqrt_rational_form = True (each produces a sqrt-rational C)  (A1-A6 each consume a structural sqrt-rational primitive by class definition)
+  [PASS (A)] pair (A1, A2) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A1=('non_abelian_color', 'non_color_singlet_block', 'SU_Nc_Fierz_identity', 'SA-A'), A2=('flavor_symmetry', 'lepton_generation_triplet', 'alternating_group_A4_rep_theory', 'M3'))
+  [PASS (A)] pair (A1, A3) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A1=('non_abelian_color', 'non_color_singlet_block', 'SU_Nc_Fierz_identity', 'SA-A'), A3=('yukawa_vertex_trace', 'Y_e_quartic_contraction', 'yukawa_anomaly_identity_beyond_gauge', 'SA-B_M4'))
+  [PASS (A)] pair (A1, A4) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A1=('non_abelian_color', 'non_color_singlet_block', 'SU_Nc_Fierz_identity', 'SA-A'), A4=('cross_sector_yukawa_ratio', 'lepton_quark_cross_sector', 'Cl3_Z3_structural_yukawa_ratio_identity', 'M5'))
+  [PASS (A)] pair (A1, A5) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A1=('non_abelian_color', 'non_color_singlet_block', 'SU_Nc_Fierz_identity', 'SA-A'), A5=('koide_flagship_brannen_direction', 'charged_lepton_brannen_direction', 'retained_koide_Q_two_thirds_plus_y_tau_direction_identity', 'M1'))
+  [PASS (A)] pair (A1, A6) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A1=('non_abelian_color', 'non_color_singlet_block', 'SU_Nc_Fierz_identity', 'SA-A'), A6=('hw1_three_generation', 'three_generation_hw1_Cl3_carrier', 'hw1_to_yukawa_rep_theoretic_identity', 'M6'))
+  [PASS (A)] pair (A2, A3) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A2=('flavor_symmetry', 'lepton_generation_triplet', 'alternating_group_A4_rep_theory', 'M3'), A3=('yukawa_vertex_trace', 'Y_e_quartic_contraction', 'yukawa_anomaly_identity_beyond_gauge', 'SA-B_M4'))
+  [PASS (A)] pair (A2, A4) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A2=('flavor_symmetry', 'lepton_generation_triplet', 'alternating_group_A4_rep_theory', 'M3'), A4=('cross_sector_yukawa_ratio', 'lepton_quark_cross_sector', 'Cl3_Z3_structural_yukawa_ratio_identity', 'M5'))
+  [PASS (A)] pair (A2, A5) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A2=('flavor_symmetry', 'lepton_generation_triplet', 'alternating_group_A4_rep_theory', 'M3'), A5=('koide_flagship_brannen_direction', 'charged_lepton_brannen_direction', 'retained_koide_Q_two_thirds_plus_y_tau_direction_identity', 'M1'))
+  [PASS (A)] pair (A2, A6) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A2=('flavor_symmetry', 'lepton_generation_triplet', 'alternating_group_A4_rep_theory', 'M3'), A6=('hw1_three_generation', 'three_generation_hw1_Cl3_carrier', 'hw1_to_yukawa_rep_theoretic_identity', 'M6'))
+  [PASS (A)] pair (A3, A4) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A3=('yukawa_vertex_trace', 'Y_e_quartic_contraction', 'yukawa_anomaly_identity_beyond_gauge', 'SA-B_M4'), A4=('cross_sector_yukawa_ratio', 'lepton_quark_cross_sector', 'Cl3_Z3_structural_yukawa_ratio_identity', 'M5'))
+  [PASS (A)] pair (A3, A5) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A3=('yukawa_vertex_trace', 'Y_e_quartic_contraction', 'yukawa_anomaly_identity_beyond_gauge', 'SA-B_M4'), A5=('koide_flagship_brannen_direction', 'charged_lepton_brannen_direction', 'retained_koide_Q_two_thirds_plus_y_tau_direction_identity', 'M1'))
+  [PASS (A)] pair (A3, A6) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A3=('yukawa_vertex_trace', 'Y_e_quartic_contraction', 'yukawa_anomaly_identity_beyond_gauge', 'SA-B_M4'), A6=('hw1_three_generation', 'three_generation_hw1_Cl3_carrier', 'hw1_to_yukawa_rep_theoretic_identity', 'M6'))
+  [PASS (A)] pair (A4, A5) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A4=('cross_sector_yukawa_ratio', 'lepton_quark_cross_sector', 'Cl3_Z3_structural_yukawa_ratio_identity', 'M5'), A5=('koide_flagship_brannen_direction', 'charged_lepton_brannen_direction', 'retained_koide_Q_two_thirds_plus_y_tau_direction_identity', 'M1'))
+  [PASS (A)] pair (A4, A6) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A4=('cross_sector_yukawa_ratio', 'lepton_quark_cross_sector', 'Cl3_Z3_structural_yukawa_ratio_identity', 'M5'), A6=('hw1_three_generation', 'three_generation_hw1_Cl3_carrier', 'hw1_to_yukawa_rep_theoretic_identity', 'M6'))
+  [PASS (A)] pair (A5, A6) is pairwise distinguishable on (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)  (A5=('koide_flagship_brannen_direction', 'charged_lepton_brannen_direction', 'retained_koide_Q_two_thirds_plus_y_tau_direction_identity', 'M1'), A6=('hw1_three_generation', 'three_generation_hw1_Cl3_carrier', 'hw1_to_yukawa_rep_theoretic_identity', 'M6'))
+
+----------------------------------------------------------------------------------------
+Part 2: bijection with parent no-go mechanism enumeration
+----------------------------------------------------------------------------------------
+  [PASS (A)] every parent no-go mechanism is consumed by some A_i  (consumed = ['M1', 'M3', 'M4', 'M5', 'M6', 'SA-A', 'SA-B']; parent = ['M1', 'M3', 'M4', 'M5', 'M6', 'SA-A', 'SA-B'])
+  [PASS (A)] no A_i consumes a mechanism outside the parent no-go's enumeration  (extraneous = [] (empty means no new repo vocabulary))
+  [PASS (A)] the positive-class -> parent-mechanism map is a bijection covering all six anchor classes  (got ['M1', 'M3', 'M5', 'M6', 'SA-A', 'SA-B_M4']; expected ['M1', 'M3', 'M5', 'M6', 'SA-A', 'SA-B_M4'])
+
+----------------------------------------------------------------------------------------
+Part 3: source-primitive family enumeration is pairwise distinct
+----------------------------------------------------------------------------------------
+  [PASS (A)] six source-primitive families are pairwise distinct  (families = ['SU_Nc_Fierz_identity', 'alternating_group_A4_rep_theory', 'yukawa_anomaly_identity_beyond_gauge', 'Cl3_Z3_structural_yukawa_ratio_identity', 'retained_koide_Q_two_thirds_plus_y_tau_direction_identity', 'hw1_to_yukawa_rep_theoretic_identity'])
+  [PASS (A)] source-primitive families match the parent no-go's section 3 mechanism families  (see parent no-go sections 3.1-3.6 for the canonical family names)
+
+----------------------------------------------------------------------------------------
+Part 4: (A2) discriminating attribute -- Wolfenstein A^4 = 4/9 vs alternating-group A_4
+----------------------------------------------------------------------------------------
+  [PASS (A)] sin^2(theta_W)|_lattice simplifies to (d+1)/(2d+3) parametrically  (simplify result: (d + 1)/(2*d + 3))
+  [PASS (A)] at d=3: sin^2(theta_W) = 4/9 (Wolfenstein A^4 retained identity)  (got 4/9)
+  [PASS (A)] alternating group A_4 has order 12 (distinguishing it structurally from a rational)  (|A_4| = 12; the irrep dimensions are (1, 1, 1, 3); 4/9 is a rational)
+  [PASS (A)] rational 4/9 carries no group-theoretic rep structure (separating Wolfenstein A^4 from alternating A_4)  (4/9 in Q has no 3-dim irrep; the rational is gauge-coupling normalization, not flavor rep theory)
+
+----------------------------------------------------------------------------------------
+Part 5: (A3) discriminating attribute -- Y_e arbitrary under one-Higgs gauge selection
+----------------------------------------------------------------------------------------
+  [PASS (A)] Y_e arbitrary: complex 3x3 has 2*9 = 18 real parameters under SM gauge selection  (2 * 9 = 18)
+  [PASS (A)] gauge anomaly cluster constrains matter content (chirality + hypercharge), not Yukawa quartic contractions  (parent no-go section 3.4: one-Higgs gauge selection leaves Y_e arbitrary)
+
+----------------------------------------------------------------------------------------
+Part 6: (A1) discriminating attribute -- color-Fierz factor 1/sqrt(2 N_c) at N_c=3 = 1/sqrt(6); (2, 1) block is color-singlet
+----------------------------------------------------------------------------------------
+  [PASS (A)] YT-lane color-Fierz factor 1/sqrt(2 N_c) = 1/sqrt(6) at N_c = 3 (sqrt-rational with non-square radicand)  (got sqrt(6)/6; 6 is not a perfect square (sqrt(6) is irrational))
+  [PASS (A)] color-singlet has dim 1 (no nontrivial T^a generators); fundamental has dim 3 (8 nontrivial T^a generators)  (A1's source primitive requires non-singlet color content)
+  [PASS (A)] 6 is not a perfect square (sqrt(6) is irrational); sqrt-rational form for A1's source primitive  (isqrt(6)^2 = 4; sqrt-rational not rational)
+
+----------------------------------------------------------------------------------------
+Part 7: partition closure on (framework surface)
+----------------------------------------------------------------------------------------
+  [PASS (A)] parent mechanism SA-A is mapped from exactly one class (currently A1)  (already mapped from (none))
+  [PASS (A)] parent mechanism M3 is mapped from exactly one class (currently A2)  (already mapped from (none))
+  [PASS (A)] parent mechanism SA-B is mapped from exactly one class (currently A3)  (already mapped from (none))
+  [PASS (A)] parent mechanism M4 is mapped from exactly one class (currently A3)  (already mapped from (none))
+  [PASS (A)] parent mechanism M5 is mapped from exactly one class (currently A4)  (already mapped from (none))
+  [PASS (A)] parent mechanism M1 is mapped from exactly one class (currently A5)  (already mapped from (none))
+  [PASS (A)] parent mechanism M6 is mapped from exactly one class (currently A6)  (already mapped from (none))
+  [PASS (A)] partition function p: Parent -> {A1..A6} is total over the parent no-go's enumeration  (keys = ['M1', 'M3', 'M4', 'M5', 'M6', 'SA-A', 'SA-B']; parent = ['M1', 'M3', 'M4', 'M5', 'M6', 'SA-A', 'SA-B'])
+  [PASS (A)] partition function p: Parent -> {A1..A6} is surjective onto all six classes  (image = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6']; classes = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6'])
+
+----------------------------------------------------------------------------------------
+Part 8: review-hygiene (no new axioms, no new repo vocabulary)
+----------------------------------------------------------------------------------------
+  [PASS (A)] local class labels (A1..A6) are scoped to this note and do not propose new repo-wide tags  (A1..A6 are subsection labels, not new repo-canonical class names)
+  [PASS (A)] source-primitive families reference repo-canonical terms (no new primitive vocabulary)  (matched 6/6 canonical primitive families)
+  [PASS (A)] this runner does not set or predict an audit outcome (Status authority: independent audit lane only)  (runner reports algebraic checks; audit pipeline sets effective_status)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact symbolic / discrete precision:
+    Exactly six anchor classes catalogued ({A1, A2, A3, A4, A5, A6})
+    Pairwise structurally distinguishable on (framework surface) under
+      (gauge_kind, carrier_block, source_primitive_family, parent_mechanism)
+    Bijection with parent no-go {SA-A, SA-B, M3, M4, M5, M6, M1} is total
+      and surjective onto {A1..A6} (no class dropped, no class double-counted)
+    Source-primitive families are pairwise distinct and reference only
+      repo-canonical primitives (no new repo vocabulary)
+    (A2) discriminator: sin^2(theta_W)|_lattice = (d+1)/(2d+3), value 4/9 at
+      d=3; rational without alternating-group A_4 rep-theoretic structure
+    (A3) discriminator: Y_e is 2*9 = 18-real-parameter complex 3x3 under one-Higgs
+      gauge selection (no gauge-anomaly identity ties a sqrt-rational to Y_e)
+    (A1) discriminator: 1/sqrt(2 N_c) = 1/sqrt(6) at N_c=3 is sqrt-rational
+      (irrational); lepton (2, 1) block is color-singlet (dim = 1)
+    Partition closure: total + surjective on the parent enumeration
+    Review hygiene: local class labels, repo-canonical primitive families
+
+========================================================================================
+TOTAL: PASS=44, FAIL=0
+========================================================================================
+
+----- stderr -----
+

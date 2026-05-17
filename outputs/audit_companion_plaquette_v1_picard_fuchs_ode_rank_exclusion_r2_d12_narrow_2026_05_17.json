@@ -1,0 +1,24 @@
+{
+  "claim_id": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
+  "parent_minimality_claim_id": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+  "audited_complaint": "ORDER=40 gives only 36 usable equations for 39 unknowns at (r=2, d=12); the cell is silently skipped while the prose asserts exclusion holds.",
+  "narrow_resolution": "Bump Taylor depth to ORDER=48 (and cross-check at ORDER=52). At ORDER=48 num_eqs = min(num_unknowns + 8, ORDER - r - 2) = min(47, 44) = 44 > 39 = num_unknowns, so the matching matrix is full size at the cell. Exact-rational rank check returns rank = num_unknowns = 39, hence kernel is empty and the (r=2, d=12) exclusion holds.",
+  "results": {
+    "ORDER=40 (r=2, d=12) num_eqs_cap": 36,
+    "ORDER=40 (r=2, d=12) num_unknowns": 39,
+    "ORDER=48 (r=2, d=12) num_eqs_cap": 44,
+    "ORDER=48 (r=2, d=12) rank": 39,
+    "ORDER=48 (r=2, d=12) kernel_dim": 0,
+    "ORDER=48 (r=2, d=10) rank": 33,
+    "ORDER=48 (r=2, d=10) kernel_dim": 0,
+    "ORDER=48 (r=2, d=11) rank": 36,
+    "ORDER=48 (r=2, d=11) kernel_dim": 0,
+    "ORDER=52 (r=2, d=12) rank": 39,
+    "ORDER=52 (r=2, d=12) kernel_dim": 0
+  },
+  "summary": {
+    "pass": 15,
+    "fail": 0,
+    "audit_status_authority": "independent audit lane only"
+  }
+}

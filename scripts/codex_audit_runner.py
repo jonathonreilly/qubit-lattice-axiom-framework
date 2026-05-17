@@ -588,6 +588,55 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         else:
             runner_source = f"[runner missing on disk: {runner_path}]"
 
+    # Read each transitive helper script the primary runner imports (via
+    # build_citation_graph's helper_runner_paths field on the ledger row).
+    # Without including these, the auditor sees opaque imports and is forced
+    # into class (C) on packet-incompleteness grounds even when the chain is
+    # sound. See AUDIT_AGENT_PROMPT_TEMPLATE.md §3b for the auditor-side
+    # protocol.
+    helper_runner_paths = (
+        row.get("helper_runner_paths")
+        or ledger_rows.get(cid, {}).get("helper_runner_paths")
+        or []
+    )
+    helper_sources_blocks: list[str] = []
+    for hp in helper_runner_paths:
+        full_hp = REPO_ROOT / hp
+        if not full_hp.exists():
+            helper_sources_blocks.append(
+                f"=== BEGIN HELPER RUNNER: {hp} ===\n"
+                f"[helper missing on disk: {hp}]\n"
+                f"=== END HELPER RUNNER: {hp} ==="
+            )
+            continue
+        try:
+            hsrc = full_hp.read_text(encoding="utf-8", errors="replace")
+            MAX_HELPER = 20_000
+            if len(hsrc) > MAX_HELPER:
+                head = hsrc[: MAX_HELPER // 2]
+                tail = hsrc[-MAX_HELPER // 2 :]
+                hsrc = (
+                    f"{head}\n\n"
+                    f"... [truncated; helper is {len(hsrc)} chars total] ...\n\n"
+                    f"{tail}"
+                )
+            helper_sources_blocks.append(
+                f"=== BEGIN HELPER RUNNER: {hp} ===\n"
+                f"{hsrc}\n"
+                f"=== END HELPER RUNNER: {hp} ==="
+            )
+        except OSError as e:
+            helper_sources_blocks.append(
+                f"=== BEGIN HELPER RUNNER: {hp} ===\n"
+                f"[could not read helper: {e}]\n"
+                f"=== END HELPER RUNNER: {hp} ==="
+            )
+    helper_runner_sources = (
+        "\n\n".join(helper_sources_blocks)
+        if helper_sources_blocks
+        else "(no helper runner imports detected)"
+    )
+
     # Inline-substitute the {{...}} variables. We only replace the variables
     # actually appearing in the template; the FOREACH block uses cited_str.
     prompt = template
@@ -598,6 +647,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     prompt = prompt.replace("{{NOTE_BODY}}", note_body)
     prompt = prompt.replace("{{RUNNER_STDOUT}}", runner_stdout or "(no stdout captured)")
     prompt = prompt.replace("{{RUNNER_SOURCE}}", runner_source or "(no source available)")
+    prompt = prompt.replace("{{HELPER_RUNNER_SOURCES}}", helper_runner_sources)
 
     # Replace the FOREACH ... ENDFOREACH block with the rendered cited authorities
     foreach_re = re.compile(

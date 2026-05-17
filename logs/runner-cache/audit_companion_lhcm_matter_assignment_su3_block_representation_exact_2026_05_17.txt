@@ -1,0 +1,164 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py
+runner_sha256: 5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.87
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of (B1)-(B3) block-representation
+identities on the retained graph-first selected-axis surface.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: note structural markers and retained-substrate citations
+----------------------------------------------------------------------------------------
+  [PASS (A)] note contains marker: 'LHCM Matter-Assignment SU(3) Block-Representation Narrow Theorem'
+  [PASS (A)] note contains marker: '**Type:** bounded_theorem'
+  [PASS (A)] note contains marker: 'Status authority:** independent audit lane only'
+  [PASS (A)] note contains marker: 'GRAPH_FIRST_SU3_INTEGRATION_NOTE.md'
+  [PASS (A)] note contains marker: 'GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md'
+  [PASS (A)] note contains marker: 'LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md'
+  [PASS (A)] note contains marker: 'Sym²(C²)'
+  [PASS (A)] note contains marker: 'Anti²(C²)'
+  [PASS (A)] note contains marker: '(2, 3)'
+  [PASS (A)] note contains marker: '(2, 1)'
+  [PASS (A)] note contains marker: '(B1)'
+  [PASS (A)] note contains marker: '(B2)'
+  [PASS (A)] note contains marker: '(B3)'
+  [PASS (A)] note contains marker: '(I1)'
+  [PASS (A)] note contains marker: '(I2)'
+  [PASS (A)] note contains marker: '(I3)'
+  [PASS (A)] note contains marker: '(I4)'
+  [PASS (A)] note contains marker: 'Pattern A'
+  [PASS (A)] note contains marker: 'fundamental'
+  [PASS (A)] note contains marker: 'trivial'
+  [PASS (A)] note contains marker: 'perfect group'
+  [PASS (A)] note contains marker: 'Forbidden imports check'
+  [PASS (A)] note contains marker: 'Validation'
+  [PASS (A)] note avoids forbidden pattern: 'Status: retained'
+  [PASS (A)] note avoids forbidden pattern: 'algebraic universality'
+  [PASS (A)] note avoids forbidden pattern: 'two-class framing'
+  [PASS (A)] note avoids forbidden pattern: '(CKN)'
+  [PASS (A)] note avoids forbidden pattern: 'lattice-realization-invariant'
+  [PASS (A)] note avoids forbidden pattern: 'promoted to retained'
+  [PASS (A)] note avoids forbidden pattern: 'would become retained'
+  [PASS (A)] note routes own-status to independent audit lane
+  [PASS (A)] note does not self-promote (no 'Status: retained' line for own row)
+  [PASS (A)] note has markdown-link form of retained authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS (A)] note has markdown-link form of retained authority: GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md
+  [PASS (A)] note has markdown-link form of retained authority: LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md
+  [PASS (A)] non-load-bearing target NOT in markdown-link form: LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md  (target is plain-text reader pointer only)
+  [PASS (A)] non-load-bearing target NOT in markdown-link form: LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md  (target is plain-text reader pointer only)
+
+----------------------------------------------------------------------------------------
+Part 2: (I1) tau eigendecomposition on the 4-point base
+----------------------------------------------------------------------------------------
+  [PASS (A)] tau is involutive: tau^2 = I_4
+  [PASS (A)] Sym^2 (eigenvalue +1) multiplicity = 3  (got 3)
+  [PASS (A)] Anti^2 (eigenvalue -1) multiplicity = 1  (got 1)
+  [PASS (A)] total multiplicity = 4 (covers C^4)
+  [PASS (A)] tau |00> = |00> (Sym^2 eigenvalue +1)
+  [PASS (A)] tau |11> = |11> (Sym^2 eigenvalue +1)
+  [PASS (A)] tau (|01>+|10>)/sqrt(2) = +1 eigenvalue (Sym^2)
+  [PASS (A)] tau (|01>-|10>)/sqrt(2) = -1 eigenvalue (Anti^2)
+  [PASS (A)] P_sym + P_anti = I_4
+  [PASS (A)] P_sym * P_anti = 0 (orthogonal projectors)
+  [PASS (A)] P_sym is idempotent: P_sym^2 = P_sym
+  [PASS (A)] P_anti is idempotent: P_anti^2 = P_anti
+  [PASS (A)] rank(P_sym) = 3
+  [PASS (A)] rank(P_anti) = 1
+
+----------------------------------------------------------------------------------------
+Part 3: (I2) Gell-Mann generators close to su(3) on Sym^2 block
+----------------------------------------------------------------------------------------
+  [PASS (A)] Gell-Mann lambda_1 is hermitian
+  [PASS (A)] Gell-Mann lambda_2 is hermitian
+  [PASS (A)] Gell-Mann lambda_3 is hermitian
+  [PASS (A)] Gell-Mann lambda_4 is hermitian
+  [PASS (A)] Gell-Mann lambda_5 is hermitian
+  [PASS (A)] Gell-Mann lambda_6 is hermitian
+  [PASS (A)] Gell-Mann lambda_7 is hermitian
+  [PASS (A)] Gell-Mann lambda_8 is hermitian
+  [PASS (A)] Gell-Mann lambda_1 is traceless: Tr(lambda_1) = 0
+  [PASS (A)] Gell-Mann lambda_2 is traceless: Tr(lambda_2) = 0
+  [PASS (A)] Gell-Mann lambda_3 is traceless: Tr(lambda_3) = 0
+  [PASS (A)] Gell-Mann lambda_4 is traceless: Tr(lambda_4) = 0
+  [PASS (A)] Gell-Mann lambda_5 is traceless: Tr(lambda_5) = 0
+  [PASS (A)] Gell-Mann lambda_6 is traceless: Tr(lambda_6) = 0
+  [PASS (A)] Gell-Mann lambda_7 is traceless: Tr(lambda_7) = 0
+  [PASS (A)] Gell-Mann lambda_8 is traceless: Tr(lambda_8) = 0
+  [PASS (A)] [lambda_1, lambda_2] = 2i lambda_3
+  [PASS (A)] [lambda_4, lambda_5] = i (lambda_3 + sqrt(3) lambda_8)
+  [PASS (A)] [lambda_6, lambda_7] = i (-lambda_3 + sqrt(3) lambda_8)
+  [PASS (A)] Tr(lambda^a lambda^b) = 2 delta^{ab} (T(fund) = 1/2 normalisation)  (64 trace identities verified)
+
+----------------------------------------------------------------------------------------
+Part 4: (B1) algebraic forcing -- su(3) irrep dimension classification
+----------------------------------------------------------------------------------------
+  [PASS (A)] su3_dim(0, 0) = 1 (trivial irrep)
+  [PASS (A)] su3_dim(1, 0) = 3 (fundamental)
+  [PASS (A)] su3_dim(0, 1) = 3 (conjugate)
+  [PASS (A)] su3_dim(1, 1) = 8 (adjoint)
+  [PASS (A)] su3_dim(2, 0) = 6 (symmetric tensor)
+  [PASS (A)] only two su(3) irreps of dim 3: (1,0) and (0,1)  (got [(0, 1), (1, 0)])
+  [PASS (A)] no non-trivial su(3) irrep of dim 1 or dim 2  (violations: [])
+  [PASS (A)] (B1) forced: non-trivial 3-dim su(3) irrep is exactly {3, 3-bar}
+
+----------------------------------------------------------------------------------------
+Part 5: (B2) algebraic forcing -- su(3) is perfect
+----------------------------------------------------------------------------------------
+  [PASS (A)] lambda_3 = -i/2 [lambda_1, lambda_2] (lambda_3 in commutator subalgebra)
+  [PASS (A)] lambda_8 in commutator subalgebra (from [lambda_4, lambda_5] - lambda_3 combo)
+  [PASS (A)] [lambda_2, lambda_3] = 2i lambda_1
+  [PASS (A)] lambda_1 in commutator subalgebra
+  [PASS (A)] [lambda_3, lambda_1] = 2i lambda_2
+  [PASS (A)] lambda_2 in commutator subalgebra
+  [PASS (A)] (B2) forced: su(3) is perfect (abelianisation trivial)  (lambda_1, lambda_2, lambda_3, lambda_8 all in [su(3), su(3)])
+  [PASS (A)] (B2) consequence: only 1-dim representation of SU(3) is trivial  (standard perfect-group consequence)
+
+----------------------------------------------------------------------------------------
+Part 6: (B3) tensor-product algebra
+----------------------------------------------------------------------------------------
+  [PASS (A)] dim(2, 3) = 2 * 3 = 6
+  [PASS (A)] dim(2, 1) = 2 * 1 = 2
+  [PASS (A)] dim(LH-doublet) = 6 + 2 = 8
+  [PASS (A)] explicit Kronecker construction P_(2,3) has rank 6
+  [PASS (A)] explicit Kronecker construction P_(2,1) has rank 2
+  [PASS (A)] P_(2,3) + P_(2,1) = I_8 on the LH-doublet sector
+  [PASS (A)] P_(2,3) and P_(2,1) are orthogonal: P_(2,3) P_(2,1) = 0
+
+----------------------------------------------------------------------------------------
+Part 7: (I3) consistency with retained narrow ratio theorem
+----------------------------------------------------------------------------------------
+  [PASS (A)] tracelessness 6 alpha + 2 beta = 0 forces beta = -3 alpha  (got beta = [-3*alpha])
+  [PASS (A)] Sym^2 : Anti^2 eigenvalue ratio is +1 : (-3)  (got ratio = -1/3)
+
+----------------------------------------------------------------------------------------
+Part 8: counterfactual probes
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: dim(Anti^2)=1 < smallest non-trivial su(3) irrep dim=3  (forces (B2) trivial action on Anti^2)
+  [PASS (A)] counterfactual: trivial action on Sym^2 forces commutant dim >= 18, but (I2) commutant dim = 10  (would-be dim 18 != actual 10)
+  [PASS (A)] counterfactual: multiplicities (4, 4) give ratio +1:(-1), not retained +1:(-3)  (counter beta = [-alpha], not -3 alpha)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (I1) tau Sym^2/Anti^2 eigendecomposition multiplicities (3, 1)
+    (I2) Gell-Mann su(3) Lie-bracket structure, hermiticity, T(fund) = 1/2
+    (B1) Cartan-Weyl irrep dimension classification: only {3, 3-bar} at dim 3
+    (B2) su(3) is perfect; all 1-dim characters of SU(3) trivial
+    (B3) tensor-product distributivity gives (2,3) (+) (2,1) with dims (6, 2)
+    (I3) tracelessness 6 alpha + 2 beta = 0 forces beta = -3 alpha
+    Counterfactual probes confirm (B1), (B2), (B3) multiplicities are forced.
+
+========================================================================================
+TOTAL: PASS=99, FAIL=0
+========================================================================================
+
+----- stderr -----
+

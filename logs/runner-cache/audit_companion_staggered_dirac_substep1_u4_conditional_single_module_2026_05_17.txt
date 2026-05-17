@@ -1,0 +1,107 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py
+runner_sha256: 403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.03
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17
+Goal: sympy verification of (M1)-(M2), (C1)-(C2), and the
+  counter-example surface k >= 2 ruling out unconditional U4 closure
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Pauli realization and positive/negative chirality
+----------------------------------------------------------------------------------------
+  [PASS (A)] Pauli ρ_+ satisfies Cl(3) relations
+  [PASS (A)] Pauli ρ_- satisfies Cl(3) relations
+  [PASS (A)] ω(ρ_+) = +i I_2
+  [PASS (A)] ω(ρ_-) = -i I_2
+  [PASS (A)] ρ_+ ≠ ρ_- (different ω eigenvalue)
+
+----------------------------------------------------------------------------------------
+Part 1: Multiplicity classification (M1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (n_+, n_-) = (1, 0): Cl(3) relations OK  (dim_C=2, k=1)
+  [PASS (A)] (n_+, n_-) = (1, 0): dim_C H_x = 2k = 2  (got dim=2, expected 2)
+  [PASS (A)] (n_+, n_-) = (0, 1): Cl(3) relations OK  (dim_C=2, k=1)
+  [PASS (A)] (n_+, n_-) = (0, 1): dim_C H_x = 2k = 2  (got dim=2, expected 2)
+  [PASS (A)] (n_+, n_-) = (2, 0): Cl(3) relations OK  (dim_C=4, k=2)
+  [PASS (A)] (n_+, n_-) = (2, 0): dim_C H_x = 2k = 4  (got dim=4, expected 4)
+  [PASS (A)] (n_+, n_-) = (0, 2): Cl(3) relations OK  (dim_C=4, k=2)
+  [PASS (A)] (n_+, n_-) = (0, 2): dim_C H_x = 2k = 4  (got dim=4, expected 4)
+  [PASS (A)] (n_+, n_-) = (1, 1): Cl(3) relations OK  (dim_C=4, k=2)
+  [PASS (A)] (n_+, n_-) = (1, 1): dim_C H_x = 2k = 4  (got dim=4, expected 4)
+  [PASS (A)] (n_+, n_-) = (3, 0): Cl(3) relations OK  (dim_C=6, k=3)
+  [PASS (A)] (n_+, n_-) = (3, 0): dim_C H_x = 2k = 6  (got dim=6, expected 6)
+  [PASS (A)] (n_+, n_-) = (1, 2): Cl(3) relations OK  (dim_C=6, k=3)
+  [PASS (A)] (n_+, n_-) = (1, 2): dim_C H_x = 2k = 6  (got dim=6, expected 6)
+
+----------------------------------------------------------------------------------------
+Part 2: Faithfulness classification (M2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (k=0) zero-rep fails γ_1² = I: 0² = 0 ≠ I  (zero-rep is non-Clifford, hence not a valid Cl(3) module)
+  [PASS (A)] (n_+, n_-) = (1, 0): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (0, 1): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (2, 0): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (1, 1): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (3, 0): representation is faithful  (rank of basis-image span >= 4 over C)
+
+----------------------------------------------------------------------------------------
+Part 3: Conditional sub-claim (C1): k=1 ⇒ dim_C = 2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) k=1 case (n_+, n_-) = (1, 0): dim_C = 2  (conditional single-module sub-claim verified)
+  [PASS (A)] (C1) k=1 case (n_+, n_-) = (0, 1): dim_C = 2  (conditional single-module sub-claim verified)
+
+----------------------------------------------------------------------------------------
+Part 4: Conditional sub-claim (C2): canonical chirality ⇒ Pauli
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2) Schur within ρ_+: only 2x2 commuting with all σ_i is scalar*I  (intertwiner uniqueness up to scalar multiple)
+  [PASS (A)] (C2) Pauli realization ρ_+(γ_i) = σ_i on ℂ²  (trivial identity check)
+
+----------------------------------------------------------------------------------------
+Part 5: Counter-example surface k >= 2 (no unconditional U4)
+----------------------------------------------------------------------------------------
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (2, 0): faithful Cl(3) module of dim_C = 4  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (0, 2): faithful Cl(3) module of dim_C = 4  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (1, 1): faithful Cl(3) module of dim_C = 4  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
+  [PASS (A)] k=3 counterexample (n_+, n_-) = (3, 0): faithful Cl(3) module of dim_C = 6  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
+  [PASS (A)] k=3 counterexample (n_+, n_-) = (2, 1): faithful Cl(3) module of dim_C = 6  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
+  [PASS (A)] k=4 counterexample (n_+, n_-) = (4, 0): faithful Cl(3) module of dim_C = 8  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
+
+----------------------------------------------------------------------------------------
+Part 6: Bridge identity to substep-1 sister theorems
+----------------------------------------------------------------------------------------
+  [PASS (B)] (bridge) k=1 ρ_+ matches the cited Cl(3) faithful-irrep narrow  (dim_C V = 2, building block of JW Fock space H_Λ = V^⊗N)
+  [PASS (B)] (bridge) Sister substep-1 dimensional readouts all agree: dim_C V = 2  (dimensional-matching, JW, and U4-conditional sisters all use dim_C V = 2)
+
+----------------------------------------------------------------------------------------
+Part 7: No-k-from-Schur-alone counterexample
+----------------------------------------------------------------------------------------
+  [PASS (A)] Schur is consistent with non-trivial ρ_+ → ρ_+² embedding (no-k-from-Schur)  (ρ_+ embeds as the top OR bottom block of ρ_+^2 (k=2))
+
+----------------------------------------------------------------------------------------
+Part 8: Enumeration table consistency
+----------------------------------------------------------------------------------------
+  [PASS (C)] enumeration row k=0: dim_C = 0 (zero-rep)  (non-Clifford (zero-rep))
+  [PASS (C)] enumeration row k=1: dim_C = 2k = 2 via (n_+,n_-)=(1,0)  (conditional U4 closure under single-module selection)
+  [PASS (C)] enumeration row k=2: dim_C = 2k = 4 via (n_+,n_-)=(2,0)  (counter-example to unconditional U4)
+  [PASS (C)] enumeration row k=3: dim_C = 2k = 6 via (n_+,n_-)=(3,0)  (counter-example to unconditional U4)
+  [PASS (C)] enumeration row k=4: dim_C = 2k = 8 via (n_+,n_-)=(4,0)  (counter-example to unconditional U4)
+
+----------------------------------------------------------------------------------------
+Part 9: Final consistency — conditional vs unconditional U4
+----------------------------------------------------------------------------------------
+  [PASS (A)] Conditional (C1) verified: k=1 ⇒ dim_C = 2  (closed on retained Cl(3) classification)
+  [PASS (A)] Unconditional U4 NOT closed (counter-examples k>=2 admissible)  (multiplicity selection requires external admitted-context input)
+  [PASS (B)] Open admission identity: single-module-per-site selection = staggered-Dirac substep 1  (cited parent: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03)
+
+========================================================================================
+PASS=46  FAIL=0
+========================================================================================
+
+----- stderr -----
+

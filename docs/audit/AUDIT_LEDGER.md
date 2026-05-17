@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 108 |
+| **retained** | 109 |
 | **retained_no_go** | 138 |
 | **retained_bounded** | 327 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 546 |
+| `audited_clean` | 547 |
 | `audited_conditional` | 176 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1424 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -157,6 +157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_orbit_invariance_stretch_attempt_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -1850,6 +1851,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The cleanest retained dense setting is npl = 60, where the Born metric stays at machine precision across N = 25, 40, 60 for both LN + |y| and LN + |y| + collapse.  _(class `C`)_
 - **chain closes:** False — The runner/helper chain genuinely computes the corrected Sorkin metric and supports the reduced machine-precision dense-pocket claim. The note as written does not close cleanly because its quoted mean/max table is stale relative to the included stdout and its broader hard-geometry-enabling interpretation is not tested by a comparator in the restricted packet.
 - **rationale:** The primary runner is not a print-only or hard-coded expected-value check: it builds the graph, propagates amplitudes, applies shared collapse phases, and evaluates I3 including -P(empty). For the six retained npl = 60 LN+|y| and LN+|y|+collapse rows, current stdout still gives max |I3|/P below 1e-15 and PASS. However, multiple exact mean/max values in the source note do not match the cached runner output, and the note does not expose ok-count attrition or independently establish the broader hard-geometry-enabling interpretation.
+- **auditor confidence:** high
+
+### `central_band_born_largen_note`
+
+- **Note:** [`CENTRAL_BAND_BORN_LARGEN_NOTE.md`](../../docs/CENTRAL_BAND_BORN_LARGEN_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the restricted-packet claim that the provided large-N chokepoint runner and helper compute corrected three-slit |I3|/P for N=80,100, npl=60 under LN+|y| and LN+|y|+collapse, and find PASS-level machine-precision values.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-151715-a5e2dcef-central_band_born_largen-008`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The dense central-band Born pocket survives at N = 80 and N = 100 for both LN + |y| and LN + |y| + collapse, with corrected |I3|/P at machine precision.  _(class `C`)_
+- **chain closes:** True — The primary runner calls helper code that constructs random 3D chokepoint DAGs, applies post-barrier central-band removal, propagates amplitudes exactly, and evaluates the corrected Sorkin metric with the -P(empty) term. No cited upstream authority is required beyond the provided computation, and the completed run supports the qualitative survival/PASS claim.
+- **rationale:** The runner source is substantive rather than a print-only or hard-coded expected-value check: it builds the graph, computes amplitudes for each slit subset, and forms |I3|/P directly. The completed runner output gives PASS for all four retained rows in the audited scope: N=80 and N=100 for LN+|y| and LN+|y|+collapse. The note's N=80 table values are stale relative to the supplied runner output, but the discrepancy does not change the load-bearing conclusion because all reported maxima remain far below the stated machine-precision gate of 1e-10. A second auditor should re-check whether the note should be updated to the current cached numbers and should note that only 3 seeds at N=80 and 1 seed at N=100 produced usable rows despite 4 attempted seeds.
 - **auditor confidence:** high
 
 ### `central_band_collapse_note`

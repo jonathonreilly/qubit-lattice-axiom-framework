@@ -1,0 +1,118 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow.py
+runner_sha256: 47a1ef71a197a0a62dfd19df8884e3235eae33b65987617bcdefdf954f050d47
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge Route E Tao-style cross-disciplinary narrow bounded note runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md
+
+==============================================================================
+T1: Cross-disciplinary candidate enumeration (10 candidates A-J)
+==============================================================================
+  [PASS] exactly 10 candidates A-J enumerated
+         n_candidates = 10
+  [PASS] candidate keys are A-J alphabetic
+         keys = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+  [PASS] pattern distribution: 4 D (Pattern D) + 5 L (Pattern L) + 1 -- (no theorem)
+         D=4, L=5, --=1
+
+==============================================================================
+T2: Pattern-L candidates invoke `log` to bridge multiplicative -> additive
+==============================================================================
+  [PASS] all 5 Pattern-L candidates (C, D, F, G, J) explicitly invoke `log` as the bridge map
+         pattern_L candidates: ['C', 'D', 'F', 'G', 'J']
+  [PASS] log_b is a continuous homomorphism (R_+, *) -> (R, +) for any base b
+         verified on 3 bases x 9 rational pairs
+
+==============================================================================
+T3: Pattern-D candidates use dim/Sigma(-1)^k on direct sums, valued in Z or vector spaces
+==============================================================================
+  [PASS] exactly 4 Pattern-D candidates (A, B, E, H)
+         pattern_D keys = ['A', 'B', 'E', 'H']
+  [PASS] dim(V (+) W) = dim V + dim W: 2 + 3 = 5
+         dim V=2, dim W=3, dim(V (+) W)=5
+  [PASS] chi(pt_a u pt_b) = chi(pt_a) + chi(pt_b) = 2 (Pattern D structural additivity)
+         chi result = 2
+
+==============================================================================
+T4: Grassmann block determinant factorization (SymPy symbolic)
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A+J_A) det(D_B+J_B) (SymPy exact)
+         sympy.simplify(diff) = 0
+
+==============================================================================
+T5: F_p = r^p is multiplicative on independent blocks for every real p
+==============================================================================
+  [PASS] F_p(J_A (+) J_B) = F_p(J_A) * F_p(J_B) for p in {-2, -1, 1/2, 1, 2, 3}
+         p values tested: [-2.0, -1.0, 0.5, 1.0, 2.0, 3.0]
+
+==============================================================================
+T6: F_p fails additivity for p != 0 (counterexample to additivity-from-multiplicative)
+==============================================================================
+  [PASS] F_p(J_A (+) J_B) != F_p(J_A) + F_p(J_B) for all p in {-2, -1, 1/2, 1, 2, 3}
+         additivity FAILS for every nonzero p
+  [PASS] log r is additive: log(r_A r_B) = log r_A + log r_B (Cauchy classifier)
+         log_r_full=-0.022632, log_r_sum=-0.022632
+
+==============================================================================
+T7: Cramer additivity invokes `log` (Pattern L; F_p replacement fails)
+==============================================================================
+  [PASS] Cramer: Lambda(X_A + X_B) = Lambda(X_A) + Lambda(X_B) via log (Pattern L)
+         Lambda_sum=0.476694, Lambda_A+Lambda_B=0.476694
+  [PASS] F_p = M^p multiplicative-stable on independent X_A, X_B (no additivity)
+         F_p_sum=2.594486, F_p_A*F_p_B=2.594486
+  [PASS] F_p NOT additive: F_p(X_A+X_B) != F_p(X_A) + F_p(X_B) for p=2
+         |F_p_sum - (F_p_A + F_p_B)| = 0.638685
+
+==============================================================================
+T8: Tropical dequantization map = log (Pattern L; (.)^p stays multiplicative)
+==============================================================================
+  [PASS] log_b dequantization is the unique additive bridge map
+         verified for bases [2, 2.718281828459045, 10]
+  [PASS] (xy)^p = x^p y^p (multiplicative) for any p, NOT additive
+         verified for p in [0.5, 1.0, 2.0, 3.0]
+
+==============================================================================
+T9: Pattern-D candidates not applicable to scalar Z[J] in R
+==============================================================================
+  [PASS] Z[J] = det(D+J) is a rational scalar (not an integer) on the staggered toy block
+         Z = 43993/45000, is_integer = False, is_rational = True
+  [PASS] Z[J] is a number (no direct sum structure to apply Pattern-D functor additivity)
+         is_number = True
+
+==============================================================================
+T10: F_p obstruction persists across all 10 candidates A-J (convergence with A/B/C)
+==============================================================================
+  [PASS] F_1 = r multiplicative: r(J_A (+) J_B) = r(J_A) * r(J_B)
+         r_full=43993/45000, r_A*r_B=43993/45000
+  [PASS] F_1 = r NOT additive: r(J_A (+) J_B) != r(J_A) + r(J_B)
+         r_full=43993/45000, r_A+r_B=371/180
+
+==============================================================================
+T11: Honest scope check — P1 NOT retired by any Route E candidate
+==============================================================================
+  [PASS] note contains all required honest-scope admission strings
+         all required strings present
+
+==============================================================================
+T12: Scope boundary — parent statuses not promoted
+==============================================================================
+  [PASS] note explicitly states non-promotion language
+         required_all_present=True
+  [PASS] note avoids forbidden status-promotion strings
+         forbidden_present=False
+
+==============================================================================
+T13: Source-note boundary check
+==============================================================================
+  [PASS] note declares Claim type: bounded_theorem
+  [PASS] note declares Status authority: source-note proposal only
+  [PASS] note avoids forbidden status-overclaim strings
+
+=== TOTAL: PASS=27, FAIL=0 ===
+
+----- stderr -----
+

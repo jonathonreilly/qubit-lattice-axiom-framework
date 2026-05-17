@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -153292,12 +153291,12 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 73,
+      "direct_in_degree": 74,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 46.24,
+      "load_bearing_score": 46.741,
       "load_bearing_step": "Given scalar additivity, CPT-even phase blindness, continuity/minimal regularity, and normalization, W must solve W(r1 r2)=W(r1)+W(r2), so W=log|det(D+J)| up to the stated convention.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -153477,8 +153476,58 @@
       },
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note",
-      "transitive_descendants": 854,
+      "transitive_descendants": 855,
       "verdict_rationale": "Issue: the exact log-det algebra is verified only after selecting the physical scalar generator by admitted additivity/CPT-even/regularity/normalization premises, with P1 still explicitly open and the multiplicative normalization c=1 conventional. Why this blocks: the restricted packet has no retained one-hop theorem deriving that physical observable bridge, and the runner mainly checks consistency of the chosen W rather than forcing the observable class from the axiom alone. Repair target: add a bridge theorem deriving scalar additivity and the normalization/source scale from retained primitives, or keep all downstream citations explicitly conditional on those premises. Claim boundary until fixed: the finite algebra for the selected log|det| generator on the runner block is supported; unconditional axiom-to-observable closure is not."
+    },
+    "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "observable_principle_from_axiom_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "412c4d0508f9ff97a5c48fa7e035668aaed097dfad843186fb59e92b6bd4f0bd",
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Route E Tao-style Cross-Disciplinary Narrow Bounded Note",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
     },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "audit_date": null,
@@ -247481,9 +247530,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2184,
+    "preserved_existing": 2185,
     "re_audit_required": 0,
-    "row_count": 2228,
+    "row_count": 2229,
     "seeded_new": 0
   }
 }

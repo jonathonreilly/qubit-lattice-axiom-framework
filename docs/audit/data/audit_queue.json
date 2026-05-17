@@ -5900,24 +5900,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "dm_abcc_signature_forcing_theorem_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Listed-endpoint Sylvester signature-forcing only: Basin 2 and Basin X are in a different invertible Hermitian signature component from H_base, forcing det=0 on any continuous path from H_base to those endpoints.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 10.655,
       "note_path": "docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_dm_abcc_signature_forcing_theorem.py",
       "transitive_descendants": 805

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 430,
     "high": 161,
-    "leaf": 321,
+    "leaf": 320,
     "medium": 315
   },
   "cycle_break_target_count": 53,
@@ -26696,28 +26696,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_only_det_positivity_case_a_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -35829,6 +35807,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 9,
-  "total_pending": 1227
+  "ready_count": 8,
+  "total_pending": 1226
 }

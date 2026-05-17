@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 112 |
+| **retained** | 113 |
 | **retained_no_go** | 139 |
 | **retained_bounded** | 342 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1223 |
+| unaudited | 1222 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 566 |
+| `audited_clean` | 567 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1425 |
+| `unaudited` | 1424 |
 
 | claim_type | count |
 |---|---:|
@@ -576,6 +576,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_layered_loop_threshold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_newton_reproduction_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -10676,6 +10677,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The computed 2x2x2 blocked-centroid acceleration follows an approximately inverse-square distance law on the audited d=3..6 surface, with per-side exponents near -2 and global exponent -1.982.  _(class `C`)_
 - **chain closes:** True — The included runner builds the stated staggered Hamiltonian, potential, free and gravitating evolutions, raw and blocked centroids, and distance-law fits; its cached output matches the note. The closure is bounded to the stated external source, open boundaries, calibration window, and blocked observable.
 - **rationale:** The runner is not a print-only or hard-coded numerical-match artifact: it computes the finite staggered-lattice evolution and fitted blocked-trajectory exponent from the stated operators and parameters. The note's load-bearing numerical claims match the completed runner output. The result is clean only as a bounded finite-surface computation; it does not establish self-consistent two-body closure, both-masses scaling, irregular-graph transfer, or a general staggered trajectory theorem.
+- **auditor confidence:** high
+
+### `staggered_only_det_positivity_case_a_note_2026-05-17`
+
+- **Note:** [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The staggered-only determinant det(M_KS + mI) is strictly positive for m > 0 on a balanced epsilon-graded lattice, assuming the stated anti-Hermiticity, epsilon-anticommutation/off-diagonal block form, and SU(3) link background.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-185505-41cdea85-staggered_only_det_posit-019`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After SVD block reduction, det(M_KS + mI) = product_i (m^2 + sigma_i^2), so every factor is strictly positive for m > 0.  _(class `A`)_
+- **chain closes:** True — Given the stated block form M_KS = [[0,K],[-K^†,0]] and balanced epsilon grading, the SVD reduction and determinant sign cancellation are standard finite-dimensional linear algebra. No Wilson-sector bridge or external numerical input is needed.
+- **rationale:** The proof is an algebraic closure over the explicit structural inputs: anti-Hermiticity, epsilon off-diagonality, balanced sublattices, and positive scalar mass. The load-bearing determinant identity follows from SVD and the det(epsilon) sign reconciliation, not from a fitted value, comparator, or imported bridge theorem. The runner genuinely constructs staggered SU(3) matrices and numerically checks the same identities; it does not hard-code the target determinant beyond computing the formula being verified.
 - **auditor confidence:** high
 
 ### `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16`

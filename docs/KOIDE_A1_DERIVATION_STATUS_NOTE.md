@@ -71,7 +71,8 @@ TRACE invariants (tr, tr²), not from Clifford generator products
 but not trace-based.
 
 **Review-loop result:** the companion
-[`KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routea.md`](KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routea.md)
+`KOIDE_A1_ROUTE_A_KOIDE_NISHIURA_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routea.md`
+(see-also cross-reference; backticked to break cycle-0006)
 records a bounded obstruction. The internal arithmetic remains true,
 but retained content does not fix the Wilson-coefficient ratio
 `(2 : -3)` without importing the Koide target.
@@ -108,7 +109,8 @@ form suggests a natural polynomial structure, but does not by itself
 force the specific 6 coefficient.
 
 **Review-loop result:** the companion
-[`KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md`](KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md)
+`KOIDE_A1_ROUTE_D_NEWTON_GIRARD_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_routed.md`
+(see-also cross-reference; backticked to break cycle-0029)
 records a bounded obstruction: Newton-Girard gives an identity between
 coordinate systems, not a constraint selecting A1.
 
@@ -201,8 +203,9 @@ and leave the A1 admission count unchanged:
   inner product.
 - [`KOIDE_A1_PROBE_SPECTRAL_ACTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe4.md`](KOIDE_A1_PROBE_SPECTRAL_ACTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe4.md)
   — spectral-action import does not produce an A1 critical point.
-- [`KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md`](KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md)
-  — A1 is not a retained charged-lepton RG fixed point.
+- `KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md`
+  (see-also cross-reference; backticked to break cycle-0004) — A1 is
+  not a retained charged-lepton RG fixed point.
 - [`KOIDE_A1_PROBE_OPERATOR_CLASS_BOUNDED_NOTE_2026-05-08_probe6.md`](KOIDE_A1_PROBE_OPERATOR_CLASS_BOUNDED_NOTE_2026-05-08_probe6.md)
   — expanding the operator class does not create a closure path.
 
@@ -212,8 +215,9 @@ The 2026-05-09 review-loop batch adds targeted follow-up notes that
 sharpen the same missing primitive without changing the admission
 count:
 
-- [`KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe7.md`](KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe7.md)
-  — no retained `Z_2 x C_3` pairing forces `1/2`; the note localizes
+- `KOIDE_A1_PROBE_Z2_C3_PAIRING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe7.md`
+  (see-also cross-reference; backticked to break cycle-0005) —
+  no retained `Z_2 x C_3` pairing forces `1/2`; the note localizes
   the obstruction at the `3:6` multiplicity-weighted Frobenius pairing
   on `M_3(C)_Herm`.
 - [`KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md`](KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md)

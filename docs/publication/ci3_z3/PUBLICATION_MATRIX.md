@@ -210,5 +210,7 @@ qualifiers explicitly.
 
 If a result family is not listed here, it is not yet publication-captured.
 
-If it is listed here but not in [CLAIMS_TABLE.md](./CLAIMS_TABLE.md), then it is
-not on the retained flagship claim surface.
+If it is listed here but not in `CLAIMS_TABLE.md` (see-also cross-reference;
+backticked to break cycle-0016 / cycle-0033 / cycle-0045 — `CLAIMS_TABLE.md`
+already names this matrix as its sibling publication-package artifact),
+then it is not on the retained flagship claim surface.

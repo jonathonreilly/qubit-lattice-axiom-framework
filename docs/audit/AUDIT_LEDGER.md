@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 316 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1230 |
-| meta | 196 |
+| unaudited | 1235 |
+| meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 166 |
@@ -49,33 +49,33 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1426 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 930 |
+| `bounded_theorem` | 933 |
 | `decoration` | 18 |
-| `meta` | 198 |
+| `meta` | 199 |
 | `no_go` | 234 |
 | `open_gate` | 111 |
-| `positive_theorem` | 731 |
+| `positive_theorem` | 733 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 1067 |
 | `high` | 58 |
-| `medium` | 259 |
-| `leaf` | 838 |
+| `medium` | 260 |
+| `leaf` | 843 |
 
 - **Retained pending chain closure:** 5
 - **Citation cycles detected:** 246
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1825
-- runners with (C) first-principles compute hits: 901
+- runners classified: 1830
+- runners with (C) first-principles compute hits: 902
 - runners with (D) external comparator hits: 516
-- decoration candidates (no C, no D): 279
+- decoration candidates (no C, no D): 282
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -86,7 +86,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms_2026-05-03` | meta | critical | 881 | 49.28 | `unaudited` | meta |
 | 2 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 854 | 46.24 | `audited_conditional` | ~~audited_conditional~~ |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 839 | 46.21 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1004 | 40.47 | `audited_clean` | **retained_bounded** |
+| 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1005 | 40.97 | `audited_clean` | **retained_bounded** |
 | 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 804 | 40.15 | `unaudited` | unaudited |
 | 6 | `minimal_axioms_2026-04-11` | meta | critical | 875 | 39.77 | `unaudited` | meta |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 891 | 37.80 | `unaudited` | unaudited |

@@ -1,0 +1,83 @@
+==============================================================================
+AUDIT PACKET SCRIPT-DEP RESOLVER
+==============================================================================
+
+Total claims in ledger: 2228
+Pending audits in queue: 1240
+
+Claims with runner path: 1957
+Claims with no runner declared: 266
+Claims whose runner file is missing: 5
+
+Pending claims with helper imports (would trigger class-C bug): 79 / 1105
+
+Top 20 most-imported helper scripts:
+    40x  scripts/minimal_source_driven_field_probe.py
+    27x  scripts/numpy_replay_bootstrap.py
+    23x  scripts/generative_causal_dag_interference.py
+    19x  scripts/two_body_momentum_harness.py
+    14x  scripts/gate_b_grown_joint_package.py
+    14x  scripts/causal_field_gravity.py
+    12x  scripts/topology_families.py
+    11x  scripts/gap_topological_asymmetry.py
+    11x  scripts/combined_gravity_scaling.py
+    11x  scripts/signed_gravity_aps_boundary_index_probe.py
+    10x  scripts/gap_topological_asymmetry_layernorm_combo.py
+    10x  scripts/frontier_teleportation_native_record_apparatus.py
+     9x  scripts/persistent_object_adaptive_readout_probe.py
+     9x  scripts/persistent_object_compact_shared.py
+     8x  scripts/mirror_born_audit.py
+     8x  scripts/stochastic_collapse_born_calibration.py
+     8x  scripts/central_band_layernorm_combo.py
+     8x  scripts/quasi_persistent_relaunch_probe.py
+     7x  scripts/two_register_decoherence.py
+     7x  scripts/density_matrix_analysis.py
+
+Sample claims that would trigger class-C from missing helpers:
+  - antigravity_sign_selector_boundary_note
+      primary: scripts/gravity_signed_sector_harness.py
+      helpers: ['numpy_replay_bootstrap']
+  - asymmetry_persistence_joint_card_note
+      primary: scripts/asymmetry_persistence_joint_card.py
+      helpers: ['asymmetry_persistence_pilot', 'gap_topological_asymmetry', 'gap_topological_asymmetry_layernorm_combo']
+  - audited_symmetry_synthesis_note
+      primary: scripts/mirror_2d_validation.py
+      helpers: ['mirror_born_audit']
+  - broad_surrogate_point_source_compare_note
+      primary: scripts/broad_surrogate_point_source_compare.py
+      helpers: ['two_body_momentum_harness']
+  - composite_source_additivity_2d_note
+      primary: scripts/composite_source_additivity_2d_cross_family.py
+      helpers: ['lattice_2d_continuum_distance']
+  - composite_source_additivity_note
+      primary: scripts/composite_source_additivity_harness.py
+      helpers: ['two_body_momentum_harness']
+  - directional_b_geometry_normalized_holdout_transfer_mass5_note
+      primary: scripts/directional_b_geometry_normalized_holdout_transfer.py
+      helpers: ['density_matrix_analysis', 'directional_b_readout_compare', 'generative_causal_dag_interference', 'gravity_observable_readout_scaling_compare', 'gravity_packet_local_action_flow_transfer_compare', 'scaling_testbench', 'two_register_decoherence']
+  - directional_b_geometry_normalized_holdout_transfer_note
+      primary: scripts/directional_b_geometry_normalized_holdout_transfer.py
+      helpers: ['density_matrix_analysis', 'directional_b_readout_compare', 'generative_causal_dag_interference', 'gravity_observable_readout_scaling_compare', 'gravity_packet_local_action_flow_transfer_compare', 'scaling_testbench', 'two_register_decoherence']
+  - directional_b_geometry_normalized_overlap_map_note
+      primary: scripts/directional_b_geometry_normalized_overlap_map.py
+      helpers: ['density_matrix_analysis', 'directional_b_geometry_normalized_holdout_transfer', 'directional_b_overlap_onset_local_density_compare', 'directional_b_overlap_onset_transfer_holdout', 'directional_b_readout_compare', 'generative_causal_dag_interference', 'gravity_observable_readout_scaling_compare', 'gravity_packet_local_action_flow_transfer_compare', 'scaling_testbench', 'two_register_decoherence']
+  - directional_b_geometry_normalized_overlap_subcritical_n12_note
+      primary: scripts/directional_b_geometry_normalized_overlap_map.py
+      helpers: ['density_matrix_analysis', 'directional_b_geometry_normalized_holdout_transfer', 'directional_b_overlap_onset_local_density_compare', 'directional_b_overlap_onset_transfer_holdout', 'directional_b_readout_compare', 'generative_causal_dag_interference', 'gravity_observable_readout_scaling_compare', 'gravity_packet_local_action_flow_transfer_compare', 'scaling_testbench', 'two_register_decoherence']
+
+Wrote docs/audit/data/audit_packet_script_deps.json
+
+==============================================================================
+RECOMMENDATION FOR AUDIT ORCHESTRATOR
+==============================================================================
+
+When assembling the audit packet for claim_id X:
+  1. Include the source note (docs/X.md)
+  2. Include the primary runner (scripts/<primary>.py)
+  3. Include the runner cache (logs/runner-cache/<primary>.txt)
+  4. NEW: Include all transitive helper scripts named in
+     audit_packet_script_deps.json[X]['helper_runners']
+
+This change would prevent 79 pending audits from
+hitting the class-C 'missing dependency' verdict due to packet
+incompleteness alone.

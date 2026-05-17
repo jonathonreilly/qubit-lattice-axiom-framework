@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py
+runner_sha256: 0f412a8805bc8953952c1dc1a90198adfe259de6388682bcdea7a1dae445cc1c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge Shannon/Khinchin external bounded note runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md
+
+==============================================================================
+T1: Cauchy log functional equation (symbolic SymPy)
+==============================================================================
+  [PASS] log(x*y) = log(x) + log(y) symbolically
+         sympy.simplify(lhs - rhs) = 0
+  [PASS] c*log(x*y) = c*log(x) + c*log(y) for any real c
+         sympy.simplify(c*log diff) = 0
+
+==============================================================================
+T2: Cauchy log uniqueness on rational grid (numerical)
+==============================================================================
+  [PASS] log(xy)=log(x)+log(y) on rational grid to <1e-12
+         max_residual=2.220e-16, grid_size=36
+
+==============================================================================
+T3: Shannon entropy additivity on independent distributions (exact)
+==============================================================================
+  [PASS] H(p (x) q) = H(p) + H(q) symbolically for independent rational p, q
+         sympy.simplify(H(p (x) q) - H(p) - H(q)) = 0
+
+==============================================================================
+T4: Khinchin axiom enumeration on a discrete distribution test bank
+==============================================================================
+  [PASS] K1 continuity: small perturbation -> small H change
+         |H(perturbed) - H(uniform)| = 9.9672e-05
+  [PASS] K2 monotonicity at uniform: H_2 < H_3 < H_4
+         H_2=0.6931, H_3=1.0986, H_4=1.3863
+  [PASS] K3 chain rule: H(AB) = H(A) + H(B|A) numerically
+         H(AB)=1.357978, H(A)+H(B|A)=1.357978
+  [PASS] K4 consistency: appending zero-prob event leaves H unchanged
+         H(p,0)-H(p)=0.00e+00
+
+==============================================================================
+T5: Grassmann determinant factorization on finite SymPy block
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A+J_A) det(D_B+J_B) symbolically
+         sympy.simplify(diff) = 0
+
+==============================================================================
+T6: log|Z| additivity on independent Grassmann blocks (numerical)
+==============================================================================
+  [PASS] log|Z_full| = log|Z_A| + log|Z_B| on independent blocks
+         |residual|=2.776e-17, log|Z_full|=-0.022632
+
+==============================================================================
+T7: Honest scope check — P1 NOT retired by this scaffold
+==============================================================================
+  [PASS] note contains all required honest-scope admission strings
+         all required strings present
+
+==============================================================================
+T8: Sensitivity — non-additive alternatives violate the functional equation
+==============================================================================
+  [PASS] f(r)=r: f(r1 r2)=r1 r2 != r1+r2 = f(r1)+f(r2) (so identity is NOT additive)
+         f(r1 r2)=6, f(r1)+f(r2)=5
+  [PASS] f(r)=r^2 also fails f(r1 r2)=f(r1)+f(r2) in general
+         f(r1 r2)=36, f(r1)+f(r2)=13
+  [PASS] c*log uniquely satisfies the multiplicative-to-additive equation
+         lhs=1.791759, rhs=1.791759
+
+==============================================================================
+T9: Scope boundary — parent statuses not promoted
+==============================================================================
+  [PASS] note explicitly states non-promotion language
+         required_all_present=True
+  [PASS] note avoids forbidden status-promotion strings
+         forbidden_present=False
+
+==============================================================================
+T10: Source-note boundary check
+==============================================================================
+  [PASS] note declares Claim type: bounded_theorem
+  [PASS] note declares Status authority: source-note proposal only
+  [PASS] note avoids forbidden status-overclaim strings
+
+=== TOTAL: PASS=19, FAIL=0 ===
+
+----- stderr -----
+

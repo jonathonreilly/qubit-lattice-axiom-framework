@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py
+runner_sha256: 38e2aefeaa20c6af42c2fdafd56e936d523540d0620d4ef027ecbde47bad6d18
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+G_BARE_FORCED_VIA_WARD_SUBSTITUTION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of the two-Ward substitution closure
+Inputs (cited):
+  (W1) g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19  retained_bounded
+  (W2) g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19    unaudited (hypothesis)
+  (NC) graph_first_su3_integration_note                            retained_bounded
+  (AN) g_bare_forced_by_ward_rep_b_independence_abstract_narrow   retained
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup (positive bare-coupling branch)
+----------------------------------------------------------------------------------------
+  symbolic g_bare = g_bare  (positive bare-coupling branch)
+  symbolic N_c    = N_c     (positive integer color rank)
+  symbolic F      = F       (placeholder for F_Htt^(0))
+  (W1) F_Htt^(0) = 1/sqrt(6),    F_Htt^(0)^2 = 1/6 = 1/6
+  (W2) F_Htt^(0)^2 = g_bare^2 / (2 N_c)
+  (NC) N_c (framework) = 3
+
+----------------------------------------------------------------------------------------
+Part 1: (W1) g_bare-flatness check on a grid of g_bare values
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W1) g_bare-flatness: F_Htt^(0)(g_bare=1/2) = 1/sqrt(6)  (F_Htt^(0) = sqrt(6)/6)
+  [PASS (A)] (W1) g_bare-flatness squared: F_Htt^(0)(g_bare=1/2)^2 = 1/6  (F_Htt^(0)^2 = 1/6)
+  [PASS (A)] (W1) g_bare-flatness: F_Htt^(0)(g_bare=1) = 1/sqrt(6)  (F_Htt^(0) = sqrt(6)/6)
+  [PASS (A)] (W1) g_bare-flatness squared: F_Htt^(0)(g_bare=1)^2 = 1/6  (F_Htt^(0)^2 = 1/6)
+  [PASS (A)] (W1) g_bare-flatness: F_Htt^(0)(g_bare=2) = 1/sqrt(6)  (F_Htt^(0) = sqrt(6)/6)
+  [PASS (A)] (W1) g_bare-flatness squared: F_Htt^(0)(g_bare=2)^2 = 1/6  (F_Htt^(0)^2 = 1/6)
+  [PASS (A)] (W1) g_bare-flatness: F_Htt^(0)(g_bare=7/11) = 1/sqrt(6)  (F_Htt^(0) = sqrt(6)/6)
+  [PASS (A)] (W1) g_bare-flatness squared: F_Htt^(0)(g_bare=7/11)^2 = 1/6  (F_Htt^(0)^2 = 1/6)
+  [PASS (A)] (W1) g_bare-flatness: F_Htt^(0)(g_bare=13) = 1/sqrt(6)  (F_Htt^(0) = sqrt(6)/6)
+  [PASS (A)] (W1) g_bare-flatness squared: F_Htt^(0)(g_bare=13)^2 = 1/6  (F_Htt^(0)^2 = 1/6)
+
+----------------------------------------------------------------------------------------
+Part 2: (T1) substitution closure -> g_bare^2 = 1 at N_c = 3
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T1) substitution residual (W2 - W1^2) at N_c = 3 reduces to (g_bare^2 - 1)/6  (residual = g_bare**2/6 - 1/6)
+  [PASS (A)] (T1) solving closure_residual == 0 for g_bare^2 yields {1}  (sympy.solve gave [1])
+  [PASS (A)] (T1 alt via AN) abstract narrow at (N, c0) = (3, 1/6) yields g^2 = 1  (g^2 = 2 * 3 * 1/6 = 1)
+  [PASS (A)] (T1) substitution route and (AN) abstract route agree on g_bare^2 = 1  (sympy.solve = [1], AN = [1])
+
+----------------------------------------------------------------------------------------
+Part 3: (T2) positive bare-coupling branch -> g_bare = 1
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T2) solve(g_bare^2 = 1) on positive branch gives unique g_bare = 1  (sympy.solve = [1])
+  [PASS (A)] (T2 alt) real-only roots of g^2 = 1 are {-1, +1}; positive branch selects +1  (sympy.solve (real) = [-1, 1])
+
+----------------------------------------------------------------------------------------
+Part 4: (T3) counterfactual color ranks
+----------------------------------------------------------------------------------------
+  [PASS (A)] (T3) at N_c = 2 the substitution forces g_bare^2 = 2/3 (not 1)  (sympy.solve = [2/3])
+  [PASS (A)] (T3) at N_c = 4 the substitution forces g_bare^2 = 4/3 (not 1)  (sympy.solve = [4/3])
+  [PASS (A)] (T3) at N_c = 5 the substitution forces g_bare^2 = 5/3 (not 1)  (sympy.solve = [5/3])
+
+----------------------------------------------------------------------------------------
+Part 5: (AN) abstract narrow forcing identity, framework instance
+----------------------------------------------------------------------------------------
+  [PASS (A)] (AN) abstract forcing: solve(c0 = g^2/(2N)) for g^2 yields 2*N*c0  (sympy.solve = [2*N_abs*c0_abs])
+  [PASS (A)] (AN) framework instance (N, c0) = (3, 1/6) -> g^2 = 1  (g^2 = 2 * 3 * 1/6 = 1)
+  [PASS (A)] (AN) counterfactual instance (N, c0) = (1, 1) -> g^2 = 2 (not 1)  (g^2 = 2 * 1 * 1 = 2)
+
+----------------------------------------------------------------------------------------
+Part 6: consistency between (W1) and (W2) at framework values
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W1) and (W2) both yield F_Htt^(0)^2 = 1/6 at (g_bare, N_c) = (1, 3)  (W1: 1/6, W2 at (1,3): 1/6)
+  [PASS (A)] (W1)/(W2) inconsistency at (g_bare, N_c) = (2, 3): W2 gives 2/3 != W1's 1/6  (W2 at (2,3) = 2/3; W1 = 1/6)
+
+----------------------------------------------------------------------------------------
+Part 7: simplify-roundtrip on the load-bearing residual
+----------------------------------------------------------------------------------------
+  [PASS (A)] load-bearing residual R(g_bare, 3) reduces to (1 - g_bare^2) / 6  (R(g_bare, 3) = 1/6 - g_bare**2/6, claimed = 1/6 - g_bare**2/6)
+  [PASS (A)] load-bearing residual R(1, 3) = 0 exactly (the closure point)  (R(1, 3) = 0)
+  [PASS (A)] load-bearing residual R(2, 3) = -1/2 != 0 (off-surface confirmation)  (R(2, 3) = -1/2)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (W1) g_bare-flatness of F_Htt^(0) across grid of g_bare values
+    (T1) substitution closure at N_c = 3 forces g_bare^2 = 1
+    (T1 alt) abstract narrow (AN) at (N, c0) = (3, 1/6) yields g^2 = 1
+    (T2) positive bare-coupling branch yields unique g_bare = 1
+    (T3) counterfactual N_c = 2 forces g_bare^2 = 2/3 (not 1)
+    (T3) counterfactual N_c = 4 forces g_bare^2 = 4/3 (not 1)
+    (T3) counterfactual N_c = 5 forces g_bare^2 = 5/3 (not 1)
+    (AN) abstract forcing identity solve(c0 = g^2/(2N)) yields g^2 = 2 N c0
+    (W1) and (W2) consistency at (g_bare, N_c) = (1, 3)
+    (W1)/(W2) off-surface inconsistency at (g_bare, N_c) = (2, 3)
+    load-bearing residual reduces to (1 - g_bare^2)/6 at N_c = 3
+
+========================================================================================
+TOTAL: PASS=27, FAIL=0
+========================================================================================
+
+----- stderr -----
+

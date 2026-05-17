@@ -5136,6 +5136,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_dm_neutrino_ckm_texture_transfer_nogo.py"
     },
+    "dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 48,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py"
+    },
     "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15": {
       "assert_count": 1,
       "counts": {
@@ -7751,6 +7763,18 @@
       "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_g_bare_canonical_convention_narrow.py"
+    },
+    "g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py"
     },
     "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07": {
       "assert_count": 0,
@@ -15228,6 +15252,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_hierarchy_observable_principle_from_axiom.py"
     },
+    "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 13,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -19536,6 +19572,18 @@
       "dominant_class": "D",
       "runner": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py"
     },
+    "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": {
+      "assert_count": 2,
+      "counts": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py"
+    },
     "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac": {
       "assert_count": 6,
       "counts": {
@@ -19547,6 +19595,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py"
+    },
+    "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17": {
+      "assert_count": 2,
+      "counts": {
+        "A": 28,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py"
     },
     "staggered_dirac_substep4_positive_ratchet_stretch_attempt_note_2026-05-10": {
       "assert_count": 1,
@@ -24497,6 +24557,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 48,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py": {
       "assert_count": 1,
       "claims": [
@@ -24531,6 +24606,21 @@
       "assert_count": 1,
       "claims": [
         "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17"
       ],
       "counts": {
         "A": 0,
@@ -24765,6 +24855,36 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py": {
+      "assert_count": 2,
+      "claims": [
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py": {
+      "assert_count": 2,
+      "claims": [
+        "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 28,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/audit_companion_strong_cp_rp_cannot_forbid_cp_odd_imaginary_no_go_2026_05_16.py": {
@@ -39871,6 +39991,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py": {
+      "assert_count": 1,
+      "claims": [
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 13,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_oh_schur_boundary_action.py": {
       "assert_count": 1,
       "claims": [
@@ -50996,16 +51131,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 279,
+    "decoration_candidates": 282,
     "dominant_class_distribution": {
-      "A": 168,
+      "A": 172,
       "B": 253,
       "C": 702,
       "D": 282,
-      "none": 420
+      "none": 421
     },
-    "runners_classified": 1825,
-    "runners_with_C": 901,
+    "runners_classified": 1830,
+    "runners_with_C": 902,
     "runners_with_D": 516
   }
 }

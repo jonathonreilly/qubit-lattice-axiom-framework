@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 316 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1198 |
+| unaudited | 1197 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 191 |
+| ~~audited_conditional~~ | 192 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 533 |
-| `audited_conditional` | 191 |
+| `audited_conditional` | 192 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1313 |
+| `unaudited` | 1312 |
 
 | claim_type | count |
 |---|---:|
@@ -821,6 +821,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `universal_gr_canonical_projector_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -10977,6 +10978,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The family has a real bounded basin: 5/15 tested rows pass exact zero and neutral controls, correct +1/-1 sign orientation, and near-linear double-source scaling.  _(class `C`)_
 - **chain closes:** True — The cached SHA-fresh runner output matches the note's counted pass set, drift coverage, and mean exponent, and the one-hop boundary dependency is retained_bounded. The conclusion must remain bounded to the tested finite sweep and does not support a family-wide or geometry-generic theorem.
 - **rationale:** The runner constructs the third cross-quadrant load-balanced connectivity, computes zero, plus, minus, neutral, double-source responses for all 15 drift/seed rows, and marks five rows as passing without hard-coded target pass values. The source note's numeric claims match the cached runner output: 5/15 passed rows, drift coverage [0.1, 0.2, 0.3], and mean passing exponent 0.999842. The upstream boundary note is retained_bounded and supports the narrow interpretation that edge failures are structural rather than control leakage.
+- **auditor confidence:** high
+
+### `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** External 4D SU(N) Yang-Mills confinement-mechanism vocabulary and diagnostics, with explicit non-closure of framework bridges and string-tension derivation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-115011-20260517T115011Z-60b27eff-thooft_1981_dual_superco-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note records monopole-condensate, dual-superconductor, center-vortex, and Wilson-loop area-law statements only as external mechanism targets and diagnostics, while explicitly not proving condensation, string tension, confinement, or any framework substrate bridge.  _(class `E`)_
+- **chain closes:** False — The restricted packet closes only the syntactic and symbolic recording of the open gate. It does not derive monopole condensation, center-vortex percolation, the Wilson-loop area law, σ > 0, or a framework substrate/readout bridge.
+- **rationale:** Issue: the runner verifies text presence and simple symbolic identities, but it does not derive 4D confinement, monopole condensation, center-vortex percolation, or a framework-to-Wilson-loop bridge. Why this blocks: the note correctly declares these as external/open mechanism targets, so the restricted packet supports only an open gate, not retained theorem closure. Repair target: a retained-grade derivation or supplied retained upstream authority for the condensation/percolation mechanism, string tension, and any framework substrate/readout identification. Claim boundary until fixed: the note can be cited as scoped external context and diagnostic vocabulary only.
 - **auditor confidence:** high
 
 ### `three_family_card_note`

@@ -1,0 +1,16 @@
+==============================================================================
+AUDIT-PREP VERIFIER — teleportation_poisson_resource_sweep_note
+==============================================================================
+  [PASS] [A] Parent note exists  (TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md, 6477 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   teleportation_resource_from_poisson_note IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED

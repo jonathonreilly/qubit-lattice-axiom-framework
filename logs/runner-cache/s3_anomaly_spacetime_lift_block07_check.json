@@ -1,0 +1,75 @@
+{
+  "claim_A_pass": 5,
+  "claim_A_total": 5,
+  "claim_B_pass": 4,
+  "claim_B_total": 4,
+  "named_escapes": 2,
+  "total_pass": 9,
+  "total_total": 9,
+  "checks": [
+    {
+      "name": "A1: pi_1(S^3 / Z_k) != 0 for k = 2..5 (excludes C-1)",
+      "ok": true,
+      "detail": "k=2: |pi_1| = 2 > 1 -> nontrivial; k=3: |pi_1| = 3 > 1 -> nontrivial; k=4: |pi_1| = 4 > 1 -> nontrivial; k=5: |pi_1| = 5 > 1 -> nontrivial",
+      "status": "EXACT"
+    },
+    {
+      "name": "A2: generic Heisenberg trajectory non-periodic (excludes C-2 periodic time)",
+      "ok": true,
+      "detail": "max ||A(T)-A(0)|| over T in [1.0, 6.283185307179586, 7.5, 1.5707963267948966] = 4.700737e+00 > 1e-6",
+      "status": "EXACT"
+    },
+    {
+      "name": "A2': for generic Hermitian H, U(T) != I on all sample T",
+      "ok": true,
+      "detail": "min over T: ||U(T)-I|| = 3.006135e+00 > 1e-6",
+      "status": "EXACT"
+    },
+    {
+      "name": "A3: d_t({*}) = 0 != 1 = d_t(anomaly-forced) (excludes C-3)",
+      "ok": true,
+      "detail": "d_t({*}) = 0, d_t(anomaly-forced) = 1",
+      "status": "EXACT"
+    },
+    {
+      "name": "A4: candidate set {C-0..C-3} reduces to {C-0} = PL S^3 x R",
+      "ok": true,
+      "detail": "survivors = ['C-0']",
+      "status": "EXACT"
+    },
+    {
+      "name": "B1a: W^(2)_{a,b} scalar per (a,b), symmetric (spacetime-tensor rank 0)",
+      "ok": true,
+      "detail": "shape=(3, 3), max asymmetry=0.00e+00, sample diag=[-0.2224755585562026, -0.21537824864162394, -0.29720757394077385]",
+      "status": "EXACT"
+    },
+    {
+      "name": "B1b: W^(3)_{a,b,c} scalar per (a,b,c) (spacetime-tensor rank 0)",
+      "ok": true,
+      "detail": "shape=(3, 3, 3), max |W^(3)|=1.6203e-01",
+      "status": "EXACT"
+    },
+    {
+      "name": "B2a: scalar site projectors lack covariant transformation law",
+      "ok": true,
+      "detail": "||R^a_mu P_a - P_mu (scalar rule)|| = 5.884244e-01 > 1e-6 (rules inconsistent)",
+      "status": "EXACT"
+    },
+    {
+      "name": "B2b: W^(2)_{ab} X^a Y^b is scalar (rank 0, not rank-(0,2))",
+      "ok": true,
+      "detail": "contracted value = -5.296000e-03 (scalar)",
+      "status": "EXACT"
+    }
+  ],
+  "named_escape_records": [
+    {
+      "name": "B2c: tensor-valued source channel (escape from Hessian)",
+      "detail": "Tensor-valued source J^mu requires an enlarged P1 (additivity) premise admitting tensor-indexed subsystems; not derived in OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md; OUT of scalar-Hessian channel."
+    },
+    {
+      "name": "B2d: metric-perturbation source channel (escape from Hessian)",
+      "detail": "Metric-perturbation source d^2 W / d g_{mu nu} d g_{rho sigma} is rank-(0,4) bi-tensor (not rank-(0,2)); also introduces NEW source channel (geometric coupling to D[g]) outside observable principle; OUT of scalar-Hessian channel."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+==============================================================================
+AUDIT-PREP VERIFIER — neutrino_mass_reduction_to_dirac_note
+==============================================================================
+  [PASS] [A] Parent note exists  (NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md, 10309 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   publication.ci3_z3.publication_matrix IS cited (>=1 hit)  (hits = 1)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   neutrino_retained_status_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.claims_table NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.derivation_atlas NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.derivation_validation_map NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.gravity_publication_package_summary_2026-04-15 NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 7 PASS / 0 FAIL
+Class-A pattern hits: 7
+==============================================================================
+
+VERIFIED

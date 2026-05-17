@@ -26265,6 +26265,10 @@
       "to": "yt_vertex_power_derivation"
     },
     {
+      "from": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
+      "to": "yt_ew_color_projection_theorem"
+    },
+    {
       "from": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
       "to": "unit_singlet_overlap_narrow_theorem_note_2026-05-02"
     },
@@ -76318,6 +76322,20 @@
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "title": "Top-Yukawa Structural Identification: y_t(M_Pl) = g_s(M_Pl) / sqrt(6)"
     },
+    "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17": {
+      "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "yt_ew_color_projection_theorem"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "10438ee488107dc27e54485ec600ee0e0a600824b9d0adfe0a3ed72322ebfd8f",
+      "path": "docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py",
+      "title": "yt_ward Canonical-Surface Ratio Narrow Theorem (Tadpole Cancellation)"
+    },
     "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10": {
       "claim_id": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "open_gate",
@@ -77279,7 +77297,7 @@
       "no_go": 56,
       "none": 1528,
       "open_gate": 44,
-      "positive_theorem": 156
+      "positive_theorem": 157
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 864,
@@ -77288,12 +77306,12 @@
       "no_go": 161,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 609
+      "positive_theorem": 610
     },
-    "edge_count": 9183,
-    "leaf_count": 714,
-    "node_count": 2359,
+    "edge_count": 9184,
+    "leaf_count": 715,
+    "node_count": 2360,
     "root_count": 848,
-    "runners_with_path": 1970
+    "runners_with_path": 1971
   }
 }

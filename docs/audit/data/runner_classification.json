@@ -23712,6 +23712,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_yt_ward_identity_derivation.py"
     },
+    "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py"
+    },
     "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
@@ -25398,6 +25410,21 @@
       "assert_count": 1,
       "claims": [
         "wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17"
       ],
       "counts": {
         "A": 0,
@@ -51704,9 +51731,9 @@
       "B": 256,
       "C": 703,
       "D": 289,
-      "none": 423
+      "none": 424
     },
-    "runners_classified": 1851,
+    "runners_classified": 1852,
     "runners_with_C": 907,
     "runners_with_D": 527
   }

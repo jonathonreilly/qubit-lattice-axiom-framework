@@ -74901,7 +74901,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 20.457,
+      "load_bearing_score": 20.459,
       "load_bearing_step": "The q-qbar color space decomposes as N_c tensor N_c-bar = 1 + adjoint, so the adjoint channel-count fraction is (N_c^2 - 1)/N_c^2, giving 8/9 at N_c=3 and reciprocal 9/8.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -74967,7 +74967,7 @@
       },
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "EW Current Fierz-Channel Decomposition: Exact Group-Theory Derivation of `(N_c^2 - 1)/N_c^2`",
-      "transitive_descendants": 993,
+      "transitive_descendants": 994,
       "verdict_rationale": "Within the stated boundary, the derivation closes: the Fierz identity supplies the singlet/adjoint decomposition and the Hilbert-space dimension count gives the exact ratio without numerical tuning or an asymptotic correction. The note correctly separates this bounded theorem from the unproved matching rule M and does not claim to derive the full EW coupling correction. The retained upstream dependencies are sufficient for the scoped color/gauge context and no forbidden cycle dependency is load-bearing."
     },
     "ew_current_matching_ozi_suppression_theorem_note_2026-04-27": {
@@ -75140,7 +75140,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 19.448,
+      "load_bearing_score": 19.45,
       "load_bearing_step": "The two completions kappa_EW = 0 and kappa_EW = 1 satisfy the same Fierz ratio, CMT scaling, and OZI boundedness premises but give different K_EW values, 9/8 and 1.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_bounded",
@@ -75234,7 +75234,7 @@
       },
       "runner_path": "scripts/frontier_ew_current_matching_rule_no_go.py",
       "title": "EW Current Matching Rule No-Go Proposal Note",
-      "transitive_descendants": 987,
+      "transitive_descendants": 988,
       "verdict_rationale": "The claim is a no-go, not a positive derivation of 9/8. Its load-bearing step is an algebraic independence witness showing that the cited Fierz/channel arithmetic plus the stated CMT and OZI constraints leave kappa_EW free. The runner source verifies the rational arithmetic and does not substitute an external comparator or tuned numerical input."
     },
     "ew_current_traceless_generator_selector_no_go_note_2026-05-03": {
@@ -95450,7 +95450,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 20.484,
+      "load_bearing_score": 20.486,
       "load_bearing_step": "For canonical cube shifts S_i, V_sel(phi)=Tr H(phi)^4-(Tr H(phi)^2)^2/8 equals 32 sum_{i<j} phi_i^2 phi_j^2, whose normalized simplex minima are exactly the three axis vertices.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -95594,7 +95594,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
       "title": "Graph-First Weak-Axis Selector Derivation",
-      "transitive_descendants": 1012,
+      "transitive_descendants": 1013,
       "verdict_rationale": "Issue checked: whether the graph-shift triplet derives a selector rather than inserting one. The selector formula is an exact trace calculation for the canonical graph-shift operators, and the minimizer statement follows directly on the normalized simplex. The claim boundary excludes anomaly-complete hypercharge and downstream phenomenology, so the bounded theorem closes without tuned matching or renaming."
     },
     "graph_first_su3_integration_note": {
@@ -95661,7 +95661,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 41.49,
+      "load_bearing_score": 41.492,
       "load_bearing_step": "Imposing the residual complementary-axis swap restricts the weak-su(2) commutant from gl(4) to gl(3) plus gl(1), whose compact semisimple part is su(3).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -95732,7 +95732,7 @@
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Graph-First `SU(3)` Integration Theorem",
-      "transitive_descendants": 1016,
+      "transitive_descendants": 1017,
       "verdict_rationale": "Issue checked: whether the selected graph axis gives a canonical route to su(3), not a full physical Standard Model identification. The finite graph construction closes: the selected-axis fiber operators generate weak su(2), the residual swap splits the base as 3+1, and the joint commutant has compact semisimple part su(3). The abelian factor remains explicitly bounded as hypercharge-like, so no anomaly-complete physical bridge is imported."
     },
     "graph_laplacian_core_card_note": {
@@ -148315,7 +148315,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 32.967,
+      "load_bearing_score": 32.969,
       "load_bearing_step": "Exact native Cl(3)/SU(2) closure is established algebraically, while SU(3) and the bounded hypercharge-like abelian surface are inherited only through retained graph-first dependencies and explicitly not promoted to anomaly-complete U(1)_Y or phenomenology.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -148558,7 +148558,7 @@
       },
       "runner_path": "scripts/frontier_non_abelian_gauge.py",
       "title": "Native Gauge Closure Note: Graph-First Gauge Closure on Z^3",
-      "transitive_descendants": 1000,
+      "transitive_descendants": 1001,
       "verdict_rationale": "Issue checked: whether the native gauge aggregator closes without importing a full Standard Model identification. Within the restricted scope, the claim closes as exact algebra plus retained dependency composition: the runner checks Clifford/SU(2), parity/hopping, dependency retained-grade status, and the selected-axis abelian eigenvalue surface. No hidden anomaly-complete U(1)_Y or phenomenology claim is asserted."
     },
     "neutrino_axiom3_reading_stuck_fanout_note_2026-04-28": {
@@ -244884,13 +244884,13 @@
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 46,
+      "direct_in_degree": 47,
       "effective_status": "retained_bounded",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 32.839,
+      "load_bearing_score": 33.341,
       "load_bearing_step": "The retained Fierz/CMT/OZI packet permits the conditional family alpha_EW(physical; kappa_EW)/alpha_EW(CMT) = 1/(8/9 + kappa_EW/9), with 9/8 only at kappa_EW = 0.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -245119,7 +245119,7 @@
       },
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "Color-Singlet Projection Theorem for EW Couplings",
-      "transitive_descendants": 915,
+      "transitive_descendants": 916,
       "verdict_rationale": "The load-bearing step is an algebraic substitution over retained dependencies, not a numerical fit or a new physical-readout derivation. The runner performs an MC connected-color-trace consistency check and a plaquette comparator check, but it does not derive kappa_EW=0 and is not needed to close the conditional formula. Old observed-match and 9/8 prose remains non-load-bearing under the source-note header boundary."
     },
     "yt_ew_coupling_bridge_note": {
@@ -251628,6 +251628,57 @@
       "transitive_descendants": 891,
       "verdict_rationale": null
     },
+    "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "yt_ew_color_projection_theorem"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "10438ee488107dc27e54485ec600ee0e0a600824b9d0adfe0a3ed72322ebfd8f",
+      "note_path": "docs/YT_WARD_RATIO_TADPOLE_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/audit_companion_yt_ward_ratio_tadpole_cancellation.py",
+      "title": "yt_ward Canonical-Surface Ratio Narrow Theorem (Tadpole Cancellation)",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
     "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T18:47:51.076132+00:00",
       "audit_state_snapshot": {
@@ -252633,9 +252684,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2199,
+    "preserved_existing": 2204,
     "re_audit_required": 0,
-    "row_count": 2248,
-    "seeded_new": 5
+    "row_count": 2249,
+    "seeded_new": 1
   }
 }

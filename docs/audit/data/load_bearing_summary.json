@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 1071,
     "high": 62,
-    "leaf": 923,
+    "leaf": 924,
     "medium": 303
   },
   "flagship_signal_used": false,
-  "node_count": 2359,
+  "node_count": 2360,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -37,8 +37,8 @@
     {
       "claim_id": "graph_first_su3_integration_note",
       "criticality": "critical",
-      "load_bearing_score": 41.49,
-      "transitive_descendants": 1016
+      "load_bearing_score": 41.492,
+      "transitive_descendants": 1017
     },
     {
       "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
@@ -71,16 +71,16 @@
       "transitive_descendants": 891
     },
     {
-      "claim_id": "native_gauge_closure_note",
-      "criticality": "critical",
-      "load_bearing_score": 32.967,
-      "transitive_descendants": 1000
-    },
-    {
       "claim_id": "yt_ew_color_projection_theorem",
       "criticality": "critical",
-      "load_bearing_score": 32.839,
-      "transitive_descendants": 915
+      "load_bearing_score": 33.341,
+      "transitive_descendants": 916
+    },
+    {
+      "claim_id": "native_gauge_closure_note",
+      "criticality": "critical",
+      "load_bearing_score": 32.969,
+      "transitive_descendants": 1001
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 111 |
+| **retained** | 112 |
 | **retained_no_go** | 139 |
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1229 |
+| unaudited | 1228 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 9 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 563 |
+| `audited_clean` | 564 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
@@ -171,6 +171,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2209,6 +2210,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** 3+1D currently shows a TOWARD basin with genuine periodic sign windows, not an everywhere-attractive universal regime, while the 1+1D and 2+1D overnight results and the specific 3+1D operating point still stand.  _(class `B`)_
 - **chain closes:** False — The direct dependencies close the newer 3+1D periodic sign-window narrowing, but the addendum's affirmative 1+1D, 2+1D, 3+1D operating-point, boundary-scan, coupled-coin, and 4-component Dirac claims are not supplied as one-hop retained authorities in this row.
 - **rationale:** Issue: the source note uses the two retained 3+1D recurrence/mixing diagnostics to narrow the periodic 3+1D sign claim, but it also preserves broad overnight 1+1D/2+1D/3+1D operating-point and later architecture claims without wiring those authorities as direct dependencies. Why this blocks: a clean synthesis would let unsupported retained-language claims propagate through a row whose supplied packet only closes the finite periodic-narrowing part. Repair target: either split this into a narrow clean 3+1D-periodic-framing note, or add/audit the named overnight and later architecture authorities as direct dependencies. Claim boundary until fixed: the 3+1D periodic universal-sign claim is narrowed by the retained recurrence/mixing notes; the broader chiral-walk synthesis remains conditional.
+- **auditor confidence:** high
+
+### `chsh_structural_bound_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the algebraic CHSH bounds: local ±1 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2√2, and the Pauli/Bell witness saturates 2√2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-183759-41cdea85-chsh_structural_bound_na-012`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
+- **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
+- **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`

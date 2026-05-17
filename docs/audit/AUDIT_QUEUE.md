@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `source_resolved_exact_green_scaling_note` | bounded_theorem | unaudited | critical | 840 | 11.22 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/source_resolved_exact_green_scaling.py` |
+| 1 | `source_resolved_exact_green_scaling_note` | bounded_theorem | audit_in_progress | critical | 840 | 11.22 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/source_resolved_exact_green_scaling.py` |
 | 2 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | unaudited | critical | 826 | 11.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py` |
 | 3 | `lensing_finite_path_explanation_note` | open_gate | unaudited | critical | 817 | 10.18 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lensing_analytical_finite_path.py` |
 | 4 | `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | unaudited | critical | 816 | 10.67 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py` |

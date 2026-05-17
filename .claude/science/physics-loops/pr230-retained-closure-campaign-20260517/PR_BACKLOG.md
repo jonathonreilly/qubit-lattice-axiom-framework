@@ -15,7 +15,8 @@ https://github.com/jonathonreilly/cl3-lattice-framework/pull/1458
 Stacked review PR for Block126:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1461
 
-Stacked review PR for Block127: pending.
+Stacked review PR for Block127:
+https://github.com/jonathonreilly/cl3-lattice-framework/pull/1463
 
 Branch/PR blocks:
 

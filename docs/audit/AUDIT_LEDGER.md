@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 315 |
+| **retained_bounded** | 316 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1199 |
-| audit_in_progress | 1 |
 | meta | 115 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,8 +42,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 532 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 533 |
 | `audited_conditional` | 190 |
 | `audited_decoration` | 17 |
 | `audited_failed` | 63 |
@@ -116,7 +115,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `wave_static_direct_probe_fine_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -633,6 +631,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_retardation_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_retardation_lab_prediction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_boundary_sensitivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `wave_static_direct_probe_fine_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_moving_source_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11584,6 +11583,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner performs a finite-grid static Poisson solve and retarded/static propagation comparison at the stated H, source position, and PW values, then computes the relative moves reported in the note. The conclusion follows for this bounded computational case.
 - **rationale:** The note makes a bounded negative stability claim, and the provided runner output matches the reported dS, rel_MS, residuals, and boundary-move percentages. The runner source does not merely print constants; it constructs the static solve, calls the wave/beam machinery, computes dM and dS, and derives rel_MS and relative moves from those values. No cited upstream authority is required for the narrow statement that this particular computation shows material finite-box sensitivity.
 - **auditor confidence:** medium
+
+### `wave_static_direct_probe_fine_note`
+
+- **Note:** [`WAVE_STATIC_DIRECT_PROBE_FINE_NOTE.md`](../../docs/WAVE_STATIC_DIRECT_PROBE_FINE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited claim is only that, for the reported H = 0.25 moving-source Lane 6 fine point, the direct discrete static comparator does not beat the equilibrated cached-static comparator dIeq.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-114851-20260517T114851Z-035512e8-wave_static_direct_probe-targeted`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** At H = 0.25 on the moving-source Lane 6 setup, the direct static solve gives dS = +0.011563 and rel_MS = 37.62%, which is worse than dIeq's rel_MIeq = 23.16%.  _(class `C`)_
+- **chain closes:** True — The provided runner source computes the moving-source fields, direct static Poisson solves, beam propagation, and relative gaps without hard-coded expected output values. The stdout matches the source note's fine-point numbers and supports the narrow negative comparison.
+- **rationale:** The load-bearing statement is a narrow numerical result from a deterministic runner that directly constructs the relevant lattice setup and computes dM, dIeq, dS, residuals, and relative gaps. The cited continuum-limit note is retained_bounded, and the present note does not claim the broader continuum theorem or closure of the entire exact-comparator lane. Within the stated H = 0.25 boundary, the conclusion follows from the supplied runner output and source code.
+- **auditor confidence:** high
 
 ### `wave_static_fixed_beam_boundary_sensitivity_note`
 

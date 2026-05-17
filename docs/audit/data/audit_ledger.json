@@ -227518,24 +227518,41 @@
       "verdict_rationale": "The note makes a bounded negative stability claim, and the provided runner output matches the reported dS, rel_MS, residuals, and boundary-move percentages. The runner source does not merely print constants; it constructs the static solve, calls the wave/beam machinery, computes dM and dS, and derives rel_MS and relative moves from those values. No cited upstream authority is required for the narrow statement that this particular computation shows material finite-box sensitivity."
     },
     "wave_static_direct_probe_fine_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T11:49:10.481605+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "wave_retardation_continuum_limit_note": "Finite H-refinement battery showing that the tested retarded-vs-c-infinity magnitude gaps are not converged for cached-static, equilibrated-static, or imposed-Newton comparators at H = 0.5, 0.35, 0.25, while dM is comparatively stable."
+        },
+        "dep_claim_type": {
+          "wave_retardation_continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_retardation_continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_retardation_continuum_limit_note"
+        ],
+        "load_bearing_score": 10.146,
+        "runner_hash": "ee203fcd9bcd18f331b3bf58a5041534165c2abefe74639a6e29ec5896339fc6",
+        "transitive_descendants": 800
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-114851-20260517T114851Z-035512e8-wave_static_direct_probe-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner source computes the moving-source fields, direct static Poisson solves, beam propagation, and relative gaps without hard-coded expected output values. The stdout matches the source note's fine-point numbers and supports the narrow negative comparison.",
       "claim_id": "wave_static_direct_probe_fine_note",
-      "claim_scope": "Fine-point numerical result only: for the provided moving-source Lane 6 setup at H = 0.25, the direct discrete static comparator does not outperform dIeq against dM.",
+      "claim_scope": "The audited claim is only that, for the reported H = 0.25 moving-source Lane 6 fine point, the direct discrete static comparator does not beat the equilibrated cached-static comparator dIeq.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-17T11:48:36.785771+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-17T11:49:10.481605+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -227550,26 +227567,37 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-17T11:49:10.481605+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-114851-20260517T114851Z-035512e8-wave_static_direct_probe-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited claim is only that, for the reported H = 0.25 moving-source Lane 6 fine point, the direct discrete static comparator does not beat the equilibrated cached-static comparator dIeq.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "wave_retardation_continuum_limit_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.146,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At H = 0.25 on the moving-source Lane 6 setup, the direct static solve gives dS = +0.011563 and rel_MS = 37.62%, which is worse than dIeq's rel_MIeq = 23.16%.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b8ffd2e82bd16b1dfecd5a6b2226272a5b2f6a4bdf22ad866aaeaa80588c3be0",
       "note_path": "docs/WAVE_STATIC_DIRECT_PROBE_FINE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the imported wave_retardation_continuum_limit functions implement the intended Lane 6 operator, since their source is not included in this restricted packet.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -227774,14 +227802,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/wave_static_direct_probe.py",
       "title": "Wave Static Direct-Comparator Fine Check",
       "transitive_descendants": 800,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing statement is a narrow numerical result from a deterministic runner that directly constructs the relevant lattice setup and computes dM, dIeq, dS, residuals, and relative gaps. The cited continuum-limit note is retained_bounded, and the present note does not claim the broader continuum theorem or closure of the entire exact-comparator lane. Within the stated H = 0.25 boundary, the conclusion follows from the supplied runner output and source code."
     },
     "wave_static_fixed_beam_boundary_sensitivity_note": {
       "audit_date": "2026-05-10T16:10:47.436131+00:00",

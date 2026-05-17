@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 337 |
+| **retained_bounded** | 338 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1209 |
+| unaudited | 1208 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 558 |
+| `audited_clean` | 559 |
 | `audited_conditional` | 180 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1406 |
+| `unaudited` | 1405 |
 
 | claim_type | count |
 |---|---:|
@@ -554,6 +554,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | E | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -10223,6 +10224,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For pi(x) < pi(y), the JW string factor S_y = S_x sigma_3^(x) T_xy makes c_x c_y acquire the opposite sign from c_y c_x by the on-site anticommutation sigma_+^(x) sigma_3^(x) = -sigma_3^(x) sigma_+^(x).  _(class `A`)_
 - **chain closes:** True — The claimed CAR relations follow from Pauli identities, disjoint tensor-factor commutativity, and the explicit JW string sign flip. The note explicitly excludes the physical U4 identification, so that open bridge is not part of the audited scope.
 - **rationale:** Within its stated abstract tensor-product scope, the derivation is a genuine algebraic closure over the retained Cl(3) dim-two input and admitted finite tensor-product construction. The runner source actually constructs Pauli tensor operators and JW strings with exact sympy arithmetic, rather than merely printing constants, and its PASS=44 FAIL=0 output supports the stated identities. No external comparator, tuned value, or physical-lattice identification is imported; the open U4 bridge is clearly scoped out.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the abstract finite-dimensional algebraic equivalence between the Z_2^d-indexed per-hypercube component space and Λ^*(C^d), the Kähler-Dirac operator identities on that form complex, the even-d spinor/taste count match, and the Wilson parity-reversal exclusion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-155000-a5e2dcef-staggered_dirac_substep2-027`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The canonical Hamming-weight indexing b ↦ {i : b_i = 1} gives a graded linear-algebra bijection V_{H_n} ≅ Λ^*(C^d), and D_KD := d - δ has the stated finite-dimensional exterior-algebra properties.  _(class `A`)_
+- **chain closes:** True — Within the stated narrow scope, the result follows from retained-grade upstream dimensional/counting inputs plus standard exterior-algebra identities. It does not close the separate physical identification of the framework's dynamical staggered-Dirac operator with D_KD, which the note explicitly leaves out of scope.
+- **rationale:** The load-bearing work is finite-dimensional algebra: enumeration of {0,1}^d, binomial/form-degree counting, construction of d and δ, adjointness, parity reversal, and the even-d arithmetic factorization. The cited authorities are retained or retained_bounded, and the runner source genuinely constructs the exterior-algebra matrices and checks the identities rather than merely printing constants. The note’s broader physical staggered-Dirac realization bridge is explicitly excluded, so it is not a missing dependency for the audited scope.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`

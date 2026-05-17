@@ -208001,22 +208001,49 @@
       "verdict_rationale": "Within its stated abstract tensor-product scope, the derivation is a genuine algebraic closure over the retained Cl(3) dim-two input and admitted finite tensor-product construction. The runner source actually constructs Pauli tensor operators and JW strings with exact sympy arithmetic, rather than merely printing constants, and its PASS=44 FAIL=0 output supports the stated identities. No external comparator, tuned value, or physical-lattice identification is imported; the open U4 bridge is clearly scoped out."
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:50:24.089625+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M).",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract d = 4 arithmetic factorization of the naive 16-corner count and its spinor-dimension match to the retained Cl(3,0) complexification split, including the explicit boundary that no framework-specific staggered/Kogut-Susskind reduction is derived."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ded06034c6dcd2c51e5f67577a408f520d235363f4477a43f59b00d98545df99",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-155000-a5e2dcef-staggered_dirac_substep2-027",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated narrow scope, the result follows from retained-grade upstream dimensional/counting inputs plus standard exterior-algebra identities. It does not close the separate physical identification of the framework's dynamical staggered-Dirac operator with D_KD, which the note explicitly leaves out of scope.",
       "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Audited only the abstract finite-dimensional algebraic equivalence between the Z_2^d-indexed per-hypercube component space and \u039b^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the even-d spinor/taste count match, and the Wilson parity-reversal exclusion.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:50:24.089625+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -208026,32 +208053,32 @@
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The canonical Hamming-weight indexing b \u21a6 {i : b_i = 1} gives a graded linear-algebra bijection V_{H_n} \u2245 \u039b^*(C^d), and D_KD := d - \u03b4 has the stated finite-dimensional exterior-algebra properties.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0085d52de5d27f2b776e6781c654c75797d451c35f766a925bf0ed9bf0d4c8e2",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that E4's finite-dimensional d is interpreted as the abstract algebraic exterior operator used by the note, not the full spacetime differential operator; under that stated scope the closure is algebraic.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 64,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 64
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
       "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing work is finite-dimensional algebra: enumeration of {0,1}^d, binomial/form-degree counting, construction of d and \u03b4, adjointness, parity reversal, and the even-d arithmetic factorization. The cited authorities are retained or retained_bounded, and the runner source genuinely constructs the exterior-algebra matrices and checks the identities rather than merely printing constants. The note\u2019s broader physical staggered-Dirac realization bridge is explicitly excluded, so it is not a missing dependency for the audited scope."
     },
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

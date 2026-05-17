@@ -2,7 +2,7 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T19:04:20Z"
+last_checkpoint_utc: "2026-05-17T19:08:15Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
@@ -326,7 +326,7 @@ block135_result:
     strict_WZ_response_packet: true
     strict_Schur_Feshbach_pole_authority: true
     neutral_H3_H4_transfer_or_coupling_authority: true
-  stacked_review_pr: pending
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1503"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"
@@ -376,4 +376,4 @@ verification:
   audit_pipeline: "completed; no docs/audit diffs left in worktree"
   strict_audit_lint: "OK; no errors; 5 known warnings"
 next_exact_action: "Block135 leaves the cleanest current target unchanged: supply an accepted same-surface canonical O_H/action/LSZ certificate plus nonempty numeric C_ss/C_sH/C_HH pole-residue rows sharing source/action/O_H surface IDs, or bring a strict W/Z, Schur/Feshbach, or neutral H3/H4 authority packet."
-next_checkpoint_due_utc: "2026-05-17T19:34:20Z"
+next_checkpoint_due_utc: "2026-05-17T19:38:15Z"

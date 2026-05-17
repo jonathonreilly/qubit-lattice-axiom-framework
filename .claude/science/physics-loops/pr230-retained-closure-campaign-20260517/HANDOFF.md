@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block131-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block132-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -24,6 +24,8 @@ Stacked review PR for Block130:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1479
 Stacked review PR for Block131:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1481
+Stacked review PR for Block132:
+pending
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -189,6 +191,23 @@ pole-residue rows sharing source/action/`O_H` surface IDs.  Otherwise reopen
 W/Z only with strict production W/Z rows plus non-observed `g2` and accepted
 same-source action, or reopen Schur/neutral only with strict
 pole/physical-transfer authorities.
+
+Block132 intakes the fresh fetched remote theorem
+`origin/physics-loop/axiom-first-lattice-noether-block27-2026-05-17`.
+The theorem is real narrow support for carrier-independent bilateral
+lattice-Noether current algebra: its remote cache has `E1-E8` and overall
+`PASS`, while its claim certificate says `proposal_allowed=false` and
+independent audit is still required.  Result for PR230: exact negative
+boundary.  The note's scope excludes physical operator identification and
+contains no PR230-required `O_H`, `C_sH/C_HH`, `kappa_s`, W/Z, Schur, H3, or
+H4 authority.  Reruns: Block132 `PASS=11`, campaign status `PASS=453`,
+assumption/import stress `PASS=136`.
+
+Active next work after Block132: Noether route reopens only if a future
+same-surface theorem maps a certified Noether current to canonical `O_H`/
+source-Higgs pole rows or W/Z physical response with covariance and strict
+`g2`.  Absent that, PR230 still needs one of the strict source-Higgs, W/Z,
+Schur, or neutral artifacts named in the route queue.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

@@ -494,3 +494,39 @@ Verified at `2026-05-17T18:07:22Z`:
 - Block131 action-first source-Higgs authority runner: `PASS=14 FAIL=0`
 - campaign status certificate: `PASS=452 FAIL=0`
 - assumption/import stress: `PASS=135 FAIL=0`
+
+## Block132
+
+Working title: PR230 Block132 fresh lattice-Noether artifact intake.
+
+Purpose:
+
+- ingest the fresh fetched branch
+  `origin/physics-loop/axiom-first-lattice-noether-block27-2026-05-17`;
+- verify whether its carrier-independent bilateral Noether theorem supplies
+  any PR230 closure root rather than only narrow current-algebra support;
+- require the theorem to provide same-surface physical operator identification,
+  canonical `O_H`/action/LSZ authority, source-overlap `kappa_s`, strict
+  source-Higgs pole rows, W/Z response authority, Schur pole authority, or
+  neutral H3/H4 authority before it can affect closure status;
+- preserve the no-closure firewall when the fresh theorem is nonproposal and
+  explicitly out of physical-operator-identification scope.
+
+Files:
+
+- `docs/YT_PR230_BLOCK132_NOETHER_FRESH_ARTIFACT_INTAKE_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block132_noether_fresh_artifact_intake.py`
+- `outputs/yt_pr230_block132_noether_fresh_artifact_intake_2026-05-17.json`
+
+Result: exact negative boundary.  The remote theorem is real narrow support:
+its cache records `E1-E8` and overall `PASS`, but its own certificate marks
+`proposal_allowed=false` with independent audit still required.  Its note
+excludes physical operator identification and contains none of the PR230 roots:
+canonical `O_H`, `C_sH/C_HH`, `kappa_s`, W/Z, Schur, H3, or H4 authority.
+
+Verified at `2026-05-17T18:24:45Z`:
+
+- Block132 py_compile: passed
+- Block132 fresh Noether artifact intake runner: `PASS=11 FAIL=0`
+- campaign status certificate: `PASS=453 FAIL=0`
+- assumption/import stress: `PASS=136 FAIL=0`

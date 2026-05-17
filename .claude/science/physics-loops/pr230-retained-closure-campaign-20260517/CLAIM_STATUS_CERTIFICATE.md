@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block131.
+Status: exact negative boundary plus bounded support through Block132.
 
 `proposed_retained`: not allowed.
 
@@ -70,6 +70,14 @@ Block126 top response fixed at `dE_top/ds=1.245693776284446`, two Gram-pure
 non-authority residue packets give `y_H=1.245693776284446` and
 `y_H=2.491387552568892`, so current support does not identify a unique
 source-Higgs readout without the missing accepted action/`O_H` and pole rows.
+Block132 then intakes the fresh remote carrier-independent bilateral
+lattice-Noether theorem.  It records real narrow current-algebra support:
+the fetched runner cache has `E1-E8` and overall `PASS`.  But the theorem's
+own certificate is nonproposal/audit-required, and the note scope excludes
+physical operator identification.  It supplies no accepted canonical
+`O_H`/action/LSZ authority, source-overlap `kappa_s`, strict
+`C_ss/C_sH/C_HH` pole rows, W/Z response packet, Schur pole authority, or
+neutral H3/H4 authority for PR230.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -105,6 +113,9 @@ source-Higgs readout without the missing accepted action/`O_H` and pole rows.
   lacks accepted same-surface canonical `O_H`/action/LSZ authority and nonempty
   numeric `C_ss/C_sH/C_HH` pole-residue rows, and the Block126 readout witness
   changes `y_H` while current finite support is fixed.
+- no Noether-current shortcut after Block132: carrier-independent bilateral
+  current algebra is not canonical `O_H`, source-Higgs pole-row, W/Z, Schur, or
+  neutral-transfer authority.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an
   allowed W/Z absolute pin is supplied.

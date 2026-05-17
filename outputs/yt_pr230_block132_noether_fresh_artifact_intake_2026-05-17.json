@@ -1,0 +1,66 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block132 fresh carrier-independent lattice-Noether theorem intake does not reopen PR230 closure: it is a narrow U(1)/bilateral-current algebra theorem and supplies no accepted canonical O_H/action/LSZ authority, source-overlap kappa, strict C_ss/C_sH/C_HH pole rows, W/Z response packet, Schur pole authority, or neutral H3/H4 authority",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": false,
+  "bare_retained_allowed": false,
+  "block132_noether_fresh_artifact_intake_passed": true,
+  "conditional_surface_status": null,
+  "current_closure_satisfied": false,
+  "exact_next_action": "Noether route reopens only if a future same-surface theorem maps a certified Noether current to canonical O_H/source-Higgs pole rows or W/Z physical response with covariance and strict g2.  Absent that, PR230 still needs one of the strict source-Higgs, W/Z, Schur, or neutral artifacts named in the route queue.",
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "set_c2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_noether_current_as_canonical_higgs_operator": false,
+    "used_noether_theorem_as_pole_row_authority": false,
+    "used_noether_theorem_as_schur_or_neutral_authority": false,
+    "used_noether_theorem_as_wz_g2_or_covariance": false,
+    "used_observed_top_or_yukawa": false,
+    "used_u1_current_as_source_higgs_overlap": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "fresh_artifacts": {
+    "claim_certificate": ".claude/science/physics-loops/filter-excluded-positive-closures-2026-05-17/blocks/block27/CLAIM_STATUS_CERTIFICATE.md",
+    "fresh_claim_nonproposal": true,
+    "fresh_runner_passes": true,
+    "fresh_theorem_present": true,
+    "note": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+    "pr230_required_tokens_found": [],
+    "ref_present": true,
+    "runner_cache": "logs/runner-cache/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.txt",
+    "scope_excludes_physical_identification": true
+  },
+  "fresh_ref": "origin/physics-loop/axiom-first-lattice-noether-block27-2026-05-17",
+  "hypothetical_axiom_status": null,
+  "parent_statuses": {
+    "assumption_import_stress": "open / assumption-import stress complete",
+    "block131_action_first_source_higgs_authority": "exact negative boundary / Block131 cannot construct action-first source-Higgs authority from the post-Block130 surface: accepted same-surface canonical O_H/action authority and numeric C_ss/C_sH/C_HH pole-residue rows are both absent",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached"
+  },
+  "pass_count": 11,
+  "pr230_missing_roots_after_intake": {
+    "accepted_canonical_O_H_action_LSZ": true,
+    "neutral_H3_H4_transfer_or_coupling_authority": true,
+    "source_overlap_kappa": true,
+    "strict_C_ss_C_sH_C_HH_pole_rows": true,
+    "strict_Schur_pole_authority": true,
+    "strict_WZ_response_packet": true
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The fresh Noether theorem has a nonproposal source-note status and no PR230 physical readout artifacts.",
+  "strict_non_claims": {
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_close_future_noether_based_routes": true,
+    "does_not_treat_noether_current_as_canonical_O_H": true,
+    "does_not_treat_noether_runner_pass_as_pr230_row_evidence": true,
+    "does_not_treat_u1_current_as_source_higgs_overlap": true
+  }
+}

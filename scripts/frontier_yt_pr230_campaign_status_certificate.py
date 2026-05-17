@@ -576,6 +576,9 @@ def main() -> int:
         "pr230_block131_action_first_source_higgs_authority_construction_attempt": load(
             "outputs/yt_pr230_block131_action_first_source_higgs_authority_construction_attempt_2026-05-17.json"
         ),
+        "pr230_block132_noether_fresh_artifact_intake": load(
+            "outputs/yt_pr230_block132_noether_fresh_artifact_intake_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3877,6 +3880,47 @@ def main() -> int:
         statuses[
             "pr230_block131_action_first_source_higgs_authority_construction_attempt"
         ],
+    )
+    block132_noether_fresh_artifact_intake_blocks = (
+        "Block132 fresh carrier-independent lattice-Noether theorem intake does not reopen PR230 closure"
+        in str(statuses["pr230_block132_noether_fresh_artifact_intake"])
+        and certificates["pr230_block132_noether_fresh_artifact_intake"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block132_noether_fresh_artifact_intake"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block132_noether_fresh_artifact_intake"].get(
+            "block132_noether_fresh_artifact_intake_passed"
+        )
+        is True
+        and certificates["pr230_block132_noether_fresh_artifact_intake"]
+        .get("fresh_artifacts", {})
+        .get("fresh_runner_passes")
+        is True
+        and certificates["pr230_block132_noether_fresh_artifact_intake"]
+        .get("fresh_artifacts", {})
+        .get("pr230_required_tokens_found")
+        == []
+        and all(
+            value is True
+            for value in certificates["pr230_block132_noether_fresh_artifact_intake"]
+            .get("pr230_missing_roots_after_intake", {})
+            .values()
+        )
+        and all(
+            value is False
+            for value in certificates["pr230_block132_noether_fresh_artifact_intake"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block132-noether-fresh-artifact-intake-blocks",
+        block132_noether_fresh_artifact_intake_blocks,
+        statuses["pr230_block132_noether_fresh_artifact_intake"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9428,6 +9472,7 @@ def main() -> int:
             "does not treat top mass-scan dE/dm_bare rows as satisfying the additive-top subtraction contract",
             "does not treat higher-shell source-Higgs cross rows emitted under the taste-radial second-source certificate as strict C_sH/C_HH source-Higgs rows",
             "does not treat action-first source-Higgs packet support as closure before accepted action/O_H/LSZ, kappa_s, time-kernel rows, and strict pole residues exist",
+            "does not treat carrier-independent lattice-Noether support as PR230 canonical O_H, source-Higgs pole-row, W/Z, Schur, or neutral-transfer authority",
             "does not treat block39 post-block38 queue-admission status as production evidence",
             "does not treat block53 residual-minimality status as positive closure",
             "does not treat block54 response-readout reduction as scalar/FVIR authority, canonical-Higgs identity, or positive closure",
@@ -9699,6 +9744,9 @@ def main() -> int:
     )
     result["block131_action_first_source_higgs_authority_construction_attempt_blocks"] = (
         block131_action_first_source_higgs_authority_construction_attempt_blocks
+    )
+    result["block132_noether_fresh_artifact_intake_blocks"] = (
+        block132_noether_fresh_artifact_intake_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

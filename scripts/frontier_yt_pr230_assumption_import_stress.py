@@ -416,6 +416,9 @@ def main() -> int:
         "block131_action_first_source_higgs_authority_construction_attempt": load(
             "outputs/yt_pr230_block131_action_first_source_higgs_authority_construction_attempt_2026-05-17.json"
         ),
+        "block132_noether_fresh_artifact_intake": load(
+            "outputs/yt_pr230_block132_noether_fresh_artifact_intake_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -3252,6 +3255,45 @@ def main() -> int:
             "block131_action_first_source_higgs_authority_construction_attempt"
         ].get("actual_current_surface_status"),
     )
+    block132_noether_fresh_artifact_intake_keeps_imports_clean = (
+        "Block132 fresh carrier-independent lattice-Noether theorem intake does not reopen PR230 closure"
+        in str(certificates["block132_noether_fresh_artifact_intake"].get("actual_current_surface_status"))
+        and certificates["block132_noether_fresh_artifact_intake"].get("proposal_allowed")
+        is False
+        and certificates["block132_noether_fresh_artifact_intake"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block132_noether_fresh_artifact_intake"].get(
+            "block132_noether_fresh_artifact_intake_passed"
+        )
+        is True
+        and certificates["block132_noether_fresh_artifact_intake"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_noether_current_as_canonical_O_H")
+        is True
+        and certificates["block132_noether_fresh_artifact_intake"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_noether_runner_pass_as_pr230_row_evidence")
+        is True
+        and certificates["block132_noether_fresh_artifact_intake"]
+        .get("fresh_artifacts", {})
+        .get("pr230_required_tokens_found")
+        == []
+        and all(
+            value is False
+            for value in certificates["block132_noether_fresh_artifact_intake"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block132-noether-fresh-artifact-intake-keeps-imports-clean",
+        block132_noether_fresh_artifact_intake_keeps_imports_clean,
+        certificates["block132_noether_fresh_artifact_intake"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3569,6 +3611,7 @@ def main() -> int:
             "does not treat a finite one-pole endpoint fit or finite Loewner/Stieltjes proxy as strict Schur pole authority",
             "does not treat complete finite Schur A/B/C support as strict pole coordinate, derivative, source-projection, FV/IR, or canonical bridge authority",
             "does not treat action-first source-Higgs packet support as closure before accepted action/O_H/LSZ, source-overlap kappa, time-kernel rows, and strict C_ss/C_sH/C_HH pole residues exist",
+            "does not treat carrier-independent lattice-Noether support as PR230 canonical O_H, source-Higgs pole-row, W/Z, Schur, or neutral-transfer authority",
             "does not treat package hierarchy v as a PR230 W/Z absolute-normalization pin",
             "does not treat post-Block100 completion/reopen audit status, completed chunks, or fetched remote path names as positive closure",
             "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
@@ -3606,6 +3649,7 @@ def main() -> int:
         "block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean": block130_neutral_h3h4_transfer_coupling_construction_attempt_keeps_imports_clean,
         "block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean": block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean,
         "block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean": block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean,
+        "block132_noether_fresh_artifact_intake_keeps_imports_clean": block132_noether_fresh_artifact_intake_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

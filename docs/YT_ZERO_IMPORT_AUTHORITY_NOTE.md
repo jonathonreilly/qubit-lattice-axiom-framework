@@ -22,7 +22,17 @@ Use this note together with:
 - [ALPHA_S_DERIVED_NOTE.md](./ALPHA_S_DERIVED_NOTE.md)
 - [YT_COLOR_PROJECTION_CORRECTION_NOTE.md](./YT_COLOR_PROJECTION_CORRECTION_NOTE.md)
 - `YT_FLAGSHIP_BOUNDARY_NOTE.md`
-- [YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md](./YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md)
+- `YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md` (see-also cross-reference;
+  backticked to break cycle-0011 (length-8 yt-cluster ring through
+  zero_import -> explicit_budget -> exact_schur -> coarse_grained ->
+  uv_class_uniqueness -> constructive_uv -> interacting_locality ->
+  boundary_theorem -> zero_import) in the citation graph. This authority
+  note is the canonical retained zero-import endpoint surface; the
+  explicit-systematic-budget note is a downstream cross-check whose own
+  dependency-repair list already foreswears citing this authority note as
+  upstream (see its trailing cycle-break comment). The load-bearing
+  citation direction runs from the cross-check back to this authority,
+  not vice versa.)
 
 Do not treat older backward-Ward / route-history notes as competing authority.
 

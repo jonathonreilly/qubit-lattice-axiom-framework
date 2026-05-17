@@ -97,17 +97,25 @@ The current ledger statuses of the foundational and sibling notes are:
 - [`docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md`](MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)
   — foundational `Lattice3D` / `propagate` / `K` source authority
   (current ledger: `audit_status: unaudited`).
-- [`docs/SOURCE_RESOLVED_EXACT_GREEN_H025_POCKET_NOTE.md`](SOURCE_RESOLVED_EXACT_GREEN_H025_POCKET_NOTE.md)
+- `docs/SOURCE_RESOLVED_EXACT_GREEN_H025_POCKET_NOTE.md`
   — companion `h = 0.25` Green pocket on a smaller family (current
-  ledger: `audit_status: unaudited`).
+  ledger: `audit_status: unaudited`). See-also cross-reference; backticked
+  to break cycle-0012 in the citation graph. The h025 companion note's
+  artifact-chain list already cites this base pocket as upstream (its
+  refinement is downstream of this one); the load-bearing citation
+  direction is h025 -> this pocket, not vice versa.
 - [`docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md`](SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md)
   — companion scaling note (current ledger: `audit_status: unaudited`).
 - [`docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md`](SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md)
   — downstream self-consistent extension (current ledger:
   `effective_status: retained_bounded`).
-- [`docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md`](SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md)
+- `docs/SOURCE_RESOLVED_PROPAGATING_GREEN_POCKET_NOTE.md`
   — downstream propagating-Green sibling (current ledger:
-  `audit_status: unaudited`).
+  `audit_status: unaudited`). See-also cross-reference; backticked to break
+  cycle-0013 in the citation graph. The propagating-Green sibling's own
+  dependency-repair list cites this base pocket as upstream (it consumes
+  the static Green control as its comparator); the load-bearing citation
+  direction is propagating -> this pocket, not vice versa.
 
 The bounded inheritance for this note's load-bearing claim is the
 runner-imported foundational surface above. This landing adds hard-bar

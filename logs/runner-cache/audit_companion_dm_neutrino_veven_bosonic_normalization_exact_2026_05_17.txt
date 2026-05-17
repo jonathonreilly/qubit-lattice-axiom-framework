@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_dm_neutrino_veven_bosonic_normalization_exact_2026_05_17.py
+runner_sha256: 7cad99138a34e269979fd93f23bc4e4701f66c2b47cf8633c2b65be0901c26c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of the finite-dimensional algebraic identities
+      (G), (D1)-(D2), (S1)-(S4), (W1)-(W2) at exact precision
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: explicit 3x3 active basis and 2x2 source row-contrast
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part 1: (G) Frobenius-orthogonality of the active basis
+----------------------------------------------------------------------------------------
+  [PASS (A)] (G) Frobenius-orthogonality: diagonal magnitudes (1, 4, 2, 2, 2, 4) match  (diag(Gram) = [1, 4, 2, 2, 2, 4])
+  [PASS (A)] (G) Frobenius-orthogonality: off-diagonal entries all zero
+
+----------------------------------------------------------------------------------------
+Part 2: (F1), (F2) Frobenius-dual generators and trace pairings (D1), (D2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (D1) Tr(H · F1) = ε + ζ = E1(H) on generic real coefficients  (Tr(H·F1) = eps + zeta)
+  [PASS (A)] (D2) Tr(H · F2) = α + β - γ - δ = E2(H) on generic real coefficients  (Tr(H·F2) = alpha + beta - delta - gamma)
+
+----------------------------------------------------------------------------------------
+Part 3: (S1)-(S4) spectra of F1, F2, scaled Z_row
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) char poly of F1 is -λ^3 + (3/8) λ  (char F1 = lam*(3/8 - lam**2))
+  [PASS (A)] (S1) spec(F1) = {-sqrt(3/8), 0, +sqrt(3/8)} (multiplicities (1,1,1))  (eigs F1 = {-sqrt(6)/4: 1, sqrt(6)/4: 1, 0: 1})
+  [PASS (A)] (C2) char poly of F2 is -λ^3 + (9/8) λ  (char F2 = lam*(9/8 - lam**2))
+  [PASS (A)] (S2) spec(F2) = {-3/sqrt(8), 0, +3/sqrt(8)} (multiplicities (1,1,1))  (eigs F2 = {-3*sqrt(2)/4: 1, 3*sqrt(2)/4: 1, 0: 1})
+  [PASS (A)] (S3) spec(sqrt(3/8) Z_row) = {-sqrt(3/8), +sqrt(3/8)} (multiplicities (1,1))  (eigs sqrt(3/8) Z = {sqrt(6)/4: 1, -sqrt(6)/4: 1})
+  [PASS (A)] (S4) spec((3/sqrt(8)) Z_row) = {-3/sqrt(8), +3/sqrt(8)} (multiplicities (1,1))  (eigs (3/sqrt(8)) Z = {3*sqrt(2)/4: 1, -3*sqrt(2)/4: 1})
+
+----------------------------------------------------------------------------------------
+Part 4: (DG1), (DS1), (DG2), (DS2) determinant identities at exact symbolic (m, j)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (DG1) det(m I_3 + j F1) = m^3 - (3/8) m j^2 = m^3 (1 - (3/8) j^2/m^2)  (det = m*(-3*j**2/8 + m**2))
+  [PASS (A)] (DS1) det(m I_2 + j sqrt(3/8) Z_row) = m^2 - (3/8) j^2  (det = -3*j**2/8 + m**2)
+  [PASS (A)] (DG2) det(m I_3 + j F2) = m^3 - (9/8) m j^2 = m^3 (1 - (9/8) j^2/m^2)  (det = m*(-9*j**2/8 + m**2))
+  [PASS (A)] (DS2) det(m I_2 + j (3/sqrt(8)) Z_row) = m^2 - (9/8) j^2  (det = -9*j**2/8 + m**2)
+
+----------------------------------------------------------------------------------------
+Part 5: (W1), (W2) equal-baseline-subtracted response identity at exact rationals
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W1) F1 and sqrt(3/8) Z_row have identical response at (m,j) = (1, 1/5)  (W_F1 = log(197/200), W_S1 = log(197/200), target = log(197/200))
+  [PASS (A)] (W1) F1 and sqrt(3/8) Z_row have identical response at (m,j) = (2, 3/10)  (W_F1 = log(3173/3200), W_S1 = log(3173/3200), target = log(3173/3200))
+  [PASS (A)] (W1) F1 and sqrt(3/8) Z_row have identical response at (m,j) = (3, 7/10)  (W_F1 = log(2351/2400), W_S1 = log(2351/2400), target = log(2351/2400))
+  [PASS (A)] (W2) F2 and (3/sqrt(8)) Z_row have identical response at (m,j) = (1, 1/5)  (W_F2 = log(191/200), W_S2 = log(191/200), target = log(191/200))
+  [PASS (A)] (W2) F2 and (3/sqrt(8)) Z_row have identical response at (m,j) = (2, 3/10)  (W_F2 = log(3119/3200), W_S2 = log(3119/3200), target = log(3119/3200))
+  [PASS (A)] (W2) F2 and (3/sqrt(8)) Z_row have identical response at (m,j) = (3, 7/10)  (W_F2 = log(751/800), W_S2 = log(751/800), target = log(751/800))
+
+----------------------------------------------------------------------------------------
+Part 6: exact-symbolic determinant polynomial match for (W1), (W2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (W1.symb) det(m I_3 + j F1)/m^3 = det(m I_2 + j sqrt(3/8) Z_row)/m^2 = 1 - (3/8) j^2/m^2  (ratio_F1 = -3*j**2/(8*m**2) + 1, ratio_S1 = -3*j**2/(8*m**2) + 1)
+  [PASS (A)] (W2.symb) det(m I_3 + j F2)/m^3 = det(m I_2 + j (3/sqrt(8)) Z_row)/m^2 = 1 - (9/8) j^2/m^2  (ratio_F2 = -9*j**2/(8*m**2) + 1, ratio_S2 = -9*j**2/(8*m**2) + 1)
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactual — non-scalar baseline D = diag(m_1, m_2, m_3) breaks (W1)/(W2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (cf) non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks the (W1) match for F1  (W_F1 = log(487/480), W_S1 = log(sqrt(6)/96 + 255/256), difference = log(3896/(5*(8*sqrt(6) + 765))))
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision on C^3 and C^2:
+    (G)  Frobenius-orthogonality of the active basis
+    (D1) Tr(H · F1) = E1(H) = ε + ζ on generic real coefficients
+    (D2) Tr(H · F2) = E2(H) = α + β - γ - δ on generic real coefficients
+    (S1) spec(F1) = {-sqrt(3/8), 0, +sqrt(3/8)}
+    (S2) spec(F2) = {-3/sqrt(8), 0, +3/sqrt(8)}
+    (S3) spec(sqrt(3/8) Z_row) = {-sqrt(3/8), +sqrt(3/8)}
+    (S4) spec((3/sqrt(8)) Z_row) = {-3/sqrt(8), +3/sqrt(8)}
+    (W1) F1 ↔ sqrt(3/8) Z_row identical exact bosonic response on m I baseline
+    (W2) F2 ↔ (3/sqrt(8)) Z_row identical exact bosonic response on m I baseline
+    Counterfactual: non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks (W1)
+
+========================================================================================
+TOTAL: PASS=23, FAIL=0
+========================================================================================
+
+----- stderr -----
+

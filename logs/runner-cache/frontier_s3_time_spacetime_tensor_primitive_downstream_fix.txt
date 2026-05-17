@@ -1,0 +1,49 @@
+==============================================================================
+AUDIT-PREP VERIFIER — s3_time_spacetime_tensor_primitive_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md)
+  [PASS] [A] Fix record exists  (path = docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+
+PART F-A — `exact background` retraction:
+  [PASS] [A] Stale 'exact background `PL S^3 x R`' is gone (Verdict bullet)
+  [PASS] [A] Stale 'The route-2 background remains exact:' is gone
+  [PASS] [A] Stale 'exact background: `PL S^3 x R`' is gone (Bottom line)
+  [PASS] [A] Replacement 'bounded composite background `PL S^3 x R`' appears (Verdict)
+  [PASS] [A] Replacement 'bounded composite' appears in Background block
+  [PASS] [A] Retraction sentence present
+
+PART F-A — Upstream-tier accounting table:
+  [PASS] [A] Upstream-tier accounting section header present
+  [PASS] [A] Tier table mentions S3_BOUNDARY_LINK as audited_clean / retained_bounded
+  [PASS] [A] Tier table mentions S3_CAP_UNIQUENESS as audited_conditional
+  [PASS] [A] Tier table mentions ANOMALY_FORCES_TIME as unaudited
+  [PASS] [A] Composite-inherits-weakest-tier logic stated
+
+PART F-B — admission-inheritance disclosure:
+  [PASS] [A] Admissions (i)-(iv) named in tier-accounting section
+  [PASS] [A] Admission (i) described as bare external ABJ admission
+  [PASS] [A] Upstream F-B framing-fix linked
+  [PASS] [A] Derived part of d_t=1 explicit
+  [PASS] [A] Inherited part of d_t=1 (admission iv excludes >1) explicit
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] Xi_R^(0) candidate definition unchanged
+  [PASS] [A] V_R(t) := exp(-t Lambda_R) u_* definition preserved
+  [PASS] [A] Candidate still described as 'bounded, not exact'
+  [PASS] [A] Sharp blocker wording preserved
+  [PASS] [A] Sharp blocker mentions `A1 x {E_x, T1x}` target
+  [PASS] [A] Candidate NOT promoted to exact (no 'exact spacetime tensor primitive' claim)
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired verifier referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-A — Over-claim'
+  [PASS] [A] Fix record mentions: 'F-B — Missing admission-inheritance'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'bounded candidate retained'
+
+==============================================================================
+SUMMARY: 32 PASS / 0 FAIL  (Class-A: 32)
+==============================================================================

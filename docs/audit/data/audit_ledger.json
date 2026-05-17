@@ -131582,45 +131582,56 @@
       "verdict_rationale": "The load-bearing step is a first-principles computation over the stated ordered-lattice setup, producing the MI, d_TV, decoherence, distance-fit, gravity-sign, Born, and k=0 sweep values. The source code does not import cited authorities or hard-code expected table values; it computes the rows from lattice generation, propagation, field evaluation, and fitting helpers. The promoted claim is carefully bounded to a tradeoff curve with a sweet spot and does not claim same-card attractive gravity or one-family unification."
     },
     "lattice_distance_law_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T13:24:02.247352+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.959,
+        "runner_hash": "e861699f236a43b67682030f2aab1e38a63dbcf40068286246b1d8861dad0ef6",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-132341-20260517T132341Z-bd2e7b0c-lattice_distance_law_not-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner recomputes the displayed rows and fit rather than printing hard-coded constants, but its load-bearing transport functions are imported from scripts/lattice_mirror_distance.py. That helper source is missing from the restricted packet, so the lattice update rules and field computation cannot be verified one hop upstream.",
       "claim_id": "lattice_distance_law_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded N=40 no-barrier ordered-lattice numerical distance-law fit and k=0 control as reported by scripts/lattice_no_barrier_distance.py and its cached stdout.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T13:24:02.247352+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/lattice_mirror_distance.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 4.959,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The ordered lattice gives |delta| ~= 23.5071 * b^(-1.052) with R^2 = 0.9850 on the far-field window b >= 7 for the N = 40 no-barrier harness.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "6191606402439a954fb615db38b78f160d5a07a65e4be6b7a351cebfdbba71ed",
       "note_path": "docs/LATTICE_DISTANCE_LAW_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the full scripts/lattice_mirror_distance.py helper source in the restricted packet and re-audit whether the imported lattice generation, propagation, and field functions compute the stated ordered-lattice rules without hard-coded contested values.",
+      "open_dependency_paths": [
+        "scripts/lattice_mirror_distance.py"
+      ],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
         {
@@ -131852,14 +131863,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/lattice_no_barrier_distance.py",
       "title": "Lattice Distance-Law Note",
       "transitive_descendants": 10,
-      "verdict_rationale": null
+      "verdict_rationale": "The cached primary runner output matches the source note's seven centroid rows, k=0 control, and far-field fit, and the primary runner source shows an actual fit over computed rows. However, the primary runner imports generate_lattice_mirror, propagate, and compute_field_at_b from scripts/lattice_mirror_distance.py, while the helper source section contains only the unsubstituted {{HELPER_RUNNER_SOURCES}} placeholder. Because the load-bearing lattice dynamics are opaque without that helper, this is a runner artifact completeness defect rather than a closed audit."
     },
     "lattice_family_validation_note": {
       "audit_date": null,

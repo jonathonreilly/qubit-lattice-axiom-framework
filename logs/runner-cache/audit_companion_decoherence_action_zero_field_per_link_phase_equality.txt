@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_decoherence_action_zero_field_per_link_phase_equality.py
+runner_sha256: 21b0b868ba28338de6af52961aad9aef2ee64056698ba1c533a7a4ddad7fce12
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+DECOHERENCE_ACTION_ZERO_FIELD_PER_LINK_PHASE_EQUALITY_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification that at f_bar = 0,
+  spent_delay(L, 0) = valley_linear(L, 0) = L,
+  and exp(i k spent_delay(L, 0)) = exp(i k valley_linear(L, 0)).
+Explicit inputs: (I1) spent_delay and (I2) valley_linear action laws
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup
+----------------------------------------------------------------------------------------
+  symbolic L     (positive real)   = L
+  symbolic f_bar (real)            = f_bar
+  symbolic k     (real)            = k
+  (I1) spent_delay(L, f_bar)   = dl - ret = L*(f_bar + 1) - sqrt(L**2*(f_bar + 1)**2 - L**2)
+  (I2) valley_linear(L, f_bar) = L(1-f)  = L*(1 - f_bar)
+
+----------------------------------------------------------------------------------------
+Part 1: (P1) spent_delay(L, 0) = L
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) spent_delay(L, 0) - L reduces to 0 parametrically in L > 0  (spent_delay(L, 0) simplified = L)
+  [PASS (A)] (P1) spent_delay(L, 0) has free symbols {L} (no residual f_bar)  (free_symbols = {L})
+
+----------------------------------------------------------------------------------------
+Part 2: (P2) valley_linear(L, 0) = L
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P2) valley_linear(L, 0) - L reduces to 0 parametrically in L > 0  (valley_linear(L, 0) simplified = L)
+  [PASS (A)] (P2) valley_linear(L, 0) has free symbols {L} (no residual f_bar)  (free_symbols = {L})
+
+----------------------------------------------------------------------------------------
+Part 3: (P3) spent_delay(L, 0) = valley_linear(L, 0)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P3) spent_delay(L, 0) - valley_linear(L, 0) reduces to 0 parametrically  (diff = 0)
+  [PASS (A)] (P3) LHS - RHS difference has empty free symbols after simplify  (free_symbols = set())
+
+----------------------------------------------------------------------------------------
+Part 4: (P4) exp(i k spent_delay(L, 0)) = exp(i k valley_linear(L, 0))
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P4) exp(i k spent_delay(L, 0)) - exp(i k valley_linear(L, 0)) reduces to 0  (diff = 0)
+  [PASS (A)] (P4) exp(i k spent_delay(L, 0)) - exp(i k L) reduces to 0  (diff = 0)
+  [PASS (A)] (P4) exp(i k valley_linear(L, 0)) - exp(i k L) reduces to 0  (diff = 0)
+  [PASS (A)] (C3) ratio exp(i k spent) / exp(i k valley) reduces to 1  (ratio = 1)
+
+----------------------------------------------------------------------------------------
+Part 5: free-symbol bookkeeping after zero-field substitution
+----------------------------------------------------------------------------------------
+  [PASS (A)] phase_spent at f_bar=0 has free symbols subset {k, L}  (free_symbols = {L, k})
+  [PASS (A)] phase_valley at f_bar=0 has free symbols subset {k, L}  (free_symbols = {L, k})
+
+----------------------------------------------------------------------------------------
+Part 6: numerical FP cross-check at one independent random sample
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P4) FP sanity at sample (L=1.732, k=0.873): LHS == RHS  (|LHS - RHS| = 0.000e+00)
+  [PASS (A)] (P4) FP sanity: both phases equal exp(i k L) at sample  (|spent - target| = 0.000e+00, |valley - target| = 0.000e+00)
+
+----------------------------------------------------------------------------------------
+Part 7: counterfactual probes (f_bar = 0 restriction is load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: at f_bar=0.1, spent_delay - valley_linear is NOT 0 parametrically in L  (diff at f_bar=0.1 = L*(2 - sqrt(21))/10)
+  [PASS (A)] counterfactual: at f_bar symbolic, spent_delay - valley_linear is NOT identically 0  (diff (general f_bar) = L*(2*f_bar - sqrt(f_bar*(f_bar + 2))))
+  [PASS (A)] counterfactual: at f_bar=0.1, exp(i k spent) - exp(i k valley) is NOT identically 0  (phase diff at f_bar=0.1 (nonzero confirms zero-field restriction load-bearing))
+
+----------------------------------------------------------------------------------------
+Part 8: source-code fidelity check
+----------------------------------------------------------------------------------------
+  [PASS (A)] source file scripts/valley_linear_same_harness_compare.py exists  (path = /private/tmp/cl3-pr-review-1498/scripts/valley_linear_same_harness_compare.py)
+  [PASS (A)] source spent_delay branch present: dl=L(1+lf), ret=sqrt(max(dl^2-L^2,0)), act=dl-ret  (checked literal Python expressions in propagate())
+  [PASS (A)] source valley_linear branch present: act=L(1-lf)  (checked literal Python expressions in propagate())
+  [PASS (A)] source lf = 0.5 (sf + df) (zero field => lf = 0, matching f_bar = 0)  (lf at zero field = 0 by direct algebraic substitution)
+  [PASS (A)] parent runner uses zero field (field_f = np.zeros(lat.n))  (confirms (I1), (I2) evaluated at f_bar = 0 in the harness)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (P1) spent_delay(L, 0) = L         parametric in L > 0
+    (P2) valley_linear(L, 0) = L       parametric in L > 0
+    (P3) spent_delay(L, 0) - valley_linear(L, 0) = 0  parametric in L > 0
+    (P4) exp(i k spent(L,0)) = exp(i k valley(L,0)) = exp(i k L)
+    (C3) phase ratio reduces to 1
+    Free-symbol bookkeeping at f_bar = 0
+    FP numerical cross-check passes at one independent random sample
+    Counterfactual: f_bar != 0 collapses (P3) and (P4)
+    Source-code fidelity: symbolic (I1), (I2) match Lattice3D.propagate branches
+
+========================================================================================
+TOTAL: PASS=22, FAIL=0
+========================================================================================

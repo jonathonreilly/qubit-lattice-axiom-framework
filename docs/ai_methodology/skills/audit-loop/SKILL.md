@@ -72,7 +72,54 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
 
 If the user names a candidate file or other constrained selection source, that source is authoritative. After the pipeline, check the exact path exists. If it is absent, stop and report the missing file; do not search for substitutes or fall back to the default queue unless the user explicitly authorizes that fallback.
 
-Default selection is the highest-priority ready scoped claim:
+### Cascade Re-audit Source
+
+Before falling through to the regular queue, check
+`docs/audit/data/reaudit_candidates.json`. This is the cascade-resolution
+stream for non-clean audited theorem/no-go/open-gate rows whose blocker may
+have been repaired after the original audit. The main `candidates` stream
+covers rows whose one-hop dependencies have since become retained-grade; the
+secondary `runner_drift_candidates` stream covers runner-artifact rows whose
+runner hash changed after the audit snapshot.
+
+Process cascade candidates before fresh queue rows, with the same scoped
+claim-type filter and the current session's blocked/skip set:
+
+1. Read `docs/audit/data/reaudit_candidates.json`.
+2. If `candidates` is non-empty, pick the highest-leverage entry with
+   `claim_type` in `{positive_theorem, bounded_theorem, no_go, open_gate}`.
+   The producer sorts by criticality, descendants, load-bearing score, and
+   claim id.
+3. If `candidates` is empty but `runner_drift_candidates` is non-empty, pick
+   the highest-leverage entry there with the same `claim_type` filter.
+4. Exclude any claim id recorded in the current session's blocked/skip set.
+5. If no cascade candidate is eligible, fall through to
+   `docs/audit/data/audit_queue.json` and use the default queue rules below.
+
+Use this snippet when useful:
+
+```bash
+python3 - <<'PY'
+import json
+p=json.load(open("docs/audit/data/reaudit_candidates.json"))
+for e in p.get("candidates", []) + p.get("runner_drift_candidates", []):
+    if e.get("claim_type") in {"positive_theorem","bounded_theorem","no_go","open_gate"}:
+        print(e["claim_id"], e["note_path"], e.get("runner_path") or "-")
+        break
+PY
+```
+
+If the snippet prints no candidate, fall through to the regular queue.
+
+`audited_conditional` with `dependency_not_retained` is the expected state
+when a downstream theorem lands before its upstream dependencies reach
+retained-grade. The cascade-first ordering resolves these naturally as
+upstream cleanup lands, instead of letting fresh `unaudited` queue rows starve
+now-unblocked downstream conditionals.
+
+### Default queue selection
+
+Default fall-through selection is the highest-priority ready scoped claim:
 
 1. Read `docs/audit/data/audit_queue.json`.
 2. Pick the first row with `ready = true`, `audit_status` in `{unaudited, audit_in_progress}`, and `claim_type` in `{positive_theorem, bounded_theorem, no_go, open_gate}`.

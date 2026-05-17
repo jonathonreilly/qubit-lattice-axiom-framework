@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 107 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 326 |
+| **retained_bounded** | 327 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -43,13 +43,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 544 |
+| `audited_clean` | 545 |
 | `audited_conditional` | 174 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 64 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1430 |
+| `unaudited` | 1429 |
 
 | claim_type | count |
 |---|---:|
@@ -539,6 +539,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | E | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_geometry_superposition_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -9904,6 +9905,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Within the explicitly two-candidate framing, if a candidate must match dim_C V = 2, then the bosonic Fock candidate is ruled out by infinite per-site dimension while the Grassmann candidate remains and has the Berezin det(M) readout.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, D1-D4 follow from retained or retained_bounded cited inputs plus standard finite algebra and harmonic-oscillator/Fock facts. The physical U4 lattice-Hilbert-space bridge is explicitly out of scope and is not consumed by the audited claim.
 - **rationale:** The load-bearing step is a genuine algebraic closure over independent retained-grade inputs: Cl(3) faithful complex irreps have dimension 2, Grassmann nilpotency gives a two-state per-site module, and bosonic canonical Fock space is infinite-dimensional. The Berezin determinant part is directly supplied by the retained_bounded Berezin authority and rechecked by the runner via exact symbolic determinant computations. The runner source performs finite symbolic checks rather than merely printing pass constants, though it correctly treats the two-candidate framing as a scoped premise rather than a universal classification.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-dimensional algebraic statement that Jordan-Wigner strings on H_Lambda = V^{tensor N}, with V the retained Cl(3) two-dimensional Pauli irrep and a fixed finite ordering, satisfy (J1)-(J4) CAR, nilpotency, CAR-algebra dimension, and number-operator identities.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-150751-a5e2dcef-staggered_dirac_substep1-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For pi(x) < pi(y), the JW string factor S_y = S_x sigma_3^(x) T_xy makes c_x c_y acquire the opposite sign from c_y c_x by the on-site anticommutation sigma_+^(x) sigma_3^(x) = -sigma_3^(x) sigma_+^(x).  _(class `A`)_
+- **chain closes:** True — The claimed CAR relations follow from Pauli identities, disjoint tensor-factor commutativity, and the explicit JW string sign flip. The note explicitly excludes the physical U4 identification, so that open bridge is not part of the audited scope.
+- **rationale:** Within its stated abstract tensor-product scope, the derivation is a genuine algebraic closure over the retained Cl(3) dim-two input and admitted finite tensor-product construction. The runner source actually constructs Pauli tensor operators and JW strings with exact sympy arithmetic, rather than merely printing constants, and its PASS=44 FAIL=0 output supports the stated identities. No external comparator, tuned value, or physical-lattice identification is imported; the open U4 bridge is clearly scoped out.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`

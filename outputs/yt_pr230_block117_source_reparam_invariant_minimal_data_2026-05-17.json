@@ -1,0 +1,250 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block117 source-reparametrization invariant minimal-data contract is unsatisfied on the current PR230 head",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block117_source_reparam_invariant_minimal_data_passed": true,
+  "conditional_surface_status": "proposal can reopen only after one strict same-surface disjunct is supplied: accepted canonical O_H/action plus physical C_ss/C_sH/C_HH pole rows; strict W/Z response packet with accepted action, matched covariance, delta_perp, and an allowed absolute pin; strict Schur/Feshbach pole rows; or strict neutral H3/H4 physical transfer plus source/canonical-Higgs coupling",
+  "exact_next_action": "Stop attempting source-only or finite-row promotion. The next positive work item must create one strict packet: action/canonical O_H plus physical source-Higgs pole rows; W/Z production response with matched covariance and an allowed absolute pin; Schur/Feshbach pole derivative rows; or neutral H3/H4 physical transfer with source/canonical-Higgs coupling.",
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "promoted_smoke_or_finite_rows_to_closure": false,
+    "renamed_c_sx_c_xx_as_c_sh_c_hh": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_fitted_selector": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_package_hierarchy_v_as_pin": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "hypothetical_axiom_status": null,
+  "packet_contracts": {
+    "any_contract_satisfied": false,
+    "neutral_h3h4": {
+      "current_boundary": "exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent",
+      "minimal_packet": [
+        "same-surface physical neutral transfer or off-diagonal generator",
+        "primitive-cone/irreducibility/rank-one authority",
+        "H4 source/canonical-Higgs coupling",
+        "physical transfer scale and scalar pole/FV/IR normalization"
+      ],
+      "satisfied": false
+    },
+    "schur": {
+      "current_boundary": "bounded-support / Block113 complete 63/63 finite Schur A/B/C row artifact confirmed; strict Schur/Feshbach pole authority absent",
+      "kprime_boundary": "exact negative boundary / Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime pole-row emissions",
+      "minimal_packet": [
+        "strict pole coordinate",
+        "K'(pole) derivative or exact Schur/Feshbach equivalent",
+        "source projection numerator",
+        "canonical O_H/source bridge",
+        "model-class, FV/IR, and contact authority"
+      ],
+      "satisfied": false,
+      "strict_kprime_boundary": "open / strict K-prime pole-residue certificate rows missing"
+    },
+    "source_higgs": {
+      "current_boundary": "exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact",
+      "minimal_packet": [
+        "accepted same-surface EW/Higgs action with dS/ds = sum O_H",
+        "canonical O_H identity and normalization",
+        "physical Euclidean C_ss/C_sH/C_HH(tau) pole rows",
+        "Gram flatness, scalar LSZ/model-class, FV/IR, contact, and covariance authority"
+      ],
+      "satisfied": false
+    },
+    "strict_packet_path_presence": {
+      "accepted_same_surface_ew_higgs_action": false,
+      "canonical_higgs_operator_certificate": false,
+      "delta_perp_correction_certificate": false,
+      "neutral_h3h4_certificate": false,
+      "physical_neutral_transfer_certificate": false,
+      "pr230_canonical_oh_certificate": false,
+      "pr230_source_higgs_pole_rows": false,
+      "same_source_top_response_certificate": false,
+      "same_source_w_response_rows": false,
+      "source_triplet_coupling_certificate": false,
+      "strict_electroweak_g2_certificate": false,
+      "top_wz_matched_covariance_certificate": false,
+      "wz_production_response_rows": false
+    },
+    "wz": {
+      "current_boundary": "exact negative boundary / Block115 current PR230 head contains no strict W/Z physical-response packet with accepted action, production rows, matched top-W covariance, strict g2 authority, delta_perp, and final W-response rows",
+      "minimal_packet": [
+        "accepted same-source action",
+        "production W/Z response rows and same-source top response rows",
+        "matched top-W covariance",
+        "strict non-observed g2 or another allowed absolute pin",
+        "delta_perp authority and final W-response rows"
+      ],
+      "satisfied": false
+    }
+  },
+  "parent_certificates": {
+    "assumption_import_stress": "outputs/yt_pr230_assumption_import_stress_2026-05-01.json",
+    "block110_action_descent_obstruction": "outputs/yt_pr230_block110_cl3_z3_action_descent_obstruction_2026-05-17.json",
+    "block111_schur_kprime_gap_audit": "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json",
+    "block112_helmholtz_obstruction": "outputs/yt_pr230_block112_helmholtz_action_integrability_obstruction_2026-05-17.json",
+    "block113_schur_abc_refresh": "outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json",
+    "block114_source_higgs_resolver": "outputs/yt_pr230_block114_source_higgs_strict_artifact_resolver_2026-05-17.json",
+    "block115_wz_resolver": "outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json",
+    "block116_neutral_h3h4_resolver": "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "completion_audit": "outputs/yt_pr230_positive_closure_completion_audit_2026-05-05.json",
+    "fh_gauge_normalized_response_route": "outputs/yt_fh_gauge_normalized_response_route_2026-05-02.json",
+    "fh_lsz_invariant_readout": "outputs/yt_fh_lsz_invariant_readout_theorem_2026-05-01.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "source_reparametrization_gauge_no_go": "outputs/yt_source_reparametrization_gauge_no_go_2026-05-01.json",
+    "strict_kprime_pole_residue_certificate": "outputs/yt_pr230_strict_kprime_pole_residue_certificate_2026-05-12.json",
+    "wz_mass_response_self_normalization_no_go": "outputs/yt_pr230_wz_mass_response_self_normalization_no_go_2026-05-12.json",
+    "wz_response_only_g2_self_normalization_no_go": "outputs/yt_wz_g2_response_self_normalization_no_go_2026-05-05.json",
+    "wz_v_authority_firewall": "outputs/yt_pr230_wz_v_authority_firewall_2026-05-15.json"
+  },
+  "parent_statuses": {
+    "assumption_import_stress": "open / assumption-import stress complete",
+    "block110_action_descent_obstruction": "exact negative boundary / Block110 Cl(3)/Z3 source-taste algebra does not derive accepted EW/Higgs action, canonical O_H, or scalar LSZ metric on the current PR230 surface",
+    "block111_schur_kprime_gap_audit": "exact negative boundary / Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime pole-row emissions",
+    "block112_helmholtz_obstruction": "exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action",
+    "block113_schur_abc_refresh": "bounded-support / Block113 complete 63/63 finite Schur A/B/C row artifact confirmed; strict Schur/Feshbach pole authority absent",
+    "block114_source_higgs_resolver": "exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact",
+    "block115_wz_resolver": "exact negative boundary / Block115 current PR230 head contains no strict W/Z physical-response packet with accepted action, production rows, matched top-W covariance, strict g2 authority, delta_perp, and final W-response rows",
+    "block116_neutral_h3h4_resolver": "exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "fh_gauge_normalized_response_route": "bounded-support / FH gauge-normalized response route",
+    "fh_lsz_invariant_readout": "exact-support / Feynman-Hellmann scalar-LSZ invariant readout formula",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached",
+    "source_reparametrization_gauge_no_go": "exact negative boundary / source reparametrization gauge",
+    "strict_kprime_pole_residue_certificate": "open / strict K-prime pole-residue certificate rows missing",
+    "wz_mass_response_self_normalization_no_go": "exact negative boundary / WZ top-W-Z mass-plus-response self-normalization does not fix absolute y_t on the current PR230 surface",
+    "wz_response_only_g2_self_normalization_no_go": "exact negative boundary / WZ response-only g2 self-normalization no-go",
+    "wz_v_authority_firewall": "exact negative boundary / PR230 W/Z explicit-v authority absent; package hierarchy v is rejected as a load-bearing W/Z absolute pin"
+  },
+  "pass_count": 14,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The current surface has exact FH/LSZ invariant-readout support, but none of the required physical data packets exists. Raw source slopes and finite aliases remain source-reparametrization dependent or support-only.",
+  "source_rescaling_witness": {
+    "description": "Raw dE_top/ds changes under source/operator rescaling, while the same-source FH/LSZ combination dE_top/ds / sqrt(Res_C_ss) is invariant if the physical scalar pole residue exists.",
+    "lsz_readout_invariant": true,
+    "raw_kappa_equals_one_readout_varies": true,
+    "rows": [
+      {
+        "Res_C_ss": 0.5625,
+        "dE_top_ds": 0.75,
+        "dGamma_ss_dp2": 1.7777777777777777,
+        "lsz_inverse_readout": 1.0,
+        "lsz_residue_readout": 1.0,
+        "raw_kappa_equals_one_readout": 0.75,
+        "source_operator_scale": 0.25
+      },
+      {
+        "Res_C_ss": 2.25,
+        "dE_top_ds": 1.5,
+        "dGamma_ss_dp2": 0.4444444444444444,
+        "lsz_inverse_readout": 1.0,
+        "lsz_residue_readout": 1.0,
+        "raw_kappa_equals_one_readout": 1.5,
+        "source_operator_scale": 0.5
+      },
+      {
+        "Res_C_ss": 36.0,
+        "dE_top_ds": 6.0,
+        "dGamma_ss_dp2": 0.027777777777777776,
+        "lsz_inverse_readout": 1.0,
+        "lsz_residue_readout": 1.0,
+        "raw_kappa_equals_one_readout": 6.0,
+        "source_operator_scale": 2.0
+      },
+      {
+        "Res_C_ss": 225.0,
+        "dE_top_ds": 15.0,
+        "dGamma_ss_dp2": 0.0044444444444444444,
+        "lsz_inverse_readout": 1.0,
+        "lsz_residue_readout": 1.0,
+        "raw_kappa_equals_one_readout": 15.0,
+        "source_operator_scale": 5.0
+      }
+    ]
+  },
+  "strict_non_claims": [
+    "does not claim retained or proposed_retained top-Yukawa closure",
+    "does not define y_t_bare",
+    "does not use H_unit, yt_ward_identity, observed targets, alpha_LM, plaquette, or u0",
+    "does not use package hierarchy v as a W/Z absolute pin",
+    "does not set kappa_s, g2, c2, or Z_match by unit convention",
+    "does not rename finite C_sx/C_xx rows as physical C_sH/C_HH pole rows",
+    "does not promote chunk completion, smoke rows, or support rows to closure"
+  ],
+  "wz_scale_orbit_witness": {
+    "absolute_couplings_vary": true,
+    "description": "Top/W/Z masses and same-source mass responses can stay fixed under a common electroweak scale orbit while y_t, g2, and gY vary. An allowed absolute pin is still required.",
+    "mass_and_response_dictionary_invariant": true,
+    "rows": [
+      {
+        "M_W": 0.8,
+        "M_Z": 1.0,
+        "absolute_scale": 0.5,
+        "dM_W_ds": 0.12,
+        "dM_Z_ds": 0.15,
+        "dm_t_ds": 0.2545584412271571,
+        "dv_ds": 0.15,
+        "g2": 1.6,
+        "gY": 1.2,
+        "m_t": 1.6970562748477138,
+        "v": 1.0,
+        "y_t": 2.4
+      },
+      {
+        "M_W": 0.8,
+        "M_Z": 1.0,
+        "absolute_scale": 1.0,
+        "dM_W_ds": 0.12,
+        "dM_Z_ds": 0.15,
+        "dm_t_ds": 0.2545584412271571,
+        "dv_ds": 0.3,
+        "g2": 0.8,
+        "gY": 0.6,
+        "m_t": 1.6970562748477138,
+        "v": 2.0,
+        "y_t": 1.2
+      },
+      {
+        "M_W": 0.8,
+        "M_Z": 1.0,
+        "absolute_scale": 3.0,
+        "dM_W_ds": 0.11999999999999998,
+        "dM_Z_ds": 0.14999999999999997,
+        "dm_t_ds": 0.25455844122715704,
+        "dv_ds": 0.8999999999999999,
+        "g2": 0.26666666666666666,
+        "gY": 0.19999999999999998,
+        "m_t": 1.6970562748477138,
+        "v": 6.0,
+        "y_t": 0.39999999999999997
+      },
+      {
+        "M_W": 0.8,
+        "M_Z": 1.0,
+        "absolute_scale": 8.0,
+        "dM_W_ds": 0.12,
+        "dM_Z_ds": 0.15,
+        "dm_t_ds": 0.2545584412271571,
+        "dv_ds": 2.4,
+        "g2": 0.1,
+        "gY": 0.075,
+        "m_t": 1.6970562748477138,
+        "v": 16.0,
+        "y_t": 0.15
+      }
+    ]
+  }
+}

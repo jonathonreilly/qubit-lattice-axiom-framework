@@ -1,0 +1,55 @@
+loop_slug: pr230-retained-closure-campaign-20260517
+mode: campaign
+runtime_budget: "12h"
+started_at_utc: "2026-05-17T14:46:11Z"
+last_checkpoint_utc: "2026-05-17T15:00:45Z"
+checkpoint_interval: "30m"
+deep_block_interval: "90-120m"
+worktree: /tmp/pr230-physics-loop-closure-20260517
+branch: physics-loop/pr230-retained-closure-campaign-20260517
+base_surface: origin/claude/yt-direct-lattice-correlator-2026-04-30
+latest_pr230_head: "4d56838ce6f2ab668c3987fe664043fd1c8084b4"
+latest_pr230_head_note: "Block116: Add PR230 Block116 neutral H3H4 strict artifact resolver"
+pr230_state: open
+pr230_draft: true
+active_science_block: block117_source_reparam_invariant_minimal_data
+active_route: "action-first canonical O_H / source-coordinate-invariant minimal data"
+target_status: best-honest-status
+actual_current_surface_status: "exact negative boundary / Block117 source-reparametrization invariant minimal-data contract is unsatisfied on the current PR230 head; no proposed_retained certificate"
+proposal_allowed: false
+proposal_allowed_reason: "Current PR230 head has no accepted same-surface canonical O_H/action, no strict physical C_ss/C_sH/C_HH pole rows, no strict W/Z physical-response packet, no strict Schur/Feshbach pole rows, and no strict neutral H3/H4 transfer/source-coupling artifact."
+first_route_decision: "Block115 does not change W/Z from blocked to executable; Block116 also records a neutral H3/H4 strict-artifact absence. The first campaign artifact therefore targets the invariant source/action obstruction that all remaining positive routes must satisfy."
+lock_status: "branch-local lock acquired with scripts/automation_lock.py using loop-local lock paths"
+forbidden_imports:
+  - "y_t_bare"
+  - "H_unit-to-top matrix element"
+  - "yt_ward_identity"
+  - "alpha_LM"
+  - "observed top mass"
+  - "observed y_t"
+  - "package hierarchy v"
+  - "fitted selectors"
+  - "smoke rows, finite-shell diagnostics, chunks, or support-only rows as closure"
+route_order:
+  - "A/B: action-first canonical O_H plus strict source-Higgs pole rows"
+  - "A: W/Z strict physical-response packet if future strict rows appear"
+  - "D: strict Schur/Feshbach K-prime/pole rows"
+  - "E: neutral H3/H4 physical transfer plus source/canonical-Higgs coupling"
+  - "F: holonomic source response only if current-surface O_H/h-source appears"
+block117_result:
+  output: outputs/yt_pr230_block117_source_reparam_invariant_minimal_data_2026-05-17.json
+  status: "exact negative boundary"
+  pass_count: 14
+  fail_count: 0
+  proposal_allowed: false
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439"
+verification:
+  block117_py_compile: passed
+  block117_runner: "PASS=14 FAIL=0"
+  full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
+  retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
+  positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
+  campaign_status: "PASS=436 FAIL=0; proposal_allowed=false"
+  assumption_import_stress: "PASS=119 FAIL=0; proposal_allowed=false"
+  git_diff_check: passed
+next_checkpoint_due_utc: "2026-05-17T15:30:45Z"

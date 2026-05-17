@@ -1,0 +1,18 @@
+# No-Go Ledger
+
+Scope: current-surface shortcuts only.  A future same-surface strict artifact
+can reopen any route listed here.
+
+| Route | Disposition | Artifact |
+|---|---|---|
+| Current PR230 head as source-reparametrization invariant retained top-Yukawa data packet | exact negative boundary: Block117 verifies that raw source slopes and finite aliases are not enough, the FH/LSZ invariant readout remains exact support only until physical scalar pole residue and canonical identity exist, W/Z mass-plus-response dictionaries still need an allowed absolute pin, and no current source-Higgs/W/Z/Schur/neutral strict disjunct is satisfied | `YT_PR230_BLOCK117_SOURCE_REPARAM_INVARIANT_MINIMAL_DATA_NOTE_2026-05-17.md` |
+| Current PR230 head as strict neutral H3/H4 artifact | exact negative boundary: H1/H2 support only; no H3 physical neutral transfer/off-diagonal primitive authority and no H4 source/canonical-Higgs coupling | `YT_PR230_BLOCK116_NEUTRAL_H3H4_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md` |
+| Current PR230 head as strict W/Z physical-response packet | exact negative boundary: no accepted same-source action, production W/Z rows, same-source top rows, matched covariance, strict `g2`/absolute pin, `delta_perp`, or final W-response rows | `YT_PR230_BLOCK115_WZ_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md` |
+| Current PR230 head as accepted `O_H`/action plus strict source-Higgs pole rows | exact negative boundary: no canonical `O_H`, no accepted same-source EW/Higgs action, and no strict numeric production `C_ss/C_sH/C_HH(tau)` pole-row artifact | `YT_PR230_BLOCK114_SOURCE_HIGGS_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md` |
+| Complete finite Schur A/B/C inverse-block packet as strict Schur/Feshbach pole authority | bounded support only: complete finite inverse rows, not pole A/B/C rows, not `K'(pole)`, not FV/IR/contact, not canonical `O_H` | `YT_PR230_BLOCK113_SCHUR_ABC_COMPLETE_PACKET_REFRESH_NOTE_2026-05-17.md` |
+| Source-only responses and finite taste-radial aliases as action/source-Higgs overlap authority | exact negative boundary: no Helmholtz-symmetric canonical mixed derivatives and no nonempty source-Higgs time-kernel rows | `YT_PR230_BLOCK112_HELMHOLTZ_ACTION_INTEGRABILITY_OBSTRUCTION_NOTE_2026-05-17.md` |
+| Completed 63/63 higher-shell finite packet as strict Schur/Feshbach K-prime pole-row emission | exact negative boundary: every chunk keeps `schur_kprime_kernel_rows` absent/guarded; no pole coordinate, derivative row, source projection numerator, FV/IR/contact, or canonical `O_H` | `YT_PR230_BLOCK111_SCHUR_KPRIME_PACKET_GAP_AUDIT_NOTE_2026-05-17.md` |
+| Finite `Cl(3)/Z3` source/taste algebra as accepted EW/Higgs action or canonical `O_H` | exact negative boundary: no dynamic Phi, accepted action, canonical `O_H`, scalar LSZ metric, or physical source-Higgs pole rows | `YT_PR230_BLOCK110_CL3_Z3_ACTION_DESCENT_OBSTRUCTION_NOTE_2026-05-17.md` |
+| All-ref/path-only reopen | open/checkpoint boundary: no strict same-surface artifact found across fetched refs | `YT_PR230_BLOCK108_ALL_REF_CLOSURE_ARTIFACT_RESCAN_NOTE_2026-05-17.md` |
+| Package hierarchy `v` as W/Z absolute-normalization pin | exact negative boundary: traverses forbidden `alpha_LM`/plaquette/u0 surfaces and does not identify the PR230 source coordinate | `YT_PR230_WZ_V_AUTHORITY_FIREWALL_NOTE_2026-05-15.md` |
+| Z3 heat-kernel as physical neutral transfer/source coupling | exact support plus boundary: mathematical primitive support only; physical heat time/scale and H4 coupling absent | `YT_PR230_Z3_HEAT_KERNEL_NEUTRAL_TRANSFER_ATTEMPT_NOTE_2026-05-15.md`, `YT_PR230_Z3_HEAT_KERNEL_SCALE_SELECTOR_NO_GO_NOTE_2026-05-15.md`, `YT_PR230_Z3_HEAT_KERNEL_SOURCE_COUPLING_NO_GO_NOTE_2026-05-15.md` |

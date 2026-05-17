@@ -165532,13 +165532,13 @@
       "deps": [
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 12.172,
+      "load_bearing_score": 12.674,
       "load_bearing_step": "Runner output for ORDER=40 confirms that the rank of the matching matrix at every tested (r,d) in {1,2} x {0,...,12} equals the number of unknowns, hence no non-trivial annihilator of order <=2 with coefficient degree <=12 exists.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -165559,7 +165559,7 @@
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Minimality Certificate Note",
-      "transitive_descendants": 815,
+      "transitive_descendants": 816,
       "verdict_rationale": "The runner is substantive rather than a print-only certificate: it builds the Bessel-determinant series and performs exact rank/nullspace checks. However, one load-bearing finite exclusion claimed by the note is not actually computed: r=2,d=12 is marked skipped in the source logic and omitted from the detailed stdout. Therefore the bounded certificate is too broad as stated, even before promoting it to all-order minimality through the external D-module and creative-telescoping imports."
     },
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05": {
@@ -165626,7 +165626,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.178,
+      "load_bearing_score": 13.179,
       "load_bearing_step": "The runner verifies at finite truncation order that the displayed third-order ODE annihilates the truncated Taylor series of J(beta), and numerically agrees with direct Weyl integration at beta in {2,4,6,8,10}.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
@@ -165859,7 +165859,7 @@
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE \u2014 Finite-Runner Certificate Note",
-      "transitive_descendants": 818,
+      "transitive_descendants": 819,
       "verdict_rationale": "The note has been narrowed to a bounded finite-runner certificate and no longer asserts the all-order Picard-Fuchs or Frobenius-branch theorem. The included source is not a pure printout: it symbolically builds the truncated series, computes the residual, numerically evolves the ODE, and compares against direct Weyl integration at the specified points. Within that bounded scope, the runner output matches the note's stated PASS=4 FAIL=0 and the beta=6 value. This does not audit or imply the separate all-order companion claim."
     },
     "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06": {
@@ -165912,6 +165912,57 @@
       "runner_path": null,
       "title": "Plaquette V=1 Picard-Fuchs ODE: Rank-Bound Citation Note",
       "transitive_descendants": 2,
+      "verdict_rationale": null
+    },
+    "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "8a6305ccd9c16575570e90fdda697b09668819b737da7d5ddcc65d2c6c1e9aec",
+      "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py",
+      "title": "Plaquette V=1 Picard-Fuchs ODE Rank-Exclusion (r=2, d=12) Narrow Theorem",
+      "transitive_descendants": 0,
       "verdict_rationale": null
     },
     "pmns_active_four_real_source_from_transport_note": {
@@ -253237,9 +253288,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2203,
-    "re_audit_required": 1,
-    "row_count": 2248,
-    "seeded_new": 0
+    "preserved_existing": 2204,
+    "re_audit_required": 0,
+    "row_count": 2249,
+    "seeded_new": 1
   }
 }

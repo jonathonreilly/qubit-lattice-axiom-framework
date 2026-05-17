@@ -18837,6 +18837,10 @@
       "to": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
     },
     {
+      "from": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
+      "to": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+    },
+    {
       "from": "pl_s3_atlas_refinement_compatibility_theorem_note_2026-05-03",
       "to": "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03"
     },
@@ -61977,6 +61981,20 @@
       "runner_path": null,
       "title": "Plaquette V=1 Picard-Fuchs ODE: Rank-Bound Citation Note"
     },
+    "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17": {
+      "claim_id": "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8a6305ccd9c16575570e90fdda697b09668819b737da7d5ddcc65d2c6c1e9aec",
+      "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_EXCLUSION_R2_D12_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py",
+      "title": "Plaquette V=1 Picard-Fuchs ODE Rank-Exclusion (r=2, d=12) Narrow Theorem"
+    },
     "pmns_active_four_real_source_from_transport_note": {
       "claim_id": "pmns_active_four_real_source_from_transport_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -76963,7 +76981,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 417,
+      "bounded_theorem": 418,
       "decoration": 1,
       "meta": 157,
       "no_go": 56,
@@ -76972,7 +76990,7 @@
       "positive_theorem": 156
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 864,
+      "bounded_theorem": 865,
       "decoration": 1,
       "meta": 157,
       "no_go": 161,
@@ -76980,10 +76998,10 @@
       "open_gate": 123,
       "positive_theorem": 609
     },
-    "edge_count": 9121,
-    "leaf_count": 724,
-    "node_count": 2359,
+    "edge_count": 9122,
+    "leaf_count": 725,
+    "node_count": 2360,
     "root_count": 853,
-    "runners_with_path": 1970
+    "runners_with_path": 1971
   }
 }

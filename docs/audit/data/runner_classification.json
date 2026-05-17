@@ -16296,6 +16296,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py"
     },
+    "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py"
+    },
     "pmns_active_four_real_source_from_transport_note": {
       "assert_count": 1,
       "counts": {
@@ -25107,6 +25119,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py": {
@@ -51702,12 +51729,12 @@
     "dominant_class_distribution": {
       "A": 180,
       "B": 256,
-      "C": 703,
+      "C": 704,
       "D": 289,
       "none": 423
     },
-    "runners_classified": 1851,
-    "runners_with_C": 907,
+    "runners_classified": 1852,
+    "runners_with_C": 908,
     "runners_with_D": 527
   }
 }

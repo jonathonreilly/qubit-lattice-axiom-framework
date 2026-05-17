@@ -5900,24 +5900,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "gravity_law_cleanup_note",
-      "claim_scope": null,
+      "claim_scope": "Audited only the bounded primary-runner-backed claim that the fixed-geometry gravity distance runner reports the listed raw t-values and no review-safe falling-tail fit on the cached b-window.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/generative_causal_dag_interference.py"
       ],
       "load_bearing_score": 11.155,
       "note_path": "docs/GRAVITY_LAW_CLEANUP_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/gravity_distance_fixed_geometry.py",
       "transitive_descendants": 805

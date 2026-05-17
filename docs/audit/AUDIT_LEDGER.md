@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 114 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 350 |
+| **retained_bounded** | 351 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 576 |
+| `audited_clean` | 577 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1438 |
+| `unaudited` | 1437 |
 
 | claim_type | count |
 |---|---:|
@@ -274,6 +274,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_propagating_field_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_propagating_field_radical_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -4706,6 +4707,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** A fixed connectivity backbone survives substantial position noise, while geometry-recomputed connectivity is the first place the response becomes mixed.  _(class `C`)_
 - **chain closes:** True — The runner is self-contained and its current stdout matches the frozen tables in the note. The note explicitly bounds the result to the replay and does not promote the F~M values or Gate B closure.
 - **rationale:** The audited claim is narrow enough to close: within the fixed valley-linear replay, the computed jitter and architecture outputs match the note and support the qualitative bounded comparison. There is no hidden dependency or external comparator because the note explicitly disclaims a dynamics theorem, universality of F~M, and Gate B closure. Residual risk is limited to the qualitative wording of 'tolerated', which is acceptable only under the stated finite replay boundary.
+- **auditor confidence:** high
+
+### `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded conditional that, given the admitted ingredient list Xi plus the declared rows and seeds, the pinned Gate B far-field harness/cache reproduces the four-row Omega readout; no physical-gravity bridge was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-213350-78dc5814-gate_b_farfield_bounded_-007`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The frozen cache was produced by the pinned harness with exit code 0/status ok and its stdout table is exactly Omega, so Omega is the harness-defined readout under the declared Xi, Lambda, and seeds.  _(class `A`)_
+- **chain closes:** True — The scoped chain closes as an exact cache/source-consistency check: the companion verifies the frozen cache metadata, pinned harness SHA, Omega rows, seed/row declarations, and determinism markers. The primitive-to-observable gravity interpretation is explicitly outside the audited claim.
+- **rationale:** The load-bearing step is not a first-principles physical derivation, but the note does not present it as one; it is a bounded conditional tied to a frozen runner cache. The provided companion source performs concrete cache, SHA, row, and source-marker checks rather than merely printing PASS. No cited authority or external comparator is needed for the scoped conditional, and the physical-gravity bridge is explicitly excluded rather than imported.
 - **auditor confidence:** high
 
 ### `gate_b_farfield_note`

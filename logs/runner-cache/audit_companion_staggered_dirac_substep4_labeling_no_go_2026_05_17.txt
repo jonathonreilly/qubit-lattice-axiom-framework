@@ -1,0 +1,77 @@
+=== Substep-4 AC_phi_lambda species-labeling NO-GO ===
+
+[setup] carrier V_3 = C^3, basis (c_1, c_2, c_3), C_3 cyclic generator
+
+  PASS  C^3 = I (cyclic generator order 3)
+  PASS  C != I (non-trivial)
+  PASS  C^2 != I (genuine order 3)
+  PASS  T_1 unitary
+  PASS  T_2 unitary
+  PASS  T_3 unitary
+  PASS  [T_1, T_1] = 0
+  PASS  [T_1, T_2] = 0
+  PASS  [T_1, T_3] = 0
+  PASS  [T_2, T_1] = 0
+  PASS  [T_2, T_2] = 0
+  PASS  [T_2, T_3] = 0
+  PASS  [T_3, T_1] = 0
+  PASS  [T_3, T_2] = 0
+  PASS  [T_3, T_3] = 0
+
+[I] orbit-equivariance invariant
+
+  PASS  orbit-equivariance: spec(T_1) = spec(C^-1 T_1 C) :: spec = [-1, 1, 1]
+  PASS  orbit-equivariance: spec(T_2) = spec(C^-1 T_2 C) :: spec = [-1, 1, 1]
+  PASS  orbit-equivariance: spec(T_3) = spec(C^-1 T_3 C) :: spec = [-1, 1, 1]
+  PASS  orbit-equivariance: C^{-1} C C = C (C is C_3-equivariant)
+
+[II] counter-model indistinguishability (pi_A vs pi_B)
+
+  PASS  pi_B = pi_A composed with cyclic shift (alpha -> alpha mod 3 + 1)
+  PASS  pi_A != pi_B (genuine distinguishable alternatives)
+
+[II.AC_lambda] AC_lambda bridge corollary indistinguishability
+
+  PASS  K = diag(k1, k2, k3) commutes with T_1
+  PASS  K = diag(k1, k2, k3) commutes with T_2
+  PASS  K = diag(k1, k2, k3) commutes with T_3
+  PASS  diagonality property holds under pi_A (carrier-basis-diagonal)
+  PASS  diagonality property holds under pi_B (carrier-basis-diagonal, multiset unchanged)
+
+[II.AC_phi] AC_phi trace-equipartition indistinguishability
+
+  PASS  H = a*I + b*C + bbar*C^2 commutes with C
+  PASS  trace-equipartition: <c_alpha | H | c_alpha> = a for all alpha (pi_A)
+  PASS  trace-equipartition: same equal-diagonal property holds under pi_B
+
+[II.NQ] NQ no-proper-quotient indistinguishability
+
+  PASS  NQ: E_11 = E_12 * E_21 (matrix unit generated)
+  PASS  NQ: E_22 = E_21 * E_12 (matrix unit generated)
+  PASS  NQ holds independent of carrier labeling (pi_A)
+  PASS  NQ holds independent of carrier labeling (pi_B)
+
+[III] closure-path enumeration (P1 / P2 / P3 distinguishing premises)
+
+  PASS  P1 (labeling-convention) distinguishes pi_A from pi_B :: pi_A satisfies 'pi = pi_A'; pi_B does not
+  PASS  P2 (C_3-breaking) candidate H_break = diag(1,0,0) is NOT C_3-equivariant :: C^-1 H_break C = [[0, 0, 0], [0, 0, 0], [0, 0, 1]]
+  PASS  P2: H_break dynamically distinguishes c_1 from {c_2, c_3} :: spec = [1, 0, 0]
+  PASS  P2 requires new primitive (not in A_min); rejected within A_min by 10-probe A3 :: see A3_ROUTE1-5 obstruction notes
+  PASS  P3 (PDG-empirical) is forbidden by retained-grade rule (substep-4 AC narrowing Step 6) :: loads PDG data into derivation step; allowed only in lane_prediction framing
+
+[IV] exhaustiveness of P1/P2/P3 (case-analysis check)
+
+  PASS  non-distinguishing complement non-empty (C_3-equivariant elements exist) :: H = a*I + b*C + bbar*C^2 with b!=0 is C_3-equivariant
+  PASS  P1 class non-empty (stipulation 'pi = pi_A' is well-defined)
+  PASS  P2 class non-empty (H_break = diag(1,0,0) breaks C_3)
+  PASS  P3 class non-empty (empirical lepton mass tuple exists in PDG, ignored by retained-grade rule)
+  PASS  exhaustiveness: 'add new axiom' route reduces to P1 or P2 (whose primitive does it add?) :: any new axiom either stipulates pi (P1) or breaks C_3 (P2)
+  PASS  exhaustiveness: HK+DHR appeal retired per substep-4 AC narrowing Block 01 audit :: no fourth class via DHR
+
+[V] negative control: non-distinguishing premise does NOT close
+
+  PASS  negative control: 'carrier dim = 3' does not distinguish pi_A from pi_B :: both pi_A and pi_B map to a 3-element label set
+  PASS  negative control: 'C^3 = I' does not distinguish pi_A from pi_B :: C^3 = I is independent of labeling
+
+=== SCORECARD ===
+  PASS=46 FAIL=0

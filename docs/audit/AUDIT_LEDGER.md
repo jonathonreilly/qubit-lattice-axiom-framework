@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 328 |
+| **retained_bounded** | 329 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1224 |
+| unaudited | 1223 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,22 +44,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 548 |
+| `audited_clean` | 549 |
 | `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1421 |
+| `unaudited` | 1420 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 943 |
+| `bounded_theorem` | 944 |
 | `decoration` | 21 |
 | `meta` | 200 |
 | `no_go` | 238 |
 | `open_gate` | 110 |
-| `positive_theorem` | 736 |
+| `positive_theorem` | 735 |
 
 | criticality | count |
 |---|---:|
@@ -166,6 +166,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_typeb_radian_readout_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2089,6 +2090,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** A selector from scalar quotient data to one generation label would have to pick a C3-fixed label, but the C3 action 0 -> 1 -> 2 -> 0 on generation labels is free, so no fixed singleton label exists; only based maps exist and those require extra basepoint/source/generation data.  _(class `A`)_
 - **chain closes:** True — The negative result closes as an exact group-action obstruction from the supplied premises: scalar Q/delta/z data are invariant under cyclic relabeling, while the target generation labels form a free C3 orbit. Therefore invariant scalar data cannot canonically select one physical generation label without additional based data. The runner directly checks the scalar invariance, carrier relabeling behavior, free action, absence of invariant singleton, and existence of only based maps.
 - **rationale:** The claim is a narrow no-go, not a positive charged-lepton mass closure. Its load-bearing step is exact algebra over the supplied C3 action and scalar-readout premise, and the runner checks the obstruction directly. No PDG masses, observed hierarchy label, or hidden physical generation identification are used as derivation input.
+- **auditor confidence:** high
+
+### `chiral_3plus1d_boundary_phase_note`
+
+- **Note:** [`CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md`](../../docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite boundary-condition phase scan for periodic, reflecting, and open boundaries across coherent, classical, and phase-kill modes on the declared 5x5 (lambda, delta) grid at n=21 and n=31; recurrence-artifact interpretation excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-152125-a5e2dcef-chiral_3plus1d_boundary_-011`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The binding evidence is exactly the finite-scan tabulated results from the boundary classes, propagation modes, and (lambda, delta) cells at n in {21,31}, with the recurrence-artifact interpretation out of scope.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely constructs the lattice walk, boundary shifts, observables, and aggregation over the declared grid rather than printing hard-coded expected values. The provided stdout matches the note's bounded finite-scan claims.
+- **rationale:** After the 2026-05-17 scope narrowing, the audited claim is only the finite scan record, not the physical interpretation that periodic AWAY windows are recurrence artifacts. The runner computes the stated grid directly from fixed model operators and boundary rules, with no helper imports or cited upstream premises. The tabulated output supports the note's reported AWAY cells, reflecting/open behavior, and zero periodic torus-sensitive cells within the finite grid.
 - **auditor confidence:** high
 
 ### `chiral_3plus1d_coupled_coin_note`

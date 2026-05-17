@@ -73,3 +73,9 @@ It only says:
 
 > at the quoted fine point `H = 0.25`, on the actual moving-source lane,
 > the direct static comparator does not beat `dIeq`.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [wave_retardation_continuum_limit_note](WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md)

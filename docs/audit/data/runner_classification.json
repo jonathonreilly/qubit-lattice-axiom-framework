@@ -7224,6 +7224,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_fractional_charge_denominator_from_n_c.py"
     },
+    "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16": {
+      "assert_count": 1,
+      "counts": {
+        "A": 4,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py"
+    },
     "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25": {
       "assert_count": 1,
       "counts": {
@@ -20232,6 +20244,18 @@
       "dominant_class": null,
       "runner": "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py"
     },
+    "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16": {
+      "assert_count": 1,
+      "counts": {
+        "A": 4,
+        "B": 9,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py"
+    },
     "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03": {
       "assert_count": 0,
       "counts": {
@@ -33017,6 +33041,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py": {
+      "assert_count": 1,
+      "claims": [
+        "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py": {
       "assert_count": 1,
       "claims": [
@@ -42235,6 +42274,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py": {
+      "assert_count": 1,
+      "claims": [
+        "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 9,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -48796,15 +48850,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 208,
+    "decoration_candidates": 210,
     "dominant_class_distribution": {
       "A": 165,
-      "B": 181,
+      "B": 183,
       "C": 698,
       "D": 281,
       "none": 419
     },
-    "runners_classified": 1744,
+    "runners_classified": 1746,
     "runners_with_C": 893,
     "runners_with_D": 514
   }

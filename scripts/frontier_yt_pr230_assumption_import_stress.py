@@ -362,6 +362,9 @@ def main() -> int:
         "block114_source_higgs_strict_artifact_resolver": load(
             "outputs/yt_pr230_block114_source_higgs_strict_artifact_resolver_2026-05-17.json"
         ),
+        "block115_wz_strict_artifact_resolver": load(
+            "outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2282,6 +2285,55 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block115_wz_keeps_imports_clean = (
+        "Block115 current PR230 head contains no strict W/Z physical-response packet"
+        in str(
+            certificates["block115_wz_strict_artifact_resolver"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block115_wz_strict_artifact_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block115_wz_strict_artifact_resolver"].get(
+            "block115_wz_strict_artifact_resolver_passed"
+        )
+        is True
+        and certificates["block115_wz_strict_artifact_resolver"].get(
+            "accepted_same_source_action_absent"
+        )
+        is True
+        and certificates["block115_wz_strict_artifact_resolver"].get(
+            "production_wz_response_rows_absent"
+        )
+        is True
+        and certificates["block115_wz_strict_artifact_resolver"].get(
+            "matched_top_wz_covariance_absent"
+        )
+        is True
+        and certificates["block115_wz_strict_artifact_resolver"].get(
+            "strict_g2_delta_final_w_rows_absent"
+        )
+        is True
+        and certificates["block115_wz_strict_artifact_resolver"].get(
+            "scout_schema_not_counted_as_production"
+        )
+        is True
+        and all(
+            value is False
+            for value in certificates["block115_wz_strict_artifact_resolver"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block115-wz-keeps-imports-clean",
+        block115_wz_keeps_imports_clean,
+        certificates["block115_wz_strict_artifact_resolver"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2615,6 +2667,7 @@ def main() -> int:
         "block112_helmholtz_keeps_imports_clean": block112_helmholtz_keeps_imports_clean,
         "block113_schur_abc_keeps_imports_clean": block113_schur_abc_keeps_imports_clean,
         "block114_source_higgs_keeps_imports_clean": block114_source_higgs_keeps_imports_clean,
+        "block115_wz_keeps_imports_clean": block115_wz_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

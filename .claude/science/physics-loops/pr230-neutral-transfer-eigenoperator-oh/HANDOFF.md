@@ -1,11 +1,53 @@
 # Handoff
 
-Checkpoint: 2026-05-17 Block114
+Checkpoint: 2026-05-17 Block115
 
 Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
+
+## Block115 W/Z Strict Physical-Response Artifact Resolver
+
+Block115 resolves the second-ranked W/Z physical-response contract against the
+current PR230 head.  It checks for an accepted same-source action, production
+W/Z rows, same-source top rows, matched top-W covariance, strict non-observed
+`g2` or another allowed absolute pin, `delta_perp` authority, and final
+W-response rows.  The resolver finds all strict paths absent and keeps
+support contracts, scout rows, smoke rows, and schemas out of production
+evidence.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block115_wz_strict_artifact_resolver.py`
+- `outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json`
+- `docs/YT_PR230_BLOCK115_WZ_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block115 W/Z strict physical-response artifact resolver PASS=11 FAIL=0
+campaign status PASS=435 FAIL=0
+assumption/import stress PASS=118 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors; 5 known warnings
+audit pipeline complete; generated docs/audit churn restored
+git diff --check OK
+```
+
+Honest status: exact negative boundary.  No retained or `proposed_retained`
+closure is authorized.
+
+Exact next action: supply a strict W/Z physical-response packet with accepted
+same-source action, production W/Z response rows, same-source top rows,
+matched top-W covariance rows, strict non-observed `g2` or another allowed
+absolute pin, `delta_perp` authority, and final W-response rows; otherwise
+pivot to strict Schur/scalar-LSZ pole authority or neutral H3/H4
+physical-transfer/source-coupling authority.
 
 ## Block114 Source-Higgs Strict Artifact Resolver
 

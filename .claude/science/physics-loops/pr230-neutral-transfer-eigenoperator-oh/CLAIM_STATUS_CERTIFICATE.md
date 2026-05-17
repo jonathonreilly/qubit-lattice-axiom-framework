@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block114_source_higgs_strict_artifact_resolver`.
+Current block: `block115_wz_strict_artifact_resolver`.
 
 ```yaml
-actual_current_surface_status: exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact
+actual_current_surface_status: exact negative boundary / Block115 current PR230 head contains no strict W/Z physical-response packet with accepted action, production rows, matched top-W covariance, strict g2 authority, delta_perp, and final W-response rows
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block114 finds no accepted O_H/action certificate and no strict numeric C_ss/C_sH/C_HH source-Higgs pole-row artifact on the current PR230 head. Contracts, schema examples, future rows, and finite C_ss/C_sx/C_xx aliases are not closure evidence."
+proposal_allowed_reason: "Block115 finds no accepted same-source action, production W/Z rows, same-source top rows, matched top-W covariance, strict g2/absolute authority, delta_perp certificate, or final W-response rows on the current PR230 head. Scout, smoke, schema, and support-contract rows are not closure evidence."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,14 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block115 resolves the W/Z physical-response artifact family against the
+   current PR230 head.  It finds all expected strict W/Z paths absent: accepted
+   same-source action, W/Z production response rows, same-source top response,
+   matched top-W covariance, strict non-observed `g2` or another allowed
+   absolute pin, `delta_perp` authority, and final W-response rows.  Existing
+   W/Z-adjacent artifacts are open builders, support contracts, scout rows,
+   smoke rows, or schemas and are not production evidence.  Aggregate gates
+   deny proposal wording.
 0. Block114 resolves the top-ranked source-Higgs artifact family against the
    current PR230 head.  It finds all expected strict artifact paths absent, no
    accepted canonical `O_H` certificate, no accepted same-source EW/Higgs

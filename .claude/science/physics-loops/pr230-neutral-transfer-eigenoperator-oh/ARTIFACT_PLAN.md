@@ -1,5 +1,26 @@
 # Artifact Plan
 
+Block115 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block115_wz_strict_artifact_resolver.py` | Created; PASS=11 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json` | Created |
+| Boundary note | `docs/YT_PR230_BLOCK115_WZ_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block115:
+
+```text
+outputs/yt_same_source_w_response_rows_2026-05-04.json
+```
+
+plus its required strict parents: accepted same-source EW/Higgs action,
+production W/Z response rows, same-source top response rows, matched top-W
+covariance rows, strict non-observed `g2` or another allowed absolute pin,
+and `delta_perp` authority.  Scout, smoke, schema, and support-contract rows
+are not closure artifacts.
+
 Block114 artifacts:
 
 | Artifact | Path | Status |

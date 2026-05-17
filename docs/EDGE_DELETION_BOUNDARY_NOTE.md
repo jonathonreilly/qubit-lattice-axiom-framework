@@ -31,3 +31,7 @@ sharp threshold at ~85% retention. Below it, gravity flips.
 gravitational attraction (TOWARD) requires at least ~85% of the
 standard dense-lattice connectivity. Below this threshold, the
 gravity sign becomes seed-dependent and predominantly AWAY."
+
+---
+
+**Re-queued for re-audit 2026-05-17:** previous `audited_failed` verdict cited packet incompleteness (missing helper-script imports from the restricted packet). The audit pipeline now populates `helper_runner_paths` per [PR #1371](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1371) so the next audit pass receives the complete packet. Helpers now declared: ``. The current re-queue is mechanical — no science content changes — and is documented here so the hash drift is explicit.

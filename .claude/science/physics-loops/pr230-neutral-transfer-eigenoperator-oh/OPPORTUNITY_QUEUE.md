@@ -1,8 +1,9 @@
 # Opportunity Queue
 
-Campaign mode queue after block113 Schur A/B/C complete-packet refresh,
-block112 Helmholtz action-integrability obstruction, block111 Schur K-prime
-packet gap audit, block110 Cl(3)/Z3 action-descent obstruction, block109
+Campaign mode queue after block114 source-Higgs strict artifact resolver,
+block113 Schur A/B/C complete-packet refresh, block112 Helmholtz
+action-integrability obstruction, block111 Schur K-prime packet gap audit,
+block110 Cl(3)/Z3 action-descent obstruction, block109
 closure-root selector, block108 all-ref rescan, block104 Z3 heat-kernel
 source-coupling/H4 no-go, block100 W/Z explicit-`v` authority firewall, and
 block99 complete higher-shell finite-packet monotonicity boundary.
@@ -109,6 +110,16 @@ support artifact, but it does not change the queue ranking: finite
 `K'(pole)`, not FV/IR/contact authority, and not canonical `O_H` or
 source-Higgs overlap. The next Schur move must be a new strict pole-row
 artifact, not another finite-row promotion.
+
+Block114 resolves the highest-ranked source-Higgs contract against the current
+PR230 head. It finds no accepted canonical `O_H` certificate, no accepted
+same-source EW/Higgs action certificate, and no strict numeric
+`C_ss/C_sH/C_HH` pole-row artifact. Existing hits are contracts, schemas,
+future-row examples, or finite `C_ss/C_sx/C_xx` support aliases. The queue
+ranking remains source-Higgs first only if a genuine accepted `O_H`/action plus
+strict production pole-row artifact appears; otherwise the next admissible
+pivots remain strict W/Z physical response, strict Schur/scalar-LSZ pole
+authority, or neutral H3/H4 physical-transfer/source-coupling authority.
 
 Block80 packages completed higher-shell chunks045-046. It extends the
 checkpointed higher-shell support prefix to `46/63` planned support chunks, but

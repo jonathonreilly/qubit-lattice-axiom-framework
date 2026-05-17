@@ -1,5 +1,26 @@
 # Artifact Plan
 
+Block114 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block114_source_higgs_strict_artifact_resolver.py` | Created; PASS=10 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block114_source_higgs_strict_artifact_resolver_2026-05-17.json` | Created |
+| Boundary note | `docs/YT_PR230_BLOCK114_SOURCE_HIGGS_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block114:
+
+```text
+outputs/yt_pr230_source_higgs_pole_rows_2026-05-06.json
+```
+
+or an accepted canonical `O_H` / same-source action certificate first.  The
+row artifact must contain numeric production `C_ss/C_sH/C_HH` pole residues
+with Gram, FV/IR, contact, and covariance authority.  Contracts, schemas,
+future examples, and finite `C_ss/C_sx/C_xx` aliases are not closure
+artifacts.
+
 Block113 artifacts:
 
 | Artifact | Path | Status |

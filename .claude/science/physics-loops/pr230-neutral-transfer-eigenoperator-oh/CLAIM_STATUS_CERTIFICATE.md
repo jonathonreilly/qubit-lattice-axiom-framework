@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block113_schur_abc_complete_packet_refresh`.
+Current block: `block114_source_higgs_strict_artifact_resolver`.
 
 ```yaml
-actual_current_surface_status: bounded-support / Block113 complete 63/63 finite Schur A/B/C row artifact confirmed; strict Schur/Feshbach pole authority absent
+actual_current_surface_status: exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; Schur support if a future strict same-surface row artifact supplies the Block69 pole coordinate, K-prime derivative or exact Schur/Feshbach equivalent, source projection numerator, and FV/IR/contact authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block113 supplies a complete finite Schur A/B/C support artifact, not closure. It confirms 63/63 finite inverse C_ss/C_sx/C_xx rows with a clean inverse identity, but strict pole Schur/Feshbach rows, K-prime derivative authority, FV/IR/contact authority, canonical O_H, source-Higgs overlap, and W/Z physical-response bypass rows remain absent."
+proposal_allowed_reason: "Block114 finds no accepted O_H/action certificate and no strict numeric C_ss/C_sH/C_HH source-Higgs pole-row artifact on the current PR230 head. Contracts, schema examples, future rows, and finite C_ss/C_sx/C_xx aliases are not closure evidence."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,14 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block114 resolves the top-ranked source-Higgs artifact family against the
+   current PR230 head.  It finds all expected strict artifact paths absent, no
+   accepted canonical `O_H` certificate, no accepted same-source EW/Higgs
+   action certificate, and zero strict numeric production
+   `C_ss/C_sH/C_HH` pole-row hits.  The only nonempty `pole_residue_rows`
+   lists are schema or contract examples, not current row evidence.  Finite
+   `C_ss/C_sx/C_xx` aliases remain non-authoritative, and aggregate gates deny
+   proposal wording.
 0. Block113 refreshes the finite Schur A/B/C support status after the
    higher-shell packet completed.  It confirms `63/63` finite inverse-block
    row records, `252` finite inverse mode rows, `63` finite shell difference

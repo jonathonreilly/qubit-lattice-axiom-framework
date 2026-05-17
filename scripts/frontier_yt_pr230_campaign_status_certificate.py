@@ -519,6 +519,9 @@ def main() -> int:
         "pr230_block113_schur_abc_complete_packet_refresh": load(
             "outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json"
         ),
+        "pr230_block114_source_higgs_strict_artifact_resolver": load(
+            "outputs/yt_pr230_block114_source_higgs_strict_artifact_resolver_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2867,6 +2870,39 @@ def main() -> int:
         "pr230-block113-schur-abc-complete-packet-refresh-support-only",
         block113_schur_abc_complete_packet_refresh_support_only,
         statuses["pr230_block113_schur_abc_complete_packet_refresh"],
+    )
+    block114_source_higgs_strict_artifact_resolver_blocks = (
+        "Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact"
+        in str(statuses["pr230_block114_source_higgs_strict_artifact_resolver"])
+        and certificates["pr230_block114_source_higgs_strict_artifact_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block114_source_higgs_strict_artifact_resolver"].get(
+            "block114_source_higgs_strict_artifact_resolver_passed"
+        )
+        is True
+        and certificates["pr230_block114_source_higgs_strict_artifact_resolver"].get(
+            "canonical_oh_certificate_absent"
+        )
+        is True
+        and certificates["pr230_block114_source_higgs_strict_artifact_resolver"].get(
+            "accepted_same_source_action_absent"
+        )
+        is True
+        and certificates["pr230_block114_source_higgs_strict_artifact_resolver"].get(
+            "strict_source_higgs_pole_rows_absent"
+        )
+        is True
+        and certificates["pr230_block114_source_higgs_strict_artifact_resolver"].get(
+            "contract_examples_not_counted_as_rows"
+        )
+        is True
+    )
+    report(
+        "pr230-block114-source-higgs-strict-artifact-resolver-blocks",
+        block114_source_higgs_strict_artifact_resolver_blocks,
+        statuses["pr230_block114_source_higgs_strict_artifact_resolver"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8631,6 +8667,9 @@ def main() -> int:
     )
     result["block113_schur_abc_complete_packet_refresh_support_only"] = (
         block113_schur_abc_complete_packet_refresh_support_only
+    )
+    result["block114_source_higgs_strict_artifact_resolver_blocks"] = (
+        block114_source_higgs_strict_artifact_resolver_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

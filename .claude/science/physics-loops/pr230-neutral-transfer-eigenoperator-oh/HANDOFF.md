@@ -1,11 +1,52 @@
 # Handoff
 
-Checkpoint: 2026-05-17 Block113
+Checkpoint: 2026-05-17 Block114
 
 Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
+
+## Block114 Source-Higgs Strict Artifact Resolver
+
+Block114 resolves the current PR230 head against the top-ranked source-Higgs
+contract.  It checks for accepted canonical `O_H` or accepted same-source
+action authority plus strict numeric production `C_ss/C_sH/C_HH` pole rows.
+The resolver finds absent expected strict artifact paths, absent accepted
+`O_H`, absent accepted same-source action, and zero strict numeric
+source-Higgs pole-row hits.  Schema/contract examples and finite
+`C_ss/C_sx/C_xx` aliases are explicitly not counted as rows.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block114_source_higgs_strict_artifact_resolver.py`
+- `outputs/yt_pr230_block114_source_higgs_strict_artifact_resolver_2026-05-17.json`
+- `docs/YT_PR230_BLOCK114_SOURCE_HIGGS_STRICT_ARTIFACT_RESOLVER_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block114 source-Higgs strict artifact resolver PASS=10 FAIL=0
+campaign status PASS=434 FAIL=0
+assumption/import stress PASS=117 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors; 5 known warnings
+audit pipeline complete; generated docs/audit churn restored
+git diff --check OK
+```
+
+Honest status: exact negative boundary.  No retained or `proposed_retained`
+closure is authorized.
+
+Exact next action: create a real current-surface row artifact at
+`outputs/yt_pr230_source_higgs_pole_rows_2026-05-06.json` or first create an
+accepted canonical `O_H` / same-source action certificate; the row artifact
+must contain numeric production `C_ss/C_sH/C_HH` pole residues with Gram,
+FV/IR, contact, and covariance authority.
 
 ## Block113 Schur A/B/C Complete-Packet Refresh
 

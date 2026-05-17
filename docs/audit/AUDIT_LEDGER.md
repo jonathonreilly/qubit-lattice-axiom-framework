@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 328 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 176 |
+| ~~audited_conditional~~ | 177 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 548 |
-| `audited_conditional` | 176 |
+| `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1422 |
+| `unaudited` | 1421 |
 
 | claim_type | count |
 |---|---:|
@@ -681,6 +681,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `central_band_layernorm_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `charged_lepton_koide_review_packet_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -1943,6 +1944,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The clean large-N takeaway is that central-band hard geometry survives the corrected Born gate at N = 80, 100 while the same-graph gravity side rolls over, preserving only a Born-safe pocket.  _(class `C`)_
 - **chain closes:** False — The source note's retained-row table disagrees with the supplied completed runner stdout for the collapse rows, including the N = 100 collapse purity and gravity sign. The runner source also delegates the core graph, Born, purity, and gravity calculations to unprovided helper modules, so the restricted packet cannot independently certify those implementations.
 - **rationale:** Issue: completed runner stdout contradicts the source note table: N = 80 collapse gravity is -0.498+/-0.072, not -0.576+/-0.045, and N = 100 collapse is purity 0.732 and gravity -0.005, not 0.680 and +0.097. This blocks the current claim because the table is the load-bearing evidence for the bounded large-N row set, and a stale sign/value cannot be retained by narrative interpretation. Repair target: update the note from the actual run or provide the exact artifact that generated the note table, then re-audit with the helper implementations included; until fixed, only the narrower observation that the supplied run reports Born-zero rows with gravity non-positive or failed is supported.
+- **auditor confidence:** high
+
+### `central_band_layernorm_note`
+
+- **Note:** [`CENTRAL_BAND_LAYERNORM_NOTE.md`](../../docs/CENTRAL_BAND_LAYERNORM_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the supplied central-band + layernorm computation for N=25,40,60,80,100 and y_cut=1,2,3, including its reported pur_min and gravity table; the modular-gap comparison is an imported comparator not supplied as a retained authority in this packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-151913-a5e2dcef-central_band_layernorm_n-010`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The simple |y|-removal rule is competitive with modular gap=2 + layernorm, but does not clearly dominate it across the whole N=25..100 range.  _(class `B`)_
+- **chain closes:** False — The primary runner and helper sources genuinely compute the central-band table without hard-coded target values, and the stdout matches the note's central-band numbers. The full comparative conclusion does not close because the modular gap=2 + layernorm fit and row values are not produced by the primary runner output or by any cited retained authority in the restricted packet.
+- **rationale:** The central-band part is supported by a real first-principles-style numerical runner over generated DAGs, pruning, propagation, purity, and gravity readouts; the helper sources are present and do not hard-code the reported table. However, the source note's load-bearing comparative claim imports the modular gap=2 + layernorm scaling row without providing its runner output, retained note, or cached certificate as a cited authority. The safe reduced claim is that, under the supplied runner settings, y_cut=2 is a strong decoherence threshold and y_cut=1 is often more gravity-preserving at larger N.
 - **auditor confidence:** high
 
 ### `central_band_mass_window_note`

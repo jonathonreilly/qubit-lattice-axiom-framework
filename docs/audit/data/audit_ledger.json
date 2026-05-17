@@ -252633,9 +252633,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2199,
+    "preserved_existing": 2204,
     "re_audit_required": 0,
     "row_count": 2248,
-    "seeded_new": 5
+    "seeded_new": 0
   }
 }

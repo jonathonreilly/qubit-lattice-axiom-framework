@@ -5900,24 +5900,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "poisson_self_gravity_loop_v3_note",
-      "claim_scope": null,
+      "claim_scope": "Finite-harness nonzero-coupling falsifier observation for scripts/poisson_self_gravity_loop_v3.py: small matched-null centroid and phase-ramp shifts occur, but the nonlinear loop does not converge under the stated tolerance and no mechanism is retained.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
       "load_bearing_score": 11.16,
       "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
       "transitive_descendants": 808

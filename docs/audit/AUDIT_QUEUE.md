@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `poisson_self_gravity_loop_v3_note` | bounded_theorem | unaudited | critical | 808 | 11.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/poisson_self_gravity_loop_v3.py` |
+| 1 | `poisson_self_gravity_loop_v3_note` | bounded_theorem | audit_in_progress | critical | 808 | 11.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/poisson_self_gravity_loop_v3.py` |
 | 2 | `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 806 | 16.66 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 3 | `gravity_law_cleanup_note` | bounded_theorem | unaudited | critical | 805 | 11.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/gravity_distance_fixed_geometry.py` |
 | 4 | `dm_abcc_signature_forcing_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 805 | 10.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_abcc_signature_forcing_theorem.py` |

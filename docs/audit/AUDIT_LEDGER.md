@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 9 |
-| ~~audited_conditional~~ | 182 |
+| ~~audited_conditional~~ | 183 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 563 |
-| `audited_conditional` | 182 |
+| `audited_conditional` | 183 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1435 |
+| `unaudited` | 1434 |
 
 | claim_type | count |
 |---|---:|
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration` | 22 |
 | `meta` | 206 |
 | `no_go` | 239 |
-| `open_gate` | 110 |
-| `positive_theorem` | 744 |
+| `open_gate` | 111 |
+| `positive_theorem` | 743 |
 
 | criticality | count |
 |---|---:|
@@ -836,6 +836,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `scalar_trace_tensor_no_go_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `self_gravity_failure_diagnosis` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `spectral_trajectory_theorem_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9613,6 +9614,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md`
   - `scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py`
   - `scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py`
+- **auditor confidence:** high
+
+### `signed_gravity_aps_locked_source_action_proposal_note`
+
+- **Note:** [`SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md`](../../docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited whether the proposed APS-locked interaction term algebraically supplies signed active source and source/response locking, and whether it is derived from the restricted packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-183011-41cdea85-signed_gravity_aps_locke-007`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The new premise is S_int = - chi_eta M_phys <rho, Phi>, which inserts the APS eta sign into the source action.  _(class `E`)_
+- **chain closes:** False — The algebra closes only after the new chi_eta rho Phi interaction is postulated. The missing step is a derivation of that cross term from retained APS/Wald/Gauss boundary structure.
+- **rationale:** The source note is explicit that the APS-locked source action is a new premise and not derived from retained inputs. The runner verifies downstream algebra after directly implementing S_int = - chi_eta M <rho,Phi>; it does not compute that term from first principles. The safe retained result is therefore only a conditional candidate: if the interaction is accepted, the signed source and locked four-pair table follow in the finite harness.
 - **auditor confidence:** high
 
 ### `signed_gravity_response_lane_status_note_2026-04-26`

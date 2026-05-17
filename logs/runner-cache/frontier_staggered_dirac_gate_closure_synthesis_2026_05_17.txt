@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py
+runner_sha256: 2cfb6625b64a833570dd62fb051fef8a39c767716e1e77f325e1023a7057d3b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================
+Block 01 — Staggered-Dirac Gate Closure Synthesis
+Loop:      filter-excluded-positive-closures-2026-05-17
+Companion: docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md
+Tier proposal: bounded_theorem (substep 4 species-label residual carried)
+========================================================================
+
+--- Part A: Chain composition (T2 -> T3 -> T4 -> T5) ---
+
+--- Part B: Authority enumeration ---
+
+--- Part C: Residual enumeration ---
+
+--- Part D: Counterexample probes ---
+
+--- Part E: Independent algebraic verification ---
+
+--- Forbidden-imports verification ---
+
+========================================================================
+DETAILED RESULTS
+========================================================================
+[PASS] T2 (Grassmann forcing)
+       T2 (Grassmann forcing): bosonic dim=inf incompatible with U4=2; Grassmann dim=2 matches U4. Matter measure forced to Grassmann.
+[PASS] T3 (KS phase forcing)
+       T3 (KS forcing): T^dag(x) sigma_mu T(x+mu_hat) gives signed I with the unique KS phases on all 24 (site, direction) pairs.
+[PASS] T4 (BZ-corner 1+1+3+3 + hw=1 M_3(C))
+       T4 (BZ-corner): hw histogram = [1, 3, 3, 1] (1+3+3+1 = 8); 3 distinct joint chars on hw=1; M_3(C) simple (no proper quotient).
+[PASS] T5 (direct three-state)
+       T5 (three-state algebraic): 3 distinct joint chars -> orthogonal; C_3[111] is a 3-cycle on hw=1; single superselection sector by RP+RS+CD.
+[PASS] T2 -> T3 composition
+       T2->T3 chain: T2 output dim=2 matches T3 required input dim=2. Composition valid.
+[PASS] T3 -> T4 composition
+       T3->T4 chain: K(k) = sum_mu i*eta_mu*sin(k_mu)*gamma_mu vanishes at all 8 BZ corners (sin(0) = sin(pi) = 0). Composition valid.
+[PASS] T4 -> T5 composition
+       T4->T5 chain: hw=1 triplet with distinct joint translation chars ([(-1, 1, 1), (1, -1, 1), (1, 1, -1)]) -> 3 orthogonal states in H_phys. Composition valid.
+[PASS] Authority enumeration (18 cited)
+       Authority enumeration: 20 authorities cited (expected 20).
+[PASS] Residual enumeration (3 carried)
+       Residual enumeration: 3 residuals carried (expected 3).
+[PASS] A1-violation probe (Cl(4) carrier)
+       A1-violation probe: Cl(3) per-site dim=2 forces unique single-mode Grassmann; Cl(4) per-site dim=4 would admit multi-mode realizations, breaking substep-1 input. Chain does NOT propagate on A1-violating carriers.
+[PASS] A2-violation probe (non-bipartite substrate)
+       A2-violation probe: Z^3 bipartite=True admits sublattice parity epsilon(x); triangular bipartite=False (has 3-cycles), so epsilon undefined. Chain does NOT propagate on A2-violating substrates.
+[PASS] Chain-consistency probe (end-to-end)
+       Chain-consistency probe: T2=True, T3=True, T4=True, T5=True, T2->T3=True, T3->T4=True, T4->T5=True; end-to-end CONSISTENT.
+[PASS] Hamming-weight decomposition 1+3+3+1=8
+       Hamming-weight decomposition: [1, 3, 3, 1] (sum=8); expected [1,3,3,1] sum=8.
+[PASS] Pauli chirality sigma_1 sigma_2 sigma_3 = i*I
+       sigma_1 sigma_2 sigma_3 = i*I_2: diag entries 1j, 1j; expected 1j.
+[PASS] Orthogonality from distinct joint eigenvalues
+       Orthogonality from spectral theorem: joint chars [(-1, 1, 1), (1, -1, 1), (1, 1, -1)]; all pairwise distinct -> 3 orthogonal eigenstates.
+[PASS] C_3[111] is 3-cycle on hw=1 corners
+       C_3[111] 3-cycle: orbit [(1, 0, 0), (0, 0, 1), (0, 1, 0)] -> (1, 0, 0); closes=True, visits_all=True.
+[PASS] No forbidden imports
+       Forbidden-imports check: PDG=0, MC=0, fitted=0, new axioms=0. All zero.
+
+========================================================================
+SUMMARY: PASS=17 FAIL=0 (total=17)
+========================================================================
+
+Bounded synthesis (T6) — Staggered-Dirac Gate Closure Synthesis — verified.
+
+On A1+A2 + 18 cited retained/support/admissible authorities + admissible standard math:
+  * substeps 1, 2, 3 chain as bounded forcing of kinetic-and-algebra surface
+  * substep 4 residual carried as named admitted-context (AC_phi, AC_phi_lambda)
+  * inherited S2 re-audit dependency carried forward
+
+Synthesis is bounded_theorem; parent realization gate remains open_gate at
+the positive-theorem tier (species-label identification still admitted).
+
+No PDG values, no MC measurements, no fitted coefficients, no new axioms.
+
+----- stderr -----
+

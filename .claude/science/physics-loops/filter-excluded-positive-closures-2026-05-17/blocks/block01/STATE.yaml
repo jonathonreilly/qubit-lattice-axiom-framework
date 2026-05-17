@@ -1,0 +1,51 @@
+block: 01
+loop: filter-excluded-positive-closures-2026-05-17
+date: 2026-05-17
+target_row: staggered_dirac_realization_gate_note_2026-05-03
+branch: physics-loop/staggered-dirac-gate-synthesis-block01-2026-05-17
+
+status: complete
+disposition: pass
+proposed_claim_type: bounded_theorem
+
+value_gate:
+  v1: PASS
+  v2: PASS
+  v3: PASS
+  v4: PASS
+  v5: PASS
+  overall: PASS
+
+deliverables:
+  source_theorem_note: docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md
+  paired_runner: scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py
+  cached_output: logs/runner-cache/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.txt
+  claim_status_certificate: .claude/science/physics-loops/filter-excluded-positive-closures-2026-05-17/blocks/block01/CLAIM_STATUS_CERTIFICATE.md
+  review_history: .claude/science/physics-loops/filter-excluded-positive-closures-2026-05-17/blocks/block01/REVIEW_HISTORY.md
+
+runner_results:
+  pass: 17
+  fail: 0
+  total: 17
+
+axioms_in_scope: [A1, A2]
+
+carried_residuals:
+  - AC_phi
+  - AC_phi_lambda
+  - S2_re_audit
+
+closed:
+  - parent_gate_no_single_packaged_proof_weakness
+  - cross_substep_chaining_T2_T3_T4_T5
+  - joint_hypothesis_enumeration
+  - named_carried_residuals
+
+left_open:
+  - parent_gate_positive_theorem_tier
+  - AC_phi_lambda_closure_requires_external_input
+  - S2_re_audit_dependency
+
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+forbidden_imports_used: false

@@ -290,17 +290,36 @@ git diff --check
 
 For critical claims, the first clean audit records `audit_in_progress` and awaits cross-confirmation. That is expected.
 
-`apply_audit.py` is the gate. If it records a cross-confirmation disagreement, do not stop by default. Run a fresh judicial third auditor in the same loop using the restricted source packet plus the two prior audit arguments. Apply the judicial JSON through `apply_audit.py`; if the third auditor explicitly sides with the first or second audit, the script accepts the judgment, the pipeline refresh passes, `audit_lint.py --strict` passes, and `git diff --check` passes, treat the resolved judicial review as an ordinary landable audit result and continue the loop.
+`apply_audit.py` is the gate. Critical claims receive two independent audit
+passes through the cross-confirmation flow. If those two passes disagree, do
+not resolve the disagreement with a single judicial third auditor. Run a
+five-judge panel in the same loop using the restricted source packet plus the
+full first-audit and second-audit arguments as explicit context. Each judge
+must run at the required audit model/reasoning level with a distinct auditor
+identity, vote on the full tuple `(sided_with, ratified_verdict,
+ratified_claim_type, ratified_load_bearing_step_class)`, and explain errors in
+the other position. A majority is at least three matching votes out of five.
 
-Only stop for human review when the judicial auditor sides with neither, introduces a three-way disagreement, the tooling rejects the judgment, strict lint fails, or another hard-rule/exceptional routing case remains after the judicial review.
+After a panel majority, go with the majority only if the majority tuple is
+applyable by the audit tooling and the normal gates pass. Apply a representative
+judicial JSON for the majority side, rerun the pipeline, strict lint, and
+`git diff --check`, then land it as the audit result. If the panel has no
+3-of-5 majority, the majority tuple cannot be represented by `apply_audit.py`,
+the tooling rejects it, strict lint fails, or the panel majority sides with
+neither original audit, open/keep a human-review PR and record the panel vote
+breakdown in the PR body or comment. Do not keep retrying individual judges
+after a completed five-judge panel.
+
+Only stop for human review when the five-judge panel is unresolved or
+unapplyable, the tooling rejects the majority judgment, strict lint fails, or
+another hard-rule/exceptional routing case remains after the panel.
 
 If `apply_audit.py` accepts the JSON and `audit_lint.py --strict` passes after the pipeline refresh, land the audit by direct push to `main` for these routine cases:
 
 | Verdict / state | Audit-loop action |
 | --- | --- |
 | First or second `audited_clean` in the cross-confirmation flow | Direct push to `main` |
-| Cross-confirmation disagreement recorded before judicial review | Direct push only if immediately followed by an accepted judicial resolution in the same claim commit; otherwise stop for human review |
-| Judicial third-auditor review that confirms first or second verdict | Direct push to `main` |
+| Cross-confirmation disagreement resolved by a five-judge panel majority that confirms an applyable first or second verdict | Direct push to `main` after applying the majority judicial JSON |
 | `audited_conditional`, `audited_renaming`, `audited_decoration`, or `audited_numerical_match` | Direct push to `main` |
 | `audited_failed` on a non-controversial claim | Direct push to `main` |
 
@@ -308,7 +327,8 @@ Open a PR and flag for human review only when there is an unresolved hard-rule c
 
 | Exception | Audit-loop action |
 | --- | --- |
-| Judicial third auditor sides with neither, creates a three-way disagreement, or leaves the row blocked | Open PR; flag for human |
+| Five-judge panel has no 3-of-5 majority, sides with neither original audit, or produces an unapplyable majority tuple | Open PR; flag for human |
+| Cross-confirmation disagreement exists but the five-judge panel cannot be run with the required context/model | Open PR; flag for human |
 | `apply_audit.py` rejects the verdict JSON or blocks on a hard rule | Open PR; flag for human |
 | `audit_lint.py --strict` fails after applying the verdict | Open PR; flag for human |
 
@@ -347,4 +367,4 @@ After each successful direct-main push:
 2. If time and user intent allow, fetch `origin/main`, refresh the queue, exclude any session-local blocked/skip rows, and start the next claim.
 3. Stop if there is an ambiguous independence issue, source-note hash drift that cannot be resolved mechanically, or an audit requiring domain expertise beyond the provided authorities.
 
-For unresolved exception cases listed above, create a branch/PR instead of pushing to `main`, flag the reason for human review in the PR body, and stop the loop until the human decision lands. Do not stop merely because a third-auditor review occurred; stop only if the review remains unresolved or the tooling/verification gates fail.
+For unresolved exception cases listed above, create a branch/PR instead of pushing to `main`, flag the reason for human review in the PR body, and stop the loop until the human decision lands. Do not stop merely because a five-judge panel occurred; stop only if the panel remains unresolved or the tooling/verification gates fail.

@@ -17829,6 +17829,34 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
+      "from": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "to": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "to": "axiom_first_reeh_schlieder_theorem_note_2026-05-01"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -58262,6 +58290,25 @@
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
     },
+    "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "observable_principle_audit_note_2026-05-02",
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+      ],
+      "note_hash": "59ecd5c88b339ab3008530efb4bb81fa0e07f9e2a97d877e34dd17ca104e6b9d",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
+      "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic Route A External Narrow Bounded Note"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -73284,7 +73331,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 401,
+      "bounded_theorem": 402,
       "decoration": 1,
       "meta": 156,
       "no_go": 53,
@@ -73293,7 +73340,7 @@
       "positive_theorem": 151
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 847,
+      "bounded_theorem": 848,
       "decoration": 1,
       "meta": 156,
       "no_go": 158,
@@ -73301,10 +73348,10 @@
       "open_gate": 123,
       "positive_theorem": 604
     },
-    "edge_count": 9056,
+    "edge_count": 9063,
     "leaf_count": 715,
-    "node_count": 2333,
+    "node_count": 2334,
     "root_count": 839,
-    "runners_with_path": 1944
+    "runners_with_path": 1945
   }
 }

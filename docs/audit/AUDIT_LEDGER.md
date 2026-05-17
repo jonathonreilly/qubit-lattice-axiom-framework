@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 113 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 342 |
+| **retained_bounded** | 343 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1222 |
+| unaudited | 1221 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 567 |
+| `audited_clean` | 568 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1424 |
+| `unaudited` | 1423 |
 
 | claim_type | count |
 |---|---:|
@@ -640,6 +640,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
+| `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_block_normalization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -11765,6 +11766,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Under the old identity-coupling convention, both attractive and repulsive signs remain stable on the tested graph families, so consistency does not select the sign at these parameters.  _(class `D`)_
 - **chain closes:** True — The current runner compares both signs across the three registered families and reports comparable norm drift, bounded energy, stable Phi, comparable spectra, and non-sign-selective force proxies. The conclusion is bounded to the retired identity-coupling convention and tested parameter surface.
 - **rationale:** The negative-control claim closes from the source note and current runner output. It does not claim final sign selection for the corrected parity-coupled scalar channel, and the note states that boundary. Residual risk is only if downstream readers apply this old-convention result to the corrected-coupling lane.
+- **auditor confidence:** high
+
+### `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-185608-41cdea85-u0_plaquette_quartic_der-020`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting L = 4 into the unit-mean condition gives <P>/u_0^4 = 1, hence u_0^4 = <P> and the unique positive solution is u_0 = <P>^{1/4}.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the conclusion follows algebraically from P1 and P2. The audit does not validate P2 itself; it is an explicit hypothesis/admission, not derived in this packet.
+- **rationale:** The load-bearing step is elementary algebra over positive reals: the four link rescalings produce the factor u_0^{-4}, and enforcing unit dressed plaquette expectation fixes the unique positive fourth root. The runner source materially checks this symbolic chain and does not import numerical plaquette values, PDG values, fitted u_0, or a specific gauge group. This is clean only as a bounded theorem conditional on P1 and the admitted P2 principle; it does not close the external physics origin of P2 or any numerical plaquette evaluation.
 - **auditor confidence:** high
 
 ### `unified_basin_freeze_note`

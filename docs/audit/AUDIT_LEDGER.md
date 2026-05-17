@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 332 |
+| **retained_bounded** | 333 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1220 |
+| unaudited | 1219 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 552 |
+| `audited_clean` | 553 |
 | `audited_conditional` | 177 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1417 |
+| `unaudited` | 1416 |
 
 | claim_type | count |
 |---|---:|
@@ -218,6 +218,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_operator_selection_obstruction_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3568,6 +3569,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At second order, the return operator on T_1 decomposes exactly as diag(1,0,0) from O_0 plus diag(0,1,1) from T_2, with total I_3.  _(class `A`)_
 - **chain closes:** True — The bounded operator-geometry claim closes by direct finite matrix algebra over the stated basis, sectors, projectors, and Gamma_1. The note explicitly excludes the physical neutrino Dirac Yukawa theorem, so the open chirality, full C^16 embedding, operator-chain, and normalization bridges are outside the audited clean scope.
 - **rationale:** The runner constructs the 8-dimensional basis, Gamma_1, sector projectors, and projected return operators, then verifies the six load-bearing finite algebraic statements with completed cached output: 6 PASS, 0 FAIL. The claim is not a neutrino Yukawa derivation and does not claim a physical Dirac mass, sector normalization, or full chiral embedding closure. Within the bounded scope of exact weak-axis operator geometry, no hidden comparator, tuned numerical input, renaming, or unrun compute is load-bearing.
+- **auditor confidence:** high
+
+### `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional algebra for the explicit S_cls, T_gamma, and Z_odd matrices on scalar baselines D = m I, including spectra, cubic involutions, and equal baseline-subtracted log-determinant response.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-152527-a5e2dcef-dm_neutrino_codd_bosonic-015`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the explicit matrices, det(m I_4 + j S_cls)/m^4 = det(m I_3 + j T_gamma)/m^3 = det(m I_2 + j Z_odd)/m^2 = 1 - j^2/m^2, hence the baseline-subtracted log-determinant responses all equal log|1 - j^2/m^2|.  _(class `A`)_
+- **chain closes:** True — The source note gives explicit finite matrices and the determinant/spectral identities follow by direct algebra. No cited upstream authority or external physical comparator is required for the bounded scalar-baseline claim.
+- **rationale:** The load-bearing step is a genuine class (A) algebraic identity over explicit matrices, not a definition, renaming, or numerical comparator. The runner source instantiates the matrices directly and computes spectra, cubic identities, symbolic determinants, ratios, curvature, and a non-scalar-baseline counterfactual with exact SymPy operations rather than printing hard-coded pass lines. The clean verdict is limited to the stated finite-dimensional scalar-baseline theorem and does not ratify the parent normalization, branch convention, or observable-principle selection rule.
 - **auditor confidence:** high
 
 ### `dm_neutrino_dirac_bridge_theorem_note_2026-04-15`

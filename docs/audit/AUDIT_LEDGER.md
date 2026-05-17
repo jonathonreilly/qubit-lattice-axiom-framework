@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1230 |
+| unaudited | 1229 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 162 |
+| ~~audited_conditional~~ | 163 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,21 +44,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 162 |
+| `audited_conditional` | 163 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1427 |
+| `unaudited` | 1426 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 928 |
+| `bounded_theorem` | 929 |
 | `decoration` | 20 |
 | `meta` | 199 |
 | `no_go` | 235 |
 | `open_gate` | 110 |
-| `positive_theorem` | 737 |
+| `positive_theorem` | 736 |
 
 | criticality | count |
 |---|---:|
@@ -656,6 +656,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `asymmetry_persistence_born_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1261,6 +1262,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Within the finite primitive-edge class whose local data are only the 16-state primitive cell, source-free state, rank-four projector, locality/additivity, and standard von Neumann or binary measurement entropy, there is no derivation of an entanglement area coefficient equal to 1/4.  _(class `A`)_
 - **chain closes:** True — The chain closes because the canonical entropy values from the stated finite data are computed directly and none equals 1/4 in natural units, while the tuned gapped-edge value requires p_* not fixed by the primitive rank pair (16,4). With no dependencies, there is no unresolved upstream status blocking the scoped no-go.
 - **rationale:** The no-go is scoped to exact finite-cell entropy constructions and a gapped two-level edge example, not to all possible entropy-carrier theorems. The note explicitly distinguishes the primitive trace Tr((I_16/16)P_A)=1/4 from von Neumann and binary entropy values, and the runner reproduces those finite arithmetic checks with current PASS=26 FAIL=0. No hidden physical identification is used to claim a positive entropy coefficient; the conclusion is negative and leaves positive routes open only if they add a selector or operational entropy theorem.
+- **auditor confidence:** high
+
+### `asymmetry_persistence_born_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_BORN_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite corrected-Sorkin Born calibration for the asymmetry-persistence runner on the stated dense N=100, npl=60 probe, with partial cached evidence from the broader default sweep.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131846-20260517T131846Z-4a6e5353-asymmetry_persistence_bo-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the corrected harness, the retained N=100, npl=60 rows at thresholds 0.10 and 0.20 are Born-clean at machine precision for persistence, persistence+LN, and persistence+LN+collapse.  _(class `B`)_
+- **chain closes:** False — The primary runner computes the Sorkin quantity rather than merely printing constants, but its load-bearing graph construction, propagators, persistence pruning, layer normalization, and collapse map are imported helper machinery not provided or closed by any cited retained authority in this restricted packet. The cached stdout is also a timed-out broad sweep and does not include a completed N=100 threshold-0.20 row for the note's stated table.
+- **rationale:** Issue: the finite Born-clean table relies on imported helper scripts and an admitted-context layernorm/persistence propagator bridge that is not closed inside the packet. Why this blocks: without those helper implementations or a retained dependency proving their correctness, the primary runner is a conditional replay over unclosed machinery rather than a first-principles derivation from the axiom. Repair target: include the helper runner sources and either audit their bridge theorem or cite retained dependencies closing graph construction, propagation, persistence pruning, layer normalization, and collapse behavior. Claim boundary until fixed: the packet supports that the displayed primary runner applies the corrected -P(empty) Sorkin formula and that the partial cache is machine-precision in the completed rows, but not an independently closed Born-safety theorem.
+- **open / conditional deps cited:**
+  - `scripts/asymmetry_persistence_collapse_pilot.py`
+  - `scripts/asymmetry_persistence_joint_card.py`
+  - `scripts/gap_topological_asymmetry_layernorm_combo.py`
 - **auditor confidence:** high
 
 ### `asymmetry_persistence_collapse_note`

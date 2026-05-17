@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 158 |
+| ~~audited_conditional~~ | 159 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 158 |
+| `audited_conditional` | 159 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1431 |
+| `unaudited` | 1430 |
 
 | claim_type | count |
 |---|---:|
@@ -763,6 +763,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_alternate_family_scout_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_grown_combined_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_mutual_information_chokepoint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7087,6 +7088,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the current gen_2d_mirror harness and N in {25,40,60,80,100,150,200}, the seed-mean five-observable vector fails the joint operator-Cauchy gate, zero of five components pass the component gate, and four of five components are non-monotone in N.  _(class `C`)_
 - **chain closes:** True — The runner computes the stated harness sweep directly, verifies the Born floor and seed coverage guards, fits the joint and per-component Cauchy decay rates, and exits successfully only when the bounded no-go conditions hold. The imported generator confirms that varying N adds layers at fixed spacing/density rather than refining a fixed physical domain.
 - **rationale:** The claim is narrowly bounded to the current mirror harness and the listed layer-count grid, and the live runner reproduces the cached null result. The no-go does not depend on a timeout, a stale log, or an unsupported universal mirror claim; it is an executable failure of the specified operator-Cauchy gate. Residual risk is only extrapolating beyond this harness or grid, which the note explicitly excludes.
+- **auditor confidence:** high
+
+### `mirror_2d_validation_note`
+
+- **Note:** [`MIRROR_2D_VALIDATION_NOTE.md`](../../docs/MIRROR_2D_VALIDATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded runner-backed exact 2D mirror coexistence table for the stated parameter card, including Born, MI, purity, d_TV, gravity, and the non-promotion of gravity mass/distance laws.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131534-20260517T131534Z-ed5f8dc0-mirror_2d_validation_not-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact 2D mirror family is Born-clean and retains a bounded joint coexistence pocket over N ∈ {25, 40, 60, 80, 100}, with the strongest retained row at N = 60.  _(class `B`)_
+- **chain closes:** False — The primary runner computes the reported table rather than merely printing constants, but it imports the exact mirror generator and linear propagator from scripts/mirror_born_audit.py, whose source/cache is not included in the restricted packet. The packet also includes docs/MIRROR_PROGRAM_SYNTHESIS.md as a cited upstream authority with meta/support status, so retained-grade closure cannot propagate through it.
+- **rationale:** The primary runner source performs nontrivial numerical propagation, Sorkin Born checks, MI/purity/dTV calculations, and gravity summaries matching the cached stdout. However, the load-bearing generator/propagator are imported from a helper runner not supplied here, so the exact-2D-mirror linear-propagator premise is an unclosed dependency in this restricted packet. Additionally, the only cited note supplied upstream is explicitly meta/support and does not propagate retained-grade status.
+- **open / conditional deps cited:**
+  - `MIRROR_PROGRAM_SYNTHESIS.md`
+  - `scripts/mirror_born_audit.py`
 - **auditor confidence:** high
 
 ### `mirror_chokepoint_boundary_fit_note`

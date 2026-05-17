@@ -1,4 +1,4 @@
-# Universal GR Lorentzian Global Atlas Closure on `PL S^3 x R`
+# Universal GR Lorentzian Global Atlas Closure on `PL S^3 x R` (load-bearing claim narrowed to class-A trace identity, 2026-05-17)
 
 **Status:** bounded overlap-covariance check. The note proves a class-A
 algebraic identity — the trace bilinear `B_D(h,k) = -Tr(D^-1 h D^-1 k)` is
@@ -8,30 +8,66 @@ local stationary representatives glue compatibly on overlaps. The "unique
 global stationary section on a finite atlas" statement is **conditional** on
 imported atlas, transition-cocycle, and operator-nondegeneracy hypotheses
 that this note does not close.
-**Date:** 2026-04-14 (audit-narrowing refresh: 2026-05-10)  
+**Date:** 2026-04-14 (audit-narrowing refresh: 2026-05-10; load-bearing
+claim narrowed 2026-05-17 per audit verdict)
 **Branch:** `codex/review-active`  
 **Role:** direct universal route / bounded overlap-covariance assembly
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 
+## 2026-05-17 narrowing — load-bearing claim restricted
+
+The 2026-05-05 audit on this row returned `audited_conditional` with
+verdict:
+
+> Issue: the algebraic trace identity is closed, but the global
+> finite-atlas stationary section statement depends on named imports
+> that are not supplied as cited retained-grade authorities. ... Claim
+> boundary until fixed: exact congruence invariance of B_D is the safe
+> in-note core.
+
+with re-audit guidance:
+
+> missing_dependency_edge: add direct dependency edges for the finite
+> atlas/transition cocycle, chart-wise nondegeneracy of K_GR(D), and
+> source/field-pairing covariance, then re-audit the bounded patching
+> claim; **alternatively split the pure trace identity into its own
+> row** (or narrow this row to the pure trace identity).
+
+This revision narrows the **load-bearing claim** to the **class-A
+trace identity only**: the bilinear `B_D(h,k) = -Tr(D^-1 h D^-1 k)`
+is exactly invariant under invertible congruence `D' = S^T D S`,
+`h' = S^T h S`. The global finite-atlas stationary section
+"bookkeeping consequence" is **demoted to a non-load-bearing
+conditional corollary** explicitly preserved for traceability but not
+a load-bearing claim of this row. The imported atlas, transition
+cocycle, K_GR(D) nondegeneracy, and source/field-pairing covariance
+remain explicitly unsupported imports.
+
 ## Audit boundary
 
 This note does two things:
 
-1. **Class-A algebraic check (closed in-note):** the bilinear
-   `B_D(h,k) = -Tr(D^-1 h D^-1 k)` is exactly invariant under invertible
-   congruence `D' = S^T D S`, `h' = S^T h S`, `k' = S^T k S`. By cyclic
-   permutation, `B_{D'}(h',k') = B_D(h,k)`. Equivalently, the local
-   operator matrices obey `G_{D'} = T_S^{-T} G_D T_S^{-1}`, and the glued
-   operator family transforms by congruence on overlaps. This is exact
-   linear algebra and is closed inside the note.
+1. **Class-A algebraic check (closed in-note; load-bearing 2026-05-17):**
+   the bilinear `B_D(h,k) = -Tr(D^-1 h D^-1 k)` is exactly invariant
+   under invertible congruence `D' = S^T D S`, `h' = S^T h S`,
+   `k' = S^T k S`. By cyclic permutation, `B_{D'}(h',k') = B_D(h,k)`.
+   Equivalently, the local operator matrices obey
+   `G_{D'} = T_S^{-T} G_D T_S^{-1}`, and the glued operator family
+   transforms by congruence on overlaps. This is exact linear algebra
+   and is closed inside the note. **This is the only load-bearing
+   claim of this row as of the 2026-05-17 narrowing.**
 
-2. **Bookkeeping consequence (conditional):** *if* (a) the underlying finite
-   atlas, (b) its transition cocycle, (c) the source/field pairing transforms
-   compatibly chart-by-chart, (d) each local Lorentzian operator is
-   nondegenerate, then compatible local stationary representatives patch
-   compatibly into a global stationary section. The hypotheses (a)-(d) are
-   imported, not closed in this note.
+2. **Bookkeeping consequence (NOT load-bearing; preserved for
+   historical traceability):** *if* (a) the underlying finite atlas,
+   (b) its transition cocycle, (c) the source/field pairing
+   transforms compatibly chart-by-chart, (d) each local Lorentzian
+   operator is nondegenerate, then compatible local stationary
+   representatives patch compatibly into a global stationary section.
+   The hypotheses (a)-(d) are imported, not closed in this note.
+   Per the 2026-05-17 narrowing this bookkeeping consequence is
+   explicitly **non-load-bearing** for this row's audit scope; it is
+   recorded for historical traceability only.
 
 **Admitted authority inputs (cited but not derived in this note):**
 
@@ -47,17 +83,23 @@ If hypotheses (a)-(d) are later upgraded to retained-grade, the bookkeeping
 patching consequence inherits that retention without further repair on this
 row.
 
-## Verdict (scope-bounded)
+## Verdict (scope-bounded; load-bearing claim narrowed 2026-05-17)
 
-Conditional on the imports above, the direct-universal Lorentzian
-operator family transforms by exact congruence covariance on chart overlaps.
-At this bounded scope, the consequence recorded here is a structural-
-assembly statement that compatible local stationary representatives patch
-compatibly into a global stationary section on a finite atlas, conditional
-on the imported atlas and nondegeneracy data.
+**Load-bearing claim of this row (post-2026-05-17 narrowing):** The
+class-A trace identity `B_D(h,k) = -Tr(D^-1 h D^-1 k)` is exactly
+invariant under invertible chart/frame congruence and is exact and
+chart-independent within this note. This is the safe in-note core
+that the 2026-05-05 audit verdict explicitly accepted.
 
-The class-A trace identity itself is exact and chart-independent within
-this note.
+**Non-load-bearing bookkeeping consequence (preserved for traceability,
+but NOT the row's load-bearing claim):** conditional on the imports
+listed in §"Audit boundary" item 2 above, the direct-universal
+Lorentzian operator family transforms by exact congruence covariance
+on chart overlaps, and compatible local stationary representatives
+patch compatibly into a global stationary section on a finite atlas.
+This consequence remains a structural-assembly statement conditional
+on the imported atlas and nondegeneracy data, and is **explicitly not
+load-bearing** for this row's audit scope per the 2026-05-17 narrowing.
 
 ## Exact patching mechanism
 

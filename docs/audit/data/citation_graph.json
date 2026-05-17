@@ -67863,10 +67863,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "cd1bfc58cfb680b2a30239744cc69b6138919b5d2334072eb5973580d9bfc58f",
+      "note_hash": "51e69f9944dccdb2c3fc3fe5d0b64217db240b8654ed343963ea566c02a0c2d3",
       "path": "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md",
       "runner_path": null,
-      "title": "Universal GR Lorentzian Global Atlas Closure on `PL S^3 x R`"
+      "title": "Universal GR Lorentzian Global Atlas Closure on `PL S^3 x R` (load-bearing claim narrowed to class-A trace identity, 2026-05-17)"
     },
     "universal_gr_lorentzian_signature_extension_note": {
       "claim_id": "universal_gr_lorentzian_signature_extension_note",

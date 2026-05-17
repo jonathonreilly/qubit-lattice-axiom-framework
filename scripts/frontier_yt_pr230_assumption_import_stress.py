@@ -371,6 +371,9 @@ def main() -> int:
         "block117_schur_scalar_lsz_strict_artifact_resolver": load(
             "outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json"
         ),
+        "block118_hamming_dirichlet_oh_axis_selector": load(
+            "outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2446,6 +2449,55 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block118_hamming_dirichlet_keeps_imports_clean = (
+        "Block118 native Hamming-Dirichlet selector fixes"
+        in str(
+            certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "block118_hamming_dirichlet_oh_axis_selector_passed"
+        )
+        is True
+        and certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "selector_exact_support"
+        )
+        is True
+        and certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "degree_one_filter_retired_for_axis_selection_only"
+        )
+        is True
+        and certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "action_lsz_and_pole_rows_still_absent"
+        )
+        is True
+        and certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "source_overlap_still_open"
+        )
+        is True
+        and certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "aggregate_gates_still_deny_closure"
+        )
+        is True
+        and all(
+            value is False
+            for value in certificates["block118_hamming_dirichlet_oh_axis_selector"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block118-hamming-dirichlet-keeps-imports-clean",
+        block118_hamming_dirichlet_keeps_imports_clean,
+        certificates["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2782,6 +2834,7 @@ def main() -> int:
         "block115_wz_keeps_imports_clean": block115_wz_keeps_imports_clean,
         "block116_neutral_h3h4_keeps_imports_clean": block116_neutral_h3h4_keeps_imports_clean,
         "block117_schur_scalar_lsz_keeps_imports_clean": block117_schur_scalar_lsz_keeps_imports_clean,
+        "block118_hamming_dirichlet_keeps_imports_clean": block118_hamming_dirichlet_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

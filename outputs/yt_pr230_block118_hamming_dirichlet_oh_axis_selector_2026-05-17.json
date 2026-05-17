@@ -1,0 +1,254 @@
+{
+  "action_lsz_and_pole_rows_still_absent": true,
+  "actual_current_surface_status": "exact support / Block118 native Hamming-Dirichlet selector fixes the PR230 taste-radial O_H axis as the unique lowest cyclic trace-zero finite Dirichlet mode; accepted EW/Higgs action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows remain absent",
+  "admitted_observation_status": null,
+  "aggregate_gates_still_deny_closure": true,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block118_hamming_dirichlet_oh_axis_selector_passed": true,
+  "certificate_kind": "pr230_block118_hamming_dirichlet_oh_axis_selector",
+  "claim_boundary": "Block118 may be used as the finite-axis selector for future O_H/action work. It must not be used to relabel existing C_sx/C_xx rows as C_sH/C_HH or to set kappa_s, c2, Z_match, or g2 to one.",
+  "conditional_surface_status": "source-Higgs support if a future accepted same-surface EW/Higgs action and scalar LSZ/canonical normalization adopt this selected axis as canonical O_H and production physical Euclidean C_ss/C_sH/C_HH(tau) pole rows pass Gram, threshold, FV/IR, contact, and covariance gates",
+  "cube_vertices": [
+    [
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      1,
+      -1
+    ],
+    [
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "degree_one_filter_retired_for_axis_selection_only": true,
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "renamed_C_sx_C_xx_as_C_sH_C_HH": false,
+    "set_c2_equal_one": false,
+    "set_g2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "treated_axis_selector_as_ew_higgs_action": false,
+    "treated_axis_selector_as_scalar_lsz_metric": false,
+    "treated_axis_selector_as_source_overlap": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_reduced_cold_pilots_as_production_evidence": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "hamming_laplacian": [
+    [
+      3.0,
+      -1.0,
+      -1.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -1.0,
+      3.0,
+      0.0,
+      -1.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      -1.0,
+      0.0,
+      3.0,
+      -1.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      -1.0,
+      3.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      3.0,
+      -1.0,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      -1.0,
+      3.0,
+      0.0,
+      -1.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      -1.0,
+      0.0,
+      3.0,
+      -1.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      -1.0,
+      -1.0,
+      3.0
+    ]
+  ],
+  "hypothetical_axiom_status": null,
+  "minimal_allowed_premises": [
+    "the PR230 three-generator source/taste algebra and its primitive idempotent Boolean-cube realization",
+    "the single-generator flip graph on that finite cube as a mathematical Hamming-Dirichlet selector",
+    "the Z3 coordinate cycle acting on the three taste generators",
+    "current PR230 aggregate firewalls that deny action/LSZ/pole-row closure"
+  ],
+  "open_imports_after_block118": [
+    "accepted same-surface EW/Higgs action or canonical operator theorem",
+    "canonical scalar LSZ/kinetic normalization for the selected axis",
+    "production physical Euclidean C_ss/C_sH/C_HH(tau) pole rows",
+    "Gram flatness, threshold, FV/IR, contact, and covariance authority",
+    "source-overlap readout or physical W/Z/neutral bypass"
+  ],
+  "operator_axis_match": {
+    "hs_inner_selected_implemented": 1.0000000000000002,
+    "implemented_taste_radial_hs_norm": 1.0,
+    "selected_minus_implemented_max_abs": 0.0,
+    "selected_operator_hs_norm": 1.0
+  },
+  "parent_statuses": {
+    "block109_frontier_selector": "open / Block109 closure-root frontier selector: positive closure not achieved; next admissible work is a genuine same-surface O_H/action plus source-Higgs pole-row artifact",
+    "block110_action_descent_obstruction": "exact negative boundary / Block110 Cl(3)/Z3 source-taste algebra does not derive accepted EW/Higgs action, canonical O_H, or scalar LSZ metric on the current PR230 surface",
+    "block112_helmholtz_obstruction": "exact negative boundary / Block112 current PR230 response surface lacks Helmholtz mixed-derivative rows for accepted same-source EW/Higgs action",
+    "block114_source_higgs_resolver": "exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact",
+    "block115_wz_resolver": "exact negative boundary / Block115 current PR230 head contains no strict W/Z physical-response packet with accepted action, production rows, matched top-W covariance, strict g2 authority, delta_perp, and final W-response rows",
+    "block116_neutral_resolver": "exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent",
+    "block117_schur_scalar_lsz_resolver": "exact negative boundary / Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact: K-prime pole rows, strict moment/threshold/FV authority, and required source-Higgs/WZ/neutral bridge roots remain absent",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "degree_one_action_premise": "exact negative boundary / degree-one Higgs-action premise not derived on the current PR230 surface",
+    "degree_one_radial_tangent": "exact-support / degree-one radial-tangent O_H uniqueness theorem; same-surface action/LSZ premise and pole rows absent",
+    "fms_oh_candidate_action_packet": "conditional-support / FMS O_H candidate/action packet; current PR230 surface has no adopted same-surface EW/Higgs action, canonical O_H certificate, or C_ss/C_sH/C_HH pole rows",
+    "fms_source_overlap_readout_gate": "exact-support / FMS source-overlap readout gate; action, canonical O_H, and strict C_ss/C_sH/C_HH pole rows absent on current PR230 surface",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached",
+    "source_higgs_direct_pole_contract": "exact-support / direct source-Higgs pole-row contract; O_H and production C_sH/C_HH rows are absent",
+    "source_higgs_pole_acceptance_contract": "open / source-Higgs C_ss/C_sH/C_HH pole-row acceptance contract; strict rows absent on current surface"
+  },
+  "pass_count": 12,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The finite Hamming-Dirichlet selector is an exact axis-selection support artifact only. It does not supply a dynamic EW/Higgs action, canonical scalar LSZ metric, source-overlap rows, W/Z physical-response rows, or retained-route approval.",
+  "selector_exact_support": true,
+  "source_overlap_still_open": true,
+  "spectral_gap_to_next_cyclic_mode": 2.000000000000001,
+  "spectrum": {
+    "basis_rows": {
+      "E1": {
+        "average_norm": 1.7320508075688772,
+        "dirichlet_energy_unit_norm": 2.0,
+        "eigen_residual_max_abs": 8.881784197001252e-16,
+        "laplacian_eigenvalue": 2.0
+      },
+      "E2": {
+        "average_norm": 1.7320508075688772,
+        "dirichlet_energy_unit_norm": 4.000000000000001,
+        "eigen_residual_max_abs": 1.7763568394002505e-15,
+        "laplacian_eigenvalue": 4.000000000000001
+      },
+      "E3": {
+        "average_norm": 1.0,
+        "dirichlet_energy_unit_norm": 6.0,
+        "eigen_residual_max_abs": 0.0,
+        "laplacian_eigenvalue": 6.0
+      },
+      "constant": {
+        "average_norm": 1.0,
+        "dirichlet_energy_unit_norm": 0.0,
+        "eigen_residual_max_abs": 0.0,
+        "laplacian_eigenvalue": 0.0
+      }
+    },
+    "orthogonality_average_inner_products": {
+      "E1:E2": 0.0,
+      "E1:E3": -5.551115123125783e-17,
+      "E2:E3": 0.0,
+      "constant:E1": 0.0,
+      "constant:E2": -5.551115123125783e-17,
+      "constant:E3": 0.0
+    }
+  },
+  "strict_closure_path_presence": {
+    "accepted_canonical_oh": false,
+    "accepted_same_source_ew_higgs_action": false,
+    "canonical_higgs_operator_certificate": false,
+    "neutral_h3h4_certificate": false,
+    "same_source_w_response_rows": false,
+    "source_higgs_pole_rows": false,
+    "source_higgs_production_certificate": false,
+    "strict_schur_feshbach_rows": false
+  },
+  "trace_zero_cyclic_mode_eigenvalues": {
+    "E1": 2.0,
+    "E2": 4.000000000000001,
+    "E3": 6.0
+  },
+  "unique_lowest_cyclic_trace_zero_mode": "E1",
+  "z3_commutes_with_laplacian": true
+}

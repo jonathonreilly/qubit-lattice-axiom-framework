@@ -1,11 +1,56 @@
 # Handoff
 
-Checkpoint: 2026-05-17 Block117
+Checkpoint: 2026-05-17 Block118
 
 Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
+
+## Block118 Hamming-Dirichlet `O_H` Axis Selector
+
+Block118 returns to construction on the top source-Higgs root after the
+strict artifact resolvers.  It realizes the current `Cl(3)/Z3` source/taste
+algebra as functions on the three-generator Boolean cube and applies the
+native single-generator flip Hamming-Dirichlet form.  The cyclic trace-zero
+neutral modes have eigenvalues `2`, `4`, and `6`, so
+`E1 = eps0 + eps1 + eps2` is the unique lowest finite Dirichlet mode.  Under
+the source/taste operator dictionary this is exactly the implemented
+taste-radial axis `(S0+S1+S2)/sqrt(24)`.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_block118_hamming_dirichlet_oh_axis_selector.py`
+- `outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json`
+- `docs/YT_PR230_BLOCK118_HAMMING_DIRICHLET_OH_AXIS_SELECTOR_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_campaign_status_certificate.py`
+- `scripts/frontier_yt_pr230_assumption_import_stress.py`
+
+Validation:
+
+```text
+block118 Hamming-Dirichlet O_H axis selector PASS=12 FAIL=0
+campaign status PASS=438 FAIL=0
+assumption/import stress PASS=121 FAIL=0
+full positive closure assembly PASS=200 FAIL=0
+retained closure route PASS=325 FAIL=0
+positive closure completion audit PASS=79 FAIL=0
+strict audit lint OK: no errors; 5 known warnings
+audit pipeline complete; generated docs/audit churn restored
+git diff --check OK
+```
+
+Honest status: exact support.  The degree-one filter is retired only for
+finite axis selection.  No retained or `proposed_retained` closure is
+authorized because accepted EW/Higgs action, scalar LSZ/canonical
+normalization, source-overlap authority, and strict physical
+`C_ss/C_sH/C_HH(tau)` pole rows remain absent.
+
+Exact next action: use the selected taste-radial axis as the finite `O_H`
+candidate axis, then supply accepted same-surface action/LSZ authority and
+strict physical source-Higgs pole rows with Gram, threshold, FV/IR, contact,
+and covariance authority; or pivot to strict W/Z, neutral H3/H4, or
+Schur/scalar-LSZ physical bridge artifacts.
 
 ## Block117 Schur/Scalar-LSZ Strict Artifact Resolver
 

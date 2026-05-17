@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block117_schur_scalar_lsz_strict_artifact_resolver`.
+Current block: `block118_hamming_dirichlet_oh_axis_selector`.
 
 ```yaml
-actual_current_surface_status: exact negative boundary / Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact: K-prime pole rows, strict moment/threshold/FV authority, and required source-Higgs/WZ/neutral bridge roots remain absent
-conditional_surface_status: Schur/scalar-LSZ support if a future same-surface artifact supplies strict pole coordinate, K-prime derivative or Schur/Feshbach equivalent, source projection numerator, threshold/FV/IR/contact authority, and a canonical O_H/source-overlap or physical W/Z/neutral bridge; neutral support if a future same-surface artifact supplies H3 physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility authority plus H4 source/canonical-Higgs coupling authority; source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority and Helmholtz-symmetric mixed derivatives; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
+actual_current_surface_status: exact support / Block118 native Hamming-Dirichlet selector fixes the PR230 taste-radial O_H axis as the unique lowest cyclic trace-zero finite Dirichlet mode; accepted EW/Higgs action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows remain absent
+conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action and scalar LSZ/canonical normalization adopt the Block118 selected axis as canonical O_H and production physical Euclidean C_ss/C_sH/C_HH(tau) pole rows pass Gram, threshold, FV/IR, contact, and covariance gates; Schur/scalar-LSZ support if a future same-surface artifact supplies strict pole coordinate, K-prime derivative or Schur/Feshbach equivalent, source projection numerator, threshold/FV/IR/contact authority, and a canonical O_H/source-overlap or physical W/Z/neutral bridge; neutral support if a future same-surface artifact supplies H3 physical neutral transfer/off-diagonal generator or primitive-cone/irreducibility authority plus H4 source/canonical-Higgs coupling authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block117 confirms finite Schur A/B/C rows and finite C_ss/C_sx/C_xx packets are support only; no strict K-prime pole-row artifact, scalar-LSZ moment/threshold/FV authority, or physical bridge root is present on the current PR230 head."
+proposal_allowed_reason: "Block118 supplies an exact finite axis selector only. It does not provide accepted EW/Higgs action, scalar LSZ/canonical normalization, source-overlap authority, W/Z/neutral/Schur physical bridge authority, or strict C_ss/C_sH/C_HH pole rows."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,16 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block118 constructs a positive exact-support artifact on the source-Higgs
+   route.  In the current `Cl(3)/Z3` source/taste algebra, the native
+   Boolean-cube Hamming-Dirichlet form has cyclic trace-zero eigenmodes
+   `E1,E2,E3` with eigenvalues `2,4,6`, so `E1=eps0+eps1+eps2` is the unique
+   lowest finite Dirichlet mode.  The runner verifies this axis matches
+   `(S0+S1+S2)/sqrt(24)`, the implemented taste-radial source.  This retires
+   the degree-one filter only as an axis selector.  It still leaves accepted
+   EW/Higgs action, scalar LSZ/canonical normalization, source-overlap
+   authority, strict physical `C_ss/C_sH/C_HH(tau)` pole rows, and aggregate
+   proposal approval absent.
 0. Block117 resolves the strict Schur/scalar-LSZ artifact family against the
    current PR230 head. It finds the complete finite Schur A/B/C packet is
    genuine support only, strict K-prime pole rows absent, scalar-LSZ

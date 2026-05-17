@@ -1,5 +1,26 @@
 # Artifact Plan
 
+Block118 artifacts:
+
+| Artifact | Path | Status |
+|---|---|---|
+| Runner | `scripts/frontier_yt_pr230_block118_hamming_dirichlet_oh_axis_selector.py` | Created; PASS=12 FAIL=0 |
+| Certificate | `outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json` | Created |
+| Support note | `docs/YT_PR230_BLOCK118_HAMMING_DIRICHLET_OH_AXIS_SELECTOR_NOTE_2026-05-17.md` | Created |
+| Loop pack | `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/` | Updated |
+
+Follow-on artifact target after block118:
+
+```text
+outputs/yt_pr230_same_source_ew_higgs_action_certificate_2026-05-17.json
+```
+
+or an equivalent accepted same-surface action/LSZ certificate adopting the
+Block118 finite selected axis as canonical `O_H`, followed by strict physical
+`C_ss/C_sH/C_HH(tau)` pole rows with Gram, threshold, FV/IR, contact, and
+covariance authority.  The Block118 axis selector is exact support only and
+does not relabel existing `C_sx/C_xx` rows.
+
 Block117 artifacts:
 
 | Artifact | Path | Status |

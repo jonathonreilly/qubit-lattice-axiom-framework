@@ -1,24 +1,33 @@
 # Opportunity Queue
 
-Campaign mode queue after block117 Schur/scalar-LSZ strict artifact resolver,
-block116 neutral H3/H4 strict artifact resolver, block115 W/Z strict artifact
-resolver, block114 source-Higgs strict artifact resolver, block113 Schur A/B/C
-complete-packet refresh, block112 Helmholtz action-integrability obstruction,
-block111 Schur K-prime packet gap audit, block110 Cl(3)/Z3 action-descent
-obstruction, block109 closure-root selector, block108 all-ref rescan, block104
-Z3 heat-kernel source-coupling/H4 no-go, block100 W/Z explicit-`v` authority
+Campaign mode queue after block118 Hamming-Dirichlet `O_H` axis selector,
+block117 Schur/scalar-LSZ strict artifact resolver, block116 neutral H3/H4
+strict artifact resolver, block115 W/Z strict artifact resolver, block114
+source-Higgs strict artifact resolver, block113 Schur A/B/C complete-packet
+refresh, block112 Helmholtz action-integrability obstruction, block111 Schur
+K-prime packet gap audit, block110 Cl(3)/Z3 action-descent obstruction,
+block109 closure-root selector, block108 all-ref rescan, block104 Z3
+heat-kernel source-coupling/H4 no-go, block100 W/Z explicit-`v` authority
 firewall, and block99 complete higher-shell finite-packet monotonicity
 boundary.
 
 | Rank | Opportunity | Retained-positive probability | Missing imports | Runner availability | Review landability | Blast radius | Independence | Decision |
 |---:|---|---:|---:|---|---|---|---|---|
-| 1 | Certified `O_H` plus production source-Higgs pole rows with Gram flatness | Medium if a fresh accepted/derived `O_H` artifact or production `C_ss/C_sH/C_HH` row packet appears; blocked on current/fetched stack | 2-3 | Block06 contract, block07 hard-residual gate, block09/block14/block21/block22/block30 aperture checkpoints, block16 open-surface intake, block18 fresh-artifact intake, block19 FMS candidate/action packet, block23 remote-candidate intake, and block28 degree-one `O_H` support intake | Medium | Medium | Direct source-Higgs closure root | Proceed only after the degree-one action premise is made current-surface authority through accepted same-surface `O_H`/EW-Higgs action and production `C_ss/C_sH/C_HH` pole rows. The complete 63/63 finite `C_sx/C_xx` packet and fetched Higgs/EW branches are bounded staging/support only. |
+| 1 | Certified `O_H` plus production source-Higgs pole rows with Gram flatness | Medium if a fresh accepted/derived action/LSZ artifact or production `C_ss/C_sH/C_HH` row packet appears; blocked on current/fetched stack | 2 | Block06 contract, block07 hard-residual gate, block09/block14/block21/block22/block30 aperture checkpoints, block16 open-surface intake, block18 fresh-artifact intake, block19 FMS candidate/action packet, block23 remote-candidate intake, block28 degree-one `O_H` support intake, and block118 Hamming-Dirichlet axis selector | Medium | Medium | Direct source-Higgs closure root | Block118 fixes the finite taste-radial axis without the old degree-one selector premise. Proceed only after accepted same-surface EW/Higgs action and scalar LSZ/canonical normalization adopt that axis as canonical `O_H`, followed by production physical `C_ss/C_sH/C_HH(tau)` pole rows. The complete 63/63 finite `C_sx/C_xx` packet and fetched Higgs/EW branches remain bounded staging/support only. |
 | 2 | Strict W/Z physical-response packet with accepted action | Medium-low if real row/action/covariance artifacts appear; blocked by block11/block15/block18/block23 plus block100 on current/fetched stack | 5-7 | Block05 subtraction contract, block08 W/Z checkpoint, block11 packet intake, block15 additive aggregate wiring, block17 additive-top coarse rows, block18 fresh-artifact intake, block23 remote-candidate intake, and block100 explicit-`v` firewall | High | Medium | W/Z repair | Requires accepted action, canonical `O_H`/sector-overlap authority, production W/Z mass-fit rows, same-source top rows, matched covariance, `delta_perp` authority, final W-response rows, and one allowed absolute pin: strict non-observed `g2`, strict non-forbidden explicit-`v`, or canonical source-response normalization. Existing scout/smoke rows, coarse additive-top rows, fetched non-PR230 Higgs/EW branches, and package hierarchy `v` are non-closure. |
 | 3 | Same-surface neutral primitive/rank-one theorem | Medium-low only with a fresh H3/H4 certificate | 2 | Block07 hard-residual gate, neutral primitive gates, and block10 H3/H4 aperture checkpoint | Medium | Medium | Independent of W/Z covariance and source-Higgs rows | H1/H2 support is loaded, but current finite `C_sx/C_xx` rows do not supply physical transfer. Reopen only with same-surface H3 physical transfer/off-diagonal generator plus H4 source/canonical-Higgs coupling authority. |
 | 4 | Replace finite taste-radial packet with source-Higgs production rows | Medium-low | 3 | Block31 now audits the complete 63/63 finite `C_sx/C_xx` packet | Medium | Medium | Production continuation | The finite packet is complete. The next production move is real canonical `C_ss/C_sH/C_HH` pole rows only after `O_H` is certified; no more finite chunk production is a closure path. |
 | 5 | Replacement radial-spurion action certificate | Medium-low | 2 | Block04 plus block08 W/Z checkpoint | High | Medium | Direct W/Z action repair | Build only if a real same-surface clean radial action artifact exists. |
 | 6 | Same-surface source-radial off-diagonal generator/action row | Medium-low | 2 | Block01 runner gives exact target | High | Small | Direct continuation | Reopen only if a genuine off-diagonal neutral transfer/action artifact appears. |
 | 7 | Strict Schur/Feshbach K-prime row artifact | Low until a new row source exists | 4 | Complete 63/63 packet plus Block99 monotonicity gate, Block111 K-prime packet gap audit, and Block113 complete finite A/B/C support refresh | Medium | Medium | Support-only / shortcut closed | Block113 confirms the finite A/B/C inverse-block artifact is complete and genuine support, while Block111 confirms the complete packet emits no strict K-prime rows. Do not replay finite-row promotion or rerun higher-shell chunks for closure; reopen only with explicit same-surface pole coordinate, strict Schur/Feshbach `A/B/C`, `K'` derivative or `lK'r` equivalent, source projection numerator, and FV/IR/contact authority. |
+
+Block118 is a positive exact-support move inside rank 1.  It replaces the
+old "degree-one" axis selector with a native finite Hamming-Dirichlet theorem:
+inside the current `Cl(3)/Z3` source/taste Boolean cube, the unique lowest
+cyclic trace-zero mode is the implemented taste-radial axis.  This narrows
+the next source-Higgs artifact to action/LSZ plus physical pole rows; it does
+not authorize relabeling existing `C_sx/C_xx` rows as canonical
+`C_sH/C_HH`.
 
 No global stop is justified, but the refreshed queue does not authorize another
 current-surface finite-row shortcut gate, package-`v` W/Z shortcut, path-only

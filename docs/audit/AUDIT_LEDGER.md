@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 9 |
-| ~~audited_conditional~~ | 184 |
+| ~~audited_conditional~~ | 185 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 563 |
-| `audited_conditional` | 184 |
+| `audited_conditional` | 185 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1433 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
@@ -846,6 +846,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11305,6 +11306,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note's load-bearing step is the bounded harness claim that, for the supplied qubit Bell resource rho_RB(v) and independent input-independent classical fault layers, the computed deadline/eventual teleportation fidelities, threshold crossings, trace preservation, and pre-record Bob input-independence behave as reported, without identifying the model with a physical apparatus or matter transport.  _(class `C`)_
 - **chain closes:** True — The source note keeps the claim inside the explicit supplied-resource, independent-fault qubit model, and the runner recomputes the channel, Choi average fidelities, threshold crossings, no-record Bob marginal diagnostics, and trace checks from that model. No one-hop dependencies are required, and the live runner output matches the note's reported numerics.
 - **rationale:** The bounded claim closes for the explicit model. The runner does not derive an apparatus noise law, Bell-resource preparation dynamics, spacetime propagation theorem, or matter/energy transport claim, but the note does not ask for those. Residual risk is only scope discipline: this clean audit applies to the independent-fault qubit-state harness and should not be promoted to a physical-noise derivation or apparatus-level teleportation claim.
+- **auditor confidence:** high
+
+### `teleportation_poisson_resource_sweep_note`
+
+- **Note:** [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](../../docs/TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded default sweep on 1d_N8 and 2d_4x4 surfaces for ordinary quantum-state teleportation using the traced encoded two-qubit Poisson resource.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-183447-41cdea85-teleportation_poisson_re-010`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bounded runner computes that 5/48 non-null sweep rows pass the deterministic high-resource threshold, so the Poisson resource survives as a low-mass/high-coupling parameter window.  _(class `C`)_
+- **chain closes:** False — The primary runner delegates the ground-state construction, logical reduction, teleportation stats, CHSH, and negativity calculations to scripts/frontier_teleportation_resource_from_poisson.py, but that helper source is not included and is incorrectly reported as absent. Without that source, the restricted packet cannot verify that the load-bearing computation is actually first-principles rather than opaque imported premises.
+- **rationale:** Issue: the runner source visibly imports the load-bearing computation from frontier_teleportation_resource_from_poisson, but the helper-runner section says no helper imports were detected and provides no helper source. Why this blocks: stdout and the wrapper runner are not enough to audit whether the Poisson ground state and resource metrics are computed rather than hard-coded or imported from an earlier contested result. Repair target: include scripts/frontier_teleportation_resource_from_poisson.py and its transitive imports in the restricted packet, then rerun or certify the sweep from that complete source. Claim boundary until fixed: the reported parameter-window sweep is plausible runner output, but not independently closed by the provided audit packet; also recheck the stale null-control max-negativity value, which differs between the note and runner output.
+- **open / conditional deps cited:**
+  - `TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md`
 - **auditor confidence:** high
 
 ### `teleportation_resource_fidelity_note`

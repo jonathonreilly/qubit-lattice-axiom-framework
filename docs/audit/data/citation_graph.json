@@ -38773,7 +38773,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "334202150bd3fc3b7219f95413765aac6b835e5eb28dcda2f39cf12f551fb53e",
+      "note_hash": "66b7487a9bb3c8a65c0ebad90bc77be1173f94adb28c0bedc18670d8724b219a",
       "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
       "runner_path": null,
       "title": "Physics Claim Reviewer"
@@ -38866,7 +38866,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ee952b9805bfd0cc88929e2c2c8019008668c200497d726b2f7cc1bf2033df0f",
+      "note_hash": "dda2f2b290598e10d1310284b6c6874d02c3c9e2f429972fd38c55dcf18ea02c",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": null,
       "title": "Review Loop"
@@ -70954,6 +70954,18 @@
       "runner_path": "scripts/frontier_staggered_newton_reproduction.py",
       "title": "Staggered Newton Reproduction on an Open 3D Lattice"
     },
+    "staggered_only_det_positivity_case_a_note_2026-05-17": {
+      "claim_id": "staggered_only_det_positivity_case_a_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem (narrow sub-theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "8bba1d73e1f8543a03089963db6898e42101374d779654f8efc0297ee0b4687c",
+      "path": "docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
+      "runner_path": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py",
+      "title": "Staggered-Only det(M_KS + m\u00b7I) > 0 \u2014 Sub-Theorem Note (Case A standalone)"
+    },
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": {
       "claim_id": "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
       "claim_type_author_hint": "bounded_theorem",
@@ -78083,6 +78095,7 @@
     "staggered_layered_backreaction_note",
     "staggered_newton_blocking_sensitivity_note_2026-04-11",
     "staggered_newton_reproduction_note_2026-04-11",
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16",
     "staggered_self_consistent_two_body_note_2026-04-11",
     "staggered_test_mass_companion_note_2026-04-11",
@@ -78240,7 +78253,7 @@
       "no_go": 56,
       "none": 1533,
       "open_gate": 44,
-      "positive_theorem": 163
+      "positive_theorem": 164
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 884,
@@ -78249,12 +78262,12 @@
       "no_go": 161,
       "none": 449,
       "open_gate": 123,
-      "positive_theorem": 616
+      "positive_theorem": 617
     },
     "edge_count": 9279,
-    "leaf_count": 739,
-    "node_count": 2396,
-    "root_count": 860,
-    "runners_with_path": 2001
+    "leaf_count": 740,
+    "node_count": 2397,
+    "root_count": 861,
+    "runners_with_path": 2002
   }
 }

@@ -20328,6 +20328,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_staggered_newton_reproduction.py"
     },
+    "staggered_only_det_positivity_case_a_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py"
+    },
     "staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
@@ -51690,6 +51702,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/staggered_only_det_positivity_case_a_2026-05-17.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_only_det_positivity_case_a_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/structured_chokepoint_bridge.py": {
       "assert_count": 0,
       "claims": [
@@ -52539,12 +52566,12 @@
     "dominant_class_distribution": {
       "A": 188,
       "B": 257,
-      "C": 718,
+      "C": 719,
       "D": 293,
       "none": 426
     },
-    "runners_classified": 1882,
-    "runners_with_C": 928,
+    "runners_classified": 1883,
+    "runners_with_C": 929,
     "runners_with_D": 538
   }
 }

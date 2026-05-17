@@ -64172,6 +64172,21 @@
       "runner_path": "scripts/poisson_self_gravity_mechanism.py",
       "title": "Poisson Self-Gravity Mechanism Note"
     },
+    "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17": {
+      "claim_id": "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [],
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py",
+        "scripts/poisson_self_gravity_loop.py"
+      ],
+      "note_hash": "9f4eff626a703cf0742d9b28b748f1ecc4c73b4ab97ced7d35fe508884769a9c",
+      "path": "docs/POISSON_SELF_GRAVITY_ZERO_COUPLING_EXACT_REDUCTION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_poisson_self_gravity_zero_coupling_exact_reduction_narrow_2026_05_17.py",
+      "title": "Poisson Self-Gravity Loop \u2014 Zero-Coupling Exact-Reduction Narrow Theorem"
+    },
     "portable_package_hierarchy_classifier_note": {
       "claim_id": "portable_package_hierarchy_classifier_note",
       "claim_type_author_hint": null,
@@ -78261,6 +78276,7 @@
     "pmns_selector_three_identity_support_note_2026-04-21_hostile_audit_findings_note_2026-05-17",
     "pmns_uniform_scalar_deformation_boundary_note",
     "poisson_self_gravity_loop_v3_note",
+    "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17",
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
     "primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10",
     "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
@@ -78530,7 +78546,7 @@
       "no_go": 56,
       "none": 1534,
       "open_gate": 44,
-      "positive_theorem": 166
+      "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 893,
@@ -78539,12 +78555,12 @@
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
-      "positive_theorem": 619
+      "positive_theorem": 620
     },
     "edge_count": 9298,
-    "leaf_count": 752,
-    "node_count": 2411,
-    "root_count": 866,
-    "runners_with_path": 2013
+    "leaf_count": 753,
+    "node_count": 2412,
+    "root_count": 867,
+    "runners_with_path": 2014
   }
 }

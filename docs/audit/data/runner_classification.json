@@ -17340,6 +17340,18 @@
       "dominant_class": null,
       "runner": "scripts/poisson_self_gravity_mechanism.py"
     },
+    "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_poisson_self_gravity_zero_coupling_exact_reduction_narrow_2026_05_17.py"
+    },
     "portable_card_extension_note": {
       "assert_count": 1,
       "counts": {
@@ -25863,6 +25875,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/audit_companion_poisson_self_gravity_zero_coupling_exact_reduction_narrow_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py": {
@@ -52864,11 +52891,11 @@
       "A": 190,
       "B": 259,
       "C": 721,
-      "D": 293,
+      "D": 294,
       "none": 431
     },
-    "runners_classified": 1894,
+    "runners_classified": 1895,
     "runners_with_C": 931,
-    "runners_with_D": 540
+    "runners_with_D": 541
   }
 }

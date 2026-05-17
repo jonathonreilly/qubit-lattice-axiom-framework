@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -36484,12 +36483,12 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.162,
+      "load_bearing_score": 11.664,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -36600,7 +36599,7 @@
       },
       "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
       "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)",
-      "transitive_descendants": 809,
+      "transitive_descendants": 810,
       "verdict_rationale": null
     },
     "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02": {
@@ -153270,6 +153269,57 @@
       "transitive_descendants": 854,
       "verdict_rationale": "Issue: the exact log-det algebra is verified only after selecting the physical scalar generator by admitted additivity/CPT-even/regularity/normalization premises, with P1 still explicitly open and the multiplicative normalization c=1 conventional. Why this blocks: the restricted packet has no retained one-hop theorem deriving that physical observable bridge, and the runner mainly checks consistency of the chosen W rather than forcing the observable class from the axiom alone. Repair target: add a bridge theorem deriving scalar additivity and the normalization/source scale from retained primitives, or keep all downstream citations explicitly conditional on those premises. Claim boundary until fixed: the finite algebra for the selected log|det| generator on the runner block is supported; unconditional axiom-to-observable closure is not."
     },
+    "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 0.0,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "5da6d842bb09e3be4ec3af38440c5480f1379c4c266e6ac84a076b1e0d505e72",
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FRAMEWORK_INTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Framework-Internal Narrow Bounded Note",
+      "transitive_descendants": 0,
+      "verdict_rationale": null
+    },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -153377,12 +153427,12 @@
       "deps": [
         "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "retained_pending_chain",
       "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:chain_waiting_on:cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
       "independence": "cross_family",
       "intrinsic_status": "retained_pending_chain",
-      "load_bearing_score": 11.66,
+      "load_bearing_score": 12.162,
       "load_bearing_step": "Under (X1), (X2), and (X3), any admissible scalar generator F equals c times W[J]=log|det(D+J)|-log|det D| on the real-D block, so its local source-derivative content matches W up to scale.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -153401,7 +153451,7 @@
       },
       "runner_path": "scripts/audit_companion_observable_principle_real_d_block_uniqueness_exact_2026_05_10.py",
       "title": "Observable Principle \u2014 Real-D-Block Generator Uniqueness Narrow Theorem",
-      "transitive_descendants": 808,
+      "transitive_descendants": 809,
       "verdict_rationale": "The proof closes as a conditional algebraic uniqueness result because every non-algebraic selection premise is inside the audited scope rather than hidden. The result does not promote the broad observable-principle parent, since admissibility class (X2), invertibility, and real-D locality remain explicit bounds. Residual risk is only future overcitation outside those bounds, which the note excludes."
     },
     "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16": {
@@ -247183,9 +247233,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2184,
+    "preserved_existing": 2185,
     "re_audit_required": 0,
-    "row_count": 2228,
+    "row_count": 2229,
     "seeded_new": 0
   }
 }

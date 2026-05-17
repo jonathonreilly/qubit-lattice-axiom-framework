@@ -17841,6 +17841,14 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
@@ -58319,6 +58327,20 @@
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
     },
+    "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+      ],
+      "note_hash": "5da6d842bb09e3be4ec3af38440c5480f1379c4c266e6ac84a076b1e0d505e72",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FRAMEWORK_INTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Framework-Internal Narrow Bounded Note"
+    },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -73381,7 +73403,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 404,
+      "bounded_theorem": 405,
       "decoration": 1,
       "meta": 157,
       "no_go": 53,
@@ -73390,7 +73412,7 @@
       "positive_theorem": 153
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 850,
+      "bounded_theorem": 851,
       "decoration": 1,
       "meta": 157,
       "no_go": 158,
@@ -73398,10 +73420,10 @@
       "open_gate": 123,
       "positive_theorem": 606
     },
-    "edge_count": 9061,
-    "leaf_count": 720,
-    "node_count": 2339,
+    "edge_count": 9063,
+    "leaf_count": 721,
+    "node_count": 2340,
     "root_count": 842,
-    "runners_with_path": 1949
+    "runners_with_path": 1950
   }
 }

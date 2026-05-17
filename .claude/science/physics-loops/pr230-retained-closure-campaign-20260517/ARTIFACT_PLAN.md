@@ -213,3 +213,36 @@ Verified at `2026-05-17T16:19:17Z`:
 - Block124 runner: `PASS=10 FAIL=0`
 - campaign status certificate: `PASS=442 FAIL=0`
 - assumption/import stress: `PASS=125 FAIL=0`
+
+## Block125
+
+Working title: PR230 Block125 post-chunk strict contract resolver.
+
+Purpose:
+
+- scan all 63 completed raw production `ensemble_measurement.json` files after
+  the chunk campaign;
+- check whether source-Higgs schema fields hide strict `C_ss/C_sH/C_HH` pole
+  rows or accepted canonical `O_H` authority;
+- check whether W/Z, Schur, or neutral strict row/certificate roots are present
+  on the completed surface;
+- rank the next genuine artifact without promoting finite rows, scout rows, or
+  support contracts.
+
+Files:
+
+- `docs/YT_PR230_BLOCK125_POST_CHUNK_STRICT_CONTRACT_RESOLVER_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block125_post_chunk_strict_contract_resolver.py`
+- `outputs/yt_pr230_block125_post_chunk_strict_contract_resolver_2026-05-17.json`
+
+Result: exact negative boundary.  The raw completed surface contains 693 finite
+source-Higgs rows and 693 scalar LSZ support rows, but zero time-kernel rows,
+zero pole-residue rows, zero W/Z response rows, zero Schur `K'`/pole hits, and
+zero neutral transfer/primitive hits.
+
+Verified at `2026-05-17T16:37:59Z`:
+
+- Block125 py_compile: passed
+- Block125 runner: `PASS=10 FAIL=0`
+- campaign status certificate: `PASS=443 FAIL=0`
+- assumption/import stress: `PASS=126 FAIL=0`

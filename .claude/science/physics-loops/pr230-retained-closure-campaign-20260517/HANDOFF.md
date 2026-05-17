@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block124-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block125-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -10,6 +10,7 @@ Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-fr
 Stacked review PR for Block123: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1450
 Stacked review PR for Block124:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1456
+Stacked review PR for Block125: pending push/PR creation
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -57,11 +58,18 @@ canonical `O_H` identity is recorded, and the Block123 strict pole packet is
 absent.  Reruns: Block124 `PASS=10`, campaign `PASS=442`,
 assumption/import stress `PASS=125`.
 
-Active next work: produce a strict same-surface row artifact with accepted
-canonical `O_H`/action authority and numeric `C_ss/C_sH/C_HH` pole residues,
-then rerun the Block123 readout/Gram/FV/IR/contact and retained-route gates.
-If that cannot be supplied, pivot to genuine same-source W/Z response rows with
-identity/covariance/`g2` authority.
+Block125 refreshes the completed raw post-chunk surface across strict
+source-Higgs, W/Z, Schur, and neutral contracts.  It finds 63/63 raw production
+files, 693 finite source-Higgs rows, and 693 scalar LSZ support rows, but zero
+source-Higgs time-kernel rows, zero pole-residue rows, zero accepted canonical
+identity passes, zero W/Z response rows, zero Schur `K'`/pole hits, and zero
+neutral transfer/primitive hits.  Reruns: Block125 `PASS=10`, campaign
+`PASS=443`, assumption/import stress `PASS=126`.
+
+Active next work: produce accepted canonical `O_H`/action authority with
+nonempty numeric `C_ss/C_sH/C_HH` pole-residue rows.  If that cannot be
+supplied, implement genuine same-source W/Z production response rows with
+matched top covariance and strict non-observed `g2`.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

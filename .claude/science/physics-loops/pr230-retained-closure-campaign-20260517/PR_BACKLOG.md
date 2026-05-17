@@ -9,6 +9,8 @@ Stacked review PR for Block123: https://github.com/jonathonreilly/cl3-lattice-fr
 Stacked review PR for Block124:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1456
 
+Stacked review PR for Block125: pending.
+
 Branch/PR blocks:
 
 - Block120 source-reparametrization invariant minimal-data boundary into PR230
@@ -24,6 +26,9 @@ Branch/PR blocks:
 - Block124 completed source-Higgs row intake on branch
   `physics-loop/pr230-retained-closure-campaign-block124-20260517`, to be
   stacked above Block123.
+- Block125 post-chunk strict contract resolver on branch
+  `physics-loop/pr230-retained-closure-campaign-block125-20260517`, to be
+  stacked above Block124.
 
 Updated PR bodies prepared in `PR_BODY_BLOCK121.md`, `PR_BODY_BLOCK122.md`,
-and `PR_BODY_BLOCK124.md`.
+`PR_BODY_BLOCK124.md`, and `PR_BODY_BLOCK125.md`.

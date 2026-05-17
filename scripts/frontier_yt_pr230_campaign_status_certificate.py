@@ -546,6 +546,9 @@ def main() -> int:
         "pr230_block124_completed_source_higgs_row_intake": load(
             "outputs/yt_pr230_block124_completed_source_higgs_row_intake_2026-05-17.json"
         ),
+        "pr230_block125_post_chunk_strict_contract_resolver": load(
+            "outputs/yt_pr230_block125_post_chunk_strict_contract_resolver_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3255,6 +3258,55 @@ def main() -> int:
         "pr230-block124-completed-source-higgs-row-intake-supports-only",
         block124_completed_source_higgs_row_intake_supports_only,
         statuses["pr230_block124_completed_source_higgs_row_intake"],
+    )
+    block125_post_chunk_strict_contract_resolver_blocks = (
+        "Block125 post-chunk strict contract resolver"
+        in str(statuses["pr230_block125_post_chunk_strict_contract_resolver"])
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"].get(
+            "block125_post_chunk_strict_contract_resolver_passed"
+        )
+        is True
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"]
+        .get("post_chunk_raw_scan", {})
+        .get("raw_file_count")
+        == 63
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"]
+        .get("post_chunk_raw_scan", {})
+        .get("source_higgs_mode_rows")
+        == 693
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"]
+        .get("post_chunk_raw_scan", {})
+        .get("source_higgs_pole_residue_rows")
+        == 0
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"]
+        .get("post_chunk_raw_scan", {})
+        .get("wz_per_source_shift_rows")
+        == 0
+        and certificates["pr230_block125_post_chunk_strict_contract_resolver"].get(
+            "satisfied_route_contracts"
+        )
+        == []
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block125_post_chunk_strict_contract_resolver"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block125-post-chunk-strict-contract-resolver-blocks",
+        block125_post_chunk_strict_contract_resolver_blocks,
+        statuses["pr230_block125_post_chunk_strict_contract_resolver"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9046,6 +9098,9 @@ def main() -> int:
     )
     result["block124_completed_source_higgs_row_intake_supports_only"] = (
         block124_completed_source_higgs_row_intake_supports_only
+    )
+    result["block125_post_chunk_strict_contract_resolver_blocks"] = (
+        block125_post_chunk_strict_contract_resolver_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

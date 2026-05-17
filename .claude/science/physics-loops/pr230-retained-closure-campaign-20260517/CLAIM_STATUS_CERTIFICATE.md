@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: bounded support plus open premise through Block124.
+Status: exact negative boundary plus open premise through Block125.
 
 `proposed_retained`: not allowed.
 
@@ -21,7 +21,11 @@ retained-route gates remain absent. Block124 consumes the completed
 higher-shell packet and confirms the current finite `C_ss/C_sx/C_xx` rows are
 support only: 693 finite rows are present, but `pole_residue_rows=[]`, no
 canonical `O_H` identity is accepted, and the taste-radial alias firewall
-remains explicit.
+remains explicit. Block125 refreshes the completed raw production surface:
+63/63 raw files are present with 693 finite source-Higgs rows and 693 finite
+scalar LSZ support rows, but zero time-kernel rows, zero pole-residue rows,
+zero accepted canonical identity passes, zero W/Z response rows, zero Schur
+`K'`/pole hits, and zero neutral transfer/primitive hits.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -30,6 +34,7 @@ remains explicit.
   packet;
 - no completed-row artifact satisfying Block123: the complete finite
   taste-radial packet is not strict pole-residue evidence;
+- no post-chunk raw artifact satisfying any strict positive route contract;
 - no strict W/Z physical-response packet with accepted action, production rows,
   matched covariance, strict non-observed `g2` or allowed absolute pin,
   `delta_perp`, and final W-response rows;

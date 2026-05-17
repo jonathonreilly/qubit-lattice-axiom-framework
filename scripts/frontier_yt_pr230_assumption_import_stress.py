@@ -386,6 +386,9 @@ def main() -> int:
         "block124_completed_source_higgs_row_intake": load(
             "outputs/yt_pr230_block124_completed_source_higgs_row_intake_2026-05-17.json"
         ),
+        "block125_post_chunk_strict_contract_resolver": load(
+            "outputs/yt_pr230_block125_post_chunk_strict_contract_resolver_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2696,6 +2699,43 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block125_post_chunk_strict_contract_resolver_keeps_imports_clean = (
+        "Block125 post-chunk strict contract resolver"
+        in str(
+            certificates["block125_post_chunk_strict_contract_resolver"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block125_post_chunk_strict_contract_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block125_post_chunk_strict_contract_resolver"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block125_post_chunk_strict_contract_resolver"].get(
+            "satisfied_route_contracts"
+        )
+        == []
+        and certificates["block125_post_chunk_strict_contract_resolver"]
+        .get("objective_completion_audit", {})
+        .get("achieved")
+        is False
+        and all(
+            value is False
+            for value in certificates["block125_post_chunk_strict_contract_resolver"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block125-post-chunk-strict-contract-resolver-keeps-imports-clean",
+        block125_post_chunk_strict_contract_resolver_keeps_imports_clean,
+        certificates["block125_post_chunk_strict_contract_resolver"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3037,6 +3077,7 @@ def main() -> int:
         "block122_hamming_axis_action_lsz_gap_keeps_imports_clean": block122_hamming_axis_action_lsz_gap_keeps_imports_clean,
         "block123_source_higgs_lsz_formula_keeps_imports_clean": block123_source_higgs_lsz_formula_keeps_imports_clean,
         "block124_completed_source_higgs_row_intake_keeps_imports_clean": block124_completed_source_higgs_row_intake_keeps_imports_clean,
+        "block125_post_chunk_strict_contract_resolver_keeps_imports_clean": block125_post_chunk_strict_contract_resolver_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

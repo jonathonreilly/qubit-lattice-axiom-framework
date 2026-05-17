@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 345 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 185 |
+| ~~audited_conditional~~ | 186 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 571 |
-| `audited_conditional` | 185 |
+| `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1444 |
+| `unaudited` | 1443 |
 
 | claim_type | count |
 |---|---:|
@@ -717,6 +717,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_thales_cross_system_cp_ratio_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -2635,6 +2636,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using the spectral decomposition of T/M_T and Cauchy-Schwarz, the connected ground-state correlator is bounded by ||A|| ||B|| exp(-n Delta_T), with the thermal bound obtained by adding a 6 q_beta trace-distance correction.  _(class `A`)_
 - **chain closes:** True — Within the stated finite-block conditional scope, the proof reduces to spectral decomposition, Cauchy-Schwarz, and trace-distance control. It does not derive the transfer-matrix gap or spatial cluster decomposition, but those are explicitly outside the audited claim boundary.
 - **rationale:** The audited claim is only the bounded finite-dimensional implication from an assumed transfer-matrix gap to temporal decay, and that implication closes by standard spectral algebra. The runner constructs random positive Hermitian transfer matrices, checks the spectral identity, ground-state bound, thermal trace-distance bound, and a no-gap counterexample; it does not hard-code a disputed physical gap. The clean boundary is narrow: this does not prove Delta_T > 0 on A_min and does not prove spatial cluster decomposition.
+- **auditor confidence:** high
+
+### `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](../../docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional conditional bridge: assuming a positive Hermitian slab transfer operator T_x with a nondegenerate top eigenvalue and gap Δ_x>0, the ground-state and finite-temperature slab correlator bounds (S.7) and (S.8) follow.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-211508-78dc5814-cluster_decomposition_sp-001`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The connected term expands as Σ_{k≥1}(λ_k/M_x)^d⟨0_x|A_p|k⟩⟨k|B_q|0_x⟩ and Cauchy-Schwarz bounds it by ‖A_p‖‖B_q‖exp(-dΔ_x).  _(class `A`)_
+- **chain closes:** True — The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.
+- **rationale:** The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive Δ_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering.
 - **auditor confidence:** high
 
 ### `complex_action_note`

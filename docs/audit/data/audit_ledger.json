@@ -34094,22 +34094,41 @@
       "verdict_rationale": "The audited claim is only the bounded finite-dimensional implication from an assumed transfer-matrix gap to temporal decay, and that implication closes by standard spectral algebra. The runner constructs random positive Hermitian transfer matrices, checks the spectral identity, ground-state bound, thermal trace-distance bound, and a no-gap counterexample; it does not hard-code a disputed physical gap. The clean boundary is narrow: this does not prove Delta_T > 0 on A_min and does not prove spatial cluster decomposition."
     },
     "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T21:17:34.750748+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "cf163418efcde25ea64c5b31e6785f45da0458b1d2f56d1a7931bfa173dc1f27",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-211508-78dc5814-cluster_decomposition_sp-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.",
       "claim_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional conditional bridge: assuming a positive Hermitian slab transfer operator T_x with a nondegenerate top eigenvalue and gap \u0394_x>0, the ground-state and finite-temperature slab correlator bounds (S.7) and (S.8) follow.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T21:17:34.750748+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -34117,32 +34136,32 @@
         "minimal_axioms_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The connected term expands as \u03a3_{k\u22651}(\u03bb_k/M_x)^d\u27e80_x|A_p|k\u27e9\u27e8k|B_q|0_x\u27e9 and Cauchy-Schwarz bounds it by \u2016A_p\u2016\u2016B_q\u2016exp(-d\u0394_x).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "fa0582483cd13222dba2bdcf86b0d28f16067f64cf8243b3729029535f44be35",
       "note_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop authorities constructing the positive Hermitian spatial slab transfer operator for the canonical Hamiltonian and proving \u0394_x>0, then re-audit any unconditional promotion.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
       "title": "Spatial-Slab Cluster-Decomposition Bridge on physical Cl(3) over Z^3",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive \u0394_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering."
     },
     "cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02": {
       "audit_date": null,

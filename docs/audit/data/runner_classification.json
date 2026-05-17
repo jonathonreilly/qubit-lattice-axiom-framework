@@ -2868,6 +2868,18 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_baryon_qqq_color_singlet_check.py"
     },
+    "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py"
+    },
     "cl3_color_automorphism_theorem": {
       "assert_count": 2,
       "counts": {
@@ -25206,6 +25218,21 @@
       "assert_count": 1,
       "claims": [
         "ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17"
       ],
       "counts": {
         "A": 0,
@@ -52622,9 +52649,9 @@
       "B": 257,
       "C": 720,
       "D": 293,
-      "none": 427
+      "none": 428
     },
-    "runners_classified": 1885,
+    "runners_classified": 1886,
     "runners_with_C": 930,
     "runners_with_D": 538
   }

@@ -4505,6 +4505,10 @@
       "to": "cl3_color_automorphism_theorem"
     },
     {
+      "from": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "cl3_color_automorphism_theorem",
       "to": "native_gauge_closure_note"
     },
@@ -43022,6 +43026,20 @@
       "runner_path": "scripts/cl3_baryon_qqq_color_singlet_check.py",
       "title": "Three-Quark Baryon Color Singlet from Cited Cl(3) Color Structure"
     },
+    "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17": {
+      "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "935e1b8c9b9e6956afb53ec27aff4f54544250d632f73f148805ce867ad9c134",
+      "path": "docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
+      "title": "Cl(3) Central Pseudoscalar Schur Separator Narrow Theorem"
+    },
     "cl3_color_automorphism_theorem": {
       "claim_id": "cl3_color_automorphism_theorem",
       "claim_type_author_hint": "bounded_theorem",
@@ -78312,7 +78330,7 @@
       "no_go": 56,
       "none": 1534,
       "open_gate": 44,
-      "positive_theorem": 165
+      "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 885,
@@ -78321,12 +78339,12 @@
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
-      "positive_theorem": 618
+      "positive_theorem": 619
     },
-    "edge_count": 9283,
-    "leaf_count": 743,
-    "node_count": 2400,
+    "edge_count": 9284,
+    "leaf_count": 744,
+    "node_count": 2401,
     "root_count": 862,
-    "runners_with_path": 2004
+    "runners_with_path": 2005
   }
 }

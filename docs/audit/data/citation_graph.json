@@ -21869,6 +21869,10 @@
       "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
@@ -69426,6 +69430,20 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem"
     },
+    "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
+      "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9e60c9f6e37d471a305cc0c465405cc8bc7c9de76ccde82bf44f126b2641f7cb",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem"
+    },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -76901,7 +76919,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 411,
+      "bounded_theorem": 412,
       "decoration": 1,
       "meta": 157,
       "no_go": 55,
@@ -76910,7 +76928,7 @@
       "positive_theorem": 154
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 858,
+      "bounded_theorem": 859,
       "decoration": 1,
       "meta": 157,
       "no_go": 160,
@@ -76918,10 +76936,10 @@
       "open_gate": 123,
       "positive_theorem": 607
     },
-    "edge_count": 9132,
-    "leaf_count": 718,
-    "node_count": 2350,
+    "edge_count": 9133,
+    "leaf_count": 719,
+    "node_count": 2351,
     "root_count": 844,
-    "runners_with_path": 1961
+    "runners_with_path": 1962
   }
 }

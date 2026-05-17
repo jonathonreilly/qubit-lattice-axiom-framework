@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py
+runner_sha256: 1aedbb16f745ffbf1826e456805d81b6eda8117fa32061998e373148769d8cc5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+========================================================================
+ lattice_noether_carrier_independent_bilateral_identity_narrow
+ Block 27 of filter-excluded-positive-closures-2026-05-17
+
+ Theorem. Bilateral Noether identity holds on the axis-translation-
+ invariant carrier class { c_mu : c_mu(x + mu_hat) = c_mu(x) },
+ with on-shell divergence vanishing for every c_mu in the class
+ and every generator T with [T, M] = 0. Decouples the bilateral
+ identity from the staggered-Dirac realization gate.
+========================================================================
+
+--- Exhibit E1: axis-translation-invariant carrier sweep ---
+  K random axis-inv carriers = 8
+  worst ||[T, M]||_max       = 0.000e+00
+  worst |partial^L J|_max    = 8.465e-16
+  E1 verdict: PASS
+--- Exhibit E2: naive Wilson-free reference (c_mu = 1) ---
+  c_mu(x) = 1 (naive)        : axis-inv trivially
+  ||[T, M]||_max             = 0.000e+00
+  max |partial^L J|          = 8.604e-16
+  E2 verdict: PASS
+--- Exhibit E3: staggered reference (c_mu = eta_mu) ---
+  c_mu(x) = eta_mu(x)        : axis-inv (eta_mu skips x_mu)
+  ||[T, M]||_max             = 0.000e+00
+  max |partial^L J|          = 6.384e-16
+  E3 verdict: PASS
+--- Exhibit E4: explicit third class member (not naive, not staggered) ---
+  c_mu(x) = 1 + 0.3*cos(pi*sum_{nu!=mu} x_nu / L)
+  (strictly axis-inv, not equal to staggered or naive)
+  ||[T, M]||_max             = 0.000e+00
+  max |partial^L J|          = 8.847e-16
+  E4 verdict: PASS
+--- Exhibit E5: axis-inv class = anti-Hermitian carrier class (sharp) ---
+  Axis-inv carrier  (c_mu = eta_mu)        :
+    ||M_off + M_off^T||_max  = 0.000e+00    (=> anti-Hermitian)
+  Non-axis-inv carrier (c_mu = 1+2*(x_mu%2)):
+    ||M_off + M_off^T||_max  = 1.000e+00    (=> NOT anti-Hermitian)
+  Axis-inv <=> anti-Hermitian carrier class: characterization is sharp.
+  E5 verdict: PASS
+--- Exhibit E6: non-identity internal generator T = sigma_3 ---
+  T = I_lattice (x) sigma_3  :  internal-2 doubled chi
+  ||[T, M_full]||_max        = 0.000e+00
+  max |partial^L J|          = 5.621e-16
+  E6 verdict: PASS
+--- Exhibit E7: algebraic Lie-substitution J4 = i * J5 (generic carrier) ---
+  K random carriers checked  = 4
+  max |J4 - i*J5|            = 0.000e+00
+  E7 verdict: PASS
+--- Exhibit E8: carrier-independence on K = 16 distinct axis-inv carriers ---
+  K = 16 distinct axis-inv carriers, on-shell expectation values
+  worst |partial^L J|_max    = 1.207e-15
+  E8 verdict: PASS
+
+========================================================================
+ Summary
+========================================================================
+  E1: PASS
+  E2: PASS
+  E3: PASS
+  E4: PASS
+  E5: PASS
+  E6: PASS
+  E7: PASS
+  E8: PASS
+
+ Overall verdict: PASS

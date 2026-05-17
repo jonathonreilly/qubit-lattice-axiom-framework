@@ -1,12 +1,13 @@
 # Claim Status Certificate
 
-Status: exact negative boundary through Block117.
+Status: exact negative boundary through Block118.
 
 `proposed_retained`: not allowed.
 
 Reason: current PR230 head `4d56838ce` lacks every strict positive disjunct.
-Block117 additionally verifies that the remaining source-coordinate data are
-not enough invariant data for `y_t`:
+Block117 verifies that the remaining source-coordinate data are not enough
+invariant data for `y_t`; Block118 verifies that the strongest complete finite
+Schur A/B/C packet does not determine the strict pole derivative/residue:
 
 - no accepted same-surface EW/Higgs action and canonical `O_H`;
 - no strict physical `C_ss/C_sH/C_HH(tau)` source-Higgs pole rows;
@@ -19,6 +20,8 @@ not enough invariant data for `y_t`:
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an
   allowed W/Z absolute pin is supplied.
+- complete finite Schur A/B/C rows can be held fixed at all current finite
+  nodes while `K'(pole)` and the pole residue change.
 
 Allowed claim language for the current campaign: exact negative boundary,
 bounded support, exact support, open narrowed blocker, or no-go as certified by

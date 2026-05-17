@@ -1,0 +1,140 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block118 complete finite Schur A/B/C packet does not determine strict Schur/Feshbach K-prime pole derivative",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "block118_schur_finite_packet_pole_derivative_nonidentifiability_passed": true,
+  "conditional_surface_status": "Schur route can reopen only with strict same-surface pole rows, or with a model-class/analytic-continuation certificate that fixes the pole derivative from the finite packet plus FV/IR/contact authority and a canonical O_H/source bridge or physical-response bypass",
+  "exact_next_action": "Do not spend more runtime extending finite A/B/C shells as if they could become K-prime authority. The Schur route needs a strict pole-row packet or a certified analytic/model-class theorem fixing K'(pole), plus FV/IR/contact authority and a canonical O_H/source bridge or W/Z physical-response bypass.",
+  "fail_count": 0,
+  "finite_node_vanishing_witness": {
+    "base_kprime_at_pole": 1.0,
+    "base_residue": 1.0,
+    "derivative_shift": -0.026810898919042443,
+    "epsilon": 0.2,
+    "finite_nodes": [
+      0.0,
+      0.267949192431,
+      0.535898384862,
+      0.803847577293,
+      1.0
+    ],
+    "finite_rows_all_match": true,
+    "kprime_changes": true,
+    "perturbed_kprime_at_pole": 0.9731891010809576,
+    "perturbed_residue": 1.0275495264890067,
+    "pole_location": -0.25,
+    "pole_location_preserved": true,
+    "pole_variable": "x=qhat^2 analytic continuation",
+    "residue_changes": true,
+    "rows": [
+      {
+        "A_base": 0.25,
+        "A_perturbed": 0.25,
+        "B_base": 0.0,
+        "B_perturbed": 0.0,
+        "C_base": 1.0,
+        "C_perturbed": 1.0,
+        "finite_rows_match": true,
+        "qhat2": 0.0
+      },
+      {
+        "A_base": 0.517949192431,
+        "A_perturbed": 0.517949192431,
+        "B_base": 0.0,
+        "B_perturbed": 0.0,
+        "C_base": 1.0,
+        "C_perturbed": 1.0,
+        "finite_rows_match": true,
+        "qhat2": 0.267949192431
+      },
+      {
+        "A_base": 0.785898384862,
+        "A_perturbed": 0.785898384862,
+        "B_base": 0.0,
+        "B_perturbed": 0.0,
+        "C_base": 1.0,
+        "C_perturbed": 1.0,
+        "finite_rows_match": true,
+        "qhat2": 0.535898384862
+      },
+      {
+        "A_base": 1.053847577293,
+        "A_perturbed": 1.053847577293,
+        "B_base": 0.0,
+        "B_perturbed": 0.0,
+        "C_base": 1.0,
+        "C_perturbed": 1.0,
+        "finite_rows_match": true,
+        "qhat2": 0.803847577293
+      },
+      {
+        "A_base": 1.25,
+        "A_perturbed": 1.25,
+        "B_base": 0.0,
+        "B_perturbed": 0.0,
+        "C_base": 1.0,
+        "C_perturbed": 1.0,
+        "finite_rows_match": true,
+        "qhat2": 1.0
+      }
+    ]
+  },
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "promoted_finite_abc_rows_to_pole_rows": false,
+    "renamed_c_sx_c_xx_as_c_sh_c_hh": false,
+    "set_c2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_fitted_selector": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_observed_top_or_yukawa": false,
+    "used_observed_wz_or_g2": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "hypothetical_axiom_status": null,
+  "parent_certificates": {
+    "assumption_import_stress": "outputs/yt_pr230_assumption_import_stress_2026-05-01.json",
+    "block111_schur_kprime_gap_audit": "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json",
+    "block113_schur_abc_complete_packet_refresh": "outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json",
+    "block117_invariant_minimal_data": "outputs/yt_pr230_block117_source_reparam_invariant_minimal_data_2026-05-17.json",
+    "block70_schur_feshbach_kprime_theorem": "outputs/yt_pr230_block70_schur_feshbach_kprime_residue_theorem_2026-05-12.json",
+    "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
+    "completion_audit": "outputs/yt_pr230_positive_closure_completion_audit_2026-05-05.json",
+    "fh_lsz_finite_shell_identifiability_no_go": "outputs/yt_fh_lsz_finite_shell_identifiability_no_go_2026-05-02.json",
+    "finite_schur_abc_rows": "outputs/yt_pr230_two_source_taste_radial_schur_abc_finite_rows_2026-05-06.json",
+    "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
+    "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
+    "schur_compressed_denominator_bootstrap_no_go": "outputs/yt_schur_compressed_denominator_row_bootstrap_no_go_2026-05-05.json",
+    "strict_kprime_pole_residue_certificate": "outputs/yt_pr230_strict_kprime_pole_residue_certificate_2026-05-12.json"
+  },
+  "parent_statuses": {
+    "assumption_import_stress": "open / assumption-import stress complete",
+    "block111_schur_kprime_gap_audit": "exact negative boundary / Block111 complete higher-shell packet contains no strict Schur-Feshbach K-prime pole-row emissions",
+    "block113_schur_abc_complete_packet_refresh": "bounded-support / Block113 complete 63/63 finite Schur A/B/C row artifact confirmed; strict Schur/Feshbach pole authority absent",
+    "block117_invariant_minimal_data": "exact negative boundary / Block117 source-reparametrization invariant minimal-data contract is unsatisfied on the current PR230 head",
+    "block70_schur_feshbach_kprime_theorem": "exact-support / Block70 Schur-Feshbach K-prime residue theorem; physical rows absent",
+    "campaign_status": "open / active campaign continuing after current shortcut blocks",
+    "completion_audit": "open / positive closure completion audit: retained closure not achieved",
+    "fh_lsz_finite_shell_identifiability_no_go": "exact negative boundary / FH-LSZ finite-shell pole-fit identifiability no-go",
+    "finite_schur_abc_rows": "bounded-support / finite Schur A/B/C inverse-block rows from two-source taste-radial correlator subblocks; strict pole rows absent",
+    "full_positive_assembly": "open / full positive PR230 closure assembly gate not passed",
+    "retained_route": "open / retained closure not yet reached",
+    "schur_compressed_denominator_bootstrap_no_go": "exact negative boundary / Schur compressed-denominator row-bootstrap no-go",
+    "strict_kprime_pole_residue_certificate": "open / strict K-prime pole-residue certificate rows missing"
+  },
+  "pass_count": 10,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The complete finite A/B/C packet is real support, but finite nodes can be preserved while the Schur/Feshbach pole derivative and residue change. No strict K-prime rows, pole coordinate, FV/IR/contact authority, or canonical source-Higgs bridge are present.",
+  "strict_non_claims": [
+    "does not claim retained or proposed_retained top-Yukawa closure",
+    "does not turn finite A/B/C rows into strict pole rows",
+    "does not relabel C_sx/C_xx as physical C_sH/C_HH rows",
+    "does not identify the taste-radial source with canonical O_H",
+    "does not use H_unit, yt_ward_identity, y_t_bare, observed targets, alpha_LM, plaquette, or u0",
+    "does not set kappa_s, c2, or Z_match by convention"
+  ]
+}

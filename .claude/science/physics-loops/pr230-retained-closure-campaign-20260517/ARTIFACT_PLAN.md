@@ -27,9 +27,11 @@ as exact support only.
 
 ## Gates
 
-Run after Block117:
+Run after Block117 and Block118:
 
 - `python3 scripts/frontier_yt_pr230_block117_source_reparam_invariant_minimal_data.py`
+- `python3 -m py_compile scripts/frontier_yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability.py`
+- `python3 scripts/frontier_yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability.py`
 - `python3 scripts/frontier_yt_pr230_full_positive_closure_assembly_gate.py`
 - `python3 scripts/frontier_yt_retained_closure_route_certificate.py`
 - `python3 scripts/frontier_yt_pr230_positive_closure_completion_audit.py`
@@ -37,9 +39,43 @@ Run after Block117:
 - `python3 scripts/frontier_yt_pr230_assumption_import_stress.py`
 - `git diff --check`
 
+## Block118
+
+Working title: PR230 Block118 Schur finite-packet pole-derivative
+nonidentifiability boundary.
+
+Purpose:
+
+- test the strongest current Schur/Feshbach support packet after Block113;
+- prove that complete finite A/B/C rows at the current finite qhat^2 nodes do
+  not determine strict `K'(pole)` or residue;
+- leave the next exact Schur requirement as strict pole derivative/residue rows
+  or an accepted analytic continuation/model-class plus FV/IR/contact bridge.
+
+Files:
+
+- `docs/YT_PR230_BLOCK118_SCHUR_FINITE_PACKET_POLE_DERIVATIVE_NONIDENTIFIABILITY_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability.py`
+- `outputs/yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability_2026-05-17.json`
+
+Result: exact negative boundary.  The runner constructs a finite-node
+vanishing perturbation that preserves all finite rows and the pole location
+while changing `K'(pole)` and the residue.
+
 Verified at `2026-05-17T15:00:45Z`:
 
 - Block117 runner: `PASS=14 FAIL=0`
+- full positive closure assembly: `PASS=200 FAIL=0`
+- retained-route certificate: `PASS=325 FAIL=0`
+- positive-closure completion audit: `PASS=79 FAIL=0`
+- campaign status certificate: `PASS=436 FAIL=0`
+- assumption/import stress: `PASS=119 FAIL=0`
+- `git diff --check`: passed
+
+Verified at `2026-05-17T15:11:38Z`:
+
+- Block118 py_compile: passed
+- Block118 runner: `PASS=10 FAIL=0`
 - full positive closure assembly: `PASS=200 FAIL=0`
 - retained-route certificate: `PASS=325 FAIL=0`
 - positive-closure completion audit: `PASS=79 FAIL=0`

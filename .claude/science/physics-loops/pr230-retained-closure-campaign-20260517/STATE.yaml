@@ -2,7 +2,7 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T15:00:45Z"
+last_checkpoint_utc: "2026-05-17T15:11:38Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
@@ -12,10 +12,10 @@ latest_pr230_head: "4d56838ce6f2ab668c3987fe664043fd1c8084b4"
 latest_pr230_head_note: "Block116: Add PR230 Block116 neutral H3H4 strict artifact resolver"
 pr230_state: open
 pr230_draft: true
-active_science_block: block117_source_reparam_invariant_minimal_data
-active_route: "action-first canonical O_H / source-coordinate-invariant minimal data"
+active_science_block: block118_schur_finite_packet_pole_derivative_nonidentifiability
+active_route: "Schur/Feshbach finite A/B/C packet to strict pole derivative"
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Block117 source-reparametrization invariant minimal-data contract is unsatisfied on the current PR230 head; no proposed_retained certificate"
+actual_current_surface_status: "exact negative boundary / Block118 complete finite Schur A/B/C packet does not determine strict Schur/Feshbach K-prime pole derivative; proposal remains disallowed"
 proposal_allowed: false
 proposal_allowed_reason: "Current PR230 head has no accepted same-surface canonical O_H/action, no strict physical C_ss/C_sH/C_HH pole rows, no strict W/Z physical-response packet, no strict Schur/Feshbach pole rows, and no strict neutral H3/H4 transfer/source-coupling artifact."
 first_route_decision: "Block115 does not change W/Z from blocked to executable; Block116 also records a neutral H3/H4 strict-artifact absence. The first campaign artifact therefore targets the invariant source/action obstruction that all remaining positive routes must satisfy."
@@ -43,13 +43,25 @@ block117_result:
   fail_count: 0
   proposal_allowed: false
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439"
+block118_result:
+  output: outputs/yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability_2026-05-17.json
+  status: "exact negative boundary"
+  pass_count: 10
+  fail_count: 0
+  proposal_allowed: false
+  witness: "finite-node vanishing perturbation preserves all current finite Schur A/B/C rows and pole location while changing K'(pole) and residue"
+  derivative_shift: -0.026810898919042443
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439"
 verification:
   block117_py_compile: passed
   block117_runner: "PASS=14 FAIL=0"
+  block118_py_compile: passed
+  block118_runner: "PASS=10 FAIL=0"
   full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
   retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
   positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
   campaign_status: "PASS=436 FAIL=0; proposal_allowed=false"
   assumption_import_stress: "PASS=119 FAIL=0; proposal_allowed=false"
   git_diff_check: passed
-next_checkpoint_due_utc: "2026-05-17T15:30:45Z"
+next_exact_action: "Commit and push Block118, update stacked PR #1439, then pivot to the next non-duplicate neutral H3/H4 physical-transfer/source-coupling route unless a fetched strict artifact appears."
+next_checkpoint_due_utc: "2026-05-17T15:41:38Z"

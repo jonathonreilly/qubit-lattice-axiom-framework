@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1239 |
+| unaudited | 1238 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 179 |
+| ~~audited_conditional~~ | 180 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 562 |
-| `audited_conditional` | 179 |
+| `audited_conditional` | 180 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1441 |
+| `unaudited` | 1440 |
 
 | claim_type | count |
 |---|---:|
@@ -778,6 +778,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_expansion_skeptic_audit_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `hard_geometry_head_to_head_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `higgs_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5896,6 +5897,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md`
 - **auditor confidence:** high
+
+### `higgs_mechanism_note`
+
+- **Note:** [`HIGGS_MECHANISM_NOTE.md`](../../docs/HIGGS_MECHANISM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Mechanism-level bounded Higgs support: a finite lattice CW potential with selected O(1)/SM-like inputs exhibits an SSB region and bounded naturalness behavior, while exact Higgs-mass closure is excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-181931-41cdea85-higgs_mechanism_note-001`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The lattice Coleman-Weinberg electroweak symmetry breaking occurs naturally for O(1) comparison inputs on the current bounded runner.  _(class `C`)_
+- **chain closes:** False — The runner performs a nontrivial finite-lattice CW minimization, but only after assuming the scalar Higgs carrier, SM-like field-dependent mass maps, particle DOF, and input couplings/bare parameters. The missing step is a theorem deriving those physical bridges from Cl(3) on Z^3 within the restricted packet.
+- **rationale:** Issue: The mechanism claim relies on treating a lattice scalar order parameter and hard-coded SM-like masses/DOF/couplings as the Higgs CW system, without a cited theorem deriving that bridge from the lattice axiom. Why this blocks: the runner checks a bounded scenario after the physical carrier and inputs have been selected, so it does not close as a framework-native Higgs-mechanism derivation. Repair target: a retained theorem and runner path that constructs the scalar carrier, gauge/Yukawa mass maps, and bare-parameter boundary from Cl(3) on Z^3 before the CW minimization. Claim boundary until fixed: the packet supports conditional mechanism-level consistency, not an audited theorem that the Higgs mechanism is derived.
+- **auditor confidence:** medium
 
 ### `higher_symmetry_gravity_probe_note`
 

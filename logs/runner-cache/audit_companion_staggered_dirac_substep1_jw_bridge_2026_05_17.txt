@@ -1,0 +1,113 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py
+runner_sha256: bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.49
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy verification of (J1)-(J4) JW cross-site CAR bridge
+      given Cl(3) faithful-irrep dim = 2 (gamma_i -> sigma_i)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Cl(3) faithful-irrep building block (cited upstream)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Cl(3) faithful complex irrep carrier dim_C V = 2 (from upstream)  (V = C^2)
+  [PASS (A)] Cl(3) generators satisfy {sigma_i, sigma_j} = 2 delta_{ij} I_2
+  [PASS (A)] sigma_+^2 = 0 on per-site C^2
+  [PASS (A)] sigma_-^2 = 0 on per-site C^2
+  [PASS (A)] {sigma_+, sigma_-} = I_2 on per-site C^2
+  [PASS (A)] {sigma_3, sigma_+} = 0 on per-site C^2
+  [PASS (A)] {sigma_3, sigma_-} = 0 on per-site C^2
+
+----------------------------------------------------------------------------------------
+Part 1: Disjoint-factor commutativity on H_Lambda = V^{N}
+----------------------------------------------------------------------------------------
+  [PASS (A)] All disjoint-factor commutators vanish on H = (C^2)^2  (verified for sigma_1, sigma_+, sigma_3 at all distinct sites)
+  [PASS (A)] All disjoint-factor commutators vanish on H = (C^2)^3  (verified for sigma_1, sigma_+, sigma_3 at all distinct sites)
+
+----------------------------------------------------------------------------------------
+Part 2: JW string S_x has S_x^2 = I_{H_Lambda}
+----------------------------------------------------------------------------------------
+  [PASS (A)] S_x^2 = I_{H_Lambda} for all sites x at N = 2
+  [PASS (A)] S_x^2 = I_{H_Lambda} for all sites x at N = 3
+  [PASS (A)] S_x^2 = I_{H_Lambda} for all sites x at N = 4
+
+----------------------------------------------------------------------------------------
+Part 3: (J2) on-site nilpotency c_x^2 = 0, (c_x^dag)^2 = 0
+----------------------------------------------------------------------------------------
+  [PASS (A)] (J2) c_x^2 = (c_x^dag)^2 = 0 for all sites x at N = 1
+  [PASS (A)] (J2) c_x^2 = (c_x^dag)^2 = 0 for all sites x at N = 2
+  [PASS (A)] (J2) c_x^2 = (c_x^dag)^2 = 0 for all sites x at N = 3
+  [PASS (A)] (J2) c_x^2 = (c_x^dag)^2 = 0 for all sites x at N = 4
+
+----------------------------------------------------------------------------------------
+Part 4: (J1c) on-site {c_x, c_x^dag} = I exact
+----------------------------------------------------------------------------------------
+  [PASS (A)] (J1c on-site) {c_x, c_x^dag} = I_{H_Lambda} for all x at N = 1
+  [PASS (A)] (J1c on-site) {c_x, c_x^dag} = I_{H_Lambda} for all x at N = 2
+  [PASS (A)] (J1c on-site) {c_x, c_x^dag} = I_{H_Lambda} for all x at N = 3
+  [PASS (A)] (J1c on-site) {c_x, c_x^dag} = I_{H_Lambda} for all x at N = 4
+
+----------------------------------------------------------------------------------------
+Part 5: (J1a)-(J1b) cross-site {c_x, c_y} = 0, {c_x^dag, c_y^dag} = 0 for x != y
+----------------------------------------------------------------------------------------
+  [PASS (A)] (J1a) {c_x, c_y} = 0 for all x != y at N = 2
+  [PASS (A)] (J1b) {c_x^dag, c_y^dag} = 0 for all x != y at N = 2
+  [PASS (A)] (J1a) {c_x, c_y} = 0 for all x != y at N = 3
+  [PASS (A)] (J1b) {c_x^dag, c_y^dag} = 0 for all x != y at N = 3
+  [PASS (A)] (J1a) {c_x, c_y} = 0 for all x != y at N = 4
+  [PASS (A)] (J1b) {c_x^dag, c_y^dag} = 0 for all x != y at N = 4
+
+----------------------------------------------------------------------------------------
+Part 6: (J1c) cross-site {c_x, c_y^dag} = 0 for x != y
+----------------------------------------------------------------------------------------
+  [PASS (A)] (J1c cross-site) {c_x, c_y^dag} = 0 for all x != y at N = 2
+  [PASS (A)] (J1c cross-site) {c_x, c_y^dag} = 0 for all x != y at N = 3
+  [PASS (A)] (J1c cross-site) {c_x, c_y^dag} = 0 for all x != y at N = 4
+
+----------------------------------------------------------------------------------------
+Part 7: (J4) per-site number operator n_x = (I - sigma_3^(x))/2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (J4) n_x = c_x^dag c_x = (I - sigma_3^(x))/2 for all x at N = 2
+  [PASS (A)] (J4) Spec(n_x) = {0, 1} at N = 2, site 0  (evals = {0: 2, 1: 2})
+  [PASS (A)] (J4) n_x = c_x^dag c_x = (I - sigma_3^(x))/2 for all x at N = 3
+  [PASS (A)] (J4) Spec(n_x) = {0, 1} at N = 3, site 0  (evals = {0: 4, 1: 4})
+
+----------------------------------------------------------------------------------------
+Part 8: Vacuum and single-particle states on (C^2)^{N}
+----------------------------------------------------------------------------------------
+  [PASS (A)] c_x |0> = 0 for all sites x at N = 2
+  [PASS (A)] c_x^dag |0> != 0 (single-particle state) for all sites x at N = 2
+  [PASS (A)] c_x |0> = 0 for all sites x at N = 3
+  [PASS (A)] c_x^dag |0> != 0 (single-particle state) for all sites x at N = 3
+
+----------------------------------------------------------------------------------------
+Part 9: Total-ordering independence at algebraic level
+----------------------------------------------------------------------------------------
+  [PASS (A)] Ordering pi_0 satisfies (J1)-(J2) CAR exactly at N = 3  (pi = {0: 0, 1: 1, 2: 2})
+  [PASS (A)] Ordering pi_1 satisfies (J1)-(J2) CAR exactly at N = 3  (pi = {0: 2, 1: 0, 2: 1})
+
+----------------------------------------------------------------------------------------
+Part 10: Counter-example check (JW string is load-bearing)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Counter-example: without JW string, {sigma_+^(0), sigma_+^(1)} != 0 at N = 2  (confirms JW string is load-bearing for cross-site anticommutation)
+  [PASS (A)] With JW string, {c_0, c_1} = 0 at N = 2 (confirms fix)
+
+----------------------------------------------------------------------------------------
+Part 11: (J3) CAR-algebra dimension count
+----------------------------------------------------------------------------------------
+  [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 4 at N = 1  (matches dim_C End(H_Lambda) = 4)
+  [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 16 at N = 2  (matches dim_C End(H_Lambda) = 16)
+  [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 64 at N = 3  (matches dim_C End(H_Lambda) = 64)
+
+========================================================================================
+Audit-companion result: PASS=44 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -1,0 +1,18 @@
+==============================================================================
+AUDIT-PREP VERIFIER — signed_gravity_boundary_coframe_chi_probe_note
+==============================================================================
+  [PASS] [A] Parent note exists  (SIGNED_GRAVITY_BOUNDARY_COFRAME_CHI_PROBE_NOTE.md, 6968 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   signed_gravity_nonlocal_boundary_chi_target_note IS cited (>=1 hit)  (hits = 2)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   signed_gravity_chi_selector_theorem_or_nogo_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   signed_gravity_response_backlog_2026-04-25 NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 4 PASS / 0 FAIL
+Class-A pattern hits: 4
+==============================================================================
+
+VERIFIED

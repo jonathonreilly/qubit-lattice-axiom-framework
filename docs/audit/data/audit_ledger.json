@@ -155492,22 +155492,53 @@
       "verdict_rationale": null
     },
     "newton_derivation_top4_bridge_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T18:29:34.850203+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "equivalence_principle_harness_note": "For the fixed 3D ordered-lattice family h=0.5, W=8, L=12, z_mass=5, the harness verifies centroid-shift invariance under global amplitude scaling and strong dependence on normalized packet shape for valley and spent_delay actions.",
+          "matter_inertial_closure_note": "Gaussian source-layer packets with sigma 0.5, 1.0, and 1.5 propagated on the grown-DAG under f(y,z)=-g*z do not satisfy the matter/inertial closure criteria: persistence, Newton-linearity, equivalence-slope invariance, null, and family portability.",
+          "persistent_object_compact_inertial_probe_note_2026-04-16": "Audited the bounded finite-run claim that the top3 compact exact-lattice object carries a stable weak-field response across the four specified nearby cases when allowing the passing broad or adaptive readout per case; not a single-readout, readout-invariant, persistent inertial-mass, or matter-closure claim.",
+          "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "Finite exact-lattice top4 multistage transfer sweep with h=0.25, blend=0.25, top_keep=4, three updates per segment, three chained segments, and exactly the 13 listed widened-pocket cases; support is the reported 11/13 admissible cases with failures at source0p75 and source1p00, excluding full local-pocket universality, persistent inertial-mass closure, and matter closure."
+        },
+        "dep_claim_type": {
+          "equivalence_principle_harness_note": "bounded_theorem",
+          "matter_inertial_closure_note": "no_go",
+          "persistent_object_compact_inertial_probe_note_2026-04-16": "bounded_theorem",
+          "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "equivalence_principle_harness_note": "retained_bounded",
+          "matter_inertial_closure_note": "retained_no_go",
+          "persistent_object_compact_inertial_probe_note_2026-04-16": "retained_bounded",
+          "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16": "retained_bounded"
+        },
+        "deps": [
+          "equivalence_principle_harness_note",
+          "matter_inertial_closure_note",
+          "persistent_object_compact_inertial_probe_note_2026-04-16",
+          "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16"
+        ],
+        "load_bearing_score": 5.307,
+        "runner_hash": "e675f4d8c38c6a867df145626ea4f8b6f9089f51c24514c7773984f2d82de39f",
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260517-182826-41cdea85-newton_derivation_top4_b-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the stated overlap, alpha, and kappa-drift checks, but the conclusion requires identifying that self-sourced response scalar with the inertial quantity in Principle 3. That identification is asserted definitionally, not derived from the cited retained inputs.",
       "claim_id": "newton_derivation_top4_bridge_note",
-      "claim_scope": null,
+      "claim_scope": "Top4 multistage compact-object baseline and cited widened-pocket floor at h=0.25, blend=0.25, top_keep=4, testing persistence, alpha near 1, and kappa drift for the self-sourcing compact-object response.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T18:29:34.850203+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -155518,8 +155549,8 @@
         "matter_inertial_closure_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py",
         "scripts/persistent_object_adaptive_readout_probe.py",
@@ -155529,29 +155560,31 @@
         "scripts/persistent_object_compact_shared.py",
         "scripts/persistent_object_top3_multistage_probe.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 5.307,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The bridge satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification: the parameter s is the unique scalar whose extensivity controls the field, the response, and the persistence simultaneously, and this is exactly the role of one-parameter mass.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f2d87ebe46b84e8be987d5651461381ac83b53992197b3f662955b1bf1d07563",
       "note_path": "docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "Re-check only after a future audit packet includes an external-field compact-object inertial-response theorem or runner that derives the Principle-3 mass identification rather than defining it.",
+      "open_dependency_paths": [
+        "docs/NEWTON_DERIVATION_NOTE.md"
+      ],
       "previous_audits": [],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/newton_derivation_top4_bridge_runner.py",
       "title": "Newton Derivation Top4 Bridge Note (Principle 3 conditional bridge)",
       "transitive_descendants": 27,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the load-bearing step renames the unique self-source strength s and its linear response coefficient as the Principle-3 inertial quantity. Why this blocks: the cited authorities explicitly leave persistent inertial-mass/equivalence-principle closure open, and the runner only verifies operational self-sourced stability, not the physical mass identification. Repair target: a retained theorem or runner deriving generator-invariant inertial response for the compact object, preferably under an external field from a distinct object, from the same primitives. Claim boundary until fixed: the top4 baseline has computed persistence, alpha in band, and stable kappa under the chosen self-sourcing multistage readout."
     },
     "newton_law_derived_note": {
       "audit_date": "2026-05-11T12:11:28.022440+00:00",

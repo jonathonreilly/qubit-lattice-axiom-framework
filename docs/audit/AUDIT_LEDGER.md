@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1234 |
+| unaudited | 1233 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 8 |
+| ~~audited_renaming~~ | 9 |
 | ~~audited_conditional~~ | 182 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -50,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 21 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 8 |
-| `unaudited` | 1436 |
+| `audited_renaming` | 9 |
+| `unaudited` | 1435 |
 
 | claim_type | count |
 |---|---:|
@@ -963,6 +963,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_theta_hierarchy_open_scalar_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7887,6 +7888,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `publication/ci3_z3/DERIVATION_ATLAS.md`
   - `HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md`
   - `HIGGS_MASS_DERIVED_NOTE.md`
+- **auditor confidence:** high
+
+### `newton_derivation_top4_bridge_note`
+
+- **Note:** [`NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Top4 multistage compact-object baseline and cited widened-pocket floor at h=0.25, blend=0.25, top_keep=4, testing persistence, alpha near 1, and kappa drift for the self-sourcing compact-object response.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-182826-41cdea85-newton_derivation_top4_b-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bridge satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification: the parameter s is the unique scalar whose extensivity controls the field, the response, and the persistence simultaneously, and this is exactly the role of one-parameter mass.  _(class `F`)_
+- **chain closes:** False — The runner computes the stated overlap, alpha, and kappa-drift checks, but the conclusion requires identifying that self-sourced response scalar with the inertial quantity in Principle 3. That identification is asserted definitionally, not derived from the cited retained inputs.
+- **rationale:** Issue: the load-bearing step renames the unique self-source strength s and its linear response coefficient as the Principle-3 inertial quantity. Why this blocks: the cited authorities explicitly leave persistent inertial-mass/equivalence-principle closure open, and the runner only verifies operational self-sourced stability, not the physical mass identification. Repair target: a retained theorem or runner deriving generator-invariant inertial response for the compact object, preferably under an external field from a distinct object, from the same primitives. Claim boundary until fixed: the top4 baseline has computed persistence, alpha in band, and stable kappa under the chosen self-sourcing multistage readout.
+- **open / conditional deps cited:**
+  - `NEWTON_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `newton_law_derived_note`

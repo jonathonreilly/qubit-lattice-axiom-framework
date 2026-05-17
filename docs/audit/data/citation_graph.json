@@ -40315,10 +40315,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "4603e862c21d23f2cabc1f2d15ae81b18fc607a131dd7cf88aabadfa23f29e22",
+      "note_hash": "4855907f24071b711552c2d42e46460da91d8824cce748ec60ad0fe9f91ea794",
       "path": "docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md",
       "runner_path": "scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py",
-      "title": "CHIRAL 3+1D Boundary Phase Note"
+      "title": "CHIRAL 3+1D Boundary Phase Note \u2014 Finite-Scan Record (Binding)"
     },
     "chiral_3plus1d_coupled_coin_note": {
       "claim_id": "chiral_3plus1d_coupled_coin_note",
@@ -42558,10 +42558,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "4bcb009c9f9bebb8851bd0cb77fd32233e2b41c18b1ffed6dbb576dd91fb5e51",
+      "note_hash": "b95a9ac7da27e109d101c9815ee1df167da355a42a1f9bdb4f42e11b9f01106b",
       "path": "docs/DIRAC_DECOHERENCE_PROBE_NOTE.md",
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_decoherence_probe.py",
-      "title": "Dirac Decoherence / Record Probe"
+      "title": "Dirac Decoherence / Record Probe \u2014 Finite Runner-Fact (Binding)"
     },
     "dirac_field_smoothing_note": {
       "claim_id": "dirac_field_smoothing_note",
@@ -42569,10 +42569,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [],
-      "note_hash": "a2cff3950651edbeffaf8c8c9d4f1488e374b83965de85ec64aad56331c0ceea",
+      "note_hash": "e571b6c4b6e15d5a5dd223e1d699ddfb896cd63188ae8abaeb148ab8a73f60e4",
       "path": "docs/DIRAC_FIELD_SMOOTHING_NOTE.md",
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py",
-      "title": "Dirac Field Smoothing Note"
+      "title": "Dirac Field Smoothing Note \u2014 Finite m\u2080 = 0.10 Runner Output (Binding)"
     },
     "dirac_observable_panel_note": {
       "claim_id": "dirac_observable_panel_note",
@@ -47496,10 +47496,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "no_go",
       "deps": [],
-      "note_hash": "83f4c0ed18254a8f2fe1d0d8e2ef95fa2d1ffd3993100d7ae960fa36b64dc1ec",
+      "note_hash": "90c2b522f78084cafb7cccc83ea76c0aa709852cf1be974a3c09beb3c2c3aef1",
       "path": "docs/GATE_B_GROWN_PROPAGATING_FIELD_RADICAL_NOTE.md",
       "runner_path": "scripts/gate_b_grown_propagating_field_radical.py",
-      "title": "Gate B Grown Propagating Field Radical Note"
+      "title": "Gate B Grown Propagating Field Radical Note \u2014 One-Seed One-Update Falsifier (Binding)"
     },
     "gate_b_grown_propagating_field_v2_note": {
       "claim_id": "gate_b_grown_propagating_field_v2_note",
@@ -48673,12 +48673,12 @@
       "claim_id": "geometry_lane_head_to_head_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "db466c0490753f48b595137162515c0442c0cc1adefc8118a8e8a1465d5d797d",
+      "note_hash": "a9a8fe9a4d2afdc68b9efdf1ae3a4f222b3f66b9ebd8c48448b1a2f6c4abf61e",
       "path": "docs/GEOMETRY_LANE_HEAD_TO_HEAD_NOTE.md",
       "runner_path": "scripts/geometry_lane_head_to_head.py",
-      "title": "Geometry Lane Head-to-Head Note"
+      "title": "Geometry Lane Head-to-Head Note \u2014 Four-Configuration Runner Table (Binding)"
     },
     "geometry_superposition_dag_ensemble_note_2026-04-11": {
       "claim_id": "geometry_superposition_dag_ensemble_note_2026-04-11",
@@ -54368,16 +54368,16 @@
       "claim_id": "lattice_nn_mass_response_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lattice_nn_continuum_note",
         "lattice_nn_deterministic_rescale_note",
         "lattice_nn_rg_gravity_note"
       ],
-      "note_hash": "ca869a38c8dc89b0d73bb35e8d91799432c1aff84fd04efeb63cc9d252e93027",
+      "note_hash": "fa98ca6a30697dd432e4610dc2efb542cf2c745bba7ba65e82af47c34246a299",
       "path": "docs/LATTICE_NN_MASS_RESPONSE_NOTE.md",
       "runner_path": "scripts/lattice_nn_mass_response.py",
-      "title": "NN Lattice Mass-Response Note"
+      "title": "NN Lattice Mass-Response Note \u2014 h \u2208 {0.5, 0.25, 0.125, 0.0625} Positivity (Binding)"
     },
     "lattice_nn_rg_alpha_sweep_note": {
       "claim_id": "lattice_nn_rg_alpha_sweep_note",
@@ -54976,17 +54976,17 @@
     },
     "linear_response_second_order_kubo_note": {
       "claim_id": "linear_response_second_order_kubo_note",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "linear_response_true_kubo_note",
         "minimal_axioms_2026-05-03"
       ],
-      "note_hash": "a68d0aa00ae229df18101448c76b4acc88ab9200525db07ecfb7fe4125fb78b0",
+      "note_hash": "8ff5e354405b0c11958edeb2e1a40784a6c27b95dc95ab861f0a8d17770eb729",
       "path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
       "runner_path": "scripts/linear_response_second_order_kubo.py",
-      "title": "Second-Order Kubo Extension \u2014 NEGATIVE (Boundary of Taylor-Expansion Approach)"
+      "title": "Second-Order Kubo Extension \u2014 Finite Second-Order Null Replay (Binding)"
     },
     "linear_response_true_kubo_note": {
       "claim_id": "linear_response_true_kubo_note",
@@ -68346,10 +68346,10 @@
         "independent_generators_heldout_note",
         "local_zsym_predictor_note"
       ],
-      "note_hash": "0bd26f69f9f87f5cae485010aa83405e5bc5800a3c550b3cc5091fe40bc819f0",
+      "note_hash": "99ebfaddaa14983a1700944e36613fa5279fc9824443145b287ea940d4be47d6",
       "path": "docs/UNIVERSALITY_CLASSIFIER_NOTE.md",
       "runner_path": "scripts/universality_classifier.py",
-      "title": "Universality Classifier: Empirical Two-Property Predictor on a Wide Family Sweep"
+      "title": "Universality Classifier \u2014 Finite Within-Family Classifier Readout (Binding)"
     },
     "unpromoted_branch_retainability_audit_note": {
       "claim_id": "unpromoted_branch_retainability_audit_note",
@@ -72135,22 +72135,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 394,
+      "bounded_theorem": 395,
       "decoration": 1,
       "meta": 75,
       "no_go": 52,
       "none": 1527,
       "open_gate": 44,
-      "positive_theorem": 153
+      "positive_theorem": 152
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 836,
+      "bounded_theorem": 839,
       "decoration": 1,
       "meta": 75,
       "no_go": 157,
       "none": 445,
       "open_gate": 123,
-      "positive_theorem": 609
+      "positive_theorem": 606
     },
     "edge_count": 9035,
     "leaf_count": 630,

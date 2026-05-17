@@ -1,8 +1,33 @@
-# Gate B Grown Propagating Field Radical Note
+# Gate B Grown Propagating Field Radical Note — One-Seed One-Update Falsifier (Binding)
 
-**Date:** 2026-04-05  
-**Status:** bounded no-go for a beam-sourced self-consistent propagating-field
-architecture on the retained grown row
+**Date:** 2026-04-05 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the one-seed one-update falsifier only; broader fixed-point-convergence / retained-baseline claim split out)
+**Status:** bounded no-go on the one-seed one-update falsifier point
+of the beam-sourced self-consistent propagating-field architecture
+within the retained grown row. The broader claim that fixed-point
+convergence is forbidden across the architecture is **not** in this
+note's binding scope.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"split and audit the clean
+one-seed one-update falsifier separately, or rerun to fixed-point
+convergence and add the missing retained-baseline/weak-field-bar
+dependency edges."*
+
+This revision takes the first option. The binding evidence of this
+note is exactly the **one-seed one-update falsifier output** from
+`scripts/gate_b_grown_propagating_field_radical.py` on the registered
+log: a single seed, single update step demonstrates the falsification
+condition stated in the runner's pass/fail semantics.
+
+The broader claim — that the falsification persists across additional
+seeds, multi-update fixed-point iteration, and across the full
+weak-field-bar baseline class — is **demoted to out-of-binding-scope**.
+Promoting it requires either (a) rerunning to fixed-point convergence
+across the declared baseline class, or (b) adding the missing
+retained-baseline / weak-field-bar dependency edges. Neither is
+supplied here.
 
 **Audit-lane runner update (2026-05-09):** The primary runner `scripts/gate_b_grown_propagating_field_radical.py` previously timed out under the audit-lane 120s default budget; AUDIT_TIMEOUT_SEC=1800 added; runs in 87s under the new budget. The runner's pass/fail semantics are unchanged; this update only ensures the audit-lane sees a complete cache instead of a TIMEOUT row.
 

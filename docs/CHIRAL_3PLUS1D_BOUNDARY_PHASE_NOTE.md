@@ -1,6 +1,23 @@
-# CHIRAL 3+1D Boundary Phase Note
+# CHIRAL 3+1D Boundary Phase Note — Finite-Scan Record (Binding)
 
-Date: 2026-04-10
+Date: 2026-04-10 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the finite scan record only; recurrence-artifact interpretation requires a separately retained boundary/finite-size bridge)
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"split the finite scan result
+into a bounded clean claim, then re-audit the recurrence-artifact
+interpretation only after adding an isolating boundary/finite-size
+bridge theorem or controlled runner."*
+
+This revision implements the splitting. The binding evidence of this
+note is exactly the **finite-scan tabulated results** from
+`scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py` on the
+declared scan grid (boundary classes × propagation modes × `(lambda,
+delta)` cells at `n ∈ {21, 31}`). The §"Interpretation" recurrence-
+artifact reading is **demoted to out-of-binding-scope**; promoting
+that interpretation requires a separately retained isolating
+boundary/finite-size bridge theorem or controlled runner.
 
 This note records the boundary-condition phase scan added in
 `scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py`.

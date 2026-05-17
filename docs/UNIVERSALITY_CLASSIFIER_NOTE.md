@@ -1,6 +1,26 @@
-# Universality Classifier: Empirical Two-Property Predictor on a Wide Family Sweep
+# Universality Classifier — Finite Within-Family Classifier Readout (Binding)
 
-> **2026-04-07 final update:** after four classifier lanes
+> **Scope narrowing (2026-05-17 audited_conditional repair):** The
+> 2026-05-10 audit verdict on this row was `audited_conditional` with
+> repair class `scope_too_broad`, stating: *"Re-audit after narrowing
+> this row to the finite within-family classifier readout plus explicit
+> negative generalization caveats, or after adding a retained
+> theorem/register that enumerates and excludes the relevant
+> simple-classifier universe."*
+>
+> This revision takes the narrowing option. The binding evidence of
+> this note is the **finite within-family classifier readout** on the
+> four declared classifier lanes (node-level 2-prop, local_z_asym,
+> free_coh, free_coh held-out batch 2) and the **explicit negative
+> generalization caveat** that on off-scaffold continuous positions,
+> the best global metric (`free_coh`) drops to 55.6%, matching the
+> old node-level rule. The earlier "scaffolded cross-generator 81%"
+> claim is retained only as **scaffold-specific** descriptive content.
+> No simple-classifier no-go statement enumerating and excluding the
+> relevant classifier universe is claimed by this revision.
+
+> **2026-04-07 final update (retained as historical interpretive
+> context, out of binding scope):** after four classifier lanes
 > (node-level 2-prop, local_z_asym, free_coh, free_coh held-out batch 2),
 > the off-scaffold lane
 > ([`GLOBAL_COHERENCE_OFF_SCAFFOLD_NOTE.md`](GLOBAL_COHERENCE_OFF_SCAFFOLD_NOTE.md))

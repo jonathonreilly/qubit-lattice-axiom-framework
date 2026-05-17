@@ -1,8 +1,31 @@
-# Geometry Lane Head-to-Head Note
+# Geometry Lane Head-to-Head Note — Four-Configuration Runner Table (Binding)
 
-**Date:** 2026-04-02  
-**Status:** support - structural or confirmatory support note
+**Date:** 2026-04-02 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the finite four-configuration runner table; top-lane-selection and same-readout-implementation interpretation requires explicit audited dependency edges)
+**Status:** bounded finite four-configuration runner table only;
+top-lane-selection / same-readout-implementation interpretation is
+out-of-binding-scope without explicit audited dependency edges.
 **Primary runner:** `scripts/geometry_lane_head_to_head.py`
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"split the clean bounded
+core as a finite four-configuration runner table, or add explicit
+audited dependency edges for the top-lane selection and same-readout
+implementation."*
+
+This revision takes the splitting option. The binding evidence of
+this note is exactly the **finite four-configuration runner table**
+from `scripts/geometry_lane_head_to_head.py` on the declared 16
+matched-seed grid (`npl = 25`, `y_range = 12`).
+
+The broader "top-lane selection" interpretation (i.e. promoting one
+lane as the head-to-head winner) and the "same-readout
+implementation" claim across geometry lanes are **demoted to
+out-of-binding-scope**. Promoting either requires explicit audited
+dependency edges for (a) the lane-selection criterion and (b) the
+shared-readout implementation across all compared lanes. Neither
+dependency surface is supplied here.
 
 
 ## Setup

@@ -21471,50 +21471,41 @@
       "verdict_rationale": null
     },
     "chiral_3plus1d_boundary_phase_note": {
-      "audit_date": "2026-05-10T19:07:03.134616+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "49b7ce1ed1d6236d1ca3ca7d45fa7b3fff653cdec214dec7d8a8bd160715780c",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1347-5e91-7c80-874e-bcadf451a576",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner closes the finite sign-table summary, but the causal interpretation as recurrence artifact is stronger than what the restricted packet proves. No bridge theorem shows that changing to reflecting/open boundaries isolates recurrence rather than changing the dynamics, field geometry, absorption/norm behavior, or finite-size sector.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "chiral_3plus1d_boundary_phase_note",
-      "claim_scope": "Finite n=21,31 boundary/mode phase scan for the implemented 3+1D chiral walk and its interpretation of periodic AWAY cells as boundary/recurrence artifacts.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T19:07:03.134616+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The periodic AWAY windows are not primarily a torus-observable artifact; they are mostly boundary-condition / recurrence artifacts because they disappear under reflecting BCs and almost entirely disappear under open/absorbing BCs.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "4603e862c21d23f2cabc1f2d15ae81b18fc607a131dd7cf88aabadfa23f29e22",
+      "note_hash": "4855907f24071b711552c2d42e46460da91d8824cce748ec60ad0fe9f91ea794",
       "note_path": "docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - split the finite scan result into a bounded clean claim, then re-audit the recurrence-artifact interpretation only after adding an isolating boundary/finite-size bridge theorem or controlled runner.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -21557,19 +21548,60 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.832056+00:00",
+          "archived_for_note_hash": "4603e862c21d23f2cabc1f2d15ae81b18fc607a131dd7cf88aabadfa23f29e22",
+          "audit_date": "2026-05-10T19:07:03.134616+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "49b7ce1ed1d6236d1ca3ca7d45fa7b3fff653cdec214dec7d8a8bd160715780c",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1347-5e91-7c80-874e-bcadf451a576",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner closes the finite sign-table summary, but the causal interpretation as recurrence artifact is stronger than what the restricted packet proves. No bridge theorem shows that changing to reflecting/open boundaries isolates recurrence rather than changing the dynamics, field geometry, absorption/norm behavior, or finite-size sector.",
+          "claim_scope": "Finite n=21,31 boundary/mode phase scan for the implemented 3+1D chiral walk and its interpretation of periodic AWAY cells as boundary/recurrence artifacts.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T19:07:03.134616+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The periodic AWAY windows are not primarily a torus-observable artifact; they are mostly boundary-condition / recurrence artifacts because they disappear under reflecting BCs and almost entirely disappear under open/absorbing BCs.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad - split the finite scan result into a bounded clean claim, then re-audit the recurrence-artifact interpretation only after adding an isolating boundary/finite-size bridge theorem or controlled runner.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 450,
+            "D": 0,
+            "total_pass": 450
+          },
+          "verdict_rationale": "Issue: the note promotes a completed finite boundary scan into a causal recurrence-artifact interpretation. Why this blocks: disappearance under altered boundary rules is evidence of boundary sensitivity, but it does not by itself prove recurrence as the operative mechanism or boundary-agnostic instability. Repair target: split a clean bounded finite-grid sign-table claim from the artifact interpretation, or add a theorem/runner isolating recurrence while holding the rest of the dynamics and observable fixed. Claim boundary until fixed: the supplied runner supports only the reported finite grid signs and torus/raw agreement on that grid."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 450,
+        "C": 0,
         "D": 0,
-        "total_pass": 450
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_chiral_3plus1d_boundary_phase_diagram.py",
-      "title": "CHIRAL 3+1D Boundary Phase Note",
+      "title": "CHIRAL 3+1D Boundary Phase Note \u2014 Finite-Scan Record (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the note promotes a completed finite boundary scan into a causal recurrence-artifact interpretation. Why this blocks: disappearance under altered boundary rules is evidence of boundary sensitivity, but it does not by itself prove recurrence as the operative mechanism or boundary-agnostic instability. Repair target: split a clean bounded finite-grid sign-table claim from the artifact interpretation, or add a theorem/runner isolating recurrence while holding the rest of the dynamics and observable fixed. Claim boundary until fixed: the supplied runner supports only the reported finite grid signs and torus/raw agreement on that grid."
+      "verdict_rationale": null
     },
     "chiral_3plus1d_coupled_coin_note": {
       "audit_date": "2026-05-02T18:00:00+00:00",
@@ -39014,50 +39046,41 @@
       "verdict_rationale": "The prior infrastructure blocker is resolved because the runner emits classified C-class PASS lines. The bounded inventory closes on its own terms: the runner reproduces the stated 12/16 integrated core-card score and the same four failures named by the note. This clean audit is limited to the scorecard/inventory claim and does not promote the Dirac lane beyond the note's bounded status because monotone gravity growth, distance law, strict isotropy, and fixed-theta k-achromaticity remain unresolved."
     },
     "dirac_decoherence_probe_note": {
-      "audit_date": "2026-05-10T19:21:34.607995+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "140845fc032813614a8832b5de45b30c733a2f8902f85b2281232fb8f7ef2631",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1354-6baa-73d0-a949-c27a7a1a1b73",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner computes the reported toy-geometry metrics, but the restricted packet does not establish that the single-slit branch-sum construction is the actual Dirac which-path record channel or that the closure-card purity row is the detector concentration proxy used here. The architecture-level diagnosis therefore needs an unprovided readout/record-channel bridge.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dirac_decoherence_probe_note",
-      "claim_scope": "Bounded audit of whether the supplied compact Dirac double-slit runner justifies diagnosing the closure-card decoherence/purity failure as a metric/harness mismatch rather than an architecture failure.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T19:21:34.607995+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The probe supports a harness mismatch diagnosis, not a clear Dirac architecture failure, because the detector proxy stays near 0.06-0.07 while the record-mixture purity is about 0.500 and the clean-vs-record residual is large.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "4bcb009c9f9bebb8851bd0cb77fd32233e2b41c18b1ffed6dbb576dd91fb5e51",
+      "note_hash": "b95a9ac7da27e109d101c9815ee1df167da355a42a1f9bdb4f42e11b9f01106b",
       "note_path": "docs/DIRAC_DECOHERENCE_PROBE_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad \u2014 split out the clean bounded runner fact, then re-audit the broader harness-mismatch diagnosis only after adding a direct closure-card proxy dependency and a Dirac record-channel/readout bridge.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -39100,6 +39123,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.832598+00:00",
+          "archived_for_note_hash": "4bcb009c9f9bebb8851bd0cb77fd32233e2b41c18b1ffed6dbb576dd91fb5e51",
+          "audit_date": "2026-05-10T19:21:34.607995+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "140845fc032813614a8832b5de45b30c733a2f8902f85b2281232fb8f7ef2631",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1354-6baa-73d0-a949-c27a7a1a1b73",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner computes the reported toy-geometry metrics, but the restricted packet does not establish that the single-slit branch-sum construction is the actual Dirac which-path record channel or that the closure-card purity row is the detector concentration proxy used here. The architecture-level diagnosis therefore needs an unprovided readout/record-channel bridge.",
+          "claim_scope": "Bounded audit of whether the supplied compact Dirac double-slit runner justifies diagnosing the closure-card decoherence/purity failure as a metric/harness mismatch rather than an architecture failure.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T19:21:34.607995+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The probe supports a harness mismatch diagnosis, not a clear Dirac architecture failure, because the detector proxy stays near 0.06-0.07 while the record-mixture purity is about 0.500 and the clean-vs-record residual is large.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad \u2014 split out the clean bounded runner fact, then re-audit the broader harness-mismatch diagnosis only after adding a direct closure-card proxy dependency and a Dirac record-channel/readout bridge.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the central proxy-versus-purity gap is computed after defining record purity from isolated single-slit branch weights, while the note uses it as an actual Dirac which-path record readout and as evidence about the current closure-card row. Why this blocks: those observable and harness-identification bridges are not provided by any cited authority, and the runner has no PASS criterion proving that the constructed branch mixture is the same channel the failed harness was meant to test. Repair target: add an audited theorem or dependency tying the 4-component walk, the path-record channel, and the closure-card proxy to the same normalized observable. Claim boundary until fixed: the runner supports only a bounded toy-geometry metric discrepancy for the implemented proxy and implemented branch-weight formula."
         }
       ],
       "runner_check_breakdown": {
@@ -39110,55 +39174,46 @@
         "total_pass": 0
       },
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_decoherence_probe.py",
-      "title": "Dirac Decoherence / Record Probe",
+      "title": "Dirac Decoherence / Record Probe \u2014 Finite Runner-Fact (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the central proxy-versus-purity gap is computed after defining record purity from isolated single-slit branch weights, while the note uses it as an actual Dirac which-path record readout and as evidence about the current closure-card row. Why this blocks: those observable and harness-identification bridges are not provided by any cited authority, and the runner has no PASS criterion proving that the constructed branch mixture is the same channel the failed harness was meant to test. Repair target: add an audited theorem or dependency tying the 4-component walk, the path-record channel, and the closure-card proxy to the same normalized observable. Claim boundary until fixed: the runner supports only a bounded toy-geometry metric discrepancy for the implemented proxy and implemented branch-weight formula."
+      "verdict_rationale": null
     },
     "dirac_field_smoothing_note": {
-      "audit_date": "2026-05-10T19:23:36.537655+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "324f73e90284c7c39141090b4a321dc45160a9c40841d34a0824925b2ddb81fe",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1356-d61f-75a3-9e65-2ce3fcc36385",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The m0=0.10 tables are consistent with the supplied runner stdout and source. The broader conclusion also relies on unprovided m0=0.08 and m0=0.12 spot-check outputs and on an unclosed TOWARD-bias/offset-law readout as the relevant gravity metric.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dirac_field_smoothing_note",
-      "claim_scope": "Finite Dirac-walk source-smoothing scan for the listed profiles at n=29 and m0=0.10, with note-level claims about nearby mass spot checks and gravity-readout interpretation included in scope.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T19:23:36.537655+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "\"Broadening the source field helps the offset-distance law, and the Gaussian control is clearly better than the current localized profile on that metric. It does not fix the N-monotonicity failure...\"",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "a2cff3950651edbeffaf8c8c9d4f1488e374b83965de85ec64aad56331c0ceea",
+      "note_hash": "e571b6c4b6e15d5a5dd223e1d699ddfb896cd63188ae8abaeb148ab8a73f60e4",
       "note_path": "docs/DIRAC_FIELD_SMOOTHING_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - Split the auditable finite m0=0.10 runner-output statement from the unsupported nearby-mass robustness and physical-readout interpretation; then re-audit the broader claim only after adding completed 0.08/0.12 logs and a retained readout bridge.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -39201,6 +39256,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.832641+00:00",
+          "archived_for_note_hash": "a2cff3950651edbeffaf8c8c9d4f1488e374b83965de85ec64aad56331c0ceea",
+          "audit_date": "2026-05-10T19:23:36.537655+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "324f73e90284c7c39141090b4a321dc45160a9c40841d34a0824925b2ddb81fe",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1356-d61f-75a3-9e65-2ce3fcc36385",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The m0=0.10 tables are consistent with the supplied runner stdout and source. The broader conclusion also relies on unprovided m0=0.08 and m0=0.12 spot-check outputs and on an unclosed TOWARD-bias/offset-law readout as the relevant gravity metric.",
+          "claim_scope": "Finite Dirac-walk source-smoothing scan for the listed profiles at n=29 and m0=0.10, with note-level claims about nearby mass spot checks and gravity-readout interpretation included in scope.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T19:23:36.537655+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "\"Broadening the source field helps the offset-distance law, and the Gaussian control is clearly better than the current localized profile on that metric. It does not fix the N-monotonicity failure...\"",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad - Split the auditable finite m0=0.10 runner-output statement from the unsupported nearby-mass robustness and physical-readout interpretation; then re-audit the broader claim only after adding completed 0.08/0.12 logs and a retained readout bridge.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the completed runner evidence only covers the m0=0.10 scan, while the note also claims nearby-mass robustness and interprets the selected TOWARD-bias/offset-law metrics as gravity failures or improvements. Why this blocks: those robustness and physical-readout steps are not closed by any one-hop authority or supplied runner output. Repair target: provide completed m0=0.08 and m0=0.12 run artifacts and a retained bridge theorem for the chosen readout, or split the note to the finite m0=0.10 script-output claim. Claim boundary until fixed: the runner reports the listed finite m0=0.10 biases for the specified code path."
         }
       ],
       "runner_check_breakdown": {
@@ -39211,9 +39307,9 @@
         "total_pass": 0
       },
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py",
-      "title": "Dirac Field Smoothing Note",
+      "title": "Dirac Field Smoothing Note \u2014 Finite m\u2080 = 0.10 Runner Output (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the completed runner evidence only covers the m0=0.10 scan, while the note also claims nearby-mass robustness and interprets the selected TOWARD-bias/offset-law metrics as gravity failures or improvements. Why this blocks: those robustness and physical-readout steps are not closed by any one-hop authority or supplied runner output. Repair target: provide completed m0=0.08 and m0=0.12 run artifacts and a retained bridge theorem for the chosen readout, or split the note to the finite m0=0.10 script-output claim. Claim boundary until fixed: the runner reports the listed finite m0=0.10 biases for the specified code path."
+      "verdict_rationale": null
     },
     "dirac_observable_panel_note": {
       "audit_date": "2026-05-11T16:33:18.999135+00:00",
@@ -78271,50 +78367,41 @@
       "verdict_rationale": "The runner directly checks the load-bearing failure mode: gamma=0 has zero field and amplitude error relative to the static baseline, while nonzero gamma leaves escape at 1.000 to three decimals and produces no coherent detector-line phase ramp. The source note scopes the result as a bounded no-go for one minimal causal-memory update, so it does not overclaim a generated-family transfer or self-consistent propagating field theory. Residual boundary: this clean verdict retains only the negative result for this particular retarded-like field ansatz on the specified grown row."
     },
     "gate_b_grown_propagating_field_radical_note": {
-      "audit_date": "2026-05-10T20:04:11.408478+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "95e6b5a47d525f4eb3e78d9134a8632ab00919910b4383011776da18167ab50d",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e137b-d663-7933-a0d9-531e474114bb",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner does compute the reported finite metrics, and the note matches stdout. The broader self-consistent fixed-point no-go does not close because the code performs only one feedback iteration and the retained baseline/weak-field bar are invoked without cited authority in the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gate_b_grown_propagating_field_radical_note",
-      "claim_scope": "Bounded no-go for the supplied single-seed, retained-row propagating feedback-field runner and its reported phase-ramp, escape, residual, and weak-field-scaling metrics.",
+      "claim_scope": null,
       "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T20:04:11.408478+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The exact reduction passes, but the propagated feedback does not generate a meaningful causal phase ramp or a near-linear weak-field class.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "83f4c0ed18254a8f2fe1d0d8e2ef95fa2d1ffd3993100d7ae960fa36b64dc1ec",
+      "note_hash": "90c2b522f78084cafb7cccc83ea76c0aa709852cf1be974a3c09beb3c2c3aef1",
       "note_path": "docs/GATE_B_GROWN_PROPAGATING_FIELD_RADICAL_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - split and audit the clean one-seed one-update falsifier separately, or rerun to fixed-point convergence and add the missing retained-baseline/weak-field-bar dependency edges.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -78355,6 +78442,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the primary runner timed out during the restricted leaf audit. Why this blocks: the audit cannot verify the load-bearing computation or replay surface from the current registered runner. Repair target: provide a frozen log or a faster/sliced runner that completes under the audit budget and checks the load-bearing step. Claim boundary until fixed: safe to cite as a bounded note whose executable closure is pending."
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.833507+00:00",
+          "archived_for_note_hash": "83f4c0ed18254a8f2fe1d0d8e2ef95fa2d1ffd3993100d7ae960fa36b64dc1ec",
+          "audit_date": "2026-05-10T20:04:11.408478+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "95e6b5a47d525f4eb3e78d9134a8632ab00919910b4383011776da18167ab50d",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e137b-d663-7933-a0d9-531e474114bb",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner does compute the reported finite metrics, and the note matches stdout. The broader self-consistent fixed-point no-go does not close because the code performs only one feedback iteration and the retained baseline/weak-field bar are invoked without cited authority in the restricted packet.",
+          "claim_scope": "Bounded no-go for the supplied single-seed, retained-row propagating feedback-field runner and its reported phase-ramp, escape, residual, and weak-field-scaling metrics.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-10T20:04:11.408478+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The exact reduction passes, but the propagated feedback does not generate a meaningful causal phase ramp or a near-linear weak-field class.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad - split and audit the clean one-seed one-update falsifier separately, or rerun to fixed-point convergence and add the missing retained-baseline/weak-field-bar dependency edges.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the note frames the result as a self-consistent fixed-point retained-row no-go, but the runner uses ITERATIONS=1 and no cited authority is supplied for the retained grown baseline or near-linear weak-field bar. Why this blocks: a one-step single-seed numerical falsifier is weaker than the claimed fixed-point architecture closure, and the baseline/bar cannot be audited from unlisted authorities. Repair target: either split the claim to the exact one-step runner result or add an audited convergence runner plus direct dependencies for the retained baseline and weak-field criterion. Claim boundary until fixed: the supplied runner reports flat phase/escape response and F~M\u22480.256 for seed 0 under one feedback update."
         }
       ],
       "runner_check_breakdown": {
@@ -78365,9 +78493,9 @@
         "total_pass": 0
       },
       "runner_path": "scripts/gate_b_grown_propagating_field_radical.py",
-      "title": "Gate B Grown Propagating Field Radical Note",
+      "title": "Gate B Grown Propagating Field Radical Note \u2014 One-Seed One-Update Falsifier (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the note frames the result as a self-consistent fixed-point retained-row no-go, but the runner uses ITERATIONS=1 and no cited authority is supplied for the retained grown baseline or near-linear weak-field bar. Why this blocks: a one-step single-seed numerical falsifier is weaker than the claimed fixed-point architecture closure, and the baseline/bar cannot be audited from unlisted authorities. Repair target: either split the claim to the exact one-step runner result or add an audited convergence runner plus direct dependencies for the retained baseline and weak-field criterion. Claim boundary until fixed: the supplied runner reports flat phase/escape response and F~M\u22480.256 for seed 0 under one feedback update."
+      "verdict_rationale": null
     },
     "gate_b_grown_propagating_field_v2_note": {
       "audit_date": "2026-04-27",
@@ -89732,50 +89860,41 @@
       "verdict_rationale": "The load-bearing step is a finite-dimensional algebraic closure check on explicitly supplied 3x3 operators, not a numerical fit, external comparison, or renaming. The source code performs actual linear-algebra computations for rank, generated algebra dimension, and commutant dimension rather than merely printing expected constants. Under the note's narrow scope, the conclusion follows on its own terms."
     },
     "geometry_lane_head_to_head_note": {
-      "audit_date": "2026-05-10T20:08:31.012721+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "a241c8841a0cb7f4c42964c3d07e3c32a8b48c2c46ed73ada597842d6d6b8dc5",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e137f-7caf-7360-a7c9-fd5786758087",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The supplied stdout supports the finite four-configuration table, but the broader claim that these are the best/top bounded geometry lanes and that the modular and central-band routines implement the same readout is not closed by any cited authority. The primary runner delegates the load-bearing metric definitions to imported modules not included in the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "geometry_lane_head_to_head_note",
-      "claim_scope": "Finite matched-seed comparison of four bounded geometry configurations at N=25,40,60,80,100 using the supplied runner's pur_min, gravity mean, and g/SE readouts.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T20:08:31.012721+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "\"There is no single universal winner across the whole matched sweep\" and the repo should keep both imposed modular gap + layer norm and simple central-band removal + layer norm as top bounded geometry lanes.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "db466c0490753f48b595137162515c0442c0cc1adefc8118a8e8a1465d5d797d",
+      "note_hash": "a9a8fe9a4d2afdc68b9efdf1ae3a4f222b3f66b9ebd8c48448b1a2f6c4abf61e",
       "note_path": "docs/GEOMETRY_LANE_HEAD_TO_HEAD_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the clean bounded core as a finite four-configuration runner table, or add explicit audited dependency edges for the top-lane selection and same-readout implementation.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -89841,19 +89960,60 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: no primary runner or retained one-hop proof artifact is registered for this leaf row. Why this blocks: the audit packet does not expose an independently checkable load-bearing computation. Repair target: register a runner/proof note for the load-bearing step or cite an audited retained dependency. Claim boundary until fixed: safe to cite as a support note without audit-ratified executable closure."
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.833702+00:00",
+          "archived_for_note_hash": "db466c0490753f48b595137162515c0442c0cc1adefc8118a8e8a1465d5d797d",
+          "audit_date": "2026-05-10T20:08:31.012721+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "a241c8841a0cb7f4c42964c3d07e3c32a8b48c2c46ed73ada597842d6d6b8dc5",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e137f-7caf-7360-a7c9-fd5786758087",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The supplied stdout supports the finite four-configuration table, but the broader claim that these are the best/top bounded geometry lanes and that the modular and central-band routines implement the same readout is not closed by any cited authority. The primary runner delegates the load-bearing metric definitions to imported modules not included in the restricted packet.",
+          "claim_scope": "Finite matched-seed comparison of four bounded geometry configurations at N=25,40,60,80,100 using the supplied runner's pur_min, gravity mean, and g/SE readouts.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T20:08:31.012721+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "\"There is no single universal winner across the whole matched sweep\" and the repo should keep both imposed modular gap + layer norm and simple central-band removal + layer norm as top bounded geometry lanes.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the clean bounded core as a finite four-configuration runner table, or add explicit audited dependency edges for the top-lane selection and same-readout implementation.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 20,
+            "D": 0,
+            "total_pass": 20
+          },
+          "verdict_rationale": "Issue: the note's numerical table is a bounded runner summary, but its practical conclusion promotes the two families as top bounded geometry lanes and assumes readout equivalence across separate imported implementations. Why this blocks: no one-hop authority or supplied code closes the lane-selection criterion or verifies that run_joint, run_pur_min, and run_gravity compute identical layer-normalized observables. Repair target: narrow the claim to the four-config finite benchmark or add audited dependencies/source for lane selection and readout equivalence. Claim boundary until fixed: the supplied packet supports only the descriptive matched-sweep stdout values."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 20,
+        "C": 0,
         "D": 0,
-        "total_pass": 20
+        "total_pass": 0
       },
       "runner_path": "scripts/geometry_lane_head_to_head.py",
-      "title": "Geometry Lane Head-to-Head Note",
+      "title": "Geometry Lane Head-to-Head Note \u2014 Four-Configuration Runner Table (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the note's numerical table is a bounded runner summary, but its practical conclusion promotes the two families as top bounded geometry lanes and assumes readout equivalence across separate imported implementations. Why this blocks: no one-hop authority or supplied code closes the lane-selection criterion or verifies that run_joint, run_pur_min, and run_gravity compute identical layer-normalized observables. Repair target: narrow the claim to the four-config finite benchmark or add audited dependencies/source for lane selection and readout equivalence. Claim boundary until fixed: the supplied packet supports only the descriptive matched-sweep stdout values."
+      "verdict_rationale": null
     },
     "geometry_superposition_dag_ensemble_note_2026-04-11": {
       "audit_date": "2026-05-11T16:56:57.088386+00:00",
@@ -127932,49 +128092,24 @@
       "verdict_rationale": "The live claim is only a finite graph/DAG forward-reachability bound, not an emergent-relativity or physical light-cone result. Within that boundary, the proof is a standard induction on ticks and uses no hidden bridge beyond the declared R-locality premise. The runner completed and checks representative dependency-support recurrences with explicit non-claim guards."
     },
     "lattice_nn_mass_response_note": {
-      "audit_date": "2026-05-10T20:36:20.076130+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "lattice_nn_continuum_note": "Bounded finite-spacing computational claim for the raw nearest-neighbor harness on H_finite = {2.0, 1.0, 0.5, 0.25}: finite gravity, k=0, MI, classical purity, total-variation, and Born rows, with Born residual < 1e-10 and h = 0.125/continuum explicitly outside the claimed window.",
-          "lattice_nn_deterministic_rescale_note": "Finite computational claim only: for the exact supplied runner, constants, lattice geometry, slit construction, propagation rule, and tested spacings down to h=0.0625, the deterministic geometry-only rescale schedule keeps the Born diagnostic machine-clean and yields the printed observable rows. It does not establish a continuum theory or physical interpretation beyond this finite tested surface.",
-          "lattice_nn_rg_gravity_note": "Audited the bounded computational claim that the raw nearest-neighbor lattice has a Born-clean finite refinement window through h = 0.25 and that fixed, 1/h, and 1/sqrt(h) strength schedules do not establish a clean RG/continuum continuation past the shared h = 0.125 failure."
-        },
-        "dep_claim_type": {
-          "lattice_nn_continuum_note": "bounded_theorem",
-          "lattice_nn_deterministic_rescale_note": "bounded_theorem",
-          "lattice_nn_rg_gravity_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "lattice_nn_continuum_note": "retained_bounded",
-          "lattice_nn_deterministic_rescale_note": "retained_bounded",
-          "lattice_nn_rg_gravity_note": "retained_bounded"
-        },
-        "deps": [
-          "lattice_nn_continuum_note",
-          "lattice_nn_deterministic_rescale_note",
-          "lattice_nn_rg_gravity_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "b96c68f5d9e00d87c92fef4b6a77a644ef77e53226277fb28bd9a57ffa912056",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1398-d843-7431-86b6-71b69fe1deae",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The cited deterministic rows are Born-clean, but the displayed path includes gravity=-0.116678 at h=1, so the positive-path conclusion only closes after narrowing to the post-sign-flip rows h<=0.5. The alpha=1.5 stability subclaim is not present in the supplied one-hop authorities and the imported alpha-sweep source is not included for verification.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lattice_nn_mass_response_note",
-      "claim_scope": "Finite NN lattice mass-response report with mass encoded as a fixed-node field-strength multiplier: deterministic rows h={1,0.5,0.25,0.125,0.0625} and alpha-ratio probe at h={0.5,0.25}, with no F proportional to M or continuum promotion.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T20:36:20.076130+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -127984,18 +128119,18 @@
         "lattice_nn_rg_gravity_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "\"the nearest-neighbor lattice has a retained positive mass response under the Born-safe refinement path\"",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "ca869a38c8dc89b0d73bb35e8d91799432c1aff84fd04efeb63cc9d252e93027",
+      "note_hash": "fa98ca6a30697dd432e4610dc2efb542cf2c745bba7ba65e82af47c34246a299",
       "note_path": "docs/LATTICE_NN_MASS_RESPONSE_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad - Narrow the retained claim to h in {0.5,0.25,0.125,0.0625} for positivity, and either add a direct audited alpha-sweep authority/source cache for alpha=1.5 or remove that subclaim.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -128061,6 +128196,63 @@
             "total_pass": 10
           },
           "verdict_rationale": "The live runner reproduces the source table: deterministic h = 1.0 through 0.0625 has machine-precision Born values, MI and d_TV rising toward 1, and positive gravity after h = 0.5 while shrinking toward zero. It also reproduces the alpha-scaled probe, where alpha = 1.0 and 1.5 are less spacing-sensitive and remain Born-clean on the checked rows. The source does not overstate this as F proportional to M or a continuum theorem, so the finite bounded mass-response claim closes; the missing archived log is a reproducibility hygiene issue, not a blocker because the live runner reproduces the artifact."
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.834626+00:00",
+          "archived_for_note_hash": "ca869a38c8dc89b0d73bb35e8d91799432c1aff84fd04efeb63cc9d252e93027",
+          "audit_date": "2026-05-10T20:36:20.076130+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "lattice_nn_continuum_note": "Bounded finite-spacing computational claim for the raw nearest-neighbor harness on H_finite = {2.0, 1.0, 0.5, 0.25}: finite gravity, k=0, MI, classical purity, total-variation, and Born rows, with Born residual < 1e-10 and h = 0.125/continuum explicitly outside the claimed window.",
+              "lattice_nn_deterministic_rescale_note": "Finite computational claim only: for the exact supplied runner, constants, lattice geometry, slit construction, propagation rule, and tested spacings down to h=0.0625, the deterministic geometry-only rescale schedule keeps the Born diagnostic machine-clean and yields the printed observable rows. It does not establish a continuum theory or physical interpretation beyond this finite tested surface.",
+              "lattice_nn_rg_gravity_note": "Audited the bounded computational claim that the raw nearest-neighbor lattice has a Born-clean finite refinement window through h = 0.25 and that fixed, 1/h, and 1/sqrt(h) strength schedules do not establish a clean RG/continuum continuation past the shared h = 0.125 failure."
+            },
+            "dep_claim_type": {
+              "lattice_nn_continuum_note": "bounded_theorem",
+              "lattice_nn_deterministic_rescale_note": "bounded_theorem",
+              "lattice_nn_rg_gravity_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "lattice_nn_continuum_note": "retained_bounded",
+              "lattice_nn_deterministic_rescale_note": "retained_bounded",
+              "lattice_nn_rg_gravity_note": "retained_bounded"
+            },
+            "deps": [
+              "lattice_nn_continuum_note",
+              "lattice_nn_deterministic_rescale_note",
+              "lattice_nn_rg_gravity_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "b96c68f5d9e00d87c92fef4b6a77a644ef77e53226277fb28bd9a57ffa912056",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1398-d843-7431-86b6-71b69fe1deae",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The cited deterministic rows are Born-clean, but the displayed path includes gravity=-0.116678 at h=1, so the positive-path conclusion only closes after narrowing to the post-sign-flip rows h<=0.5. The alpha=1.5 stability subclaim is not present in the supplied one-hop authorities and the imported alpha-sweep source is not included for verification.",
+          "claim_scope": "Finite NN lattice mass-response report with mass encoded as a fixed-node field-strength multiplier: deterministic rows h={1,0.5,0.25,0.125,0.0625} and alpha-ratio probe at h={0.5,0.25}, with no F proportional to M or continuum promotion.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T20:36:20.076130+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "\"the nearest-neighbor lattice has a retained positive mass response under the Born-safe refinement path\"",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "scope_too_broad - Narrow the retained claim to h in {0.5,0.25,0.125,0.0625} for positivity, and either add a direct audited alpha-sweep authority/source cache for alpha=1.5 or remove that subclaim.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the headline positive-path wording overclaims the table because one retained deterministic row is negative. Why this blocks: positivity is established only on the refined rows after the h=0.5 sign flip, and the alpha=1.5 claim relies on an unsupplied imported runner module rather than a supplied one-hop authority. Repair target: narrow the theorem to the positive refined window and add a direct audited alpha-sweep authority/source cache for alpha=1.5. Claim boundary until fixed: Born-clean bounded finite-row response, positive only after the sign flip, not an F proportional to M law."
         }
       ],
       "runner_check_breakdown": {
@@ -128071,9 +128263,9 @@
         "total_pass": 0
       },
       "runner_path": "scripts/lattice_nn_mass_response.py",
-      "title": "NN Lattice Mass-Response Note",
+      "title": "NN Lattice Mass-Response Note \u2014 h \u2208 {0.5, 0.25, 0.125, 0.0625} Positivity (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the headline positive-path wording overclaims the table because one retained deterministic row is negative. Why this blocks: positivity is established only on the refined rows after the h=0.5 sign flip, and the alpha=1.5 claim relies on an unsupplied imported runner module rather than a supplied one-hop authority. Repair target: narrow the theorem to the positive refined window and add a direct audited alpha-sweep authority/source cache for alpha=1.5. Claim boundary until fixed: Born-clean bounded finite-row response, positive only after the sign flip, not an F proportional to M law."
+      "verdict_rationale": null
     },
     "lattice_nn_rg_alpha_sweep_note": {
       "audit_date": "2026-05-07T02:17:45.375642+00:00",
@@ -133112,45 +133304,24 @@
       "verdict_rationale": "The safe claim is not a retained positive theorem; it is an open-gate heuristic record with explicit non-closure language and a named true-Kubo closure lane. The completed frozen log supports the reported correlation and sign-agreement numbers, while the source note itself excludes the tuned threshold number from no-fit evidence and states that path-phase terms are missing from the heuristic. Residual risk is operational reproducibility of the slow runner; that does not change the open-gate boundary because the row is not being promoted to a theorem."
     },
     "linear_response_second_order_kubo_note": {
-      "audit_date": "2026-05-11T17:25:49.575935+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
-          "minimal_axioms_2026-05-03": null
-        },
-        "dep_claim_type": {
-          "linear_response_true_kubo_note": "bounded_theorem",
-          "minimal_axioms_2026-05-03": "meta"
-        },
-        "dep_effective_status": {
-          "linear_response_true_kubo_note": "retained_bounded",
-          "minimal_axioms_2026-05-03": "meta"
-        },
-        "deps": [
-          "linear_response_true_kubo_note",
-          "minimal_axioms_2026-05-03"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "6fa481bbc3ca85b62a391cf4629d7eb3f7e0dbe961bad47324686e6096803417",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The completed frozen log supports the finite second-order null result, but the source extrapolates from that finite second-order replay to a higher-order Taylor/no-go boundary without a remainder bound, convergence analysis, third-or-higher-order computation, or non-analyticity theorem. The current live runner/cache timeout is not used as evidence for the non-clean verdict.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "linear_response_second_order_kubo_note",
-      "claim_scope": "Claimed boundary theorem for the Kubo-Taylor route: the runner-supported finite computation shows that adding the second-order term to the first-order Kubo prediction leaves the strict linearity-regime subset at 15/44 and slightly worsens aggregate residuals, while the source further claims this demonstrates a broader Taylor-expansion boundary for the failing families. The audit does not ratify the broader all-orders/no-Taylor extrapolation.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-11T17:25:49.575935+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -133159,18 +133330,18 @@
         "minimal_axioms_2026-05-03"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Adding more Taylor terms at s = 0 would not work either, because the failing families' nonlinearities are not analytic perturbations of the linear regime.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "a68d0aa00ae229df18101448c76b4acc88ab9200525db07ecfb7fe4125fb78b0",
+      "note_hash": "8ff5e354405b0c11958edeb2e1a40784a6c27b95dc95ab861f0a8d17770eb729",
       "note_path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source to the finite second-order null replay, or provide a remainder/convergence/non-analyticity theorem or higher-order computation covering the failing families.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -133236,6 +133407,59 @@
             "total_pass": 4
           },
           "verdict_rationale": "Issue: The runner verifies that the specific second-order correction does not improve the 44-family battery, but the note also claims a broader boundary of the Kubo-Taylor approach and says the failing nonlinearities are not fixed by more Taylor terms at s=0. Why this blocks: a second-order replay cannot rule out third or higher orders, prove non-analyticity, or establish that all Taylor expansions around s=0 fail for the structural families. Repair target: either narrow the source claim to the computed second-order null result, or add a theorem/computation bounding the Taylor remainder or demonstrating non-convergence/non-analyticity for the failing families, with the first-order and range-of-validity inputs explicitly audited. Claim boundary until fixed: it is safe to claim the live artifact reproduces +0 growth in the linearity-regime subset (15/44 to 15/44), sum |residual| worsening from 5.6090 to 5.7221 at s=0.008, and the listed per-family second-order pathologies; it is not safe to claim a retained no-go for all higher Taylor terms from this note alone."
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.834733+00:00",
+          "archived_for_note_hash": "a68d0aa00ae229df18101448c76b4acc88ab9200525db07ecfb7fe4125fb78b0",
+          "audit_date": "2026-05-11T17:25:49.575935+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+              "minimal_axioms_2026-05-03": null
+            },
+            "dep_claim_type": {
+              "linear_response_true_kubo_note": "bounded_theorem",
+              "minimal_axioms_2026-05-03": "meta"
+            },
+            "dep_effective_status": {
+              "linear_response_true_kubo_note": "retained_bounded",
+              "minimal_axioms_2026-05-03": "meta"
+            },
+            "deps": [
+              "linear_response_true_kubo_note",
+              "minimal_axioms_2026-05-03"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "6fa481bbc3ca85b62a391cf4629d7eb3f7e0dbe961bad47324686e6096803417",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The completed frozen log supports the finite second-order null result, but the source extrapolates from that finite second-order replay to a higher-order Taylor/no-go boundary without a remainder bound, convergence analysis, third-or-higher-order computation, or non-analyticity theorem. The current live runner/cache timeout is not used as evidence for the non-clean verdict.",
+          "claim_scope": "Claimed boundary theorem for the Kubo-Taylor route: the runner-supported finite computation shows that adding the second-order term to the first-order Kubo prediction leaves the strict linearity-regime subset at 15/44 and slightly worsens aggregate residuals, while the source further claims this demonstrates a broader Taylor-expansion boundary for the failing families. The audit does not ratify the broader all-orders/no-Taylor extrapolation.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-11T17:25:49.575935+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Adding more Taylor terms at s = 0 would not work either, because the failing families' nonlinearities are not analytic perturbations of the linear regime.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad: narrow the source to the finite second-order null replay, or provide a remainder/convergence/non-analyticity theorem or higher-order computation covering the failing families.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the finite runner evidence establishes only a second-order null result on the 44-family battery, while the source claims a broader boundary for higher Taylor orders and Taylor expansion at s=0. Why this blocks: a second-order failure does not prove that third and higher orders, a resummed series, a different expansion point, or an analytic remainder cannot change the failing-family behavior. Repair target: either narrow the note to the computed second-order null result or add a theorem/computation bounding the Taylor remainder or demonstrating non-convergence/non-analyticity for the named failing families. Claim boundary until fixed: it is safe to cite the finite second-order replay numbers, not the all-orders Taylor no-go."
         }
       ],
       "runner_check_breakdown": {
@@ -133246,9 +133470,9 @@
         "total_pass": 0
       },
       "runner_path": "scripts/linear_response_second_order_kubo.py",
-      "title": "Second-Order Kubo Extension \u2014 NEGATIVE (Boundary of Taylor-Expansion Approach)",
+      "title": "Second-Order Kubo Extension \u2014 Finite Second-Order Null Replay (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the finite runner evidence establishes only a second-order null result on the 44-family battery, while the source claims a broader boundary for higher Taylor orders and Taylor expansion at s=0. Why this blocks: a second-order failure does not prove that third and higher orders, a resummed series, a different expansion point, or an analytic remainder cannot change the failing-family behavior. Repair target: either narrow the note to the computed second-order null result or add a theorem/computation bounding the Taylor remainder or demonstrating non-convergence/non-analyticity for the named failing families. Claim boundary until fixed: it is safe to cite the finite second-order replay numbers, not the all-orders Taylor no-go."
+      "verdict_rationale": null
     },
     "linear_response_true_kubo_note": {
       "audit_date": "2026-05-05T09:30:52.833678+00:00",
@@ -221552,49 +221776,24 @@
       "verdict_rationale": null
     },
     "universality_classifier_note": {
-      "audit_date": "2026-05-11T18:31:54.850830+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-          "independent_generators_heldout_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-          "local_zsym_predictor_note": "Bounded archived finite search result: adding local_z_asym to the fixed 3-property AND classifier search on the 26 swept families is rejected, and no-refit cross-generator accuracy remains 6/9, matching the old two-property rule."
-        },
-        "dep_claim_type": {
-          "global_coherence_off_scaffold_note": "bounded_theorem",
-          "independent_generators_heldout_note": "positive_theorem",
-          "local_zsym_predictor_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "global_coherence_off_scaffold_note": "retained_bounded",
-          "independent_generators_heldout_note": "retained",
-          "local_zsym_predictor_note": "retained_bounded"
-        },
-        "deps": [
-          "global_coherence_off_scaffold_note",
-          "independent_generators_heldout_note",
-          "local_zsym_predictor_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner closes the finite within-family sweep and held-out readout, but the source also says the simple-classifier line is exhausted; the one-hop authorities only test specific frozen rules/metrics and do not enumerate or exclude the classifier universe.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "universality_classifier_note",
-      "claim_scope": "Finite empirical within-grown-DAG classifier readout for the registered 26-family sweep plus 8 in-family held-out families, with explicit cross-generator and local_z_asym negative caveats; not a derived universality theorem or exhaustive simple-classifier no-go.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-11T18:31:54.850830+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -221604,22 +221803,19 @@
         "local_zsym_predictor_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator tests show the rule does not generalize.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "0bd26f69f9f87f5cae485010aa83405e5bc5800a3c550b3cc5091fe40bc819f0",
+      "note_hash": "99ebfaddaa14983a1700944e36613fa5279fc9824443145b287ea940d4be47d6",
       "note_path": "docs/UNIVERSALITY_CLASSIFIER_NOTE.md",
-      "notes_for_re_audit_if_any": "scope_too_broad: Re-audit after narrowing this row to the finite within-family classifier readout plus explicit negative generalization caveats, or after adding a retained theorem/register that enumerates and excludes the relevant simple-classifier universe.",
-      "open_dependency_paths": [
-        "docs/GLOBAL_COHERENCE_OFF_SCAFFOLD_NOTE.md: finite frozen free_coh/off-scaffold negative only, not exhaustive classifier no-go",
-        "docs/LOCAL_ZSYM_PREDICTOR_NOTE.md: finite local_z_asym 3-property search only, not all node-level metrics"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.370009+00:00",
@@ -221645,19 +221841,79 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-17T12:02:33.839574+00:00",
+          "archived_for_note_hash": "0bd26f69f9f87f5cae485010aa83405e5bc5800a3c550b3cc5091fe40bc819f0",
+          "audit_date": "2026-05-11T18:31:54.850830+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+              "independent_generators_heldout_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+              "local_zsym_predictor_note": "Bounded archived finite search result: adding local_z_asym to the fixed 3-property AND classifier search on the 26 swept families is rejected, and no-refit cross-generator accuracy remains 6/9, matching the old two-property rule."
+            },
+            "dep_claim_type": {
+              "global_coherence_off_scaffold_note": "bounded_theorem",
+              "independent_generators_heldout_note": "positive_theorem",
+              "local_zsym_predictor_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "global_coherence_off_scaffold_note": "retained_bounded",
+              "independent_generators_heldout_note": "retained",
+              "local_zsym_predictor_note": "retained_bounded"
+            },
+            "deps": [
+              "global_coherence_off_scaffold_note",
+              "independent_generators_heldout_note",
+              "local_zsym_predictor_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "9ddc562030928ac0fd22b0f5a611e2835f4944000b6567f7369954c8d14068de",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner closes the finite within-family sweep and held-out readout, but the source also says the simple-classifier line is exhausted; the one-hop authorities only test specific frozen rules/metrics and do not enumerate or exclude the classifier universe.",
+          "claim_scope": "Finite empirical within-grown-DAG classifier readout for the registered 26-family sweep plus 8 in-family held-out families, with explicit cross-generator and local_z_asym negative caveats; not a derived universality theorem or exhaustive simple-classifier no-go.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T18:31:54.850830+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Inside the grown-DAG generator, the dynamic-augmented weak-field package is empirically predicted by `(avg_deg >= 10.42) AND (reach_frac >= 0.86)` with 92.3% in-sample, 84.6% leave-one-out, and 87.5% / 100% on the in-family held-out set, while cross-generator tests show the rule does not generalize.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "scope_too_broad: Re-audit after narrowing this row to the finite within-family classifier readout plus explicit negative generalization caveats, or after adding a retained theorem/register that enumerates and excludes the relevant simple-classifier universe.",
+          "open_dependency_paths": [
+            "docs/GLOBAL_COHERENCE_OFF_SCAFFOLD_NOTE.md: finite frozen free_coh/off-scaffold negative only, not exhaustive classifier no-go",
+            "docs/LOCAL_ZSYM_PREDICTOR_NOTE.md: finite local_z_asym 3-property search only, not all node-level metrics"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 4,
+            "D": 0,
+            "total_pass": 4
+          },
+          "verdict_rationale": "Issue: the completed runner supports the finite 26-family grown-DAG sweep, LOO statistic, and 8-family in-family held-out table, but the note's broader exhaustion/universality framing is not derived from the restricted inputs. Why this blocks: the cited negative lanes show failures for one frozen cross-generator rule, one free_coh off-scaffold rule, and one local_z_asym extension; they do not enumerate all simple/node-level/global scalar classifiers or prove a no-go. Repair target: a retained theorem or registered exhaustive search specifying the classifier universe and excluding it, or a split note that keeps only the finite within-family classifier readout. Claim boundary until fixed: cite the finite within-family empirical classifier and the explicit negative generalization caveats, not a universal predictor or exhaustive simple-classifier closure theorem."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 4,
+        "C": 0,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 0
       },
       "runner_path": "scripts/universality_classifier.py",
-      "title": "Universality Classifier: Empirical Two-Property Predictor on a Wide Family Sweep",
+      "title": "Universality Classifier \u2014 Finite Within-Family Classifier Readout (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the completed runner supports the finite 26-family grown-DAG sweep, LOO statistic, and 8-family in-family held-out table, but the note's broader exhaustion/universality framing is not derived from the restricted inputs. Why this blocks: the cited negative lanes show failures for one frozen cross-generator rule, one free_coh off-scaffold rule, and one local_z_asym extension; they do not enumerate all simple/node-level/global scalar classifiers or prove a no-go. Repair target: a retained theorem or registered exhaustive search specifying the classifier universe and excluding it, or a split note that keeps only the finite within-family classifier readout. Claim boundary until fixed: cite the finite within-family empirical classifier and the explicit negative generalization caveats, not a universal predictor or exhaustive simple-classifier closure theorem."
+      "verdict_rationale": null
     },
     "unpromoted_branch_retainability_audit_note": {
       "audit_date": null,
@@ -241756,8 +242012,8 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2091,
-    "re_audit_required": 0,
+    "preserved_existing": 2083,
+    "re_audit_required": 8,
     "row_count": 2135,
     "seeded_new": 0
   }

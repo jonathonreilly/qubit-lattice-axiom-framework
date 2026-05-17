@@ -1,0 +1,156 @@
+================================================================================
+PMNS theta_12 / theta_13 / delta_CP predictions narrow rescope
+                             (Cycle 8, 2026-05-17)
+================================================================================
+  note: docs/PMNS_THETA12_THETA13_DCP_PREDICTIONS_NARROW_THEOREM_NOTE_2026-05-17.md
+  new content (X5*): interval-arithmetic delta_CP over the chamber-boundary
+      preimage of NuFit (s_12^2, s_13^2) rectangle inside B = 
+      [0.625, 0.75] x [0.902, 0.956] (chamber boundary q = sqrt(8/3) - delta)
+
+================================================================================
+Part 1 (S1): sympy: chamber-boundary constant identity (inherited from Cycle 7).
+================================================================================
+  [PASS] (S1) sympy.simplify(sqrt(8/3) - 2 sqrt(6)/3) == 0  (diff = 0)
+  [PASS] (S1a) (sqrt(8/3))^2 = 8/3
+
+================================================================================
+Part 2: interval Newton brackets eigenvalues of H at PDG anchor.
+================================================================================
+  [PASS] (P2.1) interval Newton converges for lambda_1
+  [PASS] (P2.1w) lambda_1 width <= 1e-13  (width = 4.441e-15)
+  [PASS] (P2.2) interval Newton converges for lambda_2
+  [PASS] (P2.2w) lambda_2 width <= 1e-13  (width = 2.831e-15)
+  [PASS] (P2.3) interval Newton converges for lambda_3
+  [PASS] (P2.3w) lambda_3 width <= 1e-13  (width = 3.109e-15)
+  [PASS] (P2.sep1) lambda_1 < lambda_2 strictly  (separation = 0.9887)
+  [PASS] (P2.sep2) lambda_2 < lambda_3 strictly  (separation = 2.6070)
+
+================================================================================
+Part 3: adjugate projectors reproduce PDG-central (0.307, 0.0218, 0.545).
+================================================================================
+  s_12^2 = [0.3070000000, 0.3070000000]
+  s_13^2 = [0.0218000000, 0.0218000000]
+  s_23^2 = [0.5450000000, 0.5450000000]
+  [PASS] (P3.1) s_12^2 contains 0.307 within 1e-9  (interval [0.3069999999999, 0.3069999999999])
+  [PASS] (P3.2) s_13^2 contains 0.0218 within 1e-9  (interval [0.0218000000000, 0.0218000000000])
+  [PASS] (P3.3) s_23^2 contains 0.545 within 1e-9  (interval [0.5450000000000, 0.5450000000000])
+
+================================================================================
+Part 4: anchor Jarlskog / cos_neg_num / sin(d_CP) / cos(d_CP) match parent runner.
+================================================================================
+  J             interval = [-0.0327545485, -0.0327545485]
+  ReBox         interval = [-0.0027964020, -0.0027964020]
+  cos_neg_num   interval = [+0.0052576399, +0.0052576399]
+  [PASS] (P4.1) J interval contains parent's -0.0328 within 1e-4  (interval [-0.032755, -0.032755])
+  [PASS] (P4.2a) J interval strictly negative (sin(d_CP) sign certified)  (upper J bound = -0.032755)
+  [PASS] (P4.2b) cos_neg_num interval strictly positive (cos(d_CP) negative)  (lower cos_neg_num bound = 0.005258)
+  sin(d_CP)     interval = [-0.9873609741, -0.9873609741]
+  cos(d_CP)     interval = [-0.1584875605, -0.1584875605]
+  [PASS] (P4.3) sin(d_CP) interval contains parent's -0.9874 within 1e-3  (interval [-0.9874, -0.9874])
+  [PASS] (P4.4) cos(d_CP) interval strictly negative (third quadrant)  (upper bound = -0.158488)
+  delta_CP (atan2 at interval midpoints) = -99.1191 deg
+  delta_CP (PDG convention, [0,360))     = 260.8809 deg
+  [PASS] (P4.5) anchor delta_CP (PDG third-quadrant branch) matches parent's 260.88 within 0.1 deg  (computed 260.8809 vs. parent 260.8800)
+
+================================================================================
+Part 5 (X5*, NEW CONTENT): box-Krawczyk delta_CP certification over B.
+================================================================================
+  D-free certification: J < 0 (sin<0); cos_neg_num > 0 (cos<0);
+  d_CP in third quadrant; d_CP = pi + arctan(|J| / cos_neg_num).
+
+  bounding box B = [0.625, 0.75] x [0.902, 0.956]
+  grid: 80 x 80 = 6400 sub-boxes  (dm=1.5625e-03, dd=6.7500e-04)
+  NuFit 5.3 NO 3-sigma rectangle (X3): s_12^2 in [0.27, 0.341], s_13^2 in [0.02029, 0.02391]
+  embedding: q = sqrt(8/3) - delta (chamber boundary)
+  precision: 200-bit mpmath; seed radius 0.1
+  bisection: failing sub-boxes recursively subdivided (max depth 6)
+
+  total sub-boxes:                                  6400
+  sub-boxes with interval-Newton failure:           0
+  sub-boxes with image disjoint from NuFit rect:    996
+  sub-boxes with image overlapping NuFit rect:      5404
+      of which J < 0 strictly (sin(d_CP) < 0):      5404
+      of which cos_neg_num > 0 (cos(d_CP) < 0):     4532
+      of which third-quadrant certified at top level: 4532
+      of which subdivided and certified by bisection: 872
+      of which UNCERTIFIED after bisection:           0
+  top-level sub-boxes subdivided:                   872
+  total sub-box evaluations (incl. bisection):      13356
+
+  |J| range over image-overlap third-Q boxes:       [0.026789, 0.038650]
+  cos_neg_num range over image-overlap third-Q:     [1.676424e-07, 9.057704e-03]
+  delta_CP (PDG, deg) range:                        [251.8648, 269.9997]
+  width of delta_CP prediction:                     18.1350 deg
+  NuFit 5.3 NO 3-sigma delta_CP range:              [120.0, 369.0] deg (width 249)
+  s_23^2 tightest lower bound (Cycle 7 sanity):     0.527718
+  elapsed:                                          17.42s
+
+  [PASS] (P5.1) no top-level interval-Newton failure  (failures = 0)
+  [PASS] (P5.2) every image-overlap sub-box has J < 0 (sin(d_CP) < 0) at top level  (J>=0 sub-boxes: 0)
+  [PASS] (P5.3) every image-overlap sub-box certified third quadrant (top or bisected)  (uncertified sub-boxes after bisection: 0)
+  [PASS] (P5.4) delta_CP prediction range strictly inside NuFit 3-sigma  (prediction [251.86, 270.00] vs NuFit [120.0, 369.0])
+  [PASS] (P5.5) delta_CP prediction width < 25 deg (tight prediction)  (width 18.1350 deg)
+  [PASS] (P5.6) delta_CP prediction range entirely <= 270 deg (cos<0 strict)  (upper bound 269.9997 deg)
+  [PASS] (P5.7) delta_CP prediction range entirely > 180 deg (third quadrant)  (lower bound 251.8648 deg)
+  [PASS] (P5.8) s_23^2 lower bound > 0.5 (consistent with Cycle 7 upper-octant)  (s23^2 lower = 0.527718)
+  [PASS] (P5.9) image-overlap sub-boxes cover at least 500 grid cells  (n_overlap = 5404)
+  [PASS] (P5.10) bisection succeeded on every failing top-level sub-box  (subdivided 872, certified via bisection 872, uncertified 0)
+
+================================================================================
+Part 6: HONEST FINDING on theta_12 / theta_13 -- framework leaves UNCONSTRAINED.
+================================================================================
+  NuFit (s_12^2, s_13^2) rectangle: 20x20 = 400 cells
+  Cells covered by chamber-boundary image of B (100x100 floating-point sweep): 400
+  Cells uncovered: 0
+  Coverage fraction: 100.0%
+
+  s_12^2 marginal coverage: 20/20 cells
+  s_13^2 marginal coverage: 20/20 cells
+
+  [PASS] (P6.1) chamber-boundary image of B covers >= 95% of NuFit (s_12^2, s_13^2) cells  (coverage = 100.0%)
+  [PASS] (P6.2) s_12^2 marginal coverage hits every NuFit cell (no theta_12 prediction)  (uncovered s_12^2 cells: 0)
+  [PASS] (P6.3) s_13^2 marginal coverage hits every NuFit cell (no theta_13 prediction)  (uncovered s_13^2 cells: 0)
+  [PASS] (P6.4) honest finding: framework leaves theta_12 unconstrained within NuFit 3-sigma  (no positive prediction; no counter-example; uniform-ish over NuFit 3-sigma)
+  [PASS] (P6.5) honest finding: framework leaves theta_13 unconstrained within NuFit 3-sigma  (no positive prediction; no counter-example; uniform-ish over NuFit 3-sigma)
+
+================================================================================
+Part 7 (X6): preimage-localization named external admission (inherited from parent prediction note Table 2 / Cycle 7).
+================================================================================
+  [PASS] (P7.1) parent Table 2 (9 grid points) preimages all lie in B = [0.625,0.750] x [0.902,0.956]  (Cycle 7 (X6) named external admission)
+  [PASS] (P7.2) Cycle 8's box B identical to Cycle 7's box B (chart, NuFit rect, and preimage admission shared)  (same chart H(m, delta, q), same NuFit (X3), same preimage localization (X6))
+
+================================================================================
+Part 8: residual scope (what this note does NOT certify).
+================================================================================
+  [PASS] (P8) residual scope declared: Rigorous proof of preimage-localization (X6 is named external admission only)
+  [PASS] (P8) residual scope declared: Exact delta_CP function delta_CP(s_12^2, s_13^2); only interval bounds certified
+  [PASS] (P8) residual scope declared: delta_CP prediction for non-Basin-1 preimage branches; auxiliary
+  [PASS] (P8) residual scope declared: theta_12 or theta_13 positive prediction (framework silent; chamber boundary covers full NuFit rect)
+  [PASS] (P8) residual scope declared: Counter-example for theta_12 / theta_13 (image extends BEYOND NuFit but does NOT exclude any sub-region)
+  [PASS] (P8) residual scope declared: Outer-frame Krawczyk certification of preimage-localization (would tighten X6)
+
+================================================================================
+Part 9: claim-discipline summary.
+================================================================================
+  [PASS] (P9) discipline: no new axiom introduced (only Cl(3) on Z^3)
+  [PASS] (P9) discipline: no new repo vocabulary
+  [PASS] (P9) discipline: named external admission for NuFit 5.3 NO 3-sigma rectangle (X3)
+  [PASS] (P9) discipline: named external admission for parent Table 2 preimage-localization (X6)
+  [PASS] (P9) discipline: named external admission for NuFit 5.3 NO 3-sigma delta_CP band (X3')
+  [PASS] (P9) discipline: citation form: markdown link for retained authorities
+  [PASS] (P9) discipline: status authority: independent audit lane only
+  [PASS] (P9) discipline: no audit_status promotion language
+  [PASS] (P9) discipline: rephasing-invariant Jarlskog J = Im[(P_0)_{2,1} (P_1)_{1,2}]
+  [PASS] (P9) discipline: rephasing-invariant ReBox = Re[(P_0)_{2,1} (P_2)_{1,2}]
+  [PASS] (P9) discipline: PDG-convention delta_CP via atan2(sin, cos) extraction
+  [PASS] (P9) discipline: interval arithmetic at 200-bit mpmath precision
+  [PASS] (P9) discipline: inherits Krawczyk apparatus from (X1) DM_PMNS_CHAMBER_..._KRAWCZYK_CERTIFICATE
+  [PASS] (P9) discipline: inherits chart from forward-cycle channel value law (X2)
+  [PASS] (P9) discipline: inherits hw=1 three-character algebra (X4)
+  [PASS] (P9) discipline: Cycles 5a, 6a, 7 cited as cascade partners (in-flight)
+  [PASS] (P9) discipline: parent prediction note cited as Table 2 source only (not promotion)
+  [PASS] (P9) discipline: honest no-prediction finding declared for theta_12 / theta_13
+  [PASS] (P9) discipline: honest positive prediction declared for delta_CP
+
+================================================================================
+PASS=61  FAIL=0

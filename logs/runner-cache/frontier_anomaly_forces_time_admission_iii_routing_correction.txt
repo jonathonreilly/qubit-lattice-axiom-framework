@@ -1,0 +1,42 @@
+==============================================================================
+ANOMALY_FORCES_TIME admission (iii) routing correction verifier
+==============================================================================
+
+PART 1: CPT_EXACT_NOTE.md has zero gamma_5 occurrences (F-C original claim)
+  [PASS] [A] docs/CPT_EXACT_NOTE.md exists
+  [PASS] [A]   'gamma_5' count == 0 in CPT_EXACT_NOTE  (count = 0)
+  [PASS] [A]   'gamma5' count == 0 in CPT_EXACT_NOTE  (count = 0)
+  [PASS] [A]   'γ_5' count == 0 in CPT_EXACT_NOTE  (count = 0)
+  [PASS] [A]   'γ5' count == 0 in CPT_EXACT_NOTE  (count = 0)
+  [PASS] [A]   '\gamma_5' count == 0 in CPT_EXACT_NOTE  (count = 0)
+  [PASS] [A]   '\gamma_{5}' count == 0 in CPT_EXACT_NOTE  (count = 0)
+
+PART 2: Kawamoto-Smit substep 2 derives {epsilon, D_staggered} = 0
+  [PASS] [A] Kawamoto-Smit forcing theorem note exists
+  [PASS] [A]   KS note mentions 'chirality anticommutation'
+  [PASS] [A]   KS note mentions 'sublattice parity'
+  [PASS] [A]   KS note uses epsilon(x) := (-1)^{x_1+x_2+x_3} form
+  [PASS] [A]   KS note states {epsilon, D_staggered} anticommutation  (regex match: True)
+
+PART 3: NO_PER_SITE_CHIRALITY rules out per-site gamma_5 in Cl(3)
+  [PASS] [A] NO_PER_SITE_CHIRALITY note exists
+  [PASS] [A]   Note references Cl(3)
+  [PASS] [A]   Note articulates 'no per-site' or 'no anti-commuting' chirality
+
+PART 4: Parent no longer cites CPT_EXACT as chirality source (correction applied)
+  [PASS] [A] Parent theorem note exists
+  [PASS] [A]   Parent no longer asserts 'epsilon(x) = staggered gamma_5' verbatim  (phrase removed)
+  [PASS] [A]   Parent cites STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07
+  [PASS] [A]   Parent still references CPT_EXACT_NOTE (now in C-operator role)
+  [PASS] [A]   Parent references NO_PER_SITE_CHIRALITY (chirality home explanation)
+  [PASS] [A]   Parent records routing correction in admission_routing_status (routing_history block)  (history block present)
+
+==============================================================================
+SUMMARY: 21 PASS / 0 FAIL  (Class-A: 21)
+==============================================================================
+
+ROUTING CORRECTION VERIFIED
+  F-C empirical claim still holds (CPT_EXACT has 0 gamma_5)
+  Kawamoto-Smit substep 2 derives the chirality anticommutation
+  Per-site gamma_5 ruled out by NO_PER_SITE_CHIRALITY
+  Parent theorem citation updated (CPT_EXACT -> Kawamoto-Smit)

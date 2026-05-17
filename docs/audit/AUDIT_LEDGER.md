@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 345 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
 | ~~audited_conditional~~ | 185 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
+| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -49,20 +50,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 571 |
 | `audited_conditional` | 185 |
-| `audited_decoration` | 24 |
+| `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1445 |
+| `unaudited` | 1444 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 975 |
-| `decoration` | 25 |
+| `decoration` | 26 |
 | `meta` | 217 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
-| `positive_theorem` | 744 |
+| `positive_theorem` | 743 |
 
 | criticality | count |
 |---|---:|
@@ -877,6 +878,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -2449,6 +2451,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner verifies the SU(3) tensor-algebra facts from N_c=3 and the Gell-Mann generators, and the retained-bounded color-automorphism parent supplies only the algebraic symmetric-base carrier. The result adds no independent physical bridge or comparator beyond that parent.
 - **rationale:** Issue: the algebraic singlet statement is correct and the live runner verifies dimension count, normalization, SU(3) invariance, antisymmetry, and singlet uniqueness, but the row adds no independent physical bridge beyond the retained-bounded color-automorphism parent. Why this blocks: it cannot stand as an independent physical baryon theorem or SM-color carrier result because confinement, baryon asymptotic states, and physical SM-color identification are not derived here. Repair target: cite a retained physical-color carrier bridge plus an independent baryon/asymptotic-state theorem before promoting beyond decoration. Claim boundary until fixed: boxed algebraic SU(3) representation-theory decoration under cl3_color_automorphism_theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Abstract finite-dimensional complex representation-theory separator for faithful irreducible Cl(3,0)-modules, conditional on the retained Cl(3,0) complexification split and omega^2 = -1.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-211200-5aa25b20-cl3_central_pseudoscalar-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By Schur's lemma, central omega acts as c I_V, and omega^2 = -1 forces c^2 = -1, hence c in {+i, -i}; the idempotents e_± then project onto exactly one chirality summand.  _(class `A`)_
+- **chain closes:** True — The cited upstream authority is retained and supplies exactly the needed K1/K3 inputs: omega central with omega^2 = -1 and the M_2(C) ⊕ M_2(C) idempotent split. Schur's lemma and Artin-Wedderburn then give the stated scalar dichotomy, non-equivalence separator, and idempotent factorization.
+- **rationale:** The mathematics is correct as an algebraic consequence of the retained upstream Cl(3,0) split plus standard finite-dimensional complex representation theory. The runner performs exact symbolic matrix checks and does not import external numerical comparators or tuned values. However, the result is entirely class-A algebraic closure over a single retained upstream parent theorem with zero D checks, so under the decoration policy it is an algebraic decoration rather than an independently clean new derivation surface.
+- **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `cl3_color_automorphism_theorem`

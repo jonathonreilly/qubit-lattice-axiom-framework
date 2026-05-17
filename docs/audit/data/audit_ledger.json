@@ -31280,55 +31280,74 @@
       "verdict_rationale": "Issue: the algebraic singlet statement is correct and the live runner verifies dimension count, normalization, SU(3) invariance, antisymmetry, and singlet uniqueness, but the row adds no independent physical bridge beyond the retained-bounded color-automorphism parent. Why this blocks: it cannot stand as an independent physical baryon theorem or SM-color carrier result because confinement, baryon asymptotic states, and physical SM-color identification are not derived here. Repair target: cite a retained physical-color carrier bridge plus an independent baryon/asymptotic-state theorem before promoting beyond decoration. Claim boundary until fixed: boxed algebraic SU(3) representation-theory decoration under cl3_color_automorphism_theorem."
     },
     "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T21:12:21.774622+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "94d7e9f46b557f086a6bea6760e4206144ad83b507196e7daaec198ce851cece",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-211200-5aa25b20-cl3_central_pseudoscalar-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited upstream authority is retained and supplies exactly the needed K1/K3 inputs: omega central with omega^2 = -1 and the M_2(C) \u2295 M_2(C) idempotent split. Schur's lemma and Artin-Wedderburn then give the stated scalar dichotomy, non-equivalence separator, and idempotent factorization.",
       "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Abstract finite-dimensional complex representation-theory separator for faithful irreducible Cl(3,0)-modules, conditional on the retained Cl(3,0) complexification split and omega^2 = -1.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T21:12:21.774622+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
       "deps": [
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By Schur's lemma, central omega acts as c I_V, and omega^2 = -1 forces c^2 = -1, hence c in {+i, -i}; the idempotents e_\u00b1 then project onto exactly one chirality summand.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "935e1b8c9b9e6956afb53ec27aff4f54544250d632f73f148805ce867ad9c134",
       "note_path": "docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the policy classification boundary between retained algebraic corollary and decoration; the algebraic chain itself closes.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 42,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 42
       },
       "runner_path": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
       "title": "Cl(3) Central Pseudoscalar Schur Separator Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The mathematics is correct as an algebraic consequence of the retained upstream Cl(3,0) split plus standard finite-dimensional complex representation theory. The runner performs exact symbolic matrix checks and does not import external numerical comparators or tuned values. However, the result is entirely class-A algebraic closure over a single retained upstream parent theorem with zero D checks, so under the decoration policy it is an algebraic decoration rather than an independently clean new derivation surface."
     },
     "cl3_color_automorphism_theorem": {
       "audit_date": "2026-05-05T02:29:17.183940+00:00",

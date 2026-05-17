@@ -121,7 +121,7 @@ block126_result:
   matched_top_wz_covariance_present: false
   strict_non_observed_g2_present: false
   accepted_same_source_action_present: false
-  stacked_review_pr: pending
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1461"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"

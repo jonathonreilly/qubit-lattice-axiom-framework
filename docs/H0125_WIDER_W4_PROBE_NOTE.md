@@ -30,3 +30,7 @@ which kept the physical family at `phys_l = 6` and still returned
 `alpha = 0.499` on the full-window `z = 3.0` row. So the wider-family lane is
 already a bounded no-go on the tested row, and this cheaper helper should stay
 an auxiliary scout rather than the claim-carrying path.
+
+---
+
+**Re-queued for re-audit 2026-05-17:** previous `audited_conditional` verdict cited packet incompleteness (missing helper-script imports from the restricted packet). The audit pipeline now populates `helper_runner_paths` per [PR #1371](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1371) so the next audit pass receives the complete packet. Helpers now declared: ``. The current re-queue is mechanical — no science content changes — and is documented here so the hash drift is explicit.

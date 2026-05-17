@@ -1,0 +1,52 @@
+campaign_slug: bae-f1f3-and-u0-su2-positive-closure-20260517
+mode: campaign
+runtime_budget: 12h
+runtime_started: 2026-05-17T08:27:00-04:00
+last_checkpoint: 2026-05-17T08:55:00-04:00
+checkpoint_interval: 30m
+deep_block_interval: 90m
+target_status: best-honest-status
+max_cycles: null
+
+current_target: cycle-1-three-parallel-positive-attempts
+current_route: in-flight
+active_hard_residual: F1-vs-F3-canonical-selection + u_0-su2-numerical
+cycle_count: 1
+block_count: 0  # PR open count after agents complete
+
+cycle_1_agents:
+  - agent: A
+    route: NCG/KO-dim F1 selection (~18%)
+    branch: physics-loop/bae-ncg-kodim-block01-20260517
+    status: in-flight (background)
+  - agent: B
+    route: Cl(3) bivector F1 selection (~14%)
+    branch: physics-loop/bae-cl3-bivector-block01-20260517
+    status: in-flight (background)
+  - agent: C
+    route: u_0 bounded g_2 interval (~82% to land as bounded with import)
+    branch: physics-loop/g2-bounded-interval-block01-20260517
+    status: in-flight (background)
+
+pre_closure_analyses_complete: true
+pre_closure_summary:
+  target_1_highest_probability: honest-bounded-no-go (47%)
+  target_1_best_positive_route: NCG/KO-dim (18%)
+  target_2_highest_probability: honest-gap-with-bounded-interval (82%)
+  target_2_best_positive_route: lit-match-bounded (8%)
+
+cycle_2_contingency_plan:
+  if_target_1_positives_fail: ship N1-N8 honest bounded no-go writeup (47% expected outcome)
+  if_target_2_lands_bounded: pursue strong-coupling truncation path or final no-go (5%)
+  parallel_work_allowed: cycle-break work on remaining 247 graph cycles
+
+next_exact_action: wait for cycle-1 agent completions, then synthesize and dispatch cycle-2
+
+actual_current_surface_status: open  # campaign in progress
+target_claim_type: positive_theorem  # primary aim
+conditional_surface_status: pre-closure-shows-honest-gap-as-most-probable
+hypothetical_axiom_status: null
+admitted_observation_status: target_2_route_c_uses_named_lit_import_for_u_0
+claim_type_reason: "campaign launched 2026-05-17 with three parallel positive attempts on the two genuine open physics gaps remaining after the Top-6 cascade"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

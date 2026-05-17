@@ -1,0 +1,124 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_tempesta_composability_external_narrow.py
+runner_sha256: 0dce18d0921ea72f4f65090c41a8599863fa2013fbc51aeefefa4d38ace39854
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.20
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge Tempesta composability runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_TEMPESTA_COMPOSABILITY_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md
+
+==============================================================================
+T1: Composability axiom (C) — identity and associativity for G_a, G_m, G_q
+==============================================================================
+  [PASS] G_a identity: G_a(x, 0) = x and G_a(0, x) = x
+  [PASS] G_m identity: G_m(x, 0) = x and G_m(0, x) = x
+  [PASS] G_q identity: G_q(x, 0; q) = x and G_q(0, x; q) = x
+
+==============================================================================
+T2: Lazard formal group law structure — G1, G2, G3 for G_a, G_m, G_q
+==============================================================================
+  [PASS] G_a associativity: G_a(G_a(x, y), z) = G_a(x, G_a(y, z))
+         diff = 0
+  [PASS] G_m associativity: G_m(G_m(x, y), z) = G_m(x, G_m(y, z))
+         diff = 0
+  [PASS] G_q associativity: G_q(G_q(x, y), z) = G_q(x, G_q(y, z))
+         diff = 0
+  [PASS] G_a commutativity: G_a(x, y) = G_a(y, x)
+  [PASS] G_m commutativity: G_m(x, y) = G_m(y, x)
+  [PASS] G_q commutativity: G_q(x, y; q) = G_q(y, x; q)
+
+==============================================================================
+T3: Boltzmann-Gibbs Shannon entropy is additive (G_a) on independent distributions
+==============================================================================
+  [PASS] Shannon entropy additivity on independent p, q: H(p (x) q) = H(p) + H(q)
+         H(p)=log(2), H(q)=-2*log(2)/3 + log(3), H(joint)=log(3*2**(1/3)), diff=0
+  [PASS] Shannon additivity matches G_a(H(p), H(q)) = H(p) + H(q)
+
+==============================================================================
+T4: Grassmann determinant block factorization (P1) — symbolic 4x4
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A + J_A) det(D_B + J_B) — multiplicative input to composability
+         sympy.simplify(lhs - rhs) = 0
+  [PASS] Numerical rational instance: det factorization holds
+         lhs=41/450, rhs=41/450
+
+==============================================================================
+T5: W = c log|Z| satisfies the additive formal group G_a
+==============================================================================
+  [PASS] W(A (+) B) = c log(r_A r_B) = c log r_A + c log r_B = G_a(W(A), W(B))
+         diff = 0
+
+==============================================================================
+T6: F_p[J] = r(J)^p is in the multiplicative formal group class
+==============================================================================
+  [PASS] F_p[A (+) B] = F_p[A] F_p[B] (multiplicative) for p in {-2, -1, 1/2, 1, 2, 3}
+         (p, diff): [(-2.0, '0'), (-1.0, '0'), (0.5, '0'), (1.0, '0'), (2.0, '0'), (3.0, '0')]
+  [PASS] F_p[A (+) B] - 1 = G_m(F_p[A] - 1, F_p[B] - 1) — multiplicative formal group composition after shift
+         (p, shift_diff): [(-2.0, '0'), (-1.0, '0'), (0.5, '0'), (1.0, '0'), (2.0, '0'), (3.0, '0')]
+
+==============================================================================
+T7: Associativity G(G(x, y), z) = G(x, G(y, z)) on rational instances
+==============================================================================
+  [PASS] G_a associativity on rational instance (x=2/3, y=1/5, z=7/11)
+         diff = 0
+  [PASS] G_m associativity on rational instance (x=2/3, y=1/5, z=7/11)
+         diff = 0
+  [PASS] G_q associativity on rational instance (q=1/2, x=2/3, y=1/5, z=7/11)
+         diff = 0
+
+==============================================================================
+T8: Composability admits F_p, Tsallis, Renyi simultaneously — not unique selection
+==============================================================================
+  [PASS] Choice 1 (BG): W = log r composes via G_a (additive)
+         log(r_A r_B) = log(6), G_a(log r_A, log r_B) = log(2) + log(3)
+  [PASS] Choice 2 (F_p): W = r^p composes via shifted G_m (multiplicative formal group)
+         (r_A r_B)^p = 36, 1 + G_m(r_A^p - 1, r_B^p - 1) = 36
+  [PASS] Choice 3 (Tsallis): S_q on uniform p composes via G_q (multiplicative-shifted formal group)
+         S_q(joint) = 2, G_q(S_q(A), S_q(B); q) = 2
+  [PASS] All three (BG, F_p, Tsallis) are composability-admissible — composability does NOT uniquely select
+         Composability admits the entire Lazard-classified Z-entropy class.
+
+==============================================================================
+T9: Bridge identification — composability admits all of additive, multiplicative, Tsallis
+==============================================================================
+  [PASS] G_a and G_m are distinct formal group laws: G_a - G_m = -xy
+         G_a - G_m = -x*y
+  [PASS] G_m and G_q are distinct formal group laws: G_m - G_q = q xy
+         G_m - G_q = q*x*y
+  [PASS] G_a and G_q are distinct formal group laws: G_a - G_q = - (1 - q) xy
+         G_a - G_q = q*x*y - x*y
+
+==============================================================================
+T10: Source-note boundary
+==============================================================================
+  [PASS] note contains admission string: "**Claim type:** bounded_theorem..."
+         present=True
+  [PASS] note contains admission string: "Status authority:** independent audit lane only..."
+         present=True
+  [PASS] note contains admission string: "Source-note proposal disclaimer..."
+         present=True
+  [PASS] note contains admission string: "does **not** derive the P1..."
+         present=True
+  [PASS] note contains admission string: "P1 is NOT closed positively..."
+         present=True
+  [PASS] note contains admission string: "Composability **does not force** the additive formal group..."
+         present=True
+  [PASS] note contains admission string: "is identifiable as the **multiplicative formal..."
+         present=True
+  [PASS] note contains admission string: "does not undertake..."
+         present=True
+  [PASS] note contains admission string: "does not pre-judge..."
+         present=True
+  [PASS] note contains admission string: "Sharpening over Routes A/B/C/E..."
+         present=True
+  [PASS] note contains admission string: "6 scaffold classes..."
+         present=True
+  [PASS] note avoids forbidden status-promotion / overclaim strings
+         forbidden_hits=[]
+
+=== TOTAL: PASS=38, FAIL=0 ===
+
+----- stderr -----
+

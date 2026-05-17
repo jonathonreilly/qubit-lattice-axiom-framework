@@ -1,0 +1,85 @@
+========================================================================================
+Audit companion (exact-symbolic + exact-numeric) for
+CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17
+Goal: derive structural CHSH bounds (classical 2, Tsirelson 2*sqrt(2))
+Retained inputs (cited):
+  (R1) Born quadratic surface P=|A|^2   ... retained (i3_zero_exact)
+  (R2) Tensor product H_A (x) H_B       ... retained (SINGLE_AXIOM_HILBERT)
+  (R3) Cl(3) per-site Hilbert dim two   ... retained_bounded
+  (R4) Anticommuting Pauli involutions  ... retained
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: Classical CHSH bound |S| <= 2 (exhaustive 16-case)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 1 — all 16 sign assignments give S in {-2, 0, +2}  (actual S values: [-2, 2])
+  [PASS (A)] Part 1 — max |S(lambda)| over local hidden-variable assignments = 2  (max |S| = 2)
+  [PASS (A)] Part 1 — uniform-mix expectation gives 0 (by sign symmetry) and trivially |E[S]| <= 2  (E[S]_uniform = 0.0)
+  [PASS (A)] Part 1 — factorization S = A_0(B_0+B_1) + A_1(B_0-B_1) holds on all 16 cases
+  [PASS (A)] Part 1 — for any (B_0,B_1) in {-1,+1}^2, exactly one of (B_0+/-B_1) is zero
+
+----------------------------------------------------------------------------------------
+Part 2: Tsirelson bound via Landau identity (exact symbolic)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 2 — sigma_z^2 = I (involution, from retained R4)
+  [PASS (A)] Part 2 — sigma_x^2 = I (involution, from retained R4)
+  [PASS (A)] Part 2 — {sigma_z, sigma_x} = 0 (anticommutation, from retained R4)
+  [PASS (A)] Part 2 — B_0 = (sigma_z + sigma_x)/sqrt(2) is an involution
+  [PASS (A)] Part 2 — B_1 = (sigma_z - sigma_x)/sqrt(2) is an involution
+  [PASS (A)] Part 2 — B_0 is self-adjoint (Hermitian)
+  [PASS (A)] Part 2 — B_1 is self-adjoint (Hermitian)
+  [PASS (A)] Part 2 — [A_0 (x) I, I (x) B_0] = 0 (automatic from tensor bipartition R2)
+  [PASS (A)] Part 2 — [A_0 (x) I, I (x) B_1] = 0 (automatic from tensor bipartition R2)
+  [PASS (A)] Part 2 — [A_1 (x) I, I (x) B_0] = 0 (automatic from tensor bipartition R2)
+  [PASS (A)] Part 2 — [A_1 (x) I, I (x) B_1] = 0 (automatic from tensor bipartition R2)
+  [PASS (A)] Part 2 — S_op is self-adjoint
+  [PASS (A)] Part 2 — Landau identity: S_op^2 = 4*I - [A_0,A_1] (x) [B_0,B_1] (exact symbolic)  (Tsirelson 1980 / Landau 1987 algebraic identity)
+  [PASS (A)] Part 2 — [sigma_z, sigma_x] = 2*i*sigma_y (Pauli algebra)
+  [PASS (A)] Part 2 — ||[sigma_z, sigma_x]||_op = 2 (commutator norm bound tight)  (||.|| = 2.000000000000000)
+  [PASS (A)] Part 2 — random sweep: ||[X,Y]|| <= 2 for ||X||=||Y||=1 (200 random pairs)  (max observed ||[X,Y]|| = 1.999958352720 (theoretical max 2))
+  [PASS (A)] Part 2 — ||S_op||_op = 2*sqrt(2) for Bell witness (Tsirelson saturating choice)  (||S_op|| = 2.828427124746190 target = 2.828427124746190)
+
+----------------------------------------------------------------------------------------
+Part 3: Saturating witness in Cl(3) per-site Hilbert dim two
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 3 — |psi> = (|00>+|11>)/sqrt(2) has unit norm
+  [PASS (A)] Part 3 — <A_0 (x) B_0> = +1/sqrt(2)  (computed = sqrt(2)/2)
+  [PASS (A)] Part 3 — <A_0 (x) B_1> = +1/sqrt(2)  (computed = sqrt(2)/2)
+  [PASS (A)] Part 3 — <A_1 (x) B_0> = +1/sqrt(2)  (computed = sqrt(2)/2)
+  [PASS (A)] Part 3 — <A_1 (x) B_1> = -1/sqrt(2)  (computed = -sqrt(2)/2)
+  [PASS (A)] Part 3 — S = 2*sqrt(2) EXACTLY on Bell-state witness (Tsirelson saturation)  (S = 2*sqrt(2) = 2.828427124746190)
+  [PASS (A)] Part 3 — quantum saturation S/2 = sqrt(2) exceeds classical bound 1  (S_quantum / S_classical = sqrt(2) ~ 1.414214)
+
+----------------------------------------------------------------------------------------
+Part 4: Product-state corollary recovers |S| <= 2 (G=0 null)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 4 — product-state grid (625 cases): |S| <= 2 always  (max |S_product| = 2 (theoretical max = 2 at corners))
+  [PASS (A)] Part 4 — product state |+>|+>: |S| <= 2 (verified non-entangled gives bounded)  (S(|+>|+>) = sqrt(2) = 1.414213562373)
+
+----------------------------------------------------------------------------------------
+Part 5: Cross-check vs retained primitives + boundary guards
+----------------------------------------------------------------------------------------
+  [PASS (A)] Part 5 — R4 cross-check: anticommutation {sigma_z, sigma_x} = 0 matches retained
+  [PASS (A)] Part 5 — R3 cross-check: H = C^2 (dim 2 per Cl(3) site)
+  [PASS (A)] Part 5 — S_op eigenvalues in [-2sqrt(2), 2sqrt(2)] (self-adjoint spectral bound)  (eigenvalues = [-2.8284271247461903, 0.0, 0.0, 2.8284271247461903])
+  [PASS (A)] Part 5 — max eigenvalue of S_op equals 2*sqrt(2) (saturating)  (max eig = 2.828427124746190)
+
+  [BOUNDARY] explicit boundary guards (printed only):
+    - This note does NOT derive the Born rule P=|A|^2 from nothing (R1 imported).
+    - This note does NOT claim the framework Hamiltonian saturates 2*sqrt(2) at derived couplings.
+    - This note does NOT close bell_inequality_derived_note from G to C; only sub-questions (a) and (b) are closed.
+    - This note does NOT derive a physical normalization of G or its continuum scaling.
+    - This note does NOT address experimental Bell-test loopholes (detection, locality).
+
+----------------------------------------------------------------------------------------
+SCORECARD
+----------------------------------------------------------------------------------------
+
+  PASS = 35
+  FAIL = 0
+
+  STATUS: ALL EXACT-ALGEBRA CHECKS PASS
+  CLOSURE: Structural CHSH bounds (classical 2, Tsirelson 2*sqrt(2)) derived
+           from retained primitives R1-R4 + Landau identity.
+           Class A (pure algebra over retained inputs).
+           Saturating witness exists in Cl(3) per-site Hilbert dim two.

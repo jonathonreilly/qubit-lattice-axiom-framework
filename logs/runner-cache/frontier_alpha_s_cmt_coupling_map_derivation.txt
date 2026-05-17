@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_cmt_coupling_map_derivation.py
+runner_sha256: 45b6cff12c2e2915f4e5a8c4616f27aec32987adc4d30608813b1be9ce3d5129
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+== docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md ==
+Exact-symbolic verification of the CMT-to-coupling-map derivation.
+All symbols are abstract positive-real (alpha_bare, u_0, K_U) and
+positive-integer (n_link). No numerical values are imported.
+
+PASS  T1_derive_M  | alpha_eff = alpha_bare/u_0**n_link == alpha_bare/u_0^n_link  (residual=0)
+PASS  T2_roundtrip_CMT  | (M) substituted back reproduces (I1) exactly
+PASS  T3_specialize_n1_alpha_LM  | (M) at n_link=1 = alpha_bare/u_0
+PASS  T4_specialize_n2_alpha_sv  | (M) at n_link=2 = alpha_bare/u_0**2
+PASS  T5_compose_with_P1  | alpha_LM^2 = alpha_bare * alpha_s(v)  closed via M-derived C1,C2
+PASS  T6_direction_check  | alpha_eff/alpha_bare = u_0**(-n_link)  (>1 when u_0<1, n_link>=1)
+PASS  T7_counterfactual  | reversed CMT -> alpha_eff = alpha_bare*u_0**n_link  (differs from M)
+
+OVERALL: PASS  (7/7 exact-symbolic tests)
+
+----- stderr -----
+

@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -8953,73 +8952,45 @@
       "verdict_rationale": null
     },
     "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-16T03:06:59.553008+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-04-11": null,
-          "minimal_axioms_2026-05-03": null,
-          "staggered_dirac_realization_gate_note_2026-05-03": "Canonical open-gate parent identity for the unresolved staggered-Dirac realization derivation from A1 (Cl(3)) plus A2 (Z^3), including Grassmann realization, staggered kinetic structure, BZ-corner doublers, and the three-generation physical-species bridge."
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-04-11": "meta",
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-04-11": "meta",
-          "minimal_axioms_2026-05-03": "meta",
-          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
-        },
-        "deps": [
-          "minimal_axioms_2026-04-11",
-          "minimal_axioms_2026-05-03",
-          "staggered_dirac_realization_gate_note_2026-05-03"
-        ],
-        "load_bearing_score": 19.118,
-        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
-        "transitive_descendants": 785
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260516-030634-3e88c9ef-axiom_first_cl3_per_site-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The in-scope algebraic U1-U3 argument closes on A1 and standard finite-dimensional representation theory. The restricted packet nevertheless includes an open-gate cited authority for the out-of-scope U4 physical Hilbert-space bridge, so the full cited-authority chain is not retained-grade under the rubric.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "claim_scope": "A1-only classification of complex finite-dimensional representations of real Cl(3,0): two non-isomorphic faithful 2-dimensional chirality irreps and direct-sum decomposition into them.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-16T03:06:59.553008+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_axioms_2026-05-03",
-        "staggered_dirac_realization_gate_note_2026-05-03",
         "minimal_axioms_2026-04-11"
       ],
       "direct_in_degree": 19,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 19.195,
-      "load_bearing_step": "The central pseudoscalar splits the complexification as Cl(3) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands indexed by \u03c9 = \u00b1i, so finite-dimensional complex representations decompose into copies of the two 2-dimensional chirality irreps.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "2dfb674c9f8755cede1bd7c4411c5fd1c2ddbb35cbbde683da5306e1b719fbd0",
+      "note_hash": "ebb0668af346e5edb25f5b2e4f2c47b2fcdaa750fd86845dfd04c7a64ad5a24f",
       "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: remove the out-of-scope staggered-Dirac gate citation from this A1-only audit packet or mark it as non-load-bearing metadata outside the one-hop cited-authority set, then re-audit U1-U3 alone.",
-      "open_dependency_paths": [
-        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T20:44:09.876323+00:00",
@@ -9212,19 +9183,78 @@
             "total_pass": 6
           },
           "verdict_rationale": "The algebraic chirality-aware repair is coherent: Cl(3,0) as a real algebra, the central pseudoscalar split, and the two 2-dimensional complex irreps support U1-U3. The runner checks are algebraic exhibits and sanity checks, not first-principles physical closure, and they do not establish the staggered/Grassmann realization. Because U4 imports the open staggered-Dirac realization gate and cites an open_gate authority, the full per-site physical Hilbert-dimension conclusion is conditional rather than clean."
+        },
+        {
+          "archived_at": "2026-05-17T11:50:31.159784+00:00",
+          "archived_for_note_hash": "2dfb674c9f8755cede1bd7c4411c5fd1c2ddbb35cbbde683da5306e1b719fbd0",
+          "audit_date": "2026-05-16T03:06:59.553008+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-04-11": null,
+              "minimal_axioms_2026-05-03": null,
+              "staggered_dirac_realization_gate_note_2026-05-03": "Canonical open-gate parent identity for the unresolved staggered-Dirac realization derivation from A1 (Cl(3)) plus A2 (Z^3), including Grassmann realization, staggered kinetic structure, BZ-corner doublers, and the three-generation physical-species bridge."
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-04-11": "meta",
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-04-11": "meta",
+              "minimal_axioms_2026-05-03": "meta",
+              "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+            },
+            "deps": [
+              "minimal_axioms_2026-04-11",
+              "minimal_axioms_2026-05-03",
+              "staggered_dirac_realization_gate_note_2026-05-03"
+            ],
+            "load_bearing_score": 19.118,
+            "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+            "transitive_descendants": 785
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260516-030634-3e88c9ef-axiom_first_cl3_per_site-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The in-scope algebraic U1-U3 argument closes on A1 and standard finite-dimensional representation theory. The restricted packet nevertheless includes an open-gate cited authority for the out-of-scope U4 physical Hilbert-space bridge, so the full cited-authority chain is not retained-grade under the rubric.",
+          "claim_scope": "A1-only classification of complex finite-dimensional representations of real Cl(3,0): two non-isomorphic faithful 2-dimensional chirality irreps and direct-sum decomposition into them.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-16T03:06:59.553008+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The central pseudoscalar splits the complexification as Cl(3) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands indexed by \u03c9 = \u00b1i, so finite-dimensional complex representations decompose into copies of the two 2-dimensional chirality irreps.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: remove the out-of-scope staggered-Dirac gate citation from this A1-only audit packet or mark it as non-load-bearing metadata outside the one-hop cited-authority set, then re-audit U1-U3 alone.",
+          "open_dependency_paths": [
+            "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 6
+          },
+          "verdict_rationale": "The load-bearing mathematics is a genuine algebraic closure: Cl(3,0) is identified as M_2(C) over R, its complexification splits by the central pseudoscalar, and Wedderburn/Schur give exactly the two 2-dimensional chirality irreps and semisimple decomposition. The runner source performs algebraic matrix checks and illustrative sanity checks consistent with the note, though it does not itself prove the full classification. Under the audit rubric, however, the packet cites the staggered-Dirac realization gate, which is explicitly open, so retained-grade closure cannot propagate through the full cited packet even though U4 is declared out of scope."
         }
       ],
       "runner_check_breakdown": {
-        "A": 6,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 6
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
       "transitive_descendants": 828,
-      "verdict_rationale": "The load-bearing mathematics is a genuine algebraic closure: Cl(3,0) is identified as M_2(C) over R, its complexification splits by the central pseudoscalar, and Wedderburn/Schur give exactly the two 2-dimensional chirality irreps and semisimple decomposition. The runner source performs algebraic matrix checks and illustrative sanity checks consistent with the note, though it does not itself prove the full classification. Under the audit rubric, however, the packet cites the staggered-Dirac realization gate, which is explicitly open, so retained-grade closure cannot propagate through the full cited packet even though U4 is declared out of scope."
+      "verdict_rationale": null
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
       "audit_date": "2026-05-10T12:18:49.394028+00:00",
@@ -12656,8 +12686,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "2c5a1d9cc721c80e1829ba38f42deb7f3ce4f1aa3214e9a33f2262cf8add0461",
       "note_path": "docs/BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md",
       "notes_for_re_audit_if_any": null,
@@ -114077,8 +114107,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "For H=aI+bC+bbar C^2, the canonical projectors give E_+(H)=3a^2 and E_perp(H)=6|b|^2; the stated equal-weight functional log E_+ + log E_perp at fixed total has E_+=E_perp, equivalently a^2=2|b|^2 and kappa=2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "855be045ef15718e89dc5a079ed8aaa82c14b8ca893f30add6af8735941d282f",
       "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Re-audit if cited as selecting the canonical Koide weighting, closing F1-vs-F3, or deriving physical charged-lepton kappa=2; those are outside this clean algebraic scope.",
@@ -165548,8 +165578,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "In the finite C3-circulant model, tau_M(H)=Tr(pi_plus(H))+Tr(pi_perp(H)) degenerates to Tr(H)=3a, while the equal block-log saddle under E_plus+E_perp=N occurs uniquely at E_plus=E_perp and translates to |b|^2/a^2=1/2.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "b4933a5384c2920efc81d66cbbd184a7741f264710ce3df149fda7b105ae53f8",
       "note_path": "docs/PRIMITIVE_P_BAE_M1_M2_DUALITY_NOTE_2026-05-10_pPbae_duality.md",
       "notes_for_re_audit_if_any": "Re-check only if a later note uses this finite saddle equivalence as a framework-level primitive election or full measure-equivalence theorem.",
@@ -198247,12 +198277,12 @@
       },
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 35,
+      "direct_in_degree": 34,
       "effective_status": "open_gate",
       "effective_status_reason": "audited_open_gate",
       "independence": "fresh_context",
       "intrinsic_status": "open_gate",
-      "load_bearing_score": 27.255,
+      "load_bearing_score": 26.738,
       "load_bearing_step": "This note's load-bearing content is identity assignment only.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "audit_in_progress",
@@ -198274,7 +198304,7 @@
       },
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note",
-      "transitive_descendants": 863,
+      "transitive_descendants": 853,
       "verdict_rationale": "The note is clean only under the open_gate scope: it defines a canonical parent object for an unresolved derivation target and repeatedly states that the substantive A1+A2-to-staggered-Dirac chain is not closed. There is no hidden theorem promotion, no runner-bearing numerical match, and no decoration claim. Residual risk is governance-only: a future theorem audit must not cite this clean open-gate verdict as proof of the staggered-Dirac realization itself."
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
@@ -241691,9 +241721,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2079,
-    "re_audit_required": 10,
+    "preserved_existing": 2090,
+    "re_audit_required": 1,
     "row_count": 2135,
-    "seeded_new": 2
+    "seeded_new": 0
   }
 }

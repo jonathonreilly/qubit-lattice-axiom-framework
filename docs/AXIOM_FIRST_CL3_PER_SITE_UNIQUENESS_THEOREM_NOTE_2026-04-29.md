@@ -1,8 +1,37 @@
 # Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair); 2026-05-08 (narrowed to A1-only U1–U3 to break cycle)
+**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair); 2026-05-08 (narrowed to A1-only U1–U3 to break cycle); 2026-05-17 (audit-verdict repair: demote staggered-Dirac gate citation to non-load-bearing metadata)
 **Status:** support — branch-local theorem note on A1 alone (Cl(3) site algebra). Runner passing on all six exhibits. Queued for independent audit at the narrowed A1-only scope.
 **Claim type:** bounded_theorem
+**Status authority:** independent audit lane only.
+
+## 2026-05-17 audit-verdict repair: staggered-Dirac gate citation demoted
+
+The 2026-05-05 audit returned `audited_conditional` with verdict:
+
+> The load-bearing mathematics is a genuine algebraic closure: Cl(3,0)
+> is identified as M_2(C) over R, its complexification splits by the
+> central pseudoscalar, and Wedderburn/Schur give exactly the two
+> 2-dimensional chirality irreps and semisimple decomposition. ...
+> Under the audit rubric, however, the packet cites the staggered-Dirac
+> realization gate, which is explicitly open, so retained-grade
+> closure cannot propagate through the full claim.
+
+with re-audit guidance:
+
+> dependency_not_retained: **remove the out-of-scope staggered-Dirac
+> gate citation from this A1-only audit packet** or mark it as
+> non-load-bearing metadata outside the one-hop cited-authority set,
+> then re-audit U1-U3 alone.
+
+This revision takes the **"non-load-bearing metadata"** option. The
+staggered-Dirac realization gate citation is preserved in the prose
+for U4-was-here historical traceability, but is **demoted to
+non-load-bearing metadata** — converted from a markdown link (which
+the citation graph parser treats as a load-bearing edge) to a
+backtick-only reference (which the parser does not treat as an edge).
+This removes the gate-note dependency from the deps set of the
+A1-only U1-U3 load-bearing claim.
 **Loop:** `axiom-first-foundations`
 **Cycle:** 6 (Route R6)
 **Runner:** `scripts/axiom_first_cl3_per_site_uniqueness_check.py`
@@ -95,13 +124,16 @@ kernel.
 The repair: cite the **open-gate** authority for the staggered-Dirac
 realization rather than treat A3 as a primitive input.
 
-**Cited authority:**
-[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-is the open-gate authority for the staggered-Dirac/Grassmann
-realization on A1+A2. It explicitly enumerates the closure routes
-that, when one lands as a positive theorem and clears the independent
-audit lane, will provide the Grassmann/Fock per-site bridge from the
-minimal-input surface.
+**Cited authority (non-load-bearing metadata, 2026-05-17 demotion):**
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is the open-gate
+authority for the staggered-Dirac/Grassmann realization on A1+A2. It
+explicitly enumerates the closure routes that, when one lands as a
+positive theorem and clears the independent audit lane, will provide
+the Grassmann/Fock per-site bridge from the minimal-input surface.
+**This reference is backticked rather than markdown-linked** so the
+citation-graph parser does not record it as a load-bearing
+dependency — per the 2026-05-05 audit verdict's repair guidance, since
+U4 is no longer in scope of this note and U1-U3 are A1-only.
 
 **Status of U4 under this scoping:**
 - **U2, U3** (the abstract Cl(3) representation classification with

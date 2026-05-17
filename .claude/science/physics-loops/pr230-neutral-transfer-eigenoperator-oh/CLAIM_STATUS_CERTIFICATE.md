@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block109_closure_root_frontier_selector`.
+Current block: `block110_cl3_z3_action_descent_obstruction`.
 
 ```yaml
-actual_current_surface_status: open / Block109 closure-root frontier selector; positive closure not achieved and next admissible work is a genuine same-surface O_H/action plus source-Higgs pole-row artifact
+actual_current_surface_status: exact negative boundary / Block110 Cl(3)/Z3 source-taste algebra does not derive accepted EW/Higgs action, canonical O_H, or scalar LSZ metric on the current PR230 surface
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block109 changes no physics premise. It audits the active objective after Block108, rejects chunks/manifests/all-ref scans/literature/path names as proxy completion, and selects the next admissible artifact family: accepted same-surface EW/Higgs action or canonical O_H certificate followed by strict physical C_ss/C_sH/C_HH pole rows."
+proposal_allowed_reason: "Block110 supplies a current-surface exact boundary, not closure. It rejects deriving accepted EW/Higgs action or canonical O_H from the finite Cl(3)/Z3 source-taste algebra alone, and it supplies no dynamic Phi, no accepted action, no source-Higgs pole rows, and no physical response bypass."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,15 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block110 attacks the selected Block109 root from first principles.  It
+   proves an exact current-surface boundary: the finite PR230 `Cl(3)/Z3`
+   source-taste algebra has a real degree-one radial axis, but its finite
+   commutative semisimple structure and primitive idempotents do not derive a
+   dynamic EW/Higgs action, canonical `O_H`, scalar LSZ metric, radial
+   background, accepted source derivative, or strict physical
+   `C_ss/C_sH/C_HH` pole rows.  This closes only the finite-algebra
+   action-descent shortcut and keeps the source-Higgs route open for a real
+   action extension/theorem or strict row packet.
 0. Block109 runs a prompt-to-artifact completion audit for the active PR230
    objective after Block108.  It confirms that support production is complete
    and idle, but that no strict current artifact is present and aggregate

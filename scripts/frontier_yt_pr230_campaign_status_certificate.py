@@ -507,6 +507,9 @@ def main() -> int:
         "pr230_block109_closure_root_frontier_selector": load(
             "outputs/yt_pr230_block109_closure_root_frontier_selector_2026-05-17.json"
         ),
+        "pr230_block110_cl3_z3_action_descent_obstruction": load(
+            "outputs/yt_pr230_block110_cl3_z3_action_descent_obstruction_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -2739,6 +2742,27 @@ def main() -> int:
         "pr230-block109-closure-root-frontier-selector-blocks",
         block109_closure_root_frontier_selector_blocks,
         statuses["pr230_block109_closure_root_frontier_selector"],
+    )
+    block110_cl3_z3_action_descent_obstruction_blocks = (
+        "Cl(3)/Z3 source-taste algebra does not derive accepted EW/Higgs action"
+        in str(statuses["pr230_block110_cl3_z3_action_descent_obstruction"])
+        and certificates["pr230_block110_cl3_z3_action_descent_obstruction"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block110_cl3_z3_action_descent_obstruction"].get(
+            "block110_cl3_z3_action_descent_obstruction_passed"
+        )
+        is True
+        and certificates["pr230_block110_cl3_z3_action_descent_obstruction"].get(
+            "source_higgs_route_implication", {}
+        ).get("accepted_action_or_pole_rows_still_required")
+        is True
+    )
+    report(
+        "pr230-block110-cl3-z3-action-descent-obstruction-blocks",
+        block110_cl3_z3_action_descent_obstruction_blocks,
+        statuses["pr230_block110_cl3_z3_action_descent_obstruction"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8491,6 +8515,9 @@ def main() -> int:
     )
     result["block109_closure_root_frontier_selector_blocks"] = (
         block109_closure_root_frontier_selector_blocks
+    )
+    result["block110_cl3_z3_action_descent_obstruction_blocks"] = (
+        block110_cl3_z3_action_descent_obstruction_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

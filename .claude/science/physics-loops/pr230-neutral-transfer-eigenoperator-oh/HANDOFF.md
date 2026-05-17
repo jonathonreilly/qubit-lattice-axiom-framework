@@ -7,6 +7,37 @@ Branch: `claude/yt-direct-lattice-correlator-2026-04-30`
 Base / landing path: draft PR #230 head
 `claude/yt-direct-lattice-correlator-2026-04-30`
 
+## Block107 Time-Kernel Manifest Idle Refresh
+
+Block107 refreshes the source-Higgs time-kernel production manifest after the
+final chunk workers completed.  The manifest now records no active production
+workers and removes the stale "wait for active static chunks" run-control
+blocker.
+
+Artifacts:
+
+- `scripts/frontier_yt_pr230_source_higgs_time_kernel_production_manifest.py`
+- `outputs/yt_pr230_source_higgs_time_kernel_production_manifest_2026-05-07.json`
+- `docs/YT_PR230_BLOCK107_TIME_KERNEL_MANIFEST_IDLE_REFRESH_NOTE_2026-05-17.md`
+- `docs/YT_PR230_SOURCE_HIGGS_TIME_KERNEL_PRODUCTION_MANIFEST_NOTE_2026-05-07.md`
+
+Validation:
+
+```text
+time-kernel production manifest PASS=16 FAIL=0
+```
+
+Honest status: bounded-support / manifest idle-state refresh only.  No
+time-kernel rows were launched.  `support_launch_authorized_now=false` and
+`closure_launch_authorized_now=false` remain correct because canonical `O_H`
+or an equivalent physical neutral identity is still absent and the current
+operator certificate is taste-radial support.
+
+Exact next action: do not wait on stale chunk workers.  Derive/certify
+canonical `O_H` or an equivalent physical neutral/WZ identity before launching
+time-kernel production rows, or pivot to the strict W/Z / Schur / neutral H3/H4
+artifact contracts.
+
 ## Block104 Z3 Heat-Kernel Source-Coupling/H4 No-Go
 
 Block104 closes the remaining H4/source-coupling shortcut left by the Z3

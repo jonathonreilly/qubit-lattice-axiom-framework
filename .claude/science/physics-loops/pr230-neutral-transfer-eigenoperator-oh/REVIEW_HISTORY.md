@@ -1,5 +1,36 @@
 # Review History
 
+## Block107
+
+Local review run on 2026-05-17 00:55 UTC.
+
+Scope:
+
+- `scripts/frontier_yt_pr230_source_higgs_time_kernel_production_manifest.py`
+- `outputs/yt_pr230_source_higgs_time_kernel_production_manifest_2026-05-07.json`
+- `docs/YT_PR230_BLOCK107_TIME_KERNEL_MANIFEST_IDLE_REFRESH_NOTE_2026-05-17.md`
+- `docs/YT_PR230_SOURCE_HIGGS_TIME_KERNEL_PRODUCTION_MANIFEST_NOTE_2026-05-07.md`
+- `.claude/science/physics-loops/pr230-neutral-transfer-eigenoperator-oh/`
+
+Review results:
+
+| Reviewer | Disposition | Notes |
+|---|---|---|
+| Code / Runner | PASS | Manifest runner compiles and passes with `PASS=16 FAIL=0`; it now reports `active_process_rows=[]` when no static/time-kernel workers are active. |
+| Physics Claim Boundary | OPEN / NO CLOSURE | The refresh removes stale run-control state only. Canonical `O_H` or physical neutral identity remains absent, no time-kernel rows are launched, and no source-overlap or pole authority is created. |
+| Imports / Support | CLEAN / DISCLOSED | Forbidden imports remain excluded, including `H_unit`, Ward identity, observed targets, alpha/plaquette/u0 inputs, and unit `kappa_s/c2/Z_match` conventions. |
+| Nature Retention | OPEN | No retained or `proposed_retained` wording is authorized. |
+| Repo Governance | PASS | Block107 is branch-local manifest/certificate maintenance with no Planck, alpha_s, manuscript, or `CLAIMS_TABLE` surface edits. |
+
+Checks:
+
+```bash
+python3 -m py_compile scripts/frontier_yt_pr230_source_higgs_time_kernel_production_manifest.py
+# OK
+python3 scripts/frontier_yt_pr230_source_higgs_time_kernel_production_manifest.py
+# SUMMARY: PASS=16 FAIL=0
+```
+
 ## Block104
 
 Local review run on 2026-05-15 05:52 UTC.

@@ -1,14 +1,14 @@
 # Claim Status Certificate
 
-Current block: `block106_neutral_multiplicity_gate_refresh`.
+Current block: `block107_time_kernel_manifest_idle_refresh`.
 
 ```yaml
-actual_current_surface_status: bounded-support / neutral multiplicity intake runner refresh; current PR230 surface still rejected
+actual_current_surface_status: bounded-support / source-Higgs time-kernel manifest idle-state refresh; current PR230 surface still rejected
 conditional_surface_status: source-Higgs support if a future accepted same-surface EW/Higgs action certifies canonical O_H and supplies physical Euclidean C_ss/C_sH/C_HH(tau) pole rows with Gram/FV/IR authority; W/Z support if a future strict packet supplies accepted action, production W/Z rows, same-source top rows, matched covariance, strict non-observed g2, delta_perp authority, and final W-response rows
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "Block106 changes no physics premise. The neutral multiplicity candidate remains rejected, canonical O_H is absent, source-Higgs C_ss/C_sH/C_HH pole rows are absent, and aggregate closure gates still reject closure."
+proposal_allowed_reason: "Block107 changes no physics premise. It removes stale active-worker state from the source-Higgs time-kernel production manifest; canonical O_H or an equivalent physical neutral identity remains absent, no time-kernel rows are launched, and aggregate closure gates still reject closure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -17,6 +17,13 @@ Retained-proposal certificate result: fail.
 
 Reason:
 
+0. Block107 refreshes the source-Higgs time-kernel production manifest after
+   the chunk workers completed.  The manifest now records
+   `active_process_rows=[]` and no stale static-worker collision.  Launch
+   remains unauthorized: the current operator certificate is taste-radial
+   support, not canonical `O_H`, no equivalent physical neutral identity is
+   present, and no production `C_ss/C_sH/C_HH(tau)` rows, pole extraction,
+   Gram/FV/IR authority, or source-overlap normalization exists.
 0. Block106 refreshes the same-surface neutral multiplicity-one intake gate
    after the clean source-Higgs route selector moved to the action-first/FMS
    path.  The runner now checks that the selector still keeps the

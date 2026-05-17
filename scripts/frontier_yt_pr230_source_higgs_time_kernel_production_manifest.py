@@ -300,6 +300,17 @@ def main() -> int:
     if active_time_kernel_chunks:
         launch_blockers.append("time-kernel workers already active")
 
+    active_static_clause = (
+        "active static row workers are already running; "
+        if active_static_chunks
+        else "no static row worker collision is currently present; "
+    )
+    next_action_prefix = (
+        "Do not wait on stale static-row workers; none are active now.  "
+        if not active_static_chunks and not active_time_kernel_chunks
+        else "Wait for the active static/time-kernel workers to finish and be packaged.  "
+    )
+
     report("parent-certificates-present", not missing_parents, f"missing={missing_parents}")
     report("parents-remain-firewalled", parents_firewalled, ", ".join(parent_statuses.values()))
     report("harness-time-kernel-cli-present", harness_has_cli, "source_higgs_time_kernel_v1 CLI and output path")
@@ -338,7 +349,7 @@ def main() -> int:
         "proposal_allowed_reason": (
             "This runner writes a production manifest and collision/metadata "
             "firewall only.  The current operator certificate is taste-radial, "
-            "not canonical O_H; active static row workers are already running; "
+            f"not canonical O_H; {active_static_clause}"
             "and no production time-kernel rows, pole extraction, FV/IR, "
             "threshold, covariance, or source-overlap authority exists."
         ),
@@ -366,7 +377,8 @@ def main() -> int:
             "does not use H_unit, yt_ward_identity, observed targets, alpha_LM, plaquette/u0, or value recognition as proof authority",
         ],
         "exact_next_action": (
-            "Wait for the active static taste-radial chunks to finish and be packaged.  "
+            next_action_prefix
+            +
             "For this manifest to become closure-relevant, first supply a same-surface "
             "canonical O_H certificate or physical neutral/WZ identity; then launch "
             "time-kernel chunks on the non-colliding paths, run OS/GEVP pole extraction, "

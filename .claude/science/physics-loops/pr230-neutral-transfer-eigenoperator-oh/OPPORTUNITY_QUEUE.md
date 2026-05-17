@@ -1007,6 +1007,28 @@ assembly still finds no strict `C_ss/C_sH/C_HH` packet.  The queue remains:
    physical-transfer/irreducibility authority plus source/canonical-Higgs
    coupling.
 
+## Block107 Time-Kernel Manifest Idle Refresh
+
+Block107 does not change the queue ranking.  It refreshes the source-Higgs
+time-kernel production manifest after the final chunk workers completed.  The
+manifest now records `active_process_rows=[]`; the stale "wait for active
+static chunks" blocker is gone.
+
+This is still support-only run-control hygiene.  `support_launch_authorized_now`
+and `closure_launch_authorized_now` remain false because canonical `O_H` or an
+equivalent physical neutral identity is absent, and the current operator
+certificate is taste-radial support.  The queue remains:
+
+1. accepted same-surface canonical `O_H` plus strict physical Euclidean
+   `C_ss/C_sH/C_HH(tau)` pole rows with pole-residue, Gram, threshold, and
+   FV/IR authority;
+2. strict W/Z physical-response packet with accepted action, production W/Z
+   rows, same-source top rows, matched covariance, strict non-observed `g2`,
+   `delta_perp`, and final W-response authority;
+3. strict Schur/scalar-LSZ pole authority or neutral H3/H4
+   physical-transfer/irreducibility authority plus source/canonical-Higgs
+   coupling.
+
 ## Block33 Complete-Packet OS Transfer/Alias Firewall
 
 Block33 refreshes the OS transfer-kernel gate after the complete packet and

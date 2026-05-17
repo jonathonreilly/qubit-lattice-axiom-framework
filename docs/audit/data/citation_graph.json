@@ -17773,6 +17773,22 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
+      "from": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+      "to": "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10"
+    },
+    {
       "from": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -57476,6 +57492,22 @@
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "title": "Observable Principle From Axiom Note"
     },
+    "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
+      "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "cpt_exact_note",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10"
+      ],
+      "note_hash": "1b8b432ce202ce7e9bb1152aeac8c4240ffca1fd1f52d77ad20144b3fa0aaee3",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -72135,7 +72167,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 394,
+      "bounded_theorem": 395,
       "decoration": 1,
       "meta": 75,
       "no_go": 52,
@@ -72144,7 +72176,7 @@
       "positive_theorem": 153
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 836,
+      "bounded_theorem": 837,
       "decoration": 1,
       "meta": 75,
       "no_go": 157,
@@ -72152,10 +72184,10 @@
       "open_gate": 123,
       "positive_theorem": 609
     },
-    "edge_count": 9035,
-    "leaf_count": 630,
-    "node_count": 2246,
+    "edge_count": 9039,
+    "leaf_count": 629,
+    "node_count": 2247,
     "root_count": 761,
-    "runners_with_path": 1864
+    "runners_with_path": 1865
   }
 }

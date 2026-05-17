@@ -1,12 +1,68 @@
 # Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair)
+**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair);
+2026-05-17 (load-bearing claim narrowed per audit verdict)
 **Status:** support — branch-local theorem note on A_min; runner passing; queued for independent audit after review repair.
 **Claim type:** positive_theorem
 **Loop:** `axiom-first-foundations`
 **Cycle:** 2 (Route R2)
 **Runner:** `scripts/axiom_first_reflection_positivity_check.py`
 **Log:** `outputs/axiom_first_reflection_positivity_check_2026-04-29.txt`
+**Status authority:** independent audit lane only.
+
+## 2026-05-17 narrowing — load-bearing claim restricted
+
+The 2026-05-05 audit verdict on this row returned `audited_conditional`
+with the explicit guidance:
+
+> The cited bridge authority is marked unaudited and itself states that
+> it proves only the symmetric-canonical `M_W = r*d*I` case, leaving
+> broader Wilson-term cases open. The parent note's own honest-status
+> section also concedes that the full staggered+Wilson extension is
+> runner-supported rather than closed-form. The runner performs finite
+> structural/toy checks and selected determinant tests, but it does not
+> establish configuration-by-configuration SU(3) determinant positivity
+> for the broader claimed surface.
+
+with explicit repair guidance:
+
+> scope_too_broad: **narrow the retained claim to the staggered-only
+> theorem plus the symmetric-canonical M_W = r*d*I Wilson subsurface**,
+> or supply a retained bridge proving det(M) ≥ 0 for the full canonical
+> Wilson term.
+
+This revision takes the **first explicit option**: the load-bearing
+theorem content is **restricted to two sub-cases**:
+
+1. **Case A** — the staggered-only sector `M = M_KS + m·I`, where the
+   `{ε, M_KS} = 0` anticommutation plus the staggered chirality
+   grading delivers a closed-form ±λ paired-eigenvalue proof of
+   `det(M) ≥ 0` and therefore of (R1)-(R4). Closed-form on `A_min`.
+2. **Case B (symmetric-canonical)** — the staggered+Wilson sector with
+   the **symmetric-canonical specialization** `M_W = r · d · I` (the
+   sublattice-uniform diagonal projection of the canonical Wilson
+   Laplacian at `r = 1`), conditional on the cited bridge note
+   `STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md`
+   reaching retained-grade status. Inside that subsurface the BdG-like
+   block argument gives the explicit closed-form
+   `det(M_KS + r·d·I + m·I) = ∏ (α² + σ_i²) > 0`.
+
+The **broader staggered+Wilson surface** (non-symmetric `ε`-commuting
+`M_W`, where the two sublattice diagonal blocks are unitarily
+equivalent but not equal) is **explicitly outside the narrowed
+load-bearing claim**. The note continues to record E6 numerical
+support for that broader surface as a runner-supported extension, but
+the broader surface is not a load-bearing theorem conclusion of this
+row. Downstream rows that need RP outside Cases A and B must either
+(a) cite a separate retained-grade authority for the broader Wilson
+surface, or (b) accept the runner-supported (non-derived) status of
+the extension.
+
+This narrowing does not modify Steps 1, 2, 3, or 3a's existing
+algebraic content; it only narrows the headline retained-claim scope
+to the two subsurfaces that the audit verdict accepts as closed-form
+(or near-closed-form, contingent on the bridge note's audit) on
+`A_min`.
 
 ## Review-loop repair (2026-05-03)
 
@@ -55,20 +111,38 @@ The runner adds two new exhibits:
       conditioned cases only, |det(M)| > 1e-10), confirming the
       Step 3a derivation operationally.
 
-## Scope
+## Scope (narrowed 2026-05-17)
 
 This note records, on the current `A_min`
 (`docs/MINIMAL_AXIOMS_2026-04-11.md`), an axiom-first proof that the
 canonical staggered-Dirac fermion action plus Wilson plaquette gauge
 action at `g_bare = 1` is reflection-positive (RP) on temporal-link
-reflection. RP is the lattice-level positivity that lets one
-reconstruct a positive Hermitian transfer matrix `T` on a finite
-physical Hilbert space `H_phys`, with reconstructed Hamiltonian
-`H = -log(T)/a_τ` bounded below.
+reflection, **restricted to two sub-cases:**
+
+- **(Case A) staggered-only sector** `M = M_KS + m·I` — closed-form
+  derivation on `A_min` via the `{ε, M_KS} = 0` anticommutation and
+  ±λ paired eigenvalues.
+- **(Case B) symmetric-canonical Wilson subsurface**
+  `M = M_KS + r·d·I + m·I` — closed-form derivation on `A_min`
+  *conditional* on the cited bridge note's audit retention, via the
+  BdG-like block factorisation
+  `det(M) = ∏ (α² + σ_i²) > 0`.
+
+The **broader staggered+Wilson surface** (non-symmetric `ε`-commuting
+`M_W`) is outside the narrowed load-bearing scope and is recorded
+elsewhere as a runner-supported extension only.
+
+RP is the lattice-level positivity that lets one reconstruct a
+positive Hermitian transfer matrix `T` on a finite physical Hilbert
+space `H_phys`, with reconstructed Hamiltonian `H = -log(T)/a_τ`
+bounded below.
 
 After this note, the package's transfer-matrix and
 Hilbert-reconstruction language can quote a branch-local RP theorem
-on `A_min` instead of treating RP as a background assumption.
+on `A_min` *within the narrowed scope of Cases A and B* instead of
+treating RP as a background assumption. Outside Cases A and B the
+extension remains runner-supported and is not load-bearing for this
+row.
 
 ## A_min objects in use
 
@@ -157,8 +231,10 @@ so that `S = S_+ + S_- + S_∂` with `S_-` being the `Θ`-image of `S_+`.
 
 ## Statement
 
-Let `F` be a polynomial in the lattice fields restricted to
-`Λ_+` (i.e. all field arguments lie in `Λ_+`). Then on `A_min`:
+**Narrowed load-bearing claim (2026-05-17).** Let `F` be a polynomial
+in the lattice fields restricted to `Λ_+` (i.e. all field arguments
+lie in `Λ_+`). Then on `A_min`, **on the action surface restricted to
+Case A or Case B above**:
 
 **(R1) Reflection positivity.** The reflected expectation
 
@@ -206,7 +282,10 @@ spectrum is bounded below by `-log(λ_max(T))/a_τ`, and (R4) is the
 vacuum-subtracted version of the lattice spectrum condition.
 
 Statements (R1)–(R4) constitute reflection positivity for the
-canonical CL3-on-Z3 action on `A_min`.
+canonical CL3-on-Z3 action on `A_min` **on the narrowed action
+surface (Cases A and B above)**. Extension to non-symmetric Wilson
+subsurfaces is recorded as runner-supported only and is not part of
+the load-bearing claim of this row.
 
 ## Proof
 

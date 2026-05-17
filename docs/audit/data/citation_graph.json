@@ -38651,7 +38651,7 @@
       "deps": [
         "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
       ],
-      "note_hash": "cd2a98ed52c64e1262e4d1dd90e1bd47376d6ae9a06f183384eab1e6e9efb558",
+      "note_hash": "ea0e63825dbb59497d1e7814371191439c43b268f63a6861b3ec98d52826d797",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"

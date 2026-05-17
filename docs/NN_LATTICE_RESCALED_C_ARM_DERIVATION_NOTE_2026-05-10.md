@@ -28,7 +28,13 @@ here as a comparison target only, not as audit authority.
   `L_2 = 2 L_total/3` Huygens reading gives `+38.81%`. This is
   bounded numerical support for the selection-filter interpretation, not
   a retained derivation.
-- [`docs/NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md`](NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md)
+- `docs/NN_LATTICE_RESCALED_C_ARM_NNLO_SADDLE_NOTE_2026-05-10.md`
+  (see-also cross-reference; backticked to break cycle-0205 in the
+  citation graph. The NNLO-saddle companion's own §"Companion work"
+  table cites this LO derivation note as the load-bearing predecessor
+  in the saddle expansion (`alpha_LO = 0.5000`, `C_arm_LO = 2.4855`);
+  that direction is the load-bearing one. The forward pointer here is
+  navigation to the refinement note, not a derivation input.)
   — closed-form finite-slit-aperture NNLO correction: complex-Gaussian
   truncated convolution `psi_det(y) ~ exp(-y^2/(4 alpha_total))
   [erf(u_b) - erf(u_a)]`. NNLO predicts `alpha_eff = 0.5247`,

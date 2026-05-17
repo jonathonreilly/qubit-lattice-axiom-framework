@@ -142,10 +142,14 @@ are themselves clean within their declared scopes:
   — supplies the audit-derived retained no-go statement that Gaussian
   packets do *not* satisfy a generator-invariant inertial mass, fixing
   the residual gap that this bridge does not close.
-- [newton_derivation_note](NEWTON_DERIVATION_NOTE.md)
-  — supplies the open-gate conditional theorem whose Principle-3
-  premise this bridge note operationally satisfies on the multistage
-  compact-object family.
+- `NEWTON_DERIVATION_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0188 in the
+  citation graph. The Newton-derivation parent's own row-211
+  dependency table cites this top4-bridge note as the Principle-3c
+  authority; that direction is the load-bearing one. The back-edge
+  here is graph-bookkeeping navigation to the parent gate, not a
+  derivation input — this bridge satisfies, not consumes, that gate's
+  Principle-3 premise on the multistage compact-object family.)
 
 ## Best next move
 

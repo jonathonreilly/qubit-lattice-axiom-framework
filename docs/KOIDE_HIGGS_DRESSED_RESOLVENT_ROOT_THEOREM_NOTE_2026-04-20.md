@@ -250,7 +250,12 @@ audit dependency transparent.
   `koide_berry_phase_theorem_note_2026-04-19`) -- companion note that
   explicitly lists these chamber pins as separately-pinned observational
   inputs (section 5.3).
-- [SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md](SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md)
+- `SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md`
+  (see-also cross-reference; backticked to break cycle-0017 in the
+  citation graph. The scalar-selector register's own one-hop authority
+  list cites this theorem as a Priority 1 candidate route; that
+  direction is the load-bearing one. The back-edge here is navigation
+  to the open-imports register, not a derivation input.)
   -- the open-imports register listing this theorem as one of four candidate
   routes to the Koide cone, all currently conditional on the chamber pins
   (Priority 1 entry 3).

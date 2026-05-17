@@ -91,7 +91,17 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - `wave_direct_dm_h025_fam2_seed1_control_note` (sibling input artifact;
   backticked to avoid length-2 cycle — citation graph direction is
   *seed1_control → this_synthesis*)
-- [wave_direct_dm_h025_fam2_seed0_boundary_note](WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md)
+- `WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0190 in the
+  citation graph; matches the existing convention recorded in the
+  list above — citation graph direction is *seed0_boundary →
+  this_synthesis*, with the boundary note's own §"Artifact Chain"
+  citing this synthesis as the downstream consumer)
 - [wave_direct_dm_h025_fam2_seed0_control_note](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md)
-- [wave_direct_dm_h025_fam2_seed1_followup_note](WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md)
+- `WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0191 in the
+  citation graph; matches the existing convention recorded in the
+  list above — citation graph direction is *seed1_followup →
+  this_synthesis*, with the followup note citing this synthesis as
+  the downstream consumer)
 - [wave_direct_dm_h025_fam2_seed1_control_note](WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md)

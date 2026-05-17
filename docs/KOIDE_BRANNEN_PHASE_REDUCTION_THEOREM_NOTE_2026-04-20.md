@@ -333,4 +333,9 @@ Expected: PASS=N, FAIL=0.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [koide_z3_qubit_radian_bridge_no_go_note_2026-04-20](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md)
-- [scalar_selector_remaining_open_imports_2026-04-20](SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md)
+- `SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md`
+  (see-also cross-reference; backticked to break cycle-0040 in the
+  citation graph. The scalar-selector register's own one-hop authority
+  list cites this Brannen-phase-reduction theorem as a sibling
+  bounded-theorem authority; that direction is the load-bearing one.
+  This back-edge to the register is graph-bookkeeping navigation only.)

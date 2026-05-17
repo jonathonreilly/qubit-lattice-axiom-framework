@@ -1,0 +1,128 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py
+runner_sha256: 94d7e9f46b557f086a6bea6760e4206144ad83b507196e7daaec198ce851cece
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17
+Goal: sympy verification of (S1)-(S3) Schur separator on Cl(3,0)
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Pauli and parity-conjugate realisations
+----------------------------------------------------------------------------------------
+  rho_+: gamma_1 -> sigma_1 = [[0, 1], [1, 0]]
+  rho_+: gamma_2 -> sigma_2 = [[0, -I], [I, 0]]
+  rho_+: gamma_3 -> sigma_3 = [[1, 0], [0, -1]]
+
+----------------------------------------------------------------------------------------
+Part 1 (cited K1 sanity): omega^2 = -I in both realisations
+----------------------------------------------------------------------------------------
+  [PASS (A)] (K1-cited) omega_p^2 = -I_2 (positive chirality)  (omega_p = [[I, 0], [0, I]], omega_p^2 = [[-1, 0], [0, -1]])
+  [PASS (A)] (K1-cited) omega_m^2 = -I_2 (negative chirality)  (omega_m = [[-I, 0], [0, -I]], omega_m^2 = [[-1, 0], [0, -1]])
+  [PASS (A)] (K1-cited) [omega, gamma_1] = 0 (positive chirality)
+  [PASS (A)] (K1-cited) [omega, gamma_1] = 0 (negative chirality)
+  [PASS (A)] (K1-cited) [omega, gamma_2] = 0 (positive chirality)
+  [PASS (A)] (K1-cited) [omega, gamma_2] = 0 (negative chirality)
+  [PASS (A)] (K1-cited) [omega, gamma_3] = 0 (positive chirality)
+  [PASS (A)] (K1-cited) [omega, gamma_3] = 0 (negative chirality)
+
+----------------------------------------------------------------------------------------
+Part 2 (S1): Schur scalar chi(rho) in {+i, -i}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1a) Positive chirality: rho(omega) = +i * I_2, so chi(rho_+) = +i  (got rho_+(omega) = [[I, 0], [0, I]])
+  [PASS (A)] (S1b) Negative chirality: rho(omega) = -i * I_2, so chi(rho_-) = -i  (got rho_-(omega) = [[-I, 0], [0, -I]])
+  [PASS (A)] (S1c) chi(rho_+) and chi(rho_-) are distinct in C
+
+----------------------------------------------------------------------------------------
+Part 3 (S1): Schur scalar property forces chi^2 = -1
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S1d) Schur scalar: M commutes with sigma_1, sigma_2, sigma_3 ⇒ M = a I  (solution: [{a: d, b: 0, c: 0}])
+  [PASS (A)] (S1e) chi(rho_+)^2 = -1 (so chi = +i is consistent with omega^2 = -1)  (chi_+^2 = -1)
+  [PASS (A)] (S1f) chi(rho_-)^2 = -1 (so chi = -i is consistent with omega^2 = -1)  (chi_-^2 = -1)
+  [PASS (A)] (S1g) c^2 = -1 has exactly two solutions {+i, -i} in C  (solutions: [-I, I])
+
+----------------------------------------------------------------------------------------
+Part 4 (S2): separator faithfulness via intertwiner equation
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S2a) Only intertwiner of rho_+ (omega=+i I) and rho_- (omega=-i I) is U = 0  (intertwiner solutions: [{u_a: 0, u_b: 0, u_c: 0, u_d: 0}])
+  [PASS (A)] (S2b) Full intertwiner of rho_+ and rho_- on generators forces U = 0  (full intertwiner solutions: [{u_a: 0, u_b: 0, u_c: 0, u_d: 0}])
+
+----------------------------------------------------------------------------------------
+Part 5 (S3): idempotent factorisation in each chirality
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3a) Positive chirality: rho_+(e_+) = I_2  (got [[1, 0], [0, 1]])
+  [PASS (A)] (S3b) Positive chirality: rho_+(e_-) = 0  (got [[0, 0], [0, 0]])
+  [PASS (A)] (S3c) Negative chirality: rho_-(e_+) = 0  (got [[0, 0], [0, 0]])
+  [PASS (A)] (S3d) Negative chirality: rho_-(e_-) = I_2  (got [[1, 0], [0, 1]])
+
+----------------------------------------------------------------------------------------
+Part 6 (S3 sanity): idempotent algebra at the realisation level
+----------------------------------------------------------------------------------------
+  [PASS (A)] (positive chirality) e_+ + e_- = I_2
+  [PASS (A)] (positive chirality) e_+ * e_- = 0
+  [PASS (A)] (positive chirality) e_+^2 = e_+
+  [PASS (A)] (positive chirality) e_-^2 = e_-
+  [PASS (A)] (negative chirality) e_+ + e_- = I_2
+  [PASS (A)] (negative chirality) e_+ * e_- = 0
+  [PASS (A)] (negative chirality) e_+^2 = e_+
+  [PASS (A)] (negative chirality) e_-^2 = e_-
+
+----------------------------------------------------------------------------------------
+Part 7 (C1): Schur scalar map is a bijection on {rho_+, rho_-}
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1a) chi map is injective on {rho_+, rho_-}: chi(rho_+) != chi(rho_-)  (chi(rho_+) - chi(rho_-) = 2*I)
+  [PASS (A)] (C1b) chi map image is exactly {+i, -i}
+
+----------------------------------------------------------------------------------------
+Part 8 (C2): block-diagonal omega on rho_+ ⊕ rho_-
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C2a) On rho_+ ⊕ rho_- (C^4), omega = diag(+i I_2, -i I_2)  (got omega on C^4 = [[I, 0, 0, 0], [0, I, 0, 0], [0, 0, -I, 0], [0, 0, 0, -I]])
+
+----------------------------------------------------------------------------------------
+Part 9 (C3): chirality-independent dimensional content
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C3a) C_2 = gamma_1^2 + gamma_2^2 + gamma_3^2 = 3 I_2 (positive chirality)
+  [PASS (A)] (C3b) C_2 = gamma_1^2 + gamma_2^2 + gamma_3^2 = 3 I_2 (negative chirality)
+  [PASS (A)] (C3c) dim_C V = 2 in both chirality summands (matrix shape)
+
+----------------------------------------------------------------------------------------
+Part 10: counterfactual probes (Schur dichotomy sharpness)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (CF1) Counterfactual chi = +1 would force omega^2 = +1, contradicting K1 (omega^2 = -1)  (chi=+1 squared = 1, not -1)
+  [PASS (A)] (CF2) Counterfactual chi = -1 would force omega^2 = +1, contradicting K1  (chi=-1 squared = 1, not -1)
+  [PASS (A)] (CF3) Only {+i, -i} satisfy chi^2 = -1 among test candidates  (valid chi candidates = [I, -I])
+
+----------------------------------------------------------------------------------------
+Part 11 (S3 cross-check): explicit idempotent projector verification
+----------------------------------------------------------------------------------------
+  [PASS (A)] (S3-bd1) e_+ on rho_+ ⊕ rho_- = diag(I_2, 0)  (e_+ projects onto the +i-chirality summand)
+  [PASS (A)] (S3-bd2) e_- on rho_+ ⊕ rho_- = diag(0, I_2)  (e_- projects onto the -i-chirality summand)
+  [PASS (A)] (S3-bd3) e_+ + e_- = I_4 on rho_+ ⊕ rho_-
+  [PASS (A)] (S3-bd4) e_+ * e_- = 0 on rho_+ ⊕ rho_-
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (S1) chi(rho_+) = +i and chi(rho_-) = -i; chi^2 = -1 in both
+    (S1) Schur scalar property: only scalar matrices commute with all sigma_i
+    (S2) Intertwiner of rho_+ and rho_- with chi != chi' forces U = 0
+    (S3) Idempotent factorisation: e_+ -> I, e_- -> 0 on rho_+
+    (S3) Idempotent factorisation: e_+ -> 0, e_- -> I on rho_-
+    (S3) Idempotent algebra e_+ + e_- = I, e_+ e_- = 0, e_+^2 = e_+, e_-^2 = e_-
+    (C1) chi map is a bijection {rho_+, rho_-} -> {+i, -i}
+    (C2) Block-diagonal omega on rho_+ ⊕ rho_-
+    (C3) dim_C V = 2 in both summands (chirality-independent)
+    (CF) Schur dichotomy is sharp: chi^2 = -1 forces chi in {+i, -i}
+
+========================================================================================
+TOTAL: PASS=42, FAIL=0
+========================================================================================
+
+----- stderr -----
+

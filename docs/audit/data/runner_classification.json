@@ -816,6 +816,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_audit_backlog_campaign_synthesis.py"
     },
+    "audit_landscape_snapshot_2026-05-17": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "runner": "scripts/audit_landscape_snapshot.py"
+    },
     "audited_symmetry_synthesis_note": {
       "assert_count": 0,
       "counts": {
@@ -959,6 +971,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/axiom_first_lattice_noether_check.py"
+    },
+    "axiom_first_microcausality_lieb_robinson_hostile_audit_findings_note_2026-05-17": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_axiom_first_microcausality_lieb_robinson_hostile_audit_findings.py"
     },
     "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01": {
       "assert_count": 0,
@@ -4968,6 +4992,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py"
     },
+    "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py"
+    },
     "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15": {
       "assert_count": 1,
       "counts": {
@@ -5747,6 +5783,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_dm_neutrino_two_higgs_right_gram_bridge.py"
+    },
+    "dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 52,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/audit_companion_dm_neutrino_veven_bosonic_normalization_exact_2026_05_17.py"
     },
     "dm_neutrino_veven_bosonic_normalization_theorem_note_2026-04-15": {
       "assert_count": 1,
@@ -9515,6 +9563,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_hierarchy_matsubara_quartic_coefficient_ratio_narrow.py"
+    },
+    "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16": {
+      "assert_count": 2,
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 7,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py"
     },
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -18720,6 +18780,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py"
     },
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py"
+    },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
@@ -20459,6 +20531,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_two_sign_comparison.py"
+    },
+    "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py"
     },
     "u1_fermion_number_conservation_theorem_note_2026-05-02": {
       "assert_count": 0,
@@ -23522,6 +23606,36 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/audit_companion_dm_neutrino_veven_bosonic_normalization_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 52,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/audit_companion_fermion_parity_pauli_tensor_exact_2026_05_10.py": {
       "assert_count": 1,
       "claims": [
@@ -23732,6 +23846,21 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py": {
       "assert_count": 1,
       "claims": [
@@ -23807,10 +23936,40 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/audit_companion_wolfenstein_lambda_a_exact_2026_05_10.py": {
       "assert_count": 1,
       "claims": [
         "wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/audit_landscape_snapshot.py": {
+      "assert_count": 0,
+      "claims": [
+        "audit_landscape_snapshot_2026-05-17"
       ],
       "counts": {
         "A": 0,
@@ -27458,6 +27617,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_axiom_first_microcausality_lieb_robinson_hostile_audit_findings.py": {
+      "assert_count": 0,
+      "claims": [
+        "axiom_first_microcausality_lieb_robinson_hostile_audit_findings_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_axiom_stack_minimality_cl4c_no_go.py": {
@@ -34737,6 +34911,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py": {
+      "assert_count": 2,
+      "claims": [
+        "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16"
+      ],
+      "counts": {
+        "A": 2,
+        "B": 0,
+        "C": 7,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/frontier_hierarchy_observable_principle_from_axiom.py": {
@@ -48850,16 +49039,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 210,
+    "decoration_candidates": 212,
     "dominant_class_distribution": {
-      "A": 165,
-      "B": 183,
-      "C": 698,
-      "D": 281,
-      "none": 419
+      "A": 167,
+      "B": 184,
+      "C": 700,
+      "D": 282,
+      "none": 420
     },
-    "runners_classified": 1746,
-    "runners_with_C": 893,
-    "runners_with_D": 514
+    "runners_classified": 1753,
+    "runners_with_C": 896,
+    "runners_with_D": 516
   }
 }

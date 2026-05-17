@@ -2423,7 +2423,7 @@ _7 rows in this category._
 
 ### `dimensional_gravity_table`
 
-**Note:** [docs/DIMENSIONAL_GRAVITY_TABLE.md](docs/DIMENSIONAL_GRAVITY_TABLE.md)  |  **Descendants:** 806  |  **Class:** B
+**Note:** [docs/DIMENSIONAL_GRAVITY_TABLE.md](docs/DIMENSIONAL_GRAVITY_TABLE.md)  |  **Descendants:** 807  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DIMENSIONAL_GRAVITY_TABLE.md.
@@ -2452,7 +2452,7 @@ drive.
 
 ### `poisson_self_gravity_loop_v3_note`
 
-**Note:** [docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md](docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md)  |  **Descendants:** 803  |  **Class:** C
+**Note:** [docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md](docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md)  |  **Descendants:** 804  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md.
@@ -2481,7 +2481,7 @@ drive.
 
 ### `wave_static_fixed_beam_boundary_sensitivity_note`
 
-**Note:** [docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md](docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md)  |  **Descendants:** 800  |  **Class:** C
+**Note:** [docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md](docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md)  |  **Descendants:** 801  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md.
@@ -2628,99 +2628,12 @@ drive.
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_8 rows in this category._
-
-
-### `su3_casimir_fundamental_theorem_note_2026-05-02`
-
-**Note:** [docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md](docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)  |  **Descendants:** 830  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: Algebraic SU(3) quadratic Casimir on the cited 3D symmetric base subspace equals 4/3; the source note also asserts physical color-triplet quark color-factor readouts.
-
-Auditor's verdict_rationale:
-Issue: the algebraic Casimir value is proved, but the note's broader physical-quark claims rely on a carrier/readout bridge absent from the direct dependencies. Why this blocks: the upstream color automorphism theorem is retained only as a bounded algebraic SU(3) embedding and explicitly excludes physical SM color identification. Repair target: add a retained bridge theorem deriving the physical quark-color carrier and perturbative color-factor readout, or narrow this note to K1-K3 and move K4/C1-C5 downstream. Claim boundary until fixed: C_2 = 4/3 only on the cited algebraic V_3 fundamental carrier.
-
-Auditor-quoted load-bearing step:
-Equating Tr[C_2] = Σ_a Tr[T^a T^a] = 4 with Tr[c_2(3) I_3] = 3 c_2(3) gives c_2(3) = 4/3; the later quark readout identifies this algebraic C_2 with universal color-triplet quark color factors.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad - cheapest repair is to split or narrow the note to the clean K1-K3 algebraic V_3 Casimir theorem, with a separate downstream physical-quark color-factor note requiring a retained color-identification/readout bridge.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `plaquette_v1_picard_fuchs_ode_note_2026-05-05`
-
-**Note:** [docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md](docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md)  |  **Descendants:** 813  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: The stated V=1 single-plaquette Picard-Fuchs ODE and beta=6 plaquette value for the physical SU(3) integral, excluding thermodynamic-limit or downstream plaquette-status claims.
-
-Auditor's verdict_rationale:
-The second audit is the correct reading of the current source row. The finite runner closes a bounded symbolic/numerical certificate, but the source claim still asserts the exact Picard-Fuchs equation and Frobenius-branch identification for the physical SU(3) integral. That stronger statement requires a retained all-order proof companion or a narrowed row boundary before it can be clean. The load-bearing step remains class A because the disputed closure is an algebraic/symbolic ODE identity and branch-identification proof, not a first-principles numerical compute claim.
-
-Auditor-quoted load-bearing step:
-For the single-plaquette SU(3) Wilson integral J(beta), the displayed third-order Picard-Fuchs equation holds and its analytic Frobenius solution gives the physical integral.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: re-audit as clean only after narrowing this row to the finite runner certificate or after retaining an all-order proof/dependency that closes the exact physical-integral Picard-Fuchs and Frobenius-branch claim.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
-
-**Note:** [docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 811  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: positive_theorem
-- load_bearing_step_class: A
-- claim_scope: Reflection positivity R1-R4 for the canonical staggered action plus Wilson plaquette, with the staggered+Wilson sector relying on determinant positivity only closed on the symmetric-canonical M_W = r*d*I subsurface.
-
-Auditor's verdict_rationale:
-The cited bridge authority is marked unaudited and itself states that it proves only the symmetric-canonical M_W = r*d*I case, leaving broader Wilson-term cases open. The parent note’s own honest-status section also concedes that the full staggered+Wilson extension is runner-supported rather than closed-form. The runner performs finite structural/toy checks and selected determinant tests, but it does not establish configuration-by-configuration SU(3) determinant positivity for the broader claimed surface.
-
-Auditor-quoted load-bearing step:
-For positivity of the combined measure, the fermion determinant must also be non-negative configuration-by-configuration, with Step 3a/bridge supplying det(M_KS + M_W + mI) >= 0.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: narrow the retained claim to the staggered-only theorem plus the symmetric-canonical M_W = r*d*I Wilson subsurface, or supply a retained bridge proving det(M) >= 0 for the full canonical Wilson term.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
+_5 rows in this category._
 
 
 ### `dm_abcc_signature_forcing_theorem_note_2026-04-19`
 
-**Note:** [docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md](docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md](docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md.
@@ -2749,7 +2662,7 @@ drive.
 
 ### `gravity_law_cleanup_note`
 
-**Note:** [docs/GRAVITY_LAW_CLEANUP_NOTE.md](docs/GRAVITY_LAW_CLEANUP_NOTE.md)  |  **Descendants:** 800  |  **Class:** C
+**Note:** [docs/GRAVITY_LAW_CLEANUP_NOTE.md](docs/GRAVITY_LAW_CLEANUP_NOTE.md)  |  **Descendants:** 801  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GRAVITY_LAW_CLEANUP_NOTE.md.
@@ -2872,7 +2785,7 @@ _30 rows in this category._
 
 ### `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)  |  **Descendants:** 941  |  **Class:** F
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md](docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md)  |  **Descendants:** 942  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md.
@@ -2899,38 +2812,9 @@ drive.
 ```
 
 
-### `left_handed_charge_matching_note`
-
-**Note:** [docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md](docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md)  |  **Descendants:** 889  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: Convention-normalized eigenvalue pattern (+1/3, -1) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with SM hypercharge identification out of scope.
-
-Auditor's verdict_rationale:
-The runner genuinely checks the graph-first selected-axis construction, the 6+2 split, tracelessness, and the displayed convention-normalized eigenvalues. However, the exact eigenvalue pattern depends on the explicit β = -1 normalization convention, which the note itself says is not derived within the restricted authority chain. Thus the ratio result is clean algebra over retained inputs, but the exact-pattern claim remains conditional on accepting that convention or supplying a separate retained normalization theorem.
-
-Auditor-quoted load-bearing step:
-The eigenvalue ratio 1:(-3) follows from 6α + 2β = 0, and the absolute pattern (+1/3, -1) is obtained by the explicit convention β = -1.
-
-Auditor's repair target (canonical class + action):
-missing_bridge_theorem: add a retained-grade authority deriving the absolute normalization β = -1 from nonconventional premises, or narrow this row to the scale-free 1:(-3) ratio only.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
 ### `rconn_derived_note`
 
-**Note:** [docs/RCONN_DERIVED_NOTE.md](docs/RCONN_DERIVED_NOTE.md)  |  **Descendants:** 875  |  **Class:** F
+**Note:** [docs/RCONN_DERIVED_NOTE.md](docs/RCONN_DERIVED_NOTE.md)  |  **Descendants:** 876  |  **Class:** F
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/RCONN_DERIVED_NOTE.md.
@@ -2959,7 +2843,7 @@ drive.
 
 ### `observable_principle_from_axiom_note`
 
-**Note:** [docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)  |  **Descendants:** 849  |  **Class:** A
+**Note:** [docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)  |  **Descendants:** 850  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md.
@@ -2988,7 +2872,7 @@ drive.
 
 ### `minimal_source_driven_field_probe_note`
 
-**Note:** [docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md](docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)  |  **Descendants:** 838  |  **Class:** C
+**Note:** [docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md](docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)  |  **Descendants:** 839  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md.
@@ -3017,7 +2901,7 @@ drive.
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
 
-**Note:** [docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 819  |  **Class:** A
+**Note:** [docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 820  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md.
@@ -3046,7 +2930,7 @@ drive.
 
 ### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`
 
-**Note:** [docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md](docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)  |  **Descendants:** 808  |  **Class:** A
+**Note:** [docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md](docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md)  |  **Descendants:** 809  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md.
@@ -3075,7 +2959,7 @@ drive.
 
 ### `staggered_fermion_card_2026-04-11`
 
-**Note:** [docs/STAGGERED_FERMION_CARD_2026-04-11.md](docs/STAGGERED_FERMION_CARD_2026-04-11.md)  |  **Descendants:** 803  |  **Class:** C
+**Note:** [docs/STAGGERED_FERMION_CARD_2026-04-11.md](docs/STAGGERED_FERMION_CARD_2026-04-11.md)  |  **Descendants:** 804  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/STAGGERED_FERMION_CARD_2026-04-11.md.
@@ -3104,7 +2988,7 @@ drive.
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
 
-**Note:** [docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 802  |  **Class:** B
+**Note:** [docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md](docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)  |  **Descendants:** 803  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md.
@@ -3133,7 +3017,7 @@ drive.
 
 ### `charged_lepton_koide_review_packet_2026-04-18`
 
-**Note:** [docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md](docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md)  |  **Descendants:** 802  |  **Class:** B
+**Note:** [docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md](docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md)  |  **Descendants:** 803  |  **Class:** B
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md.
@@ -3162,7 +3046,7 @@ drive.
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`
 
-**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md](docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 802  |  **Class:** C
+**Note:** [docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md](docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md)  |  **Descendants:** 803  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md.
@@ -3191,7 +3075,7 @@ drive.
 
 ### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`
 
-**Note:** [docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md](docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 802  |  **Class:** G
+**Note:** [docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md](docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)  |  **Descendants:** 803  |  **Class:** G
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md.
@@ -3220,7 +3104,7 @@ drive.
 
 ### `strong_cp_theta_zero_note`
 
-**Note:** [docs/STRONG_CP_THETA_ZERO_NOTE.md](docs/STRONG_CP_THETA_ZERO_NOTE.md)  |  **Descendants:** 802  |  **Class:** E
+**Note:** [docs/STRONG_CP_THETA_ZERO_NOTE.md](docs/STRONG_CP_THETA_ZERO_NOTE.md)  |  **Descendants:** 803  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/STRONG_CP_THETA_ZERO_NOTE.md.
@@ -3249,7 +3133,7 @@ drive.
 
 ### `bh_entropy_rt_ratio_widom_no_go_note`
 
-**Note:** [docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md](docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)  |  **Descendants:** 801  |  **Class:** C
+**Note:** [docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md](docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)  |  **Descendants:** 802  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md.
@@ -3278,7 +3162,7 @@ drive.
 
 ### `complex_action_note`
 
-**Note:** [docs/COMPLEX_ACTION_NOTE.md](docs/COMPLEX_ACTION_NOTE.md)  |  **Descendants:** 801  |  **Class:** E
+**Note:** [docs/COMPLEX_ACTION_NOTE.md](docs/COMPLEX_ACTION_NOTE.md)  |  **Descendants:** 802  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/COMPLEX_ACTION_NOTE.md.
@@ -3307,7 +3191,7 @@ drive.
 
 ### `newton_law_derived_note`
 
-**Note:** [docs/NEWTON_LAW_DERIVED_NOTE.md](docs/NEWTON_LAW_DERIVED_NOTE.md)  |  **Descendants:** 801  |  **Class:** A
+**Note:** [docs/NEWTON_LAW_DERIVED_NOTE.md](docs/NEWTON_LAW_DERIVED_NOTE.md)  |  **Descendants:** 802  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/NEWTON_LAW_DERIVED_NOTE.md.
@@ -3336,7 +3220,7 @@ drive.
 
 ### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 800  |  **Class:** E
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)  |  **Descendants:** 801  |  **Class:** E
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md.
@@ -3365,7 +3249,7 @@ drive.
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
 
-**Note:** [docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md.
@@ -3394,7 +3278,7 @@ drive.
 
 ### `dm_pmns_asymptotic_source_no_go_note_2026-04-20`
 
-**Note:** [docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md](docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md](docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/DM_PMNS_ASYMPTOTIC_SOURCE_NO_GO_NOTE_2026-04-20.md.
@@ -3423,7 +3307,7 @@ drive.
 
 ### `koide_dimensionless_objection_closure_review_packet_2026-04-24`
 
-**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md.
@@ -3452,7 +3336,7 @@ drive.
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
 
-**Note:** [docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md.
@@ -3481,7 +3365,7 @@ drive.
 
 ### `koide_native_zero_section_closure_route_note_2026-04-24`
 
-**Note:** [docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md](docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md](docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md.
@@ -3510,7 +3394,7 @@ drive.
 
 ### `pmns_oriented_cycle_selection_structure_note`
 
-**Note:** [docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md](docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md](docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md.
@@ -3539,7 +3423,7 @@ drive.
 
 ### `teleportation_native_axioms_theory_note`
 
-**Note:** [docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md](docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md)  |  **Descendants:** 800  |  **Class:** A
+**Note:** [docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md](docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md)  |  **Descendants:** 801  |  **Class:** A
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/TELEPORTATION_NATIVE_AXIOMS_THEORY_NOTE.md.
@@ -3568,7 +3452,7 @@ drive.
 
 ### `wave_retarded_gravity_note`
 
-**Note:** [docs/WAVE_RETARDED_GRAVITY_NOTE.md](docs/WAVE_RETARDED_GRAVITY_NOTE.md)  |  **Descendants:** 800  |  **Class:** C
+**Note:** [docs/WAVE_RETARDED_GRAVITY_NOTE.md](docs/WAVE_RETARDED_GRAVITY_NOTE.md)  |  **Descendants:** 801  |  **Class:** C
 
 ```
 Use the physics-loop skill to close the conditional audit on docs/WAVE_RETARDED_GRAVITY_NOTE.md.
@@ -3703,6 +3587,35 @@ Under the explicit admissions (A1)-(A5), the identities (T1)-(T9) reduce to dire
 
 Auditor's repair target (canonical class + action):
 missing_bridge_theorem: derive or cite retained-grade support for admissions (A1)-(A5), especially the two-channel carrier, Z grammar, selected-line endpoint data, based endpoint section, and eta_APS = 2/9, if retained-grade propagation is desired.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16`
+
+**Note:** [docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)  |  **Descendants:** 0  |  **Class:** E
+
+```
+Use the physics-loop skill to close the conditional audit on docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: open_gate
+- load_bearing_step_class: E
+- claim_scope: External 4D SU(N) Yang-Mills confinement-mechanism vocabulary and diagnostics, with explicit non-closure of framework bridges and string-tension derivation.
+
+Auditor's verdict_rationale:
+Issue: the runner verifies text presence and simple symbolic identities, but it does not derive 4D confinement, monopole condensation, center-vortex percolation, or a framework-to-Wilson-loop bridge. Why this blocks: the note correctly declares these as external/open mechanism targets, so the restricted packet supports only an open gate, not retained theorem closure. Repair target: a retained-grade derivation or supplied retained upstream authority for the condensation/percolation mechanism, string tension, and any framework substrate/readout identification. Claim boundary until fixed: the note can be cited as scoped external context and diagnostic vocabulary only.
+
+Auditor-quoted load-bearing step:
+The note records monopole-condensate, dual-superconductor, center-vortex, and Wilson-loop area-law statements only as external mechanism targets and diagnostics, while explicitly not proving condensation, string tension, confinement, or any framework substrate bridge.
+
+Auditor's repair target (canonical class + action):
+missing_bridge_theorem: Add retained-grade bridge theorems or one-hop retained authorities for monopole/vortex condensation, the Wilson-loop area law/string tension, and any framework substrate observable identification before upgrading beyond open_gate.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

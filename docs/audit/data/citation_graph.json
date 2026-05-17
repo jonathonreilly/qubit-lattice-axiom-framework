@@ -1082,10 +1082,6 @@
     },
     {
       "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "to": "staggered_dirac_realization_gate_note_2026-05-03"
-    },
-    {
-      "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
       "to": "minimal_axioms_2026-04-11"
     },
     {
@@ -10723,6 +10719,34 @@
     {
       "from": "hierarchy_matsubara_quartic_coefficient_ratio_narrow_theorem_note_2026-05-10",
       "to": "minimal_axioms_2026-05-03"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "hierarchy_bosonic_bilinear_selector_note"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "minimal_axioms_2026-05-03"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "cl3_sm_embedding_theorem"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "to": "higgs_mass_from_axiom_note"
     },
     {
       "from": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
@@ -21549,6 +21573,18 @@
       "to": "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
       "to": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
     },
@@ -22703,6 +22739,14 @@
     {
       "from": "trysquared_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "u1_fermion_number_conservation_theorem_note_2026-05-02",
@@ -38390,6 +38434,17 @@
       "runner_path": null,
       "title": "Audit DM Runner Stale-Path Cleanup"
     },
+    "audit_landscape_snapshot_2026-05-17": {
+      "claim_id": "audit_landscape_snapshot_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "note_hash": "9a71e3fdbdda2f50f6ee7b629c19dd9fbf11ca63fa06efddcc1836e620825bd2",
+      "path": "docs/AUDIT_LANDSCAPE_SNAPSHOT_2026-05-17.md",
+      "runner_path": "scripts/audit_landscape_snapshot.py",
+      "title": "Audit Landscape Snapshot \u2014 2026-05-17"
+    },
     "audit_lhf_leverage_map_for_retained_promotion_note_2026-05-01": {
       "claim_id": "audit_lhf_leverage_map_for_retained_promotion_note_2026-05-01",
       "claim_type_author_hint": "meta",
@@ -38471,10 +38526,9 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms_2026-05-03",
-        "staggered_dirac_realization_gate_note_2026-05-03",
         "minimal_axioms_2026-04-11"
       ],
-      "note_hash": "2dfb674c9f8755cede1bd7c4411c5fd1c2ddbb35cbbde683da5306e1b719fbd0",
+      "note_hash": "bd11d1c5fb9cc6900b811ffdd7e94b22de3768fc7f2c0ec45ba0cdf15e9c3e6d",
       "path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module"
@@ -38607,6 +38661,17 @@
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3"
     },
+    "axiom_first_microcausality_lieb_robinson_hostile_audit_findings_note_2026-05-17": {
+      "claim_id": "axiom_first_microcausality_lieb_robinson_hostile_audit_findings_note_2026-05-17",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "note_hash": "f384281ec3ec0ff140443374b3408df107cc823ae31d9f84c301be1149f4b7c1",
+      "path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md",
+      "runner_path": "scripts/frontier_axiom_first_microcausality_lieb_robinson_hostile_audit_findings.py",
+      "title": "Microcausality / Lieb-Robinson Theorem \u2014 Hostile Audit Findings"
+    },
     "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01": {
       "claim_id": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
       "claim_type_author_hint": "positive_theorem",
@@ -38651,7 +38716,7 @@
       "deps": [
         "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
       ],
-      "note_hash": "cd2a98ed52c64e1262e4d1dd90e1bd47376d6ae9a06f183384eab1e6e9efb558",
+      "note_hash": "bdb76f3ccc308b983ffd5a1f3e64a06ecc85b152b304b30041bdee005dde5108",
       "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action"
@@ -42140,10 +42205,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "0b9ebb06f4771092b67f30d7ab8f9765c47336041fd79b2f4af6b65567cb7a0e",
+      "note_hash": "7f04a2c646c496184afe6b6857ccfca7e8a2994d2c3713bc56073c81984d185c",
       "path": "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
-      "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem"
+      "title": "CPT Exact \u2014 Real Anti-Hermitian D Narrow Theorem (C1+C2 only, post-2026-05-12 narrowing)"
     },
     "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02": {
       "claim_id": "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02",
@@ -44017,6 +44082,17 @@
       "runner_path": "scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py",
       "title": "DM Neutrino Hermitian Bridge Carrier"
     },
+    "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17": {
+      "claim_id": "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "note_hash": "bc4af4ee9f3aa2227f60bdd6cebaf7e4a31813a6d35dddabbba1faf12f552bba",
+      "path": "docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py",
+      "title": "DM Neutrino `K00` Bosonic Normalization Narrow Theorem"
+    },
     "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15": {
       "claim_id": "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15",
       "claim_type_author_hint": "bounded_theorem",
@@ -45092,6 +45168,17 @@
       "path": "docs/DM_NEUTRINO_TWO_HIGGS_RIGHT_GRAM_BRIDGE_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_neutrino_two_higgs_right_gram_bridge.py",
       "title": "DM Neutrino Two-Higgs Right-Gram Bridge Theorem"
+    },
+    "dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17": {
+      "claim_id": "dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "note_hash": "1d0fb9c64d85b7e8cec50effd0d3e01b929432065c3ab5f904d47ad42eb969cc",
+      "path": "docs/DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_dm_neutrino_veven_bosonic_normalization_exact_2026_05_17.py",
+      "title": "DM Neutrino `v_even` Bosonic Normalization Narrow Theorem"
     },
     "dm_neutrino_veven_bosonic_normalization_theorem_note_2026-04-15": {
       "claim_id": "dm_neutrino_veven_bosonic_normalization_theorem_note_2026-04-15",
@@ -49805,6 +49892,25 @@
       "path": "docs/HIERARCHY_MATSUBARA_QUARTIC_COEFFICIENT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_hierarchy_matsubara_quartic_coefficient_ratio_narrow.py",
       "title": "Hierarchy Matsubara Quartic Coefficient Ratio \u2014 Narrow Algebraic Theorem"
+    },
+    "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16": {
+      "claim_id": "hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow_no_go_note_2026-05-16",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "plaquette_self_consistency_note",
+        "hierarchy_formula_honest_status_note_2026-05-10",
+        "hierarchy_bosonic_bilinear_selector_note",
+        "minimal_axioms_2026-05-03",
+        "cl3_sm_embedding_theorem",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "higgs_mass_from_axiom_note"
+      ],
+      "note_hash": "10ffd5d517a64070fb7c15a5a5dd39e4aa2879fb12433823d7c84ddfaa983ad3",
+      "path": "docs/HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16.md",
+      "runner_path": "scripts/frontier_hierarchy_meron_substrate_bridge_su2_su3_mismatch_narrow.py",
+      "title": "Hierarchy Meron Substrate Bridge `v = M_Pl * exp(-4 pi^2)` \u2014 SU(2)/SU(3) Substrate Mismatch Narrow No-Go"
     },
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
       "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
@@ -54539,7 +54645,7 @@
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
-      "note_hash": "6e819179b3a3647c9ab7df566af8548e23453ed30d4d602efd772cd742ee7ca0",
+      "note_hash": "be3f98273aab1763d5ad4041740f27fe2b03dc1ff1801ff96f2d515e0f130921",
       "path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Left-Handed Charge Matching on the Selected-Axis Surface"
@@ -58615,10 +58721,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "f57516d2bd0b67d05e29e7a1b22938897ec70e6a92dc5c1ce4208d49fd53085e",
+      "note_hash": "5ba7055117c13f4e88c0062a5646846b38da2e8499a1c1f11e261835cbaa35b3",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py",
-      "title": "Plaquette V=1 Picard-Fuchs ODE Note"
+      "title": "Plaquette V=1 Picard-Fuchs ODE \u2014 Finite-Runner Certificate Note"
     },
     "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06": {
       "claim_id": "plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06",
@@ -65450,6 +65556,21 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem"
     },
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
+      "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+      ],
+      "note_hash": "cf7231bd73089d38ebc913f3c6fe75693423ca27739061a2db08eb27c474ef68",
+      "path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
+      "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem"
+    },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
       "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
       "claim_type_author_hint": "bounded_theorem",
@@ -66083,16 +66204,16 @@
     },
     "su3_casimir_fundamental_theorem_note_2026-05-02": {
       "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
-      "note_hash": "085c892d5bdf3549c81dca984c39bcc6c5b6376e91c61ceed2c5483a8fe50cf3",
+      "note_hash": "d6e2848fd14e60b6bbbcb142227a43c1d10dd084190c9c8866dac72b3d8534d5",
       "path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "title": "SU(3) Quadratic Casimir on Color Fundamental Equals 4/3"
+      "title": "SU(3) Quadratic Casimir on the V_3 Fundamental Equals 4/3 \u2014 Algebraic K1\u2013K3 Theorem"
     },
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": {
       "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
@@ -67518,6 +67639,20 @@
       "path": "docs/TWO_SIGN_COMPARISON_NOTE_2026-04-10.md",
       "runner_path": "scripts/frontier_two_sign_comparison.py",
       "title": "Two-Sign Comparison Note"
+    },
+    "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17": {
+      "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      ],
+      "note_hash": "8f97fe32d188cb18945031491fa8e6f7ff2b94dcc4b29aa819f894fa7f33fa39",
+      "path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
+      "title": "u_0(SU(2)) Bivector-Irrep Analytic Derivation Narrow Theorem"
     },
     "u1_fermion_number_conservation_theorem_note_2026-05-02": {
       "claim_id": "u1_fermion_number_conservation_theorem_note_2026-05-02",
@@ -71478,8 +71613,10 @@
     "atomic_lane2_physical_unit_limit_boundary_note_2026-04-29",
     "atomic_rydberg_dependency_firewall_note_2026-04-27",
     "audit_dm_runner_stale_path_cleanup_note_2026-05-01",
+    "audit_landscape_snapshot_2026-05-17",
     "audit_lhf_leverage_map_for_retained_promotion_note_2026-05-01",
     "axiom_change_proposal_2026-04-10",
+    "axiom_first_microcausality_lieb_robinson_hostile_audit_findings_note_2026-05-17",
     "background_independence_note",
     "bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10",
     "bell_inequality_derived_note",
@@ -71606,10 +71743,12 @@
     "dm_lepton_synthesis_note_2026-04-19",
     "dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15",
     "dm_neutrino_cascade_geometry_note_2026-04-14",
+    "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17",
     "dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15",
     "dm_neutrino_triplet_even_response_theorem_note_2026-04-15",
     "dm_neutrino_triplet_normalization_target_note_2026-04-15",
     "dm_neutrino_two_higgs_closure_attacks_note_2026-04-15",
+    "dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17",
     "dm_neutrino_weak_matching_obstruction_note_2026-04-15",
     "dm_neutrino_weak_vector_theorem_note_2026-04-15",
     "dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15",
@@ -72135,27 +72274,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 394,
+      "bounded_theorem": 399,
       "decoration": 1,
-      "meta": 75,
-      "no_go": 52,
+      "meta": 77,
+      "no_go": 53,
       "none": 1527,
       "open_gate": 44,
-      "positive_theorem": 153
+      "positive_theorem": 152
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 836,
+      "bounded_theorem": 841,
       "decoration": 1,
-      "meta": 75,
-      "no_go": 157,
+      "meta": 77,
+      "no_go": 158,
       "none": 445,
       "open_gate": 123,
-      "positive_theorem": 609
+      "positive_theorem": 608
     },
-    "edge_count": 9035,
-    "leaf_count": 630,
-    "node_count": 2246,
-    "root_count": 761,
-    "runners_with_path": 1864
+    "edge_count": 9046,
+    "leaf_count": 635,
+    "node_count": 2253,
+    "root_count": 765,
+    "runners_with_path": 1871
   }
 }

@@ -1,7 +1,7 @@
 # Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module
 
-**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair); 2026-05-08 (narrowed to A1-only U1–U3 to break cycle)
-**Status:** support — branch-local theorem note on A1 alone (Cl(3) site algebra). Runner passing on all six exhibits. Queued for independent audit at the narrowed A1-only scope.
+**Date:** 2026-04-29 (originally); 2026-05-03 (review-loop repair); 2026-05-08 (narrowed to physical-Cl(3)-only U1–U3 to break cycle)
+**Status:** support — branch-local theorem note on the physical `Cl(3)` local algebra alone. Runner passing on all six exhibits. Queued for independent audit at the narrowed physical-Cl(3)-only scope.
 **Claim type:** bounded_theorem
 **Loop:** `axiom-first-foundations`
 **Cycle:** 6 (Route R6)
@@ -10,25 +10,28 @@
 
 ## Audit scope (2026-05-08 narrowing)
 
-This note is now restricted to the **A1-only** content (U1, U2, U3) —
-the abstract real-algebra classification of `Cl(3,0)` and its complex
-chirality irreps. The earlier U4 statement ("per-site Hilbert space
-has dimension exactly 2 on `A_min`") has been **moved out of scope of
-this note** because its bridge from the abstract 2-dim Cl(3) chirality
-module to the physical per-site Hilbert space depends on A3
-(staggered-fermion canonical normalisation). That A3 bridge is
-carried by the staggered-Dirac realization gate,
+This note is now restricted to the **physical-Cl(3)-only** content
+(U1, U2, U3) — the abstract real-algebra classification of `Cl(3,0)`
+and its complex chirality irreps. The earlier U4 statement ("per-site
+Hilbert space has dimension exactly 2 on the explicit framework
+baseline") has been **moved out of scope of this note** because its
+bridge from the abstract 2-dim Cl(3) chirality module to the physical
+per-site Hilbert space depends on the staggered-Dirac/Grassmann
+realization input. That realization bridge is carried by the
+staggered-Dirac realization gate,
 specifically substep 1
 (`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`).
 
-The 2026-05-08 review separated the U1–U3 A1-only classification from
-the A3-dependent U4 realization step. Narrowing to U1–U3 makes this row
-auditable without the staggered-Dirac gate cycle and lets the substep 1
-note carry the A3-dependent U4 conclusion separately.
+The 2026-05-08 review separated the U1–U3 physical-Cl(3)-only
+classification from the staggered-Dirac/Grassmann-dependent U4
+realization step. Narrowing to U1–U3 makes this row auditable without
+the staggered-Dirac gate cycle and lets the substep 1 note carry the
+realization-dependent U4 conclusion separately.
 
 The narrowed claim_scope is therefore:
 
-> **Per-site uniqueness of the Cl(3) spinor module (A1 only):** the
+> **Per-site uniqueness of the Cl(3) spinor module (physical `Cl(3)`
+> local algebra only):** the
 > abstract real Clifford algebra `Cl(3,0)` admits exactly two
 > non-isomorphic faithful complex irreducible representations
 > (positive- and negative-chirality), each 2-dim, distinguished by
@@ -70,9 +73,11 @@ This repair:
 - Preserves U4 (per-site Hilbert dim = 2): the dimensional
   conclusion holds in both chirality summands, so per-site Hilbert
   dim = 2 is independent of the chirality choice.
-- Acknowledges that U4 uses A3 (one Grassmann pair per site →
+- Acknowledges that U4 uses the staggered-Dirac/Grassmann realization
+  input (one Grassmann pair per site →
   2-dim Fock space) for the Cl(3)-irrep-to-Hilbert-space bridge,
-  not A1 alone. The hypothesis set is updated accordingly.
+  not the physical `Cl(3)` local algebra alone. The hypothesis set is
+  updated accordingly.
 
 The canonical convention adopted in the rest of the package
 (`γ_i = σ_i`, `ω = +i`) corresponds to the positive-chirality
@@ -81,50 +86,53 @@ dim = 2 (notably the spin-statistics chain) are unaffected; consumers
 that assume "the unique 2-dim Cl(3) irrep" need to be aware of the
 chirality choice.
 
-## Review-loop repair (2026-05-03 second pass - A3 bridge gate)
+## Historical context (2026-05-03 second pass — staggered-Dirac/Grassmann bridge gate; superseded by 2026-05-08 narrowing)
+
+> **Status note (2026-05-17 audited_conditional repair):** This subsection
+> is retained for historical context only. It describes a U4 closure path
+> via the staggered-Dirac realization gate that was *moved out of this
+> note's scope* by the 2026-05-08 narrowing to U1–U3
+> (physical-Cl(3)-only). The
+> staggered-Dirac gate is therefore **not** a one-hop cited authority of
+> the present physical-Cl(3)-only audit packet. All references to
+> `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` and
+> `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` below
+> appear backticked-only as non-load-bearing metadata; see the explicit
+> citation-graph statement in §"Audit dependency scoping (2026-05-17)".
 
 The 2026-05-03 review follow-up identified a remaining scope gate:
 U4's "one-Grassmann-pair staggered-fermion normalization" used to
 identify the abstract 2-dim Cl(3) chirality module with the physical
-per-site Hilbert space chains through A3, but the current canonical
+per-site Hilbert space chains through the staggered-Dirac/Grassmann
+realization input, but the current canonical
 minimal-input surface
 [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
-places the staggered/Grassmann realization outside the A1+A2 primitive
-kernel.
+places the staggered/Grassmann realization outside the physical `Cl(3)`
+local algebra plus `Z^3` spatial substrate primitive kernel.
 
-The repair: cite the **open-gate** authority for the staggered-Dirac
-realization rather than treat A3 as a primitive input.
+The historical repair (now superseded): cite the open-gate authority
+for the staggered-Dirac realization rather than treat the
+staggered-Dirac/Grassmann realization input as primitive. The
+historical citation target was
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (backticked here
+as non-load-bearing metadata under the 2026-05-08 narrowed scope).
 
-**Cited authority:**
-[`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-is the open-gate authority for the staggered-Dirac/Grassmann
-realization on A1+A2. It explicitly enumerates the closure routes
-that, when one lands as a positive theorem and clears the independent
-audit lane, will provide the Grassmann/Fock per-site bridge from the
-minimal-input surface.
-
-**Status of U4 under this scoping:**
+**Status of U4 under the 2026-05-08 narrowing:**
 - **U2, U3** (the abstract Cl(3) representation classification with
-  chirality split) load-bear on A1 only and remain unconditional.
-- **U4** (per-site Hilbert dim = 2 on the **physical** lattice) is
-  now explicitly **conditional on the staggered-Dirac realization
-  gate**. Until the gate closes (a positive theorem deriving the
-  one-Grassmann-pair Fock structure from A1+A2 alone), U4 is a
-  bounded/conditional statement that "**if** A3 (one Grassmann pair
-  per site) is admitted as the physical-lattice realization, **then**
-  per-site Hilbert dim = 2 follows from U2's chirality-summand
-  dim = 2."
+  chirality split) load-bear on the physical `Cl(3)` local algebra only
+  and remain unconditional.
+- **U4** (per-site Hilbert dim = 2 on the **physical** lattice) has been
+  moved out of this note's audited scope as of the 2026-05-08 narrowing;
+  the staggered-Dirac/Grassmann bridge content is now carried by substep
+  1 of the staggered-Dirac realization gate
+  (`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`)
+  rather than by this note. That citation appears backticked-only here as
+  non-load-bearing metadata.
 
-This conditional-on-open-gate status is the honest scope:
-- The chirality-aware U2/U3 algebraic content is solid (A1-only).
-- The physical bridge U4 awaits open-gate closure.
-- Downstream consumers (spin-statistics chain, Pauli exclusion, etc.)
-  inherit this conditional dependency until the gate closes positively
-  and the independent audit lane validates the dependency chain.
-
-The runner still PASS=6/6 on the algebraic content; the open-gate
-dependency does not affect runner-level verification, only the
-publication-facing retention status.
+The runner still PASS=6/6 on the physical-Cl(3)-only U1–U3 algebraic content; the
+out-of-scope U4 references do not affect runner-level verification of
+the audited claim or the publication-facing retention status of this
+physical-Cl(3)-only packet.
 
 ## Scope
 
@@ -143,16 +151,16 @@ After this note, Cycle 1's Step 2 argument is closed at the
 representation-theoretic level: per-site Hilbert dim = 2 is a
 theorem, not a stipulation.
 
-## A_min objects in use
+## Explicit framework object in use
 
-- **A1 — local algebra `Cl(3)`.** Used as the canonical real
+- **Physical `Cl(3)` local algebra.** Used as the canonical real
   Clifford algebra with three generators `γ_1, γ_2, γ_3` satisfying
 
   ```text
       { γ_i ,  γ_j }   :=   γ_i γ_j  +  γ_j γ_i   =   2 δ_{ij} · I.    (1)
   ```
 
-  No other A_min ingredient is used in this note.
+  No other explicit-framework-baseline ingredient is used in this note.
 
 ## Statement
 
@@ -193,10 +201,11 @@ populated and the decomposition reduces to `n_+` copies of the
 Pauli irrep.
 
 **(U4 — out of scope of this note as of 2026-05-08.)** The
-per-site Hilbert dimension conclusion on `A_min` (combining (U2)
-with A3's one-Grassmann-pair-per-site canonical normalisation) is
-NOT a theorem of this note. It is downstream content carried by
-the staggered-Dirac realization gate's substep 1
+per-site Hilbert dimension conclusion on the explicit framework
+baseline (combining (U2) with the one-Grassmann-pair-per-site
+canonical normalisation supplied by the staggered-Dirac/Grassmann
+realization input) is NOT a theorem of this note. It is downstream
+content carried by the staggered-Dirac realization gate's substep 1
 (`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`).
 Downstream cycles (spin-statistics, RP, cluster, CPT) that need
 the per-site dim = 2 conclusion should cite that substep, not
@@ -311,25 +320,27 @@ complex rep exists.
 
 The per-site Hilbert dimension argument that was Step 6 of the
 original proof is no longer in scope of this note. It depended on
-A3 (staggered-fermion canonical normalisation, one Grassmann pair
-per site) in addition to A1, so it cannot be derived from the A1
-content here. The argument now lives in the staggered-Dirac
-realization gate's substep 1
+the staggered-Dirac/Grassmann realization input (staggered-fermion
+canonical normalisation, one Grassmann pair per site) in addition to
+the physical `Cl(3)` local algebra, so it cannot be derived from the
+local-algebra content here. The argument now lives in the
+staggered-Dirac realization gate's substep 1
 (`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`),
-which forces the Grassmann partition from A1 + admissible
-mathematical infrastructure plus the spin-statistics S2 dimension
-match. ∎
+which forces the Grassmann partition from the physical `Cl(3)` local
+algebra plus admissible mathematical infrastructure plus the
+spin-statistics S2 dimension match. ∎
 
 ## Hypothesis set used
 
-**A1 alone** (Cl(3) site algebra structure) for U1–U3, the in-scope
+**Physical `Cl(3)` local algebra alone** for U1–U3, the in-scope
 content of this note. The proof uses the standard real-algebra
 classification of `Cl(3,0)`, explicit complexification via the
 central pseudoscalar `ω`, and Schur's lemma in each chirality
 summand. All elementary finite-dim representation theory; no
-imports from the forbidden list. **No A3 dependency** — the former
-U4 step that brought in A3 has been moved to substep 1 of the
-staggered-Dirac realization gate.
+imports from the forbidden list. **No staggered-Dirac/Grassmann
+realization dependency** — the former U4 step that brought in that
+input has been moved to substep 1 of the staggered-Dirac realization
+gate.
 
 ## Corollaries (downstream tools)
 
@@ -345,16 +356,16 @@ structure.
 
 C2. *Universality of the spin-1/2 representation under the
 canonical chirality choice.* Any half-integer spin lattice fermion
-content on `A_min` (with the package convention `γ_i = σ_i`,
+content on the explicit framework baseline (with the package convention `γ_i = σ_i`,
 `ω = +i`) lives in a direct sum of the positive-chirality Pauli
 irrep `ρ_+`. Higher-spin matter content, if needed, requires
 *extending* the local algebra beyond `Cl(3)`, which would change
-`A_min`. This is a structural rigidity result modulo the chirality
-convention.
+the explicit framework baseline. This is a structural rigidity result
+modulo the chirality convention.
 
 C3. *No-go for "alternative" Cl(3) site algebras within the chosen
 chirality.* Anyone proposing an alternative spinor representation
-on `A_min` must produce one that is unitarily equivalent to
+on the explicit framework baseline must produce one that is unitarily equivalent to
 `ρ_+ = (σ_1, σ_2, σ_3)` or, with an explicit parity flip, to
 `ρ_- = (-σ_1, -σ_2, -σ_3)`. There are exactly two non-isomorphic
 finite-dim faithful Cl(3) irreps and no others.
@@ -370,7 +381,8 @@ content of any downstream cycle.
 
 ## Honest status
 
-**Branch-local theorem.** (U1)–(U3) are proved on A1 alone by
+**Branch-local theorem.** (U1)–(U3) are proved on the physical `Cl(3)`
+local algebra alone by
 standard real-algebra classification, explicit complexification
 via the central pseudoscalar, and Schur's lemma in each chirality
 summand. The runner exhibits the load-bearing facts:
@@ -379,8 +391,9 @@ anticommutation relations of Pauli; central-pseudoscalar identity
 `ω → ±i` on `ρ_±`; non-existence of an odd-dim faithful complex
 rep; and unitarity of intertwiners within each chirality summand.
 The 2026-05-08 narrowing dropped U4 (per-site Hilbert dim = 2 on
-`A_min`) from this note's scope; that A3-bridge content is now
-carried by substep 1 of the staggered-Dirac realization gate.
+the explicit framework baseline) from this note's scope; that
+staggered-Dirac/Grassmann bridge content is now carried by substep 1
+of the staggered-Dirac realization gate.
 
 **Not in scope.**
 
@@ -396,7 +409,30 @@ carried by substep 1 of the staggered-Dirac realization gate.
 
 ## Load-bearing Dependencies
 
-- A_min: [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md)
+- Explicit framework baseline: [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md)
+
+## Audit dependency scoping (2026-05-17)
+
+Per the 2026-05-08 narrowing of this note to physical-Cl(3)-only U1–U3 content, and
+the 2026-05-10 `audited_conditional` repair instruction
+(*"remove the out-of-scope staggered-Dirac gate citation from this
+physical-Cl(3)-only audit packet or mark it as non-load-bearing metadata outside
+the one-hop cited-authority set"*), the following notes appear in
+this file as **non-load-bearing metadata only**, backticked rather
+than markdown-linked so the citation graph parser does not register
+them as one-hop dependencies of the physical-Cl(3)-only U1–U3 audit packet:
+
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — historical
+  context for the now-out-of-scope U4 closure path.
+- `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` —
+  carrier of the out-of-scope U4 / staggered-Dirac/Grassmann bridge
+  content; consumed by downstream notes (spin-statistics, RP, cluster
+  decomposition, CPT) directly, not via this note.
+
+The single load-bearing one-hop dependency of the U1–U3 physical-Cl(3)-only packet
+is `MINIMAL_AXIOMS_2026-04-11.md` (and its successor surface
+`MINIMAL_AXIOMS_2026-05-03.md` cited above in the historical-context
+section).
 
 ## Citations
 

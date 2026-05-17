@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 114 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 347 |
+| **retained_bounded** | 348 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1228 |
+| unaudited | 1227 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 573 |
+| `audited_clean` | 574 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1441 |
+| `unaudited` | 1440 |
 
 | claim_type | count |
 |---|---:|
@@ -228,6 +228,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_operator_selection_obstruction_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -3703,6 +3704,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** {M(phi), gamma_5} = 0, hence P_L M(phi) P_L = P_R M(phi) P_R = 0, and at axis inputs M(e_i) = Gamma_i while Xi_5 is not chiral off-diagonal.  _(class `A`)_
 - **chain closes:** True — The narrowed algebraic claim closes from the explicit Gamma_i/gamma_5 packet and retained_bounded one-hop weak-vector authority. The Higgs-family origin, selector derivation, chirality-framework derivation, and weak-axis convention are not needed for this narrowed algebraic scope; they would be load-bearing only for the broader physical operator-selection narrative.
 - **rationale:** The in-scope theorem is finite matrix algebra, not a definition-as-derivation: after the matrices and projectors are fixed, anticommutation and same-chirality block vanishing follow directly. The primary runner completed with 28 PASS and 0 FAIL; its selector grid check is not an exact proof of the selector theorem, but that selector theorem is explicitly admitted-context and outside this audited scope. The audit companion source Parts 1-7 are valid exact SymPy checks for the algebraic core; Part 8 reads the audit ledger and was neither run nor relied on.
+- **auditor confidence:** high
+
+### `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional algebra for the explicit matrices F00=J3/3 and F_row=J2/2: projector spectra/idempotency, scalar-baseline determinant response equality, and the stated trace corollaries.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-212158-78dc5814-dm_neutrino_k00_bosonic_-004`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because F00 and F_row are rank-one projectors with spectra {1,0,...}, det(mI+jF) equals m^{n-1}(m+j), so both baseline-subtracted log-determinant responses equal log|1+j/m|.  _(class `A`)_
+- **chain closes:** True — For the explicit matrices, J_n^2=nJ_n gives idempotency and spectra, and the determinant formulas reduce both normalized responses to (m+j)/m, so the log identity follows when m != 0 and m+j != 0. The runner source constructs the matrices and symbolic determinants directly in sympy without importing external values.
+- **rationale:** The load-bearing step is a genuine finite-dimensional algebraic identity over explicit matrices, not a definition, renaming, numerical fit, or external comparator. The runner source performs exact symbolic matrix multiplication, spectra, determinant, and trace checks rather than printing hard-coded pass lines. There are no load-bearing cited authorities, so no open upstream dependency blocks the bounded claim.
 - **auditor confidence:** high
 
 ### `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`

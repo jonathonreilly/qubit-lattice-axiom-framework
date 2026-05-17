@@ -419,6 +419,9 @@ def main() -> int:
         "block132_noether_fresh_artifact_intake": load(
             "outputs/yt_pr230_block132_noether_fresh_artifact_intake_2026-05-17.json"
         ),
+        "block133_fresh_math_artifact_reopen_audit": load(
+            "outputs/yt_pr230_block133_fresh_math_artifact_reopen_audit_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -3294,6 +3297,51 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block133_fresh_math_artifact_reopen_audit_keeps_imports_clean = (
+        "Block133 fresh math-artifact reopen audit finds no PR230 strict closure root"
+        in str(
+            certificates["block133_fresh_math_artifact_reopen_audit"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block133_fresh_math_artifact_reopen_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block133_fresh_math_artifact_reopen_audit"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block133_fresh_math_artifact_reopen_audit"].get(
+            "block133_fresh_math_artifact_reopen_audit_passed"
+        )
+        is True
+        and certificates["block133_fresh_math_artifact_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_cl3_schur_separator_as_feshbach_pole_authority")
+        is True
+        and certificates["block133_fresh_math_artifact_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_cluster_decomposition_as_scalar_lsz_or_source_overlap")
+        is True
+        and certificates["block133_fresh_math_artifact_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_lattice_green_readout_as_yukawa_or_scale_authority")
+        is True
+        and all(
+            value is False
+            for value in certificates["block133_fresh_math_artifact_reopen_audit"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block133-fresh-math-artifact-reopen-audit-keeps-imports-clean",
+        block133_fresh_math_artifact_reopen_audit_keeps_imports_clean,
+        certificates["block133_fresh_math_artifact_reopen_audit"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3612,6 +3660,7 @@ def main() -> int:
             "does not treat complete finite Schur A/B/C support as strict pole coordinate, derivative, source-projection, FV/IR, or canonical bridge authority",
             "does not treat action-first source-Higgs packet support as closure before accepted action/O_H/LSZ, source-overlap kappa, time-kernel rows, and strict C_ss/C_sH/C_HH pole residues exist",
             "does not treat carrier-independent lattice-Noether support as PR230 canonical O_H, source-Higgs pole-row, W/Z, Schur, or neutral-transfer authority",
+            "does not treat fresh Cl(3) Schur-separator, cluster-decomposition, or lattice-Green arithmetic branches as PR230 strict closure roots",
             "does not treat package hierarchy v as a PR230 W/Z absolute-normalization pin",
             "does not treat post-Block100 completion/reopen audit status, completed chunks, or fetched remote path names as positive closure",
             "does not treat the Block109 frontier selector or prompt-to-artifact checklist as physics closure",
@@ -3650,6 +3699,7 @@ def main() -> int:
         "block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean": block130_neutral_h3h4_eta_nonidentifiability_keeps_imports_clean,
         "block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean": block131_action_first_source_higgs_authority_construction_attempt_keeps_imports_clean,
         "block132_noether_fresh_artifact_intake_keeps_imports_clean": block132_noether_fresh_artifact_intake_keeps_imports_clean,
+        "block133_fresh_math_artifact_reopen_audit_keeps_imports_clean": block133_fresh_math_artifact_reopen_audit_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

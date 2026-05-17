@@ -530,3 +530,39 @@ Verified at `2026-05-17T18:24:45Z`:
 - Block132 fresh Noether artifact intake runner: `PASS=11 FAIL=0`
 - campaign status certificate: `PASS=453 FAIL=0`
 - assumption/import stress: `PASS=136 FAIL=0`
+
+## Block133
+
+Working title: PR230 Block133 fresh math-artifact reopen audit.
+
+Purpose:
+
+- ingest the fresh fetched branches
+  `origin/claude/cl3-chirality-schur-separator-2026-05-17`,
+  `origin/physics-loop/axiom-first-cluster-decomposition-block28-2026-05-17`,
+  and `origin/ship/lattice_green_zero_argument_narrow_2026_05_17`;
+- test whether any supplies a strict PR230 route root rather than only narrow
+  support in its own lane;
+- reject name-adjacent shortcuts: abstract Cl(3) Schur-separator content is
+  not Schur/Feshbach pole authority, conditional cluster/gap support is not
+  scalar LSZ/source-overlap authority, and finite lattice-Green arithmetic is
+  not scale or Yukawa authority;
+- preserve the no-closure firewall while recording the fresh-artifact intake.
+
+Files:
+
+- `docs/YT_PR230_BLOCK133_FRESH_MATH_ARTIFACT_REOPEN_AUDIT_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block133_fresh_math_artifact_reopen_audit.py`
+- `outputs/yt_pr230_block133_fresh_math_artifact_reopen_audit_2026-05-17.json`
+
+Result: exact negative boundary.  All three fresh branches are real narrow
+math/support artifacts, but none supplies accepted canonical `O_H`/action/LSZ,
+source-overlap `kappa_s`, strict `C_ss/C_sH/C_HH` pole rows, W/Z response,
+Schur/Feshbach pole authority, or neutral H3/H4 authority.
+
+Verified at `2026-05-17T18:37:20Z`:
+
+- Block133 py_compile: passed
+- Block133 fresh math-artifact reopen audit runner: `PASS=11 FAIL=0`
+- campaign status certificate: `PASS=454 FAIL=0`
+- assumption/import stress: `PASS=137 FAIL=0`

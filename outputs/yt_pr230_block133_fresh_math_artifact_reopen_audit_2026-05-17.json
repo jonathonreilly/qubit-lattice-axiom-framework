@@ -1,0 +1,97 @@
+{
+  "actual_current_surface_status": "exact negative boundary / Block133 fresh math-artifact reopen audit finds no PR230 strict closure root in the newly fetched Cl(3) Schur-separator, spatial slab cluster-decomposition, or lattice Green-function arithmetic branches",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": false,
+  "bare_retained_allowed": false,
+  "block133_fresh_math_artifact_reopen_audit_passed": true,
+  "conditional_surface_status": null,
+  "current_closure_satisfied": false,
+  "fail_count": 0,
+  "forbidden_firewall": {
+    "claimed_retained_or_proposed_retained": false,
+    "set_c2_equal_one": false,
+    "set_kappa_s_equal_one": false,
+    "set_z_match_equal_one": false,
+    "used_alpha_lm_plaquette_or_u0": false,
+    "used_cl3_schur_separator_as_feshbach_pole_authority": false,
+    "used_cluster_decomposition_as_scalar_lsz_or_source_overlap": false,
+    "used_hunit_matrix_element_readout": false,
+    "used_lattice_green_readout_as_yukawa_or_scale_authority": false,
+    "used_observed_top_or_yukawa": false,
+    "used_y_t_bare": false,
+    "used_yt_ward_identity": false
+  },
+  "fresh_artifacts": {
+    "cl3_schur_separator": {
+      "log_pass_marker": null,
+      "log_present": null,
+      "note": "docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/claude/cl3-chirality-schur-separator-2026-05-17",
+      "ref_present": true,
+      "script": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
+      "script_pass_marker": true,
+      "script_present": true
+    },
+    "cluster_spatial_slab_bridge": {
+      "log_pass_marker": true,
+      "log_present": true,
+      "note": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/physics-loop/axiom-first-cluster-decomposition-block28-2026-05-17",
+      "ref_present": true,
+      "script": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
+      "script_pass_marker": true,
+      "script_present": true
+    },
+    "lattice_green_zero_argument": {
+      "log_pass_marker": null,
+      "log_present": null,
+      "note": "docs/LATTICE_GREEN_FUNCTION_ZERO_ARGUMENT_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "note_present": true,
+      "note_token_hits": [],
+      "ref": "origin/ship/lattice_green_zero_argument_narrow_2026_05_17",
+      "ref_present": true,
+      "script": "scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py",
+      "script_pass_marker": true,
+      "script_present": true
+    }
+  },
+  "hypothetical_axiom_status": null,
+  "pass_count": 11,
+  "pr230_missing_roots_after_intake": {
+    "accepted_canonical_O_H_action_LSZ": true,
+    "neutral_H3_H4_transfer_or_coupling_authority": true,
+    "source_overlap_kappa": true,
+    "strict_C_ss_C_sH_C_HH_pole_rows": true,
+    "strict_Schur_Feshbach_pole_authority": true,
+    "strict_WZ_response_packet": true
+  },
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "Fresh math branches are narrow support outside the PR230 physical readout contracts.",
+  "strict_non_claims": {
+    "does_not_claim_retained_or_proposed_retained": true,
+    "does_not_treat_cl3_schur_separator_as_feshbach_pole_authority": true,
+    "does_not_treat_cluster_decomposition_as_scalar_lsz_or_source_overlap": true,
+    "does_not_treat_lattice_green_readout_as_yukawa_or_scale_authority": true
+  },
+  "strict_root_candidate_hits": {
+    "cl3_schur_separator": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "abstract Cl(3) Schur-scalar chirality separator, not Schur/Feshbach pole authority"
+    },
+    "cluster_spatial_slab_bridge": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "conditional cluster/gap bridge; no scalar LSZ/source-overlap or PR230 row authority"
+    },
+    "lattice_green_zero_argument": {
+      "is_pr230_reopen_candidate": false,
+      "note_token_hits": [],
+      "reason": "closed finite arithmetic readout; no PR230 scale/Yukawa authority"
+    }
+  }
+}

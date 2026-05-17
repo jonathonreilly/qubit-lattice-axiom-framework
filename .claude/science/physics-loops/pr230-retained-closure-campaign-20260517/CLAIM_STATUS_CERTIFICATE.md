@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block132.
+Status: exact negative boundary plus bounded support through Block133.
 
 `proposed_retained`: not allowed.
 
@@ -78,6 +78,15 @@ physical operator identification.  It supplies no accepted canonical
 `O_H`/action/LSZ authority, source-overlap `kappa_s`, strict
 `C_ss/C_sH/C_HH` pole rows, W/Z response packet, Schur pole authority, or
 neutral H3/H4 authority for PR230.
+Block133 then intakes three fresh narrow-math branches: the Cl(3)
+Schur-separator theorem, the spatial slab cluster-decomposition bridge, and
+the lattice Green-function zero-argument arithmetic theorem.  These are real
+narrow support in their own lanes, but not PR230 physical readout authority:
+the Schur separator is abstract chirality representation theory, the cluster
+bridge is conditional gap support, and the Green readout is finite arithmetic.
+They supply no accepted canonical `O_H`/action/LSZ authority,
+source-overlap `kappa_s`, strict `C_ss/C_sH/C_HH` pole rows, W/Z response
+packet, Schur/Feshbach pole authority, or neutral H3/H4 authority.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -116,6 +125,10 @@ neutral H3/H4 authority for PR230.
 - no Noether-current shortcut after Block132: carrier-independent bilateral
   current algebra is not canonical `O_H`, source-Higgs pole-row, W/Z, Schur, or
   neutral-transfer authority.
+- no fresh-math-branch shortcut after Block133: the Cl(3) Schur separator,
+  spatial slab cluster-decomposition bridge, and lattice Green-function
+  arithmetic readout are not PR230 strict source-Higgs, W/Z, Schur/Feshbach, or
+  neutral authority packets.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an
   allowed W/Z absolute pin is supplied.

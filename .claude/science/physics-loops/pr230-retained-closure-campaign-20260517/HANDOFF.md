@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block132-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block133-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -26,6 +26,8 @@ Stacked review PR for Block131:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1481
 Stacked review PR for Block132:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1487
+Stacked review PR for Block133:
+pending
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -208,6 +210,23 @@ same-surface theorem maps a certified Noether current to canonical `O_H`/
 source-Higgs pole rows or W/Z physical response with covariance and strict
 `g2`.  Absent that, PR230 still needs one of the strict source-Higgs, W/Z,
 Schur, or neutral artifacts named in the route queue.
+
+Block133 audits the fresh fetched narrow-math branches after Block132:
+`origin/claude/cl3-chirality-schur-separator-2026-05-17`,
+`origin/physics-loop/axiom-first-cluster-decomposition-block28-2026-05-17`,
+and `origin/ship/lattice_green_zero_argument_narrow_2026_05_17`.  Result:
+exact negative boundary.  The Cl(3) Schur separator is abstract chirality
+representation theory, not Schur/Feshbach pole authority; the spatial slab
+cluster bridge is conditional gap support, not scalar LSZ/source-overlap
+authority; and the lattice Green readout is closed arithmetic, not a PR230
+scale or Yukawa authority.  Reruns: Block133 `PASS=11`, campaign status
+`PASS=454`, assumption/import stress `PASS=137`.
+
+Active next work after Block133: the cleanest route remains action-first
+source-Higgs closure with accepted same-surface canonical `O_H`/action/LSZ
+authority plus strict numeric `C_ss/C_sH/C_HH` pole-residue rows sharing
+source/action/`O_H` surface IDs.  W/Z, Schur/Feshbach, or neutral routes reopen
+only with their strict physical-response, pole, or transfer authority packets.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

@@ -42,6 +42,9 @@ https://github.com/jonathonreilly/cl3-lattice-framework/pull/1497
 Stacked review PR for Block135:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1503
 
+Stacked review PR for Block136:
+https://github.com/jonathonreilly/cl3-lattice-framework/pull/1506
+
 Branch/PR blocks:
 
 - Block120 source-reparametrization invariant minimal-data boundary into PR230
@@ -91,9 +94,13 @@ Branch/PR blocks:
 - Block135 fresh source-field/action-phase reopen audit on branch
   `physics-loop/pr230-retained-closure-campaign-block135-20260517`, stacked
   above Block134.
+- Block136 fresh Noether/Koide/anomaly/Poisson reopen audit on branch
+  `physics-loop/pr230-retained-closure-campaign-block136-20260517`, stacked
+  above Block135.
 
 Updated PR bodies prepared in `PR_BODY_BLOCK121.md`, `PR_BODY_BLOCK122.md`,
 `PR_BODY_BLOCK124.md`, `PR_BODY_BLOCK125.md`, `PR_BODY_BLOCK126.md`, and
 `PR_BODY_BLOCK127.md`, `PR_BODY_BLOCK128.md`, `PR_BODY_BLOCK129.md`,
 `PR_BODY_BLOCK130.md`, `PR_BODY_BLOCK131.md`, `PR_BODY_BLOCK132.md`, and
-`PR_BODY_BLOCK133.md`, `PR_BODY_BLOCK134.md`, and `PR_BODY_BLOCK135.md`.
+`PR_BODY_BLOCK133.md`, `PR_BODY_BLOCK134.md`, `PR_BODY_BLOCK135.md`, and
+`PR_BODY_BLOCK136.md`.

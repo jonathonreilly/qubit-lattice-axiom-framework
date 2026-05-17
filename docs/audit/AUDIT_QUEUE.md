@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1233
-**Ready (all deps already at retained-grade or metadata tiers):** 36
+**Total pending:** 1232
+**Ready (all deps already at retained-grade or metadata tiers):** 37
 
 By criticality:
-- `critical`: 756
+- `critical`: 755
 - `high`: 35
 - `medium`: 153
 - `leaf`: 289
@@ -15,9 +15,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | positive_theorem | unaudited | critical | 810 | 11.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_lhcm_matter_assignment.py` |
-| 2 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | unaudited | critical | 809 | 11.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py` |
-| 3 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | unaudited | critical | 808 | 20.16 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
+| 1 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | unaudited | critical | 809 | 11.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py` |
+| 2 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | unaudited | critical | 808 | 20.16 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
+| 3 | `hypercharge_identification_note` | bounded_theorem | unaudited | critical | 808 | 18.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hypercharge_identification.py` |
 | 4 | `poisson_self_gravity_loop_v3_note` | bounded_theorem | unaudited | critical | 808 | 11.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/poisson_self_gravity_loop_v3.py` |
 | 5 | `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 806 | 16.66 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 6 | `gravity_law_cleanup_note` | bounded_theorem | unaudited | critical | 805 | 11.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/gravity_distance_fixed_geometry.py` |

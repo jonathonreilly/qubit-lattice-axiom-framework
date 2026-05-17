@@ -5,6 +5,13 @@ description: Use when an LLM agent needs to turn adversarial review feedback int
 
 # Reviewer Backpressure Integrator
 
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
 Use this skill after review has found pressure points. Its job is not to defend
 the original branch. Its job is to make the repo state honest.
 

@@ -5,6 +5,13 @@ description: Run the cl3-lattice-framework audit lane as an adversarial Nature-g
 
 # Audit Loop
 
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
 Use this skill to audit one claim at a time from the repository audit queue and land the audit result. The standard is hostile field review: the claim must survive an adversarial physicist looking for hidden imports, circular logic, definition-as-derivation, stale numerics, misidentified observables, and overstated closure.
 
 ## Non-Negotiables

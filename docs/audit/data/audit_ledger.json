@@ -255633,7 +255633,7 @@
   },
   "schema_version": 1,
   "stats": {
-    "dropped_gated_sources": 155,
+    "dropped_gated_sources": 156,
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,

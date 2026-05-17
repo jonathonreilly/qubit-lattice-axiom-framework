@@ -5,6 +5,13 @@ description: Use when an LLM agent needs to synthesize raw prompt captures, repo
 
 # Methodology Paper Synthesizer
 
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
 Use this skill to turn raw AI/repo evidence into paper-ready methodology
 material without confusing raw prompt history with public authority.
 

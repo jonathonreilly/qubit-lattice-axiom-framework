@@ -38697,7 +38697,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0f9d7ea2e5b8059cd062b7299ea6a27c7329d0c2e9102e46233550b98bf690fb",
+      "note_hash": "b00f67eda85d24100ceb8190a7047e758cc4330a24068aca81b692f945107aa8",
       "path": "docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
       "runner_path": null,
       "title": "AI Physics Lane Builder"
@@ -38723,7 +38723,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9754288ce24836e0f4e906bcccf4960599bd2ac4e887e32f77042a234db14b6b",
+      "note_hash": "21d11efedf9932e714ab55512bbed0bc1e8fe1ad0246ae92107175edd14c9dad",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -38735,7 +38735,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "413b1c3d6517b6c5e6b02b2d9f2612e4d690430f12692e56b205aac8ea2f8c8d",
+      "note_hash": "2ab667a256bdf7e65217a180b58c95742a0ae3f0f5b6d6e3fdba55028191f6a0",
       "path": "docs/ai_methodology/skills/methodology-paper-synthesizer/SKILL.md",
       "runner_path": null,
       "title": "Methodology Paper Synthesizer"
@@ -38761,7 +38761,7 @@
         "ai_methodology.skills.no-go-discipline.references.case-studies"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8ecc536fdbcae254393635ea52a29ff43214b48324fe2fc585efb6084ff83fa9",
+      "note_hash": "0af2f586e2113d05e643b1c8751aa30c9a6d46bb02396459aca8a3de776c8f72",
       "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
       "runner_path": null,
       "title": "No-Go Discipline"
@@ -38773,7 +38773,7 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "66b7487a9bb3c8a65c0ebad90bc77be1173f94adb28c0bedc18670d8724b219a",
+      "note_hash": "cd6eaffa534dd76dfc9ddf57244b67877087dddf377ece4204a2194165a5f614",
       "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
       "runner_path": null,
       "title": "Physics Claim Reviewer"
@@ -38852,7 +38852,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5bb6401f75aedad3884148c40eaa533d6c4f9573c3d8e750e6dfaf6375a28a4d",
+      "note_hash": "fd6568a0c9173f1d6e7c25a7e02aa0cccb9ac4dbc064cc9c4113fd3002971441",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -38866,7 +38866,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dda2f2b290598e10d1310284b6c6874d02c3c9e2f429972fd38c55dcf18ea02c",
+      "note_hash": "06587f617fbc46bd9fd64f5b188a64ef4eb6e7b6845cb0f893da0ba141b27eeb",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": null,
       "title": "Review Loop"
@@ -38878,10 +38878,22 @@
       "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "e1b4c1d32a74e1d85c4ac6ae8dfab92b960f5ab44562c7d97572f532aa998c5b",
+      "note_hash": "adb021274bd3b6cb67059127ff4047f7376d96e28ba07088cecd68a5c7da8a30",
       "path": "docs/ai_methodology/skills/reviewer-backpressure-integrator/SKILL.md",
       "runner_path": null,
       "title": "Reviewer Backpressure Integrator"
+    },
+    "ai_methodology.skills.skill_freshness_check": {
+      "claim_id": "ai_methodology.skills.skill_freshness_check",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": null,
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a5e6751bda507507d9efbb8355b2235a145e62e1680f9436e1910948bb589af9",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "runner_path": null,
+      "title": "Skill Freshness Check"
     },
     "ai_methodology_note_2026-04-25": {
       "claim_id": "ai_methodology_note_2026-04-25",
@@ -77474,6 +77486,7 @@
     "ai_methodology.skills.physics-loop.references.long-running-execution",
     "ai_methodology.skills.physics-loop.references.route-patterns",
     "ai_methodology.skills.reviewer-backpressure-integrator.skill",
+    "ai_methodology.skills.skill_freshness_check",
     "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
     "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
     "alt_connectivity_family_sign_note",
@@ -78251,7 +78264,7 @@
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
-      "none": 1533,
+      "none": 1534,
       "open_gate": 44,
       "positive_theorem": 164
     },
@@ -78260,14 +78273,14 @@
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
-      "none": 449,
+      "none": 450,
       "open_gate": 123,
       "positive_theorem": 617
     },
     "edge_count": 9279,
-    "leaf_count": 740,
-    "node_count": 2397,
-    "root_count": 861,
+    "leaf_count": 741,
+    "node_count": 2398,
+    "root_count": 862,
     "runners_with_path": 2002
   }
 }

@@ -5,6 +5,13 @@ description: Use when an LLM agent needs to adversarially review a candidate phy
 
 # Physics Claim Reviewer
 
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
 Use this skill to apply reviewer pressure before a claim lands on the live
 surface. The raw synthesis shows that the most common failure is not bad prose;
 it is artifact-chain or semantic drift.

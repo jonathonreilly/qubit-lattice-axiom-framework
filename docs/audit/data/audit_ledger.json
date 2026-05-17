@@ -71854,43 +71854,56 @@
       "verdict_rationale": null
     },
     "electrostatics_grown_sign_law_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T13:13:21.268138+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.156,
+        "runner_hash": "61009b503a32b17bd359720a0b7b2be7950886167fbbc74d8ce9aac51ece9ba5",
+        "transitive_descendants": 806
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-131300-20260517T131300Z-dcb3049b-electrostatics_grown_sig-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source computes the printed table rather than hard-coding the contested numbers, but it depends on scripts.gate_b_grown_joint_package.grow and that helper implementation is not included in the restricted packet. The missing step is verification of the grown-geometry construction used as the retained row.",
       "claim_id": "electrostatics_grown_sign_law_note",
-      "claim_scope": null,
+      "claim_scope": "One fixed grown geometry row with drift=0.2 and restore=0.7, fixed field, no graph update, one source layer, one final-layer detector centroid, and the listed single-source/superposition cases.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T13:13:21.268138+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/gate_b_grown_joint_package.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.156,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the retained grown row, the sign law survives cleanly: single +1 is AWAY, single -1 is TOWARD, same-point +/- cancels to zero, and +2 is linear relative to +1.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "681d4be08ee2be1209abc0bb84cba278c8464c4f12fda9cab3788f5f2d23a6d1",
       "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full scripts/gate_b_grown_joint_package.py helper source or an equivalent cached certificate for grow(drift=0.2, restore=0.7, seeds=[0,1]).",
+      "open_dependency_paths": [
+        "scripts/gate_b_grown_joint_package.py"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -72030,16 +72043,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 2
       },
       "runner_path": "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py",
       "title": "Electrostatics Grown Sign-Law Note",
       "transitive_descendants": 806,
-      "verdict_rationale": null
+      "verdict_rationale": "The provided runner output matches the note, and the runner source performs an actual propagation computation over generated geometries with neutral-cancellation and charge-linearity checks. However, the load-bearing geometry is imported through an unavailable helper, so the restricted packet does not fully close the computation from the allowed inputs. The claim remains narrow and bounded, not geometry-generic, but its reproducibility depends on a missing dependency edge."
     },
     "electrostatics_superposition_proxy_note": {
       "audit_date": "2026-05-04T23:52:26.154523+00:00",

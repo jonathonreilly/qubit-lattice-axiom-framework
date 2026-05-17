@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1236 |
+| unaudited | 1235 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 156 |
+| ~~audited_conditional~~ | 157 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 156 |
+| `audited_conditional` | 157 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1433 |
+| `unaudited` | 1432 |
 
 | claim_type | count |
 |---|---:|
@@ -714,6 +714,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_sigma_hier_h_intrinsic_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_split2_dense_grid_lipschitz_dominance_support_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `dm_strong_cp_gamma_transfer_no_go_note_2026-04-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
+| `electrostatics_grown_sign_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `family_companion_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -3551,6 +3552,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The same ordered-lattice machinery can support an electrostatic-like scalar sign law in which like charges repel, unlike charges attract, null superpositions cancel, dipoles flip sign, response scales linearly, and screening attenuates.  _(class `C`)_
 - **chain closes:** True — The runner explicitly instantiates the 3D ordered lattice, constructs scalar source fields, propagates charged test packets, and computes the reported centroid shifts rather than printing constants. The audited conclusion is limited to the constructed scalar sign-law probe and does not require Maxwell, gauge, magnetic, or radiative structure.
 - **rationale:** The provided source code performs an internal numerical computation over the lattice machinery and derives the sign antisymmetry, null cancellation, dipole flip, charge-scaling exponent, and screening attenuation values shown in stdout. The reported numbers are not hard-coded expected outputs, and no external comparator or cross-note value is imported. The clean verdict applies only to the narrow scalar sign-coupled construction as stated, not to any broader electromagnetic theory.
+- **auditor confidence:** high
+
+### `electrostatics_grown_sign_law_note`
+
+- **Note:** [`ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md`](../../docs/ELECTROSTATICS_GROWN_SIGN_LAW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** One fixed grown geometry row with drift=0.2 and restore=0.7, fixed field, no graph update, one source layer, one final-layer detector centroid, and the listed single-source/superposition cases.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131300-20260517T131300Z-dcb3049b-electrostatics_grown_sig-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the retained grown row, the sign law survives cleanly: single +1 is AWAY, single -1 is TOWARD, same-point +/- cancels to zero, and +2 is linear relative to +1.  _(class `C`)_
+- **chain closes:** False — The runner source computes the printed table rather than hard-coding the contested numbers, but it depends on scripts.gate_b_grown_joint_package.grow and that helper implementation is not included in the restricted packet. The missing step is verification of the grown-geometry construction used as the retained row.
+- **rationale:** The provided runner output matches the note, and the runner source performs an actual propagation computation over generated geometries with neutral-cancellation and charge-linearity checks. However, the load-bearing geometry is imported through an unavailable helper, so the restricted packet does not fully close the computation from the allowed inputs. The claim remains narrow and bounded, not geometry-generic, but its reproducibility depends on a missing dependency edge.
+- **open / conditional deps cited:**
+  - `scripts/gate_b_grown_joint_package.py`
 - **auditor confidence:** high
 
 ### `electrostatics_superposition_proxy_note`

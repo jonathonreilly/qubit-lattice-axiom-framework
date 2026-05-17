@@ -171345,24 +171345,33 @@
       "verdict_rationale": null
     },
     "poisson_self_gravity_loop_v3_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T13:00:41.126910+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.16,
+        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+        "transitive_descendants": 808
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-130041-20260517T125915Z-244070de-poisson_self_gravity_loo-judicial",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.",
       "claim_id": "poisson_self_gravity_loop_v3_note",
-      "claim_scope": "Finite-harness nonzero-coupling falsifier observation for scripts/poisson_self_gravity_loop_v3.py: small matched-null centroid and phase-ramp shifts occur, but the nonlinear loop does not converge under the stated tolerance and no mechanism is retained.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Restricted finite-harness no-go: at nonzero coupling the runner shows small matched-null centroid and detector-line phase-ramp shifts, but all nonzero-coupling sweep rows fail the stated convergence tolerance and the result is not promoted to a self-gravity mechanism; the same-loop epsilon=0 reduction is out of binding scope.",
+      "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-17T12:58:25.058695+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-17T13:00:41.126910+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -171377,27 +171386,62 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-17T12:59:13.544949+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-125852-20260517T125852Z-3cca300a-poisson_self_gravity_loo-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Restricted audit of the finite exact-lattice runner's nonzero-coupling observation: epsilons 0.05, 0.20, and 0.50 show small matched-null centroid/phase-ramp shifts, zero converged rows, and non-machine-clean end-to-end Born behavior; the same-loop epsilon=0 reduction is out of binding scope.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-17T13:00:41.126910+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-130041-20260517T125915Z-244070de-poisson_self_gravity_loo-judicial",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Restricted finite-harness no-go: at nonzero coupling the runner shows small matched-null centroid and detector-line phase-ramp shifts, but all nonzero-coupling sweep rows fail the stated convergence tolerance and the result is not promoted to a self-gravity mechanism; the same-loop epsilon=0 reduction is out of binding scope.",
+          "claim_type": "no_go",
+          "first_auditor_error": "The verdict and class are materially correct, but the claim type is mislabeled as bounded_theorem despite the narrowed binding scope being a finite-harness no-go/falsifier.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.",
+          "load_bearing_step_class": "C",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 1
+          },
+          "second_auditor_error": "none/materially correct",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 11.16,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The binding evidence of this note is the raw nonconverged finite-harness no-promotion observation at non-zero coupling: small centroid/phase-ramp shifts appear under backreaction, but the matched-null loop does not converge to a clean self-gravity mechanism.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "da5b483741130bdccdb04b4753f00d7f8d50fd96f6c9a0fb896ffb2367cc2bef",
       "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Keep future re-audits scoped away from the epsilon=0 same-loop reduction unless the short-circuit is separately justified or removed.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
@@ -171589,14 +171633,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
       "title": "Poisson Self-Gravity Loop V3 Note \u2014 Nonzero-Coupling Falsifier (Binding)",
       "transitive_descendants": 808,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type."
     },
     "poisson_self_gravity_mechanism_note": {
       "audit_date": null,

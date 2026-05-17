@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1232 |
+| unaudited | 1231 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 160 |
+| ~~audited_conditional~~ | 161 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,21 +44,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 160 |
+| `audited_conditional` | 161 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1429 |
+| `unaudited` | 1428 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 927 |
+| `bounded_theorem` | 928 |
 | `decoration` | 20 |
 | `meta` | 199 |
 | `no_go` | 235 |
 | `open_gate` | 110 |
-| `positive_theorem` | 738 |
+| `positive_theorem` | 737 |
 
 | criticality | count |
 |---|---:|
@@ -657,6 +657,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1290,6 +1291,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `scripts/asymmetry_persistence_pilot.py`
   - `scripts/gap_topological_asymmetry.py`
   - `scripts/gap_topological_asymmetry_layernorm_combo.py`
+- **auditor confidence:** high
+
+### `asymmetry_persistence_pilot_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_PILOT_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_PILOT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded generated-geometry asymmetry-persistence claim as supported by the supplied primary runner and cache for sparse N=40/60 rows plus sparse N=80 failure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131701-20260517T131701Z-d23d5273-asymmetry_persistence_pi-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the early post-barrier persistence band, candidate nodes with slit-path asymmetry below threshold are rejected, and the resulting generated graphs yield the quoted Born-safe decoherence rows.  _(class `B`)_
+- **chain closes:** False — The supplied runner computes the sparse N=40/60 table and N=80 sparse failure, but its load-bearing measurement is imported from scripts/gap_topological_asymmetry.py, whose source is not included in the restricted packet. The dense N=80/100 and layernorm-stacking conclusions also lack supplied runner source/stdout in this packet.
+- **rationale:** The primary runner is not a trivial printout: it generates DAGs, applies the asymmetry persistence rule, aggregates seeds, and its stdout matches the sparse rows quoted in the note. However, the decisive readout comes from an imported helper, and the restricted packet does not provide that helper implementation, so the sparse result is conditional on an unclosed readout dependency. The broader dense and layernorm claims are explicitly outside the supplied primary runner evidence and remain unsupported by in-packet runner artifacts.
+- **open / conditional deps cited:**
+  - `scripts/gap_topological_asymmetry.py`
+  - `scripts/asymmetry_persistence_layernorm_combo.py`
 - **auditor confidence:** high
 
 ### `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29`

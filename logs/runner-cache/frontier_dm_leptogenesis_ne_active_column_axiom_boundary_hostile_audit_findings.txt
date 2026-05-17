@@ -1,0 +1,55 @@
+==============================================================================
+AUDIT-PREP VERIFIER — dm_leptogenesis_ne_active_column_axiom_boundary
+==============================================================================
+  [PASS] [A] Parent note exists  (DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md, 4595 bytes)
+
+  [PASS] [A] Bookkeeping section self-disclaimer present in parent  (exact phrase: 'does not promote this note or change the audited claim scope')
+
+PART 1 — bookkeeping-only deps (expect: cited in disclaimed section):
+  [PASS] [A]   dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16 IS cited (≥1 hit, in bookkeeping section)  (hits = 2)
+
+PART 2 — not-cited deps (expect: zero hits):
+  [PASS] [A]   dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_pmns_microscopic_selector_reduction_theorem_note_2026-04-17 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_leptogenesis_transport_status_note_2026-04-16 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_parent_correctness_audit_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_to_dweh_hermitian_source_family_target_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_wilson_to_dweh_structured_model_realization_theorem_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   emergent_lorentz_invariance_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   hubble_lane5_planck_c1_gate_audit_note_2026-04-26 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   hubble_lane5_workstream_status_note_2026-04-27 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_derivation_status_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_route_a_koide_nishiura_bounded_obstruction_note_2026-05-08_routea NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_circulant_character_derivation_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_gamma_orbit_positive_one_clock_semigroup_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   koide_positive_paths_first_principles_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   lepton_single_higgs_pmns_triviality_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   lorentz_kernel_positive_closure_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   neutrino_dirac_two_higgs_canonical_reduction_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   neutrino_mass_reduction_to_dirac_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   planck_from_structure_path_opening_meta_note_2026-05-10 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   planck_scale_conditional_completion_note_2026-04-24 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   planck_scale_lane_status_note_2026-04-23 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_active_four_real_source_from_transport_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   pmns_corner_transport_active_block_note NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.publication_matrix NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   c3_symmetry_preserved_interpretation_note_2026-05-08 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.gravity_publication_package_summary_2026-04-15 NOT cited (0 hits)  (hits = 0)
+  [PASS] [A]   publication.ci3_z3.prediction_surface_2026-04-15 NOT cited (0 hits)  (hits = 0)
+
+==============================================================================
+SUMMARY: 35 PASS / 0 FAIL
+Class-A pattern hits: 35
+==============================================================================
+
+VERDICT:
+  AUDIT-PREP FINDINGS VERIFIED
+  1 of 33 deps cited in self-disclaimed bookkeeping section
+  32 of 33 deps are NOT-CITED (zero hits)
+  Recommended auditor verdict: audited_clean
+  dominant_class: A (35 class-A hits)

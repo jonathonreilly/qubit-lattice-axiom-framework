@@ -1,0 +1,53 @@
+========================================================================
+Part 1: retained Brannen narrow-theorem core identities
+========================================================================
+  [PASS] 1.1 Σ_k x_k = 3 v_0  symbolically  (Σ x_k = 3*v_0)
+  [PASS] 1.2 Σ_k x_k^2 = 6 v_0^2  symbolically  (Σ x_k^2 = 6*v_0**2)
+  [PASS] 1.3 Q := (Σ x_k^2) / (Σ x_k)^2 = 2/3  symbolically in (v_0, delta)  (Q = 2/3)
+
+========================================================================
+Part 2: PMNS chart constants — elementary closed-form arithmetic
+========================================================================
+  [PASS] 2.1 SELECTOR^2 = 6/9 = 2/3  (SELECTOR^2 = 2/3)
+  [PASS] 2.2 Q_Koide := 2/3 equals SELECTOR^2  (Q_Koide - SELECTOR^2 = 0)
+  [PASS] 2.3 E2 := sqrt(8)/3 equals 2 sqrt(2)/3  (E2 = 2*sqrt(2)/3)
+  [PASS] 2.4 2 SELECTOR / sqrt(3) = E2  (elementary surd arithmetic)
+
+========================================================================
+Part 3: T1, T2, T3, T4 main identities
+========================================================================
+  [PASS] 3.1 (T1) Q_Koide = Q (Brannen narrow theorem value)  (Q_Koide - Q = 0)
+  [PASS] 3.2 (T1) Q = 2/3 symbolically  (Q - 2/3 = 0)
+  [PASS] 3.3 (T2) SELECTOR^2 = Q_Koide = 2/3  (SELECTOR^2 - Q_Koide = 0)
+  [PASS] 3.4 (T3) 2 SELECTOR / sqrt(3) = E2 = sqrt(8)/3  (elementary closed-form arithmetic)
+  [PASS] 3.5 (T4) SELECTOR^2 = Q = (Σ x_k^2)/(Σ x_k)^2 symbolically  (diff = 0)
+
+========================================================================
+Part 4: numerical sanity at concrete (v_0, delta) grid points
+========================================================================
+  [PASS] 4.1 Brannen Q = 2/3 at all 28 sampled symbolic (v_0, delta) points  (7 deltas x 4 v_0)
+  [PASS] 4.2 numeric float Q = 2/3 at (delta, v_0) = (0.0000, 1.0000)  (|Q - 2/3| = 3.33e-16)
+  [PASS] 4.2 numeric float Q = 2/3 at (delta, v_0) = (0.4488, 2.5000)  (|Q - 2/3| = 2.22e-16)
+  [PASS] 4.2 numeric float Q = 2/3 at (delta, v_0) = (0.2222, 3.1400)  (|Q - 2/3| = 0.00e+00)
+
+========================================================================
+Part 5: NEGATIVE CONTROL — delta * q_+ is NOT identically 2/3
+========================================================================
+  generic (delta, q_+) = (1/2, 1/3) -> product = 1/6 != 2/3
+  generic (delta, q_+) = (1, 1) -> product = 1 != 2/3
+  generic (delta, q_+) = (2/3, 1/2) -> product = 1/3 != 2/3
+  generic (delta, q_+) = (pi, 1/4) -> product = pi/4 != 2/3
+  [PASS] 5.1 delta * q_+ != 2/3 at the sampled generic chart points  (chart product is a SELECTOR EQUATION, not an algebraic identity)
+  [PASS] 5.2 at recovered point (delta_*, q_+*), product approx 2/3 numerically  (product = 0.6666666712, 2/3 = 0.6666666667)
+
+  Honest scope: T1-T4 are algebraic identities on the retained Brannen
+  ansatz + PMNS chart constants. The proposed selector law
+  delta * q_+ = Q_Koide on the PMNS affine Hermitian chart is NOT
+  closed by this narrow theorem; it remains the Open missing_bridge
+  target on pmns_selector_three_identity_support_note_2026-04-21.
+
+========================================================================
+Summary: PASS = 18, FAIL = 0
+========================================================================
+
+  PMNS_CHART_CONSTANT_Q_KOIDE_BRANNEN_LIFT_NARROW_THEOREM = TRUE

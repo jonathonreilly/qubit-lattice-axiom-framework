@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 110 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 339 |
+| **retained_bounded** | 340 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1206 |
+| unaudited | 1205 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 561 |
+| `audited_clean` | 562 |
 | `audited_conditional` | 180 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1403 |
+| `unaudited` | 1402 |
 
 | claim_type | count |
 |---|---:|
@@ -666,6 +666,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
+| `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -12110,6 +12111,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The bounded claim is purely numerical from the runner: counts of w_asym < 1 across 15 runs, mean width effects, and shell-force counts. The note correctly does NOT promote this to closure of the off-lattice blocker; the bounded scope here is exactly the regime-finding fact that weak-coupling is the strongest currently observed sign-sensitive regime.
 - **rationale:** Within the stated 14/15 numerical scope on the named graph battery, the chain closes by direct measurement. The note explicitly enumerates what it does not close (universal sign-selection, clean 0/40 repulsive shell-force, frozen retained semantics), so the bounded interpretation matches the source's safe read. No upgrade to retained closure is implied.
 - **auditor confidence:** high
+
+### `wide_family_h0125_bridge_reopen_audit`
+
+- **Note:** [`WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md`](../../docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Reduced/fixed-family h = 0.125 bounded negative for weak-field closure, inherited from the provided retained-bounded bridge notes; wider phys_w = 4 continuation excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-155353-a5e2dcef-wide_family_h0125_bridge-030`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The binding evidence is exactly the fixed/reduced-family h = 0.125 bounded negatives already carried by the retained one-hop dependencies, while the wider phys_w = 4 continuation is out of binding scope.  _(class `B`)_
+- **chain closes:** True — Within the narrowed scope, both cited authorities are retained_bounded and support that the h = 0.125 fixed/reduced families remain negative for weak-field F~M closure. The out-of-scope wider phys_w = 4 narrative is not needed for the audited claim.
+- **rationale:** The revised claim is explicitly narrowed to a bounded negative already carried by retained-bounded cited authorities. It does not ask the packet to validate the wider phys_w = 4 continuation, so the missing runner/log for that wider path is not a closure blocker for this scoped audit. The load-bearing step is cross-note inheritance rather than fresh first-principles computation, but the narrowed conclusion follows from the supplied retained inputs.
+- **auditor confidence:** medium
 
 ### `wide_lattice_h2t_distance_law_note`
 

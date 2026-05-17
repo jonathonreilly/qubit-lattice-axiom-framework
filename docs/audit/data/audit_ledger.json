@@ -239730,24 +239730,45 @@
       "verdict_rationale": "Within the stated 14/15 numerical scope on the named graph battery, the chain closes by direct measurement. The note explicitly enumerates what it does not close (universal sign-selection, clean 0/40 repulsive shell-force, frozen retained semantics), so the bounded interpretation matches the source's safe read. No upgrade to retained closure is implied."
     },
     "wide_family_h0125_bridge_reopen_audit": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T15:54:12.574901+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "h2t_h0125_narrow_bridge_note": "Bounded negative h=0.125 dense 3D 1/L^2+h^2 bridge result: the reduced fixed-family audit reaches h=0.125 with Born clean where measurable but no recovered TOWARD/F~M bridge, and the retained bridge-family dependency remains at F~M about 0.50 rather than 1.",
+          "lattice_3d_l2_numpy_h0125_bridge_note": "Finite fixed-family 3D dense 1/L^2+h^2 bridge evidence at phys_l=6, phys_w=3 through h=0.125, with Born/k=0 clean, TOWARD bridge sign in the completed cache, and F~M near 0.50 rather than Newtonian closure."
+        },
+        "dep_claim_type": {
+          "h2t_h0125_narrow_bridge_note": "bounded_theorem",
+          "lattice_3d_l2_numpy_h0125_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "h2t_h0125_narrow_bridge_note": "retained_bounded",
+          "lattice_3d_l2_numpy_h0125_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "h2t_h0125_narrow_bridge_note",
+          "lattice_3d_l2_numpy_h0125_bridge_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-155353-a5e2dcef-wide_family_h0125_bridge-030",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed scope, both cited authorities are retained_bounded and support that the h = 0.125 fixed/reduced families remain negative for weak-field F~M closure. The out-of-scope wider phys_w = 4 narrative is not needed for the audited claim.",
       "claim_id": "wide_family_h0125_bridge_reopen_audit",
-      "claim_scope": null,
+      "claim_scope": "Reduced/fixed-family h = 0.125 bounded negative for weak-field closure, inherited from the provided retained-bounded bridge notes; wider phys_w = 4 continuation excluded.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-17T15:54:12.574901+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -239756,19 +239777,19 @@
         "h2t_h0125_narrow_bridge_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The binding evidence is exactly the fixed/reduced-family h = 0.125 bounded negatives already carried by the retained one-hop dependencies, while the wider phys_w = 4 continuation is out of binding scope.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "75c84719a70c3f68ed3818cff4bfb62b763896bbdc4f6c3da6dbe74a0d27e4eb",
       "note_path": "docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should verify that downstream ledger text preserves the narrowed scope and does not treat the phys_w = 4 narrative as binding evidence.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -239893,15 +239914,15 @@
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": null,
       "title": "Wide-Family `h = 0.125` Bridge Reopen Audit \u2014 Reduced-Family Fixed `h = 0.125` Negatives (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The revised claim is explicitly narrowed to a bounded negative already carried by retained-bounded cited authorities. It does not ask the packet to validate the wider phys_w = 4 continuation, so the missing runner/log for that wider path is not a closure blocker for this scoped audit. The load-bearing step is cross-note inheritance rather than fresh first-principles computation, but the narrowed conclusion follows from the supplied retained inputs."
     },
     "wide_lattice_h2t_distance_law_note": {
       "audit_date": "2026-05-03T22:57:30.263539+00:00",

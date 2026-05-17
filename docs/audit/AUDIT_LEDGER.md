@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1231 |
+| unaudited | 1230 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 161 |
+| ~~audited_conditional~~ | 162 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,12 +44,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 161 |
+| `audited_conditional` | 162 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1428 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
@@ -686,6 +686,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `directional_b_density_stencil_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `dispersion_relation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -2745,6 +2746,31 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note's numerical summaries match the supplied completed runner stdout, and the bounded negative conclusion follows directly from the unchanged 6/12 stable-row and 2/12 positive-stable counts across all strengths. The claim does not close as a general physics theorem beyond this scan grid, so the audited scope must remain bounded to the supplied harness and outputs.
 - **rationale:** The load-bearing claim is a bounded arithmetic summary of the completed runner output, not a first-principles derivation or external comparator. The stdout supports the stated cross-strength invariance, absence of signed delta-law fits, and lambda-dependent |bias| fit improvement. Clean status applies only to the reported scan-grid conclusion, not to any broader Dirac-gravity theorem or unsupplied v4 helper implementation.
 - **auditor confidence:** high
+
+### `directional_b_density_stencil_note`
+
+- **Note:** [`DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md`](../../docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded transfer claim that frozen dense-reference 3-NN and 4-NN density-load thresholds, applied without refit to the reference+tree plus midlayer sentinel sample, favor 3-NN on the expanded dataset while 4-NN remains cleaner on reference+tree.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131801-20260517T131801Z-53eef27e-directional_b_density_st-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Once the midlayer sentinel is added to the existing reference+tree sample, the frozen 3-NN stencil becomes the better smooth law on the current expanded dataset: 0.9126 vs 0.8932 accuracy.  _(class `B`)_
+- **chain closes:** False — The primary runner recomputes the reported comparison, but its load-bearing data generation and evaluation functions are imported from helper modules whose source is not included in the restricted packet. Without those helper sources, the audit cannot verify that the runner actually derives the rows and features rather than importing an unclosed premise.
+- **rationale:** The stdout matches the note's numerical claims, and the primary runner does apply frozen thresholds to reference+tree, midlayer, and extended samples. However, the runner's substantive computations depend on imported helpers for row generation, density features, overlap labels, threshold selection, and accuracy. Because those transitive helper sources are not present in the restricted packet, this is at best a cross-code input verification, not a fully inspectable first-principles or closed bounded computation.
+- **open / conditional deps cited:**
+  - `scripts/density_matrix_analysis.py`
+  - `scripts/directional_b_overlap_continuous_density_bridge_card.py`
+  - `scripts/directional_b_overlap_continuous_density_midlayer_holdout.py`
+  - `scripts/directional_b_overlap_continuous_density_tree_control.py`
+  - `scripts/directional_b_overlap_onset_local_density_compare.py`
+  - `scripts/directional_b_readout_compare.py`
+  - `scripts/generative_causal_dag_interference.py`
+  - `scripts/gravity_observable_readout_scaling_compare.py`
+  - `scripts/gravity_packet_local_action_flow_transfer_compare.py`
+  - `scripts/scaling_testbench.py`
+  - `scripts/two_register_decoherence.py`
+- **auditor confidence:** medium
 
 ### `dispersion_high_p_tiebreaker_note`
 

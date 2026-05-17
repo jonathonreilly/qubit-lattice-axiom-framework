@@ -231,7 +231,7 @@ block131_result:
   readout_packet_a_y_h: 1.245693776284446
   readout_packet_b_y_h: 2.491387552568892
   readout_ratio_b_over_a: 2.0
-  stacked_review_pr: "pending"
+  stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1481"
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"

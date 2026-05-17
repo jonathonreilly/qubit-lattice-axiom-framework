@@ -48884,6 +48884,18 @@
       "runner_path": "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py",
       "title": "Electrostatics Grown Sign-Law Note"
     },
+    "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17": {
+      "claim_id": "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "01acfdbed544223c60c60595f4f711a83ac1661230e5ba39a6d3cc952e0993b0",
+      "path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+      "title": "Electrostatics Grown Sign-Law Source-Field Linearity / Parity Narrow Theorem"
+    },
     "electrostatics_superposition_proxy_note": {
       "claim_id": "electrostatics_superposition_proxy_note",
       "claim_type_author_hint": null,
@@ -77885,6 +77897,7 @@
     "electric_sign_law_note",
     "electrostatics_card_note",
     "electrostatics_grown_sign_law_note",
+    "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
     "electrostatics_superposition_proxy_note",
     "em_gravity_coexistence_2x2_note",
     "emergent_geometry_growth_note_2026-04-10",
@@ -78455,7 +78468,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 445,
+      "bounded_theorem": 446,
       "decoration": 1,
       "meta": 162,
       "no_go": 56,
@@ -78464,7 +78477,7 @@
       "positive_theorem": 166
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 892,
+      "bounded_theorem": 893,
       "decoration": 1,
       "meta": 162,
       "no_go": 161,
@@ -78473,9 +78486,9 @@
       "positive_theorem": 619
     },
     "edge_count": 9292,
-    "leaf_count": 750,
-    "node_count": 2408,
-    "root_count": 864,
-    "runners_with_path": 2012
+    "leaf_count": 751,
+    "node_count": 2409,
+    "root_count": 865,
+    "runners_with_path": 2013
   }
 }

@@ -1,0 +1,46 @@
+==============================================================================
+AUDIT-PREP VERIFIER — dt1_time_dimension_proof_walk_downstream_fix
+==============================================================================
+  [PASS] [A] Parent note exists  (path = docs/DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md)
+  [PASS] [A] Fix record exists  (path = docs/DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+  [PASS] [A] CPT_EXACT_NOTE exists  (path = docs/CPT_EXACT_NOTE.md)
+  [PASS] [A] Kawamoto-Smit note exists  (path = docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+
+PART F-C — chirality-grading citation routing:
+  [PASS] [A] Parent now cites STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING in Step 2 table row
+  [PASS] [A] Parent references KS note in multiple sites (>= 3: Step 2 row + Deps list + fix-record section)  (count = 7)
+  [PASS] [A] CPT_EXACT_NOTE has 0 γ_5 / gamma_5 occurrences (algebraically orthogonal role)
+  [PASS] [A] KS companion derives {ε, D_staggered} = 0 (or anticommutator wording)
+  [PASS] [A] Dependencies block cites the KS companion (correct routing target)
+
+PART F-A — dependency-tier descriptors:
+  [PASS] [A] Stale 'proposed_retained' / 'audit-pending' has corrective retraction wording
+  [PASS] [A] Single-clock companion now described as `unaudited` (ledger-accurate)
+  [PASS] [A] Boundaries block acknowledges both companions are `unaudited`
+
+PART F-B — upstream admission-inheritance link:
+  [PASS] [A] Step 4 row links to upstream F-B framing-fix note
+  [PASS] [A] Step 4 row labels itself as the inherited (admission (iv)) branch
+  [PASS] [A] Step 3 row labels itself as the derived branch (odd positives)
+
+PART STRUCT — invariants preserved:
+  [PASS] [A] bounded_theorem claim type still declared
+  [PASS] [A] Step 1 still in proof-walk table
+  [PASS] [A] Step 3 conclusion `d_t in {1, 3, 5, ...}` still derived
+  [PASS] [A] Step 4 still excludes `d_t > 1`
+  [PASS] [A] Verdict 'lattice-action' independence wording preserved
+  [PASS] [A] Fix-record meta-note linked from parent
+  [PASS] [A] Paired verifier referenced from parent
+
+PART FIX-RECORD — meta-note sanity:
+  [PASS] [A] Fix record mentions: 'F-C — Stale citation routing'
+  [PASS] [A] Fix record mentions: 'F-A — Stale dependency tier'
+  [PASS] [A] Fix record mentions: 'F-B — Upstream admission-inheritance'
+  [PASS] [A] Fix record mentions: 'What this fix does NOT do'
+  [PASS] [A] Fix record mentions: 'Suggested auditor verdict'
+  [PASS] [A] Fix record mentions: 'audited_conditional'
+  [PASS] [A] Fix record mentions: 'bounded proof-walk retained'
+
+==============================================================================
+SUMMARY: 29 PASS / 0 FAIL  (Class-A: 29)
+==============================================================================

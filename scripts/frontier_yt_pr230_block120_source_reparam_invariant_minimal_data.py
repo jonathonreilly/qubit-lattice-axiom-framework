@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-PR #230 Block117 source-reparametrization invariant minimal-data boundary.
+PR #230 Block120 source-reparametrization invariant minimal-data boundary.
 
-Block115 and Block116 resolve the W/Z and neutral H3/H4 strict artifact
-families as absent on the current PR230 head.  This runner compresses the
+Blocks115-118 resolve the W/Z, neutral H3/H4, strict Schur/scalar-LSZ, and
+finite O_H-axis selector surfaces on the current PR230 head.  This runner compresses the
 remaining top-Yukawa closure problem to the source-reparametrization invariant
 data that would be sufficient, checks current strict disjuncts, and keeps the
 prior FH/LSZ invariant-readout support separate from closure.
@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
     ROOT
     / "outputs"
-    / "yt_pr230_block117_source_reparam_invariant_minimal_data_2026-05-17.json"
+    / "yt_pr230_block120_source_reparam_invariant_minimal_data_2026-05-17.json"
 )
 
 PARENTS = {
@@ -39,6 +39,8 @@ PARENTS = {
     "block114_source_higgs_resolver": "outputs/yt_pr230_block114_source_higgs_strict_artifact_resolver_2026-05-17.json",
     "block115_wz_resolver": "outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json",
     "block116_neutral_h3h4_resolver": "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json",
+    "block117_schur_scalar_lsz_resolver": "outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json",
+    "block118_hamming_dirichlet_oh_axis_selector": "outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json",
     "full_positive_assembly": "outputs/yt_pr230_full_positive_closure_assembly_gate_2026-05-04.json",
     "retained_route": "outputs/yt_retained_closure_route_certificate_2026-05-01.json",
     "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
@@ -220,6 +222,8 @@ def packet_contracts(certs: dict[str, dict[str, Any]]) -> dict[str, Any]:
     block114 = certs["block114_source_higgs_resolver"]
     block115 = certs["block115_wz_resolver"]
     block116 = certs["block116_neutral_h3h4_resolver"]
+    block117 = certs["block117_schur_scalar_lsz_resolver"]
+    block118 = certs["block118_hamming_dirichlet_oh_axis_selector"]
     block111 = certs["block111_schur_kprime_gap_audit"]
     block113 = certs["block113_schur_abc_refresh"]
     strict_kprime = certs["strict_kprime_pole_residue_certificate"]
@@ -259,6 +263,7 @@ def packet_contracts(certs: dict[str, dict[str, Any]]) -> dict[str, Any]:
                 "Gram flatness, scalar LSZ/model-class, FV/IR, contact, and covariance authority",
             ],
             "current_boundary": status(block114),
+            "axis_selector_support": status(block118),
         },
         "wz": {
             "satisfied": wz_satisfied,
@@ -282,6 +287,7 @@ def packet_contracts(certs: dict[str, dict[str, Any]]) -> dict[str, Any]:
             ],
             "current_boundary": status(block113),
             "kprime_boundary": status(block111),
+            "strict_scalar_lsz_boundary": status(block117),
             "strict_kprime_boundary": status(strict_kprime),
         },
         "neutral_h3h4": {
@@ -302,7 +308,7 @@ def packet_contracts(certs: dict[str, dict[str, Any]]) -> dict[str, Any]:
 
 
 def main() -> int:
-    print("PR #230 Block117 source-reparametrization invariant minimal-data boundary")
+    print("PR #230 Block120 source-reparametrization invariant minimal-data boundary")
     print("=" * 86)
 
     certs = {name: load_json(path) for name, path in PARENTS.items()}
@@ -355,6 +361,32 @@ def main() -> int:
         is True
         and contracts["schur"]["satisfied"] is False
     )
+    strict_schur_scalar_lsz_boundary = (
+        certs["block117_schur_scalar_lsz_resolver"].get(
+            "block117_schur_scalar_lsz_strict_artifact_resolver_passed"
+        )
+        is True
+        and certs["block117_schur_scalar_lsz_resolver"].get("proposal_allowed") is False
+        and certs["block117_schur_scalar_lsz_resolver"].get(
+            "scan_finds_no_strict_schur_scalar_lsz_artifact"
+        )
+        is True
+    )
+    hamming_axis_support_not_closure = (
+        certs["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "block118_hamming_dirichlet_oh_axis_selector_passed"
+        )
+        is True
+        and certs["block118_hamming_dirichlet_oh_axis_selector"].get("proposal_allowed") is False
+        and certs["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "action_lsz_and_pole_rows_still_absent"
+        )
+        is True
+        and certs["block118_hamming_dirichlet_oh_axis_selector"].get(
+            "selector_exact_support"
+        )
+        is True
+    )
     neutral_currently_absent = (
         certs["block116_neutral_h3h4_resolver"].get(
             "block116_neutral_h3h4_strict_artifact_resolver_passed"
@@ -384,6 +416,8 @@ def main() -> int:
     report("action-source-higgs-currently-absent", action_source_higgs_currently_absent, contracts["source_higgs"]["current_boundary"])
     report("wz-currently-absent", wz_currently_absent, contracts["wz"]["current_boundary"])
     report("schur-currently-absent", schur_currently_absent, contracts["schur"]["current_boundary"])
+    report("strict-schur-scalar-lsz-boundary-present", strict_schur_scalar_lsz_boundary, contracts["schur"]["strict_scalar_lsz_boundary"])
+    report("hamming-oh-axis-support-not-closure", hamming_axis_support_not_closure, contracts["source_higgs"]["axis_selector_support"])
     report("neutral-currently-absent", neutral_currently_absent, contracts["neutral_h3h4"]["current_boundary"])
     report("expected-positive-packet-paths-absent", no_strict_packet_paths, str(contracts["strict_packet_path_presence"]))
     report("minimal-invariant-contract-unsatisfied", minimal_contract_unsatisfied, str(contracts))
@@ -402,6 +436,8 @@ def main() -> int:
         and action_source_higgs_currently_absent
         and wz_currently_absent
         and schur_currently_absent
+        and strict_schur_scalar_lsz_boundary
+        and hamming_axis_support_not_closure
         and neutral_currently_absent
         and no_strict_packet_paths
         and minimal_contract_unsatisfied
@@ -411,7 +447,7 @@ def main() -> int:
 
     result = {
         "actual_current_surface_status": (
-            "exact negative boundary / Block117 source-reparametrization invariant "
+            "exact negative boundary / Block120 source-reparametrization invariant "
             "minimal-data contract is unsatisfied on the current PR230 head"
         ),
         "conditional_surface_status": (
@@ -431,7 +467,7 @@ def main() -> int:
         ),
         "audit_required_before_effective_retained": True,
         "bare_retained_allowed": False,
-        "block117_source_reparam_invariant_minimal_data_passed": passed,
+        "block120_source_reparam_invariant_minimal_data_passed": passed,
         "source_rescaling_witness": source_witness,
         "wz_scale_orbit_witness": wz_witness,
         "packet_contracts": contracts,

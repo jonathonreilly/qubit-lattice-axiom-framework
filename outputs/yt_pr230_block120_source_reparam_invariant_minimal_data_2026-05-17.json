@@ -1,9 +1,9 @@
 {
-  "actual_current_surface_status": "exact negative boundary / Block117 source-reparametrization invariant minimal-data contract is unsatisfied on the current PR230 head",
+  "actual_current_surface_status": "exact negative boundary / Block120 source-reparametrization invariant minimal-data contract is unsatisfied on the current PR230 head",
   "admitted_observation_status": null,
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "block117_source_reparam_invariant_minimal_data_passed": true,
+  "block120_source_reparam_invariant_minimal_data_passed": true,
   "conditional_surface_status": "proposal can reopen only after one strict same-surface disjunct is supplied: accepted canonical O_H/action plus physical C_ss/C_sH/C_HH pole rows; strict W/Z response packet with accepted action, matched covariance, delta_perp, and an allowed absolute pin; strict Schur/Feshbach pole rows; or strict neutral H3/H4 physical transfer plus source/canonical-Higgs coupling",
   "exact_next_action": "Stop attempting source-only or finite-row promotion. The next positive work item must create one strict packet: action/canonical O_H plus physical source-Higgs pole rows; W/Z production response with matched covariance and an allowed absolute pin; Schur/Feshbach pole derivative rows; or neutral H3/H4 physical transfer with source/canonical-Higgs coupling.",
   "fail_count": 0,
@@ -48,9 +48,11 @@
         "model-class, FV/IR, and contact authority"
       ],
       "satisfied": false,
-      "strict_kprime_boundary": "open / strict K-prime pole-residue certificate rows missing"
+      "strict_kprime_boundary": "open / strict K-prime pole-residue certificate rows missing",
+      "strict_scalar_lsz_boundary": "exact negative boundary / Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact: K-prime pole rows, strict moment/threshold/FV authority, and required source-Higgs/WZ/neutral bridge roots remain absent"
     },
     "source_higgs": {
+      "axis_selector_support": "exact support / Block118 native Hamming-Dirichlet selector fixes the PR230 taste-radial O_H axis as the unique lowest cyclic trace-zero finite Dirichlet mode; accepted EW/Higgs action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows remain absent",
       "current_boundary": "exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact",
       "minimal_packet": [
         "accepted same-surface EW/Higgs action with dS/ds = sum O_H",
@@ -96,6 +98,8 @@
     "block114_source_higgs_resolver": "outputs/yt_pr230_block114_source_higgs_strict_artifact_resolver_2026-05-17.json",
     "block115_wz_resolver": "outputs/yt_pr230_block115_wz_strict_artifact_resolver_2026-05-17.json",
     "block116_neutral_h3h4_resolver": "outputs/yt_pr230_block116_neutral_h3h4_strict_artifact_resolver_2026-05-17.json",
+    "block117_schur_scalar_lsz_resolver": "outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json",
+    "block118_hamming_dirichlet_oh_axis_selector": "outputs/yt_pr230_block118_hamming_dirichlet_oh_axis_selector_2026-05-17.json",
     "campaign_status": "outputs/yt_pr230_campaign_status_certificate_2026-05-01.json",
     "completion_audit": "outputs/yt_pr230_positive_closure_completion_audit_2026-05-05.json",
     "fh_gauge_normalized_response_route": "outputs/yt_fh_gauge_normalized_response_route_2026-05-02.json",
@@ -117,6 +121,8 @@
     "block114_source_higgs_resolver": "exact negative boundary / Block114 current PR230 head contains no accepted O_H/action plus strict numeric C_ss/C_sH/C_HH pole-row artifact",
     "block115_wz_resolver": "exact negative boundary / Block115 current PR230 head contains no strict W/Z physical-response packet with accepted action, production rows, matched top-W covariance, strict g2 authority, delta_perp, and final W-response rows",
     "block116_neutral_h3h4_resolver": "exact negative boundary / Block116 current PR230 head contains no strict neutral H3/H4 artifact: physical neutral transfer or off-diagonal primitive authority plus source/canonical-Higgs coupling remain absent",
+    "block117_schur_scalar_lsz_resolver": "exact negative boundary / Block117 current PR230 head contains no strict Schur/scalar-LSZ pole authority artifact: K-prime pole rows, strict moment/threshold/FV authority, and required source-Higgs/WZ/neutral bridge roots remain absent",
+    "block118_hamming_dirichlet_oh_axis_selector": "exact support / Block118 native Hamming-Dirichlet selector fixes the PR230 taste-radial O_H axis as the unique lowest cyclic trace-zero finite Dirichlet mode; accepted EW/Higgs action, scalar LSZ metric, source-overlap normalization, and strict C_ss/C_sH/C_HH pole rows remain absent",
     "campaign_status": "open / active campaign continuing after current shortcut blocks",
     "completion_audit": "open / positive closure completion audit: retained closure not achieved",
     "fh_gauge_normalized_response_route": "bounded-support / FH gauge-normalized response route",
@@ -129,7 +135,7 @@
     "wz_response_only_g2_self_normalization_no_go": "exact negative boundary / WZ response-only g2 self-normalization no-go",
     "wz_v_authority_firewall": "exact negative boundary / PR230 W/Z explicit-v authority absent; package hierarchy v is rejected as a load-bearing W/Z absolute pin"
   },
-  "pass_count": 14,
+  "pass_count": 16,
   "proposal_allowed": false,
   "proposal_allowed_reason": "The current surface has exact FH/LSZ invariant-readout support, but none of the required physical data packets exists. Raw source slopes and finite aliases remain source-reparametrization dependent or support-only.",
   "source_rescaling_witness": {

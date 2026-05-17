@@ -1,4 +1,4 @@
-# PR230 Block117 Source-Reparametrization Invariant Minimal-Data Boundary
+# PR230 Block120 Source-Reparametrization Invariant Minimal-Data Boundary
 
 Status: exact negative boundary / the current PR230 head does not contain the
 minimal same-surface invariant data packet needed for retained top-Yukawa
@@ -6,7 +6,7 @@ closure.
 
 ## Scope
 
-Block117 compresses the post-Block116 route surface.  It does not repeat chunk
+Block120 compresses the post-Block118 route surface.  It does not repeat chunk
 completion.  It asks what data are invariant under scalar-source
 reparametrization and whether any current source-Higgs, W/Z, Schur, or neutral
 route supplies a strict physical packet.
@@ -29,6 +29,10 @@ The runner verifies:
 - Blocks111/113 keep strict Schur/Feshbach pole authority absent despite the
   complete finite support packet;
 - Block116 keeps strict neutral H3/H4 physical transfer and H4 coupling absent;
+- Block117 keeps strict Schur/scalar-LSZ pole authority absent;
+- Block118 supplies exact finite Hamming-Dirichlet support for the taste-radial
+  `O_H` axis, but not accepted action, LSZ, source-overlap normalization, or
+  strict pole rows;
 - aggregate assembly, retained-route, campaign, and completion-audit gates
   remain open and deny proposal wording.
 
@@ -59,9 +63,9 @@ rows as load-bearing proof inputs.
 ## Verification
 
 ```bash
-python3 -m py_compile scripts/frontier_yt_pr230_block117_source_reparam_invariant_minimal_data.py
-python3 scripts/frontier_yt_pr230_block117_source_reparam_invariant_minimal_data.py
-# SUMMARY: PASS=14 FAIL=0
+python3 -m py_compile scripts/frontier_yt_pr230_block120_source_reparam_invariant_minimal_data.py
+python3 scripts/frontier_yt_pr230_block120_source_reparam_invariant_minimal_data.py
+# SUMMARY: PASS=16 FAIL=0
 ```
 
 ## Exact Next Action
@@ -71,4 +75,3 @@ action/canonical `O_H` plus physical source-Higgs pole rows; W/Z production
 response with matched covariance and an allowed absolute pin; Schur/Feshbach
 pole derivative rows; or neutral H3/H4 physical transfer with
 source/canonical-Higgs coupling.
-

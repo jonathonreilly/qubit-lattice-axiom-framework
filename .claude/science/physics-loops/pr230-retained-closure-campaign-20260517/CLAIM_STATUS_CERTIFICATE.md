@@ -1,15 +1,19 @@
 # Claim Status Certificate
 
-Status: exact negative boundary through Block118.
+Status: exact negative boundary through Block121.
 
 `proposed_retained`: not allowed.
 
-Reason: current PR230 head `4d56838ce` lacks every strict positive disjunct.
-Block117 verifies that the remaining source-coordinate data are not enough
-invariant data for `y_t`; Block118 verifies that the strongest complete finite
-Schur A/B/C packet does not determine the strict pole derivative/residue:
+Reason: current PR230 head `a7179acb5` lacks every strict positive disjunct.
+Base Block118 supplies exact finite Hamming-Dirichlet support for the
+taste-radial `O_H` axis, but not accepted action, LSZ/source-overlap, or pole
+rows. Base Block119 adds a native Dirichlet action/LSZ probe as finite
+mathematical support only, not action/LSZ closure. Block120 verifies that the remaining source-coordinate data are not
+enough invariant data for `y_t`; Block121 verifies that the strongest complete
+finite Schur A/B/C packet does not determine the strict pole derivative/residue:
 
-- no accepted same-surface EW/Higgs action and canonical `O_H`;
+- no accepted same-surface EW/Higgs action, scalar LSZ metric, or
+  source-overlap normalization for the Block118 `O_H` axis;
 - no strict physical `C_ss/C_sH/C_HH(tau)` source-Higgs pole rows;
 - no strict W/Z physical-response packet with accepted action, production rows,
   matched covariance, strict non-observed `g2` or allowed absolute pin,

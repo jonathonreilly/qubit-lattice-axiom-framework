@@ -3,14 +3,17 @@
 ## Current Ranking
 
 1. Action-first canonical `O_H` / source-Higgs pole rows.
-   Status: highest-probability remaining positive route, but blocked on current
-   head by Blocks110/112/114.
+   Status: highest-probability remaining positive route after base Block118
+   selects the finite Hamming-Dirichlet taste-radial `O_H` axis.  Still blocked
+   on accepted EW/Higgs action, scalar LSZ/source-overlap normalization, and
+   strict `C_ss/C_sH/C_HH` pole rows.
 
 2. W/Z strict physical-response packet.
    Status: Block115 exact negative boundary.  Not executable on current head.
 
 3. Schur/Feshbach strict pole route.
-   Status: Block113 bounded support plus Block111 exact K-prime absence.
+   Status: Block113 bounded support plus Blocks111/117 strict pole-authority
+   absence, sharpened by Block121 finite-packet nonidentifiability.
 
 4. Neutral H3/H4 physical transfer/coupling.
    Status: Block116 exact negative boundary.  H1/H2 and heat-kernel support do
@@ -22,9 +25,10 @@
 ## First Campaign Pivot
 
 Block115 does not produce strict W/Z rows or absolute authority.  Block116 adds
-the same absence for neutral H3/H4.  The first campaign block therefore targets
-the shared source-reparametrization invariant obstruction: identify the minimal
-same-surface data needed for `y_t`, prove which current rows are invariant
-support only, and reduce the next positive artifact to the smallest admissible
-packet.
-
+the same absence for neutral H3/H4.  Base Block117 keeps strict Schur/scalar-LSZ
+authority absent, while base Block118 supplies exact support for the finite
+`O_H` axis but not the action/LSZ/row bridge.  The first campaign block
+therefore targets the shared source-reparametrization invariant obstruction:
+identify the minimal same-surface data needed for `y_t`, prove which current
+rows are invariant support only, and reduce the next positive artifact to the
+smallest admissible packet.

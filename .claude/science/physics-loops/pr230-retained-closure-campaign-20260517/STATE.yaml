@@ -2,22 +2,22 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T15:11:38Z"
+last_checkpoint_utc: "2026-05-17T15:41:23Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
 branch: physics-loop/pr230-retained-closure-campaign-20260517
 base_surface: origin/claude/yt-direct-lattice-correlator-2026-04-30
-latest_pr230_head: "4d56838ce6f2ab668c3987fe664043fd1c8084b4"
-latest_pr230_head_note: "Block116: Add PR230 Block116 neutral H3H4 strict artifact resolver"
+latest_pr230_head: "a7179acb5ce21f9fdf2e05af1139c8b6a6785699"
+latest_pr230_head_note: "Block119: Add PR230 Block119 native Dirichlet action LSZ probe"
 pr230_state: open
 pr230_draft: true
-active_science_block: block118_schur_finite_packet_pole_derivative_nonidentifiability
+active_science_block: block121_schur_finite_packet_pole_derivative_nonidentifiability
 active_route: "Schur/Feshbach finite A/B/C packet to strict pole derivative"
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Block118 complete finite Schur A/B/C packet does not determine strict Schur/Feshbach K-prime pole derivative; proposal remains disallowed"
+actual_current_surface_status: "exact negative boundary / Block121 complete finite Schur A/B/C packet does not determine strict Schur/Feshbach K-prime pole derivative; proposal remains disallowed"
 proposal_allowed: false
-proposal_allowed_reason: "Current PR230 head has no accepted same-surface canonical O_H/action, no strict physical C_ss/C_sH/C_HH pole rows, no strict W/Z physical-response packet, no strict Schur/Feshbach pole rows, and no strict neutral H3/H4 transfer/source-coupling artifact."
+proposal_allowed_reason: "Current PR230 head has exact support for a finite Hamming-Dirichlet taste-radial O_H axis and a native finite Dirichlet quadratic candidate, but no accepted same-surface EW/Higgs action, scalar LSZ/source-overlap authority, strict physical C_ss/C_sH/C_HH pole rows, strict W/Z physical-response packet, strict Schur/Feshbach pole rows, or strict neutral H3/H4 transfer/source-coupling artifact."
 first_route_decision: "Block115 does not change W/Z from blocked to executable; Block116 also records a neutral H3/H4 strict-artifact absence. The first campaign artifact therefore targets the invariant source/action obstruction that all remaining positive routes must satisfy."
 lock_status: "branch-local lock acquired with scripts/automation_lock.py using loop-local lock paths"
 forbidden_imports:
@@ -36,15 +36,22 @@ route_order:
   - "D: strict Schur/Feshbach K-prime/pole rows"
   - "E: neutral H3/H4 physical transfer plus source/canonical-Higgs coupling"
   - "F: holonomic source response only if current-surface O_H/h-source appears"
-block117_result:
-  output: outputs/yt_pr230_block117_source_reparam_invariant_minimal_data_2026-05-17.json
+base_block119_result:
+  output: outputs/yt_pr230_block119_native_dirichlet_action_lsz_probe_2026-05-17.json
+  status: "exact support plus boundary"
+  pass_count: 13
+  fail_count: 0
+  proposal_allowed: false
+  source: "origin/claude/yt-direct-lattice-correlator-2026-04-30"
+block120_result:
+  output: outputs/yt_pr230_block120_source_reparam_invariant_minimal_data_2026-05-17.json
   status: "exact negative boundary"
-  pass_count: 14
+  pass_count: 16
   fail_count: 0
   proposal_allowed: false
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439"
-block118_result:
-  output: outputs/yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability_2026-05-17.json
+block121_result:
+  output: outputs/yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability_2026-05-17.json
   status: "exact negative boundary"
   pass_count: 10
   fail_count: 0
@@ -53,15 +60,15 @@ block118_result:
   derivative_shift: -0.026810898919042443
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439"
 verification:
-  block117_py_compile: passed
-  block117_runner: "PASS=14 FAIL=0"
-  block118_py_compile: passed
-  block118_runner: "PASS=10 FAIL=0"
+  block120_py_compile: passed
+  block120_runner: "PASS=16 FAIL=0"
+  block121_py_compile: passed
+  block121_runner: "PASS=10 FAIL=0"
   full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
   retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
   positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
-  campaign_status: "PASS=436 FAIL=0; proposal_allowed=false"
-  assumption_import_stress: "PASS=119 FAIL=0; proposal_allowed=false"
+  campaign_status: "PASS=439 FAIL=0; proposal_allowed=false"
+  assumption_import_stress: "PASS=122 FAIL=0; proposal_allowed=false"
   git_diff_check: passed
-next_exact_action: "Commit and push Block118, update stacked PR #1439, then pivot to the next non-duplicate neutral H3/H4 physical-transfer/source-coupling route unless a fetched strict artifact appears."
-next_checkpoint_due_utc: "2026-05-17T15:41:38Z"
+next_exact_action: "Force-push rebased Blocks120-121 PR #1439, then rebase and renumber the follow-on Hamming-axis action/LSZ normalization branch to Block122."
+next_checkpoint_due_utc: "2026-05-17T16:11:23Z"

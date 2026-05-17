@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PR #230 Block118 Schur finite-packet pole-derivative nonidentifiability.
+PR #230 Block121 Schur finite-packet pole-derivative nonidentifiability.
 
 Block113 confirms a complete finite A/B/C inverse-block support packet, while
 Block111 confirms that no strict K-prime pole rows were emitted.  This runner
@@ -25,11 +25,12 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
     ROOT
     / "outputs"
-    / "yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability_2026-05-17.json"
+    / "yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability_2026-05-17.json"
 )
 
 PARENTS = {
-    "block117_invariant_minimal_data": "outputs/yt_pr230_block117_source_reparam_invariant_minimal_data_2026-05-17.json",
+    "block120_invariant_minimal_data": "outputs/yt_pr230_block120_source_reparam_invariant_minimal_data_2026-05-17.json",
+    "block117_schur_scalar_lsz_strict_artifact_resolver": "outputs/yt_pr230_block117_schur_scalar_lsz_strict_artifact_resolver_2026-05-17.json",
     "block113_schur_abc_complete_packet_refresh": "outputs/yt_pr230_block113_schur_abc_complete_packet_refresh_2026-05-17.json",
     "finite_schur_abc_rows": "outputs/yt_pr230_two_source_taste_radial_schur_abc_finite_rows_2026-05-06.json",
     "block111_schur_kprime_gap_audit": "outputs/yt_pr230_block111_schur_kprime_packet_gap_audit_2026-05-17.json",
@@ -176,7 +177,7 @@ def finite_node_vanishing_witness() -> dict[str, Any]:
 
 
 def main() -> int:
-    print("PR #230 Block118 Schur finite-packet pole-derivative nonidentifiability")
+    print("PR #230 Block121 Schur finite-packet pole-derivative nonidentifiability")
     print("=" * 86)
 
     certs = {name: load_json(path) for name, path in PARENTS.items()}
@@ -185,12 +186,12 @@ def main() -> int:
     proposals = [name for name, cert in certs.items() if cert.get("proposal_allowed") is True]
     witness = finite_node_vanishing_witness()
 
-    block117_open_boundary = (
-        certs["block117_invariant_minimal_data"].get(
-            "block117_source_reparam_invariant_minimal_data_passed"
+    block120_open_boundary = (
+        certs["block120_invariant_minimal_data"].get(
+            "block120_source_reparam_invariant_minimal_data_passed"
         )
         is True
-        and certs["block117_invariant_minimal_data"].get("proposal_allowed") is False
+        and certs["block120_invariant_minimal_data"].get("proposal_allowed") is False
     )
     finite_packet_complete_support = (
         certs["block113_schur_abc_complete_packet_refresh"].get(
@@ -209,6 +210,19 @@ def main() -> int:
         and certs["finite_schur_abc_rows"].get("expected_chunks") == 63
     )
     strict_schur_rows_absent = (
+        certs["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "block117_schur_scalar_lsz_strict_artifact_resolver_passed"
+        )
+        is True
+        and certs["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "scan_finds_no_strict_schur_scalar_lsz_artifact"
+        )
+        is True
+        and certs["block117_schur_scalar_lsz_strict_artifact_resolver"].get(
+            "proposal_allowed"
+        )
+        is False
+        and
         certs["block113_schur_abc_complete_packet_refresh"].get(
             "strict_schur_abc_kernel_rows_present"
         )
@@ -252,7 +266,7 @@ def main() -> int:
 
     report("parent-certificates-present", not missing, f"missing={missing}")
     report("no-parent-authorizes-proposal", not proposals, f"proposal_allowed={proposals}")
-    report("block117-boundary-preserved", block117_open_boundary, statuses["block117_invariant_minimal_data"])
+    report("block120-boundary-preserved", block120_open_boundary, statuses["block120_invariant_minimal_data"])
     report("finite-schur-abc-packet-complete-support", finite_packet_complete_support, statuses["block113_schur_abc_complete_packet_refresh"])
     report("strict-schur-pole-rows-absent", strict_schur_rows_absent, statuses["block111_schur_kprime_gap_audit"])
     report("block70-theorem-support-not-closure", theorem_support_not_closure, statuses["block70_schur_feshbach_kprime_theorem"])
@@ -264,7 +278,7 @@ def main() -> int:
     passed = (
         not missing
         and not proposals
-        and block117_open_boundary
+        and block120_open_boundary
         and finite_packet_complete_support
         and strict_schur_rows_absent
         and theorem_support_not_closure
@@ -276,7 +290,7 @@ def main() -> int:
 
     result = {
         "actual_current_surface_status": (
-            "exact negative boundary / Block118 complete finite Schur A/B/C packet "
+            "exact negative boundary / Block121 complete finite Schur A/B/C packet "
             "does not determine strict Schur/Feshbach K-prime pole derivative"
         ),
         "conditional_surface_status": (
@@ -296,7 +310,7 @@ def main() -> int:
         ),
         "audit_required_before_effective_retained": True,
         "bare_retained_allowed": False,
-        "block118_schur_finite_packet_pole_derivative_nonidentifiability_passed": passed,
+        "block121_schur_finite_packet_pole_derivative_nonidentifiability_passed": passed,
         "finite_node_vanishing_witness": witness,
         "parent_certificates": PARENTS,
         "parent_statuses": statuses,

@@ -1,4 +1,4 @@
-# PR230 Block118 Schur Finite-Packet Pole-Derivative Nonidentifiability
+# PR230 Block121 Schur Finite-Packet Pole-Derivative Nonidentifiability
 
 Status: exact negative boundary / the complete finite Schur A/B/C packet does
 not determine a strict Schur/Feshbach `K'(pole)` derivative.
@@ -6,9 +6,10 @@ not determine a strict Schur/Feshbach `K'(pole)` derivative.
 ## Scope
 
 Block113 confirms a real complete `63/63` finite A/B/C inverse-block support
-packet.  Block111 confirms that no strict Schur/Feshbach K-prime rows were
-emitted.  Block118 tests the remaining promotion shortcut: whether exact finite
-A/B/C rows can fix the pole derivative once a pole location is held fixed.
+packet.  Blocks111 and 117 confirm that no strict Schur/Feshbach K-prime or
+scalar-LSZ pole authority rows were emitted.  Block121 tests the remaining
+promotion shortcut: whether exact finite A/B/C rows can fix the pole derivative
+once a pole location is held fixed.
 
 ## Result
 
@@ -55,8 +56,8 @@ plaquette, `u0`, or unit settings for `kappa_s`, `c2`, or `Z_match`.
 ## Verification
 
 ```bash
-python3 -m py_compile scripts/frontier_yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability.py
-python3 scripts/frontier_yt_pr230_block118_schur_finite_packet_pole_derivative_nonidentifiability.py
+python3 -m py_compile scripts/frontier_yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability.py
+python3 scripts/frontier_yt_pr230_block121_schur_finite_packet_pole_derivative_nonidentifiability.py
 # SUMMARY: PASS=10 FAIL=0
 ```
 

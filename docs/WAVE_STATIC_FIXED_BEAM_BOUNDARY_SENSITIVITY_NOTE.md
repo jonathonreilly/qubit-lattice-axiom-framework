@@ -1,7 +1,36 @@
-# Wave Static Fixed-Beam Boundary Sensitivity
+# Wave Static Fixed-Beam Boundary Sensitivity — H = 0.5 Default Run (Binding)
 
-**Date:** 2026-04-08
-**Status:** proposed_retained boundary probe
+**Date:** 2026-04-08 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is the H = 0.5 default run only; the H = 0.35 medium-H rows are out of scope until the H = 0.35 completed stdout / cache is supplied)
+**Status:** bounded H = 0.5 fixed-beam boundary-sensitivity probe;
+the H = 0.35 medium-H persistence rows and the
+`wave_retardation_continuum_limit` dependency reuse are
+**out-of-binding-scope** in this revision until separately registered.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"supply the full
+`wave_retardation_continuum_limit` dependency or retained direct
+authority plus completed stdout/cache for all claimed rows, especially
+the H = 0.35 medium-H run."*
+
+This revision takes the narrowing path. The binding evidence of this
+note is exactly the **H = 0.5 default-run rows** from
+`scripts/wave_static_fixed_beam_boundary_sensitivity.py` (the field
+`PW_phys = 6.0` vs `9.0` comparison at fixed beam `PW_phys = 6.0`,
+frozen source `z_phys = 3.0`, at `H = 0.5`).
+
+The following are **demoted to out-of-binding-scope** of this note:
+- the **`H = 0.35` medium-H persistence rows** — no completed stdout
+  / cache is currently registered at `H = 0.35` in the restricted
+  packet, so the claim that the boundary sensitivity persists at
+  medium H is not supported by an audit-lane-visible cached artifact;
+- reuse of the **`wave_retardation_continuum_limit`** dependency,
+  whose module-level wave / beam / propagation / readout / constants
+  imports are delegated upstream and are not registered as a direct
+  retained authority for this row. Promoting either requires the
+  separately registered artifact or retained-authority chain the
+  audit verdict names.
 
 This probe isolates the boundary question more carefully than the
 previous field-box test:

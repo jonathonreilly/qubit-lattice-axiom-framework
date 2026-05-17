@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pmns_active_four_real_source_from_transport_note_hostile_audit_findings.py
+runner_sha256: b4acd027929c45500c5e244f1dd043e3c736b5d6f1a18f236211033433ad8bbe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — pmns_active_four_real_source_from_transport_note
+==============================================================================
+  [PASS] [A] Parent note exists  (PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md, 11902 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   pmns_corner_transport_active_block_note IS cited (>=1 hit)  (hits = 4)
+  [PASS] [A]   pmns_lower_level_end_to_end_closure_note IS cited (>=1 hit)  (hits = 4)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 3 PASS / 0 FAIL
+Class-A pattern hits: 3
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

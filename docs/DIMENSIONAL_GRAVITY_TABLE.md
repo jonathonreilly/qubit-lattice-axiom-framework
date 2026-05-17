@@ -1,11 +1,47 @@
-# Dimensional Gravity Table
+# Dimensional Gravity Table — Cache-Backed d=3 / d=4 Rows Only (Binding)
 
-**Status:** bounded finite-entry inventory. This note tabulates point-tested
+**Status:** bounded finite-entry inventory. The binding rows are the
+**cache-backed `d = 3` and `d = 4` entries** that the certificate
+runner asserts against registered cached artifacts. The `d = 2` row
+is **diagnostic-only**, and the `d = 4` distance-law entry remains
+**width-limited / explicitly open** asymptotically. This note tabulates
+point-tested results on the listed family/parameter rows; it does
+**not** claim universality across all dimensions, all h values, or
+all parameter variations.
 **Claim type:** bounded_theorem
-results on the listed family/parameter rows. It does NOT claim universality
-across all dimensions, all h values, or all parameter variations. The bolded
-"1.00" entries are point-tested results, not universality theorems. (NARROWED
-2026-05-02 in response to audit verdict requesting a finite-scope reframing.)
+
+**Date:** 2026-04-04 (NARROWED 2026-05-02; CERTIFICATE RUNNER ADDED 2026-05-03;
+CACHED-ARTIFACT ASSERTIONS ADDED 2026-05-09; STALE BORN ENTRY RECONCILED
+2026-05-10; SCOPE NARROWED TO CACHE-BACKED d=3 / d=4 ROWS 2026-05-17 per
+audited_conditional `runner_artifact_issue` repair)
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"include the full
+registered 3D/4D cache artifacts or a completed sliced first-principles
+lattice runner in the restricted packet if promoting beyond conditional
+is desired."*
+
+This revision takes the narrowing path. The binding evidence of this
+note is exactly the **cache-backed `d = 3` and `d = 4` rows** the
+certificate runner asserts against the registered cached artifacts
+(kernel `1 / L^(d-1)`, field `s / r^(d-2)`, action `S = L(1 - f)`,
+measure `h^(d-1)`). Each of those binding entries is point-tested via
+the registered cache.
+
+The following are **demoted to out-of-binding-scope** in this revision:
+- the `d = 2` row, which remains **diagnostic-only** and was never
+  cache-backed as a binding entry;
+- the `d = 4` **distance-law entry**, which is explicitly
+  width-limited and asymptotically open; the asymptotic continuum
+  reading is not part of the binding scope without a separately
+  retained convergence / first-principles lattice runner.
+
+Promoting either of the demoted entries to the binding scope requires
+either (a) attaching the full registered 3D/4D cache artifacts plus a
+companion convergence theorem, or (b) a completed sliced
+first-principles lattice runner in the restricted packet.
 
 **Date:** 2026-04-04 (NARROWED 2026-05-02; CERTIFICATE RUNNER ADDED 2026-05-03;
 CACHED-ARTIFACT ASSERTIONS ADDED 2026-05-09; STALE BORN ENTRY RECONCILED

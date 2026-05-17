@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_pmns_selector_three_identity_support_note_2026-04-21_hostile_audit_findings.py
+runner_sha256: 68e0662c01ff86e435dafd429bb563e852fe7e42bd96867c2eb4bba561e07a46
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.12
+status: ok
+----- stdout -----
+==============================================================================
+AUDIT-PREP VERIFIER — pmns_selector_three_identity_support_note_2026-04-21
+==============================================================================
+  [PASS] [A] Parent note exists  (PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21.md, 14251 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   pmns_selector_three_identity_support_proposal_readme_2026-04-21 IS cited (>=1 hit)  (hits = 3)
+  [PASS] [A]   pmns_three_identity_q_koide_from_v8_support_lift_theorem_note_2026-04-29 IS cited (>=1 hit)  (hits = 3)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 3 PASS / 0 FAIL
+Class-A pattern hits: 3
+==============================================================================
+
+VERIFIED
+
+----- stderr -----
+

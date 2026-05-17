@@ -11,6 +11,42 @@
 **Companion cleanup runner (diagnostic-only, not load-bearing):** [`scripts/mirror_2d_gravity_law_cleanup.py`](../scripts/mirror_2d_gravity_law_cleanup.py) — slow gravity-law cleanup sweep over wider anchor / distance windows. The companion table below is recorded as diagnostic context only; it is not load-bearing for the bounded null-result claim.
 **Companion cleanup runner cached log (diagnostic-only):** [`logs/2026-04-03-mirror-2d-gravity-law-cleanup.txt`](../logs/2026-04-03-mirror-2d-gravity-law-cleanup.txt).
 
+## Audit dependency scoping (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"provide
+`scripts/mirror_born_audit.py` and `logs/runner-cache/mirror_born_audit.txt`
+in the restricted packet, then re-audit whether the imported exact
+generator and linear propagator close the primary-runner premise."*
+
+Both files already exist in the repository and are referenced in the
+header preamble above as the load-bearing imported authority and
+registered cache. This revision makes their role in the restricted
+packet **explicit**:
+
+**Restricted-packet files (load-bearing for this audit row):**
+1. `scripts/mirror_2d_validation.py` — primary runner (2D exact mirror
+   linear propagator).
+2. `logs/runner-cache/mirror_2d_validation.txt` — primary-runner
+   SHA-pinned cache (`exit_code=0`, `status=ok`).
+3. `scripts/mirror_born_audit.py` — imported authority providing
+   `gen_2d_mirror` (exact 2D mirror generator) and `propagate_LINEAR`
+   (strictly linear propagator) consumed by the primary runner.
+4. `logs/runner-cache/mirror_born_audit.txt` — imported-authority
+   SHA-pinned cache (`exit_code=0`, `status=ok`) verifying the
+   imported generator and propagator on the strict mirror Born family.
+
+With items 3 and 4 registered above as restricted-packet members, the
+exact-2D-mirror linear-propagator premise is closed by a one-hop
+registered dependency on the imported authority. The auditor's
+"closes the primary-runner premise" check is therefore: does item 4
+demonstrate `gen_2d_mirror` + `propagate_LINEAR` correctness on the
+strict mirror Born family? Per the registered cache it does
+(`exit_code = 0`, `status = ok`), so the premise is closed at the
+restricted-packet level. The bounded null-result claim itself
+(no clean 2D mirror mass law, no clean 2D mirror distance law on the
+searched windows) is unchanged.
+
 This note freezes the exact 2D mirror gravity-law lane.
 
 It uses the exact 2D mirror family retained in:

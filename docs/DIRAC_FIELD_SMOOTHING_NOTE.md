@@ -1,6 +1,29 @@
-# Dirac Field Smoothing Note
+# Dirac Field Smoothing Note — Finite m₀ = 0.10 Runner Output (Binding)
 
-Date: 2026-04-10
+Date: 2026-04-10 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: binding scope is the finite m₀ = 0.10 runner output only; nearby-mass robustness and physical-readout interpretation split out)
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `scope_too_broad`, stating: *"Split the auditable finite
+`m0 = 0.10` runner-output statement from the unsupported nearby-mass
+robustness and physical-readout interpretation; then re-audit the
+broader claim only after adding completed `0.08 / 0.12` logs and a
+retained readout bridge."*
+
+This revision implements the splitting. The binding evidence of this
+note is exactly the **finite `m0 = 0.10` runner output** from
+`scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py` on the
+declared scan grid (`N ∈ {8..24}` sweep at offset = 3; offset sweep
+`{2..6}` at N = 16; baseline `1/(r+0.1)` kernel).
+
+The following are **demoted to out-of-binding-scope** until separately
+addressed:
+- nearby-mass robustness claims at `m0 ∈ {0.08, 0.12}` — no
+  completed runner logs are registered at those mass values;
+- physical-readout interpretation (i.e. translating field-smoothing
+  behaviour into a physical observable) — requires a separately
+  retained Dirac readout bridge that is not supplied here.
 
 This note records the source-field broadening scan in
 [`scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py`](../scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py).

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 323 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1233 |
+| unaudited | 1232 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 159 |
+| ~~audited_conditional~~ | 160 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -44,21 +44,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 541 |
-| `audited_conditional` | 159 |
+| `audited_conditional` | 160 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1430 |
+| `unaudited` | 1429 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 926 |
+| `bounded_theorem` | 927 |
 | `decoration` | 20 |
 | `meta` | 199 |
 | `no_go` | 235 |
 | `open_gate` | 110 |
-| `positive_theorem` | 739 |
+| `positive_theorem` | 738 |
 
 | criticality | count |
 |---|---:|
@@ -656,6 +656,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1271,6 +1272,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note's load-bearing step is that the Strongest retained rows tables are deterministic stdout of the registered runner and that the narrow conclusion is supported directly by those rows.  _(class `C`)_
 - **chain closes:** False — The supplied runner source/stdout do not match the note's stated configuration or tables: the runner defaults/stdout use 12 realizations while the note states 10, and completed N=80 collapse entries already differ numerically. The asserted N=100 threshold 0.10 pocket is not present in the supplied stdout because the run timed out, and the imported generator/propagator infrastructure is not supplied as a one-hop authority.
 - **rationale:** Issue: the note's bounded tables are stale relative to the supplied runner source/stdout, and the runner depends on unlisted imported infrastructure for graph generation, propagation, layernorm, and pruning. Why this blocks: the conclusion depends on exact finite rows, especially the N=100 layernorm collapse pocket, but the current packet neither reproduces those rows nor supplies the imported closure authority. Repair target: align the runner/note configuration, provide a completed cached log or sliced deterministic runner for the stated sweep, and cite/audit the imported infrastructure. Claim boundary until fixed: the packet only supports partial qualitative observations from the completed N=80 stdout, not the full bounded claim.
+- **auditor confidence:** high
+
+### `asymmetry_persistence_mass_window_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the note's bounded generated-family mass-response window claim as supported by the provided mass-scaling runner stdout and source, limited to the quoted LN threshold 0.10 and 0.20 fits.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-131619-20260517T131619Z-8fe10543-asymmetry_persistence_ma-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The threshold-0.10 and threshold-0.20 LN power-law fits and R^2 values are reproducible from the cited runner cache, supporting a bounded mass-response window conditional on the LN regulated propagator and pruning rule.  _(class `B`)_
+- **chain closes:** False — The runner source genuinely computes means and power-law fits rather than hard-coding the quoted values, and its stdout matches the note. The chain still imports build_graph, the LN regulated propagator, measurement readout, and pruning rule from helper modules that are not included as closed authorities in the restricted packet.
+- **rationale:** The provided runner cache reproduces the note's quoted LN fits, and the runner source shows those fits are computed from generated graphs and propagation outputs rather than merely printed constants. However, the runner's load-bearing construction and readout depend on imported helper modules, especially the generated-family graph builder and layernorm propagation machinery, whose closure is explicitly outside this row. Under the rubric, that makes the bounded window a conditional result rather than an audited-clean first-principles derivation.
+- **open / conditional deps cited:**
+  - `scripts/asymmetry_persistence_joint_card.py`
+  - `scripts/asymmetry_persistence_pilot.py`
+  - `scripts/gap_topological_asymmetry.py`
+  - `scripts/gap_topological_asymmetry_layernorm_combo.py`
 - **auditor confidence:** high
 
 ### `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29`

@@ -140102,57 +140102,84 @@
       "verdict_rationale": "The load-bearing work is algebraic: project C^4 under the residual swap, import the upstream gl(3)\u2295gl(1) commutant/SU(3) structure, and apply standard representation theory to identify a triplet and singlet. The runner confirms these matrix and dimension identities but does not add a first-principles computation beyond the cited graph-first SU3 integration result. There are zero external comparator checks, and the result is a support-level restatement of the upstream structural SU(3) theorem with SM naming conventions attached."
     },
     "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-17T18:47:57.444947+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-184523-41cdea85-lhcm_matter_assignment_s-015",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The structural decomposition follows from the cited retained 3+1 split, the gl(3) \u2295 gl(1) commutant with compact semisimple su(3), and standard finite-dimensional SU(3) representation facts. No SM species labels, hypercharge normalization, external comparator, or staggered-Dirac realization quantity is needed for this bounded algebraic statement.",
       "claim_id": "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Algebraic SU(3) block-content corollary on the retained graph-first selected-axis LH-doublet sector: Sym\u00b2 is a 3 or 3-bar block, Anti\u00b2 is a singlet, and tensoring the weak doublet gives dimensions 6 and 2.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-17T18:47:57.444947+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "graph_first_su3_integration_note",
       "deps": [
         "graph_first_su3_integration_note",
         "graph_first_selector_derivation_note",
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_graph_first_su3_integration_note",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given the retained 3+1 Sym\u00b2/Anti\u00b2 split and gl(3) \u2295 gl(1) commutant, standard SU(3) representation theory gives Sym\u00b2 as a non-trivial 3-dimensional irrep, Anti\u00b2 as trivial, hence C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "daac56dcbcc5d761e2777f62ad47f570fd28a42ed01021c319dc547cec3c2386",
       "note_path": "docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Box as a corollary of graph_first_su3_integration_note unless a future revision makes an independent load-bearing role for the ratio theorem explicit; also re-check that B1 is grounded directly in I2's embedded Gell-Mann action rather than the weaker commutant-dimension sentence.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 99,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 99
       },
       "runner_path": "scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py",
       "title": "LHCM Matter-Assignment SU(3) Block-Representation Narrow Theorem (Retained-Only Substrate)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "All substantive checks are class-A exact algebraic identities or standard representation facts, and the runner source does not import external numerical comparators or hard-code a contested physical value. The one-hop authorities in the packet are marked retained_bounded, so there is no open dependency blocking the structural block statement. Under the decoration policy, however, the result is a direct corollary of the graph_first_su3_integration_note's 3 \u2295 1 split and gl(3) \u2295 gl(1) commutant, with the selector and ratio inputs serving canonicity/count-consistency roles rather than supplying an independent new closure."
     },
     "lhcm_repair_atlas_consolidation_note_2026-05-02": {
       "audit_date": null,

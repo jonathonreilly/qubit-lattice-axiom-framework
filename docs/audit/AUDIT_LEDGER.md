@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 341 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1226 |
+| unaudited | 1225 |
 | meta | 202 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -32,7 +32,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
-| `decoration_under_graph_first_su3_integration_note` | 1 |
+| `decoration_under_graph_first_su3_integration_note` | 2 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
@@ -47,16 +47,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 565 |
 | `audited_conditional` | 186 |
-| `audited_decoration` | 21 |
+| `audited_decoration` | 22 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1428 |
+| `unaudited` | 1427 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 966 |
-| `decoration` | 22 |
+| `bounded_theorem` | 965 |
+| `decoration` | 23 |
 | `meta` | 206 |
 | `no_go` | 239 |
 | `open_gate` | 111 |
@@ -882,6 +882,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -7432,6 +7433,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The gl(3)⊕gl(1) commutant from the selected-axis surface gives a 3-dimensional SU(3)-fundamental Sym² block and a 1-dimensional SU(3)-trivial Anti² block, so the LH-doublet sector decomposes as (2,3)⊕(2,1).  _(class `A`)_
 - **chain closes:** True — The SU(3) representation decomposition follows from the cited retained_bounded graph-first SU3 integration theorem plus standard finite-dimensional representation facts. The naming of the resulting (2,3) and (2,1) sectors as Q_L and L_L is explicitly definitional, not a derived physics step.
 - **rationale:** The load-bearing work is algebraic: project C^4 under the residual swap, import the upstream gl(3)⊕gl(1) commutant/SU(3) structure, and apply standard representation theory to identify a triplet and singlet. The runner confirms these matrix and dimension identities but does not add a first-principles computation beyond the cited graph-first SU3 integration result. There are zero external comparator checks, and the result is a support-level restatement of the upstream structural SU(3) theorem with SM naming conventions attached.
+- **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** high
+
+### `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic SU(3) block-content corollary on the retained graph-first selected-axis LH-doublet sector: Sym² is a 3 or 3-bar block, Anti² is a singlet, and tensoring the weak doublet gives dimensions 6 and 2.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_graph_first_su3_integration_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-184523-41cdea85-lhcm_matter_assignment_s-015`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained 3+1 Sym²/Anti² split and gl(3) ⊕ gl(1) commutant, standard SU(3) representation theory gives Sym² as a non-trivial 3-dimensional irrep, Anti² as trivial, hence C² ⊗ (Sym² ⊕ Anti²) = (2,3) ⊕ (2,1).  _(class `A`)_
+- **chain closes:** True — The structural decomposition follows from the cited retained 3+1 split, the gl(3) ⊕ gl(1) commutant with compact semisimple su(3), and standard finite-dimensional SU(3) representation facts. No SM species labels, hypercharge normalization, external comparator, or staggered-Dirac realization quantity is needed for this bounded algebraic statement.
+- **rationale:** All substantive checks are class-A exact algebraic identities or standard representation facts, and the runner source does not import external numerical comparators or hard-code a contested physical value. The one-hop authorities in the packet are marked retained_bounded, so there is no open dependency blocking the structural block statement. Under the decoration policy, however, the result is a direct corollary of the graph_first_su3_integration_note's 3 ⊕ 1 split and gl(3) ⊕ gl(1) commutant, with the selector and ratio inputs serving canonicity/count-consistency roles rather than supplying an independent new closure.
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
 

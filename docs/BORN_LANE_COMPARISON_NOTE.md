@@ -64,3 +64,16 @@ but which bounded trade-off they prefer:
 - central-band `|y|` + LN: slightly stronger hard-geometry decoherence at
   the larger `N` rows
 
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/combined_gravity_scaling.py`
+- `scripts/generative_causal_dag_interference.py`
+- `scripts/topology_families.py`

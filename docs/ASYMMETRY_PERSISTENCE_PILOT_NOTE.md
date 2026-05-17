@@ -293,3 +293,15 @@ for the generated geometry rule. It records the cited audit-snapshot repair path
 cites the registered primary runner cache, and names the
 admitted-context imports the dense and layernorm-stacking rows depend
 on.
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/gap_topological_asymmetry.py`

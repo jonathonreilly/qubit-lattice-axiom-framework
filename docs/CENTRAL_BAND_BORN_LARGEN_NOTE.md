@@ -48,3 +48,14 @@ The clean large-`N` takeaway is now:
 - `LN + |y|` remains the stable backbone of the pocket
 - adding collapse does not break Born inside this dense pocket
 
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/stochastic_collapse_born_calibration.py`

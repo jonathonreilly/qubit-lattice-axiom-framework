@@ -114,3 +114,17 @@ register `mass_scaling.py` against this row. It only records the audit
 verdict, cites the live runner that reproduces the quoted fits, and
 declares the admitted-context imports.
 
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/asymmetry_persistence_joint_card.py`
+- `scripts/asymmetry_persistence_pilot.py`
+- `scripts/gap_topological_asymmetry.py`
+- `scripts/gap_topological_asymmetry_layernorm_combo.py`

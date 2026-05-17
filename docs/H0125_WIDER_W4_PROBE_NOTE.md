@@ -30,3 +30,16 @@ which kept the physical family at `phys_l = 6` and still returned
 `alpha = 0.499` on the full-window `z = 3.0` row. So the wider-family lane is
 already a bounded no-go on the tested row, and this cheaper helper should stay
 an auxiliary scout rather than the claim-carrying path.
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/lattice_3d_l2_numpy_h0125_only.py`
+- `scripts/numpy_replay_bootstrap.py`

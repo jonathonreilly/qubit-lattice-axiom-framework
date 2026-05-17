@@ -84,3 +84,25 @@ statement remains occupancy-first, and the next bounded continuous-law step, if
 one is still needed, should start from the 3-NN stencil's residual anatomy or
 another equally local occupancy-aware correction, not from a broader
 denominator search.
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/density_matrix_analysis.py`
+- `scripts/directional_b_overlap_continuous_density_bridge_card.py`
+- `scripts/directional_b_overlap_continuous_density_midlayer_holdout.py`
+- `scripts/directional_b_overlap_continuous_density_tree_control.py`
+- `scripts/directional_b_overlap_onset_local_density_compare.py`
+- `scripts/directional_b_readout_compare.py`
+- `scripts/generative_causal_dag_interference.py`
+- `scripts/gravity_observable_readout_scaling_compare.py`
+- `scripts/gravity_packet_local_action_flow_transfer_compare.py`
+- `scripts/scaling_testbench.py`
+- `scripts/two_register_decoherence.py`

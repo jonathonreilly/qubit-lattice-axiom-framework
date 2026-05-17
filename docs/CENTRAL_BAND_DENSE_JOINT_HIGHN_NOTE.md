@@ -56,3 +56,22 @@ The review-safe high-N conclusion is narrower than the lower-N dense pocket:
   is noisy and should be treated as bounded rather than definitive.
 - This is still the same dense hard-geometry family, but the joint window is
   clearly thinning as `N` rises.
+
+---
+
+## Audit Requeue Note (2026-05-17)
+
+No science content changes. The prior non-clean audit cited restricted-packet
+incompleteness from helper-runner imports. The audit pipeline now populates
+transitive `helper_runner_paths`, so this source-note hash drift is an
+explicit re-audit trigger for a complete restricted packet. Helper runner
+paths:
+
+- `scripts/central_band_dense_joint_card.py`
+- `scripts/central_band_layernorm_combo.py`
+- `scripts/combined_gravity_scaling.py`
+- `scripts/gap_topological_asymmetry.py`
+- `scripts/gap_topological_asymmetry_layernorm_combo.py`
+- `scripts/generative_causal_dag_interference.py`
+- `scripts/stochastic_collapse_born_calibration.py`
+- `scripts/topology_families.py`

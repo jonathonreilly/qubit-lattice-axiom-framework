@@ -428,6 +428,9 @@ def main() -> int:
         "block135_fresh_source_field_action_phase_reopen_audit": load(
             "outputs/yt_pr230_block135_fresh_source_field_action_phase_reopen_audit_2026-05-17.json"
         ),
+        "block136_fresh_noether_koide_anomaly_poisson_reopen_audit": load(
+            "outputs/yt_pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -3442,6 +3445,55 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block136_fresh_noether_koide_anomaly_poisson_reopen_audit_keeps_imports_clean = (
+        "Block136 fresh Noether-Koide-anomaly-Poisson reopen audit finds no PR230 strict closure root"
+        in str(
+            certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+            "block136_fresh_noether_koide_anomaly_poisson_reopen_audit_passed"
+        )
+        is True
+        and certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_noether_carrier_identity_as_pr230_oh_action_lsz")
+        is True
+        and certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_koide_reduced_carrier_as_pr230_yukawa_or_higgs_authority")
+        is True
+        and certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_anomaly_time_fixes_as_pr230_source_higgs_or_wz_authority")
+        is True
+        and certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+        .get("strict_non_claims", {})
+        .get("does_not_treat_poisson_zero_coupling_as_pr230_scalar_lsz_or_schur_authority")
+        is True
+        and all(
+            value is False
+            for value in certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block136-fresh-noether-koide-anomaly-poisson-reopen-audit-keeps-imports-clean",
+        block136_fresh_noether_koide_anomaly_poisson_reopen_audit_keeps_imports_clean,
+        certificates["block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -3803,6 +3855,7 @@ def main() -> int:
         "block133_fresh_math_artifact_reopen_audit_keeps_imports_clean": block133_fresh_math_artifact_reopen_audit_keeps_imports_clean,
         "block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean": block134_fresh_hamiltonian_cpt_iss_reopen_audit_keeps_imports_clean,
         "block135_fresh_source_field_action_phase_reopen_audit_keeps_imports_clean": block135_fresh_source_field_action_phase_reopen_audit_keeps_imports_clean,
+        "block136_fresh_noether_koide_anomaly_poisson_reopen_audit_keeps_imports_clean": block136_fresh_noether_koide_anomaly_poisson_reopen_audit_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

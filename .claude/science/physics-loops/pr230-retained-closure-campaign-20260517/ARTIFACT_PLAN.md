@@ -612,6 +612,52 @@ Verified at `2026-05-17T18:51:33Z`:
 - audit pipeline: completed; generated docs/audit diffs restored
 - strict audit lint: OK, no errors; five known warnings
 
+## Block136
+
+Working title: PR230 Block136 fresh Noether/Koide/anomaly/Poisson reopen
+audit.
+
+Purpose:
+
+- ingest fresh origin/main theorem drift and side branches after Block135:
+  carrier-independent Noether, Koide reduced-carrier, anomaly-forces-time
+  meta fixes, and Poisson zero-coupling self-gravity;
+- test whether any surface supplies a strict PR230 route root rather than
+  narrow support, process content, or other-lane algebra;
+- reject name-adjacent shortcuts: carrier-independent Noether algebra is not
+  physical-operator identification, Koide reduced-carrier algebra is not
+  top-Yukawa or Higgs/source-overlap authority, anomaly branches are meta
+  fixes, and Poisson zero-coupling is not scalar LSZ or Schur/Feshbach pole
+  authority;
+- preserve the no-closure firewall while recording the fresh-artifact intake.
+
+Files:
+
+- `docs/YT_PR230_BLOCK136_FRESH_NOETHER_KOIDE_ANOMALY_POISSON_REOPEN_AUDIT_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit.py`
+- `outputs/yt_pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit_2026-05-17.json`
+
+Result: exact negative boundary.  The fresh Noether/Koide/anomaly/Poisson
+surfaces do not supply accepted canonical `O_H`/action/LSZ, source-overlap
+`kappa_s`, strict `C_ss/C_sH/C_HH` pole rows, W/Z response, Schur/Feshbach
+pole authority, or neutral H3/H4 authority.
+
+Verified at `2026-05-17T19:16:47Z`:
+
+- Block136 py_compile: passed
+- Block136 fresh Noether/Koide/anomaly/Poisson reopen audit runner:
+  `PASS=16 FAIL=0`
+- campaign status certificate: `PASS=457 FAIL=0`
+- assumption/import stress: `PASS=140 FAIL=0`
+- retained-route certificate: `PASS=325 FAIL=0`
+- full positive closure assembly: `PASS=200 FAIL=0`
+- positive-closure completion audit: `PASS=79 FAIL=0`
+- target-timeseries full-set checkpoint: `PASS=9 FAIL=0`, `replacement_queue=[]`
+- chunk063 higher-shell checkpoint: `PASS=15 FAIL=0`
+- `git diff --check`: passed
+- audit pipeline: completed; generated docs/audit diffs restored
+- strict audit lint: OK, no errors; five known warnings
+
 ## Block135
 
 Working title: PR230 Block135 fresh source-field/action-phase reopen audit.

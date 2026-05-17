@@ -588,6 +588,9 @@ def main() -> int:
         "pr230_block135_fresh_source_field_action_phase_reopen_audit": load(
             "outputs/yt_pr230_block135_fresh_source_field_action_phase_reopen_audit_2026-05-17.json"
         ),
+        "pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit": load(
+            "outputs/yt_pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -4047,6 +4050,45 @@ def main() -> int:
         "pr230-block135-fresh-source-field-action-phase-reopen-audit-blocks",
         block135_fresh_source_field_action_phase_reopen_audit_blocks,
         statuses["pr230_block135_fresh_source_field_action_phase_reopen_audit"],
+    )
+    block136_fresh_noether_koide_anomaly_poisson_reopen_audit_blocks = (
+        "Block136 fresh Noether-Koide-anomaly-Poisson reopen audit finds no PR230 strict closure root"
+        in str(statuses["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"])
+        and certificates["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"].get(
+            "block136_fresh_noether_koide_anomaly_poisson_reopen_audit_passed"
+        )
+        is True
+        and all(
+            not entry.get("is_pr230_reopen_candidate", True)
+            for entry in certificates["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+            .get("strict_root_candidate_hits", {})
+            .values()
+        )
+        and all(
+            value is True
+            for value in certificates["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+            .get("pr230_missing_roots_after_intake", {})
+            .values()
+        )
+        and all(
+            value is False
+            for value in certificates["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block136-fresh-noether-koide-anomaly-poisson-reopen-audit-blocks",
+        block136_fresh_noether_koide_anomaly_poisson_reopen_audit_blocks,
+        statuses["pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -9885,6 +9927,9 @@ def main() -> int:
     )
     result["block135_fresh_source_field_action_phase_reopen_audit_blocks"] = (
         block135_fresh_source_field_action_phase_reopen_audit_blocks
+    )
+    result["block136_fresh_noether_koide_anomaly_poisson_reopen_audit_blocks"] = (
+        block136_fresh_noether_koide_anomaly_poisson_reopen_audit_blocks
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

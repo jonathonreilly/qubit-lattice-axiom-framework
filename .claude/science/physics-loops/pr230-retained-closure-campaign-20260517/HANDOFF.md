@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block135-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block136-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `4133696670f14d814aa10fce3124e98e47ea750d`.
@@ -32,6 +32,7 @@ Stacked review PR for Block134:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1497
 Stacked review PR for Block135:
 https://github.com/jonathonreilly/cl3-lattice-framework/pull/1503
+Stacked review PR for Block136: pending
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -266,6 +267,24 @@ Block135 `PASS=15`, campaign status `PASS=456`, assumption/import stress
 `PASS=139`.
 
 Active next work after Block135: the cleanest route remains action-first
+source-Higgs closure with accepted same-surface canonical `O_H`/action/LSZ
+authority plus strict numeric `C_ss/C_sH/C_HH` pole-residue rows sharing
+source/action/`O_H` surface IDs.  W/Z, Schur/Feshbach, or neutral routes reopen
+only with their strict physical-response, pole, or transfer authority packets.
+
+Block136 audits the fresh Noether/Koide/anomaly/Poisson surfaces after
+Block135: the new origin/main carrier-independent Noether and Koide theorem
+drift, the anomaly-forces-time meta fixes, and the Poisson zero-coupling
+self-gravity branch.  Result: exact negative boundary.  The Noether theorem is
+carrier-independent current algebra, not PR230 physical operator
+identification or accepted `O_H`/action/LSZ authority; the Koide theorem is
+charged-lepton reduced-carrier algebra, not top-Yukawa or Higgs/source-overlap
+authority; the anomaly branches are meta/citation fixes; and the Poisson branch
+is a zero-coupling code identity outside scalar LSZ, Schur/Feshbach pole, or
+top-response authority.  Reruns: Block136 `PASS=16`, campaign status
+`PASS=457`, assumption/import stress `PASS=140`.
+
+Active next work after Block136: the cleanest route remains action-first
 source-Higgs closure with accepted same-surface canonical `O_H`/action/LSZ
 authority plus strict numeric `C_ss/C_sH/C_HH` pole-residue rows sharing
 source/action/`O_H` surface IDs.  W/Z, Schur/Feshbach, or neutral routes reopen

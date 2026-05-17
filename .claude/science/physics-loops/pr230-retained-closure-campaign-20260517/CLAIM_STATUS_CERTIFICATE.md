@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact negative boundary plus bounded support through Block135.
+Status: exact negative boundary plus bounded support through Block136.
 
 `proposed_retained`: not allowed.
 
@@ -103,6 +103,15 @@ different action-law lane, the electrostatics theorem is abstract source-field
 linearity/parity rather than Cl(3)/Z3 source-to-canonical-Higgs authority,
 methodology and audit drift are process/generated surfaces, and the PR230 fold
 contains Block134's already-audited non-closure artifact.
+Block136 then intakes fresh origin/main Noether and Koide theorem drift, the
+anomaly-forces-time meta-fix branches, and the Poisson zero-coupling
+self-gravity branch.  These do not reopen PR230 either: the Noether theorem is
+carrier-independent current algebra whose scope excludes specific physical
+operator identification, the Koide theorem is charged-lepton reduced-carrier
+algebra rather than top-Yukawa or Higgs/source-overlap authority, the anomaly
+branches are meta/citation fixes, and the Poisson theorem is a zero-coupling
+code identity rather than scalar LSZ, Schur/Feshbach pole, or top-response
+authority.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
@@ -154,6 +163,11 @@ contains Block134's already-audited non-closure artifact.
   linearity/parity, methodology feedback, audit-generated drift, and the PR230
   Block134 fold are not accepted `O_H`/action/LSZ, source-Higgs pole-row, W/Z,
   Schur/Feshbach, or neutral H3/H4 authority packets.
+- no Noether/Koide/anomaly/Poisson shortcut after Block136:
+  carrier-independent Noether algebra, Koide reduced-carrier algebra, anomaly
+  meta fixes, and Poisson zero-coupling identity are not accepted
+  `O_H`/action/LSZ, source-Higgs pole-row, W/Z, Schur/Feshbach, or neutral
+  H3/H4 authority packets.
 - raw source slopes and finite source aliases remain source-reparametrization
   dependent unless a physical scalar pole residue/canonical identity or an
   allowed W/Z absolute pin is supplied.

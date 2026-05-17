@@ -2,22 +2,22 @@ loop_slug: pr230-retained-closure-campaign-20260517
 mode: campaign
 runtime_budget: "12h"
 started_at_utc: "2026-05-17T14:46:11Z"
-last_checkpoint_utc: "2026-05-17T19:09:27Z"
+last_checkpoint_utc: "2026-05-17T19:22:11Z"
 checkpoint_interval: "30m"
 deep_block_interval: "90-120m"
 worktree: /tmp/pr230-physics-loop-closure-20260517
-branch: physics-loop/pr230-retained-closure-campaign-block135-20260517
+branch: physics-loop/pr230-retained-closure-campaign-block136-20260517
 base_surface: origin/claude/yt-direct-lattice-correlator-2026-04-30
 latest_pr230_head: "4133696670f14d814aa10fce3124e98e47ea750d"
-latest_pr230_head_note: "PR #230 is draft/open; origin/claude verified at current PR head after Block134 fold; stacked science work continues on Block135 branch"
+latest_pr230_head_note: "PR #230 is draft/open; origin/claude verified at current PR head after Block134 fold; stacked science work continues on Block136 branch"
 pr230_state: open
 pr230_draft: true
-active_science_block: block135_fresh_source_field_action_phase_reopen_audit
-active_route: "fresh source-field/action-phase/methodology/fold reopen audit after Block134"
+active_science_block: block136_fresh_noether_koide_anomaly_poisson_reopen_audit
+active_route: "fresh Noether/Koide/anomaly/Poisson reopen audit after Block135"
 target_status: best-honest-status
-actual_current_surface_status: "exact negative boundary / Block135 fresh source-field/action-phase reopen audit finds no PR230 strict closure root in the newly fetched decoherence action zero-field phase, electrostatics source-field linearity, methodology feedback, origin/main audit drift, or PR230 Block134 fold surfaces."
+actual_current_surface_status: "exact negative boundary / Block136 fresh Noether/Koide/anomaly/Poisson reopen audit finds no PR230 strict closure root in the newly fetched origin/main Noether and Koide theorem drift, anomaly/time meta fixes, or Poisson zero-coupling theorem branch."
 proposal_allowed: false
-proposal_allowed_reason: "Block135 verifies the fresh source-field/action-phase/methodology/fold surfaces are outside PR230's physical readout contracts: no canonical O_H/action/LSZ authority, source-overlap kappa, strict source-Higgs pole rows, W/Z response packet, Schur/Feshbach pole authority, or neutral H3/H4 authority is present."
+proposal_allowed_reason: "Block136 verifies the fresh Noether/Koide/anomaly/Poisson surfaces are outside PR230's physical readout contracts: no canonical O_H/action/LSZ authority, source-overlap kappa, strict source-Higgs pole rows, W/Z response packet, Schur/Feshbach pole authority, or neutral H3/H4 authority is present."
 first_route_decision: "Block115 does not change W/Z from blocked to executable; Block116 also records a neutral H3/H4 strict-artifact absence. The first campaign artifact therefore targets the invariant source/action obstruction that all remaining positive routes must satisfy."
 lock_status: "branch-local lock acquired with scripts/automation_lock.py using loop-local lock paths"
 forbidden_imports:
@@ -327,6 +327,32 @@ block135_result:
     strict_Schur_Feshbach_pole_authority: true
     neutral_H3_H4_transfer_or_coupling_authority: true
   stacked_review_pr: "https://github.com/jonathonreilly/cl3-lattice-framework/pull/1503"
+block136_result:
+  output: outputs/yt_pr230_block136_fresh_noether_koide_anomaly_poisson_reopen_audit_2026-05-17.json
+  note: docs/YT_PR230_BLOCK136_FRESH_NOETHER_KOIDE_ANOMALY_POISSON_REOPEN_AUDIT_NOTE_2026-05-17.md
+  status: "exact negative boundary"
+  pass_count: 16
+  fail_count: 0
+  proposal_allowed: false
+  current_closure_satisfied: false
+  fresh_refs:
+    - "origin/main LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17"
+    - "origin/main KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17"
+    - "origin/physics-loop/anomaly-forces-time-fb-framing-fix-20260517"
+    - "origin/physics-loop/anomaly-forces-time-fc-routing-fix-20260517"
+    - "origin/physics-loop/poisson-self-gravity-loop-block31-2026-05-17"
+  noether_carrier_identity_is_not_pr230_oh_action_lsz: true
+  koide_reduced_carrier_is_not_pr230_yukawa_or_higgs_authority: true
+  anomaly_time_fixes_are_not_pr230_source_higgs_or_wz_authority: true
+  poisson_zero_coupling_is_not_pr230_scalar_lsz_or_schur_authority: true
+  missing_roots_after_intake:
+    accepted_canonical_O_H_action_LSZ: true
+    source_overlap_kappa: true
+    strict_C_ss_C_sH_C_HH_pole_rows: true
+    strict_WZ_response_packet: true
+    strict_Schur_Feshbach_pole_authority: true
+    neutral_H3_H4_transfer_or_coupling_authority: true
+  stacked_review_pr: pending
 verification:
   block120_py_compile: passed
   block120_runner: "PASS=16 FAIL=0"
@@ -363,17 +389,19 @@ verification:
   block134_fresh_hamiltonian_cpt_iss_reopen_audit_runner: "PASS=11 FAIL=0"
   block135_py_compile: passed
   block135_fresh_source_field_action_phase_reopen_audit_runner: "PASS=15 FAIL=0"
+  block136_py_compile: passed
+  block136_fresh_noether_koide_anomaly_poisson_reopen_audit_runner: "PASS=16 FAIL=0"
   wz_mass_fit_response_row_builder_current: "PASS=10 FAIL=0; Block126 top-side packet recognized, strict rows not written"
   wz_mass_fit_response_row_builder_scout: "PASS=9 FAIL=0"
   full_positive_closure_assembly: "PASS=200 FAIL=0; proposal_allowed=false"
   retained_route: "PASS=325 FAIL=0; proposal_allowed=false"
   positive_closure_completion_audit: "PASS=79 FAIL=0; proposal_allowed=false"
-  campaign_status: "PASS=456 FAIL=0; proposal_allowed=false"
-  assumption_import_stress: "PASS=139 FAIL=0; proposal_allowed=false"
+  campaign_status: "PASS=457 FAIL=0; proposal_allowed=false"
+  assumption_import_stress: "PASS=140 FAIL=0; proposal_allowed=false"
   target_timeseries_full_set: "PASS=9 FAIL=0; replacement_queue=[]"
   chunk063_higher_shell_checkpoint: "PASS=15 FAIL=0"
   git_diff_check: passed
   audit_pipeline: "completed; no docs/audit diffs left in worktree"
   strict_audit_lint: "OK; no errors; 5 known warnings"
-next_exact_action: "Block135 leaves the cleanest current target unchanged: supply an accepted same-surface canonical O_H/action/LSZ certificate plus nonempty numeric C_ss/C_sH/C_HH pole-residue rows sharing source/action/O_H surface IDs, or bring a strict W/Z, Schur/Feshbach, or neutral H3/H4 authority packet."
-next_checkpoint_due_utc: "2026-05-17T19:39:27Z"
+next_exact_action: "Block136 leaves the cleanest current target unchanged: supply an accepted same-surface canonical O_H/action/LSZ certificate plus nonempty numeric C_ss/C_sH/C_HH pole-residue rows sharing source/action/O_H surface IDs, or bring a strict W/Z, Schur/Feshbach, or neutral H3/H4 authority packet."
+next_checkpoint_due_utc: "2026-05-17T19:52:11Z"

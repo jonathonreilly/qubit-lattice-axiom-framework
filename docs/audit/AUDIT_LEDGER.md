@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 114 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 348 |
+| **retained_bounded** | 349 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1227 |
+| unaudited | 1226 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 574 |
+| `audited_clean` | 575 |
 | `audited_conditional` | 186 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1440 |
+| `unaudited` | 1439 |
 
 | claim_type | count |
 |---|---:|
@@ -231,6 +231,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_operator_selection_obstruction_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3769,6 +3770,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The needed 3.37x enhancement is much larger than the phase-only ceiling 1/sin(2pi/3)=1.155, so the missing law cannot be mainly a phase-fixing theorem.  _(class `A`)_
 - **chain closes:** False — The arithmetic inequality closes from the stated constants, but the restricted packet provides no one-hop authority for the current kernel value, eta_DI normalization, source phase, or fixed-M1/washout proportionality. The stronger amplitude/response-channel conclusion therefore imports unclosed benchmark and carrier premises.
 - **rationale:** Issue: the runner hard-codes ETA_DI, EPS_OVER_DI_CURRENT, and PHASE_SOURCE and checks only downstream arithmetic. Why this blocks: with no cited authorities, the benchmark constants and eta-to-epsilon normalization are imported premises, so the no-go does not close as retained-grade physics. Repair target: add retained direct dependencies or a bridge theorem deriving the benchmark kernel, DI target, source phase, and fixed-washout proportionality. Claim boundary until fixed: only the conditional arithmetic statement is supported.
+- **auditor confidence:** high
+
+### `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact spectra, Frobenius trace pairings, and scalar-baseline normalized log-determinant response equality for the explicit 3 x 3 F1/F2 matrices against the scaled 2 x 2 Z_row comparators on the nonsingular log domain.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-212422-78dc5814-dm_neutrino_veven_bosoni-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The normalized determinants of the explicit matrices satisfy det(m I_3 + j F1)/m^3 = det(m I_2 + j sqrt(3/8) Z_row)/m^2 = 1 - (3/8) j^2/m^2 and det(m I_3 + j F2)/m^3 = det(m I_2 + j (3/sqrt(8)) Z_row)/m^2 = 1 - (9/8) j^2/m^2.  _(class `A`)_
+- **chain closes:** True — The proof and runner operate only on the explicit finite matrices and reduce the spectra, trace pairings, and response identities to exact characteristic-polynomial and determinant identities. No upstream note, physical bridge, external comparator, or selection-rule premise is needed for this narrowed algebraic claim.
+- **rationale:** The runner source is not a print-only certificate: it constructs the six 3 x 3 matrices, F1/F2, and Z_row, then computes the Gram matrix, pairings, characteristic polynomials, determinant polynomials, and normalized determinant ratios exactly in SymPy. The contested downstream v_even coefficient selection is explicitly outside scope and is not imported into the algebraic proof. Since there are no cited dependencies and no external numerical or physical comparator, the bounded finite-dimensional identities close on their own terms.
 - **auditor confidence:** high
 
 ### `dm_neutrino_weak_matching_obstruction_note_2026-04-15`

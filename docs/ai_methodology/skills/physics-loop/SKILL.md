@@ -178,6 +178,20 @@ shape is:
    ceiling;
 3. queue an import-retirement audit as the next work in the lane.
 
+**`audited_conditional` from `dependency_not_retained` is normal.** When a
+physics-loop PR ships a derivation that cites an upstream authority X that
+is itself still `unaudited` or `audited_conditional`, the downstream's
+first verdict will be `audited_conditional` with
+`notes_for_re_audit_if_any: dependency_not_retained`. This is the
+**expected** state, not a defect — it records honestly that the load-bearing
+input has not yet retained. Do NOT over-engineer to avoid this verdict when
+the only obstruction is upstream still pending retention. The
+cascade-resolution mechanism in
+[`docs/ai_methodology/skills/audit-loop/SKILL.md`](../audit-loop/SKILL.md)
+("Pick The Next Claim → Cascade Re-audit Source") consumes
+`docs/audit/data/reaudit_candidates.json` and re-audits these rows
+automatically once upstream retains.
+
 Any artifact that maps consequences of an unadopted axiom must be
 labeled `hypothetical_axiom_status: ...` and its tables/runner summaries
 must say "conditional on accepted new axiom; not retained on the actual

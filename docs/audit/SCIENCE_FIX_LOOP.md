@@ -137,7 +137,10 @@ python3 scripts/science_fix_loop.py --n 5 --codex-timeout-sec 600
   but reads-only. Reads cached runner output and renders verdicts.
 - **`compute_reaudit_candidates.py`**: when a science-fix PR merges
   and the upstream's audit changes, downstream rows show up here for
-  re-audit via `codex_audit_runner.py --from-reaudit-candidates`.
+  re-audit via `codex_audit_runner.py --from-reaudit-candidates`, or
+  equivalently the `audit-loop` skill's Cascade Re-audit Source pass
+  (see `docs/ai_methodology/skills/audit-loop/SKILL.md` "Pick The Next
+  Claim → Cascade Re-audit Source").
 
 The full loop:
 
@@ -147,3 +150,26 @@ The full loop:
    the prior verdict, resets to `unaudited`)
 4. `codex_audit_runner.py --n 1` re-audits this specific row (via
    normal queue or `--from-reaudit-candidates` for downstream cascade)
+
+### audited_conditional from dependency_not_retained is normal
+
+When a science-fix PR ships a derivation that depends on an upstream
+authority X that is itself still `unaudited` or `audited_conditional`,
+the downstream's first verdict will (correctly) be `audited_conditional`
+with `notes_for_re_audit_if_any: dependency_not_retained`. This is the
+**expected** state, not a defect. It records honestly that the load-bearing
+input has not yet retained — the downstream proof is otherwise clean.
+
+The cascade-resolution mechanism resolves these naturally:
+
+1. X eventually retains via its own audit
+2. `apply_audit.py` runs `compute_reaudit_candidates.py` after applying
+   X's verdict, which flags the downstream row in `reaudit_candidates.json`
+3. The next `audit-loop` invocation (or `codex_audit_runner.py --from-reaudit-candidates`)
+   picks the downstream row off the cascade stream and re-audits it
+   against the now-retained X
+
+The science-fix loop should NOT over-engineer to avoid `audited_conditional`
+verdicts when the only reason is `dependency_not_retained`. The cascade
+mechanism is the canonical resolution path; manual triage of "is X retained
+yet?" is not required.

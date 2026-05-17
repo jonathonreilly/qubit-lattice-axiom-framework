@@ -65,6 +65,37 @@ The graph-cycle warning is currently expected. Treat any error as a blocker.
 
 If the user names a candidate file or other constrained selection source, that source is authoritative. After the pipeline, check the exact path exists. If it is absent, stop and report the missing file; do not search for substitutes or fall back to the default queue unless the user explicitly authorizes that fallback.
 
+### Cascade Re-audit Source (check before falling through to queue)
+
+`docs/audit/data/reaudit_candidates.json` is the cascade-resolution stream: non-clean audited rows (typically `audited_conditional` with `dependency_not_retained`, plus the secondary `runner_drift_candidates` stream for `runner_artifact_issue` rows whose runner SHA has changed) whose one-hop dependencies have ALL since become retained-grade. These are the rows that just became re-audit-eligible because upstream cleanup landed. Process them BEFORE pulling from the regular queue, with the same selection filters.
+
+The producer (`docs/audit/scripts/compute_reaudit_candidates.py`) is automatically refreshed after every applied verdict (`apply_audit.py` runs it) and on the nightly `audit.yml` cron. Pre-filtering already handles `ready` (every candidate has all deps retained-grade by construction), so the audit-loop's job is just to pick the highest-leverage matching entry.
+
+Cascade-first selection becomes:
+
+1. Read `docs/audit/data/reaudit_candidates.json`.
+2. If `candidates` array is non-empty, pick the highest-leverage entry matching `claim_type in {positive_theorem, bounded_theorem, no_go, open_gate}`. The list is already sorted by leverage (criticality, descendants, load-bearing score) by the producer.
+3. If `candidates` is empty but `runner_drift_candidates` is non-empty, pick the highest-leverage entry there with the same `claim_type` filter.
+4. Exclude any claim id recorded in the current session's blocked/skip set by the Blocked-Row Loop Guard.
+5. If no cascade candidate is eligible, fall through to `docs/audit/data/audit_queue.json` and follow the existing queue rules below.
+
+Use this snippet to check the cascade stream:
+
+```bash
+python3 - <<'PY'
+import json
+p=json.load(open("docs/audit/data/reaudit_candidates.json"))
+for e in p.get("candidates", []) + p.get("runner_drift_candidates", []):
+    if e.get("claim_type") in {"positive_theorem","bounded_theorem","no_go","open_gate"}:
+        print(e["claim_id"], e["note_path"], e.get("runner_path") or "-")
+        break
+PY
+```
+
+If the cascade snippet finds no candidate, fall through to the regular queue.
+
+### Default queue selection (fall-through)
+
 Default selection is the highest-priority ready scoped claim:
 
 1. Read `docs/audit/data/audit_queue.json`.
@@ -85,6 +116,10 @@ for e in q:
         break
 PY
 ```
+
+### Why cascade-first
+
+`audited_conditional` with `dependency_not_retained` is the **expected** state when a downstream theorem lands before its upstream retains; it is not a defect in the downstream. The cascade-first ordering resolves these naturally as upstream cleanup lands, without needing manual triage of which conditionals "are now actually ready." Without cascade-first, the audit lane keeps consuming fresh `unaudited` rows from the regular queue while resolved conditionals pile up unprocessed — exactly the failure mode that produces large `audited_conditional` backlogs.
 
 ## Context To Read
 

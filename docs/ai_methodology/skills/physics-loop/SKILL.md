@@ -5,6 +5,13 @@ description: Use when an LLM agent needs to plan, launch, resume, or package a l
 
 # Physics Loop
 
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
 Run a stateful theoretical-physics loop that can make a major lane move:
 retire a load-bearing import, close an exact support gate, prove a useful
 no-go, add a decisive artifact, or isolate the remaining Nature-grade blocker.

@@ -5,6 +5,13 @@ description: Use when an LLM agent is about to ship a no-go, stretch-attempt-neg
 
 # No-Go Discipline
 
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
 A structured gate for negative claims. The symmetric counterpart of the V1-V5
 Promotion Value Gate in `physics-loop` — V1-V5 prevents overclaiming positives;
 N1-N8 prevents overclaiming negatives.

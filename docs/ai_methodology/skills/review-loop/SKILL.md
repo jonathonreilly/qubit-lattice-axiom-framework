@@ -5,6 +5,13 @@ description: Use when an LLM agent needs to run `/review-loop`, review branch ch
 
 # Review Loop
 
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
 Run a local review/fix/re-review loop for this physics repo. This is not a
 generic software review. Its job is to protect the live claim boundary:
 retained/Nature-grade claims must have artifact support, imported values must

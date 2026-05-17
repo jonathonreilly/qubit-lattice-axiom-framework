@@ -48,3 +48,7 @@ improve the sign stability in a way that would justify a retained claim.
 If this lane comes back, it should not be a broader sweep. It should be a
 single new control law that directly regulates the geometry observable
 itself, rather than only biasing distinguishability.
+
+---
+
+**Re-queued for re-audit 2026-05-17:** previous `audited_conditional` verdict cited packet incompleteness (missing helper-script imports from the restricted packet). The audit pipeline now populates `helper_runner_paths` per [PR #1371](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1371) so the next audit pass receives the complete packet. Helpers now declared: `scripts/generative_causal_dag_interference.py`. The current re-queue is mechanical — no science content changes — and is documented here so the hash drift is explicit.

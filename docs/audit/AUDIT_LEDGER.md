@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 322 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1225 |
+| unaudited | 1224 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
-| ~~audited_conditional~~ | 169 |
+| ~~audited_conditional~~ | 170 |
 | ~~audited_failed~~ | 18 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 538 |
-| `audited_conditional` | 169 |
+| `audited_conditional` | 170 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1422 |
+| `unaudited` | 1421 |
 
 | claim_type | count |
 |---|---:|
@@ -754,6 +754,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `h0125_wider_w4_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `hard_geometry_head_to_head_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5749,6 +5750,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** selector route; no `eta`, `Omega_Lambda`, or `H_0` numerical claim.  _(class `B`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified B-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `hypercharge_identification_note`
+
+- **Note:** [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the chain-assembly claim that the retained ratio theorem, the supplied LHCM matter-assignment note, and the admitted SM normalization imply the LH-doublet SM hypercharge values.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-124640-20260517T124640Z-7cc93800-hypercharge_identificati-targeted`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under L1 ratio + L2 matter assignment + L3 admitted normalization alpha = 1/3, the unique traceless U(1) has eigenvalues (+1/3,-1) on (Q_L,L_L), reproducing the SM LH-doublet hypercharge pattern.  _(class `B`)_
+- **chain closes:** False — The algebraic substitution closes conditionally, but the scientific chain does not close as a retained theorem because L2 is not retained-grade and L3 explicitly admits the hypercharge normalization as open SM convention.
+- **rationale:** The runner genuinely checks the projector algebra, commutation, traceless ratio, and downstream charge table, but the load-bearing SM identification depends on imported chain links rather than deriving them internally. One cited authority, the LHCM matter-assignment note, is marked decoration/support rather than retained-grade, and the note explicitly admits alpha = 1/3 as an open normalization convention. Under the rubric, retained status cannot propagate through these open identification and normalization premises.
+- **open / conditional deps cited:**
+  - `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`
+  - `HYPERCHARGE_IDENTIFICATION_NOTE.md#L3-alpha-normalization-admitted-sm-convention`
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

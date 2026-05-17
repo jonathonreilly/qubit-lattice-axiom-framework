@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Status: exact support plus open premise through Block123.
+Status: bounded support plus open premise through Block124.
 
 `proposed_retained`: not allowed.
 
@@ -17,13 +17,19 @@ does not determine accepted action, LSZ/source-overlap, contact subtraction, or
 physical pole rows. Block123 derives the exact source-Higgs LSZ readout formula
 `y_H = (dE_top/ds) * sqrt(Res C_HH) / Res C_sH`, but records that current
 strict pole rows, canonical `O_H`/action authority, Gram/leakage control, and
-retained-route gates remain absent.
+retained-route gates remain absent. Block124 consumes the completed
+higher-shell packet and confirms the current finite `C_ss/C_sx/C_xx` rows are
+support only: 693 finite rows are present, but `pole_residue_rows=[]`, no
+canonical `O_H` identity is accepted, and the taste-radial alias firewall
+remains explicit.
 
 - no accepted same-surface EW/Higgs action, scalar LSZ metric, or
   source-overlap normalization for the Block118 `O_H` axis;
 - no strict physical `C_ss/C_sH/C_HH(tau)` source-Higgs pole rows;
 - no current certificate satisfying the Block123 source-Higgs LSZ readout
   packet;
+- no completed-row artifact satisfying Block123: the complete finite
+  taste-radial packet is not strict pole-residue evidence;
 - no strict W/Z physical-response packet with accepted action, production rows,
   matched covariance, strict non-observed `g2` or allowed absolute pin,
   `delta_perp`, and final W-response rows;

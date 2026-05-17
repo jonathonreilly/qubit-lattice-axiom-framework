@@ -1,6 +1,6 @@
 # Handoff
 
-Current branch: `physics-loop/pr230-retained-closure-campaign-block121-20260517`.
+Current branch: `physics-loop/pr230-retained-closure-campaign-block124-20260517`.
 
 Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 `a7179acb5ce21f9fdf2e05af1139c8b6a6785699`.
@@ -8,6 +8,7 @@ Current base: `origin/claude/yt-direct-lattice-correlator-2026-04-30` at
 Stacked review PR for Blocks120-121: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1439
 Stacked review PR for Block122: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1445
 Stacked review PR for Block123: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1450
+Stacked review PR for Block124: pending push/PR creation
 
 PR #230 is open and draft.  Latest current-surface block is base Block119.
 Base Block117 records absence of strict Schur/scalar-LSZ pole authority.  Base
@@ -45,9 +46,21 @@ Gram/leakage control, and retained-route gates are still absent.  Initial
 reruns: Block123 `PASS=12`, campaign `PASS=441`, assumption/import stress
 `PASS=124`.
 
-Active next work: either produce strict source-Higgs pole rows with canonical
-`O_H`/action authority under the Block123 readout contract, or pivot to W/Z
-response rows with allowed `g2` authority and matched top-W covariance.
+Block124 consumes the now-completed higher-shell source-Higgs/taste-radial row
+packet and verifies the tail chunk state.  It checks 63/63 chunk files and 693
+finite `C_ss/C_sx/C_xx` rows.  The finite diagnostic is support-only:
+`max |rho_sx| = 0.0015085138080374685` and the minimum finite Gram determinant
+is `0.031674465976530355`, but these are not pole residues and `x` is not
+certified canonical `O_H`.  `pole_residue_rows=[]` across the packet, no
+canonical `O_H` identity is recorded, and the Block123 strict pole packet is
+absent.  Reruns: Block124 `PASS=10`, campaign `PASS=442`,
+assumption/import stress `PASS=125`.
+
+Active next work: produce a strict same-surface row artifact with accepted
+canonical `O_H`/action authority and numeric `C_ss/C_sH/C_HH` pole residues,
+then rerun the Block123 readout/Gram/FV/IR/contact and retained-route gates.
+If that cannot be supplied, pivot to genuine same-source W/Z response rows with
+identity/covariance/`g2` authority.
 
 Do not claim proposed_retained unless the closure/retained/audit/status gates
 pass and the claim certificate explicitly allows a proposal.

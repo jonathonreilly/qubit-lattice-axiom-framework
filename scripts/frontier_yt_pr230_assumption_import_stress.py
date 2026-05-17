@@ -383,6 +383,9 @@ def main() -> int:
         "block123_source_higgs_lsz_readout_formula": load(
             "outputs/yt_pr230_block123_source_higgs_lsz_readout_formula_2026-05-17.json"
         ),
+        "block124_completed_source_higgs_row_intake": load(
+            "outputs/yt_pr230_block124_completed_source_higgs_row_intake_2026-05-17.json"
+        ),
         "negative_route_applicability_review": load(
             "outputs/yt_pr230_negative_route_applicability_review_2026-05-06.json"
         ),
@@ -2652,6 +2655,47 @@ def main() -> int:
             "actual_current_surface_status"
         ),
     )
+    block124_completed_source_higgs_row_intake_keeps_imports_clean = (
+        "Block124 completed 63/63 finite source-Higgs row intake"
+        in str(
+            certificates["block124_completed_source_higgs_row_intake"].get(
+                "actual_current_surface_status"
+            )
+        )
+        and certificates["block124_completed_source_higgs_row_intake"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["block124_completed_source_higgs_row_intake"].get(
+            "block124_completed_source_higgs_row_intake_passed"
+        )
+        is True
+        and certificates["block124_completed_source_higgs_row_intake"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["block124_completed_source_higgs_row_intake"]
+        .get("block123_contract_state", {})
+        .get("finite_C_sx_C_xx_aliases_promoted")
+        is False
+        and certificates["block124_completed_source_higgs_row_intake"]
+        .get("completed_row_audit", {})
+        .get("pole_residue_row_hits")
+        == []
+        and all(
+            value is False
+            for value in certificates["block124_completed_source_higgs_row_intake"]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "block124-completed-source-higgs-row-intake-keeps-imports-clean",
+        block124_completed_source_higgs_row_intake_keeps_imports_clean,
+        certificates["block124_completed_source_higgs_row_intake"].get(
+            "actual_current_surface_status"
+        ),
+    )
     schur_one_pole_scout = certificates["schur_x_given_source_one_pole_scout"]
     report(
         "schur-x-given-source-one-pole-scout-not-authority",
@@ -2992,6 +3036,7 @@ def main() -> int:
         "block119_native_dirichlet_keeps_imports_clean": block119_native_dirichlet_keeps_imports_clean,
         "block122_hamming_axis_action_lsz_gap_keeps_imports_clean": block122_hamming_axis_action_lsz_gap_keeps_imports_clean,
         "block123_source_higgs_lsz_formula_keeps_imports_clean": block123_source_higgs_lsz_formula_keeps_imports_clean,
+        "block124_completed_source_higgs_row_intake_keeps_imports_clean": block124_completed_source_higgs_row_intake_keeps_imports_clean,
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
     }

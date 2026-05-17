@@ -184,3 +184,32 @@ Verified at `2026-05-17T15:56:21Z`:
 - Block123 runner: `PASS=12 FAIL=0`
 - campaign status certificate: `PASS=441 FAIL=0`
 - assumption/import stress: `PASS=124 FAIL=0`
+
+## Block124
+
+Working title: PR230 Block124 completed source-Higgs row intake.
+
+Purpose:
+
+- consume the completed 63/63 higher-shell source-Higgs/taste-radial packet;
+- verify that the rows remain finite `C_ss/C_sx/C_xx` support and not strict
+  same-pole `C_ss/C_sH/C_HH` residues;
+- expose the finite Gram diagnostic without promoting it to scalar-LSZ or
+  canonical-Higgs authority;
+- keep the Block123 readout contract as the next exact positive target.
+
+Files:
+
+- `docs/YT_PR230_BLOCK124_COMPLETED_SOURCE_HIGGS_ROW_INTAKE_NOTE_2026-05-17.md`
+- `scripts/frontier_yt_pr230_block124_completed_source_higgs_row_intake.py`
+- `outputs/yt_pr230_block124_completed_source_higgs_row_intake_2026-05-17.json`
+
+Result: bounded support only.  The runner checks 693 finite rows and finds no
+strict pole rows, no accepted canonical `O_H`, and no allowed closure.
+
+Verified at `2026-05-17T16:19:17Z`:
+
+- Block124 py_compile: passed
+- Block124 runner: `PASS=10 FAIL=0`
+- campaign status certificate: `PASS=442 FAIL=0`
+- assumption/import stress: `PASS=125 FAIL=0`

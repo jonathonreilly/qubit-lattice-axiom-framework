@@ -543,6 +543,9 @@ def main() -> int:
         "pr230_block123_source_higgs_lsz_readout_formula": load(
             "outputs/yt_pr230_block123_source_higgs_lsz_readout_formula_2026-05-17.json"
         ),
+        "pr230_block124_completed_source_higgs_row_intake": load(
+            "outputs/yt_pr230_block124_completed_source_higgs_row_intake_2026-05-17.json"
+        ),
         "pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42": load(
             "outputs/yt_pr230_full_timeseries_neutral_transfer_lift_no_go_after_block42_2026-05-12.json"
         ),
@@ -3211,6 +3214,47 @@ def main() -> int:
         "pr230-block123-source-higgs-lsz-readout-formula-supports-only",
         block123_source_higgs_lsz_readout_formula_supports_only,
         statuses["pr230_block123_source_higgs_lsz_readout_formula"],
+    )
+    block124_completed_source_higgs_row_intake_supports_only = (
+        "Block124 completed 63/63 finite source-Higgs row intake"
+        in str(statuses["pr230_block124_completed_source_higgs_row_intake"])
+        and certificates["pr230_block124_completed_source_higgs_row_intake"].get(
+            "proposal_allowed"
+        )
+        is False
+        and certificates["pr230_block124_completed_source_higgs_row_intake"].get(
+            "block124_completed_source_higgs_row_intake_passed"
+        )
+        is True
+        and certificates["pr230_block124_completed_source_higgs_row_intake"].get(
+            "current_closure_satisfied"
+        )
+        is False
+        and certificates["pr230_block124_completed_source_higgs_row_intake"]
+        .get("block123_contract_state", {})
+        .get("strict_same_pole_rows_present")
+        is False
+        and certificates["pr230_block124_completed_source_higgs_row_intake"]
+        .get("completed_row_audit", {})
+        .get("finite_row_count")
+        == 693
+        and certificates["pr230_block124_completed_source_higgs_row_intake"]
+        .get("completed_row_audit", {})
+        .get("pole_residue_row_hits")
+        == []
+        and all(
+            value is False
+            for value in certificates[
+                "pr230_block124_completed_source_higgs_row_intake"
+            ]
+            .get("forbidden_firewall", {})
+            .values()
+        )
+    )
+    report(
+        "pr230-block124-completed-source-higgs-row-intake-supports-only",
+        block124_completed_source_higgs_row_intake_supports_only,
+        statuses["pr230_block124_completed_source_higgs_row_intake"],
     )
     full_timeseries_neutral_transfer_lift_no_go_blocks = (
         "full FH-LSZ target-timeseries packet does not lift PR230"
@@ -8999,6 +9043,9 @@ def main() -> int:
     )
     result["block123_source_higgs_lsz_readout_formula_supports_only"] = (
         block123_source_higgs_lsz_readout_formula_supports_only
+    )
+    result["block124_completed_source_higgs_row_intake_supports_only"] = (
+        block124_completed_source_higgs_row_intake_supports_only
     )
     result["schur_higher_shell_wave_launcher_run_control_only"] = (
         "higher-shell Schur scalar-LSZ wave launcher status"

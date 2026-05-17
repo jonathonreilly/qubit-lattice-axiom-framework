@@ -8348,41 +8348,24 @@
       "verdict_rationale": null
     },
     "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01": {
-      "audit_date": "2026-05-10T18:31:46.020546+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "audit_dm_runner_stale_path_cleanup_note_2026-05-01": null
-        },
-        "dep_claim_type": {
-          "audit_dm_runner_stale_path_cleanup_note_2026-05-01": "meta"
-        },
-        "dep_effective_status": {
-          "audit_dm_runner_stale_path_cleanup_note_2026-05-01": "meta"
-        },
-        "deps": [
-          "audit_dm_runner_stale_path_cleanup_note_2026-05-01"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1327-ecce-7ef2-aefc-13ae08410fa4",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The restricted packet contains only the note's self-report plus the Block One companion note; it does not include the Block Two runner sources, diffs, current stdout, or SHA-pinned caches needed to verify the path edits, preserved checks, or PASS=89 FAIL=0 accounting. Block One supports the general hygiene pattern but is not evidence that the eight Block Two runners were actually repaired.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01",
-      "claim_scope": "Audit-hygiene metadata claim that Block Two fixed stale runner read paths for eight named DM/gauge-vacuum runners and preserved passing verification, without promoting any physics claim.",
-      "claim_type": "meta",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T18:31:46.020546+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -8390,20 +8373,70 @@
         "audit_dm_runner_stale_path_cleanup_note_2026-05-01"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The note's closure rests on the reported verification that the eight edited runners now give 'Total: 89 PASS / 0 FAIL across the cluster' after stale read paths were removed or redirected.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "9e37942e39d20011163391611109ddedb867506ede48f1bf30d010de915ec150",
+      "note_hash": "ec8b443afe4a69f37cee349f72699a8d5aff2ae0e0f6411c2423d3dde088025c",
       "note_path": "docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 attach the current sources and completed stdout or SHA-pinned caches for the eight named Block Two runners, then re-audit the cleanup and PASS accounting.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-17T12:07:21.236902+00:00",
+          "archived_for_note_hash": "9e37942e39d20011163391611109ddedb867506ede48f1bf30d010de915ec150",
+          "audit_date": "2026-05-10T18:31:46.020546+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "audit_dm_runner_stale_path_cleanup_note_2026-05-01": null
+            },
+            "dep_claim_type": {
+              "audit_dm_runner_stale_path_cleanup_note_2026-05-01": "meta"
+            },
+            "dep_effective_status": {
+              "audit_dm_runner_stale_path_cleanup_note_2026-05-01": "meta"
+            },
+            "deps": [
+              "audit_dm_runner_stale_path_cleanup_note_2026-05-01"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1327-ecce-7ef2-aefc-13ae08410fa4",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The restricted packet contains only the note's self-report plus the Block One companion note; it does not include the Block Two runner sources, diffs, current stdout, or SHA-pinned caches needed to verify the path edits, preserved checks, or PASS=89 FAIL=0 accounting. Block One supports the general hygiene pattern but is not evidence that the eight Block Two runners were actually repaired.",
+          "claim_scope": "Audit-hygiene metadata claim that Block Two fixed stale runner read paths for eight named DM/gauge-vacuum runners and preserved passing verification, without promoting any physics claim.",
+          "claim_type": "meta",
+          "claim_type_last_reviewed": "2026-05-10T18:31:46.020546+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The note's closure rests on the reported verification that the eight edited runners now give 'Total: 89 PASS / 0 FAIL across the cluster' after stale read paths were removed or redirected.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "runner_artifact_issue \u2014 attach the current sources and completed stdout or SHA-pinned caches for the eight named Block Two runners, then re-audit the cleanup and PASS accounting.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the load-bearing PASS=89 FAIL=0 and stale-path cleanup assertions are artifact claims with no supplied runner source, diff, stdout, or cache in the restricted packet. Why this blocks: the auditor cannot verify that stale reads were actually removed/redirected, that no load-bearing checks were dropped, or that the reported pass totals came from executable runners. Repair target: provide the eight current runner sources plus completed stdout or SHA-pinned runner-cache logs for the exact revision under audit. Claim boundary until fixed: this may be treated only as an unaudited audit-hygiene note describing intended cleanup, not as verified runner repair."
+        }
+      ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -8412,9 +8445,9 @@
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two)",
+      "title": "Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two) \u2014 Cleanup-Action Record (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the load-bearing PASS=89 FAIL=0 and stale-path cleanup assertions are artifact claims with no supplied runner source, diff, stdout, or cache in the restricted packet. Why this blocks: the auditor cannot verify that stale reads were actually removed/redirected, that no load-bearing checks were dropped, or that the reported pass totals came from executable runners. Repair target: provide the eight current runner sources plus completed stdout or SHA-pinned runner-cache logs for the exact revision under audit. Claim boundary until fixed: this may be treated only as an unaudited audit-hygiene note describing intended cleanup, not as verified runner repair."
+      "verdict_rationale": null
     },
     "audit_dm_runner_stale_path_cleanup_note_2026-05-01": {
       "audit_date": null,
@@ -38535,100 +38568,41 @@
       "verdict_rationale": "Issue: the note imports the d<=3 upper bound and the phase-to-force/readout bridge without retained cited support. Why this blocks: without those inputs, the supplied evidence only shows that the selected runner criteria pass for d=3,4,5 and fail for d<=2 under chosen parameters. Repair target: add retained one-hop stability authorities and a bridge theorem tying the runner readout to the claimed gravitational observable, or split the note to the finite numerical lower-bound claim. Claim boundary until fixed: runner-specific evidence for excluding d<=2 under the stated setup, not a retained dimension-selection theorem."
     },
     "dimensional_gravity_table": {
-      "audit_date": "2026-05-11T23:12:19.465589+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 14.752,
-        "runner_hash": "218df4943f40517c268bed9823e8388718f1dc604890563876bb547b9f7b7c21",
-        "transitive_descendants": 430
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-judicial-gpt-5.5-20260511-231219-dimensional_gravity_tabl-007",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The decisive evidence is not a first-principles recomputation of the lattice rows; the runner verifies structural identities and parses registered cache/log artifacts for matching table values. That is cross-artifact input verification, not class C derivation, and the 4D distance-law entry is explicitly width-limited/open rather than closed asymptotically. Under the rubric, class B support plus an imported cache/log readout and open width limitation makes the bounded table conditional rather than clean.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dimensional_gravity_table",
-      "claim_scope": "Audited the bounded d=3 and d=4 cache-backed table entries for kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), and measure h^(d-1); the d=2 row is diagnostic-only and the 4D distance law is explicitly width-limited.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T23:12:19.465589+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-11T12:53:38.941476+00:00",
-          "auditor": "codex-audit-loop-20260511-dimensional-gravity-table",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Finite cache-backed dimensional-gravity inventory only: the structural prescription kernel=1/L^(d-1), field=s/r^(d-2), action S=L(1-f), measure=h^(d-1), plus the registered d=3 and d=4 cache/log rows asserted by the certificate runner. The d=2 numerical row is diagnostic-only, the 4D distance law remains width-limited, and no universality across dimensions, h values, widths, families, or asymptotic regimes is audited.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "B",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-11T22:52:12.491327+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-dimensional_gravity_tabl-013",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited the bounded d=3 and d=4 cache-backed table entries for kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), and measure h^(d-1); the d=2 row is diagnostic-only and the 4D distance law is explicitly width-limited.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "B",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-11T23:12:19.465589+00:00",
-          "auditor": "codex-judicial-gpt-5.5-20260511-231219-dimensional_gravity_tabl-007",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited the bounded d=3 and d=4 cache-backed table entries for kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), and measure h^(d-1); the d=2 row is diagnostic-only and the 4D distance law is explicitly width-limited.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "It marked a class B cache/log verification as audited_clean even though audited_clean is reserved for class C computation or genuine class A closure over independent retained-grade inputs, and it did not treat the cache/log readout plus width-limited 4D distance law as an open dependency in the restricted packet.",
-          "independence": "judicial_review",
-          "judgment_rationale": "The decisive evidence is not a first-principles recomputation of the lattice rows; the runner verifies structural identities and parses registered cache/log artifacts for matching table values. That is cross-artifact input verification, not class C derivation, and the 4D distance-law entry is explicitly width-limited/open rather than closed asymptotically. Under the rubric, class B support plus an imported cache/log readout and open width limitation makes the bounded table conditional rather than clean.",
-          "load_bearing_step_class": "B",
-          "runner_check_breakdown": {
-            "A": 5,
-            "B": 2,
-            "C": 0,
-            "D": 0,
-            "total_pass": 7
-          },
-          "second_auditor_error": "",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 6,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 12.656,
-      "load_bearing_step": "The d=3 and d=4 rows are backed by registered cached artifacts and asserted by the certificate runner, while the d=2 row is diagnostic-only and the 4D distance law remains width-limited.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "9964c9aa3fdfb359ce48fe4aced30015d0fd4e800853ea9cd26a603c9f29ba37",
+      "note_hash": "5f9c9c13ee2d03c8fa8fb359d83317cf084d80625247575580e55287565763ef",
       "note_path": "docs/DIMENSIONAL_GRAVITY_TABLE.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: include the full registered 3D/4D cache artifacts or a completed sliced first-principles lattice runner in the restricted packet if promoting beyond conditional is desired.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
@@ -38919,19 +38893,110 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the displayed table numerics are stale relative to the runner, most concretely d=3 Born <4e-15 versus runner-asserted Born = 4.20e-15. Why this blocks: the claim is a finite-entry inventory, so the table cells themselves are load-bearing and must match the registered cache assertions. Repair target: update the table to the exact cache-backed values or rerun/cache artifacts that support the displayed bounds, and extend the certificate to assert every displayed load-bearing cell. Claim boundary until fixed: the packet supports that the registered artifacts contain the asserted 3D and 4D cache strings, but not that the source table is audit-clean as written."
+        },
+        {
+          "archived_at": "2026-05-17T12:07:21.237780+00:00",
+          "archived_for_note_hash": "9964c9aa3fdfb359ce48fe4aced30015d0fd4e800853ea9cd26a603c9f29ba37",
+          "audit_date": "2026-05-11T23:12:19.465589+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 14.752,
+            "runner_hash": "218df4943f40517c268bed9823e8388718f1dc604890563876bb547b9f7b7c21",
+            "transitive_descendants": 430
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-judicial-gpt-5.5-20260511-231219-dimensional_gravity_tabl-007",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The decisive evidence is not a first-principles recomputation of the lattice rows; the runner verifies structural identities and parses registered cache/log artifacts for matching table values. That is cross-artifact input verification, not class C derivation, and the 4D distance-law entry is explicitly width-limited/open rather than closed asymptotically. Under the rubric, class B support plus an imported cache/log readout and open width limitation makes the bounded table conditional rather than clean.",
+          "claim_scope": "Audited the bounded d=3 and d=4 cache-backed table entries for kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), and measure h^(d-1); the d=2 row is diagnostic-only and the 4D distance law is explicitly width-limited.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T23:12:19.465589+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-11T12:53:38.941476+00:00",
+              "auditor": "codex-audit-loop-20260511-dimensional-gravity-table",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Finite cache-backed dimensional-gravity inventory only: the structural prescription kernel=1/L^(d-1), field=s/r^(d-2), action S=L(1-f), measure=h^(d-1), plus the registered d=3 and d=4 cache/log rows asserted by the certificate runner. The d=2 numerical row is diagnostic-only, the 4D distance law remains width-limited, and no universality across dimensions, h values, widths, families, or asymptotic regimes is audited.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "B",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-11T22:52:12.491327+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-dimensional_gravity_tabl-013",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited the bounded d=3 and d=4 cache-backed table entries for kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), and measure h^(d-1); the d=2 row is diagnostic-only and the 4D distance law is explicitly width-limited.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "B",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-11T23:12:19.465589+00:00",
+              "auditor": "codex-judicial-gpt-5.5-20260511-231219-dimensional_gravity_tabl-007",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited the bounded d=3 and d=4 cache-backed table entries for kernel 1/L^(d-1), field s/r^(d-2), action S=L(1-f), and measure h^(d-1); the d=2 row is diagnostic-only and the 4D distance law is explicitly width-limited.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "It marked a class B cache/log verification as audited_clean even though audited_clean is reserved for class C computation or genuine class A closure over independent retained-grade inputs, and it did not treat the cache/log readout plus width-limited 4D distance law as an open dependency in the restricted packet.",
+              "independence": "judicial_review",
+              "judgment_rationale": "The decisive evidence is not a first-principles recomputation of the lattice rows; the runner verifies structural identities and parses registered cache/log artifacts for matching table values. That is cross-artifact input verification, not class C derivation, and the 4D distance-law entry is explicitly width-limited/open rather than closed asymptotically. Under the rubric, class B support plus an imported cache/log readout and open width limitation makes the bounded table conditional rather than clean.",
+              "load_bearing_step_class": "B",
+              "runner_check_breakdown": {
+                "A": 5,
+                "B": 2,
+                "C": 0,
+                "D": 0,
+                "total_pass": 7
+              },
+              "second_auditor_error": "",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "The d=3 and d=4 rows are backed by registered cached artifacts and asserted by the certificate runner, while the d=2 row is diagnostic-only and the 4D distance law remains width-limited.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: include the full registered 3D/4D cache artifacts or a completed sliced first-principles lattice runner in the restricted packet if promoting beyond conditional is desired.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 2,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "The decisive evidence is not a first-principles recomputation of the lattice rows; the runner verifies structural identities and parses registered cache/log artifacts for matching table values. That is cross-artifact input verification, not class C derivation, and the 4D distance-law entry is explicitly width-limited/open rather than closed asymptotically. Under the rubric, class B support plus an imported cache/log readout and open width limitation makes the bounded table conditional rather than clean."
         }
       ],
       "runner_check_breakdown": {
-        "A": 5,
-        "B": 2,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/dimensional_gravity_table_certificate_runner_2026_05_03.py",
-      "title": "Dimensional Gravity Table",
+      "title": "Dimensional Gravity Table \u2014 Cache-Backed d=3 / d=4 Rows Only (Binding)",
       "transitive_descendants": 806,
-      "verdict_rationale": "The decisive evidence is not a first-principles recomputation of the lattice rows; the runner verifies structural identities and parses registered cache/log artifacts for matching table values. That is cross-artifact input verification, not class C derivation, and the 4D distance-law entry is explicitly width-limited/open rather than closed asymptotically. Under the rubric, class B support plus an imported cache/log readout and open width limitation makes the bounded table conditional rather than clean."
+      "verdict_rationale": null
     },
     "dirac_core_card_note": {
       "audit_date": "2026-04-30T20:26:06.956529+00:00",
@@ -101929,41 +101994,24 @@
       "verdict_rationale": "The clean result is limited to the exact finite runner surface and the explicitly narrowed positive-row subfit/distance-sweep facts. Residual risk is that the fit window and positive-row filter are analysis choices and do not by themselves imply a physical gravity law, rowwise positivity, Born safety, or upstream coexistence closure; those broader readings are outside the audited scope."
     },
     "higher_symmetry_joint_validation_note": {
-      "audit_date": "2026-05-11T14:57:10.458485+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_claim_scope": {
-          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
-        },
-        "dep_claim_type": {
-          "mirror_chokepoint_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "mirror_chokepoint_note": "retained_bounded"
-        },
-        "deps": [
-          "mirror_chokepoint_note"
-        ],
-        "load_bearing_score": 5.7,
-        "runner_hash": null,
-        "transitive_descendants": 12
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The N=25..80 joint log is present and supports the discovery-geometry table, and the mirror chokepoint dependency is retained_bounded. The cited dense-extension log for the N=80/100/120 rows is missing from the restricted packet, and this row has no registered runner/cache path in the ledger.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "higher_symmetry_joint_validation_note",
-      "claim_scope": "Bounded higher-symmetry joint-validation claim for Z2 x Z2 versus random/ring families, including the stated dense N=80/100/120 extension, excluding asymptotic gravity-law or distance-law closure.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-11T14:57:10.458485+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -101971,18 +102019,18 @@
         "mirror_chokepoint_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 5.7,
-      "load_bearing_step": "The note claims Z2 x Z2 is Born-clean, k=0-clean, gravity-positive, and decoherence-leading through N=120 on a dense extension, while the ring family fails to survive the joint test as cleanly.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "8116f03b56bad99a4fdbc2246d221f4d5a67b1df2ba3caa2301deb5a07b4fd75",
+      "note_hash": "2ae54b9c842f64826393190c6419bfe1eeda5175bceb64ef2034b026b054c5d0",
       "note_path": "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the missing dense N=80/100/120 joint-validation log or registered runner cache, and register the joint validator as this row's runner before re-auditing the N=120 claim.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -102053,6 +102101,55 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the finite Z2 x Z2 tables are reproducible, but the source packet does not provide a registered, assertion-based primary runner/log pair for the retained N=120 joint card. Why this blocks: a hostile auditor can verify the printed finite rows, but cannot promote them to a clean retained higher-symmetry lane while the dense joint log path is missing, the mirror_chokepoint_joint readout is imported without registration as a one-hop authority, and the pass criteria for Born cleanliness, k=0, band-gravity positivity, and decoherence advantage are not hard runner gates. Repair target: register scripts/higher_symmetry_dag.py and scripts/mirror_chokepoint_joint.py or inline the audited readout assumptions, archive the dense joint-validation output at the named path, and add assertions for the family roster, seed counts, N windows, Born/k0 tolerances, band-positive counts, and exponent-fit boundaries. Claim boundary until fixed: it is safe to claim a finite diagnostic result: with the stated discovery and dense parameters, Z2 x Z2 reports machine-scale Born, zero k=0, positive mean band gravity on the tested N values, slower discovery-geometry decoherence decay than random/ring, and dense N=80/100/120 rows matching the live runner; it is not yet a clean retained asymptotic higher-symmetry theorem or gravity-law contender."
+        },
+        {
+          "archived_at": "2026-05-17T12:07:21.239115+00:00",
+          "archived_for_note_hash": "8116f03b56bad99a4fdbc2246d221f4d5a67b1df2ba3caa2301deb5a07b4fd75",
+          "audit_date": "2026-05-11T14:57:10.458485+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_claim_scope": {
+              "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+            },
+            "dep_claim_type": {
+              "mirror_chokepoint_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "mirror_chokepoint_note": "retained_bounded"
+            },
+            "deps": [
+              "mirror_chokepoint_note"
+            ],
+            "load_bearing_score": 5.7,
+            "runner_hash": null,
+            "transitive_descendants": 12
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The N=25..80 joint log is present and supports the discovery-geometry table, and the mirror chokepoint dependency is retained_bounded. The cited dense-extension log for the N=80/100/120 rows is missing from the restricted packet, and this row has no registered runner/cache path in the ledger.",
+          "claim_scope": "Bounded higher-symmetry joint-validation claim for Z2 x Z2 versus random/ring families, including the stated dense N=80/100/120 extension, excluding asymptotic gravity-law or distance-law closure.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T14:57:10.458485+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The note claims Z2 x Z2 is Born-clean, k=0-clean, gravity-positive, and decoherence-leading through N=120 on a dense extension, while the ring family fails to survive the joint test as cleanly.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: provide the missing dense N=80/100/120 joint-validation log or registered runner cache, and register the joint validator as this row's runner before re-auditing the N=120 claim.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the load-bearing N=120 dense-extension claim is not backed by a present runner artifact or registered cache in the audit packet. Why this blocks: the N=25..80 table can be checked from the available log, but the stronger retained-through-N=120 statement depends on missing stdout. Repair target: check in/register the dense-extension log or runner-cache artifact, and wire the joint validator as the row runner. Claim boundary until fixed: available N=25..80 joint-validation observations only; no retained N=120 extension."
         }
       ],
       "runner_check_breakdown": {
@@ -102063,9 +102160,9 @@
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Higher-Symmetry Joint Validation Note",
+      "title": "Higher-Symmetry Joint Validation Note \u2014 Cached N Range (Binding)",
       "transitive_descendants": 12,
-      "verdict_rationale": "Issue: the load-bearing N=120 dense-extension claim is not backed by a present runner artifact or registered cache in the audit packet. Why this blocks: the N=25..80 table can be checked from the available log, but the stronger retained-through-N=120 statement depends on missing stdout. Repair target: check in/register the dense-extension log or runner-cache artifact, and wire the joint validator as the row runner. Claim boundary until fixed: available N=25..80 joint-validation observations only; no retained N=120 extension."
+      "verdict_rationale": null
     },
     "holographic_probe_note_2026-04-11": {
       "audit_date": "2026-05-03T12:20:53.876502+00:00",
@@ -137940,41 +138037,24 @@
       "verdict_rationale": "The source code builds the lattice, evolves the source-driven field, propagates amplitudes, computes centroid shifts, and fits the mass exponent inline, so the frozen table is substantive runner evidence. The zero-source reduction and TOWARD/sign checks are supported for the declared run. However, the claim depends on runner-selected field dynamics and calibration hierarchy, and the cited companion explicitly says deriving those choices from retained framework dynamics remains future theorem work."
     },
     "mirror_2d_gravity_law_note": {
-      "audit_date": "2026-05-15T12:52:25.427462+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_claim_scope": {
-          "mirror_program_synthesis": null
-        },
-        "dep_claim_type": {
-          "mirror_program_synthesis": "meta"
-        },
-        "dep_effective_status": {
-          "mirror_program_synthesis": "meta"
-        },
-        "deps": [
-          "mirror_program_synthesis"
-        ],
-        "load_bearing_score": 3.822,
-        "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
-        "transitive_descendants": 9
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260515-125057-64415b08-mirror_2d_gravity_law_no-004",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The primary runner source genuinely computes the weak-fit rows it reports, but it imports the exact 2D mirror generator and linear propagator from scripts/mirror_born_audit.py, whose source and registered cache are not included in the restricted packet. The exact-mirror linear-propagator premise therefore remains an unclosed imported authority.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "mirror_2d_gravity_law_note",
-      "claim_scope": "Audited the bounded null-result that the provided primary runner output supports weak gravity-side mass-window and distance-tail fits for the exact 2D mirror family on the searched windows, not a promoted mass or distance law.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-15T12:52:25.427462+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -137982,23 +138062,19 @@
         "mirror_program_synthesis"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 3.822,
-      "load_bearing_step": "The primary-runner weak fit qualities, especially fixed-anchor mass-window R^2 = 0.167 and distance-tail R^2 = 0.075, are the evidence that no clean promoted 2D mirror mass or distance law is supported on the searched windows.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "d2c82f137d50a54f93b8e5f9fb1a544c279ba3b0afe182011d79c7a890cacafa",
+      "note_hash": "b001923a3a08adc5012ad223fe2d5ba25d9743232bea32a7feb006224913b373",
       "note_path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: provide scripts/mirror_born_audit.py and logs/runner-cache/mirror_born_audit.txt in the restricted packet, then re-audit whether the imported exact generator and linear propagator close the primary-runner premise.",
-      "open_dependency_paths": [
-        "docs/MIRROR_PROGRAM_SYNTHESIS.md",
-        "scripts/mirror_born_audit.py",
-        "logs/runner-cache/mirror_born_audit.txt"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
         {
@@ -138340,19 +138416,72 @@
             "total_pass": 3
           },
           "verdict_rationale": "Issue: the note says the primary runner gives gravity = 6.48 * N^-0.210 with R^2 = 0.168, but the current SHA-pinned primary cache reports gravity = 2.19 * N^+0.049 with R^2 = 0.015; the note also relies on mirror_born_audit.py for the exact 2D mirror linear-propagator premise without a ledger dependency edge. Why this blocks: the qualitative null result remains supported, but a clean no-go must be current with its load-bearing runner artifact and machine-tracked imported authority. Repair target: refresh or explicitly pin the primary-runner scaling numbers, and make the imported authority/cache machine-tracked for this claim. Claim boundary until fixed: the current primary cache supports no promoted mass law or distance law on the searched windows, but the source note is not yet clean-retainable as written."
+        },
+        {
+          "archived_at": "2026-05-17T12:07:21.239959+00:00",
+          "archived_for_note_hash": "d2c82f137d50a54f93b8e5f9fb1a544c279ba3b0afe182011d79c7a890cacafa",
+          "audit_date": "2026-05-15T12:52:25.427462+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_claim_scope": {
+              "mirror_program_synthesis": null
+            },
+            "dep_claim_type": {
+              "mirror_program_synthesis": "meta"
+            },
+            "dep_effective_status": {
+              "mirror_program_synthesis": "meta"
+            },
+            "deps": [
+              "mirror_program_synthesis"
+            ],
+            "load_bearing_score": 3.822,
+            "runner_hash": "7e7f84252a8356e88c3ebb0c4b2b86b4e87a8a5f0c794ac2c41e2e5e4de825b5",
+            "transitive_descendants": 9
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260515-125057-64415b08-mirror_2d_gravity_law_no-004",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The primary runner source genuinely computes the weak-fit rows it reports, but it imports the exact 2D mirror generator and linear propagator from scripts/mirror_born_audit.py, whose source and registered cache are not included in the restricted packet. The exact-mirror linear-propagator premise therefore remains an unclosed imported authority.",
+          "claim_scope": "Audited the bounded null-result that the provided primary runner output supports weak gravity-side mass-window and distance-tail fits for the exact 2D mirror family on the searched windows, not a promoted mass or distance law.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-15T12:52:25.427462+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The primary-runner weak fit qualities, especially fixed-anchor mass-window R^2 = 0.167 and distance-tail R^2 = 0.075, are the evidence that no clean promoted 2D mirror mass or distance law is supported on the searched windows.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: provide scripts/mirror_born_audit.py and logs/runner-cache/mirror_born_audit.txt in the restricted packet, then re-audit whether the imported exact generator and linear propagator close the primary-runner premise.",
+          "open_dependency_paths": [
+            "docs/MIRROR_PROGRAM_SYNTHESIS.md",
+            "scripts/mirror_born_audit.py",
+            "logs/runner-cache/mirror_born_audit.txt"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "The cached primary runner output matches the note's retained weak-fit rows closely enough for the bounded null-result: the current cache reports mass-window R^2=0.167 and distance-tail R^2=0.075, with no clean promoted gravity law. The runner source is not a trivial printout; it performs propagation, Born checks, gravity deltas, and power-law fits from generated graph data. However, the runner imports gen_2d_mirror and propagate_LINEAR from scripts/mirror_born_audit.py, and that load-bearing dependency is not present in the restricted packet despite being explicitly required by the note header. The cited synthesis note is meta/support only and does not close that dependency."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Gravity-Law Cleanup Note",
       "transitive_descendants": 9,
-      "verdict_rationale": "The cached primary runner output matches the note's retained weak-fit rows closely enough for the bounded null-result: the current cache reports mass-window R^2=0.167 and distance-tail R^2=0.075, with no clean promoted gravity law. The runner source is not a trivial printout; it performs propagation, Born checks, gravity deltas, and power-law fits from generated graph data. However, the runner imports gen_2d_mirror and propagate_LINEAR from scripts/mirror_born_audit.py, and that load-bearing dependency is not present in the restricted packet despite being explicitly required by the note header. The cited synthesis note is meta/support only and does not close that dependency."
+      "verdict_rationale": null
     },
     "mirror_2d_operator_cauchy_note_2026-05-10": {
       "audit_date": "2026-05-11T17:29:39.814354+00:00",
@@ -164815,50 +164944,41 @@
       "verdict_rationale": null
     },
     "poisson_self_gravity_loop_v3_note": {
-      "audit_date": "2026-05-10T14:32:36.623457+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 9.935,
-        "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
-        "transitive_descendants": 345
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e124b-7e6e-7b62-9178-1f967e41d45f",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The raw stdout supports small nonzero-coupling shifts and nonconvergence, but the advertised exact same-loop zero-coupling control is not actually tested through the same loop. The runner special-cases epsilon == 0.0 and returns free propagation with converged=True, zero iterations, and zero residual.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "poisson_self_gravity_loop_v3_note",
-      "claim_scope": "Bounded audit of the supplied Poisson-like lattice runner claiming exact zero-coupling control, small nonzero-coupling shifts, failed nonzero convergence, step-local Born closure, and no retained self-gravity lane.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T14:32:36.623457+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.151,
-      "load_bearing_step": "The strongest retained statement is that exact null identity is solid and a small centroid/phase-ramp shift appears under backreaction, but the shift and nonconverged nonlinear loop do not promote a new exact-lattice self-gravity mechanism.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "eaa9d17fb13c06b0f7b3dabe3b151f38ae0b0398cae8d6babeb6c8cb0c79b92f",
+      "note_hash": "da5b483741130bdccdb04b4753f00d7f8d50fd96f6c9a0fb896ffb2367cc2bef",
       "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue - remove or separately justify the epsilon==0 short-circuit, rerun the zero-coupling case through the same update pipeline, and include the shared lattice implementation or a self-contained runner for re-audit.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
@@ -165004,19 +165124,60 @@
             "total_pass": 3
           },
           "verdict_rationale": "The primary runner performs a nontrivial lattice/backreaction computation and reports exact zero-epsilon identity, small nonzero-coupling shifts, nonconvergence, and non-machine-clean end-to-end Born behavior. Those outputs support the note's bounded claim that this is a weak control surface and not a promoted self-gravity mechanism. No cited upstream dependency is listed, and no external comparator or tuned empirical target is used in the audited conclusion."
+        },
+        {
+          "archived_at": "2026-05-17T12:07:21.240605+00:00",
+          "archived_for_note_hash": "eaa9d17fb13c06b0f7b3dabe3b151f38ae0b0398cae8d6babeb6c8cb0c79b92f",
+          "audit_date": "2026-05-10T14:32:36.623457+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 9.935,
+            "runner_hash": "6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80",
+            "transitive_descendants": 345
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e124b-7e6e-7b62-9178-1f967e41d45f",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The raw stdout supports small nonzero-coupling shifts and nonconvergence, but the advertised exact same-loop zero-coupling control is not actually tested through the same loop. The runner special-cases epsilon == 0.0 and returns free propagation with converged=True, zero iterations, and zero residual.",
+          "claim_scope": "Bounded audit of the supplied Poisson-like lattice runner claiming exact zero-coupling control, small nonzero-coupling shifts, failed nonzero convergence, step-local Born closure, and no retained self-gravity lane.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T14:32:36.623457+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The strongest retained statement is that exact null identity is solid and a small centroid/phase-ramp shift appears under backreaction, but the shift and nonconverged nonlinear loop do not promote a new exact-lattice self-gravity mechanism.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "runner_artifact_issue - remove or separately justify the epsilon==0 short-circuit, rerun the zero-coupling case through the same update pipeline, and include the shared lattice implementation or a self-contained runner for re-audit.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 2,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 3
+          },
+          "verdict_rationale": "Issue: the key identity-control claim says the epsilon=0 reduction survives on the same loop machinery, while _run_loop bypasses the nonlinear update for epsilon == 0.0. Why this blocks: the exact null and convergence result are therefore a coded limit branch, not evidence that the matched-null update pipeline closes under the stated strict control. Repair target: run zero coupling through the same iterative machinery, or explicitly split the trivial zero-field branch from the claimed loop-control theorem. Claim boundary until fixed: the supplied packet only supports a raw nonconverged finite-harness no-promotion observation, not the stronger same-loop bounded theorem."
         }
       ],
       "runner_check_breakdown": {
-        "A": 2,
+        "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 3
+        "total_pass": 0
       },
       "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
-      "title": "Poisson Self-Gravity Loop V3 Note",
+      "title": "Poisson Self-Gravity Loop V3 Note \u2014 Nonzero-Coupling Falsifier (Binding)",
       "transitive_descendants": 803,
-      "verdict_rationale": "Issue: the key identity-control claim says the epsilon=0 reduction survives on the same loop machinery, while _run_loop bypasses the nonlinear update for epsilon == 0.0. Why this blocks: the exact null and convergence result are therefore a coded limit branch, not evidence that the matched-null update pipeline closes under the stated strict control. Repair target: run zero coupling through the same iterative machinery, or explicitly split the trivial zero-field branch from the claimed loop-control theorem. Claim boundary until fixed: the supplied packet only supports a raw nonconverged finite-harness no-promotion observation, not the stronger same-loop bounded theorem."
+      "verdict_rationale": null
     },
     "poisson_self_gravity_mechanism_note": {
       "audit_date": null,
@@ -227845,93 +228006,41 @@
       "verdict_rationale": "The load-bearing statement is a narrow numerical result from a deterministic runner that directly constructs the relevant lattice setup and computes dM, dIeq, dS, residuals, and relative gaps. The cited continuum-limit note is retained_bounded, and the present note does not claim the broader continuum theorem or closure of the entire exact-comparator lane. Within the stated H = 0.25 boundary, the conclusion follows from the supplied runner output and source code."
     },
     "wave_static_fixed_beam_boundary_sensitivity_note": {
-      "audit_date": "2026-05-10T16:10:47.436131+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 8.964,
-        "runner_hash": "ee2401427e080ae63ab74328e01048b452a69fea811f2b04418067b528f855b5",
-        "transitive_descendants": 352
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-judicial-019e12a6-977c-7023-8573-2b43f1f99c83",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The source note's claim is not limited to the supplied default H=0.5 run; it explicitly relies on H=0.35 persistence, but no completed H=0.35 stdout is provided. The runner source also delegates the wave, beam, propagation, readout, and constants to an unprovided module, so the restricted packet cannot verify the computation end to end. The second audit correctly keeps the bounded theorem conditional pending the missing runner dependency and completed medium-H artifact.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "wave_static_fixed_beam_boundary_sensitivity_note",
-      "claim_scope": "Finite-grid fixed-beam boundary-sensitivity comparison for the direct static comparator under field-box enlargement at H=0.5 and claimed H=0.35.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T16:10:47.436131+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-09T11:42:10.046870+00:00",
-          "auditor": "codex-audit-loop-019e0c8b-04fd-7f20-9fe7-8ac39f264bcd",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited the fixed-beam boundary-sensitivity probe for the provided completed H = 0.5 run comparing field PW_phys 6.0 versus 9.0 with beam PW_phys fixed at 6.0.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "C",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-10T16:10:45.858455+00:00",
-          "auditor": "codex-audit-loop-019e12a4-8cf6-7951-b3aa-df534bbdbe2f",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Finite-grid fixed-beam boundary-sensitivity comparison for the direct static comparator under field-box enlargement at H=0.5 and claimed H=0.35.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "C",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-10T16:10:47.436131+00:00",
-          "auditor": "codex-audit-loop-judicial-019e12a6-977c-7023-8573-2b43f1f99c83",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Finite-grid fixed-beam boundary-sensitivity comparison for the direct static comparator under field-box enlargement at H=0.5 and claimed H=0.35.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "It narrowed the audited scope to H=0.5 even though the note's load-bearing conclusion includes H=0.35 persistence, and it treated the completed default stdout as enough despite unprovided imported computational primitives.",
-          "independence": "judicial_review",
-          "judgment_rationale": "The source note's claim is not limited to the supplied default H=0.5 run; it explicitly relies on H=0.35 persistence, but no completed H=0.35 stdout is provided. The runner source also delegates the wave, beam, propagation, readout, and constants to an unprovided module, so the restricted packet cannot verify the computation end to end. The second audit correctly keeps the bounded theorem conditional pending the missing runner dependency and completed medium-H artifact.",
-          "load_bearing_step_class": "C",
-          "second_auditor_error": "",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.146,
-      "load_bearing_step": "The fixed-beam probe still shows material boundary sensitivity, and the effect persists at medium H.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "e1ae2d89016b6c502bdf39144cf3d452f60d2cd9a3100f123cf9d2d51d02a389",
+      "note_hash": "9cd8b6f0977f016b4e3cf285dc2e786a6dc6ec402f6e118788718bf92bd9c531",
       "note_path": "docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: supply the full wave_retardation_continuum_limit dependency or retained direct authority plus completed stdout/cache for all claimed rows, especially the H=0.35 medium-H run.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -227997,19 +228106,103 @@
             "total_pass": 8
           },
           "verdict_rationale": "The fixed-beam replay verifies the key control: the beam geometry is held at the baseline box while the field/static solve box is enlarged and cropped back. At H = 0.5 the runner reproduces dS move 30.29% and rel_MS move 83.88%; at H = 0.35 it reproduces dS move 26.21% and rel_MS move 46.52%, while dM is much less sensitive. This cleanly supports the note's bounded negative that the earlier boundary sensitivity was not merely a beam-geometry confound."
+        },
+        {
+          "archived_at": "2026-05-17T12:07:21.246132+00:00",
+          "archived_for_note_hash": "e1ae2d89016b6c502bdf39144cf3d452f60d2cd9a3100f123cf9d2d51d02a389",
+          "audit_date": "2026-05-10T16:10:47.436131+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 8.964,
+            "runner_hash": "ee2401427e080ae63ab74328e01048b452a69fea811f2b04418067b528f855b5",
+            "transitive_descendants": 352
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-judicial-019e12a6-977c-7023-8573-2b43f1f99c83",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The source note's claim is not limited to the supplied default H=0.5 run; it explicitly relies on H=0.35 persistence, but no completed H=0.35 stdout is provided. The runner source also delegates the wave, beam, propagation, readout, and constants to an unprovided module, so the restricted packet cannot verify the computation end to end. The second audit correctly keeps the bounded theorem conditional pending the missing runner dependency and completed medium-H artifact.",
+          "claim_scope": "Finite-grid fixed-beam boundary-sensitivity comparison for the direct static comparator under field-box enlargement at H=0.5 and claimed H=0.35.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T16:10:47.436131+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-09T11:42:10.046870+00:00",
+              "auditor": "codex-audit-loop-019e0c8b-04fd-7f20-9fe7-8ac39f264bcd",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited the fixed-beam boundary-sensitivity probe for the provided completed H = 0.5 run comparing field PW_phys 6.0 versus 9.0 with beam PW_phys fixed at 6.0.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "C",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-10T16:10:45.858455+00:00",
+              "auditor": "codex-audit-loop-019e12a4-8cf6-7951-b3aa-df534bbdbe2f",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Finite-grid fixed-beam boundary-sensitivity comparison for the direct static comparator under field-box enlargement at H=0.5 and claimed H=0.35.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "C",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-10T16:10:47.436131+00:00",
+              "auditor": "codex-audit-loop-judicial-019e12a6-977c-7023-8573-2b43f1f99c83",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Finite-grid fixed-beam boundary-sensitivity comparison for the direct static comparator under field-box enlargement at H=0.5 and claimed H=0.35.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "It narrowed the audited scope to H=0.5 even though the note's load-bearing conclusion includes H=0.35 persistence, and it treated the completed default stdout as enough despite unprovided imported computational primitives.",
+              "independence": "judicial_review",
+              "judgment_rationale": "The source note's claim is not limited to the supplied default H=0.5 run; it explicitly relies on H=0.35 persistence, but no completed H=0.35 stdout is provided. The runner source also delegates the wave, beam, propagation, readout, and constants to an unprovided module, so the restricted packet cannot verify the computation end to end. The second audit correctly keeps the bounded theorem conditional pending the missing runner dependency and completed medium-H artifact.",
+              "load_bearing_step_class": "C",
+              "second_auditor_error": "",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "The fixed-beam probe still shows material boundary sensitivity, and the effect persists at medium H.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: supply the full wave_retardation_continuum_limit dependency or retained direct authority plus completed stdout/cache for all claimed rows, especially the H=0.35 medium-H run.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 1
+          },
+          "verdict_rationale": "The source note's claim is not limited to the supplied default H=0.5 run; it explicitly relies on H=0.35 persistence, but no completed H=0.35 stdout is provided. The runner source also delegates the wave, beam, propagation, readout, and constants to an unprovided module, so the restricted packet cannot verify the computation end to end. The second audit correctly keeps the bounded theorem conditional pending the missing runner dependency and completed medium-H artifact."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 0
       },
       "runner_path": "scripts/wave_static_fixed_beam_boundary_sensitivity.py",
-      "title": "Wave Static Fixed-Beam Boundary Sensitivity",
+      "title": "Wave Static Fixed-Beam Boundary Sensitivity \u2014 H = 0.5 Default Run (Binding)",
       "transitive_descendants": 800,
-      "verdict_rationale": "The source note's claim is not limited to the supplied default H=0.5 run; it explicitly relies on H=0.35 persistence, but no completed H=0.35 stdout is provided. The runner source also delegates the wave, beam, propagation, readout, and constants to an unprovided module, so the restricted packet cannot verify the computation end to end. The second audit correctly keeps the bounded theorem conditional pending the missing runner dependency and completed medium-H artifact."
+      "verdict_rationale": null
     },
     "wave_static_matrixfree_fixed_beam_boundary_note": {
       "audit_date": "2026-05-11T22:57:40.812865+00:00",
@@ -228794,45 +228987,24 @@
       "verdict_rationale": "Within the stated 14/15 numerical scope on the named graph battery, the chain closes by direct measurement. The note explicitly enumerates what it does not close (universal sign-selection, clean 0/40 repulsive shell-force, frozen retained semantics), so the bounded interpretation matches the source's safe read. No upgrade to retained closure is implied."
     },
     "wide_family_h0125_bridge_reopen_audit": {
-      "audit_date": "2026-05-11T18:41:10.900932+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "h2t_h0125_narrow_bridge_note": "Bounded negative h=0.125 dense 3D 1/L^2+h^2 bridge result: the reduced fixed-family audit reaches h=0.125 with Born clean where measurable but no recovered TOWARD/F~M bridge, and the retained bridge-family dependency remains at F~M about 0.50 rather than 1.",
-          "lattice_3d_l2_numpy_h0125_bridge_note": "Finite fixed-family 3D dense 1/L^2+h^2 bridge evidence at phys_l=6, phys_w=3 through h=0.125, with Born/k=0 clean, TOWARD bridge sign in the completed cache, and F~M near 0.50 rather than Newtonian closure."
-        },
-        "dep_claim_type": {
-          "h2t_h0125_narrow_bridge_note": "bounded_theorem",
-          "lattice_3d_l2_numpy_h0125_bridge_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "h2t_h0125_narrow_bridge_note": "retained_bounded",
-          "lattice_3d_l2_numpy_h0125_bridge_note": "retained_bounded"
-        },
-        "deps": [
-          "h2t_h0125_narrow_bridge_note",
-          "lattice_3d_l2_numpy_h0125_bridge_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The direct retained dependencies close the fixed and reduced h=0.125 negative results, but this row also claims the first wider phys_w=4 continuation resolves as a bounded negative and has no primary runner or retained one-hop dependency carrying that wider replay table.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "wide_family_h0125_bridge_reopen_audit",
-      "claim_scope": "Bounded reopen decision for the h=0.125 3D 1/L^2+h^2 bridge family: retained dependencies support the fixed/reduced-family negative through h=0.125 with clean Born/k=0 but F~M about 0.50 or no recovered TOWARD/F~M bridge; the wider phys_w=4 continuation and no-live-reopen conclusion remain conditional pending a retained direct artifact/dependency.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-11T18:41:10.900932+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -228841,21 +229013,19 @@
         "h2t_h0125_narrow_bridge_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The current fixed bridge family now resolves as a bounded negative for weak-field closure and the first wider phys_w=4 continuation also resolves as a bounded negative on the tested retained row.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "3c05a2735ac7ba396e1c34d5c054c2df52bb708e4421f5c4785c3c57210927b4",
+      "note_hash": "75c84719a70c3f68ed3818cff4bfb62b763896bbdc4f6c3da6dbe74a0d27e4eb",
       "note_path": "docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: Re-audit after adding a retained note/log/runner for the wider phys_w=4 continuation, or after narrowing this row to the fixed/reduced h=0.125 negatives already carried by its retained dependencies.",
-      "open_dependency_paths": [
-        "missing retained direct artifact for scripts/lattice_3d_l2_wide.py phys_w=4 continuation table"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-30T19:14:10.170548+00:00",
@@ -228920,6 +229090,61 @@
             "total_pass": 2
           },
           "verdict_rationale": "The audited claim is not a positive bridge claim; it is a bounded negative saying the reopened h=0.125 wide-family path currently does not close weak-field F~M~=1. A fresh restricted audit reran /usr/bin/python3 scripts/lattice_3d_l2_numpy_h0125_only.py and reproduced Born=6.59e-15, k=0=+0.000000, gravity +0.029856 TOWARD, F~M alpha=0.501. It also reran /usr/bin/python3 scripts/lattice_3d_l2_wide_h0125_replay.py --phys-w 4 --z-mass 3.0 --strength 1e-7 1e-6 5e-6 --window full and reproduced phys_w=4, Born=8.01e-15, k=0=-0.000000, gravity +0.010955 TOWARD, full-window alpha=0.499. The load-bearing comparator is therefore the right observable for the note's boundary, and both recomputed rows land near alpha 0.5 rather than 1.0 while Born and null checks stay clean. Residual risk is documentation quality rather than scientific closure: the ledger has no assigned runner and the width-4 replay is not linked in the note's artifact list, but the scripts on main directly reproduce the stated decisive numbers."
+        },
+        {
+          "archived_at": "2026-05-17T12:07:21.246154+00:00",
+          "archived_for_note_hash": "3c05a2735ac7ba396e1c34d5c054c2df52bb708e4421f5c4785c3c57210927b4",
+          "audit_date": "2026-05-11T18:41:10.900932+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "h2t_h0125_narrow_bridge_note": "Bounded negative h=0.125 dense 3D 1/L^2+h^2 bridge result: the reduced fixed-family audit reaches h=0.125 with Born clean where measurable but no recovered TOWARD/F~M bridge, and the retained bridge-family dependency remains at F~M about 0.50 rather than 1.",
+              "lattice_3d_l2_numpy_h0125_bridge_note": "Finite fixed-family 3D dense 1/L^2+h^2 bridge evidence at phys_l=6, phys_w=3 through h=0.125, with Born/k=0 clean, TOWARD bridge sign in the completed cache, and F~M near 0.50 rather than Newtonian closure."
+            },
+            "dep_claim_type": {
+              "h2t_h0125_narrow_bridge_note": "bounded_theorem",
+              "lattice_3d_l2_numpy_h0125_bridge_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "h2t_h0125_narrow_bridge_note": "retained_bounded",
+              "lattice_3d_l2_numpy_h0125_bridge_note": "retained_bounded"
+            },
+            "deps": [
+              "h2t_h0125_narrow_bridge_note",
+              "lattice_3d_l2_numpy_h0125_bridge_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The direct retained dependencies close the fixed and reduced h=0.125 negative results, but this row also claims the first wider phys_w=4 continuation resolves as a bounded negative and has no primary runner or retained one-hop dependency carrying that wider replay table.",
+          "claim_scope": "Bounded reopen decision for the h=0.125 3D 1/L^2+h^2 bridge family: retained dependencies support the fixed/reduced-family negative through h=0.125 with clean Born/k=0 but F~M about 0.50 or no recovered TOWARD/F~M bridge; the wider phys_w=4 continuation and no-live-reopen conclusion remain conditional pending a retained direct artifact/dependency.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T18:41:10.900932+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The current fixed bridge family now resolves as a bounded negative for weak-field closure and the first wider phys_w=4 continuation also resolves as a bounded negative on the tested retained row.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: Re-audit after adding a retained note/log/runner for the wider phys_w=4 continuation, or after narrowing this row to the fixed/reduced h=0.125 negatives already carried by its retained dependencies.",
+          "open_dependency_paths": [
+            "missing retained direct artifact for scripts/lattice_3d_l2_wide.py phys_w=4 continuation table"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the fixed/reduced-family h=0.125 negatives are supported by retained-bounded dependencies, but the note's wider-family reopen conclusion imports a phys_w=4 replay and no-live-reopen decision that are not supplied as a primary runner output or retained one-hop dependency. Why this blocks: the audit packet can verify the fixed-family F~M about 0.50 and reduced-family no-bridge results, but cannot independently verify the wider-family alpha=0.499 row or the exhaustive reopen conclusion. Repair target: add a retained direct note/log/runner artifact for the phys_w=4 continuation, or narrow this row to the already-retained fixed/reduced-family negative. Claim boundary until fixed: cite this as a conditional reopen assessment whose fixed-family h=0.125 negative core is retained by its dependencies."
         }
       ],
       "runner_check_breakdown": {
@@ -228930,9 +229155,9 @@
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Wide-Family `h = 0.125` Bridge Reopen Audit",
+      "title": "Wide-Family `h = 0.125` Bridge Reopen Audit \u2014 Reduced-Family Fixed `h = 0.125` Negatives (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the fixed/reduced-family h=0.125 negatives are supported by retained-bounded dependencies, but the note's wider-family reopen conclusion imports a phys_w=4 replay and no-live-reopen decision that are not supplied as a primary runner output or retained one-hop dependency. Why this blocks: the audit packet can verify the fixed-family F~M about 0.50 and reduced-family no-bridge results, but cannot independently verify the wider-family alpha=0.499 row or the exhaustive reopen conclusion. Repair target: add a retained direct note/log/runner artifact for the phys_w=4 continuation, or narrow this row to the already-retained fixed/reduced-family negative. Claim boundary until fixed: cite this as a conditional reopen assessment whose fixed-family h=0.125 negative core is retained by its dependencies."
+      "verdict_rationale": null
     },
     "wide_lattice_h2t_distance_law_note": {
       "audit_date": "2026-05-03T22:57:30.263539+00:00",
@@ -241767,8 +241992,8 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2091,
-    "re_audit_required": 0,
+    "preserved_existing": 2084,
+    "re_audit_required": 7,
     "row_count": 2135,
     "seeded_new": 0
   }

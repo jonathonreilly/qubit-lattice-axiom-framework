@@ -1,11 +1,34 @@
-# Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two)
+# Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two) — Cleanup-Action Record (Binding)
 
-**Date:** 2026-05-01
+**Date:** 2026-05-01 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is the cleanup-action record for the 8 named runners; PASS-accounting / runner-correctness verification is split out)
 **Status:** support / audit-hygiene cleanup. Companion to
 [`docs/AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md`](AUDIT_DM_RUNNER_STALE_PATH_CLEANUP_NOTE_2026-05-01.md)
 (Block One). This block extends the same audit-hygiene cleanup to a second
 cluster of runners with stale `read("docs/X.md")` calls.
 **Lane:** audit-hygiene. No physics claim is added or removed.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"attach the current
+sources and completed stdout or SHA-pinned caches for the eight named
+Block Two runners, then re-audit the cleanup and PASS accounting."*
+
+This revision implements the splitting alternative rather than the
+full-attachment option. The binding evidence of this note is **only**
+the cleanup-action record: the 8 named runners had stale
+`read("docs/X.md")` calls referring to notes deleted by commit
+`d2e754fdc`, and this note documents the per-runner cleanup applied
+to remove those stale path references.
+
+The **broader PASS-accounting / runner-correctness verification** —
+i.e. confirming that each cleaned-up runner produces a passing
+post-cleanup output across its full audit-lane evaluation — is
+**demoted to out-of-binding-scope** until SHA-pinned caches for each
+of the 8 runners are attached and re-audited as a separate
+runner-correctness row. Each runner's own audit row carries that
+verification on its own ledger entry; this Block Two note is not the
+authority for that.
 
 ---
 

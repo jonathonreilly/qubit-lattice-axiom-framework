@@ -38374,10 +38374,10 @@
       "deps": [
         "audit_dm_runner_stale_path_cleanup_note_2026-05-01"
       ],
-      "note_hash": "9e37942e39d20011163391611109ddedb867506ede48f1bf30d010de915ec150",
+      "note_hash": "ec8b443afe4a69f37cee349f72699a8d5aff2ae0e0f6411c2423d3dde088025c",
       "path": "docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md",
       "runner_path": null,
-      "title": "Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two)"
+      "title": "Audit DM + Gauge-Vacuum Runner Stale-Path Cleanup (Block Two) \u2014 Cleanup-Action Record (Binding)"
     },
     "audit_dm_runner_stale_path_cleanup_note_2026-05-01": {
       "claim_id": "audit_dm_runner_stale_path_cleanup_note_2026-05-01",
@@ -42536,10 +42536,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "9964c9aa3fdfb359ce48fe4aced30015d0fd4e800853ea9cd26a603c9f29ba37",
+      "note_hash": "5f9c9c13ee2d03c8fa8fb359d83317cf084d80625247575580e55287565763ef",
       "path": "docs/DIMENSIONAL_GRAVITY_TABLE.md",
       "runner_path": "scripts/dimensional_gravity_table_certificate_runner_2026_05_03.py",
-      "title": "Dimensional Gravity Table"
+      "title": "Dimensional Gravity Table \u2014 Cache-Backed d=3 / d=4 Rows Only (Binding)"
     },
     "dirac_core_card_note": {
       "claim_id": "dirac_core_card_note",
@@ -50289,10 +50289,10 @@
       "deps": [
         "mirror_chokepoint_note"
       ],
-      "note_hash": "8116f03b56bad99a4fdbc2246d221f4d5a67b1df2ba3caa2301deb5a07b4fd75",
+      "note_hash": "2ae54b9c842f64826393190c6419bfe1eeda5175bceb64ef2034b026b054c5d0",
       "path": "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
       "runner_path": null,
-      "title": "Higher-Symmetry Joint Validation Note"
+      "title": "Higher-Symmetry Joint Validation Note \u2014 Cached N Range (Binding)"
     },
     "holographic_probe_note_2026-04-11": {
       "claim_id": "holographic_probe_note_2026-04-11",
@@ -55515,7 +55515,7 @@
       "deps": [
         "mirror_program_synthesis"
       ],
-      "note_hash": "d2c82f137d50a54f93b8e5f9fb1a544c279ba3b0afe182011d79c7a890cacafa",
+      "note_hash": "b001923a3a08adc5012ad223fe2d5ba25d9743232bea32a7feb006224913b373",
       "path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
       "runner_path": "scripts/mirror_2d_validation.py",
       "title": "Exact 2D Mirror Gravity-Law Cleanup Note"
@@ -59378,10 +59378,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "eaa9d17fb13c06b0f7b3dabe3b151f38ae0b0398cae8d6babeb6c8cb0c79b92f",
+      "note_hash": "da5b483741130bdccdb04b4753f00d7f8d50fd96f6c9a0fb896ffb2367cc2bef",
       "path": "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md",
       "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
-      "title": "Poisson Self-Gravity Loop V3 Note"
+      "title": "Poisson Self-Gravity Loop V3 Note \u2014 Nonzero-Coupling Falsifier (Binding)"
     },
     "poisson_self_gravity_mechanism_note": {
       "claim_id": "poisson_self_gravity_mechanism_note",
@@ -69173,12 +69173,12 @@
       "claim_id": "wave_static_fixed_beam_boundary_sensitivity_note",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
-      "note_hash": "e1ae2d89016b6c502bdf39144cf3d452f60d2cd9a3100f123cf9d2d51d02a389",
+      "note_hash": "9cd8b6f0977f016b4e3cf285dc2e786a6dc6ec402f6e118788718bf92bd9c531",
       "path": "docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md",
       "runner_path": "scripts/wave_static_fixed_beam_boundary_sensitivity.py",
-      "title": "Wave Static Fixed-Beam Boundary Sensitivity"
+      "title": "Wave Static Fixed-Beam Boundary Sensitivity \u2014 H = 0.5 Default Run (Binding)"
     },
     "wave_static_matrixfree_fixed_beam_boundary_note": {
       "claim_id": "wave_static_matrixfree_fixed_beam_boundary_note",
@@ -69257,10 +69257,10 @@
         "lattice_3d_l2_numpy_h0125_bridge_note",
         "h2t_h0125_narrow_bridge_note"
       ],
-      "note_hash": "3c05a2735ac7ba396e1c34d5c054c2df52bb708e4421f5c4785c3c57210927b4",
+      "note_hash": "75c84719a70c3f68ed3818cff4bfb62b763896bbdc4f6c3da6dbe74a0d27e4eb",
       "path": "docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md",
       "runner_path": null,
-      "title": "Wide-Family `h = 0.125` Bridge Reopen Audit"
+      "title": "Wide-Family `h = 0.125` Bridge Reopen Audit \u2014 Reduced-Family Fixed `h = 0.125` Negatives (Binding)"
     },
     "wide_lattice_h2t_distance_law_note": {
       "claim_id": "wide_lattice_h2t_distance_law_note",
@@ -72144,13 +72144,13 @@
       "positive_theorem": 153
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 836,
+      "bounded_theorem": 837,
       "decoration": 1,
       "meta": 75,
       "no_go": 157,
       "none": 445,
       "open_gate": 123,
-      "positive_theorem": 609
+      "positive_theorem": 608
     },
     "edge_count": 9035,
     "leaf_count": 630,

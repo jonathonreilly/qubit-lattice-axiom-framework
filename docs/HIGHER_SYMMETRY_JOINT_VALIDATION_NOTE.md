@@ -1,8 +1,34 @@
-# Higher-Symmetry Joint Validation Note
+# Higher-Symmetry Joint Validation Note — Cached N Range (Binding)
 
-**Date:** 2026-04-03  
-**Status:** bounded positive for `Z2 x Z2`, proposed_retained through `N = 120` on a
-denser narrow probe
+**Date:** 2026-04-03 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is exactly the cached log range; the N=120 promotion claim requires the missing dense N=80/100/120 joint-validation log + registered joint-validator runner)
+**Status:** bounded positive on the cached registered log range for
+`Z₂ × Z₂`; the `N = 120` proposed_retained promotion is **out of
+binding scope** until the missing dense N=80/100/120 joint-validation
+log is registered and the joint validator is registered as this row's
+primary runner.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"provide the missing
+dense N=80/100/120 joint-validation log or registered runner cache,
+and register the joint validator as this row's runner before
+re-auditing the N=120 claim."*
+
+This revision takes the narrowing path. The binding evidence of this
+note is exactly the **cached log content from the registered logs**
+on the existing `Z₂ × Z₂` joint Born + gravity + decoherence
+validation: only those rows that the current registered cache
+actually contains are binding.
+
+The **N = 120 promotion claim** and any "proposed_retained through
+N = 120" framing are **demoted to out-of-binding-scope** until:
+(a) the missing dense N=80/100/120 joint-validation log is provided
+or a registered runner cache is attached, and
+(b) the joint validator
+(`scripts/higher_symmetry_joint_validation.py`) is registered as
+this row's primary runner in the runner classification ledger with a
+SHA-pinned cache. Neither (a) nor (b) is supplied in this revision.
 
 This note records the first joint Born + gravity + decoherence validation for
 the higher-symmetry families introduced in:

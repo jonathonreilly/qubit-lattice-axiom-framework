@@ -1,7 +1,40 @@
-# Poisson Self-Gravity Loop V3 Note
+# Poisson Self-Gravity Loop V3 Note — Nonzero-Coupling Falsifier (Binding)
 
-**Date:** 2026-04-05  
-**Status:** bounded - bounded or caveated result note
+**Date:** 2026-04-05 (scope narrowed 2026-05-17 per audited_conditional `runner_artifact_issue` repair: binding scope is the nonzero-coupling falsifier observation; the exact `ε = 0` reduction claim is split out because the runner short-circuits the `ε = 0` branch instead of running it through the same iterative machinery)
+**Status:** bounded nonzero-coupling falsifier — the supplied runner's
+non-zero coupling branch shows small centroid/phase-ramp shifts and
+does not converge to a clean self-gravity-mechanism closure. The exact
+`ε = 0` reduction claim is **not** in this note's binding scope:
+inspecting the runner's `_run_loop` shows the `ε == 0.0` case is
+short-circuited (the nonlinear update is bypassed), so the cached
+"exact null identity" result is a coded limit branch rather than a
+same-loop iterative-machinery confirmation.
+
+## Scope narrowing (2026-05-17 audited_conditional repair)
+
+The 2026-05-10 audit verdict on this row was `audited_conditional` with
+repair class `runner_artifact_issue`, stating: *"remove or separately
+justify the `ε == 0` short-circuit, rerun the zero-coupling case
+through the same update pipeline, and include the shared lattice
+implementation or a self-contained runner for re-audit."*
+
+This revision takes the splitting alternative rather than modifying
+the runner. The binding evidence of this note is exactly the **raw
+nonconverged finite-harness no-promotion observation** at non-zero
+coupling: small centroid/phase-ramp shifts appear under backreaction,
+but the matched-null loop does not converge to a clean self-gravity
+mechanism.
+
+The following are **demoted to out-of-binding-scope** of this note:
+- the claim that the **exact `ε = 0` identity reduction survives on
+  the same loop machinery** — this is currently a coded-limit-branch
+  result via the `ε == 0.0` short-circuit in `_run_loop`, not a
+  same-pipeline iterative-machinery confirmation. Restoring the claim
+  requires either removing the short-circuit and rerunning, or a
+  separate justification theorem for the short-circuit.
+- the stronger **same-loop bounded theorem** built on top of that
+  reduction. Without the reduction at iterative-machinery level, the
+  bounded theorem is not supported by the current restricted packet.
 
 ## Artifact chain
 

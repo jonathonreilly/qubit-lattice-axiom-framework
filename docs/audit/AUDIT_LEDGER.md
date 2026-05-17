@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 109 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 335 |
+| **retained_bounded** | 336 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1215 |
+| unaudited | 1214 |
 | meta | 197 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 8 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 556 |
+| `audited_clean` | 557 |
 | `audited_conditional` | 178 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 65 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1412 |
+| `unaudited` | 1411 |
 
 | claim_type | count |
 |---|---:|
@@ -298,6 +298,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
@@ -5262,6 +5263,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The supplied translation-character projectors together with the C3 cycle generator generate the full 9-dimensional M_3(C) algebra on H_hw=1 and have scalar commutant.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the runner explicitly constructs the 3x3 generators, computes the generated algebra dimension as 9, and computes scalar commutant dimension 1. The note excludes physical-species, substrate-fundamentality, and historical-memo conclusions.
 - **rationale:** The load-bearing step is a finite-dimensional algebraic closure check on explicitly supplied 3x3 operators, not a numerical fit, external comparison, or renaming. The source code performs actual linear-algebra computations for rank, generated algebra dimension, and commutant dimension rather than merely printing expected constants. Under the note's narrow scope, the conclusion follows on its own terms.
+- **auditor confidence:** high
+
+### `geometry_lane_head_to_head_note`
+
+- **Note:** [`GEOMETRY_LANE_HEAD_TO_HEAD_NOTE.md`](../../docs/GEOMETRY_LANE_HEAD_TO_HEAD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite four-configuration runner table for modular gap=2, modular gap=4, central |y-center|<1, and central |y-center|<2 on N=25,40,60,80,100 with 16 matched seeds, npl=25, y_range=12, connect_radius=3.0, and the stated layernorm pur_min/gravity readouts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260517-153537-a5e2dcef-geometry_lane_head_to_he-020`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The binding evidence of this note is exactly the finite four-configuration runner table from scripts/geometry_lane_head_to_head.py on the declared 16 matched-seed grid.  _(class `C`)_
+- **chain closes:** True — Within the narrowed scope, the runner genuinely constructs the four graph/readout configurations and computes the reported finite table from generated DAGs, propagation, purity, gravity, and removal-fraction calculations. The note explicitly excludes top-lane promotion, asymptotic claims, and same-readout implementation as binding conclusions.
+- **rationale:** The source note's binding claim is no longer a broad dominance or lane-selection theorem; it is the finite runner table itself plus conservative interpretation of that table. The provided primary runner and helper sources do not merely print constants or import a contested result: they generate the modular and central-band graphs, apply the shared propagation/readout routines, and aggregate the matched-seed outputs. The runner stdout matches the table-level claims in the note, including the absence of a universal winner and the N-specific tradeoffs. The demoted top-lane-selection and same-readout-implementation interpretations are outside the audited scope rather than hidden load-bearing premises.
 - **auditor confidence:** high
 
 ### `geometry_superposition_dag_ensemble_note_2026-04-11`

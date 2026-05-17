@@ -1,0 +1,16 @@
+==============================================================================
+AUDIT-PREP VERIFIER — lensing_finite_path_explanation_note
+==============================================================================
+  [PASS] [A] Parent note exists  (LENSING_FINITE_PATH_EXPLANATION_NOTE.md, 10003 bytes)
+
+PART 1 — CITED deps (expect: >=1 hit each):
+  [PASS] [A]   lensing_long_path_test_note IS cited (>=1 hit)  (hits = 4)
+
+PART 2 — NOT-CITED deps (expect: 0 hits each):
+
+==============================================================================
+SUMMARY: 2 PASS / 0 FAIL
+Class-A pattern hits: 2
+==============================================================================
+
+VERIFIED

@@ -53787,28 +53787,33 @@
       "verdict_rationale": "The source note honestly frames the result as conditional on importing a minimum-information selector from information geometry. The runner performs nontrivial numerical constrained optimization and verifies exact closure on the favored column, but it does not derive the selector from the stated axiom. Therefore the audited result is bounded support for the conditional law, not a closed first-principles theorem."
     },
     "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16": {
-      "audit_date": "2026-04-30T19:19:25.394244+00:00",
+      "audit_date": "2026-05-18T13:03:09.014799+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 0.0,
-        "transitive_descendants": 0
+        "load_bearing_score": 10.786,
+        "runner_hash": "77b1d5788a7ea55cb0d6aa053878e817bea6fb313fdb4dcc3a8af87b2fc24741",
+        "transitive_descendants": 882
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
-      "blocker": "cross_confirmation_disagreement",
-      "chain_closes": true,
-      "chain_closure_explanation": "Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judicial-panel-gpt-5.5-20260518-dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
+      "auditor_confidence": "judicial-panel",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class C). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class C; J2: second / audited_conditional / bounded_theorem / class C; J3: second / audited_conditional / bounded_theorem / class C; J4: second / audited_conditional / bounded_theorem / class C; J5: second / audited_conditional / bounded_theorem / class C. The packet verifies a bounded computational diagnostic: the cached runner exits cleanly, performs a multistart constrained stationary-branch computation, and reports five passing checks for branch recovery, closure, and action-gap separation. But the source note repeatedly states that this is support only, not live theorem-grade global selector closure, and the runner itself frames the result as broad multistart support rather than a certified global theorem. Clean closure is therefore too strong; the load-bearing bridge from finite broad scan on the fixed native seed surface to theorem-grade branch-global selector authority remains unratified in this packet.",
       "claim_id": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_scope": "Broad multistart constrained-scan support for a low-action PMNS-assisted N_e branch on the fixed native seed surface; not a theorem-grade global selector.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-18T09:35:27.105894+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-18T13:03:09.014799+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -53823,6 +53828,7 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
+        "mode": "judicial_third_pass",
         "second_audit": {
           "audit_date": "2026-05-18T12:23:03.181154+00:00",
           "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_leptogenesis_pmns_mul-022",
@@ -53835,25 +53841,51 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_conditional"
         },
-        "status": "disagreement"
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-18T13:03:09.014799+00:00",
+          "auditor": "codex-judicial-panel-gpt-5.5-20260518-dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Broad multistart constrained-scan support for a low-action PMNS-assisted N_e branch on the fixed native seed surface; not a theorem-grade global selector.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit treats a caveated support note and successful runner diagnostic as clean closure. That ignores the note's explicit non-theorem-grade scope and the open bridge from broad multistart reduced-surface evidence to global selector authority.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class C). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class C; J2: second / audited_conditional / bounded_theorem / class C; J3: second / audited_conditional / bounded_theorem / class C; J4: second / audited_conditional / bounded_theorem / class C; J5: second / audited_conditional / bounded_theorem / class C. The packet verifies a bounded computational diagnostic: the cached runner exits cleanly, performs a multistart constrained stationary-branch computation, and reports five passing checks for branch recovery, closure, and action-gap separation. But the source note repeatedly states that this is support only, not live theorem-grade global selector closure, and the runner itself frames the result as broad multistart support rather than a certified global theorem. Clean closure is therefore too strong; the load-bearing bridge from finite broad scan on the fixed native seed surface to theorem-grade branch-global selector authority remains unratified in this packet.",
+          "load_bearing_step_class": "C",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0,
+            "total_pass": 5
+          },
+          "second_auditor_error": "No material error; second side is ratified.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audit_in_progress",
+      "independence": "judicial_review",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.786,
-      "load_bearing_step": "After the relative-action stationarity theorem, one caveat still remained:",
+      "load_bearing_step": "Broad multistart enumeration on the fixed native N_e seed surface recovers a unique lowest-action PMNS-assisted branch with eta/eta_obs = 1 and a finite gap to the higher dominant branch.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "6a5aeb3d78bd5265e5060161cc3bf94389337646a1e560a14c76fbad1a98231d",
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-audit-loop:leaf-resweep-2026-04-30, family=codex-gpt-5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "scope_too_broad: provide a retained certified-global reduced-surface branch enumeration/selector theorem, or narrow the claim to the runner diagnostic only.",
+      "open_dependency_paths": [
+        "certified-global reduced-surface stationary-set/selector theorem",
+        "frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -53885,14 +53917,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 5,
         "D": 0,
-        "total_pass": 1
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_multistart_selector_support.py",
       "title": "DM Leptogenesis PMNS Multistart Selector Support",
       "transitive_descendants": 882,
-      "verdict_rationale": "The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class C). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class C; J2: second / audited_conditional / bounded_theorem / class C; J3: second / audited_conditional / bounded_theorem / class C; J4: second / audited_conditional / bounded_theorem / class C; J5: second / audited_conditional / bounded_theorem / class C. The packet verifies a bounded computational diagnostic: the cached runner exits cleanly, performs a multistart constrained stationary-branch computation, and reports five passing checks for branch recovery, closure, and action-gap separation. But the source note repeatedly states that this is support only, not live theorem-grade global selector closure, and the runner itself frames the result as broad multistart support rather than a certified global theorem. Clean closure is therefore too strong; the load-bearing bridge from finite broad scan on the fixed native seed surface to theorem-grade branch-global selector authority remains unratified in this packet."
     },
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16": {
       "audit_date": null,

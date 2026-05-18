@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 362 |
+| **retained_bounded** | 363 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1306 |
-| audit_in_progress | 1 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +48,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 591 |
+| `audited_clean` | 592 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
@@ -121,7 +119,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `poisson_exhaustive_uniqueness_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -504,6 +501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8022,6 +8020,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within the scoped uniform-scalar lane, the note reduces the deformation to sector-scalar triplet blocks and scalar resolvent profiles. The cached runner constructs the uniform scalar Hamiltonian, verifies the scalar/degenerate response chain, and confirms the live retained lower-level PMNS closure rejects the resulting scalar packs.
 - **rationale:** The claim is a bounded no-go, not a positive PMNS construction: it only closes the uniform translation-invariant scalar deformation route. The load-bearing algebra shows that a uniform scalar condensate cannot split or mix the hw=1 generation triplets, and the induced active/passive response profiles remain scalar. The runner does not merely print constants; it constructs the finite Hamiltonian, computes the response profiles, and invokes the live retained closure stack, which rejects the scalar lane with PASS=22 FAIL=0. Residual risk is confined to the already-scoped reliance on the retained PMNS closure criterion itself, not to this uniform-scalar boundary argument.
 - **auditor confidence:** high
+
+### `poisson_exhaustive_uniqueness_note`
+
+- **Note:** [`POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md`](../../docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite N = 16 Dirichlet-grid candidate-enumeration diagnostic over the runner's enumerated operator tests, not a continuum Poisson uniqueness theorem or exhaustive theorem over all local symmetric operators.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-131316-974c65f4-poisson_exhaustive_uniqu-001`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the N = 16 Dirichlet grid, the runner instantiates the enumerated finite candidate tests and computes the reported selection pattern: monotone sampled fractional beta values with a unique sampled |beta-1| minimum, attractive convergence for the anisotropic and higher-order Laplacian cases, and nonconvergence for the non-local variants.  _(class `C`)_
+- **chain closes:** True — Within the narrowed finite-grid scope, the provided runner source builds the relevant discrete operators and runs the self-consistent iteration rather than importing the contested result. The missing continuum and exhaustiveness bridge theorems are explicitly excluded from the audited claim.
+- **rationale:** The bounded claim is supported by first-principles finite-grid computation from the runner: matrix construction, fractional spectral solves, fixed-point iteration, and fitted beta/readout checks. All cited authorities are retained-grade under the rubric, and the note no longer relies on their broader open uniqueness language. The runner stdout still contains stale overbroad wording about continuous-family/alpha=1 uniqueness, and the 21-count appears to include repeated Poisson-baseline tests, but the source note fences those as out of scope and the finite diagnostic itself closes.
+- **auditor confidence:** medium
 
 ### `poisson_self_field_note`
 

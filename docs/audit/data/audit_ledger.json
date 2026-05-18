@@ -179858,22 +179858,49 @@
       "verdict_rationale": null
     },
     "poisson_exhaustive_uniqueness_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "audit_date": "2026-05-18T13:14:39.156012+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row.",
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gate_b_poisson_self_gravity_note": "no_go",
+          "poisson_self_gravity_loop_note": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go",
+          "poisson_self_gravity_loop_note": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note",
+          "poisson_self_gravity_loop_note",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 14.798,
+        "runner_hash": "a06aed82e8125abea72bb0d16c20d3c2f87dd53fb346485ba20389c905cc21d1",
+        "transitive_descendants": 889
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-131316-974c65f4-poisson_exhaustive_uniqu-001",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed finite-grid scope, the provided runner source builds the relevant discrete operators and runs the self-consistent iteration rather than importing the contested result. The missing continuum and exhaustiveness bridge theorems are explicitly excluded from the audited claim.",
       "claim_id": "poisson_exhaustive_uniqueness_note",
-      "claim_scope": "Finite N = 16 candidate-enumeration diagnostic over the runner's 21 evaluated operator instantiations/rows, with no continuum-limit, continuous-alpha, or all-local-operator uniqueness audited.",
+      "claim_scope": "Finite N = 16 Dirichlet-grid candidate-enumeration diagnostic over the runner's enumerated operator tests, not a continuum Poisson uniqueness theorem or exhaustive theorem over all local symmetric operators.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (finite-grid candidate-enumeration diagnostic)",
-      "claim_type_last_reviewed": "2026-05-18T13:11:21.333105+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-18T13:14:39.156012+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -179888,8 +179915,19 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-18T13:14:39.156012+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-131316-974c65f4-poisson_exhaustive_uniqu-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite N = 16 Dirichlet-grid candidate-enumeration diagnostic over the runner's enumerated operator tests, not a continuum Poisson uniqueness theorem or exhaustive theorem over all local symmetric operators.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -179898,19 +179936,19 @@
         "self_consistency_forces_poisson_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 14.798,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the N = 16 Dirichlet grid, the runner instantiates the enumerated finite candidate tests and computes the reported selection pattern: monotone sampled fractional beta values with a unique sampled |beta-1| minimum, attractive convergence for the anisotropic and higher-order Laplacian cases, and nonconvergence for the non-local variants.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "45861d1be513673c9fb91fdee1c31eaaae03003bd0085a27287d1e37ecc55ddf",
       "note_path": "docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Recheck that the ledger description says 21 runner tests rather than 21 distinct operators, and clean the runner SAFE CLAIMS text so it cannot be mistaken for a continuum alpha=1 uniqueness claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -180049,14 +180087,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 5,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_poisson_exhaustive_uniqueness.py",
       "title": "Poisson Exhaustive Uniqueness",
       "transitive_descendants": 889,
-      "verdict_rationale": null
+      "verdict_rationale": "The bounded claim is supported by first-principles finite-grid computation from the runner: matrix construction, fractional spectral solves, fixed-point iteration, and fitted beta/readout checks. All cited authorities are retained-grade under the rubric, and the note no longer relies on their broader open uniqueness language. The runner stdout still contains stale overbroad wording about continuous-family/alpha=1 uniqueness, and the 21-count appears to include repeated Poisson-baseline tests, but the source note fences those as out of scope and the finite diagnostic itself closes."
     },
     "poisson_self_field_note": {
       "audit_date": "2026-05-10T18:15:36.541055+00:00",

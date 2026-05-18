@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1329 |
-| audit_in_progress | 4 |
+| unaudited | 1328 |
+| audit_in_progress | 5 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,14 +49,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 7 |
+| `audit_in_progress` | 8 |
 | `audited_clean` | 580 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1542 |
+| `unaudited` | 1541 |
 
 | claim_type | count |
 |---|---:|
@@ -124,6 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |

@@ -1,7 +1,33 @@
 # Exact One-Parameter Reduced Sewing-Shell Law
 
-**Date:** 2026-04-13  
-**Script:** `scripts/frontier_one_parameter_reduced_shell_law.py`  
+**Date:** 2026-04-13 (2026-05-18: claim_scope formalized as conditional
+bounded witness on the imported reduced-shell surface per audit
+verdict boundary instruction)
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 tightening):** the load-bearing content
+of this note is **a conditional bounded witness on the imported
+reduced-shell surface** — given the five imported helper modules
+(star_shell_projector, same_source_metric_ansatz_scan,
+coarse_grained_exterior_law, sewing_shell_source,
+radial_shell_matching_law; all wrapped via
+ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md
+in PR #1520), the seven star-support point-Green columns reproduce
+the exact reduced one-parameter law
+`sigma_red(Q) = Q · (k_rad + c_aniso · m_orb)` with
+`c_aniso = 0.081435402995901`, and the two exact source families
+(local O_h, finite-rank) match this law to machine precision. This
+is **NOT retained gravity closure**: the umbrella helper wrapper
+remains bounded; full nonlinear shell-stress / junction
+interpretation and the lift from reduced orbit/shell-mean data to
+the full 4D spacetime theorem are explicitly out of scope and remain
+the named open work. The audit verdict's repair sub-target ("wire
+retained-grade authority notes for the five imported helper modules,
+OR inline their operator/source constructions so the bounded
+one-parameter law is self-contained from the axiom alone") is
+partially answered by the umbrella wrapper from PR #1520, but the
+wrapper itself is bounded, not retained.
+**Status authority:** independent audit lane only.
+**Script:** `scripts/frontier_one_parameter_reduced_shell_law.py`
 **Status:** Exact reduced-shell theorem plus bounded shell-stress interpretation
 
 ## Purpose

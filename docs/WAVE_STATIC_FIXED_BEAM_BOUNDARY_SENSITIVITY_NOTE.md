@@ -86,3 +86,9 @@ and medium `H`.
 ## Artifact chain
 
 - [`scripts/wave_static_fixed_beam_boundary_sensitivity.py`](../scripts/wave_static_fixed_beam_boundary_sensitivity.py)
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [wave_retardation_continuum_limit_note](WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md)

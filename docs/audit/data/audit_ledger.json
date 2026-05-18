@@ -194586,24 +194586,45 @@
       "verdict_rationale": null
     },
     "rconn_derived_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T12:03:39.362376+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Exact SU(N_c) Fierz/channel-count derivation of the adjoint q-qbar fraction (N_c^2 - 1)/N_c^2, with N_c=3 giving 8/9, excluding the EW vacuum-polarization matching rule.",
+          "yukawa_color_projection_theorem": "Only the exact SU(N_c) Fierz/Hilbert-space channel-counting identity giving the adjoint dimension fraction (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; no physical Higgs-Z, Yukawa, EW matching, or connected-dynamics matching claim was ratified."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "bounded_theorem",
+          "yukawa_color_projection_theorem": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained_bounded",
+          "yukawa_color_projection_theorem": "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "yukawa_color_projection_theorem"
+        ],
+        "load_bearing_score": 17.411,
+        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+        "transitive_descendants": 962
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-rconn_derived_note-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact representation-dimension fraction closes via the retained Fierz authority, but the promotion from that fraction to the lattice connected-trace observable does not close. The missing step is the matching rule (M) showing that the connected color trace mechanically projects onto the adjoint Fierz channel.",
       "claim_id": "rconn_derived_note",
-      "claim_scope": null,
+      "claim_scope": "The exact imported SU(N_c) adjoint-channel dimension fraction 8/9 at N_c=3 and a conditional MC consistency check for R_conn, conditional on the open matching rule (M).",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-18T12:03:39.362376+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -194612,20 +194633,22 @@
         "yukawa_color_projection_theorem"
       ],
       "direct_in_degree": 15,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 17.411,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Assuming matching rule (M) of the cited Fierz authority, the lattice connected color trace projects onto the adjoint channel, so R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4).",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7c3e56a464413fff91060a00da7386135f63c87d145d2be68bd039518fbb232a",
       "note_path": "docs/RCONN_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive matching rule (M), namely that the framework lattice connected color trace projects onto the adjoint Fierz channel rather than the total trace.",
+      "open_dependency_paths": [
+        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -194892,16 +194915,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 1,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate",
       "transitive_descendants": 962,
-      "verdict_rationale": null
+      "verdict_rationale": "The note is now explicit that the exact 8/9 value is imported as a representation-theoretic channel-count fraction and that the dynamical bridge to R_conn is assumed, not derived. The cited Fierz authority is retained_bounded for the algebraic fraction but itself names matching rule (M) as a structural input left open. The MC runner computes a Fierz-style connected fraction and compares it to a hard-coded 8/9 target, so it is a consistency check rather than an independent closure of the matching bridge."
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T21:41:21.838713+00:00",

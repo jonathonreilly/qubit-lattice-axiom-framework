@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1340 |
+| unaudited | 1339 |
 | audit_in_progress | 1 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 79 |
+| ~~audited_conditional~~ | 80 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 578 |
-| `audited_conditional` | 79 |
+| `audited_conditional` | 80 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1553 |
+| `unaudited` | 1552 |
 
 | claim_type | count |
 |---|---:|
@@ -764,6 +764,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `rconn_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7861,6 +7862,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** eta_bar / rho_bar = (mu eta) / (mu rho) = eta / rho, since mu > 0 cancels; the origin angle and doubled-angle identities then depend only on this preserved slope, and the (1,0)-based finite tangent difference factors as eta*(mu - 1)/((1 - mu*rho)*(1 - rho)).  _(class `A`)_
 - **chain closes:** True — The scoped claim is pure algebra and elementary plane geometry over abstract positive real symbols with no cited dependencies. The note explicitly guards the finite-tangent exclusions needed for T4, so the factorization proves the iff condition on its stated domain.
 - **rationale:** The load-bearing step is a direct algebraic cancellation under positive radial scaling, with standard arctan and double-angle consequences, and the runner independently verifies the symbolic slope, origin-angle, doubled-angle, radius, and finite-tangent factorization checks. Residual risk is limited to scope control: this clean verdict covers only the abstract Euclidean radial-scaling theorem and does not ratify any CKM-specific assignment, physical observable bridge, or upstream parent framing.
+- **auditor confidence:** high
+
+### `rconn_derived_note`
+
+- **Note:** [`RCONN_DERIVED_NOTE.md`](../../docs/RCONN_DERIVED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact imported SU(N_c) adjoint-channel dimension fraction 8/9 at N_c=3 and a conditional MC consistency check for R_conn, conditional on the open matching rule (M).
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-rconn_derived_note-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assuming matching rule (M) of the cited Fierz authority, the lattice connected color trace projects onto the adjoint channel, so R_conn = (N_c^2 - 1)/N_c^2 + O(1/N_c^4).  _(class `F`)_
+- **chain closes:** False — The exact representation-dimension fraction closes via the retained Fierz authority, but the promotion from that fraction to the lattice connected-trace observable does not close. The missing step is the matching rule (M) showing that the connected color trace mechanically projects onto the adjoint Fierz channel.
+- **rationale:** The note is now explicit that the exact 8/9 value is imported as a representation-theoretic channel-count fraction and that the dynamical bridge to R_conn is assumed, not derived. The cited Fierz authority is retained_bounded for the algebraic fraction but itself names matching rule (M) as a structural input left open. The MC runner computes a Fierz-style connected fraction and compares it to a hard-coded 8/9 target, so it is a consistency check rather than an independent closure of the matching bridge.
+- **open / conditional deps cited:**
+  - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
 - **auditor confidence:** high
 
 ### `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17`

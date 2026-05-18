@@ -39,11 +39,13 @@ framework wrapper note:
 
 - [DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md) — supplies the `Ne` projected-source-law inputs used to construct `TARGET` and `sparse_face_projected_data`.
 
-Remaining missing-dep-edge admissions (no framework wrapper exists):
-- `frontier_dm_leptogenesis_dweh_even_split_transfer_layer` (transfer-layer helper)
-- `frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem` (sparse-face preimage theorem source)
-- `frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19` (line-selection helper supplying `selected_line` + `compressed_local_block_from_line`)
-- `frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20` (line-rho1 selector supplying `hermitian_linear_responses` + `solve_sparse_target_preimage`)
+Additional wrappers (now linked):
+- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) — line-selection helper supplying `selected_line` + `compressed_local_block_from_line` + `BOUNDARY_FIRST_WEIGHTS`.
+- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md) — `rho1`-anchored least-distortion selector theorem.
+- [DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md](DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md) — `dW_e^H` even-split transfer-layer theorem supplying `TARGET` + `(S12, S13)` even-column split.
+- [DM_LEPTOGENESIS_K00_SPARSE_FACE_TARGET_PREIMAGE_THEOREM_NOTE_2026-04-15.md](DM_LEPTOGENESIS_K00_SPARSE_FACE_TARGET_PREIMAGE_THEOREM_NOTE_2026-04-15.md) — `K00`-sparse-face target-preimage theorem supplying the sparse-face preimage construction.
+
+All four upstream missing-dep-edge admissions from the original audit verdict are now closed via wrapper notes.
 
 Each of these would need a dedicated source-note wrapper before the
 remaining `selected_line`, `compressed_local_block_from_line`,

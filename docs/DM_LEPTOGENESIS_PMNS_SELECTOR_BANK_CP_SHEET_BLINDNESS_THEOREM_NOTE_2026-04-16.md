@@ -133,7 +133,7 @@ blindness theorem:
 - [DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md) — transport-extremal source candidate (`cand` module).
 - [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — breaking-triplet source law (`triplet_channels_from_active_data` from `breaking_triplet_source_law` module).
 
-Not yet wrapped: the `mininfo_source_law` runner module (`frontier_dm_leptogenesis_pmns_mininfo_source_law.py`) has no companion `*_NOTE.md` in the repo; this is a remaining missing-dep-edge admission.
+Now wrapped: [DM_LEPTOGENESIS_PMNS_MININFO_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MININFO_SOURCE_LAW_NOTE_2026-04-16.md) — minimum-information selector law (`minlaw` module).
 
 ## Command
 

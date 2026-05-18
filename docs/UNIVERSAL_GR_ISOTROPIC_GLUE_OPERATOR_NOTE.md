@@ -43,13 +43,15 @@ from the support-tier discrete-Einstein/Regge lift chain; see
 
 (BA-2) **Route-2 slice generator.** The exact slice generator
 `Lambda_R` (symmetric and positive on the invariant block) is admitted.
-Taken from the Route-2 slice-generator construction. (The construction's
-canonical wrapper note is not yet present in the repo; the consumer-side
-notes that use `Lambda_R` — `UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md`
-and `UNIVERSAL_GR_INVARIANT_NONLINEAR_COMPLETION_NOTE.md` — both
-DEPEND on this glue note, so they cannot serve as one-hop upstream
-without creating a citation cycle. Closing this admission cleanly
-requires a dedicated upstream construction note.)
+Taken from the Route-2 slice-generator construction; see
+[QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+which carries the exact `Lambda_R` slice-generator construction on the
+Route-2 backbone. (The downstream consumer-side notes that also use
+`Lambda_R` — `UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md`
+and `UNIVERSAL_GR_INVARIANT_NONLINEAR_COMPLETION_NOTE.md` — both DEPEND
+on this glue note, so they cannot serve as one-hop upstream without
+creating a citation cycle; the QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE is
+upstream-independent and forms the clean dependency edge.)
 
 (BA-3) **Canonical `3+1` block projectors.** The lapse / shift / trace /
 shear block projectors `(P_lapse, P_shift, P_trace, P_shear)` are

@@ -6245,6 +6245,10 @@
       "to": "dm_leptogenesis_pmns_microscopic_d_last_mile_note_2026-04-16"
     },
     {
+      "from": "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15",
+      "to": "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15"
+    },
+    {
       "from": "dm_leptogenesis_ne_active_column_axiom_boundary_note_2026-04-16",
       "to": "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16"
     },
@@ -6465,6 +6469,14 @@
       "to": "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15"
     },
     {
+      "from": "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16"
     },
@@ -6475,6 +6487,10 @@
     {
       "from": "dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16"
     },
     {
       "from": "dm_leptogenesis_pmns_oriented_phase_sheet_selector_theorem_note_2026-04-16",
@@ -6545,6 +6561,10 @@
       "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
     },
     {
+      "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16"
     },
@@ -6555,6 +6575,10 @@
     {
       "from": "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16"
     },
     {
       "from": "dm_leptogenesis_projection_theorem_note_2026-04-15",
@@ -9805,8 +9829,28 @@
       "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20"
     },
     {
+      "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20",
+      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
+    },
+    {
       "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
       "to": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
+      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
+      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
+      "to": "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19"
+    },
+    {
+      "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
+      "to": "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15"
     },
     {
       "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
@@ -24495,6 +24539,10 @@
     {
       "from": "universal_gr_isotropic_glue_operator_note",
       "to": "discrete_einstein_regge_lift_note"
+    },
+    {
+      "from": "universal_gr_isotropic_glue_operator_note",
+      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
     },
     {
       "from": "universal_gr_isotropic_glue_operator_note",
@@ -46098,6 +46146,18 @@
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py",
       "title": "DM Full Closure Same-Surface Thermal Series/Tail Support"
     },
+    "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19": {
+      "claim_id": "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "c57cc50e24e1649ceb298ea56ffbe64d4080b41f4f276be0567955fb9f6737f5",
+      "path": "docs/DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md",
+      "runner_path": "scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py",
+      "title": "DM Leptogenesis `dW_e^H` Even-Split Transfer-Layer Theorem"
+    },
     "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
       "claim_type_author_hint": null,
@@ -46200,6 +46260,20 @@
       "path": "docs/DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_hrad_theorem.py",
       "title": "DM Leptogenesis Exact `H_rad(T)` Theorem"
+    },
+    "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15": {
+      "claim_id": "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "7a9657d97e9702fe016938fa33582610a8e4a8bc227619db6891f0c1dbcbcafb",
+      "path": "docs/DM_LEPTOGENESIS_K00_SPARSE_FACE_TARGET_PREIMAGE_THEOREM_NOTE_2026-04-15.md",
+      "runner_path": "scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py",
+      "title": "DM Leptogenesis `K00`-Sparse-Face Target-Preimage Theorem"
     },
     "dm_leptogenesis_ne_active_column_axiom_boundary_hostile_audit_findings_note_2026-05-17": {
       "claim_id": "dm_leptogenesis_ne_active_column_axiom_boundary_hostile_audit_findings_note_2026-05-17",
@@ -46498,6 +46572,21 @@
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
       "title": "DM Leptogenesis PMNS Minimum-Information Source Law"
     },
+    "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16": {
+      "claim_id": "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "420d4e11c739b9c2b2b31423ffb0a51614d75a6fd04ac0b9f354123951298164",
+      "path": "docs/DM_LEPTOGENESIS_PMNS_MININFO_SOURCE_LAW_NOTE_2026-04-16.md",
+      "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
+      "title": "DM Leptogenesis PMNS Minimum-Information Source Law"
+    },
     "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
       "claim_type_author_hint": null,
@@ -46543,10 +46632,11 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
-        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ee67b054b3cac1a868123deef63fc3b7a9b04a4c596edcd381abd7996d395892",
+      "note_hash": "16907bb8d68c672b648ff38c31dc8c8861a278ad3f20c05c12d6d0d1f8d0ca1d",
       "path": "docs/DM_LEPTOGENESIS_PMNS_OFF_SEED_TRIPLET_SIGN_BOUNDARY_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_off_seed_triplet_sign_boundary.py",
       "title": "DM Leptogenesis PMNS Off-Seed Triplet Sign Boundary"
@@ -46636,10 +46726,11 @@
       "deps": [
         "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16",
         "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
-        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ed135e9a62506dd334262c7e705d48466bbbcafbaa54bdf1dc7e4c3c71d61e88",
+      "note_hash": "a6df44e5fd46292a0ad804d19cba43776ce5301f0cb1c1705df8c173f5ab42ae",
       "path": "docs/DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py",
       "title": "DM Leptogenesis PMNS Selector-Bank CP-Sheet Blindness Theorem"
@@ -46664,10 +46755,11 @@
       "deps": [
         "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
         "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_mininfo_source_law_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "43bf4a06d2cf2ff0b5602510f4d374b1de0fad221db7c277f66456aea792ae93",
+      "note_hash": "938b23faeaccc05c1f7404dcb5b3b637cf9b1fce0fc867f6dcf3f00c2fec7f49",
       "path": "docs/DM_LEPTOGENESIS_PMNS_STATIONARY_CP_INCOMPATIBILITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py",
       "title": "DM Leptogenesis PMNS Stationary CP Incompatibility Theorem"
@@ -51770,14 +51862,28 @@
       "runner_path": "scripts/gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03.py",
       "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Exact-Solve Doublet Theorem"
     },
+    "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19": {
+      "claim_id": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "9813380dd0dee30de052a4b1326f923eaf92a0d1976d6f86e7b48935d9425e26",
+      "path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md",
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py",
+      "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3+1` Line Helper"
+    },
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20": {
       "claim_id": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "3fd4ae442e5ddc59edcfddab125b8fdf3fe52e8944f7a87c027e6f8a86247fa2",
+      "note_hash": "0d0fec0cc38b8f09a713ae9f1655b8c0adb14676c7629fe9979fd9c6ee618285",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20.py",
       "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` `rho1` Least-Distortion Selector Theorem"
@@ -51800,10 +51906,14 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+        "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20",
+        "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19",
+        "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c44dcec3102e3f1129297b346e968774f833b916118efbe4834eca4639e92662",
+      "note_hash": "168734150941ebc4adb5836591c87f48a288db7dfc0364116bdb6270d7649694",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py",
       "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Reduced-Packet Complex-Givens Selector Theorem"
@@ -74491,11 +74601,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "discrete_einstein_regge_lift_note",
+        "quark_route2_exact_time_coupling_note_2026-04-19",
         "universal_gr_canonical_projector_connection_note",
         "universal_gr_isotropic_schur_localization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c5ab80ab8e20ff9d53afaef6e1a1b75a0ed12bc725c1b645d74074e76f2d6c28",
+      "note_hash": "9b1889b98aa86e34d66bab541e5356cbeaa4140d381b38d01f6179ab9acd3a6f",
       "path": "docs/UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md",
       "runner_path": null,
       "title": "Universal GR Isotropic Glue Operator on `PL S^3 x R`"
@@ -78770,6 +78881,7 @@
     "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
     "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16",
     "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
+    "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19",
     "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
     "dm_leptogenesis_exact_kernel_closure_note_2026-04-15_hostile_audit_findings_note_2026-05-17",
     "dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16",
@@ -78879,7 +78991,7 @@
     "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_note_2026-04-20_hostile_audit_findings_note_2026-05-17",
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20",
-    "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20",
+    "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_note_2026-04-20",
     "gauge_vacuum_plaquette_framework_point_underdetermination_note",
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
@@ -79381,7 +79493,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 447,
+      "bounded_theorem": 451,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
@@ -79390,7 +79502,7 @@
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 894,
+      "bounded_theorem": 898,
       "decoration": 1,
       "meta": 173,
       "no_go": 161,
@@ -79398,10 +79510,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9435,
+    "edge_count": 9447,
     "leaf_count": 747,
-    "node_count": 2424,
-    "root_count": 843,
-    "runners_with_path": 2017
+    "node_count": 2428,
+    "root_count": 844,
+    "runners_with_path": 2021
   }
 }

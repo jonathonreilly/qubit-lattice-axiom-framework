@@ -171723,24 +171723,41 @@
       "verdict_rationale": null
     },
     "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T12:08:04.750711+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 12.804,
+        "runner_hash": "0c8217ebdce80e05d82697c257af4ac11609415421b2f489d061cec908bdd0ef",
+        "transitive_descendants": 893
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-plaquette_v1_picard_fuch-008",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite checked-window certificate closes on its own terms, but the minimal-annihilator interpretation does not. It still requires an all-order bridge applying the cited Bernstein/Aomoto-Gelfand rank and WZ/SST creative-telescoping machinery to this exact integral and candidate.",
       "claim_id": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-      "claim_scope": null,
+      "claim_scope": "Depth-40 exact-arithmetic V=1 SU(3) Bessel-determinant Taylor/rank certificate for the candidate order-3 operator, with lower-order exclusion only for r=1,d\u226412 and r=2,d\u226411, uniqueness at r=3,d=2, and higher-degree consistency through d=6.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-18T12:08:04.750711+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -171748,20 +171765,22 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 12.804,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The runner's exact rational Taylor/rank matrices show that L\u00b7J vanishes through \u03b2^36, no checked lower-order ansatz has a kernel, and the (r=3,d=2) kernel is one-dimensional and proportional to L.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "769e210cc9d5f216940a2352384c49112025330d617e4581a7cbdd9b5dc3dc62",
       "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained all-order bridge showing that the finite Bars-series/rank certificates plus the Bernstein/Aomoto-Gelfand and WZ/SST imports identify L as the exact minimal annihilator, or narrow the row to only the finite checked-window certificate.",
+      "open_dependency_paths": [
+        "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-18T11:37:01.068871+00:00",
@@ -171816,16 +171835,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Minimality Certificate Note",
       "transitive_descendants": 893,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source genuinely constructs the Bessel-determinant Taylor series and computes exact residuals, ranks, and nullspaces; it is not merely printing expected constants. The note correctly narrows the lower-order exclusion to omit the skipped r=2,d=12 boundary, despite the runner's overbroad summary line. The all-order minimality claim remains conditional because the packet imports external holonomic-rank and creative-telescoping applicability, while the provided upstream ODE note is retained only as a finite-runner certificate and explicitly leaves the all-order Picard-Fuchs identification out of scope."
     },
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05": {
       "audit_date": "2026-05-17T12:37:35.137551+00:00",

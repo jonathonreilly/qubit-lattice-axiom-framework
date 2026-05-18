@@ -1,6 +1,27 @@
 # Minimal Source-Driven Field Probe
 
-**Date:** 2026-04-05  
+**Date:** 2026-04-05 (2026-05-18: scope-narrowed to a pure declared-run
+computation per audit verdict boundary instruction)
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **the declared-run computation only** — the frozen
+result table at the declared lattice parameters
+(`h = 0.5`, `W = 6`, `L = 30`, source at `z = 3`, source strengths
+`s ∈ {0.001, 0.002, 0.004, 0.008}`), the exact zero-source reduction
+check, the preserved TOWARD sign of attraction on this replay, and
+the fitted exponents `F~M ≈ 0.99` (instantaneous) / `F~M ≈ 0.64`
+(source-driven) on this declared probe. The note **does NOT** claim a
+framework derivation of the telegraph evolution rule, the
+`c_field` / damping calibration values, or the target-field
+calibration ladder; these are recorded as **declared-run inputs**
+rather than retained framework derivations. The audit verdict's
+substantive repair sub-target ("derive the telegraph rule,
+`c_field/damp` values, and target-field calibration ladder from
+retained framework inputs") remains a separate open item not in the
+load-bearing scope of this note.
+**Status authority:** independent audit lane only. The
+`bounded_theorem` label is a source-side claim-boundary declaration,
+not an audit verdict.
 **Status:** bounded local-field-dynamics probe with exact reduction, preserved sign, and failed linear mass scaling at stronger calibration
 
 ## Artifact chain

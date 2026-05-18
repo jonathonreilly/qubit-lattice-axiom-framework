@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1259 |
+| unaudited | 1264 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 146 |
+| ~~audited_conditional~~ | 142 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 581 |
-| `audited_conditional` | 146 |
+| `audited_conditional` | 142 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1472 |
+| `unaudited` | 1477 |
 
 | claim_type | count |
 |---|---:|
@@ -64,17 +64,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `meta` | 217 |
 | `no_go` | 234 |
 | `open_gate` | 111 |
-| `positive_theorem` | 749 |
+| `positive_theorem` | 750 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 1060 |
+| `critical` | 1061 |
 | `high` | 69 |
 | `medium` | 280 |
 | `leaf` | 904 |
 
 - **Retained pending chain closure:** 4
-- **Citation cycles detected:** 158
+- **Citation cycles detected:** 159
 
 ### Runner classification (static heuristic)
 
@@ -709,7 +709,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `b_independence_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -758,7 +757,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_pns_attack_cascade_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `dm_sigma_hier_h_intrinsic_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `electrostatics_grown_sign_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `family_companion_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -803,7 +801,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `matter_radiation_equality_structural_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_grown_combined_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -843,7 +840,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `universal_gr_tensor_action_blocker_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `wave_retarded_gravity_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -1457,21 +1453,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-05-03.md`
   - `MINIMAL_AXIOMS_2026-04-11.md`
-- **auditor confidence:** high
-
-### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded lattice-IR-integral exhibit and conditional dimensional-minimality argument for the Coleman-Mermin-Wagner analogue on the Cl(3) x Z^d substrate.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The Bogoliubov/Mermin-Wagner IR bound makes continuous SSB impossible for d <= 2, the lattice IR integral is finite for d >= 3, and combining this with Axiom Reduction D9 makes d = 3 the minimal integer satisfying both long-range-force and continuous-SSB requirements.  _(class `B`)_
-- **chain closes:** False — The runner verifies the finite lattice IR-sum scaling with PASS=4/FAIL=0. The theorem chain does not close because the Bogoliubov/Mermin-Wagner implication and the D9 long-range-force/kernel condition are imported from external/meta context rather than retained theorem-grade one-hop authorities.
-- **rationale:** Issue: the note uses the standard Bogoliubov/Mermin-Wagner theorem argument and Axiom Reduction D9 to conclude d = 3 minimality, while the registered dependency is a meta inventory and the runner only exhibits IR-sum scaling. Why this blocks: retained clean status would require retained theorem-grade authority for the no-SSB implication and for the long-range-force/kernel condition, not just a numerical lattice-sum exhibit and a meta inventory citation. Repair target: add retained source notes proving the lattice Mermin-Wagner bound in this framework and the D9 kernel/long-range-force condition, then re-audit the dimensional-minimality chain. Claim boundary until fixed: the row supports a bounded conditional IR-scaling exhibit consistent with the CMW dimensional threshold, not a retained axiom-first derivation of d = 3.
-- **open / conditional deps cited:**
-  - `AXIOM_REDUCTION_NOTE.md`
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
@@ -3800,19 +3781,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** By linearity of action accumulation, S(Hg+Hem) = k(1-f) + qV and S(Hg) + S(Hem) - S(H0) = k(1-f) + qV, so R_GE = 0 exactly.  _(class `A`)_
 - **chain closes:** True — The four-cell action definitions are supplied in the note, and accumulated phase plus finite-difference deflection are linear operations, so the mixed residual cancels identically. No broader Hamiltonian, gauge, magnetic-sector, or backreaction coexistence claim is needed for this bounded scope.
 - **rationale:** The load-bearing claim is an algebraic closure inside the defined ray-sum model, and the runner computes the four cells before checking the mixed residual and charge-sign cancellations rather than importing an external target. The clean result is bounded to additive kinematic action accumulation only; the source note explicitly excludes dynamical wave-packet, gauge-invariant, magnetic-sector, and nonlinear/backreaction coexistence.
-- **auditor confidence:** high
-
-### `emergent_geometry_growth_note_2026-04-10`
-
-- **Note:** [`EMERGENT_GEOMETRY_GROWTH_NOTE_2026-04-10.md`](../../docs/EMERGENT_GEOMETRY_GROWTH_NOTE_2026-04-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded numerical graph-growth claim that matter-biased k=4 growth changes coarse shell-volume and density geometry relative to a matter-blind control, including claimed multi-seed G-sweep robustness.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e12f0-dd6c-7b32-9bb3-f7121d07289b`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The qualitative finding survives: the matter-coupled grown graph has a higher effective dimension and a denser peak shell than the uniform control, with hardened k=4 multi-seed G-sweep support claimed for robustness.  _(class `C`)_
-- **chain closes:** False — The supplied primary runner closes only a single-seed qualitative comparison and has no PASS-classified checks. The note's broader robustness and alternative-control claims rely on companion runners/caches that are named but not supplied in the restricted packet.
-- **rationale:** Issue: the note's retained-strength statements depend on unsupplied companion G-sweep, multi-seed, and alternative-control runner artifacts, while the supplied runner only shows one seed against a uniform-in-box control. Why this blocks: a hostile reviewer cannot verify seed robustness, the k=4 retained operating point, or that the geometry difference is isolated from control-design differences. Repair target: provide and audit the companion runner sources/stdout or split this into a narrow single-seed runner claim. Claim boundary until fixed: the supplied runner supports only that this seed and control produce a higher fitted d_eff and peak radial density for the matter-coupled case.
 - **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`
@@ -7408,21 +7376,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Every scanned `topN` value stayed stable.  _(class `C`)_
 - **chain closes:** True — The note confines the claim to a fixed finite support sweep with explicit stability thresholds. The runner recomputes the lattice rows, two-stage sourced-response ratios, support carry, and stable set, and live/cached output match the reported max_rel_err=0.0066069 and min_carry=1.
 - **rationale:** The scoped bounded claim closes as a finite-compute result: the runner constructs the stated 2D harness and derives the reported sweep values rather than importing a target threshold or external comparator. The clean verdict is limited to the implemented parameter set, support list, and stability rule. Residual risk is implementation-model dependence on the helper lattice generator and chosen thresholds, not a closure gap for the finite no-collapse claim.
-- **auditor confidence:** high
-
-### `minimal_source_driven_field_probe_note`
-
-- **Note:** [`MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md`](../../docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the provided self-contained runner and cached stdout for the declared 3D lattice, source strengths, damped telegraph-style field rule, and fixed target-field calibration.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260512-000558-b0c4bc75-minimal_source_driven_fi-004`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** At fixed stronger calibration target max |f_dyn| = 0.08, the source-driven runner keeps all four rows TOWARD and gives a dynamic F~M exponent of 0.64, while zero-source returns exactly to free propagation.  _(class `C`)_
-- **chain closes:** False — The runner genuinely computes the stated bounded outputs and does not merely print constants. The broader chain does not close because the local field rule, damping/speed parameters, and calibration target are selected modeling inputs rather than derived in the restricted packet.
-- **rationale:** The source code builds the lattice, evolves the source-driven field, propagates amplitudes, computes centroid shifts, and fits the mass exponent inline, so the frozen table is substantive runner evidence. The zero-source reduction and TOWARD/sign checks are supported for the declared run. However, the claim depends on runner-selected field dynamics and calibration hierarchy, and the cited companion explicitly says deriving those choices from retained framework dynamics remains future theorem work.
-- **open / conditional deps cited:**
-  - `SOURCE_DRIVEN_FIELD_RECOVERY_SWEEP_NOTE.md`
 - **auditor confidence:** high
 
 ### `mirror_2d_gravity_law_note`
@@ -11845,21 +11798,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Both sweeps give numerically meaningful slopes, but neither is a true scaling exponent: the first is dominated by trajectory-range effects, the second is non-monotonic, so lab extrapolation by power law is invalid.  _(class `C`)_
 - **chain closes:** True — The cached runner exits successfully and reports different relative gaps at shared velocities across the range-coupled and trajectory-fixed sweeps, while the trajectory-fixed relative gaps run 151.45%, 9.40%, 7.10%, 3.81%, 10.25%, 21.14%, and 66.59%. Those completed outputs directly support the scoped no-go against a clean one-parameter v/c scaling card.
 - **rationale:** The runner source computes two sweeps using the wave-retardation harness rather than hard-coding the claimed non-monotonic pattern. The current cached output matches the note's load-bearing tables to rounding and shows both sweep-geometry dependence and a non-monotonic trajectory-fixed gap. This clean verdict is limited to blocking the naive lab scaling card from these sweeps; it does not rule out a later continuum-limit or redesigned-harness scaling theorem.
-- **auditor confidence:** high
-
-### `wave_retarded_gravity_note`
-
-- **Note:** [`WAVE_RETARDED_GRAVITY_NOTE.md`](../../docs/WAVE_RETARDED_GRAVITY_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** For the specified H=0.5, NL=30, PW=8, S=0.004 moving-source harness and Fam1/Fam2/Fam3 geometries, the runner computes M-I gaps of about 23%-26% against the defined stitched late-time-static-slice comparator; this does not audit the stitched comparator as the exact c=infinity static limit.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260512-000558-b0c4bc75-wave_retarded_gravity_no-011`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The runner computes the beam-deflection gap delta_M - delta_I between a retarded moving-source wave field and a layer-by-layer stitched late-time stationary-slice comparator, finding 22.53%-26.05% relative gaps across Fam1/Fam2/Fam3.  _(class `C`)_
-- **chain closes:** False — The runner source genuinely computes the reported wave evolution, stitched comparator, beam propagation, and M-I numbers rather than printing constants. The chain does not close to an unconditional retarded-vs-instantaneous theorem because the c=infinity identification of the stitched late-time slices is an explicit conditional bridge and the cited continuum note says the exact discrete static comparator remains the bottleneck.
-- **rationale:** The fixed-harness numerical claim is supported by a deterministic runner whose code constructs the moving retarded field, constructs the stitched comparator, propagates the beam, and reproduces the note's table. However, the source note itself flags the c=infinity comparator identification as conditional, and the one-hop continuum authority explicitly reports comparator instability and calls the exact discrete static comparator unresolved. Thus the audited result is only a bounded fixed-H M != I result for the implemented comparator, not a closed physical c=infinity retardation theorem.
-- **open / conditional deps cited:**
-  - `WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md`
 - **auditor confidence:** high
 
 ### `wave_static_boundary_sensitivity_note`

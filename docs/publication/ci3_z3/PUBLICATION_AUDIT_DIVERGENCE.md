@@ -17,8 +17,8 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 456 |
-| critical | `audited_conditional` | 42 |
+| critical | `unaudited` | 457 |
+| critical | `audited_conditional` | 41 |
 | critical | `audited_numerical_match` | 6 |
 | critical | `audited_renaming` | 2 |
 | medium | `unaudited` | 2 |
@@ -497,7 +497,7 @@ publication tables phrase it.
 | critical | `vacuum_critical_stability_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `vector_gauge_field_kk_tower_theorem_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `w_mass_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |
-| critical | `wave_retarded_gravity_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
+| critical | `wave_retarded_gravity_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `work_history.ckm.cabibbo_bound_note` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md |

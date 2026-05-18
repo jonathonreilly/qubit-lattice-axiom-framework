@@ -1,6 +1,25 @@
 # Emergent Geometry from Matter-Coupled Growth
 
-**Date:** 2026-04-10  
+**Date:** 2026-04-10; 2026-05-18 (claim_scope narrowed to the
+single-seed primary-runner comparison per audit verdict boundary
+instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **the single-seed qualitative comparison from the
+primary runner** `scripts/frontier_emergent_geometry.py` between the
+matter-coupled grown graph and the uniform-growth control on this
+seed. The hardened `k=4` multi-seed G-sweep (`8/10 ROBUST_TOWARD`,
+`mean R²` values), the multi-size confirmation, and the alternative-
+control claims are recorded as **support diagnostics from companion
+runners** rather than as load-bearing within this note's scope.
+Promoting any companion-runner row to retained-grade requires
+auditing each companion runner separately. The audit verdict's
+substantive repair sub-target ("supply the companion runner sources
+/ stdout or cached certificates for the k=4 G-sweep, multi-size, and
+alternative-control claims") is therefore answered by **scope
+narrowing rather than companion-runner supply**: the load-bearing
+claim is now the single-seed primary-runner comparison only.
+**Status authority:** independent audit lane only.
 **Status:** bounded - bounded or caveated result note
 **Primary runner:** `scripts/frontier_emergent_geometry.py` — single-seed
 qualitative geometry comparison.

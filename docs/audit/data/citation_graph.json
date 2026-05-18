@@ -1153,6 +1153,10 @@
       "to": "axiom_reduction_note"
     },
     {
+      "from": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+      "to": "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
+    },
+    {
       "from": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
       "to": "minimal_axioms_2026-05-03"
     },
@@ -16733,6 +16737,10 @@
       "to": "matter_inertial_closure_note"
     },
     {
+      "from": "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18",
+      "to": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
+    },
+    {
       "from": "meson_charges_from_quark_y_note_2026-05-02",
       "to": "ewsb_pattern_from_higgs_y_note_2026-05-02"
     },
@@ -25707,6 +25715,10 @@
     {
       "from": "wave_retarded_gravity_note",
       "to": "kubo_continuum_limit_note"
+    },
+    {
+      "from": "wave_retarded_gravity_note",
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
     },
     {
       "from": "wave_static_direct_probe_fine_note",
@@ -40629,10 +40641,11 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_reduction_note"
+        "axiom_reduction_note",
+        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "10c3ee868f22f3b0ce78ebeb3090f1aa48c98bf2a01687a2650e9b1d078e5796",
+      "note_hash": "27445ce902baefb326b0e0a7e55462d85bf3ec246c062c86e7e9bf7fd1e34767",
       "path": "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
       "title": "Axiom-First Coleman\u2013Mermin\u2013Wagner Lattice Analogue on Cl(3) \u2297 Z^d"
@@ -49830,12 +49843,12 @@
     },
     "emergent_geometry_growth_note_2026-04-10": {
       "claim_id": "emergent_geometry_growth_note_2026-04-10",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "8fbe9cc068397323405c8f5055f3dd05bba24d7ad6e08df8b3d90d940d3ee994",
+      "note_hash": "5976a9c17588196d3fa52ab9222aaacaa4f16edda553696812b879df4310eb63",
       "path": "docs/EMERGENT_GEOMETRY_GROWTH_NOTE_2026-04-10.md",
       "runner_path": "scripts/frontier_emergent_geometry.py",
       "title": "Emergent Geometry from Matter-Coupled Growth"
@@ -60005,6 +60018,20 @@
       "runner_path": "scripts/frontier_memory_mu2_size_sweep.py",
       "title": "Memory `mu^2` / Geometry Sweep Note"
     },
+    "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18": {
+      "claim_id": "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8fc0261d48b99a1e37feb4dc4a6583ec08e45a439961b1a1ced02bd959f26abe",
+      "path": "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+      "runner_path": null,
+      "title": "Mermin-Wagner / Hohenberg / Coleman + Bogoliubov Inequality \u2014 Named Non-Derivation Imports"
+    },
     "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
       "claim_type_author_hint": "open_gate",
@@ -60336,14 +60363,14 @@
     },
     "minimal_source_driven_field_probe_note": {
       "claim_id": "minimal_source_driven_field_probe_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "source_driven_field_recovery_sweep_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "17e0a80d3e1f7de90ea465cac48c4aa83a526d4f45e5a95c89b9f25c3b3ccc3d",
+      "note_hash": "c4d9ac0c052074993464e7d7f738ff93261b67e11dc1fb6402fa737c36540fe9",
       "path": "docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md",
       "runner_path": "scripts/minimal_source_driven_field_probe.py",
       "title": "Minimal Source-Driven Field Probe"
@@ -76135,10 +76162,11 @@
         "linear_response_true_kubo_note",
         "wave_retardation_continuum_limit_note",
         "wave_retardation_lab_prediction_note",
-        "kubo_continuum_limit_note"
+        "kubo_continuum_limit_note",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "98d7105ed31f18964af56a5af61006cae554628f812eccc71d0d7eafd21ea059",
+      "note_hash": "441ba90357488aa6b8482fe330734207d86cc3b1667a45944943cb600115ccd5",
       "path": "docs/WAVE_RETARDED_GRAVITY_NOTE.md",
       "runner_path": "scripts/wave_retarded_gravity.py",
       "title": "Wave Retarded Gravity: Retarded \u2260 Instantaneous on the Wave Field"
@@ -79549,16 +79577,16 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 449,
+      "bounded_theorem": 452,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1533,
+      "none": 1531,
       "open_gate": 44,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 896,
+      "bounded_theorem": 897,
       "decoration": 1,
       "meta": 173,
       "no_go": 161,
@@ -79566,9 +79594,9 @@
       "open_gate": 123,
       "positive_theorem": 621
     },
-    "edge_count": 9466,
+    "edge_count": 9469,
     "leaf_count": 745,
-    "node_count": 2425,
+    "node_count": 2426,
     "root_count": 837,
     "runners_with_path": 2017
   }

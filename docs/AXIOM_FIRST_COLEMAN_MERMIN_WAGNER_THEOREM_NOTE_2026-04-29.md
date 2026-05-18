@@ -215,3 +215,4 @@ versus convergence in `d = 3, 4`.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [axiom_reduction_note](AXIOM_REDUCTION_NOTE.md)
+- [MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md](MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) — named non-derivation textbook import wrapper for the Bogoliubov inequality (Step 1 of the proof) and the Mermin-Wagner / Hohenberg / Coleman dimension-restriction theorems pinning the lattice technique inputs as accepted retained-grade mathematical authority.

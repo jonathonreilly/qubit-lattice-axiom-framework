@@ -550,36 +550,18 @@ Avoid vague upgrades like:
 - prefer `observational-pin` as a compound adjective
 - use `observational pin` only as a noun phrase
 
-## Axiom Naming Vocabulary
+## Axiom Naming (out of scope for this doc)
 
-`A_min` is the fixed name of the current minimal axiom set for this
-audit: `Cl(3)` on `Z^3`, finite Grassmann / staggered-Dirac partition,
-and canonical `g_bare = 1` plaquette normalization. Lane closure must
-close from `A_min` by derivation, identification, bounded composition,
-or no-go boundary.
+Axiom names (`A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`) are **physics
+primitives**, not process vocabulary. Per
+[VOCABULARY_HYGIENE_DESIGN.md](VOCABULARY_HYGIENE_DESIGN.md), vocabulary
+is disjoint from physics. The canonical home for these names and the
+policy governing their use is:
 
-### Reserved axiom names
+- [`docs/MINIMAL_AXIOMS_2026-05-03.md`](../MINIMAL_AXIOMS_2026-05-03.md) — the framework primitives themselves (Axiom 1, Axiom 2, definition of A_min)
+- [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
 
-- `Axiom 1`, `Axiom 2`, … — the existing primitives in `A_min`. Write
-  them out; do not abbreviate to `A1`, `A2` on live science surfaces.
-- `Axiom*` — reserved for proposed forced extensions. PR #186 / PR #196
-  established that an `Axiom*` (`Cl_4(C)` on `P_A H_cell`) was declined
-  as a forced extension; the proposed minimality theorem audit-failed at
-  O2. Treat any new `Axiom*` proposal as a science-level decision
-  awaiting human input, not as a closeable derivation.
-
-### Forbidden axiom-related framings
-
-- "if we just accept X as primitive, lane Y closes" — banned framing
-  without recording X as an explicit science-level decision waiting on
-  human input
-- rewording an existing `A_min` axiom to be more permissive or more
-  restrictive to close a lane
-- presenting an irreducible module structure as a new axiom
-
-The associated workflow rules (when to land bounded no-go boundary notes
-instead of proposing an axiom) live in
-`docs/audit/AXIOM_MINIMALITY_POLICY.md`. Vocabulary lives here.
+Do not redefine, alias, or document these names here.
 
 ## Stale-Narrative Archival Vocabulary
 

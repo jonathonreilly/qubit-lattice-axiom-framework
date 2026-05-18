@@ -193,6 +193,82 @@ These files encode a reproducibility discipline:
 In other words, repo hygiene is part of the check on the science, not just an
 engineering nicety.
 
+### 5a. Vocabulary hygiene at agent pacing
+
+At repo scale (this repo currently carries ~2600 markdown files, almost
+all AI-authored, with parallel agents working continuously), one
+specific kind of hygiene fails when handled by discipline alone:
+vocabulary. Agents drift, emergent terminology compounds, and per-PR
+coordination becomes a synchronous bottleneck the autopilot will not
+respect. The empirical anchor in this repo: a single PR (#1262, on
+2026-05-16) introduced an ad-hoc filename suffix
+(`_HOSTILE_AUDIT_FINDINGS_NOTE_`) and a within-note F-letter labelling
+scheme; in the next 24 hours, 83 follow-up notes adopted the same
+pattern. Discipline-based control (the existing "no new vocab" rule in
+memory) caught the wave only on retrospective review.
+
+The methodological pattern shipped in response is **mechanism-based
+vocabulary control**:
+
+1. **One machine-readable canonical source.**
+   `docs/repo/controlled_vocabulary.yaml` (created by the companion
+   cleanup PR) is the single edit surface for all process vocabulary.
+   The human-readable docs
+   ([`CONTROLLED_VOCABULARY.md`](./repo/CONTROLLED_VOCABULARY.md),
+   [`KEY_TERMINOLOGY.md`](./KEY_TERMINOLOGY.md)) are regenerated from
+   the YAML; manual edits to the rendered docs are not permitted.
+   Rendered drift is impossible by construction.
+
+2. **Auto-correct integrated into the substantive loops.**
+   `scripts/vocab_lint.py --fix` is a mechanical pre-commit step in
+   audit-loop, review-loop, and physics-loop (see their respective
+   `SKILL.md` files). Routine drift (legacy aliases, forbidden
+   filename suffixes, deprecated wording, F-letter codes) is rewritten
+   silently. This shifts vocabulary compliance from agent discipline
+   (fallible) to loop mechanism (always-on).
+
+3. **Physics verdicts separated from prose verdicts.** Audit ledger
+   rows gain a `prose_status` field independent of `audit_status`. A
+   clean derivation with vocabulary drift lands as
+   `(audit_status: audited_clean, prose_status: auto_corrected)`. A
+   non-clean physics verdict is never set by vocabulary drift alone; a
+   new-vocabulary requirement is never blocked by a physics non-clean
+   verdict. The two concerns are recorded by the same audit cycle but
+   reviewed by different mechanisms.
+
+4. **Vocabulary disjoint from physics.** Framework primitives
+   (`Cl(3)`, `Z³`, `A_min`, `Axiom 1`, `Axiom 2`, `g_bare`, `u_0`,
+   `M_Pl`, etc.) are *not* vocabulary terms. They live in
+   [`MINIMAL_AXIOMS_2026-05-03.md`](./MINIMAL_AXIOMS_2026-05-03.md)
+   and per-claim notes only. The vocabulary system governs
+   process labels (status, audit fields, repair classes, evidence
+   terms, prose voice) — never the physics itself. Conflating the two
+   creates rot in both directions.
+
+5. **Agent pacing preserved.** Routine vocabulary rewrites do not
+   require PRs; the lint applies them inline. Only *genuinely new
+   terms* enter a periodic vocab-extension review queue (recorded as
+   `prose_status: needs_human_vocab_decision`), batch-resolved with
+   one PR against the canonical YAML. The synchronous-bottleneck
+   failure mode the 84-note wave exposed is structurally removed.
+
+Each family of terms in the vocabulary cites the **established
+convention** it derives from — W3C lifecycle for the audit-status
+journey, GRADE-style evidence grading for theorem strength, ISTQB /
+IEEE 1044 defect taxonomy for repair classes, multi-reviewer
+adversarial-review independence tiers for the audit-independence
+field. AI-physics extensions to each family (terms specific to AI
+generation failure modes, model-family-level independence,
+compute-required-as-non-defect, etc.) are explicitly tagged.
+
+The full design is in
+[`docs/repo/VOCABULARY_HYGIENE_DESIGN.md`](./repo/VOCABULARY_HYGIENE_DESIGN.md);
+the canonical YAML and the lint script land in the companion cleanup
+PR. This entire mechanism is offered as a transferable pattern: any
+AI-built research repo above some scale faces the same drift / agent
+pacing / discipline-failure tension, and mechanism-based vocabulary
+control is the form of governance that survives at that scale.
+
 ## 6. Current Evidence Surface
 
 The curated methodology lane on `main` now consists of:

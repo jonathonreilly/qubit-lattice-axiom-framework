@@ -86,6 +86,16 @@ unless the user explicitly supplied `--no-pr`.
   base is the prior block branch. If independent, base it on `main`.
 - Commit coherent science artifacts to the block branch and push it to
   `origin`.
+- Before each commit, run `scripts/vocab_lint.py --fix` on the files being
+  committed. The repo's process vocabulary is canonical in
+  [`docs/repo/controlled_vocabulary.yaml`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)
+  (cleanup PR creates the YAML; design in
+  [`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md));
+  routine drift is auto-rewritten as part of the commit. Genuinely new
+  terms that the lint cannot mechanically fix are recorded as
+  `prose_status: needs_human_vocab_decision` on any audit row they touch
+  later; they do not block the physics block from landing. Vocabulary
+  drift is never a stop condition for a physics loop.
 - At each science-block closure, unless `--no-pr` was supplied, open one review
   PR for that block before pivoting to the next opportunity. Use
   `gh pr create` when authenticated; otherwise write `PR_BACKLOG.md` with

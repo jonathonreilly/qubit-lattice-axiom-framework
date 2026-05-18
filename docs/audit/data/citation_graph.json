@@ -6305,6 +6305,18 @@
       "to": "pmns_sector_orientation_orbit_note"
     },
     {
+      "from": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
+      "to": "dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
+      "to": "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_pmns_constrained_optimization_algebra_narrow_theorem_note_2026-05-17",
       "to": "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16"
     },
@@ -6367,6 +6379,34 @@
     {
       "from": "dm_leptogenesis_pmns_cp_bridge_boundary_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_constructive_projected_source_selector_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16",
+      "to": "dm_neutrino_source_surface_carrier_normal_form_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_microscopic_d_last_mile_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_microscopic_d_last_mile_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
     },
     {
       "from": "dm_leptogenesis_pmns_microscopic_selector_reduction_theorem_note_2026-04-17",
@@ -9677,6 +9717,10 @@
       "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20"
     },
     {
+      "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
+      "to": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+    },
+    {
       "from": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
       "to": "gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19"
     },
@@ -10063,6 +10107,10 @@
     {
       "from": "gravitational_memory_note_2026-04-11",
       "to": "memory_mu2_geometry_sweep_note_2026-04-11"
+    },
+    {
+      "from": "graviton_mass_derived_note",
+      "to": "graviton_mass_spectral_gap_identity_theorem_note"
     },
     {
       "from": "graviton_mass_spectral_gap_identity_theorem_note",
@@ -16841,6 +16889,14 @@
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
+      "from": "monopole_derived_note",
+      "to": "planck_scale_lane_status_note_2026-04-23"
+    },
+    {
+      "from": "monopole_derived_note",
+      "to": "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25"
+    },
+    {
       "from": "moonshot_diamond_sensor_brainstorm_note",
       "to": "diamond_sensor_prediction_note"
     },
@@ -20855,6 +20911,18 @@
     {
       "from": "quark_route2_rconn_center_ratio_bridge_obstruction_note_2026-04-28",
       "to": "g_bare_derivation_note"
+    },
+    {
+      "from": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
+      "to": "quark_route2_exact_readout_map_note_2026-04-19"
+    },
+    {
+      "from": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
+      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
+    },
+    {
+      "from": "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
+      "to": "rconn_derived_note"
     },
     {
       "from": "quark_strc_observable_principle_note_2026-04-19",
@@ -46098,9 +46166,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15",
+        "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15",
+        "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "b657ba4fb0caddd0f49c418c4e4c2bb73341261c3c2e4ad4e9102b182c922533",
+      "note_hash": "e8a197cea5c4fa8d0ad09a2de9264c213b3ee6f7165bcda8ab848917a495fc03",
       "path": "docs/DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_breaking_triplet_source_law.py",
       "title": "DM Leptogenesis PMNS Breaking-Triplet Source Law"
@@ -46178,9 +46250,15 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
+        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_constructive_projected_source_selector_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
+        "dm_neutrino_source_surface_carrier_normal_form_theorem_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "f599a5871dc4fa7d48ac8b3b487adb08b5584d240878a4bea81b9415b356dcbe",
+      "note_hash": "f0188e2bcc175e9f1494aca3d5a5033505f30ef1f8deaf318daed679f28d7dc3",
       "path": "docs/DM_LEPTOGENESIS_PMNS_EVEN_RESPONSE_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_even_response_sole_axiom_boundary.py",
       "title": "DM Leptogenesis PMNS Even-Response Sole-Axiom Boundary"
@@ -46190,9 +46268,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
+        "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "a26038e49b323b99425c8e253fb9b0b0c1098574b03518778ab9afb048775be9",
+      "note_hash": "82b054fdb75c45bc8f8b5a00f00a0093b310b9f6b7b66ffeb5f618995b644154",
       "path": "docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_D_LAST_MILE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_microscopic_d_last_mile.py",
       "title": "DM Leptogenesis PMNS Microscopic `D` Last-Mile Reduction"
@@ -51520,9 +51601,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "652f4e41f78cfffd7076ec7127a2b4225deb7a1c14e0b425ec02babdf2d0239a",
+      "note_hash": "c44dcec3102e3f1129297b346e968774f833b916118efbe4834eca4639e92662",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py",
       "title": "Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion `3d+1` Reduced-Packet Complex-Givens Selector Theorem"
@@ -52424,9 +52507,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "graviton_mass_spectral_gap_identity_theorem_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "75f37af3fecdd95d7012e8c882ff0cc4729c88fa45db4cf64cde07795aed1a5b",
+      "note_hash": "0f0c98e7a6cd8b496eb6b8cab04831913d78d13e665d7a4b04433f94e69b5da7",
       "path": "docs/GRAVITON_MASS_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_graviton_mass_derived.py",
       "title": "Lichnerowicz TT Spectral Arithmetic on S^3 with Imported Hubble Radius"
@@ -60137,9 +60222,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "planck_scale_lane_status_note_2026-04-23",
+        "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "4b62b66803dfbba840b5256bd7b6e9d5ebabb7b8cb02fcd6baf341fd39a1c031",
+      "note_hash": "354195ace8a3772f74850a3c98d4263b5fc962f1a3fbaaf6d7ce00cbb314787e",
       "path": "docs/MONOPOLE_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_monopole_derived.py",
       "title": "Magnetic Monopole Mass: Bounded Lattice Derivation"
@@ -68051,9 +68139,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "no_go",
-      "deps": [],
+      "deps": [
+        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_exact_time_coupling_note_2026-04-19",
+        "rconn_derived_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "89c6b91b7b49e89f040002aa89ae50b36dd6d0a463175511e02df7f6bb1f7b87",
+      "note_hash": "f378585dd65692858faeac2877970740003c779cb93437da90e80f751a3a38ec",
       "path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md",
       "runner_path": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
       "title": "Quark Route-2 Source-Domain Bridge No-Go"
@@ -78465,9 +78557,6 @@
     "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16_hostile_audit_findings_note_2026-05-17",
     "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16_hostile_audit_findings_note_2026-05-17",
     "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16",
-    "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16",
-    "dm_leptogenesis_pmns_even_response_sole_axiom_boundary_note_2026-04-16",
-    "dm_leptogenesis_pmns_microscopic_d_last_mile_note_2026-04-16",
     "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
     "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_hostile_audit_findings_note_2026-05-17",
@@ -78577,7 +78666,6 @@
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20",
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20",
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_note_2026-04-20",
-    "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_note_2026-04-20",
     "gauge_vacuum_plaquette_framework_point_underdetermination_note",
     "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
     "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
@@ -78600,7 +78688,6 @@
     "gravitational_entanglement_note",
     "gravitational_wave_probe_note",
     "gravitomagnetic_note",
-    "graviton_mass_derived_note",
     "graviton_mass_derived_note_hostile_audit_findings_note_2026-05-17",
     "gravity_design_blueprint",
     "gravity_full_self_consistency_note",
@@ -78748,7 +78835,6 @@
     "mirror_mutual_information_canonical_families_note",
     "mirror_program_synthesis",
     "missing_runner_inventory_2026-05-03",
-    "monopole_derived_note",
     "moonshot_failure_audit_note",
     "moonshot_frontier_brainstorm_note",
     "moonshot_frontier_brainstorm_v2_note",
@@ -78840,7 +78926,6 @@
     "quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28",
     "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
     "quark_route2_exact_readout_map_note_2026-04-19",
-    "quark_route2_source_domain_bridge_no_go_note_2026-04-28",
     "quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28",
     "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28",
     "radial_scaling_protected_angle_narrow_theorem_note_2026-05-02",
@@ -79103,10 +79188,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9376,
-    "leaf_count": 751,
+    "edge_count": 9393,
+    "leaf_count": 750,
     "node_count": 2424,
-    "root_count": 863,
+    "root_count": 856,
     "runners_with_path": 2017
   }
 }

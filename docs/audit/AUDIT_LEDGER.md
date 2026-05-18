@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 354 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 93 |
+| ~~audited_conditional~~ | 94 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 582 |
-| `audited_conditional` | 93 |
+| `audited_conditional` | 94 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1535 |
+| `unaudited` | 1534 |
 
 | claim_type | count |
 |---|---:|
@@ -800,6 +800,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_fixed_beam_boundary_sensitivity_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
@@ -11238,6 +11239,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`
 - **auditor confidence:** medium
+
+### `wilson_two_body_open_note_2026-04-11`
+
+- **Note:** [`WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md`](../../docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied packet audits the primary open-boundary 8/8 attractive and 8/8 clean surface at side=11,13, G=5, mu^2=0.22, d=3..6; the distance-falloff, partner-source-scaling, and screening-mass law sweeps are not verified from the restricted packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-wilson_two_body_open_not-028`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Open-boundary Wilson two-orbital Hartree dynamics produces a robust mutual attraction channel on the audited G=5, mu^2=0.22 surface, with screened distance falloff |a_mut| ~ d^-3.4 and sublinear partner-source scaling |a_mut| ~ m_B^0.48.  _(class `C`)_
+- **chain closes:** False — The supplied primary runner source and cached stdout genuinely compute the narrow open-boundary mutual-attraction surface. The note's law-retention conclusion also depends on scripts/frontier_wilson_two_body_laws.py and logs/runner-cache/frontier_wilson_two_body_laws.txt, which are not supplied here.
+- **rationale:** The primary runner is not a print-only or hard-coded certificate: it builds the open lattice, solves the screened Poisson problem, constructs Wilson Hamiltonians, evolves the two orbitals, and computes shared-minus-self early acceleration. Its stdout supports the 8/8 attractive and clean primary surface. However, the source note's retained law statements require the companion law runner/cache, and those artifacts are absent from this restricted packet. The Newton-closure negative boundary is appropriately bounded, but it is not independently closed here beyond the supplied primary surface.
+- **auditor confidence:** high
 
 ### `wilson_two_body_open_refined_note_2026-04-11`
 

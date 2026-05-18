@@ -1,6 +1,22 @@
 # R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate
 
-**Date:** 2026-04-14 (originally); 2026-05-10 (audit-narrowing refresh).
+**Date:** 2026-04-14 (originally); 2026-05-10 (audit-narrowing refresh);
+2026-05-18 (claim_scope formalized as exact imported Fierz channel-count
+fraction plus conditional MC consistency framing only per audit verdict
+boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **exactly two pieces**: (i) the **exact imported
+Fierz channel-count fraction** `(N_c^2 − 1) / N_c^2` from the
+already-retained Fierz authority, with no re-derivation in this
+note; and (ii) the **conditional MC consistency framing** of the
+1/N_c-expansion estimate for the channel-population dynamics, recorded
+as a numerical cross-check on the imported fraction at the chosen
+operating point. The promotion of the channel-count fraction to the
+connected-trace dynamical observable is **explicitly NOT** derived in
+this note; the matching-rule + dynamical channel-population +
+correction-estimate derivation from retained primitives remains the
+named open work item per the audit verdict's repair sub-target.
 **Status:** scope-narrowed bounded note. The exact `(N_c^2 − 1)/N_c^2`
 adjoint-channel **representation-dimension fraction** is **imported**
 from the already-retained Fierz authority below; this note adds a

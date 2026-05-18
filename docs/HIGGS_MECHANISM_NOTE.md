@@ -1,8 +1,25 @@
 # Higgs Mechanism Note
 
-**Date:** 2026-04-15  
-**Status:** mechanism-level support only  
+**Date:** 2026-04-15 (2026-05-18: claim_scope narrowed to conditional
+mechanism-level consistency per audit verdict boundary instruction).
+**Status:** mechanism-level support only
 **Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **conditional mechanism-level consistency only** — the
+lattice admits a scalar order-parameter surface relevant to EWSB, and
+lattice Coleman-Weinberg electroweak symmetry breaking occurs
+naturally for `O(1)` comparison inputs on the current bounded runner.
+This note **does NOT** claim that the Higgs mechanism is derived as an
+audited theorem from the framework axioms; the audit verdict's repair
+target ("provide retained-grade derivations of the scalar
+order-parameter, the Coleman-Weinberg potential bridge, and the
+EWSB-from-Cl(3)/Z^3 chain") remains a separate open work item not in
+the load-bearing scope of this note. Authority for any specific
+Higgs-mass numerical readout is delegated to
+[HIGGS_MASS_DERIVED_NOTE.md](HIGGS_MASS_DERIVED_NOTE.md), with its own
+admissions; this note exists only to record the mechanism-level
+support surface.
+**Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_higgs_mass_derived.py`
 
 ## Authority Rule

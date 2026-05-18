@@ -1,6 +1,23 @@
 # PMNS Oriented Cycle Selection Structure
 
-**Date:** 2026-04-16  
+**Date:** 2026-04-16 (2026-05-18: claim_scope formalized as bounded
+conditional algebraic reduction of the oriented-cycle channel per
+audit verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **a bounded conditional algebraic reduction of the
+oriented-cycle channel** — the three structural statements derived
+below hold as exact algebraic reductions on the assumed graph-first
+residual antiunitary condition and the assumed sole-axiom free-point
+identity block within the restricted dependency chain. The note
+**does NOT** independently retain those antiunitary / free-point
+premises; they are admitted as inputs from the broader oriented-cycle
+channel-value-law context. The audit verdict's repair sub-target
+("add a retained bridge proving the graph-first residual antiunitary
+condition and the sole-axiom free-point identity block within the
+restricted dependency chain") remains separate open work. This is
+**explicitly NOT** a retained value-selection theorem.
+**Status authority:** independent audit lane only.
 **Status:** support - structural or confirmatory support note
 **Script:** `scripts/frontier_pmns_oriented_cycle_selection_structure.py`
 

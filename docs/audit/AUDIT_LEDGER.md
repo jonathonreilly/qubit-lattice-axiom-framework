@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 354 |
+| **retained_bounded** | 355 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1318 |
+| unaudited | 1317 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 6 |
-| `audited_clean` | 583 |
+| `audited_clean` | 584 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1531 |
+| `unaudited` | 1530 |
 
 | claim_type | count |
 |---|---:|
@@ -170,6 +170,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_orbit_invariance_stretch_attempt_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_highn_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1741,6 +1742,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `runner_output_empty`
   - `archived_session_log_or_named_numeric_output_missing`
   - `seed_strength_and_geometry_independence_sweeps_not_reproducible`
+- **auditor confidence:** high
+
+### `central_band_born_dense_sweep_note`
+
+- **Note:** [`CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md`](../../docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite valid-graph dense-pocket result for the central-band corrected-Born sweep at npl = 60, limited to the six retained LN+|y| and LN+|y|+collapse rows for N = 25, 40, 60 in the cached runner output.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-central_band_born_dense_-033`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At npl = 60, both LN + |y| and LN + |y| + collapse stay Born-clean to machine precision across N = 25, 40, 60.  _(class `C`)_
+- **chain closes:** True — The restricted packet includes the primary runner and its helper, and the code actually constructs the graphs, propagates amplitudes, computes the corrected three-slit I3 with -P(empty), and reports the six bounded rows. The broad hard-geometry-enabling interpretation is explicitly out of load-bearing scope.
+- **rationale:** The load-bearing narrowed claim is a bounded computational result, not the broader interpretation hypothesis. The runner source does not merely print constants or import a contested result; it builds the graph instances, applies the stated modes, computes total probabilities for slit subsets, and forms I3 with the empty term. The cached stdout supports all six in-scope npl = 60 rows as PASS with maxima below 1e-15, although the note's displayed table contains stale numeric entries that should be reconciled against the cache.
 - **auditor confidence:** high
 
 ### `central_band_born_largen_note`

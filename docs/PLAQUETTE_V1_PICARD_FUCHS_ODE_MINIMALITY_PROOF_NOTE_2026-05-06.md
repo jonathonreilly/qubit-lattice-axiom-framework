@@ -43,8 +43,11 @@ is a closed-form identity, not an approximation.
 The runner certifies, in exact rational arithmetic at Taylor depth 40:
 
 - `L · J` vanishes through the safe truncated range `[β^0, …, β^36]`;
-- no lower-order ansatz with order `≤ 2` and coefficient degree `≤ 12`
-  survives the matching system;
+- no lower-order ansatz with `(r, d)` in the **checked window**
+  `{1} × {0, …, 12} ∪ {2} × {0, …, 11}` survives the matching system
+  (the boundary case `(r=2, d=12)` requires `depth ≥ 43` to be testable
+  at full column rank and is recorded as *skipped* by the runner at the
+  current depth 40, per the 2026-05-18 audit verdict repair target);
 - at `(order=3, degree=2)`, the kernel is one-dimensional and matches `L`
   up to scalar;
 - the checked higher-degree windows `(order=3, degree=2..6)` are consistent
@@ -77,10 +80,18 @@ The support chain is:
 
   **Step 4 (lower-order exclusion).** A direct computational rank
   certificate `[B]` (runner output) shows that for every
-  `(r, d) ∈ {1, 2} × {0, 1, …, 12}`, the linear system "find a
-  non-trivial polynomial-coefficient operator of order ≤ r and
-  coefficient-degree ≤ d that annihilates `J(β)`" has zero kernel —
-  so no order ≤ 2 ODE annihilates `J(β)`.
+  `(r, d)` in the **checked window**
+  `{1} × {0, 1, …, 12} ∪ {2} × {0, 1, …, 11}` (at Taylor depth 40),
+  the linear system "find a non-trivial polynomial-coefficient operator
+  of order ≤ r and coefficient-degree ≤ d that annihilates `J(β)`"
+  has zero kernel. (The boundary case `(r=2, d=12)` requires `num_eqs ≥
+  39` while `depth - r - 2 = 36`; the runner records `(r=2, d=12)` as
+  *skipped (not enough Taylor coefficients)*. The claim is therefore
+  scope-narrowed to the actually-checked window per the 2026-05-18
+  audit verdict repair target. Extending the claim to `(r=2, d=12)`
+  requires increasing Taylor depth so that `depth - r - 2 ≥ 39`, i.e.
+  `depth ≥ 43`.) Within the narrowed window, no order ≤ 2 ODE with
+  coefficient-degree in the checked range annihilates `J(β)`.
 
   **Step 5 (uniqueness at minimal order).** A second rank certificate
   `[C]` shows the kernel at `(r=3, d=2)` is exactly one-dimensional,
@@ -170,7 +181,8 @@ extension. ∎
 
 ### Step 4 (lower-order exclusion). Rank certificate [B].
 
-For each `(r, d) ∈ {1, 2} × {0, 1, …, 12}`, consider the affine
+For each `(r, d)` in the **checked window**
+`{1} × {0, 1, …, 12} ∪ {2} × {0, 1, …, 11}`, consider the affine
 linear system in unknowns `{p_{k, m} : 0 ≤ k ≤ r, 0 ≤ m ≤ d}`:
 ```text
 [β^N] of  Σ_{k=0..r} Σ_{m=0..d} p_{k,m} · β^m · J^{(k)}(β)  =  0,    (♦)
@@ -181,9 +193,20 @@ of coefficients having full column rank `(r+1)(d+1)`, the system has
 only the trivial solution.
 
 **Certificate.** Runner output for ORDER=40 confirms that the rank of
-the matching matrix at every tested `(r, d) ∈ {1, 2} × {0, 1, …, 12}`
-equals the number of unknowns. Hence no non-trivial annihilator of
-order ≤ 2 with polynomial coefficients of degree ≤ 12 exists.
+the matching matrix at every checked `(r, d)` in
+`{1} × {0, 1, …, 12} ∪ {2} × {0, 1, …, 11}` equals the number of
+unknowns. Hence no non-trivial annihilator of order ≤ 2 with
+polynomial coefficients in the checked degree window exists.
+
+**Scope boundary at `(r=2, d=12)`.** The boundary case `(r=2, d=12)`
+requires `(r+1)(d+1) = 39` unknowns matched against `num_eqs =
+min(num_unknowns + 8, depth - r - 2) = min(47, 36) = 36` equations at
+the current Taylor depth 40; since `36 < 39`, the runner records
+`(r=2, d=12)` as *skipped (not enough Taylor coefficients)* rather
+than tested. Extending the claim to `(r=2, d=12)` requires increasing
+Taylor depth to at least 43 (so `depth - r - 2 ≥ 39`). The narrowed
+window above reflects only the actually-checked cases per the
+2026-05-18 audit verdict repair target.
 
 **Scope beyond the checked degree.** The runner directly excludes the
 listed finite degree window. Extension to all coefficient degrees is

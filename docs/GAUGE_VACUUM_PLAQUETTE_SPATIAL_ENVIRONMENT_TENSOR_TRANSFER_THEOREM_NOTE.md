@@ -1,24 +1,27 @@
 # Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Theorem
 
-**Date:** 2026-04-17
+**Date:** 2026-04-17; 2026-05-18 (claim_scope narrowed to the finite
+one-word support packet per audit verdict boundary instruction).
 **Type:** bounded_theorem
-**Claim scope:** the structural identification of the spatial-environment
-boundary data as arising from one positive character-tensor transfer
-built from exact `SU(3)` Wilson character coefficients `c_lambda(beta)`
-and exact `SU(3)` fusion intertwiners, on the finite truncated support
-actually verified by the runner: dominant-weight box `NMAX = 4`, Wilson
-Bessel mode sum `MODE_MAX = 80`, one explicit positive tensor-transfer
-matrix constructed from those ingredients. The runner verifies that
-the constructed matrix is nonnegative entry-wise, has the
-conjugation-swap symmetry, and produces a nonnegative boundary
-amplitude under the canonical unit-vector readout. The boundary-
-character identity `z_(p,q)^env(beta) = <chi_(p,q),
-(T_beta^env,tensor)^(L_perp-1) eta_beta^env>` between actual unmarked
-spatial-environment amplitudes and the structural transfer law is
-**asserted structurally** from Theorems 1 and 2 by Haar-orthogonality /
-Peter-Weyl decomposition and is not numerically evaluated by the
-runner. The **full untruncated tensor-transfer operator construction
-at `beta = 6`** (the explicit Perron solve, the convergence/positivity
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing claims
+are **(T1) exact local Wilson tensor weights** and **(T2) exact slice
+integration gives fusion/intertwiner contractions**, plus the **finite
+one-word support packet** that the runner verifies at dominant-weight
+box `NMAX = 4`, Wilson Bessel mode sum `MODE_MAX = 80`: one explicit
+positive tensor-transfer matrix constructed from those ingredients is
+nonnegative entry-wise, has the conjugation-swap symmetry, and
+produces a nonnegative boundary amplitude under the canonical
+unit-vector readout. **(T3) structural boundary-character generation
+by the tensor-transfer law** is **explicitly NOT load-bearing in this
+narrowed scope**: the boundary-character identity
+`z_(p,q)^env(beta) = <chi_(p,q), (T_beta^env,tensor)^(L_perp-1)
+eta_beta^env>` between actual unmarked spatial-environment amplitudes
+and the structural transfer law is asserted structurally from (T1)
+and (T2) by Haar-orthogonality / Peter-Weyl decomposition and is **not
+numerically evaluated** by the runner; it is recorded as the open
+bridge gate that a future retained-grade derivation must close. The
+**full untruncated tensor-transfer operator construction at
+`beta = 6`** (the explicit Perron solve, the convergence/positivity
 proof beyond truncated support, the named-tensor-word check beyond one
 example, and the numerical evaluation of the boundary-character
 identity) remains the open target named in §"What this does not

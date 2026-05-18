@@ -8141,8 +8141,8 @@
       "load_bearing_score": 2.585,
       "load_bearing_step": "The note's load-bearing step is that the Strongest retained rows tables are deterministic stdout of the registered runner and that the narrow conclusion is supported directly by those rows.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "meta",
-      "max_descendant_status_rank": 25,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "0dbb525ed31227ebba321a7baa2102fbd29ea97db5e48b895508830ab8194659",
       "note_path": "docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md",
       "notes_for_re_audit_if_any": "Re-check after the note, runner defaults, completed stdout artifact, and one-hop infrastructure dependencies are synchronized.",
@@ -10569,41 +10569,24 @@
       "verdict_rationale": "The mathematical load-bearing step is a genuine algebraic closure: the note correctly repairs the odd-complex-Clifford split and derives the two chirality irreps distinguished by \u03c9 = \u00b1i. The runner source mostly provides algebraic/numerical exhibits for those facts and does not import an external comparator or tuned numerical premise. However, the restricted packet's cited framework authorities are marked meta rather than retained-grade under the supplied rubric, so the verdict cannot be audited_clean despite the U1-U3 algebra closing on its own terms."
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-10T12:18:49.394028+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0."
-        },
-        "dep_claim_type": {
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded"
-        },
-        "deps": [
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
-        ],
-        "load_bearing_score": 16.295,
-        "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
-        "transitive_descendants": 627
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e11d2-ef45-7170-8c56-dd57cda7aaf3",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The LR/light-cone/norm portions are structurally supported, but the L2 spatial thermal connected-correlator bound does not close. The missing step is a retained derivation of \u0394_T > 0 plus a retained theorem converting the gap/LR or transfer-matrix input into spatial cluster decomposition for the canonical Cl(3) \u2297 Z^3 Hamiltonian.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "claim_scope": "Audited the note's claimed L1 Lieb-Robinson bound, L3 lattice light cone, L4 finite Cl(3) norm support, and its L2 exponential cluster-decomposition statement after the 2026-05-09 mass-gap bridge repair.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T12:18:49.394028+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -10611,22 +10594,20 @@
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
       ],
       "direct_in_degree": 17,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 18.268,
-      "load_bearing_step": "Step 4 promotes the LR commutator bound to thermal connected-correlator clustering by applying the LR bound in imaginary time and invoking a mass gap/confinement input to obtain equation (3).",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "33745c83757f4b206f8f57569012058e421ba4211d2f4d205e8077ec136c3c5d",
+      "note_hash": "7d95b73213f18d99ec19a71f7b5facf75e6f49a81639c22769d667fcd01d8b12",
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained spatial gap-plus-Lieb-Robinson theorem or spatial transfer-matrix proof, together with a first-principles derivation of \u0394_T > 0 for the canonical Hamiltonian.",
-      "open_dependency_paths": [
-        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
         {
@@ -10752,19 +10733,70 @@
             "total_pass": 4
           },
           "verdict_rationale": "Issue: L2 exponential clustering is promoted from LR plus an asserted mass gap/confinement bridge. Why this blocks: LR bounds alone control commutators outside a light cone; they do not prove static connected-correlator clustering for arbitrary canonical thermal states, and the packet gives no retained derivation of m_gap>0 for the stated Cl(3) tensor Z^3 Hamiltonian class. The runner is a 1D free-fermion representative with weak clustering pass condition and cannot verify the 3D Cl(3) theorem or the imported gauge-sector gap. Repair target: either restrict the audited theorem to L1/L3/L4 LR consequences, or add a separate retained theorem proving the required spectral gap/thermal clustering hypotheses for the canonical Hamiltonian and then verify the exact Hastings-Koma assumptions and constants. Claim boundary until fixed: clean only as a conditional LR-plus-clustering statement: if the specified Hamiltonian/state satisfies an independently proved positive gap or valid finite-temperature clustering theorem hypotheses, then exponential clustering may be invoked; the unconditional cluster-decomposition corollary is not audited clean."
+        },
+        {
+          "archived_at": "2026-05-18T10:52:12.074069+00:00",
+          "archived_for_note_hash": "33745c83757f4b206f8f57569012058e421ba4211d2f4d205e8077ec136c3c5d",
+          "audit_date": "2026-05-10T12:18:49.394028+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0."
+            },
+            "dep_claim_type": {
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded"
+            },
+            "deps": [
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+            ],
+            "load_bearing_score": 16.295,
+            "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
+            "transitive_descendants": 627
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e11d2-ef45-7170-8c56-dd57cda7aaf3",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The LR/light-cone/norm portions are structurally supported, but the L2 spatial thermal connected-correlator bound does not close. The missing step is a retained derivation of \u0394_T > 0 plus a retained theorem converting the gap/LR or transfer-matrix input into spatial cluster decomposition for the canonical Cl(3) \u2297 Z^3 Hamiltonian.",
+          "claim_scope": "Audited the note's claimed L1 Lieb-Robinson bound, L3 lattice light cone, L4 finite Cl(3) norm support, and its L2 exponential cluster-decomposition statement after the 2026-05-09 mass-gap bridge repair.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-10T12:18:49.394028+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Step 4 promotes the LR commutator bound to thermal connected-correlator clustering by applying the LR bound in imaginary time and invoking a mass gap/confinement input to obtain equation (3).",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained spatial gap-plus-Lieb-Robinson theorem or spatial transfer-matrix proof, together with a first-principles derivation of \u0394_T > 0 for the canonical Hamiltonian.",
+          "open_dependency_paths": [
+            "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 3,
+            "total_pass": 4
+          },
+          "verdict_rationale": "Issue: the note's L2 step still depends on an explicit mass-gap input and on a spatial gap-plus-LR or spatial transfer-matrix clustering theorem that the packet says is open. Why this blocks: LR bounds control commutators/light cones, and the cited bridge only proves a finite-block temporal spectral lemma conditional on \u0394_T > 0, so the advertised spatial thermal connected-correlator bound for canonical states is not derived from retained inputs. Repair target: derive \u0394_T > 0 on the canonical Cl(3) \u2297 Z^3 staggered + Wilson Hamiltonian and add a retained spatial cluster-decomposition theorem with constants. Claim boundary until fixed: retain only L1/L3/L4 and conditional temporal gap-to-clustering support, not unconditional L2 spatial clustering."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 1,
+        "B": 0,
         "C": 0,
-        "D": 3,
-        "total_pass": 4
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3",
       "transitive_descendants": 871,
-      "verdict_rationale": "Issue: the note's L2 step still depends on an explicit mass-gap input and on a spatial gap-plus-LR or spatial transfer-matrix clustering theorem that the packet says is open. Why this blocks: LR bounds control commutators/light cones, and the cited bridge only proves a finite-block temporal spectral lemma conditional on \u0394_T > 0, so the advertised spatial thermal connected-correlator bound for canonical states is not derived from retained inputs. Repair target: derive \u0394_T > 0 on the canonical Cl(3) \u2297 Z^3 staggered + Wilson Hamiltonian and add a retained spatial cluster-decomposition theorem with constants. Claim boundary until fixed: retain only L1/L3/L4 and conditional temporal gap-to-clustering support, not unconditional L2 spatial clustering."
+      "verdict_rationale": null
     },
     "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": {
       "audit_date": "2026-05-11T14:18:49.232173+00:00",
@@ -94725,41 +94757,24 @@
       "verdict_rationale": "The scoped theorem closes because all conclusions are direct consequences of the stated finite-matrix hypotheses, and the negative control confirms that conjugation symmetry of D is a real load-bearing assumption. The runner's beta=6 Wilson/Pieri instantiation is only evidence that one concrete finite packet satisfies the abstract hypotheses; the theorem itself is not claiming a physical spatial-environment transfer identity. Residual risk is scope drift into the parent Wilson boundary-character/Perron/untruncated construction, which this audit does not ratify."
     },
     "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": {
-      "audit_date": "2026-05-10T14:45:48.069806+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-        ],
-        "load_bearing_score": 13.808,
-        "runner_hash": "fb3075abfa53fd223e3b505cffa238fadabc18c2bc41d10d21fc223979dbfa2c",
-        "transitive_descendants": 633
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1259-0990-7e33-b314-e0df0dc5da21",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite runner verifies a constructed positive tensor word, but the note does not derive that this word is the actual unmarked spatial-environment slice transfer or that the stated boundary readout equals the actual z_(p,q)^env(beta). The source explicitly leaves the full untruncated beta=6 tensor-transfer construction, multi-word coverage, and Perron/boundary evaluation open.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-      "claim_scope": "Finite NMAX=4, MODE_MAX=80 SU(3) Wilson coefficient and fusion-recursion packet constructing one truncated tensor-transfer word and checking positivity, conjugation symmetry, and unit-vector boundary nonnegativity; not the full spatial-environment boundary identity or Perron data.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-10T14:45:48.069806+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -94767,19 +94782,19 @@
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.992,
-      "load_bearing_step": "By Theorems 1 and 2, the unmarked spatial boundary character coefficients then satisfy structurally z_(p,q)^env(beta) = <chi_(p,q), (T_beta^env,tensor)^(L_perp-1) eta_beta^env>.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "a373b2604f4c3032d3907f279f379024f5b46a02b0bd2743f63bea1372652a59",
+      "note_hash": "fa897f078135dd7f0e4fc65369aee3c55704d19dcc52d8a2ae66075070909fa5",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem - derive and verify the actual spatial-environment slice tensor-transfer and boundary readout, or narrow the audited claim to the finite one-word support packet only.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -94940,19 +94955,68 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the theorem identifies actual residual spatial-environment boundary amplitudes with an explicit tensor-transfer law, but the supplied evidence only verifies bounded local ingredients and one truncated tensor word. Why this blocks: the load-bearing bridge from arbitrary local Wilson/fusion ingredients to the actual full unmarked spatial-environment boundary data is admitted as out of scope and is not supplied by the retained_bounded one-hop authority. Repair target: provide an audited construction of the full untruncated tensor-transfer operator and boundary state, including convergence/positivity and multi-tensor-word coverage, or split the finite packet into a bounded theorem. Claim boundary until fixed: finite NMAX=4, MODE_MAX=80 local coefficient/fusion support plus one positive tensor-word example."
+        },
+        {
+          "archived_at": "2026-05-18T10:52:12.076288+00:00",
+          "archived_for_note_hash": "a373b2604f4c3032d3907f279f379024f5b46a02b0bd2743f63bea1372652a59",
+          "audit_date": "2026-05-10T14:45:48.069806+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+            ],
+            "load_bearing_score": 13.808,
+            "runner_hash": "fb3075abfa53fd223e3b505cffa238fadabc18c2bc41d10d21fc223979dbfa2c",
+            "transitive_descendants": 633
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1259-0990-7e33-b314-e0df0dc5da21",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite runner verifies a constructed positive tensor word, but the note does not derive that this word is the actual unmarked spatial-environment slice transfer or that the stated boundary readout equals the actual z_(p,q)^env(beta). The source explicitly leaves the full untruncated beta=6 tensor-transfer construction, multi-word coverage, and Perron/boundary evaluation open.",
+          "claim_scope": "Finite NMAX=4, MODE_MAX=80 SU(3) Wilson coefficient and fusion-recursion packet constructing one truncated tensor-transfer word and checking positivity, conjugation symmetry, and unit-vector boundary nonnegativity; not the full spatial-environment boundary identity or Perron data.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T14:45:48.069806+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "By Theorems 1 and 2, the unmarked spatial boundary character coefficients then satisfy structurally z_(p,q)^env(beta) = <chi_(p,q), (T_beta^env,tensor)^(L_perp-1) eta_beta^env>.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem - derive and verify the actual spatial-environment slice tensor-transfer and boundary readout, or narrow the audited claim to the finite one-word support packet only.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Issue: the load-bearing boundary-character identity is asserted structurally, while the runner only checks one truncated positive tensor word built from local ingredients. Why this blocks: positivity and swap symmetry of that finite word do not prove that actual residual spatial-environment boundary amplitudes arise from the claimed transfer operator. Repair target: a retained bridge theorem and runner constructing the actual spatial-environment slice transfer, boundary state, and readout, or a split note scoped only to the one finite tensor-word packet. Claim boundary until fixed: bounded evidence for local Wilson coefficients, SU(3) fusion primitives, and one NMAX=4/MODE_MAX=80 positivity example."
         }
       ],
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
       "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Theorem",
       "transitive_descendants": 1017,
-      "verdict_rationale": "Issue: the load-bearing boundary-character identity is asserted structurally, while the runner only checks one truncated positive tensor word built from local ingredients. Why this blocks: positivity and swap symmetry of that finite word do not prove that actual residual spatial-environment boundary amplitudes arise from the claimed transfer operator. Repair target: a retained bridge theorem and runner constructing the actual spatial-environment slice transfer, boundary state, and readout, or a split note scoped only to the one finite tensor-word packet. Claim boundary until fixed: bounded evidence for local Wilson coefficients, SU(3) fusion primitives, and one NMAX=4/MODE_MAX=80 positivity example."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": {
       "audit_date": null,
@@ -100196,7 +100260,7 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 14.77,
+      "load_bearing_score": 14.771,
       "load_bearing_step": "By class-A inversion of A2: `L = G_0^{-1} = H = -Delta_lat`.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
@@ -100320,7 +100384,7 @@
       },
       "runner_path": null,
       "title": "Conditional Poisson Forcing under the Self-Consistency Identification (Bounded)",
-      "transitive_descendants": 872,
+      "transitive_descendants": 873,
       "verdict_rationale": "The audited claim is explicitly bounded to the conditional implication under the stipulated closure identity. The load-bearing step is a genuine class-A algebraic inversion over the stated hypotheses, so the scoped conclusion closes. No runner stdout or runner source was supplied, so the numerical checks described inside the note are not credited; they are also not necessary for the scoped algebraic implication. The bridge theorem deriving A2 from A1 remains outside this row's clean scope."
     },
     "gravity_law_cleanup_note": {
@@ -135763,6 +135827,57 @@
       "transitive_descendants": 0,
       "verdict_rationale": null
     },
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "newton_law_derived_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 10.267,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
+      "note_hash": "5b0a55f8b1409d694520cbfe0515ef295baaac0e00fc84d0d59c6105db6f688f",
+      "note_path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": null,
+      "title": "Lattice Green's Function Asymptotic (Maradudin 1971) \u2014 Named Non-Derivation Import",
+      "transitive_descendants": 870,
+      "verdict_rationale": null
+    },
     "lattice_keff_continuum_note": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -157828,64 +157943,46 @@
       "verdict_rationale": "Issue: the load-bearing step renames the unique self-source strength s and its linear response coefficient as the Principle-3 inertial quantity. Why this blocks: the cited authorities explicitly leave persistent inertial-mass/equivalence-principle closure open, and the runner only verifies operational self-sourced stability, not the physical mass identification. Repair target: a retained theorem or runner deriving generator-invariant inertial response for the compact object, preferably under an external field from a distinct object, from the same primitives. Claim boundary until fixed: the top4 baseline has computed persistence, alpha in band, and stable kappa under the chosen self-sourcing multistage readout."
     },
     "newton_law_derived_note": {
-      "audit_date": "2026-05-11T12:11:28.022440+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
-        },
-        "dep_claim_type": {
-          "gravity_full_self_consistency_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gravity_full_self_consistency_note": "retained_bounded"
-        },
-        "deps": [
-          "gravity_full_self_consistency_note"
-        ],
-        "load_bearing_score": 14.665,
-        "runner_hash": "f8f86ac9104aac9acfd1d446d48a8c96dcb88ad461f5bd684da1a4631ed1e554",
-        "transitive_descendants": 405
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-20260511-newton-law-derived",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebra from BA-1 and BA-2 to the inverse-square product law closes, but BA-1 is admitted rather than derived; the direct dependency only gives a conditional implication under the stipulated L^{-1}=G_0 closure identity. BA-2 is also admitted as an external textbook asymptotic rather than retained inside this audit packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "newton_law_derived_note",
-      "claim_scope": "Bounded derivation of the inverse-square force law from admitted BA-1 lattice Poisson equation plus admitted BA-2 Z^3 lattice Green's-function asymptotic, with finite-lattice distance-law runner support.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T12:11:28.022440+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "gravity_full_self_consistency_note"
+        "gravity_full_self_consistency_note",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
-      "direct_in_degree": 12,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 15.765,
-      "load_bearing_step": "Given BA-1 and BA-2, a point source gives phi(r)=M G(r) -> M/(4 pi r), and F=-M_test grad(phi)=M M_test/(4 pi r^2).",
-      "load_bearing_step_class": "A",
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 16.267,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "5e0781d773a9b3d0472977bed4cfb71d6b5c30d5a7c60f68b13cef446c72b16e",
+      "note_hash": "d56eeca7ffbf89a77115f0a675f3cb16e1c5f4a988d9316db73b15f7c210a5a0",
       "note_path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the lattice Poisson equation BA-1 from the Cl(3)-on-Z^3 framework instead of importing the stipulated L^{-1}=G_0 closure identity, and pin BA-2 as an accepted lattice-potential-theory authority.",
-      "open_dependency_paths": [
-        "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-30T18:17:51.106458+00:00",
@@ -157998,19 +158095,70 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the note claims Newton's law follows without additional assumptions, but its load-bearing Poisson equation is only supported by a cited authority that is conditional on a stipulated closure identity. Why this blocks: retained propagation cannot treat an open/stipulated operator identification as an unconditional theorem from Cl(3). Repair target: supply a retained bridge theorem deriving L^{-1}=G_0, or narrow this note to a bounded theorem conditional on the Poisson equation. Claim boundary until fixed: from stipulated Poisson on Z^3, Green asymptotics and linearity give the stated inverse-square/product form."
+        },
+        {
+          "archived_at": "2026-05-18T10:52:12.077919+00:00",
+          "archived_for_note_hash": "5e0781d773a9b3d0472977bed4cfb71d6b5c30d5a7c60f68b13cef446c72b16e",
+          "audit_date": "2026-05-11T12:11:28.022440+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
+            },
+            "dep_claim_type": {
+              "gravity_full_self_consistency_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gravity_full_self_consistency_note": "retained_bounded"
+            },
+            "deps": [
+              "gravity_full_self_consistency_note"
+            ],
+            "load_bearing_score": 14.665,
+            "runner_hash": "f8f86ac9104aac9acfd1d446d48a8c96dcb88ad461f5bd684da1a4631ed1e554",
+            "transitive_descendants": 405
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-20260511-newton-law-derived",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebra from BA-1 and BA-2 to the inverse-square product law closes, but BA-1 is admitted rather than derived; the direct dependency only gives a conditional implication under the stipulated L^{-1}=G_0 closure identity. BA-2 is also admitted as an external textbook asymptotic rather than retained inside this audit packet.",
+          "claim_scope": "Bounded derivation of the inverse-square force law from admitted BA-1 lattice Poisson equation plus admitted BA-2 Z^3 lattice Green's-function asymptotic, with finite-lattice distance-law runner support.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T12:11:28.022440+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Given BA-1 and BA-2, a point source gives phi(r)=M G(r) -> M/(4 pi r), and F=-M_test grad(phi)=M M_test/(4 pi r^2).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the lattice Poisson equation BA-1 from the Cl(3)-on-Z^3 framework instead of importing the stipulated L^{-1}=G_0 closure identity, and pin BA-2 as an accepted lattice-potential-theory authority.",
+          "open_dependency_paths": [
+            "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 3,
+            "D": 0,
+            "total_pass": 3
+          },
+          "verdict_rationale": "Issue: the Newton-law derivation rests on two bounded admissions, especially BA-1, the lattice Poisson equation as the equation of motion. Why this blocks: the cited gravity self-consistency dependency is retained only as a conditional algebraic implication under a stipulated closure identity, so it does not derive BA-1 from the framework axiom. Repair target: provide a retained bridge theorem deriving BA-1 from Cl(3) on Z^3, and pin the BA-2 lattice Green's-function asymptotic as an accepted/retained mathematical input. Claim boundary until fixed: given BA-1 and BA-2, the class-A inverse-square/product-law derivation and finite-lattice runner support may be cited, but not an unconditional Newton-law derivation from the framework baseline."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 3,
+        "C": 0,
         "D": 0,
-        "total_pass": 3
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "title": "Newton's Law Derived from the Physical Cl(3) Local Algebra on Z^3",
-      "transitive_descendants": 869,
-      "verdict_rationale": "Issue: the Newton-law derivation rests on two bounded admissions, especially BA-1, the lattice Poisson equation as the equation of motion. Why this blocks: the cited gravity self-consistency dependency is retained only as a conditional algebraic implication under a stipulated closure identity, so it does not derive BA-1 from the framework axiom. Repair target: provide a retained bridge theorem deriving BA-1 from Cl(3) on Z^3, and pin the BA-2 lattice Green's-function asymptotic as an accepted/retained mathematical input. Claim boundary until fixed: given BA-1 and BA-2, the class-A inverse-square/product-law derivation and finite-lattice runner support may be cited, but not an unconditional Newton-law derivation from the framework baseline."
+      "transitive_descendants": 870,
+      "verdict_rationale": null
     },
     "newton_persistent_pattern_control_note_2026-04-11": {
       "audit_date": "2026-05-10T20:39:07.208669+00:00",
@@ -168888,41 +169036,24 @@
       "verdict_rationale": null
     },
     "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": {
-      "audit_date": "2026-05-17T12:40:30.286434+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
-        },
-        "dep_claim_type": {
-          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
-        },
-        "deps": [
-          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
-        ],
-        "load_bearing_score": 12.172,
-        "runner_hash": "0c8217ebdce80e05d82697c257af4ac11609415421b2f489d061cec908bdd0ef",
-        "transitive_descendants": 815
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260517-123748-20260517T123748Z-5fd98dd6-plaquette_v1_picard_fuch-targeted",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner source does exact rational Taylor and rank computations, but it skips the r=2,d=12 lower-order exclusion case because ORDER=40 gives only 36 usable equations for 39 unknowns, while still reporting the d<=12 exclusion as passed. The all-order minimal-annihilator interpretation also remains conditional on external holonomic-rank and creative-telescoping inputs not closed by this restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
-      "claim_scope": "Bounded V=1 SU(3) single-plaquette exact-arithmetic Picard-Fuchs certificate at Taylor depth 40 for the candidate order-3 operator, including finite annihilation, recurrence, lower-order exclusion, uniqueness, and higher-degree multiple checks.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T12:40:30.286434+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -168930,34 +169061,84 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "direct_in_degree": 6,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 12.781,
-      "load_bearing_step": "Runner output for ORDER=40 confirms that the rank of the matching matrix at every tested (r,d) in {1,2} x {0,...,12} equals the number of unknowns, hence no non-trivial annihilator of order <=2 with coefficient degree <=12 exists.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "9f6490818937fd306a74d979001a6627b81e3ba3222f5ceedf331820074adeb9",
+      "note_hash": "769e210cc9d5f216940a2352384c49112025330d617e4581a7cbdd9b5dc3dc62",
       "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: increase Taylor depth enough to test r=2,d=12 with full column rank, or narrow the lower-order exclusion claim to the actually checked degree window, then re-audit the external minimality bridge separately.",
-      "open_dependency_paths": [
-        "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-18T10:52:12.078208+00:00",
+          "archived_for_note_hash": "9f6490818937fd306a74d979001a6627b81e3ba3222f5ceedf331820074adeb9",
+          "audit_date": "2026-05-17T12:40:30.286434+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+            },
+            "dep_claim_type": {
+              "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+            },
+            "deps": [
+              "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+            ],
+            "load_bearing_score": 12.172,
+            "runner_hash": "0c8217ebdce80e05d82697c257af4ac11609415421b2f489d061cec908bdd0ef",
+            "transitive_descendants": 815
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260517-123748-20260517T123748Z-5fd98dd6-plaquette_v1_picard_fuch-targeted",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner source does exact rational Taylor and rank computations, but it skips the r=2,d=12 lower-order exclusion case because ORDER=40 gives only 36 usable equations for 39 unknowns, while still reporting the d<=12 exclusion as passed. The all-order minimal-annihilator interpretation also remains conditional on external holonomic-rank and creative-telescoping inputs not closed by this restricted packet.",
+          "claim_scope": "Bounded V=1 SU(3) single-plaquette exact-arithmetic Picard-Fuchs certificate at Taylor depth 40 for the candidate order-3 operator, including finite annihilation, recurrence, lower-order exclusion, uniqueness, and higher-degree multiple checks.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T12:40:30.286434+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Runner output for ORDER=40 confirms that the rank of the matching matrix at every tested (r,d) in {1,2} x {0,...,12} equals the number of unknowns, hence no non-trivial annihilator of order <=2 with coefficient degree <=12 exists.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: increase Taylor depth enough to test r=2,d=12 with full column rank, or narrow the lower-order exclusion claim to the actually checked degree window, then re-audit the external minimality bridge separately.",
+          "open_dependency_paths": [
+            "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 4
+          },
+          "verdict_rationale": "The runner is substantive rather than a print-only certificate: it builds the Bessel-determinant series and performs exact rank/nullspace checks. However, one load-bearing finite exclusion claimed by the note is not actually computed: r=2,d=12 is marked skipped in the source logic and omitted from the detailed stdout. Therefore the bounded certificate is too broad as stated, even before promoting it to all-order minimality through the external D-module and creative-telescoping imports."
+        }
       ],
-      "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 4,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Minimality Certificate Note",
       "transitive_descendants": 879,
-      "verdict_rationale": "The runner is substantive rather than a print-only certificate: it builds the Bessel-determinant series and performs exact rank/nullspace checks. However, one load-bearing finite exclusion claimed by the note is not actually computed: r=2,d=12 is marked skipped in the source logic and omitted from the detailed stdout. Therefore the bounded certificate is too broad as stated, even before promoting it to all-order minimality through the external D-module and creative-telescoping imports."
+      "verdict_rationale": null
     },
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05": {
       "audit_date": "2026-05-17T12:37:35.137551+00:00",
@@ -258863,9 +259044,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2258,
-    "re_audit_required": 10,
-    "row_count": 2312,
-    "seeded_new": 0
+    "preserved_existing": 2264,
+    "re_audit_required": 4,
+    "row_count": 2313,
+    "seeded_new": 1
   }
 }

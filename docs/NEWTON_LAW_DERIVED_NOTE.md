@@ -40,9 +40,13 @@ The Green's function of the lattice Laplacian on `Z^3` satisfies
 G(r) = (-Delta_lat)^{-1}(r)  ->  1 / (4 pi |r|)    as |r| -> infinity.   (BA-2)
 ```
 
-Standard result of lattice potential theory (Maradudin, Montroll,
-Weiss, *Theory of Lattice Dynamics in the Harmonic Approximation*,
-1971); admitted as a textbook math input rather than derived in this
+This is a standard result of lattice potential theory (Maradudin,
+Montroll, Weiss, *Theory of Lattice Dynamics in the Harmonic
+Approximation*, 1971; also Spitzer, *Principles of Random Walk*,
+§29; Lawler, *Intersections of Random Walks*, §1.5). Recorded as a
+named non-derivation textbook import via the wrapper note
+[LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md);
+admitted as accepted mathematical input rather than derived in this
 note.
 
 (BA-1) and (BA-2) are the only bounded admissions. Conditional on

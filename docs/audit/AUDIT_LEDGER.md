@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1254 |
+| unaudited | 1259 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 150 |
+| ~~audited_conditional~~ | 146 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -50,31 +50,31 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 581 |
-| `audited_conditional` | 150 |
+| `audited_conditional` | 146 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1467 |
+| `unaudited` | 1472 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 974 |
+| `bounded_theorem` | 976 |
 | `decoration` | 26 |
 | `meta` | 217 |
 | `no_go` | 234 |
 | `open_gate` | 111 |
-| `positive_theorem` | 750 |
+| `positive_theorem` | 749 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 1059 |
+| `critical` | 1060 |
 | `high` | 69 |
 | `medium` | 280 |
 | `leaf` | 904 |
 
 - **Retained pending chain closure:** 4
-- **Citation cycles detected:** 157
+- **Citation cycles detected:** 158
 
 ### Runner classification (static heuristic)
 
@@ -709,7 +709,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `b_independence_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -778,7 +777,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
-| `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `growing_graph_expansion_skeptic_audit_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | B | - |
@@ -810,7 +808,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_grown_combined_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -818,7 +815,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | D | - |
-| `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1461,21 +1457,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-05-03.md`
   - `MINIMAL_AXIOMS_2026-04-11.md`
-- **auditor confidence:** high
-
-### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audited the note's claimed L1 Lieb-Robinson bound, L3 lattice light cone, L4 finite Cl(3) norm support, and its L2 exponential cluster-decomposition statement after the 2026-05-09 mass-gap bridge repair.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e11d2-ef45-7170-8c56-dd57cda7aaf3`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Step 4 promotes the LR commutator bound to thermal connected-correlator clustering by applying the LR bound in imaginary time and invoking a mass gap/confinement input to obtain equation (3).  _(class `B`)_
-- **chain closes:** False — The LR/light-cone/norm portions are structurally supported, but the L2 spatial thermal connected-correlator bound does not close. The missing step is a retained derivation of Δ_T > 0 plus a retained theorem converting the gap/LR or transfer-matrix input into spatial cluster decomposition for the canonical Cl(3) ⊗ Z^3 Hamiltonian.
-- **rationale:** Issue: the note's L2 step still depends on an explicit mass-gap input and on a spatial gap-plus-LR or spatial transfer-matrix clustering theorem that the packet says is open. Why this blocks: LR bounds control commutators/light cones, and the cited bridge only proves a finite-block temporal spectral lemma conditional on Δ_T > 0, so the advertised spatial thermal connected-correlator bound for canonical states is not derived from retained inputs. Repair target: derive Δ_T > 0 on the canonical Cl(3) ⊗ Z^3 staggered + Wilson Hamiltonian and add a retained spatial cluster-decomposition theorem with constants. Claim boundary until fixed: retain only L1/L3/L4 and conditional temporal gap-to-clustering support, not unconditional L2 spatial clustering.
-- **open / conditional deps cited:**
-  - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
 - **auditor confidence:** high
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`
@@ -5068,19 +5049,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The scoped theorem closes because all conclusions are direct consequences of the stated finite-matrix hypotheses, and the negative control confirms that conjugation symmetry of D is a real load-bearing assumption. The runner's beta=6 Wilson/Pieri instantiation is only evidence that one concrete finite packet satisfies the abstract hypotheses; the theorem itself is not claiming a physical spatial-environment transfer identity. Residual risk is scope drift into the parent Wilson boundary-character/Perron/untruncated construction, which this audit does not ratify.
 - **auditor confidence:** high
 
-### `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note`
-
-- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite NMAX=4, MODE_MAX=80 SU(3) Wilson coefficient and fusion-recursion packet constructing one truncated tensor-transfer word and checking positivity, conjugation symmetry, and unit-vector boundary nonnegativity; not the full spatial-environment boundary identity or Perron data.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1259-0990-7e33-b314-e0df0dc5da21`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** By Theorems 1 and 2, the unmarked spatial boundary character coefficients then satisfy structurally z_(p,q)^env(beta) = <chi_(p,q), (T_beta^env,tensor)^(L_perp-1) eta_beta^env>.  _(class `A`)_
-- **chain closes:** False — The finite runner verifies a constructed positive tensor word, but the note does not derive that this word is the actual unmarked spatial-environment slice transfer or that the stated boundary readout equals the actual z_(p,q)^env(beta). The source explicitly leaves the full untruncated beta=6 tensor-transfer construction, multi-word coverage, and Perron/boundary evaluation open.
-- **rationale:** Issue: the load-bearing boundary-character identity is asserted structurally, while the runner only checks one truncated positive tensor word built from local ingredients. Why this blocks: positivity and swap symmetry of that finite word do not prove that actual residual spatial-environment boundary amplitudes arise from the claimed transfer operator. Repair target: a retained bridge theorem and runner constructing the actual spatial-environment slice transfer, boundary state, and readout, or a split note scoped only to the one finite tensor-word packet. Claim boundary until fixed: bounded evidence for local Wilson coefficients, SU(3) fusion primitives, and one NMAX=4/MODE_MAX=80 positivity example.
-- **auditor confidence:** high
-
 ### `gauge_vacuum_plaquette_spectral_measure_theorem_note`
 
 - **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md)
@@ -7739,21 +7707,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `NEWTON_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
-### `newton_law_derived_note`
-
-- **Note:** [`NEWTON_LAW_DERIVED_NOTE.md`](../../docs/NEWTON_LAW_DERIVED_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded derivation of the inverse-square force law from admitted BA-1 lattice Poisson equation plus admitted BA-2 Z^3 lattice Green's-function asymptotic, with finite-lattice distance-law runner support.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-20260511-newton-law-derived`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given BA-1 and BA-2, a point source gives phi(r)=M G(r) -> M/(4 pi r), and F=-M_test grad(phi)=M M_test/(4 pi r^2).  _(class `A`)_
-- **chain closes:** False — The algebra from BA-1 and BA-2 to the inverse-square product law closes, but BA-1 is admitted rather than derived; the direct dependency only gives a conditional implication under the stipulated L^{-1}=G_0 closure identity. BA-2 is also admitted as an external textbook asymptotic rather than retained inside this audit packet.
-- **rationale:** Issue: the Newton-law derivation rests on two bounded admissions, especially BA-1, the lattice Poisson equation as the equation of motion. Why this blocks: the cited gravity self-consistency dependency is retained only as a conditional algebraic implication under a stipulated closure identity, so it does not derive BA-1 from the framework axiom. Repair target: provide a retained bridge theorem deriving BA-1 from Cl(3) on Z^3, and pin the BA-2 lattice Green's-function asymptotic as an accepted/retained mathematical input. Claim boundary until fixed: given BA-1 and BA-2, the class-A inverse-square/product-law derivation and finite-lattice runner support may be cited, but not an unconditional Newton-law derivation from the framework baseline.
-- **open / conditional deps cited:**
-  - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
-- **auditor confidence:** high
-
 ### `newton_persistent_pattern_control_note_2026-04-11`
 
 - **Note:** [`NEWTON_PERSISTENT_PATTERN_CONTROL_NOTE_2026-04-11.md`](../../docs/NEWTON_PERSISTENT_PATTERN_CONTROL_NOTE_2026-04-11.md)
@@ -8388,21 +8341,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** If a real polynomial p(t) has degree d >= 1, then p(t)/t^d tends to its nonzero leading coefficient, so |p(t)| diverges as t -> +infinity; hence finite limit or boundedness on [0,+infinity) forces p constant.  _(class `A`)_
 - **chain closes:** True — The proof is elementary polynomial algebra and the runner verifies the same leading-term, finite-limit, endpoint-obstruction, boundedness, and constant negative-control checks by exact SymPy algebra. The source explicitly excludes the parent Wilson/plaquette endpoint and hierarchy claims, so no external physical bridge is needed.
 - **rationale:** The audited claim is a standalone algebra theorem, not the parent plaquette obstruction. The note proves the leading-term asymptotic directly and derives the finite-limit, two-endpoint, and boundedness corollaries without importing any physical observable or comparator. The runner exits with PASS=52 FAIL=0 and checks the proof surface through exact symbolic limits, degree/leading-coefficient checks, endpoint obstruction examples, and constant negative controls. Residual risk is only misuse of this algebra fact by downstream physical notes, which is outside this claim scope.
-- **auditor confidence:** high
-
-### `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06`
-
-- **Note:** [`PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md`](../../docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded V=1 SU(3) single-plaquette exact-arithmetic Picard-Fuchs certificate at Taylor depth 40 for the candidate order-3 operator, including finite annihilation, recurrence, lower-order exclusion, uniqueness, and higher-degree multiple checks.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-123748-20260517T123748Z-5fd98dd6-plaquette_v1_picard_fuch-targeted`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Runner output for ORDER=40 confirms that the rank of the matching matrix at every tested (r,d) in {1,2} x {0,...,12} equals the number of unknowns, hence no non-trivial annihilator of order <=2 with coefficient degree <=12 exists.  _(class `A`)_
-- **chain closes:** False — The runner source does exact rational Taylor and rank computations, but it skips the r=2,d=12 lower-order exclusion case because ORDER=40 gives only 36 usable equations for 39 unknowns, while still reporting the d<=12 exclusion as passed. The all-order minimal-annihilator interpretation also remains conditional on external holonomic-rank and creative-telescoping inputs not closed by this restricted packet.
-- **rationale:** The runner is substantive rather than a print-only certificate: it builds the Bessel-determinant series and performs exact rank/nullspace checks. However, one load-bearing finite exclusion claimed by the note is not actually computed: r=2,d=12 is marked skipped in the source logic and omitted from the detailed stdout. Therefore the bounded certificate is too broad as stated, even before promoting it to all-order minimality through the external D-module and creative-telescoping imports.
-- **open / conditional deps cited:**
-  - `PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md`
 - **auditor confidence:** high
 
 ### `plaquette_v1_picard_fuchs_ode_note_2026-05-05`

@@ -16125,6 +16125,10 @@
       "to": "gravity_observable_hierarchy_note"
     },
     {
+      "from": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "to": "newton_law_derived_note"
+    },
+    {
       "from": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",
       "to": "monopole_derived_note"
     },
@@ -18387,6 +18391,10 @@
     {
       "from": "newton_law_derived_note",
       "to": "gravity_full_self_consistency_note"
+    },
+    {
+      "from": "newton_law_derived_note",
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
     },
     {
       "from": "nn_lattice_rescaled_c2_derivation_note_2026-05-10",
@@ -40603,14 +40611,14 @@
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
       "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "33745c83757f4b206f8f57569012058e421ba4211d2f4d205e8077ec136c3c5d",
+      "note_hash": "7d95b73213f18d99ec19a71f7b5facf75e6f49a81639c22769d667fcd01d8b12",
       "path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3"
@@ -52392,7 +52400,7 @@
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a373b2604f4c3032d3907f279f379024f5b46a02b0bd2743f63bea1372652a59",
+      "note_hash": "fa897f078135dd7f0e4fc65369aee3c55704d19dcc52d8a2ae66075070909fa5",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
       "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Theorem"
@@ -58867,6 +58875,20 @@
       "runner_path": "scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py",
       "title": "Lattice Green Function Zero-Argument Narrow Theorem"
     },
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": {
+      "claim_id": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "newton_law_derived_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5b0a55f8b1409d694520cbfe0515ef295baaac0e00fc84d0d59c6105db6f688f",
+      "path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+      "runner_path": null,
+      "title": "Lattice Green's Function Asymptotic (Maradudin 1971) \u2014 Named Non-Derivation Import"
+    },
     "lattice_keff_continuum_note": {
       "claim_id": "lattice_keff_continuum_note",
       "claim_type_author_hint": null,
@@ -62155,10 +62177,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "gravity_full_self_consistency_note"
+        "gravity_full_self_consistency_note",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5e0781d773a9b3d0472977bed4cfb71d6b5c30d5a7c60f68b13cef446c72b16e",
+      "note_hash": "d56eeca7ffbf89a77115f0a675f3cb16e1c5f4a988d9316db73b15f7c210a5a0",
       "path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "title": "Newton's Law Derived from the Physical Cl(3) Local Algebra on Z^3"
@@ -64007,7 +64030,7 @@
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9f6490818937fd306a74d979001a6627b81e3ba3222f5ceedf331820074adeb9",
+      "note_hash": "769e210cc9d5f216940a2352384c49112025330d617e4581a7cbdd9b5dc3dc62",
       "path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_MINIMALITY_PROOF_NOTE_2026-05-06.md",
       "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
       "title": "Plaquette V=1 Picard-Fuchs ODE: Minimality Certificate Note"
@@ -79526,26 +79549,26 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 447,
+      "bounded_theorem": 449,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1534,
+      "none": 1533,
       "open_gate": 44,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 894,
+      "bounded_theorem": 896,
       "decoration": 1,
       "meta": 173,
       "no_go": 161,
       "none": 450,
       "open_gate": 123,
-      "positive_theorem": 622
+      "positive_theorem": 621
     },
-    "edge_count": 9464,
+    "edge_count": 9466,
     "leaf_count": 745,
-    "node_count": 2424,
+    "node_count": 2425,
     "root_count": 837,
     "runners_with_path": 2017
   }

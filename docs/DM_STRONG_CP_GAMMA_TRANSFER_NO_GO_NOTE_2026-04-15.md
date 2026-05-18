@@ -96,6 +96,14 @@ supply it.
 So this is a current-stack no-go / boundary theorem, not an absolute
 impossibility theorem.
 
+## Upstream authorities
+
+- [STRONG_CP_THETA_ZERO_NOTE.md](STRONG_CP_THETA_ZERO_NOTE.md) — strong-CP theorem
+  keeping the CP source weak-sector only and the color commutant blind to the
+  weak phase.
+- [CKM_ATLAS_AXIOM_CLOSURE_NOTE.md](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md) — quark-block
+  CKM tensor-slot closure used in the boundary statement above.
+
 ## Command
 
 ```bash

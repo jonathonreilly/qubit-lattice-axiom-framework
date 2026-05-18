@@ -3557,6 +3557,14 @@
       "to": "causal_field_portability_note"
     },
     {
+      "from": "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
+      "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
+    },
+    {
+      "from": "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
+      "to": "yt_ward_identity_derivation_theorem"
+    },
+    {
       "from": "charged_lepton_koide_cone_algebraic_equivalence_note",
       "to": "three_generation_observable_theorem_note"
     },
@@ -8167,6 +8175,14 @@
     {
       "from": "dm_split2_interval_certified_dominance_closure_theorem_note_2026-04-21",
       "to": "dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18"
+    },
+    {
+      "from": "dm_strong_cp_gamma_transfer_no_go_note_2026-04-15",
+      "to": "strong_cp_theta_zero_note"
+    },
+    {
+      "from": "dm_strong_cp_gamma_transfer_no_go_note_2026-04-15",
+      "to": "ckm_atlas_axiom_closure_note"
     },
     {
       "from": "dm_su3_gauge_loop_obstruction_note_2026-04-25",
@@ -16517,6 +16533,30 @@
       "to": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
     },
     {
+      "from": "mesoscopic_surrogate_alternate_family_scout_note",
+      "to": "mesoscopic_surrogate_localization_frontier_note"
+    },
+    {
+      "from": "mesoscopic_surrogate_alternate_family_scout_note",
+      "to": "mesoscopic_surrogate_localization_sweep_note"
+    },
+    {
+      "from": "mesoscopic_surrogate_alternate_family_scout_note",
+      "to": "mesoscopic_surrogate_threshold_2d_note"
+    },
+    {
+      "from": "mesoscopic_surrogate_alternate_family_scout_note",
+      "to": "same_family_3d_closure_note"
+    },
+    {
+      "from": "mesoscopic_surrogate_alternate_family_scout_note",
+      "to": "valley_linear_asymptotic_bridge_note"
+    },
+    {
+      "from": "mesoscopic_surrogate_alternate_family_scout_note",
+      "to": "persistent_inertial_response_readiness_note"
+    },
+    {
       "from": "mesoscopic_surrogate_annular_tapered_sweep_note",
       "to": "mesoscopic_surrogate_localization_sweep_note"
     },
@@ -16731,6 +16771,10 @@
     {
       "from": "mirror_mutual_information_chokepoint_note",
       "to": "mirror_chokepoint_note"
+    },
+    {
+      "from": "mirror_mutual_information_chokepoint_note",
+      "to": "mirror_chokepoint_boundary_fit_note"
     },
     {
       "from": "mirror_mutual_information_note",
@@ -42100,9 +42144,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "no_go",
-      "deps": [],
+      "deps": [
+        "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26",
+        "yt_ward_identity_derivation_theorem"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "67988b75a578c0c6ceb9b6181196fb9c4813f996fd24a5b7ff18ee481e6332b5",
+      "note_hash": "c6ba39cdf7c5d2a9666c1b5c07d76851f18e9e4aa03a8a2fbc5df697d33b3ced",
       "path": "docs/CHARGED_LEPTON_DIRECT_WARD_FREE_YUKAWA_NO_GO_NOTE_2026-04-26.md",
       "runner_path": "scripts/frontier_charged_lepton_direct_ward_free_yukawa_no_go.py",
       "title": "Charged-Lepton Direct Ward Free-Yukawa No-Go"
@@ -48449,9 +48496,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "strong_cp_theta_zero_note",
+        "ckm_atlas_axiom_closure_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "07fa1d07044795c2b052d6cb0cb0e2286870385a2e27c21306af05d334778d08",
+      "note_hash": "7b2abe7e1a8483ffc463899c9cf897e97259eb7a5746ee619943bfa9352d6116",
       "path": "docs/DM_STRONG_CP_GAMMA_TRANSFER_NO_GO_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_strong_cp_gamma_transfer_nogo.py",
       "title": "DM Strong-CP `\\gamma`-Transfer Boundary"
@@ -59512,9 +59562,16 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "mesoscopic_surrogate_localization_frontier_note",
+        "mesoscopic_surrogate_localization_sweep_note",
+        "mesoscopic_surrogate_threshold_2d_note",
+        "same_family_3d_closure_note",
+        "valley_linear_asymptotic_bridge_note",
+        "persistent_inertial_response_readiness_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "df231f093b7c39c2877b81ece5f3de8734a66b1db8c8c4d28a4e93a3f013bc5f",
+      "note_hash": "0cde8b8223e376a7e7c935b2c15f3b79109e22595316398800b2fd3a34b620e8",
       "path": "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_alternate_family_scout.py",
       "title": "Mesoscopic Surrogate Alternate-Family Scout Note"
@@ -59937,12 +59994,13 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "mirror_chokepoint_note"
+        "mirror_chokepoint_note",
+        "mirror_chokepoint_boundary_fit_note"
       ],
       "helper_runner_paths": [
         "scripts/mirror_chokepoint_joint.py"
       ],
-      "note_hash": "1ab930fc5c97243ad06bf6d28837db7768966f573949e27ef04cfd04aeaf9f38",
+      "note_hash": "f351d65fa3ba1a1b0a8c65363da31e0930185bfdca4b2d2c267eb86f3820f794",
       "path": "docs/MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md",
       "runner_path": "scripts/mirror_mutual_information_chokepoint.py",
       "title": "Mirror Mutual Information Chokepoint Note"
@@ -78273,7 +78331,6 @@
     "central_band_dense_largen_note",
     "central_band_layernorm_note",
     "central_band_mass_window_note",
-    "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
     "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
     "charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27",
     "charged_lepton_koide_review_packet_2026-04-18",
@@ -78405,7 +78462,6 @@
     "dm_pns_attack_cascade_note_2026-04-19",
     "dm_sigma_hier_h_intrinsic_no_go_theorem_note_2026-04-20",
     "dm_split2_dense_grid_lipschitz_dominance_support_note_2026-04-21",
-    "dm_strong_cp_gamma_transfer_no_go_note_2026-04-15",
     "dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19",
     "dm_wilson_direct_descendant_canonical_path_derivation_no_go_note_2026-04-19_hostile_audit_findings_note_2026-05-17",
     "dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19_hostile_audit_findings_note_2026-05-17",
@@ -78640,7 +78696,6 @@
     "memory_decay_diagnosis_2026-04-11",
     "memory_mu2_geometry_sweep_note_2026-04-11",
     "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
-    "mesoscopic_surrogate_alternate_family_scout_note",
     "mesoscopic_surrogate_compact_floor_sweep_note_hostile_audit_findings_note_2026-05-17",
     "mesoscopic_surrogate_threshold_2d_note",
     "minimal_axioms_2026-04-11",
@@ -79008,10 +79063,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9357,
-    "leaf_count": 753,
+    "edge_count": 9368,
+    "leaf_count": 752,
     "node_count": 2424,
-    "root_count": 869,
+    "root_count": 866,
     "runners_with_path": 2017
   }
 }

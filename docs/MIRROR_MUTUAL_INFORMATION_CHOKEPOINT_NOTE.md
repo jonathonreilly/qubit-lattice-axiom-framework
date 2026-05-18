@@ -108,6 +108,13 @@ card with explicit `N = 40 / 60 / 80` advantage and explicit `N = 100`
 non-advantage. The descriptive power-law fits are now labeled descriptive
 only.
 
+## Upstream authority
+
+- [MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md) — the
+  finite-window boundary-fit certificate for the same dense exact-mirror
+  chokepoint parameter card; this MI diagnostic is the information-theoretic
+  companion to that certificate.
+
 ## What this note does NOT claim
 
 - A clean retained asymptotic mirror MI law.

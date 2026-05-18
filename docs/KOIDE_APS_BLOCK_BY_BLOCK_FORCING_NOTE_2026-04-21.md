@@ -72,3 +72,14 @@ The core identity (ζ − 1)(ζ² − 1) = 3 is an exact algebraic fact.
 There is no alternative consistent construction under the admitted topological
 data that would give a different ambient `η` value. The remaining open issue is
 the physical-observable bridge `delta_physical = eta_APS`.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the cited Cl(3)/Z^3 → PL S^3 x R continuum-limit and the ABSS-applicability
+prerequisite authorities consumed by the block-by-block executable
+verification above. It does not promote this note or change the
+audited claim scope.
+
+- [S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md) — admitted Cl(3) / Z^3 -> PL S^3 x R continuum-limit closure consumed by the "admitted Cl(3)/Z³ topological route" premise in the Statement above.
+- [PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md](PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — bundles the textbook PL-smoothability (Cerf-Munkres / Cerf-Hauptvermutung dim ≤ 6), Atiyah-Singer index theorem, and standard ABSS-prerequisite imports consumed by ABSS applicability blocks (h1)-(h5). The (ω - 1)(ω² - 1) = 3 core algebraic fact remains an exact symbolic identity verified by the runner.

@@ -53,19 +53,22 @@ imported authorities for this bounded result; the restricted packet does
 not currently provide retained-grade audited authority notes for the
 finite-rank operator construction or the coarse-grained exterior law.
 
-| Imported module | Role in this note |
-|---|---|
-| [`scripts/frontier_finite_rank_gravity_residual.py`](../scripts/frontier_finite_rank_gravity_residual.py) | constructs the exact finite-rank support operator `H_W = H_0 - P W P^T`, the Woodbury/Dyson identity that gives `q_eff = (I - W G_S)^-1 m`, and the exact exterior field `phi = G_0 P q_eff` (via `exact_finite_rank_field()`) |
-| [`scripts/frontier_coarse_grained_exterior_law.py`](../scripts/frontier_coarse_grained_exterior_law.py) | builds the finite-rank `phi` grid (`build_finite_rank_phi_grid()`) and runs the shell-averaging plus radial harmonic `phi_eff(r) = a/r` projection that produces the bounded coarse-grained metric residual reported in the verdict (via `analyze_family(...)`) |
-| [`scripts/frontier_oh_schur_boundary_action.py`](../scripts/frontier_oh_schur_boundary_action.py) | supplies the Schur Dirichlet-to-Neumann matrix `Lambda_R` and the stationary boundary-action evaluation used to verify that the exact finite-rank shell trace is a stationary point of `I_R` (via `schur_dtn_matrix(...)` and `analyze_family(...)`) |
+| Imported module | Role in this note | Wrapper note |
+|---|---|---|
+| [`scripts/frontier_finite_rank_gravity_residual.py`](../scripts/frontier_finite_rank_gravity_residual.py) | constructs the exact finite-rank support operator `H_W = H_0 - P W P^T`, the Woodbury/Dyson identity that gives `q_eff = (I - W G_S)^-1 m`, and the exact exterior field `phi = G_0 P q_eff` (via `exact_finite_rank_field()`) | [FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md](FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md) |
+| [`scripts/frontier_coarse_grained_exterior_law.py`](../scripts/frontier_coarse_grained_exterior_law.py) | builds the finite-rank `phi` grid (`build_finite_rank_phi_grid()`) and runs the shell-averaging plus radial harmonic `phi_eff(r) = a/r` projection that produces the bounded coarse-grained metric residual reported in the verdict (via `analyze_family(...)`) | [COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md](COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md) |
+| [`scripts/frontier_oh_schur_boundary_action.py`](../scripts/frontier_oh_schur_boundary_action.py) | supplies the Schur Dirichlet-to-Neumann matrix `Lambda_R` and the stationary boundary-action evaluation used to verify that the exact finite-rank shell trace is a stationary point of `I_R` (via `schur_dtn_matrix(...)` and `analyze_family(...)`) | [OH_SCHUR_BOUNDARY_ACTION_NOTE.md](OH_SCHUR_BOUNDARY_ACTION_NOTE.md) |
 
-**What the cite-chain does NOT close.** Only `OH_SCHUR_BOUNDARY_ACTION_NOTE.md`
-has a retained-grade upstream surface; the other two imported frontier
-modules do not have dedicated retained authority notes. The
-"missing_dependency_edge" repair target is therefore not directly satisfied
-by this rigorize pass; the chain remains conditional on those module-level
-imports being correct (the same conditional perimeter the audit already
-recorded). The runner's PASS=4/0 verifies the load-bearing exact-Woodbury
+**What the cite-chain does NOT close.** `OH_SCHUR_BOUNDARY_ACTION_NOTE.md`
+remains the strongest leg with a `retained_bounded` upstream surface.
+The other two imported frontier modules now have dedicated bounded-
+helper wrapper notes (`FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md`
+and `COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md`) added
+2026-05-17, so the citation graph carries explicit one-hop edges for
+each runner-imported module. The bounded scalar-to-metric reduction
+itself remains conditional on those helper-wrapper bounded characters
+being correct; promoting the wrappers themselves to a stronger upstream
+tier is a separate audit-lane question. The runner's PASS=4/0 verifies the load-bearing exact-Woodbury
 reconstruction (`6.939e-17`), exact Schur stationarity (`flux_err =
 4.163e-16`, `stationary_grad = 4.163e-16`), and bounded coarse-grained
 metric residual (`coarse = 7.028e-06` vs. `direct = 1.039e-02`,

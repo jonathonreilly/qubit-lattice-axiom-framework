@@ -136,3 +136,18 @@ The next non-optional tests are:
 5. **sweep the 3+1D architecture in dimensionless coordinates first, not just by raw lattice size**
    `delta = d/n` and `lambda = L/n` are now better control variables than
    lattice size alone.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for the
+overnight authorities consumed by the addendum, so the audit citation
+graph can track them. It does not promote this note or change the
+audited claim scope.
+
+- [CHIRAL_WALK_SYNTHESIS_2026-04-09.md](CHIRAL_WALK_SYNTHESIS_2026-04-09.md) — the parent overnight synthesis covering 1+1D, 2+1D, and the original 3+1D operating-point closure card.
+- [CHIRAL_LAYER_OSCILLATION_2026-04-09.md](CHIRAL_LAYER_OSCILLATION_2026-04-09.md) — overnight layer-oscillation evidence for the 1+1D and 2+1D chiral walks.
+- [CHIRAL_3PLUS1D_RECURRENCE_NOTE.md](CHIRAL_3PLUS1D_RECURRENCE_NOTE.md) — 3+1D recurrence note supplying the `delta = d/n` and `lambda = L/n` dimensionless control variables and the half-wrap / late pre-recurrence / post-recurrence AWAY-band organization.
+- [CHIRAL_3PLUS1D_MIXING_PERIOD_NOTE.md](CHIRAL_3PLUS1D_MIXING_PERIOD_NOTE.md) — 3+1D mixing-period note supplying the flat `pi / theta0` mixing-scale background timescale.
+- [CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md](CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md) — 3+1D boundary-scan / boundary-phase note supplying the boundary-robustness diagnostic.
+- [CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md](CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md) — coupled-coin scan supplying the symmetry-coupling improvement on 3D gauge response and 3D KG fit.
+- [CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md](CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md) — split mass / gravity susceptibility lane supplying the theta-envelope-vs-carrier-`k`-chromaticity diagnostic.

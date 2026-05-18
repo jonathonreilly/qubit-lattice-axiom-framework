@@ -3228,6 +3228,18 @@
       "dominant_class": null,
       "runner": "scripts/cmw_2d_sublattice_no_ssb_check.py"
     },
+    "coarse_grained_exterior_law_helper_note_2026-04-14": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_coarse_grained_exterior_law.py"
+    },
     "complete_prediction_chain_2026_04_15": {
       "assert_count": 0,
       "counts": {
@@ -4608,6 +4620,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py"
     },
+    "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py"
+    },
     "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16": {
       "assert_count": 1,
       "counts": {
@@ -4691,6 +4715,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_dm_leptogenesis_hrad_theorem.py"
+    },
+    "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py"
     },
     "dm_leptogenesis_ne_active_column_axiom_boundary_hostile_audit_findings_note_2026-05-17": {
       "assert_count": 1,
@@ -7620,6 +7656,18 @@
       "dominant_class": null,
       "runner": "scripts/lensing_fine_h_batch.py"
     },
+    "finite_rank_gravity_residual_helper_note_2026-04-14": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_finite_rank_gravity_residual.py"
+    },
     "finite_rank_source_to_metric_theorem_note": {
       "assert_count": 1,
       "counts": {
@@ -8795,6 +8843,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/gauge_vacuum_plaquette_doublet_dense_root_count_certificate_2026_05_03.py"
+    },
+    "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py"
     },
     "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20": {
       "assert_count": 1,
@@ -21756,6 +21816,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_tensor_support_center_excess_law.py"
     },
+    "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_tensorial_einstein_regge_completion.py"
+    },
     "thales_right_angle_narrow_theorem_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
@@ -31672,6 +31744,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_coarse_grained_exterior_law.py": {
+      "assert_count": 1,
+      "claims": [
+        "coarse_grained_exterior_law_helper_note_2026-04-14"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_color_projection_mc.py": {
       "assert_count": 0,
       "claims": [
@@ -32729,6 +32816,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -32829,6 +32931,21 @@
         "B": 0,
         "C": 0,
         "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem.py": {
+      "assert_count": 1,
+      "claims": [
+        "dm_leptogenesis_k00_sparse_face_target_preimage_theorem_note_2026-04-15"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 7
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -35943,6 +36060,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_finite_rank_gravity_residual.py": {
+      "assert_count": 1,
+      "claims": [
+        "finite_rank_gravity_residual_helper_note_2026-04-14"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_finite_rank_source_to_metric_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -36482,6 +36614,21 @@
         "A": 0,
         "B": 1,
         "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py": {
+      "assert_count": 0,
+      "claims": [
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
         "D": 0
       },
       "decoration_candidate": false,
@@ -46061,6 +46208,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_tensorial_einstein_regge_completion.py": {
+      "assert_count": 0,
+      "claims": [
+        "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_thales_right_angle_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -52971,12 +53133,12 @@
     "dominant_class_distribution": {
       "A": 190,
       "B": 260,
-      "C": 723,
-      "D": 294,
+      "C": 728,
+      "D": 295,
       "none": 431
     },
-    "runners_classified": 1898,
-    "runners_with_C": 933,
-    "runners_with_D": 542
+    "runners_classified": 1904,
+    "runners_with_C": 939,
+    "runners_with_D": 544
   }
 }

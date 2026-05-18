@@ -206,3 +206,25 @@ arithmetic on small staggered lattices. The checks are:
    claims, and continuum / full-GR overclaims.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
+
+## Upstream authority
+
+This note is an external narrow theorem note citing the standard
+Kogut-Susskind / Susskind staggered-fermion framework and two specific
+published lattice-scalar-coupling identification results.
+
+- **External authority — Kogut-Susskind staggered formulation**: J. Kogut & L. Susskind, "Hamiltonian formulation of Wilson's lattice gauge theories," *Phys. Rev. D* **11**, 395 (1975); L. Susskind, "Lattice fermions," *Phys. Rev. D* **16**, 3031 (1977). Sets up the single-component staggered field `chi(x)` and the staggered sign `epsilon(x) = (-1)^{x_1 + ... + x_d}` that appears in the parity-coupling diagonal.
+
+- **External authority — Zache et al. 2022 lattice scalar-coupling identification**: T. V. Zache, F. Hebenstreit, F. Jendrzejewski, M. K. Oberthaler, J. Berges, P. Hauke, "Cold-atom simulator for lattice scalar coupling in low dimensions," *Quantum Sci. Technol.* (or arXiv:2206.* — verify exact bibliographic data) — provides the identification of a scalar background field `Phi(x)` with the same staggered-parity factor as the mass.
+
+- **External authority — Dempsey-Klich-Lopez 2025 follow-up**: R. Dempsey, I. Klich, M. A. Lopez (or co-authors as listed on the relevant arXiv) — extends the Zache identification to the lapse-style equivalence-principle form `H_grav = sqrt(N) H_flat sqrt(N)` with `N = 1 + Phi/m`. The published version supplies the algebraic identity used in the lapse-vs-identity distinction above.
+
+- **Background textbook authorities (not load-bearing on this note)**: H. J. Rothe, *Lattice Gauge Theories: An Introduction*, 4th ed. (World Scientific 2012), Ch. 4 (staggered fermions); I. Montvay, G. Münster, *Quantum Fields on a Lattice* (Cambridge 1994), Ch. 4.
+
+This wrapper records the external Kogut-Susskind staggered framework
+and the two specific lattice-scalar-coupling identification papers as
+named non-derivation imports. The framework-side admissions (whether
+the framework-substrate identification with `Z^d` and `Phi` from the
+discrete Cl(3) on Z^3 axioms forces the parity coupling specifically)
+remain explicitly out of scope. The bounded scope is the named
+non-derivation import only.

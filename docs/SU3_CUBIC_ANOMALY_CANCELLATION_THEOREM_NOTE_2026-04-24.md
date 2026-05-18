@@ -47,8 +47,8 @@ cubic gauge anomaly exactly.
 | Input | Authority |
 |---|---|
 | Retained graph-first `SU(3)` gauge sector and `N_c = 3` color count | [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) |
-| Retained left-handed `Q_L`, `L_L` content | [LEFT_HANDED_CHARGE_MATCHING_NOTE.md](LEFT_HANDED_CHARGE_MATCHING_NOTE.md), `ANOMALY_FORCES_TIME_THEOREM.md` |
-| Retained one-generation right-handed completion | `ONE_GENERATION_MATTER_CLOSURE_NOTE.md`, `STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md` |
+| Retained left-handed `Q_L`, `L_L` content | [LEFT_HANDED_CHARGE_MATCHING_NOTE.md](LEFT_HANDED_CHARGE_MATCHING_NOTE.md), [ANOMALY_FORCES_TIME_THEOREM.md](ANOMALY_FORCES_TIME_THEOREM.md) |
+| Retained one-generation right-handed completion | [ONE_GENERATION_MATTER_CLOSURE_NOTE.md](ONE_GENERATION_MATTER_CLOSURE_NOTE.md), [STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md) |
 | Standard `SU(3)` cubic anomaly indices | Lie-algebra input for chiral gauge anomalies |
 
 ## Proof On Retained Content

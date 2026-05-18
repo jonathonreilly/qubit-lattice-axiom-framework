@@ -34,17 +34,20 @@ same ambient.
 
 ## Upstream authorities
 
-The runner imports 5 helper modules; of these, two have current framework
-wrapper notes:
+The runner imports 5 helper modules; of these, only one has a current
+framework wrapper note:
 
 - [DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md) — supplies the `Ne` projected-source-law inputs used to construct `TARGET` and `sparse_face_projected_data`.
-- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md) — supplies the `selected_line` selector used by the reduced-packet runner.
 
-Remaining missing-dep-edge admissions (no framework wrapper exists):
-- `frontier_dm_leptogenesis_dweh_even_split_transfer_layer` (transfer-layer helper)
-- `frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem` (sparse-face preimage theorem source)
-- `frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19` (line-selection helper supplying `compressed_local_block_from_line`)
+Additional wrappers (now linked):
+- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) — line-selection helper supplying `selected_line` + `compressed_local_block_from_line` + `BOUNDARY_FIRST_WEIGHTS`.
+- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md) — `rho1`-anchored least-distortion selector theorem.
+- [DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md](DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md) — `dW_e^H` even-split transfer-layer theorem supplying `TARGET` + `(S12, S13)` even-column split.
+- [DM_LEPTOGENESIS_K00_SPARSE_FACE_TARGET_PREIMAGE_THEOREM_NOTE_2026-04-15.md](DM_LEPTOGENESIS_K00_SPARSE_FACE_TARGET_PREIMAGE_THEOREM_NOTE_2026-04-15.md) — `K00`-sparse-face target-preimage theorem supplying the sparse-face preimage construction.
+
+All four upstream missing-dep-edge admissions from the original audit verdict are now closed via wrapper notes.
 
 Each of these would need a dedicated source-note wrapper before the
-remaining `compressed_local_block_from_line`, `solve_sparse_target_preimage`,
-and `sparse_face_projected_data` admissions can fully close.
+remaining `selected_line`, `compressed_local_block_from_line`,
+`hermitian_linear_responses`, `solve_sparse_target_preimage`, and
+`sparse_face_projected_data` admissions can fully close.

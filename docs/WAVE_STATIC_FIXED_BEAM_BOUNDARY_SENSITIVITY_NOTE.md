@@ -86,3 +86,21 @@ and medium `H`.
 ## Artifact chain
 
 - [`scripts/wave_static_fixed_beam_boundary_sensitivity.py`](../scripts/wave_static_fixed_beam_boundary_sensitivity.py)
+
+## Upstream authority
+
+The H = 0.5 default runner imports the following symbols from
+`scripts/wave_retardation_continuum_limit.py` (constants
+`K_PER_H`, `PW_PHYS`, `S_PHYS`, `SRC_LAYER_FRAC`, `T_PHYS_LAYERS`,
+and helper functions `cz`, `grow`, `prop_beam`, `solve_wave`). Those
+imports are documented as a one-hop dependency via the source note
+for the upstream module:
+
+- [WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md](WAVE_RETARDATION_CONTINUUM_LIMIT_NOTE.md) — source note for `scripts/wave_retardation_continuum_limit.py`, documenting the wave solver `solve_wave`, the lattice growth helper `grow`, the beam propagator `prop_beam`, the comparator helper `cz`, and the physical-parameter constants `K_PER_H`, `PW_PHYS`, `S_PHYS`, `SRC_LAYER_FRAC`, `T_PHYS_LAYERS`.
+
+This link registers the wave-retardation source note as the one-hop
+authority for the H = 0.5 default-run imports above. The note's
+binding-scope claim still rests only on the H = 0.5 default-run rows
+listed in §Results above; the H = 0.35 medium-H rows remain
+out-of-binding-scope until separately registered cached artifacts are
+supplied.

@@ -195,3 +195,7 @@ symbolic and numerical surrogates where needed):
     claim `v/M_Pl = exp(-4π²/g²)`).
 
 Expected runner result: `PASS=N`, `FAIL=0`.
+
+## Upstream authority
+
+- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded named-import umbrella wrapper covering Luescher admissibility / gradient-flow lattice charge and twisted-`T^4` `'t Hooft / van Baal` fractional `Q = k / N` sectors. Provides the one-hop authority for the regulator / twist / patching construction yielding the `Q = 1/2`, `S = 4 pi^2 / g^2` meron half-action sector.

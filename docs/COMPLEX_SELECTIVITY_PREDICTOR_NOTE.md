@@ -147,3 +147,12 @@ structured-family cards, not a universal family-portable
 discriminator; until the two unwired inputs land as one-hop edges,
 the headline reads as a **partial bounded predictor** over the
 five wired authorities.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named
+by the prior conditional audit so the audit citation graph can track
+them. It does not promote this note or change the audited claim scope.
+
+- [CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — original grown-basin complex-action companion (`retained_complex = yes`, anchor crossover `yes on nearby rows`).
+- [SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md](SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md) — second-family boundary-window discriminator (exact `gamma=0` + Born proxy + crossover survive narrowly; lose it in the tighter boundary window).

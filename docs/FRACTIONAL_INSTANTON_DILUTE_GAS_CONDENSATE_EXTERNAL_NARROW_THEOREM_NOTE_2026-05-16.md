@@ -272,3 +272,7 @@ symbolic and `mpmath`-equivalent numerical surrogates where needed):
     claim `v/M_Pl = exp(-S_frac)`).
 
 Expected runner result: `PASS=N`, `FAIL=0`.
+
+## Upstream authority
+
+- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded named-import umbrella wrapper covering Bogomolny bound, Atiyah-Singer integrality, Luescher admissibility / gradient-flow lattice charge, and twisted-`T^4` `'t Hooft / van Baal` fractional `Q = k / N` sectors. Provides the one-hop authority for the upstream fractional-`Q` derivation on twisted `T^4` consumed by the fractional-instanton dilute-gas condensate construction.

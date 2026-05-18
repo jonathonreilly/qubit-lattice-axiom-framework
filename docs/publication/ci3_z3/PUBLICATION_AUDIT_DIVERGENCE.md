@@ -22,10 +22,9 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 6 |
 | critical | `audited_renaming` | 2 |
 | medium | `unaudited` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 509
+**Total non-retained-grade rows in publication tables:** 508
 
 ## Per-row breakdown
 
@@ -395,7 +394,6 @@ publication tables phrase it.
 | critical | `pmns_theta23_upper_octant_chamber_closure_prediction_note_2026-04-17` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | critical | `pmns_three_flux_holonomy_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_transfer_operator_dominant_mode_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `poisson_exhaustive_uniqueness_note` | `audit_in_progress` | `audit_in_progress` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `primordial_spectrum_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md |
 | critical | `proton_lifetime_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `q_integer_spectrum_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

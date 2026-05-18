@@ -254,6 +254,14 @@ accepted rather than treated as a gap:
    of the framework surface, not an extra ad hoc axiom introduced to rescue
    this lane.
 
+Items 1, 2, 3 above, plus the Alexander-trick `MCG(S^2) = Z / 2`
+gluing-map uniqueness used in Step 5 and the Kawamoto-Smit
+homogeneity premise used in Step 2 of "What Is Actually Proved", are
+all named non-derivation textbook imports registered via the umbrella
+wrapper:
+
+- [PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md](PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — bounded umbrella wrapper bundling Alexander 1924 (PL Schoenflies in dim 3), Alexander 1930 (cone theorem), Perelman 2003 + Moise 1952, Alexander 1923 trick + `MCG(S^2) = Z / 2` (Smillie 1977), and Kawamoto-Smit 1981 staggered-fermion uniformity as named one-hop authorities.
+
 With those points stated explicitly, the cap-map uniqueness step is no longer
 only a bounded support note. It belongs to the retained `S^3` closure chain,
 and the global exhaustiveness gap flagged in the prior audit is addressed

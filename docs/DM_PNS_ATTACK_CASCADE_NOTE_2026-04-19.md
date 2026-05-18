@@ -419,3 +419,14 @@ The A-BCC closure chain is complete:
 The sole observational residual (T2K + NuFit) was already accepted into
 the retained framework before this cycle. A-BCC is now fully theorem-
 grade within that framework, with zero additional axiom cost.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the four sigma-chain authorities consumed by the PNS-from-sigma-chain
+conditional theorem, so the audit citation graph can track them. It
+does not promote this note or change the audited claim scope.
+
+- [SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md](SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md) — `sigma-hier = (2, 1, 0)` uniqueness theorem supplying the chamber constraint `q + delta >= sqrt(8/3)` consumed in step (2) above.
+- [ABCC_CP_PHASE_NO_GO_THEOREM_NOTE_2026-04-19.md](ABCC_CP_PHASE_NO_GO_THEOREM_NOTE_2026-04-19.md) — `sin(delta_CP) < 0` ABCC_CP_PHASE T2K-compatibility no-go consumed in step (3) above (rules out all in-chamber `C_neg` solutions under `sigma = (2, 1, 0)`).
+- [DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md](DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md) — `P3` Sylvester linear-path signature theorem consumed in step (4) above to derive `det > 0` on the Basin 1 path.

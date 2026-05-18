@@ -63,3 +63,15 @@ odd source and/or the even response channels.
 ```bash
 python3 scripts/frontier_dm_neutrino_triplet_normalization_target.py
 ```
+
+## Upstream authority
+
+This is an arithmetic comparison note. Its inputs come from named
+benchmark values on the DM-neutrino transport branch; the comparison
+is conditional on those inputs being correct.
+
+- [DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md) — supplies the `epsilon`, `epsilon_DI`, and `eta_DI` benchmark normalization values consumed in the ratio `epsilon / epsilon_DI = 0.277` and the closure target `eta_obs / eta_DI = 0.936`.
+- [DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_TRANSPORT_INTEGRAL_THEOREM_NOTE_2026-04-16.md) — supplies the fixed-`M_1` / washout `eta` proportionality consumed in the "at fixed `M_1` and washout" qualifier.
+- [DM_NEUTRINO_SINGLET_DOUBLET_CP_SLOT_TOOL_NOTE_2026-04-15.md](DM_NEUTRINO_SINGLET_DOUBLET_CP_SLOT_TOOL_NOTE_2026-04-15.md) — supplies the exact source-phase value `phi = 2 pi / 3` consumed in the `sin(phi) = sqrt(3) / 2` phase-ceiling calculation.
+
+This is a bounded arithmetic note: the comparison `0.936 / 0.277 = 3.37` and the phase ceiling `1 / sin(2 pi / 3) = 1.155` are conditional on the cited benchmark values being correct.

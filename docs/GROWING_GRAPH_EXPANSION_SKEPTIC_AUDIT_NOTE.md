@@ -7,12 +7,12 @@
 
 Primary target:
 
-- [`docs/GROWING_GRAPH_EXPANSION_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GROWING_GRAPH_EXPANSION_CARD_NOTE.md)
+- [GROWING_GRAPH_EXPANSION_CARD_NOTE.md](GROWING_GRAPH_EXPANSION_CARD_NOTE.md)
 
 Supporting diagnostic:
 
-- [`docs/GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md)
-- [`logs/2026-04-06-growing-graph-dynamic-limit.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-growing-graph-dynamic-limit.txt)
+- [GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md](GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md) — carries the RMS / width / node-count / mean-delay values cited below.
+- [`logs/2026-04-06-growing-graph-dynamic-limit.txt`](../logs/2026-04-06-growing-graph-dynamic-limit.txt) — raw runner stdout for the dynamic-limit diagnostic.
 
 ## What survives
 

@@ -50,3 +50,7 @@ The DM-side selector problem is now sharply localized:
 ```bash
 python3 scripts/frontier_dm_full_closure_same_surface_thermal_integral_representation_theorem.py
 ```
+
+## Upstream authority
+
+- [DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md](DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — named non-derivation import wrapper for the textbook Maxwell-Boltzmann thermal-velocity average, the freeze-out slice value `x_f = 25` (hence `a = x_f / 4 = 25 / 4`), and the Sommerfeld argument normalization used in the continuum integral above.

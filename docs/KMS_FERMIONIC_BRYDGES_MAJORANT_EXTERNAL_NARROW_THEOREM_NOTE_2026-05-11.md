@@ -63,3 +63,23 @@ The paired runner checks:
 8. positivity of the BBF norm by construction (sum of non-negative Gram norms over polymers).
 
 Expected runner result: `PASS=N`, `FAIL=0`.
+
+## Upstream authority
+
+This note is an external narrow theorem note citing a rigorous-RG
+preprint. The Brydges-Battle-Federbush (BBF) polymer-norm
+machinery and the Polchinski Wilsonian flow are textbook
+constructive-QFT material; the specific scale-integrability bound is
+the Kroschinsky-Marchetti-Salmhofer majorant-method result cited by
+this note.
+
+- **External authority — Kroschinsky-Marchetti-Salmhofer majorant method**: Wilhelm Kroschinsky, Domingos H. U. Marchetti, and Manfred Salmhofer, "The majorant method for the fermionic effective action," arXiv:2404.06099. This is the source note's cited authority for the per-scale majorant bound `d/dl ||V_l||_h <= a(l) ||V_l||_h^2 + b(l) ||V_l||_h`, including the hypotheses on the Gram covariance decomposition that fix the coefficient functions `a(l), b(l)`. The hypotheses include: a Gram-type fermion Brydges-Battle-Federbush polymer norm with auxiliary weight `h > 0`; a Polchinski continuous Wilsonian flow with infrared cutoff `l`; the polymer activity decomposition of the effective interaction `V_l`; and the bound `a(l), b(l) >= 0` integrable on the scale interval. The small-data corollary is standard rigorous-RG output of the per-scale majorant bound applied at the UV endpoint.
+
+- **Background textbook authorities (not load-bearing on this note)**: D. Brydges & T. Spencer, *Comm. Math. Phys.* **97**, 125 (1985); D. Brydges, J. Imbrie, *J. Stat. Phys.* **110**, 503 (2003); M. Salmhofer, *Renormalization: An Introduction* (Springer 1999). These provide the BBF polymer-norm and Wilsonian flow machinery into which KMS Theorem 1 plugs.
+
+This wrapper records the external KMS authority and its standard
+background as named non-derivation imports. The framework-side
+admissions (whether the staggered-Dirac blocking is the KMS continuous
+Polchinski flow; whether the canonical surface lies in the KMS small-
+data regime) are explicitly out of scope and remain open as stated in
+the Boundary section above.

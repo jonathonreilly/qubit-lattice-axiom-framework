@@ -157,3 +157,17 @@ wall. The strongest decoherence-side symmetry lane is `Z2 x Z2`, and the
 strongest retained gravity-side-alone lane is generated asymmetry-persistence
 + layer norm. The strongest emergence-facing constraint is the grown-graph
 density optimum near `npl≈30`; dense grown graphs fail once CLT dominates.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the five underlying hard-geometry / mirror / Z2xZ2 / asymmetry-
+persistence / grown-graph lane authorities consumed by the head-to-
+head ranking. It does not promote this note or change the audited
+claim scope.
+
+- [CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md](CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md) — dense central-band + layer norm joint coexistence lane authority.
+- [MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md) — mirror chokepoint / Z2-protected transfer dense boundary fit at `N = 100`.
+- [HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md](HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md) — higher-symmetry `Z2 x Z2` gravity-probe lane authority.
+- [ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md](ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md) — generated asymmetry-persistence + layer norm gravity-side lane authority.
+- [ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md](ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md) — asymmetry-persistence mass-side `delta ~ M^alpha` follow-up.

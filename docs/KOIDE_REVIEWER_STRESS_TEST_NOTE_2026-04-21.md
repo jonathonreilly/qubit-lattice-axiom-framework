@@ -138,3 +138,15 @@ behind `δ` remain open.
 
 The stress-test does not discharge those remaining physical bridges; it only
 shows that the currently claimed support computations are internally clean.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the three executable-check authority surfaces that the stress-test
+routes to. It does not promote this note or change the audited claim
+scope.
+
+- [KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md) — Frobenius uniqueness authority for the F = log(E_+ · E_⊥) extremal form and the isotype-split uniqueness consumed by CAT-A objection A1.
+- [KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md](KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) — ABSS applicability authority for the η = 2/9 ambient APS value consumed by CAT-A objection A4 and CAT-B objection B2.
+- [S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md) — retained `Cl(3) / Z^3 -> PL S^3 x R` continuum-limit closure already cited in the "framework's retained axioms" section above.
+- [KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md](KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md) — Q-delta closure package README cross-referencing the topological-robustness, equivariant-smoothing, and PL-to-smooth-spin-manifold authorities consumed by CAT-B objection B2.

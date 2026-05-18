@@ -81,3 +81,7 @@ python3 scripts/frontier_dimension_selection.py
 ```
 
 Runtime: < 1 second. Requires numpy and scipy.
+
+## Upstream authority
+
+- [DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md](DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — bounded named-import wrapper for the two textbook upper-bound arguments (Bertrand 1873 stable-orbit theorem giving `d <= 3`; Tangherlini 1963 / Ehrenfest 1917 atomic-stability arguments giving `d <= 4`) that complement the runner-verified `d >= 3` lower bound here. Together with the runner's lower bound, the textbook upper-bound imports give the joint conclusion `d = 3`.

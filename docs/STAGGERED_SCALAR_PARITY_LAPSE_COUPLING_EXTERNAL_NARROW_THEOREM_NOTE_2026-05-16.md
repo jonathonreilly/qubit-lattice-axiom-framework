@@ -206,3 +206,29 @@ arithmetic on small staggered lattices. The checks are:
    claims, and continuum / full-GR overclaims.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
+
+## Upstream authority
+
+This note is an external narrow theorem note citing the standard
+Kogut-Susskind / Susskind staggered-fermion framework and two specific
+published lattice-scalar-coupling identification results.
+
+- **External authority — Kogut-Susskind staggered formulation**: J. Kogut & L. Susskind, "Hamiltonian formulation of Wilson's lattice gauge theories," *Phys. Rev. D* **11**, 395 (1975); L. Susskind, "Lattice fermions," *Phys. Rev. D* **16**, 3031 (1977). Sets up the single-component staggered field `chi(x)` and the staggered sign `epsilon(x) = (-1)^{x_1 + ... + x_d}` that appears in the parity-coupling diagonal.
+
+- **External authority — lattice scalar-coupling identification**: the
+  External References section above records the Zache et al. 2022 and
+  Dempsey-Klich-Lopez 2025 sources this note cites for the
+  staggered-parity scalar-coupling identification and the lapse-style
+  equivalence-principle form `H_grav = sqrt(N) H_flat sqrt(N)` with
+  `N = 1 + Phi/m`. This dependency section does not add bibliographic
+  facts beyond the source note's reference list.
+
+- **Background textbook authorities (not load-bearing on this note)**: H. J. Rothe, *Lattice Gauge Theories: An Introduction*, 4th ed. (World Scientific 2012), Ch. 4 (staggered fermions); I. Montvay, G. Münster, *Quantum Fields on a Lattice* (Cambridge 1994), Ch. 4.
+
+This wrapper records the external Kogut-Susskind staggered framework
+and the two specific lattice-scalar-coupling identification papers as
+named non-derivation imports. The framework-side admissions (whether
+the framework-substrate identification with `Z^d` and `Phi` from the
+discrete Cl(3) on Z^3 axioms forces the parity coupling specifically)
+remain explicitly out of scope. The bounded scope is the named
+non-derivation import only.

@@ -69,3 +69,14 @@ A retained shared-law theorem would require auditing or registering
 the cited grown-transfer / second-family / connected-family
 authorities, plus a runner that recomputes controls and `F~M`
 values on the same signed-source observable.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the in-docs family-card authorities so the audit citation graph can
+track them. It does not promote this note or change the audited
+claim scope.
+
+- [ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md](ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md) — alternative-connectivity family basin row supplying `F~M = 0.999994` on the full tested drift sweep.
+- [SECOND_GROWN_FAMILY_COMPLEX_NOTE.md](SECOND_GROWN_FAMILY_COMPLEX_NOTE.md) — second-family complex anchor row supplying `F~M = 1.000` on the `gamma = 0` baseline.
+- [ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md](ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md) — alt-family `F~M` transfer evaluation supplying the precise `0.999994` weak-field linearity value on the alt-connectivity slice. The original grown-transfer basin authority is currently archived under `archive_unlanded/grown-transfer-stale-runners-2026-04-30/`, so it is not wired as an in-`docs/` one-hop edge here.

@@ -74,3 +74,8 @@ So the DM thermal layer is now materially harder than before:
 ```bash
 python3 scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py
 ```
+
+## Upstream authority
+
+- [DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md) — exact same-surface thermal integral form on the freeze-out slice `a = x_f / 4 = 25 / 4` whose positive-series decomposition is the load-bearing input for the `J1(c)`, `J2(c)` Meijer-G representations and the exact tail bounds.
+- [DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md](DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — named non-derivation import wrapper for the underlying Maxwell-Boltzmann thermal-velocity average and the Gaussian variable change `v -> sqrt(2T/m_chi) sqrt(t)` that puts the `J1/J2` integrals in canonical form. The Meijer-G bound implementation is a standard symbolic-integration evaluation on this canonical form.

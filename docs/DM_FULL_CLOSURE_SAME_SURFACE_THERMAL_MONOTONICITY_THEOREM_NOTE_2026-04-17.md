@@ -64,3 +64,8 @@ uniqueness.
 ```bash
 python3 scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py
 ```
+
+## Upstream authority
+
+- [DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md) — exact same-surface thermal integral form `<S> = (2/sqrt(pi)) ∫_0^∞ S(...) sqrt(t) e^{-t} dt` on the freeze-out slice `a = x_f / 4 = 25 / 4` whose `alpha` dependence is the load-bearing input for the monotonicity argument below.
+- [DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md](DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — named non-derivation import wrapper for the underlying Maxwell-Boltzmann thermal-velocity average and Sommerfeld argument normalization that the integral form descends from. The `64 : 1` same-surface channel-weight assignment is documented separately in the channel-weight authority on the DM same-surface lane.

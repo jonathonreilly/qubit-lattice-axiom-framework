@@ -171,3 +171,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   retained Poisson resource sweep" diagnostic; that direction is the
   load-bearing one. The back-edge here is graph-bookkeeping
   navigation only.)
+- [teleportation_resource_from_poisson_note](TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)

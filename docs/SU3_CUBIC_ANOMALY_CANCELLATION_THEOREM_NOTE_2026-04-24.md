@@ -175,3 +175,10 @@ proposal_allowed: false
 proposal_allowed_reason: "Source note records the structural cancellation theorem. Effective retained tier is set by the independent audit lane based on retained-grade upstream availability of GRAPH_FIRST_SU3_INTEGRATION_NOTE (SU(3) gauge sector and N_c = 3), LEFT_HANDED_CHARGE_MATCHING_NOTE (retained Q_L content), and ONE_GENERATION_MATTER_CLOSURE_NOTE (retained u_R^c, d_R^c completion); not asserted by author."
 bare_retained_allowed: false
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [one_generation_matter_closure_note](ONE_GENERATION_MATTER_CLOSURE_NOTE.md)
+- [standard_model_hypercharge_uniqueness_theorem_note_2026-04-24](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md)

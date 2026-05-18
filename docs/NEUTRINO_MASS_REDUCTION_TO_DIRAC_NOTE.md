@@ -251,3 +251,6 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   consumes the present note's content for its row description, so the
   load-bearing citation direction is *publication.ci3_z3.publication_matrix
   → this_neutrino_mass_reduction_to_dirac_note*, not vice versa.)
+- [publication.ci3_z3.derivation_atlas](publication/ci3_z3/DERIVATION_ATLAS.md)
+- [higgs_vacuum_explicit_systematic_note](HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md)
+- [higgs_mass_derived_note](HIGGS_MASS_DERIVED_NOTE.md)

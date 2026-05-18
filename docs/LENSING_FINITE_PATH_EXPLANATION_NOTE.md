@@ -222,3 +222,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   direction is *lensing_long_path_test → this_finite_path_explanation*,
   not vice versa. This bookkeeping bullet duplicated the already-backticked
   entry above; left in see-also form for textual parity.)
+- [lensing_long_path_test_note](LENSING_LONG_PATH_TEST_NOTE.md)

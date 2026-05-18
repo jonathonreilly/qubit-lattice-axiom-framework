@@ -1021,6 +1021,22 @@
       "to": "rconn_derived_note"
     },
     {
+      "from": "asymmetry_persistence_born_note",
+      "to": "asymmetry_persistence_collapse_note"
+    },
+    {
+      "from": "asymmetry_persistence_born_note",
+      "to": "asymmetry_persistence_joint_card_note"
+    },
+    {
+      "from": "asymmetry_persistence_mass_window_note",
+      "to": "asymmetry_persistence_joint_card_note"
+    },
+    {
+      "from": "asymmetry_persistence_mass_window_note",
+      "to": "asymmetry_persistence_pilot_note"
+    },
+    {
       "from": "atomic_hydrogen_helium_probe_note",
       "to": "bound_state_selection_note"
     },
@@ -10637,6 +10653,10 @@
       "to": "graph_first_su3_integration_note"
     },
     {
+      "from": "g_bare_forced_via_ward_substitution_narrow_theorem_note_2026-05-17",
+      "to": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
+    },
+    {
       "from": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
       "to": "physical_lattice_necessity_note"
     },
@@ -16317,6 +16337,10 @@
       "to": "born_scattering_comparison_note"
     },
     {
+      "from": "lensing_finite_path_explanation_note",
+      "to": "lensing_long_path_test_note"
+    },
+    {
       "from": "lensing_long_path_test_note",
       "to": "lensing_finite_path_explanation_note"
     },
@@ -17933,6 +17957,18 @@
       "to": "charged_lepton_two_higgs_canonical_reduction_note"
     },
     {
+      "from": "neutrino_mass_reduction_to_dirac_note",
+      "to": "publication.ci3_z3.derivation_atlas"
+    },
+    {
+      "from": "neutrino_mass_reduction_to_dirac_note",
+      "to": "higgs_vacuum_explicit_systematic_note"
+    },
+    {
+      "from": "neutrino_mass_reduction_to_dirac_note",
+      "to": "higgs_mass_derived_note"
+    },
+    {
       "from": "neutrino_normal_grammar_u1_rigidity_stretch_attempt_note_2026-04-28",
       "to": "neutrino_majorana_finite_normal_grammar_no_go_note"
     },
@@ -18919,6 +18955,38 @@
     {
       "from": "periodic_2d_wraparound_fix_note_2026-04-11",
       "to": "bmv_threebody_note_2026-04-11"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_compact_floor_sweep_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "localized_source_response_sweep_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "broad_surrogate_point_source_compare_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_annular_tapered_sweep_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_h025_constrained_localization_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_backreaction_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_multistage_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_threshold_2d_note"
     },
     {
       "from": "persistent_object_exact_lattice_park_note_2026-04-16",
@@ -23209,6 +23277,10 @@
       "to": "minimal_axioms_2026-04-11"
     },
     {
+      "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "to": "left_handed_charge_matching_note"
     },
@@ -23495,6 +23567,14 @@
     {
       "from": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
       "to": "left_handed_charge_matching_note"
+    },
+    {
+      "from": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
+      "to": "one_generation_matter_closure_note"
+    },
+    {
+      "from": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
+      "to": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
     },
     {
       "from": "su3_dabc_symmetric_theorem_note_2026-05-02",
@@ -23879,6 +23959,10 @@
     {
       "from": "teleportation_native_transport_theory_note",
       "to": "teleportation_retained_axis_operator_algebra_closure_note"
+    },
+    {
+      "from": "teleportation_poisson_resource_sweep_note",
+      "to": "teleportation_resource_from_poisson_note"
     },
     {
       "from": "teleportation_preparation_readout_probe_note",
@@ -25618,6 +25702,10 @@
     },
     {
       "from": "wave_static_direct_probe_fine_note",
+      "to": "wave_retardation_continuum_limit_note"
+    },
+    {
+      "from": "wave_static_fixed_beam_boundary_sensitivity_note",
       "to": "wave_retardation_continuum_limit_note"
     },
     {
@@ -40173,7 +40261,10 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "asymmetry_persistence_collapse_note",
+        "asymmetry_persistence_joint_card_note"
+      ],
       "helper_runner_paths": [
         "scripts/asymmetry_persistence_collapse_pilot.py",
         "scripts/asymmetry_persistence_joint_card.py",
@@ -40181,7 +40272,7 @@
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "note_hash": "6643f6b915f7bc46f647d8b313da949401a70fda4b6dfc4ad957d3adca8ab544",
+      "note_hash": "629360cdbac655b9fc8e0ba141e1d706bdf70a94227838589c6acfe194456fdd",
       "path": "docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_born_calibration.py",
       "title": "Asymmetry Persistence Born Calibration Note"
@@ -40240,14 +40331,17 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "asymmetry_persistence_joint_card_note",
+        "asymmetry_persistence_pilot_note"
+      ],
       "helper_runner_paths": [
         "scripts/asymmetry_persistence_joint_card.py",
         "scripts/asymmetry_persistence_pilot.py",
         "scripts/gap_topological_asymmetry.py",
         "scripts/gap_topological_asymmetry_layernorm_combo.py"
       ],
-      "note_hash": "ce04ebde8c9648c79b23951e201be35934db474a7e862bf0edf244d714f3fddf",
+      "note_hash": "fcb5283f007bdedf0e1e33ae4eafa20fe9fb2cf2a02c8b6c4b87a931e18f973e",
       "path": "docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md",
       "runner_path": "scripts/asymmetry_persistence_mass_scaling.py",
       "title": "Asymmetry Persistence Mass Window Note"
@@ -50674,10 +50768,11 @@
       "deps": [
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
         "g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10",
-        "graph_first_su3_integration_note"
+        "graph_first_su3_integration_note",
+        "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7acb46b2e4564b2ed829dfd0e8b52aeaee0005ba5fbd3169ddedf9eb961f1fac",
+      "note_hash": "9df913add1cd868e1bccfb86f671deb52516c089b501dee594720ee6c0596d52",
       "path": "docs/G_BARE_FORCED_VIA_WARD_SUBSTITUTION_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py",
       "title": "g_bare Forced via Ward Substitution Narrow Theorem"
@@ -59178,9 +59273,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
+      "deps": [
+        "lensing_long_path_test_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "105e2546bf32f5ca21b0f46c0b7d36a136baad8d28f3fd97ef62c254cd361dc1",
+      "note_hash": "ddec6fa48d1810d33e7ebbc19c735dcc3410373ca0159790705046f71b2ce562",
       "path": "docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md",
       "runner_path": "scripts/lensing_analytical_finite_path.py",
       "title": "Lensing Slope \u2014 Finite-Path Surrogate FALSIFIED at a Second T_phys"
@@ -61750,10 +61847,13 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "charged_lepton_two_higgs_canonical_reduction_note"
+        "charged_lepton_two_higgs_canonical_reduction_note",
+        "publication.ci3_z3.derivation_atlas",
+        "higgs_vacuum_explicit_systematic_note",
+        "higgs_mass_derived_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "829e8a9a6628ea650225ee75728cfdcd45923cbe68619265333dae5738ae3996",
+      "note_hash": "6ed3bad1b8118b0bd14f06e223b0093947eba4e884e2ffd49b813681e8c24d0e",
       "path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
       "runner_path": "scripts/frontier_neutrino_mass_reduction_to_dirac.py",
       "title": "Neutrino Mass Reduction To The Dirac Lane"
@@ -62968,9 +63068,18 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "mesoscopic_surrogate_compact_floor_sweep_note",
+        "localized_source_response_sweep_note",
+        "broad_surrogate_point_source_compare_note",
+        "mesoscopic_surrogate_annular_tapered_sweep_note",
+        "mesoscopic_surrogate_h025_constrained_localization_note",
+        "mesoscopic_surrogate_backreaction_note",
+        "mesoscopic_surrogate_multistage_note",
+        "mesoscopic_surrogate_threshold_2d_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "53ab126619592e92d09713df02fb03361a5522873c85a5f7796d59094e8d00ba",
+      "note_hash": "5763c7acce43611f6bd49a9ce583fb8b5378feb5755c1d38b919cd5607778752",
       "path": "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
       "runner_path": null,
       "title": "Persistent Inertial-Response Readiness Note"
@@ -72197,10 +72306,11 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11"
+        "minimal_axioms_2026-04-11",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "90548a478455cccd2da8aef89672816dc3b1af5bd6033c0d6a0b4d7672baee7f",
+      "note_hash": "b1eaa60cc6df079b88cafdb36190255611189d2c53ed27a880068c7680576163",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
@@ -72646,10 +72756,12 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "graph_first_su3_integration_note",
-        "left_handed_charge_matching_note"
+        "left_handed_charge_matching_note",
+        "one_generation_matter_closure_note",
+        "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "89085dde243dd69e8cd4adb9ce663291652c1283152e79d3a4e9450c34286478",
+      "note_hash": "c4e1bcb806a2a5e36443c8cc40cf43e369c3953dff655d9d5bf1b03f13bb4932",
       "path": "docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md",
       "runner_path": null,
       "title": "SU(3)^3 Cubic Gauge Anomaly Cancellation Theorem"
@@ -73487,9 +73599,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "teleportation_resource_from_poisson_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "f0056b376a3470b577e20043025e6d42034520fee12d4fa8cf9d8297838131b2",
+      "note_hash": "7345e1e70e8f445ed4f618b1d8824db3fedab83d98ae180a76c1950b08e23e1e",
       "path": "docs/TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md",
       "runner_path": "scripts/frontier_teleportation_poisson_resource_sweep.py",
       "title": "Teleportation Poisson-Resource Sweep: Bounded Hardening"
@@ -76037,9 +76151,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "wave_retardation_continuum_limit_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "9cd8b6f0977f016b4e3cf285dc2e786a6dc6ec402f6e118788718bf92bd9c531",
+      "note_hash": "4cece8b9e74e0556b2d54e265583a0e3992ba0ad0e641343a2a7d23a966dbb27",
       "path": "docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md",
       "runner_path": "scripts/wave_static_fixed_beam_boundary_sensitivity.py",
       "title": "Wave Static Fixed-Beam Boundary Sensitivity \u2014 H = 0.5 Default Run (Binding)"
@@ -78676,11 +78792,9 @@
     "area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25",
     "area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09",
     "area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25",
-    "asymmetry_persistence_born_note",
     "asymmetry_persistence_collapse_note",
     "asymmetry_persistence_joint_card_note",
     "asymmetry_persistence_mass_scaling_note",
-    "asymmetry_persistence_mass_window_note",
     "asymmetry_persistence_pilot_note",
     "atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29",
     "atomic_lane2_physical_unit_limit_boundary_note_2026-04-29",
@@ -79057,7 +79171,6 @@
     "lattice_synthesis_guard_note",
     "lensing_adjoint_kernel_reduced_model_note",
     "lensing_deflection_note",
-    "lensing_finite_path_explanation_note",
     "lensing_finite_path_explanation_note_hostile_audit_findings_note_2026-05-17",
     "lensing_k_sweep_note",
     "lepton_single_higgs_pmns_triviality_note_hostile_audit_findings_note_2026-05-17",
@@ -79123,7 +79236,6 @@
     "packet_memory_note",
     "paper_outline_2026-04-12",
     "persistent_inertial_object_probe_note",
-    "persistent_inertial_response_readiness_note",
     "persistent_object_adaptive_readout_note",
     "persistent_object_adaptive_readout_v2_note",
     "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
@@ -79314,7 +79426,6 @@
     "teleportation_noise_fault_controls_note",
     "teleportation_open_item_attack_note",
     "teleportation_operator_consistent_end_to_end_note",
-    "teleportation_poisson_resource_sweep_note",
     "teleportation_poisson_resource_sweep_note_hostile_audit_findings_note_2026-05-17",
     "teleportation_record_field_closure_note",
     "teleportation_resource_fidelity_note",
@@ -79366,7 +79477,6 @@
     "wave_radiation_note",
     "wave_retardation_lab_prediction_note",
     "wave_static_boundary_sensitivity_note",
-    "wave_static_fixed_beam_boundary_sensitivity_note",
     "wave_static_matrixfree_fixed_beam_boundary_note",
     "wave_static_matrixfree_moving_source_fixed_beam_boundary_note",
     "wave_static_matrixfree_shared_geometry_compare_note",
@@ -79433,10 +79543,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9442,
-    "leaf_count": 747,
+    "edge_count": 9464,
+    "leaf_count": 745,
     "node_count": 2424,
-    "root_count": 843,
+    "root_count": 837,
     "runners_with_path": 2017
   }
 }

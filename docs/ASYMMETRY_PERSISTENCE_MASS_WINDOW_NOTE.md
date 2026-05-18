@@ -128,3 +128,10 @@ paths:
 - `scripts/asymmetry_persistence_pilot.py`
 - `scripts/gap_topological_asymmetry.py`
 - `scripts/gap_topological_asymmetry_layernorm_combo.py`
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [asymmetry_persistence_joint_card_note](ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md)
+- [asymmetry_persistence_pilot_note](ASYMMETRY_PERSISTENCE_PILOT_NOTE.md)

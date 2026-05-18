@@ -132,3 +132,10 @@ include `scripts/asymmetry_persistence_collapse_pilot.py`,
 `scripts/gap_topological_asymmetry_layernorm_combo.py` alongside the
 primary runner and cache. This note changes no science content; it makes
 the re-audit hash drift explicit.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [asymmetry_persistence_collapse_note](ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md)
+- [asymmetry_persistence_joint_card_note](ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md)

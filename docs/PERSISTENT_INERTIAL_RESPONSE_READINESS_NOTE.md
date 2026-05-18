@@ -297,3 +297,11 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   backticked alongside siblings for consistency)
 - `MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md` (downstream surrogate note;
   backticked alongside siblings for consistency)
+- [mesoscopic_surrogate_compact_floor_sweep_note](MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE.md)
+- [localized_source_response_sweep_note](LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md)
+- [broad_surrogate_point_source_compare_note](BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)
+- [mesoscopic_surrogate_annular_tapered_sweep_note](MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md)
+- [mesoscopic_surrogate_h025_constrained_localization_note](MESOSCOPIC_SURROGATE_H025_CONSTRAINED_LOCALIZATION_NOTE.md)
+- [mesoscopic_surrogate_backreaction_note](MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md)
+- [mesoscopic_surrogate_multistage_note](MESOSCOPIC_SURROGATE_MULTISTAGE_NOTE.md)
+- [mesoscopic_surrogate_threshold_2d_note](MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md)

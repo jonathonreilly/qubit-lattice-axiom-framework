@@ -1,13 +1,17 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 976,
+    "bounded_theorem": 974,
     "decoration": 26,
-    "meta": 218,
+    "meta": 217,
     "no_go": 234,
     "open_gate": 111,
-    "positive_theorem": 747
+    "positive_theorem": 750
   },
   "cycle_examples": [
+    [
+      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+      "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+    ],
     [
       "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
       "lorentz_kernel_positive_closure_note",
@@ -53,18 +57,11 @@
     [
       "s3_anomaly_spacetime_lift_note",
       "s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17"
-    ],
-    [
-      "universal_gr_isotropic_glue_operator_note",
-      "universal_gr_canonical_projector_connection_note",
-      "universal_gr_a1_invariant_section_note",
-      "universal_gr_tensor_variational_candidate_note",
-      "universal_gr_curvature_localization_blocker_note"
     ]
   ],
-  "cycles_detected": 65,
+  "cycles_detected": 157,
   "effective_status_counts": {
-    "audited_conditional": 160,
+    "audited_conditional": 150,
     "audited_failed": 23,
     "audited_numerical_match": 9,
     "audited_renaming": 11,
@@ -90,7 +87,7 @@
     "retained_bounded": 355,
     "retained_no_go": 139,
     "retained_pending_chain": 4,
-    "unaudited": 1244
+    "unaudited": 1254
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

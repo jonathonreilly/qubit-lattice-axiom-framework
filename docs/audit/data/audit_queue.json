@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 802,
+    "critical": 801,
     "high": 33,
     "leaf": 319,
     "medium": 155
@@ -5029,29 +5029,55 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "poisson_self_gravity_loop_note",
-      "claim_scope": "Bounded numerical control for the declared h=0.25, W=3, L=6 exact-lattice Poisson-like self-gravity loop with the stated source patch, screened kernel, couplings, strengths, and frozen-field Born check.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "poisson_exhaustive_uniqueness_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "minimal_source_driven_field_probe_note"
+        "gate_b_poisson_self_gravity_note",
+        "poisson_self_gravity_loop_note",
+        "self_consistency_forces_poisson_note"
       ],
-      "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.798,
+      "note_path": "docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_poisson_exhaustive_uniqueness.py",
+      "transitive_descendants": 889
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "poisson_self_gravity_born_audit_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "poisson_self_gravity_loop_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "load_bearing_score": 13.309,
-      "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 11.791,
+      "note_path": "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/poisson_self_gravity_loop.py",
-      "transitive_descendants": 896
+      "runner_path": "scripts/poisson_self_gravity_born_audit.py",
+      "transitive_descendants": 885
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7504,32 +7530,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "poisson_exhaustive_uniqueness_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_poisson_self_gravity_note",
-        "poisson_self_gravity_loop_note",
-        "self_consistency_forces_poisson_note"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.798,
-      "note_path": "docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_poisson_exhaustive_uniqueness.py",
-      "transitive_descendants": 889
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_p1_delta_r_master_assembly_theorem_note_2026-04-18",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -8731,32 +8731,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_coleman_mermin_wagner_check.py",
-      "transitive_descendants": 885
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "poisson_self_gravity_born_audit_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "poisson_self_gravity_loop_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/minimal_source_driven_field_probe.py"
-      ],
-      "load_bearing_score": 11.791,
-      "note_path": "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/poisson_self_gravity_born_audit.py",
       "transitive_descendants": 885
     },
     {
@@ -41879,6 +41853,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 5,
-  "total_pending": 1309
+  "ready_count": 6,
+  "total_pending": 1308
 }

@@ -180457,24 +180457,41 @@
       "verdict_rationale": null
     },
     "poisson_self_gravity_loop_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T13:07:59.387810+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_source_driven_field_probe_note": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs."
+        },
+        "dep_claim_type": {
+          "minimal_source_driven_field_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_source_driven_field_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_source_driven_field_probe_note"
+        ],
+        "load_bearing_score": 13.309,
+        "runner_hash": "706fc7b7ba77eeba3904caa082258a57d2369a6af0fd6ba6a08f0b3b1136e75a",
+        "transitive_descendants": 896
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-130737-41b06c76-poisson_self_gravity_loo-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet includes the primary runner, its helper source, the upstream note marked retained_bounded, and completed cached stdout. The code computes the lattice, Poisson-like field, propagation, Born I3, sign, ratio, and exponent checks rather than merely printing fixed expected values.",
       "claim_id": "poisson_self_gravity_loop_note",
-      "claim_scope": "Bounded numerical control for the declared h=0.25, W=3, L=6 exact-lattice Poisson-like self-gravity loop with the stated source patch, screened kernel, couplings, strengths, and frozen-field Born check.",
+      "claim_scope": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-18T13:05:21.251959+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-18T13:07:59.387810+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -180489,29 +180506,40 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-18T13:07:59.387810+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-130737-41b06c76-poisson_self_gravity_loo-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_source_driven_field_probe_note"
       ],
       "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 13.309,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the declared h=0.25 exact lattice with the specified screened Poisson-like amplitude-sourced field loop, the runner computes and hard-bars exact epsilon=0 reduction, frozen-field Born floor, TOWARD sign, bounded loop/instantaneous ratio, and near-linear mass-law exponent.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f38b76469c7b32792f25899bfb3071934b1f271d949a6065ed272f8478775daf",
       "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that future edits preserve the narrow declared-run scope and do not promote the calibrated Poisson-like kernel or nonconvergent loop into a general self-gravity claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -180780,16 +180808,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/poisson_self_gravity_loop.py",
       "title": "Poisson Self-Gravity Loop Note",
       "transitive_descendants": 896,
-      "verdict_rationale": null
+      "verdict_rationale": "The cited one-hop authority is retained_bounded, which is retained-grade under the rubric, and the note explicitly bounds the inherited primitives as declared finite constructions. The primary runner source and helper source are present, and the completed cache shows all five hard-bar assertions passing. The result is a bounded first-principles numerical computation on declared lattice and kernel inputs, with the nonconvergent nonzero-epsilon loop correctly retained as a limitation rather than promoted to a broader physical claim."
     },
     "poisson_self_gravity_loop_v3_note": {
       "audit_date": "2026-05-17T13:00:41.126910+00:00",

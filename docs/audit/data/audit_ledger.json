@@ -195457,22 +195457,45 @@
       "verdict_rationale": null
     },
     "s3_time_primitive_chain_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T02:01:14.232492+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "Scoped no-go: on the restricted Route-2 bright readout class, the exact carrier columns and endpoint algebra do not uniquely determine the E-channel readout entry beta_E / alpha_E; even after granting the T-side candidates, rho_E remains an independent map entry.",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "On the restricted Route-2 carrier class, an admissible readout map P_R gives the exact family Xi_P(t;c) = (P_R c) tensor exp(-t Lambda_R)u_*, and the unresolved E-channel readout entry induces a non-unique exact time-coupling obstruction."
+        },
+        "dep_claim_type": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "quark_route2_exact_readout_map_note_2026-04-19": "retained_no_go",
+          "quark_route2_exact_time_coupling_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "quark_route2_exact_readout_map_note_2026-04-19",
+          "quark_route2_exact_time_coupling_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-015819-921435c6-s3_time_primitive_chain_-005",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The status update follows algebraically from the cited no-go and bounded notes, but the full positive theorem does not close because the readout map P_R, specifically beta_E / alpha_E = 21/4, is explicitly left open.",
       "claim_id": "s3_time_primitive_chain_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited the note's status update that the Route-2 exact carrier and slice backbone are in hand, while the remaining primitive is the unresolved exact readout map entry beta_E / alpha_E = 21/4 and its induced time-coupling obstruction.",
+      "claim_type": "open_gate",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-18T02:01:14.232492+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -195481,20 +195504,23 @@
         "quark_route2_exact_time_coupling_note_2026-04-19"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The exact missing readout entry collapses to the E-channel ratio beta_E / alpha_E, so the smallest missing primitive is the exact readout map from K_R to the Route-2 two-channel readout.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5eab2966ec3f203e317505360fff7544aa97264565687721df1ccef0fdcecfdc",
       "note_path": "docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive beta_E / alpha_E = 21/4 from the restricted Route-2 objects or prove an admissibility theorem showing it cannot be uniquely selected.",
+      "open_dependency_paths": [
+        "docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
+        "docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -195599,7 +195625,7 @@
       "runner_path": null,
       "title": "Route 2 Primitive Chain: Readout and Time-Coupling Update",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic compression of the cited readout-map obstruction, not a first-principles derivation of the missing readout ratio. Both cited authorities are retained-grade, but they explicitly state that the exact readout theorem and unique readout-to-slice coupling remain open. Therefore the note is reliable only as an open-dependency/status update, not as a closed positive theorem."
     },
     "s3_time_spacetime_observable_route_note": {
       "audit_date": null,

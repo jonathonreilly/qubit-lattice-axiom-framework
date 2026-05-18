@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 360 |
+| **retained_bounded** | 361 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1310 |
-| audit_in_progress | 4 |
+| audit_in_progress | 3 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 589 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 590 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `causal_field_portability_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5 | C | - |
-| `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -253,6 +252,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `electrostatics_superposition_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `em_gravity_coexistence_2x2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -3477,6 +3477,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** By linearity of action accumulation, S(Hg+Hem) = k(1-f) + qV and S(Hg) + S(Hem) - S(H0) = k(1-f) + qV, so R_GE = 0 exactly.  _(class `A`)_
 - **chain closes:** True — The four-cell action definitions are supplied in the note, and accumulated phase plus finite-difference deflection are linear operations, so the mixed residual cancels identically. No broader Hamiltonian, gauge, magnetic-sector, or backreaction coexistence claim is needed for this bounded scope.
 - **rationale:** The load-bearing claim is an algebraic closure inside the defined ray-sum model, and the runner computes the four cells before checking the mixed residual and charge-sign cancellations rather than importing an external target. The clean result is bounded to additive kinematic action accumulation only; the source note explicitly excludes dynamical wave-packet, gauge-invariant, magnetic-sector, and nonlinear/backreaction coexistence.
+- **auditor confidence:** high
+
+### `emergent_geometry_growth_note_2026-04-10`
+
+- **Note:** [`EMERGENT_GEOMETRY_GROWTH_NOTE_2026-04-10.md`](../../docs/EMERGENT_GEOMETRY_GROWTH_NOTE_2026-04-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Single-seed qualitative comparison from scripts/frontier_emergent_geometry.py between matter-coupled growth and the uniform-growth control, using the cached runner output and included source.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-123911-c0b36f0f-emergent_geometry_growth-006`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On seed 42, the primary runner's matter-coupled growth rule produces a grown graph with higher effective dimension and much higher peak shell-bin density than the uniform-growth control.  _(class `C`)_
+- **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
+- **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
 - **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`

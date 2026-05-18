@@ -16,8 +16,20 @@ for the principle.
 **Authority:** this file is an *index*, not a *definition*. The
 source-of-truth doc named in each row is the binding authority. Once
 [docs/repo/controlled_vocabulary.yaml](repo/VOCABULARY_HYGIENE_DESIGN.md)
-exists (cleanup PR), this file becomes a *generated product* of that
+exists (Cleanup-1 PR), this file becomes a *generated product* of that
 YAML and manual edits will not be permitted.
+
+**Schema pivot (Cleanup-1):** the current entries below reflect the
+historical flat enums. Per
+[VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md), the
+post-Cleanup-1 schema is W3C / GRADE / IEEE 1044-conformant: a
+4-value `audit_status` (Working Draft → Candidate Recommendation →
+Recommendation → Retired) plus orthogonal `failure_mode`,
+`dependency_status`, `closure_status`, `chain_certainty`, and IEEE
+1044-axis `defect_type` / `defect_class` / `severity` fields. The
+conventional names (`retained`, `audited_clean`, `audited_renaming`,
+etc.) remain as derived labels for specific cells in that grid. The
+regenerated KEY_TERMINOLOGY.md will reflect the new fields directly.
 
 **Hierarchy:** this is the front-door entry point above the four
 governance layers in

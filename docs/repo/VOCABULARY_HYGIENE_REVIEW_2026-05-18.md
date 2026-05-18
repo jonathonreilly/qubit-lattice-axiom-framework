@@ -9,6 +9,21 @@ read-only sandbox, gathered via `codex exec`) + first-party deep
 review (Claude). The review is on the **design**, not the framework
 science.
 
+> **Pivot note (post-review):** the design responded to MAJOR 7
+> (standard-convention claims too strong) by *adopting standards
+> conformance* rather than downgrading the claim. The vocabulary now
+> conforms to W3C recommendation-track lifecycle (4-value
+> `audit_status`), GRADE two-axis evidence grading (`closure_status` ×
+> `chain_certainty`), and IEEE 1044-2009 anomaly classification
+> (`defect_type` × `defect_class` × `severity`), with AI-physics
+> extensions recorded in separate orthogonal fields rather than as
+> enum subdivisions. See
+> [VOCABULARY_HYGIENE_DESIGN.md §The four vocabulary families](VOCABULARY_HYGIENE_DESIGN.md#the-four-vocabulary-families)
+> for the conformant schema. The migration scope below (Cleanup-1)
+> reflects the conformant schema; this review's earlier "downgrade
+> `equivalent_to` to `inspired_by`" recommendation is **superseded**
+> by the schema restructure.
+
 This is a "measure twice, cut once" gate. The design will propagate
 across ~2,500 markdown files via the cleanup PR; ratifying it now and
 finding it wrong later is expensive.

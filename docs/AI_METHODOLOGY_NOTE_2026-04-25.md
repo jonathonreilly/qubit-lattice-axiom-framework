@@ -254,14 +254,38 @@ vocabulary control**:
    one PR against the canonical YAML. The synchronous-bottleneck
    failure mode the 84-note wave exposed is structurally removed.
 
-Each family of terms in the vocabulary cites the **established
-convention** it derives from — W3C lifecycle for the audit-status
-journey, GRADE-style evidence grading for theorem strength, ISTQB /
-IEEE 1044 defect taxonomy for repair classes, multi-reviewer
-adversarial-review independence tiers for the audit-independence
-field. AI-physics extensions to each family (terms specific to AI
-generation failure modes, model-family-level independence,
-compute-required-as-non-defect, etc.) are explicitly tagged.
+The vocabulary **conforms to established standards where the domain
+matches**, with explicitly-tagged AI-physics extensions for the
+generation failure modes the standards do not cover. The schema is
+engineered for conformance, not nodding-toward-standards:
+
+- **Lifecycle** uses the W3C recommendation-track values directly
+  (`unaudited` = Working Draft, `audit_in_progress` = Candidate
+  Recommendation, `audited_clean` = Recommendation,
+  `audited_retired` = Retired with cause). AI-specific failure modes
+  (renaming / decoration / numerical-match) are recorded in a
+  separate `failure_mode` field rather than inflating the lifecycle
+  enum.
+- **Grade** uses GRADE's two-axis structure (recommendation strength
+  × evidence certainty), implemented as `closure_status` ×
+  `chain_certainty`. The conventional publication-facing labels
+  (`retained`, `retained_bounded`, …) become derived names for
+  specific cells in the grid, not the source of truth.
+- **Defect classification** uses IEEE 1044-2009 anomaly-classification
+  axes (`defect_type` × `defect_class` × `severity`); our seven
+  historical repair classes map into them. `compute_required` is
+  correctly recorded as a `defect_class: problem` (not a defect;
+  deferred verification).
+- **Independence tiers** are partially novel: the human-reviewer
+  tiers (`strong`, `external`) match standard peer review;
+  the model-family tiers (`weak`, `fresh_context`, `cross_family`)
+  are AI-physics extensions explicitly tagged in the YAML.
+
+Every term that is not standards-conformant carries
+`ai_extension: true` and an `ai_extension_rationale` field. The
+transferable parts of the mechanism (the conformant cells) transfer
+unchanged; the AI-physics extensions transfer only to repos facing
+the same generation-failure modes.
 
 The full design is in
 [`docs/repo/VOCABULARY_HYGIENE_DESIGN.md`](./repo/VOCABULARY_HYGIENE_DESIGN.md);

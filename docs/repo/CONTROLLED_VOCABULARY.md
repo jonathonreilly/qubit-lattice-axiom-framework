@@ -319,6 +319,22 @@ The audit-lane process and workflows live in `docs/audit/README.md`,
 `docs/audit/FRESH_LOOK_REQUIREMENTS.md`, and the audit-loop skill; the
 enums themselves live here.
 
+> **Schema pivot scheduled in Cleanup-1.** The flat enum form documented
+> below is the current schema. The post-Cleanup-1 schema is
+> W3C / GRADE / IEEE 1044-conformant: `audit_status` collapses to four
+> W3C-aligned values (`unaudited` → `audit_in_progress` →
+> `audited_clean` → `audited_retired`), with orthogonal
+> `failure_mode`, `dependency_status`, `closure_status`,
+> `chain_certainty`, and IEEE 1044-axis `defect_type` /
+> `defect_class` / `severity` fields recording the AI-physics-specific
+> information that historically lived as enum-value subdivisions
+> (`audited_renaming`, `audited_decoration`, `audited_numerical_match`,
+> `audited_conditional`). The conventional shorthand
+> (`retained`, `retained_bounded`, etc.) survives as derived labels for
+> specific cells in the new grid. See
+> [VOCABULARY_HYGIENE_DESIGN.md §The four vocabulary families](VOCABULARY_HYGIENE_DESIGN.md#the-four-vocabulary-families)
+> for the conformant schema.
+
 ### `claim_type` (auditor-set)
 
 What kind of object the auditor says the row is. Exactly one of:

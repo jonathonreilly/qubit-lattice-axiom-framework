@@ -37,19 +37,40 @@ deliverable.
    regenerated from the YAML, not authored alongside it. Lint
    mechanically enforces; manual edits to rendered docs are not
    permitted.
-3. **Standard convention basis (inspired-by, not standards-conformant).**
-   Each term family is inspired by an established convention without
-   claiming faithful adaptation: W3C-style lifecycle for the
-   audit-status journey; GRADE-spirit closure-status grading for
-   theorem strength (one-axis, not the full GRADE *recommendation
-   strength × evidence certainty* matrix); ISTQB / IEEE 1044-spirit
-   anomaly / defect taxonomy for repair classes; multi-reviewer
-   adversarial-review independence tiers (mostly novel). AI-physics
-   extensions to each family are explicitly tagged and motivated.
-   None of these are standards-conformant uses; the cited conventions
-   are reference points, not authorities. See the consolidated review
+3. **Conform to established standards where the domain matches;
+   extend explicitly where AI-physics genuinely needs it.** The
+   schema below is engineered for standards conformance, not
+   nodding-toward-standards:
+   - **Lifecycle** maps cleanly onto W3C recommendation-track values
+     (`unaudited` ≡ Working Draft, `audit_in_progress` ≡ Candidate
+     Recommendation, `audited_clean` ≡ Recommendation,
+     `audited_retired` ≡ Retired with cause). AI-specific failure
+     modes (renaming / decoration / numerical_match) are recorded in
+     a separate `failure_mode` field, not by adding new lifecycle
+     states.
+   - **Grade** decomposes into the GRADE two-axis structure
+     (`closure_status` × `chain_certainty`) rather than collapsing
+     both into a one-dimensional enum. The conventional shorthand
+     (`retained`, `retained_bounded`, `retained_pending_chain`, …)
+     stays as labels for specific cells in the grid; the underlying
+     model is GRADE-compatible.
+   - **Defect classification** uses IEEE 1044-2009 anomaly
+     classification multi-axes (`defect_type` × `defect_class` ×
+     `severity`); our 7 existing categories map into them rather than
+     replacing them. `compute_required` is correctly excluded as
+     "not a defect, deferred verification".
+   - **Independence tiers** are mostly novel; no widely-adopted
+     standard for model-family-level reviewer-independence. These are
+     explicitly tagged as AI-physics extensions.
+
+   Every term that is *not* a standards conformance is tagged in the
+   YAML with `ai_extension: true` and an `ai_extension_rationale`
+   field. The transferability claim in the AI Methods section
+   narrows correspondingly: the conformant parts transfer
+   unchanged; the AI-physics extensions transfer only to repos
+   facing the same generation-failure modes. See
    [VOCABULARY_HYGIENE_REVIEW_2026-05-18.md](VOCABULARY_HYGIENE_REVIEW_2026-05-18.md)
-   §MAJOR 7 for why this matters.
+   §MAJOR 7 for the design discussion that drove this choice.
 4. **Auto-correct, don't hard-fail.** audit-loop, review-loop, and
    physics-loop run `vocab_lint --fix` on touched files as a mechanical
    pre-commit step. Routine drift is rewritten **automatically, with
@@ -69,16 +90,108 @@ deliverable.
 
 ## The four vocabulary families
 
-| Family | Purpose | Standard-convention basis | AI-physics extensions |
-|---|---|---|---|
-| **Lifecycle** | Where a claim is in its review journey | W3C lifecycle (Working Draft → Candidate Recommendation → Recommendation → Retired); ISO/IEC 25010-style quality lifecycle | `audit_in_progress` (cross-confirmation gate); `audited_renaming` / `audited_decoration` / `audited_numerical_match` (AI-specific failure modes) |
-| **Grade** | How strong a closed claim is | GRADE / Cochrane evidence-grading conventions (high / moderate / low / very low) adapted for theorem strength | `retained_pending_chain` (clean claim with non-retained dependencies — common in chain-of-trust contexts at AI scale) |
-| **Defect** | Why a non-clean claim failed | ISTQB / IEEE 1044 software-defect taxonomy adapted for AI-generated derivations | All 7 repair classes are AI-physics extensions specific to mechanism failures (`missing_bridge_theorem`, `compute_required`, etc.) |
-| **Independence** | How adversarial the audit was | Adversarial-review literature; multi-reviewer independence tiers | Model-family-level `fresh_context` and `cross_family` (same author family, restricted-context audit; different family) |
+Each family conforms to an established standard where the domain
+matches, with explicitly-tagged AI-physics extensions for the
+generation failure modes the standards do not cover. The conformant
+parts use standards-aligned values; the extensions are recorded as
+separate orthogonal fields, not by inflating the standards enums.
 
-The full per-term inventory with definitions, inspired_by pointers,
-and AI-extension flags lives in
-`docs/repo/controlled_vocabulary.yaml` (cleanup PR creates it).
+### Lifecycle: W3C recommendation-track conformant
+
+| `audit_status` value | Equivalent W3C value | Meaning |
+|---|---|---|
+| `unaudited` | Working Draft | Not yet audited |
+| `audit_in_progress` | Candidate Recommendation | First clean audit; awaiting cross-confirmation |
+| `audited_clean` | Recommendation | Endorsed; load-bearing step closes |
+| `audited_retired` | Retired (with cause) | Terminal non-clean; specific cause in `failure_mode` |
+
+**AI-physics extension** (orthogonal `failure_mode` field, only set
+when `audit_status = audited_retired`): `null` (generic),
+`renaming` (load-bearing step is class E/F), `decoration` (exact
+algebraic corollary, no new content), `numerical_match` (tuned-input
+dependence). These do not pollute the lifecycle enum; they record
+*why* the row was retired.
+
+**Dependency status** (orthogonal `dependency_status` field, graph-
+state independent of lifecycle): `clean` (all deps retained),
+`pending_chain` (deps not yet retained-grade), `failed_dep` (a dep
+is `audited_retired`). The historical `audited_conditional` enum
+value is replaced by `(audit_status: audited_clean,
+dependency_status: pending_chain)` — physics-clean with deps
+pending.
+
+### Grade: GRADE two-axis conformant
+
+GRADE has two dimensions: *recommendation strength* (Strong /
+Conditional) × *evidence certainty* (High / Moderate / Low / Very
+Low). We adopt the same two-axis structure with framework-specific
+labels:
+
+| Field | Values | GRADE-equivalent dimension |
+|---|---|---|
+| `closure_status` | `closed`, `bounded_closure`, `negative_closure`, `open` | Recommendation strength + direction |
+| `chain_certainty` | `complete`, `pending_chain`, `failed_chain` | Evidence certainty (over the dependency graph) |
+
+Conventional publication-facing labels (`retained`,
+`retained_bounded`, `retained_no_go`, `retained_pending_chain`,
+`open_gate`, ...) stay as shorthand for specific cells in the
+2-axis grid, but they are derived from the underlying axes, not the
+source of truth.
+
+**AI-physics extension:** `chain_certainty` interprets GRADE
+"evidence certainty" as dependency-graph completion rather than
+empirical-evidence accumulation. The two-axis structure is
+GRADE-conformant; the specific interpretation is the extension.
+
+### Defect: IEEE 1044-2009 conformant
+
+IEEE 1044-2009 anomaly classification uses multi-axis fields. We
+adopt the same shape:
+
+| IEEE 1044 axis | Values | Notes |
+|---|---|---|
+| `defect_type` | data / logic / interface / construction / documentation | Standard IEEE 1044 type taxonomy |
+| `defect_class` | failure / error / problem | Standard IEEE 1044 class taxonomy |
+| `severity` | critical / major / minor / negligible | Standard IEEE 1044 severity scale |
+
+Our 7 historical repair classes map into the IEEE 1044 axes:
+
+| Historical repair class | `defect_type` | `defect_class` | `severity` |
+|---|---|---|---|
+| `missing_dependency_edge` | `interface` | `error` | `major` |
+| `dependency_not_retained` | `data` | `error` | `major` |
+| `missing_bridge_theorem` | `logic` | `failure` | `critical` |
+| `scope_too_broad` | `logic` | `error` | `minor` |
+| `runner_artifact_issue` | `construction` | `problem` | `minor` |
+| `compute_required` | n/a (not a defect) | `problem` | n/a (deferred verification) |
+| `other` | `documentation` | `problem` | (must state why) |
+
+The historical class names remain as derived labels; the underlying
+ledger fields are IEEE 1044-conformant.
+
+### Independence: novel AI-physics extension
+
+No widely-adopted standard exists for multi-tier reviewer
+independence at model-family granularity. The five values (`weak`,
+`fresh_context`, `cross_family`, `strong`, `external`) are
+explicitly novel.
+
+| `independence` value | Meaning | AI-physics extension? |
+|---|---|---|
+| `weak` | Same model family, no clean-room | yes (model-family concept) |
+| `fresh_context` | Same model family, restricted-context distinct session | yes |
+| `cross_family` | Different model family from author | yes (model-family concept) |
+| `strong` | Human reviewer with no prior involvement | no (standard peer review) |
+| `external` | Off-repo reviewer | no (standard external review) |
+
+The two non-extension values (`strong` and `external`) correspond
+to standard peer-review independence tiers.
+
+---
+
+The full per-term inventory with definitions, equivalent-standard
+pointers (where applicable), and AI-extension flags lives in
+`docs/repo/controlled_vocabulary.yaml` (Cleanup-1 creates it).
 
 ## Out of scope for the vocabulary
 
@@ -110,149 +223,242 @@ A new file, `docs/repo/controlled_vocabulary.yaml`, is created by the
 cleanup PR as the single source of truth. Schema:
 
 ```yaml
-families:
-  lifecycle:
-    convention: "W3C lifecycle adapted for theorem audit"
-    convention_reference: "https://www.w3.org/2021/Process-20211102/#rec-track"
-    terms:
+schema_version: 1
+
+# Fields are the canonical source of truth. Conventional shorthand labels
+# (retained / retained_bounded / etc.) are derived from cells in the
+# field-value grid; they are not the source.
+
+field_enums:
+
+  # ---- Lifecycle (W3C-conformant) ----
+  audit_status:
+    description: "Where the row is in its review journey."
+    standard_basis: "W3C recommendation-track lifecycle (https://www.w3.org/2021/Process-20211102/#rec-track)."
+    values:
       unaudited:
         definition: "Row has not been audited yet."
-        inspired_by: "W3C Working Draft"
+        equivalent_to: "W3C Working Draft"
         ai_extension: false
-        deprecated: false
-        deprecated_replacement: null
       audit_in_progress:
-        definition: "First clean audit on a critical claim awaiting cross-confirmation."
-        inspired_by: "W3C Candidate Recommendation"
-        ai_extension: true
-        ai_extension_rationale: "Cross-confirmation gate for AI-authored derivations."
-      audited_clean:
-        definition: "Derivation closes from cited inputs with no hidden premise."
-        inspired_by: "W3C Recommendation"
+        definition: "First clean audit recorded; awaiting cross-confirmation per FRESH_LOOK_REQUIREMENTS §4."
+        equivalent_to: "W3C Candidate Recommendation"
         ai_extension: false
-      audited_renaming:
-        definition: "Load-bearing step defines a new symbol or asserts symbol identity."
+      audited_clean:
+        definition: "Derivation closes from cited inputs with no hidden premise; ratified."
+        equivalent_to: "W3C Recommendation"
+        ai_extension: false
+      audited_retired:
+        definition: "Terminal non-clean verdict. Specific cause recorded in `failure_mode`."
+        equivalent_to: "W3C Retired (with cause)"
+        ai_extension: false
+
+  # ---- Failure mode (AI-physics extension) ----
+  # Orthogonal to audit_status. Only meaningful when audit_status = audited_retired.
+  failure_mode:
+    description: "Why a retired row was retired. AI-physics-specific subtypes."
+    standard_basis: "No standard equivalent; AI-generation failure modes."
+    ai_extension: true
+    values:
+      generic:
+        definition: "Chain does not close on its own terms; no AI-specific subtype applies."
+        ai_extension: false
+      renaming:
+        definition: "Load-bearing step is a definition (class E) or symbol-identity assertion (class F)."
         ai_extension: true
-        ai_extension_rationale: "Catches definition-as-derivation, a known AI generation failure mode."
-      audited_decoration:
-        definition: "Exact algebraic corollary of a parent claim with no independent comparator, compression, or new structural integer."
+        ai_extension_rationale: "Definition-as-derivation is a known AI generation failure mode."
+      decoration:
+        definition: "Exact algebraic corollary of a parent claim with no new comparator / compression / structural integer."
         ai_extension: true
         ai_extension_rationale: "Catches mass-produced algebraic consequences of one upstream choice."
-      audited_conditional:
-        definition: "Depends on an unaudited dependency, open gate, or unratified bridge."
-        inspired_by: "W3C Candidate Recommendation pending dependency"
-        ai_extension: false
-      audited_numerical_match:
-        definition: "Result depends on a tuned/calibrated input rather than a structural theorem."
+      numerical_match:
+        definition: "Result depends on a tuned/calibrated input rather than a structural theorem (load-bearing step class G)."
         ai_extension: true
         ai_extension_rationale: "Catches tuned-input matches presented as derivations."
-      audited_failed:
-        definition: "Chain does not close on its own terms."
-        inspired_by: "W3C Retired (with cause)"
+
+  # ---- Dependency status (orthogonal to lifecycle) ----
+  dependency_status:
+    description: "Pure graph-state of the dependency chain. Independent of audit_status."
+    standard_basis: "Dependency-graph propagation; novel."
+    ai_extension: true
+    ai_extension_rationale: "Chain-of-trust state at AI-scale dependency graphs."
+    values:
+      clean:
+        definition: "All direct dependencies are retained-grade."
+        ai_extension: false  # graph state itself is standard
+      pending_chain:
+        definition: "Direct dependencies exist but are not yet retained-grade. Replaces historical `audited_conditional` enum value."
+        ai_extension: true
+      failed_dep:
+        definition: "A direct dependency is `audit_status: audited_retired`."
         ai_extension: false
 
-  grade:
-    convention: "GRADE / Cochrane evidence-grading adapted for theorem strength"
-    convention_reference: "https://www.gradeworkinggroup.org/"
-    terms:
-      retained:
-        definition: "Theorem-grade closure on the retained authority surface."
-        inspired_by: "GRADE High (structural-theorem qualifier)"
+  # ---- Closure status (GRADE-conformant, first axis) ----
+  closure_status:
+    description: "Strength + direction of the closed claim."
+    standard_basis: "GRADE recommendation strength × direction (https://www.gradeworkinggroup.org/)."
+    values:
+      closed:
+        definition: "Positive theorem: full closure from retained inputs."
+        equivalent_to: "GRADE Strong (positive direction)"
         ai_extension: false
-      retained_bounded:
-        definition: "Theorem-grade closure with named bounds / admissions."
+      bounded_closure:
+        definition: "Theorem with named bounds / admissions."
+        equivalent_to: "GRADE Conditional (positive direction)"
         ai_extension: false
-      retained_no_go:
-        definition: "Theorem-grade negative result."
+      negative_closure:
+        definition: "Negative-result theorem (no-go)."
+        equivalent_to: "GRADE Strong (negative direction)"
         ai_extension: false
-      retained_pending_chain:
-        definition: "Clean theorem/no-go/bounded row whose upstream chain is not yet retained-grade."
-        ai_extension: true
-        ai_extension_rationale: "Chain-of-trust state common at AI-scale dependency graphs."
-      # ... derived, bounded, open, frozen-out, promoted, ...
-
-  defect:
-    convention: "ISTQB / IEEE 1044 defect taxonomy adapted for AI-generated derivations"
-    convention_reference: "https://www.istqb.org/"
-    terms:
-      missing_dependency_edge:
-        definition: "A needed source note exists but is not wired as a direct dependency."
-        inspired_by: "ISTQB Defect — missing reference"
-        ai_extension: false
-      dependency_not_retained:
-        definition: "A direct dependency exists but is not retained-grade."
-        ai_extension: true
-        ai_extension_rationale: "Chain-of-trust failure specific to retained-grade propagation."
-      missing_bridge_theorem:
-        definition: "Claim needs a new theorem for a physical carrier, readout, unit map, etc."
-        ai_extension: true
-        ai_extension_rationale: "Common AI-generation gap: chain skips a load-bearing bridge."
-      scope_too_broad:
-        definition: "Clean bounded core exists, but current scope includes an unclosed extension."
-        inspired_by: "ISTQB Defect — overclaim"
-        ai_extension: false
-      runner_artifact_issue:
-        definition: "Runner, log, classifier, threshold, import, or pass/fail accounting blocks closure."
-        inspired_by: "ISTQB Defect — test/build artifact"
-        ai_extension: false
-      compute_required:
-        definition: "Closure needs a completed long run, sliced runner, or independent derivation."
-        ai_extension: true
-        ai_extension_rationale: "AI agents work faster than long-running computations; this state preserves audit honesty without blocking on compute."
-      other:
-        definition: "Catch-all when none of the above fits; must state why."
+      open:
+        definition: "Not closed; open gate."
+        equivalent_to: "GRADE: no recommendation."
         ai_extension: false
 
+  # ---- Chain certainty (GRADE-conformant, second axis) ----
+  chain_certainty:
+    description: "Evidence certainty (GRADE second axis), interpreted as dependency-chain completion."
+    standard_basis: "GRADE evidence certainty (high/moderate/low/very low)."
+    ai_extension: true
+    ai_extension_rationale: "We interpret 'evidence certainty' as dependency-graph completion rather than empirical-evidence accumulation. The two-axis structure is GRADE-conformant; the interpretation is the extension."
+    values:
+      complete:
+        definition: "Entire dependency chain is retained-grade."
+        equivalent_to: "GRADE High evidence certainty"
+        ai_extension: false
+      pending_chain:
+        definition: "Some upstream dependency is not yet retained."
+        equivalent_to: "GRADE Moderate/Low evidence certainty"
+        ai_extension: false
+      failed_chain:
+        definition: "An upstream dependency is retired with cause."
+        equivalent_to: "GRADE Very Low evidence certainty"
+        ai_extension: false
+
+  # ---- Defect taxonomy (IEEE 1044-2009 conformant) ----
+  defect_type:
+    description: "IEEE 1044-2009 defect type."
+    standard_basis: "IEEE 1044-2009 (https://standards.ieee.org/ieee/1044/4607/)."
+    values:
+      data: { definition: "Data-related defect.", ai_extension: false }
+      logic: { definition: "Logic/algorithmic defect.", ai_extension: false }
+      interface: { definition: "Interface/integration defect.", ai_extension: false }
+      construction: { definition: "Build/construction defect.", ai_extension: false }
+      documentation: { definition: "Documentation defect.", ai_extension: false }
+
+  defect_class:
+    description: "IEEE 1044-2009 defect class."
+    standard_basis: "IEEE 1044-2009."
+    values:
+      failure: { definition: "Service-blocking issue.", ai_extension: false }
+      error:   { definition: "Recoverable mistake.",     ai_extension: false }
+      problem: { definition: "Non-defect concern (e.g. deferred verification).", ai_extension: false }
+
+  severity:
+    description: "IEEE 1044-2009 severity."
+    standard_basis: "IEEE 1044-2009."
+    values:
+      critical: { definition: "Blocks closure.", ai_extension: false }
+      major:    { definition: "Significant impact.", ai_extension: false }
+      minor:    { definition: "Local scope.",         ai_extension: false }
+      negligible: { definition: "Cosmetic.",          ai_extension: false }
+
+  # ---- Independence (mostly novel) ----
   independence:
-    convention: "Adversarial-review independence tiers adapted for AI model families"
-    convention_reference: "Standard multi-reviewer adversarial review literature"
-    terms:
+    description: "Adversarial-review independence tier between auditor and author."
+    standard_basis: "Partial: standard peer review (strong, external). Model-family tiers are novel."
+    values:
       weak:
         definition: "Same model family, no clean-room. Not eligible to land audited_clean."
-        ai_extension: false
+        ai_extension: true
+        ai_extension_rationale: "Model-family is an AI-physics concept."
       fresh_context:
         definition: "Same model family, different auditor/session identity, restricted-input audit."
         ai_extension: true
-        ai_extension_rationale: "Clean-room same-family review for catching context poisoning without claiming cross-family independence."
+        ai_extension_rationale: "Same-family clean-room review for context-poisoning detection."
       cross_family:
         definition: "Different model family from author."
         ai_extension: true
-        ai_extension_rationale: "Adversarial-review independence at the model-family level."
+        ai_extension_rationale: "Model-family is an AI-physics concept."
       strong:
-        definition: "Human auditor with no prior involvement in the note."
-        inspired_by: "Standard independent peer review"
+        definition: "Human reviewer with no prior involvement in the note."
+        equivalent_to: "Standard independent peer review"
         ai_extension: false
       external:
         definition: "Off-repo reviewer with no project context."
-        inspired_by: "External peer review / venue review"
+        equivalent_to: "External peer review / venue review"
         ai_extension: false
 
+  # ---- Prose status (Vocabulary-discipline separation) ----
+  prose_status:
+    description: "Vocabulary compliance of the source note. Separate from audit_status (physics)."
+    standard_basis: "Novel; required by physics-versus-prose separation principle."
+    ai_extension: true
+    values:
+      clean: { definition: "No vocabulary drift detected.", ai_extension: false }
+      auto_corrected: { definition: "Routine drift mechanically rewritten by vocab_lint --fix; rewrites logged in prose_corrections.", ai_extension: false }
+      needs_human_vocab_decision: { definition: "Genuinely new term that vocab_lint cannot mechanically rewrite; queued for vocab-extension review.", ai_extension: false }
+      not_evaluated_pre_vocab_lint: { definition: "Pre-Cleanup-1 row never linted under the new rules. Used during backfill only.", ai_extension: false }
+      queue_backpressure_exceeded: { definition: "Vocab-extension review queue is >50 entries deep; new unresolved terms emit this until queue is processed.", ai_extension: false }
+
+# ---- Derived labels ----
+# Publication-facing shorthand strings derived from the (closure_status,
+# chain_certainty) grid. These are display labels, not source-of-truth.
+derived_labels:
+  retained:                 {closure: closed,          certainty: complete}
+  retained_bounded:         {closure: bounded_closure, certainty: complete}
+  retained_no_go:           {closure: negative_closure, certainty: complete}
+  retained_pending_chain:   {closure: closed,          certainty: pending_chain}
+  retained_bounded_pending: {closure: bounded_closure, certainty: pending_chain}
+  open_gate:                {closure: open,            certainty: complete}
+  audited_failed_chain:     {any closure,              certainty: failed_chain}
+
+# ---- Aliases (deprecated → canonical mapping) ----
+# Historical names that map into the new schema. Used by vocab_lint to
+# auto-correct from old enum to new fields.
+aliases:
+  audited_renaming:
+    canonical: "(audit_status: audited_retired, failure_mode: renaming)"
+  audited_decoration:
+    canonical: "(audit_status: audited_retired, failure_mode: decoration)"
+  audited_numerical_match:
+    canonical: "(audit_status: audited_retired, failure_mode: numerical_match)"
+  audited_conditional:
+    canonical: "(audit_status: audited_clean, dependency_status: pending_chain)"
+  audited_failed:
+    canonical: "(audit_status: audited_retired, failure_mode: generic)"
+  # Historical repair classes → IEEE 1044 multi-axis
+  missing_dependency_edge: { canonical: "(defect_type: interface, defect_class: error, severity: major)" }
+  dependency_not_retained: { canonical: "(defect_type: data,      defect_class: error, severity: major)" }
+  missing_bridge_theorem:  { canonical: "(defect_type: logic,     defect_class: failure, severity: critical)" }
+  scope_too_broad:         { canonical: "(defect_type: logic,     defect_class: error, severity: minor)" }
+  runner_artifact_issue:   { canonical: "(defect_type: construction, defect_class: problem, severity: minor)" }
+  compute_required:        { canonical: "(defect_class: problem)" }   # not a defect
+  other:                   { canonical: "(defect_type: documentation, defect_class: problem)" }
+
+# ---- Rewrite rules (used by vocab_lint --fix) ----
 rewrite_rules:
-  # Each rule: detect pattern, replace with canonical, optionally with a note
   - id: legacy_alias_strip
     pattern: '\s*\(legacy alias:\s*[A-Z][0-9A-Z]*\)'
     replacement: ''
     rationale: 'Aliasing creates rot. Use the canonical name only.'
-
-  - id: support_to_retained_pending_chain
-    pattern: '\bsupport tier\b'
-    replacement: 'retained_pending_chain'
-    rationale: '\'support\' is not a claim class; retained_pending_chain is the chain-not-retained case.'
-
+    excluded_paths: ['docs/work_history/**', 'archive_unlanded/**']
   - id: hostile_audit_findings_suffix
     pattern: '_HOSTILE_AUDIT_FINDINGS_NOTE_(\d{4}-\d{2}-\d{2})\.md'
     replacement: '_NOTE_$1.md'
     rationale: 'New filename suffixes for meta notes are forbidden; use plain _NOTE_<date>.md.'
-
+    requires_link_aware_rewrite: true   # cross-doc references must be updated atomically
   - id: downstream_fix_suffix
     pattern: '_DOWNSTREAM_FIX_NOTE_(\d{4}-\d{2}-\d{2})\.md'
     replacement: '_NOTE_$1.md'
     rationale: 'Same as above.'
-
+    requires_link_aware_rewrite: true
   - id: f_letter_heading
-    pattern: '^### F-([A-Z]) — '
-    replacement: '### Finding \1: '
-    rationale: 'F-letter codes are forbidden; use descriptive numbered findings.'
+    # NOTE: this rule is NOT a one-shot regex. F-letter migration requires
+    # per-file mapping {F-A: <title>, F-B: <title>, ...} → {Finding 1: <title>, ...}
+    # with link-aware cross-doc reference updates. See VOCABULARY_HYGIENE_REVIEW_2026-05-18.md BLOCKER 2.
+    migration_strategy: per_file_mapping_with_link_check
+    rationale: 'F-letter codes are forbidden; descriptive numbered findings replace them.'
 
 filename_rules:
   meta_note_suffix: '_NOTE_<YYYY-MM-DD>.md'
@@ -264,16 +470,62 @@ filename_rules:
     - '_ADDENDUM_'
     - '_SURGICAL_REPAIR_'
     - '_AUDIT_BRIEF_'
+    - '_STRETCH_ATTEMPT_NOTE_'  # 16 instances in repo
+    - '_REVIEW_PACKET_'         # 5 instances
+    - '_TERMINAL_SYNTHESIS_META_'  # 4 instances
+    - '_SHARPENED_NOTE_'        # 4 instances
+    - '_HOSTILE_REVIEW_'        # 7 instances
+
+# ---- Scope tags (per MAJOR 6) ----
+scope_tags:
+  core_process:
+    description: "Pure process labels transferable unchanged to other AI-built repos."
+    examples: ['audit_status', 'prose_status', 'dependency_status']
+  audit_physics_process:
+    description: "Verdicts on physics derivations that encode the AI-physics method."
+    examples: ['failure_mode', 'load_bearing_step_class', 'closure_status']
+  repo_physics_policy:
+    description: "Policy on physics primitives; this repo only."
+    examples: ['axiom naming policy', 'A_min definition', 'Axiom* prohibition']
+    governing_doc: 'docs/audit/AXIOM_MINIMALITY_POLICY.md'
+  paper_voice:
+    description: "Paper-facing prose voice rules."
+    governing_doc: 'docs/WRITING_VOICE_GUIDE_2026-04-25.md'
+  topic_local:
+    description: "Topic-specific physics wording (BMV, boundary-law, etc.)."
+    home: 'per-topic notes; not in CV.md after Cleanup-2'
 
 scope:
   in_scope:
-    - 'Process labels (status, audit fields, repair classes, evidence terms)'
-    - 'Prose-voice rules and hyphenation'
+    - 'Process labels (audit_status, failure_mode, dependency_status, closure_status, chain_certainty, defect_*, independence, prose_status)'
+    - 'Repair-class mappings'
     - 'Filename conventions'
   out_of_scope:
-    - 'Framework primitives (live in MINIMAL_AXIOMS)'
+    - 'Framework primitives (live in MINIMAL_AXIOMS_2026-05-03.md)'
     - 'Physics quantities (live in ASSUMPTION_DERIVATION_LEDGER / per-claim notes)'
     - 'Topic-specific physics wording (lives in topic notes; not vocabulary)'
+
+# ---- Generated sections (renderer-facing) ----
+# Each section name maps to which CV.md section it renders into.
+# Required for BLOCKER 3 (schema must regenerate the full CV.md, not just families).
+generated_sections:
+  vocabulary_hierarchy: { rendered_section: 'Vocabulary Hierarchy' }
+  science_naming_rules: { rendered_section: 'Science Naming Rules' }
+  filename_taxonomy: { rendered_section: 'Filename Taxonomy' }
+  publication_capture_dispositions: { rendered_section: 'Publication-Capture Dispositions' }
+  claim_strength_labels: { rendered_section: 'Claim-Strength / Release Labels' }
+  audit_lane_field_vocabulary: { rendered_section: 'Audit Lane Field Vocabulary' }
+  migration_legacy_wording: { rendered_section: 'Migration / Legacy Wording' }
+  historical_lane_board_labels: { rendered_section: 'Historical Lane-Board Labels' }
+  historical_discovery_log_labels: { rendered_section: 'Historical Discovery-Log Labels' }
+  column_rules: { rendered_section: 'Column Rules' }
+  protocol_qualifiers: { rendered_section: 'Protocol Qualifiers' }
+  evidence_terms: { rendered_section: 'Evidence Terms' }
+  hyphenation: { rendered_section: 'Hyphenation' }
+  axiom_naming_out_of_scope: { rendered_section: 'Axiom Naming (out of scope for this doc)' }
+  stale_narrative_archival: { rendered_section: 'Stale-Narrative Archival Vocabulary' }
+  topic_language: { rendered_section: 'Topic-Local Language (note: scope_tag = topic_local; will move to topic notes in Cleanup-2)' }
+  paper_voice: { rendered_section: 'Paper-Facing Prose Voice' }
 ```
 
 The cleanup PR creates this file, populates it from the existing
@@ -461,52 +713,117 @@ References specific findings from the audit-prep note, by title (e.g.
 No filename suffix encoding the role. Cross-references by exact title
 and filename.
 
-## Migration scope (cleanup PR)
+## Migration scope (two cleanup PRs)
 
-The companion cleanup PR will:
+Per the consolidated review's MAJOR 10, the cleanup is split into two
+PRs. Cleanup-1 is schema + tooling + generated docs (low-risk).
+Cleanup-2 is the per-file migration sweep (judgment-required).
 
-1. **Create `docs/repo/controlled_vocabulary.yaml`** from the existing
-   content of CONTROLLED_VOCABULARY.md + audit/README field enums +
-   FRESH_LOOK_REQUIREMENTS independence tiers. Populate with
-   `inspired_by`, `ai_extension`, and `convention_reference` fields
-   per the schema above.
-2. **Add `scripts/vocab_lint.py`** implementing `--fix` and
-   `--report-only` modes against the YAML's rewrite_rules and
-   filename_rules.
-3. **Wire `vocab_lint --fix`** into audit-loop, review-loop, and
-   physics-loop pre-commit gates (skill-level rule + scripted pre-commit
-   hook).
-4. **Regenerate** CONTROLLED_VOCABULARY.md and KEY_TERMINOLOGY.md from
-   the YAML via a small renderer script. Mark both as `<!-- generated; do
-   not edit by hand -->` at the top.
-5. **Sweep the repo** with `vocab_lint --fix` to apply all canonical
-   rewrites in one pass. Commit the rewrites as a single sweep commit.
-6. **Migrate ~84 hostile-audit-findings + downstream-fix notes** to the
-   canonical structures defined in "Canonical structures for emerging
-   needs" above. Filename change + F-letter heading change. The
-   per-finding content is preserved; only the wrapping is rewritten.
-7. **Remove all "legacy alias: X" instances** by replacing the
-   alias-wrapped form with the canonical name everywhere.
-8. **Update all references** from `MINIMAL_AXIOMS_2026-04-11.md`
+### Cleanup-1 (schema + tooling; low-risk, ships first)
+
+1. **Create `docs/repo/controlled_vocabulary.yaml`** with the
+   conformant schema specified above (W3C-conformant `audit_status`,
+   GRADE-conformant `closure_status` × `chain_certainty`,
+   IEEE 1044-conformant `defect_type` × `defect_class` × `severity`,
+   AI-physics-extension fields tagged). Required: `schema_version: 1`,
+   all `equivalent_to` standard references, `ai_extension` flags with
+   rationale, `aliases` mapping historical enum values to the new
+   schema cells.
+2. **Schema migration in `apply_audit.py` and `audit_lint.py`:**
+   - Add new fields: `failure_mode`, `dependency_status`,
+     `closure_status`, `chain_certainty`, `defect_type`,
+     `defect_class`, `severity`, `prose_status`,
+     `prose_corrections`.
+   - Replace flat `ALLOWED_VERDICTS` enum with the W3C-conformant
+     4-value `audit_status` + orthogonal `failure_mode`.
+   - Add a `pre_audit_prose_fix` envelope that atomically refreshes
+     `note_hash` after a vocab_lint --fix run, per BLOCKER 1.
+   - Backfill existing ledger rows from old enum values to the new
+     schema using the `aliases` map. Specifically:
+     - `audited_renaming` → `(audit_status: audited_retired,
+       failure_mode: renaming)`
+     - `audited_decoration` → `(audit_status: audited_retired,
+       failure_mode: decoration)`
+     - `audited_numerical_match` → `(audit_status: audited_retired,
+       failure_mode: numerical_match)`
+     - `audited_conditional` → `(audit_status: audited_clean,
+       dependency_status: pending_chain)`
+     - `audited_failed` → `(audit_status: audited_retired,
+       failure_mode: generic)`
+   - `prose_status` backfill: use
+     `not_evaluated_pre_vocab_lint`, not `clean`, until each row is
+     actually linted.
+3. **Add `scripts/vocab_lint.py`** with `--fix`, `--report-only`,
+   `--report-path` modes. Reads the YAML, applies the rewrite_rules
+   and filename_rules, writes a per-file
+   `prose_status.json` artifact. **Link-aware mode required** for
+   filename renames (rewrites cross-doc references in the same
+   commit, per BLOCKER 2). F-letter migration uses
+   `migration_strategy: per_file_mapping_with_link_check`, not a
+   one-shot regex.
+4. **Add `scripts/render_controlled_vocabulary.py`** as the
+   deterministic renderer. Inputs: `controlled_vocabulary.yaml`.
+   Outputs: regenerated `CONTROLLED_VOCABULARY.md` and
+   `KEY_TERMINOLOGY.md` with `<!-- generated; do not edit by hand;
+   source: docs/repo/controlled_vocabulary.yaml hash=<sha256> -->`
+   headers. Golden-test required: the rendered output must equal a
+   compatibility-adjusted version of the current CV.md after
+   regeneration.
+5. **CI gate:** `.github/workflows/audit.yml` (or equivalent) runs
+   `vocab_lint --report-only` and `render_controlled_vocabulary.py
+   --check` on every PR. Failure if any unhandled drift or render
+   diff exists.
+6. **Vocab-extension queue file:**
+   `docs/repo/vocab_extension_queue.json` created and surfaced
+   through nightly audit cron. Per the resolved cadence decision.
+7. **Wire `vocab_lint --fix`** into audit-loop, review-loop, and
+   physics-loop pre-commit gates. Remove the "forward-looking"
+   markers from the SKILL.md files since the tooling now exists.
+8. **Update `audit/README.md`** with the new field semantics, the
+   `note_hash` refresh behavior, and the `prose_status` separation.
+
+### Cleanup-2 (migration sweep; judgment-required, ships after Cleanup-1)
+
+1. **Per-file F-letter → Finding-N migration** using the
+   `per_file_mapping_with_link_check` strategy. For each of the 9
+   files with F-letter headings: build `{F-A: <existing title>,
+   F-B: <existing title>, …}` map; rewrite headings, intra-doc
+   references, markdown links, runner assertions, and source-note
+   provenance citations atomically. Preserve historical reference via
+   `formerly F-C in PR #1262` footnote on each migrated finding.
+2. **Filename renames** for the ≥132 emergent-suffix notes (84
+   `_HOSTILE_AUDIT_FINDINGS_NOTE_` + 16 `_STRETCH_ATTEMPT_NOTE_` + 9
+   `_DOWNSTREAM_FIX_NOTE_` + 7 `_HOSTILE_REVIEW_*` + 5
+   `_REVIEW_PACKET_` + 4 `_TERMINAL_SYNTHESIS_META_` + 4
+   `_SHARPENED_NOTE_` + 4 one-offs). Use
+   `vocab_lint --fix --link-aware`; commit one cluster at a time
+   with a link-checker run after each commit.
+3. **Remove all 45 `(legacy alias: X)` instances** by replacing the
+   alias-wrapped form with the canonical name everywhere (with
+   excluded paths in `docs/work_history/` and `archive_unlanded/`
+   per the YAML's `excluded_paths`).
+4. **Update all references** from `MINIMAL_AXIOMS_2026-04-11.md`
    (superseded 2026-05-03) to `MINIMAL_AXIOMS_2026-05-03.md`.
-9. **Strip physics primitives** from CONTROLLED_VOCABULARY.md and
-   KEY_TERMINOLOGY.md (any `A_min` / `Axiom 1` / `Axiom 2` / `Axiom*`
-   / `Cl(3)` / `Z³` / `g_bare` / `u_0` / `M_Pl` entries). They move to
-   MINIMAL_AXIOMS sole authority.
-10. **Move topic-specific physics wording** (BMV / boundary-law /
-    branch-mediated entanglement / historical retirement language) out
-    of CONTROLLED_VOCABULARY.md and into topic-scoped notes. These are
-    physics prose conventions, not process vocabulary.
-11. **Extend the audit ledger schema** to add `prose_status` and
-    `prose_corrections` fields. Backfill `prose_status: clean` on
-    existing rows; document the new fields in audit/README.md.
-12. **Verify zero violations** remain via final `vocab_lint
-    --report-only` pass on the whole repo. CI gate.
+5. **Strip remaining physics primitives** from
+   CONTROLLED_VOCABULARY.md and KEY_TERMINOLOGY.md if any remain
+   after re-render. (Most should already be gone after this PR's
+   strip.)
+6. **Move topic-specific physics wording** (BMV / boundary-law /
+   branch-mediated entanglement / historical retirement language)
+   out of CONTROLLED_VOCABULARY.md into topic-scoped notes. Update
+   `scope_tag: topic_local` entries in the YAML accordingly.
+7. **Re-audit cascade:** the ≥132 migrated notes will have
+   `note_hash` changes; this resets their audit rows to
+   `unaudited` per FRESH_LOOK_REQUIREMENTS §6. Document the
+   re-audit workload explicitly; either prioritize the highest-leverage
+   ones or use the cleanup-only `pre_audit_prose_fix` envelope to
+   avoid the cascade.
+8. **Final `vocab_lint --report-only`** pass across the whole repo
+   as a CI gate. Zero violations required to land Cleanup-2.
 
-The cleanup PR is intentionally large and mechanical. Once it lands,
-the maintenance cost falls to near zero: agents auto-correct in their
-loops, the YAML is the only edit surface for vocabulary, and the
-rendered docs stay in sync by construction.
+The cleanup is large but split. Cleanup-1's tooling lands first
+behind the CI gate; Cleanup-2 then operates against a working
+toolchain rather than building it as it goes.
 
 ## AI methods section
 

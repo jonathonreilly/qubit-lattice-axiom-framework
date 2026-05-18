@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 357 |
+| **retained_bounded** | 358 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1313 |
+| unaudited | 1312 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 6 |
-| `audited_clean` | 586 |
+| `audited_clean` | 587 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1526 |
+| `unaudited` | 1525 |
 
 | claim_type | count |
 |---|---:|
@@ -451,6 +451,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_chokepoint_boundary_fit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mirror_grown_combined_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_mutual_information_canonical_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mirror_mutual_information_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6987,6 +6988,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The registered fixed-anchor mass-window cache shows positive but weakly fit responses at N=25,40,60, with R^2=0.420/0.050/0.116, so no clean mirror mass law is supported on the searched fixed-anchor windows.  _(class `C`)_
 - **chain closes:** True — The live runner reproduces the registered cache and the note has narrowed the load-bearing scope to those fixed-anchor fits. The mirror_chokepoint dependency provides general bounded mirror context, but this audit does not rely on it to certify the NPL_HALF=50/N=40,60 surface as a retained mirror pocket.
 - **rationale:** The current source boundary is narrow enough: the load-bearing result is the registered fixed-anchor runner cache, and the live runner matches its weak-fit numbers. The note explicitly demotes the distance-tail fit and cross-lane ranking to historical/out-of-scope context, avoiding the earlier unregistered-evidence problem. Residual risk is misuse of the phrase retained mirror pocket; the audited scope is the fixed-anchor cache result itself, not a certification of the NPL_HALF=50 surface by the parent mirror-chokepoint note.
+- **auditor confidence:** high
+
+### `mirror_grown_combined_note`
+
+- **Note:** [`MIRROR_GROWN_COMBINED_NOTE.md`](../../docs/MIRROR_GROWN_COMBINED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the frozen cached stdout table for scripts/mirror_grown_combined.py at runner_sha256 b296de555272c4ccbc8fce2356c08497a478848415300c82c38d53089e6e8e0c, not any cross-lane comparison claim or live deterministic rerun claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-mirror_grown_combined_no-039`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The grown mirror scout produces the finite table in the registered runner cache, with small 1 - pur_min and weak gravity across d_growth in {2,3} and n_layers in {18,25,30,40}.  _(class `C`)_
+- **chain closes:** True — The note's narrowed conclusion follows from the included cached stdout and runner source: the table values match the cache, and the source computes them by growing seeded mirror DAGs and propagating amplitudes rather than printing constants. The broader mirror/Z2xZ2 comparison is explicitly out of scope.
+- **rationale:** The current note has narrowed the load-bearing claim to a frozen cache-only historical negative-control readout, and the supplied cache directly contains every row in the table. The runner source performs a stochastic seeded computation over grown mirror DAGs and does not hard-code the reported table or import comparator premises. Because the note explicitly excludes live deterministic reproducibility and cross-lane comparison from load-bearing scope, the finite cached-table claim closes on the restricted packet.
 - **auditor confidence:** high
 
 ### `mirror_mutual_information_canonical_families_note`

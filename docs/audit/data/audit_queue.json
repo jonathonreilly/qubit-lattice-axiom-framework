@@ -5029,26 +5029,26 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "poisson_exhaustive_uniqueness_note",
-      "claim_scope": null,
+      "claim_scope": "Finite N = 16 candidate-enumeration diagnostic over the runner's 21 evaluated operator instantiations/rows, with no continuum-limit, continuous-alpha, or all-local-operator uniqueness audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "gate_b_poisson_self_gravity_note",
         "poisson_self_gravity_loop_note",
         "self_consistency_forces_poisson_note"
       ],
       "direct_in_degree": 10,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 14.798,
       "note_path": "docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_poisson_exhaustive_uniqueness.py",
       "transitive_descendants": 889

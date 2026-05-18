@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1310 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -49,9 +49,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
+| `audit_in_progress` | 1 |
 | `audited_clean` | 590 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 101 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `causal_field_portability_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -723,6 +722,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `charged_lepton_koide_review_packet_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -1732,6 +1732,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The current runner computes the headline window, exposure-matched static proxy, c/eta/s tables, portability checks, and four-seed gate rather than merely asserting them in prose. Closure is only for this finite diagnostic and does not establish black-hole escape physics, self-consistent field closure, or an irreducible cone-geometry mechanism.
 - **rationale:** The repaired runner constructs the lattice-like propagation model, evaluates the field variants, and computes escape ratios from the stated finite setup; the target values are not hard-coded as expected constants. The completed cache exits successfully and includes the previously missing exposure-matched static, c/eta/s, portability, and four-seed robustness evidence. The clean verdict is bounded to the runner-defined diagnostic, while stale conditional labels and broader causal-gravity prose in the note are not promoted.
 - **auditor confidence:** high
+
+### `causal_field_portability_note`
+
+- **Note:** [`CAUSAL_FIELD_PORTABILITY_NOTE.md`](../../docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded computational diagnostic on the configured fixed-anchor three-family replay with admitted v6 growth, propagation, and centroid operators.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-judicial-panel-gpt-5.5-20260518-causal_field_portability_note`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The runner computes exact-null controls and family-split forward/dynamic ratios by applying imported build_structured_growth, propagate, and centroid_y operators to the configured three-family fixed-anchor replay.  _(class `B`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class B). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class B; J2: second / audited_conditional / bounded_theorem / class B; J3: second / audited_conditional / bounded_theorem / class B; J4: second / audited_conditional / bounded_theorem / class B; J5: second / audited_conditional / bounded_theorem / class B. The packet supports the bounded diagnostic numerically: the runner source computes the reported null controls, deltas, ratios, and spreads rather than merely printing constants. But the computation remains load-bearingly dependent on imported v6 growth, propagation, and centroid readout operators whose implementation is not included in the packet and whose note does not itself close the operator-carrier/readout identification for this diagnostic. The source note explicitly says these are admitted-context inputs and that the retained framework-operator-carrier audit or portability-criterion theorem remains open, so clean closure is not available.
+- **rationale:** Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class B). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class B; J2: second / audited_conditional / bounded_theorem / class B; J3: second / audited_conditional / bounded_theorem / class B; J4: second / audited_conditional / bounded_theorem / class B; J5: second / audited_conditional / bounded_theorem / class B. The packet supports the bounded diagnostic numerically: the runner source computes the reported null controls, deltas, ratios, and spreads rather than merely printing constants. But the computation remains load-bearingly dependent on imported v6 growth, propagation, and centroid readout operators whose implementation is not included in the packet and whose note does not itself close the operator-carrier/readout identification for this diagnostic. The source note explicitly says these are admitted-context inputs and that the retained framework-operator-carrier audit or portability-criterion theorem remains open, so clean closure is not available.
+- **open / conditional deps cited:**
+  - `scripts/evolving_network_prototype_v6.py`
+  - `EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md`
+  - `retained portability-criterion theorem deriving the configured probe metric and threshold`
+- **auditor confidence:** judicial-panel
 
 ### `causal_propagating_field_note`
 

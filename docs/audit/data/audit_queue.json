@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 444,
+    "critical": 443,
     "high": 164,
     "leaf": 323,
     "medium": 322
@@ -1308,31 +1308,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "pmns_graph_first_cycle_frame_support_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.265,
-      "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
-      "transitive_descendants": 869
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -36716,6 +36691,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1253
+  "ready_count": 5,
+  "total_pending": 1252
 }

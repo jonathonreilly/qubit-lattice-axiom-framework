@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 974,
+    "bounded_theorem": 975,
     "decoration": 26,
     "meta": 217,
     "no_go": 234,
     "open_gate": 110,
-    "positive_theorem": 751
+    "positive_theorem": 750
   },
   "cycle_examples": [
     [
@@ -64,7 +64,7 @@
   ],
   "cycles_detected": 65,
   "effective_status_counts": {
-    "audited_conditional": 158,
+    "audited_conditional": 159,
     "audited_failed": 23,
     "audited_numerical_match": 9,
     "audited_renaming": 10,
@@ -90,7 +90,7 @@
     "retained_bounded": 353,
     "retained_no_go": 139,
     "retained_pending_chain": 4,
-    "unaudited": 1249
+    "unaudited": 1248
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

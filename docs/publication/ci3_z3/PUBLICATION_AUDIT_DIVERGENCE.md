@@ -17,10 +17,10 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 243 |
+| critical | `unaudited` | 242 |
 | high | `unaudited` | 110 |
 | medium | `unaudited` | 102 |
-| critical | `audited_conditional` | 24 |
+| critical | `audited_conditional` | 25 |
 | medium | `audited_conditional` | 14 |
 | high | `audited_conditional` | 7 |
 | high | `audited_numerical_match` | 3 |
@@ -204,7 +204,7 @@ publication tables phrase it.
 | critical | `pmns_c3_nontrivial_current_boundary_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `pmns_corner_transport_active_block_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_current_bank_value_selection_nogo_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `pmns_graph_first_cycle_frame_support_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `pmns_graph_first_cycle_frame_support_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `pmns_hw1_source_transfer_boundary_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `pmns_lower_level_end_to_end_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `pmns_minimal_branch_nonselection_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 353 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1249 |
+| unaudited | 1248 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 158 |
+| ~~audited_conditional~~ | 159 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -49,21 +49,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 581 |
-| `audited_conditional` | 158 |
+| `audited_conditional` | 159 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1462 |
+| `unaudited` | 1461 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 974 |
+| `bounded_theorem` | 975 |
 | `decoration` | 26 |
 | `meta` | 217 |
 | `no_go` | 234 |
 | `open_gate` | 110 |
-| `positive_theorem` | 751 |
+| `positive_theorem` | 750 |
 
 | criticality | count |
 |---|---:|
@@ -822,6 +822,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | D | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8550,6 +8551,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The residual Z_2 stabilizer of the selected graph axis acts on V_1 by the restriction T_{tau_k}|_{V_1}=P_{tau_k}, so Z_2-invariance of H is exactly P_{tau_k} H P_{tau_k}=H, giving P_23 H P_23=H for k=1.  _(class `A`)_
 - **chain closes:** True — The tensor-factor permutation unitary is explicitly defined, its restriction to V_1 is computed as the standard permutation matrix, and invariance of a Hermitian operator under that Z_2 action is exactly conjugation invariance by that matrix. The cited retained inputs supply the carrier and residual stabilizer; the bridge itself is algebraic.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the provided finite-dimensional objects, not a definition substitution or numerical match. The runner constructs the shifts, tensor-factor permutation unitaries, V_1 basis, restriction blocks, and Hermitian invariance checks directly, with PASS=87 FAIL=0. The claim is bounded to the structural bridge and explicitly avoids active-sector assignment or PMNS value selection.
+- **auditor confidence:** high
+
+### `pmns_graph_first_cycle_frame_support_note`
+
+- **Note:** [`PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md`](../../docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited that the cited retained-bounded graph-first selector and SU(3) integration notes support a bounded structural frame-fixing claim for the oriented-cycle basis, not coefficient selection.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-015819-921435c6-pmns_graph_first_cycle_f-001`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Once one axis is selected, the graph-first SU(3) integration on that axis canonically fixes the selected-axis fiber/base split and residual swap, and forward transport of diagonal projectors gives the ordered frame E12, E23, E31.  _(class `A`)_
+- **chain closes:** False — The source note's conclusion is only a bounded support theorem because both cited authorities are retained_bounded and the SU(3) authority explicitly preserves bounded/open identifications outside the structural graph-first surface. The packet also omits source for imported helper modules used by the runner, so the runner cannot be verified as computing its claimed upstream checks.
+- **rationale:** The note's internal move is algebraic frame transport over the cited selector and SU(3) integration inputs, and it correctly disclaims coefficient/value selection. However, the claim depends on retained_bounded upstream structural authorities rather than an unbounded retained theorem, so retained status does not propagate to a fully clean positive theorem. In addition, the primary runner imports frontier_graph_first_selector_derivation and frontier_graph_first_su3_integration, but the packet reports no helper imports and provides no helper source, making the runner artifact incomplete for source-level verification.
+- **open / conditional deps cited:**
+  - `GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`
+  - `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `pmns_hw1_source_transfer_boundary_note`

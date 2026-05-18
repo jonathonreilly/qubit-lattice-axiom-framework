@@ -171221,22 +171221,45 @@
       "verdict_rationale": null
     },
     "pmns_graph_first_cycle_frame_support_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T01:58:46.494843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 12.265,
+        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+        "transitive_descendants": 869
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-015819-921435c6-pmns_graph_first_cycle_f-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source note's conclusion is only a bounded support theorem because both cited authorities are retained_bounded and the SU(3) authority explicitly preserves bounded/open identifications outside the structural graph-first surface. The packet also omits source for imported helper modules used by the runner, so the runner cannot be verified as computing its claimed upstream checks.",
       "claim_id": "pmns_graph_first_cycle_frame_support_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited that the cited retained-bounded graph-first selector and SU(3) integration notes support a bounded structural frame-fixing claim for the oriented-cycle basis, not coefficient selection.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-18T01:58:46.494843+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -171245,20 +171268,23 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 12.265,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Once one axis is selected, the graph-first SU(3) integration on that axis canonically fixes the selected-axis fiber/base split and residual swap, and forward transport of diagonal projectors gives the ordered frame E12, E23, E31.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "71770e2b8d8944c7028f993b3282b9ffc4490c21b4092161ac36113a8bd36415",
       "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "runner_artifact_issue include the transitive helper runner sources for scripts/frontier_graph_first_selector_derivation.py and scripts/frontier_graph_first_su3_integration.py, then re-audit whether the bounded support theorem should remain conditional or be promoted only within its bounded scope.",
+      "open_dependency_paths": [
+        "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
+        "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -171344,16 +171370,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 18,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 18
       },
       "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
       "title": "PMNS Graph-First Cycle Frame Support",
       "transitive_descendants": 869,
-      "verdict_rationale": null
+      "verdict_rationale": "The note's internal move is algebraic frame transport over the cited selector and SU(3) integration inputs, and it correctly disclaims coefficient/value selection. However, the claim depends on retained_bounded upstream structural authorities rather than an unbounded retained theorem, so retained status does not propagate to a fully clean positive theorem. In addition, the primary runner imports frontier_graph_first_selector_derivation and frontier_graph_first_su3_integration, but the packet reports no helper imports and provides no helper source, making the runner artifact incomplete for source-level verification."
     },
     "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16": {
       "audit_date": null,

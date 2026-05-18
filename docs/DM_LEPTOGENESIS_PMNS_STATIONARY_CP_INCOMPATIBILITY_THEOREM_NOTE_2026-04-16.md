@@ -97,6 +97,17 @@ or else
 - a stronger exact no-go proving that no such PMNS-side law exists on the
   current branch.
 
+## Upstream authorities (selector-family + relative-action / min-info + charged-sector)
+
+The runner imports four PMNS-side modules; three have framework wrapper notes:
+
+- [DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) — selector-family construction (`selector` module).
+- [DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md) — relative-action stationarity (`stat` module).
+- [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — charged-sector triplet-channel source law (`triplet_channels_from_active_data`).
+
+Remaining missing-dep-edge admission (no wrapper note exists):
+- `frontier_dm_leptogenesis_pmns_mininfo_source_law` — min-info source-law module (`minlaw`).
+
 ## Command
 
 ```bash

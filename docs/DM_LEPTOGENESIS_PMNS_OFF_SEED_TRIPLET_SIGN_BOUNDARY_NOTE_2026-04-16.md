@@ -109,6 +109,17 @@ or else
 - prove a stronger exact no-go showing that this `5`-real sign system cannot
   be realized on the current PMNS branch.
 
+## Upstream authorities
+
+The runner imports three PMNS-side modules:
+
+- [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — supplies `seed_averages` and `source_coordinates`.
+- [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — supplies the triplet-channel definitions used to test the `gamma > 0, E1 > 0, E2 > 0` constructive witness criterion.
+
+Remaining missing-dep-edge admission (no wrapper note exists):
+- `frontier_dm_leptogenesis_pmns_mininfo_source_law` — min-info source-law module
+  used as `minlaw` in the runner.
+
 ## Command
 
 ```bash

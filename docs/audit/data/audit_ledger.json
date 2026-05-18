@@ -19796,7 +19796,7 @@
       "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": null,
       "chain_closure_explanation": null,
       "claim_id": "causal_field_portability_note",
@@ -19820,8 +19820,19 @@
           "load_bearing_step_class": "B",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-18T12:40:28.222524+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-causal_field_portability-003",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded computational diagnostic on the configured fixed-anchor three-family replay with admitted v6 growth, propagation, and centroid operators.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [

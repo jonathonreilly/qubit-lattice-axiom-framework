@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 355 |
+| **retained_bounded** | 356 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 6 |
-| `audited_clean` | 584 |
+| `audited_clean` | 585 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1530 |
+| `unaudited` | 1529 |
 
 | claim_type | count |
 |---|---:|
@@ -208,6 +208,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cycle_battery_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_battery_scaled_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -2528,6 +2529,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `runner_path_registered_without_scripts_prefix`
   - `three_of_six_live_rows_degenerate`
   - `finite_size_scaling_and_multiseed_robustness_open`
+- **auditor confidence:** high
+
+### `cross_family_universality_note`
+
+- **Note:** [`CROSS_FAMILY_UNIVERSALITY_NOTE.md`](../../docs/CROSS_FAMILY_UNIVERSALITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Dispersion-only finite-runner consistency at H=0.5 across the three specified grown-DAG parameter families, using five seeds per family and seed-mean omega(p) fits.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-cross_family_universalit-034`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At H=0.5, the dispersion runner computes seed-mean omega(p) for Fam1/Fam2/Fam3 and finds Schrödinger/KG R² gaps below 0.01 with m_eff values 5.98, 5.90, and 5.88.  _(class `C`)_
+- **chain closes:** True — The provided runner source constructs each grown DAG from the stated family parameters, propagates plane waves, measures omega(p), fits the seed-mean dispersion curves, and prints the claimed R² gaps and m_eff values. This closes only the narrowed dispersion finite-runner claim, not the non-load-bearing lensing or fine-H universality language.
+- **rationale:** The live runner output matches the narrowed dispersion claims: all three families have Δ(Schrödinger-KG) below 0.01 and seed-mean effective masses within the stated 1.7% spread. The runner source performs an actual simulation and fit from fixed generator parameters and seeds, with no helper imports or hard-coded expected output values. The clean verdict is limited to the finite H=0.5 dispersion-runner result; the note's older lensing and broader universality wording is explicitly non-load-bearing or out of scope.
 - **auditor confidence:** high
 
 ### `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29`

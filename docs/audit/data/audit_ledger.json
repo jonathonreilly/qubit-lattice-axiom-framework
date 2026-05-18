@@ -152786,24 +152786,49 @@
       "verdict_rationale": null
     },
     "mirror_vs_central_head_to_head_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T12:36:24.504138+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "central_band_dense_joint_highn_note": "Audited the bounded high-N dense central-band scan for N=80,100 over npl=60,70,80 using the provided same-graph Born, purity, and gravity runner chain.",
+          "mirror_chokepoint_boundary_fit_note": "Fixed finite-window certificate for the named mirror chokepoint card: N=40,60,80,100 pass the stated internal retention gates, N=120 is a zero-gravity wall excluded before fitting, and the quoted weak OLS fit is arithmetic over those retained rows.",
+          "mirror_chokepoint_note": "Strict default mirror chokepoint card only: NPL_HALF=25, connect_radius=4.0, layer2_prob=0.0, k=5.0, 16 seeds, mirror p2=0 rows at N=15 and N=25. The audited result is the retained N=15/N=25 table with Born-clean, k=0-clean, positive-gravity, decoherence-side advantage metrics, plus the same-card FAIL markers at N=40,60,80,100. This excludes a single-surface family theorem, asymptotic law, strict-card large-N retention, sparse layer-2 rescue, scaling probes, and the dense NPL_HALF=60 boundary-card result except as the separate retained dependency."
+        },
+        "dep_claim_type": {
+          "central_band_dense_joint_highn_note": "bounded_theorem",
+          "mirror_chokepoint_boundary_fit_note": "bounded_theorem",
+          "mirror_chokepoint_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "central_band_dense_joint_highn_note": "retained_bounded",
+          "mirror_chokepoint_boundary_fit_note": "retained_bounded",
+          "mirror_chokepoint_note": "retained_bounded"
+        },
+        "deps": [
+          "central_band_dense_joint_highn_note",
+          "mirror_chokepoint_boundary_fit_note",
+          "mirror_chokepoint_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2723547030f328d6c3276e57295a0314cfdfaed9768b6bfd99a373c90c25885f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-mirror_vs_central_head_t-040",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The dense central-band row is supported by the cited high-N note, but the mirror row used in the comparison is not supported by the cited mirror authorities. The cited mirror note explicitly excludes the NPL_HALF=50 scaling probe, and the boundary-fit note supports NPL_HALF=60 rows with different N=40 values, not the N=40, NPL_HALF=50 row quoted here.",
       "claim_id": "mirror_vs_central_head_to_head_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the head-to-head ranking comparing the dense central-band retained row against the mirror chokepoint retained pocket using only the cited one-hop authorities and the primary runner cache/source.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-18T12:36:24.504138+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -152813,19 +152838,19 @@
         "mirror_chokepoint_boundary_fit_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Reading the registered runner cache directly, the structural ranking is Dense central-band + layer norm first and Mirror chokepoint / Z2-protected transfer second.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "bf88f399e991a0c4b63aa5fd3d2bbf3121da5485d3a1620a74c35527a30cbcdf",
       "note_path": "docs/MIRROR_VS_CENTRAL_HEAD_TO_HEAD_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "other: replace the hard-coded mirror row/range with values from the cited retained mirror authorities, or add a registered one-hop authority and assertion-gated cache for the NPL_HALF=50 scaling probe.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -152946,7 +152971,7 @@
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0,
         "total_pass": 0
@@ -152954,7 +152979,7 @@
       "runner_path": "scripts/mirror_vs_central_head_to_head.py",
       "title": "Mirror vs Central Head-To-Head Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner is a hard-coded summary printer, not a computation or cache-reader, so stdout does not independently verify the disputed row. The load-bearing comparison imports upstream rows, but the cited upstream mirror authorities do not contain the specific N=40, NPL_HALF=50 row or the through-N=60 strict-pocket range claim used by this note. Because the ranking depends on an unsupported mirror input, the chain does not close even as a registered-row structural summary."
     },
     "mirror_vs_lattice_program_note": {
       "audit_date": null,

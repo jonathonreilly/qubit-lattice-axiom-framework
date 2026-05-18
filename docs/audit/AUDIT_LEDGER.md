@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1245 |
+| unaudited | 1244 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 10 |
+| ~~audited_renaming~~ | 11 |
 | ~~audited_conditional~~ | 160 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -53,17 +53,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 10 |
-| `unaudited` | 1458 |
+| `audited_renaming` | 11 |
+| `unaudited` | 1457 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 976 |
 | `decoration` | 26 |
-| `meta` | 217 |
+| `meta` | 218 |
 | `no_go` | 234 |
 | `open_gate` | 111 |
-| `positive_theorem` | 748 |
+| `positive_theorem` | 747 |
 
 | criticality | count |
 |---|---:|
@@ -969,6 +969,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_theta_hierarchy_open_scalar_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7676,6 +7677,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the single parameter card npl_half=60, connect_radius=5.0, k=5.0, layer2_prob=0.0, 16 seeds, mirror MI exceeds matched random MI at N=40, 60, 80 and falls below matched random MI at N=100; the power-law fits are descriptive only.  _(class `C`)_
 - **chain closes:** True — The provided runner source generates the mirror and matched random chokepoint DAGs, propagates amplitudes, computes MI and purity over the declared seeds, and the cached output matches the retained rows. The cited dense-card authority is retained_bounded, and the source claim is explicitly finite rather than an asymptotic family theorem.
 - **rationale:** The load-bearing MI table is produced by an actual first-principles runner path using the supplied graph generators and propagator, not by hard-coded expected values or a cross-note copied table. Both cited one-hop authorities in the restricted packet are retained_bounded. Because the note narrows the conclusion to the finite N=40/60/80 advantage and explicit N=100 reversal, the bounded claim follows without importing an unclosed asymptotic law.
+- **auditor confidence:** high
+
+### `mirror_mutual_information_note`
+
+- **Note:** [`MIRROR_MUTUAL_INFORMATION_NOTE.md`](../../docs/MIRROR_MUTUAL_INFORMATION_NOTE.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the supersession/pointer claim that docs/MIRROR_MUTUAL_INFORMATION_NOTE.md is no longer the canonical mirror MI result and redirects synthesis to the chokepoint artifact chain.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-020347-25ac6b9c-mirror_mutual_informatio-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note declares that the canonical mirror MI artifact is now frozen in the chokepoint note, runner, and log, and that this file should only be treated as a pointer.  _(class `E`)_
+- **chain closes:** True — The restricted packet supports the metadata redirect: the source note makes no independent MI theorem claim, and the cited chokepoint/families notes provide the bounded canonical target it points to.
+- **rationale:** The source note's load-bearing move is a status/pointer declaration, not a derivation of a physics result. The included runner genuinely computes the bounded chokepoint MI table from generated DAGs and a linear propagator, but that computation belongs to the cited canonical artifact, not to this superseded note's own claim. Because the audited note reduces to declaring which artifact should be treated as canonical, the proper verdict is audited_renaming rather than audited_clean.
 - **auditor confidence:** high
 
 ### `mirror_vs_central_head_to_head_note`

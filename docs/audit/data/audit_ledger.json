@@ -175664,24 +175664,41 @@
       "verdict_rationale": null
     },
     "pmns_oriented_cycle_selection_structure_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T12:19:36.019534+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "pmns_oriented_cycle_channel_value_law_note": "For a canonical 3x3 active block A and the projected forward-cycle basis P_i C = E12,E23,E31, the forward-cycle coefficients are diag(A C^dagger); the cached runner checks the stated projected cycle/projector identities and coefficient reconstruction."
+        },
+        "dep_claim_type": {
+          "pmns_oriented_cycle_channel_value_law_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "pmns_oriented_cycle_channel_value_law_note": "retained"
+        },
+        "deps": [
+          "pmns_oriented_cycle_channel_value_law_note"
+        ],
+        "load_bearing_score": 11.786,
+        "runner_hash": "b3ba7b5fcf9a1caed22191fd128bf8607dcba31d6fd1644e4e813862413b2307",
+        "transitive_descendants": 882
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-pmns_oriented_cycle_sele-020",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional algebra closes on the stated premises, but the restricted packet does not prove the graph-first residual antiunitary condition or the sole-axiom free-point identity-block premise. Those missing bridge theorems are explicitly admitted as open work in the note.",
       "claim_id": "pmns_oriented_cycle_selection_structure_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded conditional algebraic reduction of the oriented-cycle channel: given the retained native channel law plus the assumed free-point identity block and residual swap-conjugation antiunitary premise, C3 covariance reduces to sigma C, the free point gives sigma=0, and the residual route gives c1=conjugate(c3), c2 real.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-18T12:19:36.019534+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -175689,19 +175706,19 @@
         "pmns_oriented_cycle_channel_value_law_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.786,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the graph-first route, the residual antiunitary condition A_fwd = P_23 A_fwd^dagger P_23 has fixed locus c_1 = conjugate(c_3), c_2 real, while the free-point identity block forces sigma = 0 on the C3-fixed slot.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "c5ed50ddbb1be013a6c0df1bc3dad7ca611742f829d5a79340f780d3768cfe9b",
       "note_path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained bridge notes proving that the graph-first selected-axis route induces A_fwd = P_23 A_fwd^dagger P_23 and that the sole-axiom free point has active block exactly I_3.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -175858,16 +175875,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 8,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure",
       "transitive_descendants": 882,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs genuine class A finite-dimensional algebra checks: cyclic permutation, C3-fixed locus, vanishing oriented coefficients on I3, and the residual swap-conjugation fixed locus. The cited channel-value-law authority is marked retained, but the present note still imports two load-bearing premises not closed by the restricted packet. Because retained status does not propagate through open bridge premises, the result is conditional rather than clean or decoration."
     },
     "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17": {
       "audit_date": null,

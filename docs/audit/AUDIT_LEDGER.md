@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1339 |
+| unaudited | 1338 |
 | audit_in_progress | 1 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 578 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 81 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1552 |
+| `unaudited` | 1551 |
 
 | claim_type | count |
 |---|---:|
@@ -737,6 +737,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | F | - |
@@ -3883,6 +3884,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The frozen cache was produced by the pinned harness with exit code 0/status ok and its stdout table is exactly Omega, so Omega is the harness-defined readout under the declared Xi, Lambda, and seeds.  _(class `A`)_
 - **chain closes:** True — The scoped chain closes as an exact cache/source-consistency check: the companion verifies the frozen cache metadata, pinned harness SHA, Omega rows, seed/row declarations, and determinism markers. The primitive-to-observable gravity interpretation is explicitly outside the audited claim.
 - **rationale:** The load-bearing step is not a first-principles physical derivation, but the note does not present it as one; it is a bounded conditional tied to a frozen runner cache. The provided companion source performs concrete cache, SHA, row, and source-marker checks rather than merely printing PASS. No cited authority or external comparator is needed for the scoped conditional, and the physical-gravity bridge is explicitly excluded rather than imported.
+- **auditor confidence:** high
+
+### `gate_b_farfield_note`
+
+- **Note:** [`GATE_B_FARFIELD_NOTE.md`](../../docs/GATE_B_FARFIELD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A runner-defined conditional numerical scenario for h=0.5 grown-geometry far-field rows z in {3,4,5}, twelve seeds per row, under the admitted growth rule, source law, propagation kernel, action, and readout criterion.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-gate_b_farfield_note-004`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the runner-defined h=0.5 family with the admitted-context ingredients, the harness reports 100% TOWARD-z-centroid plus linear F~M = 1.00 at all four tested drift/restore levels for z = 3, 4, 5, twelve seeds per row.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the stated bounded TOWARD and F~M outputs, but the primitive-to-observable bridge is explicitly admitted rather than derived. The missing step is a theorem deriving the source law, propagation/readout map, and far-field Gate B criterion from accepted primitives.
+- **rationale:** The primary runner is not print-only: it constructs grown geometries, propagates amplitudes, computes detector centroids, and fits the F~M slope without hard-coded expected outputs. However, the note itself narrows the claim to a conditional numerical certificate and explicitly lists the growth rule, source law, kernel, valley-linear action, and readout criterion as admitted-context inputs. Because the physical-gravity bridge is open, the result cannot propagate as a clean Gate B closure.
 - **auditor confidence:** high
 
 ### `gate_b_grown_distance_law_note`

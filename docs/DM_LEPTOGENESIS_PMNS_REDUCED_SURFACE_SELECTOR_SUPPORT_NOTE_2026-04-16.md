@@ -90,6 +90,14 @@ local polishing. So the safe live statement is:
 - this materially strengthens the PMNS-assisted route
 - it is not yet promoted here as a theorem-grade global selector certificate
 
+## Upstream authorities
+
+The runner imports three PMNS-side modules; each has a framework wrapper note:
+
+- [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md) — flavor-column functional theorem (`func` module).
+- [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — active-projector reduction (`act` module).
+- [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — observable-relative action law (`rel` module).
+
 ## Command
 
 ```bash

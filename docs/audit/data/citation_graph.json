@@ -6469,6 +6469,14 @@
       "to": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16"
     },
     {
+      "from": "dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_pmns_oriented_phase_sheet_selector_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_constructive_projected_source_selector_theorem_note_2026-04-16"
     },
@@ -6489,6 +6497,42 @@
       "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
     },
     {
+      "from": "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16",
+      "to": "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
     },
@@ -6498,6 +6542,18 @@
     },
     {
       "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
     },
     {
@@ -18519,6 +18575,50 @@
     {
       "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "native_gauge_closure_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "three_generation_observable_theorem_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "to": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
     },
     {
       "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
@@ -46373,9 +46473,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
+        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "110b0ccde7b6258c3636427b1d82d3ac5bfff28cd4e3f15a5718268dc17021ed",
+      "note_hash": "ee67b054b3cac1a868123deef63fc3b7a9b04a4c596edcd381abd7996d395892",
       "path": "docs/DM_LEPTOGENESIS_PMNS_OFF_SEED_TRIPLET_SIGN_BOUNDARY_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_off_seed_triplet_sign_boundary.py",
       "title": "DM Leptogenesis PMNS Off-Seed Triplet Sign Boundary"
@@ -46415,9 +46518,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
+        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "040dcce19864e5f7e0dbbf3c49246315849a49067e40b8ae41b4f184c32cfff6",
+      "note_hash": "28c2d631147599cb508050f8db65dfa6cd3a2375c460e7442817ce4f860df0a6",
       "path": "docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py",
       "title": "DM Leptogenesis PMNS Reduced-Surface Selector Support"
@@ -46427,9 +46534,16 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16",
+        "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
+        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "c9da5f999ea56cfb518844bb00eade6a32f015a900b86984df7111dac01a3b28",
+      "note_hash": "0000d77ed013b943977aa9db47b3372dc66664ff0880df162d8cbe8379f06872",
       "path": "docs/DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py",
       "title": "DM Leptogenesis PMNS Reduction-Exhaustion Theorem"
@@ -46479,9 +46593,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
+        "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
+        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "4bd64743332291a506fc5886f85b6d3d06ad371030fb50591cdb27be8494f4fa",
+      "note_hash": "43bf4a06d2cf2ff0b5602510f4d374b1de0fad221db7c277f66456aea792ae93",
       "path": "docs/DM_LEPTOGENESIS_PMNS_STATIONARY_CP_INCOMPATIBILITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem.py",
       "title": "DM Leptogenesis PMNS Stationary CP Incompatibility Theorem"
@@ -62233,10 +62351,21 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "anomaly_forces_time_theorem",
+        "cl3_color_automorphism_theorem",
+        "graph_first_su3_integration_note",
+        "native_gauge_closure_note",
+        "three_generation_observable_theorem_note",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10",
+        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16",
+        "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cd37bd9edd01c30363ddb1dd3423512136caa308d434895ea9b6b5e9c5578d3a",
+      "note_hash": "2be2127f377f6f7eb12769832be80500bf89e4f003d938cd936f837cd36316e4",
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FRAMEWORK_INTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Framework-Internal Narrow Bounded Note"
@@ -78560,13 +78689,9 @@
     "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
     "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_hostile_audit_findings_note_2026-05-17",
-    "dm_leptogenesis_pmns_off_seed_triplet_sign_boundary_note_2026-04-16",
     "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
-    "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16",
-    "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
-    "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
     "dm_leptogenesis_projection_theorem_note_2026-04-15",
     "dm_leptogenesis_washout_axiom_boundary_note_2026-04-15",
@@ -79188,10 +79313,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9393,
-    "leaf_count": 750,
+    "edge_count": 9418,
+    "leaf_count": 748,
     "node_count": 2424,
-    "root_count": 856,
+    "root_count": 852,
     "runners_with_path": 2017
   }
 }

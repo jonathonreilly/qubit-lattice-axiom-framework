@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 358 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 98 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 587 |
-| `audited_conditional` | 98 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1524 |
+| `unaudited` | 1523 |
 
 | claim_type | count |
 |---|---:|
@@ -779,6 +779,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7303,6 +7304,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the two specific pointwise nonlinearities tested on this chosen 2D lattice/kernel/coupling, |I_3|/P is far from zero and the deflection centroid-shift sign is opposite to the linear baseline.  _(class `C`)_
 - **chain closes:** True — The demoted note's non-load-bearing nonlinear claim is exactly bounded to the runner's finite menu, and the supplied source code computes those I_3 and centroid-shift quantities rather than merely printing constants. The algebraic linear I_3 statement is separately supported by the retained cited theorem.
 - **rationale:** The current note no longer claims a universal nonlinear implication, mass-law failure, or model-independent experimental certification. Its bounded nonlinear statement is supported by a concrete runner that instantiates the specified lattice, kernels, nonlinearities, normalization choices, and field coupling, then computes nonzero I_3 values and opposite centroid signs. The cited upstream I_3 theorem is retained and algebraic, so the linear half also closes within the restricted packet.
+- **auditor confidence:** high
+
+### `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`NSPT_HIGH_ORDER_LATTICE_ALPHA_N_COEFFICIENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/NSPT_HIGH_ORDER_LATTICE_ALPHA_N_COEFFICIENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Narrow external NSPT claim that finite-order lattice α^n coefficients are determinate and that SU(3) Wilson-plaquette coefficients have been published through n = 20, with no framework-substrate or hierarchy bridge audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-nspt_high_order_lattice_-041`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the SU(3) Wilson plaquette this NSPT iteration has been carried out to n = 20, producing explicit c_n for n = 1, ..., 20 and demonstrating that integer-order α^N coefficients of lattice observables are a determinate, published computation.  _(class `D`)_
+- **chain closes:** False — The restricted packet provides no full upstream authority for the Di Renzo-Onofri NSPT formalism or the n = 20 Wilson-plaquette computation. The runner checks toy formal-series algebra and boundary text, not the actual SU(3) NSPT computation or published coefficients.
+- **rationale:** The source note is careful about scope and avoids the framework overclaims it lists in the boundary. However, its load-bearing step is an external lattice-QCD/NSPT authority claim, and section 2 supplies no retained-grade cited authority text for that import. The runner passes only algebraic surrogate and source-boundary checks; it does not instantiate the SU(3) Langevin expansion or verify the published c_n through order 20.
 - **auditor confidence:** high
 
 ### `observable_principle_from_axiom_note`

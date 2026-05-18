@@ -6449,6 +6449,18 @@
       "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
     },
     {
+      "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_transport_integral_theorem_note_2026-04-16"
     },
@@ -19669,6 +19681,14 @@
       "to": "pmns_graph_first_cycle_frame_support_note"
     },
     {
+      "from": "pmns_graph_first_cycle_frame_support_note",
+      "to": "graph_first_selector_derivation_note"
+    },
+    {
+      "from": "pmns_graph_first_cycle_frame_support_note",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
       "from": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
       "to": "pmns_graph_first_axis_alignment_note"
     },
@@ -24243,6 +24263,18 @@
     {
       "from": "universal_gr_invariant_nonlinear_completion_note",
       "to": "universal_gr_isotropic_glue_operator_note"
+    },
+    {
+      "from": "universal_gr_isotropic_glue_operator_note",
+      "to": "discrete_einstein_regge_lift_note"
+    },
+    {
+      "from": "universal_gr_isotropic_glue_operator_note",
+      "to": "universal_gr_canonical_projector_connection_note"
+    },
+    {
+      "from": "universal_gr_isotropic_glue_operator_note",
+      "to": "universal_gr_isotropic_schur_localization_note"
     },
     {
       "from": "universal_gr_isotropic_schur_localization_note",
@@ -46338,9 +46370,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16",
+        "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
+        "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "f58bf8fee3f0205d1584403c48ef1d39f1583c74629e96f22ec71439c53b4ede",
+      "note_hash": "ed135e9a62506dd334262c7e705d48466bbbcafbaa54bdf1dc7e4c3c71d61e88",
       "path": "docs/DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py",
       "title": "DM Leptogenesis PMNS Selector-Bank CP-Sheet Blindness Theorem"
@@ -63870,9 +63906,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "graph_first_selector_derivation_note",
+        "graph_first_su3_integration_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "0b49999402202bb3f1dc86bc7344632de4b5825c4faf6fd1bfb098b3be7d2c25",
+      "note_hash": "71770e2b8d8944c7028f993b3282b9ffc4490c21b4092161ac36113a8bd36415",
       "path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
       "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
       "title": "PMNS Graph-First Cycle Frame Support"
@@ -74138,9 +74177,13 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "discrete_einstein_regge_lift_note",
+        "universal_gr_canonical_projector_connection_note",
+        "universal_gr_isotropic_schur_localization_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "80e6acdc8468bf78c645847515580bb8eefcd741fa85b253536aa587192c3216",
+      "note_hash": "c5ab80ab8e20ff9d53afaef6e1a1b75a0ed12bc725c1b645d74074e76f2d6c28",
       "path": "docs/UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md",
       "runner_path": null,
       "title": "Universal GR Isotropic Glue Operator on `PL S^3 x R`"
@@ -78433,7 +78476,6 @@
     "dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16",
     "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-    "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
     "dm_leptogenesis_pmns_stationary_cp_incompatibility_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
@@ -78775,7 +78817,6 @@
     "pmns_active_four_real_source_from_transport_note_hostile_audit_findings_note_2026-05-17",
     "pmns_c3_character_holonomy_closure_note_hostile_audit_findings_note_2026-05-17",
     "pmns_commutant_eigenoperator_selector_note",
-    "pmns_graph_first_cycle_frame_support_note",
     "pmns_hw1_source_transfer_boundary_note",
     "pmns_oriented_cycle_channel_value_law_note",
     "pmns_selector_three_identity_support_note_2026-04-21_hostile_audit_findings_note_2026-05-17",
@@ -78967,7 +79008,6 @@
     "universal_gr_canonical_projector_connection_note",
     "universal_gr_complement_canonical_note",
     "universal_gr_invariant_frame_obstruction_note",
-    "universal_gr_isotropic_glue_operator_note",
     "universal_gr_lambda_bypass_note",
     "universal_gr_lorentzian_global_atlas_closure_note",
     "universal_gr_polarization_frame_bundle_attempt",
@@ -79063,10 +79103,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9368,
-    "leaf_count": 752,
+    "edge_count": 9376,
+    "leaf_count": 751,
     "node_count": 2424,
-    "root_count": 866,
+    "root_count": 863,
     "runners_with_path": 2017
   }
 }

@@ -123,6 +123,18 @@ or else
 
 - prove that no such law exists on the current PMNS branch.
 
+## Upstream selector-law / candidate / channel sources
+
+The runner imports four PMNS-side modules whose framework wrapper notes
+supply the law/candidate/channel definitions enumerated in this CP-sheet
+blindness theorem:
+
+- [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — observable-relative action law (`relaw` module).
+- [DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md) — transport-extremal source candidate (`cand` module).
+- [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — breaking-triplet source law (`triplet_channels_from_active_data` from `breaking_triplet_source_law` module).
+
+Not yet wrapped: the `mininfo_source_law` runner module (`frontier_dm_leptogenesis_pmns_mininfo_source_law.py`) has no companion `*_NOTE.md` in the repo; this is a remaining missing-dep-edge admission.
+
 ## Command
 
 ```bash

@@ -1,6 +1,34 @@
 # Physical Hermitian Hamiltonian And SME Bridge
 
-**Date:** 2026-04-30
+**Date:** 2026-04-30 (2026-05-18: claim_scope narrowed to the
+conditional lattice Theta_H antiunitary statement + zero
+Theta_H-odd Hamiltonian-sector proxy per audit verdict boundary
+instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **conditional**: it retains **(i) the lattice theorem
+that the free staggered `H = iD` has a valid antiunitary symmetry
+`Theta_H = P K`** (where `P` is the standard staggered parity and
+`K` is complex conjugation on the canonical staggered basis), and
+**(ii) the Hermitian-sector identity `Theta_H · (Theta_H-odd projection
+of H) · Theta_H^{-1} = -(...) = 0`** showing that the Theta_H-odd
+projection of the free staggered Hermitian Hamiltonian vanishes on
+the substrate as a finite matrix proxy. **The further identification
+"this implies all CPT-odd SME bilinear coefficients vanish" is
+explicitly NOT retained as load-bearing here**: it requires a
+separate retained SME bilinear-operator-basis-on-staggered-substrate
+derivation showing the proxy spans every CPT-odd bilinear source
+under canonical normalization and basis completeness — which the
+audit verdict names as a substantive missing-bridge. SME-coefficient
+zero statements in the body should be read as **"Theta_H-odd
+Hamiltonian-sector proxy vanishes"** under the narrowed scope, not
+as unconditional SME-coefficient-zero claims, until the SME basis
+representation is separately retained.
+**Status authority:** independent audit lane only. The
+`proposed_retained` label below is a source-side proposal placeholder,
+not an audit verdict; the independent audit lane has classified this
+row `audited_conditional` pending the SME basis-completeness
+derivation.
 **Status:** proposed_retained bridge theorem; audit pending
 **Runner:** `scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py`
 

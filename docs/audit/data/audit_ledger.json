@@ -38661,41 +38661,24 @@
       "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity over explicitly assumed premises, not a numerical match, definition, or physical bridge. The runner source performs exact SymPy matrix equality checks on concrete instances plus counterfactual probes, rather than merely printing constants, although the universal closure comes from the note's symbolic substitution. No cited upstream authority, SME extraction, Hermitian-Hamiltonian bridge, continuum CPT input, or interacting-theory premise is imported into the scoped claim."
     },
     "cpt_exact_note": {
-      "audit_date": "2026-05-16T03:09:10.945513+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Clean only as a bounded free staggered lattice Hamiltonian statement: D anti-Hermitian implies H=iD Hermitian, naive CP K flips H, and Theta_H=P K preserves H with zero Theta_H-odd lattice Hamiltonian sectors on the checked even periodic lattices. Not clean as an unconditional physical SME-zero theorem beyond the explicitly defined lattice odd-sector proxy."
-        },
-        "dep_claim_type": {
-          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "audited_conditional"
-        },
-        "deps": [
-          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
-        ],
-        "load_bearing_score": 23.115,
-        "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
-        "transitive_descendants": 783
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260516-030850-19fdc1cd-cpt_exact_note-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The D-level finite-lattice algebra closes on its own terms, but the full stated claim relies on the Hermitian-Hamiltonian/SME bridge. That cited authority is marked audited_conditional rather than retained-grade, so the physical-Hamiltonian and SME-zero conclusion is not closed by retained inputs in this packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "cpt_exact_note",
-      "claim_scope": "Exact free staggered even-periodic lattice CPT invariance for the real anti-Hermitian D-level operator, with physical Hermitian H=iD and SME-zero sector imported through the cited bridge note.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-16T03:09:10.945513+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -38703,22 +38686,20 @@
         "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
       ],
       "direct_in_degree": 32,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 25.785,
-      "load_bearing_step": "Using C H C = -H, P H P = -H, and T acting by complex conjugation, CPT H (CPT)^{-1} = C P H P C = C(-H)C = H.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8892bef0bec8c2b9b37bb545549a408426981064d9e6ae35ad6fa2ac413beb2c",
       "note_path": "docs/CPT_EXACT_NOTE.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: ratify or replace the Hermitian-Hamiltonian/SME bridge with a retained-grade bridge theorem, then re-audit the full physical-Hamiltonian scope.",
-      "open_dependency_paths": [
-        "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-30T18:17:51.104833+00:00",
@@ -38924,19 +38905,70 @@
             "total_pass": 0
           },
           "verdict_rationale": "The core step is an algebraic identity over the staggered C/P/K operators and the Hermitian lift H = iD, not a numerical match or renaming. However, the source note explicitly relies on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md for the physical-Hamiltonian CPT representative and SME-zero sector, and that cited authority is provided with effective_status audited_conditional. No runner stdout or runner source is available in this packet for the primary claim, so the note text and cited authority must carry the audit."
+        },
+        {
+          "archived_at": "2026-05-18T11:30:24.302848+00:00",
+          "audit_date": "2026-05-16T03:09:10.945513+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Clean only as a bounded free staggered lattice Hamiltonian statement: D anti-Hermitian implies H=iD Hermitian, naive CP K flips H, and Theta_H=P K preserves H with zero Theta_H-odd lattice Hamiltonian sectors on the checked even periodic lattices. Not clean as an unconditional physical SME-zero theorem beyond the explicitly defined lattice odd-sector proxy."
+            },
+            "dep_claim_type": {
+              "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "audited_conditional"
+            },
+            "deps": [
+              "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+            ],
+            "load_bearing_score": 23.115,
+            "runner_hash": "31e432fcb81ef0ee3292f8a5f6d810191fb688261fbd13ca367d0e9f09840edc",
+            "transitive_descendants": 783
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260516-030850-19fdc1cd-cpt_exact_note-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The D-level finite-lattice algebra closes on its own terms, but the full stated claim relies on the Hermitian-Hamiltonian/SME bridge. That cited authority is marked audited_conditional rather than retained-grade, so the physical-Hamiltonian and SME-zero conclusion is not closed by retained inputs in this packet.",
+          "claim_scope": "Exact free staggered even-periodic lattice CPT invariance for the real anti-Hermitian D-level operator, with physical Hermitian H=iD and SME-zero sector imported through the cited bridge note.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-16T03:09:10.945513+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_scope_changed:physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+          "load_bearing_step": "Using C H C = -H, P H P = -H, and T acting by complex conjugation, CPT H (CPT)^{-1} = C P H P C = C(-H)C = H.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: ratify or replace the Hermitian-Hamiltonian/SME bridge with a retained-grade bridge theorem, then re-audit the full physical-Hamiltonian scope.",
+          "open_dependency_paths": [
+            "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 53,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 53
+          },
+          "verdict_rationale": "The runner genuinely constructs the staggered lattice operators and verifies the algebraic identities C H C = -H, P H P = -H, and C P H P C = H on L=4,6,8; these are class A algebraic checks, not hard-coded stdout. However, the source note\u2019s broader physical Hermitian Hamiltonian and SME-zero claim explicitly depends on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md. That cited bridge is labeled audited_conditional, and the rubric requires audited_conditional when a load-bearing cited authority is not retained-grade."
         }
       ],
       "runner_check_breakdown": {
-        "A": 53,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 53
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_cpt_exact.py",
       "title": "CPT Exact Preservation in the Cl(3) Staggered Framework",
       "transitive_descendants": 881,
-      "verdict_rationale": "The runner genuinely constructs the staggered lattice operators and verifies the algebraic identities C H C = -H, P H P = -H, and C P H P C = H on L=4,6,8; these are class A algebraic checks, not hard-coded stdout. However, the source note\u2019s broader physical Hermitian Hamiltonian and SME-zero claim explicitly depends on docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md. That cited bridge is labeled audited_conditional, and the rubric requires audited_conditional when a load-bearing cited authority is not retained-grade."
+      "verdict_rationale": null
     },
     "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-17T12:45:08.950817+00:00",
@@ -45888,51 +45920,42 @@
       "verdict_rationale": "Issue: the runner verifies a large finite search and reproduces 30 PASS stamps, but the note promotes that search to a theorem-grade exhaustiveness certificate. Why this blocks: a dense grid plus Nelder-Mead can miss a narrow basin between seeds; the empirical 99.5-percentile Lipschitz estimate is not a worst-case bound, the far-field exclusion is random sampling rather than an analytic lower bound, and the claim that any unknown candidate basin would be reached analogously is exactly the missing theorem. Repair target: replace the heuristic certificate with an interval/branch-and-bound proof over the R=50 box, or a computer-algebra/root-isolation enumeration with certified eigenvalue-gap/Lipschitz bounds and a deterministic far-field asymptotic exclusion. Claim boundary until fixed: it is safe to claim that the current runner found only Basin 1, Basin 2, and Basin X in the active chamber under the retained sigma set, clustered them to the five-basin chart, and found no additional basin in this finite multistart/random-sampling scan; it is not an audited retained completeness theorem."
     },
     "dm_abcc_basin_finite_search_support_note_2026-04-30": {
-      "audit_date": "2026-05-10T19:37:48.310787+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "cb0d1b2f7c2a5ffdc7b7b5d4f9af3e395ea50de047ba43e182da85c9281d023d",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1364-1c2c-73e2-b282-f359c36095c1",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The finite-search observations are imported from an archived wrapper or completed runner artifact that is not supplied as a one-hop authority. The current runner stdout contains only a timeout, which is not disproof, but leaves the claimed 30 PASS stamps and recovered representatives unverifiable in this restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_abcc_basin_finite_search_support_note_2026-04-30",
-      "claim_scope": "Finite-search provenance note asserting that an archived A-BCC bounded scan recorded five named representatives and chamber/signature bookkeeping, with no exhaustion theorem.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T19:37:48.310787+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.268,
-      "load_bearing_step": "The archived wrapper still records useful finite-search data, including a runner scan with 30 PASS stamps, five named chart representatives, Basin 2 as a bookkeeping correction, and the printed active-chamber classification.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "422c21701f3aaa9202cd84d0f261f17e7220c6b12e83dc29055485fe7a1402f7",
+      "note_hash": "bf2e217be394b1c1bacccc07a96e8332319959e611acd469f233052f57e1216e",
       "note_path": "docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge - add the archived wrapper and/or completed runner certificate as direct audit inputs, then re-audit the finite-search observations under the non-exhaustion scope.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -45973,6 +45996,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: no primary runner or retained one-hop proof artifact is registered for this leaf row. Why this blocks: the audit packet does not expose an independently checkable load-bearing computation. Repair target: register a runner/proof note for the load-bearing step or cite an audited retained dependency. Claim boundary until fixed: safe to cite as a support note without audit-ratified executable closure."
+        },
+        {
+          "archived_at": "2026-05-18T11:30:19.820962+00:00",
+          "archived_for_note_hash": "422c21701f3aaa9202cd84d0f261f17e7220c6b12e83dc29055485fe7a1402f7",
+          "audit_date": "2026-05-10T19:37:48.310787+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "cb0d1b2f7c2a5ffdc7b7b5d4f9af3e395ea50de047ba43e182da85c9281d023d",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1364-1c2c-73e2-b282-f359c36095c1",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The finite-search observations are imported from an archived wrapper or completed runner artifact that is not supplied as a one-hop authority. The current runner stdout contains only a timeout, which is not disproof, but leaves the claimed 30 PASS stamps and recovered representatives unverifiable in this restricted packet.",
+          "claim_scope": "Finite-search provenance note asserting that an archived A-BCC bounded scan recorded five named representatives and chamber/signature bookkeeping, with no exhaustion theorem.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T19:37:48.310787+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The archived wrapper still records useful finite-search data, including a runner scan with 30 PASS stamps, five named chart representatives, Basin 2 as a bookkeeping correction, and the printed active-chamber classification.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge - add the archived wrapper and/or completed runner certificate as direct audit inputs, then re-audit the finite-search observations under the non-exhaustion scope.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the note's load-bearing finite-search record depends on an archived wrapper/log outside the supplied dependency set, while the supplied runner did not complete. Why this blocks: with no cited authority and no completed stdout, the audit cannot verify the claimed PASS stamps, basin recovery, or chamber bookkeeping from the allowed inputs. Repair target: add the archived wrapper or a completed cached/sliced runner certificate as a direct dependency and re-audit the bounded finite-search observations. Claim boundary until fixed: conditional provenance for a finite scan only, not an audited bounded theorem or exhaustion result."
         }
       ],
       "runner_check_breakdown": {
@@ -45985,7 +46049,7 @@
       "runner_path": "scripts/frontier_dm_abcc_basin_enumeration_completeness.py",
       "title": "DM A-BCC Basin Finite-Search Support Note",
       "transitive_descendants": 871,
-      "verdict_rationale": "Issue: the note's load-bearing finite-search record depends on an archived wrapper/log outside the supplied dependency set, while the supplied runner did not complete. Why this blocks: with no cited authority and no completed stdout, the audit cannot verify the claimed PASS stamps, basin recovery, or chamber bookkeeping from the allowed inputs. Repair target: add the archived wrapper or a completed cached/sliced runner certificate as a direct dependency and re-audit the bounded finite-search observations. Claim boundary until fixed: conditional provenance for a finite scan only, not an audited bounded theorem or exhaustion result."
+      "verdict_rationale": null
     },
     "dm_abcc_chamber_bound_derivation_note_2026-04-20": {
       "audit_date": null,
@@ -114882,51 +114946,42 @@
       "verdict_rationale": null
     },
     "koide_a1_loop_final_status_2026-04-22": {
-      "audit_date": "2026-05-09T11:34:37.977111+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 7.477,
-        "runner_hash": "e55a3036d0a3c8c82ab637d7679335229614b690c7cb1cbd9b3e3db47583f3b5",
-        "transitive_descendants": 125
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e0c83-671b-7ba2-bbeb-a1d6dbf7071a",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebra from the assumed quartic V(Phi) to A1 closes. The missing step is a retained derivation that the physical charged-lepton effective action actually contains this specific V(Phi), or equivalently that the charged-lepton packet extremizes the stated block functional.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "koide_a1_loop_final_status_2026-04-22",
-      "claim_scope": "Audited the bounded claim that the Koide-Nishiura quartic potential algebraically forces A1/Koide Q=2/3 if that potential is assumed as the charged-lepton effective potential, while the physical bridge to that potential is not closed.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-09T11:34:37.977111+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.268,
-      "load_bearing_step": "Given the quartic potential V(Phi) = [2(tr Phi)^2 - 3 tr(Phi^2)]^2 on the circulant charged-lepton operator, its minimum occurs at a^2 = 2|b|^2, but deriving this V(Phi) from Cl(3)/Z^3 remains open.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "dc46dcf64399586c4d8bceba014b691278ab99ef4becffac464d5e4f221698d4",
+      "note_hash": "26fcc405e69a3bb97b3bcc5cf5921139368236875a7f606052351032fa2426f1",
       "note_path": "docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained theorem plus runner deriving the quartic effective potential or block extremum from Cl(3)/Z^3 rather than setting it as the input.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -114992,19 +115047,60 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: no primary runner or retained one-hop proof artifact is registered for this leaf row. Why this blocks: the audit packet does not expose an independently checkable load-bearing computation. Repair target: register a runner/proof note for the load-bearing step or cite an audited retained dependency. Claim boundary until fixed: safe to cite as a bounded note without audit-ratified executable closure."
+        },
+        {
+          "archived_at": "2026-05-18T11:30:19.822770+00:00",
+          "archived_for_note_hash": "dc46dcf64399586c4d8bceba014b691278ab99ef4becffac464d5e4f221698d4",
+          "audit_date": "2026-05-09T11:34:37.977111+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 7.477,
+            "runner_hash": "e55a3036d0a3c8c82ab637d7679335229614b690c7cb1cbd9b3e3db47583f3b5",
+            "transitive_descendants": 125
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e0c83-671b-7ba2-bbeb-a1d6dbf7071a",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebra from the assumed quartic V(Phi) to A1 closes. The missing step is a retained derivation that the physical charged-lepton effective action actually contains this specific V(Phi), or equivalently that the charged-lepton packet extremizes the stated block functional.",
+          "claim_scope": "Audited the bounded claim that the Koide-Nishiura quartic potential algebraically forces A1/Koide Q=2/3 if that potential is assumed as the charged-lepton effective potential, while the physical bridge to that potential is not closed.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-09T11:34:37.977111+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Given the quartic potential V(Phi) = [2(tr Phi)^2 - 3 tr(Phi^2)]^2 on the circulant charged-lepton operator, its minimum occurs at a^2 = 2|b|^2, but deriving this V(Phi) from Cl(3)/Z^3 remains open.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained theorem plus runner deriving the quartic effective potential or block extremum from Cl(3)/Z^3 rather than setting it as the input.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 0,
+            "C": 0,
+            "D": 2,
+            "total_pass": 5
+          },
+          "verdict_rationale": "Issue: the runner and note assume or import the specific Koide-Nishiura quartic potential as the effective charged-lepton potential. Why this blocks: the algebraic minimum at A1 is valid only after that physical potential/readout bridge is supplied, and the note explicitly says all current bridge mechanisms fail. Repair target: prove from retained Cl(3)/Z^3 structure that the charged-lepton effective action contains V(Phi) = [2(tr Phi)^2 - 3tr(Phi^2)]^2, or derive the block-total extremum as a retained primitive. Claim boundary until fixed: this is a conditional variational route to A1, not an axiom-native derivation of the charged-lepton Koide relation."
         }
       ],
       "runner_check_breakdown": {
-        "A": 3,
+        "A": 0,
         "B": 0,
         "C": 0,
-        "D": 2,
-        "total_pass": 5
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_koide_a1_quartic_potential_derivation.py",
       "title": "Koide A1 Investigation \u2014 Final Theoretical Status",
       "transitive_descendants": 871,
-      "verdict_rationale": "Issue: the runner and note assume or import the specific Koide-Nishiura quartic potential as the effective charged-lepton potential. Why this blocks: the algebraic minimum at A1 is valid only after that physical potential/readout bridge is supplied, and the note explicitly says all current bridge mechanisms fail. Repair target: prove from retained Cl(3)/Z^3 structure that the charged-lepton effective action contains V(Phi) = [2(tr Phi)^2 - 3tr(Phi^2)]^2, or derive the block-total extremum as a retained primitive. Claim boundary until fixed: this is a conditional variational route to A1, not an axiom-native derivation of the charged-lepton Koide relation."
+      "verdict_rationale": null
     },
     "koide_a1_loop_investigation_summary": {
       "audit_date": null,
@@ -163143,41 +163239,24 @@
       "verdict_rationale": "Within the 'detector-readable packet memory' bounded scope (Tier A positive, Tier B partial, Tier C open), the chain closes by direct measurement. The note correctly disclaims persistent localized objects beyond the centroid-memory regime, matching the bounded interpretation."
     },
     "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-16T03:10:30.840164+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "cpt_exact_note": "Exact free staggered even-periodic lattice CPT invariance for the real anti-Hermitian D-level operator, with physical Hermitian H=iD and SME-zero sector imported through the cited bridge note."
-        },
-        "dep_claim_type": {
-          "cpt_exact_note": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cpt_exact_note": "audited_conditional"
-        },
-        "deps": [
-          "cpt_exact_note"
-        ],
-        "load_bearing_score": 10.1,
-        "runner_hash": "11cb3148f13fe54a344bb9d12905527e0c64dc3278eba04804e60e025c231d87",
-        "transitive_descendants": 775
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260516-031007-77669d3a-parity_operator_basis_di-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The parity-weight counting is an algebraic check, but the restricted packet's only upstream framework authority is CPT_EXACT_NOTE with effective_status audited_conditional and explicit pending/open bridge language. The closure therefore depends on a non-retained upstream parity/CPT framework authority.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-      "claim_scope": "Audited the bounded no-go claim that the four listed single-flavor local dimension-5 SME-style fermion-bilinear LV structures with an unpaired spatial index are P-odd on the staggered Cl(3)/Z^3 even-torus framework.",
+      "claim_scope": null,
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": "2026-05-16T03:10:30.840164+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -163185,34 +163264,84 @@
         "cpt_exact_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.268,
-      "load_bearing_step": "Each candidate dimension-5 SME-style LV bilinear has net combined staggered-parity weight -1, so its P-symmetric projection vanishes and a P-symmetric action requires c_O = 0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0c42bb779400360b861b22ead2ec0dabbe4a23f36673e3b3729027f00ef846f7",
       "note_path": "docs/PARITY_OPERATOR_BASIS_DIMENSION5_LV_NO_GO_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: first ratify or replace docs/CPT_EXACT_NOTE.md with a retained-grade framework/parity authority, then re-audit whether the representative parity enumeration covers every indexed member of the stated SME-style basis.",
-      "open_dependency_paths": [
-        "docs/CPT_EXACT_NOTE.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-18T11:30:24.311638+00:00",
+          "audit_date": "2026-05-16T03:10:30.840164+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "cpt_exact_note": "Exact free staggered even-periodic lattice CPT invariance for the real anti-Hermitian D-level operator, with physical Hermitian H=iD and SME-zero sector imported through the cited bridge note."
+            },
+            "dep_claim_type": {
+              "cpt_exact_note": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cpt_exact_note": "audited_conditional"
+            },
+            "deps": [
+              "cpt_exact_note"
+            ],
+            "load_bearing_score": 10.1,
+            "runner_hash": "11cb3148f13fe54a344bb9d12905527e0c64dc3278eba04804e60e025c231d87",
+            "transitive_descendants": 775
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260516-031007-77669d3a-parity_operator_basis_di-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The parity-weight counting is an algebraic check, but the restricted packet's only upstream framework authority is CPT_EXACT_NOTE with effective_status audited_conditional and explicit pending/open bridge language. The closure therefore depends on a non-retained upstream parity/CPT framework authority.",
+          "claim_scope": "Audited the bounded no-go claim that the four listed single-flavor local dimension-5 SME-style fermion-bilinear LV structures with an unpaired spatial index are P-odd on the staggered Cl(3)/Z^3 even-torus framework.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-16T03:10:30.840164+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_scope_changed:cpt_exact_note",
+          "load_bearing_step": "Each candidate dimension-5 SME-style LV bilinear has net combined staggered-parity weight -1, so its P-symmetric projection vanishes and a P-symmetric action requires c_O = 0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: first ratify or replace docs/CPT_EXACT_NOTE.md with a retained-grade framework/parity authority, then re-audit whether the representative parity enumeration covers every indexed member of the stated SME-style basis.",
+          "open_dependency_paths": [
+            "docs/CPT_EXACT_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 11,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 11
+          },
+          "verdict_rationale": "The runner performs real finite algebraic checks rather than merely printing constants: it builds the staggered hopping operator, gamma matrices, parity weights, and P-symmetric projections, giving 11 class-A passes and no external comparator checks. The load-bearing step is algebraic parity classification of the four covered operator representatives. However, the only cited authority is marked audited_conditional and contains explicit audit-pending/open bridge language, so retained status cannot propagate through this dependency. The audit therefore cannot land audited_clean under the tie-breaking and conditional-dependency rules."
+        }
       ],
-      "previous_audits": [],
       "runner_check_breakdown": {
-        "A": 11,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 11
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_parity_operator_basis_dimension5_lv_no_go.py",
       "title": "Parity-Operator Basis: Dimension-5 Lorentz-Violating Operator No-Go Theorem on Z^3",
       "transitive_descendants": 871,
-      "verdict_rationale": "The runner performs real finite algebraic checks rather than merely printing constants: it builds the staggered hopping operator, gamma matrices, parity weights, and P-symmetric projections, giving 11 class-A passes and no external comparator checks. The load-bearing step is algebraic parity classification of the four covered operator representatives. However, the only cited authority is marked audited_conditional and contains explicit audit-pending/open bridge language, so retained status cannot propagate through this dependency. The audit therefore cannot land audited_clean under the tie-breaking and conditional-dependency rules."
+      "verdict_rationale": null
     },
     "patched_stationary_system_pl_s3_theorem_note_2026-05-03": {
       "audit_date": null,
@@ -166150,46 +166279,40 @@
       "verdict_rationale": "The bounded claim closes because the runner computes the node, persistent trace/soft, and side-bit trace/soft rows over the declared finite slice rather than hard-coding the side-bit conclusion. The live output matches the quoted N=8 row exactly and the N=12/N=18 rows within the documented third-decimal drift, preserving the narrow conclusion: side-bit helps the soft-overlap lane at N=12 and N=18, does not uniformly help trace purity, and remains behind node-label raw purity. Residual risk is limited to bounded-slice and stochastic-drift scope, which the audited claim already states."
     },
     "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": {
-      "audit_date": "2026-05-03T11:53:58.222754+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 8.685,
-        "transitive_descendants": 290
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "fresh-agent-heisenberg-019dedae-15a7-77e3-8c94-5b89bd4f1cc4",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The internal H=iD algebra closes from the stated D-level C/P identities and antiunitary conjugation. The SME bridge does not fully close because the packet only states that CPT-odd SME bilinears would appear as the Theta_H-odd Hamiltonian sector or direction-resolved hopping traces; it does not derive a complete SME operator-to-lattice-sector map or prove that no CPT-odd SME bilinear source lies outside those proxies.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
-      "claim_scope": "Clean only as a bounded free staggered lattice Hamiltonian statement: D anti-Hermitian implies H=iD Hermitian, naive CP K flips H, and Theta_H=P K preserves H with zero Theta_H-odd lattice Hamiltonian sectors on the checked even periodic lattices. Not clean as an unconditional physical SME-zero theorem beyond the explicitly defined lattice odd-sector proxy.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-03T11:53:58.222754+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 4,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.786,
-      "load_bearing_step": "The algebraic Hermitian lift Theta_H=P K preserves H=iD using K(i)=-i and P D P=-D; the additional SME conclusion depends on identifying the vanishing Theta_H-odd lattice hopping sector and direction-resolved traces with all CPT-odd SME bilinear coefficients sourced by this substrate.",
-      "load_bearing_step_class": "D",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "6f9b3ea0f2dfb70af139b595377fabd4d20c862fc6272ae8e88ae25e60cda446",
+      "note_hash": "ce5290d4bf9b0b4989c8f973d4275ecc9fdcf0acd4a69b2424186299a66f251d",
       "note_path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
-      "notes_for_re_audit_if_any": "other: add a first-principles or cited-but-contained derivation of the SME bilinear operator basis represented on the staggered Hamiltonian substrate, prove that the checked full and direction-resolved sectors span every CPT-odd bilinear source in the stated boundary, and separate finite-runner checks from all-even-lattice symbolic closure.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -166231,19 +166354,57 @@
             "total_pass": 10
           },
           "verdict_rationale": "The note directly addresses the prior Hermitization gap rather than assuming it away: it shows naive CP K flips H and then constructs Theta_H = P K to compensate the antiunitary i -> -i step. The runner checks Hermitization, D-level C/P/CP identities, the naive failure mode, the physical Hermitian CPT lift, and full plus direction-resolved CPT-odd sectors for even periodic lattices. Residual risk is bounded to the stated free Hamiltonian substrate; this audit does not ratify interacting CKM-sector CP violation, continuum CPT theorem replacement, or full gauge-sector CPT."
+        },
+        {
+          "archived_at": "2026-05-18T11:30:19.824048+00:00",
+          "archived_for_note_hash": "6f9b3ea0f2dfb70af139b595377fabd4d20c862fc6272ae8e88ae25e60cda446",
+          "audit_date": "2026-05-03T11:53:58.222754+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 8.685,
+            "transitive_descendants": 290
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "fresh-agent-heisenberg-019dedae-15a7-77e3-8c94-5b89bd4f1cc4",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The internal H=iD algebra closes from the stated D-level C/P identities and antiunitary conjugation. The SME bridge does not fully close because the packet only states that CPT-odd SME bilinears would appear as the Theta_H-odd Hamiltonian sector or direction-resolved hopping traces; it does not derive a complete SME operator-to-lattice-sector map or prove that no CPT-odd SME bilinear source lies outside those proxies.",
+          "claim_scope": "Clean only as a bounded free staggered lattice Hamiltonian statement: D anti-Hermitian implies H=iD Hermitian, naive CP K flips H, and Theta_H=P K preserves H with zero Theta_H-odd lattice Hamiltonian sectors on the checked even periodic lattices. Not clean as an unconditional physical SME-zero theorem beyond the explicitly defined lattice odd-sector proxy.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-03T11:53:58.222754+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The algebraic Hermitian lift Theta_H=P K preserves H=iD using K(i)=-i and P D P=-D; the additional SME conclusion depends on identifying the vanishing Theta_H-odd lattice hopping sector and direction-resolved traces with all CPT-odd SME bilinear coefficients sourced by this substrate.",
+          "load_bearing_step_class": "D",
+          "notes_for_re_audit_if_any": "other: add a first-principles or cited-but-contained derivation of the SME bilinear operator basis represented on the staggered Hamiltonian substrate, prove that the checked full and direction-resolved sectors span every CPT-odd bilinear source in the stated boundary, and separate finite-runner checks from all-even-lattice symbolic closure.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 10,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 10
+          },
+          "verdict_rationale": "Issue: The Hermitian-lift algebra is supported, but the final SME-zero statement relies on an asserted physical bridge from vanishing Theta_H-odd lattice Hamiltonian sectors and direction-resolved trace coefficients to all CPT-odd SME bilinear coefficients sourced by the substrate. Why this blocks: a Nature-grade audit cannot treat a lattice symmetry-odd matrix projection as a complete SME coefficient derivation unless the note proves the operator dictionary, basis completeness, normalization, and exclusion of other CPT-odd bilinear structures. The runner can verify zero odd matrices for L=4 and L=6, but it cannot by itself establish the physical SME mapping. Repair target: add a first-principles or cited-but-contained derivation of the SME bilinear operator basis represented on the staggered Hamiltonian substrate, prove that the checked full and direction-resolved sectors span every CPT-odd bilinear source in the stated boundary, and separate finite-runner checks from all-even-lattice symbolic closure. Claim boundary until fixed: retain only the conditional lattice theorem that the free staggered H=iD has a valid antiunitary Theta_H=P K symmetry and zero Theta_H-odd Hamiltonian-sector proxy; phrase SME coefficients as zero only under the explicitly proven proxy/dictionary assumptions."
         }
       ],
       "runner_check_breakdown": {
-        "A": 10,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 10
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
       "title": "Physical Hermitian Hamiltonian And SME Bridge",
       "transitive_descendants": 882,
-      "verdict_rationale": "Issue: The Hermitian-lift algebra is supported, but the final SME-zero statement relies on an asserted physical bridge from vanishing Theta_H-odd lattice Hamiltonian sectors and direction-resolved trace coefficients to all CPT-odd SME bilinear coefficients sourced by the substrate. Why this blocks: a Nature-grade audit cannot treat a lattice symmetry-odd matrix projection as a complete SME coefficient derivation unless the note proves the operator dictionary, basis completeness, normalization, and exclusion of other CPT-odd bilinear structures. The runner can verify zero odd matrices for L=4 and L=6, but it cannot by itself establish the physical SME mapping. Repair target: add a first-principles or cited-but-contained derivation of the SME bilinear operator basis represented on the staggered Hamiltonian substrate, prove that the checked full and direction-resolved sectors span every CPT-odd bilinear source in the stated boundary, and separate finite-runner checks from all-even-lattice symbolic closure. Claim boundary until fixed: retain only the conditional lattice theorem that the free staggered H=iD has a valid antiunitary Theta_H=P K symmetry and zero Theta_H-odd Hamiltonian-sector proxy; phrase SME coefficients as zero only under the explicitly proven proxy/dictionary assumptions."
+      "verdict_rationale": null
     },
     "physical_lattice_foundational_interpretation_note_2026-05-08": {
       "audit_date": null,
@@ -173429,41 +173590,24 @@
       "verdict_rationale": null
     },
     "pmns_oriented_cycle_selection_structure_note": {
-      "audit_date": "2026-05-11T14:09:41.682834+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "pmns_oriented_cycle_channel_value_law_note": "For a canonical 3x3 active block A and the projected forward-cycle basis P_i C = E12,E23,E31, the forward-cycle coefficients are diag(A C^dagger); the cached runner checks the stated projected cycle/projector identities and coefficient reconstruction."
-        },
-        "dep_claim_type": {
-          "pmns_oriented_cycle_channel_value_law_note": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "pmns_oriented_cycle_channel_value_law_note": "retained"
-        },
-        "deps": [
-          "pmns_oriented_cycle_channel_value_law_note"
-        ],
-        "load_bearing_score": 10.241,
-        "runner_hash": "b3ba7b5fcf9a1caed22191fd128bf8607dcba31d6fd1644e4e813862413b2307",
-        "transitive_descendants": 427
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The retained channel-value-law dependency supplies the oriented-cycle observable law, and the runner verifies the C3/fixed-locus algebra with PASS=8/FAIL=0. The chain does not close because the graph-first residual antiunitary condition and the sole-axiom free-point identity block are imported premises rather than retained one-hop bridge theorems.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "pmns_oriented_cycle_selection_structure_note",
-      "claim_scope": "Bounded finite-dimensional selection-structure algebra for the PMNS oriented forward-cycle channel, given the retained channel-value law and the imported free-point and residual-antiunitary premises.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-11T14:09:41.682834+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -173471,19 +173615,19 @@
         "pmns_oriented_cycle_channel_value_law_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.768,
-      "load_bearing_step": "Exact C3 covariance collapses the oriented forward-cycle channel to A_fwd = sigma C; at the sole-axiom free point sigma = 0; and on the graph-first selected-axis route the residual antiunitary condition A_fwd = P23 A_fwd^dagger P23 fixes c1 = conjugate(c3), c2 real.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "46a4818c07eb792e0ee9a7a3e5b256bdf2a3daad6659658fc932b559d180ffdd",
+      "note_hash": "c5ed50ddbb1be013a6c0df1bc3dad7ca611742f829d5a79340f780d3768cfe9b",
       "note_path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge proving the graph-first residual antiunitary condition and the sole-axiom free-point identity block within the restricted dependency chain.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -173588,19 +173732,68 @@
             "total_pass": 8
           },
           "verdict_rationale": "The runner performs real finite-dimensional algebra checks: cyclic permutation under C3, vanishing oriented-cycle coefficients for I3, and the fixed locus of the residual swap-conjugation map. Those are class A checks, not first-principles derivations from the sole axiom. The cited upstream authority is marked retained for the native channel law, but the current note still imports the graph-first residual antiunitary condition and free-point identification as premises not closed by the restricted packet."
+        },
+        {
+          "archived_at": "2026-05-18T11:30:19.824232+00:00",
+          "archived_for_note_hash": "46a4818c07eb792e0ee9a7a3e5b256bdf2a3daad6659658fc932b559d180ffdd",
+          "audit_date": "2026-05-11T14:09:41.682834+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "pmns_oriented_cycle_channel_value_law_note": "For a canonical 3x3 active block A and the projected forward-cycle basis P_i C = E12,E23,E31, the forward-cycle coefficients are diag(A C^dagger); the cached runner checks the stated projected cycle/projector identities and coefficient reconstruction."
+            },
+            "dep_claim_type": {
+              "pmns_oriented_cycle_channel_value_law_note": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "pmns_oriented_cycle_channel_value_law_note": "retained"
+            },
+            "deps": [
+              "pmns_oriented_cycle_channel_value_law_note"
+            ],
+            "load_bearing_score": 10.241,
+            "runner_hash": "b3ba7b5fcf9a1caed22191fd128bf8607dcba31d6fd1644e4e813862413b2307",
+            "transitive_descendants": 427
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The retained channel-value-law dependency supplies the oriented-cycle observable law, and the runner verifies the C3/fixed-locus algebra with PASS=8/FAIL=0. The chain does not close because the graph-first residual antiunitary condition and the sole-axiom free-point identity block are imported premises rather than retained one-hop bridge theorems.",
+          "claim_scope": "Bounded finite-dimensional selection-structure algebra for the PMNS oriented forward-cycle channel, given the retained channel-value law and the imported free-point and residual-antiunitary premises.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T14:09:41.682834+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Exact C3 covariance collapses the oriented forward-cycle channel to A_fwd = sigma C; at the sole-axiom free point sigma = 0; and on the graph-first selected-axis route the residual antiunitary condition A_fwd = P23 A_fwd^dagger P23 fixes c1 = conjugate(c3), c2 real.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge proving the graph-first residual antiunitary condition and the sole-axiom free-point identity block within the restricted dependency chain.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 8,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 8
+          },
+          "verdict_rationale": "Issue: the C3 and residual fixed-locus algebra is exact, but the graph-first residual antiunitary condition and the free-point active block I_3 are asserted as premises in this restricted packet. Why this blocks: retained selection-structure status would require retained bridge theorems deriving those premises from the sole axiom/graph-first route, not just finite-dimensional checks after they are assumed. Repair target: add retained source notes proving the graph-first residual antiunitary reduction on the oriented forward-cycle channel and the sole-axiom free-point identity-block result. Claim boundary until fixed: the row is a bounded conditional algebraic reduction of the oriented-cycle channel, not a retained value-selection theorem."
         }
       ],
       "runner_check_breakdown": {
-        "A": 8,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure",
       "transitive_descendants": 871,
-      "verdict_rationale": "Issue: the C3 and residual fixed-locus algebra is exact, but the graph-first residual antiunitary condition and the free-point active block I_3 are asserted as premises in this restricted packet. Why this blocks: retained selection-structure status would require retained bridge theorems deriving those premises from the sole axiom/graph-first route, not just finite-dimensional checks after they are assumed. Repair target: add retained source notes proving the graph-first residual antiunitary reduction on the oriented forward-cycle channel and the sole-axiom free-point identity-block result. Claim boundary until fixed: the row is a bounded conditional algebraic reduction of the oriented-cycle channel, not a retained value-selection theorem."
+      "verdict_rationale": null
     },
     "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17": {
       "audit_date": null,
@@ -199389,56 +199582,43 @@
       "verdict_rationale": null
     },
     "scalar_trace_tensor_no_go_note": {
-      "audit_date": "2026-05-11T13:37:11.018291+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 10.288,
-        "runner_hash": "5ce8dce53260e73bdaf23731c97381ef219d62319484ed0953224e0ce72427f9",
-        "transitive_descendants": 441
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-20260511-scalar-trace-tensor-no-go",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic no-go closes given the imported scalar functional, probe families, and Einstein-residual evaluator, and the live runner reports PASS=6 FAIL=0. The restricted packet does not provide retained one-hop authorities for those imported constructions, so the no-go is conditional on the imports being correct.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "scalar_trace_tensor_no_go_note",
-      "claim_scope": "Conditional scalar-trace-only completion no-go: given the imported scalar boundary functional, imported vector/tensor/mixed probe families, and imported Einstein-residual evaluator, the current runner shows unchanged scalar shell/Schur data with nonzero independent tensorial Einstein channels, ruling out completions that factor only through that scalar data on the configured O_h and finite-rank witness classes. This excludes a self-contained retained derivation of those imported constructions and excludes positive tensor-valued completion or full nonlinear GR closure.",
-      "claim_type": "no_go",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-11T13:37:11.018291+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.268,
-      "load_bearing_step": "A completion principle that factors only through the current scalar shell trace / Schur data must assign the same output to probes with identical scalar data, while the imported vector, traceless-shear, and mixed probes activate independent tensorial Einstein channels.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "839b0bde21dfff3762302f25747de1e929b2f71e1623e5a74fb0db2bd52d581a",
+      "note_hash": "567014367fd4a5fba781d0fbe1eb085c724bf6ca21d97525fc97b2ba9a99c190",
       "note_path": "docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 attach retained-grade notes/dependency edges for the three imported runner authorities, or inline their scalar-functional, probe-family, and Einstein-residual constructions so the no-go is self-contained.",
-      "open_dependency_paths": [
-        "scripts/frontier_tensorial_einstein_regge_completion.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py",
-        "scripts/frontier_coarse_grained_exterior_law.py"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -199521,19 +199701,64 @@
             "total_pass": 6
           },
           "verdict_rationale": "The note's core implication is a valid algebraic no-go: a map that factors only through identical scalar data cannot distinguish completions with different tensorial Einstein channels. However, the restricted packet provides no cited retained authorities and the runner source delegates the construction and Einstein-channel computation to unprovided modules loaded by _frontier_loader. The claim therefore imports the scalar functional, probe construction, boundary-data invariance, and residual-channel calculations rather than deriving them within the packet."
+        },
+        {
+          "archived_at": "2026-05-18T11:30:19.824889+00:00",
+          "archived_for_note_hash": "839b0bde21dfff3762302f25747de1e929b2f71e1623e5a74fb0db2bd52d581a",
+          "audit_date": "2026-05-11T13:37:11.018291+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 10.288,
+            "runner_hash": "5ce8dce53260e73bdaf23731c97381ef219d62319484ed0953224e0ce72427f9",
+            "transitive_descendants": 441
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-20260511-scalar-trace-tensor-no-go",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic no-go closes given the imported scalar functional, probe families, and Einstein-residual evaluator, and the live runner reports PASS=6 FAIL=0. The restricted packet does not provide retained one-hop authorities for those imported constructions, so the no-go is conditional on the imports being correct.",
+          "claim_scope": "Conditional scalar-trace-only completion no-go: given the imported scalar boundary functional, imported vector/tensor/mixed probe families, and imported Einstein-residual evaluator, the current runner shows unchanged scalar shell/Schur data with nonzero independent tensorial Einstein channels, ruling out completions that factor only through that scalar data on the configured O_h and finite-rank witness classes. This excludes a self-contained retained derivation of those imported constructions and excludes positive tensor-valued completion or full nonlinear GR closure.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-11T13:37:11.018291+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "A completion principle that factors only through the current scalar shell trace / Schur data must assign the same output to probes with identical scalar data, while the imported vector, traceless-shear, and mixed probes activate independent tensorial Einstein channels.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 attach retained-grade notes/dependency edges for the three imported runner authorities, or inline their scalar-functional, probe-family, and Einstein-residual constructions so the no-go is self-contained.",
+          "open_dependency_paths": [
+            "scripts/frontier_tensorial_einstein_regge_completion.py",
+            "scripts/frontier_same_source_metric_ansatz_scan.py",
+            "scripts/frontier_coarse_grained_exterior_law.py"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 6,
+            "C": 0,
+            "D": 0,
+            "total_pass": 6
+          },
+          "verdict_rationale": "Issue: the runner verifies scalar-data degeneracy and tensor-channel separation only after importing the scalar boundary functional, probe families, and Einstein-residual calculation from three upstream modules that are not retained dependencies of this note. Why this blocks: a no-go for all scalar-trace-only completions needs authority for the witness construction and residual evaluator, not just a runner that loads them. Repair target: add retained-grade cited notes for `frontier_tensorial_einstein_regge_completion.py`, `frontier_same_source_metric_ansatz_scan.py`, and `frontier_coarse_grained_exterior_law.py`, or inline a self-contained derivation of the functional, probes, and residuals in this runner. Claim boundary until fixed: the configured witness is a valid conditional diagnostic ruling out scalar-only completion on the imported O_h and finite-rank classes, but it is not a retained no-go."
         }
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 6,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 6
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_scalar_trace_tensor_nogo.py",
       "title": "Scalar-Trace-Only Tensor Completion No-Go",
       "transitive_descendants": 871,
-      "verdict_rationale": "Issue: the runner verifies scalar-data degeneracy and tensor-channel separation only after importing the scalar boundary functional, probe families, and Einstein-residual calculation from three upstream modules that are not retained dependencies of this note. Why this blocks: a no-go for all scalar-trace-only completions needs authority for the witness construction and residual evaluator, not just a runner that loads them. Repair target: add retained-grade cited notes for `frontier_tensorial_einstein_regge_completion.py`, `frontier_same_source_metric_ansatz_scan.py`, and `frontier_coarse_grained_exterior_law.py`, or inline a self-contained derivation of the functional, probes, and residuals in this runner. Claim boundary until fixed: the configured witness is a valid conditional diagnostic ruling out scalar-only completion on the imported O_h and finite-rank classes, but it is not a retained no-go."
+      "verdict_rationale": null
     },
     "scaling_failure_mechanisms": {
       "audit_date": null,
@@ -259715,8 +259940,8 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2264,
-    "re_audit_required": 6,
+    "preserved_existing": 2265,
+    "re_audit_required": 5,
     "row_count": 2314,
     "seeded_new": 0
   }

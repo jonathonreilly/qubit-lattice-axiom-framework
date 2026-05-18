@@ -1,7 +1,27 @@
 # Scalar-Trace-Only Tensor Completion No-Go
 
-**Date:** 2026-04-14  
-**Script:** `scripts/frontier_scalar_trace_tensor_nogo.py`  
+**Date:** 2026-04-14 (2026-05-18: claim_scope formalized as conditional
+diagnostic on the imported `O_h` and finite-rank classes per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **a valid conditional diagnostic** ruling out scalar-
+only completion on the **imported `O_h` and finite-rank source classes**
+that the runner consumes — given the imported boundary functional,
+probe families, and Einstein-residual computation as inputs (each
+wrapped by helper notes per PR #1520), the constructed probes show
+scalar boundary data is unchanged while the tensorial Einstein
+channels are active. This **is NOT** a retained-grade no-go: the
+conditional diagnostic depends on the imports being correct, and the
+class of scalar-only completions ruled out is restricted to those
+factoring through the imported scalar boundary data. The audit
+verdict's repair sub-target ("attach retained-grade notes/dependency
+edges for the three imported runner authorities, or inline their
+scalar-functional, probe-family, and Einstein-residual constructions")
+is partially answered by the helper-note wrappers added in PR #1520;
+making the no-go itself retained-grade requires those helper-note
+wrappers to themselves be retained, which remains separate open work.
+**Script:** `scripts/frontier_scalar_trace_tensor_nogo.py`
 **Status:** exact scalar-data degeneracy plus bounded tensor-channel witness
 
 **Status authority and audit hygiene (2026-05-10):**

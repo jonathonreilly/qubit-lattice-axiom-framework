@@ -1,7 +1,23 @@
 # Koide A1 Investigation — Final Theoretical Status
 
 **Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-22
+**Date:** 2026-04-22 (2026-05-18: claim_scope formalized as conditional
+variational route to A1, not an axiom-native derivation, per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **a conditional variational route to the Koide A1
+relation**: the Koide-Nishiura quartic effective potential `V(Φ)`
+has a unique minimum at A1; four Q-formulas converge at `n = 3` via
+`3! = 6`; A1 ⟺ coefficient-of-variation = 1; and the assorted
+support runners listed in the runner table. This note **does NOT**
+claim an **axiom-native derivation** of the charged-lepton Koide
+relation from `Cl(3)` on `Z^3`; the quartic potential / block-extremum
+machinery is admitted as the variational framework, not derived from
+the framework axioms. The audit verdict's repair sub-target ("a
+retained theorem plus runner deriving the quartic effective potential
+or block extremum from Cl(3)/Z^3") remains separate open work.
+**Status authority:** independent audit lane only.
 **Iterations:** 13 investigation iterations across multiple sessions
 
 ## Work delivered

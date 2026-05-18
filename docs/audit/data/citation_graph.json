@@ -45767,12 +45767,12 @@
     },
     "dm_abcc_basin_finite_search_support_note_2026-04-30": {
       "claim_id": "dm_abcc_basin_finite_search_support_note_2026-04-30",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "422c21701f3aaa9202cd84d0f261f17e7220c6b12e83dc29055485fe7a1402f7",
+      "note_hash": "bf2e217be394b1c1bacccc07a96e8332319959e611acd469f233052f57e1216e",
       "path": "docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md",
       "runner_path": "scripts/frontier_dm_abcc_basin_enumeration_completeness.py",
       "title": "DM A-BCC Basin Finite-Search Support Note"
@@ -55237,12 +55237,12 @@
     },
     "koide_a1_loop_final_status_2026-04-22": {
       "claim_id": "koide_a1_loop_final_status_2026-04-22",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "dc46dcf64399586c4d8bceba014b691278ab99ef4becffac464d5e4f221698d4",
+      "note_hash": "26fcc405e69a3bb97b3bcc5cf5921139368236875a7f606052351032fa2426f1",
       "path": "docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md",
       "runner_path": "scripts/frontier_koide_a1_quartic_potential_derivation.py",
       "title": "Koide A1 Investigation \u2014 Final Theoretical Status"
@@ -63462,12 +63462,12 @@
     },
     "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": {
       "claim_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "6f9b3ea0f2dfb70af139b595377fabd4d20c862fc6272ae8e88ae25e60cda446",
+      "note_hash": "ce5290d4bf9b0b4989c8f973d4275ecc9fdcf0acd4a69b2424186299a66f251d",
       "path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
       "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
       "title": "Physical Hermitian Hamiltonian And SME Bridge"
@@ -64540,14 +64540,14 @@
     },
     "pmns_oriented_cycle_selection_structure_note": {
       "claim_id": "pmns_oriented_cycle_selection_structure_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "pmns_oriented_cycle_channel_value_law_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "46a4818c07eb792e0ee9a7a3e5b256bdf2a3daad6659658fc932b559d180ffdd",
+      "note_hash": "c5ed50ddbb1be013a6c0df1bc3dad7ca611742f829d5a79340f780d3768cfe9b",
       "path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure"
@@ -69844,12 +69844,12 @@
     },
     "scalar_trace_tensor_no_go_note": {
       "claim_id": "scalar_trace_tensor_no_go_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "839b0bde21dfff3762302f25747de1e929b2f71e1623e5a74fb0db2bd52d581a",
+      "note_hash": "567014367fd4a5fba781d0fbe1eb085c724bf6ca21d97525fc97b2ba9a99c190",
       "path": "docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md",
       "runner_path": "scripts/frontier_scalar_trace_tensor_nogo.py",
       "title": "Scalar-Trace-Only Tensor Completion No-Go"
@@ -79582,22 +79582,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 462,
+      "bounded_theorem": 467,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1521,
+      "none": 1516,
       "open_gate": 44,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 905,
+      "bounded_theorem": 908,
       "decoration": 1,
       "meta": 173,
       "no_go": 160,
       "none": 449,
       "open_gate": 123,
-      "positive_theorem": 615
+      "positive_theorem": 612
     },
     "edge_count": 9470,
     "leaf_count": 745,

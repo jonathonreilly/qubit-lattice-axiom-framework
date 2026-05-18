@@ -135,6 +135,18 @@ This note does **not** derive:
 
 So this is an exact axiom-boundary theorem, not a positive completion theorem.
 
+## Upstream authorities (four named assumed exact theorem packages)
+
+The theorem-level statement above assumes four exact theorem packages.
+Framework wrappers for two of the four:
+
+- [DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md](DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md) — exact positive-section / positive-polar Hermitian CP theorem (the "exact positive-section Hermitian CP theorem").
+- [DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md](DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md) — exact breaking-triplet CP theorem.
+
+Remaining missing-dep-edge admissions (no framework wrapper exists with that exact name):
+- "Exact PMNS global Hermitian mode package" — no consolidated wrapper note for the global Hermitian-mode package; the closest content lives across multiple PMNS-side notes (active_projector_reduction, projector_interface, etc.).
+- "Exact PMNS breaking-slot boundary results" — no consolidated wrapper note; content is distributed across the breaking-triplet source-law and even-response boundary notes.
+
 ## Command
 
 ```bash

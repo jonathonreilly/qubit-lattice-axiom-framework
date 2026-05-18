@@ -460,3 +460,14 @@ bounded-import lines for the channel-weight obstructions, and a final summary
 classifying the probe as `bounded_theorem` (support-only on
 CS / knot-polynomial value reproduction; negative on the conjecture;
 no repo-wide status promotion).
+
+## Upstream framework authorities
+
+Framework wrappers for two of the named comparator authorities:
+
+- [KOIDE_A1_O13_CHEEGER_SIMONS_RZ_NO_GO_NOTE_2026-04-24.md](KOIDE_A1_O13_CHEEGER_SIMONS_RZ_NO_GO_NOTE_2026-04-24.md) — O13 / Cheeger-Simons / RZ no-go authority.
+- [SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) — SU(3) Casimir fundamental theorem authority.
+
+Remaining missing-dep-edge admissions (external math literature; no framework wrapper):
+- Chern-Simons / Wilson-loop knot-polynomial canonical identities (Witten 1989; Reshetikhin-Turaev). Cited as external comparator.
+- TVZ / VVL comparator authorities (Turaev-Viro-style / Vassiliev-Viro-Levine-style invariants). Cited as external comparator.

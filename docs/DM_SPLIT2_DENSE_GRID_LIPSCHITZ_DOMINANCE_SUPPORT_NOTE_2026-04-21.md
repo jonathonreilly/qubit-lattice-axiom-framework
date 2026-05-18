@@ -13,7 +13,7 @@
 The live carrier-side blocker on the DM flagship lane is narrower than the
 older broad-box search. The active residual neighborhoods are the two
 explicit split-2 upper-face boxes isolated by
-`DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md`.
+[DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md](DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18.md).
 
 The strict remaining theorem target is still:
 

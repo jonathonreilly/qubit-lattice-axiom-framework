@@ -60,3 +60,8 @@ To hit observation from the consistent retained benchmark would require
 
 So the source/kernel side is no longer the blocker. The remaining blocker is
 the radiation transport map.
+
+## Upstream authorities
+
+- [DM_LEPTOGENESIS_PROJECTION_THEOREM_NOTE_2026-04-15.md](DM_LEPTOGENESIS_PROJECTION_THEOREM_NOTE_2026-04-15.md) — projection theorem / `K00` physical-channel bridge (`m_tilde = K00 * y0^2 * v^2 / M1`).
+- [DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md) — retained benchmark transport map (transport-decomposition theorem on the refreshed branch).

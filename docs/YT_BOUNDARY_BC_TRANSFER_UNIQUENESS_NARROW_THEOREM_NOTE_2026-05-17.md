@@ -270,6 +270,11 @@ output of the runner, not a fitted parameter.
   block uniquely operates on the **mathematical well-definedness of the
   backward-RGE BC-transfer map**.
 
+## Upstream authorities
+
+- [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](PLAQUETTE_SELF_CONSISTENCY_NOTE.md) — canonical plaquette / coupling-input authority (supplies the `<P>` self-consistent value used downstream in `alpha_LM`, `u_0`, and `g_lattice`).
+- [YT_WARD_IDENTITY_DERIVATION_THEOREM.md](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) — Ward identity / `y_t(M_Pl) = g_lattice / sqrt(6)` target.
+
 ## Cross-references (non-load-bearing)
 
 - `docs/YT_BOUNDARY_THEOREM.md` (parent; claim iv specifically)

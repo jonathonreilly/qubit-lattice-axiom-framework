@@ -8301,6 +8301,10 @@
       "to": "pmns_theta23_upper_octant_chamber_closure_prediction_note_2026-04-17"
     },
     {
+      "from": "dm_split2_dense_grid_lipschitz_dominance_support_note_2026-04-21",
+      "to": "dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18"
+    },
+    {
       "from": "dm_split2_interval_certified_dominance_closure_theorem_note_2026-04-21",
       "to": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16"
     },
@@ -21569,6 +21573,14 @@
       "to": "s3_time_transfer_matrix_bridge_note"
     },
     {
+      "from": "s3_time_primitive_chain_note",
+      "to": "quark_route2_exact_readout_map_note_2026-04-19"
+    },
+    {
+      "from": "s3_time_primitive_chain_note",
+      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
+    },
+    {
       "from": "s3_time_spacetime_observable_route_note",
       "to": "universal_gr_tensor_action_blocker_note"
     },
@@ -21651,6 +21663,14 @@
     {
       "from": "s3_time_tensorized_schur_primitive_note",
       "to": "anomaly_forces_time_theorem"
+    },
+    {
+      "from": "s3_time_tensor_build_memo",
+      "to": "quark_route2_exact_readout_map_note_2026-04-19"
+    },
+    {
+      "from": "s3_time_tensor_build_memo",
+      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
     },
     {
       "from": "s3_time_tensor_primitive_prototype_note",
@@ -24389,6 +24409,10 @@
       "to": "universal_gr_isotropic_schur_localization_note"
     },
     {
+      "from": "universal_gr_canonical_projector_connection_note",
+      "to": "universal_gr_a1_invariant_section_note"
+    },
+    {
       "from": "universal_gr_casimir_block_localization_note",
       "to": "universal_gr_constraint_action_stationarity_note"
     },
@@ -25887,6 +25911,14 @@
     {
       "from": "yt_bottom_yukawa_retention_analysis_note_2026-04-18",
       "to": "down_type_mass_ratio_ckm_dual_note"
+    },
+    {
+      "from": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
+      "to": "yt_ward_identity_derivation_theorem"
     },
     {
       "from": "yt_boundary_theorem",
@@ -48749,9 +48781,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "b4333c7570a70d7db940ffba412a404682ecc5ce1575250cea710a6b1cd4928e",
+      "note_hash": "23019c34c6a4d9d9b46befe9414af58ed2555d52c8c8606dc1c361dfa7edeba9",
       "path": "docs/DM_SPLIT2_DENSE_GRID_LIPSCHITZ_DOMINANCE_SUPPORT_NOTE_2026-04-21.md",
       "runner_path": "scripts/frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21.py",
       "title": "DM Split-2 Upper-Face Dense-Grid Dominance Support"
@@ -69235,9 +69269,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_exact_time_coupling_note_2026-04-19"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "a28bef2fbcc15034220c0a52d424bae22f7944b3cbed0720aad55652a9a42e85",
+      "note_hash": "5eab2966ec3f203e317505360fff7544aa97264565687721df1ccef0fdcecfdc",
       "path": "docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md",
       "runner_path": null,
       "title": "Route 2 Primitive Chain: Readout and Time-Coupling Update"
@@ -69299,9 +69336,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_exact_time_coupling_note_2026-04-19"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "e12e5b63f1015526334b40026f1d8679a946b4cdcbb87e3cbd71cb79bae8360f",
+      "note_hash": "8fa3e0fdc372f3f5445970116db80c1655a2190cc14c6c5a200c42c527fe416a",
       "path": "docs/S3_TIME_TENSOR_BUILD_MEMO.md",
       "runner_path": null,
       "title": "Route 2 Tensor Build Memo"
@@ -74326,9 +74366,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "universal_gr_a1_invariant_section_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "f0af498b3db948d69b2af6d2ad76eda22ec74479781eeb42529827df57ad0f69",
+      "note_hash": "cd445e7da6050dc0b05690bfeeda3e9034748aa39fe055cc685ba686e13a8e36",
       "path": "docs/UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md",
       "runner_path": null,
       "title": "Universal GR Canonical Projector / Connection Candidate on `PL S^3 x R`"
@@ -76995,9 +77037,12 @@
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem (numerical narrow well-definedness)",
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "plaquette_self_consistency_note",
+        "yt_ward_identity_derivation_theorem"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "a55fc0ce8b322792affd3a36a4f1c583ed4b6c0728ef77819acd3a7a914f4922",
+      "note_hash": "6fd096b4ec7f77bb84f65d21860a07318fc858724e1cde779c7ddec06df3f390",
       "path": "docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_yt_boundary_bc_transfer_uniqueness.py",
       "title": "yt Boundary BC-Transfer Uniqueness Narrow Theorem (Backward-RGE Monotonicity)"
@@ -78763,7 +78808,6 @@
     "dm_pmns_upper_octant_source_cubic_selector_theorem_note_2026-04-20",
     "dm_pns_attack_cascade_note_2026-04-19",
     "dm_sigma_hier_h_intrinsic_no_go_theorem_note_2026-04-20",
-    "dm_split2_dense_grid_lipschitz_dominance_support_note_2026-04-21",
     "dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19",
     "dm_wilson_direct_descendant_canonical_path_derivation_no_go_note_2026-04-19_hostile_audit_findings_note_2026-05-17",
     "dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19_hostile_audit_findings_note_2026-05-17",
@@ -79113,8 +79157,6 @@
     "s3_cap_uniqueness_note",
     "s3_mass_matrix_no_go_note",
     "s3_taste_cube_decomposition_note",
-    "s3_time_primitive_chain_note",
-    "s3_time_tensor_build_memo",
     "same_family_3d_closure_note",
     "scalar_3plus1_temporal_ratio_note",
     "scalar_kg_rerun_note_2026-04-10",
@@ -79260,7 +79302,6 @@
     "unit_singlet_overlap_narrow_theorem_note_2026-05-02",
     "universal_gr_bd_congruence_invariance_bounded_note_2026-05-10",
     "universal_gr_block_normalization_note",
-    "universal_gr_canonical_projector_connection_note",
     "universal_gr_complement_canonical_note",
     "universal_gr_invariant_frame_obstruction_note",
     "universal_gr_lambda_bypass_note",
@@ -79324,7 +79365,6 @@
     "work_history.yt.yt_explicit_systematic_reduction_options_2026-04-15",
     "work_history.yt.yt_explicit_systematic_status_review_2026-04-15",
     "writing_voice_guide_2026-04-25",
-    "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
     "yt_boundary_theorem_hostile_audit_findings_note_2026-05-17",
     "yt_bridge_action_invariant_note_hostile_audit_findings_note_2026-05-17",
     "yt_bridge_hessian_selector_note_hostile_audit_findings_note_2026-05-17",
@@ -79358,10 +79398,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9427,
+    "edge_count": 9435,
     "leaf_count": 747,
     "node_count": 2424,
-    "root_count": 848,
+    "root_count": 843,
     "runners_with_path": 2017
   }
 }

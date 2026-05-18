@@ -41033,14 +41033,14 @@
     },
     "b_independence_mechanism_note": {
       "claim_id": "b_independence_mechanism_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fb50abc6e29a15c042c03805495e52347b57767b08ab5a5d854be930224b2ed1",
+      "note_hash": "9b044d4916fc783a592fcdb0d319721123a17984b420dccbe9adcd3c1130e1d0",
       "path": "docs/B_INDEPENDENCE_MECHANISM_NOTE.md",
       "runner_path": null,
       "title": "B-Independence Mechanism Note"
@@ -46768,12 +46768,12 @@
     },
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0c120bd95e8ffd63fcff1f93e448cc7e9636baa9d63e9d4f62bb53235e89cbff",
+      "note_hash": "a0bce4315b52edc3aeaff3fcc245789d3fe7a79cfce75d5a233b4dfc8ad0f0b3",
       "path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem"
@@ -56551,12 +56551,12 @@
     },
     "koide_dimensionless_objection_closure_review_packet_2026-04-24": {
       "claim_id": "koide_dimensionless_objection_closure_review_packet_2026-04-24",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "no_go",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1b3151afd5f37ee2adf732de70e65b57983bdb8301253ce2f33f7aef60a88dcd",
+      "note_hash": "c5075762d167078aec48e1e3ff096f3f768b5969915d67323e74cab6b8799458",
       "path": "docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_dimensionless_objection_closure_review.py",
       "title": "Koide Dimensionless Objection-Closure Review Packet"
@@ -70295,7 +70295,7 @@
         "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
         "scripts/gate_b_nonlabel_connectivity_v1.py"
       ],
-      "note_hash": "b829dd982daf66984f3bfaba5e62a0b4af8ebb5d12c2b227389e8c2c8a23da1e",
+      "note_hash": "0d6ec9fcf5aab6b91dc8426ed96ea05d0ff6f6bb4a355daa8469e34d485df985",
       "path": "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
       "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
       "title": "Sign Portability Invariant: First-Principles Derivation Within the Second Grown Family"
@@ -79582,19 +79582,19 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 470,
+      "bounded_theorem": 473,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1514,
+      "none": 1511,
       "open_gate": 44,
       "positive_theorem": 168
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 909,
+      "bounded_theorem": 910,
       "decoration": 1,
       "meta": 173,
-      "no_go": 160,
+      "no_go": 159,
       "none": 449,
       "open_gate": 123,
       "positive_theorem": 611

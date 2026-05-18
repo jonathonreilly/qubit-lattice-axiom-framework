@@ -1,6 +1,27 @@
 # Koide Dimensionless Objection-Closure Review Packet
 
-**Date:** 2026-04-24
+**Date:** 2026-04-24 (2026-05-18: claim_scope formalized as conditional
+obstruction tests, not closed retained no-go, per audit verdict
+boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this packet is **conditional obstruction tests** on the
+admitted-source-response-carrier-plus-endpoint-domain surface. The
+algebraic obstruction tests (residuals inside the chosen model)
+hold as exact algebraic checks on that admitted surface. This
+packet **does NOT** prove a closed retained no-go from the axiom
+alone — the admitted source-response carrier with surviving `Z`,
+and the endpoint source/readout/basepoint domain, are not derived
+from the framework axioms here. The audit verdict's repair
+sub-target ("supply retained bridge theorems deriving the admitted
+source-response carrier with surviving Z and the endpoint
+source/readout/basepoint domain from the axiom, OR split the packet")
+remains separate open work. Until those bridges land, this packet
+may be cited as **conditional obstruction support** only, not as a
+retained no-go on the dimensionless charged-lepton Koide lane.
+**Status authority:** independent audit lane only. The
+`proposed_retained` label below is a source-side proposal
+placeholder, not an audit verdict.
 **Status:** proposed_retained support / no-go packet. This packet does **not** close the
 dimensionless charged-lepton Koide lane.
 **Runner:** `scripts/frontier_koide_dimensionless_objection_closure_review.py`

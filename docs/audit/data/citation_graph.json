@@ -11965,6 +11965,10 @@
       "to": "complete_prediction_chain_2026_04_15"
     },
     {
+      "from": "higgs_mechanism_note",
+      "to": "higgs_mass_derived_note"
+    },
+    {
       "from": "higgs_taste_singlet_projection_bounded_note_2026-05-09",
       "to": "higgs_mass_from_axiom_note"
     },
@@ -41291,12 +41295,12 @@
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "claim_id": "bh_entropy_rt_ratio_widom_no_go_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "no_go",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "119cfb38bb6d7ace56538c6844c924de4667dfd24d8a7459fbe51d925646e6f0",
+      "note_hash": "5cdb00510e2ee4ca833a0ffd9792046a766c0ccbd0cfed3c3a9452c66e96291f",
       "path": "docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_rt_ratio_widom.py",
       "title": "BH Entropy RT-Ratio Widom No-Go Theorem"
@@ -42304,12 +42308,12 @@
     },
     "causal_field_portability_note": {
       "claim_id": "causal_field_portability_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "49c41235f0aebcc836e4d54691557d0285c695e85afeebc2365065f9fb5a4179",
+      "note_hash": "15c32fdfba6f4a7c9045758a2c0009508246f352dad0f627b3575d2cd9ab5c59",
       "path": "docs/CAUSAL_FIELD_PORTABILITY_NOTE.md",
       "runner_path": "scripts/causal_field_portability_probe.py",
       "title": "Causal Field Portability Note"
@@ -43557,9 +43561,9 @@
     },
     "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25": {
       "claim_id": "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "alpha_s_derived_note",
         "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
@@ -43568,7 +43572,7 @@
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5ce176e15cff518acd6f2a6946b0d488ed49659f35d3fce5e135b66089076298",
+      "note_hash": "db98017819b3a2d264f094eb7e3e1f783697b202c85df2d6f5738fd27fb6b4e4",
       "path": "docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_ckm_jarlskog_exact_nlo_closed_form.py",
       "title": "Jarlskog Invariant: EXACT NLO Closed Form Theorem on the Protected-\u03b3\u0304 Surface"
@@ -51191,7 +51195,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f42a26c094cdc674bd3c6b661a40b3cf702a31f72a5b34cab537d33aedc0a93c",
+      "note_hash": "71de0929235b3d9d30a1f229fbfafa79cc7da49963f62efdbcace013c7a0e828",
       "path": "docs/GATE_B_FARFIELD_NOTE.md",
       "runner_path": "scripts/gate_b_farfield_harness.py",
       "title": "Gate B Far-Field: Grown Geometry at h=0.5"
@@ -54304,9 +54308,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "higgs_mass_derived_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "46b95beee65778d8a93d004d02c06fa4742896980d9b3014d1ba4f656745e6fc",
+      "note_hash": "f4ecad6f2d7e8d6c923261aad96f8ae8d03f804ed6de0820b7b43d122e5ca2a6",
       "path": "docs/HIGGS_MECHANISM_NOTE.md",
       "runner_path": "scripts/frontier_higgs_mass_derived.py",
       "title": "Higgs Mechanism Note"
@@ -79131,7 +79137,6 @@
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
     "hierarchy_spatial_bc_and_u0_scaling_note",
     "higgs_from_lattice_note",
-    "higgs_mechanism_note",
     "higher_dimension_status_2026-04-01",
     "higher_order_structural_theorems_note_hostile_audit_findings_note_2026-05-17",
     "higher_symmetry_gravity_probe_note",
@@ -79577,27 +79582,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 454,
+      "bounded_theorem": 457,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1529,
+      "none": 1526,
       "open_gate": 44,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 898,
+      "bounded_theorem": 900,
       "decoration": 1,
       "meta": 173,
-      "no_go": 161,
+      "no_go": 160,
       "none": 449,
       "open_gate": 123,
-      "positive_theorem": 621
+      "positive_theorem": 620
     },
-    "edge_count": 9469,
+    "edge_count": 9470,
     "leaf_count": 745,
     "node_count": 2426,
-    "root_count": 837,
+    "root_count": 836,
     "runners_with_path": 2017
   }
 }

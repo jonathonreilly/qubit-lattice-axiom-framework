@@ -1,7 +1,23 @@
 # Gate B Far-Field: Grown Geometry at h=0.5
 
-**Date:** 2026-04-05 (audit-narrowing refresh: 2026-05-10)
+**Date:** 2026-04-05 (audit-narrowing refresh: 2026-05-10; 2026-05-18:
+claim_scope formalized as runner-defined conditional numerical scenario
+per audit verdict boundary instruction).
 **Type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **a runner-defined conditional numerical scenario
+under the stated admitted ingredients** — the frozen 36/36 TOWARD
+result with mean `F~M = 1.00` across the four drift/restore rows on
+`z ∈ {3, 4, 5}` with twelve seeds per row at `h = 0.5`, executed by
+`scripts/gate_b_farfield_harness.py` (PASS=4, all C-class). The
+runner's primitive-to-observable ingredients (the source law, the
+propagation/readout map, the TOWARD/F~M criterion) are **admitted
+inputs to this scenario**, not derived from accepted axioms within
+this note. The audit verdict's repair sub-target ("split the
+completed bounded-run certificate from a separate primitive-to-
+observable bridge theorem") is therefore answered by **explicit
+scope narrowing** here: the certificate row is load-bearing; the
+primitive-to-observable bridge is a separate open work item.
 **Status:** frozen bounded numerical harness positive on the declared
 far-field rows for the runner-defined h=0.5 family. Full-physics Gate B
 far-field closure (deriving the source law, propagation/readout map, and

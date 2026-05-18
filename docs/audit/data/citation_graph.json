@@ -41465,8 +41465,8 @@
     },
     "b_independence_mechanism_note": {
       "claim_id": "b_independence_mechanism_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms_2026-05-03",
@@ -41475,7 +41475,7 @@
         "distance_law_definitive_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "36cbe7bfea983e8b9da4fc1dfc448264e94f3b5270a8e8a8569ec44d8363c093",
+      "note_hash": "679e22d575469981810e048c1bbd8f2e00c22a8e35765d6ad2e116bb018f6d89",
       "path": "docs/B_INDEPENDENCE_MECHANISM_NOTE.md",
       "runner_path": null,
       "title": "B-Independence Mechanism Note"
@@ -47282,12 +47282,12 @@
     },
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16": {
       "claim_id": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0c120bd95e8ffd63fcff1f93e448cc7e9636baa9d63e9d4f62bb53235e89cbff",
+      "note_hash": "a0bce4315b52edc3aeaff3fcc245789d3fe7a79cfce75d5a233b4dfc8ad0f0b3",
       "path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem"
@@ -50920,7 +50920,7 @@
         "coarse_grained_exterior_law_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e0c8ede7919db2797e6f5492f622c862310c1a0275bb1768a1e77e5bc87bc249",
+      "note_hash": "b4031c56b945a91835da345f7bcb5efbef8313a4b72c7bd7eb18bf714e832eb1",
       "path": "docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_finite_rank_source_to_metric_theorem.py",
       "title": "Finite-Rank Source-to-Metric Theorem Path via Exact Boundary Action and Coarse-Grained Exterior Law"
@@ -51271,15 +51271,15 @@
     },
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03": {
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9da8ff466466f2ffdf319dcf3286f56000f9d562e25f38457bfaeb6aa715d535",
+      "note_hash": "fa16848821fade9ee99f086a74fe503f01322ad39273df598997dbb8abac2151",
       "path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Constraint vs Convention Disambiguation Theorem"
@@ -57158,12 +57158,12 @@
     },
     "koide_dimensionless_objection_closure_review_packet_2026-04-24": {
       "claim_id": "koide_dimensionless_objection_closure_review_packet_2026-04-24",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "no_go",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1b3151afd5f37ee2adf732de70e65b57983bdb8301253ce2f33f7aef60a88dcd",
+      "note_hash": "c5075762d167078aec48e1e3ff096f3f768b5969915d67323e74cab6b8799458",
       "path": "docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_dimensionless_objection_closure_review.py",
       "title": "Koide Dimensionless Objection-Closure Review Packet"
@@ -59378,7 +59378,7 @@
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "63bbca8d55770546436e1cd78e0e3b98cfc86d08c2631a731aa196a5f4950932",
+      "note_hash": "75158d481a6c275d904c6b913604372bd40b15d993e74e3fe3447b17d2b14efb",
       "path": "docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md",
       "runner_path": null,
       "title": "3D 1/L^2 Tail Statistics Note"
@@ -63556,14 +63556,14 @@
     },
     "one_parameter_reduced_shell_law_note": {
       "claim_id": "one_parameter_reduced_shell_law_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1c12ac35038ae7fa0b4cdbcc763a9056059eee2da604bbe8e8514021fbe8e177",
+      "note_hash": "1769be5fd543da806d3328f142ba23640b84b33a16ec985316d1c8b79cb0bcba",
       "path": "docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md",
       "runner_path": "scripts/frontier_one_parameter_reduced_shell_law.py",
       "title": "Exact One-Parameter Reduced Sewing-Shell Law"
@@ -70982,7 +70982,7 @@
         "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
         "scripts/gate_b_nonlabel_connectivity_v1.py"
       ],
-      "note_hash": "b829dd982daf66984f3bfaba5e62a0b4af8ebb5d12c2b227389e8c2c8a23da1e",
+      "note_hash": "0d6ec9fcf5aab6b91dc8426ed96ea05d0ff6f6bb4a355daa8469e34d485df985",
       "path": "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
       "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
       "title": "Sign Portability Invariant: First-Principles Derivation Within the Second Grown Family"
@@ -77326,12 +77326,12 @@
     },
     "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": {
       "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a774d89dec651b001bd1f201d50864d01c8530d145d1b84b2cb9bd7fccc9ad18",
+      "note_hash": "5471fcb9b92a94af1e9ce527fb19e22ca9e43a9c4faa85bfc6927f882c10b799",
       "path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
       "runner_path": null,
       "title": "Hydrogen / Helium Atomic Companion Note"
@@ -80304,22 +80304,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 481,
+      "bounded_theorem": 487,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1516,
+      "none": 1511,
       "open_gate": 44,
-      "positive_theorem": 169
+      "positive_theorem": 168
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 922,
+      "bounded_theorem": 924,
       "decoration": 1,
       "meta": 173,
-      "no_go": 160,
+      "no_go": 159,
       "none": 449,
       "open_gate": 123,
-      "positive_theorem": 612
+      "positive_theorem": 611
     },
     "edge_count": 9578,
     "leaf_count": 728,

@@ -1,8 +1,29 @@
 # DM Leptogenesis PMNS Relative-Action Stationarity Theorem
 
 **Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-16  
-**Script:** `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py`  
+**Date:** 2026-04-16 (2026-05-18: claim_scope formalized as
+positive-cone logdet Legendre identity + sampled local numerical
+branch check conditional on missing helper machinery, per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **(i) the positive-cone logdet Legendre identity** on
+the explicitly-stated positive-cone surface, and **(ii) a sampled
+local numerical branch check** on the runner's tested points,
+**conditional on the missing helper machinery** (observable-relative
+action law + W_rel/H_seed/eta + favored-column closure construction).
+These two pieces hold as exact algebraic identity + sampled
+numerical verification respectively, conditional on the helper-
+runner imports `scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`
+behaving as named. The note **does NOT** independently retain those
+helper imports or derive the underlying W_rel/H_seed/eta/favored-
+column structure from `Cl(3)` on `Z^3`. The audit verdict's repair
+sub-target ("include scripts/.../observable_relative_action_law.py
+and the retained theorem deriving W_rel, H_seed, eta, and
+favored-column closure from Cl(3), then re-audit") remains separate
+open work.
+**Status authority:** independent audit lane only.
+**Script:** `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py`
 **Framework convention:** “axiom” means only `Cl(3)` on `Z^3`
 
 ## Question

@@ -22,6 +22,24 @@ The cross-family equivalence claimed in the parent note becomes a corollary:
 any other retained sign-law family that shares the three structural inputs
 listed below inherits the same four gates by the same proof steps.
 
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **G1 and G2 as exact algebraic identities at finite
+source strength** + **G3 as a leading-order weak-field antisymmetry
+identity** on the second grown-family slice. **G4 (unit-slope) and
+the cross-family unit-slope corollary are explicitly conditional on
+nonzero linear response** (row-wise lower bounds on detector-layer
+intensity `R(plus)` and on the first-order plus-source response
+`dz_+`) — without those bounds, the linearity / Taylor expansion in
+the G4 derivation does not force the displayed numerator forms. The
+audit verdict's repair sub-target ("prove or certify row-wise lower
+bounds on detector-layer intensity and on the first-order plus-source
+response dz_+ for the second grown family") remains separate open
+work. Until the row-wise nonzero-linear-response bounds are
+supplied, the G4 unit-slope claim and the cross-family corollary
+should be cited as **conditional on linear-response regularity**,
+not as unconditional bounded theorems.
+**Status authority:** independent audit lane only.
+
 **Primary runner:** `scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py`
 (updated to numerically verify the four gates within the second grown
 family from the family runner's per-row output, not just to read other

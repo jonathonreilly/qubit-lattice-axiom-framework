@@ -1,8 +1,29 @@
 # 3D 1/L^2 Tail Statistics Note
 
-**Date:** 2026-04-04  
+**Date:** 2026-04-04 (2026-05-18: claim_scope formalized as width-8
+frozen-log tail statistics only per audit verdict boundary
+instruction)
 **Status:** bounded - bounded or caveated result note
 **Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 tightening):** the load-bearing content
+of this note is **the width-8 frozen-log tail statistics only**: at
+`h = 0.25`, `width = 8`, the Born metric stays at `3.75e-15`, the
+`k=0` gravity metric is `0.000000`, the dTV is `0.358`, the barrier
+reads ATTRACTIVE, the no-barrier rows at `z = 4..8` show the listed
+centroids and biases, and the post-peak tail fit gives exponent
+`b^(-0.70)` with `R² = 0.955` on the frozen runner log. The
+**comparison statement that this "is a real improvement over the
+earlier `h = 0.25`, width-6 readout that had fewer post-peak points
+and a weaker tail fit (`b^(-0.53)`)" is NOT load-bearing** under
+this narrowing: the width-6 baseline `b^(-0.53)` value cited in the
+Comparison section is from a retained summary that is not in the
+restricted packet, and the audit-clean "improvement claim" requires
+a width-6 vs width-8 head-to-head runner in one packet, which is
+the audit verdict's `missing_dependency_edge` repair target. The
+inverse-square-kernel wrapper from PR #1520 records the width-6
+comparator defaults as a textbook-helper-module bounded wrapper; it
+does not retroactively retain the `b^(-0.53)` comparator value.
+**Status authority:** independent audit lane only.
 
 **Review repair perimeter (2026-05-03 generated-audit context):**
 Generated-audit context identified this chain-closure blocker: "The note states the width-8

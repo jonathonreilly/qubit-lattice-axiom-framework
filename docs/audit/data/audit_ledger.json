@@ -13771,10 +13771,10 @@
       "claim_id": "b_independence_mechanism_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -13795,7 +13795,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "36cbe7bfea983e8b9da4fc1dfc448264e94f3b5270a8e8a8569ec44d8363c093",
+      "note_hash": "679e22d575469981810e048c1bbd8f2e00c22a8e35765d6ad2e116bb018f6d89",
       "note_path": "docs/B_INDEPENDENCE_MECHANISM_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -38868,7 +38868,7 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -54714,51 +54714,42 @@
       "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16": {
-      "audit_date": "2026-05-17T14:48:06.989553+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 10.674,
-        "runner_hash": "9bad170fd837c93ca06bd2c58dac4b238d01f20bbdd74b7d6601ac17d1000a2a",
-        "transitive_descendants": 816
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260517-144619-bc2044d8-dm_leptogenesis_pmns_rel-005",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The Legendre identity itself is an algebraic closure once W_rel and S_rel are accepted. The restricted packet does not derive W_rel, H_seed, the eta closure map, the favored column, or the minimization-to-physical-selector bridge from Cl(3), and the runner relies on an unprovided helper for those objects.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "claim_scope": "Audited the bounded claim that, on the current PMNS-assisted N_e closure patch, the seed-relative action is the native Legendre-dual effective action and its lowest-action constrained branch is the selector.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-17T14:48:06.989553+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 4,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.788,
-      "load_bearing_step": "The seed-relative action satisfies S_rel(Y)=sup_K[log det(I+K)-Tr(KY)] with K_*=Y^(-1)-I, so S_rel is the exact Legendre-dual effective action of the sole-axiom observable generator.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "0c120bd95e8ffd63fcff1f93e448cc7e9636baa9d63e9d4f62bb53235e89cbff",
+      "note_hash": "a0bce4315b52edc3aeaff3fcc245789d3fe7a79cfce75d5a233b4dfc8ad0f0b3",
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py and the retained theorem deriving W_rel, H_seed, eta, and favored-column closure from Cl(3), then re-audit the selector bridge.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -54879,19 +54870,60 @@
             "total_pass": 13
           },
           "verdict_rationale": "The displayed Legendre-dual identity is a genuine algebraic calculation on the positive cone, so the load-bearing derivation class is A rather than C. The restricted packet does not derive W_rel from Cl(3) on Z^3 and does not provide retained upstream support for the fixed seed surface, favored closure column, or imported rel module used by the numerical runner. The runner verifies the algebraic identity and performs sampled branch/local-minimum checks, but it does not instantiate the sole axiom from scratch in the provided source. Therefore the theorem is bounded but conditional on unclosed imported framework ingredients."
+        },
+        {
+          "archived_at": "2026-05-18T11:39:54.838837+00:00",
+          "archived_for_note_hash": "0c120bd95e8ffd63fcff1f93e448cc7e9636baa9d63e9d4f62bb53235e89cbff",
+          "audit_date": "2026-05-17T14:48:06.989553+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 10.674,
+            "runner_hash": "9bad170fd837c93ca06bd2c58dac4b238d01f20bbdd74b7d6601ac17d1000a2a",
+            "transitive_descendants": 816
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260517-144619-bc2044d8-dm_leptogenesis_pmns_rel-005",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The Legendre identity itself is an algebraic closure once W_rel and S_rel are accepted. The restricted packet does not derive W_rel, H_seed, the eta closure map, the favored column, or the minimization-to-physical-selector bridge from Cl(3), and the runner relies on an unprovided helper for those objects.",
+          "claim_scope": "Audited the bounded claim that, on the current PMNS-assisted N_e closure patch, the seed-relative action is the native Legendre-dual effective action and its lowest-action constrained branch is the selector.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T14:48:06.989553+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The seed-relative action satisfies S_rel(Y)=sup_K[log det(I+K)-Tr(KY)] with K_*=Y^(-1)-I, so S_rel is the exact Legendre-dual effective action of the sole-axiom observable generator.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py and the retained theorem deriving W_rel, H_seed, eta, and favored-column closure from Cl(3), then re-audit the selector bridge.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 0,
+            "C": 7,
+            "D": 0,
+            "total_pass": 13
+          },
+          "verdict_rationale": "Issue: the packet proves only the algebraic Legendre transform identity over already-chosen W_rel and S_rel, while the axiom-to-observable generator, seed surface, eta readout, favored column, and physical selector bridge are imported rather than closed. Why this blocks: without those retained inputs, the conclusion that minimization is not an extra postulate does not follow from the restricted materials. Repair target: provide a retained theorem and runner source deriving the missing map from Cl(3), including scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py, rather than calling it opaquely. Claim boundary until fixed: the safe result is the positive-cone logdet Legendre identity and a sampled local numerical branch check conditional on the missing helper machinery."
         }
       ],
       "runner_check_breakdown": {
-        "A": 3,
+        "A": 0,
         "B": 0,
-        "C": 7,
+        "C": 0,
         "D": 0,
-        "total_pass": 13
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem",
       "transitive_descendants": 883,
-      "verdict_rationale": "Issue: the packet proves only the algebraic Legendre transform identity over already-chosen W_rel and S_rel, while the axiom-to-observable generator, seed surface, eta readout, favored column, and physical selector bridge are imported rather than closed. Why this blocks: without those retained inputs, the conclusion that minimization is not an extra postulate does not follow from the restricted materials. Repair target: provide a retained theorem and runner source deriving the missing map from Cl(3), including scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py, rather than calling it opaquely. Claim boundary until fixed: the safe result is the positive-cone logdet Legendre identity and a sampled local numerical branch check conditional on the missing helper machinery."
+      "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16": {
       "audit_date": null,
@@ -80360,7 +80392,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "e0c8ede7919db2797e6f5492f622c862310c1a0275bb1768a1e77e5bc87bc249",
+      "note_hash": "b4031c56b945a91835da345f7bcb5efbef8313a4b72c7bd7eb18bf714e832eb1",
       "note_path": "docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -83168,45 +83200,24 @@
       "verdict_rationale": null
     },
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03": {
-      "audit_date": "2026-05-11T01:40:05.756175+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Given the canonical SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson matching formula beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the generator/connection normalization shifts beta by c^2 rather than providing an independent g_bare freedom.",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout."
-        },
-        "dep_claim_type": {
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration_under_cl3_color_automorphism_theorem",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded"
-        },
-        "deps": [
-          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
-        ],
-        "load_bearing_score": 10.26,
-        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
-        "transitive_descendants": 612
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e14b0-8f2b-7743-82de-7af22ebc3d0d",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The local algebra closes, but the note's no-alternative claim depends on the rescaling-freedom-removal row. That dependency is supplied in the packet with effective_status decoration_under_cl3_color_automorphism_theorem, not retained-grade.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": "Relative to the canonical Cl(3) normalization Tr(T_a T_b)=delta_ab/2 and Wilson matching beta=2N_c/g_bare^2, g_bare=1 is algebraically forced, with the claimed no-rescaling ambiguity delegated to the rescaling-freedom-removal dependency.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-11T01:40:05.756175+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -83215,22 +83226,20 @@
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.511,
-      "load_bearing_step": "Given (CN) and (WM) at N_c = 3 with beta = 2 N_c = 6, g_bare^2 = 2 N_c / beta = 6 / 6 = 1.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "9da8ff466466f2ffdf319dcf3286f56000f9d562e25f38457bfaeb6aa715d535",
+      "note_hash": "fa16848821fade9ee99f086a74fe503f01322ad39273df598997dbb8abac2151",
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: the one-hop rescaling-freedom-removal dependency is not retained-grade; it is classified as decoration_under_cl3_color_automorphism_theorem.",
-      "open_dependency_paths": [
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03 -> g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -83277,21 +83286,76 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: The load-bearing RR input is the one-hop rescaling-freedom-removal theorem, but the current ledger has that cited authority as audited_decoration/effective decoration_under_cl3_color_automorphism_theorem, not a retained-grade theorem. Why this blocks: the source's structural-constraint conclusion is exact algebra once CN, WM, and RR are accepted, and the fresh runner cache verifies the relevant Section E algebra, but an active positive_theorem cannot retain through a decoration dependency. Repair target: re-promote or retain g_bare_rescaling_freedom_removal_theorem_note_2026-05-03 as an active theorem, or split/box this note as decoration if it adds no independent claim beyond the decoration parent. Claim boundary until fixed: this remains a conditional algebraic disambiguation relative to CN, Wilson matching, and the boxed rescaling identity; it is not retained as an independent structural constraint."
+        },
+        {
+          "archived_at": "2026-05-18T11:39:54.840925+00:00",
+          "archived_for_note_hash": "9da8ff466466f2ffdf319dcf3286f56000f9d562e25f38457bfaeb6aa715d535",
+          "audit_date": "2026-05-11T01:40:05.756175+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Given the canonical SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson matching formula beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the generator/connection normalization shifts beta by c^2 rather than providing an independent g_bare freedom.",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout."
+            },
+            "dep_claim_type": {
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration_under_cl3_color_automorphism_theorem",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded"
+            },
+            "deps": [
+              "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+              "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
+            ],
+            "load_bearing_score": 10.26,
+            "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+            "transitive_descendants": 612
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e14b0-8f2b-7743-82de-7af22ebc3d0d",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The local algebra closes, but the note's no-alternative claim depends on the rescaling-freedom-removal row. That dependency is supplied in the packet with effective_status decoration_under_cl3_color_automorphism_theorem, not retained-grade.",
+          "claim_scope": "Relative to the canonical Cl(3) normalization Tr(T_a T_b)=delta_ab/2 and Wilson matching beta=2N_c/g_bare^2, g_bare=1 is algebraically forced, with the claimed no-rescaling ambiguity delegated to the rescaling-freedom-removal dependency.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-11T01:40:05.756175+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Given (CN) and (WM) at N_c = 3 with beta = 2 N_c = 6, g_bare^2 = 2 N_c / beta = 6 / 6 = 1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: the one-hop rescaling-freedom-removal dependency is not retained-grade; it is classified as decoration_under_cl3_color_automorphism_theorem.",
+          "open_dependency_paths": [
+            "g_bare_constraint_vs_convention_theorem_note_2026-05-03 -> g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+          ],
+          "runner_check_breakdown": {
+            "A": 51,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 54
+          },
+          "verdict_rationale": "Issue: the decisive algebraic substitution is valid only as a relative statement, while the stronger constraint-vs-convention disambiguation relies on a non-retained dependency. Why this blocks: the cited rescaling-freedom-removal authority is classified as decoration_under_cl3_color_automorphism_theorem, so it cannot presently support an independent retained positive_theorem. Repair target: provide a retained-grade theorem removing the rescaling freedom or re-architect the claim to depend only on retained authorities. Claim boundary until fixed: local class-A result that CN plus beta=6 implies g_bare=1."
         }
       ],
       "relabel_date": "2026-05-06T17:45:26.976865+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 51,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 54
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Constraint vs Convention Disambiguation Theorem",
       "transitive_descendants": 1031,
-      "verdict_rationale": "Issue: the decisive algebraic substitution is valid only as a relative statement, while the stronger constraint-vs-convention disambiguation relies on a non-retained dependency. Why this blocks: the cited rescaling-freedom-removal authority is classified as decoration_under_cl3_color_automorphism_theorem, so it cannot presently support an independent retained positive_theorem. Repair target: provide a retained-grade theorem removing the rescaling freedom or re-architect the claim to depend only on retained authorities. Claim boundary until fixed: local class-A result that CN plus beta=6 implies g_bare=1."
+      "verdict_rationale": null
     },
     "g_bare_derivation_note": {
       "audit_date": "2026-05-05T23:13:37.081274+00:00",
@@ -122259,47 +122323,40 @@
       "verdict_rationale": "The load-bearing scalar-mark step is an algebraic closure over the retained bridge theorem, not a definition substitution or numerical match. The runner source does more than print constants: it symbolically checks the residual structure and re-verifies representative scalar restrictions by importing the sibling Wilson construction. Within the stated no-go scope, the conclusion follows from retained inputs and explicit countermodels showing marked relative cobordism does not force selected-line closure or c=0."
     },
     "koide_dimensionless_objection_closure_review_packet_2026-04-24": {
-      "audit_date": "2026-05-05T05:08:26.239133+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 13.555,
-        "runner_hash": "1bcd148670de0acc9cf3d4858fd3a70c34f11341da5d221b376f04f34e6cf129",
-        "transitive_descendants": 265
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-koide_dimensionless_obje-122",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The runner verifies algebraic countermodels once the source-response formula, surviving Z carrier, endpoint readout, eta_APS value, and ambient endpoint domain are accepted. The restricted packet provides no cited retained authority or first-principles derivation of those carriers and bridges.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "koide_dimensionless_objection_closure_review_packet_2026-04-24",
-      "claim_scope": "No-go that the packet does not establish retained dimensionless Koide closure: Q still has a Z/traceless-background residual and delta still has selected-line endpoint and basepoint residuals.",
-      "claim_type": "no_go",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-05T05:08:26.239133+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 11,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 15.286,
-      "load_bearing_step": "The complete retained observable algebra keeps Z, spectator-channel, and endpoint-torsor coordinates, while deleting them requires an extra operational quotient or boundary law not derived by the retained structures.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "1b3151afd5f37ee2adf732de70e65b57983bdb8301253ce2f33f7aef60a88dcd",
+      "note_hash": "c5075762d167078aec48e1e3ff096f3f768b5969915d67323e74cab6b8799458",
       "note_path": "docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained bridge theorems deriving the admitted source-response carrier with surviving Z and the endpoint source/readout/basepoint domain from the axiom, or split the packet into explicitly conditional algebraic checks.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -122377,19 +122434,58 @@
             "total_pass": 21
           },
           "verdict_rationale": "Issue: the packet correctly avoids claiming full dimensionless Koide closure, but its candidate retained-grade support/no-go status relies on unregistered authorities for the normalized two-channel source-response carrier, retained central/projected commutant source grammar with Z, the April 25 background-zero/Z-erasure and onsite-source-domain results, the APS eta_APS=2/9 value, and the physical selected-line/based-endpoint boundary setup. Why this blocks: the primary runner proves rational counterexamples inside a supplied model, not that the supplied model is the retained physical source domain or that no retained boundary law elsewhere selects the closing quotient; it also omits several expected closeout declarations from the note, including the onsite-source-domain conditional and residual source-domain line. Repair target: register the source-response, onsite-source-domain, Q/delta split no-go, pointed-origin/endpoint, APS eta, and hostile-review guard authorities as one-hop dependencies; make the primary runner or registered runner bundle assert every expected closeout line and fail if any residual authority is missing. Claim boundary until fixed: it is safe to claim conditional support/no-go evidence: within the supplied two-channel source-response and endpoint-source toy algebra, z=0 gives Q=2/3, traceless Z and ambient endpoint sources give exact counterdomains, selected-line plus based endpoint would give delta=2/9, and full retained closure remains unestablished; it is not yet an audited retained proof of the physical dimensionless Koide obstruction or of all listed residual boundaries."
+        },
+        {
+          "archived_at": "2026-05-18T11:39:54.842276+00:00",
+          "archived_for_note_hash": "1b3151afd5f37ee2adf732de70e65b57983bdb8301253ce2f33f7aef60a88dcd",
+          "audit_date": "2026-05-05T05:08:26.239133+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 13.555,
+            "runner_hash": "1bcd148670de0acc9cf3d4858fd3a70c34f11341da5d221b376f04f34e6cf129",
+            "transitive_descendants": 265
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-koide_dimensionless_obje-122",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The runner verifies algebraic countermodels once the source-response formula, surviving Z carrier, endpoint readout, eta_APS value, and ambient endpoint domain are accepted. The restricted packet provides no cited retained authority or first-principles derivation of those carriers and bridges.",
+          "claim_scope": "No-go that the packet does not establish retained dimensionless Koide closure: Q still has a Z/traceless-background residual and delta still has selected-line endpoint and basepoint residuals.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-05T05:08:26.239133+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "The complete retained observable algebra keeps Z, spectator-channel, and endpoint-torsor coordinates, while deleting them requires an extra operational quotient or boundary law not derived by the retained structures.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained bridge theorems deriving the admitted source-response carrier with surviving Z and the endpoint source/readout/basepoint domain from the axiom, or split the packet into explicitly conditional algebraic checks.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 21,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 21
+          },
+          "verdict_rationale": "Issue: the packet's no-go rests on admitted source and endpoint domains that are asserted or hard-coded rather than derived from the axiom in the restricted inputs. Why this blocks: the algebraic checks show residuals inside the chosen model, but do not prove that these are exactly the retained physical domains or that no retained theorem erases them. Repair target: provide retained-grade derivations or direct dependencies for the surviving Z source domain, endpoint source/readout law, eta_APS transfer, and basepoint treatment. Claim boundary until fixed: the packet supports conditional obstruction tests, not a closed retained no-go from the axiom alone."
         }
       ],
       "runner_check_breakdown": {
-        "A": 21,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 21
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_koide_dimensionless_objection_closure_review.py",
       "title": "Koide Dimensionless Objection-Closure Review Packet",
       "transitive_descendants": 882,
-      "verdict_rationale": "Issue: the packet's no-go rests on admitted source and endpoint domains that are asserted or hard-coded rather than derived from the axiom in the restricted inputs. Why this blocks: the algebraic checks show residuals inside the chosen model, but do not prove that these are exactly the retained physical domains or that no retained theorem erases them. Repair target: provide retained-grade derivations or direct dependencies for the surviving Z source domain, endpoint source/readout law, eta_APS transfer, and basepoint treatment. Claim boundary until fixed: the packet supports conditional obstruction tests, not a closed retained no-go from the axiom alone."
+      "verdict_rationale": null
     },
     "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16": {
       "audit_date": "2026-05-16T13:56:26.614178+00:00",
@@ -136390,7 +136486,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "63bbca8d55770546436e1cd78e0e3b98cfc86d08c2631a731aa196a5f4950932",
+      "note_hash": "75158d481a6c275d904c6b913604372bd40b15d993e74e3fe3447b17d2b14efb",
       "note_path": "docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -164289,10 +164385,10 @@
       "claim_id": "one_parameter_reduced_shell_law_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -164310,7 +164406,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "1c12ac35038ae7fa0b4cdbcc763a9056059eee2da604bbe8e8514021fbe8e177",
+      "note_hash": "1769be5fd543da806d3328f142ba23640b84b33a16ec985316d1c8b79cb0bcba",
       "note_path": "docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -164968,7 +165064,7 @@
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -205618,41 +205714,24 @@
       "verdict_rationale": "Within the stuck-fan-out scope, the chain closes as a clean no-go for single-cycle Sigma m_nu retention. The structural-tension residue (framework Omega_DM vs. observation) is sharp and identified, and the three pivots forward (Omega_DM tightening, alt-admission bypass, Lane 5 C1 closure) are flagged as research-level moves beyond the cycle. This is a ratified negative result, not an active failure."
     },
     "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09": {
-      "audit_date": "2026-05-11T11:34:15.679026+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
-        },
-        "dep_claim_type": {
-          "second_grown_family_sign_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "second_grown_family_sign_note": "retained_bounded"
-        },
-        "deps": [
-          "second_grown_family_sign_note"
-        ],
-        "load_bearing_score": 9.262,
-        "runner_hash": "4a1d645c3c821e7fd4f18f5bc86711eb280defe206af014d28ce9e5b08f11635",
-        "transitive_descendants": 433
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e16ce-daa5-77e1-92e5-a8055f1082bb",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "G1 and G2 close, and G3 closes as a leading-order smoothness consequence where the centroid readout is regular. G4 does not close from the stated structural inputs because the ratio/log step requires a nonzero first-order plus response and a nonzero detector-intensity denominator, neither of which is proved or stated as an assumption.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
-      "claim_scope": "Within the second no-restore grown-family source/propagation/readout maps, G1-G2 are finite-strength cancellation identities and G3-G4 are weak-field sign/slope identities, with a conditional cross-family corollary for families sharing those maps.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T11:34:15.679026+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -205660,27 +205739,23 @@
         "second_grown_family_sign_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
         "scripts/gate_b_nonlabel_connectivity_v1.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.299,
-      "load_bearing_step": "From R(double)=2 eps dz_+ + O(eps^2) and R(plus)=eps dz_+ + O(eps^2), the note concludes R(double)/R(plus)=2+O(eps) and log_2(R(double)/R(plus))=1+O(eps).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "b829dd982daf66984f3bfaba5e62a0b4af8ebb5d12c2b227389e8c2c8a23da1e",
+      "note_hash": "0d6ec9fcf5aab6b91dc8426ed96ea05d0ff6f6bb4a355daa8469e34d485df985",
       "note_path": "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or certify row-wise lower bounds on detector-layer intensity and on the first-order plus-source response dz_+ for the second grown family, and state the same hypothesis for cross-family inheritance.",
-      "open_dependency_paths": [
-        "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-10T07:52:43.411326+00:00",
@@ -205725,19 +205800,72 @@
             "total_pass": 8
           },
           "verdict_rationale": "Issue: the note's algebraic/Taylor proof depends on structural inputs and retained sign-law family facts that are not supplied as cited authorities in the packet. Why this blocks: the auditor cannot verify that the second grown family, other retained families, imported source code, or registered logs actually instantiate the stated source-to-field map, propagation/readout, anchor rule, and retained-family status. Repair target: add retained one-hop authorities or embedded source certificates for the family construction, propagation/readout implementation, and log provenance, plus a runner that exposes the checked structural equivalence. Claim boundary until fixed: the packet supports only a conditional algebraic statement that if those maps and retained-family facts hold, then the four gates follow to the stated exact or weak-field order."
+        },
+        {
+          "archived_at": "2026-05-18T11:39:54.845725+00:00",
+          "archived_for_note_hash": "b829dd982daf66984f3bfaba5e62a0b4af8ebb5d12c2b227389e8c2c8a23da1e",
+          "audit_date": "2026-05-11T11:34:15.679026+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
+            },
+            "dep_claim_type": {
+              "second_grown_family_sign_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "second_grown_family_sign_note": "retained_bounded"
+            },
+            "deps": [
+              "second_grown_family_sign_note"
+            ],
+            "load_bearing_score": 9.262,
+            "runner_hash": "4a1d645c3c821e7fd4f18f5bc86711eb280defe206af014d28ce9e5b08f11635",
+            "transitive_descendants": 433
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e16ce-daa5-77e1-92e5-a8055f1082bb",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "G1 and G2 close, and G3 closes as a leading-order smoothness consequence where the centroid readout is regular. G4 does not close from the stated structural inputs because the ratio/log step requires a nonzero first-order plus response and a nonzero detector-intensity denominator, neither of which is proved or stated as an assumption.",
+          "claim_scope": "Within the second no-restore grown-family source/propagation/readout maps, G1-G2 are finite-strength cancellation identities and G3-G4 are weak-field sign/slope identities, with a conditional cross-family corollary for families sharing those maps.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T11:34:15.679026+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "From R(double)=2 eps dz_+ + O(eps^2) and R(plus)=eps dz_+ + O(eps^2), the note concludes R(double)/R(plus)=2+O(eps) and log_2(R(double)/R(plus))=1+O(eps).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or certify row-wise lower bounds on detector-layer intensity and on the first-order plus-source response dz_+ for the second grown family, and state the same hypothesis for cross-family inheritance.",
+          "open_dependency_paths": [
+            "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
+            "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
+            "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py"
+          ],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 24,
+            "C": 0,
+            "D": 0,
+            "total_pass": 28
+          },
+          "verdict_rationale": "Issue: The G4 unit-slope derivation divides by R(plus) and expands the logarithm without proving that dz_+ is nonzero or bounded away from zero, and the centroid quotient also needs a detector-intensity lower bound. Why this blocks: Linearity and Taylor expansion imply the displayed numerator forms only under regular readout; they do not force a unit response slope if the first-order response vanishes. Repair target: Add a retained row-wise theorem or certified computation giving lower bounds for the detector denominator and plus-source linear response on the second grown-family slice, then rerun G4 against those bounds. Claim boundary until fixed: G1/G2 exact cancellation and G3 leading antisymmetry remain supported, while G4 and the cross-family unit-slope corollary are conditional on nonzero linear response."
         }
       ],
       "runner_check_breakdown": {
-        "A": 4,
-        "B": 24,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 28
+        "total_pass": 0
       },
       "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
       "title": "Sign Portability Invariant: First-Principles Derivation Within the Second Grown Family",
       "transitive_descendants": 890,
-      "verdict_rationale": "Issue: The G4 unit-slope derivation divides by R(plus) and expands the logarithm without proving that dz_+ is nonzero or bounded away from zero, and the centroid quotient also needs a detector-intensity lower bound. Why this blocks: Linearity and Taylor expansion imply the displayed numerator forms only under regular readout; they do not force a unit response slope if the first-order response vanishes. Repair target: Add a retained row-wise theorem or certified computation giving lower bounds for the detector denominator and plus-source linear response on the second grown-family slice, then rerun G4 against those bounds. Claim boundary until fixed: G1/G2 exact cancellation and G3 leading antisymmetry remain supported, while G4 and the cross-family unit-slope corollary are conditional on nonzero linear response."
+      "verdict_rationale": null
     },
     "sign_portability_invariant_note": {
       "audit_date": null,
@@ -249981,51 +250109,42 @@
       "verdict_rationale": null
     },
     "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": {
-      "audit_date": "2026-05-10T16:52:00.874831+00:00",
-      "audit_state_snapshot": {
-        "criticality": "medium",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 5.17,
-        "runner_hash": null,
-        "transitive_descendants": 17
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e12cd-3829-7a83-b45a-29e434434cf1",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The chain does not close because the restricted packet provides no one-hop lattice-kinetic or Coulomb-kernel authority and no runner source/stdout certificate tying the quoted numbers to the stated Hamiltonians. The note itself acknowledges this pinning and dependency-edge gap.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-      "claim_scope": "Bounded work-history companion asserting finite-box hydrogen and helium lattice numerical sanity checks on a retained kinetic-plus-Coulomb surface, without promoting continuum or exact atomic closure.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T16:52:00.874831+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 5.17,
-      "load_bearing_step": "The note asserts that preserved hydrogen, helium Hartree, and helium Jastrow/VMC scripts instantiate the lattice kinetic-plus-Coulomb Hamiltonians and produce the quoted bounded atomic readouts.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "a774d89dec651b001bd1f201d50864d01c8530d145d1b84b2cb9bd7fccc9ad18",
+      "note_hash": "5471fcb9b92a94af1e9ce527fb19e22ca9e43a9c4faa85bfc6927f882c10b799",
       "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct one-hop dependencies for the retained lattice kinetic and Coulomb-kernel authority notes, and include completed cached runner certificates/source for the hydrogen, helium Hartree, and helium Jastrow companion scripts.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -250108,6 +250227,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "On the note text alone, the load-bearing step is a bounded first-principles numerical compute claim rather than a definition, renaming, or external comparator. However, no runner output or source code is included, so the restricted packet cannot independently verify that the computation was performed as stated or that the numbers are replayable. The conclusion also depends on upstream retained lattice kinetic/Coulomb surfaces that are named but not provided as cited authorities in the packet."
+        },
+        {
+          "archived_at": "2026-05-18T11:39:54.847424+00:00",
+          "archived_for_note_hash": "a774d89dec651b001bd1f201d50864d01c8530d145d1b84b2cb9bd7fccc9ad18",
+          "audit_date": "2026-05-10T16:52:00.874831+00:00",
+          "audit_state_snapshot": {
+            "criticality": "medium",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 5.17,
+            "runner_hash": null,
+            "transitive_descendants": 17
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e12cd-3829-7a83-b45a-29e434434cf1",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The chain does not close because the restricted packet provides no one-hop lattice-kinetic or Coulomb-kernel authority and no runner source/stdout certificate tying the quoted numbers to the stated Hamiltonians. The note itself acknowledges this pinning and dependency-edge gap.",
+          "claim_scope": "Bounded work-history companion asserting finite-box hydrogen and helium lattice numerical sanity checks on a retained kinetic-plus-Coulomb surface, without promoting continuum or exact atomic closure.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T16:52:00.874831+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The note asserts that preserved hydrogen, helium Hartree, and helium Jastrow/VMC scripts instantiate the lattice kinetic-plus-Coulomb Hamiltonians and produce the quoted bounded atomic readouts.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: add direct one-hop dependencies for the retained lattice kinetic and Coulomb-kernel authority notes, and include completed cached runner certificates/source for the hydrogen, helium Hartree, and helium Jastrow companion scripts.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the load-bearing numerical computation is only asserted, not certified by supplied runner source/stdout or one-hop retained operator authorities. Why this blocks: a bounded theorem over a lattice Hamiltonian requires the Hamiltonian definitions and completed computation artifacts inside the restricted chain. Repair target: wire the canonical lattice-kinetic and Coulomb-kernel authority notes as direct dependencies and provide cached stdout/source certificates for all three companion scripts. Claim boundary until fixed: diagnostic work-history numerics only, not retained bounded authority."
         }
       ],
       "runner_check_breakdown": {
@@ -250120,7 +250280,7 @@
       "runner_path": null,
       "title": "Hydrogen / Helium Atomic Companion Note",
       "transitive_descendants": 17,
-      "verdict_rationale": "Issue: the load-bearing numerical computation is only asserted, not certified by supplied runner source/stdout or one-hop retained operator authorities. Why this blocks: a bounded theorem over a lattice Hamiltonian requires the Hamiltonian definitions and completed computation artifacts inside the restricted chain. Repair target: wire the canonical lattice-kinetic and Coulomb-kernel authority notes as direct dependencies and provide cached stdout/source certificates for all three companion scripts. Claim boundary until fixed: diagnostic work-history numerics only, not retained bounded authority."
+      "verdict_rationale": null
     },
     "work_history.cabibbo_jarlskog_route_note_2026-04-12": {
       "audit_date": null,
@@ -262009,9 +262169,9 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2256,
-    "re_audit_required": 26,
+    "preserved_existing": 2279,
+    "re_audit_required": 5,
     "row_count": 2328,
-    "seeded_new": 2
+    "seeded_new": 0
   }
 }

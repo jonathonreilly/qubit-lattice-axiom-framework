@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 357 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 98 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,21 +51,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 586 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 98 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1527 |
+| `unaudited` | 1526 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 997 |
 | `decoration` | 26 |
-| `meta` | 216 |
+| `meta` | 217 |
 | `no_go` | 230 |
 | `open_gate` | 110 |
-| `positive_theorem` | 749 |
+| `positive_theorem` | 748 |
 
 | criticality | count |
 |---|---:|
@@ -760,6 +760,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
+| `hard_geometry_head_to_head_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5170,6 +5171,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On H_c, setting s = q - c + delta gives s >= 0, so r = sqrt(s^2 + 1/4) is >= 1/2 and sqrt(r^2 - 1/4) = sqrt(s^2) = s; conversely r >= 1/2 makes sqrt(r^2 - 1/4) >= 0, giving q >= c - delta.  _(class `A`)_
 - **chain closes:** True — The image, inverse, and boundary claims close directly from real arithmetic, nonnegativity of square roots, and the half-plane condition s >= 0. No external dependencies or parent theorem are needed.
 - **rationale:** The source theorem is independently proved as a bounded algebraic identity. The runner stdout supports the symbolic inverse and boundary checks, but the generated classifier collapses retained checks to B/D context-heavy items; those framework-instance and parent-row context checks are not load-bearing. The discrepancy does not undermine the source proof because the algebra closes without importing the parent DM-neutrino construction.
+- **auditor confidence:** high
+
+### `hard_geometry_head_to_head_note`
+
+- **Note:** [`HARD_GEOMETRY_HEAD_TO_HEAD_NOTE.md`](../../docs/HARD_GEOMETRY_HEAD_TO_HEAD_NOTE.md)
+- **claim_type:** `meta`
+- **claim_scope:** A comparison/ranking note over retained hard-geometry, symmetry, asymmetry-persistence, and grown-graph lanes using cited upstream summaries and cached runner text.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-hard_geometry_head_to_he-037`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The head-to-head ranking asserts dense central-band + layer norm as best joint coexistence, mirror chokepoint as best symmetry-protected lane, Z2 x Z2 as best decoherence-side symmetry lane, generated asymmetry-persistence as best gravity-side lane, and grown graphs as favoring a density optimum near npl≈30.  _(class `B`)_
+- **chain closes:** False — The comparison is mostly cross-note input aggregation, but the restricted packet lacks a cited authority for the grown-graph density optimum. The Z2 x Z2 claims also import Born/decoherence details that the supplied gravity-probe authority explicitly says are not checked there and must come from separate upstream notes.
+- **rationale:** The primary runner is a hard-coded summary printer, not a recomputation of the ranking, and its stdout is stale relative to the source note: it omits the Z2 x Z2 and grown-graph lanes and reports older mirror-scan values. Several cited authorities are retained-grade, but the source note uses at least one missing grown-graph authority and uses higher-symmetry Born/decoherence statements not closed by the supplied HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE. Therefore the ranking does not close from the restricted packet alone.
+- **open / conditional deps cited:**
+  - `HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md`
+  - `GROWN_GRAPH_DENSITY_OPTIMUM_NOTE.md`
 - **auditor confidence:** high
 
 ### `hard_geometry_local_note`

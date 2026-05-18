@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 809,
     "high": 33,
-    "leaf": 323,
+    "leaf": 322,
     "medium": 155
   },
   "cycle_break_target_count": 189,
@@ -32916,34 +32916,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hard_geometry_head_to_head_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "central_band_dense_joint_highn_note",
-        "mirror_chokepoint_boundary_fit_note",
-        "higher_symmetry_gravity_probe_note",
-        "asymmetry_persistence_joint_card_note",
-        "asymmetry_persistence_mass_scaling_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/HARD_GEOMETRY_HEAD_TO_HEAD_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/hard_geometry_head_to_head.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "linear_response_second_order_kubo_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -42139,6 +42111,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 14,
-  "total_pending": 1320
+  "ready_count": 13,
+  "total_pending": 1319
 }

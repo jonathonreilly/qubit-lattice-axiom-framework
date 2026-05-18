@@ -97762,9 +97762,9 @@
       "verdict_rationale": "The scoped theorem is exact operator algebra on a finite Wilson source surface, not a numerical beta=6 plaquette prediction. The runner supports the character identity, recurrence, self-adjointness, slice counting, and scoped operator realization with THEOREM PASS=7 SUPPORT=2 FAIL=0. No support-class promotion is needed because the audited object is a bounded exact theorem with the remaining state-identification gap excluded."
     },
     "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17": {
-      "audit_date": "2026-05-17T18:26:23.975347+00:00",
+      "audit_date": "2026-05-18T12:20:04.968891+00:00",
       "audit_state_snapshot": {
-        "criticality": "medium",
+        "criticality": "critical",
         "dep_claim_scope": {
           "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint, analyticity, finite-support, and polynomial-growth lemmas; this does not close analytic P(6), chi_L(beta), or an explicit nonpolynomial hierarchy solution."
         },
@@ -97777,26 +97777,26 @@
         "deps": [
           "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
         ],
-        "load_bearing_score": 6.822,
+        "load_bearing_score": 11.286,
         "runner_hash": "10c10287f109a6e0a0f3196dd44abe2244e9dfa8f1c7f8acf3a5c2787c1fc3f3",
-        "transitive_descendants": 39
+        "transitive_descendants": 882
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-cli-gpt-5.5-20260517-182604-41cdea85-gauge_vacuum_plaquette_u-004",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_u-021",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The Riccati recurrence follows algebraically from the stated Bessel identities, and the sign/nonzero induction is valid because every convolution summand has the same nonzero sign. Termwise integration then transfers the result from a_n to c_{2k}.",
+      "chain_closure_explanation": "The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.",
       "claim_id": "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17",
-      "claim_scope": "For K_1(t)=log I_0(t), all odd Taylor coefficients vanish and every even Taylor coefficient c_{2k} is nonzero with sign (-1)^(k+1).",
+      "claim_scope": "For K_1(t)=log I_0(t), the Taylor coefficients satisfy c_{2k-1}=0, c_{2k} != 0, and sign(c_{2k})=(-1)^(k+1) for every k>=1.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem (narrow)",
-      "claim_type_last_reviewed": "2026-05-18T09:35:27.110076+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-18T12:20:04.968891+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -97811,8 +97811,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-18T12:20:04.968891+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_u-021",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For K_1(t)=log I_0(t), the Taylor coefficients satisfy c_{2k-1}=0, c_{2k} != 0, and sign(c_{2k})=(-1)^(k+1) for every k>=1.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -97820,18 +97831,18 @@
       ],
       "direct_in_degree": 3,
       "effective_status": "retained",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "retained",
       "load_bearing_score": 11.286,
-      "load_bearing_step": "Substituting r(t)=\u03a3 a_n t^(2n+1) into t r'(t)+r(t)+t r(t)^2=t gives a_n=-(1/(2(n+1)))\u03a3_{j+k=n-1}a_j a_k, whose summands have a common sign under induction.",
+      "load_bearing_step": "The recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k has summands of common sign under the induction hypothesis, so every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "a5691be770bdfe66ef71fcce2e4716935e2f546e43d76214a331ad0310eedad9",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:medium->critical: first-pass audit (auditor=codex-cli-gpt-5.5-20260517-182604-41cdea85-gauge_vacuum_plaquette_u-004, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that accepting the textbook Bessel identities as standard mathematics is within lane policy.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
@@ -97844,7 +97855,7 @@
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py",
       "title": "Gauge-Vacuum Plaquette U(1) Density and Sign-Alternation Sharpening Note (Narrow)",
       "transitive_descendants": 882,
-      "verdict_rationale": "The presented theorem is a narrow algebraic/special-function statement about log I_0, not a calibrated numerical match or a physical observable bridge. The runner source actually computes exact Taylor coefficients and the recurrence in rational arithmetic rather than only printing constants; its one numerical high-order support line is non-load-bearing. Although the note cites the parent no-go for motivation, the audited conclusion closes from the stated U(1) one-plaquette definition plus standard Bessel calculus."
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support."
     },
     "gauge_wilson_isotropy_boundary_note_2026-05-04": {
       "audit_date": "2026-05-07T01:37:41.829014+00:00",

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1264 |
+| unaudited | 1268 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 142 |
+| ~~audited_conditional~~ | 138 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -50,21 +50,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 581 |
-| `audited_conditional` | 142 |
+| `audited_conditional` | 138 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1477 |
+| `unaudited` | 1481 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 976 |
+| `bounded_theorem` | 977 |
 | `decoration` | 26 |
 | `meta` | 217 |
 | `no_go` | 234 |
 | `open_gate` | 111 |
-| `positive_theorem` | 750 |
+| `positive_theorem` | 749 |
 
 | criticality | count |
 |---|---:|
@@ -714,7 +714,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
-| `central_band_born_dense_sweep_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_dense_joint_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `charged_lepton_koide_review_packet_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -730,7 +729,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `cross_family_universality_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -803,7 +801,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `mirror_grown_combined_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_vs_central_head_to_head_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -842,7 +839,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
@@ -1792,19 +1788,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `seed_strength_and_geometry_independence_sweeps_not_reproducible`
 - **auditor confidence:** high
 
-### `central_band_born_dense_sweep_note`
-
-- **Note:** [`CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md`](../../docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Finite central-band hard-geometry chokepoint sweep at npl = 60, N = 25/40/60, y_cut = 2.0, p_collapse = 0.2, using valid generated graphs and corrected I3/P with the -P(empty) term.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-151426-a5e2dcef-central_band_born_dense_-007`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The cleanest retained dense setting is npl = 60, where the Born metric stays at machine precision across N = 25, 40, 60 for both LN + |y| and LN + |y| + collapse.  _(class `C`)_
-- **chain closes:** False — The runner/helper chain genuinely computes the corrected Sorkin metric and supports the reduced machine-precision dense-pocket claim. The note as written does not close cleanly because its quoted mean/max table is stale relative to the included stdout and its broader hard-geometry-enabling interpretation is not tested by a comparator in the restricted packet.
-- **rationale:** The primary runner is not a print-only or hard-coded expected-value check: it builds the graph, propagates amplitudes, applies shared collapse phases, and evaluates I3 including -P(empty). For the six retained npl = 60 LN+|y| and LN+|y|+collapse rows, current stdout still gives max |I3|/P below 1e-15 and PASS. However, multiple exact mean/max values in the source note do not match the cached runner output, and the note does not expose ok-count attrition or independently establish the broader hard-geometry-enabling interpretation.
-- **auditor confidence:** high
-
 ### `central_band_born_largen_note`
 
 - **Note:** [`CENTRAL_BAND_BORN_LARGEN_NOTE.md`](../../docs/CENTRAL_BAND_BORN_LARGEN_NOTE.md)
@@ -2696,19 +2679,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `runner_path_registered_without_scripts_prefix`
   - `three_of_six_live_rows_degenerate`
   - `finite_size_scaling_and_multiseed_robustness_open`
-- **auditor confidence:** high
-
-### `cross_family_universality_note`
-
-- **Note:** [`CROSS_FAMILY_UNIVERSALITY_NOTE.md`](../../docs/CROSS_FAMILY_UNIVERSALITY_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-runner H=0.5 cross-family consistency claims for seed-mean dispersion and lensing across three grown-DAG parameter sets.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-019e1351-1ea0-7372-b805-15a57587e55e`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** At H=0.5, the seed-mean dispersion (m_eff approx 5.9) and lensing slope (approx -1.3) show no detectable family effect across Fam1/Fam2/Fam3.  _(class `C`)_
-- **chain closes:** False — The supplied dispersion runner closes only the seed-mean dispersion near-tie and m_eff values at H=0.5. The lensing slopes/prefactors and the statistical phrase 'no detectable family effect' do not close because the restricted packet contains no lensing runner stdout and no variance/power test with hard thresholds.
-- **rationale:** Issue: the note's bounded claim includes lensing consistency and 'no detectable family effect', but the supplied completed runner/stdout covers only dispersion and reports no statistical power test. Why this blocks: close five-seed seed-mean dispersion fits support finite-runner consistency, not a closed exclusion of family effects or the lensing part of the claim. Repair target: provide and audit the lensing runner output/source with per-seed variance, power, and hard PASS thresholds, or split out a dispersion-only bounded claim. Claim boundary until fixed: H=0.5 seed-mean dispersion near-tie across the three grown-DAG parameter sets.
 - **auditor confidence:** high
 
 ### `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29`
@@ -7461,19 +7431,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The current source boundary is narrow enough: the load-bearing result is the registered fixed-anchor runner cache, and the live runner matches its weak-fit numbers. The note explicitly demotes the distance-tail fit and cross-lane ranking to historical/out-of-scope context, avoiding the earlier unregistered-evidence problem. Residual risk is misuse of the phrase retained mirror pocket; the audited scope is the fixed-anchor cache result itself, not a certification of the NPL_HALF=50 surface by the parent mirror-chokepoint note.
 - **auditor confidence:** high
 
-### `mirror_grown_combined_note`
-
-- **Note:** [`MIRROR_GROWN_COMBINED_NOTE.md`](../../docs/MIRROR_GROWN_COMBINED_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded grown-mirror scout negative-control row for d_growth in {2,3}, n_layers in {18,25,30,40}, npl=30, 16 seeds, and the registered mirror_grown_combined cache. The audited issue is whether the finite table and weak-performance conclusion close as a reproducible standalone result; no cross-lane mirror or Z2xZ2 comparison is audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The grown mirror scout produces a finite reproducible table on the registered runner cache, with small 1-pur_min and weak gravity, and is a useful negative control on this scaffold.  _(class `C`)_
-- **chain closes:** False — The registered cache contains the source table and both cache and live rerun support the qualitative weak negative-control read, but a live rerun of the same current script hash produced different row values for multiple rows under the same nominal seed set. That prevents the exact source table from closing as a reproducible finite computation without a deterministic runner or a cache-only claim boundary.
-- **rationale:** Issue: the source claims a finite reproducible table, but the current runner with the same SHA as the registered cache does not reproduce the cache/source row values exactly. Why this blocks: the negative-control conclusion may be qualitatively robust, but an exact table cannot be retained as reproducible when process-level nondeterminism changes the reported numbers. Repair target: make the runner deterministic (for example by removing set/dict-order dependence or pinning a reproducible ordering) and refresh the cache, or explicitly narrow the claim to a frozen cache-only historical readout with no live reproducibility claim. Claim boundary until fixed: it is safe to say the registered cache and live rerun both show weak grown-mirror scout performance, not that the exact table is live-reproducible.
-- **auditor confidence:** high
-
 ### `mirror_mutual_information_canonical_families_note`
 
 - **Note:** [`MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md`](../../docs/MIRROR_MUTUAL_INFORMATION_CANONICAL_FAMILIES_NOTE.md)
@@ -11958,19 +11915,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`
 - **auditor confidence:** medium
-
-### `wilson_two_body_open_note_2026-04-11`
-
-- **Note:** [`WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md`](../../docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded Wilson open-boundary two-body mutual-attraction and post-selected distance/partner-source characterization on the registered G=5, mu^2=0.22 caches, excluding screening-mass and both-masses closure claims.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The registered open-boundary runner cache gives 8/8 ATTRACT and 8/8 CLEAN rows on side=11,13, G=5, mu^2=0.22, d=3..6, and the laws cache characterizes the post-selected clean-attract surface with |a_mut|~d^-3.406 and |a_mut|~mB^0.483.  _(class `C`)_
-- **chain closes:** False — The open-boundary 8/8 attractive-clean surface and the post-selected distance/partner-source fits close against the two registered caches. The source note also states screening-mass sweep and both-masses audit claims whose runner artifacts are absent or explicitly no longer present, so the full note scope is not closed.
-- **rationale:** Issue: two registered caches support the narrow open-boundary attraction and post-selected law-characterization surface, but the note still contains unsupported screening-mass and both-masses sections. Why this blocks: a reviewer can accept the 8/8 attractive-clean rows and mu^2=0.22 post-selected fits while rejecting claims about screening softening or action-reaction failure without the named runner outputs. Repair target: either remove/split the unsupported sections from this claim surface or register the screening-mass and both-masses runner artifacts with caches. Claim boundary until fixed: open-boundary attraction plus post-selected distance and partner-source characterization only.
-- **auditor confidence:** high
 
 ### `wilson_two_body_open_refined_note_2026-04-11`
 

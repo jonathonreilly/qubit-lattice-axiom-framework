@@ -42377,14 +42377,14 @@
     },
     "central_band_born_dense_sweep_note": {
       "claim_id": "central_band_born_dense_sweep_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/stochastic_collapse_born_calibration.py"
       ],
-      "note_hash": "09a07ea78b8f61d49e1cc7cb60ec45476cb6217f5e0400796e2872ef68571bc6",
+      "note_hash": "365e5ce95b2486fb73f2547f65cb096462a4fc8d99e255b9d9a7174349687bfe",
       "path": "docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md",
       "runner_path": "scripts/central_band_born_dense_sweep.py",
       "title": "Central-Band Dense Corrected Born Sweep Note"
@@ -44979,12 +44979,12 @@
     },
     "cross_family_universality_note": {
       "claim_id": "cross_family_universality_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "141cca89f25840dae3b3932b9bf077d3a1eb3cfa5cea8d0de737318c3a025c72",
+      "note_hash": "124fe7eec4ecffab102e5cc66afa501a6d65c5a61f13b7d3c89881e2d4399552",
       "path": "docs/CROSS_FAMILY_UNIVERSALITY_NOTE.md",
       "runner_path": "scripts/dispersion_all_families.py",
       "title": "Cross-Family Consistency: Dispersion + Lensing at H=0.5 (Conditional)"
@@ -60469,7 +60469,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c16030e36312694637851b2af7c6bf2906fbb71aa8e89ef76fae82836c55da31",
+      "note_hash": "5a65f71c04391c1c31f2e069669010591a0c8e778d58e2059b480e198bbe0533",
       "path": "docs/MIRROR_GROWN_COMBINED_NOTE.md",
       "runner_path": "scripts/mirror_grown_combined.py",
       "title": "Mirror + Grown Combined Note"
@@ -76495,7 +76495,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f2ba55c593f55401b91e2f8c023d7f4adba9d8e249a162e129c0eb3710785600",
+      "note_hash": "b17e296eb8e29f43fec5a08a013f5092aae1b135dc5aad1152e9730569f188c0",
       "path": "docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md",
       "runner_path": "scripts/frontier_wilson_two_body_open.py",
       "title": "Wilson Two-Body Open-Lattice Note"
@@ -79577,20 +79577,20 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 452,
+      "bounded_theorem": 454,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1531,
+      "none": 1529,
       "open_gate": 44,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 897,
+      "bounded_theorem": 898,
       "decoration": 1,
       "meta": 173,
       "no_go": 161,
-      "none": 450,
+      "none": 449,
       "open_gate": 123,
       "positive_theorem": 621
     },

@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | critical | 1032 | 15.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py` |
-| 2 | `minimal_source_driven_field_probe_note` | bounded_theorem | unaudited | critical | 920 | 12.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/minimal_source_driven_field_probe.py` |
+| 2 | `minimal_source_driven_field_probe_note` | bounded_theorem | audit_in_progress | critical | 920 | 12.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/minimal_source_driven_field_probe.py` |
 | 3 | `evolving_network_prototype_v6_note` | bounded_theorem | audit_in_progress | critical | 898 | 10.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/evolving_network_prototype_v6.py` |
 | 4 | `causal_field_portability_note` | bounded_theorem | unaudited | critical | 896 | 13.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/causal_field_portability_probe.py` |
 | 5 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | unaudited | critical | 893 | 12.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py` |

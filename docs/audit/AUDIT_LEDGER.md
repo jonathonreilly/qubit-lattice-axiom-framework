@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1309 |
+| unaudited | 1308 |
 | audit_in_progress | 1 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 102 |
+| ~~audited_conditional~~ | 103 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 590 |
-| `audited_conditional` | 102 |
+| `audited_conditional` | 103 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1522 |
+| `unaudited` | 1521 |
 
 | claim_type | count |
 |---|---:|
@@ -730,6 +730,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `cpt_exact_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -2522,6 +2523,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using THT^{-1}=H, PHP=-H, and CHC=-H, the chain CPT · H · (CPT)^{-1} = C P H P C = C(-H)C = -(-H) = H closes.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the conclusion follows by exact substitution from the three premise identities and involutory inverse relations. The derivation of premises (1)-(3) in any specific lattice framework is explicitly out of scope and is not needed for this conditional theorem.
 - **rationale:** The load-bearing step is a genuine class-A algebraic identity over explicitly assumed premises, not a numerical match, definition, or physical bridge. The runner source performs exact SymPy matrix equality checks on concrete instances plus counterfactual probes, rather than merely printing constants, although the universal closure comes from the note's symbolic substitution. No cited upstream authority, SME extraction, Hermitian-Hamiltonian bridge, continuum CPT input, or interacting-theory premise is imported into the scoped claim.
+- **auditor confidence:** high
+
+### `cpt_exact_note`
+
+- **Note:** [`CPT_EXACT_NOTE.md`](../../docs/CPT_EXACT_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-lattice CPT invariance of the free staggered operator on even periodic Z^3, plus the note's claimed SME-zero corollary via the cited Hermitian/SME bridge.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-130500-4533a7c3-cpt_exact_note-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** CPT H (CPT)^{-1} = C P H P C = C(-H)C = H, with the physical Hermitian statement delegated to the bridge's Theta_H = P K lift.  _(class `A`)_
+- **chain closes:** False — The finite-lattice C/P/CP identity closes for the free staggered operator. The stronger statement that all CPT-odd SME coefficients vanish does not close because the cited bridge explicitly withholds the SME bilinear-basis completeness identification.
+- **rationale:** The runner genuinely constructs the lattice operators and verifies the stated finite-lattice identities rather than merely printing constants. However, the source note still claims all CPT-odd SME coefficients vanish, while its cited bridge is retained only for the Theta_H-odd Hamiltonian-sector proxy and explicitly says the SME-coefficient identification is not retained. Retained-bounded status does not propagate through that open identification.
+- **open / conditional deps cited:**
+  - `PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md`
 - **auditor confidence:** high
 
 ### `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10`

@@ -6557,6 +6557,18 @@
       "to": "dm_leptogenesis_pmns_breaking_triplet_source_law_note_2026-04-16"
     },
     {
+      "from": "dm_leptogenesis_projection_theorem_note_2026-04-15",
+      "to": "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15"
+    },
+    {
+      "from": "dm_leptogenesis_projection_theorem_note_2026-04-15",
+      "to": "dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15"
+    },
+    {
+      "from": "dm_leptogenesis_projection_theorem_note_2026-04-15",
+      "to": "epsilon1_from_cp_chain_stretch_attempt_note_2026-05-03"
+    },
+    {
       "from": "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_transport_integral_theorem_note_2026-04-16"
     },
@@ -6657,6 +6669,14 @@
       "to": "dm_neutrino_atmospheric_scale_theorem_note_2026-04-15"
     },
     {
+      "from": "dm_leptogenesis_washout_axiom_boundary_note_2026-04-15",
+      "to": "dm_leptogenesis_projection_theorem_note_2026-04-15"
+    },
+    {
+      "from": "dm_leptogenesis_washout_axiom_boundary_note_2026-04-15",
+      "to": "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16"
+    },
+    {
       "from": "dm_m_dm_inverse_band_gauge_audit_bounded_note_2026-05-09",
       "to": "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25"
     },
@@ -6703,6 +6723,14 @@
     {
       "from": "dm_neutrino_bosonic_normalization_theorem_note_2026-04-15",
       "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15",
+      "to": "dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15"
+    },
+    {
+      "from": "dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15",
+      "to": "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15"
     },
     {
       "from": "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15",
@@ -15247,6 +15275,14 @@
     {
       "from": "koide_sqrtm_amplitude_principle_note_2026-04-18",
       "to": "dm_neutrino_postcanonical_polar_section_note_2026-04-15"
+    },
+    {
+      "from": "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological",
+      "to": "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24"
+    },
+    {
+      "from": "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological",
+      "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
     },
     {
       "from": "koide_s_substep4_aclambda_new_science_note_2026-05-08_probes_substep4_aclambda",
@@ -46621,9 +46657,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15",
+        "dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15",
+        "epsilon1_from_cp_chain_stretch_attempt_note_2026-05-03"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "5d389855a906ae367d51a1612db0a7d30f7ee67ed98f798e0ef6ed2b59aafa76",
+      "note_hash": "ee09a6aed5ee91d9cf90372934329c5bed1263415cde880076e77b9a5862e239",
       "path": "docs/DM_LEPTOGENESIS_PROJECTION_THEOREM_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_projection_theorem.py",
       "title": "DM Leptogenesis Projection Theorem"
@@ -46723,9 +46763,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_projection_theorem_note_2026-04-15",
+        "dm_leptogenesis_transport_decomposition_theorem_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "c13210e545c458923fc988e2277f3cc4cb528e8c0969b19b2e989a6be897a2e1",
+      "note_hash": "e7a881cbc04e113c3e8b79a784e3d4b18909801f0b379b94dc79241dd90a2f73",
       "path": "docs/DM_LEPTOGENESIS_WASHOUT_AXIOM_BOUNDARY_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_washout_axiom_boundary.py",
       "title": "DM Leptogenesis Washout / Thermal Axiom Boundary"
@@ -46811,9 +46854,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15",
+        "dm_neutrino_breaking_triplet_cp_theorem_note_2026-04-15"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "c4f95d12b2c8b9c70ca6fc8631611d37f1b7dc4fff0c34f2cb9aa49afe59f9eb",
+      "note_hash": "3e3f30ce556182cae91c6fe31918079b62bda7bbee658ad961697dac2c0c8518",
       "path": "docs/DM_NEUTRINO_BREAKING_TRIPLET_AXIOM_LAW_ATTEMPT_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_neutrino_breaking_triplet_axiom_law_attempt.py",
       "title": "DM Neutrino Breaking-Triplet Axiom-Law Attempt"
@@ -57251,9 +57297,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (negative on the specific topological-CS /",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "koide_a1_o13_cheeger_simons_rz_no_go_note_2026-04-24",
+        "su3_casimir_fundamental_theorem_note_2026-05-02"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "d0237e2c9c8c61c9819f2393dca59744da3c28649ee9c5c84d0aa1f93f641387",
+      "note_hash": "cfc59fd1e84f85cd05023c8b506d44683fc50128ef8f97fb21c9aa2fb7603030",
       "path": "docs/KOIDE_S_L1_TOPOLOGICAL_CHERN_SIMONS_NOTE_2026-05-08_probeS_L1_topological.md",
       "runner_path": "scripts/cl3_koide_s_L1_topological_2026_05_08_probeS_L1_topological.py",
       "title": "Probe S-L1-Topological \u2014 Chern-Simons / Knot Invariants and the QCD \u03b2_2/\u03b2_3 Channel-Weight Obstruction"
@@ -78693,10 +78742,7 @@
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
-    "dm_leptogenesis_projection_theorem_note_2026-04-15",
-    "dm_leptogenesis_washout_axiom_boundary_note_2026-04-15",
     "dm_lepton_synthesis_note_2026-04-19",
-    "dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15",
     "dm_neutrino_cascade_geometry_note_2026-04-14",
     "dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17",
     "dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17",
@@ -78903,7 +78949,6 @@
     "koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10",
     "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16",
     "koide_reviewer_stress_test_note_2026-04-21",
-    "koide_s_l1_topological_chern_simons_note_2026-05-08_probes_l1_topological",
     "koide_selected_line_local_radian_bridge_no_go_note_2026-04-20",
     "koide_theta_hierarchy_open_scalar_note_2026-04-19",
     "koide_transport_gap_constant_no_go_note_2026-04-20",
@@ -79313,10 +79358,10 @@
       "open_gate": 123,
       "positive_theorem": 622
     },
-    "edge_count": 9418,
-    "leaf_count": 748,
+    "edge_count": 9427,
+    "leaf_count": 747,
     "node_count": 2424,
-    "root_count": 852,
+    "root_count": 848,
     "runners_with_path": 2017
   }
 }

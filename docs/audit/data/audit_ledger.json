@@ -67869,33 +67869,33 @@
       "verdict_rationale": "Issue: the note asserts the source-span constraints and representative completeness without a cited or inlined bridge, while the runner imports T_M, T_DELTA, and T_Q from an unlisted module and checks rank only after accepting the asserted constraints. Why this blocks: full rank for the checked matrices does not by itself rule out every asymptotic direction in the actual affine source family. Repair target: add or inline a retained derivation tying T_m, T_delta, T_q to the three constraints and proving exhaustive PMNS branch coverage, with runner checks against that bridge. Claim boundary until fixed: the packet supports an algebraic no-go for the stated constraints and enumerated representatives only."
     },
     "dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16": {
-      "audit_date": "2026-05-16T21:44:11.288745+00:00",
+      "audit_date": "2026-05-18T12:19:07.173766+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_claim_scope": {},
         "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 0.0,
+        "load_bearing_score": 13.286,
         "runner_hash": "8ec7c8af71251b5deaa77ee76925bd6dabdc6ab59d1f56366227e014afb72b84",
-        "transitive_descendants": 0
+        "transitive_descendants": 882
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-cli-gpt-5.5-20260516-214349-20260516T214349Z-3cb209cb-dm_pmns_chamber_spectral-targeted",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_pmns_chamber_spectral-019",
       "auditor_confidence": "medium",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "Within the note's bounded scope, the supplied runner source does compute interval Krawczyk inclusions, pairwise box disjointness, and chamber-margin interval signs from the explicit residual formulas and hard-coded box centers. The chain does not close for any stronger 'exactly four roots' or all-permutation chamber-completeness claim, but the note explicitly excludes those claims.",
+      "chain_closure_explanation": "The runner source performs actual interval arithmetic over the implemented residual functions and interval Jacobians, checks strict Krawczyk containment for all eight boxes, pairwise disjointness within each branch, and strict chamber-margin signs. The source note explicitly excludes the parent completeness and all-permutation upper-bound claims from this certificate.",
       "claim_id": "dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16",
-      "claim_scope": "Audited the bounded existence/local-uniqueness certificate for the eight listed reduced-system roots and the chamber-side sign classification on those same eight Krawczyk boxes; no global completeness or exclusion of additional roots was audited.",
+      "claim_scope": "The explicit runner-defined reduced residual systems have a unique zero in each listed radius-1e-6 box, with the reported chamber-side signs; no global upper bound on additional roots or other-permutation chamber roots is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "support note (Krawczyk-interval certificate)",
-      "claim_type_last_reviewed": "2026-05-18T11:31:42.594498+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-18T12:19:07.173766+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -67910,25 +67910,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-18T12:19:07.173766+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_pmns_chamber_spectral-019",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The explicit runner-defined reduced residual systems have a unique zero in each listed radius-1e-6 box, with the reported chamber-side signs; no global upper bound on additional roots or other-permutation chamber roots is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 7,
       "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
       "load_bearing_score": 13.286,
-      "load_bearing_step": "For each listed candidate box, the runner verifies axis-by-axis that the Krawczyk operator satisfies K(X) \u2282 int(X), and separately interval-evaluates q + \u03b4 - sqrt(8/3) with strict sign on each box.",
+      "load_bearing_step": "For each of the eight radius-1e-6 boxes, the runner verifies the Krawczyk inclusion K(X) subset int(X), then interval-evaluates q + delta - sqrt(8/3) with strict sign on the listed chamber and off-chamber boxes.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f45bf43cf563e4f07233fa84b0e12282b83f5aba888e8751190232213e059ec4",
       "note_path": "docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-cli-gpt-5.5-20260516-214349-20260516T214349Z-3cb209cb-dm_pmns_chamber_spectral-targeted, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the hard-coded reduced residual formulas are the intended F_branch; global completeness is intentionally out of scope.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
@@ -67941,7 +67952,7 @@
       "runner_path": "scripts/frontier_dm_pmns_chamber_spectral_completeness_krawczyk_certificate_2026_05_16.py",
       "title": "DM PMNS Chamber Spectral Completeness \u2014 Krawczyk-Interval Certificate",
       "transitive_descendants": 882,
-      "verdict_rationale": "The terminal claim is carefully scoped to existence and local uniqueness inside explicit boxes plus strict chamber-margin signs on those boxes. The runner is not a print-only artifact: it implements interval arithmetic, forward-mode interval Jacobians, Krawczyk inclusion checks, disjointness checks, and direct interval chamber-margin checks, producing PASS=18 FAIL=0. The certificate is not first-principles physics closure and relies on hard-coded candidate centers and accepted residual formulas, but for the bounded theorem stated here it is a genuine algebraic/interval verification rather than a renaming or numerical comparator match."
+      "verdict_rationale": "The bounded claim is a local interval certificate, not the parent theorem's global spectral completeness claim. The runner is not merely printing expected constants: it constructs the reduced residual functions, evaluates interval Jacobians by forward-mode differentiation, applies the Krawczyk operator, and obtains strict margins with PASS=18 FAIL=0. The hard-coded centers define the boxes being certified, while the interval inclusion supplies existence and local uniqueness inside those boxes. This clean verdict is limited to that bounded local certificate and the listed chamber signs."
     },
     "dm_pmns_chamber_spectral_completeness_theorem_note_2026-04-20": {
       "audit_date": null,

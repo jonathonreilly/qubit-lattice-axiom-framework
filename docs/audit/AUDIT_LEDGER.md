@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 8 |
-| `audited_clean` | 580 |
+| `audit_in_progress` | 7 |
+| `audited_clean` | 581 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `causal_field_portability_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
-| `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -244,6 +243,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `edge_deletion_boundary_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3249,6 +3249,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The rank calculation closes for the stated three constraints and the runner's enumerated real-CP row permutations. The restricted packet does not define or prove that the actual T_m, T_delta, T_q source span is exactly those constraints, nor does it prove the checked representatives exhaust all real-orthogonal PMNS realizations relevant to the fixed family.
 - **rationale:** Issue: the note asserts the source-span constraints and representative completeness without a cited or inlined bridge, while the runner imports T_M, T_DELTA, and T_Q from an unlisted module and checks rank only after accepting the asserted constraints. Why this blocks: full rank for the checked matrices does not by itself rule out every asymptotic direction in the actual affine source family. Repair target: add or inline a retained derivation tying T_m, T_delta, T_q to the three constraints and proving exhaustive PMNS branch coverage, with runner checks against that bridge. Claim boundary until fixed: the packet supports an algebraic no-go for the stated constraints and enumerated representatives only.
 - **auditor confidence:** high
+
+### `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16`
+
+- **Note:** [`DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md`](../../docs/DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The explicit runner-defined reduced residual systems have a unique zero in each listed radius-1e-6 box, with the reported chamber-side signs; no global upper bound on additional roots or other-permutation chamber roots is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_pmns_chamber_spectral-019`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For each of the eight radius-1e-6 boxes, the runner verifies the Krawczyk inclusion K(X) subset int(X), then interval-evaluates q + delta - sqrt(8/3) with strict sign on the listed chamber and off-chamber boxes.  _(class `A`)_
+- **chain closes:** True — The runner source performs actual interval arithmetic over the implemented residual functions and interval Jacobians, checks strict Krawczyk containment for all eight boxes, pairwise disjointness within each branch, and strict chamber-margin signs. The source note explicitly excludes the parent completeness and all-permutation upper-bound claims from this certificate.
+- **rationale:** The bounded claim is a local interval certificate, not the parent theorem's global spectral completeness claim. The runner is not merely printing expected constants: it constructs the reduced residual functions, evaluates interval Jacobians by forward-mode differentiation, applies the Krawczyk operator, and obtains strict margins with PASS=18 FAIL=0. The hard-coded centers define the boxes being certified, while the interval inclusion supplies existence and local uniqueness inside those boxes. This clean verdict is limited to that bounded local certificate and the listed chamber signs.
+- **auditor confidence:** medium
 
 ### `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19`
 

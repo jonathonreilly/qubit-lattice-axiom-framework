@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 353 |
+| **retained_bounded** | 354 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1248 |
+| unaudited | 1247 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 581 |
+| `audited_clean` | 582 |
 | `audited_conditional` | 159 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1461 |
+| `unaudited` | 1460 |
 
 | claim_type | count |
 |---|---:|
@@ -441,6 +441,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_mutual_information_canonical_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `mirror_mutual_information_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -7660,6 +7661,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** S4 mirror is the strongest scalable MI lane in this extension, while the exact chokepoint MI chain remains the synthesis-grade retained result.  _(class `C`)_
 - **chain closes:** True — The registered runner exits 0 and reproduces the note's S4 mirror, S4 random, strict-mirror, and original-mirror MI tables, including the corrected N=80 S4 mirror value and the caveat that this extension is broader rather than more canonical.
 - **rationale:** The bounded MI extension closes against scripts/mirror_mutual_information_canonical_families.py. Current output matches the note's S4 mirror values N=25 0.7213±0.073, N=40 0.5956±0.067, N=60 0.5248±0.067, N=80 0.2559±0.047; matched S4 random is lower at each retained row; strict mirror reproduces N=15 0.9196±0.033 and N=25 0.6578±0.091 before failing at larger N. The note keeps the exact chokepoint chain as the synthesis-grade result and treats this as a bounded extension.
+- **auditor confidence:** high
+
+### `mirror_mutual_information_chokepoint_note`
+
+- **Note:** [`MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md`](../../docs/MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite mirror-vs-random mutual-information diagnostic on the named dense chokepoint card at N=40, 60, 80, 100, with no asymptotic or whole-window advantage claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-015819-921435c6-mirror_mutual_informatio-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the single parameter card npl_half=60, connect_radius=5.0, k=5.0, layer2_prob=0.0, 16 seeds, mirror MI exceeds matched random MI at N=40, 60, 80 and falls below matched random MI at N=100; the power-law fits are descriptive only.  _(class `C`)_
+- **chain closes:** True — The provided runner source generates the mirror and matched random chokepoint DAGs, propagates amplitudes, computes MI and purity over the declared seeds, and the cached output matches the retained rows. The cited dense-card authority is retained_bounded, and the source claim is explicitly finite rather than an asymptotic family theorem.
+- **rationale:** The load-bearing MI table is produced by an actual first-principles runner path using the supplied graph generators and propagator, not by hard-coded expected values or a cross-note copied table. Both cited one-hop authorities in the restricted packet are retained_bounded. Because the note narrows the conclusion to the finite N=40/60/80 advantage and explicit N=100 reversal, the bounded claim follows without importing an unclosed asymptotic law.
 - **auditor confidence:** high
 
 ### `mirror_vs_central_head_to_head_note`

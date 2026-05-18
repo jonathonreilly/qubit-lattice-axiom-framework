@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 443,
-    "high": 164,
+    "high": 163,
     "leaf": 323,
     "medium": 322
   },
@@ -13481,33 +13481,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "mirror_mutual_information_chokepoint_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mirror_chokepoint_note",
-        "mirror_chokepoint_boundary_fit_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/mirror_chokepoint_joint.py"
-      ],
-      "load_bearing_score": 6.807,
-      "note_path": "docs/MIRROR_MUTUAL_INFORMATION_CHOKEPOINT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mirror_mutual_information_chokepoint.py",
-      "transitive_descendants": 13
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -27451,6 +27424,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "mirror_mutual_information_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "mirror_mutual_information_canonical_families_note",
+        "mirror_mutual_information_chokepoint_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/mirror_chokepoint_joint.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/MIRROR_MUTUAL_INFORMATION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/mirror_mutual_information_chokepoint.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "s3_time_primitive_chain_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -33835,33 +33835,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mirror_mutual_information_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mirror_mutual_information_canonical_families_note",
-        "mirror_mutual_information_chokepoint_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/mirror_chokepoint_joint.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/MIRROR_MUTUAL_INFORMATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/mirror_mutual_information_chokepoint.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "mirror_vs_lattice_program_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -36692,5 +36665,5 @@
     }
   ],
   "ready_count": 5,
-  "total_pending": 1252
+  "total_pending": 1251
 }

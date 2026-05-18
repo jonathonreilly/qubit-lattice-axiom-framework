@@ -64,3 +64,8 @@ channel, and it does **not** provide a positive selector for those values.
 The remaining open problem is therefore a value-selection law, not a frame
 selection law.
 
+## Upstream authorities
+
+- [GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md](GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md) — the graph-first axis-selector derivation supplying the "exactly three axis minima with residual Z_2 stabilizer" structure.
+- [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) — the graph-first SU(3) integration supplying the axis-side fiber/base split and the diagonal-projector forward-transport that frame-fixes the oriented cycle basis.
+

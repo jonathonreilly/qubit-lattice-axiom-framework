@@ -158,3 +158,12 @@ The current direct universal route is:
 - blocked at the canonical curvature-localization level.
 
 The exact residual bundle gauge on the current atlas is `SO(3)`.
+
+## Upstream authority
+
+- [UNIVERSAL_GR_A1_INVARIANT_SECTION_NOTE.md](UNIVERSAL_GR_A1_INVARIANT_SECTION_NOTE.md) — exact `Pi_A1` invariant section supplying the rank-2 invariant projector onto lapse and spatial-trace; load-bearing for the "exact `Pi_A1` invariance" item in the verdict box above.
+
+Remaining missing-dep-edge admissions (no consolidated wrapper note):
+- "Unique symmetric `3+1` quotient-kernel uniqueness" — content present inside this note's §"Unique symmetric quotient kernel"; no separate wrapper.
+- "`Xi_TB` compatibility on the Route 2 spacetime carrier" — Route-2-side carrier identification; not wrapped as a separate note.
+- "SO(3) residual frame-orbit claim" — bundle-gauge statement; not wrapped as a separate note.

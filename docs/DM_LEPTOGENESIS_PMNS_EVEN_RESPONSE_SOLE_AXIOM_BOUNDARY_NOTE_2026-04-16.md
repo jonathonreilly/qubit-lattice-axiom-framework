@@ -107,6 +107,17 @@ The remaining honest PMNS comparator object is now:
 So the next native theorem on the PMNS side is an even-response value law or
 an even-response no-go, not another odd-slot selector theorem.
 
+## Upstream authorities (constructive witness constants + triplet/carrier channel maps)
+
+The runner imports 5 module sources for the witness constants and carrier
+channel maps used here; each has a framework wrapper note:
+
+- [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — `seed_averages` for the native `N_e` seed surface.
+- [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — the breaking-triplet `(gamma, E1, E2)` channel formulas.
+- [DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_PROJECTED_SOURCE_SELECTOR_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_PROJECTED_SOURCE_SELECTOR_THEOREM_NOTE_2026-04-16.md) — the constructive projected-source selector witness.
+- [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — `canonical_h` carrier-side projector interface.
+- [DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md](DM_NEUTRINO_SOURCE_SURFACE_CARRIER_NORMAL_FORM_THEOREM_NOTE_2026-04-16.md) — carrier-side `(delta + rho, sigma sin(2v))` normal form used to state the remaining even-response object.
+
 ## Command
 
 ```bash

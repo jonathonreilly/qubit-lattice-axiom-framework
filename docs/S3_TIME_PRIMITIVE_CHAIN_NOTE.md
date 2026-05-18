@@ -122,3 +122,8 @@ The next theorem should be:
 > current readout class cannot select it uniquely.
 
 That is the correct next route-2 primitive target after this block.
+
+## Upstream authorities (Route-2 theorem notes)
+
+- [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) — exact bilinear carrier `K_R` and restricted bright readout class `P_R`.
+- [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) — exact slice backbone `Lambda_R` and one-step transfer `T_R = exp(-Lambda_R)`.

@@ -38,21 +38,31 @@ M_D = a^{-2} P_lapse + (ab)^{-1} P_shift + b^{-2} P_trace + b^{-2} P_shear
 ```
 
 on the invariant background `D = diag(a, b, b, b)` is admitted. Taken
-from the support-tier discrete-Einstein/Regge lift chain.
+from the universal supermetric normal-form chain; see
+[UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md](UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md).
 
 (BA-2) **Route-2 slice generator.** The exact slice generator
 `Lambda_R` (symmetric and positive on the invariant block) is admitted.
-Taken from the Route-2 slice-generator construction.
+The shell DtN / symmetric-positive `Lambda_R` authority used by the runner is
+[OH_SCHUR_BOUNDARY_ACTION_NOTE.md](OH_SCHUR_BOUNDARY_ACTION_NOTE.md). A
+dedicated Route-2 slice-generator construction wrapper is not yet present in
+the repo; the consumer-side notes that use `Lambda_R` —
+`UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md` and
+`UNIVERSAL_GR_INVARIANT_NONLINEAR_COMPLETION_NOTE.md` — both DEPEND on this
+glue note, so they cannot serve as one-hop upstream without creating a
+citation cycle.
 
 (BA-3) **Canonical `3+1` block projectors.** The lapse / shift / trace /
 shear block projectors `(P_lapse, P_shift, P_trace, P_shear)` are
 admitted as canonical and exact. Taken from the canonical `3+1`
-block-localization chain.
+block-localization chain; see
+[UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md](UNIVERSAL_GR_CANONICAL_PROJECTOR_CONNECTION_NOTE.md).
 
 (BA-4) **Invariant-background Schur irreducibility.** The
 Schur-irreducibility statement on the shift and shear sectors over the
 invariant background is admitted. Taken from the invariant-background
-Schur localization.
+Schur localization; see
+[UNIVERSAL_GR_ISOTROPIC_SCHUR_LOCALIZATION_NOTE.md](UNIVERSAL_GR_ISOTROPIC_SCHUR_LOCALIZATION_NOTE.md).
 
 ## Audit boundary
 

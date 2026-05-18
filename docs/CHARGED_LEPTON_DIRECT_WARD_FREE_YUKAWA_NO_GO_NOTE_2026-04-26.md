@@ -178,10 +178,10 @@ The top Ward identity derives y_tau.
 
 ## 7. Relationship to Existing Notes
 
-- `SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md` supplies
+- [SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md](SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md) supplies
   the exact one-Higgs operator selection and states that generation matrices
   remain free.
-- `YT_WARD_IDENTITY_DERIVATION_THEOREM.md` supplies the retained top-sector
+- [YT_WARD_IDENTITY_DERIVATION_THEOREM.md](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) supplies the retained top-sector
   Ward identity on the `Q_L` scalar-singlet surface.
 - `YUKAWA_COLOR_PROJECTION_THEOREM.md` concerns top-sector color projection
   corrections and does not supply a charged-lepton `Y_e` selector.

@@ -86,3 +86,12 @@ The honest recommendation is:
 
 If that family still cannot beat the broad mesoscopic control, the localization
 lane should be frozen as a bounded negative result.
+
+## Upstream authorities
+
+- [MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md](MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md) — retained 3D `h=0.5` localization frontier whose negative result motivates this scout.
+- [MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md](MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md) — companion sweep evidence.
+- [MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md](MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md) — retained 2D support-threshold scan.
+- [SAME_FAMILY_3D_CLOSURE_NOTE.md](SAME_FAMILY_3D_CLOSURE_NOTE.md) — retained 3D family closure backing the scout's family-level reasoning.
+- [VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md](VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md) — asymptotic-regime bridge consulted as part of the alternate-family scan.
+- [PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md](PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md) — readiness gate for the persistent inertial-response family this note evaluates as a candidate target.

@@ -90,3 +90,8 @@ It should be:
 > stack cannot force it uniquely.
 
 That is now the correct constructive target.
+
+## Upstream authorities (Route-2 theorem notes)
+
+- [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) — exact readout map / bilinear carrier `K_R`.
+- [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) — exact time-coupling slice backbone `Lambda_R`.

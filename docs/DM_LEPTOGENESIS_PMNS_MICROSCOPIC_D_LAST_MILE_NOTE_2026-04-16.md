@@ -126,6 +126,13 @@ It proves only that:
 3. and the remaining `D`-level object is only the active `5`-real
    corner-breaking source beyond the seed pair.
 
+## Upstream authorities
+
+The runner imports two PMNS-side modules; each has a framework wrapper note:
+
+- [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — the active-projector reduction supplying the seed-averages structure.
+- [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — the carrier-side projector interface supplying `canonical_h` and `canonical_y`.
+
 ## Command
 
 ```bash

@@ -630,3 +630,27 @@ structural admission.
 The bounded verdict on Route C strengthens the existing Routes A and B
 admissions by showing the framework-internal direction also fails to
 close P1 without an independent additivity-forcing retained theorem.
+
+## Upstream candidates examined (full retained-catalog enumeration)
+
+This note explicitly examined the following retained-framework candidates as
+potential excluders of the `F_p[J] = r(J)^p` non-additive counterexample
+family; each was found silent on scalar-functional additivity (see §2.1
+through §2.11 above). Markdown links for the audit-lane citation graph:
+
+- [OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) (§2.1)
+- [AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) (§2.2)
+- [ANOMALY_FORCES_TIME_THEOREM.md](ANOMALY_FORCES_TIME_THEOREM.md) (§2.3)
+- [CL3_COLOR_AUTOMORPHISM_THEOREM.md](CL3_COLOR_AUTOMORPHISM_THEOREM.md) (§2.4)
+- [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) (§2.5)
+- [NATIVE_GAUGE_CLOSURE_NOTE.md](NATIVE_GAUGE_CLOSURE_NOTE.md) (§2.6)
+- [THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) (§2.7)
+- [STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) (§2.8)
+- [OBSERVABLE_GENERATOR_ADDITIVITY_FROM_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-05-10.md](OBSERVABLE_GENERATOR_ADDITIVITY_FROM_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-05-10.md) (§2.9)
+- [OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md](OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md) (§2.10)
+- [BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md](BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md) (§2.11)
+
+The catalog-exhaustiveness assertion in §2.12 is what the audit verdict
+re-audit trigger asks to verify — these are the full retained-catalog
+candidates whose silence on scalar-functional additivity is the
+structural finding.

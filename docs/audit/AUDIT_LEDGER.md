@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 354 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 16 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 582 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -733,6 +733,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `dispersion_relation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2866,6 +2867,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `DM_ABCC_SIGNATURE_FORCING_THEOREM_NOTE_2026-04-19.md`
   - `SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md`
   - `DM_ABCC_FIVE_BASIN_CHAMBER_DPLE_SUPPORT_THEOREM_NOTE_2026-04-21.md`
+- **auditor confidence:** high
+
+### `dm_abcc_basin_finite_search_support_note_2026-04-30`
+
+- **Note:** [`DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md`](../../docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the narrowed provenance claim that a provided finite-scan runner/output records the listed finite-search observations, not exhaustiveness or absence of missed narrow basins.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_abcc_basin_finite_sea-023`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The archived wrapper still records useful finite-search data: 30 PASS stamps, five named chart representatives, Basin 2 as a correction, and the C_base/C_neg separation on the printed finite representatives.  _(class `B`)_
+- **chain closes:** False — The narrowed non-exhaustion scope is internally consistent, but the provenance chain depends on an archived wrapper explicitly referenced as outside the retained docs packet. The provided runner also hard-codes the retained basin chart and expected signature labels, so it does not independently derive all listed observations from axioms.
+- **rationale:** The source note has already narrowed away the failed exhaustion theorem, so the runner's T8 exhaustiveness PASS is not accepted as part of the audited claim. The remaining support claim is conditional provenance for finite observations, but its stated provenance is an archived wrapper not provided as a cited retained authority, and the runner source embeds the retained basin coordinates and expected classifications. Thus the packet supports that these observations are printed and partially checked, but it does not close as an audited theorem or first-principles computation.
+- **open / conditional deps cited:**
+  - `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/DM_ABCC_BASIN_ENUMERATION_COMPLETENESS_THEOREM_NOTE_2026-04-20.md`
 - **auditor confidence:** high
 
 ### `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19`

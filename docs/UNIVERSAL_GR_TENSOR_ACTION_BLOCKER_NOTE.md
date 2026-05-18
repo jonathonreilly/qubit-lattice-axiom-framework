@@ -21,9 +21,16 @@ This note classifies the direct universal route as blocked. The classification
 rests on inventorying retained-grade objects on the current branch:
 
 - **What is imported here as already-exact (not re-derived in this note):**
-  the scalar observable generator, the `3+1` kinematic lift on `PL S^3 x R`,
-  the tensor-valued variational candidate, the symmetric quotient kernel,
-  and the exact rank-2 `A1` invariant projector `Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0)`.
+  the scalar observable generator
+  ([OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)),
+  the `3+1` kinematic lift on `PL S^3 x R`
+  ([PATCHED_STATIONARY_SYSTEM_PL_S3_THEOREM_NOTE_2026-05-03.md](PATCHED_STATIONARY_SYSTEM_PL_S3_THEOREM_NOTE_2026-05-03.md)),
+  the tensor-valued variational candidate
+  ([UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md](UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md)),
+  the symmetric quotient kernel
+  ([UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md](UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md)),
+  and the exact rank-2 `A1` invariant projector `Pi_A1 = diag(1,0,0,0,1,0,0,0,0,0)`
+  ([UNIVERSAL_GR_A1_INVARIANT_SECTION_NOTE.md](UNIVERSAL_GR_A1_INVARIANT_SECTION_NOTE.md)).
 
 - **What is named (not derived) as the blocker label:**
   a covariant `3+1` polarization-frame / projector bundle with a distinguished

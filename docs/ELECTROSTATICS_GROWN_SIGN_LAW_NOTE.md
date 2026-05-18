@@ -111,3 +111,7 @@ explicit re-audit trigger for a complete restricted packet. Helper runner
 paths:
 
 - `scripts/gate_b_grown_joint_package.py`
+
+## Upstream authority
+
+- [GATE_B_GROWN_JOINT_PACKAGE_NOTE.md](GATE_B_GROWN_JOINT_PACKAGE_NOTE.md) — source note for the helper runner `scripts/gate_b_grown_joint_package.py` that supplies the `grow(drift=0.2, restore=0.7, seeds=[0,1])` grown geometry construction and the Born / interference / decoherence comparison machinery on the same `(drift, restore, seeds)` row consumed by this sign-law companion.

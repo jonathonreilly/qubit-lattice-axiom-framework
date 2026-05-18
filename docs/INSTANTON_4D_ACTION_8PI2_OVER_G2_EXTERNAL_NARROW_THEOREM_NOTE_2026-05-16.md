@@ -167,3 +167,7 @@ symbolic and `mpmath`-equivalent numerical surrogates where needed):
     `α_LM^16` closure or any hierarchy substitution.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
+
+## Upstream authority
+
+- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded named-import umbrella wrapper covering Bogomolny bound, BPST `|Q|=1` solution, Atiyah-Singer integrality, and Luescher admissibility / gradient-flow lattice charge. Provides the one-hop authority for the four external textbook ingredients used by this narrow theorem.

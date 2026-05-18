@@ -148,3 +148,15 @@ Expected final line:
 ```text
 PASS=11 FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the upstream sigma_hier uniqueness authority and related chamber-pin /
+selector authorities consumed by the no-go construction. It does not
+promote this note or change the audited claim scope.
+
+- [SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md](SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md) — sigma_hier uniqueness theorem identifying `sigma_hier in {(2, 0, 1), (2, 1, 0)}` as the two surviving permutations under the chamber-pin selector.
+- [DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md) — chamber-completeness authority for the `chi^2 = 0` chamber root set and the pinned Hermitian `H_pin` construction.
+- [DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md](DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md) — supplies the `mu <-> tau` row-swap parity-reduction that produces `sin(delta_CP)(2, 0, 1) = - sin(delta_CP)(2, 1, 0)`.
+- [DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md](DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md) — upper-octant selector theorem providing the genuinely-`mu <-> tau`-odd flavor-orienting law (`sin^2 theta_23 > 1/2`) that closes the no-go's residual flavor ambiguity.

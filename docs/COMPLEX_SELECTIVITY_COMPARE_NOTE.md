@@ -144,3 +144,6 @@ split.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [alt_connectivity_family_fm_transfer_note](ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md)
+- [CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) — original grown-basin complex-action companion (`gamma=0 -> AWAY` crossover row).
+- [ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md](ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md) — alt-family complex-action clean boundary failure row.
+- [SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md](SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md) — second-family tighter `AWAY`-at-`gamma=0` boundary row.

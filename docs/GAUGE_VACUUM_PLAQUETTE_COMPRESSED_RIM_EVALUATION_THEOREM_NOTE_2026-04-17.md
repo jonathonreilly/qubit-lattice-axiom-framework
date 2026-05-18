@@ -141,3 +141,15 @@ So the remaining plaquette PF construction problem is narrower:
 ```bash
 python3 scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the two upstream theorems consumed by the compressed rim-evaluation
+construction (spatial-environment transfer theorem; exact character-
+measure theorem). It does not promote this note or change the audited
+claim scope.
+
+- [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md) — spatial-environment transfer theorem supplying the compressed coefficients `z_(p, q)^env(beta) = <chi_(p, q), (S_beta^env)^(L_perp - 1) eta_beta>` consumed in the Setup.
+- [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md) — exact character-measure theorem establishing `Z_beta^env(W)` as a central class function of the marked holonomy `W`, supplying the Peter-Weyl normalization (the `d_(p, q)` factor in `K(W) = sum_(p, q) d_(p, q) conj(chi_(p, q)(W)) chi_(p, q)`).
+- [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md) — narrow companion strengthening the character-measure realization uniqueness on the finite-box convolution surface.

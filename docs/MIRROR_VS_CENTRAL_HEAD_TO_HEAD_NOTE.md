@@ -109,3 +109,14 @@ structural ranking is now framed as a reading of the cited registered
 rows, not a free-standing comparison. Replacing the script with one that
 re-reads the frozen registered caches directly remains a possible future
 strengthening.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the two cited lane authorities — the dense central-band lane authority
+and the mirror boundary-card authority — that the head-to-head ranking
+reads from registered rows. It does not promote this note or change the
+audited claim scope.
+
+- [CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md](CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md) — dense central-band + layer norm joint coexistence lane authority supplying the `N = 80, npl = 80, LN + |y|` retained row.
+- [MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md) — mirror chokepoint boundary-card fit authority supplying the dense boundary scan at `N = 100`. (Note: the basic `MIRROR_CHOKEPOINT_NOTE.md` is already linked in the header above for the strict `N = 40` retained row; this dependency-repair link wires the dense boundary-fit card as a separate one-hop authority for the boundary-fit reading.)

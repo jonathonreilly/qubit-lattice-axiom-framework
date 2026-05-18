@@ -264,3 +264,19 @@ Expected final line:
 ```text
 PASS=14  FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the three "previously established" upstream theorems consumed by the
+proof above (theta_23 chamber-threshold theorem; exact chamber-
+completeness theorem; source-cubic parity-reduction theorem), so the
+audit citation graph can track them. It does not promote this note or
+change the audited claim scope.
+
+- [PMNS_THETA23_UPPER_OCTANT_CHAMBER_CLOSURE_NARROW_THEOREM_NOTE_2026-05-17.md](PMNS_THETA23_UPPER_OCTANT_CHAMBER_CLOSURE_NARROW_THEOREM_NOTE_2026-05-17.md) — narrow theta_23 chamber-closure theorem consumed in Step 2 above (`sin^2 theta_23 > 1/2`).
+- [PMNS_THETA23_UPPER_OCTANT_THRESHOLD_SURFACE_NARROW_THEOREM_NOTE_2026-05-17.md](PMNS_THETA23_UPPER_OCTANT_THRESHOLD_SURFACE_NARROW_THEOREM_NOTE_2026-05-17.md) — full 3-sigma rectangle threshold-surface theorem supplying `sin^2 theta_23_min in [0.5335, 0.5476]` across the NuFit rectangle.
+- [PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md](PMNS_THETA23_UPPER_OCTANT_FULL_3SIGMA_RECTANGLE_NARROW_THEOREM_NOTE_2026-05-17.md) — full 3-sigma rectangle coverage extension.
+- [DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_THEOREM_NOTE_2026-04-20.md) — exact chamber-completeness theorem consumed in Step 3 above (the chamber root set `{Basin 1, Basin 2, Basin X}`).
+- [DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md](DM_PMNS_CHAMBER_SPECTRAL_COMPLETENESS_KRAWCZYK_CERTIFICATE_NOTE_2026-05-16.md) — Krawczyk-interval certificate companion strengthening the chamber-completeness theorem.
+- [DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md](DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md) — source-cubic parity-reduction theorem consumed in Step 4 above (`I_src` signs on the three basins).

@@ -410,3 +410,30 @@ The trajectory failures are not bugs. They are boundary markers showing where
 the effective description transitions from "discrete spectral" to "continuum
 dynamical." The BMV prediction --- entanglement before force --- is the
 experimentally accessible consequence of this boundary.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links for
+the §3 / §4 numerical surfaces and the §7 / §8 Born-rule and BMV
+surfaces cited above, so the audit citation graph can track them. It
+does not promote this synthesis note or change the audited claim
+scope; the note remains a structural-dichotomy synthesis whose status
+is bounded by the downstream rows it points to.
+
+§3 spectral surfaces:
+- [SIGNED_GRAVITY_MECHANISM_SEPARATION_NOTE.md](SIGNED_GRAVITY_MECHANISM_SEPARATION_NOTE.md) — sign selectivity / signed-gravity mechanism authority.
+- [BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md](BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md) — boundary-law coefficient shift robustness study.
+
+§4 trajectory surfaces:
+- [WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md](WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md) — Wilson two-body Hartree on open 3D lattices supplying the mutual-attraction `25/25 attractive` channel and the `d^{-3.4}` distance-law fit.
+- [WILSON_TWO_BODY_OPEN_REFINED_NOTE_2026-04-11.md](WILSON_TWO_BODY_OPEN_REFINED_NOTE_2026-04-11.md) — refined per-side distance-law fits supplying the `-3.139 -> -3.837` exponent drift under refinement.
+
+§7 / §8 Born-rule and BMV surfaces:
+- [BMV_ENTANGLEMENT_NOTE_2026-04-11.md](BMV_ENTANGLEMENT_NOTE_2026-04-11.md) — branch-entanglement probe authority supplying the `0.693 nats ~ ln(2)` saturation cited in §8.
+- [BMV_THREEBODY_NOTE_2026-04-11.md](BMV_THREEBODY_NOTE_2026-04-11.md) — three-body BMV note providing additional ordering / parameter dependence.
+- [BMV_BOUNDED_NEGATIVE_NOTE.md](BMV_BOUNDED_NEGATIVE_NOTE.md) — bounded-negative result for the trajectory-side BMV channel.
+
+The Penrose / Diosi-Penrose / Bekenstein-Hawking references in §4 are
+external textbook authorities (R. Penrose 1996; Diosi 1989; Bekenstein
+1973 / Hawking 1975) and are not registered as in-`docs/` retained
+authorities here; they are referenced as external comparators only.

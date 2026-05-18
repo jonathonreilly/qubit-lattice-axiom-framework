@@ -114,3 +114,7 @@ rather than tracking a cross-family portability law. This is the result
 of a probe with the fixed parameters and source anchor listed in the
 audit-status note above, not a derivation of a portability law from
 framework primitives.**
+
+## Upstream authority
+
+- [EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md](EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md) — source note for `scripts/evolving_network_prototype_v6.py`, the carrier module supplying `build_structured_growth`, `propagate`, and `centroid_y` as the structured-growth construction, forward amplitude propagator, and final-layer detector centroid readout that the configured probe ratios are computed against. This wrapper records the named one-hop dependency; whether `EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md` itself meets the audit-lane's retained-framework-operator-carrier standard is a separate audit question.

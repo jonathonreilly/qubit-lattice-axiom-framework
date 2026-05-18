@@ -112,6 +112,10 @@ provenance explicitly so the audit-graph one-hop edges to the
 inverse-square kernel module and to the frozen runner output are
 visible in the source note.
 
+## Upstream authority (width-6 comparator wrapper)
+
+- [LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md](LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) — bounded helper-module wrapper for `scripts/lattice_3d_inverse_square_kernel.py`, documenting the module-top width-6 comparator defaults (`PHYS_L = 12.0`, `PHYS_W = 6.0`, `PHYS_CONNECTIVITY = 3.0`, `MASS_Z_VALUES = [2.0..7.0]`) and the helper functions (`build_family`, `barrier_metrics`, `no_barrier_distance`, `fit_power`) that this note patches via the `patched_branch` context manager to obtain the width-8 row.
+
 This rigorization edit only sharpens the conditional perimeter and
 registers the cited authority chain; it does not set audit status,
 hand-author audit JSON, or claim a stronger asymptotic law beyond

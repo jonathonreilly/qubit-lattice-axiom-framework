@@ -63,3 +63,10 @@ The current direct transport solver was already using the normalized branch
 radiation branch rather than a diagnostic placeholder.
 
 So the old final exact boundary on `H_rad(T)` is removed.
+
+## Upstream authority
+
+- [CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md](CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md) — narrow theorem proving the cubic-Coxeter Regge deficit vanishes identically on `Z^3` (interior edges of every class), used here as the framework-side authority for the `k = 0` spatial-flatness input formerly carried as a bounded sub-assumption in step (2) of the chain.
+- [NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md](NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) — named non-derivation import for the Milne / McCrea-Milne Newton-Poisson reduction to the flat first Friedmann law `H^2 = (8 pi G / 3) rho` used in step (3).
+- [SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) — named non-derivation import for the SM relativistic degrees-of-freedom count `g_* = 28 + (7/8) * 90 = 106.75` used in step (4) and propagated through step (5).
+- [AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md](AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md) — framework-side Stefan-Boltzmann derivation for the `(pi^2 / 30)` per-DOF prefactor in the relativistic energy density `rho_rad(T) = (pi^2 / 30) g_* T^4` used in step (4).

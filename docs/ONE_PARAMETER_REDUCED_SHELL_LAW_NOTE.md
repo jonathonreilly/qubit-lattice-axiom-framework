@@ -153,6 +153,11 @@ Open registration targets (class D gaps):
   radial DtN shell kernel `k_rad` and the radial-shell average
   operator.
 
+The five class-D registration targets now have a citeable one-hop
+authority via the bounded umbrella wrapper added 2026-05-17:
+
+- [ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md](ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) — bounded umbrella wrapper documenting the five frontier helper modules above (exterior projector / source-family constructors / coarse-grained exterior law / sewing-shell projection / radial DtN kernel) so the citation graph carries an explicit one-hop edge.
+
 The runner-checked content of this note (seven point-Green columns
 carrying unit total charge to machine precision; identical radial
 profile, identical orbit-mode vector, identical shell-mean

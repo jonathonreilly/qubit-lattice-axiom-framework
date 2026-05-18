@@ -118,3 +118,21 @@ The paired runner checks:
    α_LM^16 closure overclaims.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
+
+## Upstream authority
+
+This note is an external narrow theorem note citing the standard
+NSPT (Numerical Stochastic Perturbation Theory) lattice-perturbation
+framework as published in the literature.
+
+- **External authority — Di Renzo-Onofri NSPT framework**: F. Di Renzo, E. Onofri, G. Marchesini, P. Marenzoni, "Four-loop result in `SU(3)` lattice gauge theory by a stochastic method: Lattice correction to the condensate," *Nucl. Phys. B* **426**, 675 (1994); F. Di Renzo & L. Scorzato, "Numerical Stochastic Perturbation Theory for full QCD," *JHEP* **10**, 073 (2004). These supply the stochastic Langevin equation in symbolic Langevin time, the formal power series expansion `U_x,μ(t) = exp(i Σ_n α^(n/2) A_x,μ^(n)(t))`, and the convergence properties of the perturbative coefficient series.
+
+- **External authority — high-order NSPT Wilson-plaquette computation**: F. Di Renzo et al. (the Parma NSPT program) extending Di Renzo-Onofri to high orders. The specific `n = 20` SU(3) Wilson-plaquette computation referenced in the note is reported in the Parma NSPT lineage; see C. Bauer, G. S. Bali, A. Pineda, "Compelling evidence of renormalons in QCD from high order perturbative expansions," *Phys. Rev. Lett.* **108**, 242002 (2012) and follow-up Parma-collaboration high-order Wilson-loop computations for the methodology.
+
+- **Background textbook authorities (not load-bearing on this note)**: G. Parisi & Y.-S. Wu, "Perturbation theory without gauge fixing," *Sci. Sin.* **24**, 483 (1981) — original stochastic-quantization paper. P. Damgaard & H. Hüffel, *Stochastic Quantization*, *Phys. Rept.* **152**, 227 (1987) — background review.
+
+This wrapper records the external NSPT / Wilson-loop authority and
+the standard stochastic-quantization background as named non-derivation
+imports. The framework-side admissions (whether any framework-specific
+α value corresponds to the Wilson-plaquette `α` at any particular
+order) remain explicitly out of scope.

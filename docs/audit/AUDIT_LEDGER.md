@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 358 |
+| **retained_bounded** | 359 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
 | unaudited | 1310 |
-| audit_in_progress | 6 |
+| audit_in_progress | 5 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 587 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 588 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
@@ -125,7 +125,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5 | C | - |
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `minimal_source_driven_field_probe_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -447,6 +446,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_2d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_chokepoint_boundary_fit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6907,6 +6907,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Every scanned `topN` value stayed stable.  _(class `C`)_
 - **chain closes:** True — The note confines the claim to a fixed finite support sweep with explicit stability thresholds. The runner recomputes the lattice rows, two-stage sourced-response ratios, support carry, and stable set, and live/cached output match the reported max_rel_err=0.0066069 and min_carry=1.
 - **rationale:** The scoped bounded claim closes as a finite-compute result: the runner constructs the stated 2D harness and derives the reported sweep values rather than importing a target threshold or external comparator. The clean verdict is limited to the implemented parameter set, support list, and stability rule. Residual risk is implementation-model dependence on the helper lattice generator and chosen thresholds, not a closure gap for the finite no-collapse claim.
+- **auditor confidence:** high
+
+### `minimal_source_driven_field_probe_note`
+
+- **Note:** [`MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md`](../../docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-123911-c0b36f0f-minimal_source_driven_fi-002`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the declared exact 3D lattice with fixed telegraph-style parameters and TARGET_FIELD_MAX = 0.08, the runner computes zero-source dynamic shift exactly zero, TOWARD in 4/4 rows, and a source-driven F~M exponent of about 0.64.  _(class `C`)_
+- **chain closes:** True — Within the narrowed declared-run scope, the runner source self-containedly constructs the lattice, evolves the field, propagates amplitudes, computes centroid shifts, and fits the reported exponents. It does not close a framework derivation of the telegraph rule, c_field/damp values, or calibration ladder, but those are explicitly outside the audited load-bearing scope.
+- **rationale:** The runner is not a constant-printing artifact: it computes the frozen table and fitted exponents from the declared lattice, field rule, source strengths, propagation rule, and centroid readout. The source note has narrowed the claim to exactly that declared computation and explicitly excludes derivation of the telegraph dynamics and calibration values. The cited companion authority is retained_bounded and consistent with the same boundary, so no non-retained upstream dependency blocks the narrowed claim.
 - **auditor confidence:** high
 
 ### `mirror_2d_gravity_law_note`

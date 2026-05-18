@@ -150245,24 +150245,41 @@
       "verdict_rationale": null
     },
     "minimal_source_driven_field_probe_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T12:39:59.661107+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "source_driven_field_recovery_sweep_note": "Bounded weak-field recovery sweep on the declared self-contained 3D lattice runner family: h=0.5, W=6, L=30, source strengths 0.001/0.002/0.004/0.008, broad sweep c_field=0.45 damp=0.35 over target max values 0.001..0.080, and conservative pocket c_field=0.40 damp=0.35 target_max=0.010. The runner verifies PASS=5 FAIL=0: zero-source pocket shift is zero, pocket TOWARD is 4/4, pocket dynamic F~M is within 0.05 of linear, broad-sweep TOWARD is 7/7, and broad-sweep exponent drifts from near-linear to non-linear at the largest calibration. This excludes derivation of the telegraph field rule, its parameters, and the calibration ladder from retained framework dynamics."
+        },
+        "dep_claim_type": {
+          "source_driven_field_recovery_sweep_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "source_driven_field_recovery_sweep_note": "retained_bounded"
+        },
+        "deps": [
+          "source_driven_field_recovery_sweep_note"
+        ],
+        "load_bearing_score": 12.347,
+        "runner_hash": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457",
+        "transitive_descendants": 920
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-minimal_source_driven_fi-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed declared-run scope, the runner source self-containedly constructs the lattice, evolves the field, propagates amplitudes, computes centroid shifts, and fits the reported exponents. It does not close a framework derivation of the telegraph rule, c_field/damp values, or calibration ladder, but those are explicitly outside the audited load-bearing scope.",
       "claim_id": "minimal_source_driven_field_probe_note",
-      "claim_scope": "Audited only the declared-run computation at h=0.5, W=6, L=30, source z=3, s in {0.001,0.002,0.004,0.008}, with C_FIELD=0.45, DAMP=0.35, TARGET_FIELD_MAX=0.08 as declared modeling inputs.",
+      "claim_scope": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-18T12:04:34.075613+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-18T12:39:59.661107+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -150277,27 +150294,38 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-18T12:39:59.661107+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-minimal_source_driven_fi-002",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the declared-run computation at h = 0.5, W = 6, L = 30, source z = 3, s in {0.001, 0.002, 0.004, 0.008}, with the telegraph rule and calibration parameters treated as declared modeling inputs.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "source_driven_field_recovery_sweep_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 12.347,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the declared exact 3D lattice with fixed telegraph-style parameters and TARGET_FIELD_MAX = 0.08, the runner computes zero-source dynamic shift exactly zero, TOWARD in 4/4 rows, and a source-driven F~M exponent of about 0.64.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "c4d9ac0c052074993464e7d7f738ff93261b67e11dc1fb6402fa737c36540fe9",
       "note_path": "docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the narrowed scope remains enforced downstream and is not cited as a derivation of the telegraph rule or calibration ladder.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -150553,16 +150581,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/minimal_source_driven_field_probe.py",
       "title": "Minimal Source-Driven Field Probe",
       "transitive_descendants": 920,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner is not a constant-printing artifact: it computes the frozen table and fitted exponents from the declared lattice, field rule, source strengths, propagation rule, and centroid readout. The source note has narrowed the claim to exactly that declared computation and explicitly excludes derivation of the telegraph dynamics and calibration values. The cited companion authority is retained_bounded and consistent with the same boundary, so no non-retained upstream dependency blocks the narrowed claim."
     },
     "mirror_2d_gravity_law_note": {
       "audit_date": "2026-05-17T13:11:34.820160+00:00",

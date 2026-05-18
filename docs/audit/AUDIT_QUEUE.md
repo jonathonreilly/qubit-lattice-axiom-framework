@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1316
+**Total pending:** 1315
 **Ready (all deps already at retained-grade or metadata tiers):** 10
 
 By criticality:
-- `critical`: 809
+- `critical`: 808
 - `high`: 33
 - `medium`: 155
 - `leaf`: 319
@@ -16,8 +16,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | critical | 1032 | 15.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py` |
-| 2 | `minimal_source_driven_field_probe_note` | bounded_theorem | audit_in_progress | critical | 920 | 12.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/minimal_source_driven_field_probe.py` |
-| 3 | `causal_field_portability_note` | bounded_theorem | audit_in_progress | critical | 896 | 13.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/causal_field_portability_probe.py` |
+| 2 | `causal_field_portability_note` | bounded_theorem | audit_in_progress | critical | 896 | 13.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/causal_field_portability_probe.py` |
+| 3 | `poisson_self_gravity_loop_note` | bounded_theorem | unaudited | critical | 896 | 13.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/poisson_self_gravity_loop.py` |
 | 4 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | audit_in_progress | critical | 893 | 11.80 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py` |
 | 5 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | unaudited | critical | 884 | 11.29 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py` |
 | 6 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | audit_in_progress | critical | 883 | 10.79 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_emergent_geometry.py` |

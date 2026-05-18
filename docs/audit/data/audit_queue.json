@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 809,
+    "critical": 808,
     "high": 33,
     "leaf": 319,
     "medium": 155
@@ -5055,30 +5055,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
-      "claim_id": "minimal_source_driven_field_probe_note",
-      "claim_scope": "Audited only the declared-run computation at h=0.5, W=6, L=30, source z=3, s in {0.001,0.002,0.004,0.008}, with C_FIELD=0.45, DAMP=0.35, TARGET_FIELD_MAX=0.08 as declared modeling inputs.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "source_driven_field_recovery_sweep_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.347,
-      "note_path": "docs/MINIMAL_SOURCE_DRIVEN_FIELD_PROBE_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/minimal_source_driven_field_probe.py",
-      "transitive_descendants": 920
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
       "claim_id": "causal_field_portability_note",
       "claim_scope": "Bounded computational diagnostic for the declared three-family fixed-anchor probe with admitted build_structured_growth, propagate, and centroid_y carrier operators.",
       "claim_type": "bounded_theorem",
@@ -5097,6 +5073,32 @@
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/causal_field_portability_probe.py",
+      "transitive_descendants": 896
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "poisson_self_gravity_loop_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_source_driven_field_probe_note"
+      ],
+      "direct_in_degree": 7,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py"
+      ],
+      "load_bearing_score": 13.309,
+      "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/poisson_self_gravity_loop.py",
       "transitive_descendants": 896
     },
     {
@@ -6809,32 +6811,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_g_bare_two_ward_closure.py",
-      "transitive_descendants": 896
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "poisson_self_gravity_loop_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_source_driven_field_probe_note"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/minimal_source_driven_field_probe.py"
-      ],
-      "load_bearing_score": 13.309,
-      "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/poisson_self_gravity_loop.py",
       "transitive_descendants": 896
     },
     {
@@ -42042,5 +42018,5 @@
     }
   ],
   "ready_count": 10,
-  "total_pending": 1316
+  "total_pending": 1315
 }

@@ -1,5 +1,7 @@
 # AI Methodology Note — Cl(3)/Z^3 Framework
 
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
 **Date:** 2026-04-25  
 **Status:** active methodology-capture lane on `main`; curated front-door note,
 not the final methodology paper  

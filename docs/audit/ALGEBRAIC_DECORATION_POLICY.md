@@ -1,5 +1,7 @@
 # Algebraic Decoration Policy
 
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
 **Status:** binding rule for the audit lane.
 
 The CKM atlas demonstrated a pattern in which a small set of input

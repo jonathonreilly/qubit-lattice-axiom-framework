@@ -128,6 +128,8 @@ should be read as proposed until the audit ledger marks them clean.
 
 ## Repository Map
 
+- key terminology (A-Z index of repo-canonical terms):
+  [docs/KEY_TERMINOLOGY.md](docs/KEY_TERMINOLOGY.md)
 - manuscript and package entry surfaces:
   [docs/publication/ci3_z3](docs/publication/ci3_z3/README.md)
 - science organized by domain:

@@ -1,6 +1,29 @@
 # Barred Unitarity-Triangle Weitzenbock Inequality + Brocard-Polynomial Unification: EXACT Closed Form Theorem
 
-**Date:** 2026-04-25
+**Date:** 2026-04-25 (2026-05-18: claim_scope narrowed to valid
+conditional algebra on the supplied barred-triangle surface per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **valid conditional algebra over the supplied
+barred-triangle surface** — the Weitzenbock/Brocard identities,
+including the EXACT closed form `a² + b² + c² ≥ 4√3 · Area` and
+its identification as the fifth distinct closed-form representation
+of the Brocard polynomial `P(α_s)`, hold as exact algebraic
+identities on the supplied NLO Wolfenstein protected-γ̄ surface +
+barred unitarity triangle. This note **does NOT** independently
+retain the upstream NLO protected-γ̄ surface, the structural counts,
+the CP-phase identity, or the Jarlskog row. The audit verdict's
+repair sub-target ("audit or ratify the direct upstream NLO
+protected-γ̄, structural-counts, CP-phase, and Jarlskog authority
+rows to retained grade") remains separate open work. Until then,
+this note's identities may be cited as **conditional algebra over
+the barred-triangle surface** only, not as a retained or promoted
+theorem.
+**Status authority:** independent audit lane only. The
+`proposed_retained` label below is a source-side proposal placeholder,
+not an audit verdict; the independent audit lane has classified this
+row `audited_conditional` pending upstream ratification.
 
 **Status:** proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas
 + NLO Wolfenstein protected-γ̄ surfaces. This note derives the

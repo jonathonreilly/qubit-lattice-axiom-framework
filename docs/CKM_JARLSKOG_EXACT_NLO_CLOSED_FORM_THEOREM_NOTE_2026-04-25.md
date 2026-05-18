@@ -1,6 +1,28 @@
 # Jarlskog Invariant: EXACT NLO Closed Form Theorem on the Protected-γ̄ Surface
 
-**Date:** 2026-04-25
+**Date:** 2026-04-25 (2026-05-18: claim_scope narrowed to exact
+conditional algebra on the assumed NLO protected-γ̄ surface per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **exact conditional algebra on the assumed NLO
+Wolfenstein protected-γ̄ surface** — given the upstream CKM atlas and
+NLO Wolfenstein protected-γ̄ inputs as conditional (currently
+`unaudited` / `proposed_retained` on the upstream rows), the closed-form
+identity
+`J̄ = sqrt(5) α_s(v)^3 (4 - α_s(v)) / 288` and its equivalent forms
+and the structural-integer factorization / selection-rule structure
+are exact algebraic identities on that conditional surface. This
+note **does NOT** independently retain the upstream NLO protected-γ̄
+surface, the CKM atlas, or `α_s(v)`. The audit verdict's repair
+sub-target ("ratify or re-audit the direct upstream authorities to
+retained / retained_bounded status") remains separate open work. Until
+then, this note's identities may be cited as **conditional algebra**
+only, not as an independently retained-grade theorem.
+**Status authority:** independent audit lane only. The
+`proposed_retained` label below is a source-side proposal placeholder,
+not an audit verdict; the independent audit lane has classified this
+row `audited_conditional` pending upstream ratification.
 
 **Status:** proposed_retained CKM-structure corollary on the proposed_promoted CKM atlas
 and NLO Wolfenstein protected-γ̄ surface. This note derives an

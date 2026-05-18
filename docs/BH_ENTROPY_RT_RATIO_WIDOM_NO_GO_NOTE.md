@@ -1,6 +1,27 @@
 # BH Entropy RT-Ratio Widom No-Go Theorem
 
-**Date:** 2026-04-17 (last rigorization 2026-05-10)
+**Date:** 2026-04-17 (last rigorization 2026-05-10; 2026-05-18:
+claim_scope narrowed per audit verdict "Claim boundary until fixed"
+instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **the Widom entropy coefficient `1/6` on the
+self-contained free-fermion carrier defined intrinsically in
+§"Self-contained carrier definition"** plus the **finite-L (`L ≤ 64`)
+numerical evidence against the exact `1/4` ratio** under the stated
+`10^-6` relative singular-value threshold on the OBC half-filled
+square-lattice carrier. This note **does NOT** establish the full
+asymptotic `ln χ_eff(L) = ln L + o(ln L)` for the non-standard C-7
+thresholded cross-layer matrix; that proof (preferably by
+diagonalizing transverse modes and bounding the singular values)
+remains the named open work item in the audit verdict. As a
+consequence, the no-go statement is **not closed at retained grade
+across all L**; it is supported as a bounded numerical no-go
+through `L = 64` plus the Widom `1/6` constant from the cited
+classical Widom-Sobolev theorems. The `d = 3` normalization wording
+will be corrected or split in a separate revision before any future
+retained-grade promotion attempt.
+**Status authority:** independent audit lane only.
 **Status:** narrow no-go theorem on a self-contained free-fermion carrier
 **Runner:** `scripts/frontier_bh_entropy_rt_ratio_widom.py`
 **Authority role:** canonical closure of the "is RT ratio = 1/4 exact?" question

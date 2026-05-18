@@ -1,5 +1,29 @@
 # Central-Band Dense Corrected Born Sweep Note
 
+**Date:** original 2026-04 (2026-05-18: claim_scope narrowed to the
+finite valid-graph dense-pocket result per audit verdict boundary
+instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **the finite valid-graph dense-pocket result at
+`npl = 60`** under both `LN + |y|` and `LN + |y| + collapse` modes
+across `N ∈ {25, 40, 60}`, showing max `|I3|/P` below `1e-15` on the
+six retained rows from the cached runner stdout. The §"Strongest
+Retained Rows" table is the on-source record of this dense-pocket
+result; the audit verdict's repair sub-target "add a comparator or
+cited theorem before asserting hard geometry as the enabling
+condition" remains a separate open work item — the broader §"Interpretation"
+hard-geometry-enabling claim is therefore **out of load-bearing scope**
+of this note, recorded only as the lane-level interpretation hypothesis
+to be tested by separate retained authorities. Numeric mean / max
+values in the §"Strongest Retained Rows" table should be reconciled
+against the current cached `stochastic_collapse_born_calibration`
+runner stdout before any future numeric promotion; this scope narrowing
+preserves the qualitative "PASS at machine precision" structure (all
+six rows have `|I3|/P < 1e-15`) without committing to exact pre-cache
+mean / max values.
+**Status authority:** independent audit lane only.
+
 This note records the dense corrected-Born sweep for the central-band hard-geometry
 lane using the review-safe three-slit Sorkin quantity with the required `-P(empty)`
 term.

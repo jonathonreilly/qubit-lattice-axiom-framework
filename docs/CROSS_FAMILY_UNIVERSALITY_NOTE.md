@@ -1,6 +1,25 @@
 # Cross-Family Consistency: Dispersion + Lensing at H=0.5 (Conditional)
 
-**Date:** 2026-04-08 (status line narrowed 2026-04-28 per audit-lane verdict; revised 2026-04-09 after earlier review)
+**Date:** 2026-04-08 (status line narrowed 2026-04-28 per audit-lane verdict; revised 2026-04-09 after earlier review; 2026-05-18: claim_scope narrowed to the dispersion-only finite-runner result per audit verdict boundary instruction)
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **the dispersion-only finite-runner consistency
+result at `H = 0.5`** — the Schrödinger/KG near-tie persisting across
+all three tested DAG families (Fam1/Fam2/Fam3) on the seed-averaged
+`ω(p)` curve, with `Δ(Schrödinger − KG)` in `R^2` below `0.01` in each
+family and effective masses `m_eff ≈ 5.9` consistent across families
+at the seed-mean level (1.7% spread). The lensing-slope rows
+(seed-mean slopes ≈ -1.31 in Fam1/Fam2 and -1.27 in Fam3) are
+**recorded but explicitly NOT load-bearing**: the runner does not
+expose variance / power thresholds, the per-seed slope standard
+deviations exceed the inter-family spread by ~5-6x, and the
+"no detectable family effect" wording on lensing is unsupported by
+the runner output. Promoting any lensing-side claim requires
+audited lensing runner artifacts plus variance / power thresholds
+(audit verdict's first repair sub-target), which remain a separate
+open work item. The fine-H (`H = 0.25`) universality claim across
+Fam2 / Fam3 is also explicitly out of scope here.
+**Status authority:** independent audit lane only.
 **Status:** bounded conditional finite-runner consistency at `H = 0.5` — family-mean dispersion and lensing observables agree across the three tested DAG families on the registered seed-mean output, with the Schrödinger/KG near-tie holding in each family. Per-seed variance and statistical power are not reported by the runner, so the "no detectable family effect" wording is unsupported; fine-H (`H = 0.25`) universality is untested on Fam2 / Fam3. Not a tier-ratifiable universality theorem.
 
 ## What was tested

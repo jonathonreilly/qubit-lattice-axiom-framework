@@ -1,6 +1,26 @@
 # Matter-Radiation Equality Structural Identity Theorem
 
-**Date:** 2026-04-24
+**Date:** 2026-04-24 (2026-05-18: claim_scope narrowed to conditional
+structural identity on upstream `unaudited` cosmology rows per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **exact conditional structural identity on the
+admitted cosmology surface** — given the flat FRW assumption,
+standard matter/radiation equations of state, and the observational
+density fractions `Omega_m,0` and `Omega_r,0` as conditional inputs
+(currently `unaudited` on the live ledger via
+`cosmology_frw_kinematic_reduction_theorem_note_2026-04-24` and
+`cosmology_from_mass_spectrum_note`), the matter-radiation equality
+redshift identity holds as an exact algebraic identity on that
+conditional surface. The numerical redshift readout is **not a
+native-axiom prediction** for the density fractions; it is
+input-conditioned. This note **does NOT** independently retain the
+upstream cosmology rows. The audit verdict's repair sub-target
+("ratify or repair the listed upstream theorem/bridge rows") remains
+separate open work. Until then, this note may be cited as
+**conditional / supporting local structure** only.
+**Status authority:** independent audit lane only.
 
 **Status:** proposed_retained/admitted structural-identity theorem on the cosmology
 support surface. This is the early-time companion to

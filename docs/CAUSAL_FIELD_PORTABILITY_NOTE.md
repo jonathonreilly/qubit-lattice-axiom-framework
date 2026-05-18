@@ -1,6 +1,27 @@
 # Causal Field Portability Note
 
-**Date:** 2026-04-06 (audit-status note added 2026-05-10)
+**Date:** 2026-04-06 (audit-status note added 2026-05-10; 2026-05-18:
+claim_scope formalized as bounded computational diagnostic per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **a bounded computational diagnostic on the configured
+fixed-anchor cross-family replay** — the exact-null control survives
+across all three tested grown families, and the configured forward-only
+and dynamic-cone ratios split across the three families rather than
+tracking a cross-family portability law on the declared probe
+parameters. This is **explicitly NOT** a retained portability theorem;
+the note records the probe outcome as a family-boundary diagnostic
+under the declared admitted-context probe parameters (three families
+with drift/restore pairs `(0.20, 0.70)`, `(0.05, 0.30)`, `(0.50, 0.90)`,
+six seeds, source anchor `(y, z) = (0, 3)` at `SOURCE_LAYER = 2 *
+N_LAYERS // 3`, field strength `5e-5`, field epsilon `0.1`, dynamic
+cone values `c ∈ {1.0, 0.5}`). The audit verdict's substantive repair
+sub-target ("retained framework-operator-carrier audit of
+`evolving_network_prototype_v6.py`" or "retained portability-criterion
+theorem deriving the configured probe metric and threshold from the
+framework primitives") remains a separate open work item.
+**Status authority:** independent audit lane only.
 **Status:** bounded portability probe — exact-null control plus diagnosed family boundary on the configured fixed-anchor cross-family replay; not a cross-family portability law.
 
 ## Artifact Chain

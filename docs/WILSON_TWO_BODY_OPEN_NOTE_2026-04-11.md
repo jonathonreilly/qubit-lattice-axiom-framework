@@ -1,8 +1,31 @@
 # Wilson Two-Body Open-Lattice Note
 
-**Date:** 2026-04-11  
+**Date:** 2026-04-11 (2026-05-18: claim_scope narrowed to the two
+cache-backed open-boundary Wilson surfaces per audit verdict
+boundary instruction)
 **Status:** bounded companion on the current `main` surface; outside flagship core
 **Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **the two cache-backed open-boundary Wilson surfaces**:
+(i) the §"Open-Boundary Wilson Result" `8/8` attractive / `8/8` clean
+mutual-acceleration surface at `side = 11, 13`, `G = 5`,
+`mu^2 = 0.22`, `d = 3, 4, 5, 6`, backed by
+`scripts/frontier_wilson_two_body_open.py` and its registered cache
+`logs/runner-cache/frontier_wilson_two_body_open.txt`; (ii) the §"Law
+Sweeps" post-selected distance-falloff + partner-source-scaling fits
+on the same surface (plus the §"Screening-Mass Addendum" `mu^2` sweep
+softening toward Newton-compatible scaling), backed by
+`scripts/frontier_wilson_two_body_laws.py` and its registered cache
+`logs/runner-cache/frontier_wilson_two_body_laws.txt`. The §"Both-
+Masses Audit" rows are explicitly **out of load-bearing scope** of
+this note: they are an honest negative-result diagnostic supported
+by the missing `frontier_newton_both_masses.py` runner and recorded
+here only as historical context for why the lane stops short of a
+retained Newton derivation, not as retained calibration. The
+§"Periodic Wilson Result" is **also out of load-bearing scope** and
+serves only as narrative context for why the open-boundary
+construction is needed.
+**Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_wilson_two_body_open.py`
 **Companion runners:**
 - `scripts/frontier_wilson_two_body_laws.py` (post-selected law characterizations)

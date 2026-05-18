@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 116 |
 | **retained_no_go** | 139 |
 | **retained_bounded** | 354 |
-| _retained_pending_chain_ | 4 |
+| _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1320 |
+| unaudited | 1319 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 6 |
-| `audited_clean` | 582 |
+| `audited_clean` | 583 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1533 |
+| `unaudited` | 1532 |
 
 | claim_type | count |
 |---|---:|
@@ -74,7 +74,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 284 |
 | `leaf` | 882 |
 
-- **Retained pending chain closure:** 4
+- **Retained pending chain closure:** 5
 - **Citation cycles detected:** 189
 
 ### Runner classification (static heuristic)
@@ -200,6 +200,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2403,6 +2404,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner completes, but it only renders hard-coded comparison rows and does not compute or verify the contested row facts from source artifacts. The provided authorities now close several formerly missing inputs, including the original complex companion, alt complex failure, alt F~M transfer, and second-family boundary tightening. The full headline comparison still relies on the original grown-basin signed-source/F~M row without that authority in the restricted packet, so the full listed-family selectivity split is conditional rather than clean. A narrower comparison over only the supplied retained authorities would be easier to close.
 - **open / conditional deps cited:**
   - `archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`
+- **auditor confidence:** high
+
+### `complex_selectivity_predictor_note`
+
+- **Note:** [`COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded comparison over the listed structured-family cards: complex-retained rows have exact gamma=0 plus anchor-local TOWARD -> AWAY crossover, while diagnosed boundary rows fail that crossover despite clean controls.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:minimal_axioms_2026-05-03`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-complex_selectivity_pred-030`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The smallest stable discriminator is the anchor-local crossover: exact gamma=0 baseline plus TOWARD -> AWAY on the retained anchor row.  _(class `B`)_
+- **chain closes:** True — The packet now supplies the previously missing original grown-basin complex authority and second-family boundary authority, and all load-bearing comparison rows are supported by retained-grade cited notes. The runner itself only renders hard-coded rows, so closure rests on cross-note verification rather than independent computation.
+- **rationale:** The claim is a bounded finite comparison, not a first-principles derivation. Within that scope, the retained-positive rows and boundary rows are all backed by retained-grade one-hop authorities in the restricted packet, including the original grown companion and second-family boundary window. The runner does not compute the physics and should be treated only as a rendering/cache check, but the cited authorities close the finite discriminator table.
 - **auditor confidence:** high
 
 ### `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`

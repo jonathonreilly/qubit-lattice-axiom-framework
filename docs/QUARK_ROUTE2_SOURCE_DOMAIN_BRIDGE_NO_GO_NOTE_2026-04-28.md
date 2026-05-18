@@ -30,11 +30,11 @@ inputs in a form the restricted packet can verify.
 Admitted-context inputs (named upstream authorities, cited but not closed
 inside this packet):
 
-- `quark_route2_exact_readout_map_note_2026-04-19` (`audited_clean`) —
+- [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) (`audited_clean`) —
   exact bilinear carrier and restricted bright readout class
-- `quark_route2_exact_time_coupling_note_2026-04-19` (`audited_clean`) —
+- [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) (`audited_clean`) —
   exact slice backbone `Lambda_R`
-- `rconn_derived_note` (latest verdict `audited_conditional`,
+- [RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md) (latest verdict `audited_conditional`,
   2026-05-10) — SU(3) connected color projection
   `R_conn = (N_c^2 - 1)/N_c^2`
 

@@ -31,3 +31,21 @@ same ambient.
 
 - Runner:
   `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py`
+
+## Upstream authorities
+
+The runner imports 5 helper modules; of these, only one has a current
+framework wrapper note:
+
+- [DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md) — supplies the `Ne` projected-source-law inputs used to construct `TARGET` and `sparse_face_projected_data`.
+
+Remaining missing-dep-edge admissions (no framework wrapper exists):
+- `frontier_dm_leptogenesis_dweh_even_split_transfer_layer` (transfer-layer helper)
+- `frontier_dm_leptogenesis_k00_sparse_face_target_preimage_theorem` (sparse-face preimage theorem source)
+- `frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19` (line-selection helper supplying `selected_line` + `compressed_local_block_from_line`)
+- `frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20` (line-rho1 selector supplying `hermitian_linear_responses` + `solve_sparse_target_preimage`)
+
+Each of these would need a dedicated source-note wrapper before the
+remaining `selected_line`, `compressed_local_block_from_line`,
+`hermitian_linear_responses`, `solve_sparse_target_preimage`, and
+`sparse_face_projected_data` admissions can fully close.

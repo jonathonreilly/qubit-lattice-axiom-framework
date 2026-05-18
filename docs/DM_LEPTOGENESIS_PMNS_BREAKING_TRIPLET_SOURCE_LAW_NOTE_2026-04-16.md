@@ -90,6 +90,12 @@ This note does **not** yet derive the off-seed `5`-real values themselves from
 It proves only that once those values are supplied, the charged-sector bridge
 to the mainline CP channels is an explicit algebraic law.
 
+## Upstream authorities
+
+- [DM_NEUTRINO_BREAKING_TRIPLET_AXIOM_LAW_ATTEMPT_NOTE_2026-04-15.md](DM_NEUTRINO_BREAKING_TRIPLET_AXIOM_LAW_ATTEMPT_NOTE_2026-04-15.md) — the breaking-triplet grammar `(delta, rho, gamma)` and the axiom-law-attempt content that defines the mainline CP-channel target.
+- [DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md](DM_NEUTRINO_BREAKING_TRIPLET_CP_THEOREM_NOTE_2026-04-15.md) — the CP theorem on the breaking triplet that establishes the `gamma, E1, E2` channel structure.
+- [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — the canonical active-family map (`D_act`) supplied by the active-projector reduction.
+
 ## Command
 
 ```bash

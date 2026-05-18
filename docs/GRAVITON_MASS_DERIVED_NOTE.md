@@ -28,7 +28,7 @@ not derived from the framework operators **inside this packet**.
 
 **Bridge-closure addendum (2026-05-16).** Since the original audit, the
 retained sister theorem
-`GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`
+[GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md](GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md)
 (runner `scripts/frontier_graviton_mass_spectral_gap_identity.py`,
 PASS=31/FAIL=0) has been landed on `main`. That theorem derives the
 bridge `m_g^2 c^2 / hbar^2 = lambda_2^TT` from the standard

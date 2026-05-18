@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 7 |
-| `audited_clean` | 578 |
+| `audit_in_progress` | 6 |
+| `audited_clean` | 579 |
 | `audited_conditional` | 81 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `evolving_network_prototype_v6_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -260,6 +259,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `evolving_network_prototype_v3_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `evolving_network_prototype_v4_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v5_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `evolving_network_prototype_v6_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -3441,6 +3441,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The frozen replay reports cross growth at 77.8% toward and F~M = 0.76 versus KNN at 66.7% toward and F~M = 0.66, while cross growth trails KNN on mean_delta by 0.000001.  _(class `C`)_
 - **chain closes:** True — The note has no known dependencies, and the runner directly constructs the ordered, cross-growth, and KNN-control families from explicit constants and recomputes the reported metrics. The audit only closes the finite replay claim, not any broad Gate B dynamics theorem or independent comparison to v4.
 - **rationale:** The current runner completed cleanly and reproduced the note's frozen table and pairwise read: cross growth improves toward fraction and F~M relative to KNN, but not mean_delta. The note's safe interpretation matches that output and explicitly avoids claiming a Gate B win. Residual risk is limited to the bounded prototype framing: it is a finite scripted replay over fixed parameters and seeds, not a general theorem about the dynamics.
+- **auditor confidence:** high
+
+### `evolving_network_prototype_v6_note`
+
+- **Note:** [`EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md`](../../docs/EVOLVING_NETWORK_PROTOTYPE_V6_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded frozen replay for h=0.5, layers=13, half-width=5, seeds (5,18,31,44), mass strengths (0.75,1.0,1.25), mass y targets (1.0,1.5,2.0), and the four listed drift/restore rows.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-evolving_network_prototy-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The frozen h=0.5 structured-growth sweep over the stated drift/restore rows gives toward counts of 33/36, 24/36, 24/36, and 24/36 with small positive mean deltas.  _(class `C`)_
+- **chain closes:** True — The included runner source constructs the structured-growth networks, propagates amplitudes, computes centroid shifts and local gain slopes, and aggregates the reported row counts without hard-coded expected outputs. The conclusion is limited to the stated finite sweep and explicitly does not claim universal Gate B closure.
+- **rationale:** The note's load-bearing result is a bounded computational replay, and the provided runner source genuinely computes the reported sweep from its stated model and parameters rather than printing constants or importing the contested result. The runner output matches the table in the note. The note's own caveats keep the claim within the finite tested grid, so the audited bounded conclusion follows on its own terms.
 - **auditor confidence:** high
 
 ### `ew_current_fierz_channel_decomposition_note_2026-05-01`

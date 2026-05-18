@@ -1,0 +1,31 @@
+loop_slug: p1-bridge-20260518
+goal: derive the P1 + c=1 normalization bridge theorem for observable_principle_from_axiom_note from minimal_axioms_2026-05-03 + retained primitives, or document why structurally foreclosed and adopt Path (b) permanent-admission stance
+mode: campaign
+runtime_budget_hours: 12
+target_status: best-honest-status
+current_block: block01
+current_route: route_d_no_go_ratification_and_pivot
+hard_residual_being_attacked: P1 (scalar additivity on independent subsystems) — `F_p[J] = |Z|^p` universal counterexample across all standard scaffolds
+files_touched: []
+open_imports:
+  - P1 (scalar additivity on independent subsystems) — admitted in OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE
+  - P2 (CPT-even phase blindness) — runner-local consequence of CPT_EXACT
+  - P3 (continuity / minimal regularity) — runner-local consequence of finite-block regularity
+  - P4 (normalization choice up to overall constant) — runner-local consequence
+no_go_routes:
+  - route_a_operator_algebraic_external (PR #1373, F_p counterexample)
+  - route_b_shannon_khinchin_external (PR #1368, additivity-as-hypothesis)
+  - route_c_framework_internal (PR #1402, no retained primitive excludes F_p)
+  - route_d_sharpened_no_go (PR #1418 or analogous, consolidated)
+  - route_e_tao_cross_disciplinary (PR #1406, Pattern L circularity + Pattern D inapplicability)
+  - route_operator_algebraic_external (audited_failed)
+  - route_real_d_block_uniqueness (audited_failed)
+  - route_harlow_disjoint_additivity (unaudited bounded, not closure)
+  - route_doplicher_roberts (unaudited bounded, not closure)
+  - route_tempesta_composability (unaudited bounded, not closure)
+review_findings: []
+pr_status: []
+next_exact_action: write Route D no-go N1-N8 self-audit + P1 campaign closure synthesis note + commit + open PR
+stop_condition: 12h runtime exhausted OR P1 derivation achieved (highly unlikely per no-go consolidation) OR campaign opportunity queue exhausted
+checkpoints:
+  - 2026-05-18T08:30: loop pack initialized; baseline P1 route survey complete; Route D no-go identified as the comprehensive consolidation

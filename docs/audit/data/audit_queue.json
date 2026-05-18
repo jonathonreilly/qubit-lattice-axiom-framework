@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 808,
+    "critical": 807,
     "high": 33,
     "leaf": 319,
     "medium": 155
@@ -5103,25 +5103,27 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
-      "claim_scope": "Conditional finite-lattice staggered-Hamiltonian statement: for the free real anti-Hermitian staggered D with H=iD and exact P D P=-D, Theta_H=P K preserves H and the Theta_H-odd Hamiltonian-sector proxy is zero; no full SME bilinear-coefficient basis-completeness claim is audited as retained.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "cpt_exact_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
+      "cross_confirmation_status": null,
+      "deps": [
+        "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+      ],
+      "direct_in_degree": 32,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.804,
-      "note_path": "docs/PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 25.803,
+      "note_path": "docs/CPT_EXACT_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py",
-      "transitive_descendants": 893
+      "runner_path": "scripts/frontier_cpt_exact.py",
+      "transitive_descendants": 892
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7230,30 +7232,6 @@
       "ready": false,
       "runner_path": null,
       "transitive_descendants": 893
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cpt_exact_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
-      ],
-      "direct_in_degree": 32,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 25.803,
-      "note_path": "docs/CPT_EXACT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_cpt_exact.py",
-      "transitive_descendants": 892
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -42018,5 +41996,5 @@
     }
   ],
   "ready_count": 10,
-  "total_pending": 1315
+  "total_pending": 1314
 }

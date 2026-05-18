@@ -224,7 +224,9 @@ vocabulary control**:
    audit-loop, review-loop, and physics-loop (see their respective
    `SKILL.md` files). Routine drift (legacy aliases, forbidden
    filename suffixes, deprecated wording, F-letter codes) is rewritten
-   silently. This shifts vocabulary compliance from agent discipline
+   **automatically; each rewrite is recorded in `prose_corrections`
+   on the related audit row** (automatic, not silent — the trail is
+   auditable). This shifts vocabulary compliance from agent discipline
    (fallible) to loop mechanism (always-on).
 
 3. **Physics verdicts separated from prose verdicts.** Audit ledger
@@ -264,10 +266,28 @@ compute-required-as-non-defect, etc.) are explicitly tagged.
 The full design is in
 [`docs/repo/VOCABULARY_HYGIENE_DESIGN.md`](./repo/VOCABULARY_HYGIENE_DESIGN.md);
 the canonical YAML and the lint script land in the companion cleanup
-PR. This entire mechanism is offered as a transferable pattern: any
-AI-built research repo above some scale faces the same drift / agent
-pacing / discipline-failure tension, and mechanism-based vocabulary
-control is the form of governance that survives at that scale.
+PR. This mechanism is offered as a transferable pattern, but with
+explicit preconditions — it works only in repos that already have:
+
+- a *structured claim ledger* (audit-ledger JSON or equivalent) where
+  process labels are first-class fields;
+- *controlled / generated docs* (a renderer pattern so the
+  human-readable surface is a product, not a source);
+- *CI gates* that fail builds when the rendered surface drifts from
+  the canonical source-of-truth;
+- *agents that respect pre-commit hooks* and run the lint
+  automatically in their loops;
+- a *central source-of-truth* for the vocabulary itself (YAML, JSON
+  Schema, or equivalent), with explicit `schema_version` and
+  migration scripts.
+
+Repos without those preconditions can still adopt the *principle*
+(vocab disjoint from physics, auto-correct over discipline,
+physics-versus-prose separation), but the mechanical implementation
+will need to be redesigned around whatever ledger / docs / CI surface
+they actually have. Without those preconditions, the discipline-based
+fallback is the realistic ceiling, and the failure modes we saw
+(emergent suffixes, F-letter labelling waves, alias rot) will recur.
 
 ## 6. Current Evidence Surface
 

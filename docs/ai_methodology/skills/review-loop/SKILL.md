@@ -27,8 +27,14 @@ chain repair, audit queue regeneration, and parent re-audit gates are part of
 that same landing path, not follow-up PRs.
 It auto-corrects status vocabulary and terminology so a PR follows repo
 conventions by running `scripts/vocab_lint.py --fix` on all
-branch-modified files before any landing gate. Vocabulary is canonical
-in [`docs/repo/controlled_vocabulary.yaml`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)
+branch-modified files before any landing gate. (**Forward-looking
+rule:** effective once Cleanup-1 PR lands `scripts/vocab_lint.py`
+and the `prose_status` schema migration in `apply_audit.py` /
+`audit_lint.py`. Until then, the existing manual review-vocab-fix
+behavior described in this skill continues; do not write
+`prose_status` / `prose_corrections` to ledger rows — the validator
+will reject them.) Vocabulary is canonical in
+[`docs/repo/controlled_vocabulary.yaml`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)
 (cleanup PR creates the YAML; design in
 [`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)).
 Routine drift (legacy aliases, forbidden filename suffixes, deprecated

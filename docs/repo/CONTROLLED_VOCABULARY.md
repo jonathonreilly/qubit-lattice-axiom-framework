@@ -87,6 +87,20 @@ Use the scientific object as the name instead:
 - `Lie type A_1` or `SU(2) root-system check`, not bare `A1`
 - `DM-eta Coleman-Weinberg residual`, not bare `G1`
 
+**Canonical mathematical-object names are allowed.** Bare letter-number
+forms that name an *established mathematical object* — `S^3` (3-sphere),
+`S^2` (2-sphere), `U(1)` and `SU(N)` (gauge groups), `Z_3` / `Z_n`
+(cyclic groups), `C_3` (cyclic / symmetry group), `A_n` / `D_n` /
+`E_n` (Lie types), `I_3` (third isospin component), etc. — are the
+canonical names for those objects and do not require domain-explicit
+expansion. The rule above targets *code-like primary names that don't
+reference an established mathematical object* (e.g. `A1` used as a
+workstream label, `G1` used as a route code, `R3` used as a routing
+index), not standard mathematical notation. If both readings are
+plausible in context (e.g. `A_1` as Lie type vs. `A1` as
+workstream-index abbreviation), spell out the mathematical reading
+on first use (`Lie type A_1`) so the bare form is unambiguous.
+
 Legacy shorthand may be preserved only as an alias after the explicit name,
 for example: `Koide Frobenius-equipartition condition (legacy alias: A1)`.
 If an existing file already uses a shorthand, new edits should define it on

@@ -37,16 +37,26 @@ deliverable.
    regenerated from the YAML, not authored alongside it. Lint
    mechanically enforces; manual edits to rendered docs are not
    permitted.
-3. **Standard convention basis.** Each term family cites the
-   established convention it derives from (W3C lifecycle, GRADE-style
-   evidence grading, ISTQB-style defect taxonomy, IEEE 1990 review
-   vocabulary). AI-physics extensions to each family are explicitly
-   tagged and motivated.
+3. **Standard convention basis (inspired-by, not standards-conformant).**
+   Each term family is inspired by an established convention without
+   claiming faithful adaptation: W3C-style lifecycle for the
+   audit-status journey; GRADE-spirit closure-status grading for
+   theorem strength (one-axis, not the full GRADE *recommendation
+   strength × evidence certainty* matrix); ISTQB / IEEE 1044-spirit
+   anomaly / defect taxonomy for repair classes; multi-reviewer
+   adversarial-review independence tiers (mostly novel). AI-physics
+   extensions to each family are explicitly tagged and motivated.
+   None of these are standards-conformant uses; the cited conventions
+   are reference points, not authorities. See the consolidated review
+   [VOCABULARY_HYGIENE_REVIEW_2026-05-18.md](VOCABULARY_HYGIENE_REVIEW_2026-05-18.md)
+   §MAJOR 7 for why this matters.
 4. **Auto-correct, don't hard-fail.** audit-loop, review-loop, and
    physics-loop run `vocab_lint --fix` on touched files as a mechanical
-   pre-commit step. Routine drift is rewritten silently. Truly
-   ambiguous cases surface as a *separate* `prose_status` field, never
-   conflated with the physics `audit_status`.
+   pre-commit step. Routine drift is rewritten **automatically, with
+   each rewrite recorded in `prose_corrections`** for the audit trail
+   (not silent — automatic and logged). Truly ambiguous cases surface
+   as a *separate* `prose_status` field, never conflated with the
+   physics `audit_status`.
 5. **Agent pacing.** Routine vocabulary compliance is mechanical, not
    PR-bound. Only vocabulary *extensions* — genuinely new terms
    entering the canonical YAML — require a PR against the YAML.
@@ -66,7 +76,7 @@ deliverable.
 | **Defect** | Why a non-clean claim failed | ISTQB / IEEE 1044 software-defect taxonomy adapted for AI-generated derivations | All 7 repair classes are AI-physics extensions specific to mechanism failures (`missing_bridge_theorem`, `compute_required`, etc.) |
 | **Independence** | How adversarial the audit was | Adversarial-review literature; multi-reviewer independence tiers | Model-family-level `fresh_context` and `cross_family` (same author family, restricted-context audit; different family) |
 
-The full per-term inventory with definitions, equivalent_to pointers,
+The full per-term inventory with definitions, inspired_by pointers,
 and AI-extension flags lives in
 `docs/repo/controlled_vocabulary.yaml` (cleanup PR creates it).
 
@@ -107,18 +117,18 @@ families:
     terms:
       unaudited:
         definition: "Row has not been audited yet."
-        equivalent_to: "W3C Working Draft"
+        inspired_by: "W3C Working Draft"
         ai_extension: false
         deprecated: false
         deprecated_replacement: null
       audit_in_progress:
         definition: "First clean audit on a critical claim awaiting cross-confirmation."
-        equivalent_to: "W3C Candidate Recommendation"
+        inspired_by: "W3C Candidate Recommendation"
         ai_extension: true
         ai_extension_rationale: "Cross-confirmation gate for AI-authored derivations."
       audited_clean:
         definition: "Derivation closes from cited inputs with no hidden premise."
-        equivalent_to: "W3C Recommendation"
+        inspired_by: "W3C Recommendation"
         ai_extension: false
       audited_renaming:
         definition: "Load-bearing step defines a new symbol or asserts symbol identity."
@@ -130,7 +140,7 @@ families:
         ai_extension_rationale: "Catches mass-produced algebraic consequences of one upstream choice."
       audited_conditional:
         definition: "Depends on an unaudited dependency, open gate, or unratified bridge."
-        equivalent_to: "W3C Candidate Recommendation pending dependency"
+        inspired_by: "W3C Candidate Recommendation pending dependency"
         ai_extension: false
       audited_numerical_match:
         definition: "Result depends on a tuned/calibrated input rather than a structural theorem."
@@ -138,7 +148,7 @@ families:
         ai_extension_rationale: "Catches tuned-input matches presented as derivations."
       audited_failed:
         definition: "Chain does not close on its own terms."
-        equivalent_to: "W3C Retired (with cause)"
+        inspired_by: "W3C Retired (with cause)"
         ai_extension: false
 
   grade:
@@ -147,7 +157,7 @@ families:
     terms:
       retained:
         definition: "Theorem-grade closure on the retained authority surface."
-        equivalent_to: "GRADE High (structural-theorem qualifier)"
+        inspired_by: "GRADE High (structural-theorem qualifier)"
         ai_extension: false
       retained_bounded:
         definition: "Theorem-grade closure with named bounds / admissions."
@@ -167,7 +177,7 @@ families:
     terms:
       missing_dependency_edge:
         definition: "A needed source note exists but is not wired as a direct dependency."
-        equivalent_to: "ISTQB Defect — missing reference"
+        inspired_by: "ISTQB Defect — missing reference"
         ai_extension: false
       dependency_not_retained:
         definition: "A direct dependency exists but is not retained-grade."
@@ -179,11 +189,11 @@ families:
         ai_extension_rationale: "Common AI-generation gap: chain skips a load-bearing bridge."
       scope_too_broad:
         definition: "Clean bounded core exists, but current scope includes an unclosed extension."
-        equivalent_to: "ISTQB Defect — overclaim"
+        inspired_by: "ISTQB Defect — overclaim"
         ai_extension: false
       runner_artifact_issue:
         definition: "Runner, log, classifier, threshold, import, or pass/fail accounting blocks closure."
-        equivalent_to: "ISTQB Defect — test/build artifact"
+        inspired_by: "ISTQB Defect — test/build artifact"
         ai_extension: false
       compute_required:
         definition: "Closure needs a completed long run, sliced runner, or independent derivation."
@@ -210,11 +220,11 @@ families:
         ai_extension_rationale: "Adversarial-review independence at the model-family level."
       strong:
         definition: "Human auditor with no prior involvement in the note."
-        equivalent_to: "Standard independent peer review"
+        inspired_by: "Standard independent peer review"
         ai_extension: false
       external:
         definition: "Off-repo reviewer with no project context."
-        equivalent_to: "External peer review / venue review"
+        inspired_by: "External peer review / venue review"
         ai_extension: false
 
 rewrite_rules:
@@ -296,7 +306,8 @@ Behavior:
     remain that could not be auto-rewritten
 ```
 
-Mechanical rewrites are silent (they apply and the file is saved).
+Mechanical rewrites are automatic; each rewrite is logged in
+`prose_corrections` for the audit trail (automatic, not silent).
 Violations that the YAML does not know how to rewrite mechanically are
 flagged as `needs_human_vocab_decision` — they do not block the
 commit, but they record a `prose_status` entry that batches into a
@@ -457,7 +468,7 @@ The companion cleanup PR will:
 1. **Create `docs/repo/controlled_vocabulary.yaml`** from the existing
    content of CONTROLLED_VOCABULARY.md + audit/README field enums +
    FRESH_LOOK_REQUIREMENTS independence tiers. Populate with
-   `equivalent_to`, `ai_extension`, and `convention_reference` fields
+   `inspired_by`, `ai_extension`, and `convention_reference` fields
    per the schema above.
 2. **Add `scripts/vocab_lint.py`** implementing `--fix` and
    `--report-only` modes against the YAML's rewrite_rules and
@@ -536,22 +547,39 @@ have auto-corrected each note as it was committed.
   ([WRITING_VOICE_GUIDE_2026-04-25.md](../WRITING_VOICE_GUIDE_2026-04-25.md)
   remains separate).
 
-## Open design questions
+## Resolved design decisions
 
-1. **Renderer placement.** Should the YAML-to-Markdown renderer live in
-   `scripts/` (alongside `vocab_lint.py`) or in `docs/audit/scripts/`
-   (alongside the audit pipeline)? Default: `scripts/` to keep the
-   vocabulary system orthogonal to the audit lane.
-2. **YAML schema versioning.** Add a `schema_version: 1` field so
-   future migrations can detect old-schema files? Default: yes.
-3. **`prose_status` propagation.** Should `effective_status` factor in
-   `prose_status`, or only `audit_status`? Default: only
-   `audit_status` — physics drives effective status, prose is recorded
-   separately.
-4. **Vocab-extension review cadence.** How often does a human (or
-   scheduled agent) batch-review the `needs_human_vocab_decision`
-   queue? Default: weekly, or on accumulating 10+ entries — whichever
-   comes first.
+These were "open questions" in earlier drafts; they are now decided
+defaults for Cleanup-1 to implement. The companion review document
+[VOCABULARY_HYGIENE_REVIEW_2026-05-18.md](VOCABULARY_HYGIENE_REVIEW_2026-05-18.md)
+addresses the BLOCKERs and MAJORs raised during adversarial review.
 
-Cleanup PR resolves these or carries them forward as YAML defaults
-with explicit "to be confirmed" markers.
+1. **Renderer placement: `scripts/render_controlled_vocabulary.py`.**
+   The renderer lives in `scripts/` alongside `vocab_lint.py`. The
+   vocabulary system is orthogonal to the audit lane and should not
+   sit under `docs/audit/scripts/`. Both the renderer and the lint
+   are general-purpose repo tooling.
+2. **YAML schema versioning: `schema_version: 1`.** Required at the
+   top of `controlled_vocabulary.yaml`. Future migrations bump the
+   integer and add a migration script under
+   `scripts/migrations/vocab_schema_vN_to_vN+1.py`.
+3. **`prose_status` does NOT propagate into `effective_status`.**
+   `effective_status` is derived from `claim_type` + `audit_status` +
+   dependency-chain closure only. The physics-versus-prose separation
+   is preserved by construction: a non-clean `prose_status` cannot
+   demote a physics-clean row's `effective_status`, and a
+   `prose_status: clean` does not promote it.
+4. **Vocab-extension review cadence: weekly batch OR 10+ queued
+   entries, whichever comes first.** The repo nightly audit cron at
+   `0 6 * * *` UTC can be extended with a "vocab-extension-queue
+   summary" step that posts the current queue as a single comment or
+   issue; a human reviewer or scheduled agent then batches the
+   accepted terms into one PR against `controlled_vocabulary.yaml`.
+   Backpressure: if the queue exceeds 50 entries, audit-loop and
+   review-loop start emitting `prose_status:
+   queue_backpressure_exceeded` instead of
+   `needs_human_vocab_decision` so the absence of review is visible
+   on every new row.
+
+Cleanup-1 implements these decisions; Cleanup-2 sweeps the repo
+against the resulting tooling.

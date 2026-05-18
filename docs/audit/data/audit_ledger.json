@@ -180231,24 +180231,41 @@
       "verdict_rationale": "Issue: the load-bearing step defines the transverse field by imposing a Poisson equation rather than deriving the field law from the framework. Why this blocks: the note's stronger statement that the transverse field is no longer an input needs a theorem deriving the PDE, source, boundary condition, normalization, and physical gravity readout. Repair target: supply a retained bridge theorem deriving the per-layer Poisson equation and the longitudinal law from retained primitives, then rerun the same harness without those choices stipulated. Claim boundary until fixed: numerical evidence for a manually specified Poisson branch with exact null behavior, machine-precision Born cancellation, and near-linear F~M in the tested sweep."
     },
     "poisson_self_gravity_born_audit_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T13:11:47.267721+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_loop_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_loop_note": "retained_bounded"
+        },
+        "deps": [
+          "poisson_self_gravity_loop_note"
+        ],
+        "load_bearing_score": 11.791,
+        "runner_hash": "478123a0f908acd5291a1d22c339e0f07a4d324c6b96ab66c927da58287e8381",
+        "transitive_descendants": 885
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-130932-bf75a80a-poisson_self_gravity_bor-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the lattice propagation and Born diagnostics, but the nonzero-coupling end-to-end row does not converge and reads amplitudes from the pre-last-relaxation code path. A converged seven-subset loop run with final amplitudes recomputed from the returned fields is missing for any converged-loop theorem.",
       "claim_id": "poisson_self_gravity_born_audit_note",
-      "claim_scope": null,
+      "claim_scope": "Narrow h=0.25 three-slit screened Poisson-like loop audit distinguishing frozen step-local Born cancellation from the finite-six-iteration end-to-end nonlinear-loop diagnostic at epsilon=0.05 and source strength 0.004.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-18T13:11:47.267721+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -180256,21 +180273,21 @@
         "poisson_self_gravity_loop_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.791,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The frozen field snapshot remains Born-clean to machine precision, while the nonzero-coupling end-to-end I3/P row is a finite-six-iteration capped diagnostic rather than a converged nonlinear-loop theorem.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "40b5535fa710c1b22fa1242056f05e699b3d6d9887e887a3fd8fe2113a41225a",
       "note_path": "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: make the runner enforce convergence for all seven slit subsets and recompute final detector amplitudes from each returned field, or explicitly split this into a finite-six-iteration diagnostic-only claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -180460,16 +180477,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/poisson_self_gravity_born_audit.py",
       "title": "Poisson Self-Gravity Born Audit Note",
       "transitive_descendants": 885,
-      "verdict_rationale": null
+      "verdict_rationale": "The zero-coupling reduction and frozen-snapshot Born check are computed from the supplied lattice runner and helper rather than hard-coded constants. However, the note itself and runner output report stepConv=False and endConv=False at max_iters=6 for the only nonzero-coupling row, so the end-to-end Born drift is only a capped diagnostic. The cited loop note is provided as retained_bounded in this packet, so the conditional verdict is driven by the runner artifact and convergence perimeter rather than an upstream dependency."
     },
     "poisson_self_gravity_loop_note": {
       "audit_date": "2026-05-18T13:07:59.387810+00:00",

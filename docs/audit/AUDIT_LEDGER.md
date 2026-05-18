@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | audit_in_progress | 1 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 103 |
+| ~~audited_conditional~~ | 104 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 591 |
-| `audited_conditional` | 103 |
+| `audited_conditional` | 104 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1520 |
+| `unaudited` | 1519 |
 
 | claim_type | count |
 |---|---:|
@@ -789,6 +789,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `poisson_self_gravity_born_audit_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -8033,6 +8034,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The TRANSVERSE (y, z) profile at each layer is derived from a 2D Poisson equation: laplacian_perp(f) = -source(iy, iz).  _(class `E`)_
 - **chain closes:** False — The runner solves the stated discrete Poisson problem and reproduces the numerical branch checks, but the Poisson equation, source map, boundary/normalization choices, and longitudinal 1/(dx+0.1) factor are inputs. The restricted packet does not derive those choices from retained primitives or close the physical identification of the resulting field as gravity.
 - **rationale:** Issue: the load-bearing step defines the transverse field by imposing a Poisson equation rather than deriving the field law from the framework. Why this blocks: the note's stronger statement that the transverse field is no longer an input needs a theorem deriving the PDE, source, boundary condition, normalization, and physical gravity readout. Repair target: supply a retained bridge theorem deriving the per-layer Poisson equation and the longitudinal law from retained primitives, then rerun the same harness without those choices stipulated. Claim boundary until fixed: numerical evidence for a manually specified Poisson branch with exact null behavior, machine-precision Born cancellation, and near-linear F~M in the tested sweep.
+- **auditor confidence:** high
+
+### `poisson_self_gravity_born_audit_note`
+
+- **Note:** [`POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md`](../../docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow h=0.25 three-slit screened Poisson-like loop audit distinguishing frozen step-local Born cancellation from the finite-six-iteration end-to-end nonlinear-loop diagnostic at epsilon=0.05 and source strength 0.004.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-130932-bf75a80a-poisson_self_gravity_bor-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The frozen field snapshot remains Born-clean to machine precision, while the nonzero-coupling end-to-end I3/P row is a finite-six-iteration capped diagnostic rather than a converged nonlinear-loop theorem.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the lattice propagation and Born diagnostics, but the nonzero-coupling end-to-end row does not converge and reads amplitudes from the pre-last-relaxation code path. A converged seven-subset loop run with final amplitudes recomputed from the returned fields is missing for any converged-loop theorem.
+- **rationale:** The zero-coupling reduction and frozen-snapshot Born check are computed from the supplied lattice runner and helper rather than hard-coded constants. However, the note itself and runner output report stepConv=False and endConv=False at max_iters=6 for the only nonzero-coupling row, so the end-to-end Born drift is only a capped diagnostic. The cited loop note is provided as retained_bounded in this packet, so the conditional verdict is driven by the runner artifact and convergence perimeter rather than an upstream dependency.
 - **auditor confidence:** high
 
 ### `poisson_self_gravity_loop_note`

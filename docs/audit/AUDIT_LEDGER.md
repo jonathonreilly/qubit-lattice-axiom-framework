@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 356 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | audit_in_progress | 6 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,21 +51,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 6 |
 | `audited_clean` | 585 |
-| `audited_conditional` | 96 |
+| `audited_conditional` | 97 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1529 |
+| `unaudited` | 1528 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 997 |
 | `decoration` | 26 |
-| `meta` | 215 |
+| `meta` | 216 |
 | `no_go` | 230 |
 | `open_gate` | 110 |
-| `positive_theorem` | 750 |
+| `positive_theorem` | 749 |
 
 | criticality | count |
 |---|---:|
@@ -745,6 +745,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `family_companion_compare_note` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3653,6 +3654,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The derivation asserts n_eff ~ M^((d_spatial-1)/d_spatial), f_mix ~ (r/L)^(d_spatial), and therefore an approximate alpha ~ 1/d_spatial dimensional scaling for the decoherence ceiling exponent.  _(class `A`)_
 - **chain closes:** False — The key effective-path-count and mixing-fraction scalings are asserted as heuristic, and the one retained-bounded dependency explicitly reports that the matched 2D-vs-4D replay does not support a clean dimension-only escape claim. Without a derivation from the actual DAG path measure or a matched multi-dimensional runner, the exponent law does not close.
 - **rationale:** Issue: the load-bearing n_eff and f_mix scaling steps are hand-waving assumptions rather than derived consequences of the retained graph/path measure. Why this blocks: the note's alpha~1/d trend and 5D/6D predictions cannot be retained as a bounded theorem when the matched 2D/4D dependency says dimension alone is not currently isolated and no primary runner is attached to this row. Repair target: supply a rigorous path-measure theorem or a pre-registered matched-dimensional sweep that controls topology/connectivity and reproduces the exponent trend. Claim boundary until fixed: the note is usable as an organizing heuristic and prediction sketch, but not as a retained dimensional exponent mechanism.
+- **auditor confidence:** high
+
+### `family_companion_compare_note`
+
+- **Note:** [`FAMILY_COMPANION_COMPARE_NOTE.md`](../../docs/FAMILY_COMPANION_COMPARE_NOTE.md)
+- **claim_type:** `meta`
+- **claim_scope:** A support-level cross-family comparison card summarizing whether three cited/claimed family slices share weak-field linearity, not a retained shared-law theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-family_companion_compare-035`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The comparison table asserts that the retained grown transfer basin, alternative connectivity family, and second grown-family complex all have weak-field F~M near 1, while isolating the second-family control-surface mismatch.  _(class `B`)_
+- **chain closes:** False — The packet does not include the grown-transfer basin authority needed for the retained grown-row F~M=1.000 and zero/neutral controls. The primary runner only hard-codes and renders summary rows; it does not recompute the controls or F~M values.
+- **rationale:** The source note itself states this is a support/static comparison card and not an audit-registered dependency chain. The cited alt-connectivity and second-family notes are retained or retained_bounded in the packet, but the grown-transfer authority is absent while still load-bearing for the three-family comparison. The runner source contains hard-coded FamilyRow constants and performs no independent physics computation, so stdout cannot close the claim.
+- **open / conditional deps cited:**
+  - `archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md`
 - **auditor confidence:** high
 
 ### `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10`

@@ -79272,24 +79272,49 @@
       "verdict_rationale": "Issue: the load-bearing n_eff and f_mix scaling steps are hand-waving assumptions rather than derived consequences of the retained graph/path measure. Why this blocks: the note's alpha~1/d trend and 5D/6D predictions cannot be retained as a bounded theorem when the matched 2D/4D dependency says dimension alone is not currently isolated and no primary runner is attached to this row. Repair target: supply a rigorous path-measure theorem or a pre-registered matched-dimensional sweep that controls topology/connectivity and reproduces the exponent trend. Claim boundary until fixed: the note is usable as an organizing heuristic and prediction sketch, but not as a retained dimensional exponent mechanism."
     },
     "family_companion_compare_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-18T12:32:54.791895+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "alt_connectivity_family_basin_note": "Finite bounded sweep showing that the parity-rotated sector-transition alternative connectivity family has 32/45 passing rows over the stated 9 drift values and 5 seeds on the no-restore grown slice, with no claim of seed-wide, geometry-generic, or unique-family closure.",
+          "alt_connectivity_family_fm_transfer_note": "Weak-field mass-scaling F~M was audited for the parity-rotated sector-transition alternative connectivity family on the no-restore grown slice over drifts 0.0, 0.1, 0.2, 0.3, 0.5 and seeds 0, 1, 2.",
+          "second_grown_family_complex_note": "Narrow anchor-row positive: drift=0.20 on the no-restore Gate B grown geometry with geometry-sector stencil satisfies the runner's Born-proxy, weak-field F~M, and TOWARD@0.1 to AWAY@0.5 complex-action gates over the tested seeds."
+        },
+        "dep_claim_type": {
+          "alt_connectivity_family_basin_note": "bounded_theorem",
+          "alt_connectivity_family_fm_transfer_note": "bounded_theorem",
+          "second_grown_family_complex_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "alt_connectivity_family_basin_note": "retained_bounded",
+          "alt_connectivity_family_fm_transfer_note": "retained_bounded",
+          "second_grown_family_complex_note": "retained"
+        },
+        "deps": [
+          "alt_connectivity_family_basin_note",
+          "alt_connectivity_family_fm_transfer_note",
+          "second_grown_family_complex_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7926c2af29f27137d4265058dbd705af7987e20bd0c4a3004f645a3afb9d7290",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-family_companion_compare-035",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet does not include the grown-transfer basin authority needed for the retained grown-row F~M=1.000 and zero/neutral controls. The primary runner only hard-codes and renders summary rows; it does not recompute the controls or F~M values.",
       "claim_id": "family_companion_compare_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "A support-level cross-family comparison card summarizing whether three cited/claimed family slices share weak-field linearity, not a retained shared-law theorem.",
+      "claim_type": "meta",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-18T12:32:54.791895+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -79299,20 +79324,22 @@
         "alt_connectivity_family_fm_transfer_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The comparison table asserts that the retained grown transfer basin, alternative connectivity family, and second grown-family complex all have weak-field F~M near 1, while isolating the second-family control-surface mismatch.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "655f8fc6f588102b6b080c38fa0b01d43a44203ceae696422305b275f57f1be8",
       "note_path": "docs/FAMILY_COMPANION_COMPARE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include or register the grown-transfer basin authority and provide a runner that recomputes the controls and F~M values on the same declared observable surface.",
+      "open_dependency_paths": [
+        "archive_unlanded/grown-transfer-stale-runners-2026-04-30/GROWN_TRANSFER_BASIN_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.368292+00:00",
@@ -79476,7 +79503,7 @@
       "runner_path": "scripts/FAMILY_COMPANION_COMPARE.py",
       "title": "Family Companion Compare Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note itself states this is a support/static comparison card and not an audit-registered dependency chain. The cited alt-connectivity and second-family notes are retained or retained_bounded in the packet, but the grown-transfer authority is absent while still load-bearing for the three-family comparison. The runner source contains hard-coded FamilyRow constants and performs no independent physics computation, so stdout cannot close the claim."
     },
     "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T01:53:59.618423+00:00",

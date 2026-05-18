@@ -26911,47 +26911,22 @@
       "verdict_rationale": null
     },
     "ckm_barred_weitzenbock_brocard_polynomial_closed_form_theorem_note_2026-04-25": {
-      "audit_date": "2026-05-05T23:48:05.733265+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {
-          "ckm_barred_apex_angle_exact_closed_form_theorem_note_2026-04-25": "audited_conditional",
-          "ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25": "audited_conditional",
-          "ckm_barred_orthocenter_euler_line_exact_closed_form_theorem_note_2026-04-25": "audited_conditional",
-          "ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_theorem_note_2026-04-25": "audited_conditional",
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
-          "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25": "audited_conditional",
-          "ckm_magnitudes_structural_counts_theorem_note_2026-04-25": "audited_conditional",
-          "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25": "audited_conditional"
-        },
-        "deps": [
-          "ckm_barred_apex_angle_exact_closed_form_theorem_note_2026-04-25",
-          "ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25",
-          "ckm_barred_orthocenter_euler_line_exact_closed_form_theorem_note_2026-04-25",
-          "ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_theorem_note_2026-04-25",
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
-          "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25",
-          "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
-          "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25"
-        ],
-        "load_bearing_score": 13.826,
-        "runner_hash": "78dbee81985a6ffaf598088599203d9d941b42e1d76be4e3a30f91bf9df49021",
-        "transitive_descendants": 320
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-ckm_barred_weitzenbock_b-087",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The symbolic algebra closes conditionally from the provided apex formulas and counts. The audit-grade chain does not close because direct upstream authorities in the restricted packet are audited_conditional or unaudited rather than retained-grade.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "ckm_barred_weitzenbock_brocard_polynomial_closed_form_theorem_note_2026-04-25",
-      "claim_scope": "Algebraic Weitzenbock sum/gap, product factorization, five-form P(alpha_s) identities, and Q[sqrt(15)] factorization for the barred triangle assuming the cited barred-apex coordinates and structural counts.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-05T23:48:05.733265+00:00",
-      "claim_type_provenance": "audited",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -26966,25 +26941,20 @@
         "ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_theorem_note_2026-04-25"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.767,
-      "load_bearing_step": "W_+ * W_- = (perim_sq)^2 - 48 Area^2 = P(alpha_s)/2304, where P(alpha_s) = (alpha_s^2 - 4 alpha_s + 96)^2 - 240(4 - alpha_s)^2.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "658c29bdb478b67e549b5d194077c2b1f4948cb6a96df1f7d86c826c2e64a2e6",
+      "note_hash": "a3f39505e52b5fb76ad36a1cd0e12b7f7329f9f2b81482e7e9ae862903f925e4",
       "note_path": "docs/CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: audit or ratify the direct upstream NLO protected-gamma, structural-counts, CP-phase, and Jarlskog authority rows to retained grade, then re-audit whether the remaining five-form unification scope should be split as algebraic decoration.",
-      "open_dependency_paths": [
-        "docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
-        "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
-        "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.367792+00:00",
@@ -27010,51 +26980,101 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-18T11:26:26.982102+00:00",
+          "archived_for_note_hash": "658c29bdb478b67e549b5d194077c2b1f4948cb6a96df1f7d86c826c2e64a2e6",
+          "audit_date": "2026-05-05T23:48:05.733265+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {
+              "ckm_barred_apex_angle_exact_closed_form_theorem_note_2026-04-25": "audited_conditional",
+              "ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25": "audited_conditional",
+              "ckm_barred_orthocenter_euler_line_exact_closed_form_theorem_note_2026-04-25": "audited_conditional",
+              "ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_theorem_note_2026-04-25": "audited_conditional",
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
+              "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25": "audited_conditional",
+              "ckm_magnitudes_structural_counts_theorem_note_2026-04-25": "audited_conditional",
+              "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25": "audited_conditional"
+            },
+            "deps": [
+              "ckm_barred_apex_angle_exact_closed_form_theorem_note_2026-04-25",
+              "ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25",
+              "ckm_barred_orthocenter_euler_line_exact_closed_form_theorem_note_2026-04-25",
+              "ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_theorem_note_2026-04-25",
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
+              "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25",
+              "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
+              "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25"
+            ],
+            "load_bearing_score": 13.826,
+            "runner_hash": "78dbee81985a6ffaf598088599203d9d941b42e1d76be4e3a30f91bf9df49021",
+            "transitive_descendants": 320
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-ckm_barred_weitzenbock_b-087",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The symbolic algebra closes conditionally from the provided apex formulas and counts. The audit-grade chain does not close because direct upstream authorities in the restricted packet are audited_conditional or unaudited rather than retained-grade.",
+          "claim_scope": "Algebraic Weitzenbock sum/gap, product factorization, five-form P(alpha_s) identities, and Q[sqrt(15)] factorization for the barred triangle assuming the cited barred-apex coordinates and structural counts.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-05T23:48:05.733265+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "W_+ * W_- = (perim_sq)^2 - 48 Area^2 = P(alpha_s)/2304, where P(alpha_s) = (alpha_s^2 - 4 alpha_s + 96)^2 - 240(4 - alpha_s)^2.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: audit or ratify the direct upstream NLO protected-gamma, structural-counts, CP-phase, and Jarlskog authority rows to retained grade, then re-audit whether the remaining five-form unification scope should be split as algebraic decoration.",
+          "open_dependency_paths": [
+            "docs/CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA_THEOREM_NOTE_2026-04-25.md",
+            "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md",
+            "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_JARLSKOG_EXACT_NLO_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 18,
+            "B": 10,
+            "C": 0,
+            "D": 0,
+            "total_pass": 28
+          },
+          "verdict_rationale": "Issue: the load-bearing identities are class-A algebra, but the cited authority packet marks upstream inputs as audited_conditional or unaudited. Why this blocks: the theorem depends on rho_bar, eta_bar, N_pair, N_color, N_quark, and related retained-input claims whose retained-grade closure is not established in this restricted packet. Repair target: audit or ratify the direct upstream authority rows to retained-grade, and then re-audit the W7 unification scope. Claim boundary until fixed: the Weitzenbock/Brocard identities are valid conditional algebra over the supplied barred-triangle surface."
         }
       ],
       "runner_check_breakdown": {
-        "A": 18,
-        "B": 10,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 28
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_ckm_barred_weitzenbock_brocard_polynomial_closed_form.py",
       "title": "Barred Unitarity-Triangle Weitzenbock Inequality + Brocard-Polynomial Unification: EXACT Closed Form Theorem",
       "transitive_descendants": 870,
-      "verdict_rationale": "Issue: the load-bearing identities are class-A algebra, but the cited authority packet marks upstream inputs as audited_conditional or unaudited. Why this blocks: the theorem depends on rho_bar, eta_bar, N_pair, N_color, N_quark, and related retained-input claims whose retained-grade closure is not established in this restricted packet. Repair target: audit or ratify the direct upstream authority rows to retained-grade, and then re-audit the W7 unification scope. Claim boundary until fixed: the Weitzenbock/Brocard identities are valid conditional algebra over the supplied barred-triangle surface."
+      "verdict_rationale": null
     },
     "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25": {
-      "audit_date": "2026-04-30T11:42:30.044720+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
-          "ckm_magnitudes_structural_counts_theorem_note_2026-04-25": "audited_conditional",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
-        },
-        "deps": [
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
-          "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
-        ],
-        "load_bearing_score": 14.34,
-        "transitive_descendants": 80
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-critical-sweep-20260430",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_provenance": "backfilled_pending_reaudit",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
@@ -27062,24 +27082,20 @@
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25"
       ],
       "direct_in_degree": 16,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 17.767,
-      "load_bearing_step": "The CKM-side identities K1, K2, K5, and K6 all reduce to 2/9 from retained count inputs, while cross-sector Koide reading remains support commentary.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "0cf60c23c233c65dacdac9b7b07fbe88f9f1822b0838baf7d26f4a334015a456",
+      "note_hash": "bff5ad9437ab335a4af63d229662682fa040174721b5f04708e724e063360b0a",
       "note_path": "docs/CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
-      "open_dependency_paths": [
-        "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -27106,21 +27122,71 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-18T11:26:26.982291+00:00",
+          "archived_for_note_hash": "0cf60c23c233c65dacdac9b7b07fbe88f9f1822b0838baf7d26f4a334015a456",
+          "audit_date": "2026-04-30T11:42:30.044720+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
+              "ckm_magnitudes_structural_counts_theorem_note_2026-04-25": "audited_conditional",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
+            },
+            "deps": [
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
+              "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
+            ],
+            "load_bearing_score": 14.34,
+            "transitive_descendants": 80
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-critical-sweep-20260430",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md.",
+          "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": null,
+          "claim_type_provenance": "backfilled_pending_reaudit",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The CKM-side identities K1, K2, K5, and K6 all reduce to 2/9 from retained count inputs, while cross-sector Koide reading remains support commentary.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
+          "open_dependency_paths": [
+            "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 31,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 31
+          },
+          "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
         }
       ],
       "relabel_date": "2026-05-06T17:45:26.976780+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 31,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 31
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_ckm_bernoulli_two_ninths_koide_bridge.py",
       "title": "Bernoulli-Variance 2/9 Identities in CKM: Support for the Cross-Sector Koide Bridge",
       "transitive_descendants": 870,
-      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_MAGNITUDES_STRUCTURAL_COUNTS_THEOREM_NOTE_2026-04-25.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+      "verdict_rationale": null
     },
     "ckm_brocard_polynomial_vieta_structural_integers_theorem_note_2026-04-25": {
       "audit_date": null,
@@ -27281,40 +27347,24 @@
       "verdict_rationale": null
     },
     "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25": {
-      "audit_date": "2026-04-30T11:42:26.485037+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {
-          "alpha_s_derived_note": "audited_conditional",
-          "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24": "audited_conditional",
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
-          "ckm_third_row_magnitudes_theorem_note_2026-04-24": "audited_conditional",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
-        },
-        "deps": [
-          "alpha_s_derived_note",
-          "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24",
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
-          "ckm_third_row_magnitudes_theorem_note_2026-04-24",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
-        ],
-        "load_bearing_score": 14.358,
-        "transitive_descendants": 81
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-critical-sweep-20260430",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md, CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_provenance": "backfilled_pending_reaudit",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "alpha_s_derived_note",
@@ -27324,26 +27374,20 @@
         "ckm_third_row_magnitudes_theorem_note_2026-04-24"
       ],
       "direct_in_degree": 15,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 17.267,
-      "load_bearing_step": "The atlas-leading B_s phase is beta_s,0 = alpha_s(v) sqrt(5)/12 and phi_s,0 = -alpha_s(v) sqrt(5)/6.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "a194c936a5830a7ae4688b14f5ccffbc267596be9c59ce4a7c2bf07e13d4809f",
+      "note_hash": "f7ded50187e38dc4ecbc609784cc13b0fc791733e5d5445652ad43acaf0702aa",
       "note_path": "docs/CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
-      "open_dependency_paths": [
-        "docs/ALPHA_S_DERIVED_NOTE.md",
-        "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -27395,21 +27439,77 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-18T11:26:26.982309+00:00",
+          "archived_for_note_hash": "a194c936a5830a7ae4688b14f5ccffbc267596be9c59ce4a7c2bf07e13d4809f",
+          "audit_date": "2026-04-30T11:42:26.485037+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {
+              "alpha_s_derived_note": "audited_conditional",
+              "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24": "audited_conditional",
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
+              "ckm_third_row_magnitudes_theorem_note_2026-04-24": "audited_conditional",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
+            },
+            "deps": [
+              "alpha_s_derived_note",
+              "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24",
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
+              "ckm_third_row_magnitudes_theorem_note_2026-04-24",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
+            ],
+            "load_bearing_score": 14.358,
+            "transitive_descendants": 81
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-critical-sweep-20260430",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md, CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md.",
+          "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": null,
+          "claim_type_provenance": "backfilled_pending_reaudit",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The atlas-leading B_s phase is beta_s,0 = alpha_s(v) sqrt(5)/12 and phi_s,0 = -alpha_s(v) sqrt(5)/6.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
+          "open_dependency_paths": [
+            "docs/ALPHA_S_DERIVED_NOTE.md",
+            "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 45,
+            "B": 0,
+            "C": 0,
+            "D": 8,
+            "total_pass": 53
+          },
+          "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md, CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
         }
       ],
       "relabel_date": "2026-05-06T17:45:26.976783+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 45,
+        "A": 0,
         "B": 0,
         "C": 0,
-        "D": 8,
-        "total_pass": 53
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_ckm_bs_mixing_phase_derivation.py",
       "title": "CKM B_s Mixing Phase Derivation Theorem",
       "transitive_descendants": 870,
-      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md, CKM_THIRD_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-24.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+      "verdict_rationale": null
     },
     "ckm_classical_number_theory_integer_characterization_theorem_note_2026-04-25": {
       "audit_date": null,
@@ -30754,40 +30854,24 @@
       "verdict_rationale": null
     },
     "ckm_thales_cross_system_cp_ratio_theorem_note_2026-04-25": {
-      "audit_date": "2026-04-30T11:42:33.444927+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {
-          "alpha_s_derived_note": "audited_conditional",
-          "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24": "audited_conditional",
-          "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25": "audited_conditional",
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
-        },
-        "deps": [
-          "alpha_s_derived_note",
-          "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24",
-          "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25",
-          "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
-          "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
-        ],
-        "load_bearing_score": 14.34,
-        "transitive_descendants": 80
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-critical-sweep-20260430",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md, ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "ckm_thales_cross_system_cp_ratio_theorem_note_2026-04-25",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_provenance": "backfilled_pending_reaudit",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25",
@@ -30797,26 +30881,20 @@
         "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24"
       ],
       "direct_in_degree": 15,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 17.267,
-      "load_bearing_step": "The B_d-to-B_s phase readout ratios are claimed to reduce exactly to +/-lambda^2 = +/-alpha_s(v)/2 on the atlas-leading Thales surface.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "394ec78f2cac07349555080109f04e559e88fe42870694f3d5f4f2b89a7fcb47",
+      "note_hash": "8124746dabe140f407690cc45c8a960f56d053091a10f80881a57065b78d11f8",
       "note_path": "docs/CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
-      "open_dependency_paths": [
-        "docs/CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md",
-        "docs/ALPHA_S_DERIVED_NOTE.md",
-        "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
-        "docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -30843,21 +30921,77 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-18T11:26:26.982408+00:00",
+          "archived_for_note_hash": "394ec78f2cac07349555080109f04e559e88fe42870694f3d5f4f2b89a7fcb47",
+          "audit_date": "2026-04-30T11:42:33.444927+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {
+              "alpha_s_derived_note": "audited_conditional",
+              "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24": "audited_conditional",
+              "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25": "audited_conditional",
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24": "audited_conditional",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24": "audited_conditional"
+            },
+            "deps": [
+              "alpha_s_derived_note",
+              "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24",
+              "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25",
+              "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
+              "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
+            ],
+            "load_bearing_score": 14.34,
+            "transitive_descendants": 80
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-critical-sweep-20260430",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md, ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md.",
+          "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": null,
+          "claim_type_provenance": "backfilled_pending_reaudit",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "The B_d-to-B_s phase readout ratios are claimed to reduce exactly to +/-lambda^2 = +/-alpha_s(v)/2 on the atlas-leading Thales surface.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
+          "open_dependency_paths": [
+            "docs/CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md",
+            "docs/ALPHA_S_DERIVED_NOTE.md",
+            "docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
+            "docs/CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 32,
+            "B": 0,
+            "C": 0,
+            "D": 3,
+            "total_pass": 35
+          },
+          "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md, ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
         }
       ],
       "relabel_date": "2026-05-06T17:45:26.976798+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 32,
+        "A": 0,
         "B": 0,
         "C": 0,
-        "D": 3,
-        "total_pass": 35
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_ckm_thales_cross_system_cp_ratio.py",
       "title": "CKM Thales-Mediated Cross-System CP-Asymmetry Ratio Theorem",
       "transitive_descendants": 870,
-      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md, ALPHA_S_DERIVED_NOTE.md, WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_THEOREM_NOTE_2026-04-24.md, CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md, CKM_ATLAS_TRIANGLE_RIGHT_ANGLE_THEOREM_NOTE_2026-04-24.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+      "verdict_rationale": null
     },
     "ckm_thales_pinned_alpha_s_independent_ratios_theorem_note_2026-04-25": {
       "audit_date": null,
@@ -145124,42 +145258,24 @@
       "verdict_rationale": "The load-bearing negative follows from the cached completed runner: slope relative deviation across packets is 123.07%, with persistence and family-portability criteria also failing. The runner does not merely print constants; it grows the DAG, constructs Gaussian sources, applies the linear field, propagates amplitudes, fits delta_z versus g, and computes the stated failure metrics. This supports a clean scoped no-go for the specified Gaussian-packet closure attempt, not a broader no-go against solitons, coherent states, topological defects, modified actions, or other structural alternatives. Residual risk is confined to whether the audit lane should treat the author's 10% and R2 > 0.99 thresholds as the intended closure criteria, but the equivalence failure is large enough that the conclusion is not threshold-fragile."
     },
     "matter_radiation_equality_structural_identity_theorem_note_2026-04-24": {
-      "audit_date": "2026-04-30T11:42:57.126225+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {
-          "cosmology_from_mass_spectrum_note": "audited_conditional",
-          "cosmology_frw_kinematic_reduction_theorem_note_2026-04-24": "audited_conditional",
-          "dark_energy_eos_retained_corollary_theorem_note": "audited_conditional",
-          "n_eff_from_three_generations_theorem_note_2026-04-24": "audited_failed",
-          "r_base_group_theory_derivation_theorem_note_2026-04-24": "audited_conditional",
-          "three_generation_structure_note": "audited_conditional"
-        },
-        "deps": [
-          "cosmology_from_mass_spectrum_note",
-          "cosmology_frw_kinematic_reduction_theorem_note_2026-04-24",
-          "dark_energy_eos_retained_corollary_theorem_note",
-          "n_eff_from_three_generations_theorem_note_2026-04-24",
-          "r_base_group_theory_derivation_theorem_note_2026-04-24",
-          "three_generation_structure_note"
-        ],
-        "load_bearing_score": 12.785,
-        "transitive_descendants": 38
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-critical-sweep-20260430",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md, COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md, R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md, N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md, DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md, THREE_GENERATION_STRUCTURE_NOTE.md.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "matter_radiation_equality_structural_identity_theorem_note_2026-04-24",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "positive_theorem",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_provenance": "backfilled_pending_reaudit",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "cosmology_frw_kinematic_reduction_theorem_note_2026-04-24",
@@ -145170,27 +145286,20 @@
         "three_generation_structure_note"
       ],
       "direct_in_degree": 15,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 17.267,
-      "load_bearing_step": "Matter-radiation equality obeys 1+z_mr = Omega_m,0/Omega_r,0 on the admitted flat-FRW matter/radiation surface.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "43162dc7e402b51ccd47edd1164dd122a4bf3e95b5110a4f2d291bff88eec502",
+      "note_hash": "8780982e06304b9cd661ead70ebca2eee9764dd62ecb9413a08328e5b63e7038",
       "note_path": "docs/MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
-      "open_dependency_paths": [
-        "docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
-        "docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md",
-        "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
-        "docs/N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md",
-        "docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
-        "docs/THREE_GENERATION_STRUCTURE_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -145217,21 +145326,80 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-18T11:26:26.985157+00:00",
+          "archived_for_note_hash": "43162dc7e402b51ccd47edd1164dd122a4bf3e95b5110a4f2d291bff88eec502",
+          "audit_date": "2026-04-30T11:42:57.126225+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {
+              "cosmology_from_mass_spectrum_note": "audited_conditional",
+              "cosmology_frw_kinematic_reduction_theorem_note_2026-04-24": "audited_conditional",
+              "dark_energy_eos_retained_corollary_theorem_note": "audited_conditional",
+              "n_eff_from_three_generations_theorem_note_2026-04-24": "audited_failed",
+              "r_base_group_theory_derivation_theorem_note_2026-04-24": "audited_conditional",
+              "three_generation_structure_note": "audited_conditional"
+            },
+            "deps": [
+              "cosmology_from_mass_spectrum_note",
+              "cosmology_frw_kinematic_reduction_theorem_note_2026-04-24",
+              "dark_energy_eos_retained_corollary_theorem_note",
+              "n_eff_from_three_generations_theorem_note_2026-04-24",
+              "r_base_group_theory_derivation_theorem_note_2026-04-24",
+              "three_generation_structure_note"
+            ],
+            "load_bearing_score": 12.785,
+            "transitive_descendants": 38
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-critical-sweep-20260430",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md, COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md, R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md, N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md, DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md, THREE_GENERATION_STRUCTURE_NOTE.md.",
+          "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": null,
+          "claim_type_provenance": "backfilled_pending_reaudit",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "Matter-radiation equality obeys 1+z_mr = Omega_m,0/Omega_r,0 on the admitted flat-FRW matter/radiation surface.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
+          "open_dependency_paths": [
+            "docs/COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md",
+            "docs/COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md",
+            "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
+            "docs/N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md",
+            "docs/DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md",
+            "docs/THREE_GENERATION_STRUCTURE_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 8,
+            "B": 2,
+            "C": 0,
+            "D": 4,
+            "total_pass": 14
+          },
+          "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md, COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md, R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md, N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md, DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md, THREE_GENERATION_STRUCTURE_NOTE.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
         }
       ],
       "relabel_date": "2026-05-06T17:45:26.976939+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 8,
-        "B": 2,
+        "A": 0,
+        "B": 0,
         "C": 0,
-        "D": 4,
-        "total_pass": 14
+        "D": 0,
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_matter_radiation_equality_structural_identity.py",
       "title": "Matter-Radiation Equality Structural Identity Theorem",
       "transitive_descendants": 870,
-      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md, COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md, R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md, N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md, DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md, THREE_GENERATION_STRUCTURE_NOTE.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+      "verdict_rationale": null
     },
     "matter_self_focusing_note": {
       "audit_date": "2026-05-05T11:40:10.045514+00:00",
@@ -192328,45 +192496,24 @@
       "verdict_rationale": null
     },
     "rconn_derived_note": {
-      "audit_date": "2026-05-10T14:12:01.558745+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Exact SU(N_c) Fierz/channel-count derivation of the adjoint q-qbar fraction (N_c^2 - 1)/N_c^2, with N_c=3 giving 8/9, excluding the EW vacuum-polarization matching rule.",
-          "yukawa_color_projection_theorem": "Only the exact SU(N_c) Fierz/Hilbert-space channel-counting identity giving the adjoint dimension fraction (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; no physical Higgs-Z, Yukawa, EW matching, or connected-dynamics matching claim was ratified."
-        },
-        "dep_claim_type": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "bounded_theorem",
-          "yukawa_color_projection_theorem": "decoration"
-        },
-        "dep_effective_status": {
-          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained_bounded",
-          "yukawa_color_projection_theorem": "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01"
-        },
-        "deps": [
-          "ew_current_fierz_channel_decomposition_note_2026-05-01",
-          "yukawa_color_projection_theorem"
-        ],
-        "load_bearing_score": 15.873,
-        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
-        "transitive_descendants": 468
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-audit-loop-019e1239-f903-7232-84d5-7a252206bbc6",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The exact 8/9 representation-dimension fraction closes through the Fierz authority, but the promotion to the lattice connected-trace observable is the explicitly open matching rule (M) plus an unclosed dynamical channel-population heuristic. The timed-out runner provides no completed PASS evidence, and its source hard-codes 8/9 as the expected target rather than deriving the bridge.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "rconn_derived_note",
-      "claim_scope": "Conditional R_conn estimate at N_c=3 importing the exact Fierz adjoint channel-count fraction and assuming the open connected-trace-to-adjoint matching rule (M).",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (estimate + MC cross-check), open dynamical",
-      "claim_type_last_reviewed": "2026-05-10T14:12:01.558745+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -192375,22 +192522,20 @@
         "yukawa_color_projection_theorem"
       ],
       "direct_in_degree": 15,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 17.395,
-      "load_bearing_step": "\u201cAssuming the matching rule (M) of the cited Fierz authority \u2014 that the lattice connected color trace projects onto the adjoint channel \u2014 the leading-order 't Hooft topological dominance ... gives R_conn = (N_c^2 \u2212 1)/N_c^2 + O(1/N_c^4).\u201d",
-      "load_bearing_step_class": "F",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "08806e2aeb96375a31c651cc323224cef82d8ddeed4f27afe6f81821181d897b",
+      "note_hash": "7c3e56a464413fff91060a00da7386135f63c87d145d2be68bd039518fbb232a",
       "note_path": "docs/RCONN_DERIVED_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the connected-trace-to-adjoint-channel matching rule and the dynamical channel-population/correction estimate from retained primitives; then supply a completed non-hard-coded computation or certificate.",
-      "open_dependency_paths": [
-        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -192599,6 +192744,61 @@
             "total_pass": 3
           },
           "verdict_rationale": "The runner performs a Monte Carlo comparison against the expected 8/9 value, but the code also computes that value explicitly as the check target and does not derive the contested dynamical identification from first principles. The source note's decisive step is the assertion that the connected/adjoint propagator fraction equals the representation dimension fraction, which is an open bridge between a group-theory decomposition and a dynamical lattice observable. The provided Fierz authority supports the exact 8/9 channel-counting ratio, not the physical connected-trace matching claimed here."
+        },
+        {
+          "archived_at": "2026-05-18T11:26:26.986452+00:00",
+          "archived_for_note_hash": "08806e2aeb96375a31c651cc323224cef82d8ddeed4f27afe6f81821181d897b",
+          "audit_date": "2026-05-10T14:12:01.558745+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "Exact SU(N_c) Fierz/channel-count derivation of the adjoint q-qbar fraction (N_c^2 - 1)/N_c^2, with N_c=3 giving 8/9, excluding the EW vacuum-polarization matching rule.",
+              "yukawa_color_projection_theorem": "Only the exact SU(N_c) Fierz/Hilbert-space channel-counting identity giving the adjoint dimension fraction (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; no physical Higgs-Z, Yukawa, EW matching, or connected-dynamics matching claim was ratified."
+            },
+            "dep_claim_type": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "bounded_theorem",
+              "yukawa_color_projection_theorem": "decoration"
+            },
+            "dep_effective_status": {
+              "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained_bounded",
+              "yukawa_color_projection_theorem": "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01"
+            },
+            "deps": [
+              "ew_current_fierz_channel_decomposition_note_2026-05-01",
+              "yukawa_color_projection_theorem"
+            ],
+            "load_bearing_score": 15.873,
+            "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+            "transitive_descendants": 468
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-audit-loop-019e1239-f903-7232-84d5-7a252206bbc6",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The exact 8/9 representation-dimension fraction closes through the Fierz authority, but the promotion to the lattice connected-trace observable is the explicitly open matching rule (M) plus an unclosed dynamical channel-population heuristic. The timed-out runner provides no completed PASS evidence, and its source hard-codes 8/9 as the expected target rather than deriving the bridge.",
+          "claim_scope": "Conditional R_conn estimate at N_c=3 importing the exact Fierz adjoint channel-count fraction and assuming the open connected-trace-to-adjoint matching rule (M).",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T14:12:01.558745+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "\u201cAssuming the matching rule (M) of the cited Fierz authority \u2014 that the lattice connected color trace projects onto the adjoint channel \u2014 the leading-order 't Hooft topological dominance ... gives R_conn = (N_c^2 \u2212 1)/N_c^2 + O(1/N_c^4).\u201d",
+          "load_bearing_step_class": "F",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the connected-trace-to-adjoint-channel matching rule and the dynamical channel-population/correction estimate from retained primitives; then supply a completed non-hard-coded computation or certificate.",
+          "open_dependency_paths": [
+            "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Issue: the load-bearing observable identification is an admitted open bridge, not derived from the supplied source and one-hop authorities. Why this blocks: the retained Fierz note proves only the adjoint Hilbert-space dimension fraction, not that the lattice connected color trace or its dynamics inherits that fraction with the stated O(1/N_c^4) correction. Repair target: prove matching rule (M) and the channel-population/correction estimate from retained lattice primitives, with a runner that does not set 8/9 as its target. Claim boundary until fixed: exact imported Fierz channel-count fraction plus conditional MC consistency framing only."
         }
       ],
       "runner_check_breakdown": {
@@ -192611,7 +192811,7 @@
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate",
       "transitive_descendants": 951,
-      "verdict_rationale": "Issue: the load-bearing observable identification is an admitted open bridge, not derived from the supplied source and one-hop authorities. Why this blocks: the retained Fierz note proves only the adjoint Hilbert-space dimension fraction, not that the lattice connected color trace or its dynamics inherits that fraction with the stated O(1/N_c^4) correction. Repair target: prove matching rule (M) and the channel-population/correction estimate from retained lattice primitives, with a runner that does not set 8/9 as its target. Claim boundary until fixed: exact imported Fierz channel-count fraction plus conditional MC consistency framing only."
+      "verdict_rationale": null
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T21:41:21.838713+00:00",
@@ -259515,8 +259715,8 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2265,
-    "re_audit_required": 5,
+    "preserved_existing": 2264,
+    "re_audit_required": 6,
     "row_count": 2314,
     "seeded_new": 0
   }

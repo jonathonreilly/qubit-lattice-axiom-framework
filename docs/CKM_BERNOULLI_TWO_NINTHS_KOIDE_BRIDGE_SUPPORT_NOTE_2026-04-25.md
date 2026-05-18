@@ -1,6 +1,29 @@
 # Bernoulli-Variance 2/9 Identities in CKM: Support for the Cross-Sector Koide Bridge
 
-**Date:** 2026-04-25
+**Date:** 2026-04-25 (2026-05-18: claim_scope narrowed to conditional
+algebra / supporting local structure on upstream `unaudited` /
+`proposed_retained` rows per audit verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **exact conditional algebra on the upstream CKM
+inputs**, plus **cross-sector SUPPORT commentary** for the Koide
+variance-ratio reading. The CKM section derives the rational identity
+`2/9` through four algebraically distinct CKM readouts using only
+upstream inputs currently labeled `unaudited` / `proposed_retained`
+on the live ledger
+(`wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24`,
+`ckm_cp_phase_structural_identity_theorem_note_2026-04-24`,
+`ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25`,
+`alpha_s_derived_note`). The four `2/9` identities are exact
+algebraic identities on that conditional surface. The cross-sector
+support commentary (parallel to the Koide variance ratio
+`(N_gen - 1)/N_gen² = 2/9`) is **explicitly support only**, not a
+closure of any cross-sector unification programme. The audit
+verdict's repair sub-target ("ratify or repair the listed upstream
+theorem/bridge rows") remains separate open work. Until then, this
+note's identities may be cited as **conditional / supporting local
+structure** only.
+**Status authority:** independent audit lane only.
 
 **Status:** exact CKM-structure support corollary on proposed_retained main inputs,
 plus explicit cross-sector SUPPORT commentary. The CKM section derives the

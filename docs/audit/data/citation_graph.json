@@ -43214,9 +43214,9 @@
     },
     "ckm_barred_weitzenbock_brocard_polynomial_closed_form_theorem_note_2026-04-25": {
       "claim_id": "ckm_barred_weitzenbock_brocard_polynomial_closed_form_theorem_note_2026-04-25",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25",
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
@@ -43228,23 +43228,23 @@
         "ckm_barred_triangle_pythagorean_rho_lambda_sum_rule_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "658c29bdb478b67e549b5d194077c2b1f4948cb6a96df1f7d86c826c2e64a2e6",
+      "note_hash": "a3f39505e52b5fb76ad36a1cd0e12b7f7329f9f2b81482e7e9ae862903f925e4",
       "path": "docs/CKM_BARRED_WEITZENBOCK_BROCARD_POLYNOMIAL_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_ckm_barred_weitzenbock_brocard_polynomial_closed_form.py",
       "title": "Barred Unitarity-Triangle Weitzenbock Inequality + Brocard-Polynomial Unification: EXACT Closed Form Theorem"
     },
     "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25": {
       "claim_id": "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
         "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0cf60c23c233c65dacdac9b7b07fbe88f9f1822b0838baf7d26f4a334015a456",
+      "note_hash": "bff5ad9437ab335a4af63d229662682fa040174721b5f04708e724e063360b0a",
       "path": "docs/CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_ckm_bernoulli_two_ninths_koide_bridge.py",
       "title": "Bernoulli-Variance 2/9 Identities in CKM: Support for the Cross-Sector Koide Bridge"
@@ -43283,9 +43283,9 @@
     },
     "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25": {
       "claim_id": "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "alpha_s_derived_note",
         "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
@@ -43294,7 +43294,7 @@
         "ckm_third_row_magnitudes_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a194c936a5830a7ae4688b14f5ccffbc267596be9c59ce4a7c2bf07e13d4809f",
+      "note_hash": "f7ded50187e38dc4ecbc609784cc13b0fc791733e5d5445652ad43acaf0702aa",
       "path": "docs/CKM_BS_MIXING_PHASE_DERIVATION_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_ckm_bs_mixing_phase_derivation.py",
       "title": "CKM B_s Mixing Phase Derivation Theorem"
@@ -43799,9 +43799,9 @@
     },
     "ckm_thales_cross_system_cp_ratio_theorem_note_2026-04-25": {
       "claim_id": "ckm_thales_cross_system_cp_ratio_theorem_note_2026-04-25",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25",
         "alpha_s_derived_note",
@@ -43810,7 +43810,7 @@
         "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "394ec78f2cac07349555080109f04e559e88fe42870694f3d5f4f2b89a7fcb47",
+      "note_hash": "8124746dabe140f407690cc45c8a960f56d053091a10f80881a57065b78d11f8",
       "path": "docs/CKM_THALES_CROSS_SYSTEM_CP_RATIO_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_ckm_thales_cross_system_cp_ratio.py",
       "title": "CKM Thales-Mediated Cross-System CP-Asymmetry Ratio Theorem"
@@ -59969,9 +59969,9 @@
     },
     "matter_radiation_equality_structural_identity_theorem_note_2026-04-24": {
       "claim_id": "matter_radiation_equality_structural_identity_theorem_note_2026-04-24",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cosmology_frw_kinematic_reduction_theorem_note_2026-04-24",
         "cosmology_from_mass_spectrum_note",
@@ -59981,7 +59981,7 @@
         "three_generation_structure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "43162dc7e402b51ccd47edd1164dd122a4bf3e95b5110a4f2d291bff88eec502",
+      "note_hash": "8780982e06304b9cd661ead70ebca2eee9764dd62ecb9413a08328e5b63e7038",
       "path": "docs/MATTER_RADIATION_EQUALITY_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_matter_radiation_equality_structural_identity.py",
       "title": "Matter-Radiation Equality Structural Identity Theorem"
@@ -68904,14 +68904,14 @@
     "rconn_derived_note": {
       "claim_id": "rconn_derived_note",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem (estimate + MC cross-check), open dynamical",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "yukawa_color_projection_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "08806e2aeb96375a31c651cc323224cef82d8ddeed4f27afe6f81821181d897b",
+      "note_hash": "7c3e56a464413fff91060a00da7386135f63c87d145d2be68bd039518fbb232a",
       "path": "docs/RCONN_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate"
@@ -79582,22 +79582,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 457,
+      "bounded_theorem": 462,
       "decoration": 1,
       "meta": 173,
       "no_go": 56,
-      "none": 1526,
+      "none": 1521,
       "open_gate": 44,
       "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 900,
+      "bounded_theorem": 905,
       "decoration": 1,
       "meta": 173,
       "no_go": 160,
       "none": 449,
       "open_gate": 123,
-      "positive_theorem": 620
+      "positive_theorem": 615
     },
     "edge_count": 9470,
     "leaf_count": 745,

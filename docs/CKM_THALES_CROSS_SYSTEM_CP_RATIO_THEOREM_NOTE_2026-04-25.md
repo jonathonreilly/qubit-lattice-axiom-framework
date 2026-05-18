@@ -1,6 +1,28 @@
 # CKM Thales-Mediated Cross-System CP-Asymmetry Ratio Theorem
 
-**Date:** 2026-04-25
+**Date:** 2026-04-25 (2026-05-18: claim_scope narrowed to conditional
+algebra on upstream `unaudited` / `audited_conditional` CKM rows per
+audit verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **exact conditional algebra on the assumed CKM
+upstream surface** — given the upstream rows
+`ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25` (currently
+`audited_conditional`), `alpha_s_derived_note` (currently
+`unaudited`), and the Wolfenstein structural identities (currently
+`unaudited`), the framework-side relation
+`sin(2 beta_s,0)_LO / sin(2 beta_d,0) = lambda^2 = alpha_s(v) / 2`
+follows as an exact algebraic identity on that conditional surface.
+This note **does NOT** independently retain any of the upstream
+rows. The audit verdict's repair sub-target ("ratify or repair the
+listed upstream theorem/bridge rows") remains separate open work.
+Until then, this note's identity may be cited as **conditional /
+supporting local structure** only, not as a retained or promoted
+theorem.
+**Status authority:** independent audit lane only. The
+`proposed_retained` label below is a source-side proposal placeholder,
+not an audit verdict; the independent audit lane has classified this
+row `audited_conditional` pending upstream ratification.
 
 **Status:** proposed_retained atlas-leading CKM structural-ratio theorem. It derives
 a framework-side relation between the B_d and B_s CP-phase readouts:

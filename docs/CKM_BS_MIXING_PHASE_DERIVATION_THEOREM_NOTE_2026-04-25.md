@@ -1,6 +1,26 @@
 # CKM B_s Mixing Phase Derivation Theorem
 
-**Date:** 2026-04-25
+**Date:** 2026-04-25 (2026-05-18: claim_scope narrowed to conditional
+algebra on upstream `unaudited` / `proposed_retained` CKM rows per
+audit verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **exact conditional algebra on the assumed CKM
+upstream surface** — given `alpha_s(v)`, `lambda^2 = alpha_s(v)/2`
+(Wolfenstein structural identity), and `eta = sqrt(5)/6` (CP-phase
+structural identity) as conditional inputs (currently `unaudited` on
+the live ledger), plus the standard B_s-mixing phase-convention
+bridge, the CKM B_s mixing phase prediction follows as an exact
+algebraic identity on that conditional surface. This note **does
+NOT** independently retain any of the upstream rows. The audit
+verdict's repair sub-target ("ratify or repair the listed upstream
+theorem/bridge rows") remains separate open work. Until then, this
+note's prediction may be cited as **conditional / supporting local
+structure** only, not as a retained or promoted theorem.
+**Status authority:** independent audit lane only. The
+`proposed_retained` label below is a source-side proposal placeholder,
+not an audit verdict; the independent audit lane has classified this
+row `audited_conditional` pending upstream ratification.
 
 **Status:** proposed_retained CKM-structure prediction with a standard B_s-mixing
 phase-convention bridge. This note derives a new leading CKM prediction by

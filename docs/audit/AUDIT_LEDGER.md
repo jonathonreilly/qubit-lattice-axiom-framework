@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 8 |
-| `audited_clean` | 579 |
+| `audit_in_progress` | 7 |
+| `audited_clean` | 580 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 67 |
@@ -126,7 +126,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -352,6 +351,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_from_lattice_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5095,6 +5095,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within the restricted packet, the formula follows by substituting m=0 in the cited determinant identity, subtracting real logarithms, and applying n_matrix=8 L_t. No additional physical identification or external input is needed for this scoped algebraic statement.
 - **rationale:** The load-bearing work is entirely class A algebra over the upstream Matsubara determinant formula plus the stated per-matrix-entry normalization. The runner source performs symbolic log and prefactor checks plus numerical matrix cross-checks; it does not use external comparators. Because the chain reduces to a single upstream parent determinant/decomposition claim and standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean.
 - **decoration parent:** `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`
+- **auditor confidence:** high
+
+### `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-hierarchy_seven_eighths_-014`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The equality R_lat(d-1)=eta(d)/zeta(d) is equivalent to 1/(2d)=2^(1-d), hence to 2^(d-2)=d, whose unique integer solution for d>=2 is d=4.  _(class `A`)_
+- **chain closes:** True — The proof reduces to elementary algebra plus the standard eta-zeta identity eta(s)/zeta(s)=1-2^(1-s). The uniqueness of d=4 follows from the monotonicity argument for 2^(d-2)-d on integers d>=4 and direct checks at d=2,3.
+- **rationale:** The load-bearing step is a genuine class-A algebraic identity over explicitly stated functions of d, with no external observed comparator, tuned scale, framework axiom, or upstream retained claim needed. The runner source performs exact rational and symbolic checks rather than merely printing a pass summary, though several runner checks are relational context outside the narrow load-bearing theorem. The note's conclusion is limited enough to close: it establishes the d=4 triple coincidence, not the broader hierarchy formula, L_t selection, or outer exponent.
 - **auditor confidence:** high
 
 ### `hierarchy_spatial_bc_and_u0_scaling_note`

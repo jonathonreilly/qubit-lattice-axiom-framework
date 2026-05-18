@@ -108595,33 +108595,33 @@
       "verdict_rationale": null
     },
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
-      "audit_date": "2026-05-10T20:22:42.150407+00:00",
+      "audit_date": "2026-05-18T12:12:12.223520+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_claim_scope": {},
         "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 0.0,
+        "load_bearing_score": 11.29,
         "runner_hash": "6fd19245206377910a63ee12d1083cd544f9f5a439ed188bb419f6b37d091a79",
-        "transitive_descendants": 0
+        "transitive_descendants": 884
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-audit-loop-019e138d-c1be-76e0-911a-455253fb55b5",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-hierarchy_seven_eighths_-014",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The conclusion follows from direct algebra, the in-note odd/even splitting proof of eta(s)/zeta(s)=1-2^(1-s) for s>1, and the monotonicity argument proving uniqueness of 2^(d-2)=d at integer d=4. No one-hop dependencies are needed for the scoped theorem.",
+      "chain_closure_explanation": "The proof reduces to elementary algebra plus the standard eta-zeta identity eta(s)/zeta(s)=1-2^(1-s). The uniqueness of d=4 follows from the monotonicity argument for 2^(d-2)-d on integers d>=4 and direct checks at d=2,3.",
       "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Standalone narrow arithmetic theorem: for integer d >= 2, the lattice ratio 1 - 1/(2d), eta-zeta quotient 1 - 2^(1-d), and alignment equation 2^(d-2)=d coincide at 7/8 exactly only at d = 4; no hierarchy-formula, Lt=4 physical-selection, or outer-exponent closure is audited.",
+      "claim_scope": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-18T11:31:42.599603+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-18T12:12:12.223520+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -108636,25 +108636,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-18T12:12:12.223520+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-hierarchy_seven_eighths_-014",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
       "effective_status": "retained",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
       "load_bearing_score": 11.29,
-      "load_bearing_step": "The arithmetic equivalence { (c + 1/2)/(c + 1) at c = d - 1 } = { 1 - 2^(1 - d) } iff 2^(d - 2) = d, with the latter having unique integer solution d = 4 for d >= 2.",
+      "load_bearing_step": "The equality R_lat(d-1)=eta(d)/zeta(d) is equivalent to 1/(2d)=2^(1-d), hence to 2^(d-2)=d, whose unique integer solution for d>=2 is d=4.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "abd5c2c381daf2cf26c42ae4611beff791bee6132635e41c2c712daf3799940c",
       "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-audit-loop-019e138d-c1be-76e0-911a-455253fb55b5, family=codex-gpt-5.5, independence=fresh_context) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "A second auditor may re-check that relational runner checks T1-T6 are not treated as load-bearing for the narrow theorem.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
@@ -108667,7 +108678,7 @@
       "runner_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
       "title": "Hierarchy 7/8 Riemann-Dirichlet Dimensional Anchor \u2014 Narrow Theorem",
       "transitive_descendants": 884,
-      "verdict_rationale": "The load-bearing step is a pure class-A arithmetic equivalence plus a standard series-splitting identity proven inside the source note. The runner checks only algebraic/symbolic/rational consequences and includes no external comparator, fitted input, or framework bridge. The runner's finite scans are not by themselves the full infinite-domain proof, but the note supplies the missing monotonicity proof for all integer d >= 5. The clean verdict applies only to the stated narrow theorem, not to the hierarchy formula, Lt=4 physical selection, or the (1/4) readout."
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity over explicitly stated functions of d, with no external observed comparator, tuned scale, framework axiom, or upstream retained claim needed. The runner source performs exact rational and symbolic checks rather than merely printing a pass summary, though several runner checks are relational context outside the narrow load-bearing theorem. The note's conclusion is limited enough to close: it establishes the d=4 triple coincidence, not the broader hierarchy formula, L_t selection, or outer exponent."
     },
     "hierarchy_spatial_bc_and_u0_scaling_note": {
       "audit_date": "2026-05-05T09:59:06.642371+00:00",

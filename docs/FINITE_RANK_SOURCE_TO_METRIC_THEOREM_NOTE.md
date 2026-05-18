@@ -1,13 +1,33 @@
 # Finite-Rank Source-to-Metric Theorem Path via Exact Boundary Action and Coarse-Grained Exterior Law
 
-**Date:** 2026-04-14 (audit-prep cite-chain rigorize 2026-05-10)
+**Date:** 2026-04-14 (audit-prep cite-chain rigorize 2026-05-10;
+2026-05-18: claim_scope tightened to reproducible exact/bounded
+diagnostic on the imported grid per audit verdict boundary instruction)
 **Script:** `scripts/frontier_finite_rank_source_to_metric_theorem.py`
 **Status:** exact finite-rank source-to-exterior theorem plus bounded scalar metric reduction; not full nonlinear GR
 **Claim type:** bounded_theorem
-**Claim scope:** the note supports exact finite-rank source-to-exterior algebraic
-closure (Woodbury/Dyson identity plus stationary Schur boundary action) and an
-explicitly bounded scalar/isotropic coarse-grained metric residual improvement;
-it explicitly disclaims full tensorial `3+1` GR closure.
+**Claim scope (post-2026-05-18 tightening):** the load-bearing content
+of this note is **a reproducible exact / bounded diagnostic on the
+imported grid** — the exact finite-rank source-to-exterior algebraic
+closure (Woodbury/Dyson identity verified to residual `6.939e-17`),
+the exact Schur boundary-action stationarity (flux error
+`4.163e-16`, stationarity gradient `4.163e-16`), and the bounded
+coarse-grained metric residual improvement on the imported finite-
+rank grid (`7.028e-06` coarse vs `1.039e-02` direct, improvement
+`~1.48e3`). **Full tensorial `3+1` GR closure and retained
+source-to-metric theorem status remain explicitly unclosed**: the
+helper-wrapper one-hop authorities added in PR #1520
+(FINITE_RANK_GRAVITY_RESIDUAL_HELPER, COARSE_GRAINED_EXTERIOR_LAW_HELPER,
+OH_SCHUR_BOUNDARY_ACTION) are themselves bounded helper-module
+wrappers, so retained status does not propagate through this row.
+The audit verdict's substantive repair sub-target ("retained-grade
+authority notes for finite_rank_gravity_residual and
+coarse_grained_exterior_law, OR inline their constructions so the
+bounded scalar-to-metric reduction is self-contained from the axiom
+alone") remains separate open work; the wrapper-note path is a
+graph-bookkeeping intermediate stage, not retained-grade closure.
+**Status authority:** independent audit lane only. It explicitly
+disclaims full tensorial `3+1` GR closure.
 
 ## Audit-driven dependency-edge rigorization (2026-05-10)
 

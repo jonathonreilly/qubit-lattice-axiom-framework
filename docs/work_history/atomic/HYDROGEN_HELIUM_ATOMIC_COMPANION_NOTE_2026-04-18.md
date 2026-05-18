@@ -1,6 +1,25 @@
 # Hydrogen / Helium Atomic Companion Note
 
-**Date:** 2026-04-18
+**Date:** 2026-04-18 (2026-05-18: claim_scope formalized as diagnostic
+work-history numerics only, not retained bounded authority, per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **diagnostic work-history numerics only**: the
+hydrogen lattice-spectrum companion readouts (`E_2/E_1 ≈ 0.25857`
+vs `0.25`, `E_3/E_1 ≈ 0.11132` vs `0.11111`, emergent length
+`r_0 = 2/g`), the helium Hartree upper-bound row at the declared
+parameters, and the one-parameter Jastrow/VMC `|E(He)|/|E(He^+)|`
+improvement to `1.4357`. The note **does NOT** claim retained
+bounded authority on a hydrogen or helium derivation chain; the
+quoted readouts are diagnostic work-history numerics preserved from
+the source branch review, not pinned against a cached runner stdout
+under `logs/runner-cache/` in the restricted packet. The audit
+verdict's substantive repair sub-target ("provide the preserved
+runner source plus completed stdout/cached certificates and include
+the one-hop retained lattice kinetic and Coulomb-kernel authority
+notes") remains separate open work.
+**Status authority:** independent audit lane only.
 **Status:** bounded work-history companion; preserved from branch review, not a
 flagship authority surface
 **Source branch reviewed:** `origin/frontier/hydrogen-helium-review`

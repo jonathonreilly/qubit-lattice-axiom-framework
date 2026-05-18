@@ -1,7 +1,25 @@
 # B-Independence Mechanism Note
 
 **Status:** bounded - bounded or caveated result note
-**Date:** 2026-04-01  
+**Date:** 2026-04-01 (2026-05-18: claim_scope formalized as conditional
+mechanism diagnostic only, not retained bounded closure, per audit
+verdict boundary instruction).
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **a conditional mechanism diagnostic only**: the
+path-sum vs graph-wide-field reading of the observed flat distance
+law, conditional on the cited diagnostic runners
+(`scripts/path_sampling_analysis.py`,
+`scripts/field_localization_test.py`) and the underlying
+modular-family generator + distance-law closure (currently
+unaudited / retained-bounded). This note is **NOT** a retained
+bounded-closure theorem; the mechanism story is best read as a
+diagnostic interpretation of separately-audited downstream rows,
+not as load-bearing on the path-sum architecture itself. The audit
+verdict's repair sub-target ("add explicit retained dependencies or
+a self-contained derivation/runner certificate for the graph family,
+field law, and distance-law closure used by the diagnostics") remains
+separate open work.
 **Scope:** review-safe mechanism note for why the corrected linear path-sum
 force stays flat/topological on the current retained DAG families.
 

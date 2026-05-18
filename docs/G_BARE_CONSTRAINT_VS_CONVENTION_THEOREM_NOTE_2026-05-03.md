@@ -1,7 +1,21 @@
 # g_bare Constraint vs Convention Disambiguation Theorem
 
-**Date:** 2026-05-03
-**Claim type:** positive_theorem
+**Date:** 2026-05-03 (2026-05-18: claim_scope formalized as local
+class-A result per audit verdict boundary instruction)
+**Claim type:** bounded_theorem
+**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
+of this note is **the local class-A algebraic result that "CN
+[canonical normalization]" plus "beta = 6" implies "g_bare = 1"**.
+This is a conditional algebraic identity on the assumed canonical-
+normalization + beta-pinning surface; it **does NOT** by itself
+retain `G_BARE_DERIVATION_NOTE` or the broader g_bare = 1 hierarchy
+input, and it does NOT close the rescaling-freedom-removal repair
+target listed in the prior audit packet. The audit verdict's repair
+sub-target ("retain or fail the two 2026-05-03 repair candidates and
+their dependency closure") remains separate open work; the candidate
+algebra here is what would feed retention if the rescaling-freedom
+row + CN-derivation closures also retain.
+**Status authority:** independent audit lane only.
 **Status:** unaudited candidate. This note is graph-visible only so the
 independent audit lane can decide whether the candidate is retained. Do not
 update or promote `G_BARE_DERIVATION_NOTE.md` or downstream status surfaces

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 827,
+    "critical": 826,
     "high": 33,
     "leaf": 328,
     "medium": 159
@@ -5050,31 +5050,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
       "transitive_descendants": 1032
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.511,
-      "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_derivation.py",
-      "transitive_descendants": 1031
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -42782,6 +42757,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 41,
-  "total_pending": 1347
+  "ready_count": 40,
+  "total_pending": 1346
 }

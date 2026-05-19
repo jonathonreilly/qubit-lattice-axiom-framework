@@ -1,10 +1,5 @@
 {
-  "last_invalidations": [
-    {
-      "claim_id": "wilson_test_mass_continuum_note_2026-04-11",
-      "reason": "dep_claim_scope_changed:staggered_newton_blocking_sensitivity_note_2026-04-11"
-    }
-  ],
+  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -124856,42 +124851,51 @@
       "verdict_rationale": null
     },
     "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T14:41:33.644110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 16.445,
+        "runner_hash": "3b73f375118b1626715f1bc88cf17a72e9b7f5cdc95527d6040dfb3e44681a4a",
+        "transitive_descendants": 985
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-koide_frobenius_isotype_-029",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the explicitly admitted Frobenius convention, the algebraic chain closes: the runner symbolically verifies the energy split, additivity, positivity, and AM-GM extremum. The unconditional step that remains missing is a retained authority or theorem fixing the scalar/traceless isotype-weight ratio beta = 0.",
       "claim_id": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-      "claim_scope": null,
+      "claim_scope": "Conditional on the admitted trace-Frobenius normalization and scalar/traceless projection on Herm_circ(3), the AM-GM extremum gives kappa = 2 and Q = 2/3; uniqueness of the Frobenius split and the physical source-law bridge are not established.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (conditional AM-GM result; not a uniqueness theorem).",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-19T14:41:33.644110+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 16.445,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Maximizing F = log(E_+) + log(E_perp) under E_+ + E_perp = N gives the unique interior maximum E_+ = E_perp = N/2, hence 3a^2 = 6|b|^2, kappa = 2, and Q = 2/3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "870cb4a466e4fb59133f25bcdc5e2bc991eefb3d9eedbf3ee837db638295ac09",
       "note_path": "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained theorem or axiom fixing the scalar/traceless isotype-weight ratio w_scalar/w_traceless = 1, equivalently beta = 0, or keep the result explicitly conditional.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -125106,16 +125110,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 28,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "total_pass": 29
       },
       "runner_path": "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
       "title": "Koide AM-GM Result Conditional on a Fixed Frobenius Normalization",
       "transitive_descendants": 985,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source performs real symbolic algebra rather than merely printing constants, and its checks support the conditional AM-GM result as stated. However, the Frobenius normalization is an explicit admitted normalization, not derived from cited retained authorities, and the note itself records the beta-freedom counterexample. The single PDG numerical positivity check is incidental and does not supply the missing bridge to the charged-lepton point."
     },
     "koide_full_lattice_schur_inheritance_note_2026-04-18": {
       "audit_date": null,

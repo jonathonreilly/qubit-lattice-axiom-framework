@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 135 |
-| **retained_bounded** | 359 |
+| **retained_bounded** | 360 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1332 |
+| unaudited | 1331 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 580 |
+| `audited_clean` | 581 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1551 |
+| `unaudited` | 1550 |
 
 | claim_type | count |
 |---|---:|
@@ -237,6 +237,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dispersion_relation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_assumptions_audit_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2667,6 +2668,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Once the center-biased midlayer sentinel is added to the reference+tree sample, the frozen 3-NN density-load rule has higher extended-sample accuracy than the frozen 4-NN rule: 0.9126 versus 0.8932.  _(class `C`)_
 - **chain closes:** True — The primary runner rebuilds the rows, computes the dense-reference thresholds with _best_rule, applies them without refit, and computes the reported accuracy and miss-mode tables. The transitive helper sources needed for generated rows, density features, overlap labels, and threshold evaluation are present in the packet.
 - **rationale:** The runner is not a constant printer: it constructs the dense reference rows, tree rows, and midlayer rows from the included generators and evaluates the rules from computed row features. The contested 3-NN versus 4-NN preference reversal follows from those computed rows and frozen thresholds within the stated bounded sample. No cited upstream authority is required for the restricted claim, and no helper path listed as load-bearing is missing from the packet.
+- **auditor confidence:** high
+
+### `dispersion_relation_note`
+
+- **Note:** [`DISPERSION_RELATION_NOTE.md`](../../docs/DISPERSION_RELATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the 2D regular-lattice h=0.5 dispersion fit computed by scripts/lattice_dispersion_relation.py and its cached stdout was audited; 2D h=0.25, 3D lattice, and grown-DAG claims are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-dispersion_relation_note-048`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the 2D regular lattice at h=0.5, fitting the measured omega(p) gives omega=a·p²+b with R²=0.99947, beating Klein-Gordon R²=0.96156 and linear R²=0.92045.  _(class `C`)_
+- **chain closes:** True — The supplied runner source constructs the 2D lattice, propagates plane-wave amplitudes with the stated kernel, extracts phase slopes, and fits the candidate dispersion forms without hard-coded expected fit values. Its stdout matches the note's in-scope h=0.5 R² and fit parameters to the stated precision.
+- **rationale:** The narrowed claim is bounded to the h=0.5 2D regular-lattice runner packet, and the packet includes both source and completed stdout. The code genuinely computes the amplitudes, phase slopes, and regression scores from the stated lattice/kernel setup, rather than importing or printing the contested result. The note explicitly excludes the missing helper-runner geometries from the audited claim scope, so their absence does not block this narrowed verdict.
 - **auditor confidence:** high
 
 ### `distance_law_3d_64_closure_note_2026-04-11`

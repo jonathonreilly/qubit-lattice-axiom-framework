@@ -139004,22 +139004,45 @@
       "verdict_rationale": null
     },
     "lattice_3d_nyquist_diffraction_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:14:59.928178+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "start_here": null,
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12."
+        },
+        "dep_claim_type": {
+          "start_here": "meta",
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "start_here": "meta",
+          "valley_linear_asymptotic_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "start_here",
+          "valley_linear_asymptotic_bridge_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "32bd32b33e63357df81134773f956e1d6ce74e2801fb29fc62c4c2b3363effdc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-lattice_3d_nyquist_diffr-061",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner calls the included Lattice3D propagation, field construction, slit setup, centroid calculation, and flip interpolation rather than printing or importing the contested flip. The stdout values match the source note, so the bounded finite-lattice statement closes for the tested parameter ladder.",
       "claim_id": "lattice_3d_nyquist_diffraction_note",
-      "claim_scope": null,
+      "claim_scope": "For the included 3D ordered-lattice valley-linear runner at PHYS_L=4, PHYS_W=4, h=0.5 and 0.25, and field strengths 1e-4 and 1e-2, the first positive-to-negative centroid-shift flip is computed near pi/h and shifts upward when h is halved.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-19T15:14:59.928178+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -139028,21 +139051,21 @@
         "start_here"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_pending_chain",
+      "effective_status_reason": "chain_waiting_on:start_here",
       "helper_runner_paths": [
         "scripts/lattice_3d_valley_linear_card.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The first gravity sign flip sits near pi/h for both tested lattice spacings, remains stable across the tested field strengths, and moves with h as a lattice-scale Nyquist effect.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "dc10d791dc2b235dc3563f9e32b0d74d467aba68862caa96d01b4047eb33c009",
       "note_path": "docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the finite tested scope and do not convert the two-spacing Nyquist-tracking probe into an exact continuum-limit theorem.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -139113,14 +139136,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 4,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 4
       },
       "runner_path": "scripts/lattice_3d_nyquist_diffraction_probe.py",
       "title": "Lattice 3D Nyquist Diffraction Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a first-principles finite-lattice computation within the supplied runner/helper chain: it constructs the lattice, propagates free and field-coupled amplitudes, computes detector centroid shifts, and interpolates the first sign flip. No hard-coded expected flip, external comparator, or cross-note numerical import appears on the load-bearing path. The clean verdict is limited to the bounded sweep; it does not promote the result to an exact continuum theorem."
     },
     "lattice_3d_tapered_refinement_note": {
       "audit_date": "2026-04-27",

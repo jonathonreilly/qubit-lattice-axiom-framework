@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 111 |
 | **retained_no_go** | 136 |
 | **retained_bounded** | 363 |
-| _retained_pending_chain_ | 7 |
+| _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1320 |
+| unaudited | 1319 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 585 |
+| `audited_clean` | 586 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -74,7 +74,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 203 |
 | `leaf` | 879 |
 
-- **Retained pending chain closure:** 7
+- **Retained pending chain closure:** 8
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -419,6 +419,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_l2_numpy_h0125_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_3d_nyquist_diffraction_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_tapered_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_complementarity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6067,6 +6068,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The current fixed-family artifact chain supports a completed h=0.125 row, machine-clean Born/k=0 behavior, TOWARD bridge sign, and F~M remaining about 0.50 rather than 1.00.  _(class `C`)_
 - **chain closes:** True — The primary bridge cache completes the four-row fixed-family replay through h=0.125 and the focused single-row log independently supports the decisive h=0.125 row. The audited scope is only the bounded finite evidence and explicit non-Newtonian limitation, not a continuum-limit or Newtonian bridge theorem.
 - **rationale:** The runner instantiates the dense 3D fixed-family lattice replay rather than printing the target conclusion, and the completed cache supports the source note's safe read: Born/k=0 remain clean, the retained-family sign is TOWARD at h=0.5, h=0.25, and h=0.125, and F~M stays about 0.50. The small difference between the focused single-row Born residue and the current bridge-cache residue is immaterial to the scoped claim because both are machine-clean and the exact residue is not used as a physical prediction. Residual risk is limited to the stated bounded finite family; no continuum or Newtonian closure is audited here.
+- **auditor confidence:** high
+
+### `lattice_3d_nyquist_diffraction_note`
+
+- **Note:** [`LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md`](../../docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the included 3D ordered-lattice valley-linear runner at PHYS_L=4, PHYS_W=4, h=0.5 and 0.25, and field strengths 1e-4 and 1e-2, the first positive-to-negative centroid-shift flip is computed near pi/h and shifts upward when h is halved.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:start_here`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-lattice_3d_nyquist_diffr-061`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The first gravity sign flip sits near pi/h for both tested lattice spacings, remains stable across the tested field strengths, and moves with h as a lattice-scale Nyquist effect.  _(class `C`)_
+- **chain closes:** True — The primary runner calls the included Lattice3D propagation, field construction, slit setup, centroid calculation, and flip interpolation rather than printing or importing the contested flip. The stdout values match the source note, so the bounded finite-lattice statement closes for the tested parameter ladder.
+- **rationale:** The load-bearing step is a first-principles finite-lattice computation within the supplied runner/helper chain: it constructs the lattice, propagates free and field-coupled amplitudes, computes detector centroid shifts, and interpolates the first sign flip. No hard-coded expected flip, external comparator, or cross-note numerical import appears on the load-bearing path. The clean verdict is limited to the bounded sweep; it does not promote the result to an exact continuum theorem.
 - **auditor confidence:** high
 
 ### `lattice_3d_tapered_refinement_note`

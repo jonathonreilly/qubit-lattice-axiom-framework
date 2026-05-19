@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 358 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1348 |
-| audit_in_progress | 4 |
+| unaudited | 1347 |
+| audit_in_progress | 5 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -49,14 +49,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 18 |
+| `audit_in_progress` | 19 |
 | `audited_clean` | 573 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1567 |
+| `unaudited` | 1566 |
 
 | claim_type | count |
 |---|---:|
@@ -137,6 +137,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 356 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1336 |
+| unaudited | 1335 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 67 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 577 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1555 |
+| `unaudited` | 1554 |
 
 | claim_type | count |
 |---|---:|
@@ -769,6 +769,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `scalar_selector_reviewer_package_2026-04-20` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7921,6 +7922,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The new readout/time block pins the remaining Route-2 gap to the unresolved readout map entry beta_E / alpha_E, so the branch has only an exact conditional readout-to-slice family rather than a unique exact time-coupling theorem.  _(class `A`)_
 - **chain closes:** True — The conclusion follows as an algebraic synthesis of the two cited retained-grade upstream notes: one supplies the reduced readout obstruction and the other supplies the conditional time-coupling family induced by any chosen readout map.
 - **rationale:** The memo does not close the full positive tensor/time theorem; it narrows the target and states the obstruction. Its load-bearing step is an algebraic consequence of the cited readout-map no-go and time-coupling bounded theorem, both marked retained-grade in the restricted packet. No runner source or stdout is available, so this audit is limited to the note text and cited authorities, but the bounded conclusion itself does not require a missing compute run.
+- **auditor confidence:** high
+
+### `same_family_3d_closure_note`
+
+- **Note:** [`SAME_FAMILY_3D_CLOSURE_NOTE.md`](../../docs/SAME_FAMILY_3D_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the restricted packet's claim that the note and runner expose a bounded replay/aggregation of a frozen same-family 3D closure card, not a live recomputation of the closure observables.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-same_family_3d_closure_n-043`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The wrapper print-aggregates a frozen 10-row same-family closure card from retained cache excerpts and hardcoded frozen-card values, while rows 8-9 at L=8 and L=10 are narrowed to queued follow-up.  _(class `B`)_
+- **chain closes:** False — The runner source prints hardcoded constants and does not call the included computational routines, and the packet omits the helper source for the imported lattice harness. Rows 2, 6, 7 and L=8/L=10 parts of rows 8-9 lack retained same-slice source certificates in the restricted packet.
+- **rationale:** The source note is explicit that the wrapper is replay-only and does not recompute the load-bearing observables. The inlined cache excerpts support only a restricted subset of rows, while other frozen-card values are carried as constants and rows 8-9 at L=8 and L=10 are explicitly queued follow-up. Because the primary runner's executed path prints constants rather than deriving them, the restricted packet cannot retain the closure card as an independently audited theorem.
+- **open / conditional deps cited:**
+  - `logs/2026-04-04-valley-linear-same-harness-compare.txt`
+  - `logs/2026-04-04-valley-linear-asymptotic-bridge.txt`
+  - `logs/2026-04-04-valley-linear-wide-tail-replay.txt`
+  - `scripts/lattice_3d_valley_linear_card.py`
 - **auditor confidence:** high
 
 ### `scalar_3plus1_temporal_ratio_note`

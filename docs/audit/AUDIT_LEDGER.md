@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1306 |
+| unaudited | 1308 |
 | meta | 213 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 104 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 592 |
-| `audited_conditional` | 104 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1519 |
+| `unaudited` | 1521 |
 
 | claim_type | count |
 |---|---:|
@@ -73,7 +73,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `leaf` | 882 |
 
 - **Retained pending chain closure:** 5
-- **Citation cycles detected:** 189
+- **Citation cycles detected:** 191
 
 ### Runner classification (static heuristic)
 
@@ -93,7 +93,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 920 | 47.85 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1097 | 43.10 | `audited_clean` | **retained_bounded** |
 | 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 881 | 41.28 | `unaudited` | unaudited |
-| 6 | `minimal_axioms_2026-04-11` | meta | critical | 955 | 39.90 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-04-11` | meta | critical | 956 | 39.90 | `unaudited` | meta |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 972 | 38.43 | `unaudited` | unaudited |
 | 8 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 960 | 37.91 | `unaudited` | unaudited |
 | 9 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 881 | 37.78 | `unaudited` | unaudited |
@@ -717,7 +717,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -743,7 +742,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1424,22 +1422,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-05-03.md`
   - `MINIMAL_AXIOMS_2026-04-11.md`
-- **auditor confidence:** high
-
-### `axiom_first_cluster_decomposition_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the narrowed bounded scope: L1 Lieb-Robinson commutator envelope for finite-range Hermitian Cl(3)⊗Z^3 Hamiltonians, L3 lattice light cone as its consequence, L4 finite Cl(3) norm control of J, and L2 only as conditional temporal transfer-matrix clustering if Δ_T > 0; unconditional or spatial cluster decomposition is outside closed scope.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-axiom_first_cluster_deco-012`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Combining the Duhamel/LR series with the cubic-lattice path count gives ‖[A(t),B]‖ ≤ 2‖A‖‖B‖ exp(-(d(x,y)-v_LR|t|)/ξ) with v_LR = 2eJZ_latR_int; L2 is only conditional on an external transfer-matrix gap Δ_T > 0.  _(class `A`)_
-- **chain closes:** False — The L1/L3/L4 bounded LR/light-cone portion closes as standard finite-lattice algebraic/combinatorial LR reasoning. The full L2 cluster-decomposition chain does not close because Δ_T > 0 and the spatial cluster-decomposition step are explicitly open dependencies.
-- **rationale:** The narrowed note honestly removes the previous unconditional L2 claim and identifies the transfer-matrix gap and spatial clustering theorem as open. The cited bridge authority is retained_bounded but itself proves only a conditional finite-block temporal spectral lemma and explicitly does not derive Δ_T > 0 or spatial clustering. The runner computes illustrative 1D free-fermion LR/clustering exhibits, but it does not instantiate the full canonical Cl(3)⊗Z^3 staggered+Wilson Hamiltonian or close the missing mass-gap/spatial bridge. Therefore the retained result is conditional rather than clean.
-- **open / conditional deps cited:**
-  - `CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
-  - `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
@@ -3157,21 +3139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Given any positive-definite Hermitian pair (H_nu,H_e), diagonalize H_nu and H_e, form U_PMNS = U_e^dag U_nu, and define P_i(alpha)=|U_PMNS(alpha,i)|^2 as the flavored transport packet.  _(class `A`)_
 - **chain closes:** False — The algebraic pair-to-projector interface closes, but the restricted packet does not close the carrier authority or the theorem selecting the physical N1 transport column. Those dependencies are explicitly left open in the note and runner.
 - **rationale:** The runner genuinely checks the class-A algebraic facts that U_PMNS is unitary, |U_PMNS|^2 is doubly stochastic, and the projector packet is rephasing-invariant for sampled Hermitian pairs. The numerical eta readouts are computed diagnostics on chosen canonical sample pairs, not first-principles closure of the PMNS pair law or physical column selection. Because the note explicitly imports and leaves unresolved the carrier authority and physical-column authority, the full route-choice conclusion remains conditional rather than clean.
-- **auditor confidence:** high
-
-### `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16`
-
-- **Note:** [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Positive-cone logdet Legendre identity plus sampled local numerical branch check for the stated runner points, conditional on the omitted observable-relative-action helper machinery.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_leptogenesis_pmns_rel-016`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** S_rel(Y) = sup_K [ W_rel(K) - Tr(KY) ] with unique maximizer K_* = Y^(-1) - I, so S_rel is the Legendre-dual effective action of W_rel(K)=log det(I+K).  _(class `A`)_
-- **chain closes:** False — The algebraic positive-cone Legendre identity closes on its own. The numerical closure branch and claims about W_rel/H_seed/eta/favored-column construction depend on the imported helper module frontier_dm_leptogenesis_pmns_observable_relative_action_law, whose source is not provided in the restricted packet.
-- **rationale:** The core Legendre-dual equation is a standard algebraic identity on the positive cone and is supported by the runner's direct matrix checks. However, the runner imports the load-bearing closure machinery as rel, including H_SEED, eta_columns_from_active, build_active_from_params, best_eta_from_params, and relative_action_h, while the packet says no helper imports were detected and provides no helper source. Therefore the restricted packet cannot verify the numerical branch or the claimed derivation of the helper machinery from Cl(3) on Z^3.
-- **open / conditional deps cited:**
-  - `scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`

@@ -1149,6 +1149,10 @@
       "to": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
     },
     {
+      "from": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+    },
+    {
       "from": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
       "to": "axiom_reduction_note"
     },
@@ -6659,6 +6663,10 @@
     {
       "from": "dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
+    },
+    {
+      "from": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
     },
     {
       "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
@@ -41063,10 +41071,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7d95b73213f18d99ec19a71f7b5facf75e6f49a81639c22769d667fcd01d8b12",
+      "note_hash": "4ed485b82de0cb5e2fe7f622239f560386e4a6a75ce2caef92a088bc9162c77c",
       "path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3"
@@ -47285,9 +47294,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "a0bce4315b52edc3aeaff3fcc245789d3fe7a79cfce75d5a233b4dfc8ad0f0b3",
+      "note_hash": "5f7c1cace5eb1c1526e8c69748f0ca70cb9f06cc14d81472c0446f8021d4876b",
       "path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem"
@@ -79731,7 +79742,6 @@
     "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_hostile_audit_findings_note_2026-05-17",
     "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
-    "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
     "dm_lepton_synthesis_note_2026-04-19",
@@ -80321,10 +80331,10 @@
       "open_gate": 123,
       "positive_theorem": 611
     },
-    "edge_count": 9578,
+    "edge_count": 9580,
     "leaf_count": 728,
     "node_count": 2440,
-    "root_count": 811,
+    "root_count": 810,
     "runners_with_path": 2023
   }
 }

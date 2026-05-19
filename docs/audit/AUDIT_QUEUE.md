@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1306
+**Total pending:** 1308
 **Ready (all deps already at retained-grade or metadata tiers):** 4
 
 By criticality:
-- `critical`: 799
+- `critical`: 801
 - `high`: 33
 - `medium`: 155
 - `leaf`: 319
@@ -68,13 +68,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 ## Citation cycle break targets
 
-189 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
+191 citation cycles in the graph. Each cycle permanently blocks every member from `retained` until one node is re-audited with explicit cycle-break instructions or a 'see also' edge is stripped. Top 25 below; full list in `data/audit_queue.json` under `cycle_break_targets`.
 
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
-| 1 | `cycle-0001` | 2 | 894 | `coarse_grained_exterior_law_helper_note_2026-04-14` | critical | unaudited |
-| 2 | `cycle-0002` | 2 | 894 | `finite_rank_gravity_residual_helper_note_2026-04-14` | critical | unaudited |
-| 3 | `cycle-0003` | 2 | 893 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | critical | unaudited |
+| 1 | `cycle-0001` | 2 | 894 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | critical | unaudited |
+| 2 | `cycle-0002` | 2 | 894 | `coarse_grained_exterior_law_helper_note_2026-04-14` | critical | unaudited |
+| 3 | `cycle-0003` | 2 | 894 | `finite_rank_gravity_residual_helper_note_2026-04-14` | critical | unaudited |
 | 4 | `cycle-0004` | 2 | 891 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | critical | unaudited |
 | 5 | `cycle-0005` | 2 | 887 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | critical | unaudited |
 | 6 | `cycle-0006` | 2 | 887 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | critical | unaudited |
@@ -82,20 +82,20 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 8 | `cycle-0008` | 3 | 887 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | critical | unaudited |
 | 9 | `cycle-0009` | 3 | 887 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | critical | unaudited |
 | 10 | `cycle-0010` | 2 | 885 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | critical | unaudited |
-| 11 | `cycle-0011` | 2 | 885 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | critical | unaudited |
-| 12 | `cycle-0012` | 2 | 885 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | critical | unaudited |
-| 13 | `cycle-0013` | 2 | 884 | `lensing_finite_path_explanation_note` | critical | unaudited |
-| 14 | `cycle-0014` | 2 | 883 | `scalar_trace_tensor_no_go_note` | critical | unaudited |
-| 15 | `cycle-0015` | 2 | 883 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | critical | unaudited |
-| 16 | `cycle-0016` | 2 | 881 | `axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17` | critical | unaudited |
-| 17 | `cycle-0017` | 2 | 881 | `axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17` | critical | unaudited |
-| 18 | `cycle-0018` | 2 | 881 | `bminusl_anomaly_freedom_downstream_fix_note_2026-05-17` | critical | unaudited |
-| 19 | `cycle-0019` | 2 | 881 | `chronology_protection_downstream_fix_note_2026-05-17` | critical | unaudited |
-| 20 | `cycle-0020` | 2 | 881 | `dm_leptogenesis_hrad_theorem_note_2026-04-16` | critical | unaudited |
-| 21 | `cycle-0021` | 2 | 881 | `dm_pmns_cp_orientation_parity_reduction_note_2026-04-20` | critical | unaudited |
-| 22 | `cycle-0022` | 2 | 881 | `graviton_mass_derived_note` | critical | unaudited |
-| 23 | `cycle-0023` | 2 | 881 | `higgs_mass_derived_note` | critical | unaudited |
-| 24 | `cycle-0024` | 2 | 881 | `neutrino_mass_reduction_to_dirac_note` | critical | unaudited |
-| 25 | `cycle-0025` | 2 | 881 | `s3_anomaly_spacetime_lift_downstream_fix_note_2026-05-17` | critical | unaudited |
+| 11 | `cycle-0011` | 2 | 885 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | critical | unaudited |
+| 12 | `cycle-0012` | 2 | 885 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | critical | unaudited |
+| 13 | `cycle-0013` | 2 | 885 | `pl_topology_infrastructure_textbook_import_note_2026-05-17` | critical | unaudited |
+| 14 | `cycle-0014` | 2 | 884 | `lensing_finite_path_explanation_note` | critical | unaudited |
+| 15 | `cycle-0015` | 2 | 883 | `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16` | critical | unaudited |
+| 16 | `cycle-0016` | 2 | 883 | `scalar_trace_tensor_no_go_note` | critical | unaudited |
+| 17 | `cycle-0017` | 2 | 883 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | critical | unaudited |
+| 18 | `cycle-0018` | 2 | 881 | `axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17` | critical | unaudited |
+| 19 | `cycle-0019` | 2 | 881 | `axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17` | critical | unaudited |
+| 20 | `cycle-0020` | 2 | 881 | `bminusl_anomaly_freedom_downstream_fix_note_2026-05-17` | critical | unaudited |
+| 21 | `cycle-0021` | 2 | 881 | `chronology_protection_downstream_fix_note_2026-05-17` | critical | unaudited |
+| 22 | `cycle-0022` | 2 | 881 | `dm_leptogenesis_hrad_theorem_note_2026-04-16` | critical | unaudited |
+| 23 | `cycle-0023` | 2 | 881 | `dm_pmns_cp_orientation_parity_reduction_note_2026-04-20` | critical | unaudited |
+| 24 | `cycle-0024` | 2 | 881 | `graviton_mass_derived_note` | critical | unaudited |
+| 25 | `cycle-0025` | 2 | 881 | `higgs_mass_derived_note` | critical | unaudited |
 
 Full queue lives in `data/audit_queue.json`.

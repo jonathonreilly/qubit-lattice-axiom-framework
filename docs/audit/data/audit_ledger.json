@@ -10569,65 +10569,46 @@
       "verdict_rationale": "The mathematical load-bearing step is a genuine algebraic closure: the note correctly repairs the odd-complex-Clifford split and derives the two chirality irreps distinguished by \u03c9 = \u00b1i. The runner source mostly provides algebraic/numerical exhibits for those facts and does not import an external comparator or tuned numerical premise. However, the restricted packet's cited framework authorities are marked meta rather than retained-grade under the supplied rubric, so the verdict cannot be audited_clean despite the U1-U3 algebra closing on its own terms."
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
-      "audit_date": "2026-05-18T12:11:45.462547+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0."
-        },
-        "dep_claim_type": {
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded"
-        },
-        "deps": [
-          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
-        ],
-        "load_bearing_score": 18.291,
-        "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
-        "transitive_descendants": 885
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-axiom_first_cluster_deco-012",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The L1/L3/L4 bounded LR/light-cone portion closes as standard finite-lattice algebraic/combinatorial LR reasoning. The full L2 cluster-decomposition chain does not close because \u0394_T > 0 and the spatial cluster-decomposition step are explicitly open dependencies.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "claim_scope": "Audited only the narrowed bounded scope: L1 Lieb-Robinson commutator envelope for finite-range Hermitian Cl(3)\u2297Z^3 Hamiltonians, L3 lattice light cone as its consequence, L4 finite Cl(3) norm control of J, and L2 only as conditional temporal transfer-matrix clustering if \u0394_T > 0; unconditional or spatial cluster decomposition is outside closed scope.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-18T12:11:45.462547+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 17,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 18.291,
-      "load_bearing_step": "Combining the Duhamel/LR series with the cubic-lattice path count gives \u2016[A(t),B]\u2016 \u2264 2\u2016A\u2016\u2016B\u2016 exp(-(d(x,y)-v_LR|t|)/\u03be) with v_LR = 2eJZ_latR_int; L2 is only conditional on an external transfer-matrix gap \u0394_T > 0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "7d95b73213f18d99ec19a71f7b5facf75e6f49a81639c22769d667fcd01d8b12",
+      "note_hash": "4ed485b82de0cb5e2fe7f622239f560386e4a6a75ce2caef92a088bc9162c77c",
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained proof of \u0394_T > 0 plus a retained spatial gap-plus-Lieb-Robinson or spatial transfer-matrix cluster-decomposition theorem for the canonical Cl(3)\u2297Z^3 Hamiltonian.",
-      "open_dependency_paths": [
-        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
-        "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
         {
@@ -10804,19 +10785,71 @@
             "total_pass": 4
           },
           "verdict_rationale": "Issue: the note's L2 step still depends on an explicit mass-gap input and on a spatial gap-plus-LR or spatial transfer-matrix clustering theorem that the packet says is open. Why this blocks: LR bounds control commutators/light cones, and the cited bridge only proves a finite-block temporal spectral lemma conditional on \u0394_T > 0, so the advertised spatial thermal connected-correlator bound for canonical states is not derived from retained inputs. Repair target: derive \u0394_T > 0 on the canonical Cl(3) \u2297 Z^3 staggered + Wilson Hamiltonian and add a retained spatial cluster-decomposition theorem with constants. Claim boundary until fixed: retain only L1/L3/L4 and conditional temporal gap-to-clustering support, not unconditional L2 spatial clustering."
+        },
+        {
+          "archived_at": "2026-05-19T08:55:12.924422+00:00",
+          "archived_for_note_hash": "7d95b73213f18d99ec19a71f7b5facf75e6f49a81639c22769d667fcd01d8b12",
+          "audit_date": "2026-05-18T12:11:45.462547+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0."
+            },
+            "dep_claim_type": {
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded"
+            },
+            "deps": [
+              "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+            ],
+            "load_bearing_score": 18.291,
+            "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
+            "transitive_descendants": 885
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-axiom_first_cluster_deco-012",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The L1/L3/L4 bounded LR/light-cone portion closes as standard finite-lattice algebraic/combinatorial LR reasoning. The full L2 cluster-decomposition chain does not close because \u0394_T > 0 and the spatial cluster-decomposition step are explicitly open dependencies.",
+          "claim_scope": "Audited only the narrowed bounded scope: L1 Lieb-Robinson commutator envelope for finite-range Hermitian Cl(3)\u2297Z^3 Hamiltonians, L3 lattice light cone as its consequence, L4 finite Cl(3) norm control of J, and L2 only as conditional temporal transfer-matrix clustering if \u0394_T > 0; unconditional or spatial cluster decomposition is outside closed scope.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-18T12:11:45.462547+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "Combining the Duhamel/LR series with the cubic-lattice path count gives \u2016[A(t),B]\u2016 \u2264 2\u2016A\u2016\u2016B\u2016 exp(-(d(x,y)-v_LR|t|)/\u03be) with v_LR = 2eJZ_latR_int; L2 is only conditional on an external transfer-matrix gap \u0394_T > 0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained proof of \u0394_T > 0 plus a retained spatial gap-plus-Lieb-Robinson or spatial transfer-matrix cluster-decomposition theorem for the canonical Cl(3)\u2297Z^3 Hamiltonian.",
+          "open_dependency_paths": [
+            "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 0,
+            "C": 1,
+            "D": 0,
+            "total_pass": 4
+          },
+          "verdict_rationale": "The narrowed note honestly removes the previous unconditional L2 claim and identifies the transfer-matrix gap and spatial clustering theorem as open. The cited bridge authority is retained_bounded but itself proves only a conditional finite-block temporal spectral lemma and explicitly does not derive \u0394_T > 0 or spatial clustering. The runner computes illustrative 1D free-fermion LR/clustering exhibits, but it does not instantiate the full canonical Cl(3)\u2297Z^3 staggered+Wilson Hamiltonian or close the missing mass-gap/spatial bridge. Therefore the retained result is conditional rather than clean."
         }
       ],
       "runner_check_breakdown": {
-        "A": 3,
+        "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "D": 0,
-        "total_pass": 4
+        "total_pass": 0
       },
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3",
       "transitive_descendants": 885,
-      "verdict_rationale": "The narrowed note honestly removes the previous unconditional L2 claim and identifies the transfer-matrix gap and spatial clustering theorem as open. The cited bridge authority is retained_bounded but itself proves only a conditional finite-block temporal spectral lemma and explicitly does not derive \u0394_T > 0 or spatial clustering. The runner computes illustrative 1D free-fermion LR/clustering exhibits, but it does not instantiate the full canonical Cl(3)\u2297Z^3 staggered+Wilson Hamiltonian or close the missing mass-gap/spatial bridge. Therefore the retained result is conditional rather than clean."
+      "verdict_rationale": null
     },
     "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": {
       "audit_date": null,
@@ -12324,7 +12357,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 26.304,
+      "load_bearing_score": 26.306,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -12681,7 +12714,7 @@
       },
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
       "title": "Axiom-First Reflection Positivity for the Canonical CL3-on-Z3 Action",
-      "transitive_descendants": 893,
+      "transitive_descendants": 894,
       "verdict_rationale": null
     },
     "axiom_first_reflection_positivity_theorem_note_2026-04-29_hostile_audit_findings_note_2026-05-17": {
@@ -12999,13 +13032,13 @@
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
       ],
-      "direct_in_degree": 10,
+      "direct_in_degree": 11,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 14.788,
+      "load_bearing_score": 15.291,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -13142,7 +13175,7 @@
       },
       "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
       "title": "Axiom-First Spectrum Condition (Lattice Analogue) on Cl(3) \u2297 Z^3",
-      "transitive_descendants": 883,
+      "transitive_descendants": 885,
       "verdict_rationale": null
     },
     "axiom_first_spin_statistics_theorem_note_2026-04-29": {
@@ -53970,13 +54003,13 @@
       "deps": [
         "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 8,
+      "direct_in_degree": 9,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 13.786,
+      "load_bearing_score": 14.288,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -54142,7 +54175,7 @@
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py",
       "title": "DM Leptogenesis PMNS Observable-Relative-Action Law",
-      "transitive_descendants": 882,
+      "transitive_descendants": 883,
       "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_hostile_audit_findings_note_2026-05-17": {
@@ -55001,54 +55034,45 @@
       "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16": {
-      "audit_date": "2026-05-18T12:14:55.611868+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 11.788,
-        "runner_hash": "9bad170fd837c93ca06bd2c58dac4b238d01f20bbdd74b7d6601ac17d1000a2a",
-        "transitive_descendants": 883
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_leptogenesis_pmns_rel-016",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic positive-cone Legendre identity closes on its own. The numerical closure branch and claims about W_rel/H_seed/eta/favored-column construction depend on the imported helper module frontier_dm_leptogenesis_pmns_observable_relative_action_law, whose source is not provided in the restricted packet.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "claim_scope": "Positive-cone logdet Legendre identity plus sampled local numerical branch check for the stated runner points, conditional on the omitted observable-relative-action helper machinery.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-18T12:14:55.611868+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+      ],
       "direct_in_degree": 4,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.788,
-      "load_bearing_step": "S_rel(Y) = sup_K [ W_rel(K) - Tr(KY) ] with unique maximizer K_* = Y^(-1) - I, so S_rel is the Legendre-dual effective action of W_rel(K)=log det(I+K).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "a0bce4315b52edc3aeaff3fcc245789d3fe7a79cfce75d5a233b4dfc8ad0f0b3",
+      "note_hash": "5f7c1cace5eb1c1526e8c69748f0ca70cb9f06cc14d81472c0446f8021d4876b",
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": "runner_artifact_issue include scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py and any retained theorem deriving W_rel, H_seed, eta, and favored-column closure, then re-audit the branch computation.",
-      "open_dependency_paths": [
-        "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -55209,19 +55233,62 @@
             "total_pass": 13
           },
           "verdict_rationale": "Issue: the packet proves only the algebraic Legendre transform identity over already-chosen W_rel and S_rel, while the axiom-to-observable generator, seed surface, eta readout, favored column, and physical selector bridge are imported rather than closed. Why this blocks: without those retained inputs, the conclusion that minimization is not an extra postulate does not follow from the restricted materials. Repair target: provide a retained theorem and runner source deriving the missing map from Cl(3), including scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py, rather than calling it opaquely. Claim boundary until fixed: the safe result is the positive-cone logdet Legendre identity and a sampled local numerical branch check conditional on the missing helper machinery."
+        },
+        {
+          "archived_at": "2026-05-19T08:55:12.926778+00:00",
+          "archived_for_note_hash": "a0bce4315b52edc3aeaff3fcc245789d3fe7a79cfce75d5a233b4dfc8ad0f0b3",
+          "audit_date": "2026-05-18T12:14:55.611868+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 11.788,
+            "runner_hash": "9bad170fd837c93ca06bd2c58dac4b238d01f20bbdd74b7d6601ac17d1000a2a",
+            "transitive_descendants": 883
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-dm_leptogenesis_pmns_rel-016",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic positive-cone Legendre identity closes on its own. The numerical closure branch and claims about W_rel/H_seed/eta/favored-column construction depend on the imported helper module frontier_dm_leptogenesis_pmns_observable_relative_action_law, whose source is not provided in the restricted packet.",
+          "claim_scope": "Positive-cone logdet Legendre identity plus sampled local numerical branch check for the stated runner points, conditional on the omitted observable-relative-action helper machinery.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-18T12:14:55.611868+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "load_bearing_step": "S_rel(Y) = sup_K [ W_rel(K) - Tr(KY) ] with unique maximizer K_* = Y^(-1) - I, so S_rel is the Legendre-dual effective action of W_rel(K)=log det(I+K).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "runner_artifact_issue include scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py and any retained theorem deriving W_rel, H_seed, eta, and favored-column closure, then re-audit the branch computation.",
+          "open_dependency_paths": [
+            "scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py"
+          ],
+          "runner_check_breakdown": {
+            "A": 3,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 13
+          },
+          "verdict_rationale": "The core Legendre-dual equation is a standard algebraic identity on the positive cone and is supported by the runner's direct matrix checks. However, the runner imports the load-bearing closure machinery as rel, including H_SEED, eta_columns_from_active, build_active_from_params, best_eta_from_params, and relative_action_h, while the packet says no helper imports were detected and provides no helper source. Therefore the restricted packet cannot verify the numerical branch or the claimed derivation of the helper machinery from Cl(3) on Z^3."
         }
       ],
       "runner_check_breakdown": {
-        "A": 3,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 13
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem",
       "transitive_descendants": 883,
-      "verdict_rationale": "The core Legendre-dual equation is a standard algebraic identity on the positive cone and is supported by the runner's direct matrix checks. However, the runner imports the load-bearing closure machinery as rel, including H_SEED, eta_columns_from_active, build_active_from_params, best_eta_from_params, and relative_action_h, while the packet says no helper imports were detected and provides no helper source. Therefore the restricted packet cannot verify the numerical branch or the claimed derivation of the helper machinery from Cl(3) on Z^3."
+      "verdict_rationale": null
     },
     "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16": {
       "audit_date": null,
@@ -149960,7 +150027,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 39.901,
+      "load_bearing_score": 39.902,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -150205,7 +150272,7 @@
       },
       "runner_path": null,
       "title": "Minimal Framework Inputs (SUPERSEDED)",
-      "transitive_descendants": 955,
+      "transitive_descendants": 956,
       "verdict_rationale": null
     },
     "minimal_axioms_2026-05-03": {
@@ -219668,7 +219735,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 11.304,
+      "load_bearing_score": 11.306,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -219792,7 +219859,7 @@
       },
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note",
-      "transitive_descendants": 893,
+      "transitive_descendants": 894,
       "verdict_rationale": null
     },
     "stale_narrative_review_2026-05-03": {
@@ -263130,8 +263197,8 @@
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2284,
-    "re_audit_required": 0,
+    "preserved_existing": 2282,
+    "re_audit_required": 2,
     "row_count": 2328,
     "seeded_new": 0
   }

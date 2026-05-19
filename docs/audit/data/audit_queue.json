@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 893,
+    "critical": 892,
     "high": 27,
     "leaf": 334,
     "medium": 116
@@ -9504,30 +9504,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "ordered_lattice_quasi_persistent_relaunch_2d_note",
-      "claim_scope": "Bounded numerical replay on the fixed 2D ordered-lattice harness h=0.5, W=12, L=20, max_d=10, source_y=5.0, top-k relaunch recipe, actions valley_linear and spent_delay, and strengths 2e-5, 5e-5, 1e-4. The audited result is only the deterministic six-row capture/carry/shift/relaunch/width table within the runner's +/-1e-3 assertions; it excludes persistent-mass, packet-class, invariance, or family-generic claims.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 6,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [
-        "scripts/lattice_2d_continuum_distance.py"
-      ],
-      "load_bearing_score": 15.974,
-      "note_path": "docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/ordered_lattice_quasi_persistent_relaunch_2d.py",
-      "transitive_descendants": 1005
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -47816,6 +47792,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 66,
-  "total_pending": 1370
+  "ready_count": 65,
+  "total_pending": 1369
 }

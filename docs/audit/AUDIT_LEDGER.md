@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 22 |
-| `audited_clean` | 570 |
+| `audit_in_progress` | 21 |
+| `audited_clean` | 571 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
-| `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -473,6 +472,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -6793,6 +6793,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting (Y_uR,Y_dR,Y_eR,Y_nuR)=(a+1,a-1,b-1,b+1) into the cubic anomaly gives -6(n_color a + b), which vanishes by the imported LH trace relation b=-n_color a.  _(class `A`)_
 - **chain closes:** True — The dependency supplies b=-n_color a and b=-1 as retained-bounded inputs, and the source note explicitly treats SHIFT and NEUTRAL_BRANCH as hypotheses/conventions rather than derived physics. Within that narrowed scope, the anomaly cancellations are exact algebraic identities.
 - **rationale:** The theorem is narrow enough to avoid claiming a derivation of the branch, n_color=3, chirality, or SM identification. The runner hard-codes the SHIFT completion, but that is not a defect for this scoped claim because the note states it is checking a fixed algebraic completion under imposed SHIFT/branch assumptions. No external comparator or first-principles physics bridge is needed for the bounded theorem as written.
+- **auditor confidence:** high
+
+### `ordered_lattice_quasi_persistent_relaunch_2d_note`
+
+- **Note:** [`ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md`](../../docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-ordered_lattice_quasi_pe-001`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the fixed h=0.5, W=12, L=20 ordered-lattice harness, the runner deterministically reproduces the six reported capture/carry/shift/relaunch/width metric rows within tight tolerances.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the fixed lattice, packet, field, propagation, detector profiles, top-k reidentification, and metrics directly from included code, then checks the displayed table against computed values. No cited authority or external comparator is needed for the narrowed replay claim.
+- **rationale:** The narrowed note does not claim persistent mass, family genericity, or an acceptance theorem; it claims only deterministic reproduction of a six-row numerical table on a fixed harness. The runner source performs the metric computation before comparing against pinned expected display values, and the helper source exposes the lattice generator and constants used in that path. Given the restricted scope, the chain closes as a bounded computational replay.
 - **auditor confidence:** high
 
 ### `packet_memory_note`

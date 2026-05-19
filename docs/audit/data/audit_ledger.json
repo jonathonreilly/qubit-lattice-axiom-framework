@@ -166703,33 +166703,33 @@
       "verdict_rationale": null
     },
     "ordered_lattice_quasi_persistent_relaunch_2d_note": {
-      "audit_date": "2026-05-11T12:45:32.409814+00:00",
+      "audit_date": "2026-05-19T14:19:25.694084+00:00",
       "audit_state_snapshot": {
-        "criticality": "high",
+        "criticality": "critical",
         "dep_claim_scope": {},
         "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 8.248,
+        "load_bearing_score": 15.974,
         "runner_hash": "265c9d6ec5510dad1dd3f9aca61952b4d052d019ec1705581b63e858f00a9419",
-        "transitive_descendants": 37
+        "transitive_descendants": 1005
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-audit-loop-20260511-ordered-lattice-quasi-persistent-relaunch-2d",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-ordered_lattice_quasi_pe-001",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The live runner computes the fixed ordered-lattice relaunch harness and reproduces the note's six-row table, with explicit assertions guarding drift. The source note expressly limits the result to numerical replay and disclaims persistent-mass, packet-class, and family-generic conclusions.",
+      "chain_closure_explanation": "The primary runner constructs the fixed lattice, packet, field, propagation, detector profiles, top-k reidentification, and metrics directly from included code, then checks the displayed table against computed values. No cited authority or external comparator is needed for the narrowed replay claim.",
       "claim_id": "ordered_lattice_quasi_persistent_relaunch_2d_note",
-      "claim_scope": "Bounded numerical replay on the fixed 2D ordered-lattice harness h=0.5, W=12, L=20, max_d=10, source_y=5.0, top-k relaunch recipe, actions valley_linear and spent_delay, and strengths 2e-5, 5e-5, 1e-4. The audited result is only the deterministic six-row capture/carry/shift/relaunch/width table within the runner's +/-1e-3 assertions; it excludes persistent-mass, packet-class, invariance, or family-generic claims.",
+      "claim_scope": "A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-19T11:19:08.823596+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-19T14:19:25.694084+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -166744,27 +166744,38 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T14:19:25.694084+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-ordered_lattice_quasi_pe-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 6,
       "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/lattice_2d_continuum_distance.py"
       ],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
       "load_bearing_score": 15.974,
-      "load_bearing_step": "The runner pins the fixed harness's six capture/carry/shift/relaunch/width rows and asserts every displayed value within +/-1e-3 of the narrowed note table.",
+      "load_bearing_step": "On the fixed h=0.5, W=12, L=20 ordered-lattice harness, the runner deterministically reproduces the six reported capture/carry/shift/relaunch/width metric rows within tight tolerances.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
       "max_descendant_status_rank": 95,
       "note_hash": "34ee3540f26f3302b33b8ba01b25db485150751b4683cafc3a10a916b39d61bf",
       "note_path": "docs/ORDERED_LATTICE_QUASI_PERSISTENT_RELAUNCH_2D_NOTE.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:high->critical: first-pass audit (auditor=codex-audit-loop-20260511-ordered-lattice-quasi-persistent-relaunch-2d, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the hard-coded expected table is used only as a post-computation drift assertion, not as the source of the measured metrics.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -166856,14 +166867,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 30,
+        "C": 1,
         "D": 0,
-        "total_pass": 30
+        "total_pass": 1
       },
       "runner_path": "scripts/ordered_lattice_quasi_persistent_relaunch_2d.py",
       "title": "Ordered-Lattice Quasi-Persistent Relaunch 2D Note",
       "transitive_descendants": 1005,
-      "verdict_rationale": "The live output matches the frozen table and the runner asserts capture, carry, shift, relaunch shift, and width for all six rows within tolerance. The source has narrowed the claim to that replay table only, so the hardcoded expected values are audit guards for numerical drift rather than a physical theorem. No broader persistent-object or family-generic claim is retained."
+      "verdict_rationale": "The narrowed note does not claim persistent mass, family genericity, or an acceptance theorem; it claims only deterministic reproduction of a six-row numerical table on a fixed harness. The runner source performs the metric computation before comparing against pinned expected display values, and the helper source exposes the lattice generator and constants used in that path. Given the restricted scope, the chain closes as a bounded computational replay."
     },
     "ordered_lattice_quasi_persistent_relaunch_note": {
       "audit_date": "2026-05-11T12:47:20.012533+00:00",

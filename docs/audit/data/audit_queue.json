@@ -15341,19 +15341,19 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "h0125_wider_replay_note",
       "claim_scope": "Bounded no-go that the completed h=0.125 phys_l=6 full-window replay rows, including the genuinely wider phys_w=4 z=3.0 row, do not rescue the weak-field mass-law exponent from the alpha approximately 0.5 class.",
       "claim_type": "no_go",
       "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "h0125_scalable_scout_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_pending_chain",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/lattice_3d_l2_numpy_h0125_only.py",
         "scripts/numpy_replay_bootstrap.py"

@@ -105990,7 +105990,7 @@
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": true,
       "chain_closure_explanation": "The dependency scout is retained_no_go and the current SHA-pinned runner cache for the replay exits 0 with the load-bearing width-4 full-window z=3.0 row at alpha=0.499. The claim is scoped only to the observed replay rows, not to all possible wider families.",
       "claim_id": "h0125_wider_replay_note",
@@ -106014,22 +106014,33 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T14:39:02.275207+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-h0125_wider_replay_note-025",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded audit of the h=0.125 dense-family replay at phys_l=6, phys_w=4, full window, z_mass=3.0, with the supplied phys_w=3 control and one-hop scout comparator.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "h0125_scalable_scout_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_pending_chain",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:chain_waiting_on:h0125_scalable_scout_note",
+      "effective_status": "audit_in_progress",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/lattice_3d_l2_numpy_h0125_only.py",
         "scripts/numpy_replay_bootstrap.py"
       ],
       "independence": "cross_family",
-      "intrinsic_status": "retained_pending_chain",
+      "intrinsic_status": "audit_in_progress",
       "load_bearing_score": 10.447,
       "load_bearing_step": "The completed replay cache shows the genuinely wider phys_w=4, phys_l=6, h=0.125, z=3.0 full-window row has alpha=0.499, while the phys_w=3 control has alpha=0.500, so widening does not move the observed full-window weak-field exponent toward 1.0.",
       "load_bearing_step_class": "C",

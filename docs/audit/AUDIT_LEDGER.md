@@ -21,10 +21,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 111 |
 | **retained_no_go** | 135 |
 | **retained_bounded** | 356 |
-| _retained_pending_chain_ | 7 |
+| _retained_pending_chain_ | 6 |
 | open_gate | 16 |
 | unaudited | 1346 |
-| audit_in_progress | 14 |
+| audit_in_progress | 15 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -74,7 +74,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 203 |
 | `leaf` | 879 |
 
-- **Retained pending chain closure:** 7
+- **Retained pending chain closure:** 6
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -129,7 +129,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `h0125_scalable_scout_note` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | B | - |
-| `h0125_wider_replay_note` | no_go | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
+| `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |

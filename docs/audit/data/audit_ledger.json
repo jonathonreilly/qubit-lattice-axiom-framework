@@ -234093,24 +234093,53 @@
       "verdict_rationale": "All claimed algebraic conclusions follow constructively: the P_i project onto the three coordinate lines, P_i C^k P_j produces every matrix unit, the nine units span M_3(C), and irreducibility/no-proper-quotient follows. The note explicitly strips away the physical generation interpretation, so no open staggered-Dirac or physical-lattice gate is load-bearing here."
     },
     "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T14:22:05.215505+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "s3_mass_matrix_no_go_note": "Exact unbroken S_3-invariant Hermitian operators on the stated hw=1 triplet V = span(X_1, X_2, X_3) have at most two distinct eigenvalues; the residual axis-fixing Z_2 invariant space has real dimension 5.",
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation decomposition for the tensor-position permutation action of S_3 on C^8=(C^2)^{\\otimes 3}.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "s3_mass_matrix_no_go_note": "no_go",
+          "s3_taste_cube_decomposition_note": "bounded_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "s3_mass_matrix_no_go_note": "retained_no_go",
+          "s3_taste_cube_decomposition_note": "retained_bounded",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "s3_mass_matrix_no_go_note",
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 19.472,
+        "runner_hash": "b04450992f30070aabeccfcf06ff1f03e21c8db2b87fdd064d459122dfa76625",
+        "transitive_descendants": 1003
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-three_generation_observa-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional algebra closes once the hw=1 basis and C3 action are admitted. The missing step is a retained bridge theorem establishing that staggered-Dirac/hw=1/C3 carrier rather than declaring it as an import.",
       "claim_id": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Conditional on the admitted hw=1 C3[111] carrier, the translation-character projectors plus the C3 cycle generate M_3(C) and forbid any nonzero proper quotient/subspace preserving both structures.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-19T14:22:05.215505+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -234121,20 +234150,23 @@
         "z2_hw1_mass_matrix_parametrization_note"
       ],
       "direct_in_degree": 19,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 19.472,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The diagonal projectors generate D_3 and, together with the C3 cyclic permutation matrix, generate M_3(C), so any subspace invariant under both D_3 and C3 is only {0} or C^3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "a92bd6ab57991d89f52cff226f56b0ed6802c2a3c788202e84fdd8319889c01f",
       "note_path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: close the staggered-Dirac/hw=1 C3[111] carrier import with a retained bridge theorem, then re-audit the same matrix-algebra core.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/S3_TASTE_CUBE_DECOMPOSITION_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-03T13:40:45.897458+00:00",
@@ -234233,16 +234265,16 @@
         }
       ],
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 33,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 33
       },
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "title": "Three-Generation Observable: No-Proper-Quotient Narrow Theorem",
       "transitive_descendants": 1003,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner source genuinely constructs the rank-one projectors and cyclic permutation, derives all matrix units P_i C^k P_j, and enumerates the D_3-invariant coordinate subspaces, so the audited algebraic core is class A. However the source note explicitly makes the hw=1 triplet and C3[111] action an admitted import whose canonical parent is an open staggered-Dirac realization gate. Retained status therefore cannot propagate through the carrier bridge, even though the internal matrix-algebra statement is sound. A second audit should also keep the quotient language restricted to D_3- and C3-compatible quotients, since C3 alone has proper invariant complex eigenspaces."
     },
     "three_generation_observable_theorem_note": {
       "audit_date": null,

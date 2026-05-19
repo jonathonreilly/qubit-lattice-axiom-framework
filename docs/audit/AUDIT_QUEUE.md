@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1335
+**Total pending:** 1334
 **Ready (all deps already at retained-grade or metadata tiers):** 28
 
 By criticality:
-- `critical`: 881
+- `critical`: 880
 - `high`: 27
 - `medium`: 107
 - `leaf`: 320
@@ -17,9 +17,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | critical | 993 | 10.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/equivalence_principle_harness.py` |
 | 2 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | critical | 992 | 10.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/action_power_scaling_sweep.py` |
-| 3 | `decoherence_action_independence_note` | bounded_theorem | audit_in_progress | critical | 990 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/decoherence_action_independence.py` |
-| 4 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | critical | 989 | 12.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_cycle_frame_support.py` |
-| 5 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | critical | 989 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/gate_b_connectivity_tolerance.py` |
+| 3 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | critical | 989 | 12.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_cycle_frame_support.py` |
+| 4 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | critical | 989 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/gate_b_connectivity_tolerance.py` |
+| 5 | `valley_linear_continuum_synthesis_note` | bounded_theorem | unaudited | critical | 989 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 6 | `poisson_self_gravity_born_audit_note` | bounded_theorem | audit_in_progress | critical | 988 | 11.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/poisson_self_gravity_born_audit.py` |
 | 7 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | critical | 988 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/growing_graph_frontier_expansion.py` |
 | 8 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | unaudited | critical | 987 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py` |

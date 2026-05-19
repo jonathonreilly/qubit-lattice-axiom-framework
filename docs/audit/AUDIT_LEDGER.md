@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1330 |
+| unaudited | 1329 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 582 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1549 |
+| `unaudited` | 1548 |
 
 | claim_type | count |
 |---|---:|
@@ -735,6 +735,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_exact_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -2564,6 +2565,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting f_bar = 0 into the explicit definitions gives spent_delay(L,0)=L and valley_linear(L,0)=L, so exp(i k spent_delay(L,0)) = exp(i k valley_linear(L,0)) = exp(i k L).  _(class `A`)_
 - **chain closes:** True — The proof needs only direct substitution into the stated definitions: dl(L,0)=L, ret(L,0)=0, and L(1-0)=L. The claimed phase equality then follows from equality of the phase arguments, without invoking propagation, detector readout, or decoherence observables.
 - **rationale:** The load-bearing step is a genuine algebraic identity within the bounded scope of the note. The runner source performs symbolic substitution and simplification rather than merely printing constants, and its zero-field use of the Max-protected expression is harmless because the argument is exactly zero at f_bar=0. The note explicitly does not claim the broader propagated-amplitude or observable equality, so no missing physical bridge is needed for the audited scope.
+- **auditor confidence:** high
+
+### `dense_prune_guard_seed_note`
+
+- **Note:** [`DENSE_PRUNE_GUARD_SEED_NOTE.md`](../../docs/DENSE_PRUNE_GUARD_SEED_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded aggregate claim that scripts/channel_count_guarded_prune.py computes different aggregate plain-vs-guarded pruning summaries and reduced aggregate flip counts under the channel-count guard.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-dense_prune_guard_seed_n-050`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The aggregate cache supports that the channel-count guard is not a no-op on this seed set: aggregate eff_ch and aggregate flip count move under the guard relative to plain pruning.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes aggregate guarded and unguarded rows, but its aggregation is over valid seeds in range(16), not the specifically named historical flip-prone seed set. The source note's stated seed-set scope is therefore broader or different from what the cached stdout certifies.
+- **rationale:** The primary runner and bundled helpers contain real graph generation, pruning, propagation, purity, gravity, effective-channel, and flip-count computations rather than hard-coded expected values. The cached stdout supports aggregate movement in eff_ch and, for some rows, fewer flips under the guard. However, the note frames the bounded observation as being on the historical flip-prone seed set, while the runner loops over seed range(16) and reports n=14, n=13, n=3, and n=16 valid aggregates rather than the listed historical seeds alone. That scope mismatch prevents the chain from closing exactly as stated.
 - **auditor confidence:** high
 
 ### `diamond_signal_budget_hardening_note`

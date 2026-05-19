@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 112 |
-| **retained_no_go** | 136 |
+| **retained_no_go** | 137 |
 | **retained_bounded** | 375 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
 | unaudited | 1308 |
-| audit_in_progress | 11 |
+| audit_in_progress | 10 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
-| `audited_clean` | 599 |
+| `audit_in_progress` | 10 |
+| `audited_clean` | 600 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | D | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `h0125_scalable_scout_note` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | B | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
@@ -355,6 +354,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `h0125_scalable_scout_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5035,6 +5035,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The source note has no runner, no artifact chain, and no cited authority for the transfer norms, beam widths, detector probabilities, or SNR. Its stated probability formula also fails internally: retention^nl gives about 8.18e-4, 1.14e-11, and 4.26e-34 for the three rows, not 3.7e-59, 1.1e-88, and 1.6e-136.
 - **rationale:** Issue: the note's load-bearing numerical diagnosis is unsupported by any declared runner or one-hop derivation, and the explicit formula `P_det = (retention)^nl` is inconsistent with the printed P_det table by tens to more than one hundred orders of magnitude. Why this blocks: the retained negative claim depends on those numbers to distinguish boundary leakage, beam spreading, compounded loss, and statistical-noise AWAY behavior; without a reproducible computation or internally consistent formula, the diagnosis is not auditable. Repair target: add an executable h=0.125 failure diagnostic that computes T_interior/T_corner, beam sigma, detector probability including any geometric-spreading factor, and centroid SNR from the same propagation model, then update the note so every table entry follows from that runner. Claim boundary until fixed: safely claim only that boundary leakage and beam spreading are plausible failure hypotheses and that h=0.125 has not been retained by this note; do not retain the quantified root-cause diagnosis or SNR=0.5 noise conclusion.
 - **auditor confidence:** high
+
+### `h0125_scalable_scout_note`
+
+- **Note:** [`H0125_SCALABLE_SCOUT_NOTE.md`](../../docs/H0125_SCALABLE_SCOUT_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded no-go that the cited h=0.125 phys_l=4, phys_w=3 full-window scout rows do not provide a wider or more scalable rescue relative to the cited phys_l=6, phys_w=4 full-window comparator.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-h0125_scalable_scout_note-panel-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The retained width-4 comparator stays pinned at alpha = 0.499, while the shorter-scale scout only reaches alpha = 0.501, 0.501, 0.502.  _(class `B`)_
+- **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, no_go, class B). Vote breakdown: J1: first / audited_clean / no_go / class B; J2: second / audited_conditional / no_go / class C; J3: first / audited_clean / no_go / class B; J4: first / audited_clean / no_go / class B; J5: first / audited_clean / no_go / class B. Majority rationale: J1: The claim is explicitly bounded to the observed full-window rows. The load-bearing step is the direct numeric comparison: scout alpha values 0.501/0.501/0.502 versus the retained comparator at 0.499, with untested geometries excluded from scope. Under that scope the no-go closes as a class-B recorded-row comparison; lack of a rerun is not itself a substantive conditional dependency. | J2: The no-go rests on numerical scout/comparator alpha rows; that is an intended computational scout step, but the restricted packet supplies no runner/log contents or retained comparator authority, so the row-level no-go is conditional rather than clean. | J3: The scoped claim is only that the cited observed full-window rows fail to provide a wider or more scalable rescue relative to the stated width-4 comparator. That load-bearing step is a direct cross-log/value comparison, not a new first-principles computation, and it closes within the bounded observed-row scope. | J4: The scoped claim is only a bounded no-go for the observed full-window rows: the scout alpha values 0.501, 0.501, 0.502 do not improve on the stated width-4 comparator alpha 0.499. That is a direct cross-artifact numeric comparison, not an unclosed physical bridge or broad exclusion of untested geometries. | J5: The scoped claim is only the bounded observed-row no-go: the h=0.125 phys_l=4, phys_w=3 full-window scout rows do not provide a wider or more scalable rescue relative to the cited phys_l=6, phys_w=4 comparator. That follows directly from the finite recorded comparison: width 3 is not wider than width 4, and the scout alphas 0.501/0.501/0.502 do not improve on the cited 0.499 comparator. Untested geometries are outside scope.
+- **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, no_go, class B). Vote breakdown: J1: first / audited_clean / no_go / class B; J2: second / audited_conditional / no_go / class C; J3: first / audited_clean / no_go / class B; J4: first / audited_clean / no_go / class B; J5: first / audited_clean / no_go / class B. Majority rationale: J1: The claim is explicitly bounded to the observed full-window rows. The load-bearing step is the direct numeric comparison: scout alpha values 0.501/0.501/0.502 versus the retained comparator at 0.499, with untested geometries excluded from scope. Under that scope the no-go closes as a class-B recorded-row comparison; lack of a rerun is not itself a substantive conditional dependency. | J2: The no-go rests on numerical scout/comparator alpha rows; that is an intended computational scout step, but the restricted packet supplies no runner/log contents or retained comparator authority, so the row-level no-go is conditional rather than clean. | J3: The scoped claim is only that the cited observed full-window rows fail to provide a wider or more scalable rescue relative to the stated width-4 comparator. That load-bearing step is a direct cross-log/value comparison, not a new first-principles computation, and it closes within the bounded observed-row scope. | J4: The scoped claim is only a bounded no-go for the observed full-window rows: the scout alpha values 0.501, 0.501, 0.502 do not improve on the stated width-4 comparator alpha 0.499. That is a direct cross-artifact numeric comparison, not an unclosed physical bridge or broad exclusion of untested geometries. | J5: The scoped claim is only the bounded observed-row no-go: the h=0.125 phys_l=4, phys_w=3 full-window scout rows do not provide a wider or more scalable rescue relative to the cited phys_l=6, phys_w=4 comparator. That follows directly from the finite recorded comparison: width 3 is not wider than width 4, and the scout alphas 0.501/0.501/0.502 do not improve on the cited 0.499 comparator. Untested geometries are outside scope.
+- **auditor confidence:** judicial_panel_majority
 
 ### `h0125_wider_w4_note`
 

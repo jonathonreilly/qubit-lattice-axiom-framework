@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1319
+**Total pending:** 1318
 **Ready (all deps already at retained-grade or metadata tiers):** 21
 
 By criticality:
-- `critical`: 869
+- `critical`: 868
 - `high`: 27
 - `medium`: 106
 - `leaf`: 317
@@ -17,13 +17,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `newton_derivation_top4_bridge_note` | bounded_theorem | unaudited | critical | 992 | 10.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/newton_derivation_top4_bridge_runner.py` |
 | 2 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | unaudited | critical | 987 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py` |
-| 3 | `h0125_scalable_scout_note` | no_go | audit_in_progress | critical | 987 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
-| 4 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | critical | 986 | 12.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_atomic_rydberg_dependency_firewall.py` |
-| 5 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | critical | 986 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py` |
-| 6 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a1_grassmann_boundary_car_obstruction.py` |
-| 7 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a4_parity_gate_car_boundary.py` |
-| 8 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction.py` |
-| 9 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py` |
+| 3 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | critical | 986 | 12.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_atomic_rydberg_dependency_firewall.py` |
+| 4 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | critical | 986 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py` |
+| 5 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a1_grassmann_boundary_car_obstruction.py` |
+| 6 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a4_parity_gate_car_boundary.py` |
+| 7 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction.py` |
+| 8 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | critical | 986 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py` |
+| 9 | `h0125_wider_replay_note` | no_go | audit_in_progress | critical | 986 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_3d_l2_wide_h0125_replay.py` |
 | 10 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | critical | 985 | 12.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_neutrino_lane4_dirac_seesaw_fork_no_go.py` |
 | 11 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | critical | 985 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_weak_coupling_retained.py` |
 | 12 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | unaudited | critical | 985 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py` |

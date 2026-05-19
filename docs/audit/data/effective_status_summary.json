@@ -1,13 +1,17 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 997,
+    "bounded_theorem": 998,
     "decoration": 26,
-    "meta": 217,
+    "meta": 220,
     "no_go": 230,
     "open_gate": 110,
-    "positive_theorem": 748
+    "positive_theorem": 746
   },
   "cycle_examples": [
+    [
+      "minimal_axioms_2026-05-03",
+      "key_terminology"
+    ],
     [
       "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
@@ -17,51 +21,18 @@
       "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
     ],
     [
-      "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "lorentz_kernel_positive_closure_note",
-      "emergent_lorentz_invariance_note",
-      "planck_scale_lane_status_note_2026-04-23",
-      "planck_scale_conditional_completion_note_2026-04-24",
-      "planck_boundary_density_extension_theorem_note_2026-04-24",
-      "planck_source_unit_normalization_support_theorem_note_2026-04-25",
-      "area_law_primitive_car_edge_identification_theorem_note_2026-04-25",
-      "area_law_native_car_semantics_tightening_note_2026-04-25",
-      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
-      "anomaly_forces_time_theorem",
-      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      "rconn_derived_note",
+      "yt_ew_matching_rule_m_stretch_attempt_note_2026-05-02"
     ],
     [
-      "emergent_lorentz_invariance_note",
-      "planck_scale_lane_status_note_2026-04-23",
-      "planck_scale_conditional_completion_note_2026-04-24",
-      "planck_boundary_density_extension_theorem_note_2026-04-24",
-      "planck_source_unit_normalization_support_theorem_note_2026-04-25",
-      "area_law_primitive_car_edge_identification_theorem_note_2026-04-25",
-      "area_law_native_car_semantics_tightening_note_2026-04-25",
-      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
-      "anomaly_forces_time_theorem",
-      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-    ],
-    [
-      "lorentz_kernel_positive_closure_note",
-      "emergent_lorentz_invariance_note",
-      "planck_scale_lane_status_note_2026-04-23",
-      "planck_scale_conditional_completion_note_2026-04-24",
-      "planck_boundary_density_extension_theorem_note_2026-04-24",
-      "planck_source_unit_normalization_support_theorem_note_2026-04-25",
-      "area_law_primitive_car_edge_identification_theorem_note_2026-04-25",
-      "area_law_native_car_semantics_tightening_note_2026-04-25",
-      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
-      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
-      "anomaly_forces_time_theorem",
-      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      "rconn_derived_note",
+      "yt_ew_matching_rule_m_stretch_attempt_note_2026-05-02",
+      "ew_current_matching_ozi_suppression_theorem_note_2026-04-27"
     ]
   ],
-  "cycles_detected": 191,
+  "cycles_detected": 195,
   "effective_status_counts": {
-    "audited_conditional": 102,
+    "audited_conditional": 58,
     "audited_failed": 24,
     "audited_numerical_match": 9,
     "audited_renaming": 11,
@@ -81,13 +52,13 @@
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 213,
+    "meta": 219,
     "open_gate": 16,
     "retained": 116,
     "retained_bounded": 363,
     "retained_no_go": 139,
     "retained_pending_chain": 5,
-    "unaudited": 1308
+    "unaudited": 1348
   },
   "retained_pending_chain_count": 5,
   "retained_pending_chain_examples": [

@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 112 |
+| **retained** | 111 |
 | **retained_no_go** | 135 |
 | **retained_bounded** | 356 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
 | unaudited | 1347 |
-| audit_in_progress | 12 |
+| audit_in_progress | 13 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -133,7 +133,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `h0125_wider_w4_note` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
-| `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | C | - |
+| `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |

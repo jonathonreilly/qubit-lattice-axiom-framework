@@ -183661,22 +183661,49 @@
       "verdict_rationale": "The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type."
     },
     "poisson_self_gravity_mechanism_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:35:10.184078+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "poisson_self_gravity_born_audit_note": "Narrow numerical audit on the provided h = 0.25 three-slit lattice runner: exact zero-coupling reduction and step-local frozen-snapshot Born cancellation; nonzero-coupling end-to-end Born is excluded from retained scope.",
+          "poisson_self_gravity_loop_note": "Finite declared-run numerical control for scripts/poisson_self_gravity_loop.py at h=0.25, W=3, L=6, the fixed 5-node source patch, screened kernel parameters, declared source strengths, and declared epsilon sweep; not a general self-gravity or backreaction mechanism.",
+          "poisson_self_gravity_loop_v3_note": "Restricted finite-harness no-go: at nonzero coupling the runner shows small matched-null centroid and detector-line phase-ramp shifts, but all nonzero-coupling sweep rows fail the stated convergence tolerance and the result is not promoted to a self-gravity mechanism; the same-loop epsilon=0 reduction is out of binding scope."
+        },
+        "dep_claim_type": {
+          "poisson_self_gravity_born_audit_note": "bounded_theorem",
+          "poisson_self_gravity_loop_note": "bounded_theorem",
+          "poisson_self_gravity_loop_v3_note": "no_go"
+        },
+        "dep_effective_status": {
+          "poisson_self_gravity_born_audit_note": "retained_bounded",
+          "poisson_self_gravity_loop_note": "retained_bounded",
+          "poisson_self_gravity_loop_v3_note": "retained_no_go"
+        },
+        "deps": [
+          "poisson_self_gravity_born_audit_note",
+          "poisson_self_gravity_loop_note",
+          "poisson_self_gravity_loop_v3_note"
+        ],
+        "load_bearing_score": 11.447,
+        "runner_hash": "c23ab02c062db03b9fea1f1ec76127d2320e24326cdba9a60e59972419c81f3d",
+        "transitive_descendants": 986
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-153419-d5be05e0-poisson_self_gravity_mec-011",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source note's conclusion is directionally consistent with the cited controls, but it imports the decisive status from upstream notes and a hard-coded report script rather than re-deriving the four hard-bar criteria. The missing step is a registered runner or derivation that recomputes the hard-bar checks for this mechanism note.",
       "claim_id": "poisson_self_gravity_mechanism_note",
-      "claim_scope": null,
+      "claim_scope": "A summary-level bounded control verdict that the exact-lattice Poisson-like self-gravity lane is not a retained self-gravity mechanism on the supplied cited controls and hard-coded report runner.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-19T15:35:10.184078+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -183686,20 +183713,23 @@
         "poisson_self_gravity_loop_v3_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.447,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The family remains control-only because exact zero-coupling and step-local Born survive, but end-to-end Born is not clean, the loop effect is tiny, and no stable self-gravity regime emerges on the tested exact-lattice family.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "97e6d6c3e04a0e36dcb0c78c769657b26dafca3121c2e8d965af1e4a737bae84",
       "note_path": "docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: cheapest repair is to replace the hard-coded summary runner with a registered runner that re-derives the exact-zero, matched-null, step-local and end-to-end Born, stronger-observable, and convergence/effect-size hard bars from included sources, while keeping diagnostic-only upstream claims out of the load-bearing closure.",
+      "open_dependency_paths": [
+        "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md",
+        "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.369413+00:00",
@@ -183857,7 +183887,7 @@
       "runner_path": "scripts/poisson_self_gravity_mechanism.py",
       "title": "Poisson Self-Gravity Mechanism Note",
       "transitive_descendants": 986,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner performs no mechanism check; it only prints constants embedded in a MechanismVerdict dataclass. The cited authorities are not uniformly clean closure for the exact claim: the Born note explicitly demotes end-to-end Born to diagnostic-only, and the V3 note's zero-coupling same-machinery identity is out of binding scope. The note is careful not to claim a retained mechanism, so this is not a scientific failure, but the bounded summary does not close as an independently re-derived theorem from the restricted packet."
     },
     "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T21:39:23.444056+00:00",

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 370 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 16 |
 | `audited_clean` | 594 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1530 |
+| `unaudited` | 1529 |
 
 | claim_type | count |
 |---|---:|
@@ -786,6 +786,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7779,6 +7780,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.
 - **rationale:** The runner source performs an actual finite-lattice backreaction sweep and Born audit rather than printing or importing the contested nonzero-coupling outcome. The completed output supports the scoped observation: nonzero epsilon rows have positive centroid deltas and phase spans/slopes, but 0/3 rows converge at each nonzero epsilon and the safe read remains a bounded no-go. Because the narrowed claim is falsifying/no-promotion evidence rather than a retained positive bounded theorem, the second tuple has the correct claim type.
 - **auditor confidence:** judicial
+
+### `poisson_self_gravity_mechanism_note`
+
+- **Note:** [`POISSON_SELF_GRAVITY_MECHANISM_NOTE.md`](../../docs/POISSON_SELF_GRAVITY_MECHANISM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A summary-level bounded control verdict that the exact-lattice Poisson-like self-gravity lane is not a retained self-gravity mechanism on the supplied cited controls and hard-coded report runner.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-153419-d5be05e0-poisson_self_gravity_mec-011`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The family remains control-only because exact zero-coupling and step-local Born survive, but end-to-end Born is not clean, the loop effect is tiny, and no stable self-gravity regime emerges on the tested exact-lattice family.  _(class `B`)_
+- **chain closes:** False — The source note's conclusion is directionally consistent with the cited controls, but it imports the decisive status from upstream notes and a hard-coded report script rather than re-deriving the four hard-bar criteria. The missing step is a registered runner or derivation that recomputes the hard-bar checks for this mechanism note.
+- **rationale:** The primary runner performs no mechanism check; it only prints constants embedded in a MechanismVerdict dataclass. The cited authorities are not uniformly clean closure for the exact claim: the Born note explicitly demotes end-to-end Born to diagnostic-only, and the V3 note's zero-coupling same-machinery identity is out of binding scope. The note is careful not to claim a retained mechanism, so this is not a scientific failure, but the bounded summary does not close as an independently re-derived theorem from the restricted packet.
+- **open / conditional deps cited:**
+  - `POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md`
+  - `POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md`
+- **auditor confidence:** high
 
 ### `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17`
 

@@ -13,6 +13,10 @@
       "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
     ],
     [
+      "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+      "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    ],
+    [
       "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
       "lorentz_kernel_positive_closure_note",
       "emergent_lorentz_invariance_note",
@@ -53,15 +57,11 @@
       "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
       "anomaly_forces_time_theorem",
       "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-    ],
-    [
-      "s3_cap_uniqueness_note",
-      "pl_topology_infrastructure_textbook_import_note_2026-05-17"
     ]
   ],
-  "cycles_detected": 189,
+  "cycles_detected": 191,
   "effective_status_counts": {
-    "audited_conditional": 104,
+    "audited_conditional": 102,
     "audited_failed": 24,
     "audited_numerical_match": 9,
     "audited_renaming": 11,
@@ -87,7 +87,7 @@
     "retained_bounded": 363,
     "retained_no_go": 139,
     "retained_pending_chain": 5,
-    "unaudited": 1306
+    "unaudited": 1308
   },
   "retained_pending_chain_count": 5,
   "retained_pending_chain_examples": [

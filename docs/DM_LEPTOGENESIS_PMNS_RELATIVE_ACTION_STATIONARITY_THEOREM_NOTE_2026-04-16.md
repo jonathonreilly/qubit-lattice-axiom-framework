@@ -188,3 +188,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   records the present theorem as its load-bearing upstream; the citation
   direction is *observable_relative_action_law → this_stationarity_theorem*,
   not vice versa.)
+- [dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)

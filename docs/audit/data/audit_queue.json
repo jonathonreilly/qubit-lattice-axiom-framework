@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 877,
+    "critical": 876,
     "high": 27,
     "leaf": 318,
     "medium": 106
@@ -9595,34 +9595,6 @@
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
-      "transitive_descendants": 989
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "valley_linear_continuum_synthesis_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "valley_linear_action_note",
-        "valley_linear_robustness_note",
-        "valley_linear_asymptotic_bridge_note",
-        "dimensional_gravity_table",
-        "decoherence_action_independence_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.951,
-      "note_path": "docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
       "transitive_descendants": 989
     },
     {
@@ -46794,6 +46766,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 26,
-  "total_pending": 1328
+  "ready_count": 25,
+  "total_pending": 1327
 }

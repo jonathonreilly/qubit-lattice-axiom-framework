@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 370 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 75 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 16 |
 | `audited_clean` | 594 |
-| `audited_conditional` | 75 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1531 |
+| `unaudited` | 1530 |
 
 | claim_type | count |
 |---|---:|
@@ -802,6 +802,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
+| `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -10830,6 +10831,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within the restricted packet, the runner performs numerical lattice propagations over the stated checkpoint ladder and fits the resulting mass and distance laws rather than printing fixed constants. The conclusion is bounded to the tested finite slices and does not assert a continuum theorem.
 - **rationale:** The note's conclusion is conservative and matches the completed runner output: the tested slices remain TOWARD, preserve F~M near 1.00, and show far-tail slopes that vary across h/W choices. The runner source is not a trivial constant printer; it constructs lattice checkpoints, propagates fields, computes Born/k=0/gravity/mass-scaling/distance-law quantities, and fits power laws. No external comparator or imported calibrated measurement is used, and the claimed scope stays bounded to this finite replay.
 - **auditor confidence:** medium
+
+### `valley_linear_continuum_synthesis_note`
+
+- **Note:** [`VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md`](../../docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the synthesis note's bounded claim that the valley-linear action has an unprovided continuum Newtonian-distance derivation plus retained ordered-lattice numerical support and open asymptotic limitations.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-153419-d5be05e0-valley_linear_continuum_-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The analytic derivation shows that S = L(1-f) gives linear-in-f behavior whose continuum phase shift integrates to a 1/b deflection law in 3D, with the lattice numerics read as finite-resolution approximations.  _(class `B`)_
+- **chain closes:** False — The numerical synthesis is mostly supported by the cited retained notes, but the load-bearing continuum derivation is imported from .claude/science/derivations/valley-linear-distance-law-2026-04-04.md, which is cited by the source note but not provided in the restricted packet. Without that derivation, the bridge from S = L(1-f) to the 3D continuum 1/b law cannot be audited.
+- **rationale:** The source note is carefully bounded and does not promote a universal theorem, and its lattice-number summaries are consistent with the provided retained bounded authorities. However, the central analytic continuum claim is delegated to a derivation file outside the packet, so the restricted inputs do not close the strongest step from action law to continuum Newtonian distance law. The cited dimensional and asymptotic notes also explicitly keep the asymptotic/universal reading open, so retained status cannot propagate into a closed continuum theorem.
+- **open / conditional deps cited:**
+  - `.claude/science/derivations/valley-linear-distance-law-2026-04-04.md`
+  - `VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md`
+  - `DIMENSIONAL_GRAVITY_TABLE.md`
+- **auditor confidence:** high
 
 ### `valley_linear_mirror_transfer_note`
 

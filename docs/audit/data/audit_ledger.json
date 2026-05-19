@@ -245497,22 +245497,57 @@
       "verdict_rationale": "The note's conclusion is conservative and matches the completed runner output: the tested slices remain TOWARD, preserve F~M near 1.00, and show far-tail slopes that vary across h/W choices. The runner source is not a trivial constant printer; it constructs lattice checkpoints, propagates fields, computes Born/k=0/gravity/mass-scaling/distance-law quantities, and fits power laws. No external comparator or imported calibrated measurement is used, and the claimed scope stays bounded to this finite replay."
     },
     "valley_linear_continuum_synthesis_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:34:42.312843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "decoherence_action_independence_note": "On the provided 3D ordered 1/L^2 zero-field lattice harness at h in {1.0, 0.5, 0.25}, the two implemented action modes produce exactly identical decoherence observables within the runner output.",
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope.",
+          "valley_linear_action_note": "Bounded same-harness comparison of spent-delay versus valley-linear S=L(1-f) on the fixed 3D ordered dense lattice 1/L^2 family at h=0.25 with the stated slit geometry, detector readout, and field shape.",
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12.",
+          "valley_linear_robustness_note": "Bounded replay of scripts/valley_linear_robustness_sweep.py for S = L(1-f), kernel 1/L^2 with h^2 measure, h = 0.5, on the tested 3D ordered-lattice width, connectivity, and length slices."
+        },
+        "dep_claim_type": {
+          "decoherence_action_independence_note": "bounded_theorem",
+          "dimensional_gravity_table": "bounded_theorem",
+          "valley_linear_action_note": "bounded_theorem",
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem",
+          "valley_linear_robustness_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "decoherence_action_independence_note": "retained_bounded",
+          "dimensional_gravity_table": "retained_bounded",
+          "valley_linear_action_note": "retained_bounded",
+          "valley_linear_asymptotic_bridge_note": "retained_bounded",
+          "valley_linear_robustness_note": "retained_bounded"
+        },
+        "deps": [
+          "decoherence_action_independence_note",
+          "dimensional_gravity_table",
+          "valley_linear_action_note",
+          "valley_linear_asymptotic_bridge_note",
+          "valley_linear_robustness_note"
+        ],
+        "load_bearing_score": 10.951,
+        "runner_hash": null,
+        "transitive_descendants": 989
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-153419-d5be05e0-valley_linear_continuum_-005",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical synthesis is mostly supported by the cited retained notes, but the load-bearing continuum derivation is imported from .claude/science/derivations/valley-linear-distance-law-2026-04-04.md, which is cited by the source note but not provided in the restricted packet. Without that derivation, the bridge from S = L(1-f) to the 3D continuum 1/b law cannot be audited.",
       "claim_id": "valley_linear_continuum_synthesis_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the synthesis note's bounded claim that the valley-linear action has an unprovided continuum Newtonian-distance derivation plus retained ordered-lattice numerical support and open asymptotic limitations.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-19T15:34:42.312843+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -245524,20 +245559,24 @@
         "decoherence_action_independence_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.951,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The analytic derivation shows that S = L(1-f) gives linear-in-f behavior whose continuum phase shift integrates to a 1/b deflection law in 3D, with the lattice numerics read as finite-resolution approximations.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "1fa18a23f24ea90bcc64e94d2345525fba586ab1585f5f0e14b847dcbc5b7152",
       "note_path": "docs/VALLEY_LINEAR_CONTINUUM_SYNTHESIS_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full continuum derivation file .claude/science/derivations/valley-linear-distance-law-2026-04-04.md, or an equivalent self-contained derivation in the restricted packet, so the S = L(1-f) to 1/b continuum step can be audited directly.",
+      "open_dependency_paths": [
+        ".claude/science/derivations/valley-linear-distance-law-2026-04-04.md",
+        "docs/VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md",
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-04-27T01:58:35.370030+00:00",
@@ -245615,15 +245654,15 @@
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 5,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": null,
       "title": "Valley-Linear Continuum Synthesis Note",
       "transitive_descendants": 989,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note is carefully bounded and does not promote a universal theorem, and its lattice-number summaries are consistent with the provided retained bounded authorities. However, the central analytic continuum claim is delegated to a derivation file outside the packet, so the restricted inputs do not close the strongest step from action law to continuum Newtonian distance law. The cited dimensional and asymptotic notes also explicitly keep the asymptotic/universal reading open, so retained status cannot propagate into a closed continuum theorem."
     },
     "valley_linear_mirror_transfer_note": {
       "audit_date": "2026-05-02T02:06:53.181743+00:00",

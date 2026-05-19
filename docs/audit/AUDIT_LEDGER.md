@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 372 |
-| _retained_pending_chain_ | 8 |
+| **retained_bounded** | 374 |
+| _retained_pending_chain_ | 7 |
 | open_gate | 16 |
 | unaudited | 1308 |
-| audit_in_progress | 15 |
+| audit_in_progress | 14 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 15 |
-| `audited_clean` | 596 |
+| `audit_in_progress` | 14 |
+| `audited_clean` | 597 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -74,7 +74,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 203 |
 | `leaf` | 879 |
 
-- **Retained pending chain closure:** 8
+- **Retained pending chain closure:** 7
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | D | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
@@ -141,8 +140,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `action_power_scaling_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_uniqueness_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `action_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
+| `action_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1007,6 +1007,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Within the scoped finite harness, the runner computes the reported values from the stated action fork and fixed lattice setup rather than importing an external comparator or renaming a target observable. The note also states the relevant limits: no inherited spent-delay claims, no continuum or robustness closure, and no same-harness 3D Newtonian attraction closure.
 - **auditor confidence:** medium
 
+### `action_power_scaling_sweep_note`
+
+- **Note:** [`ACTION_POWER_SCALING_SWEEP_NOTE.md`](../../docs/ACTION_POWER_SCALING_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F∝M=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-action_power_scaling_sweep_note-panel-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** On this fixed family, the mass-scaling law is clean: F∝M = p across the tested sweep.  _(class `C`)_
+- **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: first / audited_clean / bounded_theorem / class C; J2: first / audited_clean / bounded_theorem / class C; J3: first / audited_clean / bounded_theorem / class C; J4: first / audited_clean / bounded_theorem / class C; J5: first / audited_clean / bounded_theorem / class C. Majority rationale: J1: The source note makes only a bounded fixed-family finite replay claim, and the cached runner output exactly reproduces the frozen table: Born is machine-clean, all rows are 7/7 TOWARD, F~M equals each tested p, and the note explicitly withholds universal tail-law and p=1 derivation claims. Within that scoped claim there is no unresolved external dependency or promoted physical bridge requiring a conditional verdict. | J2: The restricted note claims only a fixed-family finite replay: for the specified lattice, powers, kernel, field, and action family, the cached runner exactly reproduces the frozen table with F~M equal to each tested p, Born machine-clean, and no promoted universal tail law. That closes as a bounded computational theorem/class-C replay, not a conditional claim. | J3: The source note makes only a fixed-family finite replay claim: for the stated lattice/action family and tested p values, the cached runner output reproduces Born, 7/7 TOWARD, F~M=p, and monotonic tail steepening while explicitly withholding any universal tail theorem. No unaudited dependency, open gate, or unratified bridge is needed for that bounded computational claim. | J4: The source note makes only a bounded fixed-family replay claim, and the cached runner output exactly reproduces the frozen table: Born values, 7/7 TOWARD rows, F~M=p for all five tested powers, and tail steepening while explicitly declining any universal tail law. No unclosed external comparator or promoted exact tail theorem is load-bearing. | J5: The restricted claim is a finite fixed-family replay, and the cached runner exits cleanly while reproducing the note's load-bearing table: Born stays machine-clean, all rows are 7/7 TOWARD, and F~M equals each tested p. The note explicitly limits the result to this fixed family and does not promote a universal tail law or derivation of p=1, so the chain closes for the bounded claim.
+- **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: first / audited_clean / bounded_theorem / class C; J2: first / audited_clean / bounded_theorem / class C; J3: first / audited_clean / bounded_theorem / class C; J4: first / audited_clean / bounded_theorem / class C; J5: first / audited_clean / bounded_theorem / class C. Majority rationale: J1: The source note makes only a bounded fixed-family finite replay claim, and the cached runner output exactly reproduces the frozen table: Born is machine-clean, all rows are 7/7 TOWARD, F~M equals each tested p, and the note explicitly withholds universal tail-law and p=1 derivation claims. Within that scoped claim there is no unresolved external dependency or promoted physical bridge requiring a conditional verdict. | J2: The restricted note claims only a fixed-family finite replay: for the specified lattice, powers, kernel, field, and action family, the cached runner exactly reproduces the frozen table with F~M equal to each tested p, Born machine-clean, and no promoted universal tail law. That closes as a bounded computational theorem/class-C replay, not a conditional claim. | J3: The source note makes only a fixed-family finite replay claim: for the stated lattice/action family and tested p values, the cached runner output reproduces Born, 7/7 TOWARD, F~M=p, and monotonic tail steepening while explicitly withholding any universal tail theorem. No unaudited dependency, open gate, or unratified bridge is needed for that bounded computational claim. | J4: The source note makes only a bounded fixed-family replay claim, and the cached runner output exactly reproduces the frozen table: Born values, 7/7 TOWARD rows, F~M=p for all five tested powers, and tail steepening while explicitly declining any universal tail law. No unclosed external comparator or promoted exact tail theorem is load-bearing. | J5: The restricted claim is a finite fixed-family replay, and the cached runner exits cleanly while reproducing the note's load-bearing table: Born stays machine-clean, all rows are 7/7 TOWARD, and F~M equals each tested p. The note explicitly limits the result to this fixed family and does not promote a universal tail law or derivation of p=1, so the chain closes for the bounded claim.
+- **auditor confidence:** judicial_panel_majority
+
 ### `action_uniqueness_audit_2026-04-11`
 
 - **Note:** [`ACTION_UNIQUENESS_AUDIT_2026-04-11.md`](../../docs/ACTION_UNIQUENESS_AUDIT_2026-04-11.md)
@@ -1026,7 +1039,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **claim_type:** `bounded_theorem`
 - **claim_scope:** Fixed 3D ordered dense lattice with h=0.5, W=8, L=12, 1/L^2 kernel with h^2 measure, field s/r, and the tested representative action laws.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:action_power_scaling_sweep_note`)
+- **effective_status:** **retained_bounded**  (reason: `self`)
 - **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-action_uniqueness_note-008`  (codex-gpt-5.5; independence=cross_family)
 - **load-bearing step:** On the fixed ordered-lattice family, valley actions stay TOWARD and the F~M exponent follows the weak-field power of f, with weak-field-linear valleys giving F~M = 1.00.  _(class `C`)_
 - **chain closes:** True — The included runner source genuinely constructs the lattice, field, slit geometry, propagation, Born diagnostic, TOWARD counts, and log-log mass-scaling fit rather than printing expected constants. Its completed output matches the note's load-bearing table for the scoped tested actions.

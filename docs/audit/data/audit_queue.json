@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 873,
+    "critical": 872,
     "high": 27,
     "leaf": 317,
     "medium": 106
@@ -9504,28 +9504,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
-      "claim_id": "action_power_scaling_sweep_note",
-      "claim_scope": "Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F\u221dM=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.956,
-      "note_path": "docs/ACTION_POWER_SCALING_SWEEP_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/action_power_scaling_sweep.py",
-      "transitive_descendants": 992
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -37584,6 +37562,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "broken_graph_action_power_robustness_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "inverse_problem_note",
+        "action_uniqueness_note",
+        "action_power_scaling_sweep_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/action_universality_probe.py"
+      ],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/broken_graph_action_power_robustness.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "retardation_discriminator_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37601,6 +37607,34 @@
       "ready": true,
       "runner_path": "scripts/retardation_discriminator.py",
       "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "action_power_3d_operator_cauchy_note_2026-05-10",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "action_power_3d_gravity_sign_closure_note",
+        "action_uniqueness_note",
+        "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
+        "alt_connectivity_family_operator_cauchy_note_2026-05-10",
+        "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACTION_POWER_3D_OPERATOR_CAUCHY_NOTE_2026-05-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/action_power_3d_operator_cauchy.py",
+      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -38845,34 +38879,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_bougerol_lacroix_staggered_blocking_submult_tautological_bound.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "broken_graph_action_power_robustness_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "inverse_problem_note",
-        "action_uniqueness_note",
-        "action_power_scaling_sweep_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/action_universality_probe.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/broken_graph_action_power_robustness.py",
       "transitive_descendants": 1
     },
     {
@@ -40563,34 +40569,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "action_power_3d_operator_cauchy_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "action_power_3d_gravity_sign_closure_note",
-        "action_uniqueness_note",
-        "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
-        "alt_connectivity_family_operator_cauchy_note_2026-05-10",
-        "nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACTION_POWER_3D_OPERATOR_CAUCHY_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/action_power_3d_operator_cauchy.py",
       "transitive_descendants": 0
     },
     {
@@ -46659,6 +46637,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
-  "total_pending": 1323
+  "ready_count": 22,
+  "total_pending": 1322
 }

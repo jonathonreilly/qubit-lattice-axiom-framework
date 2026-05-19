@@ -1,0 +1,238 @@
+# Controlled Vocabulary
+
+> **Front-door lookup:** Looking up a single term? Go to
+> [`docs/KEY_TERMINOLOGY.md`](../KEY_TERMINOLOGY.md) — flat A-Z index of
+> every repo-canonical term with one-line definition and a pointer to
+> the source-of-truth doc for each.
+
+## Vocabulary Hierarchy
+
+The repo has five language layers. This doc is the **operational** layer
+(layer 3). Higher layers are sovereign for their domains; do not duplicate
+their content here, and do not override their wording from here.
+
+{{VOCAB_HIERARCHY_TABLE}}
+
+For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
+framework primitives (layer 1), cite `MINIMAL_AXIOMS_2026-05-03.md` — do
+not redefine `Cl(3)`, `Z^3`, or `A_min` here. For external paper text
+(layer 2), use the canonical framing paragraph and the accountability
+disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
+
+---
+
+This file is the single repo-wide home for the **operational** vocabulary
+layer: status taxonomy, audit-lane field enums, filename conventions,
+axiom-naming **rules** (above the science decision in layer 1), archival
+paths, topic language, and paper-facing prose voice. Other policy /
+process docs in the repo cite this file for vocab rather than inlining
+their own. If a sanctioned term, label, suffix, or wording is not listed
+here and is not defined in the layer 1 or layer 2 sources above, it does
+not exist for repo purposes — vocabulary additions require a PR against
+this file before any note, runner, ledger row, status badge, or PR
+description that uses them.
+
+Goals:
+
+- one taxonomy home for matrix / ledger / atlas / review / note / runner / script
+  language
+- separate publication-capture decisions from theorem-strength labels
+- separate authoring vocabulary from audit-lane field enums
+- avoid vague shorthand on live package surfaces
+- prefer explicit protocol qualifiers over loose adjectives
+- forbid new tags / classes / meta-framings on `claim_type: meta` notes
+  and elsewhere; emergent vocabulary is a substantive defect even when
+  the per-claim content is correct
+
+## Vocabulary Families
+
+There are five status families in this repo. Do not mix them casually.
+
+1. publication-capture dispositions
+2. claim-strength / release labels
+3. audit-lane field vocabulary (claim_type / audit_status /
+   effective_status / repair classes / independence tiers)
+4. historical lane-board labels
+5. historical discovery-log labels
+
+If a file already has separate columns for `Status`, `Qualifier`, `Import
+class`, or `Current publication decision`, keep one family per column
+rather than collapsing everything into one hybrid phrase.
+
+## Science Naming Rules
+
+Landed science must use domain-explicit names. Do not introduce a bare
+letter-number or route code as the primary name of a theorem, lane, source
+note, runner headline, table row, or review finding when that code could also
+mean an axiom, assumption, algebra type, branch block, route number, or
+workstream index.
+
+Examples of ambiguous primary names to avoid on new landed surfaces:
+
+- `A1`, `A2`, `G1`, `R3`
+- `Route F`, `Block 2`, `Origin B`
+- `Step 1` or `Assumption 1` compressed to `S1` / `A1`
+
+Use the scientific object as the name instead:
+
+- `physical Cl(3) local algebra`, not bare `A1`
+- `Z^3 spatial substrate`, not bare `A2`
+- `Koide Frobenius-equipartition condition`, not bare `A1`
+- `Lie type A_1` or `SU(2) root-system check`, not bare `A1`
+- `DM-eta Coleman-Weinberg residual`, not bare `G1`
+
+**Canonical mathematical-object names are allowed.** Bare letter-number
+forms that name an *established mathematical object* — `S^3` (3-sphere),
+`S^2` (2-sphere), `U(1)` and `SU(N)` (gauge groups), `Z_3` / `Z_n`
+(cyclic groups), `C_3` (cyclic / symmetry group), `A_n` / `D_n` /
+`E_n` (Lie types), `I_3` (third isospin component), etc. — are the
+canonical names for those objects and do not require domain-explicit
+expansion. The rule above targets *code-like primary names that don't
+reference an established mathematical object* (e.g. `A1` used as a
+workstream label, `G1` used as a route code, `R3` used as a routing
+index), not standard mathematical notation. If both readings are
+plausible in context (e.g. `A_1` as Lie type vs. `A1` as
+workstream-index abbreviation), spell out the mathematical reading
+on first use (`Lie type A_1`) so the bare form is unambiguous.
+
+Legacy shorthand may be preserved only as an alias after the explicit name,
+for example: `Koide Frobenius-equipartition condition (legacy alias: A1)`.
+If an existing file already uses a shorthand, new edits should define it on
+first use and prefer the explicit name in headings, metadata, claim scopes,
+review summaries, and publication/control-plane rows.
+
+Axioms and assumptions must be written out as `Axiom 1`, `Assumption 1`, or a
+descriptive premise name. Do not abbreviate them to `A1` on live science
+surfaces.
+
+### Meta-note vocabulary discipline
+
+`claim_type: meta` notes (audit-prep, synthesis, fix-record, infrastructure
+documentation) must use a plain `_NOTE_<YYYY-MM-DD>.md` filename suffix
+and repo-canonical vocabulary in their content. The following emergent
+patterns are vocabulary additions and forbidden until they appear in this
+file:
+
+- new filename suffixes such as `_HOSTILE_AUDIT_FINDINGS_NOTE_`,
+  `_DOWNSTREAM_FIX_NOTE_`, `_SURGICAL_FIX_RECORD_`, `_FINDINGS_MEMO_`,
+  `_FIX_RECORD_`, `_AUDIT_BRIEF_`, `_ADDENDUM_`
+- new within-note labelling schemes such as `F-A` / `F-B` / `F-C`
+  "Finding F-letter" headings
+- new finding-class names such as `framing-fix`, `routing correction`,
+  `tier over-claim`, `admission-inheritance`, `audit-prep input`
+- new authority-role phrases such as
+  `Status authority: independent audit lane only` as a load-bearing role
+- new repair-class names beyond the seven listed in "Audit Lane Field
+  Vocabulary" below
+- new "X is a Y" meta-framings that imply a class or parent-framing
+  cross-reference for a collection of not-yet-shipped sub-PRs
+
+The reviewer rejects custom tags / classes / meta-framings even when the
+underlying per-claim work is correct. Ship narrow content one identity at a
+time, mirroring an existing canonical template, with no new vocabulary.
+
+## Filename Taxonomy
+
+### Script filename prefixes
+
+- `frontier_*`
+  - active frontier or later-stage retained runners
+  - this is the current default namespace
+- `mirror_*`, `lattice_*`, `gate_b_*`, `source_resolved_*`, `wave_*`
+  - older major programs that are still important on `main`
+- everything else
+  - usually lane-specific historical or exploratory runners
+
+Lane-specific prefixes are preferred when creating new frontier runners:
+`frontier_staggered_*`, `frontier_two_field_*`, `frontier_emergent_geometry_*`,
+etc. Pick a prefix that names the lane, not the date or the author.
+
+### Note filename rules
+
+- New retained notes should be explicit about the runner they interpret
+  in the filename when feasible.
+- New strategy or synthesis notes should not silently replace retained
+  notes; if the synthesis is forward-looking it lands at
+  `claim_type: meta` with the `_NOTE_<YYYY-MM-DD>.md` plain suffix.
+- Historical lanes should not be renamed just to fit the current
+  taxonomy. They should be indexed in the lane board and registry
+  instead. If a lane is historical, mark that in the lane board and
+  registry rather than renaming dozens of files.
+
+### Reserved filename suffixes
+
+See "Meta-note vocabulary discipline" above for the list of forbidden
+emergent suffixes. The only sanctioned form for new audit-prep / meta
+notes is `<DOMAIN>_NOTE_<YYYY-MM-DD>.md`.
+
+## Publication-Capture Dispositions
+
+{{PUBLICATION_CAPTURE_DISPOSITIONS}}
+
+## Claim-Strength / Release Labels
+
+{{CLAIM_STRENGTH_LABELS}}
+
+## Audit Lane Field Vocabulary
+
+These enums govern the audit ledger rows in
+`docs/audit/data/audit_ledger.json`, the rendered surface
+`docs/audit/AUDIT_LEDGER.md`, and the audit pipeline's derived outputs.
+Authors may write whatever status prose they need inside source notes,
+but the retained library is driven only by these auditor-owned fields.
+The audit-lane process and workflows live in `docs/audit/README.md`,
+`docs/audit/FRESH_LOOK_REQUIREMENTS.md`, and the audit-loop skill; the
+enums themselves live here.
+
+{{AUDIT_LANE_FIELD_VOCABULARY}}
+
+## Migration / Legacy Wording
+
+{{MIGRATION_LEGACY_WORDING}}
+
+## Historical Lane-Board Labels
+
+{{HISTORICAL_LANE_BOARD_LABELS}}
+
+## Historical Discovery-Log Labels
+
+{{HISTORICAL_DISCOVERY_LOG_LABELS}}
+
+## Column Rules
+
+{{COLUMN_RULES}}
+
+## Protocol Qualifiers
+
+{{PROTOCOL_QUALIFIERS}}
+
+## Evidence Terms
+
+{{EVIDENCE_TERMS}}
+
+## Hyphenation
+
+{{HYPHENATION_RULES}}
+
+## Axiom Naming (out of scope for this doc)
+
+Axiom names (`A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`) are **physics
+primitives**, not process vocabulary. Per
+[VOCABULARY_HYGIENE_DESIGN.md](VOCABULARY_HYGIENE_DESIGN.md), vocabulary
+is disjoint from physics. The canonical home for these names and the
+policy governing their use is:
+
+- [`docs/MINIMAL_AXIOMS_2026-05-03.md`](../MINIMAL_AXIOMS_2026-05-03.md) — the framework primitives themselves (Axiom 1, Axiom 2, definition of A_min)
+- [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
+
+Do not redefine, alias, or document these names here.
+
+## Stale-Narrative Archival Vocabulary
+
+{{STALE_NARRATIVE_ARCHIVAL}}
+
+{{TOPIC_LOCAL_LANGUAGE}}
+
+## Paper-Facing Prose Voice
+
+{{PAPER_VOICE}}

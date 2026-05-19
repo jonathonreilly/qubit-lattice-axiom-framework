@@ -55964,9 +55964,9 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a4b104dd7ab836c594f01f2210f56b02ba33ccc03204d5e4d1bdd4ad8e4f95e6",
+      "note_hash": "2c9745e2086a3d94bff8a8923329b31a853792b4b3cdad6f73709bfb7a283bcc",
       "path": "docs/KEY_TERMINOLOGY.md",
-      "runner_path": null,
+      "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
     },
     "kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11": {
@@ -69966,7 +69966,7 @@
         "repo.vocabulary_hygiene_design"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23178d3ac00315d570f71d3050e00bab9df9a5b05b76c27e4f4f937a346b0f87",
+      "note_hash": "01823e15a75cbb05bcb120e6e3078afd39a4e4bfda5943ebe5971319c8ef8f95",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -80658,6 +80658,6 @@
     "leaf_count": 726,
     "node_count": 2445,
     "root_count": 805,
-    "runners_with_path": 2029
+    "runners_with_path": 2030
   }
 }

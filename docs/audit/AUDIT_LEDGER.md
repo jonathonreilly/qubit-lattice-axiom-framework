@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 362 |
+| **retained_bounded** | 363 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1324 |
+| unaudited | 1323 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 584 |
+| `audited_clean` | 585 |
 | `audited_conditional` | 70 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1543 |
+| `unaudited` | 1542 |
 
 | claim_type | count |
 |---|---:|
@@ -240,6 +240,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dispersion_relation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_assumptions_audit_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2769,6 +2770,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Once the center-biased midlayer sentinel is added to the reference+tree sample, the frozen 3-NN density-load rule has higher extended-sample accuracy than the frozen 4-NN rule: 0.9126 versus 0.8932.  _(class `C`)_
 - **chain closes:** True — The primary runner rebuilds the rows, computes the dense-reference thresholds with _best_rule, applies them without refit, and computes the reported accuracy and miss-mode tables. The transitive helper sources needed for generated rows, density features, overlap labels, and threshold evaluation are present in the packet.
 - **rationale:** The runner is not a constant printer: it constructs the dense reference rows, tree rows, and midlayer rows from the included generators and evaluates the rules from computed row features. The contested 3-NN versus 4-NN preference reversal follows from those computed rows and frozen thresholds within the stated bounded sample. No cited upstream authority is required for the restricted claim, and no helper path listed as load-bearing is missing from the packet.
+- **auditor confidence:** high
+
+### `dispersion_high_p_tiebreaker_note`
+
+- **Note:** [`DISPERSION_HIGH_P_TIEBREAKER_NOTE.md`](../../docs/DISPERSION_HIGH_P_TIEBREAKER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the runner-backed bounded numerical table and narrowed comparator-scope conclusion for the p=0–6 Fam1 dispersion sweep, not the split lensing/eikonal follow-ups or any KG-elimination claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-dispersion_high_p_tiebre-057`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Extending the dispersion measurement to p=0–6 tabulates four fit variants: Schrödinger and Linear are tied in ω-space, linearized KG reports lower R² in ω²-space but is not directly comparable, and the dispersion shows dropout/curvature structure at high p.  _(class `C`)_
+- **chain closes:** True — The included runner source genuinely grows the stated DAGs, propagates the plane-wave amplitudes, measures phase slopes, filters clean modes, and fits the reported models rather than printing fixed constants. The note's narrowed conclusion tracks the runner output while explicitly withholding the stronger same-dependent-variable KG-elimination inference.
+- **rationale:** The load-bearing claim is a bounded computational result from the provided runner, and the code performs the numerical construction from its stated lattice/propagation rules without importing another note or hard-coding the contested fit outcomes. The note correctly repairs the runner's misleading stdout phrase “TIE BROKEN” by narrowing the scientific conclusion to an apples-to-apples Schrödinger/Linear ω-space tie and an incomparable linearized-KG ω²-space result. The lensing and eikonal implications are explicitly split out as open follow-ups and are outside the audited claim scope.
 - **auditor confidence:** high
 
 ### `dispersion_relation_note`

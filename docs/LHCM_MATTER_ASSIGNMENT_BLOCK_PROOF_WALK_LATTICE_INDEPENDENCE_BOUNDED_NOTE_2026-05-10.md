@@ -8,9 +8,10 @@ effective status are set by the independent audit lane.
 
 ## Claim
 
-Given the existing graph-first commutant setup used by
-[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md),
-the structural matter-assignment block result
+Given the existing graph-first commutant setup retained by
+[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
+(sole retained parent, status `retained_bounded`), the structural
+matter-assignment block result
 
 ```text
 Sym²(C²) (3-dim)  ↔  SU(3)-fundamental block
@@ -18,10 +19,8 @@ Anti²(C²) (1-dim) ↔  SU(3)-trivial (singlet) block
 LH-doublet sector =  C² ⊗ (Sym² ⊕ Anti²)  =  (2,3) ⊕ (2,1)
 ```
 
-on the LH-doublet sector — proof-walked from
-[`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) —
-does not use staggered-Dirac realization machinery as a load-bearing
-input. The proof-walk uses only:
+on the LH-doublet sector does not use staggered-Dirac realization
+machinery as a load-bearing input. The proof-walk uses only:
 
 - the canonical Sym²/Anti² eigendecomposition of the residual
   permutation `τ` on the 4-point base
@@ -48,14 +47,15 @@ staggered-Dirac realization gate.
 
 ## Proof-Walk
 
-The matter-assignment note's load-bearing chain for the
-SU(3)-rep block identification is
+The load-bearing chain for the SU(3)-rep block identification, taken
+over the retained `graph_first_su3_integration_note` as sole retained
+parent, is
 
 ```text
 Step 1.  τ on 4-point base has eigenvalues +1 (mult 3), -1 (mult 1)
-         (graph-first integration note: residual permutation eigendecomposition)
-Step 2.  Sym²(C²) = +1 eigenspace = 3-dim     (graph-first integration note Step 3)
-Step 3.  Anti²(C²) = -1 eigenspace = 1-dim    (graph-first integration note Step 3)
+         (graph_first_su3_integration_note: residual permutation eigendecomposition)
+Step 2.  Sym²(C²) = +1 eigenspace = 3-dim     (graph_first_su3_integration_note Step 3)
+Step 3.  Anti²(C²) = -1 eigenspace = 1-dim    (graph_first_su3_integration_note Step 3)
 Step 4.  SU(3) on 3-dim non-trivial irrep = fundamental 3
          (representation theory of SU(3): standard fact)
 Step 5.  SU(3) on 1-dim irrep = trivial singlet 1
@@ -66,14 +66,19 @@ Step 6.  LH-doublet sector = C² ⊗ (Sym² ⊕ Anti²) = (2,3) ⊕ (2,1)
 
 The checked proof path uses exactly six steps and the following inputs:
 
-| Step in the cited matter-assignment note | Load-bearing input | Lattice-action input? | Staggered-Dirac realization input? |
+| Step | Load-bearing input | Lattice-action input? | Staggered-Dirac realization input? |
 |---|---|---|---|
-| τ eigendecomposition on 4-point base | graph-first integration note (retained-bounded) | no | no |
-| Sym² block dim = 3 | graph-first integration note (retained-bounded) | no | no |
-| Anti² block dim = 1 | graph-first integration note (retained-bounded) | no | no |
+| τ eigendecomposition on 4-point base | `graph_first_su3_integration_note` (retained-bounded) | no | no |
+| Sym² block dim = 3 | `graph_first_su3_integration_note` (retained-bounded) | no | no |
+| Anti² block dim = 1 | `graph_first_su3_integration_note` (retained-bounded) | no | no |
 | SU(3) on 3-dim non-trivial irrep is fundamental | SU(3) representation theory (standard) | no | no |
 | SU(3) on 1-dim irrep is trivial | SU(3) is its own commutator subgroup (standard) | no | no |
 | LH-doublet tensor decomp `(2,3) ⊕ (2,1)` | tensor product distributivity (standard) | no | no |
+
+Every load-bearing input is either (i) the retained
+`graph_first_su3_integration_note` or (ii) standard mathematical fact
+(SU(3) representation theory, tensor product distributivity). No load-
+bearing input is the audited_conditional matter-assignment parent note.
 
 The checked proof path does not cite the Wilson plaquette action,
 staggered phases, Brillouin-zone labels, link unitaries, lattice scale,
@@ -135,40 +140,50 @@ load-bearing dependency on the lattice realization.
 
 ## Why the load-bearing chain does not consume the realization gate
 
-The `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`
-records the staggered-Dirac realization gate as ambient context for
-LHCM-family rows that touch fermion-content interpretation.
-
-This proof-walk demonstrates that the matter-assignment note's
-specific load-bearing chain (Steps 1-6 above) does not in fact
-consume any staggered-Dirac realization content. The 3+1 block
-multiplicities come from the retained-bounded graph-first integration
-note's Step 3 — which constructs them from a residual coordinate swap
-on a 4-point base, an explicit bosonic-graph operation with no
-fermion-realization, BZ-corner, or Kawamoto-Smit input. The SU(3)
-representation identification on each block is standard SU(3)
-representation theory, with no lattice-realization dependency. The
-LH-doublet tensor decomposition is standard linear algebra.
+This proof-walk demonstrates that the SU(3)-rep block-identification
+chain (Steps 1-6 above) does not consume any staggered-Dirac
+realization content. The 3+1 block multiplicities come from the
+retained-bounded `graph_first_su3_integration_note`'s Step 3 — which
+constructs them from a residual coordinate swap on a 4-point base, an
+explicit bosonic-graph operation with no fermion-realization,
+BZ-corner, or Kawamoto-Smit input. The SU(3) representation
+identification on each block is standard SU(3) representation theory,
+with no lattice-realization dependency. The LH-doublet tensor
+decomposition is standard linear algebra.
 
 The SM identification step (`color-charged Weyl fermion ≡ quark`,
-`color-singlet Weyl fermion ≡ lepton`) appears in the cited matter-
-assignment note as an explicit SM-definition labelling step, NOT as a
-load-bearing premise of the SU(3)-rep block-identification step. The
-proof-walk surfaces this distinction explicitly: the
-block-identification result (Sym² carries the 3-dim non-trivial SU(3)
-irrep, Anti² carries the 1-dim trivial SU(3) irrep) holds
-independently of whether one then names the SU(3)-charged block
-"Q_L" or any other label.
+`color-singlet Weyl fermion ≡ lepton`) is an explicit SM-definition
+labelling step, NOT a load-bearing premise of the SU(3)-rep block-
+identification step established here. The proof-walk surfaces this
+distinction explicitly: the block-identification result (Sym² carries
+the 3-dim non-trivial SU(3) irrep, Anti² carries the 1-dim trivial
+SU(3) irrep) holds independently of whether one then names the
+SU(3)-charged block "Q_L" or any other label.
 
 ## Dependencies
 
-- [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md)
-  for the matter-assignment note being proof-walked.
+**Sole retained parent (load-bearing):**
+
 - [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
   for the 3+1 block multiplicities and the SU(3) Gell-Mann embedding
-  on the Sym² block (retained-bounded).
+  on the Sym² block (status: `retained_bounded`, audit_status:
+  `audited_clean`).
+
+**Supporting retained parent (load-bearing for upstream selected-axis
+structure):**
+
 - [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)
   for the upstream selected-axis structure (retained-bounded).
+
+**Historical / contextual citation only (NOT load-bearing):**
+
+- [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md)
+  is cited only as the historical predecessor that first articulated
+  the block-identification statement in the LHCM family. Its effective
+  status is `decoration_under_graph_first_su3_integration_note`. The
+  proof-walk above does NOT consume any content from this note; all
+  load-bearing inputs come from `graph_first_su3_integration_note` or
+  standard mathematical fact.
 
 These are imported authorities for a bounded theorem. The row remains
 unaudited until the independent audit lane reviews this note, its
@@ -207,6 +222,48 @@ authority for that note's classification; this proof-walk only
 demonstrates that the load-bearing chain for the
 block-identification step does not consume staggered-Dirac
 realization machinery.
+
+## 2026-05-18 audit-conditional repair: restated proof-walk with graph_first_su3_integration as sole retained parent
+
+Per the 2026-05-17 audit verdict (`dependency_not_retained`), the LHCM
+matter-assignment parent is itself audited_conditional and cannot
+load-bear this bounded claim. This revision restates the proof-walk
+using `graph_first_su3_integration_note` as the sole retained parent.
+The LHCM reference is preserved as historical/contextual citation only,
+not load-bearing.
+
+Concretely:
+
+- The **Claim** section now identifies `graph_first_su3_integration_note`
+  as the sole retained parent and removes the framing of this proof-
+  walk as "from [LHCM matter-assignment note]". The block-identification
+  result is asserted directly on top of the retained graph-first
+  integration.
+- The **Proof-Walk** section's six-step chain has every load-bearing
+  citation re-anchored at `graph_first_su3_integration_note` (Steps 1-3)
+  or at standard mathematical fact (Steps 4-6). The dependency table is
+  reheaded as "Step ↦ Load-bearing input" and explicitly drops the
+  earlier "Step in the cited matter-assignment note" framing. An
+  explicit closing paragraph states that no load-bearing input is the
+  audited_conditional matter-assignment parent.
+- The **Why the load-bearing chain does not consume the realization
+  gate** section has the LHCM-parent contextualization stripped of any
+  load-bearing role. The chain stands on the retained graph-first
+  integration alone.
+- The **Dependencies** section is restructured into (a) Sole retained
+  parent (load-bearing): `graph_first_su3_integration_note`; (b)
+  Supporting retained parent: `graph_first_selector_derivation_note`;
+  (c) Historical / contextual citation only (NOT load-bearing):
+  `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02`,
+  with effective_status `decoration_under_graph_first_su3_integration_note`
+  noted explicitly.
+
+The algebraic content of the proof-walk (the τ eigendecomposition giving
+3⊕1, SU(3)-on-3-dim-non-trivial-irrep ↦ fundamental, SU(3)-on-1-dim-irrep
+↦ trivial, and the (2,3) ⊕ (2,1) tensor decomposition) is unchanged.
+The runner script is unchanged. Only the load-bearing dependency
+architecture is restated to remove the audited_conditional parent from
+the chain of authority.
 
 ## Verification
 

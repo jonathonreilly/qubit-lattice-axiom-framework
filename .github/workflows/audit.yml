@@ -120,6 +120,49 @@ jobs:
       - name: Run audit pipeline
         run: bash docs/audit/scripts/run_pipeline.sh
 
+      - name: Report vocabulary drift (PR only, advisory)
+        if: github.event_name == 'pull_request'
+        run: |
+          # vocab_lint reads docs/repo/controlled_vocabulary.yaml and flags
+          # routine local drift plus deferred link-aware migrations
+          # (forbidden filename suffixes, F-letter codes). Advisory only: at baseline
+          # the repo carries ~208 files with violations from the pre-Cleanup-2
+          # emergent-suffix wave; those are tracked for the Cleanup-2 sweep.
+          # The gate exists so NEW drift on this PR is visible.
+          mkdir -p /tmp/vocab-lint
+          if ! python3 scripts/vocab_lint.py --report-only --report-path /tmp/vocab-lint/report.json docs/; then
+            echo
+            echo "::warning::vocab_lint reports vocabulary drift in this branch."
+            echo "::warning::See vocab-lint-${{ github.run_id }} artifact for the per-file report."
+            echo "::warning::Cleanup-2 owns the baseline sweep; a new violation introduced by THIS PR should be fixed before landing."
+            {
+              echo "### Vocabulary Drift Advisory"
+              echo
+              echo "vocab_lint flagged vocabulary drift in this branch."
+              echo
+              echo "Run locally to inspect:"
+              echo "\`\`\`bash"
+              echo "python3 scripts/vocab_lint.py --report-only docs/"
+              echo "\`\`\`"
+              echo
+              echo "Auto-correctable routine drift can be applied with:"
+              echo "\`\`\`bash"
+              echo "python3 scripts/vocab_lint.py --fix docs/"
+              echo "\`\`\`"
+              echo
+              echo "Filename renames (forbidden suffixes) require the Cleanup-2 link-aware tooling."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload vocab_lint report
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: vocab-lint-${{ github.run_id }}
+          path: /tmp/vocab-lint/report.json
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Regenerate conditional-prompt snapshot (cron/manual only)
         if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
         # MISSING_DERIVATION_PROMPTS.md is the static snapshot the

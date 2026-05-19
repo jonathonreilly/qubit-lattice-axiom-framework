@@ -40127,7 +40127,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3cd4bc84f3397540ed23fc077d154a93c426e65cb5756610f2901f45d9b1462d",
+      "note_hash": "ba019ed9162c314ec9c13da6f29c129f912bd46fd286e3a9506faecb2f7d1d9f",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -40258,7 +40258,7 @@
         "ai_methodology.skills.physics-loop.references.long-running-execution"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cd04917fcab98a8e1c220a0218874b3c8ca4d77c151e675892935c152d13ee10",
+      "note_hash": "95acc1e7cdc88d9011d1e14f1395a72913eabc0842c9fc337155d0fd507b544b",
       "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
       "runner_path": null,
       "title": "Physics Loop"
@@ -40273,7 +40273,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b5ad88706e9c775fba554162ee2bca701c74d0176a24b6624f639ec37dc2202f",
+      "note_hash": "01ba1e3ef9b022de21dd64827baf73a2dc3e47680cb01c7d3670e9d4837d2d30",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -40331,7 +40331,7 @@
         "ai_methodology.llm_skill_pack_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6ab093bb8a9870ca79c294161abf602a04c9ae8cff41798a253c54bcaa1adffb",
+      "note_hash": "e38b37bcd6ab223ac1f008f22b9f3586f0ec9acf1370f5e9b62752840973c5a2",
       "path": "docs/AI_METHODOLOGY_NOTE_2026-04-25.md",
       "runner_path": null,
       "title": "AI Methodology Note \u2014 Cl(3)/Z^3 Framework"
@@ -55936,7 +55936,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4e5f520abb655fe9a3033f8539cd80eae111e6e2dc099c3e9b11680d676933f2",
+      "note_hash": "a4b104dd7ab836c594f01f2210f56b02ba33ccc03204d5e4d1bdd4ad8e4f95e6",
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": null,
       "title": "Key Terminology"
@@ -70048,7 +70048,7 @@
         "ai_methodology_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3e23255b2434148f46a44437dde9c2b91c01b59e968bf0623fec787858544878",
+      "note_hash": "66cd162ea9d1ee189f58e81a491d71181f7b2f958589179aa5024e86552a53e4",
       "path": "docs/repo/VOCABULARY_HYGIENE_DESIGN.md",
       "runner_path": null,
       "title": "Vocabulary Hygiene Design"

@@ -216,19 +216,21 @@ vocabulary control**:
    cleanup PR) is the single edit surface for all process vocabulary.
    The human-readable docs
    ([`CONTROLLED_VOCABULARY.md`](./repo/CONTROLLED_VOCABULARY.md),
-   [`KEY_TERMINOLOGY.md`](./KEY_TERMINOLOGY.md)) are regenerated from
-   the YAML; manual edits to the rendered docs are not permitted.
-   Rendered drift is impossible by construction.
+   [`KEY_TERMINOLOGY.md`](./KEY_TERMINOLOGY.md)) are still
+   hand-maintained in Cleanup-1 and are slated to become generated
+   products in Cleanup-1b. After that renderer lands, manual edits to
+   the rendered docs are not permitted.
 
 2. **Auto-correct integrated into the substantive loops.**
    `scripts/vocab_lint.py --fix` is a mechanical pre-commit step in
    audit-loop, review-loop, and physics-loop (see their respective
-   `SKILL.md` files). Routine drift (legacy aliases, forbidden
-   filename suffixes, deprecated wording, F-letter codes) is rewritten
-   **automatically; each rewrite is recorded in `prose_corrections`
-   on the related audit row** (automatic, not silent — the trail is
-   auditable). This shifts vocabulary compliance from agent discipline
-   (fallible) to loop mechanism (always-on).
+   `SKILL.md` files). Routine local drift with non-link-aware rewrite
+   rules, such as legacy aliases and deprecated wording, is rewritten
+   automatically; each rewrite is recorded in `prose_corrections` on
+   the related audit row. Link-aware filename suffix migrations and
+   F-letter finding-label migrations are reported but deferred to
+   Cleanup-2 tooling. This shifts vocabulary compliance from agent
+   discipline to loop mechanism.
 
 3. **Physics verdicts separated from prose verdicts.** Audit ledger
    rows gain a `prose_status` field independent of `audit_status`. A

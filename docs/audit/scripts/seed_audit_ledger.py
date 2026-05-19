@@ -105,6 +105,20 @@ EMPTY_AUDIT = {
 # unchanged. If the hash changes, these are archived and reset.
 AUDIT_FIELDS = list(EMPTY_AUDIT.keys())
 
+DEFAULT_PROSE_STATUS = "not_evaluated_pre_vocab_lint"
+
+
+def reset_prose_defaults(row: dict) -> None:
+    """Mark source prose as unevaluated after new row creation or source drift."""
+    row["prose_status"] = DEFAULT_PROSE_STATUS
+    row["prose_corrections"] = []
+
+
+def ensure_prose_defaults(row: dict) -> None:
+    """Backfill prose fields without overwriting evaluated rows."""
+    row.setdefault("prose_status", DEFAULT_PROSE_STATUS)
+    row.setdefault("prose_corrections", [])
+
 
 def reset_unaudited_audit_fields(row: dict) -> None:
     """Clear stale audit-owned residue from rows already back in the queue."""
@@ -302,6 +316,7 @@ def seed() -> dict:
             }
             for k, v in EMPTY_AUDIT.items():
                 row[k] = v if not isinstance(v, (list, dict)) else (list(v) if isinstance(v, list) else dict(v))
+            reset_prose_defaults(row)
             apply_claim_type_defaults(row, node, prior)
             seeded += 1
         else:
@@ -316,12 +331,15 @@ def seed() -> dict:
             row["deps"] = deps
             if prior.get("note_hash") != node["note_hash"] and prior.get("audit_status") in {None, "unaudited"}:
                 row["note_hash"] = node["note_hash"]
+                reset_prose_defaults(row)
                 preserved += 1
             elif prior.get("note_hash") != node["note_hash"]:
                 row = archive_prior_audit(row)
                 row["note_hash"] = node["note_hash"]
+                reset_prose_defaults(row)
                 re_audit_required += 1
             else:
+                ensure_prose_defaults(row)
                 preserved += 1
             reset_unaudited_audit_fields(row)
             apply_claim_type_defaults(row, node, prior)
@@ -337,6 +355,7 @@ def seed() -> dict:
             row["claim_type"] = "no_go"
             row["claim_type_provenance"] = "backfilled_from_archived_failed"
             row["claim_scope"] = row.get("claim_scope") or backfill_scope(row)
+        ensure_prose_defaults(row)
         out_rows[cid] = row
 
     # Drop ledger rows whose source note no longer exists, plus rows

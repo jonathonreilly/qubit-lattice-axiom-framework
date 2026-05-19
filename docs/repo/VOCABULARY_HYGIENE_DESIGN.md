@@ -181,8 +181,8 @@ is created by the cleanup PR as the single source of truth. Schema:
 schema_version: 1
 
 # Fields are the canonical source of truth. The human-readable docs
-# (CONTROLLED_VOCABULARY.md, KEY_TERMINOLOGY.md) regenerate from this
-# file; manual edits to the rendered docs are not permitted.
+# (CONTROLLED_VOCABULARY.md, KEY_TERMINOLOGY.md) remain hand-maintained in
+# Cleanup-1; Cleanup-1b adds the renderer that regenerates them from this file.
 
 # ---- Top-level layers (matching the Vocabulary Hierarchy in CV.md) ----
 layers:
@@ -308,7 +308,7 @@ term_families:
       clean:                          {definition: "No vocabulary drift detected by vocab_lint."}
       auto_corrected:                 {definition: "Routine drift mechanically rewritten by vocab_lint --fix; rewrites logged in prose_corrections."}
       needs_human_vocab_decision:     {definition: "Genuinely new term that vocab_lint cannot mechanically rewrite; queued for vocab-extension review."}
-      not_evaluated_pre_vocab_lint:   {definition: "Pre-Cleanup-1 row never linted under the new rules. Used during backfill only."}
+      not_evaluated_pre_vocab_lint:   {definition: "Pre-Cleanup-1 row, newly seeded row, or source-drift row not yet linted under the new rules. Seeder/backfill default."}
       queue_backpressure_exceeded:    {definition: "Vocab-extension review queue is >50 entries deep; new unresolved terms emit this until queue is processed."}
 
   prose_corrections:
@@ -413,14 +413,14 @@ scope:
     - 'Topic-specific physics wording (lives in topic notes; not vocabulary)'
 ```
 
-The cleanup PR creates this file, populates it from the existing
+Cleanup-1 creates this file and populates it from the existing
 content of [audit/README.md](../audit/README.md) field enums,
 [FRESH_LOOK_REQUIREMENTS.md](../audit/FRESH_LOOK_REQUIREMENTS.md)
 independence tiers, and the surrounding sections of
-[CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md), then writes a
+[CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md). Cleanup-1b writes a
 renderer that regenerates CONTROLLED_VOCABULARY.md + KEY_TERMINOLOGY.md
-from it. Going forward, manual edits to the rendered docs are not
-permitted; all changes flow through the YAML.
+from it. After that renderer lands, manual edits to the rendered docs are
+not permitted; all changes flow through the YAML.
 
 ## Auto-correct mechanism
 
@@ -649,11 +649,11 @@ generated docs (low-risk). Cleanup-2 is the per-file migration sweep
      actually linted.
 
 3. **Add `scripts/vocab_lint.py`** with `--fix`, `--report-only`,
-   `--report-path` modes. Reads the YAML, applies the rewrite_rules
-   and filename_rules, writes a per-file
-   `prose_status.json` artifact. **Link-aware mode required** for
-   filename renames (rewrites cross-doc references in the same
-   commit). F-letter migration uses
+   `--report-path` modes. Reads the YAML, applies non-link-aware
+   rewrite_rules, reports filename_rules, and writes a per-file
+   `prose_status.json` artifact. **Link-aware mode is a Cleanup-2
+   requirement** for filename renames (rewrites cross-doc references in
+   the same commit). F-letter migration uses
    `migration_strategy: per_file_mapping_with_link_check`, not a
    one-shot regex.
 

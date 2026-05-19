@@ -20,13 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 116 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 363 |
+| **retained_bounded** | 362 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1346 |
+| unaudited | 1347 |
+| audit_in_progress | 1 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 11 |
+| ~~audited_renaming~~ | 10 |
 | ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -54,8 +55,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 11 |
-| `unaudited` | 1565 |
+| `audited_renaming` | 10 |
+| `unaudited` | 1566 |
 
 | claim_type | count |
 |---|---:|
@@ -123,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_uniqueness_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | D | - |
-| `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -881,7 +882,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_theta_hierarchy_open_scalar_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
-| `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -6585,21 +6585,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The scalar two-point expressions have no mu input, so the same scalar two-point signature is compatible with both mu = 0 and mu != 0 while the Pfaffian sector differs.  _(class `C`)_
 - **chain closes:** True — The runner reproduces the same-current-data witness: scalar two-point and normal source-response signatures are mu-blind, Pfaffian signatures vary with mu, and charge-sector checks show normal sources are charge zero while the pairing seed carries charge -2. That directly blocks the implication that scalar two-point closure alone forces mu = 0.
 - **rationale:** The note claims a negative boundary, not a Dirac-global or numerical neutrino result: SR-2 cannot close C2-X from free-scalar two-point data alone. The runner checks the relevant current surface by verifying the cited authority text and constructing nonzero-mu witnesses with identical scalar and normal signatures but distinct Pfaffian sectors. Residual risk is limited to future typed scalar-to-Pfaffian coupling theorems, which the note explicitly leaves open.
-- **auditor confidence:** high
-
-### `newton_derivation_top4_bridge_note`
-
-- **Note:** [`NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Top4 multistage compact-object baseline and cited widened-pocket floor at h=0.25, blend=0.25, top_keep=4, testing persistence, alpha near 1, and kappa drift for the self-sourcing compact-object response.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-182826-41cdea85-newton_derivation_top4_b-006`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The bridge satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification: the parameter s is the unique scalar whose extensivity controls the field, the response, and the persistence simultaneously, and this is exactly the role of one-parameter mass.  _(class `F`)_
-- **chain closes:** False — The runner computes the stated overlap, alpha, and kappa-drift checks, but the conclusion requires identifying that self-sourced response scalar with the inertial quantity in Principle 3. That identification is asserted definitionally, not derived from the cited retained inputs.
-- **rationale:** Issue: the load-bearing step renames the unique self-source strength s and its linear response coefficient as the Principle-3 inertial quantity. Why this blocks: the cited authorities explicitly leave persistent inertial-mass/equivalence-principle closure open, and the runner only verifies operational self-sourced stability, not the physical mass identification. Repair target: a retained theorem or runner deriving generator-invariant inertial response for the compact object, preferably under an external field from a distinct object, from the same primitives. Claim boundary until fixed: the top4 baseline has computed persistence, alpha in band, and stable kappa under the chosen self-sourcing multistage readout.
-- **open / conditional deps cited:**
-  - `NEWTON_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `newton_persistent_pattern_control_note_2026-04-11`

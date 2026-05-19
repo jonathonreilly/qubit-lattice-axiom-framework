@@ -284,12 +284,13 @@ and `(G3)`. Exact-symbolic evaluation in sympy
 yields
 
 ```text
-1 / α_2(v) |_{u_lo = 96/100}  =  (115248 π² - 456475) / (7500 π)
-                              ≈  26.937,                                   (S10)
-1 / α_2(v) |_{u_hi = 98/100}  =  (115248 π² - 456475) / (7500 π) + (388/625) π
-                              ≈  28.887,                                   (S11)
-g_hi  =  sqrt( 4 π / 26.937 )  ≈  0.68283 43045 53706 87,                   (S12)
-g_lo  =  sqrt( 4 π / 28.887 )  ≈  0.65939 28361 86702 25.                   (S13)
+1 / α_2(v) |_{u_lo = 96/100}  =  (110592 π² - 456475) / (7500 π)
+                              ≈  26.951,                                   (S10)
+1 / α_2(v) |_{u_hi = 98/100}  =  (115248 π² - 456475) / (7500 π)
+                              =  (110592 π² - 456475) / (7500 π) + (388/625) π
+                              ≈  28.902,                                   (S11)
+g_hi  =  sqrt( 4 π / 26.951 )  ≈  0.68283 43045 53706 87,                   (S12)
+g_lo  =  sqrt( 4 π / 28.902 )  ≈  0.65939 28361 86702 25.                   (S13)
 ```
 
 The exact rational-times-π forms in `(S10)`, `(S11)` are evaluated to 30
@@ -549,3 +550,28 @@ edges:
   parallel SU(3) tadpole-improvement bridge; this narrow theorem is the
   SU(2) analogue, conditional on literature import for `u_0(SU(2))`
   rather than retained `<P>_SU(3)`.
+
+## 2026-05-18 audit-conditional repair: S10/S11 exact-form arithmetic corrected
+
+Per the 2026-05-17 audit verdict, the S10/S11 exact-form expressions in
+this note did not match the primary runner's u_lo (`110592π²`) and u_hi
+(`115248π²`) numerators. This revision corrects the exact-form arithmetic
+on the non-load-bearing rows to align with the runner output.
+
+Specifically, the previous S10 expression read
+`(115248 π² - 456475) / (7500 π)` (the u_hi-case numerator) when the
+correct u_lo-case numerator is `110592 π²` (from
+`16 π × (96/100)² = 9216 π / 625`, giving numerator
+`9216 × 12 = 110592`). The previous S11 wrote the u_hi case as
+`(115248 π² - 456475) / (7500 π) + (388/625) π`, which was
+arithmetically inconsistent (it would have added the difference twice
+on top of an already-u_hi-valued head). The revised S11 displays the
+u_hi closed form `(115248 π² - 456475) / (7500 π)` directly and shows
+that this equals the corrected u_lo form plus the increment
+`(388/625) π`, matching the runner's
+`diff = 388·π / 625 ≈ 1.950301`. Decimal approximations on the same
+lines updated from `26.937 → 26.951` and `28.887 → 28.902` to match the
+runner's exact symbolic evaluation. Load-bearing g_lo / g_hi
+end-results, the bounded interval `(G1)`, and all corollaries `(C1)–(C5)`
+are unchanged; only the displayed exact-form intermediate rows are
+synced.

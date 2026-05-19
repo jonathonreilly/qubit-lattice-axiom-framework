@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 356 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1345 |
+| unaudited | 1346 |
 | audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -49,14 +49,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 20 |
-| `audited_clean` | 573 |
-| `audited_conditional` | 61 |
+| `audit_in_progress` | 19 |
+| `audited_clean` | 574 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1564 |
+| `unaudited` | 1565 |
 
 | claim_type | count |
 |---|---:|
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `poisson_self_gravity_born_audit_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -604,6 +603,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_layered_gauge_engineering_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_layered_gauge_phase_diagram_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_layered_loop_threshold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_newton_reproduction_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -772,7 +772,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
@@ -9044,6 +9043,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing bounded comparison is checked explicitly by the runner output: the DAG and no-loop controls have gauge=N/A, the sparse-cycle control has gauge=FAIL, and all six single-plaquette cases have retained=8/8 with J_span above 1e-4 and residual below 1e-8. The source note's qualitative decision is supported under the stated harness constraints. Claim boundary: the result is only for the seeded layered construction and tested plaquette windows; the note should not be read as proving global minimality across all possible nearby graph edits. Minor stale numeric discrepancies exist between the note table and runner output for some J values, but they do not change any pass/fail or threshold conclusion.
 - **auditor confidence:** high
 
+### `staggered_newton_blocking_sensitivity_note_2026-04-11`
+
+- **Note:** [`STAGGERED_NEWTON_BLOCKING_SENSITIVITY_NOTE_2026-04-11.md`](../../docs/STAGGERED_NEWTON_BLOCKING_SENSITIVITY_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-run blocking-sensitivity result for open 3D cubic staggered external-source trajectories with sides 12, 14, 16; distances 3-6; mass 0.30; G 50.0; source_strength 5e-4; dt 0.10; N_steps 12; sigma 1.30; and readouts raw, z2, cube2, cube4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-staggered_newton_blockin-028`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the open-cubic external-source staggered surface, the Newton-compatible exponent survives raw, z2, and 2x2x2 trajectory readouts and fails only under over-coarse 4x4x4 blocking.  _(class `C`)_
+- **chain closes:** True — The provided runner directly instantiates the open staggered 3D lattice Hamiltonian, external source potential, Gaussian packet, Crank-Nicolson evolution, blocked z-centroid readouts, acceleration fits, and distance-law fits. Its computed stdout matches the note's numerical claims within the stated bounded finite surface.
+- **rationale:** The load-bearing result is not imported from another note or asserted by definition; it is computed by the included runner from the specified lattice dynamics and readout definitions. The runner source contains no helper imports, no hard-coded expected fitted exponents, and no external comparator calibration. The conclusion is clean only in the bounded finite-surface sense stated by the note, not as a general staggered two-body or asymptotic law.
+- **auditor confidence:** high
+
 ### `staggered_newton_reproduction_note_2026-04-11`
 
 - **Note:** [`STAGGERED_NEWTON_REPRODUCTION_NOTE_2026-04-11.md`](../../docs/STAGGERED_NEWTON_REPRODUCTION_NOTE_2026-04-11.md)
@@ -10620,21 +10632,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law.
 - **decoration parent:** `wide_lattice_h2t_distance_law_note`
 - **auditor confidence:** high
-
-### `wilson_test_mass_continuum_note_2026-04-11`
-
-- **Note:** [`WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md`](../../docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-L low-screening open-Wilson distance-law table plus reported test-mass and perturbative source-mass scaling within the shared Wilson convention, with the L→∞ extrapolation excluded from audited scope.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-145124-bc2044d8-wilson_test_mass_continu-007`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The binding evidence is the finite-L open-Wilson size sweep table, especially that the largest accessible L=25 fit gives alpha=-2.002 with R^2=0.9999 and therefore sits near a Newton-compatible distance exponent.  _(class `C`)_
-- **chain closes:** False — The finite-L Wilson table is the actual load-bearing numerical evidence, but the restricted packet contains no completed runner stdout, runner source, cached certificate, or retained-grade Wilson numerical authority for those values. The Wilson normalization authority is meta/support-grade and explicitly leaves runner verification incomplete for parts of the same Wilson batch.
-- **rationale:** Issue: the finite-L Wilson distance-law table and test-mass/perturbative numbers are asserted in the note, but the packet supplies no completed source-output certificate for the binding Wilson size sweep. Why this blocks: the only Wilson cited authority is a meta/control note rather than retained-grade numerical evidence, so the same-convention finite-L computation is not closed inside the restricted packet. Repair target: provide a retained-grade finite-L Wilson runner certificate/source-output pair for the table and remove or retain-grade the normalization-control dependency. Claim boundary until fixed: the note may be read only as a scoped report of claimed same-convention finite-L Wilson outputs, with the L→∞ extrapolation diagnostic-only.
-- **open / conditional deps cited:**
-  - `WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`
-- **auditor confidence:** medium
 
 ### `wilson_two_body_open_note_2026-04-11`
 

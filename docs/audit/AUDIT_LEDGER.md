@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 111 |
-| **retained_no_go** | 136 |
+| **retained_no_go** | 137 |
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 586 |
+| `audited_clean` | 587 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1538 |
+| `unaudited` | 1537 |
 
 | claim_type | count |
 |---|---:|
@@ -559,6 +559,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `self_consistency_structured_null_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `self_gravity_backreaction_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `self_gravity_born_hardening_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `self_gravity_failure_diagnosis` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `self_gravity_scaling_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `seventh_family_diagonal_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8327,6 +8328,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The exact zero-coupling reduction is explicit, the snapshot Born check is explicit, and the end-to-end Born check is explicit, but together they still do not justify promoting the lane to a retained self-gravity/backreaction mechanism.  _(class `C`)_
 - **chain closes:** True — The note is a bounded no-go, not a positive retained mechanism claim. With no cited dependencies, the current runner directly reproduces the zero-epsilon identity, the nonzero-coupling non-convergence, and the non-machine-clean end-to-end Born audit that support that bounded conclusion.
 - **rationale:** The bounded claim surface is narrow: it asserts that the exact zero-coupling identity survives while the nonzero self-gravity/backreaction lane does not promote under strict reduction and Born controls. The current runner recomputes those controls from the stated lattice setup and matches the note's reported values, including zero-epsilon identity, failed nonlinear convergence for nonzero couplings, and nonzero end-to-end Born residual. No upstream dependency or hidden retained mechanism is needed for this bounded no-go read; residual risk is only that the runner is slow and has unclassified output lines, not that the stated bounded conclusion overreaches the computed evidence.
+- **auditor confidence:** high
+
+### `self_gravity_failure_diagnosis`
+
+- **Note:** [`SELF_GRAVITY_FAILURE_DIAGNOSIS.md`](../../docs/SELF_GRAVITY_FAILURE_DIAGNOSIS.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded no-go only for nonzero-epsilon Poisson-like self-gravity/backreaction loops on the supplied exact-lattice runner architecture; the epsilon=0 identity case is outside the no-go scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-self_gravity_failure_dia-064`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For nonzero-epsilon loops, the signal is too small, the nonlinear iteration is too unstable, and end-to-end Born is not clean enough to support a stable self-gravity mechanism.  _(class `C`)_
+- **chain closes:** True — The supplied runner and helper code instantiate the lattice propagation, Poisson-like field update, matched-null comparison, convergence check, and Born audit rather than merely printing constants. The nonzero-epsilon rows show small shifts, 0/3 convergence for tested nonzero epsilons, and non-machine-clean end-to-end Born on the retained audit row.
+- **rationale:** Both cited authorities are retained-grade no-go authorities, and the source note narrows the no-go to nonzero-epsilon loops, avoiding the earlier overbroad epsilon=0 binding. The runner source contains an epsilon=0 short-circuit, but the audited no-go does not depend on treating that branch as same-machinery evidence. The load-bearing nonzero-epsilon failure is computed by the runner from the included lattice and propagation code: nonzero rows show small perturbations, strict nonconvergence, and degraded end-to-end Born.
 - **auditor confidence:** high
 
 ### `self_gravity_scaling_note_2026-04-10`

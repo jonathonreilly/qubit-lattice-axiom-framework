@@ -9,20 +9,42 @@ read-only sandbox, gathered via `codex exec`) + first-party deep
 review (Claude). The review is on the **design**, not the framework
 science.
 
-> **Pivot note (post-review):** the design responded to MAJOR 7
-> (standard-convention claims too strong) by *adopting standards
-> conformance* rather than downgrading the claim. The vocabulary now
-> conforms to W3C recommendation-track lifecycle (4-value
-> `audit_status`), GRADE two-axis evidence grading (`closure_status` ×
-> `chain_certainty`), and IEEE 1044-2009 anomaly classification
-> (`defect_type` × `defect_class` × `severity`), with AI-physics
-> extensions recorded in separate orthogonal fields rather than as
-> enum subdivisions. See
-> [VOCABULARY_HYGIENE_DESIGN.md §The four vocabulary families](VOCABULARY_HYGIENE_DESIGN.md#the-four-vocabulary-families)
-> for the conformant schema. The migration scope below (Cleanup-1)
-> reflects the conformant schema; this review's earlier "downgrade
-> `equivalent_to` to `inspired_by`" recommendation is **superseded**
-> by the schema restructure.
+> **Pivot note (post-review, second iteration):** an earlier response
+> to MAJOR 7 attempted to *adopt standards conformance* (W3C
+> recommendation-track lifecycle, GRADE two-axis evidence grading,
+> IEEE 1044-2009 anomaly classification) by restructuring the audit
+> schema to map onto those standards. That response was itself wrong
+> and has been reverted. The standards in question were chosen for
+> recognizable lifecycle shapes, not because they address the same
+> problem: W3C standardizes web specifications, GRADE grades clinical
+> evidence quality, IEEE 1044 classifies software anomalies. None
+> were designed for theorem-audit verdicts in an AI-built physics
+> repo.
+>
+> The corrected response — applied in
+> [VOCABULARY_HYGIENE_DESIGN.md](VOCABULARY_HYGIENE_DESIGN.md) — is to
+> **drop external-standards mapping entirely**. The vocabulary is
+> physics-native (audit verdicts on derivations, `(A)`–`(G)`
+> load-bearing step classes, the 7 repair classes, the 8-value
+> `audit_status` enum) and AI-physics-native (catches for specific
+> AI-generation failure modes: `audited_renaming`,
+> `audited_decoration`, `audited_numerical_match`). It grew from
+> doing AI-physics audits in this repo; the legitimacy of each term is
+> grounded in the audit work that produced it, not in conformance to
+> any external standard. The vocabulary is offered as a transferable
+> **exemplar** with explicit scope tags (`core_process`,
+> `audit_physics_process`, `repo_physics_policy`, `paper_voice`,
+> `topic_local`), not as derivative of W3C/GRADE/IEEE/etc.
+>
+> The 8-value `audit_status` enum stays exactly as
+> [audit/README.md](../audit/README.md) defines it. The genuine
+> additions are orthogonal `prose_status` / `prose_corrections` fields
+> (for vocab-drift separation), the canonical YAML source-of-truth,
+> the `vocab_lint --fix` mechanism, and the `scope_tags` taxonomy.
+> The original "downgrade `equivalent_to` to `inspired_by`" line of
+> response is **also superseded**: even loose analogy is dropped,
+> because pointing at adjacent standards misleads readers about the
+> vocabulary's actual provenance.
 
 This is a "measure twice, cut once" gate. The design will propagate
 across ~2,500 markdown files via the cleanup PR; ratifying it now and
@@ -454,11 +476,16 @@ Codex's top-5 + first-party's top concerns, merged in priority order:
    `examples`.
 4. **Deterministic renderer + CI diff gate** (MAJOR 4). Without it,
    the "no rot" claim is aspirational.
-5. **Downgrade standard-convention language from `equivalent_to` to
-   `inspired_by` / `analogous_to`** (MAJOR 7). Fix the GRADE
-   collapse, drop the W3C Candidate Recommendation parallel, replace
-   the IEEE 1044 mapping with a more honest analogy. Fix the IEEE
-   1990 typo (MINOR 13).
+5. **Drop external-standards mapping entirely** (MAJOR 7; second
+   iteration). The earlier "downgrade to `inspired_by`" response and
+   the subsequent "adopt conformance" response are both superseded.
+   The vocabulary is physics-native + AI-physics-native; the
+   adjacent standards (W3C web specs, GRADE clinical evidence
+   grading, IEEE 1044 software anomalies) address different problems
+   and pointing at them misleads readers about the vocabulary's
+   provenance. Frame each term by what it does in this repo, with a
+   `scope_tag` identifying transferability. (This also removes the
+   IEEE 1990 vs 1044 typo issue by removing the IEEE references.)
 6. **Split cleanup PR into Cleanup-1 (schema/tooling) and Cleanup-2
    (migration sweep)** (MAJOR 10). The sweep needs the tooling
    landed first.

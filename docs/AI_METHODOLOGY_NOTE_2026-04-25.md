@@ -254,38 +254,61 @@ vocabulary control**:
    one PR against the canonical YAML. The synchronous-bottleneck
    failure mode the 84-note wave exposed is structurally removed.
 
-The vocabulary **conforms to established standards where the domain
-matches**, with explicitly-tagged AI-physics extensions for the
-generation failure modes the standards do not cover. The schema is
-engineered for conformance, not nodding-toward-standards:
+The vocabulary is **physics-native and AI-physics-native**. It is not
+derived from external standards. The terms grew from doing AI-physics
+audits in this repo and naming the verdicts and failure modes the
+audit lane actually encountered:
 
-- **Lifecycle** uses the W3C recommendation-track values directly
-  (`unaudited` = Working Draft, `audit_in_progress` = Candidate
-  Recommendation, `audited_clean` = Recommendation,
-  `audited_retired` = Retired with cause). AI-specific failure modes
-  (renaming / decoration / numerical-match) are recorded in a
-  separate `failure_mode` field rather than inflating the lifecycle
-  enum.
-- **Grade** uses GRADE's two-axis structure (recommendation strength
-  × evidence certainty), implemented as `closure_status` ×
-  `chain_certainty`. The conventional publication-facing labels
-  (`retained`, `retained_bounded`, …) become derived names for
-  specific cells in the grid, not the source of truth.
-- **Defect classification** uses IEEE 1044-2009 anomaly-classification
-  axes (`defect_type` × `defect_class` × `severity`); our seven
-  historical repair classes map into them. `compute_required` is
-  correctly recorded as a `defect_class: problem` (not a defect;
-  deferred verification).
-- **Independence tiers** are partially novel: the human-reviewer
-  tiers (`strong`, `external`) match standard peer review;
-  the model-family tiers (`weak`, `fresh_context`, `cross_family`)
-  are AI-physics extensions explicitly tagged in the YAML.
+- **Physics-native verdicts** encode auditor judgments on physics
+  derivations: `audited_clean` (chain closes from cited inputs with
+  no hidden premise; load-bearing step is class `(A)`, `(C)`, or
+  `(D)`), `audited_conditional` (closure depends on something
+  not-yet-established; required repair-class prefix), `audited_failed`
+  (chain wrong, stale, or contradicts dependencies). The `(A)`–`(G)`
+  load-bearing step classes and 7 repair classes are likewise
+  physics-grown.
+- **AI-physics-native verdicts** catch specific AI-generation failure
+  modes the audit lane observed in practice: `audited_renaming`
+  (definition-as-derivation; load-bearing step class `(E)` or
+  `(F)`), `audited_decoration` (algebraic corollary with no new
+  comparator / falsifiability / compression / physical content), and
+  `audited_numerical_match` (tuned-input dependence; step class
+  `(G)`). These verdicts exist because the audit lane needed them to
+  catch patterns AI agents produce at scale.
+- **Reviewer-independence tiers** extend standard peer-review
+  independence with model-family-aware tiers for AI-built work. The
+  human-reviewer tiers (`strong`, `external`) match standard
+  scientific peer review; the model-family tiers (`weak`,
+  `fresh_context`, `cross_family`) are AI-physics extensions for
+  detecting context poisoning and cross-family disagreement.
+- **Process additions** in this design (`prose_status`,
+  `prose_corrections`) encode the separation of physics verdicts
+  from prose drift.
 
-Every term that is not standards-conformant carries
-`ai_extension: true` and an `ai_extension_rationale` field. The
-transferable parts of the mechanism (the conformant cells) transfer
-unchanged; the AI-physics extensions transfer only to repos facing
-the same generation-failure modes.
+The vocabulary is offered as a transferable **exemplar** to other
+AI-built research repos, not as derived from any adjacent standard.
+Adjacent standards (W3C for web specifications, GRADE for clinical
+evidence grading, IEEE 1044 for software anomalies) address
+different problems and pointing at them would misrepresent the
+vocabulary's provenance. Every term carries a `scope_tag` in the
+canonical YAML that says explicitly which surface it governs:
+
+- **`core_process`** — pure process labels transferable unchanged
+  (e.g. `unaudited`, `audit_in_progress`, `prose_status` values).
+- **`audit_physics_process`** — verdicts on physics derivations
+  encoding the AI-physics method (e.g. `audited_renaming`,
+  load-bearing step classes). Transferable to AI-physics repos
+  facing the same generation failure modes.
+- **`repo_physics_policy`** — policy on physics primitives; this
+  repo only.
+- **`paper_voice`** — paper-facing prose voice; stylistic and
+  repo-specific.
+- **`topic_local`** — topic-specific physics wording (BMV,
+  boundary-law, etc.). Lives in per-topic notes.
+
+Only `core_process` and `audit_physics_process` transfer to other
+AI-built research repos as exemplars. The other three tags are
+repo-specific.
 
 The full design is in
 [`docs/repo/VOCABULARY_HYGIENE_DESIGN.md`](./repo/VOCABULARY_HYGIENE_DESIGN.md);

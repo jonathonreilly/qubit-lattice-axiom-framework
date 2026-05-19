@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1318 |
+| unaudited | 1317 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 73 |
+| ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,18 +51,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 587 |
-| `audited_conditional` | 73 |
+| `audited_conditional` | 74 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1537 |
+| `unaudited` | 1536 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 998 |
+| `bounded_theorem` | 997 |
 | `decoration` | 26 |
-| `meta` | 221 |
+| `meta` | 222 |
 | `no_go` | 230 |
 | `open_gate` | 110 |
 | `positive_theorem` | 745 |
@@ -796,6 +796,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -10534,6 +10535,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: The note combines two different surfaces as one unified basin: NONLABEL_GROWN_BASIN_TARGETED still gives 3/3 signed-source rows with exact zero/neutral controls, but complex_action_kernel_vs_gravity is a fixed-row kernel/generic-vs-gravity separation test, not a nearby basin; the actual FIXED_FIELD_COMPLEX_GROWN_BASIN runner gives exact gamma=0 + Born proxy survivors 0/2. Why this blocks: the claim that one grown connectivity family supports both couplings across a small nearby basin with exact controls is not computed by the supplied runners and is contradicted by the available complex-basin runner. Repair target: provide a single unified runner over the same drift/restore neighborhood and seed set, with explicit zero/neutral/gamma=0/Born assertions for both coupling surfaces, or split the note into separate retained/failed components. Claim boundary until fixed: safe to claim the signed-source non-label basin currently passes 3/3 at restore 0.60/0.70/0.80, and the kernel-vs-gravity fixed-row runner separates absorption from gravity-specific deflection; not safe to claim a unified two-coupling basin.
 - **open / conditional deps cited:**
   - `KERNEL_VS_GRAVITY_NOTE.md`
+- **auditor confidence:** high
+
+### `unified_basin_signed_source_control_support_note_2026-04-30`
+
+- **Note:** [`UNIFIED_BASIN_SIGNED_SOURCE_CONTROL_SUPPORT_NOTE_2026-04-30.md`](../../docs/UNIFIED_BASIN_SIGNED_SOURCE_CONTROL_SUPPORT_NOTE_2026-04-30.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the note's archive/salvage framing of finite signed-source rows excerpted from a failed archived wrapper, not the truth of the underlying numerical controls.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-unified_basin_signed_sou-065`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The signed-source values are read-only excerpts from an archived failed wrapper and require a future live retained-generator runner for independent reproduction.  _(class `B`)_
+- **chain closes:** False — The metadata framing is internally explicit, but the numerical rows do not close as independent evidence because the archived wrapper and any recomputing runner are absent from the restricted packet. The missing step is a live retained-generator recomputation or provided archived source sufficient to verify the excerpts.
+- **rationale:** The note itself narrows the claim to historical archive/salvage metadata and disclaims theorem-grade support. Any substantive signed-source control observation is imported from an archived failed wrapper with no runner, no stdout, and no cited authority included in the packet. Thus the row can be read as metadata, but the numerical support chain does not independently close from the restricted inputs.
+- **open / conditional deps cited:**
+  - `archive_unlanded/unified-basin-signed-source-salvage-2026-04-30/UNIFIED_BASIN_FREEZE_NOTE.md`
 - **auditor confidence:** high
 
 ### `unit_singlet_overlap_narrow_theorem_note_2026-05-02`

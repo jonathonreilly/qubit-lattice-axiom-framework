@@ -1,0 +1,85 @@
+================================================================================
+ OPERATOR-BASIS F-TILDE-F EXCLUSION + QUARK-MASS ORIENTATION  (2026-05-19)
+================================================================================
+ Companion runner to:
+   docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md
+ Parent target: docs/STRONG_CP_THETA_ZERO_NOTE.md (audited_conditional)
+
+ 8 verification gates exhibiting slot-construction + rejection on SU(3).
+
+
+=== V1: Gauge-invariant plaquette-local operator enumeration ===
+
+  [PASS] V1.1  'Tr U_P' invariant under random SU(3) conjugation  (max|delta| = 7.22e-16 over N=20)
+  [PASS] V1.2  'Tr U_P^dag' invariant under random SU(3) conjugation  (max|delta| = 7.22e-16 over N=20)
+  [PASS] V1.3  'Tr U_P^2' invariant under random SU(3) conjugation  (max|delta| = 1.88e-15 over N=20)
+  [PASS] V1.4  'Tr(U_P U_P^dag)' invariant under random SU(3) conjugation  (max|delta| = 2.66e-15 over N=20)
+  [PASS] V1   Lemma 2.1 framing: all 4 candidate plaquette-local invariants gauge-invariant  (max|delta| across all = 2.66e-15)
+
+=== V2: Real-action exclusion of imaginary-plaquette slot ===
+
+  [PASS] V2.1  theta = 0 yields real Boltzmann factor (control)  (max|Im exp(-i*0*Q)| = 0.00e+00)
+  [PASS] V2  theta = 0.01: complex-phase rejection triggers  (max|Im exp(-i*theta*Q)| = 1.3500e-01)
+  [PASS] V2  theta = 0.1: complex-phase rejection triggers  (max|Im exp(-i*theta*Q)| = 9.7661e-01)
+  [PASS] V2  theta = 1.0: complex-phase rejection triggers  (max|Im exp(-i*theta*Q)| = 9.7219e-01)
+  [PASS] V2   Lemma 2.3: imaginary-plaquette slot violates real-positive-measure for theta != 0  (all 3 nonzero-theta cases give nonzero |Im BF|)
+
+=== V3: Canonical-normalization continuum-limit decomposition ===
+
+  [PASS] V3.1  Re Tr U_P leading-order coefficient matches F^a F^a (YM kinetic)  (a=0.02: (N_c - Re_z)/(a^4/4) = 3.903729, F^a F^a = 3.903729, rel.err = 6.02e-09)
+  [PASS] V3.2  Im Tr U_P vanishes at order a^4 (CP-odd density appears at a^6)  (a=0.02: Im_z/a^4 = -7.4297e-06)
+  [PASS] V3.3  Im Tr U_P / a^4 -> 0 as a -> 0 (consistent with leading O(a^6) CP-odd density)  (Im/a^4 at a=0.5: -4.6200e-03;  at a=0.02: -7.4297e-06)
+  [PASS] V3   Lemma 2.2: canonical-normalization continuum-limit decomposition holds  (Re leading matches YM kinetic; Im subleading consistent with CP-odd a^6 density)
+
+=== V4: Bounded-below check on real Wilson slot ===
+
+  [PASS] V4.1  S_W = (beta/N_c) sum_P (N_c - Re Tr U_P) >= 0 on all sampled configs  (min S_W = 552.182578, max S_W = 606.038885 over N=50)
+  [PASS] V4.2  S_W complex contamination check: Im S_W from random plaquettes is nonzero  (max|Im sum (N_c - Tr U_P)| = 2.8683e+01  (this is why the standard action takes Re Tr U_P, not Tr U_P))
+  [PASS] V4   Bounded-below (P5) holds on canonical Wilson real slot  (all N=50 configs give S_W >= 0)
+
+=== V5: Mass orientation — (C-det) + (C-class) two-constraint split ===
+
+  [PASS] V5.1  (C-det):  (M-real) det(D + m I) is real-positive (phase ~= 0)  (max|phase| = 1.14e-16)
+  [PASS] V5.2  (C-det):  (M-complex, alpha=pi/4) det(D + m e^{i pi/4} I) has NONZERO phase  (max|phase| = 1.6103)
+  [PASS] V5.3  (C-class):  (M-real) is pure scalar (M_S != 0, M_P = 0)  (M_S = 1.0000+0.0000j, M_P = 0.0000+0.0000j)
+  [PASS] V5.4  (C-class):  (M-pseudoscalar) is pure pseudoscalar (M_S = 0, M_P != 0)  ->  outside scalar-class  (M_S = 0.0000, M_P = 1.0000)
+  [PASS] V5.5  (C-class):  (M-mixed) has nonzero pseudoscalar component  ->  outside scalar-class  (M_S = 1.0000+0.0000j, M_P = 0.0000+1.0000j)
+  [PASS] V5   Theorem 3.4 (Lemma 3.1):  (M-real) uniquely satisfies (C-det) AND (C-class)  (M-real: (C-det)+(C-class). M-complex(pi/4): fails (C-det). M-pseudo/M-mixed: fail (C-class).)
+
+=== V6: Mass orientation — reflection-positivity precondition (C-det) ===
+
+  [PASS] V6.1  (C-det):  (M-real) det(D+M) real-positive on ALL configs  (8/8 configs pass)
+  [PASS] V6.2  (C-det):  (M-complex, alpha=pi/4) FAILS on ALL configs  (0/8 configs pass (should be 0))
+  [INFO]  (M-pseudoscalar) (C-det) pass-rate: 4/8  (may pass or fail depending on m5 vs spectrum; outside scalar-class anyway)
+  [INFO]  (M-mixed) (C-det) pass-rate: 8/8  (passes via staggered chirality; excluded by (C-class) — see V5)
+  [PASS] V6.3  (M-pseudoscalar) (C-det) is non-uniform (pass-rate depends on config)  (pass-rate = 4/8 -- recorded honestly per Lemma 3.1)
+  [PASS] V6   (C-det) restriction: (M-real) and (M-mixed) pass; (M-complex,pi/4) fails; (M-pseudo) non-uniform  (Composition with (C-class) [V5] selects (M-real) uniquely.)
+
+=== V7: Forbidden-slot explicit construction + rejection ===
+
+  [PASS] V7.1  Forbidden slot S_FtildeF = -theta * sum_P Im Tr U_P generates complex Boltzmann factor  (5/5 configs show |Im BF|/|BF| > 1e-12 (max rel Im = 9.6209e-01))
+  [PASS] V7.2  Control: theta = 0 gives real Boltzmann factor on ALL configs  (5/5 configs have Im BF = 0 at theta = 0)
+  [PASS] V7   Theorem 2.4 verified at lattice level: F-tilde-F slot rejected  (All theta != 0 configs reject; theta = 0 control passes)
+
+=== V8: Composition with Leg A ===
+
+  [PASS] V8.1  Leg A retained primitive: det(D + m I) > 0 real-positive on all sampled configs  (30/30 configs pass.  max|phase| = 2.56e-16)
+  [PASS] V8.2  Complex-mass candidate (M = m e^{i pi/4} I) is rejected by (C-det) on all configs  (30/30 configs reject.  max|phase| = 1.5807)
+  [PASS] V8   Composition Theorem 3.4 + Leg A: real-mass is admissible; complex-mass (alpha=pi/4) is excluded  (Leg A retained primitive holds AND M-complex (alpha=pi/4) is rejected on all 30 SU(3) configs)
+
+================================================================================
+GATE SUMMARY (8 verification gates):
+  [PASS]  V1
+  [PASS]  V2
+  [PASS]  V3
+  [PASS]  V4
+  [PASS]  V5
+  [PASS]  V6
+  [PASS]  V7
+  [PASS]  V8
+
+  GATES: PASS = 8, FAIL = 0
+
+SUB-CHECK SUMMARY:
+  PASS = 33, FAIL = 0, runtime = 0.2s
+================================================================================

@@ -1,8 +1,8 @@
 {
   "by_criticality": {
-    "critical": 887,
+    "critical": 886,
     "high": 27,
-    "leaf": 336,
+    "leaf": 337,
     "medium": 116
   },
   "cycle_break_target_count": 297,
@@ -9622,31 +9622,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
       "transitive_descendants": 989
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "growing_graph_dynamic_limit_diagnostic_note",
-      "claim_scope": "Bounded no-go for the named frozen static-control growing-graph diagnostic: dynamic-propagation visibility is weak, seed-dependent, and not promoted as the expansion observable.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "retained_no_go",
-      "helper_runner_paths": [
-        "scripts/generative_causal_dag_interference.py",
-        "scripts/growing_graph_decoherence.py"
-      ],
-      "load_bearing_score": 14.45,
-      "note_path": "docs/GROWING_GRAPH_DYNAMIC_LIMIT_DIAGNOSTIC_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/growing_graph_dynamic_limit_diag.py",
-      "transitive_descendants": 988
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -38482,6 +38457,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "growing_graph_expansion_skeptic_audit_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "growing_graph_expansion_card_note",
+        "growing_graph_dynamic_limit_diagnostic_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GROWING_GRAPH_EXPANSION_SKEPTIC_AUDIT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
       "transitive_descendants": 0
     },
     {

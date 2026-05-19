@@ -1,5 +1,9 @@
 # Start Here
 
+For a single-term lookup at any point, the repo-canonical A-Z index is
+[KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md). Every vocabulary, governance,
+and policy doc in the repo points back to it.
+
 Use this order if you want the shortest route from paper to predictions,
 claims, and validation:
 

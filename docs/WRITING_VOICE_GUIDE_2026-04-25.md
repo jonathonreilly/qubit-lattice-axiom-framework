@@ -1,5 +1,7 @@
 # Writing Voice Guide
 
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
 **Date:** 2026-04-25
 **Status:** active paper-facing voice guide
 

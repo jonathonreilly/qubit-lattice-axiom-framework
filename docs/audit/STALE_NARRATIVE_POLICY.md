@@ -1,5 +1,7 @@
 # Stale Narrative Policy
 
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
 **Status:** binding rule for the audit lane.
 
 This policy handles source notes whose narrative frame has gone stale after

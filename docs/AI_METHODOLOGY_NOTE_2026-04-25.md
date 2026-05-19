@@ -1,5 +1,7 @@
 # AI Methodology Note — Cl(3)/Z^3 Framework
 
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
 **Date:** 2026-04-25  
 **Status:** active methodology-capture lane on `main`; curated front-door note,
 not the final methodology paper  
@@ -190,6 +192,149 @@ These files encode a reproducibility discipline:
 
 In other words, repo hygiene is part of the check on the science, not just an
 engineering nicety.
+
+### 5a. Vocabulary hygiene at agent pacing
+
+At repo scale (this repo currently carries ~2600 markdown files, almost
+all AI-authored, with parallel agents working continuously), one
+specific kind of hygiene fails when handled by discipline alone:
+vocabulary. Agents drift, emergent terminology compounds, and per-PR
+coordination becomes a synchronous bottleneck the autopilot will not
+respect. The empirical anchor in this repo: a single PR (#1262, on
+2026-05-16) introduced an ad-hoc filename suffix
+(`_HOSTILE_AUDIT_FINDINGS_NOTE_`) and a within-note F-letter labelling
+scheme; in the next 24 hours, 83 follow-up notes adopted the same
+pattern. Discipline-based control (the existing "no new vocab" rule in
+memory) caught the wave only on retrospective review.
+
+The methodological pattern shipped in response is **mechanism-based
+vocabulary control**:
+
+1. **One machine-readable canonical source.**
+   `docs/repo/controlled_vocabulary.yaml` (created by the companion
+   cleanup PR) is the single edit surface for all process vocabulary.
+   The human-readable docs
+   ([`CONTROLLED_VOCABULARY.md`](./repo/CONTROLLED_VOCABULARY.md),
+   [`KEY_TERMINOLOGY.md`](./KEY_TERMINOLOGY.md)) are regenerated from
+   the YAML; manual edits to the rendered docs are not permitted.
+   Rendered drift is impossible by construction.
+
+2. **Auto-correct integrated into the substantive loops.**
+   `scripts/vocab_lint.py --fix` is a mechanical pre-commit step in
+   audit-loop, review-loop, and physics-loop (see their respective
+   `SKILL.md` files). Routine drift (legacy aliases, forbidden
+   filename suffixes, deprecated wording, F-letter codes) is rewritten
+   **automatically; each rewrite is recorded in `prose_corrections`
+   on the related audit row** (automatic, not silent — the trail is
+   auditable). This shifts vocabulary compliance from agent discipline
+   (fallible) to loop mechanism (always-on).
+
+3. **Physics verdicts separated from prose verdicts.** Audit ledger
+   rows gain a `prose_status` field independent of `audit_status`. A
+   clean derivation with vocabulary drift lands as
+   `(audit_status: audited_clean, prose_status: auto_corrected)`. A
+   non-clean physics verdict is never set by vocabulary drift alone; a
+   new-vocabulary requirement is never blocked by a physics non-clean
+   verdict. The two concerns are recorded by the same audit cycle but
+   reviewed by different mechanisms.
+
+4. **Vocabulary disjoint from physics.** Framework primitives
+   (`Cl(3)`, `Z³`, `A_min`, `Axiom 1`, `Axiom 2`, `g_bare`, `u_0`,
+   `M_Pl`, etc.) are *not* vocabulary terms. They live in
+   [`MINIMAL_AXIOMS_2026-05-03.md`](./MINIMAL_AXIOMS_2026-05-03.md)
+   and per-claim notes only. The vocabulary system governs
+   process labels (status, audit fields, repair classes, evidence
+   terms, prose voice) — never the physics itself. Conflating the two
+   creates rot in both directions.
+
+5. **Agent pacing preserved.** Routine vocabulary rewrites do not
+   require PRs; the lint applies them inline. Only *genuinely new
+   terms* enter a periodic vocab-extension review queue (recorded as
+   `prose_status: needs_human_vocab_decision`), batch-resolved with
+   one PR against the canonical YAML. The synchronous-bottleneck
+   failure mode the 84-note wave exposed is structurally removed.
+
+The vocabulary is **physics-native and AI-physics-native**. It is not
+derived from external standards. The terms grew from doing AI-physics
+audits in this repo and naming the verdicts and failure modes the
+audit lane actually encountered:
+
+- **Physics-native verdicts** encode auditor judgments on physics
+  derivations: `audited_clean` (chain closes from cited inputs with
+  no hidden premise; load-bearing step is class `(A)`, `(C)`, or
+  `(D)`), `audited_conditional` (closure depends on something
+  not-yet-established; required repair-class prefix), `audited_failed`
+  (chain wrong, stale, or contradicts dependencies). The `(A)`–`(G)`
+  load-bearing step classes and 7 repair classes are likewise
+  physics-grown.
+- **AI-physics-native verdicts** catch specific AI-generation failure
+  modes the audit lane observed in practice: `audited_renaming`
+  (definition-as-derivation; load-bearing step class `(E)` or
+  `(F)`), `audited_decoration` (algebraic corollary with no new
+  comparator / falsifiability / compression / physical content), and
+  `audited_numerical_match` (tuned-input dependence; step class
+  `(G)`). These verdicts exist because the audit lane needed them to
+  catch patterns AI agents produce at scale.
+- **Reviewer-independence tiers** extend standard peer-review
+  independence with model-family-aware tiers for AI-built work. The
+  human-reviewer tiers (`strong`, `external`) match standard
+  scientific peer review; the model-family tiers (`weak`,
+  `fresh_context`, `cross_family`) are AI-physics extensions for
+  detecting context poisoning and cross-family disagreement.
+- **Process additions** in this design (`prose_status`,
+  `prose_corrections`) encode the separation of physics verdicts
+  from prose drift.
+
+The vocabulary is offered as a transferable **exemplar** to other
+AI-built research repos, not as derived from any adjacent standard.
+Adjacent standards (W3C for web specifications, GRADE for clinical
+evidence grading, IEEE 1044 for software anomalies) address
+different problems and pointing at them would misrepresent the
+vocabulary's provenance. Every term carries a `scope_tag` in the
+canonical YAML that says explicitly which surface it governs:
+
+- **`core_process`** — pure process labels transferable unchanged
+  (e.g. `unaudited`, `audit_in_progress`, `prose_status` values).
+- **`audit_physics_process`** — verdicts on physics derivations
+  encoding the AI-physics method (e.g. `audited_renaming`,
+  load-bearing step classes). Transferable to AI-physics repos
+  facing the same generation failure modes.
+- **`repo_physics_policy`** — policy on physics primitives; this
+  repo only.
+- **`paper_voice`** — paper-facing prose voice; stylistic and
+  repo-specific.
+- **`topic_local`** — topic-specific physics wording (BMV,
+  boundary-law, etc.). Lives in per-topic notes.
+
+Only `core_process` and `audit_physics_process` transfer to other
+AI-built research repos as exemplars. The other three tags are
+repo-specific.
+
+The full design is in
+[`docs/repo/VOCABULARY_HYGIENE_DESIGN.md`](./repo/VOCABULARY_HYGIENE_DESIGN.md);
+the canonical YAML and the lint script land in the companion cleanup
+PR. This mechanism is offered as a transferable pattern, but with
+explicit preconditions — it works only in repos that already have:
+
+- a *structured claim ledger* (audit-ledger JSON or equivalent) where
+  process labels are first-class fields;
+- *controlled / generated docs* (a renderer pattern so the
+  human-readable surface is a product, not a source);
+- *CI gates* that fail builds when the rendered surface drifts from
+  the canonical source-of-truth;
+- *agents that respect pre-commit hooks* and run the lint
+  automatically in their loops;
+- a *central source-of-truth* for the vocabulary itself (YAML, JSON
+  Schema, or equivalent), with explicit `schema_version` and
+  migration scripts.
+
+Repos without those preconditions can still adopt the *principle*
+(vocab disjoint from physics, auto-correct over discipline,
+physics-versus-prose separation), but the mechanical implementation
+will need to be redesigned around whatever ledger / docs / CI surface
+they actually have. Without those preconditions, the discipline-based
+fallback is the realistic ceiling, and the failure modes we saw
+(emergent suffixes, F-letter labelling waves, alias rot) will recur.
 
 ## 6. Current Evidence Surface
 

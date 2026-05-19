@@ -2,10 +2,10 @@
   "claim_type_counts": {
     "bounded_theorem": 998,
     "decoration": 26,
-    "meta": 220,
+    "meta": 221,
     "no_go": 230,
     "open_gate": 110,
-    "positive_theorem": 746
+    "positive_theorem": 745
   },
   "cycle_examples": [
     [
@@ -36,7 +36,7 @@
     "audited_conditional": 68,
     "audited_failed": 24,
     "audited_numerical_match": 9,
-    "audited_renaming": 10,
+    "audited_renaming": 11,
     "decoration_under_cl3_color_automorphism_theorem": 6,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": 1,
@@ -59,7 +59,7 @@
     "retained_bounded": 361,
     "retained_no_go": 136,
     "retained_pending_chain": 7,
-    "unaudited": 1328
+    "unaudited": 1327
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

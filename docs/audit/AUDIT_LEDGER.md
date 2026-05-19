@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 71 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 585 |
-| `audited_conditional` | 71 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1541 |
+| `unaudited` | 1540 |
 
 | claim_type | count |
 |---|---:|
@@ -766,6 +766,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5314,6 +5315,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the specified h=0.5, W=8, L=12, max_d=3 harness, Born holds across all five variants while TOWARD holds for the four non-heavy-delete variants and fails for heavy_delete_70.  _(class `C`)_
 - **chain closes:** True — The runner constructs the five graph variants, computes Born, gravity sign, k=0, and no-field controls, and asserts the narrowed table stated in the note. The audited conclusion is explicitly bounded to this harness and does not claim universal graph-structure irrelevance.
 - **rationale:** The current cache reproduces the narrowed table exactly, including the heavy_delete_70 AWAY counterexample that retracts the older universal-robustness framing. The note's safe conclusion follows from the finite runner output and its assertions, with no hidden dependency needed for the bounded harness statement. Residual risk is the ordinary finite-sample limitation: different graph perturbations, strengths, phases, or lattice parameters are outside this audit.
+- **auditor confidence:** high
+
+### `k_dependence_review_safe_note`
+
+- **Note:** [`K_DEPENDENCE_REVIEW_SAFE_NOTE.md`](../../docs/K_DEPENDENCE_REVIEW_SAFE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-window k-dependence evidence for the generated-DAG ceiling calculation over N=[25,30,40,60,80] and k values [1,2,3,5,7,10,15], limited to the weak claim that fitted behavior varies with k but does not support a universal alpha(k) law.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-k_dependence_review_safe-059`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The fixed-window rerun's per-seed exponents are all negative, but their bootstrap confidence intervals overlap strongly and their ordering is not monotonic in k, so only the weaker bounded wording is supported.  _(class `C`)_
+- **chain closes:** False — The helper runner is a genuine computation and its cache qualitatively shows k-varying pooled slopes, but the seed-level alpha/bootstrap-CI stdout cited in the Result block is not retained. The fit-window-sensitive wording also lacks a retained window-comparison artifact.
+- **rationale:** The available runner source computes from generated DAGs rather than hard-coding the contested alpha values, and the cached pooled-alpha output supports qualitative k variation. However, the note's load-bearing seed_alpha values and bootstrap intervals come from a missing historical primary-run log, so the restricted packet cannot verify those numerical claims. The statement that the evidence is fit-window-sensitive is also not closed by the packet because no window-comparison artifact is retained.
 - **auditor confidence:** high
 
 ### `kernel_vs_gravity_note`

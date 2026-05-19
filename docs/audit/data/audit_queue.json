@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 889,
+    "critical": 888,
     "high": 27,
     "leaf": 335,
     "medium": 116
@@ -12987,30 +12987,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
-      "transitive_descendants": 991
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "action_uniqueness_note",
-      "claim_scope": "Bounded fixed-family replay on the ordered 3D dense lattice with h=0.5, W=8, L=12, kernel 1/L^2 with h^2 measure, field s/r, and the tested action laws S=L, S=L(1+f), S=L(1-f^0.5), S=L(1-f), S=L(1-f^2), S=L exp(-f), S=L/(1+f), and S=-Lf, showing that phase valleys give TOWARD response and that the measured F\u221dM exponent follows the weak-field power for the tested valley-power cases, with weak-field-linear valleys giving F\u221dM=1.00.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "action_power_scaling_sweep_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "retained_pending_chain",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.454,
-      "note_path": "docs/ACTION_UNIQUENESS_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": false,
-      "runner_path": "scripts/action_universality_probe.py",
       "transitive_descendants": 991
     },
     {
@@ -47756,5 +47732,5 @@
     }
   ],
   "ready_count": 60,
-  "total_pending": 1367
+  "total_pending": 1366
 }

@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 19 |
-| `audited_clean` | 572 |
+| `audit_in_progress` | 18 |
+| `audited_clean` | 573 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
@@ -122,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
-| `action_uniqueness_note` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | D | - |
 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -146,6 +145,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_uniqueness_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `action_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -977,6 +977,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** "On that family, multiple weak-field-linear valley actions behave equivalently in the Newtonian regime. That is a bounded family law, not a universal uniqueness theorem."  _(class `A`)_
 - **chain closes:** True — The narrowed bounded claim follows from the supplied runner: the lattice scan gives F~M=1 for several weak-field-linear actions, and the continuum integral verifies delta ~ s^alpha/b^alpha so alpha=1 is the Newtonian weak-field power. The universal uniqueness theorem does not close, but the source note explicitly excludes it from the retained scope.
 - **rationale:** The source note's operative claim is the bounded family law, not the runner's broader uniqueness rhetoric. The runner source computes the listed lattice propagation cases and the continuum power-law integral; its completed stdout supports the weak-field-linear equivalence and alpha=1 scaling within the stated family. The note also preserves the key limitation: finite tested actions and continuum power-family analysis do not establish arbitrary graph, kernel, or dimension uniqueness.
+- **auditor confidence:** high
+
+### `action_uniqueness_note`
+
+- **Note:** [`ACTION_UNIQUENESS_NOTE.md`](../../docs/ACTION_UNIQUENESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed 3D ordered dense lattice with h=0.5, W=8, L=12, 1/L^2 kernel with h^2 measure, field s/r, and the tested representative action laws.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:action_power_scaling_sweep_note`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-action_uniqueness_note-008`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the fixed ordered-lattice family, valley actions stay TOWARD and the F~M exponent follows the weak-field power of f, with weak-field-linear valleys giving F~M = 1.00.  _(class `C`)_
+- **chain closes:** True — The included runner source genuinely constructs the lattice, field, slit geometry, propagation, Born diagnostic, TOWARD counts, and log-log mass-scaling fit rather than printing expected constants. Its completed output matches the note's load-bearing table for the scoped tested actions.
+- **rationale:** Within the stated fixed-family and tested-action scope, the claim is supported by a first-principles numerical computation from the model operators and fixed parameters. The cited companion sweep is retained_bounded and independently supports the same F~M = p pattern for S = L(1-f^p) on a closely matched fixed family. The clean result should not be read as proving arbitrary g(f) universality or architecture-independent tail laws.
 - **auditor confidence:** high
 
 ### `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`

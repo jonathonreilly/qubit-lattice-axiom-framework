@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 367 |
+| **retained_bounded** | 368 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,22 +50,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 16 |
-| `audited_clean` | 591 |
+| `audited_clean` | 592 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1534 |
+| `unaudited` | 1533 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 996 |
+| `bounded_theorem` | 997 |
 | `decoration` | 27 |
 | `meta` | 222 |
 | `no_go` | 230 |
 | `open_gate` | 110 |
-| `positive_theorem` | 745 |
+| `positive_theorem` | 744 |
 
 | criticality | count |
 |---|---:|
@@ -163,6 +163,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `asymmetry_persistence_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -1327,6 +1328,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Generated persistence turns the flat baseline linear response into a clearer positive sublinear mass window, with the cleanest retained row at threshold 0.10 in the layernorm lane.  _(class `C`)_
 - **chain closes:** True — The SHA-pinned cached run completes and reproduces the note's fit coefficients, exponents, and R^2 values. The primary runner and bundled helpers compute these values from seeded graph generation, propagation, gravity-delta measurement, and log-log fitting without importing or hard-coding the contested fit results.
 - **rationale:** The runner constructs the generated 3D DAGs, applies the asymmetry-persistence threshold, varies fixed-prefix mass nodes, computes detector y-shift deltas under linear and layernorm propagation, and fits the declared mass window. The helper sources are present and expose the load-bearing graph, field, propagation, and fitting machinery; no helper hard-codes the claimed numerical outcomes. The clean result is limited to the finite generated-graph protocol and does not establish exact F proportional M or a Newtonian mass law.
+- **auditor confidence:** high
+
+### `asymmetry_persistence_mass_window_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_MASS_WINDOW_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded N=100 dense generated-family mass-response window for thresholds 0.10 and 0.20 under the layer-normalized propagator, with M in {1,2,3,5,8,12} and fits over {2,3,5,8}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-152136-02e6f5c5-asymmetry_persistence_ma-023`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The threshold-0.10 and threshold-0.20 LN power-law fits and R^2 values are reproducible from the cited runner cache as direct stdout of scripts/asymmetry_persistence_mass_scaling.py, supporting a bounded mass-response window on the generated family.  _(class `C`)_
+- **chain closes:** True — The restricted packet includes the runner stdout, primary runner source, and transitive helper sources needed to verify that the quoted LN fits are computed from generated graphs and propagated amplitudes rather than printed constants. The conclusion is bounded to this generated-family setup and does not assert an asymptotic gravity law.
+- **rationale:** The runner constructs graphs, selects mass nodes, computes fields and linear/layernorm gravity deltas, then performs log-log power-law fits; the quoted threshold 0.10 and 0.20 LN coefficients, exponents, and R^2 values match the provided cache. The helper chain for graph generation, propagation, field computation, and fitting is included and contains no hard-coded contested fit values. The audited result is a bounded computational theorem for this parameter window only.
 - **auditor confidence:** high
 
 ### `asymmetry_persistence_pilot_note`

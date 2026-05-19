@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 877,
     "high": 27,
-    "leaf": 319,
+    "leaf": 318,
     "medium": 106
   },
   "cycle_break_target_count": 297,
@@ -37716,31 +37716,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "growing_graph_expansion_skeptic_audit_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "growing_graph_expansion_card_note",
-        "growing_graph_dynamic_limit_diagnostic_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GROWING_GRAPH_EXPANSION_SKEPTIC_AUDIT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "kubo_fam2_non_convergence_stretch_attempt_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -46819,6 +46794,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 27,
-  "total_pending": 1329
+  "ready_count": 26,
+  "total_pending": 1328
 }

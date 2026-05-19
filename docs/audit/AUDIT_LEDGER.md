@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 369 |
+| **retained_bounded** | 370 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1313 |
+| unaudited | 1312 |
 | audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 16 |
-| `audited_clean` | 593 |
+| `audited_clean` | 594 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1532 |
+| `unaudited` | 1531 |
 
 | claim_type | count |
 |---|---:|
@@ -353,6 +353,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `growing_graph_expansion_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4906,6 +4907,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note makes only a bounded analog-proxy claim, and the runner directly constructs the seed, applies the growth rule, computes the reported graph statistics, and compares them to the static control. No external physical bridge or cosmology derivation is required for this narrowed scope.
 - **rationale:** The load-bearing result is an internal computation from the specified toy growth rule, not an imported comparator or a symbolic relabeling. The source explicitly limits the claim to a de Sitter-like spreading proxy and disclaims proof of de Sitter spacetime, inflation, or real cosmological data. Within that boundary, the runner source actually grows the graph and recomputes the reported counts, radii, slopes, and static-control quantities.
 - **auditor confidence:** high
+
+### `growing_graph_expansion_skeptic_audit_note`
+
+- **Note:** [`GROWING_GRAPH_EXPANSION_SKEPTIC_AUDIT_NOTE.md`](../../docs/GROWING_GRAPH_EXPANSION_SKEPTIC_AUDIT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the cited growing-graph notes support retaining a bounded graph-distance/frontier-expansion proxy while demoting de Sitter-like transport wording.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-152136-02e6f5c5-growing_graph_expansion_-027`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The audit confirms a real retained expansion proxy: frontier delay grows from 3.000 to 22.000, RMS and width slopes are positive, and the static control stays flat.  _(class `B`)_
+- **chain closes:** True — The source note's retained and demoted claims are direct cross-note checks against the two cited retained-grade authorities. No additional bridge beyond those cited diagnostics is needed for the bounded audit conclusion.
+- **rationale:** The load-bearing step is not a fresh first-principles computation; it verifies and summarizes values from the cited retained_bounded and retained_no_go authorities. Those inputs support the bounded conclusion: graph-distance/frontier expansion is retained, while dynamic-propagation or de Sitter-like wording is not promoted. The absent runner stdout/source limits direct runner verification here, but the audited claim is a bounded synthesis of the supplied retained-grade notes rather than a new compute claim.
+- **auditor confidence:** medium
 
 ### `growing_graph_static_control_audit_note`
 

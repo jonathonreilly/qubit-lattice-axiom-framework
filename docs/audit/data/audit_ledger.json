@@ -104961,24 +104961,45 @@
       "verdict_rationale": "The load-bearing result is an internal computation from the specified toy growth rule, not an imported comparator or a symbolic relabeling. The source explicitly limits the claim to a de Sitter-like spreading proxy and disclaims proof of de Sitter spacetime, inflation, or real cosmological data. Within that boundary, the runner source actually grows the graph and recomputes the reported counts, radii, slopes, and static-control quantities."
     },
     "growing_graph_expansion_skeptic_audit_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:32:54.585120+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "growing_graph_dynamic_limit_diagnostic_note": "Audited the bounded no-go that, in this specific generated-DAG frozen static-control diagnostic, frontier delay is retained as the clean expansion observable while dynamic-propagation visibility is weak, seed-dependent, and non-monotone across tested graph sizes.",
+          "growing_graph_expansion_card_note": "A bounded toy-graph statement that the specified seed strip and frontier-growth rule produce strong spreading proxies relative to the static seed control over 16 steps."
+        },
+        "dep_claim_type": {
+          "growing_graph_dynamic_limit_diagnostic_note": "no_go",
+          "growing_graph_expansion_card_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "growing_graph_dynamic_limit_diagnostic_note": "retained_no_go",
+          "growing_graph_expansion_card_note": "retained_bounded"
+        },
+        "deps": [
+          "growing_graph_dynamic_limit_diagnostic_note",
+          "growing_graph_expansion_card_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-growing_graph_expansion_-027",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note's retained and demoted claims are direct cross-note checks against the two cited retained-grade authorities. No additional bridge beyond those cited diagnostics is needed for the bounded audit conclusion.",
       "claim_id": "growing_graph_expansion_skeptic_audit_note",
-      "claim_scope": null,
+      "claim_scope": "Audited whether the cited growing-graph notes support retaining a bounded graph-distance/frontier-expansion proxy while demoting de Sitter-like transport wording.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-19T15:32:54.585120+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -104987,19 +105008,19 @@
         "growing_graph_dynamic_limit_diagnostic_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The audit confirms a real retained expansion proxy: frontier delay grows from 3.000 to 22.000, RMS and width slopes are positive, and the static control stays flat.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "7b878e3846bf3aaa609ca96e4e7386728e09fb31b3be69fd603a43068803e123",
       "note_path": "docs/GROWING_GRAPH_EXPANSION_SKEPTIC_AUDIT_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether class B over retained-grade cited authorities is acceptable for audited_clean in this lane, since no runner source or stdout is included in the packet.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -105183,7 +105204,7 @@
       "runner_path": null,
       "title": "Growing Graph Expansion Skeptic Audit Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is not a fresh first-principles computation; it verifies and summarizes values from the cited retained_bounded and retained_no_go authorities. Those inputs support the bounded conclusion: graph-distance/frontier expansion is retained, while dynamic-propagation or de Sitter-like wording is not promoted. The absent runner stdout/source limits direct runner verification here, but the audited claim is a bounded synthesis of the supplied retained-grade notes rather than a new compute claim."
     },
     "growing_graph_frontier_architecture_transfer_note": {
       "audit_date": null,

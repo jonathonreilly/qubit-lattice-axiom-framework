@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 874,
     "high": 27,
-    "leaf": 318,
+    "leaf": 317,
     "medium": 106
   },
   "cycle_break_target_count": 297,
@@ -37636,31 +37636,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "kubo_fam2_non_convergence_stretch_attempt_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kubo_continuum_limit_families_note",
-        "kubo_fam2_refinement_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KUBO_FAM2_NON_CONVERGENCE_STRETCH_ATTEMPT_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_kubo_fam2_non_convergence_stretch.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "linear_response_second_order_kubo_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -46714,6 +46689,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 23,
-  "total_pending": 1325
+  "ready_count": 22,
+  "total_pending": 1324
 }

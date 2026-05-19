@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 359 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1348 |
-| audit_in_progress | 2 |
+| unaudited | 1347 |
+| audit_in_progress | 3 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -49,14 +49,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 18 |
+| `audit_in_progress` | 19 |
 | `audited_clean` | 573 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1567 |
+| `unaudited` | 1566 |
 
 | claim_type | count |
 |---|---:|
@@ -123,6 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | D | - |
+| `decoherence_action_independence_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |

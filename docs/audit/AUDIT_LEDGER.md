@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 135 |
-| **retained_bounded** | 355 |
+| **retained_bounded** | 356 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1337 |
+| unaudited | 1336 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 576 |
+| `audited_clean` | 577 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1556 |
+| `unaudited` | 1555 |
 
 | claim_type | count |
 |---|---:|
@@ -195,6 +195,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1885,6 +1886,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The runner enforces the AWAY-window sets below as explicit assert checks, and the observed windows are then expressed as finite-volume ratios lambda=L/n and delta=3/n.  _(class `C`)_
 - **chain closes:** True — The cached runner computes and asserts the coherent, classical, and phase-kill AWAY-window sets used in the note. The lambda and delta columns are direct arithmetic from the asserted finite table, while the note explicitly withholds a universal recurrence law.
 - **rationale:** The bounded finite-volume recurrence diagnostic closes from the runner-backed AWAY-window sets and arithmetic ratios. The note's qualitative wrap/recurrence reading is limited to clustering observations on the audited grid and explicitly states that no closed-form recurrence-scale law for arbitrary (n,L) is derived. Residual risk is only the out-of-scope predictive law, not the finite table.
+- **auditor confidence:** high
+
+### `chiral_layer_oscillation_2026-04-09`
+
+- **Note:** [`CHIRAL_LAYER_OSCILLATION_2026-04-09.md`](../../docs/CHIRAL_LAYER_OSCILLATION_2026-04-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-slice numerical audit of the 3+1D chiral-walk shell-difference proxy at n=15, theta0=0.3, strength=5e-4, mass offset +3, periodic boundary conditions, and N in {12,14,16,18,20}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-chiral_layer_oscillation-042`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At n=15, theta0=0.3, strength 5e-4, mass offset +3, and periodic boundary conditions, the frozen runner observes both positive and negative shell-difference gravity-proxy signs across N = 12, 14, 16, 18, 20.  _(class `C`)_
+- **chain closes:** True — The provided runner source computes unperturbed and perturbed evolutions, forms rho1-rho0, sums toward and away shells, and verifies that the resulting signals include both signs. The cached run matches the note's stated finite operating slice.
+- **rationale:** The load-bearing claim is a bounded first-principles numerical computation over the stated chiral-walk update rule, not a definition, renaming, or tuned external comparator. The runner does not hard-code the asserted per-N signs; it computes them from evolve/probability_density and checks sign diversity across the N sweep. The note explicitly limits the mechanism hypothesis and universal-gravity implication, so the audited conclusion is only the finite sign-noninvariance diagnostic.
 - **auditor confidence:** high
 
 ### `chiral_split_mass_gravity_note`

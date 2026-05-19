@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 364 |
+| **retained_bounded** | 365 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1315 |
-| audit_in_progress | 19 |
+| audit_in_progress | 18 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 19 |
-| `audited_clean` | 588 |
+| `audit_in_progress` | 18 |
+| `audited_clean` | 589 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `poisson_self_gravity_born_audit_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `wave_static_fixed_beam_boundary_sensitivity_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
@@ -519,6 +518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `poisson_self_gravity_born_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -7684,6 +7684,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner solves the stated discrete Poisson problem and reproduces the numerical branch checks, but the Poisson equation, source map, boundary/normalization choices, and longitudinal 1/(dx+0.1) factor are inputs. The restricted packet does not derive those choices from retained primitives or close the physical identification of the resulting field as gravity.
 - **rationale:** Issue: the load-bearing step defines the transverse field by imposing a Poisson equation rather than deriving the field law from the framework. Why this blocks: the note's stronger statement that the transverse field is no longer an input needs a theorem deriving the PDE, source, boundary condition, normalization, and physical gravity readout. Repair target: supply a retained bridge theorem deriving the per-layer Poisson equation and the longitudinal law from retained primitives, then rerun the same harness without those choices stipulated. Claim boundary until fixed: numerical evidence for a manually specified Poisson branch with exact null behavior, machine-precision Born cancellation, and near-linear F~M in the tested sweep.
 - **auditor confidence:** high
+
+### `poisson_self_gravity_born_audit_note`
+
+- **Note:** [`POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md`](../../docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrow numerical audit on the provided h = 0.25 three-slit lattice runner: exact zero-coupling reduction and step-local frozen-snapshot Born cancellation; nonzero-coupling end-to-end Born is excluded from retained scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-152136-02e6f5c5-poisson_self_gravity_bor-006`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The bounded retained conclusion is that the frozen field snapshot remains Born-clean to machine precision and the exact epsilon = 0 reduction survives exactly, while the nonzero-coupling end-to-end row is diagnostic only.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the lattice, fields, propagation, and Sorkin I3/P values directly rather than printing or importing the contested result. The unconverged end-to-end loop value is explicitly demoted, so it is not needed for the retained bounded claim.
+- **rationale:** Within the restricted packet, the retained claim closes: the zero-epsilon reduction and frozen-snapshot Born check are computed from the included runner and helper source. The code does not hard-code the target Born value or rely on an external comparator. The runner also shows the nonzero-coupling end-to-end row is not converged, but the note no longer uses that row as a theorem. The cited authority is supplied as retained_bounded, and no open dependency is load-bearing for the narrowed claim.
+- **auditor confidence:** medium
 
 ### `poisson_self_gravity_loop_note`
 

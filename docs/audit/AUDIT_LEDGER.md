@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 111 |
-| **retained_no_go** | 135 |
+| **retained_no_go** | 136 |
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1329 |
+| unaudited | 1328 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 582 |
+| `audited_clean` | 583 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1548 |
+| `unaudited` | 1547 |
 
 | claim_type | count |
 |---|---:|
@@ -148,6 +148,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_uniqueness_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `action_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | C | - |
+| `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1010,6 +1011,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The included runner source genuinely constructs the lattice, field, slit geometry, propagation, Born diagnostic, TOWARD counts, and log-log mass-scaling fit rather than printing expected constants. Its completed output matches the note's load-bearing table for the scoped tested actions.
 - **rationale:** Within the stated fixed-family and tested-action scope, the claim is supported by a first-principles numerical computation from the model operators and fixed parameters. The cited companion sweep is retained_bounded and independently supports the same F~M = p pattern for S = L(1-f^p) on a closely matched fixed family. The clean result should not be read as proving arbitrary g(f) universality or architecture-independent tail laws.
 - **auditor confidence:** high
+
+### `adaptive_coevolving_geometry_no_go`
+
+- **Note:** [`ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md`](../../docs/ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the bounded claim that the provided distinguishability-weighted node-placement scout did not produce a robust weak-field gravity signal across the reported alpha sweep.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-adaptive_coevolving_geom-052`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The quick check swept placement strength alpha and found mixed, seed-sensitive far-field gravity-shift signs rather than a stable retained gravity signal.  _(class `C`)_
+- **chain closes:** True — The runner and helper source instantiate stochastic DAG generation, distinguishability-weighted placement, propagation, and the reported weak-field observables without hard-coded expected outcomes. The completed cache supports the note's negative conclusion that the tested scout is noisy and not a retained positive.
+- **rationale:** The load-bearing step is a genuine computed scout result, not a definition, renaming, external comparator, or tuned numerical match. The primary runner's load-bearing path calls the included helper for the uniform DAG baseline and then computes placement families, gravity shifts, purity, decoherence, and effective gaps from generated graphs. The runner output is consistent with the source note's bounded no-go: placement alpha does not stabilize the gravity signal and does not justify a retained adaptive-geometry positive. The conclusion is narrow and matches the evidence actually supplied.
+- **auditor confidence:** medium
 
 ### `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`
 

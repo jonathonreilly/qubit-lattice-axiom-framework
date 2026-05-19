@@ -1,0 +1,28 @@
+slug: audited-conditional-repair-2026-05-18
+launched_at: 2026-05-18T22:50:00Z
+runtime_budget_hours: 12
+mode: campaign
+target_status: audited_clean
+fallback_status: bounded_retained
+current_cycle: 0
+current_block: null
+current_route: pending
+opportunity_queue_size: 20
+tier_a_remaining: 20
+tier_b_candidates: 3
+review_pr_count: 0
+review_pr_backlog_count: 0
+deep_block_completed: false
+no_go_count: 0
+demotion_count: 0
+stretch_attempts: 0
+stuck_fan_out_synthesis: false
+active_branch: claude/vigilant-shirley-0d8f77
+worktree: /Users/jonreilly/Projects/Physics/.claude/worktrees/vigilant-shirley-0d8f77
+last_checkpoint_at: 2026-05-18T22:50:00Z
+next_exact_action: |
+  Read MIRROR_2D_GRAVITY_LAW_NOTE.md fully, identify what
+  the 2026-05-17 audit actually needs for closure beyond
+  the helper-source preamble; execute the minimal repair
+  end-to-end as the first cycle's pattern reference.
+stop_condition: pending_runtime

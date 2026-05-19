@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 19 |
-| `audited_clean` | 572 |
+| `audit_in_progress` | 18 |
+| `audited_clean` | 573 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | C | - |
-| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -384,6 +383,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_two_orbit_dimension_factorization_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -5379,6 +5379,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using r0 = u + v + w, r1 = 2u - v - w, and r2 = sqrt(3)(v - w), the note asserts 2 r0^2 - r1^2 - r2^2 = 2 [4(uv + uw + vw) - (u^2 + v^2 + w^2)].  _(class `A`)_
 - **chain closes:** True — The polynomial pullback and the equivalence to the standard sqrt(m) Koide form follow by direct algebra from the displayed map. The physical derivation of the Gamma orbit slots, the value law for (u,v,w), and the dynamical reason for the selector are explicitly outside this audited scope.
 - **rationale:** The load-bearing result is an exact algebraic identity, and the runner verifies the same symbolic expansion plus the algebraic equivalence to Q = 2/3. The two numeric checks only witness the usual charged-lepton Koide proximity and are not needed for theorem closure. This clean verdict covers the selector pullback under the stated map only; it does not audit or close the Gamma orbit value law or dynamical selector derivation.
+- **auditor confidence:** high
+
+### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-koide_kappa_block_total_-011`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The Frobenius expansion gives E_+(H)=3a^2 and E_perp(H)=6|b|^2, so the equal-weight constrained log extremum E_+=E_perp is equivalent to a^2=2|b|^2, while the Herm_circ(d) real-irrep counts are (1, floor((d-1)/2), 1_{d even}).  _(class `A`)_
+- **chain closes:** True — The conclusions follow from direct finite-dimensional matrix algebra, trace orthogonality, a two-variable Lagrange multiplier calculation, and elementary cyclic real-irrep counting. No cited authority, fitted input, physical identification, or external comparator is load-bearing.
+- **rationale:** The source note is explicitly scoped to standalone algebra and does not claim the equal-weight functional is the canonical physical selector. The runner source genuinely constructs the matrices and symbolic variables, checks the Frobenius identities and Lagrange equations with sympy, and enumerates the stated multiplicity patterns; it does not import helper modules, external values, or a contested premise. Because there is no upstream parent dependency in the load-bearing chain, this is not merely algebraic decoration of a cited theorem.
 - **auditor confidence:** high
 
 ### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`

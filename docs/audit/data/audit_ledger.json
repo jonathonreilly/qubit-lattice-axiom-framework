@@ -1,10 +1,5 @@
 {
-  "last_invalidations": [
-    {
-      "claim_id": "gate_b_operator_cauchy_note_2026-05-10",
-      "reason": "dep_weakened:gate_b_connectivity_tolerance_note:retained_bounded->audit_in_progress"
-    }
-  ],
+  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -126170,33 +126165,33 @@
       "verdict_rationale": null
     },
     "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": {
-      "audit_date": "2026-05-11T17:13:54.979606+00:00",
+      "audit_date": "2026-05-19T14:30:56.708642+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_claim_scope": {},
         "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 0.0,
+        "load_bearing_score": 13.951,
         "runner_hash": "3c623146ff46d184649baddd01f34418e8d2b425958fc363ef2e2d561f64ba3e",
-        "transitive_descendants": 0
+        "transitive_descendants": 989
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-audit-loop",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-koide_kappa_block_total_-011",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The proof is finite matrix algebra and elementary cyclic-representation counting over explicitly declared symbols. The note excludes the selection of the equal-weight functional as canonical and all charged-lepton/operator-side physical identifications, so those bridges are not needed for this scoped theorem.",
+      "chain_closure_explanation": "The conclusions follow from direct finite-dimensional matrix algebra, trace orthogonality, a two-variable Lagrange multiplier calculation, and elementary cyclic real-irrep counting. No cited authority, fitted input, physical identification, or external comparator is load-bearing.",
       "claim_id": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Zero-dependency Hermitian-circulant algebra theorem: on Herm_circ(3), pi_+ and pi_perp decompose H=aI+bC+bbar C^2 orthogonally with real image dimensions 1 and 2, E_+=3a^2 and E_perp=6|b|^2, the stated equal-weight log functional at fixed E_++E_perp has the unique interior maximum E_+=E_perp (kappa=2), and the multiplicity pattern (1,(1,),0) is unique at d=3 among d in {2,3,4,5,6}. No canonical weighting or physical Koide selection is audited.",
+      "claim_scope": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-19T11:19:08.820828+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-19T14:30:56.708642+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -126211,25 +126206,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T14:30:56.708642+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-koide_kappa_block_total_-011",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 8,
       "effective_status": "retained",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "retained",
       "load_bearing_score": 13.951,
-      "load_bearing_step": "For H=aI+bC+bbar C^2, the canonical projectors give E_+(H)=3a^2 and E_perp(H)=6|b|^2; the stated equal-weight functional log E_+ + log E_perp at fixed total has E_+=E_perp, equivalently a^2=2|b|^2 and kappa=2.",
+      "load_bearing_step": "The Frobenius expansion gives E_+(H)=3a^2 and E_perp(H)=6|b|^2, so the equal-weight constrained log extremum E_+=E_perp is equivalent to a^2=2|b|^2, while the Herm_circ(d) real-irrep counts are (1, floor((d-1)/2), 1_{d even}).",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "855be045ef15718e89dc5a079ed8aaa82c14b8ca893f30add6af8735941d282f",
       "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-audit-loop, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "Second auditor may re-check that the T4 phrase 'Z_d-conjugation action' is understood as the stated character-pair real-irrep count; it is not load-bearing on any physical bridge here.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "runner_check_breakdown": {
@@ -126242,7 +126248,7 @@
       "runner_path": "scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py",
       "title": "Koide kappa Block-Total Frobenius Algebraic Narrow Theorem",
       "transitive_descendants": 989,
-      "verdict_rationale": "The algebraic identities close exactly: the projectors, Frobenius block totals, equal-weight constrained extremum, Hessian sign, and finite d=2..6 multiplicity table are all verified symbolically. The live runner reports PASS=32 and FAIL=0. Residual risk is downstream scope drift: this audit does not select the equal-weight functional as the retained physical principle, does not decide F1 versus F3 weighting, and does not establish a charged-lepton kappa gate."
+      "verdict_rationale": "The source note is explicitly scoped to standalone algebra and does not claim the equal-weight functional is the canonical physical selector. The runner source genuinely constructs the matrices and symbolic variables, checks the Frobenius identities and Lagrange equations with sympy, and enumerates the stated multiplicity patterns; it does not import helper modules, external values, or a contested premise. Because there is no upstream parent dependency in the load-bearing chain, this is not merely algebraic decoration of a cited theorem."
     },
     "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19": {
       "audit_date": null,

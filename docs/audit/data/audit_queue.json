@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 881,
     "high": 27,
-    "leaf": 330,
+    "leaf": 329,
     "medium": 107
   },
   "cycle_break_target_count": 297,
@@ -37875,30 +37875,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "dirac_observable_panel_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dirac_core_card_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DIRAC_OBSERVABLE_PANEL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dirac_walk_3plus1d_observable_panel.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dispersion_high_p_tiebreaker_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -47222,6 +47198,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 38,
-  "total_pending": 1345
+  "ready_count": 37,
+  "total_pending": 1344
 }

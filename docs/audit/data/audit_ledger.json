@@ -44503,24 +44503,41 @@
       "verdict_rationale": "The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim."
     },
     "dirac_observable_panel_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:09:11.064677+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "dirac_core_card_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "dirac_core_card_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dirac_core_card_note": "retained_bounded"
+        },
+        "deps": [
+          "dirac_core_card_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a83db713cce4556d432e324314a578e555c744898cc7b5dc56028d80e0ce834e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-dirac_observable_panel_n-056",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The provided primary runner source shows real panel computation and the cached stdout matches the note, but the runner imports load-bearing primitives from frontier_dirac_walk_3plus1d_v3 without that helper source being provided. The missing step is packet-level verification of the imported Dirac evolution, probability, gamma, and distance primitives.",
       "claim_id": "dirac_observable_panel_note",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded methodological claim that the observable panel is reproducible on the stated default sweep and records a readout-dependent ALL/MIX split, not a stable gravity-sign theorem.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-19T15:09:11.064677+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -44528,19 +44545,19 @@
         "dirac_core_card_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The panel runner was executed on the default sweep and produced populated centroid, peak, first-arrival, early accumulation, current, and shell readouts showing an ALL/MIX sign split rather than a sign-locked gravity claim.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "815ee6c174097f2152ac6c47c471a3adf893aa2649ef0ffc57d144328a57b375",
       "note_path": "docs/DIRAC_OBSERVABLE_PANEL_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue include scripts/frontier_dirac_walk_3plus1d_v3.py or the transitive helper source bundle, then re-check that step_zyx, prob, gamma0/gamma3, and min_image_dist are genuine framework computations rather than hard-coded panel premises.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -44664,14 +44681,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/frontier_dirac_walk_3plus1d_observable_panel.py",
       "title": "Dirac Observable Panel Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note is careful: it asserts a bounded methodological panel and a registered run, while explicitly denying a sign-locked gravity conclusion. The cached stdout supports the stated table, agreement counts, and ALL/MIX split, and the visible runner source computes the displayed quantities rather than merely printing constants. However, the load-bearing evolution and lattice primitives are imported from frontier_dirac_walk_3plus1d_v3, whose source is absent despite being needed to verify the computation path."
     },
     "dirac_source_smoothing_note": {
       "audit_date": "2026-05-10T19:24:26.377861+00:00",

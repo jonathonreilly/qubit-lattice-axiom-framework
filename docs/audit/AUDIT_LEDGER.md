@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 111 |
 | **retained_no_go** | 135 |
 | **retained_bounded** | 355 |
-| _retained_pending_chain_ | 6 |
+| _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1338 |
+| unaudited | 1337 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 575 |
+| `audited_clean` | 576 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1557 |
+| `unaudited` | 1556 |
 
 | claim_type | count |
 |---|---:|
@@ -74,7 +74,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 203 |
 | `leaf` | 879 |
 
-- **Retained pending chain closure:** 6
+- **Retained pending chain closure:** 7
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -212,6 +212,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `closure_t2_m1_m2_distinguisher_note_2026-05-10_t2m1m2` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2245,6 +2246,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `MINIMAL_AXIOMS_2026-04-11.md`
   - `CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`
+- **auditor confidence:** high
+
+### `complex_selectivity_compare_note`
+
+- **Note:** [`COMPLEX_SELECTIVITY_COMPARE_NOTE.md`](../../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Narrowed bounded selectivity comparison over the supplied retained one-hop authorities, excluding the original grown-basin signed-source/F~M half-row that remains route history.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:minimal_axioms_2026-05-03`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-complex_selectivity_comp-041`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The supported family slices show signed-source transfer across multiple retained bounded families, while complex-action support is confined to narrow anchor rows or diagnosed boundary failures.  _(class `B`)_
+- **chain closes:** True — The supplied authorities support the narrowed comparison: alt, third, and fourth families retain signed-source behavior; the original and second-family complex-action positives are narrow; and the alt/second boundary notes support complex-action selectivity. The original grown-basin signed-source half-row is explicitly out of scope for this re-audit.
+- **rationale:** The runner is a hard-coded comparison renderer, so it does not independently compute the physics and the load-bearing step is class B cross-note verification. Within the narrowed claim scope, the cited authorities are retained-grade for the entries that actually carry the comparison, including the retained no-go alt complex failure. The note's older full-table wording remains potentially confusing, but its 2026-05-18 narrowing excludes the only unsupported signed-source half-row from the audited claim.
 - **auditor confidence:** high
 
 ### `complex_selectivity_predictor_note`

@@ -69,6 +69,24 @@ Why does signed-source transfer survive on multiple independent families while c
 | Third grown family | retained bounded basin positive | charge exponent `0.999842` | not retained on this slice | signed-source basin survives in the interior only |
 | Fourth family quadrant | retained narrow basin | near-linear charge scaling | not retained on this slice | fresh family exists, but remains sign-law only |
 
+**Narrowed bounded selectivity split (2026-05-18 audit-conditional repair).** Per
+the 2026-05-17 audit verdict, the bounded selectivity comparison narrows to the
+currently-supplied one-hop retained authorities. The single piece that is
+**not** supported as a one-hop ledger dependency is the **Original grown basin
+signed-source / `F~M = 1.000` (retained-basin) side** of the "Original grown
+basin" row above, which depends on the archived
+`GROWN_TRANSFER_BASIN_NOTE.md` (under `archive_unlanded/`) and is imported only
+through this source note. That signed-source half-row is **out-of-scope** for
+the narrowed bounded split and is preserved in the §Comparison table only as
+route history. The eight supported entries — second-family complex,
+alt-family signed-source, third-family signed-source, fourth-family
+signed-source, **original complex companion** (the complex-action half of the
+"Original grown basin" row, via `CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`),
+alt F~M transfer (`ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md`), alt complex
+failure (`ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md`), and second-family
+boundary (`SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md`) — carry the narrowed
+selectivity split. Re-audit applies to the narrowed split only.
+
 ## Safe Read
 
 - signed-source transfer is the portable feature: exact zero / neutral controls survive on several distinct structured families
@@ -138,6 +156,26 @@ listed family slices, not a universal family theorem; until the
 four unwired inputs land as one-hop edges, the headline reads as
 a **partial bounded comparison** rather than the full selectivity
 split.
+
+## 2026-05-18 audit-conditional repair: narrowed comparison to currently-supplied retained authorities
+
+Per the 2026-05-17 audit verdict, the bounded selectivity split is supported
+by 8 currently-supplied one-hop authorities (second-family, alt-family,
+third-family, fourth-family, original complex companion, alt F~M, alt complex
+failure, second-family boundary). The 9th entry — the **original grown-basin
+signed-source / `F~M = 1.000` retained-basin row** — is referenced only
+through this source note (importing the archived `GROWN_TRANSFER_BASIN_NOTE.md`
+under `archive_unlanded/`), not as a one-hop ledger dependency. Per the audit's
+explicitly offered repair option (`missing_dependency_edge - ... narrow the
+comparison to the currently supplied retained authorities, then re-audit the
+bounded selectivity split`), this revision narrows the bounded comparison to
+the 8 supported entries. The grown-basin signed-source / F~M entry is queued
+as out-of-scope follow-up. Route history is preserved: the original
+§Comparison table row remains visible, and the unwired authority remains
+listed in the "Citation chain and audit-stated repair path (2026-05-10)" §
+table and in the §"Audit dependency repair links" list below. This edit does
+not promote audit status, modify the four wired one-hop retained authorities,
+or hand-author audit JSON.
 
 ## Audit dependency repair links
 

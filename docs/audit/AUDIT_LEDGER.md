@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 74 |
+| ~~audited_conditional~~ | 75 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 587 |
-| `audited_conditional` | 74 |
+| `audited_conditional` | 75 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1536 |
+| `unaudited` | 1535 |
 
 | claim_type | count |
 |---|---:|
@@ -800,6 +800,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
@@ -10979,6 +10980,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At H = 0.35 with fixed beam geometry, the moving-source exact static comparator remains field-box sensitive, but the 9.0 -> 12.0 large-box branch shows low rel_MS and smaller dS movement without meeting the strict stability bar.  _(class `C`)_
 - **chain closes:** True — The live runner reproduces both source-note comparisons: field PW 6.0 -> 9.0 and 9.0 -> 12.0. The note keeps the conclusion mixed and bounded, explicitly withholding continuum-quality promotion.
 - **rationale:** The note accurately preserves both sides of the runner output. The 6.0 -> 9.0 comparison is still materially box-dependent, with dS move 20.84% and rel_MS move 86.21%, while dM is stable; the 9.0 -> 12.0 comparison improves to dS move 5.52% and rel_MS 3.18% -> 2.42% but still does not pass a strict stability criterion. This closes only the stated mixed diagnostic: no boundary-stable moving-source comparator is retained yet, but the medium-H large-box branch remains a plausible stabilization candidate.
+- **auditor confidence:** high
+
+### `wave_static_matrixfree_shared_geometry_compare_note`
+
+- **Note:** [`WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md`](../../docs/WAVE_STATIC_MATRIXFREE_SHARED_GEOMETRY_COMPARE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded finite-table engine-equivalence claim for direct vs matrix-free static solves on the stated shared geometries, not a formal drop-in-replacement theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-wave_static_matrixfree_s-066`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The direct and matrix-free static solvers agree extremely closely on the finite static field and propagated beam response at the two shared tested H values, while the result is explicitly not tied to a residual-based identity proof.  _(class `C`)_
+- **chain closes:** False — The packet includes a completed default runner for H=0.35 that supports the narrowed close-agreement claim there, but the H=0.25 frozen log is cited only in the note and is not provided as runner output. The runner source also imports load-bearing helper modules whose source is absent from the restricted packet, so the computation cannot be fully verified from the supplied code.
+- **rationale:** The narrowed claim avoids the earlier overbroad drop-in-replacement theorem and the supplied stdout supports close finite-table agreement for H=0.35. However, the note's retained two-row conclusion also depends on the H=0.25 frozen output, which is not included as a completed runner artifact in the packet. In addition, the primary runner's load-bearing path calls imported helpers such as wave_retardation_continuum_limit and wave_static_direct_probe, but their source is not provided despite being needed to verify the computation rather than just the printed stdout.
 - **auditor confidence:** high
 
 ### `wave_static_single_source_compare_note`

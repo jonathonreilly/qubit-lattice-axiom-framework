@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 116 |
-| **retained_no_go** | 139 |
-| **retained_bounded** | 359 |
+| **retained_no_go** | 138 |
+| **retained_bounded** | 358 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1347 |
-| audit_in_progress | 3 |
+| unaudited | 1348 |
+| audit_in_progress | 4 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 19 |
-| `audited_clean` | 573 |
+| `audited_clean` | 572 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1566 |
+| `unaudited` | 1567 |
 
 | claim_type | count |
 |---|---:|
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | D | - |
 | `decoherence_action_independence_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
-| `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -305,7 +305,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_grown_trapping_transport_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
-| `gate_b_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_poisson_self_gravity_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gauge_scalar_temporal_completion_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -3916,19 +3915,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner encodes and evaluates the narrowed numerical experiment, but the note does not close the bridge from those checks to the stronger interpretation that the old architecture genuinely transfers; the retained grown-row authority and transfer success criterion are implicit rather than derived in the provided source packet.
 - **rationale:** Issue: the load-bearing step turns a seed-0 numerical sanity replay into an architecture-transfer positive without a retained theorem defining the transfer criterion or deriving the grown-row/source/readout bridge from the provided inputs. Why this blocks: the frozen outputs may show nonzero sign-linear response under the script's selected construction, but they do not by themselves prove that the old non-label architecture genuinely applies rather than passing a chosen bounded diagnostic. Repair target: cite or derive the retained grown-row construction and an explicit transfer theorem whose runner checks pass/fail criteria rather than only printing replay values. Claim boundary until fixed: the note may safely report a bounded seed-0 computational sanity check for the specified geometry-sector candidate and fixed source law.
 - **auditor confidence:** medium
-
-### `gate_b_operator_cauchy_note_2026-05-10`
-
-- **Note:** [`GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md`](../../docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Bounded no-go: the operator-Cauchy bridge fails on the tested Gate B ordered-resolution and jittered-ensemble axes, and is method-mismatched for the restricted finite-box strong-field closure theorem.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-audit-loop-019e1432-2bea-7da1-8c44-7a8b24cdd5f4`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Both tested Gate B Cauchy gates fail: resolution refinement has R^2=0.5998 and non-monotone increments, ensemble refinement has R^2=0.1798 and non-monotone increments, while the strong-field row is a finite-box algebraic theorem with no operator-Cauchy continuum axis.  _(class `C`)_
-- **chain closes:** True — The runner source actually constructs the Gate B harness variants, computes the 15-dimensional observables, fits the Cauchy increments, and records both tested gates as failed under explicit thresholds. The restricted strong-field dependency supports the finite-box algebraic scope, so the method-mismatch conclusion follows without broader publication framing.
-- **rationale:** The audited claim is deliberately bounded to the tested resolution/ensemble axes and to method status for the finite-box strong-field theorem. Fresh stdout matches the source note numerics and the runner does not merely print constants; it computes propagation, observable vectors, L2 increments, fits, monotonicity checks, and exits cleanly only when both Cauchy gates fail. The strong-field portion is not a claim that the theorem fails, only that operator-Cauchy is the wrong bridge method for a fixed finite-box algebraic closure, which is supported by the cited dependency.
-- **auditor confidence:** high
 
 ### `gate_b_poisson_self_gravity_note`
 

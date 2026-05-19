@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 135 |
-| **retained_bounded** | 357 |
+| **retained_bounded** | 358 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1334 |
+| unaudited | 1333 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 578 |
+| `audited_clean` | 579 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1553 |
+| `unaudited` | 1552 |
 
 | claim_type | count |
 |---|---:|
@@ -408,6 +408,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -5772,6 +5773,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.  _(class `A`)_
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
+- **auditor confidence:** high
+
+### `kubo_continuum_limit_families_note`
+
+- **Note:** [`KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md`](../../docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the specified static grown-DAG Kubo harness, seed 0, families Fam1/Fam2/Fam3, and refinements H = 0.50, 0.35, 0.25, the cached runner computes Fam1/Fam2/Fam3 fine-H kubo_true values +5.986043, +7.088251, +5.954676, with last-step drifts 0.2%, 12.2%, and 6.4%, and max family deviation 11.7%.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-kubo_continuum_limit_fam-046`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At H=0.25, Fam1 and Fam3 agree to better than 1% near +5.97, while Fam2 is a non-converged outlier and the all-family max deviation is 11.7%, so family portability cannot be claimed for all three families.  _(class `C`)_
+- **chain closes:** True — The runner source instantiates the three family parameters, grows each DAG, calls the in-packet Kubo propagation helpers, and computes the stated convergence and family-portability metrics. The conclusion is bounded to this finite harness and does not require an H->0 theorem.
+- **rationale:** The load-bearing result is a first-principles numerical computation within the supplied lattice/propagator harness, not a definition, renaming, or imported external fit. The cached stdout matches the note's tables and the runner code performs the stated sweep rather than printing hard-coded expected values. The cited Fam1 continuum note is retained_bounded, and this note's own final wording correctly narrows the claim to the finite H=0.25 family snapshot plus the Fam1/Fam3 subset consistency.
 - **auditor confidence:** high
 
 ### `kubo_continuum_limit_note`

@@ -135440,24 +135440,41 @@
       "verdict_rationale": null
     },
     "kubo_continuum_limit_families_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T14:56:02.101970+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "kubo_continuum_limit_note": "For the specified Fam1 grown-DAG static 1/r-field harness at H = 0.50, 0.35, 0.25, the cached runner computes kubo_true = 7.061910, 5.972756, 5.986043, with 0.2% last-step drift under the runner's 5% criterion."
+        },
+        "dep_claim_type": {
+          "kubo_continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kubo_continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "kubo_continuum_limit_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "039cb0a756071447cf40eec5a16364ae709d14aab24cd89b48e51d991dfee1ac",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-kubo_continuum_limit_fam-046",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source instantiates the three family parameters, grows each DAG, calls the in-packet Kubo propagation helpers, and computes the stated convergence and family-portability metrics. The conclusion is bounded to this finite harness and does not require an H->0 theorem.",
       "claim_id": "kubo_continuum_limit_families_note",
-      "claim_scope": null,
+      "claim_scope": "For the specified static grown-DAG Kubo harness, seed 0, families Fam1/Fam2/Fam3, and refinements H = 0.50, 0.35, 0.25, the cached runner computes Fam1/Fam2/Fam3 fine-H kubo_true values +5.986043, +7.088251, +5.954676, with last-step drifts 0.2%, 12.2%, and 6.4%, and max family deviation 11.7%.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-19T14:56:02.101970+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -135465,19 +135482,19 @@
         "kubo_continuum_limit_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 2.585,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At H=0.25, Fam1 and Fam3 agree to better than 1% near +5.97, while Fam2 is a non-converged outlier and the all-family max deviation is 11.7%, so family portability cannot be claimed for all three families.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "e5a227669318d89239faaa496d79664967950360026074e66f665208d18d2540",
       "note_path": "docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the inlined kubo_continuum_limit.py helper definitions match the exact helper used for runner_sha256 039cb0a756071447cf40eec5a16364ae709d14aab24cd89b48e51d991dfee1ac.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -135609,14 +135626,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/kubo_continuum_limit_families.py",
       "title": "Kubo Continuum Limit \u2014 Family Portability (Partial, Later Narrowed)",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing result is a first-principles numerical computation within the supplied lattice/propagator harness, not a definition, renaming, or imported external fit. The cached stdout matches the note's tables and the runner code performs the stated sweep rather than printing hard-coded expected values. The cited Fam1 continuum note is retained_bounded, and this note's own final wording correctly narrows the claim to the finite H=0.25 family snapshot plus the Fam1/Fam3 subset consistency."
     },
     "kubo_continuum_limit_families_note_hostile_audit_findings_note_2026-05-17": {
       "audit_date": null,

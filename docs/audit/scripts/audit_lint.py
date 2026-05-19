@@ -90,6 +90,20 @@ ALLOWED_EFFECTIVE_STATUSES = {
 ALLOWED_INDEPENDENCE = {"weak", "fresh_context", "cross_family", "strong", "external", "judicial_review", None}
 DEPRECATED_LEDGER_FIELDS = {"current_status", "current_status_raw"}
 
+# Vocabulary-drift status, orthogonal to audit_status. See
+# docs/repo/VOCABULARY_HYGIENE_DESIGN.md and
+# docs/repo/controlled_vocabulary.yaml. prose_status records whether the
+# source note's vocabulary is compliant; it does NOT factor into
+# effective_status (physics ≠ prose orthogonality invariant).
+ALLOWED_PROSE_STATUS = {
+    "clean",
+    "auto_corrected",
+    "needs_human_vocab_decision",
+    "not_evaluated_pre_vocab_lint",
+    "queue_backpressure_exceeded",
+    None,  # legacy rows pre-Cleanup-1 backfill
+}
+
 # Repair classes that audited_conditional rows must prefix in
 # notes_for_re_audit_if_any (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md).
 ALLOWED_REPAIR_CLASSES = {
@@ -250,6 +264,29 @@ def main() -> int:
             )
         if ind not in ALLOWED_INDEPENDENCE:
             errors.append(f"{cid}: independence={ind!r} not in allowed set")
+
+        # Vocabulary-drift status (orthogonal to audit_status). Pre-Cleanup-1
+        # rows may lack the field entirely; backfill_prose_status.py sets
+        # them to not_evaluated_pre_vocab_lint. After backfill, every row
+        # carries a value.
+        if "prose_status" in row:
+            ps = row["prose_status"]
+            if ps not in ALLOWED_PROSE_STATUS:
+                errors.append(
+                    f"{cid}: prose_status={ps!r} not in {sorted(s for s in ALLOWED_PROSE_STATUS if s is not None)}"
+                )
+            pc = row.get("prose_corrections")
+            if pc is not None and not isinstance(pc, list):
+                errors.append(
+                    f"{cid}: prose_corrections must be a list of "
+                    "{rule_id, before, after} dicts (got "
+                    f"{type(pc).__name__})"
+                )
+        else:
+            add_notice(
+                "prose_status_backfill_pending",
+                f"{cid}: prose_status missing; run backfill_prose_status.py"
+            )
 
         # Repair-class enforcement on audited_conditional rows
         # (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md and README.md).

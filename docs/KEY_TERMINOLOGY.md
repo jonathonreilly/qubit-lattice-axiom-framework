@@ -42,7 +42,7 @@ Every vocab / policy / process doc in the repo references back here.
 - **auditor** — agent / human / session that performed the audit. Must not equal `author`. → [docs/audit/FRESH_LOOK_REQUIREMENTS.md](audit/FRESH_LOOK_REQUIREMENTS.md)
 - **auditor_family** — model family of the auditor (e.g. `codex-gpt-5.6`, `claude-opus-4.x`, `human`). Used to enforce cross-family independence. → [docs/audit/FRESH_LOOK_REQUIREMENTS.md](audit/FRESH_LOOK_REQUIREMENTS.md)
 - **author** — agent / human / session that produced the source note. → [docs/audit/FRESH_LOOK_REQUIREMENTS.md](audit/FRESH_LOOK_REQUIREMENTS.md)
-- **auto_corrected** — planned `prose_status` value after Cleanup-1: vocabulary drift was mechanically rewritten by `vocab_lint --fix` during the loop. Recorded in `prose_corrections` for audit trail once that schema exists. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
+- **auto_corrected** — `prose_status` value: vocabulary drift was mechanically rewritten by `vocab_lint --fix` during the loop. Recorded in `prose_corrections` for audit trail. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 
 ## B
 
@@ -55,7 +55,7 @@ Every vocab / policy / process doc in the repo references back here.
 - **(C)** — load-bearing step class: first-principles compute from the framework axioms producing a number not present in any input. The only derivation class consistent with `audited_clean` for compute steps. → [docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md](audit/AUDIT_AGENT_PROMPT_TEMPLATE.md)
 - **claim_scope** — auditor-set field: short citeable statement of exactly what was audited. Required for applied audits. → [docs/audit/README.md](audit/README.md)
 - **claim_type** — auditor-set field: one of `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`, `meta`. → [docs/audit/README.md](audit/README.md), [docs/repo/CONTROLLED_VOCABULARY.md §Audit Lane Field Vocabulary](repo/CONTROLLED_VOCABULARY.md#audit-lane-field-vocabulary)
-- **clean** — planned `prose_status` value after Cleanup-1: no vocabulary drift detected by `vocab_lint`. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
+- **clean** — `prose_status` value: no vocabulary drift detected by `vocab_lint`. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 - **closure** — evidence term: use only when the load-bearing claim is actually closed. Avoid for witness, protocol, `bounded-retained`, or `conditional / support`. → [docs/repo/CONTROLLED_VOCABULARY.md §Evidence Terms](repo/CONTROLLED_VOCABULARY.md#evidence-terms)
 - **companion** — evidence term: bounded supporting lane attached to a stronger package. → [docs/repo/CONTROLLED_VOCABULARY.md §Evidence Terms](repo/CONTROLLED_VOCABULARY.md#evidence-terms)
 - **compute_required** — repair class: closure needs a completed long run, sliced runner, cached certificate, or independent derivation. Runner timeout alone is not evidence; it is a `compute_required` blocker. → [docs/audit/README.md](audit/README.md), [docs/audit/FRESH_LOOK_REQUIREMENTS.md §Long-running runner rule](audit/FRESH_LOOK_REQUIREMENTS.md)
@@ -121,7 +121,8 @@ Every vocab / policy / process doc in the repo references back here.
 
 ## N
 
-- **needs_human_vocab_decision** — planned `prose_status` value after Cleanup-1: vocabulary drift detected but `vocab_lint` could not mechanically rewrite it (genuinely new term). Does not block physics verdict; queues for periodic vocab-extension review. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
+- **needs_human_vocab_decision** — `prose_status` value: vocabulary drift detected but `vocab_lint` could not mechanically rewrite it (genuinely new term). Does not block physics verdict; queues for periodic vocab-extension review. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
+- **not_evaluated_pre_vocab_lint** — `prose_status` value: pre-Cleanup-1 row, newly seeded row, or source-drift row not yet linted under the new rules. Seeder/backfill default; cleared when the row is next linted. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 - **no_go** — `claim_type` value: negative result that closes off otherwise-tempting alternative routes. Can earn `effective_status: retained_no_go` after clean audit. No-go verdicts require the No-Go Discipline gate (N1-N8 checks) before recording. → [docs/audit/README.md](audit/README.md), [docs/ai_methodology/skills/no-go-discipline/SKILL.md](ai_methodology/skills/no-go-discipline/SKILL.md)
 - **note_hash** — audit-ledger field: SHA of source note at time of audit. Note edits auto-reset the row to `unaudited` and require re-audit. → [docs/audit/FRESH_LOOK_REQUIREMENTS.md](audit/FRESH_LOOK_REQUIREMENTS.md)
 - **notes_for_re_audit_if_any** — audit-ledger field for `audited_conditional`. Must be prefixed with exactly one repair class (`missing_dependency_edge`, `dependency_not_retained`, `missing_bridge_theorem`, `scope_too_broad`, `runner_artifact_issue`, `compute_required`, `other`). → [docs/audit/README.md](audit/README.md)
@@ -142,10 +143,14 @@ Every vocab / policy / process doc in the repo references back here.
 - **promoted quantitative package** — claim-strength label: quantitative package strong enough for the current main-paper surface. → [docs/repo/CONTROLLED_VOCABULARY.md §Claim-Strength / Release Labels](repo/CONTROLLED_VOCABULARY.md#claim-strength--release-labels)
 - **proposed_promoted** — author-side migration value on source-note `Status` lines; awaits audit ratification before becoming `promoted` via `effective_status`. → [README.md "Audit status note"](../README.md), [docs/repo/CONTROLLED_VOCABULARY.md §Migration / Legacy Wording](repo/CONTROLLED_VOCABULARY.md#migration--legacy-wording)
 - **proposed_retained** — author-side migration value on source-note `Status` lines; awaits audit ratification before becoming `retained` via `effective_status`. → [README.md "Audit status note"](../README.md), [docs/repo/CONTROLLED_VOCABULARY.md §Migration / Legacy Wording](repo/CONTROLLED_VOCABULARY.md#migration--legacy-wording)
-- **prose_corrections** — planned audit-ledger field after Cleanup-1: list of `(rule_id, before, after)` tuples recording mechanical rewrites applied by `vocab_lint --fix` during the audit. Do not write this field before the schema migration lands. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
-- **prose_status** — planned audit-ledger field after Cleanup-1: one of `clean`, `auto_corrected`, `needs_human_vocab_decision`. Separate from `audit_status`; physics and prose verdicts never conflate. Do not write this field before the schema migration lands. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
+- **prose_corrections** — audit-ledger field: list of `(rule_id, before, after)` tuples recording mechanical rewrites applied by `vocab_lint --fix` during the audit. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
+- **prose_status** — audit-ledger field: one of `clean`, `auto_corrected`, `needs_human_vocab_decision`, `not_evaluated_pre_vocab_lint`, `queue_backpressure_exceeded`. Separate from `audit_status`; physics and prose verdicts never conflate. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 - **protocol** — evidence term: specific constructed experimental / computational setup. → [docs/repo/CONTROLLED_VOCABULARY.md §Evidence Terms](repo/CONTROLLED_VOCABULARY.md#evidence-terms)
 - **pruning** — decoration handling: removing a decoration cluster entirely when all four conditions hold (>10 members, no `(D)` checks, no load-bearing usage by non-decoration claims, no external citations). → [docs/audit/ALGEBRAIC_DECORATION_POLICY.md](audit/ALGEBRAIC_DECORATION_POLICY.md)
+
+## Q
+
+- **queue_backpressure_exceeded** — `prose_status` value: vocab-extension review queue is >50 entries deep; new unresolved terms emit this until the queue is processed. → [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 
 ## R
 
@@ -182,21 +187,20 @@ Every vocab / policy / process doc in the repo references back here.
 
 ## Adding new terms (agent pacing)
 
-After Cleanup-1 lands the linter and schema migration, routine
-vocabulary drift (legacy aliases, deprecated wording, forbidden filename
-suffixes) is **auto-corrected** by `vocab_lint --fix` running inside
-audit-loop / review-loop / physics-loop. Until then, the loops keep
-using manual vocabulary correction and must not write planned
-`prose_status` / `prose_corrections` fields.
+Routine vocabulary drift (legacy aliases, deprecated wording, forbidden
+filename suffixes) is **auto-corrected** by `vocab_lint --fix` running
+inside audit-loop / review-loop / physics-loop. Agents do not open PRs
+for routine rewrites.
 
-Once Cleanup-1 exists, genuinely new vocabulary requirements (terms
-`vocab_lint` cannot mechanically rewrite) surface as `prose_status:
+Genuinely new vocabulary requirements (terms `vocab_lint` cannot
+mechanically rewrite) surface as `prose_status:
 needs_human_vocab_decision` on the audit row. They do not block the
 physics verdict. They batch into a periodic vocab-extension review:
 either (a) accepted, with a PR against
-`docs/repo/controlled_vocabulary.yaml` and a regenerated CV.md +
-KEY_TERMINOLOGY.md, or (b) rejected, with a `--fix` sweep replacing the
-new term with the canonical form.
+[`docs/repo/controlled_vocabulary.yaml`](repo/controlled_vocabulary.yaml)
+and a regenerated CV.md + KEY_TERMINOLOGY.md (regeneration ships in
+Cleanup-1b), or (b) rejected, with a `--fix` sweep replacing the new
+term with the canonical form.
 
 See [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 for the full design.
@@ -220,8 +224,9 @@ for the full design.
 - **New repair-class names** beyond the seven listed under *repair
   class* above.
 - **Audit verdicts that conflate physics with prose.** Use
-  `audit_status` for physics now; after Cleanup-1, use `prose_status`
-  for vocabulary status.
+  `audit_status` for physics, `prose_status` for vocab. The two are
+  separate fields by construction; `prose_status` does not propagate
+  into `effective_status`.
 
 See [docs/repo/VOCABULARY_HYGIENE_DESIGN.md §Forbidden patterns](repo/VOCABULARY_HYGIENE_DESIGN.md#forbidden-patterns-after-cleanup-pr)
 for the binding list. The cleanup PR mechanically removes any

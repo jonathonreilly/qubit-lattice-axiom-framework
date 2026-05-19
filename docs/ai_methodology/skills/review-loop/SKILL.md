@@ -25,26 +25,22 @@ branch, review-loop either fixes/narrows that existing landing path and lands it
 when requested, or rejects/closes it with a clear reason. Salvage, dependency
 chain repair, audit queue regeneration, and parent re-audit gates are part of
 that same landing path, not follow-up PRs.
-It corrects status vocabulary and terminology so a PR follows repo
-conventions. After Cleanup-1 lands, this correction is mechanical:
-run `scripts/vocab_lint.py --fix` on all branch-modified files before
-any landing gate. (**Forward-looking rule:** effective once Cleanup-1
-PR lands `scripts/vocab_lint.py` and the `prose_status` schema
-migration in `apply_audit.py` / `audit_lint.py`. Until then, the
-existing manual review-vocab-fix behavior described in this skill
-continues; do not run nonexistent vocabulary tooling or write
-`prose_status` / `prose_corrections` to ledger rows — the validator
-will reject them.) Vocabulary will be canonical in
-[`docs/repo/controlled_vocabulary.yaml`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)
-(cleanup PR creates the YAML; design in
+It auto-corrects status vocabulary and terminology so a PR follows repo
+conventions by running `scripts/vocab_lint.py --fix` on all
+branch-modified files before any landing gate. Vocabulary is canonical
+in
+[`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml)
+(design in
 [`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)).
-After Cleanup-1, routine drift (legacy aliases, forbidden filename
-suffixes, deprecated wording, F-letter finding labels) is rewritten
-mechanically as part of the same review commit; this is never a
-science blocker. Genuinely new terms that `vocab_lint` cannot
-mechanically rewrite are recorded as `prose_status:
-needs_human_vocab_decision` for the periodic vocab-extension review;
-they do not block the landing. Review-loop
+Routine local drift that has a non-link-aware rewrite rule, such as legacy
+aliases and deprecated wording, is rewritten mechanically as part of the
+same review commit; this is never a science blocker. Link-aware filename
+suffix migrations and F-letter finding-label migrations are reported but
+deferred to Cleanup-2 tooling. Genuinely new terms, pending link-aware
+renames, or pending F-letter migrations that `vocab_lint` cannot
+mechanically rewrite are recorded as
+`prose_status: needs_human_vocab_decision` for the periodic
+vocab-extension review; they do not block the landing. Review-loop
 must not introduce new repo-wide axioms, new theory
 language, new retained-surface claims, or new foundational premises without
 explicit user approval. Imports are allowed for bounded theorem surfaces when
@@ -55,10 +51,10 @@ The framework baseline is physical `Cl(3)` on `Z^3`: call these the
 `physical Cl(3) local algebra` and the `Z^3 spatial substrate` on live
 science surfaces. Do not land new science under bare letter-number names
 such as `A1`, `A2`, `G1`, or `R3`; those labels are overloaded with axioms,
-assumptions, Lie types, lane stages, route codes, and branch blocks. If a
-legacy shorthand is unavoidable, define it as an alias after the explicit
-scientific name, for example `Koide Frobenius-equipartition condition
-(legacy alias: A1)`. Review-loop must not treat the framework baseline as a
+assumptions, Lie types, lane stages, route codes, and branch blocks. Use the
+explicit scientific name on live science surfaces; archival aliases belong
+only in clearly historical work-history/archive material. Review-loop must
+not treat the framework baseline as a
 new axiom, new admitted premise, regulator interpretation, or optional
 theory language. Correcting a PR back to this repo language is allowed. This
 does not promote downstream science by itself: physical-species

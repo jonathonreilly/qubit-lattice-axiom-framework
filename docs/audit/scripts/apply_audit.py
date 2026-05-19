@@ -89,6 +89,20 @@ ALLOWED_CLAIM_TYPES = {
 ALLOWED_INDEPENDENCE = {"weak", "fresh_context", "cross_family", "strong", "external", "judicial_review"}
 CLEAN_INDEPENDENCE = ALLOWED_INDEPENDENCE - {"weak"}
 
+# Vocabulary-drift status, orthogonal to audit_status. See
+# docs/repo/VOCABULARY_HYGIENE_DESIGN.md and
+# docs/repo/controlled_vocabulary.yaml. prose_status records whether the
+# source note's vocabulary is compliant; it does NOT propagate into
+# effective_status (physics ≠ prose).
+ALLOWED_PROSE_STATUS = {
+    "clean",
+    "auto_corrected",
+    "needs_human_vocab_decision",
+    "not_evaluated_pre_vocab_lint",
+    "queue_backpressure_exceeded",
+}
+PROSE_FIX_REQUIRED_FIELDS = {"old_hash", "new_hash", "prose_status", "prose_corrections"}
+
 # Minimum auditor-family rank for incoming Codex audits. Existing ledger rows
 # are not invalidated by this script, but every new audit blob applied after
 # this policy must meet the floor. This catches manual `apply_audit.py`
@@ -393,6 +407,74 @@ def note_hash_drift_error(row: dict) -> str | None:
     return None
 
 
+def apply_pre_audit_prose_fix(row: dict, prose_fix: dict) -> str | None:
+    """Atomically refresh note_hash and write prose_status / prose_corrections.
+
+    The envelope carries {old_hash, new_hash, prose_status, prose_corrections}.
+    Verifies the envelope's old_hash matches the row's current note_hash (the
+    envelope was computed against the correct base), then refreshes
+    note_hash to envelope's new_hash and records the prose fields. Returns
+    an error string on validation failure, None on success.
+
+    Required when an audit chain runs `vocab_lint --fix` on the source note
+    before applying the verdict: the fix changes note content and therefore
+    note_hash, which would otherwise trigger the hash-drift rejection in
+    note_hash_drift_error(). The envelope is the atomic refresh path. See
+    docs/repo/VOCABULARY_HYGIENE_DESIGN.md §Auto-correct mechanism.
+    """
+    if not isinstance(prose_fix, dict):
+        return "pre_audit_prose_fix must be a dict"
+    missing = PROSE_FIX_REQUIRED_FIELDS - set(prose_fix)
+    if missing:
+        return f"pre_audit_prose_fix missing fields: {sorted(missing)}"
+    if prose_fix["old_hash"] != row.get("note_hash"):
+        return (
+            f"pre_audit_prose_fix.old_hash {prose_fix['old_hash']!r} does not "
+            f"match row.note_hash {row.get('note_hash')!r}"
+        )
+    prose_status = prose_fix["prose_status"]
+    if prose_status not in ALLOWED_PROSE_STATUS:
+        return (
+            f"prose_status {prose_status!r} not in {sorted(ALLOWED_PROSE_STATUS)}"
+        )
+    if not isinstance(prose_fix["prose_corrections"], list):
+        return "prose_corrections must be a list of {rule_id, before, after} dicts"
+    on_disk_path = REPO_ROOT / row.get("note_path", "")
+    if on_disk_path.exists():
+        import hashlib
+
+        on_disk_hash = hashlib.sha256(
+            on_disk_path.read_text(encoding="utf-8", errors="replace").encode("utf-8")
+        ).hexdigest()
+        if on_disk_hash != prose_fix["new_hash"]:
+            return (
+                f"pre_audit_prose_fix.new_hash {prose_fix['new_hash']!r} does not "
+                f"match current source note hash {on_disk_hash!r}"
+            )
+    # All checks pass — apply the refresh atomically.
+    row["note_hash"] = prose_fix["new_hash"]
+    row["prose_status"] = prose_status
+    row["prose_corrections"] = prose_fix["prose_corrections"]
+    return None
+
+
+def validate_prose_fields(audit: dict) -> str | None:
+    """Validate optional prose_status / prose_corrections on an incoming audit.
+
+    Both fields are optional. If present, prose_status must be in
+    ALLOWED_PROSE_STATUS and prose_corrections must be a list of dicts.
+    """
+    if "prose_status" in audit:
+        ps = audit["prose_status"]
+        if ps not in ALLOWED_PROSE_STATUS:
+            return f"prose_status {ps!r} not in {sorted(ALLOWED_PROSE_STATUS)}"
+    if "prose_corrections" in audit:
+        pc = audit["prose_corrections"]
+        if not isinstance(pc, list):
+            return "prose_corrections must be a list of {rule_id, before, after} dicts"
+    return None
+
+
 def validate_auditor_provenance(audit: dict) -> str | None:
     """Validate model and reasoning-effort provenance on an incoming audit."""
     auditor_model = audit.get("auditor_model")
@@ -587,6 +669,13 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     if provenance_error:
         return False, provenance_error
 
+    # Validate optional prose_status / prose_corrections fields on the blob.
+    # Both are orthogonal to the physics verdict; vocabulary drift never
+    # demotes audit_status. See docs/repo/VOCABULARY_HYGIENE_DESIGN.md.
+    prose_error = validate_prose_fields(audit)
+    if prose_error:
+        return False, prose_error
+
     # Model-floor check: incoming Codex audits must come from a codex-gpt-*
     # family at or above MIN_NEW_AUDIT_FAMILY_RANK, or a non-codex family
     # (claude-*, legacy-confirmed-clean, judicial reviews, etc.). Existing
@@ -606,6 +695,19 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         err = clean_independence_error(independence, criticality)
         if err:
             return False, err
+
+    # If the audit chain ran vocab_lint --fix on the source note before
+    # applying the verdict, the note's content (and therefore note_hash)
+    # changed. The pre_audit_prose_fix envelope atomically refreshes
+    # note_hash + writes prose_status / prose_corrections so the
+    # downstream note_hash_drift_error check passes.
+    prose_fix = audit.get("pre_audit_prose_fix")
+    prose_fix_applied = False
+    if prose_fix is not None:
+        err = apply_pre_audit_prose_fix(row, prose_fix)
+        if err:
+            return False, err
+        prose_fix_applied = True
 
     # Hash drift check.
     err = note_hash_drift_error(row)
@@ -858,6 +960,16 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     if legacy_claim_type_reaudit:
         row.setdefault("cross_confirmation", {})["claim_type_reaudit"] = audit_summary_from_blob(audit)
         row["cross_confirmation"]["mode"] = "legacy_confirmed_clean_claim_type_reaudit"
+
+    # Write prose_status / prose_corrections if the blob carried them
+    # directly (without the pre_audit_prose_fix envelope). Validated above
+    # by validate_prose_fields. If the envelope was applied, those fields
+    # are already on the row; do not overwrite.
+    if not prose_fix_applied:
+        if "prose_status" in audit:
+            row["prose_status"] = audit["prose_status"]
+        if "prose_corrections" in audit:
+            row["prose_corrections"] = audit["prose_corrections"]
 
     # Snapshot the state at audit time so invalidate_stale_audits.py can
     # detect changes that warrant re-audit (dep added/removed, dep status

@@ -1,0 +1,392 @@
+# Canonical source of truth for the repo's process vocabulary.
+#
+# Reader's contract: this file defines every process label the audit lane,
+# review-loop, physics-loop, and audit-loop write. It is consumed by
+# `scripts/vocab_lint.py` (for drift detection + auto-correct) and will be
+# consumed by `scripts/render_controlled_vocabulary.py` in Cleanup-1b (for
+# regenerating CONTROLLED_VOCABULARY.md and KEY_TERMINOLOGY.md).
+#
+# Authoring rule: change this file by PR. CV.md and KEY_TERMINOLOGY.md will
+# become generated products of this YAML after Cleanup-1b lands; until then,
+# they remain hand-maintained but must stay consistent with the term_families
+# defined here.
+#
+# Design provenance: docs/repo/VOCABULARY_HYGIENE_DESIGN.md.
+
+schema_version: 1
+
+# ---------------------------------------------------------------------------
+# Layers (the Vocabulary Hierarchy in CV.md)
+# ---------------------------------------------------------------------------
+layers:
+  - id: 0_front_door
+    rendered_doc: docs/KEY_TERMINOLOGY.md
+    governs: "Single-page A-Z index of every repo-canonical process term."
+  - id: 1_framework_substantive
+    source_of_truth: docs/MINIMAL_AXIOMS_2026-05-03.md
+    governs: "Framework primitives. Out of scope for this vocabulary."
+  - id: 2_external_paper_text
+    source_of_truth:
+      - docs/ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md
+      - docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md
+    governs: "Verbatim disclosure paragraphs for papers / preprints / talks."
+  - id: 3_operational
+    rendered_doc: docs/repo/CONTROLLED_VOCABULARY.md
+    governs: "Operational vocabulary used inside the repo (this YAML's home layer)."
+  - id: 4_methodology_framing
+    source_of_truth: docs/AI_METHODOLOGY_NOTE_2026-04-25.md
+    governs: "Curated front-door for the methodology lane."
+
+# ---------------------------------------------------------------------------
+# Scope tags (transferability taxonomy)
+# ---------------------------------------------------------------------------
+scope_tags:
+  core_process:
+    description: "Pure process labels transferable unchanged to other AI-built repos."
+    examples: [unaudited, audit_in_progress, prose_status, prose_corrections]
+    transferable: true
+  audit_physics_process:
+    description: "Verdicts on physics derivations encoding the AI-physics method."
+    examples:
+      - audited_renaming
+      - audited_decoration
+      - audited_numerical_match
+      - load_bearing_step_class
+      - repair_class
+    transferable: true
+    transfer_scope: "AI-physics repos facing the same generation failure modes."
+  repo_physics_policy:
+    description: "Policy on physics primitives; this repo only."
+    examples:
+      - "axiom naming policy"
+      - "A_min definition"
+      - "Axiom* prohibition"
+    governing_doc: docs/audit/AXIOM_MINIMALITY_POLICY.md
+    transferable: false
+  paper_voice:
+    description: "Paper-facing prose voice rules."
+    governing_doc: docs/WRITING_VOICE_GUIDE_2026-04-25.md
+    transferable: false
+  topic_local:
+    description: "Topic-specific physics wording (BMV, boundary-law, etc.)."
+    home: "Per-topic notes; not in CV.md after Cleanup-2."
+    transferable: false
+
+# ---------------------------------------------------------------------------
+# Term families (the substantive vocabulary)
+# ---------------------------------------------------------------------------
+term_families:
+
+  claim_type:
+    description: "What kind of object the auditor says the row is."
+    authority: docs/audit/README.md
+    scope_tag: audit_physics_process
+    values:
+      positive_theorem:
+        definition: "Derived positive result."
+      bounded_theorem:
+        definition: "Theorem with named bounds / admissions."
+      no_go:
+        definition: "Negative-result theorem foreclosing a route."
+      open_gate:
+        definition: "Clean open gate; blocks retained propagation downstream."
+      decoration:
+        definition: "Algebraic consequence of a parent claim with no new physical content."
+      meta:
+        definition: "Non-claim infrastructure rows (audit-prep notes, synthesis catalogues, fix-records)."
+
+  audit_status:
+    description: "Auditor's verdict on the row."
+    authority: docs/audit/README.md
+    scope_tag: audit_physics_process
+    values:
+      unaudited:
+        definition: "Row has not been audited yet."
+      audit_in_progress:
+        definition: "First clean audit recorded; awaiting cross-confirmation per FRESH_LOOK_REQUIREMENTS §4."
+      audited_clean:
+        definition: "Derivation closes from cited inputs with no hidden premise. Load-bearing step must be class (A), (C), or genuine (D) over independent retained inputs."
+      audited_renaming:
+        definition: "Load-bearing step is a definition (class (E)) or symbol-identity assertion (class (F)). Chain reduces to definition substitution, not derivation."
+        catches: "AI-generation failure mode: defining a new symbol as a target ratio, then 'showing' it matches data by name substitution."
+      audited_conditional:
+        definition: "Closure conditional on an unaudited dependency, open gate, retained-pending-chain row, unratified bridge, or premise not closed by cited authorities. Requires repair-class prefix in notes_for_re_audit_if_any."
+      audited_decoration:
+        definition: "Exact algebraic corollary of a parent claim with no independent comparator, falsifiability, compression, or new physical content."
+        catches: "AI-generation failure mode: mass-producing algebraic consequences of one upstream parameter choice and presenting each as a separate retained theorem."
+      audited_failed:
+        definition: "Chain is wrong, stale relative to the runner, mismatches the observable, contradicts dependencies, or does not close on its own terms."
+      audited_numerical_match:
+        definition: "Result depends on a tuned/calibrated input or chosen scale/value rather than a structural theorem. Load-bearing step is class (G)."
+        catches: "AI-generation failure mode: presenting a tuned-input match as a derivation."
+
+  effective_status:
+    description: "Publication-facing status, pipeline-derived from claim_type × audit_status × dependency closure. Not auditor-set."
+    authority: docs/audit/README.md
+    scope_tag: audit_physics_process
+    derived: true
+    values:
+      retained:
+        definition: "claim_type=positive_theorem + audit_status=audited_clean + retained-grade deps."
+      retained_no_go:
+        definition: "claim_type=no_go + audit_status=audited_clean + retained-grade deps."
+      retained_bounded:
+        definition: "claim_type=bounded_theorem + audit_status=audited_clean + retained-grade deps."
+      retained_pending_chain:
+        definition: "Clean theorem/no-go/bounded whose upstream chain is not yet retained-grade. Does not propagate retained status."
+      open_gate:
+        definition: "Clean open gate. Blocks retained propagation."
+      decoration_under_<parent>:
+        definition: "Audited decoration boxed under a retained parent claim."
+        pattern: true
+      meta:
+        definition: "Non-claim infrastructure row."
+      audited_<failure_mode>:
+        definition: "Terminal non-clean audit verdict on an active claim."
+        pattern: true
+
+  repair_class:
+    description: "Required prefix in notes_for_re_audit_if_any for audited_conditional verdicts."
+    authority: docs/audit/README.md
+    scope_tag: audit_physics_process
+    values:
+      missing_dependency_edge:
+        definition: "A needed source note or authority exists or is named, but is not wired as a direct dependency."
+      dependency_not_retained:
+        definition: "A direct dependency exists but is not retained-grade."
+      missing_bridge_theorem:
+        definition: "The claim needs a new theorem for a carrier, readout, unit map, boundary condition, sector choice, normalization, or observable bridge."
+      scope_too_broad:
+        definition: "A clean bounded core exists, but the current scope includes an unclosed extension."
+      runner_artifact_issue:
+        definition: "A runner, log, classifier, threshold, import, or pass/fail accounting blocks closure despite local scope."
+      compute_required:
+        definition: "Closure needs a completed long run, sliced runner, cached certificate, or independent derivation. Runner timeout alone is not evidence."
+      other:
+        definition: "None of the above fits; the note must state why."
+
+  independence:
+    description: "Adversarial-review independence tier between auditor and author. auditor ≠ author required."
+    authority: docs/audit/FRESH_LOOK_REQUIREMENTS.md
+    scope_tag: audit_physics_process
+    values:
+      weak:
+        definition: "Same model family, or session whose context restrictions cannot be established. Permitted for diagnostic review; not eligible to land audited_clean."
+      fresh_context:
+        definition: "Same model family, different auditor/session identity, restricted-input audit. Same-family clean-room tier for detecting context poisoning without claiming cross-family review."
+      cross_family:
+        definition: "Different model family from the author. Default cross-family auditor for this repo: best available full Codex GPT model at maximum reasoning."
+      strong:
+        definition: "Human reviewer with no prior involvement in the note."
+      external:
+        definition: "Off-repo reviewer with no project context. Only tier satisfying external-impact requirements; the audit lane does not produce these on its own."
+      judicial_review:
+        definition: "Third-auditor pass ratifying first or second audit on a cross-confirmation disagreement."
+
+  load_bearing_step_class:
+    description: "The kind of step the load-bearing sentence or equation is. Determines the verdict gate."
+    authority: docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md
+    scope_tag: audit_physics_process
+    values:
+      "(A)":
+        definition: "Algebraic identity check on existing inputs."
+      "(B)":
+        definition: "Cross-note input verification (reads value from another note)."
+      "(C)":
+        definition: "First-principles compute from the axioms (Cl(3) on Z^3 plus accepted normalizations) producing a number not present in any input."
+      "(D)":
+        definition: "External comparator check against PDG / lattice QCD / observation."
+      "(E)":
+        definition: "Definition (introduces a new symbol). Triggers audited_renaming."
+      "(F)":
+        definition: "Renaming (asserts symbol identity between two existing concepts). Triggers audited_renaming."
+      "(G)":
+        definition: "Numerical match at a tuned input scale. Triggers audited_numerical_match."
+
+  prose_status:
+    description: "Vocabulary compliance of the source note. Separate from audit_status (physics)."
+    authority: docs/repo/VOCABULARY_HYGIENE_DESIGN.md
+    scope_tag: core_process
+    values:
+      clean:
+        definition: "No vocabulary drift detected by vocab_lint."
+      auto_corrected:
+        definition: "Routine drift mechanically rewritten by vocab_lint --fix; rewrites logged in prose_corrections."
+      needs_human_vocab_decision:
+        definition: "Genuinely new term that vocab_lint cannot mechanically rewrite; queued for vocab-extension review."
+      not_evaluated_pre_vocab_lint:
+        definition: "Pre-Cleanup-1 row, newly seeded row, or source-drift row not yet linted under the new rules. Seeder/backfill default."
+      queue_backpressure_exceeded:
+        definition: "Vocab-extension review queue is >50 entries deep; new unresolved terms emit this until queue is processed."
+
+  prose_corrections:
+    description: "List of (rule_id, before, after) tuples recording mechanical rewrites applied during the same audit cycle."
+    authority: docs/repo/VOCABULARY_HYGIENE_DESIGN.md
+    scope_tag: core_process
+    shape: "list[{rule_id: str, before: str, after: str | null}]"
+
+# ---------------------------------------------------------------------------
+# Valid (audit_status, prose_status) combinations
+# ---------------------------------------------------------------------------
+# A non-clean prose_status never demotes a physics verdict. A non-clean
+# audit_status is never set by vocabulary drift alone. The two axes are
+# orthogonal; vocab_lint records prose_status independent of the auditor's
+# physics verdict.
+valid_audit_prose_combinations:
+  audited_clean:        [clean, auto_corrected, needs_human_vocab_decision, queue_backpressure_exceeded]
+  audited_conditional:  [clean, auto_corrected, needs_human_vocab_decision, queue_backpressure_exceeded]
+  audited_renaming:     [clean, auto_corrected, needs_human_vocab_decision, queue_backpressure_exceeded]
+  audited_decoration:   [clean, auto_corrected, needs_human_vocab_decision, queue_backpressure_exceeded]
+  audited_numerical_match: [clean, auto_corrected, needs_human_vocab_decision, queue_backpressure_exceeded]
+  audited_failed:       [clean, auto_corrected, needs_human_vocab_decision, queue_backpressure_exceeded]
+  unaudited:            [clean, auto_corrected, needs_human_vocab_decision, not_evaluated_pre_vocab_lint, queue_backpressure_exceeded]
+  audit_in_progress:    [clean, auto_corrected, needs_human_vocab_decision, queue_backpressure_exceeded]
+
+# ---------------------------------------------------------------------------
+# Filename rules
+# ---------------------------------------------------------------------------
+filename_rules:
+  meta_note_suffix: "_NOTE_<YYYY-MM-DD>.md"
+  forbidden_suffixes:
+    # Count = instances on main as of 2026-05-18 sweep. Cleanup-2 migrates them.
+    - {suffix: "_HOSTILE_AUDIT_FINDINGS_NOTE_", count: 84}
+    - {suffix: "_STRETCH_ATTEMPT_NOTE_",        count: 16}
+    - {suffix: "_DOWNSTREAM_FIX_NOTE_",         count: 9}
+    - {suffix: "_HOSTILE_REVIEW_",              count: 7}
+    - {suffix: "_REVIEW_PACKET_",               count: 5}
+    - {suffix: "_TERMINAL_SYNTHESIS_META_",     count: 4}
+    - {suffix: "_SHARPENED_NOTE_",              count: 4}
+    - {suffix: "_FIX_RECORD_",                  count: 0}
+    - {suffix: "_FINDINGS_MEMO_",               count: 0}
+    - {suffix: "_ADDENDUM_",                    count: 0}
+    - {suffix: "_SURGICAL_REPAIR_",             count: 0}
+    - {suffix: "_AUDIT_BRIEF_",                 count: 0}
+    - {suffix: "_FRAMING_FIX_NOTE_",            count: 1}
+    - {suffix: "_ROUTING_CORRECTION_NOTE_",     count: 1}
+    - {suffix: "_OBJECTION_CLOSURE_NOTE_",      count: 1}
+    - {suffix: "_CAMPAIGN_PROGRESS_SYNTHESIS_", count: 1}
+
+# ---------------------------------------------------------------------------
+# Rewrite rules (used by vocab_lint --fix)
+# ---------------------------------------------------------------------------
+# Each rule applies a mechanical text or filename transformation. Patterns
+# are Python regular expressions. `replacement` uses backreferences via $N.
+# `requires_link_aware_rewrite: true` rules must also rewrite cross-doc
+# references atomically; Cleanup-1 only reports them, and Cleanup-2 adds the
+# link-aware rewrite implementation.
+# `migration_strategy: per_file_mapping_with_link_check` rules require an
+# explicit per-file mapping built before the rewrite (e.g. F-letter → Finding-N).
+rewrite_rules:
+  - id: legacy_alias_strip
+    pattern: '\s*\(legacy alias:\s*[A-Z][0-9A-Z]*\)'
+    replacement: ""
+    rationale: "Aliasing creates rot. Use the canonical name only."
+    excluded_paths:
+      - "docs/work_history/**"
+      - "archive_unlanded/**"
+      # The vocab governance docs describe the pattern they forbid; they
+      # must be allowed to quote example aliases without being rewritten.
+      - "docs/repo/VOCABULARY_HYGIENE_DESIGN.md"
+      - "docs/repo/VOCABULARY_HYGIENE_REVIEW_2026-05-18.md"
+      - "docs/repo/CONTROLLED_VOCABULARY.md"
+      - "docs/repo/controlled_vocabulary.yaml"
+      - "docs/KEY_TERMINOLOGY.md"
+      - "docs/audit/README.md"
+      - "scripts/vocab_lint.py"
+
+  - id: hostile_audit_findings_suffix
+    pattern: '_HOSTILE_AUDIT_FINDINGS_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "New filename suffixes for meta notes are forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: downstream_fix_suffix
+    pattern: '_DOWNSTREAM_FIX_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Same as above."
+    requires_link_aware_rewrite: true
+
+  - id: stretch_attempt_suffix
+    pattern: '_STRETCH_ATTEMPT_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Stretch-attempt suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: hostile_review_suffix
+    pattern: '_HOSTILE_REVIEW_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Hostile-review suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: review_packet_suffix
+    pattern: '_REVIEW_PACKET_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Review-packet suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: terminal_synthesis_meta_suffix
+    pattern: '_TERMINAL_SYNTHESIS_META_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Terminal-synthesis-meta suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: sharpened_note_suffix
+    pattern: '_SHARPENED_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Sharpened-note suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: f_letter_heading
+    # NOT a one-shot regex. F-letter migration requires per-file mapping
+    # {F-A: <title>, F-B: <title>, ...} → {Finding 1: <title>, ...} with
+    # link-aware cross-doc reference updates.
+    migration_strategy: per_file_mapping_with_link_check
+    rationale: "F-letter codes are forbidden; descriptive numbered findings replace them."
+
+# ---------------------------------------------------------------------------
+# Deferred forbidden patterns
+# ---------------------------------------------------------------------------
+# Cleanup-1 records these as controlled-vocabulary policy, but the first
+# linter pass intentionally enforces only mechanical rewrite rules and
+# forbidden filename suffixes. These structured checks become reportable after
+# Cleanup-1b/Cleanup-2 adds the renderer and link-aware sweep.
+forbidden_patterns:
+  - id: physics_primitive_in_vocab_doc
+    description: "Framework primitives (Cl(3), Z^3, A_min, Axiom N, etc.) appearing in CV.md or KEY_TERMINOLOGY.md."
+    applies_to: [docs/repo/CONTROLLED_VOCABULARY.md, docs/KEY_TERMINOLOGY.md]
+    pattern: '\b(Cl\(3\)|Z\^?3|A_?min|Axiom\s*[0-9]+)\b'
+  - id: audit_verdict_conflates_physics_with_prose
+    description: "Setting audited_renaming / audited_conditional purely on prose grounds."
+    applies_to: [docs/audit/data/audit_ledger.json]
+    pattern: "<requires structured review; not a one-shot regex>"
+  - id: paraphrased_index_drift
+    description: "Manual edits to CV.md or KEY_TERMINOLOGY.md after Cleanup-1b (when those become generated products of this YAML)."
+    applies_to: [docs/repo/CONTROLLED_VOCABULARY.md, docs/KEY_TERMINOLOGY.md]
+    note: "Activated when Cleanup-1b lands the renderer + generated-header check."
+
+# ---------------------------------------------------------------------------
+# Scope
+# ---------------------------------------------------------------------------
+scope:
+  in_scope:
+    - "Process labels (audit_status, prose_status, repair_class, independence, load_bearing_step_class, etc.)"
+    - "Filename conventions"
+    - "Forbidden patterns"
+  out_of_scope:
+    - "Framework primitives (live in MINIMAL_AXIOMS_2026-05-03.md)"
+    - "Physics quantities (live in ASSUMPTION_DERIVATION_LEDGER / per-claim notes)"
+    - "Topic-specific physics wording (lives in topic notes; not vocabulary)"
+
+# ---------------------------------------------------------------------------
+# Schema invariants enforced by audit_lint.py / apply_audit.py / vocab_lint.py
+# ---------------------------------------------------------------------------
+invariants:
+  - id: physics_prose_orthogonal
+    description: "prose_status does NOT propagate into effective_status. A non-clean prose_status cannot demote a physics-clean row; a clean prose_status cannot promote a physics-non-clean row."
+    enforced_by: [docs/audit/scripts/compute_effective_status.py, docs/audit/scripts/audit_lint.py]
+  - id: audit_status_unchanged
+    description: "The 8-value audit_status enum is physics-native and unchanged from audit/README.md. This vocabulary file mirrors it; it does not redefine it."
+    enforced_by: [docs/audit/scripts/apply_audit.py, docs/audit/scripts/audit_lint.py]
+  - id: pre_audit_prose_fix_atomic
+    description: "When vocab_lint --fix changes a note's content, the resulting note_hash refresh must happen atomically with the prose_status / prose_corrections write. apply_audit.py accepts a pre_audit_prose_fix envelope for this."
+    enforced_by: [docs/audit/scripts/apply_audit.py]

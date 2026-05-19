@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 111 |
-| **retained_no_go** | 134 |
+| **retained_no_go** | 135 |
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1339 |
+| unaudited | 1338 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 574 |
+| `audited_clean` | 575 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1558 |
+| `unaudited` | 1557 |
 
 | claim_type | count |
 |---|---:|
@@ -464,6 +464,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `nn_lattice_rescaled_continuum_identification_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -6703,6 +6704,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The runner directly computes the field-free one-arm detector distributions across h values, fits sigma_arm(h) = C_arm * h^alpha on h <= 0.25 with alpha = 0.5256 and R^2 = 0.9996, then uses that fitted Gaussian-arm model to predict MI and d_TV within 0.0005 for h <= 0.125.  _(class `C`)_
 - **chain closes:** True — The provided runner source actually constructs the lattice, propagates the field-free arms, measures centroids, widths, MI, d_TV, and Born residuals, then performs the fitted scaling and Gaussian-bin prediction checks. The conclusion is bounded to that finite fitted window and does not require a full continuum-operator identification.
 - **rationale:** The load-bearing evidence is a direct numerical computation from the stated NN harness rather than a definition, renaming, external comparator, or imported numerical match. The cited authorities are retained or retained_bounded, and the source note keeps the conclusion within the bounded finite-window diagnostic scope. The runner's guards pass for Born cleanliness, centroid drift, sqrt-h width scaling, and Gaussian-arm MI/d_TV prediction. The audit does not certify a full continuum operator, which the note explicitly excludes.
+- **auditor confidence:** high
+
+### `nn_lattice_rescaled_kernel_identification_note_2026-05-10`
+
+- **Note:** [`NN_LATTICE_RESCALED_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md`](../../docs/NN_LATTICE_RESCALED_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded numerical no-go on the deterministic-rescale NN harness with BETA=0.8, K_PHYS=5.0, PHYS_L=40, single source, no slits, no blocked nodes, no field, h in {0.5, 0.25, 0.125, 0.0625}, and central detector window |y_d| <= 6.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-nn_lattice_rescaled_kern-040`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The computed Gaussian width shrinks with refinement while the quadratic phase gives a finite m_eff_phase, so the Schrödinger free-particle width/phase mass consistency test fails by 1453% at h=0.0625 and the lower-bound sigma >= sqrt(L/m_eff_phase) is violated at every checked h.  _(class `C`)_
+- **chain closes:** True — The runner directly constructs the lattice, propagates the single-source field-free amplitudes, fits the magnitude and phase, and computes sigma and c2 without reading upstream notes or hard-coding the contested fitted values. The Schrödinger comparison then follows algebraically from the stated propagator and Gaussian-width consistency test within the scoped finite-h harness.
+- **rationale:** The load-bearing evidence is a first-principles computation inside the provided runner source, not a cross-note import or a numerical match to an external calibrated value. The source code implements the stated nearest-neighbor rescaled propagation rule, fits the claimed candidates, and reports the phase/width mismatch that delivers the no-go. The bridge addendum makes the width-convention issue non-load-bearing for the verdict because the exact Schrödinger delta-source magnitude and the stated Gaussian lower-bound check both independently conflict with the measured Gaussian collapse on the checked ladder. The audit ratifies only the bounded scoped no-go, not a positive closed-form continuum kernel identification.
 - **auditor confidence:** high
 
 ### `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10`

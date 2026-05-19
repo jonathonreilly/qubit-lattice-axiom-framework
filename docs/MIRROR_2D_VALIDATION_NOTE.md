@@ -30,6 +30,130 @@ verified on the same family via the corrected three-slit Sorkin audit.
 - `k`-band: `[3, 5, 7]`
 - `N = 25, 40, 60, 80, 100`
 
+## Helper-runner code excerpt (load-bearing for restricted packet, inlined 2026-05-18)
+
+Source of truth: `scripts/mirror_born_audit.py` at commit b179c2d2c.
+
+The three load-bearing definitions from the imported authority are pasted verbatim
+below so the restricted audit packet is self-contained without requiring the full
+helper file:
+
+```python
+def _topo_order(adj, n):
+    in_deg = [0] * n
+    for nbs in adj.values():
+        for j in nbs:
+            in_deg[j] += 1
+    q = deque(i for i in range(n) if in_deg[i] == 0)
+    order = []
+    while q:
+        i = q.popleft()
+        order.append(i)
+        for j in adj.get(i, []):
+            in_deg[j] -= 1
+            if in_deg[j] == 0:
+                q.append(j)
+    return order
+
+
+def propagate_LINEAR(positions, adj, field, src, k, blocked):
+    """STRICTLY LINEAR propagator. No normalization of any kind.
+    This is the ONLY propagator used for Born claims on this branch."""
+    n = len(positions)
+    order = _topo_order(adj, n)
+    amps = [0j] * n
+    for s in src:
+        amps[s] = 1.0 / len(src)
+    for i in order:
+        if abs(amps[i]) < 1e-30 or i in blocked:
+            continue
+        for j in adj.get(i, []):
+            if j in blocked:
+                continue
+            if len(positions[i]) == 2:
+                x1, y1 = positions[i]; x2, y2 = positions[j]
+                dx, dy = x2-x1, y2-y1; dz = 0
+            else:
+                x1, y1, z1 = positions[i]; x2, y2, z2 = positions[j]
+                dx, dy, dz = x2-x1, y2-y1, z2-z1
+            L = math.sqrt(dx*dx + dy*dy + dz*dz)
+            if L < 1e-10:
+                continue
+            lf = 0.5 * (field[i] + field[j])
+            dl = L * (1 + lf)
+            ret = math.sqrt(max(dl*dl - L*L, 0))
+            act = dl - ret
+            theta = math.atan2(math.sqrt(dy*dy + dz*dz), max(dx, 1e-10))
+            w = math.exp(-BETA * theta * theta)
+            ea = cmath.exp(1j * k * act) * w / L
+            amps[j] += amps[i] * ea
+    return amps
+
+
+# Generator 3: 2D mirror
+def gen_2d_mirror(nl, npl_half, yr, cr, seed):
+    rng = random.Random(seed); pos = []; adj = defaultdict(list); li = []; mm = {}; bl = nl // 3
+    for layer in range(nl):
+        x = float(layer); ln = []
+        if layer == 0:
+            pos.append((x, 0)); ln.append(len(pos)-1); mm[len(pos)-1] = len(pos)-1
+        else:
+            up, lo = [], []
+            for _ in range(npl_half):
+                y = rng.uniform(0.5, yr)
+                iu = len(pos); pos.append((x, y)); up.append(iu)
+                il = len(pos); pos.append((x, -y)); lo.append(il)
+                mm[iu] = il; mm[il] = iu
+            ln = up + lo
+            lb = max(0, len(li) - (1 if layer == bl+1 else 2))
+            for ci in up:
+                cx, cy = pos[ci]
+                for pl in li[lb:]:
+                    for pi in pl:
+                        px, py = pos[pi]
+                        if math.sqrt((cx-px)**2+(cy-py)**2) <= cr:
+                            adj[pi].append(ci); adj[mm[pi]].append(mm[ci])
+        li.append(ln)
+    return pos, dict(adj), bl
+```
+
+Module-level constants used by the helper code: `BETA = 0.8`, `N_SEEDS = 8`.
+
+## Imported-authority cache excerpt (load-bearing, 2026-05-18)
+
+The full registered cache file `logs/runner-cache/mirror_born_audit.txt` is
+pasted verbatim below so the restricted audit packet contains the cached
+stdout used to verify the imported generator and propagator on the strict
+mirror Born family:
+
+```
+===== runner cache v1 =====
+runner: scripts/mirror_born_audit.py
+runner_sha256: ccbbc2f10c2187338017a1b7020815e452240f96245718fab15ea12d86a04270
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 7.80
+status: ok
+----- stdout -----
+================================================================================
+BORN AUDIT: ALL MIRROR GENERATORS (LINEAR PROPAGATOR ONLY)
+  8 seeds per generator
+================================================================================
+
+   3D chokepoint N=15 npl=25 r=4  mean=1.74e-16  max=4.84e-16  ok=3  PERFECT
+   3D chokepoint N=25 npl=25 r=4  mean=1.32e-15  max=1.93e-15  ok=4  PERFECT
+       3D hybrid N=25 npl=40 r=5  mean=1.67e-15  max=4.05e-15  ok=8  PERFECT
+       3D hybrid N=40 npl=40 r=5  mean=1.44e-15  max=2.05e-15  ok=8  PERFECT
+     2D mirror N=25 npl=12 r=2.5  mean=5.21e-16  max=7.79e-16  ok=8  PERFECT
+     2D mirror N=40 npl=12 r=2.5  mean=6.53e-16  max=9.89e-16  ok=8  PERFECT
+
+VERIFICATION: This script uses propagate_LINEAR which has
+NO normalization of any kind. If Born passes here, the
+linear propagator on these graph families is Born-clean.
+
+----- stderr -----
+```
+
 ## Retained Rows
 
 The exact 2D mirror family is Born-clean and retains a strong bounded joint

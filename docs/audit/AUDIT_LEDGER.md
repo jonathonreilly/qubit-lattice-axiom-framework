@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 134 |
-| **retained_bounded** | 356 |
+| **retained_bounded** | 355 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
 | unaudited | 1345 |
-| audit_in_progress | 17 |
+| audit_in_progress | 18 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -139,7 +139,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `poisson_self_gravity_born_audit_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |

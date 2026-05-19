@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1324
+**Total pending:** 1323
 **Ready (all deps already at retained-grade or metadata tiers):** 21
 
 By criticality:
-- `critical`: 874
+- `critical`: 873
 - `high`: 27
 - `medium`: 106
 - `leaf`: 317
@@ -15,8 +15,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | critical | 993 | 10.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/equivalence_principle_harness.py` |
-| 2 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | critical | 992 | 10.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/action_power_scaling_sweep.py` |
+| 1 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | critical | 992 | 10.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/action_power_scaling_sweep.py` |
+| 2 | `newton_derivation_top4_bridge_note` | bounded_theorem | unaudited | critical | 992 | 10.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/newton_derivation_top4_bridge_runner.py` |
 | 3 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | critical | 989 | 12.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_graph_first_cycle_frame_support.py` |
 | 4 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | critical | 989 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/gate_b_connectivity_tolerance.py` |
 | 5 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | critical | 988 | 11.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/growing_graph_frontier_expansion.py` |

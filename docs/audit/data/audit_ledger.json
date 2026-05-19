@@ -168807,24 +168807,33 @@
       "verdict_rationale": "The note is a bounded no-go, and the current runner verifies exactly why v2 fails: localization improves, but the sign, mass-scaling class, and capture collapse. The note does not claim inertial-mass closure or a successful field equation; it preserves v1 as the better detector-side bridge and freezes v2 as too selective. Residual risk is limited to future readout architectures, which the source explicitly leaves open."
     },
     "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:27:39.246691+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.447,
+        "runner_hash": "f28ec29e676f78cb2bd0f4da4dc6f77315e313665782d478ba9964b8aa08b29f",
+        "transitive_descendants": 986
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-persistent_object_blende-016",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cached primary runner and included helper sources compute the lattice propagation, source update, blended readout, alpha, overlap, and drift gates for the five outer cases, and the stdout matches the outer totals. The source note explicitly narrows the restricted-packet claim so the missing inward-source boundary stdout is not load-bearing.",
       "claim_id": "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
-      "claim_scope": "Fixed exact-lattice h=0.25 outer transfer sweep at blend=0.25: top3 passes 4/5 listed second-ring cases, top2 passes 1/5, and source1.0 is closed in the cached outer runner.",
+      "claim_scope": "Fixed exact-lattice h=0.25, blend=0.25 outer second-ring sweep: top3 passes 4/5 cases and top2 passes 1/5, with source1.0 closed; the uncached inward-source boundary row pattern is not audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-19T14:39:55.755366+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-19T15:27:39.246691+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -168839,14 +168848,25 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T15:27:39.246691+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-persistent_object_blende-016",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Fixed exact-lattice h=0.25, blend=0.25 outer second-ring sweep: top3 passes 4/5 cases and top2 passes 1/5, with source1.0 closed; the uncached inward-source boundary row pattern is not audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py",
         "scripts/persistent_object_adaptive_readout_probe.py",
@@ -168855,16 +168875,16 @@
         "scripts/persistent_object_compact_inertial_probe.py",
         "scripts/persistent_object_compact_shared.py"
       ],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.447,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Outer second-ring totals are top3 admissible on 4/5 cases and top2 admissible on 1/5 cases, with the only outer miss at source_z = 1.0.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d2566ef0bb0e162c6e267e6460a3525a5fc29f1d47967475b9239f7ea9c45676",
       "note_path": "docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should keep the source0.75/source1.00/source1.25/source1.50 inward-boundary pattern out of scope unless the boundary runner cache is supplied.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -169040,14 +169060,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 5,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/persistent_object_blended_readout_outer_transfer_sweep.py",
       "title": "Persistent Object Blended Readout Outer Transfer Sweep",
       "transitive_descendants": 986,
-      "verdict_rationale": null
+      "verdict_rationale": "The primary runner does not merely print expected constants: it loops over the five specified cases and calls _run_mode for top2 and top3, while the provided helper sources instantiate the lattice, field, propagation, readout, and admissibility tests. The completed runner cache supports the stated outer second-ring top3 4/5 and top2 1/5 counts, including source1.0 as the sole outer closed case. This clean verdict applies only to the narrowed outer-sweep claim, not to the historical frozen inward-boundary pattern whose runner stdout is absent."
     },
     "persistent_object_blended_readout_transfer_sweep_note_2026-04-16": {
       "audit_date": "2026-05-12T00:30:06.593080+00:00",

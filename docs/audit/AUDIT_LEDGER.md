@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 135 |
-| **retained_bounded** | 358 |
+| **retained_bounded** | 359 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1333 |
+| unaudited | 1332 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 579 |
+| `audited_clean` | 580 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1552 |
+| `unaudited` | 1551 |
 
 | claim_type | count |
 |---|---:|
@@ -236,6 +236,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `directional_b_density_stencil_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_assumptions_audit_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_pmns_nonsingularity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2653,6 +2654,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** "The weaker-coupling sweep does not show a strength-driven rescue of the remaining periodic Dirac gravity failures" because cross-strength sign-stability counts are unchanged and the signed delta-law fit never becomes available.  _(class `A`)_
 - **chain closes:** True — The note's numerical summaries match the supplied completed runner stdout, and the bounded negative conclusion follows directly from the unchanged 6/12 stable-row and 2/12 positive-stable counts across all strengths. The claim does not close as a general physics theorem beyond this scan grid, so the audited scope must remain bounded to the supplied harness and outputs.
 - **rationale:** The load-bearing claim is a bounded arithmetic summary of the completed runner output, not a first-principles derivation or external comparator. The stdout supports the stated cross-strength invariance, absence of signed delta-law fits, and lambda-dependent |bias| fit improvement. Clean status applies only to the reported scan-grid conclusion, not to any broader Dirac-gravity theorem or unsupplied v4 helper implementation.
+- **auditor confidence:** high
+
+### `directional_b_density_stencil_note`
+
+- **Note:** [`DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md`](../../docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded runner audit of the deterministic generated reference, tree-control, and center-biased midlayer samples using frozen dense-reference 3-NN and 4-NN density-load thresholds.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-directional_b_density_st-047`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Once the center-biased midlayer sentinel is added to the reference+tree sample, the frozen 3-NN density-load rule has higher extended-sample accuracy than the frozen 4-NN rule: 0.9126 versus 0.8932.  _(class `C`)_
+- **chain closes:** True — The primary runner rebuilds the rows, computes the dense-reference thresholds with _best_rule, applies them without refit, and computes the reported accuracy and miss-mode tables. The transitive helper sources needed for generated rows, density features, overlap labels, and threshold evaluation are present in the packet.
+- **rationale:** The runner is not a constant printer: it constructs the dense reference rows, tree rows, and midlayer rows from the included generators and evaluates the rules from computed row features. The contested 3-NN versus 4-NN preference reversal follows from those computed rows and frozen thresholds within the stated bounded sample. No cited upstream authority is required for the restricted claim, and no helper path listed as load-bearing is missing from the packet.
 - **auditor confidence:** high
 
 ### `distance_law_3d_64_closure_note_2026-04-11`

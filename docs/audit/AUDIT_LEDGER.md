@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 5 |
 | open_gate | 16 |
-| unaudited | 1347 |
+| unaudited | 1346 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 19 |
 | `audited_clean` | 573 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1566 |
+| `unaudited` | 1565 |
 
 | claim_type | count |
 |---|---:|
@@ -771,6 +771,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -10799,6 +10800,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The open-gate claim closes because the live runner returns 23 PASS and 0 FAIL for the algebra, scope guards, retained coefficient inputs, and H_unit normalization. The result is not a positive same-1PI theorem: it proves only that the two projected coefficients are unequal until the gate equation is imposed, so a Wick-level same-1PI bridge remains required. This is exactly the source boundary, so the appropriate retained status is open_gate.
 - **open / conditional deps cited:**
   - `same-1PI bridge between OGE contraction and H_unit decomposition remains unproved`
+- **auditor confidence:** high
+
+### `yt_zero_import_chain_note`
+
+- **Note:** [`YT_ZERO_IMPORT_CHAIN_NOTE.md`](../../docs/YT_ZERO_IMPORT_CHAIN_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the narrowed y_t/EW chain as algebraic, Ward-identity, CW, and RGE propagation conditional on the canonical plaquette surface and the kappa_EW=0 connected-trace selector.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-yt_zero_import_chain_not-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The overall prediction chain takes the bounded canonical plaquette value <P>(beta=6)=0.5934 and the connected-trace matching rule kappa_EW=0, then derives u_0, alpha_LM, alpha_s(v), K_EW(0)=9/8, and the downstream y_t/EW predictions algebraically/RGE-wise.  _(class `B`)_
+- **chain closes:** False — The downstream algebra and RGE computation close only after accepting two residual inputs: the bounded plaquette insertion <P>(beta=6)=0.5934 and the open matching rule selecting kappa_EW=0. Neither is derived from the axiom in the restricted packet, and the runner imports or hard-codes them.
+- **rationale:** The source note now honestly identifies the conditional perimeter, and the visible downstream steps are mostly algebraic/RGE propagation once those inputs are admitted. However, the primary runner imports CANONICAL_PLAQUETTE, CANONICAL_U0, CANONICAL_ALPHA_LM, and CANONICAL_ALPHA_S_V from canonical_plaquette_surface, while R_conn=8/9 and the sqrt(9/8) EW readout are hard-coded rather than derived from Cl(3) inside the packet. The stdout labels these as computed or derived, but the source note itself states that the plaquette insertion and kappa_EW=0 matching selector remain residual gaps. Therefore the overall zero-import chain does not close from the provided inputs.
+- **open / conditional deps cited:**
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+  - `RCONN_DERIVED_NOTE.md`
+  - `scripts/canonical_plaquette_surface.py`
 - **auditor confidence:** high
 
 ### `yukawa_color_projection_theorem`

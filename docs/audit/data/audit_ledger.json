@@ -177297,7 +177297,7 @@
       "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": null,
       "chain_closure_explanation": null,
       "claim_id": "pmns_graph_first_cycle_frame_support_note",
@@ -177321,8 +177321,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T15:23:34.636586+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-pmns_graph_first_cycle_f-004",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [

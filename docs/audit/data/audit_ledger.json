@@ -1,8 +1,8 @@
 {
   "last_invalidations": [
     {
-      "claim_id": "newton_derivation_top4_bridge_note",
-      "reason": "dep_weakened:equivalence_principle_harness_note:retained_bounded->audit_in_progress"
+      "claim_id": "broken_graph_action_power_robustness_note",
+      "reason": "dep_weakened:action_power_scaling_sweep_note:retained_bounded->audit_in_progress"
     }
   ],
   "rows": {
@@ -2130,7 +2130,7 @@
       "auditor": "codex-current",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": true,
       "chain_closure_explanation": "The note's bounded claim is exactly the fixed-family replay produced by the runner: the current output reproduces Born 2.18e-15, F~M equal to each tested p, 7/7 TOWARD rows, and the listed tail slopes. The note explicitly does not claim a universal architecture-independent tail theorem or derivation of p=1.",
       "claim_id": "action_power_scaling_sweep_note",
@@ -2154,17 +2154,28 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T14:26:30.131761+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-action_power_scaling_swe-007",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite replay for p in {0.50, 0.75, 1.00, 1.50, 2.00} on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p).",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status": "audit_in_progress",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "intrinsic_status": "audit_in_progress",
       "load_bearing_score": 13.956,
       "load_bearing_step": "On this fixed family, the mass-scaling law is clean: F\u221dM = p across the tested sweep.",
       "load_bearing_step_class": "C",
@@ -2381,11 +2392,11 @@
         "action_power_scaling_sweep_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status": "retained_pending_chain",
+      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:chain_waiting_on:action_power_scaling_sweep_note",
       "helper_runner_paths": [],
       "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 14.454,
       "load_bearing_step": "On this fixed family, the mass-scaling exponent tracks the weak-field power of f in the action.",
       "load_bearing_step_class": "C",
@@ -18340,49 +18351,24 @@
       "verdict_rationale": null
     },
     "broken_graph_action_power_robustness_note": {
-      "audit_date": "2026-05-11T15:43:09.248816+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "action_power_scaling_sweep_note": "Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F\u221dM=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law.",
-          "action_uniqueness_note": "Bounded fixed-family replay on the ordered 3D dense lattice with h=0.5, W=8, L=12, kernel 1/L^2 with h^2 measure, field s/r, and the tested action laws S=L, S=L(1+f), S=L(1-f^0.5), S=L(1-f), S=L(1-f^2), S=L exp(-f), S=L/(1+f), and S=-Lf, showing that phase valleys give TOWARD response and that the measured F\u221dM exponent follows the weak-field power for the tested valley-power cases, with weak-field-linear valleys giving F\u221dM=1.00.",
-          "inverse_problem_note": "Bounded inverse-problem graph-perturbation replay on the specified 3D valley-linear harness, where Born is clean for all five variants, TOWARD holds for baseline/asym/jitter/sparse, heavy_delete_70 is AWAY, and k=0/no-field controls are zero."
-        },
-        "dep_claim_type": {
-          "action_power_scaling_sweep_note": "bounded_theorem",
-          "action_uniqueness_note": "bounded_theorem",
-          "inverse_problem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "action_power_scaling_sweep_note": "retained_bounded",
-          "action_uniqueness_note": "retained_bounded",
-          "inverse_problem_note": "retained_bounded"
-        },
-        "deps": [
-          "action_power_scaling_sweep_note",
-          "action_uniqueness_note",
-          "inverse_problem_note"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": "ded4cb68acedca3c1745cc272cceea896deb4a12b50bbcafaa210b96fa3ec32c",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The declared one-hop dependencies are retained-bounded, and the completed registered runner cache prints the damage ladder and summary supporting the bounded negative conclusion. The audited scope is the current-cache finite replay, not a universal graph theorem or standalone action uniqueness proof.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "broken_graph_action_power_robustness_note",
-      "claim_scope": "Bounded current-cache graph-damage replay on the retained 3D ordered-lattice family comparing p=0.5, p=1.0, and p=2.0, where p=1 is not uniquely most robust: p=1 has smallest F~M-p drift when retained, while p=2 keeps TOWARD on more damaged cases.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-11T15:43:09.248816+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -18392,21 +18378,21 @@
         "action_power_scaling_sweep_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/action_universality_probe.py"
       ],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "The robustness summary shows p=0.5 and p=1.0 TOWARD on 3/6 damaged cases, p=2.0 TOWARD on 5/6, with mean |F~M-p| of 0.004, 0.000, and 0.057 respectively.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "759d812a0dfbecaef3f6991044e52a4cff77a7aceab1b6dc40a349e4323425ec",
       "note_path": "docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-audit if this is cited as a universal graph-damage theorem, as proof of p=1 uniqueness, or as depending on the older missing frozen log rather than the current registered cache.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -18506,6 +18492,63 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-19T14:26:30.472624+00:00",
+          "audit_date": "2026-05-11T15:43:09.248816+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "action_power_scaling_sweep_note": "Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F\u221dM=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law.",
+              "action_uniqueness_note": "Bounded fixed-family replay on the ordered 3D dense lattice with h=0.5, W=8, L=12, kernel 1/L^2 with h^2 measure, field s/r, and the tested action laws S=L, S=L(1+f), S=L(1-f^0.5), S=L(1-f), S=L(1-f^2), S=L exp(-f), S=L/(1+f), and S=-Lf, showing that phase valleys give TOWARD response and that the measured F\u221dM exponent follows the weak-field power for the tested valley-power cases, with weak-field-linear valleys giving F\u221dM=1.00.",
+              "inverse_problem_note": "Bounded inverse-problem graph-perturbation replay on the specified 3D valley-linear harness, where Born is clean for all five variants, TOWARD holds for baseline/asym/jitter/sparse, heavy_delete_70 is AWAY, and k=0/no-field controls are zero."
+            },
+            "dep_claim_type": {
+              "action_power_scaling_sweep_note": "bounded_theorem",
+              "action_uniqueness_note": "bounded_theorem",
+              "inverse_problem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "action_power_scaling_sweep_note": "retained_bounded",
+              "action_uniqueness_note": "retained_bounded",
+              "inverse_problem_note": "retained_bounded"
+            },
+            "deps": [
+              "action_power_scaling_sweep_note",
+              "action_uniqueness_note",
+              "inverse_problem_note"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": "ded4cb68acedca3c1745cc272cceea896deb4a12b50bbcafaa210b96fa3ec32c",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The declared one-hop dependencies are retained-bounded, and the completed registered runner cache prints the damage ladder and summary supporting the bounded negative conclusion. The audited scope is the current-cache finite replay, not a universal graph theorem or standalone action uniqueness proof.",
+          "claim_scope": "Bounded current-cache graph-damage replay on the retained 3D ordered-lattice family comparing p=0.5, p=1.0, and p=2.0, where p=1 is not uniquely most robust: p=1 has smallest F~M-p drift when retained, while p=2 keeps TOWARD on more damaged cases.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-11T15:43:09.248816+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:action_power_scaling_sweep_note:retained_bounded->audit_in_progress",
+          "load_bearing_step": "The robustness summary shows p=0.5 and p=1.0 TOWARD on 3/6 damaged cases, p=2.0 TOWARD on 5/6, with mean |F~M-p| of 0.004, 0.000, and 0.057 respectively.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "Re-audit if this is cited as a universal graph-damage theorem, as proof of p=1 uniqueness, or as depending on the older missing frozen log rather than the current registered cache.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The completed cache supports the note's key comparison: the bounded damage ladder weakens the claim that p=1 is structurally most robust, because p=2 retains the TOWARD sign on more damaged cases while p=1 is cleaner only on the exponent side when it survives. The retained-bounded dependencies now supply the fixed-family context, and no broader graph-universality conclusion is audited. Residual risk is limited to the runner's finite damage ladder and current cache; the original missing frozen log and any standalone theorem framing remain outside the clean scope."
         }
       ],
       "runner_check_breakdown": {
@@ -18518,7 +18561,7 @@
       "runner_path": "scripts/broken_graph_action_power_robustness.py",
       "title": "Broken-Graph Action-Power Robustness Note",
       "transitive_descendants": 1,
-      "verdict_rationale": "The completed cache supports the note's key comparison: the bounded damage ladder weakens the claim that p=1 is structurally most robust, because p=2 retains the TOWARD sign on more damaged cases while p=1 is cleaner only on the exponent side when it survives. The retained-bounded dependencies now supply the fixed-family context, and no broader graph-universality conclusion is audited. Residual risk is limited to the runner's finite damage ladder and current cache; the original missing frozen log and any standalone theorem framing remain outside the clean scope."
+      "verdict_rationale": null
     },
     "c3_symmetry_preserved_interpretation_hostile_audit_findings_note_2026-05-17": {
       "audit_date": null,

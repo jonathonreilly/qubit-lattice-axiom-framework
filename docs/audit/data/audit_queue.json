@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 889,
     "high": 27,
-    "leaf": 334,
+    "leaf": 335,
     "medium": 116
   },
   "cycle_break_target_count": 297,
@@ -9531,17 +9531,17 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "action_power_scaling_sweep_note",
       "claim_scope": "Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F\u221dM=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law.",
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 13.956,
       "note_path": "docs/ACTION_POWER_SCALING_SWEEP_NOTE.md",
@@ -9549,30 +9549,6 @@
       "ready": true,
       "runner_path": "scripts/action_power_scaling_sweep.py",
       "transitive_descendants": 992
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "action_uniqueness_note",
-      "claim_scope": "Bounded fixed-family replay on the ordered 3D dense lattice with h=0.5, W=8, L=12, kernel 1/L^2 with h^2 measure, field s/r, and the tested action laws S=L, S=L(1+f), S=L(1-f^0.5), S=L(1-f), S=L(1-f^2), S=L exp(-f), S=L/(1+f), and S=-Lf, showing that phase valleys give TOWARD response and that the measured F\u221dM exponent follows the weak-field power for the tested valley-power cases, with weak-field-linear valleys giving F\u221dM=1.00.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "action_power_scaling_sweep_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.454,
-      "note_path": "docs/ACTION_UNIQUENESS_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/action_universality_probe.py",
-      "transitive_descendants": 991
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -13011,6 +12987,30 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_reflection_positivity_check.py",
+      "transitive_descendants": 991
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "action_uniqueness_note",
+      "claim_scope": "Bounded fixed-family replay on the ordered 3D dense lattice with h=0.5, W=8, L=12, kernel 1/L^2 with h^2 measure, field s/r, and the tested action laws S=L, S=L(1+f), S=L(1-f^0.5), S=L(1-f), S=L(1-f^2), S=L exp(-f), S=L/(1+f), and S=-Lf, showing that phase valleys give TOWARD response and that the measured F\u221dM exponent follows the weak-field power for the tested valley-power cases, with weak-field-linear valleys giving F\u221dM=1.00.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "action_power_scaling_sweep_note"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "retained_pending_chain",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.454,
+      "note_path": "docs/ACTION_UNIQUENESS_NOTE.md",
+      "queue_reason": "audit_in_progress",
+      "ready": false,
+      "runner_path": "scripts/action_universality_probe.py",
       "transitive_descendants": 991
     },
     {
@@ -39923,6 +39923,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "broken_graph_action_power_robustness_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "inverse_problem_note",
+        "action_uniqueness_note",
+        "action_power_scaling_sweep_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/action_universality_probe.py"
+      ],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/broken_graph_action_power_robustness.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "causal_distance_tail_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -47727,6 +47755,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 61,
-  "total_pending": 1366
+  "ready_count": 60,
+  "total_pending": 1367
 }

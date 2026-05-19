@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 115 |
+| **retained** | 114 |
 | **retained_no_go** | 136 |
 | **retained_bounded** | 356 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
 | unaudited | 1348 |
-| audit_in_progress | 8 |
+| audit_in_progress | 9 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
-| `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | D | - |
+| `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | D | - |
 | `decoherence_action_independence_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |

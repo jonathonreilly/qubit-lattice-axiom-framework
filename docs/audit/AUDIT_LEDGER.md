@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 111 |
-| **retained_no_go** | 137 |
+| **retained_no_go** | 136 |
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1316 |
-| audit_in_progress | 19 |
+| unaudited | 1315 |
+| audit_in_progress | 20 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -35,7 +35,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
-| `decoration_under_graph_first_su3_integration_note` | 2 |
+| `decoration_under_graph_first_su3_integration_note` | 3 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
@@ -52,16 +52,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 20 |
 | `audited_clean` | 587 |
 | `audited_conditional` | 75 |
-| `audited_decoration` | 25 |
+| `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1535 |
+| `unaudited` | 1534 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 997 |
-| `decoration` | 26 |
+| `bounded_theorem` | 996 |
+| `decoration` | 27 |
 | `meta` | 222 |
 | `no_go` | 230 |
 | `open_gate` | 110 |
@@ -126,7 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `decoherence_action_independence_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
-| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `h0125_scalable_scout_note` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | B | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
@@ -818,6 +818,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` |
+| `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
@@ -6463,6 +6464,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** From the trace equation 2 n_color * a + 2 * b = 0, one gets b = -n_color * a, hence a : b = 1 : (-n_color); with b = -1 this gives a = 1/n_color and the stated Q(u_L), Q(d_L) denominators by gcd parity reduction.  _(class `A`)_
 - **chain closes:** True — The scoped claim closes as elementary algebra and integer gcd reduction under the assumptions stated in the note. No physical bridge to SM hypercharge, no derivation of n_color = 3, and no derivation of the LH state count is needed because those are explicitly excluded from this narrow theorem.
 - **rationale:** The theorem is narrow but correctly bounded: it assumes the trace equation, positive integer n_color, and the named conventions before deriving only algebraic consequences. The proof and runner agree, and the parity denominator rule follows from gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2), with the same result for Q(d_L). This is not an audit of the broader physical identification or of why n_color = 3; those are outside the stated claim boundary.
+- **auditor confidence:** high
+
+### `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10`
+
+- **Note:** [`LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md`](../../docs/LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited only the bounded block-identification proof-walk that Sym² carries the SU(3) fundamental block, Anti² carries the singlet block, and the LH-doublet sector decomposes as (2,3) ⊕ (2,1) without staggered-Dirac or lattice-action inputs.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_graph_first_su3_integration_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-lhcm_matter_assignment_b-062`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained graph-first SU(3) integration gives the tau-induced 3+1 Sym²/Anti² split, and standard SU(3) representation theory identifies the 3-dimensional non-trivial block as fundamental and the 1-dimensional block as trivial, yielding C² ⊗ (Sym² ⊕ Anti²) = (2,3) ⊕ (2,1).  _(class `A`)_
+- **chain closes:** True — The cited graph-first SU(3) integration authority is retained_bounded and supplies the 3+1 split and SU(3) embedding; the rest is standard representation theory and tensor-product distributivity. No non-retained lattice-realization premise is needed for this bounded claim.
+- **rationale:** The proof-walk is an algebraic closure over a retained upstream graph-first SU(3) integration note plus standard mathematics, with no external comparator or tuned numerical input. The runner performs real exact checks of the tau eigendecomposition, tensor dimensions, and representative SU(3) algebra facts, but it does not establish a new first-principles framework result beyond the retained parent. Under the rubric tie-breaker, this is audited_decoration rather than audited_clean because the chain reduces to one retained parent claim plus standard mathematics.
+- **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
 
 ### `lhcm_matter_assignment_from_su3_representation_note_2026-05-02`

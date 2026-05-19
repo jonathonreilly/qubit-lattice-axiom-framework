@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 874,
+    "critical": 873,
     "high": 27,
     "leaf": 317,
     "medium": 106
@@ -9508,30 +9508,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "cross_confirmation_disagreement",
-      "claim_id": "equivalence_principle_harness_note",
-      "claim_scope": "For the fixed 3D ordered-lattice family h=0.5, W=8, L=12, z_mass=5, the harness verifies centroid-shift invariance under global amplitude scaling and strong dependence on normalized packet shape for valley and spent_delay actions.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/two_body_momentum_harness.py"
-      ],
-      "load_bearing_score": 10.957,
-      "note_path": "docs/EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/equivalence_principle_harness.py",
-      "transitive_descendants": 993
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
       "claim_id": "action_power_scaling_sweep_note",
       "claim_scope": "Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F\u221dM=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law.",
       "claim_type": "bounded_theorem",
@@ -9548,6 +9524,41 @@
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/action_power_scaling_sweep.py",
+      "transitive_descendants": 992
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "newton_derivation_top4_bridge_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16",
+        "persistent_object_compact_inertial_probe_note_2026-04-16",
+        "equivalence_principle_harness_note",
+        "matter_inertial_closure_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/minimal_source_driven_field_probe.py",
+        "scripts/persistent_object_adaptive_readout_probe.py",
+        "scripts/persistent_object_blended_readout_boundary_probe.py",
+        "scripts/persistent_object_blended_readout_transfer_sweep.py",
+        "scripts/persistent_object_compact_inertial_probe.py",
+        "scripts/persistent_object_compact_shared.py",
+        "scripts/persistent_object_top3_multistage_probe.py"
+      ],
+      "load_bearing_score": 10.456,
+      "note_path": "docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/newton_derivation_top4_bridge_runner.py",
       "transitive_descendants": 992
     },
     {
@@ -12614,41 +12625,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py",
-      "transitive_descendants": 992
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "newton_derivation_top4_bridge_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "persistent_object_top4_multistage_transfer_sweep_note_2026-04-16",
-        "persistent_object_compact_inertial_probe_note_2026-04-16",
-        "equivalence_principle_harness_note",
-        "matter_inertial_closure_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/minimal_source_driven_field_probe.py",
-        "scripts/persistent_object_adaptive_readout_probe.py",
-        "scripts/persistent_object_blended_readout_boundary_probe.py",
-        "scripts/persistent_object_blended_readout_transfer_sweep.py",
-        "scripts/persistent_object_compact_inertial_probe.py",
-        "scripts/persistent_object_compact_shared.py",
-        "scripts/persistent_object_top3_multistage_probe.py"
-      ],
-      "load_bearing_score": 10.456,
-      "note_path": "docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/newton_derivation_top4_bridge_runner.py",
       "transitive_descendants": 992
     },
     {
@@ -46684,5 +46660,5 @@
     }
   ],
   "ready_count": 21,
-  "total_pending": 1324
+  "total_pending": 1323
 }

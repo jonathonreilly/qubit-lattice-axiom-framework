@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 363 |
+| **retained_bounded** | 364 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1315 |
-| audit_in_progress | 20 |
+| audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 20 |
-| `audited_clean` | 587 |
+| `audit_in_progress` | 19 |
+| `audited_clean` | 588 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `action_power_scaling_sweep_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | D | - |
-| `decoherence_action_independence_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
@@ -232,6 +231,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cycle_break_frontier_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_break_slice_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `cyclic_projector_compression_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2621,6 +2621,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Exact cyclic-group averaging over the explicitly defined 3-cycle C is self-adjoint and idempotent under the Frobenius inner product, so it projects Herm(3) onto the C-fixed subspace; direct exact basis enumeration identifies that subspace as span_R{I, C+C^2, i(C-C^2)} and gives the stated coefficient formula.  _(class `A`)_
 - **chain closes:** True — The theorem closes from the explicit definition of C and P_cyc plus exact finite-dimensional algebra. The parent-row context line is not load-bearing: the row has no dependencies, defines C directly, and the asserted conclusions are independently checkable symbolic identities.
 - **rationale:** The source note is narrowly scoped and the exact runner output reports 26 algebraic checks with no failures, covering the group facts, Hermiticity, idempotence and fixed basis, basis action, and generic compression formula. The generated classifier's decoration-candidate signal arises from the parent-row context check rather than from the theorem's proof obligations, so it does not convert this independent helper theorem into decoration. Residual risk is downstream misuse: later rows must not treat B0/B1/B2 as physical response channels without a separate audited bridge.
+- **auditor confidence:** high
+
+### `decoherence_action_independence_note`
+
+- **Note:** [`DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md`](../../docs/DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the provided 3D ordered 1/L^2 zero-field lattice harness at h in {1.0, 0.5, 0.25}, the two implemented action modes produce exactly identical decoherence observables within the runner output.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-152136-02e6f5c5-decoherence_action_indep-003`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** At zero field both action branches reduce to act = L, so the per-edge contribution and all downstream decoherence observables are identical between spent_delay and valley_linear.  _(class `A`)_
+- **chain closes:** True — The restricted packet includes the primary runner and the helper defining both action branches. Substituting the runner's zero field into those branches gives act = L for both modes, so the equality of propagated amplitudes and downstream observables follows on the tested harness.
+- **rationale:** The load-bearing independence claim closes by direct algebra over the included helper source: both action branches use the same act = L at zero field. The primary runner then recomputes the tested observables and reports zero deltas for every h and metric, with no hard-coded expected values on the load-bearing path. The numeric values in the note's displayed table are stale relative to the supplied runner cache for several metrics, but the audited action-independence claim is the exact cross-action identity, which the runner and algebra both support.
 - **auditor confidence:** high
 
 ### `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17`

@@ -1,8 +1,8 @@
 {
   "last_invalidations": [
     {
-      "claim_id": "growing_graph_expansion_skeptic_audit_note",
-      "reason": "dep_claim_scope_changed:growing_graph_dynamic_limit_diagnostic_note"
+      "claim_id": "growing_graph_dynamic_propagation_replacement_note",
+      "reason": "dep_weakened:growing_graph_frontier_expansion_proxy_note:retained->audit_in_progress"
     }
   ],
   "rows": {
@@ -104412,32 +104412,22 @@
       "verdict_rationale": "The source note's retained conclusion is a bounded no-go, not a positive physics derivation. The runner computes the frontier-distance observables and the dynamic visibility drops from the supplied graph-generation and propagation code, and the reported values support the stated non-monotone, seed-dependent behavior. No cited upstream authority is missing, and no external comparator or calibrated numerical match is used."
     },
     "growing_graph_dynamic_propagation_replacement_note": {
-      "audit_date": "2026-05-03T21:28:37.066788+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_effective_status": {
-          "growing_graph_frontier_expansion_proxy_note": "retained"
-        },
-        "deps": [
-          "growing_graph_frontier_expansion_proxy_note"
-        ],
-        "load_bearing_score": 0.0,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "fresh-agent-growing-graph-replacement",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The source note only imports the one-hop retained proxy result and narrows the claim boundary around it. The current runner output matches the frozen replay values and the note explicitly excludes cosmology, de Sitter, wavepacket, and amplitude-carry-forward claims.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "growing_graph_dynamic_propagation_replacement_note",
-      "claim_scope": "Bounded replacement claim that the dynamic propagator lane is not promoted here and the retained growth content is limited to the frontier-delay proxy on the existing growing-graph family.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-03T21:28:37.066788+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -104445,21 +104435,21 @@
         "growing_graph_frontier_expansion_proxy_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/evolving_network_prototype.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The retained replacement observable is the frontier-delay proxy frozen in the runner and proxy note, with step 0 frontier delay 3.000, step 20 frontier delay 22.000, slope +0.9325 hops/step, and static control frontier delay 3.000.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b403fa8020af8e831b606c7d01736b5f5c1cae3d59184d93b3c3fef8dd85fa4a",
       "note_path": "docs/GROWING_GRAPH_DYNAMIC_PROPAGATION_REPLACEMENT_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-check only if the upstream frontier-expansion proxy loses retained status or if this note is edited to claim amplitude-carry-forward or cosmological expansion.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-context",
       "previous_audits": [
@@ -104526,6 +104516,48 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the registered runner exits with status 0 but has no classified A/B/C/D PASS checks in runner_classification.json. Why this blocks: infrastructure registration alone does not show that the load-bearing step is being computed or checked. Repair target: add explicit runner checks or a proof artifact that exposes the load-bearing computation under the audit classifier. Claim boundary until fixed: safe to cite as a support note with executable but unratified support."
+        },
+        {
+          "archived_at": "2026-05-19T14:32:22.020813+00:00",
+          "audit_date": "2026-05-03T21:28:37.066788+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_effective_status": {
+              "growing_graph_frontier_expansion_proxy_note": "retained"
+            },
+            "deps": [
+              "growing_graph_frontier_expansion_proxy_note"
+            ],
+            "load_bearing_score": 0.0,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "fresh-agent-growing-graph-replacement",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The source note only imports the one-hop retained proxy result and narrows the claim boundary around it. The current runner output matches the frozen replay values and the note explicitly excludes cosmology, de Sitter, wavepacket, and amplitude-carry-forward claims.",
+          "claim_scope": "Bounded replacement claim that the dynamic propagator lane is not promoted here and the retained growth content is limited to the frontier-delay proxy on the existing growing-graph family.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-03T21:28:37.066788+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:growing_graph_frontier_expansion_proxy_note:retained->audit_in_progress",
+          "load_bearing_step": "The retained replacement observable is the frontier-delay proxy frozen in the runner and proxy note, with step 0 frontier delay 3.000, step 20 frontier delay 22.000, slope +0.9325 hops/step, and static control frontier delay 3.000.",
+          "load_bearing_step_class": "B",
+          "notes_for_re_audit_if_any": "Re-check only if the upstream frontier-expansion proxy loses retained status or if this note is edited to claim amplitude-carry-forward or cosmological expansion.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The claim is clean within its bounded replacement scope: it does not assert a new dynamic propagation theorem, but defers to the retained frontier-delay proxy and preserves the proxy-only limitations. The runner completes and reproduces the frozen values in the note. Residual risk is confined to the upstream proxy family and to any future attempt to re-promote dynamic amplitude propagation, which this note does not claim."
         }
       ],
       "runner_check_breakdown": {
@@ -104538,7 +104570,7 @@
       "runner_path": "scripts/growing_graph_frontier_expansion.py",
       "title": "Growing Graph Dynamic Propagation Replacement Note",
       "transitive_descendants": 0,
-      "verdict_rationale": "The claim is clean within its bounded replacement scope: it does not assert a new dynamic propagation theorem, but defers to the retained frontier-delay proxy and preserves the proxy-only limitations. The runner completes and reproduces the frozen values in the note. Residual risk is confined to the upstream proxy family and to any future attempt to re-promote dynamic amplitude propagation, which this note does not claim."
+      "verdict_rationale": null
     },
     "growing_graph_expansion_card_note": {
       "audit_date": "2026-05-09T16:06:07.864023+00:00",
@@ -105011,7 +105043,7 @@
       "auditor": "fresh-agent-hilbert",
       "auditor_confidence": "medium",
       "auditor_family": "codex-gpt-5",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": true,
       "chain_closure_explanation": "The current runner output matches the note's frozen replay and directly computes the finite graph-distance observable. The closure is limited to this graph proxy and does not establish a metric, cosmology, or asymptotic theorem.",
       "claim_id": "growing_graph_frontier_expansion_proxy_note",
@@ -105035,19 +105067,30 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T14:32:21.628372+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-growing_graph_frontier_e-014",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the provided growing-graph prototype runner with the stated seed, growth_steps=20, max_height=15, and source=(2,0), the computed unweighted frontier delay increases monotonically while the frozen step-0 control remains static.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "retained",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status": "audit_in_progress",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/evolving_network_prototype.py"
       ],
       "independence": "fresh_context",
-      "intrinsic_status": "retained",
+      "intrinsic_status": "audit_in_progress",
       "load_bearing_score": 14.45,
       "load_bearing_step": "The growing graph expands its frontier delay relative to the frozen control, with step 0 frontier delay 3.000, step 20 frontier delay 22.000, slope +0.9325 hops/step, and static control frontier delay 3.000.",
       "load_bearing_step_class": "A",

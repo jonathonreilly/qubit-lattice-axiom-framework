@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 116 |
+| **retained** | 115 |
 | **retained_no_go** | 138 |
-| **retained_bounded** | 357 |
+| **retained_bounded** | 356 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1348 |
-| audit_in_progress | 5 |
+| unaudited | 1349 |
+| audit_in_progress | 6 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 18 |
-| `audited_clean` | 573 |
+| `audited_clean` | 572 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1567 |
+| `unaudited` | 1568 |
 
 | claim_type | count |
 |---|---:|
@@ -127,7 +127,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `equivalence_principle_harness_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
-| `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `h0125_scalable_scout_note` | no_go | audit_in_progress | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -343,7 +343,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
-| `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4631,19 +4630,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The dynamic-propagation visibility drop weakens with graph size, remains seed-dependent, and no monotone dynamic-propagation order parameter emerges from the frozen static-control comparison.  _(class `C`)_
 - **chain closes:** True — The supplied runner and helper sources genuinely construct the frontier-growth snapshots, generated causal DAGs, propagation amplitudes, and visibility summaries without importing the contested result or hard-coding the reported values. The conclusion is limited to the tested graph family, seeds, controls, and layer counts.
 - **rationale:** The source note's retained conclusion is a bounded no-go, not a positive physics derivation. The runner computes the frontier-distance observables and the dynamic visibility drops from the supplied graph-generation and propagation code, and the reported values support the stated non-monotone, seed-dependent behavior. No cited upstream authority is missing, and no external comparator or calibrated numerical match is used.
-- **auditor confidence:** high
-
-### `growing_graph_dynamic_propagation_replacement_note`
-
-- **Note:** [`GROWING_GRAPH_DYNAMIC_PROPAGATION_REPLACEMENT_NOTE.md`](../../docs/GROWING_GRAPH_DYNAMIC_PROPAGATION_REPLACEMENT_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded replacement claim that the dynamic propagator lane is not promoted here and the retained growth content is limited to the frontier-delay proxy on the existing growing-graph family.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `fresh-agent-growing-graph-replacement`  (codex-gpt-5; independence=fresh_context)
-- **load-bearing step:** The retained replacement observable is the frontier-delay proxy frozen in the runner and proxy note, with step 0 frontier delay 3.000, step 20 frontier delay 22.000, slope +0.9325 hops/step, and static control frontier delay 3.000.  _(class `B`)_
-- **chain closes:** True — The source note only imports the one-hop retained proxy result and narrows the claim boundary around it. The current runner output matches the frozen replay values and the note explicitly excludes cosmology, de Sitter, wavepacket, and amplitude-carry-forward claims.
-- **rationale:** The claim is clean within its bounded replacement scope: it does not assert a new dynamic propagation theorem, but defers to the retained frontier-delay proxy and preserves the proxy-only limitations. The runner completes and reproduces the frozen values in the note. Residual risk is confined to the upstream proxy family and to any future attempt to re-promote dynamic amplitude propagation, which this note does not claim.
 - **auditor confidence:** high
 
 ### `growing_graph_expansion_card_note`

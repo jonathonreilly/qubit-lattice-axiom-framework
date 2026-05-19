@@ -1,28 +1,27 @@
 slug: audited-conditional-repair-2026-05-18
 launched_at: 2026-05-18T22:50:00Z
+closed_at: 2026-05-19T11:00:00Z
 runtime_budget_hours: 12
+runtime_used_hours: ~12
 mode: campaign
 target_status: audited_clean
 fallback_status: bounded_retained
-current_cycle: 0
-current_block: null
-current_route: pending
-opportunity_queue_size: 20
-tier_a_remaining: 20
-tier_b_candidates: 3
-review_pr_count: 0
+current_cycle: 45
+current_block: campaign_close
+current_route: closed
+opportunity_queue_remaining: ~60 (mostly Tier C cascade-pending + Tier D requiring new physics)
+tier_a_completed: 30
+tier_b_completed: 5
+narrowing_completed: 10
+review_pr_count: 45
 review_pr_backlog_count: 0
-deep_block_completed: false
-no_go_count: 0
-demotion_count: 0
-stretch_attempts: 0
-stuck_fan_out_synthesis: false
+deep_block_completed: true
+no_go_count: 0_overclaimed (per Batch 9 self_gravity_failure narrowing; one no_go narrowed safely per N1-N8)
+demotion_count: 1 (unified_basin_signed_source → archive/salvage)
+stretch_attempts: 3 (rconn_derived Tier B, koide_frobenius Tier B, yt_zero_import inline-derivation Tier B-adjacent)
+stuck_fan_out_synthesis: false (not triggered; survey-based queue selection sufficient)
 active_branch: claude/vigilant-shirley-0d8f77
 worktree: /Users/jonreilly/Projects/Physics/.claude/worktrees/vigilant-shirley-0d8f77
-last_checkpoint_at: 2026-05-18T22:50:00Z
-next_exact_action: |
-  Read MIRROR_2D_GRAVITY_LAW_NOTE.md fully, identify what
-  the 2026-05-17 audit actually needs for closure beyond
-  the helper-source preamble; execute the minimal repair
-  end-to-end as the first cycle's pattern reference.
-stop_condition: pending_runtime
+last_checkpoint_at: 2026-05-19T11:00:00Z
+next_exact_action: campaign closed; audit-loop re-audits PRs on its own cadence via cascade-resolution (docs/audit/data/reaudit_candidates.json)
+stop_condition: runtime_budget_exhausted_clean

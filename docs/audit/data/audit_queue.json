@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 885,
+    "critical": 884,
     "high": 27,
     "leaf": 338,
     "medium": 116
@@ -9849,31 +9849,6 @@
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py",
-      "transitive_descendants": 986
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "h0125_wider_w4_note",
-      "claim_scope": "Bounded no-go that the completed single-width phys_w=4, phys_l=6, h=0.125 replay rows, especially the full-window z=3.0 row, do not rescue the weak-field exponent from the alpha approximately 0.5 class.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "retained_no_go",
-      "helper_runner_paths": [
-        "scripts/lattice_3d_l2_numpy_h0125_only.py",
-        "scripts/numpy_replay_bootstrap.py"
-      ],
-      "load_bearing_score": 10.447,
-      "note_path": "docs/H0125_WIDER_W4_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/lattice_3d_l2_wide_h0125_w4.py",
       "transitive_descendants": 986
     },
     {
@@ -47738,6 +47713,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 57,
-  "total_pending": 1366
+  "ready_count": 56,
+  "total_pending": 1365
 }

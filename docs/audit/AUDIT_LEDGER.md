@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 20 |
-| `audited_clean` | 572 |
+| `audit_in_progress` | 19 |
+| `audited_clean` | 573 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
@@ -130,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `h0125_scalable_scout_note` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | B | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
-| `h0125_wider_w4_note` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
@@ -348,6 +347,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
@@ -4704,6 +4704,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The h=0.125 failure is diagnosed and quantified by boundary leakage, beam-width growth, exponentially compounded probability loss, and an SNR=0.5 noise explanation of the AWAY result.  _(class `C`)_
 - **chain closes:** False — The source note has no runner, no artifact chain, and no cited authority for the transfer norms, beam widths, detector probabilities, or SNR. Its stated probability formula also fails internally: retention^nl gives about 8.18e-4, 1.14e-11, and 4.26e-34 for the three rows, not 3.7e-59, 1.1e-88, and 1.6e-136.
 - **rationale:** Issue: the note's load-bearing numerical diagnosis is unsupported by any declared runner or one-hop derivation, and the explicit formula `P_det = (retention)^nl` is inconsistent with the printed P_det table by tens to more than one hundred orders of magnitude. Why this blocks: the retained negative claim depends on those numbers to distinguish boundary leakage, beam spreading, compounded loss, and statistical-noise AWAY behavior; without a reproducible computation or internally consistent formula, the diagnosis is not auditable. Repair target: add an executable h=0.125 failure diagnostic that computes T_interior/T_corner, beam sigma, detector probability including any geometric-spreading factor, and centroid SNR from the same propagation model, then update the note so every table entry follows from that runner. Claim boundary until fixed: safely claim only that boundary leakage and beam spreading are plausible failure hypotheses and that h=0.125 has not been retained by this note; do not retain the quantified root-cause diagnosis or SNR=0.5 noise conclusion.
+- **auditor confidence:** high
+
+### `h0125_wider_w4_note`
+
+- **Note:** [`H0125_WIDER_W4_NOTE.md`](../../docs/H0125_WIDER_W4_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded audit of the phys_l=6, phys_w=4, h=0.125 dense-family runner row, especially the full detector window at z=3.0 over the listed weak-field strengths.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-h0125_wider_w4_note-026`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The retained width-4 full-window z=3.0 row has Born = 8.01e-15, clean k = 0, TOWARD gravity +0.010955, and alpha = 0.499, so widening to phys_w = 4 does not move the weak-field exponent toward 1.0.  _(class `C`)_
+- **chain closes:** True — The completed runner output matches the note's load-bearing row, and the supplied source computes the lattice, propagation, Born ratio, k=0 null, gravity shift, and log-log alpha from arrays rather than printing fixed expected values. The conclusion is bounded to that retained tested row.
+- **rationale:** The runner cache now completed with status ok under the declared 1800 s budget and reproduces the cited Born, k=0, gravity, and alpha diagnostics. The primary runner calls helper routines that build the dense lattice family, propagate amplitudes, compute detector probabilities, and fit the exponent from computed deltas; no cited upstream note or external comparator is used as the load-bearing premise. The audit is therefore clean for the bounded no-go statement that the tested width-4 row remains in the approximately 0.5 exponent class.
 - **auditor confidence:** high
 
 ### `h0125_wider_w4_probe_note`

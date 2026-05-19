@@ -1,13 +1,14 @@
 # Zero-Import y_t Derivation: Definitive Authority Note
 
-**Date:** 2026-04-14
+**Date:** 2026-04-14 (last status edit: 2026-05-18)
 **Status:** historical zero-import chain note with EW normalization now
 matching-rule conditional through `kappa_EW`; do not cite the EW `sqrt(9/8)`
 step as an unconditional retained derivation.
 **Script:** `scripts/frontier_yt_zero_import_chain.py`
 
-**Status authority and audit hygiene (2026-05-10):**
-The audit lane has classified this note `audited_conditional`. The
+**Status authority and audit hygiene (2026-05-10, updated 2026-05-18):**
+The audit lane has classified this note `audited_conditional` (audit row
+`yt_zero_import_chain_note`, audit date 2026-05-11, cross-family). The
 substantive technical findings (Ward-identity construction, QFP
 insensitivity, color projection bookkeeping, output-labelling
 clarification of the earlier `g_s_evolved(M_Pl)/sqrt(6)` confusion) are
@@ -23,6 +24,34 @@ normalization is also conditional rather than derived. See "Open
 upstream imports" below for the full register. Audit verdict and
 effective status are set by the independent audit lane only; nothing
 in this rigorization edit promotes status.
+
+**Claim narrowing (2026-05-18, audit-aware repair).** Per the audit row's
+`notes_for_re_audit_if_any`, the cheapest repair is either (A) promote
+the two upstream bridges (`canonical_plaquette_surface` and the
+`kappa_EW = 0` connected-trace selector) to retained-grade, or (B)
+inline the derivations of those anchors. Path A is out of scope of this
+in-note edit; path B is impossible from the current retained primitives
+because (i) the canonical `<P>(beta = 6, SU(3), 4D) = 0.5934` insertion
+is itself `bounded`, with a documented open analytic-insertion gap in
+`PLAQUETTE_SELF_CONSISTENCY_NOTE.md` (not `retained_bounded`), and
+(ii) the `kappa_EW = 0` specialization is the named open matching rule
+(M) of the cited Fierz authority `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+and is explicitly not derived in either that note or this one. This
+2026-05-18 edit therefore takes a different shape than path A or path B:
+it (1) inlines the derivations that **can** be done from retained or
+retained-bounded primitives (purely algebraic chain `<P> -> u_0 ->
+alpha_LM -> alpha_s(v)` plus the EW `K_EW(kappa_EW) = 9/8` algebra
+under the imported exact Fierz fraction `8/9`) into the new section 9
+of this note, and (2) names the two residual gaps (the bounded
+canonical plaquette insertion at `beta = 6` and the matching rule (M))
+so that the source note explicitly records the analytic scope without
+new admissions and without inventing closures. The claim type therefore
+remains `positive_theorem` at the *algebraic / Ward / RGE* level of
+section 4 (those are not in the conditional perimeter), while the
+*overall y_t / EW prediction chain* is honestly conditional on the two
+named upstream items. No new axioms are introduced and no new content
+is asserted as derived from retained primitives that is not actually
+derived from retained primitives.
 
 ---
 
@@ -262,3 +291,266 @@ verdict is one of the following two paths:
 Either repair removes the conditional perimeter; this rigorization
 edit only sharpens the boundary of what currently is and is not in
 that perimeter, without changing audit status.
+
+---
+
+## 9. Inlined derivations of the imported anchors (2026-05-18 repair)
+
+This section addresses the audit-row repair target
+`missing_dependency_edge` for `yt_zero_import_chain_note`: "add
+retained-grade dependencies for the canonical plaquette surface (`<P>`,
+`u_0`, `alpha_LM`, `alpha_s(v)`) and the `kappa_EW = 0`/`F_adj`
+connected-trace selector, or inline those derivations so
+`frontier_yt_zero_import_chain.py` no longer imports the load-bearing
+anchors."
+
+It inlines every step of those two derivations that **can** be performed
+from retained or retained-bounded primitives, and it explicitly names
+the two residual gaps that cannot be closed without either upstream
+promotion or new admissions. No new axioms or admissions are introduced.
+
+### 9.A Derivation: canonical plaquette-surface chain `(<P>, u_0, alpha_LM, alpha_s(v))`
+
+The four canonical plaquette-surface quantities used in the y_t chain
+arise from one bounded input and three definitional / tadpole-improved
+algebraic steps. The exact algebraic content is reproduced here so that
+the source note is independently checkable against
+`scripts/canonical_plaquette_surface.py`.
+
+**Step 9.A.0 — Inputs and provenance.** The bare gauge coupling
+`alpha_bare = g_bare^2 / (4 pi)` with `g_bare^2 = 1` (canonical
+normalization on the retained graph-first gauge surface; framework-point
+`beta = 2 N_c / g_bare^2 = 6`) is retained-bounded
+(`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`, §"Framework-point context"). The
+plaquette value
+
+```text
+<P>(beta = 6, SU(3), 4D)  =  0.5934                                 (9.A.1)
+```
+
+is **bounded**, not retained: the parent note explicitly states that the
+exact analytic `beta = 6` insertion remains an open gap (the bridge-
+support stack pins the analytic candidate at `0.593530679977098`, only
+`+0.022%` above `0.5934`, but the strict-inequality slack
+`0.5934 <= <P>(beta = 6) <= 0.59353` is **not** closed). This note
+inherits that bounded status.
+
+**Step 9.A.1 — Lepage-Mackenzie tadpole improvement (`u_0`).** The
+Lepage-Mackenzie mean-field link variable on a Wilson plaquette surface
+is
+
+```text
+u_0  :=  <P>^(1/4).                                                  (9.A.2)
+```
+
+This is the standard Lepage-Mackenzie tadpole-improvement definition
+(Phys. Rev. D 48, 2250, 1993) applied at the retained framework point
+`beta = 6`. The exponent `1/4` is fixed by the four-link Wilson
+plaquette holonomy: under the canonical perturbative Wilson plaquette
+expectation the link factor enters with multiplicity four around each
+plaquette, so the geometric-mean tadpole representative of one link is
+the fourth root of the plaquette. The relation (9.A.2) is a closed
+algebraic identity once `<P>` is admitted at its bounded scope.
+
+Numerically:
+
+```text
+u_0  =  0.5934^(1/4)  =  0.87768...                                  (9.A.3)
+```
+
+**Step 9.A.2 — Lepage-Mackenzie improved coupling (`alpha_LM`).** The
+Lepage-Mackenzie improved coupling is the canonical tadpole-corrected
+single-link coupling
+
+```text
+alpha_LM  :=  alpha_bare / u_0.                                      (9.A.4)
+```
+
+The factor `1/u_0` is the standard Lepage-Mackenzie one-link tadpole
+correction: each Wilson plaquette comes with four links, so improvement
+of a single-link operator carries one factor of `1/u_0`. This is the
+canonical Lepage-Mackenzie definition; it is a closed algebraic identity
+once `alpha_bare` (retained-bounded) and `u_0` (algebraic from `<P>`,
+bounded) are fixed.
+
+Numerically with `alpha_bare = 1/(4 pi) = 0.0795775...`:
+
+```text
+alpha_LM  =  0.0795775 / 0.87768  =  0.09067...                      (9.A.5)
+```
+
+**Step 9.A.3 — Coupling Map Theorem (`alpha_s(v)`).** The Coupling Map
+Theorem (`ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md`,
+`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`)
+gives the tadpole-improvement vertex-power exponent `n_link = 2` (one
+gauge link per vertex leg, two legs per vertex) and therefore
+
+```text
+alpha_s(v)  :=  alpha_bare / u_0^(n_link)  =  alpha_bare / u_0^2.    (9.A.6)
+```
+
+Numerically:
+
+```text
+alpha_s(v)  =  0.0795775 / 0.87768^2  =  0.10330...                  (9.A.7)
+```
+
+**Step 9.A.4 — Geometric-mean identity (independent algebraic check).**
+The standalone polynomial-algebra identity proved as a retained
+`positive_theorem` in
+`ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md` gives,
+on any `(alpha_bare, u_0) in R+^2`,
+
+```text
+alpha_LM^2  =  alpha_bare * alpha_s(v).                              (9.A.8)
+```
+
+This is a direct algebraic consequence of (9.A.4) and (9.A.6) and
+serves as an independent retained-grade algebraic check that the
+canonical plaquette-surface chain `(<P>, u_0, alpha_LM, alpha_s(v))` is
+internally consistent at every admitted `(alpha_bare, u_0)`.
+
+**Step 9.A.5 — Conditional status.** Steps (9.A.2)-(9.A.6) are closed
+algebra. The chain as a whole is therefore conditional **only** on the
+single bounded input (9.A.1) — the canonical plaquette value at the
+framework point `beta = 6`. There is no separate, second imported anchor
+in this chain: `u_0`, `alpha_LM`, and `alpha_s(v)` are all algebraic
+consequences of `<P>` plus the retained `alpha_bare` normalization plus
+the retained Coupling Map Theorem exponent.
+
+In particular, the conditional perimeter of the `(<P>, u_0, alpha_LM,
+alpha_s(v))` block of the y_t chain reduces to **exactly one** bounded
+upstream input — the bounded canonical plaquette surface. Closing the
+analytic `beta = 6` insertion at `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+collapses this entire block to retained-grade algebra.
+
+### 9.B Derivation: connected-trace selector (`F_adj`, `kappa_EW`, `K_EW`, `sqrt(9/8)`)
+
+The EW physical-readout coefficient used in section 2 of this note is
+the connected-trace selector at `kappa_EW = 0`. The exact algebraic
+content of that selector is reproduced here.
+
+**Step 9.B.0 — Inputs and provenance.** The exact adjoint-channel
+dimension fraction
+
+```text
+F_adj  :=  dim(adj) / dim(N_c (x) N_c-bar)
+        =  (N_c^2 - 1) / N_c^2                                       (9.B.1)
+```
+
+is **retained-bounded** in
+`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+(`claim_type: bounded_theorem`, `audit_status: audited_clean`,
+`effective_status: retained_bounded`) as an exact SU(N_c) group-theory
+identity. At `N_c = 3` (Cl(3) axiom) this evaluates to
+
+```text
+F_adj  =  (3^2 - 1) / 3^2  =  8 / 9.                                 (9.B.2)
+```
+
+This is exact at any finite `N_c`; it carries no expansion correction.
+
+**Step 9.B.1 — Connected-trace parameterization (`K_EW`).** The framework
+parameterizes the EW physical-readout coefficient by a single rational
+selector `K_EW(kappa_EW)`:
+
+```text
+K_EW(kappa_EW)  :=  1 / (F_adj + kappa_EW / N_c^2)                   (9.B.3)
+                  =  1 / (8/9 + kappa_EW/9)   at N_c = 3.
+```
+
+The selector `kappa_EW` is the connected-trace projection coefficient:
+`kappa_EW = 0` selects the pure adjoint-channel projection (lattice
+connected-trace propagates only on the adjoint channel of the Fierz
+decomposition), while `kappa_EW = 1` would select the full
+`dim(N_c (x) N_c-bar) = N_c^2` channel space. Algebraically:
+
+```text
+K_EW(0)  =  1 / F_adj  =  N_c^2 / (N_c^2 - 1)  =  9/8.               (9.B.4)
+```
+
+The lattice-to-physical EW coupling rescaling is then
+
+```text
+g_EW(phys)  =  g_EW(latt) * sqrt(K_EW(0))  =  g_EW(latt) * sqrt(9/8) (9.B.5)
+```
+
+at the connected-trace specialization `kappa_EW = 0`. The numerical
+value `sqrt(9/8) = 1.06066...` therefore reduces, under (9.B.5), to the
+exact algebraic identity (9.B.4) on the imported `F_adj`.
+
+**Step 9.B.2 — Named matching rule (M) (not derived).** The
+specialization `kappa_EW = 0` is itself the **named matching rule (M)**
+of the cited Fierz authority `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+(§5, "The matching rule (named structural input, NOT derived here)").
+Quoting that authority verbatim:
+
+> The matching rule is **not derived in this note**. It is a structural
+> input from the framework's lattice gauge surface: the physical EW
+> vacuum polarization, after the lattice/physical normalization, is
+> assumed to couple to the adjoint channel of the Fierz decomposition
+> rather than to the full `N_c (x) N_c-bar` Hilbert space.
+
+The sibling `RCONN_DERIVED_NOTE.md` records the same rule as an open
+dynamical-population bridge inherited from the Fierz authority. No
+retained, bounded, or proposed theorem on the current atlas closes (M).
+
+**Step 9.B.3 — Conditional status.** Steps (9.B.1)-(9.B.5) are closed
+algebra **once `kappa_EW = 0` is selected**. The two algebraic facts
+(9.B.4) and (9.B.5) are exact identities under the imported retained
+`F_adj`. The conditional perimeter of the connected-trace selector
+block of the y_t chain therefore reduces to **exactly one** open
+structural input — the matching rule (M) that selects `kappa_EW = 0`
+rather than any other value in `[0, 1]`. Closing (M) at the Fierz
+authority collapses this entire block to retained-grade algebra.
+
+### 9.C Audit-perimeter summary after inlining
+
+After the inlining of section 9, the audit-conditional perimeter for the
+overall y_t / EW prediction chain reduces to **exactly two named items**
+that are honestly carried as the residual gaps:
+
+| Residual item | Source upstream | Status on `main` | Honest disposition in this note |
+|---|---|---|---|
+| Bounded canonical plaquette insertion `<P>(beta = 6, SU(3), 4D)` | `PLAQUETTE_SELF_CONSISTENCY_NOTE.md` | bounded (analytic `beta = 6` insertion gap not closed; canonical value `0.5934` is a same-surface MC readout under bounded discipline) | inherited at the bounded scope; the algebraic chain `<P> -> u_0 -> alpha_LM -> alpha_s(v)` in section 9.A is closed algebra above this one input |
+| Matching rule (M) for `kappa_EW = 0` connected-trace selector | `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md` (§5) | open structural input named in both the Fierz authority and `RCONN_DERIVED_NOTE.md`; not derived | inherited as a named open rule; the algebraic identities `K_EW(0) = 9/8` and `g_EW(phys) = g_EW(latt) * sqrt(9/8)` in section 9.B are closed algebra above this one rule |
+
+**What this rigorization edit does and does not claim.** It claims that
+the algebraic content of the canonical plaquette-surface chain
+(`<P> -> u_0 -> alpha_LM -> alpha_s(v)`) and of the EW connected-trace
+selector (`F_adj -> K_EW(0) -> sqrt(9/8)`) is closed-form algebra above
+the two named residual inputs, and that those residual inputs are the
+**only** load-bearing imports remaining outside the algebraic perimeter.
+It does **not** close either residual input; it does not promote either
+the canonical plaquette surface or the matching rule (M) to retained
+status; and it does not invent any new admissions or axioms. It also
+does not claim that the runner `scripts/frontier_yt_zero_import_chain.py`
+has been refactored to remove its `from canonical_plaquette_surface
+import ...` line — the runner refactor is the path-B repair that this
+in-note edit does not perform. What this edit does perform is the
+in-note algebraic transparency that the audit lane requested as the
+in-note alternative to the runner refactor: every load-bearing
+ingredient of the imported anchors is now reproduced explicitly in
+this note, with its retained-grade or retained-bounded provenance
+named and the two residual gaps explicitly carried.
+
+### 9.D Re-audit boundary
+
+This rigorization edit does not set or predict audit status; it
+sharpens the algebraic transparency of the conditional perimeter so
+that the next audit pass can target the two residual items by name. The
+explicit boundary the audit lane should now read is:
+
+- **Algebraic perimeter (closed in section 9).** Steps (9.A.2)-(9.A.8)
+  and (9.B.1)-(9.B.5) are algebraic identities on retained or
+  retained-bounded primitives. No further admissions are needed inside
+  these steps.
+- **Residual perimeter (two named items).** The bounded canonical
+  plaquette insertion at `beta = 6` (section 9.C, item 1) and the
+  matching rule (M) for the `kappa_EW = 0` connected-trace selector
+  (section 9.C, item 2). These two are the only load-bearing imports
+  that the y_t / EW prediction chain still inherits from outside this
+  note.
+- **No new admissions.** No step in section 9 introduces a new axiom,
+  a new admission, or a new structural input beyond what is already
+  named in the cited retained / retained-bounded upstream notes.

@@ -122,22 +122,100 @@ PASS) the executable algebraic chain:
   on the physical input, but does not derive the selection of the
   charged-lepton point by this extremal principle.
 
+## Why isotype Frobenius-orthogonality alone does not force `β = 0` (2026-05-18, one-step linear algebra)
+
+A natural attempted Tier B bridge is: "the scalar isotype `I` and the
+traceless isotype `T` are Frobenius-orthogonal (`<I, T>_F = tr(T) = 0`
+because `T` is traceless), therefore the unique Ad-invariant
+PD scalar/traceless bilinear form is the trace-Frobenius form, hence
+`β = 0` in `B_{α,β}(A, B) = α · Tr(AB) + β · (tr A)(tr B)`."
+
+This attempted bridge is **invalid** as a closure. Below is the
+one-step linear-algebra reason, recorded so future re-audits do not
+recur to it.
+
+Decompose any `A ∈ Herm(3)` as `A = A_s + A_t` with
+`A_s := (tr A / 3) I` (scalar isotype) and `A_t := A - A_s` (traceless
+isotype). Standard trace identities give:
+
+- `Tr(A_s A_t) = (tr A / 3) · Tr(A_t) = 0` (isotype Frobenius-
+  orthogonality of the splitting itself);
+- `Tr(A^2) = Tr(A_s^2) + Tr(A_t^2)`;
+- `Tr(A_s^2) = (tr A)^2 / 3` and so `(tr A)^2 = 3 · Tr(A_s^2)`.
+
+Now evaluate `B_{α,β}(A, A) = α · Tr(A^2) + β · (tr A)^2` on the
+isotype decomposition:
+
+```
+B_{α,β}(A, A) = α · [Tr(A_s^2) + Tr(A_t^2)] + β · (tr A)^2
+              = α · Tr(A_s^2) + α · Tr(A_t^2) + 3β · Tr(A_s^2)
+              = (α + 3β) · Tr(A_s^2) + α · Tr(A_t^2).
+```
+
+That is, on the Frobenius-orthogonal isotype decomposition, the family
+`B_{α,β}` evaluates to a **diagonal** quadratic form with isotype
+weights
+
+```
+w_scalar(α, β)    = α + 3β    on  the scalar  isotype span(I);
+w_traceless(α, β) = α          on  the traceless isotype.
+```
+
+Both isotype weights are positive iff `α + 3β > 0` and `α > 0`, which
+is exactly the PD region the auditor uses. PD + Ad-invariance therefore
+constrain only the **signs** of the two isotype weights; the **ratio**
+`w_scalar / w_traceless = 1 + 3β/α` is a genuine free parameter on the
+PD region, and Frobenius `(α, β) = (1, 0)` is one point on that
+one-parameter line. Isotype Frobenius-orthogonality is **preserved**
+along the entire line, because adding any multiple of `(tr A)(tr B)`
+adds a multiple of the rank-one scalar-isotype form and therefore
+remains Frobenius-orthogonal to the traceless isotype block.
+
+The one-step linear-algebra reason this Tier B bridge fails to force
+`β = 0`: isotype Frobenius-orthogonality fixes the **block-diagonal
+shape** of any Ad-invariant bilinear form on `Herm(3)` (scalar block ⊕
+traceless block), but it does **not** fix the **relative scale**
+between the two blocks. PD picks out the open quadrant `w_scalar > 0,
+w_traceless > 0`; the trace-Frobenius choice `(α, β) = (1, 0)` and the
+runner's registered counter-example `(α, β) = (1, 1)` both sit inside
+that open quadrant and both respect isotype Frobenius-orthogonality.
+Closing the gap therefore requires an authority that fixes the
+isotype-weight **ratio**, not merely orthogonality of the isotypes.
+
+This subsection does **not** close the gap. It records that the
+cheapest plausible one-step bridge (isotype orthogonality alone) is
+mathematically insufficient, and sharpens the open derivation gap
+below to "fix the scalar/traceless isotype-weight ratio" rather than
+"orthogonalize the isotype decomposition" (which is already free).
+
+Admissions used in this subsection: only retained linear-algebra
+primitives — the trace inner product on `Herm(3)`, the trace identity
+`Tr(A_s A_t) = 0` for `A_t` traceless, and the scalar-isotype
+identity `Tr(A_s^2) = (tr A)^2 / 3` for `A_s = (tr A / 3) I`. No new
+axioms, no fitted values, no new admissions.
+
 ## Open derivation gap
 
 Establishing that the trace-Frobenius normalization is forced (not
 admitted) on `Herm(3)` would require either:
 
 - an axiom or retained authority in the framework that explicitly
-  fixes the trace inner product on the scalar/traceless decomposition
-  and rules out all independent positive-definite Ad-invariant
-  scalar-subspace weightings; or
+  fixes the **isotype-weight ratio** `w_scalar / w_traceless = 1`
+  (equivalently, `α + 3β = α`, i.e. `β = 0`) on the
+  Frobenius-orthogonal scalar/traceless decomposition, and rules out
+  all independent positive-definite Ad-invariant scalar-subspace
+  rescalings (see the 2026-05-18 subsection above for the one-step
+  reason that isotype orthogonality alone fixes only the
+  block-diagonal shape, not the ratio); or
 - a uniqueness theorem on `Herm(3)` that derives the trace-Frobenius
   normalization from already-retained structure, with a registered
   runner that closes the `β`-freedom in the family
   `B_{α,β}(A, B) = α · Tr(AB) + β · (tr A)(tr B)` on the PD region
   `α > 0, α + 3β > 0` rather than sampling it. (The family
   parameterization, the PD region, and one explicit non-Frobenius PD
-  member with `β ≠ 0` are now registered in runner test 1e.)
+  member with `β ≠ 0` are now registered in runner test 1e; the
+  isotype-weight identification of that family with two independent
+  PD parameters is recorded in the 2026-05-18 subsection above.)
 
 Neither component is supplied by this note or by its runner. Until
 one of them lands and is independently audited, the kappa = 2,
@@ -152,6 +230,14 @@ Frobenius convention.
   lane on the grounds described above; this note replaces that
   framing with the conditional formulation here. The runner's
   algebraic content is unchanged; only the headline scope is narrowed.
+- 2026-05-18 sharpening: a "Why isotype Frobenius-orthogonality alone
+  does not force `β = 0`" subsection has been inlined above. It is
+  a one-step linear-algebra argument from retained primitives only
+  (no new axioms, no new admissions). It does **not** close the
+  audited_conditional gap; it sharpens the open derivation gap from
+  "establish isotype orthogonality" (which is already free) to "fix
+  the scalar/traceless isotype-weight ratio". This is a Tier B
+  *narrowing* repair, not a closure.
 
 ## Verification
 

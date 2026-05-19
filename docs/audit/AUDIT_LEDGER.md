@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 368 |
+| **retained_bounded** | 369 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,22 +50,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 16 |
-| `audited_clean` | 592 |
+| `audited_clean` | 593 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1533 |
+| `unaudited` | 1532 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 997 |
+| `bounded_theorem` | 998 |
 | `decoration` | 27 |
 | `meta` | 222 |
 | `no_go` | 230 |
 | `open_gate` | 110 |
-| `positive_theorem` | 744 |
+| `positive_theorem` | 743 |
 
 | criticality | count |
 |---|---:|
@@ -414,6 +414,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_l2_numpy_h0125_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6016,6 +6017,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the specified Fam1 grown-DAG static 1/r-field harness, the runner computes kubo_true = 7.061910, 5.972756, 5.986043 at H = 0.50, 0.35, 0.25, so the medium-to-fine drift is 0.2% under the runner's 5% criterion.  _(class `C`)_
 - **chain closes:** True — The supplied runner source actually grows the lattice, propagates A and B, computes the centroid derivative, and prints the cached values without hard-coded expected results. This closes the bounded three-refinement numerical statement, but not a stronger general H to 0 continuum theorem.
 - **rationale:** The load-bearing bounded claim is a class C framework-internal computation: the runner instantiates the Fam1 grown-DAG harness and computes the Kubo coefficient values directly. The cached stdout matches the source note's table and the last-step drift calculation. The cited one-hop authorities are provided as retained_bounded, so there is no open dependency blocking this scoped result. This clean verdict is only for the bounded three-point Fam1 stabilization, not for a general asymptotic H to 0 theorem or family-portable continuum result.
+- **auditor confidence:** high
+
+### `kubo_fam2_refinement_note`
+
+- **Note:** [`KUBO_FAM2_REFINEMENT_NOTE.md`](../../docs/KUBO_FAM2_REFINEMENT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded numerical claim that Fam2 is not converged on the tested H ladder {0.5, 0.35, 0.25, 0.20} and that the H=0.20 point weakens the near-term rescue story, without proving divergence or isolating restore as the cause.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-152136-02e6f5c5-kubo_fam2_refinement_not-025`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the new refinement point H=0.20, the Fam2 runner computes kubo_true = +4.5082, making the H=0.25 to H=0.20 change a 36.4% crash and leaving Fam2 off the ~5.97 Fam1/Fam3 value.  _(class `C`)_
+- **chain closes:** True — The provided runner source actually calls grow() and true_kubo_at_H() for the new H=0.20 point, and the cached stdout reports the claimed +4.5082 value. The prior Fam2 and Fam1/Fam3 comparison values are present in the retained_bounded cited authority, and the percent changes are straightforward arithmetic.
+- **rationale:** The load-bearing new refinement value is computed by the runner rather than printed as a hard-coded contested result. The known older Fam2 values and Fam1/Fam3 target are imported from the cited retained_bounded family-portability note, and the note's conclusion is carefully bounded to tested-ladder non-convergence and weakened rescue, not mathematical divergence. The mechanistic weak-lattice-pull interpretation is explicitly labeled as plausible but not isolated, so it is not needed for closure of the audited claim.
 - **auditor confidence:** high
 
 ### `kubo_range_of_validity_note`

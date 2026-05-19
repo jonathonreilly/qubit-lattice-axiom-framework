@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1328 |
+| unaudited | 1327 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 10 |
+| ~~audited_renaming~~ | 11 |
 | ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -55,17 +55,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 10 |
-| `unaudited` | 1547 |
+| `audited_renaming` | 11 |
+| `unaudited` | 1546 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 998 |
 | `decoration` | 26 |
-| `meta` | 220 |
+| `meta` | 221 |
 | `no_go` | 230 |
 | `open_gate` | 110 |
-| `positive_theorem` | 746 |
+| `positive_theorem` | 745 |
 
 | criticality | count |
 |---|---:|
@@ -894,6 +894,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -1036,6 +1037,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Since T_m, T_delta, and T_q are all real, their imaginary parts vanish entrywise, so Im(H(m, delta, q_+)_{ij}) = Im(H_base_{ij}) for all entries.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the explicitly given matrices and ordinary matrix algebra. No cited upstream authority, physical identification, fitted value, or external comparator is needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the explicit real matrices supplied in the note. The runner source performs symbolic/exact checks of symmetry, rank, traces, trace dependence, and entrywise imaginary-part invariance rather than merely printing constants. The framework instance is only a specialization of the same algebraic closure and does not import a contested external premise.
+- **auditor confidence:** high
+
+### `ai_methodology.raw.canonical_framing_paragraph`
+
+- **Note:** [`ai_methodology/raw/canonical_framing_paragraph.md`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited only the meta-methodology claim that this note defines a canonical per-paper AI-disclosure/accountability paragraph and explains its intended submission use.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-ai_methodology.raw.canon-053`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** "This paragraph is the canonical version" and is adopted to appear in framework submissions as the standardized AI-disclosure and accountability paragraph.  _(class `E`)_
+- **chain closes:** True — The restricted packet supports that the source note defines a canonical disclosure paragraph and that the cited methodology note lists a canonical per-paper disclosure paragraph as part of the methodology surface. No physics derivation is asserted or closed here.
+- **rationale:** The load-bearing move is definitional: the note adopts and labels a block of text as the canonical paragraph for submissions. It does not derive a physics result, instantiate a runner, or close a first-principles computation. The cited methodology note is consistent with the paragraph's role as a publishable disclosure surface, but the audited claim remains a meta-policy definition rather than a theorem.
 - **auditor confidence:** high
 
 ### `ai_methodology.raw.prompts_session_ebae4639_jonreilly`

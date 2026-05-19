@@ -9649,26 +9649,26 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "poisson_self_gravity_born_audit_note",
-      "claim_scope": null,
+      "claim_scope": "One exact h=0.25 three-slit lattice family with screened Poisson-like backreaction: exact zero-coupling reduction and frozen-snapshot step-local Born only; nonzero-coupling end-to-end Born is capped-iteration diagnostic.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "poisson_self_gravity_loop_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
       "load_bearing_score": 11.95,
       "note_path": "docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/poisson_self_gravity_born_audit.py",
       "transitive_descendants": 988

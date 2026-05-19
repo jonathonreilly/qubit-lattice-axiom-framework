@@ -1,10 +1,5 @@
 {
-  "last_invalidations": [
-    {
-      "claim_id": "growing_graph_dynamic_propagation_replacement_note",
-      "reason": "dep_weakened:growing_graph_frontier_expansion_proxy_note:retained->audit_in_progress"
-    }
-  ],
+  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -182051,36 +182046,51 @@
     "poisson_self_gravity_born_audit_note": {
       "audit_date": null,
       "audit_state_snapshot": null,
-      "audit_status": "unaudited",
+      "audit_status": "audit_in_progress",
       "auditor": null,
       "auditor_confidence": null,
       "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": null,
+      "blocker": "awaiting_cross_confirmation",
       "chain_closes": null,
       "chain_closure_explanation": null,
       "claim_id": "poisson_self_gravity_born_audit_note",
-      "claim_scope": null,
+      "claim_scope": "One exact h=0.25 three-slit lattice family with screened Poisson-like backreaction: exact zero-coupling reduction and frozen-snapshot step-local Born only; nonzero-coupling end-to-end Born is capped-iteration diagnostic.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-19T14:32:47.113398+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
-      "cross_confirmation": null,
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-19T14:32:47.113398+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-poisson_self_gravity_bor-015",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "One exact h=0.25 three-slit lattice family with screened Poisson-like backreaction: exact zero-coupling reduction and frozen-snapshot step-local Born only; nonzero-coupling end-to-end Born is capped-iteration diagnostic.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
       "decoration_parent_claim_id": null,
       "deps": [
         "poisson_self_gravity_loop_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/minimal_source_driven_field_probe.py"
       ],
       "independence": null,
-      "intrinsic_status": "unaudited",
+      "intrinsic_status": "audit_in_progress",
       "load_bearing_score": 11.95,
       "load_bearing_step": null,
       "load_bearing_step_class": null,

@@ -38,4 +38,4 @@ question moves to the washout / thermal side.
 
 - [DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md](DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md) — `K00 = (K_mass)00` diagonal-normalization theorem supplying the physical-channel denominator identity.
 - [DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md](DM_NEUTRINO_POSITIVE_POLAR_H_CP_THEOREM_NOTE_2026-04-15.md) — positive-polar `H` CP theorem supplying the polar representative used to define `Y_mass^dag Y_mass = U_M^dag H U_M = K_mass`.
-- [EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md](EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md) — closest framework wrapper for the physical `epsilon_1` denominator readout.
+- [EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md](EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md) — closest framework wrapper for the physical `epsilon_1` denominator readout.

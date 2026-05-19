@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for axiom_first_reflection_positivity_theorem_note_2026-04-29.
 
-Verifies docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

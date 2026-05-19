@@ -10,7 +10,7 @@
 
 ## 1. Programmatic classification
 
-Each of 3 named co-cycle deps was checked by case-insensitive substring search against the parent note (`docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md`). Classification heuristic:
+Each of 3 named co-cycle deps was checked by case-insensitive substring search against the parent note (`docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md`). Classification heuristic:
 
 - **NOT-CITED**: zero substring hits (programmatically certain)
 - **CITED-INFORMATIONAL**: cited in Cross-references / See-also / Lane context / Background / Audit-dependency-repair-links sections (heuristic by section heading)
@@ -62,6 +62,6 @@ Paired runner: `scripts/frontier_composite_higgs_mechanism_stretch_attempt_note_
 
 ## 8. Cross-references (non-load-bearing)
 
-- `docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md` (parent under audit)
+- `docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md` (parent under audit)
 - `docs/audit/data/audit_queue.json` (cycle instructions)
 - [PR #1277](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1277) (audit landscape diagnostic — Option 2 contribution)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for higher_order_structural_theorems_note.
 
-Verifies docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/HIGHER_ORDER_STRUCTURAL_THEOREMS_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

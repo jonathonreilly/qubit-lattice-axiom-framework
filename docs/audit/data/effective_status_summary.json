@@ -4,8 +4,8 @@
     "decoration": 27,
     "meta": 222,
     "no_go": 230,
-    "open_gate": 111,
-    "positive_theorem": 742
+    "open_gate": 109,
+    "positive_theorem": 744
   },
   "cycle_examples": [
     [
@@ -22,18 +22,18 @@
     ],
     [
       "rconn_derived_note",
-      "yt_ew_matching_rule_m_stretch_attempt_note_2026-05-02"
+      "yt_ew_matching_rule_m_note_2026-05-02"
     ],
     [
       "rconn_derived_note",
-      "yt_ew_matching_rule_m_stretch_attempt_note_2026-05-02",
+      "yt_ew_matching_rule_m_note_2026-05-02",
       "ew_current_matching_ozi_suppression_theorem_note_2026-04-27"
     ]
   ],
   "cycles_detected": 195,
   "effective_status_counts": {
     "audit_in_progress": 16,
-    "audited_conditional": 79,
+    "audited_conditional": 73,
     "audited_failed": 24,
     "audited_numerical_match": 9,
     "audited_renaming": 11,
@@ -54,12 +54,12 @@
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 219,
-    "open_gate": 16,
+    "open_gate": 15,
     "retained": 111,
-    "retained_bounded": 371,
-    "retained_no_go": 136,
+    "retained_bounded": 370,
+    "retained_no_go": 134,
     "retained_pending_chain": 8,
-    "unaudited": 1308
+    "unaudited": 1318
   },
   "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [

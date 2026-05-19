@@ -185,7 +185,7 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   load-bearing citation direction is
   *lanes.open_science.03_quark_mass_retention_open_lane_2026-04-26 →
   this_quark_lane3_bounded_companion_retention_firewall_note*, not vice versa.)
-- [quark_mass_ratio_review_packet_2026-04-18](QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md)
+- [quark_mass_ratio_review_packet_2026-04-18](QUARK_MASS_RATIO_NOTE_2026-04-18.md)
 - [down_type_mass_ratio_ckm_dual_note](DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md)
 - [quark_up_amplitude_candidate_scan_note_2026-04-19](QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md)
 - [yt_bottom_yukawa_retention_analysis_note_2026-04-18](YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md)

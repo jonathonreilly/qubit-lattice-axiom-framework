@@ -317,9 +317,9 @@ This cycle's findings are falsified by:
 - Cycle 1 theorem plan:
   `docs/CHARGED_LEPTON_LANE6_THEOREM_PLAN_NOTE_2026-04-28.md`.
 - Cycle 2 SA-A SU(2) anchor exclusion:
-  `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md`.
+  `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_NOTE_2026-04-28.md`.
 - Cycle 3 SA-B U(1)_Y anchor exclusion:
-  `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md`.
+  `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_NOTE_2026-04-28.md`.
 - Cycle 4 stuck fan-out (superseded headline):
   `docs/CHARGED_LEPTON_Y_TAU_MECHANISM_STUCK_FANOUT_NOTE_2026-04-28.md`.
 - Actual EW A4 bridge content (mistakenly cited as A_4 flavor sym):
@@ -354,5 +354,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [ckm_ew_lattice_a4_bridge_retained_identity_note_2026-04-25](CKM_EW_LATTICE_A4_BRIDGE_RETAINED_IDENTITY_NOTE_2026-04-25.md)
 - [ckm_koide_cross_sector_z3_closure_theorem_note_2026-04-25](CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md)
-- [charged_lepton_y_tau_ward_identity_su2_anchor_stretch_attempt_note_2026-04-28](CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md)
-- [charged_lepton_y_tau_ward_identity_u1_anchor_stretch_attempt_note_2026-04-28](CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md)
+- [charged_lepton_y_tau_ward_identity_su2_anchor_stretch_attempt_note_2026-04-28](CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_NOTE_2026-04-28.md)
+- [charged_lepton_y_tau_ward_identity_u1_anchor_stretch_attempt_note_2026-04-28](CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_NOTE_2026-04-28.md)

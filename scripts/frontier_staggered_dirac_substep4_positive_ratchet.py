@@ -1,7 +1,7 @@
 """Review runner for the substep-4 positive-ratchet open gate.
 
 The companion note is
-docs/STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_STRETCH_ATTEMPT_NOTE_2026-05-10.md.
+docs/STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md.
 
 This runner does not audit or promote the substep-4 claim. It verifies the
 finite algebra fact used by the narrowed open-gate boundary and checks that

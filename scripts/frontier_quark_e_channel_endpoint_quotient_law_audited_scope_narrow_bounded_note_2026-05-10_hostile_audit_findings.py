@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10.
 
-Verifies docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

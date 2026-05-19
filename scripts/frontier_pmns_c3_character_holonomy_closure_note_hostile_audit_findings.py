@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for pmns_c3_character_holonomy_closure_note.
 
-Verifies docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

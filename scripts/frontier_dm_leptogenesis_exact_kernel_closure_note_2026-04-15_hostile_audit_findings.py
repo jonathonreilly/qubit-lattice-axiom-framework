@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for dm_leptogenesis_exact_kernel_closure_note_2026-04-15.
 
-Verifies docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

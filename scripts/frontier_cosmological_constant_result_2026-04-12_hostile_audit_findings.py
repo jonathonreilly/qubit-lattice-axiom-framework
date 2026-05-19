@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for cosmological_constant_result_2026-04-12.
 
-Verifies docs/COSMOLOGICAL_CONSTANT_RESULT_2026-04-12_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/COSMOLOGICAL_CONSTANT_RESULT_2026-04-12_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

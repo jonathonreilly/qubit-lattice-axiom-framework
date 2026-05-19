@@ -2261,10 +2261,10 @@ drive.
 
 ### `carrier_orbit_invariance_stretch_attempt_note_2026-05-03`
 
-**Note:** [docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md](docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md)  |  **Descendants:** 0  |  **Class:** A
+**Note:** [docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md](docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md)  |  **Descendants:** 0  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the missing derivation in docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md.
+Use the physics-loop skill to close the missing derivation in docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md.
 
 Current audit state:
 - audit_status: audited_clean
@@ -3075,10 +3075,10 @@ drive.
 
 ### `charged_lepton_koide_review_packet_2026-04-18`
 
-**Note:** [docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md](docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md)  |  **Descendants:** 884  |  **Class:** B
+**Note:** [docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md](docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)  |  **Descendants:** 884  |  **Class:** B
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md.
+Use the physics-loop skill to close the conditional audit on docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md.
 
 Current audit state:
 - audit_status: audited_conditional
@@ -3307,10 +3307,10 @@ drive.
 
 ### `koide_dimensionless_objection_closure_review_packet_2026-04-24`
 
-**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md)  |  **Descendants:** 882  |  **Class:** A
+**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md)  |  **Descendants:** 882  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md.
+Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md.
 
 Current audit state:
 - audit_status: audited_conditional

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for c3_symmetry_preserved_interpretation_note_2026-05-08.
 
-Verifies docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-17.md.
 
 Programmatic checks:
   1. The parent note exists.

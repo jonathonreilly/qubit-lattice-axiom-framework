@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for axiom_first_microcausality_lieb_robinson_theorem.
 
-Verifies docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_NOTE_2026-05-17.md.
 
 Programmatic checks:
   1. The parent note exists.

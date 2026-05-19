@@ -288,7 +288,7 @@ The cycle's findings are falsified by:
   free-Ward route is closed; the gauge-anchored SA-A route is also
   excluded because the gauge structure doesn't extend).
 - Koide flagship lane (SA-C dependency):
-  `docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md`.
+  `docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`.
 - Loop pack:
   `.claude/science/physics-loops/charged-lepton-pickup-20260428/`.
 

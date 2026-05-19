@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for composite_higgs_mechanism_stretch_attempt_note_2026-05-03.
 
-Verifies docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.
@@ -20,7 +20,7 @@ FAIL_COUNT = 0
 CLASS_A_HITS = 0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-PARENT_PATH = REPO_ROOT / "docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md"
+PARENT_PATH = REPO_ROOT / "docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md"
 
 CITED_DEPS = [
     "higgs_mechanism_note",

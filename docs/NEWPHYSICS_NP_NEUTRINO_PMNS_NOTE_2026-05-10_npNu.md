@@ -575,7 +575,7 @@ Expected: `PASS = 17, FAIL = 0`.
 ## Cross-references
 
 - Charged-lepton retained Koide chain:
-  [`docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md`](CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md).
+  [`docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`](CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md).
 - Neutrino retained status:
   [`docs/NEUTRINO_RETAINED_STATUS_NOTE_2026-04-16.md`](NEUTRINO_RETAINED_STATUS_NOTE_2026-04-16.md).
 - PMNS theta_23 conditional/support prediction:

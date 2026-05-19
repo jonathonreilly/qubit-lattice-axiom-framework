@@ -64,7 +64,7 @@ R_SB_OBS = M_S_OBS / M_B_OBS
 def part1_repo_claim_state() -> None:
     section("Part 1: repo claim-state guardrails")
     lane = read("docs/lanes/open_science/03_QUARK_MASS_RETENTION_OPEN_LANE_2026-04-26.md")
-    packet = read("docs/QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md")
+    packet = read("docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md")
     down = read("docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md")
     up = read("docs/QUARK_UP_AMPLITUDE_CANDIDATE_SCAN_NOTE_2026-04-19.md")
     bottom = read("docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md")

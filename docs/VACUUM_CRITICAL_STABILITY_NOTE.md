@@ -50,7 +50,7 @@ asserted as a framework-native consequence.
 The earlier "framework-native composite-Higgs / no-elementary-scalar boundary
 structure" wording for `lambda(M_Pl) = 0` was a heuristic slogan, not a
 theorem. The landed composite-Higgs stretch surface
-[`COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md`](./COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md)
+[`COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md`](./COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md)
 already records the relevant NJL/BHL obstruction: NJL-style
 composite-scalar models do not by themselves prove a protected
 `lambda(M_Pl) = 0` boundary. Bardeen-Hill-Lindner 1990 and Hill 1991
@@ -194,7 +194,7 @@ of the boundary itself.
 - [HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md](./HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md)
 - [HIGGS_MASS_DERIVED_NOTE.md](./HIGGS_MASS_DERIVED_NOTE.md)
 - [YT_COLOR_PROJECTION_CORRECTION_NOTE.md](./YT_COLOR_PROJECTION_CORRECTION_NOTE.md)
-- [COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md](./COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md) — companion stretch attempt at composite-Higgs identification, with three named residual obstructions; relevant context for any future attempt to derive the high-scale boundary
+- [COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md](./COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md) — companion stretch attempt at composite-Higgs identification, with three named residual obstructions; relevant context for any future attempt to derive the high-scale boundary
 
 ## Validation Snapshot
 

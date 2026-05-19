@@ -80,7 +80,7 @@ closure.
 
 ## Background: cycle 12's Obstruction O2
 
-From `EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md`:
+From `EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md`:
 
 > **Obstruction O2: Yukawa scale y_0² imports G_weak**
 >
@@ -354,7 +354,7 @@ framework's bounded `m_W` predictions.
   (`G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02`).
 - (L1, identified) y_0 ≡ g_weak²/64 leptogenesis convention
   (`dm_leptogenesis_exact_common.py:24-26`).
-- (Cycle 12 parent) `EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md`
+- (Cycle 12 parent) `EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md`
   (sharpens its Obstruction O2).
 - (Bounded surface) `EW_COUPLING_DERIVATION_NOTE.md` Part 3
   (BOUNDED g_2(v) status).
@@ -405,7 +405,7 @@ Total: PASS = 33 / FAIL = 0.
 
 ## Cross-references
 
-- [`EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md`](EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md) —
+- [`EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md`](EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md) —
   cycle 12 parent; Obstruction O2 sharpened by this PR.
 - [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) —
   retained `g_2² |_lattice = 1/(d+1) = 1/4`.

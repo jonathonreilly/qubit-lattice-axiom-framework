@@ -41,7 +41,7 @@ under the open `(C2-X)` charge-2 primitive exhaustion premise. Without
 `(C2-X)`, the result remains a bounded conditional theorem, not
 unconditional Dirac closure.
 
-The [normal-grammar U(1) rigidity stretch attempt](../../NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md)
+The [normal-grammar U(1) rigidity stretch attempt](../../NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md)
 falsifies `(R-X1)` anomaly-cancellation exhaustion as a closure route and
 shows why strict-vs-permissive reading of `A_min` axiom 3 is load-bearing.
 The [stuck fan-out note](../../NEUTRINO_AXIOM3_READING_STUCK_FANOUT_NOTE_2026-04-28.md)
@@ -65,7 +65,7 @@ The framework still needs direct answers to:
 - "Why is m_ν so small? Where does the seesaw scale come from?"
 
 The framework currently has the neutrino sector labeled as "different carriers"
-in the [CHARGED_LEPTON_KOIDE_REVIEW_PACKET](../../CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md)
+in the [CHARGED_LEPTON_KOIDE_REVIEW_PACKET](../../CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)
 — meaning the neutrino mass-spectrum questions live on a separate carrier than
 the charged-lepton Koide structure. The DM closed package gives δ_CP ≈ -81° and
 θ_23 upper octant, but absolute mass scales and Δm² values are bounded
@@ -180,7 +180,7 @@ already-retained δ_CP ≈ -81° and θ_23 upper octant predictions.
 - [NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md](../../NEUTRINO_TWO_AMPLITUDE_LAST_MILE_REDUCTION_NOTE.md)
 - [NEUTRINO_LANE4_THEOREM_PLAN_NOTE_2026-04-28.md](../../NEUTRINO_LANE4_THEOREM_PLAN_NOTE_2026-04-28.md)
 - [NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md](../../NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md)
-- [NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md](../../NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md)
+- [NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md](../../NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md)
 - [NEUTRINO_AXIOM3_READING_STUCK_FANOUT_NOTE_2026-04-28.md](../../NEUTRINO_AXIOM3_READING_STUCK_FANOUT_NOTE_2026-04-28.md)
 
 ## 5. Recommended attack approach

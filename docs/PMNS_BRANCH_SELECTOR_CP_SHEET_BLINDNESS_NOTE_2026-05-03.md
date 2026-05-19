@@ -343,7 +343,7 @@ verifies:
 - `ETA_COSMOLOGY_DERIVATION_STRETCH_ATTEMPT_NOTE_2026-05-02.md`
   (cycle 09 parent named in prior-cycle materials; not present as a
   current-main source dependency).
-- [`EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md`](EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md)
+- [`EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md`](EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md)
   (cycle 12; this cycle inherits cp1/cp2 = -√3).
 - [`ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md`](ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md)
   (cycle 18; this cycle uses the structural decomposition of Branch A).

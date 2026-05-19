@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Exact-symbolic audit-companion runner for
-BAE_U1B_SIX_RAY_DIRAC_MEASURE_STRETCH_ATTEMPT_NOTE_2026-05-17.md.
+BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md.
 
 Cycle 4a contingency attempt on the open sub-locus preserved by Cycle 3
 from the same-date canonical-phase stretch attempt. Tests three

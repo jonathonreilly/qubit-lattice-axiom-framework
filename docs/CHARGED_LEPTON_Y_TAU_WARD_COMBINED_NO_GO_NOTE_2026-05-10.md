@@ -93,7 +93,7 @@ Fierz-contract. D17 (composite-Higgs scalar uniqueness) is verified
 specifically for the (2, 3) block; the (2, 1) block has different
 scalar-channel structure and no D17 verification.
 
-**Source:** `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
+**Source:** `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_NOTE_2026-04-28.md`
 
 ### 3.2 SA-B — direct U(1)_Y hypercharge anchor (Cycle 3 closure)
 
@@ -107,7 +107,7 @@ sqrt(N) factor via `Tr(T^a T^b) = (1/2) δ^{ab}`. For U(1), the
 fermion contractions in U(1) reduce to charge multiplication, with
 no Fierz reorganization that introduces a sqrt-rational factor.
 
-**Source:** `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
+**Source:** `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_NOTE_2026-04-28.md`
 
 ### 3.3 M3 — EW A_4 flavor-symmetry anchor (Cycle 5 closure: false premise)
 
@@ -240,8 +240,8 @@ which structural primitives are missing from retained authority.
 ## 8. Cross-references
 
 - Cycle 1: `docs/CHARGED_LEPTON_LANE6_THEOREM_PLAN_NOTE_2026-04-28.md`
-- Cycle 2 (SA-A): `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
-- Cycle 3 (SA-B): `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
+- Cycle 2 (SA-A): `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_SU2_ANCHOR_NOTE_2026-04-28.md`
+- Cycle 3 (SA-B): `docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_NOTE_2026-04-28.md`
 - Cycle 4 fan-out: `docs/CHARGED_LEPTON_Y_TAU_MECHANISM_STUCK_FANOUT_NOTE_2026-04-28.md`
 - Cycle 5 self-correction: `docs/CHARGED_LEPTON_Y_TAU_M3_PREMISE_SELF_CORRECTION_NOTE_2026-04-28.md`
 - YT-lane retained: `docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`

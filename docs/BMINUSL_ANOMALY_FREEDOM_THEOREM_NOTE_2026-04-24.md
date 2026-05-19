@@ -298,7 +298,7 @@ ANOMALY_FORCES_TIME, not the `d_t = 1` conclusion. Recorded in §10 for
 completeness.
 
 See companion fix-record:
-[`BMINUSL_ANOMALY_FREEDOM_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](BMINUSL_ANOMALY_FREEDOM_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+[`BMINUSL_ANOMALY_FREEDOM_NOTE_2026-05-17.md`](BMINUSL_ANOMALY_FREEDOM_NOTE_2026-05-17.md).
 
 Paired verifier:
 `scripts/frontier_bminusl_anomaly_freedom_downstream_fix.py`.

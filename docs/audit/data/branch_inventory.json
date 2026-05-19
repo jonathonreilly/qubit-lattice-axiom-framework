@@ -1685,7 +1685,7 @@
         ".claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/REVIEW_HISTORY.md",
         ".claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/ROUTE_PORTFOLIO.md",
         ".claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/STATE.yaml",
-        "docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md",
+        "docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md",
         "scripts/frontier_carrier_orbit_invariance.py"
       ],
       "touches_audit_lane": false,
@@ -1711,7 +1711,7 @@
         ".claude/science/physics-loops/composite-higgs-mechanism-2026-05-03/OPPORTUNITY_QUEUE.md",
         ".claude/science/physics-loops/composite-higgs-mechanism-2026-05-03/ROUTE_PORTFOLIO.md",
         ".claude/science/physics-loops/composite-higgs-mechanism-2026-05-03/STATE.yaml",
-        "docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md",
+        "docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md",
         "scripts/frontier_composite_higgs_mechanism.py"
       ],
       "touches_audit_lane": false,
@@ -1806,7 +1806,7 @@
       "existing_paths_modified": [
         ".claude/science/physics-loops/retained-promotion-2026-05-02/HANDOFF.md",
         ".claude/science/physics-loops/retained-promotion-2026-05-02/cycle15-g-weak-from-framework/CLAIM_STATUS_CERTIFICATE.md",
-        "docs/G_WEAK_FROM_FRAMEWORK_STRETCH_ATTEMPT_NOTE_2026-05-03.md",
+        "docs/G_WEAK_FROM_FRAMEWORK_NOTE_2026-05-03.md",
         "docs/HADRONIC_CHARGES_FROM_QUARK_Y_NOTE_2026-05-02.md",
         "docs/audit/AUDIT_LEDGER.md",
         "docs/audit/AUDIT_QUEUE.md",
@@ -2234,7 +2234,7 @@
       "novel_path_count": 3,
       "novel_paths": [
         ".claude/science/physics-loops/retained-promotion-2026-05-02/cycle17-v-even-theorem-retention/CLAIM_STATUS_CERTIFICATE.md",
-        "docs/V_EVEN_THEOREM_RETENTION_STRETCH_ATTEMPT_NOTE_2026-05-03.md",
+        "docs/V_EVEN_THEOREM_RETENTION_NOTE_2026-05-03.md",
         "scripts/frontier_v_even_theorem_retention.py"
       ],
       "touches_audit_lane": false,

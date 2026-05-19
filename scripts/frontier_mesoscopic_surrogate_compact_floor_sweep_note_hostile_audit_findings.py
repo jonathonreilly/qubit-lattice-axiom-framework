@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for mesoscopic_surrogate_compact_floor_sweep_note.
 
-Verifies docs/MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_note_2026-04-20.
 
-Verifies docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_CLOSURE_ENDPOINT_NOTE_2026-04-20_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_CLOSURE_ENDPOINT_NOTE_2026-04-20_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

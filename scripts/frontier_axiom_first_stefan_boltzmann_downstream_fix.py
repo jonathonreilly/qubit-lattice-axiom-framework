@@ -27,7 +27,7 @@ CLASS_A_HITS = 0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARENT = REPO_ROOT / "docs" / "AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md"
-FIX_RECORD = REPO_ROOT / "docs" / "AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md"
+FIX_RECORD = REPO_ROOT / "docs" / "AXIOM_FIRST_STEFAN_BOLTZMANN_NOTE_2026-05-17.md"
 
 
 def check(label: str, condition: bool, detail: str = "") -> bool:
@@ -205,7 +205,7 @@ def main() -> int:
     )
     check(
         "Fix-record meta-note linked from parent",
-        "AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md" in parent,
+        "AXIOM_FIRST_STEFAN_BOLTZMANN_NOTE_2026-05-17.md" in parent,
     )
     check(
         "Paired verifier referenced from parent",

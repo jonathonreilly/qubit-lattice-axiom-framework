@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for localized_source_response_sweep_note.
 
-Verifies docs/LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

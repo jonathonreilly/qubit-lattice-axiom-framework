@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for hadron_lane1_sqrt_sigma_b2_gate_repair_audit_note_2026-04-30.
 
-Verifies docs/HADRON_LANE1_SQRT_SIGMA_B2_GATE_REPAIR_AUDIT_NOTE_2026-04-30_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/HADRON_LANE1_SQRT_SIGMA_B2_GATE_REPAIR_AUDIT_NOTE_2026-04-30_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

@@ -23,7 +23,7 @@ CLASS_A_HITS = 0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARENT = REPO_ROOT / "docs" / "CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md"
-FIX_RECORD = REPO_ROOT / "docs" / "CHRONOLOGY_PROTECTION_DOWNSTREAM_FIX_NOTE_2026-05-17.md"
+FIX_RECORD = REPO_ROOT / "docs" / "CHRONOLOGY_PROTECTION_NOTE_2026-05-17.md"
 
 
 def check(label: str, condition: bool, detail: str = "") -> bool:
@@ -155,7 +155,7 @@ def main() -> int:
     )
     check(
         "Fix-record meta-note linked from parent",
-        "CHRONOLOGY_PROTECTION_DOWNSTREAM_FIX_NOTE_2026-05-17.md" in parent,
+        "CHRONOLOGY_PROTECTION_NOTE_2026-05-17.md" in parent,
     )
     check(
         "Paired verifier referenced from parent",

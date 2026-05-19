@@ -16,7 +16,7 @@ staggered-Dirac partition") and preserves the named `(C2-X)` attack frames.
 ## 0. Setup
 
 Cycle 3
-(`NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md`)
+(`NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md`)
 reformulated the `(C2-X)` charge-2 primitive class exhaustion
 obstruction from research-level to decision-level: the unconditional
 Dirac global lift hinges on which reading of `A_min` axiom 3 the
@@ -401,7 +401,7 @@ bounded conditional Dirac theorem (Cycle 2) would discharge `(C2-X)`.
 - `docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md` (S4).
 - `docs/NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md`
   (Cycle 2; this fan-out reverts the (C2-X)-strict reformulation).
-- `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
+- `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md`
   (Cycle 3; this fan-out re-evaluates its conclusion).
 - Loop pack at
   `.claude/science/physics-loops/neutrino-quantitative-20260428/`.

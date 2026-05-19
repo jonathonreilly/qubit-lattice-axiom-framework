@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 366 |
+| **retained_bounded** | 367 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1315 |
-| audit_in_progress | 17 |
+| audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 17 |
-| `audited_clean` | 590 |
+| `audit_in_progress` | 16 |
+| `audited_clean` | 591 |
 | `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `wave_static_fixed_beam_boundary_sensitivity_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -712,6 +711,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_retardation_lab_prediction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_boundary_sensitivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_direct_probe_fine_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `wave_static_fixed_beam_boundary_sensitivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_moving_source_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11008,6 +11008,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At H = 0.25 on the moving-source Lane 6 setup, the direct static solve gives dS = +0.011563 and rel_MS = 37.62%, which is worse than dIeq's rel_MIeq = 23.16%.  _(class `C`)_
 - **chain closes:** True — The provided runner source computes the moving-source fields, direct static Poisson solves, beam propagation, and relative gaps without hard-coded expected output values. The stdout matches the source note's fine-point numbers and supports the narrow negative comparison.
 - **rationale:** The load-bearing statement is a narrow numerical result from a deterministic runner that directly constructs the relevant lattice setup and computes dM, dIeq, dS, residuals, and relative gaps. The cited continuum-limit note is retained_bounded, and the present note does not claim the broader continuum theorem or closure of the entire exact-comparator lane. Within the stated H = 0.25 boundary, the conclusion follows from the supplied runner output and source code.
+- **auditor confidence:** high
+
+### `wave_static_fixed_beam_boundary_sensitivity_note`
+
+- **Note:** [`WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md`](../../docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the H = 0.5 default fixed-beam run: fixed beam PW_phys = 6.0, frozen source z_phys = 3.0, comparing field/static solve boxes PW_phys = 6.0 and 9.0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-152136-02e6f5c5-wave_static_fixed_beam_b-021`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** At shared H = 0.5, enlarging only the field/static solve box from 6.0 to 9.0 moves dS by 30.29% and rel_MS by 83.88%, so fixed-beam boundary sensitivity remains material.  _(class `C`)_
+- **chain closes:** True — The primary runner actually computes the finite-grid retarded wave field, direct static Poisson field, fixed beam propagation, and field-box move statistics rather than printing hard-coded expected values. The supplied cache output matches the source note's H = 0.5 rows exactly, and the H = 0.35/background and continuum-retardation claims are explicitly out of scope.
+- **rationale:** Within the narrowed scope, the claim is a bounded deterministic computation at one fixed H, not a continuum theorem or a medium-H persistence claim. The runner source computes the load-bearing observables from the stated operators and parameters, and the cached stdout reproduces the table and move percentages in the note. The cited upstream authority is retained_bounded, and the note inlines the load-bearing helper code for the imported wave/beam primitives, so no open upstream continuum-comparator identification is needed for this finite boundary-sensitivity result.
 - **auditor confidence:** high
 
 ### `wave_static_matrixfree_fixed_beam_boundary_note`

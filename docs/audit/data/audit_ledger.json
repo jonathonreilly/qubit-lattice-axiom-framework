@@ -250887,24 +250887,41 @@
       "verdict_rationale": "The load-bearing statement is a narrow numerical result from a deterministic runner that directly constructs the relevant lattice setup and computes dM, dIeq, dS, residuals, and relative gaps. The cited continuum-limit note is retained_bounded, and the present note does not claim the broader continuum theorem or closure of the entire exact-comparator lane. Within the stated H = 0.25 boundary, the conclusion follows from the supplied runner output and source code."
     },
     "wave_static_fixed_beam_boundary_sensitivity_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:29:42.074411+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "wave_retardation_continuum_limit_note": "Finite H-refinement battery showing that the tested retarded-vs-c-infinity magnitude gaps are not converged for cached-static, equilibrated-static, or imposed-Newton comparators at H = 0.5, 0.35, 0.25, while dM is comparatively stable."
+        },
+        "dep_claim_type": {
+          "wave_retardation_continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_retardation_continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_retardation_continuum_limit_note"
+        ],
+        "load_bearing_score": 10.445,
+        "runner_hash": "ee2401427e080ae63ab74328e01048b452a69fea811f2b04418067b528f855b5",
+        "transitive_descendants": 985
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-wave_static_fixed_beam_b-021",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner actually computes the finite-grid retarded wave field, direct static Poisson field, fixed beam propagation, and field-box move statistics rather than printing hard-coded expected values. The supplied cache output matches the source note's H = 0.5 rows exactly, and the H = 0.35/background and continuum-retardation claims are explicitly out of scope.",
       "claim_id": "wave_static_fixed_beam_boundary_sensitivity_note",
-      "claim_scope": "Audited only the H = 0.5 default fixed-beam run comparing field PW_phys = 6.0 versus 9.0 at beam PW_phys = 6.0 and frozen source z_phys = 3.0.",
+      "claim_scope": "Audited only the H = 0.5 default fixed-beam run: fixed beam PW_phys = 6.0, frozen source z_phys = 3.0, comparing field/static solve boxes PW_phys = 6.0 and 9.0.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-19T14:45:52.375047+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-19T15:29:42.074411+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -250919,27 +250936,38 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T15:29:42.074411+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-wave_static_fixed_beam_b-021",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the H = 0.5 default fixed-beam run: fixed beam PW_phys = 6.0, frozen source z_phys = 3.0, comparing field/static solve boxes PW_phys = 6.0 and 9.0.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "wave_retardation_continuum_limit_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.445,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At shared H = 0.5, enlarging only the field/static solve box from 6.0 to 9.0 moves dS by 30.29% and rel_MS by 83.88%, so fixed-beam boundary sensitivity remains material.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "ad974e677000dd216075c2898766a09bcd0696e0ade4e1da1293849fdabdfa76",
       "note_path": "docs/WAVE_STATIC_FIXED_BEAM_BOUNDARY_SENSITIVITY_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -251188,14 +251216,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/wave_static_fixed_beam_boundary_sensitivity.py",
       "title": "Wave Static Fixed-Beam Boundary Sensitivity \u2014 H = 0.5 Default Run (Binding)",
       "transitive_descendants": 985,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the narrowed scope, the claim is a bounded deterministic computation at one fixed H, not a continuum theorem or a medium-H persistence claim. The runner source computes the load-bearing observables from the stated operators and parameters, and the cached stdout reproduces the table and move percentages in the note. The cited upstream authority is retained_bounded, and the note inlines the load-bearing helper code for the imported wave/beam primitives, so no open upstream continuum-comparator identification is needed for this finite boundary-sensitivity result."
     },
     "wave_static_matrixfree_fixed_beam_boundary_note": {
       "audit_date": "2026-05-11T22:57:40.812865+00:00",

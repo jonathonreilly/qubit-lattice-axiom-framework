@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 873,
+    "critical": 874,
     "high": 27,
     "leaf": 317,
     "medium": 106
@@ -14015,6 +14015,30 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "strong_cp_theta_zero_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.448,
+      "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
+      "transitive_descendants": 987
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "g_bare_forced_by_ward_rep_b_independence_theorem_note_2026-05-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -14234,6 +14258,8 @@
       "cross_confirmation_status": null,
       "deps": [
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+        "strong_cp_theta_zero_note",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 17,
@@ -46658,5 +46684,5 @@
     }
   ],
   "ready_count": 21,
-  "total_pending": 1323
+  "total_pending": 1324
 }

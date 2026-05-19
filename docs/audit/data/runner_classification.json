@@ -3204,6 +3204,18 @@
       "dominant_class": "D",
       "runner": "scripts/cl3_closure_t2_m1m2_distinguisher_2026_05_10_t2m1m2.py"
     },
+    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py"
+    },
     "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": {
       "assert_count": 1,
       "counts": {
@@ -31807,6 +31819,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py": {
+      "assert_count": 2,
+      "claims": [
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_coarse_grained_exterior_law.py": {
       "assert_count": 1,
       "claims": [
@@ -53227,12 +53254,12 @@
     "dominant_class_distribution": {
       "A": 191,
       "B": 261,
-      "C": 727,
+      "C": 728,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1907,
-    "runners_with_C": 939,
+    "runners_classified": 1908,
+    "runners_with_C": 940,
     "runners_with_D": 545
   }
 }

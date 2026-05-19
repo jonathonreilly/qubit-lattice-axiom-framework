@@ -1166,6 +1166,14 @@
     },
     {
       "from": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "to": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+    },
+    {
+      "from": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "to": "strong_cp_theta_zero_note"
+    },
+    {
+      "from": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
       "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
     },
     {
@@ -5051,6 +5059,10 @@
     {
       "from": "closure_t2_gnewton_reaudit_note_2026-05-10_t2gnewton",
       "to": "minimal_axioms_2026-05-03"
+    },
+    {
+      "from": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+      "to": "strong_cp_theta_zero_note"
     },
     {
       "from": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
@@ -41278,10 +41290,12 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+        "strong_cp_theta_zero_note",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4ed485b82de0cb5e2fe7f622239f560386e4a6a75ce2caef92a088bc9162c77c",
+      "note_hash": "a69175b6789a563fc4b30988a072f4120b412ad4afc9bc1da68ccd15a0572aab",
       "path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3"
@@ -44990,6 +45004,20 @@
       "path": "docs/CLOSURE_T2_M1_M2_DISTINGUISHER_NOTE_2026-05-10_t2m1m2.md",
       "runner_path": "scripts/cl3_closure_t2_m1m2_distinguisher_2026_05_10_t2m1m2.py",
       "title": "M1/M2 BAE Measure Distinguishing Observable Bounded Theorem"
+    },
+    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": {
+      "claim_id": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "strong_cp_theta_zero_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c4c9b3d43643c30df7c6d883e6953b51bce64b3cf31533ae3a9fe03313ee96a5",
+      "path": "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+      "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
+      "title": "Operator-Theoretic Delta_T > 0 Support on the Finite-Lambda SU(3) Transfer Operator"
     },
     "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": {
       "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
@@ -80609,7 +80637,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 496,
+      "bounded_theorem": 497,
       "decoration": 1,
       "meta": 180,
       "no_go": 57,
@@ -80618,7 +80646,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 933,
+      "bounded_theorem": 934,
       "decoration": 1,
       "meta": 180,
       "no_go": 160,
@@ -80626,10 +80654,10 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9629,
+    "edge_count": 9632,
     "leaf_count": 726,
-    "node_count": 2444,
+    "node_count": 2445,
     "root_count": 805,
-    "runners_with_path": 2028
+    "runners_with_path": 2029
   }
 }

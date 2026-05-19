@@ -11088,6 +11088,8 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+        "strong_cp_theta_zero_note",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 17,
@@ -11101,7 +11103,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "4ed485b82de0cb5e2fe7f622239f560386e4a6a75ce2caef92a088bc9162c77c",
+      "note_hash": "a69175b6789a563fc4b30988a072f4120b412ad4afc9bc1da68ccd15a0572aab",
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -35728,6 +35730,59 @@
       "title": "M1/M2 BAE Measure Distinguishing Observable Bounded Theorem",
       "transitive_descendants": 0,
       "verdict_rationale": "The note does not ask the audit lane to choose M1 or M2; it only records what can and cannot distinguish them inside the reduced measure model. The exact Beta-distribution calculations and the factor-two Gaussian rescaling close from the definitions, and the runner reproduces the saddle, Hessian, partition-function, moment, KL, and disclaimer checks without importing a load-bearing PDG comparator. Residual risk is scope creep: the result should remain a bounded diagnostic, not a theorem that no future observable could distinguish the measures or that BAE itself is closed."
+    },
+    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [
+        "strong_cp_theta_zero_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "unaudited",
+      "load_bearing_score": 10.448,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "c4c9b3d43643c30df7c6d883e6953b51bce64b3cf31533ae3a9fe03313ee96a5",
+      "note_path": "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": "scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
+      "title": "Operator-Theoretic Delta_T > 0 Support on the Finite-Lambda SU(3) Transfer Operator",
+      "transitive_descendants": 987,
+      "verdict_rationale": null
     },
     "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": {
       "audit_date": "2026-05-10T12:17:16.592612+00:00",
@@ -227252,13 +227307,13 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
-      "direct_in_degree": 19,
+      "direct_in_degree": 21,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 19.447,
+      "load_bearing_score": 20.451,
       "load_bearing_step": "The decisive step is action-surface selection: no bare \u03b8 slot is present and the quark-mass surface is explicitly real positive, so \u03b8_bare = 0 and arg det(M_u M_d) = 0 on that selected surface.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
@@ -227376,7 +227431,7 @@
       },
       "runner_path": "scripts/frontier_strong_cp_theta_zero.py",
       "title": "Strong CP / \u03b8 = 0 Conditional Action-Surface Closure",
-      "transitive_descendants": 986,
+      "transitive_descendants": 989,
       "verdict_rationale": "The runner genuinely computes several retained-surface consistency checks, including determinant positivity, axial-grid behavior, effective-action reality, and sampled \u03b8-sum positivity. However, the load-bearing \u03b8_eff = 0 step uses the \u03b8-free action-class definition and an explicit positive real mass surface as premises rather than deriving them from the provided axiom packet. The note itself correctly narrows the claim to a bounded conditional action-surface closure, so the appropriate verdict is conditional rather than failed or clean."
     },
     "structural_no_go_survey_note": {
@@ -271171,7 +271226,7 @@
     "preserved_archived_failed": 44,
     "preserved_existing": 2286,
     "re_audit_required": 0,
-    "row_count": 2330,
-    "seeded_new": 0
+    "row_count": 2331,
+    "seeded_new": 1
   }
 }

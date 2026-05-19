@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1344 |
+| unaudited | 1343 |
 | audit_in_progress | 18 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 19 |
 | `audited_clean` | 574 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1563 |
+| `unaudited` | 1562 |
 
 | claim_type | count |
 |---|---:|
@@ -762,6 +762,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `scalar_selector_reviewer_package_2026-04-20` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -7857,6 +7858,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note records the current scalar-KG rerun state: frontier_scalar_kg_16card_v2.py returns 13/16 with C12-C14 failing, while frontier_scalar_kg_full_suite.py returns 28/38 applicable measures and 20 N/A, so scalar KG is a bounded reference architecture rather than a literal 16/16 axiom-derived closure.  _(class `C`)_
 - **chain closes:** True — The note's measured rerun claims close against the current scripts, and its safe interpretation matches the runner outputs.
 - **rationale:** The current primary runner reproduces the note's 13/16 result and the named C12-C14 failures, and the secondary full-suite runner reproduces the stated 28/38 applicable score with 20 N/A measures. The note does not promote scalar KG as an axiom-derived theorem; it explicitly frames the lane as a reference architecture/ceiling test and preserves the strict-card failures. Residual risk is limited to the bounded/reference status and the usual runner-output formatting, not the claim boundary being audited.
+
+### `scalar_selector_reviewer_package_2026-04-20`
+
+- **Note:** [`SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md`](../../docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Restricted audit of the Koide kappa spectrum-operator Fourier bridge supplied with the historical scalar-selector reviewer package, not the full multi-lane package claims.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-scalar_selector_reviewer-035`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On Herm_circ(3), the exact Fourier-character identity a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2) makes spectrum-side Koide Q = 2/3 equivalent to operator-side kappa = 2.  _(class `A`)_
+- **chain closes:** False — The supplied runner closes the algebraic bridge identity on Herm_circ(3). It does not close the physical/source-law bridge that the note itself says remains open, nor the broader DM, theta, and quark package statements whose cited authorities are absent from the restricted packet.
+- **rationale:** The primary runner is substantive for the narrow algebraic identity: it symbolically derives the bridge and adds random-sample checks, with two PDG comparator checks. However, the source note explicitly states that Q = 2/3 still needs a physical/source-law extremal-principle bridge, and no cited authorities are provided for the larger package surface. The restricted packet therefore supports only an algebraic equivalence conditional on the spectrum-side Koide input, not a closed derivation of the package claim.
+- **open / conditional deps cited:**
+  - `KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`
+  - `publication/ci3_z3/README.md`
+  - `publication/ci3_z3/CLAIMS_TABLE.md`
+  - `publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md`
+- **auditor confidence:** high
 
 ### `schur_covariance_inheritance_narrow_theorem_note_2026-05-02`
 

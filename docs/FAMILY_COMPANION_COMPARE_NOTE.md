@@ -16,29 +16,46 @@
 
 Do the retained grown-family, alternative connectivity family, and second-family slices share the same fixed-companion weak-field law at a review-safe level?
 
-## Comparison
+## Comparison (declared observable surface)
 
-| family | slice | zero / neutral control | weak-field `F~M` | exact mismatch |
-| --- | --- | --- | ---: | --- |
-| Retained grown transfer basin | grown-row / nearby basin | exact zero-source and neutral same-point cancellation | `1.000` | none on the signed-source branch; companion gamma=0 baseline is exact |
-| Alternative connectivity family | no-restore grown slice | exact zero-source and neutral same-point cancellation | `0.999994` | complex-action crossover fails on this slice; sign-law stays intact |
-| Second grown-family complex | no-restore geometry-sector slice | not the active observable; gamma=0 baseline is exact | `1.000` | this branch is not on the same zero/neutral signed-source surface; it is compared by gamma=0 baseline plus crossover |
+The retained, alternative-connectivity, and second-family slices each
+discuss a fixed-companion weak-field law on their own observable surface
+(signed-source for the first two; `gamma = 0` baseline plus crossover for
+the second-family complex anchor). The cross-family `F~M` values and the
+zero/neutral controls are sourced from notes whose upstream authority is
+not registered in the audit graph, and the present runner only renders
+summary rows. Those rows have therefore been narrowed out of this
+meta-comparison (see the 2026-05-18 repair section below); the
+remaining cross-family discussion is restricted to qualitative
+surface-shape observations.
 
 ## Safe Read
 
-- the retained grown basin preserves exact zero-source / neutral cancellation and stays at `F~M = 1.000` on the checked companion surface
-- the alternative connectivity family also preserves exact zero / neutral controls and keeps weak-field `F~M` at `0.999994` across the full tested drift sweep
-- the second-family complex anchor keeps `F~M = 1.000`, but its comparison surface is `gamma = 0` baseline plus crossover rather than the same zero / neutral signed-source surface
+- each cited family discusses a fixed-companion weak-field law on its own
+  declared observable surface, but the cross-family numeric `F~M` values
+  and zero/neutral controls require a registered upstream authority and a
+  runner that recomputes them — neither is in place at this note
+- the sign-law slices (retained grown-transfer basin and alternative
+  connectivity family) declare the same signed-source observable surface
+  in their own notes; this meta-card no longer asserts the numeric
+  cancellation result on their behalf
+- the second-family complex anchor declares a different comparison
+  surface (`gamma = 0` baseline plus crossover) in its own note; this
+  meta-card no longer asserts the numeric `F~M` value on its behalf
 
-## Exact Mismatch
+## Surface-shape mismatch (qualitative)
 
-- the sign-law families share the same zero / neutral control surface
-- the second-family complex lane does not: it is a complex-action branch, so the nearest analogue is `gamma = 0` baseline rather than zero-source cancellation
-- that means the shared result is the weak-field law, not a universal identity of all controls
+- the sign-law families declare a zero/neutral signed-source observable
+  surface in their own notes
+- the second-family complex lane declares a `gamma = 0` baseline plus
+  crossover surface in its own note
+- as a meta-observation, those declared surfaces are not the same; any
+  shared weak-field statement across these families would have to
+  recompute on a common surface in a registered runner
 
 ## Final Verdict
 
-**retained narrow comparison positive: shared weak-field linearity, with control-surface mismatch isolated rather than averaged away**
+**support-tier meta-comparison only: declared observable surfaces noted per family; cross-family numeric `F~M` and zero/neutral control claims have been narrowed out pending a registered upstream authority and a recomputation runner**
 
 ## Audit boundary (2026-04-28)
 
@@ -80,3 +97,33 @@ claim scope.
 - [ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md](ALT_CONNECTIVITY_FAMILY_BASIN_NOTE.md) — alternative-connectivity family basin row supplying `F~M = 0.999994` on the full tested drift sweep.
 - [SECOND_GROWN_FAMILY_COMPLEX_NOTE.md](SECOND_GROWN_FAMILY_COMPLEX_NOTE.md) — second-family complex anchor row supplying `F~M = 1.000` on the `gamma = 0` baseline.
 - [ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md](ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md) — alt-family `F~M` transfer evaluation supplying the precise `0.999994` weak-field linearity value on the alt-connectivity slice. The original grown-transfer basin authority is currently archived under `archive_unlanded/grown-transfer-stale-runners-2026-04-30/`, so it is not wired as an in-`docs/` one-hop edge here.
+
+## 2026-05-18 audit-conditional repair: narrowed to declared observable surface
+
+Per the 2026-05-17 audit verdict, the grown-transfer basin authority is
+not registered, and the runner only renders summary rows rather than
+recomputing controls or F~M values. This revision narrows the meta-comparison
+to the declared observable surface — removing the grown-row F~M=1.000 and
+zero/neutral control rows. Those are queued as out-of-scope follow-ups
+awaiting (a) registration of the grown-transfer basin authority and
+(b) a recomputation runner on the same observable surface.
+
+Concretely narrowed out of this note (still discussed in the cited source
+notes, which carry their own audit verdicts):
+
+- the retained grown-transfer basin row asserting `F~M = 1.000` on
+  signed-source with exact zero/neutral cancellation
+- the alternative-connectivity row asserting the precise `0.999994`
+  weak-field value with exact zero/neutral cancellation
+- the second-family complex anchor row asserting `F~M = 1.000` on the
+  `gamma = 0` baseline plus crossover surface
+- the "Exact Mismatch" cross-surface conclusion that depended on those
+  three rows being recomputed at this meta-card
+
+What is retained at this meta-card: the declared observable surface for
+each family (signed-source vs `gamma = 0`-plus-crossover) and the
+qualitative observation that those surfaces are not the same. No numeric
+`F~M` value and no zero/neutral control claim is carried at this note
+until both (a) the grown-transfer basin authority is audit-registered
+and (b) a runner recomputes the controls and `F~M` values on a common
+declared observable surface.

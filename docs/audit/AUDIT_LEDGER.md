@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 355 |
 | _retained_pending_chain_ | 6 |
 | open_gate | 16 |
-| unaudited | 1342 |
+| unaudited | 1341 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 574 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1561 |
+| `unaudited` | 1560 |
 
 | claim_type | count |
 |---|---:|
@@ -749,6 +749,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4961,6 +4962,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Inside the declared fit window M in {2,3,5,8}, the dense Z2 x Z2 extension shows a positive-row mass-bump fit, with in-window negative rows disclosed and excluded by the runner's delta > 0 guard.  _(class `C`)_
 - **chain closes:** True — The source note's scoped numerical statements match the completed SHA-pinned cache, and the runner source computes the Z2xZ2 DAG rows and applies the declared delta > 0 fit filter rather than hard-coding the stated coefficients. The disclosed negative rows keep the claim bounded to the positive-row subfit and weak distance-sweep observations.
 - **rationale:** The clean result is limited to the exact finite runner surface and the explicitly narrowed positive-row subfit/distance-sweep facts. Residual risk is that the fit window and positive-row filter are analysis choices and do not by themselves imply a physical gravity law, rowwise positivity, Born safety, or upstream coexistence closure; those broader readings are outside the audited scope.
+- **auditor confidence:** high
+
+### `higher_symmetry_joint_validation_note`
+
+- **Note:** [`HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md`](../../docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Sparse Z2 x Z2 joint Born + gravity + decoherence validation at N=25,40,60,80 from the inlined raw log only; dense N=80/100/120 and any N=120 retained promotion are excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-higher_symmetry_joint_va-037`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The sparse joint-validator log for Z2 x Z2 at N=25,40,60,80 shows machine-precision Born values, zero k=0 control, positive band-averaged gravity, and slow decoherence decay, while the dense N=120 promotion is declared out of binding scope.  _(class `C`)_
+- **chain closes:** False — The restricted packet does not close the registered-runner provenance: the note admits there is no SHA-pinned runner-cache for scripts/higher_symmetry_joint_validation.py and that it is not registered as this row's primary runner. The inlined runner also imports helper computation modules whose source is not supplied in the helper section, so the metric implementation is not fully auditable from the packet.
+- **rationale:** The numerical claim is a bounded compute claim, not a renaming or external numerical match, and the inlined runner appears to perform a genuine sweep rather than print constants. However, the note itself identifies the remaining runner-artifact gap: no registered SHA-pinned cache exists for the joint validator, and the joint validator is not registered as the row's primary runner. The packet also lacks the transitive helper sources needed to verify the imported DAG generation and joint-measurement functions. The dense N=120 language is not binding under the source note's own narrowed scope.
 - **auditor confidence:** high
 
 ### `holographic_probe_note_2026-04-11`

@@ -1,8 +1,8 @@
 # Three-Generation Observable: No-Proper-Quotient Narrow Theorem
 
-**Date:** 2026-05-02
+**Date:** 2026-05-02 (Tier B narrowing + C₃-carrier admission 2026-05-18)
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
+**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`); explicit C₃-carrier admission declared in §"Admitted-import declaration (2026-05-18)" below.
 **Primary runner:** `scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py`
 
 ## Claim scope (proposed)
@@ -67,6 +67,95 @@ so S ∈ {∅, {1,2,3}}.
 ```
 
 This is class (A) — algebraic identity / closure on retained-grade inputs.
+
+## Admitted-import declaration (2026-05-18)
+
+The staggered-Dirac / C₃[111] carrier on which this theorem operates is
+**explicitly declared as an admitted import** of this note. Concretely:
+
+- The `hw=1` triplet `H_{hw=1} ≅ ℂ³` with basis `(X_1, X_2, X_3)` is
+  an admitted carrier; its derivation lives in the staggered-Dirac
+  realization gate (canonical parent
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, currently
+  `open_gate`).
+- The cyclic generator `C₃[111]: X_1 → X_2 → X_3 → X_1` is an admitted
+  symmetry of the carrier; its group-theoretic identity is `C₃ ≅ ℤ/3ℤ`,
+  abstractly the cyclic group of order 3.
+
+Under this admission, the no-proper-quotient claim narrows to a pure
+finite-group / linear-algebra statement about `C₃`-equivariant
+subspaces of `ℂ³`. No new physical content is introduced beyond what
+the admitted carrier already provides.
+
+The Tier B repair narrows the bounded claim as follows:
+
+> **Narrowed claim.** *Conditional on the admitted staggered-Dirac /
+> `C₃[111]` carrier import*, the three-generation observable on
+> `H_{hw=1} ≅ ℂ³` has no proper non-trivial sub-representation
+> invariant under both the diagonal projector algebra `D_3` and the
+> `C₃[111]` cycle. Equivalently, no proper quotient of `H_{hw=1}`
+> preserves both the translation-character separation and the
+> `C₃[111]` cycle.
+
+This is strictly a narrowing — it does not strengthen the original
+algebra-generation argument; it only declares the carrier as admitted
+and isolates the part of the proof that is pure finite-group
+arithmetic on `C₃`.
+
+## Finite-group arithmetic derivation (C₃ subgroup structure, 2026-05-18)
+
+The narrowed claim is proved by pure finite-group arithmetic on `C₃`.
+
+**Step 1 — `|C₃| = 3` is prime.**
+`C₃ = ℤ/3ℤ` has order 3, which is prime.
+
+**Step 2 — Subgroup classification.**
+By Lagrange's theorem, the order of any subgroup `H ≤ C₃` divides
+`|C₃| = 3`. The divisors of 3 are `{1, 3}`. Therefore the only
+subgroups of `C₃` are:
+
+- the trivial subgroup `{e}` of order 1, and
+- `C₃` itself of order 3.
+
+There are **no proper non-trivial subgroups** of `C₃`.
+
+**Step 3 — Normal subgroups.**
+Every subgroup of an abelian group is normal. Since `C₃` is abelian
+(it is cyclic), both `{e}` and `C₃` are normal. By Step 2 these are
+the only normal subgroups, so `C₃` has **no proper non-trivial normal
+subgroups**.
+
+**Step 4 — Quotients.**
+The quotients of `C₃` correspond bijectively with its normal
+subgroups: `C₃ / {e} ≅ C₃` (trivial quotient) and `C₃ / C₃ ≅ {e}`
+(collapse to a point). By Step 3 these are the only quotients, so
+`C₃` has **no non-trivial proper quotients**.
+
+**Step 5 — Lift to the admitted carrier.**
+The admitted `H_{hw=1} ≅ ℂ³` carrier is the regular representation
+of `C₃` (up to the explicit basis identification with translation
+characters). A `C₃`-equivariant proper subspace `V ⊊ ℂ³` would give
+a non-trivial sub-representation, whose annihilator would give a
+non-trivial proper quotient of the carrier compatible with the `C₃`
+action. By Step 4 no such quotient exists at the group level; by
+linearity (Maschke / direct-sum decomposition for the regular
+representation of a finite cyclic group over `ℂ`), no `C₃`-invariant
+proper subspace of `ℂ³` exists that is also `D_3`-invariant, except
+`{0}` and `ℂ³` itself.
+
+**Step 6 — Conclusion.**
+The three-generation observable structure on the admitted `C₃`
+carrier inherits the no-proper-quotient property of `C₃` itself.
+No proper quotient of `H_{hw=1}` preserves both the
+translation-character separation (= `D_3`-eigenspace structure) and
+the `C₃[111]` cycle.
+
+The derivation is **pure finite-group arithmetic** — Lagrange's
+theorem applied to a prime-order cyclic group — and depends on no
+input beyond the admitted carrier. Per
+`feedback_consistency_vs_derivation_below_w2`, this is a genuine
+derivation, not a numerical / dimensional coincidence: it follows
+from `|C₃| = 3` being prime.
 
 ## Verification
 

@@ -72,6 +72,23 @@ and a **no-gap counter-example** (E4) that confirms the gap is
 genuinely required (without it, connected correlators do not decay
 at all). All four exhibits PASS.
 
+## Finite-Lambda transfer-gap support update (2026-05-19)
+
+[`CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md`](CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md)
+supplies a finite-Lambda SU(3) heat-kernel transfer-operator support theorem
+for the previously open positive-transfer-matrix candidate. It proves a
+simple top eigenvalue and strict temporal transfer gap for the finite-Lambda
+`T_W` surface using heat-kernel positivity, trace-class smoothing on compact
+`SU(3)^E`, and the standard Perron-Jentzsch/Krein-Rutman
+positivity-improving compact-operator theorem.
+
+The staggered+Wilson `T_full` extension in that support note is conditional
+on the determinant-positivity input in
+[`STRONG_CP_THETA_ZERO_NOTE.md`](STRONG_CP_THETA_ZERO_NOTE.md). The current
+audit ledger marks that input `audited_conditional`, so this update does not
+promote L2 to an unconditional retained theorem. It records the finite-Lambda
+operator-gap support and wires the remaining dependency explicitly for audit.
+
 The parent claim's L2 statement below is restated as conditional/open
 in §"Honest status (post-bridge-repair)".
 

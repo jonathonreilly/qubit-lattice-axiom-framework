@@ -1,12 +1,18 @@
 # Scalar-Selector Cycle 1 — Reviewer Package
 
-**Status:** open - open or unresolved claim state
+**Status:** historical / diagnostic — reviewer handoff context only
 **Date:** 2026-04-20
 **Scope:** Historical public handoff note for the scalar-selector
 cycle. This is useful route-history context, but it is **not** the current
 primary claim surface. The authoritative package-facing status now lives in
 `publication/ci3_z3/README.md`, `publication/ci3_z3/CLAIMS_TABLE.md`, and
 `publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md`.
+
+This note is preserved for audit/history/instrumentation per
+`docs/repo/CONTROLLED_VOCABULARY.md`. Statements written in present-tense
+"current package" voice below reflect the 2026-04-20 / 2026-04-21 reviewer
+handoff snapshot, not live production-lane status; for current package
+authority, follow the `publication/ci3_z3/` references above.
 
 ---
 
@@ -540,3 +546,13 @@ still-atlas-backed Tier-1 closures this cycle.
 2. `docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md` — retained-observational inputs with candidate closing derivations.
 3. Per-lane theorem notes referenced in §1–§4 — supporting detail.
 4. Runner scripts — numerical / symbolic verification.
+
+---
+
+## 2026-05-18 audit-conditional repair: converted to historical handoff context
+
+Per the 2026-05-17 audit verdict, this package is best treated as historical
+reviewer-handoff context rather than an active production-lane package.
+This revision updates the Status line and removes production-lane framing
+from the body. Preserved for audit/history/instrumentation per
+docs/repo/CONTROLLED_VOCABULARY.md.

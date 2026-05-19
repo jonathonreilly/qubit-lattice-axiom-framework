@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "_doc": "File-level vocab-extension queue. vocab_lint --fix appends entries here when it encounters a genuinely new term it cannot mechanically rewrite. Independent of audit rows so review-loop / physics-loop entries are not dropped when no audit row exists yet. See docs/repo/VOCABULARY_HYGIENE_DESIGN.md.",
+  "_entry_shape": {
+    "file_path": "string (relative to repo root)",
+    "line_number": "int",
+    "term": "string (the new term vocab_lint detected)",
+    "context": "string (surrounding text for review)",
+    "recorded_at": "ISO 8601 timestamp",
+    "recorded_by": "string (loop identifier: audit-loop / review-loop / physics-loop / etc.)"
+  },
+  "_cadence": "Weekly batch OR 10+ queued entries, whichever comes first. The nightly audit cron at 0 6 * * * UTC can be extended with a 'vocab-extension-queue summary' step that posts the current queue as a single comment or issue; a human reviewer or scheduled agent then batches the accepted terms into one PR against docs/repo/controlled_vocabulary.yaml.",
+  "_backpressure": "If the queue exceeds 50 entries, audit-loop and review-loop emit prose_status: queue_backpressure_exceeded instead of needs_human_vocab_decision so the absence of review is visible on every new row.",
+  "entries": []
+}

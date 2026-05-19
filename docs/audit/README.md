@@ -88,6 +88,54 @@ library is driven only by auditor-owned fields:
   - `meta` for non-claim infrastructure rows.
   - `audited_<failure_mode>` for terminal non-clean audit verdicts on active
     claims.
+- `prose_status` — vocabulary-drift status, orthogonal to `audit_status`. See
+  `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`. One of:
+  - `clean` — no vocabulary drift detected by `vocab_lint`.
+  - `auto_corrected` — routine drift mechanically rewritten by
+    `vocab_lint --fix`; rewrites logged in `prose_corrections`.
+  - `needs_human_vocab_decision` — genuinely new term that `vocab_lint`
+    cannot mechanically rewrite; queued for periodic vocab-extension review.
+  - `not_evaluated_pre_vocab_lint` — pre-Cleanup-1 row never linted under
+    the new rules. Used during backfill only.
+  - `queue_backpressure_exceeded` — vocab-extension review queue is >50
+    entries deep; new unresolved terms emit this until the queue is
+    processed.
+
+  `prose_status` does **not** propagate into `effective_status`. A
+  non-clean prose_status never demotes a physics-clean row; a clean
+  prose_status never promotes a physics non-clean row. Physics and
+  vocabulary are reviewed by separate mechanisms.
+
+- `prose_corrections` — list of `(rule_id, before, after)` tuples recording
+  the mechanical rewrites `vocab_lint --fix` applied to the source note
+  during the same audit cycle.
+
+When an audit chain runs `vocab_lint --fix` on the source note before
+applying the verdict, the resulting note-hash refresh and the
+`prose_status` / `prose_corrections` write happen atomically via a
+`pre_audit_prose_fix` envelope on the incoming audit blob:
+
+```json
+{
+  "claim_id": "...",
+  "verdict": "audited_clean",
+  ...,
+  "pre_audit_prose_fix": {
+    "old_hash": "<row.note_hash before vocab_lint --fix>",
+    "new_hash": "<note_hash after vocab_lint --fix>",
+    "prose_status": "auto_corrected",
+    "prose_corrections": [
+      {"rule_id": "legacy_alias_strip", "before": "(legacy alias: A1)", "after": ""}
+    ]
+  }
+}
+```
+
+`apply_audit.py` verifies `old_hash` matches the ledger's current
+`note_hash`, then refreshes `note_hash` to `new_hash` before the
+hash-drift check; without the envelope, running `vocab_lint --fix`
+would immediately invalidate the audit. The envelope is the supported
+atomic refresh path.
 
 Generated audit data must not contain legacy source-status authority fields.
 The graph builder may use old source-note status prose as a one-way migration

@@ -226214,7 +226214,7 @@
       "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": null,
       "chain_closure_explanation": null,
       "claim_id": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
@@ -226238,8 +226238,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-19T15:25:47.891593+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-su3_low_rank_irrep_picar-015",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite runner-backed catalog of order-3 polynomial-coefficient ODEs for the seven listed SU(3) irreps, with bounded ansatz search r<=6, d<=8 and numerical checks only on beta in {2,4,6,8}.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [

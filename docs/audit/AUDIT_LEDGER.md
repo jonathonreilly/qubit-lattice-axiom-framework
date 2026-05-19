@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 361 |
+| **retained_bounded** | 362 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1327 |
+| unaudited | 1326 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 583 |
+| `audited_clean` | 584 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1546 |
+| `unaudited` | 1545 |
 
 | claim_type | count |
 |---|---:|
@@ -158,6 +158,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alt_connectivity_family_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `alt_connectivity_family_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `alt_connectivity_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `alternative_coupled_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `anderson_phase_mu2_0001_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `architecture_portability_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1186,6 +1187,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The included runner source constructs the alternative connectivity rule, propagates fields through the generated slice, and computes the reported zero, neutral, sign, and scaling checks rather than printing constants. The note's conclusion is explicitly bounded to the tested rows and rejects family-wide closure.
 - **rationale:** The load-bearing step is a direct bounded computational sweep, and the runner source performs a nontrivial calculation of geometry, connectivity, source fields, propagation, centroids, and pass/fail gates. The note's quantitative claims match the cached stdout: 10/15 rows pass, passing rows cover all listed drifts, and the mean exponent among passes is 1.000035. The safe read does not overclaim all seeds, generic geometry closure, or family-wide validity.
 - **auditor confidence:** medium
+
+### `alternative_coupled_field_probe_note`
+
+- **Note:** [`ALTERNATIVE_COUPLED_FIELD_PROBE_NOTE.md`](../../docs/ALTERNATIVE_COUPLED_FIELD_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded numerical claim that the specified edge-carried transport rule on the stated exact 3D lattice recovers free propagation at zero source and preserves positive weak-field deflection with near-linear source-strength scaling for s=0.001 to 0.008.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-alternative_coupled_fiel-054`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes that the edge-carried forward-transport field has zero-source dynamic shift +0.000000e+00, positive edge-carried deflection in all four source-strength rows, and fitted edge-carried F~M exponent 0.98 on the exact 3D lattice.  _(class `C`)_
+- **chain closes:** True — Within the stated bounded scope, the included runner and helper source instantiate the lattice, build the edge-carried field, propagate amplitudes, and compute detector shifts rather than printing hard-coded expected values. The arbitrary transport parameters and weak-field calibration limit the scope, but they are explicit premises of the audited family rather than hidden downstream dependencies.
+- **rationale:** The primary runner source and helper source are present, and the load-bearing readout is computed from the provided lattice propagation code. The zero-source case follows because a zero source builds an all-zero edge field, and the sign/scaling rows are computed by propagating with constructed field layers over the stated sweep. No cited authority is missing or non-retained, and no external comparator is used. The verdict is clean only for the explicitly parameterized bounded family, not for a general coupled-field theory.
+- **auditor confidence:** high
 
 ### `anderson_phase_mu2_0001_note_2026-04-11`
 

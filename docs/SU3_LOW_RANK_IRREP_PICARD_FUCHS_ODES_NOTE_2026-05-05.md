@@ -17,22 +17,31 @@ c_{(p,q)}(β) := ∫_{SU(3)} χ_{(p,q)}(U) exp(β · Re Tr U / 3) dU
 
 the selected low-rank representatives
 `(p, q) in {(0,0), (1,0), (1,1), (2,0), (2,1), (2,2), (3,0)}`
-satisfy closed-form linear holonomic Picard-Fuchs ODEs in `beta` of
-order 3 with explicit primitive-integer polynomial coefficients.
+satisfy the closed-form linear holonomic Picard-Fuchs ODEs in `beta`
+of order 3 listed below, with explicit primitive-integer polynomial
+coefficients. The order-3 ansatz is the **smallest fit the runner
+finds inside its bounded search box** `(r ≤ 6, deg ≤ 8)`; no claim is
+made that order 3 is the all-order minimum outside that box (see
+"Claim boundary" and the 2026-05-18 audit-conditional repair section
+below).
 
-The order-3 structure is **uniform** — the same as the repo's V=1
-(trivial irrep) result. The polynomial-coefficient degree grows with
-the irrep weight: deg 2 for (0,0), deg 3 for (1,1), deg 4 for (1,0),
-deg 5 for (2,0)/(2,1)/(2,2), deg 6 for (3,0).
+The order-3 structure is **uniform across the runner-checked set** —
+the same as the repo's V=1 (trivial irrep) result. The polynomial-
+coefficient degree grows with the irrep weight: deg 2 for (0,0),
+deg 3 for (1,1), deg 4 for (1,0), deg 5 for (2,0)/(2,1)/(2,2),
+deg 6 for (3,0).
 
 By conjugation symmetry `c_{(q,p)} = c_{(p,q)}`, the same catalog also
 covers the conjugate representatives. It does not claim coverage of
 the full `(p,q) <= (3,3)` box.
 
 These ODEs are explicit — verified to numerical error ≤ 3.1×10⁻⁸ vs
-direct Bessel-determinant numerical evaluation on β ∈ [1, 8] — and
-extend the repo's existing V=1 Picard-Fuchs runner-backed result to a
-larger selected character set.
+direct Bessel-determinant numerical evaluation **on the finite runner-
+checked window** `β ∈ {2, 4, 6, 8}` (integration started at `β=1`,
+covering the interval `β ∈ [1, 8]`) — and extend the repo's existing
+V=1 Picard-Fuchs runner-backed result to a larger selected character
+set. Bounded claims of this note are scoped to this finite window and
+to the bounded `(r, d)` search box; see "Claim boundary" below.
 
 ## ODE catalog
 
@@ -153,8 +162,12 @@ For each irrep R, the script:
    were used to solve, and (ii) numerically integrating from
    β=1 initial conditions against direct Bessel-determinant evaluation.
 
-For the selected representatives in this note, the detected minimal
-rank is order 3.
+For the selected representatives in this note, the **smallest fit
+inside the runner's bounded `(r, d)` search box** (`max_r=6`,
+`max_d=8` in the script) is at order 3. The note does NOT claim
+order-3 minimality outside this finite search window; an all-order
+minimality proof (e.g., via D-module / holonomic-rank lower bounds) is
+explicitly queued as out-of-scope follow-up.
 
 ## Cited authorities
 
@@ -205,10 +218,20 @@ What this catalog gives the framework:
 
 This note claims only the runner-backed ODE catalog for the selected
 low-rank representatives above, together with numerical verification
-against the Bessel-determinant evaluator on `beta in {2,4,6,8}`. It
-does not claim the full `(p,q) <= (3,3)` box, literature priority, a
-thermodynamic-limit Wilson plaquette value, or a derivation of the
-boundary character measure `rho_{(p,q)}(6)`.
+against the Bessel-determinant evaluator on the **finite runner-checked
+window** `beta in {2, 4, 6, 8}` (integration from `beta=1`; interval
+`beta in [1, 8]`). It does not claim:
+
+- The full `(p,q) <= (3,3)` box.
+- Literature priority.
+- A thermodynamic-limit Wilson plaquette value.
+- A derivation of the boundary character measure `rho_{(p,q)}(6)`.
+- **All-order minimality**: the order-3 result is the smallest fit
+  found inside the runner's bounded `(r, d)` search box
+  (`max_r=6, max_d=8`); the assertion that order 3 is genuinely
+  minimal at all orders is not certified by this note's runner and
+  is queued as out-of-scope follow-up.
+- Behavior of the ODEs / verification outside `beta in [1, 8]`.
 
 ## Reusable artifact
 
@@ -218,6 +241,27 @@ verifies each numerically, writes output JSON.
 
 [`outputs/su3_low_rank_pf_odes_2026_05_05.json`](../outputs/su3_low_rank_pf_odes_2026_05_05.json)
 — machine-readable ODE coefficients for downstream consumers.
+
+## 2026-05-18 audit-conditional repair: narrowed scope to finite runner-checked window
+
+Per the 2026-05-17 audit verdict (`scope_too_broad`), the bounded claim was
+too broad: the all-order minimality assertion extended beyond what the
+finite runner-checked window certifies. This revision narrows the bounded
+claim to the finite window certificate. The all-order extension is queued
+as out-of-scope follow-up.
+
+Concretely:
+
+- The minimality assertion "the detected minimal rank is order 3" was
+  narrowed to "smallest fit inside the runner's bounded `(r, d)` search
+  box `(max_r=6, max_d=8)`".
+- Numerical verification scope was made explicit as the finite window
+  `beta in {2, 4, 6, 8}` with integration from `beta=1` (interval
+  `beta in [1, 8]`); no claim is made about behavior outside this window.
+- The headline and "Claim boundary" sections were updated to reflect
+  the narrowed scope.
+- An all-order minimality proof (e.g., via D-module / holonomic-rank
+  lower bounds) is explicitly queued as out-of-scope follow-up.
 
 ## Ledger hint
 

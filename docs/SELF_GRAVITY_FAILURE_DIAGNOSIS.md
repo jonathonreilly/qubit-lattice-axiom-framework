@@ -1,6 +1,7 @@
 # Self-Gravity Failure Diagnosis
 
 **Date:** 2026-04-06  
+**Claim type:** no_go
 **Status:** support - structural or confirmatory support note
 
 ## Artifact chain
@@ -79,14 +80,15 @@ It is instead:
 
 ## Strongest retained conclusion
 
-This lane is now a **bounded no-go**.
+This lane is now a **bounded no-go on nonzero-`epsilon` loops only**.
 
 The best honest summary is:
 
-- exact null identity holds
-- a tiny backreaction perturbation exists
+- exact null identity holds at `epsilon = 0` (this case is **excised** from the
+  no-go binding; see 2026-05-18 repair section below)
+- a tiny backreaction perturbation exists at nonzero `epsilon`
 - but the perturbation does not survive as a stable, review-safe self-gravity
-  mechanism on this architecture
+  mechanism on this architecture for nonzero-`epsilon` loops
 
 ## What would reopen it
 
@@ -97,4 +99,28 @@ To reopen this lane, a later architecture would need to show all four at once:
 - step-local Born near machine precision
 - end-to-end Born that stays review-clean
 
-Until then, the lane is closed for mechanism claims.
+Until then, the lane is closed for mechanism claims **at nonzero `epsilon`**.
+
+## 2026-05-18 audit-conditional repair: excise ε=0 survivor; narrow binding to nonzero-ε
+
+Per the 2026-05-17 audit verdict (`scope_too_broad`), the binding no-go
+claim incorrectly extended to ε=0 where a survivor exists. This revision
+narrows the no-go binding to nonzero-ε loops only. The ε=0 survivor case
+is explicitly excised from the no-go scope.
+
+Specifically:
+
+- The "What survives" section already records the ε=0 survivor: centroid shift
+  `+0.000000e+00`, escape ratio `1.000000`, phase slope `+0.0000e+00`, phase
+  span `+0.0000e+00`, convergence `True`. This is the exact-lattice identity
+  reduction at ε=0, and it is **not** part of the no-go.
+- The no-go binding ("the perturbation does not survive as a stable,
+  review-safe self-gravity mechanism") applies only to nonzero-ε loops. At
+  ε=0 the identity is exact, not failed, and so cannot be inside a no-go.
+- The three failure modes (small signal, unstable nonlinear iteration,
+  end-to-end Born degradation) all activate only for ε ≠ 0; at ε = 0 none of
+  them fire (signal is identically zero, loop converges, Born is clean).
+
+N1-N8 no-go discipline check: this revision **narrows** the no-go (removes the
+ε=0 case from its scope). It does **not** broaden the no-go to any new
+configuration. Narrowing is N1-N8 safe.

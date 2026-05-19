@@ -1,7 +1,9 @@
 # Moment-Ratio Uniformity (MRU) on Cl(d)/Z_d — conditional support note
 
 **Date:** 2026-04-19 (substantive status repair 2026-05-16: load-bearing
-SO(2)-quotient explicitly demoted from "derived" to "admitted input").
+SO(2)-quotient explicitly demoted from "derived" to "admitted input";
+header-level missing-bridge admission contract added 2026-05-18 per
+audited_conditional `notes_for_re_audit_if_any` request).
 
 **Lane:** Charged-lepton Koide / `kappa = 2`.
 
@@ -25,6 +27,85 @@ independent retained routes that do **not** use the SO(2)-quotient:
 does not derive the quotient itself).
 
 **Companion runner:** `scripts/frontier_koide_mru_weight_class_obstruction_theorem.py`.
+
+---
+
+## Header-level missing-bridge admission contract (2026-05-18)
+
+The audit verdict on this row
+(`koide_moment_ratio_uniformity_theorem_note_2026-04-19`,
+`audited_conditional`, codex-cli-gpt-5.5, xhigh, cross_family,
+audit_date 2026-05-16) records:
+
+> "The algebra after the SO(2)-quotient closes, but the full claim does
+> not close from the restricted packet because the physical
+> SO(2)-quotient/readout is explicitly admitted and not derived. The
+> missing step is a retained theorem forcing scalar charged-lepton
+> observables to factor through the doublet radius alone."
+
+and `notes_for_re_audit_if_any`:
+
+> "missing_bridge_theorem: prove or cite a retained theorem that the
+> charged-lepton scalar lane observables factor through the SO(2)
+> doublet-radius quotient before applying the reduced log-volume law."
+
+This note hereby acknowledges that admission as a **header-level
+admitted import**. Concretely:
+
+1. **What is admitted (not derived) in this note:** the load-bearing
+   physical claim of Section 2.2 — that the charged-lepton scalar lane
+   observables factor through the SO(2) orbit of the doublet plane, so
+   that only `r_1^2 + r_2^2 = 6 E_perp` is carried by the scalar lane
+   and the angle `arg b` is not.
+
+2. **Why no current retained framework theorem closes the admission:**
+   the demotion note
+   `KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md` Section 1.2 proves that
+   under `b -> e^{i theta} b`, the spectrum-native scalar observables
+   `tr(H^3)` and `det(H)` on `Herm_circ(3)` carry an explicit
+   `cos(3 arg b)` dependence and therefore do **not** factor through
+   `(|b|, a)` alone. The naive Cl(d)/Z_d invariant-theory bridge for
+   d=3 (Path A: derive the SO(2)-quotient from the retained observable
+   principle on `Herm_circ(3)`) is closed at the Nature bar by that
+   proof.
+
+3. **Cite-or-derive follow-up (out of scope for this row):** a
+   future retained theorem on the charged-lepton scalar lane is
+   required to upgrade this row from `audited_conditional` to
+   `audited_clean`. The candidate forms named by the demotion note
+   Section 6 paragraph 1 are: a retained framework result decoupling
+   the `cos(3 arg b)` channel from the scalar charged-lepton lane;
+   equivalently, a retained invariant-theory factorization of the
+   scalar observables on `Herm_circ(3)` through the SO(2)-quotient
+   `R x R^2/SO(2)` carrier. Neither candidate exists on this branch
+   at audit date 2026-05-16; the demotion note records this as the
+   open derivation gap.
+
+4. **Conditional status is intentional, not a fixable algebra gap.**
+   The post-quotient algebra (Sections 1, 3, 4, 5) is already
+   independently isolated as a standalone bounded narrow theorem in
+   [`KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`](KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md)
+   (claim_id `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`,
+   audit pipeline target). That narrow theorem inherits the same §2.2
+   admission scope and verifies the post-quotient Lagrange extremum on
+   `(rho_+, rho_perp)` as monotone-reparametrization-equivalent to the
+   retained Frobenius-carrier extremum on `(E_+, E_perp)` certified
+   by `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
+   (T3). The remaining gap on this row is the SO(2)-quotient
+   admission itself, not the algebra.
+
+5. **Status authority:** this section is descriptive, not promotional.
+   The independent audit lane retains sole authority over the
+   effective status of this row, the demotion note, the companion
+   narrow theorem, and the two retained operator-side `kappa = 2`
+   closure routes named above. This note does not promote, retain, or
+   change any audit status.
+
+This admission contract makes the conditional dependency explicit at
+header level so the audit pipeline and downstream readers can route
+around it: the row's `audited_conditional` grade is carried by a
+named, out-of-scope cite-or-derive follow-up on the SO(2)-quotient
+physical postulate, not by an internal algebra gap.
 
 ---
 

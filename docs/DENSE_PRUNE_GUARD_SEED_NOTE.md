@@ -1,10 +1,12 @@
 # Dense Prune Guard Seed Note
 
-This note compares the exact flip-prone seed IDs from the replay work against the current channel-count guard path.
+**Claim type:** bounded_theorem
 
-The code path has evolved a bit since the earlier replay logs, so treat these as same-seed diagnostic comparisons rather than a literal byte-for-byte rerun of the older numbers.
+This note compares the historically flip-prone seed set from the replay work against the current channel-count guard path at the aggregate level supported by the cached runner output.
 
-Historical flip seeds from the replay set:
+The code path has evolved since the earlier replay logs, so treat any per-seed numbers in the historical reference tables below as legacy diagnostic snapshots, not as the cache-certified support for this note's bounded claim.
+
+Historical flip seeds from the replay set (reference only):
 - `N=80`: seeds `8, 12, 13`
 - `N=100`: seeds `2, 3, 13`
 
@@ -12,7 +14,17 @@ Current guard path:
 - **Primary runner:** `scripts/channel_count_guarded_prune.py`
 - guard mode: channel-count preserving, `q=0.10`
 
-## Per-seed comparison
+## Per-seed comparison (legacy reference, not cache-certified)
+
+> The tables in this section are retained as a legacy snapshot from the
+> earlier replay path. The currently cached runner stdout reports only
+> aggregate rows over the seed set, and does not certify the exact
+> per-seed `grav`, `purity`, `eff_ch`, `flip`, or `removed_total` values
+> printed below, nor whether the channel-count guard triggered on any
+> individual seed. Per the 2026-05-17 audit verdict, these per-seed
+> numbers do not load-bear the bounded claim below; they are kept here
+> for narrative continuity until a per-seed diagnostic runner output
+> lands (see follow-up section).
 
 ### N = 80
 
@@ -36,18 +48,39 @@ Current guard path:
 | 13 | plain | +3.652 | -0.054 | -3.707 | 0.9999 | 0.9959 | -0.0040 | 4.09 | 2.97 | 1 |
 | 13 | guard | +3.652 | +3.652 | +0.000 | 0.9999 | 0.9999 | +0.0000 | 4.09 | 4.09 | 0 |
 
-## Readout
+## Readout (aggregate-supported)
 
-The guard is not just changing the average. It fixes specific seeds when it preserves the effective detector-channel count (`eff_ch`) and leaves other seeds vulnerable when `eff_ch` still drops.
+At the aggregate level certified by the cached runner stdout, the channel-count
+guard shifts the bounded pruning behavior on the flip-prone seed set: aggregate
+gravity, aggregate purity, and aggregate `eff_ch` differ between plain and
+guarded modes, and the aggregate flip count is reduced under the guard.
 
-The clearest rescue cases are:
-- `N=80`, seed `12`: flip removed and `eff_ch` rises `8.22 -> 8.99`
-- `N=100`, seed `13`: flip removed and `eff_ch` stays at `4.09`
+The note no longer claims, on the basis of this cache, that the guard is a
+"seed-selective channel-preservation mechanism" or that specific named seeds
+are rescue / non-rescue cases. Those would require a per-seed diagnostic
+runner output that prints `grav`, `purity`, `eff_ch`, `flip`, `removed_total`,
+and a guard-triggered flag per seed under the same code hash. Such a runner
+output is queued as out-of-scope follow-up below.
 
-The clearest non-rescue case is:
-- `N=100`, seed `3`: flip remains and `eff_ch` still falls `3.02 -> 2.60`
+What the aggregate cache does support, as a bounded observation, is that the
+channel-count guard is not a no-op on this seed set: aggregate `eff_ch` and
+aggregate flip count both move under the guard relative to plain pruning. The
+detailed mechanism by which individual seeds respond is not certified here.
 
-So the guard is a seed-selective channel-preservation mechanism, not a pure averaging fix.
+## 2026-05-18 audit-conditional repair: per-seed mechanism claim narrowed to aggregate
+
+Per the 2026-05-17 audit verdict, the per-seed table and seed-selective
+mechanism claims were not supported by the cached aggregate-only stdout.
+This revision narrows the bounded claim to what the existing aggregate
+cache supports. A future per-seed diagnostic runner output is queued
+as out-of-scope follow-up.
+
+Follow-up (out of scope for this repair): a per-seed diagnostic runner
+output that, for the listed historical seeds and under the same code
+hash as the aggregate cache, prints `grav`, `purity`, `eff_ch`, `flip`,
+`removed_total`, and a guard-triggered flag per seed. Until that lands,
+the per-seed tables above are legacy reference only and the
+seed-selective mechanism language is withdrawn from the bounded claim.
 
 ---
 

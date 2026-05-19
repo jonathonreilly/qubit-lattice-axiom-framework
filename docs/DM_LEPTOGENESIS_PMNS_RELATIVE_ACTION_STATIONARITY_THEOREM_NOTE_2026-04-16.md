@@ -119,6 +119,146 @@ The script verifies:
 - strict local minimality under sampled near-exact closure-preserving
   perturbations
 
+## Helper-runner code excerpt (load-bearing for restricted packet, inlined 2026-05-18)
+
+The numerical-closure branch of this note (the "Numerical result on the
+current branch" section below, and Parts 2-3 of
+`scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py`)
+depends on the helper module
+`scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`
+for the seed matrix `H_SEED`, the active-source parameterization, the
+favored-column construction via `eta_columns_from_active` / `best_eta_from_params`,
+and the seed-relative action `relative_action_h`. The audit verdict
+explicitly says the algebraic positive-cone Legendre identity closes on
+its own (it is fully self-contained in the section "Exact effective-action
+identity" above and in Part 1 of the runner). The functions below are
+inlined verbatim from the helper module so that the numerical-branch
+computation is visible inside the restricted packet without requiring
+external resolution of the helper import. They are reproduced for
+visibility only; the load-bearing implementation lives in the helper
+module file path above.
+
+Provenance: copied verbatim from
+`scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`
+at branch `physics-loop/audited-cond-dm-lepto-pmns-action-2026-05-18`,
+2026-05-18.
+
+### H_seed (fixed native N_e seed matrix)
+
+```python
+from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
+
+XBAR_NE = 0.5633333333333334
+YBAR_NE = 0.30666666666666664
+X_SEED = np.full(3, XBAR_NE, dtype=float)
+Y_SEED = np.full(3, YBAR_NE, dtype=float)
+H_SEED = canonical_h(X_SEED, Y_SEED, 0.0)
+H_SEED_INV = np.linalg.inv(H_SEED)
+```
+
+### Active-source parameterization (input to eta / favored-column / W_rel)
+
+```python
+def soft3(u: float, v: float, total: float) -> np.ndarray:
+    logits = np.array([u, v, 0.0], dtype=float)
+    logits -= np.max(logits)
+    weights = np.exp(logits)
+    weights /= np.sum(weights)
+    return total * weights
+
+
+def build_active_from_params(params: np.ndarray) -> tuple[np.ndarray, np.ndarray, float]:
+    ax, ay, bx, by, delta = np.asarray(params, dtype=float)
+    x = soft3(ax, ay, 3.0 * XBAR_NE)
+    y = soft3(bx, by, 3.0 * YBAR_NE)
+    return x, y, float(delta)
+```
+
+### eta computation (flavored asymmetry on the fixed seed surface)
+
+```python
+from dm_leptogenesis_exact_common import (
+    C_SPH,
+    D_THERMAL_EXACT,
+    ETA_OBS,
+    S_OVER_NGAMMA_EXACT,
+    exact_package,
+)
+from frontier_dm_leptogenesis_flavor_column_functional_theorem import (
+    flavored_column_functional,
+    flavored_transport_kernel,
+)
+from frontier_dm_leptogenesis_pmns_active_projector_reduction import active_packet_from_h
+
+PKG = exact_package()
+Z_GRID, SOURCE_PROFILE, WASHOUT_TAIL = flavored_transport_kernel(PKG.k_decay_exact)
+
+
+def eta_columns_from_active(x: np.ndarray, y: np.ndarray, delta: float) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    h_e = canonical_h(x, y, delta)
+    packet = active_packet_from_h(h_e).T
+    etas = np.array(
+        [
+            S_OVER_NGAMMA_EXACT
+            * C_SPH
+            * D_THERMAL_EXACT
+            * PKG.epsilon_1
+            * flavored_column_functional(packet[:, idx], Z_GRID, SOURCE_PROFILE, WASHOUT_TAIL)
+            / ETA_OBS
+            for idx in range(3)
+        ],
+        dtype=float,
+    )
+    return h_e, packet, etas
+```
+
+### Favored-column construction (transport-extremal class)
+
+```python
+def best_eta_from_params(params: np.ndarray) -> float:
+    x, y, delta = build_active_from_params(params)
+    _h, _packet, etas = eta_columns_from_active(x, y, delta)
+    return float(np.max(etas))
+
+
+# Favored column i_* is selected as the argmax of etas at the
+# transport-extremal source on the fixed seed surface. The extremal
+# source itself is found by differential_evolution maximizing
+# best_eta_from_params:
+#
+#     result = differential_evolution(
+#         lambda p: -best_eta_from_params(np.asarray(p, dtype=float)),
+#         bounds=[(-4,4)]*4 + [(-pi, pi)],
+#         seed=0, maxiter=20, popsize=10, polish=False,
+#     )
+#     x_opt, y_opt, delta_opt = build_active_from_params(result.x)
+#     _h, _packet, etas_opt = eta_columns_from_active(x_opt, y_opt, delta_opt)
+#     i_star = int(np.argmax(etas_opt))
+#
+# On the current refreshed DM branch this yields i_star == 0.
+```
+
+### W_rel / seed-relative action (numerical branch evaluation)
+
+```python
+def relative_action_h(h_e: np.ndarray) -> float:
+    m = H_SEED_INV @ h_e
+    sign, logdet = np.linalg.slogdet(m)
+    if sign <= 0:
+        raise ValueError("relative-action matrix left the positive branch")
+    return float(np.trace(m).real - logdet - 3.0)
+```
+
+The Legendre-dual identity itself (`S_rel(Y) = sup_K [ log det(I+K) - Tr(KY) ]`
+with `K_* = Y^{-1} - I`) is the algebraic positive-cone identity already
+established in the "Exact effective-action identity" section above; it is
+self-contained and does not require any helper code. The functions
+inlined above are exactly the numerical-branch machinery required to (i)
+construct the favored column `i_*`, (ii) evaluate `eta_{i_*}` along
+candidate sources, and (iii) evaluate `S_rel` on those sources. With them
+the "Numerical result on the current branch" values below are reproducible
+from inside the restricted packet.
+
 ## Numerical result on the current branch
 
 The stationary source is the same observable-relative-action closure source:

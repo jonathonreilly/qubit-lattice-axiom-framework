@@ -10,6 +10,159 @@
 - Boundary script: [`scripts/persistent_object_blended_readout_inner_source_boundary_probe.py`](/Users/jonreilly/Projects/Physics/scripts/persistent_object_blended_readout_inner_source_boundary_probe.py)
 - Boundary log: [`logs/2026-04-16-persistent-object-blended-readout-inner-source-boundary-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-16-persistent-object-blended-readout-inner-source-boundary-probe.txt)
 
+## `_run_mode` helper + boundary cert scope narrowing (load-bearing for restricted packet, inlined 2026-05-18)
+
+The auditor flagged two restricted-packet gaps. This section repairs both in
+place so the bounded outer headline (`top3 4/5`, `top2 1/5`) is self-contained
+and the inward-source boundary claim is honestly narrowed.
+
+### Gap 1 — `_run_mode` helper is the actual physics
+
+Both `scripts/persistent_object_blended_readout_outer_transfer_sweep.py` and
+`scripts/persistent_object_blended_readout_inner_source_boundary_probe.py`
+delegate the physics to a single helper
+
+  `scripts.persistent_object_blended_readout_transfer_sweep._run_mode`.
+
+The helper body (verbatim from
+`scripts/persistent_object_blended_readout_transfer_sweep.py`):
+
+```python
+BLEND = 0.25
+
+@dataclass(frozen=True)
+class ModeResult:
+    label: str
+    mean_overlap: float
+    min_overlap: float
+    mean_detector_eff: float
+    mean_capture: float
+    mean_delta: float
+    step_alpha: tuple[float | None, ...]
+    max_kappa_drift: float
+    admissible: bool
+
+def _run_mode(case: Case, top_keep: int) -> ModeResult:
+    lat = m.Lattice3D.build(case.phys_l, case.phys_w, H)
+    source_nodes = _source_cluster_nodes(lat, case.source_z)
+    ref_raw = _green_field_layers(
+        lat,
+        max(SOURCE_STRENGTHS),
+        source_nodes,
+        [1.0 / len(source_nodes)] * len(source_nodes),
+    )
+    gain = FIELD_TARGET_MAX / _field_abs_max(ref_raw) if _field_abs_max(ref_raw) > 1e-30 else 1.0
+    free_centroid = _free_centroid_for_blend(lat)
+
+    overlap_rows: list[list[float]] = [[] for _ in range(N_UPDATES)]
+    deltas_by_step: list[list[float]] = [[] for _ in range(N_UPDATES)]
+    detector_effs: list[list[float]] = [[] for _ in range(N_UPDATES)]
+    captures: list[list[float]] = [[] for _ in range(N_UPDATES)]
+
+    for strength in SOURCE_STRENGTHS:
+        weights = [1.0 / len(source_nodes)] * len(source_nodes)
+        prev_weights = weights[:]
+        for step in range(N_UPDATES):
+            raw = _green_field_layers(lat, strength, source_nodes, weights)
+            field = [[gain * v for v in row] for row in raw]
+            amps = lat.propagate(field, m.K)
+            det_start = lat.layer_start[lat.nl - 1]
+            det_probs = [abs(a) ** 2 for a in amps[det_start : det_start + lat.npl]]
+            source_probs = [abs(amps[i]) ** 2 for i in source_nodes]
+
+            norm_prev = _normalize_weights(prev_weights)
+            norm_next = _normalize_weights(source_probs)
+            overlap_num = sum(a * b for a, b in zip(norm_prev, norm_next))
+            overlap_den = math.sqrt(sum(a * a for a in norm_prev) * sum(b * b for b in norm_next))
+            overlap = overlap_num / overlap_den if overlap_den > 1e-30 else 0.0
+            overlap_rows[step].append(overlap)
+
+            probs, capture = _blended_probs(lat, det_probs, BLEND)
+            total = sum(probs)
+            norm_probs = [p / total for p in probs if p > 0.0] if total > 1e-30 else []
+            det_eff = math.exp(-sum(p * math.log(p) for p in norm_probs)) if norm_probs else 0.0
+            delta = 0.0
+            if total > 1e-30:
+                delta = sum(p * lat.pos[det_start + i][2] for i, p in enumerate(probs)) / total - free_centroid
+
+            deltas_by_step[step].append(delta)
+            detector_effs[step].append(det_eff)
+            captures[step].append(capture)
+
+            prev_weights = weights[:]
+            weights = _topk_weights(source_probs, top_keep)
+
+    step_alpha: list[float | None] = []
+    step_toward: list[int] = []
+    step_kappa: list[float] = []
+    for step in range(N_UPDATES):
+        deltas = deltas_by_step[step]
+        alpha = _fit_power(SOURCE_STRENGTHS, [abs(v) for v in deltas])
+        kappas = [delta / strength for strength, delta in zip(SOURCE_STRENGTHS, deltas)]
+        step_alpha.append(alpha)
+        step_toward.append(sum(1 for delta in deltas if delta > 0))
+        step_kappa.append(float(sum(kappas) / len(kappas)))
+
+    drifts = [
+        abs(step_kappa[i] - step_kappa[i - 1]) / max(abs(step_kappa[i - 1]), 1e-30)
+        for i in range(1, len(step_kappa))
+    ]
+    mean_overlap = _mean([v for row in overlap_rows for v in row])
+    admissible = (
+        mean_overlap >= OVERLAP_THRESHOLD
+        and all(t == len(SOURCE_STRENGTHS) for t in step_toward)
+        and all(alpha is not None and ALPHA_BAND[0] <= alpha <= ALPHA_BAND[1] for alpha in step_alpha)
+        and all(drift <= KAPPA_DRIFT_THRESHOLD for drift in drifts)
+    )
+
+    return ModeResult(
+        label=f"top{top_keep}",
+        mean_overlap=mean_overlap,
+        min_overlap=min(v for row in overlap_rows for v in row),
+        mean_detector_eff=_mean([v for row in detector_effs for v in row]),
+        mean_capture=_mean([v for row in captures for v in row]),
+        mean_delta=_mean([v for row in deltas_by_step for v in row]),
+        step_alpha=tuple(step_alpha),
+        max_kappa_drift=max(drifts) if drifts else 0.0,
+        admissible=admissible,
+    )
+```
+
+Constants `H = 0.25`, `N_UPDATES = 3`, `SOURCE_STRENGTHS = (0.001, 0.002,
+0.004, 0.008)`, `OVERLAP_THRESHOLD`, `ALPHA_BAND`, `FIELD_TARGET_MAX`,
+`KAPPA_DRIFT_THRESHOLD`, and the helpers `_source_cluster_nodes`,
+`_green_field_layers`, `_field_abs_max`, `_topk_weights`,
+`_normalize_weights`, `_fit_power`, `_mean` are imported from
+`scripts.persistent_object_compact_shared` and
+`scripts.persistent_object_compact_inertial_probe`; `_blended_probs` from
+`scripts.persistent_object_blended_readout_boundary_probe`; the lattice
+class `Lattice3D` from `scripts.minimal_source_driven_field_probe`. All
+seven helper paths are now listed in the Audit Requeue Note below and are
+populated by the audit pipeline's transitive `helper_runner_paths` field.
+
+### Gap 2 — inward-source boundary cert is not in `logs/runner-cache/`
+
+The cached primary runner stdout supports the outer `top3 4/5`, `top2 1/5`
+counts. The inward-source boundary probe runner
+(`scripts/persistent_object_blended_readout_inner_source_boundary_probe.py`)
+has **no cached stdout in `logs/runner-cache/`** at the time of this
+restricted-packet repair. The boundary-probe row pattern asserted below
+(`source0.75/1.00/1.25` closed, `source1.50` open) therefore cannot be
+load-bearing from the restricted packet alone.
+
+The honest restricted-packet narrowing is:
+
+> The widened branch's outer second-ring miss is at `source_z = 1.0`. The
+> precise inward-source boundary location (between `1.25` and `1.50` on
+> `L = 6, W = 3`) is asserted from a boundary-probe runner whose cached
+> stdout is not in the restricted packet. Until that runner output is
+> cached, the supportable claim is only that the outer miss occurs at
+> `source_z = 1.0`, not the full three-row inward-closure pattern.
+
+The "Frozen result" section below preserves the original (broader) claim
+for historical record, but the bounded restricted-packet claim is the
+narrowed one above.
+
 ## Question
 
 The first blended-readout transfer sweep established one real local positive:

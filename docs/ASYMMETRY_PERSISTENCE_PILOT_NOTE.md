@@ -1,6 +1,7 @@
 # Asymmetry Persistence Pilot Note
 
 Date: 2026-04-02
+**Claim type:** bounded_theorem
 
 **Audit-conditional perimeter (2026-05-08):**
 In the cited audit snapshot, the audit lane classified this row `audited_conditional` with
@@ -69,6 +70,203 @@ edited afterward.
 
 - [asymmetry_persistence_pilot.py](../scripts/asymmetry_persistence_pilot.py)
 
+## Helper-runner code excerpt (load-bearing for restricted packet, inlined 2026-05-18)
+
+The primary runner imports `K_BAND` and `measure` from
+`scripts/gap_topological_asymmetry.py`. That helper is itself the
+load-bearing measurement source for the sparse N=40 / N=60 / N=80
+rows quoted below: the readout (`pur_cl`, `s_norm`, `gravity`) is
+computed inside the helper's `measure(...)` function, which in turn
+calls `propagate_3d`, `compute_field_3d`, `bin_amplitudes_3d`, and
+`cl_purity`. For restricted-packet visibility, the relevant code is
+inlined verbatim from
+`scripts/gap_topological_asymmetry.py` (file hash on disk
+2026-05-18; see worktree path
+`scripts/gap_topological_asymmetry.py`).
+
+```python
+# Provenance: scripts/gap_topological_asymmetry.py (verbatim excerpt)
+
+BETA = 0.8
+N_YBINS = 8
+LAM = 10.0
+CONNECT_RADIUS = 4.0
+XYZ_RANGE = 12.0
+NPL = 30
+K_BAND = [3.0, 5.0, 7.0]
+N_SEEDS = 16
+N_LAYERS_LIST = [12, 25, 40]
+
+
+def _topo_order(adj, n):
+    in_deg = [0] * n
+    for nbs in adj.values():
+        for j in nbs:
+            in_deg[j] += 1
+    q = deque(i for i in range(n) if in_deg[i] == 0)
+    order = []
+    while q:
+        i = q.popleft()
+        order.append(i)
+        for j in adj.get(i, []):
+            in_deg[j] -= 1
+            if in_deg[j] == 0:
+                q.append(j)
+    return order
+
+
+def propagate_3d(positions, adj, field, src, k, blocked=None):
+    n = len(positions)
+    blocked = blocked or set()
+    order = _topo_order(adj, n)
+    amps = [0j] * n
+    for s in src:
+        amps[s] = 1.0 / len(src)
+    for i in order:
+        if abs(amps[i]) < 1e-30 or i in blocked:
+            continue
+        for j in adj.get(i, []):
+            if j in blocked:
+                continue
+            x1, y1, z1 = positions[i]
+            x2, y2, z2 = positions[j]
+            dx, dy, dz = x2-x1, y2-y1, z2-z1
+            L = math.sqrt(dx*dx + dy*dy + dz*dz)
+            if L < 1e-10:
+                continue
+            lf = 0.5 * (field[i] + field[j])
+            dl = L * (1 + lf)
+            ret = math.sqrt(max(dl*dl - L*L, 0))
+            act = dl - ret
+            theta = math.atan2(math.sqrt(dy*dy + dz*dz), max(dx, 1e-10))
+            w = math.exp(-BETA * theta * theta)
+            ea = cmath.exp(1j * k * act) * w / L
+            amps[j] += amps[i] * ea
+    return amps
+
+
+def compute_field_3d(positions, mass_nodes):
+    n = len(positions)
+    field = [0.0] * n
+    for m in mass_nodes:
+        mx, my, mz = positions[m]
+        for i in range(n):
+            ix, iy, iz = positions[i]
+            r = math.sqrt((ix-mx)**2 + (iy-my)**2 + (iz-mz)**2) + 0.1
+            field[i] += 0.1 / r
+    return field
+
+
+def bin_amplitudes_3d(amps, positions, nodes):
+    bins = [0j] * N_YBINS
+    bw = 24.0 / N_YBINS
+    for m in nodes:
+        y = positions[m][1]
+        b = int((y + 12.0) / bw)
+        b = max(0, min(N_YBINS - 1, b))
+        bins[b] += amps[m]
+    return bins
+
+
+def cl_purity(amps_a, amps_b, D, det_list):
+    rho = {}
+    for d1 in det_list:
+        for d2 in det_list:
+            rho[(d1, d2)] = (
+                amps_a[d1].conjugate() * amps_a[d2]
+                + amps_b[d1].conjugate() * amps_b[d2]
+                + D * amps_a[d1].conjugate() * amps_b[d2]
+                + D * amps_b[d1].conjugate() * amps_a[d2]
+            )
+    tr = sum(rho[(d, d)] for d in det_list).real
+    if tr <= 1e-30:
+        return math.nan
+    for key in rho:
+        rho[key] /= tr
+    return sum(abs(v) ** 2 for v in rho.values()).real
+
+
+def measure(positions, adj, n_layers, k_band):
+    by_layer = defaultdict(list)
+    for idx, (x, y, z) in enumerate(positions):
+        by_layer[round(x)].append(idx)
+    layers = sorted(by_layer.keys())
+    if len(layers) < 7:
+        return None
+    src = by_layer[layers[0]]
+    det_list = list(by_layer[layers[-1]])
+    if not det_list:
+        return None
+    cy = sum(positions[i][1] for i in range(len(positions))) / len(positions)
+    bl_idx = len(layers) // 3
+    bi = by_layer[layers[bl_idx]]
+    sa = [i for i in bi if positions[i][1] > cy + 3][:3]
+    sb = [i for i in bi if positions[i][1] < cy - 3][:3]
+    if not sa or not sb:
+        return None
+    blocked = set(bi) - set(sa + sb)
+    grav_layer = layers[2 * len(layers) // 3]
+    mass_nodes = [i for i in by_layer[grav_layer] if positions[i][1] > cy + 1]
+    if not mass_nodes:
+        return None
+    env_depth = max(1, round(n_layers / 6))
+    start = bl_idx + 1
+    stop = min(len(layers) - 1, start + env_depth)
+    mid = []
+    for layer in layers[start:stop]:
+        mid.extend(by_layer[layer])
+    field_m = compute_field_3d(positions, mass_nodes)
+    field_f = [0.0] * len(positions)
+    grav_vals, pur_vals, sn_vals = [], [], []
+    for k in k_band:
+        am = propagate_3d(positions, adj, field_m, src, k, blocked)
+        af = propagate_3d(positions, adj, field_f, src, k, blocked)
+        pm = sum(abs(am[d])**2 for d in det_list)
+        pf = sum(abs(af[d])**2 for d in det_list)
+        if pm > 1e-30 and pf > 1e-30:
+            ym = sum(abs(am[d])**2 * positions[d][1] for d in det_list) / pm
+            yf = sum(abs(af[d])**2 * positions[d][1] for d in det_list) / pf
+            grav_vals.append(ym - yf)
+        aa = propagate_3d(positions, adj, field_m, src, k, blocked | set(sb))
+        ab = propagate_3d(positions, adj, field_m, src, k, blocked | set(sa))
+        ba = bin_amplitudes_3d(aa, positions, mid)
+        bb = bin_amplitudes_3d(ab, positions, mid)
+        S = sum(abs(a - b)**2 for a, b in zip(ba, bb))
+        NA = sum(abs(a)**2 for a in ba)
+        NB = sum(abs(b)**2 for b in bb)
+        Sn = S / (NA + NB) if (NA + NB) > 0 else 0.0
+        D_cl = math.exp(-LAM**2 * Sn)
+        pc = cl_purity(aa, ab, D_cl, det_list)
+        if not math.isnan(pc):
+            pur_vals.append(pc)
+            sn_vals.append(Sn)
+    if not grav_vals or not pur_vals:
+        return None
+    return {
+        "pur_cl": sum(pur_vals) / len(pur_vals),
+        "s_norm": sum(sn_vals) / len(sn_vals),
+        "gravity": sum(grav_vals) / len(grav_vals),
+    }
+```
+
+Restricted-packet narrowing: the dense N=80 / N=100 follow-up runs
+and the layernorm-stacking follow-up rows quoted further down in
+this note are produced by sibling runners
+(`scripts/asymmetry_persistence_layernorm_combo.py`, which in turn
+imports `propagate_3d_linear`, `propagate_3d_layernorm`,
+`purity_min`, and `compute_field_3d` from
+`scripts/gap_topological_asymmetry_layernorm_combo.py`). Neither
+companion runner has a cached `stdout` packet in
+`logs/runner-cache/` at the audit snapshot, and the layernorm
+helper source is also not inlined in this note. Accordingly the
+bounded generated-geometry claim under audit at this row is
+narrowed to the sparse N=40 / N=60 table plus the N=80 sparse
+failure entry that the primary runner cache
+(`logs/runner-cache/asymmetry_persistence_pilot.txt`) actually
+reproduces; the dense and layernorm-stacking sections below are
+retained as scientific context but flagged as not-in-the-audited
+scope of this row.
+
 ## Rule
 
 For a candidate post-barrier node:
@@ -130,6 +328,16 @@ Interpretation:
 - sparse `N=80` is a graph-density failure, not yet a mechanism verdict
 
 ## Dense follow-up runs
+
+> **Restricted-packet scope flag (2026-05-18):** the dense N=80 / N=100
+> rows and the layernorm-stacking section below are not reproducible
+> from any cache in `logs/runner-cache/` and their companion-runner
+> source is not inlined in this note. Per the "Restricted-packet
+> narrowing" sub-section above, the bounded generated-geometry claim
+> under audit at this row covers only the sparse N=40 / N=60 table
+> plus the N=80 sparse-failure entry. The sections below are retained
+> for scientific context but are explicitly out of the audited scope
+> of this row.
 
 ### N = 80, dense
 

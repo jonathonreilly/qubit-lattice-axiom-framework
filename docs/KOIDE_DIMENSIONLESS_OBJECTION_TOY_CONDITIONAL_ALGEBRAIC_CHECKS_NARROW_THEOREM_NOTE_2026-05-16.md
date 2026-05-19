@@ -1,8 +1,22 @@
 # Koide Dimensionless Objection — Toy Conditional Algebraic Checks Narrow Theorem
 
-**Date:** 2026-05-16
+**Date:** 2026-05-16 (audit-conditional repair: 2026-05-18)
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
+**Tier:** algebraic-checks (conditional-on-named-admissions) — this note
+does NOT propagate to a retained-grade derivation. A separate bridge
+theorem would be required to source the load-bearing imports `(A1)-(A5)`
+from retained authorities on `main`; absent that, the bounded claim sits
+strictly at the algebraic-checks tier.
+**Load-bearing imports (admissions, not derivations):** `(A1)` admitted
+two-channel source-response carrier with central commutant `Z` source
+grammar; `(A2)` admitted central `Z` label; `(A3)` admitted selected-line
+endpoint algebra `End(L_chi)`; `(A4)` admitted based-endpoint section
+`c = 0`; `(A5)` admitted APS scalar `eta_APS = 2/9`. See the
+"Conditioning admissions" section below for full statements. Every
+identity `(T1)-(T9)` below is conditional on the relevant subset of
+`(A1)-(A5)`. These are legacy in-note admission labels, not framework
+axioms or repo-wide shorthand.
 **Claim scope:** the standalone conditional-algebraic identities that hold
 inside a fixed, explicitly-named two-channel source-response toy `T` and
 under an explicitly-named admitted scalar `eta_APS = 2/9`. Each statement
@@ -133,19 +147,22 @@ In particular, the closing value `delta = 2/9` is not the only value of
 admissions that select `(s_chi, c) = (0, 0)` are necessary to pick out
 the closing countermodel.
 
-**(T8) Q retained-only blocker.** Under `(A1) + (A2)`, observable
+**(T8) Q in-toy admission-blocker.** Under `(A1) + (A2)`, observable
 completeness (i.e. tracking `<Z>` on source states) does not force
 `Q = 2/3` because `Q(0, z) ≠ 2/3` for `z ≠ 0` while still admitting a
 nonzero `<Z>` on `(A2)`-allowed source states. Therefore, inside
 `(A1) + (A2)`, the conditional `Q = 2/3` requires an additional
 admission selecting the `z = 0` background (equivalently the
-`Z`-erasure subdomain).
+`Z`-erasure subdomain). This is an in-toy admission-counting statement
+under the named admissions; it is NOT a retained-tier blocker theorem.
 
-**(T9) delta retained-only blocker.** Under `(A3) + (A4) + (A5)`,
+**(T9) delta in-toy admission-blocker.** Under `(A3) + (A4) + (A5)`,
 `delta = 2/9` requires the joint selection `(s_chi, c) = (0, 0)`. The
 ambient countermodels in `(T7)` show this is not the only value reachable
 inside `(A5)`; therefore `delta = 2/9` requires additional admissions
-beyond `(A1)-(A5)` to fix the selected-line + based subdomain.
+beyond `(A1)-(A5)` to fix the selected-line + based subdomain. This is
+an in-toy admission-counting statement under the named admissions; it is
+NOT a retained-tier blocker theorem.
 
 ## Proof
 
@@ -288,3 +305,57 @@ verifies in exact rational arithmetic (Python `Fraction`) that:
 
 The runner emits explicitly-conditional closeout headlines so the
 algebraic checks cannot be misread as unconditional retained closures.
+
+## 2026-05-18 audit-conditional repair: explicit admission declaration + narrowing to algebraic-checks tier
+
+Per the 2026-05-17 audit verdict
+(`audit_ledger.json :: koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`,
+recorded as `audited_conditional`, re-audit note:
+"missing_bridge_theorem: derive or cite retained-grade support for
+admissions (A1)-(A5) ... if retained-grade propagation is desired"),
+this note's algebraic checks are conditional on admissions `(A1)-(A5)`.
+This revision:
+
+1. Lists `(A1)-(A5)` explicitly as load-bearing imports in the header
+   (new "Load-bearing imports" callout, before the claim scope). The
+   header also names the tier as "algebraic-checks
+   (conditional-on-named-admissions)" so the bounded claim cannot be
+   read as retained-grade.
+2. Drops any "retained-grade propagation" language that might suggest
+   downstream promotion. The note never claimed retained-grade
+   propagation — the prior "What this does NOT claim" section already
+   denied retained-framework status for `(A1)-(A5)` and denied that the
+   parent packet's no-go promotes to a retained no-go — but the audit
+   verdict flagged the absence of an explicit tier label as creating
+   the *possibility* of misreading. The new header tier label closes
+   that ambiguity. `(T8)` and `(T9)` are reframed (below) as in-toy
+   conditional blockers, NOT as retained-tier blockers.
+3. Reframes the bounded claim as algebraic-checks-tier-only, conditional
+   on the named admissions. The "What this claims" section continues to
+   list `(T1)-(T9)` as conditional algebraic identities in `Q`; the new
+   header tier label and load-bearing-imports callout make explicit that
+   no retained-grade derivation is asserted by this note.
+
+No identity statement `(T1)-(T9)`, no proof, and no validation step is
+altered. The repair is purely a tier/scope/admission-declaration
+clarification at the note-level metadata layer. The runner output is
+unchanged.
+
+### Audit-conditional repair scope vs out-of-scope
+
+In scope for this repair:
+
+- explicit admission declaration in the header;
+- explicit tier label ("algebraic-checks");
+- removal/qualification of any language that could be read as
+  retained-grade propagation;
+- this dated repair section.
+
+Out of scope for this repair (would be a separate PR):
+
+- deriving `(A1)-(A5)` from retained-framework axioms (would be a
+  bridge-theorem note, not a repair of this note);
+- promoting any identity `(T1)-(T9)` to retained-grade status;
+- altering the parent no-go packet's headline labels;
+- editing `docs/audit/data/*.json` (forbidden by physics-loop repair
+  policy).

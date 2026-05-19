@@ -76,6 +76,141 @@ Treat this as a real bounded positive:
 - but it is a distinct coupled-field architecture that survives the strict
   reduction check and preserves the weak-field sign / mass-scaling readout
 
+## Helper-runner code excerpt (load-bearing for restricted packet, inlined 2026-05-18)
+
+The primary runner `scripts/alternative_coupled_field_probe.py` imports the
+lattice, propagation, constants, and centroid-readout helpers from
+`scripts/minimal_source_driven_field_probe.py` via:
+
+```python
+from scripts.minimal_source_driven_field_probe import (
+    H,
+    K,
+    Lattice3D,
+    _centroid_z,
+)
+```
+
+For the restricted audit packet to be self-contained, the imported symbols
+are inlined verbatim below. Source of truth:
+[`scripts/minimal_source_driven_field_probe.py`](/Users/jonreilly/Projects/Physics/scripts/minimal_source_driven_field_probe.py).
+
+```python
+# --- begin verbatim excerpt from scripts/minimal_source_driven_field_probe.py ---
+
+from __future__ import annotations
+
+import math
+from dataclasses import dataclass
+
+
+BETA = 0.8
+K = 5.0
+MAX_D_PHYS = 3.0
+H = 0.5
+
+
+@dataclass
+class Lattice3D:
+    h: float
+    nl: int
+    hw: int
+    max_d: int
+    npl: int
+    n: int
+    pos: list[tuple[float, float, float]]
+    nmap: dict[tuple[int, int, int], int]
+    layer_start: list[int]
+    offsets: list[tuple[int, int, float, float]]
+    nw: int
+
+    @classmethod
+    def build(cls, phys_l: int, phys_w: int, h: float) -> "Lattice3D":
+        nl = int(phys_l / h) + 1
+        hw = int(phys_w / h)
+        max_d = max(1, round(MAX_D_PHYS / h))
+        nw = 2 * hw + 1
+        npl = nw * nw
+        n = nl * npl
+        pos: list[tuple[float, float, float]] = []
+        nmap: dict[tuple[int, int, int], int] = {}
+        layer_start = [0] * nl
+
+        idx = 0
+        for layer in range(nl):
+            layer_start[layer] = idx
+            x = layer * h
+            for iy in range(-hw, hw + 1):
+                for iz in range(-hw, hw + 1):
+                    pos.append((x, iy * h, iz * h))
+                    nmap[(layer, iy, iz)] = idx
+                    idx += 1
+
+        offsets: list[tuple[int, int, float, float]] = []
+        for dy in range(-max_d, max_d + 1):
+            for dz in range(-max_d, max_d + 1):
+                dyp = dy * h
+                dzp = dz * h
+                L = math.sqrt(h * h + dyp * dyp + dzp * dzp)
+                theta = math.atan2(math.sqrt(dyp * dyp + dzp * dzp), h)
+                offsets.append((dy, dz, L, math.exp(-BETA * theta * theta)))
+
+        return cls(h, nl, hw, max_d, npl, n, pos, nmap, layer_start, offsets, nw)
+
+    def propagate(self, field_layers: list[list[float]], k: float) -> list[complex]:
+        amps = [0j] * self.n
+        src = self.nmap[(0, 0, 0)]
+        amps[src] = 1.0
+
+        for layer in range(self.nl - 1):
+            ls = self.layer_start[layer]
+            ld = self.layer_start[layer + 1]
+            sa = amps[ls : ls + self.npl]
+            if max(abs(a) for a in sa) < 1e-30:
+                continue
+            sf = field_layers[layer]
+            df = field_layers[min(layer + 1, self.nl - 1)]
+            for dy, dz, L, w in self.offsets:
+                ym = max(0, -dy)
+                yM = min(self.nw, self.nw - dy)
+                zm = max(0, -dz)
+                zM = min(self.nw, self.nw - dz)
+                if ym >= yM or zm >= zM:
+                    continue
+                for yi in range(ym, yM):
+                    for zi in range(zm, zM):
+                        si = yi * self.nw + zi
+                        ai = sa[si]
+                        if abs(ai) < 1e-30:
+                            continue
+                        di = (yi + dy) * self.nw + (zi + dz)
+                        lf = 0.5 * (sf[si] + df[di])
+                        act = L * (1.0 - lf)
+                        amps[ld + di] += ai * complex(math.cos(k * act), math.sin(k * act)) * w / (L * L)
+        return amps
+
+
+def _centroid_z(amps: list[complex], lat: Lattice3D) -> float:
+    det_start = lat.layer_start[lat.nl - 1]
+    det_nodes = range(det_start, det_start + lat.npl)
+    total = 0.0
+    weighted = 0.0
+    for d in det_nodes:
+        p = abs(amps[d]) ** 2
+        total += p
+        weighted += p * lat.pos[d][2]
+    return weighted / total if total > 1e-30 else 0.0
+
+# --- end verbatim excerpt ---
+```
+
+The constants `H = 0.5` and `K = 5.0`, the `Lattice3D` dataclass with its
+`build` constructor and `propagate` method, and the `_centroid_z` detector
+readout are the directly load-bearing imports for the primary runner. The
+`BETA`, `MAX_D_PHYS` module constants are included because `Lattice3D.build`
+references them. No other helper from the source file is referenced by
+`alternative_coupled_field_probe.py`.
+
 ---
 
 **Audit requeue note, 2026-05-17:** the previous

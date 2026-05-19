@@ -1,5 +1,7 @@
 # Scripts Guide
 
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../docs/KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
 **Purpose:** explain how to navigate the code side of the repo without reading
 hundreds of filenames.
 

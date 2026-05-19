@@ -1,5 +1,7 @@
 # Canonical Methodology Framing Paragraph
 
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
 **Date adopted:** 2026-04-25  
 **Status:** active per-paper disclosure paragraph for this framework
 

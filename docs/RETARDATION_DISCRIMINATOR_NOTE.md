@@ -197,3 +197,86 @@ in scope of this rigorization edit. The "What this discriminates"
 table above already states the implemented-harness exclusion
 qualitatively; the formal theorem on the model class is the named
 follow-up.
+
+## 2026-05-18 audit-conditional repair: narrowed claims to cache-supported scope + flagged missing assertion gates
+
+Per the 2026-05-17 audit verdict (`audited_conditional`, repair class
+`runner_artifact_issue`), the cached runner output at
+[`logs/runner-cache/retardation_discriminator.txt`](../logs/runner-cache/retardation_discriminator.txt)
+records `status: timeout` with **empty stdout and empty stderr** at the
+120 s ceiling, and the runner
+[`scripts/retardation_discriminator.py`](../scripts/retardation_discriminator.py)
+contains **no `assert` statements** for any of the frozen numbers in
+this note. The audit verdict states: *"The provided runner source
+performs a deterministic toy-harness computation, but it does not
+contain explicit assertion gates for the retained tables or robustness
+claims. The cached runner output also timed out, so the packet does not
+provide a completed computed certificate for the note's frozen
+numbers."*
+
+This revision narrows the binding scope of each claim category in this
+note to what the **audit-cache** actually certifies, and flags the
+remaining categories as **not-yet-cert-backed** pending the named
+follow-up repair (split into fast deterministic runners with hard
+`assert` gates, or set `AUDIT_TIMEOUT_SEC` so the cache lands
+`status: ok`).
+
+### Per-category certification status against the audit cache
+
+| Claim category | Audit-cache supports? | Status under this repair |
+| --- | --- | --- |
+| Exact nulls (f=0; delay=0) | NO (empty cache stdout) | flagged: missing-cert |
+| Difference curve at delay=5 (frequency sweep) | NO | flagged: missing-cert |
+| Delay law (d=0,1,3,5,7,10) at f=0.15 | NO | flagged: missing-cert |
+| Sign-split band at f=0.15 | NO | flagged: missing-cert |
+| Phase sensitivity (phi_0=0.25 vs 0.75) | NO (also: runner emits no phi_0 sweep) | flagged: missing-cert AND missing-from-runner |
+| Family portability (Fam1/2/3 at f=0.15, d=5) | NO | flagged: missing-cert |
+| Seed robustness (4 seeds at f=0.15, d=5) | NO | flagged: missing-cert |
+| Global-delay fit residual (8-freq sweep) | NO | flagged: missing-cert |
+
+The "Phase sensitivity" row is the strictest narrowing: the runner's
+`main()` does not iterate over `phi_shift` values of 0.25 and 0.75 nor
+emit a phi_0 sweep section; the `phi_shift` argument is only used
+inside the global-delay fit test (step 4) to generate the candidate
+`shifted` curve. The +0.010 / -0.011 numbers in this note's
+"Phase sensitivity" section therefore come from an off-runner
+exploration that is not exercised by `scripts/retardation_discriminator.py`
+as committed, and is **not** certified by either the audit cache or
+the SHA-pinned runner artifact.
+
+### Frozen log status (separate from audit cache)
+
+The frozen log
+[`logs/2026-04-06-retardation-discriminator.txt`](../logs/2026-04-06-retardation-discriminator.txt)
+does contain numeric output for sections 1-6 (frequency sweep, exact
+nulls, delay law, global-delay fit, family portability, seed
+robustness). This log is **separate from the audit cache** and is not
+itself a SHA-pinned `runner-cache/` artifact. The audit-conditional
+verdict is specifically about the missing `runner-cache/` certificate
+and the missing in-runner asserts, not about the frozen log's
+existence. Under this repair, the frozen log remains a useful
+human-readable artifact, but does not on its own discharge the
+`runner_artifact_issue` repair class.
+
+### Out-of-scope follow-ups (named under the missing-cert flag)
+
+The cheapest repair per audit guidance is to either:
+
+1. Set `AUDIT_TIMEOUT_SEC` at module top so the cache lands
+   `status: ok` on the existing 207-line harness, and add hard
+   `assert` gates on each frozen number reported in this note. This
+   would change the runner SHA and invalidate the existing
+   SHA-pinned cache; a new cache pass is required.
+2. Split the retained sections (exact nulls, delay=5 table, delay
+   law, family/seed robustness, phase sensitivity, global-delay
+   residual) across several smaller deterministic runners with hard
+   `assert` gates per frozen number, and add a phi_0 sweep
+   sub-runner that exercises the "Phase sensitivity" row currently
+   missing from `main()`.
+
+Both options are compute / code work outside the perimeter of this
+narrowing edit, which only sharpens the claim boundary against the
+present audit-cache state. No category is promoted to cert-backed
+under this repair; the note's `bounded_theorem` claim type stands at
+`audited_conditional` and depends on the named follow-up runner work
+to advance.

@@ -122,6 +122,152 @@ from each other as `h → 0`.
 free-particle propagator on the rescaled NN harness with
 `K_PHYS = 5.0`.
 
+## Bridge theorem (Gaussian-Schrödinger width-mass identification, 2026-05-18)
+
+This subsection addresses the audit's `missing_bridge_theorem` concern:
+the runner's identification `m_eff_width = L/σ` is the dimensional
+convention chosen to match the Schrödinger free-particle propagator's
+prefactor `sqrt(m/(2πi L))`. We show below that (a) the convention
+is fixed by dispersion-length matching, and (b) the resulting no-go
+is **robust under any standard width-to-mass extraction**, so the
+qualitative conclusion does not depend on this dimensional choice.
+
+### Why the comparison must rest on a convention, not an identity
+
+The Schrödinger free-particle propagator
+`K_S(y; L) = sqrt(m/(2πi·L)) · exp(i·m·y²/(2L))` acting on a *true*
+point (δ-function) source at `y = 0` gives uniform magnitude
+`|K_S(y; L)|² = m/(2π L)`, independent of `y`. A δ-source therefore
+has **no Gaussian magnitude width at all** under the Schrödinger
+free-particle propagator. The observed Gaussian magnitude with
+`σ(h)` finite at each `h` is, by itself, already in tension with a
+δ-source Schrödinger free-particle identification at the magnitude
+level. The runner makes the most generous interpretation possible
+to give the Schrödinger candidate a fair test: it treats the
+measured `σ` as a "Schrödinger-spreading length" and extracts an
+effective mass from it via the natural dimensional combination
+of `L` and `σ`.
+
+### Gaussian-wavepacket spreading (standard QM derivation)
+
+Let `ψ_0(y)` be a minimum-uncertainty Gaussian of width `σ_0`:
+
+```text
+ψ_0(y) = (2π σ_0²)^(-1/4) · exp(-y² / (4 σ_0²)).
+```
+
+Evolved by the Schrödinger free-particle propagator (with `L`
+playing the role of time and `ℏ = 1`), the propagated wavepacket
+has magnitude width
+
+```text
+σ²(L) = σ_0² + (L / (2 m σ_0))².
+```
+
+Two limits:
+
+1. **Dispersion-dominated** (`σ_0 small`, `L large`):
+   `σ(L) ≈ L / (2 m σ_0)`. In this limit `σ → ∞` as `σ_0 → 0` at
+   fixed `L, m`. The point-source limit of a Gaussian wavepacket
+   does *not* collapse — it spreads to infinity.
+2. **Dispersion-matched** (saturate at `σ_0 = √(L/(2m))`):
+   the two contributions equalize and `σ²(L) = 2 σ_0² = L/m`, so
+   `σ(L) = √(L/m)` and `m = L/σ²`. This is the "natural" Schrödinger
+   width-mass identification: the propagated width equals the
+   dispersion length.
+
+### The runner's convention
+
+The runner reports `m_eff_width = L/σ`, not `m_eff_width = L/σ²`.
+The two extractions differ by a factor of `σ`. The runner's choice
+makes the *units* of `m_eff_width` and `m_eff_phase = 2L c2` match
+when both are read as the dimensionless number of the
+detector-coordinate's mass-like saturation. In the dispersion-matched
+limit above this gives `m_eff_width = L/σ = √(L · m)` instead of
+`m`. Thus the runner quantity is a diagnostic mass-like scale, not the
+Schrödinger mass itself; the exact dispersion-matched mass extraction is
+`m = L/σ²`.
+
+### The no-go is robust under any conventional choice
+
+Under the four conventional Schrödinger Gaussian extractions, the
+finest-`h` finding is:
+
+| Extraction | Formula | Value at `h=0.0625` | Trend as `h → 0` |
+|---|---|---:|---:|
+| Runner convention | `m_eff_width = L / σ` | `37.13` | diverges `~ 1/√h` |
+| Dispersion-matched | `m_eff_width = L / σ²` | `34.45` | diverges `~ 1/h` |
+| Geometric-mean | `m_eff_width = √(L) / σ` | `5.871` | diverges `~ 1/√h` |
+| Inverse dispersion | `m_eff_width = √(L / σ²)` | `5.871` | diverges `~ 1/√h` |
+
+(`L = 40, σ_finest = 1.0774`.)
+
+Compare against `m_eff_phase = 2 L c2 → 2.39` (finite continuum
+limit). **Every standard Schrödinger Gaussian width-to-mass
+extraction diverges as `h → 0`**, while the phase extraction
+converges to a finite limit. The qualitative no-go conclusion —
+no consistent Schrödinger free-particle `m_eff` can match both
+the magnitude width scaling and the phase Hessian limit — is
+therefore independent of the specific dimensional matching used in
+the comparison column.
+
+The deep reason: `σ ∝ √h → 0` at fixed `L` is incompatible with
+*any* Schrödinger Gaussian-wavepacket interpretation. From the
+dispersion formula `σ²(L) = σ_0² + (L/(2m σ_0))²`, the minimum
+of `σ(L)` over `σ_0` at fixed `L, m` is `σ_min² = L/m`, achieved
+at `σ_0 = √(L/(2m))`. So `σ < √(L/m)` is impossible for any
+Gaussian-wavepacket initial state evolved by the Schrödinger
+free-particle propagator. The measured ladder
+
+| `h` | `σ` | `√(L/m_eff_phase)` (max Schrödinger lower bound) |
+|---|---:|---:|
+| 0.5    | 3.5582 | `√(40/2.005)` = 4.467 |
+| 0.25   | 2.2319 | `√(40/2.302)` = 4.169 |
+| 0.125  | 1.5344 | `√(40/2.374)` = 4.105 |
+| 0.0625 | 1.0774 | `√(40/2.391)` = 4.090 |
+
+violates the bound `σ ≥ √(L/m_eff_phase)` already at `h = 0.5`
+(`3.5582 < 4.467`) and the violation grows as `h → 0`. **There
+is no choice of Schrödinger Gaussian initial state, evolved by
+the free-particle propagator with `m = m_eff_phase`, that
+reproduces the measured `σ`** at any of the four checked `h`.
+
+### What this addresses for the audit
+
+- The width-to-mass extraction `m_eff_width = L/σ` is a runner-
+  convention dimensional match against the Schrödinger free-particle
+  prefactor, not a derived QM identity.
+- Under the dispersion-matched extraction `m_eff_width = L/σ²`,
+  the dispersion-length convention native to standard QM
+  Gaussian-wavepacket spreading, the no-go conclusion is
+  **strengthened**, not weakened: the divergence is faster
+  (`1/h` rather than `1/√h`).
+- The width-convention-independent Schrödinger lower bound
+  `σ ≥ √(L/m_eff_phase)`
+  is *already violated at h = 0.5* and the violation grows with
+  refinement, so no internally consistent Schrödinger free-particle
+  identification exists on the checked window regardless of the
+  width-to-mass extraction chosen for the diagnostic table.
+- This makes the no-go a robust statement about Schrödinger
+  free-particle incompatibility, independent of the auxiliary
+  dimensional convention.
+
+### Imports
+
+- Standard QM Gaussian-wavepacket spreading: textbook free-particle
+  Schrödinger evolution of a minimum-uncertainty Gaussian. No new
+  axioms; this is `ℏ = 1`, 1D free-particle Schrödinger evolution
+  with `t ↔ L` substitution (the standard scattering-amplitude
+  identification used to write `K_S(y; L)`).
+- Companion saddle-point support for the measured `σ(h)` and `c2(h)`
+  scalings: `docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10.md`
+  (magnitude width closed form, residual `-8.31%` at LO; better
+  with NNLO) and
+  `docs/NN_LATTICE_RESCALED_C2_DERIVATION_NOTE_2026-05-10.md`
+  (phase curvature closed form, residual `+0.12%`). These are
+  bounded retained-grade saddle-point derivations of the same
+  per-`h` numbers used in the comparison tables above.
+
 ## Scoped continuum-limit constraints (bounded content of the null)
 
 The bounded null is informative — it constrains the candidate space
@@ -274,12 +420,24 @@ proposed_claim_scope: |
   On the deterministic-rescale NN lane with BETA=0.8, K_PHYS=5.0,
   PHYS_L=40, single source, no slits, no blocked nodes, and no field,
   the measured central detector amplitude has Gaussian magnitude and
-  quadratic phase, but the width-derived and phase-derived
-  Schrödinger effective masses disagree by 1453% at h=0.0625 and
-  separate further as h -> 0. This rules out the Schrödinger
-  free-particle propagator as the continuum scattering kernel for
-  this scoped harness.
+  quadratic phase, but the measured width sigma violates the
+  Schrödinger free-particle Gaussian-wavepacket lower bound
+  sigma >= sqrt(L / m_eff_phase) at every checked h, and the
+  width-derived and phase-derived Schrödinger effective masses
+  disagree by 1453% at h=0.0625 and separate further as h -> 0.
+  This rules out the Schrödinger free-particle propagator as the
+  continuum scattering kernel for this scoped harness, robustly
+  under any standard Schrödinger Gaussian-wavepacket width-to-mass
+  identification (see 2026-05-18 bridge addendum).
 status_authority: independent audit lane only
 forbidden_imports_used: false
 audit_required_before_effective_status_change: true
+bridge_addendum_2026_05_18: |
+  Inline bridge theorem for the Gaussian-Schrödinger width-mass
+  identification clarifies that m_eff_width = L/sigma is the runner's
+  dimensional convention against the Schrödinger free-particle
+  prefactor, not a textbook QM identity. The width-convention-
+  independent Schrödinger lower bound sigma >= sqrt(L/m_eff_phase)
+  is violated at every checked h, making the no-go robust under any
+  width-to-mass convention.
 ```

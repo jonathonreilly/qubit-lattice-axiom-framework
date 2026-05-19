@@ -1,19 +1,17 @@
 # Hard Geometry Head-To-Head Note
 
-**Date:** 2026-04-03  
+**Date:** 2026-04-03
+**Claim type:** meta
 **Status:** support - structural or confirmatory support note
 **Primary runner:** `scripts/hard_geometry_head_to_head.py`
 
 
-This note compares the retained hard-geometry and symmetry lanes that are
-still worth carrying forward after the hardening pass, plus the emergence-
-facing grown-graph density constraint:
+This note compares the retained hard-geometry and symmetry lanes that the
+head-to-head runner currently emits as a review-safe ranking layer:
 
 - dense central-band hard geometry + layer norm
-- mirror symmetry / Z2-protected transfer geometry
-- higher-symmetry `Z2 x Z2`
+- mirror chokepoint / Z2-protected transfer geometry
 - generated asymmetry-persistence hard geometry + layer norm
-- grown-graph density optimum near `npl≈30`
 
 The comparison is intentionally narrow. It uses only the retained metrics
 that are already supported on `main`:
@@ -50,56 +48,24 @@ Narrow read:
 
 ## 2. Mirror Chokepoint / Z2-Protected Transfer
 
-This is now a real retained bounded pocket and the strongest symmetry-protected
-challenger.
+This is the strongest symmetry-protected bounded challenger that the runner
+currently ranks.
 
-Best retained rows:
+Runner-output retained row (strict chokepoint pocket):
 
-- dense boundary family with canonical fit
-- `N = 100` retained on the dense boundary scan
-- `NPL_HALF = 60`, `connect_radius = 5.0`
+- `N = 40`, `NPL_HALF = 50`
 - strict chokepoint mirror
-- Born `|I3|/P = 1.13e-15`
-- `pur_cl = 0.9043±0.02`
-- gravity: `+1.3089±0.570`
-
-Canonical boundary fit:
-
-- `(1 - pur_cl) = 0.3901 × N^(-0.245)`
-- `R² = 0.126`
-
-Range check:
-
-- retained through `N = 100` on the dense boundary scan
-- `N = 120` is the gravity wall
+- Born-clean through `N = 60` on this strict pocket
+- `pur_cl = 0.8764±0.03`
+- gravity: `+4.6161±0.721`
 
 Narrow read:
 
 - stronger retained gravity than the dense central-band row at `N = 40/60`
 - weaker decoherence than the dense central-band row
-- longer retained range than the strict pocket, but still bounded
 - still Born-clean in the retained pocket
 
-## 3. Higher-Symmetry `Z2 x Z2`
-
-This is the best decoherence-side symmetry lane.
-
-Best retained row:
-
-- `N = 80`
-- `pur_cl = 0.783±0.019`
-- Born `|I3|/P = 1.48e-15`
-- gravity at `k = 5`: `+2.771±0.567`
-- gravity band: `+1.736±0.337`
-
-Narrow read:
-
-- Born-clean through the full tested window
-- positive gravity signal at all tested `N`
-- slower decoherence decay than the random baseline
-- not the best gravity-side lane and not the best joint lane
-
-## 4. Generated Asymmetry-Persistence + Layer Norm
+## 3. Generated Asymmetry-Persistence + Layer Norm
 
 This remains the strongest retained gravity-side lane.
 
@@ -124,50 +90,53 @@ Narrow read:
 - it is not the best joint coexistence lane because the gravity sign is
   density-sensitive and not uniformly positive across the dense scan
 
-## 5. Grown-Graph Density Optimum
-
-This is the best emergence-facing lane.
-
-Retained read:
-
-- grown graphs favor a density optimum near `npl≈30`
-- dense grown graphs fail because CLT dominates
-- exact symmetry works at any density because it preserves slit separation structurally
-
-Narrow read:
-
-- this is the strongest retained growth-law constraint
-- it is not a better joint lane than the hard-geometry families
-
 ## Head-To-Head Ranking
 
 1. Best joint coexistence: dense central-band + layer norm
-2. Best symmetry-protected lane: mirror chokepoint / Z2-protected transfer
-3. Best decoherence-side symmetry lane: `Z2 x Z2`
-4. Best gravity side alone: generated asymmetry-persistence + layer norm
-5. Best emergence-facing lane: grown-graph density optimum near `npl≈30`
+2. Best symmetry-protected bounded challenger: mirror chokepoint / Z2-protected transfer
+3. Best gravity side alone: generated asymmetry-persistence + layer norm
 
 ## Bottom Line
 
 Hard geometry remains the shared enabler. The cleanest retained joint lane is
-dense central-band + layer norm. The strongest symmetry-protected challenger
-is mirror chokepoint / Z2-protected transfer, which now reaches `N = 100` on
-the dense boundary scan but remains bounded with `N = 120` as the gravity
-wall. The strongest decoherence-side symmetry lane is `Z2 x Z2`, and the
-strongest retained gravity-side-alone lane is generated asymmetry-persistence
-+ layer norm. The strongest emergence-facing constraint is the grown-graph
-density optimum near `npl≈30`; dense grown graphs fail once CLT dominates.
+dense central-band + layer norm. The strongest symmetry-protected bounded
+challenger is mirror chokepoint / Z2-protected transfer, Born-clean through
+`N = 60` on the strict `NPL_HALF = 50` pocket. The strongest retained
+gravity-side-alone lane is generated asymmetry-persistence + layer norm.
+
+## 2026-05-18 audit-conditional repair: narrowed to runner-actual outputs
+
+Per the 2026-05-17 audit verdict, two upstream authorities are missing:
+the grown-graph density-optimum authority and the upstream Z2 x Z2
+Born/decoherence joint-validator authority. This revision narrows the
+meta-comparison to constants the current head-to-head runner actually
+outputs, removing rows that depended on the unregistered upstreams.
+Those rows are queued as out-of-scope follow-ups awaiting upstream
+retained-grade registration.
+
+Specifically narrowed out of this revision:
+
+- Section 3 "Higher-Symmetry `Z2 x Z2`" — depended on the upstream
+  `Z2 x Z2` Born/decoherence joint-validator authority that the
+  supplied gravity-probe authority explicitly does not check.
+- Section 5 "Grown-Graph Density Optimum near `npl≈30`" — depended on
+  the retained grown-graph density-optimum authority, which is not
+  registered as a retained source on `main`.
+- Mirror chokepoint section: the dense boundary-scan row (`N = 100`,
+  `NPL_HALF = 60`, canonical boundary fit `R² = 0.126`) is dropped from
+  this revision because the head-to-head runner emits only the strict
+  `N = 40` / `NPL_HALF = 50` pocket. The dense boundary scan remains
+  upstream-retained on `MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md` and can
+  be re-ingested once the runner is refreshed to emit it.
 
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links for
-the five underlying hard-geometry / mirror / Z2xZ2 / asymmetry-
-persistence / grown-graph lane authorities consumed by the head-to-
-head ranking. It does not promote this note or change the audited
-claim scope.
+the underlying hard-geometry / mirror / asymmetry-persistence lane
+authorities consumed by the runner-actual head-to-head ranking. It does
+not promote this note or change the audited claim scope.
 
 - [CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md](CENTRAL_BAND_DENSE_JOINT_HIGHN_NOTE.md) — dense central-band + layer norm joint coexistence lane authority.
-- [MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md) — mirror chokepoint / Z2-protected transfer dense boundary fit at `N = 100`.
-- [HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md](HIGHER_SYMMETRY_GRAVITY_PROBE_NOTE.md) — higher-symmetry `Z2 x Z2` gravity-probe lane authority.
+- [MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md](MIRROR_CHOKEPOINT_BOUNDARY_FIT_NOTE.md) — mirror chokepoint / Z2-protected transfer strict-pocket authority (dense boundary scan held upstream pending runner refresh).
 - [ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md](ASYMMETRY_PERSISTENCE_JOINT_CARD_NOTE.md) — generated asymmetry-persistence + layer norm gravity-side lane authority.
 - [ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md](ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md) — asymmetry-persistence mass-side `delta ~ M^alpha` follow-up.

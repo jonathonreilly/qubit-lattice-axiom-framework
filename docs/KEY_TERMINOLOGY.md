@@ -1,5 +1,7 @@
 # Key Terminology
 
+**Claim type:** meta
+
 Single-page A-Z lookup of repo-canonical **process** terms (status,
 audit fields, repair classes, evidence terms, prose voice). One line
 per term, with a pointer to the canonical source-of-truth doc.

@@ -26,8 +26,9 @@ matrix-free static solver on one shared geometry and the same beam setup.
 
 The test is intentionally narrow:
 
-> Is the matrix-free static engine a drop-in replacement for the current
-> direct discrete static comparator?
+> Does the matrix-free static engine produce close finite-table
+> agreement with the current direct discrete static comparator on the
+> scoped shared geometries (close but not yet proven identical)?
 
 ## What it compares
 
@@ -68,8 +69,11 @@ engine-equivalence issue.
 
 So the bounded conclusion here stays narrow:
 
-> matrix-free is a strong drop-in replacement for the direct exact-static
-> engine on the shared geometries tested.
+> matrix-free shows close finite-table agreement with the direct
+> exact-static engine on the shared geometries tested (close but not
+> yet proven identical; no residual-tied tolerance assertion or
+> convergence theorem yet ties the observed mismatches to solver
+> residuals).
 
 ## Honest read
 
@@ -112,16 +116,26 @@ the two cited frozen logs, not by a single registered multi-H cache.
 
 What the runner does not yet do, and what the generated repair
 target names exactly, is define an asserted pass/fail
-acceptance criterion for "drop-in replacement". The runner's own
-printed verdict ("close but not yet proven identical") is the
-review repair perimeter. The bounded
-narrow conclusion of this note ("matrix-free is a strong drop-in
-replacement for the direct exact-static engine on the shared
-geometries tested") is exactly that engine-equivalence probe scope
-and is unaffected; the formal drop-in-replacement theorem (with
-field/propagated-response tolerances tied to solver residuals or a
-shared finite-grid Poisson convergence proof) is the named
-follow-up runner workload. The downstream `rel_MS` mismatch
-(`22.86%` and `62.09%`) between exact-static and `dM` is an
-independent comparator-science issue and is not reopened by this
-rigorization edit.
+acceptance criterion that ties the observed close-agreement to
+solver residuals. The runner's own printed verdict ("close but not
+yet proven identical") is the review repair perimeter. The bounded
+narrow conclusion of this note ("matrix-free shows close
+finite-table agreement with the direct exact-static engine on the
+shared geometries tested; close but not yet proven identical") is
+exactly that finite-table engine-comparison probe scope and is
+unaffected; the formal equivalence theorem (with field/propagated-
+response tolerances tied to solver residuals or a shared finite-grid
+Poisson convergence proof) is the named follow-up runner workload.
+The downstream `rel_MS` mismatch (`22.86%` and `62.09%`) between
+exact-static and `dM` is an independent comparator-science issue
+and is not reopened by this rigorization edit.
+
+## 2026-05-18 audit-conditional repair: narrowed drop-in-replacement to finite-table agreement
+
+Per the 2026-05-17 audit verdict, the runner's observed-mismatch table is
+not tied to solver residuals by an asserted acceptance criterion or a
+convergence theorem. This revision narrows the bounded claim from
+"drop-in-replacement" / "identical algorithms" language to "close but not
+yet proven identical on the scoped finite tables". A residual-tied
+tolerance assertion or convergence theorem is queued as out-of-scope
+follow-up.

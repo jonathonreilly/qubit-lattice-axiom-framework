@@ -43,19 +43,21 @@ This audit is intentionally narrow:
 
 The audit separates two distinct questions:
 
-1. **Step-local Born**
+1. **Step-local Born** (bounded retained claim of this note)
    - freeze the converged field snapshot
    - test the usual three-slit Sorkin `I3/P` on that fixed field
 
-2. **End-to-end Born**
-   - run the full nonlinear loop separately for `a`, `b`, `c`, `ab`, `ac`,
-     `bc`, and `abc`
-   - compute the final detector `I3/P` from the converged loop outputs
+2. **End-to-end Born** (diagnostic-only, see split section below)
+   - run the iterated nonlinear loop separately for `a`, `b`, `c`, `ab`,
+     `ac`, `bc`, and `abc`
+   - read the detector `I3/P` from the loop outputs
 
 That distinction matters because the outer map is nonlinear even if each fixed
-field propagation step is linear.
+field propagation step is linear. As of the 2026-05-18 audit-conditional
+repair, only the step-local row is retained as a bounded result; the
+end-to-end row is explicitly demoted to a finite-six-iteration diagnostic.
 
-## Frozen result
+## Frozen result (bounded retained: step-local Born only)
 
 Representative retained row:
 
@@ -66,23 +68,53 @@ Reduction check:
 
 - exact `epsilon = 0` reduction survives exactly
 
-Frozen Born audit row:
+Bounded retained Born audit row (step-local column only):
 
-| `epsilon` | source strength | step-local Born | end-to-end Born | step converged | end converged |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| `0.05` | `0.0040` | `8.834e-16` | `6.830e-05` | `False` | `False` |
+| `epsilon` | source strength | step-local Born | step converged |
+| --- | ---: | ---: | ---: |
+| `0.05` | `0.0040` | `8.834e-16` | `False` |
 
-## Safe read
+The step-local column is the bounded retained reading: the frozen
+converged field snapshot is Born-clean to machine precision. `stepConv =
+False` here means the outer relaxation has not converged at
+`max_iters = 6`, but the step-local Born value `8.834e-16` is a
+direct numerical evaluation on the returned snapshot and does not
+require the outer loop to be converged to be machine-clean.
 
-The strict conclusion is:
+## Diagnostic-only finite-six-iteration result (end-to-end Born)
+
+The end-to-end row below is **not** a retained bounded theorem. Per the
+2026-05-17 audit verdict, the nonzero-coupling end-to-end Born row does
+not converge at `max_iters = 6`, and the unconverged-return code path
+reads final detector amplitudes from the pre-last-relaxation propagated
+amplitudes rather than recomputing them from the returned field. The
+row is preserved here strictly as a diagnostic for the audit-conditional
+repair record.
+
+Finite-six-iteration diagnostic row (DIAGNOSTIC ONLY, not retained):
+
+| `epsilon` | source strength | end-to-end Born (diagnostic, `max_iters = 6`) | end converged |
+| --- | ---: | ---: | ---: |
+| `0.05` | `0.0040` | `6.830e-05` | `False` |
+
+The `6.830e-05` value is what the iterated loop returns after six
+iterations, with detector amplitudes read from the pre-last-relaxation
+code path. It is **not** a converged-loop observable and does not load-
+bear any Born-drift theorem.
+
+## Safe read (bounded retained scope)
+
+The strict bounded retained conclusion is:
 
 - the frozen field snapshot remains Born-clean to machine precision
-- the full iterated loop does **not** stay machine-clean end-to-end on the
-  tested nonzero coupling
-- the loop therefore preserves Born only at the per-step / frozen-snapshot
-  level on this audit
-- the nonzero backreaction map is nonlinear enough to generate a small but
-  real end-to-end Born drift
+  (step-local Born = `8.834e-16` on the representative row)
+- the `epsilon = 0` reduction survives exactly
+
+The finite-six-iteration end-to-end diagnostic above is **not** part of
+the retained reading. It does not support a "full iterated loop is
+not Born-clean end-to-end" claim at the bounded theorem tier; that
+would require a converged seven-subset loop with recomputed-from-field
+amplitudes, which is queued as out-of-scope follow-up.
 
 ## Honest limitation
 
@@ -90,24 +122,29 @@ This is a narrow audit, not a universal theorem.
 
 - it uses one exact lattice family
 - it uses one representative nonzero coupling row
-- it demonstrates the key distinction the audit was meant to separate
+- bounded retention is now scoped to the step-local Born and exact-
+  reduction rows; the end-to-end row is diagnostic-only
 
-## Branch verdict
+## Branch verdict (post-2026-05-18 repair)
 
 Treat this as:
 
-- **per-step Born survives**
-- **end-to-end Born does not remain machine-clean on the tested loop**
+- **per-step / frozen-snapshot Born survives** (bounded retained)
+- **exact `epsilon = 0` reduction** (bounded retained)
+- **end-to-end Born finite-six-iteration value** (diagnostic only;
+  not a converged-loop observable, no bounded theorem claim)
 
-So the retained control is still useful, but the iterated backreaction map is
-not Born-safe as a full nonlinear evolution.
+So the retained control on step-local Born stays useful. Whether the
+iterated backreaction map preserves Born as a full nonlinear evolution
+is an open question on this audit, not a closed bounded reading.
 
-The "end-to-end" reading above is bounded by the runner's `max_iters = 6`
-cap. Both `stepConv` and `endConv` are `False` on the cached run, so the
-end-to-end I3/P value is what the loop produces after six iterations,
-not a converged steady-state observable. Larger `max_iters` or a slit-
-subset-by-subset convergence pass is needed before the end-to-end Born
-reading can be sharpened to a converged-loop statement.
+The end-to-end finite-six-iteration value is bounded by the runner's
+`max_iters = 6` cap. Both `stepConv` and `endConv` are `False` on the
+cached run, and the runner's unconverged-return path reads amplitudes
+from the pre-last-relaxation code path. A converged seven-subset loop
+with recomputed-from-returned-fields amplitudes is queued as out-of-
+scope follow-up before any end-to-end Born statement can promote
+beyond diagnostic.
 
 ## Cited Lane sibling status (audit-explicit)
 
@@ -159,3 +196,18 @@ Two routes match this audit-stated repair path:
    `poisson_self_gravity_loop` runner).
 
 Neither route is attempted in this rigorization edit; both are open.
+
+## 2026-05-18 audit-conditional repair: split end-to-end Born claim to finite-six-iteration diagnostic
+
+Per the 2026-05-17 audit verdict, the nonzero-coupling end-to-end row does
+not converge and reads amplitudes from the pre-last-relaxation code path.
+Per the audit's offered repair option, this revision splits the bounded
+end-to-end Born claim into an explicit finite-six-iteration diagnostic-only
+result. A converged seven-subset loop with recomputed-from-returned-fields
+amplitudes is queued as out-of-scope follow-up.
+
+The bounded retained reading is now scoped to the step-local Born and the
+exact `epsilon = 0` reduction. The end-to-end Born row at nonzero coupling
+is preserved in the "Diagnostic-only finite-six-iteration result" section
+above as a diagnostic and explicitly does not load-bear any bounded
+theorem.

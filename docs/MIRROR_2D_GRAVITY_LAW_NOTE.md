@@ -47,6 +47,21 @@ restricted-packet level. The bounded null-result claim itself
 (no clean 2D mirror mass law, no clean 2D mirror distance law on the
 searched windows) is unchanged.
 
+**2026-05-18 inline-repair augmentation.** The 2026-05-17 re-audit
+verdict on this row was `audited_conditional` (repair class
+`runner_artifact_issue`) noting that the imported helper source and its
+registered cache were not visible in the restricted packet the auditor
+actually reads. To make the packet self-contained without changing any
+of the four registered files above, the load-bearing helper-function
+definitions (`gen_2d_mirror`, `propagate_LINEAR`, and their private
+helper `_topo_order`) are now inlined verbatim into this note, together
+with the relevant excerpt of `logs/runner-cache/mirror_born_audit.txt`.
+Two stale display numbers in the "Retained result" section (the gravity
+scaling fit and the `N=60` Born value) were synchronized against the
+registered cache `logs/runner-cache/mirror_2d_validation.txt` at the
+same time. None of these edits change the bounded null-result
+conclusion.
+
 This note freezes the exact 2D mirror gravity-law lane.
 
 It uses the exact 2D mirror family retained in:
@@ -59,15 +74,155 @@ The goal was narrow:
 - keep the exact 2D mirror family fixed
 - promote a law only if the primary-runner fit quality is genuinely clean
 
+## Helper-runner code excerpt (load-bearing for restricted packet, inlined 2026-05-18)
+
+Inlined here so the restricted audit packet is self-contained: the primary
+runner `scripts/mirror_2d_validation.py` does
+`from scripts.mirror_born_audit import gen_2d_mirror, propagate_LINEAR`, so
+the exact-2D-mirror linear-propagator premise depends on the verbatim function
+definitions below. Source of truth: `scripts/mirror_born_audit.py` at commit
+`b179c2d2c`. The two functions and their one private helper (`_topo_order`)
+are reproduced byte-equivalent below; any subsequent edit to the upstream
+script that changes these definitions must be re-mirrored here.
+
+```python
+# From scripts/mirror_born_audit.py (load-bearing for the primary runner).
+# BETA is module-level in the upstream file and is consumed by propagate_LINEAR
+# via closure-style read of the module global.
+import math
+import cmath
+import random
+from collections import defaultdict, deque
+
+BETA = 0.8
+
+
+def _topo_order(adj, n):
+    in_deg = [0] * n
+    for nbs in adj.values():
+        for j in nbs:
+            in_deg[j] += 1
+    q = deque(i for i in range(n) if in_deg[i] == 0)
+    order = []
+    while q:
+        i = q.popleft()
+        order.append(i)
+        for j in adj.get(i, []):
+            in_deg[j] -= 1
+            if in_deg[j] == 0:
+                q.append(j)
+    return order
+
+
+def propagate_LINEAR(positions, adj, field, src, k, blocked):
+    """STRICTLY LINEAR propagator. No normalization of any kind.
+    This is the ONLY propagator used for Born claims on this branch."""
+    n = len(positions)
+    order = _topo_order(adj, n)
+    amps = [0j] * n
+    for s in src:
+        amps[s] = 1.0 / len(src)
+    for i in order:
+        if abs(amps[i]) < 1e-30 or i in blocked:
+            continue
+        for j in adj.get(i, []):
+            if j in blocked:
+                continue
+            if len(positions[i]) == 2:
+                x1, y1 = positions[i]; x2, y2 = positions[j]
+                dx, dy = x2-x1, y2-y1; dz = 0
+            else:
+                x1, y1, z1 = positions[i]; x2, y2, z2 = positions[j]
+                dx, dy, dz = x2-x1, y2-y1, z2-z1
+            L = math.sqrt(dx*dx + dy*dy + dz*dz)
+            if L < 1e-10:
+                continue
+            lf = 0.5 * (field[i] + field[j])
+            dl = L * (1 + lf)
+            ret = math.sqrt(max(dl*dl - L*L, 0))
+            act = dl - ret
+            theta = math.atan2(math.sqrt(dy*dy + dz*dz), max(dx, 1e-10))
+            w = math.exp(-BETA * theta * theta)
+            ea = cmath.exp(1j * k * act) * w / L
+            amps[j] += amps[i] * ea
+    return amps
+
+
+# Generator 3: 2D mirror
+def gen_2d_mirror(nl, npl_half, yr, cr, seed):
+    rng = random.Random(seed); pos = []; adj = defaultdict(list); li = []; mm = {}; bl = nl // 3
+    for layer in range(nl):
+        x = float(layer); ln = []
+        if layer == 0:
+            pos.append((x, 0)); ln.append(len(pos)-1); mm[len(pos)-1] = len(pos)-1
+        else:
+            up, lo = [], []
+            for _ in range(npl_half):
+                y = rng.uniform(0.5, yr)
+                iu = len(pos); pos.append((x, y)); up.append(iu)
+                il = len(pos); pos.append((x, -y)); lo.append(il)
+                mm[iu] = il; mm[il] = iu
+            ln = up + lo
+            lb = max(0, len(li) - (1 if layer == bl+1 else 2))
+            for ci in up:
+                cx, cy = pos[ci]
+                for pl in li[lb:]:
+                    for pi in pl:
+                        px, py = pos[pi]
+                        if math.sqrt((cx-px)**2+(cy-py)**2) <= cr:
+                            adj[pi].append(ci); adj[mm[pi]].append(mm[ci])
+        li.append(ln)
+    return pos, dict(adj), bl
+```
+
+## Imported-authority cache excerpt (load-bearing, 2026-05-18)
+
+Inlined verbatim from
+[`logs/runner-cache/mirror_born_audit.txt`](../logs/runner-cache/mirror_born_audit.txt)
+so the restricted audit packet is self-contained. The Born-family
+verification numbers below (all PERFECT, `|I3|/P` at machine precision) close
+the exact-2D-mirror linear-propagator premise that the primary runner
+relies on via its `from scripts.mirror_born_audit import ...` line.
+
+```
+===== runner cache v1 =====
+runner: scripts/mirror_born_audit.py
+runner_sha256: ccbbc2f10c2187338017a1b7020815e452240f96245718fab15ea12d86a04270
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 7.80
+status: ok
+----- stdout -----
+================================================================================
+BORN AUDIT: ALL MIRROR GENERATORS (LINEAR PROPAGATOR ONLY)
+  8 seeds per generator
+================================================================================
+
+   3D chokepoint N=15 npl=25 r=4  mean=1.74e-16  max=4.84e-16  ok=3  PERFECT
+   3D chokepoint N=25 npl=25 r=4  mean=1.32e-15  max=1.93e-15  ok=4  PERFECT
+       3D hybrid N=25 npl=40 r=5  mean=1.67e-15  max=4.05e-15  ok=8  PERFECT
+       3D hybrid N=40 npl=40 r=5  mean=1.44e-15  max=2.05e-15  ok=8  PERFECT
+     2D mirror N=25 npl=12 r=2.5  mean=5.21e-16  max=7.79e-16  ok=8  PERFECT
+     2D mirror N=40 npl=12 r=2.5  mean=6.53e-16  max=9.89e-16  ok=8  PERFECT
+
+VERIFICATION: This script uses propagate_LINEAR which has
+NO normalization of any kind. If Born passes here, the
+linear propagator on these graph families is Born-clean.
+
+----- stderr -----
+```
+
 ## Retained result (primary runner, load-bearing)
 
 The exact 2D mirror family remains review-safe for Born, MI, decoherence, and
 positive gravity, but the gravity-side fits on the primary runner are weak.
 
-From [`logs/2026-04-03-mirror-2d-validation.txt`](../logs/2026-04-03-mirror-2d-validation.txt):
+From the registered primary-runner cache
+[`logs/runner-cache/mirror_2d_validation.txt`](../logs/runner-cache/mirror_2d_validation.txt)
+(load-bearing) — values synchronized 2026-05-18 to the registered cache:
 
-- gravity scaling across `N ∈ {25, 40, 60, 80, 100}`:
-  `gravity = 6.48 * N^-0.210`, `R^2 = 0.168` (weak)
+- gravity scaling across `N ∈ {15, 25, 40, 60, 80, 100}`:
+  `gravity = 2.19 * N^+0.049`, `R^2 = 0.015` (weak)
 - fixed-anchor mass window:
   `delta ~= 0.8720 * M^0.132`, `R^2 = 0.167` (weak)
 - distance sweep tail:
@@ -84,7 +239,7 @@ The strongest retained clean row from the exact 2D validation lane is:
 - `1 - pur_min = 0.4420`
 - `d_TV = 0.8572`
 - gravity `+2.5687`
-- Born `1.08e-15`
+- Born `1.26e-15`
 - `k=0 = 0.00e+00`
 
 ## Companion cleanup sweep (diagnostic-only, not load-bearing)

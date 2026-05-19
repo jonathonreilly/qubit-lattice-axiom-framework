@@ -3,7 +3,9 @@
 **Date:** 2026-04-14 (originally); 2026-05-10 (audit-narrowing refresh);
 2026-05-18 (claim_scope formalized as exact imported Fierz channel-count
 fraction plus conditional MC consistency framing only per audit verdict
-boundary instruction).
+boundary instruction; physics-loop Tier B attempt logged as NARROWED —
+matching rule (M) closure from retained primitives shown obstructed by
+already-recorded no-go authority).
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing content
 of this note is **exactly two pieces**: (i) the **exact imported
@@ -16,7 +18,19 @@ operating point. The promotion of the channel-count fraction to the
 connected-trace dynamical observable is **explicitly NOT** derived in
 this note; the matching-rule + dynamical channel-population +
 correction-estimate derivation from retained primitives remains the
-named open work item per the audit verdict's repair sub-target.
+named open work item per the audit verdict's repair sub-target. The
+2026-05-18 physics-loop Tier B attempt to close the bridge via a
+one-step Fierz channel-count projection from retained Cl(3)
+primitives **failed by NARROWING**: the existing
+`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03` no-go and
+`YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02` named-
+obstruction packets prove the disconnected/singlet coefficient
+`kappa_EW` is not fixed by the retained packet (`N_c = 3`, Fierz
+identity, CMT mean-field factorization, OZI bounded suppression).
+The Fierz channel-count fraction is a Hilbert-space dimension count;
+its identification with the physical EW readout requires a non-
+perturbative input that is not available in retained primitives.
+See §8 (this note) for the 2026-05-18 Tier B narrowing log.
 **Status:** scope-narrowed bounded note. The exact `(N_c^2 − 1)/N_c^2`
 adjoint-channel **representation-dimension fraction** is **imported**
 from the already-retained Fierz authority below; this note adds a
@@ -31,7 +45,7 @@ bridge.
 from the exact Fierz channel-count fraction to the lattice connected-
 trace ratio. Names that bridge as a real upstream gap inherited from
 the Fierz authority's matching rule.
-**Depends on:** Cl(3) axiom (N_c = 3), SU(N_c) gauge theory.
+**Depends on:** baseline `Cl(3)` framework setting (`N_c = 3`), SU(N_c) gauge theory.
 
 **Primary authority for the exact `(N_c^2 − 1)/N_c^2` ratio (one-hop dep,
 cited here, not closed in this note):**
@@ -603,3 +617,151 @@ for those downstream observables.
 | Matching rule (M)                | --         | OPEN GAP    | Inherited from cited Fierz note as a named structural input; not derived on the current atlas      |
 | R_conn estimate                  | 8/9 + O(1/81) | CONDITIONAL | This note, conditional on matching rule (M) and 't Hooft topological-dominance literature input |
 | R_conn(MC) = 0.887 +/- 0.008     | 0.887(8)   | NUMERICAL   | `scripts/frontier_color_projection_mc.py`; runner uses 8/9 as the explicit target value              |
+
+---
+
+## 8. 2026-05-18 Tier B bridge-theorem attempt (NARROWED — no closure)
+
+### 8.1 What was attempted
+
+Per the audit verdict's repair sub-target, the 2026-05-18 physics-loop
+dispatched a Tier B algebraic bridge attempt: derive the matching rule
+(M) — the framework's lattice connected color trace projects onto the
+adjoint channel of the Fierz decomposition — as a one-step Fierz
+channel-count projection identity from retained Cl(3) primitives. The
+target derivation would identify the lattice connected-trace observable
+with the SU(N_c) adjoint trace fraction `(N_c^2 − 1)/N_c^2 = 8/9` at
+N_c = 3, closing the dynamical-population bridge inherited from
+[`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md).
+
+### 8.2 Verdict: NARROWED (closure refused)
+
+The bridge **does not close** from retained primitives. The attempt is
+recorded here as a narrowing because the framework already contains
+two named-obstruction artifacts that prove the bridge requires non-
+retained, non-perturbative inputs. The 2026-05-18 attempt did not find a
+route around either obstruction; forcing a closure would silently
+elevate the named obstruction to retained status, in violation of the
+[`feedback_consistency_vs_derivation_below_w2`](#) policy that
+arithmetic equalities cannot load-bear closure.
+
+### 8.3 Named obstructions blocking the Tier B route
+
+**(O-OPEN-GATE)** [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+records the matching-rule underdetermination as a **no-go theorem** on
+the retained packet `{ N_c = 3, Fierz identity, CMT mean-field
+factorization, OZI bounded suppression }`. Concretely, parametrize the
+post-CMT channel sum as
+
+```text
+Pi_EW^phys(kappa_EW) = F_adj + kappa_EW (1 − F_adj)
+                     = (N_c^2 − 1)/N_c^2 + kappa_EW / N_c^2
+```
+
+The retained primitives normalize the total channel sum but **do not
+fix** the disconnected/singlet readout coefficient `kappa_EW`. The
+package-level 9/8 factor is the special case `K_EW(0) = 9/8` (connected-
+trace selector), but the full-trace readout `K_EW(1) = 1` is equally
+compatible with the retained Fierz arithmetic and identical CMT
+scaling. Distinct completions exist with the **same Fierz channel
+counts**, demonstrating that the channel-count identity alone cannot
+determine the physical observable. Therefore no one-step Fierz
+projection from retained primitives selects `kappa_EW = 0`.
+
+**(O-STRETCH)** [`YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md)
+enumerates the three structural routes that would close (M) exactly
+and demonstrates each fails on the retained packet:
+
+- **(O1)** Disconnected-piece identical vanishing: **false** —
+  glueball intermediate states exist at any N_c ≥ 2 with non-zero
+  amplitude.
+- **(O2)** Disconnected piece contributes only to v: **scheme choice,
+  not derivation** — the decomposition `Σ^full = Σ^conn + Σ^disc` is
+  algebraic; the assignment of `Σ^disc` exclusively to v is a
+  renormalization-scheme choice, not a derived statement of the
+  retained primitives.
+- **(O3)** Exact OZI-vanishing theorem at all genus orders: **not
+  available** — standard OZI is phenomenological and the rule has
+  corrections even at N_c = ∞.
+
+The sharpest honest statement on the retained packet is the bounded-
+support tier `R_conn^phys = (N_c^2 − 1)/N_c^2 + O(1/N_c^4)`, which is
+exactly the existing bounded-theorem status of this note.
+
+### 8.4 Why a one-step Fierz projection cannot close (M)
+
+Both the cited Fierz authority and this note's Hilbert-space dimension
+count derive the **representation-dimension fraction** of the q-qbar
+tensor product. That fraction is a pure SU(N_c) group-theory invariant.
+The matching rule (M), by contrast, asserts that the **lattice
+connected color trace** `<Tr_color[G(0,x) G(x,0)]_connected>` projects
+onto the same adjoint channel after the framework's specific Wilson-
+line construction of the EW current and after CMT mean-field
+factorization. This is a statement about a dynamical observable, not a
+statement about a Hilbert-space dimension count. The two coincide only
+when an additional structural premise selects the disconnected readout
+coefficient `kappa_EW = 0`. The retained primitives do not supply that
+premise. Per the hostile-review semantics policy
+([`feedback_hostile_review_semantics`](#)), the arithmetic
+identification `dim(adj)/dim(N_c ⊗ N_c-bar) = (N_c^2 − 1)/N_c^2 = 8/9`
+cannot mask the action-level admission that the lattice connected-
+trace observable is identified with this fraction by convention.
+
+### 8.5 Yang-Mills exclusion boundary check (caveat)
+
+A potential one-step closure route would invoke the Wilson-line
+structure of the EW current at the lattice level to **mechanically**
+project onto the adjoint channel after CMT factorization absorbs the
+singlet piece into `u_0`. This route is **not available** to a retained-
+primitive derivation: the Wilson-line construction of the gauge
+connection is an admitted import from continuum Yang-Mills, not a
+retained theorem (cf.
+[`project_bridge_gap_resolution_c_locked`](#) — the 10-agent attack
+established Wilson is an admitted import, not derived from Cl(3)/Z^3).
+Forcing a Wilson-line projection here would re-import a known open
+admission and silently elevate it under a different label. The Tier B
+attempt therefore stops short of invoking Wilson-line structure beyond
+what the cited Fierz authority already records as a named open
+primitive.
+
+### 8.6 Outcome of the 2026-05-18 attempt
+
+- **Bridge derivation:** NOT complete; NARROWED.
+- **Admissions used (counterfactual to closure):** retained Cl(3)
+  (N_c = 3) + SU(N_c) Fierz identity (retained via cited authority)
+  alone are **insufficient**; closure additionally requires either
+  (O1) an exact disconnected-piece-vanishing theorem, (O2) a scheme-
+  level assignment of `Σ^disc` to v (not derived), or (O3) an exact
+  all-genus OZI theorem.
+- **Honest tier:** the note remains a `bounded_theorem` with the
+  exact channel-count fraction imported from the cited Fierz
+  authority, the matching rule (M) recorded as a named open structural
+  input shared with that authority, and the dynamical-population
+  bridge open via the two named-obstruction artifacts above.
+- **No promotion of `kappa_EW = 0` is performed** by this narrowing.
+  The connected-trace selector remains an extra premise outside the
+  retained packet, as established by the open-gate no-go authority.
+
+### 8.7 What this narrowing changes vs the 2026-05-10 audit-refresh
+
+The 2026-05-10 refresh already documented that the matching rule (M)
+is not derived in this note. The 2026-05-18 narrowing adds:
+
+1. An explicit cross-reference to the
+   [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+   no-go theorem, which proves that the retained packet admits at
+   least two `kappa_EW` completions (the `K_EW(0) = 9/8` connected-
+   trace selector and the `K_EW(1) = 1` full-trace selector) with
+   identical Fierz arithmetic and identical CMT scaling.
+2. An explicit cross-reference to the
+   [`YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md)
+   named-obstruction packet, which enumerates the three failure modes
+   (O1, O2, O3) blocking a retained-primitive derivation of (M).
+3. A documented Tier B bridge-theorem attempt verdict (NARROWED) for
+   audit-trail integrity: future re-audits do not need to re-discover
+   that the one-step Fierz channel-count projection from retained
+   Cl(3) primitives does not close the dynamical-population bridge.
+
+The intrinsic load-bearing claim and authority role of the note are
+unchanged. The 2026-05-18 narrowing strengthens the boundary against
+silent matching-rule promotion in downstream consumers.

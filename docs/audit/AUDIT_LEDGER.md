@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 73 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 20 |
 | `audited_clean` | 585 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 73 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1540 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
@@ -771,6 +771,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_dimensionless_objection_closure_review_packet_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5567,6 +5568,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Inside the admitted source-response carrier, zero traceless background gives Q=2/3 while surviving Z backgrounds and ambient endpoint/spectator data produce countermodels, so retained dimensionless closure remains conditional.  _(class `A`)_
 - **chain closes:** False — The algebraic checks close inside the admitted model surface, but the restricted packet does not derive the admitted source-response carrier with surviving Z or the selected-line endpoint/readout/basepoint domain from retained axioms. Those bridge theorems are explicitly named as open work.
 - **rationale:** The runner performs finite algebraic checks using Fraction arithmetic and simple two-channel/endpoint countermodels; it does not instantiate a first-principles Cl(3) on Z^3 derivation from the axiom. The source note correctly narrows the claim to conditional obstruction support and explicitly says the needed bridges from retained axioms are not supplied. Therefore the conditional obstruction statements are supported, but retained closure or retained no-go status does not propagate through the open carrier and endpoint-domain assumptions.
+- **auditor confidence:** high
+
+### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic identities (T1)-(T9) inside the explicitly admitted two-channel toy and admitted eta_APS = 2/9, with no retained-grade propagation audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-koide_dimensionless_obje-060`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the admitted carrier/scalar data (A1)-(A5), the identities (T1)-(T9) reduce to direct rational arithmetic in Q.  _(class `A`)_
+- **chain closes:** True — The stated identities follow on their own terms from the explicit admissions (A1)-(A5) by rational substitution and elementary matrix arithmetic. The packet does not close any bridge deriving those admissions from retained-grade authorities.
+- **rationale:** The runner source genuinely computes the listed rational substitutions and projector/Z checks; it is not merely printing pass lines. The load-bearing work is class (A) algebra over explicit admissions, and the conditional algebraic layer closes. However, (A1)-(A5), including the carrier, central Z grammar, selected-line endpoint data, based section, and eta_APS = 2/9, are admitted rather than derived from retained-grade inputs in the restricted packet, so retained-grade status cannot propagate.
 - **auditor confidence:** high
 
 ### `koide_dweh_cyclic_compression_note_2026-04-18`

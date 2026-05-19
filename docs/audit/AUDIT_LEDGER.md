@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 135 |
-| **retained_bounded** | 356 |
+| **retained_bounded** | 357 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1335 |
+| unaudited | 1334 |
 | audit_in_progress | 19 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 20 |
-| `audited_clean` | 577 |
+| `audited_clean` | 578 |
 | `audited_conditional` | 67 |
 | `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1554 |
+| `unaudited` | 1553 |
 
 | claim_type | count |
 |---|---:|
@@ -165,6 +165,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_mass_scaling_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `asymmetry_persistence_pilot_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1268,6 +1269,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Generated persistence turns the flat baseline linear response into a clearer positive sublinear mass window, with the cleanest retained row at threshold 0.10 in the layernorm lane.  _(class `C`)_
 - **chain closes:** True — The SHA-pinned cached run completes and reproduces the note's fit coefficients, exponents, and R^2 values. The primary runner and bundled helpers compute these values from seeded graph generation, propagation, gravity-delta measurement, and log-log fitting without importing or hard-coding the contested fit results.
 - **rationale:** The runner constructs the generated 3D DAGs, applies the asymmetry-persistence threshold, varies fixed-prefix mass nodes, computes detector y-shift deltas under linear and layernorm propagation, and fits the declared mass window. The helper sources are present and expose the load-bearing graph, field, propagation, and fitting machinery; no helper hard-codes the claimed numerical outcomes. The clean result is limited to the finite generated-graph protocol and does not establish exact F proportional M or a Newtonian mass law.
+- **auditor confidence:** high
+
+### `asymmetry_persistence_pilot_note`
+
+- **Note:** [`ASYMMETRY_PERSISTENCE_PILOT_NOTE.md`](../../docs/ASYMMETRY_PERSISTENCE_PILOT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the sparse npl=30, xyz_range=12.0, connect_radius=4.0, 16-seed primary-runner results for N=40, N=60, and sparse N=80 failure using the included gap_topological_asymmetry readout source.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-141901-30b1a9aa-asymmetry_persistence_pi-044`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** During layer-by-layer generation, low-asymmetry post-barrier candidate nodes are rejected, and the primary runner reproduces the sparse N=40/N=60 baseline-vs-threshold rows plus the N=80 sparse failure entry.  _(class `C`)_
+- **chain closes:** True — The primary runner and included helper source compute the graph generation, asymmetry persistence rule, propagation, binning, purity, S_norm, and gravity readouts without hard-coded result tables. Dense N=80/N=100 and layernorm-stacking rows are explicitly outside this audited scope.
+- **rationale:** Within the narrowed scope, the cached stdout matches the sparse rows quoted in the note, and the runner source shows those rows are produced by deterministic seeded computation rather than by printing constants. The transitive helper source is included and supplies the load-bearing readout implementation, so the earlier packet-completeness defect is repaired for the sparse table. The dense and layernorm sections remain scientific context only and do not affect this scoped verdict.
 - **auditor confidence:** high
 
 ### `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29`

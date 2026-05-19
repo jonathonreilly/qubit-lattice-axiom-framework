@@ -58,10 +58,10 @@
     "retained": 111,
     "retained_bounded": 363,
     "retained_no_go": 136,
-    "retained_pending_chain": 7,
-    "unaudited": 1320
+    "retained_pending_chain": 8,
+    "unaudited": 1319
   },
-  "retained_pending_chain_count": 7,
+  "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [
     "action_uniqueness_note",
     "alpha_s_derived_narrow_theorem_note_2026-05-10",
@@ -69,6 +69,7 @@
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
     "complex_selectivity_compare_note",
     "complex_selectivity_predictor_note",
-    "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16"
+    "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
+    "lattice_3d_nyquist_diffraction_note"
   ]
 }

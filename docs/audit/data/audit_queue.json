@@ -3,7 +3,7 @@
     "critical": 881,
     "high": 27,
     "leaf": 338,
-    "medium": 114
+    "medium": 113
   },
   "cycle_break_target_count": 297,
   "cycle_break_targets": [
@@ -34732,30 +34732,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mirror_2d_gravity_law_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "mirror_program_synthesis"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/MIRROR_2D_GRAVITY_LAW_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mirror_born_audit.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -47603,6 +47579,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 51,
-  "total_pending": 1360
+  "ready_count": 50,
+  "total_pending": 1359
 }

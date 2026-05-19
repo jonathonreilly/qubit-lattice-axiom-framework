@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 111 |
+| **retained** | 112 |
 | **retained_no_go** | 136 |
 | **retained_bounded** | 375 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
 | unaudited | 1308 |
-| audit_in_progress | 12 |
+| audit_in_progress | 11 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 598 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 599 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | D | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `growing_graph_frontier_expansion_proxy_note` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `h0125_scalable_scout_note` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | B | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -353,6 +352,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `growing_graph_expansion_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
+| `growing_graph_frontier_expansion_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4964,6 +4964,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source note's retained and demoted claims are direct cross-note checks against the two cited retained-grade authorities. No additional bridge beyond those cited diagnostics is needed for the bounded audit conclusion.
 - **rationale:** The load-bearing step is not a fresh first-principles computation; it verifies and summarizes values from the cited retained_bounded and retained_no_go authorities. Those inputs support the bounded conclusion: graph-distance/frontier expansion is retained, while dynamic-propagation or de Sitter-like wording is not promoted. The absent runner stdout/source limits direct runner verification here, but the audited claim is a bounded synthesis of the supplied retained-grade notes rather than a new compute claim.
 - **auditor confidence:** medium
+
+### `growing_graph_frontier_expansion_proxy_note`
+
+- **Note:** [`GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md`](../../docs/GROWING_GRAPH_FRONTIER_EXPANSION_PROXY_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the current growing_graph_frontier_expansion.py runner with the specified seed, 20 growth steps, and max_height 15, the generated snapshot sequence has nondecreasing frontier delay from 3 to 22 while the frozen step-0 control remains at frontier delay 3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-growing_graph_frontier_expansion-panel-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The growing graph expands its frontier delay relative to the frozen control, with step 0 frontier delay 3.000, step 20 frontier delay 22.000, slope +0.9325 hops/step, and static control frontier delay 3.000.  _(class `A`)_
+- **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: first / audited_clean / positive_theorem / class A; J2: first / audited_clean / positive_theorem / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_clean / bounded_theorem / class C; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: J1: The restricted packet directly supports the narrow positive finite claim: the runner computes unweighted graph distances over the generated snapshots, the cached output shows a nondecreasing frontier delay from 3 to 22, and the frozen step-0 control remains at frontier delay 3. The load-bearing step is the direct runner computation, not a conditional bridge or bounded wall claim. | J2: The restricted claim is only the finite runner-level graph proxy: the generated snapshots have nondecreasing frontier delay from 3 to 22 while the frozen step-0 control has frontier delay 3. The runner directly computes that graph-distance observable over stipulated inputs, so the clean scoped positive result closes as class A, not as a class C first-principles compute. | J3: The scoped claim is a finite deterministic graph result: for the specified runner inputs, BFS frontier delay is nondecreasing from 3 to 22 while the frozen step-0 control remains at frontier delay 3. This is a narrow positive graph-expansion proxy with no physical/cosmological bridge or external comparator. The load-bearing check is exact finite graph-combinatorial computation over existing runner inputs, not a class-C first-principles Cl(3)/Z^3 computation. | J4: The packet supports a clean bounded computational claim: the runner constructs the deterministic growing snapshots and computes unweighted BFS frontier delays from the stated seed, yielding nondecreasing frontier delay 3 to 22 while the frozen control remains 3. The note explicitly confines this to the tested prototype graph proxy, not an asymptotic or physical cosmology theorem, so class C bounded_theorem is the correct tuple. | J5: The restricted packet supports a clean finite/prototype theorem: the runner constructs the growing snapshots and computes unweighted frontier delays, matching the cached monotone nondecreasing frontier growth and static frozen control. The note explicitly limits the result to a graph-expansion proxy for the tested prototype, not an asymptotic or cosmological theorem, so bounded_theorem with a constructive runner computation is the correct tuple.
+- **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: first / audited_clean / positive_theorem / class A; J2: first / audited_clean / positive_theorem / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_clean / bounded_theorem / class C; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: J1: The restricted packet directly supports the narrow positive finite claim: the runner computes unweighted graph distances over the generated snapshots, the cached output shows a nondecreasing frontier delay from 3 to 22, and the frozen step-0 control remains at frontier delay 3. The load-bearing step is the direct runner computation, not a conditional bridge or bounded wall claim. | J2: The restricted claim is only the finite runner-level graph proxy: the generated snapshots have nondecreasing frontier delay from 3 to 22 while the frozen step-0 control has frontier delay 3. The runner directly computes that graph-distance observable over stipulated inputs, so the clean scoped positive result closes as class A, not as a class C first-principles compute. | J3: The scoped claim is a finite deterministic graph result: for the specified runner inputs, BFS frontier delay is nondecreasing from 3 to 22 while the frozen step-0 control remains at frontier delay 3. This is a narrow positive graph-expansion proxy with no physical/cosmological bridge or external comparator. The load-bearing check is exact finite graph-combinatorial computation over existing runner inputs, not a class-C first-principles Cl(3)/Z^3 computation. | J4: The packet supports a clean bounded computational claim: the runner constructs the deterministic growing snapshots and computes unweighted BFS frontier delays from the stated seed, yielding nondecreasing frontier delay 3 to 22 while the frozen control remains 3. The note explicitly confines this to the tested prototype graph proxy, not an asymptotic or physical cosmology theorem, so class C bounded_theorem is the correct tuple. | J5: The restricted packet supports a clean finite/prototype theorem: the runner constructs the growing snapshots and computes unweighted frontier delays, matching the cached monotone nondecreasing frontier growth and static frozen control. The note explicitly limits the result to a graph-expansion proxy for the tested prototype, not an asymptotic or cosmological theorem, so bounded_theorem with a constructive runner computation is the correct tuple.
+- **auditor confidence:** judicial_panel_majority
 
 ### `growing_graph_static_control_audit_note`
 

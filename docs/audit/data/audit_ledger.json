@@ -253319,24 +253319,49 @@
       "verdict_rationale": null
     },
     "wilson_test_mass_continuum_note_2026-04-11": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-19T15:36:01.407637+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "staggered_newton_blocking_sensitivity_note_2026-04-11": "Finite-run blocking-sensitivity result for open 3D cubic staggered external-source trajectories with sides 12, 14, 16; distances 3-6; mass 0.30; G 50.0; source_strength 5e-4; dt 0.10; N_steps 12; sigma 1.30; and readouts raw, z2, cube2, cube4.",
+          "staggered_newton_reproduction_note_2026-04-11": "Open 3D staggered cubic lattices with sides 12, 14, and 16, imposed external V~-1/r source, mass 0.30, sigma 1.30, d=3..6, dt 0.10, 12 steps, and 2x2x2 blocked-centroid trajectory readout.",
+          "wilson_normalization_reconciliation_note_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "staggered_newton_blocking_sensitivity_note_2026-04-11": "bounded_theorem",
+          "staggered_newton_reproduction_note_2026-04-11": "bounded_theorem",
+          "wilson_normalization_reconciliation_note_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "staggered_newton_blocking_sensitivity_note_2026-04-11": "retained_bounded",
+          "staggered_newton_reproduction_note_2026-04-11": "retained_bounded",
+          "wilson_normalization_reconciliation_note_2026-04-11": "meta"
+        },
+        "deps": [
+          "staggered_newton_blocking_sensitivity_note_2026-04-11",
+          "staggered_newton_reproduction_note_2026-04-11",
+          "wilson_normalization_reconciliation_note_2026-04-11"
+        ],
+        "load_bearing_score": 10.445,
+        "runner_hash": null,
+        "transitive_descendants": 985
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-153419-d5be05e0-wilson_test_mass_continu-021",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet gives the numerical finite-L table only as note text, with no completed runner stdout or runner source to verify that the listed scripts actually compute the table. The cited Wilson normalization authority is meta/support and explicitly leaves runner verification conditional.",
       "claim_id": "wilson_test_mass_continuum_note_2026-04-11",
-      "claim_scope": null,
+      "claim_scope": "Finite-L same-convention open-Wilson test-mass, perturbative mass-law, and distance-law table only; no retained L -> infinity continuum-limit claim.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-19T15:36:01.407637+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -253346,20 +253371,22 @@
         "staggered_newton_blocking_sensitivity_note_2026-04-11"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.445,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The finite-L open-Wilson distance-law table reports alpha(L) approaching -2, with L = 25 giving alpha = -2.002 and R^2 = 0.9999, while the continuum extrapolation is diagnostic-only.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "5ff368956d47a84a8d920ce01f8f1ccaef1a6bca89e3763e00af65d46fdc0cb5",
       "note_path": "docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade completed runner certificate or full runner/source packet for the finite-L open-Wilson table, plus any helper sources needed to verify the same-convention computation.",
+      "open_dependency_paths": [
+        "docs/WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-17T12:16:39.146780+00:00",
@@ -253482,7 +253509,7 @@
       ],
       "runner_check_breakdown": {
         "A": 0,
-        "B": 0,
+        "B": 1,
         "C": 0,
         "D": 0,
         "total_pass": 0
@@ -253490,7 +253517,7 @@
       "runner_path": null,
       "title": "Wilson Test-Mass / Finite-L Distance-Law Companion",
       "transitive_descendants": 985,
-      "verdict_rationale": null
+      "verdict_rationale": "The narrowed scope correctly demotes the L -> infinity extrapolation to diagnostic-only, which repairs the prior scope problem in form. However, the binding finite-L table is not independently closed by the restricted packet: no runner output or source is provided, and the one directly relevant Wilson cited authority is effective_status meta rather than retained-grade. The retained staggered authorities are contextual cross-architecture companions, not evidence for the Wilson finite-L table itself."
     },
     "wilson_two_body_open_note_2026-04-11": {
       "audit_date": "2026-05-19T14:34:37.536370+00:00",

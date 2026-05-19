@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 875,
+    "critical": 874,
     "high": 27,
     "leaf": 318,
     "medium": 106
@@ -9920,32 +9920,6 @@
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
-      "transitive_descendants": 985
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wilson_test_mass_continuum_note_2026-04-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_normalization_reconciliation_note_2026-04-11",
-        "staggered_newton_reproduction_note_2026-04-11",
-        "staggered_newton_blocking_sensitivity_note_2026-04-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.445,
-      "note_path": "docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
       "transitive_descendants": 985
     },
     {
@@ -46740,6 +46714,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 24,
-  "total_pending": 1326
+  "ready_count": 23,
+  "total_pending": 1325
 }

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 370 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1309 |
+| unaudited | 1308 |
 | audit_in_progress | 17 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 77 |
+| ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 17 |
 | `audited_clean` | 594 |
-| `audited_conditional` | 77 |
+| `audited_conditional` | 78 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1528 |
+| `unaudited` | 1527 |
 
 | claim_type | count |
 |---|---:|
@@ -807,6 +807,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_zero_import_chain_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
@@ -11204,6 +11205,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note's parent target is already retained-bounded, and the completed replay log supports the stated finite-lattice caution. The note adds no independent observable, runner evidence, or new physical theorem beyond the parent result's scoped interpretation.
 - **rationale:** Issue: this note is a skeptic/scope wrapper around the already retained-bounded wide_lattice_h2t_distance_law_note and uses the same replay/log rather than adding an independent theorem or comparator. Why this blocks separate retained status: giving it another retained-bounded row would double-count the same finite-lattice evidence as an additional claim. Repair target: keep the cautionary wording boxed under the parent distance-law note or add genuinely independent controls such as width/refinement/window/source-placement replays. Claim boundary until fixed: it is safe as a scope-management corollary saying the parent replay is finite-lattice evidence only, not a universal distance law.
 - **decoration parent:** `wide_lattice_h2t_distance_law_note`
+- **auditor confidence:** high
+
+### `wilson_test_mass_continuum_note_2026-04-11`
+
+- **Note:** [`WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md`](../../docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-L same-convention open-Wilson test-mass, perturbative mass-law, and distance-law table only; no retained L -> infinity continuum-limit claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-153419-d5be05e0-wilson_test_mass_continu-021`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-L open-Wilson distance-law table reports alpha(L) approaching -2, with L = 25 giving alpha = -2.002 and R^2 = 0.9999, while the continuum extrapolation is diagnostic-only.  _(class `B`)_
+- **chain closes:** False — The restricted packet gives the numerical finite-L table only as note text, with no completed runner stdout or runner source to verify that the listed scripts actually compute the table. The cited Wilson normalization authority is meta/support and explicitly leaves runner verification conditional.
+- **rationale:** The narrowed scope correctly demotes the L -> infinity extrapolation to diagnostic-only, which repairs the prior scope problem in form. However, the binding finite-L table is not independently closed by the restricted packet: no runner output or source is provided, and the one directly relevant Wilson cited authority is effective_status meta rather than retained-grade. The retained staggered authorities are contextual cross-architecture companions, not evidence for the Wilson finite-L table itself.
+- **open / conditional deps cited:**
+  - `WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`
 - **auditor confidence:** high
 
 ### `wilson_two_body_open_note_2026-04-11`

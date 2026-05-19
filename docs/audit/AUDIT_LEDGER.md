@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 111 |
 | **retained_no_go** | 136 |
-| **retained_bounded** | 370 |
+| **retained_bounded** | 371 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1307 |
-| audit_in_progress | 17 |
+| audit_in_progress | 16 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 17 |
-| `audited_clean` | 594 |
+| `audit_in_progress` | 16 |
+| `audited_clean` | 595 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
-| `persistent_object_exact_lattice_park_note_2026-04-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
@@ -496,6 +495,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_blended_readout_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `persistent_object_compact_inertial_probe_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `persistent_object_compact_update_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `persistent_object_exact_lattice_park_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `persistent_object_green_scout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `persistent_object_multistage_floor_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7366,6 +7366,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The compact top-3 repeated-update rule produces a smaller source object than the broad control while preserving the weak-field sign and F~M≈1 across all three update steps on the exact h=0.25 lattice family.  _(class `C`)_
 - **chain closes:** True — The registered runner reproduces the zero-source reduction and frozen readout table: broad object N_eff=4.859/support=5.000, compact object N_eff=3.593/support=3.667, and both modes keep 4/4 TOWARD with F~M=1.00 at every update step. The note correctly limits the result to a compact source-object control, not inertial-mass closure.
 - **rationale:** The bounded compact-update claim is current with the primary runner: the top-3 update shrinks the source object and preserves the tested weak-field gates on the exact lattice. The detector response remains broad and the note explicitly avoids claiming a sharply localized inertial response or persistent-mass theorem. Residual risk is the stated scope limitation: this is one exact-lattice family and one minimal repeated-update loop.
+- **auditor confidence:** high
+
+### `persistent_object_exact_lattice_park_note_2026-04-16`
+
+- **Note:** [`PERSISTENT_OBJECT_EXACT_LATTICE_PARK_NOTE_2026-04-16.md`](../../docs/PERSISTENT_OBJECT_EXACT_LATTICE_PARK_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the park note's bounded synthesis of the provided retained_bounded upstream exact-lattice persistent-object notes and the compact-update runner output, not an independent recomputation of all upstream sweeps.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260519-153947-c8646410-persistent_object_exact_-001`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The exact-lattice branch now supports a compact repeated-update object, weak-field response, retained blended readout, self-maintaining top4 multistage floor, widened-pocket 11/13 transfer, and beyond-pocket 4/5 transfer, while the inward-source rows remain closed.  _(class `B`)_
+- **chain closes:** True — The conclusion is a conservative cross-note synthesis of the cited retained_bounded authorities: each component positive and the inward-source boundary are explicitly present in the restricted packet. The note does not claim persistent inertial-mass closure and preserves the stated limitations.
+- **rationale:** The park note's load-bearing work is cross-note verification over retained_bounded inputs, plus the included compact-update runner source/output for the initial compact object step. All cited authorities in the restricted packet are retained_bounded and the final claim is scoped to a bounded beyond-pocket object-plus-response regime with a persistent inward-source boundary. No missing upstream note, open bridge, or unsupported promotion to closure-grade inertial mass is needed for the stated conclusion.
 - **auditor confidence:** high
 
 ### `persistent_object_green_scout_note`

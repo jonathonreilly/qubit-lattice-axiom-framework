@@ -1,7 +1,16 @@
 # Dispersion Relation: Geometry-Dependent, Not Decisively Relativistic or Non-Relativistic
 
 **Date:** 2026-04-08 (updated same day with 3D + grown DAG results)
-**Status:** NARROWED — the 2D regular lattice gives clean Schrödinger (R²=0.9995), but the 3D regular lattice gives band structure (R²<0.68 for all forms), and the **actual grown DAG (Fam1) gives Schrödinger ≈ Klein-Gordon (R²=0.994 vs 0.992) — too close to distinguish**. The 2D result was misleading. On the actual physics geometry, we cannot decisively determine whether the propagator is relativistic or non-relativistic.
+**Status:** NARROWED (2026-05-18 audit-conditional repair) — under the
+restricted runner packet currently attached to this note (primary runner
+`scripts/lattice_dispersion_relation.py` + the 2D h=0.5 fresh stdout in
+`logs/2026-04-08-lattice-dispersion.txt`), only the **2D regular-lattice
+h=0.5** dispersion fit closes from sources in-tree. The 3D regular-lattice
+and Fam1 grown-DAG conclusions previously summarized here depend on
+omitted helper runners and logs and are **queued out-of-scope follow-ups**
+pending attachment of their fresh stdout and sources. The narrowed bounded
+claim of this note is the 2D h=0.5 Schrödinger fit result described in the
+Result section below.
 
 ## Artifact chain
 
@@ -27,15 +36,29 @@ All phase fits are perfectly linear in x: R² = 1.0000000 at every (p, h) point 
 
 ### Full geometry comparison
 
+> 2026-05-18 audit-conditional repair: only the **2D lattice h=0.5** row
+> below is in-scope for the bounded claim of this note. The other rows
+> are retained for historical narrative continuity and are explicitly
+> queued as out-of-scope follow-ups (see the audit-conditional repair
+> section at the bottom of this note); they do not close from the
+> currently attached restricted runner packet.
+
 | Geometry | Schrödinger R² | Klein-Gordon R² | Linear R² | Winner |
 | --- | ---: | ---: | ---: | --- |
-| **2D lattice h=0.5** | **0.99947** | 0.96156 | 0.92045 | Schrödinger (decisive) |
-| **2D lattice h=0.25** | **0.99827** | 0.73744 | 0.91395 | Schrödinger (decisive) |
-| **3D lattice h=0.5** | 0.677 | 0.656 | 0.404 | **None** (band structure) |
-| **Grown DAG H=0.5** | **0.994** | 0.992 | 0.877 | Schrödinger (marginal) |
-| **Grown DAG H=0.35** | **0.988** | 0.980 | 0.949 | Schrödinger (marginal) |
+| **2D lattice h=0.5 (IN-SCOPE)** | **0.99947** | 0.96156 | 0.92045 | Schrödinger (decisive) |
+| 2D lattice h=0.25 (QUEUED — `scripts/lattice_dispersion_fine.py` source/log not in restricted packet) | 0.99827 | 0.73744 | 0.91395 | (queued) |
+| 3D lattice h=0.5 (QUEUED — `scripts/dispersion_3d_fine.py` source/log not in restricted packet) | 0.677 | 0.656 | 0.404 | (queued) |
+| Grown DAG H=0.5 (QUEUED — `scripts/dispersion_grown_dag.py` source/log not in restricted packet) | 0.994 | 0.992 | 0.877 | (queued) |
+| Grown DAG H=0.35 (QUEUED — `scripts/dispersion_grown_dag.py` source/log not in restricted packet) | 0.988 | 0.980 | 0.949 | (queued) |
 
-**Critical finding:** On the 2D lattice, Schrödinger wins decisively. But on the **actual physics geometry** (3D grown DAG), Schrödinger and Klein-Gordon are within R² = 0.002 of each other — **too close to distinguish**. The 2D result was misleading.
+**In-scope finding (2D h=0.5 only):** On the 2D regular lattice at h=0.5,
+the Schrödinger functional form is the decisive winner against
+Klein-Gordon and linear alternatives (Schrödinger R²=0.99947 vs KG
+R²=0.96156, linear R²=0.92045). The previously stated "critical finding"
+that Schrödinger ≈ Klein-Gordon on the 3D grown DAG, and the broader
+narrative that "the 2D result was misleading", depend on queued
+out-of-scope rows above and are not in-scope under this note's narrowed
+bounded claim.
 
 ### Fit parameters
 
@@ -78,59 +101,122 @@ with α determined by β and the edge geometry. This IS the discrete Schrödinge
 
 ## Implications
 
-### For the lensing invariant
+> 2026-05-18 audit-conditional repair: the in-scope implications under
+> the narrowed bounded claim of this note are the 2D h=0.5 lattice ones
+> only. The 3D / grown-DAG implications below are retained as historical
+> narrative and queued out-of-scope until their helper-runner sources
+> and fresh stdout are attached. They do not load-bear under the narrowed
+> claim.
 
-The lensing work found kubo_true(b) ∝ b^(−1.43) and all attempts to derive it from relativistic ray optics failed. This is now EXPLAINED: the propagator is Schrödinger, not relativistic. Weak-field gravitational lensing (1/b) is a relativistic prediction. We should not expect it from a non-relativistic propagator.
+### For the continuum limit (2D h=0.5 — in-scope)
 
-~~The correct comparison for the −1.43 slope is non-relativistic scattering from a 1/r potential~~ — **RETRACTED**: the grown DAG does not decisively distinguish Schrödinger from Klein-Gordon, so we cannot assume non-relativistic scattering is the right comparison.
+The 2D h=0.5 regular-lattice Schrödinger dispersion fit (Schrödinger
+R²=0.99947 vs KG R²=0.96156) provides a prediction for what the 2D
+continuum theory of the free propagator with the standard kernel should
+look like at this spacing: quadratic ω(p) curvature with the fit
+parameters in the Fit-parameters subsection.
 
-### For the continuum limit
+### Queued (out-of-scope under restricted runner packet)
 
-The 2D Schrödinger dispersion provides a prediction for what the 2D continuum theory should look like. The 3D / grown-DAG continuum theory is less clear — the dispersion form is not yet determined.
+**For the lensing invariant (QUEUED):**
+The lensing work found kubo_true(b) ∝ b^(−1.43) and all attempts to derive it from relativistic ray optics failed. This was previously argued to be EXPLAINED if the propagator is Schrödinger and not relativistic. ~~The correct comparison for the −1.43 slope is non-relativistic scattering from a 1/r potential~~ — RETRACTED in the original 3D follow-up because the grown DAG does not decisively distinguish Schrödinger from Klein-Gordon. Both the original explanation and the retraction depend on the queued 3D / grown-DAG runners and are out-of-scope here.
 
-### For the project's physics claims
+**For the continuum limit on 3D / grown DAG (QUEUED):**
+The previously stated claim that "the 3D / grown-DAG continuum theory is less clear — the dispersion form is not yet determined" depends on the queued 3D and grown-DAG runners.
 
-~~Any claim about "emergent general relativity" is premature: the propagator is fundamentally non-relativistic~~ — **NARROWED**: this statement was only proven on the 2D lattice. On the actual grown DAG, Klein-Gordon R² = 0.992 is within 0.002 of Schrödinger R² = 0.994. We cannot rule out relativistic physics on the actual geometry. The correct statement is: **the propagator's dispersion type is undetermined on the grown DAG**.
+**For the project's physics claims (QUEUED):**
+~~Any claim about "emergent general relativity" is premature: the propagator is fundamentally non-relativistic~~ — the original NARROWED statement that "the propagator's dispersion type is undetermined on the grown DAG" depends on the queued grown-DAG runner and is out-of-scope under this note's narrowed bounded claim. No claim about the 3D / grown-DAG dispersion type is asserted here.
 
-## What this does NOT establish
+## What this does NOT establish (under narrowed 2D h=0.5 scope)
 
-- ~~The grown-DAG dispersion~~ — NOW TESTED: Schrödinger/KG nearly tied (R²=0.994/0.992)
-- Whether a different angular weight could give decisive Klein-Gordon
-- Whether the −1.43 lensing slope matches non-relativistic OR relativistic scattering theory (both remain possible)
-- The continuum-limit value of m_eff (parameters not yet converged)
-- Whether more p-values or finer H could break the Schrödinger/KG tie on the DAG
+- The 3D regular-lattice dispersion (queued; depends on
+  `scripts/dispersion_3d_lattice.py` and `scripts/dispersion_3d_fine.py`).
+- The Fam1 grown-DAG dispersion (queued; depends on
+  `scripts/dispersion_grown_dag.py`).
+- The h=0.25 2D lattice convergence behavior (queued; depends on
+  `scripts/lattice_dispersion_fine.py`).
+- Whether a different angular weight could give decisive Klein-Gordon.
+- Whether the −1.43 lensing slope matches non-relativistic OR relativistic scattering theory.
+- The continuum-limit value of m_eff (parameters not converged at h=0.5 alone).
+- Any statement that the 2D Schrödinger result transfers or fails to transfer to 3D / grown-DAG geometry under this note's narrowed bounded claim.
 
-## 3D correction: what changed
+## 3D correction: what changed (QUEUED — historical narrative, out-of-scope)
 
-The original analysis (2D only) concluded "decisively non-relativistic." The 3D follow-up (same day) showed this was **misleading**:
+> 2026-05-18 audit-conditional repair: this subsection is retained for
+> historical continuity but is out-of-scope under the narrowed bounded
+> claim of this note. The three numbered points below depend on the
+> 3D regular-lattice and grown-DAG runners whose sources and fresh
+> stdout are not attached in the current restricted packet.
+
+The original analysis (2D only) concluded "decisively non-relativistic." The 3D follow-up (same day) was previously summarized as **misleading**:
 
 1. **3D regular lattice**: neither form fits (band structure, R²<0.68). The extra transverse dimension creates non-trivial band effects absent in 2D.
 2. **3D grown DAG**: the randomness smooths out the band structure (R²≈0.99), but Schrödinger and Klein-Gordon become nearly indistinguishable.
 3. **Implication**: the clean 2D Schrödinger result is a property of 2D geometry + the angular weight, not necessarily of the 3D propagator. The actual physics geometry doesn't pick a winner.
 
-## Frontier map adjustment (Update 20, corrected)
+These three points remain queued pending attachment of the helper-runner sources and fresh stdout.
 
-| Row | Before (2D only) | After 3D correction |
+## Frontier map adjustment (QUEUED — historical narrative, out-of-scope)
+
+> 2026-05-18 audit-conditional repair: this table is retained for
+> historical continuity but is out-of-scope under the narrowed bounded
+> claim of this note. Each "After 3D correction" cell depends on the
+> queued 3D and grown-DAG runners.
+
+| Row | Before (2D only) | After 3D correction (QUEUED) |
 | --- | --- | --- |
-| Propagator type | "Schrödinger (decisive)" | **Undetermined on grown DAG; Schrödinger ≈ KG (R² Δ=0.002)** |
-| Lensing failure explanation | "Expected: propagator is non-relativistic" | **Cannot determine; both relativistic and non-relativistic remain viable** |
-| Next lensing direction | "Non-relativistic 2D Born scattering" | **Need to test both NR and relativistic predictions against the 3D data** |
+| Propagator type | "Schrödinger (decisive)" | Undetermined on grown DAG; Schrödinger ≈ KG (R² Δ=0.002) |
+| Lensing failure explanation | "Expected: propagator is non-relativistic" | Cannot determine; both relativistic and non-relativistic remain viable |
+| Next lensing direction | "Non-relativistic 2D Born scattering" | Need to test both NR and relativistic predictions against the 3D data |
 
-## Bottom line
+## Bottom line (narrowed to 2D h=0.5 in-scope scope)
 
-> "The free propagator's dispersion relation is geometry-dependent. On the
-> 2D regular lattice: cleanly Schrödinger (R²=0.9995 vs KG R²=0.962). On
-> the 3D regular lattice: neither form fits (band structure). On the actual
-> Fam1 grown DAG: Schrödinger R²=0.994 vs Klein-Gordon R²=0.992 — too
-> close to distinguish. The original claim that 'the propagator is
-> fundamentally non-relativistic' was proven only on the 2D lattice and
-> does NOT transfer to the 3D grown DAG where the physics lives. On the
-> actual geometry, we cannot rule out either relativistic or non-relativistic
-> dispersion. The lensing slope −1.43 cannot be attributed to either
-> regime with current data."
+> "On the 2D regular lattice at h=0.5, the free-propagator dispersion
+> relation fits the Schrödinger functional form decisively (R²=0.99947)
+> against Klein-Gordon (R²=0.96156) and linear (R²=0.92045) alternatives,
+> with the fit parameters and raw-data points listed above. No claim
+> about 3D regular-lattice, 2D h=0.25, or Fam1 grown-DAG dispersion is
+> asserted under this note's narrowed bounded claim; those geometries
+> are queued out-of-scope follow-ups pending attachment of their helper
+> runners' sources and fresh stdout."
 
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - `3d_correction_master_note` (see-also; the 3D follow-up note that documents the corrections summarized above; converted from markdown link to backticked form 2026-05-10 to break citation cycle-0003 — this back-reference is informational only, with the load-bearing direction running `3D_CORRECTION_MASTER_NOTE.md` → `DISPERSION_RELATION_NOTE.md` as the forward update record)
+
+## 2026-05-18 audit-conditional repair: narrowed to primary 2D h=0.5 runner scope
+
+Per the 2026-05-17 audit verdict, only the 2D h=0.5 regular-lattice fit numbers
+close from the primary runner + fresh stdout in the restricted packet. The 3D
+regular-lattice and Fam1 grown-DAG conclusions depend on omitted helper runners
+and logs. This revision narrows the bounded claim to the 2D h=0.5 result only,
+and queues the 3D / Fam1 grown-DAG conclusions as out-of-scope follow-ups
+awaiting attached fresh stdout + sources for `lattice_dispersion_fine.py`,
+`dispersion_3d_lattice.py`, `dispersion_3d_fine.py`, and `dispersion_grown_dag.py`.
+
+Concretely, the narrowing applied above:
+
+- Marked the **2D lattice h=0.5** row as IN-SCOPE in the geometry-comparison
+  table and tagged the 2D h=0.25, 3D-lattice, and grown-DAG rows as QUEUED
+  with named missing-runner pointers.
+- Rewrote the "Critical finding" prose so the in-scope assertion is the
+  decisive 2D h=0.5 Schrödinger fit; the "2D result was misleading"
+  narrative is explicitly moved out-of-scope.
+- Rewrote "Implications" to keep only the 2D h=0.5 continuum-limit
+  implication in-scope; moved lensing, 3D continuum, and project physics-claim
+  implications into a "Queued (out-of-scope under restricted runner packet)"
+  subsection that names the missing helper runners.
+- Rewrote "What this does NOT establish" to enumerate the queued items
+  by missing helper runner.
+- Tagged the "3D correction: what changed" and "Frontier map adjustment"
+  sections as QUEUED / historical narrative, out-of-scope.
+- Rewrote "Bottom line" to assert only the 2D h=0.5 result and explicitly
+  decline any 3D / grown-DAG dispersion claim under the narrowed scope.
+
+This is a scope narrowing only. No data is fabricated, no number is changed,
+and no claim that the audit closed is asserted; the previously stated 3D and
+grown-DAG content is preserved verbatim in QUEUED subsections so that a future
+repair PR attaching the helper-runner sources and fresh stdout can promote
+those rows back to in-scope without re-stating their numbers.

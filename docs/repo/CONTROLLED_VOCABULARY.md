@@ -1,3 +1,4 @@
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=9592d9a7bb2d346dcdfe4ae3a0c27cd4509075a7134b33161840ece05d245c4a -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -218,12 +219,12 @@ Use these on notes, claims tables, quantitative tables, and runner summaries.
 | `bounded secondary lane` | live bounded lane worth carrying, but clearly secondary to the main package |
 | `bounded frontier` / `bounded negative boundary` / `bounded Route 2 build candidate` | bounded frontier/result classes kept for ongoing design work rather than current-package promotion |
 | `main closure package` | package-level main-paper closure claim on the current review/package surface; stronger than support, but not automatically the retained quantitative paper core |
-| `conditional / support` | useful positive package whose load-bearing step is still conditional, imposed, or support-only |
+| `conditional` / `support` | useful positive package whose load-bearing step is still conditional, imposed, or support-only |
 | `open main gate` | still-open main closure target |
-| `historical / diagnostic` | preserved for audit/history/instrumentation, not live evidence |
-| `historical support / provenance` / `exact transport provenance` | provenance-only rows kept for route history, reviewer handoff, or closure bookkeeping rather than live promotion |
+| `historical` / `diagnostic` | preserved for audit/history/instrumentation, not live evidence |
+| `historical support` / `provenance` / `exact transport provenance` | provenance-only rows kept for route history, reviewer handoff, or closure bookkeeping rather than live promotion |
 | `negative-result` | useful negative or no-go result |
-| `negative-result / support` | negative/no-go result that is also a reusable support/pruning surface |
+| `negative-result` / `support` | negative/no-go result that is also a reusable support/pruning surface |
 | `inconclusive` | signal exists but interpretation is not frozen |
 
 Allowed composite forms should be built from the labels above and kept narrow:
@@ -264,8 +265,7 @@ Allowed composite forms should be built from the labels above and kept narrow:
 - `promoted quantitative package`
 - `open main gate`
 
-Avoid minting new slash-composites when a nearby qualifier/import column can
-carry the caveat instead.
+Avoid minting new slash-composites when a nearby qualifier/import column can carry the caveat instead.
 
 Role-specialized variants are acceptable when the cell begins with one of the
 accepted base labels above and the trailing noun names the mathematical role
@@ -452,10 +452,8 @@ The repo is migrating from author-declared `retained` / `promoted`
 language to the audit-lane propose / ratify vocabulary. Source-note
 `Status` lines now use:
 
-- `proposed_retained` — author proposes retained-grade; awaits audit
-  ratification
-- `proposed_promoted` — author proposes promoted-grade; awaits audit
-  ratification
+- `proposed_retained` — author proposes retained-grade; awaits audit ratification
+- `proposed_promoted` — author proposes promoted-grade; awaits audit ratification
 
 The canonical audit-ratified surface is
 [docs/audit/AUDIT_LEDGER.md](../audit/AUDIT_LEDGER.md). Legacy
@@ -469,8 +467,7 @@ note.
 
 ## Historical Lane-Board Labels
 
-Use these only on historical repo-map surfaces such as
-`LANE_STATUS_BOARD.md` and the lane registry.
+Use these only on Historical repo-map surfaces such as `LANE_STATUS_BOARD.md` and the lane registry.
 
 | Label | Use |
 |---|---|
@@ -485,8 +482,7 @@ Use these only on historical repo-map surfaces such as
 
 ## Historical Discovery-Log Labels
 
-Use these only on historical discovery / paper-seed ledgers such as
-`POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`.
+Use these only on Historical discovery / paper-seed ledgers such as `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`.
 
 | Label | Use |
 |---|---|
@@ -500,37 +496,24 @@ Use these only on historical discovery / paper-seed ledgers such as
 
 - `PUBLICATION_MATRIX.md`
   - use publication-capture dispositions for capture decisions
-  - `Current publication decision` cells should begin with one of
-    `retained`, `promoted`, `bounded`, `open`, `frozen-out`; a short
-    placement note may follow after a semicolon
-- `CLAIMS_TABLE.md`, `QUANTITATIVE_SUMMARY_TABLE.md`,
-  `DERIVATION_ATLAS.md`
+  - `Current publication decision` cells should begin with one of `retained`, `promoted`, `bounded`, `open`, `frozen-out`; a short placement note may follow after a semicolon
+- `CLAIMS_TABLE.md, QUANTITATIVE_SUMMARY_TABLE.md, DERIVATION_ATLAS.md`
   - use claim-strength / release labels
-  - accepted role-specialized variants may be used when they begin with the
-    primary claim-strength label
+  - accepted role-specialized variants may be used when they begin with the primary claim-strength label
 - `FULL_CLAIM_LEDGER.md`
-  - may begin with either a publication-capture disposition or a
-    claim-strength label because it narrates package decisions row-by-row
-  - avoid ad hoc hybrids; if a row begins with one family, keep any
-    second-family qualifier short and explanatory
-  - on mixed audit rows, the cell should begin with the primary label from
-    the family being used; a short explanatory qualifier may follow after a
-    semicolon
-  - accepted ledger-style hybrids include forms such as
-    `promoted exact companion`, `promoted restricted theorem`,
-    `promoted retained closure`, `promoted retained support batch`, and
-    `promoted retained action-surface closure`
-- `docs/audit/AUDIT_LEDGER.md`, `docs/audit/data/audit_ledger.json`
+  - may begin with either a publication-capture disposition or a claim-strength label because it narrates package decisions row-by-row
+  - avoid ad hoc hybrids; if a row begins with one family, keep any second-family qualifier short and explanatory
+  - on mixed audit rows, the cell should begin with the primary label from the family being used; a short explanatory qualifier may follow after a semicolon
+  - accepted ledger-style hybrids include forms such as `promoted exact companion`, `promoted restricted theorem`, `promoted retained closure`, `promoted retained support batch`, and `promoted retained action-surface closure`
+- `docs/audit/AUDIT_LEDGER.md, docs/audit/data/audit_ledger.json`
   - use audit-lane field vocabulary only
-  - rows are written by the audit pipeline / `apply_audit.py`; do not
-    hand-edit
+  - rows are written by the audit pipeline / `apply_audit.py`; do not hand-edit
 - `LANE_STATUS_BOARD.md`
   - use historical lane-board labels
 - `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`
   - use historical discovery-log labels
 
-Do not use row prose like `Retained ...` when the row status is
-`bounded-retained`.
+Do not use row prose like `Retained ...` when the row status is `bounded-retained`.
 
 ## Protocol Qualifiers
 
@@ -541,8 +524,7 @@ These are qualifiers, not standalone status labels:
 - `strict/native map`
 - `exact-target strict/native map`
 
-They can appear in prose or qualifier/import columns, but they should not
-replace the primary status label.
+They can appear in prose or qualifier/import columns, but they should not replace the primary status label.
 
 ## Evidence Terms
 
@@ -561,8 +543,8 @@ Avoid vague upgrades like:
 
 ## Hyphenation
 
-- prefer `observational-pin` as a compound adjective
-- use `observational pin` only as a noun phrase
+- prefer `observational-pin as a compound adjective`
+- prefer `observational pin only as a noun phrase`
 
 ## Axiom Naming (out of scope for this doc)
 
@@ -584,10 +566,8 @@ fixed path and content vocabulary.
 
 ### Archive path
 
-`archive_unlanded/<cluster-tag>/` — the canonical recovery surface for
-failed-narrative source notes. The cluster-tag is a short stable noun
-phrase for the wrapper cluster (e.g. `koide-q-v6-cluster`,
-`route-2-exhaustion-failed-cluster`).
+`archive_unlanded/<cluster-tag>/` — the canonical recovery surface for failed-narrative source notes. The cluster-tag is a short stable noun
+phrase for the wrapper cluster (e.g. `koide-q-v6-cluster`, `route-2-exhaustion-failed-cluster`).
 
 ### Salvage-note required content
 
@@ -602,11 +582,8 @@ The salvage note must not restate the failed global conclusion.
 
 ### Banned archival wording
 
-- describing the archived wrapper as "deprecated" or "obsolete" — those
-  imply a deliberate retirement decision; `audit_status: audited_failed`
-  is the canonical record, no additional adjective needed
-- "still useful" — unless the sentence also states exactly for what it
-  is still useful
+- describing the archived wrapper as "deprecated" or "obsolete" — imply a deliberate retirement decision; `audit_status: audited_failed` is the canonical record, no additional adjective needed
+- describing the archived wrapper as "still useful" — unless the sentence also states exactly for what it is still useful
 
 The associated workflow rules live in
 `docs/audit/STALE_NARRATIVE_POLICY.md`. Vocabulary lives here.
@@ -692,14 +669,11 @@ what did not close.
 
 - Start from the physical question, not from the institutional framing.
 - Prefer short sentences when the idea is hard.
-- Explain why a result is surprising or useful in ordinary language before
-  listing the machinery.
+- Explain why a result is surprising or useful in ordinary language before listing the machinery.
 - Put equations after the idea they express.
-- Say "we find", "we check", "we keep", and "we do not claim" when those are
-  the honest verbs.
+- Say "we find", "we check", "we keep", and "we do not claim" when those are the honest verbs.
 - Treat negative results as information.
-- Keep the reader close to the object: lattice, operator, runner, eigenvalue,
-  projector, source, bridge.
+- Keep the reader close to the object: lattice, operator, runner, eigenvalue, projector, source, bridge.
 
 ### Avoid this voice
 

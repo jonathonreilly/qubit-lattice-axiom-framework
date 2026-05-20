@@ -163,6 +163,15 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
+      - name: Check vocabulary doc render (PR only, hard gate)
+        if: github.event_name == 'pull_request'
+        run: |
+          # Render --check fails if docs/repo/CONTROLLED_VOCABULARY.md or
+          # docs/KEY_TERMINOLOGY.md drift from the canonical YAML +
+          # templates. Change either the YAML or the templates, then run
+          # `python3 scripts/render_controlled_vocabulary.py` to regenerate.
+          python3 scripts/render_controlled_vocabulary.py --check
+
       - name: Regenerate conditional-prompt snapshot (cron/manual only)
         if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
         # MISSING_DERIVATION_PROMPTS.md is the static snapshot the

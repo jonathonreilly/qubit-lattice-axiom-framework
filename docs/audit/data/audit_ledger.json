@@ -102153,8 +102153,8 @@
       "load_bearing_score": 1.5,
       "load_bearing_step": "The binding evidence of this note is exactly the finite four-configuration runner table from scripts/geometry_lane_head_to_head.py on the declared 16 matched-seed grid.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audited_conditional",
-      "max_descendant_status_rank": 10,
+      "max_descendant_status": "audit_in_progress",
+      "max_descendant_status_rank": 30,
       "note_hash": "a9a8fe9a4d2afdc68b9efdf1ae3a4f222b3f66b9ebd8c48448b1a2f6c4abf61e",
       "note_path": "docs/GEOMETRY_LANE_HEAD_TO_HEAD_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that the narrowed scope remains enforced downstream and is not cited as proving top-lane selection, same-readout implementation beyond the included code path, or asymptotic dominance.",
@@ -271702,8 +271702,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2285,
-    "re_audit_required": 4,
+    "preserved_existing": 2289,
+    "re_audit_required": 0,
     "row_count": 2333,
     "seeded_new": 0
   }

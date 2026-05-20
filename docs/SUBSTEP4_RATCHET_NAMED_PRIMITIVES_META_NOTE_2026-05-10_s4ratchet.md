@@ -134,7 +134,7 @@ the species-flavor identification AC_φλ.
   φ_dimensionless = 2/9);
 - one partial-falsification candidate (Probe 29 κ=1 vs empirical κ=2);
 - terminal admission count of **2** (BAE + P-radian-bridge) per
-  [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md).
+  [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md).
 
 **Status as named primitive:** structurally barred from positive
 closure within retained `C_3` rep theory. The 30-probe campaign
@@ -351,7 +351,7 @@ This note explicitly does **not**:
 
 - Substep-4 AC narrowing (the source surface): [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
 - 2026-05-09 rigorization runner: [`scripts/cl3_staggered_dirac_substep4_ac_phi_lambda_rigorize_2026_05_09.py`](../scripts/cl3_staggered_dirac_substep4_ac_phi_lambda_rigorize_2026_05_09.py)
-- BAE 30-probe campaign terminal synthesis (the inventory): [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- BAE 30-probe campaign terminal synthesis (the inventory): [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - BAE rename meta (the naming): [`BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md`](BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md)
 - Physical-lattice baseline (the pattern, application 1): [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 - C_3 preserved interpretation (the pattern, application 2): [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md)

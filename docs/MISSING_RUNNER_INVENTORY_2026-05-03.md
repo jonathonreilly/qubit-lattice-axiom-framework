@@ -50,8 +50,8 @@ priority. Listed here for the runner-rewrite batch to consume.
 | `frontier_koide_matrix_unit_source_law_cyclic_projection.py` | `docs/KOIDE_ONE_SCALAR_OBSTRUCTION_TRIANGULATION_THEOREM_NOTE_2026-04-18.md` |
 | `frontier_koide_mru_weight_class_obstruction.py` | `docs/SCALAR_SELECTOR_FULL_STACK_RECOVERY_NOTE_2026-04-19.md` |
 | `frontier_koide_observable_principle_cyclic_source_law.py` | `docs/KOIDE_ONE_SCALAR_OBSTRUCTION_TRIANGULATION_THEOREM_NOTE_2026-04-18.md` |
-| `frontier_koide_q_lie_clifford_radius_map_no_go.py` | `docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md` |
-| `frontier_koide_q_traceless_source_lagrange_multiplier_no_go.py` | `docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md` |
+| `frontier_koide_q_lie_clifford_radius_map_no_go.py` | `docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md` |
+| `frontier_koide_q_traceless_source_lagrange_multiplier_no_go.py` | `docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md` |
 | `frontier_koide_scalar_selector_direct_attack_scout.py` | `docs/KOIDE_ONE_SCALAR_OBSTRUCTION_TRIANGULATION_THEOREM_NOTE_2026-04-18.md` |
 | `frontier_lorentzian_k8_card.py` | `docs/SESSION_SYNTHESIS_2026-04-09.md` |
 | `frontier_memory_sign_robustness.py` | `docs/MEMORY_MU2_GEOMETRY_SWEEP_NOTE_2026-04-11.md` |

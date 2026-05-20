@@ -6,7 +6,7 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTE_PATH = ROOT / "docs" / "AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md"
+NOTE_PATH = ROOT / "docs" / "AUDIT_BACKLOG_NOTE_2026-05-02.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0

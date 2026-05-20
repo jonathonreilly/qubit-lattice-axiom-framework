@@ -8,7 +8,7 @@ closure or downstream status change.
 **Scope:** Probe X-L1-Threshold of the Lane 1 (alpha_s) bridge
 campaign. Tests whether the cited Wilson chain
 `m = M_Pl * (7/8)^(1/4) * u_0 * alpha_LM^n` from
-[`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+[`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
 extends from the charged-lepton scale (m_tau) to the heavy-quark
 scales (m_c, m_b, m_t), thereby converting "threshold matching"
 from a literature import to a repo-derived chain.
@@ -34,7 +34,7 @@ the `Z^3` spatial substrate.
 
 **Question:** does Probe 19's Wilson-chain pattern extend?
 
-[`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+[`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
 established (as a candidate positive theorem on the m_tau scale):
 
 ```
@@ -72,7 +72,7 @@ This probe runs the test and reports the result.
 ## Setup — cited Wilson chain (no derivation, no admission)
 
 All values from [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
-and [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md):
+and [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md):
 
 | Symbol | Value | Origin |
 |---|---|---|
@@ -323,7 +323,7 @@ This note explicitly does **NOT**:
 ### Cited Wilson chain (Probe 19 source)
 
 - Probe 19 m_tau Wilson chain:
-  [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+  [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
 - Complete prediction chain (v_EW, m_t, alpha_s):
   [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
 - alpha_LM geometric-mean identity:

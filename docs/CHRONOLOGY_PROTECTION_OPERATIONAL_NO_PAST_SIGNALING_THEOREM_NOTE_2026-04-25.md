@@ -305,7 +305,7 @@ trace-preservation argument is unaffected.
 
 **Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** the
 upstream parent's recent `F-B` framing-fix
-([`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md))
+([`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md))
 identifies admission (iv) — single-clock codimension-1 evolution
 excludes `d_t > 1` — as the routing target for the parent's inherited
 component. Because the chronology proof here imports the **same**

@@ -137,7 +137,7 @@ already gives the bounded composite spatial background candidate
 [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
 gives the cited temporal-direction result (`bounded_theorem`,
 currently `unaudited`; conditional on admissions (i)-(iv) — see
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)):
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)):
 
 - anomaly cancellation plus chirality plus the one-clock Cauchy requirement force `d_t = 1`
 
@@ -237,7 +237,7 @@ The companion runner checks:
   composite via the cap-uniqueness companion);
 - anomaly-forced time at the cited tier (`bounded_theorem`, currently
   `unaudited` per the 2026-05-17 ledger; admissions (i)-(iv) per the
-  upstream [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md));
+  upstream [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md));
 - the Schur boundary generator is symmetric positive definite
   (`OH_SCHUR_BOUNDARY_ACTION_NOTE` at `retained_bounded` on the
   strong-field bridge surface only);
@@ -294,7 +294,7 @@ corrected inline.
 **Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** the bridge
 imports the `d_t = 1` conclusion as the one-clock Cauchy step. Per the
 upstream parent's recent
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
 `d_t = 1` decomposes into a derived part (Step 3 of the parent:
 `d_t ∈ {1, 3, 5, ...}`) and an inherited part (admission (iv) excludes
 `d_t > 1`). Any future revision to admission (iv) propagates directly

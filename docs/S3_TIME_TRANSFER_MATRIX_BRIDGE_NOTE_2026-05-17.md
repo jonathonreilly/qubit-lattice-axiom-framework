@@ -53,7 +53,7 @@ inline.
 
 The bridge imports `d_t = 1` as the one-clock Cauchy step. Per the
 upstream parent's recent
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
 the parent's `d_t = 1` conclusion decomposes into derived part
 (Step 3: `d_t ∈ {1, 3, 5, ...}`) and inherited part (admission (iv):
 `d_t > 1` excluded).
@@ -144,7 +144,7 @@ Cached output: `logs/runner-cache/frontier_s3_time_transfer_matrix_bridge_downst
 
 - [`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md) — parent under repair
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — upstream parent
-- [`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md) — upstream F-B fix
+- [`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md) — upstream F-B fix
 - [PR #1507](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1507) — sibling fix (same s3_boundary_link tier correction)
 - [PR #1509](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1509) — sibling downstream fix
 - [PR #1510](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1510) — sibling downstream fix (same `s3_time_*` lineage)

@@ -226,7 +226,7 @@ is the canonical extremal principle, equivalently which weight pair
 gate — is **not** closed here.
 
 The 30-probe Brannen Amplitude Equipartition (BAE) campaign per
-`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
+`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
 records that the tested retained-dynamics packet (free-Gaussian dynamics,
 full retained interactions, sector identification across `hw=1, 2, 3`)
 gives F3 (real-dim) weighting `(mu, nu) = (1, 2)` with extremum
@@ -238,7 +238,7 @@ functional ends up retained as canonical.
 
 ## Context References
 
-- `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
+- `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
   — campaign-context citation only (Open derivation gap context). Not
   load-bearing on the algebraic identities `(T1)`-`(T4)`.
 
@@ -308,6 +308,6 @@ verifies symbolically (PASS=N/0):
   — sister Pattern A narrow theorem on the character / operator bridge
   identities `a_0 = sqrt(3) a`, `z = sqrt(3) b`,
   `a_0^2 - 2 |z|^2 = 3 a^2 - 6 |b|^2`.
-- `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
+- `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
   — campaign context for the Open derivation gap on F1-vs-F3 weighting
   selection.

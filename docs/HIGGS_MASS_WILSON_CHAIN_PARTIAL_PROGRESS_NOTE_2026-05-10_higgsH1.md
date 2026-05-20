@@ -371,7 +371,7 @@ This note records, as repo-language clarification:
 - Hierarchy theorem source (in COMPLETE_PREDICTION_CHAIN):
   `v_EW = M_Pl × (7/8)^{1/4} × α_LM^{16}`
 - Wilson chain extension to charged-lepton scale (Probe 19):
-  [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+  [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
 
 ### Cited Higgs sector
 

@@ -14,7 +14,7 @@ so future automated audit-backlog or retained-promotion campaigns do not
 spend cycles attempting to close this leaf.
 **Companion to:**
 - [`docs/audit/README.md`](audit/README.md) (audit-lane policy: definition-as-derivation, terminal verdicts)
-- [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md) (sibling terminal-block synthesis template)
+- [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md) (sibling terminal-block synthesis template)
 **Primary runner:** [`scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py`](../scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py)
 **Cached output:** [`logs/runner-cache/frontier_quark_projector_parameter_audit_terminal_synthesis.txt`](../logs/runner-cache/frontier_quark_projector_parameter_audit_terminal_synthesis.txt)
 
@@ -167,7 +167,7 @@ target surface").
 
 A repair landing as a narrow bounded source note in the style of recent
 audit-backlog cycles (campaign-style 1-identity-at-a-time bounded notes
-per [`docs/AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md))
+per [`docs/AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md))
 is structurally insufficient: the carriers are not parameterized
 by a single small-integer ratio, and the empirical target surface is
 not a single observable. The retained derivation must be a positive
@@ -261,12 +261,12 @@ campaigns and retained-promotion campaigns:
 ## Cross-references
 
 - Audit-lane policy: [`docs/audit/README.md`](audit/README.md) (terminal verdicts at lines 87-88; hard rules 1-2; definition-as-derivation failure mode in "What this lane does")
-- Sibling terminal-block synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- Sibling terminal-block synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - Leaf source note: [`docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md`](QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md)
 - Projector-ray dep source note: [`docs/QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`](QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md)
 - Carrier-completion dep source note: [`docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
 - Audit ledger row data: [`docs/audit/data/audit_ledger.json`](audit/data/audit_ledger.json)
-- Sibling synthesis-template authority: [`docs/AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md)
+- Sibling synthesis-template authority: [`docs/AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md)
 
 ## Validation
 

@@ -429,11 +429,11 @@ cascade.
 ## 13. Cross-references
 
 - Canonical synthesis template:
-  [`AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md)
+  [`AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md)
   (campaign-level synthesis with `proposal_allowed: false` and
   "not a new derivation" framing).
 - Recent campaign synthesis (different campaign):
-  [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+  [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
   (terminal synthesis for the 30-probe BAE campaign, upstream of the
   Cycle 1-4 BAE / Koide foreclosure cited in §8).
 - Adjacent recent synthesis (different gate):

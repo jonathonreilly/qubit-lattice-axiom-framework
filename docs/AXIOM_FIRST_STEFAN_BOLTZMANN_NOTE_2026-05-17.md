@@ -89,7 +89,7 @@ RCONN_DERIVED_NOTE is `audited_conditional`. None is at
 
 This note uses only `d_s = 3` from the upstream parent's spacetime
 conclusion. Per the parent's recent
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
 the `d_t = 1` decomposition (Step 3 derived + admission (iv)
 inherited) does **not propagate** into the Stefan-Boltzmann proof
 because `d_s = 3` comes from axiom A2 (`Z^3` substrate) directly per
@@ -154,7 +154,7 @@ Cached output: `logs/runner-cache/frontier_axiom_first_stefan_boltzmann_downstre
 
 - [`AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md) — parent under repair
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — upstream parent (d_s = 3 used; admission-independent)
-- [`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md) — upstream F-B fix (tier-inheritance route only)
+- [`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md) — upstream F-B fix (tier-inheritance route only)
 - [PR #1507](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1507) — sibling downstream fix
 - [PR #1509](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1509) — sibling downstream fix
 - [PR #1510](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1510) — sibling downstream fix

@@ -327,7 +327,7 @@ audit_required_before_effective_status_change: true
 ### Cluster obstruction (cycles 5, 9, 11, 12 — same-shape obstruction)
 
 - [`LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md`](LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md) — cluster-level synthesis.
-- [`AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md) §2.3 — cluster identification.
+- [`AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md) §2.3 — cluster identification.
 
 ### Framework baseline / structural
 

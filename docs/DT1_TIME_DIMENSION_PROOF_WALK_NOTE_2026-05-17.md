@@ -50,7 +50,7 @@ notation but are algebraically orthogonal.
 whose Step 4 derives `{ε, D_staggered} = 0` from site-chirality +
 no-rooting irreducibility. This is the same routing fix applied
 upstream in
-[`ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md).
+[`ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md).
 
 **Fix:** Step 2 of the proof-walk table now routes to the Kawamoto-Smit
 forcing note; the Dependencies list replaces the `CPT_EXACT_NOTE` entry
@@ -98,7 +98,7 @@ upstream parent's `d_t = 1` decomposition:
 
 But the note did not link this split to the upstream parent's recent
 **F-B framing-fix**
-([`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+([`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
 PR [#1502](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1502)),
 which identifies the same decomposition at the parent level as:
 
@@ -175,8 +175,8 @@ Cached output: `logs/runner-cache/frontier_dt1_time_dimension_proof_walk_downstr
 
 - [`DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md`](DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md) — parent under repair
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — upstream parent
-- [`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md) — upstream `F-B` fix
-- [`ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md) — upstream `F-C` fix (same routing pattern)
+- [`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md) — upstream `F-B` fix
+- [`ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md) — upstream `F-C` fix (same routing pattern)
 - [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) — corrected routing target
 - [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md) — formerly mis-routed authority
 - [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) — Step 4 cited companion (tier descriptor corrected)

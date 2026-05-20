@@ -40,7 +40,7 @@ AC_narrow = AC_φ ∧ AC_λ ∧ AC_φλ
 ```
 
 The recent AC_λ partial closure note
-[`SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md`](SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md)
+[`SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md`](SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md)
 further sub-decomposed AC_λ as
 
 ```
@@ -141,7 +141,7 @@ does not ratchet substep-4 to positive.
 | KS | Kawamoto-Smit phase form on Z³ APBC | upstream `bounded_theorem`: [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) |
 | BlockT3 | hw=1 BZ-corner triplet has M_3(C) algebra; distinct joint translation characters | upstream: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md), [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) |
 | NQ | M_3(C) on hw=1 has no proper exact quotient | upstream: [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md) |
-| ACλpartial | AC_λ partial closure (Kawamoto-Smit-inherited + audit-pending meta) | upstream-bounded: [`SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md`](SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md) |
+| ACλpartial | AC_λ partial closure (Kawamoto-Smit-inherited + audit-pending meta) | upstream-bounded: [`SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md`](SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md) |
 | C3pres | C_3[111] is the preserved load-bearing symmetry | audit-pending meta: [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md) |
 | BAErename | AC_φλ = BAE = amplitude-equipartition `|b|²/a² = 1/2` | audit-pending meta: [`BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md`](BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md) |
 | ImportedToolScope | Imported mathematical tools act as bounded structural lenses on retained content | review-loop bounded-import scope |
@@ -596,7 +596,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 ## Cross-references
 
 - Parent atomic decomposition: [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
-- AC_λ partial closure (prior round): [`SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md`](SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md)
+- AC_λ partial closure (prior round): [`SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md`](SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md)
 - Kawamoto-Smit upstream: [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
 - BZ corner forcing upstream: [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
 - C_3-preserved interpretation: [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md)
@@ -606,7 +606,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - Context-only Koide Frobenius-equipartition 11-probe campaign synthesis:
   `KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md`
 - Context-only BAE 30-probe terminal synthesis:
-  `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
+  `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
 - MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
 
 ## Command

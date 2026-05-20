@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 375 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1310 |
+| unaudited | 1313 |
 | audit_in_progress | 9 |
-| meta | 219 |
+| meta | 218 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,21 +51,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 9 |
 | `audited_clean` | 601 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 78 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1529 |
+| `unaudited` | 1531 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1001 |
 | `decoration` | 27 |
-| `meta` | 222 |
+| `meta` | 221 |
 | `no_go` | 230 |
-| `open_gate` | 111 |
-| `positive_theorem` | 742 |
+| `open_gate` | 110 |
+| `positive_theorem` | 744 |
 
 | criticality | count |
 |---|---:|
@@ -738,7 +738,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `central_band_layernorm_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -775,7 +774,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `koide_dimensionless_objection_closure_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1890,21 +1888,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using Plancherel and v_1+v_2+v_3=sqrt(3)a_0, Q(v)=(a_0^2+2|z|^2)/(3a_0^2), hence Q(v)=2/3 iff a_0^2=2|z|^2.  _(class `A`)_
 - **chain closes:** True — The packet supplies the definitions of a_0, z, and Q(v), and the equivalence follows by unitary Fourier Parseval plus one substitution. No physical charged-lepton bridge, observed mass input, or retained-framework dependency is within the scoped claim.
 - **rationale:** The narrow theorem closes as a pure algebraic identity on the stated positive-vector domain. The runner checks the load-bearing Parseval identity, denominator relation, closed form for Q, both implications of P1, and the geometric corollary symbolically, with no external comparator or hidden physical import needed for the scoped statement.
-- **auditor confidence:** high
-
-### `charged_lepton_koide_note_2026-04-18`
-
-- **Note:** [`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`](../../docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Audited whether the provided review packet closes a retained charged-lepton Koide/Brannen derivation from the restricted packet alone.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260515-145520-773586f3-charged_lepton_koide_rev-001`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note itself states that retained promotion for charged-lepton ratios is still conditional on the open Q = 2/3 extremal-principle bridge and the open delta = 2/9 physical Brannen-phase bridge.  _(class `B`)_
-- **chain closes:** False — The chain does not close because the source note explicitly leaves two physical identification bridges open: the Frobenius extremal-principle bridge for Q = 2/3 and the selected-line Brannen-phase/APS bridge for delta = 2/9.
-- **rationale:** No runner or cited authority is provided, so the audit rests on the source text alone. The source note repeatedly says the April 21-24 support stack is stronger but still does not give retained closure for either Q = 2/3 or delta = 2/9. Its own final classification says charged-lepton promotion remains conditional on the two bridges, so retained status cannot be assigned from this restricted packet.
-- **open / conditional deps cited:**
-  - `CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`
 - **auditor confidence:** high
 
 ### `charged_lepton_koide_ratio_source_selector_firewall_note_2026-04-27`
@@ -5685,19 +5668,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Every retained Wilson/APS-derived boundary mark restricts to a scalar lambda I on the rank-two M_zeta multiplicity space, so it commutes with all rank-one selectors and cannot select a unique line.  _(class `A`)_
 - **chain closes:** True — The cited retained bridge supplies the scalar-on-M_zeta theorem, and the parent runner checks the downstream algebraic consequences plus endpoint countermodels. No non-retained selector or boundary-section theorem deriving c=0 is present in the restricted packet.
 - **rationale:** The load-bearing scalar-mark step is an algebraic closure over the retained bridge theorem, not a definition substitution or numerical match. The runner source does more than print constants: it symbolically checks the residual structure and re-verifies representative scalar restrictions by importing the sibling Wilson construction. Within the stated no-go scope, the conclusion follows from retained inputs and explicit countermodels showing marked relative cobordism does not force selected-line closure or c=0.
-- **auditor confidence:** high
-
-### `koide_dimensionless_objection_closure_note_2026-04-24`
-
-- **Note:** [`KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Conditional algebraic obstruction tests on the admitted source-response-carrier plus endpoint-domain surface; not a retained no-go derived from the axiom alone.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-koide_dimensionless_obje-018`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Inside the admitted source-response carrier, zero traceless background gives Q=2/3 while surviving Z backgrounds and ambient endpoint/spectator data produce countermodels, so retained dimensionless closure remains conditional.  _(class `A`)_
-- **chain closes:** False — The algebraic checks close inside the admitted model surface, but the restricted packet does not derive the admitted source-response carrier with surviving Z or the selected-line endpoint/readout/basepoint domain from retained axioms. Those bridge theorems are explicitly named as open work.
-- **rationale:** The runner performs finite algebraic checks using Fraction arithmetic and simple two-channel/endpoint countermodels; it does not instantiate a first-principles Cl(3) on Z^3 derivation from the axiom. The source note correctly narrows the claim to conditional obstruction support and explicitly says the needed bridges from retained axioms are not supplied. Therefore the conditional obstruction statements are supported, but retained closure or retained no-go status does not propagate through the open carrier and endpoint-domain assumptions.
 - **auditor confidence:** high
 
 ### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`

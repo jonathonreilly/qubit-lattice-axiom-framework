@@ -17,9 +17,9 @@ upstream verdicts are independently re-derived.
 **Companion to:**
 - [`DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md)
   (the leaf this note synthesises around)
-- [`AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md)
+- [`AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md)
   (campaign-level synthesis template)
-- [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
   (parallel terminal-synthesis template)
 **Primary runner:** [`scripts/frontier_dm_leptogenesis_transport_status_terminal_synthesis.py`](../scripts/frontier_dm_leptogenesis_transport_status_terminal_synthesis.py)
 **Cached output:** [`logs/runner-cache/frontier_dm_leptogenesis_transport_status_terminal_synthesis.txt`](../logs/runner-cache/frontier_dm_leptogenesis_transport_status_terminal_synthesis.txt)
@@ -216,9 +216,9 @@ Legitimate future paths:
   [`DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md),
   [`DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md)
 - Synthesis template / parallel campaign:
-  [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+  [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - Campaign-level synthesis template:
-  [`AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md)
+  [`AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md)
 - Audit-lane policy fix preceding this note: PR #907
   (criticality-bump policy fix), PR #925 (one-shot restoration of
   over-aggressively invalidated audits)

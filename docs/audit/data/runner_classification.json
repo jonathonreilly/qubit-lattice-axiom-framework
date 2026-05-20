@@ -20736,6 +20736,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_strc_lo_collinearity_theorem.py"
     },
+    "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 50,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py"
+    },
     "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": {
       "assert_count": 2,
       "counts": {
@@ -45092,6 +45104,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py": {
+      "assert_count": 0,
+      "claims": [
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 50,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_strong_cp_theta_zero.py": {
       "assert_count": 2,
       "claims": [
@@ -53281,12 +53308,12 @@
     "dominant_class_distribution": {
       "A": 191,
       "B": 262,
-      "C": 728,
+      "C": 729,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1909,
-    "runners_with_C": 940,
+    "runners_classified": 1910,
+    "runners_with_C": 941,
     "runners_with_D": 546
   }
 }

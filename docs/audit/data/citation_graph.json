@@ -23925,6 +23925,18 @@
       "to": "quark_bimodule_lo_shell_normalization_theorem_note_2026-04-19"
     },
     {
+      "from": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+      "to": "strong_cp_theta_zero_note"
+    },
+    {
+      "from": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+      "to": "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
       "from": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
       "to": "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
     },
@@ -73510,6 +73522,22 @@
       "runner_path": "scripts/frontier_strc_lo_collinearity_theorem.py",
       "title": "STRC-LO / BICAC Theorem from Exact 1(+)5 Channel Completeness"
     },
+    "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19": {
+      "claim_id": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "strong_cp_theta_zero_note",
+        "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "805934e31c8afc0f0cc06cc8de47dadb3323b7a7b6c4e7c3fb6371597bfed421",
+      "path": "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
+      "runner_path": "scripts/frontier_strong_cp_operator_basis_real_2026_05_19.py",
+      "title": "Single-Plaquette CP-Odd Slot Rejection and Quark-Mass Orientation on the Retained Surface"
+    },
     "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": {
       "claim_id": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
       "claim_type_author_hint": "no_go",
@@ -80637,7 +80665,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 497,
+      "bounded_theorem": 498,
       "decoration": 1,
       "meta": 180,
       "no_go": 57,
@@ -80646,7 +80674,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 934,
+      "bounded_theorem": 935,
       "decoration": 1,
       "meta": 180,
       "no_go": 160,
@@ -80654,10 +80682,10 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9632,
+    "edge_count": 9635,
     "leaf_count": 726,
-    "node_count": 2445,
+    "node_count": 2446,
     "root_count": 805,
-    "runners_with_path": 2030
+    "runners_with_path": 2031
   }
 }

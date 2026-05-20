@@ -236,6 +236,54 @@ chain-consequent charges, uniqueness, GUT trace) and explicitly labels
 the matter-sector identifications as **chain consequents under the
 LHCM matter assignment**, not as internal claims.
 
+## 2026-05-19 audit-conditional repair
+
+This note is `bounded_theorem` / `audited_conditional`: retained scope is
+narrowed to what the runner numerically verifies, and the two upstream /
+convention items the load-bearing chain depends on are listed here as
+explicit **admitted imports**. The note carries no internal derivation of
+either item; both are routed to their own authority rows.
+
+**Admitted imports (not derived in this note):**
+
+1. **LHCM matter-assignment decoration dep.** The mapping
+   (Sym²(C²), Anti²(C²)) ↔ (SU(3)-fundamental, SU(3)-singlet) — and the
+   downstream SM-naming convention `color-charged ≡ quark,
+   color-singlet ≡ lepton` — is **admitted** from
+   [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md).
+   This note does **not** re-derive the matter-sector identification;
+   that authority row carries its own audit status and any matter-sector
+   verdict travels with that row, not this one.
+
+2. **α = 1/3 normalization convention.** The absolute scale α = +1/3
+   (equivalently, the SM convention `Y(L_L) = −1`) that fixes the
+   structural ratio +1 : (−3) to the SM hypercharge values
+   (+1/3, −1) is **admitted SM convention**, not derived. This is the
+   still-open LHCM normalization gap (LHCM repair item 2). All
+   structural content of this note (eigenvalue ratio, projector algebra,
+   GUT trace ratio) is α-independent; only the absolute SM-Y match in
+   the consequence table at α = 1/3 invokes this admitted convention.
+
+**Retained scope (what the runner numerically verifies — claim
+boundary):**
+
+- **Projector algebra on C⁴.** `P_sym + P_anti = I_4`,
+  `rank(P_sym) = 3`, `rank(P_anti) = 1`, `P_sym² = P_sym`,
+  `P_anti² = P_anti`, `P_sym P_anti = 0` (see runner lines 91, 155–157).
+- **Traceless ratio on (Sym², Anti²).** The unique traceless
+  U(1) generator in the gl(3) ⊕ gl(1) commutant of {SU(2)_weak,
+  SWAP_{23}} on C^8 carries eigenvalues in the ratio +1 : (−3) across
+  the (2, 3) and (2, 1) sub-blocks. This is α-independent.
+- **Charge table.** Under the admitted matter-assignment and admitted
+  α = 1/3 convention, the chain-consequent eigenvalue table on the
+  LH-doublet surface reproduces SM hypercharges (Q_L ↦ +1/3, L_L ↦ −1)
+  and SM electric charges via Gell-Mann–Nishijima (admitted SM-convention
+  bridge). The runner reports these as `[CHAIN-L2]` / `[CHAIN-L3]`
+  consequents, not as internal claims.
+
+Anything outside this triple — projector algebra, traceless ratio, charge
+table — is not part of the retained surface for this note.
+
 ## Auditor responsiveness (2026-05-02 verdict → 2026-05-05 rewrite map)
 
 The most recent independent audit (2026-05-02, `codex-audit-loop:fresh-

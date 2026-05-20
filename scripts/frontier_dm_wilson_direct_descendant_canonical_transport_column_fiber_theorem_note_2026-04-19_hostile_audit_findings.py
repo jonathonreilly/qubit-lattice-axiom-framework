@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19.
 
-Verifies docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_TRANSPORT_COLUMN_FIBER_THEOREM_NOTE_2026-04-19_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

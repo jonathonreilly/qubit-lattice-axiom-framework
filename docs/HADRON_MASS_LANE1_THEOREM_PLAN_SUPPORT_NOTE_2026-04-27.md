@@ -322,7 +322,7 @@ Either outcome is a positive update to the plan, not a defeat.
 - `docs/ALPHA_S_DERIVED_NOTE.md` — retained `alpha_s(M_Z) = 0.1181`.
 - `docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` — graph-first SU(3)
   closure.
-- `docs/QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md` — Lane 3 entry
+- `docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md` — Lane 3 entry
   point.
 - `docs/MINIMAL_AXIOMS_2026-04-11.md` — minimal accepted axiom stack.
 ## 9. Boundary
@@ -344,5 +344,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [confinement_string_tension_note](CONFINEMENT_STRING_TENSION_NOTE.md)
 - [alpha_s_derived_note](ALPHA_S_DERIVED_NOTE.md)
 - [graph_first_su3_integration_note](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
-- [quark_mass_ratio_review_packet_2026-04-18](QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md)
+- [quark_mass_ratio_review_packet_2026-04-18](QUARK_MASS_RATIO_NOTE_2026-04-18.md)
 - [minimal_axioms_2026-04-11](MINIMAL_AXIOMS_2026-04-11.md)

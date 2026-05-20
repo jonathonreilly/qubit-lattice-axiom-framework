@@ -513,7 +513,7 @@ verifies:
 
 ## Cross-references
 
-- [`EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md`](EPSILON1_FROM_CP_CHAIN_STRETCH_ATTEMPT_NOTE_2026-05-03.md) —
+- [`EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md`](EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md) —
   cycle 12 parent; Obstruction O1 is sharpened by this PR.
 - [`DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md`](DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_THEOREM_NOTE_2026-04-16.md) —
   retained source-surface theorem (γ, E₁, E₂ on nonempty surface).

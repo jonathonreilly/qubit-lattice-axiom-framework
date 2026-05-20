@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for angular_kernel_underdetermination_no_go_note.
 
-Verifies docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

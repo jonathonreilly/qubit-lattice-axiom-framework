@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc.
 
-Verifies docs/A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_OPTC_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_OPTC_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

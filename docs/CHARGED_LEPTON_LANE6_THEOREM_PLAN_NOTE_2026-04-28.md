@@ -270,7 +270,7 @@ enumerated here.
 
 - `docs/lanes/open_science/06_CHARGED_LEPTON_MASS_RETENTION_OPEN_LANE_2026-04-26.md`
   — Lane 6 lane file (primary authority).
-- `docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md` — Koide
+- `docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` — Koide
   flagship lane authority.
 - YT theorem cluster (analog template for 6B).
 - `docs/CHARGED_LEPTON_DIRECT_WARD_FREE_YUKAWA_NO_GO_NOTE_2026-04-26.md`

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for nn_lattice_rescaled_c_arm_derivation_note_2026-05-10.
 
-Verifies docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/NN_LATTICE_RESCALED_C_ARM_DERIVATION_NOTE_2026-05-10_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

@@ -74,7 +74,7 @@ flavor-sector closure.
   - √(5/6) · (1 − 1/√42) (best anchored projector law)
 - Quark taste-staircase support
 - (Approximately 10 structural support notes in
-  [QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md](../../QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md))
+  [QUARK_MASS_RATIO_NOTE_2026-04-18.md](../../QUARK_MASS_RATIO_NOTE_2026-04-18.md))
 
 ### Absent
 
@@ -145,7 +145,7 @@ already-retained CKM atlas/axiom structural identities.
 
 ## 4. Existing scaffolding to build on
 
-- [QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md](../../QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md)
+- [QUARK_MASS_RATIO_NOTE_2026-04-18.md](../../QUARK_MASS_RATIO_NOTE_2026-04-18.md)
 - [QUARK_MASS_RATIO_FULL_SOLVE_NOTE_2026-04-18.md](../../QUARK_MASS_RATIO_FULL_SOLVE_NOTE_2026-04-18.md)
 - [QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md](../../QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md)
 - [DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md](../../DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md)

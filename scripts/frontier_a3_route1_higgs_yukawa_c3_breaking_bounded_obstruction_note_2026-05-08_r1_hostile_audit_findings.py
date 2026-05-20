@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1.
 
-Verifies docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_R1_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_R1_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

@@ -18,7 +18,7 @@ own authority note.  This document is the index + honest-accounting
 table for the entire lane.
 
 Quark-only primary entry point on current `main`:
-`QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md`.
+`QUARK_MASS_RATIO_NOTE_2026-04-18.md`.
 That packet now separates three quark endpoints clearly:
 minimal-surface CKM-CP no-go, bounded reduced projector-ray closure, and a
 broader bounded complex-carrier existence proof. None of those upgrades the
@@ -313,4 +313,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [charged_lepton_mass_hierarchy_review_note_2026-04-17](CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md)
 - [neutrino_mass_derived_note](NEUTRINO_MASS_DERIVED_NOTE.md)
 - [cosmology_from_mass_spectrum_note](COSMOLOGY_FROM_MASS_SPECTRUM_NOTE.md)
-- [quark_mass_ratio_review_packet_2026-04-18](QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md)
+- [quark_mass_ratio_review_packet_2026-04-18](QUARK_MASS_RATIO_NOTE_2026-04-18.md)

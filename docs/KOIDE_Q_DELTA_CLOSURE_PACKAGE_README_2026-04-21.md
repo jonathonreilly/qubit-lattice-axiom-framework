@@ -72,7 +72,7 @@ no-go synthesis, not as retained `Q` closure.  The residual theorem is now:
 > the onsite function algebra, not the broader `C3` commutant/projected source
 > domain.
 
-See `docs/KOIDE_NATIVE_DIMENSIONLESS_REVIEW_PACKET_2026-04-24.md`,
+See `docs/KOIDE_NATIVE_DIMENSIONLESS_NOTE_2026-04-24.md`,
 `docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md`,
 and
 `docs/KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md`.

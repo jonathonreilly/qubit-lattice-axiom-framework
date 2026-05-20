@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for neutrino_majorana_retained_lane_packet_2026-04-16.
 
-Verifies docs/NEUTRINO_MAJORANA_RETAINED_LANE_PACKET_2026-04-16_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/NEUTRINO_MAJORANA_RETAINED_LANE_PACKET_2026-04-16_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

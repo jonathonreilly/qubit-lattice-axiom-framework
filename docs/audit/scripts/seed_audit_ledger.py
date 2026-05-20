@@ -28,6 +28,7 @@ LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 EXCLUDED_PATTERNS_FILE = DATA_DIR / "excluded_source_patterns.txt"
 NEVER_GATE_PATHS_FILE = DATA_DIR / "never_gate_source_paths.txt"
 META_PATTERNS_FILE = DATA_DIR / "meta_source_patterns.txt"
+SOURCE_PATH_ALIASES_FILE = DATA_DIR / "source_path_aliases.json"
 
 
 def _load_pattern_file(path: Path) -> tuple[str, ...]:
@@ -254,6 +255,68 @@ def load_json(path: Path, default):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def load_source_path_aliases() -> dict[str, str]:
+    """Load non-semantic source-note path migrations.
+
+    The audit ledger key is derived from the note path. Mechanical path
+    cleanup can therefore rename a source note without changing its scientific
+    content. In that case the old audit row should move to the new claim id
+    instead of being dropped and re-seeded as unaudited.
+    """
+    data = load_json(SOURCE_PATH_ALIASES_FILE, {"aliases": {}})
+    aliases = data.get("aliases", {}) if isinstance(data, dict) else {}
+    return {str(old): str(new) for old, new in aliases.items()}
+
+
+def source_path_alias_replacements(aliases: dict[str, str]) -> list[tuple[str, str]]:
+    """Return current->legacy replacements for non-semantic path rewrites."""
+    replacements: set[tuple[str, str]] = set()
+    for old_path, new_path in aliases.items():
+        old = str(old_path)
+        new = str(new_path)
+        replacements.add((new, old))
+        replacements.add((Path(new).name, Path(old).name))
+    return sorted(replacements, key=lambda item: len(item[0]), reverse=True)
+
+
+def note_hash_change_is_path_alias_only(
+    note_path: str,
+    prior_hash: str | None,
+    replacements: list[tuple[str, str]],
+) -> bool:
+    """True when source drift is only canonical path/link text replacement."""
+    if not prior_hash or not replacements:
+        return False
+    path = REPO_ROOT / note_path
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return False
+    normalized = text
+    for current, legacy in replacements:
+        normalized = normalized.replace(current, legacy)
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest() == prior_hash
+
+
+def rewrite_alias_strings(value, replacements: list[tuple[str, str]]):
+    """Recursively update legacy source-path strings inside preserved metadata."""
+    if not replacements:
+        return value
+    if isinstance(value, str):
+        out = value
+        for current, legacy in replacements:
+            out = out.replace(legacy, current)
+        return out
+    if isinstance(value, list):
+        return [rewrite_alias_strings(item, replacements) for item in value]
+    if isinstance(value, dict):
+        return {
+            key: rewrite_alias_strings(item, replacements)
+            for key, item in value.items()
+        }
+    return value
+
+
 def archive_prior_audit(row: dict) -> dict:
     """Snapshot the audit fields into previous_audits and return the cleared row."""
     prior = {k: row.get(k) for k in AUDIT_FIELDS}
@@ -277,10 +340,22 @@ def seed() -> dict:
 
     existing = load_json(LEDGER_PATH, {"rows": {}})
     existing_rows: dict[str, dict] = existing.get("rows", {})
+    source_path_aliases = load_source_path_aliases()
+    alias_replacements = source_path_alias_replacements(source_path_aliases)
+    existing_by_path = {
+        row.get("note_path"): (cid, row)
+        for cid, row in existing_rows.items()
+        if row.get("note_path")
+    }
+    alias_old_paths_by_new: dict[str, list[str]] = {}
+    for old_path, new_path in source_path_aliases.items():
+        alias_old_paths_by_new.setdefault(new_path, []).append(old_path)
+    used_alias_prior_cids: set[str] = set()
 
     out_rows: dict[str, dict] = {}
     seeded = 0
     preserved = 0
+    migrated_path_aliases = 0
     re_audit_required = 0
 
     included_cids = {
@@ -301,6 +376,19 @@ def seed() -> dict:
 
         deps = [dep for dep in node["deps"] if dep in included_cids]
         prior = existing_rows.get(cid)
+        prior_from_path_alias = False
+        if prior is None:
+            for old_path in alias_old_paths_by_new.get(node["path"], []):
+                alias_hit = existing_by_path.get(old_path)
+                if alias_hit is None:
+                    continue
+                old_cid, old_row = alias_hit
+                if old_cid in used_alias_prior_cids:
+                    continue
+                prior = old_row
+                prior_from_path_alias = True
+                used_alias_prior_cids.add(old_cid)
+                break
         if prior is None:
             row = {
                 "claim_id": cid,
@@ -329,7 +417,22 @@ def seed() -> dict:
             row["runner_path"] = node["runner_path"]
             row["helper_runner_paths"] = node.get("helper_runner_paths", [])
             row["deps"] = deps
-            if prior.get("note_hash") != node["note_hash"] and prior.get("audit_status") in {None, "unaudited"}:
+            if prior_from_path_alias:
+                row["note_hash"] = node["note_hash"]
+                ensure_prose_defaults(row)
+                migrated_path_aliases += 1
+            elif (
+                prior.get("note_hash") != node["note_hash"]
+                and note_hash_change_is_path_alias_only(
+                    node["path"],
+                    prior.get("note_hash"),
+                    alias_replacements,
+                )
+            ):
+                row["note_hash"] = node["note_hash"]
+                ensure_prose_defaults(row)
+                migrated_path_aliases += 1
+            elif prior.get("note_hash") != node["note_hash"] and prior.get("audit_status") in {None, "unaudited"}:
                 row["note_hash"] = node["note_hash"]
                 reset_prose_defaults(row)
                 preserved += 1
@@ -343,6 +446,7 @@ def seed() -> dict:
                 preserved += 1
             reset_unaudited_audit_fields(row)
             apply_claim_type_defaults(row, node, prior)
+        row = rewrite_alias_strings(row, alias_replacements)
         out_rows[cid] = row
 
     for cid, row in archived_failed_rows.items():
@@ -377,6 +481,7 @@ def seed() -> dict:
             "row_count": len(out_rows),
             "seeded_new": seeded,
             "preserved_existing": preserved,
+            "migrated_path_aliases": migrated_path_aliases,
             "preserved_archived_failed": len(archived_failed_rows),
             "re_audit_required": re_audit_required,
             "dropped_missing_notes": len(missing),
@@ -396,6 +501,7 @@ def main() -> int:
     print(f"  rows: {s['row_count']}")
     print(f"  newly seeded: {s['seeded_new']}")
     print(f"  preserved (audit kept): {s['preserved_existing']}")
+    print(f"  migrated path aliases: {s['migrated_path_aliases']}")
     print(f"  preserved archived failed: {s['preserved_archived_failed']}")
     print(f"  re-audit required (hash changed): {s['re_audit_required']}")
     print(f"  dropped (note removed): {s['dropped_missing_notes']}")

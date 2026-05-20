@@ -144,7 +144,7 @@ A real framework-internal hydrogen retention would require, in order:
 
 1. **A retained electron sector.** The current charged-lepton program targets
    the Koide mass-ratio relation
-   ([CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md](CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md))
+   ([CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md](CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md))
    but does not yet retain `m_e` in MeV. Closing the open microscopic scalar
    selector law would deliver `m_e` as a derived quantity.
 2. **A retained Coulomb sector.** The current electrostatics surface retains

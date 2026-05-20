@@ -18,7 +18,7 @@ The following three residuals share an identical structural obstruction:
 
 | Cycle | Residual | Lane | PR |
 |---|---|---|---|
-| 5 | `R_conn = (N_c² − 1)/N_c² = 8/9` exact at finite N_c | yt_ew matching rule M | [`YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md) / [#260](https://github.com/jonathonreilly/cl3-lattice-framework/pull/260) |
+| 5 | `R_conn = (N_c² − 1)/N_c² = 8/9` exact at finite N_c | yt_ew matching rule M | [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md) / [#260](https://github.com/jonathonreilly/cl3-lattice-framework/pull/260) |
 | 9 | `⟨P⟩_full = R_O(β_eff)` exact bridge | gauge-scalar observable bridge | [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md) / [#268](https://github.com/jonathonreilly/cl3-lattice-framework/pull/268) |
 | 11 | `lattice curvature ↔ (m_H/v)²` exact bridge | Higgs mass from axiom | [`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md) / [#271](https://github.com/jonathonreilly/cl3-lattice-framework/pull/271) |
 
@@ -117,7 +117,7 @@ After this PR lands:
 
 ## 9. Cross-references
 
-- Cycle 5 / PR [#260](https://github.com/jonathonreilly/cl3-lattice-framework/pull/260) — [`YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md)
+- Cycle 5 / PR [#260](https://github.com/jonathonreilly/cl3-lattice-framework/pull/260) — [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md)
 - Cycle 9 / PR [#268](https://github.com/jonathonreilly/cl3-lattice-framework/pull/268) — [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md)
 - Cycle 11 / PR [#271](https://github.com/jonathonreilly/cl3-lattice-framework/pull/271) — [`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)
 - 't Hooft 1974, Witten 1979, Coleman 1985, Manohar 1998 — standard 1/N_c references

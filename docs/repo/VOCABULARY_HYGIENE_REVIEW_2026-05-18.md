@@ -154,7 +154,7 @@ This is wrong on three counts:
    [ANOMALY_FORCES_TIME_THEOREM.md:92](../ANOMALY_FORCES_TIME_THEOREM.md))
    and downstream-fix notes that reference upstream `F-B` /
    `F-C` (e.g.
-   [DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md:34](../DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md)).
+   [DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md:34](../DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md)).
 3. Filename + heading + cross-reference + runner-assertion rewrites
    must happen *atomically* per file. Regex-only migration breaks
    cross-doc references.

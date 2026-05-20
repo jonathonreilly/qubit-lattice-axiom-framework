@@ -236,7 +236,7 @@ All four conclusions follow algebraically from the three named inputs
 - The numerical value of `⟨(1/2) Re Tr U_p^SU(2)⟩` (and hence the
   numerical value of `u_0(SU(2))`) is the open residual. Per
   `EW_COUPLING_DERIVATION_NOTE.md` Part 3 and
-  `G_WEAK_FROM_FRAMEWORK_STRETCH_ATTEMPT_NOTE_2026-05-03.md` named
+  `G_WEAK_FROM_FRAMEWORK_NOTE_2026-05-03.md` named
   residual R1, closing this requires either:
     - an SU(2) Monte Carlo computation of `u_0(SU(2))` for the CMT, or
     - a framework-native non-perturbative matching for SU(2) that does
@@ -365,7 +365,7 @@ edges:
   — broad parent recording the v-scale `g_2(v)` bounded status and
   naming the open SU(2) Monte Carlo / framework-native non-perturbative
   matching residual; this narrow theorem does not close that residual.
-- `G_WEAK_FROM_FRAMEWORK_STRETCH_ATTEMPT_NOTE_2026-05-03.md`
+- `G_WEAK_FROM_FRAMEWORK_NOTE_2026-05-03.md`
   — sister stretch attempt that closes the lattice-scale piece
   (`g_2² |_lattice = 1/(d+1) = 1/4`, `g_2_bare = 1/2`) from retained
   primitives; this narrow theorem is independent of that lattice-scale

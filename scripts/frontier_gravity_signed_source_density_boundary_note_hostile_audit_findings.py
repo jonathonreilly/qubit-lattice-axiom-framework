@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for gravity_signed_source_density_boundary_note.
 
-Verifies docs/GRAVITY_SIGNED_SOURCE_DENSITY_BOUNDARY_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/GRAVITY_SIGNED_SOURCE_DENSITY_BOUNDARY_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

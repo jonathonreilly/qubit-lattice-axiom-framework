@@ -769,7 +769,7 @@ I2/P: open, but now with a stronger dependent Q -> CPC -> δ route
 ### 9.2 Reviewer package updates
 
 The support package
-`docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md` should be updated
+`docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` should be updated
 to reflect the narrower landing:
 
 - evening public support for `Q = 2/3` via the qubit-lattice /
@@ -820,4 +820,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [koide_berry_phase_theorem_note_2026-04-19](KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md)
 - [koide_z3_qubit_radian_bridge_no_go_note_2026-04-20](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md)
 - [koide_c3_singlet_extension_reduction_theorem_note_2026-04-20](KOIDE_C3_SINGLET_EXTENSION_REDUCTION_THEOREM_NOTE_2026-04-20.md)
-- `CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)
+- `CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)

@@ -336,6 +336,15 @@ rewrite_rules:
     rationale: "Sharpened-note suffix forbidden; use plain _NOTE_<date>.md."
     requires_link_aware_rewrite: true
 
+  - id: collapse_doubled_note
+    # Collapses ..._NOTE_NOTE_<date>.md (which results when the upstream
+    # filename already ended in _NOTE_ before the forbidden suffix) to
+    # ..._NOTE_<date>.md. Run after the suffix-strip rules.
+    pattern: '_NOTE_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Collapse doubled _NOTE_ suffix produced by suffix-strip on filenames already ending in _NOTE_."
+    requires_link_aware_rewrite: true
+
   - id: f_letter_heading
     # NOT a one-shot regex. F-letter migration requires per-file mapping
     # {F-A: <title>, F-B: <title>, ...} → {Finding 1: <title>, ...} with

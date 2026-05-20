@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTE_PATH = ROOT / "docs" / "KUBO_FAM2_NON_CONVERGENCE_STRETCH_ATTEMPT_NOTE_2026-05-02.md"
+NOTE_PATH = ROOT / "docs" / "KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0

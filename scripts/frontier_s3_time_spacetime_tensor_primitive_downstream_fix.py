@@ -25,7 +25,7 @@ CLASS_A_HITS = 0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARENT = REPO_ROOT / "docs" / "S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md"
-FIX_RECORD = REPO_ROOT / "docs" / "S3_TIME_SPACETIME_TENSOR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md"
+FIX_RECORD = REPO_ROOT / "docs" / "S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md"
 
 
 def check(label: str, condition: bool, detail: str = "") -> bool:
@@ -163,7 +163,7 @@ def main() -> int:
     )
     check(
         "Fix-record meta-note linked from parent",
-        "S3_TIME_SPACETIME_TENSOR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md" in parent,
+        "S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md" in parent,
     )
     check(
         "Paired verifier referenced from parent",

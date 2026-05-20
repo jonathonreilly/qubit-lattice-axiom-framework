@@ -119,7 +119,7 @@ as the authority surface for details.
 | Quantitative electroweak/top/hierarchy chain | Shows normalization, color projection, source-response, and Ward-identity traps being separated into explicit claim boundaries | `../OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`, `../YT_*`, `../ALPHA_S_DERIVED_NOTE.md`, `../HIGGS_MASS_FROM_AXIOM_NOTE.md` |
 | CKM structural atlas | Shows AI-assisted theorem extraction from a dense atlas without using CKM fits as derivation inputs | `../CKM_*`, `../ALPHA_S_DERIVED_NOTE.md` |
 | DM/leptogenesis selector problem | Shows no-go audits narrowing a global selector problem into exact target-surface and bounded quantitative results | `../DM_ABCC_*`, `../DM_CURRENT_BANK_QUANTITATIVE_MAPPING_NOTE_2026-04-21.md`, `../DM_ETA_FREEZEOUT_BYPASS_QUANTITATIVE_THEOREM_NOTE_2026-04-25.md` |
-| Koide charged-lepton lane | Shows a high-value target becoming support/no-go/bridge-narrowing rather than false closure | `../KOIDE_*`, `../CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md`, raw review evidence |
+| Koide charged-lepton lane | Shows a high-value target becoming support/no-go/bridge-narrowing rather than false closure | `../KOIDE_*`, `../CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`, raw review evidence |
 | Gravity and wave lanes | Shows frozen replay and controls demoting overclaims while preserving retained positives | `../WAVE_3PLUS1D_PROMOTIONS_NOTE.md`, `../LENSING_DEFLECTION_NOTE.md`, gravity/wave correction notes |
 
 Do not use raw chat excerpts as polished evidence until they are sanitized. The

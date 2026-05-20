@@ -62,7 +62,7 @@ where the live status, if any, lives:
 
 - Cycle 1: `docs/NEUTRINO_LANE4_THEOREM_PLAN_NOTE_2026-04-28.md`
 - Cycle 2: `docs/NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md`
-- Cycle 3: `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
+- Cycle 3: `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md`
 - Cycle 4: `docs/NEUTRINO_AXIOM3_READING_STUCK_FANOUT_NOTE_2026-04-28.md`
 
 The live status is whatever the audit-ledger row for each linked
@@ -90,7 +90,7 @@ two STATE.yaml patches).
   (Lane 4 closure roadmap; audit-grade)
 - Cycle 2: `docs/NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md`
   (bounded conditional Dirac theorem; audit-grade/blocker-isolation)
-- Cycle 3: `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
+- Cycle 3: `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md`
   (mandatory stretch attempt from `A_min`; STRETCH-grade)
 - Cycle 4: `docs/NEUTRINO_AXIOM3_READING_STUCK_FANOUT_NOTE_2026-04-28.md`
   (5+5 stuck fan-out + synthesis; FAN-OUT-grade)
@@ -229,7 +229,7 @@ Policy integration item:
 
 - Cycle 1: `docs/NEUTRINO_LANE4_THEOREM_PLAN_NOTE_2026-04-28.md`
 - Cycle 2: `docs/NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md`
-- Cycle 3: `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_STRETCH_ATTEMPT_NOTE_2026-04-28.md`
+- Cycle 3: `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md`
 - Cycle 4: `docs/NEUTRINO_AXIOM3_READING_STUCK_FANOUT_NOTE_2026-04-28.md`
 - Pack: `.claude/science/physics-loops/neutrino-quantitative-20260428/`
 - Lane file:

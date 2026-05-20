@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25.
 
-Verifies docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

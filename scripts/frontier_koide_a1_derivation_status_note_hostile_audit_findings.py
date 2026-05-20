@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for koide_a1_derivation_status_note.
 
-Verifies docs/KOIDE_A1_DERIVATION_STATUS_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/KOIDE_A1_DERIVATION_STATUS_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

@@ -40,6 +40,7 @@ docs/audit/
   data/
     citation_graph.json              # generated: doc -> cited authorities
     audit_ledger.json                # generated/edited: per-claim audit rows
+    source_path_aliases.json         # controlled: source-note renames preserving audit rows
     runner_classification.json       # generated: A/B/C/D per runner PASS line
   scripts/
     build_citation_graph.py          # parse all .md docs into the graph

@@ -77,8 +77,8 @@ any status:
 | Z10 | Z_3 Fourier basis diagonalizes C_3[111] (PR landing 2026-05-03) | contextual input |
 | Z11 | Down-type ratio `m_s/m_b = [α_s(v)/√6]^{6/5}` (+0.2% threshold-local) | bounded context, not re-ratified here |
 | Z12 | Brannen-Rivero charged-lepton form `√m_k = v_0(1+√2 cos(δ + 2πk/3))` | contextual admission surface |
-| Z13 | Brannen amplitude-equipartition condition (legacy alias: A1): `2|b|/a = √2` for charged leptons (`ρ_lep = √2`) | contextual admission surface |
-| Z14 | Square-root mass identification (legacy alias: P1): `λ_k = √m_k` not `m_k` | contextual admission surface |
+| Z13 | Brannen amplitude-equipartition condition: `2|b|/a = √2` for charged leptons (`ρ_lep = √2`) | contextual admission surface |
+| Z14 | Square-root mass identification: `λ_k = √m_k` not `m_k` | contextual admission surface |
 | Z15 | δ_lep = 2/9 rad ≈ Brannen magic angle (charged-lepton phase) | empirical observation |
 
 ### 1.2 What the framework DOES NOT have for heavy quarks
@@ -158,7 +158,7 @@ A.3 of the Koide circulant note:
 | up-type (t, c, u) | 1.754 | TBD | √(m_t/m_c)/v_0_up |
 | down-type (b, s, d) | 1.536 | TBD | √(m_b/m_s)/v_0_dn |
 
-Under square-root mass identification (legacy alias: P1), `λ_k = √m_k`:
+Under square-root mass identification, `λ_k = √m_k`:
 - m_t/m_c = (λ_0/λ_1)² with `(ρ_up, δ_up)`
 - m_b/m_s = (λ_0/λ_1)² with `(ρ_dn, δ_dn)`
 
@@ -188,8 +188,7 @@ future-admission cost, if pursued, would be replacing 1 universal scalar
 **Hostile-review tier classification.**
 - **Would require explicit approval before admission:** 4 sector-specific
   real parameters `(ρ_up, δ_up, ρ_dn, δ_dn)`. None are derived here.
-- **Context used by the diagnostic:** square-root mass identification
-  (legacy alias: P1), Z_3 Fourier basis
+- **Context used by the diagnostic:** square-root mass identification, Z_3 Fourier basis
   on H_{hw=1}.
 - **Not assumed here:** universal Brannen amplitude equipartition (BAE)
   outside the charged-lepton context.

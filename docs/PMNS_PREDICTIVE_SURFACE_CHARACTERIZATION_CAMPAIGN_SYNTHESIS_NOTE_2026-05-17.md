@@ -277,13 +277,13 @@ decomposition, and `U(1)_b` angular convention on the doublet plane):
   current framework baseline. Open sub-locus: `U(1)_b` angular convention on the
   `C_3`-doublet plane.
 
-- PR #1415 ([`BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17.md`](BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17.md))
+- PR #1415 ([`BAE_U1B_CANONICAL_PHASE_NOTE_2026-05-17.md`](BAE_U1B_CANONICAL_PHASE_NOTE_2026-05-17.md))
   — stretch attempt on `U(1)_b`. Tested five named mechanisms; none
   supplies a canonical direction on `(Re b, Im b)`. Bounded narrowing:
   the maximal retained discrete subgroup of `O(2)` is dihedral `D_3`,
   whose fundamental-domain wedge is F3-shape, not F1-shape.
 
-- PR #1419 ([`BAE_U1B_SIX_RAY_DIRAC_MEASURE_STRETCH_ATTEMPT_NOTE_2026-05-17.md`](BAE_U1B_SIX_RAY_DIRAC_MEASURE_STRETCH_ATTEMPT_NOTE_2026-05-17.md))
+- PR #1419 ([`BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md`](BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md))
   — stretch attempt on the six-ray Dirac-measure sub-locus. Tested
   three sub-routes (S1-S3); all negative. Bounded narrowing: the six-
   ray locus `(R)` IS the maximal retained discrete-symmetry fix locus
@@ -326,7 +326,7 @@ this PMNS-chamber-chart synthesis:
 - **Direct quark-sector Yukawa coupling chains.** Out of scope.
 - **Hostile-audit findings on adjacent PMNS notes**
   (`DM_LEPTOGENESIS_PMNS_*_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md`,
-  `LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md`,
+  `LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE_2026-05-17.md`,
   etc.). Out of scope; these are audit-pipeline products on adjacent
   source notes, not on the chamber-chart predictive surface itself.
 
@@ -350,9 +350,9 @@ audit-lane-decided independently):
 
 - [`BAE_F1_F3_CANONICAL_SELECTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-17.md`](BAE_F1_F3_CANONICAL_SELECTION_BOUNDED_OBSTRUCTION_NOTE_2026-05-17.md)
   — PR #1412
-- [`BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17.md`](BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17.md)
+- [`BAE_U1B_CANONICAL_PHASE_NOTE_2026-05-17.md`](BAE_U1B_CANONICAL_PHASE_NOTE_2026-05-17.md)
   — PR #1415
-- [`BAE_U1B_SIX_RAY_DIRAC_MEASURE_STRETCH_ATTEMPT_NOTE_2026-05-17.md`](BAE_U1B_SIX_RAY_DIRAC_MEASURE_STRETCH_ATTEMPT_NOTE_2026-05-17.md)
+- [`BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md`](BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md)
   — PR #1419
 
 Retained authorities shared across the campaign (ledger-verified

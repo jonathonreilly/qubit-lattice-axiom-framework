@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18.
 
-Verifies docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/DM_NEUTRINO_SOURCE_SURFACE_CARRIER_SIDE_CONCLUSION_NOTE_2026-04-18_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

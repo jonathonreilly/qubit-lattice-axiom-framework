@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for neutrino_mass_reduction_to_dirac_note.
 
-Verifies docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

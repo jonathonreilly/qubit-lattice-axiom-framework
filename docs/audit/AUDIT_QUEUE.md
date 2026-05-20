@@ -37,7 +37,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 20 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 1056 | 38.55 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_zero_import_chain.py` |
 | 21 | `rconn_derived_note` | bounded_theorem | unaudited | critical | 1047 | 17.53 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_color_projection_mc.py` |
 | 22 | `yt_vertex_power_derivation` | open_gate | unaudited | critical | 1047 | 12.53 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
-| 23 | `yt_ew_matching_rule_m_stretch_attempt_note_2026-05-02` | positive_theorem | unaudited | critical | 1047 | 12.03 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_matching_rule_m_stretch.py` |
+| 23 | `yt_ew_matching_rule_m_note_2026-05-02` | positive_theorem | unaudited | critical | 1047 | 12.03 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ew_matching_rule_m_stretch.py` |
 | 24 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | unaudited | critical | 1047 | 10.53 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_color_projection_mc.py` |
 | 25 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 1046 | 38.03 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 26 | `yt_color_projection_correction_note` | bounded_theorem | unaudited | critical | 1037 | 15.02 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_color_projection_correction.py` |
@@ -94,8 +94,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 20 | `cycle-0020` | 2 | 986 | `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16` | critical | unaudited |
 | 21 | `cycle-0021` | 2 | 986 | `scalar_trace_tensor_no_go_note` | critical | unaudited |
 | 22 | `cycle-0022` | 2 | 986 | `dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16` | critical | unaudited |
-| 23 | `cycle-0023` | 2 | 984 | `axiom_first_sm_anomaly_cancellation_complete_downstream_fix_note_2026-05-17` | critical | unaudited |
-| 24 | `cycle-0024` | 2 | 984 | `axiom_first_stefan_boltzmann_downstream_fix_note_2026-05-17` | critical | unaudited |
-| 25 | `cycle-0025` | 2 | 984 | `bminusl_anomaly_freedom_downstream_fix_note_2026-05-17` | critical | unaudited |
+| 23 | `cycle-0023` | 2 | 984 | `axiom_first_sm_anomaly_cancellation_complete_note_2026-05-17` | critical | unaudited |
+| 24 | `cycle-0024` | 2 | 984 | `axiom_first_stefan_boltzmann_note_2026-05-17` | critical | unaudited |
+| 25 | `cycle-0025` | 2 | 984 | `bminusl_anomaly_freedom_note_2026-05-17` | critical | unaudited |
 
 Full queue lives in `data/audit_queue.json`.

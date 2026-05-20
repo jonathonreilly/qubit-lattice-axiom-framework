@@ -246,8 +246,8 @@ This graph-bookkeeping section records explicit dependency links named by prior 
 - [koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19](KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md)
 - `charged_lepton_mass_hierarchy_review_note_2026-04-17` (upstream parent
   review note; backticked to avoid length-3 cycle through
-  `CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md` — that hierarchy
+  `CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` — that hierarchy
   review note already cites the koide review packet which lists this
   selector-gap note, so citation graph direction is *hierarchy_review →
   koide_review_packet → this_selector_gap*)
-- `CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)
+- `CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)

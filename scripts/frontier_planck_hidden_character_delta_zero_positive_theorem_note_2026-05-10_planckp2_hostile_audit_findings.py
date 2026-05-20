@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2.
 
-Verifies docs/PLANCK_HIDDEN_CHARACTER_DELTA_ZERO_POSITIVE_THEOREM_NOTE_2026-05-10_PLANCKP2_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/PLANCK_HIDDEN_CHARACTER_DELTA_ZERO_POSITIVE_THEOREM_NOTE_2026-05-10_PLANCKP2_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

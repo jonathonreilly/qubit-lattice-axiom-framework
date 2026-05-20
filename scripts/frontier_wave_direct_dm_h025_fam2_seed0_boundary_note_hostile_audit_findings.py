@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for wave_direct_dm_h025_fam2_seed0_boundary_note.
 
-Verifies docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_BOUNDARY_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

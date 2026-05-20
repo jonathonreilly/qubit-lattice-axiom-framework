@@ -497,7 +497,7 @@ Expected output: `PASS=18 FAIL=0`.
 - The numerical value of `u_0(SU(2))` (the framework-internal derivation
   of the literature import (X1)) remains the open R1 residual per
   `EW_COUPLING_DERIVATION_NOTE.md` Part 3 and
-  `G_WEAK_FROM_FRAMEWORK_STRETCH_ATTEMPT_NOTE_2026-05-03.md` named
+  `G_WEAK_FROM_FRAMEWORK_NOTE_2026-05-03.md` named
   residual R1. Closing this requires either:
     - an SU(2) Monte Carlo evaluation of `u_0(SU(2))`, or
     - a framework-native non-perturbative matching for SU(2) that does
@@ -525,7 +525,7 @@ edges:
   (SU(2) Monte Carlo or framework-native non-perturbative matching).
   This narrow theorem provides only the bounded-interval rescope
   conditional on the literature import; it does NOT close R1.
-- `G_WEAK_FROM_FRAMEWORK_STRETCH_ATTEMPT_NOTE_2026-05-03.md` — sister
+- `G_WEAK_FROM_FRAMEWORK_NOTE_2026-05-03.md` — sister
   stretch attempt closing the lattice-scale piece
   (`g_2² |_lattice = 1/(d+1) = 1/4`, `g_2_bare = 1/2`) from retained
   primitives. This narrow theorem inherits the same lattice-scale

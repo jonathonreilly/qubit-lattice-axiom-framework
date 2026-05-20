@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for yt_boundary_theorem.
 
-Verifies docs/YT_BOUNDARY_THEOREM_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/YT_BOUNDARY_THEOREM_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

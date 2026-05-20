@@ -90,17 +90,17 @@ files and the previous `codex_*` raw files.
 
 ```text
 /Users/jonreilly/Projects/Physics/docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md
-/Users/jonreilly/Projects/Physics/docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md
+/Users/jonreilly/Projects/Physics/docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md
 /Users/jonreilly/Projects/Physics/docs/MOONSHOT_HONEST_REVIEW_2026-04-09.md
-/Users/jonreilly/Projects/Physics/docs/QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md
-/Users/jonreilly/Projects/Physics/docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md
+/Users/jonreilly/Projects/Physics/docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md
+/Users/jonreilly/Projects/Physics/docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md
 /Users/jonreilly/Projects/Physics/docs/K_DEPENDENCE_REVIEW_SAFE_NOTE.md
 /Users/jonreilly/Projects/Physics/docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md
 /Users/jonreilly/Projects/Physics/docs/KOIDE_REVIEWER_STRESS_TEST_NOTE_2026-04-21.md
-/Users/jonreilly/Projects/Physics/docs/NEUTRINO_RETAINED_LANES_REVIEW_PACKET_2026-04-16.md
+/Users/jonreilly/Projects/Physics/docs/NEUTRINO_RETAINED_LANES_NOTE_2026-04-16.md
 /Users/jonreilly/Projects/Physics/docs/GRAVITY_REVIEWER_DERIVATION_SUMMARY_2026-04-15.md
 /Users/jonreilly/Projects/Physics/docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md
-/Users/jonreilly/Projects/Physics/docs/KOIDE_NATIVE_DIMENSIONLESS_REVIEW_PACKET_2026-04-24.md
+/Users/jonreilly/Projects/Physics/docs/KOIDE_NATIVE_DIMENSIONLESS_NOTE_2026-04-24.md
 /Users/jonreilly/Projects/Physics/docs/KOIDE_Q_SECOND_ORDER_REVIEWER_STRESS_TEST_NOTE_2026-04-22.md
 /Users/jonreilly/Projects/Physics/docs/KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_NOTE_2026-04-24.md
 /Users/jonreilly/Projects/Physics/docs/SCALAR_SELECTOR_CYCLE1_SCIENCE_REVIEW_NOTE_2026-04-19.md

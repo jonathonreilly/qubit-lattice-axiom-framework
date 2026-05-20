@@ -54,7 +54,7 @@ It does not support:
 - a framework-native derivation of `lambda(M_Pl) = 0` (Gap #7
   clarification, 2026-05-10): the earlier "composite-Higgs /
   no-elementary-scalar" slogan is not theorem-grade; the cycle-20
-  stretch attempt (`docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md`;
+  stretch attempt (`docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md`;
   file-pointer context, not a dependency edge)
   remains open with three named residual obstructions, including the
   NJL/BHL composite-scalar obstruction. The

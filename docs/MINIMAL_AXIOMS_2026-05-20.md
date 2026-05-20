@@ -41,14 +41,21 @@ This note also records two consequences of the qubit reframe:
    `σ_1, σ_2, σ_3` satisfying `σ_i² = I` and
    `σ_i σ_j = -σ_j σ_i` for `i ≠ j`).
 2. **A2 — Spatial substrate:** the substrate is the cubic lattice
-   `Z^3`. Sites compose via tensor product.
+   `Z^3`.
 
 These two are self-contained, mathematically minimal, and have zero
 upstream dependencies. The `Cl(3)` framing of A1 is preserved as the
 equivalent real-algebra presentation — every existing
 retained / retained_bounded / retained_no_go row that uses
-`Cl(3)` language remains valid under the qubit reading. Everything
-below the framework's surface is either:
+`Cl(3)` language remains valid under the qubit reading.
+
+Composition of the per-site qubit algebras over `Z^3` is the standard
+C*-algebraic tensor product, giving the UHF C*-algebra of type
+`2^∞` in the thermodynamic limit. This is mathematical background
+inherited from standard operator-algebra theory, not a separate
+axiomatic commitment. See "Mathematical infrastructure" below.
+
+Everything below the framework's surface is either:
 
 - a closed derivation chain from A1+A2 (`claim_type: positive_theorem`,
   `effective_status: retained`),
@@ -165,8 +172,9 @@ reading:
 **This revision (`MINIMAL_AXIOMS_2026-05-20.md`):**
 
 > "Framework has 2 axioms: a qubit at every `Z^3` site (`M_2(ℂ) ≅
-> Cl(3,0)` per site) with sites composing via tensor product. The
-> fermion realization and gauge normalization remain open gates. The
+> Cl(3,0)` per site). The fermion realization and gauge normalization
+> remain open gates. Composition of per-site algebras is by standard
+> C*-tensor product (mathematical background, not an axiom). The
 > pre-record reference state and the Born rule become explicit
 > derivation lanes on the qubit-lattice surface."
 
@@ -181,6 +189,11 @@ rule.
 The current package uses ordinary mathematical infrastructure after
 the two framework axioms are fixed:
 
+- **Composition of per-site qubit algebras over `Z^3`:** standard
+  C*-algebraic tensor product. Finite-region algebras are
+  `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ)`; the thermodynamic limit `Λ → Z^3` is the
+  uniformly hyperfinite (UHF) C*-algebra of type `2^∞`. This is
+  standard mathematics, not an axiomatic commitment.
 - spectral analysis
 - lattice Monte Carlo / plaquette evaluation on the accepted surface
 - perturbative low-energy EFT running where the package explicitly

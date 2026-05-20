@@ -14,6 +14,11 @@ quasi-local operator algebra **as a consequence of A1+A2 plus a single
 mild identification premise**, eliminating the need to adopt the
 reference state as a separate axiom.
 
+The framework's current axiom set is recorded in
+`MINIMAL_AXIOMS_2026-05-20.md` — two axioms in qubit form (A1: qubit
+per site, `M_2(ℂ) ≅ Cl(3,0)`; A2: `Z^3` substrate with tensor
+composition).
+
 The result:
 
 > On the qubit-lattice operator algebra defined by A1+A2 (`A1`: per-site

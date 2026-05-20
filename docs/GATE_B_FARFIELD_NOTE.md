@@ -2,27 +2,34 @@
 
 **Date:** 2026-04-05 (audit-narrowing refresh: 2026-05-10; 2026-05-18:
 claim_scope formalized as runner-defined conditional numerical scenario
-per audit verdict boundary instruction).
+per audit verdict boundary instruction; 2026-05-19: claim language
+tightened to **conditional numerical certificate over admitted bridge
+inputs** per audited_conditional repair campaign).
 **Type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing content
-of this note is **a runner-defined conditional numerical scenario
-under the stated admitted ingredients** — the frozen 36/36 TOWARD
+**Claim scope (post-2026-05-19 tightening):** the load-bearing content
+of this note is **a conditional numerical certificate over the
+admitted bridge inputs (growth rule, source law, propagation kernel,
+valley-linear action, readout criterion)** — the frozen 36/36 TOWARD
 result with mean `F~M = 1.00` across the four drift/restore rows on
 `z ∈ {3, 4, 5}` with twelve seeds per row at `h = 0.5`, executed by
 `scripts/gate_b_farfield_harness.py` (PASS=4, all C-class). The
 runner's primitive-to-observable ingredients (the source law, the
 propagation/readout map, the TOWARD/F~M criterion) are **admitted
-inputs to this scenario**, not derived from accepted axioms within
-this note. The audit verdict's repair sub-target ("split the
-completed bounded-run certificate from a separate primitive-to-
-observable bridge theorem") is therefore answered by **explicit
-scope narrowing** here: the certificate row is load-bearing; the
-primitive-to-observable bridge is a separate open work item.
-**Status:** frozen bounded numerical harness positive on the declared
-far-field rows for the runner-defined h=0.5 family. Full-physics Gate B
-far-field closure (deriving the source law, propagation/readout map, and
-TOWARD/F~M criterion from accepted primitives) is **not** closed by this
-note.
+bridge inputs to this certificate**, not derived from accepted axioms
+within this note. The certificate is conditional on those admitted
+bridge inputs; it does **not** propagate to a clean Gate B far-field
+closure. The audit verdict's repair sub-target ("split the completed
+bounded-run certificate from a separate primitive-to-observable bridge
+theorem") is therefore answered by **explicit scope tightening** here:
+the certificate row is load-bearing as a conditional numerical
+statement; the primitive-to-observable bridge is a separate open
+work item.
+**Status:** conditional numerical certificate over the admitted bridge
+inputs on the declared far-field rows for the runner-defined h=0.5 family.
+Clean Gate B far-field propagation (deriving the source law,
+propagation/readout map, and TOWARD/F~M criterion from accepted
+primitives) is **not** closed by this note and the certificate does
+**not** propagate past the admitted bridge inputs.
 **Status authority:** independent audit lane only.
 **Script:** [`scripts/gate_b_farfield_harness.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_farfield_harness.py) (PASS=4, all C-class)
 
@@ -192,5 +199,40 @@ needed that derives the source law, the propagation/readout map, and the
 far-field Gate B criterion from accepted primitives — with a runner that
 *constructs* rather than *assumes* that bridge. That theorem does not exist
 on `main` today; it is recorded here as a real D-class derivation gap, not
-an import-redirect. Until it lands, this row remains a bounded numerical
-harness statement on the runner-defined family.
+an import-redirect. Until it lands, this row remains a conditional
+numerical certificate over the admitted bridge inputs on the runner-defined
+family.
+
+## 2026-05-19 audit-conditional repair
+
+This pass executes the audited_conditional repair campaign 2026-05-19
+scope-narrow on this note. The repair:
+
+- **Removes clean-Gate-B propagation language.** The frontmatter and
+  Status block previously framed the load-bearing content as a "runner-
+  defined conditional numerical scenario" and as a "frozen bounded
+  numerical harness positive" on the declared rows. The 2026-05-18
+  narrowing already separated the certificate from the bridge, but
+  the phrasing still left room to read the harness output as a
+  free-standing bounded positive that could propagate toward Gate B
+  far-field closure on its own. The tightened phrasing now reads the
+  load-bearing content as a **conditional numerical certificate over
+  the admitted bridge inputs** (growth rule, source law, propagation
+  kernel, valley-linear action, readout criterion) and explicitly
+  states that the certificate does **not** propagate past those
+  admitted bridge inputs.
+- **Aligns Status with the certificate framing.** The Status line is
+  updated to say "conditional numerical certificate over the admitted
+  bridge inputs on the declared far-field rows" and to call out that
+  clean Gate B far-field propagation is not closed by this note.
+- **Preserves the artifact chain and the bounded numerical table.**
+  No runner, log, or cached result is altered. The repair is a
+  scope/claim-language tightening on top of the existing audit
+  narrowing.
+
+The repair does **not** change the verdict tier (`audited_conditional`),
+does not edit any `docs/audit/data/*.json` file, and does not touch
+repo-wide authority surfaces. The note remains a `bounded_theorem`
+whose load-bearing content is a conditional numerical certificate over
+the admitted bridge inputs, with the primitive-to-physical-gravity
+bridge recorded as the upstream D-class derivation gap.

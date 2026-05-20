@@ -46,6 +46,7 @@ compute_effective_status.py have populated criticality and effective_status.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from datetime import datetime, timezone
@@ -55,6 +56,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 RUNNER_CLASSIFICATION_PATH = DATA_DIR / "runner_classification.json"
+SOURCE_PATH_ALIASES_PATH = DATA_DIR / "source_path_aliases.json"
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import runner_cache as rc  # noqa: E402
 
@@ -70,6 +72,7 @@ def _load_runner_classification() -> dict:
 
 
 _RUNNER_CLASSIFICATION_CACHE: dict | None = None
+_SOURCE_PATH_ALIAS_REPLACEMENTS: list[tuple[str, str]] | None = None
 
 
 def _get_runner_classification() -> dict:
@@ -77,6 +80,49 @@ def _get_runner_classification() -> dict:
     if _RUNNER_CLASSIFICATION_CACHE is None:
         _RUNNER_CLASSIFICATION_CACHE = _load_runner_classification()
     return _RUNNER_CLASSIFICATION_CACHE
+
+
+def _load_source_path_alias_replacements() -> list[tuple[str, str]]:
+    """Return current->legacy string replacements for non-semantic renames."""
+    if not SOURCE_PATH_ALIASES_PATH.exists():
+        return []
+    try:
+        data = json.loads(SOURCE_PATH_ALIASES_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    aliases = data.get("aliases", {}) if isinstance(data, dict) else {}
+    replacements: set[tuple[str, str]] = set()
+    for old_path, new_path in aliases.items():
+        old = str(old_path)
+        new = str(new_path)
+        replacements.add((new, old))
+        replacements.add((Path(new).name, Path(old).name))
+    return sorted(replacements, key=lambda item: len(item[0]), reverse=True)
+
+
+def _get_source_path_alias_replacements() -> list[tuple[str, str]]:
+    global _SOURCE_PATH_ALIAS_REPLACEMENTS
+    if _SOURCE_PATH_ALIAS_REPLACEMENTS is None:
+        _SOURCE_PATH_ALIAS_REPLACEMENTS = _load_source_path_alias_replacements()
+    return _SOURCE_PATH_ALIAS_REPLACEMENTS
+
+
+def runner_hash_change_is_path_alias_only(runner_path: str | None, snap_runner_hash: str) -> bool:
+    """True when runner drift is only old source-note path -> new path text."""
+    if not runner_path:
+        return False
+    replacements = _get_source_path_alias_replacements()
+    if not replacements:
+        return False
+    path = REPO_ROOT / runner_path
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return False
+    normalized = text
+    for current, legacy in replacements:
+        normalized = normalized.replace(current, legacy)
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest() == snap_runner_hash
 
 # Strength rank used to compare 'before' and 'after' for a dep.
 # Must stay in sync with compute_effective_status.py RANK.
@@ -175,7 +221,10 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             and cur_runner_hash is not None
             and snap_runner_hash != cur_runner_hash
         ):
-            return f"runner_hash_changed:{snap_runner_hash[:8]}->{cur_runner_hash[:8]}"
+            if runner_hash_change_is_path_alias_only(row.get("runner_path"), snap_runner_hash):
+                pass
+            else:
+                return f"runner_hash_changed:{snap_runner_hash[:8]}->{cur_runner_hash[:8]}"
 
     artifact_reason = runner_artifact_issue_resolved(row)
     if artifact_reason is not None:

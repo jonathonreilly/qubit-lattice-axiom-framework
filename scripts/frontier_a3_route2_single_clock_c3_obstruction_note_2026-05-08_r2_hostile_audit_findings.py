@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2.
 
-Verifies docs/A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_R2_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_R2_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

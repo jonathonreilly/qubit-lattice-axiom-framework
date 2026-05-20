@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16.
 
-Verifies docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

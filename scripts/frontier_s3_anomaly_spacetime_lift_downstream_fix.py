@@ -34,7 +34,7 @@ CLASS_A_HITS = 0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARENT = REPO_ROOT / "docs" / "S3_ANOMALY_SPACETIME_LIFT_NOTE.md"
-FIX_RECORD = REPO_ROOT / "docs" / "S3_ANOMALY_SPACETIME_LIFT_DOWNSTREAM_FIX_NOTE_2026-05-17.md"
+FIX_RECORD = REPO_ROOT / "docs" / "S3_ANOMALY_SPACETIME_LIFT_NOTE_2026-05-17.md"
 UPSTREAM_FB = REPO_ROOT / "docs" / "ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md"
 
 
@@ -186,7 +186,7 @@ def main() -> int:
     )
     check(
         "Fix-record meta-note linked from parent",
-        "S3_ANOMALY_SPACETIME_LIFT_DOWNSTREAM_FIX_NOTE_2026-05-17.md" in parent,
+        "S3_ANOMALY_SPACETIME_LIFT_NOTE_2026-05-17.md" in parent,
     )
     check(
         "Paired runner referenced from parent",

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for dm_effective_parent_one_clock_transfer_boundary_theorem.
 
-Verifies docs/DM_EFFECTIVE_PARENT_ONE_CLOCK_TRANSFER_BOUNDARY_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/DM_EFFECTIVE_PARENT_ONE_CLOCK_TRANSFER_BOUNDARY_NOTE_2026-05-17.md.
 
 Programmatic checks:
   1. The parent note exists.

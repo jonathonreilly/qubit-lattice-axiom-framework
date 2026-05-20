@@ -31,7 +31,7 @@ except ImportError:
     HAVE_SYMPY = False
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTE_PATH = ROOT / "docs" / "COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md"
+NOTE_PATH = ROOT / "docs" / "COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md"
 MATTER_HARNESS_PATH = ROOT / "docs" / "UNIFIED_MATTER_CONTENT_EWSB_HARNESS_THEOREM_NOTE_2026-05-03.md"
 HYPERCHARGE_PATH = ROOT / "docs" / "LHCM_Y_NORMALIZATION_FROM_ANOMALY_AND_CONVENTION_NOTE_2026-05-02.md"
 YUKAWA_GUARDRAIL_PATH = ROOT / "docs" / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
@@ -64,7 +64,7 @@ def section(title):
 section("Part 0: Cited authority files exist on disk (one-hop discipline)")
 
 note_text = NOTE_PATH.read_text() if NOTE_PATH.exists() else ""
-check("docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md exists",
+check("docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md exists",
       NOTE_PATH.exists(), detail=f"path={NOTE_PATH}")
 
 check("Current matter-content/EWSB harness exists",

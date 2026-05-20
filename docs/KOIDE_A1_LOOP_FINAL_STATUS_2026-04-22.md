@@ -114,6 +114,6 @@ progress now depends on theoretical bridge work, not more iterative
 numerical verification.
 
 For review, start with:
-- `docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md`
+- `docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`
 - `docs/KOIDE_A1_DERIVATION_STATUS_NOTE.md`
 - `docs/KOIDE_A1_CLOSURE_RECOMMENDATION_2026-04-22.md`

@@ -249,7 +249,7 @@ Two hostile-audit-grade fixes applied:
   full tier table and the parent's admission-(iv) inheritance route.
 
 See companion fix-record:
-[`S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+[`S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE_2026-05-17.md`](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE_2026-05-17.md).
 
 Paired verifier:
 `scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py`.

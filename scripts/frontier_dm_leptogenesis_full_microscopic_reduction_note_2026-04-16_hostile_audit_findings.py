@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for dm_leptogenesis_full_microscopic_reduction_note_2026-04-16.
 
-Verifies docs/DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

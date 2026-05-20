@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for yt_bridge_action_invariant_note.
 
-Verifies docs/YT_BRIDGE_ACTION_INVARIANT_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/YT_BRIDGE_ACTION_INVARIANT_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

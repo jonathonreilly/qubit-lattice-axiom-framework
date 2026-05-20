@@ -35,6 +35,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 LOG = REPO_ROOT / "docs" / "audit" / "data" / "repair_class_backfill_log.json"
 PROMPTS = REPO_ROOT / "docs" / "audit" / "MISSING_DERIVATION_PROMPTS.md"
+SOURCE_PATH_ALIASES = REPO_ROOT / "docs" / "audit" / "data" / "source_path_aliases.json"
 
 CONDITIONAL_SECTIONS = [
     (
@@ -57,6 +58,29 @@ def load_synthesized_ids() -> set[str]:
         return set()
     log = json.loads(LOG.read_text())
     return {entry["claim_id"] for entry in log}
+
+
+def load_source_path_aliases() -> dict[str, str]:
+    if not SOURCE_PATH_ALIASES.exists():
+        return {}
+    try:
+        data = json.loads(SOURCE_PATH_ALIASES.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    aliases = data.get("aliases", {}) if isinstance(data, dict) else {}
+    return {str(old): str(new) for old, new in aliases.items()}
+
+
+def apply_source_path_aliases(text: str, aliases: dict[str, str]) -> str:
+    """Refresh legacy source-note path strings in the preserved prompt body."""
+    replacements: set[tuple[str, str]] = set()
+    for old_path, new_path in aliases.items():
+        replacements.add((old_path, new_path))
+        replacements.add((Path(old_path).name, Path(new_path).name))
+    out = text
+    for old, new in sorted(replacements, key=lambda item: len(item[0]), reverse=True):
+        out = out.replace(old, new)
+    return out
 
 
 def collect_rows(rows: dict[str, dict], synthesized: set[str]) -> dict[str, list[dict]]:
@@ -172,6 +196,7 @@ def main() -> int:
 
     prompts_text = PROMPTS.read_text()
     updated = replace_or_append_sections(prompts_text, new_blob)
+    updated = apply_source_path_aliases(updated, load_source_path_aliases())
     PROMPTS.write_text(updated)
 
     print("generate_conditional_prompts: wrote", PROMPTS)

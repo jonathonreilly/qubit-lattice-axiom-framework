@@ -32,7 +32,7 @@ CLASS_A_HITS = 0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARENT = REPO_ROOT / "docs" / "DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md"
-FIX_RECORD = REPO_ROOT / "docs" / "DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md"
+FIX_RECORD = REPO_ROOT / "docs" / "DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md"
 CPT_EXACT = REPO_ROOT / "docs" / "CPT_EXACT_NOTE.md"
 KS_NOTE = REPO_ROOT / "docs" / "STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md"
 
@@ -162,7 +162,7 @@ def main() -> int:
     )
     check(
         "Fix-record meta-note linked from parent",
-        "DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md" in parent,
+        "DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md" in parent,
     )
     check(
         "Paired verifier referenced from parent",

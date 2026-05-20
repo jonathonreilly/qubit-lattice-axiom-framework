@@ -147,9 +147,9 @@ So the current charged-lepton package status is:
 - April 22 Callan-Harvey physical-bridge candidate in
   `KOIDE_BRANNEN_CALLAN_HARVEY_CANDIDATE_NOTE_2026-04-22.md`
 - April 24 native-dimensionless / objection-review packet in
-  `KOIDE_NATIVE_DIMENSIONLESS_REVIEW_PACKET_2026-04-24.md`,
+  `KOIDE_NATIVE_DIMENSIONLESS_NOTE_2026-04-24.md`,
   `KOIDE_POINTED_ORIGIN_EXHAUSTION_THEOREM_NOTE_2026-04-24.md`,
-  and `KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md`
+  and `KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md`
 - April 24 A1/radian audit plus Round-10 fractional-topology batch in
   `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`,
   `KOIDE_A1_FRACTIONAL_TOPOLOGY_NO_GO_SYNTHESIS_NOTE_2026-04-24.md`, and
@@ -203,9 +203,9 @@ So the current charged-lepton package status is:
 29. `KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
 30. `KOIDE_BRANNEN_GEOMETRY_DIRAC_SUPPORT_NOTE_2026-04-22.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
 31. `KOIDE_BRANNEN_CALLAN_HARVEY_CANDIDATE_NOTE_2026-04-22.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
-32. `KOIDE_NATIVE_DIMENSIONLESS_REVIEW_PACKET_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
+32. `KOIDE_NATIVE_DIMENSIONLESS_NOTE_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
 33. `KOIDE_POINTED_ORIGIN_EXHAUSTION_THEOREM_NOTE_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
-34. `KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_REVIEW_PACKET_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
+34. `KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
 35. `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
 36. `KOIDE_A1_FRACTIONAL_TOPOLOGY_NO_GO_SYNTHESIS_NOTE_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
 37. `KOIDE_A1_O13_CHEEGER_SIMONS_RZ_NO_GO_NOTE_2026-04-24.md` <!-- cycle-break 2026-05-15: forward ref backticked -->

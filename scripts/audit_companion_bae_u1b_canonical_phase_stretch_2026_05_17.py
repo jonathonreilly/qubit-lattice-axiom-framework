@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact-symbolic audit-companion runner for the BAE U(1)_b canonical-phase
 stretch attempt note
-`BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17.md`.
+`BAE_U1B_CANONICAL_PHASE_NOTE_2026-05-17.md`.
 
 The note tests five stretch routes (R1)-(R5) for supplying a canonical
 direction on the U(1)_b doublet plane on Herm_circ(3) from A_min plus
@@ -418,7 +418,7 @@ def main() -> int:
     )
 
     # Verify all retained authorities (X1)-(X4) are markdown-link cited.
-    note_path = Path(__file__).parent.parent / "docs" / "BAE_U1B_CANONICAL_PHASE_STRETCH_ATTEMPT_NOTE_2026-05-17.md"
+    note_path = Path(__file__).parent.parent / "docs" / "BAE_U1B_CANONICAL_PHASE_NOTE_2026-05-17.md"
     if note_path.exists():
         text = note_path.read_text()
         for filename in [

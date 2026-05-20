@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for koide_brannen_callan_harvey_candidate_note_2026-04-22.
 
-Verifies docs/KOIDE_BRANNEN_CALLAN_HARVEY_CANDIDATE_NOTE_2026-04-22_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/KOIDE_BRANNEN_CALLAN_HARVEY_CANDIDATE_NOTE_2026-04-22_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

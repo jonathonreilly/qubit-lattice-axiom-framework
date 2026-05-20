@@ -183,7 +183,7 @@ budget like the YT/top transport lane has).
 - [CONFINEMENT_STRING_TENSION_NOTE.md](../../CONFINEMENT_STRING_TENSION_NOTE.md) — confinement T=0 + bounded √σ
 - [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](../../GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) — graph-first SU(3) closure
 - [ALPHA_S_DERIVED_NOTE.md](../../ALPHA_S_DERIVED_NOTE.md) — α_s(M_Z) retained
-- [QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md](../../QUARK_MASS_RATIO_REVIEW_PACKET_2026-04-18.md) — Lane 3 entry point
+- [QUARK_MASS_RATIO_NOTE_2026-04-18.md](../../QUARK_MASS_RATIO_NOTE_2026-04-18.md) — Lane 3 entry point
 - Standard lattice QCD methodology (Wilson / staggered actions are explicitly
   in the framework's substrate language)
 

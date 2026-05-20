@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for dm_abcc_chamber_bound_derivation_note_2026-04-20.
 
-Verifies docs/DM_ABCC_CHAMBER_BOUND_DERIVATION_NOTE_2026-04-20_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/DM_ABCC_CHAMBER_BOUND_DERIVATION_NOTE_2026-04-20_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

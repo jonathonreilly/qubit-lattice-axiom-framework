@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for signed_gravity_cl3z3_source_character_derivation_note.
 
-Verifies docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/SIGNED_GRAVITY_CL3Z3_SOURCE_CHARACTER_DERIVATION_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

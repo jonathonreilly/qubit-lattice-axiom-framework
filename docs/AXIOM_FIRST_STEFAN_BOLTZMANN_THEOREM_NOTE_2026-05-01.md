@@ -382,7 +382,7 @@ One hostile-audit-grade fix applied to this note:
   the runner expectation, and the corollaries (C1-C4) are unaffected.
 
 See companion fix-record:
-[`AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](AXIOM_FIRST_STEFAN_BOLTZMANN_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+[`AXIOM_FIRST_STEFAN_BOLTZMANN_NOTE_2026-05-17.md`](AXIOM_FIRST_STEFAN_BOLTZMANN_NOTE_2026-05-17.md).
 
 Paired verifier:
 `scripts/frontier_axiom_first_stefan_boltzmann_downstream_fix.py`.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for signed_gravity_boundary_coframe_chi_probe_note.
 
-Verifies docs/SIGNED_GRAVITY_BOUNDARY_COFRAME_CHI_PROBE_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/SIGNED_GRAVITY_BOUNDARY_COFRAME_CHI_PROBE_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

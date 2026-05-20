@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25.
 
-Verifies docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

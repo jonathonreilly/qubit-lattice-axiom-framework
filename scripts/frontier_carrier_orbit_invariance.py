@@ -596,7 +596,7 @@ def part8_named_obstruction_registry_closure() -> None:
     print("PART 8: NAMED RESIDUAL OBSTRUCTION (registry closure)")
     print("=" * 88)
 
-    note = read("docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md")
+    note = read("docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md")
 
     check(
         "Stretch-attempt note exists",
@@ -628,7 +628,7 @@ def part9_independence_from_v_even_values() -> None:
     print("PART 9: INDEPENDENCE FROM V_EVEN VALUES (no cycle 16/17 numeric leakage)")
     print("=" * 88)
 
-    note = read("docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md")
+    note = read("docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md")
 
     # Verify: the cycle 22 note does NOT consume v_even = (sqrt(8/3), sqrt(8)/3)
     # as a load-bearing input. v_even values can be MENTIONED as prior-cycle
@@ -660,7 +660,7 @@ def part10_review_value_boundary_check() -> None:
     print("PART 10: REVIEW VALUE BOUNDARY (source note, no branch-local cert)")
     print("=" * 88)
 
-    note = read("docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md")
+    note = read("docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md")
 
     check(
         "Source note names cycle 17's specific obstruction text",
@@ -689,7 +689,7 @@ def part11_refined_precursor_chain() -> None:
     print("PART 11: REFINED PRECURSOR CHAIN (2026-05-07 closure-attempt sharpening)")
     print("=" * 88)
 
-    note = read("docs/CARRIER_ORBIT_INVARIANCE_STRETCH_ATTEMPT_NOTE_2026-05-03.md")
+    note = read("docs/CARRIER_ORBIT_INVARIANCE_NOTE_2026-05-03.md")
 
     check(
         "Note carries the 2026-05-07 refinement section",

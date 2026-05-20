@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for signed_gravity_chi_selector_theorem_or_nogo_note.
 
-Verifies docs/SIGNED_GRAVITY_CHI_SELECTOR_THEOREM_OR_NOGO_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/SIGNED_GRAVITY_CHI_SELECTOR_THEOREM_OR_NOGO_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

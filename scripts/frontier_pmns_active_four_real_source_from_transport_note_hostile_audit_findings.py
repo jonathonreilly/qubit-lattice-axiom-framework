@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for pmns_active_four_real_source_from_transport_note.
 
-Verifies docs/PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

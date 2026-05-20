@@ -210,7 +210,7 @@ Three hostile-audit-grade issues were patched on this note:
   and identifies itself as the **inherited (admission (iv))** branch.
 
 See companion fix-record:
-[`DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](DT1_TIME_DIMENSION_PROOF_WALK_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+[`DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md`](DT1_TIME_DIMENSION_PROOF_WALK_NOTE_2026-05-17.md).
 
 Paired verifier:
 `scripts/frontier_dt1_time_dimension_proof_walk_downstream_fix.py`.

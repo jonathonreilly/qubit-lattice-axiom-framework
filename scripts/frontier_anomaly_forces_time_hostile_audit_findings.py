@@ -2,7 +2,7 @@
 """Anomaly-Forces-Time Hostile Audit Findings — Verification Runner.
 
 Verifies the programmatically-checkable findings (F-C and F-E) of
-`docs/ANOMALY_FORCES_TIME_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-16.md`.
+`docs/ANOMALY_FORCES_TIME_NOTE_2026-05-16.md`.
 
 The note documents four findings from a 5-agent hostile audit fan-out:
 
@@ -343,7 +343,7 @@ def main() -> int:
     print("=" * 78)
     print("ANOMALY-FORCES-TIME HOSTILE AUDIT FINDINGS — VERIFICATION RUNNER")
     print("=" * 78)
-    print("Verifies docs/ANOMALY_FORCES_TIME_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-16.md")
+    print("Verifies docs/ANOMALY_FORCES_TIME_NOTE_2026-05-16.md")
     print()
     print("Programmatically checks F-C (admission iii routing broken) and")
     print("F-E (cycle-0002 contains cite-only edges marked non-load-bearing).")

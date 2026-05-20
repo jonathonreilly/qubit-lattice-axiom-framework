@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for pmns_selector_three_identity_support_note_2026-04-21.
 
-Verifies docs/PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

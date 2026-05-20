@@ -2,7 +2,7 @@
 """Verify the stretch-attempt note for yt_ew matching rule M residual.
 
 The note is at:
-  docs/YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md
+  docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md
 
 This runner verifies:
   Part 1: stretch-attempt note structure (A_min, forbidden imports, obstruction)
@@ -17,7 +17,7 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTE_PATH = ROOT / "docs" / "YT_EW_MATCHING_RULE_M_STRETCH_ATTEMPT_NOTE_2026-05-02.md"
+NOTE_PATH = ROOT / "docs" / "YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0

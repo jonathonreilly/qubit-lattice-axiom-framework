@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20.
 
-Verifies docs/KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md.
+Verifies docs/KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

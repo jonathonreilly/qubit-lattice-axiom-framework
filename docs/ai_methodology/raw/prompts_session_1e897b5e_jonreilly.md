@@ -82,7 +82,7 @@ Summary:
      - Documents three chi²=0 basins: Basin 1 (C_base, det=+0.959), Basin 2 (C_neg, det=-70377), Basin X (C_neg, det=-20295)
      - 15 runners, PASS=502, FAIL=0
 
-   - **`docs/CHARGED_LEPTON_KOIDE_REVIEW_PACKET_2026-04-18.md`** (read only):
+   - **`docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`** (read only):
      - Shows charged lepton state: exact candidate-route closure, one irreducible microscopic scalar selector law open
      - The remaining gap: m = Re K12 + 4√2/9 = Tr K_Z3 on the selected slice
 

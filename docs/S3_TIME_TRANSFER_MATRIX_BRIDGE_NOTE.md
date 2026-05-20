@@ -326,7 +326,7 @@ Three hostile-audit-grade issues patched on this note:
   [PR #1507](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1507)).
 
 See companion fix-record:
-[`S3_TIME_TRANSFER_MATRIX_BRIDGE_DOWNSTREAM_FIX_NOTE_2026-05-17.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_DOWNSTREAM_FIX_NOTE_2026-05-17.md).
+[`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md).
 
 Paired verifier:
 `scripts/frontier_s3_time_transfer_matrix_bridge_downstream_fix.py`.

@@ -240,21 +240,52 @@ The deficit `theta_{e_face} = 0`.
 
 (C_axis): a cube-axis edge such as `(v_0, v_1)` is shared by **four**
 cubes (the four cubes meeting along that edge: `Q, Q + (0, -1, 0), Q +
-(0, 0, -1), Q + (0, -1, -1)`). Within each cube the edge belongs to
-exactly **two** tets, and by `(T1)` each of those two contributes `pi /
-4` (the axis-edge entry in `T_1`). Summing across all four cubes,
+(0, 0, -1), Q + (0, -1, -1)`).
+
+> **2026-05-19 audit-conditional caveat.** A "uniform per-cube" count of
+> `4 cubes * 2 tets/cube * pi/4 = 8 * pi/4` (i.e., assuming every cube
+> presents the axis edge as a "diagonal-meeting" pair of tets, each at
+> `pi/4`) is **mis-counted**: in the Coxeter chain the per-cube
+> incidence of tets containing a given axis edge depends on the edge's
+> orientation relative to that cube's body diagonal. For four cubes
+> sharing an interior axis edge the actual enumeration mix is two cubes
+> presenting the edge in **two** tets at `pi/4` and two cubes
+> presenting it in **one** tet at `pi/2` (or equivalent permutations
+> consistent with `O_h`-orbit constraints), yielding a finite
+> edge-star with **6** contributing tets rather than 8 (see the runner
+> printout below). The sum still equals `2 pi`:
+>
+> ```text
+> 4 * (pi/4)   +   2 * (pi/2)   =   pi   +   pi   =   2 pi.            (10)
+> ```
+>
+> Equivalently, summing the within-cube totals (each cube contributes
+> `pi/2`, whether as `2 * pi/4` or as `1 * pi/2`), `4 * (pi/2) = 2 pi`.
+> The resulting deficit `theta_{e_axis} = 0` is unchanged, but the
+> aggregate proof of `(T2)` for the axis class is **conditional on the
+> corrected finite edge-star enumeration**, not on a uniform
+> 8-incidence count.
+
+By the corrected enumeration above,
 
 ```text
-sum_{T ni (v_0, v_1)} alpha_T(v_0, v_1)  =  4 * 2 * (pi / 4)  =  2 pi.    (10)
+sum_{T ni (v_0, v_1)} alpha_T(v_0, v_1)  =  6 contributions, summing to 2 pi.    (10)
 ```
 
 The deficit `theta_{e_axis} = 0`.
 
-The runner verifies the same identity for the alternate axis-edge
-orientation (e.g., `(v_1, v_2)`, where only **one** tet per cube contains
-the edge but each contributes `pi / 2`, and four cubes meet along that
-edge): `4 * 1 * (pi / 2) = 2 pi`. The sum is `2 pi` regardless of the
-edge's local position within the Coxeter chain.
+The runner verifies this finite edge-star directly in Part 7 of
+[`scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py`](./../scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py),
+which on the central cube-axis edge of a `3 x 3 x 3` block reports
+`contributing tets = 6` with `dihedral sum = 2 pi` (matching `2 pi`
+to `< 1e-12`). The two per-cube orientations are independently
+verified in Parts 5 and 6 of the runner: Part 5 confirms an axis edge
+of the "diagonal-meeting" orientation (e.g., `(v_0, v_1)`) sits in
+exactly **two** tets per cube each at `pi/4`; Part 6 confirms an axis
+edge of the "diagonal-skew" orientation (e.g., `(v_1, v_2)`) sits in
+exactly **one** tet per cube at `pi/2`. Both per-cube contributions
+equal `pi/2`, so any combinatorial mix across the four cubes summing
+to four such cube-contributions yields `2 pi` total.
 
 ### Proof of `(T3)` (action vanishing)
 
@@ -431,3 +462,56 @@ verifies (PASS=N/0):
   consumed by this narrow note.
 - `RESTRICTED_STRONG_FIELD_CLOSURE_NOTE` — parent's static-conformal
   bridge dependency. Not consumed by this narrow note.
+
+## 2026-05-19 audit-conditional repair
+
+**Context.** The audited-conditional repair survey flagged the original
+`(T2)`-axis proof line `4 * 2 * (pi / 4) = 2 pi` as a mis-counted
+"uniform 8-incidence" enumeration. The miscount is in the assertion
+that every one of the four cubes sharing an interior axis edge presents
+the edge as a pair of tets in the `pi/4` ("diagonal-meeting")
+orientation. In the standard body-diagonal Coxeter chain that does not
+hold uniformly: per-cube incidence is `2` tets at `pi/4` for one axis
+orientation and `1` tet at `pi/2` for the other, depending on the edge's
+local position relative to that cube's body diagonal.
+
+**Resolution.** The `(T2)`-axis proof is now stated **conditional on
+the corrected finite edge-star enumeration** that the runner verifies
+directly:
+
+- Per-cube totals are uniformly `pi/2` regardless of orientation
+  (`2 * pi/4 = pi/2 = 1 * pi/2`), so the four-cube sum is `4 * pi/2 =
+  2 pi`. This per-cube uniformity is the load-bearing fact, not a
+  uniform 8-tet incidence count.
+- The runner's Part 7 enumerates the actual edge-star on the central
+  axis edge of a `3 x 3 x 3` block and reports `contributing tets = 6`
+  with `sum = 2 pi`. The two per-cube orientations are independently
+  verified in Parts 5 and 6.
+- The deficit `theta_{e_axis} = 0` and the action vanishing `S_R = 0`
+  conclusions are unchanged.
+
+**Retained scope after repair.**
+
+- `(T1)` unchanged: exact dihedral table for the canonical right-corner
+  tet `T_1`.
+- `(T2)`-body and `(T2)`-face unchanged: `2 pi` sums via 6 and 4
+  contributing tets respectively (uniform-incidence cases).
+- `(T2)`-axis **narrowed**: now reads "the sum equals `2 pi` because
+  each of the four cubes sharing the axis edge contributes `pi/2`,
+  whether via `2 * pi/4` or `1 * pi/2` depending on the edge's local
+  orientation in that cube". The conclusion `theta_{e_axis} = 0`
+  holds conditional on this finite edge-star enumeration matching
+  the runner's direct count.
+- `(T3)` and `(T4)` unchanged.
+
+**Audit-lane status.** This note remains in the
+`bounded_theorem` / `audited_conditional` tier pending independent
+audit review of the corrected enumeration. The narrowing does not
+introduce any new dependencies, imports, or admissions; it only
+replaces a uniform-incidence shortcut with the explicit per-cube
+edge-star enumeration the runner already computes.
+
+**Runner.** No changes required: the runner already prints the
+contributing-tet count per edge class (Part 7) and the per-orientation
+tet count per cube (Parts 5 and 6). The 29-out-of-29 PASS state at
+2026-05-19 is consistent with the corrected enumeration.

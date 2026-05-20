@@ -557,3 +557,11 @@ reviewer-handoff context rather than an active production-lane package.
 This revision updates the Status line and removes production-lane framing
 from the body. Preserved for audit/history/instrumentation per
 docs/repo/CONTROLLED_VOCABULARY.md.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [koide_q_delta_closure_package_readme_2026-04-21](KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
+- [publication.ci3_z3.claims_table](publication/ci3_z3/CLAIMS_TABLE.md)
+- [publication.ci3_z3.inputs_and_qualifiers_note](publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md)

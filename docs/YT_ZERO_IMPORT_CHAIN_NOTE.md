@@ -554,3 +554,11 @@ explicit boundary the audit lane should now read is:
 - **No new admissions.** No step in section 9 introduces a new axiom,
   a new admission, or a new structural input beyond what is already
   named in the cited retained / retained-bounded upstream notes.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [plaquette_self_consistency_note](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+- [ew_current_fierz_channel_decomposition_note_2026-05-01](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
+- [rconn_derived_note](RCONN_DERIVED_NOTE.md)

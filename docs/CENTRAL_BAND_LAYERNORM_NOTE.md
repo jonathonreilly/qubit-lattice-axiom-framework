@@ -202,3 +202,9 @@ fit:
 
 - `scripts/geometry_lane_head_to_head.py`
 - `logs/runner-cache/geometry_lane_head_to_head.txt`
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [geometry_lane_head_to_head_note](GEOMETRY_LANE_HEAD_TO_HEAD_NOTE.md)

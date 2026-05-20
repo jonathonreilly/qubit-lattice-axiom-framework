@@ -178,6 +178,7 @@ def main() -> int:
             "confirmed",
             "third_confirmed_first",
             "third_confirmed_second",
+            "third_confirmed_hybrid",
             "three_way_disagreement",
             "disagreement_irresolvable",
         }
@@ -193,6 +194,10 @@ def main() -> int:
                 per_family[side_fam]["cross_confirmation_pairs_seen"] += 1
                 if cc_status == "confirmed":
                     per_family[side_fam]["cross_confirmation_pairs_agreed_first_try"] += 1
+
+        if cc_status == "third_confirmed_hybrid":
+            if third.get("auditor_family"):
+                per_family[third["auditor_family"]]["judicial_third_pass_count"] += 1
 
         if cc_status in ("third_confirmed_first", "third_confirmed_second"):
             winning_side = "first" if cc_status == "third_confirmed_first" else "second"

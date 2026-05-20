@@ -343,7 +343,7 @@ def _categorize_criticality_bump(row: dict, target_criticality: str) -> str:
     # target_criticality == "critical"
     cc = row.get("cross_confirmation") or {}
     cc_status = cc.get("status") if isinstance(cc, dict) else None
-    if cc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second"}:
+    if cc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
         return "noop"  # already cross-confirmed
 
     # audited_clean + non-weak indep + bumped to critical without

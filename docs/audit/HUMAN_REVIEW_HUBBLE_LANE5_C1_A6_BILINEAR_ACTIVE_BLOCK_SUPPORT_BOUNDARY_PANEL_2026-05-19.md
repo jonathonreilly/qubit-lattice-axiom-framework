@@ -117,3 +117,7 @@ The human reviewer should choose one of:
    `audited_clean / bounded_theorem / C`.
 
 The autonomous audit-loop should not retry the completed five-judge panel.
+
+## Second-Stage Panel Resolution
+
+On 2026-05-20T02:40:54.782376+00:00, a human-authorized second-stage five-judge panel reviewed the full prior 2-2-1 outcome and resolved the row by 5/5 majority for `hybrid / audited_clean / bounded_theorem / C`. The ledger was updated through `apply_audit.py`; this note is retained as the record of the first unresolved panel.

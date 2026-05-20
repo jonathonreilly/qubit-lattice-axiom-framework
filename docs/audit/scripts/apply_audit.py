@@ -142,8 +142,13 @@ def _family_meets_floor(family: str | None) -> bool:
     floor_padded = floor + (0,) * (width - len(floor))
     return rank_padded >= floor_padded
 
-ALLOWED_JUDICIAL_SIDES = {"first", "second", "neither"}
-JUDICIAL_REVIEWABLE_STATUSES = {"disagreement", "third_confirmed_first", "third_confirmed_second"}
+ALLOWED_JUDICIAL_SIDES = {"first", "second", "hybrid", "neither"}
+JUDICIAL_REVIEWABLE_STATUSES = {
+    "disagreement",
+    "third_confirmed_first",
+    "third_confirmed_second",
+    "third_confirmed_hybrid",
+}
 TERMINAL_CROSS_CONFIRM_VERDICTS = {
     "audited_renaming",
     "audited_numerical_match",
@@ -318,7 +323,7 @@ def legacy_confirmed_clean_claim_type_reaudit(row: dict, verdict: str, xc_status
         return False
     if verdict != "audited_clean":
         return False
-    if xc_status not in {"confirmed", "third_confirmed_first", "third_confirmed_second"}:
+    if xc_status not in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
         return False
     xc = row.get("cross_confirmation") or {}
     first = xc.get("first_audit") or {}
@@ -338,6 +343,8 @@ def legacy_confirmed_clean_claim_type_reaudit(row: dict, verdict: str, xc_status
             and second.get("claim_type") is None
             and third.get("claim_type") is None
         )
+    if xc_status == "third_confirmed_hybrid":
+        return third.get("verdict") == "audited_clean" and third.get("claim_type") is None
     return (
         first.get("verdict") == "audited_clean"
         and second.get("verdict") == "audited_clean"
@@ -354,7 +361,7 @@ def legacy_confirmed_clean_verdict_reaudit(row: dict, verdict: str, xc_status: s
         return False
     if verdict == "audited_clean":
         return False
-    if xc_status not in {"confirmed", "third_confirmed_first", "third_confirmed_second"}:
+    if xc_status not in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
         return False
     xc = row.get("cross_confirmation") or {}
     first = xc.get("first_audit") or {}
@@ -364,6 +371,8 @@ def legacy_confirmed_clean_verdict_reaudit(row: dict, verdict: str, xc_status: s
         return first.get("verdict") == "audited_clean" and third.get("verdict") == "audited_clean"
     if xc_status == "third_confirmed_second":
         return second.get("verdict") == "audited_clean" and third.get("verdict") == "audited_clean"
+    if xc_status == "third_confirmed_hybrid":
+        return third.get("verdict") == "audited_clean"
     return first.get("verdict") == "audited_clean" and second.get("verdict") == "audited_clean"
 
 
@@ -374,6 +383,8 @@ def legacy_clean_consensus_summary(row: dict, audit: dict, xc_status: str | None
         winning = [xc.get("first_audit") or {}, xc.get("third_audit") or {}]
     elif xc_status == "third_confirmed_second":
         winning = [xc.get("second_audit") or {}, xc.get("third_audit") or {}]
+    elif xc_status == "third_confirmed_hybrid":
+        winning = [xc.get("third_audit") or {}]
     else:
         winning = [xc.get("first_audit") or {}, xc.get("second_audit") or {}]
 
@@ -562,23 +573,30 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         ledger["rows"] = rows
         return False, "judicial review found neither prior reading sufficient; human review required"
 
-    chosen = first if side == "first" else second
-    chosen_label = "first" if side == "first" else "second"
-    if ratified_verdict != chosen.get("verdict"):
-        return False, (
-            f"ratified_verdict {ratified_verdict!r} does not match "
-            f"{chosen_label}_audit verdict {chosen.get('verdict')!r}"
-        )
-    chosen_claim_type = chosen.get("claim_type")
-    if (
-        ratified_claim_type is not None
-        and chosen_claim_type is not None
-        and ratified_claim_type != chosen_claim_type
-    ):
-        return False, (
-            f"ratified_claim_type {ratified_claim_type!r} does not match "
-            f"{chosen_label}_audit claim_type {chosen_claim_type!r}"
-        )
+    chosen_claim_type = None
+    if side == "hybrid":
+        if not judgment.get("hybrid_resolution_note"):
+            return False, "hybrid judicial review requires hybrid_resolution_note"
+        if ratified_claim_type is None:
+            return False, "hybrid judicial review requires ratified_claim_type"
+    if side in {"first", "second"}:
+        chosen = first if side == "first" else second
+        chosen_label = "first" if side == "first" else "second"
+        if ratified_verdict != chosen.get("verdict"):
+            return False, (
+                f"ratified_verdict {ratified_verdict!r} does not match "
+                f"{chosen_label}_audit verdict {chosen.get('verdict')!r}"
+            )
+        chosen_claim_type = chosen.get("claim_type")
+        if (
+            ratified_claim_type is not None
+            and chosen_claim_type is not None
+            and ratified_claim_type != chosen_claim_type
+        ):
+            return False, (
+                f"ratified_claim_type {ratified_claim_type!r} does not match "
+                f"{chosen_label}_audit claim_type {chosen_claim_type!r}"
+            )
     ratified_decoration_parent = (
         judgment.get("ratified_decoration_parent_claim_id")
         or judgment.get("decoration_parent_claim_id")
@@ -587,9 +605,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         return False, "judicial audited_decoration requires decoration_parent_claim_id"
     ratified_class = judgment.get("ratified_load_bearing_step_class")
 
-    row["cross_confirmation"]["status"] = (
-        "third_confirmed_first" if side == "first" else "third_confirmed_second"
-    )
+    row["cross_confirmation"]["status"] = {
+        "first": "third_confirmed_first",
+        "second": "third_confirmed_second",
+        "hybrid": "third_confirmed_hybrid",
+    }[side]
     row["audit_status"] = ratified_verdict
     row["auditor"] = judgment["third_auditor"]
     row["auditor_family"] = judgment["auditor_family"]

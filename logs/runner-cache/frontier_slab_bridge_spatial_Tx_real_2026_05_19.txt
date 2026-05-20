@@ -1,0 +1,43 @@
+==============================================================================
+Spatial slab transfer operator T_x positivity and Δ_x > 0
+Runner companion to docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md
+Discharges H1, H2 of the 2026-05-17 spatial slab-bridge note.
+==============================================================================
+
+[V1] Wilson axis-permutation symmetry of S_W (Lemma 2.1) ...
+    PASS — L=2 3D lattice, N_configs=20, beta=2.0; checked 60 (config × axis-swap) cases across 3 cubic axis-swaps; max |S_W[σU] − S_W[U]| = 2.132e-14 (tol 1e-09).
+
+[V2] T_x kernel = T_τ kernel under axis swap (Lemma 3.1) ...
+    PASS — N_max=4, tau=4.0; spectrum length = 3136; max |T_x_eig − T_τ_eig| = 0.000e+00 (tol 1e-14); irrep-label match: YES.
+
+[V3] T_x kernel strict positivity on torus mesh (Theorem A.3) ...
+    PASS — Spatial-slab kernel K_τ on N_mesh=16×16 torus mesh; τ=4.0, N_max=12; min K_τ = 1.287344e-03, max K_τ = 5.365438e+01; strict positive margin (> 0.0001): YES.
+
+[V4] Trace-class convergence of character series (Theorem A.2) ...
+    PASS — τ=4.0: S_4 = 5.024787e+01, S_8 = 5.365406e+01, S_12 = 5.365438e+01; relative tail S_8→S_12 = 5.939e-06 (tol 0.0001); relative tail S_4→S_8 = 6.348e-02.
+
+[V5] Δ_x > 0 from T_x diagonalization (Theorem A.4 + A.5) ...
+    PASS — τ=4.0, N_max=4; top λ_0 = 1.000000000000, λ_1 = 0.411112290507; top multiplicity = 1 (expected 1); Δ_x = log(λ_0/λ_1) = 8.888889e-01 (expected 2τ/9 = 8.888889e-01); margin 1e-06.
+
+[V6] Δ_x = Δ_τ to machine precision (Lemma 3.1 prediction) ...
+    PASS — τ=4.0, N_max=4; Δ_τ = 8.8888888888888884e-01, Δ_x = 8.8888888888888884e-01; |Δ_x − Δ_τ| / Δ_τ = 0.000e+00 (tol 1e-10).
+
+[V7] Spatial-slab Leg A composition: det(D_x + m I) > 0 (Lemma 4.2) ...
+    PASS — Sampled N=30 random SU(3) configs at m=0.5; min det(D_x + m I) = 1.250000e-01, max = 1.250000e-01; margin threshold = 1.562500e-04. All real-positive.
+
+[V8] Slab-bridge bound (S) at d ∈ {0, 1, 2} (§5 discharge) ...
+    PASS — Slab-bridge bound (S) check via single-link transfer-operator spectral correlator on the (1,0)+(0,1) subspace; Δ_x = 2τ/9 = 8.888889e-01; d=0: |C(d)| = 5.000000e-01, ‖A‖‖B‖ exp(-d Δ_x) = 5.000000e-01, OK: YES; d=1: |C(d)| = 2.055561e-01, ‖A‖‖B‖ exp(-d Δ_x) = 2.055561e-01, OK: YES; d=2: |C(d)| = 8.450666e-02, ‖A‖‖B‖ exp(-d Δ_x) = 8.450666e-02, OK: YES
+
+==============================================================================
+PASS=8  FAIL=0  (runtime: 0.22 s)
+==============================================================================
+  [PASS] V1 Wilson axis-permutation invariance of S_W
+  [PASS] V2 T_x kernel = T_τ kernel under axis-swap
+  [PASS] V3 T_x kernel strictly positive on SU(3) (axis-relabeled)
+  [PASS] V4 T_x trace-class convergence via character series
+  [PASS] V5 Δ_x > 0 from T_x spectrum
+  [PASS] V6 Δ_x = Δ_τ to machine precision
+  [PASS] V7 Spatial-slab fermion det positivity (Lemma 4.2)
+  [PASS] V8 slab-bridge bound (S) at d ∈ {0, 1, 2}
+
+All verifications passed; runner exits cleanly.

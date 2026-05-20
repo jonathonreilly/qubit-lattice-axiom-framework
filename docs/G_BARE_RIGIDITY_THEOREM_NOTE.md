@@ -1,6 +1,10 @@
 # Gauge-Normalization Rigidity Theorem
 
-**Date:** 2026-04-14  
+**Date:** 2026-04-14 (audit-conditional scope narrow 2026-05-19: holonomy
+identification step + SU3_CASIMIR decoration cite both explicitly demoted
+to admitted-context; retained scope restricted to canonical-normalization
+class-A algebra over the supplied generator embedding — see
+`## 2026-05-19 audit-conditional repair` below).
 **Branch:** `codex/dm-across-the-line`  
 **Script:** `scripts/frontier_g_bare_rigidity_theorem.py`
 
@@ -24,7 +28,14 @@ relative to three cited upstream inputs:
    framework axioms;
 3. the identification of the physical gauge connection with the
    operator-valued one-form `A_op = sum_a A^a T_a` in the canonical
-   normalized basis (the holonomy identification step).
+   normalized basis (the holonomy identification step) — **explicitly
+   admitted, not derived in this note**; see
+   `## 2026-05-19 audit-conditional repair` below.
+
+The fundamental SU(3) Casimir value `C_2 = 4/3` cited in clause 2 of the
+theorem is similarly imported as a decoration from
+`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md` and **not
+re-derived here**; see the same repair block.
 
 **Conditional on those three upstream inputs**, the present note proves
 that there is no independent scalar gauge-normalization freedom left.
@@ -185,6 +196,107 @@ This is a gauge-normalization theorem, not the whole DM closure.
 > basis rotation. In that canonical basis, the lattice holonomy is
 > `U = exp(i A^a T_a a)`, so the standard notation corresponds to
 > `g_bare = 1`.
+
+---
+
+## 2026-05-19 audit-conditional repair
+
+This block is a source-only header narrow per the
+`audited_conditional` repair pattern. No PDG values, no fitted
+selectors, no new framework axioms, no new framework primitives, no
+audit-data edits, no runner changes. The retained scope of this note is
+narrowed below; status authority remains with the independent audit
+lane.
+
+### Retained scope (in-scope under this narrow)
+
+The retained class-A algebraic content of this note is exactly the
+**canonical-normalization rigidity over the supplied generator
+embedding**. Concretely, under the supplied generator embedding of the
+canonical Hermitian traceless basis `{T_a}` into the derived
+`su(3) subset End(V)`, the Hilbert-space trace form
+`Tr(T_a T_b) = delta_ab / 2` is fixed, orthogonal basis rotations
+inside that fixed trace form preserve the Gram matrix, and a uniform
+scalar dilation `T_a -> lambda T_a` with `lambda != 1` is **not**
+an allowed ambiguity of the canonical normalization because it changes
+the fixed trace form.
+
+This is the algebraic core of Sections "Theorem" clauses 1–4 and 6 in
+the script-check list, restricted to *normalization rigidity over the
+admitted embedding*. It is verified by the companion runner
+`scripts/frontier_g_bare_rigidity_theorem.py`.
+
+### Admissions (out-of-scope under this narrow)
+
+The following two steps are now **explicitly admitted-and-not-derived**
+at header level on this row:
+
+1. **Holonomy identification step (Theorem clause 5).** The
+   identification of the physical gauge connection with the
+   operator-valued one-form
+
+   `A_op = sum_a A^a T_a`
+
+   and the lattice holonomy
+
+   `U = exp(i A_op a) = exp(i A^a T_a a)`
+
+   is **admitted as an upstream input** of this note. It is the third
+   item in the Conditional scope list of the Status section. No
+   retained framework theorem on this branch derives the physical
+   holonomy form from the bare framework primitives (A1–A2 +
+   retained); the lattice-holonomy form is imported from the standard
+   lattice-gauge dictionary. A future cite-or-derive follow-up is
+   queued: a retained theorem on this branch that derives the lattice
+   holonomy `U = exp(i A_op a)` from the framework's discrete gauge
+   primitives, rather than importing it as a convention.
+
+2. **SU3_CASIMIR decoration cite (Theorem clause 2 second equation).**
+   The canonical-fundamental Casimir value
+
+   `sum_a T_a T_a = (4/3) I_3`
+
+   appears in Theorem clause 2 and item 3 of the script-check list.
+   On this branch the `C_2 = 4/3` numeric is **imported as a
+   decoration cite** from
+   [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
+   rather than re-derived in this note. The decoration is consistent
+   with the canonical trace normalization `Tr(T_a T_b) = delta_ab/2`
+   and the standard fundamental representation of `su(3)`, but the
+   retained scope of *this* note does not load-bear the Casimir
+   value: the rigidity statement is the trace-form rigidity under the
+   admitted embedding, of which the Casimir is a consequence given
+   the same upstream input. The Casimir value itself is carried by
+   the cited cite-target's row, not by this row.
+
+### What the narrow does **not** change
+
+- The companion runner `scripts/frontier_g_bare_rigidity_theorem.py`
+  is unchanged. It continues to verify the trace-form rigidity, the
+  basis-rotation invariance of the trace Gram matrix, and the
+  scalar-dilation change of the trace form on the supplied embedding.
+  These are the checks that load-bear the *narrowed* retained scope.
+- The retained-bounded sister notes
+  `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` and
+  `NATIVE_GAUGE_CLOSURE_NOTE.md` (upstream Conditional scope item 1)
+  are not touched; their status authority remains with the audit
+  pipeline.
+- `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md` is not touched
+  by this repair; the Casimir value is now an explicit cite from that
+  row rather than a re-derived clause of this row.
+- The earlier "What This Does And Does Not Close" section is not
+  contradicted: the lane caveats (DM relic, baryon denominator,
+  k=0 / radiation-era, dynamical running) remain out-of-scope.
+
+### Status authority disclaimer
+
+This section is descriptive, not promotional. The independent audit
+lane retains sole authority over the effective status of this row.
+This repair does not promote, retain, or change any audit status; it
+only narrows the **source-side retained scope** of the note to the
+canonical-normalization class-A algebra over the supplied generator
+embedding, and elevates the holonomy identification step and the
+SU3_CASIMIR decoration cite to explicit admitted-context.
 
 ---
 

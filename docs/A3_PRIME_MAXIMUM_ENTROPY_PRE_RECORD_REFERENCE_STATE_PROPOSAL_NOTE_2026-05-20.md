@@ -1,9 +1,31 @@
 # A3' Proposal: Maximum-Entropy Pre-Record Reference State
 
 **Date:** 2026-05-20
-**Status:** proposal — pre-audit, pre-derivation work
-**Type:** meta (proposed framework axiom)
-**Proposed addition to:** `MINIMAL_AXIOMS_2026-05-03.md` (current two-axiom set: A1, A2)
+**Status:** **SUPERSEDED (same-day)** by the tracial-state derivation
+route. The pre-record reference state `ρ_ref = ⊗_x I/2` is now
+derived from A1+A2 (with the qubit reading of A1) as the unique
+tracial state on the quasi-local algebra, plus a mild
+"no-extra-structure" identification premise. A3 is therefore *not*
+adopted as a third axiom; the framework stays at two axioms.
+
+See:
+- `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` — presentational
+  sharpening of A1 to the equivalent qubit form, which makes the
+  qubit-operator-algebra reading load-bearing.
+- `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`
+  — derives `ρ_ref` as the unique tracial state on A1+A2 via
+  standard operator-algebra mathematics (Powers' theorem on UHF
+  type `2^∞` C*-algebra), with the no-extra-structure
+  identification premise as the only admitted input.
+
+The Born-rule derivation sketch (§"Born derivation attempt" below)
+remains valid; only `ρ_ref`'s provenance changes from posited
+(this note's earlier framing) to derived (companion derivation
+note above). The rest of this file is preserved for the historical
+record of the proposal-and-supersession arc.
+
+**Type:** meta (proposed framework axiom — superseded)
+**Originally proposed as:** addition to `MINIMAL_AXIOMS_2026-05-03.md`
 
 ## Headline
 

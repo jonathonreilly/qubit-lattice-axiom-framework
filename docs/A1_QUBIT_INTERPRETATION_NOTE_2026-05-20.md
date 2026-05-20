@@ -159,21 +159,19 @@ generalized-probability-theoretic."
 
 ## Adopted form (after panel review, `MINIMAL_AXIOMS_2026-05-20.md`)
 
-The qubit reframe, tightened by panel review for clarity and to remove
-internal redundancy and forward references, lands as:
+The qubit reframe, tightened to the cleanest physical statement
+(with math precision relegated to commentary), lands as:
 
-> 1. **A1 — Local algebra:** the local operator algebra is the unital
->    C*-algebra `M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra.
->    This is the single-qubit operator algebra.
-> 2. **A2 — Spatial substrate:** sites are indexed by the cubic lattice
->    `Z^3`. Each site carries one copy of the local algebra.
+> 1. **A1.** A qubit at every site.
+> 2. **A2.** Sites form the cubic lattice `Z^3`.
 
-This is presentational; load-bearing content is unchanged. The
-tightening (vs the initial qubit-reframe draft) drops the redundant
-Pauli-relations parenthetical (theorems on `M_2(ℂ)`, not axiom
-content), fixes the forward reference (A1 no longer mentions "sites"
-before A2 introduces them), and specifies the algebra as unital C*
-(removing the operator-algebra-type ambiguity).
+The math precision — `M_2(ℂ) ≅ Cl(3,0)` as real algebras, C*-algebra
+structure, Pauli relations, dimension counts — lives in a "what
+'qubit' means" commentary block in the canonical axiom doc, not in
+the axiom statements themselves. Substituting that math content into
+the axiom statement was the bloat that the panel critique surfaced;
+the right move is to keep the axiom physical ("qubit at every site")
+and let "qubit" carry the math precision as its standard meaning.
 
 ## What this file is not
 

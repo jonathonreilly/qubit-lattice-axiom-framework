@@ -35,23 +35,31 @@ This note also records two consequences of the qubit reframe:
 
 ## The two framework axioms
 
-1. **A1 — Local algebra:** the local operator algebra is the unital
-   C*-algebra `M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra.
-   This is the single-qubit operator algebra.
-2. **A2 — Spatial substrate:** sites are indexed by the cubic lattice
-   `Z^3`. Each site carries one copy of the local algebra.
+1. **A1.** A qubit at every site.
+2. **A2.** Sites form the cubic lattice `Z^3`.
 
 These two are self-contained, mathematically minimal, and have zero
-upstream dependencies. The `Cl(3)` framing of A1 is preserved as the
-equivalent real-algebra presentation — every existing
-retained / retained_bounded / retained_no_go row that uses
-`Cl(3)` language remains valid under the qubit reading.
+upstream dependencies.
 
-Composition of the per-site qubit algebras over `Z^3` is the standard
-C*-algebraic tensor product, giving the UHF C*-algebra of type
-`2^∞` in the thermodynamic limit. This is mathematical background
-inherited from standard operator-algebra theory, not a separate
-axiomatic commitment. See "Mathematical infrastructure" below.
+### What "qubit" and "site" mean (commentary, not axiom content)
+
+- **Qubit.** The standard quantum-information unit: a 2-dim complex
+  Hilbert space `ℂ²` with operator algebra `M_2(ℂ)`. As a real
+  algebra, `M_2(ℂ) ≅ Cl(3,0)` (8-dim over `ℝ`, the real Clifford
+  algebra over `ℝ³`). The Pauli generators `σ_1, σ_2, σ_3` satisfy
+  `σ_i² = I` and `σ_i σ_j = -σ_j σ_i` for `i ≠ j`. The "i" of
+  quantum mechanics is the central pseudoscalar `I = σ_1 σ_2 σ_3`.
+  These are theorems on `M_2(ℂ)`, not axiom content.
+- **Site.** An element of `Z^3`, the cubic lattice (integer triples).
+- **Composition.** Per-site qubit algebras over `Z^3` compose by
+  standard C*-algebraic tensor product, giving the UHF C*-algebra of
+  type `2^∞` in the thermodynamic limit. Standard operator-algebra
+  background, not a separate axiomatic commitment.
+
+The `Cl(3)` framing of the framework's earlier presentation is
+preserved as the equivalent real-algebra reading of `M_2(ℂ)`; every
+existing retained / retained_bounded / retained_no_go row that uses
+`Cl(3)` language remains valid under the qubit reading.
 
 Everything below the framework's surface is either:
 

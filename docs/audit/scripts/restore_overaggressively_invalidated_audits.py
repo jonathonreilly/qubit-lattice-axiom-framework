@@ -360,7 +360,7 @@ def categorize_criticality_bump_for_archived(archived: dict, target_criticality:
         return "noop"
     cc = archived.get("cross_confirmation") or {}
     cc_status = cc.get("status") if isinstance(cc, dict) else None
-    if cc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second"}:
+    if cc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
         return "noop"
     return "soft_reset"
 

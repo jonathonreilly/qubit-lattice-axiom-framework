@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 113 |
 | **retained_no_go** | 137 |
-| **retained_bounded** | 375 |
+| **retained_bounded** | 376 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
 | unaudited | 1310 |
-| audit_in_progress | 9 |
+| audit_in_progress | 8 |
 | meta | 219 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 9 |
-| `audited_clean` | 601 |
+| `audit_in_progress` | 8 |
+| `audited_clean` | 602 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1001 |
+| `bounded_theorem` | 1002 |
 | `decoration` | 27 |
 | `meta` | 222 |
 | `no_go` | 230 |
 | `open_gate` | 111 |
-| `positive_theorem` | 742 |
+| `positive_theorem` | 741 |
 
 | criticality | count |
 |---|---:|
@@ -126,7 +126,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
-| `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
@@ -372,6 +371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -5351,6 +5351,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — No. The wrapper belongs to the stale Axiom* minimality/exhaustion frame; Thread 1's failed verdict rejects the assembled forced-carrier narrative, so this source note cannot remain as an active support surface.
 - **rationale:** Issue: the note's load-bearing role is to support the stale Axiom* minimal-carrier narrative that the later audit failed, not merely to record a neutral open option. Why this blocks: keeping it active would preserve a failed wrapper frame as if it were still live support for (G1)/(C1) closure. Repair target: rebuild any future carrier-axiom analysis from a fresh proof surface that does not depend on the failed exhaustion/minimality frame. Claim boundary until fixed: the source note is retained only in archive recovery history, not as an active docs claim.
 - **auditor confidence:** high
+
+### `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29`
+
+- **Note:** [`HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md`](../../docs/HUBBLE_LANE5_C1_A6_BILINEAR_ACTIVE_BLOCK_SUPPORT_BOUNDARY_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Number-preserving bilinears on the rank-four one-particle P_A sector generate End(P_A H_cell) ~= M_4(C) and can host Cl_4(C), while the bilinear algebra alone leaves metric coframe, orientation, phase, and action-unit selection unresolved.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260520T023920Z-b8677358-hubble_lane5_c1_a6_bilin-second-stage-panel-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The load-bearing step is finite active-block matrix-unit generation together with permutation, phase-rotation, and common (S,kappa) rescaling witnesses showing that algebraic existence is not selector/metrology selection.  _(class `C`)_
+- **chain closes:** True — Human-authorized second-stage five-judge panel 20260520T023920Z-b8677358 resolved the prior 2-2-1 split by 5/5 majority for hybrid / audited_clean / bounded_theorem / C. Representative rationale: The safe retained source wording is a bounded support/boundary theorem, not a C1-closing positive theorem: the positive M_4(C)/Cl_4(C) capacity clause closes exactly, while the selector/metrology non-selection boundary is explicitly part of the retained audited claim. The class is C rather than A because the retained boundary depends on runner-witnessed non-uniqueness and rescaling checks, not only on the exact finite CAR/matrix algebra. Vote breakdown: ('hybrid', 'audited_clean', 'bounded_theorem', 'C')=5
+- **rationale:** Human-authorized second-stage five-judge panel 20260520T023920Z-b8677358 resolved the prior 2-2-1 split by 5/5 majority for hybrid / audited_clean / bounded_theorem / C. Representative rationale: The safe retained source wording is a bounded support/boundary theorem, not a C1-closing positive theorem: the positive M_4(C)/Cl_4(C) capacity clause closes exactly, while the selector/metrology non-selection boundary is explicitly part of the retained audited claim. The class is C rather than A because the retained boundary depends on runner-witnessed non-uniqueness and rescaling checks, not only on the exact finite CAR/matrix algebra. Vote breakdown: ('hybrid', 'audited_clean', 'bounded_theorem', 'C')=5
+- **auditor confidence:** second_stage_panel_majority
 
 ### `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28`
 

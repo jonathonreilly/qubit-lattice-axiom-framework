@@ -197,6 +197,61 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("weak", msg)
 
+    def test_hybrid_judicial_review_records_applyable_third_tuple(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_hybrid",
+            audit_status="audit_in_progress",
+            claim_type="positive_theorem",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        led["rows"]["test_hybrid"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": {
+                "auditor": "first-auditor",
+                "auditor_family": "codex-gpt-5",
+                "verdict": "audited_clean",
+                "claim_type": "positive_theorem",
+                "load_bearing_step_class": "C",
+            },
+            "second_audit": {
+                "auditor": "second-auditor",
+                "auditor_family": "codex-gpt-5.5",
+                "verdict": "audited_clean",
+                "claim_type": "bounded_theorem",
+                "load_bearing_step_class": "A",
+            },
+        }
+        audit = {
+            "claim_id": "test_hybrid",
+            "third_auditor": "second-stage-panel",
+            "auditor_family": "codex-gpt-5.5",
+            "auditor_model": "gpt-5.5",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "hybrid",
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "bounded_theorem",
+            "ratified_load_bearing_step_class": "C",
+            "ratified_claim_scope": "bounded clean scope",
+            "ratified_load_bearing_step": "bounded clean step",
+            "judgment_rationale": "human-authorized panel selected a third applyable tuple",
+            "first_auditor_error": "overstated claim type",
+            "second_auditor_error": "understated load-bearing class",
+            "hybrid_resolution_note": "human-authorized second-stage panel",
+        }
+        ok, msg = m.apply_one(led, audit)
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_hybrid"]
+        self.assertEqual(row["cross_confirmation"]["status"], "third_confirmed_hybrid")
+        self.assertEqual(row["cross_confirmation"]["third_audit"]["sided_with"], "hybrid")
+        self.assertEqual(row["audit_status"], "audited_clean")
+        self.assertEqual(row["claim_type"], "bounded_theorem")
+        self.assertEqual(row["load_bearing_step_class"], "C")
+        self.assertIsNone(row["blocker"])
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):
@@ -729,7 +784,7 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
         self.assertEqual(self._categorize(indep=None, cc_status=None, target="high"), "invalidate")
 
     def test_bump_to_critical_with_cross_confirmation_is_noop(self):
-        for cc in ("confirmed", "third_confirmed_first", "third_confirmed_second"):
+        for cc in ("confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"):
             self.assertEqual(
                 self._categorize(indep="cross_family", cc_status=cc, target="critical"),
                 "noop",

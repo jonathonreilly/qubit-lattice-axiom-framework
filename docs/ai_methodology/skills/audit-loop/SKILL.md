@@ -311,6 +311,14 @@ neither original audit, open/keep a human-review PR and record the panel vote
 breakdown in the PR body or comment. Do not keep retrying individual judges
 after a completed five-judge panel.
 
+If a human reviewer explicitly authorizes a second-stage panel after a completed
+no-majority panel, treat that authorization as the human-review action. Give the
+new five judges the restricted packet, the first/second audit arguments, and the
+full prior panel breakdown. If the second-stage majority selects a third
+applyable tuple rather than either original tuple, record it as
+`third_confirmed_hybrid`, then rerun the normal apply/pipeline/lint/diff-check
+gates before landing.
+
 Only stop for human review when the five-judge panel is unresolved or
 unapplyable, the tooling rejects the majority judgment, strict lint fails, or
 another hard-rule/exceptional routing case remains after the panel.
@@ -320,7 +328,7 @@ If `apply_audit.py` accepts the JSON and `audit_lint.py --strict` passes after t
 | Verdict / state | Audit-loop action |
 | --- | --- |
 | First or second `audited_clean` in the cross-confirmation flow | Direct push to `main` |
-| Cross-confirmation disagreement resolved by a five-judge panel majority that confirms an applyable first or second verdict | Direct push to `main` after applying the majority judicial JSON |
+| Cross-confirmation disagreement resolved by a five-judge panel majority that confirms an applyable first, second, or human-authorized hybrid verdict | Direct push to `main` after applying the majority judicial JSON |
 | `audited_conditional`, `audited_renaming`, `audited_decoration`, or `audited_numerical_match` | Direct push to `main` |
 | `audited_failed` on a non-controversial claim | Direct push to `main` |
 
@@ -328,7 +336,7 @@ Open a PR and flag for human review only when there is an unresolved hard-rule c
 
 | Exception | Audit-loop action |
 | --- | --- |
-| Five-judge panel has no 3-of-5 majority, sides with neither original audit, or produces an unapplyable majority tuple | Open PR; flag for human |
+| Five-judge panel has no 3-of-5 majority, sides with neither original audit without an explicitly human-authorized applyable hybrid tuple, or produces an unapplyable majority tuple | Open PR; flag for human |
 | Cross-confirmation disagreement exists but the five-judge panel cannot be run with the required context/model | Open PR; flag for human |
 | `apply_audit.py` rejects the verdict JSON or blocks on a hard rule | Open PR; flag for human |
 | `audit_lint.py --strict` fails after applying the verdict | Open PR; flag for human |

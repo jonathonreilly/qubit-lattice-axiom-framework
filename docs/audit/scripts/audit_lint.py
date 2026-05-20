@@ -352,7 +352,7 @@ def main() -> int:
                 xc = row.get("cross_confirmation") or {}
                 xc_status = xc.get("status") if isinstance(xc, dict) else None
                 other_side_non_claude = False
-                if xc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second"}:
+                if xc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                     for key in ("first_audit", "second_audit", "third_audit"):
                         side = (xc.get(key) or {}) if isinstance(xc, dict) else {}
                         side_fam = side.get("auditor_family") or ""
@@ -369,9 +369,13 @@ def main() -> int:
                     )
 
         xc = row.get("cross_confirmation") or {}
-        if isinstance(xc, dict) and xc.get("status") in {"third_confirmed_first", "third_confirmed_second"}:
+        if isinstance(xc, dict) and xc.get("status") in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
             xc_status = xc.get("status")
-            expected_side = "first" if xc_status == "third_confirmed_first" else "second"
+            expected_side = {
+                "third_confirmed_first": "first",
+                "third_confirmed_second": "second",
+                "third_confirmed_hybrid": "hybrid",
+            }[xc_status]
             first = xc.get("first_audit") or {}
             second = xc.get("second_audit") or {}
             winning = first if expected_side == "first" else second
@@ -384,7 +388,12 @@ def main() -> int:
                     errors.append(
                         f"{cid}: {xc_status} conflicts with third_audit.sided_with={side!r}"
                     )
-                if third.get("verdict") and winning.get("verdict") and third.get("verdict") != winning.get("verdict"):
+                if (
+                    expected_side != "hybrid"
+                    and third.get("verdict")
+                    and winning.get("verdict")
+                    and third.get("verdict") != winning.get("verdict")
+                ):
                     errors.append(
                         f"{cid}: {xc_status} third_audit verdict={third.get('verdict')!r} "
                         f"does not match winning audit {winning.get('verdict')!r}"
@@ -433,7 +442,7 @@ def main() -> int:
             if criticality == "critical":
                 xc = row.get("cross_confirmation") or {}
                 xc_status = xc.get("status")
-                if xc_status not in {"confirmed", "third_confirmed_first", "third_confirmed_second"}:
+                if xc_status not in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                     errors.append(
                         f"{cid}: critical claim requires confirmed cross-confirmation; "
                         f"got {xc_status!r}"
@@ -467,7 +476,7 @@ def main() -> int:
                                 f"{first.get('load_bearing_step_class')!r} vs "
                                 f"{second.get('load_bearing_step_class')!r}"
                             )
-                    if xc_status in {"third_confirmed_first", "third_confirmed_second"}:
+                    if xc_status in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                         third = xc.get("third_audit") or {}
                         if not third:
                             errors.append(f"{cid}: {xc_status} requires third_audit")
@@ -487,13 +496,20 @@ def main() -> int:
                                 "fresh_context or judicial_review independence"
                             )
                         else:
-                            winning = first if xc_status == "third_confirmed_first" else second
-                            for key in ("verdict", "claim_type", "load_bearing_step_class"):
-                                if third.get(key) != winning.get(key):
+                            if xc_status == "third_confirmed_hybrid":
+                                if third.get("sided_with") != "hybrid":
                                     errors.append(
-                                        f"{cid}: {xc_status} third_audit {key}={third.get(key)!r} "
-                                        f"does not match winning audit {winning.get(key)!r}"
+                                        f"{cid}: third_confirmed_hybrid requires "
+                                        f"third_audit.sided_with='hybrid'"
                                     )
+                            else:
+                                winning = first if xc_status == "third_confirmed_first" else second
+                                for key in ("verdict", "claim_type", "load_bearing_step_class"):
+                                    if third.get(key) != winning.get(key):
+                                        errors.append(
+                                            f"{cid}: {xc_status} third_audit {key}={third.get(key)!r} "
+                                            f"does not match winning audit {winning.get(key)!r}"
+                                        )
 
         if a == "audited_decoration":
             parent = row.get("decoration_parent_claim_id")
@@ -549,7 +565,7 @@ def main() -> int:
                 elif crit_now == "high":
                     action = "noop"
                 elif crit_now == "critical":
-                    if cc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second"}:
+                    if cc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                         action = "noop"
                     else:
                         action = "soft_reset"

@@ -175,9 +175,11 @@ For critical claims:
   auditor receives the restricted source packet plus the two prior audit
   arguments, decides whether the first, second, or neither audit is
   correct, and records `sided_with` plus a ratified verdict/class/scope.
-  The ledger status must match that decision
-  (`third_confirmed_first` or `third_confirmed_second`); a third auditor
-  that cannot ratify either side leaves the row blocked for human review.
+  The ledger status must match that decision (`third_confirmed_first`,
+  `third_confirmed_second`, or, after an explicitly human-authorized panel
+  that selects a third applyable tuple, `third_confirmed_hybrid`); a third
+  auditor that cannot ratify an applyable tuple leaves the row blocked for
+  human review.
 
 Claims at `criticality = high` (`transitive_descendants >= 30`)
 require `independence != weak` but do not require cross-confirmation by

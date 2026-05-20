@@ -116977,28 +116977,33 @@
       "verdict_rationale": "Issue: the note's load-bearing role is to support the stale Axiom* minimal-carrier narrative that the later audit failed, not merely to record a neutral open option. Why this blocks: keeping it active would preserve a failed wrapper frame as if it were still live support for (G1)/(C1) closure. Repair target: rebuild any future carrier-axiom analysis from a fresh proof surface that does not depend on the failed exhaustion/minimality frame. Claim boundary until fixed: the source note is retained only in archive recovery history, not as an active docs claim."
     },
     "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29": {
-      "audit_date": "2026-04-30T19:08:54.266831+00:00",
+      "audit_date": "2026-05-20T02:44:38.492957+00:00",
       "audit_state_snapshot": {
-        "criticality": "medium",
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 5.087,
-        "transitive_descendants": 16
+        "load_bearing_score": 11.45,
+        "runner_hash": "d34a4693fb3e55711f326e9783fa83a7cea9bcea619649205f5f7f8952c87fd8",
+        "transitive_descendants": 988
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-ca82-second-slice-b-fresh-2026-04-30",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
-      "blocker": "cross_confirmation_disagreement",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260520T023920Z-b8677358-hubble_lane5_c1_a6_bilin-second-stage-panel-majority",
+      "auditor_confidence": "second_stage_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The finite active-block construction computes the rank-four sector, the bilinear span, matrix-unit recovery, Cl_4 hosting, and non-uniqueness witnesses. The current runner reports PASS=9, FAIL=0 and directly supports the capacity-positive but selector-open boundary.",
+      "chain_closure_explanation": "Human-authorized second-stage five-judge panel 20260520T023920Z-b8677358 resolved the prior 2-2-1 split by 5/5 majority for hybrid / audited_clean / bounded_theorem / C. Representative rationale: The safe retained source wording is a bounded support/boundary theorem, not a C1-closing positive theorem: the positive M_4(C)/Cl_4(C) capacity clause closes exactly, while the selector/metrology non-selection boundary is explicitly part of the retained audited claim. The class is C rather than A because the retained boundary depends on runner-witnessed non-uniqueness and rescaling checks, not only on the exact finite CAR/matrix algebra. Vote breakdown: ('hybrid', 'audited_clean', 'bounded_theorem', 'C')=5",
       "claim_id": "hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "positive_theorem",
+      "claim_scope": "Number-preserving bilinears on the rank-four one-particle P_A sector generate End(P_A H_cell) ~= M_4(C) and can host Cl_4(C), while the bilinear algebra alone leaves metric coframe, orientation, phase, and action-unit selection unresolved.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-19T11:19:08.820061+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-20T02:44:38.492957+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -117013,6 +117018,7 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
+        "mode": "judicial_third_pass",
         "second_audit": {
           "audit_date": "2026-05-19T14:34:09.765225+00:00",
           "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-hubble_lane5_c1_a6_bilin-019",
@@ -117025,18 +117031,34 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "status": "disagreement"
+        "status": "third_confirmed_hybrid",
+        "third_audit": {
+          "audit_date": "2026-05-20T02:44:38.492957+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260520T023920Z-b8677358-hubble_lane5_c1_a6_bilin-second-stage-panel-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Number-preserving bilinears on the rank-four one-particle P_A sector generate End(P_A H_cell) ~= M_4(C) and can host Cl_4(C), while the bilinear algebra alone leaves metric coframe, orientation, phase, and action-unit selection unresolved.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It misclassified the scoped support/boundary result as a positive_theorem even though the safe retained scope includes the unresolved selector/metrology boundary.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Human-authorized second-stage five-judge panel 20260520T023920Z-b8677358 resolved the prior 2-2-1 split by 5/5 majority for hybrid / audited_clean / bounded_theorem / C. Representative rationale: The safe retained source wording is a bounded support/boundary theorem, not a C1-closing positive theorem: the positive M_4(C)/Cl_4(C) capacity clause closes exactly, while the selector/metrology non-selection boundary is explicitly part of the retained audited claim. The class is C rather than A because the retained boundary depends on runner-witnessed non-uniqueness and rescaling checks, not only on the exact finite CAR/matrix algebra. Vote breakdown: ('hybrid', 'audited_clean', 'bounded_theorem', 'C')=5",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "It correctly narrowed the claim to bounded_theorem but incorrectly treated the selector/metrology boundary as outside the load-bearing step, reducing the class to A.",
+          "sided_with": "hybrid",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "audit_in_progress",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.45,
-      "load_bearing_step": "Number-preserving bilinears on P_A H_cell generate M_4(C) and can host an intrinsic Cl_4 response, but they do not select the metric coframe basis or dimensional action unit.",
+      "load_bearing_step": "The load-bearing step is finite active-block matrix-unit generation together with permutation, phase-rotation, and common (S,kappa) rescaling witnesses showing that algebraic existence is not selector/metrology selection.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
@@ -117058,7 +117080,7 @@
       "runner_path": "scripts/frontier_hubble_lane5_c1_a6_bilinear_active_block_support_boundary.py",
       "title": "Lane 5 `(C1)` A6 Bilinear Active-Block Support/Boundary Note",
       "transitive_descendants": 988,
-      "verdict_rationale": "The support/boundary result closes: bilinears give full active algebra capacity, while permutation, phase, and action-rescaling witnesses show that existence is not selection. This is a no-go/support boundary rather than algebraic decoration, because it blocks a stronger C1 shortcut. Residual risk is the later selector/metrology theorem, which the note explicitly leaves open."
+      "verdict_rationale": "Human-authorized second-stage five-judge panel 20260520T023920Z-b8677358 resolved the prior 2-2-1 split by 5/5 majority for hybrid / audited_clean / bounded_theorem / C. Representative rationale: The safe retained source wording is a bounded support/boundary theorem, not a C1-closing positive theorem: the positive M_4(C)/Cl_4(C) capacity clause closes exactly, while the selector/metrology non-selection boundary is explicitly part of the retained audited claim. The class is C rather than A because the retained boundary depends on runner-witnessed non-uniqueness and rescaling checks, not only on the exact finite CAR/matrix algebra. Vote breakdown: ('hybrid', 'audited_clean', 'bounded_theorem', 'C')=5"
     },
     "hubble_lane5_c1_carrier_metrology_axiom_audit_note_2026-04-29": {
       "audit_date": null,

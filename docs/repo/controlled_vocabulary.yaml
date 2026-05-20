@@ -6,10 +6,10 @@
 # consumed by `scripts/render_controlled_vocabulary.py` in Cleanup-1b (for
 # regenerating CONTROLLED_VOCABULARY.md and KEY_TERMINOLOGY.md).
 #
-# Authoring rule: change this file by PR. CV.md and KEY_TERMINOLOGY.md will
-# become generated products of this YAML after Cleanup-1b lands; until then,
-# they remain hand-maintained but must stay consistent with the term_families
-# defined here.
+# Authoring rule: change this file by PR. CV.md and KEY_TERMINOLOGY.md are
+# generated products of this YAML + scripts/templates/*.template; do not edit
+# them directly. Run `python3 scripts/render_controlled_vocabulary.py` after
+# changing this file or a template.
 #
 # Design provenance: docs/repo/VOCABULARY_HYGIENE_DESIGN.md.
 
@@ -376,6 +376,398 @@ scope:
     - "Framework primitives (live in MINIMAL_AXIOMS_2026-05-03.md)"
     - "Physics quantities (live in ASSUMPTION_DERIVATION_LEDGER / per-claim notes)"
     - "Topic-specific physics wording (lives in topic notes; not vocabulary)"
+
+# ---------------------------------------------------------------------------
+# Publication-capture dispositions
+# ---------------------------------------------------------------------------
+# Used on publication-control-plane surfaces such as PUBLICATION_MATRIX.md.
+publication_capture_dispositions:
+  use_context: "Publication-control-plane surfaces such as `PUBLICATION_MATRIX.md`."
+  labels:
+    - {label: retained,    use: "live retained family on the current paper-authority surface"}
+    - {label: promoted,    use: "main-paper publication-core family carried directly in the current paper package"}
+    - {label: bounded,     use: "live captured family kept outside the main paper core with explicit caveats"}
+    - {label: open,        use: "live gate / blocker that is not yet closed"}
+    - {label: frozen-out,  use: "intentionally excluded from the main paper while still recorded"}
+  footnote: "These are package-capture decisions, not generic adjectives."
+
+# ---------------------------------------------------------------------------
+# Claim-strength / release labels
+# ---------------------------------------------------------------------------
+claim_strength_labels:
+  use_context: "Notes, claims tables, quantitative tables, and runner summaries."
+  labels:
+    - {label: retained, use: "theorem-grade closure on the retained authority surface"}
+    - {label: derived, use: "current-main downstream result obtained from retained structure plus named bridge/import assumptions; safe to quote, but not the same as zero-input retained closure"}
+    - {label: retained corollary, use: "safe retained consequence of a retained theorem/action surface"}
+    - {label: "retained support theorem / retained support", use: "exact retained support result that is reusable but not itself the manuscript headline"}
+    - {label: retained support batch, use: "coherent retained batch of support theorems/tools carried together for atlas, reviewer, or support-package reuse"}
+    - {label: "retained exact theorem / retained exact companion", use: "exact retained theorem/companion variant used when exactness itself is part of the safe statement"}
+    - {label: "retained structural theorem / retained exact structural theorem", use: "retained exact structural law on the framework/package surface"}
+    - {label: retained support tool, use: "reusable retained tool/subderivation that supports other lanes without itself being the manuscript headline"}
+    - {label: "retained framework statement / retained positioning / retained quantitative lane", use: "retained package-authority framing labels for front-door/control-plane use"}
+    - {label: "retained action-surface closure / retained restricted theorem / retained restricted support / retained evaluated theorem", use: "retained exact-result variants where the constrained surface/class/evaluation matters"}
+    - {label: "retained positive / retained partial positive", use: "retained positive lane result used mainly on atlas/toolbox surfaces rather than as the headline theorem"}
+    - {label: "exact support theorem / exact support", use: "accepted exact-support variant when exactness itself is material to the safe statement; use with the same non-headline semantics as retained support, and keep bridge/import qualifiers explicit"}
+    - {label: exact support batch, use: "coherent exact batch of support theorems/tools carried together for atlas or reviewer reuse"}
+    - {label: "exact structural theorem / exact algebraic identity / exact subderivation", use: "accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role matters"}
+    - {label: "exact boundary theorem / exact reduction theorem", use: "accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role is an open-lane boundary or a compression/reduction statement"}
+    - {label: "exact current-stack theorem / exact current-bank theorem / exact current-bank reduction / exact current-bank no-go theorem", use: "accepted exact-result specializations for current-stack/current-bank closeout rows on atlas and reviewer surfaces"}
+    - {label: "exact negative boundary / exact negative closeout / exact post-selector reduction", use: "accepted exact-result specializations for explicit no-go/closeout/post-selector roles on atlas and reviewer surfaces"}
+    - {label: exact support/boundary theorem, use: "accepted mixed exact-role label when a row simultaneously contributes a reusable exact support input and an exact open-lane boundary statement"}
+    - {label: exact support tool, use: "reusable exact tool/subderivation that supports other lanes without being the headline claim"}
+    - {label: "bounded support theorem / bounded support note / bounded support tool", use: "bounded supporting result/tool carried for atlas, reviewer, or secondary-lane use; not a main closure claim"}
+    - {label: bounded support batch, use: "coherent bounded batch of support tools/calculations carried for atlas or reviewer reuse"}
+    - {label: promoted quantitative package, use: "quantitative package strong enough for the current main-paper surface"}
+    - {label: bounded companion, use: "live bounded supporting lane outside the main paper core"}
+    - {label: bounded secondary lane, use: "live bounded lane worth carrying, but clearly secondary to the main package"}
+    - {label: "bounded frontier / bounded negative boundary / bounded Route 2 build candidate", use: "bounded frontier/result classes kept for ongoing design work rather than current-package promotion"}
+    - {label: main closure package, use: "package-level main-paper closure claim on the current review/package surface; stronger than support, but not automatically the retained quantitative paper core"}
+    - {label: conditional / support, use: "useful positive package whose load-bearing step is still conditional, imposed, or support-only"}
+    - {label: open main gate, use: "still-open main closure target"}
+    - {label: historical / diagnostic, use: "preserved for audit/history/instrumentation, not live evidence"}
+    - {label: "historical support / provenance / exact transport provenance", use: "provenance-only rows kept for route history, reviewer handoff, or closure bookkeeping rather than live promotion"}
+    - {label: negative-result, use: "useful negative or no-go result"}
+    - {label: negative-result / support, use: "negative/no-go result that is also a reusable support/pruning surface"}
+    - {label: inconclusive, use: "signal exists but interpretation is not frozen"}
+  allowed_composite_forms_intro: "Allowed composite forms should be built from the labels above and kept narrow:"
+  allowed_composite_forms:
+    - retained exact theorem
+    - retained exact companion
+    - retained structural theorem
+    - retained exact structural theorem
+    - retained corollary
+    - retained support theorem
+    - retained support batch
+    - retained support tool
+    - exact support theorem
+    - exact support batch
+    - exact structural theorem
+    - exact algebraic identity
+    - exact subderivation
+    - exact boundary theorem
+    - exact reduction theorem
+    - exact current-stack theorem
+    - exact current-bank theorem
+    - exact current-bank reduction
+    - exact current-bank no-go theorem
+    - exact negative boundary
+    - exact negative closeout
+    - exact post-selector reduction
+    - exact support/boundary theorem
+    - exact support tool
+    - bounded support theorem
+    - bounded support note
+    - bounded support tool
+    - bounded support batch
+    - bounded companion prediction
+    - bounded frontier
+    - bounded negative boundary
+    - bounded Route 2 build candidate
+    - main closure package
+    - promoted quantitative package
+    - open main gate
+  allowed_composite_forms_footnote: "Avoid minting new slash-composites when a nearby qualifier/import column can carry the caveat instead."
+  role_specialized_variants_intro: |-
+    Role-specialized variants are acceptable when the cell begins with one of the
+    accepted base labels above and the trailing noun names the mathematical role
+    or control-plane role of the row, for example:
+  role_specialized_variants:
+    - retained framework statement
+    - retained quantitative lane
+    - retained action-surface closure
+    - retained restricted theorem
+    - exact structural theorem
+    - exact algebraic identity
+    - exact subderivation
+    - retained support tool
+    - retained support batch
+    - exact support tool
+    - exact support batch
+    - exact boundary theorem
+    - exact reduction theorem
+    - exact current-stack theorem
+    - exact current-bank theorem
+    - exact current-bank no-go theorem
+    - exact negative boundary
+    - exact negative closeout
+    - exact post-selector reduction
+    - historical support / provenance
+  scope_qualifier_intro: |-
+    Do not mix a publication-capture disposition with a claim-strength label in
+    the same cell unless the file explicitly allows hybrid narrative decisions.
+
+    Short scope qualifiers may follow an accepted label when they state where the
+    claim lives, for example:
+  scope_qualifier_examples:
+    - exact boundary theorem on open gate
+    - exact reduction theorem outside main core
+    - exact support theorem on the bounded charged-lepton package
+    - exact support theorem with bounded downstream reuse
+    - retained support theorem on the current package surface
+  review_adjective_warning: |-
+    Do not use `reviewed` or `reviewer-tested` as status labels. Those are review
+    process adjectives, not controlled-vocabulary claim-strength labels. Carry
+    review context in prose, placement, or authority notes instead.
+
+# ---------------------------------------------------------------------------
+# Migration / legacy wording (proposed_*)
+# ---------------------------------------------------------------------------
+migration_legacy_wording:
+  intro: |-
+    The repo is migrating from author-declared `retained` / `promoted`
+    language to the audit-lane propose / ratify vocabulary. Source-note
+    `Status` lines now use:
+  values:
+    - {label: proposed_retained, definition: "author proposes retained-grade; awaits audit ratification"}
+    - {label: proposed_promoted, definition: "author proposes promoted-grade; awaits audit ratification"}
+  ratified_surface_pointer: |-
+    The canonical audit-ratified surface is
+    [docs/audit/AUDIT_LEDGER.md](../audit/AUDIT_LEDGER.md). Legacy
+    publication summaries may still use manuscript shorthand, but those rows
+    should be read as proposed until the audit ledger marks them clean.
+  new_note_rule: |-
+    New notes must use `proposed_retained` / `proposed_promoted` on author
+    side and rely on the pipeline's `effective_status` for the
+    publication-facing label. Do not bare-declare `retained` on a source
+    note.
+
+# ---------------------------------------------------------------------------
+# Historical lane-board labels
+# ---------------------------------------------------------------------------
+historical_lane_board_labels:
+  use_context: "Historical repo-map surfaces such as `LANE_STATUS_BOARD.md` and the lane registry."
+  labels:
+    - {label: primary-retained,    use: "current best-supported lane in the historical lane-board sense"}
+    - {label: retained-companion,  use: "real, replayable companion lane, but not the single default entrypoint"}
+    - {label: open-blocker,        use: "active blocker limiting the historical lane claim boundary"}
+    - {label: exploratory-reopen,  use: "partially positive lane worth more work, but not promoted"}
+    - {label: historical-control,  use: "historical comparison/control lane"}
+    - {label: historical-retained, use: "older retained major program, no longer the default"}
+    - {label: historical-bounded,  use: "scientifically useful historical work, no longer the lead lane"}
+    - {label: historical-blocked,  use: "diagnosed dead-end or mechanism-level blocker"}
+
+# ---------------------------------------------------------------------------
+# Historical discovery-log labels
+# ---------------------------------------------------------------------------
+historical_discovery_log_labels:
+  use_context: "Historical discovery / paper-seed ledgers such as `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`."
+  labels:
+    - {label: retained,          use: "historically important retained discovery"}
+    - {label: bounded-retained,  use: "bounded positive result preserved on `main`, worth paper planning, but not a retained theorem-grade closure"}
+    - {label: methodological,    use: "important measurement / methodology / audit contribution"}
+    - {label: negative-result,   use: "strong structural no-go or narrowing result"}
+    - {label: exploratory-lead,  use: "quantitatively interesting lead worth preserving, not yet frozen"}
+
+# ---------------------------------------------------------------------------
+# Column rules (per-file vocabulary discipline)
+# ---------------------------------------------------------------------------
+column_rules:
+  files:
+    - file: PUBLICATION_MATRIX.md
+      rules:
+        - "use publication-capture dispositions for capture decisions"
+        - "`Current publication decision` cells should begin with one of `retained`, `promoted`, `bounded`, `open`, `frozen-out`; a short placement note may follow after a semicolon"
+    - file: "CLAIMS_TABLE.md, QUANTITATIVE_SUMMARY_TABLE.md, DERIVATION_ATLAS.md"
+      rules:
+        - "use claim-strength / release labels"
+        - "accepted role-specialized variants may be used when they begin with the primary claim-strength label"
+    - file: FULL_CLAIM_LEDGER.md
+      rules:
+        - "may begin with either a publication-capture disposition or a claim-strength label because it narrates package decisions row-by-row"
+        - "avoid ad hoc hybrids; if a row begins with one family, keep any second-family qualifier short and explanatory"
+        - "on mixed audit rows, the cell should begin with the primary label from the family being used; a short explanatory qualifier may follow after a semicolon"
+        - "accepted ledger-style hybrids include forms such as `promoted exact companion`, `promoted restricted theorem`, `promoted retained closure`, `promoted retained support batch`, and `promoted retained action-surface closure`"
+    - file: "docs/audit/AUDIT_LEDGER.md, docs/audit/data/audit_ledger.json"
+      rules:
+        - "use audit-lane field vocabulary only"
+        - "rows are written by the audit pipeline / `apply_audit.py`; do not hand-edit"
+    - file: LANE_STATUS_BOARD.md
+      rules:
+        - "use historical lane-board labels"
+    - file: POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md
+      rules:
+        - "use historical discovery-log labels"
+  footnote: "Do not use row prose like `Retained ...` when the row status is `bounded-retained`."
+
+# ---------------------------------------------------------------------------
+# Protocol qualifiers
+# ---------------------------------------------------------------------------
+protocol_qualifiers:
+  intro: "These are qualifiers, not standalone status labels:"
+  values: [review surface, current package grade, strict/native map, exact-target strict/native map]
+  footnote: "They can appear in prose or qualifier/import columns, but they should not replace the primary status label."
+
+# ---------------------------------------------------------------------------
+# Evidence terms
+# ---------------------------------------------------------------------------
+evidence_terms:
+  intro: "Prefer these nouns:"
+  preferred:
+    - {term: protocol, definition: "a specific constructed experimental/computational setup"}
+    - {term: witness, definition: "a bounded positive signal on a stated protocol"}
+    - {term: diagnostic, definition: "an instrument/readout used for triage or debugging"}
+    - {term: companion, definition: "a bounded supporting lane attached to a stronger package"}
+    - {term: closure, definition: "use only when the load-bearing claim is actually closed"}
+  avoid_intro: "Avoid vague upgrades like:"
+  avoid:
+    - {term: proof, context: "when the surface is only a witness or protocol"}
+    - {term: closure, context: "when the status is really `bounded-retained` or `conditional / support`"}
+
+# ---------------------------------------------------------------------------
+# Hyphenation
+# ---------------------------------------------------------------------------
+hyphenation_rules:
+  - prefer: "observational-pin as a compound adjective"
+  - prefer: "observational pin only as a noun phrase"
+
+# ---------------------------------------------------------------------------
+# Stale-narrative archival
+# ---------------------------------------------------------------------------
+stale_narrative_archival:
+  intro: |-
+    When a wrapper note's narrative frame fails an audit, archival uses
+    fixed path and content vocabulary.
+  archive_path:
+    pattern: "archive_unlanded/<cluster-tag>/"
+    description: "the canonical recovery surface for failed-narrative source notes."
+    cluster_tag_examples: [koide-q-v6-cluster, route-2-exhaustion-failed-cluster]
+    cluster_tag_note: "The cluster-tag is a short stable noun phrase for the wrapper cluster."
+  salvage_note_required_content:
+    intro: |-
+      When a wrapper note fails but some sub-observations survive, the salvage
+      note must state:
+    must_state:
+      - "what failed (the wrapper's load-bearing claim that the audit invalidated)"
+      - "what survived (the durable structural observations that remain)"
+      - "the source wrapper's archive recovery path"
+    must_not: "restate the failed global conclusion"
+  banned_wording:
+    - phrase: '"deprecated" or "obsolete"'
+      reason: "imply a deliberate retirement decision; `audit_status: audited_failed` is the canonical record, no additional adjective needed"
+    - phrase: '"still useful"'
+      reason: "unless the sentence also states exactly for what it is still useful"
+  workflow_pointer: |-
+    The associated workflow rules live in
+    `docs/audit/STALE_NARRATIVE_POLICY.md`. Vocabulary lives here.
+
+# ---------------------------------------------------------------------------
+# Topic-local language (BMV / boundary-law / historical-retirement)
+# Cleanup-2 moves these out of CV.md into per-topic notes.
+# ---------------------------------------------------------------------------
+topic_local_language:
+  - id: bmv
+    heading: "Branch-Entanglement / BMV Language"
+    body: |-
+      Preferred terms for the current staggered branch-entanglement lane:
+
+      - `branch-mediated entanglement`
+      - `externally imposed geometry/source-branch protocol`
+      - `fixed-adjacency two-branch protocol`
+      - `branch-mediated entanglement witness`
+
+      Only call something a `BMV witness` when the surface closes the stronger
+      mediator-side requirements, including:
+
+      - branch/mediator structure is generated by the relevant physical degrees of
+        freedom, not inserted externally
+      - the mediator-null / LOCC-exclusion logic is implemented at the claimed level
+
+      For the current live branch-entanglement package, say explicitly:
+
+      - `not a self-generated mediator-branch BMV witness`
+      - `not a mediator-null / LOCC-exclusion closure`
+
+      Avoid as the primary descriptor on live package surfaces:
+
+      - `toy`
+      - `toy model`
+      - `toy witness`
+      - `BMV-like evidence`
+
+      Those are acceptable only in historical commentary where the sentence also says
+      what the protocol is missing.
+  - id: boundary_law
+    heading: "Boundary-Law Language"
+    body: |-
+      For the live boundary-law lane, prefer:
+
+      - `Dirac-sea boundary-law probe`
+      - `many-body-style boundary-law result`
+      - `bounded boundary-law package`
+
+      Avoid calling historical transfer-entropy scripts:
+
+      - `area law`
+      - `subsystem entanglement measurement`
+
+      unless the measured object actually matches that wording.
+  - id: historical_retirement
+    heading: "Historical Retirement Language"
+    body: |-
+      When an old runner is no longer live evidence, prefer:
+
+      - `retired as evidence`
+      - `historical / diagnostic`
+      - `historical exploratory predecessor`
+
+      Avoid ambiguous phrasing like:
+
+      - `still useful`
+
+      unless the sentence also states exactly for what it is still useful.
+
+# ---------------------------------------------------------------------------
+# Paper-facing prose voice
+# ---------------------------------------------------------------------------
+paper_voice:
+  intro: |-
+    The target voice for paper-facing prose, curated methodology prose, repo
+    instructions, and new synthesis is Feynman-like in the useful sense:
+    plain, physical, concrete, curious, and hard to fool. Do not imitate
+    quirks or make the prose performative. Use the attitude.
+
+    Do not rewrite raw captures or historical dated notes just to polish the
+    voice; those files are evidence of the work as it happened.
+  rule: |-
+    Explain what we are doing as if the reader is smart, skeptical, and busy.
+
+    Say the simple physical question first. Then say what was checked. Then say
+    what did not close.
+  use_this:
+    - "Start from the physical question, not from the institutional framing."
+    - "Prefer short sentences when the idea is hard."
+    - "Explain why a result is surprising or useful in ordinary language before listing the machinery."
+    - "Put equations after the idea they express."
+    - 'Say "we find", "we check", "we keep", and "we do not claim" when those are the honest verbs.'
+    - "Treat negative results as information."
+    - "Keep the reader close to the object: lattice, operator, runner, eigenvalue, projector, source, bridge."
+  avoid_this:
+    - '"broad exact backbone"'
+    - '"methodological innovation"'
+    - '"transformative framework"'
+    - '"groundbreaking result"'
+    - '"paradigm"'
+    - '"comprehensive package" unless the sentence immediately says what is inside'
+    - '"already closed" without naming the exact surface'
+    - "any sentence whose main job is to sound important"
+  decoration_pruning_tone: |-
+    When pruning algebraic decoration, the tone is "claim-surface management",
+    not "criticism of the algebra itself". The identities are real; what's
+    being pruned is the count of separately-retained rows. A package that
+    presents 25 separate retained theorems where 3 distinct claims exist is
+    harder to review, harder to falsify, and harder to take seriously as an
+    external reader. Pruning improves signal density of the publication
+    package. Use that framing in prose.
+  paragraph_test_intro: "For each paragraph, ask:"
+  paragraph_test:
+    - "What is the question?"
+    - "What is the object being calculated?"
+    - "What is the support surface?"
+    - "What is still open?"
+  paragraph_test_footnote: |-
+    If the paragraph does not answer at least one of these, cut it or move
+    it to a ledger.
 
 # ---------------------------------------------------------------------------
 # Schema invariants enforced by audit_lint.py / apply_audit.py / vocab_lint.py

@@ -3621,6 +3621,10 @@
       "to": "causal_field_portability_note"
     },
     {
+      "from": "central_band_layernorm_note",
+      "to": "geometry_lane_head_to_head_note"
+    },
+    {
       "from": "charged_lepton_direct_ward_free_yukawa_no_go_note_2026-04-26",
       "to": "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26"
     },
@@ -22377,6 +22381,18 @@
       "to": "scalar_selector_cycle13_meta_closure_status_note_2026-04-19"
     },
     {
+      "from": "scalar_selector_reviewer_package_2026-04-20",
+      "to": "koide_q_delta_closure_package_readme_2026-04-21"
+    },
+    {
+      "from": "scalar_selector_reviewer_package_2026-04-20",
+      "to": "publication.ci3_z3.claims_table"
+    },
+    {
+      "from": "scalar_selector_reviewer_package_2026-04-20",
+      "to": "publication.ci3_z3.inputs_and_qualifiers_note"
+    },
+    {
       "from": "scalar_selector_synthesis_note_2026-04-19",
       "to": "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
     },
@@ -24787,6 +24803,10 @@
     {
       "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
       "to": "z2_hw1_mass_matrix_parametrization_note"
+    },
+    {
+      "from": "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
     {
       "from": "three_generation_observable_theorem_note",
@@ -28011,6 +28031,18 @@
     {
       "from": "yt_zero_import_boundary_ratio_authority_theorem_note_2026-05-17",
       "to": "yt_zero_import_chain_note"
+    },
+    {
+      "from": "yt_zero_import_chain_note",
+      "to": "plaquette_self_consistency_note"
+    },
+    {
+      "from": "yt_zero_import_chain_note",
+      "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
+    },
+    {
+      "from": "yt_zero_import_chain_note",
+      "to": "rconn_derived_note"
     },
     {
       "from": "yukawa_color_projection_theorem",
@@ -43220,13 +43252,15 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "geometry_lane_head_to_head_note"
+      ],
       "helper_runner_paths": [
         "scripts/combined_gravity_scaling.py",
         "scripts/generative_causal_dag_interference.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "ac8b6372629e64d6ed6d8146e47a04f255f2882714e68aa1a8796537dc8d4554",
+      "note_hash": "bafa729f59c9686c64fa6d556342c63aca97bdd89e905feb11b7fc0c25eea089",
       "path": "docs/CENTRAL_BAND_LAYERNORM_NOTE.md",
       "runner_path": "scripts/central_band_layernorm_combo.py",
       "title": "Central-Band Removal + Layernorm Note"
@@ -70841,9 +70875,13 @@
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
+      "deps": [
+        "koide_q_delta_closure_package_readme_2026-04-21",
+        "publication.ci3_z3.claims_table",
+        "publication.ci3_z3.inputs_and_qualifiers_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "fef8baa6f89ad0711f3e531c8bfbc490fbe9d0917a7cc3429a93afbf332c08b5",
+      "note_hash": "d2f71c68d96e38126a5f6c98e9c4008eaaf61ad9371ab260a9f7f6b311f17569",
       "path": "docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md",
       "runner_path": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py",
       "title": "Scalar-Selector Cycle 1 \u2014 Reviewer Package"
@@ -75312,10 +75350,11 @@
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
         "s3_mass_matrix_no_go_note",
-        "z2_hw1_mass_matrix_parametrization_note"
+        "z2_hw1_mass_matrix_parametrization_note",
+        "staggered_dirac_realization_gate_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a92bd6ab57991d89f52cff226f56b0ed6802c2a3c788202e84fdd8319889c01f",
+      "note_hash": "325d2c86db993c75584a3d6b6fc6376fd4516f752727a4762fb1d105bbb90353",
       "path": "docs/THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_three_gen_observable_no_proper_quotient_narrow.py",
       "title": "Three-Generation Observable: No-Proper-Quotient Narrow Theorem"
@@ -79823,9 +79862,13 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "plaquette_self_consistency_note",
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "rconn_derived_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "d69f946b2e48942802280439d9d98ee4a367bccf63b53739b8c1c8f5135c4294",
+      "note_hash": "fd262b3c4be79ab390d98532a4ef3a5710902fb094085b55bfb59ff15c444508",
       "path": "docs/YT_ZERO_IMPORT_CHAIN_NOTE.md",
       "runner_path": "scripts/frontier_yt_zero_import_chain.py",
       "title": "Zero-Import y_t Derivation: Definitive Authority Note"
@@ -80038,7 +80081,6 @@
     "central_band_dense_joint_highn_note",
     "central_band_dense_joint_note",
     "central_band_dense_largen_note",
-    "central_band_layernorm_note",
     "central_band_mass_window_note",
     "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
     "charged_lepton_koide_note_2026-04-18",
@@ -80486,7 +80528,6 @@
     "scalar_kg_rerun_note_2026-04-10",
     "scalar_selector_cycle13_meta_closure_status_note_2026-04-19",
     "scalar_selector_full_stack_recovery_note_2026-04-19",
-    "scalar_selector_reviewer_package_2026-04-20",
     "scaling_failure_mechanisms",
     "scaling_targets",
     "second_grown_family_sign_note",
@@ -80691,7 +80732,6 @@
     "yt_retention_landing_readiness_2026-04-18",
     "yt_retention_master_manifest_2026-04-18",
     "yt_ssb_matching_gap_analysis_note_2026-04-18",
-    "yt_zero_import_chain_note",
     "z2_hw1_mass_matrix_parametrization_note",
     "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
   ],
@@ -80715,10 +80755,10 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9639,
-    "leaf_count": 726,
+    "edge_count": 9647,
+    "leaf_count": 725,
     "node_count": 2447,
-    "root_count": 805,
+    "root_count": 802,
     "runners_with_path": 2032
   }
 }

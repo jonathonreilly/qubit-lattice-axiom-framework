@@ -23237,6 +23237,22 @@
       "to": "source_resolved_wavefield_escalation_note"
     },
     {
+      "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
+      "to": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+    },
+    {
+      "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
+      "to": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+    },
+    {
+      "from": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
+      "to": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+    },
+    {
       "from": "spectral_symmetry_note",
       "to": "higher_symmetry_joint_validation_note"
     },
@@ -72601,6 +72617,23 @@
       "runner_path": "scripts/source_resolved_wavefield_v2.py",
       "title": "Source-Resolved Wavefield V2 Note"
     },
+    "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19": {
+      "claim_id": "spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "bd4e478ce5f60648eb395bec2e098dd36ce26abfb04eacf6ccacc275133f67e0",
+      "path": "docs/SPATIAL_CLUSTER_DECOMPOSITION_LIEB_ROBINSON_REAL_NOTE_2026-05-19.md",
+      "runner_path": "scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py",
+      "title": "Finite-\u039b Lieb-Robinson Bound and Conditional Cluster-Decomposition Support"
+    },
     "spectral_closure_2026-04-09": {
       "claim_id": "spectral_closure_2026-04-09",
       "claim_type_author_hint": null,
@@ -80665,7 +80698,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 498,
+      "bounded_theorem": 499,
       "decoration": 1,
       "meta": 180,
       "no_go": 57,
@@ -80674,7 +80707,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 935,
+      "bounded_theorem": 936,
       "decoration": 1,
       "meta": 180,
       "no_go": 160,
@@ -80682,10 +80715,10 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9635,
+    "edge_count": 9639,
     "leaf_count": 726,
-    "node_count": 2446,
+    "node_count": 2447,
     "root_count": 805,
-    "runners_with_path": 2031
+    "runners_with_path": 2032
   }
 }

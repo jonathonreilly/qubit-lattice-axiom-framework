@@ -71,6 +71,22 @@ Current science/open-lane follow-ups:
   theorem
 - memory lane: protocol- and geometry-stable observable remains open
 - emergent-geometry growth: multi-size, multi-seed stability remains open
+- `2026-05-20-d3-lower-bound-bridge-sign`
+  Scope: PR #1603,
+  `DIMENSION_SELECTION_NOTE.md`, and the attempted
+  `DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_NOTE_2026-05-20.md`.
+  Finding: the submitted analytic lower-bound bridge was not landed because
+  its Green-function/force-sign argument does not consistently match the
+  existing runner's phase-coupling observable, especially around the
+  two-dimensional logarithmic case.
+  Disposition: `science-needed`.
+- `2026-05-20-single-clock-uniqueness-negative-gate`
+  Scope: PR #1603 and
+  `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`.
+  Finding: the submitted no-spatial-reflection-positivity / no-second-clock
+  uniqueness proof was not landed because it is a broad negative claim with
+  unaudited dependencies and no no-go-discipline N1-N8 checklist.
+  Disposition: `science-needed`.
 
 ## Intake Format
 

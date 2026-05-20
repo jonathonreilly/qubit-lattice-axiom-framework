@@ -1881,6 +1881,10 @@
       "to": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
     },
     {
+      "from": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+      "to": "dimensional_gravity_table"
+    },
+    {
       "from": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
       "to": "g_bare_two_ward_closure_note_2026-04-18"
     },
@@ -5513,6 +5517,10 @@
       "to": "cosmological_constant_spectral_gap_identity_theorem_note"
     },
     {
+      "from": "coulomb_stability_upper_bound_support_note_2026-05-20",
+      "to": "dimensional_gravity_table"
+    },
+    {
       "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
       "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
     },
@@ -5719,6 +5727,30 @@
     {
       "from": "c_iso_su3_nnlo_closure_bounded_note_2026-05-10_su3nnlo",
       "to": "exact_tier_ewitness_bounded_note_2026-05-07_ewitness"
+    },
+    {
+      "from": "d3_retention_closure_plan_2026-05-20",
+      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
+    },
+    {
+      "from": "d3_retention_closure_plan_2026-05-20",
+      "to": "coulomb_stability_upper_bound_support_note_2026-05-20"
+    },
+    {
+      "from": "d3_retention_closure_plan_2026-05-20",
+      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
+    },
+    {
+      "from": "d3_retention_closure_plan_2026-05-20",
+      "to": "dimension_selection_note"
+    },
+    {
+      "from": "d3_retention_closure_plan_2026-05-20",
+      "to": "dimensional_gravity_table"
+    },
+    {
+      "from": "d3_retention_closure_plan_2026-05-20",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     },
     {
       "from": "dark_energy_eos_note",
@@ -41964,6 +41996,20 @@
       "runner_path": "scripts/frontier_bell_inequality.py",
       "title": "Bell Inequality (CHSH) Violation with Explicit Cl(3) Taste Measurements (Conditional Model Surface)"
     },
+    "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": {
+      "claim_id": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dimensional_gravity_table"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "13b35e759352b39b63dc106ad999a93d8072140917929be5076e921f5a29b507",
+      "path": "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Bertrand Stable-Orbit Upper-Bound Support"
+    },
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": {
       "claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -45633,6 +45679,20 @@
       "runner_path": "scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
       "title": "Cosmology Single-Ratio Inverse Reconstruction Theorem"
     },
+    "coulomb_stability_upper_bound_support_note_2026-05-20": {
+      "claim_id": "coulomb_stability_upper_bound_support_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dimensional_gravity_table"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "2edba92eddb1aa12fb709112e5e9394be5756e0a20c80c242f56bb8e52a4a645",
+      "path": "docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Coulomb Stability Upper-Bound Support"
+    },
     "coupled_field_generated_family_probe_note": {
       "claim_id": "coupled_field_generated_family_probe_note",
       "claim_type_author_hint": null,
@@ -45919,6 +45979,25 @@
       "path": "docs/CYCLIC_PROJECTOR_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_cyclic_projector_compression_narrow.py",
       "title": "Cyclic-Projector Compression Narrow Theorem on Herm(3)"
+    },
+    "d3_retention_closure_plan_2026-05-20": {
+      "claim_id": "d3_retention_closure_plan_2026-05-20",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+        "coulomb_stability_upper_bound_support_note_2026-05-20",
+        "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
+        "dimension_selection_note",
+        "dimensional_gravity_table",
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "883d5dbfa79117c8e931584fcbed0b24309df86451d7b2ca915dd0b794d1d9e1",
+      "path": "docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md",
+      "runner_path": null,
+      "title": "D=3 Repair Tracking Note (Review-Loop Disposition)"
     },
     "dark_energy_eos_note": {
       "claim_id": "dark_energy_eos_note",
@@ -70009,7 +70088,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c0299f7c303589f5a11ae1678b43d9d178fa8e9ee7347ced23bcaf704ae33b86",
+      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -80738,26 +80817,26 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 499,
+      "bounded_theorem": 501,
       "decoration": 1,
-      "meta": 180,
+      "meta": 181,
       "no_go": 57,
       "none": 1498,
       "open_gate": 45,
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 936,
+      "bounded_theorem": 938,
       "decoration": 1,
-      "meta": 180,
+      "meta": 181,
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9647,
-    "leaf_count": 725,
-    "node_count": 2447,
+    "edge_count": 9655,
+    "leaf_count": 726,
+    "node_count": 2450,
     "root_count": 802,
     "runners_with_path": 2032
   }

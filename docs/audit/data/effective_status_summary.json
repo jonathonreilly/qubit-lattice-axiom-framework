@@ -1,8 +1,8 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1002,
+    "bounded_theorem": 1004,
     "decoration": 27,
-    "meta": 222,
+    "meta": 223,
     "no_go": 230,
     "open_gate": 111,
     "positive_theorem": 741
@@ -53,13 +53,13 @@
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 219,
+    "meta": 220,
     "open_gate": 16,
     "retained": 113,
     "retained_bounded": 376,
     "retained_no_go": 137,
     "retained_pending_chain": 7,
-    "unaudited": 1314
+    "unaudited": 1316
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

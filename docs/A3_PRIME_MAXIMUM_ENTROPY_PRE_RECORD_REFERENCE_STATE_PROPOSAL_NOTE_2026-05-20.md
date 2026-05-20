@@ -106,6 +106,29 @@ configurations under `ρ_ref` prior to recording.
 - **Not a unique-state postulate.** Record-conditioned states are
   ordinary density matrices, not pure states. A3' gives the
   reference; dynamics + records select the family.
+- **Not a closure of existing audit-conditional rows.** A3' creates
+  new derivation targets (listed below) and reframes state-side
+  interpretation. It does *not* discharge any condition currently
+  held open by the audit ledger. In particular:
+  - `observable_principle_from_axiom_note` (`audit_status:
+    audited_conditional`, #2 load-bearing) is blocked by a *scalar
+    additivity premise* on `log|det(D+J)|` —
+    `W(r_1 · r_2) = W(r_1) + W(r_2)`. This is an observable-side
+    condition, not a reference-state condition. A3' is orthogonal to
+    it and does not contribute to closing it.
+  - `gauge_vacuum_plaquette_residual_environment_identification_theorem_note`
+    (`audit_status: audited_conditional`) — A3' reframes the
+    "measurement" step as a record-update on `ρ_ref`, but the
+    factorization condition (which correlations decouple) stands.
+  - `beyond_lattice_qcd_note` (`audit_status: audited_conditional`)
+    fails because the runner *assumes* the Born readout it claims to
+    derive. A3' makes the Born rule a *named* derivation target via
+    Gleason–Busch on `ρ_ref`, but does not itself supply the proof.
+  Readers should not infer that A3' resolves these or any other
+  currently audit-conditional rows. The proposal's value is in
+  creating new derivation lanes and pinning a previously unstated
+  pre-record reference; closure of any audit-conditional row remains
+  the responsibility of the named follow-up derivation notes.
 
 ## Consequences
 

@@ -12,8 +12,8 @@ not closed."*
 
 ## Claim
 
-On the qubit-`Z^3` lattice framework (A1+A2 per
-`MINIMAL_AXIOMS_2026-05-20.md`), with retained primitives
+On the framework's `Cl(3)/Z^3` substrate (A1+A2 per
+`MINIMAL_AXIOMS_2026-05-03.md`), with retained primitives
 microcausality, Lieb-Robinson finite propagation, cluster
 decomposition, and reflection positivity, the single-clock
 codimension-1 evolution structure is **unique** in the following

@@ -43865,7 +43865,7 @@
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad94b0b288bb11e2cdb118bfe1d6ea933ebd6a540202efa905899a5f24a7fe41",
+      "note_hash": "5a5f932128dc3d591a15edffaae9920897100c9441c5da7c72c91f5d74d6225d",
       "path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Tsirelson Bound on Lattice Qubit Pairs"

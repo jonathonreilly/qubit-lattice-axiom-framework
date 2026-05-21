@@ -10885,7 +10885,7 @@
       "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": null,
       "chain_closure_explanation": null,
       "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
@@ -10909,8 +10909,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-21T22:30:37.836032+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-axiom_first_cl3_per_site-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-Cl(3)-only U1-U3: the abstract real algebra Cl(3,0) has two non-isomorphic faithful complex 2-dimensional irreps, \u03c1_\u00b1, distinguished by central pseudoscalar eigenvalue \u03c9 \u21a6 \u00b1i, and every finite-dimensional complex representation decomposes into copies of these irreps; U4 physical per-site Hilbert-space identification is out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [

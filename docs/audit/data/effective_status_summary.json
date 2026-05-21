@@ -36,7 +36,7 @@
     "audited_conditional": 74,
     "audited_failed": 24,
     "audited_numerical_match": 9,
-    "audited_renaming": 11,
+    "audited_renaming": 12,
     "decoration_under_cl3_color_automorphism_theorem": 7,
     "decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
@@ -58,7 +58,7 @@
     "retained_bounded": 372,
     "retained_no_go": 137,
     "retained_pending_chain": 7,
-    "unaudited": 1324
+    "unaudited": 1323
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

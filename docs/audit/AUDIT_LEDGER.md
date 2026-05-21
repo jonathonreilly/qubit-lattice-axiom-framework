@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
-| unaudited | 1309 |
+| unaudited | 1308 |
 | audit_in_progress | 5 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 13 |
+| ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -54,8 +54,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 13 |
-| `unaudited` | 1532 |
+| `audited_renaming` | 14 |
+| `unaudited` | 1531 |
 
 | claim_type | count |
 |---|---:|
@@ -920,6 +920,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | judicial_review | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -3111,6 +3112,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The note's bounded negative claim is exactly reproduced by the runner: it computes the coarse apparent match, then recomputes refined roots at 4000, 8000, and 16000 points and shows material drift away from 9/62.
 - **rationale:** The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result.
 - **auditor confidence:** high
+
+### `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`
+
+- **Note:** [`DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md`](../../docs/DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded transfer-layer identification of (S12, S13) as the relevant unsymmetrized even split on the compressed projected response pack and its stated sparse-face readout formulas.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-232112-8464df99-dm_leptogenesis_dweh_eve-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the exact projected Hermitian response pack, the unsymmetrized even column split is the pair (S12, S13), which supplies the downstream TARGET readout.  _(class `E`)_
+- **chain closes:** False — The packet defines or selects (S12, S13) as the relevant split, but provides no upstream axiom-level derivation of Schur_Ee(D_-) or the imported sparse-face/readout machinery. The primary runner also depends on helper modules whose source is not included despite being load-bearing.
+- **rationale:** The note's load-bearing move is the naming/selection of the response-pack coordinates (S12, S13) as the unsymmetrized even split. The runner checks algebraic consistency of that selection and imports TARGET, sparse_face_h, sparse_face_live_readout, solve_sparse_target_preimage, hermitian_linear_responses, and triplet_from_projected_response_pack from helper modules not provided in the packet, so it does not establish a first-principles derivation here. On the restricted packet, the theorem is a bounded transfer-layer definition rather than a closed derivation from an axiom.
+- **auditor confidence:** medium
 
 ### `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16`
 

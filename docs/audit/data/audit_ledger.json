@@ -79,7 +79,7 @@
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "meta",
-      "load_bearing_score": 2.822,
+      "load_bearing_score": 2.085,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
@@ -100,7 +100,7 @@
       },
       "runner_path": null,
       "title": "A1 Qubit Interpretation: Presentational Sharpening of the Local-Algebra Axiom",
-      "transitive_descendants": 4,
+      "transitive_descendants": 2,
       "verdict_rationale": null
     },
     "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc": {
@@ -189316,21 +189316,20 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
         "minimal_axioms_2026-05-20"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 0,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 1.5,
+      "load_bearing_score": 0.0,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "833847569504532fc2d88f206b2327dc6c689dc312468f72234ce5229ab4c476",
+      "note_hash": "507875b9097c5fde6d7b77d268bbd3af26b117ac7f0019e3a35e9a55cc4ff065",
       "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -189346,7 +189345,7 @@
       },
       "runner_path": null,
       "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)",
-      "transitive_descendants": 1,
+      "transitive_descendants": 0,
       "verdict_rationale": null
     },
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
@@ -189389,20 +189388,20 @@
       "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the uniqueness",
       "claim_type_last_reviewed": "2026-05-21T22:06:45.063578+00:00",
       "claim_type_provenance": "audited",
-      "criticality": "medium",
+      "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_axioms_2026-05-20",
         "a1_qubit_interpretation_note_2026-05-20"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 1,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 1.5,
       "load_bearing_step": "The no-extra-structure principle identifies the unique tracial state \u03c4 as the pre-record reference because any other pre-record state would introduce preferred basis/direction/eigenstate structure not present in A1+A2.",
       "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
@@ -189426,7 +189425,7 @@
       },
       "runner_path": null,
       "title": "Pre-Record Reference State as the Unique Tracial State on A1+A2",
-      "transitive_descendants": 3,
+      "transitive_descendants": 1,
       "verdict_rationale": "The note itself correctly labels Step 5 as admitted: the transition from unique tracial state to pre-record reference is an identification principle rather than a derivation from A1+A2 alone. Under the audit rubric, retained status does not propagate through an open identification, and non-retained/meta cited authorities also force a conditional verdict. There is no runner evidence to upgrade the claim, but no compute is required to judge this packet because the blocker is conceptual, not numerical."
     },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
@@ -242518,9 +242517,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-        "minimal_axioms_2026-05-20",
-        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+        "minimal_axioms_2026-05-20"
       ],
       "direct_in_degree": 0,
       "effective_status": "unaudited",
@@ -242533,7 +242530,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "ff68ebc65dcec7102c1835572d44e48a4b9140542db24e7af83a2f873da6a8fc",
+      "note_hash": "0415e8fa016999d25b46aad8d3ba933e75e9275787c2d395a228602c28cfde56",
       "note_path": "docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

@@ -20,11 +20,12 @@ framework's specific UHF type-`2^∞` algebra, the qubit-lattice
 quasi-local algebra. Standard operator-algebra mathematics applied
 to the framework's substrate.
 
-If audit-retained, this lifts the Powers/Dixmier/Glimm
-external-textbook admission from the landed
-[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
-(bounded support; one of the admissions in the chain), enabling the
-tracial-state derivation to potentially retain at higher grade.
+If audit-retained, this gives downstream notes such as
+`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20` a
+qubit-lattice-scoped theorem to cite for the UHF tracial uniqueness
+step. It does not eliminate the named standard-math imports, prove the
+no-extra-structure identification, or retag any downstream row by
+itself.
 
 ## Claim
 
@@ -51,8 +52,7 @@ with the explicit finite-region form
 This is the **standard UHF tracial-state uniqueness theorem**
 applied to the qubit-lattice substrate. The unique tracial state
 corresponds to the density matrix `ρ_ref = ⊗_x I_2 / 2` of the
-companion
-[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md).
+downstream tracial-state derivation note.
 
 ## Setup
 
@@ -152,17 +152,15 @@ where `ρ_ref|_Λ = ⊗_{x ∈ Λ} (I_2/2)` is the finite-region density
 matrix. So `τ_∞` and `ρ_ref` are the same physical state in two
 mathematical languages: abstract C*-state vs density-matrix.
 
-## What this closes
+## What this can support after audit
 
-- **The Powers 1967 / Dixmier / Glimm 1960 external-textbook
-  admission** in the landed
-  `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20`
-  (bounded support). The UHF tracial uniqueness now has
-  framework-internal narrow-theorem status on the qubit-lattice
-  quasi-local algebra.
-- **Combined with the Tomita companion note** (also in this PR),
-  the tracial-state derivation chain has framework-internal
-  narrow-theorem upstream for all its standard-math admissions.
+- **The UHF tracial-uniqueness step** used by downstream
+  pre-record-reference notes. If retained, this row lets those notes
+  cite a qubit-lattice-scoped theorem for the type-`2^∞` UHF algebra
+  rather than carrying only an unlocalized textbook reference.
+- **Dependency-chain repair for the tracial-state / Born support
+  lanes** after independent audit. This row does not promote those
+  parent rows by itself.
 
 ## What this does not close
 
@@ -175,8 +173,8 @@ mathematical languages: abstract C*-state vs density-matrix.
 - **Re-derivation of inductive-limit construction or Bratteli–Robinson
   machinery from scratch** — cited as standard operator-algebra
   content; not re-proved here.
-- **Promotion of the tracial-state row to retained_clean** — the
-  auditor still owns the verdict; this PR removes one named blocker.
+- **Promotion of the tracial-state row** — the auditor still owns the
+  verdict; this PR only supplies a candidate upstream support row.
 
 ## Admitted inputs
 
@@ -207,7 +205,6 @@ operator structure.
 **Upstream framework dependencies** (load-bearing; markdown links):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
-- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) — landed companion (bounded support) whose Powers/Dixmier/Glimm admission this note supplies the framework-internal upstream for
 
 **Upstream standard-math imports** (named non-derivation):
 
@@ -218,11 +215,12 @@ operator structure.
 
 **Plain-text pointer references** (NOT load-bearing deps):
 
+- `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md` — downstream/companion note that may cite this row for UHF tracial uniqueness
 - `TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md` — companion narrow theorem in this PR handling the per-region tensor-traciality argument used in the tracial-state derivation Step 2
 
 ## What this file is not
 
 - Not a re-derivation of the UHF tracial uniqueness theorem from scratch (cited as standard math)
 - Not a closure of the no-extra-structure identification premise (separate philosophical admission)
-- Not an automatic promotion of the tracial-state row to retained-clean (auditor-owned)
+- Not an automatic promotion of the tracial-state row (auditor-owned)
 - Not a numerical-prediction change

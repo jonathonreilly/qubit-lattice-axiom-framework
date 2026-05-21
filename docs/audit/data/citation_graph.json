@@ -21038,10 +21038,6 @@
     },
     {
       "from": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
-    },
-    {
-      "from": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms_2026-05-20"
     },
     {
@@ -24930,15 +24926,7 @@
     },
     {
       "from": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
-      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
-    },
-    {
-      "from": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
       "to": "minimal_axioms_2026-05-20"
-    },
-    {
-      "from": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
-      "to": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
     },
     {
       "from": "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
@@ -66461,11 +66449,10 @@
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
         "minimal_axioms_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "833847569504532fc2d88f206b2327dc6c689dc312468f72234ce5229ab4c476",
+      "note_hash": "507875b9097c5fde6d7b77d268bbd3af26b117ac7f0019e3a35e9a55cc4ff065",
       "path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)"
@@ -75704,12 +75691,10 @@
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-        "minimal_axioms_2026-05-20",
-        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+        "minimal_axioms_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ff68ebc65dcec7102c1835572d44e48a4b9140542db24e7af83a2f873da6a8fc",
+      "note_hash": "0415e8fa016999d25b46aad8d3ba933e75e9275787c2d395a228602c28cfde56",
       "path": "docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Tomita Tensor-Trace Factorization on Finite-Dim Matrix Algebras (Narrow)"
@@ -81080,8 +81065,8 @@
       "open_gate": 123,
       "positive_theorem": 607
     },
-    "edge_count": 9673,
-    "leaf_count": 733,
+    "edge_count": 9670,
+    "leaf_count": 734,
     "node_count": 2462,
     "root_count": 804,
     "runners_with_path": 2032

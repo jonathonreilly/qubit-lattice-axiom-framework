@@ -17,12 +17,12 @@ the framework's specific finite-region algebra
 `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ)`. Standard operator-algebra mathematics
 applied to the framework's substrate.
 
-If audit-retained, this lifts the Tomita-tensor-trace
-external-textbook admission from
-[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
-(Step 2 of that note's tensor-traciality argument), supplying the
-final framework-internal upstream for the tracial-state derivation
-chain.
+If audit-retained, this gives downstream notes such as
+`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20` a
+qubit-lattice-scoped theorem to cite for the finite-region
+tensor-trace factorization step. It does not eliminate the named
+standard-math imports, prove the no-extra-structure identification,
+or retag any downstream row by itself.
 
 ## Claim
 
@@ -107,25 +107,26 @@ combined region factorizes as a product on simple tensors.
 
 ## Step 3 — Tightening the tracial-state derivation Step 2 proof
 
-The companion
-[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
-Step 2 uses the factorization (4) — with Tomita's theorem as the
-upstream content (and noting that for *general* C*-algebras, tracial
-states need not factor; the framework's simple-matrix-algebra
-context is what enables the factorization).
+The downstream `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20`
+Step 2 uses the factorization (4) with Tomita-style tensor-trace
+factorization as its standard-math input. For general C*-algebras and
+general tracial states on a tensor product, factorization is not
+automatic; the framework's finite-region simple-matrix-algebra context
+is what makes this narrow factorization rigorous.
 
-This narrow theorem closes Step 2's named admitted input by supplying
-the framework-internal Tomita application.
+This narrow theorem supplies a candidate upstream Tomita/matrix-trace
+application for that downstream step after independent audit.
 
-## What this closes
+## What this can support after audit
 
-- **The Tomita tensor-traciality external-textbook admission** in
-  the tracial-state derivation Step 2 proof. The factorization on
-  simple tensors now has framework-internal narrow-theorem status
-  on the qubit-lattice substrate.
-- **Combined with the Powers UHF companion** (this PR), the
-  tracial-state derivation chain has framework-internal narrow-theorem
-  upstreams for all its previously-admitted standard-math inputs.
+- **The finite-region tensor-trace factorization step** used by
+  downstream pre-record-reference notes. If retained, this row lets
+  those notes cite a qubit-lattice-scoped theorem for disjoint
+  finite-region matrix factors rather than carrying only an
+  unlocalized textbook reference.
+- **Dependency-chain repair for the tracial-state / Born support
+  lanes** after independent audit. This row does not promote those
+  parent rows by itself.
 
 ## What this does not close
 
@@ -136,8 +137,8 @@ the framework-internal Tomita application.
 - **Non-simple tensor factorization** (e.g., type II_1 factors,
   non-finite-dim algebras) — not in scope; the framework's
   finite-region structure is finite-dim simple matrix algebra.
-- **Promotion of the tracial-state row to retained_clean** — the
-  auditor still owns the verdict.
+- **Promotion of the tracial-state row** — the auditor still owns the
+  verdict.
 
 ## Admitted inputs
 
@@ -162,8 +163,6 @@ it does because each `A_Λ` is `M_{2^|Λ|}(ℂ)`).
 **Upstream framework dependencies** (load-bearing; markdown links):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
-- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) — companion (landed bounded support) whose Step 2 tensor-traciality admission this narrow theorem supplies the framework-internal upstream for
-- [`POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — companion narrow theorem in this PR (Powers UHF tracial uniqueness; provides finite-region traces this note tensorizes)
 
 **Upstream standard-math imports** (named non-derivation):
 
@@ -173,6 +172,8 @@ it does because each `A_Λ` is `M_{2^|Λ|}(ℂ)`).
 
 **Plain-text pointer references** (NOT load-bearing deps):
 
+- `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md` — downstream/companion note that may cite this row for finite-region tensor-trace factorization
+- `POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md` — companion narrow theorem in this PR handling the UHF tracial uniqueness step
 - `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` — downstream consumer of the tracial-state derivation chain that this note completes
 
 ## What this file is not

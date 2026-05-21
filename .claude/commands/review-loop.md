@@ -59,8 +59,9 @@ Run the repo-native physics review loop from:
   `docs/repo/CONTROLLED_VOCABULARY.md`. Do not approve bare overloaded labels
   such as `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` as theorem/lane
   names, table labels, claim scopes, runner headlines, or review findings.
-  Use names such as `one-qubit operator algebra` (the canonical
-  qubit-form local algebra per `MINIMAL_AXIOMS_2026-05-20.md`,
+  Use names such as `one-qubit operator algebra` (the local algebra
+  fixed by the canonical A1 "Reality is a qubit at every lattice site"
+  per `MINIMAL_AXIOMS_2026-05-20.md`,
   equivalently `physical Cl(3,0) ≅ M_2(ℂ)`), `Z^3 spatial substrate`,
   `Koide Frobenius-equipartition condition`, or `Lie type A_1`; the
   `M_2(ℂ)` / `Cl(3,0)` / qubit names are co-equal labels for the
@@ -83,13 +84,14 @@ Run the repo-native physics review loop from:
   three-way patch/rebase/merge/cherry-pick integration for overlapping paths.
   Whole-file checkout is allowed only for new paths or paths proven unchanged
   on current `main` since the PR base.
-- The repo baseline is physical `Cl(3)` on `Z^3` (physical local algebra
-  plus physical spatial substrate). Name it explicitly; do not compress it to
-  bare `A1` / `A2` labels. Do not classify that baseline as a new axiom, new
-  admitted premise, regulator interpretation, or optional theory language. Do
-  not let that baseline silently promote separate species identifications,
-  selectors, readout bridges, empirical matches, or parent theorem/status
-  surfaces.
+- The repo baseline is "Reality is a qubit at every lattice site" on
+  the cubic lattice `Z^3` (equivalently, one-qubit operator algebra
+  `M_2(ℂ) ≅ Cl(3,0)` plus the `Z^3` substrate). Name it explicitly;
+  do not compress it to bare `A1` / `A2` labels. Do not classify that
+  baseline as a new axiom, new admitted premise, regulator
+  interpretation, or optional theory language. Do not let that baseline
+  silently promote separate species identifications, selectors, readout
+  bridges, empirical matches, or parent theorem/status surfaces.
 - Nature-grade retention requires derived or explicitly admitted inputs,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Closing a PR must not discard durable science. Salvage narrow

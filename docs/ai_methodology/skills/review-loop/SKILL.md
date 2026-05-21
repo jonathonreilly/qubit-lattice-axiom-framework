@@ -47,17 +47,18 @@ explicit user approval. Imports are allowed for bounded theorem surfaces when
 they are scoped, labelled, and dependency-checked; repo-wide axiom additions
 are not review-loop fixes.
 
-The framework baseline (per `MINIMAL_AXIOMS_2026-05-20.md`) is a qubit
-at every site of the cubic lattice `Z^3`. The canonical local-algebra
-wording on live science surfaces is `one-qubit operator algebra` or
-equivalently `M_2(ℂ) ≅ Cl(3,0)` — these are co-equal labels for the
-same retained algebra-isomorphism class, supported by the retained
-narrow theorems `cl3_complexification_split_narrow_theorem_note_2026-05-10`
-and `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`. The
-older `physical Cl(3) local algebra` phrasing remains valid as the
-real-algebra reading and continues to read correctly in legacy
-content. The substrate is the `Z^3 spatial substrate`. Do not land
-new science under bare letter-number names such as `A1`, `A2`, `G1`,
+The framework baseline (per `MINIMAL_AXIOMS_2026-05-20.md`) is
+"Reality is a qubit at every lattice site" on the cubic lattice `Z^3`.
+The canonical local-algebra wording on live science surfaces is
+`one-qubit operator algebra` or equivalently `M_2(ℂ) ≅ Cl(3,0)` —
+these are co-equal labels for the same retained algebra-isomorphism
+class, supported by the retained narrow theorems
+`cl3_complexification_split_narrow_theorem_note_2026-05-10` and
+`cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`. The older
+`physical Cl(3) local algebra` phrasing remains valid as the
+real-algebra reading and continues to read correctly in legacy content.
+The substrate is the `Z^3 spatial substrate`. Do not land new science
+under bare letter-number names such as `A1`, `A2`, `G1`,
 or `R3`; those labels are overloaded with axioms, assumptions, Lie
 types, lane stages, route codes, and branch blocks. Use the explicit
 scientific name on live science surfaces; archival aliases belong

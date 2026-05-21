@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
 | unaudited | 1316 |
-| audit_in_progress | 9 |
+| audit_in_progress | 8 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
-| ~~audited_conditional~~ | 79 |
+| ~~audited_conditional~~ | 80 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -48,9 +48,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 9 |
+| `audit_in_progress` | 8 |
 | `audited_clean` | 598 |
-| `audited_conditional` | 79 |
+| `audited_conditional` | 80 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -59,10 +59,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1008 |
+| `bounded_theorem` | 1009 |
 | `decoration` | 29 |
 | `meta` | 226 |
-| `no_go` | 230 |
+| `no_go` | 229 |
 | `open_gate` | 112 |
 | `positive_theorem` | 737 |
 
@@ -123,7 +123,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
-| `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
@@ -765,6 +764,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5377,6 +5377,25 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The current runner computes the stated correlation-matrix entropies/ranks and reports boundary-fit R^2 exceeding volume-fit R^2 for both G=0 and G=10 globally and per side, with boundary slopes 0.186053 and 0.211399 giving ratio 0.8801.  _(class `C`)_
 - **chain closes:** True — The finite-model computation directly evaluates the claimed observable and fit comparison under the stated parameters; the conclusion is only the bounded numerical boundary-preference statement and coefficient shift.
 - **rationale:** The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement.
+- **auditor confidence:** high
+
+### `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29`
+
+- **Note:** [`HUBBLE_LANE5_C1_A1_GRASSMANN_BOUNDARY_CAR_OBSTRUCTION_NOTE_2026-04-29.md`](../../docs/HUBBLE_LANE5_C1_A1_GRASSMANN_BOUNDARY_CAR_OBSTRUCTION_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-algebra obstruction to the direct A1 implication that A_min bulk Grassmann/CAR structure plus rank(P_A)=4 yields native CAR on P_A H_cell; the result is bounded by the open staggered-Dirac realization parent and does not close C1 globally.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-judicial-panel-20260521-hubble_lane5_c1_a1_grassmann_boundar-j1`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** There exist rank-four projections in a finite bulk CAR representation for which compressed operators P c_i P fail CAR unless P is a reducing Clifford/CAR module morphism for the selected modes, so rank(P_A)=4 plus bulk Grassmann/CAR structure alone does not force CAR on P_A H_cell.  _(class `A`)_
+- **chain closes:** False — The runner cleanly supports the local algebraic obstruction: it exhibits both a reducing rank-four projection preserving selected CAR and a nonreducing rank-four projection failing CAR, with PASS=5 FAIL=0. However, the source packet states that this note depends on the staggered-Dirac realization derivation target, whose canonical parent is an open_gate. Under the audit policy, open gates block retained propagation, so a clean retained no_go/bounded result is not appropriate from this packet alone. Also, the first audit ratifies an audited_clean no_go without an N1-N8 no-go-discipline closure in the supplied packet. Because the gate says not to ratify a clean no_go unless N1-N8 are explicitly closed, the first tuple cannot be accepted. The second tuple preserves the supported A-class algebraic content while keeping the verdict conditional on the open parent/dependency chain.
+
+Five-judge panel breakdown: ('second', 'audited_conditional', 'bounded_theorem', 'A'):5.
+- **rationale:** The runner cleanly supports the local algebraic obstruction: it exhibits both a reducing rank-four projection preserving selected CAR and a nonreducing rank-four projection failing CAR, with PASS=5 FAIL=0. However, the source packet states that this note depends on the staggered-Dirac realization derivation target, whose canonical parent is an open_gate. Under the audit policy, open gates block retained propagation, so a clean retained no_go/bounded result is not appropriate from this packet alone. Also, the first audit ratifies an audited_clean no_go without an N1-N8 no-go-discipline closure in the supplied packet. Because the gate says not to ratify a clean no_go unless N1-N8 are explicitly closed, the first tuple cannot be accepted. The second tuple preserves the supported A-class algebraic content while keeping the verdict conditional on the open parent/dependency chain.
+
+Five-judge panel breakdown: ('second', 'audited_conditional', 'bounded_theorem', 'A'):5.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28`

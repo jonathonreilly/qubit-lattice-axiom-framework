@@ -325,7 +325,7 @@ this PMNS-chamber-chart synthesis:
   status; Cycle 9 (PR #1452) explicitly does not alter it.
 - **Direct quark-sector Yukawa coupling chains.** Out of scope.
 - **Hostile-audit findings on adjacent PMNS notes**
-  (`DM_LEPTOGENESIS_PMNS_*_HOSTILE_AUDIT_FINDINGS_NOTE_2026-05-17.md`,
+  (`DM_LEPTOGENESIS_PMNS_*_NOTE_2026-05-17.md`,
   `LEPTON_SINGLE_HIGGS_PMNS_TRIVIALITY_NOTE_2026-05-17.md`,
   etc.). Out of scope; these are audit-pipeline products on adjacent
   source notes, not on the chamber-chart predictive surface itself.

@@ -47,12 +47,20 @@ explicit user approval. Imports are allowed for bounded theorem surfaces when
 they are scoped, labelled, and dependency-checked; repo-wide axiom additions
 are not review-loop fixes.
 
-The framework baseline is physical `Cl(3)` on `Z^3`: call these the
-`physical Cl(3) local algebra` and the `Z^3 spatial substrate` on live
-science surfaces. Do not land new science under bare letter-number names
-such as `A1`, `A2`, `G1`, or `R3`; those labels are overloaded with axioms,
-assumptions, Lie types, lane stages, route codes, and branch blocks. Use the
-explicit scientific name on live science surfaces; archival aliases belong
+The framework baseline (per `MINIMAL_AXIOMS_2026-05-20.md`) is a qubit
+at every site of the cubic lattice `Z^3`. The canonical local-algebra
+wording on live science surfaces is `one-qubit operator algebra` or
+equivalently `M_2(ℂ) ≅ Cl(3,0)` — these are co-equal labels for the
+same retained algebra-isomorphism class, supported by the retained
+narrow theorems `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+and `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`. The
+older `physical Cl(3) local algebra` phrasing remains valid as the
+real-algebra reading and continues to read correctly in legacy
+content. The substrate is the `Z^3 spatial substrate`. Do not land
+new science under bare letter-number names such as `A1`, `A2`, `G1`,
+or `R3`; those labels are overloaded with axioms, assumptions, Lie
+types, lane stages, route codes, and branch blocks. Use the explicit
+scientific name on live science surfaces; archival aliases belong
 only in clearly historical work-history/archive material. Review-loop must
 not treat the framework baseline as a
 new axiom, new admitted premise, regulator interpretation, or optional
@@ -464,9 +472,12 @@ Otherwise apply the narrowest honest fix:
    status-line tier labels, machine-local path removal, stale runner transcript
    refreshes, generated audit queue/ledger seeding, and discoverability wiring.
 6. Rename ambiguous science shorthand to explicit repo vocabulary without
-   changing the claim boundary. Examples: write `physical Cl(3) local algebra`,
-   `Z^3 spatial substrate`, `Koide Frobenius-equipartition condition`, or
-   `Lie type A_1` instead of bare `A1` / `A2`.
+   changing the claim boundary. Examples: write `one-qubit operator algebra`
+   (or equivalently `M_2(ℂ) ≅ Cl(3,0)`, `physical Cl(3) local algebra` as
+   the real-algebra reading — all co-equal labels for the same retained
+   algebra-isomorphism class), `Z^3 spatial substrate`,
+   `Koide Frobenius-equipartition condition`, or `Lie type A_1` instead of
+   bare `A1` / `A2`.
 7. Update `docs/repo/ACTIVE_REVIEW_QUEUE.md` for live unresolved findings.
 8. Route detailed resolved packets to
    `docs/work_history/repo/review_feedback/` only when a long packet is needed.

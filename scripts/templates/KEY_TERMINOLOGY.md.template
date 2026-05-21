@@ -10,7 +10,7 @@ per term, with a pointer to the canonical source-of-truth doc.
 primitives (`Cl(3)`, `Z³`, `A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`,
 `g_bare`, `u_0`, `M_Pl`, `R_conn`, `alpha_s`, etc.) are **not** in this
 index. They live in
-[docs/MINIMAL_AXIOMS_2026-05-03.md](MINIMAL_AXIOMS_2026-05-03.md) and
+[docs/MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md) (supersedes `MINIMAL_AXIOMS_2026-05-03.md` per qubit-reframe landing) and
 per-claim notes. See
 [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 for the principle.

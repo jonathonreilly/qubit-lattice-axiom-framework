@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=a3d35d43618102377dcb1b8d48f29065cfc86f66db5cddccbbfbc153f7d13fe7 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=3049f71e2a114fd7dacfa8a8d86a4bf93755d96e5e15abe62a466fd37840ac17 -->
 # Key Terminology
 
 **Claim type:** meta
@@ -11,7 +11,7 @@ per term, with a pointer to the canonical source-of-truth doc.
 primitives (`Cl(3)`, `Z³`, `A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`,
 `g_bare`, `u_0`, `M_Pl`, `R_conn`, `alpha_s`, etc.) are **not** in this
 index. They live in
-[docs/MINIMAL_AXIOMS_2026-05-03.md](MINIMAL_AXIOMS_2026-05-03.md) and
+[docs/MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md) (supersedes `MINIMAL_AXIOMS_2026-05-03.md` per qubit-reframe landing) and
 per-claim notes. See
 [docs/repo/VOCABULARY_HYGIENE_DESIGN.md](repo/VOCABULARY_HYGIENE_DESIGN.md)
 for the principle.

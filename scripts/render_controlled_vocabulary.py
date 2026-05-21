@@ -73,8 +73,8 @@ def render_vocab_hierarchy_table(data: dict) -> str:
         ),
         (
             "1. Framework substantive",
-            "[`docs/MINIMAL_AXIOMS_2026-05-03.md`](../MINIMAL_AXIOMS_2026-05-03.md)",
-            "Framework primitives the operational vocabulary uses: `Cl(3)` (Axiom 1: Local algebra), `Z^3` (Axiom 2: Spatial substrate), the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms. Changes only when a framework-level science decision changes.",
+            "[`docs/MINIMAL_AXIOMS_2026-05-20.md`](../MINIMAL_AXIOMS_2026-05-20.md) (supersedes `MINIMAL_AXIOMS_2026-05-03.md` per qubit-reframe landing)",
+            "Framework primitives the operational vocabulary uses: A1 \"A qubit at every site\" (equivalently: the physical local operator algebra at each `Z^3` site is the one-qubit algebra `M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), A2 \"Sites form the cubic lattice `Z^3`\", the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms. Changes only when a framework-level science decision changes.",
         ),
         (
             "2. External paper text",

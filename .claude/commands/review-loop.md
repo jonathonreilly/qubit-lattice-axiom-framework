@@ -59,9 +59,13 @@ Run the repo-native physics review loop from:
   `docs/repo/CONTROLLED_VOCABULARY.md`. Do not approve bare overloaded labels
   such as `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` as theorem/lane
   names, table labels, claim scopes, runner headlines, or review findings.
-  Use names such as `physical Cl(3) local algebra`, `Z^3 spatial substrate`,
-  `Koide Frobenius-equipartition condition`, or `Lie type A_1`; keep shorthand
-  only as a parenthetical legacy alias.
+  Use names such as `one-qubit operator algebra` (the canonical
+  qubit-form local algebra per `MINIMAL_AXIOMS_2026-05-20.md`,
+  equivalently `physical Cl(3,0) ≅ M_2(ℂ)`), `Z^3 spatial substrate`,
+  `Koide Frobenius-equipartition condition`, or `Lie type A_1`; the
+  `M_2(ℂ)` / `Cl(3,0)` / qubit names are co-equal labels for the
+  same retained algebra-isomorphism class. Keep shorthand only as a
+  parenthetical legacy alias.
 - `retained`, `retained_bounded`, and `retained_no_go` are the retained-grade
   dependency statuses. Reviewers must reject stale exact-status checks that
   require only `effective_status = retained` when bounded/no-go retained

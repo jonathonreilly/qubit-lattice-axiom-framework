@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 870,
     "high": 27,
-    "leaf": 326,
+    "leaf": 325,
     "medium": 109
   },
   "cycle_break_target_count": 294,
@@ -37560,34 +37560,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "broken_graph_action_power_robustness_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "inverse_problem_note",
-        "action_uniqueness_note",
-        "action_power_scaling_sweep_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/action_universality_probe.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/BROKEN_GRAPH_ACTION_POWER_ROBUSTNESS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/broken_graph_action_power_robustness.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "coulomb_stability_upper_bound_support_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -46843,6 +46815,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 28,
-  "total_pending": 1332
+  "ready_count": 27,
+  "total_pending": 1331
 }

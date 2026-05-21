@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 870,
     "high": 27,
-    "leaf": 325,
+    "leaf": 324,
     "medium": 109
   },
   "cycle_break_target_count": 294,
@@ -37560,30 +37560,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "coulomb_stability_upper_bound_support_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dimensional_gravity_table"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -46815,6 +46791,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 27,
-  "total_pending": 1331
+  "ready_count": 26,
+  "total_pending": 1330
 }

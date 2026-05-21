@@ -19165,6 +19165,34 @@
       "to": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
     },
     {
+      "from": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "to": "born_rule_from_gleason_busch_derivation_note_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18"
+    },
+    {
+      "from": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
       "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
       "to": "observable_principle_from_axiom_note"
     },
@@ -63758,6 +63786,26 @@
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Framework-Internal Narrow Bounded Note"
     },
+    "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "minimal_axioms_2026-05-20",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+        "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9649f57f476165dc76e0d7a2402e4f0cea3f56ccbcceb1e1d77f1d435c3faa49",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_GLEASON_BUSCH_ROUTE_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_gleason_busch_route.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Gleason-Busch Route Narrow Note"
+    },
     "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -80910,7 +80958,7 @@
       "bounded_theorem": 502,
       "decoration": 1,
       "meta": 184,
-      "no_go": 57,
+      "no_go": 58,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 167
@@ -80919,15 +80967,15 @@
       "bounded_theorem": 940,
       "decoration": 1,
       "meta": 184,
-      "no_go": 160,
+      "no_go": 161,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
-    "leaf_count": 728,
-    "node_count": 2455,
+    "edge_count": 9667,
+    "leaf_count": 727,
+    "node_count": 2456,
     "root_count": 804,
-    "runners_with_path": 2032
+    "runners_with_path": 2033
   }
 }

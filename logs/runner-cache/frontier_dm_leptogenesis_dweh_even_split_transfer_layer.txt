@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py
+runner_sha256: f108d4a045cf0fa9710ec4e0ec3bf9611395e953b19c8d1327bce4237b5198d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.27
+status: ok
+----- stdout -----
+================================================================================================
+DM LEPTOGENESIS dW_e^H EVEN-SPLIT TRANSFER LAYER THEOREM
+================================================================================================
+
+Question:
+  What exact unsymmetrized even split lives on dW_e^H, and how does it
+  descend to the sparse-face live source readout?
+
+================================================================================================
+PART 1: THE PROJECTED CODOMAIN ALREADY CARRIES THE UNSYMMETRIZED EVEN SPLIT
+================================================================================================
+  [PASS] On the sparse face the projected Hermitian response pack has the exact compressed shape (R11,R22,R33,S12,0,S13,A13,0,0)  (pack=(0.8482, 0.5476, 0.16850000000000004, 1.0211999999999999, 0.0, -0.20691267658087345, 0.18953496846265297, 0.0, 0.0))
+  [PASS] The exact unsymmetrized even column split on dW_e^H is the pair (S12, S13)  ((S12,S13)=(1.021200000000,-0.206912676581))
+  [PASS] This pair is strictly finer than the current triplet package because E1 and E2 use only its sum/difference combinations
+
+================================================================================================
+PART 2: THE EVEN SPLIT DESCENDS EXACTLY TO SPARSE-FACE SOURCE AND LIVE DATA
+================================================================================================
+  [PASS] The projected even split pulls back exactly to (u,v) and (b,rho), and forward exactly to the live readout
+  [PASS] Under gamma -> -gamma on the sparse face, the exact projected even split (S12,S13) is invariant  (gamma=(0.021124,-0.021124))
+  [PASS] Accordingly the downstream live source readout is invariant under the same gamma flip  (live diff=0.00e+00)
+
+================================================================================================
+PART 3: THE CANONICAL SAME-TRIPLET SEPARATOR SURVIVES ON dW_e^H
+================================================================================================
+  [PASS] The canonical sparse-face witness pair keeps the exact triplet package fixed on dW_e^H  (triplet diff=7.92e-13)
+  [PASS] But the same witness pair has different unsymmetrized projected even splits (S12,S13)  (split diff=0.269752)
+  [PASS] Therefore dW_e^H itself already carries the exact separator showing the current triplet package is too coarse
+
+================================================================================================
+PART 4: THE PROJECTED EVEN SPLIT REPRODUCES THE KNOWN TARGET PREIMAGE
+================================================================================================
+  [PASS] The known exact sparse-face target preimage reproduces the observed live point through the projected even split alone  (dist=1.57e-16)
+  [PASS] So Lane A closes positively: the compressed codomain source of truth is now the exact dW_e^H even-split layer  (what remains is whether the current exact bank can determine that split canonically)
+
+================================================================================================
+RESULT
+================================================================================================
+  Exact compressed-codomain answer:
+    - the unsymmetrized even split on dW_e^H is (S12, S13)
+    - on the sparse face it is exactly equivalent to (u, v) and (b, rho)
+    - it reproduces the observed live point on the known exact preimage
+    - and the canonical same-triplet witness already separates it from the
+      coarser triplet package on dW_e^H itself
+
+PASS=11 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py
+runner_sha256: cd426862a28340fd219e678b288fc3396cac75dfc397a4cfa358843fa77934bb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.49
+status: ok
+----- stdout -----
+
+----- stderr -----
+

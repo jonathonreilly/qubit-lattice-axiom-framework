@@ -16401,6 +16401,10 @@
       "to": "three_generation_structure_note"
     },
     {
+      "from": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
       "from": "kubo_continuum_limit_families_note",
       "to": "kubo_continuum_limit_note"
     },
@@ -59298,6 +59302,20 @@
       "runner_path": "scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py",
       "title": "Probe Z-Substrate-Generation-Z3 \u2014 Z^3 x C_3 Substrate Three-Orbit Bound (Source Note)"
     },
+    "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
+      "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "aed537c53ab1fcf6071bade44d78391eefab7e9948a3adb1f0ac8bd640fdf943",
+      "path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)"
+    },
     "kubo_continuum_limit_families_note": {
       "claim_id": "kubo_continuum_limit_families_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -81018,7 +81036,7 @@
       "no_go": 57,
       "none": 1499,
       "open_gate": 45,
-      "positive_theorem": 169
+      "positive_theorem": 170
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 943,
@@ -81027,11 +81045,11 @@
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 605
+      "positive_theorem": 606
     },
-    "edge_count": 9668,
-    "leaf_count": 732,
-    "node_count": 2460,
+    "edge_count": 9669,
+    "leaf_count": 733,
+    "node_count": 2461,
     "root_count": 804,
     "runners_with_path": 2032
   }

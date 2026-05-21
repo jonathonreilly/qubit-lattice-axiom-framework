@@ -19165,6 +19165,38 @@
       "to": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
     },
     {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
       "to": "observable_principle_from_axiom_note"
     },
@@ -63770,6 +63802,27 @@
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py",
       "title": "Observable Principle P1 Bridge \u2014 Operator-Algebraic External Narrow Bounded Note"
     },
+    "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "minimal_axioms_2026-05-20",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "e3199cdd478db0cc58d98a981ab757c764a3f6c86adb87fb67fa5b799b884e9b",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_QUBIT_REATTEMPT_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_qubit_reattempt.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Operator-Algebraic Qubit Re-attempt Narrow Note"
+    },
     "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
       "claim_type_author_hint": "no_go",
@@ -80907,7 +80960,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 502,
+      "bounded_theorem": 503,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -80916,7 +80969,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 940,
+      "bounded_theorem": 941,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -80924,10 +80977,10 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
-    "leaf_count": 728,
-    "node_count": 2455,
+    "edge_count": 9668,
+    "leaf_count": 729,
+    "node_count": 2456,
     "root_count": 804,
-    "runners_with_path": 2032
+    "runners_with_path": 2033
   }
 }

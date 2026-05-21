@@ -175285,22 +175285,45 @@
       "verdict_rationale": "The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome."
     },
     "persistent_record_as_kraus_operator_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T23:10:31.543869+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null,
+          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta",
+          "persistent_record_overlap_kernel_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta",
+          "persistent_record_overlap_kernel_note": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20",
+          "persistent_record_overlap_kernel_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-230943-442fce9c-persistent_record_as_kra-011",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted cited authority supplies a bounded numerical/pilot record-overlap model, not a formal system-record instrument proving state-independent linear maps K_r or the normalization \u03a3_r K_r\u2020K_r = I for arbitrary system inputs. The note imports the needed linearity, normalization, and record-to-system instrument bridge as admissions rather than deriving them from the provided parent.",
       "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Audited only the structural claim that the bounded persistent-record overlap-kernel pilot supplies record-indexed Kraus operators satisfying selective update, identity resolution, and CPTP unconditional evolution.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T23:10:31.543869+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -175309,19 +175332,19 @@
         "persistent_record_overlap_kernel_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The map from an initial system state to the record-conditional system amplitude, K_r: |\u03c8\u27e9 \u2192 A_r |\u03c6_r\u27e9, is linear and therefore extends to a bounded operator on the system Hilbert space.",
+      "load_bearing_step_class": "E",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "17e391bea04e73dfd0caf7dbd7bd94dd654b106a10f944aa7bd5fe7ecd9c5a28",
       "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide an independent formal derivation that the persistent-record process defines a state-independent linear system-record isometry/instrument whose record components satisfy \u03a3_r K_r\u2020K_r = I.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -175336,7 +175359,7 @@
       "runner_path": null,
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The proposed Kraus family is introduced by defining a record-conditional amplitude map and then assuming the standard hypotheses needed for it to be a valid quantum instrument. The upstream persistent-record note is retained_bounded but only establishes a bounded pilot with an overlap kernel and purity data; it does not contain the load-bearing bridge from mesoscopic record labels to a complete set of bounded system Kraus operators. The CPTP conclusion follows algebraically once \u03a3_r K_r\u2020K_r = I is assumed, but that identity is precisely the missing closure step in the restricted packet."
     },
     "persistent_record_matched_compare_note": {
       "audit_date": "2026-05-01T10:46:16.278453+00:00",

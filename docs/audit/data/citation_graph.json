@@ -19569,6 +19569,18 @@
       "to": "persistent_record_overlap_kernel_note"
     },
     {
+      "from": "persistent_record_stinespring_isometry_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "persistent_record_stinespring_isometry_narrow_theorem_note_2026-05-20",
+      "to": "persistent_record_overlap_kernel_note"
+    },
+    {
+      "from": "persistent_record_stinespring_isometry_narrow_theorem_note_2026-05-20",
+      "to": "persistent_record_as_kraus_operator_note_2026-05-20"
+    },
+    {
       "from": "per_site_su2_bridge_bounded_obstruction_note_2026-05-07_w2bridge",
       "to": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
     },
@@ -64746,6 +64758,22 @@
       "runner_path": null,
       "title": "Persistent Record Side-Bit Note"
     },
+    "persistent_record_stinespring_isometry_narrow_theorem_note_2026-05-20": {
+      "claim_id": "persistent_record_stinespring_isometry_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "persistent_record_overlap_kernel_note",
+        "persistent_record_as_kraus_operator_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "11bd2fcef3f485bd563726e9b99704b5803d998c6b2e4a05f3276c64b65ae58b",
+      "path": "docs/PERSISTENT_RECORD_STINESPRING_ISOMETRY_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Persistent-Record Process Stinespring Isometry on the Qubit-Lattice Substrate (Narrow)"
+    },
     "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": {
       "claim_id": "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
       "claim_type_author_hint": "bounded_theorem",
@@ -81066,7 +81094,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 505,
+      "bounded_theorem": 506,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -81075,7 +81103,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 943,
+      "bounded_theorem": 944,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -81083,9 +81111,9 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9671,
+    "edge_count": 9674,
     "leaf_count": 735,
-    "node_count": 2463,
+    "node_count": 2464,
     "root_count": 804,
     "runners_with_path": 2032
   }

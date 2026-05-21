@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 112 |
-| **retained_no_go** | 137 |
+| **retained_no_go** | 138 |
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | audit_in_progress | 9 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 10 |
-| `audited_clean` | 597 |
+| `audited_clean` | 598 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1542 |
+| `unaudited` | 1541 |
 
 | claim_type | count |
 |---|---:|
@@ -134,6 +134,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `action_power_3d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_power_scaling_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_uniqueness_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -986,6 +987,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The field-strength, connectivity, and jitter sweeps report toward counts of 0/14, 0/3, and 0/8, so the current ordered-family barrier-sign lane is a bounded negative.  _(class `C`)_
 - **chain closes:** True — The completed runner output enumerates exactly the bounded variations named in the note, and every reported detector z-centroid shift is negative/AWAY. The note explicitly excludes topology-changing, continuum-limit, and other action-family claims.
 - **rationale:** The source note makes a bounded finite-sweep claim, not a universal no-go over all possible 3D gravity constructions. The runner output covers the stated field-strength, forward-connectivity, and geometric-jitter sweeps and agrees with the note's zero-toward summaries. The clean verdict is limited to this runner-defined ordered-family barrier-sign closure.
+- **auditor confidence:** high
+
+### `action_power_3d_operator_cauchy_note_2026-05-10`
+
+- **Note:** [`ACTION_POWER_3D_OPERATOR_CAUCHY_NOTE_2026-05-10.md`](../../docs/ACTION_POWER_3D_OPERATOR_CAUCHY_NOTE_2026-05-10.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Bounded numerical operator-Cauchy gate failure for the compressed action-power 3D ordered dense-lattice companion family on the stated h-grid and p-grid, with p=0.5 and p=1.0 sharp ratio-observable nulls and p=2.0 an inconclusive poor-fit gate failure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-215638-bb10cae5-action_power_3d_operator-023`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes vec(h;p) = (gravity at mass_z=2.0, gravity at mass_z=3.0, Born) over h in {1.0,0.5,0.25,0.125} and p in {0.5,1.0,2.0}, then finds no p satisfies the positive operator-Cauchy gate r > 0.5 and R^2 >= 0.95.  _(class `C`)_
+- **chain closes:** True — The primary runner source genuinely instantiates the stated lattice, propagator, slits, field, Born guard, k=0 control, observable vectors, and geometric Cauchy fits rather than replaying constants. The reported stdout matches the claimed gate failure on the restricted tested grid.
+- **rationale:** The load-bearing step is a first-principles numerical compute within the provided harness, producing the Cauchy increments and fits used for the no-go verdict. The cited authorities are retained-grade and are used for bounded context/method selection, while the current claim's conclusion rests on the included runner computation. The clean verdict is limited to the finite tested grid and compressed companion family; it does not audit a first-principles proof of asymptotic non-unitarity or terminal non-convergence for p=2.0.
 - **auditor confidence:** high
 
 ### `action_power_note`

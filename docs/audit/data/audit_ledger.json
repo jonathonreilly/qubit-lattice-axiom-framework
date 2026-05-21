@@ -188594,22 +188594,45 @@
       "verdict_rationale": null
     },
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:06:45.063578+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "a1_qubit_interpretation_note_2026-05-20": null,
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "a1_qubit_interpretation_note_2026-05-20": "meta",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "a1_qubit_interpretation_note_2026-05-20",
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-pre_record_reference_sta-021",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The operator-algebra uniqueness portion is presented as standard mathematics, but the physical identification of \u03c4 with the pre-record reference depends on an admitted no-extra-structure premise not closed by the restricted packet. The cited authorities are also meta-status rather than retained-grade scientific dependencies under the rubric.",
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Audited the claim that A1+A2 determine the unique tracial state on the qubit-lattice UHF algebra and, with the admitted no-extra-structure principle, identify it as the pre-record reference state \u03c1_ref = \u2297_x I/2.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the uniqueness",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:06:45.063578+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -188618,20 +188641,23 @@
         "a1_qubit_interpretation_note_2026-05-20"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The no-extra-structure principle identifies the unique tracial state \u03c4 as the pre-record reference because any other pre-record state would introduce preferred basis/direction/eigenstate structure not present in A1+A2.",
+      "load_bearing_step_class": "F",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f32b79ddd3f06eaf5f596c6523f9ad4b85bd0aa5aaea6a771a003ea9a9b0f5a3",
       "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade theorem or accepted framework rule deriving the no-extra-structure identification of the unique tracial state with the pre-record reference, rather than admitting it as a premise.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
@@ -188645,7 +188671,7 @@
       "runner_path": null,
       "title": "Pre-Record Reference State as the Unique Tracial State on A1+A2",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The note itself correctly labels Step 5 as admitted: the transition from unique tracial state to pre-record reference is an identification principle rather than a derivation from A1+A2 alone. Under the audit rubric, retained status does not propagate through an open identification, and non-retained/meta cited authorities also force a conditional verdict. There is no runner evidence to upgrade the claim, but no compute is required to judge this packet because the blocker is conceptual, not numerical."
     },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "audit_date": "2026-05-11T17:49:51.246420+00:00",

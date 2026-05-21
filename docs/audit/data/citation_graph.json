@@ -19325,6 +19325,18 @@
       "to": "observable_principle_p1_bridge_wave11_route_c_doplicher_roberts_reconstruction_external_narrow_bounded_note_2026-05-17"
     },
     {
+      "from": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+      "to": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+    },
+    {
       "from": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -19527,6 +19539,14 @@
     {
       "from": "persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16",
       "to": "persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16"
+    },
+    {
+      "from": "persistent_record_as_kraus_operator_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "persistent_record_as_kraus_operator_note_2026-05-20",
+      "to": "persistent_record_overlap_kernel_note"
     },
     {
       "from": "persistent_record_sidebit_note",
@@ -63918,6 +63938,22 @@
       "runner_path": "scripts/frontier_observable_principle_p1_campaign_closure_synthesis_2026_05_18.py",
       "title": "Observable-Principle P1 Bridge Campaign \u2014 Closure Synthesis"
     },
+    "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": {
+      "claim_id": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cfbacad6188feec47adf241da85e41edcb80d3aae03c40c0db90af4f5357d855",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Observable-Principle P1 + P2 from Qubit-Trace Generating Functional"
+    },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
       "claim_id": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -64570,6 +64606,21 @@
       "path": "docs/PERSISTENT_OBJECT_TOP4_MULTISTAGE_TRANSFER_SWEEP_NOTE_2026-04-16.md",
       "runner_path": "scripts/persistent_object_top4_multistage_transfer_sweep.py",
       "title": "Persistent Object Top4 Multistage Transfer Sweep"
+    },
+    "persistent_record_as_kraus_operator_note_2026-05-20": {
+      "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "persistent_record_overlap_kernel_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "17e391bea04e73dfd0caf7dbd7bd94dd654b106a10f944aa7bd5fe7ecd9c5a28",
+      "path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators"
     },
     "persistent_record_matched_compare_note": {
       "claim_id": "persistent_record_matched_compare_note",
@@ -80925,7 +80976,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 503,
+      "bounded_theorem": 505,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -80934,7 +80985,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 941,
+      "bounded_theorem": 943,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -80942,9 +80993,9 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9661,
-    "leaf_count": 729,
-    "node_count": 2456,
+    "edge_count": 9666,
+    "leaf_count": 730,
+    "node_count": 2458,
     "root_count": 804,
     "runners_with_path": 2032
   }

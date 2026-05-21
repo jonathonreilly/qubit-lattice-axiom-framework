@@ -17065,6 +17065,10 @@
       "to": "lorentz_boost_covariance_3plus1d_theorem_note"
     },
     {
+      "from": "luders_rule_from_composition_consistency_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
       "from": "mass_mixing_subspace_disjointness_theorem_note",
       "to": "dm_neutrino_dirac_bridge_theorem_note_2026-04-15"
     },
@@ -60975,6 +60979,20 @@
       "runner_path": "scripts/frontier_lorentz_violation.py",
       "title": "Lorentz Violation Derived from Cubic Lattice Structure"
     },
+    "luders_rule_from_composition_consistency_note_2026-05-20": {
+      "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ee8ae7a6a020099ff7c7e1973860b08dc0c739fffc5876e56d958cb515df4105",
+      "path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "L\u00fcders Rule from Compositional Bayesian Consistency"
+    },
     "main_open_cubic_validation_2026-04-11": {
       "claim_id": "main_open_cubic_validation_2026-04-11",
       "claim_type_author_hint": null,
@@ -80907,7 +80925,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 502,
+      "bounded_theorem": 503,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -80916,7 +80934,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 940,
+      "bounded_theorem": 941,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -80924,9 +80942,9 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
-    "leaf_count": 728,
-    "node_count": 2455,
+    "edge_count": 9661,
+    "leaf_count": 729,
+    "node_count": 2456,
     "root_count": 804,
     "runners_with_path": 2032
   }

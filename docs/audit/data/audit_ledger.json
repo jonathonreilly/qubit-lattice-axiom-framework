@@ -1,5 +1,26 @@
 {
-  "last_invalidations": [],
+  "last_invalidations": [
+    {
+      "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+      "reason": "dep_weakened:staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16:retained_bounded->retained_pending_chain"
+    },
+    {
+      "claim_id": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
+      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
+    },
+    {
+      "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
+    },
+    {
+      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
+    },
+    {
+      "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
+    }
+  ],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -33802,7 +33823,7 @@
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": true,
       "chain_closure_explanation": "The only load-bearing dependency, the complexification split note, is provided as retained, and the remaining steps are standard semisimple algebra representation theory admitted by the packet. The note explicitly excludes the physical per-site Hilbert-space bridge, so that missing bridge does not block this scoped algebraic claim.",
       "claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
@@ -33826,19 +33847,30 @@
           "load_bearing_step_class": "B",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-21T21:59:34.724252+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-cl3_faithful_irrep_dim_t-003",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Abstract finite-dimensional complex representation theory of real Cl(3,0): irreducibles are the two 2-dimensional chirality modules and finite-dimensional modules decompose into their direct sums.",
+          "claim_type": "decoration",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_decoration"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 8,
-      "effective_status": "retained",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status": "audit_in_progress",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": "fresh_context",
-      "intrinsic_status": "retained",
+      "intrinsic_status": "audit_in_progress",
       "load_bearing_score": 17.967,
       "load_bearing_step": "By the sibling narrow theorem (K3), Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), so Artin-Wedderburn gives exactly two irreducible complex modules, each of dimension 2.",
       "load_bearing_step_class": "B",
@@ -169855,41 +169887,24 @@
       "verdict_rationale": null
     },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
-      "audit_date": "2026-05-17T15:03:22.956138+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M)."
-        },
-        "dep_claim_type": {
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
-        },
-        "deps": [
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": "0f412a8805bc8953952c1dc1a90198adfe259de6388682bcdea7a1dae445cc1c",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260517-150053-bc2044d8-observable_principle_p1_-012",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "For the bounded scope, the chain closes: determinant factorization and log/entropy additivity are exact checks, and the note explicitly keeps additivity as an input rather than a derived conclusion. No framework-level P1 closure is claimed.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
-      "claim_scope": "Audited the bounded external-classification scaffold: additive-functional uniqueness gives W=c log|Z| only conditional on P1, and the scaffold does not retire the admitted P1 additivity premise.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T15:03:22.956138+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -169897,34 +169912,84 @@
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 4,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 4.807,
-      "load_bearing_step": "Given an admitted continuous additive scalar functional W(r1 r2)=W(r1)+W(r2), Cauchy/Shannon-Khinchin-Aczel-Daroczy classify the additive class as logarithmic/Shannon form, but those theorems assume additivity and therefore do not derive P1.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "bf9e928a19b5ed0ac4ffdb95b1d048f0a92d92e8a52a6482f67589e0ea1d3bb2",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check the exact Khinchin/Aczel-Daroczy bibliographic scope, since the runner samples the axioms and cites uniqueness rather than reproving the published classification theorem.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T22:13:47.399022+00:00",
+          "audit_date": "2026-05-17T15:03:22.956138+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M)."
+            },
+            "dep_claim_type": {
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+            },
+            "deps": [
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": "0f412a8805bc8953952c1dc1a90198adfe259de6388682bcdea7a1dae445cc1c",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260517-150053-bc2044d8-observable_principle_p1_-012",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "For the bounded scope, the chain closes: determinant factorization and log/entropy additivity are exact checks, and the note explicitly keeps additivity as an input rather than a derived conclusion. No framework-level P1 closure is claimed.",
+          "claim_scope": "Audited the bounded external-classification scaffold: additive-functional uniqueness gives W=c log|Z| only conditional on P1, and the scaffold does not retire the admitted P1 additivity premise.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T15:03:22.956138+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16:retained_bounded->retained_pending_chain",
+          "load_bearing_step": "Given an admitted continuous additive scalar functional W(r1 r2)=W(r1)+W(r2), Cauchy/Shannon-Khinchin-Aczel-Daroczy classify the additive class as logarithmic/Shannon form, but those theorems assume additivity and therefore do not derive P1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check the exact Khinchin/Aczel-Daroczy bibliographic scope, since the runner samples the axioms and cites uniqueness rather than reproving the published classification theorem.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 19,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 19
+          },
+          "verdict_rationale": "The load-bearing step is an algebraic/logical classification over an explicitly assumed additive functional class, not a first-principles derivation of physical additivity. The runner source performs real symbolic/numeric checks plus source-boundary checks and does not hard-code a contested numerical target or import an external comparator. The note's conclusion is honestly bounded: it records the external uniqueness scaffold and states that P1 remains unretired."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 19,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 19
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note",
       "transitive_descendants": 6,
-      "verdict_rationale": "The load-bearing step is an algebraic/logical classification over an explicitly assumed additive functional class, not a first-principles derivation of physical additivity. The runner source performs real symbolic/numeric checks plus source-boundary checks and does not hard-code a contested numerical target or import an external comparator. The note's conclusion is honestly bounded: it records the external uniqueness scaffold and states that P1 remains unretired."
+      "verdict_rationale": null
     },
     "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17": {
       "audit_date": null,
@@ -222641,41 +222706,24 @@
       "verdict_rationale": "Within the narrow algebraic scope, the claim closes as a standard finite Berezin-calculus identity. The runner evidence is entirely class-A algebraic checking and is consistent with the proof; the note explicitly excludes the physical spin-statistics bridge and downstream positivity surfaces from the audited load."
     },
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {
-      "audit_date": "2026-05-11T02:06:15.592031+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
-        },
-        "dep_claim_type": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "31831afc8ca33f5a53cf9217d96919501a0fbb016046e4003e62341473d9dcc2",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-019e14c8-9769-7ae1-9103-472c44aa4fc7",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The scoped claims (C1)-(P2) close from admitted trace linear algebra and the explicit CAR matrices in the packet. The cited Cl(3) retained authority is only needed for the corollary dimensional match, not for the CAR/CCR algebra itself.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Finite-dimensional complex linear algebra: CCR has no nonzero finite-dimensional representation, the one-mode CAR has a 2-dimensional irreducible carrier, and CAR implies squared-creation nilpotence and occupation spectrum {0,1}.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-11T02:06:15.592031+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -222683,34 +222731,84 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.5,
-      "load_bearing_step": "Taking the finite-dimensional trace of [a, a\u2020] = I gives 0 = Tr([a, a\u2020]) = Tr(I) = D, while the explicit 2\u00d72 CAR matrices give (a\u2020)^2 = 0 and n^2 = n.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "a4ca9fa7ab17a7ce950aa41726a768f686f236e78353bcafc5980c72c05ce430",
       "note_path": "docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "No re-audit needed unless the claim scope is later expanded to identify the framework physical per-site Hilbert space with this CAR carrier.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T22:13:47.418206+00:00",
+          "audit_date": "2026-05-11T02:06:15.592031+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
+            },
+            "dep_claim_type": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "31831afc8ca33f5a53cf9217d96919501a0fbb016046e4003e62341473d9dcc2",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-019e14c8-9769-7ae1-9103-472c44aa4fc7",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The scoped claims (C1)-(P2) close from admitted trace linear algebra and the explicit CAR matrices in the packet. The cited Cl(3) retained authority is only needed for the corollary dimensional match, not for the CAR/CCR algebra itself.",
+          "claim_scope": "Finite-dimensional complex linear algebra: CCR has no nonzero finite-dimensional representation, the one-mode CAR has a 2-dimensional irreducible carrier, and CAR implies squared-creation nilpotence and occupation spectrum {0,1}.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-11T02:06:15.592031+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+          "load_bearing_step": "Taking the finite-dimensional trace of [a, a\u2020] = I gives 0 = Tr([a, a\u2020]) = Tr(I) = D, while the explicit 2\u00d72 CAR matrices give (a\u2020)^2 = 0 and n^2 = n.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "No re-audit needed unless the claim scope is later expanded to identify the framework physical per-site Hilbert space with this CAR carrier.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 33,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 33
+          },
+          "verdict_rationale": "The theorem is explicitly scoped to finite-dimensional algebra and does not claim the physical lattice carrier bridge. The load-bearing trace obstruction, CAR realization, Pauli nilpotence, and number-operator idempotence are standard characteristic-zero algebraic consequences and are checked by the runner without importing a physical observable or tuned comparator."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 33,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 33
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_spin_statistics_cardinality_pauli_exclusion_exact_2026_05_10.py",
       "title": "Spin-Statistics Cardinality and Pauli Exclusion Narrow Theorem",
       "transitive_descendants": 3,
-      "verdict_rationale": "The theorem is explicitly scoped to finite-dimensional algebra and does not claim the physical lattice carrier bridge. The load-bearing trace obstruction, CAR realization, Pauli nilpotence, and number-operator idempotence are standard characteristic-zero algebraic consequences and are checked by the runner without importing a physical observable or tuned comparator."
+      "verdict_rationale": null
     },
     "spinnetwork_full_ed_bounded_theorem_note_2026-05-07_w1full": {
       "audit_date": null,
@@ -224423,45 +224521,24 @@
       "verdict_rationale": "The note is clean only under the open_gate scope: it defines a canonical parent object for an unresolved derivation target and repeatedly states that the substantive A1+A2-to-staggered-Dirac chain is not closed. There is no hidden theorem promotion, no runner-bearing numerical match, and no decoration claim. Residual risk is governance-only: a future theorem audit must not cite this clean open-gate verdict as proof of the staggered-Dirac realization itself."
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
-      "audit_date": "2026-05-16T14:01:24.764309+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps.",
-          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite-dimensional abstract Grassmann algebra: Berezin determinant identity for a quadratic chi-bar M chi action and odd-odd exchange antisymmetry, conditional only on the stated anticommutation and Berezin integration rules."
-        },
-        "dep_claim_type": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained",
-          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
-        },
-        "deps": [
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260516-140024-20260516T140024Z-b8451320-staggered_dirac_substep1-targeted",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Within the bounded scope, D1-D4 follow from retained or retained_bounded cited inputs plus standard finite algebra and harmonic-oscillator/Fock facts. The physical U4 lattice-Hilbert-space bridge is explicitly out of scope and is not consumed by the audited claim.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M).",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-16T14:01:24.764309+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -224470,71 +224547,108 @@
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 6,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 9.17,
-      "load_bearing_step": "Within the explicitly two-candidate framing, if a candidate must match dim_C V = 2, then the bosonic Fock candidate is ruled out by infinite per-site dimension while the Grassmann candidate remains and has the Berezin det(M) readout.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_bounded",
       "max_descendant_status_rank": 95,
       "note_hash": "136ddf67f84afbfcfca350523367614b69d4b03a3bceab2b837cd9444dd49ff5",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": "Re-check that downstream users do not read this as closing the physical U4 lattice-Hilbert-space bridge; this audit covers only the explicitly abstract two-candidate theorem.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T22:13:47.419633+00:00",
+          "audit_date": "2026-05-16T14:01:24.764309+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps.",
+              "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite-dimensional abstract Grassmann algebra: Berezin determinant identity for a quadratic chi-bar M chi action and odd-odd exchange antisymmetry, conditional only on the stated anticommutation and Berezin integration rules."
+            },
+            "dep_claim_type": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained",
+              "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+            },
+            "deps": [
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+              "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260516-140024-20260516T140024Z-b8451320-staggered_dirac_substep1-targeted",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Within the bounded scope, D1-D4 follow from retained or retained_bounded cited inputs plus standard finite algebra and harmonic-oscillator/Fock facts. The physical U4 lattice-Hilbert-space bridge is explicitly out of scope and is not consumed by the audited claim.",
+          "claim_scope": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M).",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-16T14:01:24.764309+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+          "load_bearing_step": "Within the explicitly two-candidate framing, if a candidate must match dim_C V = 2, then the bosonic Fock candidate is ruled out by infinite per-site dimension while the Grassmann candidate remains and has the Berezin det(M) readout.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check that downstream users do not read this as closing the physical U4 lattice-Hilbert-space bridge; this audit covers only the explicitly abstract two-candidate theorem.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 24,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 24
+          },
+          "verdict_rationale": "The load-bearing step is a genuine algebraic closure over independent retained-grade inputs: Cl(3) faithful complex irreps have dimension 2, Grassmann nilpotency gives a two-state per-site module, and bosonic canonical Fock space is infinite-dimensional. The Berezin determinant part is directly supplied by the retained_bounded Berezin authority and rechecked by the runner via exact symbolic determinant computations. The runner source performs finite symbolic checks rather than merely printing pass constants, though it correctly treats the two-candidate framing as a scoped premise rather than a universal classification."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 24,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 24
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
       "transitive_descendants": 8,
-      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over independent retained-grade inputs: Cl(3) faithful complex irreps have dimension 2, Grassmann nilpotency gives a two-state per-site module, and bosonic canonical Fock space is infinite-dimensional. The Berezin determinant part is directly supplied by the retained_bounded Berezin authority and rechecked by the runner via exact symbolic determinant computations. The runner source performs finite symbolic checks rather than merely printing pass constants, though it correctly treats the two-candidate framing as a scoped premise rather than a universal classification."
+      "verdict_rationale": null
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T15:08:15.709982+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
-        },
-        "dep_claim_type": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3",
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260517-150751-a5e2dcef-staggered_dirac_substep1-002",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The claimed CAR relations follow from Pauli identities, disjoint tensor-factor commutativity, and the explicit JW string sign flip. The note explicitly excludes the physical U4 identification, so that open bridge is not part of the audited scope.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Audited the finite-dimensional algebraic statement that Jordan-Wigner strings on H_Lambda = V^{tensor N}, with V the retained Cl(3) two-dimensional Pauli irrep and a fixed finite ordering, satisfy (J1)-(J4) CAR, nilpotency, CAR-algebra dimension, and number-operator identities.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T15:08:15.709982+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -224542,106 +224656,189 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.085,
-      "load_bearing_step": "For pi(x) < pi(y), the JW string factor S_y = S_x sigma_3^(x) T_xy makes c_x c_y acquire the opposite sign from c_y c_x by the on-site anticommutation sigma_+^(x) sigma_3^(x) = -sigma_3^(x) sigma_+^(x).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "9e456244814528d0c54eba96760370c61d54dba362970fc1833e784182dace79",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Re-check only whether the lane wants this boxed as an algebraic bridge rather than decoration; mathematically the bounded theorem closes as stated.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T22:13:47.419828+00:00",
+          "audit_date": "2026-05-17T15:08:15.709982+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
+            },
+            "dep_claim_type": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3",
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260517-150751-a5e2dcef-staggered_dirac_substep1-002",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The claimed CAR relations follow from Pauli identities, disjoint tensor-factor commutativity, and the explicit JW string sign flip. The note explicitly excludes the physical U4 identification, so that open bridge is not part of the audited scope.",
+          "claim_scope": "Audited the finite-dimensional algebraic statement that Jordan-Wigner strings on H_Lambda = V^{tensor N}, with V the retained Cl(3) two-dimensional Pauli irrep and a fixed finite ordering, satisfy (J1)-(J4) CAR, nilpotency, CAR-algebra dimension, and number-operator identities.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T15:08:15.709982+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+          "load_bearing_step": "For pi(x) < pi(y), the JW string factor S_y = S_x sigma_3^(x) T_xy makes c_x c_y acquire the opposite sign from c_y c_x by the on-site anticommutation sigma_+^(x) sigma_3^(x) = -sigma_3^(x) sigma_+^(x).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check only whether the lane wants this boxed as an algebraic bridge rather than decoration; mathematically the bounded theorem closes as stated.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 44,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 44
+          },
+          "verdict_rationale": "Within its stated abstract tensor-product scope, the derivation is a genuine algebraic closure over the retained Cl(3) dim-two input and admitted finite tensor-product construction. The runner source actually constructs Pauli tensor operators and JW strings with exact sympy arithmetic, rather than merely printing constants, and its PASS=44 FAIL=0 output supports the stated identities. No external comparator, tuned value, or physical-lattice identification is imported; the open U4 bridge is clearly scoped out."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 44,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 44
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem",
       "transitive_descendants": 2,
-      "verdict_rationale": "Within its stated abstract tensor-product scope, the derivation is a genuine algebraic closure over the retained Cl(3) dim-two input and admitted finite tensor-product construction. The runner source actually constructs Pauli tensor operators and JW strings with exact sympy arithmetic, rather than merely printing constants, and its PASS=44 FAIL=0 output supports the stated identities. No external comparator, tuned value, or physical-lattice identification is imported; the open U4 bridge is clearly scoped out."
+      "verdict_rationale": null
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
-      "audit_date": "2026-05-17T18:54:24.564223+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
-        },
-        "dep_claim_type": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260517-185148-41cdea85-staggered_dirac_substep1-018",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The scoped conditional/enumeration follows from the retained one-hop Cl(3) decomposition plus standard direct-sum algebra. It does not close unconditional U4; the missing step is a retained theorem selecting k = 1 from the physical Cl(3)/Z^3 substrate.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "claim_scope": "Decorative algebraic corollary of the retained Cl(3) decomposition: under the single-module condition k = 1, dim_C H_x = 2, while k >= 2 remains algebraically admissible.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T18:54:24.564223+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+      "decoration_parent_claim_id": null,
       "deps": [
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "By the retained D2 decomposition, H_x is isomorphic to rho_+^{n_+} direct-sum rho_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so k = 1 gives dim_C H_x = 2 while k >= 2 gives higher-multiplicity faithful modules.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d147962b455e511fbcd3e9fd8638b0a56c1005f35a1002aab35bd96be6c54140",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check the k=0 zero-module/non-Clifford wording; it is not load-bearing for the k=1 conditional.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T22:13:47.420033+00:00",
+          "audit_date": "2026-05-17T18:54:24.564223+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
+            },
+            "dep_claim_type": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-20260517-185148-41cdea85-staggered_dirac_substep1-018",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The scoped conditional/enumeration follows from the retained one-hop Cl(3) decomposition plus standard direct-sum algebra. It does not close unconditional U4; the missing step is a retained theorem selecting k = 1 from the physical Cl(3)/Z^3 substrate.",
+          "claim_scope": "Decorative algebraic corollary of the retained Cl(3) decomposition: under the single-module condition k = 1, dim_C H_x = 2, while k >= 2 remains algebraically admissible.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-17T18:54:24.564223+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+          "load_bearing_step": "By the retained D2 decomposition, H_x is isomorphic to rho_+^{n_+} direct-sum rho_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so k = 1 gives dim_C H_x = 2 while k >= 2 gives higher-multiplicity faithful modules.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check the k=0 zero-module/non-Clifford wording; it is not load-bearing for the k=1 conditional.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 38,
+            "B": 3,
+            "C": 5,
+            "D": 0,
+            "total_pass": 46
+          },
+          "verdict_rationale": "Issue: the note's load-bearing content is an algebraic corollary of the retained CL3 faithful-irrep decomposition, with k introduced as n_+ + n_- and no independent physical bridge or comparator. Why this blocks clean independent status: the conditional statement closes, but it adds no independent theorem beyond the parent decomposition and does not close U4. Repair target: keep it boxed as a corollary under the parent or add a retained theorem deriving the physical single-module selection k = 1. Claim boundary until fixed: given k = 1, dim_C H_x = 2; k >= 2 remains admissible on the abstract algebraic surface."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 38,
-        "B": 3,
-        "C": 5,
+        "A": 0,
+        "B": 0,
+        "C": 0,
         "D": 0,
-        "total_pass": 46
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the note's load-bearing content is an algebraic corollary of the retained CL3 faithful-irrep decomposition, with k introduced as n_+ + n_- and no independent physical bridge or comparator. Why this blocks clean independent status: the conditional statement closes, but it adds no independent theorem beyond the parent decomposition and does not close U4. Repair target: keep it boxed as a corollary under the parent or add a retained theorem deriving the physical single-module selection k = 1. Claim boundary until fixed: given k = 1, dim_C H_x = 2; k >= 2 remains admissible on the abstract algebraic surface."
+      "verdict_rationale": null
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

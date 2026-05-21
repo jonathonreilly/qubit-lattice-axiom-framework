@@ -28,7 +28,7 @@ methodological deliverable.
 1. **Vocabulary is disjoint from physics.** Physics primitives (`Cl(3)`,
    `Z^3`, `A_min`, `Axiom 1`, `Axiom 2`, `g_bare`, `u_0`, `M_Pl`, etc.)
    are *not* vocabulary terms. They live in
-   [MINIMAL_AXIOMS_2026-05-03.md](../MINIMAL_AXIOMS_2026-05-03.md) and
+   [MINIMAL_AXIOMS_2026-05-20.md](../MINIMAL_AXIOMS_2026-05-20.md) and
    per-claim notes. Vocabulary governs *process labels only*: status,
    audit fields, repair classes, evidence terms, prose voice.
 
@@ -156,7 +156,7 @@ These are **physics**, not vocabulary, and never appear in
 
 - **Framework primitives.** `Cl(3)`, `Z^3`, `A_min`, `Axiom 1`,
   `Axiom 2`, `Axiom*`. Canonical home:
-  [MINIMAL_AXIOMS_2026-05-03.md](../MINIMAL_AXIOMS_2026-05-03.md);
+  [MINIMAL_AXIOMS_2026-05-20.md](../MINIMAL_AXIOMS_2026-05-20.md);
   policy: [AXIOM_MINIMALITY_POLICY.md](../audit/AXIOM_MINIMALITY_POLICY.md).
 - **Physics quantities.** `g_bare`, `u_0`, `M_Pl`, `R_conn`, `alpha_s`,
   `v`, etc. Canonical home:
@@ -190,7 +190,7 @@ layers:
     rendered_doc: docs/KEY_TERMINOLOGY.md
     governs: "Single-page A-Z index of every repo-canonical process term."
   - id: 1_framework_substantive
-    source_of_truth: docs/MINIMAL_AXIOMS_2026-05-03.md
+    source_of_truth: docs/MINIMAL_AXIOMS_2026-05-20.md
     governs: "Framework primitives. Out of scope for this vocabulary."
   - id: 2_external_paper_text
     source_of_truth:
@@ -408,7 +408,7 @@ scope:
     - 'Filename conventions'
     - 'Forbidden patterns'
   out_of_scope:
-    - 'Framework primitives (live in MINIMAL_AXIOMS_2026-05-03.md)'
+    - 'Framework primitives (live in MINIMAL_AXIOMS_2026-05-20.md)'
     - 'Physics quantities (live in ASSUMPTION_DERIVATION_LEDGER / per-claim notes)'
     - 'Topic-specific physics wording (lives in topic notes; not vocabulary)'
 ```

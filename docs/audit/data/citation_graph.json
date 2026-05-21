@@ -15693,6 +15693,22 @@
       "to": "dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem_note_2026-04-16"
     },
     {
+      "from": "koide_selector_dimension_ratio_from_qubit_reframe_note_2026-05-20",
+      "to": "charged_lepton_koide_note_2026-04-18"
+    },
+    {
+      "from": "koide_selector_dimension_ratio_from_qubit_reframe_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "koide_selector_dimension_ratio_from_qubit_reframe_note_2026-05-20",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "koide_selector_dimension_ratio_from_qubit_reframe_note_2026-05-20",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "koide_sqrtm_amplitude_principle_note_2026-04-18",
       "to": "koide_positive_parent_axis_obstruction_note_2026-04-18"
     },
@@ -58680,6 +58696,23 @@
       "runner_path": "scripts/frontier_koide_selected_slice_spectral_completion_and_minimal_local_spectral_law_no_go.py",
       "title": "Koide Selected-Slice Spectral Completion and Minimal Local Spectral-Law No-Go"
     },
+    "koide_selector_dimension_ratio_from_qubit_reframe_note_2026-05-20": {
+      "claim_id": "koide_selector_dimension_ratio_from_qubit_reframe_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "charged_lepton_koide_note_2026-04-18",
+        "minimal_axioms_2026-05-20",
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0e2678a242d1b697b8b0e184c4c310e84049189d203950156ac046b5673a7a77",
+      "path": "docs/KOIDE_SELECTOR_DIMENSION_RATIO_FROM_QUBIT_REFRAME_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Koide SELECTOR Dimension Ratio from Qubit Reframe: 2/3 = dim(qubit) / |Cl(3) generators|"
+    },
     "koide_sqrtm_amplitude_principle_note_2026-04-18": {
       "claim_id": "koide_sqrtm_amplitude_principle_note_2026-04-18",
       "claim_type_author_hint": null,
@@ -80907,7 +80940,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 502,
+      "bounded_theorem": 503,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -80916,7 +80949,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 940,
+      "bounded_theorem": 941,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -80924,9 +80957,9 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
-    "leaf_count": 728,
-    "node_count": 2455,
+    "edge_count": 9664,
+    "leaf_count": 729,
+    "node_count": 2456,
     "root_count": 804,
     "runners_with_path": 2032
   }

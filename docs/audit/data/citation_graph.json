@@ -22070,10 +22070,6 @@
     },
     {
       "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
-      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-    },
-    {
-      "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
     },
     {
@@ -70547,18 +70543,17 @@
     "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20": {
       "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem candidate (operator-algebra compatibility result)",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "minimal_axioms_2026-05-20",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c89ebcad6b51d1bbb7103593e7fc8c3d674ca0cb168ead1c40bd4cb5388cb014",
+      "note_hash": "ca7ae9ca5ad47d657ec26327f88dc967c5e58fc979f2bde4d019aa3bc4c6ae2d",
       "path": "docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md",
       "runner_path": null,
-      "title": "Reflection Positivity \u2194 \u03c1_ref Radon\u2013Nikodym Compatibility"
+      "title": "Finite-Volume Gibbs State Relative to rho_ref: Conditional RP Compatibility Template"
     },
     "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10": {
       "claim_id": "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10",
@@ -80970,7 +80965,7 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9664,
+    "edge_count": 9663,
     "leaf_count": 730,
     "node_count": 2457,
     "root_count": 804,

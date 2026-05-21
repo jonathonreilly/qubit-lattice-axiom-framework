@@ -13063,13 +13063,13 @@
       "deps": [
         "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
       ],
-      "direct_in_degree": 35,
+      "direct_in_degree": 34,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 27.438,
+      "load_bearing_score": 26.938,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -205098,7 +205098,7 @@
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem candidate (operator-algebra compatibility result)",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "author_hint",
       "criticality": "leaf",
@@ -205106,7 +205106,6 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "minimal_axioms_2026-05-20",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "direct_in_degree": 0,
@@ -205120,7 +205119,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "c89ebcad6b51d1bbb7103593e7fc8c3d674ca0cb168ead1c40bd4cb5388cb014",
+      "note_hash": "ca7ae9ca5ad47d657ec26327f88dc967c5e58fc979f2bde4d019aa3bc4c6ae2d",
       "note_path": "docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -205135,7 +205134,7 @@
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Reflection Positivity \u2194 \u03c1_ref Radon\u2013Nikodym Compatibility",
+      "title": "Finite-Volume Gibbs State Relative to rho_ref: Conditional RP Compatibility Template",
       "transitive_descendants": 0,
       "verdict_rationale": null
     },

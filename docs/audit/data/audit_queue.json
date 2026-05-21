@@ -12367,10 +12367,10 @@
       "deps": [
         "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
       ],
-      "direct_in_degree": 35,
+      "direct_in_degree": 34,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 27.438,
+      "load_bearing_score": 26.938,
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": false,
@@ -44968,7 +44968,6 @@
       "cross_confirmation_status": null,
       "deps": [
         "minimal_axioms_2026-05-20",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "direct_in_degree": 0,

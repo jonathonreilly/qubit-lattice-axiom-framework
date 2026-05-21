@@ -1,234 +1,170 @@
-# Reflection Positivity ↔ ρ_ref Radon–Nikodym Compatibility
+# Finite-Volume Gibbs State Relative to rho_ref: Conditional RP Compatibility Template
 
 **Date:** 2026-05-20
-**Type:** bounded_theorem candidate (operator-algebra compatibility result)
+**Type:** bounded_theorem candidate
 **Status:** source-side proposal — independent audit lane owns the verdict
-**Closes (proposed):** the pending follow-up flagged in PR #1604 description:
-*"Reflection positivity ↔ A3' compatibility. The Wilson Euclidean
-measure is absolutely continuous with respect to ρ_ref; the
-Radon-Nikodym derivative should be identified."*
+**Purpose:** Salvage the correct finite-volume Radon-Nikodym statement
+needed by the reflection-positivity / `rho_ref` compatibility follow-up
+without claiming that the Wilson configuration measure has already been
+identified with the operator-algebra tracial state.
+
+## Honest Scope
+
+This note does **not** close the RP to `rho_ref` bridge. It records the
+standard finite-dimensional Gibbs/tracial Radon-Nikodym template on the
+qubit-lattice operator algebra:
+
+```text
+omega_H(O) = tau_Lambda(D_H O),    D_H = e^{-H} / tau_Lambda(e^{-H})
+```
+
+for a finite-region self-adjoint Hamiltonian/action operator `H` on
+`A_Lambda`. The missing bridge is the representation step that turns a
+Wilson Euclidean configuration-space measure into such an operator
+`H_Wilson,Lambda` on the same carrier as `rho_ref`. That step is not
+proved here.
 
 ## Claim
 
-On the qubit-lattice operator algebra defined by
-[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) (A1 =
-qubit at every site, A2 = `Z^3` substrate), the framework's
-**reflection-positive Wilson Euclidean measure** `μ_Wilson` (the
-positive measure on configurations underlying retained reflection
-positivity per
-[`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md))
-and the **canonical tracial state** `ρ_ref = ⊗_x I/2` (from
-[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md))
-satisfy the absolute-continuity relationship
+Let `Lambda subset Z^3` be finite. By
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md),
+the finite-region qubit-lattice algebra is
 
 ```text
-dμ_Wilson / dρ_ref = e^{-S_Wilson} · Z_Wilson^{-1}                       (1)
+A_Lambda = tensor_{x in Lambda} M_2(C) ~= M_{2^|Lambda|}(C).
 ```
 
-where `S_Wilson` is the Wilson action and `Z_Wilson` is the partition
-function. The Radon-Nikodym derivative is the standard Boltzmann
-weight relative to the tracial reference.
-
-This makes explicit the compatibility between the framework's two
-positive-measure structures: the Wilson Euclidean measure (carrier of
-RP) and the tracial reference state (carrier of the pre-record
-probability foundation under the qubit reframe).
-
-## Setup
-
-By A1+A2, the quasi-local operator algebra is
-`A = ⊗_{x ∈ Z^3} M_2(ℂ)` (UHF type `2^∞` C*-algebra). The framework
-defines two positive-measure structures on `A`:
-
-**The Wilson Euclidean measure `μ_Wilson`.** For a finite Λ ⊂ Z³,
-the Wilson action `S_Wilson[U, ψ]` (for gauge link variables and
-staggered fermions) gives the Euclidean path-integral measure
+Let `tau_Lambda(O) = Tr(O) / 2^|Lambda|` be the normalized trace,
+the finite-region restriction of the pre-record reference state from
+[`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md).
+For any self-adjoint finite-region operator `H in A_Lambda`, define
 
 ```text
-dμ_Wilson(U, ψ̄, ψ) = (1 / Z_Wilson) · e^{-S_Wilson[U, ψ̄, ψ]} · dU · dψ̄ · dψ      (2)
+Z_H = tau_Lambda(e^{-H}),        D_H = e^{-H} / Z_H.
 ```
 
-with `Z_Wilson = ∫ e^{-S_Wilson} · dU · dψ̄ · dψ`. This is a positive
-measure (after the staggered determinant positivity, retained for
-Cases A and B of the RP theorem), and reflection positivity
-(`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29`) is
-expressed as `⟨A · (θ A^†)⟩_μ ≥ 0` for observables `A` on one side
-of a temporal hyperplane.
-
-**The tracial state `ρ_ref = ⊗_x I/2`.** From the companion
-derivation note, this is the unique tracial state on `A`, given by
-`ρ_ref(O) = (1/2^|Λ|) · Tr_A(O)` for `O ∈ A_Λ`. As a state on the
-algebra (not a path-integral measure on configurations), `ρ_ref` is
-a different mathematical object than `μ_Wilson`. The compatibility
-question: how are they related?
-
-## Step 1 — Translation between the two language layers
-
-The Wilson measure `μ_Wilson` lives on **configuration space**
-(gauge links + fermion fields); the tracial state `ρ_ref` lives on
-**operator algebra** observables. The translation is via the
-operator-algebraic representation of observables:
-
-For any observable `O ∈ A_Λ`, its expectation under `μ_Wilson` is
+Then `D_H` is positive, `tau_Lambda(D_H) = 1`, and
 
 ```text
-⟨O⟩_Wilson = ∫ O(U, ψ̄, ψ) · dμ_Wilson(U, ψ̄, ψ)                          (3)
+omega_H(O) := tau_Lambda(D_H O)
 ```
 
-(where `O` here is the configuration-functional representation of the
-operator). Its expectation under `ρ_ref` is
+is a positive normalized state on `A_Lambda`. In finite dimension,
+`omega_H` is normal with respect to `tau_Lambda`, and its
+Radon-Nikodym density is exactly `D_H`.
+
+Equivalently, if a Wilson/RP finite-volume sector is independently
+represented on the qubit-lattice algebra by a self-adjoint operator
+`H_Wilson,Lambda`, then its Gibbs state is absolutely continuous with
+respect to `rho_ref|_Lambda` with positive density proportional to
+`e^{-H_Wilson,Lambda}`.
+
+## Proof
+
+Because `H = H^*`, functional calculus gives `e^{-H} > 0`. The trace
+state is faithful on the matrix algebra, so `Z_H = tau_Lambda(e^{-H})`
+is strictly positive. Hence `D_H = e^{-H} / Z_H` is positive and
 
 ```text
-ρ_ref(O) = (1/2^|Λ|) · Tr_A(O)                                          (4)
+tau_Lambda(D_H) = tau_Lambda(e^{-H}) / Z_H = 1.
 ```
 
-These two expectations are generally **not equal** for operators
-with non-trivial Boltzmann weight in `S_Wilson`. The Wilson measure
-weights configurations by `e^{-S_Wilson}`; the tracial state weights
-all states equally.
-
-## Step 2 — The Radon–Nikodym relationship
-
-Both `μ_Wilson` and `ρ_ref` are normalized positive measures (on
-configuration space and operator algebra respectively). They are
-**mutually absolutely continuous** in the following sense: there
-exists a positive density `f(U, ψ̄, ψ)` such that for any operator
-`O`,
+For `O >= 0`, positivity of the Gibbs state follows from the density
+matrix form
 
 ```text
-⟨O⟩_Wilson = ρ_ref(O · f) / ρ_ref(f)                                    (5)
+omega_H(O) = Tr(e^{-H} O) / Tr(e^{-H}).
 ```
 
-where `f` is the Radon-Nikodym derivative `dμ_Wilson / dρ_ref`. By
-direct construction from (2) and (4):
+Equivalently, writing `e^{-H} = R^2` with `R = e^{-H/2}`,
 
 ```text
-f(U, ψ̄, ψ) = 2^|Λ| · (1/Z_Wilson) · e^{-S_Wilson[U, ψ̄, ψ]}              (6)
+Tr(e^{-H} O) = Tr(R O R) >= 0
 ```
 
-So
+for positive `O`. Normalization is immediate from `omega_H(1)=1`.
+Finite dimensionality makes the Radon-Nikodym statement just the
+standard density-matrix representation relative to the faithful trace.
+
+## Conditional RP Compatibility Reading
+
+The retained reflection-positivity row
+`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29` concerns a
+Wilson Euclidean configuration/path-integral measure on its narrowed
+retained scope. That measure is not automatically a state on the same
+operator-algebra carrier as `rho_ref`.
+
+This note therefore supports only the following conditional statement:
 
 ```text
-dμ_Wilson / dρ_ref = e^{-S_Wilson} · Z_Wilson^{-1} · 2^|Λ|              (1')
+If a retained finite-volume Wilson/RP sector is represented by
+H_Wilson,Lambda in A_Lambda, then its Gibbs state has
+d omega_Wilson / d rho_ref|_Lambda proportional to e^{-H_Wilson,Lambda}.
 ```
 
-The factor `2^|Λ|` is the `dim H_Λ`, absorbed into the normalization
-convention. Stripping this convention:
+The representation map from the Wilson configuration measure to
+`H_Wilson,Lambda` remains a separate bridge. Without that bridge, it is
+not correct to say that `mu_Wilson` and `rho_ref` are mutually
+absolutely continuous, because they live on different mathematical
+carriers.
 
-```text
-dμ_Wilson / dρ_ref ∝ e^{-S_Wilson}                                       (7)
-```
+## What This Can Support After Audit
 
-The Radon-Nikodym derivative is the **Boltzmann weight** of the
-Wilson action, relative to the tracial reference state. This is the
-standard statistical-mechanics relationship: the Wilson measure is
-the Gibbs measure at unit inverse temperature on the qubit-lattice
-algebra, with the tracial state as the infinite-temperature (or
-zero-action) limit.
+- The finite-volume Gibbs/tracial density step needed by an eventual
+  RP to `rho_ref` compatibility theorem.
+- A clean audit target separating the standard Radon-Nikodym template
+  from the still-open Wilson-measure-to-operator-algebra bridge.
 
-## Step 3 — Compatibility check on positivity
+## What This Does Not Close
 
-The Radon-Nikodym density `f(U, ψ̄, ψ) ∝ e^{-S_Wilson}` is positive
-wherever `S_Wilson` is real and finite — which is the staggered-only
-(Case A) and symmetric-canonical Wilson (Case B) sectors of the
-retained RP theorem
-([`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),
-narrowed scope per 2026-05-17 review).
+- The pending RP to `rho_ref` compatibility follow-up from the qubit
+  reframe.
+- Mutual absolute continuity between the Wilson Euclidean configuration
+  measure and `rho_ref`.
+- The representation of the Wilson action as a self-adjoint
+  finite-region operator on `A_Lambda`.
+- The broader RP scope, full thermodynamic-limit RP retention, or any
+  numerical prediction.
 
-On these sectors:
-- `S_Wilson` is real (RP requires this)
-- `e^{-S_Wilson} > 0` (real exponential is positive)
-- Therefore `f > 0` (positive Radon-Nikodym density)
-- Therefore `μ_Wilson` and `ρ_ref` are mutually absolutely continuous
-- Therefore both measures see the same null sets — RP positivity on
-  `μ_Wilson` translates correctly to positivity statements on `ρ_ref`
+## Admitted Inputs
 
-This is the explicit compatibility check: **the Wilson measure
-(carrier of RP) and the tracial reference state (carrier of
-pre-record probability) coexist via a positive Boltzmann-weight
-Radon-Nikodym derivative.**
+1. **Finite-dimensional Gibbs-state construction** relative to a
+   faithful normalized trace.
+2. **Standard matrix functional calculus** for `e^{-H}` with
+   self-adjoint `H`.
+3. **Future/conditional Wilson representation bridge** if this lemma
+   is later used for the Wilson/RP compatibility row.
 
-## Step 4 — Thermodynamic limit
+## Risk Classification
 
-For the thermodynamic limit Λ → Z³, both `μ_Wilson` and `ρ_ref`
-extend to limit measures on the quasi-local algebra:
-- `ρ_ref` extends to the unique tracial state on the UHF type `2^∞`
-  C*-algebra (Powers / Glimm / Dixmier; supplied by the companion
-  derivation note)
-- `μ_Wilson` extends to the Gibbs measure at unit inverse temperature
-  on the same algebra, provided the action `S_Wilson` admits a
-  well-defined thermodynamic limit (standard lattice gauge theory)
+This is a `bounded_theorem` candidate. The finite-dimensional
+Gibbs/tracial density statement is standard operator-algebraic
+background applied to the qubit-lattice finite-region algebra. Any use
+as an RP compatibility result remains conditional on a separately
+audited carrier-identification bridge.
 
-The Radon-Nikodym relationship (7) extends to the thermodynamic
-limit on the staggered-only and symmetric-canonical Wilson sectors
-where RP retains. Outside those sectors (the broader Wilson surface
-explicitly outside the load-bearing RP claim per the 2026-05-17
-narrowing), the relationship is admitted as a structural property
-of the Wilson action but is not load-bearing for this note.
-
-## What this closes
-
-- **The pending RP ↔ ρ_ref compatibility follow-up** flagged in PR
-  #1604's qubit-reframe landing note. The Wilson measure and the
-  tracial state are now explicitly related via Boltzmann-weight
-  Radon-Nikodym derivative on the retained RP scope.
-
-## What this does not close
-
-- **The broader RP scope** (non-symmetric Wilson surfaces). The
-  retained RP is narrow (Cases A and B); the Radon-Nikodym
-  relationship inherits that narrowness.
-- **The full thermodynamic-limit RP retention** — that's the
-  Wilson-measure construction independent of this note.
-- **The framework's `BORN_RULE_ANALYSIS_2026-04-11` repair** — that's
-  the separate Born derivation chain.
-
-## Admitted inputs
-
-1. **Wilson action functional form** — admitted from standard lattice
-   gauge theory; the framework's specific Wilson + staggered fermion
-   action is on the `g_bare = 1` open-gate surface for full
-   numerical pinning, but the Radon-Nikodym relationship (1) is a
-   structural statement about any positive Wilson action and does
-   not require the gate to close.
-2. **Staggered determinant positivity** — retained on Cases A and B
-   per the RP theorem's 2026-05-17 narrowing.
-3. **Standard Gibbs / partition-function measure-theoretic
-   construction** — named non-derivation import.
-
-## Risk classification
-
-This is a `bounded_theorem` candidate. The Radon-Nikodym
-relationship (1) is the standard statistical-mechanics relationship
-between Gibbs measures and tracial reference states; the narrow
-contribution is the explicit identification that this relationship
-holds between the framework's two positive-measure structures on
-the qubit-lattice algebra. The Wilson action's specific form is
-gate-conditional but the structural Radon-Nikodym relationship is
-not.
-
-## Citation-graph note
+## Citation-Graph Note
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
-- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) — supplies ρ_ref as unique tracial state on the quasi-local algebra
-- [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) — supplies the retained RP scope (Cases A and B) and the Wilson Euclidean measure structure
-
-**Upstream standard-math imports** (named non-derivation):
-
-- Standard statistical-mechanics Gibbs / Boltzmann-weight construction
-- Standard Radon-Nikodym theorem (measure-theoretic)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) —
+  supplies A1+A2, hence the finite-region qubit algebra.
+- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) —
+  supplies `rho_ref` / `tau_Lambda` as the trace reference.
 
 **Plain-text pointer references** (NOT load-bearing deps):
 
-- `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` — Grassmann gate referenced for the Wilson-action specific form; not load-bearing for the structural Radon-Nikodym statement
-- `G_BARE_DERIVATION_NOTE.md` — `g_bare = 1` gate referenced for the Wilson coupling normalization; not load-bearing here
+- `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29` —
+  downstream RP carrier that would need a separate representation
+  bridge before this finite-volume density template can be applied.
+- `G_BARE_DERIVATION_NOTE.md` and
+  `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` —
+  related Wilson-action gates, not used here.
 
-## What this file is not
+## What This File Is Not
 
-- Not a closure of the broader RP scope (narrowed Cases A and B remain the load-bearing scope per RP theorem)
-- Not a derivation of the Wilson action (admitted gate-conditional)
-- Not a re-derivation of standard Radon-Nikodym (textbook math)
-- Not a numerical-prediction change
-- Not a unilateral retagging
+- Not a closure of the RP to `rho_ref` bridge.
+- Not a derivation of a Wilson action operator.
+- Not a claim of mutual absolute continuity across different carriers.
+- Not a thermodynamic-limit theorem.
+- Not a numerical-prediction change.

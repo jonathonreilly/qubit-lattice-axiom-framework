@@ -1965,6 +1965,18 @@
       "to": "bminusl_anomaly_freedom_note_2026-05-17"
     },
     {
+      "from": "born_retention_completion_bundle_note_2026-05-20",
+      "to": "born_rule_from_gleason_busch_derivation_note_2026-05-20"
+    },
+    {
+      "from": "born_retention_completion_bundle_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "born_retention_completion_bundle_note_2026-05-20",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
       "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
       "to": "minimal_axioms_2026-05-20"
     },
@@ -42239,6 +42251,22 @@
       "runner_path": "scripts/born_compare_modular_central_ln.py",
       "title": "Born Lane Comparison Note"
     },
+    "born_retention_completion_bundle_note_2026-05-20": {
+      "claim_id": "born_retention_completion_bundle_note_2026-05-20",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (tracking + chain bundle)",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+        "minimal_axioms_2026-05-20",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "699593e8d353eba461507f35ba1c21bfe150e8cfa9db391d23b4c0049249bd9e",
+      "path": "docs/BORN_RETENTION_COMPLETION_BUNDLE_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Born Retention Completion Bundle: Path to Promote Born from Bounded Support to Retained Closure"
+    },
     "born_rule_analysis_2026-04-11": {
       "claim_id": "born_rule_analysis_2026-04-11",
       "claim_type_author_hint": null,
@@ -80909,7 +80937,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 502,
       "decoration": 1,
-      "meta": 184,
+      "meta": 185,
       "no_go": 57,
       "none": 1499,
       "open_gate": 45,
@@ -80918,15 +80946,15 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 940,
       "decoration": 1,
-      "meta": 184,
+      "meta": 185,
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
+    "edge_count": 9663,
     "leaf_count": 728,
-    "node_count": 2455,
+    "node_count": 2456,
     "root_count": 804,
     "runners_with_path": 2032
   }

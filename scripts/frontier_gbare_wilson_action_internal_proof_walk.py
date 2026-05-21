@@ -63,7 +63,7 @@ def check_note_structure() -> None:
         "G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03",
         "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03",
         "G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18",
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
     ]
     for marker in required:
         check(f"contains marker: {marker[:56]}", marker in NOTE_TEXT or marker in NOTE_FLAT)
@@ -90,7 +90,7 @@ def check_dependencies_exist() -> None:
         "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
         "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
         "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
         "docs/HYPERCHARGE_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-07.md",
     ]
     for rel in deps:

@@ -444,7 +444,7 @@ Cached output: [`logs/runner-cache/cl3_koide_bae_probe_wilson_dimensional_consis
 | `KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md` | retained-U(1) inventory; no retained U(1) projects to U(1)_b |
 | `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md` | TD: `N_taste = 16 = 2^4` |
 | `COMPLETE_PREDICTION_CHAIN_2026_04_15.md` | hierarchy theorem `v = M_Pl * (7/8)^(1/4) * alpha_LM^16`; `u_0`, `alpha_LM` definitions |
-| `MINIMAL_AXIOMS_2026-05-03.md` | 2-axiom framework boundary; staggered-Dirac and g_bare gates as bounded |
+| `MINIMAL_AXIOMS_2026-05-20.md` | 2-axiom framework boundary; staggered-Dirac and g_bare gates as bounded |
 
 ## Forbidden imports check
 

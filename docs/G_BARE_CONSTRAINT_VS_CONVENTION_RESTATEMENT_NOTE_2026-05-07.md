@@ -377,7 +377,7 @@ distinguishing_content_from_2026-05-03: |
 - `SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`
   — provides `C_F = 4/3` at canonical `N_F = 1/2`, the L4a derived
   consequence at the canonical normalization.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — current framework axiom set (A1, A2). The present theorem
   documents that `g_bare = 1` is derived relative to the L3 admitted
   convention `N_F = 1/2`; this is consistent with the open-gate

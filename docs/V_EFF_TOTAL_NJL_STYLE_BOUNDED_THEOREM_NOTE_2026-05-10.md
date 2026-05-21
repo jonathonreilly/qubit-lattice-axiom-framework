@@ -603,7 +603,7 @@ named_open_bridge:
   whose lattice-side structural ingredient is identified here.
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
   — N_taste = 16 = 2^D origin (open gate).
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   — physical Cl(3) local algebra plus Z^3 spatial substrate baseline.
 
 ### Context (parallel-track, not load-bearing)

@@ -127,7 +127,7 @@ proof-walk surfaces that distinction explicitly.
 - [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)
   for the upstream selected-axis structure (retained-bounded).
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  and `MINIMAL_AXIOMS_2026-05-03.md`
+  and `MINIMAL_AXIOMS_2026-05-20.md`
   for the open realization-gate context that this note does not close
   and that the proof-walk demonstrates is not load-bearing for the
   ratio algebra.

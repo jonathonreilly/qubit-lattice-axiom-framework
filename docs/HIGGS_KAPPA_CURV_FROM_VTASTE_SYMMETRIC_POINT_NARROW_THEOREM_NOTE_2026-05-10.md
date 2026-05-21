@@ -202,7 +202,7 @@ convention and uses the first-principles-honest symbol.
 |---|---|---|
 | [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md) Step 4 | V_taste form `-8 log(m² + 4u_0²)` per channel | unaudited |
 | [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md) | N_taste = 16 = 2^D | open gate |
-| [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | physical Cl(3) local algebra plus Z^3 spatial substrate baseline | meta |
+| [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | physical Cl(3) local algebra plus Z^3 spatial substrate baseline | meta |
 | `u_0 = ⟨P⟩^(1/4) ≈ 0.8776` (Gate #7) | numerical input | engineering frontier |
 
 The bare algebraic identity `κ_curv = 1/(8u_0²)` requires only the
@@ -397,7 +397,7 @@ named_open_bridge:
   theorem.
 
 ### Framework baseline / structural
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`C_ISO_SU3_NNLO_CLOSURE_BOUNDED_NOTE_2026-05-10_su3nnlo.md`](C_ISO_SU3_NNLO_CLOSURE_BOUNDED_NOTE_2026-05-10_su3nnlo.md)
   — Gate #7 engineering frontier; provides u_0 numerical context.
 

@@ -72,7 +72,7 @@ invariance) and elementary tensor/Frobenius-norm identities — no
 framework axiom, no physical input, no other note's result is
 consumed.
 
-The framework baseline memo `MINIMAL_AXIOMS_2026-05-03` is named in
+The framework baseline memo `MINIMAL_AXIOMS_2026-05-20` is named in
 plain text, not as a load-bearing markdown link. It records the physical
 Cl(3) local algebra and Z^3 spatial substrate baseline; that connection
 is informational, not load-bearing for the present theorem.
@@ -224,7 +224,7 @@ Verifies, at exact symbolic precision via `sympy.trigsimp` /
 9. **Concrete witness:** `h_{01} = 1, R_3 = R_z(π/2)` gives
    `h'_{01} = 0, h'_{02} = 1` (shift rotates as vector),
    `||Pi_perp(h')||^2_d = ||Pi_perp(h)||^2_d` exactly.
-10. **Context references exist.** `MINIMAL_AXIOMS_2026-05-03`
+10. **Context references exist.** `MINIMAL_AXIOMS_2026-05-20`
     is the framework baseline memo (context only, no upstream dependency).
 
 ## Audit-Lane Disposition
@@ -270,7 +270,7 @@ class-(A) algebraic identity.
 
 ## Relation to parent universal-GR notes (informational, not load-bearing)
 
-`MINIMAL_AXIOMS_2026-05-03` is the framework baseline memo for the
+`MINIMAL_AXIOMS_2026-05-20` is the framework baseline memo for the
 physical Cl(3) local algebra and Z^3 spatial substrate. The present
 narrow theorem isolates a pure linear-algebra orbit-flatness fact and
 does not consume that baseline as a load-bearing premise.

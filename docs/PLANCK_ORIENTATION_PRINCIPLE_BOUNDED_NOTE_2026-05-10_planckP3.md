@@ -384,7 +384,7 @@ QED. ∎
 ## Hypothesis set used
 
 - The existing minimal-framework surfaces named in
-  `MINIMAL_AXIOMS_2026-05-03.md`,
+  `MINIMAL_AXIOMS_2026-05-20.md`,
   including the repo baseline physical `Cl(3)` local algebra and
   `Z^3` spatial substrate, with no fitted parameters and no observed
   values.
@@ -560,7 +560,7 @@ The eleven checks are:
 
 ## Citations
 
-- `MINIMAL_AXIOMS_2026-05-03.md` — A_min current
+- `MINIMAL_AXIOMS_2026-05-20.md` — A_min current
 - `PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`
   — first-order coframe carrier theorem (this note's downstream
   consumer)

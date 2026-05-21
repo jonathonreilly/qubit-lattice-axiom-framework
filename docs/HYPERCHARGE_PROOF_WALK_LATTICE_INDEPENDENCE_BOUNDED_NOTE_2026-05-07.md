@@ -75,7 +75,7 @@ multiplicities `(6, 2, 3, 3, 1, 1)`.
   and [`LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md`](LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md)
   for the anomaly-trace context.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  and `MINIMAL_AXIOMS_2026-05-03.md`
+  and `MINIMAL_AXIOMS_2026-05-20.md`
   for the open realization-gate context that this note does not close.
 
 These are imported authorities for a bounded theorem. The row remains

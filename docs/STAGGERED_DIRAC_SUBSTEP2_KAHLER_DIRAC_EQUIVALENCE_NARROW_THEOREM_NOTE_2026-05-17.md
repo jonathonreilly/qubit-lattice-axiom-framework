@@ -685,7 +685,7 @@ edges:
   algebra on the JW per-hypercube Fock space; the
   substep-2 narrow theorem does NOT consume its dimensional readout
   (per (E8) boundary).
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — framework baseline memo naming the physical `Cl(3)` local algebra plus
   `Z^3` spatial substrate baseline; the
   narrow theorem does not consume its effective status.

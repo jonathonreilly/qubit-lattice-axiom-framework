@@ -291,7 +291,7 @@ note.
 - No admitted unit conventions are load-bearing on retention.
 - No same-surface family arguments.
 - No new axioms introduced — the theorem is on abstract `Sym^2(R^4)` with
-  a generic spatial-block `SO(3)` action. The framework `MINIMAL_AXIOMS_2026-05-03`
+  a generic spatial-block `SO(3)` action. The framework `MINIMAL_AXIOMS_2026-05-20`
   baseline is named in plain text only as the broader cluster context and
   is not load-bearing for the block-localization claim.
 - No new repo vocabulary — block labels (lapse, shift, trace, shear) are

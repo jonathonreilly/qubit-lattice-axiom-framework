@@ -181,7 +181,7 @@ algebraic substitution `(P1)` above with several distinct components:
    an **open gate** by
    `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`.
 3. The admitted-context-input choice `g_bare = 1` on the canonical
-   surface (`MINIMAL_AXIOMS_2026-05-03.md`:95-136 admits `g_bare = 1`
+   surface (`MINIMAL_AXIOMS_2026-05-20.md`:95-136 admits `g_bare = 1`
    as an open-gate derivation target; canonical parent
    `G_BARE_DERIVATION_NOTE.md`).
 4. The upstream `u_0` plaquette evaluation `u_0 = <P>^{1/4}` with

@@ -72,7 +72,7 @@ def check_note_structure() -> None:
         "ANOMALY_FORCES_TIME_THEOREM",
         "AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03",
         "CPT_EXACT_NOTE",
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
         "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03",
     ]
     for marker in required:
@@ -115,7 +115,7 @@ def check_dependencies_exist() -> None:
         "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
         "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
         "docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
     ]
     for rel in deps:

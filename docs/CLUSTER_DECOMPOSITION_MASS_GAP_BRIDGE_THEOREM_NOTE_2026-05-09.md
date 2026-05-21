@@ -375,7 +375,7 @@ is addressed by:
 ## Citations
 
 - A_min: `MINIMAL_AXIOMS_2026-04-11.md`,
-  `MINIMAL_AXIOMS_2026-05-03.md`
+  `MINIMAL_AXIOMS_2026-05-20.md`
 - parent cluster-decomposition note (audit verdict prompted this repair):
   `AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`
 - reflection-positivity support note:

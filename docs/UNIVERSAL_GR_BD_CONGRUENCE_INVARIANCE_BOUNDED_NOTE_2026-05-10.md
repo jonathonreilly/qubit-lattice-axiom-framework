@@ -147,7 +147,7 @@ transformation above.)
   conditional on the imported atlas + cocycle + nondegeneracy +
   pairing-covariance hypotheses) remains the parent's own claim on its
   own audit row.
-- `MINIMAL_AXIOMS_2026-05-03.md` records the physical Cl(3) local
+- `MINIMAL_AXIOMS_2026-05-20.md` records the physical Cl(3) local
   algebra plus Z^3 spatial substrate baseline. This bounded note does
   **not** invoke that baseline directly; it imports finite-dimensional
   real matrix algebra (BA-1) as a bounded textbook input.

@@ -183,7 +183,7 @@ def part1_note_structure():
         ("Wilson-environment companion cited (rho_pq6)",
          "GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09"),
         ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+         "MINIMAL_AXIOMS_2026-05-20"),
         ("explicit not-claimed: parent's matrix-element identity",
          "claim the parent note's structural matrix-element identity"),
         ("explicit not-claimed: full untruncated case",
@@ -242,7 +242,7 @@ def part3_cited_upstreams():
     must_exist = [
         "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
         "docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())

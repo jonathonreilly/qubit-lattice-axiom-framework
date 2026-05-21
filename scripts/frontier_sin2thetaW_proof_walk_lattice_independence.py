@@ -59,7 +59,7 @@ def check_note_structure() -> None:
         "Boundaries",
         "SIN_SQUARED_THETA_W_GUT_FROM_SU5_NOTE_2026-05-02",
         "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03",
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
     ]
     for marker in required:
         check(f"contains marker: {marker[:56]}", marker in NOTE_TEXT or marker in NOTE_FLAT)
@@ -85,7 +85,7 @@ def check_dependencies_exist() -> None:
         "docs/LHCM_REPAIR_ATLAS_CONSOLIDATION_NOTE_2026-05-02.md",
         "docs/SU5_EMBEDDING_FROM_GRAPH_FIRST_SURFACE_THEOREM_NOTE_2026-05-07.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in deps:
         check(f"dependency exists: {rel}", (ROOT / rel).exists())

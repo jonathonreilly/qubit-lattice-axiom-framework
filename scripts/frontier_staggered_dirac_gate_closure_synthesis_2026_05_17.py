@@ -373,8 +373,8 @@ def authority_enumeration() -> Tuple[bool, str]:
         intertwiner; APBC: anti-periodic boundary convention)
     """
     authorities = [
-        ("physical Cl(3) local algebra", "repo baseline: Cl(3) local algebra", "MINIMAL_AXIOMS_2026-05-03"),
-        ("Z^3 spatial substrate", "repo baseline: Z^3 spatial substrate", "MINIMAL_AXIOMS_2026-05-03"),
+        ("physical Cl(3) local algebra", "repo baseline: Cl(3) local algebra", "MINIMAL_AXIOMS_2026-05-20"),
+        ("Z^3 spatial substrate", "repo baseline: Z^3 spatial substrate", "MINIMAL_AXIOMS_2026-05-20"),
         ("U2", "retained: Cl(3) per-site uniqueness", "AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29"),
         ("U4", "retained: per-site Hilbert dim 2", "CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02"),
         ("S2", "support: spin-statistics", "AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29"),

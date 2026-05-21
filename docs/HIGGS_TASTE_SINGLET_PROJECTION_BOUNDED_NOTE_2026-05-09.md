@@ -162,7 +162,7 @@ Print each `w_k`, `c_k`, and `w_k · c_k`, showing how the total `≈
   derived. **Forward-reference;** on a sister branch.
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
   for the staggered-Dirac realization gate context.
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   for the repo baseline physical `Cl(3)` local algebra and `Z^3`
   spatial substrate.
 

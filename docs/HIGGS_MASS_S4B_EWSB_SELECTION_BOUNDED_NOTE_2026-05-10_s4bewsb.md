@@ -141,7 +141,7 @@ S4b-op ∧ S7 open. **Lane 2 remains blocked.**
 
 | ID | Statement | Class |
 |---|---|---|
-| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | BASE-Z3 | `Z^3` spatial substrate | repo baseline; same source |
 | Hier | `v_EW = M_Pl · (7/8)^{1/4} · α_LM¹⁶ = 246.28 GeV` (hierarchy theorem, retained) | [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) §3.2 |
 | EWSB-Q | `Q = T_3 + Y/2` from `<H> = (0, v/√2)^T` + Y_H = +1 (exact-support theorem) | [`EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md`](EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md) |
@@ -535,7 +535,7 @@ alone (consistent with M1.1 of T-S4H).
   values for falsifiability-anchor purposes only.
 - It does **NOT** discharge the staggered-Dirac realization gate, the
   g_bare = 1 gate, or any other open framework gate per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - It does **NOT** derive the SM Higgs potential form `V(H†H) = -μ²H†H +
   λ(H†H)²` from retained content. This form remains "admitted SM
   convention" per EWSB-PotForm.
@@ -676,7 +676,7 @@ audit_required_before_effective_status_change: true
 
 ### Repo baseline / meta
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 
 ### Sister cluster (Lane 2 S4 ∧ S7 pieces)

@@ -169,7 +169,7 @@ content turns it into a derivation.
 
 | ID | Statement | Class |
 |---|---|---|
-| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | BASE-Z3 | `Z^3` spatial substrate | repo baseline; same source |
 | Plaq-MC | `<P>_iso(β=6) = 0.5934`; `u_0 = <P>^{1/4} = 0.8776` | [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) §3.1 |
 | Hier | `v_EW = M_Pl · (7/8)^{1/4} · α_LM¹⁶ = 246.28 GeV` (hierarchy theorem in cited chain) | [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) §3.2 |
@@ -581,7 +581,7 @@ This note is a bounded_theorem source row for independent audit. Its claim scope
 
 ### Repo baseline / meta
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 
 ### Sister cluster (Lane 2 S4 ∧ S7 pieces)

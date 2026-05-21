@@ -28,7 +28,7 @@ chain, and runner.
 
 In this note:
 - **"framework axiom A1"** = retained `Cl(3)` local-algebra axiom per
-  `MINIMAL_AXIOMS_2026-05-03.md`.
+  `MINIMAL_AXIOMS_2026-05-20.md`.
 - **"A1-condition"** = the Brannen-Rivero amplitude-ratio constraint
   `|b|²/a² = 1/2` for the `C_3`-equivariant Hermitian circulant
   `H = aI + bC + b̄C²` on `hw=1 ≅ ℂ³`.
@@ -401,7 +401,7 @@ with structural reasons why it is not derivable from cited source-stack content.
 
 ### Foundational baseline
 
-- Minimal axioms: `MINIMAL_AXIOMS_2026-05-03.md`
+- Minimal axioms: `MINIMAL_AXIOMS_2026-05-20.md`
 - BZ-corner forcing: [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
 - Substep-4 PDG-input prohibition: [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
 
@@ -497,7 +497,7 @@ audited claim scope.
 - [continuum_bridge_note](CONTINUUM_BRIDGE_NOTE.md)
 - [axiom_first_kms_condition_theorem_note_2026-05-01](AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md)
 - [koide_mru_weight_class_obstruction_theorem_note_2026-04-19](KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
-- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md)
+- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-20.md)
 
 ## Review-loop rule
 

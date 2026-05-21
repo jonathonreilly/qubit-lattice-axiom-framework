@@ -104,7 +104,7 @@ hypercube `{0, 1}^d` plus the binomial coefficient.
 
 - Does **not** derive `d = 3` (rather than any other positive integer
   dimension). The framework retains the Z^3 spatial substrate via
-  `MINIMAL_AXIOMS_2026-05-03.md` separately;
+  `MINIMAL_AXIOMS_2026-05-20.md` separately;
   this narrow theorem is parametric in `d`.
 - Does **not** identify the discrete hypercube `{0, 1}^d` with the
   Brillouin-zone corners of the staggered Dirac action. That identification
@@ -142,7 +142,7 @@ bundles the combinatorial counts above with several distinct downstream
 items:
 
 1. The retention of the `Z^3` (i.e. `d = 3`) spatial substrate via
-   `MINIMAL_AXIOMS_2026-05-03.md`.
+   `MINIMAL_AXIOMS_2026-05-20.md`.
 2. The identification of the corner set `{0, 1}^3` with the Brillouin-zone
    corners of the staggered-Dirac action, which is currently
    `effective_status: open_gate`.
@@ -199,7 +199,7 @@ verifies via exact sympy `binomial` and direct enumeration:
 
 - Why `d = 3` (rather than any other positive integer). Carried separately by
   the physical `Z^3` spatial substrate baseline in
-  `MINIMAL_AXIOMS_2026-05-03.md`.
+  `MINIMAL_AXIOMS_2026-05-20.md`.
 - Identification of the discrete hypercube `{0, 1}^d` with the Brillouin-zone
   corners of the staggered-Dirac action. Open gate in
   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`;
@@ -222,7 +222,7 @@ verifies via exact sympy `binomial` and direct enumeration:
   content of three-generation matter structure; this narrow theorem covers
   item (1) "8 = 1 + 1 + 3 + 3" and the count-side of item (2)
   "`hw=1` species count = 3".
-- `MINIMAL_AXIOMS_2026-05-03.md` - framework baseline row carrying the `Z^d`
+- `MINIMAL_AXIOMS_2026-05-20.md` - framework baseline row carrying the `Z^d`
   substrate at `d = 3`.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` -
   open gate carrying the staggered-Dirac realization; not consumed here.

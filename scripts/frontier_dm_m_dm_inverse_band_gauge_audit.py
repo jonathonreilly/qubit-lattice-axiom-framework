@@ -213,7 +213,7 @@ def part1_note_structure():
         ("HIGGS_MASS_FROM_AXIOM upstream cited",
          "HIGGS_MASS_FROM_AXIOM_NOTE.md"),
         ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+         "MINIMAL_AXIOMS_2026-05-20"),
         ("eta_obs = Planck live-surface import flagged",
          "live-surface Planck"),
         ("self-consistency-audit framing for II stated",
@@ -269,7 +269,7 @@ def part3_cited_upstreams():
         "docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md",
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
         "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())

@@ -4,7 +4,7 @@
 **Type:** bounded_theorem (proposed; audit-lane to ratify)
 **Claim scope:** the standalone tree-level Lagrangian-completeness identity
 that, given (i) the retained `Cl(3) x Z^3` Wilson-plaquette + staggered-Dirac
-bare action specified by `MINIMAL_AXIOMS_2026-05-03.md`:32-43 (conditional on
+bare action specified by `MINIMAL_AXIOMS_2026-05-20.md`:32-43 (conditional on
 the named staggered-Dirac open gate), (ii) the retained composite-Higgs
 structural fact D9 (`YUKAWA_COLOR_PROJECTION_THEOREM.md`:33-40) that the
 framework's only scalar bilinear is the composite `phi = (1/N_c) psibar psi`,
@@ -48,7 +48,7 @@ without invoking any matching axiom or canonical-surface input.
 
 The note is `bounded_theorem` because it is conditional on the named
 admitted-context inputs that are open gates for the broader chain
-(`MINIMAL_AXIOMS_2026-05-03.md`):
+(`MINIMAL_AXIOMS_2026-05-20.md`):
 
 - (A) staggered-Dirac realization derivation target (open gate, formerly A3);
 - (B) `g_bare = 1` derivation target (open gate, formerly A4) — this note's
@@ -74,7 +74,7 @@ The note does **not** claim:
 ## 1. Theorem
 
 Fix the retained `Cl(3) x Z^3` Wilson-plaquette + staggered-Dirac bare
-action of `MINIMAL_AXIOMS_2026-05-03.md`:32-43, conditional on the named
+action of `MINIMAL_AXIOMS_2026-05-20.md`:32-43, conditional on the named
 open gates (A) and (B). Let `g_bare > 0` be arbitrary; do **not** preselect
 the canonical surface. On the retained `Q_L = (2, 3)` block, project the
 amputated tree-level four-fermion 1PI Green's function
@@ -196,7 +196,7 @@ contact-4-fermion alternative.
 
 ### 2.1 Operator enumeration of the bare action
 
-Direct reading of `MINIMAL_AXIOMS_2026-05-03.md`:32-43 enumerates the
+Direct reading of `MINIMAL_AXIOMS_2026-05-20.md`:32-43 enumerates the
 bare action's operators exhaustively. The Wilson plaquette term is
 purely gauge-field-dependent (no `psi` factor); the staggered Dirac
 term is bilinear in `(psibar, psi)` with one gauge-link insertion per
@@ -369,7 +369,7 @@ the H_unit-residue identity.
 
 The structural claims depend on the following source authorities:
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   for the bare action specification and the named open gates (A) + (B).
 - [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md)
   D9 for the composite-Higgs structural fact (no independent

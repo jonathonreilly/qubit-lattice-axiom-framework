@@ -212,7 +212,7 @@ spatial substrate (Z^3). It does NOT specify:
 The "staggered-Dirac realization" — which would give a candidate
 D_lat on the lattice and induce a D_F — is explicitly outside the
 physical Cl(3)/Z^3 baseline
-per `MINIMAL_AXIOMS_2026-05-03.md`: it is an open gate
+per `MINIMAL_AXIOMS_2026-05-20.md`: it is an open gate
 (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
 
 **Consequence.** Even if a unique D_F were FORCED by Cl(3) + Z^3,

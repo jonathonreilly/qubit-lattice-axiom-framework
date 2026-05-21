@@ -378,7 +378,7 @@ edges:
   — pre-existing in-flight substep-2 packaging carrying the
   Kawamoto-Smit kinetic operator form whose translation-invariance is
   the bridge to (b) above.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — framework baseline memo for the physical Cl(3) local algebra and
   Z^3 spatial substrate; the narrow theorem does not consume its
   effective status.

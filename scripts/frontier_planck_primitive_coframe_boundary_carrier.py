@@ -21,7 +21,7 @@ LINK_LOCAL_FIRST_VARIATION = (
 HODGE_NO_GO = (
     ROOT / "docs" / "FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md"
 )
-MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-03.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-20.md"
 
 
 @dataclass(frozen=True)
@@ -170,7 +170,7 @@ def main() -> int:
         checks,
         "current minimal-axioms framework memo exists and is cited",
         MINIMAL_AXIOMS.exists()
-        and "MINIMAL_AXIOMS_2026-05-03.md" in note_text,
+        and "MINIMAL_AXIOMS_2026-05-20.md" in note_text,
         "current framework memo keeps Cl(3)/Z^3 physical and leaves the action route conditional",
     )
     record(

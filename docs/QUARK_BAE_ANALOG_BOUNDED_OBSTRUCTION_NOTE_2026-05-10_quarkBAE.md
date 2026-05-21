@@ -37,7 +37,7 @@ lane has full authority to retag, narrow, or reject the proposal.
 Throughout this note:
 - **physical `Cl(3)` local algebra** (legacy minimal-axiom alias:
   `A1`) = the repo's retained local algebra baseline per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - **"BAE"** = Brannen Amplitude Equipartition = the constraint
   `|b|²/a² = 1/2` for `H = aI + bC + b̄C²` on `hw=1 ≅ ℂ³`
 - **"quark BAE-analog"** = the analogous condition on the 6-dim
@@ -102,7 +102,7 @@ extends to the quark sector via tensor preservation.
 
 | ID | Statement | Class |
 |---|---|---|
-| Cl3 | physical `Cl(3)` local algebra | repo baseline; legacy alias `A1` in [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| Cl3 | physical `Cl(3)` local algebra | repo baseline; legacy alias `A1` in [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | Z3 | `Z³` spatial substrate | repo baseline; legacy alias `A2` in the same source |
 | SMEmbed | `Cl(3)` → SM embedding: P_symm × fiber = 6D quark block (3 colors × 2 weak doublet, Y = +1/3) | retained: [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md) |
 | Circulant | C_3-equivariant Hermitian on hw=1 ≅ ℂ³ is `aI + bC + b̄C²` | retained: [`KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md) |
@@ -409,7 +409,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - Block-total Frobenius measure: [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
 - MRU weight-class theorem: [`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
 - Cross-sector closure N_gen = N_color: [`CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md`](CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md)
-- MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - Substep 4 AC narrowing: [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
 
 ## Validation

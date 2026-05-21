@@ -342,7 +342,7 @@ def section1_barrier_s1():
         "    imported as Axiom A3-class."
     )
     print(
-        "    Per the framework's MINIMAL_AXIOMS_2026-05-03 ledger,"
+        "    Per the framework's MINIMAL_AXIOMS_2026-05-20 ledger,"
     )
     print(
         "    importing this would change the axiom count from 2 to 3."

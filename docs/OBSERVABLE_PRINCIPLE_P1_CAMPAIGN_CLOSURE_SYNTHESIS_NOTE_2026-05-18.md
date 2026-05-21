@@ -57,7 +57,7 @@ Derive the P1 admitted premise of
 > physical scalar bosonic observable generator `W` satisfies
 > `W[J_1 ⊕ J_2] = W[J_1] + W[J_2]`.
 
-from `MINIMAL_AXIOMS_2026-05-03.md` + retained framework primitives.
+from `MINIMAL_AXIOMS_2026-05-20.md` + retained framework primitives.
 
 ### 1.2 Route portfolio attempted (8+ independent routes)
 

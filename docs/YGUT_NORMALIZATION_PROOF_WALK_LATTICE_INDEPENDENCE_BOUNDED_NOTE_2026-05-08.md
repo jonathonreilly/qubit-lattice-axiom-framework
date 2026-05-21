@@ -119,7 +119,7 @@ solve `c^2 = 3/5` at exact rational precision.
   upstream embedding theorem.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   and
-  `MINIMAL_AXIOMS_2026-05-03.md`
+  `MINIMAL_AXIOMS_2026-05-20.md`
   for the open realization-gate context that this note does not close.
 
 These are imported authorities for a bounded theorem. The row remains

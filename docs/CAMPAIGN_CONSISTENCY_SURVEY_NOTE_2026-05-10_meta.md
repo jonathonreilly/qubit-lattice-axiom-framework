@@ -13,7 +13,7 @@ attack, substrate-to-carrier, G_Newton sharpening + closures, Planck-
 from-structure synthesis). This note does not write audit verdicts and
 does not promote or retag any source-note proposal.
 **Companion to:**
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md),
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md),
 [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md),
 [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md),
 [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md),
@@ -62,7 +62,7 @@ introductions detected. Specifically:
 
 1. **A1+A2 axioms unchanged across all rounds.** Every meta note and
    source-note proposal explicitly preserves
-   `MINIMAL_AXIOMS_2026-05-03.md`'s two-axiom surface.
+   `MINIMAL_AXIOMS_2026-05-20.md`'s two-axiom surface.
 2. **No source-note proposal has been silently promoted to retained.**
    Every probe, sharpening, and synthesis explicitly carries an authority
    disclaimer: pipeline-derived `effective_status` is set only by the
@@ -85,7 +85,7 @@ introductions detected. Specifically:
 ### Foundational axiom surface (unchanged)
 
 The two retained mathematical axioms per
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md):
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md):
 
 - **A1** Local algebra `Cl(3)`
 - **A2** Spatial substrate `Z³`
@@ -324,7 +324,7 @@ closed":
 5. **All quantitative results in the y_t / EW / Higgs lanes → retained
    positive_theorem** PROVIDED both the staggered-Dirac realization
    gate AND the `g_bare = 1` derivation gate close (per
-   `MINIMAL_AXIOMS_2026-05-03.md` Section "Lanes that depend on both
+   `MINIMAL_AXIOMS_2026-05-20.md` Section "Lanes that depend on both
    gates").
 
 6. **Lane 2 (Higgs mass from axiom) STRUCTURAL OBSTRUCTION** at S4 +
@@ -383,7 +383,7 @@ The audit lane has authority on each item.
 
 ### Foundational
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 - [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md)
 - [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md)

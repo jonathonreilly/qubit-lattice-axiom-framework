@@ -30,7 +30,7 @@ theorems, modify retained content, or reclassify admissions.
 ## Naming
 
 Throughout this note:
-- **"framework axiom A1"** = retained `Cl(3)` algebra axiom per `MINIMAL_AXIOMS_2026-05-03.md`
+- **"framework axiom A1"** = retained `Cl(3)` algebra axiom per `MINIMAL_AXIOMS_2026-05-20.md`
 - **"BAE"** = Brannen Amplitude Equipartition = the constraint `|b|²/a² = 1/2` for `H = aI + bC + b̄C²` on `hw=1 ≅ ℂ³`
   (formerly "A1-condition"; renamed per PR #790 to resolve collision with framework axiom A1)
 - **"P"** = radian-bridge primitive (= "magic angle" newly named in Probe 19, identified as same primitive in Probe 24)
@@ -226,7 +226,7 @@ The audit lane has authority over whether the partial-falsification candidate st
 
 ## Cross-references
 
-- Foundational: `MINIMAL_AXIOMS_2026-05-03.md`, `PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`, `C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`, `CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`
+- Foundational: `MINIMAL_AXIOMS_2026-05-20.md`, `PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`, `C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`, `CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`
 - BAE rename: `BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md` (PR #790)
 - Prior synthesis (11 probes): `KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md` (PR #751)
 - Substep-4 rule: `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`

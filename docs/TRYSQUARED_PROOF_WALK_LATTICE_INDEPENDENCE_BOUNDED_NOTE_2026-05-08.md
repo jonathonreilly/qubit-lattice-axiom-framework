@@ -87,7 +87,7 @@ same one-generation multiplicities, scaled by `3` for three generations.
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)
   for the companion linear and cubic trace context.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  and `MINIMAL_AXIOMS_2026-05-03.md`
+  and `MINIMAL_AXIOMS_2026-05-20.md`
   for the open realization-gate context that this note does not close.
 
 These are imported authorities for a bounded theorem. The row remains

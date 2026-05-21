@@ -4,7 +4,7 @@
 `audited_conditional`: separate the in-block fermion-sector CPT
 identities from the deferred SU(3) Wilson-plaquette gauge-sector lift,
 and rebase hypothesis set on
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) with the
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) with the
 staggered-Dirac realization gate named in
 `admitted_context_inputs`).
 **Status:** source-note proposal — author-declared `bounded_theorem`;
@@ -32,12 +32,12 @@ Wilson-plaquette extension, or (b) close the gauge-sector operator-level
 lift directly. The note had also been written against the April-15
 `A_min` framing (A1, A2, A3 = staggered/Grassmann, A4 = canonical
 normalization) which has been superseded by
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 
 This 2026-05-10 repair takes path (a) and rebases the hypothesis set:
 
 - **(R1) Authority rebase.** The hypothesis set is rebased on
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md). Only
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md). Only
   `A1` (Cl(3) per-site algebra) and `A2` (`Z^3` substrate) are framework
   axioms here. The Grassmann staggered-Dirac action is admitted as a
   named open-gate input under `admitted_context_inputs`. The proof is a
@@ -73,7 +73,7 @@ of `Z`. This note proposes a bounded fermion-sector identity that is
 the natural in-block step toward discharging that assumption: it
 constructs an explicit antiunitary involution `Θ_CPT` on the **admitted
 canonical staggered Grassmann action** (named open gate per
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)) and
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)) and
 verifies, both algebraically and numerically on small pure-staggered
 blocks, that
 
@@ -98,7 +98,7 @@ canonical action by composition.
 ## Hypothesis set used (post-split, 2026-05-10)
 
 The proof uses the two repo baseline inputs recorded in
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md), plus
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), plus
 two **named admitted inputs** corresponding to open gates in that memo:
 
 **Framework baseline inputs (current):**
@@ -123,16 +123,17 @@ two **named admitted inputs** corresponding to open gates in that memo:
 
   `M_KS` is real and antisymmetric; `M = m + M_KS` is therefore real
   with `M^† = M^T = -M_KS + m`. There is **no Wilson fermion term**.
-  Per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
-  line 162 (lanes that depend on the staggered-Dirac realization gate),
+  Per [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
+  § "Lanes that depend on the staggered-Dirac realization gate",
   this surface is admitted under named open-gate input until that gate
   closes.
 
 - **`g_bare_canonical_normalization_gate`** (only for the Wilson
   plaquette structural observation; **not** load-bearing for the
   in-block fermion-sector identities (CPT1)–(CPT5)). Per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) line
-  185 (lanes that depend on the g_bare gate). The in-block claim of
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
+  § "Lanes that depend on both gates" (lanes that depend on the
+  g_bare gate). The in-block claim of
   this note is **independent** of this gate; the gate is named only for
   the deferred (R2)(II) Wilson-plaquette gauge-sector lift.
 
@@ -253,7 +254,7 @@ of this note.
 
 Under the physical `Cl(3)` local algebra and `Z^3` spatial substrate
 baseline (legacy aliases `A1`/`A2`) of
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) plus the
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) plus the
 named admitted `staggered_dirac_realization_gate` input (see
 "Hypothesis set used"), the in-block bounded fermion-sector theorem is:
 
@@ -346,7 +347,7 @@ the original run.
 **Promotion path.** When the deferred (R2)(II) Wilson-plaquette
 gauge-sector CPT lift closes upstream and the named admitted
 `staggered_dirac_realization_gate` closes per
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md), this
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), this
 row becomes eligible for retagging by the independent audit lane.
 
 ## Corollaries (downstream tools)
@@ -374,7 +375,7 @@ conditional on (R2)(II).
 ## Citations
 
 - Current axiom memo:
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   (supersedes the April-15 `A_min` framing the original note used).
 - Prior cycles in this loop:
   - [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)

@@ -80,8 +80,8 @@ UNCHANGED. No new admission. No new axiom.
 
 | Dependency | Role | Source |
 |---|---|---|
-| Physical `Cl(3)` local algebra | baseline local algebra | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
-| `Z^3` spatial substrate | baseline spatial substrate | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| Physical `Cl(3)` local algebra | baseline local algebra | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
+| `Z^3` spatial substrate | baseline spatial substrate | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | hw=1 BZ-corner triplet ≅ `ℂ³` with `C_3[111]` action | representation being tested | [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) |
 | C_3-equivariant Hermitian on hw=1 is `aI + bC + b̄C²` | circulant operator form | [`KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md) |
 | `E_+ = 3a²`, `E_⊥ = 6\|b\|²` on `M_3(ℂ)_Herm` | comparison to BAE weighting | [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) |
@@ -450,7 +450,7 @@ layer.
 
 ### Foundational baseline
 
-- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - Substep-4 AC narrowing (PDG-input prohibition): `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`
 
 ### Fermionic statistics (load-bearing for Pauli)

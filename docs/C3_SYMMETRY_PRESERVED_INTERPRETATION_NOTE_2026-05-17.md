@@ -39,7 +39,7 @@ The parent's actual citation surface is just 9 sources (verified by grep):
 - `A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_optC`
 - Five staggered-Dirac route obstruction route notes (r1-r5)
 - `PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08` (companion)
-- `MINIMAL_AXIOMS_2026-05-03`
+- `MINIMAL_AXIOMS_2026-05-20`
 
 None of these 9 overlap with the 41 co-cycle deps except `koide_circulant_character_derivation_note_2026-04-18`, which is retained-grade.
 

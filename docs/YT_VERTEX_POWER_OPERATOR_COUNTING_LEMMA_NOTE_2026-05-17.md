@@ -50,7 +50,7 @@ This lemma is conditional on three named items:
    hopping
    `D_{x,y}[U] = sum_mu (1/2) eta_mu(x) [U_mu(x) delta_{y, x+mu} -
    U_mu(y)^dagger delta_{y, x-mu}] + m epsilon(x) delta_{x,y}`
-   is the realization on the substrate. See `MINIMAL_AXIOMS_2026-05-03.md`
+   is the realization on the substrate. See `MINIMAL_AXIOMS_2026-05-20.md`
    §"Staggered-Dirac realization derivation target".
 2. **Link-exponential convention** —
    the gauge link is `U_mu(x) = exp(i A_mu(x))` (lattice spacing absorbed
@@ -177,7 +177,7 @@ unlocks the abstract algebraic identity already retained as
 
 - Does **not** derive the staggered-Dirac realization itself from the
   physical `Cl(3)` local algebra plus `Z^3` spatial substrate. That is
-  the open gate named in `MINIMAL_AXIOMS_2026-05-03.md`.
+  the open gate named in `MINIMAL_AXIOMS_2026-05-20.md`.
 - Does **not** derive the link-exponential convention from the physical
   `Cl(3)` local algebra plus `Z^3` spatial substrate. That is a named
   gauge convention.
@@ -200,7 +200,7 @@ unlocks the abstract algebraic identity already retained as
   sub-step it relies on).
 - [`ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md`](./ALPHA_S_TADPOLE_IMPROVEMENT_VERTEX_POWER_NARROW_THEOREM_NOTE_2026-05-10.md)
   (companion algebraic identity over abstract R+).
-- [`MINIMAL_AXIOMS_2026-05-03.md`](./MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](./MINIMAL_AXIOMS_2026-05-20.md)
   (axiom inventory; staggered-Dirac realization listed as open gate).
 - [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](./PHYSICAL_LATTICE_NECESSITY_NOTE.md)
   (substrate-level derivation; supports staggered-Dirac gate).

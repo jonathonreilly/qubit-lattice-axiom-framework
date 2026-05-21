@@ -73,7 +73,7 @@ structural requirement that any valid instance must meet.
 
 The framework surface for (T) is exactly the substrate of the parent
 no-go §2: physical `Cl(3)` local algebra on the `Z³` spatial substrate
-(per `MINIMAL_AXIOMS_2026-05-03.md`), three-generation matter
+(per `MINIMAL_AXIOMS_2026-05-20.md`), three-generation matter
 structure, the `Cl(3)` bivector → `SU(2)` native gauge identification,
 the lattice-scale `y_t(M_Pl)/g_s(M_Pl) = 1/sqrt(6)` YT-lane identity,
 the EW lattice `A^4 = 4/9` Wolfenstein normalization, the
@@ -332,7 +332,7 @@ listed here without markdown links so the citation-graph builder does
 not parse them as direct upstream dependency edges; the live audit
 ledger governs their effective statuses):
 
-- `MINIMAL_AXIOMS_2026-05-03.md` — framework baseline (physical
+- `MINIMAL_AXIOMS_2026-05-20.md` — framework baseline (physical
   `Cl(3)` local algebra on `Z³` substrate); unchanged by this note.
 - `YT_WARD_IDENTITY_DERIVATION_THEOREM.md` — retained YT-lane Ward
   identity providing the gauge/transport coefficient form `G` in (T).

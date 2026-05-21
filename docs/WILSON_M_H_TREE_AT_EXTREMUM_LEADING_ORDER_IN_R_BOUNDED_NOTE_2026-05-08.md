@@ -164,7 +164,7 @@ leading-order (3) at `r ∈ {0.1, 0.235, 0.5, 0.8}`.
   itself a non-derived admission.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   for the staggered-Dirac realization gate context.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   for the framework baseline (physical Cl(3) local algebra plus Z^3
   spatial substrate).
 

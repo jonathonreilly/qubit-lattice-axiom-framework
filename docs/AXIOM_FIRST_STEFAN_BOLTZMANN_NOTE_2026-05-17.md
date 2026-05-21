@@ -93,7 +93,7 @@ conclusion. Per the parent's recent
 the `d_t = 1` decomposition (Step 3 derived + admission (iv)
 inherited) does **not propagate** into the Stefan-Boltzmann proof
 because `d_s = 3` comes from axiom A2 (`Z^3` substrate) directly per
-`MINIMAL_AXIOMS_2026-05-03.md`, independent of admissions (i)-(iv).
+`MINIMAL_AXIOMS_2026-05-20.md`, independent of admissions (i)-(iv).
 
 Only the **overall effective tier** of this Stefan-Boltzmann row
 inherits from the parent's tier (currently `unaudited`). The

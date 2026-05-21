@@ -415,7 +415,7 @@ The cited authority chain on this row currently stands as follows.
 |---|---|---|---|
 | Local `U(1)_V` charge-zero grammar | [`NEUTRINO_MAJORANA_FINITE_NORMAL_GRAMMAR_NO_GO_NOTE.md`](NEUTRINO_MAJORANA_FINITE_NORMAL_GRAMMAR_NO_GO_NOTE.md) | `unaudited` (claim_type `positive_theorem`) | local-grammar premise this note attempts to globalize |
 | Cycle-2 conditional Dirac global lift | [`NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md`](NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md) | `unaudited` (claim_type `no_go`) | partial theorem; this stretch attempt sharpens its `(C2-X)` obstruction |
-| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | strict/permissive reading of axiom 3 is the substrate-class admissibility fork |
+| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` | strict/permissive reading of axiom 3 is the substrate-class admissibility fork |
 | Earlier (cited) axiom-set anchor | [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) | `unaudited` / `meta` (superseded) | historical anchor for the 2026-04-28 cycle context |
 | Audit-policy fixing `A_min` and disallowing axiom amendment | [`AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md) | meta authority | this is what excludes §3.4's strict-reading closure as an audit-grade move |
 | `(R-X1)` anomaly-cancellation exhaustion (falsified angle) | inline §4, this note | falsified within the note | gauge-singlet `nu_R` Majorana mass passes anomaly cancellation |

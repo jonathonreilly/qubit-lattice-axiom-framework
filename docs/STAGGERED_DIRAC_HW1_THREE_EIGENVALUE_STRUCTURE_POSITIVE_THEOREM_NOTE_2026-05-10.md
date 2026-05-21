@@ -62,7 +62,7 @@ The source boundary is intentionally narrow.
 
 - The repo baseline is the physical `Cl(3)` local algebra on the `Z^3`
   spatial substrate, recorded in
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md). This note
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md). This note
   does not add or rename repo-wide axioms.
 - The `H_hw=1` carrier and APBC BZ-corner support are imported from
   [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)

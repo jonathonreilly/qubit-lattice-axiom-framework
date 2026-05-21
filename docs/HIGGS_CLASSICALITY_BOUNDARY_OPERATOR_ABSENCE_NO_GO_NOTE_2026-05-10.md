@@ -20,8 +20,8 @@ does not add a new axiom and does not promote the Higgs mass chain.
 
 | Input | Role | Authority / boundary |
 | --- | --- | --- |
-| physical `Cl(3)` local algebra and `Z^3` spatial substrate | repo baseline semantics only | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
-| staggered-Dirac / gauge-action realization and `g_bare` normalization | open-gate action-packet context, not a new axiom | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md), [`G_BARE_DERIVATION_NOTE.md`](G_BARE_DERIVATION_NOTE.md) |
+| physical `Cl(3)` local algebra and `Z^3` spatial substrate | repo baseline semantics only | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
+| staggered-Dirac / gauge-action realization and `g_bare` normalization | open-gate action-packet context, not a new axiom | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), [`G_BARE_DERIVATION_NOTE.md`](G_BARE_DERIVATION_NOTE.md) |
 | Higgs mass runner boundary `lambda(M_Pl)=0` | admitted-context input whose derivation is open | [`HIGGS_MASS_DERIVED_NOTE.md`](HIGGS_MASS_DERIVED_NOTE.md) |
 | composite/no-fundamental-scalar framing | context for why a bare fundamental `phi^4` term is absent in the stipulated action packet | [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) action-boundary discussion |
 

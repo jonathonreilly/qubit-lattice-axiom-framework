@@ -69,7 +69,7 @@ surface.
 **Recategorization context:** the staggered-Dirac realization is
 recategorized as an open gate, not part of the baseline physical
 `Cl(3)` local algebra / `Z^3` spatial substrate, by
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md), which
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), which
 restores the repo baseline to physical `Cl(3)` on `Z^3`. No new axiom is
 introduced or implied by this note.
 
@@ -170,7 +170,7 @@ audit statuses are reported but they are not closed by this note.
   conditional physical `G_Newton,lat = 1`. The 4π geometric factor
   between the bare kernel and the framework lattice-unit Newton
   constant is absorbed by this normalization.
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   (meta): records the physical `Cl(3)` on `Z^3` baseline and the
   recategorization of the staggered-Dirac realization from baseline
   premise to open gate. The current note introduces no new axiom.
@@ -291,7 +291,7 @@ This note does not close:
 - any higher-curvature correction to the framework's leading-order
   Einstein-Hilbert Lagrangian;
 - any new axiom; the repo baseline remains physical `Cl(3)` on `Z^3`
-  per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  per [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 
 ## Verification
 

@@ -416,7 +416,7 @@ inputs.
 
 ## Citations
 
-- framework baseline: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- framework baseline: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - parent cluster-decomposition note (context for the prior repair request;
   not a load-bearing dependency of this bounded theorem):
   `AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md`

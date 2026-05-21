@@ -88,7 +88,7 @@ def h1_c3_purely_spatial():
     - S3_TASTE_CUBE_DECOMPOSITION_NOTE: S_3 acts on C^8 = (C^2)^⊗3 by
       "permuting tensor positions" (this is permutation of BZ corner labels
       n_1, n_2, n_3, NOT spatial coordinates x_1, x_2, x_3).
-    - Per MINIMAL_AXIOMS_2026-05-03.md: framework axioms are A1=Cl(3) and
+    - Per MINIMAL_AXIOMS_2026-05-20.md: framework axioms are A1=Cl(3) and
       A2=Z^3. There is NO axiom for time direction or 3+1D point group.
     - C_3 lifts to (T_x, T_y, T_z) translation cycle.
 
@@ -109,7 +109,7 @@ def h1_c3_purely_spatial():
     print()
 
     # Test 1: framework axioms are spatial-only
-    # Per MINIMAL_AXIOMS_2026-05-03.md, A1+A2 are the two axioms; A2 = Z^3
+    # Per MINIMAL_AXIOMS_2026-05-20.md, A1+A2 are the two axioms; A2 = Z^3
     # is purely spatial. Time emerges via single-clock theorem (codimension-1).
     print("Test 1: Framework axiom check")
     print(f"  A1 (Cl(3)): purely algebraic, no spatial/temporal structure")

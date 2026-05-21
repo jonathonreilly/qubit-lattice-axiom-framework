@@ -244,7 +244,7 @@ vocabulary control**:
 4. **Vocabulary disjoint from physics.** Framework primitives
    (`Cl(3)`, `Z³`, `A_min`, `Axiom 1`, `Axiom 2`, `g_bare`, `u_0`,
    `M_Pl`, etc.) are *not* vocabulary terms. They live in
-   [`MINIMAL_AXIOMS_2026-05-03.md`](./MINIMAL_AXIOMS_2026-05-03.md)
+   [`MINIMAL_AXIOMS_2026-05-20.md`](./MINIMAL_AXIOMS_2026-05-20.md)
    and per-claim notes only. The vocabulary system governs
    process labels (status, audit fields, repair classes, evidence
    terms, prose voice) — never the physics itself. Conflating the two

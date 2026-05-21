@@ -45,7 +45,7 @@ prior open gate to a theorem and does not close left-handed content.
 ## Source Dependencies
 
 - Physical `Cl(3)` local algebra and `Z^3` spatial substrate:
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - Cited staggered `C^8` taste cube and `C / Cl^+(3) / M_3(C)` co-location:
   [`CLOSURE_C_STAGGERED_DIRAC_GATE_NOTE_2026-05-10_cStaggered.md`](CLOSURE_C_STAGGERED_DIRAC_GATE_NOTE_2026-05-10_cStaggered.md),
   [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md).

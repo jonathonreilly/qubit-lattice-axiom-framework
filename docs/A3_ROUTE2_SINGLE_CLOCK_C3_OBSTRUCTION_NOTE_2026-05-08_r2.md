@@ -79,8 +79,8 @@ established by the prior W2 / L3a / substep4ac analyses.
 
 | ID | Statement | Class |
 |---|---|---|
-| A1 | Cl(3) local algebra | framework axiom; see `MINIMAL_AXIOMS_2026-05-03.md` |
-| A2 | Z³ spatial substrate | framework axiom; see `MINIMAL_AXIOMS_2026-05-03.md` |
+| A1 | Cl(3) local algebra | framework axiom; see `MINIMAL_AXIOMS_2026-05-20.md` |
+| A2 | Z³ spatial substrate | framework axiom; see `MINIMAL_AXIOMS_2026-05-20.md` |
 | RP | Reflection positivity (temporal-axis only) | upstream authority: [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) |
 | SC | Spectrum condition H ≥ 0 | upstream authority: [`AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md) |
 | LR | Lieb-Robinson microcausality v_LR = 2 e r J | upstream authority: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
@@ -504,7 +504,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - KMS condition: [`AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md)
 - Three-generation observable: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 - BZ corner forcing (substep 3): [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
-- MINIMAL_AXIOMS: `MINIMAL_AXIOMS_2026-05-03.md`
+- MINIMAL_AXIOMS: `MINIMAL_AXIOMS_2026-05-20.md`
 
 ## Citation references
 

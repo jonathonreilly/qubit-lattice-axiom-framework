@@ -500,7 +500,7 @@ edges:
   at any `d ≥ 1`; at `d = 3`, the count is `2^3 = 8`, matching (H1).
   Not load-bearing here (this note re-derives the `n = 3` instance
   from scratch by direct enumeration).
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — framework baseline memo for the physical Cl(3) local algebra and
   Z^3 spatial substrate; the narrow theorem's combinatorial content
   does not consume its effective status.

@@ -21,7 +21,7 @@ not promote any downstream theorem.
 ## Naming convention
 
 - **"framework axiom A1"** = retained `Cl(3)` local-algebra axiom per
-  `MINIMAL_AXIOMS_2026-05-03.md`.
+  `MINIMAL_AXIOMS_2026-05-20.md`.
 - **BAE** = Brannen Amplitude Equipartition: `|b|²/a² = 1/2` on the
   retained `C_3`-equivariant Hermitian circulant `H = aI + bC + b̄C²`
   on `hw=1 ≅ ℂ³`. Renaming captured in
@@ -275,7 +275,7 @@ dimensional language.
 
 | Constant | Symbol | Dimensions | Origin | Authority |
 |---|---|---|---|---|
-| spatial lattice spacing | `a_s` | L | A2 (Z³ substrate) | `MINIMAL_AXIOMS_2026-05-03.md`, `PHYSICAL_LATTICE_NECESSITY_NOTE.md` |
+| spatial lattice spacing | `a_s` | L | A2 (Z³ substrate) | `MINIMAL_AXIOMS_2026-05-20.md`, `PHYSICAL_LATTICE_NECESSITY_NOTE.md` |
 | temporal lattice spacing | `a_τ` | T | RP transfer matrix `T = e^{-a_τ H}` | `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` |
 | Lieb-Robinson velocity | `v_LR = 2erJ` | L/T | A1+A2+A3+A4 finite-range Hamiltonian | `AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md` |
 | Planck mass / UV cutoff | `M_Pl` | M = E | framework UV anchor | `COMPLETE_PREDICTION_CHAIN_2026_04_15.md` §8.1 |
@@ -665,7 +665,7 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===`.
   — `g_bare = 1` retained
 - [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
   — `<P>`, `M_Pl`, dimensional chain
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — A1+A2 framework axioms
 - [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
   — physical-lattice baseline
@@ -675,7 +675,7 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===`.
 Load-bearing for Step 1 (positive inventory closure):
 
 1. **A_min retained dimensional content**:
-   `MINIMAL_AXIOMS_2026-05-03.md` (A1+A2),
+   `MINIMAL_AXIOMS_2026-05-20.md` (A1+A2),
    `AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`
    (`v_LR`),
    `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`

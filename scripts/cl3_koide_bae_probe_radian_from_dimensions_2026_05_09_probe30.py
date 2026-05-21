@@ -92,7 +92,7 @@ def main() -> int:
     tally(check(
         "1.1 a_s (spatial lattice spacing) retained on A2 (Z^3 substrate)",
         a_s_dim == ("L",),
-        "MINIMAL_AXIOMS_2026-05-03.md, PHYSICAL_LATTICE_NECESSITY_NOTE.md",
+        "MINIMAL_AXIOMS_2026-05-20.md, PHYSICAL_LATTICE_NECESSITY_NOTE.md",
     ))
 
     # 1.2 temporal lattice spacing a_tau, dimension T

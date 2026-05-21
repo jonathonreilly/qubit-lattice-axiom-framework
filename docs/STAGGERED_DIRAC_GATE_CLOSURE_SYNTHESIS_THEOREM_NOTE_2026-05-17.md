@@ -68,8 +68,8 @@ dependency (S2 spin-statistics re-audit).
 
 | ID | Statement | Class | Source authority |
 |---|---|---|---|
-| physical Cl(3) local algebra | Cl(3) local algebra | repo baseline | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
-| Z^3 spatial substrate | Z³ spatial substrate | repo baseline | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| physical Cl(3) local algebra | Cl(3) local algebra | repo baseline | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
+| Z^3 spatial substrate | Z³ spatial substrate | repo baseline | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 
 ### Retained / support authorities cited
 
@@ -442,7 +442,7 @@ by this synthesis (it remains bounded with carried residual).
 - Substep 4 partial (T5): [`STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md)
 - Substep 4 AC narrowing (T5_AC): [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
 - Substep 4 positive ratchet attempt (T5_RAT): [`STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md`](STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md)
-- MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 
 ## Status
 

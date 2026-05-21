@@ -25,7 +25,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE = ROOT / "docs" / "BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md"
-MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-03.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-20.md"
 
 PASS = 0
 FAIL = 0

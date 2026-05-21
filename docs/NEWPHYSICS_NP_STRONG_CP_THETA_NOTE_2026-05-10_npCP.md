@@ -53,8 +53,8 @@ single-plaquette-action constraint that the existing retained Wilson
 chain already imposes:
 
 - **A1** — Local algebra `Cl(3)` (per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md))
-- **A2** — Spatial substrate `Z^3` (per `MINIMAL_AXIOMS_2026-05-03.md`)
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md))
+- **A2** — Spatial substrate `Z^3` (per `MINIMAL_AXIOMS_2026-05-20.md`)
 - **single-plaquette action class** — the action functional has the
   form `S(U) = sum_P f(U_P)` where `f : SU(3) -> R` is a class
   function on the SU(3) plaquette holonomy `U_P`. This class is
@@ -459,7 +459,7 @@ audit_authority: independent audit lane only
 - [`BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md`](BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md) —
   establishes the single-plaquette action class as the natural
   scope (Wilson, Heat-Kernel, Manton all sit inside it).
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) —
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) —
   A1+A2 framework axioms.
 - Lüscher, M. (1982). *Volume dependence of the energy spectrum in
   massive quantum field theories*. Commun. Math. Phys. 104, 177 —

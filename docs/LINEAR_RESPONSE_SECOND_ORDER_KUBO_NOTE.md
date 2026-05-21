@@ -318,7 +318,7 @@ are visible.
 | Sibling first-order Kubo runner | [`scripts/linear_response_true_kubo.py`](../scripts/linear_response_true_kubo.py) | the literal first-order `<z*deltaH>_0` computation cited in §"What stands"; its closure is the input under which §"What this closes" defends the bounded 15/44 linearity reach |
 | Sibling first-order Kubo log | [`logs/2026-04-07-linear-response-true-kubo.txt`](../logs/2026-04-07-linear-response-true-kubo.txt) | preserved log for the sibling [`docs/LINEAR_RESPONSE_TRUE_KUBO_NOTE.md`](LINEAR_RESPONSE_TRUE_KUBO_NOTE.md) |
 | Generator inputs | `scripts/universality_classifier.py`, `scripts/independent_generators_heldout.py`, `scripts/global_coherence_off_scaffold.py` | the same three import surfaces enumerating the 26 swept + 9 scaffolded + 9 off-scaffold families used by the runner |
-| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` repo-baseline terminology anchor for the linear path-sum architecture |
+| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` repo-baseline terminology anchor for the linear path-sum architecture |
 
 The audit-stated repair path (verbatim from the audit
 `notes_for_re_audit_if_any`) is to either (i) **narrow the source

@@ -141,7 +141,7 @@ framework. Nothing else is loaded.
 
 - **(I1) AX1: Cl(3) local algebra**, **(I2) AX2: Z³ spatial substrate**
   — physical `Cl(3)` local algebra and `Z^3` spatial-substrate baseline
-  ([`docs/MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)).
+  ([`docs/MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)).
 - **(I3) Ward Identity Theorem T1/T2**
   ([`docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md)):
   exact algebraic identity `y_t_bare = g_bare / sqrt(2 N_c)` on every

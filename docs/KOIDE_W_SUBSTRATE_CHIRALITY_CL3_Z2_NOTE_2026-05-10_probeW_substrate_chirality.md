@@ -49,7 +49,7 @@ consequence of the Cl(3) grade involution.
 
 | Ingredient | Role |
 |---|---|
-| [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | repo baseline naming for physical Cl(3) local algebra and Z^3 spatial substrate |
+| [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | repo baseline naming for physical Cl(3) local algebra and Z^3 spatial substrate |
 | [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) | existing source note for the two Pauli chirality summands |
 | [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md) | existing source note for the `Cl^+(3) ~= H` exact algebra reading |
 | [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) | existing source note for the absence of a per-site gamma_5 projector |

@@ -146,7 +146,7 @@ Concretely:
 
 | ID | Statement | Class |
 |---|---|---|
-| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; see `MINIMAL_AXIOMS_2026-05-03.md` |
+| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; see `MINIMAL_AXIOMS_2026-05-20.md` |
 | BASE-Z3 | `Z^3` spatial substrate | repo baseline; same source |
 | Cl3-Pauli | `Cl(3,0)` has a unique faithful 2-dim Pauli irrep (`σ_1, σ_2, σ_3`) up to chirality | narrow theorem: `CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md` |
 | Alpha-MZ | retained `α_EM(M_Z) ≈ 1/127.67` | retained chain: `COMPLETE_PREDICTION_CHAIN_2026_04_15.md` |
@@ -484,7 +484,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - Lane 6 bounded charged-lepton mass hierarchy: [`CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md`](CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md)
 - `α_EM(M_Z) → α(0)` running firewall: [`ATOMIC_LANE2_QED_RUNNING_DEPENDENCY_FIREWALL_NOTE_2026-04-30.md`](ATOMIC_LANE2_QED_RUNNING_DEPENDENCY_FIREWALL_NOTE_2026-04-30.md)
 - Open Higgs lane: [`HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)
-- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - Conventions unification: [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md)
 - Physical-lattice baseline: [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 

@@ -15,7 +15,7 @@ Born-rule operationalism + physical-lattice baseline pin a unique
 canonical max-entropy measure that gives BAE.
 
 Setup (cited):
-- A1, A2: Cl(3) on Z^3 (MINIMAL_AXIOMS_2026-05-03.md)
+- A1, A2: Cl(3) on Z^3 (MINIMAL_AXIOMS_2026-05-20.md)
 - Physical-lattice baseline: PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08
 - Conventions unification: CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08
 - C_3 symmetry preserved: C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08

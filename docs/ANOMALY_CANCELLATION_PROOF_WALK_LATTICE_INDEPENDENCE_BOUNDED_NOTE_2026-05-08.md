@@ -125,7 +125,7 @@ notes; it is a group-theoretic constant, not a lattice-action input.
   and [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md)
   for the LH content and charge identification conventions.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  and `MINIMAL_AXIOMS_2026-05-03.md`
+  and `MINIMAL_AXIOMS_2026-05-20.md`
   for the open realization-gate context that this note does not close.
 
 These are imported authorities for a bounded theorem. The row remains

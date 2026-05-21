@@ -22,7 +22,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE = ROOT / "docs" / "PLANCK_FROM_STRUCTURE_PATH_OPENING_META_NOTE_2026-05-10.md"
-MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-03.md"
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-20.md"
 
 PASS = 0
 FAIL = 0
@@ -232,7 +232,7 @@ def main() -> int:
 
     # ---- cross-references to foundational notes that exist on main ----
     foundational_refs = [
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
         "PHYSICAL_LATTICE_NECESSITY_NOTE",
         "PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08",
         "STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac",
@@ -243,7 +243,7 @@ def main() -> int:
     for ref in foundational_refs:
         check(f"cross-references foundational note: {ref}", ref in note)
 
-    # ---- baseline alignment with MINIMAL_AXIOMS_2026-05-03 ----
+    # ---- baseline alignment with MINIMAL_AXIOMS_2026-05-20 ----
     check(
         "minimal axioms note records physical Cl(3) local algebra",
         "the physical local algebra is `Cl(3)`" in minimal,

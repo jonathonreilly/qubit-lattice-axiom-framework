@@ -69,7 +69,7 @@ Context only, not load-bearing dependencies:
 
 - Probe X and the Probe 12-30 operator-level packets are prior BAE
   obstructions, but this note does not require their audit status.
-- `MINIMAL_AXIOMS_2026-05-03.md` records the physical Cl(3) local
+- `MINIMAL_AXIOMS_2026-05-20.md` records the physical Cl(3) local
   algebra plus Z^3 spatial substrate baseline; this note does not
   add to that baseline.
 

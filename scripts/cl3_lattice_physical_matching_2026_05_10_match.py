@@ -78,7 +78,7 @@ required_phrases = [
     "Per-Step Obstruction",
     "Authority disclaimer",
     "Source-note proposal",
-    "MINIMAL_AXIOMS_2026-05-03",
+    "MINIMAL_AXIOMS_2026-05-20",
     "Forbidden imports",
     "NO PDG observed values",
     "NO new repo-wide axioms or imports",

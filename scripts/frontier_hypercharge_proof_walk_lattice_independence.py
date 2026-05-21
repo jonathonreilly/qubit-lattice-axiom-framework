@@ -58,7 +58,7 @@ def check_note_structure() -> None:
         "Boundaries",
         "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24",
         "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03",
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
     ]
     for marker in required:
         check(f"contains marker: {marker[:56]}", marker in NOTE_TEXT or marker in NOTE_FLAT)
@@ -84,7 +84,7 @@ def check_dependencies_exist() -> None:
         "docs/ANOMALY_FORCES_TIME_THEOREM.md",
         "docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in deps:
         check(f"dependency exists: {rel}", (ROOT / rel).exists())

@@ -61,7 +61,7 @@ consumer's physical interpretation remain in their own scope.
 
 None load-bearing. (K1)-(K4) are pure abstract-algebra identities on
 the Clifford algebra `Cl(3,0)` and require no other note's effective
-status. The framework baseline memo `MINIMAL_AXIOMS_2026-05-03.md` is
+status. The framework baseline memo `MINIMAL_AXIOMS_2026-05-20.md` is
 named in plain text only as a context pointer for the repo baseline
 physical `Cl(3)` local algebra; the abstract real-algebra computations
 themselves do not load-bear on it.

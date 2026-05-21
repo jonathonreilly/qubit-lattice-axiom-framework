@@ -25,7 +25,7 @@ note:
 1. **Open-gate dependency.** The note's hypothesis section listed
    the staggered-Dirac/Grassmann action as an `A_min` axiom (former
    `A3`). Under the current public framework memo
-   `MINIMAL_AXIOMS_2026-05-03.md` the
+   `MINIMAL_AXIOMS_2026-05-20.md` the
    staggered-Dirac realization is **not** a current framework axiom; it
    is an explicit `open_gate` derivation target listed there. Lanes
    (including `lattice_noether`) that depend on this gate must be
@@ -41,7 +41,7 @@ note:
 This 2026-05-10 repair addresses both gaps:
 
 - **(R1) Authority rebase.** The hypothesis set is rebased on
-  `MINIMAL_AXIOMS_2026-05-03.md`. Only
+  `MINIMAL_AXIOMS_2026-05-20.md`. Only
   `A1` (Cl(3) per-site algebra) and `A2` (`Z^3` substrate, restricted
   to its `(2Z)^3` sublattice) are framework axioms here. The
   staggered-Dirac/Grassmann action `M_KS` is admitted as a named
@@ -50,7 +50,9 @@ This 2026-05-10 repair addresses both gaps:
   input. The proof is then a bounded Noether identity on the admitted
   staggered/Grassmann carrier. This matches the recategorization in
   `MINIMAL_AXIOMS_2026-05-03.md` line 173 (`lattice_noether` listed
-  among lanes depending on the staggered-Dirac realization gate).
+  among lanes depending on the staggered-Dirac realization gate; the
+  qubit-reframe supersession `MINIMAL_AXIOMS_2026-05-20.md` preserves
+  the open-gate status of the staggered-Dirac realization).
 - **(R2) Direct `(5) → (3)` verification.** The runner now includes
   `E6`, an explicit numerical check that the canonical staggered
   sublattice-momentum density `(3)` is on-shell divergence-free
@@ -82,7 +84,7 @@ here. The U(1) phase result (N2) is unaffected by the repair.
 ## Scope
 
 This note derives, on the current public framework memo
-`MINIMAL_AXIOMS_2026-05-03.md` plus the
+`MINIMAL_AXIOMS_2026-05-20.md` plus the
 explicitly admitted staggered-Dirac realization gate, a lattice analogue
 of Noether's theorem: for any one-parameter Lie symmetry of the admitted
 canonical action that maps Grassmann variables to Grassmann variables,
@@ -110,7 +112,7 @@ symmetries of the admitted canonical action:
 This is a `bounded_theorem`: it closes the Noether identity given the
 staggered-Dirac/Grassmann action as an admitted carrier. When the
 staggered-Dirac realization derivation target (open gate per
-`MINIMAL_AXIOMS_2026-05-03.md`) closes,
+`MINIMAL_AXIOMS_2026-05-20.md`) closes,
 the row becomes eligible for retagging as `positive_theorem` by the
 independent audit lane.
 
@@ -123,7 +125,7 @@ acknowledges the same admitted gate.
 ## Hypothesis set used
 
 The proof uses two framework axioms from
-`MINIMAL_AXIOMS_2026-05-03.md`, plus
+`MINIMAL_AXIOMS_2026-05-20.md`, plus
 two **named admitted inputs** corresponding to the open gates in that
 memo:
 
@@ -150,7 +152,7 @@ memo:
 
   with `M = m + M_KS`, `M_KS` the staggered Kogut–Susskind hop, is
   admitted as a named carrier. Recategorized from the prior `A3`
-  axiom by `MINIMAL_AXIOMS_2026-05-03.md`
+  axiom by `MINIMAL_AXIOMS_2026-05-20.md`
   to an open derivation target whose canonical parent note is
   pending packaging. The action is invariant under both `T_{2a}`
   (two-site shift acting on lattice indices) and global `U(1)` phase
@@ -470,7 +472,7 @@ scope for this note.
 
 The proof uses the two current framework axioms `A1` (Cl(3)) and `A2`
 (`(2Z)^3` sublattice translation action) from
-`MINIMAL_AXIOMS_2026-05-03.md`, plus
+`MINIMAL_AXIOMS_2026-05-20.md`, plus
 the one named admitted input `staggered_dirac_realization_gate`. The
 `g_bare` normalization gate, formerly listed alongside the carrier
 gate, is **removed** from the load-bearing input list per the
@@ -520,7 +522,7 @@ discharge anomaly cancellation.
 (N3) are proved by the standard variational argument adapted to the
 finite Grassmann staggered action, with the `(2Z)^3` sublattice scope
 matching what the runner verifies. One named open gate is admitted
-explicitly per `MINIMAL_AXIOMS_2026-05-03.md`:
+explicitly per `MINIMAL_AXIOMS_2026-05-20.md`:
 the staggered-Dirac realization gate (carrier of the action `M_KS`).
 The `g_bare = 1` canonical-normalization gate, formerly admitted
 alongside, is **removed** from this note's load-bearing input list
@@ -550,7 +552,7 @@ quantitatively `g_bare`-independent).
   confirm both regimes on the admitted staggered carrier.
 
 **When admitted gates close.** When
-`MINIMAL_AXIOMS_2026-05-03.md`'s
+`MINIMAL_AXIOMS_2026-05-20.md`'s
 staggered-Dirac realization derivation target closes (canonical
 parent note pending packaging), this row becomes eligible for
 retagging from `bounded_theorem` to `positive_theorem` by the
@@ -579,7 +581,7 @@ A1+A2+infrastructure".
 ## Load-bearing Dependencies
 
 - Current public framework memo:
-  `MINIMAL_AXIOMS_2026-05-03.md`
+  `MINIMAL_AXIOMS_2026-05-20.md`
   (supersedes `MINIMAL_AXIOMS_2026-04-11.md`).
 
 ## Citations
@@ -597,7 +599,7 @@ A1+A2+infrastructure".
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md) —
+- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-20.md) —
   current public framework memo; sole upstream framework dependency
   after the 2026-05-10 gate-recategorization repair.
 
@@ -609,7 +611,7 @@ framework-axiom dependency on `minimal_axioms_2026-05-03`:
 
 - `staggered_dirac_realization_gate` — the Grassmann partition with
   staggered Dirac action `M_KS`. Recategorized from prior axiom `A3`
-  to an open-gate derivation target by `MINIMAL_AXIOMS_2026-05-03.md`;
+  to an open-gate derivation target by `MINIMAL_AXIOMS_2026-05-20.md`;
   canonical parent note pending packaging. Closure of this gate makes
   this row eligible for retagging from `bounded_theorem` to
   `positive_theorem`.

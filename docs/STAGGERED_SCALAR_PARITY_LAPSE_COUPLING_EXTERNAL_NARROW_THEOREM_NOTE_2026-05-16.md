@@ -111,7 +111,7 @@ algebraic identities (1)-(3) above. It does NOT claim:
 - that the parity coupling (P) or lapse coupling (L) is derived from
   the baseline physical `Cl(3)` local algebra on `Z^3` spatial
   substrate (see the current minimal-input ledger
-  `MINIMAL_AXIOMS_2026-05-03.md`);
+  `MINIMAL_AXIOMS_2026-05-20.md`);
 - closure of the `staggered_dirac_realization_gate_note_2026-05-03`
   open gate (forcing the Grassmann staggered-Dirac realization itself
   from the baseline framework is delegated to that gate and the

@@ -355,7 +355,7 @@ edges:
 - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
   — sister narrow theorem one hop downstream of the cited
   complexification split.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — framework baseline memo for the physical Cl(3) local algebra and
   Z^3 spatial substrate; the narrow theorem does not consume its
   effective status.

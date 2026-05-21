@@ -28,7 +28,7 @@ verdicts and does not promote any downstream theorem.
 - **No new axioms.** All load-bearing inputs trace to the physical
   `Cl(3)` local algebra and `Z^3` spatial substrate baseline (legacy
   aliases `A1`/`A2`) per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - **No new imports.** The Λ_QCD inversion uses retained group theory
   (`b_3 = -7` per [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
   Section 3.2). PDG values for `M_Z`, `m_b`, `m_c` are infrastructure only
@@ -351,7 +351,7 @@ audit_lane_recommendation_for_lane_1:
 
 3. **It does NOT retire L3a, the staggered-Dirac realization gate, or
    `g_bare = 1`.** These remain open per
-   [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+   [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 
 4. **It does NOT resolve the Method 1 / Method 2 Λ disagreement.** Per
    [`HADRON_LANE1_SQRT_SIGMA_RETENTION_GATE_AUDIT_SUPPORT_NOTE_2026-04-27.md`](HADRON_LANE1_SQRT_SIGMA_RETENTION_GATE_AUDIT_SUPPORT_NOTE_2026-04-27.md),
@@ -383,7 +383,7 @@ audit_lane_recommendation_for_lane_1:
 
 ### Framework axioms / structural
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
 
 ### Standard lattice-QCD references (comparators only)

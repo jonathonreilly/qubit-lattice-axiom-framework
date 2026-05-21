@@ -172,7 +172,7 @@ modes.
 
 | ID | Statement | Class |
 |---|---|---|
-| A1 | Cl(3) local algebra | framework axiom; see `MINIMAL_AXIOMS_2026-05-03.md` |
+| A1 | Cl(3) local algebra | framework axiom; see `MINIMAL_AXIOMS_2026-05-20.md` |
 | A2 | Z³ spatial substrate | framework axiom; same source |
 | Range1 | Retained Lieb-Robinson Hamiltonian: range r=1 | retained: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
 | Plaquette | `<P> = 0.5934` from SU(3) lattice MC at `β = 6` | retained: [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) |
@@ -549,7 +549,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - `g_bare = 1` HS rigidity: [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
 - Charged-lepton Koide-cone algebraic equivalence: [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md)
 - Probe 21-prior campaign meta: [`KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md`](KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md)
-- MINIMAL_AXIOMS: `MINIMAL_AXIOMS_2026-05-03.md`
+- MINIMAL_AXIOMS: `MINIMAL_AXIOMS_2026-05-20.md`
 
 ## Validation
 
@@ -623,4 +623,4 @@ audited claim scope.
 - [g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07](G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
 - [charged_lepton_koide_cone_algebraic_equivalence_note](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md)
 - [koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08](KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md)
-- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md)
+- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-20.md)

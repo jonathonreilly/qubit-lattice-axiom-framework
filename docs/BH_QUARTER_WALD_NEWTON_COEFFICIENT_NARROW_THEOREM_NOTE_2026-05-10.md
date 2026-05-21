@@ -159,7 +159,7 @@ narrow theorem:
   premise + `c_cell = 1/4` to force `G_Newton,lat = 1` lives there;
   this narrow note isolates only the algebraic step and consumes none
   of those admissions.
-- `MINIMAL_AXIOMS_2026-05-03.md` —
+- `MINIMAL_AXIOMS_2026-05-20.md` —
   informational. Cited only to confirm scope: this narrow theorem
   introduces no new axioms and consumes no framework axioms — it is
   purely rational algebra over `Q_+^3`.

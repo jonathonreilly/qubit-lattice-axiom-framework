@@ -84,7 +84,7 @@ boundary, or fermion-sector proof.
 None load-bearing. (G1)-(G3) are abstract measure-theoretic identities
 under explicit symmetry hypotheses and require no other note's
 effective status. The framework baseline memo
-`MINIMAL_AXIOMS_2026-05-03.md` is named in plain text only as context
+`MINIMAL_AXIOMS_2026-05-20.md` is named in plain text only as context
 for the repo baseline physical `Cl(3)` local algebra plus `Z^3`
 spatial substrate; the bounded norm-square identity does not load-bear
 on that baseline.

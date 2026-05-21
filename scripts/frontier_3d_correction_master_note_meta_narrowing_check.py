@@ -34,7 +34,7 @@ master note's "lesson learned" section invokes when it explains why the
       lattice runners' empirical outputs.
 
   Fact A2 — Substrate dimensionality is fixed by axiom A2.
-      Per `MINIMAL_AXIOMS_2026-05-03.md`, the framework's spatial
+      Per `MINIMAL_AXIOMS_2026-05-20.md`, the framework's spatial
       substrate is `Z^3`. A `Z^2` regular-lattice computation is
       therefore not the canonical framework readout, and statements
       that decisively fit on Z^2 carry no transfer-of-conclusion right
@@ -190,11 +190,11 @@ check(
 section("Part 4 (Fact A2): substrate dimensionality is fixed by axiom A2 to Z^3")
 # ----------------------------------------------------------------------------
 # This is a documentation check: the framework axiom set as recorded in
-# MINIMAL_AXIOMS_2026-05-03.md has A2 stating that the spatial substrate
+# MINIMAL_AXIOMS_2026-05-20.md has A2 stating that the spatial substrate
 # is Z^3. We verify the file exists and contains the literal axiom statement.
-axioms_path = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-03.md"
+axioms_path = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-20.md"
 check(
-    "MINIMAL_AXIOMS_2026-05-03.md exists in docs/",
+    "MINIMAL_AXIOMS_2026-05-20.md exists in docs/",
     axioms_path.exists(),
     detail=f"path = {axioms_path}",
 )
@@ -203,13 +203,13 @@ if axioms_path.exists():
     body = axioms_path.read_text(encoding="utf-8")
     has_a2 = "A2" in body and "Z^3" in body and "cubic" in body
     check(
-        "MINIMAL_AXIOMS_2026-05-03.md mentions A2 with Z^3 cubic substrate",
+        "MINIMAL_AXIOMS_2026-05-20.md mentions A2 with Z^3 cubic substrate",
         has_a2,
         detail="file contents include 'A2', 'Z^3', and 'cubic'",
     )
     has_two_axioms = "two framework axioms" in body.lower() or "two axioms" in body.lower()
     check(
-        "MINIMAL_AXIOMS_2026-05-03.md confirms the framework axiom set is A1+A2 only",
+        "MINIMAL_AXIOMS_2026-05-20.md confirms the framework axiom set is A1+A2 only",
         has_two_axioms,
         detail="file body contains explicit two-axioms phrasing",
     )
@@ -267,7 +267,7 @@ print("""
   HYPOTHESIS:
     The master note is a process / retraction record documenting how
     measurements made on a Z^2 regular-lattice surface (a non-canonical
-    surface relative to the framework axiom set MINIMAL_AXIOMS_2026-05-03)
+    surface relative to the framework axiom set MINIMAL_AXIOMS_2026-05-20)
     did not transfer to the canonical Z^3 substrate.
 
   CONCLUSIONS (independently verified algebraically here):
@@ -278,7 +278,7 @@ print("""
                This is the elementary measure-theoretic fact behind the
                master note's '1/L vs 1/L^2 kernel scaling' sentence.
 
-    (Fact A2)  The framework axiom set in MINIMAL_AXIOMS_2026-05-03 fixes
+    (Fact A2)  The framework axiom set in MINIMAL_AXIOMS_2026-05-20 fixes
                the spatial substrate to Z^3 via A2. A Z^2 regular-lattice
                readout therefore is not the canonical framework readout;
                the transfer of conclusions from Z^2 to Z^3 requires an

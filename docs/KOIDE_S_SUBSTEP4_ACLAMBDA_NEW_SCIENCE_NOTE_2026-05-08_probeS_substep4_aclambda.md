@@ -136,7 +136,7 @@ does not ratchet substep-4 to positive.
 
 | ID | Statement | Class |
 |---|---|---|
-| Baseline local algebra | physical Cl(3) local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| Baseline local algebra | physical Cl(3) local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | Baseline substrate | Z³ spatial substrate | repo baseline; same source |
 | KS | Kawamoto-Smit phase form on Z³ APBC | upstream `bounded_theorem`: [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) |
 | BlockT3 | hw=1 BZ-corner triplet has M_3(C) algebra; distinct joint translation characters | upstream: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md), [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) |
@@ -607,7 +607,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
   `KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md`
 - Context-only BAE 30-probe terminal synthesis:
   `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
-- MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- MINIMAL_AXIOMS: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 
 ## Command
 

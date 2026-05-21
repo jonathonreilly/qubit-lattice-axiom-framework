@@ -363,7 +363,7 @@ for the 3D density of states) from the parent. Per the upstream
 [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
 the `d_t = 1` conclusion decomposes into derived (Step 3) and inherited
 (admission (iv)) branches; the `d_s = 3` piece comes from axiom A2
-directly (per `MINIMAL_AXIOMS_2026-05-03.md`), independent of admissions
+directly (per `MINIMAL_AXIOMS_2026-05-20.md`), independent of admissions
 (i)-(iv). Recorded for downstream-audit disambiguation.
 
 ## Fix record (2026-05-17, downstream surgical-fix wave)

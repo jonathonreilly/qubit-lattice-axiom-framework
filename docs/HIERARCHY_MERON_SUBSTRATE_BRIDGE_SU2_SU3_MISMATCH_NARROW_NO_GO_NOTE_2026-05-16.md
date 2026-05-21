@@ -282,7 +282,7 @@ values `Q = k / N` for SU(N) gauge theory, and they pin the meron-like
 sector at action `S = (8 pi^2 / g^2) |k/N|` on the compact T⁴
 geometry.
 
-The framework's spatial substrate is **Z³** (`MINIMAL_AXIOMS_2026-05-03.md`),
+The framework's spatial substrate is **Z³** (`MINIMAL_AXIOMS_2026-05-20.md`),
 matching the same open primitive **P2** that blocks the `alpha_LM^16`
 route in
 `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`.
@@ -657,7 +657,7 @@ the no-go must wait on upstream audit closure:
   — source for `(7/8)^(1/4)` APBC selector at `L_t = 4`,
   the only canonical-surface multiplicative correction with retained
   authority that this packet evaluates in (M5).
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   — current physical Cl(3) local algebra plus Z³ spatial substrate
   baseline; declares Z³ as the spatial substrate (load-bearing for
   M2).

@@ -39,7 +39,7 @@ Admitted-context inputs (carrier framework, not derived in this note):
   18/18 PASS). That source-theorem note carries only the lattice-algebraic
   form of (P) and (L); it does NOT derive the parity coupling from the
   baseline physical `Cl(3)` local algebra on `Z^3` spatial substrate
-  (see the current minimal-input ledger `MINIMAL_AXIOMS_2026-05-03.md`),
+  (see the current minimal-input ledger `MINIMAL_AXIOMS_2026-05-20.md`),
   and it does NOT close the open
   `staggered_dirac_realization_gate_note_2026-05-03` gate, which is the
   strictly stronger question of whether the baseline framework forces
@@ -396,4 +396,4 @@ What is still open:
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16](STAGGERED_SCALAR_PARITY_LAPSE_COUPLING_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
-- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md)
+- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-20.md)

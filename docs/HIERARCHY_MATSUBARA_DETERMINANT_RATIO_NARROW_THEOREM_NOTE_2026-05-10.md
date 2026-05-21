@@ -425,7 +425,7 @@ will evaluate the load-bearing class and any later status.
   — retained spatial APBC u_0 scaling.
 
 ### Framework axioms / structural
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
   — referenced by parent narrow theorem; the dim-4 readout in this
   note's §4 corollary does not depend on `N_taste`.

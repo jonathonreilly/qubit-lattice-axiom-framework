@@ -15,7 +15,7 @@ that target the Planck-from-structure missing-theorem trio plus the
 G_Newton self-consistency lane, identifies what each supports or narrows, and
 records the conditional path to **zero conventional anchors** under
 the framework's existing physical `Cl(3)` on `Z^3` baseline.
-**Companion to:** [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md),
+**Companion to:** [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md),
 [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md),
 [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md).
 **Primary runner:** [`scripts/frontier_planck_from_structure_path_opening.py`](../scripts/frontier_planck_from_structure_path_opening.py)
@@ -37,9 +37,9 @@ synthesis-level claim of "path-opening" itself.
 Throughout this note:
 
 - **"physical Cl(3) local algebra"** = the repo baseline local algebra per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - **"`Z^3` spatial substrate"** = the repo baseline spatial substrate per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - **"the missing-theorem trio"** = the three substrate-to-carrier
   derivation gaps named in the prior Planck-lane lane-status work
   (parent-source hidden-character delta, substrate-to-carrier forcing,
@@ -122,7 +122,7 @@ constitute a **path-opening** for the Planck-from-structure target:
 ## The conditional path to zero conventional anchors
 
 Under the framework's existing physical `Cl(3)` on `Z^3` baseline
-([`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)), import categories on the
+([`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)), import categories on the
 prior surface were:
 
 | Category | Pre-round count | Description |
@@ -287,7 +287,7 @@ record at all.
 
 ### Foundational
 
-- Minimal axiom surface: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Minimal axiom surface: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - Physical-lattice narrowed no-go: [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md)
 - Physical-lattice foundational interpretation: [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 - Substep-4 AC narrowing: [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)

@@ -455,7 +455,7 @@ This source-note explicitly does **not** claim:
    observational-hierarchy pairing) are not addressed here.
 4. A new axiom. The probe respects A1 (`Cl(3)`) + A2 (`Z^3`) as the
    only mathematical axioms (per
-   [MINIMAL_AXIOMS_2026-05-03.md](MINIMAL_AXIOMS_2026-05-03.md)).
+   [MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md)).
 5. A modification of the retained
    [NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md](NEUTRINO_RETAINED_OBSERVABLE_BOUNDS_THEOREM_NOTE_2026-04-24.md)
    inequality bounds (`Sigma m_nu > 50.58 meV`, `m_beta <= 50.58 meV`,
@@ -512,18 +512,18 @@ inputs:
   — `U_e = I` on `hw=1`.
 - [BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md](BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md)
   — name convention BAE.
-- [MINIMAL_AXIOMS_2026-05-03.md](MINIMAL_AXIOMS_2026-05-03.md) —
+- [MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md) —
   axiom set A1 + A2.
 
 ## Staggered-Dirac realization derivation target
 
-Per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md), this
+Per [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), this
 note depends on the **staggered-Dirac realization derivation target**,
 which is currently an open gate. The note's load-bearing claim defines
 or relies on the `hw=1` triplet, charged-lepton sector content, neutrino
 sector content, and the PMNS observable surface — all of which depend
 on the staggered-Dirac realization derivation target listed in
-`MINIMAL_AXIOMS_2026-05-03.md`. This admission is inherited from the
+`MINIMAL_AXIOMS_2026-05-20.md`. This admission is inherited from the
 parent retained inputs; no new fermionic admission is introduced by this
 probe.
 

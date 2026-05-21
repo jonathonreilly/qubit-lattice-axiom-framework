@@ -49,7 +49,7 @@ def main() -> int:
 
     section("Dependency packet exists")
     deps = [
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
         "docs/G_BARE_DERIVATION_NOTE.md",
         "docs/HIGGS_MASS_DERIVED_NOTE.md",
         "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",

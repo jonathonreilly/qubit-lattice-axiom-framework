@@ -61,8 +61,8 @@ At `N_f = 6` (UV regime, above all SM thresholds): `β_0 = (33 - 12)/(12π) = 21
 
 | ID | Statement | Class |
 |---|---|---|
-| physical `Cl(3)` local algebra | baseline local algebra | framework baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
-| `Z^3` spatial substrate | baseline spatial substrate | framework baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| physical `Cl(3)` local algebra | baseline local algebra | framework baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
+| `Z^3` spatial substrate | baseline spatial substrate | framework baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | C_2(fund) | `C_2(fund) = (N²-1)/(2N) = 4/3` for SU(3) in Gell-Mann normalization (purely algebraic) | retained_bounded; [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) |
 | C_2(adj) | `C_2(adj) = N = 3` for SU(3) in Gell-Mann normalization (purely algebraic) | retained_bounded; [`SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md`](SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) |
 | T_F | `T_F = 1/2` from `Tr[T^a T^b] = (1/2) δ^{ab}` (Gell-Mann normalization) | retained_bounded; same upstream authority |
@@ -70,7 +70,7 @@ At `N_f = 6` (UV regime, above all SM thresholds): `β_0 = (33 - 12)/(12π) = 21
 | N_gen | `N_gen = 3` (retained three-generation matter structure) | retained; [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md) |
 | LO-Beta-Companion | `b_3 = (11 N_color − 2 N_quark)/3 = 7` (SU(3) 1-loop β coefficient inline companion form via S1 + retained Casimirs) | retained inline; [`SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md`](SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md) (P6, T6) |
 | Color-bridge | physical-color bridge identifying SU(3)_c adjoint modes with physical gluons; framework gauge coupling with QCD `g_s` | **`audited_conditional`** — explicit "Conditional extension" carve-out in [`SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md`](SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md) Section "Conditional extension" |
-| StagDirac | staggered-Dirac realization gate (open: `MINIMAL_AXIOMS_2026-05-03.md` lists this as open derivation target) | open gate; [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) |
+| StagDirac | staggered-Dirac realization gate (open: `MINIMAL_AXIOMS_2026-05-20.md` lists this as open derivation target) | open gate; [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) |
 | g_bare | `g_bare = 1` derivation gate (open) | open gate; [`G_BARE_DERIVATION_NOTE.md`](G_BARE_DERIVATION_NOTE.md) |
 | QCDLow | retained QCD low-energy running bridge (bounded; explicit non-claim that beta-function coefficients are derived independently) | bounded; [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) |
 
@@ -294,7 +294,7 @@ The verdict for L3 + L4 is therefore **structural obstruction**: the matching th
 
 ### Framework axioms and open gates
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) — physical `Cl(3)` local algebra plus `Z^3` spatial substrate baseline (legacy aliases `A1`/`A2`); staggered-Dirac realization and g_bare = 1 listed as open gates
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — physical `Cl(3)` local algebra plus `Z^3` spatial substrate baseline (legacy aliases `A1`/`A2`); staggered-Dirac realization and g_bare = 1 listed as open gates
 - [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) — staggered-Dirac realization gate evidence
 - [`G_BARE_DERIVATION_NOTE.md`](G_BARE_DERIVATION_NOTE.md) — g_bare = 1 derivation gate
 

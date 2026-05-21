@@ -487,7 +487,7 @@ single-particle state at site `x`. ∎
   ordering.
 - Does **not** depend on, derive, or use any new framework axiom
   beyond the physical Cl(3) local algebra plus Z^3 spatial substrate
-  baseline recorded in `MINIMAL_AXIOMS_2026-05-03.md`.
+  baseline recorded in `MINIMAL_AXIOMS_2026-05-20.md`.
 - Does **not** claim the JW representation is the **unique**
   cross-site CAR realization on `H_Λ`. Different total orderings
   `π` produce different but unitarily-equivalent CAR representations;
@@ -630,7 +630,7 @@ edges:
   on the framework's tensor-product fermion construction, a_x and
   a_y commute on disjoint factors." This bridge note supplies the
   missing JW-phase correction.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — framework baseline memo for the physical Cl(3) local algebra
   and `Z^3` spatial substrate; the narrow theorem does not consume
   its effective status.

@@ -32,7 +32,7 @@ A subsequent positive route through the action source domain
 selects `P_A` from the support of the link-local first variation. That
 route is conditional on accepting the staggered-Dirac/Grassmann action source
 domain as substrate content — which is currently an open gate per
-[MINIMAL_AXIOMS_2026-05-03.md](./MINIMAL_AXIOMS_2026-05-03.md).
+[MINIMAL_AXIOMS_2026-05-20.md](./MINIMAL_AXIOMS_2026-05-20.md).
 
 This note records an **independent** positive route through a different
 cited support surface: **reflection positivity** as recorded by the axiom-first
@@ -85,7 +85,7 @@ This note does NOT use:
 
 The proof uses these cited framework inputs:
 
-- [MINIMAL_AXIOMS_2026-05-03.md](./MINIMAL_AXIOMS_2026-05-03.md):
+- [MINIMAL_AXIOMS_2026-05-20.md](./MINIMAL_AXIOMS_2026-05-20.md):
   physical `Cl(3)` local algebra and `Z^3` spatial substrate baseline.
 - [AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md](./AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md):
   the cited RP support theorem on the canonical action surface.
@@ -398,7 +398,7 @@ with PASS=8 and FAIL=0 if the bounded theorem holds.
 
 ## Citations
 
-- A_min: [MINIMAL_AXIOMS_2026-05-03.md](./MINIMAL_AXIOMS_2026-05-03.md)
+- A_min: [MINIMAL_AXIOMS_2026-05-20.md](./MINIMAL_AXIOMS_2026-05-20.md)
 - parent RP support theorem:
   [AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md](./AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
 - Clifford structure on the primitive cell:

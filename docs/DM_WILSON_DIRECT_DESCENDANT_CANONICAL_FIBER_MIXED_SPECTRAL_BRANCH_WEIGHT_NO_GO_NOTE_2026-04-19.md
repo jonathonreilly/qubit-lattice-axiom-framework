@@ -291,7 +291,7 @@ upstream canonical-fiber rows are visible.
 | Upstream one-hop dep — local Schur branch-discriminant theorem | [`docs/DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_BRANCH_DISCRIMINANT_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_BRANCH_DISCRIMINANT_THEOREM_NOTE_2026-04-19.md) | `audited_conditional` | supplies the exact local branch-discriminant scalar `Delta_src(H_e) = det(H_e(L_e))` used as the second ingredient in the mixed family |
 | Upstream one-hop dep — local observable-coordinate theorem | [`docs/DM_WILSON_DIRECT_DESCENDANT_LOCAL_OBSERVABLE_COORDINATE_THEOREM_NOTE_2026-04-19.md`](DM_WILSON_DIRECT_DESCENDANT_LOCAL_OBSERVABLE_COORDINATE_THEOREM_NOTE_2026-04-19.md) | `audited_conditional` | supplies the right-sensitive even-response observables `(E1, E2)` used in Theorems 2-3 |
 | Sibling no-go — constructive positive closure manifold theorem | [`docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MANIFOLD_THEOREM_NOTE_2026-04-18.md`](DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MANIFOLD_THEOREM_NOTE_2026-04-18.md) | `audited_conditional` (PR #718 landing) | sibling on the dm_wilson direct-descendant lane; same pattern of leaf no-go conditional on upstream canonical-fiber retention |
-| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | repo-baseline terminology anchor for the dm_wilson direct-descendant lane |
+| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` | repo-baseline terminology anchor for the dm_wilson direct-descendant lane |
 
 The audit-stated repair path (verbatim from the audit
 `notes_for_re_audit_if_any`) is to **audit or repair the listed

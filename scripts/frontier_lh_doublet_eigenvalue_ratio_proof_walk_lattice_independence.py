@@ -62,7 +62,7 @@ def check_note_structure() -> None:
         "GRAPH_FIRST_SU3_INTEGRATION_NOTE",
         "GRAPH_FIRST_SELECTOR_DERIVATION_NOTE",
         "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03",
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
         "tracelessness",
         "exact rational arithmetic",
         "1 : (-3)",
@@ -90,7 +90,7 @@ def check_dependencies_exist() -> None:
         "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
         "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in deps:
         check(f"dependency exists: {rel}", (ROOT / rel).exists())

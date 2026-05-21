@@ -61,7 +61,7 @@ appropriate phase adjustment for general `(p, q)`) satisfies (4)-(5).
 total Clifford algebra is `Cl(d_s, d_t)` with `d_s` and `d_t` the
 spatial and temporal generator counts, then existence of an internal
 chirality involution requires `d_s + d_t` to be even. When axiom A2 of
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) fixes the
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) fixes the
 spatial substrate to `Z^3` and hence `d_s = 3`, the existence of an
 internal chirality involution forces `d_t` to be **odd**:
 
@@ -183,12 +183,12 @@ chirality involution requires `d_s + d_t` even (by T2 applied to
 ## Hypothesis set used
 
 - **A1 (`Cl(3)` local algebra)** of
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md): supplies
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md): supplies
   the Clifford-algebra ambient setting. The narrow theorem is stated
   abstractly for any `Cl(p, q)` over `C`; the framework specialisation
   in (T3) consumes A1 only via the parity argument.
 - **A2 (`Z^3` spatial substrate)** of
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md): supplies
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md): supplies
   `d_s = 3`, the only place the framework restricts the spatial
   Clifford-generator count.
 
@@ -258,7 +258,7 @@ no longer load-bears on the cycle-completing edges through
 
 | Authority | Effective status | Role |
 |---|---|---|
-| [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | meta | supplies axioms A1 (`Cl(3)`) and A2 (`Z^3`) |
+| [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | meta | supplies axioms A1 (`Cl(3)`) and A2 (`Z^3`) |
 
 No other authorities are cited as load-bearing.
 
@@ -301,7 +301,7 @@ values, no physical constants.
 - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` —
   sister theorem on the unique `Cl(3)` per-site representation;
   not load-bearing here.
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) —
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) —
   framework axiom-set authority (only load-bearing dependency).
 
 ## References

@@ -159,7 +159,7 @@ authority chain currently stands as follows.
 | Frozen log of mechanism diagnostic readouts | `logs/2026-04-01-b-independence-mechanism.txt` (cited in §"What the diagnostics say") | preserved log path; not pinned as one-hop audit edge | one-hop dependency edge in audit graph |
 | Underlying retained distance-law closure (e.g., `distance_law_3d_64_closure_note_2026-04-11`, `lattice_nn_distance_law_note`, `distance_law_definitive_note`) | adjacent retained / numerical-match notes | retained (`audited_clean` / `audited_numerical_match`) | one-hop dependency edges in audit graph |
 | Underlying modular-family generator | retained graph-family surface (cited at lane level, not pinned here) | not yet wired as one-hop edge on this row | one-hop dependency edge or self-contained derivation |
-| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | framework-baseline anchor for the linear path-sum architecture |
+| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` | framework-baseline anchor for the linear path-sum architecture |
 
 The audit-stated repair path (verbatim from
 `audit_ledger.json/notes_for_re_audit_if_any`) is to **add explicit

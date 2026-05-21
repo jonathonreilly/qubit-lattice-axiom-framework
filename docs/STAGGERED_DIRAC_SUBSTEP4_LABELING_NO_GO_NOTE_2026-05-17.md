@@ -63,7 +63,7 @@ listed in the substep-4 AC narrowing note).
 
 | ID | Statement | Class |
 |---|---|---|
-| physical Cl(3) local algebra | Cl(3) local algebra | repo baseline surface (see `MINIMAL_AXIOMS_2026-05-03.md`) |
+| physical Cl(3) local algebra | Cl(3) local algebra | repo baseline surface (see `MINIMAL_AXIOMS_2026-05-20.md`) |
 | Z^3 spatial substrate | Z³ spatial substrate | repo baseline surface |
 | Substep 1 | Grassmann-forcing on lattice fermion sector | upstream candidate (see `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`) |
 | Substep 2 | Kawamoto-Smit phase form on Z³ APBC | upstream candidate (see `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`) |
@@ -345,7 +345,7 @@ forbidden_imports_used: false
 - No-proper-quotient: [`THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md`](THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02.md)
 - Three-generation observable: [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 - Physical-lattice foundational baseline: `PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`
-- Minimal axioms: `MINIMAL_AXIOMS_2026-05-03.md`
+- Minimal axioms: `MINIMAL_AXIOMS_2026-05-20.md`
 
 ## 11. User-memory feedback rules respected
 

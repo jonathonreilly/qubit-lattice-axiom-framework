@@ -109,7 +109,7 @@ ingredients (a), (b), (c) per P-L1-D §3.
 
 | ID | Statement | Class |
 |---|---|---|
-| Cl3Local | Physical `Cl(3)` local algebra | repo baseline; see [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| Cl3Local | Physical `Cl(3)` local algebra | repo baseline; see [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | Z3Substrate | Physical `Z³` spatial substrate | repo baseline; same source |
 | beta_0 | `beta_0 = (11 N_c − 2 N_f) / 3 = 7` at `N_c = 3, N_f = 6` | source dependency; retained universal |
 | beta_1 | `beta_1 = (34/3) C_A² − (20/3) C_A T_F N_f − 4 C_F T_F N_f = 26` at SU(3), N_f=6 | source dependency; retained via quadratic Casimirs |
@@ -521,7 +521,7 @@ audit_required_before_effective_status_change: true
 
 ### Structural baseline
 
-- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - SU(3) NLO closure (heat-kernel plaquette): [`C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md`](C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md)
 - QCD low-energy running bridge: [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
 

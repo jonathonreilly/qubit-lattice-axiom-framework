@@ -37,7 +37,7 @@ is consistent with A1.
 
 | ID | Statement | Class |
 |---|---|---|
-| A1 | Local algebra is `Cl(3)` per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | retained axiom |
+| A1 | Local algebra is `Cl(3)` per [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | retained axiom |
 | A2 | `Z^3` spatial substrate | retained axiom |
 | U2 | Cl(3) per-site uniqueness (chirality-aware): exactly two non-isomorphic complex spinor irreps, each dim 2 | retained per [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) |
 | U4 | Per-site Hilbert dim = 2 (chirality-independent) | retained per [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md) |

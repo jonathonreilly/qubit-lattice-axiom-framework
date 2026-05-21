@@ -154,7 +154,7 @@ def part1_note_structure():
         ("split-note framing per 2026-05-10 verdict",
          "split note for the pure trace identity"),
         ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+         "MINIMAL_AXIOMS_2026-05-20"),
         ("explicit not-claimed: parent's bookkeeping consequence",
          "claim the parent note's bookkeeping consequence"),
         ("explicit not-claimed: parent's four admitted hypotheses",
@@ -211,7 +211,7 @@ def part3_cited_upstreams():
     section("Part 3: cited upstreams (all on origin/main)")
     must_exist = [
         "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())

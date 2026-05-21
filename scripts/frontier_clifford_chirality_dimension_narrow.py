@@ -32,7 +32,7 @@ This is class-A pure linear/Clifford algebra. No SM gauge content, no
 anomaly trace, no temporal direction, no single-clock evolution
 hypothesis is consumed. The narrow theorem's only structural input is
 that the framework's spatial substrate is `Z^d_s` with `d_s = 3` (axiom
-A2 of `MINIMAL_AXIOMS_2026-05-03`), so that the per-generator count for
+A2 of `MINIMAL_AXIOMS_2026-05-20`), so that the per-generator count for
 the spatial Clifford algebra is exactly 3. The result is stated for
 abstract `(d_s, d_t)` and specialised to `d_s = 3` only at the end.
 

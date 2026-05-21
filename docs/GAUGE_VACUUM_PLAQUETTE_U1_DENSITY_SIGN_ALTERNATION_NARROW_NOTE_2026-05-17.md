@@ -289,7 +289,7 @@ sign-alternation persists numerically to order 100.
   (companion lemma note BA-1 — BA-4 supplies (B1); B2 and B3 are
   textbook Bessel calculus not requiring an additional framework
   admission),
-- `MINIMAL_AXIOMS_2026-05-03.md` (physical `Cl(3)` local algebra and
+- `MINIMAL_AXIOMS_2026-05-20.md` (physical `Cl(3)` local algebra and
   `Z^3` spatial-substrate baseline).
 
 The directional graph is parent obstruction → companion lemmas → this

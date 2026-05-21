@@ -185,7 +185,7 @@ def part1_note_structure():
         ("parent obstruction note cited",
          "GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md"),
         ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+         "MINIMAL_AXIOMS_2026-05-20"),
         ("note explicitly does NOT close parent statement",
          "close the parent infinite-hierarchy obstruction theorem to retained"),
     ]
@@ -237,7 +237,7 @@ def part3_cited_upstreams():
     must_exist = [
         "docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md",
         "docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())

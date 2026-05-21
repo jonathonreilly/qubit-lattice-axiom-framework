@@ -249,7 +249,7 @@ cycles per
 Path 2 requires inlining the runner-defined grown-graph construction
 (currently sourced from `scripts.gate_b_grown_joint_package.grow`) plus
 a closure proof from `Cl(3)` on `Z^3` per the framework's minimal
-axioms (see [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)).
+axioms (see [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)).
 The geometry is a parameterised growth model, not a single-identity
 construction; reproducing it inline with closure proof is comparable in
 scope to landing the upstream `gate_b_grown_joint_package_note` itself

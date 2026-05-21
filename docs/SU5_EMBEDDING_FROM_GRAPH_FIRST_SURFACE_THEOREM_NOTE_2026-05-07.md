@@ -5,7 +5,7 @@
 **Admitted context inputs:** staggered-Dirac realization derivation target
 (canonical parent:
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`;
-see `MINIMAL_AXIOMS_2026-05-03.md`).
+see `MINIMAL_AXIOMS_2026-05-20.md`).
 **Status:** structural representation-theory / algebraic embedding-consistency
 theorem on the current graph-first SU(3) × SU(2) × U(1)_Y surface plus the
 LHCM atlas (cycles 1-3) and STANDARD_MODEL_HYPERCHARGE_UNIQUENESS. Conditional
@@ -138,7 +138,7 @@ surface.
 - **Does not close the staggered-Dirac open gate.** The matter content is
   imported from LHCM atlas + STANDARD_MODEL_HYPERCHARGE_UNIQUENESS, both of
   which depend on the staggered-Dirac realization derivation target listed
-  in `MINIMAL_AXIOMS_2026-05-03.md`. This theorem inherits that admission
+  in `MINIMAL_AXIOMS_2026-05-20.md`. This theorem inherits that admission
   via `admitted_context_inputs`.
 
 ## 3. Declared Inputs
@@ -375,7 +375,7 @@ proposal_allowed: false
 proposal_allowed_reason: |
   Conditional on LHCM atlas (cycles 1-3, currently bounded via the
   staggered-Dirac realization derivation target per
-  MINIMAL_AXIOMS_2026-05-03.md), STANDARD_MODEL_HYPERCHARGE_UNIQUENESS
+  MINIMAL_AXIOMS_2026-05-20.md), STANDARD_MODEL_HYPERCHARGE_UNIQUENESS
   (unaudited), and HYPERCHARGE_SQUARED_TRACE_CATALOG (unaudited).
   The theorem itself is exact algebra on Fraction-precision; runner verifies
   all 16 chirality slot assignments and the Tr[Y_GUT²] = Tr[T_a²] = 2
@@ -452,6 +452,6 @@ exact arithmetic). It checks:
   — graph-first SU(3) commutant
 - [`THREE_GENERATION_STRUCTURE_NOTE.md`](THREE_GENERATION_STRUCTURE_NOTE.md)
   — three-generation orbit algebra
-- `MINIMAL_AXIOMS_2026-05-03.md` — current
+- `MINIMAL_AXIOMS_2026-05-20.md` — current
   axiom set + open gates (staggered-Dirac realization derivation target)
 - Standard references: Georgi–Glashow (1974), Slansky (1981) tables.

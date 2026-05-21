@@ -241,7 +241,7 @@ def t6_M2_wick_rotation_Z3_Z4() -> bool:
     print("=" * 72)
     print("T6: obstruction (M2) — Wick rotation Z^3 -> Z^4 (same P2 primitive)")
     print("=" * 72)
-    print("  Framework spatial substrate: Z^3 (MINIMAL_AXIOMS_2026-05-03)")
+    print("  Framework spatial substrate: Z^3 (MINIMAL_AXIOMS_2026-05-20)")
     print("  Itou-Iritani lattice meron:  Z^4 (4D torus T^4 with twisted BC)")
     print()
     # Z^3 vs Z^4 lattice points enumeration

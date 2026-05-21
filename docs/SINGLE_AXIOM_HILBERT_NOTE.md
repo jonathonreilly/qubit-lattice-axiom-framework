@@ -88,7 +88,7 @@ consequences`, evaluated mechanically by the runner.
 - [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) — the
   load-bearing accepted-input ledger for the current paper package
   (`Cl(3)` on `Z^3`). Cited as the non-superseded framework surface.
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) —
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) —
   refreshed minimal-axioms surface. Cited as related, not as
   authority closure for the local-Hamiltonian or Born-readout inputs
   imported above.

@@ -137,7 +137,7 @@ this row currently stands as follows.
 | Adjacent retained Poisson resource sweep | [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md) | `unaudited` (bounded_theorem) | adjacent diagnostic; not a substitute for the missing bridge theorem |
 | Adjacent retained resource fidelity note | [`TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`](TELEPORTATION_RESOURCE_FIDELITY_NOTE.md) | `audited_clean` (bounded_theorem) | bounded fidelity protocol; not a derivation of last-taste-bit selection |
 | Adjacent retained measurement-record / apparatus-dynamics-closure | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md), [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | `audited_clean` (bounded_theorem) | adjacent bounded results; do not select the last taste bit as native carrier |
-| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | the repository axiom from which native preparation/readout must derive |
+| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` | the repository axiom from which native preparation/readout must derive |
 
 The audit-stated repair path (verbatim from
 `audit_ledger.json/notes_for_re_audit_if_any`) is to **prove the

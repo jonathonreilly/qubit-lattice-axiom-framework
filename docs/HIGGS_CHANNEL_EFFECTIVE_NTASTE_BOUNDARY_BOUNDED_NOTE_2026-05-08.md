@@ -126,7 +126,7 @@ it.
   `(1, 4, 6, 4, 1)` multiplicities and `(0, 2r, 4r, 6r, 8r)` Wilson
   shifts on the 16 BZ corners of `Z^3 + t` APBC at `L = 2`).
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  and `MINIMAL_AXIOMS_2026-05-03.md`
+  and `MINIMAL_AXIOMS_2026-05-20.md`
   for the open realization-gate context that this note does not close.
 
 These are imported authorities for a bounded theorem. The row remains

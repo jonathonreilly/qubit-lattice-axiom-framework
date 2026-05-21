@@ -311,7 +311,7 @@ expansion of log). No new physical admissions.
   input chain"; this note quantitatively confirms the gap.
 
 ### Framework axioms / structural
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)
   — Klein-four orbit selection of L_t = 4.
 

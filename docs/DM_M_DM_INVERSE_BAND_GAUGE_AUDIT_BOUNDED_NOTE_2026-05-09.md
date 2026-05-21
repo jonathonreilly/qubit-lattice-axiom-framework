@@ -174,7 +174,7 @@ as input bounds tighten.
 - [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
   for the EW hierarchy compression `(7/8)^(1/4) · alpha_LM^16`
   generating `v` from `M_Pl`.
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   for the repo baseline physical `Cl(3)` local algebra and `Z^3`
   spatial substrate.
 

@@ -583,7 +583,7 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===` (achieved: PASS=31).
   — SU(3) NNLO/N5LO Wilson coefficients and C-iso discrepancy series.
 - [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
   — `<P>`, `u_0`, `α_bare`, `α_LM`, `α_s(v)` provenance.
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   — physical `Cl(3)` local algebra plus `Z^3` spatial substrate
   baseline (legacy aliases `A1`/`A2`).
 - [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
@@ -599,7 +599,7 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===` (achieved: PASS=31).
 
 Load-bearing for Step 1 (expanded inventory enumeration):
 
-1. `MINIMAL_AXIOMS_2026-05-03.md` (physical `Cl(3)` local algebra
+1. `MINIMAL_AXIOMS_2026-05-20.md` (physical `Cl(3)` local algebra
    plus `Z^3` spatial substrate baseline; legacy aliases `A1`/`A2`);
 2. `COMPLETE_PREDICTION_CHAIN_2026_04_15.md` (`<P>`, `u_0`, `α_bare`,
    `α_LM`, `α_s(v)`, β coefficients, hierarchy theorem);

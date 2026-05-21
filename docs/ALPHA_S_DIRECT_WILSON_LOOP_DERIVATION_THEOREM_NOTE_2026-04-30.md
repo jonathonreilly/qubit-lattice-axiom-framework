@@ -69,7 +69,7 @@ potential route, not the existing coupling-definition chain.
    [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
    and the `g_bare = 1` canonical-normalization input.  As of 2026-05-03 the
    current canonical framework-baseline memo is
-   [MINIMAL_AXIOMS_2026-05-03.md](MINIMAL_AXIOMS_2026-05-03.md), which
+   [MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md), which
    explicitly supersedes the 2026-04-11 file (the 2026-04-15 rewrite that
    added staggered-Dirac, physical-lattice, and `g_bare = 1 / u_0 / APBC`
    as additional axioms has been backed out, and `g_bare = 1` is now an open
@@ -482,7 +482,7 @@ current ledger status, so the conditional perimeter is explicit.
 | Cited authority | Note | Effective status (2026-05-10) | Conditional on |
 |---|---|---|---|
 | Graph-first `SU(3)` gauge surface | [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) | `retained_bounded` | none in this row's perimeter |
-| Physical `Cl(3)` local algebra and `Z^3` spatial substrate baseline | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `meta` | canonical framework-baseline memo; this row does not turn the meta note into a retained-grade dependency |
+| Physical `Cl(3)` local algebra and `Z^3` spatial substrate baseline | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `meta` | canonical framework-baseline memo; this row does not turn the meta note into a retained-grade dependency |
 | Earlier (superseded) baseline memo | [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md) | `meta` (superseded by 2026-05-03) | not retained-grade authority; cited as historical anchor only |
 | Wilson action at `beta = 6` and `g_bare = 1` | inline in this note | conditional on the audit-flagged `g_bare` open-gate status (2026-05-03 minimal-axioms restoration moved `g_bare = 1` from axiom-like language to open gate) | `g_bare` open-gate closure |
 | Sommer scale `r_0 = 0.5 fm` | external (Sommer 1993, FLAG 2021) | external admitted-context | retained bridge theorem from the framework's lattice scale to physical units |
@@ -509,7 +509,7 @@ audit-stated repair path is two-pronged:
 
 1. **Replace the superseded minimal-axioms citation.** Update internal
    references so the live canonical framework-baseline anchor is
-   [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md). This
+   [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md). This
    rigorization edit performs that update in the methodology section
    while preserving the historical 2026-04-11 anchor as a cross-reference
    for the 2026-04-30 certificate. The successor minimal-axioms note

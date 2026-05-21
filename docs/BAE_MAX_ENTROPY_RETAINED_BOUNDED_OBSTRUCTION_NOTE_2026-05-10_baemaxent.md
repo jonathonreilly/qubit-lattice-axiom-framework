@@ -36,7 +36,7 @@ lane has full authority to retag, narrow, or reject the proposal.
 
 - **physical `Cl(3)` local algebra** (legacy minimal-axiom alias:
   `A1`) = the repo's retained local algebra baseline per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - **"BAE-condition" (Brannen Amplitude Equipartition)** = the
   amplitude-ratio constraint `|b|²/a² = 1/2` for the
   `C_3`-equivariant Hermitian circulant `H = aI + bC + b̄C²` on
@@ -98,7 +98,7 @@ canonical max-ent measure. The BAE admission count is UNCHANGED.
 
 | ID | Statement | Class |
 |---|---|---|
-| Cl3 | physical `Cl(3)` local algebra | repo baseline; legacy alias `A1` in [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| Cl3 | physical `Cl(3)` local algebra | repo baseline; legacy alias `A1` in [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | Z3 | `Z³` spatial substrate | repo baseline; legacy alias `A2` in the same source |
 | PhysLat | physical-lattice baseline (Cl(3) on Z^3 is physical, not regulator) | repo baseline; see [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md) |
 | ConvUnif | labeling and unit conventions are convention bookkeeping | repo baseline; see [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md) |
@@ -433,7 +433,7 @@ from BAE", consistent with Probes 25, 28, 29.
 ## Cross-references
 
 ### Foundational baseline
-- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - Physical-lattice baseline: [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 - Conventions unification: [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md)
 - C_3 symmetry preserved: [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md)

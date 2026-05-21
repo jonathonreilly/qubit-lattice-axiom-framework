@@ -176,7 +176,7 @@ proposed.
 
 | ID | Statement | Class |
 |---|---|---|
-| physical Cl(3) local algebra | `Cl(3)` local algebra | repo baseline; see `MINIMAL_AXIOMS_2026-05-03.md` |
+| physical Cl(3) local algebra | `Cl(3)` local algebra | repo baseline; see `MINIMAL_AXIOMS_2026-05-20.md` |
 | Z^3 spatial substrate | `Z^3` spatial substrate | repo baseline; same source |
 | Cl3Pauli | Cl(3) Pauli irrep `e_i = sigma_i` on dim-2 spinor space `C^2` | retained_bounded; see [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) |
 | Cl3Dim2 | `dim_C V = 2` for any faithful irrep of Cl(3) | retained; see [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md) |

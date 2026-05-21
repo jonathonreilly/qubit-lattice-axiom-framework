@@ -158,7 +158,7 @@ matching the structural identity `60 / 12 = 5`.
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   for the staggered-Dirac realization gate context; this note inherits
   the gate's open-derivation status without closing it.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   for the framework axioms `A1` (`Cl(3)`) and `A2` (`Z^3`).
 
 These are imported authorities for a bounded theorem. The row remains

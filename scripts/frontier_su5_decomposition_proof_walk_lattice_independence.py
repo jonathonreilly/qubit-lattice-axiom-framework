@@ -60,7 +60,7 @@ def check_note_structure() -> None:
         "SU5_EMBEDDING_FROM_GRAPH_FIRST_SURFACE_THEOREM_NOTE_2026-05-07",
         "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24",
         "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03",
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
         "Schur lemma",
         "antisymmetric tensor decomposition",
     ]
@@ -92,7 +92,7 @@ def check_dependencies_exist() -> None:
         "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
         "docs/FULL_Y_SQUARED_TRACE_SU5_GUT_NOTE_2026-05-02.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in deps:
         check(f"dependency exists: {rel}", (ROOT / rel).exists())

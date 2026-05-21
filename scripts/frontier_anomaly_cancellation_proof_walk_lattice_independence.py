@@ -74,7 +74,7 @@ def check_note_structure() -> None:
         "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24",
         "HYPERCHARGE_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-07",
         "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03",
-        "MINIMAL_AXIOMS_2026-05-03",
+        "MINIMAL_AXIOMS_2026-05-20",
         "(E1)",
         "(E2)",
         "(E3)",
@@ -106,7 +106,7 @@ def check_dependencies_exist() -> None:
         "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
         "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in deps:
         check(f"dependency exists: {rel}", (ROOT / rel).exists())

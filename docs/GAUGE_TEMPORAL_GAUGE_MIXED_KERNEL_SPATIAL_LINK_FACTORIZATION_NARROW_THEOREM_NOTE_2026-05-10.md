@@ -272,7 +272,7 @@ trivial-channel scalar `prod_{(x,mu)} c_0(beta)` yields `(10)`. ∎
   comparator, fitted selector, or admitted unit convention.
 - Does **not** consume the staggered-Dirac realization axiom or the
   `g_bare = 1` gauge-normalization axiom from
-  `MINIMAL_AXIOMS_2026-05-03.md`. The temporal-gauge factorization is a
+  `MINIMAL_AXIOMS_2026-05-20.md`. The temporal-gauge factorization is a
   fact of the gauge action structure plus compact-group Haar measure; it
   does not invoke any fermion or gauge-normalization gate.
 

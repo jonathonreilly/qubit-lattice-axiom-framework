@@ -25,7 +25,7 @@ chain, and runner.
 
 In this note:
 - **"framework axiom A1"** = retained `Cl(3)` local-algebra axiom per
-  `MINIMAL_AXIOMS_2026-05-03.md`.
+  `MINIMAL_AXIOMS_2026-05-20.md`.
 - **"BAE"** = Brannen Amplitude Equipartition condition `|b|^2 / a^2 = 1/2`
   for the `C_3`-equivariant Hermitian circulant `H = aI + bC + b̄C²` on
   `hw=1 ≅ ℂ³`. Historically labeled "A1-condition" prior to the
@@ -36,7 +36,7 @@ In this note:
 **No new axioms. No external imports. No PDG observed values consumed.**
 This probe operates strictly within the retained framework using only:
 
-- `MINIMAL_AXIOMS_2026-05-03.md` (A1 = `Cl(3)`, A2 = `Z^3`).
+- `MINIMAL_AXIOMS_2026-05-20.md` (A1 = `Cl(3)`, A2 = `Z^3`).
 - `KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md`
   in-scope content: the Clifford-trace algebra `Tr(T_m^2) = 3`,
   `Tr(T_m^3) = 1`, fixing `g_2 = 3/2` and `g_3 = 1/6`. The broader
@@ -259,7 +259,7 @@ The residue therefore is NOT a consequence of:
 ## Cross-references
 
 - **Foundational notes:**
-  `MINIMAL_AXIOMS_2026-05-03.md`,
+  `MINIMAL_AXIOMS_2026-05-20.md`,
   [`KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md`](KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md)
   (in-scope `V(m)` content; out-of-scope mass-tower claim).
 - **Algebraic backbone:**

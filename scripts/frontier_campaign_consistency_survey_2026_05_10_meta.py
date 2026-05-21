@@ -66,7 +66,7 @@ def main() -> int:
             "A1+A2 preserved",
             check_present(
                 text,
-                "MINIMAL_AXIOMS_2026-05-03",
+                "MINIMAL_AXIOMS_2026-05-20",
                 "**A1** Local algebra `Cl(3)`",
                 "**A2** Spatial substrate `Z³`",
             ),

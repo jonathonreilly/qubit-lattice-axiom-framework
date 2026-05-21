@@ -144,7 +144,7 @@ authority. Its scope is the dim-matching forcing layer.
 
 | ID | Statement | Class |
 |---|---|---|
-| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| BASE-CL3 | Physical `Cl(3)` local algebra | repo baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | BASE-Z3 | `Z^3` spatial substrate | repo baseline; same source |
 | Cl3-Basis | `Cl(3,0)` real-algebra basis: `{1, γ_1, γ_2, γ_3, γ_1γ_2, γ_1γ_3, γ_2γ_3, γ_1γ_2γ_3}` (8 elements) | upstream support; [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) Step 1 |
 | Cl3-Grading | `Cl(3) = Cl(3)_0 ⊕ Cl(3)_1 = (1 ⊕ 3) ⊕ (3 ⊕ 1)` graded by parity (scalar+bivectors / vectors+pseudoscalar) | upstream support; same source, with even subalgebra `Cl⁺(3) ≅ H` per [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md) Section A |
@@ -672,7 +672,7 @@ load_bearing_step_class: bounded_theorem  # rigid forcing modulo named bridge
 
 ### Repo baseline / meta
 
-- `MINIMAL_AXIOMS_2026-05-03.md` — physical `Cl(3)` local algebra and `Z^3` spatial substrate baseline
+- `MINIMAL_AXIOMS_2026-05-20.md` — physical `Cl(3)` local algebra and `Z^3` spatial substrate baseline
 - `PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`
 
 ### Substrate-anomaly context

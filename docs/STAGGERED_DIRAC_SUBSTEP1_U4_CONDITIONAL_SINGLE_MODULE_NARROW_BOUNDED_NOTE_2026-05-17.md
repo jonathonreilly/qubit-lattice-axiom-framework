@@ -283,7 +283,7 @@ selects `k = 1` over `k ≥ 2`.
 - No lattice-action carrier (Wilson plaquette, staggered phases,
   per-site physical-Hilbert-space identification) load-bearing.
 - No new foundational premise beyond the physical Cl(3) local algebra and Z^3 spatial substrate
-  (Z^3 spatial substrate) of `MINIMAL_AXIOMS_2026-05-03.md`.
+  (Z^3 spatial substrate) of `MINIMAL_AXIOMS_2026-05-20.md`.
 
 ## 9. Open derivation gap
 
@@ -385,7 +385,7 @@ edges:
   — parent classification note (narrowed 2026-05-08 to U1-U3 algebraic
   content; U4 explicitly moved out of scope to the substep-1 gate
   chain) carrying the chirality choice as the package convention.
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
   — framework baseline memo for the physical Cl(3) local algebra and
   Z^3 spatial substrate; the narrow theorem does not consume its
   effective status.

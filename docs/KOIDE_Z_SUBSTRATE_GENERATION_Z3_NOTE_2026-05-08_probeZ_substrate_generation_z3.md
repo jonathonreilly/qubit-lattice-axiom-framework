@@ -31,7 +31,7 @@ This probe asks the dual question:
 
 The current repo support relevant to this question provides:
 
-1. **Z^3 spatial substrate** (per `MINIMAL_AXIOMS_2026-05-03.md`): the framework
+1. **Z^3 spatial substrate** (per `MINIMAL_AXIOMS_2026-05-20.md`): the framework
    is discrete in lattice (3-dimensional spatial substrate) and time.
 2. **BZ-corner structure** (per
    [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)):
@@ -99,7 +99,7 @@ substrate-forced within the cited support surface. Specifically:
    `C_d`-action of order `d`. The number 3 enters specifically because
    the framework baseline is `Z^3` as physical spatial substrate
    (lattice dimension `d = 3`,
-   per `MINIMAL_AXIOMS_2026-05-03.md`). The framework's lattice
+   per `MINIMAL_AXIOMS_2026-05-20.md`). The framework's lattice
    dimension equals the cyclic-group order, and the BZ-corner
    `hw = 1` count equals `C(d, 1) = d`.
 
@@ -132,7 +132,7 @@ to `PHYSICAL_LATTICE_NECESSITY_NOTE.md`.
 
 | ID | Statement | Class |
 |---|---|---|
-| Z3 | `Z^3` spatial substrate (3-dim spatial discrete carrier) | repo baseline per `MINIMAL_AXIOMS_2026-05-03.md` |
+| Z3 | `Z^3` spatial substrate (3-dim spatial discrete carrier) | repo baseline per `MINIMAL_AXIOMS_2026-05-20.md` |
 | BZ | BZ corners `{0,π}³` with `1+3+3+1` Hamming-weight partition | support from `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`, `THREE_GENERATION_STRUCTURE_NOTE.md` |
 | C3OP | `C_3[111]` cyclic operator on `H_{hw=1} ≅ ℂ³` | support from `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` |
 | FT | Fourier diagonalization with eigenvalues `{1, ω, ω²}` on `ℂ³` | support from `THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md` |
@@ -266,7 +266,7 @@ A counterfactual `Z^d × C_d` substrate (for arbitrary lattice dimension
 - `|C_d| = d` orbit count
 
 The framework baseline is `Z^3` (lattice dimension `d = 3`) per
-`MINIMAL_AXIOMS_2026-05-03.md`. Therefore the framework's
+`MINIMAL_AXIOMS_2026-05-20.md`. Therefore the framework's
 substrate-internal numbers are forced to:
 
 - `|hw = 1| = 3`
@@ -338,7 +338,7 @@ cross-check in Step 6 only notes that the observed value matches.
 
 ### Inputs (one-hop)
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) — `Z³` substrate
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — `Z³` substrate
 - [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) — `Z³` BZ corner structure
 - [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) — `M_3(ℂ)` on `hw=1`
 - [`THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md`](THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md) — `C_3` Fourier basis

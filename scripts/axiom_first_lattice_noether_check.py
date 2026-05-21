@@ -340,7 +340,7 @@ def main():
     print(" Loop: axiom-first-foundations, Cycle 5 / Route R5")
     print(" Exhibits the lattice Noether theorem (U(1) phase + (2Z)^d sublattice")
     print(" translation) on the admitted staggered/Grassmann carrier (open gate per")
-    print(" MINIMAL_AXIOMS_2026-05-03.md). Bounded theorem.")
+    print(" MINIMAL_AXIOMS_2026-05-20.md). Bounded theorem.")
     print(" 2026-05-03 review-loop: + E5 algebraic closure (5) -> (4) check")
     print(" 2026-05-10 gate-recategorization repair: + E6 direct (3) divergence check")
     print("=" * 72)

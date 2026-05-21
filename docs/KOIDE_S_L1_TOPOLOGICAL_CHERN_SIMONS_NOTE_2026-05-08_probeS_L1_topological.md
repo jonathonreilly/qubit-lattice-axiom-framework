@@ -344,7 +344,7 @@ implements:
 ## 5. Dependencies
 
 - Repo baseline: `physical Cl(3) local algebra` on the `Z^3 spatial
-  substrate` (per `MINIMAL_AXIOMS_2026-05-03.md`).
+  substrate` (per `MINIMAL_AXIOMS_2026-05-20.md`).
 - Bounded stress-test imports: Z³ → T³ via periodic BCs; CS-on-T³ for
   SU(3); Wilson loops; level shift `k → k+h^∨`. All standard
   topological QFT constructions and not repo axioms.

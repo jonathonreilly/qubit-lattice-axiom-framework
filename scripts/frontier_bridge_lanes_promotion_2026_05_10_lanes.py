@@ -124,7 +124,7 @@ LANE_ALPHA_S = {
         {"name": "l3a_trace_surface", "kind": "structural", "closed_by_w2_nlo": False,
          "note": "single L3a admission (matter-rep gate); sharpened by W2 trilogy but not closed"},
         {"name": "g_bare_canonical_normalization", "kind": "structural", "closed_by_w2_nlo": False,
-         "note": "g_bare=1 still open per MINIMAL_AXIOMS_2026-05-03; in-flight Hilbert-Schmidt rigidity route"},
+         "note": "g_bare=1 still open per MINIMAL_AXIOMS_2026-05-20; in-flight Hilbert-Schmidt rigidity route"},
     ],
     "verdict": "pending_partial",
     "verdict_reason": (
@@ -153,7 +153,7 @@ LANE_HIGGS = {
         {"name": "lattice_curvature_to_physical_m_h_v_squared_matching_theorem", "kind": "structural", "closed_by_w2_nlo": False,
          "note": "Nature-grade non-perturbative matching theorem; same-shape obstruction with cycles 5, 9, 11"},
         {"name": "n_taste_16_uniform_channel", "kind": "structural", "closed_by_w2_nlo": False,
-         "note": "depends on staggered-Dirac realization gate (open per MINIMAL_AXIOMS_2026-05-03)"},
+         "note": "depends on staggered-Dirac realization gate (open per MINIMAL_AXIOMS_2026-05-20)"},
         {"name": "v_ew_vev", "kind": "structural", "closed_by_w2_nlo": False,
          "note": "admitted from EW hierarchy theorem chain"},
         {"name": "u_0_plaquette_lattice_value", "kind": "engineering", "closed_by_w2_nlo": False,
@@ -593,7 +593,7 @@ def section_I_dep_files_exist() -> None:
         "C_ISO_SU3_NLO_CLOSURE_BOUNDED_NOTE_2026-05-08_su3nlo.md",
         "EXACT_TIER_PATH_INTEGRAL_BOUNDED_NOTE_2026-05-07_exact.md",
         "EXACT_TIER_EWITNESS_BOUNDED_NOTE_2026-05-07_ewitness.md",
-        "MINIMAL_AXIOMS_2026-05-03.md",
+        "MINIMAL_AXIOMS_2026-05-20.md",
         "G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md",
         "STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
     ]

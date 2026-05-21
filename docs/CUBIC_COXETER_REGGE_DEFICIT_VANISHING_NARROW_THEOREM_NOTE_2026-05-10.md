@@ -424,7 +424,7 @@ verifies (PASS=N/0):
   functional. This narrow note isolates the genuine cubic-Coxeter
   Regge content from that wording. Not consumed as a load-bearing
   dependency.
-- `MINIMAL_AXIOMS_2026-05-03` — fixes the `Z^3` substrate. The
+- `MINIMAL_AXIOMS_2026-05-20` — fixes the `Z^3` substrate. The
   cubic-Coxeter triangulation is the canonical body-diagonal simplicial
   subdivision of that substrate.
 - `OH_SCHUR_BOUNDARY_ACTION_NOTE` — parent's Schur DtN dependency. Not

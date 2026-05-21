@@ -43,7 +43,7 @@ clarification on top of already-retained structural content.
 
 - **physical `Cl(3)` local algebra** (legacy minimal-axiom alias:
   `A1`) = the repo's retained local algebra baseline per
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - **BAE** = Brannen Amplitude Equipartition: `|b|²/a² = 1/2` for the
   retained C_3-equivariant Hermitian circulant `H = aI + bC + b̄C²` on
   `hw=1 ≅ ℂ³` (per
@@ -261,7 +261,7 @@ is not a closure claim. Specifically:
 - **No new axiom.** The physical `Cl(3)` local algebra plus `Z^3`
   spatial substrate baseline (legacy aliases `A1`/`A2`) still suffice.
   The
-  [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) note
+  [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) note
   is unchanged.
 - **No retained theorem promoted.** Probe 24 Step 1 retained content
   (`φ_dimensionless = 2/9`) is unchanged. Probes 24 + 30 + the
@@ -381,7 +381,7 @@ It records, as repo-language clarification:
 - Radian-bridge irreducibility audit: [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
 - BAE rename pattern: [`BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md`](BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md)
 - Campaign terminal synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
-- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Minimal axioms: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - Substep-4 AC narrowing (PDG-input prohibition): [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
 
 ## Validation

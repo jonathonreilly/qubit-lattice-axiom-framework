@@ -44,7 +44,7 @@ The kinematic-primitive attack class is exhausted at 31+ vectors with high confi
 
 | ID | Statement | Class |
 |---|---|---|
-| A1 | Cl(3) local algebra | framework axiom; see `MINIMAL_AXIOMS_2026-05-03.md` |
+| A1 | Cl(3) local algebra | framework axiom; see `MINIMAL_AXIOMS_2026-05-20.md` |
 | A2 | Z³ spatial substrate | framework axiom |
 | R2_claim | Kinematic-primitive attack class exhausted (R2's source note) | upstream proposal: PR #709 / [`A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md`](A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md) |
 | KS | Kawamoto-Smit phase forcing on Z³ APBC | upstream bounded-theorem candidate: [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md) |
@@ -66,7 +66,7 @@ The kinematic-primitive attack class is exhausted at 31+ vectors with high confi
 
 **Verdict: CONFIRMS R2.**
 
-Framework's C_3[111] is defined as permutation of tensor positions on `C^8 = (C^2)^⊗3` (taste-cube level). The 3 components label spatial BZ corner momenta `(n_1, n_2, n_3)`. Per `MINIMAL_AXIOMS_2026-05-03.md`, only A1=Cl(3) and A2=Z³ are framework axioms; A2 is explicitly *spatial substrate*. Time emerges via single-clock reconstruction. No 4D rotation that would mix time+space is admissible under (S3) of single-clock theorem.
+Framework's C_3[111] is defined as permutation of tensor positions on `C^8 = (C^2)^⊗3` (taste-cube level). The 3 components label spatial BZ corner momenta `(n_1, n_2, n_3)`. Per `MINIMAL_AXIOMS_2026-05-20.md`, only A1=Cl(3) and A2=Z³ are framework axioms; A2 is explicitly *spatial substrate*. Time emerges via single-clock reconstruction. No 4D rotation that would mix time+space is admissible under (S3) of single-clock theorem.
 
 ### H2: Time-space mixing operators?
 
@@ -288,7 +288,7 @@ forbidden_imports_used: false
 - KS phase forcing: [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
 - BZ corner forcing: [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
 - CPT exact: [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md)
-- MINIMAL_AXIOMS: `MINIMAL_AXIOMS_2026-05-03.md`
+- MINIMAL_AXIOMS: `MINIMAL_AXIOMS_2026-05-20.md`
 
 ## Citation references
 

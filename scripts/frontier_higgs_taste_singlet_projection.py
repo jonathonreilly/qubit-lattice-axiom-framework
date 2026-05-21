@@ -178,7 +178,7 @@ def part1_note_structure():
         ("parent Higgs note upstream cited",
          "HIGGS_MASS_FROM_AXIOM_NOTE.md"),
         ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+         "MINIMAL_AXIOMS_2026-05-20"),
         ("PDG comparison flagged not load-bearing",
          "comparison input only, NOT load-bearing"),
         ("note explicitly does NOT change closure value statement",
@@ -233,7 +233,7 @@ def part3_cited_upstreams():
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
         "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())

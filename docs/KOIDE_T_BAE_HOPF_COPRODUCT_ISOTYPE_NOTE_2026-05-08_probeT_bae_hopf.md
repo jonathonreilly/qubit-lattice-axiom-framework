@@ -56,7 +56,7 @@ status promotions by this note:
 
 | Input | Role in this note |
 |---|---|
-| [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | baseline physical `Cl(3)` local algebra and `Z^3` spatial substrate |
+| [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | baseline physical `Cl(3)` local algebra and `Z^3` spatial substrate |
 | [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) | source lineage for the `hw=1` `C_3[111]` triplet |
 | [`KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md`](KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md) | source lineage for the `C_3`-equivariant circulant form and eigenvalue formula |
 | [`CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`](CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md) | source lineage for the algebraic BAE target |

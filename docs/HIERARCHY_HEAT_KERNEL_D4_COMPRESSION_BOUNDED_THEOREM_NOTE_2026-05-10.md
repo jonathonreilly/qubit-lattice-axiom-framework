@@ -411,7 +411,7 @@ audit_required_before_effective_status_change: true
   — KMS support for thermodynamic-limit free-energy density.
 
 ### Framework axioms / structural
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
   — open gate for `N_taste = 16 = 2^D` structural origin.
 

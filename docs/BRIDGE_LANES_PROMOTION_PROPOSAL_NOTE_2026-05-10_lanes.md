@@ -57,7 +57,7 @@ audit retention.
 ## 1. Closed admissions inherited from W2 + C-iso campaigns
 
 Under
-`MINIMAL_AXIOMS_2026-05-03.md`, the
+`MINIMAL_AXIOMS_2026-05-20.md`, the
 framework baseline is the physical Cl(3) local algebra plus Z^3 spatial
 substrate. This note does not introduce any new repo-wide axiom.
 Two named open gates:
@@ -132,7 +132,7 @@ remain:
 
 | Admission class | Source | After W2 + NLO |
 |---|---|---|
-| **Framework-side** (`g_bare = 1`, `N_F = 1/2`) | open gate per `MINIMAL_AXIOMS_2026-05-03` | sharpened: per-site `N_F = 1/2` derived; V_3 N_F conditional on L3a; `g_bare = 1` still open via `G_BARE_DERIVATION_NOTE` |
+| **Framework-side** (`g_bare = 1`, `N_F = 1/2`) | open gate per `MINIMAL_AXIOMS_2026-05-20` | sharpened: per-site `N_F = 1/2` derived; V_3 N_F conditional on L3a; `g_bare = 1` still open via `G_BARE_DERIVATION_NOTE` |
 | **External standard-lattice-QCD imports**: Sommer `r₀ = 0.5 fm`, 4-loop QCD β-function, threshold matching, sea-quark / full-QCD bridge | per honest-status audit 2026-05-02 | **unchanged** — these are external literature standard corrections; W2 / SU(3)-NLO does not touch them |
 
 The Convention C-iso enters this lane only **indirectly**: the
@@ -242,7 +242,7 @@ load-bearing bridge is upstream of all of them.
   closed by current campaigns. It is a same-shape Nature-grade bridge
   obstruction shared with cycles 5 and 9.
 - The `N_taste = 16` uniform-channel input depends on the
-  staggered-Dirac realization gate (open per `MINIMAL_AXIOMS_2026-05-03`).
+  staggered-Dirac realization gate (open per `MINIMAL_AXIOMS_2026-05-20`).
 - The `+12% gap` to physical 125.10 GeV remains an open chain across
   three sister authorities (CW+RGE, lattice-spacing convergence, Wilson
   taste-breaking) per Step 7.
@@ -474,7 +474,7 @@ audit_required_before_effective_status_change: true
 ## 6. What this note does NOT establish
 
 - It does **not** retire L3a, the staggered-Dirac realization gate, or
-  `g_bare = 1`. These remain open per `MINIMAL_AXIOMS_2026-05-03`.
+  `g_bare = 1`. These remain open per `MINIMAL_AXIOMS_2026-05-20`.
 - It does **not** introduce new axioms, new imports, or new derivation
   primitives.
 - It does **not** consume PDG values or any observed/fitted/literature
@@ -515,7 +515,7 @@ audit_required_before_effective_status_change: true
 
 ### Framework axioms / structural
 
-- `MINIMAL_AXIOMS_2026-05-03.md`
+- `MINIMAL_AXIOMS_2026-05-20.md`
 - [`G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md`](G_BARE_CONSTRAINT_VS_CONVENTION_RESTATEMENT_NOTE_2026-05-07.md)
 - [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
 

@@ -60,7 +60,7 @@ explicit `r` and `J` is independently available, the velocity is
 
 Adopt the parent reflection-positivity note's action carriers verbatim:
 
-- **A1 / A2** as in `MINIMAL_AXIOMS_2026-05-03.md` (Cl(3) site algebra
+- **A1 / A2** as in `MINIMAL_AXIOMS_2026-05-20.md` (Cl(3) site algebra
   on `Z^d` with `d = 4 = 1 + 3` for a `Z^1 × Z^3` block).
 - **Staggered Kogut-Susskind kinetic operator** from parent eq. (1):
 
@@ -240,7 +240,7 @@ reconstructed `H` remains a separate bridge.
 decomposition); explicit lattice operators with NN support: hopping
 bilinear note `HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`
 (B2, B4 — translation-invariant link-family Hamiltonians);
-spatial substrate: `MINIMAL_AXIOMS_2026-05-03.md` (A2). The argument
+spatial substrate: `MINIMAL_AXIOMS_2026-05-20.md` (A2). The argument
 is now traceable to A_min through these source notes, not asserted.
 
 ### Step 2 — Explicit J bound (proves F2)
@@ -330,7 +330,7 @@ This proves the conditional velocity statement (F3). ∎
 
 The proof uses:
 
-- **A1, A2** (`MINIMAL_AXIOMS_2026-05-03.md`) — Cl(3) site algebra
+- **A1, A2** (`MINIMAL_AXIOMS_2026-05-20.md`) — Cl(3) site algebra
   on `Z^d`. Used for per-site operator-norm bound (`|m|`, `n̂_z`)
   and lattice graph distance.
 - **Parent RP note action carriers** (`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`,
@@ -420,7 +420,7 @@ toy Hamiltonian. It does not construct the exact RP logarithm.
 
 ## Citations
 
-- A_min: `MINIMAL_AXIOMS_2026-05-03.md`
+- A_min: `MINIMAL_AXIOMS_2026-05-20.md`
 - parent microcausality note (context only, not a load-bearing input):
   `AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`
 - parent RP note (action carriers):

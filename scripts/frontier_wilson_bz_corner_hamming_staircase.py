@@ -91,8 +91,8 @@ def part1_note_structure():
          "not a load-bearing dependency"),
         ("STAGGERED_DIRAC_REALIZATION_GATE upstream cited",
          "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03"),
-        ("MINIMAL_AXIOMS_2026-05-03 upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+        ("MINIMAL_AXIOMS_2026-05-20 upstream cited",
+         "MINIMAL_AXIOMS_2026-05-20"),
     ]
     for label, marker in required:
         ok = marker in NOTE_TEXT or marker in NOTE_FLAT
@@ -255,7 +255,7 @@ def part6_premise_class_consistency():
     must_exist = [
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
         "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
     ]
     for rel in must_exist:

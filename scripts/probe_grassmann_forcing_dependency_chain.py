@@ -102,11 +102,11 @@ def main() -> int:
 
     checks: List[Tuple[str, bool, str]] = []
 
-    # K1 — A1 retained per MINIMAL_AXIOMS_2026-05-03
-    checks.append(("K1 A1 (Cl(3) local algebra)", True, "retained per MINIMAL_AXIOMS_2026-05-03"))
+    # K1 — A1 retained per MINIMAL_AXIOMS_2026-05-20
+    checks.append(("K1 A1 (Cl(3) local algebra)", True, "retained per MINIMAL_AXIOMS_2026-05-20"))
 
     # K2 — A2 retained
-    checks.append(("K2 A2 (Z^3 substrate)", True, "retained per MINIMAL_AXIOMS_2026-05-03"))
+    checks.append(("K2 A2 (Z^3 substrate)", True, "retained per MINIMAL_AXIOMS_2026-05-20"))
 
     # K3 — U2 retained (chirality-aware repair 2026-05-03)
     checks.append((

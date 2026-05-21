@@ -226,7 +226,7 @@ currently stands as follows.
 | Apparatus-dynamics closure note | [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | `audited_clean` (bounded_theorem) | adjacent bounded result; not a substitute for the missing bridge theorems |
 | Record-field closure note | [`TELEPORTATION_RECORD_FIELD_CLOSURE_NOTE.md`](TELEPORTATION_RECORD_FIELD_CLOSURE_NOTE.md) | `audited_conditional` (open_gate) | adjacent open-gate; record-field carrier is also conditional there |
 | Measurement-record note | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md) | `audited_clean` (bounded_theorem) | bounded readout model; not a derivation of native detector dynamics |
-| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | the repository axiom from which the three bridge theorems must derive |
+| Live framework-baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` | the repository axiom from which the three bridge theorems must derive |
 
 The audit-stated repair path (verbatim from
 `audit_ledger.json/notes_for_re_audit_if_any`) is to **derive the

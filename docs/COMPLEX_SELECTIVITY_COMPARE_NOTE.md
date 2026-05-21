@@ -124,7 +124,7 @@ edges are visible.
 | Unwired authority — original grown complex companion | [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md) | not wired as one-hop edge | needed for the original grown-basin complex-action row (`gamma=0 -> AWAY`) |
 | Unwired authority — alt complex failure | [`docs/ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md`](ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md) | not wired as one-hop edge from this row | needed for the alt-family `clean boundary failure` row |
 | Unwired authority — second-family boundary | [`docs/SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](SECOND_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md) | not wired as one-hop edge | needed for the second-family `tighter AWAY-at-gamma=0 boundary` |
-| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | repo-baseline terminology anchor for the path-sum architecture |
+| Repo baseline anchor | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` | repo-baseline terminology anchor for the path-sum architecture |
 
 The audit-stated repair path (verbatim from the audit
 `notes_for_re_audit_if_any`) is to **add the missing direct

@@ -67,7 +67,7 @@ required = [
     "R = 1 ⊕ R_3",
     "Pi_A1(h')",
     "||Pi_perp(h')||^2_d",
-    "MINIMAL_AXIOMS_2026-05-03",  # plain-text pointer; no markdown link to keep dep graph clean
+    "MINIMAL_AXIOMS_2026-05-20",  # plain-text pointer; no markdown link to keep dep graph clean
     "class (A)",
     "isotropic spatial weight",
     "zero load-bearing dependencies",
@@ -434,8 +434,8 @@ rows = ledger['rows']
 
 # MINIMAL_AXIOMS is meta/context (no upstream); not in ledger as a
 # positive theorem. Check it exists as the framework baseline memo.
-axioms_path = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-03.md"
-check("MINIMAL_AXIOMS_2026-05-03.md exists",
+axioms_path = ROOT / "docs" / "MINIMAL_AXIOMS_2026-05-20.md"
+check("MINIMAL_AXIOMS_2026-05-20.md exists",
       axioms_path.exists(),
       detail="framework baseline memo for physical Cl(3) local algebra and Z^3 spatial substrate")
 

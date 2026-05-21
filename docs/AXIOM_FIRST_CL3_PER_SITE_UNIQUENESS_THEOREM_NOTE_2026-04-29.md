@@ -106,7 +106,7 @@ identify the abstract 2-dim Cl(3) chirality module with the physical
 per-site Hilbert space chains through the staggered-Dirac/Grassmann
 realization input, but the current canonical
 minimal-input surface
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 places the staggered/Grassmann realization outside the physical `Cl(3)`
 local algebra plus `Z^3` spatial substrate primitive kernel.
 
@@ -431,7 +431,7 @@ them as one-hop dependencies of the physical-Cl(3)-only U1–U3 audit packet:
 
 The single load-bearing one-hop dependency of the U1–U3 physical-Cl(3)-only packet
 is `MINIMAL_AXIOMS_2026-04-11.md` (and its successor surface
-`MINIMAL_AXIOMS_2026-05-03.md` cited above in the historical-context
+`MINIMAL_AXIOMS_2026-05-20.md` cited above in the historical-context
 section).
 
 ## Citations

@@ -14,7 +14,7 @@ per the 30-probe campaign), substep-4 surface ratchets from
 `bounded_theorem` toward `bounded_theorem` with a sharper named-
 admission inventory eligible for `effective_status: retained_bounded`
 under the existing pipeline machinery in
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 **Primary runner:** [`scripts/frontier_substep4_ratchet_named_primitives_2026_05_10_s4ratchet.py`](../scripts/frontier_substep4_ratchet_named_primitives_2026_05_10_s4ratchet.py)
 **Cache:** [`logs/runner-cache/frontier_substep4_ratchet_named_primitives_2026_05_10_s4ratchet.txt`](../logs/runner-cache/frontier_substep4_ratchet_named_primitives_2026_05_10_s4ratchet.txt)
 
@@ -61,7 +61,7 @@ from positive closure** within retained content:
 
 This note records the audit-honest ratchet pattern: substep-4 can
 ratchet to `retained_bounded` under the existing
-`MINIMAL_AXIOMS_2026-05-03.md` machinery if `AC_φ` and `AC_φλ` are
+`MINIMAL_AXIOMS_2026-05-20.md` machinery if `AC_φ` and `AC_φλ` are
 **explicitly named** as small primitives, in the same way that
 prior meta-clarification notes named:
 
@@ -176,7 +176,7 @@ of that count.
 
 ## How this lets substep-4 ratchet
 
-Per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md),
+Per [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md),
 the framework's pipeline-derived `effective_status` distinguishes:
 
 - `positive_theorem` + retained-grade dependencies → `retained`
@@ -284,7 +284,7 @@ audit machinery. It is not new science.
 3. Records that the named-primitive pattern from #725/#728/#729/#790
    applies to substep-4: structurally-barred items become precisely-
    named small primitives rather than smuggled admissions.
-4. Records that under the existing `MINIMAL_AXIOMS_2026-05-03.md`
+4. Records that under the existing `MINIMAL_AXIOMS_2026-05-20.md`
    pipeline machinery, `bounded_theorem` + named admissions +
    retained-grade dependencies + `audited_clean` is the standard
    ratchet path to `effective_status: retained_bounded`.
@@ -309,7 +309,7 @@ This note explicitly does **not**:
    rename (#790) all stand unchanged.
 4. Add a new mathematical axiom. The physical `Cl(3)` local algebra
    plus `Z^3` spatial substrate baseline of
-   `MINIMAL_AXIOMS_2026-05-03.md` still suffices. The framework's
+   `MINIMAL_AXIOMS_2026-05-20.md` still suffices. The framework's
    retained admission inventory is `{BAE, P}` per the campaign-
    terminal synthesis; this note does not alter it.
 5. Add a new admission to substep-4. The `{AC_φ, AC_φλ}` atom set is
@@ -358,7 +358,7 @@ This note explicitly does **not**:
 - Conventions unification (the pattern, application 3): [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md)
 - Planck P1 consumer (substrate-to-carrier forcing): [`PLANCK_SUBSTRATE_TO_CARRIER_FORCING_BOUNDED_NOTE_2026-05-10_planckP1.md`](PLANCK_SUBSTRATE_TO_CARRIER_FORCING_BOUNDED_NOTE_2026-05-10_planckP1.md)
 - Planck P3 consumer (orientation principle): [`PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md`](PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md)
-- Minimal axioms (the pipeline machinery): [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Minimal axioms (the pipeline machinery): [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 - A3 obstruction theorems (the C_3-not-broken result): [`A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md`](A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md) … [`A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md`](A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md)
 
 ## Validation
@@ -401,7 +401,7 @@ Dirac realization gate:
    primitives**, identical to the BAE column of `{BAE, P}`; no new
    admission count beyond the campaign-terminal synthesis.
 4. Continue to label substep-4 as `bounded_theorem` until independent
-   audit-lane verdict; under the existing `MINIMAL_AXIOMS_2026-05-03`
+   audit-lane verdict; under the existing `MINIMAL_AXIOMS_2026-05-20`
    machinery, `bounded_theorem` + named admissions + retained-grade
    dependencies + `audited_clean` is the standard ratchet path to
    `effective_status: retained_bounded`.

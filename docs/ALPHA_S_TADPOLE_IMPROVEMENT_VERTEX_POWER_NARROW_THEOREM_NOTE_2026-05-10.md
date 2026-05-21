@@ -150,7 +150,7 @@ in `(2)`. ∎
   finite-box character coefficient table, or any other plaquette-value
   authority.
 - Does **not** consume the bare normalization `g_bare = 1` open gate
-  recorded in `MINIMAL_AXIOMS_2026-05-03` or its parent
+  recorded in `MINIMAL_AXIOMS_2026-05-20` or its parent
   `G_BARE_DERIVATION_NOTE`.
 - Does **not** consume the standard-infrastructure low-energy running
   bridge to `M_Z` recorded in

@@ -170,7 +170,7 @@ this is a consistency check, not a separate load-bearing property.
   for parent context only. The parent's broader structural
   identification of spatial-environment boundary data with the
   tensor-transfer law remains its own claim.
-- `MINIMAL_AXIOMS_2026-05-03.md` for the physical `Cl(3)` local
+- `MINIMAL_AXIOMS_2026-05-20.md` for the physical `Cl(3)` local
   algebra on the `Z^3` spatial substrate baseline.
 
 ## Boundaries

@@ -78,7 +78,7 @@ determinant) is DERIVED" in `COMPLETE_PREDICTION_CHAIN_2026_04_15.md`:
 | 1 | `proposal_allowed: true` for "DERIVED hierarchy theorem" | **NO** | This honest-status review recommends `false` until a substantive theorem closes at least one of the four open primitives enumerated in §3 below. |
 | 2 | No open imports for the claimed target | **NO** | `M_Pl = 1.2209 × 10¹⁹ GeV` enters as the framework's UV scale via the Wald-Noether matching `c_cell = 1/4 ↔ S_BH = A/(4G)` (PLANCK_TARGET3 lane); the EW lane consumes `M_Pl` as fixed external input. |
 | 3 | No observed values, fitted selectors, admitted unit conventions, or literature values are load-bearing proof inputs | **NO** | (a) The exponent `N = 16` is identified with `2^4 = 16` four-dimensional Brillouin-zone corners (textbook lattice taste counting, requires Wick rotation Z³ → Z⁴ that is not framework-derived). (b) The substitution `u_0^{16} → α_LM^{16}` in the determinant-to-`v` map equates a tadpole-improvement factor to a 16-th power of a coupling, which is an **algebraic substitution** not a determinant identity. (c) `(7/8)^{1/4}` selector at `L_t = 4` is the "minimal Klein-four-resolved orbit" — admitted selection premise, not derived from the physical Cl(3) local algebra plus Z^3 spatial substrate. (d) Identification of the formula's output with the observed Higgs VEV is admitted (Higgs = taste condensate identification), not framework-proven. |
-| 4 | Every dependency is retained, retained corollary, or explicitly allowed exact support | **PARTIAL** | The Matsubara determinant identity at `L_s = 2`, `L_t = 4` is exact algebra (proven in [`HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md`](HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md), conditional on admitted standard staggered fermion algebra plus mean-field factorization). The bosonic-bilinear selector at `L_t = 4` is bounded (cf. [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)). The dimensional-compression `(R)^{-1/4}` route is bounded ([`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)). The `M_Pl` import is conditional on the Planck lane. The `g_bare = 1` chain is `audited_conditional` (per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)). The composite combination is therefore at most as strong as the weakest link, which sits at `bounded` / `audited_conditional`. |
+| 4 | Every dependency is retained, retained corollary, or explicitly allowed exact support | **PARTIAL** | The Matsubara determinant identity at `L_s = 2`, `L_t = 4` is exact algebra (proven in [`HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md`](HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md), conditional on admitted standard staggered fermion algebra plus mean-field factorization). The bosonic-bilinear selector at `L_t = 4` is bounded (cf. [`HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md`](HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md)). The dimensional-compression `(R)^{-1/4}` route is bounded ([`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)). The `M_Pl` import is conditional on the Planck lane. The `g_bare = 1` chain is `audited_conditional` (per [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)). The composite combination is therefore at most as strong as the weakest link, which sits at `bounded` / `audited_conditional`. |
 | 5 | Runner or proof artifact checks dependency classes, not only numerical output | **PARTIAL** | The runner [`scripts/frontier_complete_prediction_chain.py`](../scripts/frontier_complete_prediction_chain.py) verifies the numerical evaluation of `(H)` against the canonical plaquette surface but does **not** verify that `α_LM^{16}` arises from a determinant-to-coupling mechanism on the framework's own physical surface — it treats `(H)` as algebraic input. |
 | 6 | Review-loop disposition is `pass` | **PENDING** | This honest-status review packet is the branch-local self-review against the seven criteria. Independent audit recommended. |
 | 7 | PR body explicitly says independent audit is still required | **YES** | This note carries the standard "Status authority: independent audit lane only" header. |
@@ -119,7 +119,7 @@ admitted_observation_status: |
   P1 is the framework's own Planck-lane authority, retained-grade
   conditional pending audit closure on the Wald-Noether route.
   P2 is admitted Wick-rotation convention; the framework's spatial
-  substrate is `Z^3` (cf. MINIMAL_AXIOMS_2026-05-03), so the 4D count
+  substrate is `Z^3` (cf. MINIMAL_AXIOMS_2026-05-20), so the 4D count
   `2^D = 16` is borrowed from textbook 4D lattice fermion-doubling
   literature without framework-internal derivation that 4D taste counting
   applies on the physical Cl(3) local algebra plus Z^3 spatial substrate.
@@ -191,7 +191,7 @@ references confirm that naive lattice fermions have `2^D` doublers in
 `D` dimensions, with `D = 4` for Wick-rotated 4D Euclidean spacetime.
 
 The framework's spatial substrate is `Z^3` (per
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)), so the
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)), so the
 3-spatial-dimensional doubler count is `2^3 = 8`, not 16. The formula's
 "16" is therefore borrowed from a Wick-rotated 4D formulation that the
 framework does not own at the physical Cl(3) / Z^3 baseline level.
@@ -204,7 +204,7 @@ wrong by 9 orders of magnitude. The 4D Wick rotation is therefore
 
 The framework does have a staggered-Dirac realization derivation
 target (formerly an axiom, now an open gate per
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)). The
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)). The
 gate, when closed, would establish that the baseline framework forces
 the staggered realization including taste structure; whether that
 closure produces
@@ -562,7 +562,7 @@ Re-audit trigger:
   non-perturbative `α_LM^{16}` factor as outside retention scope by
   design (the framework's existing admission that this note formalizes
   package-level).
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
   — current physical Cl(3) local algebra plus Z^3 spatial substrate
   baseline, with staggered-Dirac realization as an open gate.
 - [`ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md`](ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md)

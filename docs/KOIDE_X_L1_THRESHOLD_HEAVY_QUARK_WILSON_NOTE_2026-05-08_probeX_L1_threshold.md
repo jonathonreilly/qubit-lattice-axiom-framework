@@ -316,7 +316,7 @@ This note explicitly does **NOT**:
 
 ### Foundational
 
-- Minimal axioms: `MINIMAL_AXIOMS_2026-05-03.md`
+- Minimal axioms: `MINIMAL_AXIOMS_2026-05-20.md`
 - Substep-4 AC narrowing (PDG-input prohibition):
   `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`
 

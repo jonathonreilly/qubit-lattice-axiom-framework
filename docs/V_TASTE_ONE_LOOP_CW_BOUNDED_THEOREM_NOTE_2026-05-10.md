@@ -88,8 +88,8 @@ The factor `1/(16π²)` is the standard d=4 Gaussian-measure factor; the additio
 
 | ID | Statement | Class |
 |---|---|---|
-| Cl(3) | physical local algebra is Cl(3) | framework baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
-| Z3 | physical spatial substrate is Z^3 | framework baseline; [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) |
+| Cl(3) | physical local algebra is Cl(3) | framework baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
+| Z3 | physical spatial substrate is Z^3 | framework baseline; [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) |
 | V_taste | V_taste(m) = -8 log(m² + 4 u_0²) (cited; mean-field staggered log-det at saddle) | [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md) Step 2 eq.[2] |
 | Symcurv | (m_H_tree/v)² = -V''_lat(0) / N_taste = 1/(4 u_0²) (cited symmetric-point readout) | [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md) Step 4 eq.[5] |
 | Plaq-MC | ⟨P⟩(β=6, isotropic) = 0.5934 (registered MC datum on cited source stack) | [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) |
@@ -234,7 +234,7 @@ These four admissions are explicit and bounded; none is a new repo-wide axiom.
 ## 8. What this theorem does NOT establish
 
 - It does **not** close the +12% gap. The naive symmetric-point readout applied to V_total does not match m_H_PDG at any scale μ ∈ [v, M_Pl]; the matching residual `M_residual = S4 ∧ S7` per [`LATTICE_PHYSICAL_MATCHING_THEOREM_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_match.md`](LATTICE_PHYSICAL_MATCHING_THEOREM_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_match.md) is unchanged.
-- It does **not** discharge the staggered-Dirac realization gate, the g_bare = 1 gate, the uniform-N_taste = 16 admission, or any other open framework gate per [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md).
+- It does **not** discharge the staggered-Dirac realization gate, the g_bare = 1 gate, the uniform-N_taste = 16 admission, or any other open framework gate per [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md).
 - It does **not** introduce new repo-wide axioms, imports, or derivation primitives.
 - It does **not** consume PDG values or any observed/fitted/literature numerical inputs as derivation inputs (PDG m_H = 125.25 used only as a falsifiability comparator post-theorem).
 - It does **not** promote Lane 2 (Higgs mass from axiom) above its current `bounded_theorem` status. The audit-ledger row for [`HIGGS_MASS_FROM_AXIOM_NOTE.md`](HIGGS_MASS_FROM_AXIOM_NOTE.md) remains owned by the independent audit lane.
@@ -331,7 +331,7 @@ audit_required_before_effective_status_change: true
 
 ### Framework baseline / structural
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) — physical Cl(3) local algebra plus Z^3 spatial substrate baseline, with open gates.
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — physical Cl(3) local algebra plus Z^3 spatial substrate baseline, with open gates.
 - [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) — staggered-Dirac realization gate.
 
 ### Textbook references for the loop factor

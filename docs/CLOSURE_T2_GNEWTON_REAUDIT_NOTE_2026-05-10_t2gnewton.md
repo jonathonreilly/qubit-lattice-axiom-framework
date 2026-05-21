@@ -525,7 +525,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 - Newton-from-Z^3 (retained Poisson chain): [`NEWTON_LAW_DERIVED_NOTE.md`](NEWTON_LAW_DERIVED_NOTE.md)
 - Propagator family unification (skeleton non-uniqueness): [`PROPAGATOR_FAMILY_UNIFICATION_NOTE.md`](PROPAGATOR_FAMILY_UNIFICATION_NOTE.md)
 - Downstream sibling (load-bearing on gnewtonG2): C-B(b) canonical mass-coupling branch
-- Framework baseline: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+- Framework baseline: [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
 
 ## Honest status
 

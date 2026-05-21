@@ -418,7 +418,7 @@ variational technique used by the parent in Step 2.
 ## Load-bearing dependencies
 
 - Current public framework memo:
-  `MINIMAL_AXIOMS_2026-05-03.md` (`A1`: Cl(3) per-site, `A2`: Z^d
+  `MINIMAL_AXIOMS_2026-05-20.md` (`A1`: Cl(3) per-site, `A2`: Z^d
   spatial substrate).
 
 ## Citations
@@ -445,7 +445,7 @@ certify the class is genuinely larger than {naive, staggered}.
 
 ## Audit dependency repair links
 
-- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md) - current
+- [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-20.md) - current
   public framework memo; sole upstream framework dependency.
 - [axiom_first_lattice_noether_theorem_note_2026-04-29](AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) -
   parent (audited_conditional). This narrow theorem is strictly

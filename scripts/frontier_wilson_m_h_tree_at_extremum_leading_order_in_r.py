@@ -130,7 +130,7 @@ def part1_note_structure():
         ("Higgs-channel boundary upstream cited (sister)",
          "HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08"),
         ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+         "MINIMAL_AXIOMS_2026-05-20"),
         ("PDG comparison input flagged not-load-bearing",
          "comparison input only, not a derivation input"),
     ]
@@ -175,7 +175,7 @@ def part3_premise_class_consistency():
         "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())

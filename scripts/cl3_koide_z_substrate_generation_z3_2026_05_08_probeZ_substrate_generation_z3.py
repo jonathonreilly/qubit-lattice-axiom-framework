@@ -570,7 +570,7 @@ def section_5_specificity(c: Counter) -> None:
         )
 
     # The Z^3 dimension is the framework's physical spatial substrate dimension
-    # (per MINIMAL_AXIOMS_2026-05-03.md: "discrete in lattice/time" with
+    # (per MINIMAL_AXIOMS_2026-05-20.md: "discrete in lattice/time" with
     # 3-dimensional spatial lattice). So:
     #   d = 3 (from physical Z^3 spatial substrate)
     #   |hw=1| = C(3, 1) = 3

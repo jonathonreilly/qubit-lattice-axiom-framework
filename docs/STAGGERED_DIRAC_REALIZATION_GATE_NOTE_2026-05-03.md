@@ -28,7 +28,7 @@ target is not yet closed" have no single citeable object to point at.
 This note is that object.
 
 The framework's restored axiom set (A1 + A2 only) is recorded in the
-2026-05-03 minimal-axioms note (file `MINIMAL_AXIOMS_2026-05-03.md`,
+2026-05-03 minimal-axioms note (file `MINIMAL_AXIOMS_2026-05-20.md`,
 landing under the axiom-reset PR series). That memo recategorizes the
 staggered-Dirac realization from "axiom A3" to "open gate". This note is
 the canonical parent identity for that recategorized gate.

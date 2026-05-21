@@ -312,7 +312,7 @@ stands as follows.
 |---|---|---|---|
 | YT-lane Ward identity (D12 color Fierz, D17 composite-Higgs scalar uniqueness) | [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](YT_WARD_IDENTITY_DERIVATION_THEOREM.md) | `unaudited` (claim_type `bounded_theorem`) | one-hop dependency edge requested by audit |
 | Charged-lepton direct Ward-free Yukawa no-go | [`CHARGED_LEPTON_DIRECT_WARD_FREE_YUKAWA_NO_GO_NOTE_2026-04-26.md`](CHARGED_LEPTON_DIRECT_WARD_FREE_YUKAWA_NO_GO_NOTE_2026-04-26.md) | `audited_conditional` (no_go) | parallel no-go on direct-Ward-free Yukawa route |
-| `Cl(3)` + `Z^3` + staggered-Dirac axiom set | [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) | `unaudited` / `meta` | live framework-baseline anchor |
+| `Cl(3)` + `Z^3` + staggered-Dirac axiom set | [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) | `unaudited` / `meta` | live framework-baseline anchor |
 | SU(2)-only (2,1) lepton-block non-extension claim | inline §3, this note | not yet packaged as standalone retained no-go | audit-flagged second one-hop dependency |
 
 The audit-stated repair path (verbatim from

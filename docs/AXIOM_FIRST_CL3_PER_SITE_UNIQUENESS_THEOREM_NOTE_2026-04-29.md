@@ -106,7 +106,7 @@ identify the abstract 2-dim Cl(3) chirality module with the physical
 per-site Hilbert space chains through the staggered-Dirac/Grassmann
 realization input, but the current canonical
 minimal-input surface
-[`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
+`MINIMAL_AXIOMS_2026-05-03.md`
 places the staggered/Grassmann realization outside the physical `Cl(3)`
 local algebra plus `Z^3` spatial substrate primitive kernel.
 
@@ -422,8 +422,8 @@ Framework-baseline surfaces (meta, not load-bearing for the
 narrow-theorem chain above, but explicitly authorising the U1–U3
 scope):
 
-- [MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md) — current public framework memo (qubit reframe), explicitly identifies this note's U1–U3 content as supported by the three retained narrow theorems above (see § "What this note does" of `MINIMAL_AXIOMS_2026-05-20.md`).
-- [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md) — original two-axiom framing (preserved as historical baseline).
+- `MINIMAL_AXIOMS_2026-05-20.md` — current public framework memo (qubit reframe), explicitly identifies this note's U1–U3 content as supported by the three retained narrow theorems above (see § "What this note does" of `MINIMAL_AXIOMS_2026-05-20.md`).
+- `MINIMAL_AXIOMS_2026-04-11.md` — original two-axiom framing (preserved as historical baseline).
 
 ## Audit dependency scoping (2026-05-20 qubit-reframe repair)
 

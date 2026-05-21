@@ -1154,10 +1154,6 @@
     },
     {
       "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "to": "minimal_axioms_2026-05-03"
-    },
-    {
-      "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
@@ -1167,14 +1163,6 @@
     {
       "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
       "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "to": "minimal_axioms_2026-05-20"
-    },
-    {
-      "from": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "to": "minimal_axioms_2026-04-11"
     },
     {
       "from": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
@@ -41414,15 +41402,12 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "minimal_axioms_2026-05-03",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-        "minimal_axioms_2026-05-20",
-        "minimal_axioms_2026-04-11"
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "661f5719f61371a0b5ab4ee987276c3bdb34dc096c9b0217d8517bff2e4331d9",
+      "note_hash": "6bfaf371efb733366c0fa95b4e1f7d70d8ce5894cf4f516d46847455aefe2cd8",
       "path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module"
@@ -80944,7 +80929,7 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9664,
+    "edge_count": 9661,
     "leaf_count": 728,
     "node_count": 2455,
     "root_count": 804,

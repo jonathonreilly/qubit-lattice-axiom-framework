@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 863,
+    "critical": 862,
     "high": 27,
     "leaf": 316,
     "medium": 109
@@ -9447,30 +9447,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
-      "claim_id": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
-      "claim_scope": "Finite-runner certificate for the displayed ODE catalog for reps (0,0),(1,0),(1,1),(2,0),(2,1),(2,2),(3,0), limited to the bounded search box r <= 6, deg <= 8 and numerical checks at beta in {2,4,6,8}.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.932,
-      "note_path": "docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py",
-      "transitive_descendants": 976
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -37448,6 +37424,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_bridge_pr525_flaw_fix_note_2026-05-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "bae_ncg_kodim_real_structure_partial_narrowing_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -45415,30 +45415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_bridge_pr525_flaw_fix_note_2026-05-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_cube_index_graph_shortcut_open_gate_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -46426,5 +46402,5 @@
     }
   ],
   "ready_count": 9,
-  "total_pending": 1315
+  "total_pending": 1314
 }

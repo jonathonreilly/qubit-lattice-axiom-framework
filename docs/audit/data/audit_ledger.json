@@ -179731,11 +179731,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 13.45,
+      "load_bearing_score": 16.45,
       "load_bearing_step": "The runner verifies at finite truncation order that the displayed third-order ODE annihilates the truncated Taylor series of J(beta), and numerically agrees with direct Weyl integration at beta in {2,4,6,8,10}.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "5ba7055117c13f4e88c0062a5646846b38da2e8499a1c1f11e261835cbaa35b3",
       "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_NOTE_2026-05-05.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check the numerical quadrature tolerance and the use of the Bessel-determinant series as a runner-internal representation, but these are within the narrowed finite certificate rather than all-order closure.",
@@ -232673,24 +232673,41 @@
       "verdict_rationale": "The bounded theorem closes on the restricted surface actually claimed: NMAX=4, n_grid=80, 25 weights, and 25^3 rounded fusion multiplicities computed by the runner. The nine validation passes are algebraic SU(3) identity checks over the computed table, and the tenth pass checks the computed integer residual at machine precision. This does not establish arbitrary SU(3) fusion, Wilson plaquette closure, rho_(p,q)(6), or any bridge parent chain; it cleanly supports only the finite-box engine check."
     },
     "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T23:34:01.118398+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 10.932,
+        "runner_hash": "1dc670652a4b043906452c56fcce6fbf3d9e27fbb76805026fa3acce85fff905",
+        "transitive_descendants": 976
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-20260521-su3-low-rank-picard-fuchs-majority",
+      "auditor_confidence": 0.84,
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "cross_confirmation_disagreement",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The repaired note's retained claim is only the finite computational certificate, not all-order Picard-Fuchs exactness, global minimality, full (p,q)<=(3,3) coverage, or a thermodynamic Wilson-plaquette result. Within that bounded scope, the source note, runner source, cached output, and audited-clean V=1 one-hop dependency agree. The runner output reproduces every listed polynomial and the stated finite numerical errors, so no remaining conditional blocker appears in the restricted packet. The load-bearing step is class C because the support is a finite runner/truncated-series/numerical-verification certificate, not a formal all-order theorem. No-Go Discipline N1-N8 is not triggered for the ratified tuple because no no_go or wall-bearing negative conclusion is being ratified; the famous-problem and all-order-minimality exclusions are explicit scope boundaries, not retained negative theorems.\n\nFive-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C'); 1x ('second', 'audited_conditional', 'bounded_theorem', 'C').",
       "claim_id": "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05",
-      "claim_scope": "Finite-runner certificate for the displayed ODE catalog for reps (0,0),(1,0),(1,1),(2,0),(2,1),(2,2),(3,0), limited to the bounded search box r <= 6, deg <= 8 and numerical checks at beta in {2,4,6,8}.",
+      "claim_scope": "Finite-runner certificate for the displayed ODE catalog for reps (0,0),(1,0),(1,1),(2,0),(2,1),(2,2),(3,0), limited to the bounded ansatz search r<=6, deg<=8 and numerical Bessel-determinant checks at beta in {2,4,6,8}.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-19T14:37:40.547090+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-21T23:34:01.118398+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -232705,6 +232722,7 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
+        "mode": "judicial_third_pass",
         "second_audit": {
           "audit_date": "2026-05-19T15:25:47.891593+00:00",
           "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-su3_low_rank_irrep_picar-015",
@@ -232717,26 +232735,54 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_conditional"
         },
-        "status": "disagreement"
+        "status": "third_confirmed_hybrid",
+        "third_audit": {
+          "audit_date": "2026-05-21T23:34:01.118398+00:00",
+          "auditor": "codex-judicial-panel-20260521-su3-low-rank-picard-fuchs-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-runner certificate for the displayed ODE catalog for reps (0,0),(1,0),(1,1),(2,0),(2,1),(2,2),(3,0), limited to the bounded ansatz search r<=6, deg<=8 and numerical Bessel-determinant checks at beta in {2,4,6,8}.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit reached the correct clean bounded-theorem verdict but overclassified the load-bearing step as A. The packet supports a finite runner certificate with truncated series and finite numerical checks, matching class C, and the one-hop V=1 dependency is itself class C.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The repaired note's retained claim is only the finite computational certificate, not all-order Picard-Fuchs exactness, global minimality, full (p,q)<=(3,3) coverage, or a thermodynamic Wilson-plaquette result. Within that bounded scope, the source note, runner source, cached output, and audited-clean V=1 one-hop dependency agree. The runner output reproduces every listed polynomial and the stated finite numerical errors, so no remaining conditional blocker appears in the restricted packet. The load-bearing step is class C because the support is a finite runner/truncated-series/numerical-verification certificate, not a formal all-order theorem. No-Go Discipline N1-N8 is not triggered for the ratified tuple because no no_go or wall-bearing negative conclusion is being ratified; the famous-problem and all-order-minimality exclusions are explicit scope boundaries, not retained negative theorems.\n\nFive-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C'); 1x ('second', 'audited_conditional', 'bounded_theorem', 'C').",
+          "load_bearing_step_class": "C",
+          "runner_check_breakdown": {
+            "beta_targets": [
+              2,
+              4,
+              6,
+              8
+            ],
+            "bounded_search_box": "r<=6,d<=8",
+            "finite_catalog_entries_checked": 7,
+            "max_reported_relative_error": "3.129e-08",
+            "runner_exit_code": 0
+          },
+          "second_auditor_error": "The second audit correctly identified bounded_theorem and class C, but its audited_conditional verdict is too conservative for the repaired scope. The all-order minimality/exact-PF concerns are explicitly excluded from the ratified claim, and no source-runner-output mismatch remains for the finite certificate.",
+          "sided_with": "hybrid",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.932,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The primary runner exits 0, constructs truncated rational Bessel-determinant Taylor series, searches the bounded ansatz box r<=6,d<=8 in increasing order, returns the displayed primitive-integer order-3 polynomial ODEs for all seven selected reps, performs finite extra Taylor-residual verification, and reports numerical ODE-vs-Bessel agreement at beta={2,4,6,8} with max relative error 3.129e-08; the one-hop V=1 dependency is already audited_clean as a finite-runner bounded theorem.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "81b79487eb45913fbed76c7761b744327ee48bcee3bdfbabb2152c4affef4c3b",
       "note_path": "docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A future stronger row would need an all-order annihilation/minimality and branch-identification proof; that is outside this retained finite-runner certificate.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -232794,16 +232840,21 @@
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "beta_targets": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "bounded_search_box": "r<=6,d<=8",
+        "finite_catalog_entries_checked": 7,
+        "max_reported_relative_error": "3.129e-08",
+        "runner_exit_code": 0
       },
       "runner_path": "scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py",
       "title": "SU(3) Low-Rank Irrep Character Coefficients: Picard-Fuchs ODE Catalog",
       "transitive_descendants": 976,
-      "verdict_rationale": null
+      "verdict_rationale": "The repaired note's retained claim is only the finite computational certificate, not all-order Picard-Fuchs exactness, global minimality, full (p,q)<=(3,3) coverage, or a thermodynamic Wilson-plaquette result. Within that bounded scope, the source note, runner source, cached output, and audited-clean V=1 one-hop dependency agree. The runner output reproduces every listed polynomial and the stated finite numerical errors, so no remaining conditional blocker appears in the restricted packet. The load-bearing step is class C because the support is a finite runner/truncated-series/numerical-verification certificate, not a formal all-order theorem. No-Go Discipline N1-N8 is not triggered for the ratified tuple because no no_go or wall-bearing negative conclusion is being ratified; the famous-problem and all-order-minimality exclusions are explicit scope boundaries, not retained negative theorems.\n\nFive-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C'); 1x ('second', 'audited_conditional', 'bounded_theorem', 'C')."
     },
     "su3_tensor_network_engine_roadmap_note_2026-05-03": {
       "audit_date": null,

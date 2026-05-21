@@ -15728,22 +15728,41 @@
       "verdict_rationale": "Issue: the CHSH violation is obtained on selected small lattices with large chosen couplings, while the packet provides no retained one-hop authority deriving the two-species matter bipartition, the diagonal periodic-Poisson density coupling, or a physical normalization/continuum scaling for G. Why this blocks: the runner source appears to compute the model surface rather than hard-code S, but the load-bearing result depends on chosen model parameters and imported interaction/readout bridges, so it is not a framework-native derivation from cited inputs. Repair target: register the two-species Hilbert/matter theorem and D5 Poisson-coupling authority, derive a fixed coupling or continuum-refinement rule, and rerun without sweeping to violation. Claim boundary until fixed: reproducible finite-lattice model-surface CHSH violation at the listed selected couplings with Cl(3) taste checks and G=0 null controls only."
     },
     "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:04:46.566693+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-bertrand_stable_orbit_up-018",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic stability step closes under the assumed continuum potential. The restricted packet does not close the general continuum dimensional-gravity law beyond the cache-backed d = 3 and d = 4 rows, so the d >= 5 instability portion depends on an explicit bounded extrapolation.",
       "claim_id": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Audited the elementary effective-potential stability calculation for circular orbits under the assumed continuum potential V(r) = -k/r^(d-2) with k > 0 and integer d >= 3.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:04:46.566693+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -15751,34 +15770,36 @@
         "dimensional_gravity_table"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Using the circular-orbit condition to eliminate L^2 gives d^2V_eff/dr^2 at r_c = k(d-2)(4-d)/r_c^d, so stability requires (d-2)(4-d) > 0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "meta",
       "max_descendant_status_rank": 25,
       "note_hash": "13b35e759352b39b63dc106ad999a93d8072140917929be5076e921f5a29b507",
       "note_path": "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation or authority for the continuum V(r) = -k/r^(d-2) law across the integer d >= 5 cases used by the upper-bound argument.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": null,
       "title": "Bertrand Stable-Orbit Upper-Bound Support",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing calculation is a straightforward algebraic closure of the effective potential and the circular-orbit condition. However, the dimensional potential pattern used for arbitrary integer d is not established by the cited authority; that authority is explicitly cache-backed only for d = 3 and d = 4 and labels broader use as out of binding scope. The note states this limitation, so the bounded support claim is not failed, but it remains conditional on the unclosed continuum extrapolation."
     },
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T16:13:27.882836+00:00",

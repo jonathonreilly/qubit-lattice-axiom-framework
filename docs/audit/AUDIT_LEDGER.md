@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 372 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | audit_in_progress | 9 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
-| ~~audited_conditional~~ | 74 |
+| ~~audited_conditional~~ | 75 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | 1 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 10 |
 | `audited_clean` | 596 |
-| `audited_conditional` | 74 |
+| `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1546 |
+| `unaudited` | 1545 |
 
 | claim_type | count |
 |---|---:|
@@ -728,6 +728,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `bertrand_stable_orbit_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
@@ -1475,6 +1476,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the Hamiltonian H = H1⊗I + I⊗H1 + G∑ij V(i,j)|i><i|⊗|j><j|, selected finite lattices and chosen G values give Horodecki CHSH |S| > 2 while G=0 gives |S|=2.  _(class `G`)_
 - **chain closes:** False — The packet specifies the model and runner source, but the table is not supported by completed runner stdout here and the one-hop authorities deriving the two-species bipartition, diagonal periodic-Poisson density coupling, and physical normalization of G are absent. The result closes only as a selected-parameter model surface, not as a retained framework-native gravitational Bell theorem.
 - **rationale:** Issue: the CHSH violation is obtained on selected small lattices with large chosen couplings, while the packet provides no retained one-hop authority deriving the two-species matter bipartition, the diagonal periodic-Poisson density coupling, or a physical normalization/continuum scaling for G. Why this blocks: the runner source appears to compute the model surface rather than hard-code S, but the load-bearing result depends on chosen model parameters and imported interaction/readout bridges, so it is not a framework-native derivation from cited inputs. Repair target: register the two-species Hilbert/matter theorem and D5 Poisson-coupling authority, derive a fixed coupling or continuum-refinement rule, and rerun without sweeping to violation. Claim boundary until fixed: reproducible finite-lattice model-surface CHSH violation at the listed selected couplings with Cl(3) taste checks and G=0 null controls only.
+- **auditor confidence:** high
+
+### `bertrand_stable_orbit_upper_bound_support_note_2026-05-20`
+
+- **Note:** [`BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md`](../../docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the elementary effective-potential stability calculation for circular orbits under the assumed continuum potential V(r) = -k/r^(d-2) with k > 0 and integer d >= 3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-215638-bb10cae5-bertrand_stable_orbit_up-018`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the circular-orbit condition to eliminate L^2 gives d^2V_eff/dr^2 at r_c = k(d-2)(4-d)/r_c^d, so stability requires (d-2)(4-d) > 0.  _(class `A`)_
+- **chain closes:** False — The algebraic stability step closes under the assumed continuum potential. The restricted packet does not close the general continuum dimensional-gravity law beyond the cache-backed d = 3 and d = 4 rows, so the d >= 5 instability portion depends on an explicit bounded extrapolation.
+- **rationale:** The load-bearing calculation is a straightforward algebraic closure of the effective potential and the circular-orbit condition. However, the dimensional potential pattern used for arbitrary integer d is not established by the cited authority; that authority is explicitly cache-backed only for d = 3 and d = 4 and labels broader use as out of binding scope. The note states this limitation, so the bounded support claim is not failed, but it remains conditional on the unclosed continuum extrapolation.
+- **open / conditional deps cited:**
+  - `DIMENSIONAL_GRAVITY_TABLE.md`
 - **auditor confidence:** high
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`

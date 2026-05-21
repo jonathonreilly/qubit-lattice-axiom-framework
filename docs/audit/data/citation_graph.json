@@ -1881,10 +1881,6 @@
       "to": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24"
     },
     {
-      "from": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-      "to": "dimensional_gravity_table"
-    },
-    {
       "from": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
       "to": "g_bare_two_ward_closure_note_2026-04-18"
     },
@@ -1959,6 +1955,14 @@
     {
       "from": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
       "to": "bminusl_anomaly_freedom_note_2026-05-17"
+    },
+    {
+      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
     },
     {
       "from": "born_scattering_comparison_note",
@@ -5517,10 +5521,6 @@
       "to": "cosmological_constant_spectral_gap_identity_theorem_note"
     },
     {
-      "from": "coulomb_stability_upper_bound_support_note_2026-05-20",
-      "to": "dimensional_gravity_table"
-    },
-    {
       "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
       "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
     },
@@ -5727,30 +5727,6 @@
     {
       "from": "c_iso_su3_nnlo_closure_bounded_note_2026-05-10_su3nnlo",
       "to": "exact_tier_ewitness_bounded_note_2026-05-07_ewitness"
-    },
-    {
-      "from": "d3_retention_closure_plan_2026-05-20",
-      "to": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20"
-    },
-    {
-      "from": "d3_retention_closure_plan_2026-05-20",
-      "to": "coulomb_stability_upper_bound_support_note_2026-05-20"
-    },
-    {
-      "from": "d3_retention_closure_plan_2026-05-20",
-      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "d3_retention_closure_plan_2026-05-20",
-      "to": "dimension_selection_note"
-    },
-    {
-      "from": "d3_retention_closure_plan_2026-05-20",
-      "to": "dimensional_gravity_table"
-    },
-    {
-      "from": "d3_retention_closure_plan_2026-05-20",
-      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     },
     {
       "from": "dark_energy_eos_note",
@@ -12846,7 +12822,7 @@
     },
     {
       "from": "key_terminology",
-      "to": "minimal_axioms_2026-05-03"
+      "to": "minimal_axioms_2026-05-20"
     },
     {
       "from": "key_terminology",
@@ -17337,6 +17313,10 @@
       "to": "key_terminology"
     },
     {
+      "from": "minimal_axioms_2026-05-20",
+      "to": "key_terminology"
+    },
+    {
       "from": "minimal_bidirectional_trapping_probe_note",
       "to": "minimal_absorbing_horizon_probe_note"
     },
@@ -20991,6 +20971,14 @@
     {
       "from": "portable_package_hierarchy_classifier_note",
       "to": "complex_selectivity_compare_note"
+    },
+    {
+      "from": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+      "to": "a1_qubit_interpretation_note_2026-05-20"
     },
     {
       "from": "primitive_p_heavyq_casimir_closure_note_2026-05-10_ppheavyq_closure",
@@ -38214,7 +38202,7 @@
     },
     {
       "from": "repo.controlled_vocabulary",
-      "to": "minimal_axioms_2026-05-03"
+      "to": "minimal_axioms_2026-05-20"
     },
     {
       "from": "repo.controlled_vocabulary",
@@ -38350,7 +38338,7 @@
     },
     {
       "from": "repo.vocabulary_hygiene_design",
-      "to": "minimal_axioms_2026-05-03"
+      "to": "minimal_axioms_2026-05-20"
     },
     {
       "from": "repo.vocabulary_hygiene_design",
@@ -38633,6 +38621,18 @@
       "path": "docs/3D_CORRECTION_MASTER_NOTE.md",
       "runner_path": "scripts/frontier_3d_correction_master_note_meta_narrowing_check.py",
       "title": "3D Correction Master Note"
+    },
+    "a1_qubit_interpretation_note_2026-05-20": {
+      "claim_id": "a1_qubit_interpretation_note_2026-05-20",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (axiom-presentation sharpening, no content change)",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "080d739fd405a2772fa93149336b45f575f7de3eec7214311b2bebcf9d4fdbdb",
+      "path": "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "A1 Qubit Interpretation: Presentational Sharpening of the Local-Algebra Axiom"
     },
     "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc": {
       "claim_id": "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
@@ -40377,7 +40377,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "01ba1e3ef9b022de21dd64827baf73a2dc3e47680cb01c7d3670e9d4837d2d30",
+      "note_hash": "383dd797c7aaced5ddec46135286189f0661a8d570afa2dfc6943cf1eb11a6ee",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -41996,20 +41996,6 @@
       "runner_path": "scripts/frontier_bell_inequality.py",
       "title": "Bell Inequality (CHSH) Violation with Explicit Cl(3) Taste Measurements (Conditional Model Surface)"
     },
-    "bertrand_stable_orbit_upper_bound_support_note_2026-05-20": {
-      "claim_id": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "dimensional_gravity_table"
-      ],
-      "helper_runner_paths": [],
-      "note_hash": "13b35e759352b39b63dc106ad999a93d8072140917929be5076e921f5a29b507",
-      "path": "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
-      "runner_path": null,
-      "title": "Bertrand Stable-Orbit Upper-Bound Support"
-    },
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": {
       "claim_id": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "positive_theorem",
@@ -42217,6 +42203,21 @@
       "path": "docs/BORN_RULE_ANALYSIS_2026-04-11.md",
       "runner_path": null,
       "title": "Born Rule Negative \u2014 What It Teaches"
+    },
+    "born_rule_from_gleason_busch_derivation_note_2026-05-20": {
+      "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": "bounded support",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "cf6e466df5357904e7720a68f69d3f1716b9e63fa734c77727e72317466391ef",
+      "path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Born Rule via Gleason\u2013Busch on the Pre-Record Reference State: Bounded Support / Repair Route"
     },
     "born_scattering_comparison_note": {
       "claim_id": "born_scattering_comparison_note",
@@ -45679,20 +45680,6 @@
       "runner_path": "scripts/frontier_cosmology_single_ratio_inverse_reconstruction.py",
       "title": "Cosmology Single-Ratio Inverse Reconstruction Theorem"
     },
-    "coulomb_stability_upper_bound_support_note_2026-05-20": {
-      "claim_id": "coulomb_stability_upper_bound_support_note_2026-05-20",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "dimensional_gravity_table"
-      ],
-      "helper_runner_paths": [],
-      "note_hash": "2edba92eddb1aa12fb709112e5e9394be5756e0a20c80c242f56bb8e52a4a645",
-      "path": "docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
-      "runner_path": null,
-      "title": "Coulomb Stability Upper-Bound Support"
-    },
     "coupled_field_generated_family_probe_note": {
       "claim_id": "coupled_field_generated_family_probe_note",
       "claim_type_author_hint": null,
@@ -45979,25 +45966,6 @@
       "path": "docs/CYCLIC_PROJECTOR_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_cyclic_projector_compression_narrow.py",
       "title": "Cyclic-Projector Compression Narrow Theorem on Herm(3)"
-    },
-    "d3_retention_closure_plan_2026-05-20": {
-      "claim_id": "d3_retention_closure_plan_2026-05-20",
-      "claim_type_author_hint": "meta",
-      "claim_type_author_hint_raw": "meta",
-      "claim_type_seed_hint": "meta",
-      "deps": [
-        "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
-        "coulomb_stability_upper_bound_support_note_2026-05-20",
-        "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
-        "dimension_selection_note",
-        "dimensional_gravity_table",
-        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
-      ],
-      "helper_runner_paths": [],
-      "note_hash": "883d5dbfa79117c8e931584fcbed0b24309df86451d7b2ca915dd0b794d1d9e1",
-      "path": "docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md",
-      "runner_path": null,
-      "title": "D=3 Repair Tracking Note (Review-Loop Disposition)"
     },
     "dark_energy_eos_note": {
       "claim_id": "dark_energy_eos_note",
@@ -56099,13 +56067,13 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [
-        "minimal_axioms_2026-05-03",
+        "minimal_axioms_2026-05-20",
         "repo.vocabulary_hygiene_design",
         "repo.controlled_vocabulary",
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0b76d191b3b7f99485ae167e1e12a915a90e191a3b328121989e9f5481000e87",
+      "note_hash": "ee1d8a6a9af24822daa9f41713e6bf53a65763205cf3ee91fa3ecc6944daf0c1",
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
@@ -61388,6 +61356,20 @@
       "runner_path": "scripts/frontier_generation_rooting_undefined.py",
       "title": "Minimal Framework Axioms (Restored)"
     },
+    "minimal_axioms_2026-05-20": {
+      "claim_id": "minimal_axioms_2026-05-20",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "key_terminology"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0a09f4b033f54f948e3cafb5f2ab041f88c37153b8729a9d5b15b563c86014ef",
+      "path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
+      "runner_path": null,
+      "title": "Minimal Framework Axioms (Qubit Reframe)"
+    },
     "minimal_bidirectional_trapping_probe_note": {
       "claim_id": "minimal_bidirectional_trapping_probe_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -66269,6 +66251,21 @@
       "runner_path": "scripts/portable_package_hierarchy_classifier.py",
       "title": "Portable Package Hierarchy Classifier"
     },
+    "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
+      "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the uniqueness",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "a1_qubit_interpretation_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "f32b79ddd3f06eaf5f596c6523f9ad4b85bd0aa5aaea6a771a003ea9a9b0f5a3",
+      "path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Pre-Record Reference State as the Unique Tracial State on A1+A2"
+    },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "claim_id": "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
       "claim_type_author_hint": "bounded_theorem",
@@ -69933,6 +69930,18 @@
       "runner_path": "scripts/quasi_persistent_relaunch_probe.py",
       "title": "Quasi-Persistent Relaunch Probe Note"
     },
+    "qubit_axiom_hardening_note_2026-05-20": {
+      "claim_id": "qubit_axiom_hardening_note_2026-05-20",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (companion to `MINIMAL_AXIOMS_2026-05-20.md` A1)",
+      "claim_type_seed_hint": "meta",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "a0febf6b81dbc4332e6eddef4a4c5f1fa93bf545d3a2a8976a97d6f8e7f13e12",
+      "path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Qubit Axiom Hardening: Bare-Qubit A1 Is Mathematically Identical to Physical-Cl(3,0)"
+    },
     "r_base_group_theory_derivation_theorem_note_2026-04-24": {
       "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
       "claim_type_author_hint": null,
@@ -70088,7 +70097,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "c0299f7c303589f5a11ae1678b43d9d178fa8e9ee7347ced23bcaf704ae33b86",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -70100,14 +70109,14 @@
       "claim_type_seed_hint": null,
       "deps": [
         "key_terminology",
-        "minimal_axioms_2026-05-03",
+        "minimal_axioms_2026-05-20",
         "ai_methodology.canonical_framing_paragraph_2026-04-25",
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25",
         "ai_methodology_note_2026-04-25",
         "repo.vocabulary_hygiene_design"
       ],
       "helper_runner_paths": [],
-      "note_hash": "aef4532dc4af8e24aab64f3b430f3490c9a3d5a871370115944f0118c20718f5",
+      "note_hash": "dcda0bc5ad157e79d21f5ca5ebb2293650c558de99e9584607e8b7da5ecbc9a5",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -70211,13 +70220,13 @@
       "deps": [
         "key_terminology",
         "repo.controlled_vocabulary",
-        "minimal_axioms_2026-05-03",
+        "minimal_axioms_2026-05-20",
         "writing_voice_guide_2026-04-25",
         "assumption_derivation_ledger",
         "ai_methodology_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "66cd162ea9d1ee189f58e81a491d71181f7b2f958589179aa5024e86552a53e4",
+      "note_hash": "f05c41859d62ff23825ffd611ec0f5d64dbce32ca7818dfdf12049ec92929080",
       "path": "docs/repo/VOCABULARY_HYGIENE_DESIGN.md",
       "runner_path": null,
       "title": "Vocabulary Hygiene Design"
@@ -80012,6 +80021,7 @@
   },
   "roots": [
     "3d_correction_master_note",
+    "a1_qubit_interpretation_note_2026-05-20",
     "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc_note_2026-05-17",
     "a3_r5_hostile_review_confirms_obstruction_note_2026-05-17",
     "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1_note_2026-05-17",
@@ -80588,6 +80598,7 @@
     "quark_route2_exact_readout_map_note_2026-04-19",
     "quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28",
     "quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28",
+    "qubit_axiom_hardening_note_2026-05-20",
     "radial_scaling_protected_angle_narrow_theorem_note_2026-05-02",
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
     "reopened_lane_checklist",
@@ -80817,27 +80828,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 501,
+      "bounded_theorem": 500,
       "decoration": 1,
-      "meta": 181,
+      "meta": 183,
       "no_go": 57,
-      "none": 1498,
+      "none": 1499,
       "open_gate": 45,
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 938,
       "decoration": 1,
-      "meta": 181,
+      "meta": 183,
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9655,
-    "leaf_count": 726,
-    "node_count": 2450,
-    "root_count": 802,
+    "edge_count": 9652,
+    "leaf_count": 727,
+    "node_count": 2452,
+    "root_count": 804,
     "runners_with_path": 2032
   }
 }

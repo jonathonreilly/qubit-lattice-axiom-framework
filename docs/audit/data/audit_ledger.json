@@ -222843,24 +222843,41 @@
       "verdict_rationale": "Within the narrow algebraic scope, the claim closes as a standard finite Berezin-calculus identity. The runner evidence is entirely class-A algebraic checking and is consistent with the proof; the note explicitly excludes the physical spin-statistics bridge and downstream positivity surfaces from the audited load."
     },
     "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:33:03.027918+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums."
+        },
+        "dep_claim_type": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration"
+        },
+        "dep_effective_status": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "31831afc8ca33f5a53cf9217d96919501a0fbb016046e4003e62341473d9dcc2",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-spin_statistics_cardinal-013",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The core C1-C2-P1-P2 claims close by standard trace and CAR algebra from the admitted inputs. The Cl(3) dimensional match is only as strong as the cited upstream authority's non-retained decoration status.",
       "claim_id": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional complex linear-algebra proof that CCR has no nonzero finite-dimensional realization, while one-mode CAR has a 2-dimensional realization with (a\u2020)^2=0 and n^2=n.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:33:03.027918+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -222868,20 +222885,22 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 2.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Taking the finite-dimensional trace gives Tr([a,a\u2020])=0 while Tr(I_H)=D, and the CAR relations give {a\u2020,a\u2020}=2(a\u2020)^2=0 plus n^2=n for n=a\u2020a.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "a4ca9fa7ab17a7ce950aa41726a768f686f236e78353bcafc5980c72c05ce430",
       "note_path": "docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or otherwise terminally audit the cited Cl(3) faithful-irrep dimensional authority, then re-audit the cardinality-match corollary.",
+      "open_dependency_paths": [
+        "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-21T22:13:47.418206+00:00",
@@ -222936,16 +222955,16 @@
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 33,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 33
       },
       "runner_path": "scripts/audit_companion_spin_statistics_cardinality_pauli_exclusion_exact_2026_05_10.py",
       "title": "Spin-Statistics Cardinality and Pauli Exclusion Narrow Theorem",
       "transitive_descendants": 3,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing mathematics is class A and the runner source performs the advertised finite-dimensional symbolic and matrix checks, with no external comparator or tuned numerical input. However the source note cites the Cl(3) faithful-irrep theorem for the cardinality match, and the restricted packet marks that cited authority as decoration rather than retained-grade. Under the rubric, a non-retained cited authority prevents a clean terminal verdict even though the local CAR/CCR algebra itself is sound."
     },
     "spinnetwork_full_ed_bounded_theorem_note_2026-05-07_w1full": {
       "audit_date": null,

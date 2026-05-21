@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | audit_in_progress | 8 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
-| ~~audited_conditional~~ | 81 |
+| ~~audited_conditional~~ | 82 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 8 |
 | `audited_clean` | 598 |
-| `audited_conditional` | 81 |
+| `audited_conditional` | 82 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1538 |
+| `unaudited` | 1537 |
 
 | claim_type | count |
 |---|---:|
@@ -792,6 +792,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9338,6 +9339,21 @@ Five-judge panel breakdown: ('second', 'audited_conditional', 'bounded_theorem',
 - **load-bearing step:** Given finite Grassmann generators satisfying (G1)-(G3) and Berezin rules (B1)-(B2), the quadratic Berezin partition Z_F = int prod_x dchi-bar_x dchi_x exp(-sum_{x,y} chi-bar_x M_xy chi_y) equals det(M), and odd-graded insertions anticommute under exchange.  _(class `A`)_
 - **chain closes:** True — The scoped inputs are exactly the Grassmann relations and Berezin rules stated in the note, and the determinant identity plus odd-odd sign follow by finite exterior-algebra/Berezin coefficient extraction. No physical Hilbert-space bridge, bosonic no-go theorem, lattice-operator property, or external comparator is needed for this bounded claim.
 - **rationale:** Within the narrow algebraic scope, the claim closes as a standard finite Berezin-calculus identity. The runner evidence is entirely class-A algebraic checking and is consistent with the proof; the note explicitly excludes the physical spin-statistics bridge and downstream positivity surfaces from the audited load.
+- **auditor confidence:** high
+
+### `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional complex linear-algebra proof that CCR has no nonzero finite-dimensional realization, while one-mode CAR has a 2-dimensional realization with (a†)^2=0 and n^2=n.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-spin_statistics_cardinal-013`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Taking the finite-dimensional trace gives Tr([a,a†])=0 while Tr(I_H)=D, and the CAR relations give {a†,a†}=2(a†)^2=0 plus n^2=n for n=a†a.  _(class `A`)_
+- **chain closes:** True — The core C1-C2-P1-P2 claims close by standard trace and CAR algebra from the admitted inputs. The Cl(3) dimensional match is only as strong as the cited upstream authority's non-retained decoration status.
+- **rationale:** The load-bearing mathematics is class A and the runner source performs the advertised finite-dimensional symbolic and matrix checks, with no external comparator or tuned numerical input. However the source note cites the Cl(3) faithful-irrep theorem for the cardinality match, and the restricted packet marks that cited authority as decoration rather than retained-grade. Under the rubric, a non-retained cited authority prevents a clean terminal verdict even though the local CAR/CCR algebra itself is sound.
+- **open / conditional deps cited:**
+  - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `staggered_3d_self_gravity_sign_note_2026-04-11`

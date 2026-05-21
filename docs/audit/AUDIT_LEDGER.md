@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 112 |
 | **retained_no_go** | 139 |
-| **retained_bounded** | 374 |
+| **retained_bounded** | 375 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | audit_in_progress | 9 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 10 |
-| `audited_clean` | 600 |
+| `audited_clean` | 601 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -350,6 +350,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `growing_graph_expansion_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -4943,6 +4944,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The dynamic-propagation visibility drop weakens with graph size, remains seed-dependent, and no monotone dynamic-propagation order parameter emerges from the frozen static-control comparison.  _(class `C`)_
 - **chain closes:** True — The supplied runner and helper sources genuinely construct the frontier-growth snapshots, generated causal DAGs, propagation amplitudes, and visibility summaries without importing the contested result or hard-coding the reported values. The conclusion is limited to the tested graph family, seeds, controls, and layer counts.
 - **rationale:** The source note's retained conclusion is a bounded no-go, not a positive physics derivation. The runner computes the frontier-distance observables and the dynamic visibility drops from the supplied graph-generation and propagation code, and the reported values support the stated non-monotone, seed-dependent behavior. No cited upstream authority is missing, and no external comparator or calibrated numerical match is used.
+- **auditor confidence:** high
+
+### `growing_graph_dynamic_propagation_replacement_note`
+
+- **Note:** [`GROWING_GRAPH_DYNAMIC_PROPAGATION_REPLACEMENT_NOTE.md`](../../docs/GROWING_GRAPH_DYNAMIC_PROPAGATION_REPLACEMENT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded replacement claim that the dynamic propagator lane is not promoted here and the retained graph-growth result is the frontier-delay proxy on the supplied growing-graph prototype runner.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-215638-bb10cae5-growing_graph_dynamic_pr-026`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained replacement observable is the frontier-delay proxy, with step-0 frontier delay 3.000, step-20 frontier delay 22.000, slope +0.9325 hops/step, and static control frontier delay 3.000.  _(class `B`)_
+- **chain closes:** True — The restricted packet includes the retained upstream frontier-expansion proxy note plus runner source, helper source, and successful cached output matching the quoted values. The source note does not attempt to establish a stronger dynamic propagator or cosmology claim.
+- **rationale:** The source note's load-bearing move is bounded and conservative: it imports the already-retained frontier-delay proxy as the replacement observable and explicitly declines the unratified dynamic-propagator and cosmology claims. The runner genuinely constructs growing graph snapshots via the helper, computes unweighted BFS distances, and calculates the displayed slopes rather than merely printing constants. Because the only positive content is a retained upstream proxy and the conclusion is a bounded demotion/replacement rather than a new derivation, the chain closes within the restricted packet.
 - **auditor confidence:** high
 
 ### `growing_graph_expansion_card_note`

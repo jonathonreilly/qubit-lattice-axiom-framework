@@ -152553,22 +152553,41 @@
       "verdict_rationale": "The second audit is right to phrase the result as conditional on a Planck-spaced Z^3 lattice and the standard nearest-neighbor finite-difference operator, but those conditions are already inside the audited bounded theorem scope and do not by themselves force audited_conditional. The clean verdict applies only to the scoped dispersion correction and arithmetic comparisons to the quoted bounds; broader note language about full sector-specific SME maps, taste-breaking phenomenology, or all-current experimental status is not ratified here."
     },
     "luders_rule_from_composition_consistency_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:34:36.597858+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-luders_rule_from_composi-017",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic derivation of the L\u00fcders form closes only after importing the standard sequential-effect composition M_{P,E}=P E P and the state/effect trace-pairing probability representation. The packet does not derive those imports from A1+A2, and the note itself lists sequential-effect composition as admitted.",
       "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Audited the finite-region M_2(C) qubit-lattice claim that Bayes consistency plus the standard sequential-effect composition determines the L\u00fcders conditioning rule for projection/Kraus records.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:34:36.597858+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -152576,20 +152595,22 @@
         "minimal_axioms_2026-05-20"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Using the standard sequential-measurement composition M_{P,E}=P E P, Bayes consistency for all subsequent effects E forces sigma|_P = P sigma P / Tr(P sigma P).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "ee8ae7a6a020099ff7c7e1973860b08dc0c739fffc5876e56d958cb515df4105",
       "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a retained-grade theorem that standard sequential-effect composition M_{P,E}=P E P is forced by the qubit-lattice operator algebra and the stated consistency conditions.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
@@ -152603,7 +152624,7 @@
       "runner_path": null,
       "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The core step is an algebraic closure: once M_{P,E}=P E P and trace-pairing probabilities are granted, equality against all effects determines the posterior density matrix. However, the standard sequential-effect composition is explicitly admitted rather than derived in the restricted packet, and the only cited authority supplied is a meta framework note rather than a retained-grade theorem for this measurement-composition bridge. The uniqueness claim is therefore conditional on an unclosed bridge, not cleanly derived from A1+A2 alone."
     },
     "main_open_cubic_validation_2026-04-11": {
       "audit_date": "2026-05-01T06:59:42.486687+00:00",

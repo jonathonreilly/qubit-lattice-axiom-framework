@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | audit_in_progress | 8 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 8 |
 | `audited_clean` | 598 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1535 |
+| `unaudited` | 1534 |
 
 | claim_type | count |
 |---|---:|
@@ -776,6 +776,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6842,6 +6843,21 @@ Five-judge panel breakdown: ('second', 'audited_conditional', 'bounded_theorem',
 - **load-bearing step:** E^2 = m^2 + p^2 - (a^2/12) sum_i p_i^4 + O(a^4 p^6).  _(class `C`)_
 - **chain closes:** True — The Planck spacing and standard finite-difference kinetic operator are explicit hypotheses of the bounded scope, not hidden dependencies. Under those hypotheses, the Taylor expansion fixes the a^2/12 coefficient and the cubic p_i^4 anisotropy, and the cached runner uses the corrected (4/a^2) normalization and reproduces the quoted Planck-scale ratios.
 - **rationale:** The second audit is right to phrase the result as conditional on a Planck-spaced Z^3 lattice and the standard nearest-neighbor finite-difference operator, but those conditions are already inside the audited bounded theorem scope and do not by themselves force audited_conditional. The clean verdict applies only to the scoped dispersion correction and arithmetic comparisons to the quoted bounds; broader note language about full sector-specific SME maps, taste-breaking phenomenology, or all-current experimental status is not ratified here.
+- **auditor confidence:** high
+
+### `luders_rule_from_composition_consistency_note_2026-05-20`
+
+- **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-region M_2(C) qubit-lattice claim that Bayes consistency plus the standard sequential-effect composition determines the Lüders conditioning rule for projection/Kraus records.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-luders_rule_from_composi-017`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the standard sequential-measurement composition M_{P,E}=P E P, Bayes consistency for all subsequent effects E forces sigma|_P = P sigma P / Tr(P sigma P).  _(class `A`)_
+- **chain closes:** False — The algebraic derivation of the Lüders form closes only after importing the standard sequential-effect composition M_{P,E}=P E P and the state/effect trace-pairing probability representation. The packet does not derive those imports from A1+A2, and the note itself lists sequential-effect composition as admitted.
+- **rationale:** The core step is an algebraic closure: once M_{P,E}=P E P and trace-pairing probabilities are granted, equality against all effects determines the posterior density matrix. However, the standard sequential-effect composition is explicitly admitted rather than derived in the restricted packet, and the only cited authority supplied is a meta framework note rather than a retained-grade theorem for this measurement-composition bridge. The uniqueness claim is therefore conditional on an unclosed bridge, not cleanly derived from A1+A2 alone.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

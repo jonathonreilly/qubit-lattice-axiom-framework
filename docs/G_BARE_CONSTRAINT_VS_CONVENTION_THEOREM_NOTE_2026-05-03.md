@@ -54,11 +54,10 @@ itself, not at `g_bare`.
 > Tr(T_a T_b) = delta_{ab} / 2                                     (CN)
 > ```
 > be the canonical Cl(3) connection normalization on the canonical triplet
-> block carried by `CL3_COLOR_AUTOMORPHISM_THEOREM.md` (two-hop dep via the
-> rescaling-freedom-removal theorem below),
-> and let the rescaling-freedom-removal theorem
-> [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
-> apply: under (CN) the Wilson plaquette small-a matching forces
+> block carried directly by `CL3_COLOR_AUTOMORPHISM_THEOREM.md`,
+> and use the inline algebraic consequence that a generator dilation
+> `T_a -> c T_a` with `c != 1` violates (CN). Under (CN), the Wilson
+> plaquette small-a matching forces
 > ```
 > beta = 2 N_c / g_bare^2.                                         (WM)
 > ```
@@ -67,8 +66,8 @@ itself, not at `g_bare`.
 > 1. **Structural constraint.** The unique value of `g_bare` compatible with
 >    (CN) and (WM) at `N_c = 3` and `beta = 2 N_c = 6` is `g_bare = 1`. Any
 >    alternative `g_bare != 1` either (a) violates (CN) by introducing a
->    `c != 1` generator dilation (forbidden by the rescaling-freedom-removal
->    theorem), OR (b) requires importing an external scale beyond the
+>    `c != 1` generator dilation (forbidden by the inline (CN) check),
+>    OR (b) requires importing an external scale beyond the
 >    framework axioms `A1` (Cl(3)) and `A2` (Z^3). In either case, the
 >    alternative is not a free convention within the framework.
 >
@@ -104,7 +103,7 @@ The theorem **does not** claim:
 The single one-hop dep is now the retained_bounded
 `cl3_color_automorphism_theorem`, which carries the canonical (CN)
 normalization directly. The rescaling-freedom-removal corollary
-[`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
 carries effective status `decoration_under_cl3_color_automorphism_theorem`
 on the audit ledger — it is, by that classification, an algebraic
 corollary of the retained parent. The 2026-05-21 re-architecture
@@ -268,7 +267,7 @@ Representative runner checks:
 ## 6. Audit-lane disposition (proposed)
 
 ```yaml
-target_claim_type: positive_theorem
+target_claim_type: bounded_theorem
 proposed_claim_scope: |
   g_bare = 1 is a structural constraint (not a separate convention choice)
   relative to the canonical Cl(3) connection normalization
@@ -364,7 +363,7 @@ the citation graph):
   this row and its dependency chain are retained by independent audit.
 - `G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md` — the
   demotion / status correction packet that names the three repair targets.
-- [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+- `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
   — the rescaling-freedom-removal corollary, currently
   `decoration_under_cl3_color_automorphism_theorem` on the ledger. The
   2026-05-21 re-architecture treats its case-(a) elimination as an
@@ -395,7 +394,7 @@ ledger is:
 > boxed under `cl3_color_automorphism_theorem`.*
 
 The 2026-05-18 named one-hop dep
-[`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
 carries effective status `decoration_under_cl3_color_automorphism_theorem`.
 That is a terminal classification under the audit lane, so this row's
 conditional status could not be lifted along the rescaling-freedom path
@@ -418,7 +417,7 @@ by independent audit on this revised row, not by this note.
 
 Independent of this row, the audit lane has a separate Ward-route program
 that reaches `g_bare = 1` via different upstream authorities — see
-[`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md)
+`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`
 (now `retained_bounded`) and
 `G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`
 (`audited_conditional`; see-also cross-reference, not a load-bearing

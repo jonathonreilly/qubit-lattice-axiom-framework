@@ -9485,9 +9485,7 @@
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "cl3_color_automorphism_theorem",
-        "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
+        "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 3,
       "effective_status": "unaudited",

@@ -33344,44 +33344,61 @@
       "verdict_rationale": "Issue: the algebraic singlet statement is correct and the live runner verifies dimension count, normalization, SU(3) invariance, antisymmetry, and singlet uniqueness, but the row adds no independent physical bridge beyond the retained-bounded color-automorphism parent. Why this blocks: it cannot stand as an independent physical baryon theorem or SM-color carrier result because confinement, baryon asymptotic states, and physical SM-color identification are not derived here. Repair target: cite a retained physical-color carrier bridge plus an independent baryon/asymptotic-state theorem before promoting beyond decoration. Claim boundary until fixed: boxed algebraic SU(3) representation-theory decoration under cl3_color_automorphism_theorem."
     },
     "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:16:28.564830+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "94d7e9f46b557f086a6bea6760e4206144ad83b507196e7daaec198ce851cece",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260521-221407-ab828979-cl3_central_pseudoscalar-016",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The separator, non-equivalence for opposite Schur scalars, and idempotent factorisation follow algebraically from the retained central pseudoscalar identity/split plus Schur's lemma and Artin-Wedderburn. No physical bridge, lattice carrier, fitted input, or external comparator is used.",
       "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited the abstract finite-dimensional complex representation-theory separator for Cl(3,0), conditional on the retained K1/K3 complexification split and central idempotents from docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:16:28.564830+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
       "deps": [
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Because omega is central, Schur's lemma gives rho_C(omega)=c I_V, and omega^2=-1 forces c^2=-1, hence c in {+i,-i}.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "935e1b8c9b9e6956afb53ec27aff4f54544250d632f73f148805ce867ad9c134",
       "note_path": "docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether the lane wants this retained as a positive theorem despite the algebraic-decoration tie-break; the derivation itself appears sound.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -33437,16 +33454,16 @@
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 42,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 42
       },
       "runner_path": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
       "title": "Cl(3) Central Pseudoscalar Schur Separator Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation."
     },
     "cl3_color_automorphism_theorem": {
       "audit_date": "2026-05-05T02:29:17.183940+00:00",

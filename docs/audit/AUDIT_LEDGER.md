@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | audit_in_progress | 10 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
@@ -31,6 +31,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
+| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 3 |
@@ -50,20 +51,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 10 |
 | `audited_clean` | 598 |
 | `audited_conditional` | 79 |
-| `audited_decoration` | 25 |
+| `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1540 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1007 |
-| `decoration` | 26 |
+| `decoration` | 27 |
 | `meta` | 226 |
 | `no_go` | 230 |
 | `open_gate` | 112 |
-| `positive_theorem` | 740 |
+| `positive_theorem` | 739 |
 
 | criticality | count |
 |---|---:|
@@ -809,6 +810,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -2213,6 +2215,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner verifies the SU(3) tensor-algebra facts from N_c=3 and the Gell-Mann generators, and the retained-bounded color-automorphism parent supplies only the algebraic symmetric-base carrier. The result adds no independent physical bridge or comparator beyond that parent.
 - **rationale:** Issue: the algebraic singlet statement is correct and the live runner verifies dimension count, normalization, SU(3) invariance, antisymmetry, and singlet uniqueness, but the row adds no independent physical bridge beyond the retained-bounded color-automorphism parent. Why this blocks: it cannot stand as an independent physical baryon theorem or SM-color carrier result because confinement, baryon asymptotic states, and physical SM-color identification are not derived here. Repair target: cite a retained physical-color carrier bridge plus an independent baryon/asymptotic-state theorem before promoting beyond decoration. Claim boundary until fixed: boxed algebraic SU(3) representation-theory decoration under cl3_color_automorphism_theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited the abstract finite-dimensional complex representation-theory separator for Cl(3,0), conditional on the retained K1/K3 complexification split and central idempotents from docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-221407-ab828979-cl3_central_pseudoscalar-016`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because omega is central, Schur's lemma gives rho_C(omega)=c I_V, and omega^2=-1 forces c^2=-1, hence c in {+i,-i}.  _(class `A`)_
+- **chain closes:** True — The separator, non-equivalence for opposite Schur scalars, and idempotent factorisation follow algebraically from the retained central pseudoscalar identity/split plus Schur's lemma and Artin-Wedderburn. No physical bridge, lattice carrier, fitted input, or external comparator is used.
+- **rationale:** The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation.
+- **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `cl3_color_automorphism_theorem`

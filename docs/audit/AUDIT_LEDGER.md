@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 110 |
 | **retained_no_go** | 141 |
-| **retained_bounded** | 374 |
+| **retained_bounded** | 375 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1311 |
-| audit_in_progress | 4 |
+| audit_in_progress | 3 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 602 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 603 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
@@ -59,10 +59,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1011 |
+| `bounded_theorem` | 1012 |
 | `decoration` | 29 |
 | `meta` | 226 |
-| `no_go` | 231 |
+| `no_go` | 230 |
 | `open_gate` | 112 |
 | `positive_theorem` | 738 |
 
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -352,6 +351,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `h0125_scalable_scout_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
+| `h0125_wider_replay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5182,6 +5182,23 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, no_go, class B). Vote breakdown: J1: first / audited_clean / no_go / class B; J2: second / audited_conditional / no_go / class C; J3: first / audited_clean / no_go / class B; J4: first / audited_clean / no_go / class B; J5: first / audited_clean / no_go / class B. Majority rationale: J1: The claim is explicitly bounded to the observed full-window rows. The load-bearing step is the direct numeric comparison: scout alpha values 0.501/0.501/0.502 versus the retained comparator at 0.499, with untested geometries excluded from scope. Under that scope the no-go closes as a class-B recorded-row comparison; lack of a rerun is not itself a substantive conditional dependency. | J2: The no-go rests on numerical scout/comparator alpha rows; that is an intended computational scout step, but the restricted packet supplies no runner/log contents or retained comparator authority, so the row-level no-go is conditional rather than clean. | J3: The scoped claim is only that the cited observed full-window rows fail to provide a wider or more scalable rescue relative to the stated width-4 comparator. That load-bearing step is a direct cross-log/value comparison, not a new first-principles computation, and it closes within the bounded observed-row scope. | J4: The scoped claim is only a bounded no-go for the observed full-window rows: the scout alpha values 0.501, 0.501, 0.502 do not improve on the stated width-4 comparator alpha 0.499. That is a direct cross-artifact numeric comparison, not an unclosed physical bridge or broad exclusion of untested geometries. | J5: The scoped claim is only the bounded observed-row no-go: the h=0.125 phys_l=4, phys_w=3 full-window scout rows do not provide a wider or more scalable rescue relative to the cited phys_l=6, phys_w=4 comparator. That follows directly from the finite recorded comparison: width 3 is not wider than width 4, and the scout alphas 0.501/0.501/0.502 do not improve on the cited 0.499 comparator. Untested geometries are outside scope.
 - **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, no_go, class B). Vote breakdown: J1: first / audited_clean / no_go / class B; J2: second / audited_conditional / no_go / class C; J3: first / audited_clean / no_go / class B; J4: first / audited_clean / no_go / class B; J5: first / audited_clean / no_go / class B. Majority rationale: J1: The claim is explicitly bounded to the observed full-window rows. The load-bearing step is the direct numeric comparison: scout alpha values 0.501/0.501/0.502 versus the retained comparator at 0.499, with untested geometries excluded from scope. Under that scope the no-go closes as a class-B recorded-row comparison; lack of a rerun is not itself a substantive conditional dependency. | J2: The no-go rests on numerical scout/comparator alpha rows; that is an intended computational scout step, but the restricted packet supplies no runner/log contents or retained comparator authority, so the row-level no-go is conditional rather than clean. | J3: The scoped claim is only that the cited observed full-window rows fail to provide a wider or more scalable rescue relative to the stated width-4 comparator. That load-bearing step is a direct cross-log/value comparison, not a new first-principles computation, and it closes within the bounded observed-row scope. | J4: The scoped claim is only a bounded no-go for the observed full-window rows: the scout alpha values 0.501, 0.501, 0.502 do not improve on the stated width-4 comparator alpha 0.499. That is a direct cross-artifact numeric comparison, not an unclosed physical bridge or broad exclusion of untested geometries. | J5: The scoped claim is only the bounded observed-row no-go: the h=0.125 phys_l=4, phys_w=3 full-window scout rows do not provide a wider or more scalable rescue relative to the cited phys_l=6, phys_w=4 comparator. That follows directly from the finite recorded comparison: width 3 is not wider than width 4, and the scout alphas 0.501/0.501/0.502 do not improve on the cited 0.499 comparator. Untested geometries are outside scope.
 - **auditor confidence:** judicial_panel_majority
+
+### `h0125_wider_replay_note`
+
+- **Note:** [`H0125_WIDER_REPLAY_NOTE.md`](../../docs/H0125_WIDER_REPLAY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical theorem that the supplied completed h=0.125 dense-family replay rows at phys_l=6, including the phys_w=4 full-window z_mass=3.0 row and phys_w=3 control, remain in the alpha~0.5 weak-field exponent class rather than moving toward 1.0, with the one-hop scout comparator also in that class.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-h0125-wider-20260521-h0125_wider_replay_note-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The cached runner exits 0 under the declared 1800s budget and reports phys_w=4, phys_l=6, full-window z=3.0 with count=6 alpha=0.499, Born=8.01e-15, and clean k=0, while the phys_w=3 full-window z=3.0 control reports alpha=0.500 and the one-hop scout dependency reports alpha=0.501-0.502 on its observed full-window rows.  _(class `C`)_
+- **chain closes:** True — The source note self-declares bounded_theorem and the evidence is a completed row-level numerical replay, not a universal closure of all wider h=0.125 routes. No-Go Discipline was considered because the prose says bounded no-go: N1, N7, and N8 do not justify a broad no_go beyond the observed rows because future wider configurations remain an out-of-scope steelman; N2 has no multiwall set; N3 terms such as bounded, observed, and retained function as scope qualifiers; N4 residual matching is satisfied for the scout comparator; N5 is valid only at the full-window observed-row resolution; N6 invokes no new-axiom or convention-retirement wall. The clean applyable tuple is therefore audited_clean bounded_theorem C, preserving the no-rescue readout only inside the supplied row scope.
+
+Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C').
+- **rationale:** The source note self-declares bounded_theorem and the evidence is a completed row-level numerical replay, not a universal closure of all wider h=0.125 routes. No-Go Discipline was considered because the prose says bounded no-go: N1, N7, and N8 do not justify a broad no_go beyond the observed rows because future wider configurations remain an out-of-scope steelman; N2 has no multiwall set; N3 terms such as bounded, observed, and retained function as scope qualifiers; N4 residual matching is satisfied for the scout comparator; N5 is valid only at the full-window observed-row resolution; N6 invokes no new-axiom or convention-retirement wall. The clean applyable tuple is therefore audited_clean bounded_theorem C, preserving the no-rescue readout only inside the supplied row scope.
+
+Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C').
+- **auditor confidence:** high
 
 ### `h0125_wider_w4_note`
 

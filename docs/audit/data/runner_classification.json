@@ -3972,6 +3972,18 @@
       "dominant_class": null,
       "runner": "scripts/diamond_signal_budget_hardening.py"
     },
+    "dimension_selection_lower_bound_bridge_v2_2026-05-20": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_dimension_selection.py"
+    },
     "dimension_selection_note": {
       "assert_count": 0,
       "counts": {
@@ -32401,6 +32413,7 @@
     "scripts/frontier_dimension_selection.py": {
       "assert_count": 0,
       "claims": [
+        "dimension_selection_lower_bound_bridge_v2_2026-05-20",
         "dimension_selection_note"
       ],
       "counts": {

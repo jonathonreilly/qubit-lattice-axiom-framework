@@ -5917,6 +5917,18 @@
       "to": "moving_source_retarded_portability_note"
     },
     {
+      "from": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+      "to": "dimension_selection_note"
+    },
+    {
+      "from": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+      "to": "d3_retention_closure_plan_2026-05-20"
+    },
+    {
+      "from": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+      "to": "dimensional_gravity_table"
+    },
+    {
       "from": "dimension_selection_note",
       "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
     },
@@ -46269,6 +46281,22 @@
       "runner_path": "scripts/diamond_signal_budget_hardening.py",
       "title": "Diamond Signal Budget Hardening Note"
     },
+    "dimension_selection_lower_bound_bridge_v2_2026-05-20": {
+      "claim_id": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate (analytic bridge)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dimension_selection_note",
+        "d3_retention_closure_plan_2026-05-20",
+        "dimensional_gravity_table"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "662c80bbf2eb2aacf199ea7a66c776a774ee8c4d391c00c4b93e69b34742073d",
+      "path": "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
+      "runner_path": "scripts/frontier_dimension_selection.py",
+      "title": "Dimension-Selection Lower-Bound Bridge V2 (Runner-Faithful)"
+    },
     "dimension_selection_note": {
       "claim_id": "dimension_selection_note",
       "claim_type_author_hint": null,
@@ -80907,7 +80935,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 502,
+      "bounded_theorem": 503,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -80916,7 +80944,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 940,
+      "bounded_theorem": 941,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -80924,10 +80952,10 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
+    "edge_count": 9663,
     "leaf_count": 728,
-    "node_count": 2455,
+    "node_count": 2456,
     "root_count": 804,
-    "runners_with_path": 2032
+    "runners_with_path": 2033
   }
 }

@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1006,
-    "decoration": 27,
+    "bounded_theorem": 1007,
+    "decoration": 26,
     "meta": 226,
     "no_go": 230,
     "open_gate": 112,
@@ -32,13 +32,12 @@
   ],
   "cycles_detected": 195,
   "effective_status_counts": {
-    "audit_in_progress": 9,
+    "audit_in_progress": 10,
     "audited_conditional": 78,
     "audited_failed": 24,
     "audited_numerical_match": 9,
     "audited_renaming": 12,
     "decoration_under_cl3_color_automorphism_theorem": 7,
-    "decoration_under_cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
     "decoration_under_graph_first_su3_integration_note": 3,
@@ -54,11 +53,11 @@
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 223,
     "open_gate": 16,
-    "retained": 112,
-    "retained_bounded": 375,
+    "retained": 110,
+    "retained_bounded": 372,
     "retained_no_go": 139,
     "retained_pending_chain": 7,
-    "unaudited": 1314
+    "unaudited": 1319
   },
   "retained_pending_chain_count": 7,
   "retained_pending_chain_examples": [

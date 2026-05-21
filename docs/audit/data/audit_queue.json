@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 870,
     "high": 27,
-    "leaf": 321,
+    "leaf": 320,
     "medium": 109
   },
   "cycle_break_target_count": 294,
@@ -37632,31 +37632,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gate_b_operator_cauchy_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_connectivity_tolerance_note",
-        "restricted_strong_field_closure_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_operator_cauchy.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "growing_graph_dynamic_propagation_replacement_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -46710,6 +46685,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 23,
-  "total_pending": 1327
+  "ready_count": 22,
+  "total_pending": 1326
 }

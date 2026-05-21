@@ -92419,24 +92419,45 @@
       "verdict_rationale": "Issue: the load-bearing step turns a seed-0 numerical sanity replay into an architecture-transfer positive without a retained theorem defining the transfer criterion or deriving the grown-row/source/readout bridge from the provided inputs. Why this blocks: the frozen outputs may show nonzero sign-linear response under the script's selected construction, but they do not by themselves prove that the old non-label architecture genuinely applies rather than passing a chosen bounded diagnostic. Repair target: cite or derive the retained grown-row construction and an explicit transfer theorem whose runner checks pass/fail criteria rather than only printing replay values. Claim boundary until fixed: the note may safely report a bounded seed-0 computational sanity check for the specified geometry-sector candidate and fixed source law."
     },
     "gate_b_operator_cauchy_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:09:37.632950+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "gate_b_connectivity_tolerance_note": "Bounded deterministic replay: the current runner reproduces the note's fixed-connectivity jitter and architecture tables, supporting only the scoped connectivity-vs-position-noise comparison and not a Gate B dynamics theorem.",
+          "restricted_strong_field_closure_note": "Exact finite-box scalar/static-conformal closure on the current 15^3 local O_h star-supported source class, covering the shell source, same-charge Dirichlet bridge, pointwise rho/S readouts, and Schur boundary action; no full GR, Regge, or astrophysical strong-field theorem is included."
+        },
+        "dep_claim_type": {
+          "gate_b_connectivity_tolerance_note": "bounded_theorem",
+          "restricted_strong_field_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_connectivity_tolerance_note": "retained_bounded",
+          "restricted_strong_field_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_connectivity_tolerance_note",
+          "restricted_strong_field_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0b7727ea159c4301d824c3915175bd40ffc047c966b78170d525010b4b8f9df6",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-gate_b_operator_cauchy_n-025",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner instantiates the Gate B graph/propagator primitives and computes the observable vectors, Cauchy increments, fits, and gate failures rather than merely printing expected constants. The cited authorities are retained_bounded, and the strong-field closure authority supports only a finite-box algebraic theorem, so the method-mismatch conclusion is scoped correctly.",
       "claim_id": "gate_b_operator_cauchy_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Bounded no-go for this runner's Gate B operator-Cauchy probes: ordered resolution refinement r=1..4, jittered fixed-connectivity ensemble refinement N=2..64 at jitter 0.30, plus method-mismatch diagnosis for applying Cauchy refinement to the finite-box restricted strong-field closure note.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go (bounded numerical no-go for the tested",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:09:37.632950+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -92445,19 +92466,19 @@
         "restricted_strong_field_closure_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Both tested operator-Cauchy gates fail: the resolution-refinement increments are non-monotone with R^2=0.5998, and the jitter-ensemble increments are non-monotone with R^2=0.1798; the restricted strong-field row is a finite-box algebraic theorem with no Cauchy refinement axis.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "6f67bf65033e65fceeb2be28958c5831bb6a0cb69cf36d32b381dac4a68450a1",
       "note_path": "docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the bounded scope: this audits only the specified observable basis and finite r/N axes, not all possible Gate B continuum limits or alternate bridge formulations.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -92517,16 +92538,16 @@
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
-        "C": 0,
+        "C": 2,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 3
       },
       "runner_path": "scripts/gate_b_operator_cauchy.py",
       "title": "Gate B Family Operator-Cauchy Continuum-Bridge Probe",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the bounded tested scope, the conclusion follows from completed runner evidence: both numerical Cauchy gates fail their stated thresholds and monotonicity checks. The runner source shown is self-contained for the load-bearing Gate B computations and does not import a contested premise or external comparator. The strong-field part is not treated as a failed numerical theorem; it is correctly marked N/A because the upstream retained authority is finite-box algebraic rather than a continuum-limit claim."
     },
     "gate_b_poisson_self_gravity_note": {
       "audit_date": "2026-05-10T13:26:55.996742+00:00",

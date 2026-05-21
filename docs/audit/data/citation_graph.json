@@ -2269,6 +2269,10 @@
       "to": "action_power_scaling_sweep_note"
     },
     {
+      "from": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
       "from": "b_independence_mechanism_note",
       "to": "minimal_axioms_2026-05-03"
     },
@@ -10515,6 +10519,10 @@
     {
       "from": "gellmann_completeness_theorem_note_2026-05-02",
       "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
     },
     {
       "from": "global_coherence_held_out2_note",
@@ -42637,6 +42645,20 @@
       "runner_path": "scripts/broken_graph_action_power_robustness.py",
       "title": "Broken-Graph Action-Power Robustness Note"
     },
+    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
+      "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "06ea434076b8d9da4be4bb41d681ee8576c97c24db0e3e7782c8ad759db10e67",
+      "path": "docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Busch POVM Extension on the Qubit-Lattice Effect Algebra (Narrow)"
+    },
     "c3_symmetry_preserved_interpretation_note_2026-05-08": {
       "claim_id": "c3_symmetry_preserved_interpretation_note_2026-05-08",
       "claim_type_author_hint": "meta",
@@ -53677,6 +53699,20 @@
       "path": "docs/GEOMETRY_SUPERPOSITION_DAG_ENSEMBLE_NOTE_2026-04-11.md",
       "runner_path": "scripts/frontier_geometry_superposition.py",
       "title": "Geometry Superposition on a DAG Ensemble"
+    },
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {
+      "claim_id": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "272c80c669e28414489c08d779f652fc3af9a5694148a2ae4af6bff9f9d4c191",
+      "path": "docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Gleason's Theorem on the Qubit-Lattice Projection Lattice (Narrow)"
     },
     "global_coherence_held_out2_note": {
       "claim_id": "global_coherence_held_out2_note",
@@ -80982,7 +81018,7 @@
       "no_go": 57,
       "none": 1499,
       "open_gate": 45,
-      "positive_theorem": 167
+      "positive_theorem": 169
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 943,
@@ -80991,11 +81027,11 @@
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 603
+      "positive_theorem": 605
     },
-    "edge_count": 9666,
-    "leaf_count": 730,
-    "node_count": 2458,
+    "edge_count": 9668,
+    "leaf_count": 732,
+    "node_count": 2460,
     "root_count": 804,
     "runners_with_path": 2032
   }

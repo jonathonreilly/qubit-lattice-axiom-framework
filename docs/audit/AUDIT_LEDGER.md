@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 141 |
+| **retained_no_go** | 142 |
 | **retained_bounded** | 375 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1314 |
-| audit_in_progress | 3 |
+| audit_in_progress | 2 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 603 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 604 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -470,6 +469,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
+| `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `newton_persistent_pattern_control_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
@@ -7332,6 +7332,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The current runner symbolically derives the stated functional form from P1-P3, checks equivalent forms, and verifies the stated limiting and round-trip cases. The note explicitly keeps h, Ω_b, Ω_DM, T_CMB/C_ν, and the cosmology layer in admitted/open support scope, so no numerical retention is being inferred.
 - **rationale:** The load-bearing step is an algebraic consequence of the stated matter-budget split, open-number reduction, and neutrino-relic convention, and the runner reproduces that algebra plus equivalent-form and limiting-case checks. The note is explicit that the result is support-level and that numerical Σm_ν retention remains blocked on admitted/open inputs h, Ω_b, and Ω_DM. Residual risk is not hidden physics in this row but the fact that the runner named in the note is not registered as the ledger primary runner.
 - **auditor confidence:** high
+
+### `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27`
+
+- **Note:** [`NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md`](../../docs/NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go that current-stack mu_current=0, the diagonal seesaw atmospheric benchmark, and y_nu^eff=g_weak^2/64 cannot be silently combined into one global Lane 4 quantitative neutrino-mass closure without an added Majorana/seesaw activation law or tiny-Dirac activation law; it does not close Lane 4 or rule out Majorana or Dirac routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-neutrino-lane4-20260521-neutrino_lane4_dirac_seesaw_fork_no_go_n-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The current-stack Majorana law makes M_R,current non-invertible with det=0 while the diagonal seesaw benchmark uses positive heavy masses with nonzero determinant; independently, y_nu^eff used as a one-Higgs Dirac eigenvalue gives 1.160287e9 eV rather than the 5.058286e-2 eV atmospheric benchmark, requiring a distinct tiny Yukawa of 2.904586e-13.  _(class `A`)_
+- **chain closes:** True — The applyable tuple is audited_clean/no_go/A for the narrow hidden-closure conflation only. Runner output gives PASS=10 FAIL=0 and directly checks the determinant fork, direct-Dirac overshoot, and limited benchmark status. No-Go Discipline: N1 pass, five packet-authorized attacks were considered: ATTEMPTED zero M_R as seesaw inverse fails by det(M_R,current)=0; ATTEMPTED benchmark M_R as current-stack M_R fails because it violates mu_current=0; ATTEMPTED y_eff as direct one-Higgs eigenvalue fails by 1.160287e9 eV vs 5.058286e-2 eV; ATTEMPTED yv rather than yv/sqrt2 still fails at GeV scale; ATTEMPTED atmospheric benchmark as global Lane 4 closure fails because note and runner retain it only as support; adding nonzero Majorana or tiny Dirac activation is outside the no-extra-premise scope and is expressly left open. N2 pass, the collapsed walls are Majorana invertibility and direct-Dirac magnitude, and closing one does not close the other. N3 pass, the assumptions are explicit in the theorem and input table; no hidden admission is needed for the negative boundary. N4 pass, no prior no-go witness is used; the residual is exactly the hidden closure conflation retired by the note. N5 pass, rhetoric is narrowed to current-stack/seesaw surface and direct one-Higgs use, while global Dirac and Majorana no-gos are disclaimed. N6 pass, no packet-available convention reframe can make a zero matrix invertible or shrink the direct Dirac mass by 2.294e10 without an added law. N7 pass, the strongest steelman is that a retained nonzero Majorana extension or tiny Dirac activation could close Lane 4, but that is the admitted future route and does not refute this no-go. N8 pass under the restricted packet: there are no prior panel outcomes, no one-hop deps, and no allowed retired-wall mechanism to apply.
+
+Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('second', 'audited_conditional', 'no_go', 'A').
+- **rationale:** The applyable tuple is audited_clean/no_go/A for the narrow hidden-closure conflation only. Runner output gives PASS=10 FAIL=0 and directly checks the determinant fork, direct-Dirac overshoot, and limited benchmark status. No-Go Discipline: N1 pass, five packet-authorized attacks were considered: ATTEMPTED zero M_R as seesaw inverse fails by det(M_R,current)=0; ATTEMPTED benchmark M_R as current-stack M_R fails because it violates mu_current=0; ATTEMPTED y_eff as direct one-Higgs eigenvalue fails by 1.160287e9 eV vs 5.058286e-2 eV; ATTEMPTED yv rather than yv/sqrt2 still fails at GeV scale; ATTEMPTED atmospheric benchmark as global Lane 4 closure fails because note and runner retain it only as support; adding nonzero Majorana or tiny Dirac activation is outside the no-extra-premise scope and is expressly left open. N2 pass, the collapsed walls are Majorana invertibility and direct-Dirac magnitude, and closing one does not close the other. N3 pass, the assumptions are explicit in the theorem and input table; no hidden admission is needed for the negative boundary. N4 pass, no prior no-go witness is used; the residual is exactly the hidden closure conflation retired by the note. N5 pass, rhetoric is narrowed to current-stack/seesaw surface and direct one-Higgs use, while global Dirac and Majorana no-gos are disclaimed. N6 pass, no packet-available convention reframe can make a zero matrix invertible or shrink the direct Dirac mass by 2.294e10 without an added law. N7 pass, the strongest steelman is that a retained nonzero Majorana extension or tiny Dirac activation could close Lane 4, but that is the admitted future route and does not refute this no-go. N8 pass under the restricted packet: there are no prior panel outcomes, no one-hop deps, and no allowed retired-wall mechanism to apply.
+
+Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('second', 'audited_conditional', 'no_go', 'A').
+- **auditor confidence:** 0.88
 
 ### `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29`
 

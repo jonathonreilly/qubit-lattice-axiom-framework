@@ -23,7 +23,7 @@ layers:
     rendered_doc: docs/KEY_TERMINOLOGY.md
     governs: "Single-page A-Z index of every repo-canonical process term."
   - id: 1_framework_substantive
-    source_of_truth: docs/MINIMAL_AXIOMS_2026-05-03.md
+    source_of_truth: docs/MINIMAL_AXIOMS_2026-05-20.md
     governs: "Framework primitives. Out of scope for this vocabulary."
   - id: 2_external_paper_text
     source_of_truth:
@@ -382,7 +382,7 @@ scope:
     - "Filename conventions"
     - "Forbidden patterns"
   out_of_scope:
-    - "Framework primitives (live in MINIMAL_AXIOMS_2026-05-03.md)"
+    - "Framework primitives (live in MINIMAL_AXIOMS_2026-05-20.md)"
     - "Physics quantities (live in ASSUMPTION_DERIVATION_LEDGER / per-claim notes)"
     - "Topic-specific physics wording (lives in topic notes; not vocabulary)"
 

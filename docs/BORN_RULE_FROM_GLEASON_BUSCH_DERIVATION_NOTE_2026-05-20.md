@@ -272,26 +272,32 @@ checks.
 
 ## Citation-graph note
 
-This note's mathematical content rests on:
+**Upstream framework dependencies** (used as inputs to this note):
 
-- **Standard probability theory** (P1)–(P3) — universal background
-- **Gleason 1957** — projection-valued measure case, dim ≥ 3
-- **Busch 2003 / Caves-Fuchs-Manne-Renes 2004** — POVM extension to
-  dim ≥ 2
-- **Lüders 1951 / Cassinelli-Lahti 1995** — measurement update rule
-- **Powers 1967** — UHF type `2^∞` tracial-state uniqueness (used
-  via the companion derivation note)
-- The framework's qubit-form A1+A2 — via
-  `MINIMAL_AXIOMS_2026-05-20.md`
-- The companion derivation note — via
-  `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate)
+- [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) — supplies `ρ_ref` as the unique tracial state on the quasi-local algebra (companion note)
+- [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md) — supplies microcausality / locality for the record-conditioning step
 
-References to existing framework notes
-(`BORN_RULE_ANALYSIS_2026-04-11`, `NONLINEAR_BORN_GRAVITY_NOTE`,
-`BEYOND_LATTICE_QCD_NOTE`, `I3_ZERO_EXACT_THEOREM_NOTE`,
-`CENTRAL_BAND_BORN_*`, `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE`,
-`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE`,
-`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10`,
-`PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE`) are pointers — they
-identify the framework lanes that this derivation closes, repairs,
-or is compatible with. They are not upstream axiom dependencies.
+**Upstream standard-math imports** (named non-derivation):
+
+- Standard probability theory (P1)–(P3) — universal background
+- Gleason 1957 — projection-valued-measure case, dim ≥ 3
+- Busch 2003 / Caves-Fuchs-Manne-Renes 2004 — POVM extension to dim ≥ 2
+- Lüders 1951 / Cassinelli-Lahti 1995 — measurement update rule
+
+**Repair-route targets** (this note proposes a repair, not closure):
+
+- [`BORN_RULE_ANALYSIS_2026-04-11.md`](BORN_RULE_ANALYSIS_2026-04-11.md) — `audited_failed` gravitational Hartree route; this note proposes Gleason–Busch as a structurally different replacement route
+- [`NONLINEAR_BORN_GRAVITY_NOTE.md`](NONLINEAR_BORN_GRAVITY_NOTE.md) — stated repair target (*"provide a retained bridge theorem deriving the probability/readout rule without imposing `|psi|^2`"*) structurally addressed but not closed
+
+**Compatibility / pointer references** (not load-bearing):
+
+- [`I3_ZERO_EXACT_THEOREM_NOTE.md`](I3_ZERO_EXACT_THEOREM_NOTE.md) — retained; consistent with this route
+- [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) — separate scalar-additivity gate; unaffected
+- [`GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_IDENTIFICATION_THEOREM_NOTE.md) — separate factorization gate; unaffected
+- [`PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md`](PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md) — relevant for the record-as-Kraus identification (currently in-flight; required prerequisite for closure)
+
+**Missing prerequisites for promotion to retained closure** (future PRs):
+
+- `LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_*` (to be written)
+- `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_*` (to be written, connects `PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE` to CPTP maps)

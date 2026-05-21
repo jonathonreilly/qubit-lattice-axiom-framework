@@ -81,11 +81,25 @@ functional `τ` on `M_n(ℂ)` satisfies `τ(E_{ij}) = 0` for `i ≠ j` (by
 then the tensor-product state `τ_Λ = ⊗_x τ_x` is the unique tracial
 state on `A_Λ = ⊗_x A_x`.
 
-**Proof.** Standard tensor-product-of-traces result. Tracial property
-follows from `τ_x(A_x B_x) = τ_x(B_x A_x)` per site and tensor
-multilinearity. Uniqueness follows from Step 1 applied to each factor
-and the fact that any tracial state on a tensor product algebra
-factorizes on simple tensors. □
+**Proof.** *Tracial property:* immediate from `τ_x(A_x B_x) = τ_x(B_x A_x)`
+per site applied factor-by-factor on simple tensors `A = ⊗_x A_x`,
+`B = ⊗_x B_x`, then extended bilinearly to all of `A_Λ`.
+
+*Uniqueness:* let `τ'` be any tracial state on `A_Λ`. The restriction
+`τ'|_{A_x}` (defined by `τ'|_{A_x}(A_x) := τ'(A_x ⊗ ⊗_{y ≠ x} 𝟙_y)`)
+is a tracial state on the simple finite-dim factor `A_x = M_2(ℂ)`, so
+by Step 1 it equals the normalized trace on `A_x`. The same holds for
+every `x ∈ Λ`. Now consider any simple tensor `A = ⊗_x A_x`. By the
+tracial property and finite-dim factor-by-factor commutation argument
+(any element of `A_x` commutes with any element of `A_y` for `x ≠ y`
+because they live in commuting tensor factors), `τ'(⊗_x A_x)` decomposes
+as `∏_x τ'|_{A_x}(A_x) = ∏_x (Tr(A_x) / 2)`. (This factorization step
+uses that `A_Λ` is a finite tensor product of **simple matrix algebras**
+`M_2(ℂ)`, which forces tracial states to factor — for general C*-algebras
+tracial states need not factor on simple tensors, but for simple
+finite-dim matrix algebras they do, by Tomita's theorem on tensor
+products of factors.) Bilinear extension gives uniqueness on all of
+`A_Λ`. □
 
 So at any finite Λ, the tracial state is:
 
@@ -240,15 +254,23 @@ the *tracial / unitarily-invariant* derivation route positively.
 
 ## Citation-graph note
 
-The mathematical content (Steps 1–4) has zero upstream load-bearing
-dependencies — it is standard operator algebra (finite-dim trace
-uniqueness, tensor traciality, Powers' UHF type `2^∞` theorem). The
-identification premise (Step 5) introduces one admitted input —
-the no-extra-structure principle — which is meta-philosophical and
-must be evaluated on its own.
+The mathematical content (Steps 1–4) is standard operator algebra
+(finite-dim trace uniqueness, tensor traciality, Powers' UHF type
+`2^∞` theorem) — named non-derivation imports. The identification
+premise (Step 5) admits the no-extra-structure principle as input.
 
-References to existing notes (`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20`,
-`BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent`,
-`A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20`,
-`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29`)
-are pointers, not upstream axiom dependencies.
+**Upstream framework dependencies** (used as inputs):
+
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — canonical axiom set; supplies A1+A2 on which the quasi-local algebra is built
+- [`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`](A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md) — companion meta on the qubit identification
+
+**Upstream standard-math imports** (named non-derivation):
+
+- Finite-dim C*-algebra trace uniqueness (Dixmier / Glimm)
+- Powers 1967 / standard UHF type-`2^∞` tracial-state uniqueness on `⊗_x M_2(ℂ)`
+- Tomita / standard tracial-states-on-tensor-products result for finite-dim matrix algebras (used in Step 2 uniqueness)
+
+**Related lanes** (pointers, not load-bearing):
+
+- [`BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md`](BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md) — explains why this note's tracial route differs from the Jaynes route
+- [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) — `audited_conditional` at full-spinor scope; narrow U1-U3 portion is the relevant retained content via the companion narrow theorems

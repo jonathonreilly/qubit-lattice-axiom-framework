@@ -11,11 +11,20 @@
 
 This note **restates** the framework's two axioms in their physically
 sharpest form. The mathematical content is unchanged: `Cl(3,0) ≅ M_2(ℂ)`
-as real algebras is *exactly* the qubit-operator-algebra identification,
-already used as Step 1 of the retained
-`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`.
-Promoting that identification from a derivation step to the primary
-form of A1 makes the qubit-per-site reading load-bearing.
+as real algebras is *exactly* the qubit-operator-algebra identification.
+The retained backbone for this identification is the pair of narrow
+positive theorems
+`cl3_complexification_split_narrow_theorem_note_2026-05-10` (`retained`)
+and `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
+(`retained`), plus the bounded
+`cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
+(`retained_bounded`). The broader
+`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` is
+`audited_conditional` at the full-spinor scope; its narrowed U1-U3
+physical-`Cl(3)`-only content is supported by the two retained narrow
+theorems above. Promoting the qubit/`M_2(ℂ)` identification from a
+derivation step to the primary form of A1 makes the qubit-per-site
+reading load-bearing.
 
 This note also records two consequences of the qubit reframe:
 
@@ -36,7 +45,23 @@ This note also records two consequences of the qubit reframe:
 ## The two framework axioms
 
 1. **A1.** A qubit at every site.
+
+   *Equivalently:* the physical local operator algebra at each `Z^3`
+   site is the one-qubit algebra `M_2(ℂ)`, equivalently `Cl(3,0)`
+   as a real algebra.
+
 2. **A2.** Sites form the cubic lattice `Z^3`.
+
+   *Equivalently:* the physical spatial substrate is the cubic
+   lattice `Z^3`.
+
+The 5-word headline A1 is the canonical statement; the *equivalently*
+line beneath it spells out the explicit math content. Both name the
+same retained mathematical object via co-equal labels. The headline
+is preferred for Maxwell-tight minimality; the *equivalently* line
+preserves continuity with the existing `Cl(3)`-framing literature
+and provides explicit identification of the operator-algebra and
+real-algebra readings.
 
 ### What "qubit" means in A1 — retained-grade binding definition
 
@@ -86,10 +111,12 @@ to the "vocabulary substitution" framing.
 - **Qubit.** The standard quantum-information reading of the
   per-site `M_2(ℂ)` operator algebra: a 2-dim complex Hilbert space
   `ℂ²` carrying the Pauli generators `σ_1, σ_2, σ_3`. The Pauli
-  relations `σ_i² = I` and `σ_i σ_j = -σ_j σ_i` for `i ≠ j` are
-  theorems on `M_2(ℂ)`, not axiom content. The "i" of quantum
-  mechanics is the central pseudoscalar `I = σ_1 σ_2 σ_3` of
-  `Cl(3,0)` under the isomorphism.
+  relations `σ_a² = 𝟙` (identity) and `σ_a σ_b = -σ_b σ_a` for
+  `a ≠ b` are theorems on `M_2(ℂ)`, not axiom content. The
+  pseudoscalar `ω = σ_1 σ_2 σ_3` (distinct from the identity `𝟙`)
+  satisfies `ω² = -𝟙` and is central in `Cl(3,0)`; under the
+  `Cl(3,0) ≅ M_2(ℂ)` isomorphism it maps to `i · 𝟙_{M_2(ℂ)}`,
+  recovering the "i" of quantum mechanics geometrically.
 - **Site.** An element of `Z^3`, the cubic lattice (integer triples).
 - **Composition.** Per-site qubit algebras over `Z^3` compose by
   standard C*-algebraic tensor product, giving the UHF C*-algebra of
@@ -186,13 +213,19 @@ reading:
    (Powers' UHF type `2^∞` result + finite-dim tracial uniqueness)
    plus a no-extra-structure identification premise.
 
-2. **Born rule derivation** —
+2. **Born rule support / repair route** —
    `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`
-   derives `p(E) = Tr(ρ E)` via Gleason–Busch on the POVM effect
-   algebra, with the derived `ρ_ref` as the pre-record reference and
-   the Lüders update rule for record conditioning. `bounded_theorem`
-   candidate. Closes the framework's stated repair target on
-   `BORN_RULE_ANALYSIS_2026-04-11.md` (`audited_failed`).
+   proposes Gleason–Busch on the derived `ρ_ref` plus the Lüders
+   update rule for record conditioning as a structurally different
+   repair route to replace the failed gravitational Hartree route
+   in `BORN_RULE_ANALYSIS_2026-04-11.md` (`audited_failed`).
+   `bounded_theorem` candidate at the support / repair-route
+   level; closure to retained positive_theorem requires closing
+   the two missing prerequisite notes (Lüders rule from
+   composition consistency; persistent-record → Kraus operator
+   identification) plus retaining the companion tracial-state
+   note. This route does not itself close the Born repair target;
+   it makes the closure path explicit.
 
 3. **Reflection positivity ↔ pre-record reference compatibility** —
    pending. The Wilson Euclidean measure is absolutely continuous

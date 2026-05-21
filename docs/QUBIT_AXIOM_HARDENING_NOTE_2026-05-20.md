@@ -168,8 +168,11 @@ simultaneously:
 3. Equivalently, per-site real Clifford algebra `A_x ≅ Cl(3,0)`
 4. Per-site Pauli generators `σ_1, σ_2, σ_3` with
    `σ_a² = I, σ_a σ_b = -σ_b σ_a` for `a ≠ b`
-5. Per-site pseudoscalar `I = σ_1 σ_2 σ_3` with `I² = -I` (the
-   "i" of QM under the `Cl(3,0)` identification)
+5. Per-site pseudoscalar `ω = σ_1 σ_2 σ_3` (the `Cl(3,0)` volume
+   element, distinct from the identity `𝟙`), satisfying `ω² = -𝟙`
+   and central in `Cl(3,0)`. Under the `Cl(3,0) ≅ M_2(ℂ)`
+   identification, `ω` maps to `i · 𝟙_{M_2(ℂ)}`, recovering the "i"
+   of quantum mechanics geometrically.
 6. Per-site state space: density matrices `ρ` on `ℂ²`
    (Bloch sphere when pure)
 7. Per-site `U(2)` inner-automorphism group, with quotient `SU(2)`

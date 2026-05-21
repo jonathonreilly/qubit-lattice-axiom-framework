@@ -3905,6 +3905,18 @@
       "to": "chronology_protection_note_2026-05-17"
     },
     {
+      "from": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+      "to": "chsh_structural_bound_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+      "to": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "ckm_atlas_axiom_closure_note",
       "to": "alpha_s_derived_note"
     },
@@ -43896,6 +43908,22 @@
       "runner_path": "scripts/audit_companion_chsh_structural_bound_narrow_exact_2026_05_17.py",
       "title": "Structural CHSH Bound \u2014 Narrow Theorem (Classical 2, Tsirelson 2\u221a2)"
     },
+    "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20": {
+      "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+        "minimal_axioms_2026-05-20",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5a5f932128dc3d591a15edffaae9920897100c9441c5da7c72c91f5d74d6225d",
+      "path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Tsirelson Bound on Lattice Qubit Pairs"
+    },
     "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02": {
       "claim_id": "circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02",
       "claim_type_author_hint": "positive_theorem",
@@ -81066,7 +81094,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 505,
+      "bounded_theorem": 506,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -81075,7 +81103,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 943,
+      "bounded_theorem": 944,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -81083,9 +81111,9 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9671,
+    "edge_count": 9674,
     "leaf_count": 735,
-    "node_count": 2463,
+    "node_count": 2464,
     "root_count": 804,
     "runners_with_path": 2032
   }

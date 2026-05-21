@@ -21041,6 +21041,10 @@
       "to": "complex_selectivity_compare_note"
     },
     {
+      "from": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
       "from": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
       "to": "minimal_axioms_2026-05-20"
     },
@@ -24923,6 +24927,10 @@
     {
       "from": "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03",
       "to": "three_generation_observable_theorem_note"
+    },
+    {
+      "from": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
     },
     {
       "from": "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
@@ -66453,6 +66461,20 @@
       "runner_path": "scripts/portable_package_hierarchy_classifier.py",
       "title": "Portable Package Hierarchy Classifier"
     },
+    "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
+      "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "507875b9097c5fde6d7b77d268bbd3af26b117ac7f0019e3a35e9a55cc4ff065",
+      "path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)"
+    },
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
       "claim_type_author_hint": "bounded_theorem",
@@ -75681,6 +75703,20 @@
       "runner_path": "scripts/frontier_generation_fermi_point.py",
       "title": "Three-Generation Matter Structure Note"
     },
+    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
+      "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0415e8fa016999d25b46aad8d3ba933e75e9275787c2d395a228602c28cfde56",
+      "path": "docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Tomita Tensor-Trace Factorization on Finite-Dim Matrix Algebras (Narrow)"
+    },
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
       "claim_id": "topological_instanton_textbook_infrastructure_import_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -81036,7 +81072,7 @@
       "no_go": 57,
       "none": 1499,
       "open_gate": 45,
-      "positive_theorem": 170
+      "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 943,
@@ -81045,11 +81081,11 @@
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 606
+      "positive_theorem": 608
     },
-    "edge_count": 9669,
-    "leaf_count": 733,
-    "node_count": 2461,
+    "edge_count": 9671,
+    "leaf_count": 735,
+    "node_count": 2463,
     "root_count": 804,
     "runners_with_path": 2032
   }

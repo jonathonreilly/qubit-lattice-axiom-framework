@@ -5,7 +5,7 @@
 **Type:** bounded_theorem candidate (positive_theorem on the uniqueness
 half; bounded by a "no-extra-structure" identification premise on the
 pre-record half)
-**Supersedes (in part):** `A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`
+**Supersedes (in part):** `archive_unlanded/a3-prime-pre-record-state-superseded-2026-05-20/A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`
 
 ## What this note proves
 
@@ -188,7 +188,7 @@ proceeds without an axiom inflation:
    `p(E) = Tr(ρ_ref E)` uniquely. Record-conditioning via Lüders'
    rule then gives the standard `|⟨ψ|φ⟩|²` form for post-record
    measurements. See sketched derivation in
-   `A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`
+   `archive_unlanded/a3-prime-pre-record-state-superseded-2026-05-20/A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`
    §"Born derivation attempt" (the sketch is unchanged; only `ρ_ref`'s
    provenance changes from posited to derived).
 
@@ -259,18 +259,18 @@ The mathematical content (Steps 1–4) is standard operator algebra
 `2^∞` theorem) — named non-derivation imports. The identification
 premise (Step 5) admits the no-extra-structure principle as input.
 
-**Upstream framework dependencies** (used as inputs):
+**Upstream framework dependencies** (load-bearing; markdown links so the citation graph records them as deps):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — canonical axiom set; supplies A1+A2 on which the quasi-local algebra is built
 - [`A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md`](A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md) — companion meta on the qubit identification
 
-**Upstream standard-math imports** (named non-derivation):
+**Upstream standard-math imports** (named non-derivation; not framework rows):
 
 - Finite-dim C*-algebra trace uniqueness (Dixmier / Glimm)
 - Powers 1967 / standard UHF type-`2^∞` tracial-state uniqueness on `⊗_x M_2(ℂ)`
 - Tomita / standard tracial-states-on-tensor-products result for finite-dim matrix algebras (used in Step 2 uniqueness)
 
-**Related lanes** (pointers, not load-bearing):
+**Plain-text pointer references** (NOT load-bearing deps; deliberately not markdown links to avoid polluting the audit dependency graph with non-load-bearing edges to conditional/contextual rows):
 
-- [`BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md`](BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md) — explains why this note's tracial route differs from the Jaynes route
-- [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md) — `audited_conditional` at full-spinor scope; narrow U1-U3 portion is the relevant retained content via the companion narrow theorems
+- `BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md` — explanatory pointer; explains why this note's tracial route differs from the Jaynes route
+- `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` — contextual pointer; `audited_conditional` at full-spinor scope. The narrow U1-U3 portion of its content is supported by the retained `cl3_complexification_split` + `cl3_faithful_irrep_dim_two` narrow theorems referenced in the canonical axiom doc, not via this row directly

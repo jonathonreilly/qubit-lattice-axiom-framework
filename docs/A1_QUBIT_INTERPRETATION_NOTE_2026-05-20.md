@@ -164,11 +164,16 @@ generalized-probability-theoretic."
 ## What this proposal does not change
 
 - **No retained, retained_bounded, or retained_no_go row shifts.**
-  The qubit identification is *already* used as Step 1 in
-  `cl3_per_site_uniqueness` (retained, narrowed to U1–U3). Adopting
-  the qubit framing as the primary statement of A1 makes existing
-  load-bearing content presentational rather than introducing new
-  content.
+  The qubit identification is supported by the retained narrow
+  theorems `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+  and `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
+  (both retained, positive_theorem). The broader
+  `cl3_per_site_uniqueness` is `audited_conditional` at the full
+  spinor scope; its narrowed U1-U3 physical-Cl(3)-only content is
+  the relevant part and is supported by the two narrow theorems
+  above. Adopting the qubit framing as the primary statement of A1
+  makes existing load-bearing content presentational rather than
+  introducing new content.
 - **No predicted observable changes.** `α_s(M_Z) = 0.1181`,
   `v = 246.282818290129 GeV`, the CKM atlas, Koide `Q = 2/3`, and all
   other retained quantitative predictions are unchanged.

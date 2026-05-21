@@ -32,7 +32,7 @@ This note also records two consequences of the qubit reframe:
    theorem* on A1+A2 rather than a separate axiom (see
    `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`).
    An earlier proposal to adopt it as a third axiom
-   (`A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`)
+   (archived as `archive_unlanded/a3-prime-pre-record-state-superseded-2026-05-20/A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`)
    is therefore superseded. The framework stays at two axioms.
 
 2. The **Born rule** moves from "borrowed postulate" to "derivation

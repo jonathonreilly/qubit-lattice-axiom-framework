@@ -1,26 +1,5 @@
 {
-  "last_invalidations": [
-    {
-      "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
-      "reason": "dep_weakened:staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16:retained_bounded->retained_pending_chain"
-    },
-    {
-      "claim_id": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
-    },
-    {
-      "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
-    },
-    {
-      "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
-    },
-    {
-      "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress"
-    }
-  ],
+  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -204076,42 +204055,51 @@
       "verdict_rationale": null
     },
     "retardation_discriminator_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:15:37.337520+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "d273812c1b90e7919972bf4bea1b751560f221803ffe293db7ec295205c0a82c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-221407-ab828979-retardation_discriminato-014",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner source genuinely computes the toy propagation rather than printing constants, but the restricted packet has only a timed-out cache with empty stdout/stderr and the source contains no hard assertion gates for the retained tables. The phase-sensitivity numbers are also not exercised by main(), so the full note claim is not certified by the provided runner artifact.",
       "claim_id": "retardation_discriminator_note",
-      "claim_scope": null,
+      "claim_scope": "Audited only the finite toy-harness claim that the implemented oscillating-source retardation harness produces the stated frequency-, delay-, family-, and seed-dependent phase-difference tables; no general instantaneous-emulator theorem was audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:15:37.337520+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The binding evidence is the finite toy-harness result with explicit assertion gates from scripts/retardation_discriminator.py and the frozen log: exact nulls, the delay=5 difference curve, and the family/seed robustness rows.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "77e023a682943962297fae6a8dfe1c2aedb06c85d4991705d7f33e6a2ebc3290",
       "note_path": "docs/RETARDATION_DISCRIMINATOR_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add or split fast deterministic assertion-gated runners covering the exact nulls, delay=5 curve, delay law, sign split, phi_0 phase-sensitivity sweep, family/seed robustness, and global-delay residual, then provide a completed SHA-pinned runner-cache certificate.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -204273,7 +204261,7 @@
       "runner_path": "scripts/retardation_discriminator.py",
       "title": "Retardation Discriminator: Oscillating Source \u2014 Finite Toy-Harness Result",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The scientific claim is bounded to a finite toy harness, and the runner source appears to instantiate that harness without importing a contested external value. However, the provided cache does not contain a completed computed certificate, the runner has no assert statements for the note's frozen values, and one claimed phase-sensitivity row is not run by main(). This is a runner-artifact closure defect beyond mere timeout noncompletion because the source itself lacks the promised assertion gates and omits a claimed section."
     },
     "retarded_field_causality_probe_note": {
       "audit_date": "2026-05-04T23:31:09.124684+00:00",

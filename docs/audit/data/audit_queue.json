@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 870,
     "high": 28,
-    "leaf": 321,
+    "leaf": 320,
     "medium": 110
   },
   "cycle_break_target_count": 294,
@@ -37584,28 +37584,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "retardation_discriminator_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/RETARDATION_DISCRIMINATOR_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/retardation_discriminator.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -46754,6 +46732,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 17,
-  "total_pending": 1329
+  "ready_count": 16,
+  "total_pending": 1328
 }

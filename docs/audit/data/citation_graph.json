@@ -16393,6 +16393,14 @@
       "to": "three_generation_structure_note"
     },
     {
+      "from": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "to": "persistent_record_as_kraus_operator_note_2026-05-20"
+    },
+    {
+      "from": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
       "from": "kubo_continuum_limit_families_note",
       "to": "kubo_continuum_limit_note"
     },
@@ -40287,7 +40295,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "59c239a44f80770b5de203e888bdf30c45f9853fb250b29f2e62a1c34e6683bc",
+      "note_hash": "7042dc6acaefa938d17990fd63f1f103dc7af2fb1b4edb9bff54eb289f84c33f",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -59261,6 +59269,21 @@
       "path": "docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md",
       "runner_path": "scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py",
       "title": "Probe Z-Substrate-Generation-Z3 \u2014 Z^3 x C_3 Substrate Three-Orbit Bound (Source Note)"
+    },
+    "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
+      "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "persistent_record_as_kraus_operator_note_2026-05-20",
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0fd47f52c7534d36138eeb6869ce528cfc05dc98323a674dbed41c603299c84e",
+      "path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)"
     },
     "kubo_continuum_limit_families_note": {
       "claim_id": "kubo_continuum_limit_families_note",
@@ -80982,7 +81005,7 @@
       "no_go": 57,
       "none": 1499,
       "open_gate": 45,
-      "positive_theorem": 167
+      "positive_theorem": 168
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 943,
@@ -80991,11 +81014,11 @@
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 603
+      "positive_theorem": 604
     },
-    "edge_count": 9666,
+    "edge_count": 9668,
     "leaf_count": 730,
-    "node_count": 2458,
+    "node_count": 2459,
     "root_count": 804,
     "runners_with_path": 2032
   }

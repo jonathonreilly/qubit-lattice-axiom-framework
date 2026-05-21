@@ -22065,6 +22065,18 @@
       "to": "lh_anomaly_trace_catalog_theorem_note_2026-04-25"
     },
     {
+      "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
+      "from": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
       "from": "r_base_group_theory_derivation_theorem_note_2026-04-24",
       "to": "hypercharge_identification_note"
     },
@@ -70532,6 +70544,22 @@
       "runner_path": "scripts/frontier_rh_sector_anomaly_cancellation_identities.py",
       "title": "RH-Sector Anomaly Cancellation Identities: SU(3)\u00b2\u00d7Y, Y\u00b3, and Gravitational\u00b2\u00d7Y"
     },
+    "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20": {
+      "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem candidate (operator-algebra compatibility result)",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "c89ebcad6b51d1bbb7103593e7fc8c3d674ca0cb168ead1c40bd4cb5388cb014",
+      "path": "docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Reflection Positivity \u2194 \u03c1_ref Radon\u2013Nikodym Compatibility"
+    },
     "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10": {
       "claim_id": "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10",
       "claim_type_author_hint": "bounded_theorem",
@@ -80925,7 +80953,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 503,
+      "bounded_theorem": 504,
       "decoration": 1,
       "meta": 184,
       "no_go": 57,
@@ -80934,7 +80962,7 @@
       "positive_theorem": 167
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 941,
+      "bounded_theorem": 942,
       "decoration": 1,
       "meta": 184,
       "no_go": 160,
@@ -80942,9 +80970,9 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9661,
-    "leaf_count": 729,
-    "node_count": 2456,
+    "edge_count": 9664,
+    "leaf_count": 730,
+    "node_count": 2457,
     "root_count": 804,
     "runners_with_path": 2032
   }

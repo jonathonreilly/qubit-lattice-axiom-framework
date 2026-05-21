@@ -9,7 +9,8 @@
 
 This note proposes sharpening the framework's statement of **A1**
 from its current Clifford-algebra form to its mathematically equivalent
-but physically more direct **qubit form**, with no change to content.
+but physically more direct **qubit form**, with no change to the local
+algebraic content.
 
 **Current A1 (`MINIMAL_AXIOMS_2026-05-03.md` line 35):**
 
@@ -17,17 +18,16 @@ but physically more direct **qubit form**, with no change to content.
 
 **Proposed A1 (per `MINIMAL_AXIOMS_2026-05-20.md`):**
 
-> A1. A qubit at every site.
+> A1. Reality is a qubit at every lattice site.
 
-The canonical statement is the bare-qubit form. The full algebraic
-identification (`per-site M_2(ℂ) ≅ Cl(3,0)` as real algebras) lives
-in the commentary block of `MINIMAL_AXIOMS_2026-05-20.md`, not in
-the axiom statement. The math content is unchanged from the current
-A1 — `Cl(3,0)` and `M_2(ℂ)` are the same algebra. Dropping the
-explicit `Cl(3)` from the canonical statement does not weaken the
-mathematical commitment: every existing `Cl(3)`-language retained
-row reads correctly under the qubit identification, and the
-identification itself is retained via
+The canonical statement is the bare-qubit form. The algebraic
+identification (`per-site M_2(ℂ) ≅ Cl(3,0)` as real algebras) sits
+immediately underneath it as the audit-stable binding. The local
+algebraic content is unchanged from the current A1: `Cl(3,0)` and
+`M_2(ℂ)` are the same local algebra. Dropping the explicit `Cl(3)`
+from the headline does not weaken the mathematical commitment: every
+existing `Cl(3)`-language retained row reads correctly under the
+qubit identification, and the identification itself is retained via
 `cl3_complexification_split_narrow_theorem_note_2026-05-10` plus
 `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`.
 
@@ -46,9 +46,9 @@ Together, these retain the qubit identification. The broader
 `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` is
 `audited_conditional` at the full-spinor scope; its narrowed U1-U3
 physical-`Cl(3)`-only portion is supported by the two retained narrow
-theorems above. The proposed change is presentational only — no
-derivation, no predicted observable, and no audit-ledger status
-changes.
+theorems above. The proposed change is presentational at the
+local-algebra level: no derivation closes, no predicted observable
+changes, and no audit-ledger status changes.
 
 ## Why this matters
 
@@ -85,35 +85,35 @@ The `Cl(3)` framing has good geometric motivation (real algebra,
 with geometric meaning, Hestenes / Doran-Lasenby tradition). But it
 obscures several physical points that the qubit framing makes obvious:
 
-### 1. The foundational claim is information-theoretic
+### 1. The foundational claim is physically legible
 
 The framework asserts "one qubit per lattice site." This is the
-smallest possible quantum-information unit. The framework's substrate
-is, literally, a quantum-information lattice. This connects directly to
-quantum-information foundations (Gleason, Busch, decoherence theory),
-quantum-computational physics (lattice quantum simulation), and modern
-holographic / quantum-gravity perspectives.
+smallest nontrivial quantum local degree of freedom. The framework's
+substrate is, literally, a qubit lattice. This makes contact with
+quantum-information foundations, quantum-computational physics, and
+modern quantum-gravity language without changing the audit boundary.
 
 The `SINGLE_AXIOM_INFORMATION_NOTE.md` (retained `meta`) was already
-hinting at this. The qubit framing makes the information-theoretic
-content load-bearing rather than incidental.
+hinting at this. The qubit framing makes the intended physical reading
+explicit rather than leaving it implicit behind the `Cl(3)` label.
 
-### 2. Entanglement is foundational, not derived
+### 2. Entanglement is the natural multi-site kinematics
 
 With a qubit at every site, multi-site entanglement is the natural
-multi-body phenomenon on the lattice. The framework's existing CHSH
-support (`chsh_structural_bound_narrow_theorem_note_2026-05-17`
-retained), Bell support, and persistent-record / decoherence lanes all
-sit naturally on top of this rather than being layered atop a real
-algebra that happens to admit a complex Hilbert representation.
+multi-body phenomenon once finite-region algebras are composed by the
+standard tensor product. The framework's existing CHSH support
+(`chsh_structural_bound_narrow_theorem_note_2026-05-17` retained),
+Bell support, and persistent-record / decoherence lanes sit naturally
+on that qubit-lattice surface. This is a routing clarification, not a
+new primitive.
 
 ### 3. The Pauli matrices are the per-site fundamental observables
 
 In the qubit framing, the Pauli matrices `σ_x, σ_y, σ_z` are the
 natural per-site spin observables (eigenvalues `±1`). This is exactly
-what the existing
-`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` derives — but in
-the qubit framing it's not a derivation, it's the direct content of A1.
+the equivalent generator presentation of the local algebra. The
+existing `PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` remains
+the retained bridge to the spin-half language used elsewhere.
 
 ### 4. The "Schur scalar separator" is the qubit chirality
 
@@ -126,17 +126,16 @@ qubit representations of the local algebra, distinguished by the
 ### 5. The connection to quantum computation is direct
 
 A `Z^3` lattice of qubits is, formally, a 3D quantum register.
-Dynamics (the Wilson action, once the gates close) is a sequence of
-local unitary gates. Records are decohered classical bits. This maps
-the framework's foundational substrate onto modern quantum-information
-language without translation.
+This maps the framework's foundational substrate onto modern
+quantum-information language without translation. All non-axiom
+structures enter only through their named derivation lanes.
 
 ### 6. The pre-record reference state becomes natural
 
 Once each site is a qubit, the natural reference state of a qubit is
 the maximally mixed state `I/2`. The composition `ρ_ref = ⊗_x I/2` is
-the unique tracial / U(2)-invariant state on the quasi-local algebra
-(this is derived in the companion note
+the unique tracial reference-state candidate on the quasi-local algebra
+(this is treated in the companion lane note
 `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`).
 Without the qubit framing, "the unique tracial state on `Cl(3) ⊗
 Z^3`" reads as abstract operator algebra; with the qubit framing, it
@@ -146,11 +145,9 @@ reads as "the maximally uncertain qubit lattice."
 
 The framework's `PERSISTENT_RECORD_*` lane and
 `DECOHERENCE_DECISION_NOTE.md` (Axiom 9: measurement is durable record
-formation) become quite natural under qubit framing: a record is a
-*classical bit*, formed when a *qubit* has decohered. The transition
-qubit → cbit is the record-formation operation. This is the same
-physics under either framing, but the qubit language makes the
-transition transparent.
+formation) become easier to state under qubit framing. The qubit
+language supplies the local substrate for record-formation lanes; it
+does not close those lanes.
 
 ### 8. The Sorkin-`I_3 = 0` results are quantum-information statements
 
@@ -172,8 +169,7 @@ generalized-probability-theoretic."
   spinor scope; its narrowed U1-U3 physical-Cl(3)-only content is
   the relevant part and is supported by the two narrow theorems
   above. Adopting the qubit framing as the primary statement of A1
-  makes existing load-bearing content presentational rather than
-  introducing new content.
+  changes the presentation, not the retained local algebra.
 - **No predicted observable changes.** `α_s(M_Z) = 0.1181`,
   `v = 246.282818290129 GeV`, the CKM atlas, Koide `Q = 2/3`, and all
   other retained quantitative predictions are unchanged.
@@ -191,8 +187,8 @@ The canonical form is the bare-qubit statement, with the algebraic
 content (`M_2(ℂ) ≅ Cl(3,0)`, Pauli relations, real-algebra dimension
 count) in commentary rather than in the axiom itself:
 
-> 1. **A1.** A qubit at every site.
-> 2. **A2.** Sites form the cubic lattice `Z^3`.
+> 1. **A1.** Reality is a qubit at every lattice site.
+> 2. **A2.** The lattice sites form the cubic lattice `Z^3`.
 
 This is the minimal-degree statement of the framework's foundational
 claim. It is mathematically identical to the current

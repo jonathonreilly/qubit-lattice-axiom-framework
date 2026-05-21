@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 372 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1324 |
+| unaudited | 1323 |
 | audit_in_progress | 9 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 11 |
+| ~~audited_renaming~~ | 12 |
 | ~~audited_conditional~~ | 74 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -54,8 +54,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 11 |
-| `unaudited` | 1547 |
+| `audited_renaming` | 12 |
+| `unaudited` | 1546 |
 
 | claim_type | count |
 |---|---:|
@@ -911,6 +911,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_theta_hierarchy_open_scalar_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `mirror_mutual_information_note` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7009,6 +7010,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The scalar two-point expressions have no mu input, so the same scalar two-point signature is compatible with both mu = 0 and mu != 0 while the Pfaffian sector differs.  _(class `C`)_
 - **chain closes:** True — The runner reproduces the same-current-data witness: scalar two-point and normal source-response signatures are mu-blind, Pfaffian signatures vary with mu, and charge-sector checks show normal sources are charge zero while the pairing seed carries charge -2. That directly blocks the implication that scalar two-point closure alone forces mu = 0.
 - **rationale:** The note claims a negative boundary, not a Dirac-global or numerical neutrino result: SR-2 cannot close C2-X from free-scalar two-point data alone. The runner checks the relevant current surface by verifying the cited authority text and constructing nonzero-mu witnesses with identical scalar and normal signatures but distinct Pfaffian sectors. Residual risk is limited to future typed scalar-to-Pfaffian coupling theorems, which the note explicitly leaves open.
+- **auditor confidence:** high
+
+### `newton_derivation_top4_bridge_note`
+
+- **Note:** [`NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audit of the claimed Principle-3 bridge for the top4 multistage compact-object family, using retained bounded upstream notes and the provided baseline runner/cache.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-215638-bb10cae5-newton_derivation_top4_b-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bridge therefore satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification on that family: s is the unique scalar whose extensivity controls the field, response, and persistence simultaneously, matching the role of one-parameter mass.  _(class `F`)_
+- **chain closes:** False — The runner supports persistence, alpha≈1, and stable kappa on the baseline case, and the retained top4 sweep supports a bounded admissible floor. The missing step is an independent derivation that this operational response parameter is the inertial quantity required by Principle 3, rather than a definitional identification of s with one-parameter mass.
+- **rationale:** The provided runner genuinely computes the baseline overlap, exponent, and kappa stability through the helper chain rather than merely printing constants. However, the claim's load-bearing move is not that computation; it is the assertion that the same scalar s controlling source strength and response is thereby the inertial mass parameter required by Principle 3. The source note explicitly frames this as a definitional identification, and the cited authorities leave persistent-pattern equivalence-principle and external-field/two-body closure open.
+- **open / conditional deps cited:**
+  - `EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md`
+  - `MATTER_INERTIAL_CLOSURE_NOTE.md`
 - **auditor confidence:** high
 
 ### `newton_persistent_pattern_control_note_2026-04-11`

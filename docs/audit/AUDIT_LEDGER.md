@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1315 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 88 |
+| ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -48,9 +48,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
+| `audit_in_progress` | 1 |
 | `audited_clean` | 604 |
-| `audited_conditional` | 88 |
+| `audited_conditional` | 89 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
-| `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -812,6 +811,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `wave_static_matrixfree_shared_geometry_compare_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
@@ -11582,6 +11582,23 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The completed runner stdout matches the source note's two H = 0.5 tables and directly supports the bounded smoke-test conclusion. The closure is only for the implemented finite-grid comparators and does not establish a continuum theorem or an independently derived physical c-infinity comparator.
 - **rationale:** Clean for the stated bounded smoke-test scope: the note's numerical claims are current with the supplied runner stdout, and the runner source constructs frozen-source histories, comparator fields, a direct finite-grid static solve, and beam readouts rather than printing the table as constants. The cited authority is retained_bounded for the imported wave-retardation primitives, and the source note explicitly avoids a continuum claim. Residual risk is interpretive: dS is audited only as the implemented direct finite-grid Poisson solve, not as a closed theorem for the unique physical static comparator.
 - **auditor confidence:** high
+
+### `weak_coupling_retention_note_2026-04-11`
+
+- **Note:** [`WEAK_COUPLING_RETENTION_NOTE_2026-04-11.md`](../../docs/WEAK_COUPLING_RETENTION_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite weak-coupling audit over the selected surface only: three graph families, two sizes per family, seeds 42..46, G=5 and G=10, N_ITER=40, DT=0.12, comparing attractive and repulsive parity coupling by shell TOWARD-count ordering, shell margin, and norm conservation. No theorem for admissible irregular bipartite graphs, no coordinate-force closure, no retained spectral-gap row, and no reliance on registered-runner-path correctness are ratified.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-judicial-panel-weak-coupling-20260521-weak_coupling_retention_note_2026-04-11-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The cached runner output for scripts/frontier_weak_coupling_retained.py shows shell ordered tw_a>tw_r on 60/60 runs, shell margin tw_a-tw_r>=10 on 60/60 runs, and norm conservation on 60/60 runs across the finite selected surface; width asymmetry is 56/60, gap ratio is 55/60 in the cache, and shell strict split is 47/60, so those secondary observables cannot carry the retained claim.  _(class `C`)_
+- **chain closes:** False — The runner directly computes the finite numerical diagnostic rather than hard-coding the shell counts, and the cached output supports the narrow finite shell-margin statement. However the source note itself is explicitly conditional: its status line names the wrong registered runner path, live-stale secondary gap count, and broader inferences not closed by the packet. The retained-claim wording still says 'on admissible irregular bipartite graphs,' which overstates the evidence unless read as shorthand for the audited irregular graph surface. Under the hostile-review rubric, the clean tuple is too strong because it could be recorded as closing more than the finite runner surface and would ignore named operational and scope walls. Applying the N1-N8 wall gate at audit scope: N1 alternative routes beyond the finite shell diagnostic are not closed in this packet; N2 the walls are separable enough to keep explicit; N3 phrases such as retained, admissible, and registered expose hidden scope/registration admissions; N4 no broader witness is available in the restricted packet; N5 the negative carveouts are properly narrow but not fully stress-tested as a no-go; N6 the packet itself gives partial closure by narrowing to the finite diagnostic; N7 a hostile reviewer can accept 60/60 shell margin while rejecting graph-family theorem promotion; N8 prior echo search is unavailable by restriction. Therefore the safe applyable tuple is audited_conditional/bounded_theorem/C, preserving the finite result while recording the unclosed walls.
+
+Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theorem', 'C').
+- **rationale:** The runner directly computes the finite numerical diagnostic rather than hard-coding the shell counts, and the cached output supports the narrow finite shell-margin statement. However the source note itself is explicitly conditional: its status line names the wrong registered runner path, live-stale secondary gap count, and broader inferences not closed by the packet. The retained-claim wording still says 'on admissible irregular bipartite graphs,' which overstates the evidence unless read as shorthand for the audited irregular graph surface. Under the hostile-review rubric, the clean tuple is too strong because it could be recorded as closing more than the finite runner surface and would ignore named operational and scope walls. Applying the N1-N8 wall gate at audit scope: N1 alternative routes beyond the finite shell diagnostic are not closed in this packet; N2 the walls are separable enough to keep explicit; N3 phrases such as retained, admissible, and registered expose hidden scope/registration admissions; N4 no broader witness is available in the restricted packet; N5 the negative carveouts are properly narrow but not fully stress-tested as a no-go; N6 the packet itself gives partial closure by narrowing to the finite diagnostic; N7 a hostile reviewer can accept 60/60 shell margin while rejecting graph-family theorem promotion; N8 prior echo search is unavailable by restriction. Therefore the safe applyable tuple is audited_conditional/bounded_theorem/C, preserving the finite result while recording the unclosed walls.
+
+Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theorem', 'C').
+- **auditor confidence:** 0.9
 
 ### `weak_coupling_sign_sensitivity_note_2026-04-11`
 

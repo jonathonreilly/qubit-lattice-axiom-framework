@@ -15,21 +15,24 @@ projector / POVM effect algebras, in relation to the P1 (scalar
 additivity on independent subsystems) admitted premise of
 [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md),
 together with the explicit honest finding that the Gleason-Busch route
-does **not** close P1 positively for two structurally distinct reasons
-(G1 + G2 below). G1: every Gleason-type derivation (Gleason 1957, Busch
-2003, Caves-Fuchs-Manne-Renes 2004, Wright-Weigert 2019) takes
-**countable σ-additivity on projectors / POVM effects** as a hypothesis
-input; it does not derive additivity from a non-additive primitive.
-G2: even granting Gleason-Busch, the framework's per-site Hilbert space
-is `H_x = C^2` (qubit, dim 2), which puts the joint register
-`H_Λ = ⊗_{x ∈ Λ} C^2` precisely into the dim-2-subsystem class where
-**Wallach's unentangled Gleason theorem is known to FAIL** (Wallach
-2000; Pitowsky 2002, "On unentangled Gleason theorems for QIT").
-The bridge from the Gleason output `p(E) = Tr(σ E)` to the framework
-scalar generator `W = log|det(D+J)|` still requires the Cauchy log
-classifier `f(xy) = f(x) + f(y) + cty → c log`, which IS P1 in
-different vocabulary (Pattern L circularity, D5 of the Route D
-consolidated no-go).
+does **not** close P1 positively. Per the 2026-05-21 narrowing review
+(see §0.1 below), the genuine route-level obstructions reduce to G1
+and G3; G2 is recorded as a per-site Gleason-uniqueness sharpening, not
+as a stand-alone P1 obstruction. G1: every Gleason-type derivation
+(Gleason 1957, Busch 2003, Caves-Fuchs-Manne-Renes 2004, Wright-Weigert
+2019) takes **countable σ-additivity on projectors / POVM effects** as
+a hypothesis input; it does not derive additivity from a non-additive
+primitive. G3: the bridge from the Gleason output `p(E) = Tr(σ E)` to
+the framework scalar generator `W = log|det(D+J)|` still requires the
+Cauchy log classifier `f(xy) = f(x) + f(y) + cty → c log`, which IS P1
+in different vocabulary (Pattern L circularity, D5 of the Route D
+consolidated no-go). G2 (narrowed): at the **per-site** tensor
+decomposition `⊗_{x ∈ Λ} C^2`, Wallach's unentangled-Gleason theorem
+fails (each per-site factor dim 2 < 3); this obstructs UNIQUE
+identification of a per-site state functional via Wallach but does NOT
+specifically obstruct P1 additivity at the **per-region** bipartition
+`H_Λ = H_A ⊗ H_B` with |A|, |B| ≥ 2 sites, where each region factor
+has dim 2^|A| ≥ 4 ≥ 3 and Wallach's hypothesis is trivially satisfied.
 
 ## 0. Honest framing up front
 
@@ -46,8 +49,10 @@ state functional, then deduce additivity of `W = log|det(D+J)|` on
 independent Grassmann blocks `D = D_A ⊕ D_B`.
 
 The honest outcome class is **`no_go`** scope-bounded to the
-Gleason-Busch scaffold. The route fails for two structurally distinct
-reasons:
+Gleason-Busch scaffold. Per the 2026-05-21 narrowing review (see §0.1
+below), the genuine route-level obstructions to P1 closure reduce to
+G1 and G3. G2 is recorded as a per-site Gleason-uniqueness sharpening,
+not as a stand-alone P1 obstruction:
 
 - **G1 — Additivity input.** Every published Gleason-type derivation
   (Gleason 1957 PVMs dim ≥ 3, Busch 2003 POVMs dim ≥ 2,
@@ -64,20 +69,36 @@ reasons:
   failure mode as the Shannon-Khinchin route (Route B PR #1368);
   recorded here in quantum-probability vocabulary.
 
-- **G2 — Wallach dim-2 failure on the framework substrate.** The
-  framework's qubit-per-site Hilbert space `H_x = M_2(C) ≅ C^2` puts
-  each subsystem at dim 2. Wallach's *Unentangled Gleason's Theorem*
-  (Wallach 2000; refined in Pitowsky 2002 *On unentangled Gleason
-  theorems for QIT*, Letters in Mathematical Physics) states:
-  *"unentangled frame functions determine unique density operators if
-  and only if **each subsystem is at least 3-dimensional**"*. For
-  qubit subsystems (dim 2), unentangled frame functions on
-  `⊗_x C^2` form a **strictly larger** class than density operators.
-  In particular, non-Born candidate state functionals exist on the
-  qubit lattice that are compatible with Gleason additivity over
-  unentangled projectors but are NOT of the form `Tr(σ E)` for any
-  density matrix `σ`. The framework substrate lands precisely in the
-  dim-2 failure case of Wallach's tensor-product Gleason theorem.
+- **G2 (narrowed) — Per-site Wallach dim-2 failure (sharpening, not a
+  P1 obstruction).** The framework's qubit-per-site Hilbert space
+  `H_x = M_2(C) ≅ C^2` puts each **per-site** tensor factor at dim 2.
+  Wallach's *Unentangled Gleason's Theorem* (Wallach 2000; refined in
+  Pitowsky 2002 *On unentangled Gleason theorems for QIT*, Letters in
+  Mathematical Physics) states: *"unentangled frame functions determine
+  unique density operators if and only if **each subsystem is at least
+  3-dimensional**"*. At the **per-site** decomposition
+  `H_Λ = ⊗_{x ∈ Λ} C^2`, each factor dim is 2 < 3, so unentangled
+  frame functions on `⊗_x C^2` form a strictly larger class than
+  density operators — Wallach's per-site uniqueness fails.
+
+  **What G2 does NOT establish.** G2 does NOT specifically obstruct
+  P1 additivity. P1 is about additivity at the **per-region**
+  bipartition `H_Λ = H_A ⊗ H_B` for disjoint regions `A, B ⊂ Z^3`
+  with `D = D_A ⊕ D_B`. At any meaningful region partition with
+  `|A|, |B| ≥ 2` sites, each region factor has dim
+  `2^|A|, 2^|B| ≥ 4 ≥ 3`, so Wallach's per-factor dim hypothesis is
+  **trivially satisfied** at the bipartition that matters for P1.
+
+  **What G2 does establish.** G2 records that any route that would
+  want to fix a UNIQUE per-site state functional via Wallach (e.g., to
+  derive additional per-site structure beyond P1) is blocked at dim 2.
+  G2 is therefore a per-site Gleason-uniqueness sharpening of the
+  Gleason-Busch scaffold landscape, not a stand-alone obstruction to
+  P1 additivity at the per-region level. The genuine route-level
+  obstructions to P1 closure are G1 (additivity-as-hypothesis-input
+  across the Gleason-Busch family) and G3 (Cauchy log selection
+  circularity); G2 is preserved as a recorded sharpening for the
+  per-site Gleason-uniqueness question.
 
 - **G3 — Bridge to scalar generator requires Cauchy log.** Even
   granting (G2 fix) that the Busch POVM extension at dim 2 with full
@@ -102,8 +123,9 @@ reasons:
   [Route D consolidated no-go](OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md)).
 
 The honest landing is therefore a **no_go** scope-bounded to the
-Gleason-Busch scaffold. This note explicitly DOES NOT claim P1 is
-false; it does NOT promote or alter the status of
+Gleason-Busch scaffold, with the route-level obstructions reducing to
+G1 and G3 per the §0.1 narrowing review. This note explicitly DOES
+NOT claim P1 is false; it does NOT promote or alter the status of
 [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md),
 [`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md),
 or any upstream row. The audit row of
@@ -114,8 +136,76 @@ it.
 
 This note is in the spirit of the
 [Route D consolidated no-go](OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md)
-and extends its enumeration with the new G1/G2/G3 obstructions for
-the Gleason-Busch quantum-probability scaffold family.
+and extends its enumeration with the G1 and G3 route-level obstructions
+for the Gleason-Busch quantum-probability scaffold family. G2 is
+recorded as a per-site Gleason-uniqueness sharpening of the same
+scaffold landscape.
+
+## 0.1 Scope-narrowing review (2026-05-21)
+
+After the original landing of this note as `no_go`, a review pass
+applied the four-exercise discipline back onto G2 itself
+(assumption audit, Elon first-principles strip, math search Tao-style;
+the lit exercise is preserved from §1.3). The review surfaced a
+scoping confusion in the original G2 framing and the §1.1 "Dimension
+hypothesis check" paragraph: G2 was stated as if the per-site dim 2
+were a P1 obstruction, but P1 additivity lives at the per-region
+bipartition where each factor has dim `2^|A| ≥ 4` for any meaningful
+region partition. Wallach's "each factor dim ≥ 3" hypothesis is
+**trivially satisfied at the per-region level** that matters for P1.
+
+Three distinguished decompositions of the joint qubit register
+`H_Λ = ⊗_{x ∈ Λ} C^2`:
+
+1. **Joint-register level.** `H_Λ` as a single Hilbert space of dim
+   `2^|Λ|`. For `|Λ| ≥ 2`, dim ≥ 4 ≥ 3, so Gleason 1957 applies.
+   This is the "joint-register dimension check" that §1.1 originally
+   recorded as satisfied.
+
+2. **Per-region bipartition (P1-relevant).**
+   `H_Λ = H_A ⊗ H_B` for disjoint regions `A, B ⊂ Z^3` with
+   `D = D_A ⊕ D_B`. Each region factor has dim `2^|A|, 2^|B|`. For
+   any meaningful region partition (`|A|, |B| ≥ 2`), dim ≥ 4 ≥ 3, so
+   Wallach 2000 applies at this bipartition and gives uniqueness of
+   the bipartite state functional. P1 additivity at this bipartition
+   reduces to the multiplicative factorization on product states
+   `σ = σ_A ⊗ σ_B` (closes by elementary trace properties), then
+   the additive selection becomes the Cauchy log = P1 (G3
+   circularity). Per-region Wallach is **not** an obstruction here.
+
+3. **Per-site decomposition (G2-relevant).** `H_Λ = ⊗_{x ∈ Λ} C^2`
+   with each per-site factor at dim 2 < 3. Wallach 2000 at this
+   refinement **fails**. Any route that would want to fix a UNIQUE
+   per-site state functional via Wallach is blocked. This is the
+   honest G2 finding.
+
+The 2026-05-21 narrowing therefore re-scopes G2:
+
+- **Old framing (over-scoped):** "Wallach dim-2 failure on the
+  framework substrate. The framework substrate lands precisely in
+  the dim-2 failure case of Wallach's tensor-product Gleason
+  theorem." This conflated per-site uniqueness with per-region P1
+  additivity.
+- **Narrowed framing:** G2 records that Wallach uniqueness **fails
+  at the per-site decomposition** (dim 2 < 3), but Wallach
+  uniqueness **succeeds at the per-region bipartition** that is
+  load-bearing for P1. G2 is therefore a per-site
+  Gleason-uniqueness sharpening of the Gleason-Busch scaffold
+  landscape, **not** a stand-alone P1 obstruction.
+
+The route-level obstructions to P1 closure via Gleason-Busch reduce
+to G1 (additivity is hypothesis input across all Gleason-type
+derivations) and G3 (Cauchy log selection between multiplicative
+`p_A · p_B` and additive `log p_A + log p_B` IS P1 in different
+vocabulary). Both G1 and G3 are scope-bounded to the Gleason-Busch
+scaffold; together with the route-portfolio convergence on the
+`F_p = r^p` counterexample family (Routes B/C/D PRs #1618 / #1616 /
+#1619), they give the rigorous structural backing for the `no_go`
+outcome class on this route, independent of G2.
+
+The four exercises remain recorded in §1.1–§1.4 in their original
+form to preserve the audit trail; the narrowing here in §0.1 is the
+correction surfaced by the re-review.
 
 ## 1. Mandatory four exercises
 
@@ -140,18 +230,37 @@ external lit import / selector or convention).
 | A10 | Identification "physical scalar bosonic observable generator `W` = continuous additive scalar functional of `\|Z\|`" | selector / convention | **same as P1** (admitted) |
 | A11 | Bridge "Gleason state functional → framework scalar generator W = log\|Z\|" via Cauchy classifier | selector / convention | **invokes log = P1** |
 
-**Dimension hypothesis check.** Gleason's original theorem requires
-Hilbert dim ≥ 3. For the joint register `H_Λ = ⊗_{x∈Λ} C^2`, the
-joint dimension is `2^|Λ|`. For `|Λ| ≥ 2` sites,
-`dim H_Λ = 2^|Λ| ≥ 4 ≥ 3`, so the joint-register dimension hypothesis
-of Gleason is satisfied. The dim-2 case `|Λ| = 1` requires the
-Busch POVM extension. **However**, the relevant question for P1 is
-not the joint-register dimension but the **per-subsystem dimension**
-when Gleason is applied to the **tensor-product factorization** —
-which is the Wallach unentangled-Gleason result. Wallach's theorem
-requires **each factor dim ≥ 3**, which the framework's
-qubit-per-site substrate (each factor dim 2) **violates**. This is
-the G2 obstruction recorded in §0.
+**Dimension hypothesis check (narrowed 2026-05-21; see §0.1).**
+Gleason's original theorem requires Hilbert dim ≥ 3. For the joint
+register `H_Λ = ⊗_{x∈Λ} C^2`, the joint dimension is `2^|Λ|`. For
+`|Λ| ≥ 2` sites, `dim H_Λ = 2^|Λ| ≥ 4 ≥ 3`, so the joint-register
+dimension hypothesis of Gleason is satisfied. The dim-2 case `|Λ| = 1`
+requires the Busch POVM extension.
+
+The P1-relevant question is which **tensor bipartition** Wallach is
+being applied to, since Wallach's unentangled-Gleason theorem
+classifies frame functions on the lattice of product projectors at
+whatever bipartition you pick.
+
+- **Per-region bipartition (load-bearing for P1).** `H_Λ = H_A ⊗ H_B`
+  with disjoint regions `A, B ⊂ Z^3` and `D = D_A ⊕ D_B`. Each region
+  factor has dim `2^|A|, 2^|B|`. For any meaningful region partition
+  (`|A|, |B| ≥ 2`), dim ≥ 4 ≥ 3, so Wallach's per-factor dim
+  hypothesis is **trivially satisfied** at this bipartition. Wallach
+  uniqueness applies; P1 additivity then reduces to G3 (Cauchy log
+  selection between multiplicative `p_A · p_B` and additive
+  `log p_A + log p_B`).
+- **Per-site decomposition (G2-relevant).** `H_Λ = ⊗_{x ∈ Λ} C^2`
+  with each per-site factor at dim 2 < 3. Wallach 2000 at this
+  refinement **fails**. This is the honest G2 finding, recorded as a
+  per-site Gleason-uniqueness sharpening of the Gleason-Busch
+  scaffold landscape, **not** a stand-alone obstruction to P1
+  additivity at the per-region level.
+
+The original G2 framing conflated these two bipartitions; the
+2026-05-21 narrowing review (see §0.1) re-scopes G2 to the per-site
+uniqueness finding only. The genuine route-level obstructions to P1
+closure reduce to G1 and G3.
 
 ### 1.2 Exercise 2 — Elon Musk first-principles
 
@@ -209,13 +318,19 @@ failures:
    formally establishes this for all five major Born-rule
    derivations.
 
-2. **(G2)** Even granting additivity, the framework's qubit-per-site
-   substrate puts each tensor factor at dim 2. Wallach's
-   unentangled-Gleason theorem (Wallach 2000) requires **each factor
-   dim ≥ 3**. At dim 2 per factor, unentangled frame functions on
-   `⊗_x C^2` form a **strictly larger** class than density operators,
-   so even the multiplicative factorization on product effects does
-   not uniquely pin `σ` — Wallach's theorem fails in dim 2.
+2. **(G2 narrowed; see §0.1)** Even granting additivity, the
+   framework's qubit-per-site substrate puts each **per-site** tensor
+   factor at dim 2. Wallach's unentangled-Gleason theorem (Wallach
+   2000) at the per-site decomposition fails (each factor dim 2 < 3),
+   so unentangled frame functions on `⊗_x C^2` form a strictly larger
+   class than density operators — per-site Wallach uniqueness fails.
+   This is a per-site Gleason-uniqueness sharpening, **not** a P1
+   obstruction. P1 additivity is about the **per-region** bipartition
+   `H_Λ = H_A ⊗ H_B` (`|A|, |B| ≥ 2`, each factor dim ≥ 4), where
+   Wallach's per-factor dim hypothesis is trivially satisfied. G2 is
+   preserved in the route record as a recorded scaffold-landscape
+   sharpening; it is not invoked as a route-level P1 obstruction in
+   the corrected statement of this note.
 
 3. **(G3)** Even if `σ` were uniquely pinned, going from
    `p(E_A ⊗ E_B) = p_A · p_B` (multiplicative product of
@@ -239,9 +354,12 @@ circularity.
 If you can't articulate the deep structural reason, that's a signal
 the premise reduces to Shannon-Khinchin's failure mode. The above
 explicitly articulates that Gleason-Busch DOES reduce to
-Shannon-Khinchin's failure mode (G1) PLUS additionally hits the
-dim-2-Wallach-failure obstruction (G2) on the framework's specific
-substrate.
+Shannon-Khinchin's failure mode (G1), with G3 (Cauchy log selection
+circularity) as the bridge-step obstruction. G2 (per-site Wallach
+dim-2 failure) is recorded as a sharpening of the Gleason-Busch
+scaffold landscape (per-site uniqueness fails) but not as a stand-alone
+route-level P1 obstruction — see §0.1 for the 2026-05-21 narrowing
+review of the original G2 framing.
 
 ### 1.3 Exercise 3 — Literature search
 
@@ -365,22 +483,36 @@ The published math results:
   proof goes through the Cauchy log functional equation. The
   additivity hypothesis is the load-bearing input.
 
-**Tao-search conclusion.** The honest math answer to (T) is: yes IF
-each factor dim ≥ 3 AND the state is the product state; no IF any
-factor at dim 2; and in all cases the proof routes through the Cauchy
-classifier which IS the additivity hypothesis in different vocabulary.
+**Tao-search conclusion (narrowed per §0.1).** The honest math
+answer to (T) is: yes IF each factor at the relevant bipartition has
+dim ≥ 3 AND the state is the product state; no IF any factor at the
+relevant bipartition has dim 2; and in all cases the proof routes
+through the Cauchy classifier which IS the additivity hypothesis in
+different vocabulary.
 
-The framework's substrate (each factor dim 2) **lands in the
-negative case** for the unconditional version. Even granting Busch
-dim-2 POVM additivity, the bridge from `p(E_A ⊗ E_B) = p_A · p_B` to
+The P1-relevant bipartition is **per-region** (`H_Λ = H_A ⊗ H_B`,
+|A|, |B| ≥ 2, each factor dim ≥ 4), where Wallach's per-factor dim
+hypothesis is satisfied. At the **per-site** decomposition
+(`H_Λ = ⊗_x C^2`, each factor dim 2) Wallach uniqueness fails — but
+that decomposition is not the load-bearing tensor structure for P1.
+The original framing in this paragraph conflated the two
+decompositions (see §0.1 narrowing review); the substantive
+obstruction to P1 closure via Gleason-Busch is **not** the per-site
+dim-2 failure but the Cauchy log selection (G3) and the
+additivity-as-input issue across the Gleason-Busch family (G1).
+
+Even granting Busch dim-2 POVM additivity (so the per-site uniqueness
+concern is moot), the bridge from `p(E_A ⊗ E_B) = p_A · p_B` to
 additive `W = log p` invokes Cauchy = P1.
 
 **No published math result derives** additivity-on-independent-
 subsystems for scalar real-valued functionals of a multiplicatively-
 factorizing partition function on qubit lattices without invoking
-either Cauchy `log` or a dim ≥ 3 per-factor hypothesis. The bare
-math problem confirms that the physics derivation cannot close via
-Gleason-Busch on the framework's qubit substrate.
+the Cauchy `log` selection step. The bare math problem confirms that
+the physics derivation cannot close via Gleason-Busch on the
+framework's qubit substrate because of G1 + G3, with G2 recorded as
+a per-site Gleason-uniqueness sharpening of the same scaffold
+landscape.
 
 ## 2. Premise statement (Gleason-Busch derivation chain)
 
@@ -418,13 +550,23 @@ Then by (P-GB3),
 `W[J_A ⊕ J_B] = log(Z_A · Z_B) = log Z_A + log Z_B = W[J_A] +
 W[J_B]`. This would close P1.
 
-**Where the chain breaks:** at three points (G1, G2, G3 of §0).
+**Where the chain breaks (narrowed per §0.1):** the genuine
+route-level break points are G1 (additivity is hypothesis input
+across the Gleason-Busch family) and G3 (Cauchy log selection
+circularity). G2 is preserved as a per-site Gleason-uniqueness
+sharpening of the Gleason-Busch scaffold landscape; it is not
+invoked as a stand-alone P1 obstruction in the corrected statement.
 
 ## 3. Load-bearing step (no_go obstruction)
 
 This note's load-bearing content is **negative** (no_go class). The
 load-bearing step is the structural argument that (P-GB1)-(P-GB4)
-cannot close P1, made precise by three obstructions G1/G2/G3.
+cannot close P1, made precise by route-level obstructions G1 and G3,
+with G2 recorded as a per-site Gleason-uniqueness sharpening of the
+same scaffold landscape (see §0.1 narrowing review). Sections 3.1,
+3.2, 3.3 below preserve the original G1 / G2 / G3 elaboration for
+audit-trail completeness; the corrected statement of G2's scope is
+in §0.1, and the route-level obstructions are G1 + G3.
 
 ### 3.1 G1 — Additivity input (Pattern A circularity)
 
@@ -456,20 +598,37 @@ is the classifier that Gleason-Busch reduces to per Wright-Weigert
 2019. The Cauchy classifier is the additivity hypothesis input, not
 the output.
 
-### 3.2 G2 — Wallach dim-2 failure on qubit substrate
+### 3.2 G2 — Per-site Wallach dim-2 sharpening (narrowed per §0.1; not a route-level P1 obstruction)
 
-The framework's per-site `H_x = C^2` puts each tensor factor at dim
-2. Wallach's *Unentangled Gleason's Theorem* (Wallach 2000) requires
-**each factor dim ≥ 3** for unentangled frame functions to
-uniquely determine a density matrix. At dim 2 per factor, the
-unentangled-Gleason classification **fails**.
+This subsection preserves the original G2 elaboration for the audit
+trail. The corrected statement of G2's scope is in §0.1: G2 records
+that Wallach uniqueness **fails at the per-site decomposition**
+`H_Λ = ⊗_x C^2` (each factor dim 2 < 3), but Wallach uniqueness
+**succeeds at the per-region bipartition** `H_Λ = H_A ⊗ H_B`
+(`|A|, |B| ≥ 2`, each factor dim ≥ 4) that is load-bearing for P1.
+G2 is therefore a per-site Gleason-uniqueness sharpening of the
+Gleason-Busch scaffold landscape, **not** a stand-alone route-level
+P1 obstruction. The route-level obstructions are G1 + G3.
+
+The original G2 elaboration follows, preserved verbatim from the
+2026-05-21 first-pass landing:
+
+The framework's per-site `H_x = C^2` puts each per-site tensor
+factor at dim 2. Wallach's *Unentangled Gleason's Theorem* (Wallach
+2000) requires **each factor dim ≥ 3** for unentangled frame
+functions to uniquely determine a density matrix. At dim 2 per
+per-site factor, the per-site unentangled-Gleason classification
+**fails**.
 
 Specifically: on `⊗_x C^2` with `|Λ| ≥ 2`, the joint register has
 dim `2^|Λ| ≥ 4 ≥ 3`, so Gleason 1957 on the joint register
-(considered without tensor structure) applies. BUT the
-**tensor-product factorization** question is the Wallach unentangled-
-Gleason question, which requires dim ≥ 3 per factor. The framework
-substrate (dim 2 per factor) fails Wallach's hypothesis.
+(considered without tensor structure) applies. The
+**per-site tensor decomposition** question is the Wallach unentangled-
+Gleason question at the most-refined decomposition, which requires
+dim ≥ 3 per factor. The framework substrate (per-site dim 2) fails
+Wallach's per-site hypothesis. **As recorded in §0.1, the
+P1-relevant bipartition is per-region — not per-site — so this per-
+site failure does not specifically obstruct P1 additivity.**
 
 **Concrete witness.** Consider the symbolic 2x2 single-qubit case.
 On a single qubit `H = C^2`, the projector lattice has rank-1
@@ -478,18 +637,16 @@ on this lattice are NOT all of the form `Tr(ρ P)` — there exist
 non-affine frame functions on `S^2` that satisfy Gleason additivity
 over orthogonal projectors but are not density matrix traces. Busch
 2003 fixes this by extending to POVM effects (stronger additivity
-hypothesis), but the unentangled version on multipartite qubits
-remains failure-prone per Wallach 2000.
-
-For the framework's `⊗_x C^2` substrate, this means: the Gleason
-classification on the joint register applies (dim ≥ 3), but the
-**factorization step** (P-GB3) — which is what would force P1 — is
-the Wallach question, and Wallach's hypothesis is violated.
+hypothesis), but the per-site unentangled version on multipartite
+qubits remains failure-prone per Wallach 2000.
 
 **Runner verifies (T-G2):** symbolic check that `⊗_x C^2` has joint
-dim `2^|Λ|` (≥ 4 for `|Λ| ≥ 2`) and per-factor dim `2 < 3` so the
-Wallach hypothesis is violated; symbolic constructive witness of a
-non-density-matrix frame function on `C^2` from Pitowsky 2002 §3.
+dim `2^|Λ|` (≥ 4 for `|Λ| ≥ 2`) and per-site factor dim `2 < 3` so
+the per-site Wallach hypothesis is violated; symbolic constructive
+witness of a non-density-matrix frame function on `C^2` from Pitowsky
+2002 §3. The runner identity is a per-site uniqueness sharpening; it
+does NOT establish a P1 obstruction at the per-region bipartition
+(see §0.1).
 
 ### 3.3 G3 — Cauchy log classifier circularity (D5 Pattern L)
 
@@ -573,14 +730,17 @@ on the `F_p` family" claim, which is the load-bearing step.
 1. **Documents the Gleason-Busch route failure rigorously.** Future
    agents do not need to re-attack the Gleason-Busch direction;
    this no_go records why the route structurally cannot close P1
-   (G1 + G2 + G3).
+   (route-level obstructions G1 + G3, with G2 recorded as a per-site
+   Gleason-uniqueness sharpening — see §0.1 narrowing review).
 
-2. **Identifies the qubit-substrate-specific obstruction.** G2
-   (Wallach dim-2 failure) is **new** to the route portfolio: prior
-   Routes A/B/C/E did not invoke the per-subsystem dimension
-   requirement. The framework's qubit-per-site substrate puts it
-   in the Wallach failure class for tensor-product Gleason
-   uniqueness.
+2. **Records the per-site Wallach dim-2 sharpening of the
+   scaffold landscape.** G2 (Wallach uniqueness fails at the per-site
+   decomposition) is recorded for the per-site Gleason-uniqueness
+   question. Per the §0.1 narrowing review, G2 is **not** a P1
+   obstruction at the per-region bipartition (each region factor
+   dim ≥ 4 satisfies Wallach trivially); it is preserved as a per-
+   site uniqueness sharpening of the Gleason-Busch scaffold
+   landscape only.
 
 3. **Records the convergence with Routes A/B/C/E.** Gleason-Busch
    joins Routes A (operator-algebraic), B (Shannon-Khinchin), C
@@ -656,18 +816,29 @@ claim_scope: |
   Scope-bounded structural no-go on closing the P1 (scalar
   additivity on independent subsystems) admitted premise of
   observable_principle_from_axiom_note via the Gleason-Busch
-  quantum-probability scaffold. The no_go records three
-  structural obstructions: (G1) Gleason-Busch additivity hypothesis
-  is input not output; (G2) Wallach unentangled-Gleason fails on
-  the framework's per-site qubit dim-2 substrate; (G3) bridging
-  Gleason output to scalar generator invokes Cauchy log classifier
-  (= P1 in different vocabulary, Pattern L circularity D5). The
-  F_p[J] = |Z[J]|^p counterexample family of prior Routes A/C/E
-  reappears unchanged. Does NOT claim P1 is false; does NOT
-  promote any upstream row.
+  quantum-probability scaffold. The no_go records two route-level
+  obstructions plus one per-site Gleason-uniqueness sharpening
+  (narrowed 2026-05-21 — see §0.1): (G1) Gleason-Busch additivity
+  hypothesis is input not output across the Gleason 1957 / Busch 2003
+  / CFMR 2004 / Wright-Weigert 2019 family; (G3) bridging Gleason
+  output to the framework scalar generator invokes the Cauchy log
+  classifier (= P1 in different vocabulary, Pattern L circularity D5
+  of the Route D consolidated no-go); (G2 sharpening) Wallach
+  unentangled-Gleason fails at the per-site decomposition
+  H_Λ = ⊗_x C^2 (each factor dim 2 < 3), but succeeds at the
+  per-region bipartition H_Λ = H_A ⊗ H_B that is load-bearing for
+  P1 — G2 is recorded as a per-site uniqueness sharpening of the
+  scaffold landscape, NOT a stand-alone route-level P1 obstruction.
+  The F_p[J] = |Z[J]|^p counterexample family of prior Routes A/C/E
+  reappears unchanged at the level of the G3 multiplicative-to-
+  additive selection. Does NOT claim P1 is false; does NOT promote
+  any upstream row.
 load_bearing_step: |
-  G1+G2+G3 obstruction chain plus existential F_p witness pairs
-  with nonzero block-additivity defect at exact Fraction precision.
+  G1 + G3 route-level obstruction chain plus existential F_p witness
+  pairs with nonzero block-additivity defect at exact Fraction
+  precision. G2 is a recorded per-site Gleason-uniqueness sharpening
+  of the same scaffold landscape; it does not enter the load-bearing
+  argument for the route-level P1 obstruction.
 load_bearing_step_class: A
 declared_one_hop_deps:
   - observable_principle_from_axiom_note
@@ -703,9 +874,10 @@ PYTHONPATH=scripts python3 \
 ```
 
 Expected scorecard: PASS=N, FAIL=0 at exact `Fraction` / SymPy
-precision. A passing run supports only the bounded structural
-content of G1/G2/G3 above plus the honest scope-boundary checks; it
-does **NOT** close P1 of
+precision. A passing run supports the bounded structural content of
+G1 + G3 (route-level P1 obstructions) plus the G2 per-site
+Gleason-uniqueness sharpening (per §0.1 narrowing review) plus the
+honest scope-boundary checks; it does **NOT** close P1 of
 [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md).
 
 ## 7. Cited authorities (external; no framework status promotion)
@@ -736,23 +908,30 @@ does **NOT** close P1 of
 - A.-L. Cauchy (1821), *Cours d'Analyse de l'Ecole Royale
   Polytechnique*, §V (log functional equation classifier).
 
-## 8. Honest verdict
+## 8. Honest verdict (narrowed per §0.1)
 
 **Outcome class: `no_go`. P1 is NOT closed by the Gleason-Busch
 attempt. The Gleason-Busch route reduces to the same Pattern L
-circularity (D5) as Routes A/B/C/E, plus additionally hits the
-Wallach dim-2 failure obstruction (G2) specific to the framework's
-qubit-per-site substrate.**
+circularity (D5) as Routes A/B/C/E. The route-level obstructions
+are G1 (additivity is hypothesis input across the Gleason-Busch
+family) and G3 (Cauchy log selection circularity). G2 (Wallach
+per-site dim-2 failure) is recorded as a per-site Gleason-uniqueness
+sharpening of the Gleason-Busch scaffold landscape — see §0.1 — but
+is NOT a stand-alone route-level P1 obstruction.**
 
 The honest structural finding is that the Gleason-Busch theorem
 classifies the **already-additive** state-functional class on POVM
 effects; it does not derive additivity from a non-additive primitive
-(G1). The framework's per-site qubit substrate (`H_x = C^2`) puts each
-tensor factor at dim 2, where Wallach's unentangled-Gleason theorem
-fails (G2). And even granting Busch's POVM dim-2 extension, going
+(G1). And even granting full Gleason-Busch uniqueness at the
+per-region bipartition load-bearing for P1 (where each factor has
+dim ≥ 4 ≥ 3 and Wallach's hypothesis is trivially satisfied), going
 from Gleason output `p(E_A ⊗ E_B) = p_A · p_B` to scalar generator
 additivity `W = log p` invokes the Cauchy log classifier, which IS
-P1 in different vocabulary (G3, Pattern L circularity).
+P1 in different vocabulary (G3, Pattern L circularity). At the
+per-site decomposition (each factor dim 2 < 3) Wallach uniqueness
+also fails (G2 sharpening), but that finding is about per-site
+state functional identification, not about P1 additivity at the
+per-region bipartition.
 
 The `F_p[J] = |Z[J]|^p` counterexample family of Routes A/C/E
 reappears unchanged: it is compatible with Gleason-Busch multiplicative
@@ -804,7 +983,9 @@ register):
   by this row.
 - [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md`](OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_D_SHARPENED_NO_GO_NOTE_2026-05-17.md)
   — Route D consolidated no-go that this note extends with the
-  Gleason-Busch G1/G2/G3 obstructions.
+  Gleason-Busch G1 + G3 route-level obstructions (and the G2 per-site
+  Gleason-uniqueness sharpening of the same scaffold landscape; see
+  §0.1 narrowing review).
 - [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](OBSERVABLE_PRINCIPLE_P1_BRIDGE_OPERATOR_ALGEBRAIC_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
   — Route A operator-algebraic external bounded note; provides the
   `F_p` counterexample family that this no_go uses.

@@ -3,22 +3,32 @@
 
 This runner verifies the structural no-go on closing the P1 admitted
 premise of OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md via the Gleason-Busch
-quantum-probability scaffold. The no_go records three structural
-obstructions:
+quantum-probability scaffold. Per the 2026-05-21 narrowing review
+(see source note §0.1), the route-level obstructions reduce to G1
+and G3, with G2 recorded as a per-site Gleason-uniqueness sharpening
+of the same scaffold landscape (not a stand-alone route-level P1
+obstruction):
 
   G1 -- Gleason-Busch additivity is an INPUT hypothesis, not derived.
         Every published Gleason-type theorem (Gleason 1957, Busch 2003,
         CFMR 2004, Wright-Weigert 2019) takes sigma-additivity on
         projectors / POVM effects as the load-bearing hypothesis.
-  G2 -- Wallach unentangled-Gleason FAILS at per-factor dim = 2. The
-        framework's per-site H_x = C^2 puts each tensor factor at dim 2,
-        precisely the case where Wallach 2000 fails to uniquely
-        determine a density matrix from unentangled frame functions.
+        Route-level P1 obstruction.
+  G2 -- (narrowed 2026-05-21) Wallach unentangled-Gleason FAILS at the
+        per-site decomposition H_Lambda = (x) H_x with H_x = C^2 (each
+        per-site factor dim 2 < 3). This is a per-site Gleason-
+        uniqueness sharpening of the Gleason-Busch scaffold landscape.
+        Wallach SUCCEEDS at the per-region bipartition H_Lambda = H_A
+        (x) H_B with |A|, |B| >= 2 (each region factor dim 2^|A| >= 4
+        >= 3), which is the bipartition that is load-bearing for P1.
+        G2 is therefore NOT a stand-alone route-level P1 obstruction;
+        the route-level obstructions are G1 + G3.
   G3 -- Bridging Gleason output p(E_A x E_B) = p_A . p_B to scalar
         generator additivity W[J_A + J_B] = W[J_A] + W[J_B] invokes the
         Cauchy log functional equation classifier
         f(xy) = f(x) + f(y) + cty -> c log, which IS P1 in different
         vocabulary (Pattern L circularity, D5 of the Route D no-go).
+        Route-level P1 obstruction.
 
 The F_p[J] = |Z[J]|^p counterexample family of Routes A/C/E reappears
 unchanged: F_p is compatible with Gleason-Busch multiplicative
@@ -114,10 +124,14 @@ def test_T2_assumption_audit_table() -> None:
         "Wallach 2000",
         "Pitowsky 2002",
         "Wright-Weigert 2019",
-        # Dimension hypothesis check
+        # Dimension hypothesis check (narrowed 2026-05-21)
         "Dimension hypothesis check",
-        # The crucial finding: Wallach hypothesis violated
-        "violates",
+        # The crucial narrowed finding: Wallach succeeds at per-region
+        # bipartition (trivially satisfied at |A|,|B| >= 2), fails at
+        # per-site decomposition
+        "trivially satisfied",
+        "per-site",
+        "per-region",
     ]
     missing = [s for s in required if s not in text]
     check(
@@ -138,9 +152,10 @@ def test_T3_elon_first_principles() -> None:
         "Why Gleason might force it",
         # Why it fails
         "Why this hope fails",
-        # All three failure modes
+        # Route-level obstructions (G1 + G3) plus G2 sharpening
+        # (narrowed 2026-05-21 per §0.1 review)
         "(G1)",
-        "(G2)",
+        "(G2 narrowed",
         "(G3)",
         # The deep reason
         "deep reason",
@@ -195,14 +210,16 @@ def test_T5_tao_math_search() -> None:
         "Negative for any factor at dim 2",
         # Cauchy reformulation
         "Cauchy functional equation form",
-        # Tao-search conclusion
+        # Tao-search conclusion (narrowed 2026-05-21 per §0.1)
         "Tao-search conclusion",
-        # Honest answer
-        "honest math answer",
+        # Honest answer (narrowed 2026-05-21: per-region vs per-site
+        # bipartition distinction now load-bearing)
+        "honest math\nanswer",  # split across lines after narrowing
         # No published result derives additivity
         "No published math result",
     ]
-    missing = [s for s in required if s not in text]
+    text_norm_space = " ".join(text.split())
+    missing = [s for s in required if s.replace("\n", " ") not in text_norm_space]
     check(
         "Tao math search covers affirmative dim>=3, negative dim 2, Cauchy form",
         len(missing) == 0,
@@ -377,23 +394,32 @@ def test_T8_G2_wallach_dim_2_failure() -> None:
         f"per-site dim = {per_site_dim} < 3 -> Wallach hypothesis violated",
     )
 
-    # The G2 finding: framework substrate falls in the dim-2 case where
-    # unentangled frame functions form a strictly larger class than density
-    # operators.
+    # G2 narrowed 2026-05-21 (see §0.1 narrowing review): G2 is a
+    # per-site Gleason-uniqueness sharpening of the Gleason-Busch
+    # scaffold landscape, NOT a stand-alone route-level P1 obstruction.
+    # The runner now verifies the narrowed G2 documentation: that per-site
+    # Wallach uniqueness fails at dim 2 (the sharpening), that per-region
+    # Wallach uniqueness succeeds at the P1-relevant bipartition, and that
+    # G2 is explicitly classified as a sharpening rather than a stand-alone
+    # obstruction.
     text = NOTE.read_text(encoding="utf-8")
     # Normalize whitespace to match line-wrapped phrases
     text_norm = " ".join(text.split())
     required = [
-        "G2 — Wallach dim-2 failure",
+        # G2 narrowed header
+        "G2 — Per-site Wallach dim-2 sharpening",
         "C^2",
-        # The note phrases this as "each tensor factor at dim 2" and
-        # "(each factor dim 2)" rather than the literal "each factor at
-        # dim 2"; check the canonical phrasing.
-        "each tensor factor at dim 2",
-        # Pitowsky 2002 attribution
+        # Per-site decomposition is where Wallach fails (dim 2 < 3)
+        "per-site tensor factor at dim 2",
+        # Per-region decomposition is where Wallach succeeds (load-bearing
+        # for P1; each factor dim ≥ 4 ≥ 3)
+        "per-region bipartition",
+        # Explicit classification: G2 is a sharpening, not a P1 obstruction
+        "per-site Gleason-uniqueness sharpening",
+        # Pitowsky 2002 attribution preserved
         "Pitowsky 2002",
-        # Non-density-matrix witness: the note says "NOT of the form Tr(σ E)"
-        "NOT of the form",
+        # Section 0.1 narrowing review cross-reference present
+        "§0.1",
     ]
     missing = [s for s in required if s not in text_norm]
     check(

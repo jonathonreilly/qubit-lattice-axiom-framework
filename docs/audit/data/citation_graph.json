@@ -63801,7 +63801,7 @@
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9649f57f476165dc76e0d7a2402e4f0cea3f56ccbcceb1e1d77f1d435c3faa49",
+      "note_hash": "13b1a841c1727f22bfd9bfec9c3d7cb1bf1f5fed92709b1ac959f859d6e9042c",
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_GLEASON_BUSCH_ROUTE_NARROW_NOTE_2026-05-21.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_gleason_busch_route.py",
       "title": "Observable-Principle P1 Bridge \u2014 Gleason-Busch Route Narrow Note"

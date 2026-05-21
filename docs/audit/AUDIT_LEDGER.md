@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | audit_in_progress | 8 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
-| ~~audited_conditional~~ | 85 |
+| ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 8 |
 | `audited_clean` | 598 |
-| `audited_conditional` | 85 |
+| `audited_conditional` | 86 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1534 |
+| `unaudited` | 1533 |
 
 | claim_type | count |
 |---|---:|
@@ -797,6 +797,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -9581,6 +9582,21 @@ Five-judge panel breakdown: ('second', 'audited_conditional', 'bounded_theorem',
 - **load-bearing step:** Given a fixed total ordering on the finite site set, the Jordan-Wigner string c_x = (prod_{y < x} sigma_3^(y)) sigma_+^(x) produces operators satisfying the finite-mode CAR relations (J1)-(J2) on H_Lambda = V^{tensor N}.  _(class `A`)_
 - **chain closes:** False — The algebraic JW step closes on its own terms from Pauli identities and finite tensor products. However the only cited authority is itself marked as a decoration effective status, not a retained-grade authority in the restricted packet.
 - **rationale:** The runner source performs genuine exact symbolic Pauli and tensor-product checks rather than printing constants, and its 44 class-A passes match the source note's JW/CAR claims. The load-bearing derivation is an algebraic identity check, with no external comparator or tuned numerical input. The terminal status cannot be audited_clean because the one-hop upstream authority is not retained-grade in this packet; its provided effective status is a decoration under another theorem rather than retained, retained_no_go, or retained_bounded.
+- **open / conditional deps cited:**
+  - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded conditional algebraic claim that Cl(3) multiplicity k=1 implies a two-dimensional per-site complex module, while k≥2 remains admissible and leaves unconditional U4 open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-018`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the cited Cl(3) decomposition, every finite-dimensional complex representation is ρ_+^{n_+} ⊕ ρ_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so the added single-module condition k(x)=1 implies dim_C H_x=2.  _(class `A`)_
+- **chain closes:** True — The conditional claim follows algebraically from the supplied decomposition theorem and the definition k=n_++n_-. The note explicitly does not claim the missing physical selection step from admissible k≥1 to k=1.
+- **rationale:** The bounded conditional statement closes on its own terms as an algebraic consequence of the cited Cl(3) representation decomposition. However, the only cited authority is presented in the restricted packet with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than a retained-grade status, so retained closure cannot propagate under the rubric. The runner performs exact symbolic checks and also constructs k≥2 counterexamples, matching the note's non-closure of unconditional U4.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high

@@ -224982,24 +224982,41 @@
       "verdict_rationale": "The runner source performs genuine exact symbolic Pauli and tensor-product checks rather than printing constants, and its 44 class-A passes match the source note's JW/CAR claims. The load-bearing derivation is an algebraic identity check, with no external comparator or tuned numerical input. The terminal status cannot be audited_clean because the one-hop upstream authority is not retained-grade in this packet; its provided effective status is a decoration under another theorem rather than retained, retained_no_go, or retained_bounded."
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-21T22:35:02.904225+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums."
+        },
+        "dep_claim_type": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration"
+        },
+        "dep_effective_status": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-018",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conditional claim follows algebraically from the supplied decomposition theorem and the definition k=n_++n_-. The note explicitly does not claim the missing physical selection step from admissible k\u22651 to k=1.",
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Audited the bounded conditional algebraic claim that Cl(3) multiplicity k=1 implies a two-dimensional per-site complex module, while k\u22652 remains admissible and leaves unconditional U4 open.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-21T22:35:02.904225+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -225007,20 +225024,22 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "By the cited Cl(3) decomposition, every finite-dimensional complex representation is \u03c1_+^{n_+} \u2295 \u03c1_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so the added single-module condition k(x)=1 implies dim_C H_x=2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d147962b455e511fbcd3e9fd8638b0a56c1005f35a1002aab35bd96be6c54140",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to provide a retained-grade effective-status certificate for docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md or audit this row explicitly as conditional on that decoration parent.",
+      "open_dependency_paths": [
+        "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-21T22:13:47.420033+00:00",
@@ -225075,16 +225094,16 @@
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 34,
+        "B": 3,
+        "C": 5,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 46
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The bounded conditional statement closes on its own terms as an algebraic consequence of the cited Cl(3) representation decomposition. However, the only cited authority is presented in the restricted packet with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than a retained-grade status, so retained closure cannot propagate under the rubric. The runner performs exact symbolic checks and also constructs k\u22652 counterexamples, matching the note's non-closure of unconditional U4."
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

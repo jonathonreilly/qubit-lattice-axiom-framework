@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1318 |
+| unaudited | 1319 |
 | audit_in_progress | 8 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 75 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -49,14 +49,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 8 |
-| `audited_clean` | 602 |
-| `audited_conditional` | 76 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 599 |
+| `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1541 |
+| `unaudited` | 1542 |
 
 | claim_type | count |
 |---|---:|
@@ -69,8 +69,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 1202 |
-| `high` | 48 |
+| `critical` | 1205 |
+| `high` | 45 |
 | `medium` | 205 |
 | `leaf` | 886 |
 
@@ -121,6 +121,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | B | - |
+| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
@@ -198,10 +201,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | B | - |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -732,7 +732,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
-| `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -1410,22 +1409,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation.
 - **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation.
 - **auditor confidence:** judicial_panel_majority
-
-### `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Physical-Cl(3)-only classification: U1-U3 for the real algebra Cl(3,0), its two 2-dimensional complex chirality irreps, and finite-dimensional decomposition into their direct sums.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-123603-20260517T123603Z-a9187f18-axiom_first_cl3_per_site-targeted`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The complexification splits as Cl(3) ⊗_R C ≅ M_2(C) ⊕ M_2(C), with the two summands indexed by the central character ω = ±i.  _(class `A`)_
-- **chain closes:** True — The in-scope representation-theoretic claim follows from the provided A1 local-algebra input plus standard finite-dimensional Clifford/semisimple algebra facts. The out-of-scope U4 Hilbert-space bridge is explicitly excluded and is not needed for U1-U3.
-- **rationale:** The mathematical load-bearing step is a genuine algebraic closure: the note correctly repairs the odd-complex-Clifford split and derives the two chirality irreps distinguished by ω = ±i. The runner source mostly provides algebraic/numerical exhibits for those facts and does not import an external comparator or tuned numerical premise. However, the restricted packet's cited framework authorities are marked meta rather than retained-grade under the supplied rubric, so the verdict cannot be audited_clean despite the U1-U3 algebra closing on its own terms.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-05-03.md`
-  - `MINIMAL_AXIOMS_2026-04-11.md`
-- **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
 
@@ -2205,32 +2188,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The source note has narrowed the claim to an algebraic embedding/channel-count theorem and explicitly removes the physical SM color bridge from the load-bearing scope. The runner source constructs the symmetric/antisymmetric base split, embeds standard Gell-Mann generators, checks commutators, trace normalization, and the Fierz identity rather than merely printing constants. The remaining assertions about physical color and EW correction are stated as conditional/deferred, so they do not block the bounded algebraic theorem.
 - **auditor confidence:** high
 
-### `cl3_complexification_split_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-audit-loop-019e14a6-39f9-7350-93b2-eea65ad3d445`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** In Cl(3,0) tensor_R C, e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 are complete central orthogonal idempotents, giving Cl(3,0) tensor_R C isomorphic to M_2(C) direct-sum M_2(C).  _(class `A`)_
-- **chain closes:** True — The chain closes from the Clifford relations plus admitted finite-dimensional real and complex representation theory. The Pauli realization and central-idempotent split establish the algebra decomposition, and Artin-Wedderburn/Schur gives the two-dimensional irreducible modules.
-- **rationale:** The note remains inside abstract Clifford algebra and standard finite-dimensional representation theory. K1-K4 are algebraic consequences of the defining relations, the Pauli realisation, the central idempotent split, and the standard module theory of M_2(C). The runner provides exact symbolic A-class checks and does not import a physical bridge, comparator, tuned scale, or sector chosen to match an observation.
-- **auditor confidence:** high
-
-### `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-audit-loop-019e14b1-3217-7182-9319-9a7006e838f1`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** By the sibling narrow theorem (K3), Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C), so Artin-Wedderburn gives exactly two irreducible complex modules, each of dimension 2.  _(class `B`)_
-- **chain closes:** True — The only load-bearing dependency, the complexification split note, is provided as retained, and the remaining steps are standard semisimple algebra representation theory admitted by the packet. The note explicitly excludes the physical per-site Hilbert-space bridge, so that missing bridge does not block this scoped algebraic claim.
-- **rationale:** The scoped theorem closes as an abstract algebra statement from the retained split Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C) plus Artin-Wedderburn and complete reducibility. The runner is only corroborative and partly hard-codes representative Pauli blocks, but the proof does not rely on the runner to derive the classification. No physical observable, lattice Hilbert-space identification, or sector-selection bridge is claimed inside this note.
-- **auditor confidence:** high
-
 ### `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`
 
 - **Note:** [`CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
@@ -2242,19 +2199,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For all M in M_2(C), gamma(M) := sigma_2 M^T sigma_2 equals adj(M), so M gamma(M) = det(M) I_2 and the identity coefficient is det(M).  _(class `A`)_
 - **chain closes:** True — The cited Cl(3) to M_2(C) authority is retained, and the remaining steps are direct 2x2 matrix algebra. The source note explicitly excludes the lattice determinant bridge, so the open physical readout admission is not required for this scoped claim.
 - **rationale:** The load-bearing determinant identity follows from an explicit symbolic adjugate computation and the standard cofactor identity. The grade-action signs are likewise checked directly in the Pauli realization, and the full-lattice readout is correctly treated as a boundary rather than claimed closure. No hidden physics import or external comparator is used inside the audited scope.
-- **auditor confidence:** high
-
-### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-dimensional complex representation theory of the real Clifford algebra Cl(3,0) generated by gamma_i with {gamma_i,gamma_j}=2 delta_ij I: Pauli irreps exist, omega is central with omega^2=-I, and the faithful irreducible complex reps are exactly the two 2-dimensional chiralities.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop-019e14b9-64f6-7df0-bb0e-ae950acf8c94`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with the two summands distinguished by omega = ±i, implies that each chirality has the unique 2-dimensional irreducible module.  _(class `A`)_
-- **chain closes:** True — The scoped theorem is purely algebraic: the Clifford relations give omega central with omega^2=-I, and the complexified Wedderburn decomposition plus Schur's lemma gives the two 2-dimensional irreducible chiral modules. The packet explicitly excludes physical Hilbert-space identification and downstream bridges, so no omitted physical dependency is needed for this claim.
-- **rationale:** The claim closes as a bounded algebraic theorem over the explicitly stated Cl(3,0) generator relations. The runner exactly verifies the Pauli representatives, central pseudoscalar relations, chirality split idempotents, inequivalence of the two chiralities, and the conditional tensor-dimension corollary. No external comparator, tuned numerical scale, hidden physics bridge, or same-surface decoration is load-bearing inside the stated scope.
 - **auditor confidence:** high
 
 ### `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`

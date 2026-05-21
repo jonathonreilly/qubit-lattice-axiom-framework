@@ -409,30 +409,66 @@ of the staggered-Dirac realization gate.
 
 ## Load-bearing Dependencies
 
-- Explicit framework baseline: [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md)
+The U1–U3 physical-Cl(3)-only content of this note is supported by
+**three retained / retained_bounded narrow theorems** that
+collectively establish the qubit/`M_2(ℂ)` identification underlying
+A1 of the 2026-05-20 qubit-reframe axiom set:
 
-## Audit dependency scoping (2026-05-17)
+- [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) — establishes `Cl(3,0) ⊗_ℝ ℂ ≅ M_2(ℂ) ⊕ M_2(ℂ)` (Step 3 of this note's U1–U3 derivation).
+- [CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) — establishes that every faithful complex irreducible representation of `Cl(3,0)` is 2-dim (load-bearing for U2).
+- [CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained_bounded`, bounded_theorem) — establishes Pauli-irrep uniqueness (load-bearing for U2's canonical convention `γ_i = σ_i`).
 
-Per the 2026-05-08 narrowing of this note to physical-Cl(3)-only U1–U3 content, and
-the 2026-05-10 `audited_conditional` repair instruction
-(*"remove the out-of-scope staggered-Dirac gate citation from this
-physical-Cl(3)-only audit packet or mark it as non-load-bearing metadata outside
-the one-hop cited-authority set"*), the following notes appear in
-this file as **non-load-bearing metadata only**, backticked rather
-than markdown-linked so the citation graph parser does not register
-them as one-hop dependencies of the physical-Cl(3)-only U1–U3 audit packet:
+Framework-baseline surfaces (meta, not load-bearing for the
+narrow-theorem chain above, but explicitly authorising the U1–U3
+scope):
+
+- [MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md) — current public framework memo (qubit reframe), explicitly identifies this note's U1–U3 content as supported by the three retained narrow theorems above (see § "What this note does" of `MINIMAL_AXIOMS_2026-05-20.md`).
+- [MINIMAL_AXIOMS_2026-04-11.md](MINIMAL_AXIOMS_2026-04-11.md) — original two-axiom framing (preserved as historical baseline).
+
+## Audit dependency scoping (2026-05-20 qubit-reframe repair)
+
+Per the 2026-05-08 narrowing of this note to physical-Cl(3)-only
+U1–U3 content + the 2026-05-10 `audited_conditional` repair
+instruction (`dependency_not_retained: mark the current minimal-axiom
+authority as retained-grade or exempt framework meta authorities
+from the retained-grade dependency rule`), this revision wires the
+**three retained narrow theorems** above as the load-bearing one-hop
+dependency chain. The narrow-theorem chain replaces the prior
+meta-axiom dependency:
+
+- The audit-verdict repair sub-target "mark the current minimal-axiom
+  authority as retained-grade" is **not** the chosen branch (meta
+  rows by convention are not promoted to retained). Instead, this
+  revision takes the second branch ("exempt framework meta
+  authorities from the retained-grade dependency rule") by **routing
+  the load-bearing dependency through the three retained narrow
+  theorems** rather than through the meta surface. The meta
+  `MINIMAL_AXIOMS_2026-05-20.md` and `MINIMAL_AXIOMS_2026-04-11.md`
+  rows are cited as framework-baseline context (defining the A1+A2
+  scope), not as load-bearing one-hop authorities for the U1–U3
+  algebraic content.
+- Under the qubit reframe of A1 (qubit at every site ≡ `M_2(ℂ)` ≡
+  `Cl(3,0)` per site), the three narrow theorems collectively establish
+  the U1–U3 physical-`Cl(3)`-only content from retained primitives.
+  No new axiom is added; the qubit reframe sharpens the statement of
+  A1 without changing content (per `MINIMAL_AXIOMS_2026-05-20.md`
+  § "What this note does").
+
+Historical-context non-load-bearing metadata (preserved from prior
+revisions, kept backticked rather than markdown-linked so the
+citation graph parser does not register them as one-hop
+dependencies):
 
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — historical
   context for the now-out-of-scope U4 closure path.
 - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` —
   carrier of the out-of-scope U4 / staggered-Dirac/Grassmann bridge
-  content; consumed by downstream notes (spin-statistics, RP, cluster
-  decomposition, CPT) directly, not via this note.
+  content; consumed by downstream notes directly, not via this note.
 
-The single load-bearing one-hop dependency of the U1–U3 physical-Cl(3)-only packet
-is `MINIMAL_AXIOMS_2026-04-11.md` (and its successor surface
-`MINIMAL_AXIOMS_2026-05-03.md` cited above in the historical-context
-section).
+The load-bearing one-hop dependency chain of the U1–U3 physical-`Cl(3)`-only
+audit packet is now **the three retained narrow theorems above**,
+with `MINIMAL_AXIOMS_2026-05-20.md` cited as framework-baseline
+context only.
 
 ## Citations
 

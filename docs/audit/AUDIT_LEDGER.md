@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1313 |
+| unaudited | 1312 |
 | audit_in_progress | 8 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
-| ~~audited_conditional~~ | 83 |
+| ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 8 |
 | `audited_clean` | 598 |
-| `audited_conditional` | 83 |
+| `audited_conditional` | 84 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1536 |
+| `unaudited` | 1535 |
 
 | claim_type | count |
 |---|---:|
@@ -736,6 +736,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2519,6 +2520,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within that finite scoped sweep, the runner source computes the instantaneous and source-driven fields, zero-source reduction, sign counts, mean shifts, and log-log exponents, and the stdout matches the source note. The result does not establish any broader no-go for other coupled-field architectures, families, gain rules, or source laws.
 - **rationale:** The note is clean only as a bounded computational no-go. The runner does not hard-code the reported table; it constructs the fields over the generated families and computes the reduction check, sign survival, and fitted exponents, with no cited upstream dependency needed for the stated finite result. The source note accurately reports the runner output and keeps the safe conclusion to exact zero-source reduction, sign survival on sampled rows, and failure of clean linear scaling for this minimal architecture. Residual risk is scope control: it must not be cited as excluding unsampled architectures, parameters, DAG families, or a separately derived physical mass observable.
 - **auditor confidence:** medium
+
+### `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the explicitly specified Cl(3) Pauli internal factor and even-L Z^3 lattice C_lat, P_lat operators, (CP)^2 is a scalar ε I_V with ε fixed by the lattice inversion convention.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-cpt_c3_cp_squared_scalar-015`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** (CP)^2 = (C_lat P_lat)^2 ⊗ (G_C G_P)^2 = (ε_lat I_lat) ⊗ I_int = ε_lat I_V.  _(class `A`)_
+- **chain closes:** False — The algebraic computation itself closes on the explicit matrices: the orbital and internal factors square to scalars and tensor to ε I_V. However, one cited load-bearing authority is marked decoration_under_cl3_complexification_split rather than retained-grade under the rubric.
+- **rationale:** The load-bearing step is a genuine finite-dimensional algebraic identity check over the explicit C and P operators, and the runner source actually constructs the Pauli, lattice, permutation, and tensor-product matrices rather than merely printing constants. The runner output reports PASS=44, FAIL=0, all class-A exact symbolic checks. The restricted packet nevertheless includes CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, which is not retained-grade under the provided verdict rules.
+- **open / conditional deps cited:**
+  - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
 
 ### `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17`
 

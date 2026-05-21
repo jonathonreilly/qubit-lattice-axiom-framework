@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 140 |
+| **retained_no_go** | 141 |
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1310 |
-| audit_in_progress | 6 |
+| audit_in_progress | 5 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 600 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 601 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
@@ -62,9 +62,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `bounded_theorem` | 1011 |
 | `decoration` | 29 |
 | `meta` | 226 |
-| `no_go` | 230 |
+| `no_go` | 231 |
 | `open_gate` | 112 |
-| `positive_theorem` | 736 |
+| `positive_theorem` | 735 |
 
 | criticality | count |
 |---|---:|
@@ -122,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
-| `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
@@ -372,6 +371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
+| `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -5498,6 +5498,23 @@ Second-stage five-judge panel breakdown: ('second', 'audited_clean', 'no_go', 'A
     },
     {
       "first_auditor_error": "The first audit misclassified the object as a positive_theorem and class C. The source note explicitly blocks the standalone A4 shortcut, and the runner checks finite algebraic underdetermination rather than computing a new first-princi
+- **auditor confidence:** high
+
+### `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29`
+
+- **Note:** [`HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md`](../../docs/HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The natural full-cell odd Boolean/Jordan-Wigner coframe response on H_cell=(C^2)^4 does not descend to P_A H_cell by compression onto the Hamming-weight-one packet; this does not close intrinsic, quotient/bilinear, changed-morphism, or explicit-carrier active-block coframe routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-20260521-hubble-a5-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Each natural odd Jordan-Wigner Gamma_i flips a primitive bit, so every weight-one basis vector is sent to weight zero or two; therefore P_A Gamma_i P_A=0 for all i, [P_A,Gamma_i]!=0, the compressed span is only span{P_A}, and (P_A Gamma_i P_A)^2=0 rather than P_A.  _(class `C`)_
+- **chain closes:** True — Clean only at the narrowed no_go scope. N1 PASS: five attack routes are addressed in the packet: direct weight preservation fails by leakage [4,4,4,4]; direct compressed generators fail because P_A Gamma_i P_A=0; metric compatibility fails because compressed squares differ from P_A by norm 2; rotated/linear natural odd coframes fail by linearity from zero compression and span rank 1; inherited occupation grading fails because parity restricts to -P_A. Intrinsic Cl_4, quotient/bilinear, changed-morphism, and explicit-carrier routes are preserved as out of scope, not hidden closures. N2 PASS: the wall collapses to one wall, P_A is not reducing for the fixed odd coframe, so zero compression and metric failure are consequences rather than independent walls. N3 PASS: natural and standard are explicit premises/finite-algebra context, not hidden claims of universality. N4 PASS: runner residual matches the claim exactly, direct compression descent, and A1/A4 are contextual only. N5 PASS: the negative phrase is tested only at block compression of full-cell odd generators; the note explicitly rejects broader no-active-block wording. N6 PASS: partial closure paths are named and left open; no new-axiom-required overclaim is made. N7 PASS: the strongest steelman is the runner's own intrinsic C^4 Cl_4 construction plus possible quotient/bilinear theorem, but that defeats only a broader claim, not this compression no_go. N8 PASS within the restricted packet: A1/A4 are similar boundary echoes and neither supplies a mechanism that makes the natural odd generators reduce P_A.
+
+Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('hybrid', 'audited_clean', 'no_go', 'C'). Majority ratifies the hybrid tuple audited_clean/no_go/C: the second audit has the correct negative claim type and narrowed scope, while the first audit's C-class runner-supported load-bearing classification is the conservative class for this packet.
+- **rationale:** Clean only at the narrowed no_go scope. N1 PASS: five attack routes are addressed in the packet: direct weight preservation fails by leakage [4,4,4,4]; direct compressed generators fail because P_A Gamma_i P_A=0; metric compatibility fails because compressed squares differ from P_A by norm 2; rotated/linear natural odd coframes fail by linearity from zero compression and span rank 1; inherited occupation grading fails because parity restricts to -P_A. Intrinsic Cl_4, quotient/bilinear, changed-morphism, and explicit-carrier routes are preserved as out of scope, not hidden closures. N2 PASS: the wall collapses to one wall, P_A is not reducing for the fixed odd coframe, so zero compression and metric failure are consequences rather than independent walls. N3 PASS: natural and standard are explicit premises/finite-algebra context, not hidden claims of universality. N4 PASS: runner residual matches the claim exactly, direct compression descent, and A1/A4 are contextual only. N5 PASS: the negative phrase is tested only at block compression of full-cell odd generators; the note explicitly rejects broader no-active-block wording. N6 PASS: partial closure paths are named and left open; no new-axiom-required overclaim is made. N7 PASS: the strongest steelman is the runner's own intrinsic C^4 Cl_4 construction plus possible quotient/bilinear theorem, but that defeats only a broader claim, not this compression no_go. N8 PASS within the restricted packet: A1/A4 are similar boundary echoes and neither supplies a mechanism that makes the natural odd generators reduce P_A.
+
+Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('hybrid', 'audited_clean', 'no_go', 'C'). Majority ratifies the hybrid tuple audited_clean/no_go/C: the second audit has the correct negative claim type and narrowed scope, while the first audit's C-class runner-supported load-bearing classification is the conservative class for this packet.
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 866,
+    "critical": 865,
     "high": 27,
     "leaf": 314,
     "medium": 109
@@ -9468,28 +9468,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py",
       "transitive_descendants": 975
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "cross_confirmation_disagreement",
-      "claim_id": "hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29",
-      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "disagreement",
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.929,
-      "note_path": "docs/HUBBLE_LANE5_C1_A5_BOOLEAN_COFRAME_RESTRICTION_OBSTRUCTION_NOTE_2026-04-29.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction.py",
-      "transitive_descendants": 974
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -46443,6 +46421,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 10,
-  "total_pending": 1316
+  "ready_count": 9,
+  "total_pending": 1315
 }

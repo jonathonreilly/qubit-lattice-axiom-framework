@@ -40287,7 +40287,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "59c239a44f80770b5de203e888bdf30c45f9853fb250b29f2e62a1c34e6683bc",
+      "note_hash": "7042dc6acaefa938d17990fd63f1f103dc7af2fb1b4edb9bff54eb289f84c33f",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"

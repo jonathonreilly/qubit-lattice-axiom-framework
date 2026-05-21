@@ -83,7 +83,7 @@ load-bearing inputs beyond those already named.
 | Step 3: chirality operator `gamma_5` requires even total spacetime dimension | Clifford-algebra classification of `omega = gamma_1 ... gamma_n` | no |
 | Step 3: combine with `d_s = 3` from A2 substrate axiom | axiom A2 input (substrate-axiom input, not derived here) | no |
 | Step 3 conclusion: `d_t` must be odd, `d_t in {1, 3, 5, ...}` | exact integer parity of `d_s + d_t` | no |
-| Step 4: single-clock codimension-1 evolution excludes `d_t > 1` | cited [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) (`unaudited` per 2026-05-17 ledger; earlier wording "proposed_retained, audit-pending" is stale). Per the upstream parent's [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md), this row is the **inherited (admission (iv))** branch of the parent's `d_t = 1` decomposition; the Step 3 row above is the **derived** branch (`d_t ∈ {1, 3, 5, ...}`). | no |
+| Step 4: single-clock codimension-1 evolution excludes `d_t > 1` | cited [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) (`unaudited` per 2026-05-17 ledger; earlier wording "proposed_retained, audit-pending" is stale). Per the upstream parent's [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md), this row is the **inherited (admission (iv))** branch of the parent's `d_t = 1` decomposition; the Step 3 row above is the **derived** branch (`d_t ∈ {1, 3, 5, ...}`). | no |
 | Step 5: combine Steps 2--4 to conclude `d_t = 1` | output collection | no |
 
 The checked proof path does not cite the Wilson plaquette action,
@@ -196,7 +196,7 @@ Three hostile-audit-grade issues were patched on this note:
   [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md),
   whose Step 4 derives `{ε, D_staggered} = 0`. Inherits the same fix
   applied upstream in
-  [`ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md).
+  [`ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md).
 - **F-A (stale dependency tier):** the Boundaries and Step 4 rows
   previously said the single-clock codimension-1 evolution theorem and
   the Clifford-volume grading were "proposed_retained, audit-pending";
@@ -206,7 +206,7 @@ Three hostile-audit-grade issues were patched on this note:
   Step 3/Step 4 split already mirrors the upstream parent's `d_t = 1`
   decomposition (Step 3 derives `d_t ∈ {1, 3, 5, ...}`; Step 4 excludes
   `d_t > 1`). The Step 4 row now explicitly links to the upstream
-  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)
+  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)
   and identifies itself as the **inherited (admission (iv))** branch.
 
 See companion fix-record:

@@ -122,8 +122,8 @@ probe; the BAE admission count is UNCHANGED.
 | Probe22 | Spectrum-cone pivot bridge-equivalent to operator-side BAE | source dependency; see [`KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md`](KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md) |
 | Probe18 | F1 vs F3 algebraic ambiguity (F2 ruled out structurally) | source dependency; see [`KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md`](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md) |
 | Probe12 | Plancherel-uniform on `Ĉ_3` gives (1, 2) → F3 | source dependency; see [`KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md`](KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md) |
-| Probe19 | Wilson chain `m_τ = M_Pl (7/8)^{1/4} u_0 α_LM^{18}` fixes mass scale | source dependency; see [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md) |
-| Probe24 | φ_dimensionless = 2/9 from C_3 character algebra (n_eff/d² = 2/9) | source dependency; see [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md) |
+| Probe19 | Wilson chain `m_τ = M_Pl (7/8)^{1/4} u_0 α_LM^{18}` fixes mass scale | source dependency; see [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md) |
+| Probe24 | φ_dimensionless = 2/9 from C_3 character algebra (n_eff/d² = 2/9) | source dependency; see [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md) |
 | Probe26 | Wilson chain rescaling H → rH preserves κ (κ scale-invariant) | source dependency; see [`KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md`](KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md) |
 | Probe21 | Native bilinear matter Hamiltonian: `S_native = α Tr(H_x²) + κ Tr(H_x H_y)` | source dependency; see [`KOIDE_BAE_PROBE_NATIVE_LATTICE_FLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe21.md`](KOIDE_BAE_PROBE_NATIVE_LATTICE_FLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe21.md) |
 
@@ -518,9 +518,9 @@ The runner verifies (Section 0, 1, 11):
 - Probe 12 (Plancherel/Peter-Weyl): [`KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md`](KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md)
 - Probe 13 (real-structure): [`KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md`](KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md)
 - Probe 18 (F1 canonical): [`KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md`](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md)
-- Probe 19 (Wilson chain m_τ): [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+- Probe 19 (Wilson chain m_τ): [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
 - Probe 22 (spectrum cone): [`KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md`](KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md)
-- Probe 24 (φ from Z_3 character): [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md)
+- Probe 24 (φ from Z_3 character): [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md)
 - Probe 25 (physical extremization): [`KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md`](KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md)
 - Probe 26 (Wilson dimensional consistency): [`KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md`](KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md)
 
@@ -604,8 +604,8 @@ note or change the audited claim scope.
 - [koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21](KOIDE_BAE_PROBE_NATIVE_LATTICE_FLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe21.md)
 - [koide_bae_probe_spectrum_cone_bounded_obstruction_note_2026-05-09_probe22](KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md)
 - [koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md)
-- [koide_bae_probe_phi_from_z3_character_sharpened_note_2026-05-09_probe24](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md)
-- [koide_bae_probe_wilson_chain_mass_sharpened_note_2026-05-09_probe19](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+- [koide_bae_probe_phi_from_z3_character_sharpened_note_2026-05-09_probe24](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md)
+- [koide_bae_probe_wilson_chain_mass_sharpened_note_2026-05-09_probe19](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
 - [koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12](KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md)
 - [koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
 - [koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)

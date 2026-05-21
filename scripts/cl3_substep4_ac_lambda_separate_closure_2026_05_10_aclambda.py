@@ -5,7 +5,7 @@ cl3_substep4_ac_lambda_separate_closure_2026_05_10_aclambda.py
 Substep-4 AC_λ separate-closure verification (sharpened bounded).
 
 Companion runner for:
-  docs/SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md
+  docs/SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md
 
 Verifies the sharpened bounded sub-result of substep-4: the AC_λ atom
 of the substep-4 atomic decomposition decomposes as

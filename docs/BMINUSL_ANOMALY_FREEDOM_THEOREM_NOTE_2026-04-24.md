@@ -272,7 +272,7 @@ parent's `d_t = 1` conclusion, the `(3, 1)` signature conclusion, or
 admissions (i)-(iv) as load-bearing inputs to (G1)-(G6). The principle
 itself is standard QFT input (admitted-context per §8 item 3). The
 upstream parent's recent
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)
 therefore does not propagate into this note's arithmetic — only its
 overall effective tier (which is bounded above by the weakest upstream
 tier, currently `unaudited`).

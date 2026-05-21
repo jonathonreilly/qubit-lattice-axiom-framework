@@ -27,7 +27,7 @@ the audit pipeline after independent review.
 **Authority role:** Cycle 1 / Agent B of the `bae-f1f3-and-u0-su2-positive-closure-20260517`
 physics-loop campaign. Tests the Cl(3) bivector grading on dim-2
 spinors as a closure mechanism for the F1-canonicality gap recorded by
-[`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+[`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 and named explicitly by
 [`KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md`](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md)
 AV6. This probe attempts AV8 (Cl(3) bivector grading on the dim-2
@@ -44,7 +44,7 @@ lane has full authority to retag, narrow, or reject the proposal.
 ## Question
 
 The 30-probe Brannen Amplitude Equipartition (BAE) campaign synthesis
-([`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md))
+([`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md))
 records that the campaign's terminal residue is the
 **F1 vs F3 weighting selection** on `Herm_circ(3)`:
 
@@ -669,7 +669,7 @@ verifies symbolically (PASS=40 / FAIL=0):
 
 ### Probe-campaign context
 
-- [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
   — campaign-context: F1-vs-F3 named as terminal residue.
 - [`KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md`](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md)
   — direct predecessor: AV1-AV7 enumeration; this probe adds AV8.

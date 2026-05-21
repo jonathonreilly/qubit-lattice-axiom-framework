@@ -64,7 +64,7 @@ without disclosing:
 
 - the upstream parent's named admissions (i)-(iv);
 - the parent's recent
-  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
   which decomposes the parent's `d_t = 1` conclusion into a derived
   part (Step 3: `d_t ∈ {1, 3, 5, ...}`) and an inherited part
   (admission (iv): `d_t > 1` excluded).
@@ -132,7 +132,7 @@ Cached output: `logs/runner-cache/frontier_s3_time_spacetime_tensor_primitive_do
 
 - [`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md) — parent under repair
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — upstream parent
-- [`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md) — upstream `F-B` fix
+- [`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md) — upstream `F-B` fix
 - [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md) — cited upstream
 - [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md) — cited upstream
 - [PR #1500](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1500) — upstream `F-C` PR

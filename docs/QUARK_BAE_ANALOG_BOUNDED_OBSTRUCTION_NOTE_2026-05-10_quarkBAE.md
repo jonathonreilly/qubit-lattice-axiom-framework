@@ -50,7 +50,7 @@ Throughout this note:
 
 The 30-probe BAE campaign for charged-lepton sector reached terminal
 bounded-obstruction state per
-[`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md).
+[`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md).
 The structural reason: F1 multiplicity weighting `(1, 1)` is structurally
 absent from retained C_3 representation theory on `Herm_circ(3)`
 (3-dim host); the retained free Gaussian dynamics gives F3 `(1, 2)`
@@ -401,7 +401,7 @@ is to avoid one-step relabelings of already-landed cycles. This note:
 ## Cross-references
 
 - BAE / A1 derivation status (parent): [`KOIDE_A1_DERIVATION_STATUS_NOTE.md`](KOIDE_A1_DERIVATION_STATUS_NOTE.md)
-- 30-probe campaign synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- 30-probe campaign synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - Probe 25 (physical extremization, F3 forcing): [`KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md`](KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md)
 - Probe 27 (sector-relocation barrier on Z³ BZ corners): [`KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md`](KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md)
 - CL3 → SM embedding: [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md)

@@ -1,7 +1,7 @@
 """A3 / Route 3 Hostile Review -- Universal C_3-Orbit Functorial Obstruction.
 
 Companion theorem note:
-  docs/A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md
+  docs/A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md
 
 Loop: a3-route3-hostile-review-20260508
 
@@ -539,7 +539,7 @@ def main() -> int:
     print("Loop: a3-route3-hostile-review-20260508")
     print("Companion theorem note:")
     print(
-        "  docs/A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md"
+        "  docs/A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md"
     )
     print()
 

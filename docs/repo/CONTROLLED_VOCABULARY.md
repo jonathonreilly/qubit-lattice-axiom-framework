@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=3049f71e2a114fd7dacfa8a8d86a4bf93755d96e5e15abe62a466fd37840ac17 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=b0045e8b6f023c382255d334629ca11d50e81f1832f2e4fd7a15d8bdd583d856 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to

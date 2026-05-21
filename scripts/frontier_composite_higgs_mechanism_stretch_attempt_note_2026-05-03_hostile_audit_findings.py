@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for composite_higgs_mechanism_stretch_attempt_note_2026-05-03.
 
-Verifies docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03_NOTE_2026-05-17.md.
+Verifies docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-17.md.
 
 Programmatic checks:
   - The parent note exists at the expected path.

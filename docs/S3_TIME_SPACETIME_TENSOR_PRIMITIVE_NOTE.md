@@ -186,7 +186,7 @@ higher than the worst of the audited components once that audit lands).
 
 **Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM` (downstream
 admission propagation, per the upstream
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)):**
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)):**
 
 - Admissions (ii), (iii), (iv) of the upstream parent are routed to
   internal companion notes on `main`; their final closure is conditional
@@ -224,7 +224,7 @@ Two hostile-audit-grade issues were patched on this note:
 - **F-B (missing admission-inheritance from upstream):** the note
   imported `PL S^3 x R` without acknowledging the upstream parent's
   admission structure or the parent's recent
-  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)
+  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)
   (which decomposes the parent's `d_t = 1` conclusion into a derived
   part — `d_t ∈ {1, 3, 5, ...}` from Step 3 — and an inherited part —
   admission (iv) excludes `d_t > 1`). The new "Upstream-tier accounting"

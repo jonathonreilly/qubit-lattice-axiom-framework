@@ -74,7 +74,7 @@ The cited source stack has SUBSTANTIAL non-Gaussian interaction content:
 - **Probe 19 Yukawa-vertex factor** `α_bare × α_LM = α_LM² × u_0`
   (Probe 19's "+2" piece in the m_τ chain `m_τ = M_Pl × (7/8)^{1/4} ×
   u_0 × α_LM^{18}`, retained from
-  `KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`)
+  `KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`)
 - **Z_3 scalar potential** `V(m) = V₀ + linear + (3/2)m² + (1/6)m³`
   (retained per
   `KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md`)
@@ -128,7 +128,7 @@ No new axiom.
 | Probe21 | Native bilinear matter Hamiltonian | retained |
 | Probe25 | Free-Gaussian dynamics → F3 (real-dim (1, 2)); F1 structurally absent at free level | source dependency; see [`KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md`](KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md) |
 | WilsonChain | `v_EW = M_Pl × (7/8)^{1/4} × α_LM^{16}` and α_LM = α_bare/u_0; α_bare = 1/(4π); u_0 = ⟨P⟩^{1/4}; ⟨P⟩=0.5934 | source dependency; see [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) |
-| Probe19 | `m_τ = M_Pl × (7/8)^{1/4} × u_0 × α_LM^{18}` with exponent 18 = 16 + 2 = EW+Yukawa-vertex; vertex factor α_bare × α_LM | source dependency; see [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md) |
+| Probe19 | `m_τ = M_Pl × (7/8)^{1/4} × u_0 × α_LM^{18}` with exponent 18 = 16 + 2 = EW+Yukawa-vertex; vertex factor α_bare × α_LM | source dependency; see [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md) |
 | YukawaSM | `Y_e · ψ̄ · H · ψ` couples lepton fields to circulant H on hw=1 | source dependency; see [`CL3_SM_EMBEDDING_THEOREM.md`](CL3_SM_EMBEDDING_THEOREM.md) |
 | HiggsCW | `λ(M_Pl) = 0` boundary; radiative quartic from y_t-loop; composite Higgs from taste condensate | source dependency; see [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md) Sec 7 |
 | Z3Pot | `V(m) = V₀ + linear + (3/2) m² + (1/6) m³`; cubic piece breaks Z_2 → Z_3 | source dependency; see [`KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md`](KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md) |
@@ -264,7 +264,7 @@ Yukawa+quartic content. The (1, 2) real-dim weighting is preserved.
 
 **Status: PRESERVES F3.**
 
-[`Probe 19`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md) gave `m_τ = M_Pl × (7/8)^{1/4} × u_0 ×
+[`Probe 19`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md) gave `m_τ = M_Pl × (7/8)^{1/4} × u_0 ×
 α_LM^{18}` with exponent decomposition 18 = 16 + 2 (EW exponent +
 lepton-scale Yukawa-vertex factor). The "+2" piece is
 
@@ -570,7 +570,7 @@ interacting-extension level.
 
 - Complete prediction chain: [`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`](COMPLETE_PREDICTION_CHAIN_2026_04_15.md)
 - α_LM geometric-mean identity: [`ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md`](ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md)
-- Probe 19 (Wilson chain m_τ): [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+- Probe 19 (Wilson chain m_τ): [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
 
 ### Retained matter-sector interaction content
 
@@ -595,7 +595,7 @@ interacting-extension level.
 - Probe 13 (real-structure): `KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md`
 - Probe 14 (retained-U(1) hunt): `KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md`
 - Probe 18 (F1-vs-F3 algebraic): `KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md`
-- Probe 19 (Wilson chain m_τ): `KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`
+- Probe 19 (Wilson chain m_τ): `KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`
 - Probe 21 (native bilinear flow): `KOIDE_BAE_PROBE_NATIVE_LATTICE_FLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe21.md`
 - Probe 25 (free Gaussian extremization): `KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md`
 - Probe 26 (Wilson dim consistency): [`KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md`](KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md)
@@ -686,7 +686,7 @@ the audit citation graph can track them. It does not promote this
 note or change the audited claim scope.
 
 - [koide_bae_probe_physical_extremization_bounded_obstruction_note_2026-05-09_probe25](KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md) (Probe 25 baseline)
-- [koide_bae_probe_wilson_chain_mass_sharpened_note_2026-05-09_probe19](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md) (Probe 19 vertex)
+- [koide_bae_probe_wilson_chain_mass_sharpened_note_2026-05-09_probe19](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md) (Probe 19 vertex)
 - [koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21](KOIDE_BAE_PROBE_NATIVE_LATTICE_FLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe21.md) (Probe 21 bilinear)
 - [koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md) (Probe 18 algebraic)
 - [koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12](KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md)

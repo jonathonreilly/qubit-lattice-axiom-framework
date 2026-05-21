@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit-prep verifier for a3_r5_hostile_review_confirms_obstruction_note.
 
-Verifies docs/A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-17.md.
+Verifies docs/A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-17.md.
 
 Programmatic checks:
   1. The parent note exists.

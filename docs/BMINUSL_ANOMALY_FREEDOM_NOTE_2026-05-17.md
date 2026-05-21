@@ -123,7 +123,7 @@ Cached output: `logs/runner-cache/frontier_bminusl_anomaly_freedom_downstream_fi
 
 - [`BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md`](BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md) — parent under repair
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — upstream parent (principle import only)
-- [`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md) — upstream F-B fix (does not directly propagate into G1-G6 arithmetic; tier inheritance only)
+- [`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md) — upstream F-B fix (does not directly propagate into G1-G6 arithmetic; tier inheritance only)
 - [`ONE_GENERATION_MATTER_CLOSURE_NOTE.md`](ONE_GENERATION_MATTER_CLOSURE_NOTE.md) — cited matter-content companion (`unaudited`)
 - [`STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md`](STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md) — cited hypercharge companion (`unaudited`)
 - [PR #1507](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1507) — sibling downstream fix (`s3_anomaly_spacetime_lift_note`)

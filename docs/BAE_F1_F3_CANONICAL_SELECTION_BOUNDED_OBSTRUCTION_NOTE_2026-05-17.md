@@ -173,7 +173,7 @@ admissions, and audit-lane verdict. ∎
   principal open sub-locus is the `U(1)_b` angular convention; this is
   preserved as the Open derivation gap below.
 - Does **not** modify the 30-probe BAE campaign terminal synthesis
-  ([`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)).
+  ([`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)).
 
 ## Open derivation gap
 
@@ -200,7 +200,7 @@ the doublet 2-plane collapses to a single radial mode under retained
 content.
 
 This Open derivation gap is preserved verbatim from the campaign
-synthesis ([`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md))
+synthesis ([`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md))
 and the Probe 18 conclusion ([`KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md`](KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md)).
 The present note narrows it: not "selection between F1 and F3" in the
 abstract, but specifically the `U(1)_b` angular convention on the
@@ -297,7 +297,7 @@ Cited tested attack-vector source notes:
 
 Campaign-context citations (not load-bearing on the algebra):
 
-- [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
   — 30-probe campaign synthesis.
 - [`BAE_BLOCK_TOTAL_FROBENIUS_DERIVATION_NARROW_THEOREM_NOTE_2026-05-16.md`](BAE_BLOCK_TOTAL_FROBENIUS_DERIVATION_NARROW_THEOREM_NOTE_2026-05-16.md)
   — block-total Frobenius F1-extremum locus = BAE locus (conditional

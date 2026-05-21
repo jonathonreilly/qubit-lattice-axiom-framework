@@ -5682,7 +5682,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 ### `koide_dimensionless_objection_closure_note_2026-04-24`
 
-- **Note:** [`KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md)
+- **Note:** [`KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md`](../../docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md)
 - **claim_type:** `bounded_theorem`
 - **claim_scope:** Conditional algebraic obstruction tests on the admitted source-response-carrier plus endpoint-domain surface; not a retained no-go derived from the axiom alone.
 - **audit_status:** ~~audited_conditional~~

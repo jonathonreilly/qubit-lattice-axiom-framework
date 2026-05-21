@@ -1131,10 +1131,10 @@ drive.
 
 ### `koide_hostile_review_guard_note_2026-04-24`
 
-**Note:** [docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md](docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md)  |  **Descendants:** 281  |  **Class:** A
+**Note:** [docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md](docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md)  |  **Descendants:** 281  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the missing derivation in docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md.
+Use the physics-loop skill to close the missing derivation in docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md.
 
 Current audit state:
 - audit_status: audited_failed
@@ -3046,10 +3046,10 @@ drive.
 
 ### `koide_dimensionless_objection_closure_note_2026-04-24`
 
-**Note:** [docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md)  |  **Descendants:** 989  |  **Class:** A
+**Note:** [docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md](docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md)  |  **Descendants:** 989  |  **Class:** A
 
 ```
-Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md.
+Use the physics-loop skill to close the conditional audit on docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md.
 
 Current audit state:
 - audit_status: audited_conditional

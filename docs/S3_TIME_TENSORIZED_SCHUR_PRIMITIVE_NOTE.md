@@ -35,7 +35,7 @@ via the anomaly-forced-time companion):
   companion; `audited_conditional` via cap-uniqueness companion)
 - cited anomaly-forced time with `d_t = 1` (companion `unaudited`;
   admissions (i)-(iv) per the upstream
-  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md))
+  [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md))
 - bounded composite background `PL S^3 x R` (inherits the weakest
   upstream tier)
 - bounded slice generator `Lambda_R` (from
@@ -220,7 +220,7 @@ corrected inline.
 **Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** the
 tensorized primitive imports `d_t = 1` from the upstream parent. Per
 the parent's recent
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
 `d_t = 1` decomposes into a derived part (Step 3:
 `d_t ∈ {1, 3, 5, ...}`) and an inherited part (admission (iv)
 excludes `d_t > 1`). Any future revision of admission (iv) propagates

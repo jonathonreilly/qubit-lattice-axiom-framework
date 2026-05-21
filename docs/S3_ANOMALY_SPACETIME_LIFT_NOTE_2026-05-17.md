@@ -92,7 +92,7 @@ acknowledging:
 - the upstream parent's admission structure (admissions (i)-(iv)), which
   conditions the `d_t = 1` conclusion; and
 - the recent `F-B` framing-fix on the parent
-  ([`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)),
+  ([`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)),
   which makes the derived-vs-inherited decomposition of `d_t = 1`
   explicit upstream.
 
@@ -160,8 +160,8 @@ Cached output: `logs/runner-cache/frontier_s3_anomaly_spacetime_lift_downstream_
 
 - [`S3_ANOMALY_SPACETIME_LIFT_NOTE.md`](S3_ANOMALY_SPACETIME_LIFT_NOTE.md) — parent under repair
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — upstream parent
-- [`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md) — upstream `F-B` fix
-- [`ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md) — upstream `F-C` fix
+- [`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md) — upstream `F-B` fix
+- [`ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md) — upstream `F-C` fix
 - [`S3_BOUNDARY_LINK_THEOREM_NOTE.md`](S3_BOUNDARY_LINK_THEOREM_NOTE.md) — cited authority (corrected tier)
 - [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md) — cited authority
 - [PR #1500](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1500) — upstream `F-C` PR

@@ -21,10 +21,10 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTE = ROOT / "docs" / "DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md"
+NOTE = ROOT / "docs" / "DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md"
 LEAF = ROOT / "docs" / "DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-BAE_TEMPLATE = ROOT / "docs" / "KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md"
+BAE_TEMPLATE = ROOT / "docs" / "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md"
 
 LEAF_ID = "dm_leptogenesis_transport_status_note_2026-04-16"
 

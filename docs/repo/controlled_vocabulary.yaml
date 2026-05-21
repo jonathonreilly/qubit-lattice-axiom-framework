@@ -345,6 +345,62 @@ rewrite_rules:
     rationale: "Collapse doubled _NOTE_ suffix produced by suffix-strip on filenames already ending in _NOTE_."
     requires_link_aware_rewrite: true
 
+  - id: terminal_synthesis_meta_note_suffix
+    pattern: '_TERMINAL_SYNTHESIS_META_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Terminal-synthesis-meta suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: sharpened_note_trailing_id_suffix
+    # _SHARPENED_NOTE_<date>_<trailing-id>.md → _NOTE_<date>_<trailing-id>.md
+    # Catches files with a trailing identifier after the date (e.g. _probe24).
+    pattern: '_SHARPENED_NOTE_(\d{4}-\d{2}-\d{2})_([a-zA-Z0-9]+)\.md'
+    replacement: '_NOTE_$1_$2.md'
+    rationale: "Sharpened-note suffix forbidden; preserve trailing id after the date."
+    requires_link_aware_rewrite: true
+
+  - id: framing_fix_note_suffix
+    pattern: '_FRAMING_FIX_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Framing-fix-note suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: routing_correction_note_suffix
+    pattern: '_ROUTING_CORRECTION_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Routing-correction-note suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: objection_closure_note_suffix
+    pattern: '_OBJECTION_CLOSURE_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Objection-closure-note suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: campaign_progress_synthesis_suffix
+    pattern: '_CAMPAIGN_PROGRESS_SYNTHESIS_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Campaign-progress-synthesis suffix forbidden; use plain _NOTE_<date>.md."
+    requires_link_aware_rewrite: true
+
+  - id: stretch_attempt_doubled_note_suffix
+    # Catches the COMPOSITE_HIGGS-style double-suffix that survived
+    # Cleanup-2 (_STRETCH_ATTEMPT_NOTE_<date1>_NOTE_<date2>.md). Keeps
+    # the later date.
+    pattern: '_STRETCH_ATTEMPT_NOTE_\d{4}-\d{2}-\d{2}_NOTE_(\d{4}-\d{2}-\d{2})\.md'
+    replacement: '_NOTE_$1.md'
+    rationale: "Doubled stretch-attempt suffix; keep the later date as the canonical note date."
+    requires_link_aware_rewrite: true
+
+  - id: hostile_review_token
+    # Token-level removal: _HOSTILE_REVIEW_ as a middle-token (not a
+    # trailing suffix). Replaces with _REVIEW_ to preserve the meaningful
+    # "review" content while dropping the forbidden "HOSTILE_" prefix.
+    pattern: '_HOSTILE_REVIEW_'
+    replacement: '_REVIEW_'
+    rationale: "Drop forbidden HOSTILE_ qualifier from filenames; preserve REVIEW token."
+    requires_link_aware_rewrite: true
+
   - id: f_letter_heading
     # NOT a one-shot regex. F-letter migration requires per-file mapping
     # {F-A: <title>, F-B: <title>, ...} → {Finding 1: <title>, ...} with

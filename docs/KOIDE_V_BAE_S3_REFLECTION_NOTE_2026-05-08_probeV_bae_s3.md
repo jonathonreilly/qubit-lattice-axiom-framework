@@ -59,7 +59,7 @@ These are distinct objects despite the legacy shared label.
 ## Question
 
 The 30-probe BAE campaign synthesis
-([`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md))
+([`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md))
 established a multi-level structural rejection of BAE rooted in `C_3`
 representation theory:
 
@@ -580,7 +580,7 @@ explicit as exhausted within this bounded route.
 
 ### Campaign synthesis
 
-- 30-probe terminal synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- 30-probe terminal synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - BAE rename meta: [`BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md`](BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md)
 
 ### C_3 symmetry preservation (interpretive context)
@@ -685,7 +685,7 @@ note or change the audited claim scope.
 - [koide_bae_probe_physical_extremization_bounded_obstruction_note_2026-05-09_probe25](KOIDE_BAE_PROBE_PHYSICAL_EXTREMIZATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe25.md) (free dynamics)
 - [koide_bae_probe_hw_sector_identification_bounded_obstruction_note_2026-05-09_probe27](KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md) (hw=N sectors)
 - [koide_bae_probe_interacting_dynamics_bounded_obstruction_note_2026-05-09_probe28](KOIDE_BAE_PROBE_INTERACTING_DYNAMICS_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe28.md) (interacting dynamics)
-- [koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md) (campaign synthesis)
+- [koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md) (campaign synthesis)
 - [koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
 - [koide_mru_weight_class_obstruction_theorem_note_2026-04-19](KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
 - [minimal_axioms_2026-05-03](MINIMAL_AXIOMS_2026-05-03.md)

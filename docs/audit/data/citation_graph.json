@@ -38718,7 +38718,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "ff4e5a4a4825ca04f4c58de64755c5bab5d7d0c7e71f6cabc4e6eab4acf1970c",
-      "path": "docs/A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md",
+      "path": "docs/A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md",
       "runner_path": "scripts/cl3_a3_r1_hostile_review_2026_05_08_r1hr.py",
       "title": "A3 R1 Hostile Review \u2014 C_3-Equivariance Theorem Confirms Bounded Obstruction"
     },
@@ -38739,7 +38739,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "f4b9cdbd6130fbe1c3c7cf16a333638fe133cc8c0478a005cdb803420904e220",
-      "path": "docs/A3_R2_HOSTILE_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md",
+      "path": "docs/A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md",
       "runner_path": "scripts/cl3_a3_r2_hostile_review_2026_05_08_r2hr.py",
       "title": "A3 R2 Hostile Review \u2014 Confirms Kinematic-Primitive Exhaustion (Bounded)"
     },
@@ -38760,7 +38760,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "80cd247ff580530d7f948f472571a2a97e3c6a8b5f361ffd6ae18ce474137082",
-      "path": "docs/A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md",
+      "path": "docs/A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md",
       "runner_path": "scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py",
       "title": "A3 / Route 3 Hostile Review \u2014 Universal C_3-Orbit Functorial Obstruction CONFIRMED"
     },
@@ -38779,7 +38779,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "c001894f8dba9964a9ab2e67aa8dfa5c9030cb311a51d99299379d81e1ca078f",
-      "path": "docs/A3_R4_HOSTILE_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md",
+      "path": "docs/A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md",
       "runner_path": "scripts/cl3_a3_r4_hostile_review_2026_05_08_r4hr.py",
       "title": "A3 Route 4 (Spin(6) Chain) \u2014 Hostile Review CONFIRMED Bounded Obstruction Note"
     },
@@ -38798,7 +38798,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "3d92254cc05922083e1fc49a3f57a42539fd28a09ef177d3b692a012dd270270",
-      "path": "docs/A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md",
+      "path": "docs/A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md",
       "runner_path": "scripts/cl3_a3_r5_hostile_review_2026_05_08_r5hr.py",
       "title": "A3 R5 Hostile Review \u2014 Confirms Obstruction (with Sharpenings)"
     },
@@ -38810,7 +38810,7 @@
       "deps": [],
       "helper_runner_paths": [],
       "note_hash": "7f2ecd5803d59f4331d72249e599f8145776b2ded47501fb783083de5e753932",
-      "path": "docs/A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-17.md",
+      "path": "docs/A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "staggered-Dirac route R5 Hostile Review Confirms Obstruction \u2014 Hostile Audit Findings"
     },
@@ -40788,7 +40788,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "dd49f2ed1076cdbeb5df377362e2ece140ec93b7951c580994ed003af447a9e4",
-      "path": "docs/ANOMALY_FORCES_TIME_ADMISSION_III_ROUTING_CORRECTION_NOTE_2026-05-17.md",
+      "path": "docs/ANOMALY_FORCES_TIME_ADMISSION_III_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Anomaly-Forces-Time admission (iii) routing correction"
     },
@@ -40800,7 +40800,7 @@
       "deps": [],
       "helper_runner_paths": [],
       "note_hash": "a0c64a83bbd3eb8801002f1449881c19c25330c73e7e7a906c227318997c2080",
-      "path": "docs/ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md",
+      "path": "docs/ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Anomaly-Forces-Time F-B framing fix"
     },
@@ -41245,7 +41245,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
-      "path": "docs/AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md",
+      "path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
       "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)"
     },
@@ -44926,7 +44926,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "d5822f49a542c63c820da2ef8f183abb460f7c4f04a2a70fe862c7d714dae4a6",
-      "path": "docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md",
+      "path": "docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_claude_complex_action_grown_companion_terminal_synthesis.py",
       "title": "Claude Complex Action Grown Companion Terminal Synthesis Meta Note"
     },
@@ -45346,7 +45346,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "328b51999f4b22a79649e354b882f2c79a1fd49047d2e059320a647420f7d9e5",
-      "path": "docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03_NOTE_2026-05-17.md",
+      "path": "docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_composite_higgs_mechanism_stretch_attempt_note_2026-05-03_hostile_audit_findings.py",
       "title": "composite higgs mechanism stretch attempt note (2026-05-03 \u2014 Hostile Audit Findings"
     },
@@ -47869,7 +47869,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "917bad15ce36e5530370e0f1c4ea3275582709ba6ffafa098f14ae2b2986a929",
-      "path": "docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md",
+      "path": "docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_transport_status_terminal_synthesis.py",
       "title": "DM Leptogenesis Transport Status Terminal Synthesis Meta Note"
     },
@@ -56888,7 +56888,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "96f7b777b18f2a44aaf8f7a13121f6270c7bedb5c3a5196a3204c8a1c0cb9845",
-      "path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md",
+      "path": "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md",
       "runner_path": "scripts/frontier_bae_30_probe_terminal_synthesis.py",
       "title": "Koide BAE 30-Probe Campaign Terminal Synthesis Meta Note"
     },
@@ -57113,7 +57113,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "8eda803628654b24f278e7341d85d72ec9a2fadd48433bef2e6a294efbb4f6c2",
-      "path": "docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md",
+      "path": "docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md",
       "runner_path": "scripts/cl3_koide_bae_probe_phi_from_z3_character_2026_05_09_probe24.py",
       "title": "Koide BAE Probe 24 \u2014 Brannen Magic Angle `\u03c6 = 2/9` from Z_3-Character / Berry-Phase / Plancherel-Frobenius Content (Sharpened, Partial Closure)"
     },
@@ -57244,7 +57244,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "ed61a10660d8061cb03d11240caf3e8e880bc43a18c84357e7ff312a15971028",
-      "path": "docs/KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md",
+      "path": "docs/KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md",
       "runner_path": "scripts/cl3_koide_bae_probe_wilson_chain_mass_2026_05_09_probe19.py",
       "title": "Koide BAE Probe 19 \u2014 Wilson Chain Extension to Charged-Lepton Mass Scale (Sharpened, Partial Closure)"
     },
@@ -57615,7 +57615,7 @@
       "deps": [],
       "helper_runner_paths": [],
       "note_hash": "c5075762d167078aec48e1e3ff096f3f768b5969915d67323e74cab6b8799458",
-      "path": "docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md",
+      "path": "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_dimensionless_objection_closure_review.py",
       "title": "Koide Dimensionless Objection-Closure Review Packet"
     },
@@ -57841,7 +57841,7 @@
       "deps": [],
       "helper_runner_paths": [],
       "note_hash": "b9d5df0054730d03dd9a295ef546c2b107b44ebab9fa67ffce45d44e42efad99",
-      "path": "docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md",
+      "path": "docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_hostile_review_guard.py",
       "title": "Koide Hostile-Review Guard"
     },
@@ -69659,7 +69659,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "9bc6e28c8f7322009f3f13af32e5a22d81ba369f0043f1d48ca2e7d6061421c1",
-      "path": "docs/QUARK_PROJECTOR_PARAMETER_AUDIT_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md",
+      "path": "docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py",
       "title": "Quark Projector Parameter Audit Terminal Synthesis Meta Note"
     },
@@ -70093,7 +70093,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "4600bda46abd458f6069c59648fd534b2fa763e1f547c53ef2ed996e021541a2",
-      "path": "docs/RADIAN_UNIT_CONVENTION_RECLASSIFICATION_SHARPENED_NOTE_2026-05-10_radianconv.md",
+      "path": "docs/RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md",
       "runner_path": "scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py",
       "title": "Radian Unit Convention Reclassification (Sharpened) \u2014 P as a Unit Convention Under Conventions Unification"
     },
@@ -74384,7 +74384,7 @@
       ],
       "helper_runner_paths": [],
       "note_hash": "72b77cad99b13f8d6eea235684f0be46af0aa98e760eabda30465deed94871bc",
-      "path": "docs/SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_NOTE_2026-05-10_aclambda.md",
+      "path": "docs/SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_NOTE_2026-05-10_aclambda.md",
       "runner_path": "scripts/cl3_substep4_ac_lambda_separate_closure_2026_05_10_aclambda.py",
       "title": "Substep-4 AC_\u03bb Separate-Closure Candidate (Sharpened, Partial)"
     },

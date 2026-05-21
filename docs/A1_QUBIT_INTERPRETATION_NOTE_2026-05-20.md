@@ -15,17 +15,40 @@ but physically more direct **qubit form**, with no change to content.
 
 > A1 — Local algebra: the physical local algebra is `Cl(3)`.
 
-**Proposed A1 (equivalent qubit form):**
+**Proposed A1 (per `MINIMAL_AXIOMS_2026-05-20.md`):**
 
-> A1 — Local algebra: each lattice site carries a qubit. The local
-> operator algebra is `M_2(ℂ)`, the algebra of bounded operators on a
-> 2-dimensional complex Hilbert space.
+> A1. A qubit at every site.
+
+The canonical statement is the bare-qubit form. The full algebraic
+identification (`per-site M_2(ℂ) ≅ Cl(3,0)` as real algebras) lives
+in the commentary block of `MINIMAL_AXIOMS_2026-05-20.md`, not in
+the axiom statement. The math content is unchanged from the current
+A1 — `Cl(3,0)` and `M_2(ℂ)` are the same algebra. Dropping the
+explicit `Cl(3)` from the canonical statement does not weaken the
+mathematical commitment: every existing `Cl(3)`-language retained
+row reads correctly under the qubit identification, and the
+identification itself is retained via
+`cl3_complexification_split_narrow_theorem_note_2026-05-10` plus
+`cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`.
 
 The two statements are **mathematically identical**: `Cl(3,0) ≅ M_2(ℂ)`
-as real algebras (this identification is the load-bearing Step 1 of
-the retained `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`).
-The proposed change is presentational only — no derivation, no
-predicted observable, and no audit-ledger status changes.
+as real algebras. The audit-ratified support for this identification
+is the pair of narrow theorems
+
+- `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+  (`retained`, positive_theorem) — establishes the
+  `Cl(3,0) ⊗_ℝ ℂ ≅ M_2(ℂ) ⊕ M_2(ℂ)` complexification split
+- `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
+  (`retained`, positive_theorem) — establishes the faithful complex
+  irreducible representation is 2-dim
+
+Together, these retain the qubit identification. The broader
+`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` is
+`audited_conditional` at the full-spinor scope; its narrowed U1-U3
+physical-`Cl(3)`-only portion is supported by the two retained narrow
+theorems above. The proposed change is presentational only — no
+derivation, no predicted observable, and no audit-ledger status
+changes.
 
 ## Why this matters
 
@@ -157,21 +180,31 @@ generalized-probability-theoretic."
   e_3`, real algebra structure — is the same object as `M_2(ℂ)`.
   Either presentation has access to all the others' structure.
 
-## Adopted form (after panel review, `MINIMAL_AXIOMS_2026-05-20.md`)
+## Adopted form (`MINIMAL_AXIOMS_2026-05-20.md`)
 
-The qubit reframe, tightened to the cleanest physical statement
-(with math precision relegated to commentary), lands as:
+The canonical form is the bare-qubit statement, with the algebraic
+content (`M_2(ℂ) ≅ Cl(3,0)`, Pauli relations, real-algebra dimension
+count) in commentary rather than in the axiom itself:
 
 > 1. **A1.** A qubit at every site.
 > 2. **A2.** Sites form the cubic lattice `Z^3`.
 
-The math precision — `M_2(ℂ) ≅ Cl(3,0)` as real algebras, C*-algebra
-structure, Pauli relations, dimension counts — lives in a "what
-'qubit' means" commentary block in the canonical axiom doc, not in
-the axiom statements themselves. Substituting that math content into
-the axiom statement was the bloat that the panel critique surfaced;
-the right move is to keep the axiom physical ("qubit at every site")
-and let "qubit" carry the math precision as its standard meaning.
+This is the minimal-degree statement of the framework's foundational
+claim. It is mathematically identical to the current
+`MINIMAL_AXIOMS_2026-05-03.md` A1+A2 (the underlying algebra is the
+same), but it removes theorem-grade content from the axiom statement
+itself (Pauli relations and dimension counts are theorems on
+`M_2(ℂ)`, not primitives) and removes the redundant "physical"
+qualifier ("qubit" and "lattice" are already physical language).
+
+**Why not "physical local algebra is Cl(3,0), equivalently
+M_2(ℂ)"?** That form is also solid — it names the same algebra. The
+bare-qubit form is preferred here as the cleaner physical statement,
+matching the Maxwell-tight / Newton-I style of foundational
+postulates (short, irreducible, no embedded theorem content). The
+`Cl(3,0)` language remains valid as the equivalent real-algebra
+reading; every existing `Cl(3)`-framing retained row continues to
+read correctly.
 
 ## What this file is not
 

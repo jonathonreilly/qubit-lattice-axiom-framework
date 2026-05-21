@@ -39,17 +39,26 @@ This note also records two consequences of the qubit reframe:
 2. **A2.** Sites form the cubic lattice `Z^3`.
 
 These two are self-contained, mathematically minimal, and have zero
-upstream dependencies.
+upstream dependencies. "Qubit" is the standard quantum-information
+unit: the per-site operator algebra is `M_2(ℂ)`, equivalently
+`Cl(3,0)` as a real algebra. The equivalence is a standard
+real-algebra fact (`Cl(3,0)` and `M_2(ℂ)` are both 8-dim over `ℝ`)
+and is supported by the retained narrow theorems
+`cl3_complexification_split_narrow_theorem_note_2026-05-10` and
+`cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`. The
+`Cl(3,0)`-framing of every existing retained / retained_bounded /
+retained_no_go row remains valid: it is the same algebra in
+equivalent real-algebra presentation.
 
 ### What "qubit" and "site" mean (commentary, not axiom content)
 
-- **Qubit.** The standard quantum-information unit: a 2-dim complex
-  Hilbert space `ℂ²` with operator algebra `M_2(ℂ)`. As a real
-  algebra, `M_2(ℂ) ≅ Cl(3,0)` (8-dim over `ℝ`, the real Clifford
-  algebra over `ℝ³`). The Pauli generators `σ_1, σ_2, σ_3` satisfy
-  `σ_i² = I` and `σ_i σ_j = -σ_j σ_i` for `i ≠ j`. The "i" of
-  quantum mechanics is the central pseudoscalar `I = σ_1 σ_2 σ_3`.
-  These are theorems on `M_2(ℂ)`, not axiom content.
+- **Qubit.** The standard quantum-information reading of the
+  per-site `M_2(ℂ)` operator algebra: a 2-dim complex Hilbert space
+  `ℂ²` carrying the Pauli generators `σ_1, σ_2, σ_3`. The Pauli
+  relations `σ_i² = I` and `σ_i σ_j = -σ_j σ_i` for `i ≠ j` are
+  theorems on `M_2(ℂ)`, not axiom content. The "i" of quantum
+  mechanics is the central pseudoscalar `I = σ_1 σ_2 σ_3` of
+  `Cl(3,0)` under the isomorphism.
 - **Site.** An element of `Z^3`, the cubic lattice (integer triples).
 - **Composition.** Per-site qubit algebras over `Z^3` compose by
   standard C*-algebraic tensor product, giving the UHF C*-algebra of
@@ -106,9 +115,9 @@ Unchanged by the qubit reframe.
 Target review typing: `positive_theorem`. These rows have zero
 open-gate admissions in `admitted_context_inputs`:
 
-- `cl3_per_site_uniqueness` (uses `Cl(3,0) ≅ M_2(ℂ)` Step 1; preserved)
-- `cl3_complexification_split_narrow_theorem_note_2026-05-10` (two `M_2(ℂ)` summands; preserved)
-- `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` (faithful complex irrep is 2-dim; preserved)
+- `cl3_complexification_split_narrow_theorem_note_2026-05-10` (retained: two `M_2(ℂ)` summands; supports the `Cl(3,0)` ⊗ ℂ split)
+- `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` (retained: faithful complex irrep is 2-dim; supports the qubit identification)
+- `cl3_per_site_uniqueness` (audited_conditional at the broader-spinor scope; the narrowed U1-U3 physical-Cl(3)-only content is the load-bearing piece, supported by the two narrow theorems above)
 - `cl3_color_automorphism` (preserved)
 - The Z_3 Fourier diagonalization on hw=1 (preserved)
 - Per-site Pauli group structure (preserved)

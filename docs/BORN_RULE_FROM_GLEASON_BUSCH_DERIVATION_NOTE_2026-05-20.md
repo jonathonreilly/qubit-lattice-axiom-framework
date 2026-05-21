@@ -1,13 +1,25 @@
-# Born Rule from Gleason–Busch on the Pre-Record Reference State
+# Born Rule via Gleason–Busch on the Pre-Record Reference State: Bounded Support / Repair Route
 
 **Date:** 2026-05-20
-**Status:** proposal — pre-audit derivation note
-**Type:** bounded_theorem candidate
-**Closes (proposed):** the framework's named repair target on
-`BORN_RULE_ANALYSIS_2026-04-11.md` (`audited_failed`), and the
-adjacent circularity flagged on `NONLINEAR_BORN_GRAVITY_NOTE.md` —
-*"provide a retained bridge theorem deriving the probability/readout
-rule without imposing `|psi|^2`."*
+**Status:** proposal — pre-audit bounded support / repair-route note
+**Type:** bounded support
+**Repair route for:** the `audited_failed`
+`BORN_RULE_ANALYSIS_2026-04-11.md` lane (the gravitational Hartree
+fixed-point derivation failed; this note proposes Gleason–Busch on a
+pinned tracial reference as the structurally different replacement
+route). The framework's adjacent stated repair target on
+`NONLINEAR_BORN_GRAVITY_NOTE.md` (*"provide a retained bridge theorem
+deriving the probability/readout rule without imposing `|psi|^2`"*)
+is structurally addressed by this route, but not closed by this note
+alone — the route imports Gleason 1957 / Busch 2003 / Caves-Fuchs-
+Manne-Renes 2004 (POVM-additivity probability axiom plus the
+dim-2 extension), Lüders 1951 / Cassinelli-Lahti 1995 (composition-
+consistent update rule), the no-extra-structure premise on the
+pre-record reference (from the companion tracial-state note), and a
+record-as-Kraus identification of the framework's persistent-record
+lane (currently in-flight, not retained). Closure of any one of these
+imports would tighten the route; closure of all five would promote it
+to a retained derivation.
 
 ## What this note derives
 
@@ -193,25 +205,33 @@ and Lüders' (U4) compositional consistency as admitted inputs.
    standard but should be checked explicitly via the GNS
    construction on the UHF type `2^∞` C*-algebra. Routine.
 
-## What this derivation closes
+## What this note proposes as a repair route (not a closure)
 
 - **`BORN_RULE_ANALYSIS_2026-04-11.md`** (currently
   `audited_failed`): the prior derivation route (gravitational
-  Hartree fixed-point) is replaced by the Gleason–Busch route. The
-  failure mode (no proof of the gravitational contraction-rate
-  argument) is irrelevant here; the new route uses operator-algebraic
-  standard theorems instead.
+  Hartree fixed-point) failed because it could not prove the
+  contraction-rate argument. This note proposes Gleason–Busch on the
+  pinned tracial reference as a structurally different repair route.
+  The repair imports Gleason / Busch / CFMR / Lüders /
+  no-extra-structure / record-as-Kraus as named admitted inputs and
+  is therefore not a retained-grade closure on its own; it
+  demonstrates that a viable Born-derivation route exists in
+  principle. Promotion to retained closure requires those imports to
+  be retained or to be replaced by framework-internal derivations.
 
 - **`NONLINEAR_BORN_GRAVITY_NOTE.md`** repair target: *"provide a
   retained bridge theorem deriving the probability/readout rule
-  without imposing `|psi|^2`."* This derivation does exactly that —
-  the `|⟨φ|ψ⟩|²` form is the *output* of Step 4, not assumed by the
-  derivation.
+  without imposing `|psi|^2`."* This note structurally addresses the
+  target — the `|⟨φ|ψ⟩|²` form is the *output* of Step 4 given the
+  admitted inputs, not assumed by the derivation. But because the
+  imports are not all retained, this is bounded support for the
+  repair, not the retained bridge theorem itself.
 
 - **`BEYOND_LATTICE_QCD_NOTE.md`** circularity (the runner assumes
-  `np.abs(psi)**2` to test Born): this derivation supplies the Born
-  rule from upstream, so the test in the runner can be downstream of
-  the derived rule rather than circular.
+  `np.abs(psi)**2` to test Born): the proposed Gleason–Busch route
+  would supply the Born rule from upstream so the test is downstream
+  of a derived rule rather than circular. Same caveat: this is a
+  bounded support route until the imports retain.
 
 ## What this derivation does not close
 

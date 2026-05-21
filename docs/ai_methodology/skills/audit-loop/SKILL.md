@@ -304,42 +304,43 @@ the other position. A majority is at least three matching votes out of five.
 After a panel majority, go with the majority only if the majority tuple is
 applyable by the audit tooling and the normal gates pass. Apply a representative
 judicial JSON for the majority side, rerun the pipeline, strict lint, and
-`git diff --check`, then land it as the audit result. If the panel has no
-3-of-5 majority, the majority tuple cannot be represented by `apply_audit.py`,
-the tooling rejects it, strict lint fails, or the panel majority sides with
-neither original audit, open/keep a human-review PR and record the panel vote
-breakdown in the PR body or comment. Do not keep retrying individual judges
-after a completed five-judge panel.
+`git diff --check`, then land it as the audit result.
 
-If a human reviewer explicitly authorizes a second-stage panel after a completed
-no-majority panel, treat that authorization as the human-review action. Give the
-new five judges the restricted packet, the first/second audit arguments, and the
-full prior panel breakdown. If the second-stage majority selects a third
-applyable tuple rather than either original tuple, record it as
-`third_confirmed_hybrid`, then rerun the normal apply/pipeline/lint/diff-check
-gates before landing.
+No cross-confirmation disagreement should stop at "human review" merely because
+a five-judge panel has no 3-of-5 majority, because the panel majority sides with
+neither original audit, or because the panel selects a hybrid tuple. Treat that
+case as authorization to run another five-judge panel in the same audit loop.
+Give the new judges the restricted packet, the full first/second audit
+arguments, and every prior panel vote/rationale breakdown. If a later panel
+majority selects a third applyable tuple rather than either original tuple,
+record it as `third_confirmed_hybrid`, then rerun the normal
+apply/pipeline/lint/diff-check gates before landing.
 
-Only stop for human review when the five-judge panel is unresolved or
-unapplyable, the tooling rejects the majority judgment, strict lint fails, or
-another hard-rule/exceptional routing case remains after the panel.
+Do not keep retrying individual judges after a completed five-judge panel.
+Escalate by running a fresh five-judge panel with the prior panel outcomes in
+context. Stop only for a hard tooling or policy blocker that prevents the next
+panel or prevents applying/verifying an otherwise applyable majority; report the
+blocker as a tooling/policy stop, not as a human-review stop.
 
 If `apply_audit.py` accepts the JSON and `audit_lint.py --strict` passes after the pipeline refresh, land the audit by direct push to `main` for these routine cases:
 
 | Verdict / state | Audit-loop action |
 | --- | --- |
 | First or second `audited_clean` in the cross-confirmation flow | Direct push to `main` |
-| Cross-confirmation disagreement resolved by a five-judge panel majority that confirms an applyable first, second, or human-authorized hybrid verdict | Direct push to `main` after applying the majority judicial JSON |
+| Cross-confirmation disagreement resolved by a five-judge panel majority that confirms an applyable first, second, or hybrid verdict | Direct push to `main` after applying the majority judicial JSON |
 | `audited_conditional`, `audited_renaming`, `audited_decoration`, or `audited_numerical_match` | Direct push to `main` |
 | `audited_failed` on a non-controversial claim | Direct push to `main` |
 
-Open a PR and flag for human review only when there is an unresolved hard-rule conflict or exceptional routing case:
+Do not open a human-review PR for ordinary panel disagreement. Continue with
+fresh five-judge panels until an applyable majority lands or a hard tooling /
+policy blocker prevents progress:
 
 | Exception | Audit-loop action |
 | --- | --- |
-| Five-judge panel has no 3-of-5 majority, sides with neither original audit without an explicitly human-authorized applyable hybrid tuple, or produces an unapplyable majority tuple | Open PR; flag for human |
-| Cross-confirmation disagreement exists but the five-judge panel cannot be run with the required context/model | Open PR; flag for human |
-| `apply_audit.py` rejects the verdict JSON or blocks on a hard rule | Open PR; flag for human |
-| `audit_lint.py --strict` fails after applying the verdict | Open PR; flag for human |
+| Five-judge panel has no 3-of-5 majority, sides with neither original audit, or produces a hybrid / currently unapplyable tuple | Run another five-judge panel with all prior panel outcomes in context |
+| Cross-confirmation disagreement exists but the five-judge panel cannot be run with the required context/model | Stop as a tooling availability blocker |
+| `apply_audit.py` rejects the verdict JSON or blocks on a hard rule | Stop as an audit tooling blocker after preserving the rejected JSON and exact error |
+| `audit_lint.py --strict` fails after applying the verdict | Restore the pre-apply generated audit diff and stop as a verification blocker |
 
 ## Commit And Push
 
@@ -376,4 +377,8 @@ After each successful direct-main push:
 2. If time and user intent allow, fetch `origin/main`, refresh the queue, exclude any session-local blocked/skip rows, and start the next claim.
 3. Stop if there is an ambiguous independence issue, source-note hash drift that cannot be resolved mechanically, or an audit requiring domain expertise beyond the provided authorities.
 
-For unresolved exception cases listed above, create a branch/PR instead of pushing to `main`, flag the reason for human review in the PR body, and stop the loop until the human decision lands. Do not stop merely because a five-judge panel occurred; stop only if the panel remains unresolved or the tooling/verification gates fail.
+For unresolved hard tooling or policy blockers listed above, do not push to
+`main`; preserve the rejected JSON, panel logs, and exact command output, then
+report the blocker. Do not stop merely because a five-judge panel occurred or
+because a panel was unresolved; continue with a fresh panel carrying the prior
+panel outcomes in context.

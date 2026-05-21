@@ -139275,7 +139275,6 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "persistent_record_as_kraus_operator_note_2026-05-20",
         "minimal_axioms_2026-05-20"
       ],
       "direct_in_degree": 0,
@@ -139289,7 +139288,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "0fd47f52c7534d36138eeb6869ce528cfc05dc98323a674dbed41c603299c84e",
+      "note_hash": "aed537c53ab1fcf6071bade44d78391eefab7e9948a3adb1f0ac8bd640fdf943",
       "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -175385,13 +175384,13 @@
         "minimal_axioms_2026-05-20",
         "persistent_record_overlap_kernel_note"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 0,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 1.5,
+      "load_bearing_score": 0.0,
       "load_bearing_step": "The map from an initial system state to the record-conditional system amplitude, K_r: |\u03c8\u27e9 \u2192 A_r |\u03c6_r\u27e9, is linear and therefore extends to a bounded operator on the system Hilbert space.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "audit_in_progress",
@@ -175412,7 +175411,7 @@
       },
       "runner_path": null,
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators",
-      "transitive_descendants": 1,
+      "transitive_descendants": 0,
       "verdict_rationale": "The proposed Kraus family is introduced by defining a record-conditional amplitude map and then assuming the standard hypotheses needed for it to be a valid quantum instrument. The upstream persistent-record note is retained_bounded but only establishes a bounded pilot with an overlap kernel and purity data; it does not contain the load-bearing bridge from mesoscopic record labels to a complete set of bounded system Kraus operators. The CPTP conclusion follows algebraically once \u03a3_r K_r\u2020K_r = I is assumed, but that identity is precisely the missing closure step in the restricted packet."
     },
     "persistent_record_matched_compare_note": {
@@ -175512,7 +175511,7 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.0,
+      "load_bearing_score": 5.585,
       "load_bearing_step": "The mesoscopic persistent-record overlap kernel produces the reported bounded N=8,12,18 purity and detector-weighted overlap table, showing a live residual branch-connection lane but not asymptotic closure.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "retained_bounded",
@@ -175533,7 +175532,7 @@
       },
       "runner_path": "scripts/persistent_record_overlap_kernel.py",
       "title": "Persistent Record Overlap Kernel Note",
-      "transitive_descendants": 3,
+      "transitive_descendants": 2,
       "verdict_rationale": "Clean within the note's bounded pilot scope. The note does not claim asymptotic solution or closure; it claims the persistent-record overlap-kernel lane is scientifically live on the N=8,12,18 probe while retaining nonzero branch overlap. The current runner reproduces the exact reported table and fit summary, including the N=18 rebound that prevents a stronger claim. Residual risk is the declared small-N bounded setup and the absence of broader seed or asymptotic stress testing."
     },
     "persistent_record_refinement_note": {

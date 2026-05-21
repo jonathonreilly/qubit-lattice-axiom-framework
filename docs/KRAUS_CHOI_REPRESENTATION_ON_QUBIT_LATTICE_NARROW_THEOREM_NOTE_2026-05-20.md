@@ -3,9 +3,9 @@
 **Date:** 2026-05-20
 **Type:** positive_theorem candidate (narrow theorem)
 **Status:** source-side proposal — independent audit lane owns the verdict
-**Purpose:** Apply the Kraus 1971 operator-sum representation theorem and
-the Choi 1975 CP-map characterization theorem to the qubit-lattice
-CPTP map algebra as a framework-internal narrow theorem. Same
+**Purpose:** Apply the Kraus 1971 operator-sum representation theorem
+and the Choi 1975 CP-map characterization theorem to finite-region
+qubit-lattice CPTP maps as a framework-scoped narrow theorem. Same
 pattern as `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 (applying standard Clifford-algebra theorem to `Cl(3,0)`) and the
 companion `GLEASON_ON_QUBIT_LATTICE_*` + `BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_*`
@@ -13,18 +13,19 @@ notes (applying standard Gleason/Busch to the qubit-lattice substrate).
 
 ## Honest scope
 
-This note **does not re-prove Kraus' or Choi's theorems from scratch.**
-It applies these standard finite-dim C*-algebra theorems to the
-framework's specific algebra `⊗_x M_2(ℂ)` as a narrow positive_theorem.
-The framework's contribution is the application-to-its-substrate
-content, not the theorems themselves.
+This note **does not re-prove Kraus' or Choi's theorems from scratch**
+and does not eliminate those standard-math imports. It applies those
+finite-dimensional C*-algebra theorems to the framework's specific
+finite-region algebra `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ)` as a narrow
+positive_theorem candidate. The framework contribution is the
+application-to-its-substrate content, not the theorems themselves.
 
-If audit-retained, this lifts the external-textbook admission of
-Kraus/Choi from the
-[`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
-chain (landed on main with Kraus 1971 and Choi 1975 cited as standard
-math), enabling that note's chain to potentially retain at higher
-grade rather than bounded support.
+If audit-retained, this gives downstream notes such as
+`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20` a scoped
+qubit-lattice theorem to cite when they need the Kraus/Choi
+representation of a finite-region CPTP map. It does not prove that a
+specific record-formation dynamics is CPTP, and it does not retag any
+downstream row by itself.
 
 ## Claim
 
@@ -39,10 +40,9 @@ is `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ) ≅ M_d(ℂ)` for `d = 2^|Λ|`.
 Φ(X) = Σ_r K_r · X · K_r†                                                (1)
 ```
 
-for a finite (or countable, with appropriate convergence) family of
-**Kraus operators** `{K_r} ⊂ A_Λ`. The map is additionally
-**trace-preserving (TP)** iff `Σ_r K_r† K_r = 𝟙`. Equivalently
-(Choi 1975), `Φ` is CP iff its **Choi matrix**
+for a finite family of **Kraus operators** `{K_r} ⊂ A_Λ`. The map is
+additionally **trace-preserving (TP)** iff `Σ_r K_r† K_r = 𝟙`.
+Equivalently (Choi 1975), `Φ` is CP iff its **Choi matrix**
 
 ```text
 C_Φ := (𝟙 ⊗ Φ) (|Ω⟩⟨Ω|)                                                 (2)
@@ -107,8 +107,9 @@ Proof: spectral decomposition of the Choi matrix
 operators `K_r = √d · vec^{-1}(|v_r⟩)` where `vec^{-1}` reverses
 the column-stacking isomorphism `M_d(ℂ) → ℂ^{d²}`.
 
-The Kraus representation is **unique up to unitary mixing** of the
-Kraus operators (Naimark / Kraus uniqueness).
+Minimal Kraus representations are unique up to unitary mixing of the
+Kraus operators; non-minimal representations are equivalent after
+padding / isometric mixing.
 
 ## Step 3 — Application to the qubit-lattice substrate
 
@@ -122,40 +123,39 @@ The qubit-lattice algebra `A_Λ = ⊗_x M_2(ℂ)` is isomorphic to
   semidefinite.
 
 In the **thermodynamic limit** `Λ → Z^3`, the quasi-local algebra
-`A = ⊗_{x ∈ Z^3} M_2(ℂ)` is a UHF C*-algebra of type `2^∞`.
-Kraus/Choi extend via the standard quasi-local construction:
-finite-region CPTP maps approximate any quasi-local CPTP map via the
-inductive limit (Bratteli–Robinson Vol I.6). The thermodynamic-limit
-Kraus representation is consistent with the framework's existing
-record-formation structure.
+`A = ⊗_{x ∈ Z^3} M_2(ℂ)` is a UHF C*-algebra of type `2^∞`. This note
+does not claim a full Kraus/Choi representation theorem for arbitrary
+maps on that infinite algebra. It only records compatibility with the
+standard quasi-local construction: finite-region CPTP maps form the
+local building blocks used in the inductive system. Any full
+infinite-volume channel theorem is a separate operator-algebraic input.
 
 ## Step 4 — Consistency with the framework's record lane
 
-The framework's
-[`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
-identifies the persistent-record outcomes as Kraus operators `K_r`
-on the system algebra, with the unconditional update being CPTP:
+The framework's `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20`
+identifies persistent-record outcomes as Kraus operators `K_r` on the
+system algebra, with the unconditional update being CPTP:
 
 ```text
 σ → E(σ) = Σ_r K_r · σ · K_r†                                            (3)
 ```
 
-Step 1–2 (Kraus/Choi theorems) supply the *theorem* that this is
-the unique form of any CPTP map. Step 3 verifies the theorems apply
-on the qubit-lattice substrate. Together, the record-as-Kraus
-identification of `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE` has
-framework-internal upstream theorem support, not just textbook
-admission.
+Steps 1-2 supply the standard representation theorem for any
+finite-region CPTP map. Step 3 verifies that the finite-region
+qubit-lattice algebra satisfies the hypotheses. Together, this gives
+the record-as-Kraus lane a scoped upstream representation theorem to
+cite after that lane independently establishes that its record update
+is a finite-region CPTP map.
 
-## What this closes
+## What this can support after audit
 
-- **The Kraus 1971 / Choi 1975 external-textbook admissions** in
-  the persistent-record-as-Kraus chain. These now have framework-
-  internal narrow-theorem status on the qubit-lattice substrate.
-- **Combined with the Gleason + Busch companion notes** (PR #1631)
-  and the Greechie sequential-product narrow theorem (PR #1626),
-  the Born derivation chain has framework-internal narrow-theorem
-  status for all its standard-math admissions.
+- **The finite-region Kraus/Choi representation step** used by
+  downstream record-update notes. If retained, this row lets those
+  notes cite a qubit-lattice-scoped theorem for finite-region CPTP
+  maps instead of carrying a bare, unlocalized textbook reference.
+- **Dependency-chain repair for record-update/Born support lanes**
+  after independent audit. This row does not promote those parent
+  rows by itself.
 
 ## What this does not close
 
@@ -167,9 +167,9 @@ admission.
   (existing in
   `PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md` retained_bounded and
   the landed `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20`).
-- **The thermodynamic-limit extension** to the full quasi-local
-  algebra — sketched in Step 3 via Bratteli–Robinson construction;
-  full rigorous extension is a standard but separate result.
+- **The thermodynamic-limit representation theorem** for arbitrary
+  maps on the full quasi-local algebra — Step 3 only records
+  finite-region compatibility with the inductive system.
 
 ## Admitted inputs
 
@@ -182,8 +182,9 @@ admission.
    spectral decomposition, tensor products of matrix algebras) —
    universal background.
 4. **Bratteli–Robinson quasi-local construction** for the
-   thermodynamic-limit extension to UHF type `2^∞` — standard math
-   for operator-algebraic quantum statistical mechanics.
+   compatibility statement about finite-region maps inside the UHF
+   type `2^∞` inductive system — standard math for operator-algebraic
+   quantum statistical mechanics.
 
 ## Risk classification
 
@@ -204,7 +205,6 @@ standard representation theory).
 **Upstream framework dependencies** (load-bearing; markdown links):
 
 - [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
-- [`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md) — landed companion that this narrow theorem supplies the upstream theorem support for
 
 **Upstream standard-math imports** (named non-derivation):
 
@@ -216,6 +216,7 @@ standard representation theory).
 **Plain-text pointer references** (NOT load-bearing deps):
 
 - `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` — downstream consumer of the Kraus structure for record-conditional Born evaluations
+- `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md` — downstream/companion note that may cite this row for the finite-region CPTP representation theorem
 - `PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md` (retained_bounded) — existing record-lane structure that the Kraus operators model
 
 ## What this file is not

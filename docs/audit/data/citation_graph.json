@@ -23109,6 +23109,30 @@
       "to": "single_axiom_hilbert_note"
     },
     {
+      "from": "single_clock_uniqueness_narrow_no_go_note_2026-05-20",
+      "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    },
+    {
+      "from": "single_clock_uniqueness_narrow_no_go_note_2026-05-20",
+      "to": "d3_retention_closure_plan_2026-05-20"
+    },
+    {
+      "from": "single_clock_uniqueness_narrow_no_go_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "single_clock_uniqueness_narrow_no_go_note_2026-05-20",
+      "to": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "single_clock_uniqueness_narrow_no_go_note_2026-05-20",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "single_clock_uniqueness_narrow_no_go_note_2026-05-20",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+    },
+    {
       "from": "sin_squared_theta_w_gut_from_su5_note_2026-05-02",
       "to": "lhcm_repair_atlas_consolidation_note_2026-05-02"
     },
@@ -72225,6 +72249,25 @@
       "runner_path": "scripts/audit_companion_single_clock_stone_finite_dim_exact_2026_05_10.py",
       "title": "Single-Clock Stone Finite-Dim Uniqueness Narrow Theorem"
     },
+    "single_clock_uniqueness_narrow_no_go_note_2026-05-20": {
+      "claim_id": "single_clock_uniqueness_narrow_no_go_note_2026-05-20",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go (narrow theorem)",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+        "d3_retention_closure_plan_2026-05-20",
+        "minimal_axioms_2026-05-20",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "08ea31794c4004e9caa0327f926560ec5734ada4a213bfd6325c0c5cc24dffdb",
+      "path": "docs/SINGLE_CLOCK_UNIQUENESS_NARROW_NO_GO_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Single-Clock Uniqueness Narrow No-Go: No Spatial RP, No Second Clock"
+    },
     "site_phase_cube_shift_intertwiner_note": {
       "claim_id": "site_phase_cube_shift_intertwiner_note",
       "claim_type_author_hint": null,
@@ -80910,7 +80953,7 @@
       "bounded_theorem": 502,
       "decoration": 1,
       "meta": 184,
-      "no_go": 57,
+      "no_go": 58,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 167
@@ -80919,14 +80962,14 @@
       "bounded_theorem": 940,
       "decoration": 1,
       "meta": 184,
-      "no_go": 160,
+      "no_go": 161,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
-    "leaf_count": 728,
-    "node_count": 2455,
+    "edge_count": 9666,
+    "leaf_count": 727,
+    "node_count": 2456,
     "root_count": 804,
     "runners_with_path": 2032
   }

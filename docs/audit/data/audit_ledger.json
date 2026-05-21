@@ -1,5 +1,30 @@
 {
-  "last_invalidations": [],
+  "last_invalidations": [
+    {
+      "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
+      "reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "claim_id": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+      "reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "claim_id": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
+      "reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+      "reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+      "reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
+      "reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    }
+  ],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -33231,76 +33256,109 @@
       "verdict_rationale": "Issue: the algebraic singlet statement is correct and the live runner verifies dimension count, normalization, SU(3) invariance, antisymmetry, and singlet uniqueness, but the row adds no independent physical bridge beyond the retained-bounded color-automorphism parent. Why this blocks: it cannot stand as an independent physical baryon theorem or SM-color carrier result because confinement, baryon asymptotic states, and physical SM-color identification are not derived here. Repair target: cite a retained physical-color carrier bridge plus an independent baryon/asymptotic-state theorem before promoting beyond decoration. Claim boundary until fixed: boxed algebraic SU(3) representation-theory decoration under cl3_color_automorphism_theorem."
     },
     "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T21:12:21.774622+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed."
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "94d7e9f46b557f086a6bea6760e4206144ad83b507196e7daaec198ce851cece",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260517-211200-5aa25b20-cl3_central_pseudoscalar-002",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited upstream authority is retained and supplies exactly the needed K1/K3 inputs: omega central with omega^2 = -1 and the M_2(C) \u2295 M_2(C) idempotent split. Schur's lemma and Artin-Wedderburn then give the stated scalar dichotomy, non-equivalence separator, and idempotent factorization.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Abstract finite-dimensional complex representation-theory separator for faithful irreducible Cl(3,0)-modules, conditional on the retained Cl(3,0) complexification split and omega^2 = -1.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-17T21:12:21.774622+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "decoration_parent_claim_id": null,
       "deps": [
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "By Schur's lemma, central omega acts as c I_V, and omega^2 = -1 forces c^2 = -1, hence c in {+i, -i}; the idempotents e_\u00b1 then project onto exactly one chirality summand.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "935e1b8c9b9e6956afb53ec27aff4f54544250d632f73f148805ce867ad9c134",
       "note_path": "docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check the policy classification boundary between retained algebraic corollary and decoration; the algebraic chain itself closes.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T21:59:09.296650+00:00",
+          "audit_date": "2026-05-17T21:12:21.774622+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed."
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "94d7e9f46b557f086a6bea6760e4206144ad83b507196e7daaec198ce851cece",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-20260517-211200-5aa25b20-cl3_central_pseudoscalar-002",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited upstream authority is retained and supplies exactly the needed K1/K3 inputs: omega central with omega^2 = -1 and the M_2(C) \u2295 M_2(C) idempotent split. Schur's lemma and Artin-Wedderburn then give the stated scalar dichotomy, non-equivalence separator, and idempotent factorization.",
+          "claim_scope": "Abstract finite-dimensional complex representation-theory separator for faithful irreducible Cl(3,0)-modules, conditional on the retained Cl(3,0) complexification split and omega^2 = -1.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-17T21:12:21.774622+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "load_bearing_step": "By Schur's lemma, central omega acts as c I_V, and omega^2 = -1 forces c^2 = -1, hence c in {+i, -i}; the idempotents e_\u00b1 then project onto exactly one chirality summand.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check the policy classification boundary between retained algebraic corollary and decoration; the algebraic chain itself closes.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 42,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 42
+          },
+          "verdict_rationale": "The mathematics is correct as an algebraic consequence of the retained upstream Cl(3,0) split plus standard finite-dimensional complex representation theory. The runner performs exact symbolic matrix checks and does not import external numerical comparators or tuned values. However, the result is entirely class-A algebraic closure over a single retained upstream parent theorem with zero D checks, so under the decoration policy it is an algebraic decoration rather than an independently clean new derivation surface."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 42,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 42
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
       "title": "Cl(3) Central Pseudoscalar Schur Separator Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": "The mathematics is correct as an algebraic consequence of the retained upstream Cl(3,0) split plus standard finite-dimensional complex representation theory. The runner performs exact symbolic matrix checks and does not import external numerical comparators or tuned values. However, the result is entirely class-A algebraic closure over a single retained upstream parent theorem with zero D checks, so under the decoration policy it is an algebraic decoration rather than an independently clean new derivation surface."
+      "verdict_rationale": null
     },
     "cl3_color_automorphism_theorem": {
       "audit_date": "2026-05-05T02:29:17.183940+00:00",
@@ -33543,33 +33601,33 @@
       "verdict_rationale": "The source note has narrowed the claim to an algebraic embedding/channel-count theorem and explicitly removes the physical SM color bridge from the load-bearing scope. The runner source constructs the symmetric/antisymmetric base split, embeds standard Gell-Mann generators, checks commutators, trace normalization, and the Fierz identity rather than merely printing constants. The remaining assertions about physical color and EW correction are stated as conditional/deferred, so they do not block the bounded algebraic theorem."
     },
     "cl3_complexification_split_narrow_theorem_note_2026-05-10": {
-      "audit_date": "2026-05-11T01:29:33.850365+00:00",
+      "audit_date": "2026-05-21T21:59:08.944488+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_claim_scope": {},
         "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 2.085,
+        "load_bearing_score": 18.973,
         "runner_hash": "16a4ceedf0a3e4ececd2b6a27e57bd00a3cc27b5a9f69a49e38bed5770cfb3f5",
-        "transitive_descendants": 2
+        "transitive_descendants": 1004
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-audit-loop-019e14a6-39f9-7350-93b2-eea65ad3d445",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-cl3_complexification_spl-002",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The chain closes from the Clifford relations plus admitted finite-dimensional real and complex representation theory. The Pauli realization and central-idempotent split establish the algebra decomposition, and Artin-Wedderburn/Schur gives the two-dimensional irreducible modules.",
+      "chain_closure_explanation": "The note derives the stated Clifford algebra identities and representation-theoretic readout from standard finite-dimensional algebra and exact Pauli-matrix realization. No cited upstream authority or physical bridge is needed for the scoped algebraic claim.",
       "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+      "claim_scope": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-21T21:21:38.017852+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-21T21:59:08.944488+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -33584,25 +33642,36 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-21T21:59:08.944488+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-cl3_complexification_spl-002",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 10,
       "effective_status": "retained",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained",
       "load_bearing_score": 18.973,
-      "load_bearing_step": "In Cl(3,0) tensor_R C, e_+ = (1 - i omega)/2 and e_- = (1 + i omega)/2 are complete central orthogonal idempotents, giving Cl(3,0) tensor_R C isomorphic to M_2(C) direct-sum M_2(C).",
+      "load_bearing_step": "Cl(3,0) is real-isomorphic to M_2(C), and after complexification the central idempotents e_\u00b1 split it as M_2(C) \u2295 M_2(C), whose irreducible modules have complex dimension 2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
       "max_descendant_status_rank": 100,
       "note_hash": "4680139373bd50a87fa48bea3a00e14feb38fd91d3d75e423c67f8b4b5b19a89",
       "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-audit-loop-019e14a6-39f9-7350-93b2-eea65ad3d445, family=codex-gpt-5.5, independence=fresh_context) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the wording around 'faithful irreducible complex representation of Cl(3,0)' versus non-faithfulness as a representation of the full complexified direct-sum algebra; within the note's real-algebra scope this is not a blocker.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -33617,7 +33686,7 @@
       "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
       "title": "Cl(3) Complexification Split Narrow Theorem",
       "transitive_descendants": 1004,
-      "verdict_rationale": "The note remains inside abstract Clifford algebra and standard finite-dimensional representation theory. K1-K4 are algebraic consequences of the defining relations, the Pauli realisation, the central idempotent split, and the standard module theory of M_2(C). The runner provides exact symbolic A-class checks and does not import a physical bridge, comparator, tuned scale, or sector chosen to match an observation."
+      "verdict_rationale": "The load-bearing content is a standard class-(A) algebraic closure: centrality and square of the pseudoscalar, the real-algebra isomorphism Cl(3,0) \u2245 M_2(C), the complexified idempotent split, and the 2-dimensional simple-module readout. The runner source genuinely performs exact symbolic Pauli-matrix and abstract idempotent checks rather than importing external constants or fitted premises. The proof stays within the stated abstract algebra scope and explicitly excludes the open physical per-site Hilbert-space bridge."
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T01:40:42.572719+00:00",
@@ -33707,41 +33776,24 @@
       "verdict_rationale": "The scoped theorem closes as an abstract algebra statement from the retained split Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C) plus Artin-Wedderburn and complete reducibility. The runner is only corroborative and partly hard-codes representative Pauli blocks, but the proof does not rely on the runner to derive the classification. No physical observable, lattice Hilbert-space identification, or sector-selection bridge is claimed inside this note."
     },
     "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10": {
-      "audit_date": "2026-05-11T01:49:02.258110+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed."
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "19d4078185477c26b23359bae0c2fc31a7384a5b5bc8f8b03a6a714a03b4b603",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-019e14b7-c0f8-7110-94e8-400d03424323",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited Cl(3) to M_2(C) authority is retained, and the remaining steps are direct 2x2 matrix algebra. The source note explicitly excludes the lattice determinant bridge, so the open physical readout admission is not required for this scoped claim.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Audited the narrow finite-dimensional algebraic claim that the Pauli-realized Cl(3) gamma-involution on M_2(C) is the 2x2 adjugate, gives the gamma-norm determinant identity, has the stated grade signs, and does not by itself derive the full lattice determinant readout.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-11T01:49:02.258110+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -33749,34 +33801,84 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 2,
-      "effective_status": "retained",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 3.0,
-      "load_bearing_step": "For all M in M_2(C), gamma(M) := sigma_2 M^T sigma_2 equals adj(M), so M gamma(M) = det(M) I_2 and the identity coefficient is det(M).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0f9cb59abdcbbabb80c726e34ffb0a33a6b19b2c1c9e0c2ce32d1ae4660fa9fb",
       "note_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "none",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T21:59:09.297211+00:00",
+          "audit_date": "2026-05-11T01:49:02.258110+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed."
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "19d4078185477c26b23359bae0c2fc31a7384a5b5bc8f8b03a6a714a03b4b603",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-019e14b7-c0f8-7110-94e8-400d03424323",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited Cl(3) to M_2(C) authority is retained, and the remaining steps are direct 2x2 matrix algebra. The source note explicitly excludes the lattice determinant bridge, so the open physical readout admission is not required for this scoped claim.",
+          "claim_scope": "Audited the narrow finite-dimensional algebraic claim that the Pauli-realized Cl(3) gamma-involution on M_2(C) is the 2x2 adjugate, gives the gamma-norm determinant identity, has the stated grade signs, and does not by itself derive the full lattice determinant readout.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-11T01:49:02.258110+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "load_bearing_step": "For all M in M_2(C), gamma(M) := sigma_2 M^T sigma_2 equals adj(M), so M gamma(M) = det(M) I_2 and the identity coefficient is det(M).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "none",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 8,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 8
+          },
+          "verdict_rationale": "The load-bearing determinant identity follows from an explicit symbolic adjugate computation and the standard cofactor identity. The grade-action signs are likewise checked directly in the Pauli realization, and the full-lattice readout is correctly treated as a boundary rather than claimed closure. No hidden physics import or external comparator is used inside the audited scope."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 8,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py",
       "title": "Cl(3) \u03b3-Involution Determinant Identity \u2014 Narrow Theorem",
       "transitive_descendants": 3,
-      "verdict_rationale": "The load-bearing determinant identity follows from an explicit symbolic adjugate computation and the standard cofactor identity. The grade-action signs are likewise checked directly in the Pauli realization, and the full-lattice readout is correctly treated as a boundary rather than claimed closure. No hidden physics import or external comparator is used inside the audited scope."
+      "verdict_rationale": null
     },
     "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T01:50:09.593772+00:00",
@@ -40610,49 +40712,24 @@
       "verdict_rationale": "The note is clean only as a bounded computational no-go. The runner does not hard-code the reported table; it constructs the fields over the generated families and computes the reduction check, sign survival, and fitted exponents, with no cited upstream dependency needed for the stated finite result. The source note accurately reports the runner output and keeps the safe conclusion to exact zero-source reduction, sign survival on sampled rows, and failure of clean linear scaling for this minimal architecture. Residual risk is scope control: it must not be cited as excluding unsampled architectures, parameters, DAG families, or a separately derived physical mass observable."
     },
     "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T15:22:41.129662+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps.",
-          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Finite-dimensional complex representation theory of the real Clifford algebra Cl(3,0) generated by gamma_i with {gamma_i,gamma_j}=2 delta_ij I: Pauli irreps exist, omega is central with omega^2=-I, and the faithful irreducible complex reps are exactly the two 2-dimensional chiralities."
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained",
-          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained_bounded"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "33853187c3347a81d1fe2ea8a19f96d0cfeab3935ec2189e13e40accc2f993a4",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260517-152220-a5e2dcef-cpt_c3_cp_squared_scalar-012",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The source note gives direct sitewise algebra for the orbital factor and direct Pauli-matrix algebra for the internal factor; tensoring them proves the stated scalar identity. The cited retained-grade Cl(3) authorities support the Pauli irrep context, while the actual scalar-square step is explicit matrix algebra.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
-      "claim_scope": "For the explicitly specified finite-lattice operators C_lat, P_lat and Pauli internal operators G_C, G_P on V_lat \u2297 C^2 with even L, (CP)^2 is the scalar \u03b5 I_V, with \u03b5 determined by the lattice inversion convention.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T15:22:41.129662+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -40662,34 +40739,92 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The tensor product computation reduces (CP)^2 to (C_lat P_lat)^2 \u2297 (G_C G_P)^2 = \u03b5_lat I_lat \u2297 I_int = \u03b5_lat I_V.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "23691795a27023ace92426165106202cea69962edb072a132798ed8920670a58",
       "note_path": "docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Re-check terminology around calling sigma_3 the Cl(3) grading automorphism, since it preserves sigma_3 rather than flipping all three generators; this does not block the bounded matrix identity as stated for the explicit C and P.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T21:59:09.299634+00:00",
+          "audit_date": "2026-05-17T15:22:41.129662+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps.",
+              "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Finite-dimensional complex representation theory of the real Clifford algebra Cl(3,0) generated by gamma_i with {gamma_i,gamma_j}=2 delta_ij I: Pauli irreps exist, omega is central with omega^2=-I, and the faithful irreducible complex reps are exactly the two 2-dimensional chiralities."
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained",
+              "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained_bounded"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+              "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "33853187c3347a81d1fe2ea8a19f96d0cfeab3935ec2189e13e40accc2f993a4",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260517-152220-a5e2dcef-cpt_c3_cp_squared_scalar-012",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The source note gives direct sitewise algebra for the orbital factor and direct Pauli-matrix algebra for the internal factor; tensoring them proves the stated scalar identity. The cited retained-grade Cl(3) authorities support the Pauli irrep context, while the actual scalar-square step is explicit matrix algebra.",
+          "claim_scope": "For the explicitly specified finite-lattice operators C_lat, P_lat and Pauli internal operators G_C, G_P on V_lat \u2297 C^2 with even L, (CP)^2 is the scalar \u03b5 I_V, with \u03b5 determined by the lattice inversion convention.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T15:22:41.129662+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "load_bearing_step": "The tensor product computation reduces (CP)^2 to (C_lat P_lat)^2 \u2297 (G_C G_P)^2 = \u03b5_lat I_lat \u2297 I_int = \u03b5_lat I_V.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check terminology around calling sigma_3 the Cl(3) grading automorphism, since it preserves sigma_3 rather than flipping all three generators; this does not block the bounded matrix identity as stated for the explicit C and P.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 44,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 44
+          },
+          "verdict_rationale": "The load-bearing step is a genuine algebraic closure over explicitly defined finite-dimensional matrices, not a definition, numerical match, or imported comparator. The runner source constructs the Pauli matrices, lattice parity/permutation matrices, tensor products, and exact products in sympy rather than merely printing the target result. The proof also supplies the general even-L sign argument, so the finite runner checks are corroborative rather than the sole basis for closure."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 44,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 44
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py",
       "title": "CPT C3 \u2014 (CP)\u00b2 = \u03b5\u00b7I Narrow Theorem on Explicit Cl(3) \u00d7 Z\u00b3 C, P",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over explicitly defined finite-dimensional matrices, not a definition, numerical match, or imported comparator. The runner source constructs the Pauli matrices, lattice parity/permutation matrices, tensor products, and exact products in sympy rather than merely printing the target result. The proof also supplies the general even-L sign argument, so the finite runner checks are corroborative rather than the sole basis for closure."
+      "verdict_rationale": null
     },
     "cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T21:19:08.934001+00:00",
@@ -224261,49 +224396,24 @@
       "verdict_rationale": "Issue: the note's load-bearing content is an algebraic corollary of the retained CL3 faithful-irrep decomposition, with k introduced as n_+ + n_- and no independent physical bridge or comparator. Why this blocks clean independent status: the conditional statement closes, but it adds no independent theorem beyond the parent decomposition and does not close U4. Repair target: keep it boxed as a corollary under the parent or add a retained theorem deriving the physical single-module selection k = 1. Claim boundary until fixed: given k = 1, dim_C H_x = 2; k >= 2 remains admissible on the abstract algebraic surface."
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T15:50:24.089625+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M).",
-          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract d = 4 arithmetic factorization of the naive 16-corner count and its spinor-dimension match to the retained Cl(3,0) complexification split, including the explicit boundary that no framework-specific staggered/Kogut-Susskind reduction is derived."
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
-          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
-          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-          "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "ded06034c6dcd2c51e5f67577a408f520d235363f4477a43f59b00d98545df99",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260517-155000-a5e2dcef-staggered_dirac_substep2-027",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Within the stated narrow scope, the result follows from retained-grade upstream dimensional/counting inputs plus standard exterior-algebra identities. It does not close the separate physical identification of the framework's dynamical staggered-Dirac operator with D_KD, which the note explicitly leaves out of scope.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Audited only the abstract finite-dimensional algebraic equivalence between the Z_2^d-indexed per-hypercube component space and \u039b^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the even-d spinor/taste count match, and the Wilson parity-reversal exclusion.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T15:50:24.089625+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -224313,34 +224423,92 @@
         "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The canonical Hamming-weight indexing b \u21a6 {i : b_i = 1} gives a graded linear-algebra bijection V_{H_n} \u2245 \u039b^*(C^d), and D_KD := d - \u03b4 has the stated finite-dimensional exterior-algebra properties.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0085d52de5d27f2b776e6781c654c75797d451c35f766a925bf0ed9bf0d4c8e2",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check that E4's finite-dimensional d is interpreted as the abstract algebraic exterior operator used by the note, not the full spacetime differential operator; under that stated scope the closure is algebraic.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T21:59:09.380718+00:00",
+          "audit_date": "2026-05-17T15:50:24.089625+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract algebraic two-candidate comparison: Grassmann per-site dim 2 matches the retained Cl(3) dim-two readout, bosonic Fock is infinite-dimensional, and the Grassmann quadratic partition gives det(M).",
+              "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract d = 4 arithmetic factorization of the naive 16-corner count and its spinor-dimension match to the retained Cl(3,0) complexification split, including the explicit boundary that no framework-specific staggered/Kogut-Susskind reduction is derived."
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+              "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+              "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+              "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "ded06034c6dcd2c51e5f67577a408f520d235363f4477a43f59b00d98545df99",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260517-155000-a5e2dcef-staggered_dirac_substep2-027",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Within the stated narrow scope, the result follows from retained-grade upstream dimensional/counting inputs plus standard exterior-algebra identities. It does not close the separate physical identification of the framework's dynamical staggered-Dirac operator with D_KD, which the note explicitly leaves out of scope.",
+          "claim_scope": "Audited only the abstract finite-dimensional algebraic equivalence between the Z_2^d-indexed per-hypercube component space and \u039b^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the even-d spinor/taste count match, and the Wilson parity-reversal exclusion.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T15:50:24.089625+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "load_bearing_step": "The canonical Hamming-weight indexing b \u21a6 {i : b_i = 1} gives a graded linear-algebra bijection V_{H_n} \u2245 \u039b^*(C^d), and D_KD := d - \u03b4 has the stated finite-dimensional exterior-algebra properties.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check that E4's finite-dimensional d is interpreted as the abstract algebraic exterior operator used by the note, not the full spacetime differential operator; under that stated scope the closure is algebraic.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 64,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 64
+          },
+          "verdict_rationale": "The load-bearing work is finite-dimensional algebra: enumeration of {0,1}^d, binomial/form-degree counting, construction of d and \u03b4, adjointness, parity reversal, and the even-d arithmetic factorization. The cited authorities are retained or retained_bounded, and the runner source genuinely constructs the exterior-algebra matrices and checks the identities rather than merely printing constants. The note\u2019s broader physical staggered-Dirac realization bridge is explicitly excluded, so it is not a missing dependency for the audited scope."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 64,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 64
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py",
       "title": "Staggered-Dirac Substep 2 \u2014 K\u00e4hler-Dirac Equivalence Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing work is finite-dimensional algebra: enumeration of {0,1}^d, binomial/form-degree counting, construction of d and \u03b4, adjointness, parity reversal, and the even-d arithmetic factorization. The cited authorities are retained or retained_bounded, and the runner source genuinely constructs the exterior-algebra matrices and checks the identities rather than merely printing constants. The note\u2019s broader physical staggered-Dirac realization bridge is explicitly excluded, so it is not a missing dependency for the audited scope."
+      "verdict_rationale": null
     },
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T15:52:03.474830+00:00",
@@ -224405,45 +224573,24 @@
       "verdict_rationale": "The load-bearing step is a genuine class-A combinatorial closure: Hamming weight is invariant under coordinate permutations, and S_3 is transitive on each fixed-weight subset. The runner source performs exhaustive enumeration of the 8 vertices and 6 permutations, checks the orbit decomposition and charge-conjugation action directly, and reports PASS=55, FAIL=0. The note explicitly limits the claim to the bare set-level theorem and does not import the broader staggered-Dirac or physical-species identifications."
     },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
-      "audit_date": "2026-05-16T14:02:00.324084+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
-          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero locus and species count for the defined standard naive lattice Dirac operator on a hypercubic lattice: 2^d zeros/species, hence 16 at d=4, with no regulator-independent or framework-bridge claim."
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
-          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260516-140139-20260516T140139Z-ecb56578-staggered_dirac_substep3-targeted",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The narrow claim follows from the two retained cited authorities plus standard integer arithmetic and finite-dimensional linear algebra. The framework-specific 4-taste staggered realization remains open, but the note explicitly excludes that stronger claim from scope.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": "Audited only the abstract d = 4 arithmetic factorization of the naive 16-corner count and its spinor-dimension match to the retained Cl(3,0) complexification split, including the explicit boundary that no framework-specific staggered/Kogut-Susskind reduction is derived.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-16T14:02:00.324084+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -224452,34 +224599,88 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 4.5,
-      "load_bearing_step": "At d = 4, the upstream naive-lattice count gives 2^4 = 16, and integer arithmetic factors this as 16 = 4 \u00b7 4, with the spinor factor matching the cited Cl(3,0) complexification chirality-pair dimension dim_C V_+ + dim_C V_- = 2 + 2 = 4.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_bounded",
       "max_descendant_status_rank": 95,
       "note_hash": "c54a55a7ebd6424671ebb1d385c0e5fedc22759d03741fc01d2a5dc87a1f909d",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": "A second auditor should re-check that the scope remains limited to the arithmetic-factorization plus spinor-count match and is not later cited as closing the framework-specific Kogut-Susskind taste reduction.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T21:59:09.380906+00:00",
+          "audit_date": "2026-05-16T14:02:00.324084+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+              "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero locus and species count for the defined standard naive lattice Dirac operator on a hypercubic lattice: 2^d zeros/species, hence 16 at d=4, with no regulator-independent or framework-bridge claim."
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+              "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260516-140139-20260516T140139Z-ecb56578-staggered_dirac_substep3-targeted",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The narrow claim follows from the two retained cited authorities plus standard integer arithmetic and finite-dimensional linear algebra. The framework-specific 4-taste staggered realization remains open, but the note explicitly excludes that stronger claim from scope.",
+          "claim_scope": "Audited only the abstract d = 4 arithmetic factorization of the naive 16-corner count and its spinor-dimension match to the retained Cl(3,0) complexification split, including the explicit boundary that no framework-specific staggered/Kogut-Susskind reduction is derived.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-16T14:02:00.324084+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "load_bearing_step": "At d = 4, the upstream naive-lattice count gives 2^4 = 16, and integer arithmetic factors this as 16 = 4 \u00b7 4, with the spinor factor matching the cited Cl(3,0) complexification chirality-pair dimension dim_C V_+ + dim_C V_- = 2 + 2 = 4.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "A second auditor should re-check that the scope remains limited to the arithmetic-factorization plus spinor-count match and is not later cited as closing the framework-specific Kogut-Susskind taste reduction.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 22,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 22
+          },
+          "verdict_rationale": "The load-bearing work is a genuine class-A algebraic closure over independent retained-grade inputs: the retained naive theorem supplies the 16-corner count, and the retained Cl(3,0) split supplies the 2 + 2 chirality-pair dimension. The note does not assert the open staggered-realization bridge; it explicitly records that the taste reduction and regulator/substrate selection are not closed here. The runner source performs exact symbolic/enumerative checks consistent with the note rather than merely printing constants."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 22,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 22
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 3 \u2014 Species Reduction Bridge Narrow Theorem",
       "transitive_descendants": 1,
-      "verdict_rationale": "The load-bearing work is a genuine class-A algebraic closure over independent retained-grade inputs: the retained naive theorem supplies the 16-corner count, and the retained Cl(3,0) split supplies the 2 + 2 chirality-pair dimension. The note does not assert the open staggered-realization bridge; it explicitly records that the taste reduction and regulator/substrate selection are not closed here. The runner source performs exact symbolic/enumerative checks consistent with the note rather than merely printing constants."
+      "verdict_rationale": null
     },
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T15:09:13.482767+00:00",
@@ -241867,45 +242068,24 @@
       "verdict_rationale": "The load-bearing step is elementary algebra over positive reals: the four link rescalings produce the factor u_0^{-4}, and enforcing unit dressed plaquette expectation fixes the unique positive fourth root. The runner source materially checks this symbolic chain and does not import numerical plaquette values, PDG values, fitted u_0, or a specific gauge group. This is clean only as a bounded theorem conditional on P1 and the admitted P2 principle; it does not close the external physics origin of P2 or any numerical plaquette evaluation."
     },
     "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T21:45:58.841179+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260517-214422-78dc5814-u0_su2_bivector_irrep_an-012",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Within the stated bounded scope, the conclusion is a direct substitution into X3 after the retained X1/X2 dimensional readout supplies N_SU(2)=2. No numerical plaquette value or g_2(v) closure is used.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Given the retained Cl(3) split/dim-2 irrep inputs and the admitted tadpole convention, the audit checks only the algebraic SU(2) specialization with N_SU(2)=2.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T21:45:58.841179+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -241914,34 +242094,88 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Apply the L\u00fcscher-Mackenzie convention with G = SU(2) and N_G = N_SU(2) = 2 to obtain u_0(SU(2)) = <(1/2) Re Tr U_plaquette^SU(2)>^(1/4).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "08eb2e9e7b7df50c73903239efa4574e654e659959d5312dfaff8bb51ff77aed",
       "note_path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Re-check only that the restricted packet's X1/X2 wording is accepted as authorizing the bivector SU(2) fundamental representation used by X3.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-21T21:59:09.395674+00:00",
+          "audit_date": "2026-05-17T21:45:58.841179+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260517-214422-78dc5814-u0_su2_bivector_irrep_an-012",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Within the stated bounded scope, the conclusion is a direct substitution into X3 after the retained X1/X2 dimensional readout supplies N_SU(2)=2. No numerical plaquette value or g_2(v) closure is used.",
+          "claim_scope": "Given the retained Cl(3) split/dim-2 irrep inputs and the admitted tadpole convention, the audit checks only the algebraic SU(2) specialization with N_SU(2)=2.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T21:45:58.841179+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "load_bearing_step": "Apply the L\u00fcscher-Mackenzie convention with G = SU(2) and N_G = N_SU(2) = 2 to obtain u_0(SU(2)) = <(1/2) Re Tr U_plaquette^SU(2)>^(1/4).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check only that the restricted packet's X1/X2 wording is accepted as authorizing the bivector SU(2) fundamental representation used by X3.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 35,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 35
+          },
+          "verdict_rationale": "The load-bearing step is exact algebraic substitution over explicit inputs, not a numerical match or comparator check. Both cited one-hop authorities are retained, and the open SU(2) plaquette evaluation is explicitly outside the audited claim scope. The runner source is consistent with class A evidence: it checks the Clifford/Pauli representation, the N=2 readout, and the fourth-root identities symbolically rather than importing any observed value."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 35,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 35
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
       "title": "u_0(SU(2)) Bivector-Irrep Analytic Derivation Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing step is exact algebraic substitution over explicit inputs, not a numerical match or comparator check. Both cited one-hop authorities are retained, and the open SU(2) plaquette evaluation is explicitly outside the audited claim scope. The runner source is consistent with class A evidence: it checks the Clifford/Pauli representation, the N=2 readout, and the fourth-root identities symbolically rather than importing any observed value."
+      "verdict_rationale": null
     },
     "u1_fermion_number_conservation_theorem_note_2026-05-02": {
       "audit_date": null,

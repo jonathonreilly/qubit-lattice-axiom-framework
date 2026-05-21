@@ -10894,6 +10894,10 @@
     },
     {
       "from": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+      "to": "cl3_color_automorphism_theorem"
+    },
+    {
+      "from": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
       "to": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
     },
     {
@@ -51709,10 +51713,11 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "cl3_color_automorphism_theorem",
         "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fa16848821fade9ee99f086a74fe503f01322ad39273df598997dbb8abac2151",
+      "note_hash": "a20dc36e0c94c536ef9d09b491c7a01a7b836a4daaf1b41311fc4874ff46a442",
       "path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Constraint vs Convention Disambiguation Theorem"
@@ -80924,7 +80929,7 @@
       "open_gate": 123,
       "positive_theorem": 603
     },
-    "edge_count": 9660,
+    "edge_count": 9661,
     "leaf_count": 728,
     "node_count": 2455,
     "root_count": 804,

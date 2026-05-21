@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1318 |
+| unaudited | 1319 |
 | audit_in_progress | 8 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 11 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 75 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -51,12 +51,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 8 |
 | `audited_clean` | 602 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 75 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1541 |
+| `unaudited` | 1542 |
 
 | claim_type | count |
 |---|---:|
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 1083 | 35.08 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | bounded_theorem | critical | 1156 | 33.68 | `audited_clean` | **retained_bounded** |
 | 13 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 991 | 32.95 | `unaudited` | unaudited |
-| 14 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1122 | 32.13 | `audited_clean` | **retained_bounded** |
+| 14 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1122 | 32.63 | `audited_clean` | **retained_bounded** |
 | 15 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 991 | 31.95 | `unaudited` | unaudited |
 | 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 991 | 31.95 | `unaudited` | unaudited |
 | 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1101 | 31.61 | `unaudited` | unaudited |
@@ -754,7 +754,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -3932,21 +3931,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The constraint-vs-convention status of g or beta is a function of the admission rank r: with r = 1 the remaining variables lie on a one-parameter convention curve, while with r = 2 the remaining variable is uniquely forced by beta*g^2 = K.  _(class `A`)_
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
-- **auditor confidence:** high
-
-### `g_bare_constraint_vs_convention_theorem_note_2026-05-03`
-
-- **Note:** [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Local conditional algebra: under canonical Tr(T_a T_b)=delta_ab/2 and beta=2N_c=6, the Wilson matching identity beta=2N_c/g_bare^2 forces g_bare=1; broader rescaling-freedom closure depends on the cited rescaling theorem.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260518-120032-569b3ebd-g_bare_constraint_vs_con-002`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given canonical normalization and Wilson matching at N_c = 3 with beta = 6, exact algebra gives g_bare^2 = 2 N_c / beta = 6 / 6 = 1.  _(class `A`)_
-- **chain closes:** False — The local algebraic substitution closes. The full constraint-vs-convention disambiguation does not close to retained grade because the one-hop rescaling-freedom-removal authority is effective_status decoration_under_cl3_color_automorphism_theorem, not retained-grade.
-- **rationale:** The runner and note support the class-A identity that CN plus beta=6 implies g_bare^2=1. However, the claim's broader statement that alternative g_bare values are not free conventions relies on the cited rescaling-freedom-removal theorem. That cited authority is explicitly marked decoration_under_cl3_color_automorphism_theorem and claim_type decoration, so it is not a retained-grade dependency under the rubric.
-- **open / conditional deps cited:**
-  - `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `g_bare_derivation_note`

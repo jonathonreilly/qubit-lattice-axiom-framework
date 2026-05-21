@@ -380,8 +380,9 @@ verifies:
 
 ## Cross-references
 
-- [`ETA_COSMOLOGY_DERIVATION_NOTE_2026-05-02.md`](ETA_COSMOLOGY_DERIVATION_NOTE_2026-05-02.md) —
-  cycle 09 parent; Obstruction 1a is sharpened by this PR.
+- `ETA_COSMOLOGY_DERIVATION_NOTE_2026-05-02.md` —
+  historical planned cycle 09 parent pointer; the source file is not
+  present on current `main`. Obstruction 1a is sharpened by this PR.
 - [`CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md) —
   retained CKM CP-phase chain (Path A).
 - [`SM_REP_DERIVED_MAJORANA_NULL_SPACE_THEOREM_NOTE_2026-05-02.md`](SM_REP_DERIVED_MAJORANA_NULL_SPACE_THEOREM_NOTE_2026-05-02.md) —

@@ -38665,7 +38665,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "080d739fd405a2772fa93149336b45f575f7de3eec7214311b2bebcf9d4fdbdb",
+      "note_hash": "f881ee1ad0dd947a1a76a99d7d9fc8b021f96eecadbe6e9ff3dd4baed87dd170",
       "path": "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "A1 Qubit Interpretation: Presentational Sharpening of the Local-Algebra Axiom"
@@ -40413,7 +40413,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "383dd797c7aaced5ddec46135286189f0661a8d570afa2dfc6943cf1eb11a6ee",
+      "note_hash": "810fdf61577d88a1c0d7824ab09767c351a608eb5bd56d8bbbdff7762754f6e7",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -61462,7 +61462,7 @@
         "key_terminology"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0a09f4b033f54f948e3cafb5f2ab041f88c37153b8729a9d5b15b563c86014ef",
+      "note_hash": "29ad382ba5b207b75f1c8fc070b49f493593cb28ccfaaa6b69f6250d62ce1724",
       "path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)"
@@ -70034,7 +70034,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a0febf6b81dbc4332e6eddef4a4c5f1fa93bf545d3a2a8976a97d6f8e7f13e12",
+      "note_hash": "1c289edfa8ee90487cd2646e6b1ce4bf4439706c26c0739690268351f802d3b3",
       "path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Qubit Axiom Hardening: Bare-Qubit A1 Is Mathematically Identical to Physical-Cl(3,0)"
@@ -70213,7 +70213,7 @@
         "repo.vocabulary_hygiene_design"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dcda0bc5ad157e79d21f5ca5ebb2293650c558de99e9584607e8b7da5ecbc9a5",
+      "note_hash": "a69f582bee9c2167121872844fdfc7cf11a915db7867c66b980a46b571a6dba7",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"

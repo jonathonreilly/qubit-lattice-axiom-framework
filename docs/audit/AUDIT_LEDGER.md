@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 139 |
+| **retained_no_go** | 140 |
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1311 |
-| audit_in_progress | 7 |
+| audit_in_progress | 6 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 12 |
@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 7 |
-| `audited_clean` | 599 |
+| `audit_in_progress` | 6 |
+| `audited_clean` | 600 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
@@ -62,9 +62,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `bounded_theorem` | 1011 |
 | `decoration` | 29 |
 | `meta` | 226 |
-| `no_go` | 229 |
+| `no_go` | 230 |
 | `open_gate` | 112 |
-| `positive_theorem` | 737 |
+| `positive_theorem` | 736 |
 
 | criticality | count |
 |---|---:|
@@ -122,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `h0125_wider_replay_note` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
-| `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | C | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5 | A | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -372,6 +371,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -5448,6 +5448,55 @@ Five-judge panel breakdown: ('second', 'audited_conditional', 'bounded_theorem',
 - **load-bearing step:** The bulk Majoranas shift Hamming weight by exactly ±1, so γ_a P_A lies in P_0 ⊕ P_2 orthogonal to P_A and therefore P_A γ_a P_A = 0.  _(class `A`)_
 - **chain closes:** True — The restricted packet defines the two candidate bulk actions and the projector, and the algebraic weight-shift and compression checks establish the no-go for those actions. The only scope caveat is that the packet does not independently prove that these two constructions exhaust every conceivable axiom-3 implementation, so the closed scope is the stated natural-action A1 mechanism.
 - **rationale:** The runner source genuinely constructs the 16-dimensional operators, verifies the Clifford relations, computes the P_A compressions, and exhaustively checks the 15 four-bilinear subsets; it is not merely printing expected constants. The load-bearing step is an algebraic operator/projection identity over the explicitly supplied constructions, not a definition, renaming, external comparator, or tuned numerical match. Within the natural-action scope stated in the theorem, the no-go follows from the provided inputs.
+- **auditor confidence:** high
+
+### `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29`
+
+- **Note:** [`HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md`](../../docs/HUBBLE_LANE5_C1_A4_PARITY_GATE_CAR_BOUNDARY_NOTE_2026-04-29.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow finite-algebra no-go boundary: primitive parity gate plus rank(P_A)=4 does not by itself force metric-compatible Clifford/CAR coframe response or a dimensional action unit on P_A H_cell; conditional CAR-plus-parity support for c_Widom=1/4 is preserved.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-second-stage-panel-20260521-hubble-a4-j1`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The algebra generated by the rank-two Z_2 parity-gate projector on K=P_A H_cell is only span{I_K,Q_+} with dimension 2 and a large commutant, while the same gate data admit non-CAR response operators; therefore the gate does not determine the full M_4(C)/Cl_4(C) odd Clifford/CAR coframe response.  _(class `A`)_
+- **chain closes:** True — The second audit has the scientifically correct tuple. The source note is not a positive theorem row; it is a scoped no-go against the direct A4 shortcut from primitive parity gate plus rank(P_A)=4 to native CAR/coframe response and action-unit pinning. The runner evidence is class A finite algebra: dimensions of generated algebras and commutants, Clifford anticommutator checks, compatible non-CAR responses, gate-sector ambiguity, exact finite half-zone checks, and the unchanged kappa rescaling degeneracy. No-Go Discipline is closed for this narrow packet scope. N1: at least five attack routes against the shortcut are tested or explicitly bounded: gate algebra dimension 2 vs Cl_4 dimension 16; commutant dimension 8 underdetermination; a single Z_2 involution not being a four-axis coframe; same gate data allowing non-CAR two-qubit responses; gate not defining odd edge maps; action-unit rescaling persistence. N2: the packet collapses the residuals to two independent walls, CAR/coframe orientation-statistics lift and dimensional action/metrology unit, without inflating subchecks as independent walls. N3: hidden imports are explicit: CAR/coframe response, primitive two-mode CAR carrier, Target 3 bridge, and metrology/action unit are marked as conditional imports or surviving routes, not smuggled into the no-go. N4: residual matching is exact because the no-go attacks only the direct A4 shortcut, while preserving the conditional parity-gate theorem once CAR/coframe response is separately supplied. N5: rhetoric is narrow to P_A H_cell finite active-block parity-gate-to-CAR non-forcing, not a universal claim that no CAR route exists. N6: partial closure paths remain open in the note: direct A1 module-morphism, orientation/statistics lift, metrology theorem, or minimal carrier/metrology axiom. N7: the strongest steelman is that the residual Z_2 half-zone inside the rank-four block may already encode the missing orientation/statistics lift; the packet answers that this assumes the CAR/coframe carrier and is defeated by underdetermination and non-CAR compatible models for the gate-alone route. N8: cross-cycle echo risk is handled within the supplied packet by carrying forward A2 rescaling degeneracy and listing A1/A4/metrology survivor paths rather than claiming broader C1 closure or retiring unrelated walls. Therefore audited_clean no_go/A is defensible at the narrow A4 shortcut scope.
+
+Second-stage five-judge panel breakdown: ('second', 'audited_clean', 'no_go', 'A'):4; ('hybrid', 'audited_conditional', 'no_go', 'A'):1. Prior panel breakdown: {
+  "individual_votes": [
+    {
+      "first_auditor_error": "The first audit correctly noticed the finite-algebra obstruction but assigned the wrong claim_type and class. The source note blocks the A4 shortcut rather than proving a positive theorem, and the runner checks algebraic matrix/combinatorial identities on stated inputs rather than a class C first-principles compute from the axiom.",
+      "judge": 1,
+      "judgment_rationale": "The second audit is correct on the scientific classification: this is a narrow no_go boundary, and the load-bearing step is an algebraic finite-matrix obstruction, class A. The first audit misclassifies the row as a positive_theorem and class C. However, the packet's No-Go Discipline Gate forbids ratifying clean no_go unless N1-N8 are closed from the packet. N1: the packet contains partial alternative-route coverage through gate-algebra dimension, commutant size, non-CAR response compatibility, odd-map nonselection, and action-unit rescaling, but it does not supply the required explicit five-route N1 table with retained-authority citations. N2: the packet names multiple residual walls, but does not provide a pairwise wall-independence table. N3: hidden-wall phrases are present or implied, including added CAR/coframe response and standard finite matrix algebra, but no formal hidden-wall scan is supplied. N4: the residual appears narrowly matched to the A4 shortcut, but no per-citation residual-matching table is supplied. N5: the rhetoric is mostly finite active-block scoped, but no multi-resolution rhetoric audit is supplied. N6: surviving closure paths are listed, so the note does not overclaim universal impossibility, but no formal partial-closure scan is supplied. N7: the strongest steelman is the listed orientation/statistics lift from the even Z_2 parity gate to odd Clifford generators; the packet notes it as surviving, but does not provide a formal steelman section. N8: no cross-cycle echo repo search or prior-wall retirement table is included. Because N8 and other checklist items are not closed in this packet, audited_clean no_go cannot be ratified here.",
+      "notes_for_re_audit_if_any": "no_go_discipline_required: supply a restricted-input N1-N8 checklist for this exact narrow A4 shortcut, especially the N8 cross-cycle echo table, then re-run judicial confirmation for audited_clean no_go/A.",
+      "second_auditor_error": "The second audit correctly identifies no_go and class A, but over-applies audited_clean under the supplied judicial packet because the No-Go Discipline N1-N8 closure required for clean no_go is not present.",
+      "tuple": [
+        "hybrid",
+        "audit_in_progress",
+        "no_go",
+        "A"
+      ]
+    },
+    {
+      "first_auditor_error": "The first audit misclassified the object as a positive_theorem and class C. The source note explicitly blocks the standalone A4 shortcut, and the runner checks finite algebraic underdetermination rather than computing a new first-princi
+- **rationale:** The second audit has the scientifically correct tuple. The source note is not a positive theorem row; it is a scoped no-go against the direct A4 shortcut from primitive parity gate plus rank(P_A)=4 to native CAR/coframe response and action-unit pinning. The runner evidence is class A finite algebra: dimensions of generated algebras and commutants, Clifford anticommutator checks, compatible non-CAR responses, gate-sector ambiguity, exact finite half-zone checks, and the unchanged kappa rescaling degeneracy. No-Go Discipline is closed for this narrow packet scope. N1: at least five attack routes against the shortcut are tested or explicitly bounded: gate algebra dimension 2 vs Cl_4 dimension 16; commutant dimension 8 underdetermination; a single Z_2 involution not being a four-axis coframe; same gate data allowing non-CAR two-qubit responses; gate not defining odd edge maps; action-unit rescaling persistence. N2: the packet collapses the residuals to two independent walls, CAR/coframe orientation-statistics lift and dimensional action/metrology unit, without inflating subchecks as independent walls. N3: hidden imports are explicit: CAR/coframe response, primitive two-mode CAR carrier, Target 3 bridge, and metrology/action unit are marked as conditional imports or surviving routes, not smuggled into the no-go. N4: residual matching is exact because the no-go attacks only the direct A4 shortcut, while preserving the conditional parity-gate theorem once CAR/coframe response is separately supplied. N5: rhetoric is narrow to P_A H_cell finite active-block parity-gate-to-CAR non-forcing, not a universal claim that no CAR route exists. N6: partial closure paths remain open in the note: direct A1 module-morphism, orientation/statistics lift, metrology theorem, or minimal carrier/metrology axiom. N7: the strongest steelman is that the residual Z_2 half-zone inside the rank-four block may already encode the missing orientation/statistics lift; the packet answers that this assumes the CAR/coframe carrier and is defeated by underdetermination and non-CAR compatible models for the gate-alone route. N8: cross-cycle echo risk is handled within the supplied packet by carrying forward A2 rescaling degeneracy and listing A1/A4/metrology survivor paths rather than claiming broader C1 closure or retiring unrelated walls. Therefore audited_clean no_go/A is defensible at the narrow A4 shortcut scope.
+
+Second-stage five-judge panel breakdown: ('second', 'audited_clean', 'no_go', 'A'):4; ('hybrid', 'audited_conditional', 'no_go', 'A'):1. Prior panel breakdown: {
+  "individual_votes": [
+    {
+      "first_auditor_error": "The first audit correctly noticed the finite-algebra obstruction but assigned the wrong claim_type and class. The source note blocks the A4 shortcut rather than proving a positive theorem, and the runner checks algebraic matrix/combinatorial identities on stated inputs rather than a class C first-principles compute from the axiom.",
+      "judge": 1,
+      "judgment_rationale": "The second audit is correct on the scientific classification: this is a narrow no_go boundary, and the load-bearing step is an algebraic finite-matrix obstruction, class A. The first audit misclassifies the row as a positive_theorem and class C. However, the packet's No-Go Discipline Gate forbids ratifying clean no_go unless N1-N8 are closed from the packet. N1: the packet contains partial alternative-route coverage through gate-algebra dimension, commutant size, non-CAR response compatibility, odd-map nonselection, and action-unit rescaling, but it does not supply the required explicit five-route N1 table with retained-authority citations. N2: the packet names multiple residual walls, but does not provide a pairwise wall-independence table. N3: hidden-wall phrases are present or implied, including added CAR/coframe response and standard finite matrix algebra, but no formal hidden-wall scan is supplied. N4: the residual appears narrowly matched to the A4 shortcut, but no per-citation residual-matching table is supplied. N5: the rhetoric is mostly finite active-block scoped, but no multi-resolution rhetoric audit is supplied. N6: surviving closure paths are listed, so the note does not overclaim universal impossibility, but no formal partial-closure scan is supplied. N7: the strongest steelman is the listed orientation/statistics lift from the even Z_2 parity gate to odd Clifford generators; the packet notes it as surviving, but does not provide a formal steelman section. N8: no cross-cycle echo repo search or prior-wall retirement table is included. Because N8 and other checklist items are not closed in this packet, audited_clean no_go cannot be ratified here.",
+      "notes_for_re_audit_if_any": "no_go_discipline_required: supply a restricted-input N1-N8 checklist for this exact narrow A4 shortcut, especially the N8 cross-cycle echo table, then re-run judicial confirmation for audited_clean no_go/A.",
+      "second_auditor_error": "The second audit correctly identifies no_go and class A, but over-applies audited_clean under the supplied judicial packet because the No-Go Discipline N1-N8 closure required for clean no_go is not present.",
+      "tuple": [
+        "hybrid",
+        "audit_in_progress",
+        "no_go",
+        "A"
+      ]
+    },
+    {
+      "first_auditor_error": "The first audit misclassified the object as a positive_theorem and class C. The source note explicitly blocks the standalone A4 shortcut, and the runner checks finite algebraic underdetermination rather than computing a new first-princi
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28`

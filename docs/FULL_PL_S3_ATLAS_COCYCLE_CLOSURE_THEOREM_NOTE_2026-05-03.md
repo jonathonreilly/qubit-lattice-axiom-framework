@@ -16,7 +16,7 @@ explicit numerical multi-chart cocycle compatibility on PL S^3.
 ## Executive summary
 
 Cycle 10
-([`GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md))
+([`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_NOTE_2026-05-02.md))
 provided a 2-chart minimal numerical demonstration of the parent's
 overlap-invariance + K_GR-nondegeneracy claim. Its three named
 obstructions were:
@@ -224,7 +224,7 @@ Obstruction 1.
 
 ## Cited dependencies
 
-- (P1, cycle 10) [`GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md) —
+- (P1, cycle 10) [`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_NOTE_2026-05-02.md) —
   prior-cycle algebraic primitives (B_D, K_GR, transition rule).
 - (P2) [`UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md`](UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md) —
   parent row, audited_conditional, td=42, lbs=A.
@@ -253,7 +253,7 @@ python3 scripts/frontier_full_pl_s3_atlas_cocycle_closure.py
 
 ## Cross-references
 
-- [`GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md) —
+- [`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_NOTE_2026-05-02.md) —
   cycle 10 sister: 2-chart minimal demo + 3 named obstructions.
   This note closes Obstruction 1 of that note.
 - [`UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md`](UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md) —

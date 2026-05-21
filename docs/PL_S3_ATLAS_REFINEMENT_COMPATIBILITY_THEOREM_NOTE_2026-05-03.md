@@ -19,7 +19,7 @@ section construction.
 ## Executive summary
 
 Cycle 10
-([`GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md))
+([`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_NOTE_2026-05-02.md))
 named three obstructions for `universal_gr_lorentzian_global_atlas_closure_note`:
 
 1. Multi-chart cocycle conditions on triple overlaps NOT verified.

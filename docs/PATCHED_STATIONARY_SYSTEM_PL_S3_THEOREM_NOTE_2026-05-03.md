@@ -17,7 +17,7 @@ explicit numerical patched-system solver on PL S^3.
 ## Executive summary
 
 Cycle 10
-([`GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md))
+([`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_NOTE_2026-05-02.md))
 provided a 2-chart minimal numerical demonstration of the parent's
 overlap-invariance + K_GR-nondegeneracy claim with three named
 obstructions:
@@ -258,7 +258,7 @@ Obstruction 2.
 
 ## Cited dependencies
 
-- (P1, cycle 10) [`GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md) —
+- (P1, cycle 10) [`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_NOTE_2026-05-02.md) —
   prior-cycle algebraic primitives (B_D, K_GR, transition rule).
 - (P2, cycle 13) [`FULL_PL_S3_ATLAS_COCYCLE_CLOSURE_THEOREM_NOTE_2026-05-03.md`](FULL_PL_S3_ATLAS_COCYCLE_CLOSURE_THEOREM_NOTE_2026-05-03.md) —
   prior-cycle atlas (5 charts, 10 edges, 10 triangles, cocycle data).
@@ -289,7 +289,7 @@ python3 scripts/frontier_patched_stationary_system_pl_s3.py
 - [`FULL_PL_S3_ATLAS_COCYCLE_CLOSURE_THEOREM_NOTE_2026-05-03.md`](FULL_PL_S3_ATLAS_COCYCLE_CLOSURE_THEOREM_NOTE_2026-05-03.md) —
   cycle 13 sister: 5-chart atlas + 10 cocycle conditions verified.
   This note builds on cycle 13's atlas to close Obstruction 2.
-- [`GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_STRETCH_ATTEMPT_NOTE_2026-05-02.md) —
+- [`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`](GR_ATLAS_CLOSURE_NOTE_2026-05-02.md) —
   cycle 10: 2-chart minimal demo + 3 named obstructions (Obstruction
   1 closed by cycle 13; Obstruction 2 closed by this note;
   Obstruction 3 remains open).

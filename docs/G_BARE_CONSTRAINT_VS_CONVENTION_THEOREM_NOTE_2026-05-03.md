@@ -1,7 +1,13 @@
 # g_bare Constraint vs Convention Disambiguation Theorem
 
 **Date:** 2026-05-03 (2026-05-18: claim_scope formalized as local
-class-A result per audit verdict boundary instruction)
+class-A result per audit verdict boundary instruction; 2026-05-21:
+one-hop dependency re-architected to cite the retained_bounded parent
+`cl3_color_automorphism_theorem` directly, per the audit verdict's
+explicit "re-architect the rescaling-freedom dependency" named path —
+the rescaling-freedom-removal subcorollary is now treated as an
+inline algebraic consequence of (CN) checked in this note's runner
+section, not as a load-bearing one-hop authority)
 **Claim type:** bounded_theorem
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing content
 of this note is **the local class-A algebraic result that "CN
@@ -48,11 +54,10 @@ itself, not at `g_bare`.
 > Tr(T_a T_b) = delta_{ab} / 2                                     (CN)
 > ```
 > be the canonical Cl(3) connection normalization on the canonical triplet
-> block carried by `CL3_COLOR_AUTOMORPHISM_THEOREM.md` (two-hop dep via the
-> rescaling-freedom-removal theorem below),
-> and let the rescaling-freedom-removal theorem
-> [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
-> apply: under (CN) the Wilson plaquette small-a matching forces
+> block carried directly by `CL3_COLOR_AUTOMORPHISM_THEOREM.md`,
+> and use the inline algebraic consequence that a generator dilation
+> `T_a -> c T_a` with `c != 1` violates (CN). Under (CN), the Wilson
+> plaquette small-a matching forces
 > ```
 > beta = 2 N_c / g_bare^2.                                         (WM)
 > ```
@@ -61,8 +66,8 @@ itself, not at `g_bare`.
 > 1. **Structural constraint.** The unique value of `g_bare` compatible with
 >    (CN) and (WM) at `N_c = 3` and `beta = 2 N_c = 6` is `g_bare = 1`. Any
 >    alternative `g_bare != 1` either (a) violates (CN) by introducing a
->    `c != 1` generator dilation (forbidden by the rescaling-freedom-removal
->    theorem), OR (b) requires importing an external scale beyond the
+>    `c != 1` generator dilation (forbidden by the inline (CN) check),
+>    OR (b) requires importing an external scale beyond the
 >    framework axioms `A1` (Cl(3)) and `A2` (Z^3). In either case, the
 >    alternative is not a free convention within the framework.
 >
@@ -89,32 +94,78 @@ The theorem **does not** claim:
 - closure of the deeper question of whether the framework's normalization
   axioms `A4` are themselves derivable from `A1 + A2` alone.
 
-## 2. Declared audit dependency (one hop)
+## 2. Declared audit dependency (one hop) — 2026-05-21 re-architecture
 
 | Authority | Audit-lane status | Role |
 |---|---|---|
-| [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) | unaudited (proposed positive_theorem in same PR) | provides the load-bearing identity that the rescaling A -> c * A under (CN) shifts beta = c^2 * beta, leaving g_bare unchanged. Without this identity, the alternative-g_bare reading (a) would be open. |
+| [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](CL3_COLOR_AUTOMORPHISM_THEOREM.md) | `retained_bounded` | carries the canonical Cl(3) connection normalization `Tr(T_a T_b) = delta_{ab} / 2` (CN) used in the load-bearing step. This is the framework's canonical Gell-Mann generator basis with `T_F = 1/2`; the present theorem's class-A substitution into the Wilson small-a matching identity (WM) is specialized to that normalization at `N_c = 3`. |
 
-The single one-hop dep is the rescaling-freedom-removal theorem proposed
-in the same PR. Its dep on `cl3_color_automorphism_theorem` propagates as
-two-hop. The present theorem does not introduce any further admitted
-convention or fitted selector; the entire convention layer is
-encapsulated by the rescaling-freedom-removal theorem's dep chain.
+The single one-hop dep is now the retained_bounded
+`cl3_color_automorphism_theorem`, which carries the canonical (CN)
+normalization directly. The rescaling-freedom-removal corollary
+`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
+carries effective status `decoration_under_cl3_color_automorphism_theorem`
+on the audit ledger — it is, by that classification, an algebraic
+corollary of the retained parent. The 2026-05-21 re-architecture
+therefore moves the rescaling-freedom-removal step from a load-bearing
+one-hop dep to an **inline algebraic consequence of (CN) within this
+note's own runner Section** (the case-(a) elimination in §3, checked
+exactly by the runner with `Fraction` arithmetic). It is no longer
+declared as a separate one-hop authority that needs independent
+retained-grade status of its own.
+
+The present theorem does not introduce any further admitted convention
+or fitted selector; the single admitted convention layer is (CN)
+itself, carried by `cl3_color_automorphism_theorem`.
+
+### 2.1 Why the re-architecture is audit-named, not novel
+
+The 2026-05-18 ledger row for this note recorded:
+
+> *missing repair: dependency_not_retained: retain-grade or
+> **re-architect the rescaling-freedom dependency** before re-auditing
+> the broader constraint-vs-convention conclusion.*
+
+The present revision adopts the verdict's second named alternative
+("re-architect"). The reasons:
+
+- The rescaling-freedom-removal note is classified
+  `decoration_under_cl3_color_automorphism_theorem`, which by
+  definition means the audit lane has already recognized it as a
+  corollary of the retained parent. Re-citing the retained parent
+  directly is consistent with the existing decoration classification,
+  not a new claim.
+- The load-bearing step in §3 below uses the rescaling-freedom-removal
+  identity only in the case-(a) elimination, which is itself a one-line
+  algebraic consequence of (CN): a generator dilation `T_a -> c T_a`
+  with `c != 1` immediately changes `Tr((c T_a)(c T_b)) = c^2
+  delta_{ab}/2`, violating (CN). That is an inline class-A check, not
+  an independent theorem. The runner already verifies it explicitly
+  (see Section 5 representative checks).
+- Treating that inline check as a load-bearing one-hop authority of
+  its own (rather than as a derived consequence of (CN)) introduced
+  the present audit blocker; the re-architecture removes that
+  artifact without weakening any executable check.
 
 ## 3. Load-bearing step (class A)
 
 ```text
 Given:
   (CN) Tr(T_a T_b) = delta_{ab} / 2     (admitted convention layer; carried
-                                         by cl3_color_automorphism_theorem
-                                         via the rescaling-freedom-removal
-                                         theorem dep)
+                                         directly by the retained_bounded
+                                         row cl3_color_automorphism_theorem;
+                                         single one-hop dep, see §2)
   (WM) beta = 2 N_c / g_bare^2          (Wilson small-a matching;
                                          derived in the runner Section C)
-  (RR) Rescaling-freedom-removal theorem (one-hop dep): under (CN), the
-       continuum rescaling A -> c * A shifts beta = c^2 * beta, with
-       g_bare unchanged; alternative g_bare values either violate (CN)
-       (case a) or require an external scale (case b).
+  (RR) Inline algebraic consequence of (CN), no separate one-hop dep:
+       a generator dilation T_a -> c T_a with c != 1 immediately
+       produces Tr((c T_a)(c T_b)) = c^2 * delta_{ab}/2 != delta_{ab}/2,
+       violating (CN). Therefore under (CN), the continuum rescaling
+       A -> c * A is not a free reparametrization of g_bare; it
+       shifts the action coefficient beta = c^2 * beta at fixed
+       g_bare. Alternative g_bare values either violate (CN) (case a,
+       by this inline check) or require an external scale (case b,
+       eliminated by A1 + A2 axiom content).
 
 At N_c = 3, the canonical normalization (CN) places the connection on
 the operator-valued one-form A_op = sum_a A^a T_a with no pre-factor
@@ -216,18 +267,21 @@ Representative runner checks:
 ## 6. Audit-lane disposition (proposed)
 
 ```yaml
-target_claim_type: positive_theorem
+target_claim_type: bounded_theorem
 proposed_claim_scope: |
   g_bare = 1 is a structural constraint (not a separate convention choice)
   relative to the canonical Cl(3) connection normalization
   Tr(T_a T_b) = delta_ab/2, which itself is the admitted framework
-  convention carried by cl3_color_automorphism_theorem (via the
-  rescaling-freedom-removal theorem dep). The disambiguation locates the
-  convention layer one level upstream from g_bare: there is one
-  canonical-normalization convention, and g_bare = 1 is its derived
-  constraint.
+  convention carried directly by the retained_bounded row
+  cl3_color_automorphism_theorem (single one-hop dep, 2026-05-21
+  re-architecture). The rescaling-freedom-removal subcorollary is an
+  inline algebraic consequence of (CN) within this note's runner
+  Section, not a separate one-hop authority. The disambiguation
+  locates the convention layer one level upstream from g_bare: there
+  is one canonical-normalization convention, and g_bare = 1 is its
+  derived constraint.
 proposed_load_bearing_step_class: A
-declared_one_hop_dep: g_bare_rescaling_freedom_removal_theorem_note_2026-05-03
+declared_one_hop_dep: cl3_color_automorphism_theorem
 audit_required_before_effective_retained: true
 parent_update_allowed_only_after_retained: true
 ```
@@ -277,9 +331,13 @@ the canonical Cl(3) connection normalization `Tr(T_a T_b) = delta/2`,
 carried by `cl3_color_automorphism_theorem`. Once that single convention
 is fixed:
 
-- the rescaling-freedom-removal theorem (the one-hop dep) shows that the
-  continuum rescaling `A -> c * A` cannot rescue an alternative `g_bare`
-  (case a in the load-bearing step);
+- the inline rescaling-freedom case-(a) check (an algebraic consequence
+  of (CN), checked exactly by this note's runner under the 2026-05-21
+  re-architecture; the corresponding decoration corollary
+  `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` is no longer
+  declared here as a load-bearing one-hop authority of its own) shows
+  that the continuum rescaling `A -> c * A` cannot rescue an alternative
+  `g_bare` (case a in the load-bearing step);
 - the framework axioms `A1 + A2` provide no external scale that could
   introduce an alternative `g_bare` (case b);
 
@@ -296,16 +354,23 @@ scope.
 
 ## 10. Cross-references
 
-The declared one-hop dependency is the rescaling-freedom-removal theorem,
-linked once in section 2. The remaining cross-references are reader pointers
-(plain text, not load-bearing for the citation graph):
+Under the 2026-05-21 re-architecture, the declared one-hop dependency
+is `cl3_color_automorphism_theorem` (linked in §2). The remaining
+cross-references are reader pointers (plain text, not load-bearing for
+the citation graph):
 
 - Parent: `G_BARE_DERIVATION_NOTE.md` — may cite this candidate only after
   this row and its dependency chain are retained by independent audit.
 - `G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md` — the
   demotion / status correction packet that names the three repair targets.
-- `CL3_COLOR_AUTOMORPHISM_THEOREM.md` — two-hop dep (carries the canonical
-  Gell-Mann generator basis).
+- `G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
+  — the rescaling-freedom-removal corollary, currently
+  `decoration_under_cl3_color_automorphism_theorem` on the ledger. The
+  2026-05-21 re-architecture treats its case-(a) elimination as an
+  inline algebraic consequence of (CN) inside the present note's
+  runner Section, not as a load-bearing one-hop authority. Reader
+  pointer only; not on the citation-graph load-bearing path of this
+  revision.
 - `G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md` — the
   complementary convention-reading narrow theorem (g_bare = 1 itself
   classified as an admitted Wilson convention). The two readings are
@@ -313,7 +378,7 @@ linked once in section 2. The remaining cross-references are reader pointers
 - `G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md` — the
   broader Cl(3) -> End(V) -> su(3) -> Wilson chain.
 - `G_BARE_RIGIDITY_THEOREM_NOTE.md` — upstream rigidity theorem (no scalar
-  dilation of T_a, used in the rescaling-freedom-removal theorem).
+  dilation of T_a, used in the inline rescaling-freedom case-(a) check).
 - `MINIMAL_AXIOMS_2026-04-11.md` — `A4` records the canonical normalization
   as the framework's normalization-and-evaluation surface input. The
   present theorem clarifies the relationship between `A4` and `g_bare = 1`.
@@ -328,18 +393,31 @@ ledger is:
 > authority is not retained-grade; it is currently an audited decoration
 > boxed under `cl3_color_automorphism_theorem`.*
 
-The named one-hop dep
-[`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+The 2026-05-18 named one-hop dep
+`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`
 carries effective status `decoration_under_cl3_color_automorphism_theorem`.
 That is a terminal classification under the audit lane, so this row's
-conditional status cannot be lifted along the rescaling-freedom path without
-re-architecting the dep chain. The local algebra (class A substitution into
-the canonical Wilson matching identity) is unchanged; only the upstream
-authority status is the gating issue.
+conditional status could not be lifted along the rescaling-freedom path
+without re-architecting the dep chain. The local algebra (class A
+substitution into the canonical Wilson matching identity) is unchanged;
+only the upstream authority status was the gating issue.
+
+The **2026-05-21 re-architecture** (see §2 above and the date header)
+adopts the verdict's second named alternative ("re-architect the
+rescaling-freedom dependency"): the present note now declares
+`cl3_color_automorphism_theorem` (`retained_bounded`) as its single
+load-bearing one-hop authority, and treats the rescaling-freedom
+case-(a) elimination as an inline algebraic consequence of (CN) checked
+by this note's runner. The substantive class-A algebra in §3 is
+unchanged; only the dep declaration is rewired so the audit's
+`dependency_not_retained` blocker reflects the actual algebraic chain
+rather than an artifact of declaring the inline check as a separate
+authority. Whether this re-architecture is accepted is, of course, set
+by independent audit on this revised row, not by this note.
 
 Independent of this row, the audit lane has a separate Ward-route program
 that reaches `g_bare = 1` via different upstream authorities — see
-[`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`](G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md)
+`G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md`
 (now `retained_bounded`) and
 `G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`
 (`audited_conditional`; see-also cross-reference, not a load-bearing

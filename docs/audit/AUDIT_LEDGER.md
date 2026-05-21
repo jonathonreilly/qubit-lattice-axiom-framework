@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | audit_in_progress | 10 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
@@ -31,7 +31,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
-| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 3 |
@@ -51,20 +51,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 10 |
 | `audited_clean` | 598 |
 | `audited_conditional` | 79 |
-| `audited_decoration` | 26 |
+| `audited_decoration` | 27 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1007 |
-| `decoration` | 27 |
+| `decoration` | 28 |
 | `meta` | 226 |
 | `no_go` | 230 |
 | `open_gate` | 112 |
-| `positive_theorem` | 739 |
+| `positive_theorem` | 738 |
 
 | criticality | count |
 |---|---:|
@@ -811,6 +811,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
+| `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -2255,6 +2256,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Cl(3,0) is real-isomorphic to M_2(C), and after complexification the central idempotents e_± split it as M_2(C) ⊕ M_2(C), whose irreducible modules have complex dimension 2.  _(class `A`)_
 - **chain closes:** True — The note derives the stated Clifford algebra identities and representation-theoretic readout from standard finite-dimensional algebra and exact Pauli-matrix realization. No cited upstream authority or physical bridge is needed for the scoped algebraic claim.
 - **rationale:** The load-bearing content is a standard class-(A) algebraic closure: centrality and square of the pseudoscalar, the real-algebra isomorphism Cl(3,0) ≅ M_2(C), the complexified idempotent split, and the 2-dimensional simple-module readout. The runner source genuinely performs exact symbolic Pauli-matrix and abstract idempotent checks rather than importing external constants or fitted premises. The proof stays within the stated abstract algebra scope and explicitly excludes the open physical per-site Hilbert-space bridge.
+- **auditor confidence:** high
+
+### `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited the finite-dimensional algebraic identities for the γ-involution γ(M)=σ_2 M^T σ_2 on M_2(C) under the retained Cl(3,0)≅M_2(C) Pauli realisation, including the stated boundary that this does not derive the full lattice determinant readout.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260521-221407-ab828979-cl3_gamma_involution_det-012`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any 2x2 complex matrix M, σ_2 M^T σ_2 equals adj(M), hence M·γ(M)=det(M)·I_2 and the scalar component is det(M).  _(class `A`)_
+- **chain closes:** True — The determinant and grade-action identities follow by direct 2x2 matrix algebra once the retained upstream Cl(3,0)≅M_2(C) Pauli realisation is admitted. The lattice-readout statement is only a negative boundary disclaimer, not a claimed closure.
+- **rationale:** The proof is a genuine class-A algebraic check over the retained one-hop Cl(3) complexification/split authority plus standard 2x2 matrix algebra. The runner source actually computes symbolic and exact rational matrix identities and does not import PDG values, fitted constants, or hidden numerical comparators. Under the rubric tie-breaker, because the audit has only algebraic checks, zero external comparator checks, and reduces to one upstream retained parent plus standard mathematics, the terminal verdict is audited_decoration rather than audited_clean.
+- **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`

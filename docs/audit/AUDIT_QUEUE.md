@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1326
-**Ready (all deps already at retained-grade or metadata tiers):** 14
+**Total pending:** 1325
+**Ready (all deps already at retained-grade or metadata tiers):** 13
 
 By criticality:
 - `critical`: 870
 - `high`: 28
-- `medium`: 110
+- `medium`: 109
 - `leaf`: 318
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 1000 | 17.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py` |
+| 1 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 1000 | 13.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py` |
 | 2 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | unaudited | critical | 972 | 11.43 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py` |
 | 3 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | no_go | audit_in_progress | critical | 971 | 10.93 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a1_grassmann_boundary_car_obstruction.py` |
 | 4 | `hubble_lane5_c1_a4_parity_gate_car_boundary_note_2026-04-29` | positive_theorem | audit_in_progress | critical | 971 | 10.93 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hubble_lane5_c1_a4_parity_gate_car_boundary.py` |

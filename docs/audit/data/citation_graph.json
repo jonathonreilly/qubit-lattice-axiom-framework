@@ -43579,7 +43579,7 @@
         "charged_lepton_y_tau_ward_identity_u1_anchor_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d41e3047de52e8c485407305e6679c15c5dac727019eb1fef508a60238df0929",
+      "note_hash": "23aae2ffe081176029d452b73a4c576bd21fa9c3746a8d96508c8ef6013be423",
       "path": "docs/CHARGED_LEPTON_Y_TAU_M3_PREMISE_SELF_CORRECTION_NOTE_2026-04-28.md",
       "runner_path": null,
       "title": "`y_\u03c4` Cycle 4 Fan-out M3 Premise \u2014 Self-Correction"
@@ -43641,7 +43641,7 @@
         "yt_ward_identity_derivation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b631acc6e577db6cf9992ac027c7d57d4b7277ba03c518be4a8f907feb85fdc3",
+      "note_hash": "662c78a5748ae0c1fda4578b4ff00058767b4c0e5736d933f2a85966a23c275a",
       "path": "docs/CHARGED_LEPTON_Y_TAU_WARD_IDENTITY_U1_ANCHOR_NOTE_2026-04-28.md",
       "runner_path": null,
       "title": "`y_\u03c4` Ward Identity from `U(1)_Y` Anchor \u2014 Stretch Attempt (SA-B)"
@@ -50898,7 +50898,7 @@
         "pmns_selector_three_identity_support_note_2026-04-21"
       ],
       "helper_runner_paths": [],
-      "note_hash": "596e0925b88e8a5b9e88a43d0a0737b8e24d5a1c5d85d256e7d148f2014c57cf",
+      "note_hash": "9e66ed914046a1e3d16e29062889bac2b928f038851492e74421b4655768a7fc",
       "path": "docs/EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_epsilon1_from_cp_chain.py",
       "title": "\u03b5_1 from CP Chain \u2014 Stretch Attempt with Named Obstructions"
@@ -51601,7 +51601,7 @@
         "universal_gr_discrete_global_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e8fa5b4a7706eca9f307e95a5f4b6f9e2af1a58b97e88f01b773f33f80edd1f7",
+      "note_hash": "4532c530138e6556778ae59a6406073a682ee0c7101d9640d44129f76b754aa7",
       "path": "docs/FULL_PL_S3_ATLAS_COCYCLE_CLOSURE_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_full_pl_s3_atlas_cocycle_closure.py",
       "title": "Full PL S^3 Atlas Cocycle Closure on the 4-Simplex Boundary \u2014 Theorem Note"
@@ -62201,7 +62201,7 @@
         "charged_lepton_y_tau_m3_premise_self_correction_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e4f65b538a7e9aa60fc4a76ef7afa9635877d67acbd20d56457adb00884b834c",
+      "note_hash": "df6a664418a387c1f6465d4a24495a0f906cdf34b1e284fa57feaaa6fa3bfbb9",
       "path": "docs/NEUTRINO_LANE4_4F_SIGMA_M_NU_THEOREM_PLAN_NOTE_2026-04-28.md",
       "runner_path": null,
       "title": "Lane 4F `\u03a3m_\u03bd` Theorem Plan: Cosmology-Bridge Support Roadmap"
@@ -64172,7 +64172,7 @@
         "universal_gr_discrete_global_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "214d403def004116d18b933884d9bf00eb5853818b85f095f77e424cb0ff7f94",
+      "note_hash": "334e88a2415dae2d227ce129928c089ccf14c83631c2eea1eaa9f45a4587ad1b",
       "path": "docs/PATCHED_STATIONARY_SYSTEM_PL_S3_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_patched_stationary_system_pl_s3.py",
       "title": "Patched Stationary System on PL S^3 \u2014 Theorem Note"
@@ -64715,7 +64715,7 @@
         "patched_stationary_system_pl_s3_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b5287e3eb9e1767236f032e22d930922b7a0d0198c54c7e7d5c0778b9da3ea73",
+      "note_hash": "108117ccec351f1fa3494cffd137a1b98130a54b42c43be261597b2cbeed12ee",
       "path": "docs/PL_S3_ATLAS_REFINEMENT_COMPATIBILITY_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_pl_s3_atlas_refinement_compatibility.py",
       "title": "PL S^3 Atlas Refinement Compatibility \u2014 Theorem Note"
@@ -65338,7 +65338,7 @@
         "epsilon1_from_cp_chain_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3bb09d2504417600c466946e4ed3bf1f75b91e0fe79f13f339766337b4be0b60",
+      "note_hash": "e46bad76bbc9561c7d778e3f05ed4edc92f901f1e269c531c39e8aedc43a5ae2",
       "path": "docs/PMNS_BRANCH_SELECTOR_CP_SHEET_BLINDNESS_NOTE_2026-05-03.md",
       "runner_path": "scripts/frontier_pmns_branch_selector.py",
       "title": "PMNS Branch Selector \u2014 CP-Sheet Blindness Excludes the Current Branch-B Bank"
@@ -65749,7 +65749,7 @@
         "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "48bd839be364bd9b9f787d4a624900daac834a9f48b93e38ae032f52030efa5a",
+      "note_hash": "8ccc0585723cd67feab4a1c8d886fa33a220e3681bae2a64229811a62159a447",
       "path": "docs/PMNS_PREDICTIVE_SURFACE_CHARACTERIZATION_CAMPAIGN_SYNTHESIS_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "PMNS Predictive-Surface Characterization \u2014 Campaign Synthesis Note"

@@ -5,13 +5,14 @@
 **Date:** 2026-05-20
 **Status:** current public framework memo for the qubit-on-`Z^3` (equivalently `Cl(3)`-on-`Z^3`) package
 **Type:** meta
-**Supersedes:** `MINIMAL_AXIOMS_2026-05-03.md` (which restored the two-axiom set after backing out the April 15 rewrite). The qubit reframe sharpens the statement of A1 but does not change the framework's content; A3 and A4 (former axioms recategorized as open gates in the 2026-05-03 restoration) remain open gates.
+**Supersedes:** `MINIMAL_AXIOMS_2026-05-03.md` (which restored the two-axiom set after backing out the April 15 rewrite). The qubit reframe makes the intended A1 ontology explicit while preserving the same local algebraic content; A3 and A4 (former axioms recategorized as open gates in the 2026-05-03 restoration) remain open gates.
 
 ## What this note does
 
 This note **restates** the framework's two axioms in their physically
-sharpest form. The mathematical content is unchanged: `Cl(3,0) ≅ M_2(ℂ)`
-as real algebras is *exactly* the qubit-operator-algebra identification.
+sharpest form. The local algebraic content is unchanged: `Cl(3,0) ≅
+M_2(ℂ)` as real algebras is *exactly* the qubit-operator-algebra
+identification.
 The retained backbone for this identification is the pair of narrow
 positive theorems
 `cl3_complexification_split_narrow_theorem_note_2026-05-10` (`retained`)
@@ -22,14 +23,13 @@ and `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`
 `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md` is
 `audited_conditional` at the full-spinor scope; its narrowed U1-U3
 physical-`Cl(3)`-only content is supported by the two retained narrow
-theorems above. Promoting the qubit/`M_2(ℂ)` identification from a
-derivation step to the primary form of A1 makes the qubit-per-site
-reading load-bearing.
+theorems above. The qubit/`M_2(ℂ)` wording is therefore the canonical
+physical statement of the same local algebraic substrate.
 
 This note also records two consequences of the qubit reframe:
 
-1. The **pre-record reference state** `ρ_ref = ⊗_x I/2` is a *derived
-   theorem* on A1+A2 rather than a separate axiom (see
+1. The **pre-record reference state** `ρ_ref = ⊗_x I/2` is a named
+   derivation lane on A1+A2, not a separate axiom (see
    `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`).
    An earlier proposal to adopt it as a third axiom
    (archived as `archive_unlanded/a3-prime-pre-record-state-superseded-2026-05-20/A3_PRIME_MAXIMUM_ENTROPY_PRE_RECORD_REFERENCE_STATE_PROPOSAL_NOTE_2026-05-20.md`)
@@ -44,31 +44,35 @@ This note also records two consequences of the qubit reframe:
 
 ## The two framework axioms
 
-1. **A1.** A qubit at every site.
+1. **A1.** Reality is a qubit at every lattice site.
 
-   *Equivalently:* the physical local operator algebra at each `Z^3`
-   site is the one-qubit algebra `M_2(ℂ)`, equivalently `Cl(3,0)`
-   as a real algebra.
+   *Equivalently:* for each site `x`, the primitive local operator
+   algebra is the one-qubit algebra `A_x ≅ M_2(ℂ)`, equivalently
+   `Cl(3,0)` as a real algebra.
 
-2. **A2.** Sites form the cubic lattice `Z^3`.
+2. **A2.** The lattice sites form the cubic lattice `Z^3`.
 
-   *Equivalently:* the physical spatial substrate is the cubic
-   lattice `Z^3`.
+   *Equivalently:* the site set is `Z^3`, with its standard cubic
+   adjacency/translation structure.
 
-The 5-word headline A1 is the canonical statement; the *equivalently*
-line beneath it spells out the explicit math content. Both name the
-same retained mathematical object via co-equal labels. The headline
-is preferred for Maxwell-tight minimality; the *equivalently* line
-preserves continuity with the existing `Cl(3)`-framing literature
-and provides explicit identification of the operator-algebra and
-real-algebra readings.
+The bare A1 headline is the canonical physical statement; the
+*equivalently* line fixes its audit-stable mathematical content. Both
+name the same retained mathematical object via co-equal labels. The
+headline is preferred for Maxwell-tight minimality; the
+*equivalently* line preserves continuity with the existing
+`Cl(3)`-framing literature and provides explicit identification of
+the operator-algebra and real-algebra readings.
 
-### What "qubit" means in A1 — retained-grade binding definition
+Dynamics, measurement, records, Born probabilities, continuum limits,
+particle sectors, gauge structure, and gravity are not additional
+primitives in A1-A2; they enter only through their named derivation
+lanes.
 
-"Qubit" in A1 is **not vocabulary**. It is the standard
-quantum-information unit with a precise, audit-ratified mathematical
-content. The per-site operator algebra committed by A1 is
-**simultaneously and equivalently** all of:
+### What "qubit" means in A1 — algebraic binding definition
+
+"Qubit" in A1 names the primitive local algebraic degree of freedom.
+The per-site operator algebra committed by A1 is **simultaneously and
+equivalently** all of:
 
 - `M_2(ℂ)`, the algebra of bounded operators on a 2-dim complex
   Hilbert space `ℂ²`
@@ -80,8 +84,9 @@ content. The per-site operator algebra committed by A1 is
 - the Pauli group `{±I, ±iI, ±σ_a, ±iσ_a}` extended to its
   complex-linear span
 
-These are **the same algebra**, not four separate commitments. The
-equivalence is established by retained-grade narrow theorems:
+These are **the same local algebra**, not four separate commitments.
+Non-axiom structures enter only through their named derivation lanes.
+The equivalence is established by retained-grade narrow theorems:
 
 - `cl3_complexification_split_narrow_theorem_note_2026-05-10`
   (`retained`, positive_theorem) — establishes
@@ -250,12 +255,13 @@ reading:
 
 **This revision (`MINIMAL_AXIOMS_2026-05-20.md`):**
 
-> "Framework has 2 axioms: a qubit at every `Z^3` site (`M_2(ℂ) ≅
-> Cl(3,0)` per site). The fermion realization and gauge normalization
-> remain open gates. Composition of per-site algebras is by standard
-> C*-tensor product (mathematical background, not an axiom). The
-> pre-record reference state and the Born rule become explicit
-> derivation lanes on the qubit-lattice surface."
+> "Framework has 2 axioms: reality is a qubit at every lattice site
+> (`M_2(ℂ) ≅ Cl(3,0)` per site), and the lattice sites form `Z^3`.
+> The fermion realization and gauge normalization remain open gates.
+> Composition of per-site algebras is by standard C*-tensor product
+> (mathematical background, not an axiom). The pre-record reference
+> state and the Born rule are explicit derivation lanes on the
+> qubit-lattice surface."
 
 The framework's parameter reduction under this framing:
 **19 SM numerical parameters → 2 framework axioms + 2 named open

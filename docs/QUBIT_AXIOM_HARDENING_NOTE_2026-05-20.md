@@ -84,21 +84,24 @@ representations. Nothing in the existing retained surface is lost
 under the qubit reading; the equivalence is what makes the bare-qubit
 form valid.
 
-### Count 3 — commitment-strength of "a qubit at every site"
+### Count 3 — commitment-strength of "reality is a qubit at every lattice site"
 
 The bare A1 says: at every site `x ∈ Z^3`, there is a qubit. By
-the standard meaning of "qubit," this is the commitment that:
+the standard algebraic meaning of "qubit" in this framework, this is
+the commitment that:
 
-- per-site Hilbert space `H_x = ℂ²`
 - per-site operator algebra `A_x = M_2(ℂ)`
 - equivalently as a real algebra, `A_x ≅ Cl(3,0)`
 - Pauli generators `σ_a^x` for `a ∈ {1, 2, 3}` per site
-- the per-site Bloch sphere of pure states
-- the per-site `U(2)` inner-automorphism group
+- the central pseudoscalar maps to `i · 𝟙_{M_2(ℂ)}` under the
+  `Cl(3,0) ≅ M_2(ℂ)` identification
 
 That commitment-strength is exactly equal to the commitment-strength
 of "the physical local algebra is `Cl(3,0)` at every site." The
 mathematical content is point-for-point the same.
+
+All non-axiom structures enter only through their named derivation
+lanes.
 
 ## What the objection would require to be sound
 
@@ -125,23 +128,22 @@ After hardening, the disagreement reduces to:
 - **Form A (reviewer-preferred):** *"physical local algebra is
   `Cl(3,0)`, equivalently `M_2(ℂ)` (the single-qubit operator
   algebra)"* — 14 words, names the real-algebra side first
-- **Form B (canonical-as-adopted):** *"A qubit at every site"* —
-  5 words, names the qubit/operator-algebra side first
+- **Form B (canonical-as-adopted):** *"Reality is a qubit at every
+  lattice site"* — names the qubit/operator-algebra side first
 
 Both name the same retained mathematical object. Both have
 identical commitment-strength. Neither is *more solid* than the
 other in any mathematical sense.
 
 Form B is preferred for:
-1. **Readability** — 5 words vs 14
+1. **Readability** — direct physical wording
 2. **Maxwell-tight minimality** — matches the style of Newton I,
    Galilean relativity, Maxwell's equations
-3. **Direct physical content** — "qubit at every site" is the
-   actual physical claim; `Cl(3,0)` is the real-algebra label for
-   the operator algebra of that qubit
-4. **Information-theoretic primacy** — connects directly to
-   modern quantum-information foundations (Gleason, Hardy,
-   Masanes-Müller, CDP) without translation
+3. **Direct physical content** — "reality is a qubit at every
+   lattice site" is the actual physical claim; `Cl(3,0)` is the
+   real-algebra label for the operator algebra of that qubit
+4. **Derivation-lane clarity** — downstream structures keep their
+   named lanes rather than moving into the axiom
 
 Form A is preferred for:
 1. **Continuity** with existing repo `Cl(3)`-language notes —
@@ -158,38 +160,34 @@ Form A; preferred for minimality and readability.
 
 ## Hardening: what the canonical statement of A1 commits to
 
-For maximum clarity, the bare A1 statement *"A qubit at every
-site"* commits the framework to **every** of the following,
-simultaneously:
+For maximum clarity, the bare A1 statement *"Reality is a qubit at
+every lattice site"* commits the framework to the following local
+algebraic content:
 
-1. Per-site complex Hilbert space `H_x = ℂ²` (2-dimensional)
-2. Per-site operator algebra `A_x = M_2(ℂ)` (4-dim over `ℂ`,
+1. Per-site operator algebra `A_x = M_2(ℂ)` (4-dim over `ℂ`,
    8-dim over `ℝ`)
-3. Equivalently, per-site real Clifford algebra `A_x ≅ Cl(3,0)`
-4. Per-site Pauli generators `σ_1, σ_2, σ_3` with
+2. Equivalently, per-site real Clifford algebra `A_x ≅ Cl(3,0)`
+3. Per-site Pauli-generator presentation `σ_1, σ_2, σ_3` with
    `σ_a² = I, σ_a σ_b = -σ_b σ_a` for `a ≠ b`
-5. Per-site pseudoscalar `ω = σ_1 σ_2 σ_3` (the `Cl(3,0)` volume
+4. Per-site pseudoscalar `ω = σ_1 σ_2 σ_3` (the `Cl(3,0)` volume
    element, distinct from the identity `𝟙`), satisfying `ω² = -𝟙`
    and central in `Cl(3,0)`. Under the `Cl(3,0) ≅ M_2(ℂ)`
    identification, `ω` maps to `i · 𝟙_{M_2(ℂ)}`, recovering the "i"
    of quantum mechanics geometrically.
-6. Per-site state space: density matrices `ρ` on `ℂ²`
-   (Bloch sphere when pure)
-7. Per-site `U(2)` inner-automorphism group, with quotient `SU(2)`
-   on the bivector subalgebra
-8. The full retained algebraic content carried by
+5. The retained algebraic support carried by
    `cl3_complexification_split_narrow_theorem_note_2026-05-10`,
    `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`,
    `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`,
    and the bounded-retained `cl3_color_automorphism_theorem`
 
-That is the full mathematical commitment of A1 in the bare-qubit
-form. It is identical to the commitment of the "physical
-`Cl(3,0)`" form.
+That is the full primitive commitment of A1 in the bare-qubit form. It
+is identical to the commitment of the "physical `Cl(3,0)`" form.
+All non-axiom structures enter only through their named derivation
+lanes.
 
 ## Conclusion
 
-The bare-qubit A1 is **rock-solid**. The "vocabulary substitution"
+The bare-qubit A1 is **review-clean**. The "vocabulary substitution"
 objection is not a solidity concern but a presentational
 preference for continuity with existing `Cl(3)`-language. Solidity
 is established by:
@@ -198,11 +196,11 @@ is established by:
   equivalence
 - Identical commitment-strength to the alternative phrasing
 - Identical downstream framework content under either reading
-- Standard QI-textbook meaning of "qubit" with no ambiguity
+- Explicit routing of non-axiom structures to named derivation lanes
 
 The canonical A1 statement stays:
 
-> **A1.** A qubit at every site.
+> **A1.** Reality is a qubit at every lattice site.
 
 Bundled with the binding commentary block in
 `MINIMAL_AXIOMS_2026-05-20.md`, this is the framework's

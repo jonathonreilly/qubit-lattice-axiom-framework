@@ -278518,44 +278518,71 @@
       "verdict_rationale": null
     },
     "yukawa_color_projection_theorem": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T16:03:21.190048+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 17.137,
+        "runner_hash": "c3ff0f82219906a3522e385cc48ef3527808a647728b0fc843d40aa3a308d4ef",
+        "transitive_descendants": 1125
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T160258Z-fc43db58-yukawa_color_projection_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows from the provided Fierz/channel-decomposition authority plus the retained N_c = 3 structural input. No physical matching rule is needed within the narrowed claim boundary.",
       "claim_id": "yukawa_color_projection_theorem",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Only the algebraic SU(N_c) Fierz/channel-counting identity F_adjoint = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; the Higgs-Z and Yukawa physical-matching claims are excluded.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem (proposed; audit-lane to ratify)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T16:03:21.190048+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "ew_current_fierz_channel_decomposition",
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "native_gauge_closure_note",
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_pending_chain",
+      "effective_status_reason": "decoration_waiting_on:ew_current_fierz_channel_decomposition",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 17.137,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The adjoint-channel fraction of the SU(N_c) q-qbar Hilbert space is dim(adj)/dim(N_c \u2297 N_c-bar) = (N_c^2 - 1)/N_c^2, hence 8/9 at N_c = 3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "3ab25bfad27854537a8b4fa9ed5bb1e9d5b0410e8e007d5db123824289a88da7",
       "note_path": "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers do not silently re-expand this narrowed decoration verdict into the excluded physical y_t or Higgs-Z matching claim.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -278758,18 +278785,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 31,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 31
       },
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "Yukawa Color-Singlet Projection Theorem",
       "transitive_descendants": 1125,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an exact algebraic representation-dimension identity, and the runner checks only note structure, Fierz completeness, dimension counting, and the 8/9 arithmetic. The restricted packet explicitly excludes the downstream physical-Higgs-Z and Yukawa-matching assertions, so those open bridges do not block the scoped algebraic claim. Because this source row mainly reuses the upstream EW current Fierz-channel decomposition result with standard group theory and no external comparator checks, it is decoration rather than an independent retained positive theorem."
     },
     "z2_hw1_mass_matrix_parametrization_note": {
       "audit_date": "2026-05-02T15:40:33.711314+00:00",

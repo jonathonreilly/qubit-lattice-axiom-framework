@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 118 |
 | **retained_no_go** | 147 |
 | **retained_bounded** | 362 |
-| _retained_pending_chain_ | 11 |
+| _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1345 |
+| unaudited | 1344 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -47,20 +47,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 5 |
 | `audited_clean` | 600 |
 | `audited_conditional` | 83 |
-| `audited_decoration` | 20 |
+| `audited_decoration` | 21 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1569 |
+| `unaudited` | 1568 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1023 |
-| `decoration` | 21 |
+| `decoration` | 22 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 750 |
+| `positive_theorem` | 749 |
 
 | criticality | count |
 |---|---:|
@@ -69,7 +69,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 199 |
 | `leaf` | 894 |
 
-- **Retained pending chain closure:** 11
+- **Retained pending chain closure:** 12
 - **Citation cycles detected:** 292
 
 ### Runner classification (static heuristic)
@@ -824,6 +824,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
+| `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `backreaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -11619,6 +11620,20 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yukawa_color_projection_theorem`
+
+- **Note:** [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Only the algebraic SU(N_c) Fierz/channel-counting identity F_adjoint = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3; the Higgs-Z and Yukawa physical-matching claims are excluded.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:ew_current_fierz_channel_decomposition`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T160258Z-fc43db58-yukawa_color_projection_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The adjoint-channel fraction of the SU(N_c) q-qbar Hilbert space is dim(adj)/dim(N_c ⊗ N_c-bar) = (N_c^2 - 1)/N_c^2, hence 8/9 at N_c = 3.  _(class `A`)_
+- **chain closes:** True — The scoped conclusion follows from the provided Fierz/channel-decomposition authority plus the retained N_c = 3 structural input. No physical matching rule is needed within the narrowed claim boundary.
+- **rationale:** The load-bearing step is an exact algebraic representation-dimension identity, and the runner checks only note structure, Fierz completeness, dimension counting, and the 8/9 arithmetic. The restricted packet explicitly excludes the downstream physical-Higgs-Z and Yukawa-matching assertions, so those open bridges do not block the scoped algebraic claim. Because this source row mainly reuses the upstream EW current Fierz-channel decomposition result with standard group theory and no external comparator checks, it is decoration rather than an independent retained positive theorem.
+- **decoration parent:** `ew_current_fierz_channel_decomposition`
 - **auditor confidence:** high
 
 ### `z2_hw1_mass_matrix_parametrization_note`

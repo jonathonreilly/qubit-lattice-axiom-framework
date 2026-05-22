@@ -100,9 +100,11 @@ algebraic cores had not yet been independently audited.
 
 Two pieces of that chain have since landed retained narrow theorems:
 
-- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
-  (retained / audited_clean per the 2026-05-16 ledger) — provides
-  the abstract Cl(3) faithful complex-irrep dim = 2 readout.
+- `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`
+  (retained / audited_clean) — §(K4) provides the abstract Cl(3)
+  faithful complex-irrep dim = 2 readout. The decoration sibling
+  `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+  records the same content but is not itself the retained authority.
 - `SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`
   (retained_bounded / audited_clean per the 2026-05-16 ledger) —
   provides the Berezin determinant identity and the Pauli-exclusion
@@ -130,10 +132,10 @@ compatibility** (D4). The U4 bridge remains open.
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — provides the abstract Cl(3) faithful complex-irrep dim = 2 readout
-  `dim_C V = 2` used in (D1) and (D2). Status authority: independent
-  audit lane only; effective status pipeline-derived.
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained; §(K4) provides the abstract Cl(3) faithful complex-irrep
+  dim = 2 readout `dim_C V = 2` used in (D1) and (D2). Status authority:
+  independent audit lane only; effective status pipeline-derived.
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — provides the Berezin determinant identity `Z_F[M] = det(M)` used
   in (D4), and the algebraic-Grassmann nilpotency `χ_x² = 0` used in
@@ -352,7 +354,8 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 15`.
 
 Load-bearing markdown-link upstream (two one-hop dependencies):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  (§(K4) supplies the dim-two readout)
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
@@ -360,6 +363,11 @@ cleanup pattern, these are written without markdown links so the
 citation-graph builder does not parse them as upstream dependency
 edges:
 
+- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — decoration sibling of the retained complexification-split note;
+  records the same dim-two content separately but is not itself the
+  retained authority (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — open-gate parent for the substep-1 bridge from abstract irrep dim
   to physical per-site Hilbert dim; the gate's status is unchanged

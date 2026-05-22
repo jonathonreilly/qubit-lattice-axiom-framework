@@ -133,15 +133,22 @@ either rule out (`k ≥ 2`) or admit as an additional input.
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — provides the multiplicity decomposition (M1) of every finite-dim
-  complex Cl(3,0) representation as
-  `ρ_+^{n_+} ⊕ ρ_-^{n_-}` with `dim_C = 2(n_+ + n_-)` (its (D2)). Status
-  authority: independent audit lane only; effective status
-  pipeline-derived. Live ledger status as of 2026-05-17:
-  `audited_clean`, `retained`.
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained; §(K3) supplies the complexification split
+  `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` and §(K4) supplies the
+  two-dim irrep dimensional readout used in the multiplicity
+  decomposition (M1) `ρ_+^{n_+} ⊕ ρ_-^{n_-}` with
+  `dim_C = 2(n_+ + n_-)`. Status authority: independent audit lane
+  only; effective status pipeline-derived.
 
 This is the only load-bearing one-hop dependency.
+
+The decoration sibling `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+records the same dim-two content separately but is not itself the
+retained authority (effective_status:
+`decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`);
+demoted to plain-text pointer so the citation graph routes the
+dim-two dep through the retained parent.
 
 ## 4. Admitted-context inputs
 
@@ -167,8 +174,8 @@ axioms.**
 ### 5.1 Multiplicity classification (M1)
 
 By the cited retained narrow theorem
-[`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-(its (D2)), the complexification `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` is
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+(its (K3)+(K4)), the complexification `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` is
 semisimple, and every finite-dim complex representation decomposes as
 `ρ_+^{n_+} ⊕ ρ_-^{n_-}` with `dim_C = 2(n_+ + n_-)`. The total
 multiplicity index `k = n_+ + n_- ∈ Z_{≥0}` is well-defined. ∎
@@ -358,12 +365,19 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 25`.
 
 Load-bearing markdown-link upstream (single one-hop dependency):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  (§(K3)+(K4) supplies the complexification split and dim-two readout)
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the
 citation-graph builder does not parse them as upstream dependency
 edges:
+
+- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — decoration sibling of the retained complexification-split note;
+  records the same dim-two content separately but is not itself the
+  retained authority (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
 
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — open-gate parent for the substep-1 bridge from abstract irrep

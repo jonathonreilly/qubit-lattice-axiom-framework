@@ -5,9 +5,10 @@
 **Claim scope:** the standalone algebraic implication that, given
 (X1) `cl3_complexification_split_narrow_theorem` (retained — the abstract
 `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split with central-pseudoscalar
-chirality), (X2) `cl3_faithful_irrep_dim_two_narrow_theorem` (retained —
-every faithful irreducible finite-dim complex representation of
-`Cl(3,0)` has complex dimension `dim_C V = 2`), and (X3) the named external
+chirality), (X2) the §(K4) two-dim irrep dimensional readout from the
+same retained `cl3_complexification_split_narrow_theorem` (every
+faithful irreducible finite-dim complex representation of `Cl(3,0)`
+has complex dimension `dim_C V = 2`), and (X3) the named external
 admission of the Lüscher–Mackenzie tadpole-improvement convention
 `u_0(G) := ⟨ (1/N_G) · Re Tr U_plaquette ⟩^(1/4)` with `N_G` the dimension
 of the fundamental representation of `G`, the SU(2) tadpole-improvement
@@ -72,8 +73,11 @@ In particular the SU(2) bivector subgroup of `Cl(3,0)` acts in its
 fundamental representation on `V ≅ C^2`, so the fundamental dimension of
 the SU(2) factor is `N_SU(2) = 2`.
 
-Source: [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-(effective_status: `retained`).
+Source: [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+§(K4) two-dim irrep dimensional readout (effective_status: `retained`).
+The decoration sibling `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+records the same content separately but is not itself the retained
+authority (effective_status: `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
 
 **(X3) Lüscher–Mackenzie tadpole convention** (named external-mathematics
 admission, Lepage–Mackenzie 1993 / Lüscher–Weisz 1985 textbook lattice
@@ -273,11 +277,20 @@ external admission, with no broad-parent unaudited content load-bearing.
 Markdown-link upstream (load-bearing):
 
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained; supplies `(X1)` the abstract
-  `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split.
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — retained; supplies `(X2)` `dim_C V = 2` for every faithful
+  — retained; supplies both `(X1)` the abstract
+  `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` split and `(X2)` the §(K4)
+  two-dim irrep dimensional readout `dim_C V = 2` for every faithful
   finite-dim complex Cl(3,0)-irrep.
+
+Plain-text pointer references (NOT load-bearing deps):
+
+- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md` —
+  decoration sibling of the retained complexification-split note;
+  records the same `(X2)` `dim_C V = 2` content separately but is not
+  itself the retained authority (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
+  Demoted to plain-text pointer so the citation graph routes (X2)
+  through the retained parent.
 
 Named external admission (not a ledger dependency):
 

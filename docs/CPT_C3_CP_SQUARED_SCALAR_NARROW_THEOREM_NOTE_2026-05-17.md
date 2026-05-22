@@ -36,8 +36,9 @@ matrix multiplication.
 Let `V = V_lat ⊗ V_int` where `V_lat = C^{|Λ|}` is the orbital factor on
 the periodic cubic lattice `Λ = (Z mod L)^3` with even `L`, and
 `V_int = C^2` is the dim-2 internal Cl(3) factor (carrying a faithful
-irreducible complex `Cl(3,0)` representation per the retained
-[`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)).
+irreducible complex `Cl(3,0)` representation per the §(K4) two-dim
+irrep dimensional readout from the retained
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)).
 
 Choose the canonical positive-chirality Pauli realisation of `Cl(3,0)`
 on `V_int` per [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md):
@@ -130,10 +131,9 @@ using only:
 - The retained Pauli-irrep relations `σ_i σ_j = δ_{ij} I + i ε_{ijk} σ_k`
   on `V_int = C^2` per
   [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md).
-- The retained dim-2 conclusion per
-  [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  and the complexification split per
-  [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md).
+- The retained complexification split per
+  [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  including its §(K4) two-dim irrep dimensional readout.
 - Direct combinatorial computation on `V_lat`.
 
 ### (S1) Internal factor
@@ -306,12 +306,10 @@ separate authorities):
 
 Load-bearing markdown-link upstream:
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — currently retained in the audit ledger. Supplies
-  `dim_C V_int = 2`.
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
   — currently retained in the audit ledger. Supplies
-  `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` and the chirality split.
+  `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` (K3) and the chirality split,
+  plus the §(K4) two-dim irrep dimensional readout `dim_C V_int = 2`.
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
   — currently retained_bounded in the audit ledger.
   Supplies the explicit Pauli realisation `γ_i = σ_i` with `ω = i · I`,
@@ -386,14 +384,23 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 20`.
 
 ## Cross-references
 
-Load-bearing markdown-link upstream (three one-hop dependencies, all
-retained-grade per the live ledger on 2026-05-17):
+Load-bearing markdown-link upstream (two one-hop dependencies, both
+retained-grade per the live ledger):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  (supplies both the complexification split and the §(K4) two-dim
+  irrep dimensional readout)
 - [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
 
 Plain-text (non-load-bearing) reader pointers:
+
+- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md` —
+  decoration sibling of the retained complexification-split note;
+  records the same dim-two content separately but is not itself the
+  retained authority (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
+  Demoted to plain-text pointer so the citation graph routes the
+  dim-two dependency through the retained parent.
 
 - `CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md`
   — failed parent whose C3 step this note repairs.

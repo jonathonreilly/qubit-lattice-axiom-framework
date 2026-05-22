@@ -106,8 +106,8 @@ Then the following algebraic facts hold:
 The four facts (J1)-(J4) are abstract finite-dim complex
 representation-theory and finite-Pauli-tensor-algebra statements,
 conditional on the cited retained narrow upstream theorem
-(`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`,
-`audited_clean`, `retained`) and the abstract finite-tensor-product
+(`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`,
+`audited_clean`, `retained`; §(K4) supplies the dim-two readout) and the abstract finite-tensor-product
 construction of `H_Λ` with a fixed total ordering on `Λ`. They make
 **no** claim that the framework's physical per-site Hilbert space on
 its `Z^3` lattice substrate *is* the Cl(3) faithful complex irrep
@@ -169,13 +169,21 @@ bridge.
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — provides the abstract Cl(3) faithful complex-irrep carrier `V ≅ ℂ²`
-  used as the per-site building block of the tensor-product Fock space
-  `H_Λ = V^{⊗N}` in this note. Status authority: independent audit lane
-  only; effective status pipeline-derived.
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained; §(K4) provides the abstract Cl(3) faithful complex-irrep
+  carrier `V ≅ ℂ²` used as the per-site building block of the
+  tensor-product Fock space `H_Λ = V^{⊗N}` in this note. Status
+  authority: independent audit lane only; effective status
+  pipeline-derived.
 
 This is the only load-bearing one-hop dependency.
+
+The decoration sibling `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+records the same dim-two content separately but is not itself the
+retained authority (effective_status:
+`decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`);
+demoted to plain-text pointer so the citation graph routes the
+dim-two dep through the retained parent.
 
 ## 4. Admitted-context inputs
 
@@ -588,13 +596,19 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 50`.
 
 Load-bearing markdown-link upstream (single one-hop dependency):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  (§(K4) supplies the dim-two readout)
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the
 citation-graph builder does not parse them as upstream dependency
 edges:
 
+- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — decoration sibling of the retained complexification-split note;
+  records the same dim-two content separately but is not itself the
+  retained authority (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   — open-gate parent for substep 1; the gate's status is unchanged
   by this narrow theorem. Substep 1 has three pieces — the

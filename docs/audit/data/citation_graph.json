@@ -5550,15 +5550,11 @@
     },
     {
       "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
       "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
-      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "cpt_exact_note",
@@ -23462,7 +23458,7 @@
     },
     {
       "from": "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02",
@@ -23698,7 +23694,7 @@
     },
     {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -23706,11 +23702,11 @@
     },
     {
       "from": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
@@ -25003,10 +24999,6 @@
     {
       "from": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "u1_fermion_number_conservation_theorem_note_2026-05-02",
@@ -45855,12 +45847,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23691795a27023ace92426165106202cea69962edb072a132798ed8920670a58",
+      "note_hash": "242d7af19ada118ea29be2bfe59977d8a036af11452c3203c57069ff0360dcf1",
       "path": "docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py",
       "title": "CPT C3 \u2014 (CP)\u00b2 = \u03b5\u00b7I Narrow Theorem on Explicit Cl(3) \u00d7 Z\u00b3 C, P"
@@ -73101,10 +73092,10 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a4ca9fa7ab17a7ce950aa41726a768f686f236e78353bcafc5980c72c05ce430",
+      "note_hash": "8ee9808a2f69e487f0e6024ffa4cd620d38bd139570d96f3bc6603019e87bf97",
       "path": "docs/SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_spin_statistics_cardinality_pauli_exclusion_exact_2026_05_10.py",
       "title": "Spin-Statistics Cardinality and Pauli Exclusion Narrow Theorem"
@@ -73375,11 +73366,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "136ddf67f84afbfcfca350523367614b69d4b03a3bceab2b837cd9444dd49ff5",
+      "note_hash": "c6182f84b19ffb2889dc7ca96588aa49b6b80dd55f08a0b7cef1a534a24e4cb6",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem"
@@ -73390,10 +73381,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9e456244814528d0c54eba96760370c61d54dba362970fc1833e784182dace79",
+      "note_hash": "a4a66910bb7db75429c3f88c25c289944c4db8839adf977c74669d383994ce54",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem"
@@ -73404,10 +73395,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d147962b455e511fbcd3e9fd8638b0a56c1005f35a1002aab35bd96be6c54140",
+      "note_hash": "a716541730f73592b5b01b13856a6ec686a4243062bd19e9caf2852f4113830a",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem"
@@ -75902,11 +75893,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "08eb2e9e7b7df50c73903239efa4574e654e659959d5312dfaff8bb51ff77aed",
+      "note_hash": "2055e3c26c451e68d28a6a92b1d16ed31eb4682a863fe9121465b8e550943334",
       "path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
       "title": "u_0(SU(2)) Bivector-Irrep Analytic Derivation Narrow Theorem"
@@ -81134,7 +81124,7 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9676,
+    "edge_count": 9674,
     "leaf_count": 736,
     "node_count": 2465,
     "root_count": 804,

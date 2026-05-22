@@ -73,12 +73,20 @@ gate or any physical Hilbert-space carrier.
 
 ## Cited authorities (one hop)
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — sibling narrow theorem supplying the abstract-algebra dimensional
-  readout (the Cl(3) faithful complex irrep has dim 2). Status
-  authority: independent audit lane only.
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained sibling narrow theorem; §(K4) supplies the abstract-algebra
+  dimensional readout (the Cl(3) faithful complex irrep has dim 2).
+  Status authority: independent audit lane only.
 
 No other note's effective status is consumed.
+
+The decoration sibling `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+records the same dim-two content separately but is not itself the
+retained authority (effective_status:
+`decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`);
+demoted to plain-text pointer (see "Plain-text pointer references"
+below) so the citation graph routes the dim-two dep through the
+retained parent.
 
 ## Admitted-context inputs
 
@@ -174,8 +182,8 @@ is forbidden by (C1), while the one-pair fermionic CAR algebra has a
 representations can be direct sums of that carrier, so this corollary
 uses the irreducible/minimal single-mode reading. The two-dim
 irreducible carrier matches the abstract Cl(3)-irrep dimension
-established by the sibling narrow theorem
-[`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+established by §(K4) of the retained sibling narrow theorem
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
 (D1).
 
 This match — abstract Cl(3) irrep dim = 2, irreducible CAR Fock dim =
@@ -260,16 +268,21 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 18`.
 
 Load-bearing markdown-link upstream (single one-hop dependency):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — sibling narrow theorem supplying the abstract Cl(3) faithful
-  complex irrep dim = 2 (the "match" target on the 2-dim per-mode
-  Hilbert space).
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  — retained sibling narrow theorem; §(K4) supplies the abstract Cl(3)
+  faithful complex irrep dim = 2 (the "match" target on the 2-dim
+  per-mode Hilbert space).
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the
 citation-graph builder does not parse them as upstream dependency
 edges:
 
+- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+  — decoration sibling of the retained complexification-split note;
+  records the same dim-two content separately but is not itself the
+  retained authority (effective_status:
+  `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`).
 - `AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`
   — parent note carrying the spin-statistics chain including the
   bosonic-Fock-incompatible-with-finite-`Cl(3)`-module argument
@@ -286,8 +299,9 @@ edges:
 
 ## Citation-graph note
 
-Load-bearing markdown-link upstream is the sibling narrow theorem
-[`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+Load-bearing markdown-link upstream is the retained sibling narrow theorem
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+(§(K4) supplies the dim-two readout)
 only. Cross-references to the parent notes and the open-gate note
 are plain-text reader pointers (not markdown links); (C1)-(P2) do
 not consume their effective statuses.

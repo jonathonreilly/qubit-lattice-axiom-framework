@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 369 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 621 |
-| `audited_conditional` | 90 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1547 |
+| `unaudited` | 1546 |
 
 | claim_type | count |
 |---|---:|
@@ -59,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration` | 25 |
 | `meta` | 227 |
 | `no_go` | 238 |
-| `open_gate` | 112 |
-| `positive_theorem` | 745 |
+| `open_gate` | 113 |
+| `positive_theorem` | 744 |
 
 | criticality | count |
 |---|---:|
@@ -819,6 +819,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unified_basin_signed_source_control_support_note_2026-04-30` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `universal_gr_curvature_localization_blocker_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `universal_gr_invariant_frame_obstruction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | A | - |
 | `valley_linear_continuum_synthesis_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `vector_sector_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -11400,6 +11401,22 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The universal data are enough to isolate the invariant core and the complement orbit, but not enough to choose a canonical complement section.  _(class `E`)_
 - **chain closes:** False — The note asserts that the available universal data do not define a canonical complement section, but the restricted packet contains no cited authority, proof of nonexistence, runner output, or runner source establishing that exhaustiveness claim. The missing step is an axiom-native no-section or invariant-exhaustion argument for the SO(3) complement orbit.
 - **rationale:** The load-bearing step is presented as a bounded canonicalization result, but within the restricted packet it functions as an introduced status assertion about what the universal atlas can and cannot fix. No upstream authorities are provided and no runner output or source is available to verify the four advertised checks. The conclusion may be true under the intended universal data, but that data set and the no-canonical-section argument are imported rather than closed inside this packet.
+- **auditor confidence:** high
+
+### `universal_gr_curvature_localization_blocker_note`
+
+- **Note:** [`UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md`](../../docs/UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the note's status claim that prior universal-GR localization, isotropic glue, nonlinear completion, and discrete global closure steps are already exact, leaving only a stricter interpretation theorem beyond discrete global closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T231228Z-1d200c96-universal_gr_curvature_l-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The smallest honest missing object is now a stronger interpretation theorem that upgrades the exact discrete global Lorentzian closure into a stricter notion of full GR beyond the project's PL S^3 x R Einstein/Regge setting.  _(class `B`)_
+- **chain closes:** False — The restricted packet provides no cited authorities or runner proving the asserted discharged steps, especially the discrete global closure and isotropic glue/operator-identification claims. The remaining-open interpretation theorem is explicitly not supplied.
+- **rationale:** The note is largely a status/blocker classification that depends on several unprovided downstream notes and asserted exact prior steps. Within the restricted packet, those imported closures cannot be verified, and the note itself states that a stronger interpretation theorem remains open. With no runner source or output, the audit falls back to note text alone and cannot certify the positive closure chain.
+- **open / conditional deps cited:**
+  - `UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md`
+  - `UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md`
 - **auditor confidence:** high
 
 ### `universal_gr_invariant_frame_obstruction_note`

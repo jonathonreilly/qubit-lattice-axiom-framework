@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 377 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 86 |
-| ~~audited_failed~~ | 24 |
+| ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
@@ -52,10 +52,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 613 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 29 |
-| `audited_failed` | 68 |
+| `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1543 |
+| `unaudited` | 1542 |
 
 | claim_type | count |
 |---|---:|
@@ -887,6 +887,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
+| `lattice_keff_continuum_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | claude-opus | claim_type_observable_mismatch | - |
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `mirror_vs_central_head_to_head_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6604,6 +6605,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** False — The restricted packet supports at most the supplied runner's 3D dense z = 2, 3, 4, 5 hierarchy-aligned window, while the note claims z = 2..6 and the cited hierarchy authority is explicitly narrowed to runner-computed z = 3 and z = 5. The 2D 9/9 attraction and b^(-0.94) distance-law table has no supplied runner or one-hop authority that closes it.
 - **rationale:** Issue: the note overclaims beyond both its supplied runner and its only cited authority, especially by retaining z = 6 and the 2D all-b distance-law table without supporting restricted evidence. Why this blocks: a bounded theorem cannot be audited clean when its stated retained window includes points the runner does not compute and the cited authority explicitly excludes from ratification. Repair target: split the runner-supported 3D z = 2..5 card from the broader narrative, add or cite audited artifacts for z = 6 and the 2D b-window, and align the hierarchy dependency scope. Claim boundary until fixed: only the raw supplied runner output for the h = 1.0, L = 12, W = 6, max_d = 3, strength 5e-5 3D card is locally evidenced.
 - **auditor confidence:** high
+
+### `lattice_keff_continuum_note`
+
+- **Note:** [`LATTICE_KEFF_CONTINUUM_NOTE.md`](../../docs/LATTICE_KEFF_CONTINUUM_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Whether the dense lattice continuum scheme k_eff = k*h with kernel exp(i*(k*h)*act)*w/L*h^2 produces a clean refinement lane via scripts/lattice_keff_continuum.py over h in {2.0, 1.0, 0.5, 0.25}.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `claude-audit-loop-2026-05-19-lattice-keff`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `claim_type_observable_mismatch`)_
+- **chain closes:** False — Source note self-declares 'candidate retained-grade NEGATIVE' in its Status line; runner output confirms detector probability collapses to ~0 (replay value ~7e-75) at h=0.25 and the gravity channel wanders -1.69 -> +0.14 -> +0.58 across the three finite rows. The note's Bottom line concludes the scheme is a 'practical failure' and 'does not rescue the lattice continuum program'. The ledger records claim_type=positive_theorem, but there is no positive theorem in the source note; the actual content is a falsification of the k_eff = k*h candidate. As a positive_theorem the derivation does not close on its own terms because the source note itself reports a negative conclusion.
+- **rationale:** Issue: claim_type=positive_theorem mismatches the actual claim content. Source note's Status line says 'candidate retained-grade NEGATIVE'; its Bottom line says the scheme is a 'practical failure'. The runner output (logs/runner-cache cached SHA 9a42641 elapsed 5.9s) confirms detector probability is 0.00e+00 at h=0.25 (replay reports ~7e-75 without 1e-30 prune) and the gravity sequence -1.6910 -> +0.1374 -> +0.5821 is not a stable convergent trend on the three surviving rows. Why this blocks: a positive_theorem audited_clean requires a positive theorem to close from cited inputs. No positive theorem is being asserted here; the substantive content is the negative finding that k_eff = k*h does not stabilize the dense kernel. Repair target: reclassify the ledger row as no_go (the scheme is falsified as a continuum-limit candidate) or as bounded_theorem with bounded-negative scope, then re-audit under the new claim_type with No-Go Discipline (N1-N8) applied to the named falsification scope. Alternatively, if a positive content is genuinely intended, rewrite the source note to state a positive theorem (e.g., 'finite-h gravity values for k_eff = k*h scheme: tabulated correctly by runner') and audit that narrower claim. Claim boundary until fixed: the finite-h tabulated runner output (gravity values -1.6910, +0.1374, +0.5821 at h=2.0, 1.0, 0.5 plus detector underflow at h=0.25) is a faithful record of the runner; the negative conclusion 'k_eff = k*h does not produce a clean refinement lane' is supported by the runner data on the displayed h-range only. No positive continuum-limit theorem is supported.
 
 ### `lattice_kernel_transfer_norm_note`
 

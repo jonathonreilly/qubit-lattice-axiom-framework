@@ -145290,22 +145290,41 @@
       "verdict_rationale": null
     },
     "lattice_keff_continuum_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
+      "audit_date": "2026-05-22T02:54:51.032860+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "continuum_limit_note": "On the cached size sweep h \u2208 {1.0, 0.5, 0.25, 0.125} of the registered numpy runner scripts/lattice_h2_T_numpy_continuum.py, the framework's h^2+T-normalized 3D lattice propagator exhibits: transfer norm T in [4.27, 6.47] (logarithmic growth), F~M exponent values 0.979/0.991/0.998/1.018 bracketing 1.000, gravitational deflection consistently TOWARD with 2.7% change between h=0.25 and h=0.125 at s=0.004 weak field, and Born nonlinearity below 1e-15 where measurable. The h \u2192 0 continuum-limit promotion is explicitly out of binding scope and demoted to diagnostic-only."
+        },
+        "dep_claim_type": {
+          "continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "continuum_limit_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9a42641695997677945c85a6302adf41ed7a033c1f27c618bc55678b3bb8afae",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "claude-audit-loop-2026-05-19-lattice-keff",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "claude-opus",
+      "auditor_model": "claude-opus-4-7",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Source note self-declares 'candidate retained-grade NEGATIVE' in its Status line; runner output confirms detector probability collapses to ~0 (replay value ~7e-75) at h=0.25 and the gravity channel wanders -1.69 -> +0.14 -> +0.58 across the three finite rows. The note's Bottom line concludes the scheme is a 'practical failure' and 'does not rescue the lattice continuum program'. The ledger records claim_type=positive_theorem, but there is no positive theorem in the source note; the actual content is a falsification of the k_eff = k*h candidate. As a positive_theorem the derivation does not close on its own terms because the source note itself reports a negative conclusion.",
       "claim_id": "lattice_keff_continuum_note",
-      "claim_scope": null,
+      "claim_scope": "Whether the dense lattice continuum scheme k_eff = k*h with kernel exp(i*(k*h)*act)*w/L*h^2 produces a clean refinement lane via scripts/lattice_keff_continuum.py over h in {2.0, 1.0, 0.5, 0.25}.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-22T02:54:51.032860+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -145313,19 +145332,19 @@
         "continuum_limit_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 0.0,
       "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step_class": "claim_type_observable_mismatch",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "9a669d8f05cd99c92ace5d4ed4476006b32ea32b6cfbaad6455c6f83a5c21fd0",
       "note_path": "docs/LATTICE_KEFF_CONTINUUM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "scope_too_broad \u2014 claim_type=positive_theorem does not match negative content; reclassify as no_go (preferred) or bounded_theorem with bounded-negative scope, then re-audit. Apply No-Go Discipline N1-N8 if reclassified as no_go: at minimum verify (N1) alternative continuum-limit attack routes considered, (N3) hidden walls/admissions surfaced, (N4) detector underflow at h=0.25 is the named witness residual and matches runner output.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -145355,7 +145374,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -145366,7 +145385,7 @@
       "runner_path": "scripts/lattice_keff_continuum.py",
       "title": "k_eff = k\u00b7h Continuum Limit Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: claim_type=positive_theorem mismatches the actual claim content. Source note's Status line says 'candidate retained-grade NEGATIVE'; its Bottom line says the scheme is a 'practical failure'. The runner output (logs/runner-cache cached SHA 9a42641 elapsed 5.9s) confirms detector probability is 0.00e+00 at h=0.25 (replay reports ~7e-75 without 1e-30 prune) and the gravity sequence -1.6910 -> +0.1374 -> +0.5821 is not a stable convergent trend on the three surviving rows. Why this blocks: a positive_theorem audited_clean requires a positive theorem to close from cited inputs. No positive theorem is being asserted here; the substantive content is the negative finding that k_eff = k*h does not stabilize the dense kernel. Repair target: reclassify the ledger row as no_go (the scheme is falsified as a continuum-limit candidate) or as bounded_theorem with bounded-negative scope, then re-audit under the new claim_type with No-Go Discipline (N1-N8) applied to the named falsification scope. Alternatively, if a positive content is genuinely intended, rewrite the source note to state a positive theorem (e.g., 'finite-h gravity values for k_eff = k*h scheme: tabulated correctly by runner') and audit that narrower claim. Claim boundary until fixed: the finite-h tabulated runner output (gravity values -1.6910, +0.1374, +0.5821 at h=2.0, 1.0, 0.5 plus detector underflow at h=0.25) is a faithful record of the runner; the negative conclusion 'k_eff = k*h does not produce a clean refinement lane' is supported by the runner data on the displayed h-range only. No positive continuum-limit theorem is supported."
     },
     "lattice_kernel_transfer_norm_note": {
       "audit_date": "2026-05-03T19:32:05.252731+00:00",

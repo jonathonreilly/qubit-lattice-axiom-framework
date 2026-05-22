@@ -12841,6 +12841,18 @@
       "to": "gauge_vacuum_plaquette_framework_point_underdetermination_note"
     },
     {
+      "from": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "to": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
       "from": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
       "to": "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
     },
@@ -56150,6 +56162,22 @@
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "title": "Industrial SDP Bootstrap \u2014 Lattice \u27e8P\u27e9(\u03b2=6) Bracket Attempt"
     },
+    "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
+      "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "9422a8684d241b2857d183179cc98260a85c671e9fa3092f7179de079c2377d5",
+      "path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "Inner-Automorphism Invariance Identifies Pre-Record State as Tracial (Narrow)"
+    },
     "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
       "claim_type_author_hint": "positive_theorem",
@@ -81123,7 +81151,7 @@
       "no_go": 57,
       "none": 1499,
       "open_gate": 45,
-      "positive_theorem": 172
+      "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 945,
@@ -81132,11 +81160,11 @@
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 608
+      "positive_theorem": 609
     },
-    "edge_count": 9676,
+    "edge_count": 9679,
     "leaf_count": 736,
-    "node_count": 2465,
+    "node_count": 2466,
     "root_count": 804,
     "runners_with_path": 2032
   }

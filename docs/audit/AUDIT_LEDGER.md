@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 116 |
+| **retained** | 117 |
 | **retained_no_go** | 146 |
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
 | unaudited | 1352 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 595 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 596 |
 | `audited_conditional` | 81 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 69 |
@@ -116,7 +115,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `graph_first_selector_derivation_note` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -331,6 +329,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `graph_first_selector_derivation_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `graph_first_su3_integration_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `graph_laplacian_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `graph_scalar_plus_spinor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -4758,6 +4757,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The live replay asserts the archived scaffolded 7/9 free_coh result against the old 6/9 two-property rule, while the source note's 2026-04-07 update and dependency restrict that result to scaffold-specific historical evidence.  _(class `C`)_
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
+- **auditor confidence:** high
+
+### `graph_first_selector_derivation_note`
+
+- **Note:** [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T153215Z-b31fe630-graph_first_selector_der-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For H(phi) = sum_i phi_i S_i, V_sel(phi) = Tr H(phi)^4 - (1/8)(Tr H(phi)^2)^2 = 32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to the pairwise-overlap potential with axis minima.  _(class `A`)_
+- **chain closes:** True — The selector identity follows algebraically from the explicitly defined commuting involutive cube shifts, and the simplex minima follow from nonnegativity of the pairwise-overlap potential. No SU(3) bridge, abelian identification, or downstream phenomenology is needed for this scoped selector claim.
+- **rationale:** The runner constructs the canonical Pauli-x cube shifts directly and verifies their algebraic properties, trace identities, normalized overlap form, axis minima, and residual stabilizers. Its checks are internal algebra over the stated graph-shift surface, with no external comparator, tuned numerical scale, or imported physical bridge. The cited SU(3) integration note is not load-bearing for this selector derivation, and the source note explicitly bounds away downstream abelian or phenomenological claims.
 - **auditor confidence:** high
 
 ### `graph_first_su3_integration_note`

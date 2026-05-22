@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 911,
+    "critical": 910,
     "high": 23,
     "leaf": 325,
     "medium": 99
@@ -11995,27 +11995,53 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "graph_first_selector_derivation_note",
-      "claim_scope": "The audit checked the graph-native cube-shift derivation of the weak-axis selector and its axis-minimum/Z2-stabilizer structure on the stated canonical 2^3 taste-cube surface.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "native_gauge_closure_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
+        "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
-      "direct_in_degree": 15,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 39,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.742,
-      "note_path": "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 29.725,
+      "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
-      "transitive_descendants": 1210
+      "runner_path": "scripts/frontier_non_abelian_gauge.py",
+      "transitive_descendants": 1196
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_su3_integration_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 13.134,
+      "note_path": "docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_lh_doublet_traceless_abelian_ratio.py",
+      "transitive_descendants": 1123
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -12113,6 +12139,57 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_graph_first_cycle_frame_support_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_selector_derivation_note",
+        "graph_first_su3_integration_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 12.544,
+      "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
+      "transitive_descendants": 1055
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "z2_hw1_mass_matrix_parametrization_note",
+        "site_phase_cube_shift_intertwiner_note",
+        "graph_first_selector_derivation_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.544,
+      "note_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
+      "transitive_descendants": 1055
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
@@ -12206,31 +12283,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
       "transitive_descendants": 1052
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "native_gauge_closure_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 39,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 29.725,
-      "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_non_abelian_gauge.py",
-      "transitive_descendants": 1196
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -12607,31 +12659,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "transitive_descendants": 1125
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_su3_integration_note",
-        "graph_first_selector_derivation_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.134,
-      "note_path": "docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_lh_doublet_traceless_abelian_ratio.py",
-      "transitive_descendants": 1123
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -16108,31 +16135,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "pmns_graph_first_cycle_frame_support_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.544,
-      "note_path": "docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
-      "transitive_descendants": 1055
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -16427,32 +16429,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 1055
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "z2_hw1_mass_matrix_parametrization_note",
-        "site_phase_cube_shift_intertwiner_note",
-        "graph_first_selector_derivation_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.544,
-      "note_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
       "transitive_descendants": 1055
     },
     {
@@ -50095,6 +50071,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 10,
-  "total_pending": 1358
+  "ready_count": 13,
+  "total_pending": 1357
 }

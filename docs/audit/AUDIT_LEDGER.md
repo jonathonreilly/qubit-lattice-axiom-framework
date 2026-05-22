@@ -839,7 +839,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
-| `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
+| `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -2679,13 +2679,13 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 
 - **Note:** [`CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md`](../../docs/CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md)
 - **claim_type:** `decoration`
-- **claim_scope:** The antiunitary operator CPT = CP·K satisfies (CPT)² = I on the stated H_phys, assuming the cited CP construction has (CP)² = I and is real.
+- **claim_scope:** (CPT)^2 = I exactly on H_phys with no phase factor, where CPT = C*P*T composes the framework's sublattice parity C, spatial inversion P, and complex conjugation T as specified in cpt_exact_note.
 - **audit_status:** ~~audited_decoration~~
 - **effective_status:** `decoration_under_cpt_exact_note`  (reason: `decoration_parent_retained`)
-- **auditor:** `codex-cli-gpt-5.5-20260522-030935-7e12d739-cpt_squared_is_identity_-004`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** T·CP = (CP)*·T = CP·T because CP is real, hence (CPT)² = (CP)²·T² = I.  _(class `A`)_
-- **chain closes:** True — The conclusion follows algebraically from the cited retained CP identity, CP being real, and K² = I. No additional physics bridge is needed for this involution statement.
-- **rationale:** The cited authority is retained for the finite-lattice C, P, T constructions and explicitly includes (CP)² = I, which is the only load-bearing upstream fact used here. The runner verifies the same algebra on a small toy C/P/K system and random vectors; it does not independently compute new framework physics. Under the tie-break rule, this is a class-A algebraic corollary of one upstream parent with zero comparator checks, so the proper verdict is audited_decoration rather than audited_clean.
+- **auditor:** `claude-audit-loop-2026-05-19-cpt-squared`  (claude-opus; independence=cross_family)
+- **load-bearing step:** (CPT)^2 = (CP)(T*CP)*T = (CP)*(CP*)*T*T = (CP)^2 * T^2 = I*I = I, using (CP)^2=I cited from CPT_EXACT_NOTE, reality of CP making (CP)*=CP, and T^2=K^2=I.  _(class `A`)_
+- **chain closes:** True — Closes by pure algebra from cpt_exact_note's retained inputs ((CP)^2 = I and reality of C, P giving (CP)*=CP) plus standard antiunitary commutation T*U = U**T and complex-conjugation involution K^2 = I. Runner constructs C, P from first principles and verifies (CP)^2=I, T^2=I, and (CPT)^2 psi = psi on 1 generic and 5 random complex states at residual 0.000e+00 each.
+- **rationale:** The load-bearing step is class (A): a pure algebraic identity check over inputs taken from a single retained parent claim (cpt_exact_note: (CP)^2=I and reality of CP) plus universal mathematics (antiunitary commutation T*U=U**T, K^2=I). The runner contains zero (D) external-comparator checks, and the chain reduces to one parent claim. By the audit rubric's tiebreaker (zero (D) checks AND single-parent reduction => audited_decoration), and consistent with ALGEBRAIC_DECORATION_POLICY section 1 (algebraic dependence, no new comparator, no compression -- expansion of cpt_exact_note's CP and T properties into a derived (CPT)^2 identity), this is decoration of cpt_exact_note. The derivation is correct on its own terms; the verdict reflects the rubric's classification of single-parent zero-D algebraic corollaries, not a defect in the math.
 - **decoration parent:** `cpt_exact_note`
 - **auditor confidence:** high
 

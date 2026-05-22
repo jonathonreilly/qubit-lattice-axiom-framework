@@ -42302,7 +42302,7 @@
       "verdict_rationale": null
     },
     "cpt_squared_is_identity_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-22T03:12:31.742581+00:00",
+      "audit_date": "2026-05-22T03:16:00.607471+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
         "dep_claim_scope": {
@@ -42322,20 +42322,20 @@
         "transitive_descendants": 988
       },
       "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260522-030935-7e12d739-cpt_squared_is_identity_-004",
+      "auditor": "claude-audit-loop-2026-05-19-cpt-squared",
       "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
-      "auditor_model": "gpt-5.5",
+      "auditor_family": "claude-opus",
+      "auditor_model": "claude-opus-4-7-1m",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The conclusion follows algebraically from the cited retained CP identity, CP being real, and K\u00b2 = I. No additional physics bridge is needed for this involution statement.",
+      "chain_closure_explanation": "Closes by pure algebra from cpt_exact_note's retained inputs ((CP)^2 = I and reality of C, P giving (CP)*=CP) plus standard antiunitary commutation T*U = U**T and complex-conjugation involution K^2 = I. Runner constructs C, P from first principles and verifies (CP)^2=I, T^2=I, and (CPT)^2 psi = psi on 1 generic and 5 random complex states at residual 0.000e+00 each.",
       "claim_id": "cpt_squared_is_identity_theorem_note_2026-05-02",
-      "claim_scope": "The antiunitary operator CPT = CP\u00b7K satisfies (CPT)\u00b2 = I on the stated H_phys, assuming the cited CP construction has (CP)\u00b2 = I and is real.",
+      "claim_scope": "(CPT)^2 = I exactly on H_phys with no phase factor, where CPT = C*P*T composes the framework's sublattice parity C, spatial inversion P, and complex conjugation T as specified in cpt_exact_note.",
       "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-22T03:12:31.742581+00:00",
+      "claim_type_last_reviewed": "2026-05-22T03:16:00.607471+00:00",
       "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
@@ -42350,13 +42350,13 @@
       "independence": "cross_family",
       "intrinsic_status": "decoration_under_cpt_exact_note",
       "load_bearing_score": 10.95,
-      "load_bearing_step": "T\u00b7CP = (CP)*\u00b7T = CP\u00b7T because CP is real, hence (CPT)\u00b2 = (CP)\u00b2\u00b7T\u00b2 = I.",
+      "load_bearing_step": "(CPT)^2 = (CP)(T*CP)*T = (CP)*(CP*)*T*T = (CP)^2 * T^2 = I*I = I, using (CP)^2=I cited from CPT_EXACT_NOTE, reality of CP making (CP)*=CP, and T^2=K^2=I.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "beee6682c23ef51ca92defe19432b080774f4ab7256cf698c2e0cd2acc72d7c0",
       "note_path": "docs/CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check that the parent claim's retained scope still includes the explicit real CP construction and (CP)\u00b2 = I.",
+      "notes_for_re_audit_if_any": "Borderline clean-vs-decoration. The involution identity is a genuine structural property of the antiunitary CPT operator (not a pure ornament like a Brocard/Weitzenbock restatement), but the chain reduces cleanly to one retained parent + universal mathematics with zero (D) checks. Strict tiebreaker applied. If the framework adds an independent (D) comparator (e.g., a falsifiable selection rule derived from (CPT)^2=I), re-audit for promotion to clean.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -42404,7 +42404,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 4,
         "B": 0,
@@ -42415,7 +42415,7 @@
       "runner_path": "scripts/cpt_squared_is_identity_check.py",
       "title": "(CPT)\u00b2 = Identity on the Framework's CPT Structure",
       "transitive_descendants": 988,
-      "verdict_rationale": "The cited authority is retained for the finite-lattice C, P, T constructions and explicitly includes (CP)\u00b2 = I, which is the only load-bearing upstream fact used here. The runner verifies the same algebra on a small toy C/P/K system and random vectors; it does not independently compute new framework physics. Under the tie-break rule, this is a class-A algebraic corollary of one upstream parent with zero comparator checks, so the proper verdict is audited_decoration rather than audited_clean."
+      "verdict_rationale": "The load-bearing step is class (A): a pure algebraic identity check over inputs taken from a single retained parent claim (cpt_exact_note: (CP)^2=I and reality of CP) plus universal mathematics (antiunitary commutation T*U=U**T, K^2=I). The runner contains zero (D) external-comparator checks, and the chain reduces to one parent claim. By the audit rubric's tiebreaker (zero (D) checks AND single-parent reduction => audited_decoration), and consistent with ALGEBRAIC_DECORATION_POLICY section 1 (algebraic dependence, no new comparator, no compression -- expansion of cpt_exact_note's CP and T properties into a derived (CPT)^2 identity), this is decoration of cpt_exact_note. The derivation is correct on its own terms; the verdict reflects the rubric's classification of single-parent zero-D algebraic corollaries, not a defect in the math."
     },
     "critical_exponents_topology_note_2026-04-10": {
       "audit_date": "2026-04-26",

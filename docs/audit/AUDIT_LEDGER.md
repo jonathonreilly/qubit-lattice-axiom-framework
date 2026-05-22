@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 143 |
+| **retained_no_go** | 144 |
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 16 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 608 |
+| `audited_clean` | 609 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1538 |
+| `unaudited` | 1537 |
 
 | claim_type | count |
 |---|---:|
@@ -479,6 +479,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7615,6 +7616,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given scalar additivity, CPT-even phase blindness, continuity/minimal regularity, and normalization, W must solve W(r1 r2)=W(r1)+W(r2), so W=log|det(D+J)| up to the stated convention.  _(class `A`)_
 - **chain closes:** False — The runner supports the finite algebra for the chosen candidate generator, but the physical selection of that generator still rests on an admitted scalar-additivity premise and an unproved normalization/source bridge. No one-hop authority is supplied to close those premises, and the claimed runner-local retirement of P2/P4 does not derive the physical phase-blind generator or multiplicative scale choice from retained inputs.
 - **rationale:** Issue: the exact log-det algebra is verified only after selecting the physical scalar generator by admitted additivity/CPT-even/regularity/normalization premises, with P1 still explicitly open and the multiplicative normalization c=1 conventional. Why this blocks: the restricted packet has no retained one-hop theorem deriving that physical observable bridge, and the runner mainly checks consistency of the chosen W rather than forcing the observable class from the axiom alone. Repair target: add a bridge theorem deriving scalar additivity and the normalization/source scale from retained primitives, or keep all downstream citations explicitly conditional on those premises. Claim boundary until fixed: the finite algebra for the selected log|det| generator on the runner block is supported; unconditional axiom-to-observable closure is not.
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go that weak integer bulk-replication extensivity does not derive P1, because it leaves a two-slope logarithmic residual; the thermodynamic-limit reading additionally carries an open finite-range dependency.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-005919-b49b9bae-observable_principle_p1_-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Bulk-replication extensivity plus |Z[J^(N)]|=|Z[J]|^N reduces to g(Nx)=N g(x), and continuity permits two one-sided logarithmic slopes rather than a single global c log|Z| without an extra selection premise.  _(class `A`)_
+- **chain closes:** True — The no-go closes on its own terms: the runner verifies the determinant factorization and a continuous two-slope witness satisfying g(Nx)=N g(x) while not being a single global line. The positive P1 derivation would require the missing extra single-slope, inversion, or full additivity premise.
+- **rationale:** The load-bearing negative claim is an algebraic functional-equation obstruction, not an imported numerical or definitional match. The runner source performs actual symbolic and rational-grid checks for the determinant factorization, F_p non-extensivity, log extensivity, and the two-slope counter-witness; it does not merely print expected constants. The open finite-range gate is used as a blocker to a thermodynamic positive route, not as an unclosed premise needed for the weak-extensivity no-go.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17`

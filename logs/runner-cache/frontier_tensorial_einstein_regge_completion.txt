@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_tensorial_einstein_regge_completion.py
+runner_sha256: d911f3655b3665a00c16047ab6107a3f7eaf7979c84f850253a2de6808ef100f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.66
+status: ok
+----- stdout -----
+Tensorial completion test for restricted Einstein/Regge lift
+==============================================================================
+
+Probe summaries:
+scalar bridge: scalar_action=-9.649741e-02, |Einstein|_max=(tt=2.783e-03, t-i=0.000e+00, tf=3.449e-04, total=2.783e-03)
+vector shift: scalar_action=-9.649741e-02, |Einstein|_max=(tt=2.783e-03, t-i=8.884e-05, tf=3.449e-04, total=2.783e-03)
+tensor shear: scalar_action=-9.649741e-02, |Einstein|_max=(tt=2.057e-03, t-i=2.008e-05, tf=1.078e-03, total=2.057e-03)
+mixed vector+tens: scalar_action=-9.649741e-02, |Einstein|_max=(tt=2.057e-03, t-i=1.089e-04, tf=1.078e-03, total=2.057e-03)
+finite-rank scalar bridge: scalar_action=-1.373264e+00, |Einstein|_max=(tt=2.930e-02, t-i=0.000e+00, tf=4.555e-03, total=2.930e-02)
+finite-rank vector shift: scalar_action=-1.373264e+00, |Einstein|_max=(tt=2.930e-02, t-i=8.099e-05, tf=4.555e-03, total=2.930e-02)
+finite-rank tensor shear: scalar_action=-1.373264e+00, |Einstein|_max=(tt=2.971e-02, t-i=4.931e-06, tf=5.550e-03, total=2.971e-02)
+
+==============================================================================
+DECISIVE TESTS
+==============================================================================
+scalar boundary action unchanged under tensor perturbations: PASS
+vector perturbation triggers extra tensorial Einstein residuals: PASS
+traceless tensor perturbation triggers extra tensorial Einstein residuals: PASS
+mixed perturbation activates both vector and tensor channels: PASS
+
+Verdict:
+The current restricted 3+1 lift is scalar-complete on the bridge surface, but it is not a full tensorial completion theorem. Shift and traceless tensor sectors remain invisible to the scalar Schur action and produce independent Einstein residuals, so generic nonspherical/time-dependent sectors need an additional tensor-valued matching principle.
+
+----- stderr -----
+

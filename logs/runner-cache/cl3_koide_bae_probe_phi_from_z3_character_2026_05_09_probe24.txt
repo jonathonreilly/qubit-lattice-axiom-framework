@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_bae_probe_phi_from_z3_character_2026_05_09_probe24.py
-runner_sha256: 5859871121ea19de6d93a34b74848aa0e7c3d19fa5f07fbf8f2d6057504794df
+runner_sha256: c8d5c10eecca80257c1a511a747e2111e1b93859a0b565f9e0388bfb13202634
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -13,7 +13,7 @@ SECTION 1: RETAINED C_3 CHARACTER ALGEBRA
   PASS  1.1 d = |C_3| = 3 (retained, three-generation observable theorem)
         d = 3
   PASS  1.2 omega = e^{2 pi i / 3} (primitive cube root)
-        omega = (-0.49999999999999983+0.8660254037844387j), omega^3 = (0.9999999999999998-4.772891088663143e-16j)
+        omega = (-0.49999999999999983+0.8660254037844387j), omega^3 = (0.9999999999999998-4.996003610813204e-16j)
   PASS  1.3 1 + omega + omega^2 = 0 (Plancherel-uniform character sum)
   PASS  1.4 dim_R(Herm_3) = 9 (retained, KOIDE_CIRCULANT_CHARACTER_DERIVATION R3)
         dim_R(Herm_3) = 9 = d^2

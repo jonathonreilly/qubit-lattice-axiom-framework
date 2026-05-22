@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_dirac_substep4_positive_ratchet.py
-runner_sha256: 8737edc046fde9312d5afad5cd9854b799df43bcbb3975588ef74dbcb30e0546
+runner_sha256: f261ddd602c0a7857cb079e4e9b23cb79fd64d5cfbbb8c2cf9d6f837ea21e6fa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================

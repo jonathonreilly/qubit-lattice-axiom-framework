@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_koide_bae_probe_wilson_chain_mass_2026_05_09_probe19.py
-runner_sha256: 029a3a5065a0ba72ed8f63710c71d514c79e4672a8097c48c883ff67b9ec82a8
+runner_sha256: 2125a775d4ded6ca612f316e6d318f50998428848efbd5f8b628c9491b94163e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 

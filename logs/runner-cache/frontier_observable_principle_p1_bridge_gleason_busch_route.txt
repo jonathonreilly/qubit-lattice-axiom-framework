@@ -1,0 +1,126 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_gleason_busch_route.py
+runner_sha256: 93d972ad5fc8df343b304dbbb755231354c8424ab3d4e61fad1e76670d5316ab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+==============================================================================
+Runner: observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21
+==============================================================================
+Verifies the no_go on closing P1 via the Gleason-Busch
+quantum-probability scaffold. Three structural obstructions:
+  G1: Gleason-Busch additivity is INPUT not derived
+  G2: Wallach unentangled-Gleason FAILS at qubit (dim 2) per factor
+  G3: Cauchy log classifier = P1 (Pattern L circularity D5)
+
+==============================================================================
+T1: no_go theorem statement and three obstructions G1/G2/G3
+==============================================================================
+  [PASS] no_go theorem statement contains all required core elements
+         all required strings present
+
+==============================================================================
+T2: assumption audit (Exercise 1) table present
+==============================================================================
+  [PASS] assumption audit covers framework axioms, lit imports, and conventions
+         assumption audit complete
+
+==============================================================================
+T3: Elon first-principles (Exercise 2) present
+==============================================================================
+  [PASS] Elon first-principles articulates deep structural reason
+         Elon exercise complete
+
+==============================================================================
+T4: literature search (Exercise 3) with >= 3 real citations
+==============================================================================
+  [PASS] literature search records >= 3 publication-quality citations
+         lit search complete
+
+==============================================================================
+T5: Tao-style math search (Exercise 4) on bare math problem
+==============================================================================
+  [PASS] Tao math search covers affirmative dim>=3, negative dim 2, Cauchy form
+         math search complete
+
+==============================================================================
+T6: F_p counterexample family -- existential block-additivity defects
+==============================================================================
+  [PASS] F_p[J_A + J_B] = F_p[J_A] * F_p[J_B] (multiplicative, symbolic)
+         simplify((r_A*r_B)^p - r_A^p * r_B^p) = 0
+  [PASS] existential: nonzero block-additivity defects on >= 1 integer-p witness
+         found 6 nonzero defects out of 6 witnesses
+         Sample (p, r_A, r_B, defect):
+           p=1, r_A=2, r_B=3, defect=1
+           p=2, r_A=2, r_B=3, defect=23
+           p=3, r_A=2, r_B=3, defect=181
+           p=2, r_A=3/2, r_B=5/7, defect=-79/49
+  [PASS] F_{1/2} defect: sqrt(4*9) - sqrt(4) - sqrt(9) = 6 - 5 = 1 != 0 (exact symbolic)
+         sympy.simplify(sqrt(36) - sqrt(4) - sqrt(9)) = 1
+  [PASS] log r IS block-additive (the p -> 0 / Cauchy classifier limit)
+         sympy.simplify(log(r_A*r_B) - log(r_A) - log(r_B)) = 0
+
+==============================================================================
+T7: G1 -- Gleason-Busch additivity is INPUT, not output (Cauchy classifier)
+==============================================================================
+  [PASS] Cauchy log functional equation: log(xy) - log(x) - log(y) = 0 (symbolic)
+         simplify(log(xy) - log(x) - log(y)) = 0
+  [PASS] G1 obstruction documented with Cauchy classifier reduction
+         G1 documentation complete
+
+==============================================================================
+T8: G2 -- Wallach dim-2 failure on qubit substrate
+==============================================================================
+  [PASS] joint register dim 2^|Lambda| values match qubit substrate
+         joint dims: [(1, 2), (2, 4), (3, 8), (4, 16), (5, 32)]
+  [PASS] Gleason 1957 (joint dim >= 3) satisfied for |Lambda| >= 2
+         Gleason-OK joint blocks: [(2, 4), (3, 8), (4, 16), (5, 32)]
+  [PASS] Wallach 2000 (per-factor dim >= 3) FAILS on qubit substrate (dim 2)
+         per-site dim = 2 < 3 -> Wallach hypothesis violated
+  [PASS] G2 obstruction documents Wallach failure mode on qubit substrate
+         G2 documentation complete
+
+==============================================================================
+T9: G3 -- Cauchy log classifier (Pattern L) circularity
+==============================================================================
+  [PASS] W = log p is additive: log(p_A * p_B) = log p_A + log p_B (Cauchy)
+         simplify(log(p_A*p_B) - log(p_A) - log(p_B)) = 0
+  [PASS] F_2(p) = p^2 NOT additive: defect = (2*3)^2 - (2^2 + 3^2) = 23 != 0
+         explicit Fraction defect = 23
+  [PASS] G3 obstruction documents Pattern L / D5 circularity reduction
+         G3 documentation complete
+
+==============================================================================
+T10: framework qubit substrate -- Gleason factorization on product effects
+==============================================================================
+  [PASS] Gleason on product state x product effect: Tr(sigma E) = Tr(sigma_A E_A) * Tr(sigma_B E_B) (symbolic 2x2 (x) 2x2)
+         sympy.simplify of difference = 0
+  [PASS] Trace product is NOT trace sum (sanity: multiplicative != additive)
+         product - sum = a1*b1*e1*f1 + a1*b2*e1*f3 + a1*b3*e1*f2 + a1*b4*e1*f4 - a1*e1 + a2*b1*e3*f1 + a2*b2*e3*f3 + a2*b3*e3*f2 + a2*b4*e3*f4 - a2*e3 + a3*b1*e2*f1 + a3*b2*e2*f3 + a3*b3*e2*f2 + a3*b4*e2*f4 - a3*e2 + a4*b1*e4*f1 + a4*b2*e4*f3 + a4*b3*e4*f2 + a4*b4*e4*f4 - a4*e4 - b1*f1 - b2*f3 - b3*f2 - b4*f4
+
+==============================================================================
+T11: audit-lane disposition YAML block present
+==============================================================================
+  [PASS] audit-lane disposition YAML is complete with no_go and class-A LBS
+         audit YAML complete
+
+==============================================================================
+T12: no_go scope boundary -- does NOT claim P1 is FALSE
+==============================================================================
+  [PASS] no_go scope is bounded and does NOT claim falsity
+         scope boundary complete
+
+==============================================================================
+T13: source-note boundary check
+==============================================================================
+  [PASS] source-note boundary intact (no status-promotion overclaims)
+         source-note boundary clean
+
+==============================================================================
+PASS=23, FAIL=0
+==============================================================================
+
+----- stderr -----
+

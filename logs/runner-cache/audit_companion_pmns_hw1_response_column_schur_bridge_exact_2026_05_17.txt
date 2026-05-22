@@ -1,0 +1,94 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py
+runner_sha256: 15e87b3cbf64895f2f114e50ad3de2ed04e30b83442c0817987fa4da33c1b4a8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+========================================================================================
+Audit companion (exact-symbolic) for
+PMNS_HW1_RESPONSE_COLUMN_SCHUR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17
+Goal: sympy-symbolic verification of (R-pass) and (R-act) equivalence
+with the Schur complement (S) on supplied sector-operator fixtures
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 1: passive convention, d = 2 (entry-by-entry symbolic)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R-pass) (I - K_pass^{-1})/lam reduces to delta entry-by-entry (d=2)  (d=2 passive identity)
+
+----------------------------------------------------------------------------------------
+Part 2: active convention, d = 2 (entry-by-entry symbolic)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R-act) I + (I - K_act^{-1})/lam reduces to delta_S entry-by-entry (d=2)  (d=2 active identity)
+
+----------------------------------------------------------------------------------------
+Part 3: passive convention, d = 3 (exact-rational witness)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R-pass) (I - K_pass^{-1})/lam recovers delta exactly (d=3)  (d=3 passive exact-rational witness)
+
+----------------------------------------------------------------------------------------
+Part 4: active convention, d = 3 (exact-rational witness)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (R-act) I + (I - K_act^{-1})/lam recovers delta_S exactly (d=3)  (d=3 active exact-rational witness)
+
+----------------------------------------------------------------------------------------
+Part 5: full Schur round-trip, d = 2, s = 1 (passive, symbolic)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Lane A passive round-trip M -> delta_S -> K -> delta_A_pass equals Lane B Schur delta_S = A - B F^{-1} C (d=2, s=1)  (full sector-operator round-trip passive (symbolic))
+
+----------------------------------------------------------------------------------------
+Part 6: full Schur round-trip, d = 2, s = 1 (active, symbolic)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Lane A active round-trip M -> delta_S -> (delta_S - I) -> K -> delta_A_act equals Lane B Schur delta_S (d=2, s=1)  (full sector-operator round-trip active (symbolic))
+
+----------------------------------------------------------------------------------------
+Part 7: response_columns_from_block round-trip identity (passive, d=3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Round-trip identity (passive): delta -> response_columns -> derive_passive_block returns delta (d=3)  (passive primitive round-trip)
+
+----------------------------------------------------------------------------------------
+Part 8: response_columns_from_block round-trip identity (active, d=3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Round-trip identity (active): delta -> (delta - I) -> response_columns -> derive_active_block returns delta (d=3)  (active primitive round-trip)
+
+----------------------------------------------------------------------------------------
+Part 9: independent FP cross-check at one random sample (passive)
+----------------------------------------------------------------------------------------
+  [PASS (A)] FP cross-check passive (d=3, s=2, lam=0.27): Lane A round-trip matches Lane B Schur to machine precision  (||delta_A_pass - delta_S|| = 1.71e-15)
+
+----------------------------------------------------------------------------------------
+Part 10: independent FP cross-check at one random sample (active)
+----------------------------------------------------------------------------------------
+  [PASS (A)] FP cross-check active (d=3, s=2, lam=0.31): Lane A active round-trip matches Lane B Schur to machine precision  (||delta_A_act - delta_S|| = 2.75e-15)
+
+----------------------------------------------------------------------------------------
+Part 11: counterfactual probe (sign on identity subtraction)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual: (K - I)/lam does NOT recover delta on generic block (d=2)  (confirms sign on (I - K^{-1})/lam is load-bearing)
+
+----------------------------------------------------------------------------------------
+Part 12: spectator-extension invariance probe
+----------------------------------------------------------------------------------------
+  [PASS (A)] Two sector operators sharing the same Schur complement on the retained support give the same delta_S (algebraic invariance)  (spectator-extension invariance at d=2)
+  [PASS (A)] Lane A round-trip on the two spectator-different fixtures gives the same recovered block (spectator-extension invariance of recovery)  (round-trip invariance at d=2)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (R-pass) Passive convention d=2 symbolic and d=3 exact-rational identity
+    (R-act)  Active convention d=2 symbolic and d=3 exact-rational identity
+    Full Schur round-trip d=2, s=1 (passive and active, symbolic)
+    response_columns_from_block round-trip identity (passive and active)
+    FP cross-check on independent random (M, lam) at d=3, s=2 (passive and active)
+    Counterfactual: wrong sign (K - I)/lam fails to recover delta
+    Spectator-extension invariance exact-rational probe at d=2
+
+========================================================================================
+TOTAL: PASS=13, FAIL=0
+========================================================================================
+
+----- stderr -----
+

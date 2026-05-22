@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_finite_rank_gravity_residual.py
+runner_sha256: 29879ef1f2407e7916522a2ad9f5409dce7d5acdc0692b2d5f98fcc42c513f7d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.93
+status: ok
+----- stdout -----
+Finite-rank strong-field closure and `3+1` Einstein-residual test
+========================================================================
+[EXACT] PASS: finite-rank column identity
+    max column error=3.886e-16, support size=7
+[EXACT] PASS: finite-rank compressed source
+    max field error=9.992e-16
+[EXACT] PASS: finite-rank exterior harmonicity outside support
+    max exterior residual=1.277e-15
+[BOUNDED] PASS: shell-averaged field is monopole-dominated
+    a=0.346533, b=0.631238, relative RMS fit error=0.052
+[BOUNDED] PASS: direct common-source candidate has bounded nonzero `3+1` residual
+    max |G_mu_nu|=9.851e-02 across 5 exterior probes
+[BOUNDED] PASS: monopole-projected isotropic candidate sharply reduces `3+1` residual
+    direct max=9.851e-02, monopole max=1.519e-04, improvement=648.7x
+[BOUNDED] PASS: monopole candidate is near-vacuum on exterior probes
+    max |G_mu_nu|=1.519e-04; pointwise=1.5e-04, 7.4e-05, 3.9e-05, 3.6e-05, 4.8e-05
+
+========================================================================
+SUMMARY
+========================================================================
+Effective renormalized support weights sum = 9.532201
+Monopole fit coefficient a = 0.346533, subleading b = 0.631238
+Shell-fit relative RMS = 0.052
+PASS=7 FAIL=0 TOTAL=7
+EXACT=3 BOUNDED=4
+All checks passed.
+
+----- stderr -----
+

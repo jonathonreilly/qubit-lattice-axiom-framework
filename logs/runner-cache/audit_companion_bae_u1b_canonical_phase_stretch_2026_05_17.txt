@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py
-runner_sha256: 2423d09e1549b1170f747fd1efb6eac4d655c71eef840137ac5cd0b59fb73271
+runner_sha256: 2b8d4abf5290dd1f08d2fcfcbdb33937920bfc78c39ae32d823603636808ab95
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.84
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================================

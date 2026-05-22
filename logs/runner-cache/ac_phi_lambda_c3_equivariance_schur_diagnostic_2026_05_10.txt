@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py
-runner_sha256: e4611d296f2ced1000b9f94d89ae8e99c0ee15c63116b57c8b6577a53afc11da
+runner_sha256: 28500915b5ede7221ee5430f84af71a699c3e7c326216484ab76663e8f828e42
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 AC_phi_lambda preserved-C_3 structural foreclosure diagnostic
@@ -45,15 +45,15 @@ PASS: cites probe via markdown link: A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_
 PASS: cites probe via markdown link: A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md
 PASS: cites probe via markdown link: A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md
 PASS: cites probe via markdown link: A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md
-PASS: cites probe via markdown link: A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md
-PASS: cites probe via markdown link: A3_R2_HOSTILE_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md
-PASS: cites probe via markdown link: A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md
-PASS: cites probe via markdown link: A3_R4_HOSTILE_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md
-PASS: cites probe via markdown link: A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md
+PASS: cites probe via markdown link: A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md
+PASS: cites probe via markdown link: A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md
+PASS: cites probe via markdown link: A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md
+PASS: cites probe via markdown link: A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md
+PASS: cites probe via markdown link: A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md
 PASS: cites parent / canonical authority: STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md
 PASS: cites parent / canonical authority: C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md
 PASS: cites parent / canonical authority: BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md
-PASS: cites parent / canonical authority: AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md
+PASS: cites parent / canonical authority: AUDIT_BACKLOG_NOTE_2026-05-02.md
 PASS: cites parent / canonical authority: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
 PASS: cites parent / canonical authority: MINIMAL_AXIOMS_2026-05-03.md
 PASS: repo-canonical vocabulary present: Schur

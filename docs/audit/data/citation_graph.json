@@ -15429,14 +15429,6 @@
       "to": "koide_q_reduced_observable_restriction_theorem_2026-04-22"
     },
     {
-      "from": "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25",
-      "to": "koide_q_no_hidden_source_audit_2026-04-22"
-    },
-    {
-      "from": "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25",
-      "to": "koide_q_normalized_second_order_effective_action_theorem_2026-04-22"
-    },
-    {
       "from": "koide_q_delta_closure_package_readme_2026-04-21",
       "to": "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
     },
@@ -15451,10 +15443,6 @@
     {
       "from": "koide_q_delta_closure_package_readme_2026-04-21",
       "to": "koide_brannen_callan_harvey_candidate_note_2026-04-22"
-    },
-    {
-      "from": "koide_q_delta_closure_package_readme_2026-04-21",
-      "to": "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25"
     },
     {
       "from": "koide_q_delta_closure_package_readme_2026-04-21",
@@ -15631,10 +15619,6 @@
     {
       "from": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
       "to": "koide_dimensionless_note_2026-04-24"
-    },
-    {
-      "from": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
-      "to": "koide_q_delta_closure_package_readme_2026-04-21"
     },
     {
       "from": "koide_reviewer_stress_test_note_2026-04-21",
@@ -58552,12 +58536,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "koide_q_reduced_observable_restriction_theorem_2026-04-22",
-        "koide_q_no_hidden_source_audit_2026-04-22",
-        "koide_q_normalized_second_order_effective_action_theorem_2026-04-22"
+        "koide_q_reduced_observable_restriction_theorem_2026-04-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b6133858ca62c3384c76feed9d0a4c32e902b52481e26a99469aa425ca0f36db",
+      "note_hash": "665664e5e55c3fee8d63df6abf604b495b731b088d1e098b6ee8963e6fac27bd",
       "path": "docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_koide_q_background_zero_z_erasure_criterion.py",
       "title": "Koide Q Background-Zero / Z-Erasure Criterion Theorem"
@@ -58596,11 +58578,10 @@
         "koide_aps_block_by_block_forcing_note_2026-04-21",
         "koide_brannen_geometry_dirac_support_note_2026-04-22",
         "koide_brannen_callan_harvey_candidate_note_2026-04-22",
-        "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25",
         "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0eedac5039e6cfd6ac8f04f2d1e029005e1d9f091297209804e59f3255cee784",
+      "note_hash": "51138e754f3eb5366b4ead71bd3b7c70f7613ee4572ae9bd2c3025303e459b2b",
       "path": "docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md",
       "runner_path": "scripts/frontier_koide_Q_eq_3delta_identity.py",
       "title": "Koide Support Package \u2014 `Q = 2/3` and `\u03b4 = 2/9`"
@@ -58870,11 +58851,10 @@
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03",
         "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
-        "koide_dimensionless_note_2026-04-24",
-        "koide_q_delta_closure_package_readme_2026-04-21"
+        "koide_dimensionless_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "61043d080014b6e0eecb917ffb154ee95c4df885cf7fb09e082519fa6ee71106",
+      "note_hash": "3f2fc8076554bc23e5a4143d905102d7b12d5e5aa21bf07808566303940daf82",
       "path": "docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_koide_q_source_domain_canonical_descent.py",
       "title": "Koide Q Source-Domain Canonical Descent Theorem"
@@ -70878,7 +70858,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81703,7 +81683,7 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9739,
     "leaf_count": 740,
     "node_count": 2483,
     "root_count": 808,

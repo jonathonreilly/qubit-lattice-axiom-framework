@@ -22,10 +22,12 @@
 #   9. compute_audit_queue.py        -> data/audit_queue.json (consumes
 #                                       cycle inventory for break targets)
 #  10. compute_reaudit_candidates.py -> data/reaudit_candidates.json
-#  11. compute_auditor_reliability.py-> data/auditor_reliability.json
-#  12. audit_lint.py                 -> validates the ledger against hard rules
-#  13. render_audit_ledger.py        -> writes AUDIT_LEDGER.md
-#  14. render_publication_effective_status.py
+#  11. compute_audit_dispatch_queue.py
+#                                      -> data/audit_dispatch_queue.json
+#  12. compute_auditor_reliability.py-> data/auditor_reliability.json
+#  13. audit_lint.py                 -> validates the ledger against hard rules
+#  14. render_audit_ledger.py        -> writes AUDIT_LEDGER.md
+#  15. render_publication_effective_status.py
 #                                      -> writes audit-derived publication views
 set -euo pipefail
 
@@ -33,25 +35,25 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 cd "${REPO_ROOT}"
 
-echo "==> 1/14 build_citation_graph.py"
+echo "==> 1/15 build_citation_graph.py"
 python3 docs/audit/scripts/build_citation_graph.py
 
-echo "==> 2/14 seed_audit_ledger.py"
+echo "==> 2/15 seed_audit_ledger.py"
 python3 docs/audit/scripts/seed_audit_ledger.py
 
-echo "==> 3/14 sanitize_legacy_audit_artifacts.py"
+echo "==> 3/15 sanitize_legacy_audit_artifacts.py"
 python3 docs/audit/scripts/sanitize_legacy_audit_artifacts.py
 
-echo "==> 4/14 classify_runner_passes.py"
+echo "==> 4/15 classify_runner_passes.py"
 python3 docs/audit/scripts/classify_runner_passes.py
 
-echo "==> 5/14 compute_load_bearing.py"
+echo "==> 5/15 compute_load_bearing.py"
 python3 docs/audit/scripts/compute_load_bearing.py
 
-echo "==> 6/14 compute_effective_status.py"
+echo "==> 6/15 compute_effective_status.py"
 python3 docs/audit/scripts/compute_effective_status.py
 
-echo "==> 7/14 invalidate_stale_audits.py"
+echo "==> 7/15 invalidate_stale_audits.py"
 for attempt in 1 2 3 4 5 6 7 8 9 10; do
   python3 docs/audit/scripts/invalidate_stale_audits.py
   invalidated="$(
@@ -64,7 +66,7 @@ PY
   if [[ "${invalidated}" == "0" ]]; then
     break
   fi
-  echo "==> 7.${attempt}/14 compute_effective_status.py post-invalidation (${invalidated} invalidated)"
+  echo "==> 7.${attempt}/15 compute_effective_status.py post-invalidation (${invalidated} invalidated)"
   python3 docs/audit/scripts/compute_effective_status.py
 done
 
@@ -73,25 +75,28 @@ if [[ "${invalidated}" != "0" ]]; then
   exit 1
 fi
 
-echo "==> 8/14 build_cycle_inventory.py"
+echo "==> 8/15 build_cycle_inventory.py"
 python3 docs/audit/scripts/build_cycle_inventory.py
 
-echo "==> 9/14 compute_audit_queue.py"
+echo "==> 9/15 compute_audit_queue.py"
 python3 docs/audit/scripts/compute_audit_queue.py
 
-echo "==> 10/14 compute_reaudit_candidates.py"
+echo "==> 10/15 compute_reaudit_candidates.py"
 python3 docs/audit/scripts/compute_reaudit_candidates.py
 
-echo "==> 11/14 compute_auditor_reliability.py"
+echo "==> 11/15 compute_audit_dispatch_queue.py"
+python3 docs/audit/scripts/compute_audit_dispatch_queue.py
+
+echo "==> 12/15 compute_auditor_reliability.py"
 python3 docs/audit/scripts/compute_auditor_reliability.py
 
-echo "==> 12/14 audit_lint.py"
+echo "==> 13/15 audit_lint.py"
 python3 docs/audit/scripts/audit_lint.py
 
-echo "==> 13/14 render_audit_ledger.py"
+echo "==> 14/15 render_audit_ledger.py"
 python3 docs/audit/scripts/render_audit_ledger.py
 
-echo "==> 14/14 render_publication_effective_status.py"
+echo "==> 15/15 render_publication_effective_status.py"
 python3 docs/audit/scripts/render_publication_effective_status.py
 
 echo
@@ -99,6 +104,7 @@ echo "Pipeline complete."
 echo "  Read docs/audit/AUDIT_LEDGER.md for the rendered ledger."
 echo "  Read docs/audit/AUDIT_QUEUE.md   for the next-up audit queue."
 echo "  Read docs/audit/data/reaudit_candidates.json for unblocked re-audit candidates."
+echo "  Read docs/audit/AUDIT_DISPATCH_QUEUE.md for dispatcher-only targeted re-audits."
 echo "  Read docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md for the"
 echo "    audit-vs-publication-tables gap report."
 echo "  Read docs/publication/ci3_z3/<NAME>_EFFECTIVE_STATUS.md for the audit-"

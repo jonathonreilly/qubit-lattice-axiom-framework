@@ -96,6 +96,45 @@ After bulk cache refresh, commit `logs/runner-cache/*.txt` and the mechanical `a
 
 If the user names a candidate file or other constrained selection source, that source is authoritative. After the pipeline, check the exact path exists. If it is absent, stop and report the missing file; do not search for substitutes or fall back to the default queue unless the user explicitly authorizes that fallback.
 
+### Targeted Audit Dispatch Source
+
+Before falling through to cascade re-audit or the regular queue, check
+`docs/audit/data/audit_dispatch_queue.json`. This is the durable dispatch
+stream for targeted fresh-context re-audits that the normal queue will not
+surface, especially rows that are already terminal-clean / retained-bounded
+but need a scoped retag or reclassification decision after a framework-rule
+clarification.
+
+Process dispatch entries before cascade candidates:
+
+1. Read `docs/audit/data/audit_dispatch_queue.json`.
+2. Pick the first entry in `live` with `ready = true`.
+3. Use the entry only to select the target `claim_id` and audit question. Do
+   **not** pass the dispatch manifest, PR text, prior assistant discussion,
+   prior audit rationales, or publication-facing retained summaries into the
+   auditor packet.
+4. Build the restricted packet from the selected row's source note, one-hop
+   dependencies, runner/helpers/cache, required audit docs, and the entry's
+   `allowed_context_paths`.
+5. Apply any verdict or retag through the normal audit lane (`apply_audit.py`),
+   one claim per commit, then rerun the pipeline. A dispatch entry is resolved
+   only when the generated dispatch queue no longer lists it as live.
+
+Use this snippet when useful:
+
+```bash
+python3 - <<'PY'
+import json
+p=json.load(open("docs/audit/data/audit_dispatch_queue.json"))
+for e in p.get("live", []):
+    if e.get("ready"):
+        print(e["claim_id"], e["note_path"], e.get("audit_question", ""))
+        break
+PY
+```
+
+If the snippet prints no ready entry, continue to cascade re-audit.
+
 ### Cascade Re-audit Source
 
 Before falling through to the regular queue, check

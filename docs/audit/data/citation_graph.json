@@ -40595,7 +40595,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7042dc6acaefa938d17990fd63f1f103dc7af2fb1b4edb9bff54eb289f84c33f",
+      "note_hash": "dff8f4aa2f14286b87faf2da0e3009bfc483d80ae55063a26e9f33c009857885",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": null,
       "title": "Audit Loop"
@@ -40741,7 +40741,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "810fdf61577d88a1c0d7824ab09767c351a608eb5bd56d8bbbdff7762754f6e7",
+      "note_hash": "182afc4a087b4966e87b7b9c7bf8de5f7dd6fa600a0cba3c7eff59f6f70519dd",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"

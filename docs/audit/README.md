@@ -42,11 +42,13 @@ docs/audit/
     audit_ledger.json                # generated/edited: per-claim audit rows
     source_path_aliases.json         # controlled: source-note renames preserving audit rows
     runner_classification.json       # generated: A/B/C/D per runner PASS line
+    audit_dispatch_queue.json        # generated: targeted re-audits normal queue will not surface
   scripts/
     build_citation_graph.py          # parse all .md docs into the graph
     seed_audit_ledger.py             # initialize ledger rows from claim notes
     classify_runner_passes.py        # classify runner outputs by check type
     compute_effective_status.py      # propagate audit results down the graph
+    compute_audit_dispatch_queue.py  # render dispatcher sidecars into audit_dispatch_queue.json
     audit_lint.py                    # validate ledger consistency
 ```
 

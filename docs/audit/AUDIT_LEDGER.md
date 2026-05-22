@@ -24,13 +24,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
 | unaudited | 1320 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 92 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
+| `decoration_under_cl3_color_automorphism_theorem` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -46,10 +46,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
 | `audited_clean` | 621 |
 | `audited_conditional` | 92 |
-| `audited_decoration` | 24 |
+| `audited_decoration` | 25 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
@@ -57,8 +56,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1027 |
-| `decoration` | 25 |
+| `bounded_theorem` | 1026 |
+| `decoration` | 26 |
 | `meta` | 227 |
 | `no_go` | 238 |
 | `open_gate` | 113 |
@@ -118,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -852,6 +850,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
+| `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | judicial_review | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
@@ -10490,6 +10489,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The correction follows algebraically from the stated K-tube exponent shift once Δ ln ρ is defined relative to the exponent-12 baseline. The cited retained_bounded authority supplies the c_R(6) values used for the illustrative table, but the denominator conclusion does not require a new physics derivation.
 - **rationale:** The load-bearing step is an algebraic consequence of the K-tube formula quoted in the note: subtracting the exponent-12 baseline leaves exactly (2/π) ln(c_R/c_0). This is sufficient for the bounded claim that PR #525's C_2 denominator was not the denominator implied by that ansatz. The note explicitly does not claim to derive 2/π from a one-loop diagram or close the broader plaquette problem.
 - **auditor confidence:** high
+
+### `su3_casimir_fundamental_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic K1-K3 only: for the cited Gell-Mann-normalized SU(3) fundamental on algebraic V_3, C_2 is central, scalar, and equals (4/3)I_3; physical quark color-factor readouts are excluded.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260522T232139Z-su3_casimir_fundamental_theorem_note_202-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Using Schur scalarity and Tr[C_2]=sum_a Tr[T^aT^a]=8*(1/2)=4, while Tr[c_2(3)I_3]=3c_2(3), gives c_2(3)=4/3.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The narrowed K1-K3 claim closes algebraically from the retained SU(3) fundamental carrier plus admitted Schur and trace-normalization mathematics, and it does not use the deferred physical-color bridge. However, the load-bearing work is class A algebra over a single upstream parent, the runner performs only algebraic consistency checks, and there are zero external comparator checks. Under the stated clean-versus-decoration tie-break, this is an algebraic decoration of the parent rather than an independently clean bounded theorem. | The narrowed theorem closes algebraically from the retained one-hop SU(3) fundamental embedding plus admitted Schur/Casimir mathematics, and the physical-quark bridge is explicitly out of scope. However, the audit rubric's decoration tie-break applies: the load-bearing work is class A, there are zero external comparator checks, and the chain reduces to a single upstream parent claim plus standard mathematics. The first audit correctly saw closure but missed the binding decoration policy. The second audit's tuple is the internally consistent one. | The narrowed claim closes algebraically from the single cited parent, which supplies the SU(3) fundamental Gell-Mann-normalized carrier, plus admitted standard Schur/Casimir mathematics. The runner verifies algebraic identities and the 4/3 value, with zero external comparator checks and no new first-principles construction beyond the parent authority. Under the explicit clean-vs-decoration tie-break, a class-A corollary reducing to one upstream parent claim plus standard mathematics is audited_decoration, not audited_clean. | The narrowed K1-K3 chain closes algebraically from the single cited SU(3) fundamental embedding plus admitted Schur/Casimir mathematics, and the physical-quark readout is explicitly excluded. The runner checks only algebraic identities and the Casimir value for the Gell-Mann fundamental, with zero external comparator checks. Under the stated tie-break rule, a class-A algebraic corollary over one upstream parent plus standard mathematics is audited_decoration rather than audited_clean. | The narrowed K1-K3 chain closes as a pure algebraic consequence of the retained upstream SU(3) fundamental action and admitted representation theory. However, the rubric's decoration rule applies: the load-bearing work is class A, there are zero external comparator checks, and the result reduces to one upstream parent claim plus standard mathematics. The first audit correctly identified closure and class A but missed the explicit audited_decoration tie-break. The second audit applied the decoration policy consistently.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: second / audited_decoration / decoration / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The narrowed K1-K3 claim closes algebraically from the retained SU(3) fundamental carrier plus admitted Schur and trace-normalization mathematics, and it does not use the deferred physical-color bridge. However, the load-bearing work is class A algebra over a single upstream parent, the runner performs only algebraic consistency checks, and there are zero external comparator checks. Under the stated clean-versus-decoration tie-break, this is an algebraic decoration of the parent rather than an independently clean bounded theorem. | The narrowed theorem closes algebraically from the retained one-hop SU(3) fundamental embedding plus admitted Schur/Casimir mathematics, and the physical-quark bridge is explicitly out of scope. However, the audit rubric's decoration tie-break applies: the load-bearing work is class A, there are zero external comparator checks, and the chain reduces to a single upstream parent claim plus standard mathematics. The first audit correctly saw closure but missed the binding decoration policy. The second audit's tuple is the internally consistent one. | The narrowed claim closes algebraically from the single cited parent, which supplies the SU(3) fundamental Gell-Mann-normalized carrier, plus admitted standard Schur/Casimir mathematics. The runner verifies algebraic identities and the 4/3 value, with zero external comparator checks and no new first-principles construction beyond the parent authority. Under the explicit clean-vs-decoration tie-break, a class-A corollary reducing to one upstream parent claim plus standard mathematics is audited_decoration, not audited_clean. | The narrowed K1-K3 chain closes algebraically from the single cited SU(3) fundamental embedding plus admitted Schur/Casimir mathematics, and the physical-quark readout is explicitly excluded. The runner checks only algebraic identities and the Casimir value for the Gell-Mann fundamental, with zero external comparator checks. Under the stated tie-break rule, a class-A algebraic corollary over one upstream parent plus standard mathematics is audited_decoration rather than audited_clean. | The narrowed K1-K3 chain closes as a pure algebraic consequence of the retained upstream SU(3) fundamental action and admitted representation theory. However, the rubric's decoration rule applies: the load-bearing work is class A, there are zero external comparator checks, and the result reduces to one upstream parent claim plus standard mathematics. The first audit correctly identified closure and class A but missed the explicit audited_decoration tie-break. The second audit applied the decoration policy consistently.
+- **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** judicial_panel_majority
 
 ### `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`
 

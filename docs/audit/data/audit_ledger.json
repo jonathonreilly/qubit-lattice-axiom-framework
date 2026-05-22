@@ -112600,22 +112600,45 @@
       "verdict_rationale": "The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified D-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
     },
     "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
+      "audit_date": "2026-05-22T03:33:48.951849+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3b47bff12eaeea935b0d787e76d2d8131ac9b3636e2430899cc567c3cfa416a7",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "claude-audit-loop-2026-05-19-hermitian-lift",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "claude-opus",
+      "auditor_model": "claude-opus-4-7-1m",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closure_explanation": "Exact algebra over retained inputs. (L2) follows from (D1)+(D2)+(D3)+K(i)=-i; (L3) follows from (L2); (L4) is (L2) applied direction-by-direction with eta_mu(-x) = eta_mu(x) (Z mod L parity). Runner verifies all four at exact precision on L in {4, 6} with a counterfactual discriminator confirming the chain is non-trivial.",
       "claim_id": "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "On the framework's specific staggered Cl(3) construction H = i D with real anti-Hermitian staggered hopping D on Lambda = (Z mod L)^3 (even L), with C the sublattice parity and P the spatial inversion from cpt_exact_note, the antiunitary operator Theta_H := P K is an exact symmetry of H, [Theta_H, H] = 0 holds at matrix level, and H_odd := (H - Theta_H H Theta_H^{-1})/2 = 0 entrywise as a complex L^3 x L^3 matrix; the same vanishing holds for each direction-resolved H_{mu,odd}, mu in {1,2,3}. No SME bilinear operator-dictionary leap is claimed; the SME-zero half remains the parent bridge's open conditional and is explicitly out of scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T03:33:48.951849+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -112624,23 +112647,23 @@
         "cpt_exact_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
       "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "13795f52c4ee2381384c0d1d20c1726517baa62fa9eccbc7eb896d848ef909e2",
       "note_path": "docs/HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Clean narrow split. If/when the parent bridge's SME bilinear operator-dictionary derivation lands as audited_clean by separate authority, the bridge note's SME-zero conclusion can be restated; the present narrow theorem is unaffected because it deliberately does not load-bear on that gap.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -112651,7 +112674,7 @@
       "runner_path": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py",
       "title": "Hermitian-Lift `\u0398_H = P K` Bounded Narrow Theorem on Framework C, P",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Load-bearing step is pure class-A algebraic substitution: (L2) Theta_H H Theta_H^{-1} = (P K)(i D)(K^{-1} P^{-1}) = P (K i K^{-1}) (K D K^{-1}) (K P K^{-1}) = P (-i) D P = -i (P D P) = -i (-D) = i D = H, using only (D1) C D C = -D and (D2) P D P = -D from the retained-grade parent cpt_exact_note (audited_clean, effective_status retained), (D3) K D K^{-1} = D from D real, the antilinear-operator axiom K(i) = -i (definition of antilinearity, no import), and the parent's P, C real-involutory specification on Lambda. From (L2) the odd sector vanishes (L3): H_odd = (H - H)/2 = 0 entrywise. The direction-resolved (L4) closes by the same calculation restricted to each H_mu = i D_mu, using eta_mu(-x) = eta_mu(x) (Z mod L parity preserves the staggered phase sum modulo 2). The companion runner (sha256 3b47bff1...) verifies every load-bearing identity at exact precision: D entries are exactly representable dyadic rationals {0, +/-1/2}, so numpy equality is exact (no float tolerance); the 1-d sympy slice provides symbolic certainty for (L1)-(L3); the counterfactual probe (CP K) H (CP K)^{-1} = -H confirms the result is specific to Theta_H = P K and not a generic consequence (rules out hard-coded-passes). Runner cache: PASS=42, FAIL=0 on L in {4, 6} (3-d numpy) plus L=4 (1-d sympy) plus counterfactual. Both deps cpt_exact_note and physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30 are audited_clean / retained-grade. No PDG/SME/literature numerical comparators consumed; no continuum CPT-theorem input; no SME operator-dictionary input (deliberately out of scope per the Pattern A narrow split). Hostile-review check: the claim survives every standard attack -- (a) no symbol identification beyond the standard definitions of antiunitary operator and complex conjugation; (b) the runner does not hard-code the conclusion (the counterfactual (CP K) case produces -H, not 0, demonstrating the algebraic chain is non-trivial); (c) numerics current with the runner cache (note_hash matches ledger 13795f52...); (d) the SME-zero leap that would constitute over-claim is explicitly disclaimed and not cited; (e) the parent bridge note's conditional half (SME bilinear dictionary) is correctly excluded from the load-bearing dependency set. Residual risk: bounded to the framework instance H = i D with the specific staggered eta_mu and even-L periodic Lambda; the theorem does not assert continuum CPT or interacting-theory CPT, and does not discharge the SME-bilinear dictionary gap (those remain the bridge's responsibility). This is a clean Pattern A narrow split. No walls or admissions named; No-Go discipline gate N/A (bounded_theorem with no wall-naming prose)."
     },
     "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16": {
       "audit_date": null,

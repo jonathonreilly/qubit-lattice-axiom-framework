@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 113 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 379 |
+| **retained_bounded** | 380 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1300 |
+| unaudited | 1299 |
 | audit_in_progress | 3 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 619 |
+| `audited_clean` | 620 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 33 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1522 |
+| `unaudited` | 1521 |
 
 | claim_type | count |
 |---|---:|
@@ -365,6 +365,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | B | - |
 | `half_plane_chart_equivalence_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
+| `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | claude-opus | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -5470,6 +5471,18 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified D-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
 - **auditor confidence:** high
+
+### `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the framework's specific staggered Cl(3) construction H = i D with real anti-Hermitian staggered hopping D on Lambda = (Z mod L)^3 (even L), with C the sublattice parity and P the spatial inversion from cpt_exact_note, the antiunitary operator Theta_H := P K is an exact symmetry of H, [Theta_H, H] = 0 holds at matrix level, and H_odd := (H - Theta_H H Theta_H^{-1})/2 = 0 entrywise as a complex L^3 x L^3 matrix; the same vanishing holds for each direction-resolved H_{mu,odd}, mu in {1,2,3}. No SME bilinear operator-dictionary leap is claimed; the SME-zero half remains the parent bridge's open conditional and is explicitly out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-19-hermitian-lift`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** None — Exact algebra over retained inputs. (L2) follows from (D1)+(D2)+(D3)+K(i)=-i; (L3) follows from (L2); (L4) is (L2) applied direction-by-direction with eta_mu(-x) = eta_mu(x) (Z mod L parity). Runner verifies all four at exact precision on L in {4, 6} with a counterfactual discriminator confirming the chain is non-trivial.
+- **rationale:** Load-bearing step is pure class-A algebraic substitution: (L2) Theta_H H Theta_H^{-1} = (P K)(i D)(K^{-1} P^{-1}) = P (K i K^{-1}) (K D K^{-1}) (K P K^{-1}) = P (-i) D P = -i (P D P) = -i (-D) = i D = H, using only (D1) C D C = -D and (D2) P D P = -D from the retained-grade parent cpt_exact_note (audited_clean, effective_status retained), (D3) K D K^{-1} = D from D real, the antilinear-operator axiom K(i) = -i (definition of antilinearity, no import), and the parent's P, C real-involutory specification on Lambda. From (L2) the odd sector vanishes (L3): H_odd = (H - H)/2 = 0 entrywise. The direction-resolved (L4) closes by the same calculation restricted to each H_mu = i D_mu, using eta_mu(-x) = eta_mu(x) (Z mod L parity preserves the staggered phase sum modulo 2). The companion runner (sha256 3b47bff1...) verifies every load-bearing identity at exact precision: D entries are exactly representable dyadic rationals {0, +/-1/2}, so numpy equality is exact (no float tolerance); the 1-d sympy slice provides symbolic certainty for (L1)-(L3); the counterfactual probe (CP K) H (CP K)^{-1} = -H confirms the result is specific to Theta_H = P K and not a generic consequence (rules out hard-coded-passes). Runner cache: PASS=42, FAIL=0 on L in {4, 6} (3-d numpy) plus L=4 (1-d sympy) plus counterfactual. Both deps cpt_exact_note and physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30 are audited_clean / retained-grade. No PDG/SME/literature numerical comparators consumed; no continuum CPT-theorem input; no SME operator-dictionary input (deliberately out of scope per the Pattern A narrow split). Hostile-review check: the claim survives every standard attack -- (a) no symbol identification beyond the standard definitions of antiunitary operator and complex conjugation; (b) the runner does not hard-code the conclusion (the counterfactual (CP K) case produces -H, not 0, demonstrating the algebraic chain is non-trivial); (c) numerics current with the runner cache (note_hash matches ledger 13795f52...); (d) the SME-zero leap that would constitute over-claim is explicitly disclaimed and not cited; (e) the parent bridge note's conditional half (SME bilinear dictionary) is correctly excluded from the load-bearing dependency set. Residual risk: bounded to the framework instance H = i D with the specific staggered eta_mu and even-L periodic Lambda; the theorem does not assert continuum CPT or interacting-theory CPT, and does not discharge the SME-bilinear dictionary gap (those remain the bridge's responsibility). This is a clean Pattern A narrow split. No walls or admissions named; No-Go discipline gate N/A (bounded_theorem with no wall-naming prose).
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`
 

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1333 |
+| unaudited | 1332 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 25 |
-| `decoration_under_cl3_color_automorphism_theorem` | 2 |
+| `decoration_under_cl3_color_automorphism_theorem` | 3 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -48,20 +48,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 1 |
 | `audited_clean` | 606 |
 | `audited_conditional` | 89 |
-| `audited_decoration` | 24 |
+| `audited_decoration` | 25 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1557 |
+| `unaudited` | 1556 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1020 |
-| `decoration` | 25 |
+| `decoration` | 26 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 749 |
+| `positive_theorem` | 748 |
 
 | criticality | count |
 |---|---:|
@@ -824,6 +824,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | fresh_context | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
+| `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
@@ -4825,6 +4826,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k has summands of common sign under the induction hypothesis, so every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support.
+- **auditor confidence:** high
+
+### `gellmann_completeness_theorem_note_2026-05-02`
+
+- **Note:** [`GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given the cited Gell-Mann generators with trace orthonormality, {T^a} is a real basis of traceless Hermitian 3x3 matrices and iT^a spans su(3), with commutator closure in that basis.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T164127Z-aff1ca91-gellmann_completeness_th-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The R-span of 8 linearly independent traceless Hermitian generators in the 8-dimensional space of traceless Hermitian 3x3 matrices is the full space, equivalently R-span{iT^a}=su(3).  _(class `A`)_
+- **chain closes:** True — The mathematical basis and closure claims follow from the one-hop Gell-Mann input plus the admitted dimension and trace-inner-product facts. The restricted packet does not close the separate physical-SM-color identification, so the audited scope is only the algebraic SU(3) basis result.
+- **rationale:** The load-bearing work is elementary linear algebra over a single upstream authority: trace orthonormality gives independence, dimension 8 gives spanning, and projection gives coefficients and commutator closure. The runner directly checks these algebraic identities for hard-coded standard Gell-Mann matrices, with no external comparator or first-principles framework computation. Because the note reduces to one retained-bounded parent plus standard mathematics and has zero class D checks, it is decoration rather than a new clean theorem. Any physical-color or gluon-count reading remains outside this audited algebraic scope because the cited parent explicitly defers that bridge.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `generation_axiom_boundary_note`

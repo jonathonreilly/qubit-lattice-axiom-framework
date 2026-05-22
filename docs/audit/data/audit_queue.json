@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 887,
+    "critical": 886,
     "high": 23,
     "leaf": 325,
     "medium": 99
@@ -11993,30 +11993,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gellmann_completeness_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.042,
-      "note_path": "docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gellmann_completeness_check.py",
-      "transitive_descendants": 1053
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -49509,6 +49485,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
-  "total_pending": 1334
+  "ready_count": 20,
+  "total_pending": 1333
 }

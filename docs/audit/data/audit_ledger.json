@@ -245584,22 +245584,49 @@
       "verdict_rationale": null
     },
     "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
+      "audit_date": "2026-05-22T02:51:37.934154+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "claude-audit-loop-2026-05-19-u4-closes",
       "auditor_confidence": null,
-      "auditor_family": null,
+      "auditor_family": "claude-opus",
+      "auditor_model": "claude-opus-4-7",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closure_explanation": "Step 1 (qubit-per-site baseline specifies per-site H_x = C^2) is the *content* of A1 of MINIMAL_AXIOMS_2026-05-20 (the note explicitly says so); Step 2 (M_2(C) has unique faithful complex irrep of dim 2) is a named non-derivation import (Schur+Wedderburn) and is also already separately retained via the cl3_complexification_split_narrow_theorem_note_2026-05-10 (K4) / cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10 (D1) chain. The composition produces the U4 identification but adds no new bridge content beyond axiom unpacking and the retained sibling theorems.",
       "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Under the 2026-05-20 qubit reframe, the U4 bridge (per-site Hilbert H_x = C^2 = unique faithful complex Cl(3,0)-irrep on the Z^3 substrate) follows directly from the qubit-per-site baseline A1 of MINIMAL_AXIOMS_2026-05-20.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T02:51:37.934154+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -245609,11 +245636,11 @@
         "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_renaming",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_renaming",
       "load_bearing_score": 0.0,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
@@ -245621,7 +245648,7 @@
       "max_descendant_status_rank": 30,
       "note_hash": "d177763909f68c2e9295f3a0f78e0c89d52eb39e244ac9a743c01e04515efc96",
       "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "If the qubit reframe of A1 is later treated by audit policy as a definitional equivalence rather than a load-bearing axiom (e.g. via QUBIT_AXIOM_HARDENING_NOTE_2026-05-20 ratification), this row could be reconsidered as audited_decoration under the cl3_complexification_split parent. As-is, the load-bearing step is identification (renaming), not corollary algebra, so audited_renaming is the more conservative non-clean verdict.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -245636,7 +245663,7 @@
       "runner_path": null,
       "title": "U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "Issue: the note's own Step 1 admits 'This is not a *derivation* under the baseline; it is the *content* of the baseline.' The load-bearing identification 'qubit at every site' -> 'per-site Hilbert H_x = C^2 = unique faithful complex M_2(C)-irrep' is the unpacking of the standard quantum-information reading of the word 'qubit' fixed in A1 of MINIMAL_AXIOMS_2026-05-20, plus invocation of the named-non-derivation Schur+Wedderburn theorem on M_2(C). No new physical bridge is constructed; the U4 'open admission' under the pre-2026-05-20 Cl(3) framing is re-identified with the qubit-per-site axiom content under the post-2026-05-20 reframe. Why this blocks audited_clean: per the audit-lane enum, audited_renaming applies when 'the load-bearing step defines/renames the target quantity or identifies two concepts without derivation' \u2014 here U4 (the per-site physical Hilbert space on the Z^3 substrate) and A1's 'qubit at every lattice site' are identified by axiom-content unpacking, not by a derivation chain bridging two separately specified objects. Repair target: there is no science repair needed; the note's own honest scoping is correct. If the claim is to become a positive_theorem at retained grade, the load-bearing content has to be a non-trivial bridge (e.g., closing one of substep-1's remaining halves \u2014 JW bridge or Grassmann forcing \u2014 under the qubit reframe), not the labeling-equivalence the current note records. Claim boundary until fixed: the note correctly records, as a citeable meta result, that under the qubit reframe the U4 bridge is no longer an open admission because A1 specifies the per-site object directly. That observation is true and useful as renaming/scoping, but it is not an independent positive theorem."
     },
     "unification_basin_failure_note": {
       "audit_date": null,

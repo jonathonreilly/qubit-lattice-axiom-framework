@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 377 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1324 |
+| unaudited | 1323 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 15 |
+| ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -54,8 +54,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 15 |
-| `unaudited` | 1546 |
+| `audited_renaming` | 16 |
+| `unaudited` | 1545 |
 
 | claim_type | count |
 |---|---:|
@@ -940,6 +940,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | claude-opus | - | - |
 
 
 ## Audit findings (full)
@@ -11179,6 +11180,18 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Under the 2026-05-20 qubit reframe, the U4 bridge (per-site Hilbert H_x = C^2 = unique faithful complex Cl(3,0)-irrep on the Z^3 substrate) follows directly from the qubit-per-site baseline A1 of MINIMAL_AXIOMS_2026-05-20.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `claude-audit-loop-2026-05-19-u4-closes`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `None`)_
+- **chain closes:** None — Step 1 (qubit-per-site baseline specifies per-site H_x = C^2) is the *content* of A1 of MINIMAL_AXIOMS_2026-05-20 (the note explicitly says so); Step 2 (M_2(C) has unique faithful complex irrep of dim 2) is a named non-derivation import (Schur+Wedderburn) and is also already separately retained via the cl3_complexification_split_narrow_theorem_note_2026-05-10 (K4) / cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10 (D1) chain. The composition produces the U4 identification but adds no new bridge content beyond axiom unpacking and the retained sibling theorems.
+- **rationale:** Issue: the note's own Step 1 admits 'This is not a *derivation* under the baseline; it is the *content* of the baseline.' The load-bearing identification 'qubit at every site' -> 'per-site Hilbert H_x = C^2 = unique faithful complex M_2(C)-irrep' is the unpacking of the standard quantum-information reading of the word 'qubit' fixed in A1 of MINIMAL_AXIOMS_2026-05-20, plus invocation of the named-non-derivation Schur+Wedderburn theorem on M_2(C). No new physical bridge is constructed; the U4 'open admission' under the pre-2026-05-20 Cl(3) framing is re-identified with the qubit-per-site axiom content under the post-2026-05-20 reframe. Why this blocks audited_clean: per the audit-lane enum, audited_renaming applies when 'the load-bearing step defines/renames the target quantity or identifies two concepts without derivation' — here U4 (the per-site physical Hilbert space on the Z^3 substrate) and A1's 'qubit at every lattice site' are identified by axiom-content unpacking, not by a derivation chain bridging two separately specified objects. Repair target: there is no science repair needed; the note's own honest scoping is correct. If the claim is to become a positive_theorem at retained grade, the load-bearing content has to be a non-trivial bridge (e.g., closing one of substep-1's remaining halves — JW bridge or Grassmann forcing — under the qubit reframe), not the labeling-equivalence the current note records. Claim boundary until fixed: the note correctly records, as a citeable meta result, that under the qubit reframe the U4 bridge is no longer an open admission because A1 specifies the per-site object directly. That observation is true and useful as renaming/scoping, but it is not an independent positive theorem.
 
 ### `unified_basin_freeze_note`
 

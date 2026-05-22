@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 117 |
+| **retained** | 118 |
 | **retained_no_go** | 146 |
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
 | unaudited | 1350 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 597 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 598 |
 | `audited_conditional` | 81 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 69 |
@@ -116,7 +115,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `ew_current_fierz_channel_decomposition_note_2026-05-01` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -273,6 +271,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `evolving_network_prototype_v4_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v5_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v6_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `ew_current_fierz_channel_decomposition_note_2026-05-01` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3686,6 +3685,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The frozen h=0.5 structured-growth sweep over the stated drift/restore rows gives toward counts of 33/36, 24/36, 24/36, and 24/36 with small positive mean deltas.  _(class `C`)_
 - **chain closes:** True — The included runner source constructs the structured-growth networks, propagates amplitudes, computes centroid shifts and local gain slopes, and aggregates the reported row counts without hard-coded expected outputs. The conclusion is limited to the stated finite sweep and explicitly does not claim universal Gate B closure.
 - **rationale:** The note's load-bearing result is a bounded computational replay, and the provided runner source genuinely computes the reported sweep from its stated model and parameters rather than printing constants or importing the contested result. The runner output matches the table in the note. The note's own caveats keep the claim within the finite tested grid, so the audited bounded conclusion follows on its own terms.
+- **auditor confidence:** high
+
+### `ew_current_fierz_channel_decomposition_note_2026-05-01`
+
+- **Note:** [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T154127Z-8872a1b5-ew_current_fierz_channel-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The adjoint-channel dimension fraction is dim(adj)/dim(N_c ⊗ N_c-bar) = (N_c^2 - 1)/N_c^2, giving exactly 8/9 at N_c = 3.  _(class `A`)_
+- **chain closes:** True — For the scoped ratio, the chain closes from the retained SU(3)/N_c = 3 inputs plus the inline Fierz completeness and representation-dimension count. The full package-level 9/8 EW correction would still require the separately admitted matching rule (M).
+- **rationale:** The load-bearing step is a genuine algebraic closure: SU(N_c) Fierz completeness and N_c ⊗ N_c-bar = 1 ⊕ adj imply the stated dimension fraction. The cited authorities are retained-grade for the needed SU(3)/N_c = 3 input, and the runner source actually constructs SU(N) generators, checks normalization/Fierz identities, verifies dimension counts, and checks citation hygiene. No external comparator, tuned input scale, or hard-coded disputed physical matching coefficient is used. The clean verdict is limited to the exact group-theory channel ratio, not to the physical EW projection rule (M).
 - **auditor confidence:** high
 
 ### `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`

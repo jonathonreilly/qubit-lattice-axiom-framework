@@ -82724,22 +82724,45 @@
       "verdict_rationale": null
     },
     "ew_current_fierz_channel_decomposition_note_2026-05-01": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "audit_date": "2026-05-22T15:43:46.372419+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 17.717,
+        "runner_hash": "c3ff0f82219906a3522e385cc48ef3527808a647728b0fc843d40aa3a308d4ef",
+        "transitive_descendants": 1189
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154127Z-8872a1b5-ew_current_fierz_channel-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the scoped ratio, the chain closes from the retained SU(3)/N_c = 3 inputs plus the inline Fierz completeness and representation-dimension count. The full package-level 9/8 EW correction would still require the separately admitted matching rule (M).",
       "claim_id": "ew_current_fierz_channel_decomposition_note_2026-05-01",
-      "claim_scope": "Exact SU(N_c) group-theory derivation of the adjoint q-qbar channel dimension fraction (N_c^2 - 1)/N_c^2, with N_c = 3 imported from retained graph-first SU(3) structure; no audit of the EW matching rule (M).",
+      "claim_scope": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-22T15:41:04.660786+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-22T15:43:46.372419+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -82754,8 +82777,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-22T15:43:46.372419+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154127Z-8872a1b5-ew_current_fierz_channel-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -82763,19 +82797,19 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 15,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained",
       "load_bearing_score": 17.717,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The adjoint-channel dimension fraction is dim(adj)/dim(N_c \u2297 N_c-bar) = (N_c^2 - 1)/N_c^2, giving exactly 8/9 at N_c = 3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "1f584f1c88e9c37342402f11a76a54c5e02af269513ed75fe8b1702b9d33e842",
       "note_path": "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use of the 9/8 package-level correction does not treat the matching rule (M) as derived by this note.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -82894,18 +82928,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 23,
+        "B": 8,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 31
       },
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "EW Current Fierz-Channel Decomposition: Exact Group-Theory Derivation of `(N_c^2 - 1)/N_c^2`",
       "transitive_descendants": 1189,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure: SU(N_c) Fierz completeness and N_c \u2297 N_c-bar = 1 \u2295 adj imply the stated dimension fraction. The cited authorities are retained-grade for the needed SU(3)/N_c = 3 input, and the runner source actually constructs SU(N) generators, checks normalization/Fierz identities, verifies dimension counts, and checks citation hygiene. No external comparator, tuned input scale, or hard-coded disputed physical matching coefficient is used. The clean verdict is limited to the exact group-theory channel ratio, not to the physical EW projection rule (M)."
     },
     "ew_current_matching_ozi_suppression_theorem_note_2026-04-27": {
       "audit_date": null,

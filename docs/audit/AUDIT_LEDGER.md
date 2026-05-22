@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 369 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1327 |
+| unaudited | 1326 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 621 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1551 |
+| `unaudited` | 1550 |
 
 | claim_type | count |
 |---|---:|
@@ -758,6 +758,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -4060,6 +4061,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
 - **auditor confidence:** high
+
+### `g_bare_constraint_vs_convention_theorem_note_2026-05-03`
+
+- **Note:** [`G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional local algebra: assuming CN, Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, and beta = 6, the unique positive g_bare is 1; the broader exclusion of all alternative convention or external-scale routes was not established by this packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T230345Z-dbb2bb2a-g_bare_constraint_vs_con-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At N_c = 3 and beta = 2 N_c = 6, the matching identity gives g_bare^2 = 2 N_c / beta = 6 / 6 = 1, hence g_bare = 1 on the positive-coupling branch.  _(class `A`)_
+- **chain closes:** False — The exact substitution closes once beta = 6 is assumed. The restricted packet does not close the preceding beta-pinning/no-external-scale step needed for the advertised no-separate-g_bare-convention conclusion; the cited CL3 authority supplies CN, not that stronger Wilson normalization boundary.
+- **rationale:** The runner verifies the trace-normalization/rescaling algebra and the Fraction substitution, but Section E sets beta_canonical = 2 N_c and then checks the consequence. The cited authority carries the canonical Gell-Mann trace normalization and algebraic N_c = 3, but it does not supply a retained theorem that CN alone pins beta = 6 or excludes all external-scale conventions. The broader negative boundary fails the packet-level N1/N3 no-go gate: the packet does not enumerate independent alternative routes and relies on canonical/no-external-scale language without a retained closing authority.
+- **auditor confidence:** medium
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`
 

@@ -1,11 +1,22 @@
 # Staggered-Dirac Realization Gate Note
 
-**Date:** 2026-05-03
+**Date:** 2026-05-03 (2026-05-21: §2.1 recognition added — the
+in-flight substep work has produced a bounded source-side closure
+candidate for the kinetic-and-algebra surface
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`,
+with `AC_φλ` (substep-4 species labeling) recorded as an explicit
+admitted-context residual structurally analogous to the
+P1 admitted-context residual on
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`; the gate's source-side
+`open_gate` status is unchanged pending audit-lane ratification —
+see §2.1; citation-graph plain-text-references-only convention
+preserved per the §"Citation-graph note" rule)
 **Type:** open_gate
-**Claim scope:** A1 (Cl(3) local algebra) + A2 (Z^3 spatial substrate)
-plus admissible mathematical infrastructure forces (or sufficiently
-constrains) the Grassmann staggered-Dirac realization, including the BZ
-corner doubler structure that maps to three SM matter generations.
+**Claim scope:** The one-qubit operator algebra baseline on the `Z^3`
+spatial substrate plus admissible mathematical infrastructure forces
+(or sufficiently constrains) the Grassmann staggered-Dirac realization,
+including the BZ corner doubler structure that maps to three SM matter
+generations.
 **Status authority:** independent audit lane only. This source note is a
 citeable open-gate parent for the staggered-Dirac realization derivation
 chain; it is not itself a retained theorem and does not supply a verdict.
@@ -27,25 +38,26 @@ lanes that need to admit "the staggered-Dirac realization derivation
 target is not yet closed" have no single citeable object to point at.
 This note is that object.
 
-The framework's restored axiom set (A1 + A2 only) is recorded in the
-2026-05-03 minimal-axioms note (file `MINIMAL_AXIOMS_2026-05-03.md`,
-landing under the axiom-reset PR series). That memo recategorizes the
-staggered-Dirac realization from "axiom A3" to "open gate". This note is
-the canonical parent identity for that recategorized gate.
+The framework's restored baseline is recorded in the 2026-05-03
+minimal-axioms note (file `MINIMAL_AXIOMS_2026-05-03.md`, landing
+under the axiom-reset PR series). That memo recategorizes the
+staggered-Dirac realization from an old axiom label to an `open_gate`.
+This note is the canonical parent identity for that recategorized gate.
 
 ## Statement
 
-> A1 (Cl(3) local algebra) + A2 (Z^3 spatial substrate) plus admissible
-> mathematical infrastructure forces (or sufficiently constrains) the
-> Grassmann staggered-Dirac realization, including the BZ corner doubler
-> structure that maps to three SM matter generations.
+> The one-qubit operator algebra baseline on the `Z^3` spatial substrate
+> plus admissible mathematical infrastructure forces (or sufficiently
+> constrains) the Grassmann staggered-Dirac realization, including the BZ
+> corner doubler structure that maps to three SM matter generations.
 
 The closure of this statement requires:
 
-1. forcing the Grassmann fermion realization on the A1+A2 surface
+1. forcing the Grassmann fermion realization on the one-qubit / `Z^3`
+   baseline
    (rather than admitting it as an independent axiom);
-2. forcing the staggered-Dirac kinetic structure on Z^3 from A1+A2 plus
-   admissible mathematical infrastructure;
+2. forcing the staggered-Dirac kinetic structure on `Z^3` from that
+   baseline plus admissible mathematical infrastructure;
 3. forcing the BZ-corner doubler structure (8 corners → `1 + 1 + 3 + 3`
    by Hamming weight) from the staggered structure;
 4. forcing the physical-species reading of the `hw=1` triplet as three
@@ -54,7 +66,7 @@ The closure of this statement requires:
 
 Pieces of (1)-(4) exist in the in-flight notes below. Closure of the gate
 requires either a single canonical proof packet that runs (1)-(4)
-end-to-end on A1+A2, or a coordinated chain of retained-grade theorems
+end-to-end on that baseline, or a coordinated chain of retained-grade theorems
 on the supporting notes that together discharge each step.
 
 ## Hypothesis set used
@@ -62,7 +74,7 @@ on the supporting notes that together discharge each step.
 This note's load-bearing content is identity assignment only. It uses
 no upstream load-bearing mathematical hypotheses. It only:
 
-- names the two framework axioms (A1, A2) the gate must close on;
+- names the framework baseline the gate must close on;
 - names the four substeps the closure must discharge;
 - enumerates the existing in-flight supporting notes by filename.
 
@@ -106,13 +118,108 @@ runners. This parent note has no runner of its own.
 
 ## Closure status
 
-**Open.** Pieces of an "A1+A2 forces the staggered-Dirac realization"
-chain exist across the in-flight supporting notes above. They have not
-been packaged as a single end-to-end canonical proof, and several
-substeps have explicit named obstructions still in flight. The
-canonical-parent packaging is the only function of this note;
-substantive closure of the gate is the in-flight work on the supporting
-notes.
+**Open at the source-side parent identity.** Pieces of a "one-qubit /
+`Z^3` baseline forces the staggered-Dirac realization" chain exist across the in-flight
+supporting notes above. The canonical-parent packaging is the only
+function of this note; substantive closure of the gate is the in-flight
+work on the supporting notes. The 2026-05-21 §2.1 recognition records
+the named bounded closure target for the audit lane.
+
+## 2.1 2026-05-21 gate-closure-synthesis recognition
+
+This section is the gate parent's recognition that the in-flight
+substep work has produced a single bounded source-side closure
+candidate for the kinetic-and-algebra surface, and an explicit
+named admitted-context residual for the species-label identification.
+It does **not** change the gate's source-side `open_gate` status —
+the audit-lane-only authority rule (`Status authority: independent
+audit lane only` per the synthesis note's header) keeps the gate
+`open_gate` until the audit lane ratifies the synthesis. This
+recognition records the named closure path for audit-lane review.
+
+Citation-graph convention reminder: per the §"Citation-graph note"
+rule below, this gate parent uses plain-text backtick references
+only (no markdown links) so the citation-graph builder does not
+parse the supporting-note filenames here as upstream dependency
+edges. The supporting notes are downstream consequences /
+supporting attempts at closing this gate; this gate's parent
+identity is upstream of them, not downstream.
+
+### 2.1.1 Named bounded closure target
+
+The named bounded closure candidate for substeps (1), (2), (3) of this
+gate is the source-note synthesis
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`,
+which packages the chain T2 (substep-1 Grassmann partition forcing
++ Jordan-Wigner cross-site CAR bridge) → T3 (substep-2 Kawamoto-Smit
+phase forcing + Kähler-Dirac equivalence) → T4 (substep-3 BZ-corner
+1+1+3+3 Hamming-orbit decomposition + species-reduction bridge) →
+T5 (substep-4 AC_λ simultaneous-diagonalization bridge supplying
+the three pairwise-orthogonal hw=1 states) into a single end-to-end
+bounded source. The synthesis was filed source-side as
+`claim_type: bounded_theorem` with `Status authority: independent
+audit lane only`. On the 2026-05-21 re-architecture review (synthesis
+note §0.1), the synthesis's claim-boundary was narrowed to a bounded
+candidate for the kinetic-and-algebra surface with `AC_φλ`
+(substep-4 species labeling) carried as an explicit admitted-context
+residual.
+
+The honest framing recorded by §2.1 of this gate parent is:
+
+- **substeps (1), (2), (3)**: bounded closure candidate from current
+  primitives + admissible standard math + the named upstream stack;
+  the synthesis is the single named source for independent audit of
+  that candidate.
+- **substep (4) species-label identification (`AC_φλ`)**: explicit
+  admitted-context residual presented as a source-side `no_go`
+  candidate within the minimal-axiom surface by the substep-4
+  labeling audit-companion
+  `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`;
+  closure requires one of three named external inputs on that candidate
+  analysis (labeling convention / `C_3`-breaking dynamics /
+  PDG-empirical).
+
+The closure path is therefore: (i) audit-lane review of the
+gate-closure synthesis on the corrected (bounded kinetic-and-algebra
++ `AC_φλ` admitted-context) scope; (ii) independent audit or repair of
+the substep-1/2 narrow-bridge `audited_conditional` / `unaudited` rows;
+(iii) `AC_φλ` remains admitted-context unless and until one of the
+three named external inputs lands as a separate retained primitive.
+
+### 2.1.2 Structural backing for `AC_φλ` as admitted-context (P1 analogy)
+
+`AC_φλ`'s admitted-context status is structurally analogous to how
+`P1` (scalar additivity on independent subsystems) is treated in
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` under the
+`OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`:
+
+- Both admit a finite, well-named symmetry-breaking input
+  (`AC_φλ`: `C_3`-orbit labeling on the hw=1 corner basis;
+  `P1`: scalar additivity on independent subsystems).
+- Both have a multi-route negative-result derivation portfolio
+  proposed as context for the admitted-context classification (P1:
+  multiple routes per the P1 campaign synthesis; `AC_φλ`: 2026-05-09 AC
+  narrowing + 2026-05-10 positive ratchet attempt + 2026-05-17
+  labeling no-go).
+- Both leave the parent note's source-side audit row at a
+  conditional / awaiting-audit tier with the admitted-context atom
+  explicitly named, rather than as a `missing_bridge_theorem`
+  flag.
+
+Treating `AC_φλ` as explicit admitted-context residual (with the
+substep-4 labeling no-go as audit-companion) is proposed as the same
+shape as the P1 admitted-context treatment. It is an explicit
+framework-scope admission candidate, not a hidden derivation gap.
+
+### 2.1.3 Source-side status of this gate parent
+
+The gate parent's source-side `open_gate` claim_type stays unchanged.
+The gate ratifies as `bounded` or `retained_bounded` only after the
+audit lane reviews the synthesis on the re-architected scope and
+either ratifies the bounded closure or names a specific corrective
+target. Per the standing audit-lane-only authority rule, this §2.1
+section makes no source-side promotion claim; it records the named
+closure path so the audit lane has a single citeable target.
 
 ## Honest scope
 
@@ -130,7 +237,8 @@ This parent note:
 When the in-flight chain closes, the parent identity here can become
 eligible for independent audit/governance retagging as a
 `positive_theorem`-typed theorem note (or be replaced by a single
-canonical proof packet that runs (1)-(4) end-to-end on A1+A2). Until
+canonical proof packet that runs (1)-(4) end-to-end on the one-qubit /
+`Z^3` baseline). Until
 then, this note remains `open_gate` in the audit ledger.
 
 ## Explicit named obstructions / repair targets remaining open
@@ -139,9 +247,10 @@ The substantive obstructions remain on the supporting notes; they are
 listed here for navigation, not as load-bearing claims of this parent
 note:
 
-- **Forcing the Grassmann partition from A1+A2.** The current package
+- **Forcing the Grassmann partition from the one-qubit / `Z^3`
+  baseline.** The current package
   uses the finite local Grassmann / staggered-Dirac partition as part
-  of its modeling-ingredient bundle. Whether A1+A2 plus admissible
+  of its modeling-ingredient bundle. Whether that baseline plus admissible
   mathematical infrastructure (spectral analysis, lattice partition
   evaluation, perturbative low-energy EFT running) **forces** the
   Grassmann reading vs. simply being **compatible** with it is the
@@ -149,7 +258,7 @@ note:
 - **Staggered taste structure.** The Kawamoto-Smit gamma realization
   on `C^8` is irreducible
   (`scripts/frontier_generation_rooting_undefined.py`). What the gate
-  needs is a forcing argument from A1+A2 to that specific
+  needs is a forcing argument from the baseline to that specific
   taste-realization, not just a no-rooting result on the irreducible
   realization once chosen.
 - **Substrate-fundamentality bridge.** The narrowed retained no-go in

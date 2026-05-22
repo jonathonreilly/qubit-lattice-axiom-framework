@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 14 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 94 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 4 |
+| `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -48,20 +48,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 609 |
 | `audited_conditional` | 94 |
-| `audited_decoration` | 27 |
+| `audited_decoration` | 28 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1547 |
+| `unaudited` | 1546 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1020 |
-| `decoration` | 28 |
+| `decoration` | 29 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 746 |
+| `positive_theorem` | 745 |
 
 | criticality | count |
 |---|---:|
@@ -843,6 +843,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
@@ -10407,6 +10408,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The K-tube formula implies Δ ln ρ_(p,q) = (2/π) · ln(c_R(6) / c_(0,0)(6)), so dividing by ln(c_R/c_(0,0)) rather than C_2(R) gives the constant 2/π.  _(class `A`)_
 - **chain closes:** True — The correction follows algebraically from the stated K-tube exponent shift once Δ ln ρ is defined relative to the exponent-12 baseline. The cited retained_bounded authority supplies the c_R(6) values used for the illustrative table, but the denominator conclusion does not require a new physics derivation.
 - **rationale:** The load-bearing step is an algebraic consequence of the K-tube formula quoted in the note: subtracting the exponent-12 baseline leaves exactly (2/π) ln(c_R/c_0). This is sufficient for the bounded claim that PR #525's C_2 denominator was not the denominator implied by that ansatz. The note explicitly does not claim to derive 2/π from a one-loop diagram or close the broader plaquette problem.
+- **auditor confidence:** high
+
+### `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`
+
+- **Note:** [`SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic K1-K3 quadratic Casimir centrality, Schur scalarity, and value 4/3 on the cited 3D symmetric SU(3) fundamental carrier V_3, with no physical SM color identification audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T170835Z-9c6b5a8a-su3_casimir_fundamental_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the cited normalization, Tr[C_2]=Σ_a Tr[T^aT^a]=8·(1/2)=4, while Schur scalarity gives Tr[C_2]=3 c_2(3), hence c_2(3)=4/3.  _(class `A`)_
+- **chain closes:** True — Within the restricted algebraic scope, the result follows from the cited retained-bounded authority supplying the SU(3) fundamental Gell-Mann action and normalization, plus standard Schur/trace/Casimir algebra. The open physical-color bridge in the cited authority is not consumed by this narrow claim.
+- **rationale:** The proof is a correct algebraic closure over the single upstream CL3 color automorphism authority and standard representation theory. The runner genuinely constructs the Gell-Mann matrices and verifies Hermiticity, trace normalization, closure, scalar Casimir, and the 4/3 value, but all checks are algebraic identity checks on already supplied inputs rather than a first-principles framework computation. There are no external comparator checks and no physical readout is imported. Under the decoration policy, a one-parent algebraic consequence with only class A checks is audited_decoration rather than audited_clean.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `su3_casimir_fundamental_theorem_note_2026-05-02`

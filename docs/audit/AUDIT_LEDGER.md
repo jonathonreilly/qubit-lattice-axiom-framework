@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1303 |
+| unaudited | 1302 |
 | meta | 224 |
-| ~~audited_numerical_match~~ | 9 |
+| ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 24 |
@@ -50,9 +50,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 101 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
-| `audited_numerical_match` | 9 |
+| `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1527 |
+| `unaudited` | 1526 |
 
 | claim_type | count |
 |---|---:|
@@ -944,6 +944,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
+| `lensing_finite_path_explanation_note` | open_gate | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -7011,6 +7012,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** At H=0.25 on b ∈ {3,4,5,6}, kubo_true follows a clean log-log power law with slope ≈ -1.43 and R² = 0.998, so the retained result is a non-standard power law rather than 1/b lensing.  _(class `A`)_
 - **chain closes:** True — The bounded arithmetic claim closes from the supplied per-b values and runner fit. This does not establish continuum stability, a generated-from-first-principles H=0.25 replay, other families, larger-b asymptotics, or standard 1/b lensing.
 - **rationale:** The runner parses/checks the cached H=0.25 values and performs the log-log slope/R² calculation; the reported slope, R², and non-1/b margin follow arithmetically from those fixed inputs. The runner is not a first-principles recomputation of the fine H=0.25 model values, but the note and selector firewall explicitly restrict the retained claim to the bounded cached slope-fit certificate. Residual risk is confined to any broader reading that treats four selected cached points as a continuum-stable physical law.
+- **auditor confidence:** high
+
+### `lensing_finite_path_explanation_note`
+
+- **Note:** [`LENSING_FINITE_PATH_EXPLANATION_NOTE.md`](../../docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the note's narrowed claim that the finite-path surrogate is only a heuristic/numerical match and does not close against the literal harness geometry.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T234637Z-f5f75b2f-lensing_finite_path_expl-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The centered L=10 surrogate matches the measured fine-lane slope, but the literal static-mass full-path reductions are much shallower, so the finite-path explanation is not a closed first-principles derivation.  _(class `G`)_
+- **chain closes:** False — The runner verifies the stated numerical comparisons for the T_phys=15 fine-lane subset, but the measured inputs are hard-coded and the second-T_phys falsification data is imported textually from an unprovided note. The missing step is an included derivation or retained runner for the actual detector-centroid observable and the Lane L++ short-path measurement.
+- **rationale:** The supplied runner genuinely computes the centered surrogate, literal full-path, regularized full-path, and shift-weighted slopes from formulas, but it hard-codes the measured kubo_true values and tests a chosen finite path scale/subset. That makes the load-bearing support a numerical-match comparison, not a first-principles derivation from the axiom. The note itself is appropriately open in framing, but its stated falsification at a second T_phys is not independently supported by the restricted packet.
+- **open / conditional deps cited:**
+  - `LENSING_LONG_PATH_TEST_NOTE.md`
 - **auditor confidence:** high
 
 ### `lensing_k_sweep_note`

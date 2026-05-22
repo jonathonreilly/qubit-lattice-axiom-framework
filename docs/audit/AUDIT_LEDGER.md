@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 118 |
-| **retained_no_go** | 146 |
+| **retained_no_go** | 147 |
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
 | unaudited | 1349 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 598 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 599 |
 | `audited_conditional` | 81 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 69 |
@@ -116,7 +115,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -274,6 +272,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `evolving_network_prototype_v5_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `evolving_network_prototype_v6_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `fifth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3700,6 +3699,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The adjoint-channel dimension fraction is dim(adj)/dim(N_c ⊗ N_c-bar) = (N_c^2 - 1)/N_c^2, giving exactly 8/9 at N_c = 3.  _(class `A`)_
 - **chain closes:** True — For the scoped ratio, the chain closes from the retained SU(3)/N_c = 3 inputs plus the inline Fierz completeness and representation-dimension count. The full package-level 9/8 EW correction would still require the separately admitted matching rule (M).
 - **rationale:** The load-bearing step is a genuine algebraic closure: SU(N_c) Fierz completeness and N_c ⊗ N_c-bar = 1 ⊕ adj imply the stated dimension fraction. The cited authorities are retained-grade for the needed SU(3)/N_c = 3 input, and the runner source actually constructs SU(N) generators, checks normalization/Fierz identities, verifies dimension counts, and checks citation hygiene. No external comparator, tuned input scale, or hard-coded disputed physical matching coefficient is used. The clean verdict is limited to the exact group-theory channel ratio, not to the physical EW projection rule (M).
+- **auditor confidence:** high
+
+### `ew_current_matching_rule_open_gate_note_2026-05-03`
+
+- **Note:** [`EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`](../../docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Scoped no-go that the supplied retained packet fixes F_adj=8/9 but does not determine the disconnected-current readout coefficient kappa_EW or the package-level 9/8 EW matching factor.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T154721Z-b00eddec-ew_current_matching_rule-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The independence witness constructs two admissible completions, kappa_EW=0 and kappa_EW=1, that share the same Fierz ratio, CMT scaling, and OZI boundedness but give different EW matching factors, 9/8 and 1.  _(class `A`)_
+- **chain closes:** True — The two-completion witness is an algebraic independence argument over the stated premises. A positive 9/8 theorem would need an additional lattice-current selector fixing kappa_EW=0, and that selector is explicitly absent from the restricted packet.
+- **rationale:** The cited Fierz authority is retained for the exact channel fraction and explicitly does not derive the matching rule; this no-go uses that omission as the residual under audit rather than importing it as a closed bridge. The runner source genuinely checks the rational parameterization, CMT cancellation, OZI boundedness class, and two-completion witness, plus downstream wording guards; it does not hard-code kappa_EW=0 as a premise. The no-go discipline gate passes on the restricted packet: attacks through Fierz arithmetic, CMT scaling, OZI suppression, convention/readout ratification, empirical agreement, and a future selector route all reduce to the same missing selector and do not close it.
 - **auditor confidence:** high
 
 ### `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`

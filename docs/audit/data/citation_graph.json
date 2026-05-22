@@ -77439,10 +77439,14 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
-      "helper_runner_paths": [],
-      "note_hash": "665b3ab62d4b4074601ea66953b8db52fdc462fd63431a30b88f1ce18b8caaae",
+      "helper_runner_paths": [
+        "scripts/wave_direct_dm_h025_control_batch.py",
+        "scripts/wave_direct_dm_matched_history_probe.py",
+        "scripts/wave_retardation_continuum_limit.py"
+      ],
+      "note_hash": "a99196e4af76bdd7aaaf362dfd983d32df0acaaa4dfa94e9d2633cfa12d1ce55",
       "path": "docs/WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md",
-      "runner_path": "scripts/wave_direct_dm_h025_control_batch.py",
+      "runner_path": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py",
       "title": "Wave Direct-dM H=0.25 Fam1 Seed1 Control Note"
     },
     "wave_direct_dm_h025_fam1_seed1_control_note_2026-05-17": {

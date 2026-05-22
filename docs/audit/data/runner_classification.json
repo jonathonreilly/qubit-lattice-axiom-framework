@@ -22990,7 +22990,7 @@
       },
       "decoration_candidate": false,
       "dominant_class": null,
-      "runner": "scripts/wave_direct_dm_h025_control_batch.py"
+      "runner": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py"
     },
     "wave_direct_dm_h025_fam1_seed1_control_note_2026-05-17": {
       "assert_count": 0,
@@ -53379,11 +53379,25 @@
       "assert_count": 0,
       "claims": [
         "wave_direct_dm_h025_fam1_seed0_control_note",
-        "wave_direct_dm_h025_fam1_seed1_control_note",
         "wave_direct_dm_h025_fam2_seed0_control_note",
         "wave_direct_dm_h025_fam2_seed1_control_note",
         "wave_direct_dm_h025_fam3_seed0_control_note",
         "wave_direct_dm_h025_fam3_seed1_control_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true
+    },
+    "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py": {
+      "assert_count": 0,
+      "claims": [
+        "wave_direct_dm_h025_fam1_seed1_control_note"
       ],
       "counts": {
         "A": 0,
@@ -53755,9 +53769,9 @@
       "B": 264,
       "C": 733,
       "D": 296,
-      "none": 432
+      "none": 433
     },
-    "runners_classified": 1926,
+    "runners_classified": 1927,
     "runners_with_C": 950,
     "runners_with_D": 548
   }

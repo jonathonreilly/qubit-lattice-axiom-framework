@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 365 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1319 |
+| unaudited | 1320 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 94 |
-| ~~audited_failed~~ | 25 |
+| ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -49,10 +49,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 612 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 28 |
-| `audited_failed` | 69 |
+| `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1543 |
+| `unaudited` | 1544 |
 
 | claim_type | count |
 |---|---:|
@@ -75,7 +75,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1926
+- runners classified: 1927
 - runners with (C) first-principles compute hits: 950
 - runners with (D) external comparator hits: 548
 - decoration candidates (no C, no D): 307
@@ -918,7 +918,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
-| `wave_direct_dm_h025_fam1_seed1_control_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -11670,19 +11669,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Holding seed=0, strength=0.004, H=0.5/0.35, and the matched direct-dM schedule fixed, all Fam1/Fam2/Fam3 rows keep the same negative R_hist sign and material magnitude.  _(class `C`)_
 - **chain closes:** True — The exact scoped runner invocation constructs the three retained families, two H values, and matched early/late schedules, then reproduces the six quoted R_hist and delta_hist rows. The chain closes only for the explicitly one-seed, one-strength scout boundary.
 - **rationale:** The exact all-family scout command reproduces the frozen result table: every family/H row has negative R_hist and a material magnitude in the stated -37.73% to -44.29% band. The note explicitly rejects portability, multi-seed, full control-stack, and continuum-stability interpretations, so the retained claim is only the bounded scout table. Residual risk is limited to future runner drift or downstream citations treating this scout as the full portability batch.
-- **auditor confidence:** high
-
-### `wave_direct_dm_h025_fam1_seed1_control_note`
-
-- **Note:** [`WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Audited only the claimed Fam1 seed 1 H=0.25 control ladder with S=0 and S=0.002, 0.004, 0.008 against the provided runner packet.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-182507-41cdea85-wave_direct_dm_h025_fam1-003`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Fam1, seed 1, H = 0.25 is now a controlled fine-H replay with exact null, stable sign, and approximately linear weak-field scaling at R_hist ~ -30%.  _(class `C`)_
-- **chain closes:** False — The provided completed runner output is for family=Fam2, not the claimed Fam1 pair, and its numerical results do not match the note table. The missing step is a completed, source-verifiable Fam1 seed 1 H=0.25 run producing the stated control-ladder values.
-- **rationale:** The note's load-bearing claim is a first-principles numerical control ladder, but the supplied runner cache does not audit that claim: it ran Fam2 seed 1 by default while the note claims Fam1 seed 1. The stdout values also disagree with the note's Fam1 table, so this is a completed runner mismatch rather than mere missing compute. Because the claim is family-specific, the supplied artifact chain does not close on its own terms.
 - **auditor confidence:** high
 
 ### `wave_equation_gravity_note`

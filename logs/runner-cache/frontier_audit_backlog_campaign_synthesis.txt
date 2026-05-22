@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_audit_backlog_campaign_synthesis.py
-runner_sha256: 047e3f3ea029e4fe3063dfe7c07812479c515c30bc529cf0d6b46f3322729b25
+runner_sha256: fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

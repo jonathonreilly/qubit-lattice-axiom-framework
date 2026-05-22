@@ -230746,24 +230746,45 @@
       "verdict_rationale": null
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T22:22:35.068162+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 9.0,
+        "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222148Z-1f21ca5d-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade inputs supply the Cl(3) dim-2 readout and Grassmann nilpotency/determinant identity, and the allowed qubit hardening context supplies the k=1 per-site H_x = C^2 reading that removes the prior U4 multiplicity blocker for this bounded bridge. The result still does not classify noncanonical alternatives or close later staggered-Dirac realization substeps, but those are outside the audited scope.",
       "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
+      "claim_scope": "Bounded algebraic G-vs-B bridge: under the explicit one-pair-per-site candidate framing, retained Cl(3) dim-2 and retained Berezin calculus make Grassmann dimension/determinant compatible and canonical bosonic Fock dimension incompatible.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T22:22:35.068162+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -230772,19 +230793,19 @@
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 9.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given dim_C V = 2, candidate B has per-site dimension infinity while candidate G has per-site dimension 2, so within the explicit two-candidate G-vs-B framing B is ruled out and G is the only dimension-compatible option.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "74065ccbd993058da9e7b595a4e7346d3187ec618300309a57fb926e87d86504",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the applied scope remains the explicit G-vs-B candidate comparison, not a global classification of all possible matter-generator algebras.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -230952,18 +230973,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 24,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 24
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
       "transitive_descendants": 15,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs: compare 2, infinity, and the retained dim_C V = 2, then use the retained Berezin determinant identity for the Grassmann readout. The runner source performs exact symbolic and finite combinatorial checks rather than merely printing constants, and all 24 checks are class A. Under the targeted qubit-per-site context, the previous physical per-site k-selection admission is supplied by the ratified A1/R1 reading, so no further blocker remains for this bounded G-vs-B substep-1 bridge."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

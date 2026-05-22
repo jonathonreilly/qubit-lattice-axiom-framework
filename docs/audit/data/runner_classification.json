@@ -16044,6 +16044,18 @@
       "dominant_class": null,
       "runner": "scripts/audit_companion_observable_principle_scale_invariant_source_response_exact_2026_05_16.py"
     },
+    "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21": {
+      "assert_count": 2,
+      "counts": {
+        "A": 16,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_source_coupled_local_action_admission.py"
+    },
     "oh_schur_boundary_action_note": {
       "assert_count": 1,
       "counts": {
@@ -42222,6 +42234,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_observable_principle_source_coupled_local_action_admission.py": {
+      "assert_count": 2,
+      "claims": [
+        "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21"
+      ],
+      "counts": {
+        "A": 16,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_oh_schur_boundary_action.py": {
       "assert_count": 1,
       "claims": [
@@ -53722,15 +53749,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 306,
+    "decoration_candidates": 307,
     "dominant_class_distribution": {
-      "A": 200,
+      "A": 201,
       "B": 264,
       "C": 733,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1925,
+    "runners_classified": 1926,
     "runners_with_C": 950,
     "runners_with_D": 548
   }

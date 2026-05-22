@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 370 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 3 |
+| `decoration_under_cl3_color_automorphism_theorem` | 4 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -48,16 +48,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 623 |
 | `audited_conditional` | 97 |
-| `audited_decoration` | 27 |
+| `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1535 |
+| `unaudited` | 1534 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1027 |
-| `decoration` | 28 |
+| `bounded_theorem` | 1026 |
+| `decoration` | 29 |
 | `meta` | 227 |
 | `no_go` | 238 |
 | `open_gate` | 113 |
@@ -859,6 +859,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
+| `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | judicial_review | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -10600,6 +10601,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Apply the Peskin-Schroeder formula with C_2(adj SU(2)) = N_pair, T(F) = 1/2, N_W = (N_color + 1) * N_gen, and n_S^complex_components = 2 to obtain b_2 = (11/3)N_pair - (1/3)(N_color + 1)N_gen - 1/6, then substitute (2,3,3).  _(class `A`)_
 - **chain closes:** False — The main P1-P3 substitution closes, as do C1, C3, and C4. C2 does not follow as written: b_2/(-1/6) equals -22*N_pair + 2*(N_color + 1)*N_gen + 1, not N_color*(N_color + 1) - 11*N_pair.
 - **rationale:** The runner performs real exact Sympy/Rational checks for P1-P3 plus C1, C3, and C4. However, the source note explicitly claims C2 and says validation covers C1-C4, while the runner source never checks C2. Independently, the stated ratio b_2 : (-1/6) is not N_color*(N_color + 1) - 11*N_pair under P1; at framework counts it is -19, not -10. Therefore the full scoped claim does not close on its own terms.
+- **auditor confidence:** high
+
+### `su3_adjoint_casimir_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Pure algebraic verification that the SU(3) adjoint quadratic Casimir in Gell-Mann normalization is C_2(adj)=3, with the ratio to the fundamental equal to 9/4; no physical-gluon or QCD readout was audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T233311Z-f45f0d7b-su3_adjoint_casimir_theo-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The trace-normalization identity Σ_{c,d} f^{acd} f^{bcd} = N δ^{ab}, followed by Tr[C_2(adj)] = 8N and Schur's lemma, gives C_2(adj)=N=3.  _(class `A`)_
+- **chain closes:** True — Within the restricted algebraic scope, the conclusion follows from the retained SU(3) Gell-Mann normalization plus standard adjoint-representation algebra, Jacobi identity, Schur's lemma, and trace identities. The open physical-color bridge in the cited authority is not load-bearing for this bounded algebraic Casimir statement.
+- **rationale:** The runner genuinely computes the Gell-Mann matrices, structure constants, adjoint generators, closure, trace normalization, and Casimir value, but all checks are algebraic identities over the single cited SU(3) parent plus standard mathematics. There are no external comparator checks and no first-principles framework computation producing a new physical number. Under the decoration policy and tie-break rule, this is an algebraic decoration of the upstream retained SU(3) structure rather than a new independent bounded theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

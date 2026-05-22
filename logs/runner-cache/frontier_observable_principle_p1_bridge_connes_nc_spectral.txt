@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_connes_nc_spectral.py
+runner_sha256: 980fb2f370266c2b81d0046cf920b2861397f7c0f264f339d7724941bc864c93
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+
+==============================================================================
+T1: Spectrum-of-direct-sum identity (S.1): spec(D_A (+) D_B) = spec(D_A) union spec(D_B) counted with multiplicity
+==============================================================================
+  [PASS] spec(D_A (+) D_B) = spec(D_A) union spec(D_B) (multiplicity)
+         Spectra match exactly as multisets
+
+==============================================================================
+T2: Heat-kernel additivity (S.2): Tr e^{-t(D_A (+) D_B)^2} = Tr e^{-tD_A^2} + Tr e^{-tD_B^2} on small symbolic examples
+==============================================================================
+  [PASS] Tr e^{-t(D_A (+) D_B)^2} = Tr e^{-tD_A^2} + Tr e^{-tD_B^2}
+         Difference simplifies to 0
+
+==============================================================================
+T3: Spectral-zeta additivity (S.3): zeta_{D_A (+) D_B}(s) = zeta_{D_A}(s) + zeta_{D_B}(s) numerically at sample s values
+==============================================================================
+  [PASS] zeta_{D_A (+) D_B}(s) = zeta_{D_A}(s) + zeta_{D_B}(s) at sample s
+         All 5 sample s values agree exactly
+
+==============================================================================
+T4: Universal Mellin-transform identity (NC.a): -zeta'_D(0) = 2*log|det D| (convention sum_lambda |lambda|^{-2s})
+==============================================================================
+  [PASS] -zeta'_D(0) = 2 log|det D| on finite-dim diagonal D (standard convention)
+         All 3 examples agree exactly
+  [PASS] Alternative convention |D|^{-s}: -zeta'_D(0) = log|det D| exactly
+         All 3 examples agree exactly in |D|^{-s} convention
+
+==============================================================================
+T5: Direct spectral-additivity P1 derivation (§3.1): W[J_A (+) J_B] = W[J_A] + W[J_B] for W = log|det(D+J)|
+==============================================================================
+  [PASS] W[J_A (+) J_B] = W[J_A] + W[J_B] for W = log|det(D+J)| on block-diag D
+         Difference at sample point = 0
+
+==============================================================================
+T6: F_p comparison: F_p[D_A (+) D_B] = F_p[D_A] * F_p[D_B] (multiplicative) but NOT F_p[D_A] + F_p[D_B] (not additive) for p != 0
+==============================================================================
+  [PASS] F_p[D_A (+) D_B] = F_p[D_A] * F_p[D_B] (multiplicative) for p != 0
+         Multiplicative form verified for all p in ['1/2', '2', '3', '-1']
+  [PASS] F_p[D_A (+) D_B] != F_p[D_A] + F_p[D_B] (non-additive) for p != 0
+         Non-additive for all p as expected: ['1/2:nonzero', '2:nonzero', '3:nonzero', '-1:nonzero']
+
+==============================================================================
+T7: P1 ⇒ (NC.b) Cauchy classifier direction: additive continuous W(r_A * r_B) = W(r_A) + W(r_B) with W(1)=0 is c*log(r) on rational grid
+==============================================================================
+  [PASS] Cauchy classifier: W(r) = c*log(r) satisfies additivity + W(1)=0
+         All 5 test points consistent with c*log(r) Cauchy form
+  [PASS] F_p (r^p, p != 0) is NOT additive on multiplicative substrate
+         F_p fails additivity on all tested p, (r_A, r_B) pairs
+
+==============================================================================
+T8: live ledger presence checks for context rows
+==============================================================================
+  [PASS] target/context rows are present without status-gating the claim
+         Target/context rows are present; no dependency status is consumed
+
+==============================================================================
+T9: note string contains honest-scope admission strings
+==============================================================================
+  [PASS] required honest-scope strings present in note
+         All required strings present
+  [PASS] forbidden status-promotion strings absent from note
+         No forbidden strings found
+
+==============================================================================
+T10: source-note boundary declarations present
+==============================================================================
+  [PASS] source-note boundary declarations present
+         All boundary declarations present
+
+==============================================================================
+PASS=14 FAIL=0
+==============================================================================
+
+----- stderr -----
+

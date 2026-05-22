@@ -10964,24 +10964,45 @@
       "verdict_rationale": null
     },
     "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T16:11:41.157157+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 20.053,
+        "runner_hash": "ba487551ea437eeac420d0aaf3373dc501c4edfca1a4499cf30cf3b44e57ad55",
+        "transitive_descendants": 1061
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T161112Z-3dbea034-axiom_first_cl3_per_site-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The in-scope U1-U3 claim follows from retained upstream narrow theorems establishing the Cl(3) complexification split and Pauli irrep uniqueness, plus standard finite-dimensional semisimple algebra representation theory. The former U4 physical per-site Hilbert-space bridge is explicitly out of scope.",
       "claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-      "claim_scope": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) complex representation classification into two 2-dimensional chiral irreps and direct-sum decomposition; U4 physical Hilbert-space bridge excluded.",
+      "claim_scope": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T16:10:49.672119+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-22T16:11:41.157157+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -10996,8 +11017,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-22T16:11:41.157157+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T161112Z-3dbea034-axiom_first_cl3_per_site-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -11005,19 +11037,19 @@
         "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 20,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 20.053,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The complexification splits as Cl(3,0) \u2297_R C \u2245 M_2(C) \u2295 M_2(C), with the two summands distinguished by \u03c9 \u2192 \u00b1i, so each summand has the unique 2-dimensional M_2(C) irreducible module and finite-dimensional representations decompose into copies of the two chiral irreps.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "49ffa714c8d8ecc8575864ccba7b8a755ccabe24d7aa221c2c4c58bfbde256a0",
       "note_path": "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the wording around 'faithful irreducible complex representation of Cl(3)' versus factoring through one complexified chirality summand, but within the packet this is handled consistently as a real Cl(3,0) representation with faithful real image.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -11515,18 +11547,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/axiom_first_cl3_per_site_uniqueness_check.py",
       "title": "Axiom-First Per-Site Uniqueness of the Cl(3) Spinor Module",
       "transitive_descendants": 1061,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic Clifford-algebra classification and representation-theory decomposition, not a numerical fit, definition, or external comparator. Both cited one-hop authorities are retained-grade and directly cover the split, chirality labels, two-dimensional irreps, and uniqueness within chirality. The runner source performs concrete Pauli-matrix and chirality checks, with one weak random-search exhibit for 3D nonexistence, but the proof of odd-dimensional exclusion is supplied by the retained algebraic decomposition rather than by that search."
     },
     "axiom_first_cluster_decomposition_theorem_note_2026-04-29": {
       "audit_date": null,

@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1022,
-    "decoration": 34,
+    "bounded_theorem": 1024,
+    "decoration": 31,
     "meta": 228,
     "no_go": 237,
     "open_gate": 113,
-    "positive_theorem": 736
+    "positive_theorem": 737
   },
   "cycle_examples": [
     [
@@ -40,7 +40,7 @@
   ],
   "cycles_detected": 292,
   "effective_status_counts": {
-    "audited_conditional": 89,
+    "audited_conditional": 86,
     "audited_failed": 25,
     "audited_numerical_match": 9,
     "audited_renaming": 15,
@@ -49,24 +49,22 @@
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
-    "decoration_under_graph_first_su3_integration_note": 3,
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 1,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
-    "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_moving_source_retarded_portability_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 224,
+    "meta": 225,
     "open_gate": 15,
-    "retained": 115,
-    "retained_bounded": 376,
+    "retained": 116,
+    "retained_bounded": 371,
     "retained_no_go": 148,
     "retained_pending_chain": 12,
-    "unaudited": 1313
+    "unaudited": 1323
   },
   "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [

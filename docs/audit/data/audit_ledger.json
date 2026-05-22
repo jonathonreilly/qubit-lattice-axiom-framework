@@ -163448,44 +163448,61 @@
       "verdict_rationale": "The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration."
     },
     "multisite_pauli_group_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T16:48:07.602724+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 11.042,
+        "runner_hash": "bcecab4e6b98faff1c01cc53359ca88c66c43bb6936343786277f57ba0cc123d",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T164301Z-c1bad9c0-multisite_pauli_group_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the admitted tensor-product Hilbert space and Pauli multiplication relations, disjoint-site generators commute and each site contributes four cosets modulo the single global Z_4 phase. The order, center, quotient, and central-extension statements then follow by finite group algebra from the retained_bounded Cl(3)/Pauli local representation input.",
       "claim_id": "multisite_pauli_group_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Algebraic N-qubit Pauli group on the admitted tensor product H = (C^2)^{\u2297N}: order 4^{N+1}, scalar center Z_4, quotient (Z_2 \u00d7 Z_2)^N, and the associated central extension.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T16:48:07.602724+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
       "deps": [
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
       "load_bearing_score": 11.042,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Total order = (Z_4 phases) \u00d7 (4 cosets per site)^N = 4 \u00b7 4^N = 4^{N+1}.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "98531fac922f46470e9b33289a4eb77d0702590e88398791a59ce42868428bee",
       "note_path": "docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check the non-load-bearing M6 minimal-generator wording if promoted as a separate claim; the scoped order/center/quotient result does not depend on it.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -163596,18 +163613,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/multisite_pauli_group_check.py",
       "title": "Multi-Site Pauli Group P_N Has Order 4^{N+1} on N-Site Cl(3) Fock Space",
       "transitive_descendants": 1053,
-      "verdict_rationale": null
+      "verdict_rationale": "The proof is an exact algebraic tensor-product extension of the upstream Pauli/Cl(3) local representation result, with no external comparator and no new physical readout. The runner genuinely enumerates finite Pauli groups for N = 1, 2, 3 and checks the center for N = 2, but the all-N claim is carried by the algebraic counting argument, not by an independent first-principles computation. Under the rubric, this is retained as decoration rather than an independent positive theorem because it reduces to one retained_bounded parent plus standard mathematics."
     },
     "n_eff_from_three_generations_theorem_note_2026-04-24": {
       "audit_date": null,

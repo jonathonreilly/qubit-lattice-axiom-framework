@@ -23,12 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1332 |
+| unaudited | 1331 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 25 |
+| `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 3 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -48,20 +49,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 1 |
 | `audited_clean` | 606 |
 | `audited_conditional` | 89 |
-| `audited_decoration` | 25 |
+| `audited_decoration` | 26 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1556 |
+| `unaudited` | 1555 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1020 |
-| `decoration` | 26 |
+| `decoration` | 27 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 748 |
+| `positive_theorem` | 747 |
 
 | criticality | count |
 |---|---:|
@@ -831,6 +832,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `multisite_pauli_group_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | cross_family | codex-gpt-5.5 | A | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
@@ -7280,6 +7282,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The centered quadrupole keeps the centroid essentially pinned but opens a real width/tidal channel, and the width response grows with quadrupole separation.  _(class `C`)_
 - **chain closes:** True — The live probe reproduces the frozen controls and finite quadrupole rows: same-site and neutral controls are zero, the dipole mainly shifts centroid, and the centered quadrupoles give near-zero centroid change with positive width response at a = 1.0 and a = 2.0. The source explicitly excludes full tensor gravity and a general multipole theory.
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
+- **auditor confidence:** high
+
+### `multisite_pauli_group_theorem_note_2026-05-02`
+
+- **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic N-qubit Pauli group on the admitted tensor product H = (C^2)^{⊗N}: order 4^{N+1}, scalar center Z_4, quotient (Z_2 × Z_2)^N, and the associated central extension.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T164301Z-c1bad9c0-multisite_pauli_group_th-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Total order = (Z_4 phases) × (4 cosets per site)^N = 4 · 4^N = 4^{N+1}.  _(class `A`)_
+- **chain closes:** True — Given the admitted tensor-product Hilbert space and Pauli multiplication relations, disjoint-site generators commute and each site contributes four cosets modulo the single global Z_4 phase. The order, center, quotient, and central-extension statements then follow by finite group algebra from the retained_bounded Cl(3)/Pauli local representation input.
+- **rationale:** The proof is an exact algebraic tensor-product extension of the upstream Pauli/Cl(3) local representation result, with no external comparator and no new physical readout. The runner genuinely enumerates finite Pauli groups for N = 1, 2, 3 and checks the center for N = 2, but the all-N claim is carried by the algebraic counting argument, not by an independent first-principles computation. Under the rubric, this is retained as decoration rather than an independent positive theorem because it reduces to one retained_bounded parent plus standard mathematics.
+- **decoration parent:** `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

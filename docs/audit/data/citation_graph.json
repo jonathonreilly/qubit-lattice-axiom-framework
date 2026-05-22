@@ -17069,10 +17069,6 @@
       "to": "mesoscopic_surrogate_multistage_note"
     },
     {
-      "from": "localized_source_response_sweep_note",
-      "to": "mesoscopic_surrogate_h025_constrained_localization_note"
-    },
-    {
       "from": "lorentz_boost_covariance_2d_theorem_note",
       "to": "emergent_lorentz_invariance_note"
     },
@@ -17218,19 +17214,11 @@
     },
     {
       "from": "mesoscopic_surrogate_annular_tapered_sweep_note",
-      "to": "mesoscopic_surrogate_localization_sweep_note"
-    },
-    {
-      "from": "mesoscopic_surrogate_annular_tapered_sweep_note",
       "to": "mesoscopic_surrogate_localization_frontier_note"
     },
     {
       "from": "mesoscopic_surrogate_annular_tapered_sweep_note",
       "to": "mesoscopic_surrogate_threshold_2d_note"
-    },
-    {
-      "from": "mesoscopic_surrogate_annular_tapered_sweep_note",
-      "to": "persistent_inertial_response_readiness_note"
     },
     {
       "from": "mesoscopic_surrogate_backreaction_note",
@@ -17258,10 +17246,6 @@
     },
     {
       "from": "mesoscopic_surrogate_compact_floor_sweep_note",
-      "to": "mesoscopic_surrogate_localization_sweep_note"
-    },
-    {
-      "from": "mesoscopic_surrogate_compact_floor_sweep_note",
       "to": "mesoscopic_surrogate_multistage_note"
     },
     {
@@ -17283,10 +17267,6 @@
     {
       "from": "mesoscopic_surrogate_h025_constrained_localization_note",
       "to": "mesoscopic_surrogate_multistage_note"
-    },
-    {
-      "from": "mesoscopic_surrogate_h025_constrained_localization_note",
-      "to": "mesoscopic_surrogate_annular_tapered_sweep_note"
     },
     {
       "from": "mesoscopic_surrogate_localization_frontier_note",
@@ -17303,10 +17283,6 @@
     {
       "from": "mesoscopic_surrogate_localization_frontier_note",
       "to": "mesoscopic_surrogate_two_stage_2d_note"
-    },
-    {
-      "from": "mesoscopic_surrogate_localization_sweep_note",
-      "to": "quasi_persistent_relaunch_probe_note"
     },
     {
       "from": "mesoscopic_surrogate_multistage_note",
@@ -19602,10 +19578,6 @@
     },
     {
       "from": "ordered_lattice_packet_reidentification_note",
-      "to": "persistent_inertial_response_readiness_note"
-    },
-    {
-      "from": "ordered_lattice_packet_reidentification_note",
       "to": "ordered_lattice_quasi_persistent_relaunch_note"
     },
     {
@@ -19671,38 +19643,6 @@
     {
       "from": "periodic_2d_wraparound_fix_note_2026-04-11",
       "to": "bmv_threebody_note_2026-04-11"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "mesoscopic_surrogate_compact_floor_sweep_note"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "localized_source_response_sweep_note"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "broad_surrogate_point_source_compare_note"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "mesoscopic_surrogate_annular_tapered_sweep_note"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "mesoscopic_surrogate_h025_constrained_localization_note"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "mesoscopic_surrogate_backreaction_note"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "mesoscopic_surrogate_multistage_note"
-    },
-    {
-      "from": "persistent_inertial_response_readiness_note",
-      "to": "mesoscopic_surrogate_threshold_2d_note"
     },
     {
       "from": "persistent_object_exact_lattice_park_note_2026-04-16",
@@ -22075,10 +22015,6 @@
     {
       "from": "quark_up_amplitude_two_step_native_scan_note_2026-04-19",
       "to": "quark_up_amplitude_native_expression_scan_note_2026-04-19"
-    },
-    {
-      "from": "quasi_persistent_relaunch_probe_note",
-      "to": "ordered_lattice_packet_reidentification_note"
     },
     {
       "from": "quasi_persistent_relaunch_probe_note",
@@ -61310,8 +61246,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "mesoscopic_surrogate_backreaction_note",
-        "mesoscopic_surrogate_multistage_note",
-        "mesoscopic_surrogate_h025_constrained_localization_note"
+        "mesoscopic_surrogate_multistage_note"
       ],
       "helper_runner_paths": [
         "scripts/mesoscopic_surrogate_annular_tapered_sweep.py",
@@ -61319,7 +61254,7 @@
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "7d485b38e63309d1734b7d6923e590197beef088087252b93d8f4805ec9073bb",
+      "note_hash": "f45264bfda3f0f0bf088595baff4bb047db4468719ab0592041524988401c43b",
       "path": "docs/LOCALIZED_SOURCE_RESPONSE_SWEEP_NOTE.md",
       "runner_path": "scripts/localized_source_response_sweep.py",
       "title": "Localized Source-Response Sweep Note"
@@ -61622,17 +61557,15 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "mesoscopic_surrogate_localization_sweep_note",
         "mesoscopic_surrogate_localization_frontier_note",
-        "mesoscopic_surrogate_threshold_2d_note",
-        "persistent_inertial_response_readiness_note"
+        "mesoscopic_surrogate_threshold_2d_note"
       ],
       "helper_runner_paths": [
         "scripts/mesoscopic_surrogate_localization_family_sweep.py",
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "cefb8e41969e43569a2a50a79b741bd736f0431ac83140d235d53f14df586ad3",
+      "note_hash": "26dbc2f9de127874cab584970aa55de41cdb76083a94a330f627069b320d104f",
       "path": "docs/MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_annular_tapered_sweep.py",
       "title": "Mesoscopic Surrogate Annular / Tapered Sweep Note"
@@ -61665,7 +61598,6 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "mesoscopic_surrogate_localization_sweep_note",
         "mesoscopic_surrogate_multistage_note",
         "mesoscopic_surrogate_backreaction_note",
         "broad_surrogate_point_source_compare_note"
@@ -61675,7 +61607,7 @@
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "e673c4b606ac53736b67796cb4fa1764d3f3ecc5d419ced2991f8baf50ea3a9b",
+      "note_hash": "c06504ea734f4e4844d137bf13abaf8b63c67ea4bb1ccb76756c8e146ae1ee55",
       "path": "docs/MESOSCOPIC_SURROGATE_COMPACT_FLOOR_SWEEP_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_compact_floor_sweep.py",
       "title": "Mesoscopic Surrogate Compact Floor Sweep Note"
@@ -61700,15 +61632,14 @@
       "deps": [
         "mesoscopic_surrogate_backreaction_note",
         "broad_surrogate_point_source_compare_note",
-        "mesoscopic_surrogate_multistage_note",
-        "mesoscopic_surrogate_annular_tapered_sweep_note"
+        "mesoscopic_surrogate_multistage_note"
       ],
       "helper_runner_paths": [
         "scripts/mesoscopic_surrogate_localization_family_sweep.py",
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "111ef62209cc78c2439645a54331947fbe9249f069508062c9ceddbd97c1cc40",
+      "note_hash": "74ea352627403a8863ff663266437b8237a63ebd8b12a8d36a5c432a4fe235a5",
       "path": "docs/MESOSCOPIC_SURROGATE_H025_CONSTRAINED_LOCALIZATION_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_h025_constrained_localization.py",
       "title": "Mesoscopic Surrogate h=0.25 Constrained Localization Note"
@@ -61738,14 +61669,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "quasi_persistent_relaunch_probe_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [
         "scripts/quasi_persistent_relaunch_probe.py",
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "36f05d27b7ba92f44c064fdf98478197ede50c5047138856d553f928198f94fa",
+      "note_hash": "1fb1770440de2d710622c95a21a63272d32d8ed79c425c17dbf7e27c58aa7a27",
       "path": "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md",
       "runner_path": "scripts/mesoscopic_surrogate_localization_family_sweep.py",
       "title": "Mesoscopic Surrogate Localization Sweep"
@@ -64703,14 +64632,13 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "persistent_inertial_response_readiness_note",
         "ordered_lattice_quasi_persistent_relaunch_note",
         "ordered_lattice_quasi_persistent_relaunch_2d_note"
       ],
       "helper_runner_paths": [
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "0667a45d70cbcc83da96fa6c94ee1d05368c515b5e142a9dced3abbc5bf8bd66",
+      "note_hash": "9f6501a91cac7bb610a728fe7ce392c62ddc0d5d96e7f88231a1ab76ec3941be",
       "path": "docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md",
       "runner_path": "scripts/ordered_lattice_packet_reidentification.py",
       "title": "Ordered-Lattice Packet Re-Identification Note"
@@ -64935,18 +64863,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "mesoscopic_surrogate_compact_floor_sweep_note",
-        "localized_source_response_sweep_note",
-        "broad_surrogate_point_source_compare_note",
-        "mesoscopic_surrogate_annular_tapered_sweep_note",
-        "mesoscopic_surrogate_h025_constrained_localization_note",
-        "mesoscopic_surrogate_backreaction_note",
-        "mesoscopic_surrogate_multistage_note",
-        "mesoscopic_surrogate_threshold_2d_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5763c7acce43611f6bd49a9ce583fb8b5378feb5755c1d38b919cd5607778752",
+      "note_hash": "53ab126619592e92d09713df02fb03361a5522873c85a5f7796d59094e8d00ba",
       "path": "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
       "runner_path": null,
       "title": "Persistent Inertial-Response Readiness Note"
@@ -70699,14 +70618,13 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "ordered_lattice_packet_reidentification_note",
         "ordered_lattice_quasi_persistent_relaunch_note",
         "ordered_lattice_quasi_persistent_relaunch_2d_note"
       ],
       "helper_runner_paths": [
         "scripts/two_body_momentum_harness.py"
       ],
-      "note_hash": "bed2d71399c212e8f1e25f8c64d34214ca40bc88447429d1886a0aa91b6df913",
+      "note_hash": "2bf3709bf0d80b1efc2ea6f6e0350fec036d6447a3fffff56eb56bb265cc2fce",
       "path": "docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md",
       "runner_path": "scripts/quasi_persistent_relaunch_probe.py",
       "title": "Quasi-Persistent Relaunch Probe Note"
@@ -70878,7 +70796,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81353,6 +81271,7 @@
     "memory_decay_diagnosis_2026-04-11",
     "memory_mu2_geometry_sweep_note_2026-04-11",
     "mesoscopic_surrogate_compact_floor_sweep_note_2026-05-17",
+    "mesoscopic_surrogate_localization_sweep_note",
     "mesoscopic_surrogate_threshold_2d_note",
     "minimal_axioms_2026-04-11",
     "mirror_2d_operator_cauchy_note_2026-05-10",
@@ -81405,6 +81324,7 @@
     "packet_memory_note",
     "paper_outline_2026-04-12",
     "persistent_inertial_object_probe_note",
+    "persistent_inertial_response_readiness_note",
     "persistent_object_adaptive_readout_note",
     "persistent_object_adaptive_readout_v2_note",
     "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
@@ -81703,10 +81623,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
-    "leaf_count": 740,
+    "edge_count": 9727,
+    "leaf_count": 744,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 810,
     "runners_with_path": 2048
   }
 }

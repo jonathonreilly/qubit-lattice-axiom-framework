@@ -80,7 +80,7 @@ object.
 ## Relation to the readiness note
 
 This note is the natural follow-on to
-[PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md](/Users/jonreilly/Projects/Physics/docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md):
+`PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md` (upstream readiness index; backticked to break cycle-0004 in the citation graph):
 
 - readiness note: why the codebase was not yet ready
 - this note: the smallest actual control to check whether re-identification is

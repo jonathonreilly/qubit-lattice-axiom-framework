@@ -89401,42 +89401,61 @@
       "verdict_rationale": null
     },
     "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T15:58:40.140288+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 14.182,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 1161
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T155643Z-6e805e4f-g_bare_rescaling_freedom-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic scaling follows directly from the retained-bounded canonical Gram relation and the stated Wilson matching relation. The audited scope does not derive the canonical normalization itself, the Wilson action form, or the physical-color bridge.",
       "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Under the canonical Cl(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the stated Wilson plaquette matching beta=2N_c/g_bare^2, a scalar dilation of the generator/connection normalization leaves the canonical surface and scales the Wilson coefficient beta by c^2 rather than supplying an independent g_bare convention.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T15:58:40.140288+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_cl3_color_automorphism_theorem",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_cl3_color_automorphism_theorem",
       "load_bearing_score": 14.182,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Given Tr(T_a T_b)=delta_ab/2, the rescaling T_a -> c T_a gives Tr((cT_a)(cT_b))=c^2 delta_ab/2 and correspondingly beta_new=c^2 beta_old with g_bare held fixed.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b0478e6823f34f2994d77587db9bdd2a33e9413d1a8ffea379ebaa6239365d5c",
       "note_path": "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the claimed scope remains limited to the stated canonical-normalization and Wilson-plaquette surface, not to uniqueness of the Wilson action or physical color identification.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -89484,18 +89503,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 12,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 12
       },
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Rescaling-Freedom Removal Theorem (Cl(3) Canonical Normalization)",
       "transitive_descendants": 1161,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a straightforward trace-rescaling identity plus substitution into the Wilson coefficient relation. The cited authority is retained_bounded for the canonical Gell-Mann trace normalization, and this claim stays within that algebraic normalization scope rather than using the authority's deferred physical-color identification. Because the note has zero external comparator checks and reduces to a standard algebraic consequence of the single upstream normalization claim plus stated Wilson matching, it is decoration rather than an independently clean positive theorem."
     },
     "g_bare_rigidity_canonical_normalization_algebra_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

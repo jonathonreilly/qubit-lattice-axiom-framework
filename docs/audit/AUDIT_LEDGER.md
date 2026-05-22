@@ -23,12 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
-| unaudited | 1348 |
+| unaudited | 1347 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 25 |
+| `decoration_under_cl3_color_automorphism_theorem` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -46,20 +47,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 5 |
 | `audited_clean` | 600 |
 | `audited_conditional` | 81 |
-| `audited_decoration` | 19 |
+| `audited_decoration` | 20 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1572 |
+| `unaudited` | 1571 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1022 |
-| `decoration` | 20 |
+| `decoration` | 21 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 752 |
+| `positive_theorem` | 751 |
 
 | criticality | count |
 |---|---:|
@@ -809,6 +810,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
+| `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | fresh_context | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
@@ -4019,6 +4021,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equating the two abstract constraints F^2 = c0 and F^2 = g^2/(2N) gives g^2 = 2 N c0, so on the positive branch g = sqrt(2 N c0) when c0 > 0.  _(class `A`)_
 - **chain closes:** True — The theorem follows by direct substitution and multiplication by 2N over the stated positive-real domain, with the c0=0 boundary explicitly excluded by g>0. The runner verifies the symbolic identity, positive branch, rational instances, non-unit counterexamples, and scope disclaimers with PASS=39, FAIL=0.
 - **rationale:** The scoped claim closes as pure algebra: the two hypotheses give c0 = g^2/(2N), hence g^2 = 2Nc0, and the positive branch is unique for c0>0. The specific g=1 result is correctly limited to pairs satisfying 2Nc0=1, with the note and runner showing that other pairs such as (N,c0)=(1,1) force different values. This audit does not ratify the physical Ward-route premises or any claim that those abstract variables are fixed by Cl(3), Wilson, or SU(N_c) structure.
+- **auditor confidence:** high
+
+### `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`
+
+- **Note:** [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Under the canonical Cl(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the stated Wilson plaquette matching beta=2N_c/g_bare^2, a scalar dilation of the generator/connection normalization leaves the canonical surface and scales the Wilson coefficient beta by c^2 rather than supplying an independent g_bare convention.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T155643Z-6e805e4f-g_bare_rescaling_freedom-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given Tr(T_a T_b)=delta_ab/2, the rescaling T_a -> c T_a gives Tr((cT_a)(cT_b))=c^2 delta_ab/2 and correspondingly beta_new=c^2 beta_old with g_bare held fixed.  _(class `A`)_
+- **chain closes:** True — The algebraic scaling follows directly from the retained-bounded canonical Gram relation and the stated Wilson matching relation. The audited scope does not derive the canonical normalization itself, the Wilson action form, or the physical-color bridge.
+- **rationale:** The load-bearing step is a straightforward trace-rescaling identity plus substitution into the Wilson coefficient relation. The cited authority is retained_bounded for the canonical Gell-Mann trace normalization, and this claim stays within that algebraic normalization scope rather than using the authority's deferred physical-color identification. Because the note has zero external comparator checks and reduces to a standard algebraic consequence of the single upstream normalization claim plus stated Wilson matching, it is decoration rather than an independently clean positive theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19`

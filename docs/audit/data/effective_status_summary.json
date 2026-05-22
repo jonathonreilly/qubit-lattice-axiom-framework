@@ -3,9 +3,9 @@
     "bounded_theorem": 1023,
     "decoration": 30,
     "meta": 226,
-    "no_go": 234,
+    "no_go": 237,
     "open_gate": 112,
-    "positive_theorem": 736
+    "positive_theorem": 737
   },
   "cycle_examples": [
     [
@@ -52,12 +52,12 @@
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 222,
-    "open_gate": 16,
+    "open_gate": 15,
     "retained": 110,
     "retained_bounded": 376,
     "retained_no_go": 145,
     "retained_pending_chain": 10,
-    "unaudited": 1333
+    "unaudited": 1338
   },
   "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [

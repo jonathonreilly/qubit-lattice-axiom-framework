@@ -84,6 +84,15 @@ First decide whether it exposes a real audit-graph, cache, queue,
 normalization, dependency-chain, or audit-readiness defect. If it does,
 salvage the value into durable source, tooling, pipeline, or controlled-data
 repairs and regenerate the generated surfaces from that repair.
+Audit-dispatch manifests are a special non-science case. If a PR lands a
+source note whose purpose is to request future re-audit, retagging, cascade
+repair, or batch audit selection, review-loop is not done when the source note
+lands. It must also make the request machine-visible by adding or updating a
+supported dispatcher sidecar under `docs/audit/data/`, rerunning the audit
+pipeline, and verifying the target appears in `docs/audit/AUDIT_DISPATCH_QUEUE.md`
+or `docs/audit/data/audit_dispatch_queue.json`. The dispatch manifest is
+target-selection metadata only; it must not be passed to auditors as evidence
+and must not apply audit verdicts.
 
 ## Arguments
 

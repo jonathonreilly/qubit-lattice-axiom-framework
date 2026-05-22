@@ -51,6 +51,7 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 GRAPH_PATH = DATA_DIR / "citation_graph.json"
+AUDIT_DISPATCH_QUEUE_PATH = DATA_DIR / "audit_dispatch_queue.json"
 
 ALLOWED_AUDIT_STATUSES = {
     "unaudited",
@@ -160,6 +161,8 @@ TERMINAL_VERDICTS = {
     "audited_numerical_match",
 }
 
+SUPPORTED_DISPATCH_SCHEMAS = {"promotion_reaudit_queue.v1"}
+
 _CODEX_FAMILY_RE = re.compile(r"^codex-gpt-(\d+(?:\.\d+)*)$")
 
 
@@ -190,6 +193,27 @@ def hash_note_on_disk(note_path_str: str) -> str | None:
     if not p.exists():
         return None
     return hashlib.sha256(p.read_text(encoding="utf-8", errors="replace").encode("utf-8")).hexdigest()
+
+
+def dispatch_sidecars() -> list[Path]:
+    """Machine-readable dispatcher manifests that must feed audit_dispatch_queue."""
+    candidates: list[Path] = []
+    for pattern in ("*reaudit_queue*.json", "*dispatch_queue*.json"):
+        candidates.extend(DATA_DIR.glob(pattern))
+    excluded = {"audit_dispatch_queue.json", "audit_queue.json", "reaudit_candidates.json"}
+    return sorted({p for p in candidates if p.name not in excluded})
+
+
+def dispatch_target_live(target: dict, rows: dict[str, dict]) -> bool:
+    row = rows.get(target.get("claim_id"))
+    if row is None:
+        return False
+    expected = {
+        "claim_type": target.get("current_claim_type"),
+        "audit_status": target.get("current_audit_status"),
+        "effective_status": target.get("current_effective_status"),
+    }
+    return all(expected[k] in {None, row.get(k)} for k in expected)
 
 
 def main() -> int:
@@ -615,6 +639,58 @@ def main() -> int:
                         f"{cid}: effective_status={row.get('effective_status')!r} but dep {d!r} "
                         f"has effective_status={d_eff!r}"
                     )
+
+    # Dispatcher manifests are not evidence, but they must be visible to the
+    # audit loop. If a sidecar contains live targets and the generated dispatch
+    # queue omits them, the process has silently dropped a re-audit request.
+    sidecars = dispatch_sidecars()
+    if sidecars:
+        dispatch_live_ids: set[str] = set()
+        if AUDIT_DISPATCH_QUEUE_PATH.exists():
+            try:
+                dispatch = load_json(AUDIT_DISPATCH_QUEUE_PATH)
+                dispatch_live_ids = {
+                    entry.get("claim_id")
+                    for entry in dispatch.get("live", [])
+                    if entry.get("claim_id")
+                }
+            except Exception as exc:  # pragma: no cover - defensive lint path
+                add_warning(
+                    "audit_dispatch_queue_invalid",
+                    f"{AUDIT_DISPATCH_QUEUE_PATH.relative_to(REPO_ROOT)} could not be parsed: {exc}",
+                )
+        else:
+            add_warning(
+                "audit_dispatch_queue_missing",
+                "dispatcher sidecar exists but docs/audit/data/audit_dispatch_queue.json is missing; "
+                "run compute_audit_dispatch_queue.py or the full pipeline"
+            )
+        for path in sidecars:
+            try:
+                manifest = load_json(path)
+            except Exception as exc:  # pragma: no cover - defensive lint path
+                add_warning(
+                    "audit_dispatch_sidecar_invalid",
+                    f"{path.relative_to(REPO_ROOT)} could not be parsed: {exc}",
+                )
+                continue
+            schema = manifest.get("schema")
+            if schema not in SUPPORTED_DISPATCH_SCHEMAS:
+                add_warning(
+                    "audit_dispatch_sidecar_unsupported",
+                    f"{path.relative_to(REPO_ROOT)} schema={schema!r} is not supported by "
+                    "compute_audit_dispatch_queue.py"
+                )
+                continue
+            for group in manifest.get("groups") or []:
+                for target in group.get("targets") or []:
+                    cid = target.get("claim_id")
+                    if dispatch_target_live(target, rows) and cid not in dispatch_live_ids:
+                        add_warning(
+                            "audit_dispatch_queue_stale",
+                            f"{path.relative_to(REPO_ROOT)} live target {cid!r} is missing from "
+                            "audit_dispatch_queue.json; rerun the full pipeline before relying on audit-loop selection"
+                        )
 
     # Graph health: cycles (informational).
     cycle_count = 0

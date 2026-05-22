@@ -1173,10 +1173,6 @@
       "to": "strong_cp_theta_zero_note"
     },
     {
-      "from": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "to": "axiom_first_spectrum_condition_theorem_note_2026-04-29"
-    },
-    {
       "from": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
       "to": "axiom_reduction_note"
     },
@@ -1459,10 +1455,6 @@
     {
       "from": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-    },
-    {
-      "from": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
     },
     {
       "from": "axiom_first_spin_statistics_theorem_note_2026-04-29",
@@ -6757,10 +6749,6 @@
       "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
     },
     {
-      "from": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
-      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
-    },
-    {
       "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
     },
@@ -8327,10 +8315,6 @@
     {
       "from": "dm_pmns_chamber_spectral_completeness_theorem_note_2026-04-20",
       "to": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16"
-    },
-    {
-      "from": "dm_pmns_cp_orientation_parity_reduction_note_2026-04-20",
-      "to": "dm_pmns_upper_octant_source_cubic_selector_theorem_note_2026-04-20"
     },
     {
       "from": "dm_pmns_cp_orientation_parity_reduction_note_2026-04-20",
@@ -15221,10 +15205,6 @@
       "to": "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
     },
     {
-      "from": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-      "to": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17"
-    },
-    {
       "from": "koide_mru_demotion_note_2026-04-20",
       "to": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
     },
@@ -16771,10 +16751,6 @@
     {
       "from": "lensing_combined_invariant_note",
       "to": "born_scattering_comparison_note"
-    },
-    {
-      "from": "lensing_finite_path_explanation_note",
-      "to": "lensing_long_path_test_note"
     },
     {
       "from": "lensing_long_path_test_note",
@@ -24967,10 +24943,6 @@
     {
       "from": "teleportation_z_convention_clarification",
       "to": "teleportation_bell_measurement_circuit_note"
-    },
-    {
-      "from": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
-      "to": "scalar_trace_tensor_no_go_note"
     },
     {
       "from": "tensor_block_closure_test_note",
@@ -41747,11 +41719,10 @@
       "deps": [
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
         "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
-        "strong_cp_theta_zero_note",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+        "strong_cp_theta_zero_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a69175b6789a563fc4b30988a072f4120b412ad4afc9bc1da68ccd15a0572aab",
+      "note_hash": "23a5a1b2174cd60030cef5245262c414bcd248b94178fca51aec424383127060",
       "path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3"
@@ -42025,11 +41996,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7b6c46bb6df39323d508a7205a424a23361b4d2eed60751d2cfa3a3ed914ca19",
+      "note_hash": "e0b3c19e5129c7807068553dabe83eb6f0219a4ba89794e3e36b7508897871ad",
       "path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
       "title": "Axiom-First Spectrum Condition (Lattice Analogue) on Cl(3) \u2297 Z^3"
@@ -48092,11 +48062,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "2423d458f19576260db8f66aeda74d67038497d38e4a36773183f80d6ff9ddd5",
+      "note_hash": "f94010194f8c629f8eff10fb643dfecf6ae6facb1a73b470d29d25f6c1c1109d",
       "path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem"
@@ -49950,11 +49918,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "no_go",
       "deps": [
-        "dm_pmns_upper_octant_source_cubic_selector_theorem_note_2026-04-20",
         "dm_sigma_hier_upper_octant_selector_theorem_note_2026-04-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d80819ff4c80eab79f4e6aeb475887564f61b42552bf89847958307333fea674",
+      "note_hash": "aed9ce4ca6ff03e9f476681eba2ca9eb7030310645074f624b6735a46a62da43",
       "path": "docs/DM_PMNS_CP_ORIENTATION_PARITY_REDUCTION_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_dm_pmns_cp_orientation_parity_reduction_2026_04_20.py",
       "title": "DM PMNS CP-Orientation Parity Reduction"
@@ -58356,11 +58323,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9f62855826a00572d6a5ef9337c17281403762726abb51d48e8a4e8471caeb6d",
+      "note_hash": "8c0cff589fb7d12e88a33ffedc4d87e43d2a8d33c134f8c209c386ffe3a9db6f",
       "path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_moment_ratio_uniformity_theorem.py",
       "title": "Moment-Ratio Uniformity (MRU) on Cl(d)/Z_d \u2014 conditional support note"
@@ -60815,11 +60780,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "open_gate",
-      "deps": [
-        "lensing_long_path_test_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "ddec6fa48d1810d33e7ebbc19c735dcc3410373ca0159790705046f71b2ce562",
+      "note_hash": "105e2546bf32f5ca21b0f46c0b7d36a136baad8d28f3fd97ef62c254cd361dc1",
       "path": "docs/LENSING_FINITE_PATH_EXPLANATION_NOTE.md",
       "runner_path": "scripts/lensing_analytical_finite_path.py",
       "title": "Lensing Slope \u2014 Finite-Path Surrogate FALSIFIED at a Second T_phys"
@@ -70878,7 +70841,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -76024,11 +75987,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "scalar_trace_tensor_no_go_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "42d50e3fc1ac2667bdd7b48b4a370902ab9d1cdbbf88e430dc2cc985f68f0e4a",
+      "note_hash": "47be0caace0f11f69bdd7456c727548d9af26ad778b6c89a309b68c0f53d927f",
       "path": "docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md",
       "runner_path": "scripts/frontier_tensorial_einstein_regge_completion.py",
       "title": "Tensorial Einstein-Regge Completion Probe Helper Module"
@@ -81115,6 +81076,7 @@
     "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_note_2026-05-17",
     "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
+    "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
     "dm_lepton_synthesis_note_2026-04-19",
@@ -81295,6 +81257,7 @@
     "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
     "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19",
     "koide_lightcone_primitive_theorem_note_2026-05-10",
+    "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
     "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
     "koide_native_dimensionless_note_2026-04-24",
     "koide_native_zero_section_closure_route_note_2026-04-24",
@@ -81337,6 +81300,7 @@
     "lattice_synthesis_guard_note",
     "lensing_adjoint_kernel_reduced_model_note",
     "lensing_deflection_note",
+    "lensing_finite_path_explanation_note",
     "lensing_finite_path_explanation_note_2026-05-17",
     "lensing_k_sweep_note",
     "lepton_single_higgs_pmns_triviality_note_2026-05-17",
@@ -81597,6 +81561,7 @@
     "teleportation_three_register_cross_encoding_note",
     "tensor_network_connection_note",
     "tensor_support_center_excess_law_note",
+    "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
     "thales_right_angle_narrow_theorem_note_2026-05-02",
     "third_grown_family_boundary_note",
     "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
@@ -81703,10 +81668,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
-    "leaf_count": 740,
+    "edge_count": 9736,
+    "leaf_count": 741,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 812,
     "runners_with_path": 2048
   }
 }

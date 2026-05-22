@@ -84,7 +84,7 @@ admitted import**. Concretely:
 4. **Conditional status is intentional, not a fixable algebra gap.**
    The post-quotient algebra (Sections 1, 3, 4, 5) is already
    independently isolated as a standalone bounded narrow theorem in
-   [`KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`](KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md)
+   `KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`
    (claim_id `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`,
    audit pipeline target). That narrow theorem inherits the same §2.2
    admission scope and verifies the post-quotient Lagrange extremum on

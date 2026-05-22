@@ -10,9 +10,12 @@ parity / charged-doublet label law for `sigma_hier`.
 
 **Supersession note (closure status):** this note is an intermediate reduction
 only. On `morning-4-20`, `I12` is actually closed by
-[DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md](./DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md)
+`DM_PMNS_UPPER_OCTANT_SOURCE_CUBIC_SELECTOR_THEOREM_NOTE_2026-04-20.md`
 and packaged most cleanly in
 [DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md](./DM_SIGMA_HIER_UPPER_OCTANT_SELECTOR_THEOREM_NOTE_2026-04-20.md).
+The downstream selector cite is backticked: the load-bearing citation
+direction is *selector → this parity reduction* (selector consumes
+`I_src` signs from this note in its Step 4), not vice versa.
 
 ---
 

@@ -14,10 +14,12 @@ is audit-lane infrastructure for the corresponding helper module.
 
 This wrapper note documents the tensorial Einstein-Regge completion
 probe helper module so downstream notes (notably
-[SCALAR_TRACE_TENSOR_NO_GO_NOTE.md](SCALAR_TRACE_TENSOR_NO_GO_NOTE.md))
+`SCALAR_TRACE_TENSOR_NO_GO_NOTE.md`)
 can register a one-hop dependency rather than carry the helper as an
 unattributed Python `_frontier_loader.load_frontier(...)` runner
-import.
+import. The downstream cite is backticked: the load-bearing citation
+direction is *no-go → this helper*, not vice versa; the helper
+imports no content from the no-go.
 
 ## What this module provides
 

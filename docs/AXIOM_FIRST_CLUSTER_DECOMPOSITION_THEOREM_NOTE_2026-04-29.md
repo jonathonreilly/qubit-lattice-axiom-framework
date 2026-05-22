@@ -399,4 +399,4 @@ citation graph can track them. It does not promote this note or
 change the audited claim scope.
 
 - [cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09](CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md)
-- [axiom_first_spectrum_condition_theorem_note_2026-04-29](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md)
+- `axiom_first_spectrum_condition_theorem_note_2026-04-29` (defines `Δ_T` as the temporal-transfer-matrix gap symbol; backticked — the load-bearing `Δ_T > 0` premise of this cluster-decomposition proof is supplied by the bridge note above, not by the spectrum-condition note. `AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md` is a see-also for the symbol's definitional source.)

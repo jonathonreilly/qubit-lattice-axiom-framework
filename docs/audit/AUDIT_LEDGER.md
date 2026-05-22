@@ -24,10 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
 | unaudited | 1320 |
+| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 92 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -46,8 +47,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
+| `audit_in_progress` | 1 |
 | `audited_clean` | 617 |
-| `audited_conditional` | 92 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -117,6 +119,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -786,7 +789,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
@@ -7568,21 +7570,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For finite-dimensional H_x with dim_C H_x = 2, tr([a,a†]) = 0 by trace cyclicity, but [a,a†] = I_Hx would imply tr(I_Hx) = 2, a contradiction.  _(class `A`)_
 - **chain closes:** True — The allowed k=1 qubit-per-site ratification supplies H_x = C^2, and the retained Cl(3) per-site uniqueness material supplies the two-dimensional irreducible local module context. The finite-dimensional trace identity then directly rules out the exact CCR with no further bridge needed.
 - **rationale:** The load-bearing obstruction is pure finite-dimensional linear algebra once H_x = C^2 is in scope. The runner checks the trace obstruction and illustrative finite/infinite examples, with no external comparator, tuned numerical input, or definition-as-derivation step. The older cited per-site-uniqueness note alone no longer carries U4, but this targeted packet's k=1 qubit ratification supplies the missing multiplicity selection, so the scoped chain closes.
-- **auditor confidence:** high
-
-### `no_per_site_chirality_theorem_note_2026-05-02`
-
-- **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Given a 2-dimensional Pauli Cl(3) irrep γ_i = σ_i in M_2(C), ω = iI and no internal γ5 ∈ M_2(C) squares to I while anticommuting with all three generators; the framework per-site Hilbert identification is not closed by this packet.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T163735Z-7ada64b4-no_per_site_chirality_th-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Writing M = a·I + b1·σ1 + b2·σ2 + b3·σ3 gives {M, σj} = 2a·σj + 2bj·I, so vanishing for all j forces M = 0.  _(class `A`)_
-- **chain closes:** False — The algebraic no-go closes conditional on the stipulated Pauli M_2(C) representation. The full framework per-site claim does not close because the cited authority explicitly moves the per-site Hilbert realization bridge/U4 out of scope and no replacement bridge theorem is included.
-- **rationale:** The Pauli-basis proof and runner are genuine class-A algebraic checks: the constraint matrix has full rank, so no nonzero 2x2 matrix anticommutes with all three Pauli generators. However, the note states the result for the framework's per-site Hilbert H_x ≅ C², while its only cited authority is retained only for abstract physical-Cl(3) U1-U3 and explicitly moves the per-site Hilbert realization bridge out of scope. No-Go Discipline N3/N6 therefore finds an unclosed hidden bridge/convention path for the per-site identification, even though the stipulated Pauli-rep no-go is sound.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`

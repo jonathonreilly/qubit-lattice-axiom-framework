@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 15 |
-| unaudited | 1330 |
+| unaudited | 1329 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 83 |
+| ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 608 |
-| `audited_conditional` | 83 |
+| `audited_conditional` | 84 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1552 |
+| `unaudited` | 1551 |
 
 | claim_type | count |
 |---|---:|
@@ -783,6 +783,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -8068,6 +8069,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.
 - **rationale:** Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.
 - **auditor confidence:** judicial_panel_majority
+
+### `pmns_hw1_source_transfer_boundary_note`
+
+- **Note:** [`PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md`](../../docs/PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded supplied-fixture interface theorem: for given sector operators, response-column reconstruction agrees with the Schur-complement retained block and hence with the shared downstream PMNS closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-023108-49f0228b-pmns_hw1_source_transfer-010`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Response-column inversion recovers the retained effective block, delta = (I - K^{-1}) / lam, and that recovered block agrees with the direct Schur-complement effective block on the supplied sector operators.  _(class `A`)_
+- **chain closes:** True — Within the admitted fixture scope, the claimed equality is an algebraic inverse check between response columns and the retained block, cross-checked against an independent Schur-complement path. The source/transfer pack itself is explicitly not derived from Cl(3) on Z^3.
+- **rationale:** The retained claim is a bounded algebraic interface identity and appears to close on its own admitted inputs. However, the note explicitly imports fixture active/passive sector operators, probe weights, response-column conventions, and a tau classifier rather than deriving them from the sole-axiom bank. The runner also depends on helper modules whose source is not included in the packet despite being imported, so its stdout cannot fully certify the computation.
+- **open / conditional deps cited:**
+  - `PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md`
+- **auditor confidence:** medium
 
 ### `pmns_oriented_cycle_channel_value_law_note`
 

@@ -26,13 +26,13 @@ Source sidecars:
 | 2 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
 | 3 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
 | 4 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 5 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / unaudited / unaudited |
+| 5 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audit_in_progress / audit_in_progress |
 | 6 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
 | 7 | resolved_or_superseded | `native_gauge_closure_note` | bounded_theorem / unaudited / unaudited |
 | 8 | resolved_or_superseded | `cl3_color_automorphism_theorem` | bounded_theorem / unaudited / unaudited |
 | 9 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | positive_theorem / unaudited / unaudited |
 | 10 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 11 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | bounded_theorem / unaudited / unaudited |
+| 11 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | positive_theorem / unaudited / unaudited |
 | 12 | resolved_or_superseded | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
 | 13 | resolved_or_superseded | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / unaudited / unaudited |
 

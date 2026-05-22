@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/higgs_tree_level_mean_field_runner_2026_05_03.py
-runner_sha256: 48632de85930121101e7ed598997090ae5831ee8faef9bfaf6aa06a3e0ea97aa
+runner_sha256: 6409b2c35163b6ecb0e9f365437f761635933ba1baf88a7183839a657da4fe07
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.08
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
 ----- stdout -----
 ================================================================================
  higgs_tree_level_mean_field_runner_2026_05_03.py
@@ -58,7 +58,7 @@ status: nonzero_exit
   [PASS] contains: HIGGS_FROM_LATTICE_NOTE cross-ref  (marker = 'HIGGS_FROM_LATTICE_NOTE.md')
   [PASS] contains: Wilson-term taste-breaking row  (marker = 'Wilson-term taste-breaking')
   [PASS] contains: 2026-05-02 status correction audit cross-ref  (marker = 'HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02')
-  [FAIL] contains: audit backlog campaign synthesis cross-ref  (marker = 'AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02')
+  [PASS] contains: audit backlog campaign synthesis cross-ref  (marker = 'AUDIT_BACKLOG_NOTE_2026-05-02')
   [PASS] contains: Wilson-staircase open-target call-out  (marker = '(1,4,6,4,1) staircase')
   [PASS] sister authority file exists: docs/HIGGS_MASS_DERIVED_NOTE.md
   [PASS] sister authority file exists: docs/HIGGS_FROM_LATTICE_NOTE.md
@@ -78,7 +78,7 @@ status: nonzero_exit
   [PASS] +12% gap framed as genuine higher-order separation (broken-phase pole vs symmetric-point curvature)
 
 ================================================================================
- SUMMARY: PASS=28, FAIL=1
+ SUMMARY: PASS=29, FAIL=0
 ================================================================================
 
 ----- stderr -----

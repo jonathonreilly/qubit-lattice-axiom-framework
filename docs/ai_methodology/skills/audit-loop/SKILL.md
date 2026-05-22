@@ -20,6 +20,7 @@ Use this skill to audit one claim at a time from the repository audit queue and 
 - Work one claim per commit. This keeps audit verdicts reversible and reviewable.
 - Prefer a clean temporary worktree based on `origin/main`. Do not use a dirty shared checkout for audit commits.
 - Push routine audit commits directly to `main`. This project has authorized direct-main audit operation for ordinary `apply_audit.py`-accepted verdicts; do not open PRs for routine clean, conditional, renaming, decoration, numerical-match, or non-controversial failed verdicts.
+- Do not smuggle tooling or pipeline changes into a routine audit verdict. If an audit session produces non-generated code changes (for example an audit runner, dispatcher, queue generator, or helper-script edit), stop and route that change through review-loop as audit infrastructure before relying on it. Generated audit surfaces produced by the standard pipeline are expected; handwritten or worker-authored tooling changes are not verdicts.
 - Do not read broad publication framing while judging the claim. Use the source note, one-hop cited authorities, runner, runner output, and the audit rubric.
 - Preserve fresh-context integrity. Do not read prior audit rationales, previous audit entries, rendered `AUDIT_LEDGER.md` history, PR text, publication framing, or downstream summaries while judging a claim.
 - Do not grant `audited_clean` unless the derivation closes without hidden premises, unsupported physical identifications, circular dependency, or tuned comparator matching.

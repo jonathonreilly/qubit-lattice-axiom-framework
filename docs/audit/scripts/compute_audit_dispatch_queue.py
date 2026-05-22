@@ -15,6 +15,10 @@ This script reads dispatcher sidecars from docs/audit/data and writes:
 
 Supported sidecar schema:
   - promotion_reaudit_queue.v1
+
+Optional `retired_targets` entries document dispatch requests that should no
+longer re-enter the live queue, for example a promotion request that resolved
+as bounded-terminal unless future source work changes the claim.
 """
 from __future__ import annotations
 
@@ -72,11 +76,35 @@ def target_is_live(target: dict, row: dict | None) -> bool:
     return all(expected[k] in {None, row.get(k)} for k in expected)
 
 
-def normalize_promotion_manifest(path: Path, manifest: dict, rows: dict[str, dict]) -> tuple[list[dict], list[dict]]:
+def normalize_promotion_manifest(
+    path: Path, manifest: dict, rows: dict[str, dict]
+) -> tuple[list[dict], list[dict], list[dict]]:
     allowed_context = list(manifest.get("allowed_context_paths") or [])
     forbidden_context = list(manifest.get("forbidden_context") or [])
     live: list[dict] = []
     resolved_or_invalid: list[dict] = []
+    retired: list[dict] = []
+
+    for target in manifest.get("retired_targets") or []:
+        cid = target.get("claim_id")
+        row = rows.get(cid)
+        retired.append(
+            {
+                "source_json_path": str(path.relative_to(REPO_ROOT)),
+                "source_schema": manifest.get("schema"),
+                "claim_id": cid,
+                "note_path": target.get("note_path"),
+                "audit_question": target.get("audit_question"),
+                "retired_reason": target.get("retired_reason"),
+                "expected_current_claim_type": target.get("current_claim_type"),
+                "expected_current_audit_status": target.get("current_audit_status"),
+                "expected_current_effective_status": target.get("current_effective_status"),
+                "actual_claim_type": row.get("claim_type") if row else None,
+                "actual_audit_status": row.get("audit_status") if row else None,
+                "actual_effective_status": row.get("effective_status") if row else None,
+                "state": "retired",
+            }
+        )
 
     live_group_ids: set[str] = set()
     groups = sorted(manifest.get("groups") or [], key=lambda g: (g.get("order") or 9999, g.get("group_id") or ""))
@@ -136,7 +164,7 @@ def normalize_promotion_manifest(path: Path, manifest: dict, rows: dict[str, dic
                 base["ready_blocker"] = None if group_ready else f"blocked_by_live_group:{','.join(blocked_by)}"
                 live.append(base)
 
-    return live, resolved_or_invalid
+    return live, resolved_or_invalid, retired
 
 
 def render_markdown(output: dict) -> str:
@@ -148,6 +176,7 @@ def render_markdown(output: dict) -> str:
         f"**Live entries:** {output['live_count']}",
         f"**Ready entries:** {output['ready_count']}",
         f"**Resolved/invalid entries:** {len(output['resolved_or_invalid'])}",
+        f"**Retired entries:** {len(output['retired'])}",
         "",
     ]
     if output["source_json_paths"]:
@@ -192,6 +221,21 @@ def render_markdown(output: dict) -> str:
             lines.append(f"| {i} | {entry.get('state')} | `{entry.get('claim_id')}` | {current} |")
         lines.append("")
 
+    if output["retired"]:
+        lines.append("## Retired Dispatch Targets")
+        lines.append("")
+        lines.append("| # | claim_id | current | reason |")
+        lines.append("|---:|---|---|---|")
+        for i, entry in enumerate(output["retired"], 1):
+            current = (
+                f"{entry.get('actual_claim_type')} / "
+                f"{entry.get('actual_audit_status')} / "
+                f"{entry.get('actual_effective_status')}"
+            )
+            reason = (entry.get("retired_reason") or "").replace("|", "\\|")
+            lines.append(f"| {i} | `{entry.get('claim_id')}` | {current} | {reason} |")
+        lines.append("")
+
     lines.append("Full machine-readable queue lives in `data/audit_dispatch_queue.json`.")
     return "\n".join(lines) + "\n"
 
@@ -203,6 +247,7 @@ def main() -> int:
 
     live: list[dict] = []
     resolved_or_invalid: list[dict] = []
+    retired: list[dict] = []
     source_paths: list[str] = []
     unsupported: list[dict] = []
 
@@ -213,9 +258,10 @@ def main() -> int:
             unsupported.append({"source_json_path": str(path.relative_to(REPO_ROOT)), "schema": schema})
             continue
         source_paths.append(str(path.relative_to(REPO_ROOT)))
-        entries, other = normalize_promotion_manifest(path, manifest, rows)
+        entries, other, retired_entries = normalize_promotion_manifest(path, manifest, rows)
         live.extend(entries)
         resolved_or_invalid.extend(other)
+        retired.extend(retired_entries)
 
     live.sort(key=lambda e: (not e.get("ready"), e.get("group_order") or 9999, e.get("generated_order") or 9999, e.get("claim_id") or ""))
     for i, entry in enumerate(live, 1):
@@ -230,6 +276,7 @@ def main() -> int:
         "ready_count": sum(1 for e in live if e.get("ready")),
         "live": live,
         "resolved_or_invalid": resolved_or_invalid,
+        "retired": retired,
     }
     OUT_JSON.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     OUT_MD.write_text(render_markdown(output), encoding="utf-8")
@@ -238,6 +285,7 @@ def main() -> int:
     print(f"Wrote {OUT_MD.relative_to(REPO_ROOT)}")
     print(f"  live dispatch entries: {output['live_count']}")
     print(f"  ready dispatch entries: {output['ready_count']}")
+    print(f"  retired dispatch entries: {len(retired)}")
     if unsupported:
         print(f"  unsupported sidecars: {len(unsupported)}")
     return 0

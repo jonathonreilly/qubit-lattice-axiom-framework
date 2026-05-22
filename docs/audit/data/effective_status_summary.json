@@ -40,10 +40,10 @@
   ],
   "cycles_detected": 292,
   "effective_status_counts": {
-    "audited_conditional": 96,
+    "audited_conditional": 97,
     "audited_failed": 25,
     "audited_numerical_match": 9,
-    "audited_renaming": 16,
+    "audited_renaming": 15,
     "decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": 1,
     "decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17": 1,
     "decoration_under_cl3_color_automorphism_theorem": 7,

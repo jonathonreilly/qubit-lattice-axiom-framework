@@ -368,4 +368,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   this bridge note; the dependency edge is parent-to-bridge)"; the
   load-bearing citation direction is therefore
   *axiom_first_reflection_positivity → this_bridge*, not vice versa.)
-- [axiom_first_reflection_positivity_theorem_note_2026-04-29](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+- `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` (see-also; backticked to break cycle-0008)

@@ -98,11 +98,11 @@ that question as a bounded support theorem citing the
 which were class-(A) authorities at the time but whose narrow
 algebraic cores had not yet been independently audited.
 
-Two pieces of that chain have since landed retained narrow theorems:
+Two pieces of that chain have since landed narrow theorems:
 
-- `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
-  (retained / audited_clean per the 2026-05-16 ledger) — provides
-  the abstract Cl(3) faithful complex-irrep dim = 2 readout.
+- `CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`
+  §(K4) — provides the retained abstract Cl(3) faithful complex-irrep
+  dim = 2 readout.
 - `SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`
   (retained_bounded / audited_clean per the 2026-05-16 ledger) —
   provides the Berezin determinant identity and the Pauli-exclusion
@@ -130,7 +130,7 @@ compatibility** (D4). The U4 bridge remains open.
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
   — provides the abstract Cl(3) faithful complex-irrep dim = 2 readout
   `dim_C V = 2` used in (D1) and (D2). Status authority: independent
   audit lane only; effective status pipeline-derived.
@@ -352,7 +352,7 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 15`.
 
 Load-bearing markdown-link upstream (two one-hop dependencies):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 - [`SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306

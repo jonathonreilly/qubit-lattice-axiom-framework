@@ -13,8 +13,9 @@ audit lane.
 the **multiplicity-selection** content of the U4 bridge (the open
 admission named in `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
 and the parent `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-gate). Given the retained Cl(3) faithful complex-irrep dim-2 readout,
-the per-site Hilbert space's complex dimension is forced to lie in
+gate). Given the retained Cl(3) complexification split plus standard
+finite-dimensional semisimple representation theory, the per-site
+Hilbert space's complex dimension is forced to lie in
 `{2k : k ∈ Z_{≥1}}` (an even integer), with `k = 1` the minimal case;
 every `k ≥ 1` admits a faithful Cl(3) representation, so the physical Cl(3)/Z^3 framework baseline plus the
 cited retained algebraic classification **do not algebraically force
@@ -133,13 +134,15 @@ either rule out (`k ≥ 2`) or admit as an additional input.
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-  — provides the multiplicity decomposition (M1) of every finite-dim
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  §(K4) — provides the retained `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)`
+  split and the two-dimensional irreducible module readout. Together
+  with standard finite-dimensional semisimple representation theory,
+  this gives the multiplicity decomposition (M1) of every finite-dim
   complex Cl(3,0) representation as
-  `ρ_+^{n_+} ⊕ ρ_-^{n_-}` with `dim_C = 2(n_+ + n_-)` (its (D2)). Status
+  `ρ_+^{n_+} ⊕ ρ_-^{n_-}` with `dim_C = 2(n_+ + n_-)`. Status
   authority: independent audit lane only; effective status
-  pipeline-derived. Live ledger status as of 2026-05-17:
-  `audited_clean`, `retained`.
+  pipeline-derived.
 
 This is the only load-bearing one-hop dependency.
 
@@ -167,9 +170,11 @@ axioms.**
 ### 5.1 Multiplicity classification (M1)
 
 By the cited retained narrow theorem
-[`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
-(its (D2)), the complexification `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` is
-semisimple, and every finite-dim complex representation decomposes as
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+§(K4), the complexification `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` is
+semisimple with two two-dimensional irreducible module classes, and
+standard finite-dimensional representation theory then gives that
+every finite-dim complex representation decomposes as
 `ρ_+^{n_+} ⊕ ρ_-^{n_-}` with `dim_C = 2(n_+ + n_-)`. The total
 multiplicity index `k = n_+ + n_- ∈ Z_{≥0}` is well-defined. ∎
 
@@ -358,7 +363,8 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 25`.
 
 Load-bearing markdown-link upstream (single one-hop dependency):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+  §(K4)
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the

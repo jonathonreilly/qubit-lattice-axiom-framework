@@ -7,7 +7,7 @@
 **Purpose:** Make explicit that the **U4 bridge** ("the framework's
 per-site Hilbert space on the Z^3 substrate IS the Cl(3) faithful
 complex irrep on per-site `V`") — open under the pre-2026-05-20 Cl(3)
-framing — is **directly given by the qubit-per-site baseline (A1)** of
+framing — is **directly given by the qubit-per-site baseline** of
 the qubit-reframe axiom set
 ([`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)).
 
@@ -21,7 +21,7 @@ become unconditional.
 
 This note **does not re-derive the qubit-per-site baseline**. It
 records the immediate logical consequence: the qubit-per-site baseline
-(A1: qubit at every site, equivalently per-site `M_2(ℂ) ≅ Cl(3,0)`)
+(qubit at every site, equivalently per-site `M_2(ℂ) ≅ Cl(3,0)`)
 directly closes the U4 bridge.
 
 If audit-retained, this row supplies a candidate upstream support for
@@ -78,9 +78,10 @@ identification: "the per-site Hilbert `H_x` is the dim-`2k(x)` Cl(3)
 module with `k(x) = 1` (single faithful complex irrep), not a multi-copy
 direct sum." Without the qubit-per-site baseline, both `k = 1` and
 `k ≥ 2` are admissible Cl(3)
-modules (formally proved on the algebraic surface by
-[`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)'s
-(D2) multiplicity decomposition). Selecting `k = 1` required an
+modules (formally represented on the algebraic surface by
+[`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md)
+§(K4) plus standard semisimple finite-dimensional representation
+theory). Selecting `k = 1` required an
 additional physical premise — the staggered-Dirac/Grassmann
 one-particle-per-site realization — that lived in the open
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03` gate's substep 1.
@@ -188,7 +189,7 @@ no longer open under the qubit reframe.
 
 ## Admitted inputs
 
-1. **Qubit-per-site baseline (A1) of MINIMAL_AXIOMS_2026-05-20** —
+1. **Qubit-per-site baseline of MINIMAL_AXIOMS_2026-05-20** —
    qubit at every site,
    equivalently per-site `M_2(ℂ) ≅ Cl(3,0)`. The axiom is the input,
    not derived here.
@@ -215,7 +216,7 @@ axiom applied to make the framework's commitments explicit.
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site baseline (A1: qubit per site = `M_2(ℂ) ≅ Cl(3,0)`)
+- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site baseline (qubit per site = `M_2(ℂ) ≅ Cl(3,0)`)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — retained; §(K2) `M_2(ℂ) ≅ Cl(3,0)` real-algebra isomorphism, §(K4) two-dim irrep dimensional readout
 
 **Upstream standard-math imports** (named non-derivation):

@@ -106,8 +106,8 @@ Then the following algebraic facts hold:
 The four facts (J1)-(J4) are abstract finite-dim complex
 representation-theory and finite-Pauli-tensor-algebra statements,
 conditional on the cited retained narrow upstream theorem
-(`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`,
-`audited_clean`, `retained`) and the abstract finite-tensor-product
+(`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`
+§(K4)) and the abstract finite-tensor-product
 construction of `H_Λ` with a fixed total ordering on `Λ`. They make
 **no** claim that the framework's physical per-site Hilbert space on
 its `Z^3` lattice substrate *is* the Cl(3) faithful complex irrep
@@ -169,7 +169,7 @@ bridge.
 
 Load-bearing markdown-link upstream dependencies:
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
   — provides the abstract Cl(3) faithful complex-irrep carrier `V ≅ ℂ²`
   used as the per-site building block of the tensor-product Fock space
   `H_Λ = V^{⊗N}` in this note. Status authority: independent audit lane
@@ -588,7 +588,7 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 50`.
 
 Load-bearing markdown-link upstream (single one-hop dependency):
 
-- [`CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) §(K4)
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the

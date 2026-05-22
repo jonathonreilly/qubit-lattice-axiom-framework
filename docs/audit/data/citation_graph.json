@@ -10494,6 +10494,14 @@
     },
     {
       "from": "gauge_wilson_isotropy_boundary_note_2026-05-04",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "gauge_wilson_isotropy_boundary_note_2026-05-04",
+      "to": "qubit_axiom_hardening_note_2026-05-20"
+    },
+    {
+      "from": "gauge_wilson_isotropy_boundary_note_2026-05-04",
       "to": "gauge_scalar_temporal_completion_theorem_note"
     },
     {
@@ -53868,11 +53876,13 @@
       "claim_type_author_hint_raw": "no_go",
       "claim_type_seed_hint": "no_go",
       "deps": [
+        "minimal_axioms_2026-05-20",
+        "qubit_axiom_hardening_note_2026-05-20",
         "gauge_scalar_temporal_completion_theorem_note",
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "62b6f8969c26e54c5650fd86e7503ec123e2aeb045e8dfdca907485e2303eb98",
+      "note_hash": "b262f5ae795c84f215b1b428c2e22fcee71809234b1577d9efa8139d9f390805",
       "path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
       "title": "Gauge Wilson Isotropy Boundary Note"
@@ -81597,8 +81607,8 @@
       "open_gate": 123,
       "positive_theorem": 607
     },
-    "edge_count": 9727,
-    "leaf_count": 744,
+    "edge_count": 9729,
+    "leaf_count": 743,
     "node_count": 2481,
     "root_count": 808,
     "runners_with_path": 2047

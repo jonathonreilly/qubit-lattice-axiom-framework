@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 113 |
-| **retained_no_go** | 149 |
+| **retained_no_go** | 148 |
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1300 |
+| unaudited | 1301 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 615 |
+| `audited_clean` | 614 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1522 |
+| `unaudited` | 1523 |
 
 | claim_type | count |
 |---|---:|
@@ -70,10 +70,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 1241 |
+| `critical` | 1242 |
 | `high` | 35 |
 | `medium` | 199 |
-| `leaf` | 892 |
+| `leaf` | 891 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 292
@@ -91,31 +91,31 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1076 | 53.57 | `audited_conditional` | ~~audited_conditional~~ |
-| 2 | `minimal_axioms_2026-05-03` | meta | critical | 1048 | 52.53 | `unaudited` | meta |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1048 | 48.03 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1209 | 43.24 | `audited_clean` | **retained_bounded** |
-| 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1048 | 41.53 | `unaudited` | unaudited |
-| 6 | `minimal_axioms_2026-04-11` | meta | critical | 1080 | 40.08 | `unaudited` | meta |
-| 7 | `alpha_s_derived_note` | bounded_theorem | critical | 1117 | 38.63 | `unaudited` | unaudited |
-| 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1048 | 38.53 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1107 | 38.11 | `unaudited` | unaudited |
-| 10 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 1048 | 37.03 | `unaudited` | unaudited |
-| 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 1126 | 35.14 | `audited_clean` | **retained_bounded** |
-| 12 | `native_gauge_closure_note` | bounded_theorem | critical | 1192 | 33.72 | `audited_clean` | **retained_bounded** |
-| 13 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1048 | 33.03 | `unaudited` | unaudited |
-| 14 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1167 | 32.69 | `audited_clean` | **retained_bounded** |
-| 15 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 1048 | 32.03 | `unaudited` | unaudited |
-| 16 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1048 | 32.03 | `unaudited` | unaudited |
-| 17 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1147 | 31.66 | `unaudited` | unaudited |
-| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1048 | 31.54 | `unaudited` | unaudited |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1048 | 31.04 | `unaudited` | unaudited |
-| 20 | `cpt_exact_note` | positive_theorem | critical | 1056 | 29.55 | `audited_clean` | **retained** |
-| 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1048 | 29.54 | `unaudited` | unaudited |
-| 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 1115 | 28.62 | `audited_clean` | **retained_bounded** |
-| 23 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1048 | 28.54 | `unaudited` | unaudited |
-| 24 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 1048 | 28.54 | `unaudited` | unaudited |
-| 25 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 1048 | 28.54 | `unaudited` | unaudited |
+| 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1077 | 57.57 | `audited_conditional` | ~~audited_conditional~~ |
+| 2 | `minimal_axioms_2026-05-03` | meta | critical | 1049 | 56.54 | `unaudited` | meta |
+| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1049 | 52.04 | `unaudited` | unaudited |
+| 4 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1049 | 45.54 | `unaudited` | unaudited |
+| 5 | `minimal_axioms_2026-04-11` | meta | critical | 1081 | 44.08 | `unaudited` | meta |
+| 6 | `graph_first_su3_integration_note` | bounded_theorem | critical | 1210 | 43.24 | `audited_clean` | **retained_bounded** |
+| 7 | `alpha_s_derived_note` | bounded_theorem | critical | 1118 | 42.63 | `unaudited` | unaudited |
+| 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1049 | 42.54 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1108 | 42.12 | `unaudited` | unaudited |
+| 10 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 1049 | 41.04 | `unaudited` | unaudited |
+| 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 1127 | 39.14 | `audited_clean` | **retained_bounded** |
+| 12 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1049 | 37.04 | `unaudited` | unaudited |
+| 13 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 1049 | 36.04 | `unaudited` | unaudited |
+| 14 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 1049 | 36.04 | `unaudited` | unaudited |
+| 15 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1148 | 35.67 | `unaudited` | unaudited |
+| 16 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1049 | 35.54 | `unaudited` | unaudited |
+| 17 | `three_generation_structure_note` | bounded_theorem | critical | 1049 | 35.04 | `unaudited` | unaudited |
+| 18 | `native_gauge_closure_note` | bounded_theorem | critical | 1193 | 33.72 | `audited_clean` | **retained_bounded** |
+| 19 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1168 | 33.69 | `audited_clean` | **retained_bounded** |
+| 20 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1049 | 33.54 | `unaudited` | unaudited |
+| 21 | `left_handed_charge_matching_note` | bounded_theorem | critical | 1116 | 32.62 | `audited_clean` | **retained_bounded** |
+| 22 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1049 | 32.54 | `unaudited` | unaudited |
+| 23 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 1049 | 32.54 | `unaudited` | unaudited |
+| 24 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 1049 | 32.54 | `unaudited` | unaudited |
+| 25 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 1049 | 32.54 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -335,7 +335,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4960,23 +4959,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support.
 - **auditor confidence:** high
-
-### `gauge_wilson_isotropy_boundary_note_2026-05-04`
-
-- **Note:** [`GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md`](../../docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Route-specific no-go that the Cl(3) pseudoscalar and standard staggered-eta plaquette-product mechanisms do not derive orientation-dependent Wilson plaquette coefficients on the accepted isotropic nearest-neighbor Wilson surface.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-judicial-panel-gauge-wilson-20260521-gauge_wilson_isotropy_boundary_note_2026-majority`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** Combining the two checks, the Cl(3) route supplies no fourth anticommuting generator, the staggered eta route supplies no orientation-dependent plaquette factor, and the accepted Wilson source grammar already has one common coefficient on all six plaquette orientations, so these PR #528 routes do not derive a new anisotropic Wilson gauge action.  _(class `A`)_
-- **chain closes:** True — Scoped to the source note's route-specific boundary, audited_clean/no_go is applyable. The runner/source prove the two contested PR #528 mechanisms fail: omega=G1G2G3 is central in Cl(3), squares to -I in the Pauli irrep, commutes with each G_i, and has nonzero anticommutators, so it is not a fourth anticommuting generator; the standard staggered eta plaquette product is -1 for every xy,xz,xt,yz,yt,zt orientation, so it supplies no orientation-dependent factor. The one-hop Wilson grammar dependency supplies the accepted common plaquette coefficient, and the constant-lift obstruction blocks reusing scalar/response factors as an exact action-coupling lift. N1: six attacks were considered within the packet: pseudoscalar-as-time-generator, representation-dependence of centrality, eta orientation sign split, eta site/parity escape beyond the sampled cube, accepted Wilson grammar already allowing anisotropic coefficients, and scalar/response constant-lift route to changing the action surface; all fail or are ruled out by the source, runner, or one-hop dependencies, while unrelated future anisotropy theorems remain outside scope. N2: the walls are not inflated; the Cl(3) and eta walls are independent, and the accepted-Wilson grammar is a separate boundary condition. N3: phrases such as accepted and standard are backed by the one-hop Wilson dependency or by the explicit eta definition in the note; no hidden wall is needed. N4: residuals match: the scalar-temporal dependency supports only one common Wilson coefficient, and the constant-lift dependency attacks action-coupling lift reuse; neither is used for a broader global no-go. N5: rhetoric is narrowed to these mechanisms and six plaquette orientations, not every anisotropy route. N6: convention/reframe paths are not invoked; the claim does not say a new axiom is required globally, only that these routes do not justify replacement absent separate approval. N7: the strongest steelman is that another approved theorem could derive anisotropic coefficients, but the note expressly leaves that open, so it does not defeat the scoped claim. N8: the restricted packet has no prior panel outcomes and no applicable retired similar wall; no cross-cycle echo undermines this narrow boundary.
-
-Five-judge panel breakdown: 5x ('first', 'audited_clean', 'no_go', 'A').
-- **rationale:** Scoped to the source note's route-specific boundary, audited_clean/no_go is applyable. The runner/source prove the two contested PR #528 mechanisms fail: omega=G1G2G3 is central in Cl(3), squares to -I in the Pauli irrep, commutes with each G_i, and has nonzero anticommutators, so it is not a fourth anticommuting generator; the standard staggered eta plaquette product is -1 for every xy,xz,xt,yz,yt,zt orientation, so it supplies no orientation-dependent factor. The one-hop Wilson grammar dependency supplies the accepted common plaquette coefficient, and the constant-lift obstruction blocks reusing scalar/response factors as an exact action-coupling lift. N1: six attacks were considered within the packet: pseudoscalar-as-time-generator, representation-dependence of centrality, eta orientation sign split, eta site/parity escape beyond the sampled cube, accepted Wilson grammar already allowing anisotropic coefficients, and scalar/response constant-lift route to changing the action surface; all fail or are ruled out by the source, runner, or one-hop dependencies, while unrelated future anisotropy theorems remain outside scope. N2: the walls are not inflated; the Cl(3) and eta walls are independent, and the accepted-Wilson grammar is a separate boundary condition. N3: phrases such as accepted and standard are backed by the one-hop Wilson dependency or by the explicit eta definition in the note; no hidden wall is needed. N4: residuals match: the scalar-temporal dependency supports only one common Wilson coefficient, and the constant-lift dependency attacks action-coupling lift reuse; neither is used for a broader global no-go. N5: rhetoric is narrowed to these mechanisms and six plaquette orientations, not every anisotropy route. N6: convention/reframe paths are not invoked; the claim does not say a new axiom is required globally, only that these routes do not justify replacement absent separate approval. N7: the strongest steelman is that another approved theorem could derive anisotropic coefficients, but the note expressly leaves that open, so it does not defeat the scoped claim. N8: the restricted packet has no prior panel outcomes and no applicable retired similar wall; no cross-cycle echo undermines this narrow boundary.
-
-Five-judge panel breakdown: 5x ('first', 'audited_clean', 'no_go', 'A').
-- **auditor confidence:** 0.88
 
 ### `gellmann_completeness_theorem_note_2026-05-02`
 

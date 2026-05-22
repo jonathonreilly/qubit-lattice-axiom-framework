@@ -14,6 +14,45 @@ route-specific exact negative boundary; audit outcome and effective status are
 set only by independent re-audit.
 **Primary runner:** `scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py`
 
+## Qubit-Reframe Grounding (2026-05-22)
+
+Under the current framework memo
+[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), the
+one-qubit operator algebra at each lattice site is equivalently
+`Cl(3,0)` with the pseudoscalar `ω = σ_1 σ_2 σ_3` carrying `ω² = −𝟙`
+and `ω` central in `Cl(3,0)`. The companion
+[`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`](QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md)
+records the same binding definition. Thus the ω-centrality calculation
+in §1 below is a calculation inside the framework's local algebra, not
+an extra Clifford-structure premise.
+
+Specifically:
+- The three Pauli generators `σ_1, σ_2, σ_3` are the standard
+  generators of the one-qubit `Cl(3,0)` local algebra.
+- The pseudoscalar `ω = σ_1 σ_2 σ_3` is the `Cl(3,0)` volume element,
+  central in the odd-dimensional algebra because moving `ω` past any
+  `σ_i` picks up two sign flips (no net sign change).
+- The image of `ω` under the `Cl(3,0) ≅ M_2(ℂ)` identification is
+  `i · 𝟙_{M_2(ℂ)}`; the complex structure used here is already part
+  of the one-qubit operator-algebra identification, not an added
+  premise for this no-go.
+
+The no-go below therefore reads as a theorem about the framework's
+one-qubit local algebra rather than a result that depends on an
+admitted Clifford structure: in `Cl(3,0)`, `ω` is structurally central
+(after identification with `i·𝟙`), and a fourth anticommuting Clifford
+generator giving `Cl(3,1)` is not supplied by the one-qubit / `Z^3`
+baseline alone. The framework's time-direction lane remains a separate
+derived structure (plain-text pointer: `ANOMALY_FORCES_TIME_THEOREM.md`),
+not a fourth `Cl(3,0)` generator.
+
+This grounding does not change the no_go's claim_type or claim_scope;
+it ties the existing ω-centrality argument to the current one-qubit
+operator-algebra wording. The independent audit lane retains status
+authority; pre-edit ledger row was `effective_status: retained_no_go`
+(audited_clean, judicial third pass), and this content-only grounding
+edit triggers the standard re-audit queue.
+
 ## Question
 
 PR #528 asked whether the accepted Wilson gauge action should be changed or

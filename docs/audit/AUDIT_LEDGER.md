@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 118 |
-| **retained_no_go** | 147 |
+| **retained_no_go** | 148 |
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
 | unaudited | 1329 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -47,8 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 607 |
+| `audited_clean` | 608 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 69 |
@@ -119,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `yt_ew_m_residual_note_2026-05-02` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -724,6 +721,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `work_history.yt.yt_unbounded_program_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | B | - |
+| `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11892,6 +11890,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **open / conditional deps cited:**
   - `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
   - `EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+
+### `yt_ew_m_residual_note_2026-05-02`
+
+- **Note:** [`YT_EW_M_RESIDUAL_NOTE_2026-05-02.md`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** CMT mean-field factorization alone is channel-blind: it uniformly multiplies both singlet and adjoint Fierz channels by u_0^2 and therefore cannot by itself select the adjoint channel.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T165607Z-2ce9707c-yt_ew_m_residual_note_20-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Under G_full = u_0 · G_V, S(G_full) = u_0^2 S(G_V) and C(G_full) = u_0^2 C(G_V), so CMT factorization scales both Fierz channels uniformly.  _(class `A`)_
+- **chain closes:** True — The scoped negative claim follows algebraically from the provided Fierz decomposition and scalar multiplication G -> u_0 G. The remaining EW-current Wilson-line construction is correctly identified as outside this no-go scope, not used to prove the negative boundary.
+- **rationale:** The runner source genuinely computes the Fierz decomposition, diagonal-channel behavior, and u_0^2 scaling rather than merely printing constants; the load-bearing no-go is an algebraic closure over the cited Fierz identity. No-Go Discipline passes for the tested resolution: alternative routes A-C in the note are distinguished from CMT-only selection, the residual exactly matches the missing M closure, and possible convention or current-construction repairs do not defeat the narrow claim that CMT factorization alone is channel-blind. The cited authority is retained for the Fierz decomposition used here, while its open matching rule is not imported as a premise for this no-go.
 - **auditor confidence:** high
 
 ### `yt_ssb_matching_gap_analysis_note_2026-04-18`

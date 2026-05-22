@@ -338,7 +338,7 @@ Two hostile-audit-grade fixes applied to this note:
   single-clock companion propagates into this chronology proof.
 
 See companion fix-record:
-[`CHRONOLOGY_PROTECTION_NOTE_2026-05-17.md`](CHRONOLOGY_PROTECTION_NOTE_2026-05-17.md).
+`CHRONOLOGY_PROTECTION_NOTE_2026-05-17.md`.
 
 Paired verifier:
 `scripts/frontier_chronology_protection_downstream_fix.py`.

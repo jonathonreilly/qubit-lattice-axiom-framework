@@ -243,7 +243,16 @@ python3 scripts/frontier_neutrino_mass_reduction_to_dirac.py
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- `publication/ci3_z3/DERIVATION_ATLAS.md` <!-- cycle-break 2026-05-15: forward ref backticked -->
+- `publication/ci3_z3/DERIVATION_ATLAS.md`
+  (see-also catalog reference; backticked to break cycle-0035 / cycle-0046 /
+  cycle-0047 in the citation graph. The derivation atlas catalogs this
+  neutrino note as one of its canonical-toolkit rows; the atlas row consumes
+  the present note's content for its row description, so the load-bearing
+  citation direction is *publication.ci3_z3.derivation_atlas →
+  this_neutrino_mass_reduction_to_dirac_note*, not vice versa. The atlas-
+  placement marker at the top of this note's frontmatter is a file pointer,
+  not a derivation cite. Duplicate markdown-link bullet to the same atlas
+  target was removed in this pass per the PR #1666 duplicate-block pattern.)
 - `publication.ci3_z3.publication_matrix`
   (see-also cross-reference; backticked to break cycle-0010 in the citation
   graph. The publication matrix catalogs this neutrino note as one row in
@@ -251,6 +260,5 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   consumes the present note's content for its row description, so the
   load-bearing citation direction is *publication.ci3_z3.publication_matrix
   → this_neutrino_mass_reduction_to_dirac_note*, not vice versa.)
-- [publication.ci3_z3.derivation_atlas](publication/ci3_z3/DERIVATION_ATLAS.md)
 - [higgs_vacuum_explicit_systematic_note](HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md)
 - [higgs_mass_derived_note](HIGGS_MASS_DERIVED_NOTE.md)

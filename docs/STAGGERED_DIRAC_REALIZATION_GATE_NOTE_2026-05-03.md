@@ -317,7 +317,7 @@ the gate's parent identity is upstream of them, not downstream.
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This graph-bookkeeping section records explicit downstream-consequence pointers so audit-lane reviewers can navigate to the in-flight closure candidates. Per this note's `## Citation-graph note` rule, the references are plain-text backtick filenames so the citation-graph builder does not parse them as upstream dependency edges; the supporting notes are downstream consequences / supporting attempts at closing this gate, not upstream load-bearing premises of this open-gate parent identity.
 
-- [staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17](STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md)
-- [staggered_dirac_substep4_labeling_no_go_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)
+- `STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md` (named bounded closure candidate for the kinetic-and-algebra surface; downstream consequence of this open-gate parent)
+- `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md` (substep-4 species-labeling no-go audit-companion; downstream consequence of this open-gate parent)

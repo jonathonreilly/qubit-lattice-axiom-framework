@@ -13,9 +13,10 @@
       },
       "bias_direction_breakdown": {},
       "criticality_counts": {
-        "critical": 7,
+        "critical": 1,
+        "high": 2,
         "leaf": 12,
-        "medium": 2
+        "medium": 6
       },
       "cross_confirmation_agreement_rate": 0.5,
       "cross_confirmation_outcomes": {
@@ -55,10 +56,10 @@
         "same_severity": 9
       },
       "criticality_counts": {
-        "critical": 49,
-        "high": 2,
+        "critical": 26,
+        "high": 13,
         "leaf": 181,
-        "medium": 23
+        "medium": 35
       },
       "cross_confirmation_agreement_rate": 0.681,
       "cross_confirmation_outcomes": {
@@ -101,10 +102,10 @@
         "same_severity": 17
       },
       "criticality_counts": {
-        "critical": 251,
-        "high": 10,
-        "leaf": 224,
-        "medium": 66
+        "critical": 119,
+        "high": 50,
+        "leaf": 225,
+        "medium": 157
       },
       "cross_confirmation_agreement_rate": 0.755,
       "cross_confirmation_outcomes": {

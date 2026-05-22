@@ -183,7 +183,7 @@ exact `fractions.Fraction` arithmetic.
   - companion solving the RH hypercharges using these LH inputs.
 - [`SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md`](SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md)
   - companion verifying the Witten cancellation across the full content.
-- [`SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md`](SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md)
+- `SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md`
   - companion handling the cubic SU(3) gauge anomaly.
 - `BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md`
   - companion handling the B-L gauge-extension anomaly closure.

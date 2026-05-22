@@ -234,8 +234,8 @@ bare_retained_allowed: false
 
 - [`YT_EW_COLOR_PROJECTION_THEOREM.md`](YT_EW_COLOR_PROJECTION_THEOREM.md) — parent (M residual flagged in audit verdict)
 - [`YUKAWA_COLOR_PROJECTION_THEOREM.md`](YUKAWA_COLOR_PROJECTION_THEOREM.md) — parent of audit verdict
-- [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md) — leading-order 1/N_c R_conn derivation (sister)
-- [`EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md`](EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md) — bounded-support theorem (already documents the same bounded statement)
+- `RCONN_DERIVED_NOTE.md` — leading-order 1/N_c R_conn derivation (sister)
+- `EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md` — bounded-support theorem (already documents the same bounded statement)
 - PR #249 (merged) — Fierz-channel exact group-theory derivation
 - PR #250 — cycle-cleanup integration
 - 't Hooft 1974, Witten 1979, Coleman 1985, Manohar 1998 — standard 1/N_c references

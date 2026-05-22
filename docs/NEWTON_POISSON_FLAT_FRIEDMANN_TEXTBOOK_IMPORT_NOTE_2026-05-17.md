@@ -88,7 +88,7 @@ The same `(F1)` is recovered as the symmetric limit of the
 
 This wrapper is consumed by:
 
-- [DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md) — combines `(F1)` with the radiation density `rho_rad(T) = (pi^2 / 30) g_* T^4` to obtain `H_rad(T) = sqrt(4 pi^3 g_* / 45) T^2 / M_Pl` on the flat FRW slice.
+- `DM_LEPTOGENESIS_HRAD_THEOREM_NOTE_2026-04-16.md` — combines `(F1)` with the radiation density `rho_rad(T) = (pi^2 / 30) g_* T^4` to obtain `H_rad(T) = sqrt(4 pi^3 g_* / 45) T^2 / M_Pl` on the flat FRW slice.
 
 ## Boundary
 

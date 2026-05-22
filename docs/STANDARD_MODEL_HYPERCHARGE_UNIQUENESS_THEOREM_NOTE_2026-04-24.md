@@ -100,7 +100,7 @@ Tr[Y³]  =  6 · (1/3)³ + 2 · (−1)³ − 3·y_1³ − 3·y_2³ − y_3³ −
 ```
 
 (The `−16/9` is the LH-only cubic contribution, now explicitly packaged in
-[`LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md`](LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md).)
+`LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md`.)
 
 ### 2.2 Anomaly-cancellation system
 

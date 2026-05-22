@@ -17,7 +17,7 @@ analogue.
 This wrapper note documents the Bogoliubov inequality plus the
 Mermin-Wagner / Hohenberg / Coleman dimension-restriction theorems as
 named non-derivation imports so downstream rows (notably
-[AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md))
+`AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md`)
 can register one-hop dependencies for the textbook technique inputs.
 
 ## Imports covered
@@ -99,7 +99,7 @@ dimensions," *Comm. Math. Phys.* **31**, 259 (1973).
 
 This wrapper is consumed by:
 
-- [AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md](AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md) — uses Bogoliubov's inequality (Step 1) and the lattice IR-integral analysis (Step 3-4) on `Z^d`, both of which are textbook moves classified by the Mermin-Wagner / Hohenberg / Coleman literature. The consumer note's framework contribution is the explicit `Cl(3) ⊗ Z^d` substrate adaptation and the `d_s = 3` minimality conclusion combining Mermin-Wagner with the framework's D9 long-range-force/kernel condition.
+- `AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md` — uses Bogoliubov's inequality (Step 1) and the lattice IR-integral analysis (Step 3-4) on `Z^d`, both of which are textbook moves classified by the Mermin-Wagner / Hohenberg / Coleman literature. The consumer note's framework contribution is the explicit `Cl(3) ⊗ Z^d` substrate adaptation and the `d_s = 3` minimality conclusion combining Mermin-Wagner with the framework's D9 long-range-force/kernel condition.
 
 ## Boundary
 

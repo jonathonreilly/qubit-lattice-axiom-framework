@@ -84,4 +84,4 @@ This is a bounded negative result, not a failure of the broader surrogate lane.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [quasi_persistent_relaunch_probe_note](QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md)
+- `QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md` (downstream probe; backticked to break cycle-0004 in the citation graph)

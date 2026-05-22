@@ -16,7 +16,12 @@ order-parameter, the Coleman-Weinberg potential bridge, and the
 EWSB-from-Cl(3)/Z^3 chain") remains a separate open work item not in
 the load-bearing scope of this note. Authority for any specific
 Higgs-mass numerical readout is delegated to
-[HIGGS_MASS_DERIVED_NOTE.md](HIGGS_MASS_DERIVED_NOTE.md), with its own
+`HIGGS_MASS_DERIVED_NOTE.md` (see-also delegation pointer; backticked to
+break cycle-0030 in the citation graph — load-bearing citation direction is
+*higgs_mass_derived_note → this_mechanism_note*, as recorded in the
+"Audit dependency repair links" section below and consistent with the
+derived-mass authority's own "Supporting Higgs surfaces" listing of this
+note), with its own
 admissions; this note exists only to record the mechanism-level
 support surface.
 **Status authority:** independent audit lane only.

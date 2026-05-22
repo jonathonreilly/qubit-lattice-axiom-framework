@@ -55,7 +55,7 @@ status.
 | [`UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md`](UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md) | canonical textbook Einstein-Hilbert action family with cosmological-constant sector (theorem condition 3, used in Leg A) | unaudited |
 | [`S3_GENERAL_R_DERIVATION_NOTE.md`](S3_GENERAL_R_DERIVATION_NOTE.md) | round `S^3` of radius `R` for any `R > 0` (theorem condition 4 part i) | unaudited |
 | [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md) | `S^3` cap uniqueness (theorem condition 4 part ii) | audited_conditional |
-| [`COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md`](COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md) | "exact on the retained internal surface" point 2 — Leg B Obata equality reference | unaudited |
+| `COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` (backticked to break cycle-0043/0044 length-3 cycles; the load-bearing citation direction is *result_2026-04-12 → spectral-gap-identity* via the result note's own dependency chain, not the other way: Leg B Obata equality below is proved directly from Lichnerowicz-Obata, not from the result note) | "exact on the retained internal surface" point 2 — Leg B Obata equality attribution back-reference | unaudited |
 | [`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md) | "Fixed-gap vacuum scale" section — Leg A Einstein-side reference | audited_conditional |
 | [`DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`](DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md) | downstream EOS corollary that consumes this identity | unaudited |
 
@@ -102,7 +102,8 @@ cosmological-constant companion into two strictly separated pieces:
    cosmology-scale identification blocker and stays bounded.
 
 The identity is already called "exact on the retained internal surface" in
-[`COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md`](COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md)
+`COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` (backticked to break cycle-0043/0044;
+attribution back-reference only, this note's Leg A/Leg B proof stands without that note)
 (section "Exact on the retained internal surface", point 2), and the GR-side
 derivation is already written out in
 [`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md)
@@ -184,7 +185,8 @@ This is the Obata equality for spheres (Lichnerowicz–Obata 1962/1968):
 for an n-dimensional round sphere of radius `R`, `lambda_1 = n / R^2`, and
 for `n = 3` this gives `3 / R^2`. This is the content of the
 "exact on the retained internal surface" point 2 of
-[`COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md`](COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md).
+`COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` (backticked to break
+cycle-0043/0044; attribution back-reference only).
 
 *Closing.* Legs A and B give the same function `3 / R^2` of the same
 retained radius `R`, so as an identity on the retained de Sitter stationary
@@ -214,7 +216,8 @@ numerical value of `R` is not. □
   "Honest Remaining Gap";
 - the numerical value of `Lambda`: remains the bounded companion
   result of
-  [`COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md`](COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md);
+  `COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` (backticked to break
+  cycle-0043/0044; see-also pointer only);
 - the present-day `Omega_Lambda` value: remains gated on the matter-content
   bridge, unchanged;
 - the full FRW / expansion-history derivation: still conditional.
@@ -289,7 +292,8 @@ This note does not close:
   [`COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`](COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md),
   "Honest Remaining Gap";
 - the numerical value of `Lambda`: bounded companion result of
-  [`COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md`](COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md);
+  `COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` (backticked to break
+  cycle-0043/0044; see-also pointer only);
 - the present-day `Omega_Lambda` value: gated on the matter-content bridge;
 - the full FRW / expansion-history derivation: still conditional;
 - any retained-grade promotion of the eight upstream authorities listed in

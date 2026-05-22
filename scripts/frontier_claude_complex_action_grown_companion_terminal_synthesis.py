@@ -195,15 +195,15 @@ def main() -> int:
     # ---- companion + cross-references ----
     check(
         "cites sibling quark projector terminal synthesis (PR #959)",
-        "QUARK_PROJECTOR_PARAMETER_AUDIT_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10" in note,
+        "QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10" in note,
     )
     check(
         "cites sibling DM leptogenesis terminal synthesis (PR #960)",
-        "DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10" in note,
+        "DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10" in note,
     )
     check(
         "cites synthesis-template (BAE 30-probe)",
-        "KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09" in note,
+        "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09" in note,
     )
     check(
         "cites leaf source note in cross-references",
@@ -211,7 +211,7 @@ def main() -> int:
     )
     check(
         "cites campaign-level synthesis template",
-        "AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02" in note,
+        "AUDIT_BACKLOG_NOTE_2026-05-02" in note,
     )
 
     # ---- review-loop rule ----

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py
-runner_sha256: 4962e4d515e305e9052629b690369e3527cc007fb95c2ccea5e51e9d86e92252
+runner_sha256: b9b2b3f28e2d4fb43b30c382ca27d44b4e55daf849e7b9acb165e63803f2ae85
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.13
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
 ----- stdout -----
 Quark projector-parameter audit terminal-synthesis check
 note: docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md
@@ -33,7 +33,7 @@ PASS: explicitly says do NOT spawn retained-promotion attempts on carrier dep
 PASS: explicitly says no new vocabulary / tags / framings
 PASS: proposal_allowed: false declared
 PASS: proposal_allowed_reason justifies as backward-looking synthesis
-FAIL: cites sibling BAE terminal synthesis as template
+PASS: cites sibling BAE terminal synthesis as template
 PASS: cites leaf source note in cross-references
 PASS: cites projector-ray dep source note in cross-references
 PASS: cites carrier-completion dep source note in cross-references
@@ -52,7 +52,8 @@ PASS: projector-ray dep routes through carrier-completion dep | deps: ['quark_cp
 PASS: audit/README.md retains 'audited_<failure_mode>' terminal language
 PASS: audit/README.md retains definition-as-derivation language
 
-TOTAL: PASS=41 FAIL=1
+TOTAL: PASS=42 FAIL=0
+Quark projector-parameter audit terminal-synthesis check passed: leaf and both deps cited, terminal verdict + cross-confirmation + judicial-third-audit recorded, repair surface analysis present, audit-lane policy authority cited, do-NOT-spawn-campaign-cycles recommendation present, live ledger state consistent with synthesis.
 
 ----- stderr -----
 

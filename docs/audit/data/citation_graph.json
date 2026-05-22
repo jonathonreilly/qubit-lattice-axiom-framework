@@ -22193,10 +22193,6 @@
       "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
     },
     {
-      "from": "rconn_derived_note",
-      "to": "yt_ew_matching_rule_m_note_2026-05-02"
-    },
-    {
       "from": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
     },
@@ -27439,14 +27435,6 @@
     {
       "from": "yt_ew_matching_rule_m_note_2026-05-02",
       "to": "yukawa_color_projection_theorem"
-    },
-    {
-      "from": "yt_ew_matching_rule_m_note_2026-05-02",
-      "to": "rconn_derived_note"
-    },
-    {
-      "from": "yt_ew_matching_rule_m_note_2026-05-02",
-      "to": "ew_current_matching_ozi_suppression_theorem_note_2026-04-27"
     },
     {
       "from": "yt_ew_m_residual_note_2026-05-02",
@@ -51461,7 +51449,7 @@
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1e8ecfe1839a533cef67b9d766c8408eedf6211a1686c4a23c6bc8717f503549",
+      "note_hash": "2d9dc42b5609ddd9e3c416d8804ab9b8dd5ff05d2993d8cef8bf74c83811bf7d",
       "path": "docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md",
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "EW Current Matching via OZI / Disconnected-Trace Suppression Theorem"
@@ -70807,11 +70795,10 @@
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "yukawa_color_projection_theorem",
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "yt_ew_matching_rule_m_note_2026-05-02"
+        "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "158ae00467012729fb2640e55de8880e041d8b0d5bf733a2ffc30a9f5e5dc6ca",
+      "note_hash": "1afdba960c9ac0063796c197510ce4cb798defd2c01152df4faa491894bdb278",
       "path": "docs/RCONN_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate"
@@ -70878,7 +70865,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -79862,12 +79849,10 @@
       "claim_type_seed_hint": null,
       "deps": [
         "yt_ew_color_projection_theorem",
-        "yukawa_color_projection_theorem",
-        "rconn_derived_note",
-        "ew_current_matching_ozi_suppression_theorem_note_2026-04-27"
+        "yukawa_color_projection_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6f4a23b1188957eb20155e3a0c9a6fe7d5011dcc0948aa54d4f6b4f7b7a23035",
+      "note_hash": "f5491df9c10bfc629a4562d5f888700d297684dbe47def49971eac48d80063f7",
       "path": "docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_yt_ew_matching_rule_m_stretch.py",
       "title": "yt_ew Matching Rule M Stretch Attempt: Named Obstruction"
@@ -81703,8 +81688,8 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
-    "leaf_count": 740,
+    "edge_count": 9740,
+    "leaf_count": 741,
     "node_count": 2483,
     "root_count": 808,
     "runners_with_path": 2048

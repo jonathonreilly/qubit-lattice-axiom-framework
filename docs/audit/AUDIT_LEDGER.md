@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 369 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 94 |
+| ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 3 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 621 |
-| `audited_conditional` | 94 |
+| `audited_conditional` | 95 |
 | `audited_decoration` | 27 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1540 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
@@ -811,6 +811,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -9503,6 +9504,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With y_4 = 0 and y_1 + y_2 = 2/3, (A1) forces y_3 = -2, and (A3) reduces to the quadratic 9 t^2 - 6 t - 8 = 0 whose roots are 4/3 and -2/3.  _(class `A`)_
 - **chain closes:** True — The scoped theorem is explicitly conditional on the anomaly equations, neutral-singlet identification, and Q-labelling convention. From those retained hypotheses the algebraic enumeration, swap ambiguity, Q-selected singleton, and stated charge denominators close without any required external comparator or upstream physics derivation.
 - **rationale:** The load-bearing result is an exact algebraic consequence of the equations stated inside the note. The runner independently checks the reductions, quadratic discriminant, full rational solution set, Q-labelling selection, charge arithmetic, and no-N counterfactual at exact symbolic precision. The note also keeps the upstream derivation of the anomaly coefficients and y_4 = 0 outside the claim boundary, so those are not blockers for this bounded theorem.
+- **auditor confidence:** high
+
+### `sm_relativistic_dof_count_import_note_2026-05-17`
+
+- **Note:** [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](../../docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A named non-derivation import wrapper for the Standard-Model relativistic effective degree-of-freedom count g_* = 106.75 at electroweak-scale relativistic temperatures.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T232602Z-4332cd86-sm_relativistic_dof_coun-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At temperatures above the electroweak scale, the Standard Model has g_*(T) = 28 + (7/8) * 90 = 106.75, with 28 bosonic and 90 fermionic relativistic degrees of freedom.  _(class `B`)_
+- **chain closes:** False — The arithmetic 28 + (7/8)*90 = 106.75 is straightforward, and the cited retained authority supports the 7/8 ratio. The restricted packet does not include a retained authority deriving or auditing the SM particle-content bookkeeping that supplies the 28 bosonic and 90 fermionic counts.
+- **rationale:** The note is explicit that it is a named non-derivation import, not a framework derivation of the Standard Model content or of the 28 + 90 count. The only provided one-hop retained authority supports the 7/8 fermion/boson factor, not the SM degrees-of-freedom inventory. Textbook references are named but not provided as retained-grade audit inputs in the restricted packet, so the imported count remains an open dependency rather than a closed theorem from the supplied authorities.
+- **open / conditional deps cited:**
+  - `SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `source_driven_field_recovery_h025_pocket_note`

@@ -224622,22 +224622,41 @@
       "verdict_rationale": null
     },
     "sm_relativistic_dof_count_import_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T23:26:23.084241+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2."
+        },
+        "dep_claim_type": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 9.18,
+        "runner_hash": null,
+        "transitive_descendants": 289
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T232602Z-4332cd86-sm_relativistic_dof_coun-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic 28 + (7/8)*90 = 106.75 is straightforward, and the cited retained authority supports the 7/8 ratio. The restricted packet does not include a retained authority deriving or auditing the SM particle-content bookkeeping that supplies the 28 bosonic and 90 fermionic counts.",
       "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "A named non-derivation import wrapper for the Standard-Model relativistic effective degree-of-freedom count g_* = 106.75 at electroweak-scale relativistic temperatures.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T23:26:23.084241+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -224645,26 +224664,28 @@
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 9.18,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At temperatures above the electroweak scale, the Standard Model has g_*(T) = 28 + (7/8) * 90 = 106.75, with 28 bosonic and 90 fermionic relativistic degrees of freedom.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "bdd6146b189aa9646e8a4a119527fb050659963915114e400347540ba30cdf13",
       "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide a retained one-hop authority or bounded import note for the SM particle-content bookkeeping yielding 28 bosonic and 90 fermionic relativistic degrees of freedom.",
+      "open_dependency_paths": [
+        "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 1,
+        "B": 1,
         "C": 0,
         "D": 0,
         "total_pass": 0
@@ -224672,7 +224693,7 @@
       "runner_path": null,
       "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Named Non-Derivation Import",
       "transitive_descendants": 289,
-      "verdict_rationale": null
+      "verdict_rationale": "The note is explicit that it is a named non-derivation import, not a framework derivation of the Standard Model content or of the 28 + 90 count. The only provided one-hop retained authority supports the 7/8 fermion/boson factor, not the SM degrees-of-freedom inventory. Textbook references are named but not provided as retained-grade audit inputs in the restricted packet, so the imported count remains an open dependency rather than a closed theorem from the supplied authorities."
     },
     "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
       "audit_date": null,

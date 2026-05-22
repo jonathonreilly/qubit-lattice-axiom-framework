@@ -24,7 +24,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
 | unaudited | 1299 |
-| meta | 222 |
+| meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 96 |
@@ -57,13 +57,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1521 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1023 |
 | `decoration` | 36 |
-| `meta` | 226 |
+| `meta` | 227 |
 | `no_go` | 238 |
 | `open_gate` | 112 |
 | `positive_theorem` | 731 |
@@ -73,7 +73,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 1241 |
 | `high` | 35 |
 | `medium` | 198 |
-| `leaf` | 892 |
+| `leaf` | 893 |
 
 - **Retained pending chain closure:** 11
 - **Citation cycles detected:** 292

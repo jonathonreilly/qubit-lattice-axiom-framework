@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 145 |
+| **retained_no_go** | 146 |
 | **retained_bounded** | 377 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1325 |
+| unaudited | 1324 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 610 |
+| `audited_clean` | 611 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1547 |
+| `unaudited` | 1546 |
 
 | claim_type | count |
 |---|---:|
@@ -484,6 +484,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7566,6 +7567,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given scalar additivity, CPT-even phase blindness, continuity/minimal regularity, and normalization, W must solve W(r1 r2)=W(r1)+W(r2), so W=log|det(D+J)| up to the stated convention.  _(class `A`)_
 - **chain closes:** False — The runner supports the finite algebra for the chosen candidate generator, but the physical selection of that generator still rests on an admitted scalar-additivity premise and an unproved normalization/source bridge. No one-hop authority is supplied to close those premises, and the claimed runner-local retirement of P2/P4 does not derive the physical phase-blind generator or multiplicative scale choice from retained inputs.
 - **rationale:** Issue: the exact log-det algebra is verified only after selecting the physical scalar generator by admitted additivity/CPT-even/regularity/normalization premises, with P1 still explicitly open and the multiplicative normalization c=1 conventional. Why this blocks: the restricted packet has no retained one-hop theorem deriving that physical observable bridge, and the runner mainly checks consistency of the chosen W rather than forcing the observable class from the axiom alone. Repair target: add a bridge theorem deriving scalar additivity and the normalization/source scale from retained primitives, or keep all downstream citations explicitly conditional on those premises. Claim boundary until fixed: the finite algebra for the selected log|det| generator on the runner block is supported; unconditional axiom-to-observable closure is not.
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_CONNES_NC_SPECTRAL_NARROW_NOTE_2026-05-21.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_CONNES_NC_SPECTRAL_NARROW_NOTE_2026-05-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-scoped no_go that the Connes noncommutative-geometry spectral-triple admission ((NC.1) spectral triple (A,H,D) on the framework lattice algebra, (NC.2) cutoff function f, (NC.3) identification W[J] = -zeta'_{D+J}(0)) does NOT bypass the Route D Pattern-L circularity for P1 of OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE. The admission decomposes into (NC.a) the universal Mellin-transform identity -zeta'_D(0) = log|det D| on finite-dim self-adjoint invertible D (genuinely smaller than P1; not load-bearing) plus (NC.b) the identification of the framework's physical scalar generator with the additive spectral log-det representative of the multiplicative family {F_p = |det D|^p}, which is logically equivalent to P1 in spectral-zeta vocabulary. This note adds the spectral-zeta-regularization circularity obstruction as a descriptive extension of the Route D Pattern-L enumeration without altering any upstream status; it does NOT claim P1 is false.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-21-obs-principle-row1`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** True — Leaf no_go with deps=[] is purely structural and self-contained. The note's load-bearing step is the equivalence lemma (NC.b) <=> P1 (Sec 3.2), proven in two directions: (=>) is the spectral-additivity derivation under (NC.b)+(S.3); (<=) uses the Cauchy classifier on (R_+, *) -> (R, +) applied to |det(D+J)| on the multiplicative substrate plus the universal Mellin identity (NC.a). The cached runner (frontier_observable_principle_p1_bridge_connes_nc_spectral.py) verifies T1-T5 at exact SymPy precision: spectrum-of-direct-sum (S.1), heat-kernel additivity (S.2), zeta additivity (S.3), Mellin identity (NC.a) at finite-dim, the spectral-additivity P1 derivation, and the F_p counterexample showing log|det| is the additive representative. N1-N8 (Sec 5) PASS: N1 enumerates 5+ alternative routes (pure NCG mathematical, Class-D cutoff, spectral-additivity-only, F_p alternative, scale-normalization), N2 collapses to one wall (NC.b identification), N3 explicitly classifies 'standard', 'convention', 'framework' usage, N4 matches Route D / structural-reframing / cumulant witnesses to the same identification residual, N5 scopes negation as 'this route does not close P1' (NOT 'P1 is impossible'), N6 acknowledges convention-ratification as future open path, N7 steelman is the spectral-additivity forcing argument (correctly rebutted by showing identification step remains), N8 echoes prior routes' identical wall shape with no retired analogue. The no_go is honestly route-scoped: it adds a descriptive Pattern-L instance without retiring or promoting any row.
+- **rationale:** Leaf no_go ships audited_clean: (a) the load-bearing equivalence (NC.b) <=> P1 is proven in both directions with elementary Cauchy classifier + Mellin identity, (b) the cached runner verifies the symbolic content at exact precision including the F_p counterexample, (c) N1-N8 are present and pass — five distinct attack routes (pure NCG mathematical via (NC.a)+(S.1-S.3), Class-D cutoff (NC.2), spectral-additivity-only, F_p alternative spectral functional, scale-normalization) are enumerated and each is honestly closed against this admission, walls collapse to one (identification (NC.b)), no hidden walls promoted, witness residuals match (Route D, structural-reframing, cumulant all attack the same selection step), rhetoric stays route-scoped, the convention-ratification escape hatch is documented as forward path, the steelman 'Connes spectral additivity forces log from (NC.a)+(S.1-S.3) without (NC.b)' is correctly rebutted by exhibiting F_p with its own valid spectral expansion, and prior Pattern-L walls have not been retired by any mechanism that would apply here. Residual risk: a future convention-ratification note or retained derivation that identifies framework physical W with the spectral log-det without an additivity classifier would convert this into a partial-closure path, as the note explicitly states.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21`

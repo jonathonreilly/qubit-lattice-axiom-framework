@@ -198827,7 +198827,7 @@
       "verdict_rationale": null
     },
     "q_integer_spectrum_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-22T03:41:45.508789+00:00",
+      "audit_date": "2026-05-22T12:59:58.055044+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
         "dep_claim_scope": {
@@ -198842,25 +198842,25 @@
         "deps": [
           "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
         ],
-        "load_bearing_score": 10.95,
+        "load_bearing_score": 11.04,
         "runner_hash": "9042cf2aed3bb0c2bdd1d6d56595c0adab190cb424e5c09d246afda1d2846f77",
-        "transitive_descendants": 988
+        "transitive_descendants": 1052
       },
       "audit_status": "audited_conditional",
-      "auditor": "claude-audit-loop-2026-05-19-q-integer-xconf",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T125812Z-34ddc3b9-q_integer_spectrum_theor-01",
       "auditor_confidence": "high",
-      "auditor_family": "claude-opus",
-      "auditor_model": "claude-opus-4.7-1m",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": false,
-      "chain_closure_explanation": "Once per-site H_x = C\u00b2 (with Pauli rep) is in hand, the proof closes by direct algebraic identity on Pauli matrices plus binomial counting on binary strings, fully exhibited by the runner at 0.000e+00 deviation across T1\u2013T6. However, the chain to that bridge does not close: the source note's 'Cited authorities (one hop)' section explicitly load-bears on both (U2) 'per-site Hilbert H_x \u2245 C\u00b2 (Pauli rep)' AND (U4) 'per-site Grassmann construction: one Grassmann mode per site gives a 2-dim Fock space matching the Pauli C\u00b2' from the cited per-site uniqueness theorem, but the dep's audited scope was narrowed on 2026-05-08 to physical-Cl(3)-only U1\u2013U3 (abstract real-algebra classification + chirality split + dim-2 within-chirality uniqueness), explicitly excluding U4. (U2) of the dep is conditional ('any faithful irreducible representation V satisfies dim_C V = 2'); it does not on its own establish that the physical per-site Hilbert space IS such a faithful Cl(3) irrep. The bridge from 'abstract 2-dim Cl(3) irrep' to 'per-site Fock space = C\u00b2' was the moved-out U4 / Grassmann construction step, which now lives in STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07 (or, alternatively, is stipulated axiom-level by A1 of MINIMAL_AXIOMS_2026-05-20). The q_integer note has not been updated to cite that bridge as an additional one-hop authority; under the restricted packet, the load-bearing 'H_x \u2245 C\u00b2' step cannot be discharged from the cited dep alone.",
+      "chain_closure_explanation": "The algebraic spectrum result closes once the per-site C^2 single-mode Fock space is admitted. The restricted packet does not close the framework-level identification of the physical per-site Hilbert space with that C^2 Fock space, because the only cited authority explicitly moves that U4/Grassmann bridge out of scope.",
       "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
-      "claim_scope": "On the framework N-site tensor-product Fock space H = \u2297_x H_x with per-site H_x \u2245 C\u00b2 (identified via Pauli rep), the canonical one-mode fermion construction a = \u03c3_+, a^\u2020 = \u03c3_- yields per-site number operator n\u0302_x = a^\u2020_x a_x with Spec(n\u0302_x) = {0, 1}; the total operator Q\u0302_total = \u03a3_x n\u0302_x has integer spectrum {0, 1, \u2026, N} with multiplicity C(N, k) at eigenvalue k, equivalently Q\u0302_total = (N/2)\u00b7I - (1/2) \u03a3_x \u03c3_{3,x}.",
+      "claim_scope": "Given an N-site tensor product of per-site C^2 single-mode fermion Fock spaces with n_x=a_x^\u2020 a_x, Q_total has spectrum {0,1,...,N} and charge-k multiplicity C(N,k).",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-22T03:41:45.508789+00:00",
+      "claim_type_last_reviewed": "2026-05-22T12:59:58.055044+00:00",
       "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
@@ -198911,20 +198911,22 @@
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
+      "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.04,
-      "load_bearing_step": "By per-site uniqueness, H_x \u2245 C\u00b2 with Pauli generators \u03c3_i; define a_x = \u03c3_{+,x}, a^\u2020_x = \u03c3_{-,x}; then n\u0302_x = a^\u2020_x a_x = diag(0, 1), and Q\u0302_total = \u03a3_x n\u0302_x on \u2297_x C\u00b2 acquires its spectrum {0, \u2026, N} with binomial multiplicities by Hamming-weight counting on the joint eigenbasis labelled by \u03bd \u2208 {0,1}^N.",
+      "load_bearing_step": "Since the mutually commuting n_x have eigenvalues {0,1}, their joint eigenbasis is labeled by binary strings \u03bd and Q_total|\u03bd>=(\u03a3_x \u03bd_x)|\u03bd>, giving spectrum {0,...,N} with binomial multiplicities.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8cdee38cec613f2e240ba086899ddd6df8c5231639d790cdd2c5a5437d405e9e",
       "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: cheapest repair is to add STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md as an explicit one-hop cited authority that carries the per-site Grassmann \u2192 2-dim Fock space bridge (which replaced the now-out-of-scope U4 of the cited per-site uniqueness note), and update the 'Cited authorities (one hop)' section accordingly. Alternative repair: cite A1 of MINIMAL_AXIOMS_2026-05-20.md (qubit-reframe: per-site \u2261 M_2(\u2102)) as the framework-baseline authority that fixes per-site H_x = C\u00b2 axiomatically. Once the bridge edge is wired, the proof closes as audited_clean (class A).",
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide and cite the retained/audited staggered-Dirac/Grassmann forcing substep, or an equivalent retained one-hop theorem identifying the framework per-site Hilbert with the C^2 single-mode Fock space.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 6,
         "B": 0,
@@ -198935,7 +198937,7 @@
       "runner_path": "scripts/q_integer_spectrum_check.py",
       "title": "Per-Site n\u0302 \u2208 {0, 1} \u21d2 Total Q\u0302 Integer Spectrum on Framework Fock Space",
       "transitive_descendants": 1052,
-      "verdict_rationale": "The note's six runner checks (CCR, n eigenvalues, multi-site commutativity, Q spectrum, binomial multiplicity, \u03c3_3 formula) are all class-A algebraic identities on Pauli matrices and tensor products and pass at machine precision. The proof itself, taking H_x = C\u00b2 as input, is a clean positive theorem at class (A). What blocks audited_clean is the one-hop authority chain: the cited per-site uniqueness theorem note was narrowed on 2026-05-08 to physical-Cl(3)-only U1\u2013U3, explicitly removing U4 (the per-site Grassmann construction / per-site Hilbert = C\u00b2 bridge) from its audited scope. The q_integer note still cites U4 from that dep as one of two load-bearing inputs, so the bridge from 'Cl(3) has 2-dim faithful irreps' to 'this physical site IS such a 2-dim Fock space' is not discharged inside the restricted packet. Verdict is audited_conditional under the standard tie-break (audited_clean vs audited_conditional \u2192 conditional when a cited authority does not cover a load-bearing identification)."
+      "verdict_rationale": "The runner genuinely constructs the single-site and tensor-product operators and verifies only algebraic identities: CAR, n spectrum, commutativity, total spectrum, binomial multiplicities, and the sigma_3 formula. There is no external comparator or tuned numerical input. However, the cited Cl(3) authority is retained_bounded only for the physical-Cl(3) U1-U3 representation content and explicitly says the per-site Hilbert/Grassmann realization bridge is not supplied by that note. Therefore the framework-level charge-quantization claim is conditional on a missing one-hop bridge authority."
     },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "audit_date": null,

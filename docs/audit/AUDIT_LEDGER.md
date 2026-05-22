@@ -795,7 +795,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | B | - |
+| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -7712,29 +7712,17 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md)
 - **claim_type:** `no_go`
-- **claim_scope:** No exact bosonic CCR [a, a-dagger] = I exists as bounded operators on the per-site Hilbert space H_x of the framework Cl(3) tensor Z^3 lattice, given that H_x is finite-dimensional (claimed dim 2). The proof uses the trace identity tr([A,B]) = 0 and Stone-von Neumann; both are standard math admitted as context. The negative conclusion holds for any finite-dim H_x.
+- **claim_scope:** No exact bounded per-site bosonic CCR [a,a^dagger] = I_Hx on the physical Cl(3) lattice-site Hilbert space H_x; collective or effective bosonic limits are out of scope.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `claude-audit-loop-2026-05-19-no-bosonic-ccr`  (claude-opus; independence=cross_family)
-- **load-bearing step:** None  _(class `B`)_
-- **chain closes:** None — Closure blocked by a missing one-hop dependency edge: post-2026-05-08 narrowing, the cited per-site uniqueness note does not load-bear 'per-site physical H_x is finite-dim 2.' The standard math (SvN, trace identity) closes the abstract no-go on finite-dim H, but the realization-of-physical-H_x bridge is hosted in MINIMAL_AXIOMS_2026-05-20 (qubit reframe of A1) or STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07. Neither is currently wired as a one-hop dependency for this row.
-- **rationale:** Issue: the source note's load-bearing input is 'dim_C H_x = 2 for every site x', cited from AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29. After that note's 2026-05-08 narrowing, U4 (per-site Hilbert dim = 2 on the explicit framework baseline) was explicitly moved OUT OF SCOPE and is now carried by substep 1 of the staggered-Dirac realization gate (STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07, currently unaudited bounded_theorem). The narrowed dependency (U1-U3) classifies abstract finite-dim faithful complex Cl(3) irreps as 2-dim but does not, on its own, identify the framework's per-site physical Hilbert space H_x with such an irrep -- that identification is the staggered-Dirac realization bridge or, equivalently, the qubit-reframe A1 of MINIMAL_AXIOMS_2026-05-20.
-
-Why this blocks: the no-go's cited one-hop authority does not currently supply the load-bearing 'finite-dim per-site H_x' input it needs. The mathematical content (trace identity + Stone-von Neumann implies no bounded CCR on finite-dim H) is airtight, but the bridge from 'physical per-site Hilbert space' to 'finite-dim Cl(3) module' is hosted in a sibling/successor note that is not wired as a one-hop dependency of this row.
-
-N1-N8 (gate applies despite claim_type=positive_theorem because the conclusion is structurally a no_go ruling out a representation class):
-- N1 (5 routes against the no-go): (1) unbounded operators -- ATTEMPTED, ruled out by 'bounded' scope; (2) deformed/q-CCR -- ATTEMPTED, ruled out by 'exact' scope; (3) approximate/large-N CCR -- ATTEMPTED, ruled out by 'exact' scope; (4) composite/collective bosons across sites -- ATTEMPTED, explicitly out-of-scope in the note; (5) infinite-dim per-site Fock-like H_x -- NOT explicitly addressed; would defeat the trace argument. Adequate enumeration borderline; route 5 is the actual gap.
-- N2 (wall independence): single load-bearing wall (per-site finite-dim H_x). No pairwise inflation.
-- N3 (hidden walls): 'standard math' (SvN, trace identity) is genuinely admitted-context standard; the actual hidden assumption is the realization bridge (physical H_x = Cl(3) irrep) which the post-narrowing cited dep no longer supplies.
-- N4 (residual matching): MISMATCH. Cited witness (per-site uniqueness, narrowed) attacks the abstract Cl(3) irrep dim; the claim residual is 'finite-dim physical per-site H_x'. Residuals differ post-narrowing.
-- N5 (rhetoric): narrow no-go scope (bounded, exact, finite-dim H_x); collective/effective routes carved out. OK.
-- N6 (convention reframe): qubit reframe of A1 (MINIMAL_AXIOMS_2026-05-20) makes per-site dim=2 a primitive; legitimate import-bearing path.
-- N7 (steelman): 'If the framework's per-site H_x were infinite-dim (Fock-like per-site realization, allowed if you do not commit to staggered-Dirac), bosonic CCR is permitted by Stone-von Neumann.' The no-go is conditional on finite-dim H_x, which is precisely the missing dependency edge.
-- N8 (cross-cycle echo): finite-dim per-site is the load-bearing structural commitment, now hosted in qubit-reframe A1 or staggered-Dirac substep 1; the prior wall (per-site uniqueness covering both abstract classification and physical realization) was retired/narrowed on 2026-05-08, and the realization piece migrated rather than being retired -- the same migration mechanism is what this row needs to follow.
-
-Repair target: wire one of (a) MINIMAL_AXIOMS_2026-05-20 (qubit reframe of A1 implies per-site M_2(C) implies dim H_x = 2 by primitive commitment) or (b) STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07 (the post-2026-05-08 carrier of the per-site dim=2 realization bridge) as an explicit one-hop dependency. Update the proof's Step 1 to cite the chosen carrier instead of (or alongside) the narrowed per-site uniqueness note. Once wired, this row is a direct no-go corollary of the chosen authority + admitted standard math.
-
-Claim boundary until fixed: the abstract no-go 'no finite-dim Hilbert space admits a bosonic CCR representation with bounded operators' (Stone-von Neumann + trace identity) holds unconditionally as pure math. The physics application to the framework's per-site H_x is conditional on the (currently un-wired) realization bridge.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T125009Z-34ddc3b9-no_per_site_bosonic_ccr_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note argues that tr([a,a^dagger]) = 0 for finite-dimensional H_x, while [a,a^dagger] = I_Hx would give tr(I_Hx) = dim_C H_x = 2 != 0.  _(class `A`)_
+- **chain closes:** False — The trace contradiction is valid once a finite nonzero per-site Hilbert dimension is established. The restricted packet does not establish dim_C H_x = 2, because the sole cited authority explicitly moved that physical per-site dimension bridge out of its audited scope.
+- **rationale:** The finite-dimensional trace obstruction is standard algebra, and the runner checks only that obstruction with the dim-2 premise effectively hard-coded. The cited authority is retained_bounded only for the physical-Cl(3)-only U1-U3 representation classification, while U4, the physical per-site Hilbert dimension conclusion, is explicitly out of scope. No-Go Discipline N3/N7 blocks a clean no-go: the strongest same-packet steelman is that H_x is not established as exactly the cited 2-dim module in this restricted packet. A retained one-hop bridge from the abstract Cl(3) irrep dimension to physical dim_C H_x = 2 is missing.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
+  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
+- **auditor confidence:** high
 
 ### `no_per_site_chirality_theorem_note_2026-05-02`
 

@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 110 |
 | **retained_no_go** | 145 |
 | **retained_bounded** | 377 |
-| _retained_pending_chain_ | 10 |
+| _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1327 |
+| unaudited | 1326 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 609 |
+| `audited_clean` | 610 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1549 |
+| `unaudited` | 1548 |
 
 | claim_type | count |
 |---|---:|
@@ -73,7 +73,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 214 |
 | `leaf` | 901 |
 
-- **Retained pending chain closure:** 10
+- **Retained pending chain closure:** 11
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -447,6 +447,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
+| `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | claude-opus | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
@@ -6925,6 +6926,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — As an open gate, the row closes because it accurately preserves the heuristic metrics and their boundary: detector reweighting is not the literal <z*deltaH>_0 term and remains a derivation-adjacent lane. The current live runner did not finish within the practical audit budget, but the source packet includes a completed frozen log; timeout is not used as a non-clean verdict.
 - **rationale:** The safe claim is not a retained positive theorem; it is an open-gate heuristic record with explicit non-closure language and a named true-Kubo closure lane. The completed frozen log supports the reported correlation and sign-agreement numbers, while the source note itself excludes the tuned threshold number from no-fit evidence and states that path-phase terms are missing from the heuristic. Residual risk is operational reproducibility of the slow runner; that does not change the open-gate boundary because the row is not being promoted to a theorem.
 - **auditor confidence:** medium
+
+### `linear_response_second_order_kubo_note`
+
+- **Note:** [`LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md`](../../docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the declared 44-family runner panel, adding the second-order Kubo term (1/2)*kubo_2*s^2 to the first-order prediction at the cached truncation order produces zero growth of the strict linearity-regime subset (15/44 -> 15/44) and slightly larger aggregate residual at s=0.008 (5.6090 -> 5.7221); binding scope is the finite second-order null replay, not an all-orders Taylor no-go.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:minimal_axioms_2026-05-03`)
+- **auditor:** `claude-audit-loop-2026-05-19-row4`  (claude-opus; independence=cross_family)
+- **load-bearing step:** First-order Kubo linearity-regime count 15/44 = first+second-order linearity-regime count 15/44 (zero growth); sum |residual| at s=0.008 grows 5.6090 -> 5.7221 with the second-order term added.  _(class `C`)_
+- **chain closes:** True — The third parallel propagator C_j = -k^2 Sum T_P Q_P^2 is the standard second derivative of the same path-sum that produced the audited-clean sibling B_j; kubo_2 follows by elementary chain rule (cz = N/T) over A,B,C; the cached runner computes the recurrence and per-family numbers that the note reports verbatim; the broader all-orders-Taylor language is explicitly demoted out of binding scope by the 2026-05-17 narrowing edit.
+- **rationale:** Load-bearing step is class (C): the runner instantiates a third parallel propagator C_j via the literal second derivative of the same path-sum that produced the retained_bounded first-order sibling, then applies the standard chain rule to evaluate kubo_2 = (N_2 - 2*kubo_1*T_1 - cz_0*T_2)/T_0 and compares the resulting prediction against an independent finite-difference measurement on 44 families. Numbers in the source note (15/44 zero growth, 5.6090 vs 5.7221, per-family kubo_2 table) match the SHA-pinned runner cache exactly. The 2026-05-17 audited_conditional repair explicitly demoted the all-orders Taylor no-go out of binding scope, leaving only the finite second-order null replay as the bounded claim; dependencies linear_response_true_kubo_note (retained_bounded) and minimal_axioms_2026-05-03 (meta) close the chain. Residual risk: the §Honest read prose still uses phrasing like 'Kubo Taylor approach has a bounded reach', which a hostile reader could over-extend; the binding-scope statement at the top of the note correctly anchors the claim to the finite computation.
+- **auditor confidence:** high
 
 ### `linear_response_true_kubo_note`
 

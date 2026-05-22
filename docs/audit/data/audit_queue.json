@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 867,
     "high": 28,
-    "leaf": 323,
+    "leaf": 322,
     "medium": 111
   },
   "cycle_break_target_count": 294,
@@ -37579,31 +37579,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "linear_response_second_order_kubo_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "linear_response_true_kubo_note",
-        "minimal_axioms_2026-05-03"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/linear_response_second_order_kubo.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -46789,6 +46764,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 16,
-  "total_pending": 1329
+  "ready_count": 15,
+  "total_pending": 1328
 }

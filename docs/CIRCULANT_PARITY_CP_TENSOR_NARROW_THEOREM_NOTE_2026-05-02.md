@@ -20,9 +20,11 @@ broader DM-neutrino odd-circulant application.
 
 ## Statement
 
-Let `S` be the 3x3 cyclic permutation matrix `S e_k = e_{k+1 mod 3}`, and
-let `P_{23}` be the residual-Z_2 transposition matrix swapping basis
-indices 2 and 3. Consider the 3-real-parameter Hermitian-circulant family
+Let `S` be the 3x3 cyclic permutation matrix `S e_k = e_{k-1 mod 3}` (i.e.
+the matrix with `S_{ij} = 1` iff `j = i + 1 mod 3` and zero otherwise; in
+particular `S_{01} = 1`, `(S^2)_{01} = 0`), and let `P_{23}` be the
+residual-Z_2 transposition matrix swapping basis indices 2 and 3. Consider
+the 3-real-parameter Hermitian-circulant family
 
 ```text
 K(d, c_even, c_odd)  =  d * I  +  c_even * (S + S^2)  +  i * c_odd * (S - S^2),
@@ -74,7 +76,9 @@ the product flips sign overall.
 K_{01}  =  d * I_{01}  +  c_even * (S + S^2)_{01}  +  i * c_odd * (S - S^2)_{01}.
 ```
 
-`I_{01} = 0`, `(S + S^2)_{01} = 1 + 0 = 1`, `(S - S^2)_{01} = 1 - 0 = 1`.
+Under the convention `S e_k = e_{k-1 mod 3}` fixed in the Statement, the
+matrix entries are `S_{01} = 1` and `(S^2)_{01} = 0`, giving `I_{01} = 0`,
+`(S + S^2)_{01} = 1 + 0 = 1`, and `(S - S^2)_{01} = 1 - 0 = 1`.
 So `K_{01} = c_even + i c_odd`. Hence
 
 ```text
@@ -128,6 +132,17 @@ residual Z_2 transposition.
 - No fitted selectors consumed.
 - No admitted unit conventions load-bearing on retention.
 - No same-surface family arguments.
+
+## Convention note
+
+An earlier draft of this note stated `S e_k = e_{k+1 mod 3}` in the
+Statement while the proof body and the runner's matrix
+`S = [[0,1,0],[0,0,1],[1,0,0]]` both compute with `S_{01} = 1` and
+`(S^2)_{01} = 0`, which corresponds to the opposite left-action convention
+`S e_k = e_{k-1 mod 3}`. The Statement above now matches the proof body
+and runner orientation, so the displayed sign `Im[(K_{01})^2] = +2
+c_even c_odd` is self-consistent. The algebraic content of T1, T2, T3 is
+unchanged.
 
 ## Validation
 

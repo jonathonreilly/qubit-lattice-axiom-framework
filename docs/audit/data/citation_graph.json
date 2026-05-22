@@ -19353,6 +19353,74 @@
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
       "from": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
       "to": "observable_principle_from_axiom_note"
     },
@@ -64194,6 +64262,36 @@
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note"
     },
+    "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "cpt_exact_note",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_realization_gate_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "20d95de81f2339f2bbc3cb2928316c9898a15e02ab8f544eb7cebb4330db830c",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_structural_reframing.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Structural Reframing via Cumulant-Generating-Functional Admission Narrow Note"
+    },
     "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -81361,7 +81459,7 @@
       "bounded_theorem": 511,
       "decoration": 1,
       "meta": 184,
-      "no_go": 60,
+      "no_go": 61,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 172
@@ -81370,15 +81468,15 @@
       "bounded_theorem": 949,
       "decoration": 1,
       "meta": 184,
-      "no_go": 163,
+      "no_go": 164,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9706,
-    "leaf_count": 740,
-    "node_count": 2472,
+    "edge_count": 9723,
+    "leaf_count": 735,
+    "node_count": 2473,
     "root_count": 806,
-    "runners_with_path": 2039
+    "runners_with_path": 2040
   }
 }

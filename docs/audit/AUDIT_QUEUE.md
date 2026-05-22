@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1320
+**Total pending:** 1319
 **Ready (all deps already at retained-grade or metadata tiers):** 28
 
 By criticality:
-- `critical`: 412
+- `critical`: 411
 - `high`: 223
 - `medium`: 348
 - `leaf`: 337
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 303 | 9.25 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_quark_antiquark_color_singlet_check.py` |
+| 1 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 302 | 8.74 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_baryon_qqq_color_singlet_check.py` |
 | 2 | `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | unaudited | critical | 295 | 10.21 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py` |
 | 3 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | unaudited | critical | 291 | 9.19 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 4 | `sm_relativistic_dof_count_import_note_2026-05-17` | bounded_theorem | unaudited | critical | 289 | 9.18 | Y | fresh_context_or_stronger_with_cross_confirmation | - |

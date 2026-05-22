@@ -33986,22 +33986,45 @@
       "verdict_rationale": "The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation."
     },
     "cl3_color_automorphism_theorem": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "audit_date": "2026-05-22T15:55:23.067479+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "Scoped no-go that the supplied retained packet fixes F_adj=8/9 but does not determine the disconnected-current readout coefficient kappa_EW or the package-level 9/8 EW matching factor.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface."
+        },
+        "dep_claim_type": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 29.695,
+        "runner_hash": "136a875283bac7d12c588df8ddd0524dba1482781444e1c97ab986934c1347f5",
+        "transitive_descendants": 1171
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T155324Z-cdbcf5b8-cl3_color_automorphism_t-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed algebraic scope, the Gell-Mann embedding on a chosen 3D carrier and the standard SU(3) Fierz identity close the claimed channel-count result. The physical identification of this carrier with SM color is explicitly outside the audited claim boundary.",
       "claim_id": "cl3_color_automorphism_theorem",
-      "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, commutation with the fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction 8/9; physical SM color identification and EW readout are excluded.",
+      "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T15:53:01.130912+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-22T15:55:23.067479+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -34016,8 +34039,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-22T15:55:23.067479+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T155324Z-cdbcf5b8-cl3_color_automorphism_t-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -34025,19 +34059,19 @@
         "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
       "direct_in_degree": 39,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 29.695,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "From the SU(N_c) Fierz identity on the 3D symmetric-base carrier, the adjoint channel fraction is R_conn = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7f1795669c3439f497792abbd993c0aff160f3e6ca221ec8811c9be58ac31b96",
       "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if downstream text tries to read this algebraic carrier as physical SM color or to use sqrt(9/8) without the explicit kappa_EW = 0 matching premise.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -34259,18 +34293,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 7,
+        "B": 8,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 95
       },
       "runner_path": "scripts/verify_cl3_sm_embedding.py",
       "title": "Cl(3) Color Structure Theorem: SU(3)_c on the Symmetric Base + R_conn Derivation",
       "transitive_descendants": 1171,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note no longer asks the algebraic 3D symmetric base to be accepted as physical SM color. The load-bearing step is a standard algebraic Fierz/channel-dimension computation once the 3D carrier and SU(3) normalization are fixed, and runner sections H/I substantively verify the embedding, commutators, trace normalization, and Fierz tensor identity. The runner still prints some broader EW/SM interpretive language, but the source note's narrowed boundary treats sqrt(9/8) only as the kappa_EW = 0 specialization, so that wording is not load-bearing for this audit."
     },
     "cl3_complexification_split_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-21T21:59:08.944488+00:00",

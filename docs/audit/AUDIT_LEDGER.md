@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 118 |
 | **retained_no_go** | 147 |
-| **retained_bounded** | 361 |
+| **retained_bounded** | 362 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
 | unaudited | 1348 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 599 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 600 |
 | `audited_conditional` | 81 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 69 |
@@ -104,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 17 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1052 | 31.54 | `unaudited` | unaudited |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1052 | 31.04 | `unaudited` | unaudited |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 1060 | 30.05 | `audited_clean` | **retained** |
-| 20 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1171 | 29.70 | `audit_in_progress` | audit_in_progress |
+| 20 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1171 | 29.70 | `audited_clean` | **retained_bounded** |
 | 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1052 | 29.54 | `unaudited` | unaudited |
 | 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 1119 | 28.63 | `unaudited` | unaudited |
 | 23 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1052 | 28.54 | `unaudited` | unaudited |
@@ -116,7 +115,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -194,6 +192,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2209,6 +2208,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The separator, non-equivalence for opposite Schur scalars, and idempotent factorisation follow algebraically from the retained central pseudoscalar identity/split plus Schur's lemma and Artin-Wedderburn. No physical bridge, lattice carrier, fitted input, or external comparator is used.
 - **rationale:** The mathematical chain is internally correct and closes from the retained one-hop authority plus standard finite-dimensional complex representation theory. The primary runner performs exact symbolic Pauli/idempotent/intertwiner checks and reports PASS=42, FAIL=0, with no helper opacity. Under the rubric, however, every load-bearing step is class A, there are zero D checks, and the note reduces to an algebraic consequence of a single retained upstream split theorem rather than a new independent first-principles computation.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_color_automorphism_theorem`
+
+- **Note:** [`CL3_COLOR_AUTOMORPHISM_THEOREM.md`](../../docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T155324Z-cdbcf5b8-cl3_color_automorphism_t-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** From the SU(N_c) Fierz identity on the 3D symmetric-base carrier, the adjoint channel fraction is R_conn = (N_c^2 - 1)/N_c^2 = 8/9 at N_c = 3.  _(class `A`)_
+- **chain closes:** True — Within the narrowed algebraic scope, the Gell-Mann embedding on a chosen 3D carrier and the standard SU(3) Fierz identity close the claimed channel-count result. The physical identification of this carrier with SM color is explicitly outside the audited claim boundary.
+- **rationale:** The source note no longer asks the algebraic 3D symmetric base to be accepted as physical SM color. The load-bearing step is a standard algebraic Fierz/channel-dimension computation once the 3D carrier and SU(3) normalization are fixed, and runner sections H/I substantively verify the embedding, commutators, trace normalization, and Fierz tensor identity. The runner still prints some broader EW/SM interpretive language, but the source note's narrowed boundary treats sqrt(9/8) only as the kappa_EW = 0 specialization, so that wording is not load-bearing for this audit.
 - **auditor confidence:** high
 
 ### `cl3_complexification_split_narrow_theorem_note_2026-05-10`

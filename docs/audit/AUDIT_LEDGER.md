@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 15 |
-| unaudited | 1331 |
+| unaudited | 1330 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 14 |
+| ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 83 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -54,8 +54,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 14 |
-| `unaudited` | 1553 |
+| `audited_renaming` | 15 |
+| `unaudited` | 1552 |
 
 | claim_type | count |
 |---|---:|
@@ -921,6 +921,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `field_equation_derivation_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | claude-opus | E | - |
@@ -3149,6 +3150,24 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** **Script:** `scripts/frontier_dm_leptogenesis_pmns_analytic_stationary_classification_theorem.py`  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 5 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded conditional optimization claim: adopting I_seed as an imported selector and taking the favored column as input yields the reported exact-closure source.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-023108-49f0228b-dm_leptogenesis_pmns_min-009`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the imported information-geometric selector I_seed and the transport-favored column i_* from sister theorems, minimize I_seed over positive off-seed sources on the fixed N_e seed surface subject to eta_{i_*}/eta_obs = 1.  _(class `E`)_
+- **chain closes:** False — The conditional optimization is internally represented by the runner, but the restricted packet does not include the helper modules that compute the transport kernel, active packet map, exact package, and canonical charged block. The selector and favored-column identification are also explicit imported premises, not derived in this note.
+- **rationale:** The load-bearing move is the adoption of a new post-axiom selector law, not a derivation from Cl(3) on Z^3. The note is admirably explicit that I_seed is imported from information geometry and that the favored column comes from sister theorems, so the retained claim is conditional rather than primitive. The runner performs a constrained numerical optimization around those adopted definitions, but it cannot turn the selector choice itself into a first-principles result.
+- **open / conditional deps cited:**
+  - `scripts/dm_leptogenesis_exact_common.py`
+  - `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py`
+  - `scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py`
+  - `scripts/frontier_dm_leptogenesis_pmns_projector_interface.py`
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`

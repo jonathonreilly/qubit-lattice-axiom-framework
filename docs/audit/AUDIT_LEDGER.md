@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 15 |
-| unaudited | 1329 |
+| unaudited | 1328 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 608 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1551 |
+| `unaudited` | 1550 |
 
 | claim_type | count |
 |---|---:|
@@ -748,6 +748,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | C | - |
+| `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3186,6 +3187,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
   - `certified-global reduced-surface stationary-set/selector theorem`
   - `frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem`
 - **auditor confidence:** judicial-panel
+
+### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the conditional pair-to-projector algebraic interface: once a Hermitian lepton pair is supplied, U_PMNS=U_e^dag U_nu gives a phase-insensitive doubly stochastic projector packet |U_PMNS|^2.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-023108-49f0228b-dm_leptogenesis_pmns_pro-011`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given any positive-definite Hermitian pair (H_nu, H_e), the flavored transport packet P_i(alpha)=|U_PMNS(alpha,i)|^2 is doubly stochastic, phase-insensitive, and pair-readable.  _(class `A`)_
+- **chain closes:** False — The algebraic interface closes conditional on a supplied Hermitian pair. The chain does not close as a physical DM leptogenesis statement because carrier authority and physical PMNS-column selection are explicitly left open.
+- **rationale:** The runner substantively verifies the algebraic PMNS projector interface by diagonalizing Hermitian pairs, checking unitarity/double stochasticity, and sampling eigenvector rephasings. Parts 2 and 3 compute conditional diagnostic transport values for chosen canonical samples, but those values are not retained-scope authority and depend on imported transport machinery whose source is not included. The note itself explicitly admits the carrier authority and physical-column authority are open dependencies, so retained status cannot propagate to a physical leptogenesis conclusion.
+- **open / conditional deps cited:**
+  - `DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`
+- **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 377 |
+| **retained_bounded** | 378 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1296 |
+| unaudited | 1295 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 630 |
+| `audited_clean` | 631 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1520 |
+| `unaudited` | 1519 |
 
 | claim_type | count |
 |---|---:|
@@ -461,6 +461,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mesoscopic_surrogate_multistage_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7365,6 +7366,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The frozen topN=196 broad relaunch surrogate sources weak fields whose same-shape and disjoint additivity errors stay at 0.0005% and 0.0145% max, while one-step two-body symmetry violation stays below 0.3240%.  _(class `C`)_
 - **chain closes:** True — The provided runner and helper sources instantiate the fixed lattice, build the surrogate from propagation output, compute distributed source fields, and compute the reported additivity and symmetry metrics. The conclusion is bounded to that fixed numerical harness and does not require persistent-mass closure.
 - **rationale:** The runner output matches the note's frozen metrics, and the runner source performs the load-bearing numerical computation rather than printing constants or comparing against hard-coded expected values. The helper code supplies the lattice propagation, centroid, source, and detector machinery used on the load-bearing path, with no missing helper artifact in the restricted packet. The claim remains explicitly bounded to weak one-step behavior of a broad surrogate and does not promote itself to a persistent localized inertial-object theorem.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_multistage_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_MULTISTAGE_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_MULTISTAGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded two-stage sourced-response survival of the topN=196 mesoscopic surrogate on the retained h=0.5, W=8, segment_L=6 3D ordered-lattice valley-linear family with source_z=3.0 and strength=5e-5.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T235738Z-23f04c81-mesoscopic_surrogate_mul-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The frozen topN=196 broad surrogate, propagated through a weak broad-surrogate source field, can be re-identified and then survive a second sourced-response stage with high stage-2/stage-1 shape similarity and comparable centroid shift.  _(class `C`)_
+- **chain closes:** True — The runner constructs the lattice, builds the base topN surrogate from propagation, constructs the surrogate source field, propagates two sourced stages, re-identifies by detector-layer topN support, and computes capture, centroid-shift, best-shift score, and width ratio. The audited conclusion is limited to this scripted mesoscopic family and does not assert localized persistent mass.
+- **rationale:** The primary runner does not merely print constants: it instantiates the lattice propagation machinery, builds the surrogate and source field, and computes the reported two-stage observables. The transitive helpers expose the propagation operator and relaunch utilities used in the load-bearing path rather than hiding a hard-coded expected result. All cited authorities in the restricted packet are retained_bounded, and the source note keeps the conclusion within the same bounded mesoscopic scope they support.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_source_2d_note`

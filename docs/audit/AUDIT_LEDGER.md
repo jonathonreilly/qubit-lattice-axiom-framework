@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1341 |
+| unaudited | 1340 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 83 |
+| ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 603 |
-| `audited_conditional` | 83 |
+| `audited_conditional` | 84 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1565 |
+| `unaudited` | 1564 |
 
 | claim_type | count |
 |---|---:|
@@ -786,6 +786,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -9679,6 +9680,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The staggered force-first lane is not confined to periodic cubic lattices; it survives a narrow layered acyclic template with forward-depth bias, machine-clean norm/Born, and stable inward proxy response under the prescribed attractive sign, even though the live transport operator is still symmetrized rather than truly directed.  _(class `C`)_
 - **chain closes:** True — The runner directly evaluates the three layered DAG-derived configurations and reproduces the load-bearing 6/6 score surface, TOWARD forces, N-stability, Born linearity, forward-depth fraction, and state-family robustness. The small norm-row roundoff difference remains at machine precision and does not affect the bounded compatibility claim.
 - **rationale:** The source note is narrowly framed as a compatibility control, not a proof of truly directed DAG Hamiltonian transport. The current runner gives 6/6 on all three configurations, with TOWARD force, 14/14 N-stability, machine-clean norm/Born behavior, forward-depth fraction 0.1266, and 3/3 state families. Residual risk is limited to the symmetrized-adjacency scope boundary, which the note states explicitly.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract finite-site algebraic comparison of a one-pair Grassmann candidate versus a one-pair bosonic candidate, using the Cl(3) dim-2 readout and Berezin determinant identity as cited inputs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T162016Z-8341b859-staggered_dirac_substep1-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Among the two explicitly framed candidates, the bosonic Fock space has per-site dimension infinity while the Grassmann Fock module has per-site dimension 2, matching the cited Cl(3) faithful-irrep readout.  _(class `A`)_
+- **chain closes:** False — The algebraic comparison closes conditionally if the cited Cl(3) dim-two and Berezin determinant authorities are accepted. However, the Cl(3) dim-two authority in the restricted packet is marked decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, not retained-grade.
+- **rationale:** The runner genuinely performs exact symbolic algebra checks for the stated finite-dimensional and Grassmann/Berezin claims, and its 24 class-A passes support the note's narrow algebraic content. The note does not attempt the out-of-scope physical U4 bridge, so that broader physical forcing claim is not imported. The terminal status is nevertheless conditional because one load-bearing cited authority, docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md, is not retained-grade in the packet.
+- **open / conditional deps cited:**
+  - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`

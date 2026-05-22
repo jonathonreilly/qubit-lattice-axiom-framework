@@ -17,10 +17,11 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 485 |
+| critical | `unaudited` | 484 |
 | critical | `audited_conditional` | 16 |
 | critical | `audited_numerical_match` | 6 |
 | critical | `audited_renaming` | 2 |
+| critical | `retained_pending_chain` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 509
 
@@ -536,4 +537,4 @@ publication tables phrase it.
 | critical | `yt_vertex_power_derivation` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_ward_identity_derivation_theorem` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `yt_zero_import_authority_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `yukawa_color_projection_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `yukawa_color_projection_theorem` | `retained_pending_chain` | `audited_decoration` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |

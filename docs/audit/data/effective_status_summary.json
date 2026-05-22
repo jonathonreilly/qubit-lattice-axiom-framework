@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 1023,
-    "decoration": 21,
+    "decoration": 22,
     "meta": 227,
     "no_go": 237,
     "open_gate": 112,
-    "positive_theorem": 750
+    "positive_theorem": 749
   },
   "cycle_examples": [
     [
@@ -61,10 +61,10 @@
     "retained": 118,
     "retained_bounded": 362,
     "retained_no_go": 147,
-    "retained_pending_chain": 11,
-    "unaudited": 1345
+    "retained_pending_chain": 12,
+    "unaudited": 1344
   },
-  "retained_pending_chain_count": 11,
+  "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
@@ -76,6 +76,7 @@
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",
     "luders_rule_from_composition_consistency_note_2026-05-20",
-    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20"
+    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
+    "yukawa_color_projection_theorem"
   ]
 }

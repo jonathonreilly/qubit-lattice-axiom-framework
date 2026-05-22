@@ -24,11 +24,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
 | unaudited | 1297 |
-| audit_in_progress | 3 |
+| audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -50,9 +50,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 620 |
-| `audited_conditional` | 96 |
+| `audited_conditional` | 97 |
 | `audited_decoration` | 34 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
@@ -124,7 +124,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -813,6 +812,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
+| `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | claude-opus | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -8732,6 +8732,19 @@ Claim boundary until fixed: the abstract no-go 'no finite-dim Hilbert space admi
 - **load-bearing step:** Net verdict: design-note records three candidate primitives; none is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.  _(class `A`)_
 - **chain closes:** True — The restricted packet supports the scoped open-gate claim: the note repeatedly disclaims theorem or primitive promotion, treats the three proposals as candidate imports, and states the same net no-closure conclusion in the comparative table, net design conclusion, and honest verdict. No direct ledger dependencies are listed, and the sibling probes are expressly contextual rather than load-bearing dependencies.
 - **rationale:** The audited claim is not that SM LH/RH content has been derived, but that the note honestly records three candidate substrate-side primitives and preserves the open-gate boundary. Within that scope the chain closes: P-LH-1 is conditional on importing NCG algebra/order-one structure, P-LH-2 is identified as circular/minimality-failing, and P-LH-3 is identified as insufficient alone. The runner output is consistent with this scoped status and reports 53 passing structural/procedural checks with no external comparator or numerical tuning.
+- **auditor confidence:** high
+
+### `q_integer_spectrum_theorem_note_2026-05-02`
+
+- **Note:** [`Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** On the framework N-site tensor-product Fock space H = ⊗_x H_x with per-site H_x ≅ C² (identified via Pauli rep), the canonical one-mode fermion construction a = σ_+, a^† = σ_- yields per-site number operator n̂_x = a^†_x a_x with Spec(n̂_x) = {0, 1}; the total operator Q̂_total = Σ_x n̂_x has integer spectrum {0, 1, …, N} with multiplicity C(N, k) at eigenvalue k, equivalently Q̂_total = (N/2)·I - (1/2) Σ_x σ_{3,x}.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `claude-audit-loop-2026-05-19-q-integer-xconf`  (claude-opus; independence=fresh_context)
+- **load-bearing step:** By per-site uniqueness, H_x ≅ C² with Pauli generators σ_i; define a_x = σ_{+,x}, a^†_x = σ_{-,x}; then n̂_x = a^†_x a_x = diag(0, 1), and Q̂_total = Σ_x n̂_x on ⊗_x C² acquires its spectrum {0, …, N} with binomial multiplicities by Hamming-weight counting on the joint eigenbasis labelled by ν ∈ {0,1}^N.  _(class `A`)_
+- **chain closes:** False — Once per-site H_x = C² (with Pauli rep) is in hand, the proof closes by direct algebraic identity on Pauli matrices plus binomial counting on binary strings, fully exhibited by the runner at 0.000e+00 deviation across T1–T6. However, the chain to that bridge does not close: the source note's 'Cited authorities (one hop)' section explicitly load-bears on both (U2) 'per-site Hilbert H_x ≅ C² (Pauli rep)' AND (U4) 'per-site Grassmann construction: one Grassmann mode per site gives a 2-dim Fock space matching the Pauli C²' from the cited per-site uniqueness theorem, but the dep's audited scope was narrowed on 2026-05-08 to physical-Cl(3)-only U1–U3 (abstract real-algebra classification + chirality split + dim-2 within-chirality uniqueness), explicitly excluding U4. (U2) of the dep is conditional ('any faithful irreducible representation V satisfies dim_C V = 2'); it does not on its own establish that the physical per-site Hilbert space IS such a faithful Cl(3) irrep. The bridge from 'abstract 2-dim Cl(3) irrep' to 'per-site Fock space = C²' was the moved-out U4 / Grassmann construction step, which now lives in STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07 (or, alternatively, is stipulated axiom-level by A1 of MINIMAL_AXIOMS_2026-05-20). The q_integer note has not been updated to cite that bridge as an additional one-hop authority; under the restricted packet, the load-bearing 'H_x ≅ C²' step cannot be discharged from the cited dep alone.
+- **rationale:** The note's six runner checks (CCR, n eigenvalues, multi-site commutativity, Q spectrum, binomial multiplicity, σ_3 formula) are all class-A algebraic identities on Pauli matrices and tensor products and pass at machine precision. The proof itself, taking H_x = C² as input, is a clean positive theorem at class (A). What blocks audited_clean is the one-hop authority chain: the cited per-site uniqueness theorem note was narrowed on 2026-05-08 to physical-Cl(3)-only U1–U3, explicitly removing U4 (the per-site Grassmann construction / per-site Hilbert = C² bridge) from its audited scope. The q_integer note still cites U4 from that dep as one of two load-bearing inputs, so the bridge from 'Cl(3) has 2-dim faithful irreps' to 'this physical site IS such a 2-dim Fock space' is not discharged inside the restricted packet. Verdict is audited_conditional under the standard tie-break (audited_clean vs audited_conditional → conditional when a cited authority does not cover a load-bearing identification).
 - **auditor confidence:** high
 
 ### `qnm_control_hardening_note`

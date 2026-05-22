@@ -18,9 +18,9 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 471 |
-| critical | `audited_conditional` | 22 |
+| critical | `audited_conditional` | 23 |
 | critical | `audited_numerical_match` | 6 |
-| critical | `audit_in_progress` | 3 |
+| critical | `audit_in_progress` | 2 |
 | critical | `audited_renaming` | 2 |
 
 **Total non-retained-grade rows in publication tables:** 504
@@ -393,7 +393,7 @@ publication tables phrase it.
 | critical | `pmns_transfer_operator_dominant_mode_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `primordial_spectrum_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md |
 | critical | `proton_lifetime_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `q_integer_spectrum_theorem_note_2026-05-02` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
+| critical | `q_integer_spectrum_theorem_note_2026-05-02` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `quark_bimodule_lo_shell_normalization_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |

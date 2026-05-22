@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 373 |
+| **retained_bounded** | 374 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1300 |
+| unaudited | 1299 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 626 |
+| `audited_clean` | 627 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1524 |
+| `unaudited` | 1523 |
 
 | claim_type | count |
 |---|---:|
@@ -497,6 +497,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
@@ -7986,6 +7987,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting (Y_uR,Y_dR,Y_eR,Y_nuR)=(a+1,a-1,b-1,b+1) into the cubic anomaly gives -6(n_color a + b), which vanishes by the imported LH trace relation b=-n_color a.  _(class `A`)_
 - **chain closes:** True — The dependency supplies b=-n_color a and b=-1 as retained-bounded inputs, and the source note explicitly treats SHIFT and NEUTRAL_BRANCH as hypotheses/conventions rather than derived physics. Within that narrowed scope, the anomaly cancellations are exact algebraic identities.
 - **rationale:** The theorem is narrow enough to avoid claiming a derivation of the branch, n_color=3, chirality, or SM identification. The runner hard-codes the SHIFT completion, but that is not a defect for this scoped claim because the note states it is checking a fixed algebraic completion under imposed SHIFT/branch assumptions. No external comparator or first-principles physics bridge is needed for the bounded theorem as written.
+- **auditor confidence:** high
+
+### `ordered_lattice_packet_reidentification_note`
+
+- **Note:** [`ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md`](../../docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical control that a Gaussian packet on the fixed 3D ordered lattice h=0.5, W=8, L=12 remains shape-identifiable under the tested valley-linear and spent-delay weak-field propagations.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T235022Z-5f669a4a-ordered_lattice_packet_r-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the retained h=0.5, W=8, L=12 ordered-lattice family, the computed packets have mean best-shift score 1.000 and width ratios near 1, so a localized packet remains re-identifiable after propagation.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the lattice, packet, weak field, propagation, layer distributions, centroid shifts, width ratios, and best-shift overlaps directly from the included helper code. The printed metrics match the note's bounded conclusion and no missing upstream authority is needed for this narrow replay/control claim.
+- **rationale:** The load-bearing step is a first-principles numerical computation within the supplied ordered-lattice harness, not a definition, renaming, or external comparator match. The helper source instantiates the lattice and propagation mechanics rather than importing the contested result or hard-coding expected outputs. The conclusion is narrow: packet re-identification remains strong on this fixed family and does not claim a persistent-mass theorem.
 - **auditor confidence:** high
 
 ### `ordered_lattice_quasi_persistent_relaunch_2d_note`

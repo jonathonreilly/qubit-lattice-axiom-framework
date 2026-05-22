@@ -819,7 +819,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10153,13 +10153,13 @@ Claim boundary until fixed: the abstract no-go 'no finite-dim Hilbert space admi
 
 - **Note:** [`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the abstract finite-dimensional Jordan-Wigner construction on H_Lambda = V^{tensor N}, assuming the cited Cl(3) faithful complex irrep supplies a two-dimensional Pauli carrier V and assuming a fixed total ordering of Lambda.
+- **claim_scope:** Audited only the abstract finite-site Jordan-Wigner construction on H_Lambda = V^{tensor N}, with V the Cl(3) faithful complex irrep and a fixed total ordering, proving (J1)-(J4) inside that tensor-product setting.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-014`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Given a fixed total ordering on the finite site set, the Jordan-Wigner string c_x = (prod_{y < x} sigma_3^(y)) sigma_+^(x) produces operators satisfying the finite-mode CAR relations (J1)-(J2) on H_Lambda = V^{tensor N}.  _(class `A`)_
-- **chain closes:** False — The algebraic JW step closes on its own terms from Pauli identities and finite tensor products. However the only cited authority is itself marked as a decoration effective status, not a retained-grade authority in the restricted packet.
-- **rationale:** The runner source performs genuine exact symbolic Pauli and tensor-product checks rather than printing constants, and its 44 class-A passes match the source note's JW/CAR claims. The load-bearing derivation is an algebraic identity check, with no external comparator or tuned numerical input. The terminal status cannot be audited_clean because the one-hop upstream authority is not retained-grade in this packet; its provided effective status is a decoration under another theorem rather than retained, retained_no_go, or retained_bounded.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T124732Z-34ddc3b9-staggered_dirac_substep1-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For pi(x) < pi(y), the relation S_y = S_x sigma_3^(x) T_xy makes moving sigma_+^(x) past sigma_3^(x) produce the sign flip that cancels the cross-site anticommutator.  _(class `A`)_
+- **chain closes:** False — The Jordan-Wigner CAR computation closes as a finite-dimensional algebraic identity given the abstract Pauli carrier and ordering. The retained audit chain does not close because the single cited authority is marked decoration rather than retained-grade in the restricted packet.
+- **rationale:** The load-bearing step is a genuine class-A algebraic identity: the JW string supplies the sigma_3 sign needed for cross-site CAR, and the runner source actually constructs the Pauli tensor operators and checks the stated identities with PASS=44 FAIL=0. No numerical comparator, fitted value, or external physics input is used. However, the one load-bearing cited authority is supplied with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, which is not one of the retained-grade statuses permitted by the rubric. The source also keeps the U4 physical-lattice identification explicitly outside scope, so this audit covers only the abstract bridge.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high

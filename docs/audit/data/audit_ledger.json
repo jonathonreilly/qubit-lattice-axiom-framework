@@ -228274,9 +228274,9 @@
       "verdict_rationale": "The note's substantive work is class-A algebra: finite Grassmann nilpotency gives a two-state per-site module, bosonic oscillator quantization gives an infinite tower, and the Berezin determinant identity gives det(M). The runner source genuinely checks these algebraic facts symbolically and reports PASS=24 FAIL=0. The conditional blocker is not a mathematical failure of the presented bridge, but the restricted packet's cited Cl(3) dim-two authority is not retained-grade under the rubric."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-21T22:33:31.311998+00:00",
+      "audit_date": "2026-05-22T12:48:50.873348+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_claim_scope": {
           "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums."
         },
@@ -228289,25 +228289,25 @@
         "deps": [
           "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
         ],
-        "load_bearing_score": 2.085,
+        "load_bearing_score": 10.54,
         "runner_hash": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3",
-        "transitive_descendants": 2
+        "transitive_descendants": 1052
       },
       "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-014",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T124732Z-34ddc3b9-staggered_dirac_substep1-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": false,
-      "chain_closure_explanation": "The algebraic JW step closes on its own terms from Pauli identities and finite tensor products. However the only cited authority is itself marked as a decoration effective status, not a retained-grade authority in the restricted packet.",
+      "chain_closure_explanation": "The Jordan-Wigner CAR computation closes as a finite-dimensional algebraic identity given the abstract Pauli carrier and ordering. The retained audit chain does not close because the single cited authority is marked decoration rather than retained-grade in the restricted packet.",
       "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Audited the abstract finite-dimensional Jordan-Wigner construction on H_Lambda = V^{tensor N}, assuming the cited Cl(3) faithful complex irrep supplies a two-dimensional Pauli carrier V and assuming a fixed total ordering of Lambda.",
+      "claim_scope": "Audited only the abstract finite-site Jordan-Wigner construction on H_Lambda = V^{tensor N}, with V the Cl(3) faithful complex irrep and a fixed total ordering, proving (J1)-(J4) inside that tensor-product setting.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-21T22:33:31.311998+00:00",
+      "claim_type_last_reviewed": "2026-05-22T12:48:50.873348+00:00",
       "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
@@ -228319,16 +228319,16 @@
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.54,
-      "load_bearing_step": "Given a fixed total ordering on the finite site set, the Jordan-Wigner string c_x = (prod_{y < x} sigma_3^(y)) sigma_+^(x) produces operators satisfying the finite-mode CAR relations (J1)-(J2) on H_Lambda = V^{tensor N}.",
+      "load_bearing_step": "For pi(x) < pi(y), the relation S_y = S_x sigma_3^(x) T_xy makes moving sigma_+^(x) past sigma_3^(x) produce the sign flip that cancels the cross-site anticommutator.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "9e456244814528d0c54eba96760370c61d54dba362970fc1833e784182dace79",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained; cheapest repair is to provide a retained-grade status or complete retained dependency chain for docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md, then re-audit this JW bridge.",
+      "notes_for_re_audit_if_any": "dependency_not_retained: obtain a retained-grade audit status for docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md, then re-audit this abstract JW bridge.",
       "open_dependency_paths": [
         "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
       ],
@@ -228384,7 +228384,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 44,
         "B": 0,
@@ -228395,7 +228395,7 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem",
       "transitive_descendants": 1052,
-      "verdict_rationale": "The runner source performs genuine exact symbolic Pauli and tensor-product checks rather than printing constants, and its 44 class-A passes match the source note's JW/CAR claims. The load-bearing derivation is an algebraic identity check, with no external comparator or tuned numerical input. The terminal status cannot be audited_clean because the one-hop upstream authority is not retained-grade in this packet; its provided effective status is a decoration under another theorem rather than retained, retained_no_go, or retained_bounded."
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity: the JW string supplies the sigma_3 sign needed for cross-site CAR, and the runner source actually constructs the Pauli tensor operators and checks the stated identities with PASS=44 FAIL=0. No numerical comparator, fitted value, or external physics input is used. However, the one load-bearing cited authority is supplied with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, which is not one of the retained-grade statuses permitted by the rubric. The source also keeps the U4 physical-lattice identification explicitly outside scope, so this audit covers only the abstract bridge."
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
       "audit_date": "2026-05-22T12:46:08.639588+00:00",

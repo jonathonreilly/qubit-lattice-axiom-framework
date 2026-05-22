@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 119 |
-| **retained_no_go** | 149 |
+| **retained_no_go** | 150 |
 | **retained_bounded** | 368 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
 | unaudited | 1320 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -47,8 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 617 |
+| `audited_clean` | 618 |
 | `audited_conditional` | 91 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
@@ -119,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -484,6 +481,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7570,6 +7568,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For finite-dimensional H_x with dim_C H_x = 2, tr([a,a†]) = 0 by trace cyclicity, but [a,a†] = I_Hx would imply tr(I_Hx) = 2, a contradiction.  _(class `A`)_
 - **chain closes:** True — The allowed k=1 qubit-per-site ratification supplies H_x = C^2, and the retained Cl(3) per-site uniqueness material supplies the two-dimensional irreducible local module context. The finite-dimensional trace identity then directly rules out the exact CCR with no further bridge needed.
 - **rationale:** The load-bearing obstruction is pure finite-dimensional linear algebra once H_x = C^2 is in scope. The runner checks the trace obstruction and illustrative finite/infinite examples, with no external comparator, tuned numerical input, or definition-as-derivation step. The older cited per-site-uniqueness note alone no longer carries U4, but this targeted packet's k=1 qubit ratification supplies the missing multiplicity selection, so the scoped chain closes.
+- **auditor confidence:** high
+
+### `no_per_site_chirality_theorem_note_2026-05-02`
+
+- **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Under the k=1 qubit-per-site reading H_x = C^2 with the canonical Pauli Cl(3) action, no γ_5 ∈ M_2(C) satisfies γ_5^2 = I and anticommutes with all three generators.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T223237Z-22f7fdbf-no_per_site_chirality_th-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For M = aI + Σ_k b_k σ_k, {M, σ_j} = 2a σ_j + 2b_j I, so vanishing for all j forces a = b_1 = b_2 = b_3 = 0.  _(class `A`)_
+- **chain closes:** True — The targeted packet supplies the missing physical Hilbert-to-Pauli bridge through the k=1 qubit-per-site ratification: H_x is exactly C^2 with a Pauli Cl(3) action. Once that input is admitted, the no-go is elementary M_2(C) algebra; the negative-chirality sign choice would not change the anticommutator conclusion.
+- **rationale:** The direct retained_bounded per-site uniqueness authority plus the allowed k=1 qubit-per-site context close the physical-Hilbert-to-Pauli identification for this targeted audit. The runner genuinely computes the Pauli products, commutators, constraint nullspace, and even/odd complex-span ranks, all as algebraic checks. No-Go Discipline gate passes: k>1 or mixed-chirality modules, negative chirality, larger Clifford algebras, real-vs-complex grading language, and projector-only escape routes are either closed by the stated k=1 scope, sign-invariant, or outside the audited M_2(C) claim.
 - **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`

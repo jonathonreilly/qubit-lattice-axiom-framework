@@ -185404,24 +185404,41 @@
       "verdict_rationale": null
     },
     "pmns_oriented_cycle_selection_structure_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T03:05:28.501758+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "pmns_oriented_cycle_channel_value_law_note": "For a canonical 3x3 active block A and the projected forward-cycle basis P_i C = E12,E23,E31, the forward-cycle coefficients are diag(A C^dagger); the cached runner checks the stated projected cycle/projector identities and coefficient reconstruction."
+        },
+        "dep_claim_type": {
+          "pmns_oriented_cycle_channel_value_law_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "pmns_oriented_cycle_channel_value_law_note": "retained"
+        },
+        "deps": [
+          "pmns_oriented_cycle_channel_value_law_note"
+        ],
+        "load_bearing_score": 11.95,
+        "runner_hash": "b3ba7b5fcf9a1caed22191fd128bf8607dcba31d6fd1644e4e813862413b2307",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-030039-6656c1a8-pmns_oriented_cycle_sele-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The raw finite algebra identities close on their own terms. The chain to the source note's sole-axiom and graph-first selection-structure readings still needs retained bridges proving the free-point active block is I3 and the graph-first route induces A_fwd = P23 A_fwd^dagger P23.",
       "claim_id": "pmns_oriented_cycle_selection_structure_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded conditional finite algebra on M3(C): CA-1 C3 fixed locus, CA-2 I3 cycle-coefficient vanishing, and CA-3 fixed locus of the prescribed P23 swap-conjugation map; not the carrier, channel-value law, or physical bridge identifications.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T03:05:28.501758+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -185429,19 +185446,19 @@
         "pmns_oriented_cycle_channel_value_law_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.95,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The retained content is exactly the three class-A finite algebraic identities: the C3 fixed locus is c1=c2=c3=sigma, I3 has zero oriented-cycle coefficients, and the prescribed P23 swap-conjugation map fixes exactly c1=conjugate(c3) with c2 real.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b04105b74a6e97f0bd6681d1507ac625123301b51a1e1a4c63cf279e9b8d7011",
       "note_path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained bridge theorems proving the sole-axiom free-point active block is I3 and the graph-first selected-axis route induces the P23 swap-conjugation antiunitary, or re-audit only the raw matrix identities with those readings excluded.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -185649,16 +185666,16 @@
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 8,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 8
       },
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure",
       "transitive_descendants": 988,
-      "verdict_rationale": null
+      "verdict_rationale": "The retained algebraic content is class A: the runner performs finite 3x3 matrix checks for cyclic covariance, zero cycle coefficients on I3, and the prescribed swap-conjugation fixed-family/nonfixed examples, with no external comparator. The one-hop channel-value-law authority is marked retained, but the source note explicitly imports the sole-axiom free-point = I3 identification and the graph-first => swap-conjugation reduction as admitted premises/open class-D bridge targets. Under the rubric, that explicit bridge dependence prevents a clean verdict even though the raw matrix identities are correct."
     },
     "pmns_predictive_surface_characterization_campaign_synthesis_note_2026-05-17": {
       "audit_date": null,

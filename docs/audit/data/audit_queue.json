@@ -3,7 +3,7 @@
     "critical": 850,
     "high": 28,
     "leaf": 315,
-    "medium": 111
+    "medium": 110
   },
   "cycle_break_target_count": 294,
   "cycle_break_targets": [
@@ -33948,30 +33948,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_bae_probe_wilson_dimensional_consistency_bounded_note_2026-05-09_probe26",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37174,6 +37150,32 @@
       "ready": true,
       "runner_path": "scripts/per_site_su2_spin_half_check.py",
       "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+        "minimal_axioms_2026-05-20",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": null,
+      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -40624,32 +40626,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_charged_lepton_y_tau_structural_anchor_partition.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "chsh_structural_bound_narrow_theorem_note_2026-05-17",
-        "minimal_axioms_2026-05-20",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": null,
       "transitive_descendants": 0
     },
     {
@@ -46203,5 +46179,5 @@
     }
   ],
   "ready_count": 6,
-  "total_pending": 1304
+  "total_pending": 1303
 }

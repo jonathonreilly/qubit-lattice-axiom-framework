@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 112 |
+| **retained** | 113 |
 | **retained_no_go** | 149 |
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1301 |
+| unaudited | 1300 |
 | audit_in_progress | 3 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 618 |
+| `audited_clean` | 619 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 33 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1523 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
@@ -451,6 +451,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | claude-opus | - | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | claude-opus | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -7103,6 +7104,18 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** All substantive checks are class-A exact algebraic identities or standard representation facts, and the runner source does not import external numerical comparators or hard-code a contested physical value. The one-hop authorities in the packet are marked retained_bounded, so there is no open dependency blocking the structural block statement. Under the decoration policy, however, the result is a direct corollary of the graph_first_su3_integration_note's 3 ⊕ 1 split and gl(3) ⊕ gl(1) commutant, with the selector and ratio inputs serving canonicity/count-consistency roles rather than supplying an independent new closure.
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
+
+### `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone Hilbert-space-algebra identity that on a finite tensor-product Hilbert space H = (x)_x H_x with finite-dimensional per-site factors H_x, raw equal-time embedded operators O_x = id (x) a_x (x) id and O_y at distinct sites x != y commute exactly: [O_x, O_y] = 0 (L1). Tensor-factorization corollary O_x O_y = a_x (x) a_y (L3). Distinct-site Pauli-ladder commutation [sigma_a^x, sigma_b^y] = 0 in the raw (ungraded) tensor representation (L2). Per-site Cl(3) instance (L4) via the retained-grade per-site uniqueness dep providing H_x = C^2 and A_x = M_2(C). Explicitly excludes (M2) Lieb-Robinson lightcone bound, (M3) continuum spacelike microcausality, CAR/Jordan-Wigner graded structure, reflection-positivity, spectrum-condition, cluster-decomposition, and emergent-Lorentz authorities.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-19-lr-equal-time`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `None`)_
+- **chain closes:** None — L1: standalone multilinear identity from disjoint tensor-position embedding; no upstream input required beyond finite-dim per-site H_x. L2 and L3 follow from L1 by substitution and trivial rewrite. L4: per-site Cl(3) instance via retained-grade axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 (audited_clean, retained_bounded). Runner verifies parametric load-bearing step symbolically with counterfactuals.
+- **rationale:** Pattern A narrow rescope isolating the load-bearing (M1) equal-time tensor-factorization identity from the parent AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01 bundle. The load-bearing step is one line of multilinear algebra: embedded operators O_x = id (x) a_x (x) id and O_y = id (x) id (x) a_y on disjoint tensor positions satisfy O_x . O_y = ((x)_{z not in {x,y}} id_{H_z}) (x) a_x (x) a_y = O_y . O_x by tensor-product disjoint-factor identity action. Runner audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py verifies the load-bearing step at exact sympy symbolic precision over 8 free symbolic 2x2 matrix entries (parametric in a, b -- not hard-coded), 17/17 PASS: (a) symbolic [O_x, O_y] = 0 on C^2 (x) C^2; (b) tensor-factorization O_x . O_y = a (x) b; (c) Pauli instance [sigma_3, sigma_3], [sigma_+, sigma_-], [sigma_+, sigma_3], [sigma_-, sigma_3] = 0 at distinct sites; (d) raw tensor-product Pauli-ladder commutation [sigma_+^x, sigma_+^y] = 0 with explicit boundary that JW/graded anticommutation is not asserted; (e) 3-site extension [O_1, O_3] = 0 through identity at site 2; (f) counterfactual [sigma_+^x, sigma_3^x] != 0 and [sigma_+^x, sigma_-^x] = sigma_3^x same-site (confirms locality is non-trivial); (g) cited dep graph-visibility check. Sole cited dependency axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 is audited_clean with effective_status: retained_bounded (used only in L4 to supply H_x = C^2 and A_x = M_2(C); L1-L3 hold for any finite-dim per-site H_x). No PDG observed values, no literature numerical comparators, no fitted selectors, no admitted unit conventions consumed. No reflection-positivity, no spectrum-condition, no cluster-decomposition, no emergent-Lorentz authority load-bearing. Claim is not downstream of the recent 596637adb finite-volume Lieb-Robinson cluster-decomposition salvage (2026-05-19): the salvage lands a separate spatial_cluster_decomp_lieb_robinson_real_2026-05-19 row addressing dynamical (M2) lightcone-driven cluster decomposition with Heisenberg evolution and finite-range Hamiltonian structure, which this narrow note explicitly disclaims (lines 117-129) and does not consume. Residual risk: L4 depends on the per-site uniqueness row, which is retained_bounded (audited_clean bounded_theorem). L1-L3 are independent of any specific per-site Hilbert structure beyond finite-dimensionality and require no further authority. Vocab lint clean. Not a no_go and rationale does not name walls; N1-N8 gate not triggered.
 
 ### `linear_response_derivation_note`
 

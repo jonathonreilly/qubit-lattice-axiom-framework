@@ -1,6 +1,6 @@
 # Minimal Framework Axioms (Qubit Reframe)
 
-> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`; each row points to the canonical source-of-truth doc.
 
 **Date:** 2026-05-20
 **Status:** current public framework memo for the qubit-on-`Z^3` (equivalently `Cl(3)`-on-`Z^3`) package

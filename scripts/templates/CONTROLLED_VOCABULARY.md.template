@@ -1,7 +1,7 @@
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
-> [`docs/KEY_TERMINOLOGY.md`](../KEY_TERMINOLOGY.md) — flat A-Z index of
+> `docs/KEY_TERMINOLOGY.md` — flat A-Z index of
 > every repo-canonical term with one-line definition and a pointer to
 > the source-of-truth doc for each.
 
@@ -218,11 +218,11 @@ enums themselves live here.
 
 Axiom names (`A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`) are **physics
 primitives**, not process vocabulary. Per
-[VOCABULARY_HYGIENE_DESIGN.md](VOCABULARY_HYGIENE_DESIGN.md), vocabulary
+`VOCABULARY_HYGIENE_DESIGN.md`, vocabulary
 is disjoint from physics. The canonical home for these names and the
 policy governing their use is:
 
-- [`docs/MINIMAL_AXIOMS_2026-05-20.md`](../MINIMAL_AXIOMS_2026-05-20.md) — the framework primitives themselves (Axiom 1, Axiom 2, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-05-03.md`
+- `docs/MINIMAL_AXIOMS_2026-05-20.md` — the framework primitives themselves (Axiom 1, Axiom 2, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-05-03.md`
 - [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
 
 Do not redefine, alias, or document these names here.

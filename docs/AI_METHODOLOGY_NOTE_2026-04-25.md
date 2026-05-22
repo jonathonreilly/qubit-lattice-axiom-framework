@@ -1,6 +1,6 @@
 # AI Methodology Note — Cl(3)/Z^3 Framework
 
-> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`; each row points to the canonical source-of-truth doc.
 
 **Date:** 2026-04-25  
 **Claim type:** meta
@@ -215,8 +215,8 @@ vocabulary control**:
    `docs/repo/controlled_vocabulary.yaml` (created by the companion
    cleanup PR) is the single edit surface for all process vocabulary.
    The human-readable docs
-   ([`CONTROLLED_VOCABULARY.md`](./repo/CONTROLLED_VOCABULARY.md),
-   [`KEY_TERMINOLOGY.md`](./KEY_TERMINOLOGY.md)) are still
+   (`docs/repo/CONTROLLED_VOCABULARY.md`,
+   `docs/KEY_TERMINOLOGY.md`) are still
    hand-maintained in Cleanup-1 and are slated to become generated
    products in Cleanup-1b. After that renderer lands, manual edits to
    the rendered docs are not permitted.
@@ -314,7 +314,7 @@ AI-built research repos as exemplars. The other three tags are
 repo-specific.
 
 The full design is in
-[`docs/repo/VOCABULARY_HYGIENE_DESIGN.md`](./repo/VOCABULARY_HYGIENE_DESIGN.md);
+`docs/repo/VOCABULARY_HYGIENE_DESIGN.md`;
 the canonical YAML and the lint script land in the companion cleanup
 PR. This mechanism is offered as a transferable pattern, but with
 explicit preconditions — it works only in repos that already have:

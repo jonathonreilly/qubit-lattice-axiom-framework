@@ -582,10 +582,6 @@
     },
     {
       "from": "ai_methodology_note_2026-04-25",
-      "to": "key_terminology"
-    },
-    {
-      "from": "ai_methodology_note_2026-04-25",
       "to": "publication.ci3_z3.readme"
     },
     {
@@ -618,15 +614,7 @@
     },
     {
       "from": "ai_methodology_note_2026-04-25",
-      "to": "repo.controlled_vocabulary"
-    },
-    {
-      "from": "ai_methodology_note_2026-04-25",
       "to": "minimal_axioms_2026-05-03"
-    },
-    {
-      "from": "ai_methodology_note_2026-04-25",
-      "to": "repo.vocabulary_hygiene_design"
     },
     {
       "from": "ai_methodology_note_2026-04-25",
@@ -12886,18 +12874,6 @@
     },
     {
       "from": "key_terminology",
-      "to": "minimal_axioms_2026-05-20"
-    },
-    {
-      "from": "key_terminology",
-      "to": "repo.vocabulary_hygiene_design"
-    },
-    {
-      "from": "key_terminology",
-      "to": "repo.controlled_vocabulary"
-    },
-    {
-      "from": "key_terminology",
       "to": "ai_methodology.skills.no-go-discipline.skill"
     },
     {
@@ -17390,10 +17366,6 @@
     },
     {
       "from": "minimal_axioms_2026-05-03",
-      "to": "key_terminology"
-    },
-    {
-      "from": "minimal_axioms_2026-05-20",
       "to": "key_terminology"
     },
     {
@@ -38562,27 +38534,11 @@
     },
     {
       "from": "repo.controlled_vocabulary",
-      "to": "key_terminology"
-    },
-    {
-      "from": "repo.controlled_vocabulary",
-      "to": "minimal_axioms_2026-05-20"
-    },
-    {
-      "from": "repo.controlled_vocabulary",
       "to": "ai_methodology.canonical_framing_paragraph_2026-04-25"
     },
     {
       "from": "repo.controlled_vocabulary",
       "to": "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
-    },
-    {
-      "from": "repo.controlled_vocabulary",
-      "to": "ai_methodology_note_2026-04-25"
-    },
-    {
-      "from": "repo.controlled_vocabulary",
-      "to": "repo.vocabulary_hygiene_design"
     },
     {
       "from": "repo.repo_organization",
@@ -38694,27 +38650,11 @@
     },
     {
       "from": "repo.vocabulary_hygiene_design",
-      "to": "key_terminology"
-    },
-    {
-      "from": "repo.vocabulary_hygiene_design",
-      "to": "repo.controlled_vocabulary"
-    },
-    {
-      "from": "repo.vocabulary_hygiene_design",
-      "to": "minimal_axioms_2026-05-20"
-    },
-    {
-      "from": "repo.vocabulary_hygiene_design",
       "to": "writing_voice_guide_2026-04-25"
     },
     {
       "from": "repo.vocabulary_hygiene_design",
       "to": "assumption_derivation_ledger"
-    },
-    {
-      "from": "repo.vocabulary_hygiene_design",
-      "to": "ai_methodology_note_2026-04-25"
     },
     {
       "from": "repo.vocabulary_hygiene_review_2026-05-18",
@@ -40776,7 +40716,6 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [
-        "key_terminology",
         "publication.ci3_z3.readme",
         "ai_methodology.readme",
         "claude_branch_retainability_note",
@@ -40785,9 +40724,7 @@
         "repo.review_feedback_workflow",
         "canonical_harness_index",
         "repo.active_review_queue",
-        "repo.controlled_vocabulary",
         "minimal_axioms_2026-05-03",
-        "repo.vocabulary_hygiene_design",
         "ai_methodology.canonical_framing_paragraph_2026-04-25",
         "ai_methodology.raw.readme",
         "ai_methodology.methodology_synthesis_2026-04-25",
@@ -40799,7 +40736,7 @@
         "ai_methodology.llm_skill_pack_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e38b37bcd6ab223ac1f008f22b9f3586f0ec9acf1370f5e9b62752840973c5a2",
+      "note_hash": "dbad819272e3e10640b7a400de396847ef35f421636a5a74f4964b5caddfc207",
       "path": "docs/AI_METHODOLOGY_NOTE_2026-04-25.md",
       "runner_path": null,
       "title": "AI Methodology Note \u2014 Cl(3)/Z^3 Framework"
@@ -56551,13 +56488,10 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [
-        "minimal_axioms_2026-05-20",
-        "repo.vocabulary_hygiene_design",
-        "repo.controlled_vocabulary",
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7724abec9bd329f5280be88958d11145e7004ef2adf4383dd0c7c054c624e16d",
+      "note_hash": "9d81e25fa58096827f994539f92f5cb59cf9092b26363ff22fe80d0d10753acb",
       "path": "docs/KEY_TERMINOLOGY.md",
       "runner_path": "scripts/render_controlled_vocabulary.py",
       "title": "Key Terminology"
@@ -61888,11 +61822,9 @@
       "claim_type_author_hint": "meta",
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
-      "deps": [
-        "key_terminology"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "34d775718ebea91b09b41e7cff0cc6ec72bc65e667cd0b7721109c06bc935bf4",
+      "note_hash": "f54c8fbddbf3b40e080bce458da2983d0198ad0d79b158d995940ca244ddd2b9",
       "path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)"
@@ -70878,7 +70810,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -70889,15 +70821,11 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "key_terminology",
-        "minimal_axioms_2026-05-20",
         "ai_methodology.canonical_framing_paragraph_2026-04-25",
-        "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25",
-        "ai_methodology_note_2026-04-25",
-        "repo.vocabulary_hygiene_design"
+        "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1d34c8e0d1394a1ab8d3abca51d67b9ca01d8d979b229112112ad4748e9985db",
+      "note_hash": "8fa3f9f33616168b73215bfba996693fb5b130ac6ba5c1b759c182a744abe0ed",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -70999,15 +70927,11 @@
       "claim_type_author_hint_raw": "meta",
       "claim_type_seed_hint": "meta",
       "deps": [
-        "key_terminology",
-        "repo.controlled_vocabulary",
-        "minimal_axioms_2026-05-20",
         "writing_voice_guide_2026-04-25",
-        "assumption_derivation_ledger",
-        "ai_methodology_note_2026-04-25"
+        "assumption_derivation_ledger"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f05c41859d62ff23825ffd611ec0f5d64dbce32ca7818dfdf12049ec92929080",
+      "note_hash": "5e627e9384ba6123b8ea4341c8dc96640861f86cef1edb521b41d617f4c2f9fe",
       "path": "docs/repo/VOCABULARY_HYGIENE_DESIGN.md",
       "runner_path": null,
       "title": "Vocabulary Hygiene Design"
@@ -81355,6 +81279,7 @@
     "mesoscopic_surrogate_compact_floor_sweep_note_2026-05-17",
     "mesoscopic_surrogate_threshold_2d_note",
     "minimal_axioms_2026-04-11",
+    "minimal_axioms_2026-05-20",
     "mirror_2d_operator_cauchy_note_2026-05-10",
     "mirror_chokepoint_boundary_fit_note",
     "mirror_grown_combined_note",
@@ -81703,10 +81628,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9728,
     "leaf_count": 740,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 809,
     "runners_with_path": 2048
   }
 }

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 117 |
 | **retained_no_go** | 146 |
-| **retained_bounded** | 360 |
+| **retained_bounded** | 361 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
 | unaudited | 1351 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -44,8 +43,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 596 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 597 |
 | `audited_conditional` | 81 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 69 |
@@ -103,7 +102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1052 | 31.54 | `unaudited` | unaudited |
 | 17 | `three_generation_structure_note` | bounded_theorem | critical | 1052 | 31.04 | `unaudited` | unaudited |
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1060 | 30.05 | `audited_clean` | **retained** |
-| 19 | `native_gauge_closure_note` | bounded_theorem | critical | 1196 | 29.73 | `audit_in_progress` | audit_in_progress |
+| 19 | `native_gauge_closure_note` | bounded_theorem | critical | 1196 | 29.73 | `audited_clean` | **retained_bounded** |
 | 20 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1171 | 29.70 | `unaudited` | unaudited |
 | 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1052 | 29.54 | `unaudited` | unaudited |
 | 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 1119 | 28.63 | `unaudited` | unaudited |
@@ -117,7 +116,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `native_gauge_closure_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -466,6 +464,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `native_gauge_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7075,6 +7074,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The live probe reproduces the frozen controls and finite quadrupole rows: same-site and neutral controls are zero, the dipole mainly shifts centroid, and the centered quadrupoles give near-zero centroid change with positive width response at a = 1.0 and a = 2.0. The source explicitly excludes full tensor gravity and a general multipole theory.
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
 - **auditor confidence:** high
+
+### `native_gauge_closure_note`
+
+- **Note:** [`NATIVE_GAUGE_CLOSURE_NOTE.md`](../../docs/NATIVE_GAUGE_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260522T153907Z-native_gauge_closure_note-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The note combines the directly checked native cubic Cl(3)/SU(2) algebra with retained graph-first selector and SU(3) integration dependencies, while bounding the abelian statement to the left-handed +1/3/-1 eigenvalue surface.  _(class `A`)_
+- **chain closes:** True — Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The applyable tuple is clean, bounded, and class A: the aggregate claim is an exact algebraic/dependency closure over retained-grade cited inputs plus direct matrix-algebra checks, not a new first-principles numerical computation. The runner source constructs the relevant Pauli/tensor-product, parity, swap, and projector operators and verifies identities and multiplicities rather than merely printing constants. The broader anomaly-complete U(1)_Y and downstream phenomenology claims are explicitly outside scope, so no open dependency is imported into the audited claim. | The restricted packet supplies retained-grade authorities for the graph-first selector and SU(3) integration, and the primary runner performs explicit matrix algebra checks for the native SU(2), parity, dependency status, and bounded abelian eigenvalue surface. This closes the stated bounded theorem without importing anomaly-complete U(1)_Y or downstream phenomenology. The better class is A because the aggregate load-bearing step is algebraic closure over explicit operators and retained inputs, not a first-principles computation of a new number absent from the inputs. | The restricted packet closes the stated bounded claim: the native algebra and bounded abelian surface are verified by explicit matrix checks, and the selector/SU(3) inputs are supplied as retained-grade cited authorities. The aggregate load-bearing step is best classified as algebraic closure over retained inputs, not as a new first-principles numerical computation. The note explicitly excludes anomaly-complete U(1)_Y and downstream phenomenology, so no broader open identification is imported. | The chain closes within the restricted packet because both cited graph-first authorities are retained-grade, and the primary runner performs concrete matrix-algebra checks for the native Clifford/SU(2), parity, dependency status, and bounded abelian surface. The aggregate load-bearing move is best classified as algebraic closure over explicit operators and retained upstream inputs, not as a fresh first-principles numerical computation. The stated scope excludes anomaly-complete U(1)_Y and downstream phenomenology, so no open broader identification is imported. | The claim is an aggregate bounded theorem whose closure is algebraic over explicit matrix checks plus retained-grade cited authorities. The primary runner does real operator algebra and projector/eigenvalue checks, but the load-bearing aggregate step is not a new first-principles numerical derivation; it is a genuine algebraic closure and dependency composition within the stated boundary. The packet supplies both cited authorities as retained-grade and does not import anomaly-complete U(1)_Y or downstream phenomenology.
+- **rationale:** Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The applyable tuple is clean, bounded, and class A: the aggregate claim is an exact algebraic/dependency closure over retained-grade cited inputs plus direct matrix-algebra checks, not a new first-principles numerical computation. The runner source constructs the relevant Pauli/tensor-product, parity, swap, and projector operators and verifies identities and multiplicities rather than merely printing constants. The broader anomaly-complete U(1)_Y and downstream phenomenology claims are explicitly outside scope, so no open dependency is imported into the audited claim. | The restricted packet supplies retained-grade authorities for the graph-first selector and SU(3) integration, and the primary runner performs explicit matrix algebra checks for the native SU(2), parity, dependency status, and bounded abelian eigenvalue surface. This closes the stated bounded theorem without importing anomaly-complete U(1)_Y or downstream phenomenology. The better class is A because the aggregate load-bearing step is algebraic closure over explicit operators and retained inputs, not a first-principles computation of a new number absent from the inputs. | The restricted packet closes the stated bounded claim: the native algebra and bounded abelian surface are verified by explicit matrix checks, and the selector/SU(3) inputs are supplied as retained-grade cited authorities. The aggregate load-bearing step is best classified as algebraic closure over retained inputs, not as a new first-principles numerical computation. The note explicitly excludes anomaly-complete U(1)_Y and downstream phenomenology, so no broader open identification is imported. | The chain closes within the restricted packet because both cited graph-first authorities are retained-grade, and the primary runner performs concrete matrix-algebra checks for the native Clifford/SU(2), parity, dependency status, and bounded abelian surface. The aggregate load-bearing move is best classified as algebraic closure over explicit operators and retained upstream inputs, not as a fresh first-principles numerical computation. The stated scope excludes anomaly-complete U(1)_Y and downstream phenomenology, so no open broader identification is imported. | The claim is an aggregate bounded theorem whose closure is algebraic over explicit matrix checks plus retained-grade cited authorities. The primary runner does real operator algebra and projector/eigenvalue checks, but the load-bearing aggregate step is not a new first-principles numerical derivation; it is a genuine algebraic closure and dependency composition within the stated boundary. The packet supplies both cited authorities as retained-grade and does not import anomaly-complete U(1)_Y or downstream phenomenology.
+- **auditor confidence:** judicial_panel_majority
 
 ### `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28`
 

@@ -1,0 +1,119 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/MINIMAL_AXIOMS_2026-05-20.md",
+    "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "R1 re-audit manifest as evidence",
+    "review-packet PR text as evidence",
+    "prior assistant discussion",
+    "prior audit rationales",
+    "publication-facing retained summaries"
+  ],
+  "generated_date": "2026-05-22",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "r1_substep1_chain",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Under the ratified R1 (k=1 per-site selection) clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category?",
+          "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md"
+        },
+        {
+          "audit_question": "With R1 ratified on the axiom surface, does the substep-1 U4 conditional sub-claim (k=1 implies dim_C H_x = 2) close under the strengthened A1 reading, or does another blocker remain?",
+          "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md"
+        },
+        {
+          "audit_question": "With R1 ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Grassmann-forcing substep-1 bridge close under the strengthened A1 reading, or does another blocker remain?",
+          "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md"
+        },
+        {
+          "audit_question": "With R1 ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Jordan-Wigner substep-1 bridge close under the strengthened A1 reading, or does another blocker remain?",
+          "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "r1_per_site_dim_two_consumers",
+      "order": 2,
+      "targets": [
+        {
+          "audit_question": "Under R1 (k=1 axiom-content reading) plus the retained axiom_first_cl3_per_site_uniqueness chain, does the per-site Hilbert dim-two theorem close cleanly, or does the missing physical-Hilbert bridge remain?",
+          "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md"
+        },
+        {
+          "audit_question": "Under R1 plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain?",
+          "claim_id": "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md"
+        },
+        {
+          "audit_question": "Under R1 plus retained per-site-uniqueness, does the no-per-site-chirality result close, or does the missing physical-Hilbert-to-Pauli bridge remain?",
+          "claim_id": "no_per_site_chirality_theorem_note_2026-05-02",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md"
+        },
+        {
+          "audit_question": "Under R1 plus retained per-site-uniqueness, does the Pauli group order theorem close on the bounded per-site scope, or does another blocker remain?",
+          "claim_id": "pauli_group_order_theorem_note_2026-05-02",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md"
+        },
+        {
+          "audit_question": "Under R1 plus retained per-site-uniqueness, does the Q-integer-spectrum result close on the bounded per-site scope, or does the staggered-Dirac/Grassmann bridge admission remain load-bearing?",
+          "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md"
+        },
+        {
+          "audit_question": "Under R1 plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain?",
+          "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "positive_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "ratified_commit": "f471b5b",
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

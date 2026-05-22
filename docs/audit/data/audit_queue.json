@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 407,
-    "high": 223,
+    "high": 222,
     "leaf": 337,
     "medium": 348
   },
@@ -11750,28 +11750,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.18,
-      "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_moment_ratio_uniformity_theorem.py",
-      "transitive_descendants": 144
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -37602,6 +37580,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 24,
-  "total_pending": 1315
+  "ready_count": 23,
+  "total_pending": 1314
 }

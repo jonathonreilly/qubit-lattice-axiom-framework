@@ -5,7 +5,13 @@ under high-criticality verdict); 2026-05-10 (audit-narrowing refresh
 of the 2026-05-04 critical-criticality verdict: explicit class-E
 free-`gamma` ansatz framing; absorption-proxy-vs-horizon-observable
 gap surfaced; weak-field exponent table disclosed as frozen
-historical artifact).
+historical artifact); 2026-05-19 (audit-conditional repair:
+admitted-context block + class-N retain — complex-action term
+declared as an explicit free ansatz import, retained scope held to
+the runner-supported numerical statements `gamma=0` reduction,
+three sampled `gamma ∈ {0.0, 0.5, 1.0}` Born proxies, and the
+`gamma` sweep `deflection / direction / escape` table in the
+registered finite setup).
 **Status:** bounded conditional one-parameter complex-kernel model —
 `gamma = 0` reduces to the real-action propagator, linearity keeps
 `I_3` near machine zero, and positive `gamma` produces absorption-
@@ -23,6 +29,136 @@ the named free-`gamma` ansatz. Does **not** propose retained,
 positive-theorem, or gravity-horizon-unification promotion. Names the
 imaginary-action `gamma` as a real upstream derivation gap, not an
 import-redirect.
+
+## 2026-05-19 audit-conditional repair: admitted-context block + class-N retain
+
+This section is the load-bearing repair record for the 2026-05-04
+`audited_conditional` verdict (criticality: critical, load-bearing-step
+class E, 289 transitive descendants). It does not change any algebraic
+content of the chain below, the runner output, or any runner-checked
+numerical equality. It tightens the language so that the complex-action
+term itself is **an explicit admitted free ansatz import** — not a
+derivation from `Cl(3)/Z^3`, the gravity chain, or any retained
+authority — and locks the retained scope of this note to the
+runner-supported numerical statements the registered runner emits
+in its cached stdout.
+
+### Admitted-context block (explicit imports)
+
+The following is **not derived in this note**. It is imported as
+admitted context and is flagged explicitly here so no reader can
+mistake it for a result retained by this note's restricted packet:
+
+- **Admitted import I-1 (complex-action term).** The complex-action
+  term
+
+      S = L(1 - f) + i * gamma * L * f
+
+  with `gamma ∈ ℝ` is a **free ansatz import**. It is **not** derived
+  from `Cl(3)` on `Z^3`, from the retained gravity chain, from
+  `MINIMAL_AXIOMS_2026-04-11.md`, or from any retained authority. The
+  imaginary action term and the free real parameter `gamma` are
+  introduced by hand as a one-parameter complex-kernel model; no
+  cited retained source closes this admission. PATH A (deriving
+  `gamma` or the imaginary action term from retained primitives, e.g.
+  a Schwarzschild-like `gamma ~ rs/r` or a velocity-like `gamma ~ v/c`
+  scaling) is deferred to future work as a separate retained promotion
+  target. (This admission is the audit's named load-bearing step
+  class E.)
+- **Admitted scope-bound S-1 (absorption proxy is not a horizon
+  observable).** The note's centroid-shift / escape-fraction /
+  TOWARD-vs-AWAY observations are absorption-biased centroid effects
+  in the registered finite setup `(h=0.5, W=6, L=30, s=0.1,
+  z_src=3.0)`; they are **not** photon-sphere, Schwarzschild,
+  Hawking, or causal-horizon observables. The audit's named repair
+  target is to add horizon-specific observables, not centroid-shift
+  proxies; PATH A future work would extend the runner with one or
+  more such horizon-specific tests. The retained class-N numerical
+  statements below explicitly **do not** claim horizon physics.
+
+### Class-N retain (exactly what stays retained)
+
+The retained content of this note is exactly the three class-N
+runner-supported numerical statements verified by the registered
+runner `scripts/complex_action_harness.py` (cache
+`logs/runner-cache/complex_action_harness.txt`,
+`runner_sha256: 4467478f...`, exit code 0) in the registered finite
+setup `(h=0.5, W=6, L=30, s=0.1, z_src=3.0)`:
+
+1. **(N-1) `gamma = 0` reduction to the real-action propagator is
+   exact.** The registered runner's Reduction Check block emits
+   `standard propagator delta = +9.339748e-02`, `complex(gamma=0)
+   delta = +9.339748e-02`, `match: True` within machine precision.
+   Class-N runner-verified equality on the registered lattice setup.
+2. **(N-2) Born proxy `|I_3|/P` is at machine precision at the three
+   sampled `gamma ∈ {0.0, 0.5, 1.0}` values.** Registered runner
+   cache emits `2.38e-15`, `1.13e-15`, `1.03e-16` at those three
+   `gamma` values; the linear-in-`psi` kernel structurally preserves
+   Born at each sampled `gamma`. Class-N runner-verified numerical
+   statement at the three sampled `gamma` values (not the full
+   sweep).
+3. **(N-3) `gamma` sweep `deflection / direction / escape` table in
+   the registered finite setup.** The registered runner emits the
+   `gamma` sweep `deflection / direction / escape` columns at
+   `gamma ∈ {-0.50, -0.20, 0.00, 0.05, 0.10, 0.15, 0.20, 0.50, 1.00,
+   2.00}` in the registered setup, with a TOWARD-to-AWAY direction
+   crossover observed between `gamma = 0.05` and `gamma = 0.10` and
+   the escape fraction smoothly interpolating from `43.59`
+   (`gamma = -0.5`, amplification) through unity (between
+   `gamma = 0.20` and `0.50`) to deep absorption (`0.0002` at
+   `gamma = 2.00`). Class-N runner-defined observation in the listed
+   setup; the crossover location is **not** a derived horizon
+   threshold.
+
+These three statements are all **conditional on the admitted import
+I-1 above**. They are pure runner-supported numerical outputs on the
+registered lattice setup; nothing about them retains the complex-action
+term itself, the imaginary action term `i * gamma * L * f`, the free
+real parameter `gamma`, or any horizon-physics interpretation beyond
+the admitted scope-bound S-1.
+
+### Out-of-binding-scope (explicitly not retained)
+
+The following readings of the same algebra and runner output are
+explicitly **not** retained by this note:
+
+- any claim that the complex-action term `S = L(1 - f) + i * gamma * L * f`
+  is derived from `Cl(3)/Z^3`, from the retained gravity chain, or from
+  any retained authority (this is the audit's class-E load-bearing step
+  and is admitted as free ansatz import I-1);
+- any claim that `gamma` is fixed by primitives or by a retained
+  derivation (the parameter is hand-added and free; the runner samples
+  it on a prescribed grid);
+- any reading of the TOWARD-to-AWAY direction crossover, the escape-
+  fraction smooth interpolation, or the centroid-shift mechanism as a
+  horizon-physics observable (photon sphere, Schwarzschild radius,
+  Hawking radiation, causal-horizon test) — this is the admitted
+  scope-bound S-1;
+- any retention of the §"Weak-field mass scaling" exponent table as a
+  runner-verified output (the table is a 2026-04-05 frozen historical
+  artifact not regenerated by the registered runner; this was already
+  disclosed in the 2026-05-10 narrowing refresh and is preserved here);
+- any reading of (N-1)/(N-2)/(N-3) as a "gravity and horizons unified"
+  theorem (the model packages real-phase deflection and imaginary-decay
+  absorption into a single complex kernel under a hand-added free
+  `gamma`; the unification framing remains an interpretive claim, not
+  a runner-verified theorem).
+
+### Honest scope-narrow audit trail
+
+This 2026-05-19 repair is honest narrowing only. It (a) makes the
+complex-action term an **explicit admitted free ansatz import I-1**
+in the boundary block, (b) makes the absorption-proxy-vs-horizon
+gap an explicit admitted scope-bound S-1, (c) restricts the
+**retained** content of the note to the three class-N runner-supported
+numerical statements (N-1)/(N-2)/(N-3) the registered runner verifies
+in its cached stdout, and (d) preserves the prior 2026-04-28 and
+2026-05-10 audit-boundary text and the prior §"Frozen results",
+§"Safe read", and §"Honest limitations" sections unchanged. It does
+NOT change any algebraic content, runner output, runner-checked
+equality, or hand-authored audit verdict. The source-side
+`claim_type = bounded_theorem` is unchanged by this repair; the
+independent audit lane owns the refreshed `audit_status`.
 
 ## Artifact chain
 

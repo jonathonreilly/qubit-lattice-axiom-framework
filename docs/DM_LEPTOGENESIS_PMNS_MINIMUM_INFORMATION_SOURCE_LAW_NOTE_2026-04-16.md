@@ -135,3 +135,71 @@ their bounds.
 ```bash
 python3 scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py
 ```
+
+## 2026-05-19 audit-conditional repair
+
+This block narrows the retained scope of the note to match what the
+runner actually verifies and explicitly admits the information-geometric
+selector as an imported assumption rather than a framework-derived
+object.
+
+### Imported admission (explicit)
+
+The information-deformation cost
+
+`I_seed = D_KL(x || x_seed) + D_KL(y || y_seed) + (1 - cos delta)`
+
+and its use as the selection objective on the off-seed `5`-real source
+are **imported from information geometry**. They are **not** derived from
+`A1 + A2 + retained` (`Cl(3)` local algebra on the `Z^3` substrate). Any
+language elsewhere in this note that could be read as implying the
+selector emerges from the baseline framework is to be read through this
+explicit admission: the selector is a downstream convention, adopted
+here, with no claim to primitive-level derivation.
+
+In particular:
+
+- the **functional form** of `I_seed` (KL on the seed columns plus
+  `(1 - cos delta)` phase deformation cost) is a convention from
+  information geometry, not a primitive
+- the **choice** to minimize `I_seed` (as opposed to any other consistent
+  cost) is a convention, not a primitive
+- the **seed columns** `x_seed = (xbar, xbar, xbar)` and
+  `y_seed = (ybar, ybar, ybar)` are fixed by the prior native
+  charged-lepton-active seed surface; their use as reference distributions
+  for KL is part of the imported selector setup
+
+### Narrowed retained scope (bounded_theorem)
+
+After this audit, the retained claim of this note is narrowed to the
+following bounded conditional:
+
+> **Bounded retained claim.** Given (a) the imported information-geometric
+> selector `I_seed` and (b) the transport-favored column `i_*` identified
+> by the exact extremal class (sister theorems), the constrained
+> optimization problem
+>
+> "minimize `I_seed` over positive off-seed sources on the fixed native
+>  charged-lepton-active seed surface subject to `eta_{i_*} / eta_obs = 1`"
+>
+> admits a unique stationary point on the exact closure manifold, with
+> the runner-verified values reported above (12/12 runner PASS,
+> `I_seed = 0.058549869343`, favored column `0`, `delta_min ~ 0`).
+
+Everything outside this constrained-opt closure on the favored column
+(including the broader question of whether `I_seed` is the *correct*
+selector, whether the baseline framework selects it over alternatives,
+or whether the PMNS-assisted `N_e` branch closes from primitives) is
+**explicitly out of retained scope** for this note.
+
+### Caveats
+
+- this note is `bounded_theorem` with an explicit imported admission; it
+  is not a positive-theorem authority for the PMNS-assisted `N_e` branch
+- closure on that branch must be cited through the framework-internal
+  sister theorems (relative-action stationarity, observable
+  relative-action law), with this note used only for post-axiom
+  interpretation of the favored-column source
+- the constrained-opt closure asserted above is conditional on both the
+  imported selector and the favored-column identification; neither is
+  derived here

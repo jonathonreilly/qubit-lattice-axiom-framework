@@ -219,3 +219,126 @@ RESIDUAL_Q=derive_physical_background_source_zero_equiv_Z_erasure
 RESIDUAL_Q_SOURCE_DOMAIN=derive_retained_source_domain_equals_onsite_function_algebra_not_C3_commutant
 RESIDUAL_DELTA=derive_selected_line_local_boundary_source_and_based_endpoint
 ```
+
+## 2026-05-19 audit-conditional repair
+
+A follow-up audit pass on this `audited_conditional` row of the
+publication surface (post-2026-05-18 campaign) confirmed the prior
+2026-05-18 narrowing direction but identified the headline carrier
+choice and endpoint-domain choice as **not** discharged by retained
+material on `main`. The headline "review packet" claim is therefore
+narrowed further here. The 2026-05-18 conditional framing is preserved;
+the present block makes the carrier and endpoint-domain admissions
+**explicit and named**, and restricts the retained scope to the
+arithmetic subskeleton that does **not** depend on those admissions.
+
+### Open admission OA-1: source-response carrier
+
+The two-channel **source-response carrier** used throughout this
+packet — i.e., the dimensionless `Y = (1, 1)` normalization with the
+central label `Z = P_plus - P_perp` and the additive background
+parametrization `J0 = (s + z, s - z)` (Sections "Q background-zero
+sharpening" and "Landed Science") — is **promoted to an open
+admission**. Concretely:
+
+- the choice of two-channel response space is imported from the
+  reviewed branch and is not derived from the retained
+  axiom-only `C3` lattice carrier on `main`;
+- the choice of additive `(s + z, s - z)` background decomposition
+  is imported as a labeling convention on that two-channel space and
+  is not derived;
+- the central label `Z = P_plus - P_perp` belongs to the **retained
+  commutant source algebra** of that carrier, but the carrier itself
+  is admitted, so the surviving-`Z` consequence is admitted-conditional
+  on the carrier.
+
+The retained `C3` projector / source-response identities **inside**
+this admitted carrier remain exact (see retained scope below); what is
+admitted-open is the **physical identification** of this carrier with
+the dimensionless charged-lepton Koide lane on `main`.
+
+### Open admission OA-2: endpoint source/readout/basepoint domain
+
+The endpoint clause used in the "Delta selected-line boundary
+sharpening" section — i.e., the **endpoint source algebra**
+`End(L_chi)` together with the selected-line projector `P_chi` and the
+based endpoint section `c = 0` — is **promoted to an open admission**.
+Concretely:
+
+- the choice `End(L_chi)` (vs. ambient `End(V)`) for the physical
+  Brannen endpoint source algebra is not derived from retained data on
+  `main`;
+- the based endpoint section `c = 0` is a basepoint admission, not a
+  retained theorem;
+- the transfer of `eta_APS = 2/9` to `delta = 2/9` therefore stands
+  as an **exact two-channel/endpoint algebraic identity** conditional
+  on (OA-2), not as a retained delta no-go.
+
+### Retained scope (post-2026-05-19)
+
+After OA-1 and OA-2, the **retained** load-bearing content of this
+packet is restricted to the **finite algebraic obstruction support**
+that is verifiable in exact rational arithmetic over the chosen
+two-channel/endpoint carrier:
+
+- **R1.** On the admitted source-response carrier (OA-1), the local
+  probe coefficient at zero background evaluates exactly to
+  `Q = 2/3` (Python `Fraction` arithmetic). The April 25 criterion
+  equivalence `background-zero ⇔ Z-erasure ⇔ Q = 2/3` holds as an
+  exact identity **inside that admitted reduced carrier**.
+- **R2.** On the same admitted carrier, the **two-channel
+  countermodel** `z = -1/3` evaluates exactly to `Q = 1, K_TL = 3/8`
+  (Fraction arithmetic), supplying an exact algebraic obstruction
+  witness against any claim that `Q = 2/3` follows from observable
+  completeness alone without an additional source-domain restriction.
+  Symmetrically, the four ambient endpoint countermodels enumerated in
+  the companion 2026-05-16 toy-conditional note evaluate exactly under
+  `Fraction` arithmetic and rule out the Brannen identity `delta = 2/9`
+  in the ambient `End(V)` carrier.
+- **R3.** On the admitted endpoint source/readout/basepoint domain
+  (OA-2), `eta_APS = 2/9 ⇒ delta = 2/9` is an exact algebraic
+  identity inside `End(L_chi)` with `P_chi` and basepoint `c = 0`.
+  This is **finite algebraic obstruction support**, not a retained
+  no-go.
+
+The retained statement of the packet thus reads:
+
+> Working in exact `Fraction` arithmetic on the admitted two-channel
+> source-response carrier (OA-1), `Q = 2/3` is the zero-background
+> value and `z = -1/3` is an exact two-channel countermodel; on the
+> admitted endpoint algebra `End(L_chi)` with `P_chi` and basepoint
+> `c = 0` (OA-2), `eta_APS = 2/9` transfers exactly to
+> `delta = 2/9`; the ambient `End(V)` countermodels rule out this
+> identity outside `End(L_chi)`. None of these algebraic identities is
+> a retained no-go on the dimensionless charged-lepton Koide lane;
+> they are **conditional obstruction support** on OA-1, OA-2 only.
+
+### No-go discipline notes
+
+This narrowing is a **strict shrinkage** of the packet's load-bearing
+reach, in conformance with the N1-N8 no-go discipline:
+
+- the headline "dimensionless source-domain closure" reading is
+  **already demoted** to `FALSE` by the 2026-05-18 narrowing; the
+  present block does not re-promote it
+- the source-response carrier (OA-1) and endpoint domain (OA-2) are
+  **moved out** of retained scope and into named open admissions — the
+  retained content is **smaller**, not larger
+- the only retained claims (R1, R2, R3) are exact `Fraction`-
+  arithmetic identities on the admitted carrier/endpoint domain plus
+  countermodels; no asymptotic, universal, or carrier-derivation claim
+  is added
+- no new class of physical carriers or endpoints is introduced; the
+  open work named in "Current Residual"
+  (`derive_physical_background_source_zero_equiv_Z_erasure`,
+  `derive_retained_source_domain_equals_onsite_function_algebra_not_C3_commutant`,
+  `derive_selected_line_local_boundary_source_law`,
+  `derive_based_endpoint_section`) is reaffirmed and not reduced
+
+Consequently, downstream consumers of this packet inherit a strictly
+**narrower** obstacle than before: the retained content is exactly the
+finite algebraic-obstruction subskeleton verifiable in `Fraction`
+arithmetic on the admitted two-channel/endpoint carrier, together with
+the named countermodels; carrier and endpoint-domain derivations
+remain open work, separated from any retained-grade closure claim on
+the dimensionless charged-lepton Koide lane.

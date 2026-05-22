@@ -165,3 +165,51 @@ not load-bear on the open dependencies.
 ```bash
 python3 scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
 ```
+
+## 2026-05-19 audit-conditional repair
+
+This block makes the retained scope and the imported admissions explicit, so the
+note's `bounded_theorem` claim type maps cleanly onto only what the paired
+runner actually verifies.
+
+**Retained scope (class-A facts the runner verifies at numerical-zero):**
+
+- For any positive-definite Hermitian pair `(H_nu, H_e)` and the induced
+  `U_PMNS = U_e^dag U_nu`, the matrix `U_PMNS` is unitary. Verified by the
+  runner on the canonical pair plus eight deterministic random Hermitian
+  pairs (`max ||U U^dag - I||` at numerical-zero accuracy in Part 1).
+- The flavored transport packet `P_i(alpha) = |U_PMNS(alpha,i)|^2` is doubly
+  stochastic (rows and columns each sum to 1) on every sampled pair. Verified
+  by the runner in Part 1.
+- `|U_PMNS|^2` is invariant under independent left-eigenvector rephasings
+  (diagonal unitaries on the left of `u_nu` and `u_e`). Verified by the
+  runner on 72 rephasing samples (9 Hermitian pairs * 8 rephasings each) in
+  Part 1, at numerical-zero accuracy.
+- Therefore the pair-conditioned packet
+  `P_i(alpha) = |U_PMNS(alpha,i)|^2` is pair-readable and phase-insensitive
+  as a function of `(H_nu, H_e)`, conditional on the carrier being supplied.
+
+The columnwise `eta/eta_obs` diagnostic readouts in Parts 2 and 3 of the
+runner are conditional numerical evaluations of this algebraic interface on
+two canonical sample pairs. They are not retained-scope content of this note
+and do not load-bear on any authority promotion.
+
+**Admitted context (explicit imports, NOT derived in this note or runner):**
+
+- **Carrier authority.** That the remaining full target carrier on the active
+  neutrino lane is the Hermitian pair `((H_nu, H_e), s)` rather than some
+  other object is imported from the active neutrino / PMNS lane. This note
+  does not derive carrier authority from `Cl(3)` on `Z^3` from the sole
+  axiom. The paired runner's Part 4 carries this as an explicit admission
+  with resolution string beginning `open:`.
+- **Physical-column selection.** That a particular column of `|U_PMNS|^2`
+  is the physical `N1` transport column is imported. No theorem selecting
+  the transport-physical column on the active neutrino lane is derived in
+  this note. The paired runner's Part 4 carries this as a second explicit
+  admission with resolution string beginning `open:`.
+
+**Audit-conditional status.** The note is retained at `bounded_theorem`
+strictly for the class-A facts above. The two admissions are required to
+turn any columnwise `eta/eta_obs` readout in Parts 2 and 3 of the runner
+into a physical leptogenesis statement; they are out of retained scope
+here. No new repo-wide authority is promoted by this repair.

@@ -3,8 +3,86 @@
 **Status:** bounded - bounded or caveated result note
 **Date:** 2026-04-22 (2026-05-18: claim_scope formalized as conditional
 variational route to A1, not an axiom-native derivation, per audit
-verdict boundary instruction).
+verdict boundary instruction; 2026-05-19: audited-conditional repair
+narrows retained scope to the trace reduction + A1 zero-locus identity
+the runner verifies, and marks `V(Φ) = 81(a² − 2|b|²)²` as an
+assumed ansatz — see audit block below).
 **Claim type:** bounded_theorem
+
+## 2026-05-19 audit-conditional repair
+
+**Trigger.** Audit lane flagged this note as carrying language that
+could read as if the Koide-Nishiura quartic effective potential
+`V(Φ) = 81(a² − 2|b|²)²` (equivalently
+`V(Φ) = [2(trΦ)² − 3tr(Φ²)]²` after the trace reduction) is *derived*
+from `Cl(3)` on `Z^3`. It is not. The form is imported from the
+Koide-Nishiura program as a variational ansatz on the charged-lepton
+mass matrix, and the runner only verifies algebraic properties of that
+ansatz; it does **not** derive the ansatz from the framework axioms.
+
+**Retained scope after narrowing.** Of the content advertised on this
+note, the only pieces retained as theorem-grade by the paired runner
+`frontier_koide_a1_quartic_potential_derivation.py` (5/5 PASS) are:
+
+1. **Trace reduction identity.** Given `Φ = a·I + b·σ` (Hermitian
+   charged-lepton mass-matrix block, `a ∈ ℝ`, `b ∈ ℂ³`), the
+   identity `2(trΦ)² − 3tr(Φ²) = 9(a² − 2|b|²)` holds algebraically.
+   No physics input; pure trace algebra in the block.
+
+2. **A1 zero-locus identity.** With `V(Φ) := [2(trΦ)² − 3tr(Φ²)]²
+   = 81(a² − 2|b|²)²` taken as the *ansatz form*, the zero-locus
+   `V(Φ) = 0` is exactly the codimension-1 surface
+   `a² = 2|b|²`, equivalently the Koide A1 relation
+   `(Σ m_i)² = (3/2) Σ m_i²` after the standard
+   `(a, b) ↔ (m_i)` reparametrization. Uniqueness of the minimum on
+   this surface is an algebraic property of the squared form.
+
+These are the only two statements this note retains. Everything else
+in the body of the note is either (a) descriptive landscape map of the
+13-iteration investigation, or (b) downstream consequences that
+inherit the ansatz admission.
+
+**Explicit admission — `V(Φ) = 81(a² − 2|b|²)²` is an assumed ansatz.**
+The quartic effective potential is **admitted** at this note. It is
+not derived from `A1 + A2 + retained` (Cl(3) on Z³ + retained source
+theorems). Concretely:
+
+- The functional form `[2(trΦ)² − 3tr(Φ²)]²` is imported from the
+  Koide-Nishiura EW-scalar program (Route B in §"The three closure
+  routes" below). The choice of squaring the bilinear-in-trace
+  combination, the absence of competing invariants (e.g.
+  `(trΦ²)²`, `tr(Φ⁴)`, mixed terms), and the overall normalization
+  `81 = 9²` are **postulates** of the ansatz, not consequences of
+  Cl(3)/Z³ structure.
+- No retained source theorem in the audit lane derives this potential
+  from framework primitives. The audit verdict's repair sub-target
+  ("a retained theorem plus runner deriving the quartic effective
+  potential or block extremum from Cl(3)/Z^3") remains **open work**,
+  not closed by this note.
+- The five mechanism attempts listed in §"Open physical bridge" (W[J]
+  extremum, Coleman-Weinberg, Gaussian max-entropy, CV=1 /
+  exponential max-entropy, SU(2)_L Clebsch-Gordan) all **fail** to
+  recover the ansatz from primitives. That negative result is part
+  of why the ansatz remains an admission rather than a theorem.
+
+**What this note does NOT claim.**
+
+- It does **not** claim an axiom-native derivation of the
+  charged-lepton Koide relation from Cl(3) on Z³.
+- It does **not** claim `V(Φ) = 81(a² − 2|b|²)²` is forced by
+  framework primitives or by any retained source theorem.
+- It does **not** elevate the 9 "equivalent expressions for A1 = 1/2"
+  listed in §"Rigorously established" to retained status; those are
+  documented coincidences whose load-bearing status depends on the
+  same admitted ansatz or on the separate Route A primitive proposal.
+- It does **not** retain Routes A, B, or C of §"The three closure
+  routes" as closed; those remain open proposals.
+
+**Tier.** `bounded_theorem` with retained content restricted to items
+(1) and (2) above. Status authority remains independent audit lane
+only. No package-control-plane wiring changes are made by this
+repair; this is a narrowing of claim_scope on an already-bounded
+note.
 **Claim scope (post-2026-05-18 narrowing):** the load-bearing content
 of this note is **a conditional variational route to the Koide A1
 relation**: the Koide-Nishiura quartic effective potential `V(Φ)`

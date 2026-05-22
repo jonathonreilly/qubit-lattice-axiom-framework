@@ -120,7 +120,7 @@ def main() -> int:
     )
     check(
         "Upstream F-B framing-fix linked",
-        "ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md" in parent,
+        "ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md" in parent,
     )
     check(
         "Admission (iv) inheritance disclosed",

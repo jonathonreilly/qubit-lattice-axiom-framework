@@ -125,7 +125,7 @@ def main() -> int:
     print("PART F-B — upstream admission-inheritance link:")
     check(
         "Step 4 row links to upstream F-B framing-fix note",
-        "ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md" in parent,
+        "ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md" in parent,
     )
     check(
         "Step 4 row labels itself as the inherited (admission (iv)) branch",

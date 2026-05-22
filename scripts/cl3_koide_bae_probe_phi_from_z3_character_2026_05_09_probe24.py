@@ -4,7 +4,7 @@ Koide BAE Probe 24 — Brannen Magic Angle phi = 2/9 from Z_3-Character /
 Berry-Phase / Plancherel-Frobenius Content (Sharpened, Partial Closure).
 
 Source-note runner for:
-  docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md
+  docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md
 
 Verdict: SHARPENED bounded obstruction with partial positive closure.
 

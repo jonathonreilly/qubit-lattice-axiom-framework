@@ -16,7 +16,7 @@ Schur structural reason. Decomposes AC_φλ into `AC_λ.struct`
 [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md)),
 and BAE (Brannen amplitude equipartition `|b|²/a² = 1/2`, the
 genuinely open atom per the 30-probe BAE terminal-synthesis
-[`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)).
+[`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)).
 **Status authority:** independent audit lane only.
 **Authority role:** synthesis note — audit verdict and downstream
 status set only by the independent audit lane. Not a new derivation.
@@ -57,11 +57,11 @@ as the load-bearing structural reason their attack vectors fail.
 | 3 | R3 — Anomaly inflow (7 channels) | [`A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md`](A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md) | `a3_route3_anomaly_inflow_bounded_obstruction_note_2026-05-08_r3` | `unaudited` (`claim_type: bounded_theorem`) |
 | 4 | R4 — `Cl(3)⊗Cl(3) → Spin(6) → SU(3) × U(1)_(B-L)` GUT chain | [`A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md`](A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md) | `a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4` | `unaudited` (`claim_type: bounded_theorem`) |
 | 5 | R5 — GNS unitary-implementation + no-proper-quotient | [`A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md`](A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md) | `a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5` | `unaudited` (`claim_type: bounded_theorem`) |
-| 6 | R1HR — R1 hostile review (8 vectors, 32 sub-tests) | [`A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md`](A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md) | `a3_r1_hostile_review_confirms_obstruction_note_2026-05-08_r1hr` | `unaudited` (`claim_type: bounded_theorem`) |
-| 7 | R2HR — R2 hostile review (7 vectors, 33 sub-tests) | [`A3_R2_HOSTILE_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md`](A3_R2_HOSTILE_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md) | `a3_r2_hostile_review_confirms_exhaustion_note_2026-05-08_r2hr` | `unaudited` (`claim_type: bounded_theorem`) |
-| 8 | R3HR — R3 hostile review (8 vectors) | [`A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md`](A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md) | `a3_r3_hostile_review_confirms_obstruction_note_2026-05-08_r3hr` | `unaudited` (`claim_type: bounded_theorem`) |
-| 9 | R4HR — R4 hostile review (8 vectors, 49 sub-tests) | [`A3_R4_HOSTILE_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md`](A3_R4_HOSTILE_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md) | `a3_r4_hostile_review_confirmed_note_2026-05-08_r4hr` | `unaudited` (`claim_type: bounded_theorem`) |
-| 10 | R5HR — R5 hostile review (8 vectors, 59 sub-tests) | [`A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md`](A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md) | `a3_r5_hostile_review_confirms_obstruction_note_2026-05-08_r5hr` | `unaudited` (`claim_type: bounded_theorem`) |
+| 6 | R1HR — R1 hostile review (8 vectors, 32 sub-tests) | [`A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md`](A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md) | `a3_r1_hostile_review_confirms_obstruction_note_2026-05-08_r1hr` | `unaudited` (`claim_type: bounded_theorem`) |
+| 7 | R2HR — R2 hostile review (7 vectors, 33 sub-tests) | [`A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md`](A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md) | `a3_r2_hostile_review_confirms_exhaustion_note_2026-05-08_r2hr` | `unaudited` (`claim_type: bounded_theorem`) |
+| 8 | R3HR — R3 hostile review (8 vectors) | [`A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md`](A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md) | `a3_r3_hostile_review_confirms_obstruction_note_2026-05-08_r3hr` | `unaudited` (`claim_type: bounded_theorem`) |
+| 9 | R4HR — R4 hostile review (8 vectors, 49 sub-tests) | [`A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md`](A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md) | `a3_r4_hostile_review_confirmed_note_2026-05-08_r4hr` | `unaudited` (`claim_type: bounded_theorem`) |
+| 10 | R5HR — R5 hostile review (8 vectors, 59 sub-tests) | [`A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md`](A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md) | `a3_r5_hostile_review_confirms_obstruction_note_2026-05-08_r5hr` | `unaudited` (`claim_type: bounded_theorem`) |
 
 ## 2. Statement (foreclosure theorem)
 
@@ -301,7 +301,7 @@ BAE is the surviving residual after the present Schur-foreclosure:
 the framework predicts the *circulant form* with two real parameters
 `(a, |b|, arg(b))` from `C_3`-equivariance, and BAE constrains the
 amplitude ratio. The 30-probe BAE terminal-synthesis
-[`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+[`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 records that 30 independent attack routes on BAE (probes 1-17 of
 the original 17-probe campaign plus probes 18-30 of the
 post-rename continuation, including F1 canonical functional, Wilson
@@ -404,12 +404,12 @@ forbidden_imports_used: false
 
 ## 12. Cross-references
 
-- Canonical synthesis template: [`AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md)
+- Canonical synthesis template: [`AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md)
 - Substep 4 AC narrowing (parent atom decomposition): [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
 - Staggered-Dirac realization gate (open-gate parent): [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
 - Preserved-`C_3` interpretation: [`C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md`](C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08.md)
 - BAE rename meta: [`BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md`](BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09.md)
-- 30-probe BAE terminal-synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- 30-probe BAE terminal-synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - Option C bounded decomposition (companion bounded note): [`A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_optC.md`](A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_optC.md)
 - Minimal axioms: [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md)
 - BZ-corner forcing (regular-rep structure on `H_{hw=1}`): [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)
@@ -426,11 +426,11 @@ forbidden_imports_used: false
 - R3: [`A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md`](A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md)
 - R4: [`A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md`](A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md)
 - R5: [`A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md`](A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md)
-- R1HR: [`A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md`](A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md)
-- R2HR: [`A3_R2_HOSTILE_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md`](A3_R2_HOSTILE_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md)
-- R3HR: [`A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md`](A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md)
-- R4HR: [`A3_R4_HOSTILE_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md`](A3_R4_HOSTILE_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md)
-- R5HR: [`A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md`](A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md)
+- R1HR: [`A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md`](A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md)
+- R2HR: [`A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md`](A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md)
+- R3HR: [`A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md`](A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md)
+- R4HR: [`A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md`](A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md)
+- R5HR: [`A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md`](A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md)
 
 ## 13. References (Schur / representation theory / SM literature dive)
 

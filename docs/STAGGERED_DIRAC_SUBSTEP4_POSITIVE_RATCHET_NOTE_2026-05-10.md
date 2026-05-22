@@ -38,7 +38,7 @@ The durable part of this stretch attempt is a narrow open-gate boundary:
    problem, especially the AC-readout no-proper-quotient route
    [`A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md`](A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md)
    and the bounded BAE synthesis
-   [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md).
+   [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md).
    Those records are useful route-pruning evidence, but many of them remain
    unaudited, so this note does not promote their combined coverage to a
    retained no-go theorem.

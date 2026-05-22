@@ -44,7 +44,7 @@ the canonical target). It does not derive `D` from `Cl(3)` on `Z^3`.
 The remaining target is the actual microscopic value law of `D` from
 `Cl(3)` on `Z^3` — the same target the 2026-05-05 audit recorded as the
 missing step, and the same target the
-`DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md`
+`DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md`
 catalogues across the sibling charged-source-response row.
 
 ## Exact result (conditional on a supplied charge-preserving D)
@@ -145,7 +145,7 @@ target_le)` writes the active block as `am = target_le + bm fm^{-1}
 bm^H`, so `Schur(D_-) = target_le` by construction; the downstream
 chain is then deterministic arithmetic of the engineered target. The
 DM transport status terminal-synthesis meta note
-(`DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md`)
+(`DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md`)
 catalogues this row's sibling
 [`DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md)
 under the same auditor's repair note: "Re-check whether a later runner

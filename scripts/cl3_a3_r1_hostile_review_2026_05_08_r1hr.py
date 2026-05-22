@@ -19,7 +19,7 @@ The verdict-table is written to stdout; the source-note records the
 synthesized review verdict.
 
 Source-note authority:
-    docs/A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md
+    docs/A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md
 
 Cached output:
     logs/runner-cache/cl3_a3_r1_hostile_review_2026_05_08_r1hr.txt
@@ -653,7 +653,7 @@ def main():
     print("=" * 70)
     print("A3 R1 HOSTILE REVIEW — C_3-equivariance theorem stress-test")
     print("Source note:")
-    print("  docs/A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md")
+    print("  docs/A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md")
     print("=" * 70)
 
     all_results = []

@@ -8,7 +8,7 @@ proposal; pipeline-derived status is set only after independent audit
 review.
 **Authority role:** records the synthesis-level state of the
 substrate-to-carrier round of 2026-05-10 against the prior 30-probe
-campaign synthesis ([`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md))
+campaign synthesis ([`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md))
 and the conventions-unification companion ([`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md)).
 Documents the four source-note proposals from that round (P1, P2, P3, P4)
 that target the Planck-from-structure missing-theorem trio plus the
@@ -130,7 +130,7 @@ prior surface were:
 | Framework baseline | 2 named pieces | physical `Cl(3)` local algebra + `Z^3` spatial substrate |
 | Open derivation gates | 2 | staggered-Dirac realization gate; `g_bare = 1` derivation gate |
 | Conventional scale anchors | 1 | absolute lattice spacing ↔ Planck length identification |
-| Named admissions outside the path | 2 | BAE multiplicity-counting; P (radian bridge) — per [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md) |
+| Named admissions outside the path | 2 | BAE multiplicity-counting; P (radian bridge) — per [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md) |
 | Convention bookkeeping | (unbounded) | mass-ordering names, units, particle naming, etc. — per [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md) |
 
 This round addresses the **conventional scale anchor** row:
@@ -205,7 +205,7 @@ synthesis time.
 
 ### Already-named admissions (unchanged by this round)
 
-Per [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+Per [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 (PR #836):
 
 - **BAE** — bounded; closure requires multiplicity-counting principle
@@ -291,7 +291,7 @@ record at all.
 - Physical-lattice narrowed no-go: [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md)
 - Physical-lattice foundational interpretation: [`PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md`](PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08.md)
 - Substep-4 AC narrowing: [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
-- 30-probe BAE terminal synthesis (PR #836): [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- 30-probe BAE terminal synthesis (PR #836): [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - Conventions unification companion (PR #729): [`CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md`](CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08.md)
 
 ### This round's source-note proposals (open PRs)

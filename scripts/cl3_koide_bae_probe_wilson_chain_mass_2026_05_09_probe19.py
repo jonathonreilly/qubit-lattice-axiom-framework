@@ -3,7 +3,7 @@
 Koide BAE Probe 19 — Wilson Chain Extension to Charged-Lepton Mass Scale
 
 Source-note runner for:
-  docs/KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md
+  docs/KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md
 
 Verdict: SHARPENED bounded obstruction with partial positive closure.
 

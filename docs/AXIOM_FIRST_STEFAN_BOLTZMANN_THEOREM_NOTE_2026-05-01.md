@@ -77,7 +77,7 @@ is unchanged; only the tier descriptors are corrected.)
   [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md)): the spatial substrate is
   `Z^3`, so the photon density of states is the standard 3D form.
   (Parent companion currently `unaudited`; admissions (i)-(iv) and
-  upstream [F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)
+  upstream [F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)
   apply via tier inheritance, not as load-bearing proof steps in
   `(SB1)-(SB4)`.)
 - **Cited U(1) photon.** From the cited
@@ -360,7 +360,7 @@ weakest *audited* upstream.
 **Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`:** this note
 uses only the `d_t = 3+1` substrate conclusion (specifically `d_s = 3`
 for the 3D density of states) from the parent. Per the upstream
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
 the `d_t = 1` conclusion decomposes into derived (Step 3) and inherited
 (admission (iv)) branches; the `d_s = 3` piece comes from axiom A2
 directly (per `MINIMAL_AXIOMS_2026-05-03.md`), independent of admissions

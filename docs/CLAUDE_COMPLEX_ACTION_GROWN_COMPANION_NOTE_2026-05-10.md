@@ -19,11 +19,11 @@ this leaf through routes that do not address the recorded
 **Companion to:**
 - [`docs/audit/README.md`](audit/README.md) (audit-lane policy:
   retained-grade dependencies, terminal verdicts, repair classes)
-- [`QUARK_PROJECTOR_PARAMETER_AUDIT_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md`](QUARK_PROJECTOR_PARAMETER_AUDIT_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md)
+- [`QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md`](QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md)
   (PR #959 — sibling terminal-block synthesis on the quark projector chain)
-- [`DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md`](DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md)
+- [`DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md`](DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md)
   (PR #960 — sibling terminal-block synthesis on the DM leptogenesis transport chain)
-- [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
   (parallel terminal-synthesis template)
 **Primary runner:** [`scripts/frontier_claude_complex_action_grown_companion_terminal_synthesis.py`](../scripts/frontier_claude_complex_action_grown_companion_terminal_synthesis.py)
 **Cached output:** [`logs/runner-cache/frontier_claude_complex_action_grown_companion_terminal_synthesis.txt`](../logs/runner-cache/frontier_claude_complex_action_grown_companion_terminal_synthesis.txt)
@@ -244,7 +244,7 @@ itself proceed from `claim_type + audited_clean + retained-grade
 dependencies`. This is a substantial open theorem in its own right —
 not a small bounded source note in the style of recent audit-backlog
 cycles per
-[`docs/AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md).
+[`docs/AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md).
 
 Path 2 requires inlining the runner-defined grown-graph construction
 (currently sourced from `scripts.gate_b_grown_joint_package.grow`) plus
@@ -353,12 +353,12 @@ campaigns and retained-promotion campaigns:
   (terminal verdicts at lines 87-88; hard rules 1-2 at lines 106-113;
   `missing_dependency_edge` repair class at lines 192-193)
 - Sibling terminal-block syntheses:
-  [`QUARK_PROJECTOR_PARAMETER_AUDIT_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md`](QUARK_PROJECTOR_PARAMETER_AUDIT_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md)
+  [`QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md`](QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md)
   (PR #959),
-  [`DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md`](DM_LEPTOGENESIS_TRANSPORT_STATUS_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md)
+  [`DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md`](DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-05-10.md)
   (PR #960)
 - Synthesis-template authority:
-  [`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+  [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - Leaf source note:
   [`CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)
 - Leaf runner source:
@@ -368,7 +368,7 @@ campaigns and retained-promotion campaigns:
 - Audit ledger row data:
   [`docs/audit/data/audit_ledger.json`](audit/data/audit_ledger.json)
 - Campaign-level synthesis template:
-  [`AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`](AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md)
+  [`AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md)
 - Audit-lane policy fixes preceding this note: PR #907 (criticality-bump
   policy fix), PR #925 (one-shot restoration of over-aggressively
   invalidated audits)

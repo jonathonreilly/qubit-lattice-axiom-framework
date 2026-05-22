@@ -311,7 +311,7 @@ discharged. The companion question — which retained log-functional on
 `Herm_circ(3)` is the canonical extremal principle, equivalently which
 weight pair `(mu, nu)` is canonical for the charged-lepton
 operator-side `kappa` gate — is **open** per
-`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
+`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
 and
 [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md).
 
@@ -400,7 +400,7 @@ Non-load-bearing context citations:
 ## Relation to broader BAE closure question
 
 The 30-probe BAE campaign
-([`KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md))
+([`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md))
 records the residue:
 
 > "BAE (`|b|^2 / a^2 = 1/2`) — bounded; closure requires
@@ -488,4 +488,4 @@ change the audited claim scope.
 - [primitive_p_bae_m1_m2_duality_note_2026-05-10_pPbae_duality](PRIMITIVE_P_BAE_M1_M2_DUALITY_NOTE_2026-05-10_pPbae_duality.md)
 - [koide_u_bae_ncg_spectral_triple_note_2026-05-08_probeU_bae_ncg](KOIDE_U_BAE_NCG_SPECTRAL_TRIPLE_NOTE_2026-05-08_probeU_bae_ncg.md)
 - [koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13](KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md)
-- [koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09](KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md)
+- [koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1337 |
+| unaudited | 1336 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 25 |
-| `decoration_under_cl3_color_automorphism_theorem` | 1 |
+| `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -48,16 +48,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 605 |
 | `audited_conditional` | 86 |
-| `audited_decoration` | 23 |
+| `audited_decoration` | 24 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1561 |
+| `unaudited` | 1560 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1021 |
-| `decoration` | 24 |
+| `bounded_theorem` | 1020 |
+| `decoration` | 25 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
@@ -830,6 +830,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
+| `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition` |
@@ -10190,6 +10191,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The K-tube formula implies Δ ln ρ_(p,q) = (2/π) · ln(c_R(6) / c_(0,0)(6)), so dividing by ln(c_R/c_(0,0)) rather than C_2(R) gives the constant 2/π.  _(class `A`)_
 - **chain closes:** True — The correction follows algebraically from the stated K-tube exponent shift once Δ ln ρ is defined relative to the exponent-12 baseline. The cited retained_bounded authority supplies the c_R(6) values used for the illustrative table, but the denominator conclusion does not require a new physics derivation.
 - **rationale:** The load-bearing step is an algebraic consequence of the K-tube formula quoted in the note: subtracting the exponent-12 baseline leaves exactly (2/π) ln(c_R/c_0). This is sufficient for the bounded claim that PR #525's C_2 denominator was not the denominator implied by that ansatz. The note explicitly does not claim to derive 2/π from a one-loop diagram or close the broader plaquette problem.
+- **auditor confidence:** high
+
+### `su3_casimir_fundamental_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic K1-K3 statement that the SU(3) quadratic Casimir on the cited V_3 fundamental in Gell-Mann normalization is C_2 = (4/3)I_3; physical quark color-factor readouts are excluded.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T163210Z-ec8dbcba-su3_casimir_fundamental_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using Tr[T^a T^b] = (1/2)δ^{ab}, Tr[C_2] = Σ_a Tr[T^a T^a] = 4, and since C_2 = c_2(3)I_3, c_2(3) · 3 = 4, so c_2(3) = 4/3.  _(class `A`)_
+- **chain closes:** True — Within the narrowed algebraic scope, the cited retained_bounded authority supplies the V_3 fundamental Gell-Mann representation and trace normalization, and the note applies standard Schur/Casimir algebra to obtain 4/3. The open physical-color identification in the parent is not load-bearing for K1-K3.
+- **rationale:** The proof is a correct algebraic identity check over a single upstream retained_bounded representation statement plus admitted standard mathematics. The runner genuinely constructs the Gell-Mann matrices and verifies hermiticity, trace normalization, closure, scalar Casimir behavior, and the 4/3 value, but it does not instantiate deeper framework primitives beyond the upstream parent. There are zero external comparator checks, and the narrowed theorem is a standard algebraic consequence of the parent claim rather than a new first-principles framework derivation.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`

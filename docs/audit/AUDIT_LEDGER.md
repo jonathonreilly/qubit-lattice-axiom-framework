@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1311 |
+| unaudited | 1310 |
 | audit_in_progress | 1 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -32,6 +32,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
+| `decoration_under_cpt_exact_note` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 3 |
@@ -51,20 +52,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 1 |
 | `audited_clean` | 616 |
 | `audited_conditional` | 93 |
-| `audited_decoration` | 29 |
+| `audited_decoration` | 30 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1533 |
+| `unaudited` | 1532 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1024 |
-| `decoration` | 30 |
+| `decoration` | 31 |
 | `meta` | 226 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 737 |
+| `positive_theorem` | 736 |
 
 | criticality | count |
 |---|---:|
@@ -852,6 +853,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
+| `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -9956,6 +9958,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The force-scale gap is a structural over-smoothing of the source-to-field map: rho is localized, phi_solved is smoother and more low-mode dominated, phi_ext stays steeper in depth, and force remains positive but too weak.  _(class `C`)_
 - **chain closes:** True — The runner constructs the two graph families, source density, screened graph-Poisson solve, external-kernel field, shell profiles, and Laplacian spectra directly, and its live output reproduces the audited shell-span and low-mode diagnostics. The chain closes only as a finite diagnostic of these two fixed families, not as a general endogenous-gravity closure theorem.
 - **rationale:** The load-bearing structural diagnosis is computed rather than defined: the live runner reproduces the shell span ratios 0.123 and 0.229 and the solved/external low-mode fractions 0.958/0.453 and 0.809/0.355 from the stated graph families. The source note's force readouts are stale against live output, but the note explicitly quarantines those columns as non-load-bearing finite-snapshot values, and the qualitative positive-but-too-weak force direction remains. Residual risk is limited to future runner drift or treating this bounded diagnostic as a universal source-to-field theorem.
+- **auditor confidence:** high
+
+### `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02`
+
+- **Note:** [`STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](../../docs/STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite even periodic staggered Cl(3) Hamiltonian with retained {C,H_phys}=0 has ± spectral pairing, multiset symmetry σ(H_phys)=-σ(H_phys), vanishing trace, balanced sublattice split, and C-invariant zero eigenspace.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cpt_exact_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-030935-7e12d739-staggered_chiral_symmetr-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using C H_phys C = -H_phys, H_phys(C|E⟩) = -C H_phys|E⟩ = -E(C|E⟩), so C maps each E-eigenstate to a -E-eigenstate.  _(class `A`)_
+- **chain closes:** True — The conclusion follows algebraically from the retained cited identity C H_phys C = -H_phys plus finite-dimensional Hermitian spectral theory. No additional physics bridge or external input is needed for the audited finite-lattice spectral statement.
+- **rationale:** The proof is a standard algebraic corollary of the single upstream retained CPT/chiral anticommutation claim. The runner reconstructs the finite lattice operator and checks Hermiticity, anticommutation, spectral pairing, trace cancellation, and sublattice balance, but it performs no external comparator check and does not supply an independent first-principles result beyond the upstream identity. Under the decoration tie-breaker, a zero-D algebraic closure reducing to one parent claim is audited_decoration rather than audited_clean.
+- **decoration parent:** `cpt_exact_note`
 - **auditor confidence:** high
 
 ### `staggered_dag_note_2026-04-10`

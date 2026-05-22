@@ -85,4 +85,10 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [observable_principle_from_axiom_note](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
 - [s3_time_spacetime_tensor_primitive_note](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md)
 - [universal_gr_tensor_variational_candidate_note](UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md)
-- [universal_gr_tensor_action_blocker_note](UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md)
+- `UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md`
+  (see-also cross-reference; backticked to break cycle-0042 in the citation
+  graph. The action-blocker note imports this quotient-uniqueness note as
+  already-exact upstream content in its "What is imported here as already-exact
+  (not re-derived in this note)" inventory; the load-bearing citation direction
+  is *universal_gr_tensor_action_blocker_note → this_quotient_uniqueness_note*,
+  not vice versa.)

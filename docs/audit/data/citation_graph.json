@@ -10589,10 +10589,6 @@
       "to": "memory_mu2_geometry_sweep_note_2026-04-11"
     },
     {
-      "from": "graviton_mass_derived_note",
-      "to": "graviton_mass_spectral_gap_identity_theorem_note"
-    },
-    {
       "from": "graviton_mass_spectral_gap_identity_theorem_note",
       "to": "cosmological_constant_spectral_gap_identity_theorem_note"
     },
@@ -12319,10 +12315,6 @@
     {
       "from": "higgs_mass_wilson_loop_spectroscopy_bounded_note_2026-05-10_higgsh3",
       "to": "complete_prediction_chain_2026_04_15"
-    },
-    {
-      "from": "higgs_mechanism_note",
-      "to": "higgs_mass_derived_note"
     },
     {
       "from": "higgs_taste_singlet_projection_bounded_note_2026-05-09",
@@ -18427,10 +18419,6 @@
     {
       "from": "neutrino_mass_reduction_to_dirac_note",
       "to": "charged_lepton_two_higgs_canonical_reduction_note"
-    },
-    {
-      "from": "neutrino_mass_reduction_to_dirac_note",
-      "to": "publication.ci3_z3.derivation_atlas"
     },
     {
       "from": "neutrino_mass_reduction_to_dirac_note",
@@ -25679,10 +25667,6 @@
     {
       "from": "universal_gr_tensor_quotient_uniqueness_note",
       "to": "universal_gr_tensor_variational_candidate_note"
-    },
-    {
-      "from": "universal_gr_tensor_quotient_uniqueness_note",
-      "to": "universal_gr_tensor_action_blocker_note"
     },
     {
       "from": "universal_gr_tensor_variational_candidate_note",
@@ -54278,11 +54262,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "graviton_mass_spectral_gap_identity_theorem_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0f0c98e7a6cd8b496eb6b8cab04831913d78d13e665d7a4b04433f94e69b5da7",
+      "note_hash": "2169af0aef15ba7c644f0a130633d71d1765d7d07951c5fc08fc33d662e595b4",
       "path": "docs/GRAVITON_MASS_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_graviton_mass_derived.py",
       "title": "Lichnerowicz TT Spectral Arithmetic on S^3 with Imported Hubble Radius"
@@ -55732,11 +55714,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "higgs_mass_derived_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "46e06757bd6e912d60bc71cd12c5928bfa8c2324617039fd54d0e3bb70868a2b",
+      "note_hash": "698d65e9bc187218142a5b2319dd2c7ef20e4828282f94f3bcd25a2655dc0d7a",
       "path": "docs/HIGGS_MECHANISM_NOTE.md",
       "runner_path": "scripts/frontier_higgs_mass_derived.py",
       "title": "Higgs Mechanism Note"
@@ -63449,12 +63429,11 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "charged_lepton_two_higgs_canonical_reduction_note",
-        "publication.ci3_z3.derivation_atlas",
         "higgs_vacuum_explicit_systematic_note",
         "higgs_mass_derived_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6ed3bad1b8118b0bd14f06e223b0093947eba4e884e2ffd49b813681e8c24d0e",
+      "note_hash": "7055a5cfb4223e80468508edb5a526063dc9164cbe9fda2d15cce82f2c61eb1b",
       "path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
       "runner_path": "scripts/frontier_neutrino_mass_reduction_to_dirac.py",
       "title": "Neutrino Mass Reduction To The Dirac Lane"
@@ -70878,7 +70857,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -77000,11 +76979,10 @@
       "deps": [
         "observable_principle_from_axiom_note",
         "s3_time_spacetime_tensor_primitive_note",
-        "universal_gr_tensor_variational_candidate_note",
-        "universal_gr_tensor_action_blocker_note"
+        "universal_gr_tensor_variational_candidate_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9bad4bbc45a511fe1dde1b0acda4a8b39a7cb4952dce4f2aa336590d2dbc159f",
+      "note_hash": "33b82614ee92d8cae39416c876b99833d89770ed5237c6a777fba3cf4109fd74",
       "path": "docs/UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md",
       "runner_path": "scripts/frontier_universal_gr_tensor_quotient_uniqueness.py",
       "title": "Universal GR Tensor Quotient Uniqueness Candidate on `PL S^3 x R`"
@@ -81225,6 +81203,7 @@
     "gravitational_entanglement_note",
     "gravitational_wave_probe_note",
     "gravitomagnetic_note",
+    "graviton_mass_derived_note",
     "graviton_mass_derived_note_2026-05-17",
     "gravity_design_blueprint",
     "gravity_full_self_consistency_note",
@@ -81252,6 +81231,7 @@
     "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
     "hierarchy_spatial_bc_and_u0_scaling_note",
     "higgs_from_lattice_note",
+    "higgs_mechanism_note",
     "higher_dimension_status_2026-04-01",
     "higher_order_structural_theorems_note_2026-05-17",
     "higher_symmetry_gravity_probe_note",
@@ -81703,10 +81683,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9739,
     "leaf_count": 740,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 810,
     "runners_with_path": 2048
   }
 }

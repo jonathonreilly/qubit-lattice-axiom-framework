@@ -796,7 +796,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
@@ -7728,15 +7728,15 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
 - **claim_type:** `no_go`
-- **claim_scope:** No element internal to the 2-dimensional Pauli M_2(C) representation of Cl(3) anticommutes with all three σ_i, so no per-site γ_5 chirality projector exists under the assumed Pauli per-site representation.
+- **claim_scope:** No M in M_2(C) on a single Pauli Cl(3) irrep anticommutes with all three σ_i and squares to I; the framework per-site-Hilbert application depends on a separate Pauli-site bridge.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260522-030935-7e12d739-no_per_site_chirality_th-002`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The only M ∈ M_2(C) satisfying {M, σ_i}=0 for all three Pauli generators is M=0, so no involution γ_5 with γ_5²=I can exist.  _(class `A`)_
-- **chain closes:** False — The matrix-algebra no-go closes from the Pauli-representation assumption. The restricted packet does not close the stronger framework-level identification of the physical per-site Hilbert H_x with that Pauli C² module, because the cited authority explicitly moved that per-site bridge out of scope.
-- **rationale:** The runner genuinely computes the Pauli volume element, centrality, anticommuting constraint nullspace, and even/odd span collapse; these are class-A algebraic checks and all pass. However, the source note load-bears on the statement that the framework's per-site Hilbert is H_x ≅ C² with γ_i ↦ σ_i, while the supplied cited authority says the physical per-site Hilbert bridge was moved out of scope to a staggered-Dirac/Grassmann gate not provided here. Thus the Pauli-matrix no-go is sound conditionally on that representation input, but the restricted one-hop chain does not close the framework-level premise.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T125330Z-34ddc3b9-no_per_site_chirality_th-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Decomposing M = a·I + Σ_k b_k·σ_k gives {M, σ_j} = 2a·σ_j + 2b_j·I, so anticommuting with all three σ_j forces M = 0.  _(class `A`)_
+- **chain closes:** False — The Pauli-basis algebraic no-go closes inside M_2(C), and the runner genuinely checks those matrix identities. The stronger framework claim that the physical per-site Hilbert is this Pauli M_2(C) representation is not supplied by the cited authority, which explicitly moved that bridge out of scope.
+- **rationale:** The load-bearing step is a valid class-A algebraic closure over the Pauli representation: only the zero matrix anticommutes with all three Pauli generators, so no involutive gamma_5 exists in M_2(C). The no-go gate does not find a counter-route inside the stated M_2(C) Pauli scope, including the negative-chirality sign flip. However, gate N3 exposes a hidden bridge: the source note cites the per-site uniqueness theorem for H_x ≅ C^2 with gamma_i mapped to sigma_i, while the provided authority says the physical per-site Hilbert bridge was moved out of its scope. The result is therefore conditional unless that bridge authority is supplied or the claim is narrowed to the abstract Pauli-irrep no-go.
 - **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
+  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`

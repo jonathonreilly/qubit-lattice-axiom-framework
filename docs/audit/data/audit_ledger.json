@@ -170526,7 +170526,7 @@
       "verdict_rationale": "The finite-dimensional trace obstruction is standard algebra, and the runner checks only that obstruction with the dim-2 premise effectively hard-coded. The cited authority is retained_bounded only for the physical-Cl(3)-only U1-U3 representation classification, while U4, the physical per-site Hilbert dimension conclusion, is explicitly out of scope. No-Go Discipline N3/N7 blocks a clean no-go: the strongest same-packet steelman is that H_x is not established as exactly the cited 2-dim module in this restricted packet. A retained one-hop bridge from the abstract Cl(3) irrep dimension to physical dim_C H_x = 2 is missing."
     },
     "no_per_site_chirality_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-22T03:11:11.763738+00:00",
+      "audit_date": "2026-05-22T12:55:46.392287+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
         "dep_claim_scope": {
@@ -170541,25 +170541,25 @@
         "deps": [
           "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
         ],
-        "load_bearing_score": 11.95,
+        "load_bearing_score": 12.04,
         "runner_hash": "fbc431d065e69419706f6e9e79104c50dc154274b298f37687f080b300205336",
-        "transitive_descendants": 988
+        "transitive_descendants": 1052
       },
       "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-030935-7e12d739-no_per_site_chirality_th-002",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T125330Z-34ddc3b9-no_per_site_chirality_th-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": false,
-      "chain_closure_explanation": "The matrix-algebra no-go closes from the Pauli-representation assumption. The restricted packet does not close the stronger framework-level identification of the physical per-site Hilbert H_x with that Pauli C\u00b2 module, because the cited authority explicitly moved that per-site bridge out of scope.",
+      "chain_closure_explanation": "The Pauli-basis algebraic no-go closes inside M_2(C), and the runner genuinely checks those matrix identities. The stronger framework claim that the physical per-site Hilbert is this Pauli M_2(C) representation is not supplied by the cited authority, which explicitly moved that bridge out of scope.",
       "claim_id": "no_per_site_chirality_theorem_note_2026-05-02",
-      "claim_scope": "No element internal to the 2-dimensional Pauli M_2(C) representation of Cl(3) anticommutes with all three \u03c3_i, so no per-site \u03b3_5 chirality projector exists under the assumed Pauli per-site representation.",
+      "claim_scope": "No M in M_2(C) on a single Pauli Cl(3) irrep anticommutes with all three \u03c3_i and squares to I; the framework per-site-Hilbert application depends on a separate Pauli-site bridge.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": "2026-05-22T03:11:11.763738+00:00",
+      "claim_type_last_reviewed": "2026-05-22T12:55:46.392287+00:00",
       "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
@@ -170571,22 +170571,22 @@
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
       "load_bearing_score": 12.04,
-      "load_bearing_step": "The only M \u2208 M_2(C) satisfying {M, \u03c3_i}=0 for all three Pauli generators is M=0, so no involution \u03b3_5 with \u03b3_5\u00b2=I can exist.",
+      "load_bearing_step": "Decomposing M = a\u00b7I + \u03a3_k b_k\u00b7\u03c3_k gives {M, \u03c3_j} = 2a\u00b7\u03c3_j + 2b_j\u00b7I, so anticommuting with all three \u03c3_j forces M = 0.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "ff529bb3e0ab5ee86bd5e039fe4e9721268464fdf866bb1e9e9626093266c5eb",
       "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: include the retained-grade staggered-Dirac/Grassmann per-site Hilbert bridge, or narrow the claim wording to the abstract Pauli irrep only.",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained one-hop authority for the physical per-site Hilbert-to-Pauli M_2(C) bridge, or narrow the claim to the abstract Pauli-irrep algebraic no-go.",
       "open_dependency_paths": [
-        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+        "docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md"
       ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 6,
         "B": 0,
@@ -170597,7 +170597,7 @@
       "runner_path": "scripts/no_per_site_chirality_check.py",
       "title": "No Per-Site \u03b3_5 Chirality Operator on Cl(3) Pauli Rep",
       "transitive_descendants": 1052,
-      "verdict_rationale": "The runner genuinely computes the Pauli volume element, centrality, anticommuting constraint nullspace, and even/odd span collapse; these are class-A algebraic checks and all pass. However, the source note load-bears on the statement that the framework's per-site Hilbert is H_x \u2245 C\u00b2 with \u03b3_i \u21a6 \u03c3_i, while the supplied cited authority says the physical per-site Hilbert bridge was moved out of scope to a staggered-Dirac/Grassmann gate not provided here. Thus the Pauli-matrix no-go is sound conditionally on that representation input, but the restricted one-hop chain does not close the framework-level premise."
+      "verdict_rationale": "The load-bearing step is a valid class-A algebraic closure over the Pauli representation: only the zero matrix anticommutes with all three Pauli generators, so no involutive gamma_5 exists in M_2(C). The no-go gate does not find a counter-route inside the stated M_2(C) Pauli scope, including the negative-chirality sign flip. However, gate N3 exposes a hidden bridge: the source note cites the per-site uniqueness theorem for H_x \u2245 C^2 with gamma_i mapped to sigma_i, while the provided authority says the physical per-site Hilbert bridge was moved out of its scope. The result is therefore conditional unless that bridge authority is supplied or the claim is narrowed to the abstract Pauli-irrep no-go."
     },
     "nonlabel_grown_basin_note": {
       "audit_date": "2026-05-03T22:56:17.900748+00:00",

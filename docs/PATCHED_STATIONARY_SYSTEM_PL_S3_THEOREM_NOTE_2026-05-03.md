@@ -17,8 +17,8 @@ explicit numerical patched-system solver on PL S^3.
 ## Executive summary
 
 Cycle 10
-(`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`, historical planned pointer;
-source file not present on current `main`)
+(`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`, historical pointer to closed
+PR #412 cycle 10 stretch attempt; archived under `archive_unlanded/gr-atlas-closure-stretch-attempt-2026-05-02/`)
 provided a 2-chart minimal numerical demonstration of the parent's
 overlap-invariance + K_GR-nondegeneracy claim with three named
 obstructions:
@@ -260,9 +260,9 @@ Obstruction 2.
 ## Cited dependencies
 
 - (P1, cycle 10) `GR_ATLAS_CLOSURE_NOTE_2026-05-02.md` —
-  historical planned pointer to prior-cycle algebraic primitives
-  (B_D, K_GR, transition rule); source file not present on current
-  `main`.
+  historical pointer to prior-cycle algebraic primitives
+  (B_D, K_GR, transition rule) from closed PR #412 stretch attempt;
+  archived under `archive_unlanded/gr-atlas-closure-stretch-attempt-2026-05-02/`.
 - (P2, cycle 13) [`FULL_PL_S3_ATLAS_COCYCLE_CLOSURE_THEOREM_NOTE_2026-05-03.md`](FULL_PL_S3_ATLAS_COCYCLE_CLOSURE_THEOREM_NOTE_2026-05-03.md) —
   prior-cycle atlas (5 charts, 10 edges, 10 triangles, cocycle data).
 - (P3) [`UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md`](UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md) —
@@ -293,8 +293,9 @@ python3 scripts/frontier_patched_stationary_system_pl_s3.py
   cycle 13 sister: 5-chart atlas + 10 cocycle conditions verified.
   This note builds on cycle 13's atlas to close Obstruction 2.
 - `GR_ATLAS_CLOSURE_NOTE_2026-05-02.md` —
-  historical planned cycle 10 pointer: 2-chart minimal demo + 3 named
-  obstructions; source file not present on current `main`. Obstruction
+  historical pointer to cycle 10 stretch attempt (closed PR #412):
+  2-chart minimal demo + 3 named obstructions; archived under
+  `archive_unlanded/gr-atlas-closure-stretch-attempt-2026-05-02/`. Obstruction
   1 closed by cycle 13; Obstruction 2 closed by this note;
   Obstruction 3 remains open).
 - [`UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md`](UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md) —

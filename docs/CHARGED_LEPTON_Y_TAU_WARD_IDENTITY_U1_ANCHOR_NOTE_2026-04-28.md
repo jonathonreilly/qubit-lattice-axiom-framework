@@ -262,7 +262,7 @@ auto-pivot loop instruction.
 - Koide flagship (SA-C dependency):
   `docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md`.
 - Cross-lane analog finding:
-  `docs/NEUTRINO_LANE4_4A_M_LIGHTEST_WARD_IDENTITY_NOTE_2026-04-28.md`
+  `archive_unlanded/neutrino-lane4-4a-m-lightest-ward-identity-stretch-attempt-2026-04-28/NEUTRINO_LANE4_4A_M_LIGHTEST_WARD_IDENTITY_NOTE_2026-04-28.md`
   (Cycle 10 of neutrino loop) — analogous "structurally distant"
   finding for ν_R Yukawa.
 - Loop pack:

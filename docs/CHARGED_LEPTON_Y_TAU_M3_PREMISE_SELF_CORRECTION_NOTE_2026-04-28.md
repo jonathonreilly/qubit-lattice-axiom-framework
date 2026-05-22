@@ -331,7 +331,7 @@ This cycle's findings are falsified by:
 - YT-lane analog template:
   `docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md`.
 - Cross-lane analog (neutrino 4A m_lightest):
-  `docs/NEUTRINO_LANE4_4A_M_LIGHTEST_WARD_IDENTITY_NOTE_2026-04-28.md`.
+  `archive_unlanded/neutrino-lane4-4a-m-lightest-ward-identity-stretch-attempt-2026-04-28/NEUTRINO_LANE4_4A_M_LIGHTEST_WARD_IDENTITY_NOTE_2026-04-28.md`.
 - Loop pack:
   `.claude/science/physics-loops/charged-lepton-pickup-20260428/`.
 

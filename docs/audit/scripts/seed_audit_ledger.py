@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import subprocess
 from datetime import datetime, timezone
 from fnmatch import fnmatchcase
 from pathlib import Path
@@ -292,10 +293,14 @@ def note_hash_change_is_path_alias_only(
         text = path.read_text(encoding="utf-8", errors="replace")
     except OSError:
         return False
-    normalized = text
-    for current, legacy in replacements:
-        normalized = normalized.replace(current, legacy)
-    return hashlib.sha256(normalized.encode("utf-8")).hexdigest() == prior_hash
+    normalized = normalize_alias_text(text, replacements)
+    if hashlib.sha256(normalized.encode("utf-8")).hexdigest() == prior_hash:
+        return True
+    prior_text = prior_note_text_by_hash(note_path, prior_hash)
+    if prior_text is None:
+        return False
+    prior_normalized = normalize_alias_text(prior_text, replacements)
+    return normalized == prior_normalized
 
 
 def rewrite_alias_strings(value, replacements: list[tuple[str, str]]):
@@ -315,6 +320,50 @@ def rewrite_alias_strings(value, replacements: list[tuple[str, str]]):
             for key, item in value.items()
         }
     return value
+
+
+def normalize_alias_text(text: str, replacements: list[tuple[str, str]]) -> str:
+    """Normalize current path aliases back to their legacy spellings."""
+    out = text
+    for current, legacy in replacements:
+        out = out.replace(current, legacy)
+    return out
+
+
+def prior_note_text_by_hash(note_path: str, prior_hash: str | None) -> str | None:
+    """Find the prior committed text for note_path matching prior_hash.
+
+    Alias-only migrations can touch rows that already contain older alias
+    replacements. Comparing current-normalized text to the raw prior hash can
+    over-normalize those older canonical spellings. When git history is
+    available, compare current and prior text after the same normalization.
+    """
+    if not prior_hash:
+        return None
+    try:
+        result = subprocess.run(
+            ["git", "log", "--format=%H", "--", note_path],
+            cwd=REPO_ROOT,
+            text=True,
+            capture_output=True,
+            check=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    for commit in result.stdout.splitlines()[:200]:
+        try:
+            blob = subprocess.run(
+                ["git", "show", f"{commit}:{note_path}"],
+                cwd=REPO_ROOT,
+                text=True,
+                capture_output=True,
+                check=True,
+            ).stdout
+        except (OSError, subprocess.CalledProcessError):
+            continue
+        if hashlib.sha256(blob.encode("utf-8")).hexdigest() == prior_hash:
+            return blob
+    return None
 
 
 def archive_prior_audit(row: dict) -> dict:

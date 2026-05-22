@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 374 |
+| **retained_bounded** | 375 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1299 |
+| unaudited | 1298 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 627 |
+| `audited_clean` | 628 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1523 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
@@ -163,6 +163,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bound_state_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `carrier_orbit_invariance_note_2026-05-03` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
@@ -1741,6 +1742,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The one-hop dependencies are now retained-grade and support the bounded 2-body branch-entanglement interpretation and corrected 3-body W-type interpretation. The current source note and runner output close the scoped robustness claim without relying on full BMV witness status or an external comparator.
 - **rationale:** The clean verdict applies only to the bounded numerical protocol theorem stated in the note. The load-bearing runner output gives positive 2-body delta_S across all audited sweeps and confirms the corrected 3-body W-type, non-GHZ interpretation with tau_3 = 0 and positive bipartite entropies. The prior dependency block is resolved because both cited one-hop dependencies now have retained-grade status. Plot generation failed due to missing matplotlib, but that does not affect the load-bearing numerical checks.
 - **auditor confidence:** medium
+
+### `broad_surrogate_point_source_compare_note`
+
+- **Note:** [`BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md`](../../docs/BROAD_SURROGATE_POINT_SOURCE_COMPARE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed h=0.5, W=8, L=12 3D ordered-lattice valley-linear diagnostic comparing the runner-defined broad surrogate source against an equivalent-strength point source for probes z=0, ±1, ±2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T235116Z-8e6afbd0-broad_surrogate_point_so-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Across the tested probe packets z = 0, ±1, ±2, the broad-source and centroid-matched point-source responses have max TV distance 0.000051 with matching best-shift and width summaries.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the lattice, broad detector profile, profile-sourced field, centroid-matched point field, and five probe responses directly, and the completed output matches the note's frozen metrics. Closure is only for the finite broad-source versus point-source diagnostic, not for persistent mass, inertial response, or geometry-generic equivalence.
+- **rationale:** The runner source performs an actual lattice propagation computation rather than printing constants or importing the contested result from another note. The helper source defines the lattice and propagation operators used on the load-bearing path, and no hard-coded expected TV value or external comparator is used. The cited authorities are retained_bounded, and the audited conclusion stays within the explicitly bounded finite diagnostic. The clean verdict does not promote the result to a persistent-mass, inertial-response, or family-generic theorem.
+- **auditor confidence:** high
 
 ### `broken_graph_action_power_robustness_note`
 

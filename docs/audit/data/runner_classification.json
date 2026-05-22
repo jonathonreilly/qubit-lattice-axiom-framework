@@ -11028,6 +11028,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_industrial_sdp_bootstrap_block02.py"
     },
+    "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py"
+    },
     "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "assert_count": 1,
       "counts": {
@@ -38762,6 +38774,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_inner_automorphism_invariance_tracial_identification.py": {
+      "assert_count": 1,
+      "claims": [
+        "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py": {
       "assert_count": 1,
       "claims": [
@@ -53439,15 +53466,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 304,
+    "decoration_candidates": 305,
     "dominant_class_distribution": {
       "A": 195,
-      "B": 262,
+      "B": 263,
       "C": 730,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1915,
+    "runners_classified": 1916,
     "runners_with_C": 942,
     "runners_with_D": 547
   }

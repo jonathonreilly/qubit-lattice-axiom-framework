@@ -12841,6 +12841,14 @@
       "to": "gauge_vacuum_plaquette_framework_point_underdetermination_note"
     },
     {
+      "from": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "to": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
       "from": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
       "to": "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
     },
@@ -56262,6 +56270,21 @@
       "runner_path": "scripts/frontier_industrial_sdp_bootstrap_block02.py",
       "title": "Industrial SDP Bootstrap \u2014 Lattice \u27e8P\u27e9(\u03b2=6) Bracket Attempt"
     },
+    "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
+      "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "690527f32a87698bc81e3733acd967e4259121468c89807e508d00f8cf52ad1f",
+      "path": "docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": "scripts/frontier_inner_automorphism_invariance_tracial_identification.py",
+      "title": "Conditional Inner-Automorphism Invariance Identifies the Pre-Record State as Tracial"
+    },
     "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
       "claim_id": "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16",
       "claim_type_author_hint": "positive_theorem",
@@ -81309,7 +81332,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 510,
+      "bounded_theorem": 511,
       "decoration": 1,
       "meta": 184,
       "no_go": 58,
@@ -81318,7 +81341,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 948,
+      "bounded_theorem": 949,
       "decoration": 1,
       "meta": 184,
       "no_go": 161,
@@ -81326,10 +81349,10 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9704,
+    "edge_count": 9706,
     "leaf_count": 738,
-    "node_count": 2469,
+    "node_count": 2470,
     "root_count": 804,
-    "runners_with_path": 2036
+    "runners_with_path": 2037
   }
 }

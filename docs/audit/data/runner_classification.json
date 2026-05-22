@@ -36,7 +36,7 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc_hostile_audit_findings.py"
     },
-    "a3_r1_hostile_review_confirms_obstruction_note_2026-05-08_r1hr": {
+    "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr": {
       "assert_count": 0,
       "counts": {
         "A": 0,
@@ -48,7 +48,7 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_a3_r1_hostile_review_2026_05_08_r1hr.py"
     },
-    "a3_r2_hostile_review_confirms_exhaustion_note_2026-05-08_r2hr": {
+    "a3_r2_review_confirms_exhaustion_note_2026-05-08_r2hr": {
       "assert_count": 0,
       "counts": {
         "A": 0,
@@ -60,7 +60,7 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_a3_r2_hostile_review_2026_05_08_r2hr.py"
     },
-    "a3_r3_hostile_review_confirms_obstruction_note_2026-05-08_r3hr": {
+    "a3_r3_review_confirms_obstruction_note_2026-05-08_r3hr": {
       "assert_count": 0,
       "counts": {
         "A": 0,
@@ -72,7 +72,7 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py"
     },
-    "a3_r4_hostile_review_confirmed_note_2026-05-08_r4hr": {
+    "a3_r4_review_confirmed_note_2026-05-08_r4hr": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -84,7 +84,7 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_a3_r4_hostile_review_2026_05_08_r4hr.py"
     },
-    "a3_r5_hostile_review_confirms_obstruction_note_2026-05-08_r5hr": {
+    "a3_r5_review_confirms_obstruction_note_2026-05-08_r5hr": {
       "assert_count": 0,
       "counts": {
         "A": 0,
@@ -864,7 +864,7 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_atomic_rydberg_dependency_firewall.py"
     },
-    "audit_backlog_campaign_progress_synthesis_2026-05-02": {
+    "audit_backlog_note_2026-05-02": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -3048,7 +3048,7 @@
       "dominant_class": null,
       "runner": "scripts/complex_action_grown_companion.py"
     },
-    "claude_complex_action_grown_companion_terminal_synthesis_meta_note_2026-05-10": {
+    "claude_complex_action_grown_companion_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -3324,7 +3324,7 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_composite_higgs_mechanism.py"
     },
-    "composite_higgs_mechanism_stretch_attempt_note_2026-05-03_note_2026-05-17": {
+    "composite_higgs_mechanism_note_2026-05-17": {
       "assert_count": 0,
       "counts": {
         "A": 0,
@@ -5196,7 +5196,7 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_dm_leptogenesis_transport_status.py"
     },
-    "dm_leptogenesis_transport_status_terminal_synthesis_meta_note_2026-05-10": {
+    "dm_leptogenesis_transport_status_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -11472,7 +11472,7 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_aps_block_by_block_forcing.py"
     },
-    "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09": {
+    "koide_bae_30_probe_campaign_note_2026-05-09": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -11568,7 +11568,7 @@
       "dominant_class": "C",
       "runner": "scripts/cl3_koide_bae_probe_native_lattice_flow_2026_05_09_probe21.py"
     },
-    "koide_bae_probe_phi_from_z3_character_sharpened_note_2026-05-09_probe24": {
+    "koide_bae_probe_phi_from_z3_character_note_2026-05-09_probe24": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -11628,7 +11628,7 @@
       "dominant_class": "A",
       "runner": "scripts/cl3_koide_bae_probe_vm_cubic_extrema_2026_05_09_probe20.py"
     },
-    "koide_bae_probe_wilson_chain_mass_sharpened_note_2026-05-09_probe19": {
+    "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -11904,7 +11904,7 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_koide_delta_marked_relative_cobordism_no_go.py"
     },
-    "koide_dimensionless_objection_closure_note_2026-04-24": {
+    "koide_dimensionless_note_2026-04-24": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -12095,18 +12095,6 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20_hostile_audit_findings.py"
-    },
-    "koide_hostile_review_guard_note_2026-04-24": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "runner": "scripts/frontier_koide_hostile_review_guard.py"
     },
     "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": {
       "assert_count": 2,
@@ -12623,6 +12611,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow.py"
+    },
+    "koide_review_guard_note_2026-04-24": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_koide_hostile_review_guard.py"
     },
     "koide_reviewer_stress_test_note_2026-04-21": {
       "assert_count": 0,
@@ -18144,7 +18144,7 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_quark_projector_parameter_audit.py"
     },
-    "quark_projector_parameter_audit_terminal_synthesis_meta_note_2026-05-10": {
+    "quark_projector_parameter_audit_note_2026-05-10": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -18468,7 +18468,7 @@
       "dominant_class": "D",
       "runner": "scripts/cl3_radian_bridge_expanded_inventory_2026_05_10_radianexp.py"
     },
-    "radian_unit_convention_reclassification_sharpened_note_2026-05-10_radianconv": {
+    "radian_unit_convention_reclassification_note_2026-05-10_radianconv": {
       "assert_count": 1,
       "counts": {
         "A": 0,
@@ -21276,7 +21276,7 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_su5_embedding_from_graph_first_surface.py"
     },
-    "substep4_ac_lambda_separate_closure_sharpened_note_2026-05-10_aclambda": {
+    "substep4_ac_lambda_separate_closure_note_2026-05-10_aclambda": {
       "assert_count": 1,
       "counts": {
         "A": 1,
@@ -27306,7 +27306,7 @@
     "scripts/cl3_a3_r1_hostile_review_2026_05_08_r1hr.py": {
       "assert_count": 0,
       "claims": [
-        "a3_r1_hostile_review_confirms_obstruction_note_2026-05-08_r1hr"
+        "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr"
       ],
       "counts": {
         "A": 0,
@@ -27321,7 +27321,7 @@
     "scripts/cl3_a3_r2_hostile_review_2026_05_08_r2hr.py": {
       "assert_count": 0,
       "claims": [
-        "a3_r2_hostile_review_confirms_exhaustion_note_2026-05-08_r2hr"
+        "a3_r2_review_confirms_exhaustion_note_2026-05-08_r2hr"
       ],
       "counts": {
         "A": 0,
@@ -27336,7 +27336,7 @@
     "scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py": {
       "assert_count": 0,
       "claims": [
-        "a3_r3_hostile_review_confirms_obstruction_note_2026-05-08_r3hr"
+        "a3_r3_review_confirms_obstruction_note_2026-05-08_r3hr"
       ],
       "counts": {
         "A": 0,
@@ -27351,7 +27351,7 @@
     "scripts/cl3_a3_r4_hostile_review_2026_05_08_r4hr.py": {
       "assert_count": 1,
       "claims": [
-        "a3_r4_hostile_review_confirmed_note_2026-05-08_r4hr"
+        "a3_r4_review_confirmed_note_2026-05-08_r4hr"
       ],
       "counts": {
         "A": 0,
@@ -27366,7 +27366,7 @@
     "scripts/cl3_a3_r5_hostile_review_2026_05_08_r5hr.py": {
       "assert_count": 0,
       "claims": [
-        "a3_r5_hostile_review_confirms_obstruction_note_2026-05-08_r5hr"
+        "a3_r5_review_confirms_obstruction_note_2026-05-08_r5hr"
       ],
       "counts": {
         "A": 0,
@@ -28222,7 +28222,7 @@
     "scripts/cl3_koide_bae_probe_phi_from_z3_character_2026_05_09_probe24.py": {
       "assert_count": 1,
       "claims": [
-        "koide_bae_probe_phi_from_z3_character_sharpened_note_2026-05-09_probe24"
+        "koide_bae_probe_phi_from_z3_character_note_2026-05-09_probe24"
       ],
       "counts": {
         "A": 0,
@@ -28297,7 +28297,7 @@
     "scripts/cl3_koide_bae_probe_wilson_chain_mass_2026_05_09_probe19.py": {
       "assert_count": 1,
       "claims": [
-        "koide_bae_probe_wilson_chain_mass_sharpened_note_2026-05-09_probe19"
+        "koide_bae_probe_wilson_chain_mass_note_2026-05-09_probe19"
       ],
       "counts": {
         "A": 0,
@@ -29092,7 +29092,7 @@
     "scripts/cl3_substep4_ac_lambda_separate_closure_2026_05_10_aclambda.py": {
       "assert_count": 1,
       "claims": [
-        "substep4_ac_lambda_separate_closure_sharpened_note_2026-05-10_aclambda"
+        "substep4_ac_lambda_separate_closure_note_2026-05-10_aclambda"
       ],
       "counts": {
         "A": 1,
@@ -30358,7 +30358,7 @@
     "scripts/frontier_audit_backlog_campaign_synthesis.py": {
       "assert_count": 1,
       "claims": [
-        "audit_backlog_campaign_progress_synthesis_2026-05-02"
+        "audit_backlog_note_2026-05-02"
       ],
       "counts": {
         "A": 0,
@@ -30433,7 +30433,7 @@
     "scripts/frontier_bae_30_probe_terminal_synthesis.py": {
       "assert_count": 1,
       "claims": [
-        "koide_bae_30_probe_campaign_terminal_synthesis_meta_note_2026-05-09"
+        "koide_bae_30_probe_campaign_note_2026-05-09"
       ],
       "counts": {
         "A": 0,
@@ -31924,7 +31924,7 @@
     "scripts/frontier_claude_complex_action_grown_companion_terminal_synthesis.py": {
       "assert_count": 1,
       "claims": [
-        "claude_complex_action_grown_companion_terminal_synthesis_meta_note_2026-05-10"
+        "claude_complex_action_grown_companion_note_2026-05-10"
       ],
       "counts": {
         "A": 0,
@@ -32031,7 +32031,7 @@
     "scripts/frontier_composite_higgs_mechanism_stretch_attempt_note_2026-05-03_hostile_audit_findings.py": {
       "assert_count": 0,
       "claims": [
-        "composite_higgs_mechanism_stretch_attempt_note_2026-05-03_note_2026-05-17"
+        "composite_higgs_mechanism_note_2026-05-17"
       ],
       "counts": {
         "A": 0,
@@ -33688,7 +33688,7 @@
     "scripts/frontier_dm_leptogenesis_transport_status_terminal_synthesis.py": {
       "assert_count": 1,
       "claims": [
-        "dm_leptogenesis_transport_status_terminal_synthesis_meta_note_2026-05-10"
+        "dm_leptogenesis_transport_status_note_2026-05-10"
       ],
       "counts": {
         "A": 0,
@@ -39342,7 +39342,7 @@
     "scripts/frontier_koide_dimensionless_objection_closure_review.py": {
       "assert_count": 1,
       "claims": [
-        "koide_dimensionless_objection_closure_note_2026-04-24"
+        "koide_dimensionless_note_2026-04-24"
       ],
       "counts": {
         "A": 0,
@@ -39567,7 +39567,7 @@
     "scripts/frontier_koide_hostile_review_guard.py": {
       "assert_count": 0,
       "claims": [
-        "koide_hostile_review_guard_note_2026-04-24"
+        "koide_review_guard_note_2026-04-24"
       ],
       "counts": {
         "A": 0,
@@ -43722,7 +43722,7 @@
     "scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py": {
       "assert_count": 1,
       "claims": [
-        "quark_projector_parameter_audit_terminal_synthesis_meta_note_2026-05-10"
+        "quark_projector_parameter_audit_note_2026-05-10"
       ],
       "counts": {
         "A": 0,
@@ -44098,7 +44098,7 @@
     "scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py": {
       "assert_count": 1,
       "claims": [
-        "radian_unit_convention_reclassification_sharpened_note_2026-05-10_radianconv"
+        "radian_unit_convention_reclassification_note_2026-05-10_radianconv"
       ],
       "counts": {
         "A": 0,

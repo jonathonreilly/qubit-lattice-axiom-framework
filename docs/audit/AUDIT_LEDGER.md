@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 16 |
-| unaudited | 1317 |
-| meta | 223 |
+| unaudited | 1318 |
+| meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 91 |
@@ -59,10 +59,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `bounded_theorem` | 1019 |
 | `decoration` | 30 |
-| `meta` | 226 |
+| `meta` | 225 |
 | `no_go` | 233 |
 | `open_gate` | 112 |
-| `positive_theorem` | 739 |
+| `positive_theorem` | 740 |
 
 | criticality | count |
 |---|---:|
@@ -772,7 +772,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `koide_dimensionless_objection_closure_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_dimensionless_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5972,9 +5972,9 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The load-bearing scalar-mark step is an algebraic closure over the retained bridge theorem, not a definition substitution or numerical match. The runner source does more than print constants: it symbolically checks the residual structure and re-verifies representative scalar restrictions by importing the sibling Wilson construction. Within the stated no-go scope, the conclusion follows from retained inputs and explicit countermodels showing marked relative cobordism does not force selected-line closure or c=0.
 - **auditor confidence:** high
 
-### `koide_dimensionless_objection_closure_note_2026-04-24`
+### `koide_dimensionless_note_2026-04-24`
 
-- **Note:** [`KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md)
+- **Note:** [`KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md`](../../docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md)
 - **claim_type:** `bounded_theorem`
 - **claim_scope:** Conditional algebraic obstruction tests on the admitted source-response-carrier plus endpoint-domain surface; not a retained no-go derived from the axiom alone.
 - **audit_status:** ~~audited_conditional~~

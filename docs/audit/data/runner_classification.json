@@ -15756,6 +15756,18 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_observable_principle_audit.py"
     },
+    "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21": {
+      "assert_count": 2,
+      "counts": {
+        "A": 16,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_foundational_restructuring_s_primary.py"
+    },
     "observable_principle_from_axiom_note": {
       "assert_count": 0,
       "counts": {
@@ -41898,6 +41910,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_observable_principle_foundational_restructuring_s_primary.py": {
+      "assert_count": 2,
+      "claims": [
+        "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21"
+      ],
+      "counts": {
+        "A": 16,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_observable_principle_p1_bridge_connes_nc_spectral.py": {
       "assert_count": 2,
       "claims": [
@@ -53668,15 +53695,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 305,
+    "decoration_candidates": 306,
     "dominant_class_distribution": {
-      "A": 200,
+      "A": 201,
       "B": 263,
       "C": 732,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1923,
+    "runners_classified": 1924,
     "runners_with_C": 949,
     "runners_with_D": 548
   }

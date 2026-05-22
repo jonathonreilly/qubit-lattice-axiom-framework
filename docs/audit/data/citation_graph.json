@@ -17101,6 +17101,14 @@
       "to": "lorentz_boost_covariance_3plus1d_theorem_note"
     },
     {
+      "from": "lsp_projective_ratification_reaudit_manifest_note_2026-05-22",
+      "to": "qubit_axiom_hardening_note_2026-05-20"
+    },
+    {
+      "from": "lsp_projective_ratification_reaudit_manifest_note_2026-05-22",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
       "from": "luders_rule_from_composition_consistency_note_2026-05-20",
       "to": "minimal_axioms_2026-05-20"
     },
@@ -61394,6 +61402,21 @@
       "runner_path": "scripts/frontier_lorentz_violation.py",
       "title": "Lorentz Violation Derived from Cubic Lattice Structure"
     },
+    "lsp_projective_ratification_reaudit_manifest_note_2026-05-22": {
+      "claim_id": "lsp_projective_ratification_reaudit_manifest_note_2026-05-22",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta (audit-request navigation doc)",
+      "claim_type_seed_hint": "meta",
+      "deps": [
+        "qubit_axiom_hardening_note_2026-05-20",
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "4897b515d50a491345e77d967435440ccd85b086ca14f3c572cce9cf0d895a8f",
+      "path": "docs/LSP_PROJECTIVE_RATIFICATION_REAUDIT_MANIFEST_NOTE_2026-05-22.md",
+      "runner_path": null,
+      "title": "LSP-Projective Ratification Re-Audit Request Manifest"
+    },
     "luders_rule_from_composition_consistency_note_2026-05-20": {
       "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
       "claim_type_author_hint": "bounded_theorem",
@@ -70878,7 +70901,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
+      "note_hash": "75c400e5245f53c741c0045114a1d6e211cd9e0d4fd6d4c2680ba5754ea43750",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81688,7 +81711,7 @@
     "claim_type_author_hint_counts": {
       "bounded_theorem": 518,
       "decoration": 1,
-      "meta": 185,
+      "meta": 186,
       "no_go": 64,
       "none": 1495,
       "open_gate": 46,
@@ -81697,15 +81720,15 @@
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 956,
       "decoration": 1,
-      "meta": 185,
+      "meta": 186,
       "no_go": 167,
       "none": 443,
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
-    "leaf_count": 740,
-    "node_count": 2483,
+    "edge_count": 9745,
+    "leaf_count": 741,
+    "node_count": 2484,
     "root_count": 808,
     "runners_with_path": 2048
   }

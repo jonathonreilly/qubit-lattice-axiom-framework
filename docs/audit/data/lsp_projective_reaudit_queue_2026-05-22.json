@@ -1,0 +1,65 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/MINIMAL_AXIOMS_2026-05-20.md",
+    "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "LSP-projective re-audit manifest as evidence",
+    "review-packet PR text as evidence",
+    "prior assistant discussion",
+    "prior audit rationales",
+    "publication-facing retained summaries"
+  ],
+  "generated_date": "2026-05-22",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "lsp_projective_direct_luders",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Does the parent L\u00fcders sequential-composition row close for the ideal unrefined sharp-projective scope under the ratified LSP-projective rule, or does another blocker remain?",
+          "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
+          "current_audit_status": "audited_conditional",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "audited_conditional",
+          "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md"
+        },
+        {
+          "audit_question": "With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it?",
+          "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [
+        "lsp_projective_direct_luders"
+      ],
+      "group_id": "lsp_projective_born_chain",
+      "order": 2,
+      "targets": [
+        {
+          "audit_question": "After the direct L\u00fcders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed?",
+          "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "ratified_commit": "886ce7effc73430c07953e9f1db39cea5f4ee0d1",
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

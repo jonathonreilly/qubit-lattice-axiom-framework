@@ -2,7 +2,7 @@
   "claim_type_counts": {
     "bounded_theorem": 1024,
     "decoration": 36,
-    "meta": 227,
+    "meta": 228,
     "no_go": 238,
     "open_gate": 113,
     "positive_theorem": 731
@@ -62,7 +62,7 @@
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 223,
+    "meta": 224,
     "open_gate": 15,
     "retained": 113,
     "retained_bounded": 380,

@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 118 |
 | **retained_no_go** | 148 |
 | **retained_bounded** | 364 |
-| _retained_pending_chain_ | 14 |
+| _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 610 |
+| `audited_clean` | 611 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 70 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1540 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
@@ -70,7 +70,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 199 |
 | `leaf` | 894 |
 
-- **Retained pending chain closure:** 14
+- **Retained pending chain closure:** 15
 - **Citation cycles detected:** 292
 
 ### Runner classification (static heuristic)
@@ -441,6 +441,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
+| `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | claude-opus | C | - |
@@ -6931,6 +6932,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Tracelessness over the LH-doublet sector gives 6α + 2β = 0, so β = -3α and the Sym²:Anti² ratio is 1:(-3).  _(class `A`)_
 - **chain closes:** True — The ratio follows by algebra from the retained graph-first 6 and 2 multiplicities plus the stated tracelessness equation. No staggered-Dirac realization, lattice-action quantity, normalization choice, or SM hypercharge identification is load-bearing for this scoped ratio claim.
 - **rationale:** The load-bearing step is a genuine class (A) algebraic closure over retained-grade graph-first inputs: 6α + 2β = 0 forces β/α = -3. The runner source confirms exact rational arithmetic and checks the stated boundary, while not importing staggered-Dirac realization machinery or external observational comparators. The narrow parent note is not itself retained, but this proof-walk does not depend on that parent as a status-bearing premise; it reuses only the algebraic result and retained graph-first multiplicities within the restricted scope.
+- **auditor confidence:** high
+
+### `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For fixed positive integers N >= 2 and k >= 1, the ordered positive-integer partition m+n=N with traceless ratio beta/alpha=-k is unique when it exists, with n=N/(k+1) and m=kN/(k+1); at (N,k)=(8,3) this yields (6,2).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T171902Z-021c6520-lh_doublet_partition_rat-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Setting beta/alpha = -k in beta/alpha = -m/n gives m = k n; combining with m + n = N gives n = N/(k+1), m = kN/(k+1), and any other admissible pair satisfies the same equations.  _(class `A`)_
+- **chain closes:** True — The inverse uniqueness statement follows by elementary algebra from the stated hypotheses and divisibility condition. The audit does not require deriving N=8 or k=3, since those are explicitly outside this note's load-bearing scope.
+- **rationale:** The load-bearing step is a genuine class-A algebraic closure: solve the trace equation, impose the ratio target, and substitute into the fixed state count. The runner source performs symbolic and exact rational checks plus finite exhaustions, rather than merely printing constants or importing a fitted comparator. No PDG values, external numerical matches, SM-hypercharge identification, or normalization convention enters the audited chain.
 - **auditor confidence:** high
 
 ### `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`

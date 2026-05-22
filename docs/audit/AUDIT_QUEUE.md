@@ -17,7 +17,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | critical | 988 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/multisite_pauli_group_check.py` |
 | 2 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | critical | 988 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/q_integer_spectrum_check.py` |
-| 3 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 988 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/pauli_group_order_check.py` |
+| 3 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | critical | 988 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/pauli_group_order_check.py` |
 | 4 | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | positive_theorem | unaudited | critical | 1120 | 15.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py` |
 | 5 | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | open_gate | unaudited | critical | 1118 | 16.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py` |
 | 6 | `gauge_vacuum_plaquette_tensor_transfer_perron_solve_note` | positive_theorem | unaudited | critical | 1116 | 13.62 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py` |

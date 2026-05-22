@@ -5937,6 +5937,10 @@
       "to": "moving_source_retarded_portability_note"
     },
     {
+      "from": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+      "to": "dimensional_gravity_table"
+    },
+    {
       "from": "dimension_selection_note",
       "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
     },
@@ -46484,6 +46488,20 @@
       "runner_path": "scripts/diamond_signal_budget_hardening.py",
       "title": "Diamond Signal Budget Hardening Note"
     },
+    "dimension_selection_lower_bound_bridge_v2_2026-05-20": {
+      "claim_id": "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "dimensional_gravity_table"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "8950a525c7762229752256d9555a159ed85a7af546517d302d575efdea66a302",
+      "path": "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
+      "runner_path": "scripts/frontier_dimension_selection.py",
+      "title": "Dimension-Selection Lower-Bound Bridge V2 (Runner-Faithful)"
+    },
     "dimension_selection_note": {
       "claim_id": "dimension_selection_note",
       "claim_type_author_hint": null,
@@ -81358,7 +81376,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 511,
+      "bounded_theorem": 512,
       "decoration": 1,
       "meta": 184,
       "no_go": 60,
@@ -81367,7 +81385,7 @@
       "positive_theorem": 172
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 949,
+      "bounded_theorem": 950,
       "decoration": 1,
       "meta": 184,
       "no_go": 163,
@@ -81375,10 +81393,10 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9706,
-    "leaf_count": 740,
-    "node_count": 2472,
+    "edge_count": 9707,
+    "leaf_count": 741,
+    "node_count": 2473,
     "root_count": 806,
-    "runners_with_path": 2039
+    "runners_with_path": 2040
   }
 }

@@ -274598,11 +274598,11 @@
   "schema_version": 1,
   "stats": {
     "dropped_gated_sources": 158,
-    "dropped_missing_notes": 20,
-    "dropped_total": 20,
-    "migrated_path_aliases": 84,
+    "dropped_missing_notes": 0,
+    "dropped_total": 0,
+    "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2231,
+    "preserved_existing": 2315,
     "re_audit_required": 0,
     "row_count": 2359,
     "seeded_new": 0

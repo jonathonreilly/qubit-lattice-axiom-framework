@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 407,
-    "high": 220,
+    "high": 219,
     "leaf": 337,
     "medium": 348
   },
@@ -11750,32 +11750,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_koide_cross_sector_z3_closure.py",
       "transitive_descendants": 56
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wave_direct_dm_h025_fam1_seed1_control_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/wave_direct_dm_h025_control_batch.py",
-        "scripts/wave_direct_dm_matched_history_probe.py",
-        "scripts/wave_retardation_continuum_limit.py"
-      ],
-      "load_bearing_score": 6.67,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py",
-      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -37536,6 +37510,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
-  "total_pending": 1312
+  "ready_count": 20,
+  "total_pending": 1311
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 369 |
+| **retained_bounded** | 370 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,22 +46,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 622 |
+| `audited_clean` | 623 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 27 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1536 |
+| `unaudited` | 1535 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1026 |
+| `bounded_theorem` | 1027 |
 | `decoration` | 28 |
 | `meta` | 227 |
 | `no_go` | 238 |
 | `open_gate` | 113 |
-| `positive_theorem` | 742 |
+| `positive_theorem` | 741 |
 
 | criticality | count |
 |---|---:|
@@ -717,6 +717,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_3plus1d_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_amplification_near_horizon_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `wave_direct_dm_family_scout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_fam1_seed1_control_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_equation_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_equation_self_field_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `wave_radiation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
@@ -11836,6 +11837,19 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The exact scoped runner invocation constructs the three retained families, two H values, and matched early/late schedules, then reproduces the six quoted R_hist and delta_hist rows. The chain closes only for the explicitly one-seed, one-strength scout boundary.
 - **rationale:** The exact all-family scout command reproduces the frozen result table: every family/H row has negative R_hist and a material magnitude in the stated -37.73% to -44.29% band. The note explicitly rejects portability, multi-seed, full control-stack, and continuum-stability interpretations, so the retained claim is only the bounded scout table. Residual risk is limited to future runner drift or downstream citations treating this scout as the full portability batch.
 - **auditor confidence:** high
+
+### `wave_direct_dm_h025_fam1_seed1_control_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T233213Z-aae32cd8-wave_direct_dm_h025_fam1-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `Fam1`, seed `1`, `H = 0.25` is now a controlled fine-`H` replay with exact null, stable sign, and approximately linear weak-field scaling at `R_hist ~ -30%`.  _(class `C`)_
+- **chain closes:** True — The supplied runner cache matches the table and summary in the note, and the primary runner fixes the claimed family, seed, H, and strength ladder before calling the shared compute path. Within the restricted packet, the claim remains bounded to this family/seed/H control replay and does not require a portability law.
+- **rationale:** The runner output reports an exact S=0 null, negative delta_hist at all three nonzero strengths, R_hist values from -29.02% to -30.37%, and a 5.22% scaled-magnitude spread, matching the source note. The runner source is not a constant printer: it delegates to measure_dm after pinning the CLI arguments to Fam1, seed 1, H=0.25, and the included helper path constructs the lattice, histories, wave field, and beam response rather than importing the contested table from another note. The note's conclusion is appropriately bounded and explicitly avoids promoting a portability law.
+- **auditor confidence:** medium
 
 ### `wave_equation_gravity_note`
 

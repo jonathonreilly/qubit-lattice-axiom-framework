@@ -1,0 +1,160 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/MINIMAL_AXIOMS_2026-05-20.md",
+    "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+    "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "review-packet PR text as evidence",
+    "prior assistant discussion",
+    "prior audit rationales",
+    "publication-facing retained summaries"
+  ],
+  "generated_date": "2026-05-22",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "local_clifford_algebra",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Does the exact local Cl(3,0)/Pauli representation scope qualify as positive_theorem under clarified A1?",
+          "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md"
+        },
+        {
+          "audit_question": "Does the finite Clifford volume-chirality parity theorem qualify as positive_theorem under clarified A1/A2?",
+          "claim_id": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "generation_local_algebra",
+      "order": 2,
+      "targets": [
+        {
+          "audit_question": "Does the exact translation-character/projector algebra qualify as positive_theorem without promoting physical generation claims?",
+          "claim_id": "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md"
+        },
+        {
+          "audit_question": "Does the finite H_hw=1 translation-character algebra qualify as positive_theorem, or does the row need a split first?",
+          "claim_id": "generation_axiom_boundary_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GENERATION_AXIOM_BOUNDARY_NOTE.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [
+        "local_clifford_algebra"
+      ],
+      "group_id": "graph_first_gauge_structure",
+      "order": 3,
+      "targets": [
+        {
+          "audit_question": "Does the exact graph-first selector result qualify as positive_theorem while leaving downstream abelian interpretation open?",
+          "claim_id": "graph_first_selector_derivation_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md"
+        },
+        {
+          "audit_question": "Does the selected-axis finite-cube structural su(3) construction qualify as positive_theorem without promoting hypercharge or EW matching?",
+          "claim_id": "graph_first_su3_integration_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md"
+        },
+        {
+          "audit_question": "Does the structural native gauge-closure scope qualify as positive_theorem, or does the row need a structural/physical split first?",
+          "claim_id": "native_gauge_closure_note",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "group_id": "su3_toolkit_algebra",
+      "order": 4,
+      "targets": [
+        {
+          "audit_question": "Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout?",
+          "claim_id": "cl3_color_automorphism_theorem",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+        },
+        {
+          "audit_question": "Does the standard fundamental-carrier SU(3) Casimir identity qualify as positive_theorem on retained algebraic inputs?",
+          "claim_id": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md"
+        },
+        {
+          "audit_question": "Does the Gell-Mann-carrier d^{abc} algebra qualify as positive_theorem on retained algebraic inputs?",
+          "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md"
+        },
+        {
+          "audit_question": "Does the exact SU(N_c) Fierz/channel-count identity qualify as positive_theorem without promoting the EW matching rule?",
+          "claim_id": "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+        },
+        {
+          "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
+          "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md"
+        },
+        {
+          "audit_question": "Does the conjugate-representation cubic-anomaly index identity qualify as positive_theorem without promoting matter-existence or chirality claims?",
+          "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

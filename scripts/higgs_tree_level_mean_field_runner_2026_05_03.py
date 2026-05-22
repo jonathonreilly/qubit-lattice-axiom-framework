@@ -254,7 +254,7 @@ def t7_step_7_authority_chain():
         ("2026-05-02 status correction audit cross-ref",
          "HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02"),
         ("audit backlog campaign synthesis cross-ref",
-         "AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02"),
+         "AUDIT_BACKLOG_NOTE_2026-05-02"),
         # scope guard is checked below using whitespace-normalised text
         # (the phrase can straddle a line wrap)
         ("Wilson-staircase open-target call-out",

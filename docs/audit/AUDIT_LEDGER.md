@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | audit_in_progress | 3 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 25 |
+| `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -52,16 +53,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 3 |
 | `audited_clean` | 620 |
 | `audited_conditional` | 96 |
-| `audited_decoration` | 33 |
+| `audited_decoration` | 34 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1520 |
+| `unaudited` | 1519 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1024 |
-| `decoration` | 34 |
+| `bounded_theorem` | 1023 |
+| `decoration` | 35 |
 | `meta` | 226 |
 | `no_go` | 238 |
 | `open_gate` | 112 |
@@ -841,6 +842,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
+| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17` | cross_family | claude-opus | A | `chsh_structural_bound_narrow_theorem_note_2026-05-17` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -2183,6 +2185,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
+- **auditor confidence:** high
+
+### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
+
+- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Pair-wise Tsirelson bound ‖C‖ ≤ 2√2 on the framework's qubit lattice (A1: per-site M_2(ℂ), A2: Z^3) for dichotomic self-adjoint involution observables at distinct sites, with saturation witnessed by a Bell state |Φ⁺⟩ and the standard σ_z/σ_x configuration.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17`  (reason: `decoration_parent_retained`)
+- **auditor:** `claude-audit-loop-2026-05-19-chsh-tsirelson`  (claude-opus; independence=cross_family)
+- **load-bearing step:** For dichotomic Pauli-involution observables A_i, B_j at distinct Z^3 sites x ≠ y with tensor locality [A_i ⊗ I, I ⊗ B_j] = 0, the CHSH operator C = A_1⊗B_1 + A_1⊗B_2 + A_2⊗B_1 − A_2⊗B_2 satisfies ‖C‖ ≤ 2√2 by Tsirelson's 1980 expansion C² = (A_1²+A_2²)⊗(B_1²+B_2²) + [A_1,A_2]⊗[B_1,B_2] combined with ‖[A_1,A_2]‖,‖[B_1,B_2]‖ ≤ 2, saturated at maximally entangled qubit pairs.  _(class `A`)_
+- **chain closes:** True — The bound and the saturating witness follow directly from the retained CHSH structural bound narrow theorem (chsh_structural_bound_narrow_theorem_note_2026-05-17), which already derives ‖S_op‖ ≤ 2√2 via the Landau identity S_op² = 4I − [A_0,A_1][B_0,B_1] and explicitly exhibits the σ_z/σ_x Bell-state saturator using retained Cl(3) per-site Hilbert dim two. The 2026-05-20 note reproduces that same algebra under tensor-locality (retained) on Z^3 (A2) and adds only the labels 'Tsirelson bound' and 'Z^3 pair-wise uniformity', plus a comparison to the PR-box bound (cited as standard mathematics).
+- **rationale:** Issue: The note's load-bearing derivation is an exact algebraic restatement of the already-retained parent chsh_structural_bound_narrow_theorem_note_2026-05-17 — same Tsirelson/Landau identity (4), same Pauli commutator-norm bound (6), same Bell-state saturation construction (Step 2 vs parent Part 3). The note explicitly disclaims being a derivation of Tsirelson's theorem from A1+A2 ('Not a derivation of Tsirelson's theorem from A1+A2 (the theorem itself is standard QI; the framework cites it)') and admits the Tsirelson 1980 argument as an imported standard QI result. Why this blocks bounded_theorem: the chain reduces to a single retained parent (chsh_structural_bound) plus standard mathematics, with zero (D) checks and no independent runner — this is the audit-lane definition of algebraic decoration per ALGEBRAIC_DECORATION_POLICY.md §1. The Z^3 'pair-wise uniformity' (Step 4) and the PR-box comparator (Step 3) are convention-labeling and standard-citation, not new physical content. Repair target: roll the content into a 'Tsirelson-bound corollary' annotation under the retained parent; do not promote as an independent bounded_theorem. Claim boundary until fixed: the parent's retained Tsirelson bound and Bell-saturating witness already cover the substantive content; the lattice qubit pair labels are usable as descriptive prose but should not be presented as a separately retained theorem.
+- **decoration parent:** `chsh_structural_bound_narrow_theorem_note_2026-05-17`
 - **auditor confidence:** high
 
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`

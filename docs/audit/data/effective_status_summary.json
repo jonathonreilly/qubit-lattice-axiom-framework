@@ -56,13 +56,12 @@
     "retained": 110,
     "retained_bounded": 376,
     "retained_no_go": 145,
-    "retained_pending_chain": 11,
-    "unaudited": 1315
+    "retained_pending_chain": 10,
+    "unaudited": 1316
   },
-  "retained_pending_chain_count": 11,
+  "retained_pending_chain_count": 10,
   "retained_pending_chain_examples": [
     "alpha_s_derived_narrow_theorem_note_2026-05-10",
-    "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",

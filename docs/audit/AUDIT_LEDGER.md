@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 110 |
 | **retained_no_go** | 145 |
 | **retained_bounded** | 376 |
-| _retained_pending_chain_ | 11 |
+| _retained_pending_chain_ | 10 |
 | open_gate | 16 |
-| unaudited | 1315 |
+| unaudited | 1316 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 610 |
+| `audited_clean` | 609 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1537 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 1205 |
-| `high` | 46 |
+| `critical` | 1204 |
+| `high` | 47 |
 | `medium` | 209 |
 | `leaf` | 900 |
 
-- **Retained pending chain closure:** 11
+- **Retained pending chain closure:** 10
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -151,7 +151,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | D | - |
-| `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1458,23 +1457,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `.claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md`
   - `LEFT_HANDED_CHARGE_MATCHING_NOTE.md`
-- **auditor confidence:** high
-
-### `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Physical-Cl(3)-only U1-U3: the abstract Cl(3,0) complex representation classification into the two 2-dimensional chirality irreps and their finite-dimensional direct sums, excluding the U4 physical per-site Hilbert-space bridge.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`)
-- **auditor:** `codex-judicial-panel-20260521-axiom_first_cl3_per_site_uniqueness_-j2`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** The complexification splits as Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with central pseudoscalar omega acting by +/- i; hence Artin-Wedderburn/Schur gives exactly two faithful complex irreducible 2-dimensional representations and finite-dimensional direct-sum decomposition into those chiralities.  _(class `A`)_
-- **chain closes:** True — The narrowed U1-U3 claim is pure finite-dimensional Clifford-algebra representation theory. The source note explicitly removes U4 and the physical per-site Hilbert-space bridge from scope, and the one-hop narrow dependencies in the packet supply the complexification split, faithful-irrep dimension-two readout, and Pauli/chirality uniqueness. The runner checks are supporting A-class algebraic exhibits. No missing physical bridge remains inside the audited scope, so the conditional verdict is too conservative for this packet.
-
-Five-judge panel breakdown: ('first_audit', 'audited_clean', 'bounded_theorem', 'A'):1; ('first', 'audited_clean', 'bounded_theorem', 'A'):4.
-- **rationale:** The narrowed U1-U3 claim is pure finite-dimensional Clifford-algebra representation theory. The source note explicitly removes U4 and the physical per-site Hilbert-space bridge from scope, and the one-hop narrow dependencies in the packet supply the complexification split, faithful-irrep dimension-two readout, and Pauli/chirality uniqueness. The runner checks are supporting A-class algebraic exhibits. No missing physical bridge remains inside the audited scope, so the conditional verdict is too conservative for this packet.
-
-Five-judge panel breakdown: ('first_audit', 'audited_clean', 'bounded_theorem', 'A'):1; ('first', 'audited_clean', 'bounded_theorem', 'A'):4.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`

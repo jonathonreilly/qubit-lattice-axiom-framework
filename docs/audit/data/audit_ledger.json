@@ -270606,24 +270606,45 @@
       "verdict_rationale": null
     },
     "yt_ew_color_projection_theorem": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T16:01:44.435166+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived.",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "Scoped no-go that the supplied retained packet fixes F_adj=8/9 but does not determine the disconnected-current readout coefficient kappa_EW or the package-level 9/8 EW matching factor."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "positive_theorem",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "ew_current_matching_rule_open_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 35.143,
+        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+        "transitive_descendants": 1130
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T160121Z-cbf1d59b-yt_ew_color_projection_t-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact Fierz/channel-count input closes F_adj = 8/9, and the no-go note justifies the kappa_EW parametrization. The package-level 9/8 specialization does not close because the physical disconnected-current readout coefficient kappa_EW = 0 is not derived.",
       "claim_id": "yt_ew_color_projection_theorem",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited the bounded EW-normalization statement that exact F_adj = 8/9 gives K_EW(kappa_EW) = 1/(8/9 + kappa_EW/9), while kappa_EW = 0 remains an explicit matching condition.",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": "bounded EW-normalization-lane support theorem.",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T16:01:44.435166+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -270632,20 +270653,23 @@
         "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
       "direct_in_degree": 50,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 35.143,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The package-level EW correction is parameterized as K_EW(kappa_EW) = 1 / (F_adj + kappa_EW (1 - F_adj)), with F_adj = 8/9 and kappa_EW = 0 only as an extra connected-trace matching condition.",
+      "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "e3ecee12b787a29e8cb12a3efb9c7d327dccc1314b1e9f5b55ddd91477d2bd5c",
       "note_path": "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the lattice-current selector or exact disconnected-current coefficient fixing kappa_EW = 0.",
+      "open_dependency_paths": [
+        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
+        "docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md"
+      ],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -270937,18 +270961,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "total_pass": 3
       },
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "Color-Singlet Projection Theorem for EW Couplings",
       "transitive_descendants": 1130,
-      "verdict_rationale": null
+      "verdict_rationale": "The restricted packet supports the conditional family K_EW(kappa_EW) once kappa_EW is introduced as a readout coefficient, but that introduction is a definition/parameterization rather than a derivation of the physical value. The cited Fierz authority explicitly leaves the matching rule open, and the retained_no_go authority proves that retained primitives cannot select kappa_EW = 0. The Monte Carlo runner checks R_conn against 8/9 but does not compute the physical EW readout coefficient, so it cannot close the 9/8 package coefficient."
     },
     "yt_ew_coupling_bridge_note": {
       "audit_date": null,

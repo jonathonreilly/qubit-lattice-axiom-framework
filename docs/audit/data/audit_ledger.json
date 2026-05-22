@@ -103878,24 +103878,53 @@
       "verdict_rationale": "The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support."
     },
     "gauge_wilson_isotropy_boundary_note_2026-05-04": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T17:04:46.565882+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "Rules out the exact constant-lift Wilson plaquette reduction P(beta)=P_1plaq(Gamma_cand beta) with Gamma_cand=(3/2)(2/sqrt(3))^(1/4), using the beta=0 strong-coupling slope.",
+          "minimal_axioms_2026-05-20": null,
+          "qubit_axiom_hardening_note_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "no_go",
+          "minimal_axioms_2026-05-20": "meta",
+          "qubit_axiom_hardening_note_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "retained_no_go",
+          "minimal_axioms_2026-05-20": "meta",
+          "qubit_axiom_hardening_note_2026-05-20": "meta"
+        },
+        "deps": [
+          "gauge_scalar_temporal_completion_theorem_note",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note",
+          "minimal_axioms_2026-05-20",
+          "qubit_axiom_hardening_note_2026-05-20"
+        ],
+        "load_bearing_score": 10.54,
+        "runner_hash": "dd411687cae540d9a4524b91fbc4bb6663624c48eee90aa66164d6d9d48f3685",
+        "transitive_descendants": 1052
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170309Z-ad3affec-gauge_wilson_isotropy_bo-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic checks establish the two negative route claims directly, and the retained_bounded Wilson authority supplies the accepted one-coefficient plaquette surface. The conclusion is explicitly scoped to those two mechanisms and does not claim a global no-go against future approved anisotropy theorems.",
       "claim_id": "gauge_wilson_isotropy_boundary_note_2026-05-04",
-      "claim_scope": "Route-specific negative boundary: on the accepted isotropic Wilson nearest-neighbor plaquette surface, the Cl(3) pseudoscalar-as-fourth-generator route and the standard staggered-eta plaquette-product route do not produce a spatial/temporal or orientation-dependent gauge-coupling split.",
+      "claim_scope": "On the accepted nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": "2026-05-22T17:02:46.311026+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-22T17:04:46.565882+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -103910,8 +103939,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-22T17:04:46.565882+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170309Z-ad3affec-gauge_wilson_isotropy_bo-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the accepted nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -103921,19 +103961,19 @@
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_pending_chain",
+      "effective_status_reason": "chain_waiting_on:minimal_axioms_2026-05-20",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 10.54,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The Cl(3) pseudoscalar commutes with the three spatial generators, and the standard staggered eta plaquette product equals -1 on all six orientations, so neither tested mechanism yields orientation-dependent Wilson plaquette coefficients.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b262f5ae795c84f215b1b428c2e22fcee71809234b1577d9efa8139d9f390805",
       "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that treating the framework meta notes as ratified local-algebra authority is accepted audit policy for this lane.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -104084,18 +104124,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 19,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 19
       },
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
       "title": "Gauge Wilson Isotropy Boundary Note",
       "transitive_descendants": 1052,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing work is algebraic: omega is central in the supplied Cl(3) local algebra, and the eta formula gives the same plaquette sign for every orientation. The runner source instantiates the Pauli matrices and eta products directly; it does not import a contested anisotropic coefficient or merely print a pass summary. The No-Go Discipline gate does not defeat the scoped result because plausible attacks via a future time-direction or anisotropy theorem are outside the note's explicitly limited two-route boundary. The meta qubit authorities are used only to fix the framework local algebra, while the accepted Wilson surface is supplied by retained_bounded authority."
     },
     "gbare_wilson_action_internal_proof_walk_bounded_note_2026-05-08": {
       "audit_date": null,

@@ -21,10 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 118 |
 | **retained_no_go** | 148 |
 | **retained_bounded** | 364 |
-| _retained_pending_chain_ | 12 |
+| _retained_pending_chain_ | 13 |
 | open_gate | 14 |
 | unaudited | 1326 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -47,8 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 608 |
+| `audited_clean` | 609 |
 | `audited_conditional` | 92 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 69 |
@@ -72,7 +70,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 199 |
 | `leaf` | 894 |
 
-- **Retained pending chain closure:** 12
+- **Retained pending chain closure:** 13
 - **Citation cycles detected:** 292
 
 ### Runner classification (static heuristic)
@@ -119,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -327,6 +324,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4834,6 +4832,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k has summands of common sign under the induction hypothesis, so every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).  _(class `A`)_
 - **chain closes:** True — The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support.
+- **auditor confidence:** high
+
+### `gauge_wilson_isotropy_boundary_note_2026-05-04`
+
+- **Note:** [`GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md`](../../docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the accepted nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:minimal_axioms_2026-05-20`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T170309Z-ad3affec-gauge_wilson_isotropy_bo-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The Cl(3) pseudoscalar commutes with the three spatial generators, and the standard staggered eta plaquette product equals -1 on all six orientations, so neither tested mechanism yields orientation-dependent Wilson plaquette coefficients.  _(class `A`)_
+- **chain closes:** True — The algebraic checks establish the two negative route claims directly, and the retained_bounded Wilson authority supplies the accepted one-coefficient plaquette surface. The conclusion is explicitly scoped to those two mechanisms and does not claim a global no-go against future approved anisotropy theorems.
+- **rationale:** The load-bearing work is algebraic: omega is central in the supplied Cl(3) local algebra, and the eta formula gives the same plaquette sign for every orientation. The runner source instantiates the Pauli matrices and eta products directly; it does not import a contested anisotropic coefficient or merely print a pass summary. The No-Go Discipline gate does not defeat the scoped result because plausible attacks via a future time-direction or anisotropy theorem are outside the note's explicitly limited two-route boundary. The meta qubit authorities are used only to fix the framework local algebra, while the accepted Wilson surface is supplied by retained_bounded authority.
 - **auditor confidence:** high
 
 ### `gellmann_completeness_theorem_note_2026-05-02`

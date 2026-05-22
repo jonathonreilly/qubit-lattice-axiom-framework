@@ -410,13 +410,18 @@ of the staggered-Dirac realization gate.
 ## Load-bearing Dependencies
 
 The U1–U3 physical-Cl(3)-only content of this note is supported by
-**three retained / retained_bounded narrow theorems** that
+**two retained / retained_bounded narrow theorems** that
 collectively establish the qubit/`M_2(ℂ)` identification underlying
 A1 of the 2026-05-20 qubit-reframe axiom set:
 
-- [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) — establishes `Cl(3,0) ⊗_ℝ ℂ ≅ M_2(ℂ) ⊕ M_2(ℂ)` (Step 3 of this note's U1–U3 derivation).
-- [CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) — establishes that every faithful complex irreducible representation of `Cl(3,0)` is 2-dim (load-bearing for U2).
+- [CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained`, positive_theorem) — establishes `Cl(3,0) ⊗_ℝ ℂ ≅ M_2(ℂ) ⊕ M_2(ℂ)` (§(K3); Step 3 of this note's U1–U3 derivation) and the two-dim irrep dimensional readout (§(K4); load-bearing for U2: every faithful complex irreducible representation of `Cl(3,0)` has `dim_ℂ V = 2`).
 - [CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md](CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) (`retained_bounded`, bounded_theorem) — establishes Pauli-irrep uniqueness (load-bearing for U2's canonical convention `γ_i = σ_i`).
+
+The decoration sibling `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+records the same dim-two readout content separately but is not itself
+the retained authority (effective_status:
+`decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`);
+its content is supplied by §(K4) of the retained parent above.
 
 Framework-baseline surfaces (meta, not load-bearing for the
 narrow-theorem chain above, but explicitly authorising the U1–U3

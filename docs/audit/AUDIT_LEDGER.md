@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 14 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 609 |
-| `audited_conditional` | 96 |
+| `audited_conditional` | 97 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 70 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1543 |
+| `unaudited` | 1542 |
 
 | claim_type | count |
 |---|---:|
@@ -738,6 +738,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2566,6 +2567,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within that finite scoped sweep, the runner source computes the instantaneous and source-driven fields, zero-source reduction, sign counts, mean shifts, and log-log exponents, and the stdout matches the source note. The result does not establish any broader no-go for other coupled-field architectures, families, gain rules, or source laws.
 - **rationale:** The note is clean only as a bounded computational no-go. The runner does not hard-code the reported table; it constructs the fields over the generated families and computes the reduction check, sign survival, and fitted exponents, with no cited upstream dependency needed for the stated finite result. The source note accurately reports the runner output and keeps the safe conclusion to exact zero-source reduction, sign survival on sampled rows, and failure of clean linear scaling for this minimal architecture. Residual risk is scope control: it must not be cited as excluding unsampled architectures, parameters, DAG families, or a separately derived physical mass observable.
 - **auditor confidence:** medium
+
+### `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic claim that the explicitly specified Cl(3) internal operators and Z^3 lattice C, P operators have scalar square (CP)^2 = epsilon I_V, with epsilon fixed by the lattice inversion convention for even L.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T171526Z-874466df-cpt_c3_cp_squared_scalar-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Tensoring the explicit orbital identity (C_lat P_lat)^2 = epsilon_lat I_lat with the internal identity (G_C G_P)^2 = I_int gives (CP)^2 = epsilon_lat I_V.  _(class `A`)_
+- **chain closes:** False — The displayed matrix algebra closes on its own terms, and the runner genuinely instantiates the explicit operators. However, one cited authority used as load-bearing input is marked decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than retained-grade, so the restricted audit chain is conditional under the rubric.
+- **rationale:** The load-bearing step is a direct algebraic identity over explicit matrices and tensor products, not a renaming or numerical match. The runner source verifies the Pauli relations, grading identities, lattice permutation identities, and full tensor-product square at exact sympy precision; it does not merely print constants or import a fitted premise. The verdict cannot be clean because docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10 is included as a cited authority with a non-retained decoration status.
+- **open / conditional deps cited:**
+  - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
 
 ### `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17`
 

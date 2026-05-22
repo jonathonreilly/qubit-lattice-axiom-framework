@@ -23497,6 +23497,18 @@
       "to": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
     },
     {
+      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "to": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
+    },
+    {
+      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "to": "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19"
+    },
+    {
+      "from": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "to": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+    },
+    {
       "from": "spectral_symmetry_note",
       "to": "higher_symmetry_joint_validation_note"
     },
@@ -73294,6 +73306,22 @@
       "runner_path": "scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py",
       "title": "Finite-\u039b Lieb-Robinson Bound and Conditional Cluster-Decomposition Support"
     },
+    "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19": {
+      "claim_id": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+        "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "07e8aa2707a5177188f8f16638cb27462cfc39d4f25a26fa3f8b6d7f6be45560",
+      "path": "docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md",
+      "runner_path": "scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py",
+      "title": "Spatial-Slab Transfer-Operator Positivity and \u0394_x > 0 from Wilson Axis-Permutation Symmetry (Real)"
+    },
     "spectral_closure_2026-04-09": {
       "claim_id": "spectral_closure_2026-04-09",
       "claim_type_author_hint": null,
@@ -81379,7 +81407,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 515,
+      "bounded_theorem": 516,
       "decoration": 1,
       "meta": 184,
       "no_go": 61,
@@ -81388,7 +81416,7 @@
       "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 953,
+      "bounded_theorem": 954,
       "decoration": 1,
       "meta": 184,
       "no_go": 164,
@@ -81396,10 +81424,10 @@
       "open_gate": 123,
       "positive_theorem": 606
     },
-    "edge_count": 9705,
+    "edge_count": 9708,
     "leaf_count": 742,
-    "node_count": 2474,
+    "node_count": 2475,
     "root_count": 807,
-    "runners_with_path": 2041
+    "runners_with_path": 2042
   }
 }

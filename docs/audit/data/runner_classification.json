@@ -20136,6 +20136,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py"
     },
+    "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 21,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py"
+    },
     "spectral_closure_2026-04-09": {
       "assert_count": 0,
       "counts": {
@@ -44710,6 +44722,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py": {
+      "assert_count": 2,
+      "claims": [
+        "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 21,
+        "D": 5
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_sm_hypercharge_no_nu_r_derivation.py": {
       "assert_count": 1,
       "claims": [
@@ -53564,12 +53591,12 @@
     "dominant_class_distribution": {
       "A": 198,
       "B": 263,
-      "C": 730,
+      "C": 731,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1919,
-    "runners_with_C": 945,
-    "runners_with_D": 547
+    "runners_classified": 1920,
+    "runners_with_C": 946,
+    "runners_with_D": 548
   }
 }

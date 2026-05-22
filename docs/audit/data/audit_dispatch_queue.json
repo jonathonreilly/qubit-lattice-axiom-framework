@@ -184,9 +184,57 @@
       "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "live"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "cl3_color_automorphism_theorem",
+      "deps": [
+        "native_gauge_closure_note",
+        "ew_current_matching_rule_open_gate_note_2026-05-03"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 8,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
+      "queue_order": 5,
+      "ready": false,
+      "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
+      "runner_path": "scripts/verify_cl3_sm_embedding.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
     }
   ],
-  "live_count": 4,
+  "live_count": 5,
   "policy": "target_selection_only_not_audit_evidence",
   "ready_count": 2,
   "resolved_or_invalid": [
@@ -436,51 +484,6 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
-    {
-      "actual_audit_status": "audit_in_progress",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audit_in_progress",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "cl3_color_automorphism_theorem",
-      "deps": [
-        "native_gauge_closure_note",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 8,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-      "runner_path": "scripts/verify_cl3_sm_embedding.py",
       "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"

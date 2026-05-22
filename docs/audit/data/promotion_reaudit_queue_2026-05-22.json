@@ -52,14 +52,6 @@
           "current_claim_type": "bounded_theorem",
           "current_effective_status": "retained_bounded",
           "note_path": "docs/THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md"
-        },
-        {
-          "audit_question": "Does the finite H_hw=1 translation-character algebra qualify as positive_theorem, or does the row need a split first?",
-          "claim_id": "generation_axiom_boundary_note",
-          "current_audit_status": "audited_clean",
-          "current_claim_type": "bounded_theorem",
-          "current_effective_status": "retained_bounded",
-          "note_path": "docs/GENERATION_AXIOM_BOUNDARY_NOTE.md"
         }
       ]
     },
@@ -85,14 +77,6 @@
           "current_claim_type": "bounded_theorem",
           "current_effective_status": "retained_bounded",
           "note_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md"
-        },
-        {
-          "audit_question": "Does the structural native gauge-closure scope qualify as positive_theorem, or does the row need a structural/physical split first?",
-          "claim_id": "native_gauge_closure_note",
-          "current_audit_status": "audited_clean",
-          "current_claim_type": "bounded_theorem",
-          "current_effective_status": "retained_bounded",
-          "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md"
         }
       ]
     },
@@ -155,6 +139,26 @@
     }
   ],
   "must_not_apply_ledger_changes_from_this_file": true,
+  "retired_targets": [
+    {
+      "audit_question": "Does the finite H_hw=1 translation-character algebra qualify as positive_theorem, or does the row need a split first?",
+      "claim_id": "generation_axiom_boundary_note",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/GENERATION_AXIOM_BOUNDARY_NOTE.md",
+      "retired_reason": "bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim."
+    },
+    {
+      "audit_question": "Does the structural native gauge-closure scope qualify as positive_theorem, or does the row need a structural/physical split first?",
+      "claim_id": "native_gauge_closure_note",
+      "current_audit_status": "audited_clean",
+      "current_claim_type": "bounded_theorem",
+      "current_effective_status": "retained_bounded",
+      "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+      "retired_reason": "bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim."
+    }
+  ],
   "schema": "promotion_reaudit_queue.v1",
   "status": "dispatcher_only_not_audit_verdict"
 }

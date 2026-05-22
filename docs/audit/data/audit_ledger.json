@@ -232169,22 +232169,41 @@
       "verdict_rationale": null
     },
     "su3_bridge_pr525_flaw_fix_note_2026-05-05": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T00:11:42.201699+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "Finite-runner certificate for the displayed ODE catalog for reps (0,0),(1,0),(1,1),(2,0),(2,1),(2,2),(3,0), limited to the bounded ansatz search r<=6, deg<=8 and numerical Bessel-determinant checks at beta in {2,4,6,8}."
+        },
+        "dep_claim_type": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-su3_bridge_pr525_flaw_fi-007",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The correction follows algebraically from the stated K-tube exponent shift once \u0394 ln \u03c1 is defined relative to the exponent-12 baseline. The cited retained_bounded authority supplies the c_R(6) values used for the illustrative table, but the denominator conclusion does not require a new physics derivation.",
       "claim_id": "su3_bridge_pr525_flaw_fix_note_2026-05-05",
-      "claim_scope": null,
+      "claim_scope": "Audited only the bounded methodological denominator correction: the Casimir-denominator spread does not test the proportionality asserted by the stated K-tube ansatz for the listed SU(3) irreps at \u03b2=6.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T00:11:42.201699+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -232192,34 +232211,34 @@
         "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The K-tube formula implies \u0394 ln \u03c1_(p,q) = (2/\u03c0) \u00b7 ln(c_R(6) / c_(0,0)(6)), so dividing by ln(c_R/c_(0,0)) rather than C_2(R) gives the constant 2/\u03c0.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "095f2d52d20a78e5af24abfdf90de37483b9fbdceb80e1b18d89206ccb66ffcc",
       "note_path": "docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check that \u0394 ln \u03c1 is consistently defined as the exponent-shift contribution relative to the exponent-12 baseline in downstream citations.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": null,
       "title": "PR #525 Methodological Correction: K-Tube Denominator Test",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic consequence of the K-tube formula quoted in the note: subtracting the exponent-12 baseline leaves exactly (2/\u03c0) ln(c_R/c_0). This is sufficient for the bounded claim that PR #525's C_2 denominator was not the denominator implied by that ansatz. The note explicitly does not claim to derive 2/\u03c0 from a one-loop diagram or close the broader plaquette problem."
     },
     "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10": {
       "audit_date": "2026-05-11T18:10:56.196340+00:00",

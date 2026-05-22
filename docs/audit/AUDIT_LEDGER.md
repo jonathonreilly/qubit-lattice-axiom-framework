@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 110 |
 | **retained_no_go** | 143 |
-| **retained_bounded** | 375 |
+| **retained_bounded** | 376 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 16 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 607 |
+| `audited_clean` | 608 |
 | `audited_conditional` | 91 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1538 |
+| `unaudited` | 1537 |
 
 | claim_type | count |
 |---|---:|
@@ -627,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10282,6 +10283,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The bounded algebraic adjoint-Casimir identity follows from the retained-bounded SU(3) Gell-Mann normalization plus standard adjoint-representation algebra and Schur's lemma. No physical-color bridge is needed for this narrowed algebraic scope.
 - **rationale:** Issue: the proof is a pure algebraic corollary of the single upstream SU(3) embedding/normalization together with standard Lie-algebra facts. Why this blocks a clean verdict: all load-bearing checks are class A, there is no class C first-principles CL(3) computation or class D independent comparator, and the chain reduces to one parent claim plus mathematics. Repair target: either box this as a corollary under the color-automorphism parent or add a retained independent physical-color bridge/comparator surface. Claim boundary until fixed: C_2(adj)=3 is retained only as an algebraic SU(3) identity, not as a physical gluon or perturbative-QCD consequence.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `su3_bridge_pr525_flaw_fix_note_2026-05-05`
+
+- **Note:** [`SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md`](../../docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded methodological denominator correction: the Casimir-denominator spread does not test the proportionality asserted by the stated K-tube ansatz for the listed SU(3) irreps at β=6.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-000836-a4678e20-su3_bridge_pr525_flaw_fi-007`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The K-tube formula implies Δ ln ρ_(p,q) = (2/π) · ln(c_R(6) / c_(0,0)(6)), so dividing by ln(c_R/c_(0,0)) rather than C_2(R) gives the constant 2/π.  _(class `A`)_
+- **chain closes:** True — The correction follows algebraically from the stated K-tube exponent shift once Δ ln ρ is defined relative to the exponent-12 baseline. The cited retained_bounded authority supplies the c_R(6) values used for the illustrative table, but the denominator conclusion does not require a new physics derivation.
+- **rationale:** The load-bearing step is an algebraic consequence of the K-tube formula quoted in the note: subtracting the exponent-12 baseline leaves exactly (2/π) ln(c_R/c_0). This is sufficient for the bounded claim that PR #525's C_2 denominator was not the denominator implied by that ansatz. The note explicitly does not claim to derive 2/π from a one-loop diagram or close the broader plaquette problem.
 - **auditor confidence:** high
 
 ### `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`

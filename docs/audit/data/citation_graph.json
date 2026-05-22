@@ -64070,6 +64070,18 @@
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_gleason_busch_route.py",
       "title": "Observable-Principle P1 Bridge \u2014 Gleason-Busch Route Narrow Note"
     },
+    "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "bd2b524aa5fb142700bfa6329673f62a06add7c289bc0779515ce4385a4c68b9",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_locality_of_source_derivatives.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Locality of Source-Derivatives Narrow Note"
+    },
     "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -81042,6 +81054,7 @@
     "nonlabel_grown_basin_note",
     "nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16",
     "observable_principle_from_axiom_note",
+    "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
     "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
     "oh_schur_boundary_action_note",
     "ollivier_einstein_proxy_note_2026-04-11",
@@ -81335,7 +81348,7 @@
       "bounded_theorem": 511,
       "decoration": 1,
       "meta": 184,
-      "no_go": 58,
+      "no_go": 59,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 172
@@ -81344,15 +81357,15 @@
       "bounded_theorem": 949,
       "decoration": 1,
       "meta": 184,
-      "no_go": 161,
+      "no_go": 162,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 608
     },
     "edge_count": 9706,
-    "leaf_count": 738,
-    "node_count": 2470,
-    "root_count": 804,
-    "runners_with_path": 2037
+    "leaf_count": 739,
+    "node_count": 2471,
+    "root_count": 805,
+    "runners_with_path": 2038
   }
 }

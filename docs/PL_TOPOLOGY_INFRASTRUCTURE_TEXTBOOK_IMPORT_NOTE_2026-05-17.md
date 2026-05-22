@@ -13,7 +13,7 @@ This wrapper note documents four standard accepted PL-topology /
 geometric-topology results plus one lattice-QFT homogeneity premise as
 named non-derivation imports so
 downstream rows (notably
-[S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md))
+`S3_CAP_UNIQUENESS_NOTE.md`)
 can register a one-hop dependency rather than carry these imported
 results as unattributed accepted-mathematics / lattice-QFT
 infrastructure.
@@ -116,7 +116,7 @@ does not derive the closure requirement from the baseline framework.
 
 This wrapper is consumed by:
 
-- [S3_CAP_UNIQUENESS_NOTE.md](S3_CAP_UNIQUENESS_NOTE.md) — registers
+- `S3_CAP_UNIQUENESS_NOTE.md` — registers
   the four PL-topology imports plus the Kawamoto-Smit homogeneity
   premise as one-hop named non-derivation authorities for the cone-cap
   uniqueness chain.

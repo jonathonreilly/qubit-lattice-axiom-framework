@@ -16557,10 +16557,6 @@
       "to": "gravity_observable_hierarchy_note"
     },
     {
-      "from": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-      "to": "newton_law_derived_note"
-    },
-    {
       "from": "lattice_green_function_zero_argument_narrow_theorem_note_2026-05-17",
       "to": "monopole_derived_note"
     },
@@ -17175,10 +17171,6 @@
     {
       "from": "matter_self_focusing_note",
       "to": "matter_inertial_closure_note"
-    },
-    {
-      "from": "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18",
-      "to": "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
     },
     {
       "from": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
@@ -18877,10 +18869,6 @@
       "to": "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
     },
     {
-      "from": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
-      "to": "dm_leptogenesis_hrad_theorem_note_2026-04-16"
-    },
-    {
       "from": "nn_lattice_rescaled_c2_derivation_note_2026-05-10",
       "to": "nn_lattice_rescaled_c_arm_derivation_note_2026-05-10"
     },
@@ -20415,10 +20403,6 @@
     {
       "from": "pl_s3_atlas_refinement_compatibility_theorem_note_2026-05-03",
       "to": "patched_stationary_system_pl_s3_theorem_note_2026-05-03"
-    },
-    {
-      "from": "pl_topology_infrastructure_textbook_import_note_2026-05-17",
-      "to": "s3_cap_uniqueness_note"
     },
     {
       "from": "pmns_active_four_real_source_from_transport_note",
@@ -23415,10 +23399,6 @@
     {
       "from": "sm_relativistic_dof_count_import_note_2026-05-17",
       "to": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "sm_relativistic_dof_count_import_note_2026-05-17",
-      "to": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16"
     },
     {
       "from": "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer",
@@ -60400,11 +60380,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "newton_law_derived_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "bc35f00a8058454ac2c1be2ff7764b25baec579c07d9319620af20410937b8fa",
+      "note_hash": "25cc341fc426f2e35f9c6d9c211fabba4eb1c72f1625f825e3b7a3b039406f85",
       "path": "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
       "runner_path": null,
       "title": "Lattice Green's Function Asymptotic (Maradudin 1971) \u2014 Named Non-Derivation Import"
@@ -61559,11 +61537,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "82ea5f5ee88c9c4d7b8b128a13b18b467970025b5f657d152dc4f5c6df15e089",
+      "note_hash": "0989f3bdceff33e474bdf477be35532f4782f3dfb5e5022e464e736f1d5a5c3d",
       "path": "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
       "runner_path": null,
       "title": "Mermin-Wagner / Hohenberg / Coleman + Bogoliubov Inequality \u2014 Named Non-Derivation Imports"
@@ -63787,11 +63763,10 @@
       "deps": [
         "gravity_clean_derivation_note",
         "g_newton_mass_linear_poisson_composition_bounded_theorem_note_2026-05-10",
-        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10",
-        "dm_leptogenesis_hrad_theorem_note_2026-04-16"
+        "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b5db16a5500d042b81bdb8a49f4f9f3491d62c89611d8d4b487d9194bdf5e1be",
+      "note_hash": "458f3297df682767bb247e5c090defa24601521ecaac7a77788e751b480fd1ca",
       "path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Newton-Poisson \u2192 Flat First Friedmann Law \u2014 Named Non-Derivation Import"
@@ -65411,11 +65386,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "s3_cap_uniqueness_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5db9676997ada46d92c72c9eaee6b842b355772bac1328c55b4e0af4dfe6ece6",
+      "note_hash": "be39b40f09856ae657233002ef538a7a99456b08138ada8dd10f61743fa71a78",
       "path": "docs/PL_TOPOLOGY_INFRASTRUCTURE_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "PL-Topology Infrastructure \u2014 Named Non-Derivation Imports"
@@ -70878,7 +70851,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -73067,11 +73040,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-        "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16"
+        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3b7882ae52fc435375d065d6e4a3aa89eeff3680079f1ec893941328f8d33768",
+      "note_hash": "bdd6146b189aa9646e8a4a119527fb050659963915114e400347540ba30cdf13",
       "path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Named Non-Derivation Import"
@@ -81327,6 +81299,7 @@
     "lattice_3d_tapered_refinement_note",
     "lattice_complementarity_note",
     "lattice_distance_law_note",
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
     "lattice_kernel_transfer_norm_note",
     "lattice_nn_continuum_note",
     "lattice_nn_deterministic_rescale_note",
@@ -81352,6 +81325,7 @@
     "matter_inertial_closure_note",
     "memory_decay_diagnosis_2026-04-11",
     "memory_mu2_geometry_sweep_note_2026-04-11",
+    "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18",
     "mesoscopic_surrogate_compact_floor_sweep_note_2026-05-17",
     "mesoscopic_surrogate_threshold_2d_note",
     "minimal_axioms_2026-04-11",
@@ -81424,6 +81398,7 @@
     "physical_lattice_necessity_note",
     "physics_first_attack_plan",
     "physics_qa_tracker",
+    "pl_topology_infrastructure_textbook_import_note_2026-05-17",
     "planck_boundary_orientation_incidence_no_go_note_2026-04-30",
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2_note_2026-05-17",
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
@@ -81703,10 +81678,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9738,
     "leaf_count": 740,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 811,
     "runners_with_path": 2048
   }
 }

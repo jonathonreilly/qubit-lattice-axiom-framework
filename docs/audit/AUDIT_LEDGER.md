@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 118 |
 | **retained_no_go** | 148 |
-| **retained_bounded** | 367 |
+| **retained_bounded** | 368 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 614 |
+| `audited_clean` | 615 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1545 |
+| `unaudited` | 1544 |
 
 | claim_type | count |
 |---|---:|
@@ -606,6 +606,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9989,6 +9990,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given dim_C V = 2, candidate B has per-site dimension infinity while candidate G has per-site dimension 2, so within the explicit two-candidate G-vs-B framing B is ruled out and G is the only dimension-compatible option.  _(class `A`)_
 - **chain closes:** True — The cited retained-grade inputs supply the Cl(3) dim-2 readout and Grassmann nilpotency/determinant identity, and the allowed qubit hardening context supplies the k=1 per-site H_x = C^2 reading that removes the prior U4 multiplicity blocker for this bounded bridge. The result still does not classify noncanonical alternatives or close later staggered-Dirac realization substeps, but those are outside the audited scope.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: compare 2, infinity, and the retained dim_C V = 2, then use the retained Berezin determinant identity for the Grassmann readout. The runner source performs exact symbolic and finite combinatorial checks rather than merely printing constants, and all 24 checks are class A. Under the targeted qubit-per-site context, the previous physical per-site k-selection admission is supplied by the ratified A1/R1 reading, so no further blocker remains for this bounded G-vs-B substep-1 bridge.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given one qubit/Cl(3) faithful complex irrep V ~= C^2 at each finite ordered site and H_Lambda = V^{otimes N}, the Jordan-Wigner operators satisfy finite-mode CAR, nilpotency, full CAR-algebra generation, and the stated number-operator/vacuum facts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T222313Z-5247d81f-staggered_dirac_substep1-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For x != y, the factor sigma_3^(x) in the later JW string anticommutes with the same-site ladder sigma_+^(x), producing c_x c_y = - c_y c_x and likewise for c_y^dag.  _(class `A`)_
+- **chain closes:** True — The cited Cl(3) parent is retained and supplies the two-dimensional Pauli carrier; the added qubit k=1 ratification removes the prior physical per-site multiplicity blocker for this scoped bridge. The remaining result is standard finite Pauli tensor algebra with a fixed total ordering.
+- **rationale:** The load-bearing claim is an exact algebraic Jordan-Wigner sign calculation on finite tensor products, and the runner source genuinely instantiates the Pauli and JW operators rather than printing constants. No external comparator, fitted value, or open upstream dependency is used for the audited scope. Under the allowed qubit-per-site k=1 ratification, the former U4 multiplicity admission is no longer a blocker for this bounded bridge, while downstream staggered-Dirac dynamics remain outside scope.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`

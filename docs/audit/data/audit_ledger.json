@@ -228779,11 +228779,11 @@
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 5.248,
+      "load_bearing_score": 8.248,
       "load_bearing_step": "Reordering via (G1)-(G3), Berezin top-term selection gives sum over permutations sign(pi) prod_x M_{x,pi(x)} = det(M), and homogeneous odd Grassmann operators anticommute under exchange.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "2f746f008caf0f18c48bc7fda7ced8b42fa264bf7635ebca44aa91557de8c8e6",
       "note_path": "docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
       "notes_for_re_audit_if_any": "Second auditor may re-check Berezin measure ordering/sign conventions and the normalized-correlator wording when det(M)=0.",
@@ -230987,24 +230987,41 @@
       "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs: compare 2, infinity, and the retained dim_C V = 2, then use the retained Berezin determinant identity for the Grassmann readout. The runner source performs exact symbolic and finite combinatorial checks rather than merely printing constants, and all 24 checks are class A. Under the targeted qubit-per-site context, the previous physical per-site k-selection admission is supplied by the ratified A1/R1 reading, so no further blocker remains for this bounded G-vs-B substep-1 bridge."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T22:23:38.230984+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "bad1591642fd30784587de32a11f7e151f3db0c3e858badd985b16c1abcf57f3",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T222313Z-5247d81f-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Cl(3) parent is retained and supplies the two-dimensional Pauli carrier; the added qubit k=1 ratification removes the prior physical per-site multiplicity blocker for this scoped bridge. The remaining result is standard finite Pauli tensor algebra with a fixed total ordering.",
       "claim_id": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Given one qubit/Cl(3) faithful complex irrep V ~= C^2 at each finite ordered site and H_Lambda = V^{otimes N}, the Jordan-Wigner operators satisfy finite-mode CAR, nilpotency, full CAR-algebra generation, and the stated number-operator/vacuum facts.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T22:23:38.230984+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -231012,19 +231029,19 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 2.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For x != y, the factor sigma_3^(x) in the later JW string anticommutes with the same-site ladder sigma_+^(x), producing c_x c_y = - c_y c_x and likewise for c_y^dag.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "bdddd01505c68e93c8b89c1ae18f6aa39d3a9ee3c0b17af64fad23fdc4895c30",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the policy choice to treat the 2026-05-22 k=1 ratification as admissible load-bearing axiom context for this targeted audit.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -231129,18 +231146,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 44,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 44
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem",
       "transitive_descendants": 2,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing claim is an exact algebraic Jordan-Wigner sign calculation on finite tensor products, and the runner source genuinely instantiates the Pauli and JW operators rather than printing constants. No external comparator, fitted value, or open upstream dependency is used for the audited scope. Under the allowed qubit-per-site k=1 ratification, the former U4 multiplicity admission is no longer a blocker for this bounded bridge, while downstream staggered-Dirac dynamics remain outside scope."
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
       "audit_date": "2026-05-22T22:21:12.803030+00:00",

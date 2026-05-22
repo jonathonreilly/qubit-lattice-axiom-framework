@@ -18,7 +18,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 114 |
+| **retained** | 113 |
 | **retained_no_go** | 149 |
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 11 |
@@ -29,6 +29,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 98 |
 | ~~audited_failed~~ | 25 |
+| `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -49,9 +50,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 621 |
+| `audited_clean` | 620 |
 | `audited_conditional` | 98 |
-| `audited_decoration` | 34 |
+| `audited_decoration` | 35 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
@@ -60,11 +61,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1023 |
-| `decoration` | 35 |
+| `decoration` | 36 |
 | `meta` | 226 |
 | `no_go` | 238 |
 | `open_gate` | 112 |
-| `positive_theorem` | 732 |
+| `positive_theorem` | 731 |
 
 | criticality | count |
 |---|---:|
@@ -473,7 +474,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
-| `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | claude-opus | C | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
@@ -864,6 +864,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `multisite_pauli_group_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | judicial_review | codex-gpt-5.5 | A | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
@@ -7557,14 +7558,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 ### `multisite_pauli_group_theorem_note_2026-05-02`
 
 - **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Multi-site Pauli group P_N on N-site Fock space H = ⊗_x C² has order |P_N| = 4^{N+1}, center Z(P_N) = {±I_N, ±i I_N} ≅ Z_4, quotient P_N/Z(P_N) ≅ (Z_2 × Z_2)^N, central extension 1 → Z_4 → P_N → (Z_2 × Z_2)^N → 1.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `claude-audit-loop-2026-05-19-multisite-pauli-xconf`  (claude-opus; independence=fresh_context)
-- **load-bearing step:** Total order = (Z_4 phases) × (4 cosets per site)^N = 4 · 4^N = 4^{N+1}, with per-site H_x ≅ C² (Pauli rep, γ_i ↦ σ_i) imported from the cited per-site uniqueness theorem.  _(class `C`)_
-- **chain closes:** True — Per-site Pauli rep H_x ≅ C² is supplied by retained_bounded dependency axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 (U2). On the N-site tensor product, per-site Z_4 centers collapse to a single global Z_4 since (i I_x) ⊗ I_y... = i I_N (4 phases), and each site contributes 4 cosets mod center, giving |P_N| = 4 · 4^N = 4^{N+1}. Center is computed by Schur applied site-by-site (only scalar multiples of identity commute with all three Paulis); quotient is then Lagrange-fixed. The runner instantiates the framework's per-site Pauli matrices, tensor-products to N-site operators, and BFS-enumerates the multiplicative group, producing orders 16, 64, 256 for N=1,2,3 — structural numbers not present in any input and matching 4^{N+1} exactly.
-- **rationale:** The runner is a first-principles class-(C) compute: it builds the framework's per-site σ_i Pauli rep (carrier of U2 from the retained_bounded dependency), tensors to N-site operators, and BFS-enumerates the multiplicative group. The output orders 16, 64, 256 for N=1,2,3 are structural numbers — not imported from any input — and they exactly match the analytical formula 4^{N+1} derived in the note from tensor-product counting plus per-site Schur on the center. There is no hidden physical identification, no tuned input, no comparator against external data. The note's derivation closes elementarily from the cited authority's U2 rep, and the runner would fail if the order formula were wrong.
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic N-qubit Pauli-group decoration: given admitted H=⊗_{x=1}^N C^2 and per-site σ_{i,x} acting on disjoint tensor factors, P_N has normal form ζ∏_x Q_x with ζ∈{±1,±i} and Q_x∈{I,σ1,x,σ2,x,σ3,x}; hence |P_N|=4^{N+1}, Z(P_N)={±I_N,±iI_N}, P_N/Z(P_N)≅(Z_2×Z_2)^N, 1→Z_4→P_N→(Z_2×Z_2)^N→1, and element orders divide 4. The physical framework-Fock-space bridge and M6 minimal-3N-generator claim are not ratified.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-judicial-multisite-pauli-20260522-20260521-multisite_pauli_group_theorem_note_2026--majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Pauli tensor-product normal form plus the collapse of all per-site scalar phases to one global Z_4; disjoint-site commutation and single-site Pauli anticommutation then give order, center, quotient, and extension.  _(class `A`)_
+- **chain closes:** False — The core order/center/quotient/extension statements follow once the Pauli matrices and tensor-product site action are admitted, and the runner corroborates N=1,2,3 plus the P_2 center. That makes the row algebraic decoration under the upstream Pauli/qubit setup, not an independent positive theorem with a new physical bridge or comparator. The original broad scope also contains an unratified M6 overclaim: the listed 3N involutory Pauli generators are convenient but not minimal for N>1. Therefore the clean positive C tuple overstates the result; the second audited_decoration/decoration/A tuple is the applyable safe record.
+
+Five-judge panel breakdown: 4x ('second', 'audited_decoration', 'decoration', 'A'); 1x ('hybrid', 'audited_conditional', 'bounded_theorem', 'A').
+- **rationale:** The core order/center/quotient/extension statements follow once the Pauli matrices and tensor-product site action are admitted, and the runner corroborates N=1,2,3 plus the P_2 center. That makes the row algebraic decoration under the upstream Pauli/qubit setup, not an independent positive theorem with a new physical bridge or comparator. The original broad scope also contains an unratified M6 overclaim: the listed 3N involutory Pauli generators are convenient but not minimal for N>1. Therefore the clean positive C tuple overstates the result; the second audited_decoration/decoration/A tuple is the applyable safe record.
+
+Five-judge panel breakdown: 4x ('second', 'audited_decoration', 'decoration', 'A'); 1x ('hybrid', 'audited_conditional', 'bounded_theorem', 'A').
+- **open / conditional deps cited:**
+  - `Only if promoted beyond decoration: retained bridge from physical Cl(3) local algebra to framework per-site H_x≅C^2.`
+- **decoration parent:** `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

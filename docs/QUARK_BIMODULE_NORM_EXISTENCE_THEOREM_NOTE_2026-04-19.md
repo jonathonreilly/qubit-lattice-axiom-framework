@@ -425,3 +425,9 @@ Expected runner status:
 PASS=10
 FAIL=0
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [quark_bicac_endpoint_obstruction_theorem_note_2026-04-19](QUARK_BICAC_ENDPOINT_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)

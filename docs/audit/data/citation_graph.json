@@ -21441,6 +21441,10 @@
       "to": "quark_projector_parameter_audit_note_2026-04-19"
     },
     {
+      "from": "quark_bimodule_norm_existence_theorem_note_2026-04-19",
+      "to": "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19"
+    },
+    {
       "from": "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
       "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
@@ -23867,6 +23871,14 @@
     {
       "from": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
       "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "staggered_dirac_realization_gate_note_2026-05-03",
+      "to": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_realization_gate_note_2026-05-03",
+      "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
     },
     {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -69763,9 +69775,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "61fe1f9ced89731ad5e673808c0036834109169bb69ea949ee3219ecce740f52",
+      "note_hash": "296910a4f0b985935a66101ac42bf1b258a4d36c8728c2df1c65e189643706cf",
       "path": "docs/QUARK_BIMODULE_NORM_EXISTENCE_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_quark_bimodule_norm_existence_theorem.py",
       "title": "Quark Bimodule NORM-Existence Theorem"
@@ -73765,9 +73779,12 @@
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
+      "deps": [
+        "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "9d39971994daf5f156c1def3176e145443197854597592483bd01a9917b3b0a3",
+      "note_hash": "04ed37167f120d1afce5b00c6f001209b30900cd1c9fe39739ef85773c4b3d2e",
       "path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note"
@@ -81301,7 +81318,6 @@
     "publication.ci3_z3.reproducibility_freeze_2026-04-14",
     "publication_ci3_z3_claims_table_note_2026-05-17",
     "qnm_control_hardening_note",
-    "quark_bimodule_norm_existence_theorem_note_2026-04-19",
     "quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28",
     "quark_c3_circulant_source_law_boundary_note_2026-04-28",
     "quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28",
@@ -81389,7 +81405,6 @@
     "staggered_backreaction_note",
     "staggered_backreaction_shell_spectral_note",
     "staggered_dag_note_2026-04-10",
-    "staggered_dirac_realization_gate_note_2026-05-03",
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
     "staggered_fermion_card_2026-04-10",
@@ -81559,10 +81574,10 @@
       "open_gate": 123,
       "positive_theorem": 607
     },
-    "edge_count": 9722,
+    "edge_count": 9725,
     "leaf_count": 743,
     "node_count": 2480,
-    "root_count": 810,
+    "root_count": 808,
     "runners_with_path": 2046
   }
 }

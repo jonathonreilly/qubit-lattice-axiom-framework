@@ -21,18 +21,26 @@
       "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
     ],
     [
-      "rconn_derived_note",
-      "yt_ew_matching_rule_m_note_2026-05-02"
+      "anomaly_forces_time_theorem",
+      "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+      "staggered_dirac_realization_gate_note_2026-05-03",
+      "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+      "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
     ],
     [
-      "rconn_derived_note",
-      "yt_ew_matching_rule_m_note_2026-05-02",
-      "ew_current_matching_ozi_suppression_theorem_note_2026-04-27"
+      "staggered_dirac_realization_gate_note_2026-05-03",
+      "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+      "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+      "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+      "three_generation_observable_theorem_note"
     ]
   ],
-  "cycles_detected": 195,
+  "cycles_detected": 292,
   "effective_status_counts": {
-    "audited_conditional": 98,
+    "audited_conditional": 96,
     "audited_failed": 25,
     "audited_numerical_match": 9,
     "audited_renaming": 16,
@@ -60,7 +68,7 @@
     "retained_bounded": 380,
     "retained_no_go": 149,
     "retained_pending_chain": 11,
-    "unaudited": 1297
+    "unaudited": 1299
   },
   "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [

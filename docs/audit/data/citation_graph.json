@@ -19193,6 +19193,34 @@
       "to": "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
     },
     {
+      "from": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "to": "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
       "from": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
       "to": "observable_principle_from_axiom_note"
     },
@@ -63894,6 +63922,26 @@
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Framework-Internal Narrow Bounded Note"
     },
+    "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "minimal_axioms_2026-05-20",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "fd0fcace5dbe4c1b0842ae188af9f085b0c7007e30a2555c4eaa22a1ce29db79",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_locality_of_source_derivatives.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Locality of Source-Derivatives Narrow Note"
+    },
     "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -81120,7 +81168,7 @@
       "bounded_theorem": 507,
       "decoration": 1,
       "meta": 184,
-      "no_go": 57,
+      "no_go": 58,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 172
@@ -81129,15 +81177,15 @@
       "bounded_theorem": 945,
       "decoration": 1,
       "meta": 184,
-      "no_go": 160,
+      "no_go": 161,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9676,
-    "leaf_count": 736,
-    "node_count": 2465,
+    "edge_count": 9683,
+    "leaf_count": 737,
+    "node_count": 2466,
     "root_count": 804,
-    "runners_with_path": 2032
+    "runners_with_path": 2033
   }
 }

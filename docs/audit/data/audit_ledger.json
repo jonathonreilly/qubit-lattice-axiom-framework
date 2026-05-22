@@ -230766,12 +230766,12 @@
       "verdict_rationale": "The load-bearing step is a genuine class-A combinatorial closure: Hamming weight is invariant under coordinate permutations, and S_3 is transitive on each fixed-weight subset. The runner source performs exhaustive enumeration of the 8 vertices and 6 permutations, checks the orbit decomposition and charge-conjugation action directly, and reports PASS=55, FAIL=0. The note explicitly limits the claim to the bare set-level theorem and does not import the broader staggered-Dirac or physical-species identifications."
     },
     "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16": {
-      "audit_date": "2026-05-21T22:16:03.383618+00:00",
+      "audit_date": "2026-05-22T16:30:59.723266+00:00",
       "audit_state_snapshot": {
-        "criticality": "leaf",
+        "criticality": "critical",
         "dep_claim_scope": {
           "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
-          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero locus and species count for the defined standard naive lattice Dirac operator on a hypercubic lattice: 2^d zeros/species, hence 16 at d=4, with no regulator-independent or framework-bridge claim."
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16."
         },
         "dep_claim_type": {
           "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
@@ -230785,26 +230785,26 @@
           "cl3_complexification_split_narrow_theorem_note_2026-05-10",
           "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
         ],
-        "load_bearing_score": 1.5,
+        "load_bearing_score": 11.043,
         "runner_hash": "46a705a8dab78b873861e997a54cd1bd1cf6849017bbd8c1d38ba01e06014a6c",
-        "transitive_descendants": 1
+        "transitive_descendants": 1054
       },
-      "audit_status": "audit_in_progress",
-      "auditor": "codex-cli-gpt-5.5-20260521-221407-ab828979-staggered_dirac_substep3-015",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162855Z-d266aadf-staggered_dirac_substep3-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The restricted packet contains retained upstream support for the naive 2^d corner count and the Cl(3,0) complexification split; the remaining bridge is exact finite-dimensional arithmetic. The note explicitly excludes the framework-specific Kogut-Susskind/taste-realization step, so that open gate is not part of the audited claim.",
+      "chain_closure_explanation": "For this narrow scope, retained upstream authorities supply the 16 naive-corner count and the Cl(3) chirality dimensions; the remaining work is exact integer arithmetic and finite-dimensional linear algebra. The framework-specific Kogut-Susskind taste reduction is explicitly outside the audited claim.",
       "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": "Audited only the bounded algebraic bridge: naive d=4 corner cardinality 16, its arithmetic factorization 16 = 4 \u00b7 4, and the match between the spinor-count factor 4 and the retained Cl(3,0) complexification chirality-pair dimension 2 + 2 = 4, with no framework-specific staggered-realization closure.",
+      "claim_scope": "The audited scope is the narrow algebraic bridge: d=4 naive corner cardinality 16, exact factorization 16=4*4, and the Cl(3) chirality-pair module dimension 2+2=4 matching the spinor-count factor, without claiming framework-specific staggered realization.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T08:46:51.655458+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "claim_type_last_reviewed": "2026-05-22T16:30:59.723266+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -230819,8 +230819,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-22T16:30:59.723266+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162855Z-d266aadf-staggered_dirac_substep3-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited scope is the narrow algebraic bridge: d=4 naive corner cardinality 16, exact factorization 16=4*4, and the Cl(3) chirality-pair module dimension 2+2=4 matching the spinor-count factor, without claiming framework-specific staggered realization.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -230829,18 +230840,18 @@
       ],
       "direct_in_degree": 2,
       "effective_status": "retained_bounded",
-      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "retained_bounded",
       "load_bearing_score": 11.043,
-      "load_bearing_step": "At d = 4, the naive 2^d = 16 corner count factors as 16 = 4 \u00b7 4, and the spinor-count factor 4 matches the Cl(3,0) complexification chirality-pair dimension 2 + 2 = 4.",
+      "load_bearing_step": "At d=4, the upstream naive count gives 2^4=16, integer arithmetic factors this as 16=4*4, and the upstream Cl(3,0) complexification split gives dim_C V_+ + dim_C V_- = 2+2=4, matching the second 4 factor.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "c54a55a7ebd6424671ebb1d385c0e5fedc22759d03741fc01d2a5dc87a1f909d",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-cli-gpt-5.5-20260521-221407-ab828979-staggered_dirac_substep3-015, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the N_taste/N_spinor labels remain treated as arithmetic labels and not as a framework-realization claim.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -230898,7 +230909,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 22,
         "B": 0,
@@ -230909,7 +230920,7 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 3 \u2014 Species Reduction Bridge Narrow Theorem",
       "transitive_descendants": 1054,
-      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure over two retained-grade upstream inputs, not a numerical fit, definition substitution, or external comparator check. The runner source performs exhaustive corner enumeration, exact arithmetic, Pauli-matrix/idempotent checks, and dimension-count checks rather than merely printing constants. The source note consistently preserves the boundary that the arithmetic bridge does not derive a framework-specific staggered 4-taste reduction."
+      "verdict_rationale": "The cited authorities are retained, and the load-bearing step is a genuine class-A algebraic closure over their outputs rather than a tuned numerical comparator or physical bridge. The runner source actually enumerates the corner set, checks the factorization, and verifies the Pauli/idempotent dimension statements at exact symbolic precision. The bounded negative language is narrowed to non-sufficiency of the restricted inputs, not a universal no-go, so the No-Go gate does not block the narrow clean verdict."
     },
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-17T15:09:13.482767+00:00",

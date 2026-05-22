@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 604 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 605 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 69 |
@@ -118,7 +118,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -604,6 +603,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_geometry_superposition_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -9769,6 +9769,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The presented load-bearing step is an algebraic consequence of the supplied Cl(3) decomposition, and the runner source does perform explicit symbolic Clifford-relation, dimension, Schur, and counterexample checks rather than merely printing constants. The note also honestly limits the result to a conditional single-module selection and explicitly leaves unconditional U4 open; the N-gate boundary is satisfied because the packet exhibits multiple k≥2 attack routes and does not overclaim closure. However, the only cited authority in the restricted packet carries effective_status decoration, not a retained-grade status, so the audit cannot mark the chain clean under the stated rubric.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_DIRAC_SUBSTEP3_SPECIES_REDUCTION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audited scope is the narrow algebraic bridge: d=4 naive corner cardinality 16, exact factorization 16=4*4, and the Cl(3) chirality-pair module dimension 2+2=4 matching the spinor-count factor, without claiming framework-specific staggered realization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T162855Z-d266aadf-staggered_dirac_substep3-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** At d=4, the upstream naive count gives 2^4=16, integer arithmetic factors this as 16=4*4, and the upstream Cl(3,0) complexification split gives dim_C V_+ + dim_C V_- = 2+2=4, matching the second 4 factor.  _(class `A`)_
+- **chain closes:** True — For this narrow scope, retained upstream authorities supply the 16 naive-corner count and the Cl(3) chirality dimensions; the remaining work is exact integer arithmetic and finite-dimensional linear algebra. The framework-specific Kogut-Susskind taste reduction is explicitly outside the audited claim.
+- **rationale:** The cited authorities are retained, and the load-bearing step is a genuine class-A algebraic closure over their outputs rather than a tuned numerical comparator or physical bridge. The runner source actually enumerates the corner set, checks the factorization, and verifies the Pauli/idempotent dimension statements at exact symbolic precision. The bounded negative language is narrowed to non-sufficiency of the restricted inputs, not a universal no-go, so the No-Go gate does not block the narrow clean verdict.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17`

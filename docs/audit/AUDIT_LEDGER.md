@@ -4912,13 +4912,13 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 
 - **Note:** [`GENERATION_AXIOM_BOUNDARY_NOTE.md`](../../docs/GENERATION_AXIOM_BOUNDARY_NOTE.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Local finite-dimensional H_hw=1 algebra check for the supplied translation-character projectors and C3 cycle generator only.
+- **claim_scope:** Finite-dimensional algebra check that the supplied H_hw=1 translation-character projectors and C3 cycle generator generate M_3(C) with scalar commutant; physical-species, substrate, and historical-memo claims are excluded.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260516-133430-d60516a8-generation_axiom_boundar-001`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The supplied translation-character projectors together with the C3 cycle generator generate the full 9-dimensional M_3(C) algebra on H_hw=1 and have scalar commutant.  _(class `A`)_
-- **chain closes:** True — Within the stated bounded scope, the runner explicitly constructs the 3x3 generators, computes the generated algebra dimension as 9, and computes scalar commutant dimension 1. The note excludes physical-species, substrate-fundamentality, and historical-memo conclusions.
-- **rationale:** The load-bearing step is a finite-dimensional algebraic closure check on explicitly supplied 3x3 operators, not a numerical fit, external comparison, or renaming. The source code performs actual linear-algebra computations for rank, generated algebra dimension, and commutant dimension rather than merely printing expected constants. Under the note's narrow scope, the conclusion follows on its own terms.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T152037Z-7ff9b833-generation_axiom_boundar-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The supplied translation-character projectors and C3 cycle generator generate the full nine-dimensional M_3(C) observable algebra on H_hw=1 and have scalar commutant.  _(class `A`)_
+- **chain closes:** True — Within the bounded scope, the runner constructs the stated 3x3 generators, computes the generated algebra dimension, and computes the commutant dimension. The conclusion follows for those supplied generators without using the out-of-scope physical bridges.
+- **rationale:** The runner performs actual finite-dimensional linear algebra rather than printing constants: it constructs the translation-sign matrices, the C3 permutation, projectors, algebra span, and commutant constraints. All four checks are algebraic identity/closure checks on the supplied local generators. Because the source note already bounds the claim to this local H_hw=1 M_3(C) reconstruction and explicitly excludes physical-species and substrate conclusions, no split is needed before audit; it should remain a bounded_theorem, not a positive_theorem.
 - **auditor confidence:** high
 
 ### `geometry_lane_head_to_head_note`

@@ -61884,7 +61884,7 @@
         "key_terminology"
       ],
       "helper_runner_paths": [],
-      "note_hash": "29ad382ba5b207b75f1c8fc070b49f493593cb28ccfaaa6b69f6250d62ce1724",
+      "note_hash": "34d775718ebea91b09b41e7cff0cc6ec72bc65e667cd0b7721109c06bc935bf4",
       "path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)"
@@ -70695,10 +70695,10 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1c289edfa8ee90487cd2646e6b1ce4bf4439706c26c0739690268351f802d3b3",
+      "note_hash": "ad1315e98929423b4de49eae33b8d2ca49d74dee714dc7286cfe3057d6625d42",
       "path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
       "runner_path": null,
-      "title": "Qubit Axiom Hardening: Bare-Qubit A1 Is Mathematically Identical to Physical-Cl(3,0)"
+      "title": "Qubit Axiom Hardening: Local-Algebra Equivalence and Per-Site k = 1 Ratification"
     },
     "r_base_group_theory_derivation_theorem_note_2026-04-24": {
       "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",

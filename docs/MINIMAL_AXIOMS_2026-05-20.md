@@ -111,6 +111,19 @@ See companion defense note
 `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` for the explicit response
 to the "vocabulary substitution" framing.
 
+**Ratification clause (R1) — per-site k = 1 selection (2026-05-22).**
+Axiom 1's reading of "qubit at every lattice site" carries the
+`k = 1` selection as load-bearing axiom content: the per-site Hilbert
+space `H_x` is **exactly** `ℂ²` — the unique faithful complex
+irreducible module of `M_2(ℂ)`, with multiplicity `k(x) = 1`, not a
+multi-copy direct sum. Both `k = 1` and `k ≥ 2` are admissible
+finite-dimensional `Cl(3,0)` modules on the abstract algebraic
+surface; Axiom 1's "qubit" reading selects `k = 1`. Relative to the
+weaker algebra-only reading, this is an explicit ratification of
+Axiom 1's intended qubit meaning, not a separate axiom.
+Full ratification text and downstream effects in
+`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening II".
+
 ### What "qubit" and "site" mean (commentary, not axiom content)
 
 - **Qubit.** The standard quantum-information reading of the
@@ -298,12 +311,13 @@ governance pass retags the row.
 - not a route-history document
 - not a replacement for the publication matrix
 - not a claim that DM, CKM, or Koide gates are already closed
-- not a content change — the `Cl(3) ≅ M_2(ℂ)` qubit identification
-  has been the load-bearing Step 1 of `cl3_per_site_uniqueness` from
-  the start
+- not a change to the `Cl(3) ≅ M_2(ℂ)` local-algebra identification,
+  which has been the load-bearing Step 1 of `cl3_per_site_uniqueness`
+  from the start; the 2026-05-22 ratification records the intended
+  `k = 1` one-qubit-per-site reading inside Axiom 1
 - not a unilateral re-axiomatization — this revision sharpens the
-  presentation of A1 and records two new derivation lanes that
-  follow from A1+A2 on the qubit reading
+  presentation of Axiom 1 and records two new derivation lanes that
+  follow from Axiom 1 plus Axiom 2 on the qubit reading
 
 ## Citation-graph note
 

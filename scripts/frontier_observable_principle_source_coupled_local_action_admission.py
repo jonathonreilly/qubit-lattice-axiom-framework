@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Runner for the observable-principle S-primary foundational-restructuring proposal.
+"""Runner for the observable-principle source-coupled local-action admission candidate.
 
 Verifies, at exact SymPy / Fraction precision, the Class-A claims of
-docs/OBSERVABLE_PRINCIPLE_FOUNDATIONAL_RESTRUCTURING_S_PRIMARY_PROPOSAL_NOTE_2026-05-21.md.
+docs/OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md.
 
 Tests:
 - T1: S = ψ̄(D+J)ψ on block-diagonal D = D_A ⊕ D_B decomposes as
@@ -21,14 +21,14 @@ Tests:
 - T7: Cross-block second derivative ∂²W / ∂j_x ∂j_y = 0 for x ∈ A,
       y ∈ B on block-diagonal D (locality of W generator on block-
       diagonal substrate; carried over from prior route verification).
-- T8: F_p comparison: in the S-primary shape, F_p[J] = |Z[J]|^p for
+- T8: F_p comparison: in the source-coupled local-action shape, F_p[J] = |Z[J]|^p for
       p ≠ 1 does NOT agree with the framework's W on the symbolic
       example. The {F_p} classification question does not arise in
-      S-primary because W is derived specifically via Bell/Möbius,
+      source-coupled local-action because W is derived specifically via Bell/Möbius,
       not selected from {F_p}.
-- T9: Live ledger checks for target/context rows (S-primary proposal
-      itself + parent W-primary note + the 11 prior bridge routes that
-      this restructuring obviates).
+- T9: Live ledger checks for target/context rows (source-coupled local-action proposal
+      itself + parent scalar-generator-selection note + the 11 prior bridge routes that
+      this candidate would obviate if accepted).
 - T10: Note honest-scope strings present; forbidden status-promotion
       strings absent.
 - T11: Source-note boundary declarations present.
@@ -51,7 +51,7 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = (
     ROOT
     / "docs"
-    / "OBSERVABLE_PRINCIPLE_FOUNDATIONAL_RESTRUCTURING_S_PRIMARY_PROPOSAL_NOTE_2026-05-21.md"
+    / "OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md"
 )
 LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
@@ -323,11 +323,11 @@ def t7_W_cross_block_zero() -> None:
 
 
 # ---------------------------------------------------------------------
-# T8: F_p for p ≠ 1 does not equal the framework's W in S-primary
+# T8: F_p for p ≠ 1 does not equal the framework's W in source-coupled local-action
 # ---------------------------------------------------------------------
-def t8_no_F_p_in_S_primary() -> None:
-    # In W-primary parent note, P1 selects log r from {F_p[J] = |Z[J]|^p}.
-    # In S-primary, W is derived specifically as W = log|Z| - log|Z[0]|
+def t8_no_F_p_in_source_coupled_shape() -> None:
+    # In the parent scalar-generator-selection note, P1 selects log r from {F_p[J] = |Z[J]|^p}.
+    # In source-coupled local-action, W is derived specifically as W = log|Z| - log|Z[0]|
     # via Bell/Möbius cumulant identity (S.2). The {F_p} classification
     # question does not arise. We verify on a concrete symbolic example
     # that F_p (for several p ≠ 0) does NOT equal W = log|Z| at the
@@ -355,7 +355,7 @@ def t8_no_F_p_in_S_primary() -> None:
             print(f"  T8 unexpected match: p={p}, W_val={W_val}, F_p_val={F_p_val}")
             all_distinct = False
     check(
-        "T8 F_p for p ∈ {-2, -1, 1/2, 2, 3} does NOT equal W = log|Z| in S-primary",
+        "T8 F_p for p ∈ {-2, -1, 1/2, 2, 3} does NOT equal W = log|Z| in source-coupled local-action",
         all_distinct,
     )
 
@@ -426,10 +426,10 @@ def t10_note_honest_scope() -> None:
     text = NOTE.read_text(encoding="utf-8")
     required_strings = [
         "Status authority:** independent audit lane only",
-        "foundational restructuring proposal",
-        "bounded_theorem",
-        "P1 is removed from the load-bearing",
-        "Class-D convention",
+        "source-coupled local-action admission candidate",
+        "open_gate",
+        "P1 additivity premise is no\nlonger a foundational selection rule",
+        "source-coupling convention",
         "does NOT promote or alter the status",
         "reduces\nbut does not fully eliminate",
     ]
@@ -470,7 +470,7 @@ def t11_source_note_boundary() -> None:
     boundary_strings = [
         "Source-note proposal disclaimer",
         "audit verdict and downstream status are set only by the\nindependent audit lane",
-        "Claim type:** bounded_theorem",
+        "Claim type:** open_gate",
         "**Date:** 2026-05-21",
     ]
     for s in boundary_strings:
@@ -516,7 +516,7 @@ def main() -> int:
     t5_three_line_derivation()
     t6_source_derivative_local()
     t7_W_cross_block_zero()
-    t8_no_F_p_in_S_primary()
+    t8_no_F_p_in_source_coupled_shape()
     t9_live_ledger_checks()
     t10_note_honest_scope()
     t11_source_note_boundary()

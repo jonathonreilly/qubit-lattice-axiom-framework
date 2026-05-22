@@ -19109,54 +19109,6 @@
       "to": "observable_principle_from_axiom_note"
     },
     {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "observable_principle_from_axiom_note"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "cpt_exact_note"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "minimal_axioms_2026-05-20"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
-    },
-    {
       "from": "observable_principle_klein_four_apbc_orbit_partition_closed_form_narrow_theorem_note_2026-05-17",
       "to": "observable_principle_from_axiom_note"
     },
@@ -19531,6 +19483,54 @@
     {
       "from": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16",
       "to": "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "oh_static_constraint_lift_note",
@@ -64085,31 +64085,6 @@
       "runner_path": "scripts/frontier_observable_principle_audit.py",
       "title": "Observable-Principle From-Axiom Note \u2014 Status Correction Audit"
     },
-    "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21": {
-      "claim_id": "observable_principle_foundational_restructuring_s_primary_proposal_note_2026-05-21",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "observable_principle_from_axiom_note",
-        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
-        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
-        "cpt_exact_note",
-        "minimal_axioms_2026-05-20",
-        "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
-      ],
-      "helper_runner_paths": [],
-      "note_hash": "4954c05e1d0bd4549c18ba2e4d6973b728bd1f68163dfa953f1f1f281c4f1553",
-      "path": "docs/OBSERVABLE_PRINCIPLE_FOUNDATIONAL_RESTRUCTURING_S_PRIMARY_PROPOSAL_NOTE_2026-05-21.md",
-      "runner_path": "scripts/frontier_observable_principle_foundational_restructuring_s_primary.py",
-      "title": "Observable-Principle Foundational Restructuring \u2014 S-Primary Admission-Shift Proposal Note"
-    },
     "observable_principle_from_axiom_note": {
       "claim_id": "observable_principle_from_axiom_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -64507,6 +64482,31 @@
       "path": "docs/OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/audit_companion_observable_principle_scale_invariant_source_response_exact_2026_05_16.py",
       "title": "Observable Principle \u2014 Scale-Invariant Source-Response Narrow Theorem"
+    },
+    "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21": {
+      "claim_id": "observable_principle_source_coupled_local_action_admission_candidate_note_2026-05-21",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "observable_principle_from_axiom_note",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+        "cpt_exact_note",
+        "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "25d49eaf4834fe161e7eb1b535b331322c30842b14151195d768b6ea75fb8842",
+      "path": "docs/OBSERVABLE_PRINCIPLE_SOURCE_COUPLED_LOCAL_ACTION_ADMISSION_CANDIDATE_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_source_coupled_local_action_admission.py",
+      "title": "Observable Principle Source-Coupled Local-Action Admission Candidate"
     },
     "oh_schur_boundary_action_note": {
       "claim_id": "oh_schur_boundary_action_note",
@@ -81592,21 +81592,21 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 517,
+      "bounded_theorem": 516,
       "decoration": 1,
       "meta": 184,
       "no_go": 64,
       "none": 1495,
-      "open_gate": 45,
+      "open_gate": 46,
       "positive_theorem": 174
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 955,
+      "bounded_theorem": 954,
       "decoration": 1,
       "meta": 184,
       "no_go": 167,
       "none": 443,
-      "open_gate": 123,
+      "open_gate": 124,
       "positive_theorem": 607
     },
     "edge_count": 9732,

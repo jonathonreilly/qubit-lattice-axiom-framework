@@ -44,7 +44,7 @@ Source sidecars:
 | 14 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
 | 15 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
 | 16 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
-| 17 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audit_in_progress / audit_in_progress |
+| 17 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
 
 ## Retired Dispatch Targets
 

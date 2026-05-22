@@ -9474,14 +9474,14 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
       "claim_scope": "On the framework Fock space H = \u2297_x H_x with per-site H_x \u2245 C\u00b2 (cited per-site uniqueness, Pauli rep), the per-site number operator n\u0302_x = a^\u2020_x a_x defined by the canonical single-mode fermion construction a = \u03c3_+, a^\u2020 = \u03c3_- has spectrum exactly {0, 1}; the total operator Q\u0302_total = \u03a3_x n\u0302_x has integer spectrum {0, 1, ..., N} with multiplicity C(N, k) at eigenvalue k, equivalently Q\u0302_total = (N/2)\u00b7I - (1/2) \u03a3_x \u03c3_{3,x}.",
       "claim_type": "positive_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],

@@ -25537,10 +25537,6 @@
       "to": "universal_gr_curvature_localization_blocker_note"
     },
     {
-      "from": "universal_gr_curvature_localization_blocker_note",
-      "to": "universal_gr_isotropic_glue_operator_note"
-    },
-    {
       "from": "universal_gr_discrete_global_closure_note",
       "to": "s3_anomaly_spacetime_lift_note"
     },
@@ -70878,7 +70874,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -76750,11 +76746,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "universal_gr_isotropic_glue_operator_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "6f592b08912adbe11612d8c826c0968c4cc595ff129f0c648529c0fdcef4c261",
+      "note_hash": "83e433e0e22271fc839477e54bc885c8578b00c6f0f40cb89fdd013675555612",
       "path": "docs/UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md",
       "runner_path": null,
       "title": "Universal GR Curvature Localization Blocker Note"
@@ -81613,6 +81607,7 @@
     "universal_gr_bd_congruence_invariance_bounded_note_2026-05-10",
     "universal_gr_block_normalization_note",
     "universal_gr_complement_canonical_note",
+    "universal_gr_curvature_localization_blocker_note",
     "universal_gr_invariant_frame_obstruction_note",
     "universal_gr_lambda_bypass_note",
     "universal_gr_lorentzian_global_atlas_closure_note",
@@ -81703,10 +81698,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9742,
     "leaf_count": 740,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 809,
     "runners_with_path": 2048
   }
 }

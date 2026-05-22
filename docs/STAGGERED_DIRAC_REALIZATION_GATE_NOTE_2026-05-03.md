@@ -314,3 +314,10 @@ backticks rather than as markdown links so the citation-graph builder
 does not parse them as upstream dependency edges. The supporting notes
 are downstream consequences / supporting attempts at closing this gate;
 the gate's parent identity is upstream of them, not downstream.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17](STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md)
+- [staggered_dirac_substep4_labeling_no_go_note_2026-05-17](STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)

@@ -25013,6 +25013,18 @@
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
+      "from": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+    },
+    {
       "from": "unification_basin_failure_note",
       "to": "nonlabel_grown_basin_note"
     },
@@ -75925,6 +75937,22 @@
       "runner_path": "scripts/u1_fermion_number_conservation_check.py",
       "title": "U(1) Fermion-Number Conservation from Cited Lattice Noether N2"
     },
+    "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {
+      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "3c72305e6e4534e566875ab5e7425c6148633d35ab180570746ac92ffaf154e2",
+      "path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
+      "runner_path": null,
+      "title": "U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)"
+    },
     "unification_basin_failure_note": {
       "claim_id": "unification_basin_failure_note",
       "claim_type_author_hint": null,
@@ -81123,7 +81151,7 @@
       "no_go": 57,
       "none": 1499,
       "open_gate": 45,
-      "positive_theorem": 172
+      "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 945,
@@ -81132,11 +81160,11 @@
       "no_go": 160,
       "none": 444,
       "open_gate": 123,
-      "positive_theorem": 608
+      "positive_theorem": 609
     },
-    "edge_count": 9676,
-    "leaf_count": 736,
-    "node_count": 2465,
+    "edge_count": 9679,
+    "leaf_count": 737,
+    "node_count": 2466,
     "root_count": 804,
     "runners_with_path": 2032
   }

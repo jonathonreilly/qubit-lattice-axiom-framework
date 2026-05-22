@@ -1,6 +1,16 @@
 # Staggered-Dirac Realization Gate Note
 
-**Date:** 2026-05-03
+**Date:** 2026-05-03 (2026-05-21: §2.1 recognition added — the
+in-flight substep work has matured into a single bounded source-side
+closure proposal for the kinetic-and-algebra surface
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`,
+with `AC_φλ` (substep-4 species labeling) recognized as the explicit
+irreducible admitted-context residual structurally analogous to the
+P1 admitted-context residual on
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`; the gate's source-side
+`open_gate` status is unchanged pending audit-lane ratification —
+see §2.1; citation-graph plain-text-references-only convention
+preserved per the §"Citation-graph note" rule)
 **Type:** open_gate
 **Claim scope:** A1 (Cl(3) local algebra) + A2 (Z^3 spatial substrate)
 plus admissible mathematical infrastructure forces (or sufficiently
@@ -106,13 +116,108 @@ runners. This parent note has no runner of its own.
 
 ## Closure status
 
-**Open.** Pieces of an "A1+A2 forces the staggered-Dirac realization"
-chain exist across the in-flight supporting notes above. They have not
-been packaged as a single end-to-end canonical proof, and several
-substeps have explicit named obstructions still in flight. The
-canonical-parent packaging is the only function of this note;
-substantive closure of the gate is the in-flight work on the supporting
-notes.
+**Open at the source-side parent identity.** Pieces of an "A1+A2 forces
+the staggered-Dirac realization" chain exist across the in-flight
+supporting notes above. The canonical-parent packaging is the only
+function of this note; substantive closure of the gate is the in-flight
+work on the supporting notes. The 2026-05-21 §2.1 recognition records
+the named bounded closure target for the audit lane.
+
+## 2.1 2026-05-21 gate-closure-synthesis recognition
+
+This section is the gate parent's recognition that the in-flight
+substep work has matured into a single bounded source-side closure
+proposal for the kinetic-and-algebra surface, and an explicit
+named irreducible residual for the species-label identification.
+It does **not** change the gate's source-side `open_gate` status —
+the audit-lane-only authority rule (`Status authority: independent
+audit lane only` per the synthesis note's header) keeps the gate
+`open_gate` until the audit lane ratifies the synthesis. This
+recognition records the named closure path for audit-lane review.
+
+Citation-graph convention reminder: per the §"Citation-graph note"
+rule below, this gate parent uses plain-text backtick references
+only (no markdown links) so the citation-graph builder does not
+parse the supporting-note filenames here as upstream dependency
+edges. The supporting notes are downstream consequences /
+supporting attempts at closing this gate; this gate's parent
+identity is upstream of them, not downstream.
+
+### 2.1.1 Named bounded closure target
+
+The named bounded closure target for substeps (1), (2), (3) of this
+gate is the source-note synthesis
+`STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md`,
+which packages the chain T2 (substep-1 Grassmann partition forcing
++ Jordan-Wigner cross-site CAR bridge) → T3 (substep-2 Kawamoto-Smit
+phase forcing + Kähler-Dirac equivalence) → T4 (substep-3 BZ-corner
+1+1+3+3 Hamming-orbit decomposition + species-reduction bridge) →
+T5 (substep-4 AC_λ simultaneous-diagonalization bridge supplying
+the three pairwise-orthogonal hw=1 states) into a single end-to-end
+bounded source. The synthesis was filed source-side as
+`claim_type: bounded_theorem` with `Status authority: independent
+audit lane only`; the live audit-ledger row at filing was
+`effective_status: unaudited / effective_status_reason: awaiting_audit`.
+On the 2026-05-21 re-architecture review (synthesis note §0.1), the
+synthesis's claim-boundary was formalized as the bounded closure of
+the kinetic-and-algebra surface with `AC_φλ` (substep-4 species
+labeling) carried as an explicit irreducible admitted-context
+residual.
+
+The honest framing recorded by §2.1 of this gate parent is:
+
+- **substeps (1), (2), (3)**: bounded closure achievable from current
+  primitives + admissible standard math + the named upstream stack;
+  the synthesis is the single named source for that closure.
+- **substep (4) species-label identification (`AC_φλ`)**: explicit
+  irreducible residual classified as a `no_go` within `A_min` by
+  the substep-4 labeling audit-companion
+  `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`;
+  closure requires one of three named external inputs (labeling
+  convention / `C_3`-breaking dynamics / PDG-empirical), exhaustive
+  within `A_min`.
+
+The closure path is therefore: (i) audit-lane review of the
+gate-closure synthesis on the corrected (bounded kinetic-and-algebra
++ `AC_φλ` admitted-context) scope; (ii) inherited lifts of the
+substep-1/2 narrow-bridge `audited_conditional` / `unaudited` rows;
+(iii) `AC_φλ` remains admitted-context unless and until one of the
+three named external inputs lands as a separate retained primitive.
+
+### 2.1.2 Structural backing for `AC_φλ` as admitted-context (P1 analogy)
+
+`AC_φλ`'s admitted-context status is structurally analogous to how
+`P1` (scalar additivity on independent subsystems) is treated in
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` under the
+`OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md`:
+
+- Both admit a finite, well-named symmetry-breaking input
+  (`AC_φλ`: `C_3`-orbit labeling on the hw=1 corner basis;
+  `P1`: scalar additivity on independent subsystems).
+- Both have a multi-route negative-result derivation portfolio
+  backing the admitted-context classification (P1: 11 distinct
+  routes per the P1 campaign synthesis; `AC_φλ`: 2026-05-09 AC
+  narrowing + 2026-05-10 positive ratchet attempt + 2026-05-17
+  labeling no-go).
+- Both leave the parent note's source-side audit row at a
+  conditional / awaiting-audit tier with the admitted-context atom
+  explicitly named, rather than as a `missing_bridge_theorem`
+  flag.
+
+Treating `AC_φλ` as explicit admitted-context residual (with the
+substep-4 labeling no-go as audit-companion) is the same shape as
+the P1 admitted-context treatment. It is a legitimate framework-scope
+admission, not a hidden derivation gap.
+
+### 2.1.3 Source-side status of this gate parent
+
+The gate parent's source-side `open_gate` claim_type stays unchanged.
+The gate ratifies as `bounded` or `retained_bounded` only after the
+audit lane reviews the synthesis on the re-architected scope and
+either ratifies the bounded closure or names a specific corrective
+target. Per the standing audit-lane-only authority rule, this §2.1
+section makes no source-side promotion claim; it records the named
+closure path so the audit lane has a single citeable target.
 
 ## Honest scope
 

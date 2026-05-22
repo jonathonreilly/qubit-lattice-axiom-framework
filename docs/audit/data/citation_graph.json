@@ -23622,7 +23622,47 @@
     },
     {
       "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
       "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+      "to": "observable_principle_from_axiom_note"
     },
     {
       "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
@@ -23691,10 +23731,6 @@
     {
       "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
       "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
-    },
-    {
-      "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
-      "to": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
     },
     {
       "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
@@ -73513,7 +73549,17 @@
       "claim_type_author_hint_raw": "bounded support theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
+        "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
         "staggered_dirac_realization_gate_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+        "observable_principle_from_axiom_note",
         "minimal_axioms_2026-05-03",
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
         "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -73531,7 +73577,6 @@
         "s3_taste_cube_decomposition_note",
         "site_phase_cube_shift_intertwiner_note",
         "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
         "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
         "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
@@ -73539,7 +73584,7 @@
         "staggered_dirac_substep4_positive_ratchet_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f6fd7fcee10f2d63682b582c59b8aeb3d6da42338e799c0ac97f73834a3ea041",
+      "note_hash": "92cced345fbedbe1b3974ccd4d2939db5e9e902a1a50a381beda82ce44edd6bf",
       "path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py",
       "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)"
@@ -73628,7 +73673,7 @@
       "claim_type_seed_hint": "open_gate",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "fd28dcf0477000499a0272db8051b909012194f2388658a853dc5246c3afd708",
+      "note_hash": "b4ab3dfcc133b4122ba5d827d110154a20b9d47fc06e0c6da1003eacbe928620",
       "path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note"
@@ -81401,8 +81446,8 @@
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9706,
-    "leaf_count": 742,
+    "edge_count": 9715,
+    "leaf_count": 739,
     "node_count": 2474,
     "root_count": 807,
     "runners_with_path": 2041

@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 1246,
     "high": 46,
-    "leaf": 971,
-    "medium": 211
+    "leaf": 968,
+    "medium": 214
   },
   "flagship_signal_used": false,
   "node_count": 2474,
@@ -19,7 +19,7 @@
     {
       "claim_id": "observable_principle_from_axiom_note",
       "criticality": "critical",
-      "load_bearing_score": 52.984,
+      "load_bearing_score": 53.484,
       "transitive_descendants": 1012
     },
     {

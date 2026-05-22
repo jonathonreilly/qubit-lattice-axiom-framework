@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 119 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 368 |
+| **retained_bounded** | 369 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
 | unaudited | 1320 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 91 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 618 |
-| `audited_conditional` | 91 |
+| `audited_clean` | 619 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -56,12 +56,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1023 |
+| `bounded_theorem` | 1024 |
 | `decoration` | 30 |
 | `meta` | 227 |
 | `no_go` | 238 |
 | `open_gate` | 112 |
-| `positive_theorem` | 744 |
+| `positive_theorem` | 743 |
 
 | criticality | count |
 |---|---:|
@@ -497,6 +497,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
+| `pauli_group_order_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_v2_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -790,7 +791,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
-| `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7847,16 +7847,14 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 ### `pauli_group_order_theorem_note_2026-05-02`
 
 - **Note:** [`PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md`](../../docs/PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Algebraic Pauli-group enumeration for the standard 2D Pauli representation, plus center, quotient, and element-order structure; the physical per-site H_x ≅ C² bridge is not closed by the packet.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T165833Z-d54bebfd-pauli_group_order_theore-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Apply the Pauli multiplication identity repeatedly, or equivalently BFS over multiplicative closure, to enumerate P_1 as phase factors {±1, ±i} times {I, σ_1, σ_2, σ_3}, giving exactly 16 matrices.  _(class `A`)_
-- **chain closes:** False — The finite-group enumeration closes once the standard Pauli matrices on C² are assumed. The cited authority explicitly moves the framework per-site Hilbert-space identification H_x ≅ C² out of its scope, so the source note is missing a one-hop retained bridge for that physical per-site identification.
-- **rationale:** The runner genuinely computes the closure of the hard-coded standard Pauli matrices and verifies the algebraic group facts; it is class A, not a first-principles framework computation. The source note, however, presents the result as the framework's per-site Pauli group on H_x ≅ C². The only cited authority is retained-bounded for abstract Cl(3) chirality representation theory but explicitly says the per-site Hilbert-space realization bridge is out of scope and carried elsewhere. Thus the algebraic theorem is sound conditionally, but the claimed framework-per-site identification is not closed in this restricted packet.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Single k=1 per-site qubit scope: P_1=<sigma_1,sigma_2,sigma_3> on H_x=C^2 has 16 elements, center {+/-I,+/-iI}, quotient V_4, and exponent dividing 4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T223447Z-4ceeb93c-pauli_group_order_theore-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Apply the Pauli multiplication identity repeatedly to enumerate the multiplicative group generated by sigma_1, sigma_2, sigma_3 as phase factors {+/-1,+/-i} times {I,sigma_1,sigma_2,sigma_3}, giving exactly 16 distinct matrices.  _(class `A`)_
+- **chain closes:** True — Under the allowed k=1 qubit-per-site reading, H_x=C^2 is available on the audited scope, and the retained_bounded Pauli-irrep input supplies the standard sigma_i. The rest is finite algebraic closure from the Pauli multiplication identity and basic group theory.
+- **rationale:** The load-bearing work is algebraic enumeration of the group generated by the Pauli matrices, not a definition, renaming, tuned numerical match, or external comparator. The runner genuinely constructs the matrices, BFS-enumerates the generated closure, and checks non-abelianness, center, quotient order, and fourth-power identity. I classify the row as a bounded theorem rather than decoration because the audited result records a structural finite operator group not present in the parent representation statement.
 - **auditor confidence:** high
 
 ### `per_site_su2_spin_half_theorem_note_2026-05-02`

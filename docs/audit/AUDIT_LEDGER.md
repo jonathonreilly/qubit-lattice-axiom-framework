@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1310 |
+| unaudited | 1309 |
 | audit_in_progress | 1 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -32,7 +32,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
-| `decoration_under_cpt_exact_note` | 1 |
+| `decoration_under_cpt_exact_note` | 2 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 3 |
@@ -52,20 +52,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 1 |
 | `audited_clean` | 616 |
 | `audited_conditional` | 93 |
-| `audited_decoration` | 30 |
+| `audited_decoration` | 31 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1532 |
+| `unaudited` | 1531 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1024 |
-| `decoration` | 31 |
+| `decoration` | 32 |
 | `meta` | 226 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 736 |
+| `positive_theorem` | 735 |
 
 | criticality | count |
 |---|---:|
@@ -838,6 +838,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -2671,6 +2672,20 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Substituting the premises gives Theta D Theta^{-1}=C P (TDT) P C=C(PDP)C=C(-D)C=D, and on H=iD gives P K(iD)K P=-iPDP=iD.  _(class `A`)_
 - **chain closes:** True — The narrowed C1 and C2 conclusions follow by direct algebraic substitution from premises stated as hypotheses. No upstream authority is required for this bounded theorem because the premises themselves are not being derived here.
 - **rationale:** The load-bearing content is a genuine class-A algebraic identity check over explicitly stated premises, not a renaming or numerical match. The runner source performs exact SymPy matrix equality checks rather than merely printing constants, and its C1/C2 checks match the proof. The former C3 scalar-square issue has been demoted to a conditional, non-load-bearing corollary, so it does not block the narrowed theorem.
+- **auditor confidence:** high
+
+### `cpt_squared_is_identity_theorem_note_2026-05-02`
+
+- **Note:** [`CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md`](../../docs/CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** The antiunitary operator CPT = CP·K satisfies (CPT)² = I on the stated H_phys, assuming the cited CP construction has (CP)² = I and is real.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cpt_exact_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-030935-7e12d739-cpt_squared_is_identity_-004`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** T·CP = (CP)*·T = CP·T because CP is real, hence (CPT)² = (CP)²·T² = I.  _(class `A`)_
+- **chain closes:** True — The conclusion follows algebraically from the cited retained CP identity, CP being real, and K² = I. No additional physics bridge is needed for this involution statement.
+- **rationale:** The cited authority is retained for the finite-lattice C, P, T constructions and explicitly includes (CP)² = I, which is the only load-bearing upstream fact used here. The runner verifies the same algebra on a small toy C/P/K system and random vectors; it does not independently compute new framework physics. Under the tie-break rule, this is a class-A algebraic corollary of one upstream parent with zero comparator checks, so the proper verdict is audited_decoration rather than audited_clean.
+- **decoration parent:** `cpt_exact_note`
 - **auditor confidence:** high
 
 ### `critical_exponents_topology_note_2026-04-10`

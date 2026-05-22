@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 14 |
-| unaudited | 1321 |
+| unaudited | 1320 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 95 |
-| ~~audited_failed~~ | 25 |
+| ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -49,10 +49,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 609 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 28 |
-| `audited_failed` | 69 |
+| `audited_failed` | 70 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1545 |
+| `unaudited` | 1544 |
 
 | claim_type | count |
 |---|---:|
@@ -911,6 +911,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_nonlocal_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_results_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_scale_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -10397,6 +10398,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe read is that structureless causal DAGs can show TOWARD rows, and when they do the source-strength response stays close to linear on this pocket.  _(class `C`)_
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
+- **auditor confidence:** high
+
+### `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic substitution of the five named inputs X0-X4 into the SU(2)_L one-loop beta coefficient, including P1-P3 and the listed corollaries C1-C4.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T171042Z-2b47043e-su2_weak_beta_coefficien-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Apply the Peskin-Schroeder formula with C_2(adj SU(2)) = N_pair, T(F) = 1/2, N_W = (N_color + 1) * N_gen, and n_S^complex_components = 2 to obtain b_2 = (11/3)N_pair - (1/3)(N_color + 1)N_gen - 1/6, then substitute (2,3,3).  _(class `A`)_
+- **chain closes:** False — The main P1-P3 substitution closes, as do C1, C3, and C4. C2 does not follow as written: b_2/(-1/6) equals -22*N_pair + 2*(N_color + 1)*N_gen + 1, not N_color*(N_color + 1) - 11*N_pair.
+- **rationale:** The runner performs real exact Sympy/Rational checks for P1-P3 plus C1, C3, and C4. However, the source note explicitly claims C2 and says validation covers C1-C4, while the runner source never checks C2. Independently, the stated ratio b_2 : (-1/6) is not N_color*(N_color + 1) - 11*N_pair under P1; at framework counts it is -19, not -10. Therefore the full scoped claim does not close on its own terms.
 - **auditor confidence:** high
 
 ### `su3_adjoint_casimir_theorem_note_2026-05-02`

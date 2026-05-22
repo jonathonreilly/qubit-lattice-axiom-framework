@@ -236211,24 +236211,57 @@
       "verdict_rationale": "The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed."
     },
     "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T17:12:40.849177+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "a14f105bbf105df07ba3f6a4263f229ca64ac509be549784b7b545fc1463225d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T171042Z-2b47043e-su2_weak_beta_coefficien-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The main P1-P3 substitution closes, as do C1, C3, and C4. C2 does not follow as written: b_2/(-1/6) equals -22*N_pair + 2*(N_color + 1)*N_gen + 1, not N_color*(N_color + 1) - 11*N_pair.",
       "claim_id": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Algebraic substitution of the five named inputs X0-X4 into the SU(2)_L one-loop beta coefficient, including P1-P3 and the listed corollaries C1-C4.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T17:12:40.849177+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -236240,19 +236273,19 @@
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_failed",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_failed",
       "load_bearing_score": 1.5,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Apply the Peskin-Schroeder formula with C_2(adj SU(2)) = N_pair, T(F) = 1/2, N_W = (N_color + 1) * N_gen, and n_S^complex_components = 2 to obtain b_2 = (11/3)N_pair - (1/3)(N_color + 1)N_gen - 1/6, then substitute (2,3,3).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "5da36d7e77bfaddf8a3f65f33483decdf3a4e886b10bc6e3b21414e89ee73001",
       "note_path": "docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Correct or remove C2 and add an exact runner check for the claimed ratio; P1-P3 can then be re-audited.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -236319,18 +236352,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 16,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 16
       },
       "runner_path": "scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py",
       "title": "SU(2)_L 1-Loop \u03b2-Function Coefficient Narrow Theorem",
       "transitive_descendants": 1,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner performs real exact Sympy/Rational checks for P1-P3 plus C1, C3, and C4. However, the source note explicitly claims C2 and says validation covers C1-C4, while the runner source never checks C2. Independently, the stated ratio b_2 : (-1/6) is not N_color*(N_color + 1) - 11*N_pair under P1; at framework counts it is -19, not -10. Therefore the full scoped claim does not close on its own terms."
     },
     "su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26": {
       "audit_date": null,

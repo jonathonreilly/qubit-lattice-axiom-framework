@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 369 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 93 |
+| ~~audited_conditional~~ | 94 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 3 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 621 |
-| `audited_conditional` | 93 |
+| `audited_conditional` | 94 |
 | `audited_decoration` | 27 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1541 |
+| `unaudited` | 1540 |
 
 | claim_type | count |
 |---|---:|
@@ -787,6 +787,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `left_handed_charge_matching_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6664,6 +6665,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note's load-bearing 3D claim is that the dense spent-delay branch at strength 5e-5 has a retained same-family barrier card and that z = 2, 3, 4, 5, 6 are genuinely attractive on the retained tested window.  _(class `C`)_
 - **chain closes:** False — The restricted packet supports at most the supplied runner's 3D dense z = 2, 3, 4, 5 hierarchy-aligned window, while the note claims z = 2..6 and the cited hierarchy authority is explicitly narrowed to runner-computed z = 3 and z = 5. The 2D 9/9 attraction and b^(-0.94) distance-law table has no supplied runner or one-hop authority that closes it.
 - **rationale:** Issue: the note overclaims beyond both its supplied runner and its only cited authority, especially by retaining z = 6 and the 2D all-b distance-law table without supporting restricted evidence. Why this blocks: a bounded theorem cannot be audited clean when its stated retained window includes points the runner does not compute and the cited authority explicitly excludes from ratification. Repair target: split the runner-supported 3D z = 2..5 card from the broader narrative, add or cite audited artifacts for z = 6 and the 2D b-window, and align the hierarchy dependency scope. Claim boundary until fixed: only the raw supplied runner output for the h = 1.0, L = 12, W = 6, max_d = 3, strength 5e-5 3D card is locally evidenced.
+- **auditor confidence:** high
+
+### `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
+
+- **Note:** [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the named-import wrapper asserting the standard Z^3 nearest-neighbor lattice Green's function asymptotic G(r) ~ 1/(4 pi |r|).
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T232506Z-dc7f0605-lattice_greens_function_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cubic-lattice Green's function satisfies G(r) -> 1 / (4 pi |r|) as |r| -> infinity, asserted as the Maradudin-Montroll-Weiss asymptotic.  _(class `B`)_
+- **chain closes:** False — The packet provides no retained cited authority or derivation of the asymptotic. The missing step is the actual textbook proof or retained upstream authority establishing the lattice Green's function asymptotic under the stated normalization.
+- **rationale:** The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization.
 - **auditor confidence:** high
 
 ### `lattice_keff_continuum_note`

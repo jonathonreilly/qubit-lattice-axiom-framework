@@ -19,7 +19,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 119 |
-| **retained_no_go** | 148 |
+| **retained_no_go** | 149 |
 | **retained_bounded** | 368 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
@@ -27,7 +27,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 93 |
+| ~~audited_conditional~~ | 92 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 616 |
-| `audited_conditional` | 93 |
+| `audited_clean` | 617 |
+| `audited_conditional` | 92 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -59,9 +59,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `bounded_theorem` | 1023 |
 | `decoration` | 30 |
 | `meta` | 227 |
-| `no_go` | 237 |
+| `no_go` | 238 |
 | `open_gate` | 112 |
-| `positive_theorem` | 745 |
+| `positive_theorem` | 744 |
 
 | criticality | count |
 |---|---:|
@@ -480,6 +480,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -785,7 +786,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
@@ -7560,16 +7560,14 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 ### `no_per_site_bosonic_ccr_theorem_note_2026-05-02`
 
 - **Note:** [`NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** No exact bosonic CCR [a, a†] = I exists as bounded operators on a per-site Hilbert space H_x, assuming dim_C H_x = 2.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T165730Z-433658b0-no_per_site_bosonic_ccr_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** By AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md, dim_C H_x = 2 for every site x.  _(class `B`)_
-- **chain closes:** False — The finite-dimensional trace obstruction is valid once dim_C H_x = 2 is available. The cited authority explicitly moved the physical per-site Hilbert-dimension conclusion U4 out of scope and says downstream notes needing dim = 2 should cite the staggered-Dirac/Grassmann substep, which is not provided in this packet.
-- **rationale:** The trace identity tr([A,B]) = 0 and the contradiction with tr(I_2) = 2 are elementary and correctly checked by the runner. However, the source note's load-bearing imported premise is the physical per-site Hilbert dimension dim_C H_x = 2. The only cited authority in the packet has effective_status retained_bounded for physical-Cl(3)-only U1-U3, but it explicitly excludes U4, the physical per-site Hilbert-dimension bridge. Therefore the theorem is conditional on a missing one-hop bridge authority rather than closed from the restricted packet.
-- **open / conditional deps cited:**
-  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
+- **claim_type:** `no_go`
+- **claim_scope:** Under the k=1 qubit-per-site reading H_x = C^2, no bounded per-site operators can satisfy the exact bosonic CCR [a,a†] = I_Hx.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T222802Z-fd29bfbe-no_per_site_bosonic_ccr_-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For finite-dimensional H_x with dim_C H_x = 2, tr([a,a†]) = 0 by trace cyclicity, but [a,a†] = I_Hx would imply tr(I_Hx) = 2, a contradiction.  _(class `A`)_
+- **chain closes:** True — The allowed k=1 qubit-per-site ratification supplies H_x = C^2, and the retained Cl(3) per-site uniqueness material supplies the two-dimensional irreducible local module context. The finite-dimensional trace identity then directly rules out the exact CCR with no further bridge needed.
+- **rationale:** The load-bearing obstruction is pure finite-dimensional linear algebra once H_x = C^2 is in scope. The runner checks the trace obstruction and illustrative finite/infinite examples, with no external comparator, tuned numerical input, or definition-as-derivation step. The older cited per-site-uniqueness note alone no longer carries U4, but this targeted packet's k=1 qubit ratification supplies the missing multiplicity selection, so the scoped chain closes.
 - **auditor confidence:** high
 
 ### `no_per_site_chirality_theorem_note_2026-05-02`

@@ -176871,24 +176871,41 @@
       "verdict_rationale": null
     },
     "pauli_group_order_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T17:00:45.992046+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 10.542,
+        "runner_hash": "5b4ed04478441c9cb4c71c0b499dd45ee6b81d620206bc636815a6c1ceeac53e",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T165833Z-d54bebfd-pauli_group_order_theore-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-group enumeration closes once the standard Pauli matrices on C\u00b2 are assumed. The cited authority explicitly moves the framework per-site Hilbert-space identification H_x \u2245 C\u00b2 out of its scope, so the source note is missing a one-hop retained bridge for that physical per-site identification.",
       "claim_id": "pauli_group_order_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Algebraic Pauli-group enumeration for the standard 2D Pauli representation, plus center, quotient, and element-order structure; the physical per-site H_x \u2245 C\u00b2 bridge is not closed by the packet.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T17:00:45.992046+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -176896,20 +176913,22 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 10.542,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Apply the Pauli multiplication identity repeatedly, or equivalently BFS over multiplicative closure, to enumerate P_1 as phase factors {\u00b11, \u00b1i} times {I, \u03c3_1, \u03c3_2, \u03c3_3}, giving exactly 16 matrices.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "53c67556048051c4da53db0d8b881c46885336a90aa52cda68d09328eb09b3bb",
       "note_path": "docs/PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the retained-grade per-site Hilbert H_x \u2245 C\u00b2 realization authority named by the cited note as a one-hop dependency, or narrow the claim to the abstract standard Pauli matrices on C\u00b2.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-22T15:08:24.496640+00:00",
@@ -177005,16 +177024,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/pauli_group_order_check.py",
       "title": "Pauli Group P_1 = \u27e8\u03c3_i\u27e9 Has Order 16 on Per-Site Cl(3) Hilbert",
       "transitive_descendants": 1053,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely computes the closure of the hard-coded standard Pauli matrices and verifies the algebraic group facts; it is class A, not a first-principles framework computation. The source note, however, presents the result as the framework's per-site Pauli group on H_x \u2245 C\u00b2. The only cited authority is retained-bounded for abstract Cl(3) chirality representation theory but explicitly says the per-site Hilbert-space realization bridge is out of scope and carried elsewhere. Thus the algebraic theorem is sound conditionally, but the claimed framework-per-site identification is not closed in this restricted packet."
     },
     "per_site_k_equals_1_ratification_reaudit_manifest_note_2026-05-22": {
       "audit_date": null,

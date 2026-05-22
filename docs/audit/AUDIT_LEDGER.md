@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 15 |
-| unaudited | 1337 |
+| unaudited | 1336 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 79 |
+| ~~audited_conditional~~ | 80 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 608 |
-| `audited_conditional` | 79 |
+| `audited_conditional` | 80 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1559 |
+| `unaudited` | 1558 |
 
 | claim_type | count |
 |---|---:|
@@ -748,6 +748,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -4028,6 +4029,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The algebraic scaling of the trace form and the coefficient beta follows directly from the provided canonical normalization plus the stated Wilson matching relation. However, the result is a narrow downstream repackaging of those inputs, not an independent first-principles derivation of the normalization or Wilson action choice.
 - **rationale:** The audited load-bearing step is a straightforward algebraic rescaling identity over the canonical trace normalization and beta matching formula. There are no external comparator checks, no new first-principles computation needed for the conclusion, and the source explicitly depends on one upstream normalization authority plus standard trace algebra. The cited authority is retained_bounded, so the narrow algebraic chain can close, but the theorem is best classified as decoration because it packages a direct consequence of the upstream canonical-normalization claim rather than adding independent closure.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `g_bare_rigidity_theorem_note`
+
+- **Note:** [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](../../docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Canonical-normalization rigidity of the supplied su(3) generator embedding in End(V), with holonomy identification and the C_2=4/3 cite treated as admitted upstream context rather than derived here.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-023108-49f0228b-g_bare_rigidity_theorem_-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the supplied canonical generator embedding, the fixed Hilbert-space trace form permits orthogonal basis rotations but not a uniform scalar dilation T_a -> lambda T_a because dilation changes Tr(T_a T_b)=delta_ab/2 and the Casimir.  _(class `A`)_
+- **chain closes:** False — The algebraic normalization-rigidity step closes over the supplied embedding and fixed trace form. The broader physical conclusion that this fixes the bare gauge coupling as g_bare=1 depends on the admitted holonomy/connection identification, which is explicitly not derived in the restricted packet.
+- **rationale:** The runner genuinely checks algebraic identities for the embedded Gell-Mann generators, trace Gram matrix, orthogonal rotations, scalar dilations, and coefficient rescalings. Those checks support the narrowed class-A canonical-normalization rigidity claim over the supplied embedding. However, the source note explicitly admits the physical holonomy identification step and imports the Casimir value as a decoration cite, so the full g_bare=1 physical reading does not close inside this packet.
+- **open / conditional deps cited:**
+  - `G_BARE_RIGIDITY_THEOREM_NOTE.md`
 - **auditor confidence:** high
 
 ### `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19`

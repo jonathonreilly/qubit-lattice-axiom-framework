@@ -19389,6 +19389,82 @@
       "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
     },
     {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
       "from": "observable_principle_p1_bridge_wave11_route_b_harlow_disjoint_additivity_external_narrow_bounded_note_2026-05-17",
       "to": "observable_principle_from_axiom_note"
     },
@@ -64241,6 +64317,38 @@
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_tempesta_composability_external_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Tempesta Composability External Narrow Bounded Note"
     },
+    "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "cpt_exact_note",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "5f7cc08b4b70d3a78a17c7fb58f44d2c737e0008ccb81d7c3d3de8b01d008372",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_TOMITA_GIBBS_MODULAR_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_tomita_gibbs_modular.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Tomita-Takesaki Modular on Gibbs Reference State Narrow Note"
+    },
     "observable_principle_p1_bridge_wave11_route_b_harlow_disjoint_additivity_external_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_wave11_route_b_harlow_disjoint_additivity_external_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -81387,7 +81495,7 @@
       "bounded_theorem": 512,
       "decoration": 1,
       "meta": 184,
-      "no_go": 61,
+      "no_go": 62,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 172
@@ -81396,15 +81504,15 @@
       "bounded_theorem": 950,
       "decoration": 1,
       "meta": 184,
-      "no_go": 164,
+      "no_go": 165,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9706,
-    "leaf_count": 742,
-    "node_count": 2474,
+    "edge_count": 9725,
+    "leaf_count": 736,
+    "node_count": 2475,
     "root_count": 807,
-    "runners_with_path": 2041
+    "runners_with_path": 2042
   }
 }

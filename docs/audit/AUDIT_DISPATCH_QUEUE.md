@@ -2,9 +2,9 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 6
-**Ready entries:** 4
-**Resolved/invalid entries:** 18
+**Live entries:** 5
+**Ready entries:** 3
+**Resolved/invalid entries:** 19
 **Retired entries:** 2
 
 Source sidecars:
@@ -16,12 +16,11 @@ Source sidecars:
 
 | # | ready | group | claim_id | current | source note | audit question |
 |---:|:---:|---|---|---|---|---|
-| 1 | Y | `r1_per_site_dim_two_consumers` | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Q-integer-spectrum result close on the bounded per-site scope, or does the staggered-Dirac/Grassmann bridge admission remain load-bearing? |
-| 2 | Y | `r1_per_site_dim_two_consumers` | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain? |
-| 3 | Y | `su3_toolkit_algebra` | `cl3_color_automorphism_theorem` | bounded_theorem / audited_clean / retained_bounded | `docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md` | Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout? |
-| 4 | Y | `su3_toolkit_algebra` | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md` | Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching? |
-| 5 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? |
-| 6 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? |
+| 1 | Y | `r1_per_site_dim_two_consumers` | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain? |
+| 2 | Y | `su3_toolkit_algebra` | `cl3_color_automorphism_theorem` | bounded_theorem / audited_clean / retained_bounded | `docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md` | Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout? |
+| 3 | Y | `su3_toolkit_algebra` | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md` | Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching? |
+| 4 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? |
+| 5 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? |
 
 ## Resolved Or Invalid
 
@@ -45,6 +44,7 @@ Source sidecars:
 | 16 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
 | 17 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
 | 18 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | bounded_theorem / audited_clean / retained_bounded |
+| 19 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | bounded_theorem / audited_clean / retained_bounded |
 
 ## Retired Dispatch Targets
 

@@ -20,14 +20,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 119 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 369 |
+| **retained_bounded** | 370 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
 | unaudited | 1320 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 619 |
-| `audited_conditional` | 90 |
+| `audited_clean` | 620 |
+| `audited_conditional` | 89 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -56,12 +56,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1024 |
+| `bounded_theorem` | 1025 |
 | `decoration` | 30 |
 | `meta` | 227 |
 | `no_go` | 238 |
 | `open_gate` | 112 |
-| `positive_theorem` | 743 |
+| `positive_theorem` | 742 |
 
 | criticality | count |
 |---|---:|
@@ -538,6 +538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
+| `q_integer_spectrum_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -800,7 +801,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
-| `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8574,16 +8574,14 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 ### `q_integer_spectrum_theorem_note_2026-05-02`
 
 - **Note:** [`Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Given a per-site C^2 occupation space with canonical single-mode fermion operators, Q_total = sum_x n_x has spectrum {0, 1, ..., N} with binomial multiplicities.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T164922Z-cce2b521-q_integer_spectrum_theor-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Since the n_x are mutually commuting Hermitian operators with eigenvalues {0, 1}, they have a joint eigenbasis labelled by binary strings, and Q_total acts by the Hamming weight.  _(class `A`)_
-- **chain closes:** False — The algebra from a per-site C^2 occupation space to the integer total spectrum closes. However, the cited authority explicitly moves the physical per-site Hilbert C^2 / Grassmann realization bridge out of scope, while the source note treats it as supplied by that authority.
-- **rationale:** The runner genuinely computes the finite-dimensional matrix identities and spectra for N = 4, and those checks support the internal algebraic claim. But the note's only cited one-hop authority no longer provides U4, the per-site Hilbert C^2 / one-Grassmann-mode realization that the audited claim load-bears on. Retained_bounded status of the cited note does not close an identification that the cited note itself declares out of scope.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the k=1 qubit-per-site finite Fock space H = tensor_x C^2 with n_x = a_x^dagger a_x, Q_total = sum_x n_x has spectrum {0,...,N} and multiplicity C(N,k).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T223910Z-9657ce20-q_integer_spectrum_theor-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Since the commuting n_x have eigenvalues {0,1}, the tensor-product basis is labelled by binary strings nu and Q_total|nu> = (sum_x nu_x)|nu>, giving spectrum {0,...,N} with binomial multiplicities.  _(class `A`)_
+- **chain closes:** True — With the allowed k=1 qubit-per-site reading, H_x is exactly C^2, so the single-mode number operator and tensor-product spectrum are ordinary finite-dimensional algebra. The staggered-Dirac/Grassmann bridge is not load-bearing for this bounded spectral claim.
+- **rationale:** The original cited Cl(3) uniqueness note alone no longer carries U4, but the targeted packet supplies the k=1 qubit-per-site framework rule as the needed per-site C^2 input. Once scoped that way, the proof is a direct algebraic closure: n is a rank-one projection, the n_x commute on distinct tensor factors, and Q_total has Hamming-weight spectrum. The runner source verifies those operator identities for N=4 without empirical inputs or tuned constants. This is clean only at the operator-spectrum and multiplicity level, not as an additional derivation of the staggered-Dirac realization.
 - **auditor confidence:** high
 
 ### `qnm_control_hardening_note`

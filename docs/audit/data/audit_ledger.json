@@ -201279,9 +201279,9 @@
       "verdict_rationale": null
     },
     "q_integer_spectrum_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-22T16:49:48.853393+00:00",
+      "audit_date": "2026-05-22T22:40:46.574341+00:00",
       "audit_state_snapshot": {
-        "criticality": "critical",
+        "criticality": "medium",
         "dep_claim_scope": {
           "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
         },
@@ -201294,25 +201294,25 @@
         "deps": [
           "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
         ],
-        "load_bearing_score": 11.042,
+        "load_bearing_score": 6.585,
         "runner_hash": "9042cf2aed3bb0c2bdd1d6d56595c0adab190cb424e5c09d246afda1d2846f77",
-        "transitive_descendants": 1053
+        "transitive_descendants": 47
       },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T164922Z-cce2b521-q_integer_spectrum_theor-01",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T223910Z-9657ce20-q_integer_spectrum_theor-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebra from a per-site C^2 occupation space to the integer total spectrum closes. However, the cited authority explicitly moves the physical per-site Hilbert C^2 / Grassmann realization bridge out of scope, while the source note treats it as supplied by that authority.",
+      "chain_closes": true,
+      "chain_closure_explanation": "With the allowed k=1 qubit-per-site reading, H_x is exactly C^2, so the single-mode number operator and tensor-product spectrum are ordinary finite-dimensional algebra. The staggered-Dirac/Grassmann bridge is not load-bearing for this bounded spectral claim.",
       "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
-      "claim_scope": "Given a per-site C^2 occupation space with canonical single-mode fermion operators, Q_total = sum_x n_x has spectrum {0, 1, ..., N} with binomial multiplicities.",
-      "claim_type": "positive_theorem",
+      "claim_scope": "On the k=1 qubit-per-site finite Fock space H = tensor_x C^2 with n_x = a_x^dagger a_x, Q_total = sum_x n_x has spectrum {0,...,N} and multiplicity C(N,k).",
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-22T16:49:48.853393+00:00",
+      "claim_type_last_reviewed": "2026-05-22T22:40:46.574341+00:00",
       "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
@@ -201321,22 +201321,20 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 6.585,
-      "load_bearing_step": "Since the n_x are mutually commuting Hermitian operators with eigenvalues {0, 1}, they have a joint eigenbasis labelled by binary strings, and Q_total acts by the Hamming weight.",
+      "load_bearing_step": "Since the commuting n_x have eigenvalues {0,1}, the tensor-product basis is labelled by binary strings nu and Q_total|nu> = (sum_x nu_x)|nu>, giving spectrum {0,...,N} with binomial multiplicities.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8cdee38cec613f2e240ba086899ddd6df8c5231639d790cdd2c5a5437d405e9e",
       "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: cite the retained-grade staggered-Dirac/Grassmann realization authority, or otherwise include a retained one-hop theorem establishing the per-site physical Hilbert space is the canonical C^2 one-mode Fock space.",
-      "open_dependency_paths": [
-        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
-      ],
+      "notes_for_re_audit_if_any": "Second auditor should preserve the spectral reading: arbitrary superpositions can have fractional expectation values unless a separate charge-sector or superselection premise is added; also re-check the harmless sigma_+/sigma_- convention wording.",
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-22T15:08:24.498177+00:00",
@@ -201441,7 +201439,7 @@
       "runner_path": "scripts/q_integer_spectrum_check.py",
       "title": "Per-Site n\u0302 \u2208 {0, 1} \u21d2 Total Q\u0302 Integer Spectrum on Framework Fock Space",
       "transitive_descendants": 47,
-      "verdict_rationale": "The runner genuinely computes the finite-dimensional matrix identities and spectra for N = 4, and those checks support the internal algebraic claim. But the note's only cited one-hop authority no longer provides U4, the per-site Hilbert C^2 / one-Grassmann-mode realization that the audited claim load-bears on. Retained_bounded status of the cited note does not close an identification that the cited note itself declares out of scope."
+      "verdict_rationale": "The original cited Cl(3) uniqueness note alone no longer carries U4, but the targeted packet supplies the k=1 qubit-per-site framework rule as the needed per-site C^2 input. Once scoped that way, the proof is a direct algebraic closure: n is a rank-one projection, the n_x commute on distinct tensor factors, and Q_total has Hamming-weight spectrum. The runner source verifies those operator identities for N=4 without empirical inputs or tuned constants. This is clean only at the operator-spectrum and multiplicity level, not as an additional derivation of the staggered-Dirac realization."
     },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "audit_date": null,

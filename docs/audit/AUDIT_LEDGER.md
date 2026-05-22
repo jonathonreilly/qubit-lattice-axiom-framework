@@ -18,9 +18,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 114 |
+| **retained** | 115 |
 | **retained_no_go** | 148 |
-| **retained_bounded** | 377 |
+| **retained_bounded** | 376 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 15 |
 | unaudited | 1313 |
@@ -59,12 +59,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1023 |
+| `bounded_theorem` | 1022 |
 | `decoration` | 34 |
 | `meta` | 228 |
 | `no_go` | 237 |
 | `open_gate` | 113 |
-| `positive_theorem` | 735 |
+| `positive_theorem` | 736 |
 
 | criticality | count |
 |---|---:|
@@ -685,7 +685,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `third_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_count_corollary_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11143,15 +11143,15 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 ### `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10`
 
 - **Note:** [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact linear-algebra verification that the three specified diagonal involutions on C^3 have three distinct joint sign characters and yield the stated rank-1 sector projectors.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260516-212606-20260516T212606Z-21a6ce5b-three_generation_hw1_dis-targeted`  (codex-gpt-5.5; independence=fresh_context)
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260522T152000Z-three_generation_hw1_distinct_translatio-majority`  (codex-gpt-5.5; independence=judicial_review)
 - **load-bearing step:** The product P(s)=((I+s_x T_x)/2)((I+s_y T_y)/2)((I+s_z T_z)/2) is the joint eigenspace projector, giving e_i e_i^T for the three listed characters and zero for the other five sign triples.  _(class `A`)_
-- **chain closes:** True — Given H=C^3 and the three specified diagonal generators, the involution, commutation, distinct-character, projector, and direct-sum claims follow by direct 3x3 matrix algebra. The cited retained authority is only needed as provenance for the imported carrier, not for the audited algebraic implication itself.
-- **rationale:** The load-bearing step is a genuine algebraic identity over the explicitly supplied diagonal matrices, and the conclusion follows without numerical comparators, fitted inputs, or physical-species identification. The runner source actually constructs the matrices and projectors with exact sympy arithmetic rather than merely printing expected results, and its 62 passing checks match the note's scoped claims. The upstream authority is marked retained, and no non-retained dependency is load-bearing for the narrow algebraic implication.
-- **auditor confidence:** high
+- **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is a closed class-A matrix-algebra identity over the explicitly stated C^3 carrier and diagonal involutions. The cited upstream authority is retained-grade, and the note expressly excludes the physical-species bridge, C_3 cycle, algebra-generation, irreducibility, and no-proper-quotient claims. That makes the clean positive-theorem classification appropriate for the scoped algebraic result; it does not promote any physical generation claim. | The restricted packet closes the claim by finite-dimensional matrix algebra over the stated C^3 carrier and retained diagonal operators. The runner source performs exact symbolic checks of the matrices, characters, projectors, ranks, orthogonality, and completeness, all class A, with no external comparators or physical-species bridge. Because the audited scope is the standalone algebraic projector theorem rather than a bounded physical identification, positive_theorem is the cleaner claim type. The source note's explicit exclusions prevent promotion of generation, C_3-cycle, irreducibility, or no-proper-quotient claims. | The restricted claim closes as a class-A finite-dimensional algebra identity over the stated C^3 carrier and the retained diagonal-form operators. The cited authority is marked retained, and the note explicitly excludes the physical-species bridge, C_3 cycle, algebra-generation, irreducibility, and no-proper-quotient claims. Because the audited object is a standalone exact algebra theorem rather than an admitted open or context-bounded physical extension, the positive_theorem classification is the cleaner applyable tuple. The runner source genuinely computes the matrix/projector identities exactly and reports 62 A-class passes with no B, C, or D checks. | The audited statement is a closed finite-dimensional matrix-algebra theorem over retained-grade diagonal-form inputs, not a physical generation identification. The runner genuinely constructs and checks the involution, commutation, character, projector, rank, orthogonality, and direct-sum identities at exact symbolic precision. Because the scope is the positive algebraic projector theorem itself, not an admitted physical bridge or bounded approximation, positive_theorem is the sharper claim type. | The scoped claim is a finite-dimensional algebraic identity over explicitly specified diagonal matrices, and the runner verifies the identities rather than importing a fitted or physical comparator value. The only cited upstream authority is marked retained-grade, and the note explicitly excludes physical species, C_3 cycle, algebra-generation, irreducibility, and no-proper-quotient claims. That makes audited_clean and class A correct. The first audit was right on verdict and class but overly conservative on claim_type for this restricted algebraic theorem.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is a closed class-A matrix-algebra identity over the explicitly stated C^3 carrier and diagonal involutions. The cited upstream authority is retained-grade, and the note expressly excludes the physical-species bridge, C_3 cycle, algebra-generation, irreducibility, and no-proper-quotient claims. That makes the clean positive-theorem classification appropriate for the scoped algebraic result; it does not promote any physical generation claim. | The restricted packet closes the claim by finite-dimensional matrix algebra over the stated C^3 carrier and retained diagonal operators. The runner source performs exact symbolic checks of the matrices, characters, projectors, ranks, orthogonality, and completeness, all class A, with no external comparators or physical-species bridge. Because the audited scope is the standalone algebraic projector theorem rather than a bounded physical identification, positive_theorem is the cleaner claim type. The source note's explicit exclusions prevent promotion of generation, C_3-cycle, irreducibility, or no-proper-quotient claims. | The restricted claim closes as a class-A finite-dimensional algebra identity over the stated C^3 carrier and the retained diagonal-form operators. The cited authority is marked retained, and the note explicitly excludes the physical-species bridge, C_3 cycle, algebra-generation, irreducibility, and no-proper-quotient claims. Because the audited object is a standalone exact algebra theorem rather than an admitted open or context-bounded physical extension, the positive_theorem classification is the cleaner applyable tuple. The runner source genuinely computes the matrix/projector identities exactly and reports 62 A-class passes with no B, C, or D checks. | The audited statement is a closed finite-dimensional matrix-algebra theorem over retained-grade diagonal-form inputs, not a physical generation identification. The runner genuinely constructs and checks the involution, commutation, character, projector, rank, orthogonality, and direct-sum identities at exact symbolic precision. Because the scope is the positive algebraic projector theorem itself, not an admitted physical bridge or bounded approximation, positive_theorem is the sharper claim type. | The scoped claim is a finite-dimensional algebraic identity over explicitly specified diagonal matrices, and the runner verifies the identities rather than importing a fitted or physical comparator value. The only cited upstream authority is marked retained-grade, and the note explicitly excludes physical species, C_3 cycle, algebra-generation, irreducibility, and no-proper-quotient claims. That makes audited_clean and class A correct. The first audit was right on verdict and class but overly conservative on claim_type for this restricted algebraic theorem.
+- **auditor confidence:** judicial_panel_majority
 
 ### `three_generation_local_algebra_narrow_theorem_note_2026-05-10`
 

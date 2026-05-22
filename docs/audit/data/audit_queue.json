@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 899,
+    "critical": 898,
     "high": 23,
     "leaf": 325,
     "medium": 99
@@ -11993,28 +11993,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Exact zero locus and species count for the defined standard naive lattice Dirac operator on a hypercubic lattice: 2^d zeros/species, hence 16 at d=4, with no regulator-independent or framework-bridge claim.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 5,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.546,
-      "note_path": "docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_naive_lattice_fermion_two_power_d_species_count_narrow.py",
-      "transitive_descendants": 1056
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -49797,6 +49775,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 32,
-  "total_pending": 1346
+  "ready_count": 31,
+  "total_pending": 1345
 }

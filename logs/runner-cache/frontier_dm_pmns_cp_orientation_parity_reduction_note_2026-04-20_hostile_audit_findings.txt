@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_cp_orientation_parity_reduction_note_2026-04-20_hostile_audit_findings.py
-runner_sha256: 857ad2c9f88621196e722f1b5b4c0ea3c132acccd95062df87f86916b3c07c31
+runner_sha256: 33a4ed58750909346f595e74e61e3f31a2007e17270fbb70c6a4828b7a02540d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

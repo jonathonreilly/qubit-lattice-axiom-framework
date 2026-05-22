@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wave_direct_dm_h025_fam1_seed0_control_note_hostile_audit_findings.py
-runner_sha256: 9120e6b1a4e6eff378c389fa5b7600b301d9638ca1a1d69cacc6ac25c508d9ed
+runner_sha256: b7173d759b3bc82327c242d98a62619e56ba8415c85a83184ca40481738e02f0
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,11 +9,11 @@ status: ok
 ==============================================================================
 AUDIT-PREP VERIFIER — wave_direct_dm_h025_fam1_seed0_control_note
 ==============================================================================
-  [PASS] [A] Parent note exists  (WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md, 3766 bytes)
+  [PASS] [A] Parent note exists  (WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md, 4089 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
   [PASS] [A]   wave_direct_dm_h025_high_band_boundary_note IS cited (>=1 hit)  (hits = 3)
-  [PASS] [A]   wave_direct_dm_h025_seed0_crossfamily_note IS cited (>=1 hit)  (hits = 3)
+  [PASS] [A]   wave_direct_dm_h025_seed0_crossfamily_note IS cited (>=1 hit)  (hits = 2)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):
   [PASS] [A]   wave_direct_dm_h025_fam1_seed1_control_note NOT cited (0 hits)  (hits = 0)

@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_bridge_rearrangement_principle_note_hostile_audit_findings.py
-runner_sha256: 42da0ee1b895ce2f80f87a1f0874dd320133d4e5e3c105f91639a1f84243250c
+runner_sha256: 8ef713445d06728f89dca56a64c80359a953cf2d4495a16a3bb4034750286070
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — yt_bridge_rearrangement_principle_note
 ==============================================================================
-  [PASS] [A] Parent note exists  (YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md, 3771 bytes)
+  [PASS] [A] Parent note exists  (YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md, 4604 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
   [PASS] [A]   yt_exact_interacting_bridge_transport_note IS cited (>=1 hit)  (hits = 2)

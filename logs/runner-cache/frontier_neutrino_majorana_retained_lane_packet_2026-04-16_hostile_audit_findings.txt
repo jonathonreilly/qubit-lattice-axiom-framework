@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_majorana_retained_lane_packet_2026-04-16_hostile_audit_findings.py
-runner_sha256: 079be3018630143c60568624e48bc405e2ba167db63732b615261efc2f5a6462
+runner_sha256: 70d085699b9f1b0ec492865032381eb9ebe87e6326e4cb1515f6e2afaee1a806
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================

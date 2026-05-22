@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem_note_2026-04-17_hostile_audit_findings.py
-runner_sha256: 3dcd92351b68b58d29bd9326f01197c6a97ddc3be38b2f907e2224a14ca14147
+runner_sha256: 83cc85afcf9b1853c2fc513a916b0f9191ce3cc7ead4eab8b5da91e7fff16a10
 timeout_sec: 600
 exit_code: 0
 elapsed_sec: 0.04

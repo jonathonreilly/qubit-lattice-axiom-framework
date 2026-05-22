@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16_hostile_audit_findings.py
-runner_sha256: a29f10c0dbd67fa68daa9322014616c309a32bad079b22cae27e12eda11f3b12
+runner_sha256: 6b34dea2d9e50c454eb56df0873d1b2fc141516febeb4378ec1c2787dbf08cfd
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

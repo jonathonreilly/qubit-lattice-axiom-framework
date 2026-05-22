@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_nn_lattice_rescaled_c2_derivation_note_2026-05-10_hostile_audit_findings.py
-runner_sha256: b5d013811dcd2a583b83a94af2e1b331999730202efe143f672b07898d422fb3
+runner_sha256: 5d1a561364ea98a5ce84e710b0f81a9b0fd95f95e7072c911cdcc5f082e4b16e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================

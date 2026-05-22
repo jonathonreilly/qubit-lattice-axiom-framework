@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_e_channel_endpoint_quotient_law_audited_scope_narrow_bounded_note_2026-05-10_hostile_audit_findings.py
-runner_sha256: b4e336ba433b8539b94ec573ac6c3e63f9f1ded4a16930791f92af7ee1b13b13
+runner_sha256: 37361e7aacfd9f6239a0ed4e084ef8c1cc139aa4a07c4e821688ab839eb538dd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

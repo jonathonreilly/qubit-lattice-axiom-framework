@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_substep4_ratchet_named_primitives_2026_05_10_s4ratchet.py
-runner_sha256: c8f9f7a80546a058ddab4ecadadd48bf0ace47592ffdb66757742a1b05bb1ee4
+runner_sha256: dd7d90472d07cc5711e92862e72bc01b405e906fbf760ba3c3a892c0f262ac5d
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.05
-status: ok
+exit_code: 1
+elapsed_sec: 0.08
+status: nonzero_exit
 ----- stdout -----
 Substep-4 ratchet via named primitives meta check
 note: docs/SUBSTEP4_RATCHET_NAMED_PRIMITIVES_META_NOTE_2026-05-10_s4ratchet.md
@@ -44,7 +44,7 @@ PASS: CLOSURE PROPOSAL outcome stated
 PASS: STRUCTURAL OBSTRUCTION outcome stated
 PASS: SHARPENED outcome stated
 PASS: cross-references: STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE
-PASS: cross-references: KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS
+FAIL: cross-references: KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS
 PASS: cross-references: BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE
 PASS: cross-references: PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE
 PASS: cross-references: C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE
@@ -70,8 +70,7 @@ PASS: BAE shorthand used
 PASS: P1 ratchet implication stated
 PASS: P3 ratchet implication stated
 
-=== TOTAL: PASS=60, FAIL=0 ===
-Substep-4 ratchet via named primitives check passed: AC_phi and AC_phi_lambda are named primitives matching the BAE+P campaign-terminal inventory; no new axiom; no theorem promotion; audit-lane authority preserved.
+=== TOTAL: PASS=59, FAIL=1 ===
 
 ----- stderr -----
 

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_a3_route4_spin6_chain_bounded_obstruction_note_2026-05-08_r4_hostile_audit_findings.py
-runner_sha256: eeb6454694c9867352b8a47475cc7f11f7a5cda56b79d72881a206b7de960e75
+runner_sha256: a204d55954f6bb15a28a939da10de7b2ad4e57ca411aad862313e3f74d61134e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

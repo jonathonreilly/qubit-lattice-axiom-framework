@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cosmological_constant_result_2026-04-12_hostile_audit_findings.py
-runner_sha256: f2f67605c97c66d540a8b594e1c08b7fddaa600df9de6623c07821790188df84
+runner_sha256: 38bc7801eadaa82b0b99bef5c8af9bc0cffd067366f78b1156581f28c99d3678
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

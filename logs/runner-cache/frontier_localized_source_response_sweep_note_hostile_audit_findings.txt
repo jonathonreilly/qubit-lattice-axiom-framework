@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_localized_source_response_sweep_note_hostile_audit_findings.py
-runner_sha256: 6c05c3fe70ca0d0e97efe196a90b0ce44f8bfabf498e399ac15fbabd51e22e1d
+runner_sha256: 373bbcfefe1185f86d3a8915fa8f8fc7af0b9e0556955381fe1c6476fce57029
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

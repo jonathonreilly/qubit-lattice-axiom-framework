@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18_hostile_audit_findings.py
-runner_sha256: b2d8e6a966d13719f862bd152896ac1b0dd045067b160056e89508c69ec5f396
+runner_sha256: ce057eb47dd55b840b2ed394fbafb0e337931fba58b6ea03a7f2ce733bd9be3a
 timeout_sec: 600
 exit_code: 0
 elapsed_sec: 0.04

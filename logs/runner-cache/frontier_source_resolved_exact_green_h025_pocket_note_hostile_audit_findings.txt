@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_resolved_exact_green_h025_pocket_note_hostile_audit_findings.py
-runner_sha256: a7ba87b31fe7a23cdcf32e7dbeb223d4896e12cb499915ccdee13b94f8c68589
+runner_sha256: adea02660162c15b2a3b4e0cddb33bd52eaf2e4e584d2cb855bbca8234efab64
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

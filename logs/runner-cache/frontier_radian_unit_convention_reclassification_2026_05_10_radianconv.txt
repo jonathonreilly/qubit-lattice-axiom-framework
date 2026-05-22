@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_radian_unit_convention_reclassification_2026_05_10_radianconv.py
-runner_sha256: abf7429f689473770705402c635343a5b9321593e0aec83a97cc43e2b0e1af8b
+runner_sha256: d3f8f0a1bc7c03abfa31c260b01e02bd5c252d14b3c504faaeeb631c443c4d9b
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.09
-status: ok
+exit_code: 1
+elapsed_sec: 0.04
+status: nonzero_exit
 ----- stdout -----
 Radian-unit-convention reclassification check
-note: docs/RADIAN_UNIT_CONVENTION_RECLASSIFICATION_SHARPENED_NOTE_2026-05-10_radianconv.md
+note: docs/RADIAN_UNIT_CONVENTION_RECLASSIFICATION_NOTE_2026-05-10_radianconv.md
 
 PASS: source note is meta
 PASS: does not declare effective_status value
@@ -17,7 +17,7 @@ PASS: reclassification of P as unit convention stated explicitly
 PASS: Conventions Unification pattern cited (PR #729)
 PASS: P explicitly identified with radian-bridge primitive
 PASS: Probe 24 Step 1 phi_dimensionless = 2/9 retained content cited
-PASS: Probe 24 source-note cross-reference present
+FAIL: Probe 24 source-note cross-reference present
 PASS: Probe 30 source-note cross-reference present
 PASS: SI definitional fact ([rad] = L/L = 1) stated
 PASS: SI radian dimensionless explicitly stated
@@ -36,7 +36,7 @@ PASS: forbidden promotion absent: BAE retained promotion
 PASS: forbidden promotion absent: specific theorem promoted to retained
 PASS: forbidden promotion absent: specific bridge-gap count claimed below 1
 PASS: BAE explicitly remains bounded
-PASS: BAE 30-probe campaign synthesis cited
+FAIL: BAE 30-probe campaign synthesis cited
 PASS: structural-feature limit honestly stated
 PASS: honest 'what this DOES NOT close' section
 PASS: admission count reduction stated (2 -> 1)
@@ -46,11 +46,11 @@ PASS: audit-lane authority preserved
 PASS: cross-references retained note: CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08
 PASS: cross-references retained note: PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08
 PASS: cross-references retained note: C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08
-PASS: cross-references retained note: KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24
+FAIL: cross-references retained note: KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24
 PASS: cross-references retained note: KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30
 PASS: cross-references retained note: KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24
 PASS: cross-references retained note: BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09
-PASS: cross-references retained note: KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09
+FAIL: cross-references retained note: KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09
 PASS: cross-references retained note: MINIMAL_AXIOMS_2026-05-03
 PASS: cross-references retained note: STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE
 PASS: minimal axioms note has physical Cl(3) A1
@@ -58,8 +58,7 @@ PASS: minimal axioms note has physical Z^3 A2
 PASS: bottom-line verdict present
 PASS: comparison table to landed conventions present
 
-TOTAL: PASS=48 FAIL=0
-Radian-unit-convention reclassification check passed: P reclassified as unit convention under Conventions Unification (PR #729) pattern, conditional / SHARPENED, no retained theorem promoted, no new axiom, no PDG input, BAE remains bounded.
+TOTAL: PASS=44 FAIL=4
 
 ----- stderr -----
 

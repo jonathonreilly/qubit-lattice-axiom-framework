@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_brannen_callan_harvey_candidate_note_2026-04-22_hostile_audit_findings.py
-runner_sha256: a8d0edc333a368c581cc3393c4e46a88bfbee2ad653de6b2eac8f4155bd60776
+runner_sha256: f24e45ba7b6f9c35aa7fc8aab8bc1386c6ecbd579fe9b7089b367c83124974b7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

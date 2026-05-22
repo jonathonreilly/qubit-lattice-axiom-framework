@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_axiom_first_microcausality_lieb_robinson_hostile_audit_findings.py
-runner_sha256: 0a07abac017e3907da3e3d1921c11e587604f431f5374c9243bb7cfcce8e1220
+runner_sha256: 1ba72ce0f594c3ba7c646adc6b6df0d529d7f77b6462e8bfc72c209e8c68f934
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

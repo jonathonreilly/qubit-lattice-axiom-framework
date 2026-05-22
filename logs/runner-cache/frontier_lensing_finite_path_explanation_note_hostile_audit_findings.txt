@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lensing_finite_path_explanation_note_hostile_audit_findings.py
-runner_sha256: 22241c9c724b460216ad69613fdf0d39220c10ec41ab94bf955b4fb967e4fe38
+runner_sha256: 4650c555e72cf34d931f55129aafdeca841c97d7931a1ed81a248b90ad6c6de0
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,10 +9,10 @@ status: ok
 ==============================================================================
 AUDIT-PREP VERIFIER — lensing_finite_path_explanation_note
 ==============================================================================
-  [PASS] [A] Parent note exists  (LENSING_FINITE_PATH_EXPLANATION_NOTE.md, 10003 bytes)
+  [PASS] [A] Parent note exists  (LENSING_FINITE_PATH_EXPLANATION_NOTE.md, 10537 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
-  [PASS] [A]   lensing_long_path_test_note IS cited (>=1 hit)  (hits = 4)
+  [PASS] [A]   lensing_long_path_test_note IS cited (>=1 hit)  (hits = 5)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):
 

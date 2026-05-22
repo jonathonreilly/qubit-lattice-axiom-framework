@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25_hostile_audit_findings.py
-runner_sha256: 30e736607c7802a2b3d1e245dac294eafd38b47e6f5888f600dc097ef18a963f
+runner_sha256: aab9612e463b1b4e9b36e46c584d33ed39cfc342c5f631b95ea0baa03181aa10
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

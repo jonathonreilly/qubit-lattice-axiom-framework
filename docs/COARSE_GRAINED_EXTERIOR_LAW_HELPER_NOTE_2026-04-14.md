@@ -13,7 +13,9 @@ audit-lane infrastructure for the corresponding helper module.
 
 This wrapper note documents the coarse-grained exterior law helper module
 so downstream notes (notably
-[FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md](FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md))
+`FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md` — see-also; backticked to
+break cycle-0005 in the citation graph, since the load-bearing edge
+direction is theorem -> this helper, not vice versa)
 can register a one-hop dependency rather than carry the helper as an
 unattributed Python `SourceFileLoader` import.
 

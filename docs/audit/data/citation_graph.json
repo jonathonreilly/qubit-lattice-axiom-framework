@@ -5106,10 +5106,6 @@
     },
     {
       "from": "coarse_grained_exterior_law_helper_note_2026-04-14",
-      "to": "finite_rank_source_to_metric_theorem_note"
-    },
-    {
-      "from": "coarse_grained_exterior_law_helper_note_2026-04-14",
       "to": "finite_rank_gravity_residual_helper_note_2026-04-14"
     },
     {
@@ -9635,10 +9631,6 @@
     {
       "from": "fermion_parity_z2_grading_theorem_note_2026-05-02",
       "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
-    },
-    {
-      "from": "finite_rank_gravity_residual_helper_note_2026-04-14",
-      "to": "finite_rank_source_to_metric_theorem_note"
     },
     {
       "from": "finite_rank_source_to_metric_theorem_note",
@@ -45582,11 +45574,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "finite_rank_source_to_metric_theorem_note",
         "finite_rank_gravity_residual_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5851e2aacf2f4eeedbf88a3fe6ec9e8ce86733c9f938180de0574246ebb18754",
+      "note_hash": "971844bf43674ec70b8cbc665c6dd36f5f285d7f95d159f45b044ebe741a176d",
       "path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
       "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
       "title": "Coarse-Grained Exterior Law Helper Module"
@@ -51709,11 +51700,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "finite_rank_source_to_metric_theorem_note"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9b3b88f96372aecdc1f9fadf00f9bfbada399133745314d2448a81d560eebb7b",
+      "note_hash": "5be00747c60f1c4983c36da10a713034a694fb85c79b3b368e9f0d6d0700fc8f",
       "path": "docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md",
       "runner_path": "scripts/frontier_finite_rank_gravity_residual.py",
       "title": "Finite-Rank Gravity Residual Helper Module"
@@ -70878,7 +70867,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81166,6 +81155,7 @@
     "fifth_family_complex_boundary_note",
     "fifth_family_radial_boundary_note",
     "fine_h_family_universality_note",
+    "finite_rank_gravity_residual_helper_note_2026-04-14",
     "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30",
     "flagship_paper_contribution_statement_note",
     "fm_transfer_note",
@@ -81703,10 +81693,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9741,
     "leaf_count": 740,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 809,
     "runners_with_path": 2048
   }
 }

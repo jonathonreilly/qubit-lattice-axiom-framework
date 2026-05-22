@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 365 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1324 |
+| unaudited | 1323 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -31,7 +31,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
-| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
+| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 2 |
@@ -48,20 +48,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 612 |
 | `audited_conditional` | 94 |
-| `audited_decoration` | 28 |
+| `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1548 |
+| `unaudited` | 1547 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1023 |
-| `decoration` | 29 |
+| `decoration` | 30 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 746 |
+| `positive_theorem` | 745 |
 
 | criticality | count |
 |---|---:|
@@ -849,6 +849,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -11323,6 +11324,20 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The runner performs exact algebraic and symbolic checks, with no external numerical comparator or fitted input, and its source matches the stated class-A substitution role. The load-bearing inference from N_SU(2)=2 to the 1/2 prefactor is a genuine algebraic specialization of the admitted Lüscher convention. The conditional blocker is ledger/status hygiene: the packet labels the X2 cited authority as decoration_under the Cl(3) split note, not as retained, retained_no_go, or retained_bounded.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Under the ratified A1/R1 k=1 qubit-per-site clause, the U4 bridge is just the per-site single-qubit Hilbert/module readout plus the retained M_2(C) ≅ Cl(3,0) algebraic identification.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T221811Z-8b45f4df-u4_closes_under_qubit_re-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Axiom 1's ratified qubit-per-site reading selects H_x = C^2 with k(x) = 1, so the per-site physical Hilbert space is the single faithful complex irrep of M_2(C) ≅ Cl(3,0).  _(class `A`)_
+- **chain closes:** True — The restricted packet now includes the canonical A1/R1 clause stating H_x is exactly C^2 with multiplicity k(x)=1, and the retained Cl(3) split authority supplies the standard single-irrep algebraic readout. No staggered-Dirac or Grassmann bridge is needed for this narrow U4 statement.
+- **rationale:** With R1 on the canonical axiom surface, the row adds no independent physical closure beyond unpacking the parent qubit/Cl(3) local-algebra commitment and applying standard matrix-algebra representation theory. There are no D-class comparator checks and no numerical computation. The appropriate category is audited_decoration rather than audited_clean: the content is a useful boxed corollary of the retained Cl(3)/M_2(C) local-algebra parent plus the ratified A1 k=1 reading, not a separate retained theorem.
+- **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `unified_basin_freeze_note`

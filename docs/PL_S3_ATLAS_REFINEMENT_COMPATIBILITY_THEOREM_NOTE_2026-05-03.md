@@ -19,8 +19,8 @@ section construction.
 ## Executive summary
 
 Cycle 10
-(`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`, historical planned pointer;
-source file not present on current `main`)
+(`GR_ATLAS_CLOSURE_NOTE_2026-05-02.md`, historical pointer to closed
+PR #412 cycle 10 stretch attempt; archived under `archive_unlanded/gr-atlas-closure-stretch-attempt-2026-05-02/`)
 named three obstructions for `universal_gr_lorentzian_global_atlas_closure_note`:
 
 1. Multi-chart cocycle conditions on triple overlaps NOT verified.

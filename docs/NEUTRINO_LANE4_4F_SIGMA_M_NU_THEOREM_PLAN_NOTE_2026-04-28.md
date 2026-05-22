@@ -238,7 +238,7 @@ split entirely).
 - `docs/CHARGED_LEPTON_Y_TAU_M3_PREMISE_SELF_CORRECTION_NOTE_2026-04-28.md`
   (cross-lane Lane 6 closure status; no `V_0` retained input
   available for 4F).
-- `docs/NEUTRINO_LANE4_4A_M_LIGHTEST_WARD_IDENTITY_NOTE_2026-04-28.md`
+- `archive_unlanded/neutrino-lane4-4a-m-lightest-ward-identity-stretch-attempt-2026-04-28/NEUTRINO_LANE4_4A_M_LIGHTEST_WARD_IDENTITY_NOTE_2026-04-28.md`
   (cross-lane Lane 4 4A status; ν_R gauge-singlet finding).
 - Loop pack at
   `.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/`.

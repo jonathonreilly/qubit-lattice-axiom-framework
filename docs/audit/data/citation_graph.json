@@ -5446,10 +5446,6 @@
     },
     {
       "from": "cosmological_constant_spectral_gap_identity_theorem_note",
-      "to": "cosmological_constant_result_2026-04-12"
-    },
-    {
-      "from": "cosmological_constant_spectral_gap_identity_theorem_note",
       "to": "cosmology_scale_identification_and_reduction_note"
     },
     {
@@ -12967,14 +12963,6 @@
     {
       "from": "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
       "to": "koide_circulant_character_derivation_note_2026-04-18"
-    },
-    {
-      "from": "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
-      "to": "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12"
-    },
-    {
-      "from": "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
-      "to": "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
     },
     {
       "from": "koide_a1_brannen_plancherel_identity_support_note_2026-04-25",
@@ -45967,13 +45955,12 @@
         "universal_qg_canonical_textbook_continuum_gr_closure_note",
         "s3_general_r_derivation_note",
         "s3_cap_uniqueness_note",
-        "cosmological_constant_result_2026-04-12",
         "cosmology_scale_identification_and_reduction_note",
         "dark_energy_eos_retained_corollary_theorem_note",
         "confinement_string_tension_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8790479de2b46d08e96fb3b1d6bd0d92607dbd84f76b03397218bfc5060cfb21",
+      "note_hash": "755ada660d907ee7435a5f13c6f736073d144276ff27ab60f45a00903dd97338",
       "path": "docs/COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_cosmological_constant_spectral_gap_identity.py",
       "title": "Spectral-Gap Cosmological-Constant Identity Theorem"
@@ -56596,12 +56583,10 @@
         "koide_a1_probe_z2_c3_pairing_bounded_obstruction_note_2026-05-08_probe7",
         "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
         "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
-        "koide_circulant_character_derivation_note_2026-04-18",
-        "koide_a1_probe_plancherel_peter_weyl_bounded_obstruction_note_2026-05-09_probe12",
-        "koide_a1_probe_real_structure_bounded_obstruction_note_2026-05-09_probe13"
+        "koide_circulant_character_derivation_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "36209de9c280e282b08a020b15a6f225b46a9e3757e9bf43a54cd1a6a3427cae",
+      "note_hash": "1e39d9ab01da75bdf9403fc2d6f1a09c20b771d6d7499ae9e80cbfb51de06a02",
       "path": "docs/KOIDE_A1_11_PROBE_CAMPAIGN_BOUNDED_ADMISSION_META_NOTE_2026-05-08.md",
       "runner_path": "scripts/frontier_a1_11_probe_campaign_synthesis.py",
       "title": "Koide A1 Eleven-Probe Campaign Synthesis Meta Note"
@@ -70878,7 +70863,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81703,7 +81688,7 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9740,
     "leaf_count": 740,
     "node_count": 2483,
     "root_count": 808,

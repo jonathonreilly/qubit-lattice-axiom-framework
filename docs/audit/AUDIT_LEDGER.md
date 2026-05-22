@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 112 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 378 |
+| **retained_bounded** | 379 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1302 |
+| unaudited | 1301 |
 | audit_in_progress | 3 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -50,13 +50,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 617 |
+| `audited_clean` | 618 |
 | `audited_conditional` | 95 |
 | `audited_decoration` | 33 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1524 |
+| `unaudited` | 1523 |
 
 | claim_type | count |
 |---|---:|
@@ -110,11 +110,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 987 | 31.45 | `unaudited` | unaudited |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1013 | 30.99 | `unaudited` | unaudited |
 | 20 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1046 | 29.53 | `audited_conditional` | ~~audited_conditional~~ |
-| 21 | `left_handed_charge_matching_note` | bounded_theorem | critical | 1061 | 28.55 | `audited_clean` | **retained_bounded** |
-| 22 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 987 | 28.45 | `unaudited` | unaudited |
-| 23 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 987 | 28.45 | `unaudited` | unaudited |
-| 24 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 987 | 28.45 | `unaudited` | unaudited |
-| 25 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | critical | 987 | 28.45 | `unaudited` | unaudited |
+| 21 | `cpt_exact_note` | positive_theorem | critical | 995 | 29.46 | `audited_clean` | **retained** |
+| 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 1061 | 28.55 | `audited_clean` | **retained_bounded** |
+| 23 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 987 | 28.45 | `unaudited` | unaudited |
+| 24 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | critical | 987 | 28.45 | `unaudited` | unaudited |
+| 25 | `dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16` | positive_theorem | critical | 987 | 28.45 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -624,6 +624,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_graph_gauge_closure_results_2026-04-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_graph_portability_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_graph_portability_stress_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | claude-opus | A | - |
 | `staggered_layered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_layered_gauge_engineering_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_layered_gauge_phase_diagram_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -10324,6 +10325,19 @@ Claim boundary until fixed: the abstract no-go 'no finite-dim Hilbert space admi
 - **chain closes:** True — The cached runner output reports no retained-row failures across the four stress families, and the sole cited authority is retained and supplies the baseline portability battery. The chain closes for the pass/fail stress-survival claim, not for treating the stress note as a new canonical card.
 - **rationale:** The runner constructs the four stress graph families, checks their graph statistics and cycle status, and delegates measurement to the retained portability battery rather than merely printing constants. All retained rows pass or are correctly N/A for the acyclic gauge case, with no external comparator or tuned calibrated input used. The source note's gauge magnitudes differ slightly in low-order digits from cached stdout, so cache/table synchronization should be rechecked, but the audited pass/fail conclusion is unchanged.
 - **auditor confidence:** medium
+
+### `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the staggered Cl(3) framework Hamiltonian H = iD with D the real anti-Hermitian staggered hopping operator on Lambda = (Z mod L)^3 (even L), the Hilbert-Schmidt structural completeness facts (S1)-(S6) at the lattice operator-algebra level on End_C(V_lat): (S1) H = H_1 + H_2 + H_3 exact with H_mu = i D_mu the direction-mu summand, (S2) on-site (diagonal) projection of H vanishes, (S3) longer-range (d_per > 1) projection of H vanishes, (S4) every nonzero H entry is axis-aligned NN, (S5) the three H_mu are pairwise HS-orthogonal, and (S6) the HS projection of H onto the orthogonal complement of span_C{H_1, H_2, H_3} is zero. Closes the lattice-side operator-completeness substep of bridge-note item (3); explicitly does NOT claim the continuum SME bilinear operator dictionary, basis completeness for the CPT-odd SME bilinear sector, the SME-zero leap from H_odd = 0 to SME-coefficient vanishing, or the Theta_H = PK symmetry algebra (the latter is the sister 2026-05-17 narrow theorem).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-19-stag-ham-direction`  (claude-opus; independence=cross_family)
+- **load-bearing step:** (S1) H = H_1 + H_2 + H_3 exact by linearity of D = sum D_mu; (S2) diagonals of H vanish because every D|x> shifts to |x +/- e_mu> != |x>; (S3) entries with periodic Manhattan distance > 1 vanish because D has support only on +/- e_mu nearest-neighbor displacements; (S5) Tr(D_mu D_nu) = 0 for mu != nu because D_mu D_nu has support only on sites |x +/- e_mu +/- e_nu> != |x>; (S6) is the trivial corollary of (S1) + (S5).  _(class `A`)_
+- **chain closes:** True — Pure class-A algebraic theorem on the lattice operator algebra End_C(V_lat). All six items (S1)-(S6) follow directly from the explicit matrix entries of D per (D), (eta), with the single retained dependency CPT_EXACT_NOTE supplying the staggered hopping construction. Runner verifies exact at numpy (rational +/-1/2 entries) and sympy symbolic precision: 29 PASS / 0 FAIL. Bounded-theorem scope is honest: lattice-side operator-completeness substep only, with continuum-side SME bridge explicitly preserved as parent bridge's open conditional.
+- **rationale:** Load-bearing step closes: pure structural algebra from explicit matrix construction (D), (eta). (S1) immediate from D = D_1 + D_2 + D_3 by linearity. (S2) every D|x> term shifts to |x +/- e_mu> != |x>, so diagonals are zero. (S3) D supports only nearest-neighbor displacements +/- e_mu of periodic Manhattan distance 1 for L >= 2, so d_per > 1 entries are exactly zero. (S4) vacuous on cubic NN for L >= 4 (every d_per = 1 displacement is axis-aligned); explicit tabulation confirms. (S5) Tr(D_mu D_nu) = 0 for mu != nu because D_mu D_nu|x> is supported on |x +/- e_mu +/- e_nu> and e_mu +/- e_nu != 0 for mu != nu in Lambda, so all diagonals of D_mu D_nu vanish. (S6) trivial corollary of (S1) + (S5) since H = sum H_mu lies in the span. Single load-bearing dependency CPT_EXACT_NOTE (retained, audited_clean) supplies (D), (eta) by direct matrix construction; cited only for the runner-backed algebraic core, not the SME-bridge half. Runner audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py verifies (S1)-(S6) at exact precision on numpy L in {4, 6} (rational +/-1/2 entries -> exact arithmetic) and sympy 1-d L=4 and sympy 3-d L=4 symbolic slices: 29 PASS / 0 FAIL. No hidden imports: no PDG values, no fitted constants, no SME numerical input, no continuum-CPT input, no interacting-theory input. Note explicitly disclaims overreach: continuum SME dictionary, basis completeness, SME-zero leap, and Theta_H symmetry-algebra content are all named as out-of-scope. Bounded scope is well-defined and falsifiable: the claim is testable as exact matrix arithmetic at finite L (verified) and the L-independent structural proof is L-uniform. Residual risk: this is the lattice operator-completeness substep only of bridge-note item (3); the continuum-side mapping from lattice Hermitian operators on End_C(V_lat) to continuum SME bilinear coefficients, and the SME-zero leap from operator-level vanishing to coefficient-level vanishing, remain the parent bridge's open conditional content. The narrow theorem correctly preserves that conditional structure.
+- **auditor confidence:** high
 
 ### `staggered_layered_backreaction_note`
 

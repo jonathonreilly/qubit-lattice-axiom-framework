@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1306 |
+| unaudited | 1305 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 98 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 626 |
-| `audited_conditional` | 98 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1530 |
+| `unaudited` | 1529 |
 
 | claim_type | count |
 |---|---:|
@@ -765,6 +765,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -3559,6 +3560,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The runner source performs actual interval arithmetic over the implemented residual functions and interval Jacobians, checks strict Krawczyk containment for all eight boxes, pairwise disjointness within each branch, and strict chamber-margin signs. The source note explicitly excludes the parent completeness and all-permutation upper-bound claims from this certificate.
 - **rationale:** The bounded claim is a local interval certificate, not the parent theorem's global spectral completeness claim. The runner is not merely printing expected constants: it constructs the reduced residual functions, evaluates interval Jacobians by forward-mode differentiation, applies the Krawczyk operator, and obtains strict margins with PASS=18 FAIL=0. The hard-coded centers define the boxes being certified, while the interval inclusion supplies existence and local uniqueness inside those boxes. This clean verdict is limited to that bounded local certificate and the listed chamber signs.
 - **auditor confidence:** medium
+
+### `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17`
+
+- **Note:** [`DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A bounded named-import wrapper for standard DM relic-abundance thermal averaging, x_f = 25, and Sommerfeld argument normalization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T234025Z-a2391488-dm_thermal_average_somme-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note imports the Maxwell-Boltzmann thermal-velocity average, the freeze-out slice x_f = 25, and the Sommerfeld argument normalization as textbook ingredients for downstream use.  _(class `D`)_
+- **chain closes:** False — The restricted packet provides no cited authorities in full, while the claim explicitly depends on external textbook/literature inputs. The missing step is retained-grade support for the imported Maxwell-Boltzmann normalization, freeze-out benchmark, and Sommerfeld normalization within the packet.
+- **rationale:** The source note is candidly scoped as a named non-derivation import, not a first-principles derivation. However, the restricted audit packet contains no upstream authorities despite the claim depending on textbook and literature inputs. Under the rubric, importing explicit normalizations and benchmark values not closed by the packet makes the claim conditional rather than clean.
+- **auditor confidence:** high
 
 ### `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19`
 

@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 110 |
 | **retained_no_go** | 143 |
 | **retained_bounded** | 375 |
-| _retained_pending_chain_ | 9 |
+| _retained_pending_chain_ | 10 |
 | open_gate | 16 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 606 |
+| `audited_clean` | 607 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1540 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
@@ -71,7 +71,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 209 |
 | `leaf` | 895 |
 
-- **Retained pending chain closure:** 9
+- **Retained pending chain closure:** 10
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -409,6 +409,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6369,6 +6370,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.  _(class `A`)_
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
+- **auditor confidence:** high
+
+### `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite Λ ⊂ Z^3, CPTP/CP linear maps on A_Λ ≅ M_{2^|Λ|}(C) admit the standard finite-dimensional Kraus operator-sum and Choi-positive-matrix characterizations.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:minimal_axioms_2026-05-20`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-000836-a4678e20-kraus_choi_representatio-004`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The qubit-lattice algebra A_Λ = ⊗_x M_2(C) is isomorphic to M_d(C) with d = 2^|Λ|, so the finite-dimensional Kraus and Choi theorems apply directly.  _(class `A`)_
+- **chain closes:** True — The cited axiom memo supplies the per-site M_2(C) algebra and finite-region tensor-product structure, and the source note explicitly admits the standard finite-dimensional Kraus and Choi theorems. The audited claim is only the finite-region application, not an infinite-volume channel theorem or a derivation of record dynamics.
+- **rationale:** The load-bearing step is an algebraic identification of the finite-region qubit-lattice algebra with a full matrix algebra, after which the quoted standard Kraus/Choi hypotheses are exactly satisfied. The note is explicit that Kraus and Choi are standard-math imports rather than framework-derived results, and its conclusion is scoped to finite regions. The thermodynamic-limit and record-dynamics claims are explicitly excluded, so they do not create an open dependency for this narrow claim.
 - **auditor confidence:** high
 
 ### `kubo_continuum_limit_families_note`

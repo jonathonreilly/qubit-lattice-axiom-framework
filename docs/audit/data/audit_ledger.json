@@ -139553,22 +139553,41 @@
       "verdict_rationale": null
     },
     "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T00:10:15.396810+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-kraus_choi_representatio-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom memo supplies the per-site M_2(C) algebra and finite-region tensor-product structure, and the source note explicitly admits the standard finite-dimensional Kraus and Choi theorems. The audited claim is only the finite-region application, not an infinite-volume channel theorem or a derivation of record dynamics.",
       "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "For finite \u039b \u2282 Z^3, CPTP/CP linear maps on A_\u039b \u2245 M_{2^|\u039b|}(C) admit the standard finite-dimensional Kraus operator-sum and Choi-positive-matrix characterizations.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T00:10:15.396810+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -139576,19 +139595,19 @@
         "minimal_axioms_2026-05-20"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_pending_chain",
+      "effective_status_reason": "chain_waiting_on:minimal_axioms_2026-05-20",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The qubit-lattice algebra A_\u039b = \u2297_x M_2(C) is isomorphic to M_d(C) with d = 2^|\u039b|, so the finite-dimensional Kraus and Choi theorems apply directly.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "aed537c53ab1fcf6071bade44d78391eefab7e9948a3adb1f0ac8bd640fdf943",
       "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -139603,7 +139622,7 @@
       "runner_path": null,
       "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic identification of the finite-region qubit-lattice algebra with a full matrix algebra, after which the quoted standard Kraus/Choi hypotheses are exactly satisfied. The note is explicit that Kraus and Choi are standard-math imports rather than framework-derived results, and its conclusion is scoped to finite regions. The thermodynamic-limit and record-dynamics claims are explicitly excluded, so they do not create an open dependency for this narrow claim."
     },
     "kubo_continuum_limit_families_note": {
       "audit_date": "2026-05-19T14:56:02.101970+00:00",

@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 1017,
-    "decoration": 29,
+    "decoration": 30,
     "meta": 226,
     "no_go": 231,
     "open_gate": 112,
-    "positive_theorem": 740
+    "positive_theorem": 739
   },
   "cycle_examples": [
     [
@@ -56,10 +56,10 @@
     "retained": 110,
     "retained_bounded": 376,
     "retained_no_go": 143,
-    "retained_pending_chain": 10,
-    "unaudited": 1314
+    "retained_pending_chain": 11,
+    "unaudited": 1313
   },
-  "retained_pending_chain_count": 10,
+  "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [
     "alpha_s_derived_narrow_theorem_note_2026-05-10",
     "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
@@ -70,6 +70,7 @@
     "complex_selectivity_predictor_note",
     "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
     "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-    "lattice_3d_nyquist_diffraction_note"
+    "lattice_3d_nyquist_diffraction_note",
+    "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20"
   ]
 }

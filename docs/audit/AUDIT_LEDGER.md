@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 110 |
 | **retained_no_go** | 143 |
 | **retained_bounded** | 376 |
-| _retained_pending_chain_ | 10 |
+| _retained_pending_chain_ | 11 |
 | open_gate | 16 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -49,20 +49,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 608 |
 | `audited_conditional` | 91 |
-| `audited_decoration` | 28 |
+| `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1537 |
+| `unaudited` | 1536 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1017 |
-| `decoration` | 29 |
+| `decoration` | 30 |
 | `meta` | 226 |
 | `no_go` | 231 |
 | `open_gate` | 112 |
-| `positive_theorem` | 740 |
+| `positive_theorem` | 739 |
 
 | criticality | count |
 |---|---:|
@@ -71,7 +71,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 209 |
 | `leaf` | 895 |
 
-- **Retained pending chain closure:** 10
+- **Retained pending chain closure:** 11
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -842,6 +842,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `docs/MINIMAL_AXIOMS_2026-05-20.md` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
 | `yt_ward_ratio_tadpole_cancellation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_yt_ew_color_projection_theorem` | cross_family | codex-gpt-5.5 | A | `yt_ew_color_projection_theorem` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
@@ -11059,6 +11060,20 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Exact symbolic construction of projectors and matrix units from C and T_i, rank/spanning verification of M_3(C), invariant-subspace checks, and Burnside rank-one witness.  _(class `A`)_
 - **chain closes:** True — The theorem is explicitly abstract matrix algebra with zero ledger dependencies, and the live exact SymPy runner reproduced the cached PASS=50, FAIL=0 result without importing framework/audit/lattice modules.
 - **rationale:** All claimed algebraic conclusions follow constructively: the P_i project onto the three coordinate lines, P_i C^k P_j produces every matrix unit, the nine units span M_3(C), and irreducibility/no-proper-quotient follows. The note explicitly strips away the physical generation interpretation, so no open staggered-Dirac or physical-lattice gate is load-bearing here.
+- **auditor confidence:** high
+
+### `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** For disjoint finite regions Λ1,Λ2⊂Z^3, the finite-region qubit matrix algebra trace τ_{Λ1∪Λ2} factorizes as τ_{Λ1}(A)τ_{Λ2}(B) on simple tensors.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:docs/MINIMAL_AXIOMS_2026-05-20.md`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-000836-a4678e20-tomita_tensor_trace_on_f-008`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The unique normalized trace on M_{n1 n2}(C) satisfies Tr_{n1 n2}(A ⊗ B)=Tr_{n1}(A)·Tr_{n2}(B), so the normalized trace on A_{Λ1∪Λ2} factorizes on simple tensors.  _(class `A`)_
+- **chain closes:** True — Given A1+A2's per-site M_2(C) algebra and standard finite-dimensional matrix trace facts, the factorization follows algebraically. No runner or numerical computation is load-bearing.
+- **rationale:** The mathematical step is a genuine finite-dimensional algebraic identity plus uniqueness of the normalized trace on a full matrix algebra. However the note contributes a localized restatement/application of standard matrix-algebra facts to the single upstream qubit-lattice axiom packet, with zero external comparator checks or first-principles computation. Under the provided decoration tie-break rule, this is audited_decoration rather than audited_clean.
+- **decoration parent:** `docs/MINIMAL_AXIOMS_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `triage_no_promotion_note`

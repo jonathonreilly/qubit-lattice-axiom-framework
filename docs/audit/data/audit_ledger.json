@@ -157773,7 +157773,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "34d775718ebea91b09b41e7cff0cc6ec72bc65e667cd0b7721109c06bc935bf4",
+      "note_hash": "35baed4d575bd3d1f6d7df113a85a43531e33cea705ceda6c403a15c3bd163aa",
       "note_path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -205543,7 +205543,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "ad1315e98929423b4de49eae33b8d2ca49d74dee714dc7286cfe3057d6625d42",
+      "note_hash": "fed8a683812304201298428e8aeb411108d07edfe7d37fcd68de317bd4038a6d",
       "note_path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -205558,7 +205558,7 @@
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Qubit Axiom Hardening: Local-Algebra Equivalence and Per-Site k = 1 Ratification",
+      "title": "Qubit Axiom Hardening: Local-Algebra Equivalence, Per-Site k = 1, and Projective Measurement Selection",
       "transitive_descendants": 1052,
       "verdict_rationale": null
     },

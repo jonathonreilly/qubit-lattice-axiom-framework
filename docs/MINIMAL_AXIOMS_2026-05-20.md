@@ -26,7 +26,7 @@ physical-`Cl(3)`-only content is supported by the two retained narrow
 theorems above. The qubit/`M_2(ℂ)` wording is therefore the canonical
 physical statement of the same local algebraic substrate.
 
-This note also records two consequences of the qubit reframe:
+This note also records three consequences of the qubit reframe:
 
 1. The **pre-record reference state** `ρ_ref = ⊗_x I/2` is a named
    derivation lane on A1+A2, not a separate axiom (see
@@ -41,6 +41,14 @@ This note also records two consequences of the qubit reframe:
    `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`).
    This addresses the framework's own stated repair target on
    `BORN_RULE_ANALYSIS_2026-04-11.md` (`audited_failed`).
+
+3. The **ideal projective measurement instrument** is fixed by the
+   LSP-projective framework rule ratified on 2026-05-22: for an ideal
+   unrefined sharp projective measurement of projection `P`, the
+   framework uses the Lüders instrument `K_P = P`, so sequential
+   composition with effect `E` is `P E P`. This is a narrow
+   projective-measurement rule, not a universal POVM or apparatus
+   rule.
 
 ## The two framework axioms
 
@@ -63,10 +71,12 @@ headline is preferred for Maxwell-tight minimality; the
 `Cl(3)`-framing literature and provides explicit identification of
 the operator-algebra and real-algebra readings.
 
-Dynamics, measurement, records, Born probabilities, continuum limits,
-particle sectors, gauge structure, and gravity are not additional
-primitives in A1-A2; they enter only through their named derivation
-lanes.
+Dynamics, non-projective measurement instruments, records, Born
+probabilities, continuum limits, particle sectors, gauge structure,
+and gravity are not additional primitives in A1-A2; they enter only
+through their named derivation lanes. The LSP-projective clause below
+fixes only the ideal unrefined sharp-projective measurement
+instrument.
 
 ### What "qubit" means in A1 — algebraic binding definition
 
@@ -123,6 +133,21 @@ weaker algebra-only reading, this is an explicit ratification of
 Axiom 1's intended qubit meaning, not a separate axiom.
 Full ratification text and downstream effects in
 `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening II".
+
+**Ratification clause — LSP-projective instrument selection
+(2026-05-22).** For an ideal unrefined sharp projective measurement of
+an orthogonal projection `P ∈ A_Λ` on a finite qubit-lattice region,
+the framework's projective-measurement instrument is the Lüders
+operator `K_P := P`. Sequential composition of outcome `P` followed by
+effect `E` is therefore `M_{P,E} := K_P† E K_P = P E P`.
+This is a load-bearing framework-rule selection, not a theorem forced
+by Axiom 1 and Axiom 2 alone. It applies only to ideal unrefined sharp
+projective measurements; non-projective POVM instruments, refined
+projective measurements later coarse-grained to `P`, apparatus
+back-action, persistent records, and Born-rule promotion remain in
+their own derivation lanes.
+Full ratification text and downstream effects in
+`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening III".
 
 ### What "qubit" and "site" mean (commentary, not axiom content)
 

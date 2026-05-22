@@ -61892,7 +61892,7 @@
         "key_terminology"
       ],
       "helper_runner_paths": [],
-      "note_hash": "34d775718ebea91b09b41e7cff0cc6ec72bc65e667cd0b7721109c06bc935bf4",
+      "note_hash": "35baed4d575bd3d1f6d7df113a85a43531e33cea705ceda6c403a15c3bd163aa",
       "path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)"
@@ -70718,10 +70718,10 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "ad1315e98929423b4de49eae33b8d2ca49d74dee714dc7286cfe3057d6625d42",
+      "note_hash": "fed8a683812304201298428e8aeb411108d07edfe7d37fcd68de317bd4038a6d",
       "path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
       "runner_path": null,
-      "title": "Qubit Axiom Hardening: Local-Algebra Equivalence and Per-Site k = 1 Ratification"
+      "title": "Qubit Axiom Hardening: Local-Algebra Equivalence, Per-Site k = 1, and Projective Measurement Selection"
     },
     "r_base_group_theory_derivation_theorem_note_2026-04-24": {
       "claim_id": "r_base_group_theory_derivation_theorem_note_2026-04-24",
@@ -70878,7 +70878,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"

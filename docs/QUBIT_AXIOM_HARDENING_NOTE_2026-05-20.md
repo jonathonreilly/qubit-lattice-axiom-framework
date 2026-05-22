@@ -1,10 +1,12 @@
-# Qubit Axiom Hardening: Local-Algebra Equivalence and Per-Site k = 1 Ratification
+# Qubit Axiom Hardening: Local-Algebra Equivalence, Per-Site k = 1, and Projective Measurement Selection
 
 **Date:** 2026-05-20
-**Status:** proposal — axiom defense note
+**Status:** current framework hardening note
 **Type:** meta (companion to `MINIMAL_AXIOMS_2026-05-20.md` A1)
 **Defends:** `MINIMAL_AXIOMS_2026-05-20.md` A1 statement against the
 "vocabulary substitution" framing raised on PR #1604.
+**Records:** per-site k = 1 selection and LSP-projective instrument
+selection ratifications.
 
 ## Purpose
 
@@ -18,9 +20,10 @@ bare-qubit Axiom 1 commits to the same retained local operator algebra
 as the "physical-Cl(3,0)" phrasing: both name the same
 algebra-isomorphism class. The bare form is preferred for readability
 and Maxwell-tight minimality, **not** because it weakens the algebraic
-commitment. The 2026-05-22 ratification below also makes explicit that
+commitment. The 2026-05-22 ratifications below also make explicit that
 "qubit at every lattice site" means one qubit per site, not a
-multi-copy module carrying the same algebra.
+multi-copy module carrying the same algebra, and that ideal unrefined
+sharp projective measurements use the Lüders instrument.
 
 ## The local-algebra commitment of Axiom 1 under either phrasing
 
@@ -349,7 +352,9 @@ strengthened axiom reading; the audit lane applies it.
 (R1) does **not** commit to:
 
 - A specific Hamiltonian, dynamics, or evolution rule
-- A specific measurement instrument selection (e.g., LSP for Lüders)
+- A specific measurement instrument selection by itself; the separate
+  LSP-projective ratification below addresses only ideal unrefined
+  sharp projective measurements
 - A specific record-formation map or persistent-record kernel
 - The staggered-Dirac realization gate's substeps 2-4 (Kawamoto-Smit
   taste structure, substrate-fundamentality, physical-species bridge)
@@ -371,6 +376,143 @@ U4 closure. The reviewer of this PR is asked to confirm that, on
 land, Axiom 1 will be read as carrying (R1) as load-bearing — not as
 a relabeling.
 
+## Hardening III: LSP-projective instrument selection (load-bearing ratification, 2026-05-22)
+
+### Background — the Lüders bridge flag
+
+The audit verdict on
+`luders_rule_from_composition_consistency_note_2026-05-20` recorded a
+conditional status because the source note used the sequential product
+
+```text
+M_{P,E} = P E P
+```
+
+without a retained framework authority selecting the corresponding
+measurement instrument. A later conditional bridge,
+`luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`,
+showed the algebraic implication with a runner: **if** the projective
+measurement Kraus operator is `K_P = P`, then the sequential effect is
+`K_P† E K_P = P E P`. The same runner also exhibited twisted
+alternatives, confirming that the selection is load-bearing rather
+than forced by Axiom 1 and Axiom 2 alone.
+
+The framework now ratifies the narrow, standard projective-measurement
+selection needed by that bridge.
+
+### Ratification clause
+
+For an **ideal unrefined sharp projective measurement** of an
+orthogonal projection `P ∈ A_Λ` on a finite qubit-lattice region, the
+framework's projective-measurement instrument is the Lüders operator
+
+```text
+K_P := P
+```
+
+and therefore the sequential composition of outcome `P` followed by
+effect `E` is
+
+```text
+M_{P,E} := K_P† E K_P = P E P.
+```
+
+Equivalently, on states this is the unnormalized operation
+`ρ -> P ρ P`, with the usual normalization by `tr(Pρ)` when a
+conditioned post-measurement state is required and `tr(Pρ) != 0`.
+
+### Scope boundary
+
+LSP-projective is a **projective-only framework rule**, not a universal
+instrument-selection theorem. Its scope is exactly:
+
+- ideal, sharp projective measurement of a projection `P`
+- unrefined Lüders measurement, not a fine-grained von Neumann
+  refinement later coarse-grained to `P`
+- no additional outcome-dependent unitary inside the `P` subspace
+- no extra decoherence channel or apparatus back-action folded into the
+  ideal projective measurement act
+
+Outside that scope, the framework remains open:
+
+- non-projective POVMs, including weak measurements, ancilla-coupled
+  measurements, and smeared lattice observables, still require their
+  own instrument-selection rule
+- real apparatus disturbances may be modeled by richer instruments or
+  by dynamics around the ideal measurement
+- the existing Stinespring/Kraus construction may still take arbitrary
+  Kraus families as input for non-projective or apparatus-specific
+  contexts
+
+### Why this is a framework rule, not a theorem
+
+The literature on sequential products shows that effect-algebra
+sequential products are not unique. The qubit algebra plus the `Z^3`
+spatial substrate alone do not force `K_P = P`; alternative projective
+instruments with the same effect can include refinements,
+outcome-dependent unitaries, or other instrument structure. The
+framework therefore records LSP-projective as a **selection**: for the
+ideal unrefined projective case, use the standard Lüders instrument and
+do not add hidden measurement rotations or refinements.
+
+This is the conventional physics reading of an ideal sharp projective
+measurement on a qubit system. The selection is obvious in that
+standard setting, but it remains load-bearing for the audit graph
+because it chooses one instrument among mathematically allowed
+alternatives.
+
+### Load-bearing status
+
+LSP-projective is recorded as an **explicit framework rule** on the
+same authority surface as the qubit axiom hardening text. It is:
+
+- **Load-bearing**, not merely definitional: it selects the projective
+  measurement instrument needed to read `M_{P,E} = P E P`
+- **Narrowly scoped**: ideal unrefined sharp projective measurements
+  only
+- **Not derivable from Axiom 1 and Axiom 2 alone**: the rule supplies a
+  standard measurement selection, not a new theorem
+- **Explicitly ratified by the framework author / repo owner** as
+  framework-rule content consistent with the one-qubit-per-site
+  reading recorded in this hardening note
+
+### Re-audit candidates (no automatic promotion)
+
+Under LSP-projective as load-bearing framework-rule content, the
+following rows should be eligible for independent re-audit or follow-up
+audit classification. This section only identifies the admission that
+LSP-projective may remove if the audit lane accepts the ratification as
+load-bearing authority:
+
+- `luders_rule_from_composition_consistency_note_2026-05-20` — the
+  audited conditional Lüders parent whose current blocker is the
+  missing bridge authority for `M_{P,E} = P E P`.
+- `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
+  — the conditional bridge showing that `K_P = P` implies `P E P` and
+  exhibiting non-Lüders alternatives.
+- `born_rule_from_gleason_busch_derivation_note_2026-05-20` — only as
+  a downstream re-evaluation candidate after the Lüders/projective
+  bridge is independently re-audited; the Born chain may still have
+  other blockers.
+
+This list does **not** retag any row by itself. Each re-audit is an
+independent audit-lane decision. LSP-projective supplies the approved
+framework-rule selection; the audit lane applies it.
+
+### What LSP-projective does not commit to
+
+LSP-projective does **not** commit to:
+
+- a specific Hamiltonian, dynamics, or measurement schedule
+- a universal instrument-selection rule for POVMs
+- a persistent-record map or record-formation kernel
+- an ontic interpretation of collapse beyond the operational Lüders
+  update for the ideal projective case
+- any Born-rule promotion by itself
+
+These remain in their own derivation lanes. LSP-projective closes only
+the ideal projective instrument-selection question.
+
 ## What this file is not
 
 - Not a derivation. The retained narrow theorems are cited from
@@ -379,13 +521,14 @@ a relabeling.
 - Not an additional axiom. The algebraic `M_2(ℂ) ≅ Cl(3,0)` content
   is unchanged from `MINIMAL_AXIOMS_2026-05-03.md`; this note records
   the explicit (R1) k = 1 selection ratification inside Axiom 1's
-  qubit reading.
+  qubit reading and the LSP-projective ideal projective measurement
+  selection as framework-rule content.
 - Not a rejection of the `Cl(3)`-framing literature in the repo.
   That literature reads cleanly under the qubit identification by
   the retained equivalence.
 - Not an automatic promotion of any audited_conditional row.
-  (R1) supplies the strengthened axiom reading; downstream
-  re-audits are independently owned by the audit lane.
+  (R1) and LSP-projective supply strengthened framework readings;
+  downstream re-audits are independently owned by the audit lane.
 
 ## Citation-graph note
 
@@ -406,10 +549,17 @@ for navigation, not for citation-graph dep tracking):
 - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — open-gate
   parent whose substep-1 U4 bridge is the target of the re-audit path
   enabled by (R1)
+- `LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`
+  — conditional LSP-projective bridge with runner-backed algebra and a
+  non-Lüders counterexample
+- `LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md` —
+  audited_conditional Lüders parent targeted by the LSP-projective
+  re-audit path
 - The rows listed under "Re-audit candidates"
 
 This note does not modify any retained row. It records the
 defense of the canonical A1 statement against the "vocabulary
 substitution" framing using existing retained-grade content, and
-ratifies (R1) as the load-bearing k = 1 selection for re-audit
-consumption by the audit lane.
+ratifies (R1) as the load-bearing k = 1 selection plus
+LSP-projective as the ideal projective measurement selection for
+re-audit consumption by the audit lane.

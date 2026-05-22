@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1312 |
+| unaudited | 1311 |
 | audit_in_progress | 1 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 92 |
+| ~~audited_conditional~~ | 93 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 616 |
-| `audited_conditional` | 92 |
+| `audited_conditional` | 93 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1534 |
+| `unaudited` | 1533 |
 
 | claim_type | count |
 |---|---:|
@@ -791,6 +791,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -7606,6 +7607,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The computed fine-h joint fit gives q=1.1923 and p=0.4468, so the h-stable critical schedule scales as h^(-2.6684) and reaches s_critical(0.0625)=1.2847e-01, above the stated small-field threshold 0.01.  _(class `C`)_
 - **chain closes:** True — The runner source actually constructs the lattice, propagates amplitudes, computes gravity/Born/k=0 rows, fits the joint log response, and performs the critical-strength comparison. The cited deterministic-rescale and high-precision notes are retained-grade support for using the Born-clean rescaled lane through the checked spacings.
 - **rationale:** Within the stated finite-window scope, the conclusion follows from a first-principles framework computation rather than from a copied or renamed upstream number. The runner output matches the note's quoted exponents, guards, R^2, and critical-strength value, and the source code shows those values are computed from the lattice propagation and ordinary least-squares fit. The small-field cutoff is a stated harness guard, so the audited conclusion is only that the fitted critical schedule fails that stated guard, not a universal no-go theorem.
+- **auditor confidence:** high
+
+### `no_per_site_chirality_theorem_note_2026-05-02`
+
+- **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No element internal to the 2-dimensional Pauli M_2(C) representation of Cl(3) anticommutes with all three σ_i, so no per-site γ_5 chirality projector exists under the assumed Pauli per-site representation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-030935-7e12d739-no_per_site_chirality_th-002`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The only M ∈ M_2(C) satisfying {M, σ_i}=0 for all three Pauli generators is M=0, so no involution γ_5 with γ_5²=I can exist.  _(class `A`)_
+- **chain closes:** False — The matrix-algebra no-go closes from the Pauli-representation assumption. The restricted packet does not close the stronger framework-level identification of the physical per-site Hilbert H_x with that Pauli C² module, because the cited authority explicitly moved that per-site bridge out of scope.
+- **rationale:** The runner genuinely computes the Pauli volume element, centrality, anticommuting constraint nullspace, and even/odd span collapse; these are class-A algebraic checks and all pass. However, the source note load-bears on the statement that the framework's per-site Hilbert is H_x ≅ C² with γ_i ↦ σ_i, while the supplied cited authority says the physical per-site Hilbert bridge was moved out of scope to a staggered-Dirac/Grassmann gate not provided here. Thus the Pauli-matrix no-go is sound conditionally on that representation input, but the restricted one-hop chain does not close the framework-level premise.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
 - **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`

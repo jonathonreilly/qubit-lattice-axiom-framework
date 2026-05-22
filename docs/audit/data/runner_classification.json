@@ -16452,6 +16452,18 @@
       "dominant_class": null,
       "runner": "scripts/persistent_object_top4_multistage_transfer_sweep.py"
     },
+    "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_persistent_record_instrument_construction.py"
+    },
     "persistent_record_matched_compare_note": {
       "assert_count": 0,
       "counts": {
@@ -42288,6 +42300,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_persistent_record_instrument_construction.py": {
+      "assert_count": 1,
+      "claims": [
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_physical_hermitian_hamiltonian_and_sme_bridge.py": {
       "assert_count": 1,
       "claims": [
@@ -53672,12 +53699,12 @@
     "dominant_class_distribution": {
       "A": 200,
       "B": 263,
-      "C": 732,
+      "C": 733,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1923,
-    "runners_with_C": 949,
+    "runners_classified": 1924,
+    "runners_with_C": 950,
     "runners_with_D": 548
   }
 }

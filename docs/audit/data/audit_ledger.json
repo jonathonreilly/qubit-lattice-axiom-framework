@@ -228398,7 +228398,7 @@
       "verdict_rationale": "The runner source performs genuine exact symbolic Pauli and tensor-product checks rather than printing constants, and its 44 class-A passes match the source note's JW/CAR claims. The load-bearing derivation is an algebraic identity check, with no external comparator or tuned numerical input. The terminal status cannot be audited_clean because the one-hop upstream authority is not retained-grade in this packet; its provided effective status is a decoration under another theorem rather than retained, retained_no_go, or retained_bounded."
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
-      "audit_date": "2026-05-21T22:35:02.904225+00:00",
+      "audit_date": "2026-05-22T12:46:08.639588+00:00",
       "audit_state_snapshot": {
         "criticality": "leaf",
         "dep_claim_scope": {
@@ -228418,20 +228418,20 @@
         "transitive_descendants": 0
       },
       "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-018",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T124546Z-ec272185-staggered_dirac_substep1-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The conditional claim follows algebraically from the supplied decomposition theorem and the definition k=n_++n_-. The note explicitly does not claim the missing physical selection step from admissible k\u22651 to k=1.",
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional algebraic implication k=1 \u21d2 dim_C H_x=2 closes relative to the cited decomposition, but the retained-grade chain does not close in this restricted packet because the sole cited authority is marked as decoration rather than retained-grade. The missing step is a retained-grade upstream authority for the Cl(3) complex representation decomposition used in M1.",
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "claim_scope": "Audited the bounded conditional algebraic claim that Cl(3) multiplicity k=1 implies a two-dimensional per-site complex module, while k\u22652 remains admissible and leaves unconditional U4 open.",
+      "claim_scope": "Audited the narrow conditional algebraic statement that, given the Cl(3) finite-dimensional complex representation decomposition, a single faithful Cl(3) module per site has complex dimension 2 and higher multiplicities are not excluded by the algebraic surface alone.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-21T22:35:02.904225+00:00",
+      "claim_type_last_reviewed": "2026-05-22T12:46:08.639588+00:00",
       "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
@@ -228443,16 +228443,16 @@
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "By the cited Cl(3) decomposition, every finite-dimensional complex representation is \u03c1_+^{n_+} \u2295 \u03c1_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so the added single-module condition k(x)=1 implies dim_C H_x=2.",
+      "load_bearing_step": "By the cited Cl(3) representation decomposition, H_x \u2245 \u03c1_+^{n_+(x)} \u2295 \u03c1_-^{n_-(x)} with dim_C H_x = 2(n_+(x)+n_-(x)); therefore k(x)=1 implies dim_C H_x=2, while k\u22652 remains admissible.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d147962b455e511fbcd3e9fd8638b0a56c1005f35a1002aab35bd96be6c54140",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to provide a retained-grade effective-status certificate for docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md or audit this row explicitly as conditional on that decoration parent.",
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to provide a retained-grade upstream authority or audit certificate for the Cl(3) faithful-irrep decomposition dependency, then re-audit this bounded conditional note.",
       "open_dependency_paths": [
         "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
       ],
@@ -228508,9 +228508,9 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 34,
+        "A": 38,
         "B": 3,
         "C": 5,
         "D": 0,
@@ -228519,7 +228519,7 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": "The bounded conditional statement closes on its own terms as an algebraic consequence of the cited Cl(3) representation decomposition. However, the only cited authority is presented in the restricted packet with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than a retained-grade status, so retained closure cannot propagate under the rubric. The runner performs exact symbolic checks and also constructs k\u22652 counterexamples, matching the note's non-closure of unconditional U4."
+      "verdict_rationale": "The presented load-bearing step is an algebraic consequence of the supplied Cl(3) decomposition, and the runner source does perform explicit symbolic Clifford-relation, dimension, Schur, and counterexample checks rather than merely printing constants. The note also honestly limits the result to a conditional single-module selection and explicitly leaves unconditional U4 open; the N-gate boundary is satisfied because the packet exhibits multiple k\u22652 attack routes and does not overclaim closure. However, the only cited authority in the restricted packet carries effective_status decoration, not a retained-grade status, so the audit cannot mark the chain clean under the stated rubric."
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

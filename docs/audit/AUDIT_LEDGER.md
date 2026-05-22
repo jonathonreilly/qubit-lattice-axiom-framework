@@ -820,7 +820,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -10168,13 +10168,13 @@ Claim boundary until fixed: the abstract no-go 'no finite-dim Hilbert space admi
 
 - **Note:** [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the bounded conditional algebraic claim that Cl(3) multiplicity k=1 implies a two-dimensional per-site complex module, while k≥2 remains admissible and leaves unconditional U4 open.
+- **claim_scope:** Audited the narrow conditional algebraic statement that, given the Cl(3) finite-dimensional complex representation decomposition, a single faithful Cl(3) module per site has complex dimension 2 and higher multiplicities are not excluded by the algebraic surface alone.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-018`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** By the cited Cl(3) decomposition, every finite-dimensional complex representation is ρ_+^{n_+} ⊕ ρ_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so the added single-module condition k(x)=1 implies dim_C H_x=2.  _(class `A`)_
-- **chain closes:** True — The conditional claim follows algebraically from the supplied decomposition theorem and the definition k=n_++n_-. The note explicitly does not claim the missing physical selection step from admissible k≥1 to k=1.
-- **rationale:** The bounded conditional statement closes on its own terms as an algebraic consequence of the cited Cl(3) representation decomposition. However, the only cited authority is presented in the restricted packet with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than a retained-grade status, so retained closure cannot propagate under the rubric. The runner performs exact symbolic checks and also constructs k≥2 counterexamples, matching the note's non-closure of unconditional U4.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T124546Z-ec272185-staggered_dirac_substep1-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** By the cited Cl(3) representation decomposition, H_x ≅ ρ_+^{n_+(x)} ⊕ ρ_-^{n_-(x)} with dim_C H_x = 2(n_+(x)+n_-(x)); therefore k(x)=1 implies dim_C H_x=2, while k≥2 remains admissible.  _(class `A`)_
+- **chain closes:** False — The conditional algebraic implication k=1 ⇒ dim_C H_x=2 closes relative to the cited decomposition, but the retained-grade chain does not close in this restricted packet because the sole cited authority is marked as decoration rather than retained-grade. The missing step is a retained-grade upstream authority for the Cl(3) complex representation decomposition used in M1.
+- **rationale:** The presented load-bearing step is an algebraic consequence of the supplied Cl(3) decomposition, and the runner source does perform explicit symbolic Clifford-relation, dimension, Schur, and counterexample checks rather than merely printing constants. The note also honestly limits the result to a conditional single-module selection and explicitly leaves unconditional U4 open; the N-gate boundary is satisfied because the packet exhibits multiple k≥2 attack routes and does not overclaim closure. However, the only cited authority in the restricted packet carries effective_status decoration, not a retained-grade status, so the audit cannot mark the chain clean under the stated rubric.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high

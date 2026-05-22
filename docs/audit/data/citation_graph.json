@@ -19590,10 +19590,6 @@
     },
     {
       "from": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
-      "to": "one_parameter_reduced_shell_law_note"
-    },
-    {
-      "from": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
       "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
     },
     {
@@ -64674,11 +64670,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "one_parameter_reduced_shell_law_note",
         "coarse_grained_exterior_law_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "66a0e227ebe74f3ae1e9a181ad0c3cf3a9008c76c2e53b89e5d2b9f07be42828",
+      "note_hash": "549ff56dd8824e41443adeaaf816e15f8b7ccdc0cd18b8df4af0431e4afa4df7",
       "path": "docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md",
       "runner_path": null,
       "title": "One-Parameter Reduced Shell Law Helpers \u2014 Umbrella Wrapper"
@@ -70878,7 +70873,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81703,7 +81698,7 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9742,
     "leaf_count": 740,
     "node_count": 2483,
     "root_count": 808,

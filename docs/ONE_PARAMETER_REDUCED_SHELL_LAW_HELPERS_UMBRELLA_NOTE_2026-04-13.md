@@ -11,8 +11,7 @@ audit-lane infrastructure for the corresponding helper modules.
 ## Purpose
 
 This wrapper note documents the five frontier helper modules that the
-runner of
-[ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md](ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md)
+runner of `ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md`
 loads via `_frontier_loader.load_frontier`, so the parent note can
 register a one-hop dependency rather than carry the five helpers as
 unattributed runner-internal imports.

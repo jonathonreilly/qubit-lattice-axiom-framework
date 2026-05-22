@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 147 |
+| **retained_no_go** | 148 |
 | **retained_bounded** | 377 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1322 |
+| unaudited | 1321 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 612 |
+| `audited_clean` | 613 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1544 |
+| `unaudited` | 1543 |
 
 | claim_type | count |
 |---|---:|
@@ -488,6 +488,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7636,6 +7637,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The note asserts that for p != 0 and nontrivial r_A,r_B, F_p[J_A ⊕ J_B]=r_A^p r_B^p is never equal to F_p[J_A]+F_p[J_B]=r_A^p+r_B^p, so F_p is a non-additive counterexample compatible with multiplicative factorization.  _(class `A`)_
 - **chain closes:** False — The existential obstruction is plausible, but the stated universal P3 condition is false: r_A^p r_B^p = r_A^p + r_B^p can hold accidentally, e.g. r_A^p=r_B^p=2. The runner checks selected witnesses only and does not establish the note's 'whenever' claim.
 - **rationale:** The algebraic determinant and multiplicative F_p checks are real computations, and there are no external comparator or tuned numerical inputs. However the load-bearing non-additivity statement is over-quantified: the equation xy=x+y has positive nontrivial solutions, so the claimed inequality for every r_A,r_B != 1 is not true. A reduced claim saying F_p is not globally additive because explicit witness pairs have nonzero defect would likely close, but the source note as written does not.
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-scoped no_go that the structural-reframing proposal — admitting W[J] = log|det(D+J)| - log|det D| as the universal QFT/stat-mech cumulant-generating-functional convention (Peskin-Schroeder, Weinberg, Itzykson-Zuber, Goldenfeld, Kardar, Cardy, Glimm-Jaffe, Osterwalder-Schrader) rather than as the output of a Cauchy classifier — does NOT bypass the Route D Pattern-L circularity for P1 of OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE. The admission decomposes into (II.a) the universal combinatorial Bell/Mobius moment-cumulant inversion K[t] = log M[t] on the partition lattice P(n) (genuinely smaller than P1; a single-variable formal-power-series identity with no independence input) plus (II.b) the identification of the framework's physical scalar generator with the canonical cumulant generating function log Z, which is logically equivalent to P1 in convention vocabulary (proven both ways via the Cauchy classifier on (R_+, *) -> (R, +) plus elementary block-determinant algebra). The note adds the cumulant-generating-functional circularity obstruction as a descriptive extension of the Route D Pattern-L enumeration without altering any upstream status; it does NOT claim P1 is false.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-21-obs-principle-row3`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** True — Leaf no_go with deps=[] is purely structural and self-contained. The load-bearing step is the Equivalence Lemma (II.b) <=> P1 in Sec 3.2: (=>) the 3-line derivation under W = log|Z| using (III) block-determinant factorization and (VI) log algebra is verified symbolically on a 4x4 block-diagonal Dirac operator by the runner at exact SymPy precision; (<=) the Cauchy classifier on f:(R_+,*) -> (R,+) applied to r = |Z[J]| gives f(r_A * r_B) = f(r_A) + f(r_B), uniquely fixing f = c log r with c = 1 from the W[0]=0 normalization. The cached runner verifies T1 (3-line derivation), T2-T3 (cross-block 2nd-derivative vanishing for log vs non-vanishing for F_p^p), T4 (Bell/Mobius identity at n=1..4 at exact Fraction precision), T5 (uniqueness of K = log Z from cumulant-generating identity), T6 (F_p counterexample). The note's explicit literature catalogue (Peskin-Schroeder, Weinberg, Itzykson-Zuber, Goldenfeld, Kardar, Cardy, Glimm-Jaffe, Osterwalder-Schrader, Rota, James, Speed) confirms uniform textbook convention adoption WITHOUT prior derivation from a more primitive principle. N1-N8 (Sec 5) PASS: N1 enumerates 6 distinct attack routes (pure Bell/Mobius, textbook-convention, Berezin+determinant, alternative F_p cumulant, scale-normalized log, prior-route inheritance), N2 collapses to one wall (II.b identification), N3 classifies 'standard'/'convention'/'framework'/'by construction' usage, N4 matches Route D, free-cumulant, extensivity, locality witnesses to the same identification residual, N5 explicit route-scoping with NOT 'lattice-wide impossibility', N6 acknowledges 'retained convention-ratification surface' as the legitimate import-retirement forward path, N7 steelman names the convention-as-definition argument and accepts it as forward path, N8 echoes Route D, free-cumulant, extensivity, and locality routes' identical wall shape with no retirement mechanism applied here.
+- **rationale:** Leaf no_go ships audited_clean: (a) the load-bearing equivalence (II.b) <=> P1 is proven in both directions with the explicit Cauchy classifier on (R_+, *) -> (R, +) plus the elementary block-determinant identity, (b) the cached runner verifies the symbolic 3-line derivation, the Bell/Mobius identity at exact Fraction precision, and the F_p counterexample explicitly, (c) N1-N8 are present and pass with the most rigorous enumeration of any of the four routes: six distinct alternative attack routes each closed by retained-authority citation, walls collapse to one (identification (II.b)), 'standard'/'convention'/'by construction' phrases explicitly classified rather than promoted, witnesses Route D, free-cumulant, extensivity, locality each cited as analogy with residual exactly matching, rhetoric scoped 'does not bypass'/'does not close' — NOT 'P1 is false' — and explicitly admits a future controlled convention-ratification surface would convert this into a clean import-retirement path, the steelman ('QFT/stat-mech does not derive log Z, they define it; if the repo ratifies this as a controlled convention, this becomes import-retirement not no-go') is accepted as forward path rather than dismissed, and N8 echoes structurally similar prior walls (Route D, free-cumulant, extensivity, locality) with no retirement mechanism applied. Residual risk: a future retained convention-ratification note on `the physical scalar generator is the connected/cumulant generating functional` would retire this wall via convention/reframe, as the note documents in N7 and notes_for_re_audit_if_any.
 - **auditor confidence:** high
 
 ### `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10`

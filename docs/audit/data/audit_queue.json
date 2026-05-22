@@ -11995,25 +11995,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "cl3_color_automorphism_theorem",
-      "claim_scope": null,
+      "claim_scope": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, commutation with the fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction 8/9; physical SM color identification and EW readout are excluded.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "native_gauge_closure_note",
         "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
       "direct_in_degree": 39,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 29.695,
       "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/verify_cl3_sm_embedding.py",
       "transitive_descendants": 1171

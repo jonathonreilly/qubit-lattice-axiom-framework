@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 14 |
-| unaudited | 1349 |
+| unaudited | 1348 |
+| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -43,14 +44,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
+| `audit_in_progress` | 6 |
 | `audited_clean` | 599 |
 | `audited_conditional` | 81 |
 | `audited_decoration` | 19 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1573 |
+| `unaudited` | 1572 |
 
 | claim_type | count |
 |---|---:|
@@ -103,7 +104,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 17 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 1052 | 31.54 | `unaudited` | unaudited |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1052 | 31.04 | `unaudited` | unaudited |
 | 19 | `cpt_exact_note` | positive_theorem | critical | 1060 | 30.05 | `audited_clean` | **retained** |
-| 20 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1171 | 29.70 | `unaudited` | unaudited |
+| 20 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1171 | 29.70 | `audit_in_progress` | audit_in_progress |
 | 21 | `staggered_dirac_realization_gate_note_2026-05-03` | open_gate | critical | 1052 | 29.54 | `unaudited` | unaudited |
 | 22 | `left_handed_charge_matching_note` | bounded_theorem | critical | 1119 | 28.63 | `unaudited` | unaudited |
 | 23 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 1052 | 28.54 | `unaudited` | unaudited |
@@ -115,6 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `cl3_color_automorphism_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |

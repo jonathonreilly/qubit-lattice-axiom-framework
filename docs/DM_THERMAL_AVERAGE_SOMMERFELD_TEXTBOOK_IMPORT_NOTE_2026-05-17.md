@@ -13,7 +13,7 @@ normalization used by the same-surface thermal continuum integral.
 This wrapper note documents the textbook ingredients consumed by the
 same-surface DM thermal closure layer as named non-derivation imports
 so downstream rows (notably
-[DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md))
+`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md`)
 can register a one-hop dependency rather than carry the textbook
 ingredients as unattributed constants.
 
@@ -115,11 +115,14 @@ slice.
 
 ## Downstream usage
 
-This wrapper is consumed by:
+This wrapper is consumed by (see-also pointers; backticked to break
+cycle-0009 / cycle-0010 / cycle-0011 / cycle-0012 / cycle-0013 in the
+citation graph — the load-bearing direction is downstream-theorem ->
+this textbook import, not the reverse):
 
-- [DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md) — the continuum integral form `<S> = (2/sqrt(pi)) ∫_0^∞ S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^{-t} dt`, the slice `a = x_f / 4 = 25 / 4`, and the moment data `<1/v> = 5/sqrt(pi)`, `<1/v^2> = 25/2`.
-- [DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md) — uses the same thermal-average machinery as a downstream consumer.
-- [DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md) — uses the same Maxwell-Boltzmann normalization.
+- `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_INTEGRAL_REPRESENTATION_THEOREM_NOTE_2026-04-16.md` — the continuum integral form `<S> = (2/sqrt(pi)) ∫_0^∞ S(alpha_eff*sqrt(a)/sqrt(t)) sqrt(t) e^{-t} dt`, the slice `a = x_f / 4 = 25 / 4`, and the moment data `<1/v> = 5/sqrt(pi)`, `<1/v^2> = 25/2`.
+- `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md` — uses the same thermal-average machinery as a downstream consumer.
+- `DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md` — uses the same Maxwell-Boltzmann normalization.
 
 ## Boundary
 

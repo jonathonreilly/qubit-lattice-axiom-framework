@@ -8633,18 +8633,6 @@
       "to": "cl3_color_automorphism_theorem"
     },
     {
-      "from": "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17",
-      "to": "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16"
-    },
-    {
-      "from": "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17",
-      "to": "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17"
-    },
-    {
-      "from": "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17",
-      "to": "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
-    },
-    {
       "from": "dm_wilson_direct_descendant_batch_authority_note_2026-05-03",
       "to": "assumption_derivation_ledger"
     },
@@ -50336,13 +50324,9 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [
-        "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-        "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "43c284f1c8d0aae05d24f4f977cb77afff169d4aa4652a66be6d61cbf77b55d4",
+      "note_hash": "4d34d0b265f8e4cca818d46a67d135722f9ae1be9aef4da93a3382077539638f",
       "path": "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "DM Thermal Average + Sommerfeld Argument Normalization \u2014 Named Non-Derivation Import"
@@ -70878,7 +70862,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81134,6 +81118,7 @@
     "dm_pmns_asymptotic_source_no_go_note_2026-04-20",
     "dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16",
     "dm_pmns_cp_orientation_parity_reduction_note_2026-04-20_note_2026-05-17",
+    "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17",
     "dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19",
     "dm_wilson_direct_descendant_canonical_path_derivation_no_go_note_2026-04-19_note_2026-05-17",
     "dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19_note_2026-05-17",
@@ -81703,10 +81688,10 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9740,
     "leaf_count": 740,
     "node_count": 2483,
-    "root_count": 808,
+    "root_count": 809,
     "runners_with_path": 2048
   }
 }

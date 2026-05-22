@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1340 |
+| unaudited | 1339 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 603 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1564 |
+| `unaudited` | 1563 |
 
 | claim_type | count |
 |---|---:|
@@ -774,6 +774,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -8040,6 +8041,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** None  _(class `C`)_
 - **chain closes:** True — The C3 Fourier formulas themselves are algebraic, but the scoped claim also requires the projected Cl(3) basis profiles to have zero odd modes and a projected non-Cl(3) commutant generator with nonzero odd mode. Those are established by constructing the Cl(3) gamma matrices, eigenspace projectors, commutant basis, projected span, and literal trace profiles from the stated finite-dimensional axiom data, so the load-bearing closure materially depends on first-principles finite computation rather than only an abstract identity over already-provided inputs.
 - **rationale:** The C3 Fourier formulas themselves are algebraic, but the scoped claim also requires the projected Cl(3) basis profiles to have zero odd modes and a projected non-Cl(3) commutant generator with nonzero odd mode. Those are established by constructing the Cl(3) gamma matrices, eigenspace projectors, commutant basis, projected span, and literal trace profiles from the stated finite-dimensional axiom data, so the load-bearing closure materially depends on first-principles finite computation rather than only an abstract identity over already-provided inputs.
+- **auditor confidence:** high
+
+### `pmns_graph_first_cycle_frame_support_note`
+
+- **Note:** [`PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md`](../../docs/PMNS_GRAPH_FIRST_CYCLE_FRAME_SUPPORT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited whether the cited graph-first selector and SU(3) integration notes close the claimed canonical PMNS oriented-cycle frame E12, E23, E31 as support for a future value law.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T162153Z-e45995e0-pmns_graph_first_cycle_f-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Graph-first SU(3) integration canonically fixes the selected-axis fiber/base split so that diagonal projectors transported by the canonical forward cycle give the unique ordered oriented-cycle frame E12, E23, E31.  _(class `A`)_
+- **chain closes:** False — The cited authorities close the axis selector and selected-axis SU(3) commutant structure, but they do not derive the PMNS forward-cycle operator or its canonical identification with the ordered frame E12, E23, E31. The missing step is a bridge theorem from the graph-first SU(3) data to the hard-coded cycle transport/order.
+- **rationale:** The runner verifies exact matrix identities once E12, E23, E31, CYCLE, and P23 are already supplied, so its successful output is algebraic support over chosen matrices rather than a derivation of their canonical graph-first origin. The upstream notes establish the selector minima and selected-axis SU(3) integration, but the restricted packet does not close the additional PMNS cycle-frame bridge. Thus the support theorem is conditional on an unstated derivation of the forward-cycle carrier and ordering.
 - **auditor confidence:** high
 
 ### `pmns_hw1_source_transfer_boundary_note`

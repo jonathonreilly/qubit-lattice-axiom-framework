@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1336 |
+| unaudited | 1335 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 605 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1560 |
+| `unaudited` | 1559 |
 
 | claim_type | count |
 |---|---:|
@@ -747,6 +747,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -4104,6 +4105,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The algebraic scaling follows directly from the retained-bounded canonical Gram relation and the stated Wilson matching relation. The audited scope does not derive the canonical normalization itself, the Wilson action form, or the physical-color bridge.
 - **rationale:** The load-bearing step is a straightforward trace-rescaling identity plus substitution into the Wilson coefficient relation. The cited authority is retained_bounded for the canonical Gell-Mann trace normalization, and this claim stays within that algebraic normalization scope rather than using the authority's deferred physical-color identification. Because the note has zero external comparator checks and reduces to a standard algebraic consequence of the single upstream normalization claim plus stated Wilson matching, it is decoration rather than an independently clean positive theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `g_bare_rigidity_theorem_note`
+
+- **Note:** [`G_BARE_RIGIDITY_THEOREM_NOTE.md`](../../docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Canonical-normalization rigidity over the admitted SU(3) generator embedding in End(V), including trace-Gram invariance under orthogonal basis rotation and failure of scalar dilation to preserve the fixed trace form.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T163338Z-e3d7da2d-g_bare_rigidity_theorem_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the supplied canonical generator embedding, the fixed Hilbert-space trace form gives Tr(T_a T_b)=delta_ab/2, so orthogonal rotations preserve the normalization while scalar dilations T_a -> lambda T_a do not.  _(class `A`)_
+- **chain closes:** False — The narrowed algebraic normalization statement closes over the supplied embedding, but the broader g_bare/physical-holonomy conclusion does not close inside this packet because the holonomy identification A_op=sum_a A^a T_a and U=exp(i A_op a) is explicitly admitted rather than derived.
+- **rationale:** The runner genuinely computes the trace Gram matrix, Casimir behavior, orthogonal-rotation invariance, scalar-dilation failure, and coefficient rescaling on explicit Gell-Mann generators embedded into the stated commutant; these are algebraic class-A checks, not external numerical matches. However, the note itself narrows the retained scope and explicitly admits the physical holonomy identification as upstream context. N3 flags the hidden load in the terms canonical, standard notation, and physical gauge connection, and N6 does not close that bridge within the restricted packet. Therefore the algebraic core is sound only conditionally on the admitted embedding and holonomy bridge.
+- **open / conditional deps cited:**
+  - `G_BARE_RIGIDITY_THEOREM_NOTE.md`
 - **auditor confidence:** high
 
 ### `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19`

@@ -228141,9 +228141,9 @@
       "verdict_rationale": null
     },
     "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": {
-      "audit_date": "2026-05-21T22:31:09.615529+00:00",
+      "audit_date": "2026-05-22T12:47:06.356617+00:00",
       "audit_state_snapshot": {
-        "criticality": "high",
+        "criticality": "critical",
         "dep_claim_scope": {
           "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
           "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite-dimensional abstract Grassmann algebra: Berezin determinant identity for a quadratic chi-bar M chi action and odd-odd exchange antisymmetry, conditional only on the stated anticommutation and Berezin integration rules."
@@ -228160,25 +228160,25 @@
           "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
           "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
         ],
-        "load_bearing_score": 6.17,
+        "load_bearing_score": 15.043,
         "runner_hash": "187444382c824455196466275d1e8c36098d63f81cfc96f57d9576d8fb26699d",
-        "transitive_descendants": 8
+        "transitive_descendants": 1054
       },
       "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-011",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T124644Z-34ddc3b9-staggered_dirac_substep1-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": false,
-      "chain_closure_explanation": "The local algebraic argument closes from the stated inputs, but one cited input is not retained-grade in the packet: the Cl(3) faithful-irrep dim-two authority is marked as decoration rather than retained, retained_no_go, or retained_bounded.",
+      "chain_closure_explanation": "The algebraic comparison itself closes over the quoted inputs, and the runner performs real symbolic checks rather than only printing constants. However, one load-bearing cited authority is marked as decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than a retained-grade status, so retained status cannot propagate through this packet.",
       "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": "Audited the abstract two-candidate Grassmann-vs-bosonic per-site dimension comparison and Berezin determinant readout, conditional on the provided Cl(3) dim-2 and Berezin determinant authorities.",
+      "claim_scope": "Audited the abstract two-candidate Grassmann-vs-bosonic per-site dimensional comparison against a Cl(3) faithful complex-irrep dim-2 readout, plus Berezin determinant compatibility for the Grassmann candidate.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-21T22:31:09.615529+00:00",
+      "claim_type_last_reviewed": "2026-05-22T12:47:06.356617+00:00",
       "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
@@ -228191,16 +228191,16 @@
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
       "load_bearing_score": 15.043,
-      "load_bearing_step": "Among the two explicitly considered one-pair-per-site candidates, bosonic Fock space has countably infinite per-site dimension while Grassmann Fock space has dimension 2, so only the Grassmann candidate matches the cited Cl(3) faithful-irrep dimension 2.",
+      "load_bearing_step": "By the cited Cl(3) faithful complex-irrep theorem dim_C V = 2, while the bosonic per-site Fock space is countably infinite and the Grassmann per-site Fock module has dim_C = 2, so within the two-candidate framing only the Grassmann candidate matches the dimensional readout.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "136ddf67f84afbfcfca350523367614b69d4b03a3bceab2b837cd9444dd49ff5",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after replacing or upgrading the Cl(3) faithful-irrep dim-two dependency with a retained-grade authority, or include the retained parent chain needed to make that dependency retained-grade.",
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to provide a retained-grade Cl(3) faithful-irrep dim-two authority or include the retained upstream complexification-split closure needed to make that dependency retained-grade in this restricted packet.",
       "open_dependency_paths": [
         "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
       ],
@@ -228260,7 +228260,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 24,
         "B": 0,
@@ -228271,7 +228271,7 @@
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem",
       "transitive_descendants": 1054,
-      "verdict_rationale": "The proof is a genuine algebraic comparison: D1-D4 follow from standard Fock dimension counts, Grassmann nilpotency, and the Berezin determinant identity. The runner source performs symbolic checks consistent with that class-A algebraic role and reports PASS=24 FAIL=0. However, the claim depends load-bearingly on the Cl(3) dim-2 cited authority, whose effective status in the packet is decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, not a retained-grade status under the rubric."
+      "verdict_rationale": "The note's substantive work is class-A algebra: finite Grassmann nilpotency gives a two-state per-site module, bosonic oscillator quantization gives an infinite tower, and the Berezin determinant identity gives det(M). The runner source genuinely checks these algebraic facts symbolically and reports PASS=24 FAIL=0. The conditional blocker is not a mathematical failure of the presented bridge, but the restricted packet's cited Cl(3) dim-two authority is not retained-grade under the rubric."
     },
     "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": {
       "audit_date": "2026-05-21T22:33:31.311998+00:00",

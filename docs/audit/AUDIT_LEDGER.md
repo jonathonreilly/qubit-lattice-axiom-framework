@@ -818,7 +818,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_aps_locked_source_action_proposal_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -10138,13 +10138,13 @@ Claim boundary until fixed: the abstract no-go 'no finite-dim Hilbert space admi
 
 - **Note:** [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the abstract two-candidate Grassmann-vs-bosonic per-site dimension comparison and Berezin determinant readout, conditional on the provided Cl(3) dim-2 and Berezin determinant authorities.
+- **claim_scope:** Audited the abstract two-candidate Grassmann-vs-bosonic per-site dimensional comparison against a Cl(3) faithful complex-irrep dim-2 readout, plus Berezin determinant compatibility for the Grassmann candidate.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-staggered_dirac_substep1-011`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Among the two explicitly considered one-pair-per-site candidates, bosonic Fock space has countably infinite per-site dimension while Grassmann Fock space has dimension 2, so only the Grassmann candidate matches the cited Cl(3) faithful-irrep dimension 2.  _(class `A`)_
-- **chain closes:** False — The local algebraic argument closes from the stated inputs, but one cited input is not retained-grade in the packet: the Cl(3) faithful-irrep dim-two authority is marked as decoration rather than retained, retained_no_go, or retained_bounded.
-- **rationale:** The proof is a genuine algebraic comparison: D1-D4 follow from standard Fock dimension counts, Grassmann nilpotency, and the Berezin determinant identity. The runner source performs symbolic checks consistent with that class-A algebraic role and reports PASS=24 FAIL=0. However, the claim depends load-bearingly on the Cl(3) dim-2 cited authority, whose effective status in the packet is decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, not a retained-grade status under the rubric.
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T124644Z-34ddc3b9-staggered_dirac_substep1-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** By the cited Cl(3) faithful complex-irrep theorem dim_C V = 2, while the bosonic per-site Fock space is countably infinite and the Grassmann per-site Fock module has dim_C = 2, so within the two-candidate framing only the Grassmann candidate matches the dimensional readout.  _(class `A`)_
+- **chain closes:** False — The algebraic comparison itself closes over the quoted inputs, and the runner performs real symbolic checks rather than only printing constants. However, one load-bearing cited authority is marked as decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than a retained-grade status, so retained status cannot propagate through this packet.
+- **rationale:** The note's substantive work is class-A algebra: finite Grassmann nilpotency gives a two-state per-site module, bosonic oscillator quantization gives an infinite tower, and the Berezin determinant identity gives det(M). The runner source genuinely checks these algebraic facts symbolically and reports PASS=24 FAIL=0. The conditional blocker is not a mathematical failure of the presented bridge, but the restricted packet's cited Cl(3) dim-two authority is not retained-grade under the rubric.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
 - **auditor confidence:** high

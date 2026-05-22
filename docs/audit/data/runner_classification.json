@@ -15780,6 +15780,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py"
     },
+    "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21": {
+      "assert_count": 2,
+      "counts": {
+        "A": 9,
+        "B": 3,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_p1_bridge_connes_nc_spectral.py"
+    },
     "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21": {
       "assert_count": 1,
       "counts": {
@@ -41850,6 +41862,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_observable_principle_p1_bridge_connes_nc_spectral.py": {
+      "assert_count": 2,
+      "claims": [
+        "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21"
+      ],
+      "counts": {
+        "A": 9,
+        "B": 3,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_observable_principle_p1_bridge_extensivity_primitive.py": {
       "assert_count": 1,
       "claims": [
@@ -53562,14 +53589,14 @@
   "stats": {
     "decoration_candidates": 305,
     "dominant_class_distribution": {
-      "A": 198,
+      "A": 199,
       "B": 263,
       "C": 730,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1919,
-    "runners_with_C": 945,
+    "runners_classified": 1920,
+    "runners_with_C": 946,
     "runners_with_D": 547
   }
 }

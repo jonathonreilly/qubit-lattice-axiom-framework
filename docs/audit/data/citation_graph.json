@@ -19153,6 +19153,82 @@
       "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
     },
     {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "cpt_exact_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
       "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -64017,6 +64093,38 @@
       "runner_path": "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py",
       "title": "Observable Principle \u2014 Klein-Four APBC Orbit Partition Closed-Form Narrow Theorem"
     },
+    "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+        "cpt_exact_note",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_realization_gate_note_2026-05-03"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "91ebcc09addbd6fbdebd088294b3cea8bea68dba1951ba9aaaae51ef1d623358",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_CONNES_NC_SPECTRAL_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_connes_nc_spectral.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Connes NCG Spectral Triple Narrow Note"
+    },
     "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21": {
       "claim_id": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
       "claim_type_author_hint": "no_go",
@@ -81387,7 +81495,7 @@
       "bounded_theorem": 512,
       "decoration": 1,
       "meta": 184,
-      "no_go": 61,
+      "no_go": 62,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 172
@@ -81396,15 +81504,15 @@
       "bounded_theorem": 950,
       "decoration": 1,
       "meta": 184,
-      "no_go": 164,
+      "no_go": 165,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9706,
-    "leaf_count": 742,
-    "node_count": 2474,
+    "edge_count": 9725,
+    "leaf_count": 736,
+    "node_count": 2475,
     "root_count": 807,
-    "runners_with_path": 2041
+    "runners_with_path": 2042
   }
 }

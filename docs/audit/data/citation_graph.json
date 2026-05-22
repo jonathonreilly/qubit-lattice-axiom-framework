@@ -9370,10 +9370,6 @@
     },
     {
       "from": "emergent_lorentz_invariance_note",
-      "to": "planck_scale_lane_status_note_2026-04-23"
-    },
-    {
-      "from": "emergent_lorentz_invariance_note",
       "to": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
     },
     {
@@ -51227,11 +51223,10 @@
         "cpt_exact_note",
         "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
         "parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02",
-        "planck_scale_lane_status_note_2026-04-23",
         "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8d42cacaa81cfc2276bdc8b08076cab15c8234a67ea381c0ec8fd2d7261c7b7c",
+      "note_hash": "89d481c97209538cac4b73b028c2fd48a9373a1d8af52614b5d58bb726b9535d",
       "path": "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
       "runner_path": "scripts/frontier_emergent_lorentz_invariance.py",
       "title": "Emergent Lorentz Invariance from the Cubic Z\u00b3 Lattice (Conditional)"
@@ -70878,7 +70873,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81703,7 +81698,7 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9742,
     "leaf_count": 740,
     "node_count": 2483,
     "root_count": 808,

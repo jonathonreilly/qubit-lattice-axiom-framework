@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 113 |
+| **retained** | 114 |
 | **retained_no_go** | 149 |
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
 | unaudited | 1297 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -50,8 +50,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 620 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 621 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 34 |
 | `audited_failed` | 69 |
@@ -122,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -477,6 +476,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moving_source_cross_family_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `moving_source_retarded_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | claude-opus | C | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
@@ -7554,6 +7554,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The centered quadrupole keeps the centroid essentially pinned but opens a real width/tidal channel, and the width response grows with quadrupole separation.  _(class `C`)_
 - **chain closes:** True — The live probe reproduces the frozen controls and finite quadrupole rows: same-site and neutral controls are zero, the dipole mainly shifts centroid, and the centered quadrupoles give near-zero centroid change with positive width response at a = 1.0 and a = 2.0. The source explicitly excludes full tensor gravity and a general multipole theory.
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
+- **auditor confidence:** high
+
+### `multisite_pauli_group_theorem_note_2026-05-02`
+
+- **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Multi-site Pauli group P_N on N-site Fock space H = ⊗_x C² has order |P_N| = 4^{N+1}, center Z(P_N) = {±I_N, ±i I_N} ≅ Z_4, quotient P_N/Z(P_N) ≅ (Z_2 × Z_2)^N, central extension 1 → Z_4 → P_N → (Z_2 × Z_2)^N → 1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-19-multisite-pauli-xconf`  (claude-opus; independence=fresh_context)
+- **load-bearing step:** Total order = (Z_4 phases) × (4 cosets per site)^N = 4 · 4^N = 4^{N+1}, with per-site H_x ≅ C² (Pauli rep, γ_i ↦ σ_i) imported from the cited per-site uniqueness theorem.  _(class `C`)_
+- **chain closes:** True — Per-site Pauli rep H_x ≅ C² is supplied by retained_bounded dependency axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 (U2). On the N-site tensor product, per-site Z_4 centers collapse to a single global Z_4 since (i I_x) ⊗ I_y... = i I_N (4 phases), and each site contributes 4 cosets mod center, giving |P_N| = 4 · 4^N = 4^{N+1}. Center is computed by Schur applied site-by-site (only scalar multiples of identity commute with all three Paulis); quotient is then Lagrange-fixed. The runner instantiates the framework's per-site Pauli matrices, tensor-products to N-site operators, and BFS-enumerates the multiplicative group, producing orders 16, 64, 256 for N=1,2,3 — structural numbers not present in any input and matching 4^{N+1} exactly.
+- **rationale:** The runner is a first-principles class-(C) compute: it builds the framework's per-site σ_i Pauli rep (carrier of U2 from the retained_bounded dependency), tensors to N-site operators, and BFS-enumerates the multiplicative group. The output orders 16, 64, 256 for N=1,2,3 are structural numbers — not imported from any input — and they exactly match the analytical formula 4^{N+1} derived in the note from tensor-product counting plus per-site Schur on the center. There is no hidden physical identification, no tuned input, no comparator against external data. The note's derivation closes elementarily from the cited authority's U2 rep, and the runner would fail if the order formula were wrong.
 - **auditor confidence:** high
 
 ### `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`

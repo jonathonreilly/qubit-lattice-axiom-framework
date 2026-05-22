@@ -161828,22 +161828,41 @@
       "verdict_rationale": "The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration."
     },
     "multisite_pauli_group_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "cross_confirmation_disagreement",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "audit_date": "2026-05-22T03:42:35.486851+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 10.95,
+        "runner_hash": "bcecab4e6b98faff1c01cc53359ca88c66c43bb6936343786277f57ba0cc123d",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_clean",
+      "auditor": "claude-audit-loop-2026-05-19-multisite-pauli-xconf",
+      "auditor_confidence": "high",
+      "auditor_family": "claude-opus",
+      "auditor_model": "opus-4.7-1m",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Per-site Pauli rep H_x \u2245 C\u00b2 is supplied by retained_bounded dependency axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 (U2). On the N-site tensor product, per-site Z_4 centers collapse to a single global Z_4 since (i I_x) \u2297 I_y... = i I_N (4 phases), and each site contributes 4 cosets mod center, giving |P_N| = 4 \u00b7 4^N = 4^{N+1}. Center is computed by Schur applied site-by-site (only scalar multiples of identity commute with all three Paulis); quotient is then Lagrange-fixed. The runner instantiates the framework's per-site Pauli matrices, tensor-products to N-site operators, and BFS-enumerates the multiplicative group, producing orders 16, 64, 256 for N=1,2,3 \u2014 structural numbers not present in any input and matching 4^{N+1} exactly.",
       "claim_id": "multisite_pauli_group_theorem_note_2026-05-02",
-      "claim_scope": "Multi-site Pauli group P_N = \u27e8\u03c3_{i,x}\u27e9 acting on the N-site Cl(3) Fock space H = \u2297_{x=1}^N C\u00b2 has order |P_N| = 4^{N+1}; center Z(P_N) = {\u00b1I_N, \u00b1i I_N} of order 4 (scalar phases); quotient P_N/Z(P_N) \u2245 (Z_2 \u00d7 Z_2)^N of order 4^N; central extension 1 \u2192 Z_4 \u2192 P_N \u2192 (Z_2 \u00d7 Z_2)^N \u2192 1; element orders divide 4; minimal generating set has 3N involutory elements.",
+      "claim_scope": "Multi-site Pauli group P_N on N-site Fock space H = \u2297_x C\u00b2 has order |P_N| = 4^{N+1}, center Z(P_N) = {\u00b1I_N, \u00b1i I_N} \u2245 Z_4, quotient P_N/Z(P_N) \u2245 (Z_2 \u00d7 Z_2)^N, central extension 1 \u2192 Z_4 \u2192 P_N \u2192 (Z_2 \u00d7 Z_2)^N \u2192 1.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-22T03:13:48.866420+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-22T03:42:35.486851+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -161858,6 +161877,7 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
+        "mode": "terminal_third_pass",
         "second_audit": {
           "audit_date": "2026-05-22T03:31:17.579730+00:00",
           "auditor": "codex-cli-gpt-5.5-20260522-032806-021e808f-multisite_pauli_group_th-001",
@@ -161870,26 +161890,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_decoration"
         },
-        "status": "disagreement"
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-22T03:42:35.486648+00:00",
+          "auditor": "claude-audit-loop-2026-05-19-multisite-pauli-xconf",
+          "auditor_family": "claude-opus",
+          "auditor_model": "opus-4.7-1m",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Multi-site Pauli group P_N on N-site Fock space H = \u2297_x C\u00b2 has order |P_N| = 4^{N+1}, center Z(P_N) = {\u00b1I_N, \u00b1i I_N} \u2245 Z_4, quotient P_N/Z(P_N) \u2245 (Z_2 \u00d7 Z_2)^N, central extension 1 \u2192 Z_4 \u2192 P_N \u2192 (Z_2 \u00d7 Z_2)^N \u2192 1.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained",
       "load_bearing_score": 10.95,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Total order = (Z_4 phases) \u00d7 (4 cosets per site)^N = 4 \u00b7 4^N = 4^{N+1}, with per-site H_x \u2245 C\u00b2 (Pauli rep, \u03b3_i \u21a6 \u03c3_i) imported from the cited per-site uniqueness theorem.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "98531fac922f46470e9b33289a4eb77d0702590e88398791a59ce42868428bee",
       "note_path": "docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -161897,14 +161929,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 6,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/multisite_pauli_group_check.py",
       "title": "Multi-Site Pauli Group P_N Has Order 4^{N+1} on N-Site Cl(3) Fock Space",
       "transitive_descendants": 988,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner is a first-principles class-(C) compute: it builds the framework's per-site \u03c3_i Pauli rep (carrier of U2 from the retained_bounded dependency), tensors to N-site operators, and BFS-enumerates the multiplicative group. The output orders 16, 64, 256 for N=1,2,3 are structural numbers \u2014 not imported from any input \u2014 and they exactly match the analytical formula 4^{N+1} derived in the note from tensor-product counting plus per-site Schur on the center. There is no hidden physical identification, no tuned input, no comparator against external data. The note's derivation closes elementarily from the cited authority's U2 rep, and the runner would fail if the order formula were wrong."
     },
     "n_eff_from_three_generations_theorem_note_2026-04-24": {
       "audit_date": null,

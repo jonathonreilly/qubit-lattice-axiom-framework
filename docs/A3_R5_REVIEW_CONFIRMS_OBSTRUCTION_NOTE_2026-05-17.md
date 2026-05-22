@@ -100,7 +100,7 @@ This review-loop artifact records source-backed dependency classification only. 
 
 ## 8. Cross-references (non-load-bearing)
 
-- `docs/A3_R5_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md` (parent)
+- `docs/A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md` (parent)
 - `docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md` (load-bearing review target)
 - `docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md` (load-bearing HR5.4 + bounded-gate anchor)
 - [PR #1283](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1283), [PR #1284](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1284), [PR #1286](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1286), [PR #1287](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1287) (sister audit-prep)

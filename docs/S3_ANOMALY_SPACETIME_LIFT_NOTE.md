@@ -63,7 +63,7 @@ on which that conclusion rests:
   a bare external admission to the standard ABJ result on current `main`.
 
 Per the recent `F-B` framing-fix on the upstream parent
-([`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md)),
+([`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md)),
 the upstream `d_t = 1` conclusion decomposes as:
 
 - **Derived (Step 3 of the parent):** `d_t` lies in the set of odd

@@ -89,8 +89,8 @@ files and the previous `codex_*` raw files.
 `docs/*REVIEW*` matches found in the repo (selected, 2026-04-25):
 
 ```text
-/Users/jonreilly/Projects/Physics/docs/KOIDE_HOSTILE_REVIEW_GUARD_NOTE_2026-04-24.md
-/Users/jonreilly/Projects/Physics/docs/KOIDE_DIMENSIONLESS_OBJECTION_CLOSURE_NOTE_2026-04-24.md
+/Users/jonreilly/Projects/Physics/docs/KOIDE_REVIEW_GUARD_NOTE_2026-04-24.md
+/Users/jonreilly/Projects/Physics/docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md
 /Users/jonreilly/Projects/Physics/docs/MOONSHOT_HONEST_REVIEW_2026-04-09.md
 /Users/jonreilly/Projects/Physics/docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md
 /Users/jonreilly/Projects/Physics/docs/CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md

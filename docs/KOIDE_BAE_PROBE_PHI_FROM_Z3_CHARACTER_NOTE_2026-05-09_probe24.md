@@ -35,7 +35,7 @@ In this note:
   #784, #787, #788, #789).
 - **"`φ = 2/9` admission"** = the Brannen "magic angle" admission
   newly named by Probe 19
-  ([`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md))
+  ([`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md))
   as a structural admission **separate from BAE**: the angular phase
   `φ = arg(b) = 2/9` (in radians, per Probe 19) on top of which the
   Brannen circulant `λ_k = a + 2|b| cos(φ + 2πk/3)` reproduces the
@@ -511,7 +511,7 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===`.
 
 ## Cross-references
 
-- [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+- [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
   — names `φ = 2/9` as new admission alongside BAE
 - [`KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md`](KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md)
   — `δ = n_eff/d² = 2/9` dimensionless theorem (Step 1 here)

@@ -32,7 +32,7 @@ not promote any downstream theorem.
   `2/d² = 2/9` with the literal radian value `2/9 rad`.
 - **Probe 24 finding**: `P` and the BAE-level "magic angle" admission
   `φ = 2/9 rad` are the same primitive
-  ([`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md)).
+  ([`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md)).
 
 ## Distinct angle (vs Probes 1-26 of the BAE/A1 campaign and the four prior radian-bridge probes)
 
@@ -647,7 +647,7 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===`.
 
 ## Cross-references
 
-- [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md)
+- [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md)
   — identifies `P` with BAE-level magic-angle admission `φ = 2/9 rad`
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   — sharpens `P` to "period-1-rad vs canonical period-2π-rad convention choice"
@@ -697,7 +697,7 @@ Load-bearing for Step 2 (negative dimensional-analysis closure):
 Load-bearing for Step 3-4 (sharpening + falsifiability):
 
 4. **Probe 24 dimensionless `2/9` closure**:
-   `KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`
+   `KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`
    Step 1.
 5. **Brannen circulant eigenvalue formula**:
    `KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md` R3.

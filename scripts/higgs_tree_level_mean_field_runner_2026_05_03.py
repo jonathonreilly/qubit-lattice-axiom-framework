@@ -272,7 +272,7 @@ def t7_step_7_authority_chain():
         "docs/HIGGS_MASS_DERIVED_NOTE.md",
         "docs/HIGGS_FROM_LATTICE_NOTE.md",
         "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
-        "docs/AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md",
+        "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
     ]
     for rel in sister_paths:
         path = repo_root / rel

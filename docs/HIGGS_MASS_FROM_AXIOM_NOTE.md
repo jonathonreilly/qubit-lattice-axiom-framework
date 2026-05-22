@@ -431,7 +431,7 @@ explicitly delegated.
   **same-shape obstruction** with cycle 5 (yt_ew matching M)
   and cycle 9 (gauge-scalar observable bridge) — i.e., as
   a member of the **lattice → continuum / physical matching cluster**
-  identified in `AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md`
+  identified in `AUDIT_BACKLOG_NOTE_2026-05-02.md`
   §2.3. That cluster requires an independent non-perturbative matching
   theorem before it can support a physical-mass closure.
   Closing the cluster closes this gap.
@@ -499,7 +499,7 @@ canonical lattice expression rather than by the old/new symbol).
 - `HIGGS_MASS_DERIVED_NOTE.md` -- downstream bounded Higgs route (~125.1 GeV under stated admissions) via full 3-loop SM RGE; NOT load-bearing on `m_curv_tree`
 - `HIGGS_FROM_LATTICE_NOTE.md` -- lattice spacing convergence (`a → 0`)
 - `HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md` -- 2026-05-02 status-correction packet classifying the lattice-curvature → (m_H/v)² bridge as same-shape lattice-physical matching obstruction (cycles 5, 9, 11)
-- `AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md` -- cluster-level synthesis of the lattice-physical matching obstruction
+- `AUDIT_BACKLOG_NOTE_2026-05-02.md` -- cluster-level synthesis of the lattice-physical matching obstruction
 - `HIGGS_KAPPA_CURV_FROM_VTASTE_SYMMETRIC_POINT_NARROW_THEOREM_NOTE_2026-05-10.md` -- analogous κ_curv naming pattern for the dimensionless symmetric-point curvature ratio (PR #951 v3 mirror)
 - `frontier_higgs_mass_corrected_yt.py` -- corrected-`y_t` Higgs support route
 - `frontier_higgs_buttazzo_calibration.py` -- full-3-loop boundary support

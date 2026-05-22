@@ -143,7 +143,7 @@ physical charged-lepton mass (see "What this does NOT claim" below).
   circulant operator parametrization `H = a I + b C + bbar C^2`).
   Selection of this coefficient by retained dynamics is the open
   question in the 30-probe BAE campaign recorded in
-  `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`,
+  `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`,
   which records that the tested retained-dynamics packet gives the
   weighting that lands at `kappa = 1` rather than `kappa = 2 = BAE`.
 - Does **not** derive `v_0`, `delta`, or any specific charged-lepton
@@ -164,7 +164,7 @@ preserved (not closed):
 1. **`sqrt(m)` vs `m` identification.** Whether eigenvalues of any
    physical positive parent operator on the charged-lepton lane equal
    `sqrt(m_k)` is open (see parent appendix A.4 and
-   `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`).
+   `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`).
 2. **`sqrt(2)` equipartition selection.** The 30-probe campaign records
    F3 weighting (kappa = 1) as canonical in the tested retained
    dynamics; the `sqrt(2)` coefficient (kappa = 2 = BAE) is not
@@ -180,7 +180,7 @@ cosine ansatz for ANY `(v_0, delta)` with `v_0 > 0`.
 
 ## Context References
 
-- `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
+- `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
   — campaign-context citation only (Open derivation gap context for the
   `sqrt(2)` equipartition selection). Not load-bearing on the algebraic
   identities `(T1)`-`(T3)`.
@@ -261,6 +261,6 @@ verifies symbolically (PASS=N/0):
 - `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
   — companion narrow theorem on the block-total Frobenius algebraic
   identities on `Herm_circ(3)`.
-- `KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md`
+- `KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`
   — campaign context for the Open derivation gap on `sqrt(2)`
   equipartition selection.

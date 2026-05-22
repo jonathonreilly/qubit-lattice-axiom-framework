@@ -55,9 +55,9 @@ producing `2π`:
   [`ALPHA_S_4LOOP_RUNNING_DERIVATION_*_NOTE_2026-05-10_4loop.md`](ALPHA_S_4LOOP_RUNNING_DERIVATION_NOTE_2026-05-10_4loop.md)
   if present, or analytically derivable from `b_3 = -7` etc.);
 - **Wilson chain exponent `18 = 16 + 2`** for `m_τ` (retained per
-  [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md));
+  [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md));
 - **`φ_dimensionless = 2/9`** as character-algebra rational (Step 1 of
-  [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md));
+  [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md));
 - **C-iso `ε_witness ~ 3×10⁻⁴`** as the retained engineering tolerance
   on single-plaquette truncation residual.
 
@@ -575,9 +575,9 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===` (achieved: PASS=31).
 
 - [`KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md`](KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md)
   — direct predecessor; this work extends to expanded dimensionless inventory.
-- [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md)
+- [`KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`](KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md)
   — identifies `P` with BAE-level magic-angle admission.
-- [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md)
+- [`KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`](KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md)
   — Wilson chain exponent `18 = 16 + 2` for `m_τ`.
 - [`C_ISO_SU3_NNLO_CLOSURE_BOUNDED_NOTE_2026-05-10_su3nnlo.md`](C_ISO_SU3_NNLO_CLOSURE_BOUNDED_NOTE_2026-05-10_su3nnlo.md)
   — SU(3) NNLO/N5LO Wilson coefficients and C-iso discrepancy series.
@@ -605,9 +605,9 @@ Load-bearing for Step 1 (expanded inventory enumeration):
    `α_LM`, `α_s(v)`, β coefficients, hierarchy theorem);
 3. `C_ISO_SU3_NNLO_CLOSURE_BOUNDED_NOTE_2026-05-10_su3nnlo.md` (NNLO/N5LO
    Wilson and C-iso discrepancy rationals);
-4. `KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_SHARPENED_NOTE_2026-05-09_probe19.md`
+4. `KOIDE_BAE_PROBE_WILSON_CHAIN_MASS_NOTE_2026-05-09_probe19.md`
    (m_τ exponent 18);
-5. `KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24.md`
+5. `KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md`
    (`φ_dim = 2/9`).
 
 Load-bearing for Step 2-4 (negative argument):

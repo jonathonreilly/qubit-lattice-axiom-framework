@@ -76,7 +76,7 @@ do" list) is unchanged.
 
 The tensorized primitive imports `d_t = 1` from
 `ANOMALY_FORCES_TIME_THEOREM`. Per the parent's recent
-[F-B framing-fix](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md),
+[F-B framing-fix](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md),
 `d_t = 1` decomposes into derived (Step 3) and inherited
 (admission (iv)) branches. The tensorized primitive's tensor-extension
 content is admission-independent; only the clock-step kinematic
@@ -130,7 +130,7 @@ Cached output: `logs/runner-cache/frontier_s3_time_tensorized_schur_primitive_do
 
 - [`S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md`](S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md) — parent under repair
 - [`ANOMALY_FORCES_TIME_THEOREM.md`](ANOMALY_FORCES_TIME_THEOREM.md) — upstream parent
-- [`ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_FRAMING_FIX_NOTE_2026-05-17.md) — upstream F-B fix
+- [`ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md`](ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md) — upstream F-B fix
 - [PR #1510](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1510) — sibling `s3_time_*` downstream fix
 - [PR #1515](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1515) — sibling `s3_time_*` downstream fix
 - [PR #1507](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1507) — upstream sibling

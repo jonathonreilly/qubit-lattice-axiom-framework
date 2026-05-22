@@ -28,13 +28,13 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parent.parent
-NOTE = ROOT / "docs" / "CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md"
+NOTE = ROOT / "docs" / "CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE_2026-05-10.md"
 LEAF_NOTE = ROOT / "docs" / "CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md"
 LEAF_RUNNER = ROOT / "scripts" / "complex_action_grown_companion.py"
 IMPORTED_MODULE = ROOT / "scripts" / "gate_b_grown_joint_package.py"
 AUDIT_README = ROOT / "docs" / "audit" / "README.md"
 AUDIT_LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-BAE_TEMPLATE = ROOT / "docs" / "KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md"
+BAE_TEMPLATE = ROOT / "docs" / "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md"
 
 LEAF_ID = "claude_complex_action_grown_companion_note"
 IMPORTED_MODULE_CLAIM_ID = "gate_b_grown_joint_package_note"

@@ -133,7 +133,7 @@ def main() -> int:
 
     # ---- companion + cross-references ----
     check("cites sibling BAE terminal synthesis as template",
-          "KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09" in note)
+          "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09" in note)
     check("cites leaf source note in cross-references",
           "QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md" in note)
     check("cites projector-ray dep source note in cross-references",

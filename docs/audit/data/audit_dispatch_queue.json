@@ -44,99 +44,6 @@
       "state": "live"
     },
     {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the selected-axis finite-cube structural su(3) construction qualify as positive_theorem without promoting hypercharge or EW matching?",
-      "blocked_by_group_ids": [
-        "local_clifford_algebra"
-      ],
-      "claim_id": "graph_first_su3_integration_note",
-      "deps": [],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 6,
-      "group_id": "graph_first_gauge_structure",
-      "group_order": 3,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
-      "queue_order": 2,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_graph_first_su3_integration.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the structural native gauge-closure scope qualify as positive_theorem, or does the row need a structural/physical split first?",
-      "blocked_by_group_ids": [
-        "local_clifford_algebra"
-      ],
-      "claim_id": "native_gauge_closure_note",
-      "deps": [
-        "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 7,
-      "group_id": "graph_first_gauge_structure",
-      "group_order": 3,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
-      "queue_order": 3,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_non_abelian_gauge.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
       "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "unaudited",
@@ -174,7 +81,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_order": 4,
+      "queue_order": 2,
       "ready": false,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
@@ -222,303 +129,18 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 5,
+      "queue_order": 3,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:lsp_projective_direct_luders",
       "runner_path": null,
       "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "cl3_color_automorphism_theorem",
-      "deps": [
-        "native_gauge_closure_note",
-        "ew_current_matching_rule_open_gate_note_2026-05-03"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 8,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-      "queue_order": 6,
-      "ready": false,
-      "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
-      "runner_path": "scripts/verify_cl3_sm_embedding.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the standard fundamental-carrier SU(3) Casimir identity qualify as positive_theorem on retained algebraic inputs?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 9,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md",
-      "queue_order": 7,
-      "ready": false,
-      "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
-      "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the Gell-Mann-carrier d^{abc} algebra qualify as positive_theorem on retained algebraic inputs?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 10,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
-      "queue_order": 8,
-      "ready": false,
-      "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
-      "runner_path": "scripts/su3_dabc_symmetric_check.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the exact SU(N_c) Fierz/channel-count identity qualify as positive_theorem without promoting the EW matching rule?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "ew_current_fierz_channel_decomposition_note_2026-05-01",
-      "deps": [
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 11,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
-      "queue_order": 9,
-      "ready": false,
-      "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
-      "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 12,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_order": 10,
-      "ready": false,
-      "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
-      "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the conjugate-representation cubic-anomaly index identity qualify as positive_theorem without promoting matter-existence or chirality claims?",
-      "blocked_by_group_ids": [
-        "graph_first_gauge_structure"
-      ],
-      "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "su3_dabc_symmetric_theorem_note_2026-05-02"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 13,
-      "group_id": "su3_toolkit_algebra",
-      "group_order": 4,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_order": 11,
-      "ready": false,
-      "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
-      "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
     }
   ],
-  "live_count": 11,
+  "live_count": 3,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 3,
+  "ready_count": 1,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "audited_clean",
@@ -685,9 +307,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -724,6 +346,360 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
       "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "retained",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the selected-axis finite-cube structural su(3) construction qualify as positive_theorem without promoting hypercharge or EW matching?",
+      "blocked_by_group_ids": [
+        "local_clifford_algebra"
+      ],
+      "claim_id": "graph_first_su3_integration_note",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 6,
+      "group_id": "graph_first_gauge_structure",
+      "group_order": 3,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
+      "runner_path": "scripts/frontier_graph_first_su3_integration.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the structural native gauge-closure scope qualify as positive_theorem, or does the row need a structural/physical split first?",
+      "blocked_by_group_ids": [
+        "local_clifford_algebra"
+      ],
+      "claim_id": "native_gauge_closure_note",
+      "deps": [
+        "graph_first_selector_derivation_note",
+        "graph_first_su3_integration_note"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 7,
+      "group_id": "graph_first_gauge_structure",
+      "group_order": 3,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+      "runner_path": "scripts/frontier_non_abelian_gauge.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "cl3_color_automorphism_theorem",
+      "deps": [
+        "native_gauge_closure_note",
+        "ew_current_matching_rule_open_gate_note_2026-05-03"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 8,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
+      "runner_path": "scripts/verify_cl3_sm_embedding.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the standard fundamental-carrier SU(3) Casimir identity qualify as positive_theorem on retained algebraic inputs?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
+      "deps": [
+        "cl3_color_automorphism_theorem"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 9,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md",
+      "runner_path": "scripts/su3_casimir_fundamental_check.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the Gell-Mann-carrier d^{abc} algebra qualify as positive_theorem on retained algebraic inputs?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
+      "deps": [
+        "cl3_color_automorphism_theorem"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 10,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
+      "runner_path": "scripts/su3_dabc_symmetric_check.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the exact SU(N_c) Fierz/channel-count identity qualify as positive_theorem without promoting the EW matching rule?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "ew_current_fierz_channel_decomposition_note_2026-05-01",
+      "deps": [
+        "native_gauge_closure_note",
+        "graph_first_su3_integration_note"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 11,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
+      "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
+      "deps": [
+        "ew_current_fierz_channel_decomposition_note_2026-05-01"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 12,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the conjugate-representation cubic-anomaly index identity qualify as positive_theorem without promoting matter-existence or chirality claims?",
+      "blocked_by_group_ids": [
+        "graph_first_gauge_structure"
+      ],
+      "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "su3_dabc_symmetric_theorem_note_2026-05-02"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 13,
+      "group_id": "su3_toolkit_algebra",
+      "group_order": 4,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
       "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"

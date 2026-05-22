@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 1024,
-    "decoration": 31,
-    "meta": 228,
+    "decoration": 20,
+    "meta": 227,
     "no_go": 237,
-    "open_gate": 113,
-    "positive_theorem": 737
+    "open_gate": 112,
+    "positive_theorem": 750
   },
   "cycle_examples": [
     [
@@ -40,14 +40,12 @@
   ],
   "cycles_detected": 292,
   "effective_status_counts": {
-    "audited_conditional": 86,
+    "audited_conditional": 81,
     "audited_failed": 25,
     "audited_numerical_match": 9,
     "audited_renaming": 15,
-    "decoration_under_cl3_color_automorphism_theorem": 7,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 3,
     "decoration_under_cpt_exact_note": 4,
-    "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 1,
@@ -57,18 +55,16 @@
     "decoration_under_moving_source_retarded_portability_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_wide_lattice_h2t_distance_law_note": 1,
-    "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 225,
-    "open_gate": 15,
+    "meta": 224,
+    "open_gate": 14,
     "retained": 116,
-    "retained_bounded": 371,
-    "retained_no_go": 148,
-    "retained_pending_chain": 12,
-    "unaudited": 1323
+    "retained_bounded": 360,
+    "retained_no_go": 146,
+    "retained_pending_chain": 11,
+    "unaudited": 1353
   },
-  "retained_pending_chain_count": 12,
+  "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [
-    "alpha_s_derived_narrow_theorem_note_2026-05-10",
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",

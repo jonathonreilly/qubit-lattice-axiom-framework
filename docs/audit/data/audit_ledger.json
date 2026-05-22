@@ -88424,24 +88424,41 @@
       "verdict_rationale": null
     },
     "g_bare_constraint_vs_convention_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T16:00:09.716801+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 12.182,
+        "runner_hash": "7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7",
+        "transitive_descendants": 1161
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T155948Z-8cc07a7d-g_bare_constraint_vs_con-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic substitution closes, and the cited retained_bounded authority supplies the canonical SU(3) trace normalization and N_c=3 within its bounded algebraic scope. The restricted packet does not close the Wilson plaquette action/matching premise as a retained dependency; the runner itself flags that Wilson action form remains a convention-layer input.",
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": null,
+      "claim_scope": "Audited only the local algebraic result that, assuming canonical Tr(T_a T_b)=delta_ab/2 normalization, Wilson matching beta=2 N_c/g_bare^2, N_c=3, and beta=6, the unique compatible value is g_bare=1 relative to that normalization.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T16:00:09.716801+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -88449,20 +88466,22 @@
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 12.182,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "At N_c = 3 with canonical beta = 2 N_c = 6, g_bare^2 = 2 N_c / beta = 6/6 = 1, so g_bare = 1.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "ea9dc4515b3d707874a7ca77bc64f7f215d45511baca83a962642dc931e6e3da",
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained-grade one-hop authority for the Wilson plaquette action/matching premise, or narrow the claim title/status to an explicitly conditional algebraic corollary of CN plus WM plus beta=6.",
+      "open_dependency_paths": [
+        "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md"
+      ],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -88671,20 +88690,20 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.976865+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 51,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 55
       },
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "title": "g_bare Constraint vs Convention Disambiguation Theorem",
       "transitive_descendants": 1161,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is class A algebra over fixed inputs, not a first-principles derivation. The one-hop cited authority is retained_bounded and adequate for the canonical normalization used in the narrowed local claim, but the conclusion also imports the Wilson plaquette form and matching beta=2 N_c/g^2/beta=6 surface, which is explicitly treated as a bounded convention-layer input rather than closed by the cited authority. Therefore the local arithmetic is correct but the derivation does not close from the restricted retained dependency alone."
     },
     "g_bare_derivation_note": {
       "audit_date": null,

@@ -17,8 +17,8 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 486 |
-| critical | `audited_conditional` | 15 |
+| critical | `unaudited` | 485 |
+| critical | `audited_conditional` | 16 |
 | critical | `audited_numerical_match` | 6 |
 | critical | `audited_renaming` | 2 |
 
@@ -513,7 +513,7 @@ publication tables phrase it.
 | critical | `yt_color_projection_correction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_constructive_uv_bridge_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_eft_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `yt_ew_color_projection_theorem` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `yt_ew_color_projection_theorem` | `audited_conditional` | `audited_conditional` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `yt_ew_delta_r_retention_analysis_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |
 | critical | `yt_ew_m_residual_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `yt_exact_coarse_grained_bridge_operator_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

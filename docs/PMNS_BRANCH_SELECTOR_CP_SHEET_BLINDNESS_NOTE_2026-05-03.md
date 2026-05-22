@@ -341,8 +341,8 @@ verifies:
 ## Cross-references
 
 - `ETA_COSMOLOGY_DERIVATION_NOTE_2026-05-02.md`
-  (cycle 09 parent named in prior-cycle materials; not present as a
-  current-main source dependency).
+  (cycle 09 parent named in prior-cycle materials; closed PR #411,
+  archived under `archive_unlanded/eta-cosmology-derivation-stretch-attempt-2026-05-02/`).
 - [`EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md`](EPSILON1_FROM_CP_CHAIN_NOTE_2026-05-03.md)
   (cycle 12; this cycle inherits cp1/cp2 = -√3).
 - [`ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md`](ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md)

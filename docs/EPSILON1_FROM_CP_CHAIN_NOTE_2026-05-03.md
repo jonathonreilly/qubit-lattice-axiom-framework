@@ -335,8 +335,9 @@ support-grade.
   formula structure.
 - (Obstruction context) `PMNS_SELECTOR_THREE_IDENTITY_SUPPORT_NOTE_2026-04-21`
   (support, not retained).
-- (Cycle 09 parent) `ETA_COSMOLOGY_DERIVATION_NOTE_2026-05-02`
-  (sharpens its Obstruction 1a).
+- (Cycle 09 parent) `ETA_COSMOLOGY_DERIVATION_NOTE_2026-05-02.md`
+  (closed PR #411, archived under `archive_unlanded/eta-cosmology-derivation-stretch-attempt-2026-05-02/`; this PR
+  sharpens its Obstruction 1a).
 - (Leptogenesis chain)
   `DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15`,
   `DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16`.
@@ -381,8 +382,8 @@ verifies:
 ## Cross-references
 
 - `ETA_COSMOLOGY_DERIVATION_NOTE_2026-05-02.md` —
-  historical planned cycle 09 parent pointer; the source file is not
-  present on current `main`. Obstruction 1a is sharpened by this PR.
+  historical cycle 09 parent pointer (closed PR #411, archived under
+  `archive_unlanded/eta-cosmology-derivation-stretch-attempt-2026-05-02/`). Obstruction 1a is sharpened by this PR.
 - [`CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md`](CKM_CP_PHASE_STRUCTURAL_IDENTITY_THEOREM_NOTE_2026-04-24.md) —
   retained CKM CP-phase chain (Path A).
 - [`SM_REP_DERIVED_MAJORANA_NULL_SPACE_THEOREM_NOTE_2026-05-02.md`](SM_REP_DERIVED_MAJORANA_NULL_SPACE_THEOREM_NOTE_2026-05-02.md) —

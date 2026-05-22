@@ -386,3 +386,55 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   proofs in sections T1-T4 above derive from the runner's source/
   propagation/readout maps alone and do not consume any input from the
   parent comparison surface)
+
+## 2026-05-19 audit-conditional repair
+
+**Scope narrowing (audited_conditional repair campaign 2026-05-19).**
+The audited-conditional repair survey for this row found that G1 and
+G2 are genuine class-A algebraic identities (empty-sum cancellation
+and linearity + deterministic-anchor cancellation, respectively),
+runner-verified at `ZERO_TOL = 1e-12`, and depend only on the
+source-to-field map's linearity in charges plus deterministic
+nearest-node assignment. They are retained as exact bounded-theorem
+identities at finite source strength on the second grown-family
+slice.
+
+G3 and G4 are explicitly **conditional** on two pieces of open work
+inherited from the audit verdict's repair sub-target:
+
+1. **Regular-denominator condition.** The G3/G4 leading-order
+   derivation expands `z_centroid(amps) = num / den` in `eps` around
+   the zero-source amplitudes, which requires `den = sum_{d in det}
+   |amps_0[d]|^2` to be bounded away from zero row-wise on the
+   second grown-family slice. The note assumes this regularity
+   implicitly when writing `z_centroid(amps_pm) = z_free pm eps *
+   dz_+ + O(eps^2)`; without a row-wise lower bound on `den`, the
+   Taylor expansion of the ratio does not produce the displayed
+   numerator forms.
+2. **Nonzero-first-order plus-source response.** The unit-slope G4
+   conclusion `log_2(R(double)/R(plus)) = 1 + O(eps)` requires
+   `dz_+ != 0` row-wise — if `dz_+` vanishes for any row, the ratio
+   `R(double)/R(plus) = (2 eps dz_+ + O(eps^2)) / (eps dz_+ +
+   O(eps^2))` is no longer well-controlled, and the leading-order
+   slope-2 identity collapses. The audit verdict's repair sub-target
+   ("prove or certify row-wise lower bounds on detector-layer
+   intensity `R(plus)` and on the first-order plus-source response
+   `dz_+` for the second grown family") is the explicit open work
+   that would discharge this conditionality.
+
+Until both row-wise lower bounds are certified, **G3 and G4 must be
+cited as audited-conditional**, not as unconditional bounded
+theorems. The cross-family corollary inherits the same
+conditionality whenever it is invoked for G3/G4 (i.e. the cross-
+family unit-slope claim is conditional on the same regular-
+denominator + nonzero-first-order-response bounds holding in the
+target family `F'`).
+
+The G1 and G2 retained scope is unaffected by this conditionality
+because their proofs are purely algebraic at finite source strength
+and never invoke a Taylor expansion in `eps`.
+
+**Source-only repair.** This block records the audit verdict's
+narrowing on this note's claim surface; it does not hand-author audit
+verdicts, does not promote any other note, and does not merge.
+Generated audit data is pipeline-owned after landing.

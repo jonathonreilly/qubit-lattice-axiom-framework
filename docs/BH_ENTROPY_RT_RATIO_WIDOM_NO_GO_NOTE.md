@@ -55,6 +55,129 @@ lane in `BH_ENTROPY_DERIVED_NOTE.md` is now relegated to a downstream
 observational citation: it cites this no-go as the reason it cannot
 promote, but this no-go does not import its carrier from there.
 
+## 2026-05-19 audit-conditional repair
+
+A follow-up audit pass on this `audited_conditional` row of the
+publication surface (post-2026-05-18 campaign) confirmed the prior
+2026-05-18 narrowing direction but identified two specific load-bearing
+claims that are **not** discharged by the in-packet material to the
+standard required for retained-grade closure. They are therefore moved
+to **open admissions** here; the retained scope of the note is
+correspondingly tightened.
+
+### Open admission OA-1: asymptotic all-L no-go
+
+The leading no-go statement of the form
+
+```
+        lim   r(L)   =   c_Widom   !=   1/4
+       L->inf
+```
+
+(equations preceding (B-4.4) and the "Conclusion of the no-go"
+paragraph) is **promoted to an open admission**. The 2D diamond-integral
+evaluation `c_Widom(2D) = 1/6` is exact and is retained; what is
+admitted-open is the **all-L limit** identification of `r(L)` with
+`c_Widom`. The classical Widom-Gioev-Klich theorem (W-1) is cited in
+the form rigorously proved by Helling-Leschke-Spitzer 2011 on `R^d` and
+its uniform extension to the lattice setup (C-1)-(C-6) is *asserted*
+in bridge step (B-2). A fully audited lattice specialization with
+uniform error bounds against the OBC straight-cut geometry (C-5) is
+**not** carried in this packet. The asymptotic statement therefore
+ceases to be load-bearing for retained-grade closure; it is reverted
+to the status of an audited-conditional conjecture, conditional on a
+future packet that supplies the missing uniform OBC-lattice version of
+(W-1) with explicit subleading bounds.
+
+### Open admission OA-2: C-7 / B-3 threshold bridge
+
+The intrinsic boundary-layer transfer-rank statement
+
+```
+       chi_eff(L)  =  L^{d-1} (1 + o(1)),       lim  chi_eff(L) / L^{d-1} = 1
+                                                L->inf
+```
+
+i.e., bridge step (B-3), is **promoted to an open admission**.
+Section "Self-contained carrier definition" (C-7) defines `chi_eff(L)`
+by the *non-standard* singular-value threshold
+`sigma_k / sigma_max > 10^{-6}`, and (B-3) argues by appeal to
+"standard free-fermion area-law scaling" plus Widom log-violation that
+the boundary-layer cross-correlation matrix saturates rank
+`L^{d-1}`. The numerical observation `chi_eff(64) = 64` (2D, OBC,
+half-filling, threshold `10^{-6}`) is retained as **finite-`L`
+evidence**, but the all-`L` saturation argument is not closed at
+retained grade inside this packet: a proof would require either (i)
+diagonalization of the transverse-mode boundary-layer transfer operator
+and explicit lower bounds on its `L^{d-1}` significant singular values
+above the `10^{-6}` cutoff, or (ii) an independent reduction to a known
+exact-rank statement for the half-filled NN-hopping ground state's
+boundary-layer correlator. Neither is supplied here. The threshold-
+bridge step is therefore admitted-open; the **finite-`L` numerical
+saturation `chi_eff(L) = L` for `L <= 64`** is retained as evidence,
+not as theorem.
+
+### Retained scope (post-2026-05-19)
+
+After the two admissions above, the **retained** load-bearing content
+of this note is restricted to:
+
+- **R1.** The exact 2D diamond-integral evaluation
+  `c_Widom(2D, diamond, straight cut) = 1/6` (Section "What is proved",
+  Step 2), as a direct evaluation of the cited Widom-Gioev-Klich
+  coefficient integral on the `|k_x| + |k_y| = pi` Fermi surface with
+  the straight-cut unit normal `n_x = (1, 0)`. This step uses only
+  Euclidean geometry of the diamond and the explicit formula
+  `(1/(12 (2 pi)^{d-1}))` from (W-1) and is independent of
+  admissions OA-1, OA-2.
+- **R2.** The **finite-`L` numerical no-go** through `L = 64`
+  (`L = 8, 12, ..., 64`, OBC, half filling, straight cut, threshold
+  `10^{-6}`): `r(64) = 0.2112`, the two-parameter fit
+  `r(L) = c_inf + a / ln L` over `L >= 32` gives `c_inf = 0.1601`
+  (3.94% from `1/6`, 35.96% from `1/4`); extended `L <= 96` probe
+  gives `c_inf = 0.163` (2.1% from `1/6`, 34.7% from `1/4`). This is
+  finite-`L` evidence inconsistent with the `1/4` value within the
+  stated lattice range, and is retained as a bounded numerical no-go
+  on `L <= 96`.
+
+The retained statement reads:
+
+> On the OBC half-filled NN-hopping square lattice (C-1)-(C-8) with
+> threshold `10^{-6}`, the dimensionless RT ratio `r(L)` is bounded
+> through `L = 96` by `r(L) <= 0.224`, decreases monotonically for
+> `L >= 28`, and a two-parameter Widom-form fit on `L >= 48` gives
+> `c_inf = 0.163` (2.1% from the 2D diamond-integral value `1/6` and
+> 34.7% from `1/4`). The exact 2D diamond-integral Widom coefficient
+> is `c_Widom(2D, diamond, straight cut) = 1/6` by direct evaluation
+> of the cited Widom-Gioev-Klich integral.
+
+### No-go discipline notes
+
+This narrowing is a **strict shrinkage of the no-go scope**, not a
+broadening, in conformance with the N1-N8 no-go discipline:
+
+- the asymptotic claim `lim_L r(L) != 1/4` is **moved out** of the
+  retained no-go and into an open admission (OA-1) — the no-go is
+  **less ambitious**, not more
+- the C-7 / B-3 threshold-bridge step is **moved out** of the retained
+  no-go and into an open admission (OA-2) — the no-go's reach is
+  **smaller**, not larger
+- the only retained claims (R1, R2) are weaker than the prior
+  asymptotic statement: R1 is an exact evaluation of a classical
+  integral, R2 is a finite-`L` numerical bound through `L = 96`
+- no new asymptotic conclusion, no new universal reach, and no new
+  class of carriers is added; the carrier class (C-1)-(C-8) is left
+  intact and the open-admissions OA-1, OA-2 are explicitly named
+  conditional inputs
+
+Consequently, every prior consumer of this note (the bounded BH-entropy
+companion `BH_ENTROPY_DERIVED_NOTE.md` chief among them) inherits a
+**narrower** obstacle than before, not a broader one: the narrowed no-go
+forbids the `1/4` value only on `L <= 96` in the OBC half-filled NN-
+hopping carrier and only at the level of the diamond-integral Widom
+coefficient `1/6`, leaving the all-`L` and threshold-bridge questions
+explicitly open for future packets to close.
+
 ## Self-contained carrier definition
 
 Independent of any other note in the repo, define the carrier as follows.

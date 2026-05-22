@@ -131,3 +131,75 @@ That is the sharpest honest state of the retained source/transfer attack.
 ```bash
 python3 scripts/frontier_pmns_hw1_source_transfer_boundary.py
 ```
+
+## 2026-05-19 audit-conditional repair
+
+**Retained scope narrowed to the bounded interface theorem.**
+
+This note is retained as a `bounded_theorem` about a single, narrow interface
+identity:
+
+> **Bounded interface theorem (retained).** Given supplied sector operators
+> `S_act, S_pass` carrying the retained active/passive lepton 3 x 3 supports,
+> the Schur-complement effective block on the retained support equals the
+> response-column reconstruction of that block. Equivalently, on the supplied
+> sector operators, Lane A (response-column inversion) and Lane B
+> (Schur-complement) agree at machine precision on
+> `(D_0^trip, D_-^trip, H_nu, H_e, m_nu, m_e, |PMNS|, branch, sheet)`.
+> This is the "Schur = response-column" identity, verified by Part 4 of
+> `scripts/frontier_pmns_hw1_source_transfer_boundary.py` (9 checks).
+
+That equality is a structural fact about Schur complements vs.
+`(I - lam * delta)^{-1}` column inversion on the retained support. It is the
+only claim retained at `bounded_theorem` strength by this note.
+
+**Explicit admissions (audited_conditional).** The following are admitted
+inputs to the bounded interface theorem and are **not** derived here from the
+sole-axiom bank (`Cl(3)` on `Z^3`):
+
+1. **Fixture-active operators admitted.** The active sector operator
+   `S_act` (and equivalently its response columns `(c_act_i)` at probe weight
+   `lam_act`, and the active block `delta_act` that the columns invert to) is
+   supplied as a fixture. Its existence and value are not derived from the
+   sole axiom in this note.
+2. **Fixture-passive operators admitted.** The passive sector operator
+   `S_pass` (and equivalently its response columns `(c_pass_i)` at probe
+   weight `lam_pass`, and the passive block `delta_pass`) is supplied as a
+   fixture, with the same admission status.
+3. **Tau classifier admitted on the supplied columns.** The tau bit that
+   labels which retained slot is active vs. passive is computed by a finite
+   classifier on the response-column moments of the supplied fixtures; it is
+   shared between Lane A and Lane B and is not re-derived from the sole
+   axiom.
+4. **Probe-weight conventions admitted.** The probe weights `lam_act` and
+   `lam_pass` and the column convention
+   `c_i = (I - lam * delta)^{-1} e_i` are conventions imported from the
+   supplied pack, not derived here.
+
+**What is explicitly NOT retained.** The following claims are removed from
+the retained surface of this note and are now positioned as
+audited-conditional / frontier-only:
+
+- any "retained source law" that would derive `S_act, S_pass`,
+  `(c_act_i), (c_pass_i)`, or `(delta_act, delta_pass)` from `Cl(3)` on
+  `Z^3` alone;
+- any retained claim that the `hw=1` source/transfer pack itself is
+  axiom-first;
+- any retained promotion of the full PMNS lane (`H_nu, H_e, m_nu, m_e,
+  |PMNS|`, branch, sheet) to `bounded_theorem` strength on the sole-axiom
+  bank. Those downstream values are retained only **conditional on the
+  supplied fixtures above**, and the conditional path is exactly the bounded
+  interface theorem.
+
+**Effect on prior text.** Sections "Bottom line", "Pack-to-retained-PMNS
+bridge theorem", "Exact boundary", and "Consequence" above are retained as
+written, but are to be read as statements **about the bounded interface
+theorem and its admitted fixtures**: each "fixes" / "reconstructs" /
+"closes" clause is conditional on the four admissions in this repair block.
+No claim above this block is promoted past `bounded_theorem` strength on the
+retained surface by this note.
+
+No hand-authored audit verdict or repo-wide authority surface change is
+made by this repair. Promotion past `bounded_theorem` remains gated on
+a separate, sole-axiom derivation of the source/transfer pack; generated
+audit data is pipeline-owned after landing.

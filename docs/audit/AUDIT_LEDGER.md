@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 118 |
 | **retained_no_go** | 147 |
-| **retained_bounded** | 363 |
+| **retained_bounded** | 364 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
 | unaudited | 1338 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 603 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 604 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 69 |
@@ -118,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -525,6 +523,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `pmns_commutant_eigenoperator_selector_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_channel_value_law_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8043,6 +8042,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** None  _(class `C`)_
 - **chain closes:** True — The C3 Fourier formulas themselves are algebraic, but the scoped claim also requires the projected Cl(3) basis profiles to have zero odd modes and a projected non-Cl(3) commutant generator with nonzero odd mode. Those are established by constructing the Cl(3) gamma matrices, eigenspace projectors, commutant basis, projected span, and literal trace profiles from the stated finite-dimensional axiom data, so the load-bearing closure materially depends on first-principles finite computation rather than only an abstract identity over already-provided inputs.
 - **rationale:** The C3 Fourier formulas themselves are algebraic, but the scoped claim also requires the projected Cl(3) basis profiles to have zero odd modes and a projected non-Cl(3) commutant generator with nonzero odd mode. Those are established by constructing the Cl(3) gamma matrices, eigenspace projectors, commutant basis, projected span, and literal trace profiles from the stated finite-dimensional axiom data, so the load-bearing closure materially depends on first-principles finite computation rather than only an abstract identity over already-provided inputs.
+- **auditor confidence:** high
+
+### `pmns_graph_axis_to_active_lane_bridge_note`
+
+- **Note:** [`PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md`](../../docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with the corresponding permutation action on Herm(V_1), especially P_23 for selected axis e_1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T162528Z-96b0297d-pmns_graph_axis_to_activ-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The permutation unitary T_tau_k realizing the residual Z_2 stabilizer on the selected cube axis restricts on V_1 to the same permutation matrix P_tau_k, so Z_2-invariance of H is exactly P_tau_k H P_tau_k = H, in particular P_23 H P_23 = H for k=1.  _(class `A`)_
+- **chain closes:** True — The source note derives the bridge by explicit tensor-factor permutation unitaries on C^8 and their restriction to the orthonormal hw=1 carrier. Given the retained selector and hw=1 carrier inputs, the claimed P_23 invariance law follows as an algebraic identity.
+- **rationale:** The load-bearing step is a direct finite-dimensional identity: T_sigma permutes the single-bit-flip basis vectors X_mu, and its V_1 block is exactly the corresponding 3 by 3 permutation matrix. The runner source genuinely constructs the shifts, basis vectors, factor-permutation matrices, restrictions, and invariant Hermitian projections; it does not merely print constants or import a contested premise. The cited authorities in the packet are marked retained, and the source remains within the bounded bridge scope rather than claiming active-sector assignment or numerical PMNS values.
 - **auditor confidence:** high
 
 ### `pmns_graph_first_cycle_frame_support_note`

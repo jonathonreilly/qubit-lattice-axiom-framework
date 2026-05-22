@@ -186062,24 +186062,49 @@
       "verdict_rationale": null
     },
     "pmns_graph_axis_to_active_lane_bridge_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T16:25:49.081272+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 10.544,
+        "runner_hash": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
+        "transitive_descendants": 1055
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162528Z-96b0297d-pmns_graph_axis_to_activ-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note derives the bridge by explicit tensor-factor permutation unitaries on C^8 and their restriction to the orthonormal hw=1 carrier. Given the retained selector and hw=1 carrier inputs, the claimed P_23 invariance law follows as an algebraic identity.",
       "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
-      "claim_scope": "Audited the finite-dimensional bridge identifying the graph-side residual axis stabilizer tau_k with its restriction P_tau_k on V_1 = span(X_1,X_2,X_3), yielding P_23 H P_23 = H after relabeling the selected axis to e_1.",
+      "claim_scope": "Audited the finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with the corresponding permutation action on Herm(V_1), especially P_23 for selected axis e_1.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T16:25:06.425730+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-22T16:25:49.081272+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -186094,8 +186119,19 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-22T16:25:49.081272+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T162528Z-96b0297d-pmns_graph_axis_to_activ-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with the corresponding permutation action on Herm(V_1), especially P_23 for selected axis e_1.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
@@ -186104,19 +186140,19 @@
         "graph_first_selector_derivation_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 10.544,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The permutation unitary T_tau_k realizing the residual Z_2 stabilizer on the selected cube axis restricts on V_1 to the same permutation matrix P_tau_k, so Z_2-invariance of H is exactly P_tau_k H P_tau_k = H, in particular P_23 H P_23 = H for k=1.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8553fe0b6ba602ecda8a067e1aea727a3cf622a8d67374fd6dedc7ec7f4dce75",
       "note_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the boundary between this bridge and any downstream claim that identifies V_1 with a physical active sector; that identification is explicitly outside this note.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -186204,18 +186240,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 87,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 87
       },
       "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
       "title": "PMNS Graph-Axis -> Active Hermitian Lane Bridge",
       "transitive_descendants": 1055,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a direct finite-dimensional identity: T_sigma permutes the single-bit-flip basis vectors X_mu, and its V_1 block is exactly the corresponding 3 by 3 permutation matrix. The runner source genuinely constructs the shifts, basis vectors, factor-permutation matrices, restrictions, and invariant Hermitian projections; it does not merely print constants or import a contested premise. The cited authorities in the packet are marked retained, and the source remains within the bounded bridge scope rather than claiming active-sector assignment or numerical PMNS values."
     },
     "pmns_graph_commutant_cycle_value_boundary_note": {
       "audit_date": null,

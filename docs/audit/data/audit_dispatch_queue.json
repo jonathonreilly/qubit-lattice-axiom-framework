@@ -56,53 +56,6 @@
         "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
         "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
       ],
-      "audit_question": "Does the exact graph-first selector result qualify as positive_theorem while leaving downstream abelian interpretation open?",
-      "blocked_by_group_ids": [
-        "local_clifford_algebra"
-      ],
-      "claim_id": "graph_first_selector_derivation_note",
-      "deps": [
-        "graph_first_su3_integration_note"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_clean",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "retained_bounded",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 5,
-      "group_id": "graph_first_gauge_structure",
-      "group_order": 3,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
-      "queue_order": 2,
-      "ready": true,
-      "ready_blocker": null,
-      "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
-      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "live"
-    },
-    {
-      "actual_audit_status": "audited_clean",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "retained_bounded",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
-      ],
       "audit_question": "Does the selected-axis finite-cube structural su(3) construction qualify as positive_theorem without promoting hypercharge or EW matching?",
       "blocked_by_group_ids": [
         "local_clifford_algebra"
@@ -127,7 +80,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
-      "queue_order": 3,
+      "queue_order": 2,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
@@ -175,7 +128,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
-      "queue_order": 4,
+      "queue_order": 3,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_non_abelian_gauge.py",
@@ -221,7 +174,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_order": 5,
+      "queue_order": 4,
       "ready": false,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
@@ -269,7 +222,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 6,
+      "queue_order": 5,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:lsp_projective_direct_luders",
       "runner_path": null,
@@ -317,7 +270,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md",
-      "queue_order": 7,
+      "queue_order": 6,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
       "runner_path": "scripts/verify_cl3_sm_embedding.py",
@@ -364,7 +317,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md",
-      "queue_order": 8,
+      "queue_order": 7,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
@@ -411,7 +364,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
-      "queue_order": 9,
+      "queue_order": 8,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
       "runner_path": "scripts/su3_dabc_symmetric_check.py",
@@ -459,7 +412,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
-      "queue_order": 10,
+      "queue_order": 9,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
@@ -506,7 +459,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_order": 11,
+      "queue_order": 10,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
       "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
@@ -554,7 +507,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_order": 12,
+      "queue_order": 11,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:graph_first_gauge_structure",
       "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
@@ -563,9 +516,9 @@
       "state": "live"
     }
   ],
-  "live_count": 12,
+  "live_count": 11,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 4,
+  "ready_count": 3,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "audited_clean",
@@ -727,6 +680,50 @@
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_three_generation_hw1_distinct_characters_exact.py",
+      "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "positive_theorem",
+      "actual_effective_status": "retained",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
+        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the exact graph-first selector result qualify as positive_theorem while leaving downstream abelian interpretation open?",
+      "blocked_by_group_ids": [
+        "local_clifford_algebra"
+      ],
+      "claim_id": "graph_first_selector_derivation_note",
+      "deps": [
+        "graph_first_su3_integration_note"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 5,
+      "group_id": "graph_first_gauge_structure",
+      "group_order": 3,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
+      "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
       "source_json_path": "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
       "source_schema": "promotion_reaudit_queue.v1",
       "state": "resolved_or_superseded"

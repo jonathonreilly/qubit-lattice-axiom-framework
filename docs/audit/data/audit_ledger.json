@@ -9928,41 +9928,24 @@
       "verdict_rationale": "Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation."
     },
     "audit_backlog_note_2026-05-02": {
-      "audit_date": "2026-05-22T00:59:40.626166+00:00",
-      "audit_state_snapshot": {
-        "criticality": "high",
-        "dep_claim_scope": {
-          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited."
-        },
-        "dep_claim_type": {
-          "left_handed_charge_matching_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "left_handed_charge_matching_note": "retained_bounded"
-        },
-        "deps": [
-          "left_handed_charge_matching_note"
-        ],
-        "load_bearing_score": 6.0,
-        "runner_hash": "fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826",
-        "transitive_descendants": 7
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-005919-b49b9bae-audit_backlog_note_2026--001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The restricted packet does not include the cycle-level CLAIM_STATUS_CERTIFICATE.md files or most upstream authorities needed to verify the reported exact-support, demotion, and obstruction outcomes. The primary runner verifies only textual presence of headings, PR numbers, lane names, and compliance phrases, not the scientific status of the cycle claims.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_scope": "Campaign-level progress synthesis for audit-backlog-campaign-20260502 cycles 1-19, including reported cycle outcomes, open targets, and claimed cumulative audit-graph effects.",
+      "claim_scope": null,
       "claim_type": "meta",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-22T00:59:40.626166+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -9970,23 +9953,20 @@
         "left_handed_charge_matching_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "meta",
+      "effective_status_reason": "metadata",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "meta",
       "load_bearing_score": 6.0,
-      "load_bearing_step": "Each individual cycle's status is independently certified in its own CLAIM_STATUS_CERTIFICATE.md, and the synthesis aggregates those cycle-level certifications into cumulative claim-state movement.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
       "note_path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: include the cycle-level CLAIM_STATUS_CERTIFICATE.md files and the upstream authorities for cycles 1-19, or narrow the audited claim to textual completeness of this synthesis note.",
-      "open_dependency_paths": [
-        ".claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md",
-        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T16:08:17.632772+00:00",
@@ -10017,21 +9997,73 @@
             "total_pass": 0
           },
           "verdict_rationale": null
+        },
+        {
+          "archived_at": "2026-05-22T15:26:26.316531+00:00",
+          "audit_date": "2026-05-22T00:59:40.626166+00:00",
+          "audit_state_snapshot": {
+            "criticality": "high",
+            "dep_claim_scope": {
+              "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited."
+            },
+            "dep_claim_type": {
+              "left_handed_charge_matching_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "left_handed_charge_matching_note": "retained_bounded"
+            },
+            "deps": [
+              "left_handed_charge_matching_note"
+            ],
+            "load_bearing_score": 6.0,
+            "runner_hash": "fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826",
+            "transitive_descendants": 7
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260522-005919-b49b9bae-audit_backlog_note_2026--001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The restricted packet does not include the cycle-level CLAIM_STATUS_CERTIFICATE.md files or most upstream authorities needed to verify the reported exact-support, demotion, and obstruction outcomes. The primary runner verifies only textual presence of headings, PR numbers, lane names, and compliance phrases, not the scientific status of the cycle claims.",
+          "claim_scope": "Campaign-level progress synthesis for audit-backlog-campaign-20260502 cycles 1-19, including reported cycle outcomes, open targets, and claimed cumulative audit-graph effects.",
+          "claim_type": "meta",
+          "claim_type_last_reviewed": "2026-05-22T00:59:40.626166+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:left_handed_charge_matching_note:retained_bounded->unaudited",
+          "load_bearing_step": "Each individual cycle's status is independently certified in its own CLAIM_STATUS_CERTIFICATE.md, and the synthesis aggregates those cycle-level certifications into cumulative claim-state movement.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: include the cycle-level CLAIM_STATUS_CERTIFICATE.md files and the upstream authorities for cycles 1-19, or narrow the audited claim to textual completeness of this synthesis note.",
+          "open_dependency_paths": [
+            ".claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md",
+            "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 47,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 47
+          },
+          "verdict_rationale": "The note is explicitly a campaign synthesis rather than a new derivation, so its load-bearing support is the existence and correctness of the individual cycle certificates. Those certificates are named but not included in the restricted packet, and the provided runner is a text-coverage checker only. The one included cited authority is retained_bounded at the packet header level, but its body also records conditional/open boundaries around normalization and downstream SM identification, which the synthesis itself acknowledges as governance/open-target dependencies."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 47,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 47
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
       "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)",
       "transitive_descendants": 7,
-      "verdict_rationale": "The note is explicitly a campaign synthesis rather than a new derivation, so its load-bearing support is the existence and correctness of the individual cycle certificates. Those certificates are named but not included in the restricted packet, and the provided runner is a text-coverage checker only. The one included cited authority is retained_bounded at the packet header level, but its body also records conditional/open boundaries around normalization and downstream SM identification, which the synthesis itself acknowledges as governance/open-target dependencies."
+      "verdict_rationale": null
     },
     "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01": {
       "audit_date": null,
@@ -105190,32 +105222,41 @@
       "verdict_rationale": null
     },
     "graph_first_selector_derivation_note": {
-      "audit_date": "2026-05-02T14:46:35.321020+00:00",
+      "audit_date": "2026-05-22T15:26:10.535121+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
         "dep_effective_status": {
           "graph_first_su3_integration_note": "retained_bounded"
         },
         "deps": [
           "graph_first_su3_integration_note"
         ],
-        "load_bearing_score": 14.285,
-        "transitive_descendants": 311
+        "load_bearing_score": 21.742,
+        "runner_hash": "81437e80194eecc2aedac1cf541a29c464dc0edfc4c2452fda5b86cad313fc98",
+        "transitive_descendants": 1210
       },
       "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop:fresh-2026-05-02-selector-gibbs",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
+      "auditor": "codex-judicial-panel-per-site-k1-20260522T152610Z-graph_first_selector_derivation_note-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The derivation is closed as finite-dimensional exact algebra over the canonical cube shifts, and the runner checks the trace identities, normalization, simplex minima, and residual stabilizer. The cited authority is only needed for the bounded selected-axis context, not for full phenomenological identification.",
+      "chain_closure_explanation": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / bounded_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: hybrid / audited_clean / positive_theorem / class A. Majority rationale: The exact selector claim closes from the supplied cube-shift matrices by standard trace and simplex algebra, and the runner source performs those matrix checks without importing external comparators or downstream identifications. The open abelian interpretation in the SU3 integration authority is outside the scoped selector theorem and does not block this narrower result. The load-bearing step is best classified as A, not C, because it is an algebraic identity over explicitly given operators rather than a first-principles computation of a new physical number. | The exact selector result closes as finite-dimensional matrix and simplex algebra on the stated graph-shift surface, with no imported fitted value, external comparator, or downstream abelian identification. The runner constructs the cube shifts and verifies the trace identities, covariance, minima, and Z2 stabilizers; its checks are best classified as algebraic identity checks rather than first-principles numerical production from the full axiom stack. The second audit is right that the scoped selector theorem can be positive_theorem while downstream SU3/abelian interpretation remains outside scope, but it overclassified the load-bearing step as C. | The clean verdict is correct: the restricted packet supplies the canonical shift matrices, the runner actually computes their trace identities and simplex minima, and no external comparator, tuned value, or downstream abelian identification is imported. The result should be scoped as a positive theorem about the selector identity on the canonical graph-shift surface, not as a claim about SU3 integration or hypercharge. However, the load-bearing step is best classified as A because it is an algebraic matrix/trace identity over explicitly given operators, not a new first-principles physical computation producing an external number. | The exact selector result closes as a finite graph/matrix algebra theorem on the stated canonical cube-shift surface. The runner constructs the shifts and verifies trace, covariance, simplex-minimum, and stabilizer identities without importing fitted values, external comparators, or downstream abelian interpretation. The correct load-bearing class is A rather than C because the operative step is an algebraic trace/simplex identity over explicitly given matrices, matching the runner's own A-only PASS breakdown. The downstream SU3 integration note is retained_bounded but is not load-bearing for the selector theorem itself.",
       "claim_id": "graph_first_selector_derivation_note",
-      "claim_scope": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": "On the canonical 2^3 taste-cube graph-shift surface, the one-step axis shifts yield the quartic purity-deficit selector with exactly three axis minima and residual Z2 stabilizers; downstream SU3 and abelian interpretation are out of scope.",
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-02T14:46:35.321020+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": "2026-05-22T15:26:10.535121+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -105229,37 +105270,55 @@
           "previous_auditor_family": "codex-current",
           "verdict": "audited_clean"
         },
+        "mode": "judicial_third_pass",
         "second_audit": {
-          "audit_date": "2026-05-02T14:46:35.320852+00:00",
-          "auditor": "codex-audit-loop:fresh-2026-05-02-selector-gibbs",
-          "auditor_family": "codex-gpt-5",
-          "claim_scope": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "previous_auditor_family": "codex-current",
+          "audit_date": "2026-05-22T15:22:44.299842+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T152221Z-9905bd3a-graph_first_selector_der-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the canonical 2^3 taste-cube graph-shift surface, the one-step axis shifts derive an S3-symmetric quartic selector whose normalized minima are exactly the three coordinate axes with residual Z2 stabilizer; no downstream abelian or phenomenological identification is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "status": "confirmed"
+        "status": "third_confirmed_hybrid",
+        "third_audit": {
+          "audit_date": "2026-05-22T15:26:10.535121+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260522T152610Z-graph_first_selector_derivation_note-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the canonical 2^3 taste-cube graph-shift surface, the one-step axis shifts yield the quartic purity-deficit selector with exactly three axis minima and residual Z2 stabilizers; downstream SU3 and abelian interpretation are out of scope.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The verdict and A-class judgment were acceptable, but the bounded_theorem type was too conservative for the exact standalone selector result once downstream SU3 and abelian claims are excluded.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / bounded_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: hybrid / audited_clean / positive_theorem / class A. Majority rationale: The exact selector claim closes from the supplied cube-shift matrices by standard trace and simplex algebra, and the runner source performs those matrix checks without importing external comparators or downstream identifications. The open abelian interpretation in the SU3 integration authority is outside the scoped selector theorem and does not block this narrower result. The load-bearing step is best classified as A, not C, because it is an algebraic identity over explicitly given operators rather than a first-principles computation of a new physical number. | The exact selector result closes as finite-dimensional matrix and simplex algebra on the stated graph-shift surface, with no imported fitted value, external comparator, or downstream abelian identification. The runner constructs the cube shifts and verifies the trace identities, covariance, minima, and Z2 stabilizers; its checks are best classified as algebraic identity checks rather than first-principles numerical production from the full axiom stack. The second audit is right that the scoped selector theorem can be positive_theorem while downstream SU3/abelian interpretation remains outside scope, but it overclassified the load-bearing step as C. | The clean verdict is correct: the restricted packet supplies the canonical shift matrices, the runner actually computes their trace identities and simplex minima, and no external comparator, tuned value, or downstream abelian identification is imported. The result should be scoped as a positive theorem about the selector identity on the canonical graph-shift surface, not as a claim about SU3 integration or hypercharge. However, the load-bearing step is best classified as A because it is an algebraic matrix/trace identity over explicitly given operators, not a new first-principles physical computation producing an external number. | The exact selector result closes as a finite graph/matrix algebra theorem on the stated canonical cube-shift surface. The runner constructs the shifts and verifies trace, covariance, simplex-minimum, and stabilizer identities without importing fitted values, external comparators, or downstream abelian interpretation. The correct load-bearing class is A rather than C because the operative step is an algebraic trace/simplex identity over explicitly given matrices, matching the runner's own A-only PASS breakdown. The downstream SU3 integration note is retained_bounded but is not load-bearing for the selector theorem itself.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The load_bearing_step_class should be A rather than C; the trace formula and minima are algebraic closure over supplied cube-shift inputs.",
+          "sided_with": "hybrid",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 15,
-      "effective_status": "retained_bounded",
+      "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained",
       "load_bearing_score": 21.742,
-      "load_bearing_step": "For canonical cube shifts S_i, V_sel(phi)=Tr H(phi)^4-(Tr H(phi)^2)^2/8 equals 32 sum_{i<j} phi_i^2 phi_j^2, whose normalized simplex minima are exactly the three axis vertices.",
+      "load_bearing_step": "For H(phi)=sum_i phi_i S_i, V_sel(phi)=Tr H(phi)^4-(1/8)(Tr H(phi)^2)^2=32 sum_{i<j} phi_i^2 phi_j^2, which normalizes to F(p)=sum_{i<j}p_i p_j with exactly the three axis minima.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
       "max_descendant_status_rank": 100,
       "note_hash": "224a8e8b854936de92a714f4badccd111f986653c3c9fdd41b8b8be34b228cb4",
       "note_path": "docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-audit if the canonical graph-shift surface or allowed invariant class is broadened beyond the axis-shift triplet used here.",
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -105399,7 +105458,7 @@
       "runner_path": "scripts/frontier_graph_first_selector_derivation.py",
       "title": "Graph-First Weak-Axis Selector Derivation",
       "transitive_descendants": 1210,
-      "verdict_rationale": "Issue checked: whether the graph-shift triplet derives a selector rather than inserting one. The selector formula is an exact trace calculation for the canonical graph-shift operators, and the minimizer statement follows directly on the normalized simplex. The claim boundary excludes anomaly-complete hypercharge and downstream phenomenology, so the bounded theorem closes without tuned matching or renaming."
+      "verdict_rationale": "Five-judge panel majority 4/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / bounded_theorem / class A; J4: hybrid / audited_clean / positive_theorem / class A; J5: hybrid / audited_clean / positive_theorem / class A. Majority rationale: The exact selector claim closes from the supplied cube-shift matrices by standard trace and simplex algebra, and the runner source performs those matrix checks without importing external comparators or downstream identifications. The open abelian interpretation in the SU3 integration authority is outside the scoped selector theorem and does not block this narrower result. The load-bearing step is best classified as A, not C, because it is an algebraic identity over explicitly given operators rather than a first-principles computation of a new physical number. | The exact selector result closes as finite-dimensional matrix and simplex algebra on the stated graph-shift surface, with no imported fitted value, external comparator, or downstream abelian identification. The runner constructs the cube shifts and verifies the trace identities, covariance, minima, and Z2 stabilizers; its checks are best classified as algebraic identity checks rather than first-principles numerical production from the full axiom stack. The second audit is right that the scoped selector theorem can be positive_theorem while downstream SU3/abelian interpretation remains outside scope, but it overclassified the load-bearing step as C. | The clean verdict is correct: the restricted packet supplies the canonical shift matrices, the runner actually computes their trace identities and simplex minima, and no external comparator, tuned value, or downstream abelian identification is imported. The result should be scoped as a positive theorem about the selector identity on the canonical graph-shift surface, not as a claim about SU3 integration or hypercharge. However, the load-bearing step is best classified as A because it is an algebraic matrix/trace identity over explicitly given operators, not a new first-principles physical computation producing an external number. | The exact selector result closes as a finite graph/matrix algebra theorem on the stated canonical cube-shift surface. The runner constructs the shifts and verifies trace, covariance, simplex-minimum, and stabilizer identities without importing fitted values, external comparators, or downstream abelian interpretation. The correct load-bearing class is A rather than C because the operative step is an algebraic trace/simplex identity over explicitly given matrices, matching the runner's own A-only PASS breakdown. The downstream SU3 integration note is retained_bounded but is not load-bearing for the selector theorem itself."
     },
     "graph_first_su3_integration_note": {
       "audit_date": "2026-05-02T14:40:43.178565+00:00",
@@ -120591,49 +120650,24 @@
       "verdict_rationale": null
     },
     "hypercharge_identification_note": {
-      "audit_date": "2026-05-22T02:37:08.126771+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels."
-        },
-        "dep_claim_type": {
-          "graph_first_su3_integration_note": "bounded_theorem",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
-        },
-        "dep_effective_status": {
-          "graph_first_su3_integration_note": "retained_bounded",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
-        },
-        "deps": [
-          "graph_first_su3_integration_note",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
-        ],
-        "load_bearing_score": 18.954,
-        "runner_hash": "eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750",
-        "transitive_descendants": 991
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-hypercharge_identificati-007",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic ratio-to-table substitution closes under the stated assumptions, but the audit chain does not close as a retained theorem because the LHCM matter-assignment authority is not retained-grade and alpha = 1/3 plus the GMN readout remain admitted SM conventions.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "hypercharge_identification_note",
-      "claim_scope": "Audited the conditional chain assembly that the traceless commutant U(1) ratio +1:(-3), combined with the LHCM matter-assignment import and admitted SM normalization alpha = 1/3, reproduces the LH-doublet hypercharge and charge table.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T02:37:08.126771+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -120643,22 +120677,20 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 18,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 19.046,
-      "load_bearing_step": "Under the L1 ratio theorem, the L2 matter assignment, and the admitted L3 normalization alpha = 1/3, the unique traceless U(1) generator has eigenvalues (+1/3, -1) on (Q_L, L_L).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "b41b48838674794cf21713712922b5aedb5645d89e6ff85cb31178d47d34cf61",
       "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: first ratify the LHCM matter-assignment authority, then provide a retained normalization/readout theorem for alpha = 1/3 and Q = T_3 + Y/2 before re-auditing this chain.",
-      "open_dependency_paths": [
-        "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
         {
@@ -120832,21 +120864,80 @@
             "total_pass": 7
           },
           "verdict_rationale": "The runner genuinely checks the projector algebra, commutation, traceless ratio, and downstream charge table, but the load-bearing SM identification depends on imported chain links rather than deriving them internally. One cited authority, the LHCM matter-assignment note, is marked decoration/support rather than retained-grade, and the note explicitly admits alpha = 1/3 as an open normalization convention. Under the rubric, retained status cannot propagate through these open identification and normalization premises."
+        },
+        {
+          "archived_at": "2026-05-22T15:26:26.326875+00:00",
+          "audit_date": "2026-05-22T02:37:08.126771+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels."
+            },
+            "dep_claim_type": {
+              "graph_first_su3_integration_note": "bounded_theorem",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+            },
+            "dep_effective_status": {
+              "graph_first_su3_integration_note": "retained_bounded",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+            },
+            "deps": [
+              "graph_first_su3_integration_note",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+            ],
+            "load_bearing_score": 18.954,
+            "runner_hash": "eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750",
+            "transitive_descendants": 991
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-hypercharge_identificati-007",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic ratio-to-table substitution closes under the stated assumptions, but the audit chain does not close as a retained theorem because the LHCM matter-assignment authority is not retained-grade and alpha = 1/3 plus the GMN readout remain admitted SM conventions.",
+          "claim_scope": "Audited the conditional chain assembly that the traceless commutant U(1) ratio +1:(-3), combined with the LHCM matter-assignment import and admitted SM normalization alpha = 1/3, reproduces the LH-doublet hypercharge and charge table.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-22T02:37:08.126771+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+          "load_bearing_step": "Under the L1 ratio theorem, the L2 matter assignment, and the admitted L3 normalization alpha = 1/3, the unique traceless U(1) generator has eigenvalues (+1/3, -1) on (Q_L, L_L).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: first ratify the LHCM matter-assignment authority, then provide a retained normalization/readout theorem for alpha = 1/3 and Q = T_3 + Y/2 before re-auditing this chain.",
+          "open_dependency_paths": [
+            "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 5
+          },
+          "verdict_rationale": "The structural projector algebra, tracelessness ratio, commutation checks, and uniqueness-up-to-scale are algebraic and are supported by the runner/source packet. However, the claimed SM identification still imports a non-retained matter-assignment authority and an explicit normalization/readout convention rather than deriving those bridges. The runner computes the structural matrix facts and then hard-codes alpha = 1/3 and SM labels for the chain consequents, so it is not evidence that those admitted inputs are closed."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 5,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 5
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_hypercharge_identification.py",
       "title": "Hypercharge U(1)_Y Identification from the Commutant",
       "transitive_descendants": 1056,
-      "verdict_rationale": "The structural projector algebra, tracelessness ratio, commutation checks, and uniqueness-up-to-scale are algebraic and are supported by the runner/source packet. However, the claimed SM identification still imports a non-retained matter-assignment authority and an explicit normalization/readout convention rather than deriving those bridges. The runner computes the structural matrix facts and then hard-codes alpha = 1/3 and SM labels for the chain consequents, so it is not evidence that those admitted inputs are closed."
+      "verdict_rationale": null
     },
     "hypercharge_proof_walk_lattice_independence_bounded_note_2026-05-07": {
       "audit_date": null,
@@ -148517,101 +148608,26 @@
       "verdict_rationale": "The claim is bounded to the tested weak-field lattice pocket and does not assert an asymptotic or universal lattice theorem. The runner does not hard-code the exponent or fit; it computes the observables, applies the stated retention criteria, and fits the retained rows, reproducing 1.0467 * N^(-0.222) with R^2 = 0.9683. Residual risk is model-level and finite-window only, which is already part of the scoped bounded claim."
     },
     "left_handed_charge_matching_note": {
-      "audit_date": "2026-05-17T12:34:35.511012+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 28.307,
-        "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
-        "transitive_descendants": 895
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260517-123435-20260517T123310Z-096ddbc2-left_handed_charge_match-judicial",
-      "auditor_confidence": "judicial",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "left_handed_charge_matching_note",
-      "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (audit-pipeline retag from author-hint",
-      "claim_type_last_reviewed": "2026-05-17T12:34:35.511012+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-17T12:32:32.031023+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260517-123210-20260517T123210Z-27371f15-left_handed_charge_match-targeted",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Scale-free eigenvalue ratio \u03b1:\u03b2 = 1:(-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-17T12:33:09.442642+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260517-123247-20260517T123247Z-7cacbded-left_handed_charge_match-targeted",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_first",
-        "third_audit": {
-          "audit_date": "2026-05-17T12:34:35.511012+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260517-123435-20260517T123310Z-096ddbc2-left_handed_charge_match-judicial",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "none/materially correct",
-          "independence": "judicial_review",
-          "judgment_rationale": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": {
-            "A": 111,
-            "B": 0,
-            "C": 0,
-            "D": 0,
-            "total_pass": 111
-          },
-          "second_auditor_error": "treated stale prior conditional language or downstream normalization/SM-identification caveats as an open dependency for the narrowed ratio despite the cited authorities being marked retained_bounded and the disputed identifications being out of scope",
-          "sided_with": "first",
-          "verdict": "audited_clean"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
@@ -148619,19 +148635,19 @@
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 37,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 28.629,
-      "load_bearing_step": "Tracelessness over the retained 6-state Sym\u00b2/(2,3) block and 2-state Anti\u00b2/(2,1) block gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "be3f98273aab1763d5ad4041740f27fe2b03dc1ff1801ff96f2d515e0f130921",
       "note_path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
-      "notes_for_re_audit_if_any": "None.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -148911,21 +148927,128 @@
             "total_pass": 111
           },
           "verdict_rationale": "The runner genuinely checks the graph-first selected-axis construction, the 6+2 split, tracelessness, and the displayed convention-normalized eigenvalues. However, the exact eigenvalue pattern depends on the explicit \u03b2 = -1 normalization convention, which the note itself says is not derived within the restricted authority chain. Thus the ratio result is clean algebra over retained inputs, but the exact-pattern claim remains conditional on accepting that convention or supplying a separate retained normalization theorem."
+        },
+        {
+          "archived_at": "2026-05-22T15:26:25.975092+00:00",
+          "audit_date": "2026-05-17T12:34:35.511012+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 28.307,
+            "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+            "transitive_descendants": 895
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260517-123435-20260517T123310Z-096ddbc2-left_handed_charge_match-judicial",
+          "auditor_confidence": "judicial",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio.",
+          "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T12:34:35.511012+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-17T12:32:32.031023+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260517-123210-20260517T123210Z-27371f15-left_handed_charge_match-targeted",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Scale-free eigenvalue ratio \u03b1:\u03b2 = 1:(-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-17T12:33:09.442642+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260517-123247-20260517T123247Z-7cacbded-left_handed_charge_match-targeted",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_first",
+            "third_audit": {
+              "audit_date": "2026-05-17T12:34:35.511012+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260517-123435-20260517T123310Z-096ddbc2-left_handed_charge_match-judicial",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "none/materially correct",
+              "independence": "judicial_review",
+              "judgment_rationale": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": {
+                "A": 111,
+                "B": 0,
+                "C": 0,
+                "D": 0,
+                "total_pass": 111
+              },
+              "second_auditor_error": "treated stale prior conditional language or downstream normalization/SM-identification caveats as an open dependency for the narrowed ratio despite the cited authorities being marked retained_bounded and the disputed identifications being out of scope",
+              "sided_with": "first",
+              "verdict": "audited_clean"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "Tracelessness over the retained 6-state Sym\u00b2/(2,3) block and 2-state Anti\u00b2/(2,1) block gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "None.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 111,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 111
+          },
+          "verdict_rationale": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 111,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 111
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Left-Handed Charge Matching on the Selected-Axis Surface",
       "transitive_descendants": 1119,
-      "verdict_rationale": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio."
+      "verdict_rationale": null
     },
     "legacy_exploratory_drivers_note": {
       "audit_date": null,
@@ -151409,123 +151532,139 @@
       "verdict_rationale": null
     },
     "lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10": {
-      "audit_date": "2026-05-12T00:32:48.122123+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "4fa918b73fb5481ed83e3ec926a2c9077406f0ebceb17b8457c7dcae3468029b",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-lh_doublet_eigenvalue_ra-007",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The arithmetic closes exactly once the 6 and 2 multiplicities and tracelessness condition are accepted. It closes only as a restatement/proof-walk of the upstream narrow ratio claim, not as an independent new theorem.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10",
-      "claim_scope": "A bounded proof-walk that the already-stated LH-doublet Sym^2:Anti^2 ratio 1:(-3) follows from 6 and 2 multiplicities plus tracelessness, with no lattice-action or staggered-Dirac realization quantity used in the algebraic step.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-12T00:32:48.122123+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_su3_integration_note",
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "graph_first_selector_derivation_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Tracelessness over the 6-state Sym^2 and 2-state Anti^2 LH-doublet blocks gives 6*alpha + 2*beta = 0, hence beta = -3*alpha and the ratio is 1:(-3).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "4601c79215608571c749630c18f7c3dc582cffddf06330516eff4a7e47f7461a",
       "note_path": "docs/LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check the decoration classification against the local algebraic-decoration policy and verify that open-gate notes are boundary-only, not load-bearing dependencies.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-22T15:26:25.975372+00:00",
+          "audit_date": "2026-05-12T00:32:48.122123+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "4fa918b73fb5481ed83e3ec926a2c9077406f0ebceb17b8457c7dcae3468029b",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-lh_doublet_eigenvalue_ra-007",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The arithmetic closes exactly once the 6 and 2 multiplicities and tracelessness condition are accepted. It closes only as a restatement/proof-walk of the upstream narrow ratio claim, not as an independent new theorem.",
+          "claim_scope": "A bounded proof-walk that the already-stated LH-doublet Sym^2:Anti^2 ratio 1:(-3) follows from 6 and 2 multiplicities plus tracelessness, with no lattice-action or staggered-Dirac realization quantity used in the algebraic step.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-12T00:32:48.122123+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "Tracelessness over the 6-state Sym^2 and 2-state Anti^2 LH-doublet blocks gives 6*alpha + 2*beta = 0, hence beta = -3*alpha and the ratio is 1:(-3).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check the decoration classification against the local algebraic-decoration policy and verify that open-gate notes are boundary-only, not load-bearing dependencies.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 55,
+            "C": 0,
+            "D": 0,
+            "total_pass": 61
+          },
+          "verdict_rationale": "The load-bearing step is genuine class A algebra over retained graph-first inputs, and there are no external comparator or tuned numerical checks. However, the note repeats the parent narrow theorem's ratio derivation and adds only a proof-walk/boundary clarification that the listed staggered or lattice quantities are not load-bearing. Under the decoration tie-breaker, this is an algebraic decoration of the parent narrow-ratio claim rather than a new bounded theorem."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 6,
-        "B": 55,
+        "A": 0,
+        "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 61
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence.py",
       "title": "LH-Doublet Eigenvalue Ratio Proof-Walk Lattice-Independence Bounded Note",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing step is genuine class A algebra over retained graph-first inputs, and there are no external comparator or tuned numerical checks. However, the note repeats the parent narrow theorem's ratio derivation and adds only a proof-walk/boundary clarification that the listed staggered or lattice quantities are not load-bearing. Under the decoration tie-breaker, this is an algebraic decoration of the parent narrow-ratio claim rather than a new bounded theorem."
+      "verdict_rationale": null
     },
     "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T18:44:45.097309+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
-        },
-        "dep_claim_type": {
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
-        },
-        "deps": [
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "5a82b417b13b4841a9331a6d471b2184546239c7b8c2b9d05693cce5a913b764",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260517-184321-41cdea85-lh_doublet_partition_rat-014",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The conclusion follows from the trace equation, the stated integer-ratio hypothesis, and elementary divisibility. No physical identification, normalization convention, PDG comparator, or open upstream bridge is load-bearing for the scoped algebraic claim.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Algebraic inverse uniqueness for ordered positive-integer two-block partitions under m+n=N and target ratio beta/alpha=-k, including the specialization (N,k)=(8,3)->(m,n)=(6,2); derivations of N=8, k=3, and any SM identification are out of scope.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T18:44:45.097309+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -151533,34 +151672,84 @@
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "From m*alpha + n*beta = 0 and beta/alpha = -k, infer m = k*n; with m+n=N this gives n=N/(k+1), m=k*N/(k+1), hence uniqueness when the pair is integral and positive.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "62974b374440dd13839e39a7c26756afdc697bef24cf2b27d36143b5bfed989c",
       "note_path": "docs/LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Re-check that alpha != 0 remains explicit wherever beta/alpha is used; keep N=8 and k=3 derivations outside this claim boundary.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-22T15:26:26.329277+00:00",
+          "audit_date": "2026-05-17T18:44:45.097309+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+            },
+            "dep_claim_type": {
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+            },
+            "deps": [
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "5a82b417b13b4841a9331a6d471b2184546239c7b8c2b9d05693cce5a913b764",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260517-184321-41cdea85-lh_doublet_partition_rat-014",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The conclusion follows from the trace equation, the stated integer-ratio hypothesis, and elementary divisibility. No physical identification, normalization convention, PDG comparator, or open upstream bridge is load-bearing for the scoped algebraic claim.",
+          "claim_scope": "Algebraic inverse uniqueness for ordered positive-integer two-block partitions under m+n=N and target ratio beta/alpha=-k, including the specialization (N,k)=(8,3)->(m,n)=(6,2); derivations of N=8, k=3, and any SM identification are out of scope.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-17T18:44:45.097309+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+          "load_bearing_step": "From m*alpha + n*beta = 0 and beta/alpha = -k, infer m = k*n; with m+n=N this gives n=N/(k+1), m=k*N/(k+1), hence uniqueness when the pair is integral and positive.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check that alpha != 0 remains explicit wherever beta/alpha is used; keep N=8 and k=3 derivations outside this claim boundary.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 58,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 58
+          },
+          "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure: beta/alpha=-m/n plus beta/alpha=-k forces m=kn, and m+n=N then determines the only possible pair. The runner source performs symbolic and exact Fraction checks, enumerates P(8), and reports PASS=58, FAIL=0; the hard-coded spot checks are corollary checks rather than substitutes for the derivation. The retained-bounded cited authority is contextual for the forward counterpart, while this inverse theorem does not import its open SM-identification exclusions as load-bearing premises."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 58,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 58
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py",
       "title": "LH-Doublet Trace-Surface Partition / Ratio Inverse Uniqueness (Narrow Theorem)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure: beta/alpha=-m/n plus beta/alpha=-k forces m=kn, and m+n=N then determines the only possible pair. The runner source performs symbolic and exact Fraction checks, enumerates P(8), and reports PASS=58, FAIL=0; the hard-coded spot checks are corollary checks rather than substitutes for the derivation. The retained-bounded cited authority is contextual for the forward counterpart, while this inverse theorem does not import its open SM-identification exclusions as load-bearing premises."
+      "verdict_rationale": null
     },
     "lh_doublet_su2_squared_hypercharge_anomaly_cancellation_note_2026-05-01": {
       "audit_date": null,
@@ -151651,92 +151840,45 @@
       "verdict_rationale": null
     },
     "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-12T00:08:42.226612+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note"
-        ],
-        "load_bearing_score": 11.506,
-        "runner_hash": "8ac82d25140eb6ce23b4fe94bb4b9d4a28631cec745e674b8058e5abe8d68e63",
-        "transitive_descendants": 726
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-lh_doublet_traceless_abe-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited retained-bounded authorities supply the selected-axis setting and the 6+2 commutant block decomposition. The remaining step is standard tracelessness algebra and does not require SM normalization or identification.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-      "claim_scope": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": "2026-05-12T00:08:42.226612+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-11T13:10:15.783381+00:00",
-          "auditor": "codex-audit-loop-20260511-lh-doublet-traceless-ratio-first",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Exact algebraic eigenvalue-ratio theorem only: on the graph-first selected-axis commutant decomposition, retained graph-first inputs supply Sym^2 multiplicity 6 and Anti^2 multiplicity 2 in the LH-doublet sector, and tracelessness forces the U(1) eigenvalue ratio Sym^2:Anti^2 = 1:(-3). This excludes fixed eigenvalues +1/3 and -1, Standard Model hypercharge identification, Q=T3+Y/2, anomaly cancellation, and the full left-handed charge-matching chain.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-12T00:08:42.226612+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-lh_doublet_traceless_abe-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_su3_integration_note",
         "graph_first_selector_derivation_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 16.134,
-      "load_bearing_step": "Tracelessness over the 6-state Sym2 block and 2-state Anti2 block gives 6*alpha + 2*beta = 0, hence beta = -3*alpha and the Sym2:Anti2 eigenvalue ratio is 1:(-3).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_bounded",
       "max_descendant_status_rank": 95,
       "note_hash": "3039740f093a49475cf90f260df9173ce891ff0db94812a73424197c4d902537",
       "note_path": "docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "Re-check only that the bounded-context inputs remain retained-grade; the algebraic ratio itself is immediate from the supplied multiplicities.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -151910,21 +152052,100 @@
             "total_pass": 21
           },
           "verdict_rationale": "The load-bearing step is a genuine class (A) algebraic closure once the 6 and 2 multiplicities are accepted. However, the restricted packet includes the staggered-Dirac realization gate as an admitted context input and cited authority with effective_status open_gate, so retained status cannot propagate through it. The runner also exits nonzero because it still expects positive_theorem tags, which is a runner artifact rather than a scientific failure of the narrowed ratio algebra."
+        },
+        {
+          "archived_at": "2026-05-22T15:26:25.975450+00:00",
+          "audit_date": "2026-05-12T00:08:42.226612+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note"
+            ],
+            "load_bearing_score": 11.506,
+            "runner_hash": "8ac82d25140eb6ce23b4fe94bb4b9d4a28631cec745e674b8058e5abe8d68e63",
+            "transitive_descendants": 726
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-lh_doublet_traceless_abe-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited retained-bounded authorities supply the selected-axis setting and the 6+2 commutant block decomposition. The remaining step is standard tracelessness algebra and does not require SM normalization or identification.",
+          "claim_scope": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-12T00:08:42.226612+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-11T13:10:15.783381+00:00",
+              "auditor": "codex-audit-loop-20260511-lh-doublet-traceless-ratio-first",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Exact algebraic eigenvalue-ratio theorem only: on the graph-first selected-axis commutant decomposition, retained graph-first inputs supply Sym^2 multiplicity 6 and Anti^2 multiplicity 2 in the LH-doublet sector, and tracelessness forces the U(1) eigenvalue ratio Sym^2:Anti^2 = 1:(-3). This excludes fixed eigenvalues +1/3 and -1, Standard Model hypercharge identification, Q=T3+Y/2, anomaly cancellation, and the full left-handed charge-matching chain.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-12T00:08:42.226612+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-lh_doublet_traceless_abe-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "Tracelessness over the 6-state Sym2 block and 2-state Anti2 block gives 6*alpha + 2*beta = 0, hence beta = -3*alpha and the Sym2:Anti2 eigenvalue ratio is 1:(-3).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check only that the bounded-context inputs remain retained-grade; the algebraic ratio itself is immediate from the supplied multiplicities.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 23,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 23
+          },
+          "verdict_rationale": "The load-bearing step is a genuine class A algebraic closure over retained-grade inputs: once the 6 and 2 multiplicities are admitted, beta/alpha = -3 follows uniquely. The runner source hard-codes the retained multiplicities but does perform the exact Fraction arithmetic and scope checks it reports. The open SM-Y identification language in the upstream material is not load-bearing because the audited claim explicitly excludes that bridge."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 23,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 23
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_lh_doublet_traceless_abelian_ratio.py",
       "title": "LH-Doublet Traceless Abelian Eigenvalue Ratio (Narrow Theorem)",
       "transitive_descendants": 1123,
-      "verdict_rationale": "The load-bearing step is a genuine class A algebraic closure over retained-grade inputs: once the 6 and 2 multiplicities are admitted, beta/alpha = -3 follows uniquely. The runner source hard-codes the retained multiplicities but does perform the exact Fraction arithmetic and scope checks it reports. The open SM-Y identification language in the upstream material is not load-bearing because the audited claim explicitly excludes that bridge."
+      "verdict_rationale": null
     },
     "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T01:41:57.211165+00:00",
@@ -151989,71 +152210,46 @@
       "verdict_rationale": "The theorem is narrow but correctly bounded: it assumes the trace equation, positive integer n_color, and the named conventions before deriving only algebraic consequences. The proof and runner agree, and the parity denominator rule follows from gcd(n_color + 1, 2 n_color) = gcd(n_color + 1, 2), with the same result for Q(d_L). This is not an audit of the broader physical identification or of why n_color = 3; those are outside the stated claim boundary."
     },
     "lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10": {
-      "audit_date": "2026-05-19T15:15:30.256960+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note",
-          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "68e8bf469dbdb613748b0b721b0d67388ba642ffe9ed26af2944dbb6c9fbf66a",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-lhcm_matter_assignment_b-062",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited graph-first SU(3) integration authority is retained_bounded and supplies the 3+1 split and SU(3) embedding; the rest is standard representation theory and tensor-product distributivity. No non-retained lattice-realization premise is needed for this bounded claim.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10",
-      "claim_scope": "Audited only the bounded block-identification proof-walk that Sym\u00b2 carries the SU(3) fundamental block, Anti\u00b2 carries the singlet block, and the LH-doublet sector decomposes as (2,3) \u2295 (2,1) without staggered-Dirac or lattice-action inputs.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-19T15:15:30.256960+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_su3_integration_note",
         "graph_first_selector_derivation_note",
         "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
       ],
       "direct_in_degree": 0,
-      "effective_status": "decoration_under_graph_first_su3_integration_note",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The retained graph-first SU(3) integration gives the tau-induced 3+1 Sym\u00b2/Anti\u00b2 split, and standard SU(3) representation theory identifies the 3-dimensional non-trivial block as fundamental and the 1-dimensional block as trivial, yielding C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b2203bdd1026a5fd5abb2ac8e398d539e0b5a985da08cb1d99962682989d5830",
       "note_path": "docs/LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check that the historical LHCM matter-assignment note remains non-load-bearing and that graph_first_su3_integration_note is still retained_bounded in the active ledger.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -152114,185 +152310,308 @@
             "total_pass": 86
           },
           "verdict_rationale": "The mathematical proof-walk is an algebraic closure over the graph-first 3\u22951 split plus standard representation theory, and the runner performs exact symbolic checks rather than numerical tuning or external comparison. However, the packet lists the LHCM matter-assignment note as a cited dependency, and that authority is not retained-grade in the restricted packet. The safe reduced result is the scoped no-staggered-input block-identification proof-walk, not a retained promotion of the parent matter-assignment claim."
+        },
+        {
+          "archived_at": "2026-05-22T15:26:25.975517+00:00",
+          "audit_date": "2026-05-19T15:15:30.256960+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note",
+              "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "68e8bf469dbdb613748b0b721b0d67388ba642ffe9ed26af2944dbb6c9fbf66a",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-lhcm_matter_assignment_b-062",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited graph-first SU(3) integration authority is retained_bounded and supplies the 3+1 split and SU(3) embedding; the rest is standard representation theory and tensor-product distributivity. No non-retained lattice-realization premise is needed for this bounded claim.",
+          "claim_scope": "Audited only the bounded block-identification proof-walk that Sym\u00b2 carries the SU(3) fundamental block, Anti\u00b2 carries the singlet block, and the LH-doublet sector decomposes as (2,3) \u2295 (2,1) without staggered-Dirac or lattice-action inputs.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-19T15:15:30.256960+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "graph_first_su3_integration_note",
+          "independence": "cross_family",
+          "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "The retained graph-first SU(3) integration gives the tau-induced 3+1 Sym\u00b2/Anti\u00b2 split, and standard SU(3) representation theory identifies the 3-dimensional non-trivial block as fundamental and the 1-dimensional block as trivial, yielding C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check that the historical LHCM matter-assignment note remains non-load-bearing and that graph_first_su3_integration_note is still retained_bounded in the active ledger.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 86,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 86
+          },
+          "verdict_rationale": "The proof-walk is an algebraic closure over a retained upstream graph-first SU(3) integration note plus standard mathematics, with no external comparator or tuned numerical input. The runner performs real exact checks of the tau eigendecomposition, tensor dimensions, and representative SU(3) algebra facts, but it does not establish a new first-principles framework result beyond the retained parent. Under the rubric tie-breaker, this is audited_decoration rather than audited_clean because the chain reduces to one retained parent claim plus standard mathematics."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 86,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 86
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_lhcm_matter_assignment_block_proof_walk_lattice_independence.py",
       "title": "LHCM Matter Assignment Block Proof-Walk Lattice-Independence Bounded Note",
       "transitive_descendants": 0,
-      "verdict_rationale": "The proof-walk is an algebraic closure over a retained upstream graph-first SU(3) integration note plus standard mathematics, with no external comparator or tuned numerical input. The runner performs real exact checks of the tau eigendecomposition, tensor dimensions, and representative SU(3) algebra facts, but it does not establish a new first-principles framework result beyond the retained parent. Under the rubric tie-breaker, this is audited_decoration rather than audited_clean because the chain reduces to one retained parent claim plus standard mathematics."
+      "verdict_rationale": null
     },
     "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": {
-      "audit_date": "2026-05-17T12:42:24.067210+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
-          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem",
-          "left_handed_charge_matching_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded",
-          "left_handed_charge_matching_note": "retained_bounded"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note",
-          "left_handed_charge_matching_note"
-        ],
-        "load_bearing_score": 11.664,
-        "runner_hash": "adbc3f8b4481a9198702717fa991caf95bddfea51166dfb7ee6f2b08d1e21b98",
-        "transitive_descendants": 810
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260517-124157-20260517T124157Z-4ec3ac00-lhcm_matter_assignment_f-targeted",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The SU(3) representation decomposition follows from the cited retained_bounded graph-first SU3 integration theorem plus standard finite-dimensional representation facts. The naming of the resulting (2,3) and (2,1) sectors as Q_L and L_L is explicitly definitional, not a derived physics step.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-      "claim_scope": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels.",
+      "claim_scope": null,
       "claim_type": "decoration",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-17T12:42:24.067210+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "critical",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note",
         "left_handed_charge_matching_note"
       ],
       "direct_in_degree": 4,
-      "effective_status": "decoration_under_graph_first_su3_integration_note",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 12.048,
-      "load_bearing_step": "The gl(3)\u2295gl(1) commutant from the selected-axis surface gives a 3-dimensional SU(3)-fundamental Sym\u00b2 block and a 1-dimensional SU(3)-trivial Anti\u00b2 block, so the LH-doublet sector decomposes as (2,3)\u2295(2,1).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "bd6a7e6811afc4071818adadd62e489f59939e5802e3eb5de2296a825c72f4c9",
       "note_path": "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check that the decoration-parent reduction to GRAPH_FIRST_SU3_INTEGRATION_NOTE.md is accepted despite the note also citing LEFT_HANDED_CHARGE_MATCHING_NOTE.md for context.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-22T15:26:25.975551+00:00",
+          "audit_date": "2026-05-17T12:42:24.067210+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+              "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem",
+              "left_handed_charge_matching_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded",
+              "left_handed_charge_matching_note": "retained_bounded"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note",
+              "left_handed_charge_matching_note"
+            ],
+            "load_bearing_score": 11.664,
+            "runner_hash": "adbc3f8b4481a9198702717fa991caf95bddfea51166dfb7ee6f2b08d1e21b98",
+            "transitive_descendants": 810
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-20260517-124157-20260517T124157Z-4ec3ac00-lhcm_matter_assignment_f-targeted",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The SU(3) representation decomposition follows from the cited retained_bounded graph-first SU3 integration theorem plus standard finite-dimensional representation facts. The naming of the resulting (2,3) and (2,1) sectors as Q_L and L_L is explicitly definitional, not a derived physics step.",
+          "claim_scope": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-17T12:42:24.067210+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "graph_first_su3_integration_note",
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:left_handed_charge_matching_note:retained_bounded->unaudited",
+          "load_bearing_step": "The gl(3)\u2295gl(1) commutant from the selected-axis surface gives a 3-dimensional SU(3)-fundamental Sym\u00b2 block and a 1-dimensional SU(3)-trivial Anti\u00b2 block, so the LH-doublet sector decomposes as (2,3)\u2295(2,1).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check that the decoration-parent reduction to GRAPH_FIRST_SU3_INTEGRATION_NOTE.md is accepted despite the note also citing LEFT_HANDED_CHARGE_MATCHING_NOTE.md for context.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 64,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 64
+          },
+          "verdict_rationale": "The load-bearing work is algebraic: project C^4 under the residual swap, import the upstream gl(3)\u2295gl(1) commutant/SU(3) structure, and apply standard representation theory to identify a triplet and singlet. The runner confirms these matrix and dimension identities but does not add a first-principles computation beyond the cited graph-first SU3 integration result. There are zero external comparator checks, and the result is a support-level restatement of the upstream structural SU(3) theorem with SM naming conventions attached."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 64,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 64
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_lhcm_matter_assignment.py",
       "title": "LHCM Matter Assignment from SU(3) Representation Content",
       "transitive_descendants": 1058,
-      "verdict_rationale": "The load-bearing work is algebraic: project C^4 under the residual swap, import the upstream gl(3)\u2295gl(1) commutant/SU(3) structure, and apply standard representation theory to identify a triplet and singlet. The runner confirms these matrix and dimension identities but does not add a first-principles computation beyond the cited graph-first SU3 integration result. There are zero external comparator checks, and the result is a support-level restatement of the upstream structural SU(3) theorem with SM naming conventions attached."
+      "verdict_rationale": null
     },
     "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17": {
-      "audit_date": "2026-05-17T18:47:57.444947+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note",
-          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": "5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260517-184523-41cdea85-lhcm_matter_assignment_s-015",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The structural decomposition follows from the cited retained 3+1 split, the gl(3) \u2295 gl(1) commutant with compact semisimple su(3), and standard finite-dimensional SU(3) representation facts. No SM species labels, hypercharge normalization, external comparator, or staggered-Dirac realization quantity is needed for this bounded algebraic statement.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Algebraic SU(3) block-content corollary on the retained graph-first selected-axis LH-doublet sector: Sym\u00b2 is a 3 or 3-bar block, Anti\u00b2 is a singlet, and tensoring the weak doublet gives dimensions 6 and 2.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-17T18:47:57.444947+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_su3_integration_note",
         "graph_first_selector_derivation_note",
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 0,
-      "effective_status": "decoration_under_graph_first_su3_integration_note",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Given the retained 3+1 Sym\u00b2/Anti\u00b2 split and gl(3) \u2295 gl(1) commutant, standard SU(3) representation theory gives Sym\u00b2 as a non-trivial 3-dimensional irrep, Anti\u00b2 as trivial, hence C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "daac56dcbcc5d761e2777f62ad47f570fd28a42ed01021c319dc547cec3c2386",
       "note_path": "docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Box as a corollary of graph_first_su3_integration_note unless a future revision makes an independent load-bearing role for the ratio theorem explicit; also re-check that B1 is grounded directly in I2's embedded Gell-Mann action rather than the weaker commutant-dimension sentence.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-22T15:26:25.975599+00:00",
+          "audit_date": "2026-05-17T18:47:57.444947+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note",
+              "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": "5c9117959715a14b271a66e7fbc901e24e42b6f317f39930ec0169a538fa0c45",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-20260517-184523-41cdea85-lhcm_matter_assignment_s-015",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The structural decomposition follows from the cited retained 3+1 split, the gl(3) \u2295 gl(1) commutant with compact semisimple su(3), and standard finite-dimensional SU(3) representation facts. No SM species labels, hypercharge normalization, external comparator, or staggered-Dirac realization quantity is needed for this bounded algebraic statement.",
+          "claim_scope": "Algebraic SU(3) block-content corollary on the retained graph-first selected-axis LH-doublet sector: Sym\u00b2 is a 3 or 3-bar block, Anti\u00b2 is a singlet, and tensoring the weak doublet gives dimensions 6 and 2.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-17T18:47:57.444947+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "graph_first_su3_integration_note",
+          "independence": "cross_family",
+          "invalidation_reason": "dep_weakened:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+          "load_bearing_step": "Given the retained 3+1 Sym\u00b2/Anti\u00b2 split and gl(3) \u2295 gl(1) commutant, standard SU(3) representation theory gives Sym\u00b2 as a non-trivial 3-dimensional irrep, Anti\u00b2 as trivial, hence C\u00b2 \u2297 (Sym\u00b2 \u2295 Anti\u00b2) = (2,3) \u2295 (2,1).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Box as a corollary of graph_first_su3_integration_note unless a future revision makes an independent load-bearing role for the ratio theorem explicit; also re-check that B1 is grounded directly in I2's embedded Gell-Mann action rather than the weaker commutant-dimension sentence.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 99,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 99
+          },
+          "verdict_rationale": "All substantive checks are class-A exact algebraic identities or standard representation facts, and the runner source does not import external numerical comparators or hard-code a contested physical value. The one-hop authorities in the packet are marked retained_bounded, so there is no open dependency blocking the structural block statement. Under the decoration policy, however, the result is a direct corollary of the graph_first_su3_integration_note's 3 \u2295 1 split and gl(3) \u2295 gl(1) commutant, with the selector and ratio inputs serving canonicity/count-consistency roles rather than supplying an independent new closure."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 99,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 99
+        "total_pass": 0
       },
       "runner_path": "scripts/audit_companion_lhcm_matter_assignment_su3_block_representation_exact_2026_05_17.py",
       "title": "LHCM Matter-Assignment SU(3) Block-Representation Narrow Theorem (Retained-Only Substrate)",
       "transitive_descendants": 0,
-      "verdict_rationale": "All substantive checks are class-A exact algebraic identities or standard representation facts, and the runner source does not import external numerical comparators or hard-code a contested physical value. The one-hop authorities in the packet are marked retained_bounded, so there is no open dependency blocking the structural block statement. Under the decoration policy, however, the result is a direct corollary of the graph_first_su3_integration_note's 3 \u2295 1 split and gl(3) \u2295 gl(1) commutant, with the selector and ratio inputs serving canonicity/count-consistency roles rather than supplying an independent new closure."
+      "verdict_rationale": null
     },
     "lhcm_repair_atlas_consolidation_note_2026-05-02": {
       "audit_date": null,
@@ -184754,77 +185073,26 @@
       "verdict_rationale": null
     },
     "pmns_graph_axis_to_active_lane_bridge_note": {
-      "audit_date": "2026-05-16T12:58:41.902199+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
-          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
-          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "site_phase_cube_shift_intertwiner_note": "retained",
-          "z2_hw1_mass_matrix_parametrization_note": "retained"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "site_phase_cube_shift_intertwiner_note",
-          "z2_hw1_mass_matrix_parametrization_note"
-        ],
-        "load_bearing_score": 10.118,
-        "runner_hash": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
-        "transitive_descendants": 785
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260516-125636-8e54e1e9-pmns_graph_axis_to_activ-001",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The tensor-factor permutation unitary is explicitly defined, its restriction to V_1 is computed as the standard permutation matrix, and invariance of a Hermitian operator under that Z_2 action is exactly conjugation invariance by that matrix. The cited retained inputs supply the carrier and residual stabilizer; the bridge itself is algebraic.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "pmns_graph_axis_to_active_lane_bridge_note",
-      "claim_scope": "Finite-dimensional bridge identifying the graph-axis residual Z_2 stabilizer on the hw=1 carrier V_1 with the corresponding permutation action on Herm(V_1), specifically P_23 after relabeling the selected axis to e_1.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-16T12:58:41.902199+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-16T12:55:29.477997+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260516-125507-22c7929c-pmns_graph_axis_to_activ-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited the finite-dimensional bridge from the selected hw=1 graph-axis residual S_3 transposition to the corresponding permutation action on Herm(V_1), in particular P_23 after relabeling the selected axis to e_1.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-16T12:58:41.902059+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260516-125636-8e54e1e9-pmns_graph_axis_to_activ-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Finite-dimensional bridge identifying the graph-axis residual Z_2 stabilizer on the hw=1 carrier V_1 with the corresponding permutation action on Herm(V_1), specifically P_23 after relabeling the selected axis to e_1.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "z2_hw1_mass_matrix_parametrization_note",
@@ -184832,34 +185100,118 @@
         "graph_first_selector_derivation_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 10.544,
-      "load_bearing_step": "The residual Z_2 stabilizer of the selected graph axis acts on V_1 by the restriction T_{tau_k}|_{V_1}=P_{tau_k}, so Z_2-invariance of H is exactly P_{tau_k} H P_{tau_k}=H, giving P_23 H P_23=H for k=1.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8553fe0b6ba602ecda8a067e1aea727a3cf622a8d67374fd6dedc7ec7f4dce75",
       "note_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check that the phrase active Hermitian triplet lane is being used only as Herm(V_1), not as a downstream active-sector physical assignment.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-22T15:26:25.978126+00:00",
+          "audit_date": "2026-05-16T12:58:41.902199+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+              "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+              "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "site_phase_cube_shift_intertwiner_note": "retained",
+              "z2_hw1_mass_matrix_parametrization_note": "retained"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "site_phase_cube_shift_intertwiner_note",
+              "z2_hw1_mass_matrix_parametrization_note"
+            ],
+            "load_bearing_score": 10.118,
+            "runner_hash": "e622447a0bdef7842d3206a98962b7ae76d68457c51816f69c044ceed6ad2f04",
+            "transitive_descendants": 785
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260516-125636-8e54e1e9-pmns_graph_axis_to_activ-001",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The tensor-factor permutation unitary is explicitly defined, its restriction to V_1 is computed as the standard permutation matrix, and invariance of a Hermitian operator under that Z_2 action is exactly conjugation invariance by that matrix. The cited retained inputs supply the carrier and residual stabilizer; the bridge itself is algebraic.",
+          "claim_scope": "Finite-dimensional bridge identifying the graph-axis residual Z_2 stabilizer on the hw=1 carrier V_1 with the corresponding permutation action on Herm(V_1), specifically P_23 after relabeling the selected axis to e_1.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-16T12:58:41.902199+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-16T12:55:29.477997+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260516-125507-22c7929c-pmns_graph_axis_to_activ-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited the finite-dimensional bridge from the selected hw=1 graph-axis residual S_3 transposition to the corresponding permutation action on Herm(V_1), in particular P_23 after relabeling the selected axis to e_1.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-16T12:58:41.902059+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260516-125636-8e54e1e9-pmns_graph_axis_to_activ-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Finite-dimensional bridge identifying the graph-axis residual Z_2 stabilizer on the hw=1 carrier V_1 with the corresponding permutation action on Herm(V_1), specifically P_23 after relabeling the selected axis to e_1.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "The residual Z_2 stabilizer of the selected graph axis acts on V_1 by the restriction T_{tau_k}|_{V_1}=P_{tau_k}, so Z_2-invariance of H is exactly P_{tau_k} H P_{tau_k}=H, giving P_23 H P_23=H for k=1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check that the phrase active Hermitian triplet lane is being used only as Herm(V_1), not as a downstream active-sector physical assignment.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 87,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 87
+          },
+          "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the provided finite-dimensional objects, not a definition substitution or numerical match. The runner constructs the shifts, tensor-factor permutation unitaries, V_1 basis, restriction blocks, and Hermitian invariance checks directly, with PASS=87 FAIL=0. The claim is bounded to the structural bridge and explicitly avoids active-sector assignment or PMNS value selection."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 87,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 87
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_pmns_graph_axis_to_active_lane_bridge.py",
       "title": "PMNS Graph-Axis -> Active Hermitian Lane Bridge",
       "transitive_descendants": 1055,
-      "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the provided finite-dimensional objects, not a definition substitution or numerical match. The runner constructs the shifts, tensor-factor permutation unitaries, V_1 basis, restriction blocks, and Hermitian invariance checks directly, with PASS=87 FAIL=0. The claim is bounded to the structural bridge and explicitly avoids active-sector assignment or PMNS value selection."
+      "verdict_rationale": null
     },
     "pmns_graph_commutant_cycle_value_boundary_note": {
       "audit_date": null,
@@ -185139,104 +185491,40 @@
       "verdict_rationale": null
     },
     "pmns_graph_first_cycle_frame_support_note": {
-      "audit_date": "2026-05-19T21:49:16.415550+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
-          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
-        },
-        "dep_claim_type": {
-          "graph_first_selector_derivation_note": "bounded_theorem",
-          "graph_first_su3_integration_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "graph_first_selector_derivation_note": "retained_bounded",
-          "graph_first_su3_integration_note": "retained_bounded"
-        },
-        "deps": [
-          "graph_first_selector_derivation_note",
-          "graph_first_su3_integration_note"
-        ],
-        "load_bearing_score": 12.451,
-        "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
-        "transitive_descendants": 989
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-pmns_graph_first_cycle_frame_sup-panel-majority",
-      "auditor_confidence": "judicial_panel_majority",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "pmns_graph_first_cycle_frame_support_note",
-      "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-19T21:49:16.415550+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-19T14:31:26.114903+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-pmns_graph_first_cycle_f-012",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited the bounded support claim that the retained graph-first selector and retained graph-first SU(3) integration fix an ordered oriented-cycle frame, without selecting cycle coefficients.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-19T15:23:34.636586+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-pmns_graph_first_cycle_f-004",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-19T21:49:16.415550+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-pmns_graph_first_cycle_frame_sup-panel-majority",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "none",
-          "independence": "judicial_review",
-          "judgment_rationale": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.",
-          "load_bearing_step_class": "A",
-          "second_auditor_error": "J1: Issued audited_clean while treating the hard-coded forward-cycle transport and residual 3x3 action as derived canonical consequences of the cited graph-first authorities.; J2: Treated the hard-coded CYCLE/P23 oriented-cycle frame and residual action as derived from the retained graph-first selector/SU3 inputs, even though the runner and cited authority do not prove that bridge.; J3: It granted audited_clean even though the load-bearing oriented-cycle order is asserted/hard-coded rather than derived from the retained selector and SU(3) integration inputs in the restricted packet.; J4: It treated the hard-coded forward cycle/oriented transport order as derived from the retained graph-first inputs, granting audited_clean despite an unclosed load-bearing premise.; J5: It treated the hard-coded CYCLE/Eij/P23 frame check as a clean derivation of canonical uniqueness from the graph-first route, instead of recognizing the unstated forward-orientation/order assumption.",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 12.544,
       "load_bearing_step": null,
-      "load_bearing_step_class": "A",
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8e9fe8741046888a6579a7673d64f99b6f83e632c6f0387d6d053ccb7fa1db58",
@@ -185381,6 +185669,102 @@
             "total_pass": 18
           },
           "verdict_rationale": "The note's internal move is algebraic frame transport over the cited selector and SU(3) integration inputs, and it correctly disclaims coefficient/value selection. However, the claim depends on retained_bounded upstream structural authorities rather than an unbounded retained theorem, so retained status does not propagate to a fully clean positive theorem. In addition, the primary runner imports frontier_graph_first_selector_derivation and frontier_graph_first_su3_integration, but the packet reports no helper imports and provides no helper source, making the runner artifact incomplete for source-level verification."
+        },
+        {
+          "archived_at": "2026-05-22T15:26:25.978159+00:00",
+          "audit_date": "2026-05-19T21:49:16.415550+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+              "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+            },
+            "dep_claim_type": {
+              "graph_first_selector_derivation_note": "bounded_theorem",
+              "graph_first_su3_integration_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "graph_first_selector_derivation_note": "retained_bounded",
+              "graph_first_su3_integration_note": "retained_bounded"
+            },
+            "deps": [
+              "graph_first_selector_derivation_note",
+              "graph_first_su3_integration_note"
+            ],
+            "load_bearing_score": 12.451,
+            "runner_hash": "6bab808d772216952c6038347f5fefd6f506f49918b98b4a50422cec19a24e9f",
+            "transitive_descendants": 989
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-pmns_graph_first_cycle_frame_sup-panel-majority",
+          "auditor_confidence": "judicial_panel_majority",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.",
+          "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-19T21:49:16.415550+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-19T14:31:26.114903+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-pmns_graph_first_cycle_f-012",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited the bounded support claim that the retained graph-first selector and retained graph-first SU(3) integration fix an ordered oriented-cycle frame, without selecting cycle coefficients.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-19T15:23:34.636586+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-pmns_graph_first_cycle_f-004",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-19T21:49:16.415550+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260519T214237Z-7e8580f6-pmns_graph_first_cycle_frame_sup-panel-majority",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited whether the provided graph-first selector and SU(3) integration inputs canonically fix the ordered oriented-cycle frame E12,E23,E31 strongly enough to support later coefficient laws.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "none",
+              "independence": "judicial_review",
+              "judgment_rationale": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention.",
+              "load_bearing_step_class": "A",
+              "second_auditor_error": "J1: Issued audited_clean while treating the hard-coded forward-cycle transport and residual 3x3 action as derived canonical consequences of the cited graph-first authorities.; J2: Treated the hard-coded CYCLE/P23 oriented-cycle frame and residual action as derived from the retained graph-first selector/SU3 inputs, even though the runner and cited authority do not prove that bridge.; J3: It granted audited_clean even though the load-bearing oriented-cycle order is asserted/hard-coded rather than derived from the retained selector and SU(3) integration inputs in the restricted packet.; J4: It treated the hard-coded forward cycle/oriented transport order as derived from the retained graph-first inputs, granting audited_clean despite an unclosed load-bearing premise.; J5: It treated the hard-coded CYCLE/Eij/P23 frame check as a clean derivation of canonical uniqueness from the graph-first route, instead of recognizing the unstated forward-orientation/order assumption.",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": null,
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": null,
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention."
         }
       ],
       "prose_corrections": [],
@@ -185395,7 +185779,7 @@
       "runner_path": "scripts/frontier_pmns_graph_first_cycle_frame_support.py",
       "title": "PMNS Graph-First Cycle Frame Support",
       "transitive_descendants": 1055,
-      "verdict_rationale": "Five-judge panel majority ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: J1: The selector and graph-first SU(3) fiber/base inputs are retained and the finite algebra checks pass, but the load-bearing bridge from those graph data to a unique ordered oriented-cycle frame is not closed in the packet: the forward CYCLE and the 3x3 residual action are introduced rather than derived from residual_swap_op. The claim is therefore exact only conditional on that unratified frame-action premise. | J2: The packet verifies selector minima, graph-basis unitarity, and algebra after a forward cycle C and 3x3 P23 action are defined. It does not close the load-bearing bridge that graph-first SU(3) data canonically choose that forward oriented-cycle transport or identify the 8D residual swap with the hard-coded 3x3 cycle action. The theorem is therefore conditional on that extra bridge. | J3: The selector and SU(3) integration authorities close the three axis minima, residual Z2, selected-axis fiber/base split, residual swap, and 3+1 commutant structure, but the runner hard-codes the forward cycle C and the ordered frame E12,E23,E31. The restricted packet does not derive that oriented cyclic transport order from the cited graph-first data, so the bounded theorem is conditional on that extra canonical-forward-cycle premise. | J4: The selector minima, residual Z2, and selected-axis fiber/base split are supported by the cited retained inputs, but the ordered oriented-cycle frame E12,E23,E31 is obtained only after accepting the hard-coded forward cycle CYCLE. The restricted packet does not derive that forward orientation/order from the graph-first selector or SU(3) integration; the runner checks consequences of the chosen C rather than proving its canonicity. Thus the bounded theorem is supportable only conditionally on that unclosed canonical-forward-cycle premise. | J5: The selector minima, residual Z2 structure, selected-axis fiber/base split, and residual swap are supported by the retained upstream notes and runner. But the decisive ordered cycle frame E12,E23,E31 depends on a hard-coded forward cycle/orientation convention in the primary runner, not on a derived graph-first uniqueness argument from the supplied selector/SU3 integration authorities. The claim is therefore valid only conditionally on accepting that canonical forward-cycle convention."
+      "verdict_rationale": null
     },
     "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16": {
       "audit_date": null,

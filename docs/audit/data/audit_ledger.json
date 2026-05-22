@@ -208262,22 +208262,45 @@
       "verdict_rationale": null
     },
     "quasi_persistent_relaunch_probe_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T23:37:48.545594+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe.",
+          "ordered_lattice_quasi_persistent_relaunch_note": "A bounded numerical control on the fixed 3D ordered-lattice harness h=0.5, W=8, L=12 for the point and compact5 seeds using top-5 reidentification and relaunch."
+        },
+        "dep_claim_type": {
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "bounded_theorem",
+          "ordered_lattice_quasi_persistent_relaunch_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "retained_bounded",
+          "ordered_lattice_quasi_persistent_relaunch_note": "retained_bounded"
+        },
+        "deps": [
+          "ordered_lattice_quasi_persistent_relaunch_2d_note",
+          "ordered_lattice_quasi_persistent_relaunch_note"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "7b5974a35038f216927c434fd5e61a1b3ed3487587e1aa71f1144a3d3a4e4850",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T233727Z-e6b5a96b-quasi_persistent_relaunc-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the fixed lattice, propagates the point packet, compresses the detector-layer state, relaunches it, and computes TV distances and field-response deltas rather than printing hard-coded results. The conclusion is limited to the reported fixed-family bounded surrogate behavior.",
       "claim_id": "quasi_persistent_relaunch_probe_note",
-      "claim_scope": null,
+      "claim_scope": "Bounded numerical replay/control: the provided runner computes one-segment compression-and-relaunch metrics for the fixed 3D ordered-lattice valley-linear family at h=0.5, W=8, L=6, with no persistent-mass or family-generic conclusion.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-22T23:37:48.545594+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -208286,21 +208309,21 @@
         "ordered_lattice_quasi_persistent_relaunch_2d_note"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/two_body_momentum_harness.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 6.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the fixed h=0.5, W=8, L=6 ordered-lattice segment, broad square-window and top-N compressed relaunch states preserve downstream free and weak-field profiles within the reported TV and relative-delta errors, while sharper localization fails.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "2bf3709bf0d80b1efc2ea6f6e0350fec036d6447a3fffff56eb56bb265cc2fce",
       "note_path": "docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the fixed Lattice3D/K/ACTION harness is accepted as the framework primitive for class C rather than requiring a lower-level axiom expansion.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -208347,18 +208370,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/quasi_persistent_relaunch_probe.py",
       "title": "Quasi-Persistent Relaunch Probe Note",
       "transitive_descendants": 11,
-      "verdict_rationale": null
+      "verdict_rationale": "Within the narrow audited scope, the load-bearing step is a first-principles numerical computation on the provided ordered-lattice harness, not a renaming or imported numerical match. The cited authorities are retained_bounded and are used only as bounded context, while the primary runner directly supplies the controlling metrics for this note. The note explicitly avoids upgrading the result to persistent mass, inertial closure, or family-generic behavior, so the bounded conclusion follows on its own terms."
     },
     "qubit_axiom_hardening_note_2026-05-20": {
       "audit_date": null,
@@ -231223,11 +231246,11 @@
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 9.0,
+      "load_bearing_score": 12.0,
       "load_bearing_step": "Given dim_C V = 2, candidate B has per-site dimension infinity while candidate G has per-site dimension 2, so within the explicit two-candidate G-vs-B framing B is ruled out and G is the only dimension-compatible option.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "74065ccbd993058da9e7b595a4e7346d3187ec618300309a57fb926e87d86504",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
       "notes_for_re_audit_if_any": "Second auditor should re-check that the applied scope remains the explicit G-vs-B candidate comparison, not a global classification of all possible matter-generator algebras.",

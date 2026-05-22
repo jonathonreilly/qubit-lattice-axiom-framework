@@ -20,17 +20,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 113 |
 | **retained_no_go** | 148 |
-| **retained_bounded** | 380 |
+| **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1302 |
+| unaudited | 1313 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 25 |
-| `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -51,22 +49,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 614 |
-| `audited_conditional` | 97 |
-| `audited_decoration` | 35 |
+| `audited_clean` | 612 |
+| `audited_conditional` | 90 |
+| `audited_decoration` | 33 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1526 |
+| `unaudited` | 1537 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1024 |
-| `decoration` | 36 |
+| `decoration` | 34 |
 | `meta` | 228 |
-| `no_go` | 238 |
+| `no_go` | 237 |
 | `open_gate` | 113 |
-| `positive_theorem` | 731 |
+| `positive_theorem` | 734 |
 
 | criticality | count |
 |---|---:|
@@ -160,7 +158,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | D | - |
-| `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -202,7 +199,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -454,7 +451,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | claude-opus | - | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | claude-opus | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -749,11 +745,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bh_entropy_rt_ratio_widom_no_go_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -795,13 +789,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
-| `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
@@ -810,7 +800,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
-| `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -839,7 +828,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `alpha_s_derived_note` |
-| `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17` | cross_family | claude-opus | A | `chsh_structural_bound_narrow_theorem_note_2026-05-17` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -863,7 +851,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
-| `multisite_pauli_group_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | judicial_review | codex-gpt-5.5 | A | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
@@ -1483,19 +1470,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `.claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md`
   - `LEFT_HANDED_CHARGE_MATCHING_NOTE.md`
-- **auditor confidence:** high
-
-### `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260522-030039-6656c1a8-axiom_first_cl3_per_site-001`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The central idempotent decomposition `Cl(3,0) ⊗_R C ≅ M_2(C) ⊕ M_2(C)` gives exactly two chirality summands, each with the unique 2-dimensional irreducible module of `M_2(C)`.  _(class `A`)_
-- **chain closes:** True — The in-scope U1-U3 claim follows from the retained `Cl(3)` complexification split theorem and the retained_bounded Pauli irrep uniqueness theorem, plus standard finite-dimensional representation theory. The former U4 physical Hilbert-space identification is explicitly out of scope and is not needed for this audited claim.
-- **rationale:** The load-bearing step is a finite-dimensional algebraic classification/decomposition, not a numerical fit, external comparator, or definition substitution. The cited one-hop authorities are retained-grade (`retained` and `retained_bounded`) and directly cover the complexification split, chirality distinction, and Pauli uniqueness needed for U1-U3. The runner source performs concrete matrix identity checks and sanity probes for the stated algebraic facts; it is supportive rather than a hidden import of a contested premise. The note cleanly excludes the staggered-Dirac/Grassmann U4 bridge from the audited scope.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
@@ -2184,20 +2158,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
 - **auditor confidence:** high
 
-### `chsh_tsirelson_lattice_qubits_bound_note_2026-05-20`
-
-- **Note:** [`CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md`](../../docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md)
-- **claim_type:** `decoration`
-- **claim_scope:** Pair-wise Tsirelson bound ‖C‖ ≤ 2√2 on the framework's qubit lattice (A1: per-site M_2(ℂ), A2: Z^3) for dichotomic self-adjoint involution observables at distinct sites, with saturation witnessed by a Bell state |Φ⁺⟩ and the standard σ_z/σ_x configuration.
-- **audit_status:** ~~audited_decoration~~
-- **effective_status:** `decoration_under_chsh_structural_bound_narrow_theorem_note_2026-05-17`  (reason: `decoration_parent_retained`)
-- **auditor:** `claude-audit-loop-2026-05-19-chsh-tsirelson`  (claude-opus; independence=cross_family)
-- **load-bearing step:** For dichotomic Pauli-involution observables A_i, B_j at distinct Z^3 sites x ≠ y with tensor locality [A_i ⊗ I, I ⊗ B_j] = 0, the CHSH operator C = A_1⊗B_1 + A_1⊗B_2 + A_2⊗B_1 − A_2⊗B_2 satisfies ‖C‖ ≤ 2√2 by Tsirelson's 1980 expansion C² = (A_1²+A_2²)⊗(B_1²+B_2²) + [A_1,A_2]⊗[B_1,B_2] combined with ‖[A_1,A_2]‖,‖[B_1,B_2]‖ ≤ 2, saturated at maximally entangled qubit pairs.  _(class `A`)_
-- **chain closes:** True — The bound and the saturating witness follow directly from the retained CHSH structural bound narrow theorem (chsh_structural_bound_narrow_theorem_note_2026-05-17), which already derives ‖S_op‖ ≤ 2√2 via the Landau identity S_op² = 4I − [A_0,A_1][B_0,B_1] and explicitly exhibits the σ_z/σ_x Bell-state saturator using retained Cl(3) per-site Hilbert dim two. The 2026-05-20 note reproduces that same algebra under tensor-locality (retained) on Z^3 (A2) and adds only the labels 'Tsirelson bound' and 'Z^3 pair-wise uniformity', plus a comparison to the PR-box bound (cited as standard mathematics).
-- **rationale:** Issue: The note's load-bearing derivation is an exact algebraic restatement of the already-retained parent chsh_structural_bound_narrow_theorem_note_2026-05-17 — same Tsirelson/Landau identity (4), same Pauli commutator-norm bound (6), same Bell-state saturation construction (Step 2 vs parent Part 3). The note explicitly disclaims being a derivation of Tsirelson's theorem from A1+A2 ('Not a derivation of Tsirelson's theorem from A1+A2 (the theorem itself is standard QI; the framework cites it)') and admits the Tsirelson 1980 argument as an imported standard QI result. Why this blocks bounded_theorem: the chain reduces to a single retained parent (chsh_structural_bound) plus standard mathematics, with zero (D) checks and no independent runner — this is the audit-lane definition of algebraic decoration per ALGEBRAIC_DECORATION_POLICY.md §1. The Z^3 'pair-wise uniformity' (Step 4) and the PR-box comparator (Step 3) are convention-labeling and standard-citation, not new physical content. Repair target: roll the content into a 'Tsirelson-bound corollary' annotation under the retained parent; do not promote as an independent bounded_theorem. Claim boundary until fixed: the parent's retained Tsirelson bound and Bell-saturating witness already cover the substantive content; the lattice qubit pair labels are usable as descriptive prose but should not be presented as a separately retained theorem.
-- **decoration parent:** `chsh_structural_bound_narrow_theorem_note_2026-05-17`
-- **auditor confidence:** high
-
 ### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`
 
 - **Note:** [`CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md)
@@ -2395,30 +2355,15 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 ### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
 
 - **Note:** [`CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-dimensional complex representations of the real algebra Cl(3,0) generated by gamma_i^2 = I and gamma_i gamma_j = -gamma_j gamma_i for i != j, proving the Pauli 2D irreps, central omega^2 = -I, and the two chirality classes; physical Hilbert-space identification is not audited.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260521-215638-bb10cae5-cl3_pauli_irrep_uniquene-004`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with the two summands distinguished by omega = +/- i, and each summand having the unique C^2 irrep.  _(class `A`)_
-- **chain closes:** True — The Pauli and omega identities close directly from the stated Clifford relations, and the Wedderburn decomposition supplies the finite-dimensional irrep classification. The physical per-site Hilbert-space identification is explicitly conditional and outside the load-bearing algebraic theorem.
-- **rationale:** The runner source performs actual exact Sympy matrix computations for the Pauli anticommutators, omega^2, centrality, chirality idempotents, inequivalence of the two canonical irreps, and tensor-dimension checks; it is not merely printing constants. The uniqueness statement rests on the standard algebraic decomposition quoted in the proof, not on numerical fitting or an external comparator. Within the restricted real-Cl(3,0) algebraic scope, no open downstream physical bridge is imported.
-- **auditor confidence:** high
-
-### `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02`
-
-- **Note:** [`CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md`](../../docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md)
 - **claim_type:** `positive_theorem`
-- **claim_scope:** Per-site Hilbert dimension 2 and finite-block tensor-product dimension 2^|Λ| for a Cl(3) site Hilbert space identified with a faithful irreducible complex Cl(3) representation.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T124913Z-34ddc3b9-cl3_per_site_hilbert_dim-01`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** The framework's per-site algebra at every x ∈ Z^3 is Cl(3), and the site Hilbert space is the faithful irreducible representation; by the cited uniqueness theorem, dim_C H_x = 2.  _(class `A`)_
-- **chain closes:** False — The abstract Cl(3) representation-theoretic dimension follows from the cited retained_bounded authority, but the physical identification of each lattice-site Hilbert space with that faithful irreducible Cl(3) module is imported as a structural bridge. The cited authority explicitly moved the physical per-site Hilbert-dimension bridge out of scope and says downstream consumers should cite the staggered-Dirac/Grassmann substep instead.
-- **rationale:** The runner verifies Pauli anticommutation, irreducibility of the Pauli module, unitary conjugacy preservation, and the tensor-product dimension arithmetic, but it does not establish the missing bridge from the physical lattice site Hilbert space to a faithful irreducible Cl(3) module. The one-hop cited authority is retained_bounded for abstract physical-Cl(3)-only U1–U3 content, while explicitly excluding U4, the per-site Hilbert-dimension conclusion on the framework baseline. Therefore the claim depends on an imported site-Hilbert-space identification not closed by this restricted packet.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
-- **auditor confidence:** high
+- **claim_scope:** Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260522T150808Z-cl3_pauli_irrep_uniqueness_narrow_theore-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with summands distinguished by omega = +/- i, yields exactly the two faithful irreducible complex 2-dimensional representations.  _(class `A`)_
+- **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem.
+- **auditor confidence:** judicial_panel_majority
 
 ### `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`
 
@@ -2645,21 +2590,6 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within that finite scoped sweep, the runner source computes the instantaneous and source-driven fields, zero-source reduction, sign counts, mean shifts, and log-log exponents, and the stdout matches the source note. The result does not establish any broader no-go for other coupled-field architectures, families, gain rules, or source laws.
 - **rationale:** The note is clean only as a bounded computational no-go. The runner does not hard-code the reported table; it constructs the fields over the generated families and computes the reduction check, sign survival, and fitted exponents, with no cited upstream dependency needed for the stated finite result. The source note accurately reports the runner output and keeps the safe conclusion to exact zero-source reduction, sign survival on sampled rows, and failure of clean linear scaling for this minimal architecture. Residual risk is scope control: it must not be cited as excluding unsampled architectures, parameters, DAG families, or a separately derived physical mass observable.
 - **auditor confidence:** medium
-
-### `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17`
-
-- **Note:** [`CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** For the explicitly specified Cl(3) Pauli internal factor and even-L Z^3 lattice C_lat, P_lat operators, (CP)^2 is a scalar ε I_V with ε fixed by the lattice inversion convention.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-cpt_c3_cp_squared_scalar-015`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** (CP)^2 = (C_lat P_lat)^2 ⊗ (G_C G_P)^2 = (ε_lat I_lat) ⊗ I_int = ε_lat I_V.  _(class `A`)_
-- **chain closes:** False — The algebraic computation itself closes on the explicit matrices: the orbital and internal factors square to scalars and tensor to ε I_V. However, one cited load-bearing authority is marked decoration_under_cl3_complexification_split rather than retained-grade under the rubric.
-- **rationale:** The load-bearing step is a genuine finite-dimensional algebraic identity check over the explicit C and P operators, and the runner source actually constructs the Pauli, lattice, permutation, and tensor-product matrices rather than merely printing constants. The runner output reports PASS=44, FAIL=0, all class-A exact symbolic checks. The restricted packet nevertheless includes CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md with effective_status decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10, which is not retained-grade under the provided verdict rules.
-- **open / conditional deps cited:**
-  - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
-- **auditor confidence:** high
 
 ### `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17`
 
@@ -7117,18 +7047,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
 
-### `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Standalone Hilbert-space-algebra identity that on a finite tensor-product Hilbert space H = (x)_x H_x with finite-dimensional per-site factors H_x, raw equal-time embedded operators O_x = id (x) a_x (x) id and O_y at distinct sites x != y commute exactly: [O_x, O_y] = 0 (L1). Tensor-factorization corollary O_x O_y = a_x (x) a_y (L3). Distinct-site Pauli-ladder commutation [sigma_a^x, sigma_b^y] = 0 in the raw (ungraded) tensor representation (L2). Per-site Cl(3) instance (L4) via the retained-grade per-site uniqueness dep providing H_x = C^2 and A_x = M_2(C). Explicitly excludes (M2) Lieb-Robinson lightcone bound, (M3) continuum spacelike microcausality, CAR/Jordan-Wigner graded structure, reflection-positivity, spectrum-condition, cluster-decomposition, and emergent-Lorentz authorities.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `claude-audit-loop-2026-05-19-lr-equal-time`  (claude-opus; independence=cross_family)
-- **load-bearing step:** None  _(class `None`)_
-- **chain closes:** None — L1: standalone multilinear identity from disjoint tensor-position embedding; no upstream input required beyond finite-dim per-site H_x. L2 and L3 follow from L1 by substitution and trivial rewrite. L4: per-site Cl(3) instance via retained-grade axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 (audited_clean, retained_bounded). Runner verifies parametric load-bearing step symbolically with counterfactuals.
-- **rationale:** Pattern A narrow rescope isolating the load-bearing (M1) equal-time tensor-factorization identity from the parent AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01 bundle. The load-bearing step is one line of multilinear algebra: embedded operators O_x = id (x) a_x (x) id and O_y = id (x) id (x) a_y on disjoint tensor positions satisfy O_x . O_y = ((x)_{z not in {x,y}} id_{H_z}) (x) a_x (x) a_y = O_y . O_x by tensor-product disjoint-factor identity action. Runner audit_companion_lieb_robinson_equal_time_tensor_locality_exact_2026_05_10.py verifies the load-bearing step at exact sympy symbolic precision over 8 free symbolic 2x2 matrix entries (parametric in a, b -- not hard-coded), 17/17 PASS: (a) symbolic [O_x, O_y] = 0 on C^2 (x) C^2; (b) tensor-factorization O_x . O_y = a (x) b; (c) Pauli instance [sigma_3, sigma_3], [sigma_+, sigma_-], [sigma_+, sigma_3], [sigma_-, sigma_3] = 0 at distinct sites; (d) raw tensor-product Pauli-ladder commutation [sigma_+^x, sigma_+^y] = 0 with explicit boundary that JW/graded anticommutation is not asserted; (e) 3-site extension [O_1, O_3] = 0 through identity at site 2; (f) counterfactual [sigma_+^x, sigma_3^x] != 0 and [sigma_+^x, sigma_-^x] = sigma_3^x same-site (confirms locality is non-trivial); (g) cited dep graph-visibility check. Sole cited dependency axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29 is audited_clean with effective_status: retained_bounded (used only in L4 to supply H_x = C^2 and A_x = M_2(C); L1-L3 hold for any finite-dim per-site H_x). No PDG observed values, no literature numerical comparators, no fitted selectors, no admitted unit conventions consumed. No reflection-positivity, no spectrum-condition, no cluster-decomposition, no emergent-Lorentz authority load-bearing. Claim is not downstream of the recent 596637adb finite-volume Lieb-Robinson cluster-decomposition salvage (2026-05-19): the salvage lands a separate spatial_cluster_decomp_lieb_robinson_real_2026-05-19 row addressing dynamical (M2) lightcone-driven cluster decomposition with Heisenberg evolution and finite-range Hamiltonian structure, which this narrow note explicitly disclaims (lines 117-129) and does not consume. Residual risk: L4 depends on the per-site uniqueness row, which is retained_bounded (audited_clean bounded_theorem). L1-L3 are independent of any specific per-site Hilbert structure beyond finite-dimensionality and require no further authority. Vocab lint clean. Not a no_go and rationale does not name walls; N1-N8 gate not triggered.
-
 ### `linear_response_derivation_note`
 
 - **Note:** [`LINEAR_RESPONSE_DERIVATION_NOTE.md`](../../docs/LINEAR_RESPONSE_DERIVATION_NOTE.md)
@@ -7538,26 +7456,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The retained content is a narrow finite-runner claim, not a physical tidal-field theorem: the current runner recomputes the same-site cancellation, q_test = 0 inert control, dipole baseline, and two centered quadrupole width responses. The quadrupole rows support the stated shape-sensitive width channel while the note explicitly disclaims full tensor gravity, relativistic tidal fields, and a general multipole expansion. Residual risk is only finite-configuration scope, plus a harmless rounded-ratio mismatch where the prose says 1.969 and the live runner prints +1.968; the audit does not retain anything beyond the tested ordered-lattice configuration.
 - **auditor confidence:** high
 
-### `multisite_pauli_group_theorem_note_2026-05-02`
-
-- **Note:** [`MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`](../../docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `decoration`
-- **claim_scope:** Algebraic N-qubit Pauli-group decoration: given admitted H=⊗_{x=1}^N C^2 and per-site σ_{i,x} acting on disjoint tensor factors, P_N has normal form ζ∏_x Q_x with ζ∈{±1,±i} and Q_x∈{I,σ1,x,σ2,x,σ3,x}; hence |P_N|=4^{N+1}, Z(P_N)={±I_N,±iI_N}, P_N/Z(P_N)≅(Z_2×Z_2)^N, 1→Z_4→P_N→(Z_2×Z_2)^N→1, and element orders divide 4. The physical framework-Fock-space bridge and M6 minimal-3N-generator claim are not ratified.
-- **audit_status:** ~~audited_decoration~~
-- **effective_status:** `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`  (reason: `decoration_parent_retained`)
-- **auditor:** `codex-judicial-multisite-pauli-20260522-20260521-multisite_pauli_group_theorem_note_2026--majority`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** Pauli tensor-product normal form plus the collapse of all per-site scalar phases to one global Z_4; disjoint-site commutation and single-site Pauli anticommutation then give order, center, quotient, and extension.  _(class `A`)_
-- **chain closes:** False — The core order/center/quotient/extension statements follow once the Pauli matrices and tensor-product site action are admitted, and the runner corroborates N=1,2,3 plus the P_2 center. That makes the row algebraic decoration under the upstream Pauli/qubit setup, not an independent positive theorem with a new physical bridge or comparator. The original broad scope also contains an unratified M6 overclaim: the listed 3N involutory Pauli generators are convenient but not minimal for N>1. Therefore the clean positive C tuple overstates the result; the second audited_decoration/decoration/A tuple is the applyable safe record.
-
-Five-judge panel breakdown: 4x ('second', 'audited_decoration', 'decoration', 'A'); 1x ('hybrid', 'audited_conditional', 'bounded_theorem', 'A').
-- **rationale:** The core order/center/quotient/extension statements follow once the Pauli matrices and tensor-product site action are admitted, and the runner corroborates N=1,2,3 plus the P_2 center. That makes the row algebraic decoration under the upstream Pauli/qubit setup, not an independent positive theorem with a new physical bridge or comparator. The original broad scope also contains an unratified M6 overclaim: the listed 3N involutory Pauli generators are convenient but not minimal for N>1. Therefore the clean positive C tuple overstates the result; the second audited_decoration/decoration/A tuple is the applyable safe record.
-
-Five-judge panel breakdown: 4x ('second', 'audited_decoration', 'decoration', 'A'); 1x ('hybrid', 'audited_conditional', 'bounded_theorem', 'A').
-- **open / conditional deps cited:**
-  - `Only if promoted beyond decoration: retained bridge from physical Cl(3) local algebra to framework per-site H_x≅C^2.`
-- **decoration parent:** `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
-- **auditor confidence:** high
-
 ### `native_gauge_closure_note`
 
 - **Note:** [`NATIVE_GAUGE_CLOSURE_NOTE.md`](../../docs/NATIVE_GAUGE_CLOSURE_NOTE.md)
@@ -7706,37 +7604,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The computed fine-h joint fit gives q=1.1923 and p=0.4468, so the h-stable critical schedule scales as h^(-2.6684) and reaches s_critical(0.0625)=1.2847e-01, above the stated small-field threshold 0.01.  _(class `C`)_
 - **chain closes:** True — The runner source actually constructs the lattice, propagates amplitudes, computes gravity/Born/k=0 rows, fits the joint log response, and performs the critical-strength comparison. The cited deterministic-rescale and high-precision notes are retained-grade support for using the Born-clean rescaled lane through the checked spacings.
 - **rationale:** Within the stated finite-window scope, the conclusion follows from a first-principles framework computation rather than from a copied or renamed upstream number. The runner output matches the note's quoted exponents, guards, R^2, and critical-strength value, and the source code shows those values are computed from the lattice propagation and ordinary least-squares fit. The small-field cutoff is a stated harness guard, so the audited conclusion is only that the fitted critical schedule fails that stated guard, not a universal no-go theorem.
-- **auditor confidence:** high
-
-### `no_per_site_bosonic_ccr_theorem_note_2026-05-02`
-
-- **Note:** [`NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `no_go`
-- **claim_scope:** No exact bounded per-site bosonic CCR [a,a^dagger] = I_Hx on the physical Cl(3) lattice-site Hilbert space H_x; collective or effective bosonic limits are out of scope.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T125009Z-34ddc3b9-no_per_site_bosonic_ccr_-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The note argues that tr([a,a^dagger]) = 0 for finite-dimensional H_x, while [a,a^dagger] = I_Hx would give tr(I_Hx) = dim_C H_x = 2 != 0.  _(class `A`)_
-- **chain closes:** False — The trace contradiction is valid once a finite nonzero per-site Hilbert dimension is established. The restricted packet does not establish dim_C H_x = 2, because the sole cited authority explicitly moved that physical per-site dimension bridge out of its audited scope.
-- **rationale:** The finite-dimensional trace obstruction is standard algebra, and the runner checks only that obstruction with the dim-2 premise effectively hard-coded. The cited authority is retained_bounded only for the physical-Cl(3)-only U1-U3 representation classification, while U4, the physical per-site Hilbert dimension conclusion, is explicitly out of scope. No-Go Discipline N3/N7 blocks a clean no-go: the strongest same-packet steelman is that H_x is not established as exactly the cited 2-dim module in this restricted packet. A retained one-hop bridge from the abstract Cl(3) irrep dimension to physical dim_C H_x = 2 is missing.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
-  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
-- **auditor confidence:** high
-
-### `no_per_site_chirality_theorem_note_2026-05-02`
-
-- **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `no_go`
-- **claim_scope:** No M in M_2(C) on a single Pauli Cl(3) irrep anticommutes with all three σ_i and squares to I; the framework per-site-Hilbert application depends on a separate Pauli-site bridge.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T125330Z-34ddc3b9-no_per_site_chirality_th-01`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Decomposing M = a·I + Σ_k b_k·σ_k gives {M, σ_j} = 2a·σ_j + 2b_j·I, so anticommuting with all three σ_j forces M = 0.  _(class `A`)_
-- **chain closes:** False — The Pauli-basis algebraic no-go closes inside M_2(C), and the runner genuinely checks those matrix identities. The stronger framework claim that the physical per-site Hilbert is this Pauli M_2(C) representation is not supplied by the cited authority, which explicitly moved that bridge out of scope.
-- **rationale:** The load-bearing step is a valid class-A algebraic closure over the Pauli representation: only the zero matrix anticommutes with all three Pauli generators, so no involutive gamma_5 exists in M_2(C). The no-go gate does not find a counter-route inside the stated M_2(C) Pauli scope, including the negative-chirality sign flip. However, gate N3 exposes a hidden bridge: the source note cites the per-site uniqueness theorem for H_x ≅ C^2 with gamma_i mapped to sigma_i, while the provided authority says the physical per-site Hilbert bridge was moved out of its scope. The result is therefore conditional unless that bridge authority is supplied or the claim is narrowed to the abstract Pauli-irrep no-go.
-- **open / conditional deps cited:**
-  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`
@@ -7999,36 +7866,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** None  _(class `A`)_
 - **chain closes:** None — Chain does not close: load-bearing step in Step 2 applies continuum 4-component Dirac parity P_Dirac = gamma^0 to operators that the framework's single-component staggered substrate cannot host without a separate SME-bilinear-operator-basis-on-staggered-substrate bridge. The same bridge is the explicit missing-bridge demotion in the parent cpt_exact_note (2026-05-19 narrowing) and in PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30. N1, N3, N4, N7, N8 fail under no-go-discipline.
 - **rationale:** Issue: The note's load-bearing 'no dim-5 LV operator can be added' conclusion identifies four 4-component-Dirac SME-style structures (gamma^mu partial_nu partial_rho, partial_mu partial_nu, gamma_5 gamma^mu partial_nu, sigma^{mu nu} partial_rho with P_Dirac = gamma^0) with admissible single-flavor, single-component staggered-fermion bilinears on Z^3, then computes parity weights using continuum 4x4 Dirac structure (Step 2, runner Tests 2-3). The staggered substrate of the framework is single-component (note line 60: 'single-component staggered fermions'), but the parity argument is executed on the 'standard 4-dimensional Dirac algebra in the chiral (Weyl) basis with P_Dirac = gamma^0' (line 82). The map from single-component staggered psi(x) on Z^3 to a 4-component Dirac field whose parity is P_Dirac = gamma^0 — together with the assertion that the listed four structures exhaust the SME-style dim-5 basis — is the SME bilinear-operator-basis-on-staggered-substrate bridge that the parent CPT_EXACT_NOTE (2026-05-19 narrowing) explicitly demoted to admitted: 'the identification of these vanishing Hamiltonian-sector residuals with the canonical SME coefficients ... requires a retained SME bilinear-operator-basis-on-staggered-substrate derivation proving canonical normalization and basis completeness, which this note does not supply.' The PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30 retained scope is also explicitly conditional on the same missing bridge (audited_clean as bounded_theorem with the SME bilinear basis-completeness deferred). N1-N8 outcomes: N1 FAIL (note enumerates exactly 4 operators and claims basis-completeness 'the four ... structures covered are exactly' without proof; alternative-route R5 = lattice-operator-basis enumeration completeness is not closed); N2 PASS (the three explicit scope bounds are independent); N3 FAIL (prose 'standard 4-dimensional Dirac algebra' / 'canonical SME-style basis' on lines 82, 103, 253 conceals an admitted bridge as 'standard/canonical'); N4 FAIL (cited witness cpt_exact_note residual is the Hamiltonian-sector identity epsilon H_0 epsilon = -H_0 on single-component fermions; claim residual is P-odd parity weights on 4-component Dirac-structured operators — residuals differ); N5 PASS-narrow (operator-level statements hold for the four explicit Dirac structures at the algebra level); N6 PASS (not load-bearing); N7 FAIL — convincing steelman: 'the parity-odd weight of e.g. gamma^1 partial_2 partial_2 is a fact about continuum 4-component Dirac structure under continuum parity; the framework is single-component staggered, and the staggered-to-Dirac dictionary produces taste structures so the 4x4 Dirac parity weight does not mechanically transfer to staggered lattice parity P = P_inv * epsilon without the canonical-normalization and basis-completeness bridge that the parent CPT note explicitly admits is missing'; N8 FAIL (the same SME-basis bridge gap was used to narrow CPT_EXACT_NOTE's all-SME corollary in 2026-05-19 via the import-retirement / scope-narrow mechanism; the same mechanism applies here and was not used). Runner closes only what it computes: epsilon H_0 epsilon + H_0 = 0 at L=4,6,8 (single-component, OK) and abstract parity-weight identities on 4x4 Dirac matrices with P_Dirac = gamma^0 (matrix algebra, OK); it does NOT verify that the listed 4-component Dirac structures correspond to admissible single-flavor staggered-lattice bilinears or that the basis is complete. Why this blocks: the no-go conclusion 'no additional dim-5 fermion-bilinear LV operator in the SME-style basis can be added to the staggered lattice action' is over-broad until the SME-bilinear-operator-basis-on-staggered-substrate bridge that the parent CPT note explicitly admits is supplied. The narrow retained content (per-operator P-weight identities on 4x4 Dirac structures, plus epsilon H_0 epsilon = -H_0 on the single-component lattice) is fine; the bridge to a lattice no-go statement is not. Repair target: either (a) wire a retained dependency edge to a future SME-bilinear-operator-basis-on-staggered-substrate-derivation note proving canonical normalization and basis completeness for dim-5 staggered bilinears, then re-audit, or (b) narrow the note's claim scope to the per-operator algebraic parity-weight identity on the four named 4x4 Dirac structures plus the lattice identity epsilon H_0 epsilon = -H_0, dropping the 'no dim-5 LV operator in the SME basis can be added to the lattice action' lattice-level no-go conclusion until the bridge is supplied. Claim boundary until fixed: the algebraic identities (per-candidate Dirac-structure P-weights = -1 and P-symmetric projection = 0 on the four named 4x4 structures, plus epsilon H_0 epsilon = -H_0 on the single-component lattice) may be safely said as bounded algebraic facts; the lattice-action no-go conclusion may not.
-
-### `pauli_group_order_theorem_note_2026-05-02`
-
-- **Note:** [`PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md`](../../docs/PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Pauli group generated by σ_i on the claimed framework per-site Hilbert H_x ≅ C², including |P_1|=16, center {±I, ±iI}, Klein-four quotient, and element orders dividing 4.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T125613Z-34ddc3b9-pauli_group_order_theore-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Applying the Pauli multiplication identity repeatedly enumerates the generated multiplicative group as {±I, ±iI, ±σ_a, ±iσ_a}, giving exactly 16 elements.  _(class `A`)_
-- **chain closes:** False — The Pauli-matrix algebra and finite-group enumeration close. The restricted packet does not close the stronger framework identification H_x ≅ C² because the cited authority explicitly moves the per-site Hilbert realization bridge out of its own scope.
-- **rationale:** The runner genuinely computes the Pauli multiplication table, BFS multiplicative closure, center, quotient order, non-abelianness, and order-divides-4 checks; these are class-A algebraic checks, not external or numerical-match evidence. As a theorem about the standard Pauli matrices on C², the result is straightforward. However, the source note claims this as the framework per-site Pauli group on H_x ≅ C² while its only cited authority says the per-site Hilbert realization/dimension bridge is out of scope and should be carried by a separate staggered-Dirac/Grassmann substep. That missing bridge makes the full presented chain conditional.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
-- **auditor confidence:** high
-
-### `per_site_su2_spin_half_theorem_note_2026-05-02`
-
-- **Note:** [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Given a per-site Hilbert identified with the canonical Pauli Cl(3) irrep, S_i=σ_i/2 satisfies the su(2) relations, has Casimir 3/4, and is the irreducible j=1/2 module.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T130020Z-34ddc3b9-per_site_su2_spin_half_t-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** By the cited per-site uniqueness theorem (U2), H_x ≅ C² with γ_i ↦ σ_i, so all subsequent statements are computations in this Pauli basis.  _(class `B`)_
-- **chain closes:** False — The Pauli-matrix su(2) computation closes algebraically, but the restricted cited authority no longer proves that the physical per-site Hilbert is exactly the canonical Pauli C² module. Its U4 per-site Hilbert bridge is explicitly out of scope and moved to another note not included in the packet.
-- **rationale:** The runner genuinely checks Pauli algebra, Casimir, spectrum, and scalar commutant, but it assumes the contested per-site dimension/canonical Pauli identification by setting dim=2 and hard-coding the Pauli matrices. The one-hop authority is retained_bounded for abstract physical-Cl(3)-only U1-U3, yet it explicitly states that the physical per-site Hilbert dimension/realization bridge U4 was moved out of scope. Therefore the audited packet proves only the conditional Pauli-irrep spin-1/2 statement, not the full per-site framework claim.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
-- **auditor confidence:** high
 
 ### `persistent_inertial_object_probe_note`
 
@@ -8727,21 +8564,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Net verdict: design-note records three candidate primitives; none is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.  _(class `A`)_
 - **chain closes:** True — The restricted packet supports the scoped open-gate claim: the note repeatedly disclaims theorem or primitive promotion, treats the three proposals as candidate imports, and states the same net no-closure conclusion in the comparative table, net design conclusion, and honest verdict. No direct ledger dependencies are listed, and the sibling probes are expressly contextual rather than load-bearing dependencies.
 - **rationale:** The audited claim is not that SM LH/RH content has been derived, but that the note honestly records three candidate substrate-side primitives and preserves the open-gate boundary. Within that scope the chain closes: P-LH-1 is conditional on importing NCG algebra/order-one structure, P-LH-2 is identified as circular/minimality-failing, and P-LH-3 is identified as insufficient alone. The runner output is consistent with this scoped status and reports 53 passing structural/procedural checks with no external comparator or numerical tuning.
-- **auditor confidence:** high
-
-### `q_integer_spectrum_theorem_note_2026-05-02`
-
-- **Note:** [`Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Given an N-site tensor product of per-site C^2 single-mode fermion Fock spaces with n_x=a_x^† a_x, Q_total has spectrum {0,1,...,N} and charge-k multiplicity C(N,k).
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T125812Z-34ddc3b9-q_integer_spectrum_theor-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Since the mutually commuting n_x have eigenvalues {0,1}, their joint eigenbasis is labeled by binary strings ν and Q_total|ν>=(Σ_x ν_x)|ν>, giving spectrum {0,...,N} with binomial multiplicities.  _(class `A`)_
-- **chain closes:** False — The algebraic spectrum result closes once the per-site C^2 single-mode Fock space is admitted. The restricted packet does not close the framework-level identification of the physical per-site Hilbert space with that C^2 Fock space, because the only cited authority explicitly moves that U4/Grassmann bridge out of scope.
-- **rationale:** The runner genuinely constructs the single-site and tensor-product operators and verifies only algebraic identities: CAR, n spectrum, commutativity, total spectrum, binomial multiplicities, and the sigma_3 formula. There is no external comparator or tuned numerical input. However, the cited Cl(3) authority is retained_bounded only for the physical-Cl(3) U1-U3 representation content and explicitly says the per-site Hilbert/Grassmann realization bridge is not supplied by that note. Therefore the framework-level charge-quantization claim is conditional on a missing one-hop bridge authority.
-- **open / conditional deps cited:**
-  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `qnm_control_hardening_note`

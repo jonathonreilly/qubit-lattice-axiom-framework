@@ -75035,7 +75035,7 @@
       "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "3dcbf8e952f2ef73063f72603d4d856a630ee64ed975be9cf1a2ed56188993af",
+      "note_hash": "259cf94c5f7dd57884ed7f1c39ab80090b6595ef736413da00b03acd2867ee0a",
       "path": "docs/SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
       "runner_path": "scripts/frontier_substrate_to_p_a_forcing.py",
       "title": "Substrate-To-P_A Forcing No-Go Theorem"

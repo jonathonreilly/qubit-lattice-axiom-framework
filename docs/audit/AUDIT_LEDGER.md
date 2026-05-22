@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 113 |
-| **retained_no_go** | 149 |
+| **retained_no_go** | 148 |
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1299 |
+| unaudited | 1300 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 615 |
+| `audited_clean` | 614 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1521 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
@@ -653,7 +653,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block3_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
-| `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -10779,19 +10778,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** False — The Block 4 runner does not derive the claimed per-plaquette cyclical-trace tensor; it hard-codes T[i,i,i,i]=1 while its own comments acknowledge this is a simplification of the actual trace structure. The restricted packet also provides no Block 5 runner source/stdout, so the L_s=2 orientation diagnostics cannot be verified from runner artifacts here.
 - **rationale:** The narrowed scope properly excludes the imported bridge-target, epsilon, and P_candidate numerics, so those do not by themselves force a conditional verdict. However, the load-bearing Block 4 plaquette-tensor assertion is not established by the supplied code: the runner constructs the tensor by direct diagonal assignment rather than deriving the character trace tensor, and the comments mark this representation as a simplifying assertion. Because that tensor structure is explicitly in the narrowed theorem core, the chain does not close on its own terms.
 - **auditor confidence:** medium
-
-### `substrate_to_p_a_forcing_theorem_note_2026-04-30`
-
-- **Note:** [`SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md`](../../docs/SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Within the modeled local event cell H_cell = Lambda^* span(t,x,y,z) with spatial so(3) exterior-power lift, time parity, CPT grading, complex Hilbert structure, and tensor-local number operators, those constraints do not uniquely force P_A because P_3 is a distinct rank-four local equivariant projector.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-fresh-agent-substrate-pa-2026-05-03-b`  (codex-gpt-5; independence=fresh_context)
-- **load-bearing step:** P_3 violates none of the stated constraints (a)-(e). It is not P_A, so uniqueness fails.  _(class `A`)_
-- **chain closes:** True — The chain closes because a single admissible non-P_A witness defeats uniqueness under the granted constraints. It does not close any stronger claim that P_A can never be selected by additional first-order boundary or orientation structure.
-- **rationale:** The no-go is a finite-dimensional counterexample, not a positive substrate selection theorem. The note and runner explicitly construct P_A and the distinct Hamming-weight-three projector P_3 in the same 16-dimensional local model, then verify rank four, locality, complex-linearity, and commutation with the listed spin/time/CPT actions. This is enough to refute the scoped uniqueness implication, provided the claim is kept to the stated local symmetry list and does not assert that every possible stronger boundary or orientation law is excluded.
-- **auditor confidence:** high
 
 ### `symmetry_generated_paired_chokepoint_note`
 

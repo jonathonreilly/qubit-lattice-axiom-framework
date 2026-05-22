@@ -237010,70 +237010,40 @@
       "verdict_rationale": null
     },
     "substrate_to_p_a_forcing_theorem_note_2026-04-30": {
-      "audit_date": "2026-05-03T13:12:09.588688+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 8.655,
-        "transitive_descendants": 284
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-fresh-agent-substrate-pa-2026-05-03-b",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The chain closes because a single admissible non-P_A witness defeats uniqueness under the granted constraints. It does not close any stronger claim that P_A can never be selected by additional first-order boundary or orientation structure.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "substrate_to_p_a_forcing_theorem_note_2026-04-30",
-      "claim_scope": "Within the modeled local event cell H_cell = Lambda^* span(t,x,y,z) with spatial so(3) exterior-power lift, time parity, CPT grading, complex Hilbert structure, and tensor-local number operators, those constraints do not uniquely force P_A because P_3 is a distinct rank-four local equivariant projector.",
+      "claim_scope": null,
       "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-03T13:12:09.588688+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-03T13:10:10.269350+00:00",
-          "auditor": "codex-fresh-substrate-pa-auditor-2026-05-03-01",
-          "auditor_family": "codex-gpt-5",
-          "claim_scope": "Within H_cell=(C^2)^4 with the stated spatial spin-lift, time parity, CPT grading, complex-linearity, and tensor-local number-operator constraints, P_A is not uniquely forced because P_3 is also an allowed rank-four local equivariant projector.",
-          "claim_type": "no_go",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "previous_auditor_family": "codex-fresh-agent",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-03T13:12:09.588429+00:00",
-          "auditor": "codex-fresh-agent-substrate-pa-2026-05-03-b",
-          "auditor_family": "codex-gpt-5",
-          "claim_scope": "Within the modeled local event cell H_cell = Lambda^* span(t,x,y,z) with spatial so(3) exterior-power lift, time parity, CPT grading, complex Hilbert structure, and tensor-local number operators, those constraints do not uniquely force P_A because P_3 is a distinct rank-four local equivariant projector.",
-          "claim_type": "no_go",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "previous_auditor_family": "codex-fresh-agent",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 2,
-      "effective_status": "retained_no_go",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_no_go",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 11.035,
-      "load_bearing_step": "P_3 violates none of the stated constraints (a)-(e). It is not P_A, so uniqueness fails.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "3dcbf8e952f2ef73063f72603d4d856a630ee64ed975be9cf1a2ed56188993af",
+      "note_hash": "259cf94c5f7dd57884ed7f1c39ab80090b6595ef736413da00b03acd2867ee0a",
       "note_path": "docs/SUBSTRATE_TO_P_A_FORCING_THEOREM_NOTE_2026-04-30.md",
-      "notes_for_re_audit_if_any": "Re-check only scope drift: the clean verdict depends on reading the claim as a no-go for the listed local symmetry constraints, not as a global impossibility theorem against stronger boundary/orientation laws.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
@@ -237165,21 +237135,83 @@
             "total_pass": 8
           },
           "verdict_rationale": "The claim is a finite-dimensional no-go, not a positive carrier identification. The load-bearing step is an explicit algebraic counterexample: the runner constructs the substrate actions, verifies P_A, verifies non-P_A P_3 under the same constraints, and enumerates 17 rank-four local equivariant projector classes. No external comparator, tuned value, open dependency, or symbol renaming is needed for the negative conclusion."
+        },
+        {
+          "archived_at": "2026-05-22T11:27:11.320927+00:00",
+          "archived_for_note_hash": "3dcbf8e952f2ef73063f72603d4d856a630ee64ed975be9cf1a2ed56188993af",
+          "audit_date": "2026-05-03T13:12:09.588688+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 8.655,
+            "transitive_descendants": 284
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-fresh-agent-substrate-pa-2026-05-03-b",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The chain closes because a single admissible non-P_A witness defeats uniqueness under the granted constraints. It does not close any stronger claim that P_A can never be selected by additional first-order boundary or orientation structure.",
+          "claim_scope": "Within the modeled local event cell H_cell = Lambda^* span(t,x,y,z) with spatial so(3) exterior-power lift, time parity, CPT grading, complex Hilbert structure, and tensor-local number operators, those constraints do not uniquely force P_A because P_3 is a distinct rank-four local equivariant projector.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-03T13:12:09.588688+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-03T13:10:10.269350+00:00",
+              "auditor": "codex-fresh-substrate-pa-auditor-2026-05-03-01",
+              "auditor_family": "codex-gpt-5",
+              "claim_scope": "Within H_cell=(C^2)^4 with the stated spatial spin-lift, time parity, CPT grading, complex-linearity, and tensor-local number-operator constraints, P_A is not uniquely forced because P_3 is also an allowed rank-four local equivariant projector.",
+              "claim_type": "no_go",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "previous_auditor_family": "codex-fresh-agent",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-03T13:12:09.588429+00:00",
+              "auditor": "codex-fresh-agent-substrate-pa-2026-05-03-b",
+              "auditor_family": "codex-gpt-5",
+              "claim_scope": "Within the modeled local event cell H_cell = Lambda^* span(t,x,y,z) with spatial so(3) exterior-power lift, time parity, CPT grading, complex Hilbert structure, and tensor-local number operators, those constraints do not uniquely force P_A because P_3 is a distinct rank-four local equivariant projector.",
+              "claim_type": "no_go",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "previous_auditor_family": "codex-fresh-agent",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "P_3 violates none of the stated constraints (a)-(e). It is not P_A, so uniqueness fails.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-check only scope drift: the clean verdict depends on reading the claim as a no-go for the listed local symmetry constraints, not as a global impossibility theorem against stronger boundary/orientation laws.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 8,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 8
+          },
+          "verdict_rationale": "The no-go is a finite-dimensional counterexample, not a positive substrate selection theorem. The note and runner explicitly construct P_A and the distinct Hamming-weight-three projector P_3 in the same 16-dimensional local model, then verify rank four, locality, complex-linearity, and commutation with the listed spin/time/CPT actions. This is enough to refute the scoped uniqueness implication, provided the claim is kept to the stated local symmetry list and does not assert that every possible stronger boundary or orientation law is excluded."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 8,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 8
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_substrate_to_p_a_forcing.py",
       "title": "Substrate-To-P_A Forcing No-Go Theorem",
       "transitive_descendants": 1048,
-      "verdict_rationale": "The no-go is a finite-dimensional counterexample, not a positive substrate selection theorem. The note and runner explicitly construct P_A and the distinct Hamming-weight-three projector P_3 in the same 16-dimensional local model, then verify rank four, locality, complex-linearity, and commutation with the listed spin/time/CPT actions. This is enough to refute the scoped uniqueness implication, provided the claim is kept to the stated local symmetry list and does not assert that every possible stronger boundary or orientation law is excluded."
+      "verdict_rationale": null
     },
     "symmetry_generated_paired_chokepoint_note": {
       "audit_date": "2026-05-02T00:58:00.494073+00:00",
@@ -276774,8 +276806,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2320,
-    "re_audit_required": 2,
+    "preserved_existing": 2322,
+    "re_audit_required": 0,
     "row_count": 2366,
     "seeded_new": 0
   }

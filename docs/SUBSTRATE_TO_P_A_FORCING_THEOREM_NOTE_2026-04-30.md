@@ -40,6 +40,50 @@ uniqueness. The repair target is external to this no-go: derive a retained
 first-order boundary/orientation principle that excludes the Hodge-dual
 weight-three sector without defining `P_A` as active.
 
+## Qubit-reframe axiom-structure grounding (2026-05-22)
+
+Under the 2026-05-20 qubit reframe (`MINIMAL_AXIOMS_2026-05-20.md` A1
+canonical statement + `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`
+binding definition), the per-site algebra is canonically committed to
+`Cl(3,0)` with the spatial pseudoscalar `ω_3 = σ_x σ_y σ_z` carrying
+`ω_3² = −𝟙` and `ω_3` central in `Cl(3,0)`. Combined with the derived
+time direction (per `ANOMALY_FORCES_TIME_THEOREM.md`, bounded_theorem
+status on the qubit-reframe lane), the 4D pseudoscalar on
+`H_cell = C^2_t ⊗ C^2_x ⊗ C^2_y ⊗ C^2_z` is
+
+```text
+γ_5 = ω_4 = e_t e_x e_y e_z,
+```
+
+which acts as the algebra-intrinsic Hodge operator. Under the
+framework's "no external Not-reality" discipline (imaginary direction
+is the ω-geometric pseudoscalar, not externally admitted complex), the
+Hamming-weight-3 projector
+
+```text
+P_3 = E_{tVV} + E_{VVV}
+```
+
+is the γ_5-Hodge-dual of `P_A = P_1`:
+
+```text
+P_3 = γ_5 P_1 γ_5^{-1} (modulo standard sign factors).
+```
+
+The no_go's `P_3` counterexample is therefore not an arbitrary
+rank-four projector that happens to satisfy the substrate symmetries
+— it is the **intrinsic γ_5-image** of `P_A` under an algebra
+automorphism. The no_go's conclusion (`P_3` admits the same
+substrate inputs as `P_A`, so `P_A` is not uniquely forced) follows
+directly from γ_5 being central-grading in the algebra rather than
+from `P_3` being a separately chosen counterexample.
+
+This grounding does not change the no_go's claim_type or claim_scope;
+it ties the existing `P_3` counterexample argument to the canonical
+A1 axiom + derived-time chain under the 2026-05-22 axiom-structure
+discipline. The no_go is structurally reinforced: the counterexample
+class is intrinsic, not adversarial.
+
 ## Inputs Granted For The Negative Witness
 
 The runner grants the strongest local version of the requested substrate

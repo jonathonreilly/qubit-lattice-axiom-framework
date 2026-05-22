@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -32,7 +32,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
-| `decoration_under_cpt_exact_note` | 2 |
+| `decoration_under_cpt_exact_note` | 3 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 3 |
@@ -52,20 +52,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 617 |
 | `audited_conditional` | 93 |
-| `audited_decoration` | 31 |
+| `audited_decoration` | 32 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1529 |
+| `unaudited` | 1528 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1024 |
-| `decoration` | 32 |
+| `decoration` | 33 |
 | `meta` | 226 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 735 |
+| `positive_theorem` | 734 |
 
 | criticality | count |
 |---|---:|
@@ -840,6 +840,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -2675,6 +2676,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The narrowed C1 and C2 conclusions follow by direct algebraic substitution from premises stated as hypotheses. No upstream authority is required for this bounded theorem because the premises themselves are not being derived here.
 - **rationale:** The load-bearing content is a genuine class-A algebraic identity check over explicitly stated premises, not a renaming or numerical match. The runner source performs exact SymPy matrix equality checks rather than merely printing constants, and its C1/C2 checks match the proof. The former C3 scalar-square issue has been demoted to a conditional, non-load-bearing corollary, so it does not block the narrowed theorem.
 - **auditor confidence:** high
+
+### `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02`
+
+- **Note:** [`CPT_PARTICLE_ANTIPARTICLE_MASS_EQUALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/CPT_PARTICLE_ANTIPARTICLE_MASS_EQUALITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Particle/antiparticle energy and rest-mass equality (m_particle = m_antiparticle) for sectors exchanged by the declared CPT operator on the framework's retained CPT-invariant Hamiltonian H. This is the one-step observable specialization of [CPT, H] = 0 from cpt_exact_note, obtained by combining the retained CPT commutator with the structural convention that the antiparticle state is the CPT-image of the particle state and the kinematic identification E(p=0) = m.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cpt_exact_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `claude-audit-loop-2026-05-19-cpt-mass`  (claude-opus; independence=cross_family)
+- **load-bearing step:** From [CPT, H] = 0 (retained input from cpt_exact_note), H·(CPT|particle>) = CPT·H|particle> = E·(CPT|particle>), so the CPT-image of an energy eigenstate is an eigenstate with the same eigenvalue; identifying the CPT-image with the antiparticle state (admitted convention) and specializing to p=0 with E(p=0)=m gives m_antiparticle = m_particle.  _(class `A`)_
+- **chain closes:** True — Algebraic specialization of the retained cpt_exact_note [CPT, H] = 0 identity to the mass observable, using two admitted-context inputs (CPT-exchanged sector convention; E(p=0)=m kinematic identification). The proof is three lines of standard linear algebra; no first-principles compute, no new comparator surface beyond the parent.
+- **rationale:** Issue: this note presents a textbook one-step algebraic specialization of cpt_exact_note's [CPT,H]=0 identity to the mass observable as an independent positive theorem. Steps 1-2 of the proof use only the retained commutator plus the admitted CPT-exchanged sector convention; Step 3 specializes to p=0 via the standard kinematic identification E(p=0)=m; Step 4 is a universality observation that no species-specific input was used. The runner verifies algebraic structure on a 4-mode toy block-Hamiltonian (T1-T5 all class A) and includes a useful negative control, but adds no (D) external comparator surface; the experimental K0/K̄0 and e/e+ comparators cited in the corollaries are not load-bearing for the theorem and are not exercised by the runner. The chain is single-parent (only cpt_exact_note as one-hop dep) and there is no new structural integer or compression of the parent. This is the same structural class as the already-decorated sister claim cpt_squared_is_identity_theorem_note_2026-05-02 (audited_decoration under parent cpt_exact_note): a one-step observable extraction from the retained CPT commutator. Why this blocks: per ALGEBRAIC_DECORATION_POLICY §1, single-parent algebraic dependence + no independent (D) comparator + no compression = decoration. The mass-equality consequence is real and physically meaningful, but it does not constitute independent retained content beyond the parent's [CPT,H]=0 statement. Repair target: to re-promote, attach a retained (D) comparator runner that compares a framework-specific particle/antiparticle pair against PDG bounds (e.g., m_K^0 - m_K̄^0 < ~10^-18 GeV, m_p - m_p̄ < ~10^-9 m_p) using a derived (not admitted) sector-pairing rule from the framework's matter-sector bookkeeping. Until that lands, mass-equality is boxed under cpt_exact_note as an algebraic corollary. Claim boundary until fixed: it remains safe to state that 'particle/antiparticle mass equality follows from the retained CPT commutator by one-step algebra' as a derived corollary of cpt_exact_note, without granting it independent retained-grade status.
+- **decoration parent:** `cpt_exact_note`
 
 ### `cpt_squared_is_identity_theorem_note_2026-05-02`
 

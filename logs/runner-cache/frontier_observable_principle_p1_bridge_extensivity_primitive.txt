@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_extensivity_primitive.py
+runner_sha256: aabef915b10d90449c0f495bb935774e78932c385d8c6e63973fe5b58130ca80
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+Runner: extensivity-primitive narrow no_go on P1
+Note:   docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md
+
+==============================================================================
+T1: Note structure check
+==============================================================================
+  [PASS] note contains all required section markers and core statements
+         all required strings present
+
+==============================================================================
+T2: Block-diagonal det factorization + bulk replication (M)
+==============================================================================
+  [PASS] det(D_A ⊕ D_B + J_A ⊕ J_B) = det(D_A+J_A) · det(D_B+J_B) (symbolic)
+         sympy.simplify(LHS - RHS) = 0
+  [PASS] bulk-replication det(D_Λ^2) = det(D_Λ)^2 (symbolic, 2x2)
+         sympy.simplify(det_N - det_Λ^N) = 0
+  [PASS] bulk-replication det(D_Λ^3) = det(D_Λ)^3 (symbolic, 2x2)
+         sympy.simplify(det_N - det_Λ^N) = 0
+  [PASS] bulk-replication det(D_Λ^4) = det(D_Λ)^4 (symbolic, 2x2)
+         sympy.simplify(det_N - det_Λ^N) = 0
+
+==============================================================================
+T3: F_p[J] = r^p block-multiplicative but NOT bulk-extensive
+==============================================================================
+  [PASS] F_p[J_A ⊕ J_B] = F_p[J_A] · F_p[J_B] (multiplicative, symbolic)
+         sympy.simplify((r_A r_B)^p - r_A^p · r_B^p) = 0
+  [PASS] F_p (p ∈ {-2,-1,1/2,2,3}) is NOT bulk-extensive for any tested (r, N)
+         all (p, r, N) combinations exhibit defect (no exceptions)
+  [PASS] symbolic defect at p=1, N=2: r^2 - 2r ≠ 0 generically
+         defect = r*(r - 2) (zero only at r ∈ {0, 2})
+  [PASS] W = log|Z| IS bulk-extensive: log(|Z|^N) = N log|Z| (symbolic)
+         sympy.simplify(log(Z^N) - N log Z) = 0
+
+==============================================================================
+T4: Cauchy integer-scaling correction g(Nx) = N g(x)
+==============================================================================
+  [PASS] g(x) = c·x satisfies (Cg-N): g(Nx) = N g(x) symbolically
+         sympy.simplify(c(Nx) - N(cx)) = 0
+  [PASS] g(x) = x^2 FAILS (Cg-N) at (N=2, x=1): defect = 2 ≠ 0
+         (N·x)^2 - N·x^2 at (2,1) = 2
+  [PASS] g(x) = e^x - 1 FAILS (Cg-N) at (N=2, x=1): defect ≈ (e-1)^2 ≠ 0
+         defect = 2.952492
+  [PASS] g(x) = sin(x) FAILS (Cg-N) at (N=2, x=1): defect ≠ 0
+         defect = sin(2) - 2·sin(1) = -0.773645
+  [PASS] h(x) = g(x)/x is N-scaling-invariant for the linear solution
+         sympy.simplify(h(x) - h(Nx)) = 0
+  [PASS] two-slope continuous witness satisfies g(Nx)=N g(x) but is not g(x)=c x globally
+         g(x)=x for x>=0 and 2x for x<0 satisfies all tested integer scalings
+  [PASS] two-slope witness has different one-sided slopes
+         g(1)=1, -g(-1)=2
+  [PASS] f(r) = c · log r satisfies (Cm-N): f(r^N) = N · f(r) symbolically
+         sympy.simplify(c log(r^N) - N c log r) = 0
+
+==============================================================================
+T5: Pattern L comparison and corrected extensivity residual
+==============================================================================
+  [PASS] Pattern-L comparison and corrected extensivity residual recorded
+         all five vocabularies present
+  [PASS] log r is block-additive: log(r_A · r_B) = log r_A + log r_B
+         sympy.simplify diff = 0
+
+==============================================================================
+T6: open finite-range gate context (live ledger check)
+==============================================================================
+  [PASS] finite-range gate `staggered_dirac_realization_gate_note_2026-05-03` is `open_gate` on live ledger
+         live effective_status = 'open_gate'
+  [PASS] parent `observable_principle_from_axiom_note` is `audited_conditional` (unchanged by this note)
+         live effective_status = 'audited_conditional'
+  [PASS] note explicitly cites finite-range gate, parent, and Route D context
+         all refs present
+
+==============================================================================
+T7: Honest scope check (no_go + non-promotion language)
+==============================================================================
+  [PASS] all required honest-scope strings present
+         all honest-scope strings present
+  [PASS] no forbidden promotion / overclaim strings present
+         no forbidden strings
+
+==============================================================================
+T8: Source-note boundary check
+==============================================================================
+  [PASS] Claim type / Status authority / source-note boundary correct
+         boundary correct
+  [PASS] no forbidden author-side status retention strings
+         clean
+
+==============================================================================
+RESULT  PASS=26  FAIL=0
+==============================================================================
+
+----- stderr -----
+

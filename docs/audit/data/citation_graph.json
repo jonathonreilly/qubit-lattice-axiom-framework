@@ -64534,9 +64534,9 @@
         "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cfbacad6188feec47adf241da85e41edcb80d3aae03c40c0db90af4f5357d855",
+      "note_hash": "c758948cc2ca25e215e35e555d14b3d1e2c78f814baaf74da414f1b8865e3218",
       "path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
-      "runner_path": null,
+      "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
       "title": "Observable-Principle P1 + P2 from Qubit-Trace Generating Functional"
     },
     "observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": {
@@ -81730,6 +81730,6 @@
     "leaf_count": 741,
     "node_count": 2484,
     "root_count": 808,
-    "runners_with_path": 2048
+    "runners_with_path": 2049
   }
 }

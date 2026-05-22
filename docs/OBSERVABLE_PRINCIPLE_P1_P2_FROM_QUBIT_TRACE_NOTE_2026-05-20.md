@@ -290,6 +290,69 @@ are theorems.
   dependency-chain update
 - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md` — Grassmann gate closure target; the gate-conditional bridge in Step 4 depends on this gate closing
 
+## Runner companion
+
+Primary runner:
+[`scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py`](../scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py)
+verifies Step 1 and Step 2 of this note at exact sympy precision on small
+qubit blocks plus randomized numeric checks on 2-site and 3-site qubit
+registers:
+
+- **T1**: Symbolic 1-qubit factorization
+  `exp(-(H_A ⊗ I + I ⊗ H_B + J_A ⊗ I + I ⊗ J_B))
+  = exp(-(H_A + J_A)) ⊗ exp(-(H_B + J_B))` at exact sympy precision on
+  diagonal Hermitian inputs, plus the trace identity (Eq. 6 of the note).
+- **T2**: log-additivity follow-through
+  `W_qubit[J_A ⊕ J_B] = W_qubit[J_A] + W_qubit[J_B]` at high-precision
+  rational sympy evaluation (50-digit) on three independent substitutions
+  (Eq. 8 of the note).
+- **T3**: Trace-tensor identity `Tr(B_A ⊗ B_B) = Tr(B_A) · Tr(B_B)` on
+  10 random rational 2x2 pairs (the linear-algebra input used in Step 1,
+  Eq. 6).
+- **T4**: Boundary normalization `W_qubit[0] = 0` (Step 3 / P4)
+  symbolically and on a numeric 4x4 Hermitian sample.
+- **T5**: 2-site numeric factorization on 25 random Hermitian
+  (`H_A, H_B, J_A, J_B`) 2x2 samples, residual `< 1e-12`.
+- **T6**: 3-site (8x8) numeric factorization on 15 random Hermitian
+  (`H_A` 2x2, `H_B` 4x4, `J_A` 2x2, `J_B` 4x4) samples, residual
+  `< 1e-10`. (Sympy `Matrix.exp` on 8x8 symbolic Hermitian times out
+  > 60 s; exact-symbolic verification is done at T1 / T2 on the
+  smaller 4x4 case, numeric at T6 confirms the same identity at
+  higher dimension.)
+- **T7**: Positivity (Step 2 / P2 side condition).  Generic 2x2 Hermitian
+  `M` parameterized by 4 real symbols `(x, y, z, w)`; verify the
+  eigenvalue discriminant `(x-y)^2 + 4(z^2 + w^2)` is a manifest sum
+  of real squares so eigenvalues are real; verify `Tr(exp(-M)) > 0`
+  on a symbolic substitution and on 100 random Hermitian samples
+  (d in {2, 4}, 50 each).
+- **T8**: CPT-equivariance shape check
+  `Tr((exp(-(H+J)))^*) = Tr(exp(-(H + J^*)))` for real `H` and
+  Hermitian `J` (Step 2 CPT footnote), numeric on a 4x4 instance, plus
+  modulus equivariance `|Z[J]| = |Z[ΘJΘ^{-1}]|`.
+- **T9**: Source-note boundary check — required strings
+  (`bounded_theorem candidate`, `independent audit lane owns the verdict`,
+  `gate-conditional`, `audited_conditional`) present and forbidden
+  overclaim phrases absent.
+- **T10**: Independence (microcausality input, Eq. §1 of "Admitted
+  inputs") — `[J_A ⊗ I, I ⊗ J_B] = 0` for arbitrary 2x2 Hermitian
+  `J_A, J_B` at exact symbolic precision.
+
+Reproduction:
+
+```bash
+python3 scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py
+```
+
+Expected scorecard: PASS=23 FAIL=0 at exact sympy precision plus the
+named numeric tolerances on randomized samples.  A passing run supplies
+the bounded structural content for Steps 1 + 2 + 4 of the note above;
+it does not retag the broad parent row `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
+and does not internalize the Grassmann/Berezin bridge to the `det` form
+(which remains gate-conditional on
+`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`).
+
+`runner_path: scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py`
+
 ## What this file is not
 
 - Not a derivation of the Grassmann/Berezin bridge to the |det| formulation (admitted, gate-conditional).

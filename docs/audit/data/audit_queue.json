@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 417,
+    "critical": 416,
     "high": 222,
     "leaf": 335,
     "medium": 347
@@ -639,30 +639,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 959
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
-      "claim_scope": "Under A1/R1 k=1 one-qubit-per-site content, each lattice site has H_x \u2245 C^2 with Pauli Cl(3) action, and finite \u039b has dim_C \u2297_{x\u2208\u039b} H_x = 2^|\u039b|.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.803,
-      "note_path": "docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/cl3_per_site_hilbert_dim_two_check.py",
-      "transitive_descendants": 892
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -37735,6 +37711,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 29,
-  "total_pending": 1321
+  "ready_count": 28,
+  "total_pending": 1320
 }

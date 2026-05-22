@@ -87,9 +87,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1080 | 54.08 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `minimal_axioms_2026-05-03` | meta | critical | 1052 | 52.54 | `unaudited` | meta |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1052 | 48.04 | `unaudited` | unaudited |
-| 4 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1052 | 41.54 | `unaudited` | unaudited |
-| 5 | `minimal_axioms_2026-04-11` | meta | critical | 1084 | 40.08 | `unaudited` | meta |
-| 6 | `graph_first_su3_integration_note` | positive_theorem | critical | 1213 | 39.25 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1213 | 43.25 | `audited_clean` | **retained** |
+| 5 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 1052 | 41.54 | `unaudited` | unaudited |
+| 6 | `minimal_axioms_2026-04-11` | meta | critical | 1084 | 40.08 | `unaudited` | meta |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 1121 | 38.63 | `unaudited` | unaudited |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1052 | 38.54 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1111 | 38.12 | `unaudited` | unaudited |

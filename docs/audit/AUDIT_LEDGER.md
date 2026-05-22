@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 118 |
 | **retained_no_go** | 148 |
-| **retained_bounded** | 365 |
+| **retained_bounded** | 366 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 612 |
+| `audited_clean` | 613 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1547 |
+| `unaudited` | 1546 |
 
 | claim_type | count |
 |---|---:|
@@ -605,6 +605,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9974,6 +9975,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The staggered force-first lane is not confined to periodic cubic lattices; it survives a narrow layered acyclic template with forward-depth bias, machine-clean norm/Born, and stable inward proxy response under the prescribed attractive sign, even though the live transport operator is still symmetrized rather than truly directed.  _(class `C`)_
 - **chain closes:** True — The runner directly evaluates the three layered DAG-derived configurations and reproduces the load-bearing 6/6 score surface, TOWARD forces, N-stability, Born linearity, forward-depth fraction, and state-family robustness. The small norm-row roundoff difference remains at machine precision and does not affect the bounded compatibility claim.
 - **rationale:** The source note is narrowly framed as a compatibility control, not a proof of truly directed DAG Hamiltonian transport. The current runner gives 6/6 on all three configurations, with TOWARD force, 14/14 N-stability, machine-clean norm/Born behavior, forward-depth fraction 0.1266, and 3/3 state families. Residual risk is limited to the symmetrized-adjacency scope boundary, which the note states explicitly.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T221909Z-e1b97348-staggered_dirac_substep1-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Assume k(x)=1, i.e. (n_+(x), n_-(x)) is (1,0) or (0,1); then H_x = rho_+ or rho_-, in either case dim_C H_x = 2.  _(class `A`)_
+- **chain closes:** True — The retained Cl(3) complexification split gives the two 2-dimensional chirality irreps and the semisimple multiplicity formula dim_C H_x = 2(n_+ + n_-). The allowed qubit hardening context supplies k(x)=1 as axiom-surface content, so C1 follows algebraically with no additional blocker.
+- **rationale:** The load-bearing step is a class (A) algebraic consequence of the retained Cl(3) split plus standard finite-dimensional semisimple representation theory. The runner source constructs the Pauli and block-diagonal representations, checks the Clifford relations, faithfulness examples, k>=2 counterexamples, and C1 dimension statement; it is not a print-only or tuned-value runner. With R1 supplied by the allowed targeted packet, the prior single-module admission is discharged for this scoped C1 audit.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`

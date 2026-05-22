@@ -231122,24 +231122,41 @@
       "verdict_rationale": null
     },
     "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T22:21:12.803030+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T221909Z-e1b97348-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained Cl(3) complexification split gives the two 2-dimensional chirality irreps and the semisimple multiplicity formula dim_C H_x = 2(n_+ + n_-). The allowed qubit hardening context supplies k(x)=1 as axiom-surface content, so C1 follows algebraically with no additional blocker.",
       "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T22:21:12.803030+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -231147,19 +231164,19 @@
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Assume k(x)=1, i.e. (n_+(x), n_-(x)) is (1,0) or (0,1); then H_x = rho_+ or rho_-, in either case dim_C H_x = 2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "3593358733a4d4ae6819d9b38c0befc95809bc0a41b1d66a72d90c2a0782aac5",
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -231264,18 +231281,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 38,
+        "B": 3,
+        "C": 5,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 46
       },
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a class (A) algebraic consequence of the retained Cl(3) split plus standard finite-dimensional semisimple representation theory. The runner source constructs the Pauli and block-diagonal representations, checks the Clifford relations, faithfulness examples, k>=2 counterexamples, and C1 dimension statement; it is not a print-only or tuned-value runner. With R1 supplied by the allowed targeted packet, the prior single-module admission is discharged for this scoped C1 audit."
     },
     "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": {
       "audit_date": null,

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1319 |
+| unaudited | 1318 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 616 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1541 |
+| `unaudited` | 1540 |
 
 | claim_type | count |
 |---|---:|
@@ -743,6 +743,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
@@ -2484,6 +2485,21 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The connected term expands as Σ_{k≥1}(λ_k/M_x)^d⟨0_x|A_p|k⟩⟨k|B_q|0_x⟩ and Cauchy-Schwarz bounds it by ‖A_p‖‖B_q‖exp(-dΔ_x).  _(class `A`)_
 - **chain closes:** True — The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.
 - **rationale:** The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive Δ_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering.
+- **auditor confidence:** high
+
+### `complex_action_note`
+
+- **Note:** [`COMPLEX_ACTION_NOTE.md`](../../docs/COMPLEX_ACTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional one-parameter complex-kernel behavior in the registered finite setup (h=0.5, W=6, L=30, s=0.1, z_src=3.0): gamma=0 reduction, three sampled Born proxies, and the emitted gamma sweep escape/centroid table.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-030039-6656c1a8-complex_action_note-003`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The action is defined by the hand-added complex ansatz S = L(1 - f) + i * gamma * L * f with free real gamma.  _(class `E`)_
+- **chain closes:** False — The runner does compute the stated finite-setup numerical consequences from the imposed complex kernel, but the load-bearing imaginary-action term and free gamma are introduced by definition. The missing step is a retained derivation of gamma or the imaginary action term from the cited framework inputs, plus any separate horizon-observable bridge for physical horizon claims.
+- **rationale:** The restricted packet supports the runner-level finite-lattice observations: gamma=0 matches the real-action propagator, the sampled Born proxy is at machine precision, and positive gamma produces absorption-biased AWAY centroid/escape behavior in the printed sweep. However, the complex action itself is explicitly admitted as a free ansatz import, not derived from Cl(3)/Z^3 or retained upstream authority. The runner source computes consequences of that imposed kernel; it does not derive the kernel, gamma, or horizon physics. The cited MINIMAL_AXIOMS_2026-04-11.md is also marked superseded/meta, so it cannot close the premise.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-04-11.md`
 - **auditor confidence:** high
 
 ### `complex_selectivity_compare_note`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 864,
+    "critical": 863,
     "high": 28,
     "leaf": 316,
     "medium": 111
@@ -9470,31 +9470,6 @@
       "ready": true,
       "runner_path": "scripts/cl3_per_site_hilbert_dim_two_check.py",
       "transitive_descendants": 998
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "complex_action_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms_2026-04-11",
-        "claude_complex_action_grown_companion_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.95,
-      "note_path": "docs/COMPLEX_ACTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/complex_action_harness.py",
-      "transitive_descendants": 988
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -46555,6 +46530,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 21,
-  "total_pending": 1319
+  "ready_count": 20,
+  "total_pending": 1318
 }

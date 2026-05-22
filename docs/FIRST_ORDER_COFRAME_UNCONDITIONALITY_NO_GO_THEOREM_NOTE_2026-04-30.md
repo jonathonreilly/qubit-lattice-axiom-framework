@@ -34,6 +34,47 @@ preserving the relevant substrate structure. Therefore first-order coframe
 selection is an additional boundary/orientation law unless it is derived by a
 stronger theorem not currently in the retained bank.
 
+## Qubit-reframe axiom-structure grounding (2026-05-22)
+
+Under the 2026-05-20 qubit reframe (`MINIMAL_AXIOMS_2026-05-20.md` A1
+canonical statement + `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`
+binding definition), the per-site algebra is canonically committed to
+`Cl(3,0)` with the spatial pseudoscalar `ω_3 = σ_x σ_y σ_z` carrying
+`ω_3² = −𝟙` and `ω_3` central in `Cl(3,0)`. Combined with the derived
+time direction (per `ANOMALY_FORCES_TIME_THEOREM.md`, bounded_theorem
+status on the qubit-reframe lane), the 4D pseudoscalar on
+`H_cell = C^2_t ⊗ C^2_x ⊗ C^2_y ⊗ C^2_z` is
+
+```text
+γ_5 = ω_4 = e_t e_x e_y e_z,
+```
+
+acting as the algebra-intrinsic Hodge operator. Under the framework's
+"no external Not-reality" discipline (the imaginary direction is the
+ω-geometric pseudoscalar, not an externally admitted complex `i`), the
+Hodge complement `★` of §3 below is **literally** multiplication by
+`γ_5` (modulo standard sign factors). The duality `P_1 ↔ P_3` is
+therefore an explicit algebraic consequence of `γ_5`-multiplication,
+not an external substrate symmetry that happens to act on the cell.
+
+The no_go's conclusion is **structurally reinforced** under this
+grounding:
+- The Hodge `★`'s commutation with spatial spin-lift, time-parity
+  normalization, and CPT preservation are now **explicit consequences**
+  of γ_5's central-grading properties in `Cl(3,1)`-extension of the
+  spatial Cl(3,0).
+- The Hodge-dual rank-four partner `P_3` admits the same substrate
+  premises as `P_A = P_1` because γ_5 is an algebra automorphism of
+  the cell.
+- The no_go's finding (no granted substrate premise distinguishes
+  P_1 from P_3) follows directly from `γ_5` being intrinsic, not
+  from the substrate symmetries being independently chosen.
+
+This grounding does not change the no_go's claim_type or claim_scope;
+it ties the existing Hodge-complement argument to the canonical A1
+axiom + derived-time chain under the 2026-05-22 axiom-structure
+discipline.
+
 ## Review Note
 
 The load-bearing step is the explicit Hodge-complement witness:

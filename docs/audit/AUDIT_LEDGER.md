@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 113 |
-| **retained_no_go** | 149 |
+| **retained_no_go** | 148 |
 | **retained_bounded** | 380 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1299 |
+| unaudited | 1300 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -51,13 +51,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 615 |
+| `audited_clean` | 614 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 35 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1521 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
@@ -287,7 +287,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -4036,19 +4035,6 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The fine-H lensing slope is portable across three DAG families within the -1.38 to -1.43 band, with a possible residual Fam2/Fam3 offset (t=2.37) that needs more seeds to resolve.  _(class `C`)_
 - **chain closes:** True — The source note has no upstream dependencies, and the registered runner cache now replays the full 3-family x 5-seed finite computation with the same slopes, family summaries, and pairwise t-statistics. The audited scope is the bounded finite replay only, not geometry-independence or an independent eikonal-baseline derivation.
 - **rationale:** The runner constructs the three fixed drift/restore DAG families, evaluates seeds 0-4 at H=0.25 and b in {3,4,5,6}, computes the Kubo readout, fits the per-seed and seed-mean power laws, and emits the same family means, grand mean, population sigma, and Fam2-vs-Fam3 t-statistic reported in the note. The note's retained boundary is explicitly three-family portability with a borderline residual family offset, not universality or kernel-independence. Within that bounded finite scope there is no hidden dependency, stale number, timeout, or imported comparator needed for closure.
-- **auditor confidence:** high
-
-### `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`
-
-- **Note:** [`FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md`](../../docs/FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Within the granted Boolean event-cell substrate structure, spatial Cl(3) spin-lift equivariance, time parity, CPT grading, complex Hilbert/Born surface, and tensor-local number algebra do not force the first-order sector P_1 over the Hodge-dual third-order sector P_3.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-fresh-agent-2026-05-03-first-order-coframe-no-go-second-independent`  (codex-gpt-5; independence=fresh_context)
-- **load-bearing step:** The load-bearing witness is the Hodge-complement identity * P_1 *^{-1} = P_3, with P_3 distinct from P_1 while preserving the listed substrate tests.  _(class `A`)_
-- **chain closes:** True — The chain closes because a single explicit algebraic witness produces a symmetry-equivalent but distinct allowed carrier under exactly the listed substrate tests. No unaudited dependency or external physical bridge is needed for the scoped negative result.
-- **rationale:** The no-go is scoped to the listed substrate structures and supplies a concrete countermodel: the Hodge-complement map exchanges P_1 and P_3, while the runner verifies preservation of spatial spin-lift equivariance, time parity/CPT behavior, tensor-local number algebra, and rank-four carrier isomorphism. This is sufficient for the negative claim that those assumptions alone do not distinguish first-order from dual third-order coframe carriers. The result should not be read as excluding stronger boundary, orientation, incidence, or dynamical laws; the note itself correctly treats those as possible repair targets outside the audited assumptions.
 - **auditor confidence:** high
 
 ### `fixed_field_complex_grown_basin_v2_note`

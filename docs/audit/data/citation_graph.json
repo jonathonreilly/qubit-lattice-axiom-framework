@@ -51669,7 +51669,7 @@
       "claim_type_seed_hint": "no_go",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "45306d839462781c0256fa97f3683536e584d7d5fdcce2de99245fdec1a6a8f5",
+      "note_hash": "4e48bac09e9ec68d4ff7df74e614e80877fd2601c281832e3d6eeb995d39d909",
       "path": "docs/FIRST_ORDER_COFRAME_UNCONDITIONALITY_NO_GO_THEOREM_NOTE_2026-04-30.md",
       "runner_path": "scripts/frontier_first_order_coframe_unconditionality_no_go.py",
       "title": "First-Order Coframe Unconditionality No-Go Theorem"

@@ -87,6 +87,16 @@ Current science/open-lane follow-ups:
   uniqueness proof was not landed because it is a broad negative claim with
   unaudited dependencies and no no-go-discipline N1-N8 checklist.
   Disposition: `science-needed`.
+- `2026-05-22-lsp-prr-framework-rule-approval-gate`
+  Scope: PR #1658, measurement-instrument selection, pre-record reference
+  state invariance, and the downstream Born-rule audit chain.
+  Finding: do not ratify LSP or PRR as load-bearing framework rules from
+  review-loop alone. The submitted branch identifies plausible conditional
+  bridges and dispatch targets, but both LSP and PRR are new framework-rule
+  commitments rather than derivations from Axiom 1 / Axiom 2, so they require
+  explicit user approval before any ratification or audit-dispatch sidecar
+  can land.
+  Disposition: `science-needed`.
 
 ## Intake Format
 

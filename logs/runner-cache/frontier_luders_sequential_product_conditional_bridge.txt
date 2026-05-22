@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_luders_sequential_product_conditional_bridge.py
+runner_sha256: 2c02298d92080b864a2fe8053831a720a5db0b1c4bbe7c43d96b31854be31ca4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.19
+status: ok
+----- stdout -----
+======================================================================
+Lüders sequential-product conditional bridge runner
+======================================================================
+
+Verifies the conditional theorem: IF Lüders K_P = P (the
+square-root sequential product applied to projections), THEN
+M_{P, E} = K_P^dagger E K_P = P E P (the standard PEP composition).
+
+Does NOT claim uniqueness of the sequential product (which is
+known to fail in the literature — see PR #1626 review for refs).
+Only lands the conditional algebra.
+
+
+[T1] Single qubit, rank-1 projection P = |0><0|
+  [PASS] T1.a: P is idempotent (P^2 = P)
+  [PASS] T1.a: P is self-adjoint (P^dagger = P)
+  [PASS] T1.b: K_P^dagger K_P = P (Lüders Kraus normalization)
+  [PASS] T1.b: K_P^dagger K_P + K_!P^dagger K_!P = I (resolution of identity)
+  [PASS] T1.c (E = I): M_{P,E} = K_P^dagger E K_P = P E P
+  [PASS] T1.c (E = |1><1|): M_{P,E} = K_P^dagger E K_P = P E P
+  [PASS] T1.c (E = sigma_x): M_{P,E} = K_P^dagger E K_P = P E P
+  [PASS] T1.c (E = sigma_z): M_{P,E} = K_P^dagger E K_P = P E P
+  [PASS] T1.d: Lüders update Tr(rho') = 1
+  [PASS] T1.d: Lüders update P rho' = rho' (post-measurement state in range of P)
+
+[T2] Single qubit, rank-1 projection in rotated basis (symbolic angle t)
+  [PASS] T2.a: P is idempotent (P^2 = P)
+  [PASS] T2.a: P is self-adjoint (P^dagger = P)
+  [PASS] T2.b: K_P^dagger K_P = P (Lüders Kraus normalization)
+  [PASS] T2.b: K_P^dagger K_P + K_!P^dagger K_!P = I (resolution of identity)
+  [PASS] T2.c (symbolic Hermitian E): M_{P,E} = K_P^dagger E K_P = P E P
+
+[T3] Two qubits, projection onto |Phi+><Phi+|
+  [PASS] T3.a: P is idempotent (P^2 = P)
+  [PASS] T3.a: P is self-adjoint (P^dagger = P)
+  [PASS] T3.b: K_P^dagger K_P = P (Lüders Kraus normalization)
+  [PASS] T3.b: K_P^dagger K_P + K_!P^dagger K_!P = I (resolution of identity)
+  [PASS] T3.c (E = I_4): M_{P,E} = K_P^dagger E K_P = P E P
+  [PASS] T3.c (E = Z⊗I): M_{P,E} = K_P^dagger E K_P = P E P
+  [PASS] T3.c (E = X⊗X): M_{P,E} = K_P^dagger E K_P = P E P
+
+[T4] Two qubits, rank-2 projection P = |00><00| + |11><11|
+  [PASS] T4.a: P is idempotent (P^2 = P)
+  [PASS] T4.a: P is self-adjoint (P^dagger = P)
+  [PASS] T4.b: K_P^dagger K_P = P (Lüders Kraus normalization)
+  [PASS] T4.b: K_P^dagger K_P + K_!P^dagger K_!P = I (resolution of identity)
+  [PASS] T4.c (E = I_4): M_{P,E} = K_P^dagger E K_P = P E P
+  [PASS] T4.c (E = E_diag (symbolic)): M_{P,E} = K_P^dagger E K_P = P E P
+
+[T5] Counterexample: alternative Kraus K_P = sigma_z · P gives different composition
+  [PASS] T5.a: alternative K_P with U-twist still satisfies K_P^dagger K_P = P
+  [PASS] T5.b: K_P = H · P (Hadamard-twisted) satisfies K_P^dagger K_P = P
+  [PASS] T5.c: Hadamard-twisted M_{P,E} ≠ Lüders P E P (alternative Kraus → different composition): Hadamard: [[1, 0], [0, 0]], Lüders: [[0, 0], [0, 0]]
+
+[T6] Source-note boundary string checks
+  [PASS] T6.required: 'source-side proposal'
+  [PASS] T6.required: 'independent audit lane owns the verdict'
+  [PASS] T6.required: 'conditional'
+  [PASS] T6.required: 'does not by itself remove'
+  [PASS] T6.forbidden-absent: 'Status: retained'
+  [PASS] T6.forbidden-absent: 'Status: promoted'
+  [PASS] T6.forbidden-absent: 'uniqueness theorem forces'
+  [PASS] T6.forbidden-absent: 'Greechie/Gudder uniqueness alone'
+
+======================================================================
+PASS=39 FAIL=0
+======================================================================
+
+----- stderr -----
+

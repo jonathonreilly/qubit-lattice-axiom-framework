@@ -17097,6 +17097,14 @@
       "to": "minimal_axioms_2026-05-20"
     },
     {
+      "from": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
       "from": "mass_mixing_subspace_disjointness_theorem_note",
       "to": "dm_neutrino_dirac_bridge_theorem_note_2026-04-15"
     },
@@ -61334,6 +61342,21 @@
       "runner_path": null,
       "title": "L\u00fcders Rule from Compositional Bayesian Consistency"
     },
+    "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": {
+      "claim_id": "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms_2026-05-20",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b43bff4093d29d7a62de7a1f214e89eadb22a27047e186db08935177a467b7c7",
+      "path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
+      "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
+      "title": "L\u00fcders Sequential-Product Conditional Bridge (Narrow)"
+    },
     "main_open_cubic_validation_2026-04-11": {
       "claim_id": "main_open_cubic_validation_2026-04-11",
       "claim_type_author_hint": null,
@@ -81557,7 +81580,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 517,
+      "bounded_theorem": 518,
       "decoration": 1,
       "meta": 184,
       "no_go": 64,
@@ -81566,7 +81589,7 @@
       "positive_theorem": 174
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 955,
+      "bounded_theorem": 956,
       "decoration": 1,
       "meta": 184,
       "no_go": 167,
@@ -81574,10 +81597,10 @@
       "open_gate": 123,
       "positive_theorem": 607
     },
-    "edge_count": 9725,
-    "leaf_count": 743,
-    "node_count": 2480,
+    "edge_count": 9727,
+    "leaf_count": 744,
+    "node_count": 2481,
     "root_count": 808,
-    "runners_with_path": 2046
+    "runners_with_path": 2047
   }
 }

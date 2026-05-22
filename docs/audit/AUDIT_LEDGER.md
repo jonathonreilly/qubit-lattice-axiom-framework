@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 110 |
 | **retained_no_go** | 145 |
-| **retained_bounded** | 376 |
+| **retained_bounded** | 377 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 15 |
-| unaudited | 1328 |
+| unaudited | 1327 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 608 |
+| `audited_clean` | 609 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1550 |
+| `unaudited` | 1549 |
 
 | claim_type | count |
 |---|---:|
@@ -207,6 +207,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | B | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | claude-opus | C | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2516,6 +2517,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The strict prefix-sum operator satisfies the Rota-Baxter identity of weight +1: P(a)P(b)=P(P(a)b+aP(b)+ab).  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the packet verifies the Rota-Baxter identity, non-idempotence, B4 combinatorics, and the tautological first-slot readout. The note explicitly excludes framework-native characters, staggered taste-blocking bridges, and derivation of alpha_LM^16, so those missing bridges do not block this scoped claim.
 - **rationale:** The scoped theorem is external algebra plus an explicit boundary statement, and the dependency is provided as retained. The runner's alpha_LM^16 check is hard-coded, but the note labels that as an imported character value and not a derivation, so it supports the boundary rather than inflating the claim.
+- **auditor confidence:** high
+
+### `continuum_limit_note`
+
+- **Note:** [`CONTINUUM_LIMIT_NOTE.md`](../../docs/CONTINUUM_LIMIT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the cached size sweep h ∈ {1.0, 0.5, 0.25, 0.125} of the registered numpy runner scripts/lattice_h2_T_numpy_continuum.py, the framework's h^2+T-normalized 3D lattice propagator exhibits: transfer norm T in [4.27, 6.47] (logarithmic growth), F~M exponent values 0.979/0.991/0.998/1.018 bracketing 1.000, gravitational deflection consistently TOWARD with 2.7% change between h=0.25 and h=0.125 at s=0.004 weak field, and Born nonlinearity below 1e-15 where measurable. The h → 0 continuum-limit promotion is explicitly out of binding scope and demoted to diagnostic-only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-19-row3`  (claude-opus; independence=cross_family)
+- **load-bearing step:** On the cached size sweep h ∈ {1.0, 0.5, 0.25, 0.125} of the registered runner scripts/lattice_h2_T_numpy_continuum.py, the weak-field deflection changes by 2.7% between h=0.25 and h=0.125, and the F~M exponent table brackets 1.000 (0.979, 0.991, 0.998, 1.018) across the same range.  _(class `C`)_
+- **chain closes:** True — The note's narrowed binding scope is exactly the finite-h cached numerics. The registered runner is a class-(C) framework-primitive computation (Cl(3)-on-Z^3 lattice propagator with the explicit kernel = exp(ikS)*w*h^2/(L^2*T)) and produces the displayed table values byte-for-byte (transfer norm rows, weak-field deflection 2.7% delta, F~M sequence). No external import or contested bridge is required because deps is empty, no one-hop authorities are cited, and the h → 0 continuum-limit interpretation is explicitly demoted to diagnostic-only in the source note.
+- **rationale:** Bounded scope closes from the cited inputs. The runner cache reproduces the displayed finite-h trend tables exactly (T=4.27/5.08/5.80/6.47; weak-field deflection +2.63e-2/+1.07e-2/+1.37e-2/+1.41e-2 with the +2.7% delta between h=0.25 and h=0.125; F~M=0.979/0.991/0.998/1.018). Load-bearing step is a class-(C) framework-primitive lattice propagation; the runner does not hard-code the trend values, it computes them from the kernel definition. The note explicitly and repeatedly cordons the h → 0 promotion out of binding scope (diagnostic-only section flagged as such), with honest limitations enumerated (boundary leakage hitting machine zero around h~0.06; only tested down to h=0.125; non-monotonic strong-field gravity). Residual risk is limited to the finite-h cache itself: any extension beyond h=0.125 or to the strict continuum requires a separately retained convergence theorem or extended sliced computation, which the note correctly refuses to claim here.
 - **auditor confidence:** high
 
 ### `coulomb_stability_upper_bound_support_note_2026-05-20`

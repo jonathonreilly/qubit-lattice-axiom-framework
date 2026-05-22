@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 144 |
+| **retained_no_go** | 145 |
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 16 |
-| unaudited | 1315 |
+| unaudited | 1314 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -47,13 +47,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 609 |
+| `audited_clean` | 610 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1537 |
+| `unaudited` | 1536 |
 
 | claim_type | count |
 |---|---:|
@@ -480,6 +480,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7631,6 +7632,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing negative claim is an algebraic functional-equation obstruction, not an imported numerical or definitional match. The runner source performs actual symbolic and rational-grid checks for the determinant factorization, F_p non-extensivity, log extensivity, and the two-slope counter-witness; it does not merely print expected constants. The open finite-range gate is used as a blocker to a thermodynamic positive route, not as an unclosed premise needed for the weak-extensivity no-go.
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the narrow no_go that the strict locality-of-source-derivatives primitive L_∂, precise enough to exclude F_p[J]=r(J)^p on block-diagonal D, is equivalent to P1 rather than an independent derivation of P1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-005919-b49b9bae-observable_principle_p1_-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On smooth W with W[0] = 0, cross-block second-source-derivative vanishing is logically equivalent to block-additivity W[J_A ⊕ J_B] = W[J_A] + W[J_B].  _(class `A`)_
+- **chain closes:** True — The equivalence lemma closes by elementary multivariable calculus on the stated smooth convex-domain hypotheses with W(0)=0. The runner provides supporting symbolic checks and does not import the contested premise as a retained theorem.
+- **rationale:** The load-bearing step is a genuine class A calculus/algebra equivalence, not a definition, numerical match, or cross-note import. The no_go conclusion is narrow: imposing strict cross-block source-derivative locality is the same as imposing block additivity under the stated smoothness and normalization assumptions. The cited framework rows are context only, and no non-retained cited authority is needed for the equivalence claim.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17`

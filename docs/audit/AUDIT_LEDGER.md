@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 142 |
+| **retained_no_go** | 143 |
 | **retained_bounded** | 375 |
 | _retained_pending_chain_ | 8 |
 | open_gate | 16 |
 | unaudited | 1319 |
-| audit_in_progress | 1 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
@@ -48,8 +47,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 604 |
+| `audited_clean` | 605 |
 | `audited_conditional` | 89 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
@@ -120,7 +118,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -325,6 +322,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4796,6 +4794,23 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support.
 - **auditor confidence:** high
+
+### `gauge_wilson_isotropy_boundary_note_2026-05-04`
+
+- **Note:** [`GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md`](../../docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-specific no-go that the Cl(3) pseudoscalar and standard staggered-eta plaquette-product mechanisms do not derive orientation-dependent Wilson plaquette coefficients on the accepted isotropic nearest-neighbor Wilson surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-gauge-wilson-20260521-gauge_wilson_isotropy_boundary_note_2026-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Combining the two checks, the Cl(3) route supplies no fourth anticommuting generator, the staggered eta route supplies no orientation-dependent plaquette factor, and the accepted Wilson source grammar already has one common coefficient on all six plaquette orientations, so these PR #528 routes do not derive a new anisotropic Wilson gauge action.  _(class `A`)_
+- **chain closes:** True — Scoped to the source note's route-specific boundary, audited_clean/no_go is applyable. The runner/source prove the two contested PR #528 mechanisms fail: omega=G1G2G3 is central in Cl(3), squares to -I in the Pauli irrep, commutes with each G_i, and has nonzero anticommutators, so it is not a fourth anticommuting generator; the standard staggered eta plaquette product is -1 for every xy,xz,xt,yz,yt,zt orientation, so it supplies no orientation-dependent factor. The one-hop Wilson grammar dependency supplies the accepted common plaquette coefficient, and the constant-lift obstruction blocks reusing scalar/response factors as an exact action-coupling lift. N1: six attacks were considered within the packet: pseudoscalar-as-time-generator, representation-dependence of centrality, eta orientation sign split, eta site/parity escape beyond the sampled cube, accepted Wilson grammar already allowing anisotropic coefficients, and scalar/response constant-lift route to changing the action surface; all fail or are ruled out by the source, runner, or one-hop dependencies, while unrelated future anisotropy theorems remain outside scope. N2: the walls are not inflated; the Cl(3) and eta walls are independent, and the accepted-Wilson grammar is a separate boundary condition. N3: phrases such as accepted and standard are backed by the one-hop Wilson dependency or by the explicit eta definition in the note; no hidden wall is needed. N4: residuals match: the scalar-temporal dependency supports only one common Wilson coefficient, and the constant-lift dependency attacks action-coupling lift reuse; neither is used for a broader global no-go. N5: rhetoric is narrowed to these mechanisms and six plaquette orientations, not every anisotropy route. N6: convention/reframe paths are not invoked; the claim does not say a new axiom is required globally, only that these routes do not justify replacement absent separate approval. N7: the strongest steelman is that another approved theorem could derive anisotropic coefficients, but the note expressly leaves that open, so it does not defeat the scoped claim. N8: the restricted packet has no prior panel outcomes and no applicable retired similar wall; no cross-cycle echo undermines this narrow boundary.
+
+Five-judge panel breakdown: 5x ('first', 'audited_clean', 'no_go', 'A').
+- **rationale:** Scoped to the source note's route-specific boundary, audited_clean/no_go is applyable. The runner/source prove the two contested PR #528 mechanisms fail: omega=G1G2G3 is central in Cl(3), squares to -I in the Pauli irrep, commutes with each G_i, and has nonzero anticommutators, so it is not a fourth anticommuting generator; the standard staggered eta plaquette product is -1 for every xy,xz,xt,yz,yt,zt orientation, so it supplies no orientation-dependent factor. The one-hop Wilson grammar dependency supplies the accepted common plaquette coefficient, and the constant-lift obstruction blocks reusing scalar/response factors as an exact action-coupling lift. N1: six attacks were considered within the packet: pseudoscalar-as-time-generator, representation-dependence of centrality, eta orientation sign split, eta site/parity escape beyond the sampled cube, accepted Wilson grammar already allowing anisotropic coefficients, and scalar/response constant-lift route to changing the action surface; all fail or are ruled out by the source, runner, or one-hop dependencies, while unrelated future anisotropy theorems remain outside scope. N2: the walls are not inflated; the Cl(3) and eta walls are independent, and the accepted-Wilson grammar is a separate boundary condition. N3: phrases such as accepted and standard are backed by the one-hop Wilson dependency or by the explicit eta definition in the note; no hidden wall is needed. N4: residuals match: the scalar-temporal dependency supports only one common Wilson coefficient, and the constant-lift dependency attacks action-coupling lift reuse; neither is used for a broader global no-go. N5: rhetoric is narrowed to these mechanisms and six plaquette orientations, not every anisotropy route. N6: convention/reframe paths are not invoked; the claim does not say a new axiom is required globally, only that these routes do not justify replacement absent separate approval. N7: the strongest steelman is that another approved theorem could derive anisotropic coefficients, but the note expressly leaves that open, so it does not defeat the scoped claim. N8: the restricted packet has no prior panel outcomes and no applicable retired similar wall; no cross-cycle echo undermines this narrow boundary.
+
+Five-judge panel breakdown: 5x ('first', 'audited_clean', 'no_go', 'A').
+- **auditor confidence:** 0.88
 
 ### `gellmann_completeness_theorem_note_2026-05-02`
 

@@ -1,4 +1,4 @@
-# Framework-Rule Approval Packet: LSP, PRR, PWC (User Sign-Off Required)
+# Framework-Rule Approval Packet: R1-corollary, LSP-projective, PRR, PWC (User Sign-Off Required)
 
 **Date:** 2026-05-22
 **Type:** meta (decision packet — NOT a ratification)
@@ -10,13 +10,15 @@ load-bearing framework rules.
 
 ## What this packet is
 
-This packet asks the user (framework author) to **explicitly approve, defer, or reject** three candidate framework-rule readings on the measurement / observable side of the framework. None of them are derivable from Axiom 1 (qubit per site) plus Axiom 2 (Z³ lattice) alone — each is a substantive physical commitment about the framework's operational behavior.
+This packet asks the user (framework author) to **explicitly approve, defer, or reject** four candidate framework-rule readings on the measurement / observable side of the framework. None of them are derivable from Axiom 1 (qubit per site) plus Axiom 2 (Z³ lattice) alone — each is a substantive physical commitment.
 
-The R1 (k=1 per-site selection) ratification went through this same gate via PR #1656 with explicit user approval. PR #1658 attempted to ratify LSP and PRR without going through the gate; it was correctly closed by the review-loop with the reviewer note:
+**This packet has been revised after a five-physicist Nature-grade panel review** (foundations, stat-mech, lattice QFT, quantum information, math physics). The panel findings drive scope adjustments and explicit narrow-claim vs substantive-commitment framing for each rule. Specifically:
 
-> *"Both LSP and PRR are new framework-rule commitments rather than derivations from Axiom 1 / Axiom 2, so they require explicit user approval before any ratification or audit-dispatch sidecar can land."*
+- **R1-corollary** (formerly "R1 ratification") and **LSP-projective** (narrowed from "LSP") came through the panel as **5/5 yes** on the narrow claim
+- **PRR** splits cleanly: the math step is unanimous yes; the choice of ρ_ref = tracial is contested
+- **PWC** has serious narrow-claim issues and the panel recommends defer
 
-This packet records each candidate rule with a layman's explanation, the technical statement, what it commits the framework to, what it would unlock, and a sign-off line. No row in the audit ledger changes from this packet; only the user's signed-off decisions on which (if any) to ratify drive the follow-up ratification PRs.
+The R1 (k=1 per-site selection) ratification already landed via PR #1656 with explicit user approval. This packet's "R1-corollary" section confirms its compatibility with the panel review and does NOT propose any change to the landed R1. PR #1658 attempted to ratify LSP and PRR without going through the gate; it was correctly closed by the review-loop.
 
 ## What this packet is NOT
 
@@ -24,232 +26,243 @@ This packet records each candidate rule with a layman's explanation, the technic
 - Not a re-audit — no row's status changes
 - Not a runner-bearing claim
 - Not a self-promotion of any candidate rule
-- Not a substitute for the conditional bridges that already encode the
-  math (those landed in PR #1635 for PRR, PR #1651 for LSP, and exist
-  as a draft sketch for PWC in this packet's appendix)
 
 ## How to use this packet
 
-For each candidate rule, the user reads the **plain-English explanation** first, then the **technical statement** and **what it commits the framework to**. The user can independently:
+For each candidate rule, the user reads:
 
-- **Approve** the rule (record sign-off; follow-up PR will draft the ratification + dispatch + companion runner)
-- **Defer** the rule (keep the math available as conditional bridges; don't promote to framework rule)
-- **Reject** the rule (don't add to the framework; explore alternatives)
+1. **Layman's explanation** — plain English first
+2. **Narrow technical claim** — the precise mathematical/algebraic statement
+3. **Substantive physical commitment** — what the framework would actually be approving as physical content
+4. **Panel review findings** — what the 5 reviewers said about each
+5. **Recommendation** — based on panel review
+6. **Sign-off lines** — approve / defer / reject
 
-Sign-off section at the bottom provides explicit lines for each.
-
----
-
-## Rule 1 — LSP (Lüders Sequential-Product instrument selection)
-
-### Layman's explanation
-
-When the framework measures whether some property `P` holds — say, "is this qubit pointing up?" — and gets the answer "yes," what happens to the system after the measurement?
-
-LSP commits the framework to the **minimum-disturbance** reading: the measurement just **filters** the state down to the part consistent with the "yes" answer. It doesn't rotate, scramble, or otherwise modify the state beyond that filtering.
-
-Mathematically there are many possible "yes"-measurements that all agree on the *probability* of getting "yes," but disagree on what the state looks like AFTER. Some include a hidden rotation or basis change as part of the measurement act. LSP commits to the version that doesn't add any extra rotation — just the bare filter.
-
-An analogy: imagine you have a die and you ask "is this an even number?" The answer "yes" leaves you knowing it's 2, 4, or 6 — but it doesn't change *which* even number is on top. LSP is the framework's commitment that quantum measurement works the same way: the answer constrains, but doesn't gratuitously rearrange.
-
-### Technical statement
-
-> **LSP.** For projective measurement of an orthogonal projection `P ∈ A_Λ` on a finite qubit-lattice region, the framework's measurement instrument is the Lüders Kraus operator `K_P := P`. Sequential composition of "outcome `P` then effect `E`" is then `M_{P, E} := K_P† E K_P = P E P`.
-
-### What it commits the framework to
-
-- The Lüders state-update rule `σ ↦ P σ P / Tr(P σ P)` after a "yes" outcome
-- Sequential measurement composition follows the standard `P E P` formula
-- Alternative instruments (e.g., `K_P^twist := U · P` for a unitary U) are NOT the framework's selection, even though they give the same outcome probabilities
-
-### What it does NOT commit the framework to
-
-- Doesn't constrain dynamics (free evolution between measurements)
-- Doesn't pick a specific Hamiltonian or measurement schedule
-- Doesn't apply to POVMs that aren't projective; those have their own
-  instrument-selection question
-
-### What it unlocks if approved
-
-| Row | Current | Under LSP |
-|---|---|---|
-| `luders_rule_from_composition_consistency_note_2026-05-20` | `audited_conditional` — `missing_bridge_theorem` on `M_{P,E} = P E P` | Step-1 sequential composition becomes load-bearing consequence of LSP |
-| `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` (PR #1651) | unaudited conditional | Conditional becomes unconditional |
-| `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20` | unaudited | One blocker removed (still needs PRR + the rest of the chain) |
-
-### Background on why it's a framework rule, not a theorem
-
-The literature explicitly shows the sequential product on the effect algebra `E(H)` is **not unique** — there are mathematically valid alternative sequential products that don't reduce to `P E P` (arXiv:0905.0596 Gudder counterexample; arXiv:math/0211033 broader landscape). A prior PR (#1626) tried to derive uniqueness from Greechie/Gudder axioms alone and was rejected for overclaim. The framework needs to commit to LSP as a *selection*, not a *derivation*, because no theorem on A1+A2 alone forces the selection.
-
-### Sign-off for LSP
-
-- [ ] **Approve LSP** — proceed to ratification PR + dispatch + companion runner
-- [ ] **Defer LSP** — keep PR #1651 as conditional support; don't ratify
-- [ ] **Reject LSP** — don't add to framework
+The narrow-claim vs substantive-commitment distinction matters: in two cases (LSP, PRR) the math is unanimous-yes but the physical-commitment is contested. The panel review surfaces exactly which framing each rule survives.
 
 ---
 
-## Rule 2 — PRR (Pre-Record Reference inner-unitary invariance)
+## Panel review summary
+
+Five role-played senior theoretical physicists, each with distinct specialty (foundations / stat-mech / lattice QFT / quantum information / math physics), independently reviewed each candidate rule. Each was asked to review as if for a Nature submission.
+
+Verdict matrix (narrow-claim, after scope-correct framing):
+
+| Rule | Found. | Stat-mech | Lattice QFT | QI | Math-phys | Panel net |
+|---|---|---|---|---|---|---|
+| R1-corollary (k=1 unpacking) | Yes | Yes | Yes (their reject was about A1 substrate, not R1) | Yes | Yes | **5/5 yes** |
+| LSP-projective | Yes | Yes | Yes | Yes | Yes | **5/5 yes** |
+| PRR (math step only) | Yes | Yes | Yes | Yes | Yes | **5/5 yes** |
+| PRR (ρ_ref = tracial choice) | No (PBR) | Yes w/ caveat | No (β=0) | Yes w/ caveat | Yes w/ caveat | **2 reject / 3 contingent** |
+| PWC (any framing) | Reject | No | Reject | Yes w/ caveat | No | **3 reject / 1 weak yes** |
+
+Common panel critiques the packet now reflects:
+
+- **Universal LSP** (covers all measurements, including POVMs) overreaches; **LSP-projective** (sharp projections only) survives
+- **PRR's "no information yet" gloss** hides a strong β=0 / infinite-temperature commitment
+- **PWC's "rules out Z^p" claim** is wrong (Rényi α-free-energies are perfectly physical) and the Pattern L circularity is relocated rather than resolved
+- **R1 is the most defensible** rule, with all panel critiques landing on downstream gauge-emergence (already open work), not on R1's narrow content
+
+---
+
+## Rule 1 — R1-corollary (k = 1 per-site reading; A1 already landed)
 
 ### Layman's explanation
 
-Before any measurement has been made — before any "record" of an outcome exists in the world — what state is the framework's substrate in?
+When the framework says "reality is a qubit at every lattice site," it commits to **exactly one qubit per site** — a single 2-dim complex Hilbert space — not a multi-copy bundle (k=2 means two copies, etc.). Multi-copy versions would carry hidden internal indices that could mimic extra matter content; R1 rules those out as the framework's substrate choice.
 
-PRR commits to the **no-information** reading: the pre-measurement state has no preferred direction, no preferred basis, no bias toward any particular outcome. If you looked at it through any rotated frame, it would look exactly the same.
+### Narrow technical claim
 
-Mathematically, the only state with that property is the **maximally mixed state** — a kind of "complete uncertainty," uniformly distributed across all possible outcomes. This is the state `ρ_ref = ⊗_x I/2` (each qubit independently in the 50/50 mix).
+A1's "qubit at every lattice site" specifies the multiplicity index `k(x) = 1` (single faithful complex irrep of `M_2(ℂ) ≅ Cl(3,0)` per site), not the multi-copy module `ρ_+^{n_+} ⊕ ρ_-^{n_-}` with `n_+ + n_- ≥ 2`.
 
-An analogy: imagine a fair coin that hasn't been flipped yet. From your perspective, before you flip and look, "heads" and "tails" are equally likely — you have no information yet about which way it'll land. PRR is the framework's commitment that the pre-measurement quantum state is the equivalent of "fair coin you haven't flipped" — no information yet, complete symmetry.
+### Substantive physical commitment
 
-This is sometimes called the "reality is probability until recorded" reading. The state isn't "really" pointing one way — it's a uniform distribution over all possible answers, and the measurement creates the record that breaks the symmetry.
+Each site is exactly one qubit. The substrate has no per-site multiplicity beyond the bare two-dim algebra.
 
-### Technical statement
+### Panel review findings
 
-> **PRR.** For every finite region `Λ ⊂ Z³`, the pre-record reference state `ρ_ref|_Λ` is invariant under every inner unitary automorphism: `U ρ_ref|_Λ U† = ρ_ref|_Λ` for every unitary `U ∈ U(A_Λ)`.
+**5/5 yes** on the narrow claim. The lattice-QFT referee's rejection was about gauge-link variables and Wilson recognizability — a critique of the qubit substrate itself (A1, already landed), not of R1's k=1 unpacking. The same gauge-emergence concern applies identically to k=1 and to any per-site multiplicity. R1 is downstream-clean: no panel reviewer disputes the narrow content.
 
-### What it commits the framework to
+Caveats from individual reviewers (none rejections):
+- Foundations: prefer naming honestly as "A1(b)" rather than "ratification of intent"
+- Stat-mech: explicitly state the uniformity (no site-dependent k(x))
+- QI: defend why d=2 over qudit-per-site (also a critique of A1 substrate, not R1)
+- Math-physics: per-site type-I → quasi-local type-II_1 in the GNS completion is a type-jump worth disclosing
 
-- The pre-record reference state is the maximally mixed state `ρ_ref = ⊗_x I/2`
-- No preferred basis or direction before measurement
-- Equivalent to: the state is the **unique tracial state** on the quasi-local UHF algebra (by Schur's lemma)
+### Recommendation
 
-### What it does NOT commit the framework to
+**Approve.** Already landed via PR #1656; this packet confirms the panel finds R1-corollary "yes obviously" at the narrow-claim level. Downstream concerns are tracked by existing open gates.
 
-- Doesn't say what happens AFTER measurement (records can break symmetry)
-- Doesn't constrain dynamics between measurements
-- Doesn't apply to states that have *already* accumulated record content — only the bare pre-record reference
+### Sign-off
 
-### What it unlocks if approved
+- [x] **Approved (already landed PR #1656)** — explicit ratification on `MINIMAL_AXIOMS_2026-05-20.md` and `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § Hardening II
 
-| Row | Current | Under PRR |
-|---|---|---|
-| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | `audited_conditional` — `missing_bridge_theorem` on no-extra-structure identification | Identification with unique tracial state becomes load-bearing consequence of PRR |
-| `inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20` (salvaged PR #1635) | unaudited conditional | Conditional becomes unconditional |
-| Born derivation chain | blocked | One blocker removed |
-| **PWC (below) — if also approved** | needs PRR for tensor factorization | PWC's tensor-factorization step uses PRR |
+---
 
-### Background on why it's a framework rule, not a theorem
+## Rule 2 — LSP-projective (Lüders Sequential-Product, projective-only scope)
 
-A1 (qubit per site) constrains the per-site algebra but says nothing about which specific state on that algebra is the "pre-record" reference. The maximally mixed state happens to be the unique inner-unitary-invariant state (by Schur's lemma — a standard math result), but the framework still has to commit that the pre-record reference IS that state. The "no information yet" reading is a physical commitment, not derivable from A1+A2 alone.
+### Layman's explanation
+
+When the framework measures whether a sharp property `P` holds — and gets "yes" — what happens to the state after?
+
+LSP-projective commits to the **minimum-disturbance** reading: the state is just **filtered** down to the part consistent with the answer. No extra rotation, no extra phase, no extra basis change. Apparatus-induced disturbances are modeled separately as Hamiltonian evolution between measurements, not folded into the measurement act itself.
+
+**Scope: projective measurements only.** Non-projective POVMs (weak measurements, ancilla-coupled measurements, smeared lattice observables) are explicitly left open for a separate framework rule.
+
+### Narrow technical claim
+
+For a projective measurement of an orthogonal projection `P ∈ A_Λ` on a finite qubit-lattice region, the framework's measurement instrument is the Lüders Kraus operator `K_P := P`. Sequential composition of "outcome P then effect E" is `M_{P, E} := K_P† E K_P = P E P`.
+
+### Substantive physical commitment
+
+For sharp projective measurements only: the measurement is minimum-disturbance. The framework does not commit to a universal measurement-instrument selection — non-projective POVMs are out of LSP-projective's scope.
+
+### Panel review findings
+
+**5/5 yes** on LSP-projective as scoped. The QI referee's rejection was specifically against framing LSP as a **universal** measurement-instrument rule (which would foreclose POVM tomography, weak measurements, ancilla-coupled measurements). Once narrowed to "projective measurement only," the QI referee accepts it.
+
+Caveats:
+- Foundations: resolve ontic-vs-epistemic ambiguity in the post-measurement state language elsewhere in the framework
+- Stat-mech: state the non-projective POVM extension as a separate open gate
+- Lattice QFT: note this is about idealized Lüders updates, not about transfer-matrix expectation values
+- Math-physics: on tracial reference, LSP coincides with Connes-Størmer modular conditional expectation; for non-tracial states (finite-β KMS), they diverge — flag this scope
+
+### Recommendation
+
+**Approve LSP-projective.** Explicit narrowing: applies to sharp projective measurements only. Non-projective POVM instrument selection deferred to a future framework rule. The framework's existing Stinespring V construction (PR #1650, landed) takes arbitrary Kraus families {K_r} as input, which is the correct posture — LSP-projective fixes the special case, not the universal one.
+
+### Sign-off for LSP-projective
+
+- [ ] **Approve LSP-projective** — proceed to ratification PR + dispatch + companion runner, with explicit "projective-only" scope and non-projective POVM rule deferred
+- [ ] **Defer LSP-projective** — keep PR #1651 as conditional support; don't ratify
+- [ ] **Reject LSP-projective** — don't add to framework
+
+---
+
+## Rule 3 — PRR (Pre-Record Reference state)
+
+### Layman's explanation (two pieces)
+
+PRR is two separate things bundled together. The first is uncontroversial math; the second is a real physical choice the framework needs to make explicit.
+
+**The math piece (uncontroversial):** *If* a state is invariant under every inner unitary rotation on every finite region, *then* by Schur's lemma it must be the maximally mixed state ρ = ⊗_x I/2.
+
+**The substantive choice piece (contested):** *Should the framework's "pre-record reference" be that maximally mixed state?*
+
+The "pre-record" label has been carrying a "fair coin before flipping = no information yet" connotation. But on the framework's UHF algebra, the maximally mixed state is the unique **infinite-temperature KMS state** — the β = 0 thermodynamic equilibrium. Choosing it as ρ_ref locks the framework into:
+
+- **No thermal physics** at any nontrivial temperature (no finite-β Gibbs state ρ = e^{-βH}/Z)
+- **No vacuum state** (ground states are not tracial except for trivial Hamiltonians)
+- **No Tomita-Takesaki modular flow** (Δ = 1 on the tracial state — no Hawking, no Unruh, no Bisognano-Wichmann)
+- **No β-dependent Wilson lattice gauge measure**
+
+The framework's downstream physics (g_bare, three-generation matter, hierarchy) is supposed to be β-dependent. If ρ_ref is locked at β=0, recovering finite-β physics needs a separate framework rule (β-dressed reference).
+
+### Narrow technical claims
+
+**PRR-math:** For every finite region `Λ ⊂ Z³` and any state ρ ∈ A_Λ, if `U ρ U† = ρ` for every unitary `U ∈ U(A_Λ)`, then `ρ = I/2^|Λ|`. This extends to the unique tracial state τ on the quasi-local UHF algebra.
+
+**PRR-physical:** The framework's pre-record reference state `ρ_ref` satisfies the PRR-math premise (inner-unitary invariance on every finite region). Equivalently: `ρ_ref = ⊗_x I/2`, the unique tracial state on the qubit-lattice UHF algebra.
+
+### Substantive physical commitment
+
+The framework's pre-record state is the **β=0 / infinite-temperature / unique-tracial** state. Finite-β physics requires a separate framework rule introducing a β-dressed reference (e.g., Gibbs `e^{-βH}/Z` with explicit Hamiltonian).
+
+### Panel review findings
+
+**PRR-math: 5/5 yes** (standard Schur + Powers-Glimm-Dixmier).
+
+**PRR-physical: 2 reject / 3 yes-with-caveats:**
+- Foundations: rejects on PBR/Spekkens grounds — "fair coin not yet flipped" reading is precisely what PBR-type theorems problematize
+- Lattice QFT: rejects — Wilson lattice gauge theory's relevant measure is the β-dependent Gibbs measure, not the tracial reference
+- Stat-mech: yes but explicitly disclose β=0 / infinite-temperature commitment, drop "fair coin" analogy
+- QI: yes but flag that PRR is the tracial commitment, not merely an "epistemic uniformity" claim
+- Math-physics: yes but acknowledge no Tomita modular flow / no KMS thermal physics / no vacuum
+
+### Recommendation
+
+**Two options:**
+
+**(A) Approve PRR with explicit β=0 disclosure.** Land the math step plus an honest "this is the infinite-temperature reference; finite-β physics requires a separate rule" disclosure. The "fair coin" / "no information" language gets dropped or scoped.
+
+**(B) Defer PRR.** Keep the math available as a conditional bridge (PR #1635-salvage already landed). Don't ratify ρ_ref = tracial as the framework's reference until the β-dependent extension is also drafted.
+
+The panel split means (A) is workable but requires the disclosure framing be honest. (B) is the cleaner posture if the framework intends to later commit to a β-dressed reference (e.g., for Wilson lattice gauge theory).
 
 ### Sign-off for PRR
 
-- [ ] **Approve PRR** — proceed to ratification PR + dispatch + companion runner
-- [ ] **Defer PRR** — keep PR #1635-salvage as conditional support; don't ratify
-- [ ] **Reject PRR** — don't add to framework
+- [ ] **Approve PRR — option (A)** with explicit β=0 disclosure and dropped "fair coin" language
+- [ ] **Defer PRR — option (B)** until β-dependent extension is drafted
+- [ ] **Reject PRR** entirely
 
 ---
 
-## Rule 3 — PWC (Physical-W as Cumulant generator on ρ_ref)
+## Rule 4 — PWC (Physical-W as Cumulant generator)
 
 ### Layman's explanation
 
-When the framework wants to compute a physical scalar quantity from the substrate — energy, free energy, action, entropy, etc. — what's the recipe?
+PWC was the proposed P1 unlock: commit that the framework's physical scalars are computed via "log of probability sums on the pre-record state." This was sold as sidestepping the Pattern L circularity (the "only log makes multiplication into addition" tautology).
 
-PWC commits to the **standard quantum statistical-mechanics recipe**: physical scalars are **logarithms of probability sums**. Specifically:
+**The panel review found the sidestep does not actually work.** Three of five reviewers reject PWC at the narrow-claim level (not just downstream consequences). The specific findings:
 
-```text
-W[J] := log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref · 1)
-```
+1. **The Pattern L sidestep is bookkeeping.** Restating "physical W IS log Z" as a physical commitment instead of a functional-selection doesn't dissolve the circularity; it relocates it (foundations referee).
 
-In plain English: you take the pre-record reference state, weight it by an exponential of the source `J` (this captures how `J` influences probabilities), sum it all up, take the log, and subtract a normalization. That log-of-probability-sum IS what the framework calls a "physical scalar."
+2. **"Rules out Z^p" is wrong.** Rényi α-free-energies `F_α = -(1/β(α-1)) log Tr ρ^α` are perfectly physical and arise from Z^p-like structures. They show up in single-shot thermodynamics, large-deviation rate functions, and quantum information. PWC would incorrectly forbid them (stat-mech referee).
 
-Why "log" specifically? Because the log function has a special property: when you multiply probabilities, the logs add. Physical scalars need to **add** on independent subsystems (an energy of a combined system is the sum of energies of the parts; same for free energy, entropy, action). Only the log function turns the multiplicative probability structure into additive scalars.
+3. **Tracial reference makes PWC β=0 trivia.** On the tracial reference, W[J] is the infinite-temperature free energy — the standard QSM recipe at finite β is `W[J] = -β^{-1} log Tr(e^{-β(H+J)})` with a Gibbs reference, not the tracial state. Calling PWC "the standard QSM recipe" is misleading (math-physics referee; lattice QFT referee).
 
-Mathematically, you *could* use other functions like `Z^p` for various `p` — they all give well-defined real numbers — but only the log-version is additive. PWC commits that the framework's physical observables ARE the additive (log) kind, not the alternatives.
+4. **No genuinely quantum content.** On a tracial reference, every connected cumulant of order ≥ 3 collapses to the classical-symmetric form. Under PWC + PRR, the framework's "physical scalars" inherit no genuinely quantum cumulant structure. The "biggest single unlock" framing actually purchases additivity by removing all the interesting physics (foundations referee; lattice QFT referee).
 
-An analogy: when computing the "weight" of a stack of objects, you want a quantity that **adds** when you stack two piles together. The natural choice is weight in grams (additive), not weight squared or weight cubed. PWC is the framework's commitment that physical scalars are the "weight-in-grams" kind — they add on independent subsystems.
+### Narrow technical claim (for completeness)
 
-### Technical statement
+`W[J] := log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)`, with ρ_ref the tracial state per PRR.
 
-> **PWC.** The framework's physical scalar generator `W[J]` is the source cumulant generator on the pre-record reference state:
-> ```
-> W[J] := log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref).
-> ```
-> Physical scalar observables are derivatives of `W[J]` evaluated at `J = 0`.
+### Substantive physical commitment
 
-### What it commits the framework to
+Physical observables ARE probability cumulants (log Z form) on the tracial reference. Alternative interpretations (Rényi α-free-energies, state-dependent W[J;ρ], non-equilibrium scalars) are ruled out.
 
-- Physical W is the log-partition / Gibbs free-energy form — not alternatives like `Tr(ρ_ref · e^{-J})^p` for `p ≠ 0`
-- The framework's observables are probability cumulants (operationally derived from Born probabilities on ρ_ref)
-- Additivity on independent subsystems is automatic (follows from PRR's tensor factorization + log-of-product algebra)
+### Panel review findings
 
-### What it does NOT commit the framework to
+**3 reject / 1 no / 1 yes-with-caveats:**
+- Foundations: REJECT — Pattern L circularity not actually resolved
+- Stat-mech: NO — "rules out Z^p" overclaim is wrong; conflates definition with derivation
+- Lattice QFT: REJECT — gives trivial β=0 generator; doesn't recover Wilson plaquette expectations
+- QI: yes with caveats — recognizes it as ONE valid cumulant generator but not THE universal one
+- Math-physics: NO — should use Araki relative-entropy on β-dependent reference, not tracial
 
-- Doesn't pick a specific Hamiltonian or source-coupling rule
-- Doesn't commit to specific numerical predictions
-- Doesn't claim that all physical quantities are this W; only the framework's source-cumulant generator
-- Doesn't replace the existing 11+ P1-route notes (Pattern L circularity analyses); they remain as alternative-route exploration
+### Recommendation
 
-### What it unlocks if approved
+**Defer PWC.** The panel does not support landing it as a framework rule. Substantive rework required:
 
-This is the **biggest single unlock available** in the framework if approved:
+- Either replace tracial ρ_ref with a state-dependent reference (β-dependent Gibbs, or vacuum, or coherent)
+- Or drop the "rules out Z^p" claim and frame PWC as a definition of one particular generating functional (not the universal one)
+- Or pursue an operational derivation from a Naimark-dilated measurement model (foundations referee's suggestion) that doesn't presuppose the log form
 
-| Row | Current | Under PWC |
-|---|---|---|
-| **`observable_principle_from_axiom_note`** (#1 most load-bearing audited_conditional row) | `audited_conditional`, score **53.57**, **1006+ transitive descendants** | P1 (scalar additivity) becomes load-bearing consequence of PWC + PRR + A2 tensor composition. Parent eligible for retained |
-| `OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20` (already drafted) | unaudited | Becomes the runner-backed companion theorem under PWC |
-| Born derivation chain | blocked on P1 | Major blocker removed |
-| Standard-Model connection chain (gauge couplings, three generations, hierarchy) | blocked on P1 | Foundational blocker removed |
-| 11+ in-flight P1-route notes (Connes, Tomita-Gibbs, Jones-index, etc.) | all `no_go` | Pattern L circularity sidestepped at the physical-interpretation level |
-
-### Background on why it's a framework rule, not a theorem
-
-P1 (scalar additivity on independent subsystems) is required to make the framework's physical quantities behave like physical quantities (extensive). Every prior attempt to derive P1 from A1+A2 alone has been classified as `no_go` because of "Pattern L circularity": the only function making multiplication into addition is the log, so "select additive" trivially gives "select log" — but the load-bearing question is *why* the framework's W is the additive one rather than `Z^p`.
-
-PWC sidesteps this by committing **at the physical-interpretation level**: the framework's W IS the probability cumulant generator on ρ_ref. Alternatives like `Z^p` exist as mathematical objects but don't correspond to "probability cumulants" — they're a different physical interpretation that the framework's "reality is probability until recorded" commitment doesn't admit.
-
-This is a substantive physical commitment, not a theorem. It needs explicit user approval.
-
-### Sketch of the under-PWC derivation of P1 (for context only)
-
-Given PWC + PRR + A2 tensor composition:
-
-1. By A2 tensor composition, disjoint regions `Λ_1, Λ_2` give `A_{Λ_1 ∪ Λ_2} = A_{Λ_1} ⊗ A_{Λ_2}`
-2. By PRR (R3 if approved), `ρ_ref|_{Λ_1 ∪ Λ_2} = ρ_ref|_{Λ_1} ⊗ ρ_ref|_{Λ_2}`
-3. For commuting sources `J_A ∈ A_{Λ_1}`, `J_B ∈ A_{Λ_2}` (commute because supported on disjoint sub-algebras):
-   ```
-   e^{-(J_A ⊕ J_B)} = e^{-J_A} ⊗ e^{-J_B}
-   ```
-4. Tomita tensor-trace factorization (already retained):
-   ```
-   Tr_{Λ_1 ∪ Λ_2}((ρ_ref|_{Λ_1} ⊗ ρ_ref|_{Λ_2}) · (e^{-J_A} ⊗ e^{-J_B}))
-     = Tr_{Λ_1}(ρ_ref|_{Λ_1} · e^{-J_A}) · Tr_{Λ_2}(ρ_ref|_{Λ_2} · e^{-J_B})
-   ```
-5. Taking logs:
-   ```
-   W[J_A ⊕ J_B] = W[J_A] + W[J_B]
-   ```
-6. This is **P1**.
-
-Under PWC, the load-bearing step isn't "select additive over multiplicative" (the Pattern L objection). It's "physical W IS the probability cumulant generator on ρ_ref" — a commitment about what W *means*, not which functional to pick.
+P1 remains an open derivation target. The 11+ existing P1-route notes (Connes, Tomita-Gibbs, Jones-index, structural-reframing, etc.) all classified `no_go` for similar circularity reasons; PWC joins them rather than escaping them.
 
 ### Sign-off for PWC
 
-- [ ] **Approve PWC** — proceed to ratification PR + dispatch + companion runner
-- [ ] **Defer PWC** — keep the P1 chain conditional / explore other routes
-- [ ] **Reject PWC** — don't add to framework
+- [ ] **Defer PWC** — do not ratify in current form; rework with state-dependent reference or operational derivation
+- [ ] **Approve PWC** anyway (against panel recommendation) — note the panel-flagged risks
+- [ ] **Reject PWC** entirely — don't pursue this route to P1
 
 ---
 
-## Dependency notes
+## Dependency notes (revised)
 
-The three rules can be approved/deferred/rejected **independently** of each other, but they cascade:
+- **R1-corollary**: already landed (PR #1656)
+- **LSP-projective**: independent; approval lands one ratification + dispatch + runner
+- **PRR (math)**: 5/5 panel-yes; safe to land as a narrow theorem if user approves
+- **PRR (physical commitment to tracial reference)**: needs decision; if approved, requires honest β=0 disclosure
+- **PWC**: panel recommends defer; if approved, lands with explicit "narrow definition" framing (not universal scalar generator)
 
-- LSP alone unlocks the Lüders chain
-- PRR alone unlocks the pre-record tracial chain
-- PWC needs PRR's tensor factorization to do its work; approving PWC without PRR would land a weaker version
-- PWC alone gives the biggest unlock (observable_principle parent + 1000+ descendants)
-
-If you want to do them in stages, the dependency-respecting order is: PRR first (no dependencies), then LSP (independent), then PWC (uses PRR).
-
-If you want to do them all at once, the follow-up bundle is three ratification PRs + three dispatch manifests + three companion runners.
+If you approve LSP-projective and PRR-math, that's a clean two-rule package. PRR-physical and PWC are independent contested decisions.
 
 ## What this PR does NOT ship
 
 - No actual ratification — that's the follow-up after sign-off
 - No audit-dispatch sidecar — same
-- No companion runner for PWC — that's drafted but waits on PWC approval
+- No companion runner — drafted only after sign-off
 - No changes to MINIMAL_AXIOMS_2026-05-20 or QUBIT_AXIOM_HARDENING_NOTE
 - No new audit ledger row promotions
 - No runner runs
@@ -258,13 +271,21 @@ If you want to do them all at once, the follow-up bundle is three ratification P
 
 For each approved rule, the follow-up PR pattern (R1 template):
 
-1. Add the rule clause to `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` (new section)
+1. Add the rule clause to `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` (new section) with panel-flagged caveats explicit
 2. Add cross-link from `MINIMAL_AXIOMS_2026-05-20.md` commentary block
-3. Write a runner-backed companion theorem if not already in place
+3. Write a runner-backed companion theorem
 4. Write a dispatch manifest listing the eligible re-audit rows
 5. (When reviewer's audit-dispatch infrastructure lands) add a machine-readable dispatch sidecar
 
-## Sign-off summary
+## Sign-off summary table
+
+| Rule | Status | Recommendation |
+|---|---|---|
+| R1-corollary (k=1 reading) | landed PR #1656 | confirmed by panel review |
+| LSP-projective (sharp projections only) | awaiting approval | panel-supported approve |
+| PRR-math (Schur step) | awaiting approval | panel-supported approve |
+| PRR-physical (ρ_ref = tracial) | awaiting approval | contested — approve with disclosure or defer |
+| PWC (any framing) | awaiting approval | panel recommends defer |
 
 The user signs off (or defers/rejects) by editing the sign-off lines above and adding a brief decision rationale in the merge comment. Once recorded, the follow-up ratification PRs can land per the R1 template.
 
@@ -277,9 +298,10 @@ This is a meta decision-packet doc; all references are plain-text only. No load-
 Plain-text pointer references:
 
 - `docs/repo/ACTIVE_REVIEW_QUEUE.md` — `2026-05-22-lsp-prr-framework-rule-approval-gate` entry (the gate this packet is responding to)
-- `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` — R1 ratification template this packet follows
+- `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § Hardening II — R1 ratification (already landed)
 - `R1_REAUDIT_MANIFEST_NOTE_2026-05-22.md` — R1 dispatch manifest template this packet's follow-ups will follow
-- `LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` (PR #1651) — landed conditional LSP bridge
-- `INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md` (PR #1635-salvage) — landed conditional PRR bridge
-- `OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md` — drafted unaudited PWC-style sketch
-- `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` — parent that PWC would unlock
+- `LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` (PR #1651) — landed conditional LSP-projective bridge
+- `INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md` (PR #1635-salvage) — landed conditional PRR-math bridge
+- `OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md` — drafted unaudited PWC-style sketch (now contested by panel)
+- `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` — parent that P1 would unlock (PWC was the proposed unlock route; panel recommends alternative routes)
+- `PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md` (PR #1650, landed) — Stinespring V construction takes arbitrary {K_r}; consistent with LSP-projective narrow scope

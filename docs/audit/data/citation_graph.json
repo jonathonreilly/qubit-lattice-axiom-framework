@@ -19145,6 +19145,54 @@
       "to": "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
     },
     {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_audit_note_2026-05-02"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "to": "cpt_exact_note"
+    },
+    {
       "from": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
@@ -63869,6 +63917,31 @@
       "runner_path": "scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py",
       "title": "Observable Principle \u2014 Klein-Four APBC Orbit Partition Closed-Form Narrow Theorem"
     },
+    "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21": {
+      "claim_id": "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "minimal_axioms_2026-05-20",
+        "staggered_dirac_realization_gate_note_2026-05-03",
+        "observable_principle_p1_bridge_tempesta_composability_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+        "observable_principle_audit_note_2026-05-02",
+        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+        "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
+        "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+        "cpt_exact_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "ae2d46a33a248d10a23646f59328b952585dc20179858614f3bf3f205f7774a4",
+      "path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md",
+      "runner_path": "scripts/frontier_observable_principle_p1_bridge_extensivity_primitive.py",
+      "title": "Observable-Principle P1 Bridge \u2014 Extensivity Primitive Narrow Note"
+    },
     "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17": {
       "claim_id": "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
       "claim_type_author_hint": "bounded_theorem",
@@ -81120,7 +81193,7 @@
       "bounded_theorem": 507,
       "decoration": 1,
       "meta": 184,
-      "no_go": 57,
+      "no_go": 58,
       "none": 1499,
       "open_gate": 45,
       "positive_theorem": 172
@@ -81129,15 +81202,15 @@
       "bounded_theorem": 945,
       "decoration": 1,
       "meta": 184,
-      "no_go": 160,
+      "no_go": 161,
       "none": 444,
       "open_gate": 123,
       "positive_theorem": 608
     },
-    "edge_count": 9676,
+    "edge_count": 9688,
     "leaf_count": 736,
-    "node_count": 2465,
+    "node_count": 2466,
     "root_count": 804,
-    "runners_with_path": 2032
+    "runners_with_path": 2033
   }
 }

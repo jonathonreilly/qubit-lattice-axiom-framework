@@ -1453,10 +1453,6 @@
       "to": "anomaly_forces_time_theorem"
     },
     {
-      "from": "axiom_first_sm_anomaly_cancellation_complete_theorem_note_2026-05-03",
-      "to": "axiom_first_sm_anomaly_cancellation_complete_note_2026-05-17"
-    },
-    {
       "from": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
       "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
@@ -1543,10 +1539,6 @@
     {
       "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
       "to": "axiom_first_kms_condition_theorem_note_2026-05-01"
-    },
-    {
-      "from": "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
-      "to": "axiom_first_stefan_boltzmann_note_2026-05-17"
     },
     {
       "from": "axiom_first_unruh_temperature_theorem_note_2026-05-01",
@@ -1955,10 +1947,6 @@
     {
       "from": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
       "to": "anomaly_forces_time_fb_note_2026-05-17"
-    },
-    {
-      "from": "bminusl_anomaly_freedom_theorem_note_2026-04-24",
-      "to": "bminusl_anomaly_freedom_note_2026-05-17"
     },
     {
       "from": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
@@ -3895,10 +3883,6 @@
     {
       "from": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
       "to": "anomaly_forces_time_fb_note_2026-05-17"
-    },
-    {
-      "from": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
-      "to": "chronology_protection_note_2026-05-17"
     },
     {
       "from": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
@@ -42010,11 +41994,10 @@
         "su2_witten_z2_anomaly_theorem_note_2026-04-24",
         "rh_sector_anomaly_cancellation_identities_note_2026-05-02",
         "bminusl_anomaly_freedom_theorem_note_2026-04-24",
-        "anomaly_forces_time_theorem",
-        "axiom_first_sm_anomaly_cancellation_complete_note_2026-05-17"
+        "anomaly_forces_time_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "965641a8a38d3ca523970dd05f595beeecb89db815b006e02d1373596925fd06",
+      "note_hash": "11504416849719a21c3a281bea8b5b4d1a61cb15450b61f7bbad89ac8a71922f",
       "path": "docs/AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_THEOREM_NOTE_2026-05-03.md",
       "runner_path": "scripts/axiom_first_sm_anomaly_cancellation_complete_check.py",
       "title": "Axiom-First SM Anomaly Cancellation Complete on Cl(3)/Z\u00b3 Left-Handed Surface"
@@ -42085,11 +42068,10 @@
         "n_eff_from_three_generations_theorem_note_2026-04-24",
         "minimal_axioms_2026-04-11",
         "rconn_derived_note",
-        "axiom_first_kms_condition_theorem_note_2026-05-01",
-        "axiom_first_stefan_boltzmann_note_2026-05-17"
+        "axiom_first_kms_condition_theorem_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b451e7c2ad14f63162ca0caf571f0a45f18d1a3e9dd5a8758887f253a0cc89f8",
+      "note_hash": "f64e4dba6fdfd80e5449b6ca547ef4e97232d0e3065bc63219580fd686f4edbe",
       "path": "docs/AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md",
       "runner_path": "scripts/axiom_first_stefan_boltzmann_check.py",
       "title": "Axiom-First Stefan-Boltzmann Law from KMS + Framework Photon Spectrum"
@@ -42509,11 +42491,10 @@
         "one_generation_matter_closure_note",
         "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
         "anomaly_forces_time_theorem",
-        "anomaly_forces_time_fb_note_2026-05-17",
-        "bminusl_anomaly_freedom_note_2026-05-17"
+        "anomaly_forces_time_fb_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e5780941a4f910c13393eba9a4cf2e18b045f293515c53e4e7f36a284003fca0",
+      "note_hash": "239dbfd4b81acf378a02a835867df2339e18fb2634a6613fb9ae1ccaf42c9d29",
       "path": "docs/BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_bminusl_anomaly_freedom.py",
       "title": "B-L Anomaly-Freedom Theorem With Retained nu_R"
@@ -44162,11 +44143,10 @@
         "cpt_exact_note",
         "frontier_extension_lane_opening_note_2026-04-25",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-        "anomaly_forces_time_fb_note_2026-05-17",
-        "chronology_protection_note_2026-05-17"
+        "anomaly_forces_time_fb_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "28a32c475e95546c5ccbafbf96ea4b95f8c4a92d9c4f677dc76c80d78da6f864",
+      "note_hash": "4aae415b1a4f0977313cb6a0f7d4430b6e76d7834110f81c59598e46993d420d",
       "path": "docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_chronology_operational_no_past_signaling.py",
       "title": "Chronology Protection: Operational No-Past-Signaling Support Theorem"
@@ -70878,7 +70858,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -81703,8 +81683,8 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
-    "leaf_count": 740,
+    "edge_count": 9739,
+    "leaf_count": 744,
     "node_count": 2483,
     "root_count": 808,
     "runners_with_path": 2048

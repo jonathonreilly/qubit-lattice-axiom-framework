@@ -9,36 +9,48 @@
   },
   "cycle_examples": [
     [
-      "key_terminology",
-      "minimal_axioms_2026-05-20"
-    ],
-    [
-      "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-      "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-    ],
-    [
-      "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-      "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-    ],
-    [
+      "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+      "lorentz_kernel_positive_closure_note",
+      "emergent_lorentz_invariance_note",
+      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
       "anomaly_forces_time_theorem",
-      "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-      "staggered_dirac_realization_gate_note_2026-05-03",
-      "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
-      "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
-      "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
-      "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17"
+      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     ],
     [
-      "staggered_dirac_realization_gate_note_2026-05-03",
-      "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
-      "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
-      "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
-      "observable_principle_p1_bridge_framework_internal_narrow_bounded_note_2026-05-17",
-      "three_generation_observable_theorem_note"
+      "emergent_lorentz_invariance_note",
+      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
+      "anomaly_forces_time_theorem",
+      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    ],
+    [
+      "lorentz_kernel_positive_closure_note",
+      "emergent_lorentz_invariance_note",
+      "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+      "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30",
+      "planck_link_local_first_variation_p_a_forcing_theorem_note_2026-04-30",
+      "anomaly_forces_time_theorem",
+      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+    ],
+    [
+      "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+      "a3_route5_no_proper_quotient_sharpened_obstruction_note_2026-05-08_r5"
+    ],
+    [
+      "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+      "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+      "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+      "pmns_selector_sign_to_branch_reduction_note",
+      "neutrino_two_amplitude_last_mile_reduction_note",
+      "pmns_c3_nontrivial_current_boundary_note",
+      "dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21",
+      "dm_wilson_to_dweh_local_chain_path_algebra_target_note_2026-04-18"
     ]
   ],
-  "cycles_detected": 292,
+  "cycles_detected": 30,
   "effective_status_counts": {
     "audited_conditional": 94,
     "audited_failed": 25,

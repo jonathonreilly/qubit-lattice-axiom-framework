@@ -346,5 +346,5 @@ decisions on the upstream notes themselves.
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [planck_scale_lane_status_note_2026-04-23](PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
+- `planck_scale_lane_status_note_2026-04-23` (see-also; converted from markdown link to backticked form 2026-05-22 to break citation cycle-0060/0070 — the Planck-pin identification `a ~ 1/M_Planck` is cited as upstream package-lane context per Part 6d, not as a load-bearing premise of the dispersion/parity/CPT bridges proved in Parts 6a-6c; the same hierarchy-scale citation already appears explicitly backticked at the Part 6d bridge table to keep this note's runner authority on the assumed surface)
 - [planck_target3_clifford_phase_bridge_theorem_note_2026-04-25](PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)

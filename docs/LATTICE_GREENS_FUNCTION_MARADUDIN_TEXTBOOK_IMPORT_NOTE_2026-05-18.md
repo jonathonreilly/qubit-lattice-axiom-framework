@@ -14,7 +14,7 @@ dependency.
 
 This wrapper note documents the cubic-lattice Green's function
 asymptotic as a named non-derivation import so downstream rows
-(notably [NEWTON_LAW_DERIVED_NOTE.md](NEWTON_LAW_DERIVED_NOTE.md))
+(notably `NEWTON_LAW_DERIVED_NOTE.md`)
 can register a one-hop dependency rather than carry the asymptotic
 as an unattributed textbook reference.
 
@@ -62,14 +62,14 @@ of lattice potential theory derivable from any of these treatments.
 - This is NOT a derivation of the lattice Poisson equation as the
   equation of motion of any specific lattice scalar field; that is a
   separate framework input recorded by the consumer notes (BA-1 in
-  [NEWTON_LAW_DERIVED_NOTE.md](NEWTON_LAW_DERIVED_NOTE.md)).
+  `NEWTON_LAW_DERIVED_NOTE.md`).
 - The bounded scope is the named non-derivation import only.
 
 ## Downstream usage
 
 This wrapper is consumed by:
 
-- [NEWTON_LAW_DERIVED_NOTE.md](NEWTON_LAW_DERIVED_NOTE.md) — supplies
+- `NEWTON_LAW_DERIVED_NOTE.md` — supplies
   the BA-2 lattice Green's function asymptotic that, together with the
   BA-1 lattice Poisson equation of motion, gives the inverse-square
   Newton law in the continuum-limit on the framework substrate.

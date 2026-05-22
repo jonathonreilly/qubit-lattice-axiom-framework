@@ -190,7 +190,7 @@ matching at leading order in `1/N_c`. It does **not** prove:
   remain as-is. This theorem supplies bounded support for the
   matching route; the comparator values are unchanged.
 - `R_conn = 8/9` itself remains a separate theorem in
-  [RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md), with its own audit
+  `RCONN_DERIVED_NOTE.md`, with its own audit
   row and its own MC verification.
 - The 't Hooft expansion and the OZI rule are both standard textbook
   results (Witten 1979; Coleman 1985, Ch. 8; Manohar 1998
@@ -213,7 +213,7 @@ matching at leading order in `1/N_c`. It does **not** prove:
   `YT_EW_COLOR_PROJECTION_THEOREM.md`
   — the EW color projection lane that this theorem unblocks.
 - Sibling derivation:
-  [RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md) — the q-qbar channel
+  `RCONN_DERIVED_NOTE.md` — the q-qbar channel
   R_conn derivation, using the same `1/N_c` topological mechanism.
 - Audit lane handoff:
   [docs/audit/worker_lanes/01_rconn_derivation.md](audit/worker_lanes/01_rconn_derivation.md).

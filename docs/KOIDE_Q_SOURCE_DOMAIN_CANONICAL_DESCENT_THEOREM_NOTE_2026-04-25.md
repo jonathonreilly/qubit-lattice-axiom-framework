@@ -378,4 +378,8 @@ This graph-bookkeeping section records explicit dependency links named by a prio
   (see-also cross-reference; backticked to break cycle-0041 / cycle-0049 — named here as a graph-bookkeeping repair link only, not as a load-bearing input)
 - [koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25](KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md)
 - [koide_dimensionless_objection_closure_review_packet_2026-04-24](KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md)
-- [koide_q_delta_closure_package_readme_2026-04-21](KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
+- `koide_q_delta_closure_package_readme_2026-04-21`
+  (`KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`;
+  see-also cross-reference to the package README catalog; backticked to break
+  cycle-0062 — the README catalogs this descent theorem, so the reverse
+  markdown link is informational)

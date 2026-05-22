@@ -85,10 +85,10 @@ So this is a bounded negative result, not a new localization breakthrough.
 
 This note should be read with:
 
-- [`MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md`](MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md)
+- `MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md` (sister sweep; backticked to break cycle-0004 in the citation graph)
 - [`MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md`](MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md)
 - [`MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md`](MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md)
-- [`PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md`](PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md)
+- `PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md` (upstream readiness index; backticked to break cycle-0003 in the citation graph)
 
 Together, these notes say:
 

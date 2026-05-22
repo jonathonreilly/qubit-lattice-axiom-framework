@@ -395,7 +395,7 @@ Two hostile-audit-grade fixes applied to this note:
   artifact), not a content-citation flow.
 
 See companion fix-record:
-[`AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_NOTE_2026-05-17.md`](AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_NOTE_2026-05-17.md).
+`AXIOM_FIRST_SM_ANOMALY_CANCELLATION_COMPLETE_NOTE_2026-05-17.md`.
 
 Paired verifier:
 `scripts/frontier_axiom_first_sm_anomaly_cancellation_complete_downstream_fix.py`.

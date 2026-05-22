@@ -1,11 +1,11 @@
 # Vocabulary Hygiene Design
 
-> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`; each row points to the canonical source-of-truth doc.
 
 **Status:** design proposal for vocabulary governance in this repo and
 as a reference exemplar for AI-built physics repos. Companion to
-[KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md) and
-[CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md). The implementation
+`KEY_TERMINOLOGY.md` and
+`CONTROLLED_VOCABULARY.md`. The implementation
 work lives in a separate cleanup PR (see "Migration scope" below).
 
 **Date:** 2026-05-18
@@ -28,14 +28,14 @@ methodological deliverable.
 1. **Vocabulary is disjoint from physics.** Physics primitives (`Cl(3)`,
    `Z^3`, `A_min`, `Axiom 1`, `Axiom 2`, `g_bare`, `u_0`, `M_Pl`, etc.)
    are *not* vocabulary terms. They live in
-   [MINIMAL_AXIOMS_2026-05-20.md](../MINIMAL_AXIOMS_2026-05-20.md) and
+   `MINIMAL_AXIOMS_2026-05-20.md` and
    per-claim notes. Vocabulary governs *process labels only*: status,
    audit fields, repair classes, evidence terms, prose voice.
 
 2. **No rot possibility.** The canonical vocabulary is a
    machine-readable structured-data file (YAML). Rendered docs
-   ([CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md),
-   [KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md)) are *products*
+   (`CONTROLLED_VOCABULARY.md`,
+   `KEY_TERMINOLOGY.md`) are *products*
    regenerated from the YAML, not authored alongside it. Lint
    mechanically enforces; manual edits to rendered docs are not
    permitted.
@@ -104,7 +104,7 @@ two places:
   fields (`claim_type`, `claim_scope`, `audit_status`,
   `effective_status`, repair classes, independence tiers, load-bearing
   step classes).
-- [CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md) defines the
+- `CONTROLLED_VOCABULARY.md` defines the
   surrounding operational vocabulary (publication-capture dispositions,
   claim-strength labels, filename rules, evidence terms, prose voice).
 
@@ -151,12 +151,12 @@ tags are repo-specific.
 ## Out of scope for the vocabulary
 
 These are **physics**, not vocabulary, and never appear in
-[CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md) or
-[KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md):
+`CONTROLLED_VOCABULARY.md` or
+`KEY_TERMINOLOGY.md`:
 
 - **Framework primitives.** `Cl(3)`, `Z^3`, `A_min`, `Axiom 1`,
   `Axiom 2`, `Axiom*`. Canonical home:
-  [MINIMAL_AXIOMS_2026-05-20.md](../MINIMAL_AXIOMS_2026-05-20.md);
+  `MINIMAL_AXIOMS_2026-05-20.md`;
   policy: [AXIOM_MINIMALITY_POLICY.md](../audit/AXIOM_MINIMALITY_POLICY.md).
 - **Physics quantities.** `g_bare`, `u_0`, `M_Pl`, `R_conn`, `alpha_s`,
   `v`, etc. Canonical home:
@@ -417,7 +417,7 @@ Cleanup-1 creates this file and populates it from the existing
 content of [audit/README.md](../audit/README.md) field enums,
 [FRESH_LOOK_REQUIREMENTS.md](../audit/FRESH_LOOK_REQUIREMENTS.md)
 independence tiers, and the surrounding sections of
-[CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md). Cleanup-1b writes a
+`CONTROLLED_VOCABULARY.md`. Cleanup-1b writes a
 renderer that regenerates CONTROLLED_VOCABULARY.md + KEY_TERMINOLOGY.md
 from it. After that renderer lands, manual edits to the rendered docs are
 not permitted; all changes flow through the YAML.
@@ -628,7 +628,7 @@ generated docs (low-risk). Cleanup-2 is the per-file migration sweep
    populated from the existing field definitions in
    [audit/README.md](../audit/README.md),
    [FRESH_LOOK_REQUIREMENTS.md](../audit/FRESH_LOOK_REQUIREMENTS.md),
-   and [CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md). The
+   and `CONTROLLED_VOCABULARY.md`. The
    8-value `audit_status`, 7 repair classes, 5 independence tiers, and
    (A)–(G) load-bearing step classes are copied across with their
    existing semantics — **no enum restructure**. Required:
@@ -661,8 +661,8 @@ generated docs (low-risk). Cleanup-2 is the per-file migration sweep
    deterministic renderer. Inputs:
    [`controlled_vocabulary.yaml`](controlled_vocabulary.yaml).
    Outputs: regenerated
-   [CONTROLLED_VOCABULARY.md](CONTROLLED_VOCABULARY.md) and
-   [KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md) with
+   `CONTROLLED_VOCABULARY.md` and
+   `KEY_TERMINOLOGY.md` with
    `<!-- generated; do not edit by hand; source:
    docs/repo/controlled_vocabulary.yaml hash=<sha256> -->` headers.
    Golden-test required: the rendered output must equal a
@@ -783,7 +783,7 @@ it.
 > with repo size. The `Cl(3) × Z^3` framework is the reference case;
 > the mechanism transfers as an exemplar to AI-built research repos
 > meeting the structural preconditions listed in
-> [AI_METHODOLOGY_NOTE_2026-04-25.md §5a](../AI_METHODOLOGY_NOTE_2026-04-25.md).
+> `AI_METHODOLOGY_NOTE_2026-04-25.md` §5a.
 
 **Empirical anchor:** the 2026-05-17 wave of 83 ad-hoc note-type
 suffix + F-letter findings notes is the case study. Discipline-based

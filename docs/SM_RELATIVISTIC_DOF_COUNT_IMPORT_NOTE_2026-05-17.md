@@ -69,7 +69,7 @@ as η(4)/ζ(4)).
 ## Downstream usage
 
 This wrapper is consumed by:
-- [DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md) — `g_*` enters the relativistic Majorana equilibrium abundance.
+- `DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md` — `g_*` enters the relativistic Majorana equilibrium abundance.
 - Various other DM-leptogenesis thermal-side rows that consume the
   `g_*` constant for thermal averages.
 

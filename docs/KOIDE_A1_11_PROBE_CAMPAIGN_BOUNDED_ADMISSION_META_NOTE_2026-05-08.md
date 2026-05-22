@@ -372,8 +372,8 @@ Round 4 — Survey-2-motivated (PR #740):
 
 Same-batch targeted follow-up (PRs #755, #763):
 
-- Probe 12 (Plancherel/Peter-Weyl): [`KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md`](KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md)
-- Probe 13 (real structure / antilinear involution): [`KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md`](KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md)
+- Probe 12 (Plancherel/Peter-Weyl): `KOIDE_A1_PROBE_PLANCHEREL_PETER_WEYL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe12.md` (backticked: this catalog entry is see-also for a same-batch targeted follow-up; the load-bearing citation direction is *probe12 → campaign-meta*, since probe 12 cites the campaign synthesis in its Setup premises table)
+- Probe 13 (real structure / antilinear involution): `KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md` (backticked: this catalog entry is see-also for a same-batch targeted follow-up; the load-bearing citation direction is *probe13 → campaign-meta*, since probe 13 cites the campaign synthesis in its Setup premises table)
 
 ## Validation
 

@@ -68,12 +68,12 @@ def render_vocab_hierarchy_table(data: dict) -> str:
     rows = [
         (
             "0. Front-door A-Z lookup",
-            "[`docs/KEY_TERMINOLOGY.md`](../KEY_TERMINOLOGY.md)",
+            "`docs/KEY_TERMINOLOGY.md`",
             "Single-page A-Z index of every repo-canonical term with a one-line definition and a pointer to its source-of-truth doc. The reader entry-point above all layers below; an index, not an authority. New terms enter the index only after the source-of-truth doc accepts them.",
         ),
         (
             "1. Framework substantive",
-            "[`docs/MINIMAL_AXIOMS_2026-05-20.md`](../MINIMAL_AXIOMS_2026-05-20.md) (supersedes `MINIMAL_AXIOMS_2026-05-03.md` per qubit-reframe landing)",
+            "`docs/MINIMAL_AXIOMS_2026-05-20.md` (supersedes `MINIMAL_AXIOMS_2026-05-03.md` per qubit-reframe landing)",
             "Framework primitives the operational vocabulary uses: A1 \"Reality is a qubit at every lattice site\" (equivalently: for each site `x`, the primitive local operator algebra is the one-qubit algebra `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), A2 \"The lattice sites form the cubic lattice `Z^3`\", the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms. Changes only when a framework-level science decision changes.",
         ),
         (
@@ -88,7 +88,7 @@ def render_vocab_hierarchy_table(data: dict) -> str:
         ),
         (
             "4. Methodology framing (adjacent)",
-            "[`docs/AI_METHODOLOGY_NOTE_2026-04-25.md`](../AI_METHODOLOGY_NOTE_2026-04-25.md)",
+            "`docs/AI_METHODOLOGY_NOTE_2026-04-25.md`",
             "The curated front-door note for the methodology lane. Defines how to talk about the AI / methodology side at the project level.",
         ),
     ]

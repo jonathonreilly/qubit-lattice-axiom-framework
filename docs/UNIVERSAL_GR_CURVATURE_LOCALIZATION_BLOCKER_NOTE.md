@@ -39,7 +39,10 @@ has:
 - exact isotropic-background Schur localization on `diag(a,b,b,b)`
 
 That isotropic operator-identification step has now been discharged by
-[UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md](/Users/jonreilly/Projects/Physics/docs/UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md).
+`UNIVERSAL_GR_ISOTROPIC_GLUE_OPERATOR_NOTE.md` (downstream consumer; backticked
+to avoid length-5 cycle — this blocker note is historical/superseded and references
+the glue note as a status pointer "this step has been discharged", not as a load-bearing
+input; citation graph direction is *downstream glue → this blocker note*).
 
 The live remaining object is now smaller still:
 

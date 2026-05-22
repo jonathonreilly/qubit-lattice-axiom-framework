@@ -227,5 +227,13 @@ as a discharge of the remaining physical `Q` bridge.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [koide_q_reduced_observable_restriction_theorem_2026-04-22](KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md)
-- [koide_q_no_hidden_source_audit_2026-04-22](KOIDE_Q_NO_HIDDEN_SOURCE_AUDIT_2026-04-22.md)
-- [koide_q_normalized_second_order_effective_action_theorem_2026-04-22](KOIDE_Q_NORMALIZED_SECOND_ORDER_EFFECTIVE_ACTION_THEOREM_2026-04-22.md)
+- `koide_q_no_hidden_source_audit_2026-04-22`
+  (`KOIDE_Q_NO_HIDDEN_SOURCE_AUDIT_2026-04-22.md`;
+  see-also cross-reference; backticked to break cycle-0056 / cycle-0062 — the
+  no-hidden-source audit consumes this criterion theorem, so the reverse
+  markdown link is informational)
+- `koide_q_normalized_second_order_effective_action_theorem_2026-04-22`
+  (`KOIDE_Q_NORMALIZED_SECOND_ORDER_EFFECTIVE_ACTION_THEOREM_2026-04-22.md`;
+  see-also cross-reference; backticked to break cycle-0056 / cycle-0062 — the
+  normalized second-order note names this criterion as its upstream supplier,
+  so the reverse markdown link is informational)

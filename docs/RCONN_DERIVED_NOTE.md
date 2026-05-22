@@ -668,7 +668,7 @@ counts**, demonstrating that the channel-count identity alone cannot
 determine the physical observable. Therefore no one-step Fierz
 projection from retained primitives selects `kappa_EW = 0`.
 
-**(O-STRETCH)** [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md)
+**(O-STRETCH)** `YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`
 enumerates the three structural routes that would close (M) exactly
 and demonstrates each fails on the retained packet:
 
@@ -754,7 +754,7 @@ is not derived in this note. The 2026-05-18 narrowing adds:
    trace selector and the `K_EW(1) = 1` full-trace selector) with
    identical Fierz arithmetic and identical CMT scaling.
 2. An explicit cross-reference to the
-   [`YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`](YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md)
+   `YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`
    named-obstruction packet, which enumerates the three failure modes
    (O1, O2, O3) blocking a retained-primitive derivation of (M).
 3. A documented Tier B bridge-theorem attempt verdict (NARROWED) for

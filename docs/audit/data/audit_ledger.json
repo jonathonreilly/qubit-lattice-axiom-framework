@@ -159047,22 +159047,53 @@
       "verdict_rationale": null
     },
     "mesoscopic_surrogate_source_2d_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T23:55:51.117011+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "ordered_lattice_packet_reidentification_note": "Bounded numerical control that a Gaussian packet on the fixed 3D ordered lattice h=0.5, W=8, L=12 remains shape-identifiable under the tested valley-linear and spent-delay weak-field propagations.",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "A bounded numerical replay of the six-row metric table for one fixed 2D ordered-lattice harness and one fixed Gaussian/top-k packet recipe.",
+          "ordered_lattice_quasi_persistent_relaunch_note": "A bounded numerical control on the fixed 3D ordered-lattice harness h=0.5, W=8, L=12 for the point and compact5 seeds using top-5 reidentification and relaunch.",
+          "quasi_persistent_relaunch_probe_note": "Bounded numerical replay/control: the provided runner computes one-segment compression-and-relaunch metrics for the fixed 3D ordered-lattice valley-linear family at h=0.5, W=8, L=6, with no persistent-mass or family-generic conclusion."
+        },
+        "dep_claim_type": {
+          "ordered_lattice_packet_reidentification_note": "bounded_theorem",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "bounded_theorem",
+          "ordered_lattice_quasi_persistent_relaunch_note": "bounded_theorem",
+          "quasi_persistent_relaunch_probe_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ordered_lattice_packet_reidentification_note": "retained_bounded",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note": "retained_bounded",
+          "ordered_lattice_quasi_persistent_relaunch_note": "retained_bounded",
+          "quasi_persistent_relaunch_probe_note": "retained_bounded"
+        },
+        "deps": [
+          "ordered_lattice_packet_reidentification_note",
+          "ordered_lattice_quasi_persistent_relaunch_2d_note",
+          "ordered_lattice_quasi_persistent_relaunch_note",
+          "quasi_persistent_relaunch_probe_note"
+        ],
+        "load_bearing_score": 4.822,
+        "runner_hash": "42b6f4644c2fc79a04ff2f23da9d1442d4372dc8e026e6405534a1bf49dcc186",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T235348Z-ef33d423-mesoscopic_surrogate_sou-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner genuinely constructs the 2D lattice, propagates the packet, builds top-N surrogate profiles, computes distributed and point-source fields, and reproduces the reported ratios without hard-coding the contested table. The conclusion closes only for this fixed numerical harness and does not establish a persistent-mass or family-generic source theorem.",
       "claim_id": "mesoscopic_surrogate_source_2d_note",
-      "claim_scope": null,
+      "claim_scope": "A fixed 2D ordered-lattice numerical companion check at h=0.5, W=12, L=20 comparing top-N distributed surrogate sources built from the free packet profile against the runner's equivalent-strength point-source comparator.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-22T23:55:51.117011+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -159073,21 +159104,21 @@
         "quasi_persistent_relaunch_probe_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/lattice_2d_continuum_distance.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 4.822,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The frozen 2D replay shows that the distributed surrogate-source response ratio versus an equivalent-strength point source drops from about 0.655 at topN=9 to 0.372 at topN=25 and 0.117 for topN=49 and above, while the downstream spread remains essentially unchanged.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8260be29e3d9ce115773a3a64e6e57601c42fcc366ebf82a967cb61e478bb1c1",
       "note_path": "docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only if later prose broadens the result beyond this fixed 2D harness or treats the point-source comparator as an off-lattice exact-centroid theorem rather than the runner-defined lattice comparator.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -159131,18 +159162,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/mesoscopic_surrogate_source_2d.py",
       "title": "Mesoscopic Surrogate Source 2D Note",
       "transitive_descendants": 9,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing result is a first-principles numerical computation inside the provided retained 2D ordered-lattice harness, not a definition, renaming, or external calibrated numerical match. The cited authorities are all marked retained_bounded and are used only as bounded context for packet/relaunch controls, not as unsupported upgrades to a mass theorem. The note's own safe read remains scoped to a mesoscopic companion control and explicitly disclaims persistent-mass closure."
     },
     "mesoscopic_surrogate_threshold_2d_note": {
       "audit_date": "2026-05-19T14:20:17.739835+00:00",
@@ -176918,11 +176949,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 5.585,
+      "load_bearing_score": 8.585,
       "load_bearing_step": "On the retained h=0.5, W=8, L=12 ordered-lattice family, the computed packets have mean best-shift score 1.000 and width ratios near 1, so a localized packet remains re-identifiable after propagation.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "9f6501a91cac7bb610a728fe7ce392c62ddc0d5d96e7f88231a1ab76ec3941be",
       "note_path": "docs/ORDERED_LATTICE_PACKET_REIDENTIFICATION_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that the packet-similarity metric is sufficient only for the stated bounded re-identification control, not for any stronger inertial-response or persistent-object claim.",
@@ -208470,11 +208501,11 @@
       ],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 6.085,
+      "load_bearing_score": 9.085,
       "load_bearing_step": "On the fixed h=0.5, W=8, L=6 ordered-lattice segment, broad square-window and top-N compressed relaunch states preserve downstream free and weak-field profiles within the reported TV and relative-delta errors, while sharper localization fails.",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_bounded",
+      "max_descendant_status_rank": 95,
       "note_hash": "2bf3709bf0d80b1efc2ea6f6e0350fec036d6447a3fffff56eb56bb265cc2fce",
       "note_path": "docs/QUASI_PERSISTENT_RELAUNCH_PROBE_NOTE.md",
       "notes_for_re_audit_if_any": "A second auditor should re-check that the fixed Lattice3D/K/ACTION harness is accepted as the framework primitive for class C rather than requiring a lower-level axiom expansion.",

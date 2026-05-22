@@ -3,7 +3,7 @@
     "critical": 407,
     "high": 215,
     "leaf": 337,
-    "medium": 339
+    "medium": 338
   },
   "cycle_break_target_count": 30,
   "cycle_break_targets": [
@@ -11755,6 +11755,38 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "mesoscopic_surrogate_backreaction_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ordered_lattice_packet_reidentification_note",
+        "ordered_lattice_quasi_persistent_relaunch_note",
+        "quasi_persistent_relaunch_probe_note",
+        "ordered_lattice_quasi_persistent_relaunch_2d_note",
+        "broad_surrogate_point_source_compare_note",
+        "mesoscopic_surrogate_source_2d_note"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/quasi_persistent_relaunch_probe.py",
+        "scripts/two_body_momentum_harness.py"
+      ],
+      "load_bearing_score": 6.17,
+      "note_path": "docs/MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/mesoscopic_surrogate_backreaction_harness.py",
+      "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "hierarchy_effective_potential_endpoint_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17871,38 +17903,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mesoscopic_surrogate_backreaction_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ordered_lattice_packet_reidentification_note",
-        "ordered_lattice_quasi_persistent_relaunch_note",
-        "quasi_persistent_relaunch_probe_note",
-        "ordered_lattice_quasi_persistent_relaunch_2d_note",
-        "broad_surrogate_point_source_compare_note",
-        "mesoscopic_surrogate_source_2d_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/quasi_persistent_relaunch_probe.py",
-        "scripts/two_body_momentum_harness.py"
-      ],
-      "load_bearing_score": 6.17,
-      "note_path": "docs/MESOSCOPIC_SURROGATE_BACKREACTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/mesoscopic_surrogate_backreaction_harness.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "signed_gravity_source_character_uniqueness_theorem_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -18129,35 +18129,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "mesoscopic_surrogate_source_2d_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ordered_lattice_packet_reidentification_note",
-        "ordered_lattice_quasi_persistent_relaunch_note",
-        "ordered_lattice_quasi_persistent_relaunch_2d_note",
-        "quasi_persistent_relaunch_probe_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/lattice_2d_continuum_distance.py"
-      ],
-      "load_bearing_score": 4.822,
-      "note_path": "docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mesoscopic_surrogate_source_2d.py",
-      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -37200,5 +37171,5 @@
     }
   ],
   "ready_count": 10,
-  "total_pending": 1298
+  "total_pending": 1297
 }

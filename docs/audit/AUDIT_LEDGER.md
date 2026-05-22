@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 375 |
+| **retained_bounded** | 376 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1298 |
+| unaudited | 1297 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 628 |
+| `audited_clean` | 629 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1522 |
+| `unaudited` | 1521 |
 
 | claim_type | count |
 |---|---:|
@@ -460,6 +460,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mirror_2d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -7350,6 +7351,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note pins the Bogoliubov inequality and the Mermin-Wagner / Hohenberg / Coleman dimension-restriction theorems as accepted mathematical inputs for downstream one-hop citation.  _(class `E`)_
 - **chain closes:** False — The restricted packet provides no retained one-hop authorities or runner derivation for the imported textbook theorems. The missing step is an attached retained authority or independent derivation establishing the theorem statements and their hypotheses within the packet.
 - **rationale:** The source note openly presents a named non-derivation import, so the load-bearing move is a definitional registration rather than first-principles closure. Because the packet lists no cited authorities in full, the textbook theorem statements, short-range interaction hypothesis, operator-domain assumptions, and Coleman relativistic assumptions remain imported rather than closed. Applying the negative-claim gate, N3 flags these as hidden/explicit assumptions inside the bounded no-SSB boundary, preventing an audited_clean verdict.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_source_2d_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_SOURCE_2D_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A fixed 2D ordered-lattice numerical companion check at h=0.5, W=12, L=20 comparing top-N distributed surrogate sources built from the free packet profile against the runner's equivalent-strength point-source comparator.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T235348Z-ef33d423-mesoscopic_surrogate_sou-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The frozen 2D replay shows that the distributed surrogate-source response ratio versus an equivalent-strength point source drops from about 0.655 at topN=9 to 0.372 at topN=25 and 0.117 for topN=49 and above, while the downstream spread remains essentially unchanged.  _(class `C`)_
+- **chain closes:** True — The provided runner genuinely constructs the 2D lattice, propagates the packet, builds top-N surrogate profiles, computes distributed and point-source fields, and reproduces the reported ratios without hard-coding the contested table. The conclusion closes only for this fixed numerical harness and does not establish a persistent-mass or family-generic source theorem.
+- **rationale:** The load-bearing result is a first-principles numerical computation inside the provided retained 2D ordered-lattice harness, not a definition, renaming, or external calibrated numerical match. The cited authorities are all marked retained_bounded and are used only as bounded context for packet/relaunch controls, not as unsupported upgrades to a mass theorem. The note's own safe read remains scoped to a mesoscopic companion control and explicitly disclaims persistent-mass closure.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_threshold_2d_note`

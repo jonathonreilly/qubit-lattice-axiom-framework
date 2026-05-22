@@ -34485,7 +34485,7 @@
       "verdict_rationale": "The runner source performs actual exact Sympy matrix computations for the Pauli anticommutators, omega^2, centrality, chirality idempotents, inequivalence of the two canonical irreps, and tensor-dimension checks; it is not merely printing constants. The uniqueness statement rests on the standard algebraic decomposition quoted in the proof, not on numerical fitting or an external comparator. Within the restricted real-Cl(3,0) algebraic scope, no open downstream physical bridge is imported."
     },
     "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-22T03:10:41.442179+00:00",
+      "audit_date": "2026-05-22T12:49:45.953589+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
         "dep_claim_scope": {
@@ -34500,25 +34500,25 @@
         "deps": [
           "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
         ],
-        "load_bearing_score": 12.964,
+        "load_bearing_score": 13.04,
         "runner_hash": "943572bed145e5b0e514c1c2f6ed5ce17e5c48635334c79e3782bd7f79947d6a",
-        "transitive_descendants": 998
+        "transitive_descendants": 1052
       },
       "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-030935-7e12d739-cl3_per_site_hilbert_dim-001",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T124913Z-34ddc3b9-cl3_per_site_hilbert_dim-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": false,
-      "chain_closure_explanation": "The cited authority closes the abstract physical-Cl(3)-only representation classification U1-U3, but explicitly moves the physical per-site Hilbert-space dimension bridge U4 out of its scope. The source note relies on the site-Hilbert-space-as-faithful-irrep identification as an admitted structural bridge without a retained one-hop authority for that bridge.",
+      "chain_closure_explanation": "The abstract Cl(3) representation-theoretic dimension follows from the cited retained_bounded authority, but the physical identification of each lattice-site Hilbert space with that faithful irreducible Cl(3) module is imported as a structural bridge. The cited authority explicitly moved the physical per-site Hilbert-dimension bridge out of scope and says downstream consumers should cite the staggered-Dirac/Grassmann substep instead.",
       "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
-      "claim_scope": "For each lattice site on the Cl(3) \u2297 Z^3 substrate, dim_C H_x = 2 with Pauli realization, and finite blocks have tensor-product dimension 2^|\u039b|.",
+      "claim_scope": "Per-site Hilbert dimension 2 and finite-block tensor-product dimension 2^|\u039b| for a Cl(3) site Hilbert space identified with a faithful irreducible complex Cl(3) representation.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-22T03:10:41.442179+00:00",
+      "claim_type_last_reviewed": "2026-05-22T12:49:45.953589+00:00",
       "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
@@ -34530,20 +34530,22 @@
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "audited_conditional",
       "load_bearing_score": 13.04,
-      "load_bearing_step": "The framework's per-site algebra at every x is Cl(3), the site Hilbert space is the faithful irreducible representation, and therefore dim_C H_x = 2 by the cited per-site uniqueness theorem.",
-      "load_bearing_step_class": "B",
+      "load_bearing_step": "The framework's per-site algebra at every x \u2208 Z^3 is Cl(3), and the site Hilbert space is the faithful irreducible representation; by the cited uniqueness theorem, dim_C H_x = 2.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8b7f82d4de294d0c61593cd8f8bbbb6ede4f94fb96036bbf8d30bd7d558d6827",
       "note_path": "docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite and include a retained one-hop theorem closing the physical site-Hilbert-space identification, such as the staggered-Dirac/Grassmann forcing substep named by the cited authority, then re-audit the narrowed chain.",
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite and include the retained-grade staggered-Dirac/Grassmann or equivalent bridge theorem that identifies the physical per-site Hilbert space with the faithful irreducible Cl(3) module.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 5,
         "B": 0,
@@ -34554,7 +34556,7 @@
       "runner_path": "scripts/cl3_per_site_hilbert_dim_two_check.py",
       "title": "Per-Site Hilbert Space Dimension = 2 from Cl(3) Per-Site Uniqueness",
       "transitive_descendants": 1052,
-      "verdict_rationale": "The runner genuinely checks Pauli anticommutation, irreducibility, unitary conjugation invariance, and the elementary tensor-dimension formula, but it does not compute or certify the physical bridge from the lattice site Hilbert space to the abstract Cl(3) irrep. The only cited authority is retained_bounded for the abstract Cl(3) classification and explicitly says the per-site Hilbert dimension conclusion on the framework baseline is out of scope and should be carried by the staggered-Dirac/Grassmann realization gate. Thus the dimensional conclusion may be true, but this restricted packet does not close it from the cited inputs alone."
+      "verdict_rationale": "The runner verifies Pauli anticommutation, irreducibility of the Pauli module, unitary conjugacy preservation, and the tensor-product dimension arithmetic, but it does not establish the missing bridge from the physical lattice site Hilbert space to a faithful irreducible Cl(3) module. The one-hop cited authority is retained_bounded for abstract physical-Cl(3)-only U1\u2013U3 content, while explicitly excluding U4, the per-site Hilbert-dimension conclusion on the framework baseline. Therefore the claim depends on an imported site-Hilbert-space identification not closed by this restricted packet."
     },
     "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02": {
       "audit_date": "2026-05-10T15:30:44.393092+00:00",

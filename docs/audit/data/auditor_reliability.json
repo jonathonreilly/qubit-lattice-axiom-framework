@@ -90,8 +90,8 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 259,
-        "B": 30,
+        "A": 260,
+        "B": 29,
         "C": 222,
         "D": 4,
         "E": 17,

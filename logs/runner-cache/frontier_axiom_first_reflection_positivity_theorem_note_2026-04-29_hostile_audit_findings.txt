@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_axiom_first_reflection_positivity_theorem_note_2026-04-29_hostile_audit_findings.py
-runner_sha256: 8f0bf1166b295b9d07ecf0a9619e44a8b3578d3ca45251126ab2807eae3ef5b8
+runner_sha256: d6b52fe1bb23052d18ab35cdfff4c60c884b15d02dfa190210a623c882b542dd
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

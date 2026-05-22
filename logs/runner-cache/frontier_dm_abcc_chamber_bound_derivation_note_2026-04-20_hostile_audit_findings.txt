@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_abcc_chamber_bound_derivation_note_2026-04-20_hostile_audit_findings.py
-runner_sha256: a1e656e80edb38c61c3217859a8014a4b30210eda09a9ff193220f5d029f6a2e
+runner_sha256: f36d30bcfddc45ee45615e6b603193b9734eee27decefd6fe7e86d857ec8afa2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

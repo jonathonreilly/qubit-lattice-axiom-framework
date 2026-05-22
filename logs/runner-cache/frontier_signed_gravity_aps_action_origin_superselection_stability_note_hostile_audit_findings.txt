@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_signed_gravity_aps_action_origin_superselection_stability_note_hostile_audit_findings.py
-runner_sha256: 94f19932e79c6050e38f3521964d5f87d398140a0a41e1a03bb04a1e8f9c76fe
+runner_sha256: 2dc8919b1fe918cf33990af2fc0db2a62add6bac808d8aa1adb2d6786ac51387
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_signed_source_density_boundary_note_hostile_audit_findings.py
-runner_sha256: 03bf5f031a78264b58b0bfa1f4c46d513b6bdedb5538d4dc4262e0fd0e23d586
+runner_sha256: 63481c76fc98d92fd81dc53e9a0ba430d6c110c932eeba24a68013699590b8e4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_note_2026-04-19_hostile_audit_findings.py
-runner_sha256: 50dc071aa2324f14d66167f6ee12ea8219b23d4da8bdeba22a3d3cc924a5582a
+runner_sha256: fb35890bed29d075ceef5e8908d724956102760cd77b0143c4c2d3d934e28e2e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

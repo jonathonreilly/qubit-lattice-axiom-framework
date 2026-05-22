@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_poisson_resource_sweep_note_hostile_audit_findings.py
-runner_sha256: c1d587c4a33f348047bb3a24a0d6e4a2dbd5553887446344aff22dde831589e7
+runner_sha256: 1f074066dcc2e248faf03eec3b89f3ce89b88d61343f82eae682a51cca456c31
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,10 +9,10 @@ status: ok
 ==============================================================================
 AUDIT-PREP VERIFIER — teleportation_poisson_resource_sweep_note
 ==============================================================================
-  [PASS] [A] Parent note exists  (TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md, 6477 bytes)
+  [PASS] [A] Parent note exists  (TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md, 6881 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
-  [PASS] [A]   teleportation_resource_from_poisson_note IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   teleportation_resource_from_poisson_note IS cited (>=1 hit)  (hits = 3)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):
 

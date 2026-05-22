@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_newton_derivation_note_hostile_audit_findings.py
-runner_sha256: 29a98513374314f05554fcf222d0d6716667025facbd6b4b98506d9ec0a73832
+runner_sha256: d9af42a99a1685ab60d3bfcc069946f7baed2a5f1bfc0a1b3eb88d50ae7d73c1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================

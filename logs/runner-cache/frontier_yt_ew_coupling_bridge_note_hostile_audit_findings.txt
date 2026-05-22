@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_ew_coupling_bridge_note_hostile_audit_findings.py
-runner_sha256: 1db1bd886557e85c562ad1855e8024d84840fdde734a79dc6d7d033605079575
+runner_sha256: ceba3a3791c70cdc3b32682267076c994c9e0e768c51538cbd9b7ca5987b5722
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,10 +9,10 @@ status: ok
 ==============================================================================
 AUDIT-PREP VERIFIER — yt_ew_coupling_bridge_note
 ==============================================================================
-  [PASS] [A] Parent note exists  (YT_EW_COUPLING_BRIDGE_NOTE.md, 23556 bytes)
+  [PASS] [A] Parent note exists  (YT_EW_COUPLING_BRIDGE_NOTE.md, 24126 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
-  [PASS] [A]   yt_interacting_bridge_locality_note IS cited (>=1 hit)  (hits = 3)
+  [PASS] [A]   yt_interacting_bridge_locality_note IS cited (>=1 hit)  (hits = 2)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):
 

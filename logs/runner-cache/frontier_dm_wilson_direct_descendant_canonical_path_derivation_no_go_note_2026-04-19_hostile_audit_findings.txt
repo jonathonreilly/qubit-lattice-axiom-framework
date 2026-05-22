@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_canonical_path_derivation_no_go_note_2026-04-19_hostile_audit_findings.py
-runner_sha256: e22d03e3f1a39f933de10f9d59b9750deb2852d8a1b22087891e9b149e840e35
+runner_sha256: b4a534bafd14719eac9af6de904eaa9c1a68efe79e99e1e93c1fe2ed18e7752d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

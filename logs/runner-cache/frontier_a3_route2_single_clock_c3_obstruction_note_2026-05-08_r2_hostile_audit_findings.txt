@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2_hostile_audit_findings.py
-runner_sha256: 1317412d2fd15f2474bf330b40d6dfecb447c48dc5634a6794d100af709db49d
+runner_sha256: 6c405e29bb1841c3ed76978b4e2315b42bf9ffada66b0209fe9dc9912a786986
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_sqrt_sigma_b2_static_energy_bridge_scout_note_2026-04-30_hostile_audit_findings.py
-runner_sha256: 76fef8d5735beb25f968b8c1ebf268f398a5976baf3bf32133b25ec5629d2135
+runner_sha256: 22820b68fbb898eeb131d821f796f3d2cd033cfbf25df344bf08fb9cf48818a7
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

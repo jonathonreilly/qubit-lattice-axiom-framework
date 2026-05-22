@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py
-runner_sha256: 75cdb4bb9180ddf53e621b5789a186e8ab4a5a25a1dee248e033be007a3f5fb7
+runner_sha256: 4962e4d515e305e9052629b690369e3527cc007fb95c2ccea5e51e9d86e92252
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.08
-status: ok
+exit_code: 1
+elapsed_sec: 0.13
+status: nonzero_exit
 ----- stdout -----
 Quark projector-parameter audit terminal-synthesis check
-note: docs/QUARK_PROJECTOR_PARAMETER_AUDIT_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md
+note: docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md
 
 PASS: synthesis note is meta
 PASS: does not promote any row to retained
@@ -33,13 +33,13 @@ PASS: explicitly says do NOT spawn retained-promotion attempts on carrier dep
 PASS: explicitly says no new vocabulary / tags / framings
 PASS: proposal_allowed: false declared
 PASS: proposal_allowed_reason justifies as backward-looking synthesis
-PASS: cites sibling BAE terminal synthesis as template
+FAIL: cites sibling BAE terminal synthesis as template
 PASS: cites leaf source note in cross-references
 PASS: cites projector-ray dep source note in cross-references
 PASS: cites carrier-completion dep source note in cross-references
 PASS: Review-loop rule section present
 PASS: review-loop rule notes block is terminal pending xi_u/xi_d derivation
-PASS: audit_ledger.json has rows table | rows count: 1930
+PASS: audit_ledger.json has rows table | rows count: 2365
 PASS: ledger has leaf row: quark_projector_parameter_audit_note_2026-04-19
 PASS: ledger has projector-ray dep row: quark_projector_ray_phase_completion_note_2026-04-18
 PASS: ledger has carrier-completion dep row: quark_cp_carrier_completion_note_2026-04-18
@@ -52,8 +52,7 @@ PASS: projector-ray dep routes through carrier-completion dep | deps: ['quark_cp
 PASS: audit/README.md retains 'audited_<failure_mode>' terminal language
 PASS: audit/README.md retains definition-as-derivation language
 
-TOTAL: PASS=42 FAIL=0
-Quark projector-parameter audit terminal-synthesis check passed: leaf and both deps cited, terminal verdict + cross-confirmation + judicial-third-audit recorded, repair surface analysis present, audit-lane policy authority cited, do-NOT-spawn-campaign-cycles recommendation present, live ledger state consistent with synthesis.
+TOTAL: PASS=41 FAIL=1
 
 ----- stderr -----
 

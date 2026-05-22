@@ -1,21 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_a1_derivation_status_note_hostile_audit_findings.py
-runner_sha256: 657a2d1f030be83836b535d6450e4981507bbad3caf599e532d93bc7930e0c3f
+runner_sha256: d13dc465c8ceaa4c89f68b066806c74509b08e7ca78d699b5cca3dd2dec21e6c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — koide_a1_derivation_status_note
 ==============================================================================
-  [PASS] [A] Parent note exists  (KOIDE_A1_DERIVATION_STATUS_NOTE.md, 13106 bytes)
+  [PASS] [A] Parent note exists  (KOIDE_A1_DERIVATION_STATUS_NOTE.md, 13028 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
-  [PASS] [A]   koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5 IS cited (>=1 hit)  (hits = 2)
-  [PASS] [A]   koide_a1_probe_z2_c3_pairing_bounded_obstruction_note_2026-05-08_probe7 IS cited (>=1 hit)  (hits = 2)
-  [PASS] [A]   koide_a1_route_a_koide_nishiura_bounded_obstruction_note_2026-05-08_routea IS cited (>=1 hit)  (hits = 2)
-  [PASS] [A]   koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5 IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   koide_a1_probe_z2_c3_pairing_bounded_obstruction_note_2026-05-08_probe7 IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   koide_a1_route_a_koide_nishiura_bounded_obstruction_note_2026-05-08_routea IS cited (>=1 hit)  (hits = 1)
+  [PASS] [A]   koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed IS cited (>=1 hit)  (hits = 1)
   [PASS] [A]   koide_a1_route_e_kostant_weyl_bounded_obstruction_note_2026-05-08_routee IS cited (>=1 hit)  (hits = 2)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):

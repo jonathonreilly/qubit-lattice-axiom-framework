@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py
-runner_sha256: b277c4a183eeae1465818cdf5669c0a3e7caf8bff919bca7a2480b31ee7d4971
+runner_sha256: 71c7691261297b708e726e6948419a582c97bdcd61aeb0ccceaca79042137a50
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,7 +9,7 @@ status: ok
 ==============================================================================
 AUDIT-PREP VERIFIER — koide_q_delta_linking_relation_theorem_note_2026-04-20
 ==============================================================================
-  [PASS] [A] Parent note exists  (KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md, 15700 bytes)
+  [PASS] [A] Parent note exists  (KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md, 16075 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
   [PASS] [A]   scalar_selector_remaining_open_imports_2026-04-20 IS cited (>=1 hit)  (hits = 2)

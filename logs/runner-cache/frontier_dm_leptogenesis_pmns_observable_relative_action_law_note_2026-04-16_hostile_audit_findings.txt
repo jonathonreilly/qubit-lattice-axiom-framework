@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_hostile_audit_findings.py
-runner_sha256: 572c630b72ca3275f84f68c127f243f5bd39d4e50b117c29d472e31b9b3ad4b3
+runner_sha256: 329c0dbe01c42c2eec5c1d4d3ab8ff55d6dd26b26f259c031f84fdfc606e210f
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

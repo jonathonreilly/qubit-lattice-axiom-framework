@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_full_microscopic_reduction_note_2026-04-16_hostile_audit_findings.py
-runner_sha256: 4a02ef711eb1f2357b31aa17ca388297fdb137ad08bf0f85dbba9db3ffbdd3a4
+runner_sha256: 1a39414b5e2c7c63675be3755fba4758b09d983e915b0b09007694080bd9c859
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,7 +9,7 @@ status: ok
 ==============================================================================
 AUDIT-PREP VERIFIER — dm_leptogenesis_full_microscopic_reduction_note_2026-04-16
 ==============================================================================
-  [PASS] [A] Parent note exists  (DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md, 8381 bytes)
+  [PASS] [A] Parent note exists  (DM_LEPTOGENESIS_FULL_MICROSCOPIC_REDUCTION_NOTE_2026-04-16.md, 8333 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
   [PASS] [A]   dm_leptogenesis_ne_charged_source_response_reduction_note_2026-04-16 IS cited (>=1 hit)  (hits = 2)

@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_signed_gravity_chi_selector_theorem_or_nogo_note_hostile_audit_findings.py
-runner_sha256: 6904a26819bec20575f5a3f17af46d44b7d82553a1946e9a4b1d1ab33a42e87d
+runner_sha256: 873d9b494acd3e543a6bef56065400bac9788a4d69ab42b7648dce9bb9d12d9e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — signed_gravity_chi_selector_theorem_or_nogo_note
 ==============================================================================
-  [PASS] [A] Parent note exists  (SIGNED_GRAVITY_CHI_SELECTOR_THEOREM_OR_NOGO_NOTE.md, 5589 bytes)
+  [PASS] [A] Parent note exists  (SIGNED_GRAVITY_CHI_SELECTOR_THEOREM_OR_NOGO_NOTE.md, 5828 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
-  [PASS] [A]   signed_gravity_response_backlog_2026-04-25 IS cited (>=1 hit)  (hits = 2)
+  [PASS] [A]   signed_gravity_response_backlog_2026-04-25 IS cited (>=1 hit)  (hits = 1)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):
   [PASS] [A]   signed_gravity_mechanism_separation_note NOT cited (0 hits)  (hits = 0)

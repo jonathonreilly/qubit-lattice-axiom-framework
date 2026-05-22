@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_mesoscopic_surrogate_compact_floor_sweep_note_hostile_audit_findings.py
-runner_sha256: f655bcf4b8a2d8801ea38063535d374b3f7edea488ea5eb6f5815ec964114304
+runner_sha256: f18105bb35aa353a96d3c9d25ecb925f4431ddd1fc539bb41632835dd7e5369e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

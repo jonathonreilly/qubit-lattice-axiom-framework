@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_carrier_orbit_invariance.py
-runner_sha256: 11fca4bcdef52772a06ecca80c5a25424ce5cca5a26ea640cc7fb3ee6985312d
+runner_sha256: a6c4b3efbfb424e93447939e2a68d421bc3c4c738a5b58e83797b1ea82a21b6b
 timeout_sec: 120
 exit_code: 1
 elapsed_sec: 0.13
@@ -46,7 +46,7 @@ PART 4: REGISTRY ENUMERATION (active Hermitian basis)
   [PASS] Symmetric column-action (c_E = c_T) lies in End(V)^+
   [PASS] Asymmetric column-action (c_E != c_T) does NOT lie in End(V)^+
   [PASS] Asymmetric column-action decomposes nontrivially as End(V)^+ + End(V)^-  (||op_asym_minus||=0.4000)
-  [PASS] Theta_R^(0) is documented as bounded (not exact) in retained registry
+  [FAIL] Theta_R^(0) is documented as bounded (not exact) in retained registry
   [FAIL] Xi_R^(0) is documented as bounded (not exact) in retained registry
   [PASS] Swap-reduction theorem records both staging tools as bounded only
 
@@ -116,7 +116,7 @@ PART 11: REFINED PRECURSOR CHAIN (2026-05-07 closure-attempt sharpening)
   [PASS] Refinement honestly refuses to claim closure beyond PARTIAL
 
 ========================================================================================
-SUMMARY: PASS=59 FAIL=2
+SUMMARY: PASS=58 FAIL=3
 ========================================================================================
 
 ----- stderr -----

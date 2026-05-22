@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_note_2026-04-18_hostile_audit_findings.py
-runner_sha256: 25f5414163b9971e4e0adca221e340d6d48c2dac2c0311d7564d3ccb8dce36f0
+runner_sha256: c9ba1ae3dd5181193ea611533be0c43399b38e05941e6260766118c7184b1c76
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

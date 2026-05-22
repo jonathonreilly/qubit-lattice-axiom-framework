@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_claude_complex_action_grown_companion_terminal_synthesis.py
-runner_sha256: 72d46ebd0aac86bdf91bf4871313507a9c04cb7e9df5181c6e61c902dbc87a22
+runner_sha256: 551a0111247a897083a59eae97ed5f9022cc538cf58f99501d96e802c98c5c28
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.19
-status: ok
+exit_code: 1
+elapsed_sec: 0.08
+status: nonzero_exit
 ----- stdout -----
 Claude complex-action grown-companion terminal-synthesis check
-note: docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_TERMINAL_SYNTHESIS_META_NOTE_2026-05-10.md
+note: docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE_2026-05-10.md
 
 PASS: synthesis note is meta
 PASS: does not promote any row to retained
@@ -34,14 +34,14 @@ PASS: explicitly says do NOT spawn retained-promotion attempts
 PASS: explicitly says no new vocabulary / tags / framings
 PASS: proposal_allowed: false declared
 PASS: proposal_allowed_reason justifies as backward-looking synthesis
-PASS: cites sibling quark projector terminal synthesis (PR #959)
-PASS: cites sibling DM leptogenesis terminal synthesis (PR #960)
-PASS: cites synthesis-template (BAE 30-probe)
+FAIL: cites sibling quark projector terminal synthesis (PR #959)
+FAIL: cites sibling DM leptogenesis terminal synthesis (PR #960)
+FAIL: cites synthesis-template (BAE 30-probe)
 PASS: cites leaf source note in cross-references
-PASS: cites campaign-level synthesis template
+FAIL: cites campaign-level synthesis template
 PASS: Review-loop rule section present
 PASS: review-loop rule notes block is terminal pending repair
-PASS: audit_ledger.json has rows table | rows count: 1933
+PASS: audit_ledger.json has rows table | rows count: 2365
 PASS: ledger has leaf row: claude_complex_action_grown_companion_note
 PASS: ledger has imported-premise upstream row: gate_b_grown_joint_package_note
 PASS: leaf runner_path matches synthesis citation | got 'scripts/complex_action_grown_companion.py', expected 'scripts/complex_action_grown_companion.py'
@@ -55,8 +55,7 @@ PASS: audit/README.md retains missing_dependency_edge repair-class definition
 PASS: audit/README.md retains hard rule 1 (Retained grade is audit-only)
 PASS: audit/README.md retains hard rule 2 (Open gates block propagation)
 
-TOTAL: PASS=45 FAIL=0
-Claude complex-action grown-companion terminal-synthesis check passed: leaf and imported-premise upstream cited, audited_conditional verdicts + missing_dependency_edge repair class recorded, repair surface analysis present, audit-lane policy authority cited, do-NOT-spawn-campaign-cycles recommendation present, live ledger state consistent with synthesis.
+TOTAL: PASS=41 FAIL=4
 
 ----- stderr -----
 

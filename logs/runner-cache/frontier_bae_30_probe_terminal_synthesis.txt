@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bae_30_probe_terminal_synthesis.py
-runner_sha256: e0bb3e7baef7b962493090d862f81e24e67e770e763a39e4edcc7743517b83e7
+runner_sha256: 3df227dc6f291750220466d9e5ad6079f88a514ad1591a2748898c1656ec5221
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 30-probe BAE campaign terminal synthesis check
-note: docs/KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09.md
+note: docs/KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md
 
 PASS: synthesis note is meta
 PASS: does not declare pipeline status

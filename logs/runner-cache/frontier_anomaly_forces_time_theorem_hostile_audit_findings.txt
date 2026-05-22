@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time_theorem_hostile_audit_findings.py
-runner_sha256: a8031f5dcaa8e8b00d1a732818cf105e55dfe141f1b4d084149a35ceeb167862
+runner_sha256: a2899c93b2ade6df3e746f1d7b36f4bd84ec3e77a39c0ec0cf740a3bc1e95534
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — anomaly_forces_time_theorem
 ==============================================================================
-  [PASS] [A] Parent note exists  (ANOMALY_FORCES_TIME_THEOREM.md, 19239 bytes)
+  [PASS] [A] Parent note exists  (ANOMALY_FORCES_TIME_THEOREM.md, 25235 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
   [PASS] [A]   axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03 IS cited (>=1 hit)  (hits = 8)

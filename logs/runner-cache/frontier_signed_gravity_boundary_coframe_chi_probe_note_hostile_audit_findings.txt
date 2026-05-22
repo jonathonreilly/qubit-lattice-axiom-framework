@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_signed_gravity_boundary_coframe_chi_probe_note_hostile_audit_findings.py
-runner_sha256: a35f3889a9618e3d9b1b3d87dc5fc72dcdf5b198eea5dc00353be0df75165506
+runner_sha256: 9b6f81f9109be14e8ff415eeab1820163eecee70b598dfbd1036f8ecb850824d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cross_sector_a_squared_koide_vcb_bridge_support_note_2026-04-25_hostile_audit_findings.py
-runner_sha256: 3d5997eb21133d9d7c7782469d1eda637c0686f9858c568c34a127f3c19225f5
+runner_sha256: 41562f9755c3a9934112c19e0fc48854d690eca09b469fffa8e03857284f7b61
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

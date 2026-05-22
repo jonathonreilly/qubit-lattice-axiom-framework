@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 14 |
-| unaudited | 1318 |
+| unaudited | 1317 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 98 |
 | ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 609 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 98 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 70 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1542 |
+| `unaudited` | 1541 |
 
 | claim_type | count |
 |---|---:|
@@ -761,6 +761,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -4977,6 +4978,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The live replay asserts the archived scaffolded 7/9 free_coh result against the old 6/9 two-property rule, while the source note's 2026-04-07 update and dependency restrict that result to scaffold-specific historical evidence.  _(class `C`)_
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
+- **auditor confidence:** high
+
+### `gluon_tree_level_masslessness_theorem_note_2026-05-02`
+
+- **Note:** [`GLUON_TREE_LEVEL_MASSLESSNESS_THEOREM_NOTE_2026-05-02.md`](../../docs/GLUON_TREE_LEVEL_MASSLESSNESS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional standard Yang-Mills result: given a local Lorentz-covariant SU(3) gauge connection with the usual non-abelian transformation law and kinetic term, no gauge-invariant quadratic gluon mass term exists and the tree-level propagator pole is at p^2=0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T171630Z-58079cef-gluon_tree_level_massles-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the standard SU(3) gauge transformation law for a local connection A_mu^a, the variation of (1/2)m^2 A_mu^a A^{a mu} leaves the residual term (m^2/g) A_mu^a partial^mu omega^a, so the mass term is gauge invariant only when m=0.  _(class `A`)_
+- **chain closes:** False — The algebraic Yang-Mills calculation closes after assuming a local Lorentz-covariant SU(3) connection, transformation law, gauge action, and propagator. The cited graph-first authorities establish structural su(3) closure on the retained surface, but they do not supply the missing bridge from that structural su(3) to the local Yang-Mills connection used by the theorem.
+- **rationale:** The runner genuinely checks algebraic consistency of the standard SU(3) Yang-Mills masslessness argument and does not merely print constants, but it starts from hard-coded Gell-Mann/SU(3) connection data rather than deriving the contested framework bridge. The proof's load-bearing step is a valid class-A algebraic identity conditional on the admitted gauge transformation law. The restricted cited authorities are retained-grade for structural su(3), yet they do not construct the local Lorentz-covariant Yang-Mills gauge field and action needed for G1-G3 to be a theorem on the framework surface.
 - **auditor confidence:** high
 
 ### `graph_first_selector_derivation_note`

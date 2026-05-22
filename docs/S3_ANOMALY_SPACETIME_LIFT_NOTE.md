@@ -226,7 +226,7 @@ Three hostile-audit-grade issues were patched on this note:
   excluded). Now explicit in the "Admission inheritance" remark above.
 
 See companion fix-record:
-[`S3_ANOMALY_SPACETIME_LIFT_NOTE_2026-05-17.md`](S3_ANOMALY_SPACETIME_LIFT_NOTE_2026-05-17.md).
+`S3_ANOMALY_SPACETIME_LIFT_NOTE_2026-05-17.md`.
 
 Paired verifier:
 `scripts/frontier_s3_anomaly_spacetime_lift_downstream_fix.py`.

@@ -232,7 +232,7 @@ Two hostile-audit-grade issues were patched on this note:
   explicit.
 
 See companion fix-record:
-[`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md).
+`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE_2026-05-17.md`.
 
 Paired verifier:
 `scripts/frontier_s3_time_spacetime_tensor_primitive_downstream_fix.py`.

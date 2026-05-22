@@ -22349,10 +22349,6 @@
       "to": "anomaly_forces_time_fb_note_2026-05-17"
     },
     {
-      "from": "s3_anomaly_spacetime_lift_note",
-      "to": "s3_anomaly_spacetime_lift_note_2026-05-17"
-    },
-    {
       "from": "s3_anomaly_spacetime_lift_note_2026-05-17",
       "to": "s3_anomaly_spacetime_lift_note"
     },
@@ -22481,10 +22477,6 @@
       "to": "s3_time_theta_to_slice_coupling_note"
     },
     {
-      "from": "s3_time_spacetime_tensor_primitive_note",
-      "to": "s3_time_spacetime_tensor_primitive_note_2026-05-17"
-    },
-    {
       "from": "s3_time_spacetime_tensor_primitive_note_2026-05-17",
       "to": "s3_time_spacetime_tensor_primitive_note"
     },
@@ -22511,10 +22503,6 @@
     {
       "from": "s3_time_tensorized_schur_primitive_note",
       "to": "oh_schur_boundary_action_note"
-    },
-    {
-      "from": "s3_time_tensorized_schur_primitive_note",
-      "to": "s3_time_tensorized_schur_primitive_note_2026-05-17"
     },
     {
       "from": "s3_time_tensorized_schur_primitive_note",
@@ -22603,10 +22591,6 @@
     {
       "from": "s3_time_transfer_matrix_bridge_note",
       "to": "anomaly_forces_time_fb_note_2026-05-17"
-    },
-    {
-      "from": "s3_time_transfer_matrix_bridge_note",
-      "to": "s3_time_transfer_matrix_bridge_note_2026-05-17"
     },
     {
       "from": "s3_time_transfer_matrix_bridge_note_2026-05-17",
@@ -70878,7 +70862,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -71252,11 +71236,10 @@
         "anomaly_forces_time_theorem",
         "s3_boundary_link_theorem_note",
         "s3_cap_uniqueness_note",
-        "anomaly_forces_time_fb_note_2026-05-17",
-        "s3_anomaly_spacetime_lift_note_2026-05-17"
+        "anomaly_forces_time_fb_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d9d0252834d4a169b7c9fb855b961e8b10d220d0ea5058a719a3cbd3bfb8c0f2",
+      "note_hash": "e784ab48d2a1af146b3b86e018dcd94395b60d742eeabcbcc2251110d0544db8",
       "path": "docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md",
       "runner_path": null,
       "title": "`S^3` + Anomaly-Forced Time: Axiom-First Spacetime Lift"
@@ -71464,11 +71447,10 @@
         "anomaly_forces_time_theorem",
         "oh_schur_boundary_action_note",
         "anomaly_forces_time_fb_note_2026-05-17",
-        "s3_time_theta_to_slice_coupling_note",
-        "s3_time_spacetime_tensor_primitive_note_2026-05-17"
+        "s3_time_theta_to_slice_coupling_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bc70b20f49b78efd53d76ee7215bed3531c56a0447495218c08a4b8b1cad2859",
+      "note_hash": "6cd3b845aaa16ecf2d9c44d7608c8353aa5b9853b3821b3d9031113a8bdc37d2",
       "path": "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md",
       "runner_path": "scripts/frontier_s3_time_spacetime_tensor_primitive.py",
       "title": "Route 2 Spacetime Tensor Primitive Candidate on `PL S^3 x R`"
@@ -71530,12 +71512,11 @@
       "deps": [
         "anomaly_forces_time_fb_note_2026-05-17",
         "oh_schur_boundary_action_note",
-        "s3_time_tensorized_schur_primitive_note_2026-05-17",
         "s3_general_r_derivation_note",
         "anomaly_forces_time_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e4e990fac0021af07944b44d143873f00346335ca3266ea208b534c57a1503da",
+      "note_hash": "cf60ffb63ea358865ec18175bbf234af338da9c5d328d912479a8e7244d1f9c9",
       "path": "docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md",
       "runner_path": null,
       "title": "Route 2 Tensorized Schur/Dirichlet Primitive"
@@ -71599,11 +71580,10 @@
         "s3_cap_uniqueness_note",
         "anomaly_forces_time_theorem",
         "oh_schur_boundary_action_note",
-        "anomaly_forces_time_fb_note_2026-05-17",
-        "s3_time_transfer_matrix_bridge_note_2026-05-17"
+        "anomaly_forces_time_fb_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7af335bbd629a25ed7681ca8c5a46458a1dd222817c3d0dfa5554f513ebcc4d9",
+      "note_hash": "1137fb75202092d5335f764ceb70e9db328ad3800715478a46977ef8235b3cb9",
       "path": "docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md",
       "runner_path": "scripts/frontier_s3_time_transfer_matrix_bridge.py",
       "title": "`S^3` + Anomaly-Forced Time: Transfer-Matrix Bridge Candidate"
@@ -81703,8 +81683,8 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
-    "leaf_count": 740,
+    "edge_count": 9739,
+    "leaf_count": 744,
     "node_count": 2483,
     "root_count": 808,
     "runners_with_path": 2048

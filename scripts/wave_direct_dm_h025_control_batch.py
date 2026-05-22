@@ -34,7 +34,7 @@ def _family_specs(label: str) -> tuple[str, float, float]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--family", default="Fam2", help="Family label. Default: Fam2")
+    parser.add_argument("--family", default="Fam1", help="Family label. Default: Fam1")
     parser.add_argument("--seed", type=int, default=1, help="Grow seed. Default: 1")
     parser.add_argument("--h", type=float, default=0.25, help="Resolution. Default: 0.25")
     args = parser.parse_args()

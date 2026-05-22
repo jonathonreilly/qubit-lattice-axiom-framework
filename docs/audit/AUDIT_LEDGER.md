@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 377 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 85 |
+| ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 610 |
-| `audited_conditional` | 85 |
+| `audited_conditional` | 86 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1548 |
+| `unaudited` | 1547 |
 
 | claim_type | count |
 |---|---:|
@@ -775,6 +775,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_cl3_selector_gap_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `koide_dimensionless_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | exact_algebraic_identity_on_admitted_carrier | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -5950,6 +5951,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every retained Wilson/APS-derived boundary mark restricts to a scalar lambda I on the rank-two M_zeta multiplicity space, so it commutes with all rank-one selectors and cannot select a unique line.  _(class `A`)_
 - **chain closes:** True — The cited retained bridge supplies the scalar-on-M_zeta theorem, and the parent runner checks the downstream algebraic consequences plus endpoint countermodels. No non-retained selector or boundary-section theorem deriving c=0 is present in the restricted packet.
 - **rationale:** The load-bearing scalar-mark step is an algebraic closure over the retained bridge theorem, not a definition substitution or numerical match. The runner source does more than print constants: it symbolically checks the residual structure and re-verifies representative scalar restrictions by importing the sibling Wilson construction. Within the stated no-go scope, the conclusion follows from retained inputs and explicit countermodels showing marked relative cobordism does not force selected-line closure or c=0.
+- **auditor confidence:** high
+
+### `koide_dimensionless_note_2026-04-24`
+
+- **Note:** [`KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md`](../../docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the admitted two-channel source-response carrier (OA-1) and admitted endpoint algebra End(L_chi) with selected-line projector P_chi and basepoint c=0 (OA-2), the runner verifies in exact Fraction arithmetic that (R1) zero-background source-response gives Q=2/3 and the April 25 background-zero <=> Z-erasure <=> Q=2/3 equivalence holds inside the admitted carrier; (R2) z=-1/3 is an exact two-channel countermodel giving Q=1, K_TL=3/8, and the four ambient endpoint countermodels (closing 2/9, spectator 0, mixed 1/9, shifted 1/3) evaluate exactly; (R3) eta_APS=2/9 transfers exactly to delta=2/9 inside End(L_chi) with basepoint c=0. The packet does NOT close the dimensionless charged-lepton Koide lane: it explicitly outputs KOIDE_DIMENSIONLESS_RETAINED_CLOSURE=FALSE and lists derive_physical_background_source_zero_equiv_Z_erasure, derive_retained_source_domain_equals_onsite_function_algebra_not_C3_commutant, derive_selected_line_local_boundary_source_law, derive_based_endpoint_section as open residuals.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `claude-audit-loop-2026-05-19-koide-dim`  (claude-opus; independence=cross_family)
+- **load-bearing step:** R1: Q = (1 + y_perp/y_plus)/3 with y_plus = 1/(1+s+z), y_perp = 1/(1+s-z) evaluates to 2/3 at (s,z)=(0,0); plus the April 25 background-zero <=> Z-erasure equivalence inside the admitted carrier. R3: eta_APS=2/9 transfers to delta=2/9 inside End(L_chi) with selected-line projector and basepoint c=0. Both load-bearing identities are exact Fraction-arithmetic on the admitted carriers.  _(class `exact_algebraic_identity_on_admitted_carrier`)_
+- **chain closes:** False — Retained scope R1-R3 are exact Fraction-arithmetic identities on admitted carriers OA-1 (two-channel source-response space, additive (s+z, s-z) background, central label Z=P_plus-P_perp) and OA-2 (endpoint algebra End(L_chi), selected-line projector P_chi, basepoint c=0). The runner (21/21 PASS, exit 0) computes each identity exactly and reports KOIDE_DIMENSIONLESS_RETAINED_CLOSURE=FALSE. The carrier choice and endpoint-domain choice are imported from the reviewed branch, not derived from the C3 lattice axiom on main; the packet itself names this as the open work. The bounded retained scope (R1-R3 plus countermodels) is therefore conditional on those two named bridge admissions.
+- **rationale:** Issue: The packet's load-bearing physical reach depends on two un-derived bridge admissions explicitly named in the source note: OA-1 (the two-channel source-response carrier with additive (s+z, s-z) background and central Z=P_plus-P_perp) and OA-2 (the endpoint algebra End(L_chi) with selected-line projector P_chi and basepoint c=0). Neither is derived from the C3 lattice axiom on main; the note states both are imported from the reviewed branch and explicitly lists their derivations among the open residuals. Why this blocks: Without retained bridge theorems deriving these carriers from the framework axioms, the algebraic identities R1, R2, R3 cannot promote from conditional obstruction support to a retained no-go or retained positive theorem on the dimensionless charged-lepton Koide lane; the runner correctly outputs KOIDE_DIMENSIONLESS_RETAINED_CLOSURE=FALSE. Repair target: supply (i) a retained source-response carrier theorem deriving the two-channel space with surviving Z label and the additive (s+z, s-z) background decomposition from the C3 lattice axiom on main, AND (ii) a retained endpoint-domain theorem deriving End(L_chi) (vs. ambient End(V)) plus the basepoint c=0 from retained data; OR split the packet to land R1, R2, R3 as exact algebraic identities scoped strictly to the admitted carrier without any claim about the physical Koide lane. Claim boundary until fixed: the packet may be cited as exact-Fraction conditional obstruction support inside the admitted two-channel/endpoint carrier (R1: Q=2/3 at zero background; R2: z=-1/3 and the four ambient endpoint countermodels evaluate exactly; R3: eta_APS=2/9 transfers to delta=2/9 inside End(L_chi)), but not as any retained closure of the dimensionless charged-lepton Koide lane. The runner pass-count and exact Fraction arithmetic do not by themselves discharge OA-1 or OA-2.
+- **open / conditional deps cited:**
+  - `OA-1: two-channel source-response carrier (with surviving central label Z = P_plus - P_perp and additive (s+z, s-z) background) is admitted, not derived from the retained C3 lattice axiom on main`
+  - `OA-2: endpoint source/readout/basepoint domain (End(L_chi) with selected-line projector P_chi and basepoint c=0) is admitted, not derived from retained data on main`
 - **auditor confidence:** high
 
 ### `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`

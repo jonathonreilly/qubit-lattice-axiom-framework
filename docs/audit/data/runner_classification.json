@@ -15768,6 +15768,30 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_observable_principle_p1_bridge_framework_internal_narrow.py"
     },
+    "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21": {
+      "assert_count": 1,
+      "counts": {
+        "A": 14,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_p1_bridge_free_cumulant_route.py"
+    },
+    "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21": {
+      "assert_count": 1,
+      "counts": {
+        "A": 16,
+        "B": 11,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_p1_bridge_gleason_busch_route.py"
+    },
     "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17": {
       "assert_count": 1,
       "counts": {
@@ -15779,6 +15803,30 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py"
+    },
+    "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21": {
+      "assert_count": 1,
+      "counts": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_qubit_reattempt.py"
+    },
+    "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21": {
+      "assert_count": 1,
+      "counts": {
+        "A": 17,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_observable_principle_p1_bridge_pre_record_tracial_route.py"
     },
     "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17": {
       "assert_count": 1,
@@ -41741,10 +41789,70 @@
       "dominant_class": "A",
       "exists": true
     },
+    "scripts/frontier_observable_principle_p1_bridge_free_cumulant_route.py": {
+      "assert_count": 1,
+      "claims": [
+        "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21"
+      ],
+      "counts": {
+        "A": 14,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_observable_principle_p1_bridge_gleason_busch_route.py": {
+      "assert_count": 1,
+      "claims": [
+        "observable_principle_p1_bridge_gleason_busch_route_narrow_note_2026-05-21"
+      ],
+      "counts": {
+        "A": 16,
+        "B": 11,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_external_narrow.py": {
       "assert_count": 1,
       "claims": [
         "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 17,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_observable_principle_p1_bridge_operator_algebraic_qubit_reattempt.py": {
+      "assert_count": 1,
+      "claims": [
+        "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21"
+      ],
+      "counts": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_observable_principle_p1_bridge_pre_record_tracial_route.py": {
+      "assert_count": 1,
+      "claims": [
+        "observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21"
       ],
       "counts": {
         "A": 17,
@@ -53331,16 +53439,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 301,
+    "decoration_candidates": 304,
     "dominant_class_distribution": {
-      "A": 191,
+      "A": 195,
       "B": 262,
       "C": 730,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1911,
+    "runners_classified": 1915,
     "runners_with_C": 942,
-    "runners_with_D": 546
+    "runners_with_D": 547
   }
 }

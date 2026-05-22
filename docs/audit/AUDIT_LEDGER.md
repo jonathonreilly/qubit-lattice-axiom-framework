@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1306 |
+| unaudited | 1305 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -32,7 +32,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
-| `decoration_under_cpt_exact_note` | 3 |
+| `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 3 |
@@ -52,20 +52,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 617 |
 | `audited_conditional` | 93 |
-| `audited_decoration` | 32 |
+| `audited_decoration` | 33 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1528 |
+| `unaudited` | 1527 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1024 |
-| `decoration` | 33 |
+| `decoration` | 34 |
 | `meta` | 226 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
-| `positive_theorem` | 734 |
+| `positive_theorem` | 733 |
 
 | criticality | count |
 |---|---:|
@@ -840,6 +840,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | fresh_context | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | algebraic_corollary_of_parent | `cpt_exact_note` |
 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
@@ -2676,6 +2677,22 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The narrowed C1 and C2 conclusions follow by direct algebraic substitution from premises stated as hypotheses. No upstream authority is required for this bounded theorem because the premises themselves are not being derived here.
 - **rationale:** The load-bearing content is a genuine class-A algebraic identity check over explicitly stated premises, not a renaming or numerical match. The runner source performs exact SymPy matrix equality checks rather than merely printing constants, and its C1/C2 checks match the proof. The former C3 scalar-square issue has been demoted to a conditional, non-load-bearing corollary, so it does not block the narrowed theorem.
 - **auditor confidence:** high
+
+### `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02`
+
+- **Note:** [`CPT_PARTICLE_ANTIPARTICLE_LIFETIME_EQUALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/CPT_PARTICLE_ANTIPARTICLE_LIFETIME_EQUALITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Particle/antiparticle decay-width equality Gamma_p = Gamma_a (equivalently tau_p = tau_a) for unstable resonances of the cited Cl(3) staggered Hamiltonian, derived as an algebraic operator-theoretic consequence of [CPT, H] = 0 applied to the complex resolvent pole structure.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cpt_exact_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `claude-audit-loop-2026-05-19-cpt-lifetime`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `algebraic_corollary_of_parent`)_
+- **chain closes:** None — Steps 1-3 close algebraically from [CPT, H] = 0 (parent) plus antiunitarity acting on the resolvent. No external comparator computed. Runner sets H_eff_a := (H_eff_p)* by construction and verifies eigenvalue conjugacy -- this is operator-algebra tautology under antiunitarity, not an independent check.
+- **rationale:** Issue: the load-bearing chain (Steps 1-3 of the source note) is operator algebra applied directly to the parent claim [CPT, H] = 0 from cpt_exact_note: apply CPT antiunitarily to the resolvent G(z), use (CPT)^{-1} z (CPT) = z* to send the pole at E_real - i*Gamma/2 to its complex conjugate, then read off Gamma_a = Gamma_p. No new physical observable, sector selection, unit map, or measurement is introduced. Step 4 ('universality') is a restatement that Steps 1-3 used no species-specific input.
+Why this blocks audited_clean: Per ALGEBRAIC_DECORATION_POLICY.md sec.1, the three decoration criteria all hold. (1) Algebraic dependence: pure operator algebra (antiunitarity, complex conjugation of pole) over the single retained parent. (2) No new comparator: the runner constructs the antiparticle block by H_eff_a := H_eff_p.conj() -- the CPT image by construction -- and then verifies that conjugation preserves |Im|. This is structural consistency, not an external comparator; no PDG, no lattice QCD, no D-class check. Corollaries C1/C2 (K^0/K-bar^0, muon lifetimes) are gestured at in prose but are not computed by the runner. (3) No compression: the result does not let the parent be stated more sharply, nor does it expose a new structural integer; it merely names one consequence of [CPT, H] = 0. The single-parent dependency (deps = [cpt_exact_note] only) and the lack of any D-class runner check both match the policy's mechanical detection heuristics (sec.2). The 'resonance pole convention' and 'CPT operator action on resonance states' are admitted-context inputs by the note's own admission, not new derived bridges. This is the textbook Lueders 1954 corollary of CPT invariance, sister to cpt_squared_is_identity (just audited_decoration on 2026-05-18) and the companion mass-equality note.
+Repair target: box this and its sibling mass-equality / Hamiltonian-spectrum-CPT-conjugate notes into a single 'algebraic corollaries of cpt_exact_note' rollup per sec.3a of the decoration policy. Re-promotion would require attaching a real (D)-class external comparator (e.g., computing K^0 vs K-bar^0 width within the framework from species-specific dynamics and comparing to PDG), per sec.5.
+Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact corollary of cpt_exact_note remains true on its own terms; it just does not constitute an independent retained theorem.
+- **decoration parent:** `cpt_exact_note`
 
 ### `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02`
 

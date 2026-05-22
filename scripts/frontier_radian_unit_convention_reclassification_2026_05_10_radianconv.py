@@ -127,7 +127,7 @@ def main() -> int:
     )
     check(
         "Probe 24 source-note cross-reference present",
-        "KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24" in note,
+        "KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24" in note,
     )
     check(
         "Probe 30 source-note cross-reference present",
@@ -232,7 +232,7 @@ def main() -> int:
     )
     check(
         "BAE 30-probe campaign synthesis cited",
-        "KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09" in note,
+        "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09" in note,
     )
 
     # ---- structural-feature limit honestly stated ----
@@ -273,11 +273,11 @@ def main() -> int:
         "CONVENTIONS_UNIFICATION_COMPANION_NOTE_2026-05-08",
         "PHYSICAL_LATTICE_FOUNDATIONAL_INTERPRETATION_NOTE_2026-05-08",
         "C3_SYMMETRY_PRESERVED_INTERPRETATION_NOTE_2026-05-08",
-        "KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_SHARPENED_NOTE_2026-05-09_probe24",
+        "KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24",
         "KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30",
         "KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24",
         "BRANNEN_AMPLITUDE_EQUIPARTITION_BAE_RENAME_META_NOTE_2026-05-09",
-        "KOIDE_BAE_30_PROBE_CAMPAIGN_TERMINAL_SYNTHESIS_META_NOTE_2026-05-09",
+        "KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09",
         "MINIMAL_AXIOMS_2026-05-03",
         "STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE",
     ]

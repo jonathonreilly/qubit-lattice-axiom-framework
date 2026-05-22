@@ -5546,15 +5546,11 @@
     },
     {
       "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
       "to": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
-      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "cpt_exact_note",
@@ -23962,7 +23958,7 @@
     },
     {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
@@ -23970,11 +23966,11 @@
     },
     {
       "from": "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+      "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
@@ -25283,10 +25279,6 @@
     {
       "from": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "to": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "unification_basin_failure_note",
@@ -46130,12 +46122,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
-        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23691795a27023ace92426165106202cea69962edb072a132798ed8920670a58",
+      "note_hash": "c10fbff05672b23d4af5099ee808303e80769c5b7ab23cc046c6c1dfb35a77c6",
       "path": "docs/CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py",
       "title": "CPT C3 \u2014 (CP)\u00b2 = \u03b5\u00b7I Narrow Theorem on Explicit Cl(3) \u00d7 Z\u00b3 C, P"
@@ -73947,11 +73938,11 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "136ddf67f84afbfcfca350523367614b69d4b03a3bceab2b837cd9444dd49ff5",
+      "note_hash": "74065ccbd993058da9e7b595a4e7346d3187ec618300309a57fb926e87d86504",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Grassmann Forcing Bridge Narrow Theorem"
@@ -73962,10 +73953,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9e456244814528d0c54eba96760370c61d54dba362970fc1833e784182dace79",
+      "note_hash": "bdddd01505c68e93c8b89c1ae18f6aa39d3a9ee3c0b17af64fad23fdc4895c30",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 Jordan-Wigner Cross-Site CAR Bridge Narrow Theorem"
@@ -73976,10 +73967,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d147962b455e511fbcd3e9fd8638b0a56c1005f35a1002aab35bd96be6c54140",
+      "note_hash": "3593358733a4d4ae6819d9b38c0befc95809bc0a41b1d66a72d90c2a0782aac5",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
       "title": "Staggered-Dirac Substep 1 \u2014 U4 Conditional Single-Module Narrow Bounded Theorem"
@@ -76504,11 +76495,10 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "minimal_axioms_2026-05-20",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d177763909f68c2e9295f3a0f78e0c89d52eb39e244ac9a743c01e04515efc96",
+      "note_hash": "80ec7d86edeaee37129356f86d3a7b96d8af1521b079272e92a7ffda6305bc6f",
       "path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)"
@@ -81726,7 +81716,7 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9745,
+    "edge_count": 9743,
     "leaf_count": 741,
     "node_count": 2484,
     "root_count": 808,

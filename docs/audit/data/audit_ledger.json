@@ -200806,24 +200806,41 @@
       "verdict_rationale": null
     },
     "q_integer_spectrum_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T16:49:48.853393+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 11.042,
+        "runner_hash": "9042cf2aed3bb0c2bdd1d6d56595c0adab190cb424e5c09d246afda1d2846f77",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T164922Z-cce2b521-q_integer_spectrum_theor-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from a per-site C^2 occupation space to the integer total spectrum closes. However, the cited authority explicitly moves the physical per-site Hilbert C^2 / Grassmann realization bridge out of scope, while the source note treats it as supplied by that authority.",
       "claim_id": "q_integer_spectrum_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "Given a per-site C^2 occupation space with canonical single-mode fermion operators, Q_total = sum_x n_x has spectrum {0, 1, ..., N} with binomial multiplicities.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T16:49:48.853393+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -200831,20 +200848,22 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 11.042,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Since the n_x are mutually commuting Hermitian operators with eigenvalues {0, 1}, they have a joint eigenbasis labelled by binary strings, and Q_total acts by the Hamming weight.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8cdee38cec613f2e240ba086899ddd6df8c5231639d790cdd2c5a5437d405e9e",
       "note_path": "docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite the retained-grade staggered-Dirac/Grassmann realization authority, or otherwise include a retained one-hop theorem establishing the per-site physical Hilbert space is the canonical C^2 one-mode Fock space.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-22T15:08:24.498177+00:00",
@@ -200940,16 +200959,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 6,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/q_integer_spectrum_check.py",
       "title": "Per-Site n\u0302 \u2208 {0, 1} \u21d2 Total Q\u0302 Integer Spectrum on Framework Fock Space",
       "transitive_descendants": 1053,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely computes the finite-dimensional matrix identities and spectra for N = 4, and those checks support the internal algebraic claim. But the note's only cited one-hop authority no longer provides U4, the per-site Hilbert C^2 / one-Grassmann-mode realization that the audited claim load-bears on. Retained_bounded status of the cited note does not close an identification that the cited note itself declares out of scope."
     },
     "qcd_low_energy_running_bridge_note_2026-05-01": {
       "audit_date": null,

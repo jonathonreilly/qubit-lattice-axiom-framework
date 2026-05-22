@@ -19689,6 +19689,14 @@
       "to": "persistent_record_overlap_kernel_note"
     },
     {
+      "from": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+      "to": "minimal_axioms_2026-05-20"
+    },
+    {
       "from": "persistent_record_sidebit_note",
       "to": "persistent_record_matched_compare_note"
     },
@@ -65075,6 +65083,21 @@
       "runner_path": null,
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators"
     },
+    "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
+      "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+        "minimal_axioms_2026-05-20"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "6376b635d09d3bca6d55aa3df123b084ae96f2ecc4b7540025bb14d67b777351",
+      "path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
+      "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
+      "title": "Persistent-Record Instrument: Framework-Side Stinespring V Construction (Narrow)"
+    },
     "persistent_record_matched_compare_note": {
       "claim_id": "persistent_record_matched_compare_note",
       "claim_type_author_hint": null,
@@ -81519,7 +81542,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 516,
+      "bounded_theorem": 517,
       "decoration": 1,
       "meta": 184,
       "no_go": 64,
@@ -81528,7 +81551,7 @@
       "positive_theorem": 174
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 954,
+      "bounded_theorem": 955,
       "decoration": 1,
       "meta": 184,
       "no_go": 167,
@@ -81536,10 +81559,10 @@
       "open_gate": 123,
       "positive_theorem": 607
     },
-    "edge_count": 9720,
+    "edge_count": 9722,
     "leaf_count": 743,
-    "node_count": 2479,
+    "node_count": 2480,
     "root_count": 810,
-    "runners_with_path": 2045
+    "runners_with_path": 2046
   }
 }

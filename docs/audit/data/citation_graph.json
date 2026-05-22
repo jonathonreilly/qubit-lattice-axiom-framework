@@ -16977,10 +16977,6 @@
       "to": "su2_witten_z2_anomaly_theorem_note_2026-04-24"
     },
     {
-      "from": "lh_anomaly_trace_catalog_theorem_note_2026-04-25",
-      "to": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24"
-    },
-    {
       "from": "lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10",
       "to": "graph_first_su3_integration_note"
     },
@@ -24203,10 +24199,6 @@
     {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "to": "hypercharge_identification_note"
-    },
-    {
-      "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
-      "to": "lh_anomaly_trace_catalog_theorem_note_2026-04-25"
     },
     {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
@@ -60992,11 +60984,10 @@
         "hypercharge_identification_note",
         "graph_first_su3_integration_note",
         "native_gauge_closure_note",
-        "su2_witten_z2_anomaly_theorem_note_2026-04-24",
-        "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24"
+        "su2_witten_z2_anomaly_theorem_note_2026-04-24"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9c60dcaf6f8026b104ddb9e944cdbf6dc278a9c749978d4076ecb539cd79578e",
+      "note_hash": "bf4b31425395b5082cda65dbc0bc8c9f4eadb9cc436029b955cdc340cb2bc5ac",
       "path": "docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_lh_anomaly_trace_catalog.py",
       "title": "Left-Handed-Content Anomaly Trace Catalog Theorem"
@@ -70878,7 +70869,7 @@
         "work_history.repo.backlog.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c9b39aa21697438929b3fe89a53f57d01c6316dab45f16f9f151ff2beb22662",
+      "note_hash": "633f6987f0d7368b48c9960e026f71856cdf77d7e41b252ea563a4a9b05a682f",
       "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
       "runner_path": "scripts/frontier_gauge_scalar_bridge_kz_external_lift.py",
       "title": "Active Review Queue"
@@ -74429,14 +74420,13 @@
         "left_handed_charge_matching_note",
         "anomaly_forces_time_theorem",
         "hypercharge_identification_note",
-        "lh_anomaly_trace_catalog_theorem_note_2026-04-25",
         "one_generation_matter_closure_note",
         "native_gauge_closure_note",
         "graph_first_su3_integration_note",
         "three_generation_structure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "780ff243db7bdf02a734b14a03d358ae259334616fa8366e119ce7d43c714450",
+      "note_hash": "280a7d5132c2811e732ed4bd9cbf00bc21b3aeb7992b5628eb315c696ecd1810",
       "path": "docs/STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_sm_hypercharge_uniqueness.py",
       "title": "Standard Model Hypercharge Uniqueness from Anomaly Cancellation"
@@ -81703,7 +81693,7 @@
       "open_gate": 124,
       "positive_theorem": 607
     },
-    "edge_count": 9743,
+    "edge_count": 9741,
     "leaf_count": 740,
     "node_count": 2483,
     "root_count": 808,

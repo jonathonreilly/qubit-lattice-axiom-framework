@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 605 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 606 |
 | `audited_conditional` | 89 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 69 |
@@ -118,7 +118,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -604,6 +603,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_geometry_superposition_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -9831,6 +9831,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At d=4, the upstream naive count gives 2^4=16, integer arithmetic factors this as 16=4*4, and the upstream Cl(3,0) complexification split gives dim_C V_+ + dim_C V_- = 2+2=4, matching the second 4 factor.  _(class `A`)_
 - **chain closes:** True — For this narrow scope, retained upstream authorities supply the 16 naive-corner count and the Cl(3) chirality dimensions; the remaining work is exact integer arithmetic and finite-dimensional linear algebra. The framework-specific Kogut-Susskind taste reduction is explicitly outside the audited claim.
 - **rationale:** The cited authorities are retained, and the load-bearing step is a genuine class-A algebraic closure over their outputs rather than a tuned numerical comparator or physical bridge. The runner source actually enumerates the corner set, checks the factorization, and verifies the Pauli/idempotent dimension statements at exact symbolic precision. The bounded negative language is narrowed to non-sufficiency of the restricted inputs, not a universal no-go, so the No-Go gate does not block the narrow clean verdict.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited only the abstract finite-dimensional algebra statement: on V_3 with the explicit diagonal commuting unitary triple having joint eigenvalue triples (-1,+1,+1), (+1,-1,+1), (+1,+1,-1), every operator commuting with all three T_mu is diagonal in the given joint eigenbasis.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T163959Z-0dfa4b5e-staggered_dirac_substep4-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For any off-diagonal pair, a distinguishing T_mu gives <e_alpha|[K,T_mu]|e_beta> = (tau_mu^(beta)-tau_mu^(alpha))<e_alpha|K|e_beta>, so [K,T_mu]=0 forces that matrix element to vanish.  _(class `A`)_
+- **chain closes:** True — The stated conclusion follows from the explicit joint-eigenvalue distinctness and the commutator matrix-entry identity. The physical hw=1 lattice-carrier and Kawamoto-Smit identifications are explicitly excluded from scope.
+- **rationale:** The load-bearing step is a standard finite-dimensional algebraic identity over the explicit matrices supplied in the note, with no upstream retained-status dependency and no external comparator. The runner genuinely constructs the diagonal T_mu, checks pairwise distinctness, verifies commutator identities, solves the commuting constraints in the Hermitian parameterization, and reports PASS=41 FAIL=0. The theorem is clean only in its declared abstract scope; it does not close the separate physical-substrate AC_lambda bridge.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17`

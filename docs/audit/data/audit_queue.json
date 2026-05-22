@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 888,
+    "critical": 887,
     "high": 23,
     "leaf": 325,
     "medium": 99
@@ -11993,28 +11993,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Audited only the abstract 3-dimensional complex linear-algebra claim: any operator commuting with the explicit diagonal unitary triple with joint eigenvalue triples (-1,+1,+1), (+1,-1,+1), (+1,+1,-1) is diagonal in the stated basis.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.542,
-      "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py",
-      "transitive_descendants": 1053
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -49531,6 +49509,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 22,
-  "total_pending": 1335
+  "ready_count": 21,
+  "total_pending": 1334
 }

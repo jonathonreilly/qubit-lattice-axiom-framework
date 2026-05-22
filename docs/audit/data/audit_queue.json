@@ -11995,15 +11995,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "gauge_wilson_isotropy_boundary_note_2026-05-04",
-      "claim_scope": null,
+      "claim_scope": "Route-specific negative boundary: on the accepted isotropic Wilson nearest-neighbor plaquette surface, the Cl(3) pseudoscalar-as-fourth-generator route and the standard staggered-eta plaquette-product route do not produce a spatial/temporal or orientation-dependent gauge-coupling split.",
       "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms_2026-05-20",
         "qubit_axiom_hardening_note_2026-05-20",
@@ -12011,11 +12011,11 @@
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 10.54,
       "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
       "transitive_descendants": 1052

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 372 |
+| **retained_bounded** | 373 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1308 |
+| unaudited | 1307 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 625 |
+| `audited_clean` | 626 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1532 |
+| `unaudited` | 1531 |
 
 | claim_type | count |
 |---|---:|
@@ -279,6 +279,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -3985,6 +3986,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The fine-H lensing slope is portable across three DAG families within the -1.38 to -1.43 band, with a possible residual Fam2/Fam3 offset (t=2.37) that needs more seeds to resolve.  _(class `C`)_
 - **chain closes:** True — The source note has no upstream dependencies, and the registered runner cache now replays the full 3-family x 5-seed finite computation with the same slopes, family summaries, and pairwise t-statistics. The audited scope is the bounded finite replay only, not geometry-independence or an independent eikonal-baseline derivation.
 - **rationale:** The runner constructs the three fixed drift/restore DAG families, evaluates seeds 0-4 at H=0.25 and b in {3,4,5,6}, computes the Kubo readout, fits the per-seed and seed-mean power laws, and emits the same family means, grand mean, population sigma, and Fam2-vs-Fam3 t-statistic reported in the note. The note's retained boundary is explicitly three-family portability with a borderline residual family offset, not universality or kernel-independence. Within that bounded finite scope there is no hidden dependency, stale number, timeout, or imported comparator needed for closure.
+- **auditor confidence:** high
+
+### `finite_rank_gravity_residual_helper_note_2026-04-14`
+
+- **Note:** [`FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md`](../../docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given an invertible bare lattice Hamiltonian H_0, finite support projector P, finite-rank support matrix W, and invertible I - W G_S, the helper computes the exact finite-rank Woodbury/Dyson renormalized support source and exterior field.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T233826Z-f11da277-finite_rank_gravity_resi-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact Woodbury/Dyson identity gives G_W P = G_0 P (I - W G_S)^(-1), hence q_eff = (I - W G_S)^(-1) m and phi = G_0 P q_eff.  _(class `A`)_
+- **chain closes:** True — The audited claim is bounded to the finite-rank algebraic identity and its numerical implementation. The runner explicitly constructs H_0, P, W, solves both the full finite-rank system and the compressed Woodbury formula, and verifies agreement plus exterior harmonicity.
+- **rationale:** The load-bearing step is a standard finite-rank Woodbury/Dyson algebraic closure, not a numerical fit, external comparator, or renaming. The source note correctly bounds the claim to the helper-module construction and explicitly excludes derivation of P and W or closure of downstream gravity theorems. The runner source genuinely computes the finite-rank column identity, compressed source equivalence, and exterior harmonicity rather than printing constants.
 - **auditor confidence:** high
 
 ### `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30`

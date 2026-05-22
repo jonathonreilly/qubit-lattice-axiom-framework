@@ -61803,7 +61803,7 @@
         "key_terminology"
       ],
       "helper_runner_paths": [],
-      "note_hash": "29ad382ba5b207b75f1c8fc070b49f493593cb28ccfaaa6b69f6250d62ce1724",
+      "note_hash": "c5b734dc34c8f019621fed93181826814e53f73640415735d3bf0351ad930fef",
       "path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
       "runner_path": null,
       "title": "Minimal Framework Axioms (Qubit Reframe)"
@@ -70589,7 +70589,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "1c289edfa8ee90487cd2646e6b1ce4bf4439706c26c0739690268351f802d3b3",
+      "note_hash": "97b015f62416c6428e8067a158a4c973bd746554c0ff7b512f7f381c409d8e5f",
       "path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
       "runner_path": null,
       "title": "Qubit Axiom Hardening: Bare-Qubit A1 Is Mathematically Identical to Physical-Cl(3,0)"

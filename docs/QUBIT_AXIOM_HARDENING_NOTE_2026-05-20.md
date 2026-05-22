@@ -207,6 +207,152 @@ Bundled with the binding commentary block in
 foundational commitment. Mathematically identical to the
 `Cl(3,0)`-framing; preferred for minimality and readability.
 
+## Hardening II: k = 1 per-site selection (load-bearing ratification, 2026-05-22)
+
+### Background — the auditor's flag on U4 closure
+
+The audit verdict on
+`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20`
+recorded `audited_renaming` with the following rationale:
+
+> *"U4 and A1's 'qubit at every lattice site' are identified by
+> axiom-content unpacking, not by a derivation chain bridging two
+> separately specified objects... If the qubit reframe of A1 is later
+> treated by audit policy as a definitional equivalence rather than a
+> load-bearing axiom (e.g. via QUBIT_AXIOM_HARDENING_NOTE_2026-05-20
+> ratification), this row could be reconsidered as audited_decoration
+> under the cl3_complexification_split parent."*
+
+In plain language, the audit lane is currently treating A1's
+"qubit" reading and the prior "Cl(3) per site" reading as **two
+labels for the same M_2(ℂ) object** — a definitional equivalence,
+not a strengthening. Under that conservative reading, the
+**multiplicity-k selection** is left open as it was under the
+pre-reframe framing.
+
+This section ratifies the framework-rule reading: A1's "qubit"
+form **strengthens** the commitment by selecting `k = 1` in the
+axiom content.
+
+### The k-selection question
+
+The abstract real-Clifford algebra `Cl(3,0)` admits faithful
+complex irreducible representations of complex dimension
+`dim_ℂ V = 2k` for any multiplicity `k ≥ 1`. Under the
+pre-2026-05-20 "physical Cl(3) per site" framing:
+
+- A1 fixed the per-site **algebra** as `Cl(3,0)`
+- A1 did **not** fix the **multiplicity** k of the per-site module
+- Selecting `k = 1` was an open task carried by substep 1 of
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03` (the U4
+  bridge: "the per-site Hilbert IS the Cl(3) faithful complex
+  irrep on per-site `V`")
+
+Both `k = 1` (single qubit per site) and `k ≥ 2` (multi-copy
+modules per site) are admissible Cl(3) representations on the
+abstract algebraic surface; selecting `k = 1` required additional
+physical input.
+
+### Ratification clause
+
+The 2026-05-20 reframe replaces this two-step structure with a
+single load-bearing commitment:
+
+> **(R1) Per-site k = 1 selection.** A1's reading of "qubit at every
+> lattice site" carries the `k = 1` selection as load-bearing axiom
+> content. The per-site Hilbert space `H_x` is **exactly** `ℂ²` —
+> the unique faithful complex irreducible module of `M_2(ℂ)`, with
+> multiplicity `k(x) = 1`, not a multi-copy direct sum.
+
+By standard quantum-information definition, a qubit is `ℂ²` with
+`M_2(ℂ)` acting irreducibly. The k = 1 selection is what the word
+"qubit" **means**. Under the qubit reframe, A1's commitment is
+**not** "any Cl(3) module per site (with k open)" but rather "one
+qubit per site (k = 1 fixed)".
+
+This is a strengthening of A1, not a relabeling. (R1) was implicit
+in the framework's "no not-qubit" commitment — every site is a
+qubit, not some multi-copy alternative — and is now ratified in
+explicit framework-rule text so the audit lane can read it as
+load-bearing.
+
+### Load-bearing status
+
+(R1) is recorded as an **explicit framework rule**, on the same
+authority surface as A1 itself. It is:
+
+- **Load-bearing**, not definitional: it constrains the per-site
+  multiplicity index k(x) beyond what "per-site algebra = M_2(ℂ)"
+  alone constrains
+- **Not derivable from operator-algebra structure alone**: both
+  k = 1 and k ≥ 2 are admissible Cl(3) modules on the abstract
+  surface, so the selection is a framework-level commitment, not a
+  theorem
+- **Approved by the framework author / repo owner** as a strengthening
+  of A1 consistent with the "no not-qubit" reading recorded in this
+  hardening note
+
+### Downstream effects (subject to independent audit)
+
+Under (R1) as a load-bearing axiom strengthening, the following
+audited_conditional rows should be eligible for re-audit:
+
+- `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`
+  — Conditional sub-claim (C1) "if k = 1, dim H_x = 2" becomes
+  unconditional under (R1).
+- `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`
+  — U4 admission ("per-site Hilbert IS Cl(3) faithful complex irrep
+  on Z^3 substrate") becomes axiom-content under (R1).
+- `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
+  — Same U4 admission becomes axiom-content under (R1).
+- `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` — dim 2
+  follows directly from (R1) without the per-site-uniqueness chain.
+- `no_per_site_bosonic_ccr_theorem_note_2026-05-02`,
+  `no_per_site_chirality_theorem_note_2026-05-02`,
+  `pauli_group_order_theorem_note_2026-05-02`,
+  `q_integer_spectrum_theorem_note_2026-05-02`,
+  `per_site_su2_spin_half_theorem_note_2026-05-02`,
+  `multisite_pauli_group_theorem_note_2026-05-02` — all consume the
+  per-site-dim = 2 result; (R1) closes their `missing_dependency_edge`
+  on the (post-2026-05-08-narrowing) per-site uniqueness chain.
+- `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+  — under (R1) as load-bearing strengthening, this row is the
+  on-record statement of the load-bearing identification rather
+  than a renaming-grade observation. The auditor's follow-up note
+  suggested it could be reconsidered as `audited_decoration`
+  under `cl3_complexification_split` once (R1) is in place.
+
+This list does **not** retag any of those rows by itself. Each
+re-audit is an independent audit-lane decision. (R1) supplies the
+strengthened axiom reading; the audit lane applies it.
+
+### What (R1) does not commit to
+
+(R1) does **not** commit to:
+
+- A specific Hamiltonian, dynamics, or evolution rule
+- A specific measurement instrument selection (e.g., LSP for Lüders)
+- A specific record-formation map or persistent-record kernel
+- The staggered-Dirac realization gate's substeps 2-4 (Kawamoto-Smit
+  taste structure, substrate-fundamentality, physical-species bridge)
+- Any matter content beyond the per-site qubit algebra
+
+These remain in their own derivation lanes. (R1) closes only the
+multiplicity-selection question at the per-site axiom level.
+
+### What this hardens
+
+This section converts the auditor's "if the qubit reframe is
+treated as a load-bearing axiom" conditional into a **standing
+framework rule**. The audit lane is now able to read A1 as carrying
+the k = 1 selection by axiom-rule status, on the same authority
+surface as the per-site M_2(ℂ) commitment itself.
+
+(R1) is the framework's explicit response to the audit verdict on
+U4 closure. The reviewer of this PR is asked to confirm with the
+audit lane that, on land, A1 will be read as carrying (R1) as
+load-bearing — not as a relabeling.
+
 ## What this file is not
 
 - Not a derivation. The retained narrow theorems are cited from
@@ -214,10 +360,14 @@ foundational commitment. Mathematically identical to the
 - Not a numerical-prediction change.
 - Not a re-axiomatization. The math is unchanged from
   `MINIMAL_AXIOMS_2026-05-03.md`; only the canonical statement
-  language is adjusted.
+  language is adjusted, plus the explicit (R1) k = 1 selection
+  ratification recorded in this note.
 - Not a rejection of the `Cl(3)`-framing literature in the repo.
   That literature reads cleanly under the qubit identification by
   the retained equivalence.
+- Not an automatic promotion of any audited_conditional row.
+  (R1) supplies the strengthened axiom reading; downstream
+  re-audits are independently owned by the audit lane.
 
 ## Citation-graph note
 
@@ -227,6 +377,20 @@ Upstream (all retained):
 - `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
 - `cl3_color_automorphism_theorem` (retained_bounded)
 
+Plain-text pointer references (NOT load-bearing deps; recorded
+for navigation, not for citation-graph dep tracking):
+
+- `MINIMAL_AXIOMS_2026-05-20.md` — canonical axiom doc; (R1)
+  applies to A1 of this doc
+- `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
+  — the audited_renaming row whose audit-lane follow-up note
+  ("ratification via QUBIT_AXIOM_HARDENING") motivated (R1)
+- `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` — open-gate
+  parent whose substep-1 U4 bridge is closed by (R1)
+- The six audited_conditional rows listed under "Downstream effects"
+
 This note does not modify any retained row. It records the
 defense of the canonical A1 statement against the "vocabulary
-substitution" framing using existing retained-grade content.
+substitution" framing using existing retained-grade content, and
+ratifies (R1) as the load-bearing k = 1 selection for re-audit
+consumption by the audit lane.

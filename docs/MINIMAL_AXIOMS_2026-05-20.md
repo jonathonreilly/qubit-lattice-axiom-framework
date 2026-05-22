@@ -111,6 +111,18 @@ See companion defense note
 `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` for the explicit response
 to the "vocabulary substitution" framing.
 
+**Ratification clause (R1) — per-site k = 1 selection (2026-05-22).**
+A1's reading of "qubit at every lattice site" carries the `k = 1`
+selection as load-bearing axiom content: the per-site Hilbert space
+`H_x` is **exactly** `ℂ²` — the unique faithful complex irreducible
+module of `M_2(ℂ)`, with multiplicity `k(x) = 1`, not a multi-copy
+direct sum. Both `k = 1` and `k ≥ 2` are admissible Cl(3) modules on
+the abstract algebraic surface; A1's "qubit" reading selects `k = 1`.
+This is a strengthening of A1, not a relabeling, ratified explicitly
+on the same authority surface as the per-site `M_2(ℂ)` commitment.
+Full ratification text and downstream effects in
+`QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md` § "Hardening II".
+
 ### What "qubit" and "site" mean (commentary, not axiom content)
 
 - **Qubit.** The standard quantum-information reading of the

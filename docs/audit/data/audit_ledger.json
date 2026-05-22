@@ -34458,22 +34458,41 @@
       "verdict_rationale": "The runner source performs actual exact Sympy matrix computations for the Pauli anticommutators, omega^2, centrality, chirality idempotents, inequivalence of the two canonical irreps, and tensor-dimension checks; it is not merely printing constants. The uniqueness statement rests on the standard algebraic decomposition quoted in the proof, not on numerical fitting or an external comparator. Within the restricted real-Cl(3,0) algebraic scope, no open downstream physical bridge is imported."
     },
     "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T03:10:41.442179+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 12.964,
+        "runner_hash": "943572bed145e5b0e514c1c2f6ed5ce17e5c48635334c79e3782bd7f79947d6a",
+        "transitive_descendants": 998
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-030935-7e12d739-cl3_per_site_hilbert_dim-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited authority closes the abstract physical-Cl(3)-only representation classification U1-U3, but explicitly moves the physical per-site Hilbert-space dimension bridge U4 out of its scope. The source note relies on the site-Hilbert-space-as-faithful-irrep identification as an admitted structural bridge without a retained one-hop authority for that bridge.",
       "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
-      "claim_scope": null,
+      "claim_scope": "For each lattice site on the Cl(3) \u2297 Z^3 substrate, dim_C H_x = 2 with Pauli realization, and finite blocks have tensor-product dimension 2^|\u039b|.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T03:10:41.442179+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -34481,34 +34500,34 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 12.964,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The framework's per-site algebra at every x is Cl(3), the site Hilbert space is the faithful irreducible representation, and therefore dim_C H_x = 2 by the cited per-site uniqueness theorem.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8b7f82d4de294d0c61593cd8f8bbbb6ede4f94fb96036bbf8d30bd7d558d6827",
       "note_path": "docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite and include a retained one-hop theorem closing the physical site-Hilbert-space identification, such as the staggered-Dirac/Grassmann forcing substep named by the cited authority, then re-audit the narrowed chain.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 5,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/cl3_per_site_hilbert_dim_two_check.py",
       "title": "Per-Site Hilbert Space Dimension = 2 from Cl(3) Per-Site Uniqueness",
       "transitive_descendants": 998,
-      "verdict_rationale": null
+      "verdict_rationale": "The runner genuinely checks Pauli anticommutation, irreducibility, unitary conjugation invariance, and the elementary tensor-dimension formula, but it does not compute or certify the physical bridge from the lattice site Hilbert space to the abstract Cl(3) irrep. The only cited authority is retained_bounded for the abstract Cl(3) classification and explicitly says the per-site Hilbert dimension conclusion on the framework baseline is out of scope and should be carried by the staggered-Dirac/Grassmann realization gate. Thus the dimensional conclusion may be true, but this restricted packet does not close it from the cited inputs alone."
     },
     "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02": {
       "audit_date": "2026-05-10T15:30:44.393092+00:00",

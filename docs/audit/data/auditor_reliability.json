@@ -9,15 +9,14 @@
         "F": 1,
         "algebraic_corollary_of_parent": 1,
         "claim_type_observable_mismatch": 1,
-        "exact_algebraic_identity_on_admitted_carrier": 1,
-        "physical_bridge": 1
+        "exact_algebraic_identity_on_admitted_carrier": 1
       },
       "bias_direction_breakdown": {
         "more_lenient": 3
       },
       "criticality_counts": {
         "critical": 7,
-        "leaf": 15,
+        "leaf": 14,
         "medium": 3
       },
       "cross_confirmation_agreement_rate": 0.2,
@@ -34,11 +33,11 @@
       "third_pass_decisions_n": 4,
       "third_pass_overturn_rate": 0.75,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 25,
+      "total_audits": 24,
       "verdict_changed_after_re_audit": 7,
       "verdict_counts": {
         "audited_clean": 14,
-        "audited_conditional": 3,
+        "audited_conditional": 2,
         "audited_decoration": 4,
         "audited_failed": 1,
         "audited_renaming": 3
@@ -91,7 +90,7 @@
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
         "A": 263,
-        "B": 29,
+        "B": 30,
         "C": 222,
         "D": 4,
         "E": 17,
@@ -106,7 +105,7 @@
       "criticality_counts": {
         "critical": 248,
         "high": 11,
-        "leaf": 231,
+        "leaf": 232,
         "medium": 64
       },
       "cross_confirmation_agreement_rate": 0.749,
@@ -126,11 +125,11 @@
       "third_pass_decisions_n": 84,
       "third_pass_overturn_rate": 0.476,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 554,
+      "total_audits": 555,
       "verdict_changed_after_re_audit": 218,
       "verdict_counts": {
         "audited_clean": 387,
-        "audited_conditional": 89,
+        "audited_conditional": 90,
         "audited_decoration": 31,
         "audited_failed": 25,
         "audited_numerical_match": 9,

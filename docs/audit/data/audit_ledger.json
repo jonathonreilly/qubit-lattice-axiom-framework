@@ -175304,7 +175304,7 @@
       "verdict_rationale": null
     },
     "per_site_su2_spin_half_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-22T03:34:40.052826+00:00",
+      "audit_date": "2026-05-22T13:00:41.803352+00:00",
       "audit_state_snapshot": {
         "criticality": "leaf",
         "dep_claim_scope": {
@@ -175324,20 +175324,20 @@
         "transitive_descendants": 2
       },
       "audit_status": "audited_conditional",
-      "auditor": "claude-audit-loop-2026-05-19-per-site-su2",
-      "auditor_confidence": null,
-      "auditor_family": "claude-opus",
-      "auditor_model": "claude-opus-4-7-1m",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T130020Z-34ddc3b9-per_site_su2_spin_half_t-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": "Pure algebra (su(2) commutators, Casimir, Schur, irreducibility) closes cleanly from the Pauli C^2 module, and runner PASS=7/7 confirms the algebraic content. But the one-hop dependency axiom_first_cl3_per_site_uniqueness was narrowed on 2026-05-08 to physical-Cl(3)-only U1-U3, explicitly excluding U4 (per-site Hilbert dim = 2 on the explicit framework baseline). The dependency now provides only the abstract Cl(3) representation classification (two non-isomorphic 2-dim chirality irreps), NOT the physical identification H_x ~= Pauli C^2. The bridge from abstract Cl(3) irrep to physical per-site Hilbert is now carried by STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md (substep 1), which is not wired as a one-hop dependency of this note. This is the same hidden physical-bridge wall that landed cl3_per_site_hilbert_dim_two as audited_conditional.",
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli-matrix su(2) computation closes algebraically, but the restricted cited authority no longer proves that the physical per-site Hilbert is exactly the canonical Pauli C\u00b2 module. Its U4 per-site Hilbert bridge is explicitly out of scope and moved to another note not included in the packet.",
       "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
-      "claim_scope": "On every framework site x in Z^3, the per-site Hilbert space H_x carries exactly the j = 1/2 irreducible representation of su(2), with spin generators S_i := sigma_i / 2 satisfying [S_i, S_j] = i eps_{ijk} S_k, Casimir S^2 = (3/4) I, and S_z spectrum {+/- 1/2}; no other half-integer spin representation supported on a per-site Hilbert.",
+      "claim_scope": "Given a per-site Hilbert identified with the canonical Pauli Cl(3) irrep, S_i=\u03c3_i/2 satisfies the su(2) relations, has Casimir 3/4, and is the irreducible j=1/2 module.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-22T03:34:40.052826+00:00",
+      "claim_type_last_reviewed": "2026-05-22T13:00:41.803352+00:00",
       "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
@@ -175352,28 +175352,30 @@
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
       "load_bearing_score": 2.085,
-      "load_bearing_step": null,
-      "load_bearing_step_class": "physical_bridge",
+      "load_bearing_step": "By the cited per-site uniqueness theorem (U2), H_x \u2245 C\u00b2 with \u03b3_i \u21a6 \u03c3_i, so all subsequent statements are computations in this Pauli basis.",
+      "load_bearing_step_class": "B",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d0d7638afb212531bbc0474d17b5822785fc916e59783c593954542fc87d8d33",
       "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 add STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md (substep 1) as an explicit load-bearing one-hop dependency for the H_x ~= Pauli C^2 module physical identification, OR re-cite a future retained-grade per-site-Hilbert-dim = 2 theorem; mirrors the sibling cl3_per_site_hilbert_dim_two hidden-wall remediation.",
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: include the retained-grade staggered-Dirac/Grassmann or other bridge theorem that identifies the physical per-site Hilbert with a single 2-dim canonical Cl(3) chirality module, then re-audit the per-site scope.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
-      "prose_status": "auto_corrected",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 6,
+        "B": 1,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/per_site_su2_spin_half_check.py",
       "title": "Per-Site Cl(3) Hilbert Carries the Unique j = 1/2 Spin Irrep of su(2)",
       "transitive_descendants": 2,
-      "verdict_rationale": "Issue: load-bearing identification 'H_x ~= C^2 with gamma_i -> sigma_i' cites '(retained per-site uniqueness)' but the cited authority axiom_first_cl3_per_site_uniqueness was narrowed on 2026-05-08 to drop its U4 step (per-site Hilbert dim = 2 on the framework baseline); the dependency now provides only abstract Cl(3) representation theory (U1-U3) with two chirality irreps up to isomorphism, not the physical identification of H_x with the Pauli C^2 module. Why this blocks: every conclusion of the note (su(2) algebra on S_i = sigma_i/2, Casimir = 3/4, j=1/2 spectrum, irreducibility, dim 2j+1 = 2 readout) is computed inside the Pauli C^2 module; if H_x is not yet derived as that module from primitives, the entire spin-1/2 conclusion is conditional on an unwired physical bridge. Runner Test 7 ('per_site dim = 2') hard-codes dim=2 rather than deriving it. Repair target: either (a) wire STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md (substep 1) as an explicit one-hop dependency carrying the per-site-Hilbert-dim-= 2 physical bridge, or (b) re-cite a future retained-grade per-site-Hilbert-dim-= 2 theorem once it lands, or (c) narrow this note's claim_scope to the abstract chirality-fixed conclusion 'any 2-dim faithful complex Cl(3) irrep carries the unique j=1/2 spin irrep of su(2)' on per-site Hilbert spaces realized as either Pauli irrep (avoiding the physical-Hilbert identification entirely). Claim boundary until fixed: as an abstract Lie/representation-theoretic statement on the Pauli C^2 module the result is correct (Pauli C^2 carries j=1/2 irrep, no other spin label fits in 2 dimensions); but on the explicit framework baseline the per-site Hilbert = Pauli C^2 identification remains an admitted physical bridge."
+      "verdict_rationale": "The runner genuinely checks Pauli algebra, Casimir, spectrum, and scalar commutant, but it assumes the contested per-site dimension/canonical Pauli identification by setting dim=2 and hard-coding the Pauli matrices. The one-hop authority is retained_bounded for abstract physical-Cl(3)-only U1-U3, yet it explicitly states that the physical per-site Hilbert dimension/realization bridge U4 was moved out of scope. Therefore the audited packet proves only the conditional Pauli-irrep spin-1/2 statement, not the full per-site framework claim."
     },
     "periodic_2d_wraparound_fix_note_2026-04-11": {
       "audit_date": null,

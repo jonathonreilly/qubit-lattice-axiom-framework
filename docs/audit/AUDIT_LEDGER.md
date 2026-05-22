@@ -46,8 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 606 |
+| `audited_clean` | 607 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 26 |
 | `audited_failed` | 69 |
@@ -118,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -603,6 +601,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -9867,6 +9866,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The presented load-bearing step is an algebraic consequence of the supplied Cl(3) decomposition, and the runner source does perform explicit symbolic Clifford-relation, dimension, Schur, and counterexample checks rather than merely printing constants. The note also honestly limits the result to a conditional single-module selection and explicitly leaves unconditional U4 open; the N-gate boundary is satisfied because the packet exhibits multiple k≥2 attack routes and does not overclaim closure. However, the only cited authority in the restricted packet carries effective_status decoration, not a retained-grade status, so the audit cannot mark the chain clean under the stated rubric.
 - **open / conditional deps cited:**
   - `CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md`
+- **auditor confidence:** high
+
+### `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T165106Z-8222d3fe-staggered_dirac_substep3-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** By S_3-invariance of Hamming weight and transitivity on each L_k, the S_3-orbits on (Z_2)^3 are exactly L_0, L_1, L_2, L_3 with sizes (1, 3, 3, 1).  _(class `A`)_
+- **chain closes:** True — The proof uses only standard finite-set arithmetic and finite-group action facts, with no cited upstream note or physics bridge required. The runner source exhaustively enumerates the 8 vertices and 6 permutations and matches the stated orbit and involution structure.
+- **rationale:** The load-bearing step is a genuine class (A) combinatorial closure over admitted mathematical infrastructure. There are no load-bearing cited authorities, no external comparators, no numerical tuning, and no imported physics premise. The note explicitly scopes out the BZ-corner identification and generation bridge, so the audited claim closes only as the bare finite-set theorem.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16`

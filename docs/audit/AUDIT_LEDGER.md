@@ -24,11 +24,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
 | unaudited | 1327 |
-| audit_in_progress | 1 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 85 |
+| ~~audited_conditional~~ | 86 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 4 |
@@ -46,9 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
 | `audited_clean` | 621 |
-| `audited_conditional` | 85 |
+| `audited_conditional` | 86 |
 | `audited_decoration` | 24 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -57,12 +55,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1026 |
+| `bounded_theorem` | 1027 |
 | `decoration` | 25 |
 | `meta` | 227 |
 | `no_go` | 238 |
 | `open_gate` | 112 |
-| `positive_theorem` | 746 |
+| `positive_theorem` | 745 |
 
 | criticality | count |
 |---|---:|
@@ -118,7 +116,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -761,6 +758,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
@@ -4075,6 +4073,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The theorem follows by direct substitution and multiplication by 2N over the stated positive-real domain, with the c0=0 boundary explicitly excluded by g>0. The runner verifies the symbolic identity, positive branch, rational instances, non-unit counterexamples, and scope disclaimers with PASS=39, FAIL=0.
 - **rationale:** The scoped claim closes as pure algebra: the two hypotheses give c0 = g^2/(2N), hence g^2 = 2Nc0, and the positive branch is unique for c0>0. The specific g=1 result is correctly limited to pairs satisfying 2Nc0=1, with the note and runner showing that other pairs such as (N,c0)=(1,1) force different values. This audit does not ratify the physical Ward-route premises or any claim that those abstract variables are fixed by Cl(3), Wilson, or SU(N_c) structure.
 - **auditor confidence:** high
+
+### `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`
+
+- **Note:** [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given canonical SU(3) generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson plaquette matching surface beta=2N_c/g_bare^2, nontrivial scalar generator/connection rescaling violates the canonical normalization and is absorbed as beta -> c^2 beta rather than as independent g_bare freedom.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260522T230313Z-g_bare_rescaling_freedom_removal_theorem-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Under T_a -> c T_a, Tr((cT_a)(cT_b))=c^2 delta_ab/2, so the matched Wilson coefficient becomes beta_new=c^2 beta_old with g_bare unchanged.  _(class `A`)_
+- **chain closes:** False — Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The immediate trace-scaling and beta-scaling step is a valid class A algebraic identity, and the runner source does compute the relevant Gram rescalings rather than merely printing outcomes. However, the theorem depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted one-hop authority list supplies only the CL3 normalization authority. Because an explicit action-surface premise is outside the cited retained dependency chain, the clean verdict over retained inputs is not warranted under the rubric. | The rescaling calculation itself is a valid class A algebraic identity, and the runner source materially checks the Gram and beta scaling. The CL3 cited authority supplies the canonical trace normalization sufficiently for this scoped algebraic step; its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, and the restricted packet supplies no retained one-hop authority for that premise while the source note explicitly leaves Wilson-action uniqueness outside this row. The correct retained status is therefore conditional/bounded until that dependency edge is supplied or the row is narrowed to a purely conditional algebra lemma. | The central rescaling computation is a valid class A algebraic identity, and the runner source performs the relevant Gram and beta-scaling checks. The canonical trace-normalization input is supplied by the cited CL3 authority and the open physical-color bridge there is not load-bearing for this narrowed canonical-triplet claim. However, the theorem also depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted packet does not provide a retained one-hop authority for that premise and the note explicitly keeps Wilson action uniqueness outside scope. That makes the applyable status conditional/bounded rather than clean. | The trace-rescaling and beta-rescaling step is a genuine class A algebraic identity, and the supplied runner actually recomputes the relevant Gram scaling rather than merely printing constants. The CL3 cited authority closes the canonical T_F=1/2 normalization for the scoped algebraic carrier, and its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, which the note itself says is outside this theorem's closure and which is not supplied as a retained one-hop authority in the restricted packet. The correct terminal status is therefore conditional, not clean. | The rescaling calculation itself is a straightforward class A algebraic identity, and the runner source really recomputes the Gram scaling and beta scaling. The CL3 cited authority supplies the canonical trace normalization at retained status for the scoped algebraic use. However, the theorem also needs the Wilson plaquette matching/action surface, and the restricted packet provides no retained one-hop authority for that premise while explicitly acknowledging the Wilson action-form caveat. Therefore the retained applyable tuple is conditional/bounded rather than clean.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. Majority rationale: The immediate trace-scaling and beta-scaling step is a valid class A algebraic identity, and the runner source does compute the relevant Gram rescalings rather than merely printing outcomes. However, the theorem depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted one-hop authority list supplies only the CL3 normalization authority. Because an explicit action-surface premise is outside the cited retained dependency chain, the clean verdict over retained inputs is not warranted under the rubric. | The rescaling calculation itself is a valid class A algebraic identity, and the runner source materially checks the Gram and beta scaling. The CL3 cited authority supplies the canonical trace normalization sufficiently for this scoped algebraic step; its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, and the restricted packet supplies no retained one-hop authority for that premise while the source note explicitly leaves Wilson-action uniqueness outside this row. The correct retained status is therefore conditional/bounded until that dependency edge is supplied or the row is narrowed to a purely conditional algebra lemma. | The central rescaling computation is a valid class A algebraic identity, and the runner source performs the relevant Gram and beta-scaling checks. The canonical trace-normalization input is supplied by the cited CL3 authority and the open physical-color bridge there is not load-bearing for this narrowed canonical-triplet claim. However, the theorem also depends on the Wilson plaquette action/matching surface beta=2N_c/g_bare^2, while the restricted packet does not provide a retained one-hop authority for that premise and the note explicitly keeps Wilson action uniqueness outside scope. That makes the applyable status conditional/bounded rather than clean. | The trace-rescaling and beta-rescaling step is a genuine class A algebraic identity, and the supplied runner actually recomputes the relevant Gram scaling rather than merely printing constants. The CL3 cited authority closes the canonical T_F=1/2 normalization for the scoped algebraic carrier, and its physical-color bridge caveat is not load-bearing here. However, the theorem also relies on the Wilson plaquette matching/action surface, which the note itself says is outside this theorem's closure and which is not supplied as a retained one-hop authority in the restricted packet. The correct terminal status is therefore conditional, not clean. | The rescaling calculation itself is a straightforward class A algebraic identity, and the runner source really recomputes the Gram scaling and beta scaling. The CL3 cited authority supplies the canonical trace normalization at retained status for the scoped algebraic use. However, the theorem also needs the Wilson plaquette matching/action surface, and the restricted packet provides no retained one-hop authority for that premise while explicitly acknowledging the Wilson action-form caveat. Therefore the retained applyable tuple is conditional/bounded rather than clean.
+- **auditor confidence:** judicial_panel_majority
 
 ### `g_bare_rigidity_theorem_note`
 

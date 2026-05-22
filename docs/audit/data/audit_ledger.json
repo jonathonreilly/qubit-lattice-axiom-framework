@@ -9928,22 +9928,41 @@
       "verdict_rationale": "Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation."
     },
     "audit_backlog_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T00:59:40.626166+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "left_handed_charge_matching_note": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited."
+        },
+        "dep_claim_type": {
+          "left_handed_charge_matching_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "left_handed_charge_matching_note": "retained_bounded"
+        },
+        "deps": [
+          "left_handed_charge_matching_note"
+        ],
+        "load_bearing_score": 6.0,
+        "runner_hash": "fa27db1a794c980305f67d92d36cad8f016902037b6bfaaad9f26b595e469826",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-005919-b49b9bae-audit_backlog_note_2026--001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not include the cycle-level CLAIM_STATUS_CERTIFICATE.md files or most upstream authorities needed to verify the reported exact-support, demotion, and obstruction outcomes. The primary runner verifies only textual presence of headings, PR numbers, lane names, and compliance phrases, not the scientific status of the cycle claims.",
       "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Campaign-level progress synthesis for audit-backlog-campaign-20260502 cycles 1-19, including reported cycle outcomes, open targets, and claimed cumulative audit-graph effects.",
+      "claim_type": "meta",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T00:59:40.626166+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -9951,20 +9970,23 @@
         "left_handed_charge_matching_note"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 6.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Each individual cycle's status is independently certified in its own CLAIM_STATUS_CERTIFICATE.md, and the synthesis aggregates those cycle-level certifications into cumulative claim-state movement.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1375bf66cc8427292d95f455da5b120cfebd829ec114f4e7e77be694a1b26012",
       "note_path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the cycle-level CLAIM_STATUS_CERTIFICATE.md files and the upstream authorities for cycles 1-19, or narrow the audited claim to textual completeness of this synthesis note.",
+      "open_dependency_paths": [
+        ".claude/science/physics-loops/audit-backlog-campaign-20260502/cycleNN-*/CLAIM_STATUS_CERTIFICATE.md",
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T16:08:17.632772+00:00",
@@ -10000,16 +10022,16 @@
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 47,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 47
       },
       "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
       "title": "Audit-Backlog Retained Campaign \u2014 Progress Synthesis (Cycles 1-19)",
       "transitive_descendants": 7,
-      "verdict_rationale": null
+      "verdict_rationale": "The note is explicitly a campaign synthesis rather than a new derivation, so its load-bearing support is the existence and correctness of the individual cycle certificates. Those certificates are named but not included in the restricted packet, and the provided runner is a text-coverage checker only. The one included cited authority is retained_bounded at the packet header level, but its body also records conditional/open boundaries around normalization and downstream SM identification, which the synthesis itself acknowledges as governance/open-target dependencies."
     },
     "audit_dm_gv_runner_stale_path_cleanup_block_two_note_2026-05-01": {
       "audit_date": null,

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 858,
-    "high": 29,
+    "high": 28,
     "leaf": 321,
     "medium": 110
   },
@@ -33307,30 +33307,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "audit_backlog_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "left_handed_charge_matching_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.0,
-      "note_path": "docs/AUDIT_BACKLOG_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_audit_backlog_campaign_synthesis.py",
-      "transitive_descendants": 7
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -46521,6 +46497,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 6,
-  "total_pending": 1318
+  "ready_count": 5,
+  "total_pending": 1317
 }

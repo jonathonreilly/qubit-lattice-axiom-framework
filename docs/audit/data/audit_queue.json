@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 866,
     "high": 28,
-    "leaf": 320,
+    "leaf": 319,
     "medium": 111
   },
   "cycle_break_target_count": 294,
@@ -37557,28 +37557,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_observable_principle_p1_bridge_jones_index_subfactor.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -46694,6 +46672,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 12,
-  "total_pending": 1325
+  "ready_count": 11,
+  "total_pending": 1324
 }

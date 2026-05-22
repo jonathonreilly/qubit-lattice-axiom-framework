@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 110 |
-| **retained_no_go** | 146 |
+| **retained_no_go** | 147 |
 | **retained_bounded** | 377 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1323 |
+| unaudited | 1322 |
 | audit_in_progress | 2 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 611 |
+| `audited_clean` | 612 |
 | `audited_conditional` | 86 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1545 |
+| `unaudited` | 1544 |
 
 | claim_type | count |
 |---|---:|
@@ -486,6 +486,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -7596,6 +7597,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **rationale:** The load-bearing negative claim is an algebraic functional-equation obstruction, not an imported numerical or definitional match. The runner source performs actual symbolic and rational-grid checks for the determinant factorization, F_p non-extensivity, log extensivity, and the two-slope counter-witness; it does not merely print expected constants. The open finite-range gate is used as a blocker to a thermodynamic positive route, not as an unclosed premise needed for the weak-extensivity no-go.
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-scoped no_go that the Jones-index / subfactor admission (UHF tensor product A_Lambda = ⊗ M_2(C); Jones index for type I subfactor inclusions; Pimsner-Popa multiplicativity under tensor product; identification W[J] = log [A(D+J) : A(D)] for a canonical J-dependent subfactor inclusion) does NOT bypass the Route D Pattern-L circularity for P1 of OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE. The admission decomposes into (II.alpha) universal Jones-index multiplicativity under tensor product (genuinely smaller than P1; a structural theorem about subfactor inclusions with no independence-of-functionals input) plus (II.beta) the identification of the framework's physical scalar generator with log of a J-dependent subfactor index, which is logically equivalent to P1 in subfactor-identification vocabulary because no canonical J-dependent inclusion is available without invoking a Pattern-L selection step. The note documents the Jones-index identification circularity obstruction as a descriptive extension of the Route D Pattern-L enumeration without altering any upstream status; it does NOT claim P1 is false.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `claude-audit-loop-2026-05-21-obs-principle-row2`  (claude-opus; independence=cross_family)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** True — Leaf no_go with deps=[] is purely structural and self-contained. The load-bearing finding is that the trivial register-extension inclusion A_B subset A_{B union extra} gives Jones index 2^|extra| J-independent (so cannot equal W[J]); spectral subalgebras of D+J give maximal-abelian dim ratios that are also J-independent up to genericity; Pimsner-Popa state-dependent entropy requires admitting which state, and the natural Z[J]-construction reproduces the cumulant-generating-functional framing of the structural-reframing route. The cached runner (frontier_observable_principle_p1_bridge_jones_index_subfactor.py) verifies Pimsner-Popa multiplicativity at exact SymPy precision on several (n_i, k_i) triples (T2) and exhibits the decomposition. N1-N8 (Sec 5) PASS: N1 explicitly enumerates 5 distinct attack routes (trivial register inclusion, spectral-projector inclusion, Pimsner-Popa entropy, cumulant-route import, power-family), N2 collapses to one wall (physical identification of W[J] with log of canonical J-dependent index), N3 promotes 'canonical'/'standard'/'natural' to the explicit identification wall, N4 cites Route D and cumulant route as analogies (same residual) without retaining them as proof inputs, N5 explicitly scopes negation to 'this route does not close P1' (NOT 'P1 is false' nor 'subfactor theory is irrelevant'), N6 acknowledges canonical-inclusion ratification as future open path, N7 steelman names spectral-net + Pimsner-Popa entropy on a J-dependent state — correctly rebutted because such a state-construction reproduces the cumulant framing, N8 echoes operator-algebraic, information-theoretic, cumulant, tracial, extensivity, locality, and spectral prior routes with no retired wall available.
+- **rationale:** Leaf no_go ships audited_clean: (a) the load-bearing decomposition (II.alpha) universal multiplicativity vs (II.beta) identification is honest — Jones-index theorem and Pimsner-Popa multiplicativity are genuinely structural with no independence-of-functionals input, while the canonical-inclusion identification is the route's actual P1-equivalent admission, (b) the cached runner verifies the Pimsner-Popa multiplicativity numerically and the universal log-of-tensor-product identity at exact precision, (c) N1-N8 are present and pass — five distinct attack routes are individually closed against this admission (trivial register inclusion gives J-independent index, spectral projectors give maximal-abelian dim ratios, Pimsner-Popa entropy requires admitting which state, cumulant-route import reproduces the same wall, power-family F_p^p remains multiplicative not additive), walls collapse to one (canonical J-dependent inclusion identification), hidden walls promoted explicitly, witness residuals match Route D and cumulant route, rhetoric stays route-scoped without claiming global impossibility, canonical-inclusion ratification documented as forward path, the steelman 'spectral-net + state-dependent entropy gives canonical J-dependent inclusion' is correctly rebutted by exhibiting that the natural such state is Z[J]-based, reproducing the cumulant framing rather than supplying an independent derivation, and prior P1 walls have not been retired by mechanism applicable here. Residual risk: a future explicit construction of a canonical J-dependent inclusion from retained primitives such that the Jones index equals |det(D+J)| / |det D| as an identity would retire this wall, as the note documents in notes_for_re_audit_if_any.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21`

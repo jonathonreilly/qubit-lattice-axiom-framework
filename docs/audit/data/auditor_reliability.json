@@ -126,8 +126,8 @@
       "total_audits": 547,
       "verdict_changed_after_re_audit": 214,
       "verdict_counts": {
-        "audited_clean": 386,
-        "audited_conditional": 84,
+        "audited_clean": 387,
+        "audited_conditional": 83,
         "audited_decoration": 30,
         "audited_failed": 25,
         "audited_numerical_match": 9,

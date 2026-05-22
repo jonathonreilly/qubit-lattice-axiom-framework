@@ -40,7 +40,7 @@
   ],
   "cycles_detected": 292,
   "effective_status_counts": {
-    "audited_conditional": 90,
+    "audited_conditional": 89,
     "audited_failed": 25,
     "audited_numerical_match": 9,
     "audited_renaming": 15,
@@ -65,10 +65,10 @@
     "retained": 113,
     "retained_bounded": 378,
     "retained_no_go": 148,
-    "retained_pending_chain": 11,
+    "retained_pending_chain": 12,
     "unaudited": 1313
   },
-  "retained_pending_chain_count": 11,
+  "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [
     "alpha_s_derived_narrow_theorem_note_2026-05-10",
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
@@ -80,6 +80,7 @@
     "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "lattice_3d_nyquist_diffraction_note",
     "linear_response_second_order_kubo_note",
+    "luders_rule_from_composition_consistency_note_2026-05-20",
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20"
   ]
 }

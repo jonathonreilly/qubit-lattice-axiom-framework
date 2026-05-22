@@ -21,13 +21,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 113 |
 | **retained_no_go** | 148 |
 | **retained_bounded** | 378 |
-| _retained_pending_chain_ | 11 |
+| _retained_pending_chain_ | 12 |
 | open_gate | 15 |
 | unaudited | 1313 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -49,8 +49,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 5 |
-| `audited_clean` | 612 |
-| `audited_conditional` | 90 |
+| `audited_clean` | 613 |
+| `audited_conditional` | 89 |
 | `audited_decoration` | 33 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
@@ -73,7 +73,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 199 |
 | `leaf` | 894 |
 
-- **Retained pending chain closure:** 11
+- **Retained pending chain closure:** 12
 - **Citation cycles detected:** 292
 
 ### Runner classification (static heuristic)
@@ -458,6 +458,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5 | C | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `matter_inertial_closure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | C | - |
@@ -786,7 +787,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
-| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -7142,15 +7142,13 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 
 - **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the finite-region M_2(C) qubit-lattice claim that Bayes consistency plus the standard sequential-effect composition determines the Lüders conditioning rule for projection/Kraus records.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260521-222935-4c1da52b-luders_rule_from_composi-017`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Using the standard sequential-measurement composition M_{P,E}=P E P, Bayes consistency for all subsequent effects E forces sigma|_P = P sigma P / Tr(P sigma P).  _(class `A`)_
-- **chain closes:** False — The algebraic derivation of the Lüders form closes only after importing the standard sequential-effect composition M_{P,E}=P E P and the state/effect trace-pairing probability representation. The packet does not derive those imports from A1+A2, and the note itself lists sequential-effect composition as admitted.
-- **rationale:** The core step is an algebraic closure: once M_{P,E}=P E P and trace-pairing probabilities are granted, equality against all effects determines the posterior density matrix. However, the standard sequential-effect composition is explicitly admitted rather than derived in the restricted packet, and the only cited authority supplied is a meta framework note rather than a retained-grade theorem for this measurement-composition bridge. The uniqueness claim is therefore conditional on an unclosed bridge, not cleanly derived from A1+A2 alone.
-- **open / conditional deps cited:**
-  - `MINIMAL_AXIOMS_2026-05-20.md`
+- **claim_scope:** For finite qubit-lattice regions, ideal unrefined sharp projective outcomes P with Tr(σP)>0 update uniquely by the Lüders posterior under the ratified LSP-projective rule K_P=P.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:minimal_axioms_2026-05-20`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T150945Z-46780f09-luders_rule_from_composi-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given LSP-projective sequential composition M_{P,E}=PEP, Bayes consistency for every effect E forces Tr(σ|_P E)=Tr(PσP E)/Tr(σP), hence σ|_P=PσP/Tr(PσP).  _(class `A`)_
+- **chain closes:** True — Under LSP-projective, M_{P,E}=PEP is supplied as a framework-rule input for the scoped ideal projective case. Trace duality over all effects then fixes the posterior uniquely, and no additional blocker remains within that scope.
+- **rationale:** The earlier missing authority for M_{P,E}=PEP is supplied in the restricted packet by the ratified LSP-projective rule for ideal unrefined sharp projective measurements. With that input, the derivation is finite-dimensional trace-duality algebra: equality of conditional probabilities for all effects fixes the posterior density matrix, and U1/U2/U4 follow algebraically. The result is clean only at the bounded LSP-projective scope, not as a universal non-projective instrument-selection theorem.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

@@ -2,9 +2,9 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 10
-**Ready entries:** 8
-**Resolved/invalid entries:** 14
+**Live entries:** 9
+**Ready entries:** 7
+**Resolved/invalid entries:** 15
 **Retired entries:** 2
 
 Source sidecars:
@@ -16,16 +16,15 @@ Source sidecars:
 
 | # | ready | group | claim_id | current | source note | audit question |
 |---:|:---:|---|---|---|---|---|
-| 1 | Y | `r1_per_site_dim_two_consumers` | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site axiom-content reading plus the retained axiom_first_cl3_per_site_uniqueness chain, does the per-site Hilbert dim-two theorem close cleanly, or does the missing physical-Hilbert bridge remain? |
-| 2 | Y | `r1_per_site_dim_two_consumers` | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain? |
-| 3 | Y | `r1_per_site_dim_two_consumers` | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_conditional / audited_conditional | `docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-chirality result close, or does the missing physical-Hilbert-to-Pauli bridge remain? |
-| 4 | Y | `r1_per_site_dim_two_consumers` | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Pauli group order theorem close on the bounded per-site scope, or does another blocker remain? |
-| 5 | Y | `r1_per_site_dim_two_consumers` | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Q-integer-spectrum result close on the bounded per-site scope, or does the staggered-Dirac/Grassmann bridge admission remain load-bearing? |
-| 6 | Y | `r1_per_site_dim_two_consumers` | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain? |
-| 7 | Y | `su3_toolkit_algebra` | `cl3_color_automorphism_theorem` | bounded_theorem / audited_clean / retained_bounded | `docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md` | Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout? |
-| 8 | Y | `su3_toolkit_algebra` | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md` | Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching? |
-| 9 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? |
-| 10 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? |
+| 1 | Y | `r1_per_site_dim_two_consumers` | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain? |
+| 2 | Y | `r1_per_site_dim_two_consumers` | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_conditional / audited_conditional | `docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-chirality result close, or does the missing physical-Hilbert-to-Pauli bridge remain? |
+| 3 | Y | `r1_per_site_dim_two_consumers` | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/PAULI_GROUP_ORDER_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Pauli group order theorem close on the bounded per-site scope, or does another blocker remain? |
+| 4 | Y | `r1_per_site_dim_two_consumers` | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Q-integer-spectrum result close on the bounded per-site scope, or does the staggered-Dirac/Grassmann bridge admission remain load-bearing? |
+| 5 | Y | `r1_per_site_dim_two_consumers` | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_conditional / audited_conditional | `docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md` | Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain? |
+| 6 | Y | `su3_toolkit_algebra` | `cl3_color_automorphism_theorem` | bounded_theorem / audited_clean / retained_bounded | `docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md` | Does the algebraic SU(3) embedding/channel-count scope qualify as positive_theorem, excluding physical color and EW readout? |
+| 7 | Y | `su3_toolkit_algebra` | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md` | Does the finite Hilbert-Schmidt color projection identity qualify as positive_theorem without promoting kappa_EW matching? |
+| 8 |  | `lsp_projective_direct_luders` | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / unaudited / unaudited | `docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md` | With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it? |
+| 9 |  | `lsp_projective_born_chain` | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | bounded_theorem / unaudited / unaudited | `docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` | After the direct Lüders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed? |
 
 ## Resolved Or Invalid
 
@@ -45,6 +44,7 @@ Source sidecars:
 | 12 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
 | 13 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem / audited_clean / retained_bounded |
 | 14 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
+| 15 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audit_in_progress / audit_in_progress |
 
 ## Retired Dispatch Targets
 

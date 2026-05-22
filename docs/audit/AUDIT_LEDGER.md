@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 118 |
 | **retained_no_go** | 148 |
 | **retained_bounded** | 364 |
-| _retained_pending_chain_ | 13 |
+| _retained_pending_chain_ | 14 |
 | open_gate | 14 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 609 |
+| `audited_clean` | 610 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 70 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1541 |
+| `unaudited` | 1540 |
 
 | claim_type | count |
 |---|---:|
@@ -70,7 +70,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 199 |
 | `leaf` | 894 |
 
-- **Retained pending chain closure:** 13
+- **Retained pending chain closure:** 14
 - **Citation cycles detected:** 292
 
 ### Runner classification (static heuristic)
@@ -440,6 +440,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_beta_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | claude-opus | C | - |
@@ -6917,6 +6918,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The bounded table reports a total slope range of about 2.02, from +0.58 to -1.43, across the enumerated kH sweep, so the fitted internal slope is strongly k-dependent on this setup.  _(class `C`)_
 - **chain closes:** True — The current cache is SHA-pinned to the runner, completed with exit_code=0, and its stdout reproduces the source slope table and kH=5.0 fit failures. The runner computes the finite DAG propagation/Kubo values and log-log fits over the enumerated grid rather than importing the reported slopes; closure is only for that bounded internal numerical sweep.
 - **rationale:** The finite numerical artifact closes: the source table matches the completed cache, and the runner source constructs the Fam1 DAGs, sweeps kH/seeds/b, computes Kubo responses, and fits slopes without hard-coding the table values. I count the runner as a C-style bounded computation rather than the mechanical D label because the scoped claim is internal runner output, not an external comparator match. Clean status is granted only under the narrowed scope; the source's mechanism, periodicity, eikonal, and physical gravitational-response language remains outside the audited claim.
+- **auditor confidence:** high
+
+### `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`
+
+- **Note:** [`LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md`](../../docs/LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact structural eigenvalue ratio 1:(-3) on the 6-state Sym² and 2-state Anti² LH-doublet sub-decompositions, conditional only on the cited graph-first multiplicities and tracelessness.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T171801Z-1a7a2bd7-lh_doublet_eigenvalue_ra-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Tracelessness over the LH-doublet sector gives 6α + 2β = 0, so β = -3α and the Sym²:Anti² ratio is 1:(-3).  _(class `A`)_
+- **chain closes:** True — The ratio follows by algebra from the retained graph-first 6 and 2 multiplicities plus the stated tracelessness equation. No staggered-Dirac realization, lattice-action quantity, normalization choice, or SM hypercharge identification is load-bearing for this scoped ratio claim.
+- **rationale:** The load-bearing step is a genuine class (A) algebraic closure over retained-grade graph-first inputs: 6α + 2β = 0 forces β/α = -3. The runner source confirms exact rational arithmetic and checks the stated boundary, while not importing staggered-Dirac realization machinery or external observational comparators. The narrow parent note is not itself retained, but this proof-walk does not depend on that parent as a status-bearing premise; it reuses only the algebraic result and retained graph-first multiplicities within the restricted scope.
 - **auditor confidence:** high
 
 ### `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`

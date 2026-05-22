@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 879,
     "high": 22,
-    "leaf": 319,
+    "leaf": 318,
     "medium": 97
   },
   "cycle_break_target_count": 331,
@@ -39984,32 +39984,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_su3_integration_note",
-        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "graph_first_selector_derivation_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -49092,6 +49066,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 4,
-  "total_pending": 1317
+  "ready_count": 3,
+  "total_pending": 1316
 }

@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-08
 **Status:** proposed_retained control-ladder hardening on the Fam1/seed1 fine-H continuation
+**Primary runner:** [`scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py)
 
 This note upgrades the earlier one-strength `Fam1`, seed `1`,
 `H = 0.25` continuation by adding the same-resolution control stack:
@@ -74,6 +75,7 @@ So the exact retained claim is:
 
 ## Artifact chain
 
+- [`scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed1_control_batch.py)
 - [`scripts/wave_direct_dm_h025_control_batch.py`](../scripts/wave_direct_dm_h025_control_batch.py)
 - [`scripts/wave_direct_dm_h025_control_freeze.py`](../scripts/wave_direct_dm_h025_control_freeze.py)
 - [`logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed1.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed1.txt)

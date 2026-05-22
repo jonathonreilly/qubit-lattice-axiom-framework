@@ -3,26 +3,26 @@ runner: scripts/audit_packet_script_deps.py
 runner_sha256: 4ed485227c7bbcc616e202f441499ca7a90c7f869c7962ec297297972f680c01
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.21
+elapsed_sec: 6.59
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT PACKET SCRIPT-DEP RESOLVER
 ==============================================================================
 
-Total claims in ledger: 2229
-Pending audits in queue: 1234
+Total claims in ledger: 2370
+Pending audits in queue: 1320
 
-Claims with runner path: 1958
-Claims with no runner declared: 266
+Claims with runner path: 2055
+Claims with no runner declared: 310
 Claims whose runner file is missing: 5
 
-Pending claims with helper imports (would trigger class-C bug): 83 / 1100
+Pending claims with helper imports (would trigger class-C bug): 66 / 1172
 
 Top 20 most-imported helper scripts:
-    40x  scripts/minimal_source_driven_field_probe.py
+    41x  scripts/minimal_source_driven_field_probe.py
     27x  scripts/numpy_replay_bootstrap.py
-    23x  scripts/generative_causal_dag_interference.py
+    24x  scripts/generative_causal_dag_interference.py
     19x  scripts/two_body_momentum_harness.py
     14x  scripts/gate_b_grown_joint_package.py
     14x  scripts/causal_field_gravity.py
@@ -32,34 +32,22 @@ Top 20 most-imported helper scripts:
     11x  scripts/signed_gravity_aps_boundary_index_probe.py
     10x  scripts/gap_topological_asymmetry_layernorm_combo.py
     10x  scripts/frontier_teleportation_native_record_apparatus.py
-     9x  scripts/persistent_object_compact_shared.py
      9x  scripts/persistent_object_adaptive_readout_probe.py
-     8x  scripts/mirror_born_audit.py
+     9x  scripts/persistent_object_compact_shared.py
      8x  scripts/stochastic_collapse_born_calibration.py
      8x  scripts/central_band_layernorm_combo.py
      8x  scripts/quasi_persistent_relaunch_probe.py
      7x  scripts/density_matrix_analysis.py
      7x  scripts/two_register_decoherence.py
+     7x  scripts/persistent_object_compact_inertial_probe.py
 
 Sample claims that would trigger class-C from missing helpers:
-  - adaptive_coevolving_geometry_no_go
-      primary: scripts/node_placement_emergence.py
-      helpers: ['scripts/generative_causal_dag_interference.py']
-  - alternative_coupled_field_probe_note
-      primary: scripts/alternative_coupled_field_probe.py
-      helpers: ['scripts/minimal_source_driven_field_probe.py']
   - antigravity_sign_selector_boundary_note
       primary: scripts/gravity_signed_sector_harness.py
       helpers: ['scripts/numpy_replay_bootstrap.py']
   - asymmetry_persistence_born_note
       primary: scripts/asymmetry_persistence_born_calibration.py
       helpers: ['scripts/asymmetry_persistence_collapse_pilot.py', 'scripts/asymmetry_persistence_joint_card.py', 'scripts/asymmetry_persistence_pilot.py', 'scripts/gap_topological_asymmetry.py', 'scripts/gap_topological_asymmetry_layernorm_combo.py']
-  - asymmetry_persistence_joint_card_note
-      primary: scripts/asymmetry_persistence_joint_card.py
-      helpers: ['scripts/asymmetry_persistence_pilot.py', 'scripts/gap_topological_asymmetry.py', 'scripts/gap_topological_asymmetry_layernorm_combo.py']
-  - asymmetry_persistence_mass_scaling_note
-      primary: scripts/asymmetry_persistence_mass_scaling.py
-      helpers: ['scripts/asymmetry_persistence_joint_card.py', 'scripts/asymmetry_persistence_pilot.py', 'scripts/gap_topological_asymmetry.py', 'scripts/gap_topological_asymmetry_layernorm_combo.py']
   - audited_symmetry_synthesis_note
       primary: scripts/mirror_2d_validation.py
       helpers: ['scripts/mirror_born_audit.py']
@@ -72,6 +60,18 @@ Sample claims that would trigger class-C from missing helpers:
   - composite_source_additivity_note
       primary: scripts/composite_source_additivity_harness.py
       helpers: ['scripts/two_body_momentum_harness.py']
+  - directional_b_geometry_normalized_holdout_transfer_mass5_note
+      primary: scripts/directional_b_geometry_normalized_holdout_transfer.py
+      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
+  - directional_b_geometry_normalized_holdout_transfer_note
+      primary: scripts/directional_b_geometry_normalized_holdout_transfer.py
+      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
+  - directional_b_geometry_normalized_overlap_map_note
+      primary: scripts/directional_b_geometry_normalized_overlap_map.py
+      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_geometry_normalized_holdout_transfer.py', 'scripts/directional_b_overlap_onset_local_density_compare.py', 'scripts/directional_b_overlap_onset_transfer_holdout.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
+  - directional_b_geometry_normalized_overlap_subcritical_n12_note
+      primary: scripts/directional_b_geometry_normalized_overlap_map.py
+      helpers: ['scripts/density_matrix_analysis.py', 'scripts/directional_b_geometry_normalized_holdout_transfer.py', 'scripts/directional_b_overlap_onset_local_density_compare.py', 'scripts/directional_b_overlap_onset_transfer_holdout.py', 'scripts/directional_b_readout_compare.py', 'scripts/generative_causal_dag_interference.py', 'scripts/gravity_observable_readout_scaling_compare.py', 'scripts/gravity_packet_local_action_flow_transfer_compare.py', 'scripts/scaling_testbench.py', 'scripts/two_register_decoherence.py']
 
 Wrote docs/audit/data/audit_packet_script_deps.json
 
@@ -86,7 +86,7 @@ When assembling the audit packet for claim_id X:
   4. NEW: Include all transitive helper scripts named in
      audit_packet_script_deps.json[X]['helper_runner_paths']
 
-This change would prevent 83 pending audits from
+This change would prevent 66 pending audits from
 hitting the class-C 'missing dependency' verdict due to packet
 incompleteness alone.
 

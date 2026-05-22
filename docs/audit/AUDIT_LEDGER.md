@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 365 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1318 |
+| unaudited | 1319 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 94 |
-| ~~audited_failed~~ | 26 |
+| ~~audited_failed~~ | 25 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -49,10 +49,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 612 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 28 |
-| `audited_failed` | 70 |
+| `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1542 |
+| `unaudited` | 1543 |
 
 | claim_type | count |
 |---|---:|
@@ -863,7 +863,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_largen_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
-| `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | weak | codex-gpt-5 | A | - |
 | `critical_exponents_topology_note_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
@@ -2131,19 +2130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Landau identity S_op^2 = 4I - [Ã_0, Ã_1][B̃_0, B̃_1], together with ||[X,Y]|| <= 2 for self-adjoint involutions, gives ||S_op|| <= 2√2.  _(class `A`)_
 - **chain closes:** True — The classical proof is a finite sign enumeration and the quantum proof is an exact operator identity plus standard norm inequalities under the stated tensor-product involution hypotheses. The runner source performs genuine symbolic and numerical checks rather than merely printing pass lines.
 - **rationale:** The load-bearing steps are algebraic identities over explicitly stated inputs, not fitted numerical matches or definition substitutions. The runner independently enumerates the classical cases, verifies the Landau identity symbolically, checks the commutator norm behavior, and computes the Bell-state saturation witness. The note's broader references to framework Hamiltonian saturation, G normalization, and continuum scaling are explicitly excluded from scope.
-- **auditor confidence:** high
-
-### `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`
-
-- **Note:** [`CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Standalone 3x3 circulant parity identities and the sign of Im[(K_01)^2] for the stated S and P23 conventions.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-judicial-019e1297-2535-75b3-a7e0-cdbe0558ac35`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** So K_{01} = c_even + i c_odd. Hence Im[(K_{01})^2] = 2 c_even c_odd.  _(class `A`)_
-- **chain closes:** False — The source note states S e_k = e_{k+1 mod 3}, which under standard left matrix action on column basis vectors gives S_{01}=0 and (S^2)_{01}=1, hence K_{01}=c_even - i c_odd and Im[(K_{01})^2] = -2 c_even c_odd. The runner and proof use the opposite matrix orientation, so the advertised plus-sign CP-tensor formula is not closed as written even though the parity identities and vanishing/nonvanishing up to sign remain algebraic.
-- **rationale:** The source note states S e_k = e_{k+1 mod 3}, which under standard left matrix action on column basis vectors gives S_{01}=0 and (S^2)_{01}=1, hence K_{01}=c_even - i c_odd and Im[(K_{01})^2] = -2 c_even c_odd. The runner and proof use the opposite matrix orientation, so the advertised plus-sign CP-tensor formula is not closed as written even though the parity identities and vanishing/nonvanishing up to sign remain algebraic.
 - **auditor confidence:** high
 
 ### `circulant_response_master_identity_narrow_theorem_note_2026-05-02`

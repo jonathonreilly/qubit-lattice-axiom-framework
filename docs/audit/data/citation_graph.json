@@ -44206,7 +44206,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "e8bc7b792fe0576a27daea1cf8de7151a41b80b6133254c5777f05f3561c817f",
+      "note_hash": "40ad85cfd965404540416f582961c955643b11b47a7d9e0b1c5f5695f039fd9e",
       "path": "docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_circulant_parity_cp_tensor_narrow.py",
       "title": "Hermitian Circulant Parity Decomposition + CP-Tensor Narrow Theorem"

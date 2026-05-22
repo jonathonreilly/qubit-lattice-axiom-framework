@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 110 |
 | **retained_no_go** | 142 |
 | **retained_bounded** | 375 |
-| _retained_pending_chain_ | 8 |
+| _retained_pending_chain_ | 7 |
 | open_gate | 16 |
-| unaudited | 1315 |
+| unaudited | 1316 |
 | audit_in_progress | 1 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 604 |
+| `audited_clean` | 603 |
 | `audited_conditional` | 89 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1538 |
+| `unaudited` | 1539 |
 
 | claim_type | count |
 |---|---:|
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 1205 |
-| `high` | 45 |
+| `critical` | 1204 |
+| `high` | 46 |
 | `medium` | 208 |
 | `leaf` | 893 |
 
-- **Retained pending chain closure:** 8
+- **Retained pending chain closure:** 7
 - **Citation cycles detected:** 195
 
 ### Runner classification (static heuristic)
@@ -154,7 +154,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `atomic_rydberg_dependency_firewall_note_2026-04-27` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | D | - |
-| `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | _retained_pending_chain_ | judicial_review | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -1435,23 +1434,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation.
 - **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, positive_theorem, class D). Vote breakdown: J1: first / audited_clean / positive_theorem / class D; J2: first / audited_clean / positive_theorem / class D; J3: first / audited_clean / positive_theorem / class D; J4: first / audited_clean / positive_theorem / class D; J5: first / audited_clean / positive_theorem / class D. Majority rationale: J1: The source proves a scoped dependency-firewall theorem: direct alpha_EM(M_Z) substitution misses the textbook Rydberg scale by about 15%, and the repo still lacks retained m_e, alpha(0)/QED running, and the physical-unit atomic limit. That is a clean positive theorem about the current dependency boundary, with a load-bearing external comparator check, not a retained all-routes no-go. | J2: The source proves an exact current-state dependency firewall: direct alpha_EM(M_Z) substitution misses by 15.21%, while m_e, alpha(0)/QED running, and the physical-unit atomic limit remain unretained. That cleanly supports the positive theorem tuple without claiming hydrogen closure. | J3: The source proves a current-repo dependency firewall: direct alpha_EM(M_Z) substitution misses by about 15%, and retained m_e, alpha(0)/QED running, and the physical-unit NR limit are absent. That is a clean positive theorem about dependency status, with the load-bearing step in repo-state/dependency checks, not an exhaustive no-go theorem. | J4: The source proves a scoped dependency firewall: direct alpha_EM(M_Z) substitution misses the Rydberg scale by 15.21%, and current Lane 2 lacks retained m_e, alpha(0), and the physical-unit NR Coulomb bridge. That is clean as a positive dependency-accounting theorem with an external comparator/status load-bearing step, not a class-A algebraic no-go. | J5: The source proves a positive dependency-accounting theorem: in the current Lane 2 state, direct alpha_EM(M_Z) substitution is blocked unless m_e, alpha(0)/running, and the physical-unit atomic limit are retained. It explicitly leaves future closure open, so it is not a hard no_go. The runner closes this as D-class repo-state/dependency firewall evidence, not an A-class derivation.
 - **auditor confidence:** judicial_panel_majority
-
-### `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29`
-
-- **Note:** [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Physical-Cl(3)-only U1-U3: the abstract Cl(3,0) complex representation classification into the two 2-dimensional chirality irreps and their finite-dimensional direct sums, excluding the U4 physical per-site Hilbert-space bridge.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`)
-- **auditor:** `codex-judicial-panel-20260521-axiom_first_cl3_per_site_uniqueness_-j2`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** The complexification splits as Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with central pseudoscalar omega acting by +/- i; hence Artin-Wedderburn/Schur gives exactly two faithful complex irreducible 2-dimensional representations and finite-dimensional direct-sum decomposition into those chiralities.  _(class `A`)_
-- **chain closes:** True — The narrowed U1-U3 claim is pure finite-dimensional Clifford-algebra representation theory. The source note explicitly removes U4 and the physical per-site Hilbert-space bridge from scope, and the one-hop narrow dependencies in the packet supply the complexification split, faithful-irrep dimension-two readout, and Pauli/chirality uniqueness. The runner checks are supporting A-class algebraic exhibits. No missing physical bridge remains inside the audited scope, so the conditional verdict is too conservative for this packet.
-
-Five-judge panel breakdown: ('first_audit', 'audited_clean', 'bounded_theorem', 'A'):1; ('first', 'audited_clean', 'bounded_theorem', 'A'):4.
-- **rationale:** The narrowed U1-U3 claim is pure finite-dimensional Clifford-algebra representation theory. The source note explicitly removes U4 and the physical per-site Hilbert-space bridge from scope, and the one-hop narrow dependencies in the packet supply the complexification split, faithful-irrep dimension-two readout, and Pauli/chirality uniqueness. The runner checks are supporting A-class algebraic exhibits. No missing physical bridge remains inside the audited scope, so the conditional verdict is too conservative for this packet.
-
-Five-judge panel breakdown: ('first_audit', 'audited_clean', 'bounded_theorem', 'A'):1; ('first', 'audited_clean', 'bounded_theorem', 'A'):4.
-- **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`
 

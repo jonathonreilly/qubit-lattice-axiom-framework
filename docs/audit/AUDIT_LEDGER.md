@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 373 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1307 |
+| unaudited | 1306 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 98 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 626 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 98 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1531 |
+| `unaudited` | 1530 |
 
 | claim_type | count |
 |---|---:|
@@ -751,6 +751,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `causal_field_portability_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | B | - |
 | `charged_lepton_koide_note_2026-04-18` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `complex_action_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
@@ -2485,6 +2486,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The algebraic implication from H1+H2 to the stated finite-block bounds closes by spectral decomposition, Cauchy-Schwarz, and trace-distance control. The packet does not derive H1 or H2, so no unconditional spatial clustering claim closes.
 - **rationale:** The runner performs real finite-dimensional algebraic checks and a no-gap counterexample, but it does not construct T_x or derive Δ_x>0 from Cl(3) on Z^3. The note is honest that H1 and H2 are open inputs, and the only provided cited authority supplies the minimal framework rather than the missing slab-transfer construction or gap theorem. The retained safe claim is the conditional spectral bridge, not the parent row's unconditional spatial L2 clustering.
 - **auditor confidence:** high
+
+### `coarse_grained_exterior_law_helper_note_2026-04-14`
+
+- **Note:** [`COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded helper-module claim that the supplied runner computes a shell-averaged radial-harmonic a/r projection of the finite-rank exterior field and reports vacuum-close coarse-grained residuals on the scanned radii.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T233928Z-f90684b7-coarse_grained_exterior_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The helper takes the exact finite-rank exterior field phi(x) and applies shell-averaging plus radial-harmonic projection phi_eff(r) := shell_average(phi, r) -> a/r, with a selected by the radial scan.  _(class `C`)_
+- **chain closes:** False — The primary runner source does implement the projection and Einstein-tensor residual scan, but its load-bearing field construction is opaque because it dynamically imports scripts/frontier_same_source_metric_ansatz_scan.py and scripts/frontier_finite_rank_gravity_residual.py without those helper sources in the packet. The finite-rank authority is retained_bounded, but the runner artifact is incomplete for verifying the actual imported computations.
+- **rationale:** The note is bounded and does not overclaim physical necessity or full GR closure. The runner performs nontrivial numerical computation rather than printing constants: it shell-averages phi, least-squares fits a/r, constructs direct and coarse metrics, and evaluates finite-difference Einstein-tensor residuals. However, the runner depends on dynamically loaded helper scripts not included in the restricted packet, including the finite-rank field construction and the local O_h grid builder, so the load-bearing compute chain cannot be fully inspected from the provided sources. This is an artifact-completeness defect rather than a substantive failure of the stated bounded claim.
+- **auditor confidence:** medium
 
 ### `complex_action_note`
 

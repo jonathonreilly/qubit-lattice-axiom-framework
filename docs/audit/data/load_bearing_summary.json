@@ -137,6 +137,12 @@
       "transitive_descendants": 1046
     },
     {
+      "claim_id": "cpt_exact_note",
+      "criticality": "critical",
+      "load_bearing_score": 29.46,
+      "transitive_descendants": 995
+    },
+    {
       "claim_id": "left_handed_charge_matching_note",
       "criticality": "critical",
       "load_bearing_score": 28.553,
@@ -156,12 +162,6 @@
     },
     {
       "claim_id": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
-      "criticality": "critical",
-      "load_bearing_score": 28.448,
-      "transitive_descendants": 987
-    },
-    {
-      "claim_id": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
       "criticality": "critical",
       "load_bearing_score": 28.448,
       "transitive_descendants": 987

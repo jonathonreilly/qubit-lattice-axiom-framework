@@ -63,10 +63,10 @@
     "retained": 118,
     "retained_bounded": 364,
     "retained_no_go": 148,
-    "retained_pending_chain": 13,
-    "unaudited": 1317
+    "retained_pending_chain": 14,
+    "unaudited": 1316
   },
-  "retained_pending_chain_count": 13,
+  "retained_pending_chain_count": 14,
   "retained_pending_chain_examples": [
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
@@ -77,6 +77,7 @@
     "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
     "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
     "lattice_3d_nyquist_diffraction_note",
+    "lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10",
     "linear_response_second_order_kubo_note",
     "luders_rule_from_composition_consistency_note_2026-05-20",
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",

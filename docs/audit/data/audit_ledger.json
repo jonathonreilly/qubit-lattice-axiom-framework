@@ -189774,22 +189774,41 @@
       "verdict_rationale": null
     },
     "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T00:11:15.615391+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-powers_uhf_tracial_uniqu-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mathematical argument is the standard UHF tracial-uniqueness application, but the restricted packet includes only MINIMAL_AXIOMS_2026-05-20.md as a cited authority and that authority is marked meta rather than retained-grade. The packet also imports named standard UHF and inductive-limit theorems rather than providing retained upstream audit rows for them.",
       "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "For the qubit-lattice quasi-local C*-algebra obtained as the UHF inductive limit of finite tensor products of M_2(C) over finite subsets of Z^3, the normalized finite-region traces define the unique tracial state.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T00:11:15.615391+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -189797,20 +189816,22 @@
         "minimal_axioms_2026-05-20"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Any tracial state on the inductive-limit algebra restricts on each finite region A_Lambda to the unique normalized matrix trace, hence agrees with the compatible inductive-limit trace on the dense local subalgebras and therefore on A.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "507875b9097c5fde6d7b77d268bbd3af26b117ac7f0019e3a35e9a55cc4ff065",
       "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade upstream authority for the A1+A2 qubit-lattice UHF construction, or mark the standard UHF tracial-uniqueness import as an admitted external theorem under the audit policy.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
@@ -189824,7 +189845,7 @@
       "runner_path": null,
       "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic/operator-algebra closure once the qubit-lattice algebra is accepted as the UHF algebra of type 2^infinity and the standard UHF tracial uniqueness theorem is admitted. However, the only provided upstream framework authority is explicitly effective_status meta, not one of retained, retained_no_go, or retained_bounded. The source note also relies on named standard-math imports outside the restricted cited-authority packet, so the audit cannot mark the chain clean from the provided inputs alone."
     },
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
       "audit_date": "2026-05-21T22:06:45.063578+00:00",

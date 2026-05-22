@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 375 |
 | _retained_pending_chain_ | 10 |
 | open_gate | 16 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 223 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 90 |
+| ~~audited_conditional~~ | 91 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 607 |
-| `audited_conditional` | 90 |
+| `audited_conditional` | 91 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -787,6 +787,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `poisson_self_gravity_mechanism_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `quark_bimodule_norm_existence_theorem_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8310,6 +8311,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the qubit-lattice quasi-local C*-algebra obtained as the UHF inductive limit of finite tensor products of M_2(C) over finite subsets of Z^3, the normalized finite-region traces define the unique tracial state.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-000836-a4678e20-powers_uhf_tracial_uniqu-006`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Any tracial state on the inductive-limit algebra restricts on each finite region A_Lambda to the unique normalized matrix trace, hence agrees with the compatible inductive-limit trace on the dense local subalgebras and therefore on A.  _(class `A`)_
+- **chain closes:** False — The mathematical argument is the standard UHF tracial-uniqueness application, but the restricted packet includes only MINIMAL_AXIOMS_2026-05-20.md as a cited authority and that authority is marked meta rather than retained-grade. The packet also imports named standard UHF and inductive-limit theorems rather than providing retained upstream audit rows for them.
+- **rationale:** The load-bearing step is an algebraic/operator-algebra closure once the qubit-lattice algebra is accepted as the UHF algebra of type 2^infinity and the standard UHF tracial uniqueness theorem is admitted. However, the only provided upstream framework authority is explicitly effective_status meta, not one of retained, retained_no_go, or retained_bounded. The source note also relies on named standard-math imports outside the restricted cited-authority packet, so the audit cannot mark the chain clean from the provided inputs alone.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `pre_record_reference_state_tracial_derivation_note_2026-05-20`

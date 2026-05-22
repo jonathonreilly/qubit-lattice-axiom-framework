@@ -18,7 +18,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 119 |
+| **retained** | 120 |
 | **retained_no_go** | 150 |
 | **retained_bounded** | 370 |
 | _retained_pending_chain_ | 15 |
@@ -27,7 +27,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 620 |
-| `audited_conditional` | 89 |
+| `audited_clean` | 621 |
+| `audited_conditional` | 88 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
@@ -498,6 +498,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | weak | claude-opus | C | - |
 | `pauli_group_order_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_v2_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -792,7 +793,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | A | - |
-| `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_cycle_frame_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7861,15 +7861,13 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 
 - **Note:** [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
 - **claim_type:** `positive_theorem`
-- **claim_scope:** Audited the claim that the framework per-site Cl(3) Hilbert is uniquely the Pauli C^2 module and hence carries only the j=1/2 su(2) spin irrep.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T170940Z-5439c7ed-per_site_su2_spin_half_t-01`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** With S_i = sigma_i/2, the Pauli commutator and square identities give [S_i,S_j]=i epsilon_ijk S_k and S^2=(3/4)I, so the 2-dimensional Pauli module is the j=1/2 su(2) irrep.  _(class `A`)_
-- **chain closes:** False — The Pauli-to-su(2) computation closes algebraically, but the restricted cited authority does not establish the load-bearing identification of the physical per-site Hilbert with a unique positive-chirality Pauli C^2 module. The cited note explicitly narrows U4, the physical per-site Hilbert bridge, out of scope and says there are two non-isomorphic chirality irreps.
-- **rationale:** The runner genuinely verifies Pauli algebra, the su(2) commutator, Casimir, spectrum, and scalar commutant, so the representation-theoretic computation is class A. However, the source note overstates its one-hop dependency: the cited authority is retained_bounded only for physical-Cl(3)-only U1-U3, while per-site Hilbert dimension/realization is explicitly moved to another gate not provided in this packet. The uniqueness claim is also too broad as stated because the cited authority records two chirality irreps, with positive chirality only a package convention.
-- **open / conditional deps cited:**
-  - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
+- **claim_scope:** Given the k=1 qubit-per-site reading H_x = C² and the retained Pauli/Cl(3) per-site representation, the per-site generators S_i = σ_i/2 form the unique spin-1/2 su(2) irrep on each site.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T224120Z-adef2375-per_site_su2_spin_half_t-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** With S_i = σ_i / 2, the Pauli matrices satisfy [S_i, S_j] = i ε_{ijk} S_k and S² = (3/4)I, so the irreducible 2-dimensional per-site module has j = 1/2.  _(class `A`)_
+- **chain closes:** True — The algebraic su(2), Casimir, spectrum, and commutant checks close directly in the Pauli representation. The previously missing physical-Hilbert bridge is supplied in the allowed targeted context by A1/R1's explicit k=1 qubit-per-site selection, so H_x = C² is no longer open for this audit scope.
+- **rationale:** The runner genuinely instantiates Pauli matrices and computes the commutators, Casimir, S_z spectrum, and scalar commutant rather than merely printing constants. The cited Cl(3) authority is retained_bounded for the Pauli/chirality representation content, and the allowed k=1 qubit-per-site context supplies the physical per-site Hilbert identification. With that targeted premise admitted, the note is an algebraic closure over retained-grade inputs, not a numerical match or definition substitution.
 - **auditor confidence:** high
 
 ### `persistent_inertial_object_probe_note`

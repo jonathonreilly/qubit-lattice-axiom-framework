@@ -177470,7 +177470,7 @@
       "verdict_rationale": null
     },
     "per_site_su2_spin_half_theorem_note_2026-05-02": {
-      "audit_date": "2026-05-22T17:10:02.417358+00:00",
+      "audit_date": "2026-05-22T22:41:41.701965+00:00",
       "audit_state_snapshot": {
         "criticality": "leaf",
         "dep_claim_scope": {
@@ -177489,21 +177489,21 @@
         "runner_hash": "167bf97ecb99806bc2524798e9d6b589e828f8cb0b41707319bc7f75fac43dc3",
         "transitive_descendants": 2
       },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170940Z-5439c7ed-per_site_su2_spin_half_t-01",
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T224120Z-adef2375-per_site_su2_spin_half_t-01",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The Pauli-to-su(2) computation closes algebraically, but the restricted cited authority does not establish the load-bearing identification of the physical per-site Hilbert with a unique positive-chirality Pauli C^2 module. The cited note explicitly narrows U4, the physical per-site Hilbert bridge, out of scope and says there are two non-isomorphic chirality irreps.",
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic su(2), Casimir, spectrum, and commutant checks close directly in the Pauli representation. The previously missing physical-Hilbert bridge is supplied in the allowed targeted context by A1/R1's explicit k=1 qubit-per-site selection, so H_x = C\u00b2 is no longer open for this audit scope.",
       "claim_id": "per_site_su2_spin_half_theorem_note_2026-05-02",
-      "claim_scope": "Audited the claim that the framework per-site Cl(3) Hilbert is uniquely the Pauli C^2 module and hence carries only the j=1/2 su(2) spin irrep.",
+      "claim_scope": "Given the k=1 qubit-per-site reading H_x = C\u00b2 and the retained Pauli/Cl(3) per-site representation, the per-site generators S_i = \u03c3_i/2 form the unique spin-1/2 su(2) irrep on each site.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": "2026-05-22T17:10:02.417358+00:00",
+      "claim_type_last_reviewed": "2026-05-22T22:41:41.701965+00:00",
       "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
@@ -177512,22 +177512,20 @@
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained",
       "load_bearing_score": 2.085,
-      "load_bearing_step": "With S_i = sigma_i/2, the Pauli commutator and square identities give [S_i,S_j]=i epsilon_ijk S_k and S^2=(3/4)I, so the 2-dimensional Pauli module is the j=1/2 su(2) irrep.",
+      "load_bearing_step": "With S_i = \u03c3_i / 2, the Pauli matrices satisfy [S_i, S_j] = i \u03b5_{ijk} S_k and S\u00b2 = (3/4)I, so the irreducible 2-dimensional per-site module has j = 1/2.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "d0d7638afb212531bbc0474d17b5822785fc916e59783c593954542fc87d8d33",
       "note_path": "docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide the retained staggered-Dirac/Grassmann or equivalent per-site-Hilbert realization bridge, and narrow the claim to a chosen chirality or prove why the framework selects positive chirality.",
-      "open_dependency_paths": [
-        "docs/AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md"
-      ],
+      "notes_for_re_audit_if_any": "Second auditor should confirm that the allowed targeted k=1/R1 context is treated as admissible load-bearing framework authority for this re-audit scope.",
+      "open_dependency_paths": [],
       "previous_audits": [
         {
           "archived_at": "2026-05-22T15:08:24.496674+00:00",
@@ -177593,7 +177591,7 @@
       "runner_path": "scripts/per_site_su2_spin_half_check.py",
       "title": "Per-Site Cl(3) Hilbert Carries the Unique j = 1/2 Spin Irrep of su(2)",
       "transitive_descendants": 2,
-      "verdict_rationale": "The runner genuinely verifies Pauli algebra, the su(2) commutator, Casimir, spectrum, and scalar commutant, so the representation-theoretic computation is class A. However, the source note overstates its one-hop dependency: the cited authority is retained_bounded only for physical-Cl(3)-only U1-U3, while per-site Hilbert dimension/realization is explicitly moved to another gate not provided in this packet. The uniqueness claim is also too broad as stated because the cited authority records two chirality irreps, with positive chirality only a package convention."
+      "verdict_rationale": "The runner genuinely instantiates Pauli matrices and computes the commutators, Casimir, S_z spectrum, and scalar commutant rather than merely printing constants. The cited Cl(3) authority is retained_bounded for the Pauli/chirality representation content, and the allowed k=1 qubit-per-site context supplies the physical per-site Hilbert identification. With that targeted premise admitted, the note is an algebraic closure over retained-grade inputs, not a numerical match or definition substitution."
     },
     "periodic_2d_wraparound_fix_note_2026-04-11": {
       "audit_date": null,

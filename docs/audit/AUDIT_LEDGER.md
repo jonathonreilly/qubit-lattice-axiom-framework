@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 11 |
 | open_gate | 15 |
-| unaudited | 1317 |
+| unaudited | 1316 |
 | meta | 222 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 88 |
+| ~~audited_conditional~~ | 89 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 616 |
-| `audited_conditional` | 88 |
+| `audited_conditional` | 89 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1539 |
+| `unaudited` | 1538 |
 
 | claim_type | count |
 |---|---:|
@@ -781,6 +781,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | claude-opus | exact_algebraic_identity_on_admitted_carrier | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_native_zero_section_closure_route_note_2026-04-24` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -6183,6 +6184,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Exactness identifies the Q and delta kernels but does not choose their zero section; the missing statement is a retained canonical-section / primitive-readout theorem.  _(class `A`)_
 - **chain closes:** True — Within this narrowed no-go scope, the chain closes: the runner constructs the Q trace projection and delta closed-boundary projection, computes their nontrivial kernels, shows kernel translations preserve retained totals, and exhibits nonzero representatives that fail the target readouts. This proves exactness alone lacks a canonical zero representative.
 - **rationale:** The load-bearing result is an exact algebraic obstruction, not a positive physical identification: the code shows nonunique fibres over the retained totals and counter-representatives preserving those totals while changing Q or delta closure. The note's retained statement is correspondingly negative and explicitly says native closure remains false unless a new physical source/boundary-origin law is derived. The runner does not hard-code a desired positive closure; it demonstrates the missing section as the obstruction. Residual risk is scope control: the broader review-packet narrative mentions other branches and runners, but this audit only ratifies the primary residual cohomology no-go stated above.
+- **auditor confidence:** high
+
+### `koide_native_zero_section_closure_route_note_2026-04-24`
+
+- **Note:** [`KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md`](../../docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the class-A symbolic algebra checks showing Q = 2/3 and delta_open = 2/9 under the three explicitly admitted identifications.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260522-030039-6656c1a8-koide_native_zero_sectio-005`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the substitutions z = 0, spectator = 0, and c = 0, the route gives Q = 2/3 and delta_open = eta_APS = 2/9.  _(class `A`)_
+- **chain closes:** False — The conditional algebra closes, but the retained-only chain does not close because the Brannen real-Z3 primitive identification, unit-preserving determinant-line readout, and charged-lepton zero-source readout are admitted rather than derived.
+- **rationale:** The runner performs real finite-dimensional linear algebra, a commutator check, endpoint substitution, and arithmetic consequences of the stated substitutions; these are class-A symbolic checks. However, the note explicitly admits three open identification theorems and does not derive them from retained primitives. Therefore the claimed bounded route is valid only as a conditional algebraic implication, not as retained-only native closure.
 - **auditor confidence:** high
 
 ### `koide_pointed_origin_exhaustion_theorem_note_2026-04-24`

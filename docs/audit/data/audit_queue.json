@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 862,
+    "critical": 861,
     "high": 28,
     "leaf": 316,
     "medium": 111
@@ -9493,28 +9493,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/no_per_site_chirality_check.py",
-      "transitive_descendants": 988
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_native_zero_section_closure_route_note_2026-04-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.45,
-      "note_path": "docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_native_zero_section_closure_route.py",
       "transitive_descendants": 988
     },
     {
@@ -46506,6 +46484,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 19,
-  "total_pending": 1317
+  "ready_count": 18,
+  "total_pending": 1316
 }

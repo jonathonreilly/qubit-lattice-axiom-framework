@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_r1_hostile_review_2026_05_08_r1hr.py
-runner_sha256: f5436a4caa3c09738b2d1dd2df96ffa3ebcb920dd9c0309b8eb9eafe8a918078
+runner_sha256: 2ac3ce7d8d01ecbe06b8d8ef0fc5b010a65beb532bb8680e74ebdf713d21890d
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -9,7 +9,7 @@ status: ok
 ======================================================================
 A3 R1 HOSTILE REVIEW — C_3-equivariance theorem stress-test
 Source note:
-  docs/A3_R1_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md
+  docs/A3_R1_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r1hr.md
 ======================================================================
 HR1.1 — Quantization measure / RG / scheme dependence
   PASS : Sampled C_3-symmetrized matrices commute with U_C3 (measure preserves C_3) | max |[<H>, U_C3]| = 2.08e-17

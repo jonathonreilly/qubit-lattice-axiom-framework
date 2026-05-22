@@ -1,0 +1,105 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_campaign_closure_synthesis_2026_05_18.py
+runner_sha256: 5cdcff1d76a9199e91af212b267f1397a9fd822d4227323bbd9617f2f3a5ed3c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+======================================================================
+T1 — F_p[J] = |Z[J]|^p universal counterexample family
+======================================================================
+PASS: T1.1 F_p multiplicative factorization (p=-2)
+PASS: T1.1 F_p multiplicative factorization (p=-1)
+PASS: T1.1 F_p multiplicative factorization (p=1)
+PASS: T1.1 F_p multiplicative factorization (p=2)
+PASS: T1.1 F_p multiplicative factorization (p=3)
+PASS: T1.2 F_p NOT additive (p=-2)
+PASS: T1.2 F_p NOT additive (p=-1)
+PASS: T1.2 F_p NOT additive (p=1)
+PASS: T1.2 F_p NOT additive (p=2)
+PASS: T1.2 F_p NOT additive (p=3)
+PASS: T1.3 F_p positivity (p=-3)
+PASS: T1.3 F_p positivity (p=-1)
+PASS: T1.3 F_p positivity (p=1)
+PASS: T1.3 F_p positivity (p=3)
+PASS: T1.4 F_p CPT-evenness (depends only on r = |Z|)
+
+======================================================================
+T2 — Pattern L (log-reducing) taxonomy
+======================================================================
+PASS: T2.1 Pattern L candidates enumerated
+PASS: T2.2 Every Pattern L candidate invokes log
+  Cauchy functional equation: f(x*y) = f(x) + f(y) (additivity input)
+                            + continuity → f(x) = c * log(x)
+  Selection of log from {(·)^p : p ∈ R} requires the additivity input.
+  Pattern L is therefore circular: it presupposes P1 to derive log.
+
+======================================================================
+T3 — Pattern D (functor-additivity on direct sums) inapplicability
+======================================================================
+PASS: T3.1 Pattern D candidates enumerated
+PASS: T3.2 Z[J] is not a direct-sum-class object
+
+======================================================================
+T4 — Route portfolio enumeration
+======================================================================
+PASS: T4.1 Route portfolio contains ≥11 distinct routes
+PASS: T4.2 No route in portfolio closes P1
+  Route A operator-algebraic external                 PR #1373            bounded_theorem           D1
+  Route B information-theoretic external              PR #1368            bounded_theorem (landed)  D2
+  Route C framework-internal                          PR #1402            bounded_theorem           D3
+  Route D sharpened no-go consolidation               2026-05-17          no_go (unaudited)         D1+D2+D3+D4+D5
+  Route E Tao cross-disciplinary                      PR #1406            bounded_theorem           D4 + D5
+  Operator-algebraic (separate route)                 audited_failed      audited_failed            D1
+  Real-D-block uniqueness                             audited_failed      audited_failed            embeds P1 as (A)
+  Harlow disjoint additivity                          2026-05-17          unaudited bounded         Pattern A circularity
+  Doplicher-Roberts reconstruction                    2026-05-17          unaudited bounded         Pattern A circularity
+  Tempesta composability                              2026-05-17          unaudited bounded         Pattern A circularity
+  Framework-internal reconfirmation                   2026-05-17          unaudited bounded         Route C reconfirmation
+
+======================================================================
+T5 — N1-N8 no-go discipline checklist on Route D
+======================================================================
+PASS: T5 N1 (≥5 distinct attack routes)
+PASS: T5 N2 (wall-independence audit)
+PASS: T5 N3 (hidden-wall scan)
+PASS: T5 N4 (residual matching)
+PASS: T5 N5 (rhetoric audit)
+PASS: T5 N6 (partial-closure path scan)
+PASS: T5 N7 (steelman)
+PASS: T5 N8 (cross-cycle echo)
+
+======================================================================
+T6 — Locality-of-source-response steelman check
+======================================================================
+PASS: T6.1 Additivity ⇒ locality of source response (forward)
+PASS: T6.2 Locality of source response ⇒ additivity (reverse)
+PASS: T6.3 Locality steelman is Pattern L circularity
+
+======================================================================
+T7 — Path (a) requirements for a future retained primitive
+======================================================================
+  - Excludes F_p for p ≠ 0 without invoking log (avoids Pattern L D5)
+  - Operates on r = |Z| > 0 scalar functionals (avoids Pattern D D4)
+  - Derivable from existing retained primitives (no new axiom)
+  - Survives independent audit ratification
+PASS: T7 Path (a) requirements catalogued
+PASS: T7 No Path (a) candidate identified in current portfolio
+
+======================================================================
+T8 — Source-note boundary check
+======================================================================
+PASS: T8.1 claim type is bounded_theorem (campaign closure synthesis)
+PASS: T8.2 explicit 'does not derive P1' disclaimer present
+PASS: T8.3 Path (b) adoption formalized
+PASS: T8.4 no overclaim strings in source note
+PASS: T8.5 independent-audit handoff language present
+PASS: T8.6 dependency citations to route portfolio present
+
+======================================================================
+PASS=40  FAIL=0
+======================================================================
+
+----- stderr -----
+

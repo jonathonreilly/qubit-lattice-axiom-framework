@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/frontier_inner_automorphism_invariance_tracial_identification.py
+runner_sha256: 0b413dab9ad06e4d20af71a603376d34cd9ef1887bb8e226e1d938facff51096
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+# Conditional inner-automorphism tracial-identification runner
+
+==============================================================================
+T1: diagonal sign unitaries kill off-diagonal entries
+==============================================================================
+  [PASS] d=2: every off-diagonal entry has a sign-flip witness
+         witnesses=2, expected=2
+  [PASS] d=4: every off-diagonal entry has a sign-flip witness
+         witnesses=12, expected=12
+  [PASS] d=8: every off-diagonal entry has a sign-flip witness
+         witnesses=56, expected=56
+  [PASS] d=16: every off-diagonal entry has a sign-flip witness
+         witnesses=240, expected=240
+
+==============================================================================
+T2: permutation unitaries force all diagonal entries equal
+==============================================================================
+  [PASS] d=2: swaps with index 0 connect every diagonal coordinate
+         swaps=[(0, 1)]
+  [PASS] d=4: swaps with index 0 connect every diagonal coordinate
+         swaps=[(0, 1), (0, 2), (0, 3)]
+  [PASS] d=8: swaps with index 0 connect every diagonal coordinate
+         swaps=[(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6)]...
+  [PASS] d=16: swaps with index 0 connect every diagonal coordinate
+         swaps=[(0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6)]...
+
+==============================================================================
+T3: trace normalization fixes rho = I_d / d
+==============================================================================
+  [PASS] |Lambda|=1: scalar invariant density has c=1/2
+         d=2, c=1/2, trace=1, positive=True
+  [PASS] |Lambda|=2: scalar invariant density has c=1/4
+         d=4, c=1/4, trace=1, positive=True
+  [PASS] |Lambda|=3: scalar invariant density has c=1/8
+         d=8, c=1/8, trace=1, positive=True
+  [PASS] |Lambda|=4: scalar invariant density has c=1/16
+         d=16, c=1/16, trace=1, positive=True
+
+==============================================================================
+T4: maximally mixed finite regions are restriction-compatible
+==============================================================================
+  [PASS] partial trace over 1 sites maps I_{AB}/(d_A d_B) to I_A/d_A
+         d_A=2, d_B=2, reduced_weight=1/2
+  [PASS] partial trace over 2 sites maps I_{AB}/(d_A d_B) to I_A/d_A
+         d_A=2, d_B=4, reduced_weight=1/2
+  [PASS] partial trace over 1 sites maps I_{AB}/(d_A d_B) to I_A/d_A
+         d_A=4, d_B=2, reduced_weight=1/4
+  [PASS] partial trace over 3 sites maps I_{AB}/(d_A d_B) to I_A/d_A
+         d_A=4, d_B=8, reduced_weight=1/4
+
+==============================================================================
+T5: source note boundary strings
+==============================================================================
+  [PASS] required boundary string present: **Claim type:** bounded_theorem
+         present=True
+  [PASS] required boundary string present: does not approve that
+         present=True
+  [PASS] required boundary string present: does not add a new framework axiom or rule
+         present=True
+  [PASS] required boundary string present: derive PRR from A1+A2
+         present=True
+  [PASS] required boundary string present: conditional bridge theorem
+         present=True
+  [PASS] required boundary string present: explicit approval
+         present=True
+  [PASS] required boundary string present: Plain-text target row, not a load-bearing dependency
+         present=True
+  [PASS] no forbidden promotion/approval strings
+         hits=[]
+
+=== TOTAL: PASS=24, FAIL=0 ===
+
+----- stderr -----
+

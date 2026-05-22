@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_substep4_ac_lambda_separate_closure_2026_05_10_aclambda.py
-runner_sha256: dd62758a5134f040cc4a9e44ba433f71e5d48087bbca2722f2e740ca7c5a476c
+runner_sha256: 0ea82f49a397c4c70c444166a9bafe9975ed17dece885f4b628a52cf9fc53bb1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -54,7 +54,7 @@ status: ok
 ----------------------------------------------------------------------------------------
   Section 6 — Partial-ratchet implication
 ----------------------------------------------------------------------------------------
-  [PASS] Candidate atom count reduction: 3 atoms → 2 atoms — before={'AC_φ', 'AC_λ', 'AC_φλ'}, after={'AC_φ', 'AC_φλ'}
+  [PASS] Candidate atom count reduction: 3 atoms → 2 atoms — before={'AC_φλ', 'AC_φ', 'AC_λ'}, after={'AC_φλ', 'AC_φ'}
   [PASS] AC_λ candidate removal from residual atomic stack — proposed as subsumed by Kawamoto-Smit upstream + audit-pending-meta conditional
   [PASS] Substep-4 surface tier UNCHANGED (still bounded_theorem) — tier inherits from bounded Kawamoto-Smit upstream; no positive ratchet
   [PASS] Inherited dependencies recorded — 1 upstream + 3 audit-pending-meta companion notes
@@ -99,3 +99,6 @@ Result classification:
 
   Independent audit lane has full authority for verdict and downstream
   status.
+
+----- stderr -----
+

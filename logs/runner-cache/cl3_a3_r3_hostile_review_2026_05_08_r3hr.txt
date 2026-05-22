@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py
-runner_sha256: f421cdd5ab487e9239fcd9c83d1cb8687715f6e3280ffb726e782dc31f1727a2
+runner_sha256: a0acf18b592e28311263dd4a241302c12110b21ac530f75f1aae700360aa7e3e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -13,7 +13,7 @@ Obstruction Confirmation
 
 Loop: a3-route3-hostile-review-20260508
 Companion theorem note:
-  docs/A3_R3_HOSTILE_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md
+  docs/A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md
 
 ==============================================================================
 Section 0: hw=1 BZ corner C_3 setup verification

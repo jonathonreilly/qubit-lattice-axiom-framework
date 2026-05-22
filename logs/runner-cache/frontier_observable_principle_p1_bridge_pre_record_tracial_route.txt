@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/frontier_observable_principle_p1_bridge_pre_record_tracial_route.py
+runner_sha256: 045264f034ca475e37aa2dbd288f8acd69ffedef7ac23037fa1fc495e3adccc9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+# Observable-principle P1 bridge pre-record tracial route runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_PRE_RECORD_TRACIAL_ROUTE_NARROW_NOTE_2026-05-21.md
+
+==============================================================================
+T1: Block-diagonal determinant factorization (symbolic SymPy)
+==============================================================================
+  [PASS] det(D_A (+) D_B + J_A (+) J_B) = det(D_A+J_A) det(D_B+J_B) symbolically
+         sympy.simplify(diff) = 0
+
+==============================================================================
+T2: log(xy) = log(x) + log(y) (symbolic SymPy)
+==============================================================================
+  [PASS] log(xy) = log(x) + log(y) symbolically for positive x, y
+         sympy.simplify(lhs - rhs) = 0
+
+==============================================================================
+T3: F_p multiplicative factorization for several real p (symbolic SymPy)
+==============================================================================
+  [PASS] F_p(rA rB) = F_p(rA) F_p(rB) symbolically for p in {2, 1/2, -1, -2}
+         p=2: diff=0; p=1/2: diff=0; p=-1: diff=0; p=-2: diff=0
+
+==============================================================================
+T4: F_p additive FAILURE for p != 0 (exact Fraction)
+==============================================================================
+  [PASS] F_p(rA rB) != F_p(rA) + F_p(rB) for p in {2, -1, -2} with rA=2, rB=3
+         p=2: F_p(rA rB)=36, F_p(rA)+F_p(rB)=13; p=-1: F_p(rA rB)=1/6, F_p(rA)+F_p(rB)=5/6; p=-2: F_p(rA rB)=1/36, F_p(rA)+F_p(rB)=13/36
+  [PASS] F_{1/2}(rA rB) = sqrt(rA rB) != sqrt(rA) + sqrt(rB) (symbolic)
+         f_AB=sqrt(6)=sqrt(6), sum_f=sqrt(2) + sqrt(3); diff=-sqrt(3) - sqrt(2) + sqrt(6)
+
+==============================================================================
+T5: Cauchy classifier uniqueness (symbolic SymPy)
+==============================================================================
+  [PASS] c log(xy) = c log(x) + c log(y) symbolically for any real c
+         sympy.simplify(c log diff) = 0
+  [PASS] (xy)^2 - x^2 - y^2 != 0 for x=2, y=3 (so power-p is NOT additive)
+         value at x=2, y=3: 23 (expected nonzero)
+
+==============================================================================
+T6: Tracial-state tensor factorization on M_2(C) ⊗ M_2(C) (exact Fraction)
+==============================================================================
+  [PASS] tau(A ⊗ B) = tau(A) * tau(B) exactly for explicit 2x2 diagonals
+         tau(A)=5/2, tau(B)=6, tau(A)*tau(B)=15, tau(A ⊗ B)=15
+
+==============================================================================
+T7: Tracial-state factorization is multiplicative, not additive
+==============================================================================
+  [PASS] tau(A ⊗ B) = tau(A) * tau(B) [mult] AND != tau(A) + tau(B) [non-add]
+         mult holds: True; add fails: True; tau(A)+tau(B)=17/2, tau(A ⊗ B)=15
+
+==============================================================================
+T8: Algebra mismatch — qubit (bosonic) vs. Grassmann (fermionic) (symbolic SymPy)
+==============================================================================
+  [PASS] Qubit operators on disjoint sites commute: [sigma_x ⊗ I, I ⊗ sigma_z] = 0
+         all-zero matrix
+  [PASS] Grassmann anticommutation distinct from qubit commutation algebra
+         grassmann: psi_1 psi_2 + psi_2 psi_1 = 0  (anticommutation); bosonic: [sigma_x ⊗ I, I ⊗ sigma_z] = 0  (commutation)
+
+==============================================================================
+T9: F_p counterexample family compatible with tracial state framework
+==============================================================================
+  [PASS] F_p compatible with tau multiplicative factorization for p in {2, -1, -2}
+         p=2: F_p(tau_AB)=225, F_p(tau_A)*F_p(tau_B)=225, mult_ok=True; p=-1: F_p(tau_AB)=1/15, F_p(tau_A)*F_p(tau_B)=1/15, mult_ok=True; p=-2: F_p(tau_AB)=1/225, F_p(tau_A)*F_p(tau_B)=1/225, mult_ok=True
+
+==============================================================================
+T10: Honest scope check — P1 NOT retired
+==============================================================================
+  [PASS] note contains all required honest-scope admission strings
+         all required strings present
+
+==============================================================================
+T11: Scope boundary — parent statuses not promoted
+==============================================================================
+  [PASS] note explicitly states non-promotion language for upstream rows
+         all required strings present
+  [PASS] note avoids forbidden status-promotion strings
+         no forbidden strings
+
+==============================================================================
+T12: Source-note boundary check
+==============================================================================
+  [PASS] note declares Claim type: bounded_theorem
+  [PASS] note declares Status authority: independent audit lane only
+  [PASS] note avoids forbidden status-overclaim strings
+         no forbidden strings
+
+=== TOTAL: PASS=18, FAIL=0 ===
+
+----- stderr -----
+

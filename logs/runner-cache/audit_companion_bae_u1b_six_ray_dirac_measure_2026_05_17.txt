@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_bae_u1b_six_ray_dirac_measure_2026_05_17.py
-runner_sha256: cb3391a0190e3dd8ac7e6301278cb594fb799183f46e1381e2b03029ac68f790
+runner_sha256: 22ec064fd464a83e911c91000d2397e2f63cf7fa16aa7d595f57849dc2bca72b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.21
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 ========================================================================================

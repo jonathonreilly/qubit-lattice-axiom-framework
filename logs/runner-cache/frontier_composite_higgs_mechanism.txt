@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_composite_higgs_mechanism.py
-runner_sha256: 227d93e46d7ecd5e88cdaf6d07d61d4ce121777dc363c808018f89beb918e2f7
+runner_sha256: b62fb3a89fc8f7381ed5af38fb0928475fc0266975c605d6bb7ceb289d4cdbaf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.86
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 
 ----------------------------------------------------------------------------------------
 Part 0: Cited authority files exist on disk (one-hop discipline)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md exists  (path=/private/tmp/gate-fix-worktree/docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md)
+  [PASS (A)] docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md exists  (path=/Users/jonBridger/Toy Physics/.claude/worktrees/romantic-booth-360441/docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md)
   [PASS (A)] Current matter-content/EWSB harness exists  (path=UNIFIED_MATTER_CONTENT_EWSB_HARNESS_THEOREM_NOTE_2026-05-03.md)
   [PASS (A)] Current hypercharge normalization support exists  (path=LHCM_Y_NORMALIZATION_FROM_ANOMALY_AND_CONVENTION_NOTE_2026-05-02.md)
   [PASS (A)] One-Higgs Yukawa gauge-selection guardrail exists  (path=SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md)
@@ -168,7 +168,7 @@ Part 17: Y-arithmetic for three bilinears (exact Fraction recompute)
   Output type: (c) STRETCH ATTEMPT with multi-channel Z3 candidate
   + 3 named residual obstructions (NO1, NO2, NO3)
   Cycle 20 of physics-loop campaign successor
-  Note: docs/COMPOSITE_HIGGS_MECHANISM_STRETCH_ATTEMPT_NOTE_2026-05-03.md
+  Note: docs/COMPOSITE_HIGGS_MECHANISM_NOTE_2026-05-03.md
 
   All cycle-08 obstructions O1, O2, O3 SHARPENED with Route B candidate.
   Cycle-08 O3 (multi-bilinear selector) NARROWED structurally under H1/H2.

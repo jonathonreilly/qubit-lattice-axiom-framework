@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/higgs_tree_level_mean_field_runner_2026_05_03.py
-runner_sha256: ce17387687559acbe606da027fed2d9c2592ade7a0c83333dbd0ede44f462bdc
+runner_sha256: 48632de85930121101e7ed598997090ae5831ee8faef9bfaf6aa06a3e0ea97aa
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.05
-status: ok
+exit_code: 1
+elapsed_sec: 0.08
+status: nonzero_exit
 ----- stdout -----
 ================================================================================
  higgs_tree_level_mean_field_runner_2026_05_03.py
@@ -58,12 +58,12 @@ status: ok
   [PASS] contains: HIGGS_FROM_LATTICE_NOTE cross-ref  (marker = 'HIGGS_FROM_LATTICE_NOTE.md')
   [PASS] contains: Wilson-term taste-breaking row  (marker = 'Wilson-term taste-breaking')
   [PASS] contains: 2026-05-02 status correction audit cross-ref  (marker = 'HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02')
-  [PASS] contains: audit backlog campaign synthesis cross-ref  (marker = 'AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02')
+  [FAIL] contains: audit backlog campaign synthesis cross-ref  (marker = 'AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02')
   [PASS] contains: Wilson-staircase open-target call-out  (marker = '(1,4,6,4,1) staircase')
   [PASS] sister authority file exists: docs/HIGGS_MASS_DERIVED_NOTE.md
   [PASS] sister authority file exists: docs/HIGGS_FROM_LATTICE_NOTE.md
   [PASS] sister authority file exists: docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md
-  [PASS] sister authority file exists: docs/AUDIT_BACKLOG_CAMPAIGN_PROGRESS_SYNTHESIS_2026-05-02.md
+  [PASS] sister authority file exists: docs/AUDIT_BACKLOG_NOTE_2026-05-02.md
   [PASS] Step 7 scope guard: this note does not change sibling status
   [PASS] Step 7 reaffirms tree-level scope and delegates the gap closure
 
@@ -78,7 +78,7 @@ status: ok
   [PASS] +12% gap framed as genuine higher-order separation (broken-phase pole vs symmetric-point curvature)
 
 ================================================================================
- SUMMARY: PASS=29, FAIL=0
+ SUMMARY: PASS=28, FAIL=1
 ================================================================================
 
 ----- stderr -----

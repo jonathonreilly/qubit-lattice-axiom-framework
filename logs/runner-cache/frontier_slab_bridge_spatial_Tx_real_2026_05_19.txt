@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py
+runner_sha256: f9250dd307de1cf6a333bc9773bd4a18a1180122d57e398bb200b21fd5b2d308
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
 ==============================================================================
 Spatial slab transfer operator T_x positivity and Δ_x > 0
 Runner companion to docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md
@@ -29,7 +37,7 @@ Supports source-side H1/H2 discharge candidate for the 2026-05-17 spatial slab-b
     PASS — Slab-bridge bound (S) check via single-link transfer-operator spectral correlator on the (1,0)+(0,1) subspace; Δ_x = 2τ/9 = 8.888889e-01; d=0: |C(d)| = 5.000000e-01, ‖A‖‖B‖ exp(-d Δ_x) = 5.000000e-01, OK: YES; d=1: |C(d)| = 2.055561e-01, ‖A‖‖B‖ exp(-d Δ_x) = 2.055561e-01, OK: YES; d=2: |C(d)| = 8.450666e-02, ‖A‖‖B‖ exp(-d Δ_x) = 8.450666e-02, OK: YES
 
 ==============================================================================
-PASS=8  FAIL=0  (runtime: 0.23 s)
+PASS=8  FAIL=0  (runtime: 0.19 s)
 ==============================================================================
   [PASS] V1 Wilson axis-permutation invariance of S_W
   [PASS] V2 T_x kernel = T_τ kernel under axis-swap
@@ -41,3 +49,6 @@ PASS=8  FAIL=0  (runtime: 0.23 s)
   [PASS] V8 slab-bridge bound (S) at d ∈ {0, 1, 2}
 
 All verifications passed; runner exits cleanly.
+
+----- stderr -----
+

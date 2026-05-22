@@ -11105,10 +11105,6 @@
       "to": "native_gauge_closure_note"
     },
     {
-      "from": "g_bare_rigidity_theorem_note",
-      "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
-    },
-    {
       "from": "g_bare_structural_normalization_theorem_note_2026-04-18",
       "to": "g_bare_rigidity_theorem_note"
     },
@@ -42286,7 +42282,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5cdb00510e2ee4ca833a0ffd9792046a766c0ccbd0cfed3c3a9452c66e96291f",
+      "note_hash": "77adcfc525beff6ec2e8ef720820c26c21e57f82f1ec105f671159e40a4c5cdb",
       "path": "docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_rt_ratio_widom.py",
       "title": "BH Entropy RT-Ratio Widom No-Go Theorem"
@@ -45480,7 +45476,7 @@
         "claude_complex_action_grown_companion_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7ad695090e6ec3886bc2ed4e50f4cb33918a9e967c0a5009a0b39d21bb798bf9",
+      "note_hash": "129ef8fe0b8bd4e8c6c43a150348bc5e41c9613662d5e1a55a1aabb237c64903",
       "path": "docs/COMPLEX_ACTION_NOTE.md",
       "runner_path": "scripts/complex_action_harness.py",
       "title": "Complex Action: Conditional One-Parameter Complex-Kernel Model"
@@ -45998,14 +45994,14 @@
     },
     "cpt_exact_note": {
       "claim_id": "cpt_exact_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8892bef0bec8c2b9b37bb545549a408426981064d9e6ae35ad6fa2ac413beb2c",
+      "note_hash": "5b8f580bf1abc9b2485f451acec1be9f87d3e7aa0ec45cabd339de9f05b383ef",
       "path": "docs/CPT_EXACT_NOTE.md",
       "runner_path": "scripts/frontier_cpt_exact.py",
       "title": "CPT Exact Preservation in the Cl(3) Staggered Framework"
@@ -46159,7 +46155,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "4b1da6283f1564d501a01d3e0e5342eb4894bf35050d86f18f618d9913083f41",
+      "note_hash": "1a2ea4d798baf5db45f1e15fd195ea4730f016261e9d210f1c750f30b6645343",
       "path": "docs/CUBIC_COXETER_REGGE_DEFICIT_VANISHING_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/frontier_cubic_coxeter_regge_deficit_vanishing_narrow.py",
       "title": "Cubic-Coxeter Regge Deficit Vanishing Narrow Theorem"
@@ -47814,7 +47810,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5e6eb1f0d7ca0724f6d303a1da3a303b5e249cc354920ad7ec8478d64d71d891",
+      "note_hash": "707e65a27f3fa475b369d9886ec5ba70716ad5a3d8e9a0d66a53e53d490cb55d",
       "path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
       "title": "DM Leptogenesis PMNS Minimum-Information Source Law"
@@ -47898,7 +47894,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "66102a7fec13dd6505986cd533962d6c9fe59e69b000880a1a50cc26b6514e46",
+      "note_hash": "771d05639070bac5cecdda3694db7b1b2f3863cdd5af028a700b0dc817cf38ab",
       "path": "docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
       "title": "DM Leptogenesis PMNS Projector Interface"
@@ -52125,16 +52121,15 @@
     },
     "g_bare_rigidity_theorem_note": {
       "claim_id": "g_bare_rigidity_theorem_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "graph_first_su3_integration_note",
-        "native_gauge_closure_note",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
+        "native_gauge_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f791389f50661b505316a70f4add8b5bb929896b8dae12053385bd04727b06f6",
+      "note_hash": "2760beaf8c12a54ffaf602f2a81675c52e851da449bdbd3e41fb00bda0137d53",
       "path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
       "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
       "title": "Gauge-Normalization Rigidity Theorem"
@@ -52426,7 +52421,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "71de0929235b3d9d30a1f229fbfafa79cc7da49963f62efdbcace013c7a0e828",
+      "note_hash": "3f26a86c94de3212031f106262c83f63474b7c704500cd02f89e3dfab081171b",
       "path": "docs/GATE_B_FARFIELD_NOTE.md",
       "runner_path": "scripts/gate_b_farfield_harness.py",
       "title": "Gate B Far-Field: Grown Geometry at h=0.5"
@@ -56139,7 +56134,7 @@
         "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d5e819713d1fb2b68bf0f27de2d4fd4ebe37fca50634d34250d0991148c05a67",
+      "note_hash": "b41b48838674794cf21713712922b5aedb5645d89e6ff85cb31178d47d34cf61",
       "path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
       "runner_path": "scripts/frontier_hypercharge_identification.py",
       "title": "Hypercharge U(1)_Y Identification from the Commutant"
@@ -56553,7 +56548,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "5d3f0bc90d91a3f4eaf74fd3ea815d9b03b16c66afab37c4d1f031590e4887ce",
+      "note_hash": "8192aea36eeef09fb2deac49c5d89d5e253adbaa1456352f1bd939bc3f7defda",
       "path": "docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md",
       "runner_path": "scripts/frontier_koide_a1_quartic_potential_derivation.py",
       "title": "Koide A1 Investigation \u2014 Final Theoretical Status"
@@ -57870,7 +57865,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c5075762d167078aec48e1e3ff096f3f768b5969915d67323e74cab6b8799458",
+      "note_hash": "9616ac2f67b7a287eef24a5b1e5eab286b32ca8942476819855537047ba38844",
       "path": "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_dimensionless_objection_closure_review.py",
       "title": "Koide Dimensionless Objection-Closure Review Packet"
@@ -58259,12 +58254,12 @@
     },
     "koide_native_zero_section_closure_route_note_2026-04-24": {
       "claim_id": "koide_native_zero_section_closure_route_note_2026-04-24",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a51c30079c2515be62ae317fea9a76f1de2b3b8c96aec216a188d437b4728d79",
+      "note_hash": "ec3705b76a603bdefa9df620141acba4809122053a943a6227bb402480cf5fe1",
       "path": "docs/KOIDE_NATIVE_ZERO_SECTION_CLOSURE_ROUTE_NOTE_2026-04-24.md",
       "runner_path": "scripts/frontier_koide_native_zero_section_closure_route.py",
       "title": "Koide native zero-section closure route"
@@ -66052,7 +66047,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "80830908642fc3a19b78720fb9e9dd1de5cbc150b694be28ab1fcc74271319bf",
+      "note_hash": "9973fc9e7b917989b3ba7136b408d71241284957c9650f2151a0ed93402b7f71",
       "path": "docs/PMNS_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md",
       "runner_path": "scripts/frontier_pmns_hw1_source_transfer_boundary.py",
       "title": "PMNS HW1 Source-Transfer Boundary"
@@ -66147,7 +66142,7 @@
         "pmns_oriented_cycle_channel_value_law_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c5ed50ddbb1be013a6c0df1bc3dad7ca611742f829d5a79340f780d3768cfe9b",
+      "note_hash": "b04105b74a6e97f0bd6681d1507ac625123301b51a1e1a4c63cf279e9b8d7011",
       "path": "docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md",
       "runner_path": "scripts/frontier_pmns_oriented_cycle_selection_structure.py",
       "title": "PMNS Oriented Cycle Selection Structure"
@@ -69646,12 +69641,12 @@
     },
     "quark_bimodule_norm_existence_theorem_note_2026-04-19": {
       "claim_id": "quark_bimodule_norm_existence_theorem_note_2026-04-19",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f6624c9b29492f8b34f6790c6712a84c7215fe4c0b09f53d9510219bf37f44b9",
+      "note_hash": "61fe1f9ced89731ad5e673808c0036834109169bb69ea949ee3219ecce740f52",
       "path": "docs/QUARK_BIMODULE_NORM_EXISTENCE_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_quark_bimodule_norm_existence_theorem.py",
       "title": "Quark Bimodule NORM-Existence Theorem"
@@ -72007,7 +72002,7 @@
         "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
         "scripts/gate_b_nonlabel_connectivity_v1.py"
       ],
-      "note_hash": "0d6ec9fcf5aab6b91dc8426ed96ea05d0ff6f6bb4a355daa8469e34d485df985",
+      "note_hash": "a94c72395e88766ac1d352db99f1b25c8cc915fd25565bdfdedb9cc07c0e9e11",
       "path": "docs/SIGN_PORTABILITY_INVARIANT_FAMILY_SECOND_GROWN_DERIVATION_THEOREM_NOTE_2026-05-09.md",
       "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
       "title": "Sign Portability Invariant: First-Principles Derivation Within the Second Grown Family"
@@ -81384,24 +81379,24 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 512,
+      "bounded_theorem": 515,
       "decoration": 1,
       "meta": 184,
       "no_go": 61,
-      "none": 1499,
+      "none": 1495,
       "open_gate": 45,
-      "positive_theorem": 172
+      "positive_theorem": 173
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 950,
+      "bounded_theorem": 953,
       "decoration": 1,
       "meta": 184,
       "no_go": 164,
-      "none": 444,
+      "none": 443,
       "open_gate": 123,
-      "positive_theorem": 608
+      "positive_theorem": 606
     },
-    "edge_count": 9706,
+    "edge_count": 9705,
     "leaf_count": 742,
     "node_count": 2474,
     "root_count": 807,

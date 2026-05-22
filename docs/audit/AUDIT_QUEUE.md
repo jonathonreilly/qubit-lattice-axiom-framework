@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `multisite_pauli_group_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | critical | 988 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/multisite_pauli_group_check.py` |
-| 2 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 988 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/q_integer_spectrum_check.py` |
+| 2 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | critical | 988 | 10.95 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/q_integer_spectrum_check.py` |
 | 3 | `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 988 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cpt_particle_antiparticle_lifetime_check.py` |
 | 4 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 988 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cpt_particle_antiparticle_mass_equality_check.py` |
 | 5 | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | positive_theorem | unaudited | critical | 988 | 10.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/no_per_site_bosonic_ccr_check.py` |

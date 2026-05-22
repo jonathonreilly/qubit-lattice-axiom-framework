@@ -103437,22 +103437,41 @@
       "verdict_rationale": "The bounded computation closes because the current runner output matches the scoped numerical rows and the note has narrowed away the prior inflated normalization headline and any staggered-fermion interpretation. The runner does not emit classified PASS lines, but its deterministic output directly provides the audited observables and its branch would stop claiming confirmation if normalized contrast fell below the stated 1% threshold. Residual risk is citation drift: this result is only a toy_event_physics DAG-ensemble lead, not a retained staggered or gravity-entanglement claim."
     },
     "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T00:09:49.740644+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-gleason_on_qubit_lattice-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The mathematical application of Gleason closes internally, but the restricted packet cites MINIMAL_AXIOMS_2026-05-20.md with effective_status meta rather than a retained-grade authority. The packet also treats Gleason 1957 as an admitted standard theorem rather than a provided retained dependency, so the audit cannot mark full clean closure under the rubric.",
       "claim_id": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "For finite \u039b \u2282 Z^3 with |\u039b| \u2265 2, any countably additive probability measure on P(\u2297_{x\u2208\u039b} C\u00b2) has unique Born form Tr(\u03c3P), assuming the stated standard Gleason theorem and the qubit-lattice Hilbert-space setup.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T00:09:49.740644+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -103460,20 +103479,22 @@
         "minimal_axioms_2026-05-20"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Applying Gleason's theorem to the frame function on H_\u039b with dim H_\u039b = 2^|\u039b| \u2265 4 gives f_m(|\u03c8\u27e9)=\u27e8\u03c8|\u03c3|\u03c8\u27e9 and therefore m(P)=Tr(\u03c3P).",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "272c80c669e28414489c08d779f652fc3af9a5694148a2ae4af6bff9f9d4c191",
       "note_path": "docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade authority for the A1+A2 finite-region Hilbert-space construction, or retag the cited axioms authority as an accepted framework premise for audit purposes.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
       "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
@@ -103487,7 +103508,7 @@
       "runner_path": null,
       "title": "Gleason's Theorem on the Qubit-Lattice Projection Lattice (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a standard algebraic/theorem-application step: once H_\u039b is a complex Hilbert space of dimension at least 3 and m is a countably additive projection-lattice probability measure, Gleason gives the density-matrix representation and uniqueness follows by projection separation. No runner is needed for this finite-dimensional theorem application. However, the only supplied cited authority is marked effective_status meta, not retained, and the qubit-lattice Hilbert-space substrate is therefore not a retained-grade input in this restricted packet."
     },
     "global_coherence_held_out2_note": {
       "audit_date": "2026-05-11T17:04:22.345583+00:00",

@@ -14,6 +14,45 @@ route-specific exact negative boundary; audit outcome and effective status are
 set only by independent re-audit.
 **Primary runner:** `scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py`
 
+## Qubit-reframe axiom-structure grounding (2026-05-22)
+
+Under the 2026-05-20 qubit reframe (`MINIMAL_AXIOMS_2026-05-20.md` A1
+canonical statement + `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`
+binding definition), the per-site algebra is canonically committed to
+`Cl(3,0)` with the pseudoscalar `ω = σ_1 σ_2 σ_3` carrying `ω² = −𝟙`
+and `ω` central in `Cl(3,0)`. This is item 5 of the qubit-hardening
+binding definition. Under the framework's "no external Not-reality"
+discipline (imaginary direction is the ω-geometric pseudoscalar, not
+an externally admitted complex `i`), the ω-centrality calculation in
+§1 below is therefore an explicit consequence of A1, not a generic
+Cl(3)-algebra computation.
+
+Specifically:
+- The three Pauli generators `σ_1, σ_2, σ_3` are the standard
+  generators of `Cl(3,0)` committed by A1.
+- The pseudoscalar `ω = σ_1 σ_2 σ_3` is the `Cl(3,0)` volume element,
+  central in the odd-dimensional algebra because moving `ω` past any
+  `σ_i` picks up two sign flips (no net sign change).
+- The image of `ω` under the `Cl(3,0) ≅ M_2(ℂ)` identification is
+  `i · 𝟙_{M_2(ℂ)}`, recovering the "i" of quantum mechanics
+  geometrically (not as an external admission).
+
+The no_go below therefore reads as a theorem about the framework's A1
+canonical algebra rather than a result that depends on an admitted
+Clifford structure: in Cl(3,0), ω is structurally a central scalar
+(after identification with i·𝟙), and a fourth anticommuting Clifford
+generator giving Cl(3,1) is not derivable from A1+A2 alone. The
+framework's time direction is a separate derived structure (see
+`ANOMALY_FORCES_TIME_THEOREM.md`), not a fourth Cl(3,0) generator.
+
+This grounding does not change the no_go's claim_type or claim_scope;
+it ties the existing ω-centrality argument to the canonical A1 axiom
+under the 2026-05-22 axiom-structure discipline. The independent
+audit lane retains status authority; pre-edit ledger row was
+`effective_status: retained_no_go` (audited_clean, judicial third
+pass), and this content-only grounding edit triggers the standard
+re-audit queue.
+
 ## Question
 
 PR #528 asked whether the accepted Wilson gauge action should be changed or

@@ -53864,7 +53864,7 @@
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "62b6f8969c26e54c5650fd86e7503ec123e2aeb045e8dfdca907485e2303eb98",
+      "note_hash": "a219f53a0c9f3da2c57cadbb43c6c87e1426c22edd5c5a5777b27c6f693bb149",
       "path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
       "title": "Gauge Wilson Isotropy Boundary Note"

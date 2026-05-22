@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 370 |
+| **retained_bounded** | 371 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1310 |
+| unaudited | 1309 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 623 |
+| `audited_clean` | 624 |
 | `audited_conditional` | 97 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1534 |
+| `unaudited` | 1533 |
 
 | claim_type | count |
 |---|---:|
@@ -490,6 +490,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | claude-opus | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7804,6 +7805,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — The existential obstruction is plausible, but the stated universal P3 condition is false: r_A^p r_B^p = r_A^p + r_B^p can hold accidentally, e.g. r_A^p=r_B^p=2. The runner checks selected witnesses only and does not establish the note's 'whenever' claim.
 - **rationale:** The algebraic determinant and multiplicative F_p checks are real computations, and there are no external comparator or tuned numerical inputs. However the load-bearing non-additivity statement is over-quantified: the equation xy=x+y has positive nontrivial solutions, so the claimed inequality for every r_A,r_B != 1 is not true. A reduced claim saying F_p is not globally additive because explicit witness pairs have nonzero defect would likely close, but the source note as written does not.
 - **auditor confidence:** high
+
+### `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded external-classification claim: Cauchy/Shannon/Khinchin/Aczel-Daroczy uniqueness results and finite Grassmann determinant factorization support log/entropy forms conditional on additivity, while P1 remains unretired.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T233405Z-b85d4b56-observable_principle_p1_-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Shannon/Khinchin/Aczel-Daroczy theorems assume additivity or a chain rule as a hypothesis and therefore classify the additive functional class rather than deriving P1.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the chain closes: the provided retained_bounded Grassmann authority supports determinant factorization, and the classification step explicitly assumes additivity rather than deriving it. The chain would not close for any stronger claim that P1 itself is derived or retired.
+- **rationale:** The load-bearing content is a class-A conditional classification over existing inputs: determinant factorization supplies multiplicative Z behavior, and Cauchy/Shannon-Khinchin classify functionals only after additivity or chain-rule structure is imposed. The runner source performs real SymPy/Fraction checks for the stated identities, entropy additivity samples, determinant factorization, log additivity, and scope-boundary strings; it does not hard-code a contested numerical value. The No-Go Discipline boundary check has no packet-level failure: the Cauchy, Shannon, Khinchin, Aczel-Daroczy, and determinant-factorization routes all leave P1 additivity as an input, so the clean result applies only to the bounded non-retirement claim.
+- **auditor confidence:** medium
 
 ### `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21`
 

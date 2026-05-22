@@ -174813,24 +174813,41 @@
       "verdict_rationale": null
     },
     "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-22T23:36:53.671805+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Bounded algebraic G-vs-B bridge: under the explicit one-pair-per-site candidate framing, retained Cl(3) dim-2 and retained Berezin calculus make Grassmann dimension/determinant compatible and canonical bosonic Fock dimension incompatible."
+        },
+        "dep_claim_type": {
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 7.2,
+        "runner_hash": "0f412a8805bc8953952c1dc1a90198adfe259de6388682bcdea7a1dae445cc1c",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T233405Z-b85d4b56-observable_principle_p1_-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the chain closes: the provided retained_bounded Grassmann authority supports determinant factorization, and the classification step explicitly assumes additivity rather than deriving it. The chain would not close for any stronger claim that P1 itself is derived or retired.",
       "claim_id": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Audited only the bounded external-classification claim: Cauchy/Shannon/Khinchin/Aczel-Daroczy uniqueness results and finite Grassmann determinant factorization support log/entropy forms conditional on additivity, while P1 remains unretired.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-22T23:36:53.671805+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "high",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -174838,19 +174855,19 @@
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 7.2,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The Shannon/Khinchin/Aczel-Daroczy theorems assume additivity or a chain rule as a hypothesis and therefore classify the additive functional class rather than deriving P1.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "bf9e928a19b5ed0ac4ffdb95b1d048f0a92d92e8a52a6482f67589e0ea1d3bb2",
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the '+ const' wording against strict Cauchy additivity; the strict equation fixes the additive constant to zero unless a separate normalization convention is in scope.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -174904,18 +174921,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 19,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 19
       },
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_shannon_khinchin_external_narrow.py",
       "title": "Observable-Principle P1 Bridge \u2014 Shannon/Khinchin External Narrow Bounded Note",
       "transitive_descendants": 12,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing content is a class-A conditional classification over existing inputs: determinant factorization supplies multiplicative Z behavior, and Cauchy/Shannon-Khinchin classify functionals only after additivity or chain-rule structure is imposed. The runner source performs real SymPy/Fraction checks for the stated identities, entropy additivity samples, determinant factorization, log additivity, and scope-boundary strings; it does not hard-code a contested numerical value. The No-Go Discipline boundary check has no packet-level failure: the Cauchy, Shannon, Khinchin, Aczel-Daroczy, and determinant-factorization routes all leave P1 additivity as an input, so the clean result applies only to the bounded non-retirement claim."
     },
     "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21": {
       "audit_date": "2026-05-22T02:53:51.180740+00:00",

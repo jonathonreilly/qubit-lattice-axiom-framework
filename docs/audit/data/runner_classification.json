@@ -14148,6 +14148,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_lorentz_violation.py"
     },
+    "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_luders_sequential_product_conditional_bridge.py"
+    },
     "main_open_cubic_validation_2026-04-11": {
       "assert_count": 0,
       "counts": {
@@ -40801,6 +40813,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_luders_sequential_product_conditional_bridge.py": {
+      "assert_count": 1,
+      "claims": [
+        "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_mass_mixing_disjointness_theorem.py": {
       "assert_count": 1,
       "claims": [
@@ -53668,15 +53695,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 305,
+    "decoration_candidates": 306,
     "dominant_class_distribution": {
       "A": 200,
-      "B": 263,
+      "B": 264,
       "C": 732,
       "D": 296,
       "none": 432
     },
-    "runners_classified": 1923,
+    "runners_classified": 1924,
     "runners_with_C": 949,
     "runners_with_D": 548
   }

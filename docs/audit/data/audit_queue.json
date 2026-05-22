@@ -9450,14 +9450,14 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "multisite_pauli_group_theorem_note_2026-05-02",
       "claim_scope": "Multi-site Pauli group P_N = \u27e8\u03c3_{i,x}\u27e9 acting on the N-site Cl(3) Fock space H = \u2297_{x=1}^N C\u00b2 has order |P_N| = 4^{N+1}; center Z(P_N) = {\u00b1I_N, \u00b1i I_N} of order 4 (scalar phases); quotient P_N/Z(P_N) \u2245 (Z_2 \u00d7 Z_2)^N of order 4^N; central extension 1 \u2192 Z_4 \u2192 P_N \u2192 (Z_2 \u00d7 Z_2)^N \u2192 1; element orders divide 4; minimal generating set has 3N involutory elements.",
       "claim_type": "positive_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
       ],

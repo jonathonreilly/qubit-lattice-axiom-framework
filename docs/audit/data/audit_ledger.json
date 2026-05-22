@@ -161765,7 +161765,7 @@
       "auditor": null,
       "auditor_confidence": null,
       "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "chain_closes": null,
       "chain_closure_explanation": null,
       "claim_id": "multisite_pauli_group_theorem_note_2026-05-02",
@@ -161789,8 +161789,19 @@
           "load_bearing_step_class": "C",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-22T03:31:17.579730+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260522-032806-021e808f-multisite_pauli_group_th-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic tensor-product extension of the per-site Pauli/Cl(3) representation to P_N on H = \u2297 C\u00b2, giving |P_N| = 4^{N+1}, scalar center Z_4, quotient (Z_2 \u00d7 Z_2)^N, and the stated central extension.",
+          "claim_type": "decoration",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_decoration"
+        },
+        "status": "disagreement"
       },
       "decoration_parent_claim_id": null,
       "deps": [

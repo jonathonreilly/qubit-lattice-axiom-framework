@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 13 |
 | open_gate | 14 |
-| unaudited | 1326 |
+| unaudited | 1325 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 92 |
 | ~~audited_failed~~ | 25 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 3 |
+| `decoration_under_cl3_color_automorphism_theorem` | 4 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -48,16 +48,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audited_clean` | 609 |
 | `audited_conditional` | 92 |
-| `audited_decoration` | 26 |
+| `audited_decoration` | 27 |
 | `audited_failed` | 69 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1550 |
+| `unaudited` | 1549 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1020 |
-| `decoration` | 27 |
+| `bounded_theorem` | 1019 |
+| `decoration` | 28 |
 | `meta` | 227 |
 | `no_go` | 237 |
 | `open_gate` | 112 |
@@ -840,6 +840,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
+| `su3_adjoint_casimir_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `minimal_axioms_2026-05-20` |
 | `wide_lattice_h2t_skeptic_audit_note` | decoration | ~~audited_decoration~~ | `decoration_under_wide_lattice_h2t_distance_law_note` | cross_family | codex-gpt-5.5 | B | `wide_lattice_h2t_distance_law_note` |
@@ -10347,6 +10348,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe read is that structureless causal DAGs can show TOWARD rows, and when they do the source-strength response stays close to linear on this pocket.  _(class `C`)_
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
+- **auditor confidence:** high
+
+### `su3_adjoint_casimir_theorem_note_2026-05-02`
+
+- **Note:** [`SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md`](../../docs/SU3_ADJOINT_CASIMIR_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Purely algebraic SU(3) statement that the quadratic Casimir on the 8-dimensional adjoint representation equals 3 in Gell-Mann normalization, excluding physical-gluon or perturbative-QCD readouts.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T170527Z-240ea771-su3_adjoint_casimir_theo-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The trace-normalized SU(3) adjoint identity Σ_{c,d} f^{acd} f^{bcd} = N δ^{ab}, hence Tr[T^a_adj T^b_adj] = 3 δ^{ab}, gives C_2(adj)=3 I_8 by Schur's lemma and trace.  _(class `A`)_
+- **chain closes:** True — Within the restricted algebraic scope, the conclusion follows from the retained-bounded SU(3) Gell-Mann normalization plus standard Lie-algebra facts. No physical-color bridge is needed for the audited algebraic Casimir statement because the note explicitly excludes physical gluon/QCD consequences.
+- **rationale:** The proof is a genuine standard algebraic identity check over the single cited SU(3) parent authority and admitted Lie-algebra facts. The runner instantiates Gell-Mann matrices, computes structure constants, builds the adjoint generators, and verifies the expected algebraic identities, but it does not produce a new first-principles framework number beyond the parent SU(3) structure. There are zero external comparator checks and the chain reduces to one upstream retained-bounded algebraic SU(3) embedding plus standard representation theory, so the decoration policy applies rather than audited_clean.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

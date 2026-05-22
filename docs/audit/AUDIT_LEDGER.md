@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 118 |
 | **retained_no_go** | 148 |
-| **retained_bounded** | 364 |
+| **retained_bounded** | 365 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1314 |
+| unaudited | 1313 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 611 |
+| `audited_clean` | 612 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 70 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1538 |
+| `unaudited` | 1537 |
 
 | claim_type | count |
 |---|---:|
@@ -545,6 +545,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8820,6 +8821,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** eta_bar / rho_bar = (mu eta) / (mu rho) = eta / rho, since mu > 0 cancels; the origin angle and doubled-angle identities then depend only on this preserved slope, and the (1,0)-based finite tangent difference factors as eta*(mu - 1)/((1 - mu*rho)*(1 - rho)).  _(class `A`)_
 - **chain closes:** True — The scoped claim is pure algebra and elementary plane geometry over abstract positive real symbols with no cited dependencies. The note explicitly guards the finite-tangent exclusions needed for T4, so the factorization proves the iff condition on its stated domain.
 - **rationale:** The load-bearing step is a direct algebraic cancellation under positive radial scaling, with standard arctan and double-angle consequences, and the runner independently verifies the symbolic slope, origin-angle, doubled-angle, radius, and finite-tangent factorization checks. Residual risk is limited to scope control: this clean verdict covers only the abstract Euclidean radial-scaling theorem and does not ratify any CKM-specific assignment, physical observable bridge, or upstream parent framing.
+- **auditor confidence:** high
+
+### `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional Hilbert-Schmidt singlet projection weights for nonzero Hermitian color insertions, including identity and normalized traceless SU(N_c) generator cases, with no kappa_EW matching assertion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260522T172232Z-f22ce0a1-rconn_vertex_color_singl-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The projection coefficient onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, yielding rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].  _(class `A`)_
+- **chain closes:** True — The conclusion follows from finite-dimensional Hilbert-Schmidt projection algebra plus the retained SU(N_c) generator normalization cited from the Fierz convention note. The open EW matching-rule identification is explicitly excluded and is not load-bearing for this bounded projection lemma.
+- **rationale:** The load-bearing step is a direct algebraic projection identity, not a numerical fit, external comparator, or renaming. The runner source performs exact rational matrix computations and source-boundary checks; it does not hard-code a contested physical coefficient or import kappa_EW. The sole cited authority is retained-grade for the needed normalization convention, and its open matching-rule language is outside this claim's audited scope.
 - **auditor confidence:** high
 
 ### `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`

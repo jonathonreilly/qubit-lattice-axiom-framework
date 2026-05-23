@@ -54,9 +54,9 @@
   "ready_count": 0,
   "resolved_or_invalid": [
     {
-      "actual_audit_status": "audit_in_progress",
+      "actual_audit_status": "audited_clean",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audit_in_progress",
+      "actual_effective_status": "retained",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1494,9 +1494,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audit_in_progress",
+      "actual_audit_status": "audited_clean",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "audit_in_progress",
+      "actual_effective_status": "retained",
       "audit_question": "Does the structural native gauge-closure scope qualify as positive_theorem, or does the row need a structural/physical split first?",
       "claim_id": "native_gauge_closure_note",
       "expected_current_audit_status": "audited_clean",

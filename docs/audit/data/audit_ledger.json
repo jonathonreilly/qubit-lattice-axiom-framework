@@ -83600,13 +83600,13 @@
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
-      "direct_in_degree": 14,
+      "direct_in_degree": 13,
       "effective_status": "retained_no_go",
       "effective_status_reason": "self",
       "helper_runner_paths": [],
       "independence": "fresh_context",
       "intrinsic_status": "retained_no_go",
-      "load_bearing_score": 21.128,
+      "load_bearing_score": 20.627,
       "load_bearing_step": "The independence witness constructs two admissible completions, kappa_EW=0 and kappa_EW=1, that share the same Fierz ratio, CMT scaling, and OZI boundedness but give different EW matching factors, 9/8 and 1.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
@@ -83767,7 +83767,7 @@
       },
       "runner_path": "scripts/frontier_ew_current_matching_rule_no_go.py",
       "title": "EW Current Matching Rule No-Go Proposal Note",
-      "transitive_descendants": 1118,
+      "transitive_descendants": 1117,
       "verdict_rationale": "The cited Fierz authority is retained for the exact channel fraction and explicitly does not derive the matching rule; this no-go uses that omission as the residual under audit rather than importing it as a closed bridge. The runner source genuinely checks the rational parameterization, CMT cancellation, OZI boundedness class, and two-completion witness, plus downstream wording guards; it does not hard-code kappa_EW=0 as a premise. The no-go discipline gate passes on the restricted packet: attacks through Fierz arithmetic, CMT scaling, OZI suppression, convention/readout ratification, empirical agreement, and a future selector route all reduce to the same missing selector and do not close it."
     },
     "ew_current_traceless_generator_selector_no_go_note_2026-05-03": {
@@ -209838,13 +209838,13 @@
         "yukawa_color_projection_theorem",
         "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 15,
+      "direct_in_degree": 14,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
       "independence": null,
       "intrinsic_status": "unaudited",
-      "load_bearing_score": 17.539,
+      "load_bearing_score": 17.032,
       "load_bearing_step": null,
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
@@ -210184,7 +210184,7 @@
       },
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "R_conn from the SU(N_c) Fierz Channel-Count Identity, with 1/N_c Dynamical-Correction Estimate",
-      "transitive_descendants": 1051,
+      "transitive_descendants": 1046,
       "verdict_rationale": null
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
@@ -273343,20 +273343,16 @@
       "chain_closure_explanation": null,
       "claim_id": "yt_color_projection_correction_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type": "no_go",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
       "claim_type_last_reviewed": null,
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "yt_ew_color_projection_theorem",
-        "yukawa_color_projection_theorem",
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "rconn_derived_note"
+        "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "direct_in_degree": 10,
       "effective_status": "unaudited",
@@ -273369,7 +273365,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "5cfd0bf4735e34a9a3ae12dee1c114f61c7650567ec2204ac9d37a742bc161d9",
+      "note_hash": "a5143a6c6feb0b28941b1d94ddeb27859ad7c42e306ec5a461b7ad9c2aa43eab",
       "note_path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -273498,7 +273494,7 @@
         "total_pass": 0
       },
       "runner_path": "scripts/frontier_yt_color_projection_correction.py",
-      "title": "Bounded Conditional Form of the Color-Singlet Projection Factor on y_t",
+      "title": "Y_T Color Projection Matching No-Go and Conditional Family",
       "transitive_descendants": 1037,
       "verdict_rationale": null
     },
@@ -273734,13 +273730,13 @@
         "ew_current_fierz_channel_decomposition_note_2026-05-01",
         "ew_current_matching_rule_open_gate_note_2026-05-03"
       ],
-      "direct_in_degree": 50,
+      "direct_in_degree": 49,
       "effective_status": "audited_conditional",
       "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "audited_conditional",
-      "load_bearing_score": 35.031,
+      "load_bearing_score": 34.524,
       "load_bearing_step": "The package-level EW correction is parameterized as K_EW(kappa_EW) = 1 / (F_adj + kappa_EW (1 - F_adj)), with F_adj = 8/9 and kappa_EW = 0 only as an extra connected-trace matching condition.",
       "load_bearing_step_class": "E",
       "max_descendant_status": "retained_pending_chain",
@@ -274053,7 +274049,7 @@
       },
       "runner_path": "scripts/frontier_color_projection_mc.py",
       "title": "Color-Singlet Projection Theorem for EW Couplings",
-      "transitive_descendants": 1045,
+      "transitive_descendants": 1040,
       "verdict_rationale": "The restricted packet supports the conditional family K_EW(kappa_EW) once kappa_EW is introduced as a readout coefficient, but that introduction is a definition/parameterization rather than a derivation of the physical value. The cited Fierz authority explicitly leaves the matching rule open, and the retained_no_go authority proves that retained primitives cannot select kappa_EW = 0. The Monte Carlo runner checks R_conn against 8/9 but does not compute the physical EW readout coefficient, so it cannot close the 9/8 package coefficient."
     },
     "yt_ew_coupling_bridge_note": {
@@ -281745,13 +281741,13 @@
         "native_gauge_closure_note",
         "graph_first_su3_integration_note"
       ],
-      "direct_in_degree": 14,
+      "direct_in_degree": 13,
       "effective_status": "retained_pending_chain",
       "effective_status_reason": "decoration_waiting_on:ew_current_fierz_channel_decomposition",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_pending_chain",
-      "load_bearing_score": 17.042,
+      "load_bearing_score": 16.535,
       "load_bearing_step": "The adjoint-channel fraction of the SU(N_c) q-qbar Hilbert space is dim(adj)/dim(N_c \u2297 N_c-bar) = (N_c^2 - 1)/N_c^2, hence 8/9 at N_c = 3.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
@@ -281971,7 +281967,7 @@
       },
       "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
       "title": "Yukawa Color-Singlet Projection Theorem",
-      "transitive_descendants": 1053,
+      "transitive_descendants": 1048,
       "verdict_rationale": "The load-bearing step is an exact algebraic representation-dimension identity, and the runner checks only note structure, Fierz completeness, dimension counting, and the 8/9 arithmetic. The restricted packet explicitly excludes the downstream physical-Higgs-Z and Yukawa-matching assertions, so those open bridges do not block the scoped algebraic claim. Because this source row mainly reuses the upstream EW current Fierz-channel decomposition result with standard group theory and no external comparator checks, it is decoration rather than an independent retained positive theorem."
     },
     "z2_hw1_mass_matrix_parametrization_note": {

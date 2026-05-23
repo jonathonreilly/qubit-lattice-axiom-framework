@@ -1,0 +1,23 @@
+loop: yt-color-projection-bridge
+branch: physics-loop/yt-color-projection-bridge-20260523
+target_row: yt_color_projection_correction_note
+active_route: "exact underdetermination/no-go for kappa_Y=0"
+actual_current_surface_status: no-go
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The block does not derive kappa_Y=0; it proves the current retained packet underdetermines it."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md
+  - scripts/frontier_yt_color_projection_correction.py
+  - outputs/yt_color_projection_matching_no_go_2026-05-23.txt
+open_imports:
+  - "Future positive Y_T color correction would require a scalar/taste-condensate matching theorem deriving kappa_Y=0."
+completed_checks:
+  - "PYTHONPATH=scripts python3 scripts/frontier_yt_color_projection_correction.py"
+next_exact_action: "Run audit pipeline, review diff, open review PR."
+stop_condition: "Block packaged as no-go repair PR."
+

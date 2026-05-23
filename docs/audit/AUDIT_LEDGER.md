@@ -56,10 +56,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1024 |
+| `bounded_theorem` | 1023 |
 | `decoration` | 31 |
 | `meta` | 229 |
-| `no_go` | 238 |
+| `no_go` | 239 |
 | `open_gate` | 112 |
 | `positive_theorem` | 741 |
 
@@ -76,9 +76,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 ### Runner classification (static heuristic)
 
 - runners classified: 1929
-- runners with (C) first-principles compute hits: 950
-- runners with (D) external comparator hits: 548
-- decoration candidates (no C, no D): 309
+- runners with (C) first-principles compute hits: 949
+- runners with (D) external comparator hits: 547
+- decoration candidates (no C, no D): 310
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -96,7 +96,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1032 | 38.51 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1032 | 38.01 | `unaudited` | unaudited |
 | 10 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 1032 | 37.01 | `unaudited` | unaudited |
-| 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 1045 | 35.03 | `audited_conditional` | ~~audited_conditional~~ |
+| 11 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 1040 | 34.52 | `audited_conditional` | ~~audited_conditional~~ |
 | 12 | `native_gauge_closure_note` | bounded_theorem | critical | 1126 | 33.64 | `audited_clean` | **retained_bounded** |
 | 13 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 1032 | 33.01 | `unaudited` | unaudited |
 | 14 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 1032 | 32.01 | `unaudited` | unaudited |

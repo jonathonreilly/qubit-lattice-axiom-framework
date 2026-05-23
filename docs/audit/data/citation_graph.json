@@ -27178,23 +27178,7 @@
     },
     {
       "from": "yt_color_projection_correction_note",
-      "to": "yt_ew_color_projection_theorem"
-    },
-    {
-      "from": "yt_color_projection_correction_note",
-      "to": "yukawa_color_projection_theorem"
-    },
-    {
-      "from": "yt_color_projection_correction_note",
-      "to": "ew_current_matching_rule_open_gate_note_2026-05-03"
-    },
-    {
-      "from": "yt_color_projection_correction_note",
       "to": "ew_current_fierz_channel_decomposition_note_2026-05-01"
-    },
-    {
-      "from": "yt_color_projection_correction_note",
-      "to": "rconn_derived_note"
     },
     {
       "from": "yt_constructive_uv_bridge_note",
@@ -79529,21 +79513,17 @@
     },
     "yt_color_projection_correction_note": {
       "claim_id": "yt_color_projection_correction_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [
-        "yt_ew_color_projection_theorem",
-        "yukawa_color_projection_theorem",
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "rconn_derived_note"
+        "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5cfd0bf4735e34a9a3ae12dee1c114f61c7650567ec2204ac9d37a742bc161d9",
+      "note_hash": "a5143a6c6feb0b28941b1d94ddeb27859ad7c42e306ec5a461b7ad9c2aa43eab",
       "path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
       "runner_path": "scripts/frontier_yt_color_projection_correction.py",
-      "title": "Bounded Conditional Form of the Color-Singlet Projection Factor on y_t"
+      "title": "Y_T Color Projection Matching No-Go and Conditional Family"
     },
     "yt_constructive_uv_bridge_note": {
       "claim_id": "yt_constructive_uv_bridge_note",
@@ -81503,24 +81483,24 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 521,
+      "bounded_theorem": 520,
       "decoration": 1,
       "meta": 187,
-      "no_go": 64,
+      "no_go": 65,
       "none": 1495,
       "open_gate": 46,
       "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 959,
+      "bounded_theorem": 958,
       "decoration": 1,
       "meta": 187,
-      "no_go": 167,
+      "no_go": 168,
       "none": 443,
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9690,
+    "edge_count": 9686,
     "leaf_count": 756,
     "node_count": 2489,
     "root_count": 818,

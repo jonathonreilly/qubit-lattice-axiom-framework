@@ -159714,9 +159714,10 @@
       "verdict_rationale": "The safe claim is not a retained positive theorem; it is an open-gate heuristic record with explicit non-closure language and a named true-Kubo closure lane. The completed frozen log supports the reported correlation and sign-agreement numbers, while the source note itself excludes the tuned threshold number from no-fit evidence and states that path-phase terms are missing from the heuristic. Residual risk is operational reproducibility of the slow runner; that does not change the open-gate boundary because the row is not being promoted to a theorem."
     },
     "linear_response_second_order_kubo_note": {
-      "audit_date": "2026-05-22T02:42:00.907889+00:00",
+      "audit_date": "2026-05-23T18:20:01.804656+00:00",
       "audit_state_snapshot": {
         "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
         "dep_claim_scope": {
           "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
           "minimal_axioms_2026-05-03": null
@@ -159738,20 +159739,20 @@
         "transitive_descendants": 0
       },
       "audit_status": "audited_clean",
-      "auditor": "claude-audit-loop-2026-05-19-row4",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T181743Z-fb17a8f8-linear_response_second_o-01",
       "auditor_confidence": "high",
-      "auditor_family": "claude-opus",
-      "auditor_model": "claude-opus-4-7",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The third parallel propagator C_j = -k^2 Sum T_P Q_P^2 is the standard second derivative of the same path-sum that produced the audited-clean sibling B_j; kubo_2 follows by elementary chain rule (cz = N/T) over A,B,C; the cached runner computes the recurrence and per-family numbers that the note reports verbatim; the broader all-orders-Taylor language is explicitly demoted out of binding scope by the 2026-05-17 narrowing edit.",
+      "chain_closure_explanation": "The primary runner constructs the A, B, and C propagators, recomputes measured finite-difference deltas on the declared panel, and reports the note's 15/44 subset count, residual totals, and focus-family ratios. The conclusion follows for the finite second-order replay only.",
       "claim_id": "linear_response_second_order_kubo_note",
-      "claim_scope": "On the declared 44-family runner panel, adding the second-order Kubo term (1/2)*kubo_2*s^2 to the first-order prediction at the cached truncation order produces zero growth of the strict linearity-regime subset (15/44 -> 15/44) and slightly larger aggregate residual at s=0.008 (5.6090 -> 5.7221); binding scope is the finite second-order null replay, not an all-orders Taylor no-go.",
+      "claim_scope": "Finite second-order Kubo null replay on the named 44-family runner panel at strengths s in {0.001, 0.002, 0.004, 0.008}; no all-orders Taylor no-go is audited.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-22T02:42:00.907889+00:00",
+      "claim_type_last_reviewed": "2026-05-23T18:20:01.804656+00:00",
       "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
@@ -159768,16 +159769,16 @@
         "scripts/independent_generators_heldout.py",
         "scripts/universality_classifier.py"
       ],
-      "independence": "cross_family",
+      "independence": "fresh_context",
       "intrinsic_status": "retained_pending_chain",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "First-order Kubo linearity-regime count 15/44 = first+second-order linearity-regime count 15/44 (zero growth); sum |residual| at s=0.008 grows 5.6090 -> 5.7221 with the second-order term added.",
+      "load_bearing_step": "At the cached truncation order, adding 1/2*kubo2*s^2 to the first-order Kubo prediction does not change the linearity-regime subset count (15/44) and grows the aggregate s=0.008 residual from 5.6090 to 5.7221.",
       "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "8ff5e354405b0c11958edeb2e1a40784a6c27b95dc95ab861f0a8d17770eb729",
       "note_path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
-      "notes_for_re_audit_if_any": "",
+      "notes_for_re_audit_if_any": "Re-check only if the claim is expanded beyond the finite second-order runner replay into an all-orders Taylor boundary statement.",
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -159910,7 +159911,7 @@
       "runner_path": "scripts/linear_response_second_order_kubo.py",
       "title": "Second-Order Kubo Extension \u2014 Finite Second-Order Null Replay (Binding)",
       "transitive_descendants": 0,
-      "verdict_rationale": "Load-bearing step is class (C): the runner instantiates a third parallel propagator C_j via the literal second derivative of the same path-sum that produced the retained_bounded first-order sibling, then applies the standard chain rule to evaluate kubo_2 = (N_2 - 2*kubo_1*T_1 - cz_0*T_2)/T_0 and compares the resulting prediction against an independent finite-difference measurement on 44 families. Numbers in the source note (15/44 zero growth, 5.6090 vs 5.7221, per-family kubo_2 table) match the SHA-pinned runner cache exactly. The 2026-05-17 audited_conditional repair explicitly demoted the all-orders Taylor no-go out of binding scope, leaving only the finite second-order null replay as the bounded claim; dependencies linear_response_true_kubo_note (retained_bounded) and minimal_axioms_2026-05-03 (meta) close the chain. Residual risk: the \u00a7Honest read prose still uses phrasing like 'Kubo Taylor approach has a bounded reach', which a hostile reader could over-extend; the binding-scope statement at the top of the note correctly anchors the claim to the finite computation."
+      "verdict_rationale": "The runner source performs an internal computation rather than printing hard-coded contested outputs, and the helper prediction dictionaries are not load-bearing for the reported Kubo residual comparison. The cited first-order Kubo authority is retained_bounded and is not used to import the numerical null result. The negative-claim gate supports only the finite replay: recurrence, panel selection, measurement convention, residual metric, and zero-denominator/counting attack routes are resolved at the runner-output level, while all-orders Taylor/no-higher-rescue language remains outside this audit scope."
     },
     "linear_response_true_kubo_note": {
       "audit_date": "2026-05-05T09:30:52.833678+00:00",
@@ -290218,8 +290219,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2334,
-    "re_audit_required": 1,
+    "preserved_existing": 2335,
+    "re_audit_required": 0,
     "row_count": 2379,
     "seeded_new": 0
   }

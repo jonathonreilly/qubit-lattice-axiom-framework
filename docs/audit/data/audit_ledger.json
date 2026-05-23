@@ -152743,24 +152743,42 @@
       "verdict_rationale": "The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization."
     },
     "lattice_keff_continuum_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "auditor_model": "claude-opus-4-7",
+      "audit_date": "2026-05-23T20:14:16.134581+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "continuum_limit_note": "Finite-h cached h^2+T lattice trend table for h in {1.0, 0.5, 0.25, 0.125}, including transfer norms, TOWARD gravity rows, F~M exponents near 1, and 2.7% weak-field deflection change from h=0.25 to h=0.125; no audited h -> 0 convergence theorem."
+        },
+        "dep_claim_type": {
+          "continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "continuum_limit_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9a42641695997677945c85a6302adf41ed7a033c1f27c618bc55678b3bb8afae",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T201353Z-9f778d7c-lattice_keff_continuum_n-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The included runner genuinely modifies the propagation kernel to use k_eff = k\u00b7h, calls the shared lattice measurement stack, and produces the reported finite rows plus detector failure at h = 0.25. The note\u2019s stronger wording about exhaustion of the dense candidate pool is contextual, but the audited negative for this scheme closes on the packet evidence.",
       "claim_id": "lattice_keff_continuum_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
+      "claim_scope": "Audited the bounded negative claim that the dense k_eff = k\u00b7h refinement scheme fails on the provided finite sweep h \u2208 {2.0, 1.0, 0.5, 0.25} using the included runner and helper source.",
+      "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "migration_hint",
+      "claim_type_last_reviewed": "2026-05-23T20:14:16.134581+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -152768,21 +152786,21 @@
         "continuum_limit_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/lattice_continuum_limit.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The remaining open dense continuum scheme k_eff = k\u00b7h gives finite rows at h = 2.0, 1.0, 0.5 but detector probability collapses by h = 0.25, so it does not produce a clean retained refinement lane.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "9a669d8f05cd99c92ace5d4ed4476006b32ea32b6cfbaad6455c6f83a5c21fd0",
       "note_path": "docs/LATTICE_KEFF_CONTINUUM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the unpruned h=0.25 P_free \u2248 7e-75 statement, since that replay source is described in the note but not included as a separate runner here; it is not needed for the finite-sweep negative because the pruned runner already establishes practical detector collapse.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -152865,14 +152883,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 0,
+        "C": 1,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 1
       },
       "runner_path": "scripts/lattice_keff_continuum.py",
       "title": "k_eff = k\u00b7h Continuum Limit Note",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note\u2019s load-bearing negative is supported by a completed runner cache and by runner source that actually computes the lattice propagation rather than printing constants or importing the contested result. The cited upstream authority is retained_bounded and is used only as comparator/background for the continuum-limit measurement stack, not as an open premise needed to rescue the k_eff result. The runner stdout contains an over-optimistic printed line that gravity appears to be converging, but the note does not rely on that line; it correctly treats the detector collapse and unstable finite rows as a negative for a clean refinement lane."
     },
     "lattice_kernel_transfer_norm_note": {
       "audit_date": "2026-05-03T19:32:05.252731+00:00",

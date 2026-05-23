@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 138 |
-| **retained_no_go** | 149 |
+| **retained_no_go** | 150 |
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1266 |
+| unaudited | 1265 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
@@ -49,22 +49,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 649 |
+| `audited_clean` | 650 |
 | `audited_conditional` | 122 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1492 |
+| `unaudited` | 1491 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1016 |
 | `decoration` | 32 |
 | `meta` | 229 |
-| `no_go` | 242 |
+| `no_go` | 243 |
 | `open_gate` | 112 |
-| `positive_theorem` | 750 |
+| `positive_theorem` | 749 |
 
 | criticality | count |
 |---|---:|
@@ -436,6 +436,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_family_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_fanout_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_field_strength_unification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7017,6 +7018,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The cubic-lattice Green's function satisfies G(r) -> 1 / (4 pi |r|) as |r| -> infinity, asserted as the Maradudin-Montroll-Weiss asymptotic.  _(class `B`)_
 - **chain closes:** False — The packet provides no retained cited authority or derivation of the asymptotic. The missing step is the actual textbook proof or retained upstream authority establishing the lattice Green's function asymptotic under the stated normalization.
 - **rationale:** The source note is explicit that it is a named non-derivation import, not a derivation from the framework axioms. The load-bearing asymptotic is imported from textbook authority, but the restricted packet includes no cited authorities in full and no runner or independent derivation. Therefore the bounded wrapper can serve as an imported premise only conditionally on a retained authority or proof for the stated normalization.
+- **auditor confidence:** high
+
+### `lattice_keff_continuum_note`
+
+- **Note:** [`LATTICE_KEFF_CONTINUUM_NOTE.md`](../../docs/LATTICE_KEFF_CONTINUUM_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the bounded negative claim that the dense k_eff = k·h refinement scheme fails on the provided finite sweep h ∈ {2.0, 1.0, 0.5, 0.25} using the included runner and helper source.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T201353Z-9f778d7c-lattice_keff_continuum_n-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The remaining open dense continuum scheme k_eff = k·h gives finite rows at h = 2.0, 1.0, 0.5 but detector probability collapses by h = 0.25, so it does not produce a clean retained refinement lane.  _(class `C`)_
+- **chain closes:** True — The included runner genuinely modifies the propagation kernel to use k_eff = k·h, calls the shared lattice measurement stack, and produces the reported finite rows plus detector failure at h = 0.25. The note’s stronger wording about exhaustion of the dense candidate pool is contextual, but the audited negative for this scheme closes on the packet evidence.
+- **rationale:** The source note’s load-bearing negative is supported by a completed runner cache and by runner source that actually computes the lattice propagation rather than printing constants or importing the contested result. The cited upstream authority is retained_bounded and is used only as comparator/background for the continuum-limit measurement stack, not as an open premise needed to rescue the k_eff result. The runner stdout contains an over-optimistic printed line that gravity appears to be converging, but the note does not rely on that line; it correctly treats the detector collapse and unstable finite rows as a negative for a clean refinement lane.
 - **auditor confidence:** high
 
 ### `lattice_kernel_transfer_norm_note`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 264,
     "high": 338,
-    "leaf": 335,
+    "leaf": 334,
     "medium": 329
   },
   "cycle_break_target_count": 0,
@@ -28197,32 +28197,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lattice_keff_continuum_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "continuum_limit_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/lattice_continuum_limit.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LATTICE_KEFF_CONTINUUM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_keff_continuum.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "mirror_mutual_information_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38022,6 +37996,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 15,
-  "total_pending": 1266
+  "ready_count": 14,
+  "total_pending": 1265
 }

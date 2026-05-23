@@ -17918,7 +17918,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "direct_in_degree": 1,
@@ -19723,63 +19723,96 @@
       "verdict_rationale": "The runner output directly supports the note's negative robustness summary: p=0.5 and p=1.0 are TOWARD on 3/6 damaged cases, while p=2.0 is TOWARD on 5/6, and p=1.0 has the smallest mean |F~M-p| among finite surviving fits. The primary and helper source show an actual bounded numerical replay from the stated lattice/action setup, with no hard-coded expected summary values or external comparator calibration. The cited authorities are retained_bounded and are used only to bound the family and neighboring action-power context, so the narrowed claim closes as a bounded theorem."
     },
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": "2026-05-22T00:09:14.377597+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-busch_povm_extension_on_-002",
-      "auditor_confidence": "medium",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited minimal axioms supply the per-site M_2(C) algebra and Z^3 finite-region tensor-product substrate; the source note explicitly imports Busch 2003 as the standard theorem covering dim H \u2265 2. Given that import, the finite-region conclusion follows by direct substitution.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": "Finite-region application of the quoted Busch POVM-extension theorem to the qubit-lattice effect algebra E(H_\u039b) with H_\u039b = tensor_x C^2 and |\u039b| \u2265 1.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": "2026-05-22T00:09:14.377597+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_pending_chain",
-      "effective_status_reason": "chain_waiting_on:minimal_axioms_2026-05-20",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_pending_chain",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM-extension theorem applies and gives m(E) = Tr(\u03c3E) for a unique density matrix \u03c3.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "06ea434076b8d9da4be4bb41d681ee8576c97c24db0e3e7782c8ad759db10e67",
       "note_path": "docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check whether this audit lane treats Busch 2003 as admissible standard mathematical background or requires the theorem text as a retained upstream authority.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.811181+00:00",
+          "audit_date": "2026-05-22T00:09:14.377597+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-busch_povm_extension_on_-002",
+          "auditor_confidence": "medium",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited minimal axioms supply the per-site M_2(C) algebra and Z^3 finite-region tensor-product substrate; the source note explicitly imports Busch 2003 as the standard theorem covering dim H \u2265 2. Given that import, the finite-region conclusion follows by direct substitution.",
+          "claim_scope": "Finite-region application of the quoted Busch POVM-extension theorem to the qubit-lattice effect algebra E(H_\u039b) with H_\u039b = tensor_x C^2 and |\u039b| \u2265 1.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-22T00:09:14.377597+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM-extension theorem applies and gives m(E) = Tr(\u03c3E) for a unique density matrix \u03c3.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check whether this audit lane treats Busch 2003 as admissible standard mathematical background or requires the theorem text as a retained upstream authority.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The audited result is a narrow application of a quoted standard theorem to the finite qubit-lattice Hilbert space. The only framework-specific work is verifying H_\u039b has dimension 2^|\u039b| \u2265 2 and effect algebra E(H_\u039b), which follows from the provided minimal axioms plus ordinary finite-dimensional tensor products. The note does not claim to rederive Busch's theorem, and the conclusion is scoped to finite regions rather than the quasi-local limit."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
@@ -19792,7 +19825,7 @@
       "runner_path": null,
       "title": "Busch POVM Extension on the Qubit-Lattice Effect Algebra (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The audited result is a narrow application of a quoted standard theorem to the finite qubit-lattice Hilbert space. The only framework-specific work is verifying H_\u039b has dimension 2^|\u039b| \u2265 2 and effect algebra E(H_\u039b), which follows from the provided minimal axioms plus ordinary finite-dimensional tensor products. The note does not claim to rederive Busch's theorem, and the conclusion is scoped to finite regions rather than the quasi-local limit."
+      "verdict_rationale": null
     },
     "c3_symmetry_preserved_interpretation_note_2026-05-08": {
       "audit_date": null,
@@ -27340,7 +27373,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "chsh_structural_bound_narrow_theorem_note_2026-05-17",
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
@@ -104375,102 +104408,47 @@
       "verdict_rationale": "The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support."
     },
     "gauge_wilson_isotropy_boundary_note_2026-05-04": {
-      "audit_date": "2026-05-22T17:04:46.565882+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
-          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "Rules out the exact constant-lift Wilson plaquette reduction P(beta)=P_1plaq(Gamma_cand beta) with Gamma_cand=(3/2)(2/sqrt(3))^(1/4), using the beta=0 strong-coupling slope.",
-          "minimal_axioms_2026-05-20": null,
-          "qubit_axiom_hardening_note_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
-          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "no_go",
-          "minimal_axioms_2026-05-20": "meta",
-          "qubit_axiom_hardening_note_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
-          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "retained_no_go",
-          "minimal_axioms_2026-05-20": "meta",
-          "qubit_axiom_hardening_note_2026-05-20": "meta"
-        },
-        "deps": [
-          "gauge_scalar_temporal_completion_theorem_note",
-          "gauge_vacuum_plaquette_constant_lift_obstruction_note",
-          "minimal_axioms_2026-05-20",
-          "qubit_axiom_hardening_note_2026-05-20"
-        ],
-        "load_bearing_score": 10.54,
-        "runner_hash": "dd411687cae540d9a4524b91fbc4bb6663624c48eee90aa66164d6d9d48f3685",
-        "transitive_descendants": 1052
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170309Z-ad3affec-gauge_wilson_isotropy_bo-02",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The algebraic checks establish the two negative route claims directly, and the retained_bounded Wilson authority supplies the accepted one-coefficient plaquette surface. The conclusion is explicitly scoped to those two mechanisms and does not claim a global no-go against future approved anisotropy theorems.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_wilson_isotropy_boundary_note_2026-05-04",
-      "claim_scope": "On the accepted nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.",
+      "claim_scope": null,
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": "2026-05-22T17:04:46.565882+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "medium",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-22T17:02:46.311026+00:00",
-          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170124Z-ad3affec-gauge_wilson_isotropy_bo-01",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Route-specific negative boundary: on the accepted isotropic Wilson nearest-neighbor plaquette surface, the Cl(3) pseudoscalar-as-fourth-generator route and the standard staggered-eta plaquette-product route do not produce a spatial/temporal or orientation-dependent gauge-coupling split.",
-          "claim_type": "no_go",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-22T17:04:46.565882+00:00",
-          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170309Z-ad3affec-gauge_wilson_isotropy_bo-02",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "On the accepted nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.",
-          "claim_type": "no_go",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "qubit_axiom_hardening_note_2026-05-20",
         "gauge_scalar_temporal_completion_theorem_note",
         "gauge_vacuum_plaquette_constant_lift_obstruction_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_pending_chain",
-      "effective_status_reason": "chain_waiting_on:minimal_axioms_2026-05-20",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_pending_chain",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 4.085,
-      "load_bearing_step": "The Cl(3) pseudoscalar commutes with the three spatial generators, and the standard staggered eta plaquette product equals -1 on all six orientations, so neither tested mechanism yields orientation-dependent Wilson plaquette coefficients.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "b262f5ae795c84f215b1b428c2e22fcee71809234b1577d9efa8139d9f390805",
       "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check that treating the framework meta notes as ratified local-algebra authority is accepted audit policy for this lane.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -104618,21 +104596,108 @@
             "pass": 19
           },
           "verdict_rationale": "Scoped to the source note's route-specific boundary, audited_clean/no_go is applyable. The runner/source prove the two contested PR #528 mechanisms fail: omega=G1G2G3 is central in Cl(3), squares to -I in the Pauli irrep, commutes with each G_i, and has nonzero anticommutators, so it is not a fourth anticommuting generator; the standard staggered eta plaquette product is -1 for every xy,xz,xt,yz,yt,zt orientation, so it supplies no orientation-dependent factor. The one-hop Wilson grammar dependency supplies the accepted common plaquette coefficient, and the constant-lift obstruction blocks reusing scalar/response factors as an exact action-coupling lift. N1: six attacks were considered within the packet: pseudoscalar-as-time-generator, representation-dependence of centrality, eta orientation sign split, eta site/parity escape beyond the sampled cube, accepted Wilson grammar already allowing anisotropic coefficients, and scalar/response constant-lift route to changing the action surface; all fail or are ruled out by the source, runner, or one-hop dependencies, while unrelated future anisotropy theorems remain outside scope. N2: the walls are not inflated; the Cl(3) and eta walls are independent, and the accepted-Wilson grammar is a separate boundary condition. N3: phrases such as accepted and standard are backed by the one-hop Wilson dependency or by the explicit eta definition in the note; no hidden wall is needed. N4: residuals match: the scalar-temporal dependency supports only one common Wilson coefficient, and the constant-lift dependency attacks action-coupling lift reuse; neither is used for a broader global no-go. N5: rhetoric is narrowed to these mechanisms and six plaquette orientations, not every anisotropy route. N6: convention/reframe paths are not invoked; the claim does not say a new axiom is required globally, only that these routes do not justify replacement absent separate approval. N7: the strongest steelman is that another approved theorem could derive anisotropic coefficients, but the note expressly leaves that open, so it does not defeat the scoped claim. N8: the restricted packet has no prior panel outcomes and no applicable retired similar wall; no cross-cycle echo undermines this narrow boundary.\n\nFive-judge panel breakdown: 5x ('first', 'audited_clean', 'no_go', 'A')."
+        },
+        {
+          "archived_at": "2026-05-23T12:01:21.819354+00:00",
+          "audit_date": "2026-05-22T17:04:46.565882+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_scalar_temporal_completion_theorem_note": "Exact algebraic theorem for the explicitly bounded Wilson nearest-neighbor scalar gauge-source class: one common plaquette weight across the six orientations, no independent site term, no anisotropic plaquette splitting, directional kernel K_O(p)=sum_mu a_mu sin^2 p_mu, evaluated on the L_s=2 APBC minimal spatial cube with A_O(L_t)=(1/(2L_t)) sum_omega 1/K_O(omega). It does not audit the full interacting plaquette expectation bridge.",
+              "gauge_vacuum_plaquette_constant_lift_obstruction_note": "Rules out the exact constant-lift Wilson plaquette reduction P(beta)=P_1plaq(Gamma_cand beta) with Gamma_cand=(3/2)(2/sqrt(3))^(1/4), using the beta=0 strong-coupling slope.",
+              "minimal_axioms_2026-05-20": null,
+              "qubit_axiom_hardening_note_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "gauge_scalar_temporal_completion_theorem_note": "bounded_theorem",
+              "gauge_vacuum_plaquette_constant_lift_obstruction_note": "no_go",
+              "minimal_axioms_2026-05-20": "meta",
+              "qubit_axiom_hardening_note_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
+              "gauge_vacuum_plaquette_constant_lift_obstruction_note": "retained_no_go",
+              "minimal_axioms_2026-05-20": "meta",
+              "qubit_axiom_hardening_note_2026-05-20": "meta"
+            },
+            "deps": [
+              "gauge_scalar_temporal_completion_theorem_note",
+              "gauge_vacuum_plaquette_constant_lift_obstruction_note",
+              "minimal_axioms_2026-05-20",
+              "qubit_axiom_hardening_note_2026-05-20"
+            ],
+            "load_bearing_score": 10.54,
+            "runner_hash": "dd411687cae540d9a4524b91fbc4bb6663624c48eee90aa66164d6d9d48f3685",
+            "transitive_descendants": 1052
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170309Z-ad3affec-gauge_wilson_isotropy_bo-02",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The algebraic checks establish the two negative route claims directly, and the retained_bounded Wilson authority supplies the accepted one-coefficient plaquette surface. The conclusion is explicitly scoped to those two mechanisms and does not claim a global no-go against future approved anisotropy theorems.",
+          "claim_scope": "On the accepted nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-22T17:04:46.565882+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-22T17:02:46.311026+00:00",
+              "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170124Z-ad3affec-gauge_wilson_isotropy_bo-01",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Route-specific negative boundary: on the accepted isotropic Wilson nearest-neighbor plaquette surface, the Cl(3) pseudoscalar-as-fourth-generator route and the standard staggered-eta plaquette-product route do not produce a spatial/temporal or orientation-dependent gauge-coupling split.",
+              "claim_type": "no_go",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-22T17:04:46.565882+00:00",
+              "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170309Z-ad3affec-gauge_wilson_isotropy_bo-02",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "On the accepted nearest-neighbor Wilson plaquette surface, the Cl(3) pseudoscalar route and the standard staggered-eta plaquette-product route do not derive a spatial/temporal or orientation-dependent gauge-coupling split.",
+              "claim_type": "no_go",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "The Cl(3) pseudoscalar commutes with the three spatial generators, and the standard staggered eta plaquette product equals -1 on all six orientations, so neither tested mechanism yields orientation-dependent Wilson plaquette coefficients.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check that treating the framework meta notes as ratified local-algebra authority is accepted audit policy for this lane.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 19,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 19
+          },
+          "verdict_rationale": "The load-bearing work is algebraic: omega is central in the supplied Cl(3) local algebra, and the eta formula gives the same plaquette sign for every orientation. The runner source instantiates the Pauli matrices and eta products directly; it does not import a contested anisotropic coefficient or merely print a pass summary. The No-Go Discipline gate does not defeat the scoped result because plausible attacks via a future time-direction or anisotropy theorem are outside the note's explicitly limited two-route boundary. The meta qubit authorities are used only to fix the framework local algebra, while the accepted Wilson surface is supplied by retained_bounded authority."
         }
       ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 19,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 19
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
       "title": "Gauge Wilson Isotropy Boundary Note",
       "transitive_descendants": 11,
-      "verdict_rationale": "The load-bearing work is algebraic: omega is central in the supplied Cl(3) local algebra, and the eta formula gives the same plaquette sign for every orientation. The runner source instantiates the Pauli matrices and eta products directly; it does not import a contested anisotropic coefficient or merely print a pass summary. The No-Go Discipline gate does not defeat the scoped result because plausible attacks via a future time-direction or anisotropy theorem are outside the note's explicitly limited two-route boundary. The meta qubit authorities are used only to fix the framework local algebra, while the accepted Wilson surface is supplied by retained_bounded authority."
+      "verdict_rationale": null
     },
     "gbare_wilson_action_internal_proof_walk_bounded_note_2026-05-08": {
       "audit_date": null,
@@ -105804,65 +105869,98 @@
       "verdict_rationale": "The bounded computation closes because the current runner output matches the scoped numerical rows and the note has narrowed away the prior inflated normalization headline and any staggered-fermion interpretation. The runner does not emit classified PASS lines, but its deterministic output directly provides the audited observables and its branch would stop claiming confirmation if normalized contrast fell below the stated 1% threshold. Residual risk is citation drift: this result is only a toy_event_physics DAG-ensemble lead, not a retained staggered or gravity-entanglement claim."
     },
     "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": "2026-05-22T00:09:49.740644+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-gleason_on_qubit_lattice-003",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The mathematical application of Gleason closes internally, but the restricted packet cites MINIMAL_AXIOMS_2026-05-20.md with effective_status meta rather than a retained-grade authority. The packet also treats Gleason 1957 as an admitted standard theorem rather than a provided retained dependency, so the audit cannot mark full clean closure under the rubric.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": "For finite \u039b \u2282 Z^3 with |\u039b| \u2265 2, any countably additive probability measure on P(\u2297_{x\u2208\u039b} C\u00b2) has unique Born form Tr(\u03c3P), assuming the stated standard Gleason theorem and the qubit-lattice Hilbert-space setup.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": "2026-05-22T00:09:49.740644+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Applying Gleason's theorem to the frame function on H_\u039b with dim H_\u039b = 2^|\u039b| \u2265 4 gives f_m(|\u03c8\u27e9)=\u27e8\u03c8|\u03c3|\u03c8\u27e9 and therefore m(P)=Tr(\u03c3P).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "272c80c669e28414489c08d779f652fc3af9a5694148a2ae4af6bff9f9d4c191",
       "note_path": "docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade authority for the A1+A2 finite-region Hilbert-space construction, or retag the cited axioms authority as an accepted framework premise for audit purposes.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.819489+00:00",
+          "audit_date": "2026-05-22T00:09:49.740644+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-gleason_on_qubit_lattice-003",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The mathematical application of Gleason closes internally, but the restricted packet cites MINIMAL_AXIOMS_2026-05-20.md with effective_status meta rather than a retained-grade authority. The packet also treats Gleason 1957 as an admitted standard theorem rather than a provided retained dependency, so the audit cannot mark full clean closure under the rubric.",
+          "claim_scope": "For finite \u039b \u2282 Z^3 with |\u039b| \u2265 2, any countably additive probability measure on P(\u2297_{x\u2208\u039b} C\u00b2) has unique Born form Tr(\u03c3P), assuming the stated standard Gleason theorem and the qubit-lattice Hilbert-space setup.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-22T00:09:49.740644+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "Applying Gleason's theorem to the frame function on H_\u039b with dim H_\u039b = 2^|\u039b| \u2265 4 gives f_m(|\u03c8\u27e9)=\u27e8\u03c8|\u03c3|\u03c8\u27e9 and therefore m(P)=Tr(\u03c3P).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade authority for the A1+A2 finite-region Hilbert-space construction, or retag the cited axioms authority as an accepted framework premise for audit purposes.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-20.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The load-bearing step is a standard algebraic/theorem-application step: once H_\u039b is a complex Hilbert space of dimension at least 3 and m is a countably additive projection-lattice probability measure, Gleason gives the density-matrix representation and uniqueness follows by projection separation. No runner is needed for this finite-dimensional theorem application. However, the only supplied cited authority is marked effective_status meta, not retained, and the qubit-lattice Hilbert-space substrate is therefore not a retained-grade input in this restricted packet."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
@@ -105875,7 +105973,7 @@
       "runner_path": null,
       "title": "Gleason's Theorem on the Qubit-Lattice Projection Lattice (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing step is a standard algebraic/theorem-application step: once H_\u039b is a complex Hilbert space of dimension at least 3 and m is a countably additive projection-lattice probability measure, Gleason gives the density-matrix representation and uniqueness follows by projection separation. No runner is needed for this finite-dimensional theorem application. However, the only supplied cited authority is marked effective_status meta, not retained, and the qubit-lattice Hilbert-space substrate is therefore not a retained-grade input in this restricted packet."
+      "verdict_rationale": null
     },
     "global_coherence_held_out2_note": {
       "audit_date": "2026-05-11T17:04:22.345583+00:00",
@@ -123519,7 +123617,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
       ],
       "direct_in_degree": 0,
@@ -142551,63 +142649,96 @@
       "verdict_rationale": null
     },
     "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": "2026-05-22T00:10:15.396810+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-kraus_choi_representatio-004",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The cited axiom memo supplies the per-site M_2(C) algebra and finite-region tensor-product structure, and the source note explicitly admits the standard finite-dimensional Kraus and Choi theorems. The audited claim is only the finite-region application, not an infinite-volume channel theorem or a derivation of record dynamics.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": "For finite \u039b \u2282 Z^3, CPTP/CP linear maps on A_\u039b \u2245 M_{2^|\u039b|}(C) admit the standard finite-dimensional Kraus operator-sum and Choi-positive-matrix characterizations.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": "2026-05-22T00:10:15.396810+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 2,
-      "effective_status": "retained_pending_chain",
-      "effective_status_reason": "chain_waiting_on:minimal_axioms_2026-05-20",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_pending_chain",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 2.585,
-      "load_bearing_step": "The qubit-lattice algebra A_\u039b = \u2297_x M_2(C) is isomorphic to M_d(C) with d = 2^|\u039b|, so the finite-dimensional Kraus and Choi theorems apply directly.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "aed537c53ab1fcf6071bade44d78391eefab7e9948a3adb1f0ac8bd640fdf943",
       "note_path": "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.822242+00:00",
+          "audit_date": "2026-05-22T00:10:15.396810+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-kraus_choi_representatio-004",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The cited axiom memo supplies the per-site M_2(C) algebra and finite-region tensor-product structure, and the source note explicitly admits the standard finite-dimensional Kraus and Choi theorems. The audited claim is only the finite-region application, not an infinite-volume channel theorem or a derivation of record dynamics.",
+          "claim_scope": "For finite \u039b \u2282 Z^3, CPTP/CP linear maps on A_\u039b \u2245 M_{2^|\u039b|}(C) admit the standard finite-dimensional Kraus operator-sum and Choi-positive-matrix characterizations.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-22T00:10:15.396810+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "The qubit-lattice algebra A_\u039b = \u2297_x M_2(C) is isomorphic to M_d(C) with d = 2^|\u039b|, so the finite-dimensional Kraus and Choi theorems apply directly.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The load-bearing step is an algebraic identification of the finite-region qubit-lattice algebra with a full matrix algebra, after which the quoted standard Kraus/Choi hypotheses are exactly satisfied. The note is explicit that Kraus and Choi are standard-math imports rather than framework-derived results, and its conclusion is scoped to finite regions. The thermodynamic-limit and record-dynamics claims are explicitly excluded, so they do not create an open dependency for this narrow claim."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
@@ -142620,7 +142751,7 @@
       "runner_path": null,
       "title": "Kraus\u2013Choi Representation on the Qubit-Lattice CPTP Map Algebra (Narrow)",
       "transitive_descendants": 2,
-      "verdict_rationale": "The load-bearing step is an algebraic identification of the finite-region qubit-lattice algebra with a full matrix algebra, after which the quoted standard Kraus/Choi hypotheses are exactly satisfied. The note is explicit that Kraus and Choi are standard-math imports rather than framework-derived results, and its conclusion is scoped to finite regions. The thermodynamic-limit and record-dynamics claims are explicitly excluded, so they do not create an open dependency for this narrow claim."
+      "verdict_rationale": null
     },
     "kubo_continuum_limit_families_note": {
       "audit_date": "2026-05-19T14:56:02.101970+00:00",
@@ -156530,65 +156661,98 @@
       "verdict_rationale": "The second audit is right to phrase the result as conditional on a Planck-spaced Z^3 lattice and the standard nearest-neighbor finite-difference operator, but those conditions are already inside the audited bounded theorem scope and do not by themselves force audited_conditional. The clean verdict applies only to the scoped dispersion correction and arithmetic comparisons to the quoted bounds; broader note language about full sector-specific SME maps, taste-breaking phenomenology, or all-current experimental status is not ratified here."
     },
     "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": {
-      "audit_date": "2026-05-23T00:10:11.949973+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T000947Z-4d3c800e-lsp_projective_derivatio-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The algebraic substitution itself is correct, but the restricted packet does not supply retained-grade support for the imported canonical Naimark/Lueders construction; it is introduced as standard measurement theory rather than derived from the cited authority. The only provided upstream authority is meta and itself describes K_P = P as a framework-rule selection, not a theorem from A1+A2.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
-      "claim_scope": "In the explicitly chosen canonical Naimark/Lueders dilation for a finite-region projective measurement, the outcome-r Kraus operator is P_r, while U P_r twists represent distinct instruments unless later effects are frame-rotated.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-23T00:10:11.949973+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Substituting the canonical dilation U_int |psi> |0> = sum_r (P_r |psi>) |r> into K_r = <r| U_int (I_sys otimes |0>) gives K_r = P_r.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "1eb1fb3f8758e7935ba243a9bde9890f94566bb9daf1ab24d3d6b1c58f68ddd2",
       "note_path": "docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained-grade upstream support or a self-contained lemma for the canonical Naimark/Lueders dilation and Kraus extraction assumptions, separate from the prior framework-rule ratification.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.823700+00:00",
+          "audit_date": "2026-05-23T00:10:11.949973+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T000947Z-4d3c800e-lsp_projective_derivatio-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The algebraic substitution itself is correct, but the restricted packet does not supply retained-grade support for the imported canonical Naimark/Lueders construction; it is introduced as standard measurement theory rather than derived from the cited authority. The only provided upstream authority is meta and itself describes K_P = P as a framework-rule selection, not a theorem from A1+A2.",
+          "claim_scope": "In the explicitly chosen canonical Naimark/Lueders dilation for a finite-region projective measurement, the outcome-r Kraus operator is P_r, while U P_r twists represent distinct instruments unless later effects are frame-rotated.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-23T00:10:11.949973+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "Substituting the canonical dilation U_int |psi> |0> = sum_r (P_r |psi>) |r> into K_r = <r| U_int (I_sys otimes |0>) gives K_r = P_r.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_dependency_edge: add retained-grade upstream support or a self-contained lemma for the canonical Naimark/Lueders dilation and Kraus extraction assumptions, separate from the prior framework-rule ratification.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-20.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The load-bearing calculation is a valid algebraic identity once the canonical dilation formula and Kraus extraction formula are granted. However, those measurement-theory inputs are imported as standard textbook content and are not provided as retained-grade upstream authorities in the restricted packet. The supplied cited authority has effective_status meta and explicitly says the LSP-projective clause is a framework-rule selection, so it cannot by itself promote this note to clean theorem status."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
@@ -156601,7 +156765,7 @@
       "runner_path": null,
       "title": "LSP-Projective Derivation from Naimark Dilation + Canonical Frame (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing calculation is a valid algebraic identity once the canonical dilation formula and Kraus extraction formula are granted. However, those measurement-theory inputs are imported as standard textbook content and are not provided as retained-grade upstream authorities in the restricted packet. The supplied cited authority has effective_status meta and explicitly says the LSP-projective clause is a framework-rule selection, so it cannot by itself promote this note to clean theorem status."
+      "verdict_rationale": null
     },
     "lsp_projective_ratification_reaudit_manifest_note_2026-05-22": {
       "audit_date": null,
@@ -156625,7 +156789,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "qubit_axiom_hardening_note_2026-05-20",
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
       "effective_status": "meta",
@@ -156658,63 +156822,96 @@
       "verdict_rationale": null
     },
     "luders_rule_from_composition_consistency_note_2026-05-20": {
-      "audit_date": "2026-05-22T15:11:43.187144+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T150945Z-46780f09-luders_rule_from_composi-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Under LSP-projective, M_{P,E}=PEP is supplied as a framework-rule input for the scoped ideal projective case. Trace duality over all effects then fixes the posterior uniquely, and no additional blocker remains within that scope.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
-      "claim_scope": "For finite qubit-lattice regions, ideal unrefined sharp projective outcomes P with Tr(\u03c3P)>0 update uniquely by the L\u00fcders posterior under the ratified LSP-projective rule K_P=P.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-22T15:11:43.187144+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_pending_chain",
-      "effective_status_reason": "chain_waiting_on:minimal_axioms_2026-05-20",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_pending_chain",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Given LSP-projective sequential composition M_{P,E}=PEP, Bayes consistency for every effect E forces Tr(\u03c3|_P E)=Tr(P\u03c3P E)/Tr(\u03c3P), hence \u03c3|_P=P\u03c3P/Tr(P\u03c3P).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "ee8ae7a6a020099ff7c7e1973860b08dc0c739fffc5876e56d958cb515df4105",
       "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "Second auditor should check that the applied scope stays tied to LSP-projective ideal unrefined sharp projective measurements.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.823725+00:00",
+          "audit_date": "2026-05-22T15:11:43.187144+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T150945Z-46780f09-luders_rule_from_composi-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Under LSP-projective, M_{P,E}=PEP is supplied as a framework-rule input for the scoped ideal projective case. Trace duality over all effects then fixes the posterior uniquely, and no additional blocker remains within that scope.",
+          "claim_scope": "For finite qubit-lattice regions, ideal unrefined sharp projective outcomes P with Tr(\u03c3P)>0 update uniquely by the L\u00fcders posterior under the ratified LSP-projective rule K_P=P.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-22T15:11:43.187144+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "Given LSP-projective sequential composition M_{P,E}=PEP, Bayes consistency for every effect E forces Tr(\u03c3|_P E)=Tr(P\u03c3P E)/Tr(\u03c3P), hence \u03c3|_P=P\u03c3P/Tr(P\u03c3P).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should check that the applied scope stays tied to LSP-projective ideal unrefined sharp projective measurements.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The earlier missing authority for M_{P,E}=PEP is supplied in the restricted packet by the ratified LSP-projective rule for ideal unrefined sharp projective measurements. With that input, the derivation is finite-dimensional trace-duality algebra: equality of conditional probabilities for all effects fixes the posterior density matrix, and U1/U2/U4 follow algebraically. The result is clean only at the bounded LSP-projective scope, not as a universal non-projective instrument-selection theorem."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
@@ -156727,7 +156924,7 @@
       "runner_path": null,
       "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
       "transitive_descendants": 0,
-      "verdict_rationale": "The earlier missing authority for M_{P,E}=PEP is supplied in the restricted packet by the ratified LSP-projective rule for ideal unrefined sharp projective measurements. With that input, the derivation is finite-dimensional trace-duality algebra: equality of conditional probabilities for all effects fixes the posterior density matrix, and U1/U2/U4 follow algebraically. The result is clean only at the bounded LSP-projective scope, not as a universal non-projective instrument-selection theorem."
+      "verdict_rationale": null
     },
     "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": {
       "audit_date": null,
@@ -156750,7 +156947,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
       ],
       "direct_in_degree": 0,
@@ -160163,6 +160360,57 @@
       "transitive_descendants": 90,
       "verdict_rationale": null
     },
+    "minimal_axioms": {
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_id": "minimal_axioms",
+      "claim_scope": null,
+      "claim_type": "meta",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "deps": [],
+      "direct_in_degree": 27,
+      "effective_status": "meta",
+      "effective_status_reason": "metadata",
+      "helper_runner_paths": [],
+      "independence": null,
+      "intrinsic_status": "meta",
+      "load_bearing_score": 18.785,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
+      "note_hash": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d",
+      "note_path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [],
+      "prose_corrections": [],
+      "prose_status": "not_evaluated_pre_vocab_lint",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "runner_path": null,
+      "title": "Minimal Framework Axioms (Qubit Reframe)",
+      "transitive_descendants": 38,
+      "verdict_rationale": null
+    },
     "minimal_axioms_2026-04-11": {
       "audit_date": null,
       "audit_state_snapshot": null,
@@ -160491,57 +160739,6 @@
       "runner_path": "scripts/frontier_generation_rooting_undefined.py",
       "title": "Minimal Framework Axioms (Restored)",
       "transitive_descendants": 1079,
-      "verdict_rationale": null
-    },
-    "minimal_axioms_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
-      "claim_id": "minimal_axioms_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "meta",
-      "claim_type_author_hint": "meta",
-      "claim_type_author_hint_raw": "meta",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
-      "deps": [],
-      "direct_in_degree": 27,
-      "effective_status": "meta",
-      "effective_status_reason": "metadata",
-      "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "meta",
-      "load_bearing_score": 18.785,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
-      "max_descendant_status": "retained_pending_chain",
-      "max_descendant_status_rank": 80,
-      "note_hash": "8eb33071fd02756fa60c311e6c37488574a184653a2bdb317150709258341447",
-      "note_path": "docs/MINIMAL_AXIOMS_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
-      "previous_audits": [],
-      "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
-      "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0,
-        "total_pass": 0
-      },
-      "runner_path": null,
-      "title": "Minimal Framework Axioms (Qubit Reframe)",
-      "transitive_descendants": 38,
       "verdict_rationale": null
     },
     "minimal_bidirectional_trapping_probe_note": {
@@ -174952,7 +175149,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "observable_principle_from_axiom_note",
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
         "born_rule_from_gleason_busch_derivation_note_2026-05-20",
         "observable_principle_p1_campaign_closure_synthesis_note_2026-05-18",
@@ -175197,7 +175394,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "observable_principle_from_axiom_note",
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
@@ -175259,7 +175456,7 @@
         "pre_record_reference_state_tracial_derivation_note_2026-05-20",
         "observable_principle_from_axiom_note",
         "observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17",
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
       ],
       "direct_in_degree": 0,
@@ -175934,7 +176131,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
@@ -176164,7 +176361,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "observable_principle_from_axiom_note",
         "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
         "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
@@ -178361,7 +178558,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "qubit_axiom_hardening_note_2026-05-20",
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
       "effective_status": "meta",
@@ -181147,68 +181344,101 @@
       "verdict_rationale": "The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome."
     },
     "persistent_record_as_kraus_operator_note_2026-05-20": {
-      "audit_date": "2026-05-21T23:10:31.543869+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null,
-          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta",
-          "persistent_record_overlap_kernel_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta",
-          "persistent_record_overlap_kernel_note": "retained_bounded"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20",
-          "persistent_record_overlap_kernel_note"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260521-230943-442fce9c-persistent_record_as_kra-011",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The restricted cited authority supplies a bounded numerical/pilot record-overlap model, not a formal system-record instrument proving state-independent linear maps K_r or the normalization \u03a3_r K_r\u2020K_r = I for arbitrary system inputs. The note imports the needed linearity, normalization, and record-to-system instrument bridge as admissions rather than deriving them from the provided parent.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": "Audited only the structural claim that the bounded persistent-record overlap-kernel pilot supplies record-indexed Kraus operators satisfying selective update, identity resolution, and CPTP unconditional evolution.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-21T23:10:31.543869+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "persistent_record_overlap_kernel_note"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The map from an initial system state to the record-conditional system amplitude, K_r: |\u03c8\u27e9 \u2192 A_r |\u03c6_r\u27e9, is linear and therefore extends to a bounded operator on the system Hilbert space.",
-      "load_bearing_step_class": "E",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "17e391bea04e73dfd0caf7dbd7bd94dd654b106a10f944aa7bd5fe7ecd9c5a28",
       "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide an independent formal derivation that the persistent-record process defines a state-independent linear system-record isometry/instrument whose record components satisfy \u03a3_r K_r\u2020K_r = I.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.826263+00:00",
+          "audit_date": "2026-05-21T23:10:31.543869+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null,
+              "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta",
+              "persistent_record_overlap_kernel_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta",
+              "persistent_record_overlap_kernel_note": "retained_bounded"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20",
+              "persistent_record_overlap_kernel_note"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260521-230943-442fce9c-persistent_record_as_kra-011",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The restricted cited authority supplies a bounded numerical/pilot record-overlap model, not a formal system-record instrument proving state-independent linear maps K_r or the normalization \u03a3_r K_r\u2020K_r = I for arbitrary system inputs. The note imports the needed linearity, normalization, and record-to-system instrument bridge as admissions rather than deriving them from the provided parent.",
+          "claim_scope": "Audited only the structural claim that the bounded persistent-record overlap-kernel pilot supplies record-indexed Kraus operators satisfying selective update, identity resolution, and CPTP unconditional evolution.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-21T23:10:31.543869+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "The map from an initial system state to the record-conditional system amplitude, K_r: |\u03c8\u27e9 \u2192 A_r |\u03c6_r\u27e9, is linear and therefore extends to a bounded operator on the system Hilbert space.",
+          "load_bearing_step_class": "E",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide an independent formal derivation that the persistent-record process defines a state-independent linear system-record isometry/instrument whose record components satisfy \u03a3_r K_r\u2020K_r = I.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The proposed Kraus family is introduced by defining a record-conditional amplitude map and then assuming the standard hypotheses needed for it to be a valid quantum instrument. The upstream persistent-record note is retained_bounded but only establishes a bounded pilot with an overlap kernel and purity data; it does not contain the load-bearing bridge from mesoscopic record labels to a complete set of bounded system Kraus operators. The CPTP conclusion follows algebraically once \u03a3_r K_r\u2020K_r = I is assumed, but that identity is precisely the missing closure step in the restricted packet."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
@@ -181221,7 +181451,7 @@
       "runner_path": null,
       "title": "Persistent Record as Kraus Operator: Bridging the Record Lane to Measurement-Update Operators",
       "transitive_descendants": 0,
-      "verdict_rationale": "The proposed Kraus family is introduced by defining a record-conditional amplitude map and then assuming the standard hypotheses needed for it to be a valid quantum instrument. The upstream persistent-record note is retained_bounded but only establishes a bounded pilot with an overlap kernel and purity data; it does not contain the load-bearing bridge from mesoscopic record labels to a complete set of bounded system Kraus operators. The CPTP conclusion follows algebraically once \u03a3_r K_r\u2020K_r = I is assumed, but that identity is precisely the missing closure step in the restricted packet."
+      "verdict_rationale": null
     },
     "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22": {
       "audit_date": null,
@@ -181245,7 +181475,7 @@
       "decoration_parent_claim_id": null,
       "deps": [
         "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
       "effective_status": "unaudited",
@@ -195293,65 +195523,98 @@
       "verdict_rationale": null
     },
     "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": "2026-05-22T00:11:15.615391+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-powers_uhf_tracial_uniqu-006",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The mathematical argument is the standard UHF tracial-uniqueness application, but the restricted packet includes only MINIMAL_AXIOMS_2026-05-20.md as a cited authority and that authority is marked meta rather than retained-grade. The packet also imports named standard UHF and inductive-limit theorems rather than providing retained upstream audit rows for them.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": "For the qubit-lattice quasi-local C*-algebra obtained as the UHF inductive limit of finite tensor products of M_2(C) over finite subsets of Z^3, the normalized finite-region traces define the unique tracial state.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": "2026-05-22T00:11:15.615391+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 1.5,
-      "load_bearing_step": "Any tracial state on the inductive-limit algebra restricts on each finite region A_Lambda to the unique normalized matrix trace, hence agrees with the compatible inductive-limit trace on the dense local subalgebras and therefore on A.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "507875b9097c5fde6d7b77d268bbd3af26b117ac7f0019e3a35e9a55cc4ff065",
       "note_path": "docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade upstream authority for the A1+A2 qubit-lattice UHF construction, or mark the standard UHF tracial-uniqueness import as an admitted external theorem under the audit policy.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.827154+00:00",
+          "audit_date": "2026-05-22T00:11:15.615391+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-powers_uhf_tracial_uniqu-006",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The mathematical argument is the standard UHF tracial-uniqueness application, but the restricted packet includes only MINIMAL_AXIOMS_2026-05-20.md as a cited authority and that authority is marked meta rather than retained-grade. The packet also imports named standard UHF and inductive-limit theorems rather than providing retained upstream audit rows for them.",
+          "claim_scope": "For the qubit-lattice quasi-local C*-algebra obtained as the UHF inductive limit of finite tensor products of M_2(C) over finite subsets of Z^3, the normalized finite-region traces define the unique tracial state.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-22T00:11:15.615391+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "Any tracial state on the inductive-limit algebra restricts on each finite region A_Lambda to the unique normalized matrix trace, hence agrees with the compatible inductive-limit trace on the dense local subalgebras and therefore on A.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade upstream authority for the A1+A2 qubit-lattice UHF construction, or mark the standard UHF tracial-uniqueness import as an admitted external theorem under the audit policy.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-20.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The load-bearing step is an algebraic/operator-algebra closure once the qubit-lattice algebra is accepted as the UHF algebra of type 2^infinity and the standard UHF tracial uniqueness theorem is admitted. However, the only provided upstream framework authority is explicitly effective_status meta, not one of retained, retained_no_go, or retained_bounded. The source note also relies on named standard-math imports outside the restricted cited-authority packet, so the audit cannot mark the chain clean from the provided inputs alone."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
@@ -195364,74 +195627,107 @@
       "runner_path": null,
       "title": "Powers UHF Tracial Uniqueness on the Qubit-Lattice Quasi-Local Algebra (Narrow)",
       "transitive_descendants": 1,
-      "verdict_rationale": "The load-bearing step is an algebraic/operator-algebra closure once the qubit-lattice algebra is accepted as the UHF algebra of type 2^infinity and the standard UHF tracial uniqueness theorem is admitted. However, the only provided upstream framework authority is explicitly effective_status meta, not one of retained, retained_no_go, or retained_bounded. The source note also relies on named standard-math imports outside the restricted cited-authority packet, so the audit cannot mark the chain clean from the provided inputs alone."
+      "verdict_rationale": null
     },
     "pre_record_reference_state_tracial_derivation_note_2026-05-20": {
-      "audit_date": "2026-05-21T22:06:45.063578+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "a1_qubit_interpretation_note_2026-05-20": null,
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "a1_qubit_interpretation_note_2026-05-20": "meta",
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "a1_qubit_interpretation_note_2026-05-20": "meta",
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "a1_qubit_interpretation_note_2026-05-20",
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 1.5,
-        "runner_hash": null,
-        "transitive_descendants": 1
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-pre_record_reference_sta-021",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The operator-algebra uniqueness portion is presented as standard mathematics, but the physical identification of \u03c4 with the pre-record reference depends on an admitted no-extra-structure premise not closed by the restricted packet. The cited authorities are also meta-status rather than retained-grade scientific dependencies under the rubric.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-      "claim_scope": "Audited the claim that A1+A2 determine the unique tracial state on the qubit-lattice UHF algebra and, with the admitted no-extra-structure principle, identify it as the pre-record reference state \u03c1_ref = \u2297_x I/2.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate (positive_theorem on the uniqueness",
-      "claim_type_last_reviewed": "2026-05-21T22:06:45.063578+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "a1_qubit_interpretation_note_2026-05-20"
       ],
       "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 3.822,
-      "load_bearing_step": "The no-extra-structure principle identifies the unique tracial state \u03c4 as the pre-record reference because any other pre-record state would introduce preferred basis/direction/eigenstate structure not present in A1+A2.",
-      "load_bearing_step_class": "F",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "f32b79ddd3f06eaf5f596c6523f9ad4b85bd0aa5aaea6a771a003ea9a9b0f5a3",
       "note_path": "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade theorem or accepted framework rule deriving the no-extra-structure identification of the unique tracial state with the pre-record reference, rather than admitting it as a premise.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.827177+00:00",
+          "audit_date": "2026-05-21T22:06:45.063578+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "a1_qubit_interpretation_note_2026-05-20": null,
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "a1_qubit_interpretation_note_2026-05-20": "meta",
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "a1_qubit_interpretation_note_2026-05-20": "meta",
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "a1_qubit_interpretation_note_2026-05-20",
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 1.5,
+            "runner_hash": null,
+            "transitive_descendants": 1
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-pre_record_reference_sta-021",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The operator-algebra uniqueness portion is presented as standard mathematics, but the physical identification of \u03c4 with the pre-record reference depends on an admitted no-extra-structure premise not closed by the restricted packet. The cited authorities are also meta-status rather than retained-grade scientific dependencies under the rubric.",
+          "claim_scope": "Audited the claim that A1+A2 determine the unique tracial state on the qubit-lattice UHF algebra and, with the admitted no-extra-structure principle, identify it as the pre-record reference state \u03c1_ref = \u2297_x I/2.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-21T22:06:45.063578+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "The no-extra-structure principle identifies the unique tracial state \u03c4 as the pre-record reference because any other pre-record state would introduce preferred basis/direction/eigenstate structure not present in A1+A2.",
+          "load_bearing_step_class": "F",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade theorem or accepted framework rule deriving the no-extra-structure identification of the unique tracial state with the pre-record reference, rather than admitting it as a premise.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-20.md",
+            "docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The note itself correctly labels Step 5 as admitted: the transition from unique tracial state to pre-record reference is an identification principle rather than a derivation from A1+A2 alone. Under the audit rubric, retained status does not propagate through an open identification, and non-retained/meta cited authorities also force a conditional verdict. There is no runner evidence to upgrade the claim, but no compute is required to judge this packet because the blocker is conceptual, not numerical."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
@@ -195444,7 +195740,7 @@
       "runner_path": null,
       "title": "Pre-Record Reference State as the Unique Tracial State on A1+A2",
       "transitive_descendants": 4,
-      "verdict_rationale": "The note itself correctly labels Step 5 as admitted: the transition from unique tracial state to pre-record reference is an identification principle rather than a derivation from A1+A2 alone. Under the audit rubric, retained status does not propagate through an open identification, and non-retained/meta cited authorities also force a conditional verdict. There is no runner evidence to upgrade the claim, but no compute is required to judge this packet because the blocker is conceptual, not numerical."
+      "verdict_rationale": null
     },
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
       "audit_date": "2026-05-11T17:49:51.246420+00:00",
@@ -196316,65 +196612,98 @@
       "verdict_rationale": null
     },
     "prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22": {
-      "audit_date": "2026-05-23T00:16:35.469367+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001531Z-2a0c2cd0-prr_local_derivation_fro-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Given the stated finite-window, no-record/no-extra-constraints Jaynes premise, the standard finite-dimensional entropy maximizer is the normalized trace state, and the two claimed invariances follow. The closure is only at that bounded finite-window scope.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22",
-      "claim_scope": "Finite-window unconstrained Jaynes max-entropy on A_Lambda = tensor_{x in Lambda} M_2(C), yielding I/2 one-site marginals and boundary-preserving lattice-translation invariance.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-23T00:16:35.469367+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "On a finite translation-covariant window, the unconstrained Jaynes maximizer is the normalized trace state rho_ref,Lambda = I_{2^{|Lambda|}} / 2^{|Lambda|}.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "403c54cc02985d16a2fdc02fe55689d7120d6a1e6a3fbff6f14f1b8281502d6f",
       "note_path": "docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade authority for the A1/A2 qubit-on-Z^3 substrate, or an audit packet that explicitly treats those axioms as admitted inputs for this bounded finite-window theorem.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.827285+00:00",
+          "audit_date": "2026-05-23T00:16:35.469367+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001531Z-2a0c2cd0-prr_local_derivation_fro-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Given the stated finite-window, no-record/no-extra-constraints Jaynes premise, the standard finite-dimensional entropy maximizer is the normalized trace state, and the two claimed invariances follow. The closure is only at that bounded finite-window scope.",
+          "claim_scope": "Finite-window unconstrained Jaynes max-entropy on A_Lambda = tensor_{x in Lambda} M_2(C), yielding I/2 one-site marginals and boundary-preserving lattice-translation invariance.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-23T00:16:35.469367+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "On a finite translation-covariant window, the unconstrained Jaynes maximizer is the normalized trace state rho_ref,Lambda = I_{2^{|Lambda|}} / 2^{|Lambda|}.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade authority for the A1/A2 qubit-on-Z^3 substrate, or an audit packet that explicitly treats those axioms as admitted inputs for this bounded finite-window theorem.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-20.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The mathematical load-bearing step is a standard finite-dimensional max-entropy closure: normalization alone on A_Lambda gives the unique trace state, whose one-site marginals are I/2 and whose automorphism translates are unchanged. No runner was needed for this non-numerical theorem. The audit cannot mark clean because the only provided load-bearing upstream authority, docs/MINIMAL_AXIOMS_2026-05-20.md, is labeled effective_status meta rather than retained, retained_bounded, or retained_no_go under the rubric."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
@@ -196387,7 +196716,7 @@
       "runner_path": null,
       "title": "PRR-Local Invariances from Jaynes Max-Entropy + Z^3 Lattice Symmetry (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The mathematical load-bearing step is a standard finite-dimensional max-entropy closure: normalization alone on A_Lambda gives the unique trace state, whose one-site marginals are I/2 and whose automorphism translates are unchanged. No runner was needed for this non-numerical theorem. The audit cannot mark clean because the only provided load-bearing upstream authority, docs/MINIMAL_AXIOMS_2026-05-20.md, is labeled effective_status meta rather than retained, retained_bounded, or retained_no_go under the rubric."
+      "verdict_rationale": null
     },
     "publication.ci3_z3.arxiv_package": {
       "audit_date": null,
@@ -202343,63 +202672,96 @@
       "verdict_rationale": null
     },
     "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22": {
-      "audit_date": "2026-05-23T00:18:46.007097+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_renaming",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001713Z-d9ca5cbd-pwc_derivation_from_cumu-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The packet shows a valid standard-math identification once the PWC formula for W is already assumed, but it does not derive the framework's use of that W from the cited axiom note. The missing step is an independent retained source or theorem fixing the framework pre-record W rather than identifying it by definition.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
-      "claim_scope": "Commuting bounded finite-source observables on a finite-region qubit algebra, with rho_ref taken as a given input state, and W[J]=log Tr(rho_ref e^{-J})-log Tr(rho_ref).",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-23T00:18:46.007097+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_renaming",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_renaming",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "For the commuting-source scope, the framework's W[J] is exactly the standard source-coupled cumulant generating functional Q1 with rho = rho_ref.",
-      "load_bearing_step_class": "F",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "665f3688278696b9e44bb66b35b3e2e9ce1f12b2101ce94ae7b5a09bd0b73c42",
       "note_path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "notes_for_re_audit_if_any": "Re-audit only if a retained upstream theorem independently fixes the framework pre-record W[J] form, or if the claim is intentionally reclassified as a definition/terminology note rather than a bounded theorem.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.827320+00:00",
+          "audit_date": "2026-05-23T00:18:46.007097+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_renaming",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001713Z-d9ca5cbd-pwc_derivation_from_cumu-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The packet shows a valid standard-math identification once the PWC formula for W is already assumed, but it does not derive the framework's use of that W from the cited axiom note. The missing step is an independent retained source or theorem fixing the framework pre-record W rather than identifying it by definition.",
+          "claim_scope": "Commuting bounded finite-source observables on a finite-region qubit algebra, with rho_ref taken as a given input state, and W[J]=log Tr(rho_ref e^{-J})-log Tr(rho_ref).",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-23T00:18:46.007097+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "For the commuting-source scope, the framework's W[J] is exactly the standard source-coupled cumulant generating functional Q1 with rho = rho_ref.",
+          "load_bearing_step_class": "F",
+          "notes_for_re_audit_if_any": "Re-audit only if a retained upstream theorem independently fixes the framework pre-record W[J] form, or if the claim is intentionally reclassified as a definition/terminology note rather than a bounded theorem.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The load-bearing move is an identification of the already-stated framework symbol W with the standard cumulant generating functional under the substitution rho = rho_ref. That is not a first-principles derivation from A1/A2 or an independent algebraic closure over retained inputs; it is a symbol/concept identity plus standard cumulant facts. The commuting-source cumulant statement is mathematically plausible on its own scope, but the presented chain reduces to naming the PWC expression as the standard CGF. A second auditor should also check the odd-derivative sign convention from e^{-J}, since derivatives give (-1)^n cumulants unless the sign convention is explicitly absorbed."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
@@ -202412,7 +202774,7 @@
       "runner_path": null,
       "title": "PWC Derivation from the Standard Cumulant Generating Functional (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing move is an identification of the already-stated framework symbol W with the standard cumulant generating functional under the substitution rho = rho_ref. That is not a first-principles derivation from A1/A2 or an independent algebraic closure over retained inputs; it is a symbol/concept identity plus standard cumulant facts. The commuting-source cumulant statement is mathematically plausible on its own scope, but the presented chain reduces to naming the PWC expression as the standard CGF. A second auditor should also check the odd-derivative sign convention from e^{-J}, since derivatives give (-1)^n cumulants unless the sign convention is explicitly absorbed."
+      "verdict_rationale": null
     },
     "q_integer_spectrum_theorem_note_2026-05-02": {
       "audit_date": "2026-05-22T22:40:46.574341+00:00",
@@ -209201,7 +209563,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "fed8a683812304201298428e8aeb411108d07edfe7d37fcd68de317bd4038a6d",
+      "note_hash": "bfb783302ed737914e5d5a4ddbf78c765b3daf3a75467dbcf8958f0960eccc21",
       "note_path": "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -209216,75 +209578,108 @@
         "total_pass": 0
       },
       "runner_path": null,
-      "title": "Qubit Axiom Hardening: Local-Algebra Equivalence, Per-Site k = 1, and Projective Measurement Selection",
+      "title": "Qubit Axiom Hardening: Local-Algebra Equivalence",
       "transitive_descendants": 14,
       "verdict_rationale": null
     },
     "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22": {
-      "audit_date": "2026-05-23T00:19:45.179705+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_renaming",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001923Z-9a402f2d-qubit_k1_derivation_from-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The presented closure rests on treating 'qubit' as a definitional synonym for the minimal faithful module, not on an independent theorem from the supplied retained-grade inputs. The main cited axiom memo is also marked meta rather than retained-grade.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22",
-      "claim_scope": "Audited whether the source note derives per-site H_x = C^2 and k(x) = 1 from the provided qubit-per-site axiom plus the supplied representation-theory inputs.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate",
-      "claim_type_last_reviewed": "2026-05-23T00:19:45.179705+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "audited_renaming",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "audited_renaming",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The qubit-per-site axiom says 'qubit at every site,' and by the standard QI definition a qubit is the minimal faithful complex irreducible module of M_2(C), so the multiplicity classification selects k = 1.",
-      "load_bearing_step_class": "E",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "43afcd04654dea5959bb401bde83851eb5286825d865ef0cddac32544396548f",
       "note_path": "docs/QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "notes_for_re_audit_if_any": "Re-check whether governance wants this recorded as audited_conditional instead, because the cited axiom memo is meta rather than retained-grade; scientifically, the decisive load-bearing step remains definitional.",
-      "open_dependency_paths": [
-        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.827754+00:00",
+          "audit_date": "2026-05-23T00:19:45.179705+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_renaming",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001923Z-9a402f2d-qubit_k1_derivation_from-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The presented closure rests on treating 'qubit' as a definitional synonym for the minimal faithful module, not on an independent theorem from the supplied retained-grade inputs. The main cited axiom memo is also marked meta rather than retained-grade.",
+          "claim_scope": "Audited whether the source note derives per-site H_x = C^2 and k(x) = 1 from the provided qubit-per-site axiom plus the supplied representation-theory inputs.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-23T00:19:45.179705+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "The qubit-per-site axiom says 'qubit at every site,' and by the standard QI definition a qubit is the minimal faithful complex irreducible module of M_2(C), so the multiplicity classification selects k = 1.",
+          "load_bearing_step_class": "E",
+          "notes_for_re_audit_if_any": "Re-check whether governance wants this recorded as audited_conditional instead, because the cited axiom memo is meta rather than retained-grade; scientifically, the decisive load-bearing step remains definitional.",
+          "open_dependency_paths": [
+            "docs/MINIMAL_AXIOMS_2026-05-20.md"
+          ],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The load-bearing move is definitional: once 'qubit' is read as the minimal faithful complex irrep of M_2(C), k = 1 follows immediately. The representation classification is standard algebra, but it only sorts multiplicities after the minimality premise has already been imported through the meaning of 'qubit'. The restricted packet therefore supports a vocabulary/definition substitution rather than an independent positive theorem."
+        }
       ],
-      "previous_audits": [],
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
@@ -209297,7 +209692,7 @@
       "runner_path": null,
       "title": "Qubit k = 1 Per-Site Selection from Minimal Faithful Representation (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The load-bearing move is definitional: once 'qubit' is read as the minimal faithful complex irrep of M_2(C), k = 1 follows immediately. The representation classification is standard algebra, but it only sorts multiplicities after the minimality premise has already been imported through the meaning of 'qubit'. The restricted packet therefore supports a vocabulary/definition substitution rather than an independent positive theorem."
+      "verdict_rationale": null
     },
     "r_base_group_theory_derivation_theorem_note_2026-04-24": {
       "audit_date": null,
@@ -212122,7 +212517,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "direct_in_degree": 0,
@@ -250509,63 +250904,96 @@
       "verdict_rationale": null
     },
     "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
-      "audit_date": "2026-05-22T00:12:09.276286+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-tomita_tensor_trace_on_f-008",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "Given A1+A2's per-site M_2(C) algebra and standard finite-dimensional matrix trace facts, the factorization follows algebraically. No runner or numerical computation is load-bearing.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
-      "claim_scope": "For disjoint finite regions \u039b1,\u039b2\u2282Z^3, the finite-region qubit matrix algebra trace \u03c4_{\u039b1\u222a\u039b2} factorizes as \u03c4_{\u039b1}(A)\u03c4_{\u039b2}(B) on simple tensors.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": "2026-05-22T00:12:09.276286+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "minimal_axioms_2026-05-20",
+      "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20"
+        "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "retained_pending_chain",
-      "effective_status_reason": "decoration_waiting_on:minimal_axioms_2026-05-20",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "retained_pending_chain",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "The unique normalized trace on M_{n1 n2}(C) satisfies Tr_{n1 n2}(A \u2297 B)=Tr_{n1}(A)\u00b7Tr_{n2}(B), so the normalized trace on A_{\u039b1\u222a\u039b2} factorizes on simple tensors.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0415e8fa016999d25b46aad8d3ba933e75e9275787c2d395a228602c28cfde56",
       "note_path": "docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check whether the local audit policy treats standard finite-dimensional matrix-trace facts as ordinary algebraic background or as explicit missing cited authorities.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T12:01:21.832567+00:00",
+          "audit_date": "2026-05-22T00:12:09.276286+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-tomita_tensor_trace_on_f-008",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "Given A1+A2's per-site M_2(C) algebra and standard finite-dimensional matrix trace facts, the factorization follows algebraically. No runner or numerical computation is load-bearing.",
+          "claim_scope": "For disjoint finite regions \u039b1,\u039b2\u2282Z^3, the finite-region qubit matrix algebra trace \u03c4_{\u039b1\u222a\u039b2} factorizes as \u03c4_{\u039b1}(A)\u03c4_{\u039b2}(B) on simple tensors.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-22T00:12:09.276286+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "minimal_axioms_2026-05-20",
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "The unique normalized trace on M_{n1 n2}(C) satisfies Tr_{n1 n2}(A \u2297 B)=Tr_{n1}(A)\u00b7Tr_{n2}(B), so the normalized trace on A_{\u039b1\u222a\u039b2} factorizes on simple tensors.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check whether the local audit policy treats standard finite-dimensional matrix-trace facts as ordinary algebraic background or as explicit missing cited authorities.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "The mathematical step is a genuine finite-dimensional algebraic identity plus uniqueness of the normalized trace on a full matrix algebra. However the note contributes a localized restatement/application of standard matrix-algebra facts to the single upstream qubit-lattice axiom packet, with zero external comparator checks or first-principles computation. Under the provided decoration tie-break rule, this is audited_decoration rather than audited_clean."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
@@ -250578,7 +251006,7 @@
       "runner_path": null,
       "title": "Tomita Tensor-Trace Factorization on Finite-Dim Matrix Algebras (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "The mathematical step is a genuine finite-dimensional algebraic identity plus uniqueness of the normalized trace on a full matrix algebra. However the note contributes a localized restatement/application of standard matrix-algebra facts to the single upstream qubit-lattice axiom packet, with zero external comparator checks or first-principles computation. Under the provided decoration tie-break rule, this is audited_decoration rather than audited_clean."
+      "verdict_rationale": null
     },
     "topological_instanton_textbook_infrastructure_import_note_2026-05-17": {
       "audit_date": null,
@@ -251491,66 +251919,45 @@
       "verdict_rationale": null
     },
     "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {
-      "audit_date": "2026-05-22T22:18:33.892923+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
-          "minimal_axioms_2026-05-20": null
-        },
-        "dep_claim_type": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "dep_effective_status": {
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
-          "minimal_axioms_2026-05-20": "meta"
-        },
-        "deps": [
-          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "minimal_axioms_2026-05-20"
-        ],
-        "load_bearing_score": 0.0,
-        "runner_hash": null,
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_decoration",
-      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T221811Z-8b45f4df-u4_closes_under_qubit_re-01",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The restricted packet now includes the canonical A1/R1 clause stating H_x is exactly C^2 with multiplicity k(x)=1, and the retained Cl(3) split authority supplies the standard single-irrep algebraic readout. No staggered-Dirac or Grassmann bridge is needed for this narrow U4 statement.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "claim_scope": "Under the ratified A1/R1 k=1 qubit-per-site clause, the U4 bridge is just the per-site single-qubit Hilbert/module readout plus the retained M_2(C) \u2245 Cl(3,0) algebraic identification.",
-      "claim_type": "decoration",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": "2026-05-22T22:18:33.892923+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "leaf",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "decoration_parent_claim_id": null,
       "deps": [
-        "minimal_axioms_2026-05-20",
+        "minimal_axioms",
         "cl3_complexification_split_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 0,
-      "effective_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
-      "effective_status_reason": "decoration_parent_retained",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "cross_family",
-      "intrinsic_status": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "Axiom 1's ratified qubit-per-site reading selects H_x = C^2 with k(x) = 1, so the per-site physical Hilbert space is the single faithful complex irrep of M_2(C) \u2245 Cl(3,0).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "80ec7d86edeaee37129356f86d3a7b96d8af1521b079272e92a7ffda6305bc6f",
       "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check that treating the ratified A1/R1 k=1 clause as canonical axiom-surface input is acceptable despite MINIMAL_AXIOMS carrying effective_status=meta rather than a retained theorem status.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -251611,6 +252018,59 @@
             "total_pass": 0
           },
           "verdict_rationale": "No runner was provided, so the load-bearing step is judged from the note text alone. On its own terms, the chain is an algebraic closure from the A1 qubit definition plus standard matrix-algebra representation theory, not a numerical match or external comparator. The restricted packet nevertheless marks the load-bearing A1 authority as meta rather than retained, and the rubric requires audited_conditional when any cited authority needed for the chain is not retained-grade."
+        },
+        {
+          "archived_at": "2026-05-23T12:01:21.832773+00:00",
+          "audit_date": "2026-05-22T22:18:33.892923+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+              "minimal_axioms_2026-05-20": null
+            },
+            "dep_claim_type": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "dep_effective_status": {
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+              "minimal_axioms_2026-05-20": "meta"
+            },
+            "deps": [
+              "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+              "minimal_axioms_2026-05-20"
+            ],
+            "load_bearing_score": 0.0,
+            "runner_hash": null,
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_decoration",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T221811Z-8b45f4df-u4_closes_under_qubit_re-01",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The restricted packet now includes the canonical A1/R1 clause stating H_x is exactly C^2 with multiplicity k(x)=1, and the retained Cl(3) split authority supplies the standard single-irrep algebraic readout. No staggered-Dirac or Grassmann bridge is needed for this narrow U4 statement.",
+          "claim_scope": "Under the ratified A1/R1 k=1 qubit-per-site clause, the U4 bridge is just the per-site single-qubit Hilbert/module readout plus the retained M_2(C) \u2245 Cl(3,0) algebraic identification.",
+          "claim_type": "decoration",
+          "claim_type_last_reviewed": "2026-05-22T22:18:33.892923+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "independence": "cross_family",
+          "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+          "load_bearing_step": "Axiom 1's ratified qubit-per-site reading selects H_x = C^2 with k(x) = 1, so the per-site physical Hilbert space is the single faithful complex irrep of M_2(C) \u2245 Cl(3,0).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check that treating the ratified A1/R1 k=1 clause as canonical axiom-surface input is acceptable despite MINIMAL_AXIOMS carrying effective_status=meta rather than a retained theorem status.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 0
+          },
+          "verdict_rationale": "With R1 on the canonical axiom surface, the row adds no independent physical closure beyond unpacking the parent qubit/Cl(3) local-algebra commitment and applying standard matrix-algebra representation theory. There are no D-class comparator checks and no numerical computation. The appropriate category is audited_decoration rather than audited_clean: the content is a useful boxed corollary of the retained Cl(3)/M_2(C) local-algebra parent plus the ratified A1 k=1 reading, not a separate retained theorem."
         }
       ],
       "prose_corrections": [],
@@ -251625,7 +252085,7 @@
       "runner_path": null,
       "title": "U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": "With R1 on the canonical axiom surface, the row adds no independent physical closure beyond unpacking the parent qubit/Cl(3) local-algebra commitment and applying standard matrix-algebra representation theory. There are no D-class comparator checks and no numerical computation. The appropriate category is audited_decoration rather than audited_clean: the content is a useful boxed corollary of the retained Cl(3)/M_2(C) local-algebra parent plus the ratified A1 k=1 reading, not a separate retained theorem."
+      "verdict_rationale": null
     },
     "unification_basin_failure_note": {
       "audit_date": null,
@@ -282360,8 +282820,8 @@
   "schema_version": 1,
   "stats": {
     "dropped_gated_sources": 158,
-    "dropped_missing_notes": 0,
-    "dropped_total": 0,
+    "dropped_missing_notes": 1,
+    "dropped_total": 1,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
     "preserved_existing": 2331,

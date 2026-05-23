@@ -73,6 +73,17 @@ ALLOWED_CLAIM_TYPES = {
     None,
 }
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
+
+
+def is_retained_grade(status):
+    """Mirror compute_effective_status.is_retained_grade: literal retained-grade
+    keywords plus `decoration_under_<parent>` (which is only assigned when the
+    parent is itself retained-grade)."""
+    if status in RETAINED_GRADES:
+        return True
+    if isinstance(status, str) and status.startswith("decoration_under_"):
+        return True
+    return False
 ALLOWED_EFFECTIVE_STATUSES = {
     "retained",
     "retained_no_go",
@@ -550,7 +561,7 @@ def main() -> int:
                     errors.append(msg)
             else:
                 parent_eff = rows.get(parent, {}).get("effective_status")
-                if parent_eff not in RETAINED_GRADES:
+                if not is_retained_grade(parent_eff):
                     add_notice(
                         "decoration_parent_not_retained",
                         f"{cid}: decoration parent {parent!r} is not retained-grade "
@@ -630,11 +641,14 @@ def main() -> int:
     # Effective-status propagation sanity. A retained-grade row's deps must
     # themselves be retained-grade. Open gates and retained_pending_chain are
     # explicit blockers, not support for downstream theorem retention.
+    # `decoration_under_<parent>` deps count as retained-grade because
+    # decoration_status() only assigns that status when the parent is itself
+    # retained-grade.
     for cid, row in rows.items():
         if row.get("effective_status") in RETAINED_GRADES:
             for d in row.get("deps", []):
                 d_eff = rows.get(d, {}).get("effective_status")
-                if d_eff not in RETAINED_GRADES:
+                if not is_retained_grade(d_eff):
                     errors.append(
                         f"{cid}: effective_status={row.get('effective_status')!r} but dep {d!r} "
                         f"has effective_status={d_eff!r}"

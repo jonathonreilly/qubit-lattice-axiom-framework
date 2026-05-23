@@ -529,6 +529,117 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
         new_rows, _ = m.compute_effective(rows)
         self.assertEqual(new_rows["born_critical"]["effective_status"], "audit_in_progress")
 
+    def test_decoration_under_retained_counts_as_retained_grade(self):
+        """A clean theorem whose only dep is a decoration_under_<retained_parent>
+        must promote to retained-grade. The decoration's effective_status is
+        only assigned when the parent is itself retained-grade, so it inherits
+        retention and is_retained_grade() must honor that for chain closure."""
+        m = _import("compute_effective_status")
+        rows = {
+            "root": {
+                "claim_id": "root",
+                "deps": [],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+            "decoration_child": {
+                "claim_id": "decoration_child",
+                "deps": ["root"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "root",
+            },
+            "downstream_theorem": {
+                "claim_id": "downstream_theorem",
+                "deps": ["decoration_child"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        new_rows, _ = m.compute_effective(rows)
+        self.assertEqual(new_rows["root"]["effective_status"], "retained")
+        self.assertEqual(
+            new_rows["decoration_child"]["effective_status"],
+            "decoration_under_root",
+        )
+        self.assertEqual(
+            new_rows["downstream_theorem"]["effective_status"],
+            "retained_bounded",
+        )
+
+    def test_chained_decoration_under_retained_resolves(self):
+        """A decoration whose parent is itself a decoration_under_<retained_root>
+        must resolve to decoration_under_<parent>, not retained_pending_chain.
+        Chained decorations preserve retention down the chain."""
+        m = _import("compute_effective_status")
+        rows = {
+            "root": {
+                "claim_id": "root",
+                "deps": [],
+                "audit_status": "audited_clean",
+                "claim_type": "positive_theorem",
+            },
+            "decoration_mid": {
+                "claim_id": "decoration_mid",
+                "deps": ["root"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "root",
+            },
+            "decoration_leaf": {
+                "claim_id": "decoration_leaf",
+                "deps": ["decoration_mid"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "decoration_mid",
+            },
+        }
+        new_rows, _ = m.compute_effective(rows)
+        self.assertEqual(
+            new_rows["decoration_mid"]["effective_status"],
+            "decoration_under_root",
+        )
+        self.assertEqual(
+            new_rows["decoration_leaf"]["effective_status"],
+            "decoration_under_decoration_mid",
+        )
+
+    def test_decoration_under_non_retained_does_not_promote(self):
+        """If the decoration's parent is NOT retained-grade (e.g. unaudited),
+        the decoration row stays retained_pending_chain. The relaxation only
+        applies to decoration_under_<X> where X is itself retained-grade."""
+        m = _import("compute_effective_status")
+        rows = {
+            "unaudited_root": {
+                "claim_id": "unaudited_root",
+                "deps": [],
+                "audit_status": "unaudited",
+                "claim_type": "positive_theorem",
+            },
+            "decoration_child": {
+                "claim_id": "decoration_child",
+                "deps": ["unaudited_root"],
+                "audit_status": "audited_decoration",
+                "claim_type": "decoration",
+                "decoration_parent_claim_id": "unaudited_root",
+            },
+            "downstream_theorem": {
+                "claim_id": "downstream_theorem",
+                "deps": ["decoration_child"],
+                "audit_status": "audited_clean",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        new_rows, _ = m.compute_effective(rows)
+        self.assertEqual(
+            new_rows["decoration_child"]["effective_status"],
+            "retained_pending_chain",
+        )
+        self.assertEqual(
+            new_rows["downstream_theorem"]["effective_status"],
+            "retained_pending_chain",
+        )
+
     def test_main_drops_stale_top_level_timestamp_keys(self):
         m = _import("compute_effective_status")
         _patch_repo_root(m, self.tmp_root)

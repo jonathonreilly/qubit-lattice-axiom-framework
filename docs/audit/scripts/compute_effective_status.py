@@ -62,7 +62,16 @@ def status_rank(status: str | None) -> int:
 
 
 def is_retained_grade(status: str | None) -> bool:
-    return status in RETAINED_GRADES
+    if status in RETAINED_GRADES:
+        return True
+    # `decoration_under_<parent>` is only assigned by decoration_status() when
+    # the parent is itself retained-grade, so its retention is already
+    # established by the parent. Treat it as retained-grade for chain-closure
+    # purposes so a downstream theorem whose only deps are decorations of
+    # retained parents can promote, and so chained decorations resolve.
+    if isinstance(status, str) and status.startswith("decoration_under_"):
+        return True
+    return False
 
 
 def archived_failed_is_retained_no_go(row: dict) -> bool:

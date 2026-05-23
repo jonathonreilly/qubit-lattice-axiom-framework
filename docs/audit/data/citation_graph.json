@@ -73314,7 +73314,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "77e023a682943962297fae6a8dfe1c2aedb06c85d4991705d7f33e6a2ebc3290",
+      "note_hash": "25ea5ca9a2c4d3f69597a1a51fdb685aabfb9fd197355c02fcd02f5ae1fa648b",
       "path": "docs/RETARDATION_DISCRIMINATOR_NOTE.md",
       "runner_path": "scripts/retardation_discriminator.py",
       "title": "Retardation Discriminator: Oscillating Source \u2014 Finite Toy-Harness Result"

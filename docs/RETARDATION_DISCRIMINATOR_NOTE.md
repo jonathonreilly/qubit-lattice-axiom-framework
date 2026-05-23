@@ -61,7 +61,7 @@ unaffected.
 - [`logs/2026-04-06-retardation-discriminator.txt`](../logs/2026-04-06-retardation-discriminator.txt) — frozen output
 - This note
 
-Earlier exploration script (frequency sweep only, not the full retained harness):
+Earlier exploration script (frequency sweep only, not the full bounded harness):
 - [`scripts/gravitational_wave_oscillating_source.py`](../scripts/gravitational_wave_oscillating_source.py)
 
 ## Setup
@@ -119,13 +119,24 @@ Seed robust: 4 seeds all show positive retarded phase at f=0.15.
 
 ## Phase sensitivity
 
-The difference sign depends on the oscillation start phase phi_0:
-- phi_0 = 0.25: diff = +0.010
-- phi_0 = 0.75: diff = -0.011
+The difference depends on the oscillation start phase `phi_0`.
+The current canonical assertion runner reports this default-seed slice at
+`f = 0.15`, `delay = 5`:
 
-The observable is **phase-sensitive**, not a universal sign. This means:
+| Phase setting | Difference |
+| --- | ---: |
+| `phi_0 = 0` | `+0.011022` |
+| `phi_0 = 0.25 * 2*pi` | `-0.001451` |
+| `phi_0 = 0.75 * 2*pi` | `-0.000220` |
+
+The older `+0.010` / `-0.011` phase-sensitivity values came from
+historical exploratory context and are **not** binding evidence for this
+row. The auditable point is narrower: changing `phi_0` materially changes
+the delay-difference observable, so the raw sign is not universal.
+
+This means:
 - A lab measurement requires phase-locked detection (lock-in at source f)
-- The sign flip under phase reversal is a built-in null control
+- Phase-shifted controls are part of the finite toy-harness perimeter
 - The measurable is the **amplitude and phase of the first harmonic**
   of the difference curve, not its raw sign
 
@@ -143,9 +154,10 @@ a delay-dependent difference curve.
 
 ## Claim boundary
 
-The retardation discriminator is a retained, portable observable that
-distinguishes finite-propagation-speed field response from instantaneous
-response to the same oscillating source.
+The retardation discriminator is a bounded finite toy-harness observable:
+within the stated graph family and imposed oscillating-source setup, the
+delay-difference curve distinguishes finite-propagation response from the
+instantaneous response to the same imposed source.
 
 This does NOT claim:
 - Gravitational wave detection (the source oscillation is imposed, not
@@ -153,41 +165,26 @@ This does NOT claim:
 - A specific physical delay value (delay d is a free parameter like c)
 - Phase-independent discrimination (the sign depends on phi_0)
 
-## Audit cache / runner-budget bridge (2026-05-10)
+## Audit cache / runner-budget bridge (updated 2026-05-23)
 
 The active runner is
 [`scripts/retardation_discriminator.py`](../scripts/retardation_discriminator.py)
-(207 lines, pure-Python). The audit-lane runner cache currently
-records `status: timeout` at the default 120 s ceiling because the
-runner's `main()` enumerates the full frozen harness in one
-process: one delta-grid grow at default `seed=0`, the eight-frequency
-sweep at `delay=0` and `delay=DELAY=5`, the seven-step delay law at
-`f=0.15`, the eleven-tau global-delay fit residual scan over the
-eight FREQS, then three families x two seeds for portability and
-four single-family seeds for robustness; each `_phase` call runs a
-full layered propagation across `NL=30` layers x `PW=8 / H=0.5`
-transverse half-width, i.e. ~8.7k nodes per propagation. The runner
-exits cleanly when run unconstrained on the reference laptop and
-prints all eight frozen sections in the canonical "Frozen result"
-log
-[`logs/2026-04-06-retardation-discriminator.txt`](../logs/2026-04-06-retardation-discriminator.txt);
-the timeout is purely an audit-cache budget mismatch, not an
-algorithmic failure.
+(pure-Python). The runner now declares `AUDIT_TIMEOUT_SEC = 600`,
+precomputes graph-local geometry used by each propagation, and exits
+nonzero on any failed assertion. The current assertion surface covers:
 
-The frozen tables in this note (Difference curve at delay=5,
-Delay law at f=0.15, Sign-split band at f=0.15, Phase sensitivity
-across phi_0=0.25/0.75, Family portability across Fam1/Fam2/Fam3,
-Seed robustness across four seeds, Exact nulls at f=0 and at
-delay=0) are all reproduced by the frozen log above. The
-generated repair target ("fast deterministic runner with
-explicit assertions for the nulls, delay law, family/seed
-robustness, and global-delay fit residual") is the named follow-up
-runner workload: a future runner refresh may either declare
-`AUDIT_TIMEOUT_SEC` at module top so the cache lands `status: ok`
-on the existing harness, or split the retained sections across
-several smaller deterministic runners with hard `assert` gates on
-each frozen number; that change is deferred because it changes
-the runner SHA and would invalidate the SHA-pinned cache.
+- exact nulls at `f = 0` and `delay = 0`;
+- the canonical delay-5 difference curve entries for the default family;
+- delay-law sign and magnitude checks at `f = 0.02` and `f = 0.15`;
+- the global-delay residual check;
+- family portability at `f = 0.15`, `delay = 5`;
+- seed robustness for four seeds;
+- the narrowed qualitative `phi_0` phase-sensitivity check above.
+
+The runner intentionally does **not** certify the older historical
+`+0.010` / `-0.011` phase-sensitivity numbers. Those values remain
+out of binding scope unless a future source repair recovers the exact
+historical seed/family/parameter packet.
 
 The exclusion-class theorem ("no instantaneous/static response can
 reproduce the first-harmonic delayed-response observable") that
@@ -200,83 +197,22 @@ follow-up.
 
 ## 2026-05-18 audit-conditional repair: narrowed claims to cache-supported scope + flagged missing assertion gates
 
-Per the 2026-05-17 audit verdict (`audited_conditional`, repair class
-`runner_artifact_issue`), the cached runner output at
-[`logs/runner-cache/retardation_discriminator.txt`](../logs/runner-cache/retardation_discriminator.txt)
-records `status: timeout` with **empty stdout and empty stderr** at the
-120 s ceiling, and the runner
-[`scripts/retardation_discriminator.py`](../scripts/retardation_discriminator.py)
-contains **no `assert` statements** for any of the frozen numbers in
-this note. The audit verdict states: *"The provided runner source
-performs a deterministic toy-harness computation, but it does not
-contain explicit assertion gates for the retained tables or robustness
-claims. The cached runner output also timed out, so the packet does not
-provide a completed computed certificate for the note's frozen
-numbers."*
+This subsection is retained as historical provenance for the earlier
+audit-conditional repair. It is superseded for current source purposes
+by the 2026-05-23 assertion-runner repair above; the independent audit
+lane must still re-audit the changed runner and note before any audit
+status changes.
 
-This revision narrows the binding scope of each claim category in this
-note to what the **audit-cache** actually certifies, and flags the
-remaining categories as **not-yet-cert-backed** pending the named
-follow-up repair (split into fast deterministic runners with hard
-`assert` gates, or set `AUDIT_TIMEOUT_SEC` so the cache lands
-`status: ok`).
+The 2026-05-18 repair recorded the then-current defect: the audit-cache
+packet timed out at 120 seconds, the runner lacked assertion gates, and
+the old phase-sensitivity row was not exercised by `main()`. The
+2026-05-23 repair above addresses the runner-artifact portion by adding
+assertion gates, a phase-sensitivity sweep, graph-local geometry
+precomputation, and a declared 600 second audit timeout.
 
-### Per-category certification status against the audit cache
-
-| Claim category | Audit-cache supports? | Status under this repair |
-| --- | --- | --- |
-| Exact nulls (f=0; delay=0) | NO (empty cache stdout) | flagged: missing-cert |
-| Difference curve at delay=5 (frequency sweep) | NO | flagged: missing-cert |
-| Delay law (d=0,1,3,5,7,10) at f=0.15 | NO | flagged: missing-cert |
-| Sign-split band at f=0.15 | NO | flagged: missing-cert |
-| Phase sensitivity (phi_0=0.25 vs 0.75) | NO (also: runner emits no phi_0 sweep) | flagged: missing-cert AND missing-from-runner |
-| Family portability (Fam1/2/3 at f=0.15, d=5) | NO | flagged: missing-cert |
-| Seed robustness (4 seeds at f=0.15, d=5) | NO | flagged: missing-cert |
-| Global-delay fit residual (8-freq sweep) | NO | flagged: missing-cert |
-
-The "Phase sensitivity" row is the strictest narrowing: the runner's
-`main()` does not iterate over `phi_shift` values of 0.25 and 0.75 nor
-emit a phi_0 sweep section; the `phi_shift` argument is only used
-inside the global-delay fit test (step 4) to generate the candidate
-`shifted` curve. The +0.010 / -0.011 numbers in this note's
-"Phase sensitivity" section therefore come from an off-runner
-exploration that is not exercised by `scripts/retardation_discriminator.py`
-as committed, and is **not** certified by either the audit cache or
-the SHA-pinned runner artifact.
-
-### Frozen log status (separate from audit cache)
-
-The frozen log
-[`logs/2026-04-06-retardation-discriminator.txt`](../logs/2026-04-06-retardation-discriminator.txt)
-does contain numeric output for sections 1-6 (frequency sweep, exact
-nulls, delay law, global-delay fit, family portability, seed
-robustness). This log is **separate from the audit cache** and is not
-itself a SHA-pinned `runner-cache/` artifact. The audit-conditional
-verdict is specifically about the missing `runner-cache/` certificate
-and the missing in-runner asserts, not about the frozen log's
-existence. Under this repair, the frozen log remains a useful
-human-readable artifact, but does not on its own discharge the
-`runner_artifact_issue` repair class.
-
-### Out-of-scope follow-ups (named under the missing-cert flag)
-
-The cheapest repair per audit guidance is to either:
-
-1. Set `AUDIT_TIMEOUT_SEC` at module top so the cache lands
-   `status: ok` on the existing 207-line harness, and add hard
-   `assert` gates on each frozen number reported in this note. This
-   would change the runner SHA and invalidate the existing
-   SHA-pinned cache; a new cache pass is required.
-2. Split the retained sections (exact nulls, delay=5 table, delay
-   law, family/seed robustness, phase sensitivity, global-delay
-   residual) across several smaller deterministic runners with hard
-   `assert` gates per frozen number, and add a phi_0 sweep
-   sub-runner that exercises the "Phase sensitivity" row currently
-   missing from `main()`.
-
-Both options are compute / code work outside the perimeter of this
-narrowing edit, which only sharpens the claim boundary against the
-present audit-cache state. No category is promoted to cert-backed
-under this repair; the note's `bounded_theorem` claim type stands at
-`audited_conditional` and depends on the named follow-up runner work
-to advance.
+The remaining boundary is deliberately narrower than the historical
+prose: this note is a finite toy-harness bounded claim, not a general
+no-instantaneous-emulator theorem and not a certification of the old
+off-runner `+0.010` / `-0.011` phase values. Because the note and runner
+changed, the independent audit lane must re-audit this row from the new
+source and regenerated cache before any effective status changes.

@@ -18673,7 +18673,7 @@
       "runner": "scripts/frontier_retained_cross_lane_consistency.py"
     },
     "retardation_discriminator_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
@@ -52078,7 +52078,7 @@
       "exists": true
     },
     "scripts/retardation_discriminator.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "retardation_discriminator_note"
       ],

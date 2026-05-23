@@ -289930,8 +289930,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2333,
-    "re_audit_required": 1,
+    "preserved_existing": 2334,
+    "re_audit_required": 0,
     "row_count": 2378,
     "seeded_new": 0
   }

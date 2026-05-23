@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 125 |
+| **retained** | 126 |
 | **retained_no_go** | 151 |
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1296 |
+| unaudited | 1295 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 16 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 639 |
+| `audited_clean` | 640 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1521 |
+| `unaudited` | 1520 |
 
 | claim_type | count |
 |---|---:|
@@ -333,6 +333,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5007,6 +5008,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The registered toy-DAG ensemble runner reports normalized coherent-vs-incoherent contrast 0.0393, centroid shift 0.057445, width change 0.021137, and peak-bin pairwise phase differences up to about 0.3225 rad, so coherent summation over the specified DAG geometries is distinguishable from the incoherent mixture in this bounded ensemble.  _(class `C`)_
 - **chain closes:** True — The live runner deterministically constructs the five specified DAG variants, including the repaired added-edge variant, propagates the toy path-sum amplitudes, normalizes each geometry's detector wavefunction, and reproduces the note's bounded contrast, centroid, width, and phase-difference values. The source note explicitly confines the claim to this older DAG-ensemble probe and excludes staggered/headline claims.
 - **rationale:** The bounded computation closes because the current runner output matches the scoped numerical rows and the note has narrowed away the prior inflated normalization headline and any staggered-fermion interpretation. The runner does not emit classified PASS lines, but its deterministic output directly provides the audited observables and its branch would stop claiming confirmation if normalized contrast fell below the stated 1% threshold. Residual risk is citation drift: this result is only a toy_event_physics DAG-ensemble lead, not a retained staggered or gravity-entanglement claim.
+- **auditor confidence:** high
+
+### `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite Λ ⊂ Z^3 with |Λ| ≥ 2, any countably additive probability measure on the projection lattice P(H_Λ), H_Λ=⊗_{x∈Λ}C², has a unique density-matrix representation m(P)=Tr(σP).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124409Z-efde682d-gleason_on_qubit_lattice-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying Gleason's theorem to H_Λ with |Λ| ≥ 2 gives f_m(|ψ⟩)=⟨ψ|σ|ψ⟩ and hence m(P)=Tr(σP) for every projection P.  _(class `A`)_
+- **chain closes:** True — The axiom-premise authority supplies the qubit lattice finite-region Hilbert space, and the note correctly checks dim H_Λ=2^|Λ|≥4, so the cited Gleason theorem applies. The translation from rank-one frame values to arbitrary finite-rank projections is standard finite-dimensional spectral additivity.
+- **rationale:** There is no runner, so the judgment rests on the note text. The load-bearing move is an algebraic/theorem-application closure: once H_Λ is the finite complex Hilbert space of dimension at least 3 and m is a countably additive projection-lattice probability measure, Gleason gives the density operator and finite-dimensional additivity gives m(P)=Tr(σP). The only upstream repository authority is explicitly flagged as an accepted axiom premise, and the note does not overclaim the single-qubit dim-2 case or a full Born-rule derivation chain.
 - **auditor confidence:** high
 
 ### `global_coherence_held_out2_note`

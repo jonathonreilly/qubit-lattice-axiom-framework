@@ -18730,10 +18730,6 @@
     },
     {
       "from": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
-      "to": "g_newton_mass_linear_poisson_composition_bounded_theorem_note_2026-05-10"
-    },
-    {
-      "from": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
       "to": "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
     },
     {
@@ -19985,10 +19981,6 @@
       "to": "native_gauge_closure_note"
     },
     {
-      "from": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-      "to": "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
-    },
-    {
       "from": "plaquette_4d_mc_fss_numerical_theorem_note_2026-05-05",
       "to": "plaquette_4d_mc_support_note_2026-05-04"
     },
@@ -20363,10 +20355,6 @@
     {
       "from": "pmns_c3_nontrivial_current_boundary_note",
       "to": "pmns_selector_current_stack_zero_law_note"
-    },
-    {
-      "from": "pmns_c3_nontrivial_current_boundary_note",
-      "to": "dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21"
     },
     {
       "from": "pmns_chart_constants_retention_note_2026-05-03",
@@ -65829,11 +65817,10 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gravity_clean_derivation_note",
-        "g_newton_mass_linear_poisson_composition_bounded_theorem_note_2026-05-10",
         "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "458f3297df682767bb247e5c090defa24601521ecaac7a77788e751b480fd1ca",
+      "note_hash": "73a992fb9359cfbc40c28f698db99ad02a1bee1113e8bc48df2afca793cbeb2c",
       "path": "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
       "runner_path": null,
       "title": "Newton-Poisson \u2192 Flat First Friedmann Law \u2014 Named Non-Derivation Import"
@@ -67746,11 +67733,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "34a6e72ce86f09a118a43733f86479fd7df0276edc628686d5ddb41f63479073",
+      "note_hash": "559ee96609afc90f5f2742348ad17533a620b846cd60316b132aeea98ba1ae6e",
       "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_planck_target3_clifford_phase_bridge.py",
       "title": "Planck Target 3 Clifford Phase Bridge Theorem"
@@ -68159,8 +68144,7 @@
         "pmns_c3_character_holonomy_closure_note",
         "pmns_c3_character_mode_reduction_note",
         "pmns_hw1_source_transfer_boundary_note",
-        "pmns_selector_current_stack_zero_law_note",
-        "dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21"
+        "pmns_selector_current_stack_zero_law_note"
       ],
       "helper_runner_paths": [
         "scripts/frontier_pmns_active_four_real_source_from_transport.py",
@@ -68177,7 +68161,7 @@
         "scripts/frontier_pmns_uniform_scalar_deformation_boundary.py",
         "scripts/pmns_lower_level_utils.py"
       ],
-      "note_hash": "55981451722122026ae8fe64156a66d7ecb4d242a030785d266d4aa94fc0b68c",
+      "note_hash": "7f2fc0a2b0f80875b553e3cd60b60bf81599c2705c642cb8aaa315e800ece81c",
       "path": "docs/PMNS_C3_NONTRIVIAL_CURRENT_BOUNDARY_NOTE.md",
       "runner_path": "scripts/frontier_pmns_c3_nontrivial_current_boundary.py",
       "title": "PMNS `C3` Nontrivial-Character Current Boundary"
@@ -84146,6 +84130,7 @@
     "planck_boundary_orientation_incidence_no_go_note_2026-04-30",
     "planck_hidden_character_delta_zero_positive_theorem_note_2026-05-10_planckp2_note_2026-05-17",
     "planck_parent_source_hidden_character_no_go_note_2026-04-24",
+    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
     "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25",
     "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
     "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
@@ -84424,10 +84409,10 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9688,
-    "leaf_count": 757,
+    "edge_count": 9685,
+    "leaf_count": 758,
     "node_count": 2490,
-    "root_count": 819,
+    "root_count": 820,
     "runners_with_path": 2051
   }
 }

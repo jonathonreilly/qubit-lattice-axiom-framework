@@ -106276,33 +106276,34 @@
       "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_spectral_measure_theorem_note": {
-      "audit_date": "2026-05-11T22:48:05.686129+00:00",
+      "audit_date": "2026-05-23T14:03:36.154406+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
         "dep_claim_scope": {},
         "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 12.002,
+        "load_bearing_score": 12.461,
         "runner_hash": "713a15257545b78d8c94326f5768859b323372902a1dc04553164c55bab31b71",
-        "transitive_descendants": 724
+        "transitive_descendants": 996
       },
       "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-gauge_vacuum_plaquette_s-005",
-      "auditor_confidence": "high",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T140336Z-gauge_vacuum_plaquette_spectral_measure_-majority",
+      "auditor_confidence": "judicial_panel_majority",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "The finite-surface measure-theoretic identity closes from the stated Wilson partition function, compactness of SU(3)^(N_link), continuity of A_L, and standard compact moment determinacy. This does not identify the measure or evaluate the beta = 6 plaquette.",
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The scoped theorem is a standard compactness, pushforward-measure, Laplace-transform, and cumulant-identity argument on a finite Wilson source surface. It does not require the open staggered-Dirac or g_bare=1 gates unless the claim is broadened to the accepted physical beta=6 surface or quantitative gauge predictions. The first audit correctly identified the clean class-A closure but retained an over-broad bounded label from the source note's live-package dependency prose. The second audit supplies the applyable tuple: audited_clean positive_theorem at the finite Wilson spectral-measure-equivalence scope, with beta=6 identification left open outside scope. | The scoped statement is a finite-volume measure-theoretic and algebraic theorem: compactness, continuity, pushforward, Laplace transform, cumulants, and compact moment determinacy close without the open beta=6 spectral-measure identification. The source note's broader prose about quantitative gauge predictions and open gates supports bounded governance for downstream physical predictions, but it is not load-bearing for this finite Wilson equivalence theorem. Therefore the second audit correctly narrows the audited scope and reclassifies the finite-surface equivalence as a positive_theorem while preserving the beta=6 identification as outside scope. | The scoped finite Wilson spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the stated finite source surface, compactness, continuity, pushforward measure, and compact moment determinacy. The explicit beta=6 spectral-measure identification and the framework embedding through open gates remain outside this ratified scope, so they do not force the finite-surface equivalence itself to stay bounded. The runner supports witnesses and consistency checks but the proof-level closure is class A standard mathematics, not class C computation or a numerical match. | The scoped finite-volume spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the finite Wilson source surface, not a quantitative beta=6 physical prediction. The open staggered-Dirac and g_bare gates are only relevant to downstream physical-surface or beta=6 identification claims, which are explicitly excluded from the ratified scope. The runner's load-bearing checks are class A consistency and proof-structure checks, with no external comparator or tuned numerical input. | The finite-volume spectral-measure equivalence closes by standard compactness, pushforward measure, Laplace-transform, and cumulant identities, with no load-bearing use of the open staggered-Dirac or g_bare gates. The explicit beta=6 spectral-measure identification remains open, but that is not part of the ratified scope. The source note's broader live-package consequence may remain bounded if it is used for physical gauge predictions, but the scoped mathematical finite Wilson theorem is a positive theorem.",
       "claim_id": "gauge_vacuum_plaquette_spectral_measure_theorem_note",
-      "claim_scope": "Audited the finite-volume Wilson plaquette statement that the average plaquette pushforward of Haar measure is a compact probability measure whose Laplace transform generates the finite connected plaquette hierarchy.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Finite-volume Wilson source-surface theorem: the average plaquette pushforward of Haar measure is a compact positive measure whose Laplace transform generates the finite connected plaquette hierarchy.",
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": "2026-05-11T22:48:05.686129+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": "2026-05-23T14:03:36.154406+00:00",
+      "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -106317,24 +106318,41 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
+        "mode": "judicial_third_pass",
         "second_audit": {
-          "audit_date": "2026-05-11T22:48:05.686129+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-gauge_vacuum_plaquette_s-005",
+          "audit_date": "2026-05-23T14:01:26.310457+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T140017Z-275a835d-gauge_vacuum_plaquette_s-01",
           "auditor_family": "codex-gpt-5.5",
           "auditor_model": "gpt-5.5",
           "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited the finite-volume Wilson plaquette statement that the average plaquette pushforward of Haar measure is a compact probability measure whose Laplace transform generates the finite connected plaquette hierarchy.",
-          "claim_type": "bounded_theorem",
+          "claim_scope": "Finite-volume Wilson source-surface theorem: the normalized average plaquette pushforward of Haar measure is a compact positive measure on [-1,1] whose Laplace transform generates the finite connected plaquette hierarchy.",
+          "claim_type": "positive_theorem",
           "independence": "fresh_context",
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "status": "confirmed"
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-23T14:03:36.154406+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T140336Z-gauge_vacuum_plaquette_spectral_measure_-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-volume Wilson source-surface theorem: the average plaquette pushforward of Haar measure is a compact positive measure whose Laplace transform generates the finite connected plaquette hierarchy.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Over-scoped the claim_type as bounded_theorem by inheriting non-load-bearing live-package/open-gate admissions rather than isolating the finite Wilson source-surface theorem.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The scoped theorem is a standard compactness, pushforward-measure, Laplace-transform, and cumulant-identity argument on a finite Wilson source surface. It does not require the open staggered-Dirac or g_bare=1 gates unless the claim is broadened to the accepted physical beta=6 surface or quantitative gauge predictions. The first audit correctly identified the clean class-A closure but retained an over-broad bounded label from the source note's live-package dependency prose. The second audit supplies the applyable tuple: audited_clean positive_theorem at the finite Wilson spectral-measure-equivalence scope, with beta=6 identification left open outside scope. | The scoped statement is a finite-volume measure-theoretic and algebraic theorem: compactness, continuity, pushforward, Laplace transform, cumulants, and compact moment determinacy close without the open beta=6 spectral-measure identification. The source note's broader prose about quantitative gauge predictions and open gates supports bounded governance for downstream physical predictions, but it is not load-bearing for this finite Wilson equivalence theorem. Therefore the second audit correctly narrows the audited scope and reclassifies the finite-surface equivalence as a positive_theorem while preserving the beta=6 identification as outside scope. | The scoped finite Wilson spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the stated finite source surface, compactness, continuity, pushforward measure, and compact moment determinacy. The explicit beta=6 spectral-measure identification and the framework embedding through open gates remain outside this ratified scope, so they do not force the finite-surface equivalence itself to stay bounded. The runner supports witnesses and consistency checks but the proof-level closure is class A standard mathematics, not class C computation or a numerical match. | The scoped finite-volume spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the finite Wilson source surface, not a quantitative beta=6 physical prediction. The open staggered-Dirac and g_bare gates are only relevant to downstream physical-surface or beta=6 identification claims, which are explicitly excluded from the ratified scope. The runner's load-bearing checks are class A consistency and proof-structure checks, with no external comparator or tuned numerical input. | The finite-volume spectral-measure equivalence closes by standard compactness, pushforward measure, Laplace-transform, and cumulant identities, with no load-bearing use of the open staggered-Dirac or g_bare gates. The explicit beta=6 spectral-measure identification remains open, but that is not part of the ratified scope. The source note's broader live-package consequence may remain bounded if it is used for physical gauge predictions, but the scoped mathematical finite Wilson theorem is a positive theorem.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 5,
-      "effective_status": "retained_bounded",
+      "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
@@ -106344,16 +106362,16 @@
         "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
         "scripts/frontier_scalar_3plus1_temporal_ratio.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained_bounded",
+      "independence": "judicial_review",
+      "intrinsic_status": "retained",
       "load_bearing_score": 12.461,
-      "load_bearing_step": "Since sum_p X_p(U) = N_plaq A_L(U), pushing forward normalized Haar measure by A_L gives Z_L(beta) = Z_L(0) integral exp(beta N_plaq a) dmu_L(a).",
+      "load_bearing_step": "Since sum_p X_p(U)=N_plaq A_L(U), pushing Haar measure forward by A_L gives Z_L(beta)=Z_L(0) integral exp(beta N_plaq a) dmu_L(a), and logarithmic derivatives give the tilted cumulants.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "8e63fd5520591180bca5ed48fa0a4d26ea383b9ff96bdc94ea39418188f67545",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPECTRAL_MEASURE_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-check only that downstream uses do not treat this finite-volume generating-object theorem as an explicit beta = 6 plaquette evaluation.",
+      "notes_for_re_audit_if_any": "Keep source prose and ledger scope explicit that positive_theorem covers only finite-volume spectral-measure equivalence, not explicit beta=6 identification or quantitative gauge predictions.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -106474,7 +106492,7 @@
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spectral_measure_theorem.py",
       "title": "Gauge-Vacuum Plaquette Spectral-Measure Theorem",
       "transitive_descendants": 996,
-      "verdict_rationale": "The load-bearing step is an algebraic pushforward/Laplace-transform identity, not a numerical fit or external comparator. The runner verifies simple witnesses for support and then records the remaining measure-theory steps as direct theorem checks; those checks are consistent with the note but are not first-principles physics computation. The audited conclusion is limited to finite Wilson source surfaces and explicitly leaves spectral-measure identification at beta = 6 open."
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The scoped theorem is a standard compactness, pushforward-measure, Laplace-transform, and cumulant-identity argument on a finite Wilson source surface. It does not require the open staggered-Dirac or g_bare=1 gates unless the claim is broadened to the accepted physical beta=6 surface or quantitative gauge predictions. The first audit correctly identified the clean class-A closure but retained an over-broad bounded label from the source note's live-package dependency prose. The second audit supplies the applyable tuple: audited_clean positive_theorem at the finite Wilson spectral-measure-equivalence scope, with beta=6 identification left open outside scope. | The scoped statement is a finite-volume measure-theoretic and algebraic theorem: compactness, continuity, pushforward, Laplace transform, cumulants, and compact moment determinacy close without the open beta=6 spectral-measure identification. The source note's broader prose about quantitative gauge predictions and open gates supports bounded governance for downstream physical predictions, but it is not load-bearing for this finite Wilson equivalence theorem. Therefore the second audit correctly narrows the audited scope and reclassifies the finite-surface equivalence as a positive_theorem while preserving the beta=6 identification as outside scope. | The scoped finite Wilson spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the stated finite source surface, compactness, continuity, pushforward measure, and compact moment determinacy. The explicit beta=6 spectral-measure identification and the framework embedding through open gates remain outside this ratified scope, so they do not force the finite-surface equivalence itself to stay bounded. The runner supports witnesses and consistency checks but the proof-level closure is class A standard mathematics, not class C computation or a numerical match. | The scoped finite-volume spectral-measure equivalence is a standard algebraic and measure-theoretic closure from the finite Wilson source surface, not a quantitative beta=6 physical prediction. The open staggered-Dirac and g_bare gates are only relevant to downstream physical-surface or beta=6 identification claims, which are explicitly excluded from the ratified scope. The runner's load-bearing checks are class A consistency and proof-structure checks, with no external comparator or tuned numerical input. | The finite-volume spectral-measure equivalence closes by standard compactness, pushforward measure, Laplace-transform, and cumulant identities, with no load-bearing use of the open staggered-Dirac or g_bare gates. The explicit beta=6 spectral-measure identification remains open, but that is not part of the ratified scope. The source note's broader live-package consequence may remain bounded if it is used for physical gauge predictions, but the scoped mathematical finite Wilson theorem is a positive theorem."
     },
     "gauge_vacuum_plaquette_susceptibility_flow_theorem_note": {
       "audit_date": null,

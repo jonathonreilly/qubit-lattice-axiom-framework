@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1292 |
+| unaudited | 1291 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 641 |
-| `audited_conditional` | 96 |
+| `audited_conditional` | 97 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1517 |
+| `unaudited` | 1516 |
 
 | claim_type | count |
 |---|---:|
@@ -813,6 +813,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7255,6 +7256,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Standard sequential-measurement composition gives M_{P,E_i} = P E_i P, so Bayes consistency for all effects forces sigma|_P = P sigma P / Tr(P sigma P).  _(class `A`)_
 - **chain closes:** False — The algebra from M_{P,E}=P E P to the Lüders posterior is sound, but the load-bearing sequential-effect composition, trace-pairing probability representation, and U1-U4 update-frame assumptions are explicit admitted inputs rather than closed by the restricted packet. The cited A1+A2 authority supplies the qubit-lattice algebra only, not the measurement-instrument composition theorem.
 - **rationale:** The proof reduces to a correct finite-dimensional trace-duality argument once M_{P,E}=P E P is granted. However, the source note itself admits that this standard sequential-effect composition is not derived here, and the only provided cited authority, MINIMAL_AXIOMS_2026-05-20.md, does not close that bridge from A1+A2. No-Go Discipline check N3 flags the repeated 'standard' and 'canonical' language as a hidden wall for a bounded theorem, and N7's steelman still depends on importing the projective instrument rule.
+- **auditor confidence:** high
+
+### `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional Lüders bridge only: assuming the projective instrument selection K_P = P, the sequential joint effect is M_{P,E}=PEP on finite qubit-lattice matrix algebras; no uniqueness or LSP derivation is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124813Z-fe58fcd0-luders_sequential_produc-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the LSP premise K_P = P, K_P† E K_P = P† E P = P E P using P† = P.  _(class `A`)_
+- **chain closes:** False — The algebra after assuming LSP is exact, but the restricted packet does not derive or retain the LSP instrument-selection premise K_P = P. Thus the chain does not close from cited retained inputs alone.
+- **rationale:** The runner source genuinely performs symbolic matrix checks for the conditional identity and a non-Lüders twist, rather than merely printing pass counts. However the theorem imports LSP as an explicit load-bearing instrument-selection premise, and the provided retained Kraus-Choi authority supplies Kraus representation/existence rather than the selection K_P=P. The axiom-premise carve-out covers A1+A2 only; it does not close the separate LSP selection. No-Go gate N6 also blocks treating the negative boundary as clean closure because the packet itself points to a separate derivation or approval route for LSP.
+- **open / conditional deps cited:**
+  - `LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

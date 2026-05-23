@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 407,
     "high": 214,
-    "leaf": 333,
+    "leaf": 332,
     "medium": 336
   },
   "cycle_break_target_count": 30,
@@ -27443,30 +27443,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_dabc_symmetric_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/su3_dabc_symmetric_check.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36973,6 +36949,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 10,
-  "total_pending": 1290
+  "ready_count": 9,
+  "total_pending": 1289
 }

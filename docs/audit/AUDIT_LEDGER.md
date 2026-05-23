@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 381 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1282 |
+| unaudited | 1281 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -49,12 +49,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 643 |
-| `audited_conditional` | 101 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1507 |
+| `unaudited` | 1506 |
 
 | claim_type | count |
 |---|---:|
@@ -799,6 +799,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gellmann_completeness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gluon_tree_level_masslessness_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4974,6 +4975,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The internal algebraic chain itself closes for the scoped no-go: N1 attack routes include pseudoscalar-as-time-generator, staggered-eta orientation split, accepted-Wilson grammar override, scalar-bridge constant-lift reuse, and a future separately approved anisotropy theorem; the note narrows to the first two and does not overclaim the others. N2-N8 do not reveal a substantive hidden wall in the tested boundary: the qubit reframe closes the alleged extra-Clifford-premise objection inside the packet, residuals match the stated future-theorem/open-plaquette residuals, and the strongest steelman only says a different mechanism might derive anisotropy, which the note explicitly leaves open. However, the packet cites QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md as a non-retained-grade meta authority not flagged with the axiom-premise carve-out, so the rubric requires a conditional verdict despite the scoped algebraic no-go closing on its own terms.
 - **open / conditional deps cited:**
   - `QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md`
+- **auditor confidence:** high
+
+### `gellmann_completeness_theorem_note_2026-05-02`
+
+- **Note:** [`GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md`](../../docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The eight cited Gell-Mann generators form an R-basis for traceless Hermitian 3x3 matrices and close under commutator, with the note also framing this as exhausting the framework/physical SU(3)_c color generators.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T160728Z-9f73b526-gellmann_completeness_th-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The R-span of 8 linearly independent generators T^a in the 8-dimensional real space of 3x3 traceless Hermitian matrices is the full space, equivalently R-span{iT^a}=su(3).  _(class `A`)_
+- **chain closes:** False — The algebraic basis and closure result follows from the cited matrices plus standard dimension counting. The physical-color/gluon framing does not close because the sole cited authority explicitly defers the bridge identifying the symmetric-base SU(3) with physical SM color.
+- **rationale:** The proof of Gell-Mann completeness as a statement about standard 3x3 traceless Hermitian matrices is valid elementary linear algebra. The runner source hard-codes the standard Gell-Mann matrices and checks only algebraic identities, so it does not supply any missing physical-identification bridge. Because the note and corollaries read the result as SU(3)_c color/gluon completeness while the cited parent explicitly leaves physical SM color identification open, the full chain is conditional.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
 - **auditor confidence:** high
 
 ### `generation_axiom_boundary_note`

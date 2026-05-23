@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 137 |
-| **retained_no_go** | 150 |
+| **retained_no_go** | 149 |
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1295 |
+| unaudited | 1297 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 8 |
@@ -49,20 +49,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 636 |
+| `audited_clean` | 635 |
 | `audited_conditional` | 102 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 67 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1520 |
+| `unaudited` | 1522 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1012 |
 | `decoration` | 31 |
 | `meta` | 228 |
-| `no_go` | 240 |
+| `no_go` | 241 |
 | `open_gate` | 111 |
 | `positive_theorem` | 756 |
 
@@ -71,17 +71,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `critical` | 388 |
 | `high` | 483 |
 | `medium` | 572 |
-| `leaf` | 935 |
+| `leaf` | 936 |
 
 - **Retained pending chain closure:** 7
 - **Citation cycles detected:** 0
 
 ### Runner classification (static heuristic)
 
-- runners classified: 1933
+- runners classified: 1934
 - runners with (C) first-principles compute hits: 951
 - runners with (D) external comparator hits: 548
-- decoration candidates (no C, no D): 311
+- decoration candidates (no C, no D): 312
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -92,14 +92,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 709 | 53.47 | `audited_conditional` | ~~audited_conditional~~ |
 | 2 | `minimal_axioms_2026-05-03` | meta | critical | 920 | 52.35 | `unaudited` | meta |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 890 | 47.80 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1086 | 43.59 | `audited_clean` | **retained** |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1087 | 43.59 | `audited_clean` | **retained** |
 | 5 | `minimal_axioms_2026-04-11` | meta | critical | 922 | 39.85 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 176 | 38.97 | `unaudited` | unaudited |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 933 | 38.37 | `unaudited` | unaudited |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 831 | 38.20 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 921 | 37.85 | `unaudited` | unaudited |
 | 10 | `yt_ew_color_projection_theorem` | bounded_theorem | critical | 943 | 34.38 | `audited_conditional` | ~~audited_conditional~~ |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1066 | 33.56 | `audited_clean` | **retained** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1067 | 33.56 | `audited_clean` | **retained** |
 | 12 | `cl3_color_automorphism_theorem` | positive_theorem | critical | 1021 | 33.50 | `audited_clean` | **retained** |
 | 13 | `koide_circulant_character_derivation_note_2026-04-18` | positive_theorem | critical | 172 | 33.44 | `unaudited` | unaudited |
 | 14 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 546 | 32.09 | `unaudited` | unaudited |
@@ -754,7 +754,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
-| `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_pr230_consolidated_status_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12366,19 +12365,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
   - `work_history/yt/YT_SCHUR_STABILITY_GAP_NOTE.md`
   - `work_history/yt/YT_MICROSCOPIC_SCHUR_CLASS_ADMISSIBILITY_NOTE.md`
   - `work_history/yt/YT_GAUGE_CROSSOVER_THEOREM.md`
-- **auditor confidence:** high
-
-### `yt_color_projection_correction_note`
-
-- **Note:** [`YT_COLOR_PROJECTION_CORRECTION_NOTE.md`](../../docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Packet-level no-go: the cited Fierz/channel-count theorem plus color-blind scaling do not derive the Yukawa-side connected-trace selector kappa_Y = 0.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T151209Z-04e31b60-yt_color_projection_corr-02`  (codex-gpt-5.5; independence=fresh_context)
-- **load-bearing step:** Two completions with the same retained Fierz fractions and color-blind scaling, kappa_Y = 0 giving K_Y = 8/9 and kappa_Y = 1 giving K_Y = 1, satisfy the cited premises but disagree on the Yukawa correction.  _(class `A`)_
-- **chain closes:** True — The cited authority supplies only the exact SU(3) channel fractions, and the source note gives an explicit two-completion witness sharing those retained premises while disagreeing on K_Y. That is sufficient for the narrow underdetermination claim.
-- **rationale:** The load-bearing step is an algebraic independence witness over the cited Fierz fractions, not a numerical comparator or a renamed positive theorem. The Fierz authority is retained-grade as a decoration under a retained parent, and its open EW matching rule is not imported as a premise for this Y_T no-go. The no-go discipline gate is satisfied in the packet: the note enumerates five attack routes, collapses the selector wall, scans hidden assumptions, narrows the negative scope, and leaves the scalar/taste-condensate matching theorem as the explicit future closure path.
 - **auditor confidence:** high
 
 ### `yt_ew_color_projection_theorem`

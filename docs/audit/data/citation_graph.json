@@ -27865,6 +27865,10 @@
       "to": "yukawa_color_projection_theorem"
     },
     {
+      "from": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+      "to": "yt_color_projection_correction_note"
+    },
+    {
       "from": "yt_schur_stability_gap_note",
       "to": "yt_exact_schur_normal_form_uniqueness_note"
     },
@@ -82187,7 +82191,7 @@
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "32e448b3c067510f8a7150db198f3543e0e86cb8869bba563b152f9f285425d4",
+      "note_hash": "ca2cec72b1a74716c8e652e5678e95d71a8ee4c63629fd774aee7c9a8da96a71",
       "path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
       "runner_path": "scripts/frontier_yt_color_projection_correction.py",
       "title": "Y_T Color Projection Matching No-Go and Conditional Family"
@@ -83114,6 +83118,20 @@
       "path": "docs/YT_RIGHT_HANDED_SPECIES_DEPENDENCE_NOTE_2026-04-18.md",
       "runner_path": "scripts/frontier_yt_right_handed_species_dependence.py",
       "title": "Right-Handed Sector Species-Dependence Retention Analysis Note (Candidate Class #4)"
+    },
+    "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23": {
+      "claim_id": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
+      "deps": [
+        "yt_color_projection_correction_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b10ebfa90ea9088ae6be5f5df977dbfdee49383ecfb80056c7fb1fc783d00807",
+      "path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py",
+      "title": "Y_T Scalar/Taste-Condensate Selector No-Go"
     },
     "yt_schur_stability_gap_note": {
       "claim_id": "yt_schur_stability_gap_note",
@@ -84251,7 +84269,7 @@
       "bounded_theorem": 523,
       "decoration": 1,
       "meta": 187,
-      "no_go": 66,
+      "no_go": 67,
       "none": 1494,
       "open_gate": 45,
       "positive_theorem": 176
@@ -84260,15 +84278,15 @@
       "bounded_theorem": 960,
       "decoration": 1,
       "meta": 187,
-      "no_go": 169,
+      "no_go": 170,
       "none": 443,
       "open_gate": 123,
       "positive_theorem": 609
     },
-    "edge_count": 9651,
-    "leaf_count": 766,
-    "node_count": 2492,
+    "edge_count": 9652,
+    "leaf_count": 767,
+    "node_count": 2493,
     "root_count": 825,
-    "runners_with_path": 2053
+    "runners_with_path": 2054
   }
 }

@@ -24516,6 +24516,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_yt_p3_msbar_to_pole_k3.py"
     },
+    "yt_pr230_consolidated_status_note_2026-05-22": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_yt_pr230_consolidated_status.py"
+    },
     "yt_pr230_route_exhaustion_summary_note_2026-05-22": {
       "assert_count": 1,
       "counts": {
@@ -48686,6 +48698,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_yt_pr230_consolidated_status.py": {
+      "assert_count": 1,
+      "claims": [
+        "yt_pr230_consolidated_status_note_2026-05-22"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_yt_pr230_route_exhaustion_summary.py": {
       "assert_count": 1,
       "claims": [
@@ -53821,12 +53848,12 @@
     "dominant_class_distribution": {
       "A": 202,
       "B": 266,
-      "C": 733,
+      "C": 734,
       "D": 295,
       "none": 433
     },
-    "runners_classified": 1929,
-    "runners_with_C": 949,
+    "runners_classified": 1930,
+    "runners_with_C": 950,
     "runners_with_D": 547
   }
 }

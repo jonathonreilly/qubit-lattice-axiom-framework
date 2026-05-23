@@ -1,0 +1,40 @@
+{
+  "action_equivalence_l1_error": 0.0,
+  "actual_current_surface_status": "exact support / narrowed blocker: product RN source semantics and source-coupled site-diagonal local action are equivalent, but this gate is not accepted as current neutral EW/Higgs authority and positive Y_T closure is not achieved",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "canonical_oh_lsz_present": false,
+  "composition_l1_error": 6.938893903907228e-17,
+  "consolidated_status_passed": true,
+  "current_closure_satisfied": false,
+  "fail_count": 0,
+  "forbidden_imports": {
+    "H_unit": false,
+    "Planck_or_alpha_s": false,
+    "alpha_LM_or_plaquette_u0": false,
+    "fitted_selector": false,
+    "observed_top_or_yukawa_target": false,
+    "package_v_as_closure": false,
+    "y_t_bare": false,
+    "yt_ward_identity": false
+  },
+  "generated_at": "2026-05-22T00:00:00Z",
+  "max_generator_error": 8.22666379463044e-11,
+  "pass_count": 10,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The packet contains support mathematics only.  It lacks accepted source/action authority, canonical O_H/scalar LSZ, strict physical pole rows or W/Z bypass, and matching/running closure.",
+  "remaining_gates": [
+    "accept or derive the equivalent source/action gate as current same-surface neutral EW/Higgs authority",
+    "derive canonical O_H and scalar LSZ normalization on that accepted surface",
+    "produce strict C_ss/C_sH/C_HH source-Higgs pole rows, or a strict same-source W/Z bypass",
+    "only after physical input exists, run matching/running and retained-proposal gates"
+  ],
+  "review_surface": [
+    "docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md",
+    "scripts/frontier_yt_pr230_consolidated_status.py",
+    "outputs/yt_pr230_consolidated_status_2026-05-22.json"
+  ],
+  "source_action_gate_accepted": false,
+  "strict_source_higgs_rows_present": false,
+  "strict_wz_bypass_present": false
+}

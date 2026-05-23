@@ -80314,6 +80314,18 @@
       "runner_path": "scripts/frontier_yt_p3_msbar_to_pole_k3.py",
       "title": "P3 MSbar-to-Pole K_3 Color-Tensor Retention Theorem (3-loop structural skeleton)"
     },
+    "yt_pr230_consolidated_status_note_2026-05-22": {
+      "claim_id": "yt_pr230_consolidated_status_note_2026-05-22",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [],
+      "helper_runner_paths": [],
+      "note_hash": "971bcd11736e75b3802e5199a8d7aa165c28bb53aa4035012663bb1147fed75e",
+      "path": "docs/YT_PR230_CONSOLIDATED_STATUS_NOTE_2026-05-22.md",
+      "runner_path": "scripts/frontier_yt_pr230_consolidated_status.py",
+      "title": "PR230 Minimal Y_T Source-Action Support Packet"
+    },
     "yt_pr230_route_exhaustion_summary_note_2026-05-22": {
       "claim_id": "yt_pr230_route_exhaustion_summary_note_2026-05-22",
       "claim_type_author_hint": "meta",
@@ -81473,6 +81485,7 @@
     "yt_bridge_moment_closure_note_2026-05-17",
     "yt_bridge_rearrangement_principle_note_2026-05-17",
     "yt_ew_coupling_bridge_note_2026-05-17",
+    "yt_pr230_consolidated_status_note_2026-05-22",
     "yt_pr230_route_exhaustion_summary_note_2026-05-22",
     "yt_retention_landing_readiness_2026-04-18",
     "yt_retention_master_manifest_2026-04-18",
@@ -81483,7 +81496,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 520,
+      "bounded_theorem": 521,
       "decoration": 1,
       "meta": 187,
       "no_go": 65,
@@ -81492,7 +81505,7 @@
       "positive_theorem": 175
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 958,
+      "bounded_theorem": 959,
       "decoration": 1,
       "meta": 187,
       "no_go": 168,
@@ -81501,9 +81514,9 @@
       "positive_theorem": 608
     },
     "edge_count": 9686,
-    "leaf_count": 756,
-    "node_count": 2489,
-    "root_count": 818,
-    "runners_with_path": 2050
+    "leaf_count": 757,
+    "node_count": 2490,
+    "root_count": 819,
+    "runners_with_path": 2051
   }
 }

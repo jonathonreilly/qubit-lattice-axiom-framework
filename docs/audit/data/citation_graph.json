@@ -43402,9 +43402,9 @@
     },
     "central_band_dense_boundary_note": {
       "claim_id": "central_band_dense_boundary_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/central_band_dense_joint_card.py",
@@ -43416,7 +43416,7 @@
         "scripts/stochastic_collapse_born_calibration.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "c041b01a5e024310cbd4615ac7e78b4abc23a6d67fedce9f789aa37cc3228181",
+      "note_hash": "0ba14c9a98933aa14faa76d5874a7c8803502039850be7f3d7bf2bcf13dfbf42",
       "path": "docs/CENTRAL_BAND_DENSE_BOUNDARY_NOTE.md",
       "runner_path": "scripts/central_band_dense_boundary_sweep.py",
       "title": "Central-Band Dense Boundary Note"
@@ -84390,20 +84390,20 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 522,
+      "bounded_theorem": 523,
       "decoration": 1,
       "meta": 187,
       "no_go": 65,
-      "none": 1494,
+      "none": 1493,
       "open_gate": 46,
       "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 959,
+      "bounded_theorem": 960,
       "decoration": 1,
       "meta": 187,
       "no_go": 168,
-      "none": 443,
+      "none": 442,
       "open_gate": 124,
       "positive_theorem": 609
     },

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 313,
     "high": 305,
-    "leaf": 329,
+    "leaf": 328,
     "medium": 340
   },
   "cycle_break_target_count": 24,
@@ -29280,30 +29280,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_effective_potential_endpoint_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_dimensional_compression.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -38936,6 +38912,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 8,
-  "total_pending": 1287
+  "ready_count": 7,
+  "total_pending": 1286
 }

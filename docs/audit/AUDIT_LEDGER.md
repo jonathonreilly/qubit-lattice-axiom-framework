@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 379 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1287 |
+| unaudited | 1286 |
 | meta | 225 |
-| ~~audited_numerical_match~~ | 10 |
+| ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 23 |
@@ -52,9 +52,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 102 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 67 |
-| `audited_numerical_match` | 10 |
+| `audited_numerical_match` | 11 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1512 |
+| `unaudited` | 1511 |
 
 | claim_type | count |
 |---|---:|
@@ -959,6 +959,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `ckm_down_type_scale_convention_support_note_2026-04-22` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `lensing_finite_path_explanation_note` | open_gate | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -5490,6 +5491,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** None  _(class `A`)_
 - **chain closes:** None — Exact algebra over retained inputs. (L2) follows from (D1)+(D2)+(D3)+K(i)=-i; (L3) follows from (L2); (L4) is (L2) applied direction-by-direction with eta_mu(-x) = eta_mu(x) (Z mod L parity). Runner verifies all four at exact precision on L in {4, 6} with a counterfactual discriminator confirming the chain is non-trivial.
 - **rationale:** Load-bearing step is pure class-A algebraic substitution: (L2) Theta_H H Theta_H^{-1} = (P K)(i D)(K^{-1} P^{-1}) = P (K i K^{-1}) (K D K^{-1}) (K P K^{-1}) = P (-i) D P = -i (P D P) = -i (-D) = i D = H, using only (D1) C D C = -D and (D2) P D P = -D from the retained-grade parent cpt_exact_note (audited_clean, effective_status retained), (D3) K D K^{-1} = D from D real, the antilinear-operator axiom K(i) = -i (definition of antilinearity, no import), and the parent's P, C real-involutory specification on Lambda. From (L2) the odd sector vanishes (L3): H_odd = (H - H)/2 = 0 entrywise. The direction-resolved (L4) closes by the same calculation restricted to each H_mu = i D_mu, using eta_mu(-x) = eta_mu(x) (Z mod L parity preserves the staggered phase sum modulo 2). The companion runner (sha256 3b47bff1...) verifies every load-bearing identity at exact precision: D entries are exactly representable dyadic rationals {0, +/-1/2}, so numpy equality is exact (no float tolerance); the 1-d sympy slice provides symbolic certainty for (L1)-(L3); the counterfactual probe (CP K) H (CP K)^{-1} = -H confirms the result is specific to Theta_H = P K and not a generic consequence (rules out hard-coded-passes). Runner cache: PASS=42, FAIL=0 on L in {4, 6} (3-d numpy) plus L=4 (1-d sympy) plus counterfactual. Both deps cpt_exact_note and physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30 are audited_clean / retained-grade. No PDG/SME/literature numerical comparators consumed; no continuum CPT-theorem input; no SME operator-dictionary input (deliberately out of scope per the Pattern A narrow split). Hostile-review check: the claim survives every standard attack -- (a) no symbol identification beyond the standard definitions of antiunitary operator and complex conjugation; (b) the runner does not hard-code the conclusion (the counterfactual (CP K) case produces -H, not 0, demonstrating the algebraic chain is non-trivial); (c) numerics current with the runner cache (note_hash matches ledger 13795f52...); (d) the SME-zero leap that would constitute over-claim is explicitly disclaimed and not cited; (e) the parent bridge note's conditional half (SME bilinear dictionary) is correctly excluded from the load-bearing dependency set. Residual risk: bounded to the framework instance H = i D with the specific staggered eta_mu and even-L periodic Lambda; the theorem does not assert continuum CPT or interacting-theory CPT, and does not discharge the SME-bilinear dictionary gap (those remain the bridge's responsibility). This is a clean Pattern A narrow split. No walls or admissions named; No-Go discipline gate N/A (bounded_theorem with no wall-naming prose).
+
+### `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite-lattice condensate-density ratio at Ls=2, u0=0.9, m=0.01 and the arithmetic comparison of R^(-1/4) versus R^(-1/16), including reader-level comparison to imported C_obs; not the determinant-to-VEV or effective-potential-density bridge.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T154019Z-21e75d0c-hierarchy_dimensional_co-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The within-scope conclusion is that among the two compression candidates probed, the dimension-4 fourth-root is in the few-percent range of the imported C_obs, while the direct sixteenth-root is too small.  _(class `G`)_
+- **chain closes:** False — The runner genuinely computes R from its finite Dirac operator and the stated root arithmetic matches, but the step that would force the dimension-4 exponent, sign, and placement in the physical VEV map is not supplied. The source and cited endpoint authority both leave that effective-potential-density/det-to-v bridge open.
+- **rationale:** The source's load-bearing conclusion is a numerical closeness and ordering claim at selected lattice parameters and against an imported observed prefactor. The runner is substantive for the finite-matrix part: it builds the APBC staggered Dirac operator, inverts it, forms R, and checks the root arithmetic without using C_obs in PASS gates. That still does not derive the physical insertion map or make the D=4 fourth-root a forced framework consequence. The source verification text is stale about the scorecard count, saying 2/0 while the supplied runner reports 5/0, though the printed numerical values are consistent.
+- **open / conditional deps cited:**
+  - `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
+  - `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
+- **auditor confidence:** high
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`
 

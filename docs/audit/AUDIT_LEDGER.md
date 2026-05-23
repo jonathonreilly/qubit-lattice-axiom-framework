@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
-| `audited_clean` | 639 |
+| `audit_in_progress` | 1 |
+| `audited_clean` | 640 |
 | `audited_conditional` | 105 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
-| `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -655,6 +654,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_layered_loop_threshold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_newton_reproduction_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -10620,6 +10620,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The computed 2x2x2 blocked-centroid acceleration follows an approximately inverse-square distance law on the audited d=3..6 surface, with per-side exponents near -2 and global exponent -1.982.  _(class `C`)_
 - **chain closes:** True — The included runner builds the stated staggered Hamiltonian, potential, free and gravitating evolutions, raw and blocked centroids, and distance-law fits; its cached output matches the note. The closure is bounded to the stated external source, open boundaries, calibration window, and blocked observable.
 - **rationale:** The runner is not a print-only or hard-coded numerical-match artifact: it computes the finite staggered-lattice evolution and fitted blocked-trajectory exponent from the stated operators and parameters. The note's load-bearing numerical claims match the completed runner output. The result is clean only as a bounded finite-surface computation; it does not establish self-consistent two-body closure, both-masses scaling, irregular-graph transfer, or a general staggered trajectory theorem.
+- **auditor confidence:** high
+
+### `staggered_only_det_positivity_case_a_note_2026-05-17`
+
+- **Note:** [`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under ε and real m>0, det(M_KS+mI)=∏(m²+σ_i²)>0 for every SU(3) link configuration.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T190702Z-758351f8-staggered_only_det_posit-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Equation (16) and (18): det(M)=∏_{i=1}^{n/2}(m²+σ_i²)>0 after the det(γ₅)=(-1)^{n/2} sign cancels the sign in det(γ₅M).  _(class `A`)_
+- **chain closes:** True — Given the stated off-diagonal anti-Hermitian block form M_KS=[[0,K],[-K†,0]] with equal ε-sublattice dimensions, the SVD of K reduces γ₅M to independent 2x2 blocks. The determinant sign from γ₅ is explicitly counted and cancels, leaving a strictly positive product because m>0 and σ_i²≥0.
+- **rationale:** The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, γ₅-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument.
 - **auditor confidence:** high
 
 ### `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 270,
+    "critical": 269,
     "high": 349,
     "leaf": 343,
     "medium": 339
@@ -8,28 +8,6 @@
   "cycle_break_target_count": 0,
   "cycle_break_targets": [],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_only_det_positivity_case_a_note_2026-05-17",
-      "claim_scope": "The staggered-only determinant det(M_KS + mI) is strictly positive for m > 0 on a balanced epsilon-graded lattice, assuming the stated anti-Hermiticity, epsilon-anticommutation/off-diagonal block form, and SU(3) link background.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.257,
-      "note_path": "docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/staggered_only_det_positivity_case_a_2026-05-17.py",
-      "transitive_descendants": 864
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -29385,7 +29363,7 @@
       "claim_id": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
       "claim_scope": null,
       "claim_type": "no_go",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,
@@ -38950,6 +38928,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 43,
-  "total_pending": 1301
+  "ready_count": 42,
+  "total_pending": 1300
 }

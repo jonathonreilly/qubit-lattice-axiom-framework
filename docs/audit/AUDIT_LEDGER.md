@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1288 |
+| unaudited | 1287 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 17 |
+| ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -52,8 +52,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 17 |
-| `unaudited` | 1513 |
+| `audited_renaming` | 18 |
+| `unaudited` | 1512 |
 
 | claim_type | count |
 |---|---:|
@@ -978,6 +978,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `poisson_self_field_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -8973,6 +8974,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On a finite translation-covariant window with no further constraints, the Jaynes entropy maximizer on A_Λ is the normalized trace state I_{2^{|Λ|}}/2^{|Λ|}, whose one-site marginals are I_2/2 and which is invariant under the induced lattice-translation automorphisms.  _(class `C`)_
 - **chain closes:** True — The cited axiom premise supplies one M_2(C) qubit algebra per Z^3 site and standard finite tensor-product composition. Standard Jaynes/von Neumann entropy facts then give the unique finite-dimensional unconstrained maximizer as the normalized trace state, from which both local unitary invariance of marginals and finite-window translation invariance follow.
 - **rationale:** The proof does not depend on a missing runner; it is a finite-dimensional max-entropy argument from the accepted qubit-on-Z^3 axiom premise plus standard entropy properties. The claim is correctly narrowed to finite translation-covariant windows and does not assert infinite-volume uniqueness or full-state Jaynes closure beyond that finite scope. The axiom-premise carve-out applies to MINIMAL_AXIOMS_2026-05-20.md, and no non-retained load-bearing dependency is imported.
+- **auditor confidence:** high
+
+### `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Commuting bounded finite-source observables on a finite-region one-qubit algebra A_Lambda with a given pre-record reference state rho_ref.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T125354Z-41c15921-pwc_derivation_from_cumu-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The framework's W[J] is the right-hand side of the standard source functional Q1 with rho = rho_ref, hence is the standard cumulant generating functional on commuting source families.  _(class `F`)_
+- **chain closes:** True — The formula has the standard cumulant-generator derivatives on the stated commuting scope, assuming the quoted standard probability/statistical-mechanics definitions. The audit chain is an identification of the framework symbol with that standard object, not an independent derivation from A1+A2.
+- **rationale:** The note's load-bearing move is explicitly an identification: PWC is Q1 with rho replaced by rho_ref. That is mathematically coherent on the commuting-source scope, but under the rubric it is class F because it asserts identity between an existing framework symbol and a standard cumulant-generating functional rather than deriving a new result from the axiom premise. The axiom citation supplies the finite-region qubit algebra substrate only; it does not itself derive the source-functional form.
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

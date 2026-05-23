@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 322,
+    "critical": 321,
     "high": 312,
     "leaf": 335,
     "medium": 344
@@ -380,35 +380,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
-      "claim_scope": "Audited the obstruction that the local one-plaquette and finite periodic Wilson diagonal connected plaquette hierarchies cannot truncate at any finite order, assuming the cited endpoint, analyticity, and finite-Taylor-support lemmas.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-        "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
-        "scripts/frontier_scalar_3plus1_temporal_ratio.py"
-      ],
-      "load_bearing_score": 12.963,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.py",
-      "transitive_descendants": 997
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -19219,6 +19190,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.085,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py",
+      "transitive_descendants": 47
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "yt_ew_m_residual_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -23930,30 +23925,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem.py",
-      "transitive_descendants": 47
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.085,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py",
       "transitive_descendants": 47
     },
     {
@@ -39592,5 +39563,5 @@
     }
   ],
   "ready_count": 29,
-  "total_pending": 1313
+  "total_pending": 1312
 }

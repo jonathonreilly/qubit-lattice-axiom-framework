@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 133 |
-| **retained_no_go** | 147 |
+| **retained_no_go** | 148 |
 | **retained_bounded** | 378 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1312 |
-| audit_in_progress | 1 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
@@ -47,8 +46,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 632 |
+| `audited_clean` | 633 |
 | `audited_conditional` | 90 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 66 |
@@ -119,7 +117,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -319,6 +316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -4632,6 +4630,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The four endpoint, Taylor-support, and polynomial-growth lemmas close from the bounded admissions BA-1 through BA-4 plus elementary compactness, analyticity, and polynomial-growth arguments.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the arguments for L1-L4 follow from BA-1 through BA-4 and elementary analysis. The chain does not derive BA-1 through BA-4 themselves, but the note explicitly scopes them as admitted bounded inputs rather than claimed framework consequences.
 - **rationale:** The load-bearing work is not a first-principles Cl(3)/Z^3 computation; it is an algebraic and analytic closure over explicitly stated compact-analysis admissions. The runner source is consistent with that scope: it performs numerical sanity checks, structural checks, and text-boundary checks, and it does not hard-code a contested framework-derived constant as a derived result. The source note clearly excludes deriving BA-1 through BA-4 and excludes upgrading the parent obstruction theorem, so the audited claim closes only as a bounded theorem under those admissions.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** No exact finite-order diagonal connected-cumulant/Taylor truncation, equivalently no polynomial diagonal source generator K(t), for the one-plaquette block or finite periodic Wilson L^4 source surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T145416Z-8f66752d-gauge_vacuum_plaquette_i-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** If the diagonal hierarchy truncated exactly at finite order, finite Taylor support would make K(t) a global polynomial, so P(t)=K'(t)/N_plaq would be a polynomial with a finite limit at infinity and hence constant, contradicting P(0)=0 and lim P(t)=1.  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded lemma note supplies the endpoint identities, global finite-Taylor-support-to-polynomial implication, and polynomial-growth lemma; the retained reduction note is redundant context for the same endpoint behavior. Under that scoped notion of truncation, the contradiction is elementary and no beta=6 closure or external comparator is used.
+- **rationale:** The proof is class A algebra over retained-grade inputs: finite truncation implies polynomial K, bounded endpoint behavior makes K' constant, and the two endpoint values contradict constancy. The runner's four theorem checks are hard-coded algebraic assertions rather than independent theorem computation, and its three Bessel computations are only support, so the runner is not the source of closure. The no-go discipline gate passes only for the narrow diagonal finite-Taylor/polynomial-generator obstruction; nonpolynomial hierarchy solutions and broader generating representations remain explicitly outside the audited scope.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_local_environment_factorization_theorem_note`

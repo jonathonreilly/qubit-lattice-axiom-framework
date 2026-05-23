@@ -26,11 +26,10 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 2 |
 | high | `audited_renaming` | 2 |
 | medium | `audited_conditional` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 508
+**Total non-retained-grade rows in publication tables:** 507
 
 ## Per-row breakdown
 
@@ -105,7 +104,6 @@ publication tables phrase it.
 | critical | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `gauge_vacuum_plaquette_bridge_support_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
-| critical | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |

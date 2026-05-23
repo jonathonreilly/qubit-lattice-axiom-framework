@@ -509,3 +509,9 @@ The primary runner verifies the conditional algebra of Sections 1, 3, 4, 5
 (class G, recorded by the runner as an admitted input and not certifiable in
 its restricted packet). The companion runner verifies the unconditional
 obstruction calculation on the unreduced carrier.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [koide_mru_demotion_note_2026-04-20](KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)

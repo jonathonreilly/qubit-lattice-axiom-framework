@@ -6709,6 +6709,10 @@
       "to": "dm_leptogenesis_pmns_projector_interface_note_2026-04-16"
     },
     {
+      "from": "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
+      "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+    },
+    {
       "from": "dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem_note_2026-04-16",
       "to": "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
     },
@@ -10511,6 +10515,14 @@
     {
       "from": "gravitational_memory_note_2026-04-11",
       "to": "memory_mu2_geometry_sweep_note_2026-04-11"
+    },
+    {
+      "from": "graviton_mass_derived_note",
+      "to": "graviton_mass_spectral_gap_identity_theorem_note"
+    },
+    {
+      "from": "graviton_mass_derived_note",
+      "to": "universal_qg_canonical_textbook_continuum_gr_closure_note"
     },
     {
       "from": "graviton_mass_spectral_gap_identity_theorem_note",
@@ -15117,6 +15129,10 @@
       "to": "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
     },
     {
+      "from": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+      "to": "koide_mru_demotion_note_2026-04-20"
+    },
+    {
       "from": "koide_mru_demotion_note_2026-04-20",
       "to": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
     },
@@ -16607,6 +16623,10 @@
     {
       "from": "left_handed_charge_matching_note",
       "to": "graph_first_su3_integration_note"
+    },
+    {
+      "from": "left_handed_charge_matching_note",
+      "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
     {
       "from": "legacy_exploratory_drivers_note",
@@ -19499,6 +19519,38 @@
     {
       "from": "periodic_2d_wraparound_fix_note_2026-04-11",
       "to": "bmv_threebody_note_2026-04-11"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_threshold_2d_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "localized_source_response_sweep_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_compact_floor_sweep_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_annular_tapered_sweep_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_h025_constrained_localization_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "broad_surrogate_point_source_compare_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_backreaction_note"
+    },
+    {
+      "from": "persistent_inertial_response_readiness_note",
+      "to": "mesoscopic_surrogate_multistage_note"
     },
     {
       "from": "persistent_object_exact_lattice_park_note_2026-04-16",
@@ -23725,6 +23777,14 @@
       "to": "staggered_dirac_realization_gate_note_2026-05-03"
     },
     {
+      "from": "staggered_dirac_realization_gate_note_2026-05-03",
+      "to": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
+    },
+    {
+      "from": "staggered_dirac_realization_gate_note_2026-05-03",
+      "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+    },
+    {
       "from": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
       "to": "cl3_complexification_split_narrow_theorem_note_2026-05-10"
     },
@@ -23959,6 +24019,10 @@
     {
       "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
       "to": "minimal_axioms_2026-04-11"
+    },
+    {
+      "from": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
+      "to": "axiom_first_reflection_positivity_theorem_note_2026-04-29"
     },
     {
       "from": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
@@ -24733,6 +24797,14 @@
       "to": "teleportation_bell_measurement_circuit_note"
     },
     {
+      "from": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
+      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
+    },
+    {
+      "from": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
+      "to": "oh_schur_boundary_action_note"
+    },
+    {
       "from": "tensor_block_closure_test_note",
       "to": "oh_schur_boundary_action_note"
     },
@@ -25291,6 +25363,14 @@
     {
       "from": "universal_gr_constraint_action_stationarity_note",
       "to": "universal_gr_curvature_localization_blocker_note"
+    },
+    {
+      "from": "universal_gr_curvature_localization_blocker_note",
+      "to": "universal_gr_isotropic_glue_operator_note"
+    },
+    {
+      "from": "universal_gr_curvature_localization_blocker_note",
+      "to": "universal_gr_discrete_global_closure_note"
     },
     {
       "from": "universal_gr_discrete_global_closure_note",
@@ -47788,9 +47868,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "f94010194f8c629f8eff10fb643dfecf6ae6facb1a73b470d29d25f6c1c1109d",
+      "note_hash": "2423d458f19576260db8f66aeda74d67038497d38e4a36773183f80d6ff9ddd5",
       "path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py",
       "title": "DM Leptogenesis PMNS Relative-Action Stationarity Theorem"
@@ -53964,9 +54046,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "graviton_mass_spectral_gap_identity_theorem_note",
+        "universal_qg_canonical_textbook_continuum_gr_closure_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "2169af0aef15ba7c644f0a130633d71d1765d7d07951c5fc08fc33d662e595b4",
+      "note_hash": "e0ea84b621e5d441fd22521da18556386f2f9c0c363f3b28c0931c1fc7bc2891",
       "path": "docs/GRAVITON_MASS_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_graviton_mass_derived.py",
       "title": "Lichnerowicz TT Spectral Arithmetic on S^3 with Imported Hubble Radius"
@@ -58033,9 +58118,11 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "koide_mru_demotion_note_2026-04-20"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "8c0cff589fb7d12e88a33ffedc4d87e43d2a8d33c134f8c209c386ffe3a9db6f",
+      "note_hash": "7b86dc35e62a906eaf725592e81f20f6d2b2a7a76d627a2bdb979b26e44a5427",
       "path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_moment_ratio_uniformity_theorem.py",
       "title": "Moment-Ratio Uniformity (MRU) on Cl(d)/Z_d \u2014 conditional support note"
@@ -60373,10 +60460,11 @@
       "deps": [
         "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "graph_first_selector_derivation_note",
-        "graph_first_su3_integration_note"
+        "graph_first_su3_integration_note",
+        "staggered_dirac_realization_gate_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "be3f98273aab1763d5ad4041740f27fe2b03dc1ff1801ff96f2d515e0f130921",
+      "note_hash": "291b0691e9e5f04139925a6a439bea6ea7c8f7fbb9d2c2be7acfa3da1c67de0d",
       "path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
       "runner_path": "scripts/frontier_graph_first_su3_integration.py",
       "title": "Left-Handed Charge Matching on the Selected-Axis Surface"
@@ -64615,9 +64703,18 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "mesoscopic_surrogate_threshold_2d_note",
+        "localized_source_response_sweep_note",
+        "mesoscopic_surrogate_compact_floor_sweep_note",
+        "mesoscopic_surrogate_annular_tapered_sweep_note",
+        "mesoscopic_surrogate_h025_constrained_localization_note",
+        "broad_surrogate_point_source_compare_note",
+        "mesoscopic_surrogate_backreaction_note",
+        "mesoscopic_surrogate_multistage_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "53ab126619592e92d09713df02fb03361a5522873c85a5f7796d59094e8d00ba",
+      "note_hash": "699fd1305db5140eb48c63d839450273fcb446f3507f7df94ec88835c6d8f910",
       "path": "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
       "runner_path": null,
       "title": "Persistent Inertial-Response Readiness Note"
@@ -73605,9 +73702,12 @@
       "claim_type_author_hint": "open_gate",
       "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
+      "deps": [
+        "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "5ec9e48178c5f5d4b33be0ae4d0d359fd01c0a0c117529599ade2c553c6fe217",
+      "note_hash": "b7821485b637a1d9b4585322cd8b679b65b520e4c66f78ba1790327378ad0861",
       "path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "runner_path": null,
       "title": "Staggered-Dirac Realization Gate Note"
@@ -74093,10 +74193,11 @@
       "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
-        "minimal_axioms_2026-04-11"
+        "minimal_axioms_2026-04-11",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eb90315159ca12daeeb8b02a62eba5db0905990fe5ced8ae769570b906f65f41",
+      "note_hash": "908367e1e75df3b7b7d32f403fce914da8789d85e02ad0d9afc55aced7ee8391",
       "path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
       "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
       "title": "Staggered + Wilson Determinant-Positivity Bridge Theorem Note"
@@ -75716,9 +75817,12 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "coarse_grained_exterior_law_helper_note_2026-04-14",
+        "oh_schur_boundary_action_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "47be0caace0f11f69bdd7456c727548d9af26ad778b6c89a309b68c0f53d927f",
+      "note_hash": "9aa2997b77beb1ce26e0bc29c4a31b6c91753c4164c27d702e4559fe1815b05b",
       "path": "docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md",
       "runner_path": "scripts/frontier_tensorial_einstein_regge_completion.py",
       "title": "Tensorial Einstein-Regge Completion Probe Helper Module"
@@ -76439,9 +76543,12 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [],
+      "deps": [
+        "universal_gr_isotropic_glue_operator_note",
+        "universal_gr_discrete_global_closure_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "83e433e0e22271fc839477e54bc885c8578b00c6f0f40cb89fdd013675555612",
+      "note_hash": "45e0cbdf37a642a80eaf477ecb5ccadf4a98097b2655a12ca559923158e0a321",
       "path": "docs/UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md",
       "runner_path": null,
       "title": "Universal GR Curvature Localization Blocker Note"
@@ -80815,7 +80922,6 @@
     "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
     "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_note_2026-05-17",
     "dm_leptogenesis_pmns_projector_interface_note_2026-04-16",
-    "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
     "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
     "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
     "dm_lepton_synthesis_note_2026-04-19",
@@ -80928,7 +81034,6 @@
     "gravitational_entanglement_note",
     "gravitational_wave_probe_note",
     "gravitomagnetic_note",
-    "graviton_mass_derived_note",
     "graviton_mass_derived_note_2026-05-17",
     "gravity_design_blueprint",
     "gravity_full_self_consistency_note",
@@ -81000,7 +81105,6 @@
     "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
     "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19",
     "koide_lightcone_primitive_theorem_note_2026-05-10",
-    "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
     "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
     "koide_native_dimensionless_note_2026-04-24",
     "koide_native_zero_section_closure_route_note_2026-04-24",
@@ -81116,7 +81220,6 @@
     "packet_memory_note",
     "paper_outline_2026-04-12",
     "persistent_inertial_object_probe_note",
-    "persistent_inertial_response_readiness_note",
     "persistent_object_adaptive_readout_note",
     "persistent_object_adaptive_readout_v2_note",
     "persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16",
@@ -81247,7 +81350,6 @@
     "staggered_backreaction_note",
     "staggered_backreaction_shell_spectral_note",
     "staggered_dag_note_2026-04-10",
-    "staggered_dirac_realization_gate_note_2026-05-03",
     "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
     "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
     "staggered_fermion_card_2026-04-10",
@@ -81311,7 +81413,6 @@
     "teleportation_three_register_cross_encoding_note",
     "tensor_network_connection_note",
     "tensor_support_center_excess_law_note",
-    "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
     "thales_right_angle_narrow_theorem_note_2026-05-02",
     "third_grown_family_boundary_note",
     "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
@@ -81328,7 +81429,6 @@
     "universal_gr_bd_congruence_invariance_bounded_note_2026-05-10",
     "universal_gr_block_normalization_note",
     "universal_gr_complement_canonical_note",
-    "universal_gr_curvature_localization_blocker_note",
     "universal_gr_invariant_frame_obstruction_note",
     "universal_gr_lambda_bypass_note",
     "universal_gr_lorentzian_global_atlas_closure_note",
@@ -81420,10 +81520,10 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9670,
-    "leaf_count": 760,
+    "edge_count": 9690,
+    "leaf_count": 756,
     "node_count": 2489,
-    "root_count": 825,
+    "root_count": 818,
     "runners_with_path": 2050
   }
 }

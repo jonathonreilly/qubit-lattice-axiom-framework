@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 390,
     "high": 486,
-    "leaf": 1008,
+    "leaf": 1009,
     "medium": 610
   },
   "flagship_signal_used": false,
-  "node_count": 2494,
+  "node_count": 2495,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -37,8 +37,8 @@
     {
       "claim_id": "graph_first_su3_integration_note",
       "criticality": "critical",
-      "load_bearing_score": 44.09,
-      "transitive_descendants": 1089
+      "load_bearing_score": 44.591,
+      "transitive_descendants": 1090
     },
     {
       "claim_id": "minimal_axioms_2026-04-11",

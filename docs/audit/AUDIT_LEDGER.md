@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1268 |
+| unaudited | 1267 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
-| ~~audited_conditional~~ | 121 |
+| ~~audited_conditional~~ | 122 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,12 +50,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 648 |
-| `audited_conditional` | 121 |
+| `audited_conditional` | 122 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1494 |
+| `unaudited` | 1493 |
 
 | claim_type | count |
 |---|---:|
@@ -63,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration` | 32 |
 | `meta` | 229 |
 | `no_go` | 242 |
-| `open_gate` | 111 |
-| `positive_theorem` | 751 |
+| `open_gate` | 112 |
+| `positive_theorem` | 750 |
 
 | criticality | count |
 |---|---:|
@@ -798,6 +798,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `exponent_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `field_equation_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `g_bare_derivation_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_rigidity_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_farfield_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5 | C | - |
@@ -4291,6 +4292,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Relative to the admitted canonical normalization, `g_bare = 1` follows from `beta = 2 N_c / g_bare^2` with `N_c = 3` and `beta = 6`.  _(class `A`)_
 - **chain closes:** True — The chain closes on the bounded surface because the cited authorities are supplied as retained-grade and the final step is exact substitution. It does not close as an absolute derivation of canonical normalization or of the `beta=6` surface from `A1 + A2` alone.
 - **rationale:** The load-bearing step is class A algebra over retained-grade inputs, not a first-principles class C derivation. The runner does compute several operator and plaquette checks, but the decisive `g_bare=1` step uses the explicit bounded `beta=6` surface. No external comparator or tuned observational match is used. The clean verdict applies only to the bounded theorem scope stated above.
+- **auditor confidence:** high
+
+### `g_bare_derivation_status_correction_audit_note_2026-05-02`
+
+- **Note:** [`G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`](../../docs/G_BARE_DERIVATION_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the 2026-05-02 status-correction packet's demotion rationale for `G_BARE_DERIVATION_NOTE.md`, including the missing-runner claim, constraint-vs-convention ambiguity, and unresolved A -> A/g rescaling freedom.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T201153Z-78441672-g_bare_derivation_status-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note claims `scripts/frontier_g_bare_derivation.py` is missing and therefore the parent g_bare derivation cannot proceed past structural review.  _(class `A`)_
+- **chain closes:** False — The chain does not close because the included runner explicitly fails the note's load-bearing missing-runner check: `frontier_g_bare_derivation.py` exists in the runner environment. The cited parent authority also contains explicit open-gate language requiring future independent audits of repair candidates not included in this packet.
+- **rationale:** The status-correction note correctly identifies an open normalization/rescaling issue in broad terms, but one of its concrete load-bearing premises is stale or false under the provided runner output. The cited parent authority is retained_bounded but explicitly says the parent theorem remains under an open main gate pending two repair-candidate audits and re-audit. Therefore the packet supports a conditional/open-gate disposition, not a clean terminal status correction on the stated missing-runner basis.
+- **open / conditional deps cited:**
+  - `G_BARE_DERIVATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`

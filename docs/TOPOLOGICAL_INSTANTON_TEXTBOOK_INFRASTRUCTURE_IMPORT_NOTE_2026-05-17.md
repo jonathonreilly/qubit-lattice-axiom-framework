@@ -14,11 +14,14 @@ fractional-instanton dilute-gas condensates.
 This wrapper note documents four textbook Yang-Mills /
 gauge-topology results as named non-derivation imports so downstream
 external narrow theorem notes (notably
-[INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md),
-[MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md),
-[FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md](FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md))
+`INSTANTON_4D_ACTION_8PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`,
+`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`,
+`FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`)
 can register a one-hop dependency rather than carry the four textbook
-results as unattributed external citations.
+results as unattributed external citations. (Downstream consumers
+backticked here to avoid length-2 cycles — load-bearing citation
+direction is *downstream theorem → this textbook import*, recorded in
+each consumer's "## Upstream authority" section.)
 
 ## Imports covered
 

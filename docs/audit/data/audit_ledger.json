@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -13389,9 +13388,7 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
-      ],
+      "deps": [],
       "direct_in_degree": 34,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -13403,7 +13400,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "bdb76f3ccc308b983ffd5a1f3e64a06ecc85b152b304b30041bdee005dde5108",
+      "note_hash": "0b8dcf761a496990a238390d087172584c99181ac16066f0826f33c24e702327",
       "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -59811,9 +59808,7 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16"
-      ],
+      "deps": [],
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -59831,7 +59826,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "2423d458f19576260db8f66aeda74d67038497d38e4a36773183f80d6ff9ddd5",
+      "note_hash": "f94010194f8c629f8eff10fb643dfecf6ae6facb1a73b470d29d25f6c1c1109d",
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -249123,9 +249118,7 @@
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "teleportation_resource_from_poisson_note"
-      ],
+      "deps": [],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -249140,7 +249133,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "7345e1e70e8f445ed4f618b1d8824db3fedab83d98ae180a76c1950b08e23e1e",
+      "note_hash": "f0056b376a3470b577e20043025e6d42034520fee12d4fa8cf9d8297838131b2",
       "note_path": "docs/TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -254324,7 +254317,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "7ca747612095bd1d805a1fe912a16c0c86f8b66adb65303e32bc4c8b8f70411d",
+      "note_hash": "a7ab1314ff36ce6c884acb322c331f152608149b61ea1135a29fe33c89a8f90e",
       "note_path": "docs/TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -257424,8 +257417,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "universal_gr_isotropic_glue_operator_note",
-        "universal_gr_discrete_global_closure_note"
+        "universal_gr_isotropic_glue_operator_note"
       ],
       "direct_in_degree": 3,
       "effective_status": "unaudited",
@@ -257438,7 +257430,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "45e0cbdf37a642a80eaf477ecb5ccadf4a98097b2655a12ca559923158e0a321",
+      "note_hash": "da1729ee9b0c63afcd7b533e6f788ba2f71b1284b349ffeb8dbf09af30e08b72",
       "note_path": "docs/UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -266894,7 +266886,6 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "wave_direct_dm_h025_fam2_seed0_control_note",
         "wave_direct_dm_h025_fam2_seed1_control_note"
       ],
       "direct_in_degree": 8,
@@ -266908,7 +266899,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "977e532379ea9326ad509710b7ea865ad82c37e92e5ffefcc55c156fce98d344",
+      "note_hash": "94d0387a8d2409ba605d6707ed973e94b24917ba4e5365ec426e7effc4c14f17",
       "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 137 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 377 |
+| **retained_bounded** | 378 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1304 |
-| audit_in_progress | 1 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 9 |
@@ -49,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 634 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 635 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
@@ -122,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
-| `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -330,6 +328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -4759,6 +4758,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given a positive conjugation-symmetric diagonal D and swap-related nonnegative matrices N_fbar = S N_f S on a finite dominant-weight box, the assembled matrix T = D M D M^T D with M=N_f+N_fbar is entry-wise nonnegative, commutes with S, and gives a nonnegative trivial readout r=T e_(0,0) with positive trivial-channel amplitude when the (0,0) row of M is nonzero.  _(class `A`)_
 - **chain closes:** True — The proof is finite matrix algebra: nonnegative factors give T_ab>=0, the hypotheses S D=D S and S M=M S give S T=T S, and the readout formula follows from multiplying T by e_(0,0). The runner verifies the abstract identities, a Wilson/Pieri reference instance, an arbitrary symmetric-positive diagonal instance, and a symmetry-breaking negative control with PASS=19, FAIL=0.
 - **rationale:** The scoped theorem closes because all conclusions are direct consequences of the stated finite-matrix hypotheses, and the negative control confirms that conjugation symmetry of D is a real load-bearing assumption. The runner's beta=6 Wilson/Pieri instantiation is only evidence that one concrete finite packet satisfies the abstract hypotheses; the theorem itself is not claiming a physical spatial-environment transfer identity. Residual risk is scope drift into the parent Wilson boundary-character/Perron/untruncated construction, which this audit does not ratify.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T184134Z-4f192f5d-gauge_vacuum_plaquette_s-02`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The runner constructs one explicit finite tensor-transfer matrix from the truncated Wilson coefficients and finite SU(3) fusion recurrences, then verifies nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout.  _(class `A`)_
+- **chain closes:** True — Within the narrowed finite-packet scope, the cited retained_bounded tensor-word note and the included runner close the three stated matrix properties by direct finite computation. The source note explicitly excludes the full untruncated tensor-transfer operator, Perron solve, and boundary-character identity.
+- **rationale:** The claim has been narrowed to the exact finite tensor-word packet already retained upstream, and both cited authorities are retained_bounded. The primary runner is not a print-only certificate: it computes Bessel-determinant Wilson coefficients, builds SU(3) fundamental/anti-fundamental recurrence matrices, forms the tensor word, and checks the advertised finite properties. No external comparator or open full-environment identity is used as load-bearing for the bounded claim.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_spectral_measure_theorem_note`

@@ -48,8 +48,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 633 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 634 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 60 |
@@ -121,7 +121,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
-| `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -319,6 +318,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4505,6 +4505,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   - `G_BARE_DERIVATION_NOTE.md`
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1-P3 at double precision.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T183948Z-89e47d0c-gauge_vacuum_plaquette_f-01`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Construct tensor_word = diag_c · (N_f + N_fbar) · diag_c · (N_f + N_fbar)^T · diag_c on the NMAX=4 box and directly verify (P1) min entries >= 0, (P2) swap commutation, and (P3) nonnegative boundary0 readout.  _(class `A`)_
+- **chain closes:** True — The restricted claim closes as a finite algebraic/numerical check over retained_bounded Wilson coefficient input and admitted SU(3) fusion multiplicities. It does not claim the parent spatial-environment tensor-transfer identity or any untruncated result.
+- **rationale:** The runner source genuinely constructs the finite coefficient vector from the Schur-Weyl Bessel determinant, builds the SU(3) fundamental and anti-fundamental fusion matrices, forms tensor_word, and checks P1-P3 directly. The one-hop Wilson coefficient authority is marked retained_bounded, and the remaining fusion multiplicity input is explicitly admitted as bounded textbook input on the finite box. The note's boundaries exclude the open parent matrix-element identity and untruncated transfer construction, so no broader claim is imported.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19`

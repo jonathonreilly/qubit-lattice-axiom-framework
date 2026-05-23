@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 140 |
-| **retained_no_go** | 151 |
+| **retained_no_go** | 152 |
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1254 |
+| unaudited | 1253 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 15 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 653 |
+| `audited_clean` | 654 |
 | `audited_conditional` | 128 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1480 |
+| `unaudited` | 1479 |
 
 | claim_type | count |
 |---|---:|
@@ -667,6 +667,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `structured_chokepoint_bridge_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `structured_mirror_bornsafe_scan_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -11261,6 +11262,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **open / conditional deps cited:**
   - `STRONG_CP_THETA_ZERO_NOTE.md`
   - `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`
+- **auditor confidence:** high
+
+### `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`
+
+- **Note:** [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](../../docs/STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For finite or compact measured spaces with measure-preserving involution, real Theta-invariant S_+, real Theta-anti-invariant h, and reflection-Hermitian F, the symmetric half-square RP reflected expectation is insensitive to adding i c h to S_+.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T203211Z-e020632a-strong_cp_rp_half_cannot-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By Theta-anti-invariance of h, exp(-i c (h(x) + h(Theta x))) = 1, so the symmetrically modified reflected expectation equals the original RP norm-square.  _(class `A`)_
+- **chain closes:** True — The cited authority is retained_bounded and supplies the reflected-expectation norm-square identity. The added CP-odd phase cancels pointwise under the stated Theta-anti-invariance, so the no-go closes within the narrowed half-square RP scope.
+- **rationale:** The proof is a direct algebraic closure over the retained upstream identity: h(Theta x) = -h(x) cancels the symmetric phase, and reflection-Hermiticity makes F(Theta x)F(x) a norm-square factor. The runner source genuinely computes the finite-carrier identities with sympy/numpy and does not hard-code contested constants or import external comparators. The no-go gate passes at this packet scope: attacks via non-Hermitian observables, non-anti-invariant h, fixed points, carrier extension, single-side phases, and real-action admissibility either fail by the stated algebra or fall outside the narrowed operational claim. The clean verdict is only for the half-square RP detection failure, not for full continuum theta physics or independent action-class admissibility.
 - **auditor confidence:** high
 
 ### `strong_cp_theta_zero_note`

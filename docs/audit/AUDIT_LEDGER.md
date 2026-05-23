@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 12 |
 | open_gate | 14 |
-| unaudited | 1293 |
+| unaudited | 1292 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 95 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 641 |
-| `audited_conditional` | 95 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 28 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1518 |
+| `unaudited` | 1517 |
 
 | claim_type | count |
 |---|---:|
@@ -812,6 +812,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -7241,6 +7242,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the canonical dilation U_int |psi>|0> = sum_r P_r|psi>|r> into K_r = <r| U_int (I ⊗ |0>) gives K_r = P_r.  _(class `A`)_
 - **chain closes:** True — Given the stated canonical dilation formula and the standard Kraus extraction formula, the equality K_r = P_r follows by an orthonormal apparatus-basis contraction. The note explicitly limits the result to the canonical Lüders/Naimark frame and does not claim instrument uniqueness.
 - **rationale:** The load-bearing step is a straightforward algebraic contraction inside the explicitly stated canonical projective-measurement dilation. The cited axiom-premise authority supplies only the finite qubit-lattice setting and is covered by the axiom-premise carve-out; the measurement-theory content is used in the note's bounded, canonical-frame scope rather than as a uniqueness claim. No runner was needed because the claim is symbolic, not numerical or computational.
+- **auditor confidence:** high
+
+### `luders_rule_from_composition_consistency_note_2026-05-20`
+
+- **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded claim that Lüders record-conditioning follows uniquely on finite qubit-lattice operator algebras from U1-U4 plus the standard sequential-effect composition and trace state/effect pairing.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T124713Z-2a8cf4e7-luders_rule_from_composi-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Standard sequential-measurement composition gives M_{P,E_i} = P E_i P, so Bayes consistency for all effects forces sigma|_P = P sigma P / Tr(P sigma P).  _(class `A`)_
+- **chain closes:** False — The algebra from M_{P,E}=P E P to the Lüders posterior is sound, but the load-bearing sequential-effect composition, trace-pairing probability representation, and U1-U4 update-frame assumptions are explicit admitted inputs rather than closed by the restricted packet. The cited A1+A2 authority supplies the qubit-lattice algebra only, not the measurement-instrument composition theorem.
+- **rationale:** The proof reduces to a correct finite-dimensional trace-duality argument once M_{P,E}=P E P is granted. However, the source note itself admits that this standard sequential-effect composition is not derived here, and the only provided cited authority, MINIMAL_AXIOMS_2026-05-20.md, does not close that bridge from A1+A2. No-Go Discipline check N3 flags the repeated 'standard' and 'canonical' language as a hidden wall for a bounded theorem, and N7's steelman still depends on importing the projective instrument rule.
 - **auditor confidence:** high
 
 ### `main_open_cubic_validation_2026-04-11`

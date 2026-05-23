@@ -1,6 +1,51 @@
 {
   "live": [
     {
+      "actual_audit_status": "audited_conditional",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "audited_conditional",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+      ],
+      "audit_question": "Does the parent L\u00fcders sequential-composition row close for the ideal unrefined sharp-projective scope under the ratified LSP-projective rule, or does another blocker remain?",
+      "blocked_by_group_ids": [],
+      "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
+      "deps": [
+        "minimal_axioms"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_conditional",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "audited_conditional",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "LSP-projective re-audit manifest as evidence",
+        "review-packet PR text as evidence",
+        "prior assistant discussion",
+        "prior audit rationales",
+        "publication-facing retained summaries"
+      ],
+      "generated_order": 1,
+      "group_id": "lsp_projective_direct_luders",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
+      "queue_order": 1,
+      "ready": true,
+      "ready_blocker": null,
+      "runner_path": null,
+      "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
       "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
       "actual_effective_status": "unaudited",
@@ -38,7 +83,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/LUDERS_SEQUENTIAL_PRODUCT_CONDITIONAL_BRIDGE_NARROW_THEOREM_NOTE_2026-05-22.md",
-      "queue_order": 1,
+      "queue_order": 2,
       "ready": true,
       "ready_blocker": null,
       "runner_path": "scripts/frontier_luders_sequential_product_conditional_bridge.py",
@@ -86,7 +131,7 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
-      "queue_order": 2,
+      "queue_order": 3,
       "ready": false,
       "ready_blocker": "blocked_by_live_group:lsp_projective_direct_luders",
       "runner_path": null,
@@ -95,52 +140,10 @@
       "state": "live"
     }
   ],
-  "live_count": 2,
+  "live_count": 3,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 1,
+  "ready_count": 2,
   "resolved_or_invalid": [
-    {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
-      "allowed_context_paths": [
-        "docs/audit/README.md",
-        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
-      ],
-      "audit_question": "Does the parent L\u00fcders sequential-composition row close for the ideal unrefined sharp-projective scope under the ratified LSP-projective rule, or does another blocker remain?",
-      "blocked_by_group_ids": [],
-      "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
-      "dispatch_kind": "promotion_reaudit",
-      "expected_current_audit_status": "audited_conditional",
-      "expected_current_claim_type": "bounded_theorem",
-      "expected_current_effective_status": "audited_conditional",
-      "forbidden_context": [
-        "this dispatcher manifest as evidence",
-        "LSP-projective re-audit manifest as evidence",
-        "review-packet PR text as evidence",
-        "prior assistant discussion",
-        "prior audit rationales",
-        "publication-facing retained summaries"
-      ],
-      "generated_order": 1,
-      "group_id": "lsp_projective_direct_luders",
-      "group_order": 1,
-      "helper_runner_paths": [],
-      "must_not_use_manifest_as_evidence": true,
-      "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
-      "runner_path": null,
-      "source_json_path": "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
-      "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
-    },
     {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "positive_theorem",

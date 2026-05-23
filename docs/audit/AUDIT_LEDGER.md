@@ -18,9 +18,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 127 |
+| **retained** | 128 |
 | **retained_no_go** | 146 |
-| **retained_bounded** | 381 |
+| **retained_bounded** | 380 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
 | unaudited | 1321 |
@@ -56,12 +56,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1020 |
+| `bounded_theorem` | 1019 |
 | `decoration` | 23 |
 | `meta` | 229 |
-| `no_go` | 239 |
-| `open_gate` | 112 |
-| `positive_theorem` | 754 |
+| `no_go` | 238 |
+| `open_gate` | 113 |
+| `positive_theorem` | 755 |
 
 | criticality | count |
 |---|---:|
@@ -568,7 +568,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_taste_cube_decomposition_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_time_tensor_build_memo` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `scalar_3plus1_temporal_ratio_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_kg_rerun_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `schur_covariance_inheritance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `second_grown_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9041,15 +9041,15 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 ### `scalar_3plus1_temporal_ratio_note`
 
 - **Note:** [`SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md`](../../docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Given the scoped minimal 3+1 APBC scalar kernel K_sc(omega)=3+sin^2(omega) and A(L_t)=(1/(2L_t)) sum_omega 1/(3+sin^2 omega), the endpoints A_2=1/8, A_inf=1/(4sqrt(3)), and ratio A_inf/A_2=2/sqrt(3) close exactly; observable-level fourth-root insertion is not promoted.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact evaluation of A_inf/A_2=2/sqrt(3) for the specified minimal APBC 3+1 scalar bridge kernel, excluding observable-level dimension-4 insertion.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-fresh-scalar3p1-helmholtz-20260502`  (codex-gpt-5; independence=fresh_context)
-- **load-bearing step:** Therefore A_inf / A_2 = 2 / sqrt(3).  _(class `A`)_
-- **chain closes:** True — The endpoint ratio follows by exact algebra from the scoped coefficient definition and endpoint evaluations; the note explicitly excludes the physical plaquette/readout insertion from theorem status.
-- **rationale:** The audited claim is bounded to the minimal 3+1 APBC scalar bridge and does not claim an observable-level completion. Within that scope, the finite endpoint, infinite endpoint, and ratio are exact scalar/algebraic consequences, and the runner confirms the current numerics. No dependency, comparator, tuned scale, or support-class promotion is needed.
-- **auditor confidence:** high
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260523T135419Z-scalar_3plus1_temporal_ratio_note-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** From K_sc(omega)=3+sin^2(omega) and A(L_t)=(1/(2L_t)) sum_omega 1/(3+sin^2 omega), A_2=1/8 and A_inf=1/(4sqrt(3)), so A_inf/A_2=2/sqrt(3).  _(class `A`)_
+- **chain closes:** True — Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The closed statement is the endpoint ratio for the specified scalar kernel, and the endpoint values follow by ordinary finite-sum algebra and the standard temporal-average integral. The source note explicitly does not promote the fourth-root dimension-4 factor into a physical observable insertion theorem, so that support-only material does not broaden the audited scope. The runner checks the same algebraic surface and does not use an external comparator or calibrated empirical input. The second audit supplies the current applyable positive_theorem scope while preserving the support boundary. | The clean theorem is the endpoint ratio for the specified scalar bridge kernel, not a claim that the fourth-root factor is physically inserted into a plaquette or other observable. Within that scoped kernel, the endpoint values and ratio are standard algebra/calculus checks, so class A is the right classification. The runner supports this by computing the APBC sums and checking the stated identities, with no external comparator or tuned empirical input. The second audit provides the current-schema claim_type and scope and correctly preserves the observable insertion as support-only. | The applyable tuple should use the second audit because it supplies the required claim_type, scoped theorem statement, runner breakdown, and support-only boundary for the fourth-root observable insertion. Within that restricted scalar-kernel scope, the load-bearing step is an algebraic endpoint evaluation rather than a new physical bridge, external comparator, renaming, or tuned numerical match. The note does not promote the dimension-4 insertion into a specific observable, so that support corollary does not broaden the retained theorem scope. | The closed object is a specified scalar-kernel endpoint calculation, and the endpoint ratio follows by ordinary algebra/calculus once that kernel and APBC temporal averaging are fixed. The source note explicitly keeps the dimension-4 fourth-root insertion at support level, so the clean theorem does not assert closure for a plaquette or other physical observable. The runner computes the APBC frequencies and scalar averages and checks the stated endpoint identities without an external comparator or tuned empirical input. The second audit supplies the current applyable claim_type and scope, so it is the tuple to ratify. | The closed claim is an exact evaluation of a specified scalar bridge kernel, and the endpoint ratio follows by algebraic evaluation of the finite APBC sum and temporal limiting average. The note explicitly does not promote the fourth-root dimension-4 factor to an observable-level theorem, so that support-only material does not broaden the retained scope. The runner performs the same APBC scalar-average checks and contains no external comparator, tuned empirical input, or imported open dependency for the ratio itself.
+- **rationale:** Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The closed statement is the endpoint ratio for the specified scalar kernel, and the endpoint values follow by ordinary finite-sum algebra and the standard temporal-average integral. The source note explicitly does not promote the fourth-root dimension-4 factor into a physical observable insertion theorem, so that support-only material does not broaden the audited scope. The runner checks the same algebraic surface and does not use an external comparator or calibrated empirical input. The second audit supplies the current applyable positive_theorem scope while preserving the support boundary. | The clean theorem is the endpoint ratio for the specified scalar bridge kernel, not a claim that the fourth-root factor is physically inserted into a plaquette or other observable. Within that scoped kernel, the endpoint values and ratio are standard algebra/calculus checks, so class A is the right classification. The runner supports this by computing the APBC sums and checking the stated identities, with no external comparator or tuned empirical input. The second audit provides the current-schema claim_type and scope and correctly preserves the observable insertion as support-only. | The applyable tuple should use the second audit because it supplies the required claim_type, scoped theorem statement, runner breakdown, and support-only boundary for the fourth-root observable insertion. Within that restricted scalar-kernel scope, the load-bearing step is an algebraic endpoint evaluation rather than a new physical bridge, external comparator, renaming, or tuned numerical match. The note does not promote the dimension-4 insertion into a specific observable, so that support corollary does not broaden the retained theorem scope. | The closed object is a specified scalar-kernel endpoint calculation, and the endpoint ratio follows by ordinary algebra/calculus once that kernel and APBC temporal averaging are fixed. The source note explicitly keeps the dimension-4 fourth-root insertion at support level, so the clean theorem does not assert closure for a plaquette or other physical observable. The runner computes the APBC frequencies and scalar averages and checks the stated endpoint identities without an external comparator or tuned empirical input. The second audit supplies the current applyable claim_type and scope, so it is the tuple to ratify. | The closed claim is an exact evaluation of a specified scalar bridge kernel, and the endpoint ratio follows by algebraic evaluation of the finite APBC sum and temporal limiting average. The note explicitly does not promote the fourth-root dimension-4 factor to an observable-level theorem, so that support-only material does not broaden the retained scope. The runner performs the same APBC scalar-average checks and contains no external comparator, tuned empirical input, or imported open dependency for the ratio itself.
+- **auditor confidence:** judicial_panel_majority
 
 ### `scalar_kg_rerun_note_2026-04-10`
 

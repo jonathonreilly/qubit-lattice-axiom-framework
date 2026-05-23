@@ -79,7 +79,7 @@
       "third_pass_overturn_rate": 0.565,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 252,
-      "verdict_changed_after_re_audit": 343,
+      "verdict_changed_after_re_audit": 342,
       "verdict_counts": {
         "audited_clean": 205,
         "audited_conditional": 4,
@@ -88,7 +88,7 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 249,
+        "A": 246,
         "B": 33,
         "C": 235,
         "D": 5,
@@ -98,36 +98,36 @@
       },
       "bias_direction_breakdown": {
         "more_lenient": 8,
-        "more_strict": 17,
-        "same_severity": 16
+        "more_strict": 14,
+        "same_severity": 17
       },
       "criticality_counts": {
-        "critical": 77,
+        "critical": 75,
         "high": 85,
         "leaf": 228,
-        "medium": 171
+        "medium": 170
       },
-      "cross_confirmation_agreement_rate": 0.755,
+      "cross_confirmation_agreement_rate": 0.76,
       "cross_confirmation_outcomes": {
         "awaiting_second": 1,
-        "confirmed": 166,
-        "third_confirmed_first": 25,
+        "confirmed": 165,
+        "third_confirmed_first": 22,
         "third_confirmed_hybrid": 3,
-        "third_confirmed_second": 26
+        "third_confirmed_second": 27
       },
-      "cross_confirmation_pairs_agreed_first_try": 166,
-      "cross_confirmation_pairs_n": 220,
-      "cross_confirmation_pairs_seen": 220,
-      "judicial_third_pass_count": 49,
-      "overturned_by_third": 41,
-      "ratified_by_third": 43,
-      "third_pass_decisions_n": 84,
-      "third_pass_overturn_rate": 0.488,
+      "cross_confirmation_pairs_agreed_first_try": 165,
+      "cross_confirmation_pairs_n": 217,
+      "cross_confirmation_pairs_seen": 217,
+      "judicial_third_pass_count": 47,
+      "overturned_by_third": 39,
+      "ratified_by_third": 41,
+      "third_pass_decisions_n": 80,
+      "third_pass_overturn_rate": 0.487,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 561,
-      "verdict_changed_after_re_audit": 219,
+      "total_audits": 558,
+      "verdict_changed_after_re_audit": 218,
       "verdict_counts": {
-        "audited_clean": 413,
+        "audited_clean": 410,
         "audited_conditional": 81,
         "audited_decoration": 19,
         "audited_failed": 23,
@@ -138,7 +138,7 @@
   },
   "family_pair_disagreements": [
     {
-      "count": 33,
+      "count": 31,
       "loser": "codex-gpt-5.5",
       "winner": "codex-gpt-5.5"
     },
@@ -167,10 +167,10 @@
   "policy_summary": "Per-auditor-family verdict and cross-confirmation aggregate. Informational only \u2014 humans set audit-lane policy. PRIMARY SIGNALS (unbiased): cross_confirmation_agreement_rate (rate at which this auditor's first-look verdict matched the other independent auditor without needing a third), bias_direction_breakdown (when overturned, was the auditor more_lenient or more_strict?), verdict_changed_after_re_audit (independent re-audit produced a different verdict). DIAGNOSTIC ONLY (selection-biased): third_pass_overturn_rate is the fraction of disputed cases where the auditor was on the losing side; expected value for a competent auditor is ~0.5 because disputes arise on genuinely ambiguous cases. See script docstring for the full read-with-care guide.",
   "totals": {
     "auditor_families_observed": 3,
-    "overall_agreement_rate": 0.762,
-    "total_audits_recorded": 834,
-    "total_cross_confirmation_family_participations": 293,
-    "total_cross_confirmation_pairs": 239,
-    "total_third_pass_decisions": 108
+    "overall_agreement_rate": 0.767,
+    "total_audits_recorded": 831,
+    "total_cross_confirmation_family_participations": 290,
+    "total_cross_confirmation_pairs": 236,
+    "total_third_pass_decisions": 104
   }
 }

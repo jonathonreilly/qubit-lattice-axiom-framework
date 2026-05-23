@@ -99344,7 +99344,7 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
       "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -103153,224 +103153,192 @@
       "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": {
-      "audit_date": "2026-05-12T00:34:10.584321+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "Bounded finite Wilson-surface theorem only: for each finite periodic Wilson L^4 evaluation surface, the strictly increasing one-plaquette map defines a unique implicit beta_eff,L(beta)=P_1plaq^{-1}(P_L(beta)); beta_eff,L(0)=0, beta_eff,L'(0)=1, and the audited onset coefficient is beta^5/26244. This excludes an explicit nonperturbative closed form at beta=6, repo-wide plaquette repinning, the canonical beta_eff numerical support value, the old constant-lift candidate, and any positive-theorem upgrade depending on open g_bare or staggered-Dirac gates."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note"
-        ],
-        "load_bearing_score": 10.004,
-        "runner_hash": "319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3",
-        "transitive_descendants": 725
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-judicial-20260512-gauge-vacuum-plaquette-hierarchy-lemmas",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The bounded claim closes at its stated scope. The source note explicitly admits BA-1 through BA-4 as textbook compact-Lie-group/asymptotic/analytic facts and explicitly says it does not derive them from the physical Cl(3) baseline or close the parent theorem. Within that boundary, L1.a/L1.b and L2.a/L2.b follow from Haar orthogonality and compact Laplace concentration, L3 follows from real analyticity plus finite-support analytic continuation, and L4 follows from global polynomial growth versus bounded K'. The runner cache is status ok and records PASS=80 FAIL=0 for the note-structure, endpoint, Taylor-support, polynomial-growth, dependency, and boundary checks. Residual risk is only that the bounded admissions remain admitted textbook inputs; that is part of the ratified claim boundary rather than an open dependency for this bounded theorem.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10",
-      "claim_scope": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under the explicit bounded admissions BA-1 through BA-4 for SU(N>=2) and U(1); the claim excludes deriving BA-1-BA-4 from the Cl(3) framework baseline and excludes closing the parent infinite-hierarchy obstruction theorem.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-12T00:34:10.584321+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-12T00:10:28.318656+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-gauge_vacuum_plaquette_h-002",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under BA-1-BA-4 for SU(N>=2) and U(1).",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-12T00:26:12.427221+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-gauge_vacuum_plaquette_h-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "The four gauge-vacuum plaquette hierarchy obstruction lemmas (L1)-(L4) are audited only as bounded analytic consequences of BA-1 through BA-4, not as derivations from the Cl(3) framework baseline.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_first",
-        "third_audit": {
-          "audit_date": "2026-05-12T00:34:10.584321+00:00",
-          "auditor": "codex-audit-loop-judicial-20260512-gauge-vacuum-plaquette-hierarchy-lemmas",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under the explicit bounded admissions BA-1 through BA-4 for SU(N>=2) and U(1); the claim excludes deriving BA-1-BA-4 from the Cl(3) framework baseline and excludes closing the parent infinite-hierarchy obstruction theorem.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "No material error for the scoped bounded theorem; the first audit correctly treated BA-1-BA-4 as explicit bounded admissions and did not promote the parent obstruction theorem or the Cl(3) baseline derivation.",
-          "independence": "judicial_review",
-          "judgment_rationale": "The bounded claim closes at its stated scope. The source note explicitly admits BA-1 through BA-4 as textbook compact-Lie-group/asymptotic/analytic facts and explicitly says it does not derive them from the physical Cl(3) baseline or close the parent theorem. Within that boundary, L1.a/L1.b and L2.a/L2.b follow from Haar orthogonality and compact Laplace concentration, L3 follows from real analyticity plus finite-support analytic continuation, and L4 follows from global polynomial growth versus bounded K'. The runner cache is status ok and records PASS=80 FAIL=0 for the note-structure, endpoint, Taylor-support, polynomial-growth, dependency, and boundary checks. Residual risk is only that the bounded admissions remain admitted textbook inputs; that is part of the ratified claim boundary rather than an open dependency for this bounded theorem.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.txt: cache status ok, runner_sha256 319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3, exit_code 0, PASS=80 FAIL=0. The runner verifies L1-L4, BA boundaries, upstream existence, no forbidden over-framing, and that the note does not close the parent theorem or derive BA-1-BA-4 from the framework baseline.",
-          "second_auditor_error": "The second audit required derivation from the broader Cl(3) framework baseline even though the source note explicitly excludes that from the row's claim boundary. That makes the correct result clean under BA-1-BA-4, not conditional on Cl(3) baseline closure.",
-          "sided_with": "first",
-          "verdict": "audited_clean"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_reduction_existence_theorem_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "retained_bounded",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.464,
-      "load_bearing_step": "The note proves L1-L4 from the explicitly stated bounded admissions BA-1-BA-4 plus elementary compact-Lie-group, analyticity, and polynomial-growth arguments, and the runner verifies the endpoint, Taylor-support, global-vs-formal, and boundary checks with PASS=80 FAIL=0.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
       "max_descendant_status_rank": 100,
       "note_hash": "41ff95875b8c3f2158e2923cdcc8953b355d81fe16aec9f284ecc447e6ff460c",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_HIERARCHY_OBSTRUCTION_LEMMAS_BOUNDED_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "Re-audit if the note stops scoping L1-L4 under BA-1-BA-4, promotes the parent theorem directly, or claims derivation of the bounded admissions from the Cl(3) baseline.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T13:48:27.051618+00:00",
+          "audit_date": "2026-05-12T00:34:10.584321+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note": "Bounded finite Wilson-surface theorem only: for each finite periodic Wilson L^4 evaluation surface, the strictly increasing one-plaquette map defines a unique implicit beta_eff,L(beta)=P_1plaq^{-1}(P_L(beta)); beta_eff,L(0)=0, beta_eff,L'(0)=1, and the audited onset coefficient is beta^5/26244. This excludes an explicit nonperturbative closed form at beta=6, repo-wide plaquette repinning, the canonical beta_eff numerical support value, the old constant-lift candidate, and any positive-theorem upgrade depending on open g_bare or staggered-Dirac gates."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+            ],
+            "load_bearing_score": 10.004,
+            "runner_hash": "319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3",
+            "transitive_descendants": 725
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-judicial-20260512-gauge-vacuum-plaquette-hierarchy-lemmas",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The bounded claim closes at its stated scope. The source note explicitly admits BA-1 through BA-4 as textbook compact-Lie-group/asymptotic/analytic facts and explicitly says it does not derive them from the physical Cl(3) baseline or close the parent theorem. Within that boundary, L1.a/L1.b and L2.a/L2.b follow from Haar orthogonality and compact Laplace concentration, L3 follows from real analyticity plus finite-support analytic continuation, and L4 follows from global polynomial growth versus bounded K'. The runner cache is status ok and records PASS=80 FAIL=0 for the note-structure, endpoint, Taylor-support, polynomial-growth, dependency, and boundary checks. Residual risk is only that the bounded admissions remain admitted textbook inputs; that is part of the ratified claim boundary rather than an open dependency for this bounded theorem.",
+          "claim_scope": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under the explicit bounded admissions BA-1 through BA-4 for SU(N>=2) and U(1); the claim excludes deriving BA-1-BA-4 from the Cl(3) framework baseline and excludes closing the parent infinite-hierarchy obstruction theorem.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-12T00:34:10.584321+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-12T00:10:28.318656+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-gauge_vacuum_plaquette_h-002",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under BA-1-BA-4 for SU(N>=2) and U(1).",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-12T00:26:12.427221+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-gauge_vacuum_plaquette_h-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "The four gauge-vacuum plaquette hierarchy obstruction lemmas (L1)-(L4) are audited only as bounded analytic consequences of BA-1 through BA-4, not as derivations from the Cl(3) framework baseline.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_first",
+            "third_audit": {
+              "audit_date": "2026-05-12T00:34:10.584321+00:00",
+              "auditor": "codex-audit-loop-judicial-20260512-gauge-vacuum-plaquette-hierarchy-lemmas",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under the explicit bounded admissions BA-1 through BA-4 for SU(N>=2) and U(1); the claim excludes deriving BA-1-BA-4 from the Cl(3) framework baseline and excludes closing the parent infinite-hierarchy obstruction theorem.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "No material error for the scoped bounded theorem; the first audit correctly treated BA-1-BA-4 as explicit bounded admissions and did not promote the parent obstruction theorem or the Cl(3) baseline derivation.",
+              "independence": "judicial_review",
+              "judgment_rationale": "The bounded claim closes at its stated scope. The source note explicitly admits BA-1 through BA-4 as textbook compact-Lie-group/asymptotic/analytic facts and explicitly says it does not derive them from the physical Cl(3) baseline or close the parent theorem. Within that boundary, L1.a/L1.b and L2.a/L2.b follow from Haar orthogonality and compact Laplace concentration, L3 follows from real analyticity plus finite-support analytic continuation, and L4 follows from global polynomial growth versus bounded K'. The runner cache is status ok and records PASS=80 FAIL=0 for the note-structure, endpoint, Taylor-support, polynomial-growth, dependency, and boundary checks. Residual risk is only that the bounded admissions remain admitted textbook inputs; that is part of the ratified claim boundary rather than an open dependency for this bounded theorem.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.txt: cache status ok, runner_sha256 319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3, exit_code 0, PASS=80 FAIL=0. The runner verifies L1-L4, BA boundaries, upstream existence, no forbidden over-framing, and that the note does not close the parent theorem or derive BA-1-BA-4 from the framework baseline.",
+              "second_auditor_error": "The second audit required derivation from the broader Cl(3) framework baseline even though the source note explicitly excludes that from the row's claim boundary. That makes the correct result clean under BA-1-BA-4, not conditional on Cl(3) baseline closure.",
+              "sided_with": "first",
+              "verdict": "audited_clean"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "invalidation_reason": "dep_claim_type_changed:gauge_vacuum_plaquette_reduction_existence_theorem_note:bounded_theorem->positive_theorem",
+          "load_bearing_step": "The note proves L1-L4 from the explicitly stated bounded admissions BA-1-BA-4 plus elementary compact-Lie-group, analyticity, and polynomial-growth arguments, and the runner verifies the endpoint, Taylor-support, global-vs-formal, and boundary checks with PASS=80 FAIL=0.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-audit if the note stops scoping L1-L4 under BA-1-BA-4, promotes the parent theorem directly, or claims derivation of the bounded admissions from the Cl(3) baseline.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.txt: cache status ok, runner_sha256 319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3, exit_code 0, PASS=80 FAIL=0. The runner verifies L1-L4, BA boundaries, upstream existence, no forbidden over-framing, and that the note does not close the parent theorem or derive BA-1-BA-4 from the framework baseline.",
+          "verdict_rationale": "The bounded claim closes at its stated scope. The source note explicitly admits BA-1 through BA-4 as textbook compact-Lie-group/asymptotic/analytic facts and explicitly says it does not derive them from the physical Cl(3) baseline or close the parent theorem. Within that boundary, L1.a/L1.b and L2.a/L2.b follow from Haar orthogonality and compact Laplace concentration, L3 follows from real analyticity plus finite-support analytic continuation, and L4 follows from global polynomial growth versus bounded K'. The runner cache is status ok and records PASS=80 FAIL=0 for the note-structure, endpoint, Taylor-support, polynomial-growth, dependency, and boundary checks. Residual risk is only that the bounded admissions remain admitted textbook inputs; that is part of the ratified claim boundary rather than an open dependency for this bounded theorem."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
-      "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.txt: cache status ok, runner_sha256 319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3, exit_code 0, PASS=80 FAIL=0. The runner verifies L1-L4, BA boundaries, upstream existence, no forbidden over-framing, and that the note does not close the parent theorem or derive BA-1-BA-4 from the framework baseline.",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.py",
       "title": "Gauge-Vacuum Plaquette Hierarchy Obstruction Lemmas \u2014 Bounded Note",
       "transitive_descendants": 998,
-      "verdict_rationale": "The bounded claim closes at its stated scope. The source note explicitly admits BA-1 through BA-4 as textbook compact-Lie-group/asymptotic/analytic facts and explicitly says it does not derive them from the physical Cl(3) baseline or close the parent theorem. Within that boundary, L1.a/L1.b and L2.a/L2.b follow from Haar orthogonality and compact Laplace concentration, L3 follows from real analyticity plus finite-support analytic continuation, and L4 follows from global polynomial growth versus bounded K'. The runner cache is status ok and records PASS=80 FAIL=0 for the note-structure, endpoint, Taylor-support, polynomial-growth, dependency, and boundary checks. Residual risk is only that the bounded admissions remain admitted textbook inputs; that is part of the ratified claim boundary rather than an open dependency for this bounded theorem."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": {
-      "audit_date": "2026-05-12T00:40:37.772900+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under the explicit bounded admissions BA-1 through BA-4 for SU(N>=2) and U(1); the claim excludes deriving BA-1-BA-4 from the Cl(3) framework baseline and excludes closing the parent infinite-hierarchy obstruction theorem.",
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "Bounded finite Wilson-surface theorem only: for each finite periodic Wilson L^4 evaluation surface, the strictly increasing one-plaquette map defines a unique implicit beta_eff,L(beta)=P_1plaq^{-1}(P_L(beta)); beta_eff,L(0)=0, beta_eff,L'(0)=1, and the audited onset coefficient is beta^5/26244. This excludes an explicit nonperturbative closed form at beta=6, repo-wide plaquette repinning, the canonical beta_eff numerical support value, the old constant-lift candidate, and any positive-theorem upgrade depending on open g_bare or staggered-Dirac gates."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": "bounded_theorem",
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": "retained_bounded",
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10",
-          "gauge_vacuum_plaquette_reduction_existence_theorem_note"
-        ],
-        "load_bearing_score": 12.002,
-        "runner_hash": "73db19953339a285fb6383f9be86a413fabda3c5f1c46fa22057f86f7bec9c4e",
-        "transitive_descendants": 724
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-audit-loop-judicial-20260512-gauge-infinite-hierarchy-obstruction",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The no-go claim closes from the two retained dependencies and elementary polynomial calculus. The hierarchy-lemma companion supplies the endpoint identities, finite-support-to-polynomial bridge, and global polynomial-growth lemma; the parent note applies those retained inputs to the separate finite-truncation question and derives the obstruction. That is a distinct no-go theorem about the diagonal connected hierarchy, not merely a restatement of the lemma row. The runner cache is status ok and records THEOREM PASS=4 SUPPORT=3 FAIL=0, including the finite-truncation-to-polynomial implication, the polynomial-derivative constant argument, and the local/finite-Wilson contradiction. Residual risk is limited to the stated bounded premises and does not promote analytic P(6), chi_L(beta), or an explicit nonpolynomial solution.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note",
-      "claim_scope": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint, analyticity, finite-support, and polynomial-growth lemmas; this does not close analytic P(6), chi_L(beta), or an explicit nonpolynomial hierarchy solution.",
+      "claim_scope": null,
       "claim_type": "no_go",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-12T00:40:37.772900+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "needs_reaudit_after_invalidation",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-12T00:36:30.735916+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260512-003453-653c9554-gauge_vacuum_plaquette_i-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint and analyticity lemmas.",
-          "claim_type": "no_go",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-12T00:38:39.125630+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260512-003722-9a60f7ab-gauge_vacuum_plaquette_i-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "No exact finite-support Taylor/polynomial truncation of the diagonal connected plaquette generator exists for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited bounded endpoint and analyticity lemmas.",
-          "claim_type": "decoration",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_decoration"
-        },
-        "status": "third_confirmed_first",
-        "third_audit": {
-          "audit_date": "2026-05-12T00:40:37.772900+00:00",
-          "auditor": "codex-audit-loop-judicial-20260512-gauge-infinite-hierarchy-obstruction",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint, analyticity, finite-support, and polynomial-growth lemmas; this does not close analytic P(6), chi_L(beta), or an explicit nonpolynomial hierarchy solution.",
-          "claim_type": "no_go",
-          "first_auditor_error": "No material error for the scoped no-go theorem; the first audit correctly treated the retained lemma row as dependency support rather than as absorbing the parent no-go result.",
-          "independence": "judicial_review",
-          "judgment_rationale": "The no-go claim closes from the two retained dependencies and elementary polynomial calculus. The hierarchy-lemma companion supplies the endpoint identities, finite-support-to-polynomial bridge, and global polynomial-growth lemma; the parent note applies those retained inputs to the separate finite-truncation question and derives the obstruction. That is a distinct no-go theorem about the diagonal connected hierarchy, not merely a restatement of the lemma row. The runner cache is status ok and records THEOREM PASS=4 SUPPORT=3 FAIL=0, including the finite-truncation-to-polynomial implication, the polynomial-derivative constant argument, and the local/finite-Wilson contradiction. Residual risk is limited to the stated bounded premises and does not promote analytic P(6), chi_L(beta), or an explicit nonpolynomial solution.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.txt: cache status ok, runner_sha256 73db19953339a285fb6383f9be86a413fabda3c5f1c46fa22057f86f7bec9c4e, exit_code 0, THEOREM PASS=4 SUPPORT=3 FAIL=0. The runner checks the truncation-to-polynomial implication, polynomial derivative constant argument, one-plaquette contradiction, finite Wilson contradiction, and support samples showing nonconstant local P_1plaq.",
-          "second_auditor_error": "The second audit misapplied the decoration rule. The parent claim is a theorem-level synthesis ruling out exact finite-order truncation of the diagonal connected hierarchy; it is not just algebraic relabeling of the lemma note, even though its proof uses the retained lemmas.",
-          "sided_with": "first",
-          "verdict": "audited_clean"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_reduction_existence_theorem_note",
         "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10"
       ],
       "direct_in_degree": 6,
-      "effective_status": "retained_no_go",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
         "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
         "scripts/frontier_scalar_3plus1_temporal_ratio.py"
       ],
-      "independence": "judicial_review",
-      "intrinsic_status": "retained_no_go",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 16.963,
-      "load_bearing_step": "Finite diagonal hierarchy truncation implies finite Taylor support and hence a polynomial K(t); then K'(t)/N_plaq would be a polynomial with finite limit and must be constant, contradicting the retained endpoint facts P(0)=0 and P(t)->1.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_no_go",
       "max_descendant_status_rank": 100,
       "note_hash": "9d97c9a90bd28a344a955f1d252de7a75df6c3bb988c550a152695cfdccc9752",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_INFINITE_HIERARCHY_OBSTRUCTION_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-audit if the dependency lemmas lose retained status, if the source promotes analytic P(6)/chi_L(beta)/explicit nonpolynomial closure, or if the claim stops being scoped to exact finite-order diagonal truncation.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
@@ -103521,17 +103489,114 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the note's contradiction depends on endpoint/asymptotic Wilson-surface facts, especially P_L(t)->1 by compact Laplace concentration on the maximum-action gauge orbit, but those facts are asserted rather than derived in the source packet. Why this blocks: without that finite-Wilson concentration theorem and normalization bridge, the polynomial argument proves only a conditional obstruction. Repair target: add a self-contained finite-lattice proof, or a retained dependency, deriving P_L(0)=0 and lim_(t->infinity) P_L(t)=1 for the exact Wilson source surface, with a runner that checks something stronger than condition=True for the contested step. Claim boundary until fixed: the note may safely state the algebraic conditional: if the diagonal generator has those endpoint properties, exact finite Taylor truncation is impossible."
+        },
+        {
+          "archived_at": "2026-05-23T13:48:27.051778+00:00",
+          "audit_date": "2026-05-12T00:40:37.772900+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": "The four endpoint, Taylor-support, and polynomial-growth lemmas L1-L4 for one-plaquette and finite periodic Wilson generators, under the explicit bounded admissions BA-1 through BA-4 for SU(N>=2) and U(1); the claim excludes deriving BA-1-BA-4 from the Cl(3) framework baseline and excludes closing the parent infinite-hierarchy obstruction theorem.",
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note": "Bounded finite Wilson-surface theorem only: for each finite periodic Wilson L^4 evaluation surface, the strictly increasing one-plaquette map defines a unique implicit beta_eff,L(beta)=P_1plaq^{-1}(P_L(beta)); beta_eff,L(0)=0, beta_eff,L'(0)=1, and the audited onset coefficient is beta^5/26244. This excludes an explicit nonperturbative closed form at beta=6, repo-wide plaquette repinning, the canonical beta_eff numerical support value, the old constant-lift candidate, and any positive-theorem upgrade depending on open g_bare or staggered-Dirac gates."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": "bounded_theorem",
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": "retained_bounded",
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained_bounded"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10",
+              "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+            ],
+            "load_bearing_score": 12.002,
+            "runner_hash": "73db19953339a285fb6383f9be86a413fabda3c5f1c46fa22057f86f7bec9c4e",
+            "transitive_descendants": 724
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-audit-loop-judicial-20260512-gauge-infinite-hierarchy-obstruction",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The no-go claim closes from the two retained dependencies and elementary polynomial calculus. The hierarchy-lemma companion supplies the endpoint identities, finite-support-to-polynomial bridge, and global polynomial-growth lemma; the parent note applies those retained inputs to the separate finite-truncation question and derives the obstruction. That is a distinct no-go theorem about the diagonal connected hierarchy, not merely a restatement of the lemma row. The runner cache is status ok and records THEOREM PASS=4 SUPPORT=3 FAIL=0, including the finite-truncation-to-polynomial implication, the polynomial-derivative constant argument, and the local/finite-Wilson contradiction. Residual risk is limited to the stated bounded premises and does not promote analytic P(6), chi_L(beta), or an explicit nonpolynomial solution.",
+          "claim_scope": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint, analyticity, finite-support, and polynomial-growth lemmas; this does not close analytic P(6), chi_L(beta), or an explicit nonpolynomial hierarchy solution.",
+          "claim_type": "no_go",
+          "claim_type_last_reviewed": "2026-05-12T00:40:37.772900+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-12T00:36:30.735916+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260512-003453-653c9554-gauge_vacuum_plaquette_i-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint and analyticity lemmas.",
+              "claim_type": "no_go",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-12T00:38:39.125630+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260512-003722-9a60f7ab-gauge_vacuum_plaquette_i-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "No exact finite-support Taylor/polynomial truncation of the diagonal connected plaquette generator exists for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited bounded endpoint and analyticity lemmas.",
+              "claim_type": "decoration",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_decoration"
+            },
+            "status": "third_confirmed_first",
+            "third_audit": {
+              "audit_date": "2026-05-12T00:40:37.772900+00:00",
+              "auditor": "codex-audit-loop-judicial-20260512-gauge-infinite-hierarchy-obstruction",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint, analyticity, finite-support, and polynomial-growth lemmas; this does not close analytic P(6), chi_L(beta), or an explicit nonpolynomial hierarchy solution.",
+              "claim_type": "no_go",
+              "first_auditor_error": "No material error for the scoped no-go theorem; the first audit correctly treated the retained lemma row as dependency support rather than as absorbing the parent no-go result.",
+              "independence": "judicial_review",
+              "judgment_rationale": "The no-go claim closes from the two retained dependencies and elementary polynomial calculus. The hierarchy-lemma companion supplies the endpoint identities, finite-support-to-polynomial bridge, and global polynomial-growth lemma; the parent note applies those retained inputs to the separate finite-truncation question and derives the obstruction. That is a distinct no-go theorem about the diagonal connected hierarchy, not merely a restatement of the lemma row. The runner cache is status ok and records THEOREM PASS=4 SUPPORT=3 FAIL=0, including the finite-truncation-to-polynomial implication, the polynomial-derivative constant argument, and the local/finite-Wilson contradiction. Residual risk is limited to the stated bounded premises and does not promote analytic P(6), chi_L(beta), or an explicit nonpolynomial solution.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.txt: cache status ok, runner_sha256 73db19953339a285fb6383f9be86a413fabda3c5f1c46fa22057f86f7bec9c4e, exit_code 0, THEOREM PASS=4 SUPPORT=3 FAIL=0. The runner checks the truncation-to-polynomial implication, polynomial derivative constant argument, one-plaquette contradiction, finite Wilson contradiction, and support samples showing nonconstant local P_1plaq.",
+              "second_auditor_error": "The second audit misapplied the decoration rule. The parent claim is a theorem-level synthesis ruling out exact finite-order truncation of the diagonal connected hierarchy; it is not just algebraic relabeling of the lemma note, even though its proof uses the retained lemmas.",
+              "sided_with": "first",
+              "verdict": "audited_clean"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10:retained_bounded->unaudited",
+          "load_bearing_step": "Finite diagonal hierarchy truncation implies finite Taylor support and hence a polynomial K(t); then K'(t)/N_plaq would be a polynomial with finite limit and must be constant, contradicting the retained endpoint facts P(0)=0 and P(t)->1.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Re-audit if the dependency lemmas lose retained status, if the source promotes analytic P(6)/chi_L(beta)/explicit nonpolynomial closure, or if the claim stops being scoped to exact finite-order diagonal truncation.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.txt: cache status ok, runner_sha256 73db19953339a285fb6383f9be86a413fabda3c5f1c46fa22057f86f7bec9c4e, exit_code 0, THEOREM PASS=4 SUPPORT=3 FAIL=0. The runner checks the truncation-to-polynomial implication, polynomial derivative constant argument, one-plaquette contradiction, finite Wilson contradiction, and support samples showing nonconstant local P_1plaq.",
+          "verdict_rationale": "The no-go claim closes from the two retained dependencies and elementary polynomial calculus. The hierarchy-lemma companion supplies the endpoint identities, finite-support-to-polynomial bridge, and global polynomial-growth lemma; the parent note applies those retained inputs to the separate finite-truncation question and derives the obstruction. That is a distinct no-go theorem about the diagonal connected hierarchy, not merely a restatement of the lemma row. The runner cache is status ok and records THEOREM PASS=4 SUPPORT=3 FAIL=0, including the finite-truncation-to-polynomial implication, the polynomial-derivative constant argument, and the local/finite-Wilson contradiction. Residual risk is limited to the stated bounded premises and does not promote analytic P(6), chi_L(beta), or an explicit nonpolynomial solution."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "relabel_date": "2026-05-06T17:45:26.976876+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
-      "runner_check_breakdown": "Checked logs/runner-cache/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.txt: cache status ok, runner_sha256 73db19953339a285fb6383f9be86a413fabda3c5f1c46fa22057f86f7bec9c4e, exit_code 0, THEOREM PASS=4 SUPPORT=3 FAIL=0. The runner checks the truncation-to-polynomial implication, polynomial derivative constant argument, one-plaquette contradiction, finite Wilson contradiction, and support samples showing nonconstant local P_1plaq.",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_infinite_hierarchy_obstruction.py",
       "title": "Gauge-Vacuum Plaquette Infinite-Hierarchy Obstruction",
       "transitive_descendants": 997,
-      "verdict_rationale": "The no-go claim closes from the two retained dependencies and elementary polynomial calculus. The hierarchy-lemma companion supplies the endpoint identities, finite-support-to-polynomial bridge, and global polynomial-growth lemma; the parent note applies those retained inputs to the separate finite-truncation question and derives the obstruction. That is a distinct no-go theorem about the diagonal connected hierarchy, not merely a restatement of the lemma row. The runner cache is status ok and records THEOREM PASS=4 SUPPORT=3 FAIL=0, including the finite-truncation-to-polynomial implication, the polynomial-derivative constant argument, and the local/finite-Wilson contradiction. Residual risk is limited to the stated bounded premises and does not promote analytic P(6), chi_L(beta), or an explicit nonpolynomial solution."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": {
       "audit_date": null,
@@ -103923,11 +103988,11 @@
       "helper_runner_paths": [],
       "independence": "judicial_review",
       "intrinsic_status": "retained",
-      "load_bearing_score": 16.486,
+      "load_bearing_score": 13.486,
       "load_bearing_step": "The leafless-support enumeration finds exactly four order-beta^5 cube-shell survivors, each contributing 1/18^5, so P_full(beta)-P_1plaq(beta)=beta^5/472392+O(beta^6).",
       "load_bearing_step_class": "C",
-      "max_descendant_status": "retained_bounded",
-      "max_descendant_status_rank": 95,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "d9b044173cd7f1ef1e8f5f7a49ae336008629465a88ac68b09b1a0b4f3ce4d5e",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_MIXED_CUMULANT_AUDIT_NOTE.md",
       "notes_for_re_audit_if_any": "A later auditor may re-check the repeated-leaf factorization coverage, but no repair is required for this applyable tuple.",
@@ -104283,32 +104348,33 @@
       "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_reduction_existence_theorem_note": {
-      "audit_date": "2026-05-11T23:05:32.069495+00:00",
+      "audit_date": "2026-05-23T13:48:06.473174+00:00",
       "audit_state_snapshot": {
         "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
         "dep_claim_scope": {},
         "dep_claim_type": {},
         "dep_effective_status": {},
         "deps": [],
-        "load_bearing_score": 13.006,
+        "load_bearing_score": 17.466,
         "runner_hash": "a7dfaa3835fbe2e6166bbe4a776d63c6e1a0aa6dd94af6911c3954d34e78238a",
-        "transitive_descendants": 726
+        "transitive_descendants": 999
       },
       "audit_status": "audited_clean",
-      "auditor": "codex-judicial-gpt-5.5-20260511-230532-gauge_vacuum_plaquette_r-002",
-      "auditor_confidence": "high",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T134806Z-gauge_vacuum_plaquette_reduction_existen-majority",
+      "auditor_confidence": "judicial_panel_majority",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
       "chain_closes": true,
-      "chain_closure_explanation": "Under the bounded scope, the decisive existence and uniqueness claim is a direct analytic/algebraic consequence of compactness, nonconstant observables, strict positivity of the finite measures, and the inverse-function construction stated in the packet. The open g_bare and staggered-Dirac gates affect positive-theorem promotion and downstream quantitative interpretation, but they are explicitly not load-bearing for this finite-surface reduction-existence theorem. The canonical beta_eff number and old constant-lift comparison are support consequences outside the ratified clean scope.",
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet proves the finite-volume inverse-map theorem from compactness, variance monotonicity, range bounds, and the inverse function theorem. Those ingredients do not use the staggered-Dirac or g_bare=1 open gates when beta is treated only as the Wilson coupling variable. The open gates attach to the physical beta=6/canonical-plaquette interpretation, which is outside the ratified scope. | The narrowed finite Wilson-surface existence and uniqueness result closes by compactness, nonconstant-observable variance positivity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare gates are needed only to interpret beta=6 and downstream physical predictions, not to prove the abstract finite-volume implicit reduction theorem with beta as the Wilson coupling variable. The support-only canonical beta_eff and constant-lift comparisons should remain outside the ratified scope. | The narrowed claim is a standard finite-volume analytic/measure-theoretic closure: compactness gives analyticity, variance gives strict monotonicity, the range bound gives invertibility, and the inverse function theorem gives the reduction map. The open staggered-Dirac and g_bare gates are relevant to interpreting beta=6 and downstream physical predictions, but they are not load-bearing for existence and uniqueness of the implicit map with beta treated as the Wilson coupling variable. The canonical beta_eff number and old constant-lift comparison remain support-only and outside the ratified positive-theorem scope. | The finite Wilson-surface existence and uniqueness result closes by compactness, variance monotonicity, range bounds, and inverse-function algebra, without using the staggered-Dirac or g_bare=1 open gates. Those gates matter for physical beta=6 interpretation and downstream quantitative gauge predictions, but they are outside the narrowed audited scope. The second audit correctly separates the positive finite-volume theorem from the source note's broader bounded framing. | The finite Wilson existence/uniqueness result closes as a standard analytic/algebraic consequence of compactness, variance monotonicity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare=1 gates only matter when the theorem is promoted into a physical beta=6 prediction or canonical plaquette repinning claim, which this ratified scope excludes. The runner's imported canonical plaquette and old candidate comparisons are support-only and do not control the theorem scope.",
       "claim_id": "gauge_vacuum_plaquette_reduction_existence_theorem_note",
-      "claim_scope": "Bounded finite Wilson-surface theorem only: for each finite periodic Wilson L^4 evaluation surface, the strictly increasing one-plaquette map defines a unique implicit beta_eff,L(beta)=P_1plaq^{-1}(P_L(beta)); beta_eff,L(0)=0, beta_eff,L'(0)=1, and the audited onset coefficient is beta^5/26244. This excludes an explicit nonperturbative closed form at beta=6, repo-wide plaquette repinning, the canonical beta_eff numerical support value, the old constant-lift candidate, and any positive-theorem upgrade depending on open g_bare or staggered-Dirac gates.",
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Exact finite-volume theorem: on every finite periodic SU(3) Wilson L^4 evaluation surface, the one-plaquette inverse defines a unique implicit beta_eff,L(beta), with analytic and strictly increasing behavior; physical beta=6 characterization and canonical plaquette support are excluded.",
+      "claim_type": "positive_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
-      "claim_type_last_reviewed": "2026-05-11T23:05:32.069495+00:00",
+      "claim_type_last_reviewed": "2026-05-23T13:48:06.473174+00:00",
       "claim_type_provenance": "judicial_review",
       "criticality": "critical",
       "cross_confirmation": {
@@ -104326,46 +104392,39 @@
         },
         "mode": "judicial_third_pass",
         "second_audit": {
-          "audit_date": "2026-05-11T22:47:00.244360+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-gauge_vacuum_plaquette_r-002",
+          "audit_date": "2026-05-23T13:44:39.509782+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T134246Z-2e9e68d4-gauge_vacuum_plaquette_r-01",
           "auditor_family": "codex-gpt-5.5",
           "auditor_model": "gpt-5.5",
           "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Finite-volume existence and uniqueness of the implicit Wilson plaquette reduction map beta_eff,L on the stated Wilson evaluation surface, plus stated onset/canonical support only insofar as imported inputs are accepted.",
-          "claim_type": "bounded_theorem",
+          "claim_scope": "Exact finite-volume statement that the implicit reduction parameter beta_eff,L(beta) exists uniquely, and is analytic/strictly increasing, for finite periodic SU(3) Wilson L^4 evaluation surfaces; physical beta=6 characterization and canonical plaquette repinning are excluded.",
+          "claim_type": "positive_theorem",
           "independence": "fresh_context",
           "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
+          "verdict": "audited_clean"
         },
-        "status": "third_confirmed_first",
+        "status": "third_confirmed_second",
         "third_audit": {
-          "audit_date": "2026-05-11T23:05:32.069495+00:00",
-          "auditor": "codex-judicial-gpt-5.5-20260511-230532-gauge_vacuum_plaquette_r-002",
+          "audit_date": "2026-05-23T13:48:06.473174+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T134806Z-gauge_vacuum_plaquette_reduction_existen-majority",
           "auditor_family": "codex-gpt-5.5",
           "auditor_model": "gpt-5.5",
           "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Bounded finite Wilson-surface theorem only: for each finite periodic Wilson L^4 evaluation surface, the strictly increasing one-plaquette map defines a unique implicit beta_eff,L(beta)=P_1plaq^{-1}(P_L(beta)); beta_eff,L(0)=0, beta_eff,L'(0)=1, and the audited onset coefficient is beta^5/26244. This excludes an explicit nonperturbative closed form at beta=6, repo-wide plaquette repinning, the canonical beta_eff numerical support value, the old constant-lift candidate, and any positive-theorem upgrade depending on open g_bare or staggered-Dirac gates.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "",
+          "claim_scope": "Exact finite-volume theorem: on every finite periodic SU(3) Wilson L^4 evaluation surface, the one-plaquette inverse defines a unique implicit beta_eff,L(beta), with analytic and strictly increasing behavior; physical beta=6 characterization and canonical plaquette support are excluded.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Treated the source note's broader open-gate admissions for the quantitative gauge lane as blocking the narrowed finite-Wilson inverse theorem.",
           "independence": "judicial_review",
-          "judgment_rationale": "Under the bounded scope, the decisive existence and uniqueness claim is a direct analytic/algebraic consequence of compactness, nonconstant observables, strict positivity of the finite measures, and the inverse-function construction stated in the packet. The open g_bare and staggered-Dirac gates affect positive-theorem promotion and downstream quantitative interpretation, but they are explicitly not load-bearing for this finite-surface reduction-existence theorem. The canonical beta_eff number and old constant-lift comparison are support consequences outside the ratified clean scope.",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet proves the finite-volume inverse-map theorem from compactness, variance monotonicity, range bounds, and the inverse function theorem. Those ingredients do not use the staggered-Dirac or g_bare=1 open gates when beta is treated only as the Wilson coupling variable. The open gates attach to the physical beta=6/canonical-plaquette interpretation, which is outside the ratified scope. | The narrowed finite Wilson-surface existence and uniqueness result closes by compactness, nonconstant-observable variance positivity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare gates are needed only to interpret beta=6 and downstream physical predictions, not to prove the abstract finite-volume implicit reduction theorem with beta as the Wilson coupling variable. The support-only canonical beta_eff and constant-lift comparisons should remain outside the ratified scope. | The narrowed claim is a standard finite-volume analytic/measure-theoretic closure: compactness gives analyticity, variance gives strict monotonicity, the range bound gives invertibility, and the inverse function theorem gives the reduction map. The open staggered-Dirac and g_bare gates are relevant to interpreting beta=6 and downstream physical predictions, but they are not load-bearing for existence and uniqueness of the implicit map with beta treated as the Wilson coupling variable. The canonical beta_eff number and old constant-lift comparison remain support-only and outside the ratified positive-theorem scope. | The finite Wilson-surface existence and uniqueness result closes by compactness, variance monotonicity, range bounds, and inverse-function algebra, without using the staggered-Dirac or g_bare=1 open gates. Those gates matter for physical beta=6 interpretation and downstream quantitative gauge predictions, but they are outside the narrowed audited scope. The second audit correctly separates the positive finite-volume theorem from the source note's broader bounded framing. | The finite Wilson existence/uniqueness result closes as a standard analytic/algebraic consequence of compactness, variance monotonicity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare=1 gates only matter when the theorem is promoted into a physical beta=6 prediction or canonical plaquette repinning claim, which this ratified scope excludes. The runner's imported canonical plaquette and old candidate comparisons are support-only and do not control the theorem scope.",
           "load_bearing_step_class": "A",
-          "runner_check_breakdown": {
-            "A": 4,
-            "B": 0,
-            "C": 0,
-            "D": 0,
-            "total_pass": 4
-          },
-          "second_auditor_error": "The second audit treated imported/support consequences and open framework gates as conditioning the finite-volume implicit-existence theorem, rather than narrowing the audited scope to the local theorem that the note itself separates from those dependencies.",
-          "sided_with": "first",
+          "second_auditor_error": "none",
+          "sided_with": "second",
           "verdict": "audited_clean"
         }
       },
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 7,
-      "effective_status": "retained_bounded",
+      "effective_status": "retained",
       "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
@@ -104375,15 +104434,15 @@
         "scripts/frontier_scalar_3plus1_temporal_ratio.py"
       ],
       "independence": "judicial_review",
-      "intrinsic_status": "retained_bounded",
+      "intrinsic_status": "retained",
       "load_bearing_score": 17.466,
-      "load_bearing_step": "Since P_1plaq is a bijection [0,infinity) -> [0,1) and P_L(beta) lies in [0,1), beta_eff,L(beta) := P_1plaq^{-1}(P_L(beta)) is well-defined and unique.",
+      "load_bearing_step": "Since P_1plaq is a bijection [0,infinity) -> [0,1) and P_L(beta) lies in [0,1) for every finite beta, beta_eff,L(beta) := P_1plaq^{-1}(P_L(beta)) is well-defined and unique.",
       "load_bearing_step_class": "A",
       "max_descendant_status": "retained_no_go",
       "max_descendant_status_rank": 100,
       "note_hash": "5a247a685f3d1a7d98cd841c47082149a1a5b7c6b0fd9b4fe8853d535def2144",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_REDUCTION_EXISTENCE_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "Re-audit separately if the canonical beta_eff numerical support value, beta=6 nonperturbative characterization, or positive-theorem upgrade is claimed as theorem-grade.",
+      "notes_for_re_audit_if_any": "",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -104506,7 +104565,7 @@
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_reduction_existence_theorem.py",
       "title": "Gauge-Vacuum Plaquette Reduction Existence and Uniqueness Theorem",
       "transitive_descendants": 999,
-      "verdict_rationale": "Under the bounded scope, the decisive existence and uniqueness claim is a direct analytic/algebraic consequence of compactness, nonconstant observables, strict positivity of the finite measures, and the inverse-function construction stated in the packet. The open g_bare and staggered-Dirac gates affect positive-theorem promotion and downstream quantitative interpretation, but they are explicitly not load-bearing for this finite-surface reduction-existence theorem. The canonical beta_eff number and old constant-lift comparison are support consequences outside the ratified clean scope."
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted packet proves the finite-volume inverse-map theorem from compactness, variance monotonicity, range bounds, and the inverse function theorem. Those ingredients do not use the staggered-Dirac or g_bare=1 open gates when beta is treated only as the Wilson coupling variable. The open gates attach to the physical beta=6/canonical-plaquette interpretation, which is outside the ratified scope. | The narrowed finite Wilson-surface existence and uniqueness result closes by compactness, nonconstant-observable variance positivity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare gates are needed only to interpret beta=6 and downstream physical predictions, not to prove the abstract finite-volume implicit reduction theorem with beta as the Wilson coupling variable. The support-only canonical beta_eff and constant-lift comparisons should remain outside the ratified scope. | The narrowed claim is a standard finite-volume analytic/measure-theoretic closure: compactness gives analyticity, variance gives strict monotonicity, the range bound gives invertibility, and the inverse function theorem gives the reduction map. The open staggered-Dirac and g_bare gates are relevant to interpreting beta=6 and downstream physical predictions, but they are not load-bearing for existence and uniqueness of the implicit map with beta treated as the Wilson coupling variable. The canonical beta_eff number and old constant-lift comparison remain support-only and outside the ratified positive-theorem scope. | The finite Wilson-surface existence and uniqueness result closes by compactness, variance monotonicity, range bounds, and inverse-function algebra, without using the staggered-Dirac or g_bare=1 open gates. Those gates matter for physical beta=6 interpretation and downstream quantitative gauge predictions, but they are outside the narrowed audited scope. The second audit correctly separates the positive finite-volume theorem from the source note's broader bounded framing. | The finite Wilson existence/uniqueness result closes as a standard analytic/algebraic consequence of compactness, variance monotonicity, range bounds, and the inverse function theorem. The open staggered-Dirac and g_bare=1 gates only matter when the theorem is promoted into a physical beta=6 prediction or canonical plaquette repinning claim, which this ratified scope excludes. The runner's imported canonical plaquette and old candidate comparisons are support-only and do not control the theorem scope."
     },
     "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17": {
       "audit_date": null,
@@ -106872,102 +106931,135 @@
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The source note closes a finite Wilson-lattice operator realization using the local plaquette character identity, SU(3) character product recurrences, and the transfer-kernel trace representation. This is an algebraic/operator-theoretic closure over the stated finite setup, with no external comparator, tuned numerical scale, or definition-as-derivation. The explicit beta=6 transfer-state and Perron/thermal identification is expressly left outside the audited scope, so it does not block positive_theorem classification for the narrower result. The first audit agrees on verdict and class but does not provide the scoped claim-type tuple needed for this targeted reclassification; the second audit does. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice, using the SU(3) character product rules and the finite transfer-kernel trace representation. It does not claim closed beta=6 Perron or thermal data, so that admitted open item is outside the ratified scope. The runner provides algebraic witnesses and finite plaquette-count checks without external comparators or tuned numerical inputs. The second audit supplies the applyable positive_theorem tuple that the first audit did not record. | The scoped claim is an exact finite Wilson operator-realization statement, not a beta=6 plaquette-value or Perron-state closure claim. Its load-bearing content is algebraic/operator closure from the SU(3) character product rules and finite transfer-kernel trace representation, with no external comparator or tuned numerical input. The explicit admission that beta=6 transfer-state data remain open narrows the scope rather than blocking the finite operator theorem. The second audit supplies the complete applyable tuple and correctly reclassifies the scoped theorem as positive_theorem. | The scoped claim is an algebraic/operator realization on a finite Wilson lattice: the SU(3) character product identities give the recurrence for multiplication by X, and the finite transfer trace gives the state in which the spectral measure is taken. The note explicitly excludes closed-form beta=6 transfer-state and Perron/thermal data, so that remaining open item does not block the narrower positive theorem. The runner supports the algebraic character recurrence, self-adjoint matrix witness, and plaquette-count split, with no external comparator or tuned numerical input. | The scoped theorem is an algebraic/operator realization inside the finite Wilson lattice model: the SU(3) character multiplication rules give J, and the transfer trace supplies the state for finite-volume expectations. The note explicitly leaves the beta=6 transfer-state and Perron/thermal identification open, so that omission is outside the ratified scope rather than a dependency failure. The runner provides algebraic finite witnesses and imports no external comparator or tuned numerical input."
     },
     "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17": {
-      "audit_date": "2026-05-18T12:20:04.968891+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint, analyticity, finite-support, and polynomial-growth lemmas; this does not close analytic P(6), chi_L(beta), or an explicit nonpolynomial hierarchy solution."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": "no_go"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": "retained_no_go"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
-        ],
-        "load_bearing_score": 11.286,
-        "runner_hash": "10c10287f109a6e0a0f3196dd44abe2244e9dfa8f1c7f8acf3a5c2787c1fc3f3",
-        "transitive_descendants": 882
-      },
-      "audit_status": "audited_clean",
-      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_u-021",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": true,
-      "chain_closure_explanation": "The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17",
-      "claim_scope": "For K_1(t)=log I_0(t), the Taylor coefficients satisfy c_{2k-1}=0, c_{2k} != 0, and sign(c_{2k})=(-1)^(k+1) for every k>=1.",
+      "claim_scope": null,
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem (narrow)",
-      "claim_type_last_reviewed": "2026-05-18T12:20:04.968891+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint_after_invalidation",
       "criticality": "medium",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-17T18:26:23.975347+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260517-182604-41cdea85-gauge_vacuum_plaquette_u-004",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "For K_1(t)=log I_0(t), all odd Taylor coefficients vanish and every even Taylor coefficient c_{2k} is nonzero with sign (-1)^(k+1).",
-          "claim_type": "positive_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "second_audit": {
-          "audit_date": "2026-05-18T12:20:04.968891+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_u-021",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "For K_1(t)=log I_0(t), the Taylor coefficients satisfy c_{2k-1}=0, c_{2k} != 0, and sign(c_{2k})=(-1)^(k+1) for every k>=1.",
-          "claim_type": "positive_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_clean"
-        },
-        "status": "confirmed"
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
       ],
       "direct_in_degree": 3,
-      "effective_status": "retained",
-      "effective_status_reason": "self",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "fresh_context",
-      "intrinsic_status": "retained",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 7.085,
-      "load_bearing_step": "The recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k has summands of common sign under the induction hypothesis, so every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "a5691be770bdfe66ef71fcce2e4716935e2f546e43d76214a331ad0310eedad9",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_U1_DENSITY_SIGN_ALTERNATION_NARROW_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": "Second auditor should re-check only that accepting the textbook Bessel identities as standard mathematics is within lane policy.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
-      "previous_audits": [],
+      "previous_audits": [
+        {
+          "archived_at": "2026-05-23T13:48:27.052163+00:00",
+          "audit_date": "2026-05-18T12:20:04.968891+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": "No exact finite-order truncation of the diagonal connected plaquette hierarchy is possible for the local one-plaquette block or finite periodic Wilson source surface, assuming the cited retained-bounded endpoint, analyticity, finite-support, and polynomial-growth lemmas; this does not close analytic P(6), chi_L(beta), or an explicit nonpolynomial hierarchy solution."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": "no_go"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note": "retained_no_go"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note"
+            ],
+            "load_bearing_score": 11.286,
+            "runner_hash": "10c10287f109a6e0a0f3196dd44abe2244e9dfa8f1c7f8acf3a5c2787c1fc3f3",
+            "transitive_descendants": 882
+          },
+          "audit_status": "audited_clean",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_u-021",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": true,
+          "chain_closure_explanation": "The Riccati equation for r=I_1/I_0 gives the stated coefficient recurrence, and the sign induction is algebraically valid because all convolution summands have the same nonzero sign. Termwise integration then transfers the recurrence sign pattern to the coefficients of K_1.",
+          "claim_scope": "For K_1(t)=log I_0(t), the Taylor coefficients satisfy c_{2k-1}=0, c_{2k} != 0, and sign(c_{2k})=(-1)^(k+1) for every k>=1.",
+          "claim_type": "positive_theorem",
+          "claim_type_last_reviewed": "2026-05-18T12:20:04.968891+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-17T18:26:23.975347+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260517-182604-41cdea85-gauge_vacuum_plaquette_u-004",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "For K_1(t)=log I_0(t), all odd Taylor coefficients vanish and every even Taylor coefficient c_{2k} is nonzero with sign (-1)^(k+1).",
+              "claim_type": "positive_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "second_audit": {
+              "audit_date": "2026-05-18T12:20:04.968891+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_u-021",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "For K_1(t)=log I_0(t), the Taylor coefficients satisfy c_{2k-1}=0, c_{2k} != 0, and sign(c_{2k})=(-1)^(k+1) for every k>=1.",
+              "claim_type": "positive_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_clean"
+            },
+            "status": "confirmed"
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note:retained_no_go->unaudited",
+          "load_bearing_step": "The recurrence a_n = -(1/(2(n+1))) sum_{j+k=n-1} a_j a_k has summands of common sign under the induction hypothesis, so every a_n is nonzero with sign (-1)^n, hence c_{2k}=a_{k-1}/(2k) is nonzero with sign (-1)^(k+1).",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "Second auditor should re-check only that accepting the textbook Bessel identities as standard mathematics is within lane policy.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 7,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 12
+          },
+          "verdict_rationale": "The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support."
+        }
+      ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 7,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 12
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py",
       "title": "Gauge-Vacuum Plaquette U(1) Density and Sign-Alternation Sharpening Note (Narrow)",
       "transitive_descendants": 47,
-      "verdict_rationale": "The load-bearing step is a genuine algebraic closure from the U(1) Bessel representation and the Riccati recurrence, not a renaming or calibrated numerical match. The runner source actually computes symbolic Taylor coefficients and the recurrence in exact rational arithmetic; it does not merely print constants, though its finite-order checks are only corroborative of the written induction. The cited parent authority is retained_no_go and is not needed for the narrow coefficient theorem except as contextual upstream support."
+      "verdict_rationale": null
     },
     "gauge_wilson_isotropy_boundary_note_2026-05-04": {
       "audit_date": null,

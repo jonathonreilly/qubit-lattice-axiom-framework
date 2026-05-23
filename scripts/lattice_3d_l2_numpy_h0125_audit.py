@@ -35,6 +35,12 @@ def main() -> None:
     phys_w = 1.5
     max_d_phys = 3
     strength = 5e-5
+    # z_mass_active must lie inside the reduced transverse width to keep the
+    # mass source on-lattice. The original audit family kept the helper's
+    # default z=3, which falls outside phys_w=1.5 at every h and reduces the
+    # "active" gravity / F~M probes to free-vs-free comparisons. z=1.0 is
+    # inside the lattice at every h in the ladder.
+    z_mass_active = 1.0
 
     # Class (A) algebraic-identity assertions on framework-computed quantities.
     # These mirror the structural invariants of the h=0.125 audit card so the
@@ -50,17 +56,21 @@ def main() -> None:
     assert phys_l > 0 and phys_w > 0 and max_d_phys >= 1, (
         f"physical family invalid: L={phys_l}, W={phys_w}, max_d_phys={max_d_phys}"
     )
+    assert z_mass_active <= phys_w, (
+        f"z_mass_active={z_mass_active} must lie inside phys_w={phys_w} "
+        f"to keep the mass source on-lattice"
+    )
 
     print("=" * 84)
     print("3D 1/L^2 + h^2 NUMPY H=0.125 AUDIT")
     print(f"  fixed family: phys_l={phys_l}, phys_w={phys_w}, max_d_phys={max_d_phys}")
-    print(f"  source strength={strength:.0e}")
+    print(f"  source strength={strength:.0e}, z_mass_active={z_mass_active}")
     print("  goal: freeze the narrowest safe continuum claim")
     print("=" * 84)
 
     for h in h_ladder:
         print()
-        run_card(phys_l, phys_w, max_d_phys, h, strength)
+        run_card(phys_l, phys_w, max_d_phys, h, strength, z_mass_active=z_mass_active)
 
 
 if __name__ == "__main__":

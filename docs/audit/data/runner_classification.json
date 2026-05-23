@@ -9937,7 +9937,7 @@
       "runner": "scripts/lattice_3d_l2_wide_h0125_w4_probe.py"
     },
     "h2t_h0125_narrow_bridge_note": {
-      "assert_count": 3,
+      "assert_count": 4,
       "counts": {
         "A": 2,
         "B": 0,
@@ -13285,7 +13285,7 @@
       "runner": "scripts/lattice_3d_dense_window_extension.py"
     },
     "lattice_3d_l2_numpy_h0125_audit_note": {
-      "assert_count": 3,
+      "assert_count": 4,
       "counts": {
         "A": 2,
         "B": 0,
@@ -50067,7 +50067,7 @@
       "exists": true
     },
     "scripts/lattice_3d_l2_numpy_h0125_audit.py": {
-      "assert_count": 3,
+      "assert_count": 4,
       "claims": [
         "h2t_h0125_narrow_bridge_note",
         "lattice_3d_l2_numpy_h0125_audit_note"

@@ -166,7 +166,13 @@ def setup_slits(lat):
     return bi, sa, sb, blocked, bl
 
 
-def run_card(phys_l, phys_w, max_d_phys, h, strength):
+def run_card(phys_l, phys_w, max_d_phys, h, strength, z_mass_active=3):
+    # z_mass_active controls the source z-position used for the active-probe
+    # readouts (k=0, gravity, F~M). When phys_w < z_mass_active the source
+    # node lies outside the lattice and make_field returns identically zero,
+    # collapsing the "active" probe back to free-vs-free. Callers using a
+    # reduced phys_w must pass z_mass_active <= phys_w to keep the source on
+    # the lattice; the default 3 preserves the original phys_w=3 box behavior.
     t0 = time.time()
     lat = generate(phys_l, phys_w, max_d_phys, h)
     n = lat['n']
@@ -241,7 +247,7 @@ def run_card(phys_l, phys_w, max_d_phys, h, strength):
     print(f"  2. d_TV = {dtv:.4f}")
 
     # 3. k=0
-    field_m, _ = make_field(lat, 3, strength, h)
+    field_m, _ = make_field(lat, z_mass_active, strength, h)
     am0 = propagate_l2(lat, field_m, 0.0, blocked)
     af0 = propagate_l2(lat, field_f, 0.0, blocked)
     pm0 = sum(abs(am0[d]) ** 2 for d in det)
@@ -252,19 +258,19 @@ def run_card(phys_l, phys_w, max_d_phys, h, strength):
                - sum(abs(af0[d]) ** 2 * pos[d, 2] for d in det) / pf0)
     print(f"  3. k=0 = {gk0:.6f}")
 
-    # 5. Gravity at z=3
+    # 5. Gravity at active z
     am = propagate_l2(lat, field_m, K, blocked)
     pm = sum(abs(am[d]) ** 2 for d in det)
     grav = 0
     if pm > 1e-30:
         zm = sum(abs(am[d]) ** 2 * pos[d, 2] for d in det) / pm
         grav = zm - zf
-    print(f"  5. Gravity z=3: {grav:+.6f} ({'TOWARD' if grav > 0 else 'AWAY'})")
+    print(f"  5. Gravity z={z_mass_active}: {grav:+.6f} ({'TOWARD' if grav > 0 else 'AWAY'})")
 
     # 4. F∝M
     m_data = []; g_data = []
     for s in [1e-6, 2e-6, 5e-6, 1e-5, 2e-5, 5e-5]:
-        fm, _ = make_field(lat, 3, s, h)
+        fm, _ = make_field(lat, z_mass_active, s, h)
         am2 = propagate_l2(lat, fm, K, blocked)
         pm2 = sum(abs(am2[d]) ** 2 for d in det)
         if pm2 > 1e-30:

@@ -20,15 +20,15 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 137 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 379 |
+| **retained_bounded** | 377 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1303 |
+| unaudited | 1306 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 8 |
 | ~~audited_conditional~~ | 101 |
-| ~~audited_failed~~ | 17 |
+| ~~audited_failed~~ | 16 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 4 |
-| `audited_clean` | 635 |
+| `audited_clean` | 633 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 30 |
-| `audited_failed` | 61 |
+| `audited_failed` | 60 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 8 |
-| `unaudited` | 1529 |
+| `unaudited` | 1532 |
 
 | claim_type | count |
 |---|---:|
@@ -359,7 +359,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `h0125_wider_replay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `h0125_wider_w4_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `h2t_h0125_narrow_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | B | - |
 | `half_plane_chart_equivalence_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -749,7 +748,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_matrixfree_moving_source_fixed_beam_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -922,7 +920,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_gravity_resolution_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_rg_reconciliation_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `memory_decay_diagnosis_2026-04-11` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | fresh_context | codex-gpt-5.5 | G | - |
@@ -5243,19 +5240,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **rationale:** The provided runner and helper sources do not hard-code the reported alpha values; they instantiate the dense h=0.125 lattice geometry, perform propagation, compute detector probabilities and centroids, and fit the power law from computed deltas. The cached stdout matches that load-bearing auxiliary probe result, with alpha near 0.5 in both reported windows. This clean verdict is limited to the cheap phys_l=2 width-4 scout; the note's separate statement about the retained phys_l=6 replay is not ratified by this packet.
 - **auditor confidence:** high
 
-### `h2t_h0125_narrow_bridge_note`
-
-- **Note:** [`H2T_H0125_NARROW_BRIDGE_NOTE.md`](../../docs/H2T_H0125_NARROW_BRIDGE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded negative h=0.125 dense 3D 1/L^2+h^2 bridge result: the reduced fixed-family audit reaches h=0.125 with Born clean where measurable but no recovered TOWARD/F~M bridge, and the retained bridge-family dependency remains at F~M about 0.50 rather than 1.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The reduced audit family reaches h=0.125 but stays AWAY with too few TOWARD points for F~M, while the larger bridge family reaches h=0.125 with TOWARD sign but F~M remains about 0.50, so the narrow F~M near 1 bridge claim fails.  _(class `C`)_
-- **chain closes:** True — The primary audit runner cache completes the reduced h ladder through h=0.125 and matches the source note's negative table. The direct bridge dependency is retained-bounded and supports the larger-family boundary that h=0.125 completion still does not produce Newtonian mass scaling.
-- **rationale:** The source note makes a narrow bounded negative claim, and the current runner cache supports it: Born is machine-clean where readable, k=0 is zero, but the reduced family never produces TOWARD points and the bridge-family dependency remains F~M about 0.50. The claim does not promote a continuum theorem or Newtonian h=0.125 bridge. Residual risk is limited to the finite two-family diagnostic and the exact h=0.125 harnesses.
-- **auditor confidence:** high
-
 ### `hadron_lane1_b2_dynamical_screening_boundary_note_2026-04-29`
 
 - **Note:** [`HADRON_LANE1_B2_DYNAMICAL_SCREENING_BOUNDARY_NOTE_2026-04-29.md`](../../docs/HADRON_LANE1_B2_DYNAMICAL_SCREENING_BOUNDARY_NOTE_2026-04-29.md)
@@ -6510,19 +6494,6 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the ordered 3D dense spent-delay family, the live sweep shows z = 2 through 6 remain attractive, z = 7 is mixed/signal-free, detector-window widening preserves z = 6's sign, and wider slit thresholds do not extend the window further.  _(class `C`)_
 - **chain closes:** True — The live script reproduces the source table and decision on the same declared family, action, geometry, slit threshold, detector-window scan, and z range; the source keeps the conclusion bounded and does not promote an all-distance or new-action theorem.
 - **rationale:** The source claim is a bounded computational extension, and the live artifact reproduces the canonical z sweep, detector-window sensitivity rows, slit-threshold spot checks, Born companion value, MI/decoherence values, and final bounded-extension decision. The conclusion is limited to the ordered 3D dense spent-delay family with the declared geometry and explicitly excludes all-distance, 4D, NN, and action-law claims, so the runner checks the load-bearing step without hidden promotion. Residual risk is only ordinary finite-sweep scope: this clean audit does not say anything beyond the tested family and parameter grid.
-- **auditor confidence:** high
-
-### `lattice_3d_l2_numpy_h0125_audit_note`
-
-- **Note:** [`LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md`](../../docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Reduced fixed-family 3D dense numpy runner with phys_l=4, phys_w=1.5, max_d_phys=3, strength=5e-5, and h ladder 1.0, 0.5, 0.25, 0.125.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-153919-a5e2dcef-lattice_3d_l2_numpy_h012-022`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The weak-field gravity lane does not recover because the gravity sign at z=3 stays AWAY at every spacing and the F~M fit never gets any TOWARD rows.  _(class `C`)_
-- **chain closes:** False — The runner computes the table, but the gravity readout is not a valid weak-field probe: make_field returns a zero field when the z=3 mass node is outside the reduced transverse width. The missing step is a valid in-domain source/readout, or a theorem showing that this zero-field/off-lattice probe legitimately tests the retained gravity class.
-- **rationale:** The helper source shows that make_field only creates a mass field if (gl, 0, round(z_mass_phys/h)) exists in the lattice. With phys_w=1.5, z_mass_phys=3 is outside the lattice at every h, so field_m is identically zero and Gravity z=3 compares free propagation to free propagation. The reported +0.000000 AWAY and lack of TOWARD F~M rows are therefore artifacts of an absent source, not evidence that the weak-field gravity lane fails on an active reduced-family probe. The numerical completion and Born checks remain computed, but the bounded negative gravity conclusion does not follow.
 - **auditor confidence:** high
 
 ### `lattice_3d_l2_numpy_h0125_bridge_note`
@@ -12107,19 +12078,6 @@ Five-judge panel breakdown: 5x ('second', 'audited_conditional', 'bounded_theore
 - **chain closes:** True — The runner source genuinely constructs the graph families, Laplacian, parity-coupled Hamiltonian, Crank-Nicolson evolution, width, gap, and shell-force observables, and the cached output matches the note's reported counts and caveats. The audited scope is bounded to this explicit computational battery and does not close the broader off-lattice blocker.
 - **rationale:** Within the bounded computational scope, the claim follows from the completed runner output and the runner source does not hard-code the contested result or import it from another note. The note accurately preserves the non-universality caveats: 14/15 rather than 15/15 width separation and nonzero repulsive shell-force counts in some random-geometric runs. No external comparator or open cited dependency is used for the bounded claim.
 - **auditor confidence:** high
-
-### `wide_family_h0125_bridge_reopen_audit`
-
-- **Note:** [`WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md`](../../docs/WIDE_FAMILY_H0125_BRIDGE_REOPEN_AUDIT.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Reduced/fixed-family h = 0.125 bounded negative for weak-field closure, inherited from the provided retained-bounded bridge notes; wider phys_w = 4 continuation excluded.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260517-155353-a5e2dcef-wide_family_h0125_bridge-030`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The binding evidence is exactly the fixed/reduced-family h = 0.125 bounded negatives already carried by the retained one-hop dependencies, while the wider phys_w = 4 continuation is out of binding scope.  _(class `B`)_
-- **chain closes:** True — Within the narrowed scope, both cited authorities are retained_bounded and support that the h = 0.125 fixed/reduced families remain negative for weak-field F~M closure. The out-of-scope wider phys_w = 4 narrative is not needed for the audited claim.
-- **rationale:** The revised claim is explicitly narrowed to a bounded negative already carried by retained-bounded cited authorities. It does not ask the packet to validate the wider phys_w = 4 continuation, so the missing runner/log for that wider path is not a closure blocker for this scoped audit. The load-bearing step is cross-note inheritance rather than fresh first-principles computation, but the narrowed conclusion follows from the supplied retained inputs.
-- **auditor confidence:** medium
 
 ### `wide_lattice_h2t_distance_law_note`
 

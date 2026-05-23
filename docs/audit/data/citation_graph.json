@@ -62037,7 +62037,7 @@
         "scripts/lattice_3d_l2_numpy.py",
         "scripts/numpy_replay_bootstrap.py"
       ],
-      "note_hash": "6c5fd4b680a54ee39987228a5256848205c7626d09f2ee08bcf874c7d950aa06",
+      "note_hash": "7ee8687b37e77d1215c04bb298c7c491efd0d713a0db554e030f409172fb66b7",
       "path": "docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md",
       "runner_path": "scripts/lattice_3d_l2_numpy_h0125_audit.py",
       "title": "3D 1/L^2 + h^2 Numpy h=0.125 Audit"

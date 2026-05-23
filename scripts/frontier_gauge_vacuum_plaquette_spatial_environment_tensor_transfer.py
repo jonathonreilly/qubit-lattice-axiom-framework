@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Exact spatial-environment tensor-transfer support packet for the plaquette
+Finite spatial-environment tensor-transfer support packet for the plaquette
 route on the accepted Wilson 3+1 surface.
 
 This does not close analytic P(6). It is a truncated support packet that
-sharpens the remaining object: the spatial-environment boundary character
-data arise from one explicit positive tensor-transfer class built from exact
-Wilson character coefficients and exact SU(3) fusion/intertwiner
-multiplicities.
+sharpens the remaining object: one explicit finite tensor word can be built
+from bounded Wilson character coefficients and finite SU(3)
+fusion/intertwiner multiplicities. It does not prove the full
+spatial-environment boundary-character identity.
 """
 
 from __future__ import annotations
@@ -134,10 +134,10 @@ def main() -> int:
     amp_swap = float(np.max(np.abs(swap @ amp - amp)))
 
     print("=" * 78)
-    print("GAUGE-VACUUM PLAQUETTE SPATIAL ENVIRONMENT TENSOR-TRANSFER")
+    print("GAUGE-VACUUM PLAQUETTE SPATIAL ENVIRONMENT FINITE TENSOR PACKET")
     print("=" * 78)
     print()
-    print("Exact Wilson local coefficients at beta = 6")
+    print("Finite Wilson local coefficients at beta = 6")
     print(f"  audited truncations                    = NMAX = {NMAX}, MODE_MAX = {MODE_MAX}")
     print(f"  c_(0,0)                              = {c00:.15f}")
     for rep in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0)]:
@@ -148,7 +148,7 @@ def main() -> int:
         )
     print(f"  conjugation-symmetry error           = {c_swap:.3e}")
     print()
-    print("Exact SU(3) fusion primitives on the dominant-weight box")
+    print("Finite SU(3) fusion primitives on the dominant-weight box")
     print(f"  N_f entries in {{0,1}}               = {nf_nonneg}")
     print(f"  N_fbar entries in {{0,1}}            = {nfb_nonneg}")
     print(f"  swap intertwining error (N_f)        = {nf_swap}")
@@ -172,24 +172,24 @@ def main() -> int:
         detail="the exact SU(3) recurrence matrices furnish the local intertwiner primitives on the class sector",
     )
     check(
-        "every truncated tensor-transfer word built from those exact Wilson coefficients and fusion primitives is positivity-preserving on the audited class sector",
+        "the constructed truncated tensor-transfer word built from those exact Wilson coefficients and fusion primitives is positivity-preserving on the audited class sector",
         word_min >= 0.0 and amp_min >= 0.0,
         detail=f"word min={word_min:.6e}, amplitude min={amp_min:.6e}",
     )
     check(
-        "the residual spatial-environment boundary amplitudes therefore arise from an explicit positive tensor-transfer class rather than a generic free positive sequence",
+        "the constructed finite unit-vector boundary amplitude is compatible with an explicit positive tensor-transfer packet rather than a generic free positive sequence",
         word_swap < 1.0e-12 and amp_swap < 1.0e-12,
         detail=f"tensor-word swap={word_swap:.3e}, amplitude swap={amp_swap:.3e}",
     )
 
     check(
-        "the exact tensor-transfer class is atlas-reusable independently of any full beta=6 Perron solve",
+        "the finite tensor-transfer packet is atlas-reusable independently of any full beta=6 Perron solve",
         float(np.max(amp)) > float(np.min(amp)),
         detail="the remaining problem is the full environment Perron evaluation, not local coefficient ambiguity",
         bucket="SUPPORT",
     )
     check(
-        "the current plaquette gap is therefore an explicit tensor-transfer boundary-state problem",
+        "the finite packet localizes the remaining plaquette gap to a tensor-transfer boundary-state problem",
         amp[index[(0, 0)]] > 0.0,
         detail=f"trivial-channel boundary amplitude={amp[index[(0, 0)]]:.6e}",
         bucket="SUPPORT",

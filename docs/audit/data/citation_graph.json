@@ -50390,7 +50390,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "2e98a732a4733128ba5aa79817c0239ac87890cd0adfc30296db41717c75c7b9",
+      "note_hash": "ad8960dffeb7edbd0356ddae693c42daa87c02777ca436cae0cabf24f1691719",
       "path": "docs/DM_NEUTRINO_TRIPLET_EVEN_RESPONSE_THEOREM_NOTE_2026-04-15.md",
       "runner_path": "scripts/frontier_dm_neutrino_triplet_even_response_theorem.py",
       "title": "DM Neutrino Triplet Even-Response Theorem"

@@ -6,6 +6,23 @@
 
 **Audit-lane runner update (2026-05-09):** the primary runner `scripts/frontier_dm_neutrino_triplet_even_response_theorem.py` exits 0 with PASS in the current cache; the prior audit verdict citing a nonzero exit was generated against a stale cache and is invalidated by this source-note hash drift. The runner output and pass/fail semantics are otherwise unchanged.
 
+**Symbolic-proof companion (2026-05-23):** the prior audit verdict
+(`audited_failed`, 2026-05-10) flagged that a single-instance numerical check
+cannot establish the universal exact factorization or the word "exactly" for
+the even sector. The runner now carries a `sympy` symbolic-parameter proof
+(Part 4) that closes that gap. Over symbolic real parameters
+`(A, b, c, d, delta, rho, gamma)` with `H = H_core + B(delta, rho, gamma)` as
+in the cited breaking-triplet CP theorem note, the same
+`K_mass = R^T U_Z3^dagger H U_Z3 R` transform reduces
+`Im[(K_mass)01^2] - (-2 gamma (delta + rho) / 3)` and
+`Im[(K_mass)02^2] - ( 2 gamma (A + b - c - d) / 3)` to `0` identically; the
+partial-derivative check then exhibits the full gradient in the six even
+coordinates and shows `cp1` depends on no even coordinate other than the
+combination `delta + rho` and `cp2` on no even coordinate other than
+`A + b - c - d`. Together these establish the universal two-channel theorem
+over the full breaking-triplet coordinate space, not just at a single
+numerical point.
+
 ## Question
 
 Once the CP-odd source `gamma` is isolated, what exactly is the even sector it

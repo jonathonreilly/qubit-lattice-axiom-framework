@@ -215319,24 +215319,42 @@
       "verdict_rationale": null
     },
     "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T15:49:39.572743+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "602491e728e0ea8a89568cd5dc74026b6b819d783f28b7843a3ef777524616c1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T154918Z-da287136-rconn_vertex_color_singl-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from ordinary finite-dimensional orthogonal projection and the supplied SU(N_c) generator normalization. The note explicitly does not identify this projection fraction with kappa_EW or any physical matching rule.",
       "claim_id": "rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional Hilbert-Schmidt projection of a nonzero Hermitian color insertion onto the color-singlet identity line, including identity and normalized traceless SU(N_c) generator cases.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T15:49:39.572743+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -215344,19 +215362,19 @@
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The coefficient of the Hilbert-Schmidt projection onto the identity line is alpha = <I_color, M_color>_HS / <I_color, I_color>_HS = Tr_color M_color / N_c, giving rho_singlet = (|Tr_color M_color|^2 / N_c) / Tr_color[M_color^2].",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "0508aae4f84831284fbde507f768c94ba1f3d0145e50fa193d38aff0cbcf2fbd",
       "note_path": "docs/RCONN_VERTEX_COLOR_SINGLET_PROJECTION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check only that the cited Fierz note is being used solely for generator normalization, not for its open EW matching-rule content.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -215461,16 +215479,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 69,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 69
       },
       "runner_path": "scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
       "title": "R_conn Vertex-Color Singlet Projection Bounded Narrow Theorem",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is a direct Hilbert-Schmidt projection identity, not a definition, renaming, external comparator, or tuned numerical match. The only cited authority needed for P4 supplies the SU(N_c) normalization convention and is provided as retained-grade decoration under the rubric. The runner source performs exact rational arithmetic for the identity, traceless-generator witnesses, normalization checks, sum rule, trace-zero iff zero-singlet condition, and non-claim boundary, with no helper imports and no hard-coded contested physical coefficient."
     },
     "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T01:58:27.232382+00:00",

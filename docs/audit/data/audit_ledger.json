@@ -273816,22 +273816,42 @@
       "verdict_rationale": null
     },
     "yt_color_projection_correction_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "audit_in_progress",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "blocker": "awaiting_cross_confirmation",
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "audit_date": "2026-05-23T12:35:26.258284+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "retained"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01"
+        ],
+        "load_bearing_score": 15.02,
+        "runner_hash": "b640f7b2d46ee89fbb30783393a80fef4a3d9df0fd556966ec0b8c5cee89f12d",
+        "transitive_descendants": 1037
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T123437Z-606d1170-yt_color_projection_corr-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained authority fixes only C=8/9 and S=1/9 at N_c=3. The source gives two completions that share those retained primitives and the same color-blind scaling behavior while disagreeing on K_Y, so the claimed underdetermination follows within the stated boundary.",
       "claim_id": "yt_color_projection_correction_note",
-      "claim_scope": "Packet-level no-go that the cited retained SU(3) Fierz/channel-count fraction plus color-blind scaling does not derive the Yukawa-side connected-trace selector kappa_Y = 0.",
+      "claim_scope": "Narrow packet-level no-go: the retained Fierz/channel-count fraction plus color-blind scaling do not derive the Yukawa-side connected-trace selector kappa_Y=0 or an unconditional sqrt(8/9) Y_T correction.",
       "claim_type": "no_go",
       "claim_type_author_hint": "no_go",
       "claim_type_author_hint_raw": "no_go",
-      "claim_type_last_reviewed": "2026-05-23T12:34:14.722451+00:00",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_last_reviewed": "2026-05-23T12:35:26.258284+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": {
         "first_audit": {
@@ -273846,27 +273866,38 @@
           "load_bearing_step_class": "A",
           "verdict": "audited_clean"
         },
-        "second_audit": null,
-        "status": "awaiting_second"
+        "second_audit": {
+          "audit_date": "2026-05-23T12:35:26.258284+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T123437Z-606d1170-yt_color_projection_corr-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Narrow packet-level no-go: the retained Fierz/channel-count fraction plus color-blind scaling do not derive the Yukawa-side connected-trace selector kappa_Y=0 or an unconditional sqrt(8/9) Y_T correction.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
       },
       "decoration_parent_claim_id": null,
       "deps": [
         "ew_current_fierz_channel_decomposition_note_2026-05-01"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audit_in_progress",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_no_go",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "audit_in_progress",
+      "independence": "fresh_context",
+      "intrinsic_status": "retained_no_go",
       "load_bearing_score": 15.02,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The same retained Fierz channel data and color-blind scaling law admit kappa_Y=0 with K_Y=8/9 and kappa_Y=1 with K_Y=1, so the selector kappa_Y=0 is underdetermined by those premises.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "32e448b3c067510f8a7150db198f3543e0e86cb8869bba563b152f9f285425d4",
       "note_path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-audit if a new scalar/taste-condensate matching theorem deriving kappa_Y = 0 is added to the restricted packet.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -273984,18 +274015,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
+        "A": 24,
+        "B": 18,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 42
       },
       "runner_path": "scripts/frontier_yt_color_projection_correction.py",
       "title": "Y_T Color Projection Matching No-Go and Conditional Family",
       "transitive_descendants": 1037,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic independence witness over retained channel fractions, not a numerical comparator or a definition substitution. The no-go is scoped narrowly to the cited packet and explicitly leaves future scalar/taste-condensate matching routes open. The No-Go Discipline gate passes within the restricted packet: at least five routes are enumerated, non-independent walls are collapsed, hidden-wall language is scanned, the residual is matched to the selector only, and the steelman does not defeat the packet-level no-go."
     },
     "yt_constructive_uv_bridge_note": {
       "audit_date": null,

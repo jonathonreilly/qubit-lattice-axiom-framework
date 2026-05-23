@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 472,
+    "critical": 471,
     "high": 174,
     "leaf": 329,
     "medium": 327
@@ -3896,30 +3896,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yt_color_projection_correction_note",
-      "claim_scope": "Packet-level no-go that the cited retained SU(3) Fierz/channel-count fraction plus color-blind scaling does not derive the Yukawa-side connected-trace selector kappa_Y = 0.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "ew_current_fierz_channel_decomposition_note_2026-05-01"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.02,
-      "note_path": "docs/YT_COLOR_PROJECTION_CORRECTION_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_color_projection_correction.py",
-      "transitive_descendants": 1037
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -40522,6 +40498,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 15,
-  "total_pending": 1302
+  "ready_count": 14,
+  "total_pending": 1301
 }

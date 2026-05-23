@@ -54900,24 +54900,42 @@
       "verdict_rationale": null
     },
     "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
-      "auditor_model": "claude-opus-4-7",
+      "audit_date": "2026-05-23T19:46:21.680360+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "Exact algebraic cyclic compression of a given Hermitian charged block H_e in Herm(3) to the C-invariant three-real subspace span_R{I, C+C^2, i(C-C^2)}, including the response reconstruction formula."
+        },
+        "dep_claim_type": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 6.2,
+        "runner_hash": "f108d4a045cf0fa9710ec4e0ec3bf9611395e953b19c8d1327bce4237b5198d3",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T194445Z-f3b0012e-dm_leptogenesis_dweh_eve-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded scope, the runner verifies that S12 and S13 are exactly the two real even off-diagonal response entries, that they pull back to (u,v)/(b,rho), and that the stated live readout formulas follow. It does not derive the Schur projection or a selector for the split, which the note explicitly leaves outside scope.",
       "claim_id": "dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Bounded algebraic transfer from the projected Hermitian response pack to the sparse-face even split and live readout coordinates.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T19:46:21.680360+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -54925,8 +54943,8 @@
         "koide_dweh_cyclic_compression_note_2026-04-18"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained_bounded",
+      "effective_status_reason": "self",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py",
         "scripts/frontier_dm_leptogenesis_constructive_live_doublet_corner_descendant_theorem.py",
@@ -54954,16 +54972,16 @@
         "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py",
         "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py"
       ],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained_bounded",
       "load_bearing_score": 6.2,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "On the exact projected Hermitian response pack, the unsymmetrized even column split is the pair (S12, S13), which descends on the sparse face to the live readout formulas.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "12cb538f277fb25d3b7781db26f04011a0cbe6469d0fc4ed310cc8912dfa2f1a",
       "note_path": "docs/DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that the audit scope remains bounded to the transfer layer and is not promoted to a derivation of Schur_Ee(D_-), TARGET, or a canonical selector for (S12,S13).",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -55052,18 +55070,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 10,
         "B": 0,
         "C": 0,
-        "D": 0,
-        "total_pass": 0
+        "D": 1,
+        "total_pass": 11
       },
       "runner_path": "scripts/frontier_dm_leptogenesis_dweh_even_split_transfer_layer.py",
       "title": "DM Leptogenesis `dW_e^H` Even-Split Transfer-Layer Theorem",
       "transitive_descendants": 51,
-      "verdict_rationale": null
+      "verdict_rationale": "The load-bearing step is an algebraic coordinate/readout closure on an already supplied projected Hermitian response pack, not a first-principles derivation. The runner source computes the response pack from helper definitions, extracts S12 and S13, verifies their pullback and forward readout identities, and exhibits a same-triplet separator. The observed TARGET reproduction is a non-load-bearing comparator-style check and should not be read as deriving the target or a selector law."
     },
     "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16": {
       "audit_date": null,

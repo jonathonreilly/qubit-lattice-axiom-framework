@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 138 |
 | **retained_no_go** | 149 |
-| **retained_bounded** | 383 |
+| **retained_bounded** | 384 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1284 |
+| unaudited | 1283 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 12 |
@@ -48,13 +48,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 644 |
+| `audited_clean` | 645 |
 | `audited_conditional` | 113 |
 | `audited_decoration` | 30 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 12 |
-| `unaudited` | 1510 |
+| `unaudited` | 1509 |
 
 | claim_type | count |
 |---|---:|
@@ -242,6 +242,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -3288,6 +3289,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Refining the same-surface thermal quadrature shifts the admitted-family selector root by far more than the apparent 9/62 residual, so the structural 9/62 collapse is not stable.  _(class `C`)_
 - **chain closes:** True — The note's bounded negative claim is exactly reproduced by the runner: it computes the coarse apparent match, then recomputes refined roots at 4000, 8000, and 16000 points and shows material drift away from 9/62.
 - **rationale:** The bounded sensitivity boundary closes on its own terms: the runner reproduces the coarse near-match to 9/62 and then verifies that quadrature refinement shifts the selector root by a much larger amount. The conclusion is negative and scoped correctly: 9/62 must not be promoted as a DM selector law from this thermal surface. Residual risk is only downstream reuse of the coarse coincidence after this explicit instability result.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_dweh_even_split_transfer_layer_note_2026-04-19`
+
+- **Note:** [`DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md`](../../docs/DM_LEPTOGENESIS_DWEH_EVEN_SPLIT_TRANSFER_LAYER_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic transfer from the projected Hermitian response pack to the sparse-face even split and live readout coordinates.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T194445Z-f3b0012e-dm_leptogenesis_dweh_eve-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the exact projected Hermitian response pack, the unsymmetrized even column split is the pair (S12, S13), which descends on the sparse face to the live readout formulas.  _(class `A`)_
+- **chain closes:** True — Within the bounded scope, the runner verifies that S12 and S13 are exactly the two real even off-diagonal response entries, that they pull back to (u,v)/(b,rho), and that the stated live readout formulas follow. It does not derive the Schur projection or a selector for the split, which the note explicitly leaves outside scope.
+- **rationale:** The load-bearing step is an algebraic coordinate/readout closure on an already supplied projected Hermitian response pack, not a first-principles derivation. The runner source computes the response pack from helper definitions, extracts S12 and S13, verifies their pullback and forward readout identities, and exhibits a same-triplet separator. The observed TARGET reproduction is a non-load-bearing comparator-style check and should not be read as deriving the target or a selector law.
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16`

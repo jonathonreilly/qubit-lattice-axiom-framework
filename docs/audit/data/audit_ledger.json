@@ -107156,22 +107156,42 @@
       "verdict_rationale": "The claim has been narrowed to the exact finite tensor-word packet already retained upstream, and both cited authorities are retained_bounded. The primary runner is not a print-only certificate: it computes Bessel-determinant Wilson coefficients, builds SU(3) fundamental/anti-fundamental recurrence matrices, forms the tensor word, and checks the advertised finite properties. No external comparator or open full-environment identity is used as load-bearing for the bounded claim."
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T18:46:01.768616+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
+        ],
+        "load_bearing_score": 15.472,
+        "runner_hash": "3922b27aeb1ec01c8443fc7d7cbc1ca331fff9e8daeb5f4e479a010193418ae6",
+        "transitive_descendants": 1003
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T184540Z-a91aad3f-gauge_vacuum_plaquette_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not close the bridge from an abstract or toy spatial transfer slicing to the actual unmarked Wilson environment boundary amplitudes. The sole cited authority is retained only as a bounded finite tensor-word packet and explicitly leaves the full boundary-character identity and untruncated tensor-transfer operator open.",
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
-      "claim_scope": null,
+      "claim_scope": "Structural existence of a positive self-adjoint spatial environment transfer operator and the exact boundary-amplitude / character-coefficient realization of Z_beta^env, conditional on the cited tensor-transfer authority.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T18:46:01.768616+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -107179,20 +107199,22 @@
         "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note"
       ],
       "direct_in_degree": 11,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 15.472,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The full unmarked spatial environment with fixed marked holonomy W reduces exactly to a boundary amplitude: Z_beta^env(W) = <eta_beta(W), (S_beta^env)^(L_perp-1) eta_beta(e)>.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "0f57d70cbe31067ea2a4ab28eed8ad365b0481390fa485ffadff09247644b807",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the full untruncated spatial-environment boundary-amplitude identity for the actual Wilson environment, or narrow this row to the finite toy/structural witness actually supported by the runner and bounded tensor packet.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md"
+      ],
       "previous_audits": [
         {
           "archived_at": "2026-05-02T19:54:32.403697+00:00",
@@ -107273,18 +107295,18 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 3,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 6
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_transfer.py",
       "title": "Gauge-Vacuum Plaquette Spatial Environment Transfer Theorem",
       "transitive_descendants": 1003,
-      "verdict_rationale": null
+      "verdict_rationale": "The source note's conclusion depends on the exact boundary-amplitude identity for the actual spatial Wilson environment. The one-hop authority explicitly says it does not claim that full boundary-character identity and retains only a finite NMAX=4, MODE_MAX=80 tensor-word packet. The runner is also only a constructed finite class-sector witness, not a computation of the actual environment, and its cached run has one theorem failure for boundary positivity. Therefore the claimed positive theorem remains conditional on the missing full transfer-identity bridge."
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17": {
       "audit_date": null,

@@ -10518,10 +10518,6 @@
     },
     {
       "from": "graviton_mass_derived_note",
-      "to": "graviton_mass_spectral_gap_identity_theorem_note"
-    },
-    {
-      "from": "graviton_mass_derived_note",
       "to": "universal_qg_canonical_textbook_continuum_gr_closure_note"
     },
     {
@@ -15127,10 +15123,6 @@
     {
       "from": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
       "to": "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
-    },
-    {
-      "from": "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
-      "to": "koide_mru_demotion_note_2026-04-20"
     },
     {
       "from": "koide_mru_demotion_note_2026-04-20",
@@ -25523,10 +25515,6 @@
     {
       "from": "universal_gr_tensor_variational_candidate_note",
       "to": "observable_principle_from_axiom_note"
-    },
-    {
-      "from": "universal_gr_tensor_variational_candidate_note",
-      "to": "universal_gr_curvature_localization_blocker_note"
     },
     {
       "from": "universal_qg_abstract_gaussian_completion_note",
@@ -56097,11 +56085,10 @@
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "graviton_mass_spectral_gap_identity_theorem_note",
         "universal_qg_canonical_textbook_continuum_gr_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e0ea84b621e5d441fd22521da18556386f2f9c0c363f3b28c0931c1fc7bc2891",
+      "note_hash": "3808af5d29842b8dfcf51a27cc21a6a1057a5ca1955c38bc764a1fb3b56886cb",
       "path": "docs/GRAVITON_MASS_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_graviton_mass_derived.py",
       "title": "Lichnerowicz TT Spectral Arithmetic on S^3 with Imported Hubble Radius"
@@ -60264,11 +60251,9 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "positive_theorem",
-      "deps": [
-        "koide_mru_demotion_note_2026-04-20"
-      ],
+      "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7b86dc35e62a906eaf725592e81f20f6d2b2a7a76d627a2bdb979b26e44a5427",
+      "note_hash": "62a4373b2627d926695781f8cf9b3f8a47596bf42d803360083a31ed53781b03",
       "path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_moment_ratio_uniformity_theorem.py",
       "title": "Moment-Ratio Uniformity (MRU) on Cl(d)/Z_d \u2014 conditional support note"
@@ -79553,11 +79538,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
-        "observable_principle_from_axiom_note",
-        "universal_gr_curvature_localization_blocker_note"
+        "observable_principle_from_axiom_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4d6c0e80ef532f47ec9c41dd0a0d2883d45ef17b47304630808473cf401c8a43",
+      "note_hash": "4a91b4f0d6e6b0d457e94025fde76a1927c936fbbacf70c52acf02c1213a84bd",
       "path": "docs/UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md",
       "runner_path": null,
       "title": "Universal GR Tensor Variational Candidate on `PL S^3 x R`"
@@ -84008,6 +83992,7 @@
     "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
     "koide_kappa_two_orbit_dimension_factorization_note_2026-04-19",
     "koide_lightcone_primitive_theorem_note_2026-05-10",
+    "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
     "koide_mru_weight_class_obstruction_theorem_note_2026-04-19",
     "koide_native_dimensionless_note_2026-04-24",
     "koide_native_zero_section_closure_route_note_2026-04-24",
@@ -84424,10 +84409,10 @@
       "open_gate": 124,
       "positive_theorem": 608
     },
-    "edge_count": 9688,
+    "edge_count": 9685,
     "leaf_count": 757,
     "node_count": 2490,
-    "root_count": 819,
+    "root_count": 820,
     "runners_with_path": 2051
   }
 }

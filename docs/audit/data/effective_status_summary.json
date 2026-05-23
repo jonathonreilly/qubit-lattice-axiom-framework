@@ -51,7 +51,7 @@
       "left_handed_charge_matching_note"
     ]
   ],
-  "cycles_detected": 131,
+  "cycles_detected": 125,
   "effective_status_counts": {
     "audited_conditional": 95,
     "audited_failed": 24,

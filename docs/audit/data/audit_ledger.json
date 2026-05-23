@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -110481,7 +110480,6 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "graviton_mass_spectral_gap_identity_theorem_note",
         "universal_qg_canonical_textbook_continuum_gr_closure_note"
       ],
       "direct_in_degree": 9,
@@ -110495,7 +110493,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "e0ea84b621e5d441fd22521da18556386f2f9c0c363f3b28c0931c1fc7bc2891",
+      "note_hash": "3808af5d29842b8dfcf51a27cc21a6a1057a5ca1955c38bc764a1fb3b56886cb",
       "note_path": "docs/GRAVITON_MASS_DERIVED_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -136481,9 +136479,7 @@
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
-      "deps": [
-        "koide_mru_demotion_note_2026-04-20"
-      ],
+      "deps": [],
       "direct_in_degree": 4,
       "effective_status": "unaudited",
       "effective_status_reason": "awaiting_audit",
@@ -136495,7 +136491,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "7b86dc35e62a906eaf725592e81f20f6d2b2a7a76d627a2bdb979b26e44a5427",
+      "note_hash": "62a4373b2627d926695781f8cf9b3f8a47596bf42d803360083a31ed53781b03",
       "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
@@ -260437,8 +260433,7 @@
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
-        "observable_principle_from_axiom_note",
-        "universal_gr_curvature_localization_blocker_note"
+        "observable_principle_from_axiom_note"
       ],
       "direct_in_degree": 9,
       "effective_status": "unaudited",
@@ -260451,7 +260446,7 @@
       "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "4d6c0e80ef532f47ec9c41dd0a0d2883d45ef17b47304630808473cf401c8a43",
+      "note_hash": "4a91b4f0d6e6b0d457e94025fde76a1927c936fbbacf70c52acf02c1213a84bd",
       "note_path": "docs/UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md",
       "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],

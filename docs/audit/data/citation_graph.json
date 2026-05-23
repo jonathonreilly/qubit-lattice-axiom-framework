@@ -43513,7 +43513,7 @@
         "scripts/generative_causal_dag_interference.py",
         "scripts/topology_families.py"
       ],
-      "note_hash": "7e7cd13b4a9ba5e33456846c80d29f9e0180df2ba4048257f2f91153b48c599f",
+      "note_hash": "41e7941860b9e0094e913d5288558363bc5dab1940d327e0c047e3b19b36da3b",
       "path": "docs/CENTRAL_BAND_MASS_WINDOW_NOTE.md",
       "runner_path": "scripts/central_band_mass_window_summary.py",
       "title": "Central-Band Mass Window Note"

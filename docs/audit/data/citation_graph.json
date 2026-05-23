@@ -43395,7 +43395,7 @@
       "helper_runner_paths": [
         "scripts/stochastic_collapse_born_calibration.py"
       ],
-      "note_hash": "10819ae9a60731cfe190c7ec1efa7e5c3076406aab090a9f5baca6ccb4622394",
+      "note_hash": "a43bde3d149fc2d1cea3a2af6d82644c3141cdee4a7845a9f9df3e9b7e365f7d",
       "path": "docs/CENTRAL_BAND_COLLAPSE_STRENGTH_NOTE.md",
       "runner_path": "scripts/central_band_born_collapse_strength_sweep.py",
       "title": "Central-Band Collapse-Strength Note"

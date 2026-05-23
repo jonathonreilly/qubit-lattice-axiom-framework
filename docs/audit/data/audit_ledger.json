@@ -1,5 +1,4 @@
 {
-  "last_invalidations": [],
   "rows": {
     "3d_correction_master_note": {
       "audit_date": null,
@@ -22759,53 +22758,44 @@
       "verdict_rationale": "Issue: the note's exact recorded joint card is stale relative to the supplied completed runner output. Why this blocks: the claim is the numerical card itself, so mismatched row values prevent the source note from closing even though several qualitative sign statements still survive. Repair target: update the note from a current completed run and include or cite the helper source that defines graph construction and gravity/decoherence metrics if a computed theorem is retained. Claim boundary until fixed: only the runner stdout supports a parameter-specific table, not the note as written."
     },
     "central_band_collapse_strength_note": {
-      "audit_date": "2026-05-10T18:50:05.230895+00:00",
-      "audit_state_snapshot": {
-        "criticality": "leaf",
-        "dep_claim_scope": {},
-        "dep_claim_type": {},
-        "dep_effective_status": {},
-        "deps": [],
-        "load_bearing_score": 0.0,
-        "runner_hash": "cec5ceff6dbe6ba3bf660a5bb28757a62983ea42e299b07d8b66ecc28ef75d9e",
-        "transitive_descendants": 0
-      },
-      "audit_status": "audited_failed",
-      "auditor": "codex-audit-loop-019e1338-28a2-7e33-85f5-b093a266fded",
-      "auditor_confidence": "high",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "The supplied stdout confirms machine-precision PASS for the six LN+|y|+collapse rows, but the note's table and p-ordering are stale relative to that stdout. In particular, N=60 p=0.20 has the smallest mean in stdout, not a worse value than p=0.05 or p=0.10, and N=40 reports ok=4 rather than six matched seeds.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "central_band_collapse_strength_note",
-      "claim_scope": "The source note's finite central-band collapse-strength sweep values and conclusions for N=40,60 and p=0.05,0.10,0.20.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
-      "claim_type_last_reviewed": "2026-05-10T18:50:05.230895+00:00",
-      "claim_type_provenance": "audited",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [],
       "direct_in_degree": 0,
-      "effective_status": "audited_failed",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [
         "scripts/stochastic_collapse_born_calibration.py"
       ],
-      "independence": "fresh_context",
-      "intrinsic_status": "audited_failed",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 0.0,
-      "load_bearing_step": "All of the `LN + |y| + collapse` rows remain Born-clean at machine precision, with lower `p` marginally cleaner than `p = 0.2`.",
-      "load_bearing_step_class": "C",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
-      "note_hash": "10819ae9a60731cfe190c7ec1efa7e5c3076406aab090a9f5baca6ccb4622394",
+      "note_hash": "a43bde3d149fc2d1cea3a2af6d82644c3141cdee4a7845a9f9df3e9b7e365f7d",
       "note_path": "docs/CENTRAL_BAND_COLLAPSE_STRENGTH_NOTE.md",
-      "notes_for_re_audit_if_any": "Recheck after the source table and interpretation are regenerated from the supplied runner stdout; include or pin the imported calibration helper if full runner-source verification is required.",
+      "notes_for_re_audit_if_any": null,
       "open_dependency_paths": [],
       "previous_auditor_family": "codex-current",
       "previous_audits": [
@@ -22848,6 +22838,47 @@
             "total_pass": 0
           },
           "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+        },
+        {
+          "archived_at": "2026-05-23T15:59:14.301973+00:00",
+          "archived_for_note_hash": "10819ae9a60731cfe190c7ec1efa7e5c3076406aab090a9f5baca6ccb4622394",
+          "audit_date": "2026-05-10T18:50:05.230895+00:00",
+          "audit_state_snapshot": {
+            "criticality": "leaf",
+            "dep_claim_scope": {},
+            "dep_claim_type": {},
+            "dep_effective_status": {},
+            "deps": [],
+            "load_bearing_score": 0.0,
+            "runner_hash": "cec5ceff6dbe6ba3bf660a5bb28757a62983ea42e299b07d8b66ecc28ef75d9e",
+            "transitive_descendants": 0
+          },
+          "audit_status": "audited_failed",
+          "auditor": "codex-audit-loop-019e1338-28a2-7e33-85f5-b093a266fded",
+          "auditor_confidence": "high",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "The supplied stdout confirms machine-precision PASS for the six LN+|y|+collapse rows, but the note's table and p-ordering are stale relative to that stdout. In particular, N=60 p=0.20 has the smallest mean in stdout, not a worse value than p=0.05 or p=0.10, and N=40 reports ok=4 rather than six matched seeds.",
+          "claim_scope": "The source note's finite central-band collapse-strength sweep values and conclusions for N=40,60 and p=0.05,0.10,0.20.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-10T18:50:05.230895+00:00",
+          "claim_type_provenance": "audited",
+          "cross_confirmation": null,
+          "decoration_parent_claim_id": null,
+          "independence": "fresh_context",
+          "load_bearing_step": "All of the `LN + |y| + collapse` rows remain Born-clean at machine precision, with lower `p` marginally cleaner than `p = 0.2`.",
+          "load_bearing_step_class": "C",
+          "notes_for_re_audit_if_any": "Recheck after the source table and interpretation are regenerated from the supplied runner stdout; include or pin the imported calibration helper if full runner-source verification is required.",
+          "open_dependency_paths": [],
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 18,
+            "D": 0,
+            "total_pass": 18
+          },
+          "verdict_rationale": "Issue: the source table and qualitative lower-p trend disagree with the supplied completed runner stdout. Why this blocks: this bounded theorem is a runner-backed calibration, so the exact row values, seed accounting, and p-ordering are load-bearing evidence. Repair target: regenerate the note from the current runner artifact, update the table and seed accounting, and narrow the interpretation to what the stdout actually supports. Claim boundary until fixed: the supplied stdout supports only that all six LN+|y|+collapse rows are below the 1e-10 machine-precision threshold."
         }
       ],
       "prose_corrections": [],
@@ -22855,14 +22886,14 @@
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
-        "C": 18,
+        "C": 0,
         "D": 0,
-        "total_pass": 18
+        "total_pass": 0
       },
       "runner_path": "scripts/central_band_born_collapse_strength_sweep.py",
       "title": "Central-Band Collapse-Strength Note",
       "transitive_descendants": 0,
-      "verdict_rationale": "Issue: the source table and qualitative lower-p trend disagree with the supplied completed runner stdout. Why this blocks: this bounded theorem is a runner-backed calibration, so the exact row values, seed accounting, and p-ordering are load-bearing evidence. Repair target: regenerate the note from the current runner artifact, update the table and seed accounting, and narrow the interpretation to what the stdout actually supports. Claim boundary until fixed: the supplied stdout supports only that all six LN+|y|+collapse rows are below the 1e-10 machine-precision threshold."
+      "verdict_rationale": null
     },
     "central_band_dense_boundary_note": {
       "audit_date": "2026-05-10T18:57:09.081568+00:00",
@@ -288866,8 +288897,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2333,
-    "re_audit_required": 0,
+    "preserved_existing": 2332,
+    "re_audit_required": 1,
     "row_count": 2377,
     "seeded_new": 0
   }

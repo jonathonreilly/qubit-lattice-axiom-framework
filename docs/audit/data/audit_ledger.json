@@ -19723,24 +19723,44 @@
       "verdict_rationale": "The runner output directly supports the note's negative robustness summary: p=0.5 and p=1.0 are TOWARD on 3/6 damaged cases, while p=2.0 is TOWARD on 5/6, and p=1.0 has the smallest mean |F~M-p| among finite surviving fits. The primary and helper source show an actual bounded numerical replay from the stated lattice/action setup, with no hard-coded expected summary values or external comparator calibration. The cited authorities are retained_bounded and are used only to bound the family and neighboring action-power context, so the narrowed claim closes as a bounded theorem."
     },
     "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T12:43:31.548037+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T124124Z-2d6d6078-busch_povm_extension_on_-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The axiom-premise authority supplies the finite qubit tensor-product substrate, hence H_\u039b has dimension 2^|\u039b| \u2265 2 and E(H_\u039b) is the standard finite-dimensional effect algebra. With the stated Busch/CFMR theorem as the standard mathematical input, the Born-form conclusion follows directly.",
       "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
+      "claim_scope": "Finite-region application of the Busch/CFMR POVM Gleason theorem to the qubit-lattice effect algebra E(H_\u039b) for every nonempty finite \u039b, including the single-qubit dim-2 case.",
       "claim_type": "positive_theorem",
       "claim_type_author_hint": "positive_theorem",
       "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T12:43:31.548037+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "leaf",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -19748,19 +19768,19 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "retained",
+      "effective_status_reason": "self",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "retained",
       "load_bearing_score": 0.0,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM-extension theorem applies to E(H_\u039b) and gives m(E)=Tr(\u03c3E) for a unique density matrix \u03c3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "audit_in_progress",
       "max_descendant_status_rank": 30,
       "note_hash": "06ea434076b8d9da4be4bb41d681ee8576c97c24db0e3e7782c8ad759db10e67",
       "note_path": "docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the exact Busch/CFMR hypothesis match to the note's M3 formulation; no runner artifact was provided.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -19814,7 +19834,7 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "runner_check_breakdown": {
         "A": 0,
         "B": 0,
@@ -19825,7 +19845,7 @@
       "runner_path": null,
       "title": "Busch POVM Extension on the Qubit-Lattice Effect Algebra (Narrow)",
       "transitive_descendants": 0,
-      "verdict_rationale": null
+      "verdict_rationale": "The source does not re-prove Busch's theorem, but it honestly scopes the row as applying that named standard POVM-Gleason theorem to the framework substrate. The only framework dependency is the axiom-premise Minimal Axioms note, which correctly yields A_\u039b = M_{2^|\u039b|}(C) and dim H_\u039b \u2265 2 for nonempty finite \u039b. The M3 partition-additivity condition is strong enough to match the effect-additivity needed for the stated theorem by adding complements. No runner was supplied, so the audit is textual rather than computational."
     },
     "c3_symmetry_preserved_interpretation_note_2026-05-08": {
       "audit_date": null,

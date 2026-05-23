@@ -67,13 +67,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 434 |
-| `high` | 436 |
-| `medium` | 583 |
-| `leaf` | 924 |
+| `critical` | 429 |
+| `high` | 440 |
+| `medium` | 578 |
+| `leaf` | 930 |
 
 - **Retained pending chain closure:** 7
-- **Citation cycles detected:** 24
+- **Citation cycles detected:** 17
 
 ### Runner classification (static heuristic)
 
@@ -89,10 +89,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 710 | 53.47 | `audited_conditional` | ~~audited_conditional~~ |
-| 2 | `minimal_axioms_2026-05-03` | meta | critical | 923 | 52.35 | `unaudited` | meta |
+| 2 | `minimal_axioms_2026-05-03` | meta | critical | 922 | 52.35 | `unaudited` | meta |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 893 | 47.80 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1079 | 43.58 | `audited_clean` | **retained** |
-| 5 | `minimal_axioms_2026-04-11` | meta | critical | 931 | 39.86 | `unaudited` | meta |
+| 5 | `minimal_axioms_2026-04-11` | meta | critical | 925 | 39.85 | `unaudited` | meta |
 | 6 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 176 | 38.97 | `unaudited` | unaudited |
 | 7 | `alpha_s_derived_note` | bounded_theorem | critical | 933 | 38.37 | `unaudited` | unaudited |
 | 8 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 831 | 38.20 | `unaudited` | unaudited |

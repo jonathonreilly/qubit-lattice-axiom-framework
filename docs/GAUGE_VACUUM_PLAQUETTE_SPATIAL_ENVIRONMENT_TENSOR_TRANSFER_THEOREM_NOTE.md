@@ -1,31 +1,28 @@
-# Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Theorem
+# Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Bounded Packet
 
 **Date:** 2026-04-17; 2026-05-18 (claim_scope narrowed to the finite
-one-word support packet per audit verdict boundary instruction).
+one-word support packet per audit verdict boundary instruction);
+2026-05-23 (scope repaired to cite the retained finite tensor-word
+packet and demote the full boundary-character law to an open target).
 **Type:** bounded_theorem
-**Claim scope (post-2026-05-18 narrowing):** the load-bearing claims
-are **(T1) exact local Wilson tensor weights** and **(T2) exact slice
-integration gives fusion/intertwiner contractions**, plus the **finite
-one-word support packet** that the runner verifies at dominant-weight
-box `NMAX = 4`, Wilson Bessel mode sum `MODE_MAX = 80`: one explicit
-positive tensor-transfer matrix constructed from those ingredients is
-nonnegative entry-wise, has the conjugation-swap symmetry, and
-produces a nonnegative boundary amplitude under the canonical
-unit-vector readout. **(T3) structural boundary-character generation
-by the tensor-transfer law** is **explicitly NOT load-bearing in this
-narrowed scope**: the boundary-character identity
+**Claim scope (post-2026-05-23 narrowing):** the load-bearing claim is
+only the bounded finite tensor-word packet already isolated by
+[`GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md`](GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md):
+at dominant-weight box `NMAX = 4`, Wilson Bessel mode sum
+`MODE_MAX = 80`, and `beta = 6`, one explicit 25-state matrix
+constructed from retained bounded Wilson coefficients and finite
+`SU(3)` fundamental / anti-fundamental fusion recurrences is
+nonnegative entry-wise, conjugation-swap symmetric, and has
+nonnegative unit-vector boundary readout. The local Wilson coefficient
+and fusion/intertwiner ingredients are allowed only as finite-packet
+inputs on this bounded surface. This note does **not** claim the full
+boundary-character identity
 `z_(p,q)^env(beta) = <chi_(p,q), (T_beta^env,tensor)^(L_perp-1)
-eta_beta^env>` between actual unmarked spatial-environment amplitudes
-and the structural transfer law is asserted structurally from (T1)
-and (T2) by Haar-orthogonality / Peter-Weyl decomposition and is **not
-numerically evaluated** by the runner; it is recorded as the open
-bridge gate that a future retained-grade derivation must close. The
-**full untruncated tensor-transfer operator construction at
-`beta = 6`** (the explicit Perron solve, the convergence/positivity
-proof beyond truncated support, the named-tensor-word check beyond one
-example, and the numerical evaluation of the boundary-character
-identity) remains the open target named in §"What this does not
-close".
+eta_beta^env>` for actual unmarked spatial-environment amplitudes.
+The full untruncated tensor-transfer operator at `beta = 6`, the
+Perron/boundary readout, convergence and positivity beyond the finite
+box, multi-word coverage, and numerical evaluation of the
+boundary-character identity remain open targets.
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane. The
 `bounded_theorem` label is a source-side claim-boundary declaration,
@@ -40,7 +37,8 @@ building blocks rather than left as an abstract positive transfer amplitude?
 
 ## Answer
 
-Yes.
+Partially, on the finite packet already isolated in the retained
+bounded companion row.
 
 On the accepted Wilson `3 spatial + 1 derived-time` source surface, expand each
 unmarked spatial plaquette Boltzmann factor in exact `SU(3)` characters,
@@ -57,9 +55,9 @@ transfer matrix elements are then finite sums of products of:
 - explicit Wilson coefficients `c_lambda(beta)`,
 - exact nonnegative `SU(3)` fusion / intertwiner multiplicities.
 
-So the remaining spatial-environment boundary character data are not generic
-positive amplitudes. They are one explicit positive character-tensor transfer
-law on the marked class-function sector.
+This identifies the finite local ingredients of a tensor-transfer
+program. It does not by itself identify the actual spatial-environment
+boundary character data with a full transfer-law readout.
 
 At `beta = 6`, the remaining constructive target is therefore:
 
@@ -92,7 +90,7 @@ character-measure theorems already on `main`:
 - the open data are exactly the coefficients `rho_(p,q)(beta)` of the
   boundary class function `Z_beta^env`.
 
-## Theorem 1: exact local Wilson tensor weights
+## Bounded ingredient 1: finite local Wilson tensor weights
 
 For every irrep `lambda = (p,q)`, the one-link Wilson class function admits the
 exact character expansion
@@ -107,10 +105,12 @@ with
 At `beta = 6`, these coefficients are explicit through the Bessel-determinant
 mode sums already used in the local plaquette packet.
 
-So the local plaquette weights entering the spatial environment are fully
-explicit on the accepted surface.
+On the `NMAX = 4`, `MODE_MAX = 80`, `beta = 6` packet, these local
+weights are explicit through the retained bounded Wilson-coefficient
+row. This note does not claim all-weight or untruncated coefficient
+closure.
 
-## Theorem 2: exact slice integration gives fusion/intertwiner contractions
+## Bounded ingredient 2: finite fusion/intertwiner contractions
 
 Slice the unmarked spatial environment along the orthogonal spatial direction.
 For one slice step, expand every spatial plaquette factor in characters and
@@ -122,17 +122,18 @@ element between boundary class states is a finite sum of products of:
 - the explicit local Wilson coefficients `c_lambda(beta)`,
 - exact nonnegative integer fusion/intertwiner multiplicities from `SU(3)`.
 
-Therefore the spatial environment transfer matrix on the marked class-function
-sector is an exact positive tensor-transfer operator.
+The retained finite packet uses the corresponding finite
+fundamental/anti-fundamental fusion recurrences on the same
+dominant-weight box. This note does not prove the all-slice,
+all-weight spatial-environment transfer operator.
 
-## Theorem 3: structural boundary-character generation by the tensor-transfer law
+## Open target: boundary-character generation by the tensor-transfer law
 
 Let `T_beta^env,tensor` denote the resulting compressed spatial
 environment tensor-transfer operator on the marked class-function
 sector, and let `eta_beta^env` denote the exact positive boundary
 state induced by the rim coupling of the marked plaquette to the
-unmarked environment. By Theorems 1 and 2, the unmarked spatial
-boundary character coefficients then satisfy, structurally,
+unmarked environment. The open target is to prove and evaluate
 
 `z_(p,q)^env(beta)
   = <chi_(p,q), (T_beta^env,tensor)^(L_perp-1) eta_beta^env>,`
@@ -142,26 +143,24 @@ and hence
 `rho_(p,q)(beta)
   = z_(p,q)^env(beta) / z_(0,0)^env(beta)`
 
-is the normalized tensor-transfer boundary amplitude sequence of this
-explicit positive operator. The identity is class-A algebraic from the
-local Wilson-character expansion (Theorem 1) and the slice-integration
-fusion contraction (Theorem 2); it is asserted structurally, not
-numerically evaluated by the runner.
+as the normalized tensor-transfer boundary amplitude sequence of the
+actual unmarked spatial environment. That identity is not load-bearing
+for this bounded packet and is not numerically evaluated by the runner.
 
 **Runner-verified evidence on the truncated packet.** The runner
 constructs one explicit positive tensor-transfer matrix from the
 truncated local ingredients (Wilson character coefficients on the
 `NMAX = 4` dominant-weight box at `MODE_MAX = 80` Bessel support, plus
 `SU(3)` fusion intertwiners on that box) and verifies three
-structural properties consistent with Theorem 3:
+finite-packet properties:
 
 - nonnegativity of the constructed matrix entries,
 - conjugation-swap symmetry of the matrix,
 - nonnegativity of the boundary amplitude under the unit-vector
   readout.
 
-These verify **one instance** of the Theorem-3 structural law on the
-truncated packet. They do not numerically evaluate
+These verify **one finite tensor-word packet** on the truncated inputs.
+They do not numerically evaluate
 `<chi_(p,q), (T_beta^env,tensor)^(L_perp-1) eta_beta^env>` for general
 `L_perp` or general boundary states, and they do not extend beyond the
 one constructed matrix.
@@ -194,14 +193,14 @@ It is specifically:
 
 ## What this closes
 
-- exact realization of the residual spatial environment as a tensor-transfer
-  law built from explicit Wilson character coefficients and exact `SU(3)`
-  fusion/intertwiner data
-- exact clarification that the remaining plaquette gap is an explicit
-  tensor-transfer Perron solve at `beta = 6`, not generic boundary-sequence
-  freedom
-- exact upgrade of the spatial-environment packet from "positive transfer law"
-  to "explicit local tensor-transfer class"
+- bounded finite tensor-word support already represented by the retained
+  bounded companion: one explicit `NMAX = 4`, `MODE_MAX = 80`,
+  `beta = 6` matrix has nonnegative entries, conjugation-swap symmetry,
+  and nonnegative unit-vector boundary readout;
+- bounded clarification that the finite local ingredients are explicit
+  on that packet;
+- a precise statement of the remaining full tensor-transfer /
+  Perron-boundary target.
 
 ## What this does not close
 
@@ -213,8 +212,8 @@ It is specifically:
 
 ## Script boundary
 
-The theorem above is structural and exact. The linked runner is intentionally a
-finite support packet only:
+The bounded packet above is structural but finite. The linked runner is
+intentionally a finite support packet only:
 
 - it audits a truncated dominant-weight box with `NMAX = 4`,
 - it truncates the Wilson Bessel mode sum at `MODE_MAX = 80`,
@@ -257,14 +256,12 @@ construction work and enter only as admitted-context:
 
 3. **Multi-tensor-word generalization.** The runner verifies one
    explicit positive tensor-transfer word; the general case beyond
-   that example is asserted but not exhaustively enumerated.
+   that example is not claimed here.
 
-The **in-scope content** of this note is the structural
-character-tensor-transfer identification — the named local ingredients
-(Wilson character coefficients `c_lambda(beta)`, `SU(3)` fusion
-intertwiners) and the finite truncated support packet that exhibits
-their consistency under one tensor word. Theorems that depend on the
-full untruncated construction at `beta = 6` are out of scope here and
+The **in-scope content** of this note is the finite truncated support
+packet that exhibits consistency of the retained bounded Wilson
+coefficients and finite fusion recurrences under one tensor word.
+Theorems that depend on the full untruncated construction at `beta = 6`
 must cite the unresolved open object directly.
 
 ## Audit dependency repair links
@@ -273,8 +270,23 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 The conditional verdict named the load-bearing gap as the bridge from local character/fusion ingredients to the actual spatial-environment boundary amplitudes. That gap remains the explicit out-of-scope open object of this note (full untruncated tensor-transfer at `beta = 6`, multi-tensor-word generalization, explicit `beta = 6` Perron solve, numerical evaluation of the Theorem-3 matrix-element identity).
 
-A bounded partial input now exists on the single-link side:
+A retained bounded finite packet now exists for the exact matrix object
+this row can safely claim:
+
+- [gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10](GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md)
+  (`audited_clean` / `retained_bounded`) proves the finite 25-state
+  `NMAX = 4`, `MODE_MAX = 80`, `beta = 6` tensor-word packet with the
+  same nonnegativity, conjugation-swap, and unit-vector readout
+  properties isolated here. This is the load-bearing one-hop authority
+  for the bounded repair of this row.
+
+A bounded partial input also exists on the single-link side:
 
 - [gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09](GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md) (`audited_clean` / `retained_bounded`) computes the bounded normalized single-link Wilson boundary coefficients `rho_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6))` on the finite weight box `0 <= p,q <= 4` by two independent integrators (Schur-Weyl Bessel-determinant and Weyl-Cartan torus integration). This is bounded support for the single-link factor `c_lambda(6)` referenced in Theorem 1 above, on the finite box only.
 
-This bounded input does **not** supply: the all-weight closed form, the full untruncated tensor-transfer operator at `beta = 6`, multi-tensor-word generalization, or the `beta = 6` Perron state of the full spatial environment. Those gaps remain the open positive-theorem target stated in the existing "What this does not close" and "Out of scope" sections of this note.
+These bounded inputs do **not** supply: the all-weight closed form, the
+full untruncated tensor-transfer operator at `beta = 6`,
+multi-tensor-word generalization, or the `beta = 6` Perron state of the
+full spatial environment. Those gaps remain the open positive-theorem
+target stated in the existing "What this does not close" and "Out of
+scope" sections of this note.

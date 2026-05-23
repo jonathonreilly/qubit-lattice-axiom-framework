@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 275,
+    "critical": 277,
     "high": 348,
     "leaf": 332,
     "medium": 339
@@ -31,6 +31,55 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 1005
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+      "claim_scope": "Bounded finite tensor-word packet only: the explicit 25-state NMAX=4, MODE_MAX=80, beta=6 matrix built from retained_bounded rho_(p,q)(6) Wilson coefficients and finite SU(3) fundamental/anti-fundamental fusion recurrences satisfies P1 nonnegative entries, P2 conjugation-swap symmetry, and P3 nonnegative boundary amplitude under the (0,0) unit-vector readout. No parent spatial-environment matrix-element identity, untruncated tensor transfer, Perron/convergence result, analytic P(6), or physical Cl(3)/Z^3 bridge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "retained_bounded",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.473,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md",
+      "queue_reason": "audit_in_progress",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
+      "transitive_descendants": 1004
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+        "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+      ],
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.972,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+      "transitive_descendants": 1003
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -38777,6 +38826,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 28,
-  "total_pending": 1294
+  "ready_count": 30,
+  "total_pending": 1296
 }

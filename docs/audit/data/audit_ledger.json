@@ -100311,13 +100311,13 @@
         "runner_hash": "1c9cf80915388a8f92aaba814a80f08959b1abbdb2114a6eba0a6a428de0ac92",
         "transitive_descendants": 0
       },
-      "audit_status": "audited_clean",
+      "audit_status": "audit_in_progress",
       "auditor": "codex-audit-loop",
       "auditor_confidence": "high",
       "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
-      "blocker": null,
+      "blocker": "awaiting_cross_confirmation",
       "chain_closes": true,
       "chain_closure_explanation": "The one load-bearing dependency is retained_bounded for the finite rho_(p,q)(6) coefficients, and the runner directly constructs the finite fusion matrices, diagonal coefficient matrix, tensor_word, swap matrix, and boundary vector on the stated box. The measured P1-P3 inequalities/symmetry bounds all pass at double precision, while the note explicitly excludes the parent untruncated and physical-readout claims.",
       "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
@@ -100325,28 +100325,43 @@
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-11T16:50:05.449202+00:00",
-      "claim_type_provenance": "audited",
-      "criticality": "leaf",
-      "cross_confirmation": null,
+      "claim_type_last_reviewed": "2026-05-23T17:25:07.418963+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T16:50:05.449202+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite tensor-word packet only: the explicit 25-state NMAX=4, MODE_MAX=80, beta=6 matrix built from retained_bounded rho_(p,q)(6) Wilson coefficients and finite SU(3) fundamental/anti-fundamental fusion recurrences satisfies P1 nonnegative entries, P2 conjugation-swap symmetry, and P3 nonnegative boundary amplitude under the (0,0) unit-vector readout. No parent spatial-environment matrix-element identity, untruncated tensor transfer, Perron/convergence result, analytic P(6), or physical Cl(3)/Z^3 bridge is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
       "decoration_parent_claim_id": null,
       "deps": [
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
-      "direct_in_degree": 0,
+      "direct_in_degree": 1,
       "effective_status": "retained_bounded",
-      "effective_status_reason": "self",
+      "effective_status_reason": "awaiting_cross_confirmation_after_criticality_bump:self",
       "helper_runner_paths": [],
       "independence": "cross_family",
       "intrinsic_status": "retained_bounded",
-      "load_bearing_score": 0.0,
+      "load_bearing_score": 10.473,
       "load_bearing_step": "For the explicit NMAX=4, MODE_MAX=80, beta=6 matrix tensor_word = diag_c*(N_f+N_fbar)*diag_c*(N_f+N_fbar)^T*diag_c, the runner verifies nonnegative entries, conjugation-swap symmetry, and nonnegative boundary amplitude from the (0,0) unit-vector readout.",
       "load_bearing_step_class": "A",
-      "max_descendant_status": "audit_in_progress",
-      "max_descendant_status_rank": 30,
+      "max_descendant_status": "retained_pending_chain",
+      "max_descendant_status_rank": 80,
       "note_hash": "0eb0cc70bee8f87567688c3b2c83277c5c195c6bc9a5e8b3aff64e8f5dcad618",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md",
-      "notes_for_re_audit_if_any": "Re-audit if this row is widened beyond the NMAX=4, MODE_MAX=80, beta=6 finite tensor_word packet, or if it is used to claim the parent matrix-element identity, untruncated transfer positivity/convergence, analytic P(6), or a physical Cl(3)/Z^3 bridge.",
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-audit-loop, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
       "open_dependency_paths": [],
       "previous_audits": [],
       "prose_corrections": [],
@@ -100360,7 +100375,7 @@
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
       "title": "Gauge-Vacuum Plaquette Finite Tensor-Word Packet \u2014 Bounded Note",
-      "transitive_descendants": 0,
+      "transitive_descendants": 1004,
       "verdict_rationale": "The scoped finite-packet claim closes because the constructed matrix is exactly the object being audited, the rho coefficient dependency is retained_bounded on the same truncation box, and the runner reports PASS=76, FAIL=0 including P1 min(tensor_word)>=0, P2 ||S*tensor_word - tensor_word*S||_inf < 1e-12, and P3 min(tensor_word*boundary0)>=0. The SU(3) fusion recurrences are used only to define the finite packet's matrices on the box, and the note does not claim the parent spatial-environment matrix-element identity or any untruncated transfer theorem. Residual risk is scope drift into the parent theorem or convergence/Perron claims, which are outside this audit."
     },
     "gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_note_2026-04-19": {
@@ -106524,117 +106539,46 @@
       "verdict_rationale": "The scoped theorem closes because all conclusions are direct consequences of the stated finite-matrix hypotheses, and the negative control confirms that conjugation symmetry of D is a real load-bearing assumption. The runner's beta=6 Wilson/Pieri instantiation is only evidence that one concrete finite packet satisfies the abstract hypotheses; the theorem itself is not claiming a physical spatial-environment transfer identity. Residual risk is scope drift into the parent Wilson boundary-character/Perron/untruncated construction, which this audit does not ratify."
     },
     "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": {
-      "audit_date": "2026-05-18T13:01:12.864997+00:00",
-      "audit_state_snapshot": {
-        "criticality": "critical",
-        "dep_claim_scope": {
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
-        },
-        "dep_claim_type": {
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
-        },
-        "dep_effective_status": {
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
-        },
-        "deps": [
-          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-        ],
-        "load_bearing_score": 15.013,
-        "runner_hash": "fb3075abfa53fd223e3b505cffa238fadabc18c2bc41d10d21fc223979dbfa2c",
-        "transitive_descendants": 1032
-      },
-      "audit_status": "audited_conditional",
-      "auditor": "codex-judicial-panel-gpt-5.5-20260518-gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-      "auditor_confidence": "judicial-panel",
-      "auditor_family": "codex-gpt-5.5",
+      "audit_date": null,
+      "audit_state_snapshot": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": false,
-      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. The packet verifies a bounded diagnostic: finite Bessel-sum Wilson coefficients, finite recurrence matrices, and one constructed tensor word on the NMAX=4 box. However, the source note repeatedly says the bridge from these local/fusion ingredients to actual spatial-environment boundary amplitudes, the full untruncated beta=6 operator, multi-word coverage, and Perron/boundary readout remain open. That makes the result conditional rather than clean, and the load-bearing step is best classified as an algebraic finite construction/check on existing formula inputs, not a closed first-principles class-C derivation of the spatial environment.",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
       "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-      "claim_scope": "Audited only the narrowed packet: finite NMAX=4, MODE_MAX=80 Wilson coefficient support, SU(3) fundamental/antifundamental fusion primitives on that box, and one constructed nonnegative conjugation-symmetric tensor-transfer word with unit-vector boundary readout.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": "2026-05-18T13:01:12.864997+00:00",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
-      "cross_confirmation": {
-        "first_audit": {
-          "audit_date": "2026-05-18T12:02:46.601686+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_s-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited only the narrowed finite packet: NMAX=4, MODE_MAX=80 Wilson coefficient support and one constructed tensor-transfer word from the SU(3) fundamental/antifundamental recurrence, with nonnegativity, swap symmetry, and canonical unit-vector boundary amplitude checks.",
-          "claim_type": "bounded_theorem",
-          "independence": "cross_family",
-          "load_bearing_step_class": "C",
-          "verdict": "audited_clean"
-        },
-        "mode": "judicial_third_pass",
-        "second_audit": {
-          "audit_date": "2026-05-18T12:39:34.114424+00:00",
-          "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-gauge_vacuum_plaquette_s-001",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited only the narrowed packet: finite NMAX=4, MODE_MAX=80 Wilson coefficient support, SU(3) fundamental/antifundamental fusion primitives on that box, and one constructed nonnegative conjugation-symmetric tensor-transfer word with unit-vector boundary readout.",
-          "claim_type": "bounded_theorem",
-          "independence": "fresh_context",
-          "load_bearing_step_class": "A",
-          "verdict": "audited_conditional"
-        },
-        "status": "third_confirmed_second",
-        "third_audit": {
-          "audit_date": "2026-05-18T13:01:12.864997+00:00",
-          "auditor": "codex-judicial-panel-gpt-5.5-20260518-gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-          "auditor_family": "codex-gpt-5.5",
-          "auditor_model": "gpt-5.5",
-          "auditor_reasoning_effort": "xhigh",
-          "claim_scope": "Audited only the narrowed packet: finite NMAX=4, MODE_MAX=80 Wilson coefficient support, SU(3) fundamental/antifundamental fusion primitives on that box, and one constructed nonnegative conjugation-symmetric tensor-transfer word with unit-vector boundary readout.",
-          "claim_type": "bounded_theorem",
-          "first_auditor_error": "The first audit treats the narrowed one-word support packet as clean closure, but the restricted packet still leaves a load-bearing bridge/readout/operator premise open for the claimed spatial-environment boundary-amplitude interpretation.",
-          "independence": "judicial_review",
-          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. The packet verifies a bounded diagnostic: finite Bessel-sum Wilson coefficients, finite recurrence matrices, and one constructed tensor word on the NMAX=4 box. However, the source note repeatedly says the bridge from these local/fusion ingredients to actual spatial-environment boundary amplitudes, the full untruncated beta=6 operator, multi-word coverage, and Perron/boundary readout remain open. That makes the result conditional rather than clean, and the load-bearing step is best classified as an algebraic finite construction/check on existing formula inputs, not a closed first-principles class-C derivation of the spatial environment.",
-          "load_bearing_step_class": "A",
-          "runner_check_breakdown": {
-            "A": 4,
-            "B": 0,
-            "C": 0,
-            "D": 0,
-            "total_pass": 7
-          },
-          "second_auditor_error": "No material error; second side is ratified.",
-          "sided_with": "second",
-          "verdict": "audited_conditional"
-        }
-      },
+      "cross_confirmation": null,
       "decoration_parent_claim_id": null,
       "deps": [
+        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
         "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
       ],
       "direct_in_degree": 10,
-      "effective_status": "audited_conditional",
-      "effective_status_reason": "terminal_audit",
+      "effective_status": "unaudited",
+      "effective_status_reason": "awaiting_audit",
       "helper_runner_paths": [],
-      "independence": "judicial_review",
-      "intrinsic_status": "audited_conditional",
+      "independence": null,
+      "intrinsic_status": "unaudited",
       "load_bearing_score": 14.972,
-      "load_bearing_step": "The finite runner algebraically combines truncated Wilson character coefficients and SU(3) fundamental/antifundamental recurrence matrices into one tensor-transfer word and checks nonnegativity, conjugation-swap symmetry, and unit-vector boundary amplitude nonnegativity.",
-      "load_bearing_step_class": "A",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
-      "note_hash": "fa897f078135dd7f0e4fc65369aee3c55704d19dcc52d8a2ae66075070909fa5",
+      "note_hash": "d4d74b70dffc12d26a36f12e72e1a0c0660657e08987de82e1e00598d184f782",
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
-      "notes_for_re_audit_if_any": "missing_bridge_theorem: close the explicit derivation from the local Wilson/fusion tensor construction to actual unmarked spatial-environment boundary character amplitudes, including full beta=6 operator support, multi-word coverage, and boundary/Perron readout.",
-      "open_dependency_paths": [
-        "full_untruncated_tensor_transfer_operator_at_beta_6",
-        "multi_tensor_word_generalization",
-        "beta_6_perron_state_and_boundary_coefficients",
-        "theorem_3_boundary_character_identity_bridge"
-      ],
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
       "previous_auditor_family": "codex-fresh-agent",
       "previous_audits": [
         {
@@ -106843,21 +106787,125 @@
             "total_pass": 7
           },
           "verdict_rationale": "Issue: the load-bearing boundary-character identity is asserted structurally, while the runner only checks one truncated positive tensor word built from local ingredients. Why this blocks: positivity and swap symmetry of that finite word do not prove that actual residual spatial-environment boundary amplitudes arise from the claimed transfer operator. Repair target: a retained bridge theorem and runner constructing the actual spatial-environment slice transfer, boundary state, and readout, or a split note scoped only to the one finite tensor-word packet. Claim boundary until fixed: bounded evidence for local Wilson coefficients, SU(3) fusion primitives, and one NMAX=4/MODE_MAX=80 positivity example."
+        },
+        {
+          "archived_at": "2026-05-23T17:25:02.293868+00:00",
+          "archived_for_note_hash": "fa897f078135dd7f0e4fc65369aee3c55704d19dcc52d8a2ae66075070909fa5",
+          "audit_date": "2026-05-18T13:01:12.864997+00:00",
+          "audit_state_snapshot": {
+            "criticality": "critical",
+            "dep_claim_scope": {
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+            },
+            "dep_claim_type": {
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+            },
+            "dep_effective_status": {
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+            },
+            "deps": [
+              "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+            ],
+            "load_bearing_score": 15.013,
+            "runner_hash": "fb3075abfa53fd223e3b505cffa238fadabc18c2bc41d10d21fc223979dbfa2c",
+            "transitive_descendants": 1032
+          },
+          "audit_status": "audited_conditional",
+          "auditor": "codex-judicial-panel-gpt-5.5-20260518-gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "auditor_confidence": "judicial-panel",
+          "auditor_family": "codex-gpt-5.5",
+          "blocker": null,
+          "chain_closes": false,
+          "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. The packet verifies a bounded diagnostic: finite Bessel-sum Wilson coefficients, finite recurrence matrices, and one constructed tensor word on the NMAX=4 box. However, the source note repeatedly says the bridge from these local/fusion ingredients to actual spatial-environment boundary amplitudes, the full untruncated beta=6 operator, multi-word coverage, and Perron/boundary readout remain open. That makes the result conditional rather than clean, and the load-bearing step is best classified as an algebraic finite construction/check on existing formula inputs, not a closed first-principles class-C derivation of the spatial environment.",
+          "claim_scope": "Audited only the narrowed packet: finite NMAX=4, MODE_MAX=80 Wilson coefficient support, SU(3) fundamental/antifundamental fusion primitives on that box, and one constructed nonnegative conjugation-symmetric tensor-transfer word with unit-vector boundary readout.",
+          "claim_type": "bounded_theorem",
+          "claim_type_last_reviewed": "2026-05-18T13:01:12.864997+00:00",
+          "claim_type_provenance": "judicial_review",
+          "cross_confirmation": {
+            "first_audit": {
+              "audit_date": "2026-05-18T12:02:46.601686+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-gauge_vacuum_plaquette_s-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited only the narrowed finite packet: NMAX=4, MODE_MAX=80 Wilson coefficient support and one constructed tensor-transfer word from the SU(3) fundamental/antifundamental recurrence, with nonnegativity, swap symmetry, and canonical unit-vector boundary amplitude checks.",
+              "claim_type": "bounded_theorem",
+              "independence": "cross_family",
+              "load_bearing_step_class": "C",
+              "verdict": "audited_clean"
+            },
+            "mode": "judicial_third_pass",
+            "second_audit": {
+              "audit_date": "2026-05-18T12:39:34.114424+00:00",
+              "auditor": "codex-cli-gpt-5.5-20260518-123911-c0b36f0f-gauge_vacuum_plaquette_s-001",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited only the narrowed packet: finite NMAX=4, MODE_MAX=80 Wilson coefficient support, SU(3) fundamental/antifundamental fusion primitives on that box, and one constructed nonnegative conjugation-symmetric tensor-transfer word with unit-vector boundary readout.",
+              "claim_type": "bounded_theorem",
+              "independence": "fresh_context",
+              "load_bearing_step_class": "A",
+              "verdict": "audited_conditional"
+            },
+            "status": "third_confirmed_second",
+            "third_audit": {
+              "audit_date": "2026-05-18T13:01:12.864997+00:00",
+              "auditor": "codex-judicial-panel-gpt-5.5-20260518-gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+              "auditor_family": "codex-gpt-5.5",
+              "auditor_model": "gpt-5.5",
+              "auditor_reasoning_effort": "xhigh",
+              "claim_scope": "Audited only the narrowed packet: finite NMAX=4, MODE_MAX=80 Wilson coefficient support, SU(3) fundamental/antifundamental fusion primitives on that box, and one constructed nonnegative conjugation-symmetric tensor-transfer word with unit-vector boundary readout.",
+              "claim_type": "bounded_theorem",
+              "first_auditor_error": "The first audit treats the narrowed one-word support packet as clean closure, but the restricted packet still leaves a load-bearing bridge/readout/operator premise open for the claimed spatial-environment boundary-amplitude interpretation.",
+              "independence": "judicial_review",
+              "judgment_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. The packet verifies a bounded diagnostic: finite Bessel-sum Wilson coefficients, finite recurrence matrices, and one constructed tensor word on the NMAX=4 box. However, the source note repeatedly says the bridge from these local/fusion ingredients to actual spatial-environment boundary amplitudes, the full untruncated beta=6 operator, multi-word coverage, and Perron/boundary readout remain open. That makes the result conditional rather than clean, and the load-bearing step is best classified as an algebraic finite construction/check on existing formula inputs, not a closed first-principles class-C derivation of the spatial environment.",
+              "load_bearing_step_class": "A",
+              "runner_check_breakdown": {
+                "A": 4,
+                "B": 0,
+                "C": 0,
+                "D": 0,
+                "total_pass": 7
+              },
+              "second_auditor_error": "No material error; second side is ratified.",
+              "sided_with": "second",
+              "verdict": "audited_conditional"
+            }
+          },
+          "decoration_parent_claim_id": null,
+          "independence": "judicial_review",
+          "load_bearing_step": "The finite runner algebraically combines truncated Wilson character coefficients and SU(3) fundamental/antifundamental recurrence matrices into one tensor-transfer word and checks nonnegativity, conjugation-swap symmetry, and unit-vector boundary amplitude nonnegativity.",
+          "load_bearing_step_class": "A",
+          "notes_for_re_audit_if_any": "missing_bridge_theorem: close the explicit derivation from the local Wilson/fusion tensor construction to actual unmarked spatial-environment boundary character amplitudes, including full beta=6 operator support, multi-word coverage, and boundary/Perron readout.",
+          "open_dependency_paths": [
+            "full_untruncated_tensor_transfer_operator_at_beta_6",
+            "multi_tensor_word_generalization",
+            "beta_6_perron_state_and_boundary_coefficients",
+            "theorem_3_boundary_character_identity_bridge"
+          ],
+          "runner_check_breakdown": {
+            "A": 4,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "verdict_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. The packet verifies a bounded diagnostic: finite Bessel-sum Wilson coefficients, finite recurrence matrices, and one constructed tensor word on the NMAX=4 box. However, the source note repeatedly says the bridge from these local/fusion ingredients to actual spatial-environment boundary amplitudes, the full untruncated beta=6 operator, multi-word coverage, and Perron/boundary readout remain open. That makes the result conditional rather than clean, and the load-bearing step is best classified as an algebraic finite construction/check on existing formula inputs, not a closed first-principles class-C derivation of the spatial environment."
         }
       ],
       "prose_corrections": [],
       "prose_status": "not_evaluated_pre_vocab_lint",
       "runner_check_breakdown": {
-        "A": 4,
+        "A": 0,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 7
+        "total_pass": 0
       },
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
-      "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Theorem",
+      "title": "Gauge-Vacuum Plaquette Spatial Environment Tensor-Transfer Bounded Packet",
       "transitive_descendants": 1003,
-      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second audit tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / class A; J2: second / audited_conditional / bounded_theorem / class A; J3: second / audited_conditional / bounded_theorem / class A; J4: second / audited_conditional / bounded_theorem / class A; J5: second / audited_conditional / bounded_theorem / class A. The packet verifies a bounded diagnostic: finite Bessel-sum Wilson coefficients, finite recurrence matrices, and one constructed tensor word on the NMAX=4 box. However, the source note repeatedly says the bridge from these local/fusion ingredients to actual spatial-environment boundary amplitudes, the full untruncated beta=6 operator, multi-word coverage, and Perron/boundary readout remain open. That makes the result conditional rather than clean, and the load-bearing step is best classified as an algebraic finite construction/check on existing formula inputs, not a closed first-principles class-C derivation of the spatial environment."
+      "verdict_rationale": null
     },
     "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": {
       "audit_date": null,
@@ -289762,8 +289810,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2333,
-    "re_audit_required": 0,
+    "preserved_existing": 2332,
+    "re_audit_required": 1,
     "row_count": 2377,
     "seeded_new": 0
   }

@@ -1,0 +1,31 @@
+loop: gauge-spatial-env-bounded-repair
+status: bounded-support
+date: 2026-05-23
+base: origin/main
+branch: physics-loop/gauge-spatial-env-bounded-repair-block01-20260523
+current_goal: >
+  Repair the gauge vacuum plaquette spatial-environment tensor-transfer row by
+  narrowing it to the finite tensor-word packet already supported by retained
+  bounded authorities and leaving the full beta=6 boundary/Perron law open.
+target_status: bounded-support
+actual_current_surface_status: bounded-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >
+  This branch queues an independent audit of a narrowed bounded packet; it
+  does not claim the full untruncated spatial-environment tensor transfer.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md
+  - scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py
+open_imports:
+  - independent audit verdict on the repaired parent row
+  - cross-confirmation requested by pipeline for the finite tensor-word companion after criticality bump
+  - full beta=6 tensor-transfer Perron/boundary readout remains open
+pr_status: open
+pr_url: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1743
+next_exact_action: await reviewer/auditor handling on PR #1743
+stop_condition: one review PR opened for this coherent science block

@@ -289340,8 +289340,8 @@
     "dropped_total": 0,
     "migrated_path_aliases": 0,
     "preserved_archived_failed": 44,
-    "preserved_existing": 2332,
-    "re_audit_required": 1,
+    "preserved_existing": 2333,
+    "re_audit_required": 0,
     "row_count": 2377,
     "seeded_new": 0
   }

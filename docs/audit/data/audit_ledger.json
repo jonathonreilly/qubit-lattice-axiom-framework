@@ -245184,44 +245184,62 @@
       "verdict_rationale": null
     },
     "su3_casimir_fundamental_theorem_note_2026-05-02": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T16:02:38.927733+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 16.262,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 216
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T160219Z-55cad6bc-su3_casimir_fundamental_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority supplies the algebraic V_3 fundamental action and trace normalization, and the note then uses standard finite-dimensional representation theory plus a direct trace computation. No physical SM color-identification bridge is needed for the narrowed K1-K3 scope.",
       "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_scope": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded.",
+      "claim_type": "decoration",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T16:02:38.927733+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
-      "decoration_parent_claim_id": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "decoration_under_cl3_color_automorphism_theorem",
+      "effective_status_reason": "decoration_parent_retained",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "decoration_under_cl3_color_automorphism_theorem",
       "load_bearing_score": 16.262,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "Tr[C_2] = \u03a3_a Tr[T^a T^a] = 4, while Tr[c_2(3) I_3] = 3 c_2(3), hence c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "d6e2848fd14e60b6bbbcb142227a43c1d10dd084190c9c8866dac72b3d8534d5",
       "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
-      "notes_for_re_audit_if_any": null,
+      "notes_for_re_audit_if_any": "Re-check only that the pipeline accepts decoration classification for this narrowed bounded-theorem note; the K1-K3 algebraic chain itself closes.",
       "open_dependency_paths": [],
       "previous_audits": [
         {
@@ -245667,16 +245685,16 @@
       "prose_corrections": [],
       "prose_status": "clean",
       "runner_check_breakdown": {
-        "A": 0,
+        "A": 7,
         "B": 0,
         "C": 0,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 7
       },
       "runner_path": "scripts/su3_casimir_fundamental_check.py",
       "title": "SU(3) Quadratic Casimir on the V_3 Fundamental Equals 4/3 \u2014 Algebraic K1\u2013K3 Theorem",
       "transitive_descendants": 216,
-      "verdict_rationale": null
+      "verdict_rationale": "The audited conclusion is an algebraic consequence of a single retained upstream parent plus standard SU(3) mathematics. The runner genuinely instantiates the Gell-Mann matrices and checks Hermiticity, trace normalization, closure, scalar Casimir behavior, and the 4/3 value, with no external comparator or tuned input. Because the chain reduces to one upstream algebraic parent and class-A checks only, the decoration tie-break applies rather than audited_clean."
     },
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": {
       "audit_date": "2026-05-11T18:12:27.011598+00:00",

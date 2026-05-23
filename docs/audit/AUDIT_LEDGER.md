@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 138 |
-| **retained_no_go** | 150 |
+| **retained_no_go** | 151 |
 | **retained_bounded** | 388 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1263 |
+| unaudited | 1262 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 14 |
@@ -49,13 +49,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 650 |
+| `audited_clean` | 651 |
 | `audited_conditional` | 123 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 63 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1489 |
+| `unaudited` | 1488 |
 
 | claim_type | count |
 |---|---:|
@@ -492,6 +492,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -7985,6 +7986,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The cited graph-first SU3 integration note already supplies the selected-axis residual swap, the 3 plus 1 base split, and the doubled 6 plus 2 abelian eigenvalue surface. The present note only isolates that finite-dimensional algebraic consequence with the stated phenomenological exclusions.
 - **rationale:** The runner genuinely constructs the residual swap on the eight cube vertices for all three selected axes, forms the projectors, and checks ranks, trace, Hermiticity, and eigenvalue multiplicities. The dependency checks are ledger/status checks rather than physics derivations, while the load-bearing eigenvalue calculation is algebraic over the retained graph-first SU3 integration parent. Because the same abelian eigenvalue surface is already explicitly contained in that parent and this note deliberately narrows scope rather than adding a new theorem, the appropriate conservative verdict is decoration, not a new bounded theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** high
+
+### `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23`
+
+- **Note:** [`NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md`](../../docs/NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the narrow no-go that the two packet-supplied native hop identifications, Clifford-folded Gamma_mu hops and graph-first cube axis shifts, produce scalar single-plaquette holonomies with zero traceless su(3) component.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T201819Z-9ae6c8f5-native_holonomy_plaquett-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the Clifford-folded hops the plaquette commutator is -I, and for the graph-first cube shifts it is +I, so in both native hop identifications W_mu_nu is scalar and its traceless su(3) component vanishes exactly.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the retained Clifford anticommutation relations and the graph cube-shift construction, plus finite-dimensional trace decomposition. The note explicitly limits the no-go to these bare-hop identifications and leaves separate action, locality, variational, or minimal-coupling routes open.
+- **rationale:** The runner source directly instantiates the Pauli/tensor Clifford hops and cube bit-flip shifts, forms the group commutators, and checks scalarity and zero traceless content; it is not merely printing constants or importing a fitted comparator. Both cited authorities are retained-grade, and the load-bearing step is a genuine algebraic closure over those inputs. The negative-claim gate passes within the restricted packet: at least five attack routes are enumerated, the only wall is native bare hopping lacking traceless plaquette flux, hidden compatibility language is non-load-bearing, the residual matches the holonomy-generation residual, and the strongest steelman is conceded as an open separate route rather than overclaimed closed.
 - **auditor confidence:** high
 
 ### `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28`

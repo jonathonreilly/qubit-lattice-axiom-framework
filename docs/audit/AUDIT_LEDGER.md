@@ -18,17 +18,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 130 |
+| **retained** | 131 |
 | **retained_no_go** | 146 |
-| **retained_bounded** | 378 |
+| **retained_bounded** | 375 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1321 |
+| unaudited | 1324 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 87 |
-| ~~audited_failed~~ | 23 |
+| ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -46,22 +46,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 628 |
+| `audited_clean` | 626 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 22 |
-| `audited_failed` | 67 |
+| `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1546 |
+| `unaudited` | 1549 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1017 |
+| `bounded_theorem` | 1016 |
 | `decoration` | 23 |
 | `meta` | 229 |
 | `no_go` | 238 |
 | `open_gate` | 113 |
-| `positive_theorem` | 757 |
+| `positive_theorem` | 758 |
 
 | criticality | count |
 |---|---:|
@@ -652,10 +652,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
-| `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
-| `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
-| `su3_wigner_intertwiner_block3_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `substrate_to_p_a_forcing_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -915,7 +913,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_nonlocal_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_results_2026-04-10` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `staggered_backreaction_scale_closure_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
-| `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -10577,19 +10574,6 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C'); 1x ('second', 'audited_conditional', 'bounded_theorem', 'C').
 - **auditor confidence:** 0.84
 
-### `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10`
-
-- **Note:** [`SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SU3_WIGNER_BLOCK4_STAGING_BLOCK5_ORIENTATION_DIAGNOSTICS_NARROW_THEOREM_NOTE_2026-05-10.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Seven bounded finite checks: mode_max=200 beta=6 SU(3) coefficient/trivial-sector arithmetic, rank-8 V_(1,1)^4 singlet data, L_s=3 PBC geometry/intermediate counts, and L_s=2 all-forward/standard-Wilson orientation enumeration counts.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260512-000558-b0c4bc75-su3_wigner_block4_stagin-017`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The Block 4 runner establishes claims (1)-(5) by direct finite computation, and the Block 5 narrow runner establishes claims (6)-(7) by direct finite enumeration.  _(class `A`)_
-- **chain closes:** True — The cited authorities are marked retained or retained_bounded and supply the SU(3) adjoint machinery, rank-8 4-fold Haar input, and L_s=3 geometry. The remaining claims reduce to finite arithmetic and enumeration checks with completed runner output and no open-gate constants or external comparators imported.
-- **rationale:** Within the stated bounded scope, the note does not claim a P-value, bridge-gap inequality, full 81-link contraction, or any external empirical comparison. The chain is algebraic/combinatorial over retained-grade one-hop inputs plus explicitly scoped finite runner checks. The primary wrapper source only shows delegation to two subrunners, so this clean verdict relies on the provided completed runner cache and note-level algorithms rather than direct inspection of the delegated subrunner sources.
-- **auditor confidence:** medium
-
 ### `su3_wigner_intertwiner_block1_theorem_note_2026-05-03`
 
 - **Note:** [`SU3_WIGNER_INTERTWINER_BLOCK1_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_WIGNER_INTERTWINER_BLOCK1_THEOREM_NOTE_2026-05-03.md)
@@ -10606,41 +10590,15 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 ### `su3_wigner_intertwiner_block2_theorem_note_2026-05-03`
 
 - **Note:** [`SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite-rank SU(3) representation-theory construction of the adjoint four-fold Haar projector on V_(1,1)^tensor4 = C^4096, including Hermitian idempotent rank-8 projection onto invariants and numerical validation of rank, equivariance, Haar convergence, and projector identities; downstream cube tensor-network claims are out of scope.
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-dimensional SU(3) representation-theory construction of the Haar projector on V_(1,1)^4 = C^4096, including rank 8 and projector/equivariance identities; excludes downstream cube-closure claims.
 - **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-judicial-third-su3-2026-05-06`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** By Schur-Peter-Weyl orthogonality, the four-fold Haar average is the orthogonal projector onto the SU(3)-invariant subspace, whose dimension is 8 by the Block 1 adjoint tensor-square decomposition and the stated fusion-counting formula.  _(class `A`)_
-- **chain closes:** True — The first auditor correctly identifies the mathematical load-bearing step in the note: compact-group averaging projects onto fixed vectors, and the rank follows by algebraic fusion counting using the retained Block 1 decomposition. The dependency packet closes because Block 1 has audited_clean/retained effective status, and the cached runner exits 0 with THEOREM PASS=7 FAIL=0 after constructing the total generators, total Casimir, zero-Casimir eigenspace projector, and validating rank, Hermiticity/idempotence/trace, equivariance, Monte Carlo Haar convergence, and action on the singlet basis. The second auditor's clean verdict and bounded scope are substantively right, but its class C designation is not ratifiable under the rubric: this is not a first-principles CL3/Z3 compute producing an independent physical number, but a finite SU(3) representation-theory construction and algebraic closure over retained inputs.
-- **rationale:** The first auditor correctly identifies the mathematical load-bearing step in the note: compact-group averaging projects onto fixed vectors, and the rank follows by algebraic fusion counting using the retained Block 1 decomposition. The dependency packet closes because Block 1 has audited_clean/retained effective status, and the cached runner exits 0 with THEOREM PASS=7 FAIL=0 after constructing the total generators, total Casimir, zero-Casimir eigenspace projector, and validating rank, Hermiticity/idempotence/trace, equivariance, Monte Carlo Haar convergence, and action on the singlet basis. The second auditor's clean verdict and bounded scope are substantively right, but its class C designation is not ratifiable under the rubric: this is not a first-principles CL3/Z3 compute producing an independent physical number, but a finite SU(3) representation-theory construction and algebraic closure over retained inputs.
-- **auditor confidence:** high
-
-### `su3_wigner_intertwiner_block3_theorem_note_2026-05-03`
-
-- **Note:** [`SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_WIGNER_INTERTWINER_BLOCK3_THEOREM_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite L_s=3 periodic 3D cube geometry and tensor-network index setup: 27 sites, 81 directed links, 81 unique unoriented plaquettes, 4 plaquettes per directed link, 486 plaquette-adjacency edges with uniform degree 12, 324 tensor indices, and 81 four-slot link contractions using the retained Block 2 rank-8 four-fold Haar projector; downstream Block 4/5 partition-function or epsilon-witness claims are out of scope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-judicial-third-auditor-su3-block3-2026-05-06`  (codex-gpt-5.5; independence=judicial_review)
-- **load-bearing step:** All quantities are computed by exhaustive enumeration in the runner using finite loops over the declared L_s=3 PBC sites, links, plaquettes, incidence maps, adjacency pairs, and tensor slots; each verification is a deterministic equality/cardinality check.  _(class `A`)_
-- **chain closes:** True — The restricted packet supports the shared clean bounded verdict: the cached runner exits 0 with PASS=7 FAIL=0 and constructs the finite geometry and slot maps directly rather than importing downstream contraction values or external comparators. The dependencies needed for the rank-8 four-fold Haar projector interpretation are retained-grade in the permitted operational metadata, and the ratified scope excludes Block 4/5 partition-function or physical verdict claims. The disagreement is only the load-bearing class: these checks are finite combinatorial/algebraic identity checks over declared lattice definitions, not a class C first-principles framework computation of a new physical number.
-- **rationale:** The restricted packet supports the shared clean bounded verdict: the cached runner exits 0 with PASS=7 FAIL=0 and constructs the finite geometry and slot maps directly rather than importing downstream contraction values or external comparators. The dependencies needed for the rank-8 four-fold Haar projector interpretation are retained-grade in the permitted operational metadata, and the ratified scope excludes Block 4/5 partition-function or physical verdict claims. The disagreement is only the load-bearing class: these checks are finite combinatorial/algebraic identity checks over declared lattice definitions, not a class C first-principles framework computation of a new physical number.
-- **auditor confidence:** high
-
-### `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03`
-
-- **Note:** [`SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited the narrowed finite combinatorial/algebraic core: Block 4 trivial-sector coefficient staging, c_(1,1), rank-8 Haar singlet-basis import, stated plaquette tensor/scope estimates, and Block 5 L_s=2 orientation diagnostics as described in the note, excluding bridge-gap numerics and no-go conclusions.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260516-124354-d4142792-su3_wigner_intertwiner_b-001`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The narrowed load-bearing claim is that Block 4 stages the L_s=3 PBC cube partition core, including the per-plaquette (8,8,8,8) cyclical-trace tensor, and Block 5 verifies the L_s=2 all-forward/standard-Wilson orientation diagnostics.  _(class `A`)_
-- **chain closes:** False — The Block 4 runner does not derive the claimed per-plaquette cyclical-trace tensor; it hard-codes T[i,i,i,i]=1 while its own comments acknowledge this is a simplification of the actual trace structure. The restricted packet also provides no Block 5 runner source/stdout, so the L_s=2 orientation diagnostics cannot be verified from runner artifacts here.
-- **rationale:** The narrowed scope properly excludes the imported bridge-target, epsilon, and P_candidate numerics, so those do not by themselves force a conditional verdict. However, the load-bearing Block 4 plaquette-tensor assertion is not established by the supplied code: the runner constructs the tensor by direct diagonal assignment rather than deriving the character trace tensor, and the comments mark this representation as a simplifying assertion. Because that tensor structure is explicitly in the narrowed theorem core, the chain does not close on its own terms.
-- **auditor confidence:** medium
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-judicial-panel-per-site-k1-20260523T140810Z-su3_wigner_intertwiner_block2_theorem_no-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Schur/Peter-Weyl identifies the four-fold Haar average of D^(1,1)(U) with the invariant-subspace projector, and Casimir-zero diagonalization plus fusion counting constructs it as a rank-8 projector on C^4096.  _(class `A`)_
+- **chain closes:** True — Five-judge panel majority 3/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The clean finite-rank SU(3) projector theorem can be typed as a positive_theorem because the audited scope is fully closed and does not depend on the broader cube tensor-network campaign. The derivation is best classified as A: an algebraic finite-dimensional representation-theory closure over retained Block 1 data and standard Schur/Peter-Weyl/Casimir facts, with the runner verifying the matrix construction. It is not decoration because it introduces a new explicit four-fold Haar projector primitive, not merely a restatement of Block 1. | The clean scope is the finite SU(3) projector theorem only, so reclassifying it as a positive_theorem does not promote the broader cube-closure campaign. The first audit was right that the closure is algebraic representation theory over retained Block 1 input, but overly conservative in keeping the bounded_theorem label for an exact finite object. The second audit was right on audited_clean and positive_theorem scope, but its class C label overstates the rubric fit because this is not a Cl(3)/Z^3 first-principles framework computation; it is class A algebraic closure plus finite validation. | The clean scoped result is an exact finite-dimensional SU(3) theorem, analogous in status to the retained Block 1 decomposition, so positive_theorem is the better claim type than bounded_theorem. The broader L>=3 cube tensor-network campaign remains outside the audited scope and is not promoted. The load-bearing step is best classified as A: standard representation-theoretic algebra plus retained Block 1 inputs, not a framework-axiom first-principles C computation from Cl(3) on Z^3.
+- **rationale:** Five-judge panel majority 3/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The clean finite-rank SU(3) projector theorem can be typed as a positive_theorem because the audited scope is fully closed and does not depend on the broader cube tensor-network campaign. The derivation is best classified as A: an algebraic finite-dimensional representation-theory closure over retained Block 1 data and standard Schur/Peter-Weyl/Casimir facts, with the runner verifying the matrix construction. It is not decoration because it introduces a new explicit four-fold Haar projector primitive, not merely a restatement of Block 1. | The clean scope is the finite SU(3) projector theorem only, so reclassifying it as a positive_theorem does not promote the broader cube-closure campaign. The first audit was right that the closure is algebraic representation theory over retained Block 1 input, but overly conservative in keeping the bounded_theorem label for an exact finite object. The second audit was right on audited_clean and positive_theorem scope, but its class C label overstates the rubric fit because this is not a Cl(3)/Z^3 first-principles framework computation; it is class A algebraic closure plus finite validation. | The clean scoped result is an exact finite-dimensional SU(3) theorem, analogous in status to the retained Block 1 decomposition, so positive_theorem is the better claim type than bounded_theorem. The broader L>=3 cube tensor-network campaign remains outside the audited scope and is not promoted. The load-bearing step is best classified as A: standard representation-theoretic algebra plus retained Block 1 inputs, not a framework-axiom first-principles C computation from Cl(3) on Z^3.
+- **auditor confidence:** judicial_panel_majority
 
 ### `substrate_to_p_a_forcing_theorem_note_2026-04-30`
 

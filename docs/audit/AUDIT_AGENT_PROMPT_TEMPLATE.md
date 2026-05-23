@@ -179,12 +179,14 @@ Definitions you must use:
     The chain reduces to a definition substitution rather than a
     derivation.
   - `audited_conditional` — at least one cited authority is not retained-grade
-    (`retained`, `retained_no_go`, or `retained_bounded`) or contains
-    explicit language that the identification is open work; or the claim
-    imports an explicit premise, bridge, carrier, readout, normalization,
-    boundary condition, or asymptotic authority that is not closed by the
-    restricted packet. Retained status does not propagate through an open
-    identification.
+    (`retained`, `retained_no_go`, `retained_bounded`, or
+    `decoration_under_<retained_parent>` — the decoration form is only
+    assigned by the pipeline when the parent is itself retained-grade, so
+    it inherits retention) or contains explicit language that the
+    identification is open work; or the claim imports an explicit premise,
+    bridge, carrier, readout, normalization, boundary condition, or
+    asymptotic authority that is not closed by the restricted packet.
+    Retained status does not propagate through an open identification.
     **Axiom-premise carve-out.** A cited authority flagged
     `axiom_premise: true` does **not** count toward the
     "not-retained-grade authority" downgrade. The axiom node is an accepted

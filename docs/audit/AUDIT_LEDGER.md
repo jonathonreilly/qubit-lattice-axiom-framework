@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 383 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1285 |
+| unaudited | 1284 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 11 |
+| ~~audited_renaming~~ | 12 |
 | ~~audited_conditional~~ | 113 |
 | ~~audited_failed~~ | 17 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
@@ -53,8 +53,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 30 |
 | `audited_failed` | 61 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 11 |
-| `unaudited` | 1511 |
+| `audited_renaming` | 12 |
+| `unaudited` | 1510 |
 
 | claim_type | count |
 |---|---:|
@@ -980,6 +980,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | E | - |
+| `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | fresh_context | codex-gpt-5.5 | F | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -4666,6 +4667,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The 15x12x12 structured grid plus 1500 random least_squares seed bath has every converged seed cluster onto exactly the same two roots, with no additional cluster emerging.  _(class `C`)_
 - **chain closes:** False — The packet closes only an empirical dense-search certificate, not a theorem that the bounded chart contains no additional roots. The missing step is a symbolic or interval-arithmetic global root-count certificate, plus auditable closure of the imported live target equation and selected branch construction.
 - **rationale:** Issue: the note and runner explicitly state that strict symbolic or interval-arithmetic exhaustiveness remains open, and the dense runner imports the live target equation and branch helpers from an original runner not included in this packet. Why this blocks: dense least-squares seeding is evidence for two observed nondegenerate clusters, but it is not a retained proof that no other bounded-chart roots exist or that the selected target equation is forced from retained primitives. Repair target: provide a resultant or interval-arithmetic root-count certificate over the whole bounded chart and include the target-equation construction in the audit packet. Claim boundary until fixed: retain only the empirical dense-search claim for two observed clusters on the selected chart.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited as a bounded helper-wrapper registering fixed weights, line normalization/parameterization, ordered projection/Gram-Schmidt compression, and projector-distance routines in the named module, not as a derivation of the complement-line frame, selector, or downstream theorem closure.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T194215Z-5fc1db8b-gauge_vacuum_plaquette_f-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Its only function is to provide a citeable one-hop authority for compressed_local_block_from_line, BOUNDARY_FIRST_WEIGHTS, line normalization / parameterization helpers, and projection-distance helpers.  _(class `E`)_
+- **chain closes:** False — The restricted packet verifies only that the helper names and functions are defined/importable; it does not derive the helper layer from the axiom or retained independent inputs. The missing step is an independent theorem that the boundary-first complement-line frame and selected block-compression layer are canonical consequences rather than registered helper choices.
+- **rationale:** The primary runner source is a helper module with definitions and no executed checks; the cached run has empty stdout and only establishes that imports succeed. The source note's load-bearing move is to name these constants and routines as a citeable authority, while explicitly leaving the complement-line frame, selector, and downstream theorem closure outside scope. That is a definition/registration layer, not a class (C) derivation or class (A) algebraic closure.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1316 |
+| unaudited | 1315 |
 | meta | 225 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 3 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 630 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 66 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1541 |
+| `unaudited` | 1540 |
 
 | claim_type | count |
 |---|---:|
@@ -823,6 +823,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_theta_zero_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_native_axioms_theory_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | C | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -10711,6 +10712,21 @@ Five-judge panel breakdown: 4x ('hybrid', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The bounded claim closes because the provided source performs deterministic finite enumeration rather than importing contested values or merely printing constants. The correct derivation class is A: this is algebraic/combinatorial closure over explicitly defined finite lattice objects, not class C first-principles framework computation of a new physical number. The only substantive upstream projector input is marked retained, and no external comparator, tuned numerical match, or open dependency is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The load-bearing work is finite algebraic/combinatorial closure over explicit definitions, so class A is the tighter rubric fit than class C, which is reserved for first-principles physics computation from the framework axiom. The only substantive upstream projector input is marked retained, and no non-retained dependency, external comparator, tuned numerical match, or definitional renaming is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to finite combinatorial geometry and bookkeeping, and the only substantive upstream projector input is marked retained in the packet. Class A is the tighter fit because the load-bearing work is algebraic/combinatorial closure over explicit finite definitions, not a class C first-principles physics computation from a framework axiom producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to combinatorial geometry and bookkeeping, and the only substantive upstream projector-rank primitive is marked retained. Class A is the tighter rubric fit because the load-bearing step is finite algebraic/combinatorial closure over explicit definitions, not a first-principles physics computation from an axiom node producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence maps rather than only printing expected constants. The claim closes as finite algebraic/combinatorial enumeration over explicit definitions, with the retained Block 2 rank-8 projector used only as an upstream tensor-network primitive. Class A is the tighter rubric fit than class C because this is not a first-principles physics computation from the framework axiom producing a new physical number.
 - **rationale:** Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The bounded claim closes because the provided source performs deterministic finite enumeration rather than importing contested values or merely printing constants. The correct derivation class is A: this is algebraic/combinatorial closure over explicitly defined finite lattice objects, not class C first-principles framework computation of a new physical number. The only substantive upstream projector input is marked retained, and no external comparator, tuned numerical match, or open dependency is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The load-bearing work is finite algebraic/combinatorial closure over explicit definitions, so class A is the tighter rubric fit than class C, which is reserved for first-principles physics computation from the framework axiom. The only substantive upstream projector input is marked retained, and no non-retained dependency, external comparator, tuned numerical match, or definitional renaming is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to finite combinatorial geometry and bookkeeping, and the only substantive upstream projector input is marked retained in the packet. Class A is the tighter fit because the load-bearing work is algebraic/combinatorial closure over explicit finite definitions, not a class C first-principles physics computation from a framework axiom producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to combinatorial geometry and bookkeeping, and the only substantive upstream projector-rank primitive is marked retained. Class A is the tighter rubric fit because the load-bearing step is finite algebraic/combinatorial closure over explicit definitions, not a first-principles physics computation from an axiom node producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence maps rather than only printing expected constants. The claim closes as finite algebraic/combinatorial enumeration over explicit definitions, with the retained Block 2 rank-8 projector used only as an upstream tensor-network primitive. Class A is the tighter rubric fit than class C because this is not a first-principles physics computation from the framework axiom producing a new physical number.
 - **auditor confidence:** judicial_panel_majority
+
+### `su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03`
+
+- **Note:** [`SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the narrowed finite combinatorial/algebraic core: Block 4 staging facts from the supplied Block 4 runner/source and the claimed Block 5 L_s=2 orientation diagnostics from note text only.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T144654Z-8eb5a0db-su3_wigner_intertwiner_b-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The narrowed theorem claims Block 4 L_s=3 partition staging plus Block 5 L_s=2 PBC orientation/index-graph diagnostics, especially the all-forward enumeration and standard-Wilson multiplicity degeneracy.  _(class `C`)_
+- **chain closes:** False — The Block 4 staging chain is supported by supplied source and cached stdout. The Block 5 orientation-diagnostics limb is load-bearing but its runner stdout and source are not included in the restricted packet, so the full combined claim cannot be verified from the supplied artifacts.
+- **rationale:** The supplied Block 4 runner genuinely computes the Bessel-determinant coefficients, rebuilds the 4-fold singlet basis, constructs the stated toy plaquette tensor, and reports the advertised 5/5 checks. However, the narrowed claim also load-bears on Block 5 L_s=2 orientation/index-graph diagnostics, and the packet provides no Block 5 runner source or completed stdout to verify the 12-plaquette/24-link/8-component and standard-Wilson degeneracy assertions. The bridge-gap/P_candidate limb is correctly disclaimed as non-load-bearing, so the blocker is artifact completeness for the retained narrowed core, not the open-gate numerics.
+- **open / conditional deps cited:**
+  - `scripts/frontier_su3_wigner_l2_cube_orientation_verification.py`
+- **auditor confidence:** high
 
 ### `substrate_to_p_a_forcing_theorem_note_2026-04-30`
 

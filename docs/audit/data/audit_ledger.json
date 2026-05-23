@@ -246261,24 +246261,50 @@
       "verdict_rationale": "Five-judge panel majority 5/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: first / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: first / audited_clean / bounded_theorem / class A. Majority rationale: The bounded claim closes because the provided source performs deterministic finite enumeration rather than importing contested values or merely printing constants. The correct derivation class is A: this is algebraic/combinatorial closure over explicitly defined finite lattice objects, not class C first-principles framework computation of a new physical number. The only substantive upstream projector input is marked retained, and no external comparator, tuned numerical match, or open dependency is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The load-bearing work is finite algebraic/combinatorial closure over explicit definitions, so class A is the tighter rubric fit than class C, which is reserved for first-principles physics computation from the framework axiom. The only substantive upstream projector input is marked retained, and no non-retained dependency, external comparator, tuned numerical match, or definitional renaming is load-bearing. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to finite combinatorial geometry and bookkeeping, and the only substantive upstream projector input is marked retained in the packet. Class A is the tighter fit because the load-bearing work is algebraic/combinatorial closure over explicit finite definitions, not a class C first-principles physics computation from a framework axiom producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence/index maps rather than merely printing constants. The audited claim is bounded to combinatorial geometry and bookkeeping, and the only substantive upstream projector-rank primitive is marked retained. Class A is the tighter rubric fit because the load-bearing step is finite algebraic/combinatorial closure over explicit definitions, not a first-principles physics computation from an axiom node producing a new physical number. | The restricted packet includes runner source that genuinely constructs the finite lattice objects and incidence maps rather than only printing expected constants. The claim closes as finite algebraic/combinatorial enumeration over explicit definitions, with the retained Block 2 rank-8 projector used only as an upstream tensor-network primitive. Class A is the tighter rubric fit than class C because this is not a first-principles physics computation from the framework axiom producing a new physical number."
     },
     "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03": {
-      "audit_date": null,
-      "audit_state_snapshot": null,
-      "audit_status": "unaudited",
-      "auditor": null,
-      "auditor_confidence": null,
-      "auditor_family": null,
+      "audit_date": "2026-05-23T14:47:15.405624+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "Self-contained finite-dimensional SU(3) adjoint tensor-product decomposition (1,1) tensor (1,1) = 1 + 8 + 8 + 10 + 10bar + 27, with explicit orthonormal CG blocks checked by the supplied runner.",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03": "Exact finite-dimensional SU(3) representation-theory construction of the Haar projector on V_(1,1)^4 = C^4096, including rank 8 and projector/equivariance identities; excludes downstream cube-closure claims.",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "Finite L_s=3 PBC 3D cube geometry and induced tensor-network incidence/index bookkeeping: site/link/plaquette counts, four-plaquette link incidence, link-labeled plaquette adjacency count/degree, and 324 tensor slots, with retained Block 2 rank-8 projector used only as an upstream primitive."
+        },
+        "dep_claim_type": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "positive_theorem",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03": "positive_theorem",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "retained",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03": "retained",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "retained_bounded"
+        },
+        "deps": [
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03",
+          "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 13.474,
+        "runner_hash": "3ed5a54c2f1e6f30d89e62a6bc8ae08f22977837d9052f5fb5c23c55d7b0fe30",
+        "transitive_descendants": 1005
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T144654Z-8eb5a0db-su3_wigner_intertwiner_b-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
       "auditor_model": "gpt-5.5",
       "auditor_reasoning_effort": "xhigh",
       "blocker": null,
-      "chain_closes": null,
-      "chain_closure_explanation": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Block 4 staging chain is supported by supplied source and cached stdout. The Block 5 orientation-diagnostics limb is load-bearing but its runner stdout and source are not included in the restricted packet, so the full combined claim cannot be verified from the supplied artifacts.",
       "claim_id": "su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03",
-      "claim_scope": null,
+      "claim_scope": "Audited the narrowed finite combinatorial/algebraic core: Block 4 staging facts from the supplied Block 4 runner/source and the claimed Block 5 L_s=2 orientation diagnostics from note text only.",
       "claim_type": "bounded_theorem",
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_last_reviewed": null,
-      "claim_type_provenance": "author_hint",
+      "claim_type_last_reviewed": "2026-05-23T14:47:15.405624+00:00",
+      "claim_type_provenance": "audited",
       "criticality": "critical",
       "cross_confirmation": null,
       "decoration_parent_claim_id": null,
@@ -246288,20 +246314,22 @@
         "su3_wigner_intertwiner_block3_theorem_note_2026-05-03"
       ],
       "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "effective_status_reason": "awaiting_audit",
+      "effective_status": "audited_conditional",
+      "effective_status_reason": "terminal_audit",
       "helper_runner_paths": [],
-      "independence": null,
-      "intrinsic_status": "unaudited",
+      "independence": "cross_family",
+      "intrinsic_status": "audited_conditional",
       "load_bearing_score": 13.474,
-      "load_bearing_step": null,
-      "load_bearing_step_class": null,
+      "load_bearing_step": "The narrowed theorem claims Block 4 L_s=3 partition staging plus Block 5 L_s=2 PBC orientation/index-graph diagnostics, especially the all-forward enumeration and standard-Wilson multiplicity degeneracy.",
+      "load_bearing_step_class": "C",
       "max_descendant_status": "retained_pending_chain",
       "max_descendant_status_rank": 80,
       "note_hash": "7affd6de3df983d9b87d4c54b96ac97237b894bc7cd794eb49e480bbc26a7f94",
       "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md",
-      "notes_for_re_audit_if_any": null,
-      "open_dependency_paths": [],
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the Block 5 runner source and completed stdout/cache for scripts/frontier_su3_wigner_l2_cube_orientation_verification.py, or narrow the audited scope to Block 4 staging only.",
+      "open_dependency_paths": [
+        "scripts/frontier_su3_wigner_l2_cube_orientation_verification.py"
+      ],
       "previous_auditor_family": "codex-gpt-5",
       "previous_audits": [
         {
@@ -246538,20 +246566,20 @@
         }
       ],
       "prose_corrections": [],
-      "prose_status": "not_evaluated_pre_vocab_lint",
+      "prose_status": "clean",
       "relabel_date": "2026-05-06T17:45:26.977035+00:00",
       "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
       "runner_check_breakdown": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
+        "A": 1,
+        "B": 1,
+        "C": 3,
         "D": 0,
-        "total_pass": 0
+        "total_pass": 5
       },
       "runner_path": "scripts/frontier_su3_wigner_l3_cube_partition.py",
       "title": "SU(3) Wigner Engine Blocks 4+5: L_s=3 Partition Staging + L_s=2 Orientation Diagnostics",
       "transitive_descendants": 1005,
-      "verdict_rationale": null
+      "verdict_rationale": "The supplied Block 4 runner genuinely computes the Bessel-determinant coefficients, rebuilds the 4-fold singlet basis, constructs the stated toy plaquette tensor, and reports the advertised 5/5 checks. However, the narrowed claim also load-bears on Block 5 L_s=2 orientation/index-graph diagnostics, and the packet provides no Block 5 runner source or completed stdout to verify the 12-plaquette/24-link/8-component and standard-Wilson degeneracy assertions. The bridge-gap/P_candidate limb is correctly disclaimed as non-load-bearing, so the blocker is artifact completeness for the retained narrowed core, not the open-gate numerics."
     },
     "su3_wigner_l3_cube_haar_mc_negative_result_2026-05-04": {
       "audit_date": null,

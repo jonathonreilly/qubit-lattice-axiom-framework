@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 7 |
 | open_gate | 13 |
-| unaudited | 1276 |
+| unaudited | 1275 |
 | meta | 226 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 13 |
-| ~~audited_conditional~~ | 116 |
+| ~~audited_conditional~~ | 117 |
 | ~~audited_failed~~ | 18 |
 | `decoration_under_axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -50,21 +50,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 646 |
-| `audited_conditional` | 116 |
+| `audited_conditional` | 117 |
 | `audited_decoration` | 31 |
 | `audited_failed` | 62 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1502 |
+| `unaudited` | 1501 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1015 |
+| `bounded_theorem` | 1016 |
 | `decoration` | 32 |
 | `meta` | 229 |
 | `no_go` | 242 |
 | `open_gate` | 111 |
-| `positive_theorem` | 752 |
+| `positive_theorem` | 751 |
 
 | criticality | count |
 |---|---:|
@@ -782,6 +782,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cross_sector_a_squared_koide_vcb_bridge_promoted_via_v8_theorem_note_2026-04-29` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5 | B | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dimension_selection_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_expansion_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.5 | E | - |
@@ -2977,6 +2978,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **rationale:** The runner source and stdout support that the code uses the stated analytic potential family and reports the claimed signs for d=1..5. But the note's load-bearing scientific step is not a first-principles computation; it imports standard WKB/eikonal bending as an admitted premise and assumes it faithfully controls the runner's finite-k centroid shift. The cited retained_bounded authority is also narrower than the full d=1..5 analytic family, with d=2 explicitly diagnostic-only in that authority, though the runner source itself supplies the analytic d=2 form.
 - **open / conditional deps cited:**
   - `DIMENSIONAL_GRAVITY_TABLE.md`
+- **auditor confidence:** high
+
+### `dimension_selection_note`
+
+- **Note:** [`DIMENSION_SELECTION_NOTE.md`](../../docs/DIMENSION_SELECTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The restricted packet supports only the bounded lower-bound claim that, in this runner's propagator-plus-Poisson model with the stated analytic d-dimensional potentials, d <= 2 fails attractive gravity and beta ~= 1 while d >= 3 passes those numerical criteria.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T195806Z-e816e970-dimension_selection_note-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The propagator phase coupling S = L * (1 - phi) produces attractive deflection only when the potential phi decays with distance, which requires d >= 3.  _(class `C`)_
+- **chain closes:** False — The numerical lower-bound experiment is present, but the broader d = 3 conclusion also imports an upper bound from stable orbits/atoms that is not provided as a cited retained authority in this packet. The runner additionally measures gravity using hand-coded analytic d-dimensional potentials in 2D propagation, so the bridge from the stated axiom to those potentials and sign criterion is not closed inside the packet.
+- **rationale:** The runner performs a substantive numerical computation rather than merely printing constants, and its own output honestly reports that the three tested observables coexist at d = 3, 4, 5 rather than uniquely selecting d = 3. The note's bounded lower-bound claim is partly supported by the computation, but the unique d = 3 conclusion depends on separate orbital and atomic stability inputs not included as authorities. The analytic d-dimensional potential formulas and their connection to the claimed axiom are also imported bridge structure rather than closed from the restricted packet alone.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

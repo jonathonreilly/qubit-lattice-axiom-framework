@@ -382,24 +382,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": null,
+      "claim_scope": "Local bounded algebraic result: relative to the canonical SU(3) trace normalization Tr(T_a T_b)=delta_ab/2 and the Wilson matching identity beta=2N_c/g_bare^2 with N_c=3 and beta=6, the compatible value is g_bare=1; the convention layer is the admitted canonical normalization, not an additional independent g_bare choice.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "cl3_color_automorphism_theorem"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 11.974,
       "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_g_bare_derivation.py",
       "transitive_descendants": 1005

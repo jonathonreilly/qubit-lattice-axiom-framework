@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 122 |
 | **retained_no_go** | 150 |
-| **retained_bounded** | 379 |
+| **retained_bounded** | 380 |
 | _retained_pending_chain_ | 15 |
 | open_gate | 14 |
-| unaudited | 1293 |
+| unaudited | 1292 |
 | meta | 224 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 15 |
@@ -46,13 +46,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audited_clean` | 632 |
+| `audited_clean` | 633 |
 | `audited_conditional` | 103 |
 | `audited_decoration` | 29 |
 | `audited_failed` | 68 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1517 |
+| `unaudited` | 1516 |
 
 | claim_type | count |
 |---|---:|
@@ -461,6 +461,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matter_self_focusing_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `mesoscopic_surrogate_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `mesoscopic_surrogate_localization_frontier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_multistage_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -7368,6 +7369,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The frozen topN=196 broad relaunch surrogate sources weak fields whose same-shape and disjoint additivity errors stay at 0.0005% and 0.0145% max, while one-step two-body symmetry violation stays below 0.3240%.  _(class `C`)_
 - **chain closes:** True — The provided runner and helper sources instantiate the fixed lattice, build the surrogate from propagation output, compute distributed source fields, and compute the reported additivity and symmetry metrics. The conclusion is bounded to that fixed numerical harness and does not require persistent-mass closure.
 - **rationale:** The runner output matches the note's frozen metrics, and the runner source performs the load-bearing numerical computation rather than printing constants or comparing against hard-coded expected values. The helper code supplies the lattice propagation, centroid, source, and detector machinery used on the load-bearing path, with no missing helper artifact in the restricted packet. The claim remains explicitly bounded to weak one-step behavior of a broad surrogate and does not promote itself to a persistent localized inertial-object theorem.
+- **auditor confidence:** high
+
+### `mesoscopic_surrogate_localization_frontier_note`
+
+- **Note:** [`MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md`](../../docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded scripted localization/strength tradeoff map for the specified 3D ordered-lattice surrogate family and sampled topN values.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-per-site-k1-20260523T000137Z-60690cdc-mesoscopic_surrogate_loc-01`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the retained h=0.5, W=8, segment L=6 3D ordered-lattice family, varying topN shows compact sources remain self-similar but weak while broader sources carry stronger two-stage response while remaining stable.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the lattice, source supports, weak surrogate field, two sourced-response stages, and printed metrics directly from the included framework code. The conclusion is bounded to the sampled retained family and does not require a persistent-mass or geometry-generic bridge.
+- **rationale:** The runner source is present and its load-bearing path computes the frontier metrics rather than printing hard-coded expected values. The helper code supplies the lattice propagation, detector indexing, and point-source construction used by the primary runner, with no imported external comparator or tuned empirical constant. All one-hop cited authorities are marked retained_bounded, and the audited conclusion stays within the bounded mesoscopic-source scope rather than claiming persistent mass.
 - **auditor confidence:** high
 
 ### `mesoscopic_surrogate_multistage_note`

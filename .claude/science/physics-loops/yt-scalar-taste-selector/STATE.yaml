@@ -15,6 +15,6 @@ open_imports:
 no_go_routes:
   - "Color-singlet scalar/taste-condensate insertion: M_color proportional to I_color, so projection diagnostic gives kappa_Y=1, not 0."
 review_disposition: "self-review pass; audit_lint strict OK with pre-existing warnings only"
-pr_status: "blocked: GitHub GraphQL API rate limit exceeded during gh pr create"
-next_exact_action: "Open PR from pushed branch when GitHub API rate limit resets."
+pr_status: "opened: https://github.com/jonathonreilly/cl3-lattice-framework/pull/1739"
+next_exact_action: "Use PR #1739 as the reviewed no-go artifact; continue with the next matching-theorem route on a fresh branch."
 stop_condition: "PR opened with honest no-go status or blocked by concrete tooling failure."

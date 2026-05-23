@@ -14741,12 +14741,24 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 8,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_non_abelian_gauge.py"
+    },
+    "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py"
     },
     "neutrino_dirac_pmns_retained_lane_packet_2026-04-16": {
       "assert_count": 1,
@@ -41069,6 +41081,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py": {
+      "assert_count": 2,
+      "claims": [
+        "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_neutrino_dirac_two_higgs_canonical_reduction.py": {
       "assert_count": 1,
       "claims": [
@@ -41918,7 +41945,7 @@
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 8,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -53848,12 +53875,12 @@
     "dominant_class_distribution": {
       "A": 202,
       "B": 266,
-      "C": 734,
+      "C": 735,
       "D": 295,
       "none": 433
     },
-    "runners_classified": 1930,
-    "runners_with_C": 950,
+    "runners_classified": 1931,
+    "runners_with_C": 951,
     "runners_with_D": 547
   }
 }

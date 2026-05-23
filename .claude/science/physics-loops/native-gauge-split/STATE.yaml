@@ -1,0 +1,22 @@
+loop: native-gauge-split
+branch: physics-loop/native-gauge-split-block01-20260523
+base: origin/main
+base_commit: 245812a17
+target_claim_id: native_gauge_closure_note
+target_status: proposed_retained
+status: review_passed_pending_pr
+cycle_count: 1
+active_route: source_split
+hard_residual: independent audit must decide whether the narrowed nonabelian source boundary supports positive_theorem
+files_touched:
+  - docs/NATIVE_GAUGE_CLOSURE_NOTE.md
+  - scripts/frontier_non_abelian_gauge.py
+  - docs/NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md
+  - scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py
+open_imports: []
+new_axioms: false
+ledger_retags_by_author: false
+audit_required_before_effective_retained: true
+lock_note: default automation lock path was inaccessible; branch-local lock used
+next_exact_action: commit, push, and open one review PR for the source split
+stop_condition: PR opened for the coherent source split block

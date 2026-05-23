@@ -17433,6 +17433,14 @@
       "to": "graph_first_su3_integration_note"
     },
     {
+      "from": "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+      "to": "graph_first_selector_derivation_note"
+    },
+    {
+      "from": "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+      "to": "graph_first_su3_integration_note"
+    },
+    {
       "from": "neutrino_axiom3_reading_stuck_fanout_note_2026-04-28",
       "to": "minimal_axioms_2026-04-11"
     },
@@ -64466,18 +64474,33 @@
     },
     "native_gauge_closure_note": {
       "claim_id": "native_gauge_closure_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "graph_first_selector_derivation_note",
+        "graph_first_su3_integration_note"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "d39d23480b4e58d3badf6266628b75410552f30cacb2b4c20ca00e6aef77f2f4",
+      "path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+      "runner_path": "scripts/frontier_non_abelian_gauge.py",
+      "title": "Native Gauge Closure Note: Nonabelian Graph-First Gauge Closure on Z^3"
+    },
+    "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": {
+      "claim_id": "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "graph_first_selector_derivation_note",
         "graph_first_su3_integration_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "de4cccd69be247db954883861b76a291034e92b4895ddbbfaa9d359b0b313204",
-      "path": "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
-      "runner_path": "scripts/frontier_non_abelian_gauge.py",
-      "title": "Native Gauge Closure Note: Graph-First Gauge Closure on Z^3"
+      "note_hash": "57bfcfb0d4d02793334deeaede2d06dd79e70c27ed5fdd0aa8374642ed12bf30",
+      "path": "docs/NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md",
+      "runner_path": "scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py",
+      "title": "Native Gauge Left-Handed Abelian Surface Bounded Note"
     },
     "nature_discovery_directions_2026-04-11": {
       "claim_id": "nature_discovery_directions_2026-04-11",
@@ -84382,13 +84405,13 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 521,
+      "bounded_theorem": 522,
       "decoration": 1,
       "meta": 187,
       "no_go": 65,
-      "none": 1495,
+      "none": 1494,
       "open_gate": 46,
-      "positive_theorem": 175
+      "positive_theorem": 176
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 959,
@@ -84397,12 +84420,12 @@
       "no_go": 168,
       "none": 443,
       "open_gate": 124,
-      "positive_theorem": 608
+      "positive_theorem": 609
     },
-    "edge_count": 9683,
-    "leaf_count": 758,
-    "node_count": 2490,
+    "edge_count": 9685,
+    "leaf_count": 759,
+    "node_count": 2491,
     "root_count": 821,
-    "runners_with_path": 2051
+    "runners_with_path": 2052
   }
 }

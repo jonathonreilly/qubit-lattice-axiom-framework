@@ -63533,14 +63533,14 @@
     "memory_decay_diagnosis_2026-04-11": {
       "claim_id": "memory_decay_diagnosis_2026-04-11",
       "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "bounded_observation",
+      "claim_type_seed_hint": null,
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "f8f850dd2ff018193247eaaab42079f8c4c7f05c473075df9673cd91ce580d0f",
+      "note_hash": "6588c8d765fdb24859a57d2b58bb1e448fcaabd5c91ed5586e233128322614d9",
       "path": "docs/MEMORY_DECAY_DIAGNOSIS_2026-04-11.md",
       "runner_path": "scripts/frontier_memory_mu2_size_sweep.py",
-      "title": "Memory Signal Decay \u2014 Root Cause: Yukawa Screening"
+      "title": "Memory Signal \u2014 Geometry and Lattice-Size Dependence"
     },
     "memory_mu2_geometry_sweep_note_2026-04-11": {
       "claim_id": "memory_mu2_geometry_sweep_note_2026-04-11",
@@ -84403,9 +84403,9 @@
       "decoration": 1,
       "meta": 187,
       "no_go": 168,
-      "none": 443,
+      "none": 444,
       "open_gate": 124,
-      "positive_theorem": 609
+      "positive_theorem": 608
     },
     "edge_count": 9682,
     "leaf_count": 759,
